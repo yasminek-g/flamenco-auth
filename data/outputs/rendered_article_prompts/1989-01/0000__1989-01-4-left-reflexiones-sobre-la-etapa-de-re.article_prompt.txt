@@ -1,0 +1,405 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re",
+  "article_name": "REFLEXIONES SOBRE LA ETAPA DE REVALORIZACIÓN DEL ARTE FLAMENCO",
+  "article_type": "essay_opinion",
+  "language": "es",
+  "page_start": 4,
+  "page_end": 6,
+  "n_blocks": 33,
+  "text_chars": 20920,
+  "article_opening": "Alguien ha dicho —y se lo agradecemos— que con la publicación del Diccionario Enciclopédico Ilustrado del Flamenco se cierra la etapa de revalorización del arte andaluz, inicia-da hace treinta años, por lo que se impone un nuevo tratamiento de su análisis histórico y en la apreciación de su evolución y de sus intérpretes. Efectivamente, el flamenco está revalorizado y reconocido como nunca, tanto dentro de España como en el extranjero. Pero esto no quiere decir que haya llegado en su divulgación al esplendor y la extensión de otras músicas aborígenes o contemporáneas, como el jazz, por [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 24,
+    "supporting_window_ids": [
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb140",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb154",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb130"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "high",
+    "n_supporting_windows": 21,
+    "supporting_window_ids": [
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb106",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb140",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb130"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_09",
+    "evidence_strength": "high",
+    "n_supporting_windows": 17,
+    "supporting_window_ids": [
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb143",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb171",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb166"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "AUTH",
+    "concept_id": "TRAD_03",
+    "evidence_strength": "high",
+    "n_supporting_windows": 22,
+    "supporting_window_ids": [
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb118",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb96",
+      "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb97"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb140",
+    "page_number": 5,
+    "logical_page": "5-right",
+    "focal_global_block_id": 140,
+    "text": "Después de la llamada de atención del libro «Flamencología», hay que registrar otro reclamo significativo en favor del arte flamenco, la edición, en 1954, de la primera «Antología del Cante Flamenco», en tres discos, dirigida para la marca Hispavox por el tocaor Perico El del Lunar. Este artista, este singular guitarrista, gran conocedor del mejor cante, llevó a cabo una labor digna de encomio, que no se le ha reconocido todavía en toda su amplitud, pero que hay que catalogarla como de las más relevantes y positivas para la etapa de revalorización. Perico El del Lunar sabía de la necesidad de recuperar estilos en desuso y buscó para ello a [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 21
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb154",
+    "page_number": 6,
+    "logical_page": "6-left",
+    "focal_global_block_id": 154,
+    "text": "pezando por las primeras —La Platería de Granada, Juan Breva de Málaga, Los Cernícalos de Jerez, etc.—, hasta las más recientemente fundadas. Las peñas flamencas merecen un reconocimiento pleno en el diario quehacer en pro del flamenco, por lo que habrá que dedicarle un estudio especial, teniendo en cuenta cuanto suponen en nuestros días y de cara al futuro para el devenir del cante, el baile y el toque de Andalucía. No obstante, hay que hacer hincapié, aquí y ahora, en que sin la existencia de las peñas flamencas la etapa de revalorización no se habría patentizado totalmente. Sus componentes constituyen el soporte capital del flamenco, la [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb130",
+    "page_number": 5,
+    "logical_page": "5-left",
+    "focal_global_block_id": 130,
+    "text": "«Flamencología», pues, en su densidad y problemática, es un libro que abre una época, no solamente de la bibliografía flamenca, sino también de una nueva actitud y un nuevo pensamiento ante el arte flamenco, porque recuerda y atestigua sus cualidades y dimensiones como nunca fueron contempladas. Después de la llamada de atención del libro «Flamencología», hay que registrar otro reclamo significativo en favor del arte flamenco, la edición, en 1954, de la primera «Antología del Cante Flamenco», en tres discos, dirigida para la marca Hispavox por el tocaor Perico El del Lunar. Este artista, este singular guitarrista, gran conocedor del mejor [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 21
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb106",
+    "page_number": 4,
+    "logical_page": "4-right",
+    "focal_global_block_id": 106,
+    "text": "Pero para hacerlo tenemos que admitir una conclusión, si queremos situarnos en una posición de salida válida: la aspiración del flamenco desde los primeros años del siglo XIX, ha sido ser un espectáculo. En este sentido no hay que llamarse a engaños. Y en consecuencia directísima, todo intérprete con posibilidades ha intentado ser profesional, salvo muy raras excepciones. Por ello resulta desmesurada la exaltación que se viene haciendo de algunos ancianos, que nunca pasaron de ser meros aficionados, presentándolos como genios incomprendidos del cante o cantaores maravillosos que nunca quisieron vivir del cante. Es un aspecto que debemos [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 21
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb143",
+    "page_number": 5,
+    "logical_page": "5-right",
+    "focal_global_block_id": 143,
+    "text": "Y tampoco hay que olvidar en este aspecto la de otros tablaos de los años cincuenta y sesenta, porque por ellos pasaron flamencos de gran renombre y cualidades, basta para comprobarlo echar una mirada a los elencos que los componían durante los años citados. Eran carteles que para sí quisieran muchos de los festivales de la actualidad. Los tablaos, en sus primeros tiempos y hasta su decadencia en los primeros años setenta, contribuyeron a proyectar el arte flamenco, fueron su escaparate principal. Lástima que después no hayan continuado en la misma línea, pero en sus principios tuvieron en ellos a figuras como Manolo Caracol, Fosforito, [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_09",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 17
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb171",
+    "page_number": 6,
+    "logical_page": "6-right",
+    "focal_global_block_id": 171,
+    "text": "Y con Antonio Mairena, los festivales se erigieron en el modo de representación flamenca de nuestro tiempo, en el signo más claro de la etapa de revalorización. Los organismos oficiales, a todos los niveles, atendieron elcónmica y policitamente, desde mediados los años sesenta y de manera progresiva, la demanda de la afición, organizando o patrocinando a fondo perdido los festivales flamencos y los concursos, dos clases de manifestación flamenca que empezaron a proliferar por toda Andalucía y diversos puntos de otras regiones españolas. Su eclosión ha constituido el mayor esplendor del arte flamenco de la historia y ha dado lugar a que se [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_09",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 17
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb166",
+    "page_number": 6,
+    "logical_page": "6-right",
+    "focal_global_block_id": 166,
+    "text": "Antonio Mairena pasó de ser un desconocido del minoritario gran público del flamenco a convertirse en la máxima figura de los festivales en menos de cinco años, sobre todo después de serle otorgada La Llave de Oro del Cante en el tercer concurso de Córdoba, por un jurado en el que estaban Juan Talega y Aurelio de Cádiz. Antonio Mairena, hombre inteligente, sabio de su tribu, colaboró con su vocación didáctica a la mayor difusión del cante, alcanzado de paso el respeto de la afición, un respeto que no se daba en tanta amplitud desde don Antonio Chacón. Antonio Mairena contó para ello con una época propicia y el apoyo de los flamencólogos, con [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_09",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 17
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb118",
+    "page_number": 4,
+    "logical_page": "4-right",
+    "focal_global_block_id": 118,
+    "text": "Todos o casi todos los tratadistas del flamenco hemos venido olvidando algo sustancial, sin lo cual no habría podido llevarse a cabo la etapa de revalorización: como antes apuntábamos, los intérpretes no habían dejado de ejercer su arte, divididos en dos grandes grupos, los ya señalados de colmaos y de escenarios. Este apapodemos extender a La Niña de los Peines, quien continuaba con sus giras por toda la geografía española, mientras que otras geniales figuras como Carmen Amaya o Sabicas, recorrían el mundo interpretando arte flamenco de la más alta y jonda condición. El flamenco no solamente seguía vivo, sino que contaba con un plantel de [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_03",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 22
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb96",
+    "page_number": 4,
+    "logical_page": "4-left",
+    "focal_global_block_id": 96,
+    "text": "Alguien ha dicho —y se lo agradecemos— que con la publicación del Diccionario Enciclopédico Ilustrado del Flamenco se cierra la etapa de revalorización del arte andaluz, inicia-da hace treinta años, por lo que se impone un nuevo tratamiento de su análisis histórico y en la apreciación de su evolución y de sus intérpretes. Efectivamente, el flamenco está revalorizado y reconocido como nunca, tanto dentro de España como en el extranjero. Pero esto no quiere decir que haya llegado en su divulgación al esplendor y la extensión de otras músicas aborígenes o contemporáneas, como el jazz, por ejemplo, aunque el flamenco ha dado un salto cualitativo [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_03",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 22
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re__gb97",
+    "page_number": 4,
+    "logical_page": "4-left",
+    "focal_global_block_id": 97,
+    "text": "Alguien ha dicho —y se lo agradecemos— que con la publicación del Diccionario Enciclopédico Ilustrado del Flamenco se cierra la etapa de revalorización del arte andaluz, inicia-da hace treinta años, por lo que se impone un nuevo tratamiento de su análisis histórico y en la apreciación de su evolución y de sus intérpretes. Efectivamente, el flamenco está revalorizado y reconocido como nunca, tanto dentro de España como en el extranjero. Pero esto no quiere decir que haya llegado en su divulgación al esplendor y la extensión de otras músicas aborígenes o contemporáneas, como el jazz, por ejemplo, aunque el flamenco ha dado un salto cualitativo [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_03",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 22
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_09",
+    "label_en": "metacultural_infrastructure",
+    "label_es": "infraestructura_metacultural",
+    "definition": "Language about the documentary, bureaucratic, educational, archival, inventorying, and policy apparatus that makes heritage governable as an object of intervention.",
+    "use_when": "Use when passages discuss inventories, files, archives, committees, policy bodies, documentation, training, curricula, research institutes, or administrative procedures that sustain heritage regimes.",
+    "do_not_use_when": "Do not use for generic mention of institutions unless the institutional apparatus itself is part of the heritage operation.",
+    "related_concepts": "HERIT_03; HERIT_04; LEGIT_01",
+    "positive_example": {
+      "excerpt": "la utilidad que podría tener la inserción en la Guía de un trabajo a modo de inventario de los festivales celebrados en años anteriores",
+      "rationale": "The passage builds a documentary and administrative apparatus for making flamenco governable.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Fotografias... Archivo «Candil»",
+      "rationale": "This uses the trigger word Archivo but violates the negative constraint because it is a photo credit, not metacultural infrastructure.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "TRAD_03",
+    "label_en": "roots_origin_claim",
+    "label_es": "reclamo_de_raices_origen",
+    "definition": "Language that grounds value or legitimacy in roots, origin, source, essence, cradle, or primary form.",
+    "use_when": "Use when a passage makes roots or origin carry evaluative authority, not merely historical reference.",
+    "do_not_use_when": "Do not use for neutral origin stories unless they legitimate present judgment.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "el auténtico carácter andaluz... debido fundamentalmente al desconocimiento de sus raíces verdaderas que darían origen a un Arte",
+      "rationale": "Roots and origin are made to carry evaluative authority for flamenco's Andalusian character.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "podemos utilizar las palabras de origen sánscrito",
+      "rationale": "This uses the trigger word origen but violates the negative constraint because it is a neutral etymological note, not legitimating flamenco through roots.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

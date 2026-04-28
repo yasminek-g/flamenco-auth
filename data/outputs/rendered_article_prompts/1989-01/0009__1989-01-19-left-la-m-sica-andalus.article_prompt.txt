@@ -1,0 +1,430 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-19-left-la-m-sica-andalus",
+  "article_name": "LA MÚSICA ANDALUSÍ",
+  "article_type": "essay_opinion",
+  "language": "es",
+  "page_start": 19,
+  "page_end": 19,
+  "n_blocks": 5,
+  "text_chars": 2236,
+  "article_opening": "La presencia de un grupo de músicos marroquíes en la última y escasamente flamenca Bienal sevillana, ha podido confundir a más de un aficionado induciéndole a creer en una aportación rememorativa de la música andalusi, cuya influencia en el cante flamenco parece hasta cierto punto admisible. Y nada más lejos de la realidad cuando, para empezar, se sabe —y en esto no existen dudas— de la escasa entidad musical de los pueblos árabes y más aún de los beréberes, como es el caso de esta embajada que ha llegado a Sevilla desde la hermosa Marrakech, capital meridional de Marruecos. Los árabes que [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 5,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb497",
+      "1989-01-19-left-la-m-sica-andalus__gb498",
+      "1989-01-19-left-la-m-sica-andalus__gb501"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_06",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 5,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb497",
+      "1989-01-19-left-la-m-sica-andalus__gb498",
+      "1989-01-19-left-la-m-sica-andalus__gb494"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb494",
+      "1989-01-19-left-la-m-sica-andalus__gb496"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_01",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb494",
+      "1989-01-19-left-la-m-sica-andalus__gb496"
+    ]
+  },
+  {
+    "rank": 5,
+    "family_id": "AUTH",
+    "concept_id": "AUTH_04",
+    "evidence_strength": "low",
+    "n_supporting_windows": 1,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb501"
+    ]
+  },
+  {
+    "rank": 6,
+    "family_id": "COMM",
+    "concept_id": "COMM_02",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-19-left-la-m-sica-andalus__gb494"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-19-left-la-m-sica-andalus__gb497",
+    "page_number": 19,
+    "logical_page": "19-left",
+    "focal_global_block_id": 497,
+    "text": "nente Abderrahamaman II y de su insigne vasallo, el famoso Ziryab (entre 775-885). En el siglo XIII, los árabes españoles fueron rechazados hacia el norte de Africa y fue entonces cuando la música árabe-andaluza o andaluzáárabe se aposentó en tierra del Magreb y concretamente en Túnez la de Sevilla, en Argelia la de Córdoba, y en Marruecos las dos restantes: Fez la de Valencia y Tetuán la de Granada. Así pueden ser llamadas con los respectivos topónimos de Esbilía, Kurtubía, Balensía y Garnatía. Los trazos de estas músicas pueden darse hoy por perdidos en Algeria y en Fez, mientras que En la época de Ziryab existían dos escuelas de música [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-19-left-la-m-sica-andalus__gb498",
+    "page_number": 19,
+    "logical_page": "19-left",
+    "focal_global_block_id": 498,
+    "text": "En el siglo XIII, los árabes españoles fueron rechazados hacia el norte de Africa y fue entonces cuando la música árabe-andaluza o andaluzáárabe se aposentó en tierra del Magreb y concretamente en Túnez la de Sevilla, en Argelia la de Córdoba, y en Marruecos las dos restantes: Fez la de Valencia y Tetuán la de Granada. Así pueden ser llamadas con los respectivos topónimos de Esbilía, Kurtubía, Balensía y Garnatía. Los trazos de estas músicas pueden darse hoy por perdidos en Algeria y en Fez, mientras que En la época de Ziryab existían dos escuelas de música culta árabe, como existían dos Califatos definidos: el oriental en Bagdad y el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-19-left-la-m-sica-andalus__gb501",
+    "page_number": 19,
+    "logical_page": "19-left",
+    "focal_global_block_id": 501,
+    "text": "En la época de Ziryab existían dos escuelas de música culta árabe, como existían dos Califatos definidos: el oriental en Bagdad y el occidental en Córdoba, de los que se derivaron diversos estilos y teorías (1). se conservan felizmente en Te-tuán, de la mano del profesor Mohamed Tensamani, y en Túnez en la academia de música árabe Rashidía. Cuando recientemente en España se han puesto en el mercado del espectáculo unos intentos de redescubrir esta hermosa y legendaria música, la aventura posiblemente compensada en el aspecto comercial, no se ha visto correspondida musicalmente cuando se prescindió de la Nuba tetuání del maestro Tensamani [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_04",
+        "rank": 5,
+        "evidence_strength": "low",
+        "n_supporting_windows": 1
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-19-left-la-m-sica-andalus__gb494",
+    "page_number": 19,
+    "logical_page": "19-left",
+    "focal_global_block_id": 494,
+    "text": "La presencia de un grupo de músicos marroquíes en la última y escasamente flamenca Bienal sevillana, ha podido confundir a más de un aficionado induciéndole a creer en una aportación rememorativa de la música andalusi, cuya influencia en el cante flamenco parece hasta cierto punto admisible. Y nada más lejos de la realidad cuando, para empezar, se sabe —y en esto no existen dudas— de la escasa entidad musical de los pueblos árabes y más aún de los beréberes, como es el caso de esta embajada que ha llegado a Sevilla desde la hermosa Marrakech, capital meridional de Marruecos. Los árabes que antes del Islam vagaron constantemente por el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 5
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 3,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 6,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-19-left-la-m-sica-andalus__gb496",
+    "page_number": 19,
+    "logical_page": "19-left",
+    "focal_global_block_id": 496,
+    "text": "La presencia de un grupo de músicos marroquíes en la última y escasamente flamenca Bienal sevillana, ha podido confundir a más de un aficionado induciéndole a creer en una aportación rememorativa de la música andalusi, cuya influencia en el cante flamenco parece hasta cierto punto admisible. Y nada más lejos de la realidad cuando, para empezar, se sabe —y en esto no existen dudas— de la escasa entidad musical de los pueblos árabes y más aún de los beréberes, como es el caso de esta embajada que ha llegado a Sevilla desde la hermosa Marrakech, capital meridional de Marruecos. Los árabes que antes del Islam vagaron constantemente por el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 3,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_06",
+    "label_en": "subaltern_contested_heritage",
+    "label_es": "patrimonio_subalterno_o_disputado",
+    "definition": "Language that treats heritage as contested, dissonant, politically negotiated, or used by subaltern groups to challenge authorized meanings and identities.",
+    "use_when": "Use when passages highlight contestation, control, dissent, competing memories, community challenge, or negotiated recognition in heritage terms.",
+    "do_not_use_when": "Do not use for ordinary disagreement unless heritage, memory, or identity politics are explicitly at stake.",
+    "related_concepts": "COMM_01; LEGIT_01; HERIT_02",
+    "positive_example": {
+      "excerpt": "¿refleja hoy el flamenco... la realidad andaluza, la realidad de los hombres del Sur?... ¿Puede... retomar su virtualidad de síntoma, de voz secular representadora de algo o de alguien?",
+      "rationale": "The passage contests whether flamenco can still represent a community and its historical memory.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "tenemos gran respeto a la memoria de tu hermano",
+      "rationale": "This uses the trigger word memoria but violates the negative constraint because it is personal remembrance, not contested heritage or identity politics.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_01",
+    "label_en": "inside_outside_boundary",
+    "label_es": "frontera_dentro_fuera",
+    "definition": "A boundary that contrasts inside flamenco with outside flamenco, often distinguishing insiders, intimate settings, or community practice from public, tourist, or external display.",
+    "use_when": "Use when passages construct flamenco's value through an inside/outside opposition or claim that one venue, practice, or audience belongs to the inner reality of flamenco while another remains external.",
+    "do_not_use_when": "Do not use for purely geographic inside/outside language without a social or evaluative boundary.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "el cante gitano no habría podido resistir el contacto fulminante de un pueblo heterogéneo... porque traspuso su natural ambiente privado y rebasó los límites de su familiar y coloquial auditorio",
+      "rationale": "The passage constructs an evaluative boundary between an inner familial/private flamenco and an external public audience.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Fuera de tono, apelotonado y, de hecho, sin compás",
+      "rationale": "This uses the trigger word fuera but violates the negative constraint because it is a musical/performance criticism, not an inside/outside social boundary.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "AUTH_04",
+    "label_en": "anti_commercial_authenticity",
+    "label_es": "autenticidad_anticomercial",
+    "definition": "A discourse move that defines authenticity against markets, publicity, spectacle, mass mediation, tourism, or commodification.",
+    "use_when": "Use when commercial circulation is treated as evidence of loss of truth, seriousness, purity, or legitimate tradition.",
+    "do_not_use_when": "Do not use for routine mention of sales, ticketing, promotion, or publishing economics without evaluative authenticity language.",
+    "related_concepts": "AUTH_01; AUTH_02; AUTH_03; LEGIT_01",
+    "positive_example": {
+      "excerpt": "se ha sacado de su círculo original comercializándose y desposeyéndole de parte de sus valores reales",
+      "rationale": "Commercialization is treated as removing flamenco from its original circle and stripping real values.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "patrocinado por la Diputación de Granada, el Ayuntamiento de Cúllar de Vega y firmas comerciales",
+      "rationale": "This uses the trigger word comerciales but violates the negative constraint because it is routine sponsorship information without authenticity stakes.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_02",
+    "label_en": "public_private_setting",
+    "label_es": "configuracion_publica_privada",
+    "definition": "A discourse or scene distinction between public/commercial/spectacular flamenco and private/social/intimate flamenco.",
+    "use_when": "Use when value, legitimacy, or social meaning turns on whether flamenco is represented as public or private, staged or social, open or enclosed.",
+    "do_not_use_when": "Do not use for neutral venue description unless the public/private contrast structures the passage's evaluation.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "la Peña Flamenca no puede ser numerosa, debe pecar de pequeñez, porque la comunicación artista-aficionado tiene su sitio entre pocos... la intimidad de quien dice y escucha, imposible en una masificación",
+      "rationale": "The value of flamenco is tied to small-scale peña intimacy rather than mass public setting.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Centros de enseñanza públicos y privados",
+      "rationale": "This uses the trigger words públicos y privados but violates the negative constraint because it is neutral institutional categorization.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

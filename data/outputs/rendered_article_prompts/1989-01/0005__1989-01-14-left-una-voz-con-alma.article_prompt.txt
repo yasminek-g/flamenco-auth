@@ -1,0 +1,403 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-14-left-una-voz-con-alma",
+  "article_name": "Una voz con alma",
+  "article_type": "article",
+  "language": "es",
+  "page_start": 14,
+  "page_end": 14,
+  "n_blocks": 2,
+  "text_chars": 620,
+  "article_opening": "Malagueñas, soleares y seguirillas gitanas... Historias de mis pesares y de tus horitas malas. Manuel Machado sa voz — voz total— voz verdadera: Ansia, fuego, pasión, rabia y desplante, fragua viva y cabal del puro cante que sabe a siguiriya y petenera... Esa voz con raíz de enredadera, que es grito de dolor y un ¡ay! amante, es taranta y toná —pecho sangrante— que hace vibrar a Andalucía entera... Esa voz que suspira y que desgarra cuando la cita a fondo una guitarra es de Antonio Mairena —luz de albura—... Que trae de los Alcores sus cantares y arrancándose al son de soleares hace del Cante [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_06",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "AUTH",
+    "concept_id": "AUTH_02",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_05",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  },
+  {
+    "rank": 5,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  },
+  {
+    "rank": 6,
+    "family_id": "COMM",
+    "concept_id": "COMM_01",
+    "evidence_strength": "low",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-14-left-una-voz-con-alma__gb372",
+      "1989-01-14-left-una-voz-con-alma__gb373"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-14-left-una-voz-con-alma__gb372",
+    "page_number": 14,
+    "logical_page": "14-left",
+    "focal_global_block_id": 372,
+    "text": "Malagueñas, soleares y seguirillas gitanas... Historias de mis pesares y de tus horitas malas. Manuel Machado sa voz — voz total— voz verdadera: Ansia, fuego, pasión, rabia y desplante, fragua viva y cabal del puro cante que sabe a siguiriya y petenera... Esa voz con raíz de enredadera, que es grito de dolor y un ¡ay! amante, es taranta y toná —pecho sangrante— que hace vibrar a Andalucía entera... Esa voz que suspira y que desgarra cuando la cita a fondo una guitarra es de Antonio Mairena —luz de albura—... Que trae de los Alcores sus cantares y arrancándose al son de soleares hace del Cante Jondo esencia pura.",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_05",
+        "rank": 3,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 4,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 5,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 6,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-14-left-una-voz-con-alma__gb373",
+    "page_number": 14,
+    "logical_page": "14-left",
+    "focal_global_block_id": 373,
+    "text": "Malagueñas, soleares y seguirillas gitanas... Historias de mis pesares y de tus horitas malas. Manuel Machado sa voz — voz total— voz verdadera: Ansia, fuego, pasión, rabia y desplante, fragua viva y cabal del puro cante que sabe a siguiriya y petenera... Esa voz con raíz de enredadera, que es grito de dolor y un ¡ay! amante, es taranta y toná —pecho sangrante— que hace vibrar a Andalucía entera... Esa voz que suspira y que desgarra cuando la cita a fondo una guitarra es de Antonio Mairena —luz de albura—... Que trae de los Alcores sus cantares y arrancándose al son de soleares hace del Cante Jondo esencia pura.",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_05",
+        "rank": 3,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 4,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 5,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 6,
+        "evidence_strength": "low",
+        "n_supporting_windows": 2
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_06",
+    "label_en": "subaltern_contested_heritage",
+    "label_es": "patrimonio_subalterno_o_disputado",
+    "definition": "Language that treats heritage as contested, dissonant, politically negotiated, or used by subaltern groups to challenge authorized meanings and identities.",
+    "use_when": "Use when passages highlight contestation, control, dissent, competing memories, community challenge, or negotiated recognition in heritage terms.",
+    "do_not_use_when": "Do not use for ordinary disagreement unless heritage, memory, or identity politics are explicitly at stake.",
+    "related_concepts": "COMM_01; LEGIT_01; HERIT_02",
+    "positive_example": {
+      "excerpt": "¿refleja hoy el flamenco... la realidad andaluza, la realidad de los hombres del Sur?... ¿Puede... retomar su virtualidad de síntoma, de voz secular representadora de algo o de alguien?",
+      "rationale": "The passage contests whether flamenco can still represent a community and its historical memory.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "tenemos gran respeto a la memoria de tu hermano",
+      "rationale": "This uses the trigger word memoria but violates the negative constraint because it is personal remembrance, not contested heritage or identity politics.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "AUTH_02",
+    "label_en": "purity_boundary_work",
+    "label_es": "trabajo_de_frontera_de_pureza",
+    "definition": "Language that defines proper flamenco by excluding what is impure, mixed, corrupted, diluted, fake, or insufficiently rooted.",
+    "use_when": "Use when purity/contamination rhetoric draws a boundary between legitimate and illegitimate flamenco.",
+    "do_not_use_when": "Do not use for simple stylistic comparison without exclusion or devaluation.",
+    "related_concepts": "LEGIT_01; POLICY_01",
+    "positive_example": {
+      "excerpt": "Me defiendo de cantar peteneras, serranas, fandangos y cantes levantinos porque los considero cantes impuros inventados por los payos.",
+      "rationale": "The passage draws a boundary between legitimate and illegitimate cantes through impurity and invention.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "sin incurrir en puro desatino",
+      "rationale": "This uses the trigger word puro but violates the negative constraint because it is an idiomatic intensifier, not purity boundary-work around flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_05",
+    "label_en": "living_heritage_system",
+    "label_es": "patrimonio_vivo_como_sistema",
+    "definition": "Language that treats intangible heritage as living practice sustained through people, habitus, habitat, resources, and conditions of reproduction rather than as detachable artifacts.",
+    "use_when": "Use when texts emphasize living culture, practitioners, communities, carriers/transmitters, habitat, or conditions for reproduction.",
+    "do_not_use_when": "Do not use for static cataloging of works or genres without attention to people, context, or living practice.",
+    "related_concepts": "TRAD_04; HERIT_03; COMM_01",
+    "positive_example": {
+      "excerpt": "fueron los más fecundos transmisores de la riqueza artística del flamenco. Toda una herencia viva todavía.",
+      "rationale": "The passage presents flamenco heritage as living transmission through people.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "portador de todo el vitalismo añejo",
+      "rationale": "This uses the trigger word portador but violates the negative constraint because it is a metaphor for a vehicle of feeling, not a living heritage system.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_01",
+    "label_en": "inside_outside_boundary",
+    "label_es": "frontera_dentro_fuera",
+    "definition": "A boundary that contrasts inside flamenco with outside flamenco, often distinguishing insiders, intimate settings, or community practice from public, tourist, or external display.",
+    "use_when": "Use when passages construct flamenco's value through an inside/outside opposition or claim that one venue, practice, or audience belongs to the inner reality of flamenco while another remains external.",
+    "do_not_use_when": "Do not use for purely geographic inside/outside language without a social or evaluative boundary.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "el cante gitano no habría podido resistir el contacto fulminante de un pueblo heterogéneo... porque traspuso su natural ambiente privado y rebasó los límites de su familiar y coloquial auditorio",
+      "rationale": "The passage constructs an evaluative boundary between an inner familial/private flamenco and an external public audience.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Fuera de tono, apelotonado y, de hecho, sin compás",
+      "rationale": "This uses the trigger word fuera but violates the negative constraint because it is a musical/performance criticism, not an inside/outside social boundary.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

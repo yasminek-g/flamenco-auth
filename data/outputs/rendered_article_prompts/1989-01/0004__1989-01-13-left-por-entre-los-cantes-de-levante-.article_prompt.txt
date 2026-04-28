@@ -1,0 +1,387 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-13-left-por-entre-los-cantes-de-levante-",
+  "article_name": "Por entre los cantes de Levante y ANTONIO PIÑANA",
+  "article_type": "essay_opinion",
+  "language": "es",
+  "page_start": 13,
+  "page_end": 13,
+  "n_blocks": 11,
+  "text_chars": 8490,
+  "article_opening": "son los caminos que nos llevan a él. Así, la música es amor porque surge y nos llega a través de los caminos más puros y hondos del sentimienz. La música distingue al hombre y la huerta porque es cultura, y la cultura es el único ideal que puede redimir o remediar el drama del ser humano sobre la tierra. Aunque sea otra cosa más de las muchas que ignoramos, la verdad es que la música forma parte integral de nuestro propio acontecer diario, de nosotros como seres humanos y de la propia naturaleza que nos circunda: canta, hace música el viento en los árboles como el agua que corre. Y no estoy [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "high",
+    "n_supporting_windows": 9,
+    "supporting_window_ids": [
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb367",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb360",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb361"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 9,
+    "supporting_window_ids": [
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb366",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb360",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb350"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "AUTH",
+    "concept_id": "TRAD_04",
+    "evidence_strength": "high",
+    "n_supporting_windows": 6,
+    "supporting_window_ids": [
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb366",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb362",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb363"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 10,
+    "supporting_window_ids": [
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb366",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb360",
+      "1989-01-13-left-por-entre-los-cantes-de-levante-__gb353"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb367",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 367,
+    "text": "Singular entre quienes lo hayan sido a la hora de cantar. Así podemos decir sin miedo que Antonio Piñana ya figura en la historia nominal de canta-res distinguidos. Por casualidad, su documentación acreditativa en este sentido nos llega desprendida y rodando desde los consabidos cuentos y leyendas orales, medios tantas veces desorbitados por el apasionado compadreo de unos o distorsionado por la incomprensión o antipatías de otros. Su obra, gracias a las más fieles técnicas de la conservación grabada, responde viva y vibrante al estudio y crítica del más riguroso e imparcial tribunal del Cante Flamenco. La mina y la huerta que Murcia canta [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb360",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 360,
+    "text": "Tiene la canción andaluza un aire flamenco sin llegar a ser cante y tiene el Cante un aire andaluz que nunca llega a ser el mismo si la comarca no es la misma. Avalados quedan los cantes de Levante por sus más insignes cultivadores: Chacón, Manuel Torre, Escacena, el Cojo de Málaga, Marchena... ¿Qué cantar que se precie de serlo no ha intentado alguna vez «hacer», como mínimo, el taranto? Del mítico Manuel Torre llegó a decir el coloso de la guitarra, Ramón Montoya, que era lo que mejor cantaba. «Qué buen cante tenéis», dijo Mairena en Levante. No, no es el principio de una posible cartagenera, es mucho más; es la granítica apreciación de [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 10
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb361",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 361,
+    "text": "Avalados quedan los cantes de Levante por sus más insignes cultivadores: Chacón, Manuel Torre, Escacena, el Cojo de Málaga, Marchena... ¿Qué cantar que se precie de serlo no ha intentado alguna vez «hacer», como mínimo, el taranto? Del mítico Manuel Torre llegó a decir el coloso de la guitarra, Ramón Montoya, que era lo que mejor cantaba. «Qué buen cante tenéis», dijo Mairena en Levante. No, no es el principio de una posible cartagenera, es mucho más; es la granítica apreciación de otro elegido por los dioses que tal vez no le llegara a dar tiempo de extenderse en ese campo como logró hacerlo por partida doble en el naturalmente suyo. Qué [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb366",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 366,
+    "text": "Tendríamos que calificar de pura la forma de llevar y sostener Piñana sus cantes si no fueran más acertados los términos de elementalidad natural. En juicio, en esta personal apología, el magisterio de un cantaor especialista, no sus cualidades artística. Me estoy refiriendo al conocimiento que de su cante, el suyo, tiene un determinado intérprete, y no al temple de su eco emocional, que es otra cosa. El sonido de su acento musical no puede ser otro —lógico por geográfico— que el de su identidad levantina. Ese eco-acento puede que no encaje en el oído de otros extremos flamencos, pero la evidente e íntegra existencia del Cante en sí está [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_04",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 10
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb350",
+    "page_number": 13,
+    "logical_page": "13-left",
+    "focal_global_block_id": 350,
+    "text": "No sé si estaremos de acuerdo, pero yo estimo en mucho, y creo que en su justo valor, la autoridad que le conceden al musicólogo sus largos conocimientos de la música y sus orígenes en general. Considerando noblemente que errar es de humanos y rectificar de sabios, podemos, de la mano del técnico en musicología, hallar muchos vestigios «arqueológicos» por entre el silencio histórico de los principios musicoflamencos. Y es así cómo en nuestro caso el prestigioso y andalucísimo sevillano colega y contemporáneo de don Manuel de Falla, Hipólito Rossy, nos dice que «El cante jondo, la música y el baile flamenco constituyen un arte exclusivamente [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 9
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb362",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 362,
+    "text": "el Cante, igual a una milenaria ruina arquitectónica expuesta a la intemperie, necesita de —ya que no algo más oficialmente positivo— románticos conservadores-restauradores. Muy por encima de las naturales miserias humanas, hoy, sin desconsiderar a nadie, estimamos que corresponde, por su evidente y viva labor, la más merecida mención honorífica al cantaor auténtica y estrictamente levantino don Antonio Piñana de Cartagena. Antonio Piñana es otro Asdrúbal cartaginés con el grado de general de la más exacta y barroca expresión del hondísimo cante de Levante, otro firme puntal de los desconsolados aires de su tierra, una decidida y necesaria [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_04",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb363",
+    "page_number": 13,
+    "logical_page": "13-right",
+    "focal_global_block_id": 363,
+    "text": "Muy por encima de las naturales miserias humanas, hoy, sin desconsiderar a nadie, estimamos que corresponde, por su evidente y viva labor, la más merecida mención honorífica al cantaor auténtica y estrictamente levantino don Antonio Piñana de Cartagena. Antonio Piñana es otro Asdrúbal cartaginés con el grado de general de la más exacta y barroca expresión del hondísimo cante de Levante, otro firme puntal de los desconsolados aires de su tierra, una decidida y necesaria antorcha alumbradora de auténticos caminos a seguir. Su mesiánica aparición ha sobrepasado el anárquico campo de batalla de discrepantes reductos ortodoxos, adjudicaciones [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_04",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-13-left-por-entre-los-cantes-de-levante-__gb353",
+    "page_number": 13,
+    "logical_page": "13-left",
+    "focal_global_block_id": 353,
+    "text": "Coincidente, de algún modo, esta afirmación por parte de la mayoría investigadora. Sin embargo, parece como si Rossy reparara en el escenario geográfico donde se gesta esta expresión musicoespiritual sin añondar en él, sin detenerse a sopesar, si no minuciosamente, sí como atención a la base fundamental del fenómeno en cuestión, pues en otros puntos geográficos de España estuvieron alguna que otra de esas civilizaciones y no por ello dejaron claramente definido el aire estructural que caracteriza el desarrollo interpretativo de la música jondo-flamenca. Ya sabemos que no es igual generalizar que concretar, pero ahora lo creo necesario si [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 10
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "TRAD_04",
+    "label_en": "lineage_transmission_claim",
+    "label_es": "reclamo_de_linaje_transmision",
+    "definition": "Language that legitimates a performer, style, or knowledge through descent, apprenticeship, school, family, masters, or proper transmission.",
+    "use_when": "Use when inheritance or transmission is what authorizes present value or correctness.",
+    "do_not_use_when": "Do not use for neutral biographical mentions of teachers or relatives.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "Todo mi aprendizaje como cantaor lo he hecho a su vera... yo no he tenido otro espejo donde mirarme",
+      "rationale": "Apprenticeship beside a master authorizes the singer's present artistic identity.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "MATERIAL DE ENSEÑANZA PARA AUTO-ESCUELAS",
+      "rationale": "This uses the trigger word escuelas but violates the negative constraint because it is an advertisement, not lineage or transmission.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_01",
+    "label_en": "inside_outside_boundary",
+    "label_es": "frontera_dentro_fuera",
+    "definition": "A boundary that contrasts inside flamenco with outside flamenco, often distinguishing insiders, intimate settings, or community practice from public, tourist, or external display.",
+    "use_when": "Use when passages construct flamenco's value through an inside/outside opposition or claim that one venue, practice, or audience belongs to the inner reality of flamenco while another remains external.",
+    "do_not_use_when": "Do not use for purely geographic inside/outside language without a social or evaluative boundary.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "el cante gitano no habría podido resistir el contacto fulminante de un pueblo heterogéneo... porque traspuso su natural ambiente privado y rebasó los límites de su familiar y coloquial auditorio",
+      "rationale": "The passage constructs an evaluative boundary between an inner familial/private flamenco and an external public audience.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Fuera de tono, apelotonado y, de hecho, sin compás",
+      "rationale": "This uses the trigger word fuera but violates the negative constraint because it is a musical/performance criticism, not an inside/outside social boundary.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

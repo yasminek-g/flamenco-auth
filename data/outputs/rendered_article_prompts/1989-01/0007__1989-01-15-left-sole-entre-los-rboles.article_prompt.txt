@@ -1,0 +1,403 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-15-left-sole-entre-los-rboles",
+  "article_name": "Soleá entre los árboles",
+  "article_type": "article",
+  "language": "es",
+  "page_start": 15,
+  "page_end": 15,
+  "n_blocks": 4,
+  "text_chars": 1362,
+  "article_opening": "De la tierra albariza me viene cada tarde el alma pajareja de un cante. Cante que se escapa entre las colosales rendijas que deja ver el aire por cada tronco, por cada hueco allí en donde la pena se sale como un parto cósmico. Entre los árboles una soleá cada tarde sale de la ínsula hiperbórea en donde una voz desgraciada con un hacha de bronce va talando el bosque de los árboles al viento. Y no hay luz que revele la candente fisonomía ni el más leve rasgo siquiera asoma por entre la sombra primitiva que da el quejido del solitario. Al lubricán se abren las ventanas lejanas en donde un rojizo [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "AUTH",
+    "concept_id": "TRAD_04",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_01",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  },
+  {
+    "rank": 5,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_08",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 2,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  },
+  {
+    "rank": 6,
+    "family_id": "COMM",
+    "concept_id": "COMM_04",
+    "evidence_strength": "low",
+    "n_supporting_windows": 4,
+    "supporting_window_ids": [
+      "1989-01-15-left-sole-entre-los-rboles__gb388",
+      "1989-01-15-left-sole-entre-los-rboles__gb392"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-15-left-sole-entre-los-rboles__gb388",
+    "page_number": 15,
+    "logical_page": "15-left",
+    "focal_global_block_id": 388,
+    "text": "De la tierra albariza me viene cada tarde el alma pajareja de un cante. Cante que se escapa entre las colosales rendijas que deja ver el aire por cada tronco, por cada hueco allí en donde la pena se sale como un parto cósmico. Entre los árboles una soleá cada tarde sale de la ínsula hiperbórea en donde una voz desgraciada con un hacha de bronce va talando el bosque de los árboles al viento. Y no hay luz que revele la candente fisonomía ni el más leve rasgo siquiera asoma por entre la sombra primitiva que da el quejido del solitario. Al lubricán se abren las ventanas lejanas en donde un rojizo paisaje de geometры estelares va diluyendo al [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_04",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 3,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_08",
+        "rank": 5,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_04",
+        "rank": 6,
+        "evidence_strength": "low",
+        "n_supporting_windows": 4
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-15-left-sole-entre-los-rboles__gb392",
+    "page_number": 15,
+    "logical_page": "15-right",
+    "focal_global_block_id": 392,
+    "text": "De la tierra albariza me viene cada tarde el alma pajareja de un cante. Cante que se escapa entre las colosales rendijas que deja ver el aire por cada tronco, por cada hueco allí en donde la pena se sale como un parto cósmico. Entre los árboles una soleá cada tarde sale de la ínsula hiperbórea en donde una voz desgraciada con un hacha de bronce va talando el bosque de los árboles al viento. Y no hay luz que revele la candente fisonomía ni el más leve rasgo siquiera asoma por entre la sombra primitiva que da el quejido del solitario. Al lubricán se abren las ventanas lejanas en donde un rojizo paisaje de geometры estelares va diluyendo al [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_04",
+        "rank": 1,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 2,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 3,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_01",
+        "rank": 4,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_08",
+        "rank": 5,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 2
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_04",
+        "rank": 6,
+        "evidence_strength": "low",
+        "n_supporting_windows": 4
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "TRAD_04",
+    "label_en": "lineage_transmission_claim",
+    "label_es": "reclamo_de_linaje_transmision",
+    "definition": "Language that legitimates a performer, style, or knowledge through descent, apprenticeship, school, family, masters, or proper transmission.",
+    "use_when": "Use when inheritance or transmission is what authorizes present value or correctness.",
+    "do_not_use_when": "Do not use for neutral biographical mentions of teachers or relatives.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "Todo mi aprendizaje como cantaor lo he hecho a su vera... yo no he tenido otro espejo donde mirarme",
+      "rationale": "Apprenticeship beside a master authorizes the singer's present artistic identity.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "MATERIAL DE ENSEÑANZA PARA AUTO-ESCUELAS",
+      "rationale": "This uses the trigger word escuelas but violates the negative constraint because it is an advertisement, not lineage or transmission.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_01",
+    "label_en": "inside_outside_boundary",
+    "label_es": "frontera_dentro_fuera",
+    "definition": "A boundary that contrasts inside flamenco with outside flamenco, often distinguishing insiders, intimate settings, or community practice from public, tourist, or external display.",
+    "use_when": "Use when passages construct flamenco's value through an inside/outside opposition or claim that one venue, practice, or audience belongs to the inner reality of flamenco while another remains external.",
+    "do_not_use_when": "Do not use for purely geographic inside/outside language without a social or evaluative boundary.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "el cante gitano no habría podido resistir el contacto fulminante de un pueblo heterogéneo... porque traspuso su natural ambiente privado y rebasó los límites de su familiar y coloquial auditorio",
+      "rationale": "The passage constructs an evaluative boundary between an inner familial/private flamenco and an external public audience.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Fuera de tono, apelotonado y, de hecho, sin compás",
+      "rationale": "This uses the trigger word fuera but violates the negative constraint because it is a musical/performance criticism, not an inside/outside social boundary.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_08",
+    "label_en": "vernacular_heritage_use",
+    "label_es": "uso_vernaculo_del_patrimonio",
+    "definition": "Use of heritage by communities, participants, or non-expert actors to make meaning, remember, belong, narrate place, or negotiate identity in the present.",
+    "use_when": "Use when heritage is invoked from below or in everyday/community terms rather than mainly through expert or institutional authorization.",
+    "do_not_use_when": "Do not use for official safeguarding, UNESCO language, or expert management discourse unless the passage also clearly foregrounds community use or experience.",
+    "related_concepts": "HERIT_01; HERIT_06; COMM family",
+    "positive_example": {
+      "excerpt": "hemos de acudir a nuestro folklore, o saber vivo de nuestro pueblo",
+      "rationale": "Heritage value is invoked through community knowledge and belonging rather than expert management.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "hizo una breve glosa histórico-lírica de nuestro pueblo",
+      "rationale": "This uses the trigger phrase nuestro pueblo but violates the negative constraint because it is municipal ceremonial speech, not vernacular community heritage use.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_04",
+    "label_en": "participant_spectator_relation",
+    "label_es": "relacion_participante_espectador",
+    "definition": "A contrast between participatory flamenco and spectatorial flamenco, especially where social involvement, jaleo, and co-presence are valued over detached observation.",
+    "use_when": "Use when the passage values participation, response, shared presence, or blurred performer-audience boundaries, or devalues passive spectatorship as less real or less intense.",
+    "do_not_use_when": "Do not use for generic mention of an audience unless the participant/spectator distinction is socially or aesthetically meaningful.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "una Peña debe estar creada para escuchar, no para oír; para hacer aficionados, no simples espectadores... la comunicación artista-aficionado tiene su sitio entre pocos",
+      "rationale": "The passage devalues passive spectatorship and values involved, competent co-presence.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Podrán participar cuantos cantaores aficionados y profesionales lo deseen",
+      "rationale": "This uses the trigger word participar but violates the negative constraint because it only means contest eligibility.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

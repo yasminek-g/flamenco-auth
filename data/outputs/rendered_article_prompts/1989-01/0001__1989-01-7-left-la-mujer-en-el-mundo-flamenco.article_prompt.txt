@@ -1,0 +1,396 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco",
+  "article_name": "LA MUJER EN EL MUNDO FLAMENCO",
+  "article_type": "article",
+  "language": "es",
+  "page_start": 7,
+  "page_end": 7,
+  "n_blocks": 14,
+  "text_chars": 4708,
+  "article_opening": "No hace muchos días tuve ocasión de asistir a una Reunión de la Federación de Peñas Sevillanas. Esa reunión dio lugar a estas reflexiones que, por otra parte, ya me habían inquietado con anterioridad. ¿Es el Flamenco un mundo de hombres? Y si no es así ¿qué sitio corresponde a las mujeres en él? Baste decir, como inicio y a manera de dato, que en la reunión citada, en la que estaban representadas buena parte de las más de 40 Peñas federadas en la provincia, sólo había dos mujeres. El resto, 50 Verdaderamente es de suponer que hay bastantes mujeres que son Socias de pleno derecho de Peñas y [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "COMM",
+    "concept_id": "COMM_06",
+    "evidence_strength": "high",
+    "n_supporting_windows": 14,
+    "supporting_window_ids": [
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb186",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb189",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb182"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "AUTH",
+    "concept_id": "AUTH_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 11,
+    "supporting_window_ids": [
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb177",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb181",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb182"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 7,
+    "supporting_window_ids": [
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb188",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb189",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb187"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 8,
+    "supporting_window_ids": [
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb194",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb195",
+      "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb182"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb186",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 186,
+    "text": "Centrémonos ahora en otro aspecto del mundo flamenco: la crítica o la investigación flamencológica. Veamos ¿cuántas mujeres dirigen un programa de radio, escriben reseñas críticas en alguna publicación o han dedicado sus pasos al estudio de este tema? Muy pocas, es la respuesta. Sin embargo, frente a esta escasa presencia, digamos activa de las mujeres en todo lo que rodea al Flamenco, tenemos que señalar su papel como sujeto pasivo en el contenido formal del flamenco mismo. Ella aparece como inspiradora, destinataria y protagonista de gran cantidad de letras. La visión que estas letras nos ofrecen de la mujer es muy diversa, desde la [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 14
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb189",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 189,
+    "text": "Y aunque algunas cantaoras han ejercido una influencia considerable y han disfrutado de una consideración acorde con sus méritos, también es verdad que tenemos en nuestro panorama actual el caso de algunas artistas que aún dominando toda suerte de cantes y estilos, saliendo incluso de esa idea extendida de que hay ciertos cantes que por su facilidad pueden acomodarse mejor a las mujeres, no obtienen del público y la crítica el reconocimiento que sus saberes reclaman. Nos vienen a la memoria nombres como Carmen Linares, Rosario López, Tina Pavón, etc., ¿por qué? Detengámonos ahora en el público, en el aficionado, que sigue el desarrollo de la [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 14
+      },
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 7
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb182",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 182,
+    "text": "Verdaderamente es de suponer que hay bastantes mujeres que son Socias de pleno derecho de Peñas y que asisten a los actos de la misma como tales y no como «esposa o novia de...». Pero creo que aún resulta insólito el que una mujer pertenezca a la cúpula directiva de alguna tertulía o peña. De ahí la escasísima presencia de mujeres en la reunión a la que aludo. Sumemos a esto varios comentarios recogidos en la charla informal posterior al desarrollo de la Asamblea: «No hubiera creído que a una mujer pudiera interesarle el Flamenco». «Esto es un ambiente machista, pero las propias mujeres no quieren entrar en él». «Es raro encontrar a una [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 14
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 11
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 8
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb177",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 177,
+    "text": "No hace muchos días tuve ocasión de asistir a una Reunión de la Federación de Peñas Sevillanas. Esa reunión dio lugar a estas reflexiones que, por otra parte, ya me habían inquietado con anterioridad. ¿Es el Flamenco un mundo de hombres? Y si no es así ¿qué sitio corresponde a las mujeres en él? Baste decir, como inicio y a manera de dato, que en la reunión citada, en la que estaban representadas buena parte de las más de 40 Peñas federadas en la provincia, sólo había dos mujeres. El resto, 50 Verdaderamente es de suponer que hay bastantes mujeres que son Socias de pleno derecho de Peñas y que asisten a los actos de la misma como tales y no [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 11
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb181",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 181,
+    "text": "Baste decir, como inicio y a manera de dato, que en la reunión citada, en la que estaban representadas buena parte de las más de 40 Peñas federadas en la provincia, sólo había dos mujeres. El resto, 50 Verdaderamente es de suponer que hay bastantes mujeres que son Socias de pleno derecho de Peñas y que asisten a los actos de la misma como tales y no como «esposa o novia de...». Pero creo que aún resulta insólito el que una mujer pertenezca a la cúpula directiva de alguna tertulía o peña. De ahí la escasísima presencia de mujeres en la reunión a la que aludo. Sumemos a esto varios comentarios recogidos en la charla informal posterior al [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_01",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 11
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb188",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 188,
+    "text": "En cuanto a los protagonistas del Flamenco, esto es, a los propios artistas, habría que establecer diferencias relativas a los tres ámbitos: si en el Baile hay una notable presencia de mujeres, ésta decae considerablemente en el Cante y es prácticamente nula en el Toque. Y aunque algunas cantaoras han ejercido una influencia considerable y han disfrutado de una consideración acorde con sus méritos, también es verdad que tenemos en nuestro panorama actual el caso de algunas artistas que aún dominando toda suerte de cantes y estilos, saliendo incluso de esa idea extendida de que hay ciertos cantes que por su facilidad pueden acomodarse mejor a [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 7
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb187",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 187,
+    "text": "pañera, a la Mujer-Hembra, como objeto de deseo, e incluso, a la Mujer-Pecado, como causante de los males de los hombres. La misma proliferación de estas letras es un dato que confirma su autoría como correspondiente a hombres. En cuanto a los protagonistas del Flamenco, esto es, a los propios artistas, habría que establecer diferencias relativas a los tres ámbitos: si en el Baile hay una notable presencia de mujeres, ésta decae considerablemente en el Cante y es prácticamente nula en el Toque. Y aunque algunas cantaoras han ejercido una influencia considerable y han disfrutado de una consideración acorde con sus méritos, también es verdad [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 7
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb194",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 194,
+    "text": "No es esta la norma en otras manifestaciones musicales. Espectadores habituales, seguidores, fans, como quiera llamárseles, en conciertos de música pop o rock, son tanto hombres como mujeres (aquí habría además que analizar el por qué al Flamenco acuden tan pocos jóvenes). Ambos, hombres y mujeres, casi por igual (porque la posible mayoría de hombres debe atribuirse a su predominio general en casi todas las actividades públicas), se reparten programas de radio, presentaciones televisivas, etc. En cuanto a los artistas en este género, tampoco parece que el balance juegue en contra de las mujeres, más bien a la inversa. ¿Por qué entonces [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 8
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-left-la-mujer-en-el-mundo-flamenco__gb195",
+    "page_number": 7,
+    "logical_page": "7-left",
+    "focal_global_block_id": 195,
+    "text": "Ambos, hombres y mujeres, casi por igual (porque la posible mayoría de hombres debe atribuirse a su predominio general en casi todas las actividades públicas), se reparten programas de radio, presentaciones televisivas, etc. En cuanto a los artistas en este género, tampoco parece que el balance juegue en contra de las mujeres, más bien a la inversa. ¿Por qué entonces parece que el Flamenco se haya convertido en un coto cerrado a los hombres? ¿Ha sido siempre así? Presumimos que sería masculino, en su gran parte, el público de los cafés-cantantes, por la misma naturaleza de éstos. No debe extrapolarse la misma conclusión para los espectáculos [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 8
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_06",
+    "label_en": "gendered_tradition_model",
+    "label_es": "modelo_generizado_de_la_tradicion",
+    "definition": "A representation of flamenco tradition through gendered oppositions such as male/public/exterior and female/private/interior, or through explicitly gendered social roles and spaces.",
+    "use_when": "Use when a passage links authenticity, tradition, venue, participation, or social meaning to gendered divisions of space, comportment, or legitimacy.",
+    "do_not_use_when": "Do not use for simple mention of male or female performers unless the passage mobilizes a wider gendered model of tradition or social order.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "en la armonía de los contrarios y la oposición de las parejas se expresa así la idea de hombre y de mujer... la expresión de la virilidad, de la pasión, del erotismo y del dominio",
+      "rationale": "The passage models flamenco meaning through gendered oppositions and roles.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "hombres y mujeres nacidos iguales",
+      "rationale": "This uses the trigger words hombres y mujeres but violates the negative constraint because it is a general social statement, not a gendered model of flamenco tradition.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "AUTH_01",
+    "label_en": "authenticity_claim",
+    "label_es": "reivindicacion_de_autenticidad",
+    "definition": "A discourse move that presents a person, style, repertoire, performance, publication, or practice as genuinely, properly, or truly flamenco.",
+    "use_when": "Use when authenticity is asserted, defended, denied, contrasted, or attributed to a named actor, style, repertoire, venue, period, or pedagogy.",
+    "do_not_use_when": "Do not use for neutral description without evaluative force.",
+    "related_concepts": "PURITY_01; TRAD_01; LINEAGE_01",
+    "positive_example": {
+      "excerpt": "contribuyendo a que los menos iniciados sintonicen con el auténtico Flamenco que desde las Peñas siempre hemos pregonado",
+      "rationale": "The passage explicitly presents a form of flamenco as auténtico and links that authenticity to peña-based authority.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "establecer un hito de auténtica significación íntima y afectiva para el maestro",
+      "rationale": "This uses the trigger word auténtica but violates the negative constraint because it modifies the emotional meaning of a homage, not the authenticity of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_02",
+    "label_en": "public_private_setting",
+    "label_es": "configuracion_publica_privada",
+    "definition": "A discourse or scene distinction between public/commercial/spectacular flamenco and private/social/intimate flamenco.",
+    "use_when": "Use when value, legitimacy, or social meaning turns on whether flamenco is represented as public or private, staged or social, open or enclosed.",
+    "do_not_use_when": "Do not use for neutral venue description unless the public/private contrast structures the passage's evaluation.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "la Peña Flamenca no puede ser numerosa, debe pecar de pequeñez, porque la comunicación artista-aficionado tiene su sitio entre pocos... la intimidad de quien dice y escucha, imposible en una masificación",
+      "rationale": "The value of flamenco is tied to small-scale peña intimacy rather than mass public setting.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Centros de enseñanza públicos y privados",
+      "rationale": "This uses the trigger words públicos y privados but violates the negative constraint because it is neutral institutional categorization.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

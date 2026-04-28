@@ -1,0 +1,423 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a",
+  "article_name": "AURELIO Sellé Nondedeu DE CÁDIZ Anselmo González Climent / 1962",
+  "article_type": "article",
+  "language": "es",
+  "page_start": 8,
+  "page_end": 12,
+  "n_blocks": 92,
+  "text_chars": 37861,
+  "article_opening": "1 Aurelio fue equivocadamente invitado al Festival de Jerez de la Frontera. Don Tomás García Figueras le envió una curta (tuve ocasión de leerla) en la que le adjuntaba la proclama y las bases para participar jcomo concursante! (Es intransferible la inefable narración de Aurelio). Le respondió al alcalde que ni cuando tenía veinticinco o treinta años pensó concursar en parte alguna, y que toda su vida fue un profesional para minorías. Jamás le oí hablar tan desmesuradamente bien de don Antonio Cruz Conde. Avanzando los años, Aurelio atiza su sinceridad y en muchas apreciaciones se ha puesto [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "LEGIT",
+    "concept_id": "LEGIT_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 59,
+    "supporting_window_ids": [
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb228",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb230",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb227"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "high",
+    "n_supporting_windows": 50,
+    "supporting_window_ids": [
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb299",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb298",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb285"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "AUTH",
+    "concept_id": "AUTH_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 42,
+    "supporting_window_ids": [
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb275",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb272",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb273"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_06",
+    "evidence_strength": "high",
+    "n_supporting_windows": 28,
+    "supporting_window_ids": [
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb328",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb330",
+      "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb294"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb228",
+    "page_number": 8,
+    "logical_page": "8-right",
+    "focal_global_block_id": 228,
+    "text": "La publicación periódica de una de las obras inéditas de Anselmo González Climent, en esta Revista, va a proseguir, pese al imprevisto fallecimiento del maestro y amigo. «Viejo Carné Flamenco» es una colección de entrevistas con relevantes protagonistas del Cante y de la Fiesta, realizadas en las décadas de los cincuenta y sesenta. Es cierto que Anselmo González Climent pretendía modificar algunos puntos de análisis que, ciertamente la perspectiva del tiempo, aconsejaba su revisión. Ello, no obstante, el Grupo Candil, previa autorización de la esposa del escritor desaparecido, ha querido ofrecer a sus lectores este trabajo tan lleno de [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 59
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb230",
+    "page_number": 9,
+    "logical_page": "9-left",
+    "focal_global_block_id": 230,
+    "text": "Es cierto que Anselmo González Climent pretendía modificar algunos puntos de análisis que, ciertamente la perspectiva del tiempo, aconsejaba su revisión. Ello, no obstante, el Grupo Candil, previa autorización de la esposa del escritor desaparecido, ha querido ofrecer a sus lectores este trabajo tan lleno de frescura, pese al tiempo transcurrido, tan penetrado en agudeza, rigor y sentido de la oportunidad. «Me inicié en el cante al lado de Maruja Benito, una golfa cupletera que alternaba con los aficionados al cante. En cierta ocasión, la Benito organizó una juerga para un teniente marchoso que se dirigía a Larache. Fui invitado y gané [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 59
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb227",
+    "page_number": 8,
+    "logical_page": "8-right",
+    "focal_global_block_id": 227,
+    "text": "_sta predicción de Ricardo fue malagorera, ya que a pesar de reunirmos en vísperas del cuarto concurso, nunca más —excepto por vía epistolar— volvimos a tratar con paz y profundidad los temas que tan entrañablemente nos unían. Pero no hay pasos perdidos en la vida. El bloqueo gaditano me sirvió para ahondar en esa dirección. La publicación periódica de una de las obras inéditas de Anselmo González Climent, en esta Revista, va a proseguir, pese al imprevisto fallecimiento del maestro y amigo. «Viejo Carné Flamenco» es una colección de entrevistas con relevantes protagonistas del Cante y de la Fiesta, realizadas en las décadas de los cincuenta [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "LEGIT",
+        "concept_id": "LEGIT_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 59
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb299",
+    "page_number": 11,
+    "logical_page": "11-left",
+    "focal_global_block_id": 299,
+    "text": "48 «Las serranas es un cante aburrido que comienza en Huelva y puede acabar en Granada. El cante debe de ser valiente pero corto». 49 «Nadie que sea aficionado al flamenco puede ser una mala persona». (Cervantes lo hubiese rubricado). «Los aficionados son buenas personas. Los flamencos son crápulas». (Cervantes hubiese dudado). 50 «Las romeras fueron creadas por el gaditano Romero el Quiqui, vendedor de zapatos. Era musicalmente un superdotado, pues inventó y le dio a ese cante un ritmo extraordinario para el baile. Luego fue intérprete principal don Antonio Chacón. Chacón las sacó del olvido; pero su versión de las romeras sigue más a Curro [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 50
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb298",
+    "page_number": 11,
+    "logical_page": "11-left",
+    "focal_global_block_id": 298,
+    "text": "47 «El torero valiente es el que más miedo tiene». (Como se ha visto, alguna vez le atribuyó la frase al Guerra). 48 «Las serranas es un cante aburrido que comienza en Huelva y puede acabar en Granada. El cante debe de ser valiente pero corto». 49 «Nadie que sea aficionado al flamenco puede ser una mala persona». (Cervantes lo hubiese rubricado). «Los aficionados son buenas personas. Los flamencos son crápulas». (Cervantes hubiese dudado).",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 50
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb285",
+    "page_number": 10,
+    "logical_page": "10-right",
+    "focal_global_block_id": 285,
+    "text": "38 «La primera vez que le canté a Juan Belmonte, que era un gran aficionado al cante, recibí este piropo: “Éste no se parece a nadie”. Ignacio Sánchez Mejías solía invitarme para que “peleara el cante” con Manolo Torre, Pastoray Cayetano. «Como tú sabes tan bien como yo, esto de los toros y el cante siempre han venido unidos. Te hablaré de tiempos lejanos. Una noche, después de haber cantado sin inspiración junto a Silverio, Tomás el Nitri, al retirarse de la juerga, se notificó por cable de la muerte del torero gaditano Ponce, muerto en Lima. (Nota: José María Ponce, natural de Cádiz, toreó en una corrida de beneficencia en Lima, en junio [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 50
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb275",
+    "page_number": 10,
+    "logical_page": "10-left",
+    "focal_global_block_id": 275,
+    "text": "Otro fue el caso. Hacia 1932 llegó a Cádiz proveniente de Buenos Aires, un argentino de apellido García. A mi compatriota le sobraban aborros para pasear un año y pico en la Madre Patria. «Fue llegar a Cádiz y conocerme seguidamente por pura casualidad. Nos teníamos simpatía mutua. Y el hombre, colgado de mis cantes, fue aplazando su plan de viaje por España. Con mi amistad, con los encantos de Cádiz y con su perdida afición al cante, cuando se le acabó el dinero volvió a su país sin haber traspasado las murallitas. Después nos escribimos con frecuencia. Cuando la guerra civil no paró de enviarme alimentos y ropas. Lo nombré \"sobrino\". Era [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 42
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb272",
+    "page_number": 10,
+    "logical_page": "10-left",
+    "focal_global_block_id": 272,
+    "text": "Aurelio responde: «No las canto porque mi hermano mayor fue el mejor saetero y hace mucho tiempo que ha muerto. Es mi mejor homenaje a su memoria». 35 Regocijadamente me refiere que un amigo suyo de Chile, un tal Medina, ponía sus discos a un grupo de moros que se «enloquecían escuchándolos una y otra vez». «Estos moros estaban dispuestos a viajar a España pura y exclusivamente para conocerme». Pero los atributos del chileno no fueron desiderátum para que Aurelio lo designara «sobrino honorífico». Otro fue el caso. Hacia 1932 llegó a Cádiz proveniente de Buenos Aires, un argentino de apellido García. A mi compatriota le sobraban aborros para [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 42
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb273",
+    "page_number": 10,
+    "logical_page": "10-left",
+    "focal_global_block_id": 273,
+    "text": "35 Regocijadamente me refiere que un amigo suyo de Chile, un tal Medina, ponía sus discos a un grupo de moros que se «enloquecían escuchándolos una y otra vez». «Estos moros estaban dispuestos a viajar a España pura y exclusivamente para conocerme». Pero los atributos del chileno no fueron desiderátum para que Aurelio lo designara «sobrino honorífico». Otro fue el caso. Hacia 1932 llegó a Cádiz proveniente de Buenos Aires, un argentino de apellido García. A mi compatriota le sobraban aborros para pasear un año y pico en la Madre Patria. «Fue llegar a Cádiz y conocerme seguidamente por pura casualidad. Nos teníamos simpatía mutua. Y el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 42
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb328",
+    "page_number": 12,
+    "logical_page": "12-left",
+    "focal_global_block_id": 328,
+    "text": "68 «José Sellés, el “Chele Fateta”, fue mi hermano mayor. Me llevaba más de veinte años. Estuvo en Buenos Aires alrededor de 1878 durante medio año aproximadamente. Del Río de la Plata trajo a Cádiz varios aires argentinos nabilidad con cantiños gaditanos. Se especializó en milongas, gentinas, que generalmente remataba por alegrías. Por ejem- ue llegó a cantarme): Caballero milonguero la milonga está formá. Aquel que sea milonguero venga y se arrime hacia acá. En el barrio del oriente donde llueve y no gotea no hay hombre que no sea macho ni mujer que sea fea con la luna clara. Yo la retraté. No ha visto mujer más guapa compare si usted la [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 28
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb330",
+    "page_number": 12,
+    "logical_page": "12-left",
+    "focal_global_block_id": 330,
+    "text": "nabilidad con cantiños gaditanos. Se especializó en milongas, gentinas, que generalmente remataba por alegrías. Por ejem- ue llegó a cantarme): Caballero milonguero la milonga está formá. Aquel que sea milonguero venga y se arrime hacia acá. En el barrio del oriente donde llueve y no gotea no hay hombre que no sea macho ni mujer que sea fea con la luna clara. Yo la retraté. No ha visto mujer más guapa compare si usted la ve, si usted la ve a esa senora merecen de que la pongan en la cabeza una corona. Todo se pierde en esta vida, la prenda que hace más falta. (bis) No se cae ni se derriba aquellas torres más altas. Mulata santa parte tú los [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 28
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-8-right-aurelio-sell-nondedeu-de-c-diz-a__gb294",
+    "page_number": 11,
+    "logical_page": "11-left",
+    "focal_global_block_id": 294,
+    "text": "43 Ni por coba ni paladinamente Aurelio tuvo un curiosísimo rapto. Nos hospedábamos en el hotel Simón. Yo ocupaba dos habitaciones con mi mujer y mi hijo Anselmo que era un borrador argentino-andaluz de seis o siete años de edad. Nos echó literalmente a mi mujer y a mí al vestíbulo para encerrarse con mi niño y darle un recital de cantes que duró más de media hora. Ni con fantasía puedo ponderar claramente ese desnivelado yo-tú que Aurelio impuso en aquel peregrino mediodía cordobés. Quién sabe. 44 «Me llamo Aurelio por causa de un viejo amigo de la familia a quien se le quiso halagar antes de su muerte que era inminente». 45 «El torero y el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_06",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 28
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "LEGIT",
+    "family_name_en": "legitimacy regimes",
+    "family_name_es": "regimenes de legitimidad",
+    "family_purpose": "Track the power-work of legitimation: how texts authorize, recognize, regulate, exclude, canonize, or grant the right to speak.",
+    "family_do_not_use_when": "Do not use for purely descriptive mentions without any authorizing or delegitimating force.",
+    "concept_id": "LEGIT_01",
+    "label_en": "legitimation_move",
+    "label_es": "movimiento_de_legitimacion",
+    "definition": "A cross-cutting discourse move that authorizes, canonizes, recognizes, excludes, regulates, or grants the right to speak about flamenco.",
+    "use_when": "Use when the main analytic question is what kind of authorization or delegitimation the passage performs, regardless of whether the vocabulary is authenticity-based, heritage-based, critical, communal, or pedagogical.",
+    "do_not_use_when": "Do not use for purely descriptive mentions that carry no authorizing, excluding, or representational force.",
+    "related_concepts": "AUTH_01; HERIT_02; CRIT family; COMM family",
+    "positive_example": {
+      "excerpt": "el baile flamenco —y el cante— gozaba en la Córdoba de 1862 de público reconocimiento... ese reconocimiento se acompañaba de una clara conciencia de la dignidad del baile y del cante flamenco",
+      "rationale": "Candil frames public recognition and dignity as authorizing flamenco culturally, not merely describing an event.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "la liturgia de estos siglos adquiría sus representaciones plásticas y literarias más importantes en torno a los dos ciclos o Misterios básicos: Navidad y Pasión",
+      "rationale": "This uses the trigger word representaciones but violates the negative constraint because it is descriptive art-history language, not authorization or legitimation of flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "AUTH_02",
+    "label_en": "purity_boundary_work",
+    "label_es": "trabajo_de_frontera_de_pureza",
+    "definition": "Language that defines proper flamenco by excluding what is impure, mixed, corrupted, diluted, fake, or insufficiently rooted.",
+    "use_when": "Use when purity/contamination rhetoric draws a boundary between legitimate and illegitimate flamenco.",
+    "do_not_use_when": "Do not use for simple stylistic comparison without exclusion or devaluation.",
+    "related_concepts": "LEGIT_01; POLICY_01",
+    "positive_example": {
+      "excerpt": "Me defiendo de cantar peteneras, serranas, fandangos y cantes levantinos porque los considero cantes impuros inventados por los payos.",
+      "rationale": "The passage draws a boundary between legitimate and illegitimate cantes through impurity and invention.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "sin incurrir en puro desatino",
+      "rationale": "This uses the trigger word puro but violates the negative constraint because it is an idiomatic intensifier, not purity boundary-work around flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_06",
+    "label_en": "gendered_tradition_model",
+    "label_es": "modelo_generizado_de_la_tradicion",
+    "definition": "A representation of flamenco tradition through gendered oppositions such as male/public/exterior and female/private/interior, or through explicitly gendered social roles and spaces.",
+    "use_when": "Use when a passage links authenticity, tradition, venue, participation, or social meaning to gendered divisions of space, comportment, or legitimacy.",
+    "do_not_use_when": "Do not use for simple mention of male or female performers unless the passage mobilizes a wider gendered model of tradition or social order.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "en la armonía de los contrarios y la oposición de las parejas se expresa así la idea de hombre y de mujer... la expresión de la virilidad, de la pasión, del erotismo y del dominio",
+      "rationale": "The passage models flamenco meaning through gendered oppositions and roles.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "hombres y mujeres nacidos iguales",
+      "rationale": "This uses the trigger words hombres y mujeres but violates the negative constraint because it is a general social statement, not a gendered model of flamenco tradition.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

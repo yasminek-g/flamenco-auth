@@ -1,0 +1,369 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce",
+  "article_name": "EL CARBONERO, un fandanguero excepcional",
+  "article_type": "essay_opinion",
+  "language": "es",
+  "page_start": 7,
+  "page_end": 7,
+  "n_blocks": 7,
+  "text_chars": 2315,
+  "article_opening": "El fandango, ese cante tan superficial para los que se pasan de puristas, como único y definitivo para los que de ahí no pasan, imperó —como imprescindible en el repertorio de casi todos los que más o menos comían del cante— desde mediados los años 20 hasta la guerra civil. En cuanto al capítulo irremediable de las modas flamencias creo que al fandango lo sustituyó la zambra caracolera de los 40. Con el Carbonero de la Macarena, como fandanguero excepcional, hemos tenido lo que se llama una gran suerte, pues grabó mucho más que El cante por fandangos llegó a escalar cotas que no han vuelto a [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "AUTH",
+    "concept_id": "AUTH_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 6,
+    "supporting_window_ids": [
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb208",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb206",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb209"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "COMM",
+    "concept_id": "COMM_03",
+    "evidence_strength": "high",
+    "n_supporting_windows": 6,
+    "supporting_window_ids": [
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb200",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb205",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb201"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "AUTH",
+    "concept_id": "TRAD_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 6,
+    "supporting_window_ids": [
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb206",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb201",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb205"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "COMM",
+    "concept_id": "COMM_04",
+    "evidence_strength": "medium",
+    "n_supporting_windows": 4,
+    "supporting_window_ids": [
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb201",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb205",
+      "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb206"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb208",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 208,
+    "text": "Quiero recordar cómo al principio de los años 30 comenzaron a sonar con unos estilos «nuevos», más o menos paralelos, él, Pepe Pinto y Manolito Caracol. Como fandanguero, el Carbonero se impuso e impuso su aire de una manera total. No había casino o taberna de cualquier pueblo con máquina cantaora que no tuviera el último disco del Carbonero por fandangos. Entonces, la gente sencilla escuchaba a los cantaores que iban en las «troupes» y algunos discos. Se cantaban y se aprendían los cantes en la taberna y reuniones y era frecuente en el campo oír a lo lejos alguien cantando alguno de los fandangos popularísimos de Manuel Vega el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb206",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 206,
+    "text": "otros. Yo diría que dejó impresionada en aquellas placas de entonces toda su múltiple variedad de fandangos completa. Quiero recordar cómo al principio de los años 30 comenzaron a sonar con unos estilos «nuevos», más o menos paralelos, él, Pepe Pinto y Manolito Caracol. Como fandanguero, el Carbonero se impuso e impuso su aire de una manera total. No había casino o taberna de cualquier pueblo con máquina cantaora que no tuviera el último disco del Carbonero por fandangos. Entonces, la gente sencilla escuchaba a los cantaores que iban en las «troupes» y algunos discos. Se cantaban y se aprendían los cantes en la taberna y reuniones y era [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_04",
+        "rank": 4,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 4
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb209",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 209,
+    "text": "Sin dejar de sonar con esa amarga alegría característica de los macarenos, construyó unos cuantos fandangos realmente personalísimos, aunque no destacó en los demás cantes. Y resulta curioso que andemos recordando en este sentido al Gloria, Cepero, la Calzá, Aznalcóllar, etc., y nadie quiera o pueda o no se atreva a montar los fandangos del Carbonero.",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "AUTH_02",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb200",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 200,
+    "text": "El fandango, ese cante tan superficial para los que se pasan de puristas, como único y definitivo para los que de ahí no pasan, imperó —como imprescindible en el repertorio de casi todos los que más o menos comían del cante— desde mediados los años 20 hasta la guerra civil. En cuanto al capítulo irremediable de las modas flamencias creo que al fandango lo sustituyó la zambra caracolera de los 40. Con el Carbonero de la Macarena, como fandanguero excepcional, hemos tenido lo que se llama una gran suerte, pues grabó mucho más que El cante por fandangos llegó a escalar cotas que no han vuelto a repetirse. En ese palo sí que podemos hablar de [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb205",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 205,
+    "text": "El cante por fandangos llegó a escalar cotas que no han vuelto a repetirse. En ese palo sí que podemos hablar de una verdadera proliferación de auténticos «creadores». Todos los fandangueros tenían su propio fandango y todos los aficionados adoptaban el del cantaor que mejor les iba a sus condiciones. Todos cantábamos el fandango que alguno de aquellos profesionales acababa de poner de moda. Se perdieron muchos, buenos, regulares y malos, pero también, afortunadamente, por el conducto oral y discográfico se han salvado buena parte de los que hoy podemos escuchar tanto grabados como en la voz de alguna que otra figura del momento. Luis [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_04",
+        "rank": 4,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 4
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-7-right-el-carbonero-un-fandanguero-exce__gb201",
+    "page_number": 7,
+    "logical_page": "7-right",
+    "focal_global_block_id": 201,
+    "text": "Con el Carbonero de la Macarena, como fandanguero excepcional, hemos tenido lo que se llama una gran suerte, pues grabó mucho más que El cante por fandangos llegó a escalar cotas que no han vuelto a repetirse. En ese palo sí que podemos hablar de una verdadera proliferación de auténticos «creadores». Todos los fandangueros tenían su propio fandango y todos los aficionados adoptaban el del cantaor que mejor les iba a sus condiciones. Todos cantábamos el fandango que alguno de aquellos profesionales acababa de poner de moda. Se perdieron muchos, buenos, regulares y malos, pero también, afortunadamente, por el conducto oral y discográfico se [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_03",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 6
+      },
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_04",
+        "rank": 4,
+        "evidence_strength": "medium",
+        "n_supporting_windows": 4
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "AUTH_02",
+    "label_en": "purity_boundary_work",
+    "label_es": "trabajo_de_frontera_de_pureza",
+    "definition": "Language that defines proper flamenco by excluding what is impure, mixed, corrupted, diluted, fake, or insufficiently rooted.",
+    "use_when": "Use when purity/contamination rhetoric draws a boundary between legitimate and illegitimate flamenco.",
+    "do_not_use_when": "Do not use for simple stylistic comparison without exclusion or devaluation.",
+    "related_concepts": "LEGIT_01; POLICY_01",
+    "positive_example": {
+      "excerpt": "Me defiendo de cantar peteneras, serranas, fandangos y cantes levantinos porque los considero cantes impuros inventados por los payos.",
+      "rationale": "The passage draws a boundary between legitimate and illegitimate cantes through impurity and invention.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "sin incurrir en puro desatino",
+      "rationale": "This uses the trigger word puro but violates the negative constraint because it is an idiomatic intensifier, not purity boundary-work around flamenco.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_03",
+    "label_en": "aficion_insider_legitimacy",
+    "label_es": "legitimidad_de_la_aficion",
+    "definition": "A claim that aficionados, those who know, or socially recognized insiders possess the authority to appreciate, judge, or sustain real flamenco.",
+    "use_when": "Use when afición, connoisseurship, discernment, or insider familiarity grants legitimacy to an audience, critic, participant, or setting.",
+    "do_not_use_when": "Do not use for generic audience mention without competence, belonging, or authority work.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+      "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "mi padre era un gran aficionado al cante",
+      "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "TRAD_02",
+    "label_en": "continuity_claim",
+    "label_es": "reclamo_de_continuidad",
+    "definition": "Language that constructs an unbroken link between present practice and a valued past through continuity, survival, preservation, inheritance, or faithful continuation.",
+    "use_when": "Use when texts claim sameness, persistence, faithful transmission, or durable essence across time.",
+    "do_not_use_when": "Do not use for general historical background without a continuity claim.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "vamos a conservar los fandangos personales como patrimonio de sus creadores que sólo a título de evocación singular y en actos definidos, deben ser cantados",
+      "rationale": "The passage calls for conserving repertoire as a continuing inheritance tied to its creators.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Todavía conservo en la carpeta de mi mesa su última tarjeta de Navidad.",
+      "rationale": "This uses the trigger word conservo but violates the negative constraint because it refers to a personal object, not cultural continuity.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_04",
+    "label_en": "participant_spectator_relation",
+    "label_es": "relacion_participante_espectador",
+    "definition": "A contrast between participatory flamenco and spectatorial flamenco, especially where social involvement, jaleo, and co-presence are valued over detached observation.",
+    "use_when": "Use when the passage values participation, response, shared presence, or blurred performer-audience boundaries, or devalues passive spectatorship as less real or less intense.",
+    "do_not_use_when": "Do not use for generic mention of an audience unless the participant/spectator distinction is socially or aesthetically meaningful.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "una Peña debe estar creada para escuchar, no para oír; para hacer aficionados, no simples espectadores... la comunicación artista-aficionado tiene su sitio entre pocos",
+      "rationale": "The passage devalues passive spectatorship and values involved, competent co-presence.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Podrán participar cuantos cantaores aficionados y profesionales lo deseen",
+      "rationale": "This uses the trigger word participar but violates the negative constraint because it only means contest eligibility.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}

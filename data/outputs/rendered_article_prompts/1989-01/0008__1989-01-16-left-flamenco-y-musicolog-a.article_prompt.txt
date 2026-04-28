@@ -1,0 +1,414 @@
+You are annotating one historical flamenco periodical article.
+
+The article is the unit of analysis.
+Evidence must come from the supplied evidence windows.
+
+Your task:
+1. Decide which candidate codes are analytically present in the article.
+2. Preserve internal variation by attaching each present code to one or more evidence windows.
+3. Reject candidates that are only keyword matches, generic description, geography, biography, or administrative language.
+4. Use trap examples as negative guardrails.
+5. Return valid JSON only. Do not include markdown.
+
+Do not assign broad article labels without evidence.
+Do not invent evidence outside the supplied windows.
+Evidence spans must be exact quotes from the supplied evidence windows.
+
+The candidate ranking is retrieval-based, not ground truth. A high-ranked candidate can still be absent.
+
+ARTICLE:
+{
+  "issue_id": "1989-01",
+  "article_id": "1989-01-16-left-flamenco-y-musicolog-a",
+  "article_name": "Flamenco y Musicología",
+  "article_type": "article",
+  "language": "es",
+  "page_start": 16,
+  "page_end": 18,
+  "n_blocks": 49,
+  "text_chars": 19868,
+  "article_opening": "FlAMENCO y Ponencia presentada 16 Congreso Nacional Actividades Flamencas MUSICOLOGÍA El Consejo de Redacción de CANDIL mantiene, en principio, el criterio de publicar sólo aquellos trabajos que sean rigurosamente inéditos. Ello no obstante, la amistosa comunicación que nos ha dirigido Philippe Donnier, alegando que la severa crítica recibida en el número anterior de esta revista a su ponencia «Flamenco y Musicología» adolecía de una visión parcial, ha determinado el que excepcionalmente, publiquemos íntegra su ponencia. Creemos que, con independencia de que se acepten o no los puntos de [...]"
+}
+
+CANDIDATE CODES:
+[
+  {
+    "rank": 1,
+    "family_id": "AUTH",
+    "concept_id": "TRAD_01",
+    "evidence_strength": "high",
+    "n_supporting_windows": 24,
+    "supporting_window_ids": [
+      "1989-01-16-left-flamenco-y-musicolog-a__gb426",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb423",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb413"
+    ]
+  },
+  {
+    "rank": 2,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_06",
+    "evidence_strength": "high",
+    "n_supporting_windows": 30,
+    "supporting_window_ids": [
+      "1989-01-16-left-flamenco-y-musicolog-a__gb428",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb426",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb420"
+    ]
+  },
+  {
+    "rank": 3,
+    "family_id": "COMM",
+    "concept_id": "COMM_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 29,
+    "supporting_window_ids": [
+      "1989-01-16-left-flamenco-y-musicolog-a__gb466",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb469",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb470"
+    ]
+  },
+  {
+    "rank": 4,
+    "family_id": "HERIT",
+    "concept_id": "HERIT_02",
+    "evidence_strength": "high",
+    "n_supporting_windows": 30,
+    "supporting_window_ids": [
+      "1989-01-16-left-flamenco-y-musicolog-a__gb451",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb452",
+      "1989-01-16-left-flamenco-y-musicolog-a__gb472"
+    ]
+  }
+]
+
+EVIDENCE WINDOWS:
+[
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb426",
+    "page_number": 16,
+    "logical_page": "16-right",
+    "focal_global_block_id": 426,
+    "text": "Andalucía tiene la suerte inmensa de conservar todavía sin ruptura una cultura musical de origen tradicional en medio de una civilización cada día más urbana y moderna. ¿Cómo conseguir que se conserve este arte en medio de las presiones tan fuertes de la sociedad de consumo que mide el espacio y el tiempo con una precisión y una racionalidad productiva cada día más grandes? Flamenco actual y tradición oral Como decíamos antes, no se puede disociar un tipo de cultura de su entorno social. Hoy en día, la música se transmite más por los discos y la televisión que por los medios locales y familiares. Un cantaor puede escuchar cien veces la misma [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      },
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb423",
+    "page_number": 16,
+    "logical_page": "16-left",
+    "focal_global_block_id": 423,
+    "text": "Debemos admitir que las culturas de tradición oral, lejos de ser «subculturas», tienen unas características propias, una dinámica de creación, unas producciones originales y hasta una visión del mundo que no se pueden valorar con los criterios de nuestra civilización moderna, y todavía menos en términos de superioridad o inferioridad. La mera sustitución de un saber oral por un conocimiento escrito y analítico supone una verdadera decadencia con pérdidas inmensas. Desgraciadamente el poder de la «Civilización» es tan fuerte que acaba por aplastar todo tipo de desarrollo que no cuadre con las exigencias de comercialización y crecimiento [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb413",
+    "page_number": 16,
+    "logical_page": "16-left",
+    "focal_global_block_id": 413,
+    "text": "Así las relaciones entre lengua hablada y escrita (que nos parecen tan naturales cuando hablamos nuestro idioma) plantean más de un problema. Al analfabeto, cualquier tipo de escritura le dice lo mismo, sea latín, chino o ruso. Además, si vive en un entorno tradicional poco perturbado por la civilización actual, tiene una inteligencia y una memoria tan bien adaptadas a su medio que le sobra y hasta le entorpece el uso del signo escrito. Estas reflexiones hacen entrever las dificultades que presenta una eventual transcripción gráfica de la música Flamenca. Mi propósito es contestar a dos preguntas: Culturas de tradición oral No se puede [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "AUTH",
+        "concept_id": "TRAD_01",
+        "rank": 1,
+        "evidence_strength": "high",
+        "n_supporting_windows": 24
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb428",
+    "page_number": 16,
+    "logical_page": "16-right",
+    "focal_global_block_id": 428,
+    "text": "Flamenco actual y tradición oral Como decíamos antes, no se puede disociar un tipo de cultura de su entorno social. Hoy en día, la música se transmite más por los discos y la televisión que por los medios locales y familiares. Un cantaor puede escuchar cien veces la misma versión de un cante y aprendérsela de memoria. A primera vista puede uno pensar que hemos llegado al grado de perfección de la tradición oral. En realidad, sería olvidar la libertad creadora y un cierto grado de improvisación imprescindibles para alcanzar una verdadera expresión Flamenca. Cada versión personal tiene que ser una recreación de un cante arquetípico que nadie [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb420",
+    "page_number": 16,
+    "logical_page": "16-left",
+    "focal_global_block_id": 420,
+    "text": "Culturas de tradición oral No se puede analizar una cultura fuera de su contexto sociológico. Hemos olvidado en las grandes ciudades de hoy la forma de vivir que caracterizaba a los pueblos y a las ciudades de antaño. La estabilidad de las estructuras sociales permitía una continuidad en la educación. La disponibilidad y el tiempo favorecían un aprendizaje mediante el método por ensayo y error lleno de los matices imprescindibles para las actividades del campo o la artesanía de la ciudad. Hoy la prisa característica de nuestra sociedad moderna e industrializada necesita una enseñanza normalizada y escrita, adaptada a unas actividades también [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_06",
+        "rank": 2,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb466",
+    "page_number": 18,
+    "logical_page": "18-left",
+    "focal_global_block_id": 466,
+    "text": "Sería mejor desarrollar aquí un programa de investigación musicológica realmente moderno asociando musicólogos, artistas flamencos y, ¿por qué no?, informáticos para abrir los caminos de una verdadera Flamencología moderna. Como décíamos en nuestra introducción, al analfabeto le parece imposible (o por lo menos misterioso) que unos cuantos garabatos puedan ser leídos en voz alta. Algo parecido les pasa a muchos flamencos. Valiéndose del gran conocimiento de su arte y conscientes de su variedad y complejidad, afirman que el Flamenco no se puede ni se debe escribir. Lo hacen por un desconocimiento del tema y por el temor al peligro (real pero [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 29
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb469",
+    "page_number": 18,
+    "logical_page": "18-left",
+    "focal_global_block_id": 469,
+    "text": "do musicólogos, artistas flamencos y, ¿por qué no?, informáticos para abrir los caminos de una verdadera Flamencología moderna. Como décíamos en nuestra introducción, al analfabeto le parece imposible (o por lo menos misterioso) que unos cuantos garabatos puedan ser leídos en voz alta. Algo parecido les pasa a muchos flamencos. Valiéndose del gran conocimiento de su arte y conscientes de su variedad y complejidad, afirman que el Flamenco no se puede ni se debe escribir. Lo hacen por un desconocimiento del tema y por el temor al peligro (real pero no obligado) de desaparición de su arte por culpa de lo escrito. Olvidan, o no saben, que en el [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 29
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb470",
+    "page_number": 18,
+    "logical_page": "18-left",
+    "focal_global_block_id": 470,
+    "text": "Como décíamos en nuestra introducción, al analfabeto le parece imposible (o por lo menos misterioso) que unos cuantos garabatos puedan ser leídos en voz alta. Algo parecido les pasa a muchos flamencos. Valiéndose del gran conocimiento de su arte y conscientes de su variedad y complejidad, afirman que el Flamenco no se puede ni se debe escribir. Lo hacen por un desconocimiento del tema y por el temor al peligro (real pero no obligado) de desaparición de su arte por culpa de lo escrito. Olvidan, o no saben, que en el mundo entero y en España misma, se han publicado ya muchos métodos, transcripciones y partituras de guitarra aunque unos cuantos [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "COMM",
+        "concept_id": "COMM_02",
+        "rank": 3,
+        "evidence_strength": "high",
+        "n_supporting_windows": 29
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb451",
+    "page_number": 17,
+    "logical_page": "17-right",
+    "focal_global_block_id": 451,
+    "text": "No obstante, hay que saber que la consciencia y el conocimiento analítico tienen sus peligros y no pueden usarse sin precauciones en todos los campos. No se puede dejar a los músicos «profesionales» con todo su bagaje de escritura clásica, estudios de grabación sofisticados, ritmos automáticos y sonidos sintéticos invadir poco a poco el mundo de los artistas flamencos, que pierden sin darse cuenta su verdadera esencia. La gran mayoría de estos músicos desconocen el Flamenco y adaptan torpemente sus conocimientos a una realidad externa a su cultura. ¡Qué diferencia entre un paso de Semana Santa llevado a hombros, parándose con tiempo cuando [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb452",
+    "page_number": 17,
+    "logical_page": "17-right",
+    "focal_global_block_id": 452,
+    "text": "¡Qué diferencia entre un paso de Semana Santa llevado a hombros, parándose con tiempo cuando surge una saeta en una esquina, y un paso sobre ruedas avanzando aprisa y corriendo sin hacer caso al cante por respetar el horario de la carrera oficial! Pues la misma diferencia hay entre unas letras por Soleá dichas con toda la libertad que le corresponde dentro del compás flexible de la guitarra, y un Tango sin gracia, con compás de hierro y melismas normalizados, llevado a ritmo de bongos que imponen su tiempo al pobre cantaor, que apenas tiene derecho a equivocarse, a la vista del precio del minuto de grabación. Hay que entrar de lleno en una [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  },
+  {
+    "window_id": "1989-01-16-left-flamenco-y-musicolog-a__gb472",
+    "page_number": 18,
+    "logical_page": "18-left",
+    "focal_global_block_id": 472,
+    "text": "La transcripción de cualquier música de tradición oral conlleva serias dificultades, no obstante es mejor enfrentarse a ellas que dejar ciegamente que se publiquen y se vendan en mundo entero partituras buenas o malas, que se hacen con o sin el consentimiento de flamencólogos expertos. Ha llegado el tiempo de que la Flamencología «oficial» empiece, no sólo a conocer estos trabajos, sino también a tomar parte activa en su elaboración, y esto por varias razones. Se editan en el Japón libros con solos de guitarra de Ramón Montoya, Niño Ricardo, Manuel Cano, Sabicas, Manolo Sanlúcar, Serranito, Paco de Lucía, etc., realizados a partir de discos [...]",
+    "candidate_codes_supported": [
+      {
+        "family_id": "HERIT",
+        "concept_id": "HERIT_02",
+        "rank": 4,
+        "evidence_strength": "high",
+        "n_supporting_windows": 30
+      }
+    ]
+  }
+]
+
+COMPACT CODEBOOK ENTRIES:
+[
+  {
+    "family_id": "AUTH",
+    "family_name_en": "authenticity / tradition / continuity claims",
+    "family_name_es": "autenticidad / tradicion / reclamos de continuidad",
+    "family_purpose": "Track evaluative claims about genuineness, purity, roots, lineage, proper transmission, anti-commercial seriousness, and the present-day construction of tradition.",
+    "family_do_not_use_when": "Do not use for neutral historical description, mere chronology, or institutional heritage discourse unless the passage also makes a normative authenticity or continuity claim.",
+    "concept_id": "TRAD_01",
+    "label_en": "tradition_claim",
+    "label_es": "reivindicacion_de_tradicion",
+    "definition": "A discourse move that presents a practice, style, person, school, or repertoire as traditional, rooted in inheritance, or carrying forward a valued past.",
+    "use_when": "Use when tradition is invoked as authority, value, continuity, legitimacy, or proof of properness.",
+    "do_not_use_when": "Do not use for neutral chronology or bare mention that something is old.",
+    "related_concepts": "AUTH_01; HERIT_01; COMM_01",
+    "positive_example": {
+      "excerpt": "Y hoy los tenemos vigentes y rehabilitados en toda su pureza gracias a la «tradición oral»",
+      "rationale": "Tradition is invoked as the mechanism that authorizes present continuity and purity.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "UNA TRADICION QUE MANTENEMOS DIA TRAS DIA CERVEZAS El Alcázar",
+      "rationale": "This uses the trigger word tradición but violates the negative constraint because it is advertising copy, not a flamenco tradition claim.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_06",
+    "label_en": "subaltern_contested_heritage",
+    "label_es": "patrimonio_subalterno_o_disputado",
+    "definition": "Language that treats heritage as contested, dissonant, politically negotiated, or used by subaltern groups to challenge authorized meanings and identities.",
+    "use_when": "Use when passages highlight contestation, control, dissent, competing memories, community challenge, or negotiated recognition in heritage terms.",
+    "do_not_use_when": "Do not use for ordinary disagreement unless heritage, memory, or identity politics are explicitly at stake.",
+    "related_concepts": "COMM_01; LEGIT_01; HERIT_02",
+    "positive_example": {
+      "excerpt": "¿refleja hoy el flamenco... la realidad andaluza, la realidad de los hombres del Sur?... ¿Puede... retomar su virtualidad de síntoma, de voz secular representadora de algo o de alguien?",
+      "rationale": "The passage contests whether flamenco can still represent a community and its historical memory.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "tenemos gran respeto a la memoria de tu hermano",
+      "rationale": "This uses the trigger word memoria but violates the negative constraint because it is personal remembrance, not contested heritage or identity politics.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "COMM",
+    "family_name_en": "community / authority",
+    "family_name_es": "comunidad / autoridad",
+    "family_purpose": "Track aficion, peñas, publics, institutions, critics, and authority claims",
+    "family_do_not_use_when": "Do not use for generic mention of audience without authority or belonging work",
+    "concept_id": "COMM_02",
+    "label_en": "public_private_setting",
+    "label_es": "configuracion_publica_privada",
+    "definition": "A discourse or scene distinction between public/commercial/spectacular flamenco and private/social/intimate flamenco.",
+    "use_when": "Use when value, legitimacy, or social meaning turns on whether flamenco is represented as public or private, staged or social, open or enclosed.",
+    "do_not_use_when": "Do not use for neutral venue description unless the public/private contrast structures the passage's evaluation.",
+    "related_concepts": "",
+    "positive_example": {
+      "excerpt": "la Peña Flamenca no puede ser numerosa, debe pecar de pequeñez, porque la comunicación artista-aficionado tiene su sitio entre pocos... la intimidad de quien dice y escucha, imposible en una masificación",
+      "rationale": "The value of flamenco is tied to small-scale peña intimacy rather than mass public setting.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "Centros de enseñanza públicos y privados",
+      "rationale": "This uses the trigger words públicos y privados but violates the negative constraint because it is neutral institutional categorization.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  },
+  {
+    "family_id": "HERIT",
+    "family_name_en": "heritage / policy / patrimonialization",
+    "family_name_es": "patrimonio / politica / patrimonializacion",
+    "family_purpose": "Track heritage discourse, safeguarding, listing, institutional recognition, vernacular/community heritage use, and patrimonialization as distinct from authenticity/purity discourse.",
+    "family_do_not_use_when": "Do not use for authenticity, purity, roots, or lineage claims unless the passage is also framed through institutional/public-culture heritage discourse or explicit heritage practice.",
+    "concept_id": "HERIT_02",
+    "label_en": "authorized_heritage_discourse",
+    "label_es": "discurso_patrimonial_autorizado",
+    "definition": "A discourse that privileges expert authority, monumentality, official recognition, conservation, consensus, and nation-building in defining what counts as heritage.",
+    "use_when": "Use when passages defer to experts, institutions, official value, canonized sites, recognized forms, or state/institutional authority over heritage meaning.",
+    "do_not_use_when": "Do not use for grassroots memory or community heritage claims unless the passage explicitly invokes official authorization.",
+    "related_concepts": "LEGIT_01; HERIT_01; CRIT_01",
+    "positive_example": {
+      "excerpt": "la institucionalización del Flamenco no puede reputarse... como algo negativo... porque el flamenco necesita ser tutelado como patrimonio cultural",
+      "rationale": "The passage privileges official tutelage and institutional recognition in defining and protecting flamenco as heritage.",
+      "language": "es",
+      "example_type": "clear_positive_es"
+    },
+    "trap_example": {
+      "excerpt": "harán patrimonio común y con el paso del tiempo, pasarán a ser tenidas por populares",
+      "rationale": "This uses heritage-like language but violates the negative constraint because it describes community uptake rather than official authorization.",
+      "language": "es",
+      "example_type": "trap_example_es"
+    }
+  }
+]
+
+REQUIRED JSON OUTPUT SHAPE:
+{
+  "article_id": "string",
+  "language": "es | en | unknown",
+  "article_summary": {
+    "dominant_codes": [
+      "concept_id"
+    ],
+    "secondary_codes": [
+      "concept_id"
+    ],
+    "summary": "brief article-level synthesis of frame work"
+  },
+  "span_annotations": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "decision": "present | uncertain",
+      "confidence": "number from 0.0 to 1.0",
+      "window_id": "string",
+      "page_number": "number or null",
+      "evidence_span": "exact quote from a supplied evidence window",
+      "local_function": "what this frame is doing locally in the article"
+    }
+  ],
+  "rejected_candidates": [
+    {
+      "concept_id": "string",
+      "family_id": "string",
+      "reason": "why the candidate was rejected"
+    }
+  ],
+  "needs_human_review": "boolean",
+  "human_review_reason": "string"
+}
