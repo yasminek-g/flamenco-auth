@@ -46,6 +46,128 @@ def infer_issue_id(path: str | Path, issue_json: dict[str, Any]) -> str:
     return stem.replace("_tagged", "")
 
 
+def is_probably_non_article_block(block: dict[str, Any]) -> bool:
+    """
+    Exclude blocks that are technically text but not useful analytic units.
+
+    This catches:
+    - unassigned layout fragments
+    - ads and commercial notices
+    - masthead / publication metadata
+    - boilerplate contact details
+    - OCR fragments from non-article areas
+
+    Keep this conservative. It is better to lose obvious non-article material now
+    than to let adverts and mastheads pollute candidate-code generation.
+    """
+    hierarchy = block.get("inferred_hierarchy") or {}
+
+    article_id = str(hierarchy.get("article_id") or "").lower()
+    article_name = str(hierarchy.get("article_name") or "").lower()
+    article_type = str(hierarchy.get("article_type") or "").lower()
+    section_label = str(hierarchy.get("section_label") or "").lower()
+    block_role = str(hierarchy.get("block_role") or "").lower()
+    text = normalize_text(str(block.get("block_content") or "")).lower()
+
+    if not text:
+        return True
+
+    # Layout/parser leftovers.
+    if "unassigned" in article_id:
+        return True
+
+    if article_name in {"unassigned", "cover", "index_masthead"}:
+        return True
+
+    if section_label in {"cover", "index_masthead"}:
+        return True
+
+    # Known non-article article types / roles.
+    if article_type in {
+        "advertisement",
+        "ad",
+        "ads",
+        "front_matter",
+        "masthead",
+        "index",
+        "contents",
+    }:
+        return True
+
+    if block_role in {
+        "ad_package",
+        "front_matter",
+        "boilerplate",
+        "satellite",
+        "metadata",
+        "footer",
+        "header",
+    }:
+        return True
+
+    # Commercial / institutional boilerplate.
+    ad_or_boilerplate_markers = [
+        "consulte nuestros precios",
+        "compruebe nuestra calidad",
+        "valore nuestros servicios",
+        "compare y decida",
+        "publicidad",
+        "anúnciese",
+        "anunciese",
+        "suscríbase",
+        "suscribase",
+        "tarifas",
+        "precios",
+        "imprenta",
+        "imprime",
+        "depósito legal",
+        "deposito legal",
+        "isbn",
+        "issn",
+        "redacción y administración",
+        "redaccion y administracion",
+        "teléfono",
+        "telefono",
+        "apartado de correos",
+        "c/. ",
+        "c/",
+    ]
+
+    if any(marker in text for marker in ad_or_boilerplate_markers):
+        return True
+
+    # Very short promotional command chains are usually ads.
+    promotional_verbs = [
+        "consulte",
+        "compruebe",
+        "valore",
+        "compare",
+        "decida",
+        "llame",
+        "visite",
+        "solicite",
+    ]
+
+    promo_hits = sum(1 for verb in promotional_verbs if verb in text)
+    if promo_hits >= 2 and len(text) < 300:
+        return True
+
+    # Mostly contact/address material.
+    contact_markers = [
+        "tel.",
+        "tfno",
+        "fax",
+        "23001",
+        "jaén, españa",
+        "jaen, espana",
+    ]
+
+    if sum(1 for marker in contact_markers if marker in text) >= 2:
+        return True
+
+    return False
+
+
 def should_keep_block(
     block: dict[str, Any],
     min_chars: int,
@@ -65,6 +187,9 @@ def should_keep_block(
     block_role = hierarchy.get("block_role")
 
     if block_role in denied_roles:
+        return False
+
+    if is_probably_non_article_block(block):
         return False
 
     if allowed_roles and block_role not in allowed_roles:
