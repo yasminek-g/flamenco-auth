@@ -415,6 +415,25 @@ def combine_candidates(
     return candidates[:final_k]
 
 
+def get_row_id(unit: dict[str, Any]) -> str:
+    """
+    Support both block units and evidence windows.
+
+    Block units have:
+      unit_id
+
+    Evidence windows have:
+      window_id
+      focal_unit_id
+    """
+    return str(
+        unit.get("unit_id")
+        or unit.get("window_id")
+        or unit.get("focal_unit_id")
+        or "unknown_unit"
+    )
+
+
 def generate_candidates_for_unit(
     unit: dict[str, Any],
     regex_patterns: list[dict[str, Any]],
@@ -440,13 +459,28 @@ def generate_candidates_for_unit(
     candidate_families = sorted({candidate.family_id for candidate in candidates})
 
     return {
-        "unit_id": unit["unit_id"],
-        "issue_id": unit["issue_id"],
+        # Generic ID fields
+        "unit_id": get_row_id(unit),
+        "window_id": unit.get("window_id"),
+        "focal_unit_id": unit.get("focal_unit_id"),
+        "focal_global_block_id": unit.get("focal_global_block_id"),
+
+        # Provenance
+        "issue_id": unit.get("issue_id"),
         "article_id": unit.get("article_id"),
         "article_name": unit.get("article_name"),
+        "article_type": unit.get("article_type"),
         "page_number": unit.get("page_number"),
         "logical_page": unit.get("logical_page"),
+        "language": unit.get("language"),
+
+        # Text
         "text": text,
+        "focal_text": unit.get("focal_text"),
+        "source_unit_ids": unit.get("source_unit_ids"),
+        "source_global_block_ids": unit.get("source_global_block_ids"),
+
+        # Candidates
         "candidate_families": candidate_families,
         "candidates": [
             {
