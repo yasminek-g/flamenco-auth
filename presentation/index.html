@@ -540,6 +540,26 @@
     font-size: 18px;
     font-variant-numeric: tabular-nums lining-nums;
   }
+  .title-credit {
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+  }
+  .title-credit .k {
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    font-weight: 500;
+  }
+  .title-credit .v {
+    font-family: var(--font-body);
+    font-size: 22px;
+    line-height: 1.3;
+    color: var(--ink);
+  }
 
   /* References columns */
   .refs-cols {
@@ -569,7 +589,7 @@
 </style>
 <script type="application/json" id="speaker-notes">
 [
-  "Open. Name the working paper. This is a methods-and-results talk on a corpus of specialized flamenco periodicals from 1979 to 1998. Not a flamenco-history talk that happens to use computers.",
+  "Open. Name the group research project. This is a project presentation on a corpus of specialized flamenco periodicals from 1979 to 1998. Not a flamenco-history talk that happens to use computers.",
   "The research question, in one breath. Three sub-questions are the spine. C is the one we cannot fully answer yet.",
   "Where the modes come from. Walk down the column quickly. Each mode is named scholarship; LEGIT is the overlay across all five.",
   "The corpus. Both periodicals are now audited — 90 Candil, 73 Jaleo. Point at the paratext line: the section asymmetry is corpus-wide, not an audit artifact. Candil sorts ~1,518 articles into ~30 recurring editorial rubrics that persist across the whole run; Jaleo has 19 functional sections and leaves 59% of its 1,410 articles unsectioned. That structural difference is load-bearing for the cross-context comparison.",
@@ -595,13 +615,13 @@
 <section>
 <div class="frame" data-screen-label="01 Title">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> Flamenco Periodicals Project</div>
-    <div class="section-tag">Working paper · No. 02 · methods &amp; results</div>
-    <div class="pageno">FPP-WP-002 / 2026-05</div>
+    <div class="mark"><span class="sq"></span> DH412 - History and the Digital</div>
+    <div class="section-tag">Group Research Project</div>
+    <div class="pageno">DH412-PROJECT / 2026-05</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
-    <div class="kicker">A digital humanities working paper</div>
+    <div class="kicker">Group Research Project</div>
 
     <h1 class="h-display lg" style="max-width: 1620px;">
       Modes of legitimacy in Spanish flamenco periodicals, <span class="accent">1979–1998</span>.
@@ -610,6 +630,11 @@
     <p class="lede lg" style="margin-top: 36px;">
       A corpus study of <em class="book">Candil</em> (Peña Flamenca de Jaén) and the Anglophone monthly <em class="book">Jaleo</em> (San Diego), pairing a hybrid retrieval + LLM annotation pipeline with a 163-article human-gold audit that bounds what the pipeline can yet support.
     </p>
+
+    <div class="title-credit">
+      <span class="k">Presented by</span>
+      <span class="v">Yasmine Kroknes-Gomez · Björn Hugo Bergholtz</span>
+    </div>
 
     <div class="byline">
       <div class="field"><span class="k">Corpus</span><span class="v"><em>Candil</em> · <em>Jaleo</em></span></div>
@@ -620,7 +645,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"><em>Specialized flamenco periodicals do not report on a tradition — they construct one.</em></span>
     <span>01 / 15</span>
   </div>
@@ -632,7 +657,7 @@
 <section>
 <div class="frame" data-screen-label="02 Research question">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§2</span>Research question</div>
     <div class="pageno">02 / 15</div>
   </div>
@@ -659,7 +684,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>02 / 15</span>
   </div>
@@ -671,7 +696,7 @@
 <section>
 <div class="frame" data-screen-label="03 Literature">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§3</span>Secondary literature</div>
     <div class="pageno">03 / 15</div>
   </div>
@@ -700,7 +725,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>03 / 15</span>
   </div>
@@ -712,7 +737,7 @@
 <section>
 <div class="frame" data-screen-label="04 Data">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§4</span>Data — the corpus</div>
     <div class="pageno">04 / 15</div>
   </div>
@@ -769,7 +794,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>04 / 15</span>
   </div>
@@ -781,7 +806,7 @@
 <section>
 <div class="frame" data-screen-label="05 Methods — pipeline">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§5</span>Methods — pipeline</div>
     <div class="pageno">05 / 15</div>
   </div>
@@ -828,7 +853,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>05 / 15</span>
   </div>
@@ -840,7 +865,7 @@
 <section>
 <div class="frame" data-screen-label="06 Methods — codebook">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§5</span>Methods — codebook &amp; audit</div>
     <div class="pageno">06 / 15</div>
   </div>
@@ -880,7 +905,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>06 / 15</span>
   </div>
@@ -892,7 +917,7 @@
 <section>
 <div class="frame" data-screen-label="07 Result — mode share">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§6.1</span>Results — mode share</div>
     <div class="pageno">07 / 15</div>
   </div>
@@ -980,7 +1005,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>07 / 15</span>
   </div>
@@ -992,7 +1017,7 @@
 <section>
 <div class="frame" data-screen-label="08 Result — heatmap (headline)">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§6.2</span>Results — section patterns</div>
     <div class="pageno">08 / 15</div>
   </div>
@@ -1084,7 +1109,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>08 / 15</span>
   </div>
@@ -1096,7 +1121,7 @@
 <section>
 <div class="frame" data-screen-label="09 Key finding">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§6.2</span>Section patterns · stated</div>
     <div class="pageno">09 / 15</div>
   </div>
@@ -1148,7 +1173,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>09 / 15</span>
   </div>
@@ -1160,7 +1185,7 @@
 <section>
 <div class="frame" data-screen-label="10 Result — agreement bound">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§6.3</span>Results — the validity bound</div>
     <div class="pageno">10 / 15</div>
   </div>
@@ -1246,7 +1271,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>10 / 15</span>
   </div>
@@ -1258,7 +1283,7 @@
 <section>
 <div class="frame" data-screen-label="11 Result — temporal">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§6.4</span>Results — temporal trends</div>
     <div class="pageno">11 / 15</div>
   </div>
@@ -1352,7 +1377,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>11 / 15</span>
   </div>
@@ -1364,7 +1389,7 @@
 <section>
 <div class="frame" data-screen-label="12 Interpretation">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§7</span>Interpretation</div>
     <div class="pageno">12 / 15</div>
   </div>
@@ -1402,7 +1427,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>12 / 15</span>
   </div>
@@ -1414,7 +1439,7 @@
 <section>
 <div class="frame" data-screen-label="13 Limits">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§8</span>Conclusion — limits</div>
     <div class="pageno">13 / 15</div>
   </div>
@@ -1459,7 +1484,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>13 / 15</span>
   </div>
@@ -1471,7 +1496,7 @@
 <section>
 <div class="frame" data-screen-label="14 Directions">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§8</span>Conclusion — directions</div>
     <div class="pageno">14 / 15</div>
   </div>
@@ -1516,7 +1541,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>14 / 15</span>
   </div>
@@ -1528,7 +1553,7 @@
 <section>
 <div class="frame" data-screen-label="15 References">
   <div class="slide-top">
-    <div class="mark"><span class="sq"></span> FPP</div>
+    <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§</span>Selected references &amp; thanks</div>
     <div class="pageno">15 / 15</div>
   </div>
@@ -1554,7 +1579,7 @@
 
     <div style="margin-top:auto; display:grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; padding-top: 36px; border-top: 1.5px solid var(--rule-heavy);">
       <div>
-        <div style="font-family:var(--font-ui); font-size:14px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:14px;">FPP · WP-002 · Methods &amp; Results</div>
+        <div style="font-family:var(--font-ui); font-size:14px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:14px;">DH412 · PROJECT · Group Research Project</div>
         <div style="font-family:var(--font-display); font-size:32px; line-height:1.3; color:var(--ink); font-weight:500; font-style:italic; max-width: 1200px;">
           Periodicals do not report on a tradition. They construct one — and they do it section by section.
         </div>
@@ -1567,7 +1592,7 @@
   </div>
 
   <div class="slide-bottom">
-    <span>FPP · WP-002</span>
+    <span>DH412 · PROJECT</span>
     <span class="center"></span>
     <span>15 / 15</span>
   </div>
