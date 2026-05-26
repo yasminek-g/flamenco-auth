@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from common import INK, INK_3, RED, ROOT, output_line, save_figure, setup_theme
+from common import INK, RED, ROOT, output_line, save_figure, setup_theme
 from critical_common import (
     CANDIL_ARTICLE_FOOTPRINT,
     CANDIL_SECTIONS,
@@ -33,37 +33,31 @@ def build_matrix() -> pd.DataFrame:
             "Human gold": 2,
             "Corpus metadata": 1,
             "LLM annotations": 0,
-            "Use in talk": 2,
         },
         "Human-gold mode differences": {
             "Human gold": 2,
             "Corpus metadata": 0,
             "LLM annotations": 0,
-            "Use in talk": 2,
         },
         "Section architecture": {
             "Human gold": 1,
             "Corpus metadata": 2,
             "LLM annotations": 0,
-            "Use in talk": 2,
         },
         "Family-level LLM trends": {
             "Human gold": 1,
             "Corpus metadata": 1,
             "LLM annotations": 1,
-            "Use in talk": 1,
         },
         "Code-level LLM claims": {
             "Human gold": 1,
             "Corpus metadata": 0,
             "LLM annotations": 1,
-            "Use in talk": 0,
         },
         "Temporal mode signals": {
             "Human gold": 0,
             "Corpus metadata": 1,
             "LLM annotations": 1,
-            "Use in talk": 1,
         },
     }
     return pd.DataFrame.from_dict(rows, orient="index")
@@ -79,7 +73,7 @@ def plot(outdir: Path | None = None) -> list[Path]:
     cmap = ListedColormap(["#e8e0d6", "#d9a69f", RED])
     labels = matrix.replace({0: "Avoid", 1: "Use with caveat", 2: "Strong"})
 
-    fig, ax = plt.subplots(figsize=(11.8, 6.8))
+    fig, ax = plt.subplots(figsize=(9.8, 6.8))
     sns.heatmap(
         matrix,
         annot=labels,

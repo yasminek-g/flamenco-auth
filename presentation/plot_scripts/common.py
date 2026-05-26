@@ -39,6 +39,13 @@ PERIODICAL_PALETTE = {
 FAMILY_ORDER = ["CRIT", "AUTH", "COMM", "PED", "HERIT", "OTHER"]
 MODE_FAMILIES = {"AUTH", "COMM", "CRIT", "HERIT", "PED"}
 
+# TRAD concepts (TRAD_01–04) live inside the AUTH family in codebook v12
+# ("authenticity / tradition / continuity claims"), so they report as AUTH.
+FAMILY_FOLD = {"TRAD": "AUTH"}
+# Dropped from the deck: legitimacy is treated as an effect of the five modes
+# rather than its own family, and WCL has too little support to evaluate.
+DROPPED_FAMILIES = {"WCL", "LEGIT"}
+
 
 def setup_theme() -> None:
     import matplotlib
@@ -81,21 +88,24 @@ def split_labels(value: object) -> list[str]:
 
 
 def code_family(code: str) -> str:
-    return code.split("_", 1)[0] if "_" in code else code
+    raw = code.split("_", 1)[0] if "_" in code else code
+    return FAMILY_FOLD.get(raw, raw)
 
 
 def first_code_family(value: object, *, collapse_other: bool = True) -> str | None:
     labels = split_labels(value)
     if not labels:
-        return None
+        return "OTHER"
     fam = code_family(labels[0])
+    if fam in DROPPED_FAMILIES:
+        return None
     if collapse_other and fam not in MODE_FAMILIES:
         return "OTHER"
     return fam
 
 
 def family_set(codes: Iterable[str]) -> set[str]:
-    return {code_family(code) for code in codes if "_" in code}
+    return {code_family(code) for code in codes if "_" in code} - DROPPED_FAMILIES
 
 
 def ensure_figs_dir(path: Path | None = None) -> Path:

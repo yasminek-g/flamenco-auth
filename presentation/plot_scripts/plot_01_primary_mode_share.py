@@ -24,9 +24,10 @@ def build_data(gold_csv: Path) -> pd.DataFrame:
     # Single-label backup to fig07: same human-gold sample (n = 180), no LLM labels.
     gold = read_csv(gold_csv)
     metric = gold.copy()
+    # first_code_family folds TRAD into AUTH and returns None for dropped
+    # families (WCL, LEGIT); drop those articles rather than bucket them.
     metric["primary_family"] = metric["human_gold_codes"].apply(first_code_family)
-    metric["primary_family"] = metric["primary_family"].fillna("OTHER")
-    metric = metric[metric["primary_family"].ne("LEGIT")]
+    metric = metric[metric["primary_family"].notna()]
 
     counts = (
         metric.groupby(["periodical", "primary_family"], observed=False)

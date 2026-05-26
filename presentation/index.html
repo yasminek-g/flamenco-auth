@@ -632,7 +632,7 @@
   "The automated pipeline. Everything so far is human-gold and structural; the LLM enters only here, and only to be validated. Five stages; the human-gold coding is the contribution, not a footnote.",
   "LLM prior shift. Compared with human gold, the model under-calls AUTH and over-produces PED, CRIT, and COMM on the 163-article LLM-comparison subset.",
   "LLM family performance. F1 is uneven: CRIT is recoverable, COMM moderate, while AUTH/HERIT are recall failures and PED is over-recalled.",
-  "Part 6 \u2014 the validity bound. Human-gold coding turns the LLM into bounded evidence: humans agree (\u03ba = 0.78), but human-vs-LLM is 0.22 at family level and 0.17 at code level.",
+  "Part 6 \u2014 the validity bound. Human-gold coding turns the LLM into bounded evidence: against the reconciled gold, family-level F1 is 0.49 (recall 0.63 but precision only 0.40) and code-level F1 is 0.23. This is a prediction-vs-truth evaluation, so F1 \u2014 not a chance-corrected \u03ba \u2014 is the right frame; family trends are exploratory and code-level claims are not stable.",
   "Part 7 \u2014 the claim hierarchy. This answers A/B/C explicitly: which modes, what authority-work, and where the claims are structurally strongest.",
   "Critical pipeline. Emphasize that this is layered evidence, not one measurement: archive/OCR, paratext, human gold, and LLM output each have a different claim status.",
   "Historical limits. The project studies mediated print authority. It cannot directly reconstruct lived flamenco practice, audience reception, or oral transmission outside the page.",
@@ -640,7 +640,7 @@
   "Selected references. Don't read \u2014 reference. Close on the headline.",
   "Appendix divider. Mention only if asked: a single-label backup and five LLM-reliability diagnostics.",
   "Appendix A1 \u2014 single-label primary human-gold mode (n = 180), backup to Figure 2.",
-  "Appendix A2 \u2014 substitutions: missed AUTH/HERIT/TRAD labels often reappear as extra PED, CRIT, or COMM.",
+  "Appendix A2 \u2014 substitutions: missed AUTH/HERIT labels often reappear as extra PED, CRIT, or COMM.",
   "Appendix A3 \u2014 retrieval and annotation attrition.",
   "Appendix A4 \u2014 article length does not explain the reliability problem.",
   "Appendix A5 \u2014 confidence and periodical diagnostics.",
@@ -923,7 +923,7 @@
       <h2 class="h-display sm">The human-gold coding.</h2>
       <div class="accent-rule"></div>
       <p class="body-p">The <strong style="color:var(--red); font-weight:600;">human-gold sample</strong> is <strong style="color:var(--red); font-weight:600;">180 articles</strong> — 90 from <em class="book">Candil</em>, 90 from <em class="book">Jaleo</em> — drawn issue-stratified across the full span and coded by hand against the same codebook the pipeline uses. The <strong style="color:var(--red); font-weight:600;">LLM-comparison subset</strong> is <strong style="color:var(--red); font-weight:600;">163</strong> (90 <em>Candil</em> + 73 <em>Jaleo</em>): the articles that also have LLM output.</p>
-      <p class="body-p">Reconciled to gold labels. Human ↔ LLM κ at family and code level is reported in §6.5 — and it is the reliability bound that decides how far every automated claim can travel.</p>
+      <p class="body-p">Reconciled to gold labels. Gold ↔ LLM precision/recall/F1 at family and code level is reported in §6.5 — and it is the reliability bound that decides how far every automated claim can travel.</p>
 
       <div style="margin-top:32px; padding: 24px; background: var(--red-soft); border-left: 4px solid var(--red);">
         <div style="font-family:var(--font-ui); font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:10px;">Human-gold · stratification</div>
@@ -963,7 +963,7 @@
       <img src="../figs/fig05_audit_composition_fixed.svg" alt="Human-gold sample by period bin, and LLM-comparison subset counts by periodical">
     </div>
 
-    <div class="fig-caption"><span class="n">Fig 1</span>The human-gold mode findings (Figures 1–2, 4) describe the full 180-article sample; only the LLM-validation figures and the κ bound are restricted to the 163-article LLM-comparison subset. Coverage is thin — 2.3% of the 7,087-article corpus — but balanced across both periodicals and the full span.</div>
+    <div class="fig-caption"><span class="n">Fig 1</span>The human-gold mode findings (Figures 1–2, 4) describe the full 180-article sample; only the LLM-validation figures and the F1 bound are restricted to the 163-article LLM-comparison subset. Coverage is thin — 2.3% of the 7,087-article corpus — but balanced across both periodicals and the full span.</div>
   </div>
 
   <div class="slide-bottom">
@@ -1160,7 +1160,7 @@
       <div class="step audit">
         <div class="num">05 · gold</div>
         <div class="name">Human-gold coding</div>
-        <div class="desc">stratified blind double-coding · reconciliation · κ on family &amp; code.</div>
+        <div class="desc">stratified blind double-coding · reconciliation · gold-vs-LLM F1 on family &amp; code.</div>
       </div>
     </div>
 
@@ -1225,13 +1225,13 @@
       <div class="ftitle">The model is uneven: criticism is recoverable, authenticity is not.</div>
       <div class="fnum">Figure 6 · fig09</div>
     </div>
-    <div class="fig-sub">Family-level F1 only, ranked from strongest to weakest. The substitution pattern behind these scores is held in the appendix: many missed AUTH/HERIT/TRAD gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
+    <div class="fig-sub">Family-level F1 only, ranked from strongest to weakest. The substitution pattern behind these scores is held in the appendix: many missed AUTH/HERIT gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
 
     <div class="fig-svg">
       <img src="../figs/fig09_family_f1_ranked.svg" alt="Ranked family-level F1 for LLM labels against human gold">
     </div>
 
-    <div class="fig-caption"><span class="n">Fig 6</span>Family-level F1 on the 163-article LLM-comparison subset. CRIT is the strongest recoverable family; AUTH/HERIT have low recall; PED is over-recalled and imprecise. LEGIT is omitted because support is too low for stable evaluation.</div>
+    <div class="fig-caption"><span class="n">Fig 6</span>Family-level F1 on the 163-article LLM-comparison subset. CRIT is the strongest recoverable family; AUTH/HERIT have low recall; PED is over-recalled and imprecise. Only the five modes are scored — legitimacy is treated as their combined effect, not a separate family.</div>
   </div>
 
   <div class="slide-bottom">
@@ -1257,13 +1257,13 @@
       <div class="ftitle">The human-gold sample turns LLM output into bounded evidence.</div>
       <div class="fnum">Figure 7 · fig03</div>
     </div>
-    <div class="fig-sub">Human-human κ = 0.78, but human↔LLM κ is 0.22 at family level and 0.17 at code level, so LLM trends are exploratory and code-level claims are not stable.</div>
+    <div class="fig-sub">Gold↔LLM F1 is 0.49 at family level (recall 0.63 but precision only 0.40) and 0.23 at code level, so LLM trends are exploratory and code-level claims are not stable.</div>
 
     <div class="fig-svg">
-      <img src="../figs/fig03_agreement_bound.svg" alt="Cohen's kappa bars: human-human family, human-LLM family, human-LLM code, against Landis-Koch bands">
+      <img src="../figs/fig03_agreement_bound.svg" alt="Grouped precision, recall and F1 bars at family and code level, gold versus LLM, against a 0.5 reference line">
     </div>
 
-    <div class="fig-caption"><span class="n">Fig 7</span>Cohen's κ, chance-corrected, over multi-label article×label decisions on the 163-article LLM-comparison subset. Because even family-level LLM agreement is below the floor, family-level trends are <strong style="color:var(--red); font-weight:600;">exploratory at best</strong>, and specific code-level LLM claims are not stable.</div>
+    <div class="fig-caption"><span class="n">Fig 7</span>Micro-averaged precision, recall and F1 over multi-label article×label decisions on the 163-article LLM-comparison subset. Gold is the single reconciled reference, so this is a prediction-vs-truth evaluation — not inter-rater agreement, where a chance-corrected κ would apply. Family-level F1 sits just below the 0.5 reference and is propped up by recall, with precision only 0.40; family-level trends are <strong style="color:var(--red); font-weight:600;">exploratory at best</strong>, and specific code-level LLM claims are not stable.</div>
   </div>
 
   <div class="slide-bottom">
@@ -1361,7 +1361,7 @@
         <tr>
           <td class="title">LLM annotation</td>
           <td>Exploratory scale: candidate trends, failure diagnostics, rerun priorities.</td>
-          <td>Different label prior; AUTH/HERIT recall failures; code-level κ = 0.17.</td>
+          <td>Different label prior; AUTH/HERIT recall failures; code-level F1 = 0.23.</td>
           <td><strong style="color:var(--red); font-weight:600;">Bounded exploration</strong></td>
         </tr>
       </tbody>
@@ -1567,9 +1567,7 @@
         <p class="ref"><span class="au">Kirshenblatt-Gimblett, B.</span> <span class="yr">(2014)</span>. Intangible heritage as metacultural production. <em>Museum International</em>, 66(1–4), 163–174.</p>
         
         <p class="ref"><span class="au">Kunjar, S., et al.</span> <span class="yr">(2025)</span>. Computational frame analysis revisited: On LLMs for studying news coverage. <em>arXiv</em>.</p>
-        
-        <p class="ref"><span class="au">Landis, J. R. &amp; Koch, G. G.</span> <span class="yr">(1977)</span>. The measurement of observer agreement for categorical data. <em>Biometrics</em>, 33(1), 159–174.</p>
-        
+                
         <p class="ref"><span class="au">Latham, S., &amp; Scholes, R.</span> <span class="yr">(2006)</span>. The rise of periodical studies. <em>PMLA</em>, 121(2), 517–531.</p>
         
         <p class="ref"><span class="au">Malefyt, T. de W.</span> <span class="yr">(1998)</span>. &lsquo;Inside&rsquo; and &lsquo;Outside&rsquo; Spanish flamenco. <em>Anthropological Quarterly</em>, 71(2), 63.</p>
@@ -1689,7 +1687,7 @@
       <div class="ftitle">The model substitutes one legitimacy frame for another.</div>
       <div class="fnum">Appendix · fig10</div>
     </div>
-    <div class="fig-sub">Many missed AUTH/HERIT/TRAD gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
+    <div class="fig-sub">Many missed AUTH/HERIT gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
 
     <div class="fig-svg">
       <img src="../figs/fig10_missed_extra_family_heatmap.svg" alt="Heatmap of missed human-gold family versus extra LLM family">

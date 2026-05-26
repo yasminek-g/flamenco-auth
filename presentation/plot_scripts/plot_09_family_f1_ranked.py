@@ -13,7 +13,7 @@ SOURCES = [
     ROOT / "jaleo_llm_annotation_pipeline_v12" / "llm_annotation_outputs_v12_backup",
 ]
 
-DISPLAY_FAMILIES = ["CRIT", "COMM", "PED", "WCL", "TRAD", "AUTH", "HERIT"]
+DISPLAY_FAMILIES = ["CRIT", "COMM", "PED", "AUTH", "HERIT"]
 
 
 def plot(outdir: Path | None = None) -> list[Path]:

@@ -5,7 +5,15 @@ import textwrap
 
 import pandas as pd
 
-from common import ROOT, code_family, family_set, load_annotation_summary, read_csv, split_labels
+from common import (
+    DROPPED_FAMILIES,
+    ROOT,
+    code_family,
+    family_set,
+    load_annotation_summary,
+    read_csv,
+    split_labels,
+)
 
 
 GOLD_CSV = ROOT / "human_gold_audit_complete copy.csv"
@@ -24,7 +32,16 @@ JALEO_ARTICLE_SECTIONS = (
     ROOT / "reports" / "jaleo_recurring_sections_by_title" / "article_title_section_review.csv"
 )
 
-CORE_FAMILIES = ["AUTH", "COMM", "CRIT", "HERIT", "PED", "TRAD", "WCL", "LEGIT"]
+CORE_FAMILIES = ["AUTH", "COMM", "CRIT", "HERIT", "PED"]
+
+
+def kept_codes(value: object) -> set[str]:
+    """Parse a code string, dropping deprecated families (WCL, LEGIT)."""
+    return {
+        code
+        for code in split_labels(value)
+        if (code.split("_", 1)[0] if "_" in code else code) not in DROPPED_FAMILIES
+    }
 
 
 def metric_gold(gold_csv: Path = GOLD_CSV, metrics_only: bool = True) -> pd.DataFrame:
@@ -38,7 +55,7 @@ def metric_gold(gold_csv: Path = GOLD_CSV, metrics_only: bool = True) -> pd.Data
     gold.loc[is_jaleo, "join_article_id"] = (
         gold.loc[is_jaleo, "article_id"].astype(str).str.split("::").str[-1]
     )
-    gold["gold_codes"] = gold["human_gold_codes"].apply(lambda value: set(split_labels(value)))
+    gold["gold_codes"] = gold["human_gold_codes"].apply(kept_codes)
     gold["gold_families"] = gold["gold_codes"].apply(family_set)
     gold["gold_code_count"] = gold["gold_codes"].apply(len)
     gold["gold_family_count"] = gold["gold_families"].apply(len)
@@ -60,7 +77,7 @@ def merged_gold_llm(gold_csv: Path = GOLD_CSV) -> pd.DataFrame:
         on=["periodical", "issue_id", "join_article_id"],
         how="left",
     )
-    merged["llm_codes"] = merged["all_accepted_codes"].apply(lambda value: set(split_labels(value)))
+    merged["llm_codes"] = merged["all_accepted_codes"].apply(kept_codes)
     merged["llm_families"] = merged["llm_codes"].apply(family_set)
     return add_article_metrics(merged)
 

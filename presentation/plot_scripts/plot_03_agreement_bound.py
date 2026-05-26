@@ -22,35 +22,27 @@ from common import (
 )
 
 
-HUMAN_HUMAN_FAMILY_KAPPA = 0.78
+def multilabel_micro_prf(
+    gold_sets: list[set[str]], pred_sets: list[set[str]]
+) -> tuple[float, float, float]:
+    """Micro-averaged precision / recall / F1 over multi-label article×label decisions.
 
-
-def multilabel_cohens_kappa(gold_sets: list[set[str]], pred_sets: list[set[str]]) -> float:
-    """Cohen's kappa over article x label binary decisions.
-
-    The audit is multi-label, so each article contributes one present/absent decision
-    for every label observed in either the gold or LLM outputs.
+    Gold is a single reconciled reference, so this is a prediction-vs-truth evaluation,
+    not inter-rater agreement — F1 is the right frame, not a chance-corrected κ.
     """
-    labels = sorted(set().union(*gold_sets, *pred_sets))
-    if not labels:
-        return 0.0
-
-    gold_binary = []
-    pred_binary = []
     if len(gold_sets) != len(pred_sets):
         raise ValueError("Gold and prediction lists must have the same length")
 
+    tp = fp = fn = 0
     for gold, pred in zip(gold_sets, pred_sets):
-        for label in labels:
-            gold_binary.append(label in gold)
-            pred_binary.append(label in pred)
+        tp += len(gold & pred)
+        fp += len(pred - gold)
+        fn += len(gold - pred)
 
-    total = len(gold_binary)
-    observed = sum(g == p for g, p in zip(gold_binary, pred_binary)) / total
-    gold_yes = sum(gold_binary) / total
-    pred_yes = sum(pred_binary) / total
-    expected = (gold_yes * pred_yes) + ((1 - gold_yes) * (1 - pred_yes))
-    return (observed - expected) / (1 - expected) if expected != 1 else 0.0
+    precision = tp / (tp + fp) if (tp + fp) else 0.0
+    recall = tp / (tp + fn) if (tp + fn) else 0.0
+    f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) else 0.0
+    return precision, recall, f1
 
 
 def build_data(gold_csv: Path, periodical: str | None = None) -> pd.DataFrame:
@@ -83,35 +75,22 @@ def build_data(gold_csv: Path, periodical: str | None = None) -> pd.DataFrame:
     merged["gold_families"] = merged["gold_codes"].apply(family_set)
     merged["llm_families"] = merged["llm_codes"].apply(family_set)
 
-    family_kappa = multilabel_cohens_kappa(
+    family_p, family_r, family_f1 = multilabel_micro_prf(
         merged["gold_families"].tolist(), merged["llm_families"].tolist()
     )
-    code_kappa = multilabel_cohens_kappa(merged["gold_codes"].tolist(), merged["llm_codes"].tolist())
-    return pd.DataFrame(
-        [
-            {
-                "comparison": "Human vs human",
-                "level": "family",
-                "statistic": "κ",
-                "value": HUMAN_HUMAN_FAMILY_KAPPA,
-                "source": "audit adjudication benchmark",
-            },
-            {
-                "comparison": "Human gold vs LLM",
-                "level": "family",
-                "statistic": "κ",
-                "value": family_kappa,
-                "source": "recomputed from audit copy and v12 outputs",
-            },
-            {
-                "comparison": "Human gold vs LLM",
-                "level": "code",
-                "statistic": "κ",
-                "value": code_kappa,
-                "source": "recomputed from audit copy and v12 outputs",
-            },
-        ]
+    code_p, code_r, code_f1 = multilabel_micro_prf(
+        merged["gold_codes"].tolist(), merged["llm_codes"].tolist()
     )
+
+    rows = []
+    for level, (prec, rec, f1) in [
+        ("Family level", (family_p, family_r, family_f1)),
+        ("Code level", (code_p, code_r, code_f1)),
+    ]:
+        rows.append({"level": level, "metric": "Precision", "value": prec})
+        rows.append({"level": level, "metric": "Recall", "value": rec})
+        rows.append({"level": level, "metric": "F1", "value": f1})
+    return pd.DataFrame(rows)
 
 
 def plot(data: pd.DataFrame, outdir: Path | None = None) -> list[Path]:
@@ -119,51 +98,71 @@ def plot(data: pd.DataFrame, outdir: Path | None = None) -> list[Path]:
     import seaborn as sns
 
     setup_theme()
-    plot_df = data.copy()
-    plot_df["label"] = [
-        "Human vs human\nfamily level",
-        "Human gold vs LLM\nfamily level",
-        "Human gold vs LLM\ncode level",
-    ]
+    palette = {"Precision": INK_3, "Recall": INK_2, "F1": RED}
 
     fig, ax = plt.subplots(figsize=(11.5, 6.6))
-    colors = [INK_2, RED, RED]
-    bars = sns.barplot(data=plot_df, y="label", x="value", palette=colors, hue="label", ax=ax)
-    legend = ax.get_legend()
-    if legend is not None:
-        legend.remove()
+    sns.barplot(
+        data=data,
+        x="level",
+        y="value",
+        hue="metric",
+        hue_order=["Precision", "Recall", "F1"],
+        palette=palette,
+        ax=ax,
+    )
 
-    ax.axvspan(0.0, 0.2, color="#f6f4ef", zorder=0)
-    ax.axvspan(0.2, 0.4, color="#efebe2", zorder=0)
-    ax.axvspan(0.4, 0.6, color="#e7e0d2", zorder=0)
-    ax.axvspan(0.6, 0.8, color="#dcd2bf", zorder=0)
-    ax.axvspan(0.8, 1.0, color="#ccbfa3", zorder=0)
-    ax.axvline(0.4, color=RED, linestyle=(0, (4, 3)), linewidth=1.8)
-    ax.text(0.405, -0.42, "reliability floor", color=RED, fontsize=10, fontweight="bold")
+    # Mark the F1 bars so the headline statistic reads at a glance.
+    for patch, (_, row) in zip(ax.patches, _bar_rows(data).iterrows()):
+        if row["metric"] == "F1":
+            patch.set_edgecolor(RED_DEEP)
+            patch.set_linewidth(1.4)
 
-    hatch_bar = ax.patches[2]
-    hatch_bar.set_hatch("///")
-    hatch_bar.set_edgecolor(RED_DEEP)
-
-    for idx, row in plot_df.iterrows():
+    for patch in ax.patches:
+        height = patch.get_height()
+        if height <= 0:
+            continue
         ax.text(
-            row["value"] + 0.025,
-            idx,
-            f"{row['statistic']} = {row['value']:.2f}",
-            va="center",
+            patch.get_x() + patch.get_width() / 2,
+            height + 0.015,
+            f"{height:.2f}",
+            ha="center",
+            va="bottom",
             color=INK,
-            fontsize=11,
+            fontsize=10,
             fontweight="bold",
         )
 
-    ax.set_xlabel("Agreement statistic", fontsize=12)
-    ax.set_ylabel("")
-    ax.set_xlim(0, 1)
-    ax.xaxis.set_major_formatter(lambda x, _pos: f"{x:.1f}")
+    ax.axhline(0.5, color=RED, linestyle=(0, (4, 3)), linewidth=1.6, zorder=0)
+    ax.text(
+        1.46,
+        0.515,
+        "usable-evidence reference (0.5)",
+        color=RED,
+        fontsize=9.5,
+        fontweight="bold",
+        ha="right",
+    )
+
+    ax.set_ylabel("Score (gold vs LLM)", fontsize=12)
+    ax.set_xlabel("")
+    ax.set_ylim(0, 1)
+    ax.yaxis.set_major_formatter(lambda y, _pos: f"{y:.1f}")
     ax.tick_params(axis="both", labelsize=11)
-    fig.subplots_adjust(top=0.95, left=0.24, right=0.98, bottom=0.13)
+    ax.legend(title="", loc="upper right", frameon=False, fontsize=11)
+    fig.subplots_adjust(top=0.95, left=0.1, right=0.98, bottom=0.1)
 
     return save_figure(fig, "fig03_agreement_bound", outdir)
+
+
+def _bar_rows(data: pd.DataFrame) -> pd.DataFrame:
+    """Reorder rows to match seaborn's patch order (grouped by hue, then x)."""
+    order = []
+    for metric in ["Precision", "Recall", "F1"]:
+        for level in ["Family level", "Code level"]:
+            order.append(
+                data[(data["metric"] == metric) & (data["level"] == level)].iloc[0]
+            )
+    return pd.DataFrame(order).reset_index(drop=True)
 
 
 def main() -> None:

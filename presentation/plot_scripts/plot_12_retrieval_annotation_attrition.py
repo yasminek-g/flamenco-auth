@@ -5,17 +5,36 @@ from pathlib import Path
 
 import pandas as pd
 
-from common import INK_2, ROOT, code_family, output_line, read_csv, save_figure, setup_theme
+from common import (
+    DROPPED_FAMILIES,
+    FAMILY_FOLD,
+    INK_2,
+    ROOT,
+    code_family,
+    output_line,
+    read_csv,
+    save_figure,
+    setup_theme,
+)
 from critical_common import CANDIL_CANDIDATES, CANDIL_WINDOWS, GOLD_CSV, JALEO_CANDIDATES, JALEO_WINDOWS, merged_gold_llm, sources_text
 
 
 SOURCES = [GOLD_CSV, CANDIL_WINDOWS, JALEO_WINDOWS, CANDIL_CANDIDATES, JALEO_CANDIDATES, ROOT / "candil_llm_annotation_pipeline" / "llm_annotation_outputs_v12_backup", ROOT / "jaleo_llm_annotation_pipeline_v12" / "llm_annotation_outputs_v12_backup"]
 
 
+def normalize_family_counts(series: pd.Series) -> pd.Series:
+    """Fold TRAD into AUTH and drop deprecated families (WCL, LEGIT)."""
+    folded = series.rename(index=lambda fam: FAMILY_FOLD.get(fam, fam))
+    folded = folded.groupby(level=0).sum()
+    drop = [fam for fam in DROPPED_FAMILIES if fam in folded.index]
+    return folded.drop(index=drop)
+
+
 def family_counts_from_csvs(paths: list[Path], family_col: str) -> pd.Series:
     frames = [read_csv(path, sep=";") for path in paths]
     df = pd.concat(frames, ignore_index=True)
-    return df.drop_duplicates(["issue_id", "article_id", "concept_id"])[family_col].value_counts()
+    counts = df.drop_duplicates(["issue_id", "article_id", "concept_id"])[family_col].value_counts()
+    return normalize_family_counts(counts)
 
 
 def accepted_family_counts() -> pd.Series:
