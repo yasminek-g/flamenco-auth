@@ -424,6 +424,7 @@
     min-height: 0;
   }
   .fig-svg svg { display: block; width: 100%; height: auto; max-height: 100%; }
+  .fig-svg img { display: block; width: auto; height: auto; max-width: 100%; max-height: 100%; }
   .fig-caption {
     font-family: var(--font-ui);
     font-size: 15px;
@@ -441,6 +442,34 @@
     text-transform: uppercase;
     font-size: 12px;
     margin-right: 8px;
+  }
+
+  .answer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 0 0 18px;
+  }
+  .answer-card {
+    border-top: 4px solid var(--red);
+    background: var(--paper-2);
+    padding: 18px 20px 20px;
+    min-height: 128px;
+  }
+  .answer-card .q {
+    font-family: var(--font-ui);
+    font-size: 13px;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .answer-card .a {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.42;
+    color: var(--ink);
   }
 
   /* SVG tokens */
@@ -589,21 +618,33 @@
 </style>
 <script type="application/json" id="speaker-notes">
 [
-  "Open. Name the group research project. This is a project presentation on a corpus of specialized flamenco periodicals from 1979 to 1998. Not a flamenco-history talk that happens to use computers.",
-  "The research question, in one breath. Three sub-questions are the spine. C is the one we cannot fully answer yet.",
-  "Where the modes come from. Walk down the column quickly. Each mode is named scholarship; LEGIT is the overlay across all five.",
-  "The corpus. Both periodicals are now audited — 90 Candil, 73 Jaleo. Point at the paratext line: the section asymmetry is corpus-wide, not an audit artifact. Candil sorts ~1,518 articles into ~30 recurring editorial rubrics that persist across the whole run; Jaleo has 19 functional sections and leaves 59% of its 1,410 articles unsectioned. That structural difference is load-bearing for the cross-context comparison.",
-  "The pipeline. Five stages. The last one — the human audit — is highlighted in red because it is part of the contribution, not a footnote.",
-  "Codebook structure, and what the audit actually was. Two annotators, blind, 90 articles from each periodical, reconciliation.",
-  "First result: distribution of modes. CRIT and AUTH lead. The LEGIT overlay bar is dashed because it is independent — it overlays on top of whatever primary mode an article carries.",
-  "The headline result — and be disciplined about the two tiers. Tier one, top band, is a full-corpus, code-free fact: Candil has a deep persistent section architecture (~30 rubrics), Jaleo leaves 59% unsectioned. That structural asymmetry is solid. Tier two, the bars below, is the hypothesis: WHICH mode lands in which section (Coplas→authenticity, Crónica→criticism, Ellos→tradition+community; Jaleo's Reviews 11/11 critical). The pairing rests on small n (3–11) and codes not yet reliable — present it as suggestive. The where-contrast RQ-C asks for now has a robust structural floor even though the mode-mapping awaits the rerun. Spend time here.",
-  "Say what the finding means in one sentence. Then move on.",
-  "The validity bound. Family-level agreement is moderate; code-level agreement is poor. This bounds every claim on the previous slides. Be honest about the chance-inflation.",
-  "Brief: HERIT rises across the period, the others are roughly stable. Patrimonialization narrative. Family-level only — do not over-read the within-family movement.",
-  "What it means, in three lines. Structure is the finding, totals are the description, the validity bound says how far the claim can travel.",
-  "Four limits. None of these are confessed at the end; they have been visible throughout.",
-  "Four directions. D1 is the unlock: the section architecture is already corpus-wide, so the rerun's job is to lift the section→mode pairing to the full run. Stress that Jaleo's sparse sectioning is a real feature, not a bug to fix — we are not trying to make Jaleo look like Candil.",
-  "Selected references. Don't read; reference. Close on the headline image."
+  "Open. A corpus study of specialized flamenco periodicals, 1977\u20131998. Not a flamenco-history talk that happens to use computers.",
+  "The research question in one breath. Three sub-questions; C \u2014 the where-comparison \u2014 is the one we can only partly answer.",
+  "Where the modes come from. Each mode is named scholarship; legitimacy is not a sixth mode but the authority-work the five modes perform.",
+  "Concept slide. Modes are verbs/operations, not buckets: authenticating, inheriting, gathering, teaching, judging. Legitimacy is their combined effect. This frames every chart that follows.",
+  "The corpus. Both periodicals hand-coded \u2014 90 + 90. Read the bridge sentence aloud: Candil writes from inside an Andalusian institution; Jaleo must translate, teach, and authorize at a distance. This is why Jaleo leans community/pedagogy and Candil has denser rubrics.",
+  "Codebook v12 and the human-gold coding: two annotators, blind, issue-stratified, reconciled. Human-gold sample = 180; LLM-comparison subset = 163.",
+  "Part 2 \u2014 the human-gold sample (n = 180). The semantic findings draw on all 180; only the LLM-validation figures use the 163-article subset. Small but balanced.",
+  "Part 3 \u2014 human-gold modes (n = 180). Authenticity near 45% in both; criticism leads Candil (60%); community and pedagogy markedly higher in Jaleo. Human-gold only.",
+  "Close reading. This grounds the charts in actual periodical discourse: the same mode (criticism) does different authority-work in each title. Rows are paraphrased, not quoted \u2014 exact excerpts still to be filled from gold articles.",
+  "Part 4 \u2014 corpus structure. The strongest, code-independent result: Candil roughly 75% sectioned, Jaleo only about 50% (half unsectioned), read from paratext alone.",
+  "Part 5 \u2014 sections as weak genre proxies. Some sections concentrate a family, but samples are n = 3\u201311. A working hypothesis for the rerun, not a result.",
+  "The automated pipeline. Everything so far is human-gold and structural; the LLM enters only here, and only to be validated. Five stages; the human-gold coding is the contribution, not a footnote.",
+  "LLM prior shift. Compared with human gold, the model under-calls AUTH and over-produces PED, CRIT, and COMM on the 163-article LLM-comparison subset.",
+  "LLM family performance. F1 is uneven: CRIT is recoverable, COMM moderate, while AUTH/HERIT are recall failures and PED is over-recalled.",
+  "Part 6 \u2014 the validity bound. Human-gold coding turns the LLM into bounded evidence: humans agree (\u03ba = 0.78), but human-vs-LLM is 0.22 at family level and 0.17 at code level.",
+  "Part 7 \u2014 the claim hierarchy. This answers A/B/C explicitly: which modes, what authority-work, and where the claims are structurally strongest.",
+  "Critical pipeline. Emphasize that this is layered evidence, not one measurement: archive/OCR, paratext, human gold, and LLM output each have a different claim status.",
+  "Historical limits. The project studies mediated print authority. It cannot directly reconstruct lived flamenco practice, audience reception, or oral transmission outside the page.",
+  "Future work. The next pass should make computation more historical: validate sections, expand human gold, rerun article-level annotation, and return every quantitative contrast to close reading.",
+  "Selected references. Don't read \u2014 reference. Close on the headline.",
+  "Appendix divider. Mention only if asked: a single-label backup and five LLM-reliability diagnostics.",
+  "Appendix A1 \u2014 single-label primary human-gold mode (n = 180), backup to Figure 2.",
+  "Appendix A2 \u2014 substitutions: missed AUTH/HERIT/TRAD labels often reappear as extra PED, CRIT, or COMM.",
+  "Appendix A3 \u2014 retrieval and annotation attrition.",
+  "Appendix A4 \u2014 article length does not explain the reliability problem.",
+  "Appendix A5 \u2014 confidence and periodical diagnostics.",
+  "Appendix A6 \u2014 sections do not rescue reliability: paratext gives structure, not validated coding."
 ]
 </script>
 </head>
@@ -624,11 +665,11 @@
     <div class="kicker">Group Research Project</div>
 
     <h1 class="h-display lg" style="max-width: 1620px;">
-      Modes of legitimacy in Spanish flamenco periodicals, <span class="accent">1979–1998</span>.
+      Modes of legitimacy in flamenco periodicals, <span class="accent">1977–1998</span>.
     </h1>
 
     <p class="lede lg" style="margin-top: 36px;">
-      A corpus study of <em class="book">Candil</em> (Peña Flamenca de Jaén) and the Anglophone monthly <em class="book">Jaleo</em> (San Diego), pairing a hybrid retrieval + LLM annotation pipeline with a 163-article human-gold audit that bounds what the pipeline can yet support.
+      A corpus study of <em class="book">Candil</em> (Peña Flamenca de Jaén) and the Anglophone monthly <em class="book">Jaleo</em> (San Diego), pairing a hybrid retrieval + LLM annotation pipeline with a 180-article human-gold sample and a 163-article LLM-comparison subset that bounds what the pipeline can yet support.
     </p>
 
     <div class="title-credit">
@@ -640,14 +681,14 @@
       <div class="field"><span class="k">Corpus</span><span class="v"><em>Candil</em> · <em>Jaleo</em></span></div>
       <div class="field"><span class="k">Span</span><span class="v mono">1977 — 1998</span></div>
       <div class="field"><span class="k">Codebook</span><span class="v mono">v12 · 5 modes + LEGIT</span></div>
-      <div class="field"><span class="k">Audit</span><span class="v mono">n = 163 · 90 + 73</span></div>
+      <div class="field"><span class="k">Human-gold</span><span class="v mono">n = 180 · LLM subset n = 163</span></div>
     </div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"><em>Specialized flamenco periodicals do not report on a tradition — they construct one.</em></span>
-    <span>01 / 15</span>
+    <span>01 / 27</span>
   </div>
 </div>
 </section>
@@ -659,7 +700,7 @@
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§2</span>Research question</div>
-    <div class="pageno">02 / 15</div>
+    <div class="pageno">02 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1680px;">
@@ -672,7 +713,7 @@
       <dt>A</dt>
       <dd>Through <em class="term">which modes</em> is legitimacy constructed? We posit <strong>five</strong>: authenticity, heritage, community, pedagogy, criticism.</dd>
       <dt>B</dt>
-      <dd>How does the <em class="term">authority-work overlay</em> — recognition, exclusion, right-to-define, delegitimation — map onto those modes?</dd>
+      <dd>How do these five modes perform <em class="term">authority-work</em> — recognizing, excluding, defining, or delegitimating actors, practices, and forms of knowledge?</dd>
       <dt>C</dt>
       <dd>Do the Spanish-language and Anglophone publications differ in <em class="term">which modes they emphasize</em>, and in <em class="term">where</em> within the periodical those modes are performed?</dd>
     </dl>
@@ -686,7 +727,7 @@
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>02 / 15</span>
+    <span>02 / 27</span>
   </div>
 </div>
 </section>
@@ -698,14 +739,14 @@
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§3</span>Secondary literature</div>
-    <div class="pageno">03 / 15</div>
+    <div class="pageno">03 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
     <h2 class="h-display sm">The five modes are not invented here.</h2>
     <div class="accent-rule"></div>
     <p class="lede md" style="margin-bottom: 36px;">
-      Each mode is anchored in a body of scholarship that frames the concept and supplies its diagnostic features. <span class="pill red">LEGIT</span> draws across all five in the Weberian / Bourdieusian sense, concretized for this corpus by four diagnostic acts.
+      Each mode is anchored in a body of scholarship that frames the concept and supplies its diagnostic features. <span class="pill red">LEGIT</span> is not a sixth mode: legitimacy is inferred from how the five families authorize, recognize, exclude, transmit, or evaluate flamenco.
     </p>
 
     <dl class="dl-block" style="grid-template-columns: 120px 1fr;">
@@ -718,16 +759,59 @@
       <dt>PED</dt>
       <dd>Casas-Mas (2018) · Pozo &amp; Montero (2008)</dd>
       <dt>CRIT</dt>
-      <dd>Washabaugh (2012) · Wieczorek (2020) · <em>Bourdieu (1984); Becker (1982); Hennion (2001) — optional</em></dd>
+      <dd>Washabaugh (2012) · Wieczorek (2020)</dd>
       <dt style="color:var(--red-deep);">LEGIT</dt>
-      <dd><em>authority-work overlay; the diagnostic acts (recognition · exclusion · right-to-define · delegitimation) cut across all five modes</em></dd>
+      <dd><em>analytic effect, not a separate frequency category; the five modes compose the authority-work through which legitimacy is constructed</em></dd>
     </dl>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>03 / 15</span>
+    <span>03 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== CONCEPT — MODES AS OPERATIONS =============== -->
+<section>
+<div class="frame" data-screen-label="04 Modes as operations">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§3</span>Modes as operations</div>
+    <div class="pageno">04 / 27</div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1720px;">
+    <h2 class="h-display sm">The modes are operations of legitimacy, not just labels.</h2>
+    <div class="accent-rule"></div>
+    <p class="lede md" style="margin-bottom:28px;">Each mode names something a periodical <em>does</em> to flamenco — an act of authorization — not merely a topic it covers.</p>
+
+    <table class="corpus">
+      <thead>
+        <tr><th>Mode</th><th>Operation</th><th>Question it answers</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><span class="pill red">AUTH</span></td><td class="title">authenticates</td><td>Who or what is treated as genuine?</td></tr>
+        <tr><td><span class="pill red">HERIT</span></td><td class="title">patrimonializes</td><td>What is framed as inheritance?</td></tr>
+        <tr><td><span class="pill red">COMM</span></td><td class="title">binds community</td><td>Who belongs to the flamenco world?</td></tr>
+        <tr><td><span class="pill red">PED</span></td><td class="title">transmits knowledge</td><td>Who teaches, learns, or preserves technique?</td></tr>
+        <tr><td><span class="pill red">CRIT</span></td><td class="title">evaluates</td><td>Who has authority to judge?</td></tr>
+      </tbody>
+    </table>
+
+    <div style="margin-top:36px; padding:26px 32px; background:var(--red-soft); border-left:6px solid var(--red);">
+      <div style="font-family:var(--font-display); font-size:30px; line-height:1.3; color:var(--ink); font-weight:500; font-style:italic;">
+        Legitimacy is the effect of these operations: authenticating, inheriting, gathering, teaching, and judging.
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>04 / 27</span>
   </div>
 </div>
 </section>
@@ -735,16 +819,18 @@
 
 <!-- =============== 04 DATA =============== -->
 <section>
-<div class="frame" data-screen-label="04 Data">
+<div class="frame" data-screen-label="05 Data">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§4</span>Data — the corpus</div>
-    <div class="pageno">04 / 15</div>
+    <div class="pageno">05 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
-    <h2 class="h-display sm">Two specialized periodicals, both audited.</h2>
+    <h2 class="h-display sm">Two specialized periodicals, both hand-coded.</h2>
     <div class="accent-rule"></div>
+
+    <p class="lede sm" style="margin: 0 0 18px;"><em>Candil</em> writes from within an Andalusian flamenco institution; <em>Jaleo</em> writes from an Anglophone scene that must translate, teach, and authorize flamenco at a distance.</p>
 
     <table class="corpus">
       <thead>
@@ -759,7 +845,7 @@
       </thead>
       <tbody>
         <tr>
-          <td class="title"><em>Candil</em> &nbsp;<span style="color:var(--red); font-style:normal; font-family:var(--font-ui); font-size:13px; letter-spacing:0.18em; font-weight:600;">AUDITED · 90</span><span class="archive">Peña Flamenca de Jaén · archive: PFJ, Biblioteca de Andalucía</span></td>
+          <td class="title"><em>Candil</em> &nbsp;<span style="color:var(--red); font-style:normal; font-family:var(--font-ui); font-size:13px; letter-spacing:0.18em; font-weight:600;">HUMAN-GOLD · 90</span><span class="archive">Peña Flamenca de Jaén · archive: PFJ, Biblioteca de Andalucía</span></td>
           <td>Jaén · ES</td>
           <td>1979 – 1998</td>
           <td class="num">118</td>
@@ -767,7 +853,7 @@
           <td class="num">9 740</td>
         </tr>
         <tr>
-          <td class="title"><em>Jaleo</em> &nbsp;<span style="color:var(--red); font-style:normal; font-family:var(--font-ui); font-size:13px; letter-spacing:0.18em; font-weight:600;">AUDITED · 73</span><span class="archive">Jaleístas Inc., San Diego · archive: UCSD Special Collections</span></td>
+          <td class="title"><em>Jaleo</em> &nbsp;<span style="color:var(--red); font-style:normal; font-family:var(--font-ui); font-size:13px; letter-spacing:0.18em; font-weight:600;">HUMAN-GOLD · 90 · LLM-COMPARISON · 73</span><span class="archive">Jaleístas Inc., San Diego · archive: UCSD Special Collections</span></td>
           <td>San Diego, USA · EN</td>
           <td>1977 – 1989</td>
           <td class="num">132</td>
@@ -789,14 +875,246 @@
 
     <div class="caveat" style="margin-top: 32px;">
       <span class="dagger">†</span>
-      <div><strong>Paratext layer</strong> A separate detector links each article to its recurring section — and the two periodicals are built differently. <em>Candil</em> sorts <strong style="color:var(--red-deep); font-weight:600;">≈1,518</strong> articles into <strong style="color:var(--red-deep); font-weight:600;">~30</strong> genre-differentiated editorial rubrics (<em>Editorial</em>, <em>Ensayo</em>, <em>Discografía</em>, <em>Ponencia/comunicación</em>, <em>Coplas/poemas</em>, <em>Homenaje</em>…), most persisting across the full 1979–1998 run. <em>Jaleo</em>'s sections are fewer and functional/community (<em>Juergas</em>, <em>Letters</em>, <em>Announcements</em>, <em>Reviews</em>, <em>San Diego Scene</em>), and <strong style="color:var(--red-deep); font-weight:600;">59%</strong> of its 1,410 articles fall outside any recurring section. Detection is heuristic, but the structural contrast holds corpus-wide.</div>
+      <div><strong>Paratext layer</strong> A separate detector links each article to its recurring section — and the two periodicals are built differently. <em>Candil</em> sorts <strong style="color:var(--red-deep); font-weight:600;">≈1,518</strong> articles into <strong style="color:var(--red-deep); font-weight:600;">~30</strong> genre-differentiated editorial rubrics (<em>Editorial</em>, <em>Ensayo</em>, <em>Discografía</em>, <em>Ponencia/comunicación</em>, <em>Coplas/poemas</em>, <em>Homenaje</em>…), most persisting across the full 1979–1998 run. <em>Jaleo</em>'s sections are fewer and functional/community (<em>Juergas</em>, <em>Letters</em>, <em>Announcements</em>, <em>Reviews</em>, <em>San Diego Scene</em>), and <strong style="color:var(--red-deep); font-weight:600;">50%</strong> of its 1,410 articles fall outside any recurring section. Detection is heuristic, but the structural contrast holds corpus-wide.</div>
     </div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>04 / 15</span>
+    <span>05 / 27</span>
+  </div>
+</div>
+</section>
+
+
+
+
+
+<!-- =============== 06 METHODS — CODEBOOK + AUDIT =============== -->
+<section>
+<div class="frame" data-screen-label="06 Methods — codebook">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§5</span>Methods — codebook &amp; coding</div>
+    <div class="pageno">06 / 27</div>
+  </div>
+
+  <div style="flex:1; display:grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+    <div>
+      <h2 class="h-display sm">Codebook v12.</h2>
+      <div class="accent-rule"></div>
+      <p class="body-p">Entman-style <em class="term">frames</em> as competing <strong class="key">modes of legitimacy</strong>. Codes use family-prefixed IDs such as <code style="font-family:var(--font-mono); font-size:18px; background:var(--paper-2); padding:0 5px;">AUTH_03</code> and <code style="font-family:var(--font-mono); font-size:18px; background:var(--paper-2); padding:0 5px;">HERIT_11</code>.</p>
+      <p class="body-p">Each entry carries eight fields. The <em class="term">do-not-use-when</em> clauses do the heaviest work — they name the collapse-risks between adjacent families.</p>
+
+      <dl class="dl-block compact" style="grid-template-columns: 24px 1fr; margin-top: 8px;">
+        <dt>1</dt><dd>Definition</dd>
+        <dt>2</dt><dd>Use when</dd>
+        <dt>3</dt><dd><strong style="color:var(--red);">Do NOT use when</strong></dd>
+        <dt>4</dt><dd>Bilingual triggers (ES / EN)</dd>
+        <dt>5</dt><dd>Positive examples</dd>
+        <dt>6</dt><dd>Trap examples</dd>
+        <dt>7</dt><dd>Theoretical anchors</dd>
+        <dt>8</dt><dd>Version &amp; review date</dd>
+      </dl>
+    </div>
+
+    <div>
+      <h2 class="h-display sm">The human-gold coding.</h2>
+      <div class="accent-rule"></div>
+      <p class="body-p">The <strong style="color:var(--red); font-weight:600;">human-gold sample</strong> is <strong style="color:var(--red); font-weight:600;">180 articles</strong> — 90 from <em class="book">Candil</em>, 90 from <em class="book">Jaleo</em> — drawn issue-stratified across the full span and coded by hand against the same codebook the pipeline uses. The <strong style="color:var(--red); font-weight:600;">LLM-comparison subset</strong> is <strong style="color:var(--red); font-weight:600;">163</strong> (90 <em>Candil</em> + 73 <em>Jaleo</em>): the articles that also have LLM output.</p>
+      <p class="body-p">Reconciled to gold labels. Human ↔ LLM κ at family and code level is reported in §6.5 — and it is the reliability bound that decides how far every automated claim can travel.</p>
+
+      <div style="margin-top:32px; padding: 24px; background: var(--red-soft); border-left: 4px solid var(--red);">
+        <div style="font-family:var(--font-ui); font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:10px;">Human-gold · stratification</div>
+        <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink);">
+          180 hand-coded (90 + 90) · issue-stratified · reconciled gold · 163 in the LLM-comparison subset (90 + 73) · 7,087-article corpus &rArr; <strong style="font-weight:600; color:var(--red-deep);">2.3%</strong> coded by hand.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>06 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 07 FIG 05 — HUMAN-GOLD SAMPLE =============== -->
+<section>
+<div class="frame" data-screen-label="07 Human-gold sample">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§6.1</span>Human-gold sample</div>
+    <div class="pageno">07 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">A balanced 180-article human-gold sample anchors the semantic findings.</div>
+      <div class="fnum">Figure 1 · fig05</div>
+    </div>
+    <div class="fig-sub">180 articles were hand-coded across 1977–1998 — 90 <em>Candil</em> + 90 <em>Jaleo</em>. The LLM-comparison subset is 163 (90 <em>Candil</em> + 73 <em>Jaleo</em>); the 17 <em>Jaleo</em> articles without LLM output stay in the human-gold findings but drop out of the validation.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig05_audit_composition_fixed.svg" alt="Human-gold sample by period bin, and LLM-comparison subset counts by periodical">
+    </div>
+
+    <div class="fig-caption"><span class="n">Fig 1</span>The human-gold mode findings (Figures 1–2, 4) describe the full 180-article sample; only the LLM-validation figures and the κ bound are restricted to the 163-article LLM-comparison subset. Coverage is thin — 2.3% of the 7,087-article corpus — but balanced across both periodicals and the full span.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>07 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 08 FIG 07 — HUMAN-GOLD MODES =============== -->
+<section>
+<div class="frame" data-screen-label="08 Human-gold modes">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§6.2</span>Human-gold modes</div>
+    <div class="pageno">08 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Authenticity and criticism saturate both titles; community and pedagogy set <em style="font-style:italic;">Jaleo</em> apart.</div>
+      <div class="fnum">Figure 2 · fig07</div>
+    </div>
+    <div class="fig-sub">Counting <em>any</em> human-gold family present — not just the primary mode — authenticity sits near 45% in both titles, criticism leads <em>Candil</em> (60%), and community and pedagogy are markedly more present in <em>Jaleo</em>.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig07_any_gold_family_distribution.svg" alt="Share of the human-gold sample with each family present, Candil vs Jaleo">
+    </div>
+
+    <div class="fig-caption"><span class="n">Fig 2</span>Multi-label view of the full human-gold sample (n = 180); shares exceed 100% because articles carry several families at once. The single-label backup (appendix) understates this overlap. Human-gold only — no LLM labels.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>08 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== CLOSE-READING — SAME MODE DIFFERENT WORK =============== -->
+<section>
+<div class="frame" data-screen-label="09 Close reading">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§6.2</span>Close reading</div>
+    <div class="pageno">09 / 27</div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1760px;">
+    <h2 class="h-display sm">The same mode can do different work in each periodical.</h2>
+    <div class="accent-rule"></div>
+    <p class="lede sm" style="margin-bottom:24px;">Criticism runs through both titles — but it authorizes different things. Interpretive, paraphrased readings, not quotations.</p>
+
+    <table class="corpus">
+      <thead>
+        <tr><th>Periodical</th><th>Typical items</th><th>Modes</th><th>Authority-work</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="title"><em>Candil</em></td>
+          <td>review · opinión · homenaje · ensayo</td>
+          <td><span class="pill red">CRIT</span> + <span class="pill red">AUTH</span> / <span class="pill red">HERIT</span></td>
+          <td>Establishes evaluative authority <em>inside</em> an Andalusian flamenco public.</td>
+        </tr>
+        <tr>
+          <td class="title"><em>Jaleo</em></td>
+          <td>review · community note · pedagogy item</td>
+          <td><span class="pill">CRIT</span> + <span class="pill">COMM</span> / <span class="pill">PED</span></td>
+          <td>Translates and teaches flamenco authority <em>for</em> an Anglophone scene.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="caveat" style="margin-top:32px;">
+      <span class="dagger">†</span>
+      <div><strong>To be filled</strong> Rows are interpretive paraphrases of recurring patterns in the gold-coded articles, not direct excerpts. Exact quotations to be filled in from the gold articles.</div>
+    </div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>09 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 09 FIG 16 — SECTION ARCHITECTURE =============== -->
+<section>
+<div class="frame" data-screen-label="10 Section architecture">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§6.3</span>Corpus structure</div>
+    <div class="pageno">10 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Before we code anything, <em style="font-style:italic;">Candil</em> runs roughly 75% sectioned; <em style="font-style:italic;">Jaleo</em> only about 50% (half unsectioned).</div>
+      <div class="fnum">Figure 3 · fig16</div>
+    </div>
+    <div class="fig-sub">Section membership is read from paratext, not from semantic codes — so this contrast is the most reliable, code-independent floor for the cross-context comparison.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig16_section_architecture_over_time.svg" alt="Sectioned-article share by year, Candil vs Jaleo">
+    </div>
+
+    <div class="fig-caption"><span class="n">Fig 3</span><em>Candil</em> sustains a dense recurring-section architecture across the full run; <em>Jaleo</em> is markedly less sectioned — only about half. Detection is heuristic, but the contrast holds year over year. Corpus-structure evidence, independent of the codebook.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>10 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 10 FIG 17 — SECTION TO MODE =============== -->
+<section>
+<div class="frame" data-screen-label="11 Section to mode">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§6.4</span>Sections as genre proxies</div>
+    <div class="pageno">11 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Sections behave like weak genre proxies — suggestive, not validated.</div>
+      <div class="fnum">Figure 4 · fig17</div>
+    </div>
+    <div class="fig-sub">Within human-gold labels some sections concentrate a family — <em>Jaleo</em> Reviews → CRIT 61%, <em>Candil</em> Coplas/poemas → AUTH 50% — but the per-section samples are tiny (n = 3–11).</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig17_section_to_gold_family_heatmap.svg" alt="Heatmap of human-gold family mix within each detected section">
+    </div>
+
+    <div class="fig-caption"><span class="n">Fig 4</span>Row-normalized share of human-gold family assignments per section. The section→mode pairing is a cautious working hypothesis the full-corpus rerun must test — not a result. Human-gold only.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>11 / 27</span>
   </div>
 </div>
 </section>
@@ -804,18 +1122,18 @@
 
 <!-- =============== 05 METHODS — PIPELINE =============== -->
 <section>
-<div class="frame" data-screen-label="05 Methods — pipeline">
+<div class="frame" data-screen-label="12 Methods — pipeline">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§5</span>Methods — pipeline</div>
-    <div class="pageno">05 / 15</div>
+    <div class="section-tag"><span class="num">§6.5</span>Automated annotation</div>
+    <div class="pageno">12 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
-    <h2 class="h-display sm">A hybrid pipeline, audited end-to-end.</h2>
+    <h2 class="h-display sm">A hybrid pipeline, validated against human gold.</h2>
     <div class="accent-rule"></div>
     <p class="lede md" style="margin-bottom: 8px;">
-      Validity is part of the method, not a footnote: every quantitative claim in §6 is bounded by the audit's agreement statistics in <strong style="color:var(--red); font-style:normal; font-weight:600;">Figure 3</strong>.
+      Everything so far is human-gold and structural. The automated pipeline enters only now — and validity is part of the method: automated labels are compared against the 163-article LLM-comparison subset before any trend is treated as evidence.
     </p>
 
     <div class="pipeline">
@@ -841,643 +1159,273 @@
       </div>
       <div class="step audit">
         <div class="num">05 · gold</div>
-        <div class="name">Human audit</div>
+        <div class="name">Human-gold coding</div>
         <div class="desc">stratified blind double-coding · reconciliation · κ on family &amp; code.</div>
       </div>
     </div>
 
     <div class="caveat" style="margin-top: 28px;">
       <span class="dagger">†</span>
-      <div><strong>Constraint</strong> The LLM is given a codebook entry and a small evidence window — never an article in full, never the periodical-level identity. This is the constraint that makes annotation auditable; it is also a limit (§8 · L4).</div>
+      <div><strong>Constraint</strong> The LLM is given a codebook entry and a small evidence window — never an article in full, never the periodical-level identity. This is the constraint that makes annotation inspectable; it is also a limit (§8 · L4).</div>
     </div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>05 / 15</span>
+    <span>12 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 06 METHODS — CODEBOOK + AUDIT =============== -->
+<!-- =============== 13 FIG 08 — LLM LABEL PRIOR =============== -->
 <section>
-<div class="frame" data-screen-label="06 Methods — codebook">
+<div class="frame" data-screen-label="13 LLM label prior">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§5</span>Methods — codebook &amp; audit</div>
-    <div class="pageno">06 / 15</div>
-  </div>
-
-  <div style="flex:1; display:grid; grid-template-columns: 1fr 1fr; gap: 80px;">
-    <div>
-      <h2 class="h-display sm">Codebook v12.</h2>
-      <div class="accent-rule"></div>
-      <p class="body-p">Entman-style <em class="term">frames</em> as competing <strong class="key">modes of legitimacy</strong>. Codes are issued in <code style="font-family:var(--font-mono); font-size:18px; background:var(--paper-2); padding:0 5px;">FAMILY_NN</code> form (e.g.&nbsp;<code style="font-family:var(--font-mono); font-size:18px; background:var(--paper-2); padding:0 5px;">AUTH_03</code>, <code style="font-family:var(--font-mono); font-size:18px; background:var(--paper-2); padding:0 5px;">HERIT_11</code>).</p>
-      <p class="body-p">Each entry carries eight fields. The <em class="term">do-not-use-when</em> clauses do the heaviest work — they name the collapse-risks between adjacent families.</p>
-
-      <dl class="dl-block compact" style="grid-template-columns: 24px 1fr; margin-top: 8px;">
-        <dt>1</dt><dd>Definition</dd>
-        <dt>2</dt><dd>Use when</dd>
-        <dt>3</dt><dd><strong style="color:var(--red);">Do NOT use when</strong></dd>
-        <dt>4</dt><dd>Bilingual triggers (ES / EN)</dd>
-        <dt>5</dt><dd>Positive examples</dd>
-        <dt>6</dt><dd>Trap examples</dd>
-        <dt>7</dt><dd>Theoretical anchors</dd>
-        <dt>8</dt><dd>Version &amp; review date</dd>
-      </dl>
-    </div>
-
-    <div>
-      <h2 class="h-display sm">The audit.</h2>
-      <div class="accent-rule"></div>
-      <p class="body-p"><strong style="color:var(--red); font-weight:600;">180 articles</strong> — 90 from <em class="book">Candil</em>, 90 from <em class="book">Jaleo</em> — drawn issue-stratified across the full span and coded by hand against the same codebook the LLM saw; <strong style="color:var(--red); font-weight:600;">163</strong> had usable LLM output to compare against.</p>
-      <p class="body-p">Reconciled to gold labels. Human ↔ LLM κ at family and code level is reported in §6.3 — and it is the reliability bound that decides how far every automated claim can travel.</p>
-
-      <div style="margin-top:32px; padding: 24px; background: var(--red-soft); border-left: 4px solid var(--red);">
-        <div style="font-family:var(--font-ui); font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:10px;">Audit · stratification</div>
-        <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink);">
-          90 <em>Candil</em> + 73 <em>Jaleo</em> compared · issue-stratified · reconciled gold · 7,087 articles in the corpus &rArr; <strong style="font-weight:600; color:var(--red-deep);">2.3%</strong> coded by hand.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="slide-bottom">
-    <span>DH412 · PROJECT</span>
-    <span class="center"></span>
-    <span>06 / 15</span>
-  </div>
-</div>
-</section>
-
-
-<!-- =============== 07 FIG 1 — MODE SHARE =============== -->
-<section>
-<div class="frame" data-screen-label="07 Result — mode share">
-  <div class="slide-top">
-    <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§6.1</span>Results — mode share</div>
-    <div class="pageno">07 / 15</div>
+    <div class="section-tag"><span class="num">§6.5</span>LLM validation</div>
+    <div class="pageno">13 / 27</div>
   </div>
 
   <div class="figure-block">
     <div class="fig-hd">
-      <div class="ftitle">Primary legitimacy mode — audited gold subset.</div>
-      <div class="fnum">Figure 1</div>
+      <div class="ftitle">The LLM has a different label prior from human gold.</div>
+      <div class="fnum">Figure 5 · fig08</div>
     </div>
-    <div class="fig-sub">Share of articles whose <em>primary</em> human-coded mode falls in each family. <span style="color:var(--red); font-weight:600;">Candil n = 90</span> · <span style="color:var(--ink-2); font-weight:600;">Jaleo n = 73</span> — the hand-coded subset, <em>not</em> the full corpus. LEGIT was applied to 1 of 163 articles and is omitted.</div>
+    <div class="fig-sub">Compared with human-gold labels, the model under-calls AUTH and over-produces PED, CRIT, and COMM.</div>
 
     <div class="fig-svg">
-      <svg viewBox="0 0 1700 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Primary-mode share, Candil vs Jaleo">
-        <!-- scale: x=340 → 0% ; 28px per 1% ; ticks at 0,10,20,30,40 -->
-        <g stroke="rgba(21,17,14,0.10)" stroke-width="1">
-          <line x1="340" y1="30" x2="340" y2="500"/>
-          <line x1="620" y1="30" x2="620" y2="500"/>
-          <line x1="900" y1="30" x2="900" y2="500"/>
-          <line x1="1180" y1="30" x2="1180" y2="500"/>
-          <line x1="1460" y1="30" x2="1460" y2="500"/>
-        </g>
-        <g>
-          <text class="ax-label" x="340" y="22" text-anchor="middle">0%</text>
-          <text class="ax-label" x="620" y="22" text-anchor="middle">10</text>
-          <text class="ax-label" x="900" y="22" text-anchor="middle">20</text>
-          <text class="ax-label" x="1180" y="22" text-anchor="middle">30</text>
-          <text class="ax-label" x="1460" y="22" text-anchor="middle">40%</text>
-        </g>
-
-        <!-- legend -->
-        <g transform="translate(1180,28)">
-          <rect x="0" y="-12" width="20" height="14" fill="#c8281f"/>
-          <text x="28" y="0" font-family="Inter" font-size="15" fill="#15110e">Candil</text>
-          <rect x="130" y="-12" width="20" height="14" fill="#3a342e"/>
-          <text x="158" y="0" font-family="Inter" font-size="15" fill="#15110e">Jaleo</text>
-        </g>
-
-        <!-- groups: 78px each. Candil bar + Jaleo bar, h=28 -->
-        <!-- CRIT -->
-        <g>
-          <text class="row-label" x="320" y="74" text-anchor="end">CRIT</text>
-          <text class="row-anchor" x="320" y="96" text-anchor="end">criticism</text>
-          <rect x="340" y="52" width="1151" height="28" fill="#c8281f"/><text class="pct" x="1499" y="73">41.1%</text>
-          <rect x="340" y="84" width="806" height="28" fill="#3a342e"/><text class="pct" x="1154" y="105">28.8%</text>
-        </g>
-        <!-- AUTH -->
-        <g>
-          <text class="row-label" x="320" y="152" text-anchor="end">AUTH</text>
-          <text class="row-anchor" x="320" y="174" text-anchor="end">authenticity</text>
-          <rect x="340" y="130" width="622" height="28" fill="#c8281f"/><text class="pct" x="970" y="151">22.2%</text>
-          <rect x="340" y="162" width="806" height="28" fill="#3a342e"/><text class="pct" x="1154" y="183">28.8%</text>
-        </g>
-        <!-- COMM -->
-        <g>
-          <text class="row-label" x="320" y="230" text-anchor="end">COMM</text>
-          <text class="row-anchor" x="320" y="252" text-anchor="end">community</text>
-          <rect x="340" y="208" width="157" height="28" fill="#c8281f"/><text class="pct" x="505" y="229">5.6%</text>
-          <rect x="340" y="240" width="574" height="28" fill="#3a342e"/><text class="pct" x="922" y="261">20.5%</text>
-        </g>
-        <!-- PED -->
-        <g>
-          <text class="row-label" x="320" y="308" text-anchor="end">PED</text>
-          <text class="row-anchor" x="320" y="330" text-anchor="end">pedagogy</text>
-          <rect x="340" y="286" width="157" height="28" fill="#c8281f"/><text class="pct" x="505" y="307">5.6%</text>
-          <rect x="340" y="318" width="384" height="28" fill="#3a342e"/><text class="pct" x="732" y="339">13.7%</text>
-        </g>
-        <!-- HERIT -->
-        <g>
-          <text class="row-label" x="320" y="386" text-anchor="end">HERIT</text>
-          <text class="row-anchor" x="320" y="408" text-anchor="end">heritage</text>
-          <rect x="340" y="364" width="280" height="28" fill="#c8281f"/><text class="pct" x="628" y="385">10.0%</text>
-          <rect x="340" y="396" width="76" height="28" fill="#3a342e"/><text class="pct" x="424" y="417">2.7%</text>
-        </g>
-        <!-- OTHER -->
-        <g>
-          <text class="row-label" x="320" y="464" text-anchor="end">OTHER</text>
-          <text class="row-anchor" x="320" y="486" text-anchor="end">trad / working-class</text>
-          <rect x="340" y="442" width="434" height="28" fill="#c8281f"/><text class="pct" x="782" y="463">15.5%</text>
-          <rect x="340" y="474" width="154" height="28" fill="#3a342e"/><text class="pct" x="502" y="495">5.5%</text>
-        </g>
-      </svg>
+      <img src="../figs/fig08_gold_vs_llm_family_support.svg" alt="Human-gold and LLM support counts by family">
     </div>
 
-    <div class="fig-caption"><span class="n">Fig 1</span>Each article's primary mode is the family of its lead gold code. Criticism leads both periodicals; community is far more prominent in <em>Jaleo</em> (21% vs 6%), authenticity slightly so. <em>Other</em> = TRAD / working-class families outside the five-mode frame. Descriptive of the audited subset — corpus-wide shares await the rerun (§6.3).</div>
+    <div class="fig-caption"><span class="n">Fig 5</span>Article-label decisions on the 163-article LLM-comparison subset. This explains why aggregate LLM trends are useful for exploration but cannot be read as validated frequencies.</div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>07 / 15</span>
+    <span>13 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 08 FIG 2 — HEATMAP — HEADLINE =============== -->
+<!-- =============== 14 FIG 09 — LLM FAMILY F1 =============== -->
 <section>
-<div class="frame" data-screen-label="08 Result — heatmap (headline)">
+<div class="frame" data-screen-label="14 LLM family F1">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§6.2</span>Results — section patterns</div>
-    <div class="pageno">08 / 15</div>
+    <div class="section-tag"><span class="num">§6.5</span>LLM validation</div>
+    <div class="pageno">14 / 27</div>
   </div>
 
   <div class="figure-block">
     <div class="fig-hd">
-      <div class="ftitle">Where the modes cluster — by section.</div>
-      <div class="fnum">Figure 2</div>
+      <div class="ftitle">The model is uneven: criticism is recoverable, authenticity is not.</div>
+      <div class="fnum">Figure 6 · fig09</div>
     </div>
-    <div class="fig-sub">Two tiers. <strong style="color:var(--ink);">Top — the section architecture (full corpus):</strong> how much structure each periodical gives itself to sort content into. <strong style="color:var(--ink);">Below — the mode-mapping (audited subset, n = 3–11):</strong> which legitimacy family lands in which section — <em>suggestive associations, not estimates</em>. <span style="color:var(--red); font-weight:600;">Candil</span> red · <span style="color:var(--ink-2); font-weight:600;">Jaleo</span> ink.</div>
+    <div class="fig-sub">Family-level F1 only, ranked from strongest to weakest. The substitution pattern behind these scores is held in the appendix: many missed AUTH/HERIT/TRAD gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
 
-    <!-- FULL-CORPUS ARCHITECTURE BAND — descriptive, code-free -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 72px; margin:4px 0 8px; padding:12px 0; border-top:2px solid var(--red); border-bottom:1px solid var(--rule);">
-      <div>
-        <div style="font-family:var(--font-ui); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:5px;">Full corpus · the architecture</div>
-        <div style="font-family:var(--font-body); font-size:16px; line-height:1.4; color:var(--ink);"><strong style="color:var(--red-deep); font-weight:600;">≈1,518</strong> articles across <strong style="color:var(--red-deep); font-weight:600;">~30</strong> recurring rubrics, most spanning 17–20 of 20 years. <span style="color:var(--ink-2);">Editorial 144 · Coplas/poemas 119 · Opinión 116 · Discografía 163 · Festival 84 · Homenaje 78 · Ensayo 75 · Ponencia 71…</span></div>
-      </div>
-      <div>
-        <div style="font-family:var(--font-ui); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--ink-2); font-weight:600; margin-bottom:5px;">Full corpus · the architecture</div>
-        <div style="font-family:var(--font-body); font-size:16px; line-height:1.4; color:var(--ink);">1,410 articles, just <strong style="color:var(--ink); font-weight:600;">19</strong> functional sections. <span style="color:var(--ink-2);">Juergas 114 · Letters 67 · Announcements 62 · Reviews 62 · San Diego Scene 30…</span> — and <strong style="color:var(--red-deep); font-weight:600;">59%</strong> fall outside any recurring section.</div>
-      </div>
+    <div class="fig-svg">
+      <img src="../figs/fig09_family_f1_ranked.svg" alt="Ranked family-level F1 for LLM labels against human gold">
     </div>
 
-    <div class="fig-svg" style="align-items:stretch;">
-      <div style="width:100%; display:grid; grid-template-columns:1fr 1fr; gap:0 72px; align-content:start;">
-
-        <!-- ============ CANDIL column ============ -->
-        <div>
-          <div style="font-family:var(--font-ui); font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:6px;">Candil · Spanish · sorted across many sections</div>
-
-          <!-- Coplas -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:12px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Coplas / poemas</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 5</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">AUTH</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:100%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">5/5</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">CRIT</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:60%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">3/5</span></div>
-          </div>
-
-          <!-- Crónica -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Crónica</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 5</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">CRIT</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:80%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">4/5</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">AUTH</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:60%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">3/5</span></div>
-          </div>
-
-          <!-- Ellos los protagonistas -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Ellos, los protagonistas</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 9</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">TRAD</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:78%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">7/9</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">COMM</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:56%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">5/9</span></div>
-          </div>
-
-          <!-- Congresos -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Congresos flamencos</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 4</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">COMM</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:100%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">4/4</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">CRIT</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:75%; background:#c8281f;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">3/4</span></div>
-          </div>
-        </div>
-
-        <!-- ============ JALEO column ============ -->
-        <div>
-          <div style="font-family:var(--font-ui); font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); font-weight:600; margin-bottom:6px;">Jaleo · Anglophone · Reviews carries the load</div>
-
-          <!-- Reviews -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:12px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Reviews</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 11</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">CRIT</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:100%; background:#3a342e;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">11/11</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">AUTH</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:45%; background:#3a342e;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">5/11</span></div>
-          </div>
-
-          <!-- Festivales -->
-          <div style="border-top:1px solid var(--rule); padding-top:12px; margin-top:14px;">
-            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;"><span style="font-family:var(--font-display); font-size:22px; font-weight:600; font-style:italic; color:var(--ink);">Festivales</span><span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">n = 3</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">CRIT</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:67%; background:#3a342e;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">2/3</span></div>
-            <div style="display:grid; grid-template-columns:64px 1fr 52px; align-items:center; gap:12px; margin:5px 0;"><span style="font-family:var(--font-ui); font-size:14px; font-weight:700; letter-spacing:0.1em;">COMM</span><span style="height:14px; background:var(--paper-2); display:block;"><span style="display:block; height:14px; width:67%; background:#3a342e;"></span></span><span style="font-family:var(--font-mono); font-size:14px; color:var(--ink-3);">2/3</span></div>
-          </div>
-
-          <!-- Unsectioned note -->
-          <div style="border-top:1px solid var(--rule); padding-top:14px; margin-top:20px; background:var(--red-soft); border-left:4px solid var(--red); padding-left:18px; padding-bottom:16px; padding-right:14px;">
-            <div style="font-family:var(--font-ui); font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:8px;">The contrast</div>
-            <div style="font-family:var(--font-body); font-size:18px; line-height:1.5; color:var(--ink);"><strong style="color:var(--red-deep); font-weight:600;">56 of 90</strong> audited <em>Jaleo</em> articles sit outside any detected recurring section. Jaleo concentrates criticism in <em>Reviews</em>; it does not sort legitimacy across a section architecture the way <em>Candil</em> does.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="fig-caption"><span class="n">Fig 2</span>The <em>architecture</em> contrast (top) is corpus-wide and code-independent: <em>Candil</em> maintains a deep, persistent set of editorial rubrics; <em>Jaleo</em> leaves most content unsectioned. The <em>mode-mapping</em> bars (multi-label, need not sum to 100%) are the audited subset only — <em>Coplas/poemas</em>→authenticity, <em>crónica</em>→criticism, <em>Ellos, los protagonistas</em>→tradition + community; <em>Jaleo</em>'s <em>Reviews</em> overwhelmingly critical (11/11). The structural premise of RQ-C's <em>where-it-happens</em> contrast now holds at full corpus; the family-per-section pairing still rests on small per-section n and on family codes the audit shows are not yet reliable (§6.3).</div>
+    <div class="fig-caption"><span class="n">Fig 6</span>Family-level F1 on the 163-article LLM-comparison subset. CRIT is the strongest recoverable family; AUTH/HERIT have low recall; PED is over-recalled and imprecise. LEGIT is omitted because support is too low for stable evaluation.</div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>08 / 15</span>
+    <span>14 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 09 KEY FINDING CALLOUT =============== -->
+<!-- =============== 15 FIG 03 — VALIDITY BOUND =============== -->
 <section>
-<div class="frame" data-screen-label="09 Key finding">
+<div class="frame" data-screen-label="15 Validity bound">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§6.2</span>Section patterns · stated</div>
-    <div class="pageno">09 / 15</div>
+    <div class="section-tag"><span class="num">§6.5</span>The validity bound</div>
+    <div class="pageno">15 / 27</div>
   </div>
 
-  <div style="flex:1; display:flex; flex-direction:column; justify-content:center;">
-    <div class="kicker" style="font-size:18px;">Working hypothesis · §6.2</div>
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">The human-gold sample turns LLM output into bounded evidence.</div>
+      <div class="fnum">Figure 7 · fig03</div>
+    </div>
+    <div class="fig-sub">Human-human κ = 0.78, but human↔LLM κ is 0.22 at family level and 0.17 at code level, so LLM trends are exploratory and code-level claims are not stable.</div>
 
-    <div style="display:grid; grid-template-columns: 12px 1fr; gap: 56px; align-items: stretch;">
-      <div style="background: var(--red);"></div>
-      <div>
-        <p class="h-display md" style="margin: 0 0 36px;">
-          One periodical built an <em style="color:var(--red);">architecture</em> to sort its legitimacy work; the other largely did not. <span style="font-size:0.7em; color:var(--ink-2);">That structural asymmetry is established corpus-wide. Whether each section <em>specializes</em> in a mode is the hypothesis the rerun must test.</span>
-        </p>
-
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 64px;">
-          <div>
-            <div style="font-family:var(--font-ui); font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:4px;">Candil · distributes</div>
-            <div style="font-family:var(--font-mono); font-size:13px; color:var(--ink-3); margin-bottom:14px;">~30 rubrics · 1,518 articles · full corpus</div>
-            <dl class="dl-block" style="grid-template-columns: 280px 1fr; gap: 16px 24px; margin:0;">
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Coplas / poemas</em></dt>
-              <dd><span class="pill red">AUTH</span></dd>
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Crónica</em></dt>
-              <dd><span class="pill red">CRIT</span></dd>
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Ellos, los protagonistas</em></dt>
-              <dd><span class="pill red">TRAD</span> &middot; <span class="pill red">COMM</span></dd>
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Congresos flamencos</em></dt>
-              <dd><span class="pill red">COMM</span></dd>
-            </dl>
-          </div>
-          <div>
-            <div style="font-family:var(--font-ui); font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-2); font-weight:600; margin-bottom:4px;">Jaleo · concentrates</div>
-            <div style="font-family:var(--font-mono); font-size:13px; color:var(--ink-3); margin-bottom:14px;">19 functional sections · 1,410 articles · full corpus</div>
-            <dl class="dl-block" style="grid-template-columns: 200px 1fr; gap: 16px 24px; margin:0;">
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Reviews</em></dt>
-              <dd><span class="pill">CRIT</span> <span style="font-family:var(--font-mono); font-size:15px; color:var(--ink-3);">11/11</span></dd>
-              <dt><em style="color:var(--ink); font-style:italic; font-weight:600;">Festivales</em></dt>
-              <dd><span class="pill">CRIT</span> &middot; <span class="pill">COMM</span></dd>
-            </dl>
-            <p style="font-family:var(--font-body); font-size:18px; line-height:1.5; color:var(--ink-2); margin:18px 0 0;">…and <strong style="color:var(--red); font-weight:600;">59%</strong> of all 1,410 articles (56/90 in the audit) run outside any recurring section at all.</p>
-          </div>
-        </div>
-      </div>
+    <div class="fig-svg">
+      <img src="../figs/fig03_agreement_bound.svg" alt="Cohen's kappa bars: human-human family, human-LLM family, human-LLM code, against Landis-Koch bands">
     </div>
 
-    <div class="caveat" style="margin-top: 44px;">
+    <div class="fig-caption"><span class="n">Fig 7</span>Cohen's κ, chance-corrected, over multi-label article×label decisions on the 163-article LLM-comparison subset. Because even family-level LLM agreement is below the floor, family-level trends are <strong style="color:var(--red); font-weight:600;">exploratory at best</strong>, and specific code-level LLM claims are not stable.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>15 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 12 FIG 18 — CLAIM HIERARCHY =============== -->
+<section>
+<div class="frame" data-screen-label="16 Claim hierarchy">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§7</span>Claim hierarchy</div>
+    <div class="pageno">16 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">What we can claim depends on the evidence source — observed beats inferred.</div>
+      <div class="fnum">Figure 8 · fig18</div>
+    </div>
+    <div class="answer-grid">
+      <div class="answer-card">
+        <div class="q">A — Which modes?</div>
+        <div class="a">Human gold shows AUTH and CRIT across both titles; COMM/PED distinguish <em>Jaleo</em>; <em>Candil</em> is stronger in CRIT and heritage/tradition signals.</div>
+      </div>
+      <div class="answer-card">
+        <div class="q">B — What authority-work?</div>
+        <div class="a">Modes operate as verbs: authenticating, patrimonializing, gathering, teaching, and judging. The same mode can do different work in each periodical.</div>
+      </div>
+      <div class="answer-card">
+        <div class="q">C — Where?</div>
+        <div class="a">Corpus metadata shows the strongest structural contrast: <em>Candil</em> has dense recurring rubrics; <em>Jaleo</em> is looser and less consistently sectioned. Section→mode mapping remains a hypothesis.</div>
+      </div>
+    </div>
+    <div class="fig-sub">Human-gold mode differences and section architecture carry the argument; LLM trends remain exploratory; code-level LLM claims are not made.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig18_claims_evidence_matrix.svg" alt="Matrix of claim strength by evidence source">
+    </div>
+
+    <div class="fig-caption"><span class="n">Fig 8</span>The matrix separates what is <em>observed</em> (human gold, corpus metadata) from what is <em>inferred</em> (LLM annotations). Read it as the claim hierarchy for the whole project: the strongest cells are exactly the ones that do not depend on the LLM.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>16 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 17 CRITICAL PIPELINE =============== -->
+<section>
+<div class="frame" data-screen-label="17 Critical pipeline">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">§8</span>Critical reflection</div>
+    <div class="pageno">17 / 27</div>
+  </div>
+
+  <div style="flex:1; display:flex; flex-direction:column;">
+    <h2 class="h-display sm">The pipeline produces layered evidence, not a single measurement.</h2>
+    <div class="accent-rule"></div>
+    <p class="lede sm" style="margin-bottom:18px; max-width:1420px;">Each layer answers a different question and carries a different failure mode. The critical move is to keep them separated when making historical claims.</p>
+
+    <table class="corpus" style="font-size:20px; margin-top:6px;">
+      <thead>
+        <tr><th>Layer</th><th>What it contributes</th><th>Main limitation</th><th>Claim status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="title">Archive + OCR corpus</td>
+          <td>Scale, chronology, periodical metadata, issue/article boundaries.</td>
+          <td>Survival, selection, OCR noise, and segmentation choices shape the corpus before coding begins.</td>
+          <td><strong style="color:var(--red); font-weight:600;">Context</strong></td>
+        </tr>
+        <tr>
+          <td class="title">Paratext + sections</td>
+          <td>Corpus-wide evidence for editorial architecture and recurring rubrics.</td>
+          <td>Section detection is heuristic; <em>Jaleo</em>'s looser sectioning is partly a historical feature and partly a detection challenge.</td>
+          <td><strong style="color:var(--red); font-weight:600;">Strong, with detector caveat</strong></td>
+        </tr>
+        <tr>
+          <td class="title">Human-gold sample</td>
+          <td>Validated semantic labels for 180 articles and the central descriptive findings.</td>
+          <td>Small, stratified sample: balanced enough for comparison, too small for fine period/section estimates.</td>
+          <td><strong style="color:var(--red); font-weight:600;">Main evidence</strong></td>
+        </tr>
+        <tr>
+          <td class="title">LLM annotation</td>
+          <td>Exploratory scale: candidate trends, failure diagnostics, rerun priorities.</td>
+          <td>Different label prior; AUTH/HERIT recall failures; code-level κ = 0.17.</td>
+          <td><strong style="color:var(--red); font-weight:600;">Bounded exploration</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="caveat" style="margin-top:24px; max-width:1500px;">
       <span class="dagger">†</span>
-      <div><strong>Reliability</strong> The <em>architecture</em> asymmetry — that <em>Candil</em> has a deep recurring-section vocabulary and <em>Jaleo</em> largely does not — is a full-corpus, code-independent fact. What remains a hypothesis is the <em>section→mode pairing</em>: it rests on small per-section samples (n = 3–11) and on family codes whose human ↔ LLM agreement is not yet adequate (§6.3). The rerun must test the pairing — not the structure.</div>
+      <div><strong>Bottom line</strong> The pipeline is useful precisely because it shows where automation fails: it turns the LLM into an object of validation, not a substitute for historical judgement.</div>
     </div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>09 / 15</span>
+    <span>17 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 10 FIG 3 — AGREEMENT =============== -->
+<!-- =============== 18 HISTORICAL LIMITS =============== -->
 <section>
-<div class="frame" data-screen-label="10 Result — agreement bound">
+<div class="frame" data-screen-label="18 Historical limits">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§6.3</span>Results — the validity bound</div>
-    <div class="pageno">10 / 15</div>
-  </div>
-
-  <div class="figure-block">
-    <div class="fig-hd">
-      <div class="ftitle">Inter-rater agreement: human ↔ human, human ↔ LLM.</div>
-      <div class="fnum">Figure 3</div>
-    </div>
-    <div class="fig-sub">Cohen's κ on the 90-article <em>Candil</em> audit subset. Landis &amp; Koch (1977) bands shown behind the bars; reliability floor at κ = 0.40.</div>
-
-    <div class="fig-svg">
-      <svg viewBox="0 0 1700 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agreement bar chart">
-        <!-- bands. scale: x=320→κ=0 ; x=1620→κ=1.0 ; 130px per 0.10 -->
-        <g>
-          <rect x="320"  y="60" width="260" height="280" fill="#f6f4ef"/>
-          <rect x="580"  y="60" width="260" height="280" fill="#efebe2"/>
-          <rect x="840"  y="60" width="260" height="280" fill="#e7e0d2"/>
-          <rect x="1100" y="60" width="260" height="280" fill="#dcd2bf"/>
-          <rect x="1360" y="60" width="260" height="280" fill="#ccbfa3"/>
-        </g>
-        <g font-family="Inter" font-size="13" letter-spacing="0.18em" fill="#6c6258" text-anchor="middle">
-          <text x="450"  y="50">SLIGHT</text>
-          <text x="710"  y="50">FAIR</text>
-          <text x="970"  y="50">MODERATE</text>
-          <text x="1230" y="50">SUBSTANTIAL</text>
-          <text x="1490" y="50">ALMOST PERFECT</text>
-        </g>
-
-        <!-- baseline -->
-        <line x1="320" y1="340" x2="1620" y2="340" stroke="rgba(21,17,14,0.55)" stroke-width="1"/>
-        <g font-family="JetBrains Mono" font-size="14" fill="#6c6258" text-anchor="middle">
-          <text x="320"  y="364">κ = 0</text>
-          <text x="580"  y="364">.20</text>
-          <text x="840"  y="364">.40</text>
-          <text x="1100" y="364">.60</text>
-          <text x="1360" y="364">.80</text>
-          <text x="1620" y="364">1.00</text>
-        </g>
-
-        <!-- Reliability floor at κ=0.40 -->
-        <line x1="840" y1="60" x2="840" y2="340" stroke="#c8281f" stroke-width="2" stroke-dasharray="5 4"/>
-        <text x="848" y="76" font-family="Inter" font-size="13" fill="#c8281f" font-weight="600" letter-spacing="0.12em">RELIABILITY FLOOR</text>
-
-        <!-- Bar 1: human-human family, κ=0.78 -->
-        <g>
-          <text class="row-label" x="300" y="105" text-anchor="end" fill="#15110e">HUMAN ↔ HUMAN</text>
-          <text class="row-anchor" x="300" y="128" text-anchor="end">family level</text>
-          <rect x="320" y="86" width="1014" height="48" fill="#3a342e"/>
-          <text class="pct lg" x="1350" y="120" font-weight="600" fill="#15110e">κ = 0.78</text>
-        </g>
-        <!-- Bar 2: human-LLM family, κ=0.48 -->
-        <g>
-          <text class="row-label" x="300" y="185" text-anchor="end" fill="#15110e">HUMAN ↔ LLM</text>
-          <text class="row-anchor" x="300" y="208" text-anchor="end">family level</text>
-          <rect x="320" y="166" width="624" height="48" fill="#c8281f"/>
-          <text class="pct lg" x="960" y="200" font-weight="600" fill="#15110e">κ = 0.48</text>
-        </g>
-        <!-- Bar 3: human-LLM code, κ=0.21 — hatched -->
-        <g>
-          <text class="row-label" x="300" y="265" text-anchor="end" fill="#15110e">HUMAN ↔ LLM</text>
-          <text class="row-anchor" x="300" y="288" text-anchor="end">code level (FAMILY_NN)</text>
-          <defs>
-            <pattern id="hatch" patternUnits="userSpaceOnUse" width="9" height="9" patternTransform="rotate(45)">
-              <rect width="9" height="9" fill="#c8281f"/>
-              <line x1="0" y1="0" x2="0" y2="9" stroke="#8a160f" stroke-width="3"/>
-            </pattern>
-          </defs>
-          <rect x="320" y="246" width="273" height="48" fill="url(#hatch)" stroke="#8a160f" stroke-width="1.5"/>
-          <text class="pct lg" x="609" y="280" font-weight="600" fill="#15110e">κ = 0.21</text>
-          <text x="730" y="282" font-family="Inter" font-size="14" font-weight="600" font-style="italic" fill="#8a160f">→ caveat on all FAMILY_NN-level claims</text>
-        </g>
-
-        <!-- Annotations -->
-        <g>
-          <text x="320" y="408" font-family="Inter" font-size="14" letter-spacing="0.16em" fill="#6c6258" text-transform="uppercase">Interpretation, in one line:</text>
-          <text x="320" y="438" font-family="EB Garamond, serif" font-style="italic" font-size="22" fill="#15110e">family-level claims are defensible · code-level claims are not — yet.</text>
-        </g>
-      </svg>
-    </div>
-
-    <div class="fig-caption"><span class="n">Fig 3</span>The contrast between the two LLM bars is load-bearing. Family-level claims meet the reliability floor (moderate); code-level claims (which sub-variety of authenticity, which register of community) do not. The same split holds across the full <strong style="color:var(--ink); font-weight:600;">163-article audit</strong> (Candil + Jaleo): family micro-F1 ≈ 0.44 vs code micro-F1 ≈ 0.23. Family-level κ is also chance-inflated by the unequal prior — see §8 · L1.</div>
-  </div>
-
-  <div class="slide-bottom">
-    <span>DH412 · PROJECT</span>
-    <span class="center"></span>
-    <span>10 / 15</span>
-  </div>
-</div>
-</section>
-
-
-<!-- =============== 11 FIG 4 — TEMPORAL =============== -->
-<section>
-<div class="frame" data-screen-label="11 Result — temporal">
-  <div class="slide-top">
-    <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§6.4</span>Results — temporal trends</div>
-    <div class="pageno">11 / 15</div>
-  </div>
-
-  <div class="figure-block">
-    <div class="fig-hd">
-      <div class="ftitle">Mode share over time, <em style="font-style:italic;">Candil</em> 1979–1998.</div>
-      <div class="fnum">Figure 4</div>
-    </div>
-    <div class="fig-sub">Annual share, smoothed (3-year moving average). Y-axis fixed 0–35% across panels. <span class="pill red" style="font-size:11px; padding:1px 6px 2px;">HERIT</span> is the only strong directional shift.</div>
-
-    <div class="fig-svg">
-      <svg viewBox="0 0 1700 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Temporal small multiples">
-        <!-- 5 panels: each 304 wide. starting x=20 -->
-        <!-- coord helpers per panel: panel width 304; line area is 304 wide × 320 tall starting at y=50.
-             year scale: x = base + ((year-1979)/19)*288 (leaves 16 right pad)
-             pct scale: y = 370 - (pct/35)*300  → 0%=370, 35%=70 -->
-
-        <!-- PANEL 1: AUTH -->
-        <g transform="translate(20,0)">
-          <text font-family="Inter" font-size="18" font-weight="700" fill="#15110e" letter-spacing="0.10em" x="0" y="30">AUTH</text>
-          <text font-family="JetBrains Mono" font-size="14" fill="#6c6258" x="304" y="30" text-anchor="end">28 → 16%</text>
-          <line x1="0" y1="370" x2="304" y2="370" stroke="rgba(21,17,14,0.45)" stroke-width="1"/>
-          <line x1="0" y1="50" x2="0" y2="370" stroke="rgba(21,17,14,0.10)" stroke-width="1"/>
-          <!-- area + line; pts 1979:28→y=130, 83:25→y=156, 87:21→y=190, 91:18→y=216, 95:17→y=224, 98:16→y=233 -->
-          <path d="M 0,130 L 60.6,156 L 121.3,190 L 181.9,216 L 242.5,224 L 288,233 L 288,370 L 0,370 Z" fill="#fbeae8"/>
-          <path d="M 0,130 L 60.6,156 L 121.3,190 L 181.9,216 L 242.5,224 L 288,233" fill="none" stroke="#c8281f" stroke-width="3"/>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="0" y="395">'79</text>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="288" y="395" text-anchor="end">'98</text>
-          <!-- Y axis ticks -->
-          <text font-family="JetBrains Mono" font-size="11" fill="#a39a8e" x="-6" y="374" text-anchor="end">0</text>
-          <text font-family="JetBrains Mono" font-size="11" fill="#a39a8e" x="-6" y="74" text-anchor="end">35%</text>
-        </g>
-
-        <!-- PANEL 2: HERIT -->
-        <g transform="translate(348,0)">
-          <text font-family="Inter" font-size="18" font-weight="700" fill="#15110e" letter-spacing="0.10em" x="0" y="30">HERIT</text>
-          <text font-family="JetBrains Mono" font-size="14" fill="#c8281f" font-weight="600" x="304" y="30" text-anchor="end">11 → 29%  ↑</text>
-          <line x1="0" y1="370" x2="304" y2="370" stroke="rgba(21,17,14,0.45)" stroke-width="1"/>
-          <line x1="0" y1="50" x2="0" y2="370" stroke="rgba(21,17,14,0.10)" stroke-width="1"/>
-          <!-- pts 79:11→y=276, 83:13→y=259, 87:18→y=216, 91:23→y=173, 95:27→y=139, 98:29→y=121 -->
-          <path d="M 0,276 L 60.6,259 L 121.3,216 L 181.9,173 L 242.5,139 L 288,121 L 288,370 L 0,370 Z" fill="#f3dad7"/>
-          <path d="M 0,276 L 60.6,259 L 121.3,216 L 181.9,173 L 242.5,139 L 288,121" fill="none" stroke="#c8281f" stroke-width="4"/>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="0" y="395">'79</text>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="288" y="395" text-anchor="end">'98</text>
-          <!-- end-point marker -->
-          <circle cx="288" cy="121" r="6" fill="#c8281f"/>
-        </g>
-
-        <!-- PANEL 3: COMM -->
-        <g transform="translate(676,0)">
-          <text font-family="Inter" font-size="18" font-weight="700" fill="#15110e" letter-spacing="0.10em" x="0" y="30">COMM</text>
-          <text font-family="JetBrains Mono" font-size="14" fill="#6c6258" x="304" y="30" text-anchor="end">14 → 16%</text>
-          <line x1="0" y1="370" x2="304" y2="370" stroke="rgba(21,17,14,0.45)" stroke-width="1"/>
-          <line x1="0" y1="50" x2="0" y2="370" stroke="rgba(21,17,14,0.10)" stroke-width="1"/>
-          <!-- pts 79:14→y=250, 83:14.5→y=246, 87:15→y=241, 91:15.5→y=237, 95:16→y=233, 98:16→y=233 -->
-          <path d="M 0,250 L 60.6,246 L 121.3,241 L 181.9,237 L 242.5,233 L 288,233 L 288,370 L 0,370 Z" fill="#fbeae8"/>
-          <path d="M 0,250 L 60.6,246 L 121.3,241 L 181.9,237 L 242.5,233 L 288,233" fill="none" stroke="#c8281f" stroke-width="3"/>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="0" y="395">'79</text>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="288" y="395" text-anchor="end">'98</text>
-        </g>
-
-        <!-- PANEL 4: PED -->
-        <g transform="translate(1004,0)">
-          <text font-family="Inter" font-size="18" font-weight="700" fill="#15110e" letter-spacing="0.10em" x="0" y="30">PED</text>
-          <text font-family="JetBrains Mono" font-size="14" fill="#6c6258" x="304" y="30" text-anchor="end">11 → 13%</text>
-          <line x1="0" y1="370" x2="304" y2="370" stroke="rgba(21,17,14,0.45)" stroke-width="1"/>
-          <line x1="0" y1="50" x2="0" y2="370" stroke="rgba(21,17,14,0.10)" stroke-width="1"/>
-          <path d="M 0,276 L 60.6,272 L 121.3,267 L 181.9,259 L 242.5,256 L 288,256 L 288,370 L 0,370 Z" fill="#fbeae8"/>
-          <path d="M 0,276 L 60.6,272 L 121.3,267 L 181.9,259 L 242.5,256 L 288,256" fill="none" stroke="#c8281f" stroke-width="3"/>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="0" y="395">'79</text>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="288" y="395" text-anchor="end">'98</text>
-        </g>
-
-        <!-- PANEL 5: CRIT -->
-        <g transform="translate(1332,0)">
-          <text font-family="Inter" font-size="18" font-weight="700" fill="#15110e" letter-spacing="0.10em" x="0" y="30">CRIT</text>
-          <text font-family="JetBrains Mono" font-size="14" fill="#6c6258" x="304" y="30" text-anchor="end">21 → 26%</text>
-          <line x1="0" y1="370" x2="304" y2="370" stroke="rgba(21,17,14,0.45)" stroke-width="1"/>
-          <line x1="0" y1="50" x2="0" y2="370" stroke="rgba(21,17,14,0.10)" stroke-width="1"/>
-          <!-- pts 79:21→y=190, 83:22→y=181, 87:23→y=173, 91:24→y=164, 95:25→y=156, 98:26→y=147 -->
-          <path d="M 0,190 L 60.6,181 L 121.3,173 L 181.9,164 L 242.5,156 L 288,147 L 288,370 L 0,370 Z" fill="#f3dad7"/>
-          <path d="M 0,190 L 60.6,181 L 121.3,173 L 181.9,164 L 242.5,156 L 288,147" fill="none" stroke="#c8281f" stroke-width="3"/>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="0" y="395">'79</text>
-          <text font-family="JetBrains Mono" font-size="13" fill="#6c6258" x="288" y="395" text-anchor="end">'98</text>
-        </g>
-      </svg>
-    </div>
-
-    <div class="fig-caption"><span class="n">Fig 4</span>HERIT's rise is consistent with the patrimonialization push of the late 1980s and the run-up to flamenco's later UNESCO recognition. Shown for <em>Candil</em> only: <em>Jaleo</em>'s run ends in 1989 and a matched trend panel awaits the corpus-wide rerun. As §6.3 makes clear: directional shift is reliable at family level — specific within-family code shifts are not.</div>
-  </div>
-
-  <div class="slide-bottom">
-    <span>DH412 · PROJECT</span>
-    <span class="center"></span>
-    <span>11 / 15</span>
-  </div>
-</div>
-</section>
-
-
-<!-- =============== 12 INTERPRETATION =============== -->
-<section>
-<div class="frame" data-screen-label="12 Interpretation">
-  <div class="slide-top">
-    <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§7</span>Interpretation</div>
-    <div class="pageno">12 / 15</div>
-  </div>
-
-  <div style="flex:1; display:flex; flex-direction:column; justify-content:center; max-width: 1680px;">
-    <h2 class="h-display sm">The interesting thing is not which mode wins — but where each is performed.</h2>
-    <div class="accent-rule"></div>
-
-    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 36px;">
-      <div>
-        <div class="kicker">Fig 1 · description</div>
-        <p class="body-p" style="font-size:21px; line-height:1.55;">
-          Both periodicals lead with criticism; <em class="book">Candil</em> leans more on authenticity, <em class="book">Jaleo</em> far more on community. A description, not yet a claim.
-        </p>
-      </div>
-      <div>
-        <div class="kicker">Fig 2 · the claim</div>
-        <p class="body-p" style="font-size:21px; line-height:1.55;">
-          A periodical's recurring architecture is <em class="term">scaffolding</em> for legitimacy work — but the two sort it differently: <em class="book">Candil</em> distributes it across many sections, <em class="book">Jaleo</em> concentrates it in <em>Reviews</em>.
-        </p>
-      </div>
-      <div>
-        <div class="kicker">Fig 3 · the bound</div>
-        <p class="body-p" style="font-size:21px; line-height:1.55;">
-          Family-level claims are defensible. Code-level claims — which sub-variety of authenticity, which register of community — are not, yet.
-        </p>
-      </div>
-    </div>
-
-    <div style="margin-top: 64px; padding: 32px 36px; background: var(--red-soft); border-left: 6px solid var(--red);">
-      <div style="font-family:var(--font-display); font-size:30px; line-height:1.3; color:var(--ink); font-weight:500; font-style:italic;">
-        Structure is the finding. Totals are the description. The validity bound says how far the claim can travel.
-      </div>
-    </div>
-  </div>
-
-  <div class="slide-bottom">
-    <span>DH412 · PROJECT</span>
-    <span class="center"></span>
-    <span>12 / 15</span>
-  </div>
-</div>
-</section>
-
-
-<!-- =============== 13 LIMITS =============== -->
-<section>
-<div class="frame" data-screen-label="13 Limits">
-  <div class="slide-top">
-    <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§8</span>Conclusion — limits</div>
-    <div class="pageno">13 / 15</div>
+    <div class="section-tag"><span class="num">§8</span>Critical reflection</div>
+    <div class="pageno">18 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
-    <h2 class="h-display sm">What the findings <em style="font-style:italic; color:var(--red);">cannot</em> say.</h2>
+    <h2 class="h-display sm">The historical object is mediated print authority, not flamenco itself.</h2>
     <div class="accent-rule"></div>
+    <p class="lede sm" style="margin-bottom:10px; max-width:1400px;">The evidence supports claims about how two periodicals organized and authorized flamenco discourse. It does not directly measure performance practice, reception, or community life outside the page.</p>
 
-    <div style="flex:1; display:flex; flex-direction:column; gap: 18px; margin-top: 24px;">
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">L1</div>
+    <div style="flex:1; display:flex; flex-direction:column; gap: 10px; margin-top: 12px;">
+      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
+        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">H1</div>
         <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Code-level LLM reliability is low.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">Retrieval over-triggers a small set of broad codes and under-retrieves <span class="pill">AUTH</span>; family-level agreement is also <em>chance-inflated</em> by the unequal prior. All <code style="font-family:var(--font-mono); font-size:17px; background:var(--paper-2); padding:0 4px;">FAMILY_NN</code>-level automated claims must be reread under this bound.</div>
+          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Print elites are overrepresented.</div>
+          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">The corpus sees editors, critics, contributors, and institutional voices more clearly than dancers, students, audience members, informal gatherings, or oral transmission outside publication.</div>
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">L2</div>
+      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
+        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">H2</div>
         <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">The cross-context comparison is uneven.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">Both periodicals are now audited (90 + 73), but <em class="book">Jaleo</em>'s recurring-section architecture is only sparsely detected — most audited <em class="book">Jaleo</em> articles fall outside any named section — so the Spanish/Anglophone <em>where</em>-comparison is thinner on the <em class="book">Jaleo</em> side.</div>
+          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Spanish/Anglophone comparison is not symmetrical.</div>
+          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;"><em>Candil</em> writes from inside an Andalusian institution; <em>Jaleo</em> writes from a diasporic/Anglophone learning scene. Difference in mode emphasis may reflect genre ecology, translation work, and institutional position as much as national context.</div>
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">L3</div>
+      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
+        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">H3</div>
         <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Section detection is heuristic.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">The paratextual-scaffolding result in <strong style="font-style:normal;">Fig 2</strong> inherits whatever bias the recurring-section detector carries; the detector has not yet been validated on its own gold set.</div>
+          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Categories are analytic translations.</div>
+          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">AUTH, HERIT, COMM, PED, and CRIT help compare discourse, but they flatten rhetoric, irony, genre, and language-specific idioms. Close reading is required before treating a mode as an historical intention.</div>
         </div>
       </div>
 
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">L4</div>
+      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 20px 0; align-items: baseline;">
+        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">H4</div>
         <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Trigger windows narrow the evidence the model sees.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">The LLM is shown a passage around a keyword hit, not the article. The constraint that makes annotation auditable also forecloses article-level judgement.</div>
+          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Section architecture is historical evidence, not neutral metadata.</div>
+          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">Rubrics are editorial acts: they sort what counts as review, essay, news, memory, pedagogy, or community. The strongest <em>where</em> finding is therefore about periodical form as authority-work.</div>
         </div>
       </div>
     </div>
@@ -1486,76 +1434,69 @@
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>13 / 15</span>
+    <span>18 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 14 DIRECTIONS =============== -->
+<!-- =============== 19 FUTURE WORK =============== -->
 <section>
-<div class="frame" data-screen-label="14 Directions">
+<div class="frame" data-screen-label="19 Future work">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
-    <div class="section-tag"><span class="num">§8</span>Conclusion — directions</div>
-    <div class="pageno">14 / 15</div>
+    <div class="section-tag"><span class="num">§9</span>Future work</div>
+    <div class="pageno">19 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
-    <h2 class="h-display sm" style="color: var(--red);">What comes next.</h2>
+    <h2 class="h-display sm" style="color: var(--red);">Future work: make the pipeline more historical, not just more automated.</h2>
     <div class="accent-rule"></div>
 
-    <div style="flex:1; display:flex; flex-direction:column; gap: 18px; margin-top: 24px;">
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">D1</div>
-        <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Map legitimacy modes onto the section architecture — corpus-wide.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">The section <em>architecture</em> is already established for the full corpus. What the rerun unlocks is lifting the section→mode <em>pairing</em> from the audited subset to the whole run. <em class="book">Jaleo</em>'s sparser, functional sectioning is a genuine feature of the periodical — not a detection gap to be closed — so the task is validating the mapping, not forcing <em class="book">Jaleo</em> to mirror <em class="book">Candil</em>.</div>
-        </div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 54px; flex:1; margin-top:10px;">
+      <div>
+        <div class="sub-h">Methodological next steps</div>
+        <dl class="dl-block" style="grid-template-columns: 62px 1fr; gap: 16px 22px;">
+          <dt>M1</dt><dd><strong>Validate section detection.</strong> Build a section gold set, report precision/recall, and separate real unsectionedness from detector misses.</dd>
+          <dt>M2</dt><dd><strong>Expand human gold.</strong> Add targeted samples for weak cells: <em>Jaleo</em> named sections, late <em>Candil</em>, AUTH/HERIT-heavy articles, and small rubrics.</dd>
+          <dt>M3</dt><dd><strong>Rerun annotation at article level.</strong> Let the model read the article first, then ask codebook questions; keep trigger-window labels as a retrieval trace.</dd>
+          <dt>M4</dt><dd><strong>Retune retrieval.</strong> Use false negatives from the LLM-comparison subset to repair AUTH/HERIT under-retrieval and PED/CRIT over-triggering.</dd>
+        </dl>
       </div>
 
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">D2</div>
-        <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Move from trigger windows to article-level judgement.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">A two-stage protocol: the LLM first reads the article, then is asked the codebook questions. The existing trigger-window output is retained as a check.</div>
-        </div>
+      <div>
+        <div class="sub-h">Historical next steps</div>
+        <dl class="dl-block" style="grid-template-columns: 62px 1fr; gap: 16px 22px;">
+          <dt>H1</dt><dd><strong>Return to articles.</strong> Pair each quantitative contrast with quoted close readings, especially where the same mode does different authority-work.</dd>
+          <dt>H2</dt><dd><strong>Follow actors and institutions.</strong> Link authors, peñas, schools, festivals, record labels, and correspondence to the legitimacy modes they mobilize.</dd>
+          <dt>H3</dt><dd><strong>Compare peer periodicals.</strong> Test whether <em>Candil</em>'s dense rubric system generalizes to <em>La Nueva Alborea</em>, other magazines.</dd>
+          <dt>H4</dt><dd><strong>Publish the apparatus.</strong> Release the codebook, human-gold labels, section schema, and validation reports so the historical claims remain inspectable.</dd>
+        </dl>
       </div>
+    </div>
 
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">D3</div>
-        <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Improve candidate retrieval.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;">The current regex/keyword index is the upstream cause of <span class="pill">AUTH</span> under-retrieval. A re-tuned bilingual index, jointly trained with the codebook's <em>do-not-use-when</em> clauses, is the most leveraged next change.</div>
-        </div>
-      </div>
-
-      <div style="display:grid; grid-template-columns: 80px 1fr; gap: 24px; padding: 28px 0; align-items: baseline;">
-        <div style="font-family:var(--font-ui); font-size:18px; letter-spacing:0.20em; font-weight:700; color:var(--red); text-transform:uppercase;">D4</div>
-        <div>
-          <div style="font-family:var(--font-display); font-size:30px; font-weight:600; color:var(--ink); margin-bottom: 8px;">Extend to peer periodicals.</div>
-          <div style="font-family:var(--font-body); font-size:20px; line-height:1.5; color:var(--ink-2); max-width: 1400px;"><em class="book">El Olivo</em>, <em class="book">Flamenco</em> (LSE), <em class="book">La Caña</em> — to test whether the paratextual-scaffolding finding generalizes beyond <em class="book">Candil</em>'s house style.</div>
-        </div>
-      </div>
+    <div class="caveat" style="max-width:1500px;">
+      <span class="dagger">†</span>
+      <div><strong>Priority</strong> The next version should not ask whether the LLM can replace reading. It should ask where computation can point us toward better reading.</div>
     </div>
   </div>
 
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>14 / 15</span>
+    <span>19 / 27</span>
   </div>
 </div>
 </section>
 
 
-<!-- =============== 15 END / REFS =============== -->
-<section>
-<div class="frame" data-screen-label="15 References">
+=============== 15 END / REFS ===============
+<!-- <section>
+<div class="frame" data-screen-label="20 References">
   <div class="slide-top">
     <div class="mark"><span class="sq"></span> DH412</div>
     <div class="section-tag"><span class="num">§</span>Selected references &amp; thanks</div>
-    <div class="pageno">15 / 15</div>
+    <div class="pageno">20 / 27</div>
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
@@ -1594,7 +1535,301 @@
   <div class="slide-bottom">
     <span>DH412 · PROJECT</span>
     <span class="center"></span>
-    <span>15 / 15</span>
+    <span>20 / 27</span>
+  </div>
+</div>
+</section> -->
+<section>
+  <div class="frame" data-screen-label="20 References">
+    <div class="slide-top">
+      <div class="mark"><span class="sq"></span> DH412</div>
+      <div class="section-tag"><span class="num">§</span>Selected references &amp; thanks</div>
+      <div class="pageno">20 / 27</div>
+    </div>
+  
+    <div style="flex:1; display:flex; flex-direction:column;">
+      <h2 class="h-display sm">Selected references.</h2>
+      <div class="accent-rule"></div>
+  
+      <div class="refs-cols">
+        <p class="ref"><span class="au">Bendix, R.</span> <span class="yr">(1997)</span>. <em>In Search of Authenticity: The Formation of Folklore Studies</em>. University of Wisconsin Press.</p>
+                
+        <p class="ref"><span class="au">Casas-Mas, A., Pozo, J. I., &amp; Montero, I.</span> <span class="yr">(2022)</span>. Oral tradition as context for learning music from 4E cognition compared with literacy cultures: Case studies of flamenco guitar apprenticeship. <em>Frontiers in Psychology</em>, 13, Article 733615.</p>
+                
+        <p class="ref"><span class="au">Cruces Roldán, C.</span> <span class="yr">(2023)</span>. Flamenco heritage and the politics of identity. In M. Machin-Autenrieth et al. (Eds.), <em>Music and the Making of Portugal and Spain</em> (pp. 267–286). University of Illinois Press.</p>
+        
+        <p class="ref"><span class="au">Entman, R. M.</span> <span class="yr">(1993)</span>. Framing: Toward clarification of a fractured paradigm. <em>Journal of Communication</em>, 43(4), 51–58.</p>
+        
+        <p class="ref"><span class="au">Genette, G.</span> <span class="yr">(2001)</span>. <em>Paratexts: Thresholds of Interpretation</em>. Cambridge University Press.</p>
+                
+        <p class="ref"><span class="au">Handler, R. &amp; Linnekin, J.</span> <span class="yr">(1984)</span>. Tradition, genuine or spurious. <em>Journal of American Folklore</em>, 97(385), 273.</p>
+                
+        <p class="ref"><span class="au">Kirshenblatt-Gimblett, B.</span> <span class="yr">(2014)</span>. Intangible heritage as metacultural production. <em>Museum International</em>, 66(1–4), 163–174.</p>
+        
+        <p class="ref"><span class="au">Kunjar, S., et al.</span> <span class="yr">(2025)</span>. Computational frame analysis revisited: On LLMs for studying news coverage. <em>arXiv</em>.</p>
+        
+        <p class="ref"><span class="au">Landis, J. R. &amp; Koch, G. G.</span> <span class="yr">(1977)</span>. The measurement of observer agreement for categorical data. <em>Biometrics</em>, 33(1), 159–174.</p>
+        
+        <p class="ref"><span class="au">Latham, S., &amp; Scholes, R.</span> <span class="yr">(2006)</span>. The rise of periodical studies. <em>PMLA</em>, 121(2), 517–531.</p>
+        
+        <p class="ref"><span class="au">Malefyt, T. de W.</span> <span class="yr">(1998)</span>. &lsquo;Inside&rsquo; and &lsquo;Outside&rsquo; Spanish flamenco. <em>Anthropological Quarterly</em>, 71(2), 63.</p>
+                
+        <p class="ref"><span class="au">Pozo, J. I., Bautista, A., &amp; Torrado, J. A.</span> <span class="yr">(2008)</span>. El aprendizaje y la enseñanza de la interpretación musical: cambiando las concepciones y las prácticas. <em>Cultura y Educación</em>, 20(1), 5–15.</p>
+        
+        <p class="ref"><span class="au">Skare, R.</span> <span class="yr">(2020)</span>. Paratext. <em>Knowledge Organization</em>, 47(6), 511–519.</p>
+        
+        <p class="ref"><span class="au">Smith, L.</span> <span class="yr">(2006)</span>. <em>Uses of Heritage</em>. Routledge.</p>
+        
+        <p class="ref"><span class="au">Washabaugh, W.</span> <span class="yr">(1996)</span>. <em>Flamenco: Passion, Politics and Popular Culture</em>. Routledge.</p>
+        
+        <p class="ref"><span class="au">Wieczorek, M.</span> <span class="yr">(2018)</span>. Flamenco: Współczesne dylematy badawcze. <em>Łódzkie Studia Etnograficzne</em>, 57, 75–92.</p>
+        
+      </div>
+  
+      <!-- <div style="margin-top:auto; display:grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; padding-top: 36px; border-top: 1.5px solid var(--rule-heavy);"> -->
+        <!-- <div>
+          <div style="font-family:var(--font-ui); font-size:14px; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); font-weight:600; margin-bottom:14px;">DH412 · PROJECT · Group Research Project</div>
+          <div style="font-family:var(--font-display); font-size:32px; line-height:1.3; color:var(--ink); font-weight:500; font-style:italic; max-width: 1200px;">
+            Periodicals do not report on a tradition. They construct one — and they do it section by section.
+          </div>
+        </div> -->
+      <div style="display:flex; align-items:center; gap:18px;">
+        <span style="width: 24px; height: 24px; background: var(--red); display: inline-block;"></span>
+        <span style="font-family:var(--font-ui); font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:var(--ink-3);">Thank you.</span>
+      </div>
+      <!-- </div> -->
+    </div>
+  
+    <div class="slide-bottom">
+      <span>DH412 · PROJECT</span>
+      <span class="center"></span>
+      <span>20 / 27</span>
+    </div>
+  </div>
+  </section>
+
+
+<!-- =============== 16 APPENDIX DIVIDER =============== -->
+<section>
+<div class="frame" data-screen-label="21 Appendix">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag">Appendix</div>
+    <div class="pageno">21 / 27</div>
+  </div>
+
+  <div class="end-wrap">
+    <div class="kicker">Appendix</div>
+    <h2 class="h-display lg" style="max-width:1500px;">Backup &amp; diagnostics.</h2>
+    <div class="accent-rule"></div>
+    <p class="lede lg" style="margin-top:18px;">Backup figures held in reserve: one single-label mode view, one semantic substitution diagnostic, and four robustness checks kept outside the main talk.</p>
+
+    <div class="dl-block" style="grid-template-columns: 130px 1fr; margin-top:40px;">
+      <dt>A1</dt><dd>Primary human-gold mode — single-label backup to Figure&nbsp;2 <span style="color:var(--ink-3);">(fig01)</span></dd>
+      <dt>A2</dt><dd>LLM substitution pattern — missed gold family vs extra LLM family <span style="color:var(--ink-3);">(fig10)</span></dd>
+      <dt>A3</dt><dd>Retrieval and annotation attrition <span style="color:var(--ink-3);">(fig12)</span></dd>
+      <dt>A4</dt><dd>Article length vs agreement <span style="color:var(--ink-3);">(fig13)</span></dd>
+      <dt>A5</dt><dd>Agreement by periodical and confidence <span style="color:var(--ink-3);">(fig14)</span></dd>
+      <dt>A6</dt><dd>Agreement inside vs outside sections <span style="color:var(--ink-3);">(fig15)</span></dd>
+    </div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>21 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 17 APPENDIX — FIG 01 =============== -->
+<section>
+<div class="frame" data-screen-label="22 Appendix · primary mode">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A1</span>Appendix · single-label backup</div>
+    <div class="pageno">22 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Primary human-gold mode — single-label backup.</div>
+      <div class="fnum">Appendix · fig01</div>
+    </div>
+    <div class="fig-sub">Each article reduced to its single primary human-gold mode on the full sample (n = 180); simpler than the multi-label Figure&nbsp;2, but it discards the family overlap that view captures.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig01_primary_mode_share.svg" alt="Primary human-gold mode share by periodical">
+    </div>
+
+    <div class="fig-caption"><span class="n">A1</span>Descriptive of the human-gold sample. Use only when a one-family-per-article summary is needed; Figure&nbsp;2 is the truer picture.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>22 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 18 APPENDIX — FIG 10 =============== -->
+<section>
+<div class="frame" data-screen-label="23 Appendix · substitution pattern">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A2</span>Appendix · substitution pattern</div>
+    <div class="pageno">23 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">The model substitutes one legitimacy frame for another.</div>
+      <div class="fnum">Appendix · fig10</div>
+    </div>
+    <div class="fig-sub">Many missed AUTH/HERIT/TRAD gold labels are replaced by extra PED, CRIT, or COMM labels.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig10_missed_extra_family_heatmap.svg" alt="Heatmap of missed human-gold family versus extra LLM family">
+    </div>
+
+    <div class="fig-caption"><span class="n">A2</span>This is the semantic failure mode: the model often detects legitimacy discourse but assigns the wrong family.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>23 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 19 APPENDIX — FIG 12 =============== -->
+<section>
+<div class="frame" data-screen-label="24 Appendix · attrition">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A3</span>Appendix · attrition</div>
+    <div class="pageno">24 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Retrieval and annotation attrition show where labels disappear.</div>
+      <div class="fnum">Appendix · fig12</div>
+    </div>
+    <div class="fig-sub">A robustness diagnostic for the automated pipeline, kept outside the main argument.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig12_retrieval_annotation_attrition.svg" alt="Retrieval and annotation attrition diagnostic">
+    </div>
+
+    <div class="fig-caption"><span class="n">A3</span>Diagnostic backup only; it does not change the main validity bound.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>24 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 20 APPENDIX — FIG 13 =============== -->
+<section>
+<div class="frame" data-screen-label="25 Appendix · length vs reliability">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A4</span>Appendix · length vs reliability</div>
+    <div class="pageno">25 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Article length does not explain the LLM agreement problem.</div>
+      <div class="fnum">Appendix · fig13</div>
+    </div>
+    <div class="fig-sub">A robustness diagnostic for whether longer articles systematically depress article-level family F1.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig13_length_vs_agreement.svg" alt="Article length versus article-level agreement">
+    </div>
+
+    <div class="fig-caption"><span class="n">A4</span>Diagnostic backup only; the main deck does not rely on length-adjusted LLM results.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>25 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 21 APPENDIX — FIG 14 =============== -->
+<section>
+<div class="frame" data-screen-label="26 Appendix · confidence diagnostics">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A5</span>Appendix · confidence diagnostics</div>
+    <div class="pageno">26 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">The reliability problem persists across periodical and confidence strata.</div>
+      <div class="fnum">Appendix · fig14</div>
+    </div>
+    <div class="fig-sub">A robustness diagnostic for whether low agreement is confined to one title or one human-confidence stratum.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig14_agreement_by_periodical_confidence.svg" alt="Agreement by periodical and human confidence">
+    </div>
+
+    <div class="fig-caption"><span class="n">A5</span>Diagnostic backup only; it supports the same bounded-evidence claim as Figure&nbsp;7.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>26 / 27</span>
+  </div>
+</div>
+</section>
+
+
+<!-- =============== 22 APPENDIX — FIG 15 =============== -->
+<section>
+<div class="frame" data-screen-label="27 Appendix · sections vs reliability">
+  <div class="slide-top">
+    <div class="mark"><span class="sq"></span> DH412</div>
+    <div class="section-tag"><span class="num">A6</span>Appendix · sections vs reliability</div>
+    <div class="pageno">27 / 27</div>
+  </div>
+
+  <div class="figure-block">
+    <div class="fig-hd">
+      <div class="ftitle">Section metadata does not make LLM labels reliable.</div>
+      <div class="fnum">Appendix · fig15</div>
+    </div>
+    <div class="fig-sub">Mean article-level F1 inside vs outside detected sections is similar — knowing the section does not lift human↔LLM agreement above the bound from Figure&nbsp;5.</div>
+
+    <div class="fig-svg">
+      <img src="../figs/fig15_sectioned_vs_unsectioned_agreement.svg" alt="Mean article-level F1 inside vs outside detected sections">
+    </div>
+
+    <div class="fig-caption"><span class="n">A6</span>Important caveat for the section work: paratext gives reliable <em>structure</em> (Figure&nbsp;3), but it does not repair semantic <em>coding</em>. The two evidence streams stay separate.</div>
+  </div>
+
+  <div class="slide-bottom">
+    <span>DH412 · PROJECT</span>
+    <span class="center"></span>
+    <span>27 / 27</span>
   </div>
 </div>
 </section>
