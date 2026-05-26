@@ -629,7 +629,7 @@
   "Close reading. This grounds the charts in actual periodical discourse: the same mode (criticism) does different authority-work in each title. Rows are paraphrased, not quoted \u2014 exact excerpts still to be filled from gold articles.",
   "Part 4 \u2014 corpus structure. The strongest, code-independent result: Candil roughly 75% sectioned, Jaleo only about 50% (half unsectioned), read from paratext alone.",
   "Part 5 \u2014 sections as weak genre proxies. Some sections concentrate a family, but samples are n = 3\u201311. A working hypothesis for the rerun, not a result.",
-  "The automated pipeline. Everything so far is human-gold and structural; the LLM enters only here, and only to be validated. Five stages; the human-gold coding is the contribution, not a footnote.",
+  "The automated pipeline. Keep the sequence clear: corpus and paratext first, then human-gold coding, then the LLM, then validation. The human-gold coding is the contribution, not a footnote.",
   "LLM prior shift. Compared with human gold, the model under-calls AUTH and over-produces PED, CRIT, and COMM on the 163-article LLM-comparison subset.",
   "LLM family performance. F1 is uneven: CRIT is recoverable, COMM moderate, while AUTH/HERIT are recall failures and PED is over-recalled.",
   "Part 6 \u2014 the validity bound. Human-gold coding turns the LLM into bounded evidence: against the reconciled gold, family-level F1 is 0.49 (recall 0.63 but precision only 0.40) and code-level F1 is 0.23. This is a prediction-vs-truth evaluation, so F1 \u2014 not a chance-corrected \u03ba \u2014 is the right frame; family trends are exploratory and code-level claims are not stable.",
@@ -1130,43 +1130,43 @@
   </div>
 
   <div style="flex:1; display:flex; flex-direction:column;">
-    <h2 class="h-display sm">A hybrid pipeline, validated against human gold.</h2>
+    <h2 class="h-display sm">The LLM enters after the human-gold baseline.</h2>
     <div class="accent-rule"></div>
     <p class="lede md" style="margin-bottom: 8px;">
-      Everything so far is human-gold and structural. The automated pipeline enters only now — and validity is part of the method: automated labels are compared against the 163-article LLM-comparison subset before any trend is treated as evidence.
+      Everything so far is human-gold and structural. The automated layer is downstream of that work: first build the corpus and paratext structure, then code the gold sample, then use the LLM at scale, and finally bound it against the 163-article comparison subset.
     </p>
 
     <div class="pipeline">
       <div class="step">
         <div class="num">01</div>
-        <div class="name">OCR &amp; cleanup</div>
-        <div class="desc">scan → text, per-page confidence retained.</div>
+        <div class="name">Corpus build</div>
+        <div class="desc">scan → OCR text → article units, with issue metadata retained.</div>
       </div>
       <div class="step">
         <div class="num">02</div>
-        <div class="name">Candidate retrieval</div>
-        <div class="desc">regex + bilingual keyword index proposes passages to code.</div>
+        <div class="name">Paratext structure</div>
+        <div class="desc">recurring sections and article placement establish the structural layer.</div>
       </div>
-      <div class="step">
-        <div class="num">03</div>
-        <div class="name">LLM annotation</div>
-        <div class="desc"><code style="font-family:var(--font-mono); font-size:16px; background:var(--paper-2); padding:0 4px;">gpt-4o-mini</code> · codebook + evidence window in; code + span out.</div>
+      <div class="step audit">
+        <div class="num">03 · gold</div>
+        <div class="name">Human-gold coding</div>
+        <div class="desc">180 stratified articles are hand-coded and reconciled before automation is trusted.</div>
       </div>
       <div class="step">
         <div class="num">04</div>
-        <div class="name">Article-level aggregation</div>
-        <div class="desc">passage codes rolled up to article-level family weights.</div>
+        <div class="name">Retrieval + LLM</div>
+        <div class="desc">keyword retrieval proposes evidence windows; <code style="font-family:var(--font-mono); font-size:16px; background:var(--paper-2); padding:0 4px;">gpt-4o-mini</code> assigns code + span.</div>
       </div>
-      <div class="step audit">
-        <div class="num">05 · gold</div>
-        <div class="name">Human-gold coding</div>
-        <div class="desc">stratified blind double-coding · reconciliation · gold-vs-LLM F1 on family &amp; code.</div>
+      <div class="step">
+        <div class="num">05</div>
+        <div class="name">Validation bound</div>
+        <div class="desc">LLM article labels are compared to gold before trends become evidence.</div>
       </div>
     </div>
 
     <div class="caveat" style="margin-top: 28px;">
       <span class="dagger">†</span>
-      <div><strong>Constraint</strong> The LLM is given a codebook entry and a small evidence window — never an article in full, never the periodical-level identity. This is the constraint that makes annotation inspectable; it is also a limit (§8 · L4).</div>
+      <div><strong>Constraint</strong> The LLM never replaces the gold layer: it sees only a codebook entry and a small evidence window, then its article-level labels are tested against human gold before they are used for exploratory scale.</div>
     </div>
   </div>
 
