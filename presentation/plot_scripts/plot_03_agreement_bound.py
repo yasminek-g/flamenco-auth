@@ -132,17 +132,6 @@ def plot(data: pd.DataFrame, outdir: Path | None = None) -> list[Path]:
             fontweight="bold",
         )
 
-    ax.axhline(0.5, color=RED, linestyle=(0, (4, 3)), linewidth=1.6, zorder=0)
-    ax.text(
-        1.46,
-        0.515,
-        "usable-evidence reference (0.5)",
-        color=RED,
-        fontsize=9.5,
-        fontweight="bold",
-        ha="right",
-    )
-
     ax.set_ylabel("Score (gold vs LLM)", fontsize=12)
     ax.set_xlabel("")
     ax.set_ylim(0, 1)
