@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1994-11-11-left-carta-entre-guitarras-f-lix-de-u",
+    "article_text_for_review": "Félix de Utrera\n\nRécibo vuestra carta, en la que me piden ustedes que, os mande algún escrito con mi opinión guitarrística sobre el fenómeno de esta época Paco de Lucía. Yo soy amigo personal de la familia, desde hace muchos años, y creo que puedo hablar acerca del tema, con propiedad. Paco nació en una casa guitarrística, pues de todos es sabido que su padre Antonio Sánchez Pecino (q.e.p.d.), era guitarrista, que su hermano Ramón de Algeciras es guitarrista (fue su primer maestro), que su hermano Pepe de Lucía, aparte de ser uno de los mejores cantaores de esta época, toca la guitarra muy bien, y para colmo, hasta un hermano (Antonio) que no tiene nada que ver con este gremio, él pertenece al gremio hotelero, también le gusta y toca la guitarra un poco. Quiero decir con esto, que Paco ha crecido y se ha desarrollado entre guitarras.\n\nPaco de Lucía, es un extraordinario aficionado al cante y al baile, y los aficionados, la mayoría no han escuchado a Paco, tocar la guitarra pá cantar y pá bailar.\n\nEllos se creen, que solamente toca la música que hace en los conciertos, con más guitarras, y varios instrumentos más, como son: flauta, cajón de ritmo peruano, etc. Paco hay que oírlo en un cuarto de fiesta tocando pá cantar, sin abusar de sus facultades (que son muchas), y limitándose solamente a lo que es acompañar, y da miedo oírlo, porque una persona que lleva sin hacer esto tanto tiempo, no se ha olvidado, y lo hace mejor que el primero.\n\nPaco se ha fijado desde pequeño, en los tres maestros que hemos conocido en este siglo: Ramón Montoya, Niño Ricardo y Sabicas, y en el de Huelva no, porque no había muchas grabaciones, y también pocas oportunidades de oírlo. Basado en esa fuente, Paco, hizo un estilo y una forma de tocar la guitarra muy suya y muy personal, pues la prueba está, que no hay un guitarrista en el mundo, que no quiera parecerse a Paco de Lucía, y digo en el mundo, porque la guitarra flamenca, gracias a él, se ha extendido hasta el infinito, él le ha dado la grandeza de que goza hoy día.\n\nPaco de Lucía está dotado de facultades por el Soberano, pues, como creador es inagotable, sensible, flamenco, improvisador, seguro, etc., etc. Paco es una fuente de música flamenca, desde que rompió en figura, y eso fue siendo muy joven, y desde entonces hasta la fecha no ha parado, así que estamos ante el genio de esta época, pero me gustaría recalcarme un poco en lo siguiente: Lo que Paco toca en los conciertos es música flamenca, pero un poco suave de flamenquismo, porque a las masas no se puede meter la pureza de un arte de pronto, pero vuelvo a la carga diciendo, que a Paco de Lucía hay que oírlo tocar por derecho, y es de escalofrío.\n\nEsperando le sirva de algo este comentario, reciba un cordial saludo de vuestro incondicional.\n\nCreo que me he extendido demasiado, para definir a Paco de Lucía, pero me ha salido así, y esa es la visión que tengo de él.",
+    "title": "Carta entre guitarras Félix de Utrera",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 526,
+    "article_char_count_full": 2904,
+    "article_char_count_review": 2904,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-12-left-al-l-mite-de-la-propia-superaci-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nManuel Martín Martín E 1 rasgo principal de su carácter es la duda y su principal defecto la indolencia. Dicen que admira en el ser humano la integridad, que la falta que más indulgencia le inspira es robar por hambre, que detesta la falta de tacto y que, como no podía ser de otra forma, su deporte favorito es la pesca submarina, lo que explica toda una vida dedicada a bucear hasta el infinito de la música.\n\nEs Paco de Lucía un extraterrestre —con perdón—, pusilánime e introvertido, que sintió el mayor de los desalientos cuando supo del éxito internacional de la rumba «Entre dos aguas», un tema que, si bien los renovadores tomaron como modelo de creación, fue grabado de relleno y jamás tenido en serio por el maestro.\n\nPaco de Lucía, el más cualificado revolucionario de la guitarra\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\ncear hasta el infinito de la música. Es Paco de Lucía un extraterrestre —con perdón—, pusilánime e introvertido, que sintió el mayor de los desalientos cuando supo del éxito internacional de la rumba «Entre dos aguas», un tema que, si bien los renovadores tomaron como modelo de creación, fue grabado de relleno y jamás tenido en serio por el maestro. Paco de Lucía, el más cualificado revolucionario de la guitarra flamenca que nos ha sido dado a escuchar, vio la luz a las diez de la mañana del 21 de diciembre de 1947, en el número 6 de la algeci-reña calle San Francisco, junto a una frondosa foresta conocida por La Almoraima, referente que le lle-varía, en 1979, a una impresión discográfica con la que marca el inicio de una nueva y esplendorosa corriente musical. Hijo de Antonio Sánchez Pecino, guitarrista, letrista y buen aficionado, fallecido en junio de 1994 a los 86 años de edad, y de Lucía Gómez, desde pequeño se vio inmerso en el plan ideado por su progenitor, que preparó a sus hijos (Ramón, Antonio, Pepe y Paco), les inculcó una férrea disciplina y los dotó de una completa formación vivencial, hasta elevar a Paco al trono de la guitarra y convertirlo en el eje de una familia siempre unida. Esto explica el que se iniciara a temprana edad con su hermano Pepe, llegando ambos a ser premiados en el Festival-Concurso Internacional de Arte Flamenco de Jerez de la Frontera, celebrado durante los días 8, 9 y 10 de mayo de 1962, y a grabar un disco, Los Chiquitos de Algeciras, que sigue en el punto de mira de los coleccionistas. Entonces el Niño de la Portuguesa contaba con catorce años de edad y ya empezó a saborear las mieles del triunfo. Pero algo que muchos aficionados quizá desconozcan es que la primera actuación pública del Ni- fão de la Portuguesa tuvo lugar en su tierra natal, a los once años de edad y en una emisora local. Poco después, en 1963, se traslada con su familia a Madrid hasta que conoce al maestro Sabicas, quien viendo los influjos de Niño Ricardo y Mario Escudero en el futuro gran maestro supremo, le diría: «Tocas muy bien la guitarra y ha llegado el momento de crear tu propia música». Han pasado desde entonces muchos calendarios y a nadie esca\n\n[ENDING CONTEXT]\n\nver si se enteran los clásicos), que supieron captar con una sutileza extraordinaria los mil y un matices del alma de la guitarra.\n\nEste apasionado de la guitarra y obsesionado con ella, había puesto al descubierto en Sevilla su habitual calidad estética y reflejado su escondida faceta de ternura que le permite musicar con exquisita sensibilidad las más variadas melodías. Empero, el contraste entre su plano íntimo y el de su sexteto, tuvo un interrogante —¡habrá llegado Paco de Lucía al límite de su propia superación?— y un punto de debilidad emocional: faltaba Manuel Soler. Sin comentarios.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Al límite de la propia superación Manuel",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-14",
+    "page_number": 11,
+    "word_count": 3415,
+    "article_char_count_full": 20186,
+    "article_char_count_review": 3817,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-11-15-left-el-origen-de-su-angustia",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«Álgeciras, en árabe, significa La Isla. Los andalusíes añadieron a dicho topónimo un apellido, Alyazirath Al Hadra, la Isla Verde. En el diccionario sentimental de Paco de Lucía, esa ciudad sureña y desmedida, guarda aún mucho sentido de hogar y de refugio, porque es la patria de sus primeros recuerdos: «Me siento al-gecireño —suele manifestar—. Y más, cuando estoy fuera. Cuando, por ejemplo, en Tokyo o en sitios en los que nada tienen que ver con mi filosofía, con mi forma de sentir y, de pronto, tengo que estar con la careta puesta para no desentonar del sitio en que estoy; sí que echo de menos estas mis raíces. Es entonces cuando más algecireño me siento».\n\nDesde Moscú a Chicago, pasando por Tokyo y por toda Europa, cualquier concierto de Francisco Sánchez acaba convirtiéndose en un\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"leyenda\"]\n\nreño me siento». Desde Moscú a Chicago, pasando por Tokyo y por toda Europa, cualquier concierto de Francisco Sánchez acaba convirtiéndose en un suceso poco menos que memorable, con ribetes de apoteosis. Pero Algeciras, curiosamente, parece salir del mapa de esta costumbre: Paco ha sido allí, desde su adolescencia, una gloria local a cuya mención solía recurrirse cuando alguien preguntaba qué había allí, tan al sur, además de un puerto y de una leyenda negra en la que se juntan logreros de toda laya, soldados africanistas y viajeros en tránsito. Paco no está. Paco está en Japón. Paco graba. Estuve con Paco. Se escuchaban estas frases por sus mentíderos, como coordenadas que fijan la latitud de un tesoro hundido. Paco de Lucía, que arrasa en Buenos Aires y triunfa en Viena. Pero que aún despierta, en alguno de sus viejos paisanos, un arcaico gesto de desdén, como un hilo que tirase del labio superior y mascullara, terribles y desconfiadas, las palabras: «No será para tanto». Su nombradía universal, en las calles donde naciera, sólo parece haber servido para despertar alguna que otra envidia, irracionales bulos, pero también aficiones a la guitarra y otras herejías. Su coincidencia paisana contribuyó a llevar hasta las cuerdas a una saga de tocaores de la zona, como Joaquín Román «Quino», Andrés Rodríguez, Paco Martín, Salvador Andrades o los ya retirados Merche y Antonio. Pero también ha cobijado su sombra el viaje personal del algecireño Luis Balaguer y de los gaditanos Antonio Toledo o No-no García, por ejemplo, hacia otras fronteras musicales. Allí —estoy por jurarlo— tuvo que escuchar también Paco su primer jazz, a través de la emisora gibraltareña que le ponía en relación radiofónica directa con la BBC de Londres, una programación que dejaría un poso musical mestizo en la zona. Las excursiones al Peñón antes del cierre, las correrías por el territorio de la familia Chaqueta, por La Almoraima, el mayor latifundio de Europa, siguen siendo pieza fundamental de su memoria. La proximidad del Peñón y de Marruecos supuso siempre un amago de cuerno de la abundancia con el que sobrellevar carestías y hambrunas de primera o segunda posguerra y la convicción fronteriza de que el mundo era un crisol múltiple y extraño, que iba más allá de cualquier horizonte lugareño. En Algeciras, Paco ha conservado a sus amigos de siempre, que le conocieron en vivo y en directo antes de que su rostro saliera en la portada de un disco\n\n[ENDING CONTEXT]\n\nen absoluto. Si hay algún contencioso entre Paco y Algeciras, el contencioso está en Algeciras». «Paco —le añadió Grande—siempre que me ha hablado de Algeciras, como la ciudad está vinculada a su infancia, siempre me cuenta casi un cuento de hadas. Me cuenta el momento en que él fue feliz de verdad en aquella Bajadilla, que era feliz de verdad revuelto con los gitanos, pero no sólo tocando la guitarra, sino nadando, yéndose a nadar, él nadaba mucho pues era un hombre fuerte, y jugando y riéndose. La etapa de felicidad de Paco está en su infancia. Y el origen de su angustia, también.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El origen de su angustia",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 2007,
+    "article_char_count_full": 11784,
+    "article_char_count_review": 4072,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "leyenda"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-11-17-left-di-logos-desde-la-m-sica-cl-sica",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLuis Soler Guevara\n\nCuando Haendel escribió su magnífico Te Deum por motivo de la firma del Tratado de Utrech (aquel que todavía permite la anexión como colonia británica de un trozo de tierra andaluza) jamás podía el músico alemán, en aquellos lejanos ayeres, imaginarse que muy cerca de ese marco geográfico iba a nacer 234 años después, un gran músico bajo-andaluz, y al que los tiempos conocerían como Paco de Lucía.\n\nSi Paco de Lucía hubiera nacido en las calles de Eisenach, Viena, Bonn o Salzburgo, posiblemente el mundo hubiera alumbrado otro Bach, otro Haydn, otro Beethoven u otro Mozart; pero nuestro arte flamenco, también hubiera perdido la mente más preclara de la música flamenco-andaluza.\n\nEstos diálogos insertados en este artículo son producto de reflexiones y contrastes desde el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"cuerpo\"]\n\no otro Bach, otro Haydn, otro Beethoven u otro Mozart; pero nuestro arte flamenco, también hubiera perdido la mente más preclara de la música flamenco-andaluza. Estos diálogos insertados en este artículo son producto de reflexiones y contrastes desde el mundo de las ideas, y por tanto con un claro contenido subjetivo, tal vez por ello con clara vocación al debate, y aunque aparentemente traduzcan situaciones inconexas, ello se debe a que forman cuerpo con otros muchos materiales: los que guardamos para otra ocasión y contexto. Nunca podremos contrastar si Paco tiene la intuición de Schubert, ni tampoco, si su oído la agudeza de la precisión absoluta (de exhibir lo absoluto) que al parecer tuvo Mozart; ello se aparta de nuestro conocimiento y profundidad; serán los grandes y sabios valores de la historia de la música y desde su facultad y sensibilidad, quienes lo puedan o quieran sancionar algún día... Si Beethoven fue el más grande de los músicos, Bach la música misma, ¿y Paco? un superdotado de la guitarra flamenca, ¿nada más?, no. Sin duda la máxima expresión de la música culta de los pueblos del sur. Si el primero representó la majestad, el segundo la pureza, Paco revolucionó la pureza de la música flamenca sin perder un ápice de su majestad y grandeza... Entrando en el fondo de la cuestión. ¿Es homologable artística y socialmente un guitarrista flamenco, un cantaor o una bailaora flamenca, a los niveles de estas reflexiones? ¿Quién o quiénes deciden que ello sea así? ¿La cultura de los notables que se reúnen en el paraninfo de no sabemos qué Real Academia? ¿Quiénes son los notables? ¿Quiénes decid\n\n[ENDING CONTEXT]\n\nhomenaje universal en el que se sumen los más prestigiosos hombres y mujeres de todas las Artes del Mundo, un gran encuentro de culturas en el que cita se dé el abrazo fraternal de la cultura de los pueblos del mundo. Ello no sólo es un acto de conveniencia para el mundo del flamenco y de la cultura andaluzay española, sino también un acto obligado de justicia.\n\nLa fortuna y los tiempos evitarán que surja un nuevo Mendelssohn descubridor de la obra del Bach flamenco, entre otras razones porque el algecireño forma parte de la gloria universal de las artes, de la cultura y de la civilización.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Diálogos desde la música clásica con Paco de Lucía Luis",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-17",
+    "page_number": 17,
+    "word_count": 1064,
+    "article_char_count_full": 6424,
+    "article_char_count_review": 3253,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "cuerpo"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-11-18-left-a-los-14-a-os",
+    "article_text_for_review": "Soy el decano de los guitarristas de flamenco, tengo ochenta años, y durante más de medio siglo he tenido la suerte de compartir escenarios y carátulas de discos con todos los que fueron grandes en este oficio: Javier Molina, Ramón Montoya, Luis Yance, Manolo de Huelva, Manolo y Pepe de Badajoz, Perico del Lunar, Miguelito Borrul, Niño Pérez, Niño Ricardo, Melchor de Marchena, Esteban de Sanlúcar, Sabicas, Pepe Martínez, Mario Escudero, Manuel Cano, etc., etc. Todo esto quedó atrás sin que pierdan, por supuesto, la gloria que cosecharon.\n\nEn Jerez de la Frontera y durante los días 8, 9 y 10 de mayo de 1962 se celebró el Primer Festival Concurso Internacional de Arte Flamenco (Cante, Baile y Toque). Yo formaba parte\n\ndel jurado como representante del Toque, junto con don José Carlos de Luna como presidente, don José Suárez Sayago, don José Seona Oliva, don Anselmo González Climent y don Augusto Butler Genis, como secretario. Paco, junto a su hermano Pepe, se presentaron como Pepe y Paco de Algeciras, y yo como jurado del Toque, descubrir que Paco sobresalía\n\ncon catorce años de todos los guitarristas que se presentaban a concurso, y voté a su favor para que se le concediera premio, que le fue otorgado, y desde entonces he seguido de cerca su carrera artística. He escuchado sus discos y sus composiciones, tanto como solista cuanto como acompañante, sus conciertos con su grupo.\n\nPaco de Lucía es el renovador de la guitarra flamenca, por su ejecución potente, su clara digitación, su sentido del compás, tiene un fabuloso dedo pulgar, y los picados a una velocidad desconocida hasta ahora; ha creado infinidad de falsetas por todos los toques flamencos, y su personalidad lo ha elevado al primer puesto del escalafón, teniendo a todos los aficionados como seguidores no sólo en la guitarra, sino imitando sus gestos y la posición del instrumento con su pierna cruzada. Creo que el futuro de la guitarra flamenca está en muy buenas manos.\n\nSeguramente se han escrito en periódicos, revistas y entrevistas, cientos de artículos como nunca se han dedicado a otro guitarrista, por eso a estas alturas yo no voy a descubrirlo; ya lo hi-ce en Jerez cuando sólo tenía catorce años.",
+    "title": "A los 14 años",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-18",
+    "page_number": 18,
+    "word_count": 369,
+    "article_char_count_full": 2194,
+    "article_char_count_review": 2194,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

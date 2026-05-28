@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_03::A13",
+    "article_text_for_review": "PALMAS REDOBLAS (las) - countertime palmas; also called PALMAS ENCONTRAS. PALMAS SORDAS (las) - muted or soft palmas done by hitting the cupped palms together. PALMERO (el) - one who does palmas. PANTALONES (los) - Pants. PANUELO (el) - Handerkerchief or scarf. PASADA (la) - a pass; a step in the sevillanas in which the partners pass by each other PASEO (el) - a walk; refers to parts of the dance where emphasis is on graceful walking and movements of the upper body and arms; sometimes used to refer to the part of the alegrias which is now commonly called the SILENCIO. PASO (el) - step, as in taking a step, or a particular \"step\" in a dance. PAYO (el) -- gypsy term for a non-gypsy. PEINETA(la) - a large ornamental comb worn in the hair. PELLIZCO (el) -- a colorful, unique, or personal movement that reflects the personality of the dancer and adds life to the dance. PENA (la) - a club made up of aficionados of the cante. PERICON (el) - extra large fan (abanico) used in dancing. PIE (el) -- the foot. PISAR - to press or fret the strings PITOS (los) -- fingersnaps. PLANTA (la) -- the sole of the foot; the movement of striking the flat of the foot against the floor. Box 4706 San Diego, CA 92104 POR ARRIBA - E major, E minor, or E phrygian mode; used by flamencos who generally do not know music theory or terminology; to a singer the E chord looks \"higher\" than the other common chords. POR MEDIO - A major, minor, or phrygian mode. PUENTE (el) - The bridge of the guitar. PUERTOS (LOS) - the ports around Cádiz (El Puerto de Santa María, Puerto Real) often referred to in the cantes de Cádiz. PULSACIÓN (LA) - the action or \"feel\" of the guitar strings. PULSAR - to pluck the strings PUNTA (la) -- point; the striking of the tip or toe of the shoe against the floor. QUEJÍO (EL) - passages of \"Ay\"; can be used as a \"temple\" (salida), as part of the song, or as a \"remate\". RASGUEADO - strummed; from the verb \"ras-guear\" (to strum) and may be used as an adjective or adverb as in the sentence, \"This rhythm is to be played rasgueado\"; it is also used as a noun to mean the same as \"rasgueo\". RASGUEO (EL) - a strum; any of the right hand techniques for brushing across the strings to play chords. REDOBLE (el) - used to label a number of different heelwork combinations that normally take up two beats and produce a closing sound; used to conclude a rhythmic phrase. RESBALAR - to slip or slide (as on a slippery floor). BULK RATE U.S. POSTAGE PAID La Mesa California Permit 368 TIME VALUE RETURN POSTAGE GUARANTEED",
+    "title": "DICTIONARY OF FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "32",
+    "page_number": 32,
+    "word_count": 470,
+    "article_char_count_full": 2531,
+    "article_char_count_review": 2531,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_04::A1",
+    "article_text_for_review": "Thursday, February 5th, we met at 2 pm in front of the Mark Twain Hotel in Hollywood, an older establishment that Sabicas has patronized for almost thirty years during his visits to the City of the Stars. A few minutes later the dapper, shaded figure of the maestro appeared through the hotel doorway. Sabicas greeted me warmly as if I had been an old friend he had not seen in years and, after a few brief formalities, everyone agreed on lunch at the Chile Lindo, a small -- Chilean, of course -- restaurant on nearby Sunset Boulevard. The idea suited my own Chilean tastes just fine and we proceeded to the restaurant in my car. During the short ride I presented Sabicas with some recent issues of Jaleo which he reviewed with approving comments of, \"fantástico, eso no se ve ni en España!\" Trim and of erect posture, Sabicas looks remarkably fit and quite limber for his sixty-four years of age. He is a warm, affable, yet intensely private man, who was visibly reluctant to talk about his personal life. I chose therefore not to press that type of question. He does not conceal, however, his pride in his accomplishments as an artist, speaking freely and with great gusto about his adventures on and off the stage. Soft",
+    "title": "AN INTERVIEW WITH SABICAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 218,
+    "article_char_count_full": 1223,
+    "article_char_count_review": 1223,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_04::A2",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nThis month in the center of this issue, you will find a questionnaire for the \"Directory of Flamenco Artists\" which will be published next fall. This should be a highly informative and useful work; the results will, in part, depend upon the effort put forth by Jaleo's readers. If you are involved in any way, at any level, in the performance of flamenco (professionally or just for yourself) you should be included. Just as important will be your efforts to get these questionnaires into the hands of artists who do not read Jaleo. You can make copies yourself or write to Jaleo for additional copies. One item omitted from the questionnaire is approximate age of the artist. If you wish, you may indicate whether you are: A) under 20, B) 20-30, C) 30-40, D) 40-50, E) over 50. Jaleo frequently\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"magazine\"]\n\n. Just as important will be your efforts to get these questionnaires into the hands of artists who do not read Jaleo. You can make copies yourself or write to Jaleo for additional copies. One item omitted from the questionnaire is approximate age of the artist. If you wish, you may indicate whether you are: A) under 20, B) 20-30, C) 30-40, D) 40-50, E) over 50. Jaleo frequently receives letters requesting that we include more guitar music in our magazine. We are not opposed to such a practice, but there are several reasons it does not happen more often. The main reason is that we do not receive much music from the readers and Jaleo's editors do not have the time nor interest in ferreting out interesting guitar falsetas. In addition, there is so much good guitar music available today in written form that it really is a waste of space for us to print a great deal of music (except when it is used to illustrate a point). We have pointed out a number of these music sources (Paco Peña, Juan Martin, Sabicas and Mario Escudero collections, Peter Baime, etc.) and a guitarist will get much more from these and his records than he ever could from isolated falsetas in Jaleo. We also have to be careful about printing the music of living performers. In spite of these arguments, as stated above, we are not opposed to considering for publication an music sent in by the readers. Rubina Carmona Instruction in Cante and Baile Fl\n\n[ENDING CONTEXT]\n\nwhen I am not working I dine at 7, 7:30, 8 o'clock at the latest. This is something I have gotten accustomed to here in America because in Spain we eat very late, 9 or 9:30 at night. You don't get done until 11 and then you have to go out for a walk to digest the food. New York, however, is the only city in the world where you can go to a restaurant any time, day or night. If you feel like eating a paella at 3 o'clock in the morning you can get it. The only place in the world. JALEO: Are you planning any new recordings? SABICAS: Not for the moment. I have recorded a lot, fifty-three long-play\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4-11",
+    "page_number": 4,
+    "word_count": 2423,
+    "article_char_count_full": 13194,
+    "article_char_count_review": 3059,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "magazine"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1981_04::A3",
+    "article_text_for_review": "by El Chileno On Saturday, February 7th, Sabicas appeared in concert at U.C.L.A.'s Royce Hall. I had the opportunity to meet the maestro a few days before (see \"Conversaciones con Sabicas\" elsewhere in this issue) and was invited by the artist to take a few pictures of him backstage, which provided me with a rare glimpse of a master performance. I did, however, spend most of the performance sitting in the concert hall and was able to attest to the excellent acoustics of the auditorium. I made a passing remark to the stage manager about the nice way the sound carried throughout, and she wrote down on her report, \"associate of artist complimented Royce Hall on its excellent acoustics.\" Thus, as far as the official record goes, I am an \"associate\" of Sabicas! The three part concert included: taranta, fandango, farruca, \"castellana,\" soleá, rondeña, alegrias, \"Danza Arabe,\" malagueñas, guajiras, tientos, and \"Marcha Militar.\" A clamorous standing ovation by an enthusiastic audience which really filled the 1,800 seat hall brought some half-dozen curtain calls and encores consisting of a zapateado, \"Piropo a la niña,\" \"Malagueña,\" and a \"muy flamenco\" potpouri of American Jazz and Dixie themes. Throughout the performance, the Sabicas style was very much in evidence, with liberal use of alzapúa in the fandango and soleá, fast picado in the taranta and farruca, and left-hand work in the tarranta and rondeña. There was, however, a more melodic, soft touch to his interpretations which was not quite as evident in the past. His rondeña and \"Danza Arabe,\" for example, had an almost pleading tone about them. The zapateado offered during the encore was equally melodic, of an almost classical quality.",
+    "title": "SABICAS IN CONCERT AT ROYCE HALL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 279,
+    "article_char_count_full": 1714,
+    "article_char_count_review": 1714,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_04::A4",
+    "article_text_for_review": "(from: FISL $ \\underline{\\text{NEWSLETTER}} $, April 1969) by E. Zatania Each spring people travel from all parts of the world to witness the ritual and splendor of Semana Santa (Holy Week), in Sevilla. Semana Santa is the week of Holy Thursday and Good Friday as observed by the intensely religious people of Spain. It is during this week, devoted to the contemplation of the Passion of Christ, that the characteristic processions take place. Secret religious cults, \"cofradias,\" existed in Sevilla since the dim beginnings of Christianity. However it is only since the 16th century that certain of these \"cofradias\" became dedicated to the revival of the faith of the general people. For this reason the Holy Week processions were originated. In the beginning these processions were solemn and unadorned. At the head of the procession a flag or banner was carried. Then came the \"cofrades\" (members of the cofradia), forming two lines, and people who for personal reasons wished to take part in the devotion. At the end was the crucifix carried by a priest or a noble, surrounded by the \"hermanos de luz\" (members of the brotherhood carrying candles), and the \"hermanos de sangre\" (those carrying images). This simple basic format has successively developed into the richness and splendor of today's Semana Santa -- justifying its universal fame. The cofrades still wear the rough white linen gowns tied at the waist with a rope. Around the neck they wear the shield of their respective brotherhoods. They walk barefoot, their faces covered with the familiar pointed canvas hoods. As the procession makes its way through the narrow streets, a band plays a slow solemn march. At intervals the group stops before a balcony or platform where a cantaor is waiting to deliver his saeta, a cante full of Andalusian mysticism and personifying the spirit of Holy Week.",
+    "title": "SAETA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 307,
+    "article_char_count_full": 1862,
+    "article_char_count_review": 1862,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

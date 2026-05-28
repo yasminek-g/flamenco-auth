@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1996-09-3-right-creador-y-recreador",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJosé Cenizo Jiménez\n\ne discute sobre si Antonio Mai- rena fue o no un creador en senti- do estricto. Nadie es un creador en sentido estricto, desde luego. Todo artista se basa en una tradición, en una experiencia de los otros, en un bagaje cultural personal y social, co- lectivo, que le viene, a veces, de siglos atrás. Mai- ena pensaba que el can- te «estaba hecho» y sólo era posible desarrollarlo, engrandecerlo y dul- ficarlo, pero que, citamos textual- mente, «el cante está hecho y tal como es así seguirá siempre».\n\nMuchos de los cantes que rescata, con ayuda de los viejos cantaores a los que se arrima con oídos y corazón atentos, son, en realidad, reconstrucciones de cantes, en cuyo resultado final el genio de Mairena pone mucho de su parte. No es mero reproductor o copista, frío\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"reelaboraciones\"]\n\nde cantes, en cuyo resultado final el genio de Mairena pone mucho de su parte. No es mero reproductor o copista, frío transmisor; algo además imposible, pues muchos de estos cantes que se dicen rescatados de cantaores del siglo XIX o de principios del XX no fueron grabados por sus hipotéticos creadores originales (El Planeta o El Fillo, por ejemplo). Se trata, como explica Ricardo Molina, de una labor ardua de «refundición»: «Estas creaciones o reelaboraciones (se refiere a Nitri, Torre, Mairena, etc.) siempre parten de un sujeto preexis- tente; por eso la actividad creadora tiene para el Flamenco el valor de refundición en el 99 por ciento de las veces.» $ ^{1} $ Cualquier cante era susceptible de recuperación pública para la historia, tras ser oído en las fuentes y traspasado por la energía musical jonda de Mairena. Rodríguez Cosano lleva tiempo investigando este aspecto en el maestro. De algunos casos concretos, nos detalla el origen de las letras y el entronque musical que realiza Antonio Mairena. Pongamos como ejemplo lo que cuenta acerca de la letra y el cante «Hasta los árboles sienten / que se le caigan las hojas / y esta gitana no siente / la perdición de su honra». «Este estilo está consignado por Antonio Mairena, con toda probabilidad, a la Jilica de Marchena. Esta solea tiene entidad musical propia con dos cuerpos p\n\n[ENDING CONTEXT]\n\nuna serie de cante por seguiriyas que se cantaban corridas, o sea, romanceadas, se cantaban seguidas, eran cantes cortitos, eran quizá la entrada para el cante más duro por seguiriyas. Yo escuché a este señor y me hice cargo de lo que era, y entonces yo creí que el cante por livianas no debe ser tan liviano, sino que (...) podía desarrollarse, engrandecerse y dulcificarse, y esto es lo que yo intenté con la liviana y creo firmemente que lo conseguí.⁸\n\nCon hilos de acá y de allá, de buenas fuentes cantaoras, logra entregarnos un amplio y hermoso mantel, un mosaico magnífico del mejor cante.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Mairena: Creador y recreador",
+    "periodical": "candil",
+    "issue_id": "1996-09",
+    "year": 1996,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 1301,
+    "article_char_count_full": 7737,
+    "article_char_count_review": 2977,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "reelaboraciones"
+      }
+    ]
+  },
+  {
+    "article_id": "1996-09-5-left-lorca-en-la-memoria-propuesta-fl",
+    "article_text_for_review": "Juan Antonio Ibáñez\n\nLa fuente de la vida, le habría regalado ya, noventa y ocho chorros de plata para que se reflejara en ellos, cada mañana, mientras la luna, inquieta, en sus manos se bañaba. Manuel Angeles Ortiz, desde un columpio de afectos, gritaría ¡Federico, Federico! Y, ¡ay, Alberti! no hubiera tenido que soñar, despierto, sus soleares del que nunca fue a Granada. Pero, un día, acorralao y perseguió como pájaro sin nido, la muerte hizo camino. Y el pueblo cantó la tragedia:\n\nMadrugaíta de agosto gimió el aire de dolor; de un tirón quebraíto la vida de un ruiseño. Se enturbiaron de muerte Darro y Genil, agua clara, ríos de sangre denuncian como a hombres buenos se [matan.\n\nDesde Viznar oigo un grito la campana de la vela llora, ay, la muerte de Federico.\n\nPorque hace 60 años, Federico García Lorca, el universal escritor, sensibilidad de su Granada —paraíso oculto que llora— caía, víctima del odio, a campo abierto, alejado «del túmulo de los cementerios» con el silencio de lo oculto y la muerte de compañera: «Si muero dejad el balcón abierto». Y sabed que aquella noche las negras madres de la pena ya tenían una nana para dormir a Federico:\n\nEl llanto de este chiquillo tiene ecos de silencio; lo parieron una noche, noche de triste recuerdo.\n\nLa granaína, cante que es rumor de melodía agridulce, donde la guitarra inunda de arpegios el mundo de los sentimientos, se hizo pregón:\n\nEl cerro está de luto el Albaicín en silencio, en cada gesto rabia. Justicia para el «perseguir». el pueblo llano reclama.\n\nFueron tiempos de obligado silencio, no de olvido. Y el pueblo, después de rescatarte Federico, rompe su voz en un desgarro —siguirya— para evocar tu muerte:\n\nHerido de muerte caído en el suelo miro a la luna, y en un suspiro, se quedó muerto.\n\nEs cuando el corazón, destrozado, llora:\n\nNo más guerra no más dolor; hermanico mío, para qué matarnos, si la vida es de Dios.\n\nHace sesenta años. Pero, desde la libertad de la palabra, ya escribió el poeta:\n\nQuiero dormir un rato un rato, un minuto, un siglo, pero que todos sepan que no he [muerto.",
+    "title": "Lorca en la Memoria Propuesta flamenca para el recuerdo",
+    "periodical": "candil",
+    "issue_id": "1996-09",
+    "year": 1996,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "5-5",
+    "page_number": 5,
+    "word_count": 362,
+    "article_char_count_full": 2075,
+    "article_char_count_review": 2075,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1996-09-6-left-el-flamenco-y-el-pueblo-bases-pa",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCristina Cruces Roldán Bases para una política de gestión cultural del flamenco en Andalucía\n\nI. Planteamientos iniciales\n\nEl flamenco es un complejo músico-oral de la cultura andaluza, y una de sus señas de identidad más destacadas. Constituye una manifestación de la historia de los sectores de población andaluza que no escribieron sus propios anales más que con el lirismo y la tragedia de lo jondo. Tiene como protagonistas de su producción, difusión y práctica, a las clases populares. y es atribuible a situaciones de marginación y aislamiento social, llegando a ser evitado, reprimido o, cuanto menos, ignorado y opuesto durante mucho tiempo a la «Andalucía oficial», aunque haya penetrado incluso los más altos estratos sociales.\n\nSin embargo, en la actualidad acudimos a un despertar\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"interiorizado\"]\n\nión y práctica, a las clases populares. y es atribuible a situaciones de marginación y aislamiento social, llegando a ser evitado, reprimido o, cuanto menos, ignorado y opuesto durante mucho tiempo a la «Andalucía oficial», aunque haya penetrado incluso los más altos estratos sociales. Sin embargo, en la actualidad acudimos a un despertar inusitado del interés por el flamenco: de haber sido infravalorado en otras épocas, desviado por el poder e interiorizado por los propios andaluces como rechazable, constatamos que el fla- menco pasa ahora a sobrevalorarse como atractivo cultural, aunque en ocasiones sea vendido sin más como un «producto» descontextualizado y sólo en su dimensión formal. Su creciente consumo en masa se adereza y justifica muchas veces con la subsecuente ilusión de que al fin ha logrado su propia dignificación e igualación con la falsamente considerada música «culta», obviando su carácter netamente andaluz en favor de ser presentado como muestra intensificada de lo general español, ofrecido en su sentido inocente y descargado de las muchas funciones sociales que tiene la cultura andaluza. Esta situación obliga a una reflexión por parte de las instituciones sobre el mejor modo de afrontar la incorporación del flamenco a los circuitos de mercado y registro comercial, que va en la dirección de su progresiva unificación y homogeneización, sin perder de vista su carácter socializado e identitario para los andaluces, así como su incuestionable poder evocador para quienes, nacidos en Andalucía, se han visto inmersos en situaciones contrastivas desde el punto de vista cultural. Nos proponemos exponer algunas líneas acerca de los instrumentos disponibles por parte de las instituciones administrativas, así como las\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_03 | trigger=\"lugar\"]\n\n«triple valor», es decir, tomar en consideración tres dimensiones en íntima e indisoluble relación: las formas musicales, el conjunto de cantes incorporados a un repertorio estructurado, los contenidos de las letras flamencas, expresión de las condiciones de existencia de los grupos sociales que están en su génesis y evolución, y la dimensión contextual y las fomas de sociabilidad colectiva canalizada a través del flamenco y a que el flamenco da lugar. Siendo así, se hace indispensable una doble política: de conservación y estudio, y de divulgación y fomento. Desde 1984, la Junta de Andalucía ha asumido las funciones en materias de conservación, difusión y promoción cultural, así como el cumplimiento del objetivo descrito en el Artículo 12 del Estatuto de Autonomía: «Afianzar la conciencia de identidad andaluza, a través de la investigación, difusión y conocimiento de los valores históricos,\n\n[ENDING CONTEXT]\n\nantes que las subvenciones fijas. Se trata de despertar el modelo de autogestión y circulación interna de los productos flamencos de menor entidad a través de la presentación conjunta de proyectos en que se primen no sólo recitales de cante, sino otras actividades como la proyección de videos de series flamencas, cursillos o seminarios o audiciones, que sirvieran como elemento de formación de las nuevas generaciones. El mantenimiento y apoyo de los Concursos sólo sería de interés para el caso de que no sigan convirtiéndose en la mera repetición de nombres y estilos conocidos y anquilosados.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El flamenco y el pueblo. Bases para una política de gestión cultural del flamenco en Andalucía",
+    "periodical": "candil",
+    "issue_id": "1996-09",
+    "year": 1996,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-11",
+    "page_number": 5,
+    "word_count": 6746,
+    "article_char_count_full": 44074,
+    "article_char_count_review": 4350,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "interiorizado"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "lugar"
+      }
+    ]
+  },
+  {
+    "article_id": "1996-09-12-left-letras-flamencas",
+    "article_text_for_review": "Yo recuerdo la noche aquella,\n\ntú tenías la cara tan bella\n\ncon tu persona yo me encontré,\n\ny un baile te solicité.\n\ny dijiste un poco después\n\nTu miraste a las estrellas\n\nque parecías una doncella,\n\ny a tu lao yo me senté.\n\nY ahora me estoy alegrando\n\nde yo haberte conoció\n\npor eso te estoy cantando.\n\nTe lo he dicho muchas veces:\n\nque la mujer que tengo\n\nesto que hago\n\nno se merece.\n\nSi tú me pides un beso\n\ntelo daría,\n\npero no me lo pidas\n\nporque chiquilla te morirías.\n\n¡Si tú supieras\n\nqué le pasó\n\na la primera\n\ncuando me besó!",
+    "title": "Letras flamencas",
+    "periodical": "candil",
+    "issue_id": "1996-09",
+    "year": 1996,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 103,
+    "article_char_count_full": 536,
+    "article_char_count_review": 536,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1996-09-12-right-poema",
+    "article_text_for_review": "Guitarra\n\nPozo vacío.\n\nPozo sin agua\n\ndonde la pena se esconde.\n\nDonde el dolor se desangra,\n\ncon seis cuerdas -que templadas-\n\narrojan sonidos negros\n\ndel fondo de sus entrañas.\n\nGuitarra;\n\nestuche alegre\n\ncomo sonajas.\n\nJilgüero,\n\nque al ser de día\n\njovial en su rama canta\n\nsu copla de primavera\n\ncon notas entrelazadas,\n\nque con dejos de alegría,\n\nse escapan de su garganta.\n\nGuitarra;\n\nrefugio de los pesares.\n\nCaja de donaire y gracia,\n\ny cofre de sentimientos,\n\nque entre risas y lamentos\n\nlo mismo llora que canta.",
+    "title": "Poema",
+    "periodical": "candil",
+    "issue_id": "1996-09",
+    "year": 1996,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 86,
+    "article_char_count_full": 522,
+    "article_char_count_review": 522,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

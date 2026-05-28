@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1986_FALL::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n'FLAMENCO PUBO' TO OPEN AT THE MARK HELLINGER THEATER [sent by Marilyn LeVine] Claudio Segovia and Hector Orezzoli, who created last year's Broadway hit \"Tango Argentine,\" which is now breaking house records on the West Coast, will be represented on Broadway this fall with Flamenco Puro, scheduled to open at the Mark Hellinger Theatre (247 West 51st Street) on Sunday evening, October 19th. Flamenco Puro was originally mounted in Sevilla in 1980 and then re-staged in Paris at the Festival d'Automne in 1984 where it was the hit of the season. Like \"Tango Arqnetino,\" Flamenco Puro portrays the passions of an entire people in music and dance. The production will bring to North America Andalusia's most famed flamenco artists, most of whom have never been outside Spain and France. Two\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"represented\"]\n\nNorth America Andalusia's most famed flamenco artists, most of whom have never been outside Spain and France. Two exceptions to this are the dancers Eduardo Serrano \"El Güito\", who appeared in New York in 1984 and Antonio Montoya \"El Farruco\", who was seen here a decade ago. The flamenco art, which Fedcrico García Lorca said was \"inherited\" rather than \"learned\", has produced a number of dynasties in this century and some of the leading ones are represented in the Flamenco Puro cast. Antonio Montoya's daughters, Pilar and Rosario, \"La Faraona\" and \"La Farruquita\", are among the dancers or bailadores; the guitaristas include the Carmona Carmona family: José Carmona Carmona, Juan Carmona Carmona and José Miquel Carmona Niño, \"Los Habichuelas\", as well as Joaquín and Ramón Amador. Among the other artists are dancers Manuela Carrasco, José Cortes \"El Biencasao\", and Angelita Vargas. The cantaores are Juan José Amador, Diego Carmacho \"El Boqueron\", Adela Chaquela, Enrique \"El Extremeño\", Fernanda de Utrera, Juan Fernández \"El Moreno\", Antonio Núñez \"El Chocolate\", and Augustín Carbonell \"El Bols\" is the 6th guitarista. The press, flamenco aficionados, and their own families have given the performers their descriptive names that have come to replace their own in the c\n\n[ENDING CONTEXT]\n\na star among stars, exudes a totally feminine voluptuousness in the soleares. Eyes cast down, hip jutting out, she points a finger upward and throws her head back as her stamping rips into a burst of staccato surprise. We know then that flamenco's secret is its very mystery. In the end, the stage was speckled with flowers: Boqueron and Juan Habichuela were dancing; so was \"El Extremelho,\" \"El Buencasao\" was on guitar and Fernanda introduced their mentors the two creators of the show Segovia and Orezzoli on stage. The few who knew Antonio Farruco as their teacher had to say a sad farewell...\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO PURO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "8-21",
+    "page_number": 8,
+    "word_count": 6110,
+    "article_char_count_full": 36167,
+    "article_char_count_review": 2905,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "represented"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A5",
+    "article_text_for_review": "[from: El Correo de Andalucía, May 21, 1986; sent and translated by The Shah.] by Manuel Bohorquez He who forgets the past disowns his existence, stated someone once who loved above all else, culture. Because culture is the mark that rnan leaves on the Earth,.and there are such marks that neither dust nor rain nor time can erase from the shining path of life. Flamenco, the path that music followed from the convergence of common sentiments, is a track sown with incerusable footprints: Tfo Luis el de la Juliana, El Planeta, El ENRIQUE \"EL MELLIZO\" Fillo, Silverio, Tomás el Nitri, Frasco el Colorado, Cagancho, La Josefa, La Andona, Chacón, El Torre, Pastora, Tomás...Andalusians all, men and women of our land with distinct sounds in each of their throats, people of bronze and silver from shacks and farms, from the countryside and the tavern, people with blades in their pockets, creased faces, hands wounded from the rubbing of the hammer at the forge or at the mine...people from the South of Spain. It is not a good thing for the flamenco afficionado not to look back to the past once in a while, for the past is the mother of purity in the cante, baile and toque. For this reason \"Correo Flamenco\" wishes to commemorate, in its own fashion, the eightieth anniversary of the death of Enrique \"El Mellizo\"--gypsy from Cádiz, Andalusian to the marrow, a musician who chose not the score, but the cry of the siguiriyas, a poet with no formal education (like Joaquín el de la Paula), but a poet nonetheless: \"Call me a doctor, call me a doctor, My heart and my soul!\" \"He was born,\" relates Fernando Quifones, \"in la calle Mirador, number 29 in the heart of the barrio de Santa María, at 5 o'clock in the morning on the 1st of December, 1848. He was baptized in the parrish of Santa Cruz with the given names Francisco Antonio Enrique.\" It seems that this man was quite strange, and of course he had to be, since creators, geniuses and artists are not \"normal\" and common individuals. Can you imagine, for example, Chocolate running an advertising agency..., arising at 7 a.m., having a breakfast of bread and marmalade and walking the dog? Or Camarón de la Isla driving a city bus or ushering at a theatre? A genius, by his very nature usually is a strange person, extroverted, nasty at times, crude once in a while, edgy, careless and shy. This is how I imagine \"El Mellizo\" when I glance at the only entant photograph of him, with his sickly aspect, but emanating sensitivity and delicacy in his slightly sad gaze. A famous cantaor por malagueños, without coming from the land of Juan Breva (nor did Chacón), \"El Mellizo\" left the canta a legacy of several styles of siguiriyas as well as different types of soleares. He is credited with the cante por tientos, the solidification of the cante por alegrias and a couple of styles of tonás. But none of this compares with the creative genius of the malagueña doble, fed by liturgical music. Curiously, neither El Mellizo, nor Chacón was from Málaga, yet they remain the most prestigious and famous malagueñeros of all time. JALEO - VOLUME IX, No. 3 On the 30th of May, 1906 as the result of tuberculosis and at the age of 58, the pathetic cry of this scrawny gypsy was silenced forever. Had he had access to a piano, he would have been remembered today on the nine o'clock news with an homage commemorating the 80th anniversary of his demise. Unfortunately, T.V.E. (Spanish National television) still pays no heed to flamenco, which is as important to Andalusians as the figures of Beethoven or Mozart are to classical music lovers. T.V.E.--as it demonstrated in that miserable program \"Un, dos, tres\"-still considers our art to be the peculiar language of Andalusians drunk on ethyl alcohol. Perhaps by the time of the centennial of the death of this gypsy from \"Cái\" there will exist a different mentality in this important medium of communication.",
+    "title": "A WREATH OF POPPIES FOR \"EL MELLIZO\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 681,
+    "article_char_count_full": 3907,
+    "article_char_count_review": 3907,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A6",
+    "article_text_for_review": "[from: El Correo Andaluz, May 21, 1986; sent and translated by The Shah.] by Antonio Bocia Vargus I shall never understand how a cantaor of the stature of this man, and with creations which were the furor of his epoch, could disappear from the map of the \"media\", slip through the cracks, and pass unnoticed by the flamenco commentators of radio and the press. In bygone times, in the golden age of cante, there were neither microphones nor press to speak of cantaores. Alone, with a few fliers that they themselves distributed the day before the show, they advertised themselves, and more than a few peasants used these fliers to roll cigarettes due to the scarcity of rolling paper. Today, hundreds of aficionados ask us about these artists, and we cannot understand the reason for the silence [on the part of the media] with respect to these great artists, when commentators talk and talk and won't quit talking about others who left nothing recorded and about whom no one, absolutely no one can recall anything with certainty, not even by oral transmission. In the year 1934, specifically in the fair of la Puebla de Cazalla, the first microphones and loudspeakers of the epoch were installed. From these was heard, with the volume of new technology, a canción por bulerfas, a creation of Canalejas de Puerto Real, a cantaor who was unknown up to that time, but who made himself so popular with that song that the public made it their own. So frequently was it sung that the newspaper El Liberal ran one \"help wanted\" ad which read: \"Maid wanted, indispensable requirement: that she does not know how to sing \"La Roero.\" CANALEJAS DEL PUERTO REAL",
+    "title": "THE GREAT CANALEJAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 286,
+    "article_char_count_full": 1650,
+    "article_char_count_review": 1650,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A7",
+    "article_text_for_review": "CAMELON DE LA ISLA SERIOUSLY HURT IN A TRAFFIC ACCIDENT [from: Diario de Jerez, Oct. 18, 1986; sent by Tio Paco; translated by Paco Sevilla] Two dead, five badly hurt and one slightly injured was the result of a traffic accident that happened at three in the afternoon yesterday, at the Tres Caminos crossroads in Chiclana. It was a head-on collision between two vehicles and the involvement of a third that was traveling on the same road, on National Highway 304 between Cádiz and Barcelona, just 75 kilometers from Cádiz. The two vehicles that hit head-on were a Ranger Rover from Cádiz, driven by 35 year old José Monge Cruz \"Camarón de la Iala,\" and a Seat Panda driven by Emillion Villalobos González of Chiclana. These two vehicles hit a Ford Fiesta driven by Juan Luis Sena Braza from Cádiz. While Camarón de la Isla was seriously hurt, the other two drivers were killed in the accident. Also seriously hurt were Dolores Montoya Jiménez, 26 years old and the wife of Camarón and the children of the couple—5 year old Gema and 2 year old Rucio—as well as the passenger in the Ford, 28 year old Fernando Benítez García. Another child of Camarón's, Juan Luis, seven years old, suffered slight injury. Camarón de la Isla, admitted to the Social Security Hospital in Cádiz, suffered head wounds and a fractured wrist, while his wife had a crushed cervical vertebra and a fractured pelvic bone.",
+    "title": "NEWS FROM SPAIN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23",
+    "page_number": 23,
+    "word_count": 243,
+    "article_char_count_full": 1395,
+    "article_char_count_review": 1395,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A8",
+    "article_text_for_review": "Father Federico Perez Estudillo who has been afficiating a flamenco mass in Nimes has received permission from the church authorities to take a cuadro flamenco to the Vatican in order to perform for His Holiness the Pope. Today Rome, tomorrow Mecca. TURNO MATUTINO Y VESPERTINO BOULEVARD DENIEO HUAREZ MO. 1990 LOCAL 6-8 PLAZA UNIVERSIOAO Directora: Ma. Magdalena Cardese FLAMENCO GUITAR 1985 MANUEL BELLIDO (GRANADA) Machine Tuners - New Condition - Very Loud ORIGINAL PRICE $2000 - MUST SELL! Taking Offers Paco Sevilla (619) 282-2837 P.0. Box 4706, San Diego, CA 92104",
+    "title": "NEWS FROM NIEMES, FRANCE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24",
+    "page_number": 24,
+    "word_count": 91,
+    "article_char_count_full": 571,
+    "article_char_count_review": 571,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

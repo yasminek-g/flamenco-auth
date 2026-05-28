@@ -1,0 +1,179 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1994-01-4-left-homenaje-a-pepe",
+    "article_text_for_review": "L'resigna a reconocer que el tiempo pasa porque aún son bastantes las energías que derrocha en imaginar un mundo más perfecto, en el que quepa un flamenco sin aditamentos, puro, pleno de duende y catalizador de las emociones del aficionado. Y la cantaba entristecido porque, en el fondo, Pepe Cruz es un romántico al que le ha tocado vivir en unos tiempos en los que impera el tecnicismo, la insolidaridad, el egoísmo y la incomprensión. Por todo esto y por la tarea realizada en el pasado, Pepe Cruz cantaba por soleá, en la Peña Flamenca de Jaén, su pena:\n\nEn un tiempo era yo de esta casita el cimiento. Ahora soy un «esconchao» que se cae con el viento.\n\nPara dejar constancia de que el cimiento está bien fraguado y que el espíritu de la obra permanece aún con más fuerza si cabe, el colectivo de aficionados que conforman la entidad jiennense acordó homenajear al antiguo presidente con la imposición de la insignia «Candil de Oro». De esta manera se efectúa el reconocimiento a la persona que tras recibir la propuesta, trabajó denodadamente para que el proyecto de crear una revista flamenca se llevara a cabo.\n\nCorría el año 1978 y José Cruz García, junto con Ramón Porras González y Pedro Sánchez Ortega, asesorados por Fausto Olivares Palacios y Juan Antonio Ibáñez, ponían manos a la realización de una obra literaria de la que los jiennenses nos sentimos orgullosos. La revista «Candil» tiene una edición bimestral que abarca ya 91 números, los cuales son un compendio de tratados flamencos, una necesaria obra de consulta para los investigadores de nuestro arte y otras facetas relacionadas con el mismo, una verdadera antología de la historia reciente del flamenco y una importante base para la formación del aficionado.\n\nMas el trabajo flamenco de Pepe Cruz no sólo ha estado encauzado hacia «Candil». Su labor como presidente de la Peña es fructífera e intensa. Y, entre otros merecimientos, hay que reconocer que bajo su mandato —puestas las piedras anteriores por José Solís Rostaing y Manuel de Horna López—, se consiguió el aglutinamiento del más intenso colectivo flamenco de la capital; la realización de festivales en los que figuraron cantaores como Tía Anica la Piriñaca, Rafael Romero, Terremoto de Jerez, La Perrata de Utrera, El Lebrijano, Chocolate, etc.; la ampliación de la antigua sede perística ubicada en el antiguo palacio del Condestable Lucas de Iranzo; la celebración del X Congreso de Actividades Flamencas; la creación de lazos flamencos con los más importantes colectivos de aficionados de toda Andalucía, y en especial con Jerez, o la inculcación del ánimo suficiente para que nuestros artistas se presentaran a certámenes de prestigio y consiguieran premio, como el logrado por Paquito Cruz en el Concurso Nacional de Guitarra Flamenca de Jerez.\n\nAmante inicial de los ecos floridos de Pepe Marchena, Pepe Cruz descubre posteriormente la genialidad de Manolo Caracol, el duende de Manuel Torre, la creatividad de Pastora Pavón, el acrisolamiento ligado de su hermano Tomás, las esencias siguiriyeras de los jerezanos, la maestría solearera de Fernanda de Utrera y la calidad humana, bohemia y cantaora de «Pepe Polluelas».\n\nY llegó el día grande, el 14 de enero de 1994. La ornamentación de la Peña Flamenca de Jaén lució con el máximo esplendor; no podía ser de otra manera. Ni abundaron las luces, ni tampoco la floral parafernalia con la que se suelen adornar los salones en los que se homenajean a los ilustres. La ornamentación estuvo a cargo de la emocional irradiación de los semblantes de los socios y aficionados de toda la vida. Los casi veintitrés años de la existencia oficial de la Peña —el embrión germinó seis o siete años antes— se hacían crónica flamenca en los semblantes de los asistentes. Mas la verdadera irisación la ofrecían los «hilos de plata» —a decir por Pepe Menese—, de la encanecida cabeza de Pepe Cruz, por donde se le escapaban auténticos halos de satisfacción contenida.\n\nNo era para menos. Rodeado de sus hijos y nietos, así como de gran número de amigos personales,\n\nPepe Cruz García recibió en su Peña, de manos del actual presidente Tomás Ortiz Ibáñez, el «Candil de Oro» por el que se le reconocía como un máximo baluarte en la fundación y sostenimiento de la revista «Candil». La emoción de ambos, y el abrazo con que se fundieron dos generaciones de aficionados flamencos, calaron plenamente en los presentes. Tampoco faltó el reconocimiento institucional de la Corporación jiennense con la entrega de la placa que le hizo Alfonso Sánchez Herrera, concejal y socio de la Peña, así como con las palabras finales que pronunció el alcalde José María de la Torre. El acto fue complementado con la lectura de un poema que para tal fin compuso el escritor y poeta Alfonso Fernández Malo, siendo leído por el propio autor, así como con el cante de Manolo Canalejas, Rosario López y Diego Clavel, todos ellos acompañados por la guitarra de Fernando Rodríguez.",
+    "title": "Homenaje a Pepe",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 826,
+    "article_char_count_full": 4935,
+    "article_char_count_review": 4935,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-01-4-right-juan-pe-a-fern-ndez",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nRafael Valera Espinosa\n\nSu semblante denotaba serena expectación, quizás ante el resultado impredecible en tierras jiennenses de su nuevo trabajo y colaboración con Enrique de Melchor, Manuel Martín Martin y la Consejería de Educación de la Junta de Andalucía, que se denomina: Flamenco en la Universidad. Una encrucijada de caminos. Y la verdad es que tenía motivos para sentir curiosidad, pues la desidia generalizada de la afición capitalina por este tipo de actos —arropados casi por multitudes en otras localidades— produce cierta inquietud intuitiva. El desenlace de las cuatro sesiones tuvo un resultado dispar; cierta aceptación en la primera, celebrada en la antigua Escuela de Magisterio de Jaén; muy buena acogida en las villas de Linares y Ubeda y una apática asistencia en la lluviosa\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"afición\"]\n\naceptación en la primera, celebrada en la antigua Escuela de Magisterio de Jaén; muy buena acogida en las villas de Linares y Ubeda y una apática asistencia en la lluviosa sesión del Campus universitario. a trayectoria artística de un cantaor consagrado, respaldada por numerosos trabajos discográficos de notoria popularidad, a veces puede ser puesta en entredicho ante la aceptación o no de una tarea, y es aquí donde se calibra la valentía y la afición de un artista al cual no le importan las consecuencias de una asistencia de público baja, si consigue que ese determinado número de asistentes se integre en el colectivo de aficionados flamencos. Así lo demostró nuestro personaje. El deseado encuentro con Juan Peña se produce al día siguiente del primer acto, y en un relajado ambiente de sobremesa, le fuimos entresacando lo que conside- ráβαμος necesario e importante de su vida cantaora. —¿Cuándo destacas en el clan familiar como cantaor? —Comienzo a cantar desde pequeñito. Mi madre decía que iba por la calle como un loco, siempre cantando. Y escucha qué curiosidad, yo empecé en el mundo de los artistas como guitarrista. Con quince años, y teniendo como compañero a Paco Cepero, iba acompañando a La Paquera y estuve con ella un par de años. La verdad es que siempre he cantao y La Paquera que me sacaba al escenario para que lo hiciera. A los diecisiete años me fui a Sevilla a un tablao que había abierto Gitanillo que se llamaba «El Duende» y de este «Duende» sevillano pasé al de Madrid. En la capital estuve como seis o siete años hasta que me fui con Antonio Gades, con el que actué durante seis años, volviendo más tarde a Sevilla en la época en que estaban proliferando los festivales. A partir de ahí comencé mi carrera en solitario. —¿Cómo se produce tu participación en el concurso de Córdoba del año cincuenta y nueve? —Lo cierto es que yo no me presenté, me presentaron. Nunca\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\ny había que aceptar de buena manera que te inscribiera en el concurso. Yo no estaba pa concursar, ni tenía ánimos, y la prueba es que no he participado después en ninguno más. Bueno, sí, estuve en el año sesenta y cuatro en el de Mairena del Alcor y lo gané. Tampoco es una cuestión de ganar o no ganar, creo que los profesionales no debemos de entrar nunca en un concurso, pienso que ésas son tareas para los aficionados. Cómo se puede enjuiciar el arte de un profesional? Con qué criterios se puede definir el cante de un artista si él ha creído conveniente hacerlo así? Y después, dónde está la imparcialidad?, porque todos tenemos siempre un determinado amor por la personalidad de uno o varios cantaores, y en el cante impera más fanatismo que en la guitarra y el baile, y eso es peligroso. Tú sabes que soy un artista que evoluciono, que busco algo más... Cómo se enjuicia entonces mi cante? Fórmul\n\n[ENDING CONTEXT]\n\nque se está haciendo desde hace mucho tiempo, el introducir el cante en la Universidad. Por qué? Porque ellos son el futuro.\n\n-¿Tienes algún hijo que continúe la tradición artística?\n\n—Ni uno. Mis hijos no cantan ni la «Tarara». Yo tampoco sería feliz si algún hijo mío cantara; no es por nada, sino por lo que sufriría. Bastante he sufrido yo. Porque el cante se quiere mucho y cuando ves pocas respuestas de las instituciones, insisto que son las que deben darlas, pues sufres; aunque pienso que existe cierta inquietud para trabajar en este sentido.\n\n-¿Qué proyectos tienes?\n\n—Toos los del mundo.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Juan Peña Fernández",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 3888,
+    "article_char_count_full": 21713,
+    "article_char_count_review": 4501,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "afición"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-01-7-right-proceso-a-manolo-de-huelva",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nO curre a veces que el estudio de la vida de nuestros artistas resulta suficiente para conocer las circunstancias que le llevaron a la consecución de su obra. Por el contrario, cuando nos enfrentamos con que a lo poco que sabemos de su vida unimos que el trasfondo de su alma escapa a los más perspicaces y más cercanos, como en el caso de Manolo de Huelva, se hace imprescindible, aun a riesgo de elucubrar, añadir algunos datos complementarios que nos descubran su verdadera figura y nos revelen ciertos rasgos no suficientemente pormenorizados de su carácter.\n\nComo el encargo solicitado para esta revista no es ofrecer una biografía más del maestro y sí un análisis en su disparidad entre el papel flamenco desempeñado y el yo propio de la persona, urge decir, de entrada, que la visión de la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nrevelen ciertos rasgos no suficientemente pormenorizados de su carácter. Como el encargo solicitado para esta revista no es ofrecer una biografía más del maestro y sí un análisis en su disparidad entre el papel flamenco desempeñado y el yo propio de la persona, urge decir, de entrada, que la visión de la vida que el tiempo de Manolo de Huelva (Riotinto, 1892-Sevilla, 1976) presentaba, entendía al artista como un ser estrictamente dedicado a su arte y con el único destino de conseguir la sobrevivencia. La guitarra era por entonces el medium de la verdad cantaora, y para el ejercicio de muchos guitarristas esto significaba cargarse de verdad en sus observaciones. Es claro, pues, que unos encontraron en la guitarra la mejor ayuda para poder vivir, pero también otros descubrieron al mismo tiempo un vehículo para expresar ideas, tal como encontramos en Manuel de Huelva. Aunque haya tenido que pasar algún tiempo para que El Huelva-no fuera reconocido como precursor y alcanzara una gloria inima- ginable, no cabe ya duda que se acepta como un nudo fundamental de la red histórica. Admirado de sus compañeros, aplaudido por los cantaores y celebrado por todos es, en comparación con otros grandes maestros, estimado por los entendidos como uno de los genios más significativos del instrumento. En ese sentido, fue llamado por Andrés Segovia «el mayor guitarrista de flamenco viviente» y Melchor de M\n\n[ENDING CONTEXT]\n\ny confundir, o sustituir variaciones absorbidas por otras equivalentes y propias, no son ni deben ser nunca argumentos para condenarlo al anonimato.\n\nLo hemos repetido en otras ocasiones, nunca es tarde para el Flamenco, pero en esta ocasión hemos tenido que esperar veintiséis años para conciliar la justicia histórica con una música original e incisiva, exenta de grandes contrastes y efectos efímeros, pero de una serena grandiosidad, como corresponde a su hacedor, Manolo de Huelva, una primerísima figura de difícil clasificación con lo que se extinguió toda una época de la guitarra flamenca.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Proceso a Manolo de Huelva",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-10",
+    "page_number": 7,
+    "word_count": 4724,
+    "article_char_count_full": 28695,
+    "article_char_count_review": 3029,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-01-10-right-los-estudios-flamencos-contempor",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJosé Luis Buendía López\n\nL y Literatura, han sido también un hecho frecuente en los estudios flamencos contemporáneos que aquí analizamos, y, fundamentalmente, tienen dos direcciones diferentes, aunque complementarias: en la primera se analizan el sentido flamenco de muchas de las creaciones de los poetas o creadores concretos que han aportado algo a nuestra historia jonda: así los estudios de la presencia flamenca de Antonio Machado o Juan Ramón Jiménez (Pérez Ortega), Salvador Rueda (Ricardo María Sánchez), Villaespesa (Alfredo Arrebola), Lorca (Félix Grande) o nuestras indagaciones personales sobre Bécquer, Augusto Ferrán, Juan Rojano o Villalón. Más allá del ámbito poético, no conozco estudio más profundo y riguroso que «Tras la huella del flamenco. El mundo gitano en la obra de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_01 | trigger=\"verdadero\"]\n\norca (Félix Grande) o nuestras indagaciones personales sobre Bécquer, Augusto Ferrán, Juan Rojano o Villalón. Más allá del ámbito poético, no conozco estudio más profundo y riguroso que «Tras la huella del flamenco. El mundo gitano en la obra de Cervantes», de Manuel López Rodríguez, en el cual se explica dicha presencia en el autor del Quinto como un puente tendido entre la entrada de los gitanos en España, en pleno siglo XV, y la aparición del verdadero, aunque embrionario, cante flamenco, en el siglo XVIII. La otra dirección en los estudios complementarios de literatura y flamenco, consiste, no en ver qué presencia jonda hay en determinados autores conocidos, sino en reconocer en el propio tejido del flamenco, rasgos coincidentes con los de la literatura coetánea en cuyo ámbito se desarrolla. En este sentido, pensamos que las conexiones con el movimiento romántico son del máximo interés, ya que ambos reaccionan de igual manera ante los acontecimientos históricos que vive el país por aquella época y presentan una similar respuesta sentimental ante los grandes enigmas existenciales que agobiaron por igual a románticos y flamencos. Así lo ha sabido ver Luis Laur vaur en su «Teoría romántica del cante flamenco», que puede complementarse con nuestro estudio titulado: «Flamenco y Romanticismo», y que ha servido de base para posteriores especulaciones sobre este mismo tema. MISTERIOS Sin duda, la faceta más prolija dentro del amplio mundo de los recientes estudios flamencos, se refiere a la función crítica, una labor que no siempre se ha desarrollado por los límites de la mesura y contención que en toda actividad científica debe significar el hecho de que alguien discrepe de nuestros planteamientos, sino que, en numerosas ocasiones, la virulencia y los resquemores infundados, han hecho acto de presencia ante la publicación de trabajos que disienten de las opiniones del contrario. Y la verdad es que tales planteamientos nos apenan, ya que nada tie\n\n[ENDING CONTEXT]\n\nlos más agoreros. Ver hacia dónde camina el flamenco en un momento en el que se le intenta adornar con brillantes escenografías, instrumentaciones que enriquezcan el sonido de la guitarra y toda suerte de elementos fantásticos que no sabemos a dónde conducirán. Pero consideramos que esa es una labor de hemeroteca y observación cotidianas; si ustedes tienen la paciencia de asistir a festivales, y de leer a diario los espacios que la prensa dedica a los eventos jondos, además de determinadas ponencias y propuestas a Congresos, tendrán oportunidad de enterarse, y puede que hasta de sorprenderse.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Los estudios flamencos contemporáneos / y 2",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-13",
+    "page_number": 10,
+    "word_count": 4493,
+    "article_char_count_full": 28244,
+    "article_char_count_review": 3602,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_01",
+        "family": "AUTH",
+        "trigger": "verdadero"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-01-14-left-coplas",
+    "article_text_for_review": "Soleares\n\nYo tengo celos del aire, porque te besa los labios cuando se cierra la tarde.\n\nBrillaba el sol de la tarde... Bajo un olivo muy verde rozó tu carne mi carne.\n\nAquella noche en la Sierra al ocultarse la luna besé tu carne morena.\n\nYo te quiero más que a nadie; te quiero más que a mi vía, más que a mi pare y mi mare.\n\nTomiyos, jaras, romeros... Toas las flores de la Sierra saben lo que yo te quiero.\n\nFuera de mi pensamiento yo creo que tú no existes, aunque vivas en el tiempo...\n\nTanto tiempo sin besarte... Y anoche besé tus labios: Ya nunca podré orviarte.\n\nY a las seis de la mañana aún te besaba los labios mientras clareaba el alba...\n\nY el alba te despertó... Y la luz clara de agosto la cara te iluminó...\n\nSiguiriyas\n\nJornalero probe del campo andali, en la tierra ardinte de labranza tú tienes tu crú.\n\nPa'da pronto'e rano s'a de menesté terminá la faenamu'pronto... Al atardesé.\n\nDise er manijera dise el encargao, que los cuatro cstales de trigo los lleve al sobra. Yendo'e casería me salió al encontro la «pareja» que a por los campos y me llevó preso\n\nMardita gitana, si te habré quería que hasta er cariño de mi mare güena por ti lo he perdido.\n\nPor la cabe abajo la vi de pasá, iba agarraíta der braso d'un hombre y m'eché a yorá.\n\nQué perra mi suerte, que por tu queré er jué m'a mandao que pase la vía en l'estaribé.\n\nDejarme que yore, dejarme yorá, que der cariño que yo antes le tuve no me quea na.\n\nTe echaste a la vía por lujo y dinero y ahora que estás vieja, probe y sin cariño yo ya no te quiero.",
+    "title": "Coplas",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 296,
+    "article_char_count_full": 1533,
+    "article_char_count_review": 1533,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

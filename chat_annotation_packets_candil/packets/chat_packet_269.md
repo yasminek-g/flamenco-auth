@@ -1,0 +1,192 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1993-01-17-right-noticiario-flamenco-francisco-hi",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«Hoy es, sin duda, uno de los días más grandes y más felices de mi vida. Creo que no sabría encontrar las palabras para expresarles a ustedes toda la emoción, el orgullo y la satisfacción que siento en este momento. Porque es mucho, mucho, lo que hoy recibo de mi pueblo».\n\nTensa y emocionadamente iniciaba Luis Pérez Cardoso, Luis de Córdoba para el arte, sus palabras de agradecimiento por el nombramiento de Hijo Predilecto de Posadas. Y no era para menos, ser hijo predilecto del pueblo supone el más alto honor y corona el éxito verdadero. Un honor que Luis de Córdoba alcanza, no por capricho arbitrario de unas personas representativas del municipio, sino con el apoyo de la práctica totalidad de los vecinos de Posadas, de los malenos de la diáspora y de un amplísimo sector de la afición\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"cuerpo\"]\n\ncimiento por el nombramiento de Hijo Predilecto de Posadas. Y no era para menos, ser hijo predilecto del pueblo supone el más alto honor y corona el éxito verdadero. Un honor que Luis de Córdoba alcanza, no por capricho arbitrario de unas personas representativas del municipio, sino con el apoyo de la práctica totalidad de los vecinos de Posadas, de los malenos de la diáspora y de un amplísimo sector de la afición flamenca; un éxito conseguido a cuerpo limpio, cumpliendo con el deber, con naturalidad, sencillez y sinceridad como cantaor. Hoy, Luis de Córdoba es uno de los más destacados representantes de su generación artística, la de los años setenta. Un cantaor en plena sazón que ha encontrado su propio acento, que ha logrado una madurez artística y profesional que le motiva aún más en su inquietud de estudio y comunicación con el aficionado, una feliz realidad y una esperanza cierta de futuro. En Luis de Córdoba, junto a sus evidentes do-tes naturales para el cante, destacan su sensibilidad e inteligencia, su in-quietud y su permanente dedicación al estudio de los grandes maestros tratando de descubrir en ellos algo que no posea. Sabe que abordar una obra artística personal sólo puede hacerlo con una formación seria y rigurosa. Esa labor de investigación, rescate y puesta al día le permite entender y ver la belleza y comunicar ese trance a los demás. Luis de Córdoba es, no obstante, un artista muy de hoy en día y aporta al flamenco actual una imagen-sonido consecuente con la época que nos toca vivir, con un abso\n\n[ENDING CONTEXT]\n\nde Córdoba de Sant Feliu de Llobregat y Almazora y de la Coordinadora de Entidades Flamencas y Andaluzas de Cornellá especialmente desplazados a Posadas para sumarse al homenaje.\n\nLuis de Córdoba finaliza zaba sus palabras de agra- decimiento y aceptación diciendo:\n\n«Distinción que recibo con todo el cariño y con toda la responsabilidad de que soy capaz. Distinción que ofrezco al mundo del Flamenco y a todos ustedes, queridos paisanos, amigos y aficionados, por estar ahí, por regalarme la confianza, el apoyo y el estímulo que tanto necesito. Un abrazo muy fuerte y muchas gracias a todos».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Noticiario flamenco Francisco Hidalgo 301 Cantos y cantes de la Saeta",
+    "periodical": "candil",
+    "issue_id": "1993-01",
+    "year": 1993,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1179,
+    "article_char_count_full": 7063,
+    "article_char_count_review": 3161,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "cuerpo"
+      }
+    ]
+  },
+  {
+    "article_id": "1993-01-18-right-cantos-y-cantes-de-la-saeta",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDonde el autor analiza el origen de la saeta litúrgica, su continuidad a través de los tiempos y el nacimiento de la saeta flamenca, dentro del conjunto de los cantes flamencos andaluces.\n\nE 1 Diccionario de la R.A.E. define así la palabra saeta:\n\n— Del latín sagitta: Flecha, dardo o arma arrojadiza que se dispara.\n\n— Copla breve que se canta en las iglesias y en las calles durante ciertas solemnidades religiosas.\n\n— Copla breve y desgarrada que se canta principalmente en Andalucía ante los pasos de Semana Santa.\n\nLa R.A.E. tuvo que dar la segunda definición en el año de 1803, por que ya desde el siglo XVII, los frailes francisanos y los frailes capuchinos de Andalucía, empezaron a llamar saeta a las letrillas de los cantos por ellos empleados en sus procesiones de penitencia.\n\nLa tercera\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_01 | trigger=\"dentro\"]\n\nosas. — Copla breve y desgarrada que se canta principalmente en Andalucía ante los pasos de Semana Santa. La R.A.E. tuvo que dar la segunda definición en el año de 1803, por que ya desde el siglo XVII, los frailes francisanos y los frailes capuchinos de Andalucía, empezaron a llamar saeta a las letrillas de los cantos por ellos empleados en sus procesiones de penitencia. La tercera definición es de época reciente, por la aparición de la saeta dentro de la musicología de los cantes flamencos andaluces. La saeta antigua En los siglos XVI y XVII, los padres franciscanos, en determinados momentos de sus misiones, entonaban unas copillas que entre el pueblo eran conoci- EN MALAGA : En la Imprenta, y Libreria de D. FELIX DE CASAS Y MARTINEZ, frente del S.O. CRISTO DE LA SALUD. AÍO de 1785. das como saetas, jaculatorias o saetas penetrantes. Existen obras escritas por Fray Diego de Cádiz —El Apóstol de Andalucía—, Fray Isidoro de Sevilla y Fray Diego de Valencia, en cuyos libros se recogen vivencias y letrillas de estas coplas. Así, Fray Isidoro de Sevilla escribe, en el año 1741: «...iban descalzos, la mirada hacia el suelo, mortificado el semblante, de modo que cada uno parecía una pobrísima imagen del seráfico franciscano. Uno llevaba la sacrosanta imagen del Crucificado Redentor, otro una campanilla que tocaba pausadamente, que alternaba con una voz clamorosa, echando saetas penetrantes, de suerte que todo su conjunto componía un espectáculo que podía mover los corazones más duros». Las letrillas de estas saetas tenían como finalidad despertar del sueño a los pecadores del vicio, a los que alentaban a seguirlos en la procesión hasta la Iglesia, para conseguir el perdón divino a través de los Sacramento. Vbgr.: «De parte de Dios te aviso que trates de confesarte / si no quieres condenarte». Existen diversas teorías sobre la génesis musical de la saeta antigua. Según dicen, algunos investigadores, se descubre una raíz árabe. Otros aseguran que se deriva de los cantos sinagogales judíos. Hay quienes afirman la descendencia directa de los antiguos cantos procesionales cristianos. Centrándonos en estas tres teorías, se dice y se escribe que la raíz árabe arranca de los almuédanos de Córdoba, Granada y Málaga, y según testimonio de Gil Benumeya, dice que escuchó en Túnez a un almuédano de Nazaret que cantaba en la noche del Ramadán un canto semejante a la saeta antigua que se canta en algunos puntos de Andalucía. La teoría judía se basa en la música litúrgica de los hebreos, por sus antecedentes directos con las salmodias cristianas. Hay quien asegura que en las sinagogas de Kiev se mantiene un canto que tiene gran semejanza con la saeta antigua. La tesis de que la saeta procede de los antiguos cantos procesionales cristianos tiene en Fray Diego de Valencia su más exaltado defensor, fundamentando sus razonamientos en tres puntos básicos: 1.º, que estos cantos se realizan «ad libitum»; 2.º, en la tradición no interrumpida; y 3.º, que la saeta como canto popular tuvo el mismo origen que los cantos populares: el pueblo. La configuración literaria de la saeta antigua, cantada por los padres franciscanos y capuchinos en forma de avisos y jaculatorias, se escribían en pareados, tercetos, redondillas, cuartetas, quintillas y hasta de métrica libre. Aparte estas clasificaciones literarias, existen otras de diversos autores que las agrupan temáticamente:\n\n[ENDING CONTEXT]\n\nJuan Parrilla y Ana Parrilla. Discípulo de Rafael del Aguila. Como bailaor, practica en los fines de fiesta las patas por bulerías creadas por su padre. Manuel Ríos Ruiz ha definido así su personalidad artística: «El toque de Parrilla de Jerez se distingue, está inmerso en lo más esencial del Arte Flamenco, tiene un matiz racial que lo particulariza y personifica, una donosura específica en las falsetas que sugestiona. Y si en los estilos grandes —siguirías y soleares— es su guitarra sobrecogedora, en las bulerías es cada día más sorpresiva y alucinante».\n\nTOCAORES DE HOY\n\nParrilla de Jerez\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cantos y cantes de la Saeta",
+    "periodical": "candil",
+    "issue_id": "1993-01",
+    "year": 1993,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-27",
+    "page_number": 18,
+    "word_count": 9032,
+    "article_char_count_full": 54913,
+    "article_char_count_review": 5025,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_01",
+        "family": "COMM",
+        "trigger": "dentro"
+      }
+    ]
+  },
+  {
+    "article_id": "1993-03-3-left-editorial",
+    "article_text_for_review": "Editorial\n\n¿S e ha de recurrir a la evocación de los viejos maestros para sopesar el momento crítico por el que atraviesa el flamenco? Ciertamente puede parecer algo desalentador este menester y significar, a la vez, una tendencia a la exaltación de que cualquier tiempo pasado siempre ha sido mejor. Pero no es menos cierto que el pueblo que no recuerda su historia, y en este caso, el colectivo flamenco, carece de auténtica sensibilidad.\n\nComo en otras tantas evocaciones acaecidas en años anteriores, la de Tomás Pabón Cruz tiene su importancia. No más que unas, ni menos que otras, sólo la adecuada, la exacta y la que por derecho propio le corresponde. La figura del cantaor sevillano ha estado aureolada de rarezas, genialidades, encorsetamientos y claroscuro pareceres, que con delimitada premeditación, han mantenido en un claro-oscuro la auténtica vida del artista.\n\nEl 28 de febrero de 1963, el poeta cordobés Ricardo Molina Terno, titulaba su trabajo en el Diario «Córdoba»: «Tomás Pavón, el mejor cantaor Sevilla-\n\nno del siglo». Después del tiempo transcurrido, la afirmación ha tomado más cuerpo y ha traspasado con notoriedad el merecimiento y el entorno entonces establecido. La calidad interpretativa del cantaor, a la que hay que sumar su singular creatividad, así como la reivindicación que de su figura han venido y vienen realizando determinados estudiosos, y corroborado la mayor parte de los artistas flamencos, ha hecho posible que la persona de Tomás, tantas veces marginada por los ecos floridos y empalogosos de la «ópera flamenca», ocupe su pedestal de honor en la historia de este arte. En este año 93, cuando se han\n\ncumplido cien años de su nacimiento, acaecido el 16 de febrero de 1893, el mundo flamenco ha comenzado a dejar constancia de la importancia de dicho evento, a la vez que reconoce cuáles son los auténticos valores que un artista ha de poseer para engrandecer nuestro arte, subordinando así tantos intentos de matizar con modernismos una cultura que sólo ha necesitado personas como Tomás para patentizar su pureza, belleza y hondura.\n\nAl raro de Tomás Pavón —raro porque sólo cantaba donde y con quien sabía que era apreciado y compartido su cante—, aunque algo tarde, se le está haciendo justicia, se le reconoce su magisterio cantaor y se revoloriza su creatividad. Ya no necesita del jaleador amparo de su hermana Pastora, ni de la desinteresada devoción que por él sentía. Ahora, Tomás, por méritos propios tantas veces olvidados, tiene ganado su lugar en la historia flamenca. Sus siguiriyas, soleares, cantes de fragua, granaínas, bulerías o fandangos, son la carta de presentación de un gitano genial, maestro y artista.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1993-03",
+    "year": 1993,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 436,
+    "article_char_count_full": 2674,
+    "article_char_count_review": 2674,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1993-03-4-left-tom-s-pab-n-cien-a-os",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSiempre he sentido mucho más que respeto al tratar de Tomás Pabón. No sólo por su cualidad de genio cantaor, sino, también, por la facilidad con que uno puede caer en el elogio desmedido. La lejanía temporal del artista y sus peculiaridades vitales son razones sobras para una sobrevaloración que no aporta nada a su dimensión musical, y desorienta respecto a condicionantes, humanos y temporales, altamente significativos para entender el desarrollo del arte flamenco. De Tomás Pabón —con «b» figura en la partida de nacimiento aunque, en cuestiones de cante, ni la «b» ni la «v» han sido nunca determinantes— se han dicho toda clase de alabanzas. A veces, sin pensar en que los piropos nos conducen a situaciones reales engañosas. En ocasiones la exageración en el elogio enmascara realidades que\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"histórica\"]\n\ngnificativos para entender el desarrollo del arte flamenco. De Tomás Pabón —con «b» figura en la partida de nacimiento aunque, en cuestiones de cante, ni la «b» ni la «v» han sido nunca determinantes— se han dicho toda clase de alabanzas. A veces, sin pensar en que los piropos nos conducen a situaciones reales engañosas. En ocasiones la exageración en el elogio enmascara realidades que no quitan ni ponen calidad, pero sí difuminan la perspectiva histórica de la figura en cuestión. Yo no voy a negar valor a todas y cada una de las flores que a Tomás se le han dedicado. Pero creo, sinceramente, que debemos ser más realistas, porque la realidad no tiene por qué enfrentarse a la admiración. Tomás —porque sólo hay un Tomás, así a secas, en el mundo flamenco— nace en un momento histórico determinado y con unas circunstancias vitales determinadas. Historia y carácter que van a conformar, no sólo su individualidad, sino también su papel en el mun- dillo artístico que le tocó vivir. En flamenco, como en otras proyecciones artísticas de ejercicio minoritario, es el tiempo el que viene a poner las cosas en su sitio. En el caso concreto que nos ocupa se ha tardado cien años en reconocer, abiertamente, su valor. Y esto, que sólo es cierto si consideramos el reconocimiento a nivel masivo, se debe, entre otras razones, a la propia idiosincrasia del cantaor. En estos temas suele jugar un papel fundamental el tópico de los olvidos. Y aquí el tópico debe desecharse. A Tomás Pabón jamás se le ha olvidado, a nivel general, porque nunca, generalmente, fue tenido en cuenta. Ahora no vale hablar de marginaciones, de injusticias, de desprecios... Siempre ha estado presente en el sentimiento y la mente de los buenos, aunque nunca, es cierto, como en estos momentos. El hecho de cumplirse cien años de su nacimiento es un dato histórico que aglutina intereses, que amontona afectos, que apiña admiraciones y consigue descubrimientos. Porque, para muchos, era casi un desconocido. Y hete aquí que comienza a aflorar una especie de sentimiento de culpabilidad por lo que no se ha hecho. Y, honradamente, creo que se están sacando las cosas de quicio. Algo de su vida Tomás vivió una época tremendamente difícil. Era un hombre retraído, casi hermético, afectado por problemas físicos graves que lo situaban en inferioridad. Y no estaban los tiempos para superar los obstáculos que el propio cantaor ponía al acercamiento de los demás. Por otra parte su aparición pública viene marcada por su calidad de «hermano de la Niña de los Peines». Así se anuncia en las grabaciones y así permanece, para el gran público, hasta su muerte. Es absolutamente falso eso de que, en su tiempo, fuera menospreciado. Fernando el de Triana en su «Arte y Artistas Flamencos», dice de él: «En los cantes de Enrique el Mellizo hace verdaderas filigranas y en los cantes de Jerez, por siguiriyas, raya a gran altura, porque además de ser un gran copista los canta con admirables facultades. Es una verdadera lástima que este notable cantador no se exhiba en público donde seguro que tendría más porvenir elcónmico y su fama\n\n[ENDING CONTEXT]\n\ncante flamenco.\n\nSi Vallejo, Pastora o Antonio hubiesen continuado la postura de Tomás Pabón, el cante estaría disminuido grandemente y quizá no sería objeto de adoración y estudio.\n\nPero una cosa no tiene por qué quitar la otra.\n\nHasta el momento, teniendo en cuenta lo oído, juzgándolo según las leyes del tiempo en que nació, el cante de Tomás sigue estando, cincuenta o más años después de ser grabado, como algo casi imposible de superar en autenticidad, en calidad. Su cante tiene, como el agua pura, la maravilla esencial de lo incomparable.\n\nCada cosa en su sitio y un sitio para cada cosa.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Tomás Pabón: Cien años",
+    "periodical": "candil",
+    "issue_id": "1993-03",
+    "year": 1993,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-5",
+    "page_number": 3,
+    "word_count": 3126,
+    "article_char_count_full": 18510,
+    "article_char_count_review": 4731,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "histórica"
+      }
+    ]
+  },
+  {
+    "article_id": "1993-03-6-left-sobre-algunas-teor-as-antigitan-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nBernard Leblon\n\nA unique Manuel Barrios me había hecho el honor de citarme profusamente en su último libro, Gitanos, Moriscos y Cante Flamenco, publicado en 1989, donde proseguía por su cuenta una polémica empezada, años atrás, en Candil, yo no tenía la intención de persistir en ese camino por diversos motivos. El primero era el to- no denigrante, que adoptaba por primera vez mi interlocutor, cuando me englobaba, no con guasa, si- no con ironía amarga y cáustica, en el rechazo a esos malditos franchues que siempre se meten donde no los llaman:\n\n«Es de agradecer el empeño tradicional que los autores franceses han puesto siempre en la tarea de descubrirnos España. Y menos de agradecer el que, sistemáticamente, lo intenten a través de los aspectos más sombríos y pintorescos» (1).\n\nPidiéndole\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"segundo\"]\n\nrea de descubrirnos España. Y menos de agradecer el que, sistemáticamente, lo intenten a través de los aspectos más sombríos y pintorescos» (1). Pidiéndole disculpas a Manuel Barrios por haberme interesado por la historia de una tierra más entrañable para mí que mi propia patria, sin que vengan a cuento los aspectos «sombríos» y menos todavía los «pintorescos», le diré que, si mi primer motivo era precisamente evitar este tipo de desviación, el segundo es que, por lo general, esas polémicas no tienen sentido y no nos pueden llevar a ningún sitio. Creo que el deseo de combatir a todo trance los argu- método de investigación y que la búsqueda de la verdad exige más serenidad. El tercer motivo es considerar lo insulso del debate. Hoy, los conocimientos sobre los orígenes del flamenco se han ampliado y difundido de tal manera que resultaría tan ridículo afirmar que el flamenco se debe únicamente a los gitanos, como pretender que no intervinieron para nada en el proceso de elaboración de este arte andaluz. A estas alturas no entiendo bien lo que puede ganar un campo «andalucista», si, entre las aportaciones recibidas por el Flamenco, sustituimos a unos gitanos —andaluces desde hace más de cinco siglos, no lo olvidemos— por moriscos, judíos o efímeros bizantinos. Por último, la división del mundillo flamenco en bandos opuestos de gitanistas y antigitanistas —como güelfos y gibelinos— me parece totalmente absurda. El hecho de haber estudi\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_02 | trigger=\"autoridad\"]\n\ntantas reservas, acepto la demanda de Manuel Barrios es porque nos precisa que su deseo de suscitar la polémica no es gratuito, y que su propósito es promover la aportación de una documentación capaz de alimentar la reflexión de todos. Ahora bien, sería conveniente que Manuel Barrios adoptara los mismos principios para su demostración y no se conformara con citar opiniones afines a las suyas. Estas no pueden considerarse como pruebas, pese a la autoridad de sus autores, siempre que se presenten como meras afirmaciones. Lo siento mucho, pero no tienen otro carácter las citas de Rafael Lafuente, Mercedes Pradal de Martín, Anselmo González Climent y Pedro Camacho Galindo, aseverando que los gitanos no son creadores. Quisiera que me digan, ¿de quién son los cantes atribuidos a Manuel Cagancho, El Fillo, Curro Dur- se, Manuel Molina, El Loco Mateo, Paco la Luz, Diego el Marruro, Manuel Torre, etc.,\n\n[EVIDENCE WINDOW 3 | retrieval_hint=COMM_03 | trigger=\"publicado\"]\n\nová, Vojtech Fabian, Ondrej Pesta, Bartolomiej Daniel, Terá Fabianová, Frantisek Demeter, Dezider Danga, Margarita Reisnerová, etc. Citemos también al escritor Bari Karoly y al poeta Daróczi József, que viven los dos en Hungria; en Finlandia a Veijo Baltaz, en Suecia a Katarina Taikón; en Yugoeslavia a Gina Ranjicic, Slobodan Berberski —autor de más de diez libros de poesía—, Rajko Djuric —autor de Bikheresgo, bilimoresgo (Sin casa, sin tumba), publicado en edición bilingüe, en París, en 1990—, Jovan Nikolic, Racin Sejdic, Ilaz Saban, Seladin Saliesori y Predag Jovici. En España, no se pueden olvidar los nombres de Juan Dios Ramírez Heredia —a más de diputado europeo autor de varios libros: Nosotros los gitanos, En defensa de los míos y Cartas del Pueblo— y de José Heredia Maya, autor de los espectáculos teatrales Camelamos naquerar y Maqama jonda. En los otros dominios artísticos, se pueden ci\n\n[ENDING CONTEXT]\n\ny judíos— no le quita un ápice a la inmensa labor creativa de los an-\n\ndaluces no gitanos en ese terreno, ni significa que pudiera surgir el fenómeno Flamenco fuera de Andalucía. ¿Para qué sirven esas afirmaciones según las cuales los gitanos andaluces serían más tontos, incultos y bárbaros que los de otras naciones? ¿Alguien cree que puede engrandecerse con el desprecio a los demás? Una vez admitida la distribución histórica de los papeles, no vamos a jugar a Silverio contra El Fillo ni a Manuel Torre contra Chacón, porque ya se trata de preferencias personales y eso no se ha de discutir.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Sobre algunas teorías antigitanísticas",
+    "periodical": "candil",
+    "issue_id": "1993-03",
+    "year": 1993,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 2710,
+    "article_char_count_full": 16505,
+    "article_char_count_review": 5036,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segundo"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "autoridad"
+      },
+      {
+        "window": 3,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicado"
+      }
+    ]
+  }
+]
+```

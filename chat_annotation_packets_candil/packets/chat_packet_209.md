@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-03-12-left-aunque-no-quepa-en-el-papel-cant",
+    "article_text_for_review": "M e ha resultado curiosa y alentadora la lectura de este libro con cuyo autor, al que desgraciadamente desconozco, me unen no pocas inquietudes intelectuales, e incluso yo me atrevería a decir que, a veces, intuiciones similares en el siempre arriesgado deporte de averiguar de dónde soplan los vientos nutricios que han generado a lo largo de la historia esto que llamamos flamenco.\n\nEl doctor Urbaneja defiende en varios capítulos del libro las raíces del flamenco como algo patrimonial del pueblo andaluz, y por tanto desligado de influencias árabes, moriscas o gitanas que no estén emparentadas con la propia génesis romance de nuestra comunidad. En este sentido resulta ejemplar su profundo análisis comparativo de las primitivas composiciones musicológicas y agrupaciones métricas medievales (moaxajas, zéjeles o jarchas) y su relación con el sentido rítmico y de medida silábica y estrófica de cantes flamencos tales como la caña, los verdiales o cantos populares andaluces, emparentados con diferentes labores agrícolas, para concluir en las líneas de continuidad que existen entre todas estas manifestaciones artísticas.\n\nInteresantes también resultan sus teorías raciales, llenas de respeto y sensatez, acerca de los gitanos españoles, entre los que distingue dos tipos diferentes y que, lógicamente, influyeron de forma desigual en nuestro arte: de un lado los sumerios, que, ante presiones expansionistas de pueblos Cantes, cantares y cantarcillos (Teoría sobre la génesis del cante flamenco) Antonio S. Urbaneja Prólogo de Juan Antonio Pérez-Bustamante Monasterio Servicio de Publicaciones. Universidad de Cádiz, 1989, 2.ª edición cercanos, se lanzaron a una hégira desordenada hacia los montes armenios o hacia el Sur, a través del Nilo; son los gitanos de la Bética, los verdaderos antecedentes de las grandes figuras del flamenco y que el autor separa de los que entraron en la península por el Norte, «los hombres negros de Zend», o sea, los zíngaros o zincalís, que tienen menos importancia, siempre a juicio del autor, para nuestro arte; antes bien, estos gitanos hindúes se dedicaron al espectáculo ambulante del oso y la cabra, que constituyó su principal actividad laboral.\n\nEl libro, que en su sencillez aparente encierra años de estudio y seriedad, bajo nuestro punto de vista está mal ordenado en esta segunda edición (desconocemos la primera), ya que incurre, al tratarse de capítulos publicados por separado, o de conferencias pronunciadas en fechas distintas, en reduplicaciones de ideas, y hasta de las coplas que sirven de apoyo a sus tesis. Incluso le sobran capítulos que no tienen nada que ver con las ideas centrales tan sensatamente sostenidas (y la supuesta relación entre Freud y Balmaseda, el sentido de lo popular en Machado o el capítulo sobre Marcos de Obregón) y que, siendo como son interesantes, podían haber formado parte de trabajo diferentes. Pero, en fin, la sencillez y amplitud consiguiente del título, justifica ese cajón de sastre en el que Urbaneja ha convertido una serie de brillantes aportaciones, elaboradas a lo largo de los años, sobre el flamenco y que todos nosotros deberíamos de leer.",
+    "title": "Aunque no quepa en el papel Cantes, cantares y cantarcillos",
+    "periodical": "candil",
+    "issue_id": "1990-03",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 493,
+    "article_char_count_full": 3147,
+    "article_char_count_review": 3147,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-03-12-right-opini-n-m-s-luz-sobre-los-hist-r",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nHace varios años fue publicado un trabajo sobre las concesiones a Manuel Vallejo, de la Llave de Oro del Cante y de la Copa Pabón. Y poco más o menos se decía, en cuanto a la llave, que la única legalmente concedida fue la de Mairena. Yo, entonces, formulé mi réplica para demostrar que, la de Vallejo, también le fue adjudicada legalmente, como veremos más adelante.\n\nDesde que hice la réplica no he dejado de ser hostigado para que justifique con documentos (esto es utopía) la legalidad de la concesión e incluso del acto flamenco. Con documentos no puedo hacerlo porque el archivo del Teatro Pabón ya no existe, pero sí lo voy a hacer de la forma más clara posible. Manuel Torre (7), entrega la Llave del Cante a Manuel Vallejo (12). El adolescente en pantalones cortos (2) con Luis López Tejera\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionado\"]\n\nhostigado para que justifique con documentos (esto es utopía) la legalidad de la concesión e incluso del acto flamenco. Con documentos no puedo hacerlo porque el archivo del Teatro Pabón ya no existe, pero sí lo voy a hacer de la forma más clara posible. Manuel Torre (7), entrega la Llave del Cante a Manuel Vallejo (12). El adolescente en pantalones cortos (2) con Luis López Tejera «Maravilla». Hace pocos días he recibido la tercera carta de un aficionado, diciéndome algunas cosas que, ciertamente, han colmado el vaso de mi paciencia, y voy a tratar de pulverizar su contenido con este trabajo. Siento comunicarle, amigo mío, que le han informado muy mal respecto del desarrollo de los concursos de Cante Jondo, celebrados en Madrid en los años 1925 y 1926. ¿Con qué autoridad cuenta para decirme que Manuel Vallejo se llevó a Sevilla sus trofeos sin merecérselos, por habérseles concedido sin competición y en una reunión nocturna bajo los efectos etílicos de los asistentes? Así, precisamente, en una reunión de señoritos le fue concedida al Nitri. ¿No lo sabía usted? ¿No será que ha oído campanadas, pero no sabe de qué campanario procede? Sepa que, por el transcurso natural del tiempo, excepto Luis López Tejera «Maravilla», los demás asistentes a aquellos actos han fallecido, por lo que en buena lógica tendríamos que suponer que su informante haya sido Luis. Pero no, le conozco y sé que, en modo alguno, ha podido facilitarle información tan inexacta de los hechos acaecidos en los concursos de los años 1925 y 1926. Con conocimiento de causa le hago saber que la Copa Pabón, fue ganada por Vallejo el año 1925, tras reñidísima competición. Y cómo sería ésta que para el jurado las deliberaciones fueron harto difíciles. El concurso duró cuatro días consecutivos, debido al gran número de cantaores inscritos. Por cierto, que uno de ellos, llamado Manuel Blanco Játiva, sin proponérselo, como es natural, les proporcionó no pocos quebraderos de cabeza por tratarse de un firme candidato, junto a Manuel Vallejo, al preciado trofeo. En cuanto al nombramiento de presidente del jurado debo decirle que, según me informó Anita, la ahijada de Chacón, éste se resistió a aceptarlo porque, como tenía tan buen corazón y sentía esa de\n\n[ENDING CONTEXT]\n\nla Guitarra, fue para José Cepero y «Luis Maravilla» (*).\n\n5) Año 1929. Copa del Cante. La conquistó Chato de las Ventas.\n\n* * *\n\nMe agradaría que este breve trabajo histórico-artístico, terminara, de una vez por todas, con la duda en cuanto a la legalidad y merecimiento de la concesión a Vallejo de la Llave de Oro del Cante Jondo. Así lo espero.\n\n(*) El sobrenombre artístico de «Maravilla», se lo otorgó a Luisito, el general don Miguel Primo de Rivera, al escucharlo «tocar», con pantalón corto, en su primera actuación en público. El general le felicité y le dijo: «niño, eres una maravilla».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Más luz sobre los históricos Concursos de Cante Flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-03",
+    "year": 1990,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1568,
+    "article_char_count_full": 9154,
+    "article_char_count_review": 3875,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionado"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-03-14-left-pe-a-flamenca-femenina",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNada más entrar y ya percibes la dulce mezcla de perfumes femeninos, que se funden entre las muchas fotos antiguas de color sepia y de las de ahora; casi todas de mujeres. Gente que han vehiculado con sus gargantas los sentires más profundos de historias nuestras: de Andalucía.\n\nUn pequeño y limpio mostrador, preferentemente para codos varoniles, te da la bienvenida en la entrada de este hábitat flamenco, mientras observa el reducido escenario que habla ya de un montón de vivencias flamencas. Por sus tablas pasaron —y seguirán pasando— todo el que tenga algo que decir por derecho. Alrededor, mesas y sillas para el que quiera receptar —mujer y hombre— los mensajes de un arte que, cada día, tiene más adeptos. Sobre todo en esta entidad acogedora que, mires por donde mires, te sientes\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Mujer\"]\n\nablas pasaron —y seguirán pasando— todo el que tenga algo que decir por derecho. Alrededor, mesas y sillas para el que quiera receptar —mujer y hombre— los mensajes de un arte que, cada día, tiene más adeptos. Sobre todo en esta entidad acogedora que, mires por donde mires, te sientes atrapado por el anagrama que la identifica: una guitarra flamenca con una mano en el «cuadril». Su cuadro representantivo de cante, con un disco en el mercado «De Mujer a Mujer» y otro en la puerta de salida «A Huelva Cantamos», avalan el concepto claro y preciso de que una peña flamenca tiene que proyectar, a todos los niveles propiciados, el resultado de su estudio e investigación para la conservación de la riqueza musical de su tierra. Cuando el farol artesanal de la Avenida de Pablo Picasso alumbra el azulejo alfarero de Peña C. Flamenca Femenina, abordamos la puerta transparente de su secretaría Huele a mujer por sus cuatro costados; a mujer y a flamenco. Cosa difícil en este retorcido mundo donde, aún, quedan residuos de machismo costumbrista. Pero es irreversible. El hecho está consumado y, pese a pequeños y casi imperceptibles «sabotajes» de los enanos de turno, este castillo está fuertemente construido y bien defendido por un centenar de «Agustinas de Aragón» y por muchos aficionados de los que estamos en el tendido de barrera para animar la faena y, en muchas ocasiones, hasta para tirar nuestro sombrero cuando entendemos que esta lidia flamenca es difícil de mejorarla. para sentarnos junto a su presidenta, Aurora García, que está acompañada de Manoli Rodríguez, RR.PP. de este colectivo flamenco femenino. Nuestra intención es llevar a los lectores de esta entrañable Revista «Candil» la actualidad real de una peña de mujeres que, pese a los escépticos de un pasado de tabernas, está marcando una pauta en este complejo mundo peñero. —Aurora, ¿cómo comenzó esta aventura? —Pues mira, todo empezó con motivo de\n\n[ENDING CONTEXT]\n\narte flamenco.\n\nHasta aquí las palabras de una mujer honesta y trabajadora, que sabe generar las corrientes acogedoras de una peña de mujeres que tiene los pies en el suelo. Con su acertada política de convivencia con las entidades masculinas y con sus proyectos bajo el brazo recorriendo los despachos de Cultura, está demostrando que las féminas, además de saber ocupar un lugar preferente en la vida social, política y económica, también lo ocupan en el Flamenco. Si esto no es saber hacer bien las cosas para que, muchos, nos miremos en el espejo de sus aguas claras, que venga Dios y lo vea.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Peña Flamenca Femenina de Huelva",
+    "periodical": "candil",
+    "issue_id": "1990-03",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 2170,
+    "article_char_count_full": 12910,
+    "article_char_count_review": 3544,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Mujer"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-03-15-right-discografia",
+    "article_text_for_review": "Ciertamente que el trabajo desarrollado por Enrique Morente y Agustín Castellón «Sabicas», ha tomado recientemente más actualidad que la aparición del mismo en el mercado hubiera podido suscitar en el aficionado. La muerte próxima del famoso guitarrista navarro, ha contribuido a este menester y quizá haya empañado bastante la presentación oficial del mismo, por cuanto la pérdida de una figura legendaria del flamenco como la de «Sabicas», llena de dolor todos los estamentos relacionados con este arte, considerando también estamento al colectivo que forma la afición flamenca. No quiero en esta sección glosar la figura del guitarrista desaparecido, pues no es el lugar apropiado y mi inexperta alabanza literaria no iba a superar lo ya publicado en esta revista sobre la vida y el arte de un singular genio como ha sido Agustín Castellón «Sabicas». Escuchadas con cierto detenimiento las dieciocho grabaciones que conforman este doble álbum titulado «Morente-Sabicas», la primera impresión que se saca es la consolidación de una auténtica escuela flamenca, como es la creada por el cantar granadino. La forma de entonar los cantes, el juego melismático que desarrolla y la personalidad que aporta en sus interpretaciones, me da pie a aseverar lo escrito anteriormente. Cierto que en sus ecos se pueden apreciar evocaciones de artistas que han marcado un hito en la historia del flamenco y como alusión preferente lo haré con la figura de don Antonio Chacón. Pero no es menos cierto que el genio jerezano igualmente be- bio en las fuentes de otras insignes figuras flamencas y creó a la vez su propia personalidad o escuela flamenca.\n\nLa segunda, es el acogimiento enciclopédico —demostrado en más de un trabajo anterior— que el artista desarrolla en estos dos discos. El conocimiento de los estilos aquí plasmados, los diversos personalismos evocados, los matices con que\n\nTítulo: Morente-Sabicas\n\nCanta: Enrique Morente\n\nToca: Agustín Castellón «Sabicas»\n\nColaboran: Montoyita, El Toleo, Antonio Carbonell, El Negri, El Bola y Diego Sabicas.\n\nDiseño de Paco España. Realización de J.C. Carmona. Sonetos de Joaquín Sabina.\n\nReferencia: PL 74587 (2) (5H) RCA. Madrid, 1990. adoba sus interpretaciones o la sencillez estructural que imprime a los cantes, son muestra del amplio acervo artístico que Enrique Morente acrisola en su persona.\n\nLa tercera y última, el abordamiento de los denominados estilos de ida y vuelta como la vidalita o la guajira. Y es que Enrique Morente siempre ha mantenido una buena impresión de los ecos que se desarrollaban —en la según él—, mal llamada «opereta flamenca». Sin embargo, el tra- to personal que realiza en este trabajo de los cantes antes citados, muestra un que- hacer más flamenco, nada dulzón y a ve- ces, con un acercamiento bastante ajustado al folclore iberoamericano.\n\nAunque todas las grabaciones son merecedoras de un preciso destacamiento, es quizás en los cantes «por soleá» donde la grandeza cantaora de Enrique Morente suena con más flamencura. Otro tanto podría aducirse de los estilos mineros contenidos en este doble álbum o del buen compás que imprime a los cantes festeros. Sin embargo, la evocación de Rafael Ramos Antúnez «El Niño Gloria» en los fandangos, carece de la brillantez mostrada por el artista granadino en otras ocasiones. Igualmente, la conjunción que debiera existir en los tangos entre las guitarras, el baile —lo que se puede apreciar del mismo en una grabación— y la voz cantaora, está carente en los mismos. Y como última matización, la dulzura melismática expuesta en la granaína y rondeña, ratifican lo aducido anteriormente sobre la escuela —o personalidad— flamenca «morentiana» y su conocimiento enciclopédico.\n\nDe pasada, citar muy sucintamente la labor de la guitarra de Agustín Castellón «Sabicas», pues su toque flamenco queda puesto de manifiesto con un acompañamiento sobrio, simple, dador de tonos y carente de protagonismo en las grabaciones, circunstancias estas que califican al navarro como un auténtico aficionado pleno de respeto y amor por la faceta de un arte del cual hizo eje de su propia existencia.\n\nManuel Yerga: Discografia flamenca (placas)\n\nSi señor. Si ha pedido una cerveza Alcázar; ibien hecho! Porque va a saborear una cerveza fresca, con cuerpo, en su punto. Una cerveza elaborada con las mejores cosechas de lúpulo y cebada, siguiendo la tradición de nuestros maestros cerveceros. Una cerveza que mantiene todo su aroma, porque va.\n\ncomo quien dice, de la fábrica directamente al consumidor. Si pide cerveza Alcázar, ¡bien hecho!. Disfrutará de una cerveza bien hecha.\n\nManuela Carrasco Salazar, nacida en Sevilla en 1958. Hija del bailaor «El Sordo». En el Concurso Nacional de Arte Flamenco de Córdoba de 1974, obtuvo el Premio de Bulerías, y en este mismo año la Cátedra de Flamencología y Estudios Folklóricos Andaluces de Jerez le concede el Premio Nacional de Baile, cosechando desde entonces innumerables otros premios de relieve nacional e internacional. De ella dice Angel Alvarez Caballero: «Grandeza hay, qué duda cabe, en el baile de Manuela Carrasco, una de las primeras oficiantes del arte que dio a la historia nombres como los de La Macarrona, Carmen Amaya y Pastora Imperio. Su juego de pies, sobre todo en el desarrollo formal del baile, en que prima un profundo entrañamiento, una permanente búsqueda de las esencias».\n\nBAILAORAS DE HOY\n\nManuela Carrasco",
+    "title": "Discografia",
+    "periodical": "candil",
+    "issue_id": "1990-03",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-27",
+    "page_number": 15,
+    "word_count": 857,
+    "article_char_count_full": 5390,
+    "article_char_count_review": 5390,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-03-16-left-algunos-aspectos-de-la-represent",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nE l arte flamenco, tanto en su más remoto origen como en su secreta actualidad, encontró siempre en la familia, el lugar predestinado y bendito por las musas jondas, para su expresión más auténtica. Fue en el ámbito íntimo de la primitiva familia gitano-andaluza, en su extensión al clan o al vecindario, donde nacieron, se desarrollaron y fueron conservándose los valores estéticos del arte jondo más genuino, teniendo como escenario el de las casas de vecinos o corrales de los barrios flamencos de ciertas localidades andaluzas¹.\n\nAbuelos, padres y tíos\n\nde los buenos manantiales\n\nse forman los buenos ríos...\n\ny los buenos cantes... podríamos añadir.\n\nEl marco familiar, difícil de penetrar por quien no forma parte de él, fue y sigue siendo hoy día uno de los lugares de la puesta en escena\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nervándose los valores estéticos del arte jondo más genuino, teniendo como escenario el de las casas de vecinos o corrales de los barrios flamencos de ciertas localidades andaluzas¹. Abuelos, padres y tíos de los buenos manantiales se forman los buenos ríos... y los buenos cantes... podríamos añadir. El marco familiar, difícil de penetrar por quien no forma parte de él, fue y sigue siendo hoy día uno de los lugares de la puesta en escena del arte flamenco —al igual que el teatro o la peña—. Dicho espacio funciona según una serie de códigos fijos o circunstanciales que sólo una rigurosa aproximación antropológica permitiría identificar. Pero éste no es el propósito de la presente reflexión, la cual se centrará en la familia, ya no como espacio de la puesta en escena del flamenco, sino, si se nos permite una pirueta semántica, en la familia considerada como uno de los temas puestos en escena y, por consiguiente, en discurso, en la poesía flamenca. La familia, productora y actora privilegiada del fenómeno flamenco, es también objeto de representación literaria en las coplas que muchas veces sirven de espejo al grupo social que las in- venta y las interpreta. Tal es el contenido que interesa el presente artículo que propondrá un estudio graduado de la representación de la familia, destacando particularmente la figura de la madre y el protagonismo que ejerce en el núcleo familiar flamenco. La familia se valoriza, cuantitativamente, en función del número de los miembros que la componen: El t\n\n[ENDING CONTEXT]\n\n«los suplicios van dirigidos efectivamente contra el padre, o, en el hijo, contra la imagen del padre. El fantasma masoquista es más “se pega a un padre”, que “se pega a un hijo” (…). Cuando el suplicio va dirigido contra el héroe, el hijo o el enamorado o contra el niño, debemos deducir de ello que lo que está maltratado, lo que está adjurado, y sacrificado ritualmente, es la semejanza con el padre, la sensualidad genital heredada del padre, hacerse hombre, significa pues renacer de la mujer misma, ser objeto de un segundo nacimiento», Presentation de Sacher Masoch, París, 1978, pág. 86.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Algunos aspectos de la representación de la familia en la poesía flamenca",
+    "periodical": "candil",
+    "issue_id": "1990-03",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-18",
+    "page_number": 16,
+    "word_count": 2325,
+    "article_char_count_full": 13609,
+    "article_char_count_review": 3129,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-09-4-left-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n1 Jorge Ordóñez y yo fuimos al Circo Price enganchados por el anuncio de un «Festival de Cante» destinado a consagrar la máxima figura de España (contagio madrileño de la reverberación de los concursos andaluces). A este hecho debía atribuirse nuestra presencia allí. Pero al mismo tiempo queríamos ver la restauración desaconsejada de la Opera Flamenca. Aquello no fue festival ni congregó a cantaores de fuste. Se diría, en efecto, que fue una ingenua exhumación de la época del cante a desafío.\n\n2 El Circo Price explica, ambiental y escenográficamente, las facilidades que tuvo la revolución marchenista para alcanzar el interés de las grandes urbes. Explica, también, el proceso de masificación y superficialización del cante. En una pista circular, marginada de atributos andaluces, en la que\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionados\"]\n\nnzar el interés de las grandes urbes. Explica, también, el proceso de masificación y superficialización del cante. En una pista circular, marginada de atributos andaluces, en la que se van sucediendo cantaores y cantaores siguiendo un orden horario establecido para cantar estilos anunciados y procurar asombrar con aire competitivo (fraudulentamente preconvenido). A primera (y última) vista, el espectáculo deja un cargo de conciencia a los buenos aficionados y aun a los claudicantes. Fue un mero desfile de fandangos y fandanguillos trasnochados, con el sello ramplón de la Opera Flamenca, habilita- dos para arrechuchar la sensibilidad de los soldados y criadas que medianamente poblablan la sala. 3 Jesús Heredia Flores encontró en la fácil heterodoxia del Circo Price un alivio para su no muy anudada identificación (y mención honorírica) con el concurso cordobés. Desairado doblemente en Córdoba y Jerez, buscó el aplauso barato con un cante tumultuoso y vacío. El Cordobés, explotando la sinonimia del torero de moda, presumió de coraje flamenco alargando innecesariamente los tercios de los fandangos más ordinarios. 4 El Sevillano ha vuelto a la circulación con pérdida global de aquella armonía y sutileza que tenían sus cantes medianos y chicos. Ha logrado una mejoría física pero no metafísica. Se ha decidido por la vulgaridad. Su anterior prestigio lo mismo sirve ahora para un barrido que para un fregado. Sus viejos seguidores se quedan con un palmo de narices. En algún momento recortó graciosamente algunos tercios de fandangos. Fue cosa de segundos. El resto de sus cantes fueron de una inso-bornable vulgaridad. 5 Los Gaditanos constituyen una junta de saboteadores del flamenco. Es un conjunto vocal inasi\n\n[EVIDENCE WINDOW 2 | retrieval_hint=COMM_04 | trigger=\"INTERIOR\"]\n\nson los responsables de ese ciclo inexpresivo que ellos mismos representan con mayor o menor compromiso con la Opera Flamenca. Son profesionales del gris. 7 Pepe Pinto está en el meollo del grotesco flamenco. Siempre estuvo amenazado por la semiverdad, por el tirón de vulgaridad, por la medianía. Hoy toca a manos llenas esa insubstancia. Cartel de una actuación de Ramón Montoya en el Circo Price, en Madrid Organización: T. SORIANO ORDENACION INTERIOR DEL ESPECTACULO M. TORRES PALACIOS lidad que lleva aneja desde hace muchos años. En su juventud sufría, tenía una idea más tajante de lo jondo. Con otro fraseo menos ampuloso y en ajustada correspondencia con los moldes de cada cante, su primera época fue promisoria. Su vulgaridad era incidental. Pero luego —fama mal entendida, imperativo vital, lo que fuere— se eyectó a los peores planos del populismo madrileño. Es el hombre que peor ha entendido la idea de «personalidad flamenca». Para colmo está engreído de tenerla tan clara como terminante. Cerca de fuentes purísimas, alumno virtual de los Pa-bón, fandanguero bueno y extraoperístico en sus comienzos, perdió el rumbo a mitad de camino. Hoy carece de escrúpulos elementales. Mezcla fandangos con soleares, bulerías con siguiriγas, lo que venga. Sus «dobles fandangos» y hasta «dobles fandangazos» son la ordinariez sustraída a todo límite razonable. Las bulerías son coloquialmente detestables. Dispara tercios y tercios de una sola tirada, con jadeante amontonamiento, sin hundir raíces acompasadas y en suelos más «distinguidos» (si este vocablo tiene sentido flamenco). Está al borde del gaiterismo de un Antonio Molina o un Rafael Farina. Y es innegable que Pinto tiene una voz espléndida, redonda, abierta, que ha explotado accidentalmente en uno que otro disco extraordinario. Pudo haber sido vocalmente un as del siglo. 1 A reserva siempre de su pangitanismo, Mairena está artillado de conocimientos que sabe exponer con ágil cla\n\n[ENDING CONTEXT]\n\nque puede haber todavía bajo su cáscara cansina, sus desarrolloos kilométricos».\n\n22 En reuniones coloquiales, Mairena no se aparta de una vigilada corrección formal y verbal. Pero se le nota de mar a mar que no cabe en su cuerpo. Le asoma su hipersuspicacia. Trasparece su dureza axiomática. Subdice más cosas que las que dice. Su modestia es estridente. Suaire, pluscuanfrondoso. No se oponga a todo esto el peso de su sabiduría abierta a flor de piel, ya que es melodramática, restricta étnicamente y untanto malabarizante a la hora de escolarizarla con ejemplos incotejables de casta y tribu.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-8",
+    "page_number": 4,
+    "word_count": 3050,
+    "article_char_count_full": 18373,
+    "article_char_count_review": 5379,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionados"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "INTERIOR"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-09-8-right-francisco-almagro-herrera",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLeo Aguilar\n\nHa sido y sigue siendo un entusiasta y gran aficionado del Cante; pero su éxito profesional lo ha conseguido como letrista de flamenco y compositor-letrista de canción española. Aunque poseyendo una gran inspiración musical,\n\npor carecer de estudios musicales, ha tenido que ceder parte de sus derechos a varios compositores y editoriales. Grandes artistas del género han interpretado y grabado sus canciones, tales como Pepe Mairena, Alfredo Kraus, Rosa Morena, Antonio Machín, Tomás de Antequera, Miguel de los Reyes, El Fary, Manolo Escobar y otros. Es también el autor de una de las letras de las primeras bulerías que dieron fama a Juanito Valderrama, titulada «Mi\n\nCarmela». Otro tanto podemos decir de varias canciones, hasta un total de treinta y cinco, que compuso para Manolo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"afición\"]\n\nma a Juanito Valderrama, titulada «Mi Carmela». Otro tanto podemos decir de varias canciones, hasta un total de treinta y cinco, que compuso para Manolo Escobar, entre las que cabe mencionar por el tremendo eco que tuvieron en su momento, «Espigas y amapolas», «Viva Almería», «Ay, que llueve» y «No te pongas colorá». A su creación se deben, asimismo, la popularidad alcanzada por pasodobles toreros que despertaron, no hace mucho, el fervor de la afición taurina, tales como «El Cordobés», «Miguel Ortas», «Palomo Linares» y últimamente «Espartaco». Hoy, a sus 80 años de edad, sigue sorprendiendo su lucidez y agilidad en el dominio de la palabra y de los conocimientos del Cante. —Don Francisco, ciñéndonos al mundo flamenco, há- blenos de sus primeras vivencias con el Cante. No fue llanto, fue un jipío, grito anunciatriz del cante en la garganta de un crío. Que yo no nació llorando como nacen los demás. Yo vine al mundo cantando. —¿Quiere esto decir que su afición al flamenco se despertó a edad muy temprana? —Efectivamente. Aún no había cumplido los ocho años cuando ya cantaba algunas cosas de la «Niña de los Peines», que había aprendido de un tío mío que entonaba regular. De mi madre, que cantaba muy bien, aprendí las malagueñas y los cantes mineros. Recuerdo que el primer gramófono que llegó a mi pueblo, lo adquirió mi padre a cambio de un borrico, cuando yo tenía diez años, siendo el primer disco que oí en mi vida una petenera de la «Niña de los Peines», «Niño que encueros y descalzo». Por aquellas fechas, en Pegalajar, el pueblo donde yo nació, había muchos y buenos aficionados; y como en mi casa teníamos un bar, resulta que a todas horas estaba funcionando el citado gramófono. Ya en el año 1932, me trasladé a Madrid con motivo de tener que hacer el servicio militar, y fue allí donde se me presentó la ocasión de cantar con acompañamiento de guitarra junto a otros aficionados; por cierto, que me costó mucho trabajo acoplarme a la sonanta. Fue en Madrid donde llegué a cantar en varios festivales benéficos, y siempre por el compromiso de la amistad, ya que jamás cobré ni un céntimo. Por aquel entonces conseguí hacer amistad con aficionados de primera fila y con algunos profesionales, como Pepe el de la Matrona, Fernando el de Triana, Niño Madrid, José Palanca, Sabicas y otros, con los que a veces alternaba, siendo Pepe el de la Matrona el que me enseñó a cantar las romeras y la liviana, al tiempo que me dio lecciones de compás por soleá al son de las consabidas palmas, cosa que él dominaba a la perfección, como gran figura del cante que era. —En otro orden de cosas, ¿debe de existir alguna preeminencia entre el cante jondo o el cante gitano-andaluz? —Sobre este particular, me atrevo a decir que la jondura del cante podría medirse por la lejanía de su origen en el tiempo. O sea, que habría que ahondar mucho en las raíces de la historia para llegar a descubrir su orig\n\n[ENDING CONTEXT]\n\nhe de comprar.\n\nEs mejor ser un Don Nadie que realiza su jornada, que ser en el mundo alguien que nunca realiza nada.\n\nDices que no crees en Dios; entonces ¿por qué le pides que remedie tu dolor?\n\nPor la madrugá Siguiriyas Me despierto llorando por la madrugá. Yo sé que a nadie que le cuente mis penas me va a consolar. Un montón de veces yo te he remediao; hoy necesito que tú me remedies y me das de lao. Clavaste una espina en mi corazón. Nunca me arranques esa espínita, prima, que me muero yo. Tus suspiros volaban y hacia mí venían, llenos de fuego; y al besarte en la boca, yo me los bebía.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Francisco Almagro Herrera",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-11",
+    "page_number": 8,
+    "word_count": 2996,
+    "article_char_count_full": 17636,
+    "article_char_count_review": 4542,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "afición"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-09-11-right-existe-una-cultura-andaluza",
+    "article_text_for_review": "El interrogante genérico que planteo, puede parecer tendencioso y arbitrario en algún caso y en otros de una ignorancia supina. No es así, porque solamente pretendo poner en evidencia una situación que padece el pueblo andaluz, casi desde que alumbrara la antorcha al otro lado de la Mar Océana en 1492.\n\nN o pretendo pues, convertirme en pregonero y portavoz de una cultura milenaria, a veces escrita y a veces no escrita, que cuenta entre los bagajes más significativos, con el paso por el solar andaluz de civilizaciones que nos han dejado el poso de sus culturas, que contabilizan muchos nombres sin los cuales la civilización occidental se resintiría, pues sus logros y tradiciones en campos específicos de la cultura, aparecen como una cima de la creatividad del género humano.\n\nDe Zyriab a Picasso, pasando por Umar-Ben-Hafsum, Rafael Alberti, Nebrija, Velázquez, Luis de Narváez, Vicente Espinel, Manuel de Falla, Antonio Mairena, etc., en función de una circunstancia histórica repleta de contradicciones europeístas, puede cuestionarse la existencia de una cultura propia del pueblo andaluz, hoy en día casi marginada con el beneplácito de los máximos dirigentes estatales, autonómicos y académicos?\n\nLa respuesta no puede ser unívoca. Entre otras cosas porque lo que pretendo plantear no es precisamente la pervivencia o continuidad de la cultura andaluzay que atesora el pueblo llano, sino que su ensamblaje pone en evidencia una serie de interrelaciones, sin las cuales es sólo una estructura añadida, como un adorno más o menos brillante del cuerpo social, que la utiliza a su conveniencia con más apariencia que realidad, cuando en verdad la cultura andaluzay, a nivel académico o superior y a nivel popular o folklórico, está en un momento crítico en veloz mutación y transgresión de sus valores tradicionales.\n\nAndalucía, inserta en el Estado Español, en menor grado de desarrollo que otras comunidades autónomicas, ha sufrido durante mucho tiempo la marginación y el abandono en campos tan importantes como el agrícola, el industrial y económico y el educativo y cultural, a pesar de haber sido una importante fuente de entrada de divisas, que han servido para la recuperación e industrialización de otras comunidades, recibiendo a cambio el aurisangrante apelativo de «Andalucía, la pandereta de España», como remoquete por poseer una riqueza folklórica única, con raíces que se hunden en la prehistoria de lo hispano.\n\nLa cultura andaluza, la académica y la popular, no pueden vivir de recuerdos y muchísimo menos hacer de estos recuerdos una bandera triunfalista, adoptando una actitud displicente y cómoda los que acordándose de Antonio Machado, Pedro de Mena o García Lorca, organizan eventos más o menos sofisticados, o aquéllos otros que organizan falsas y artificiosas veladas con rimbombantes nombres y aquello «...de Arte Flamenco» en casetas de feria o plazas de toros.\n\nNo piensen los unos y los otros, que están sancionando para siempre la existencia de una capacidad creadora, cuyas probabilidades y posibilidades presentes es necesario replantearse, en defensa de los valores autóctonos de la cultura andaluza, independientemente de la existencia en la actualidad de algunos nombres importantes con resonancia universales.\n\nParadójicamente han sido dos ingleses los que han llevado a cabo en los últimos tiempos un estudio y análisis de la cultura andaluza, que en verdad constituyen verdaderas antropologías del pueblo andaluz. Pero las obra de D. Gerald Brenan en la Alpujarra y Alhaurín, y D. Julian Pitt-Rivers en Grazalema, merecen ser tratadas con detenimiento en artículos monográficos.\n\nCual Séneca pemaniano y remedando a cierto y egregio «Loco de la Colina», me pregunto una y otra vez: «¿Quién sabe ná?» de la obra de los dos grandes hispanistas ingleses.\n\nLa cultura andaluza, la superior o académica y la popular o folklorista, con raíces tartésicas, fenicias, bizantinas, cartaginesas, islámicas, judías, etc., se encuentran en un momento de grave asfixia con riesgo de muerte o acomodación a una cultura foránea, muy lejos de la idiosincrasia del pueblo andaluz.",
+    "title": "Existe una cultura andaluzal?",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 643,
+    "article_char_count_full": 4110,
+    "article_char_count_review": 4110,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-09-12-left-acercamiento-a-la-discograf-a-de",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA lo largo de bastante tiempo he venido comprobando que el tratamiento que se le ha dado a la personalidad de Juan Pérez Sánchez «Canalejas de Puerto Real», no ha sido todo lo justo que por su calidad cantaora el artista merece. Siempre se ha querido tapar sus cualidades artísticas aduciendo que su discografía —principalmente la desarrollada en el último tercio de su vida— está plagada de comercialidad y de grabaciones que no mantenían la seriedad requerida para el arte flamenco. Y aunque repasando por encima el gran número que de las mismas realizó, y puede que algo de certeza haya en estas aseveraciones, no es menos cierto que este repaso se ha de efectuar con comedimiento, pues no hay que rebuscar mucho para poder encontrar placas en las que la verdadera «jondura» del cantaor está tan\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"creatividad\"]\n\nño de la Calzá, Manuel Vega «El Carbonerillo», El Sevilla- no, José Palanca o hasta el propio Tomás Pavón? Y sin embargo, pienso que nunca se ha cuestionado la calidad de estos cantaores co- en los del cantaor costeño? Con sólo citar el famoso de «La Pelitorda»¹, la negatividad sobre «Canalejas» quedaría cortada de cuajo. mo lo ha sido la de «Canalejas». Por otro lado, se puede aducir que los fandangos de los artistas antes mencionados poseían creatividad propia. ¿Y no sucede otro tanto También quiero citar otra serie de grabaciones por este estilo que son fiel reflejo de su dimensión artística y a los títulos me remito: «Te encontré sola y llorando»², fandan-rotundidad sus magníficas y dosificadas facultades. de bulerías; y casi me atrevo a señalar que imperaba en las mismas con más peso el matiz flamenco que el de la propia copla. Si su «Rocío», «Mari Cruz» o «Al museso de Sevilla» gozaron de la suficiente ¿Que hizo numerosas coplas? Si. ¿Y quién no las hizo? Citemos como ejemplo a La Niña de los go con gusto y juego tonal; «En la sierra un ermitão»³, matizaciones personales y a la altura de los mejores fandangueros; «De flores tomó la esencia»⁴, evocadores de «ese» regusto añejo que en sus primeros tiempos se tenía para hacer este cante. Y así podría ir citando, uno a uno, la amplia discografía que por este cante dejó y que al igual que otros muchos, fue el gusto de la época el que abocó al cantaor a realizar esta amplia serie de grabaciones. A este numeroso lote habría que sumar también sus fandangos de Huelva —quizá no tan personales—, los abandolaos de Vélez, en ocasiones con los ecos de Frasquito Hierbabuena o los de Lucena, donde quedan expuestas con Peines, Manuel Vallejo, Manolo Caracol, Juan Varea, El Peluso, etc. Y aunque tiene dos pasodobles, uno dedicado a El Cordobés y otro al Monaguillo, lo cierto es que nunca perdía el horizonte flamenco a la hora de realizarlas, pues siempre solía cantarlas a compás salud para mantenerlo en candelero como artista flamenco durante muchos años y quizá llevarlo a los anales de nuestro arte, también hay que aludir a la determinada gracia gaditana que poseía para cantar este tipo de coplas, y he de seguir reiterando que «a compás». Por otro lado, también se le solía criticar su conocimiento y dominio de los estilos mineros. Y es que a veces no le es ni siquiera perdonable a un artista su rotunda sapiencia en un\n\n[ENDING CONTEXT]\n\nlo expuesto, se puede llegar a diversas consideraciones:\n\n1.ª Que sus coplas están hechas con el gusto de la época y sin llegar a perder el matiz flamenco.\n\n2. $ ^{a} $ Que las guitarras que le acompañaron en sus últimas grabaciones no le hicieron ningún favor.\n\n3. $ ^{a} $ Que la mayoría de sus fandangos están hechos a la antigua usanza, con sabor y con unas in-mejorables cualidades de voz.\n\nY 4. $ ^{a} $ Que las presiones de las casas grabadoras, en especial la Belter y en algo Vergara, hicieron que su últimos discos no fueran lo suficientemente representativas de su dimensión jonda.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Acercamiento a la discografía de «Canalejas de Puerto Real» en el 25 aniversario de su muerte",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1677,
+    "article_char_count_full": 9773,
+    "article_char_count_review": 4024,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "creatividad"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-09-14-left-el-flamenco-y-el-teatro",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCuando a finales de la década de los sesenta del presente siglo, el flamenco comienza a resurgir de sus cenizas y a recorrer un camino diferente al que había transitado hasta entonces, que va a suponer cierto auge en manos de determinada burguesía y ambientes universitarios progresistas, los aficionados a este arte nos vimos sorprendidos por la aparición de un fenómeno con resonancia de tiempos pasados y que parecía resucitar todos los fantasmas que se agolpaban en nuestros temores incoscientes: el flamenco subía de nuevo a los escenarios, a unos lugares en los que se había corrompido, prostituido y cargado con todos los signos de envilecimiento que un arte puede soportar. Y, sin embargo, nuestros temores quedaron pronto disipados ante la sorpresa que en 1972 nos deparara el grupo «La\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_01 | trigger=\"fuera\"]\n\nprostituido y cargado con todos los signos de envilecimiento que un arte puede soportar. Y, sin embargo, nuestros temores quedaron pronto disipados ante la sorpresa que en 1972 nos deparara el grupo «La Cuadra» y su fundador Salvador Távora, quienes ese mismo año estrenan «Queijo», una propuesta dramática cargada de dignidad, equipada con toda una apoyatura de textos breves pero magníficos a los que una coreografía cuidadísima y unos intérpretes fuera de serie dotarían a la postre de toda la gestualidad y plástica necesarias para que el acontecimiento merezca ser recordado como clave en la historia del flamenco. Se iniciaba así una brillante nueva etapa teatral para el arte flamenco, ya que a «Quejío» seguirían otros espectáculos del mismo grupo que lograrían siempre, aunque en distinta medida, brillantez y calidades artísticas constatables, tales como «Los Palos», «Herramientas», «Andalucía Amarga» o «Nana de Espinas». Paralelamente, en lo que a cronología se refiere, puesto que todos los estrenos van a iniciarse en la década de los setenta para extenderse sin interrupción hasta nuestros días, tenemos los casos de autores como José Heredia Maya que conmovió al mundo flamenco con su «Camelamos Naquerar» en 1976, obra clave en el relato de las desdichas del pueblo gitano; éxito que consolidaría ya en 1983 con el polémico montaje de «Macama Jonda». En esta línea de equilibrio entre lo plástico y lo jondo, lo ético de la postura y lo estético de los montajes, hemos de subrayar los éxitos de Mario Maya con «Ceremonial» y sobretodo el equilibrado espectáculo total de «Amargo», en el que los textos de Lorca sirven de apoyo literario, así como su importante aportación coreográfica en el espectáculo «Ay, jondo» del escritor granadino Juan de Loxa. Hemos empezado por el final porque desgraciadamente la historia de los montajes teatrales del mundo flamenco no son algo de lo que debamos sentirnos especialmente orgullosos. La mayoría de las veces una concepción bastarda y pseudoflamenca ha primado en los mismos. No vamos, por tanto, a insistir en cosas que no merecen la pena y que además han sido estudiadas con gran rigor en los trabajos imprescindibles de Eugenio Cobo, sin duda el escritor que mejor conoce la historia de este tipo de montajes. Sólo señalar, a manera de simple referencia, que, desde el siglo XVIII, marco referencial de cuanto venimos diciendo del flamenco en su relación con la literatura, los motivos andaluces impregnan todo tipo de sainetes y obras breves de corte costumbrista, como las de Juan Ignacio González del Castillo, que ofrece una penorámica de la vida gaditana llena de gracia y sabor. Sería, sin embargo, en el XIX, cuando estas representaciones con el flamenco de trasfondo tomen carta de naturaleza, y en ellas aparezcan como textos literarios numerosas letras de nuestros repertorios jondos: así sucede en «Jeroma la Castañera», de Mariano Soriano Fuentes, de 1843, o «Los celos del tío Macaco» (1846), de José Sanz Pérez, tendencia que se acentuará a finales de dicho siglo con obras que incluso aluden en su título a nuestro arte, como «Cante hondo», de 1982, estreno de Pedro Górriz en el\n\n[ENDING CONTEXT]\n\néticas y estéticas reclamadas en todas las artes por la sociedad española, hastiada de la ramplonería franquista, para que el flamenco volviera a resurgir del ostracismo en que se hallaba. Es el momento en el que surgen esos movimientos escénicos que analizábamos más arriba, en los cuales el flamenco deja de ser una caricatura deformada de sí mismo y se analiza, a la luz de modernas concepciones dramáticas, lo mucho que hay en él de rito, de raíces profundas, en una interesante labor que brilla con luz propia aún en nuestros días en que acabamos de alumbrar con gozo la década de los noventa.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El Flamenco y el Teatro",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 1681,
+    "article_char_count_full": 10237,
+    "article_char_count_review": 4780,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_01",
+        "family": "COMM",
+        "trigger": "fuera"
+      }
+    ]
+  }
+]
+```

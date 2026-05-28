@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1979-09-12-right-haciendo-memoria-antonio-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena necesita más comentario. Su arte no se puede condensar en las líneas apresuradas de la crónica de un hecho. Hay que escuchar, saborear, pensar y luego escribir.",
+        "target": "Antonio Mairena and his performance",
+        "rationale": "The passage explicitly evaluates Mairena's art as deserving deeper critical attention beyond ordinary reportage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Mairena, el número uno del actual momento del arte gitano-andaluz",
+        "target": "Antonio Mairena",
+        "rationale": "Calling Mairena the number one figure constructs a hierarchy within contemporary flamenco/gitano-andaluz art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      "PED_01: 'maestro' appears, but the visible text uses it mainly as an honorific rather than showing a teaching or transmission function."
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Conservative coding: praise and ranking are clear; pedagogical authority is not explicit in the visible excerpt."
+  },
+  {
+    "article_id": "1979-09-13-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una relación seleccionada de los que a nuestro juicio fueron grandes maestros del arte flamenco en sus tres vertientes, cante, toque y baile",
+        "target": "selected historic flamenco masters",
+        "rationale": "The section explicitly constructs a selected canon of great flamenco masters across cante, toque, and baile."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "pudo ser creador, citándose también que fue maestro de cantaores, siendo el más famoso de todos «El Fillo»",
+        "target": "Tío Luis el de la Juliana and his transmission to later singers",
+        "rationale": "The passage frames flamenco knowledge through master-disciple lineage and possible creation/transmission of cantes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "fue uno de los primeros grandes cantaores de la historia del flamenco... una letra por siguiriyas, que se ha transmitido de generación en generación",
+        "target": "historic flamenco repertoire and early cantaores",
+        "rationale": "The passage grounds present flamenco value in origins, early figures, conserved styles, and intergenerational transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      "CRIT_04: Demófilo, Serafín Estébanez Calderón, and Rodríguez Marín are cited as sources, but the main discourse function is canon construction rather than explicit critic/expert boundary authority."
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy", "tradition"],
+      "target": "historic flamenco masters and transmitted repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly canon-forming and lineage-oriented."
+  },
+  {
+    "article_id": "1979-09-14-right-notanda-sobre-el-viii-certamen-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "tenemos que aceptar la decisión del jurado, máxime cuando éste está representado por hombres de los que no dudamos de sus conocimientos en la materia",
+        "target": "the guitar contest jury",
+        "rationale": "The passage grants authority to the jury as knowledgeable experts whose decision should be accepted."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Felicitamos a la Peña Flamenca «Los Cernícalos» por su organización perfecta, pese al final desagradable que tuvo la velada",
+        "target": "Peña Flamenca Los Cernícalos and the contest conduct",
+        "rationale": "The article explicitly praises the organization while criticizing the disruptive behavior at the event."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "se perjudica al flamenco, que todo buen aficionado debe defender",
+        "target": "good aficionados and flamenco community responsibility",
+        "rationale": "The passage assigns the good aficionado a communal duty to defend flamenco and protect the field from harmful conduct."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "community"],
+      "target": "contest jury, organizing peña, and disruptive critics",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The text legitimates expert adjudication and delegitimates disorderly minority opposition."
+  },
+  {
+    "article_id": "1979-09-15-right-apuntes-flamencos-a-la-feria-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "María Vargas se limitó a decir unos cantes con más o menos acierto pero sin conectar con el público... su actuación... no pasó de ser aceptable.",
+        "target": "performers at the Feria de San Lucas recitals",
+        "rationale": "The article repeatedly evaluates individual performances with explicit praise, criticism, and comparative judgments."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "A cada estilo le dio el tono preciso, imprimiendo el justo compás a los palos que expuso en su recital.",
+        "target": "flamenco performance quality",
+        "rationale": "The review defines quality through flamenco criteria such as tone, compás, communication, voice, duende, and jondura."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Rafael Romero... nos dio el significado de lo que es el cante. ¡Qué maestría la suya para envolvernos en la más exacta pureza!",
+        "target": "Rafael Romero's cante and proper flamenco expression",
+        "rationale": "The passage presents a performance as revealing what cante is and attributes exemplary genuineness/purity to it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      "AUTH_02: purity and orthodoxy vocabulary appears, but the clearest function is positive authenticity attribution rather than exclusion of a specific impure target."
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "authenticity"],
+      "target": "Feria de San Lucas performers, especially Rafael Romero and Antonio Núñez El Chocolate",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review mixes praise and criticism; authenticity language is strongest around Rafael Romero and El Chocolate."
+  },
+  {
+    "article_id": "1979-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "quienes establecen tales abstraciones se equivocan, desconocen la auténtica especificidad del cante",
+        "target": "flamenco/cante as culturally specific to Andalucía",
+        "rationale": "The editorial explicitly asserts an authentic specificity of cante and rejects readings that detach flamenco from the South."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los sustratos ancentrales de Andalucía, sus elementos primigenios étnico-culturales han seguido existiendo, siguen existiendo y operando",
+        "target": "flamenco as continuity of Andalusian cultural roots",
+        "rationale": "The passage grounds flamenco's value in ancestral substrata, origins, historical memory, transmission, and conservation of purity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el Flamenco se nos muestra como vector de un pueblo que, políticamente, fue destruido pero, culturalmente, no",
+        "target": "the Andalusian people and flamenco as collective identity",
+        "rationale": "The text frames flamenco through Andalusian national/community identity and makes it a sign of the people's cultural survival."
+      }
+    ],
+    "possible_but_not_emitted": [
+      "AUTH_02: references to purity, corruption, and ridicule suggest boundary work, but they overlap with the stronger authenticity and continuity claims already emitted.",
+      "HERIT_03: historical memory and conservation are present, but the passage does not clearly shift into public heritage or safeguarding discourse."
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "community"],
+      "target": "flamenco as an expression of Andalusian cultural identity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong editorial discourse: flamenco is defined as inseparable from Andalusian historical-cultural identity."
+  }
+]

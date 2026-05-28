@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-09-23-left-hablan-las-pe-as-buz-n-flamenco-",
+    "article_text_for_review": "Toca: Antonio Piñana (hijo).\n\nCanta: Antonio Piñana (padre).\n\nTítulo: «TODO EL CANTE DE LEVANTE, TODO EL CANTE DE LAS MINAS...».\n\nReferencia: 150.012.\n\nA UNQUE pequemos de reiterativos, queremos seguir insistiendo en la magnífica labor que la casa Hispavox viene realizando con esa serie de reediciones de antiguas grabaciones que enriquecen su archivo flamenco. Así, nos encontramos en el mercado con una nueva edición de este disco, realizada por Antonio Piñana allá por 1971, y la cual volvemos a saborear con auténtico placer.\n\nA lo largo de los trece cantes que componen este disco, Antonio Piñana, como maestro indiscutible del cante de Levante, va exponiendo con mesura, detalle y gusto, todo lo aglutinado en su persona a lo largo de su amplia vida flamenca, tan llena de aportaciones e investigación de lo que son los cantes de su tierra. Así, va desgranando a golpe de voz lo que es la taranta, mineras de La Unión y Cartagena, la cartagenera, el cante de El Pajarito, los fandangos mineros, a la vez que profundiza en diversos personalismos creados dentro de estos estilos como son los de Sebastián «El Pena» en las malagueñas, el cante de Pedro «El Morato» y el suyo propio dentro de las mineras. Por otro lado, Antonio Piñana demuestra una vez más su intensa labor de investigación en el folkore de su TODO EL CANTE DE LEVANTE TODO EL CANTE DE LAS MINAS... (M. Machado)\n\nEn conclusión, un disco amplio de repertorio, hecho con gran conocimiento y «jondura» flamenca y el cual viene, de nuevo, a sumarse a la amplia discografía que sobre nuestro arte está difundiendo la casa Hispavox.\n\nzona y así lo demuestra con las interpretaciones de la malagueña-bolero del Campo de Cartagena y las murcianas. En la interpretación de la «tarantilla» que ha plasmado en este disco, al principio de la misma, oímos como si Antonio Piñana se inclinara hacia la zona de Córdoba y más concretamente hacia Lucena; sin embargo, y tras la audición total de la misma, se percibe perfectamente el eco de los estilos levantinos.\n\nEn cuanto a la guitarra, Antonio Piñana hijo, al igual que su padre en el cante, él, por sus conocimientos de estos toques, lo conduce perfectamente hacia el desarrollo exacto de los mismos, a través de un toque sobrio, sencillo, a la vez que virtuoso.\n\nTítulo: CALLE REAL.\n\nTocan: Paco de Lucía y Tomatito. Otros instrumentos: Carlos Benavent, Rubén Dantes y Raimundo «Pata Negra».\n\nCanta: CAMARON.\n\nReferencia: Philips 814.466-1. Madrid, 1983.\n\nI seguimos la carrera artística de Camarón, desde sus jóvenes inicios como cantaor auténticamente ortodoxo, hasta este «Calle Real», comprobamos como el artista de la Isla de San Fernando ha ido derivando hacia un —por denominarlo de alguna manera— pseudo-flamenco en el cual intervienen una serie de instrumentos —bajo eléctrico, percusión, etc.— que siempre le han sido ajenos a nuestro arte. En sus comienzos, Camarón era un artista de interpretaciones clásicas u ortodoxas para, posteriormente, pasar a realizar alguna que otra innovación y cuya conclusión más importante, a nuestro juicio, terminaba en ese tan traído y llevado estilo de «canastera».\n\nEn «Calle Real», aparte de los fandangos de Huelva que dan el título al disco y los cuales resultan lo más agradable de escuchar del mismo, encontramos esa especie de tango-rumba, a la cual últimamente parece estar muy unido el cantaor, aportándole por otro lado grandes dosis de popularidad, ejemplo: «Como el agua». No queremos entrar en un análisis ortodoxo-flamenco de estos cantes, porque evidencia que no son tales. Sin embargo, tampoco que remos restar lo que de innovadores puedan tener de nuestro arte ya que el tiempo decidirá. Pero sí queremos expresar —al igual que hiciéramos con el disco «Sacromonte», de Enrique Morente— que nos suenan a grupos folklóricos y comerciales como Los Chichos, Chunguitos, etcétera.\n\nLas restantes grabaciones, cuatro por bulerías, tienen la clásica entonación de este cantaor, la cual inició aproximadamente por el año 76 y donde abunda ese clásico alargamiento de los tercios y el preciosista juego melismático que con su bonita voz realiza. Buen compás en las mismas y perfecto apoyo —con virtuosas falsetas— de Paco de Lucía y Tomatito.\n\nResaltar el acompañamiento que realiza el çoro, muy conjuntado en «Calle Real», y mencionar el mero acompañamiento realizado por los restantes instrumentistas.\n\nPropietario: CARLOS GUERRERO MURILLO (Medalla al mérito del trabajo)\n\nRecepción diaria de Mariscos y Pescados Especialidad en Asados\n\nRoldán y Marín, 7\n\nJ A E N\n\nTeléfono 22 97 65",
+    "title": "Hablan las peñas Buzón flamenco Discografía flamenca",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 739,
+    "article_char_count_full": 4549,
+    "article_char_count_review": 4549,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-09-24-left-discograf-a-placas-de-artistas-f",
+    "article_text_for_review": "DISCOGRAFIA (PLACAS) DE ARTISTAS FLAMENCOS\n\nAURELIO SELLE\n\nEL AMERICANO",
+    "title": "Discografía (placas) de artistas flamencos",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 9,
+    "article_char_count_full": 71,
+    "article_char_count_review": 71,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-11-3-right-editorial",
+    "article_text_for_review": "OMO tantos otros intelectuales de la generación del 27, don José Ortega y Gasset, cuyo centenario se conmemora este año, tuvo una mala inteligencia del flamenco. Cercano a las posiciones que se mantuvieron en la generación del 98, hereda la falta de sensibilidad por lo jondo, o, más exactamente, por aquello que él creía jondo. En realidad, ni Unamuno, ni Pío Baroja, ni, excepción hecha de don Antonio Machado, ningún escritor de aquella gloriosa generación, tuvo un conocimiento personal y ni aun se aproximó al genuino cante flamenco. Por eso, como señala Ricardo Molina, lo que se despreciaba era la españolada, la andaluzada, en el sentido más peyorativo del término, y que se identificaba torpemente con el cante y el baile flamenco. Desconocieron que junto a ese producto deleznable que se ofrecía como espectáculo, existía el auténtico arte jondo sumergido y que no se prodigaba en los entonces numerosísimos cafés cantantes.\n\nCuando todavía Joaquín el de la Paula canta-ba, con hermosísima dulzura, la soleá de Alcalá, y Manuel Torre se hallaba en plenitud de facultades, don José Ortega y Gasset calificaba al cante jondo, en su «Teoría de Andalucía», como fastidiosa quincalla meridional que asocia al contrabandista y a la presunta alegría del andaluz. Tales asertos, publicados en 1927 en «El Sol», no revelan sino el tremendo desconocimiento que nuestro universal ensayista y filósofo tuvo de las esencias jondas. Acaso una experiencia directa y más profunda del flamenco hubiera incidido en su juicio. Pero la realidad fue otra y hay que constatar e incluso hacerla extensiva a, todavía, gran número de pensadores, intelectuales y escritores, en la segunda mitad de este siglo. Desde Bergamín a Manuel Vicent. Algunas veces, porque el concepto de lo jondo se ha configurado en estos autores, sin el más mínimo esfuerzo por su parte en profundizar, a través de un pseudoflamenco degradante, esperpéntico, prostibulario. ¡Tremenda frivolidad! En otras ocasiones, porque se desconocía la realidad andaluzas de la que el cante jondo no puede ni debe desvincularse.",
+    "title": "EDITORIAL Ortega y Gasset",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 331,
+    "article_char_count_full": 2076,
+    "article_char_count_review": 2076,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-11-4-left-el-honor-de-la-pareja-y-el-mar-o",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(APUNTE ANTROPOLOGICO-LITERARIO)\n\nPor José Luis Buendía López\n\nA L presentar este trabajo, y a manera de breve justificación, diré que sólo intento profundizar en un tema que me es muy querido y sobre el que llevo varios años investigando (véanse los números 14 y 15 de la revista «CAN-DIL»); a saber: las relaciones existentes entre la pareja amorosa y su marco familiar, que se revelan a través de las letras flamencas más añejas. Todo ello en el contexto de una sociedad andaluz, generalmente de ambiente cerrado (con su doble vertiente urbana y campesina) que queda enmarcada en rígidas barreras sociales y extraños convencionalismos en las costumbres, lo que conlleva la utilización de una serie de conceptos tan vidriosos y confusos en su desarrollo y aplicación «ad hoc» como son los de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"comunidad\"]\n\nos en las costumbres, lo que conlleva la utilización de una serie de conceptos tan vidriosos y confusos en su desarrollo y aplicación «ad hoc» como son los de honor, honra, vergüenza, etc. Conceptos todos ellos que, aunque a veces se utilicen como sinónimos, en la realidad concreta de las letras flamencas adquieren una gradación de matices que los enriquece, por un lado, y, por otro, determina el nivel de relación social entre los miembros de la comunidad afectada por el código de costumbres y valores éticos que se derivan de la aplicación ideológica de los términos mencionados. Desarrollaremos, por tanto, los problemas que, girando en torno de la pareja amorosa, plantean los temas del honor y sus implicaciones familiares, temas todos ellos que, como veremos, afloran claramente en un bello plantel de letras que, unas veces a nivel consciente, y otras desde los vuelos del subconsciente, nos ilustran suficientemente sobre el modo de sentir y vivir estos problemas en las primitivas comunidades en las que se desarrolló el cante flamen- co. Pero vayamos por partes; en primer lugar, veamos qué entendemos por honor, y, más tarde, lo reflejaremos en las letras jondas que hemos recogido. Para nosotros, el honor es el valor de una persona por sí y para sí misma, un sentimiento de autoestima, pero también es algo de lo que la sociedad es depositaria, aunque en ese caso, y ateniéndonos a las precisiones de algunos estudiosos como América Castro, quizá debiéramos hablar de honra, en el sentido en el que se expresaba un personaje de Lope de Vega, al afirmar: «Honra es lo que reside en otro». El honor es, pues, algo que se siente en uno mismo, una especie de derecho al orgullo, a una po- sición social que no tiene que ver con el sentido de clase, aunque, como veremos, existen relaciones entre ambos. Cuando reclamamos nuestro derecho al honor pedimos vernos aceptados por nuestro propio valer, que se nos «reconozca» como honorables, de lo contrario (es decir, sin el espaldarazo social) se trataría de una estéril posición de vanidad individual, de ahí que los protagonistas calderonianos invoquen el honor diciendo: «soy quien soy», como si solamente eso fuera sinónimo de bonhomía reconocida. De aquí, es decir, de este estar en función de los otros nuestro propio valer social, deriva el cuidar tanto las apariencias, y la utilización consiguiente de muletillas familiares (sobre todo en Andalucía) del tipo de: «No sólo hay que ser honrado, sino aparentarlo» (es decir, «convencer» a los demás), o ese «estar la honra en el aire» que tanto proclaman las letras jondas: Dile a tu madre que calle porque tien\n\n[ENDING CONTEXT]\n\nsocial más elevada. 5) La familia nuclear, organizada en torno a la cabeza visible del padre, pero con un grado de estima mucho más notable hacia la figura de la madre, se ve afectada por esas normas del honor que envuelven a la pareja, pudiéndose llegar a situaciones conflictivas, siendo la suegra del varón la que normalmente aparece como el centro de casi todas las burlas y actitudes de desprecio. 6) El cante flamenco, a través de sus letras, a la vez hermosas y perfectamente descriptivas, es el mejor y más certero testimonio popular de todas estas actitudes y comportamientos estudiados.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "EL HONOR DE LA PAREJA Y EL MARÇO FAMILIAR EN LA PRIMITIVA SOCIEDAD FLAMENCA",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 5001,
+    "article_char_count_full": 29412,
+    "article_char_count_review": 4251,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "comunidad"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-11-7-right-bodas-de-plata-de-la-c-tedra-de-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nROMOVIDA por un grupo de escritores y artistas jóvenes, todos ellos vinculados por distintos conceptos al Centro Cultural Jerezano, nació, el 24 de septiembre de 1958, la Cátedra de Flamencología y Estudios Folklóricos Andaluces, si bien tal denominación no se generalizó hasta 1960.\n\nDurante 25 años, la Cátedra de Flamencología de Jerez de la Frontera, ha venido desarrollando una estimable labor en relación al estudio, recuperación, investigación y difusión del flamenco. Sabemos que este trabajo no ha gozado de unánime aceptación y que, en torno a ella, se ha polemizado. En cualquiera de los casos, tras veinticinco años de andadura, la Cátedra sigue siendo una realidad viva y merece nuestro reconocimiento. Con este espíritu, reproducimos el Manifiesto que publicó el Centro Cultural\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"duende\"]\n\nlos casos, tras veinticinco años de andadura, la Cátedra sigue siendo una realidad viva y merece nuestro reconocimiento. Con este espíritu, reproducimos el Manifiesto que publicó el Centro Cultural Jerezano y que recoge la filosofía que inspiró a los promotores de la constitución de la Cátedra. Jerez de la Frontera, esta tierra generosa, antigua, vinatera y señorial, que es madre fecunda de un cante y un baile únicos, llenos de gracia, ángel y duende, cuyas genealogías misteriosas se desvanecen en las épocas más remotas, con ecos y expresiones sublimes que han sido heredados y conservados a través de siglos y generaciones, es base principal y capital indiscutible de los estilos llamados «jondos» o «flamencos» y ha aportado a la historia del arte andaluz los más célebres intérpretes de todos los tiempos. En Jerez nacen siempre los artistas más grandiosos, los más geniales componentes de una escala, brillante y magnífica, de valores, que comienza en la figura patriarcal y taumatúrgica de Tío Luis el de la Juliana, el cataor más antiguo de que se tiene referencia, que vivió y cantó magistralmente sobre finales del siglo XVIII, y que fue preceptor del famoso Fillo, creador de la Caña, y de\n\n[ENDING CONTEXT]\n\ncabalmente, a los ojos de aquellos que quieran penetrar en nuestros sentimientos y costumbres.\n\nPara llevar a feliz término estos propósitos, el Centro Cultural Jerezano, a través de su Sección especial, cuenta con el decidido aliento y colaboración de todas aquellas personas que aman firmemente la tradición hermosísima de los cantos y bailes de Andalucía.\n\nJerez de la Frontera a veinticuatro de septiembre de mil novecientos cincuenta y ocho.—POR EL CENTRO CULTURAL JEREZANO: Manuel Pérez Celdrán y Juan de la Plata, Directores de la Sección de Flamencología y Estudios Folklóricos Andaluces.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "BODAS DE PLATA DE LA CATEDRA DE FLAMENCOLOGIA",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-8",
+    "page_number": 7,
+    "word_count": 1210,
+    "article_char_count_full": 7550,
+    "article_char_count_review": 2823,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "duende"
+      }
+    ]
+  }
+]
+```

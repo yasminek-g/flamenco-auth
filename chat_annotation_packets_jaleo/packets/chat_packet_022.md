@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_06::A6",
+    "article_text_for_review": "by Maria Soleá The following traditional style tangos falsetas were created by San Diego guitarist, Maria Soleá. She points out that the second one was inspired by a falseta on an old Jose Greco record. Juan Martinez Vilches, \"Pericón de Cádiz,\" is a non-gypsy who was born about 1902 in Cádiz. He is famed as an interpreter of the cantes of Cádiz - alegrías, cantiñas, bulerías, tangos, the cantes of El Mellizo, etc.. He has made many recordings, including a number of anthologies, and was for years a featured singer at Madrid's \"La Zambra.\" He is also known for his story telling, and a book of his stories has been published in Spain. The following is taken from the book, Las Mil y Una Historietas de Pericón de Cádiz:",
+    "title": "FLAMENCO GUITAR MUSIC",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_06",
+    "year": 1978,
+    "language": "en",
+    "article_type": "article",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 129,
+    "article_char_count_full": 724,
+    "article_char_count_review": 724,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_06::A7",
+    "article_text_for_review": "The following traditional style tangos falsetas were created by San Diego guitarist, Maria Soleá. She points out that the second one was inspired by a falseta on an old Jose Greco record.",
+    "title": "ROUTES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_06",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 32,
+    "article_char_count_full": 187,
+    "article_char_count_review": 187,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_06::A8",
+    "article_text_for_review": "FLAMENCO GEOGRAPHY Spain is geographically and culturally divided into \"regiones.\" In the north, there is Galicia, Asturias, Pais Vasco, Navarra, Cataluña, Aragón, Castilla la Vieja, and León, while in the south lies Estremadura, Castilla la Nueva, Valencia, Murcia (Levante), and Andalucía. The regions are made up of \"provincias\" so that Andalusia, the birthplace of flamenco, includes Huelva, Sevilla, Jerez, Cádiz, Córdoba, Málaga, Jaén, Granada, and Almería. Some of the places most commonly referred to in a flamenco context are: ANDALUSÍA - the southernmost region of Spain; where flamenco originated and was developed; the inhabitants are called \"Andaluces\" (sing. is Andaluz(a). ALMERÍA - part of the \"Levante\" on the border of flamenco country; from here comes a form of danceable fandangos and the mining songs, tarantas-tarantos. BARCELONA - a city of northern Spain, out-side of the flamenco region, but the gypsy quarter has produced such artists as Carmen Amaya and La Chunga. BÉTICA - an old name for part of Andalusia; sometimes used to refer to someone or something from the Sevilla area. CADIZ - the oldest city in Europe, located on a peninsula on the southern Atlantic coast of Spain; the name comes from the Roman name for the city, Gades, and the inhabitants are still called Gaditanos (as). Currently not known for a great deal of flamenco activity, but was the site of development of the alegrias, cantiñas, mirabras, romeras, tientos, tangos, tanguillos, and jaleos, plus district styles of bulerías, soleares, siguiriyas, and malagueñas. CÓRDOBA - the old Moorish center located in northern Andalusia; variants of the fandangos, alegrias, and soleares developed here; inhabitant = Cordobés. ESPAÑA - Spain; inhabitants = Español (a). GRANADA - mountain city famed for its gypsies and the fortress-palace, La Alhambra; not known for good quality commercial gypsy flamenco, but good artists have come from here; gave rise to the graninas, medias graninas, styles of fandangos, and the gypsy zambra; inhabitants = granadinos(as). than gypsy influence. People from the area are sometimes called \"Tarantos.\" MADRID - outside of Andalusia, but the most active site of commercial flamenco and home of many top flamenco artists; there is plentiful instruction in all areas of flamenco, but not much atmosphere; inhabitant = madrileno(a). MÁLAGA - a city on the Mediterranean \"Costa del Sol.\" Not a lot of gypsy flamenco, but here were developed the malagueña, jaberas, verdiales, and a style of tangos; inhabitant = malagueño(a). MORON DE LA FRONTERA - a town in the Sevilla area that became famous in the 1960's when it, and its resident genius guitarist, Diego del Gastor, were exposed to the world by the writings of Donn Pohren. Many foreign guitarists made pilgrimages to the pueblo and the style of guitar playing has come to be known as \"Morón style.\" MURALLA REAL - literally, the \"Royal Wall;\" refers to the ancient wall around Cádiz and is frequently mentioned in verses of the alegrias. PUERTOS (LOS) - the ports around Cádiz (El Puerto de Santa María, Puerto Real) often referred to in the cantes de Cádiz. RIO GUADALQUIVIR - the \"flamenco\" river that crosses most of Andalucía, passing through or near many flamenco centers from the Cádiz area to Córdoba, with headwaters near Granada. ROCÍO - located in \"Las Marismas\" (swamplands) between Cádiz and Huelva; the site of the annual Romería de Rocío (pilgrimage to Rocío) in May; a time of much merrymaking and a fair amount of flamenco; the occasion gave rise to the sevillanas rocieras, the most popular style of sevillanas. SACROMONTE - the old gypsy quarter of Granada, made up of cave homes; now mostly deserted except for some of the larger ones reserved for tourist flamenco shows. Next month we would like to print more information on the rhythm of tangos. Readers can respond to articles in this issue or send us additional material. Some examples of modern guitar falsetas would be nice. It would also be great to hear from some dancers. SEVILLA - the famous flamenco city in the heart of flamenco country; there is still a considerable amount of flamenco activity and flamenco is still a way of life in some of the surrounding pueblos like Alcalá de Guadaira, Utrera, Dos Hermanas, Los Palacios, Mairena del Alcor, and Morón de la Frontera. Here were born the soleares and forms of the bulerías, tangos and fandangos grandes, as well as the popular sevillanas; the inhabitants are called sevillanos(as).",
+    "title": "FLAMENCO TALK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_06",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9, 10",
+    "page_number": 9,
+    "word_count": 731,
+    "article_char_count_full": 4495,
+    "article_char_count_review": 4495,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_06::A9",
+    "article_text_for_review": "$ \\underline{\\text{SABICAS}} $ -- $ \\underline{\\text{FLAMENCO}} $ $ \\underline{\\text{GUITAR}} $ $ \\underline{\\text{SOLOS}} $ A Review by Paco Sevilla Some 18 years have passed since a book of musical gibberish called $ \\underline{\\text{Flamenco Puro}} $ was published. This book of supposed Sabicas guitar solos, from the record, \"Flamenco Puro,\" did nothing but tantalize and frustrate the guitarist trying to make sense out of \"music\" written in absurd keys (the transcriber had apparently never heard of the cejilla) with impossible fingerings, totally incorrect notes, and measures of 3/4, 2/4, 6/8, and 4/4 thrown in one after the other in a poor attempt to make sense out of flamenco rhythms. The best one could do was to transpose melodies to the proper key and then use them as a vague beginning for working from the record. At last we have a re-issue of this important music in one of the best transcriptions from record that this reviewer has seen. Joseph Trotter is a guitar instructor at San Diego State University and is especially equipped for the task of transcribing flamenco music. Before turning to the classical guitar and studying with, among others, Michael Lorimer, José Tomás, and Alirio Díaz, he was for many years a flamenco guitarist and studied with Mario Escudero and others before touring South America as soloist with the Ballet Español de Miguel Herrero; he also performed with many other well-known artists, including Leonor Amaya, Chinín de Triana, and Mercedes & Goya. These transcriptions must have been quite difficult to do, for reasons that I will explain, but it appears that Mr. Trotter has done an excellent job, with a result as accurate as one could hope for. The music is very clearly written (music only, no tablature), although many flamenco guitarists will struggle due to the classical musician's often irritating habit of writing all notes exactly as they are to sound, that is, writing in all tones for the durations they must be held - which results in some confusing clusters of written notes where only one is actually played. Also, these transcriptions utilize the cumbersome system of writing out individual finger movements in the rasgueados; this does, however, result in an unquestionably clear representation of the different strums. This music is important for several reasons: As guitar solos, these pieces would impress any audience, in some cases, even a flamenco audience. The problem here is that beginning guitarists will not be able to play most of the material, advanced guitarist will probably not want to (at least not in a performing capacity), and classical guitarists looking for a \"flashy showpiece\" will not be able to come near doing justice to them. This music can be more important as a source of ideas - there are few, if any, flamenco guitarists playing today who are not using many of Sabicas' ideas, and in this book, many of those ideas are made readily accessible. But, to me, the real value of this work lies in its contribution to our understanding of Sabicas and his music. As I played through the pieces in this book and listened to the record, I was impressed by a number of aspects of Sabicas' playing that surprised me. I had always thought of his music as being extremely logical and, usually, easy to play; this is probably true of his toque chico (sevillanas, farruca, alegrías, bulerías, etc.), but in the \"jondo\" numbers in this book, soleares, tarantas, and fandangos grandes - one finds that he is not so straightforward. Mr. Trotter has captured in this music the erratic, illogical, improvizational, and very flamenco side of Sabicas; we find more resemblance here to the mad genius of a Niño Ricardo and less to the mathematical precision of a Mario Escudero. In the music, there often appears to be little concern for \"musically correct\" chords, falsetas do not always follow musically logical chord progressions, notes are sometimes repeated just to fill space or illogical jumps are made in order to stay in compás, and there appears to be a good deal of \"faking\" in his alza púa (a thumb technique) passages, that is, they are not always carefully worked out, but rather, just \"played.\"",
+    "title": "NEW FLAMENCO GUITAR MUSIC",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_06",
+    "year": 1978,
+    "language": "en",
+    "article_type": "article",
+    "pages": "10, 11",
+    "page_number": 10,
+    "word_count": 697,
+    "article_char_count_full": 4191,
+    "article_char_count_review": 4191,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_06::A10",
+    "article_text_for_review": "The ambiente of San Francisco! There, most of what is best and dearest in life, has a way of crystalizing -- and abiding. Flamenco is there -- as predictable as the sunrise. The Spaghetti Factory, at 478 Green St. in the North Beach area, has a special room -- a sober place, reminiscent of its Spanish counterpart -- reserved for absorbing \"espectaculos.\" A group known as \"Los Flamencos de la Bodega\" regularly appears -- composed of several guitarists with singers and dancers. Real music defies description, but there is some memorably crisp and vivacious dancing -- and the women singers have the lusty delivery and the uproariously personable charm that it may have been the good fortune of some of the readers to have witnessed in Spain. Performances are at 9:00 and 11:00 p.m., Friday through Sunday. Several blocks distant is La Bodega, a Spanish restaurant and a sober and unpretentious place itself. The bartender provides guitar accompaniment for the featured performer, Carla Cruz. This tall, forceful dancer can be spellbinding; colorfully expressive and visceral, she reminds the aficionado that \"duende\" is not an impossible dream. At opportune occasions throughout the course of the evening, she may be seen; sometimes, too, the Spaghetti Factory is the beneficiary of her stirring dancing. Flamenco Restaurant, at 2340 Geary Blvd is an opulent little place, tastefully colorful and charming -- whose specialties are the wonderful dishes of Spain, highly complimented by good sangria and Spanish wines. A solo guitarist plays from 6:30 to 10:00 on Mondays and Tuesdays. El Gallego, at 24th and Van Ness in the Mission District, is a comparable restaurant and, from 7-10:00 Monday through Wednesday, features the playing of Gregorio Stillaman.",
+    "title": "THE SAN FRANCISCO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_06",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 282,
+    "article_char_count_full": 1759,
+    "article_char_count_review": 1759,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

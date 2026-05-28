@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_04::A9",
+    "article_text_for_review": "After the solemnity and dignity of Holy Week, Sevilla bursts forth with music and gaiety as if to erase the sorrow which preceded. As saeta bears the essence of Holy Week, so, sevillanas personifies the contagious gracia and joy of Feria. This spring rite is an old tradition in Sevilla although it was only officially initiated in 1847 when commercial potential became evident. During the week-long fair, sevillanas are danced and sung at all hours in streets, bars, and wherever people congregate. It is impossible to study sevillanas without studying the background of seguidillas, the purely folk cante from which Sevilla- Sevillanas in a mesón nas developed. Seguidilla is the name of a poetic form, a song form and a dance form, and is emphatically not to be confused with the seguiriya gitana. The word seguidilla is the diminutive of the word seguida, a series or continuation. This idea of a continuous flowing thing is an intrinsic part of all forms of seguidillas including sevillanas. The seguidilla has had the greatest number of offspring of any Spanish musical form. The seguidilla family set the pattern for all castanet dancing and every region in Spain has developed its own style of this form. The many different types of seguidillas include the manchegas, boleras, panaderos, murcianas, mollares, etc. While the oldest member of the family is the manchegas, this style is almost completely forgotten and sevillanas is easily the most popular. The seguidilla from La Mancha is a museum piece, but the seguidilla from Sevilla is a thriving cante in perpetual renovation with each feria bringing new forms. Although it would be impossible to categorize all the varieties of sevillanas, they can be differentiated by verse content and melody. Hipolito Rossy divides all sevillanas by musical mode into three main groups; those in the major mode, (mostly older Sevillañas), those in the minor mode, (mostly newer styles), and those in the doric mode, (both old and new forms which have been inspired by flamenco). A specific breakdown might include such forms as the sevillanas bíblicas from the province of Huelva with words inspired by the Old Testament; sevillanas corraleras, sung in the corrales, large patios of old homes where it is also traditional to put up the \"cruces de Mayo;\" and the popular sevilanas rocieras sung by the religious pilgrims when they go to the hermitage of the Virgen del Rocio near Almonte in the province of Huelva. The letras of Sevillañas may be of two types; (1) poetic seguidillas composed of 7 lines, each of which contains 5 or 7 syllables, and (2) the common eight-syllable line structure of most cante flamenco. It is interesting to note that when seguidilla letras are used it is necessary to fill in the melody with unrelated interjections such as olé morena, viva Diós, mi vida, carino, etc. These phrases which Hipolito Rossy calls palabras de relleno, are not necessary when the longer 8 syllable type of poetry is used: La pena la que no es pena toda es pena para mi la de lloraba por verte hoy lloro porque te vi ole, ole, ole, a a mi me gusta negarte solo por verte llorar. Another interesting characteristic of all sevillanas is that the words themselves mark a danceable rhythm since it is largely one syllable of a word per musical beat. This is very different from true cante flamenco where words can be elongated almost beyond recognition in order to fit the compas or achieve an effect. The cante of Sevillaas is clearly in binary compás, (counted in twos), while the dance is in threes as are the palmas and castanets. The guitar marks rhythms which accommodate both types of compas. This creates interesting effects. It is frequent that simple words change their accent and come to have a wittier meaning. This is a direct result of the binary structure of the melody superimposed over a compas of threes meaning that the strong and weak points of two compases do not always coincide. The result is words like manaña, buscando, negra, etc. At times this change of accent is expressly sought since it lends gracia to the canté and gives the words more meaning. SECOND MINOR COPLA Azule reja estaban do' amantes dando se queja estaban do' amantes dando se queja (wait 6 beats) THIRD MINOR COPLA Y se decian que solo con la muerte y se decian que solo con la muerte se olvidarian (last line ends on 5th beat) The great popularity of this festive cante has led to the formation of singing groups who sing and make records of nothing but Sevillañas. One of the first of these was Los Hermanos Toronjo who do some beautiful styles with their folky guitarist, El Pinche, who always plays for them. Other groups are Los Romeros de la Puebla, Los Hermanos Reyes, Los Del Río, and Los Marismeños. $ ^{*} $ $ ^{*} $ $ ^{*} $ $ ^{*} $",
+    "title": "Sevillanas",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "article",
+    "pages": "10, 11, 12",
+    "page_number": 10,
+    "word_count": 826,
+    "article_char_count_full": 4794,
+    "article_char_count_review": 4794,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A10",
+    "article_text_for_review": "Transcribed by Paco Sevilla \"Requiebros\" is a Sevilla-na that was popular at the 1977 Feria de Sevilla. The words are more difficult than most, with very little repetition, and, therefore, one seldom hears more than the first copla sung by non-professional singers. Any-one who is interested in the other three coplas can write to JALEO for the words. The music notation is for voice, the tablature for guitar, and the chords for accompaniment are given above the music. \"Requiebros\" was written by Juan de Díos Pareja Obregón-Moya, and recorded by Los Romeros de la Puebla for Hispavox Records (45-1353-SN) in 1976.",
+    "title": "For Voice and Guitar",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "article",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 101,
+    "article_char_count_full": 616,
+    "article_char_count_review": 616,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A11",
+    "article_text_for_review": "Guitarist, Gary Hayes, of Bellingham, Washington, informed us of an extensive dictionary of Caló words that is included in the book, \"The Zincali: or an account of the gypsies of Spain,\" by George Borrow. This book was published in 1843 and is, therefore sometimes hard to find. George Borrow studied gypsies in many parts of the world and made a very thorough study of the Spanish gypsies at a time when the United States was just getting started as a nation. Apparently he didn't think much of his study subjects, since he described the gitanos as \"... a set of thugs, subsisting by cheating and villany of every description, hating the rest of the human species, and bound to each other by the bonds of common origin, language, and pursuits.\" (page 5) However, in spite of these feelings, he made an in-depth study of the language and its origins. Even if the language has changed somewhat since he wrote, much of it appears to be current, even if not extensively used (Borrows states that, even at that time, no single gypsy knew more than a third of the words he listed). One question that was posed in a previous article (see JALEO, February, 1978) concerned the occurrence of different forms of some words. Borrows lists many such words; apparently there is considerable confusion or at least local variation in the use of this language. Thus we find diñar and diñelar for \"to give\" (dar), anaquer and anaquerar for \"to talk\" (hablar), and abillar and abillelar for \"to come\" (venir). What is not clear is which forms are prevalent in current usage. Therefore the search for other references must continue. Meanwhile, here are some examples of caló used in gypsy verse. The words in italics are caló. Cuando paso por la ulicha llevo el estache blejó para que no penelar tun dai de que camelo yo When I am walking down the street I wear my hat pulled low so that your mother will not find out (be that I love you. told) Chalando por una ulicha he dicao una mulatí y a mi me anqueró \"Garabélate, Calorí!\" Going down a street, I have seen a gallows tree, and it said to me, \"Watch out Gypsy!\" Here are definitions for words used in these verses: anaquerar - to talk (hablar) blejó - slouched to one side (sesgo) Calori - gypsy (gitano) camelar - to love or want (querer) chalar - to go or walk (ir; andar) dai - mother (madre) dicar - to see (ver) estache (el) - hat (sombrero) garabelar - to be on guard, to watch out mulati - gallows tree (horca) (guardar) penelar - from penar, to talk (hablar; decir) tun - your (tú) ulicha (la) - street (calle) MANITAS DE PLATA??? Anybody wonder what old \"Silver Hands\" is up to? Here he is in Cannes last summer with his then current girlfriend. Below is the original caption for the photo. MANITAS DE PLATA CAUSES A SENSATION! She is the beautiful Polish girl named Ludmilla, and she doesn't separate from the famous guitarist for a moment.",
+    "title": "More on Caló",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 518,
+    "article_char_count_full": 2885,
+    "article_char_count_review": 2885,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A12",
+    "article_text_for_review": "by Peter Baime The following falseta por alegrías is an example of the playing of Andrés Batista. It demonstrates one of the dominant characteristics of Batista's playing - the use of six beat triplet melodies in a twelve beat compás structure (as in soleares and alegrías). The falseta should begin slowly and pick up tempo gradually in the second half.",
+    "title": "Alegrías",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 14,
+    "word_count": 60,
+    "article_char_count_full": 354,
+    "article_char_count_review": 354,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A13",
+    "article_text_for_review": "ALPARGATAS(las) - canvas-topped shoes with rope soles, originally worn by the poor in Spain; now used for dancing jotas and other regional dances. ARETES(los) - earrings; also called pendi-entes. BATA DE COLA(la) - the full flamenco dance dress with a long train (cola) of ruf-fles; it is an elaboration of formal wear of the past. BOTAS(las) - boots; refers to the high-topped boots worn with the traje corto or traje campero and used in certain flamenco dances such as the zapateado. BOTINES(los) - the low-topped boots normal-ly worn by male flamenco dancers. CAMISA RIZADA(la) - ruffled shirt. COLÍN(el) - a form of bata de cola with a very short train. FLECO(el) - fringe seen on Spanish shawls and dresses. MANTILLA(la) - Spanish veil made of lace; worn on the head, often with the peineta\\nMANTÓN(el) - Spanish shawl used in dancing. PEINETA(la) - a large ornamental comb worn in the hair. SAJONAS(las) - chaps; sometimes worn in dancing farruca or zapateado. TRAJE FLAMENCO(el) - flamenco costume; most often used to refer to the full-length dress worn by Andalusian women for dancing in the ferias and for flamenco.",
+    "title": "FLAMENCO TALK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15",
+    "page_number": 15,
+    "word_count": 186,
+    "article_char_count_full": 1125,
+    "article_char_count_review": 1124,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

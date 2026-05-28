@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-05-3-left-camar-n-a-los-cinco-a-os-de-su-m",
+    "article_text_for_review": "U n lustro se ha cumplido ya de la muerte de José Monje Cruz “Camarón de la Isla”. El flamenco sigue escribiendo su historia y los artistas sucediéndose, mas el vacío dejado por el de San Fernando es, posiblemente, aún hoy más grande. El tiempo se encarga de ir borrando sus huellas de la memoria de los aficionados y son las efemérides las que a veces nos devuelven el eco de su voz y de su obra.\n\nAl igual que ha sucedido con otras figuras irrepetibles de este arte, como don Antonio Chacón, Manuel Torre, Tomás y Pastora Pavón, Manolo Caracol, Pepe Marchena, Antonio Mairena o Terremoto de Jerez, sólo nos queda el reestudio de sus trabajos, la reescucha de los mismos y el disfrute de unas grabaciones que son reliquias del tesoro flamenco.\n\nComo artista singular, creativo e irrepetible, no tiene sucesor ni sustituto por mucho que otros quieran ver en alguno de sus seguidores, maneras o virtudes con las que adornaba su cante. Camarón de la Isla ha sido el mito gitano de los años ochenta y noventa por su forma de cantar, actuar y comportarse, y, el querer parecerse a él puede confundir el sentimiento de los que no se resignan a reconocer su ausencia. Su trayectoria artística —como la de todos los sobresalientes— ha estado cuajada de polémicas. A unas grabaciones de corte ortodoxo en sus primeros tiempos y tras asumir, creo, la influencia de Paco y Pepe de Lucía, su cante toma derroteros de creatividad innovadora que el pasar de los años irá confirmando como uno de los mayores logros para los de su raza y buena parte de los payos, aunque estos últimos mantuvieran ciertas premisas ortodoxas antes de aceptar la parte vanguardista de su flamenco. Ejemplos claros de lo último fueron “Rosa María”, “Canastera”, “Viviré”, “Volando voy”, “La leyenda del tiempo” y muy especialmente, lo contenido en sus “Soy gitano” y “Potro de rabia y miel”, lo último editado antes de su muerte.\n\nMas éste no era el Camarón cotidiano, el de todos los días, era un Camarón de estudio de grabación, de producción discográfica, de tertulia reducida a un determinado marketing. etc. El José Monje de la reunión de amigos, el de la fiesta familiar, el de los festivales flamencos... era un cantaor con más dosis de ortodoxia que de heterodoxia; era un gitano que recuperaba sus raíces y ahí basaba su arte; era un intérprete que se sentía libre de la presión de un racimo de micrófonos y de la asfixia del corcho de un estudio de grabación. Era José Monje Cruz \"Camarón de la Isla\".\n\nA los cinco años de su muerte sólo pedimos que nadie intente utilizar o tergiversar su memoria, que su obra sea mantenida tal como la efectuó, que si es posible sea publicada en su totalidad y que los trabajos sobre su figura, recojan la verdadera esencia de un gitano rubio de la Isla de San Fernando, que tuvo un precioso metal de voz y que lo que mejor sabía hacer y quería era cantar.",
+    "title": "Camarón, a los cinco años de su muerte",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 509,
+    "article_char_count_full": 2866,
+    "article_char_count_review": 2866,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-05-3-right-con-el-g-ito-asom-el-duende",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nManuel Martín Martín\n\n1 al y como dejamos escrito en el tríptico que anunciaba la XVII Semana Cultural de Palma del Río, cuando el genial Farruco, tras su fugaz paso por el CAD, sentenció aquello de que “hoy se mariconea más que se baila”, no lo hizo para incurrir en una falta de respeto, sino porque, no más atisbar los movimientos contemporáneos, echó en falta los arranques apasionados, la flexibilidad expresiva y las esquiveces de esas sonoridades jondas que los antiguos denominaron “bailar macho”.\n\nEn esta vieja y lacónica expresión se enmarca lo sustancial de la vida y obra de Eduardo Serrano Iglesias, El Güito, bailaor y coreógrafo nacido en el madrileño barrio del Rastro a finales de junio de 1942 y que en la actualidad se caracteriza por haber dado al mundo el equilibrio armónico\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"cuerpo\"]\n\ns jondas que los antiguos denominaron “bailar macho”. En esta vieja y lacónica expresión se enmarca lo sustancial de la vida y obra de Eduardo Serrano Iglesias, El Güito, bailaor y coreógrafo nacido en el madrileño barrio del Rastro a finales de junio de 1942 y que en la actualidad se caracteriza por haber dado al mundo el equilibrio armónico de la belleza absoluta y ese tono concentrado, sobrio y palpitante que encierra el paisaje plástico del cuerpo humano. Sus principios, donde era conocido como El Negüito —así es cómo le llamaba su hermana cuando nació— estuvieron marcados por el noble objetivo de ganar dinero para ayudar a su madre, y fueron en la academia del maestro Antonio Marín, bailaor madrileño —once años más joven que él— que tuvo la desgracia de sufrir una caída en un escenario de Burgos, a resultas de la cual le fue amputada una pierna. Entre sus alumnos figuraron Mario Maya, La Chunga, Carmen Carreras o Sara Lezana. Mas nuestro protagonista, no más recibir las primeras lecciones, debutó a los 15 años de edad en el ballet de la gran maestra Pilar López, la que le inculcó otras facetas musicales y el encuentro entre la escuela clásica y la flamenca, y con quien estuvo hasta 1959 aprendiendo de ella y de Alejandro Vega, año en que, tras diversas giras por América y Europa, se le concede el Premio Sarah Bernard del Teatro de las Naciones de París, primer gran reconocimiento de quien habría de mantener en suspenso, a partir de entonces, los corazones de aquellos aficionados que gustan de derra- mar el aplauso entusiasta sobre el severo buen gusto del arte por el arte. Aprovechando la estela de este galardón, es el momento en que se presenta en Madrid con su propio grupo, y lo hace en la Parrilla del Alcázar, mostrando a los presentes ese enjundioso fruto que sólo puede verse en los rostros de los que, desde sus inicios, ya orientan sus pasos\n\n[ENDING CONTEXT]\n\ncada “contratiempo” un desbordamiento de elegancia en los tiempos exactos del compás; cada “braceo” una caricia a la silueta del deseo; cada “escobilla” un ahondamiento en los temblores de los grandes maestros, y cada grupo de “pasos” ensamblados, múltiples e irrepetibles, un modelo a seguir.\n\nEste es, a vuela pluma, El Güito, la recuperación de las esencias más puras que anidan en el aire y el artista que pone de manifiesto la invalidez de algunos planteamientos estéticos que hoy, con el apoyo de nuestros garantes culturales, se venden bajo el equívoco del flamenco. Angel Alvarez Caballero\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Con “El Güito” asomó el duende",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "3-6",
+    "page_number": 3,
+    "word_count": 3364,
+    "article_char_count_full": 19690,
+    "article_char_count_review": 3507,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "cuerpo"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-6-right-un-joven-cantaor-de-70-a-os",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDebo hablar de un hombre que el próximo 7 de diciembre cumplirá setenta años. Decía Luis Rosales, en un hermoso libro titulado “Esa angustia llamada Andalucía”:\n\n“Es una maravilla escuchar a los viejos y verles, literalmente, desgañitarse. Porque nadie se entrega tanto como el cantaor que ya ha perdido facultades. Cantan para acabarse. Cantan como se debe cantar, con desesperación y sin malicia, con una voz que ya no es de garganta, ni de pecho, sino de cuerpo entero; con una voz que da las notas deshaciéndolas, pero las da”.\n\nBasta leer este texto para comprender que Chano Lobato no puede ser considerado en modo alguno un viejo cantaor, o un cantaor viejo. A mí, por lo menos, se me hace imposible asumirlo. Releo el texto anterior y me fijo en la palabra “desgañitarse”, que según el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Hombre\"]\n\nante es uno de los más medidos y armoniosos que se pueden oír en esta época en que tanto pegavoces anda suelto. Nota de la Redacción: Al encontrarse cerrado el número monográfico dedicado por “Candil” a Chano Lobato, el autor de este trabajo ha querido testimoniar con el mismo, su admiración y respeto por el cantaor gaditano. Rosales habla también de la entrega de los cantaores que ya han perdido facultades. ¿Ha perdido facultades Chano Lobato? Hombre, él diría que no está hecho un Pavarotti, y es verdad, pero oigo mucho a este cantaor y debo decir que nunca me ha dejado el agridulce sabor de quien quiere y no puede, esa penosa, a veces angustiosa impresión que transmite quien es consciente, muy a su pesar, de que está acabado y no puede cantar más, aunque se le rompa el corazón por ello. En cambio la entrega de Chano Lobato sí es como la de esos hombres. Una entrega total, ejemplar, sin trampa ni cartón. Cada vez que debe cantar, Chano lo hace con pasión, como si en ello le fuera la vida. No conozco a nadie, quizás, más verdadero que él, más honesto en este sentido. Juan Miguel Ramírez Sarabia, gaditano de pura cepa, es uno de esos cantaores especiales que concitan, antes que nada, afecto. La admiración se le rinde por añadidura, en cuanto su voz cargada de emoción y de memoria se abre paso a través de las telarañas del miedo —todavía el miedo le atenaza, sí, cada vez que sale a cantar— para herirnos con ternura y delic\n\n[ENDING CONTEXT]\n\nque todo eso se nos acaba, pero no quiero ponerme melancolico cuando nos ha traído aquí el deseo de homenajear a este entrañable amigo, a quien tanta gratitud debo por muchas horas de amistad y de cante. Hombre de una mala salud de hierro, no será esta la última vez que tengamos ocasión de decirle que su cante ha sido y es muy importante para nosotros, que lo que él ha dado al cante es un rico caudal de lo más hermoso que tiene este arte. De momento yo emplazaría a todos ustedes para dentro de treinta años, cuando Chano Lobato cumpla cien y comience a hacerse mayor... Después, ya veremos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Chamo Lobato: Un joven cantaor de 70 años",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 2014,
+    "article_char_count_full": 11605,
+    "article_char_count_review": 3063,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Hombre"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-8-right-el-inmenso-caudal-cantaor-de-cha",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nXII Semana de Estudios Flamencos\n\nFotos: José Pamos\n\nSe pasan los tiempos mas no el arte flamenco. Se suceden los artistas pero no las figuras geniales y emblemáticas, porque su arte perdurará en la memoria de los aficionados mientras existan documentos sonoros que nos evoquen su recuerdo. Se suceden los homenajes con la intención de perpetuar aún más al artista y casi siempre se acierta.\n\nAsí creo que ha sucedido con Juan Manuel Ramírez Sarabia “Chano Lobato” en la Peña Flamenca de Jaén. Porque todo lo efectuado en la celebración de la XII Semana de Estudios Flamencos ha estado enfocado a resaltar la personalidad del cantaor gaditano. El homenaje ha sido programado con artistas de su tierra y con conferenciantes conocedores del arte gaditano y de su personalidad flamenca.\n\nY es que Chano\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grandiosidad\"]\n\npre se acierta. Así creo que ha sucedido con Juan Manuel Ramírez Sarabia “Chano Lobato” en la Peña Flamenca de Jaén. Porque todo lo efectuado en la celebración de la XII Semana de Estudios Flamencos ha estado enfocado a resaltar la personalidad del cantaor gaditano. El homenaje ha sido programado con artistas de su tierra y con conferenciantes conocedores del arte gaditano y de su personalidad flamenca. Y es que Chano Lobato reúne en su ser la grandiosidad de un artista humilde, cariñoso y rotundamente completo a la hora de abandonar el amplio repertorio de estilos que conforman el arte flamenco. Todas estas circunstancias han confluído en unos merecimientos que hacían necesario expresarle al artista el agradecimiento que los aficionados sentimos por los numerosos momentos flamencos con los que nos ha hecho disfrutar. Se iniciaba la Semana con la presentación del número 109 de Candil. Un número monográfico dedicado a Chano Lobato. El acto lo efectuaron el presidente de la entidad jiennense, Marcos Gutiérrez Melgarejo; el redactor jefe de la revista, José Luis Buendía López; y el director de la misma, éste que les relata. Tras la satisfacción mostrada por el citado ejemplar por\n\n[EVIDENCE WINDOW 2 | retrieval_hint=PED_03 | trigger=\"creatividad\"]\n\nde La Paquera y ciertas en- tonaciones por los extremeños. Sus nuevos tercios por bulerías tuvieron un acomodo inicial por Jerez con so- nes acupletaos que derivaron seguidamente a su tierra y en su aire más gaditano. Finalizó con tanguillos. En cuan- to a la guitarra de Pascual de Lorca, la misma supo afian- zarse en el escenario con seguridad y con las suficientes calidades tonales para que Mariana desarrollara con garantía su recital. Buena creatividad manifestó en las falsetas. La segunda jornada de este homenaje a Chano Lobato tuvo toda la frescura que un personaje de la talla de Fernando Quinones imprime a sus intervenciones. Basada su participación en el arte y los artistas de Cádiz, el chicanero fue estableciendo un recorrido cronológico de la historia cantaora de la \"Tacita de Plata\". Hubo referencias a las voces más sobresalientes, entreteniendose especialmente en Enrique el Mellizo, P\n\n[ENDING CONTEXT]\n\nque supo ligar la jondura antes expresada, con la simpatía y la gracia de un largo repertorio de tanguillos. Y como no podía ser de otra forma, el epílogo de su relato flamenco consistió en un festero recorrido por las bulerías de su tierra, a las que complementó con colombianas, tangos, cuplés y boleros por el compás del estilo. Una auténtica lección de cómo ha de usarse el ritmo festero.\n\nSu hijo, Chano Ramírez, le efectuó el toque necesario para desarrollar los estilos en una tesitura simple, sin florituras, marcándole los tonos y evidenciando una perfecta sincronización artística.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El inmenso caudal cantaor de Chano Lobato",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-11",
+    "page_number": 8,
+    "word_count": 1658,
+    "article_char_count_full": 10242,
+    "article_char_count_review": 3801,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grandiosidad"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "creatividad"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-12-left-tardar-en-nacer-si-es-que-nace",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLa aparición de diversas versiones sobre el trabajo, la significación artística, la realidad musical o su posible trayectoria futura, es algo natural cuando fallece alguien que empieza a ser importante.\n\nEn esta tierra el culto a los muertos y la presencia de las más fantásticas teorías sobre ellos, es algo habitual. Mucho más cuando quien se nos va es un hombre sencillo pero hermético, abierto a todo pero celosísimo de los valores que representa, que defiende la libertad expresiva de cada cual pero, en lo flamenco, sólo cuando ésta parte del principio generador.\n\nPedro Bacán era un artista consciente de la amplitud de las maneras musicales que, sin embargo, no admitía desviaciones formales si éstas dañaban la armonía. No sólo la meramente musical sino, especialmente, la espiritual. Eso\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nPedro Bacán era un artista consciente de la amplitud de las maneras musicales que, sin embargo, no admitía desviaciones formales si éstas dañaban la armonía. No sólo la meramente musical sino, especialmente, la espiritual. Eso que podríamos llamar “la razón de ser” de una determinada música. Lo que todos hemos buscado, por distintos cami- nos, y que ha generado muchos y graves enfrentamientos tras los enunciados particulares. En el mundo del arte flamenco, en su realidad formal y originaria, existen, no sólo escuelas o simpatías, sino tratamientos globales. El hombre es un ser enormemente complejo y libre que, sin embargo y a veces sin quererlo, se identifica con sus iguales en la visión y el manejo de concepciones similares de la vida y en el modo de proyectarlas. Esto aporta diferencias y riqueza a la expresión. Y cada uno de los aportes tiene su por qué. Unos intentan explicarlo y otros se conforman con sentirlo. Pedro no había llegado a la manifiestación expresa de su pensamiento pero era claro exponente de la vitalidad de ese planteamiento musical. Alguien, mucho antes y provocando infinitas polémicas, la llamó \"razón incorpórea\". Para quien firma es evidente la identidad de las posturas artísticas. Quizá porque haya tenido la oportunidad —unos lo l\n\n[ENDING CONTEXT]\n\nparió toda la música que él supo vestir de otra manera sin disfrazarla, sino todo lo contrario: la música que él hacía era mucho más gitana que la que exige el estereotipo y que la que venden —son joyeros pero no saben lo que valen las piedras— quienes cambian, día a día, las primogenitura por un plato de lentejas.\n\nPedro era un gitano universalista porque entendía que su cadencia, sin superar a ninguna, tampoco estaba por debajo de la mejor. Tenía la conciencia de su propio valor sin enfrentarlo a ningún otro, sino admitiéndolos a todos.\n\nPedro Bacán fue un genio. El tiempo lo confirmará.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Pedro Bacán: Tardará en nacer, si es que nace",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1788,
+    "article_char_count_full": 10798,
+    "article_char_count_review": 2896,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  }
+]
+```

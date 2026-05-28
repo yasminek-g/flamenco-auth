@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1985_07::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[from: New Mexico, August 1985; sent by George Ryss] by Nicole Plett If New Mexico has a Hispanic soul, Spanish dancer María Benítez is surely custodian of some part of it. And if New Mexico's soul belongs to the Native American, this dark-eyed dancer probably inherited it anyway. Of Native American and Puerto Rican descent, María Benítez has lived and danced in New Mexico since the age of 10. Leading lady of the colorful arts of distant Spain, she recaptures, in movement, the dramatic meeting of the Old World and the New. Clad in vivid traditional dress, with regal carriage of head and torso, undulating arms and hips contrasted with staccato footbeats, her dance speaks to the very essence of this land of stark natural contrasts. Since 1972, María Benítez's Estampa Flamenca has thrilled\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"audiences\"]\n\nnced in New Mexico since the age of 10. Leading lady of the colorful arts of distant Spain, she recaptures, in movement, the dramatic meeting of the Old World and the New. Clad in vivid traditional dress, with regal carriage of head and torso, undulating arms and hips contrasted with staccato footbeats, her dance speaks to the very essence of this land of stark natural contrasts. Since 1972, María Benítez's Estampa Flamenca has thrilled Santa Fe audiences and summer visitors with the intimate ensemble performance that is flamenco's hallmark. Beginning with summer shows in Tesuque, the company moved to another club outside Santa Fe for several years, then came downtown four years ago to hearty popular acclaim. This year, María Benítez's Estampa Flamenca performs nightly, except Tuesday, at the Santa Fe Sheraton Inn. Dancers Monolo de Córdoba, Rosa Mercedes, and Susana Aranda accompany Benítez to the mournful song of gran cantador Luis Vargas and gypsy guitarists Guillermo Ríos and Rafael Rosas. Despite the drama of her performance presence, the offstage Benítez is a warm, unassuming woman who expresses herself with refreshing directness. Only her dark, expressive eyes and striking profile betray the presence of the fiery performer within. \"Flamenco isn't an entertainment where you just sit there and are entertained,\" she warns warmly. \"You do have to put out som\n\n[ENDING CONTEXT]\n\nconnotation, whereas the Spanish dances do not,\" she explains. \"In both, however, you lose awareness of the physicality of the dance and transcend to another plane, so to speak.\" At the age of 10, Benítez's life became more settled when her mother began teaching at Taos Pueblo, where she stayed until retirement. Here, Benítez began her first weekly ballet lessons. \"Back in Taos, I was determined to become a ballet dancer. So I used to get up at three o'clock in the morning and steal PACO PENA “Live in Munich” $14.95 U.S. Postage & Handling U.S. and Canada - $1.50 Other Countries - $3.00\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "AS A WAY OF LIFE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_07",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "7",
+    "page_number": 7,
+    "word_count": 1054,
+    "article_char_count_full": 6413,
+    "article_char_count_review": 3007,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "audiences"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1985_07::A5",
+    "article_text_for_review": "The following reviews of a couple of this years festivals are of particular interest because of the constant reports of the demise of Camarón de la Isla, his failing health or loss of voice. It is true that he fails to show up for many concerts and usually sings briefly, obviously anxious to make his appearance as short as possible. Yet Camarón remains the number one draw in the festivals and his lack of dependability is generally accepted as part of his mystique. Here are two reviews of more successful appearances. CAMARON DRIVES THEM CRAZY [from: El País, May 19, 1985; sent by Brad Blanchard; translated by Paco Sevilla] by A. Alvarez Caballero Camarón was there. This time he was there, without suspense nor nervousness brought on by uncertainty. Hardly had Manolo Fernández finished his fiery and fervent words of presentation, when the Palacio de los Deportes [Madrid] was in a full fiesta. The gypsies had turned out en mass and there was no way they would stay quietly in their seats; they got up, wanting to get near the stage, and the security forces had to be increased in order to avoid what turned out to be inevitable--the invasion of the areas near the stage. Camarón drives them crazy. But, of course, it wasn't only the one from La Isla. Enrique Morente, in spite of the fact that his cante is not the type that would best connect with the type of audience that predominated that night, had a good performance, with feeling and profundity in the tonás, granaínas, and soleares, and with relief and festiveness in the aires de Huelva and the bamberas-targos done in homage to Lorca. Lole y Manuel did one of their classic recitals. What they do is to sweeten flamenco, to remove some of the roughness and to borrow from other musical forms more consistant with our times. That is, perhaps, the secret of their notable popular impact, especially among the masses of youth. Since, in a certain sense, there remains some connection with serious flamenco--alegrias, bulerías, tangos--distorted, certainly, but at least there, the experience can be valuable because it brings the art to people who would otherwise not understand it. The outstanding triumph of this singular couple was a solo cante por bulerías by Manuel that was truly extraordinary. Los Montoya also repeated their recent performances, with their usual magnetism, their strength that sometimes exceeds reasonable limits, vulgarizing \"un arte buleariero\" [the art of bulerías] full of gracia and \"gitanería\" [gypsyism]. The",
+    "title": "CAMARON DE LA ISLA IN 1985",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_07",
+    "year": 1985,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 419,
+    "article_char_count_full": 2507,
+    "article_char_count_review": 2507,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_07::A6",
+    "article_text_for_review": "[from: $ \\underline{Sur} $ $ \\underline{Dominical} $; sent by Brad Blanchard; translated by Paco Sevilla] On Friday, March 29, 1985, just two days short of 73 years of age, the great bailaor and teacher of bailaores, Enrique Jiménez Mendoza -- better known as Enrique el Cojo -- dies in Sevilla. He was born in Cáceres [Extremadura] on March 31, 1972 and at age 4, moved with his family to Sevilla. As a child he suffered an injury to one of his legs that left him crippled for the rest of his life, but that did not stop him from dancing up to the time of his death. He was what is called a natural phenomenon. Enrique was the teacher of an infinite number of dancers and many personalities such as the Duchess of Alba. What he gave to his art cannot be measured and his secret lay in the ability to put what he had to say into compás. In recognition of his efforts, Enrique el Cojo received in recent years the \"Medalla del Trabajo\" (1980), \"El Puente de Plata\" (1981) and the \"Medalla de Plata de Bellas Artes\" (1984), and the hearts of all flamencos as well as all of those who came in contact with him. As the result of a thrombosis that had given him trouble for some weeks, Enrique died in his home in Sevilla on Calle Amor de Dios. May he rest in peace.",
+    "title": "ENRIQUE EL COJO DIES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_07",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9",
+    "page_number": 9,
+    "word_count": 239,
+    "article_char_count_full": 1261,
+    "article_char_count_review": 1261,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_07::A7",
+    "article_text_for_review": "[from: $ \\underline{\\text{Latino}} $, Sept. 1, 1985; sent by Paul Heffernan] The flamenco guitarist, Carlos Ramos, died at 69 years of age in Torre del Mar (Málaga) on August 18. He lived in Washington D.C. since 1964, where he worked every night in the flamenco show at Restaurante El Bodegón. Carlos learned to play the guitar on his own and, in 1940, he went to Madrid to develop himself artistically, there, he performed with some of the best flamenco artists of that time. He was named one of the best flamenco guitarists on several occasions by the magazine, Guitar Player. He toured to most of the important cities of the USA and made two records, one as a soloist and the other with the flamenco singer, Nifio Almadén. Carlos Ramos created and developed a personal style of playing the guitar that was known for its high level of composition and technical development; he added to the ideals of the traditional musical forms of flamenco. Before going to Spain for a vacation, he was given a farewell homage in El Bodegón. Waiting for his return in November, who would have thought that it was his final farewell? His good friend, the painter Paco Castillo put it well in saying that this has been an irreparable loss for all of us. He will forever remain in our hearts. \"Se ha callado su guitarra con la prima y el bordón; en Málaga nacio su arte y en Málaga terminó.\" CARLOS RAMOS",
+    "title": "A GREAT GUITARIST DIES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_07",
+    "year": 1985,
+    "language": "en",
+    "article_type": "article",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 248,
+    "article_char_count_full": 1389,
+    "article_char_count_review": 1389,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_07::A8",
+    "article_text_for_review": "by Ron Spatz [Our apologies to Ron. This report should have appeared in an earlier issue. The workshop took place in 1984.] December 7th represented for Los Angeles Flamenco guitarists both a sad and a happy day. Sad because it was the anniversary of the Pearl Harbor bombing; happy because it was also the day Paco Peña gave a concert in Los Angeles. As soon as I discovered that he was scheduled for a concert at the California State Northridge, I immediately got in touch with Professor Ron Purcell, the head of their guitar department, to see if it was possible to arrange a workshop. Well...the bottom line was yes, it was possible, but it took dozens of phone calls and a lot of anxious waiting. Then, it came right down to December 5th before we had confirmation for a workshop the afternoon of the 6th, and due to such last minute arranging, we wound up without a suitable room at the University. So...in a last minute panic, I volunteered my home. At the time, I was somewhat apprehensive as to how the Maestro would feel about this. However, my fears were totally unfounded. Paco is one of the politest and most gracious persons I have ever met. The workshop was warm, personal, and intensive. The underlying theme of all his advice was compás (not terribly surprising). \"Without precisely metered compás, you don't have Flamenco.\" Paco would like very much to return to L.A. with his Troupe for a total Flamenco Workshop. (We're going to work on this.) The next day he gave his concert to a packed audience, and following his own advice, it was superb. Anyone wishing to coordinate a concert and/or workshop for Paco in this country, please contact me at (818) 883-0932. PACO PEÑA AT GUITAR WORKSHOP IN LOS ANGELES",
+    "title": "PACO PEÑA IN LOS ANGELES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_07",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 304,
+    "article_char_count_full": 1725,
+    "article_char_count_review": 1725,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

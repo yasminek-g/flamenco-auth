@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1979_08::A15",
+    "article_text_for_review": "(Items for \"El Oido\" are welcomed; send information to the $ \\underline{\\text{Jaleo}} $ post office box. 1 JULY JUERGA JALEISTAS MIGRATE TO AUSTRALIA FOR SUMMER-NIGHT JUERGA by Juana DeAlva Arrivals at the July juerga may have wondered if they had come to the right place. The first stimuli to tantalize the senses were definitely from \"down under\" -- a kangaroo skin stretched across one wall, a koala clinging to a branch and the ever present Aussie accent of our Australian hostess Deanna Davis, wafting through the air. Soon, though, other stimuli prevailed -- Spanish shawls, rasgueados on guitars, accents from Castilla and Andalucía -- and guests were transported to a more northern continent. One thing we have learned over these past two years of juergas is that we cannot control the \"duende\". We can only set the atmosphere as best we can and then let happen what ever happens. The \"Aussie\" juerga was a good example of this fact. The evening was warm and lovely; the patio had been decorated and subtly illuminated; the garage had been turned into a make-shift \"cueva\" and was designated the \"cuarto jondo\" for \"serious\" flamenco. The duende erupted, instead, on the small 5X8 foot tablao in the living room; the rumba enthusiasts took over the \"cuarto jondo\" and the patio area was mostly deserted. ANNOUNCEMENTS Announcements are free of charge and will be placed for two months; they must be received by us by the 15th of the month previous to their appearance, earlier if possible. Send to: JALEO, P.O. BOX 4706, SAN DIEGO, CA.92104 JALEO CORRESPONDENTS If you would like to assist $ \\underline{\\text{Jaleo}} $ by acting as a correspondent for your city, please contact our P.O. Box number and let us know. We need to have an update at least every two months. Correspondents are listed as staff members. canada EL CHATEAU MADRID, VANCOUVER, B.C. is presenting Fiesta Flamenca with Angel and Gabriel Monzón, singer José Luis Lara, and guitarists Enrique and David. Weekends only; 1277 Howe. new york... CENTRO ESPAÑOL \"LA NACIONAL\" presents \"Tablao Flamenco\" with Estrella Morena and her group (3 girls and 1 male dancer); cantaor, Pepe de Málaga; guitarist, Pedro Cortes (hijo). Fri. & Sat. starting at 10:00 P.M., Sun. from 6:00-12:00 P.M. 239 W. 14th St. 929-7873. LA VERBENA features Agujetas, dancer Tibu, and guitarist Diego Castellon in July. In August they plan to have Pepe de Málaga with a dancer and Diego Castellon. 569 Hudson St. 243-9439. CHATEAU MADRID presents Paco Ortiz and his Company, including dancer Alicia and guitarist Pedro Cortes. Lexington Hotel; 14th & Lex MESON FLAMENCO features singer Paco Montes, dancer La Tata, and guitarist Miguel Cespedes. Thurs. through Sunday, 207 W. 14th St. DANCE INSTRUCTION: Jerry LeRoy Studio: Sebastian Castro (flamenco) 212-489-3587 Estrella Morena (flamenco) 212-489-8649 Mariano Parra (escuela bolera and flamenco 212-866-8520 Mariquita Flores 212-255-4202 GUITAR INSTRUCTION: Michael Fisher (Ithaca, N.Y. 607-257-6615 washington d.c.... TIO PEPE features dancer Raquel Peña and guitarist Fernando Sirvent. EL BODEGON features dancer Ana Martínez and guitarist Carlos Ramos who just celebrated fifteen years of playing in this place. 1637 R St. GUITAR INSTRUCTION: california CAFE DEL PASEO (Santa Barbara): Chuck \"Carlos\" Keyser plays guitar Sat. through Wed. from 11:00 A.M. to 2:00 P.M.; Fri. and Sat. nights from 7-10:00 P.M. he is playing at El Tapatío, 229 W. Montecito St. in Santa Barbara. DON QUIXOTE Spanish and Mexican Restaurant presents guitarist Mariano Córdoba and dancer Pilar Sevilla on Fri. and Sat. eves. Four shows nightly beginning at 7:30. 206 El Paseo de Saratoga in SAN JOSE. 378-1545. No cover. Paula Reyes (NEW MONTEREY) 375-6964 GUITAR INSTRUCTION: Rick Willis (OAKLAND) 482-1765 Mariano Córdoba (SUNNYVALE) 733-1115 san francisco... DANCE INSTRUCTION: Adela Clara and Miguel Santos - Theater Flamenco: 415-431-6521 Rosa Montoya - Dance Spectrum Center, 322122nd St. 415-824-5044 Teresita Osta - Fine Arts Palace 415-567-7674 Jose Ramon 415-755-3805 FLAMENCO GUITAR INSTRUCTION: Ricardo Peti 415-851-7467 Mariano Córdoba 733-1765 los angeles... EL CID offers Spanish tablao-style entertainment, currently Roberto Amaral, Rosal Ortega and Clark Allen, among others. 4212 Sunset B1 213-666-9551 DANCE INSTRUCTION:",
+    "title": "JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_08",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26-32",
+    "page_number": 30,
+    "word_count": 674,
+    "article_char_count_full": 4317,
+    "article_char_count_review": 4317,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_09::A1",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCopyright © 1979 by Carol Whitney All rights reserved (Photos by Tatsuki Kobayashi of Washington) Recently I returned from a second trip to Seattle to visit with Ansonini del Puerto and Seattle aficionados. The experiences I passed through this time made me more than ever fully aware of a surface incongruity: the mixture of flamenco's art, coming from its original sources, with aficionó of foreign birth, aficionó created by the so-called \"chance\" exposure to flamenco that results from tourism and its promotion, from widespread distribution and sale of records, books, magazines, from travel \"articles\" (really advertisements) in newspapers. It was Ansonini himself who brought this awareness so strongly to my consciousness. He did it by giving us his art, bringing it out from his own inner\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"manner\"]\n\nources, with aficionó of foreign birth, aficionó created by the so-called \"chance\" exposure to flamenco that results from tourism and its promotion, from widespread distribution and sale of records, books, magazines, from travel \"articles\" (really advertisements) in newspapers. It was Ansonini himself who brought this awareness so strongly to my consciousness. He did it by giving us his art, bringing it out from his own inner depths, always in a manner so appropriate to the occasion that we watch-listeners became one with him, as artist-audience-art. Perhaps for the first time in my life, I understand artistic maturity. Ansonini has it. If you think of his presence, personal and artistic, as the master hand behind all the events I'm about to describe, if you imagine his artistic process as source of inspiration leading us to the soul of art, you may understand better what I'm trying to say here. The incongruity I refer to results from a mixture of a performed art so rooted in life's experiences and outlooks as flamenco is with an audience which, no matter how devoted, has a life totally different from the life of flamenco's source. So I ask--w\n\n[ENDING CONTEXT]\n\nshe takes, compás, footwork, hand motions, costumes and their visual effects. She knows, to the finest detail, how each tiny aspect of her dance looks to the watching public. She is clearly aware of her beautiful proportions, and her dance enhances them. Afterwards I remarked to Allen that for once I wasn't bored watching footwork. He replied that he finds footwork boring by nature. Responding, I remembered that one aspect of Eloísa's footwork did bore me--her series of quickly repeated steps, all alike, of the kind my old friend Joe Trotter used to call \"a herd of a thousand horses.\"\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANSONINI: SECOND ROUND",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_09",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3,4,6",
+    "page_number": 3,
+    "word_count": 1144,
+    "article_char_count_full": 6861,
+    "article_char_count_review": 2780,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "manner"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_09::A2",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nThe author is indebted to Paco Sevilla and Yuris Zeltins for their cogent observations on, around, and about this topic, received in a memorable visit to the fine city of San Diego in early August, 1979. However, the author has expressed herein entirely his own views. * * * JOE OR JOSE by Paco Sevilla I would like to make a case for the adoption of Spanish stage names by American flamenco artists. While many American artists do use Spanish professional names, others believe that it is a \"phoney\" thing to do and that those who have integrity stick with their given names. Thus we find well-known performers with names such as Ronald Radford, Bruce Patterson, Michael and Suzanne Hauser, David Jones, and Gary Hayes, to name a few who come immediately to mind. All of these artists have found\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"degree\"]\n\npanish stage names by American flamenco artists. While many American artists do use Spanish professional names, others believe that it is a \"phoney\" thing to do and that those who have integrity stick with their given names. Thus we find well-known performers with names such as Ronald Radford, Bruce Patterson, Michael and Suzanne Hauser, David Jones, and Gary Hayes, to name a few who come immediately to mind. All of these artists have found some degree of professional artistic success while using non-Spanish names, but I believe they have very likely missed opportunities that would have been realized had they used a Spanish name. An appealing Spanish name might be a deciding factor in situations where a potential employer is undecided; it is likely to have an effect on the size of an audience and, even more important, will affect the critical evaluation by the audience. Roberto Reyes wrote in Jaleo (July 1978, p. 6), \"When the day comes that we can introduce flamenco with the artists' real name, Joyce Roth, rather than the traditional Juanita Reyes, flamenco will have come a long way.\" That day is a long way off! John Smith has to prove himself on stage; José Montoya just has to avoid blowing it too badly. Even when an artist is secure in his work, the audience is subtly affected by his name. A performer attempts to create moods and evoke images; anything that destroys the illusion, that distracts from the art, whether it is an English name, inappropriate attire, scuffed shoe\n\n[ENDING CONTEXT]\n\nshe came out in traje corto (dressed as a man). The other night she had worn only dresses; my interest was aroused. She danced por alegría; her traje fitted to perfection, black against a white blouse. She impressed me all over again. Dressed in masculine style, her dance expressed a power we attribute to males--but she remained entirely feminine. This woman, I said to myself, is an artist, without question. Her gestures drew out the essence of female power released in action. I sent her a silent tribute. Ansonini sent her his vocal jaleo, and again she smiled, but concentrated on her dance.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_09",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5-10",
+    "page_number": 5,
+    "word_count": 2134,
+    "article_char_count_full": 12321,
+    "article_char_count_review": 3124,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "degree"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_09::A3",
+    "article_text_for_review": "Christof Jung (Editor's note: This article originally appeared in the German publication, $ \\underline{\\text{Flamenco}} $, and then was translated into Spanish to appear in the original Spanish $ \\underline{\\text{Flamenco}} $. The editor of the German $ \\underline{\\text{Flamenco}} $ has given us permission to reprint articles, although this article is translated from the Spanish version and we hope it retains some resemblance to the original after having passed through another language.) In the history of flamenco, Manuel Torre occupies an exceptional place, not only as the greatest singer of the siguiriya gitana, but also as the prototype of the gitano andaluz. A clavo y canela me hueles tu a mí; er que no huela a clavo y canela no sabe istinguí. Pobresita mi mare, me la quito dio. Si cien años viviera en er mundo tendré ese dolor. Era un día señelao de Santiago y Santa Ana; yo le rogué a Dio que l'aliviera las duquelas a mi mare de mi corazón. Torre was frequently reproached for his specialization in the siguiriya and also because he was inconsistent as a cantaor, but he rejected these criticisms because he was a maestro in all of the cantes grandes and his inconsistency was due to his not having the security and regularity of some professional cantaores and knowing that he had to be careful with his \"duende\". When his moment arrived and the cante had ripened inside of him, he sang the cante jondo with his \"voz negra\" (dark voice), giving it an intensity that nobody else has achieved. In this respect it is of interest to cite the description given by the Irish investigator of the gypsy people, Walter Starkie, who was in contact with Manuel Torre in the 20's. Starkie wrote in the book, $ \\underline{\\text{In Sara's Tents}} $ (Munich 1957): \"He (Torre) used to delay his appearance on stage hour after hour. We would fill his glass again and again, and listen to him without contradicting him when he would compare, in a bragging tone, his fighting cocks with those of his Sevillian friends. A tall nervous man, with sparkling eyes in his bronze face, our great artist would remain insensible and impassible, like a priest in his oracle, to any of our attempts to get him to sing. With a white curl in his blue-black hair and the face of a priest in his temple, he had something vampire-like in his expression. Since he considered the fandanguillos to be modern and degraded, we would throw out hints, saying 'You are fond of the fandanguillos, isn't that true, Maestro?' to which he would answer, 'Eso pa mí está en Ingle' (For me they are in English)'. When, finally, morning arrived and we wanted to go home, we would hear the rhythmic tapping of his cane, observe the drops of sweat on Manuel's forehead, and see how the bronze color of his face would deepen, as if a demon were burning beneath his skin. And then out came the cante grande, as those who know call the cante'maestro'.",
+    "title": "MANUEL TORRE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_09",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11-12",
+    "page_number": 11,
+    "word_count": 507,
+    "article_char_count_full": 2916,
+    "article_char_count_review": 2916,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_09::A4",
+    "article_text_for_review": "María José Jarvis, a native of Málaga, is a very \"flamenca\" member of Jaleistas in San Diego. She thinks in poetry, a poetry that springs from the heart in traditional flamenco fashion. Recently, she has been creating flamenco letras and has written some beautiful ones for fandangos and fandangos de Huelva. Here are some poems dealing with her experiences with flamenco in San Diego. Apologies to those who do not read Spanish, but these poems lose so much in translation that we have decided not to print them in English. Les voy a contar señores lo que me pasó en San Diego A encontrarme a un Jaleista, me dijo con gran salero.... \"¿Tu no vienes al Jaleo, a la Juerga de San Diego?\" Y yo, muy asustadita, le dije con mucho miedo....",
+    "title": "POESIA DE MARIA JOSE JARVIS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_09",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 132,
+    "article_char_count_full": 736,
+    "article_char_count_review": 736,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

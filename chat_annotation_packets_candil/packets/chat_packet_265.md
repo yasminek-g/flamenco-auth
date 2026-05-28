@@ -1,0 +1,179 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-11-25-left-segunda-reuni-n-con-fosforito-an",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n—Anselmo. Dame tu juicio sobre M. Farián Gómez y su chacarrera.\n\n—Fosforito. El otro día estuve en el «Caño 14» y oí una serie de cantantes de tango extraordinarios. Yo este folklore no lo puedo juzgar con autoridad. Puedo decir que me gusta más o menos uno u otro, pero no lo entiendo perfectamente. No estoy preparado para juzgar con certeza lo que es mejor o peor. En cuanto a esta «chacarera», a mí me parece una señora extraordinaria, que tiene mucho sentido del ritmo aparte de su calidad emotiva. Me refiero a voz y sentido interpretativo. Canta sincopado, canta a contratiempo, como nosotros solemos decir, en suma, me parece que canta perfecto.\n\n—Anselmo. De tus maestros directos o indirectos (sabemos que por tu familia te venía solera de cante), o mejor dicho, los indirectos, por discos\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"recuerdo\"]\n\nra vez que empece a cantar con 5 ó 6 años en las tabernas. Yo..., en aquel tiempo, había allí un señor —hoy casi no llega a mí su forma de cantar, pero en aquel momento me impresionaba y además lo cuidaba, lo trataba con respeto—, un señor de Puente Genil que hacía los cantes por malagueñas, del Fósforo antiguo, cantaba los cantes de Enrique el Mellizo, a su forma, y también los cantes de Chacón, lo llamaban «Los Pelos»: tenía una finca, pero no recuerdo su nombre exacto, aunque supongo que «Frasquito». Era muy mayor, muy raro y no cantaba a cualquiera. Primero que no se dedicaba a eso. Era un señor y por eso sería que se hacía tanto de rogar. Yo no sé ahora mismo exactamente si lo escuchara si sería tan bueno como en aquel momento me parecía. Yo siempre estaba pendiente de encontrarle. Había una taberna en la plaza, se llamaba «Peirales», que era un gran aficionado y además cantaba algo. Y como me conocían, y también mucho a mi padre —me decían el «hijo de Fosforito»—, me llamaban, me daban sitio, «ven aquí, escucha», y escuchaba a estos señores siempre que podía. Había otro señor que era camarero, un poco medio loquillo, le decían «Pinturas», que murió (de los dos que estoy hablando ya han muerto). En aquellos mismos tiempos había uno en mi pueblo que cantaba por ahí, llegó a hacer tourné con Pepe Marchena, que lo llamaban Juaquín; también conocí al «Seco», que era un hombre mayor y que todavía vive con noventa y tantos años. Habrá algunos otros más que quizás no tengan nombre en la historia ni contaban para los aficionados del pueblo que, empero, a mí me gustaban, como Francisco Amador, el «Niño del Dispensario», el «Pinto» y otros que sinceramente no me acuerdo. Yo los veía de aquí para allá, tomando vino, porque mi tierra es tierra de vino, y la gente con sus copitas, no siempre, pero frecuentemente canta. Nadie\n\n[ENDING CONTEXT]\n\nExplica el motivo, venga, lo que tú ves allí.\n\n—Enrique. Porque resulte que se hace un «pedido» a los padres. Entonces la novia y el novio se despiden. Y luego, a un tiempo determinado fijan la boda. Y entonces, una gitana vieja que se dedica a mirar la virginidad de la novia, entonces la «confirma» con un pañuelo... Luego ya a la novia le ponen una corona de laurel y una banda por aquí, jurando que ha sido «honrada» en su boda. Y la sacan de allí...\n\n(Canta Fosforito: «la soleá, «despacito» por bulería). «Mi nombre nunca lo mientes,\n\nporque ni vivo ni muerto,\n\nmis ojos no quieren verte...\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Segunda reunión con Fosforito Anselmo",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-32",
+    "page_number": 24,
+    "word_count": 10859,
+    "article_char_count_full": 59933,
+    "article_char_count_review": 3477,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "recuerdo"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-11-33-left-o-do-al-cante-pedro",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nMucho se ha escrito en la reciente bibliografía flamenca sobre Anselmo González Climent, pero no se ha vertido suficiente tinta como para analizar la inmensa aportación que este escritor argentino hizo al flamenco. Y no voy a ser yo quien lo haga, puesto que no me considero capacitado para tal empresa. Sí haré un somero análisis de una faceta en él desconocida, y a la vez, dejar constancia de su ancestral devoción por la cultura de nuestro pueblo.\n\nHijo de andaluces —de La Línea y Málaga—, desde muy pequeño sintió gran afición por el flamenco, estimulada por su padre, dando como resultado su conocida e ingente obra flamenca.\n\nEn González Climent no había lugar para la monotonía; su capacidad de trabajo y afición flamenca eran moneda poco común.\n\nSu palmario amor por «su» Andalucía y el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"copiar\"]\n\neran moneda poco común. Su palmario amor por «su» Andalucía y el Flamenco, lo llevó a finales de 1987 a encarar la aventura de hacer un programa flamenco para la radio argentina, aconsejado por unos amigos a los que costó sudores convencerle, dada su crónica timidez y el pavor que el micrófono le producía. Su Su entrañable amigo y consejero de esta idea, Juan Manuel Blanco, conociendo anticipadamente la reacción que Anselmo podía tener, decide copiar la grabación sin que éste se enterase. Grabación que gentilmente nos cedió cuando le visitamos en Mar del Plata, y que por el hermoso contenido de los textos vamos a reproducir. perando todo esto, no sin poca dificultad, acomete la empresa y graba cuatro programas de quince minutos cada uno. Un amigo publicitario es el que se encarga de gestionar una firma comercial que financie estos programas —con un costo de 1.200 pesetas por programa— no consiguiendo, pese a lo exiguo del coste, ningún patrocinador. Ante tal resultado, resignado y triste decide borrarlos. Con una bella introducción de guitarra flamenca comienza su alocución: Se cuenta que don Ramón María del Valle Inclán, le dijo en cierta ocasión al enorme y revolucionario torero que era Juan Belmonte, cuando estaba en plena fama: «Juan, lo único que\n\n[ENDING CONTEXT]\n\ncomo algo tímido, en contraste con lo extrovertido de sus escritos. Tenía pocos amigos pero auténticos. Cuando surgía un diálogo era tan respetuoso con su interlocutor que, aun sabiendo que estaba errado, era incapaz de refutarle salvo en el caso de que tuviese suficiente ascendencia sobre él.\n\nIrradiaba tal magnetismo que una vez metido en polémica, al más reacio e indolente lo ganaba para su causa, siempre con los argumentos y el respeto más sólidos. La muerte le atrapó siendo aún joven, con lo que a nosotros nos privó de un amigo admirado y al flamenco de su más cualificado predicador.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Oído al cante Pedro",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "32-35",
+    "page_number": 32,
+    "word_count": 2592,
+    "article_char_count_full": 15437,
+    "article_char_count_review": 2892,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "copiar"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-11-36-right-tauromagia",
+    "article_text_for_review": "$ \\underline{A} $ $ \\underline{Anselmo} $ $ \\underline{González} $ $ \\underline{Climent} $\n\nTauromaquia, toreo, tauromagia. Jornadas. Horadas del Castillo. Ardua ascensión de gradas y visitillas al cielo entre almenas y espadas.\n\nTú, Anselmo, la inventaste. Sea tuyo el poema. Al decir \"Tauromagia\" creakas el teorema, la teoría y la exégesis. Todo está ya en la yema.\n\nSubir hasta la cima donde ya no se plagia es mística de amor sufí, ciencia trisagia, rara buenaventura de la azor tauromagia.\n\nFocos los elegidos que descorran el velo y ondeándolo alumbren andanadas de cielo. Raptos, quietismos, extasis en el quicio del vuelo.\n\nFocos los elegidos, los devotos no muchos. La masa no discierne ángeles de avechuchos nó babilonios toros de bastardos moruchos.\n\nPues también Jove augusto, sabiéndolo, entra en trance. El ritmo le contagia y esculpiendo su avance participa en la atónita revelación del lance.\n\nMas hollar la alta cumbre con pies angelicales requiere haber penado barrancos y canchales. Morada trase morada, las etapas cabales.\n\nRurron rudos cimientos de lucha y de hemorragia, secesis y cartillas de ortodoxia selvagia. Sólo el faquir despliega tapices de la magia.\n\nLa creación entera se hace pasmo y testigo. Y el coloquio sin límites del amor y el amigo es el jardín murado de prohibido testigo.\n\nSólo de tarde en tarde se gana el jubileo, que esas no son victorias del hijo de Peleo sino triunfos divinos que hacen cantar: yo creo.\n\nY el volapié lentísimo, símbolo de hermosura, relumbre en paraíso y brisa de escultura, cuando el perfil del tronco vacía su cintura.\n\nTal es la tauromagia, celeste intermitencia. A su soledad honda adquirimos videncia. de que a lo eterno vamos plenitud de existencia.",
+    "title": "Tauromagia",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "36-36",
+    "page_number": 36,
+    "word_count": 278,
+    "article_char_count_full": 1722,
+    "article_char_count_review": 1722,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-11-37-right-gonz-lez-climent-flamenc-logo-lu",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA gradezco a la revista «Can- dil» su consideración para con mi persona, al invitarme de nuevo a esta tribuna de su número monográfico, por la que han pasado —y van a seguir, con seguridad, pasando— tantas y tan autorizadas firmas para escribir de Flamenco.\n\nEn esta ocasión, en que el número está dedicado a la enorme figura de don Anselmo González Climent, cuya obra constituye, a mi entender, una especie de fuente de mil chorros, de mil caminos y sugerencias para un mejor conocimiento y entendimiento de lo andaluz y de lo flamenco, no hago más que preguntarme, ante tamaña figura, tanto a nivel flamencológico como literario que ¿qué hago aquí, tratando de escribirles de ella, cuando, si acaso, debería estar en un papel más a mi medida, cual podría ser el de ilustrador, con mi cante, de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"mejor\"]\n\nchorros, de mil caminos y sugerencias para un mejor conocimiento y entendimiento de lo andaluz y de lo flamenco, no hago más que preguntarme, ante tamaña figura, tanto a nivel flamencológico como literario que ¿qué hago aquí, tratando de escribirles de ella, cuando, si acaso, debería estar en un papel más a mi medida, cual podría ser el de ilustrador, con mi cante, de alguien que, con toda seguridad, tendría mucho más que decir y, por supuesto, mejor, sobre quien, en mi opinión, ha escrito con mayor profundidad y, a la vez, frescura, sobre flamenco; sobre quien, para mí, ha mirado y tratado con mayor agudeza y amplitud lo andaluz y lo flamenco? Si me detengo a pensarlo, casi debería pedir perdón por haberme atrevido a ocupar estas páginas. Pero, en honor a la verdad, tengo que decirles, queridos amigos y aficionados, que me encantó la invitación de la revista «Candil». Porque a uno, como a todo el mundo, también le gusta de vez en cuando escribir lo que piensa, y le resulta un tanto difícil decir que no, cuando se le ofrece la posibilidad de manifestarse sobre algo que le apasiona. Y es que uno siente, como todo el mundo, la necesidad de compartir su entusiasmo y su admiración. Sobre todo si, como en este caso, se trata de algo —la obra de González Climent—\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_02 | trigger=\"reconocernos\"]\n\narnos con González Climent en «Flamencología» —para mí su obra capital en lo que a Andalucía y el Flamenco se refiere— es, cuando menos, oxigenante; reconfortante ante la angustia y ansiedad que, con tanta frecuencia, nos produce (en beneficio ya de psicólogos y demás), el vivir y mostrarnos de forma tan distinta a como en realidad somos y sentimos por nuestra propia identidad y naturaleza. En tal situación, encontrarnos con algo que nos ayuda a reconocernos, a sentirnos, y nos llena de orgullo de ser quienes y como somos, es tan de agradecer hoy..., y tan difícil... Sin embargo, los flamencos podemos encontrarlo, lo tenemos, en «Flamencología», de don Anselmo González Climent. Ya, en su prólogo, decía don José María Pemán: «Andalucía no cabe en ningún libro, pero en un libro sobre Andalucía no cabe más». Y más adelante: «González Climent cumple el compromiso, casi universitario, de su título. Ha escrito frase a frase, idea a idea, con una totalidad de lectura y una casi infalibilidad de penetración, la mejor monografía, acaso, que tenemos sobre Andalucía». Y después estallamada de atención: «Este no es libro de turista ni de amateur. Es un libro colocado sobre una pirámide de libros». También nuestro Ricardo Molina, su amigo y compañero en aquellas primeras ediciones de los Concursos Nacionales de Córdoba, diría de don Anselmo: «Su\n\n[ENDING CONTEXT]\n\ndon Anselmo.\n\nFinalmente, escribir que, naturalmente, no quisiera que se me entendiera esta entusiasta reivindicación de G. Climent como la pretensión de que debamos terminar siendo todos flamencólogos, porque razonablemente no se trata de eso en absoluto. Sí se trata de elevar en lo posible nuestro nivel de afición, de lograr una mayor intensidad en el disfrute de nuestra afición, de llegar a ser mejores observadores y conocedores con una solvente capacidad de criterio y de selección; con una mayor capacidad, como decimos los flamencos, para «saber distinguir»; lo que no es poco, ¿verdad?\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "González Climent flamencólogo Luis de Córdoba",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "37-40",
+    "page_number": 37,
+    "word_count": 5307,
+    "article_char_count_full": 31538,
+    "article_char_count_review": 4326,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "mejor"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "reconocernos"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-11-41-left-en-memoria-de-anselmo",
+    "article_text_for_review": "Por encargo de la dirección de esta revista, me dispongo a dedicar unas letras a nuestro llorado amigo Anselmo González Climent.\n\nAunque quisiera, no puedo extenderme mucho porque en verdad pocos datos poseo de sus vivencias relacionadas con el arte flamenco. No obstante, voy a tratar de relatar algo de mis contactos con él en el período de 1970/73, aunque sea intranscendente para los lectores.\n\nSé, como saben muchos, que Anselmo era de ascendencia andaluza. Que en sus años jóvenes se pasaba las temporadas estivales en la localidad de San Roque, donde sin duda debió surgirle su interés por el arte flamenco y la tauromaquia. Tal fue su obsesión por llegar a conocer el arte flamenco en profundidad, que en las horas que le dejaban libre sus estudios, acudía presuroso a los teatros bonae-renses para escuchar a aquellos cantaores que en 1936 se afincaron en aquellas tierras huyendo de nuestra guerra civil. ¡Qué lástima! Allí quedaron para siempre Angelillo, Juan Mendoza «El Niño de Utrera» y algunos más. Que su afición fue «en crescendo» lo demuestra el hecho de preocuparse por contratar a personas conocidas para que le proporcionasen placas gramofónicas. Me consta que en pocos años limpió la provincia de Cádiz de placas antiguas porque llegó a reunir más de dos millares de ellas.\n\nMi correspondencia con Anselmo no fue muy extensa. Fue más bien escasa aunque rica en contenido. Tanto, que no tuvimos inconveniente en sincerarnos mutuamente. En una ocasión me\n\ndijo: «Qué lástima que no estuvié-semos más cerca uno del otro! Y creo que surgió en él ese mismo pesar cuando yo le dije: Tengo en mente escribir un libro biográfico de unas doscientas páginas, apaisadas, donde en cada una de ellas dedicada a una figura, constara su acta de nacimiento, su fotografía, su defunción y en la parte inferior su biografía extractada con indicación de si fue creador, qué cantes creó y si fue copista de quién copió. Este proyecto le ilusionó de tal manera que llegó a decirme que no me perdonaría que no lo llevase a la práctica. Pero al verme a solas, sin colaborador alguno, me vine abajo de tal forma que desistí de mi empeño.\n\nAnselmo fue conmigo, en todo momento, un perfecto caballero andaluz. Sin pedirle nada, tuvo la delicadeza de enviarme por avión, al domicilio de José Blas Vega, una placa de Fernando el Herrero y una casete con cantes de Aurelio Sellé, Juanito Mojama y Pepe Palanca. Yo, correspondiendo a su gentileza, le envié otra casete con cantes de la escuela de Enrique el Mellizo. Por cierto que, según me dijo, la soleá le hizo una enorme ilusión porque no la había escucha-do nunca.\n\nComo ingenuamente le dijera que sólo tenía de él su libro «Bulerías», inmediatamente dio orden a su librero para que me enviase un ejemplar de cada uno de sus libros publicados. Los recibió, los leí con detenimiento y así pude apreciar que González Climent, era un gran escritor y un enterado de las cosas flamencas y de los flamencos.\n\nSu bibliografía no tiene desperdicio. Todos aquéllos que estén en posesión de los libros dirán conmi-go que es, sin duda alguna, la me-jor didáctica que hemos conocido. Que cuando cogemos uno de los libros nos hacemos a la idea de que estamos sosteniendo en nuestras manos un tesoro de incalculable valor para los jóvenes aficionados.\n\nNunca olvidaré que, gracias a Anselmo, supe que mi cantaor malaqueño preferido, «El Pena» hijo, fijó su residencia en la ciudad de Mendoza, el año de 1936, en cuya ciudad y junto a su compañera Lola, establecieron una humilde pensión para poder conseguir el sustento de cada día.\n\nNi que decir tiene que rápida-mente escribí a González Climent pidiéndole la dirección del cantaor malagueño. Así lo hizo y yo, sin perder fecha, contacté con él manifestándole mi alegría por el hecho de saber de su existencia. Le pedí que me facilitase algunos datos relativos a su trayectoria artística, en las décadas de los veinte y los treinta. Aún conservo en mi archivo sus tres cartas, en la primera, accediendo a mis deseos, me decía:\n\n«Debuté como guitarrista de mi padre y de mi tío Diego. Después, como cantaor, actué en público, por primera vez, en el Teatro San Fernando de Sevilla. En Madrid es-\n\ntrené “La Copla Andaluza” con Jesús Perosanz y “El Alma de la Copla” con Guerrita. En Sevilla gané, en reñida competición la “Copa de Andalucía”. Mis cantes preferidos fueron la siguiriya, soleá, malagueña y la taranta».\n\n1 ranscurridos algunos meses, Anselmo me envió dos fotografías; en una figuraba él junto a Antonio «Fosforito» y en la otra con José Muñoz Martín «El Pena hijo». En la misma carta me decía que mi cantaor había sufrido un aviso grave y se encontraba postrado en cama por prescripción médica. Pero supe más tarde que la fatalidad se cebó con él, porque no tardó mucho tiempo en repetirle y cayó fulminante de un infarto de miocardio. Esta pérdida fue muy sentida por mí como os podéis imaginar, ya que —repito— se trataba de mi cantaor preferido. Escribí a Lola testimoniándole mi pesar y así terminó mi contacto epistolar con ella.\n\nTérmino diciendo que la pérdida irreparable de Anselmo la hemos sentido mucho los que amamos nuestro arte singular, quizá porque no olvidamos que está-bamos en deuda con él. Que le debemos que pusiera su enorme talento de escritor de postín al servicio de la más pura substancia flamenca. A él también le debemos el nombre de «Flamencólogo». Término éste que, bien es verdad, en un principio tuvo bastantes detractores. Sin embargo, hoy estoy por asegurar que es admitido casi de forma general. Y hasta tal extremo es así, que no dudo en afirmar, que en un futuro no muy lejano, los jóvenes aficionados conocerán su admisión en el Diccionario de la Real Academia de la Lengua.\n\n¡Anselmo González Climent! Que descanses en la paz del Señor.",
+    "title": "En memoria de Anselmo González Climent Manuel",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "41-41",
+    "page_number": 41,
+    "word_count": 986,
+    "article_char_count_full": 5774,
+    "article_char_count_review": 5774,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

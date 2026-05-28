@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_10::A13",
+    "article_text_for_review": "ARTISTIC DIRECTOR AND PRINCIPAL DANCER OF THE SPANISH DANCE ARTS COMPANY Roberto Lorca is one of the foremost American-born exponents and performers of Spanish dance. Born in Los Angeles of Mexican parentage, Lorca began studying dance at the age of twelve; ballet with Nico Charisse and flamenco dance with Antonio and Luisa Triana. At sixteen he joined the Jose Greco Company and appeared with the troupe for three years. Lorca subsequently appeared with the companies of Ximenez-Vargas, Luisa Triana, Maria Alba, José Molina, his own duet of Sevilla and Lorca, and the Alberto Lorca Company in Spain. From 1978 to 1981 he was seen as partner to María Benítez. While studying and performing in Spain, Mr. Lorca was brought to the attention of Rebekah Harkness, who arranged for him to interrupt his studies and return to New York for a month to work on a new ballet for the Harkness Ballet Company. Upon completion of his studies in Spain, Lorca returned once again to New York to become Director of the Spanish Dance Department at Harkness House for four years, from 1973 to 1977. A noted choreographer, and recipient in 1983 and 84 of the NEA Choreographer's Fellowship, Mr. Lorca has created works for the Triana Spanish Dance Company, the Maria Alba Spanish Dance Company, José Molina Bailes Españoles, and María Benítez, Estampa Flamenca. \"I feel that the dance must evolve and change; the purists disagree. Of course, one must retain some of the purity of the old school. Certain things are done, and other things are not done. There are such fine lines.\" \"The dance must have a strong element of contrast - periods of gentle calm, and a firey explosion now and then. I've learned to express feelings without overdancing, which was my tendency ten years ago. I'm constantly asking myself if I'm still doing it. \"Spanish dance has grown a lot since the '50s. Flamenco is all right just as it is, but the neo-classic style must say more. The audience should be involved in what's going on on stage. There must be drama in the form. Doing the same thing over and over was all right 30 years ago, but it doesn't work any more. And it doesn't do anything to further the popularity of the dance.\" untimely death of Spanish dance in America. Mr. Lorca has been dancing for 32 years, and feels that he will always be a student. \"I go to Spain every seven or eight months, to see what is being done there, and to study. I practically live in Amor de Dios (the Madrid equivalent of Jerry Le Roy's). I take classes with María Magdalena, Ciro, Manolo Marín, La Tati, Tomás de Madrid – and with María Rosa Merced, who, I feel, is very much misunderstood in Spain. She is considered too 'new wave.' \"My early training in Los Angeles was with Antonio and Luisa Triana and with Rita Lupino. I studied acting for a year at the Neighborhood Playhouse, it helped me greatly with mind control, and added very much to what I do now. I studied a little jazz with Nico Charisse, Wilson Morelli and Miriam Nelson, and also character. I had six months of ballet, but my Spanish teachers saw that I was becoming too lyrical and fluid, and made me stop.\" \"My mother sang in theatres and clubs in Mexico. At eight or nine I was always spinning around in the back yard, and clacking my 'crickets' - those black metal noisemakers - in the apartment. I made my debut as a tap dancer when I was ten or eleven. Then I saw a Spanish dancer, and I knew that was what I really wanted. \"I started to study when I was twelve, and at sixteen I joined José Greco's company. In 1959 I came to New York to do 'Flower Drum Song,' - it was a change of direction for me. After a couple of years I went back to Spanish dance. We all need to stop for a while every couple of years. But for the last ten years I haven't stopped at all. Everything seems to go in cycles.\" \"I can't stop now. I consider myself married to my work. It is the same as eating or breathing to me.\" \"I went through sheer agony putting 'Reflejos' together. I was in the studio four hours a day, seven days a week. I had been working on it in my head for three or four months. I would walk into the studio not really knowing what would happen. Also, I had to work on four or five pieces at once. It was a constant battle, trying to make everything fit. I would go home, eat something and sleep for two or three hours, and then get up and listen to music until two in the morning.\" \"The duets and trios are all choreographed, but my solos are improvised. That means taking chances, and that excites me. I've become more traditional lately; I use my arms more. But next year, I don't know what I'll be doing.\" \"Americans aren't interested in escuela bolera; they only want to see flamenco. I consider my work to be mainly interpretive; I try to combine flamenco with the neoclassic style.\" \"The flamenco purists don't want to see anything modern, but the general theatre-goers like it; it moves more. The modern and traditional factions fight all the time, even in Spain.\" PRESENTS TOMAS DE CHICAGO FLAMENCO GUITARIST TUESDAY THRU SATURDAY 3110 Newport Blvd., Newport Beach, CA 92663 (714) 673-3440",
+    "title": "ROBERTO LORCA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "25-26",
+    "page_number": 25,
+    "word_count": 928,
+    "article_char_count_full": 5129,
+    "article_char_count_review": 5129,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A14",
+    "article_text_for_review": "FUEGO ESPANOL II Choreography by noted Spanish dance artists María Alba, Ciro, La Tati, Nana Lorca, Manolo Rivera and Edo Sie will be featured in \"Fuego Espanol II,\" a full length Spanish dance concert to be performed in Skokie as part of the Concert Series at Mayer Kaplan Jewish Community Center Theatre, 5050 Church Street on Saturday, December 15, 1984 at 8:15 p.m. \"Fuego Espanol\" is the incendiary merger of two performance companies. Las Preferidas, under the direction of Teresa, is the resident dance company of the Ballet Arts Studio of Wilmette, and is sponsored by Productos La Preferida of Chicago. They will be joined by the Spanish dancers of the Northern Illinois Repertory Dance Company, directed by Lila Dole, associate professor in dance in the Department of Theatre Arts at Northern Illinois University. Partial funding for the staging of choreography is provided by a grant from the Illinois Arts Council, a state agency. The dancers, dressed in colorful costumes representing Spain's Galicia, Aragon, Valencia and Andalucía will perform regional dances with their complex jumping sequences, neoclassical dances showing a blend of classical music with both flamenco and balletic movements; and flamenco dances performed to the accompaniment of singer Paco Alonso and guitarist Paco Fonta. Michael Fredrics is ballet master and artistic consultant for this memorable event. For information: 312/675-2200. ROSA AND THE COMPANY THE SECOND ANNUAL FESTIVAL OF SPAIN IN SAN FRANCISCO Saturday, September 29, 1984, 11 AM - 6 PM The Cannery (Fisherman's Wharf) submitted by Frank Campbell Following the resounding success of the First Festival held on October 1, 1983, the Second Annual Festival of Spain in San Francisco was held again at The Cannery on September 29, 1984. This very special event was co-sponsored by Rosa Montoya's \"Bailes Flamencos\" and the Consulate General of Spain in San Francisco. The origins of California, and in particular San Francisco, are deeply rooted in the history of Spain. It is highly appropriate then to pay due tribute to \"La Madre Patria\" by celebrating its music, arts, crafts, and foods through such Festival. Although many people and organizations contributed towards making the Festival a momentous occasion, enjoyed by thousands of visitors, the real impetus behind it was Rosa Montoya herself, who deserves full credit for it's ROSA SHOWING LAST YEAR'S POSTER WHILE EMCEE RAFAEL RAMIREZ HOLDS ONE FOR 1984",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "27-28",
+    "page_number": 27,
+    "word_count": 389,
+    "article_char_count_full": 2464,
+    "article_char_count_review": 2464,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A15",
+    "article_text_for_review": "EL TOQUE ACTUAL Enrique de Melchor: Sugerencias Zafiro MPL-179 [from: El País, August 13, 1983; drawn out of ye Spanish by ye Shah cf Iran] by Angel Fernandez Caballero What has been lacking is a solo recording by Enrique de Melchcr, one of the true masters of present-day flamenco guitar. Son of the unforgettable Melchor de Marchena, Enrique had in his own house an exemplary model to follow, and this is obvious. Despite his thirty-one years of age, Enrique has not maintained strictly what he learned from his father, but rather his uneasiness and that of others of his generation, lead him to incorporate in his toque that which is appropriate to their age. For, certainly, flamenco guitar, as well as cante and dance, change with the times, and nowadays it would be unthinkable to produce a recording anchored in the toques of Ramón Montoya, Javier Molina, Niño Ricardo, or even Melchor de Marchena. I shall not speak of technique, in which the change has been radical, but rather of the \"screl\" with which today's guitarist approaches flamenco. As a creator, Enrique de Melchor shines here in extraordinary prominence. We knew him well as a tocacr accompanying baile and cante, but not so much as a concert artist. Developing this aspect with his own composition, Enrique offers us a splendid exercise, wonderful and of rare beauty. It is certain that some of those compositions are easier than others and - why not admit it - more commercial. But next to them are a rondeña of unusual greatness, some very emotional graninas dedicated to his father, some tangos, a zapateado, and some bulerías whose flamenco accent is clearly audible. The commerical concession is in this introduction in which figure, in addition to the guitar of Enrique de Melchor, a series of instruments foreign to flamenco. With FLAMENCO DANCE CLASSES NEW BEGINNER CLASSES FOR CHILDREN AND ADULTS ONE BLDCK OFF 3DTH NEAR FWY 94 IN SAN DIEGO CALL JUANA (619) 440-5279 these, the toque occasionally seems strange and, one might conclude, adulterated, with so much adornment and strange clothing that the flamencan essences disappear from sight. Nay, not so. Even if we discount the other sounds and remain only with the guitar of Enrique, our beloved toque jondo is there and remains alive in all its grandeur.",
+    "title": "RECORD REVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 385,
+    "article_char_count_full": 2289,
+    "article_char_count_review": 2289,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A16",
+    "article_text_for_review": "MARIANO DOES IT AGAIN by Frank Campbell The renowned interpreter and teacher of flamenco, Mariano Córdoba, appeared once again on August 17th at the Douglas Beach House in Half-Moon Bay. Playing to a rather large, learned and appreciative audience, Mariano, \"un maestro de maestros,\" demonstrated the solid and clear style that has been his trademark for nearly half a century. This particular performance had a very special meaning for Mariano as, seated in the first row were several members of his immediate family from Spain, some of them visiting California for the first time. Mariano was visibly moved at the opportunity to play for them, and this feeling was readily perceived by the audience, who shared in his enthusiasm. The first part of the concert consisted of solos by Mariano, each preceded by a brief explanation on the origins and meaning of the piece, which greatly heightened the appreciation by an already musically sophisticated audience. The second part of the concert included dancers Adela Vergara, Jaime Valenzuela, and Ricardo Orellana, with supporting guitarist Robert Dale, for a performance that brought on wild applause and many encores. As it might be expected, the quality of the artists, and the setting in which the concert took place resulted in a highly gratifying evening with the best flamenco the Dld and Hew Worlds can offer. The Douglas Beach House has become a recognized haven for the best of the best in the world of classical, jazz, folk, and flamenco music. I am certain that many lovers of El Arte will be awaiting with a good deal of anticipation Mariano's next appearance at the Beach House. * * * MORCA DOES IT AGAIN by Carol Jane Bangs Teo Morca has done it again. His 1984 All-Flamenco Workshop was an unqualified success, demonstrating to those not already familiar with Morca's \"method flamenco\" that this incredible teacher has not only penetrated the mysteries of this arcane art form, but has mastered the ability of passing on his incredible knowledge to those THIS SPACE RESERVED FOR YOUR CARD-SIZE AD SPECIAL OFFER $10 FOR 1 MONTH - $25 FOR 3 MONTHS PRICE APPLIES TO PHOTO READY ADS (ONE TIME $5.00 FEE IF AO OESIGN IS REQUESTED) Because most of the workshop students are housed in rooms and houses near the studio, a spirit of community is encouraged: many evenings the informal fiestas continue well into the night, with visiting guitarists, singers, or dancers showing up to join the fun. It is indeed a total saturation in flamenco, one unparalleled anywhere in the U.S. and, for that matter, one not easily available in Spain, except for those lucky enough to have expert guidance and plenty of time. One dancer flew to Morca's 1984 workshop directly from a thrse-week workshop in Spain. By her account she had learned more after the first week in Bellingham than during the whole Spanish workshop. The level of intensity, she said, was so much greater here. This was my third year at the All-Flamenco Workshop. The first time I attended I was an out-of-shape aficionado with a lot of intarest and two left feet. In three years I've learned basic \"framework choreographies\" for soleares, tangos, rumba, fárruca, soled por bulerías, siguirias, alegrias, and bulerías. I've found muscles I never knew I had. I now feel comfortable dancing at juergas or informal performances. Not only have I learned more than I ever dreamed possible, but my enthusiasm for flamenco has spread out among my friends in the Northwest who have begun to seek out flamenco entertainment and to learn more about this art form. Most of the workshop students are more experienced than I. They return from the workshop to their own flamenco troupes, to their own students--in Washington, D.C., Ohio, Massachusetts, Canada, New Zealand. From that unlikely hub of Bellingham, Washington they spread out like the spokes of a wheel, keeping flamenco alive, bringing to many more people the fundamentals of flamenco technique, style, and spirit. And one by one they make plans to return again to this special place and this special teacher. Any dancer would do well to join them. FLAMENCO AT THE GOLONDRINA A review by Ron Spatz When relatives visit Los Angeles, they are usually herded to Disneyland, Universal Studios, the Queen Mary, ad nauseum, and just maybe....Alvera Street....the oldest street in the city of the Angels. Among the taguitos and sombreros, there is a restaurant known as the Golondrina. The inside houses such Spanish trappings as white stucco, brick, and wrought iron railings. Performing there recently were Marcos and Rubina Carmona, along with Angelita, Ambar Gonzoles, Fredrico Aja, and Paco Vera. The show was lively and fast moving, however, the acoustics were disappointing. Anyone wishing to catch a flamenco show there would be wise to check first as the performance schedules are somewhat etratic.",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29-30",
+    "page_number": 29,
+    "word_count": 805,
+    "article_char_count_full": 4864,
+    "article_char_count_review": 4864,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A17",
+    "article_text_for_review": "WASHINGTON, D.C. Remarkable Charles Moeser keeps flamenco going in the D.C. area through the Peña Flamenca, playing in the entertainment spots and filling in for absentee artists. Charles is playing at the Tio Pepe, where Raquel and Ferando Sirvent often perform. (They are presently in Spain.) Paco de Málaga with Ana Martínez, the favored artists of EL BODEGON, were on a trip to South America. NEW YORK The following photos were taken at a gathering of local and visiting Spanish artists. (See the \"Shah\" column for further details.) JALEO CORRESPONDENT GEORGE RYSS PRESENTING \"THE GREATEST CANTAOR OF THE FUTURE,\" RAFEL FAJARDO FROM GRANADA \"EL GUITO\" BAILAOR JALEO - OCTOBER/NOVEMBER/DECEMBER 1984 \"EL GÚITO\" CANTAOR ENRIQUE MORENTE AND ROLO, GUITARIST OF THE FAMILIA MONTOYA SABICAS (TO WHOM THE FAMILIA MONTOYA DEDICATED THEIR PROGRAM) WITH EMILIO PRADOS JALEO - OCTOBER/NOVEMBER/DECEMBER 1984 DIEGO CASTELLON, CARBONELL, \"EL GUITO,\" ENRIQUE ESCUDERO AND PACO CORTES GUITARIST \"SERRANITO\" GUITARIST \"NINO GERO\" JALEO - OCTOBER/NOVEMBER/DECEMBER 1984 Supreme strings designed for today's finest classic and flamenco guitars At your local dealer or contact Antonio David Inc., 204 West 55th Street New York, NY 10019 USA Tels. (212) 307 1567 • 757-4412 or 3255 FLAMENCO FENCING ORNAMENTAL IRON SAFEGUARD FENCE CO. SERVING NORTH COUNTY 619/745-4846 CA Contractor's Licence #374198",
+    "title": "THE RYSS REPORT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "article",
+    "pages": "31-33",
+    "page_number": 31,
+    "word_count": 208,
+    "article_char_count_full": 1384,
+    "article_char_count_review": 1384,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

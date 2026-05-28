@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1987-05-19-left-podio",
+    "article_text_for_review": "Podio\n\nn sitio de honor en el podio a la Federación de Entidades Flamencas de Extremadura que para el próximo día de San Juan ha organizado un festival denominado Noche Gitana, en el que se reunirán las primeras figuras del flamenco de la región hermana: La Negra, hija del maestro Porrina; Ramón el Português; Juan Cantero; El Moro, Antonio el Camborio y siete ganadores de otros tantos grupos en el Concurso de Aficionados al cante; el baile de Eugenio de Badajoz y el Peregrino y las guitarras de Pepe Habichuela, Postigo y José Salazar, hijo del famoso Marqués, todos ellos rindiendo honores a esas joyas del flamenco, tan inmerecidamente desconocidas fuera de aquella hermosa tierra, como son los tangos y los jaleos extremenos. Méritos sobrados que acreditan el derecho a ocupar este lugar de honor y entre ellos, no menos importante, la erección de un monumento a Porrinas de Badajoz que ya ha tenido lugar, en la Plaza de la Soledad.\n\nambién por derecho propio la inefable TVE viene expuesta a la pública acusación y desestima. Dar a conocer en sus más íntimos y recatados detalles la parte menos visible de una boda gitana celebrada, al parecer, en Málaga, con el acto de la desfloración y la actuación de la picaora, ni siquiera bajo el pretexto de aquella letra flamenca.\n\nQue en el paño cabe engaño alerta, alerta mocita...\n\nes un agravio y un insulto al pue- blo gitano, aunque gitanos hayan sido los protagonistas de este exe- crable suceso.\n\nPicota\n\nla picota igualmente, aunque en este caso por desinterés hacia el flamenco en el Madrid de la gran Calle de Alcalá (por la que suben y bajan los andaluces), a la picota, decimos, la autoridad municipal que hizo comprometer para 1987 la celebración en la capital del Reino del Congreso Nacional de Actividades Flamencas. Para que los munícipes que se descomprometen a buenas horas no estén solos, que les acompané la Delegación de Cultura de la Comunidad Autónoma que no ha encontrado el camino para una deseada colaboración. Misión mio-pe que se conlleva muy mal con cumbres y otras irrupciones no siempre afortunadas, pero costos-sas en todos los casos, en el mundo del espectáculo flamenco.\n\nenuestos y amargas críticas a esos señores que tal como ha denunciado «Sevilla Flamenca», andan por el mundo realizando video-reportajes amparados en el pretexto de que van destinados a fines tan elogiables —si fueran ciertos— como la ITEAF (para los viejecitos del flamenco, dicen que dijeron en Jerez) o para los niños de las escuelas de Andalucía. La ITEAF ha protestado públicamente en el primer caso; el segundo, está pendiente de aclarar si se trata de un encargo oficial o si de un trabajo para venderlo a posteriori: la duda estriba en que los artistas empleados en ambos casos no han cobrado todavía... Estas conductas angelicales y caritativas degeneran, a veces, en el toco-mocho.\n\nTambién a la picota, expuesto al vituperio del pueblo llano, el dueño de esa Sala de Fiestas Barcelonaes que ha despedido al tocaor (extraordinario tocaor-concertista, sobre todo, y por cierto) Rafael Cañizares por haberse dejado la barba. La decisión del más puro estilo fascistizante merece este duro castigo.\n\nVentolera",
+    "title": "Podio",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 529,
+    "article_char_count_full": 3174,
+    "article_char_count_review": 3174,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-05-19-right-ablan-las-pe-as",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLlegó con tres heridas: la del amor, la de la muerte, la de la vida. M. Hernández\n\nCon motivo de cumplirse el XX Aniversario de la fundación de la Peña Flamenca «El Mirabrás» de Fernández-Núñez (Córdoba) se ha venido realizando un ciclo de conferencias y recitales durante el pasado mes de marzo, celebrándose en el formidable y amplio local de la Peña y con un extraordinario éxito de asistencia de público y organización.\n\nEl día siete, Alfredo Arrebola dio una charla-recital acerca de «Málaga en el cante»; el día catorce, María Oliveros habló de la «Evolución e historia del baile flamenco»; el veintiuno, Agustín Gómez, crítico flamenco como sabemos y socio de honor de la Peña, disertó sobre «Maestros del Cante», y el veintiocho, Juan J. González Merino, delegado provincial de Córdoba de la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"expresiones\"]\n\nGonzález Merino, delegado provincial de Córdoba de la Consejería de Cultura de la Junta de Andalucía, sobre «Flamenco y Juventud». A continuación intervino Paco Toronjo acompañado a la guitarra por José María de Lepe. Juan J. González Merino, nos habló, entre otras cosas, de la problemática del flamenco como espectáculo, de la conveniencia de adecuar los recitales flamencos a las actuales circunstancias, cortando su duración, incorporando otras expresiones artísticas (?), aportando savia nueva, y, en definitiva, acerca la juventud al cante flamenco. Interesante y amena resultó su intervención. Paco Toronjo esperaba el turno de su intervención consumiendo sin parar cigarro tras cigarro. Lucía nuestro cantaor un traje gris, y una insignia en la solapa de la Peña Flamenca de Huelva que posteriormente me enseñó orgulloso. En pie, con gesto majestuoso, apoyado con una mano en el respaldo de una silla, con voz bronca y desgarradora, nos fue emborrachando poquito a poco con fandangos de Huelva, de Santa Bárbara, del Cerro, del Alosno, de Almonáster... haciendo un largo recorrido por los pueblos de la provincia onubense. De la mar a la sierra pasando por la llanura, Paco Toronjo, acompañado sobriamente y con gran sencillez, sin aspavientos, por la guitarr\n\n[ENDING CONTEXT]\n\ncaldereta o chacina extremeña y una copa de vino. Hasta entonces, un abrazo flamenco.\n\nAsociación de Arte Flamenco de Badajoz\n\nNoticias de la Federación Provincial de Peñas Flamencas de la Provincia de Cádiz En Asamblea General celebrada en la Peña Flamenca jerezana de Los Cernícalos, en su sede en calle Sancho Vizcaíno, el motivo de la misma fue para constituir nueva Junta Directiva y que quedará realizada de la siguiente manera: Presidente: Antonio Benítez Manosalvas. Vicepresidente: Juan Lara Gómez. Secretario: Jesús García Díaz. Vicesecretario: Javier Salido Freyre. Tesorero: Blas López\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Hablan las Peñas",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-21",
+    "page_number": 19,
+    "word_count": 2140,
+    "article_char_count_full": 12875,
+    "article_char_count_review": 2899,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "expresiones"
+      }
+    ]
+  },
+  {
+    "article_id": "1987-05-21-right-gu-a-de-festivales-flamencos",
+    "article_text_for_review": "Salzar. Contador: Desiderio Sena Barrera. Relaciones Públicas: Joaquín Rodríguez Rosado. Vocales: José Morales García, Manuel Ferrer Casas, José M. a Malvido Ojeda y Pedro Cano Moraga.\n\nLos actos más relevantes que organiza esta entidad flamenca jerezana durante el año, son el Certamen Nacional de Guitarra Flamenca, el Pregón Flamenco de la Semana Santa y su Concurso de Saetas en la Calle.\n\nLa Peña Flamenca de «El Garbanzo», que tiene su sede en Jerez, y en la calle Santa Clara, núm. 9, está realizando un ciclo de recitales desde el pasado mes de febrero y que durará hasta el próximo mes de mayo. Su eficiente vocal de Relaciones Públicas, Rafael Banderas, está por tal motivo promocionando los nuevos valores jerezanos, tanto cantaores, bailadores como guitarristas. Por este mismo ciclo han pasado ya Pepe Alconchel, Manuel Carpio «El Garbanzo», Joselito Méndez, Pascual de Lorca, Pepe Ríos, Luis de la Chica y otros. Esta misma peña flamenca ha estrenado muy recientemente nueva junta directiva presidida por nuestro compañero Antonio Núñez Romero, locutor de Radio Jerez. Como Vicepresidente: Manuel Nuño Alvarado. Tesorero: Ricardo Cortés Lehig. Contador: José Antonio Gámez Marín. Secretario: Francisco Ordóñez Casares. Relaciones Públicas: Rafael Banderas Rubiales. Vocales: José Parra Jiménez, Juan López Rosa, Manuel Torralbo Gallo y José Marín Bejarano.\n\nCelebrado en Paterna de Rivera, y en acto producido por la Peña Flamenca «La Petenera», al final de su V Concurso de Cante para Aficionados en el Cine Ribera, de dicha localidad. Llegaron a la misma tras una serie de fases selectivas los siguientes concursantes: Marianita Cornejo, Fernando Moreno, José Bayón, Pachequito de Chiclana, Manuel Cordero y el Cojo Coripeño. Los señores miembros del jurado que estaba compuesto por Benigno Vaquero, José Luis Gámez, Diego Rosado y Juan Marín. Actuando de Secretario del mismo pero sin voz ni voto, el presidente de la entidad flamenca paterna, Plácido Romero, decidieron conceder los siguientes premios: el primero dotado con 40.000 pesetas, para el sevillano José Bayón. El segundo dotado con 20.000 pesetas, fue a parar a manos de la gaditana Marianita Cornejo. El tercero, para Pachequito de Chiclana, con 10.000 pesetas. El cuarto con la misma cuantía que el anterior, fue para Fernando Moreno, de Arcos de la Frontera. Accesit de 5.000 pesetas, para Manuel Cordero y El Cojo Coripeño. Todos los premios iban acompañados con sus correspondientes trofeos. Como invitada de honor se contó con la cantaora gadi-tana Carmen Sánchez de la Jara, que estuvo acompañada por el toque de Manolo de Ceuta. Se contó además con el grupo de baile que dirige Pilar Carrasco y el guitarrista jerezano José Luis Balao. La presen-tación corrió a cargo del locutor de Radio Jerez de la S.E.R., Antonio Núñez.\n\nLos miembros de la Peña Flamenca jerezana de «El Garbanzo», tuvieron un acto de convivencia con los amigos de la Tertulia Flamenca de El Viejo Agujetas de Rota, el pasado día 21. En la Casa de la Cultura de dicha ciudad gaditana «El Garbanzo», Joselito Méndez, Juan El Veneno, Luis Paulera, el baile de Rocío Bermejo y los buenos toques guitarrísticos a cargo de José Luis Balao y Pepe Ríos. La peña anfitriona obsequió a los presentes con un vino de honor y se quedó apalabrada la devolución de visitas para primeros del mes de mayo.\n\nGuía de Festivales Flamencos/87 Por la Asesoría de Actividades Flamencas de la Consejería de Cultura de la Junta de Andalucía, nos ha sido remitida la GUIA DE FESTIVALES FLAMENCOS para la presente temporada y que a continuación reproducimos para conocimiento de los aficionados.",
+    "title": "Guía de Festivales flamencos",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-23",
+    "page_number": 21,
+    "word_count": 584,
+    "article_char_count_full": 3626,
+    "article_char_count_review": 3626,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-05-24-left-flamenca-placas",
+    "article_text_for_review": "Discografia Flamenca (Placas)\n\nPor: Manuel Yerga",
+    "title": "Discografía flamenca (placas)",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 6,
+    "article_char_count_full": 48,
+    "article_char_count_review": 48,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-07-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nE n los días 6 y 7 del mes de noviembre de este año, los Profesionales de la Información y la Crítica Flamenca, convocados por el Grupo CANDIL y la Peña Flamenca de Jaén, van a reflexionar conjuntamente sobre los innúmeros y específicos problemas que les conciernen. Más exactamente, habría que decir «que a todos nos conciernen», puesto que el enjuiciamiento de cuanto integre el patrimonio cultural jondo, no debe dejar indiferentes a los aficionaos y, ni tan siquiera, a los ciudadanos en general.\n\nEl enorme predicamento que, como en otras áreas de la difusión de la cultura, tienen los medios de comunicación, en orden a la profundización del flamenco, es incuestionable. Toda técnica de marketing para el lanzamiento de un producto artístico —y el flamenco lo es— se articula mediante una adecuada instrumentación de los medios de comunicación, hasta el punto de que los mismos pueden conseguir, con independencia de cuáles sean los valores intrínsecos del producto, resultados brillantísimos y, en ocasiones, por desgracia, espúreos. Por eso, tal poder correlaciona con una tremenda y alta responsabilidad, que para su correcta concreción, ha de presuponer la existencia en el informante, de dos valores inprescindibles: conocimiento y veracidad. En este sentido, por un lado, es impresentable la osadía de algunos que sin un conocimiento mínimo del universo flamenco, se erigen en acendrados exégetas del mismo, dogmatizan, crucifican inmisericordes a supuestos detractores, o enaltecen la mediocridad. En definitiva, equivocan a la gente. Por otro lado, resulta depravada la actitud de otros que, con un conocimiento suficiente del flamenco, venden su criterio a intereses plebeyos, a incentivos crematísticos o, en el mejor de los casos, a una falsa y destructiva piedad. También equivocan a la gente. Por fortuna, unos y otros, son la excepción —nos gustaría que resultara cierta esta apreciación— entre los profesionales de la información y la crítica flamenca.\n\nEs la hora de saber quien es quien. Los informadores, los críticos de flamenco deben reflexionar conjuntamente sobre el estado actual del mismo, unificar o al menos acercar criterios en los análisis, redefinir, en la medida en que ello sea posible, los perfiles del comentarista o crítico de este arte, fijar los parámetros dentro de los cuales deba desarrollar su trabajo.\n\nEs extraordinariamente positivo el que los profesionales de la información flamenca, se encuentren, objetiven su importantísima función, surja el debate y si fuese posible, materialicen su trabajo en unas conclusiones. Es mucho lo que se espera de ellos.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1987-07",
+    "year": 1987,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 408,
+    "article_char_count_full": 2615,
+    "article_char_count_review": 2615,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,3176 @@
+{
+  "project_name": "Flamenco Periodical Analysis Codebook",
+  "version": "v13_collapsed_llm_gold",
+  "description": "LLM-oriented codebook for tagging flamenco periodical excerpts. The schema focuses on observable discourse codes, evidence spans, confidence, uncertainty, and derived analytic effects.",
+  "annotation_unit": {
+    "unit": "article review excerpt",
+    "rule": "Annotate only the visible review text. A missing code means no visible evidence in the review text, not absence from the full article.",
+    "long_article_rule": "If the excerpt is truncated, OCR-damaged, or too short to decide, set insufficient_context=true rather than guessing."
+  },
+  "llm_decision_process": [
+    {
+      "stage": 1,
+      "name": "evidence extraction",
+      "instruction": "Extract candidate spans that contain evaluative, authorizing, excluding, preserving, pedagogical, communal, or critical discourse. Ignore bare keyword hits without discourse function."
+    },
+    {
+      "stage": 2,
+      "name": "primary code assignment",
+      "instruction": "Assign one or more primary codes only when the extracted span satisfies the required discourse function."
+    },
+    {
+      "stage": 3,
+      "name": "derived analytic effect",
+      "instruction": "Derive analytic effect, polarity, target, and basis from the primary codes and evidence span."
+    }
+  ],
+  "output_schema": {
+    "codes": [
+      {
+        "code": "string",
+        "present": "boolean",
+        "evidence_quote": "string",
+        "target": "string|null",
+        "discourse_action": "authorizes|excludes|preserves|teaches|evaluates|ranks|contests|describes|other",
+        "rationale": "string",
+        "confidence": "high|medium|low",
+        "uncertainty_reason": "none|ambiguous_discourse_function|keyword_only|insufficient_context|ocr_damage|overlapping_codes|other"
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": "boolean",
+      "polarity": "legitimating|delegitimating|contested|mixed|neutral|unclear",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "heritage",
+        "community",
+        "pedagogy",
+        "criticism",
+        "mixed"
+      ],
+      "target": "string|null",
+      "right_to_define_present": "boolean",
+      "exclusion_boundary_present": "boolean"
+    },
+    "metadata": {
+      "geographic_terms": [],
+      "origin_or_transnational_labels": [],
+      "identity_terms": [],
+      "institution_terms": [],
+      "gendered_framing": "boolean",
+      "truncated": "boolean",
+      "insufficient_context": "boolean"
+    }
+  },
+  "families": {
+    "AUTH": {
+      "name_en": "authenticity / tradition / continuity",
+      "name_es": "autenticidad / tradicion / continuidad",
+      "purpose": "Track claims that define proper flamenco through genuineness, purity, tradition, roots, continuity, anti-commercial seriousness, or intimate/social authenticity.",
+      "use_when": "Use when passages do evaluative work around what is real, proper, pure, rooted, traditional, continuous, or corrupted flamenco.",
+      "do_not_use_when": "Do not use for neutral chronology, generic praise, advertising, biography, or bare words such as authentic/traditional/pure without flamenco-related evaluative force.",
+      "concepts": {
+        "AUTH_01": {
+          "label_en": "authenticity_claim",
+          "label_es": "reivindicacion_de_autenticidad",
+          "definition": "A discourse move that presents a person, style, repertoire, performance, publication, pedagogy, or practice as genuinely, properly, or truly flamenco.",
+          "use_when": "Use when authenticity, truth, genuineness, or properness is asserted, defended, denied, or attributed to a flamenco-related object.",
+          "do_not_use_when": "Do not use when authentic/true/proper describes something outside flamenco or generic sincerity/performance success.",
+          "merged_from": [
+            "AUTH:AUTH_01"
+          ],
+          "required_conditions": [
+            "The claim concerns flamenco or a flamenco actor/practice.",
+            "The passage does more than mention a keyword; it attributes genuineness/properness."
+          ],
+          "do_not_code_if": [
+            "Food/product authenticity unrelated to flamenco.",
+            "Conversational verdad/de verdad.",
+            "Generic 'properly' as successful execution."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "autentico / autentica / autenticidad",
+              "language": "es",
+              "regex_or_seed": "autentic(a|o|idad)",
+              "translation_warning": "Map exact form before translating.",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "term": "verdadero / de verdad",
+              "language": "es",
+              "regex_or_seed": "verdader[oa]|de\\s+verdad",
+              "translation_warning": "May encode stronger polemic than 'authentic'.",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "term": "authentic / true flamenco",
+              "language": "en",
+              "regex_or_seed": "authentic|true\\s+flamenco",
+              "translation_warning": "Check whether source wording was authenticity, truth, or purity.",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "term": "real / genuine / proper flamenco",
+              "language": "en",
+              "regex_or_seed": "real\\s+flamenco|genuine\\s+flamenco|proper\\s+flamenco",
+              "translation_warning": "Code only when the phrase authorizes flamenco value, not generic sincerity.",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "term": "flamenco real / genuino / propio",
+              "language": "es",
+              "regex_or_seed": "flamenco\\s+real|flamenco\\s+genuino|flamenco\\s+propio",
+              "translation_warning": "Code only when the phrase authorizes flamenco value, not generic correctness.",
+              "source_original_code": "AUTH_01"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "contribuyendo a que los menos iniciados sintonicen con el auténtico Flamenco que desde las Peñas siempre hemos pregonado",
+              "language": "es",
+              "rationale": "The passage explicitly presents a form of flamenco as auténtico and links that authenticity to peña-based authority.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 25,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "She reminds us strongly that \"the true flamenco voice is not pretty.\" She is just as adamant about flamenco puro-genuine flamenco. This is not the Hollywood or Las Vegas version.",
+              "language": "en",
+              "rationale": "The passage explicitly defines true/genuine flamenco against staged entertainment stereotypes.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "el auténtico Flamenco",
+              "language": "es",
+              "rationale": "The phrase is a useful lexical marker for authenticity language, even before assigning the full interpretive code.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 25,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "true flamenco voice",
+              "language": "en",
+              "rationale": "This is a compact English lexical marker for authenticity discourse.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "establecer un hito de auténtica significación íntima y afectiva para el maestro",
+              "language": "es",
+              "rationale": "This uses the trigger word auténtica but violates the negative constraint because it modifies the emotional meaning of a homage, not the authenticity of flamenco.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-07/1985-07.json",
+              "source_issue": "1985-07",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "This is authentic Chinese-American food.",
+              "language": "en",
+              "rationale": "This uses the trigger word authentic but violates the negative constraint because it is an analogy about restaurant food, not an authenticity claim about flamenco.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "¿verdad Tío Joaquín?",
+              "language": "es",
+              "rationale": "This uses the trigger word verdad but violates the negative constraint because it is conversational confirmation, not an authenticity marker.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 24,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_01"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Bendix shows authenticity functioning as a means to define a field, distinguish valued culture from other forms, and authorize methods or paradigms.",
+              "language": "en",
+              "rationale": "Use this as the basis for coding authenticity by discursive function, not as an inherent property.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Regina Bendix, In Search of Authenticity (1997), p. 5 & p. 7",
+              "summary": "\"Authenticity, I argue, was variously used as an agent to define this subject, differentiate it from other cultural manifestations, develop methods of analysis, critique competing theories, or create new paradigms.\" (p. 5) Furthermore, \"Declaring something authentic legitimated the subject that was declared authentic, and the declaration in turn can legitimate the authenticator\" (p. 7).",
+              "source_original_code": "AUTH_01"
+            },
+            {
+              "excerpt": "Bendix lists a recurring authenticity vocabulary: original, genuine, natural, noble, innocent, lively, sensuous, stirring.",
+              "language": "en",
+              "rationale": "Use exact lexical markers as evidence, but do not stop there; connect them to larger discourse function.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Regina Bendix, In Search of Authenticity (1997), p. 15",
+              "summary": "\"Original, genuine, natural, naive, noble and innocent, lively, sensuous, stirring—the string of adjectives could be continued. Folklorists since the eighteenth century have used them to circumscribe the longed-for quality that they saw encapsulated at first in folklore texts and later in folklore performance.\" (p. 15)",
+              "source_original_code": "AUTH_01"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "AUTH_02": {
+          "label_en": "purity_boundary_work",
+          "label_es": "trabajo_de_frontera_de_pureza",
+          "definition": "Language that defines proper flamenco by excluding or devaluing what is impure, fake, spurious, diluted, artificial, corrupted, or not real flamenco.",
+          "use_when": "Use when purity/contamination, genuine/fake, or proper/improper rhetoric draws a boundary around legitimate flamenco.",
+          "do_not_use_when": "Do not use for stylistic difference, factual correction, or preference without evaluative exclusion.",
+          "merged_from": [
+            "AUTH:AUTH_02"
+          ],
+          "required_conditions": [
+            "A boundary is drawn between legitimate/proper and illegitimate/improper forms.",
+            "An excluded or devalued target can be identified."
+          ],
+          "do_not_code_if": [
+            "Puro as an idiomatic intensifier.",
+            "Falsa as factual correction only.",
+            "Authentic/pure product advertising."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "puro / pureza",
+              "language": "es",
+              "regex_or_seed": "pur[oa]|pureza",
+              "translation_warning": "Not every use is positive; inspect polarity.",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "term": "impuro / degenerado / adulterado",
+              "language": "es",
+              "regex_or_seed": "impur|degenerad|adulterad",
+              "translation_warning": "Often linked to commerce or fashion.",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "term": "pure / purity",
+              "language": "en",
+              "regex_or_seed": "pure|purity|purist",
+              "translation_warning": "Not every use is positive; inspect polarity.",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "term": "impure / adulterated / commercialized",
+              "language": "en",
+              "regex_or_seed": "impure|adulterated|commercialized|circus",
+              "translation_warning": "Often linked to tourism or spectacle.",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "term": "genuine / spurious / fake",
+              "language": "en",
+              "regex_or_seed": "genuine|spurious|fake|inauthentic|not\\s+real\\s+flamenco",
+              "translation_warning": "Needs flamenco boundary-work, not sincerity or factual correction.",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "term": "genuino / espurio / falso / fraude",
+              "language": "es",
+              "regex_or_seed": "genuino|espurio|falso|fraude|inaut[eé]ntic|no\\s+es\\s+flamenco",
+              "translation_warning": "Needs flamenco boundary-work, not factual correction.",
+              "source_original_code": "AUTH_02"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Me defiendo de cantar peteneras, serranas, fandangos y cantes levantinos porque los considero cantes impuros inventados por los payos.",
+              "language": "es",
+              "rationale": "The passage draws a boundary between legitimate and illegitimate cantes through impurity and invention.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-09/1991-09.json",
+              "source_issue": "1991-09",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "Rodarte would like to open a flamenco club in Denver that would bring in authentic performers from Spain. Americans' perception of the form has been tainted by what he calls \"circus flamenco.\" \"I want to give Americans pure flamenco.\"",
+              "language": "en",
+              "rationale": "Purity rhetoric draws a boundary between legitimate flamenco and degraded circus flamenco.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "consideramos un fraude lo que sea desnaturalización... y, en fin, de todo lo que vaya en contra de lo auténtico en esta materia",
+              "language": "es",
+              "rationale": "The passage opposes lo auténtico to fraud, denaturalization, and irresponsible pseudo-renewal.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-09/1985-09.json",
+              "source_issue": "1985-09",
+              "page_number": 17,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "flamenco puro-genuine flamenco. This is not the Hollywood or Las Vegas version.",
+              "language": "en",
+              "rationale": "The passage establishes a binary between genuine flamenco and a degraded entertainment version.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "sin incurrir en puro desatino",
+              "language": "es",
+              "rationale": "This uses the trigger word puro but violates the negative constraint because it is an idiomatic intensifier, not purity boundary-work around flamenco.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "La Chana Authentic Flamenco Skirts",
+              "language": "en",
+              "rationale": "This uses authenticity/purity-adjacent marketing language but violates the negative constraint because it advertises clothing, not proper flamenco by excluding impurity.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 15,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "la afirmación... es parcialmente falsa",
+              "language": "es",
+              "rationale": "This uses the trigger idea falsa but violates the negative constraint because it concerns factual correction, not a genuine/spurious flamenco binary.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-09/1985-09.json",
+              "source_issue": "1985-09",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_02"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Bendix frames authenticity against inauthenticity/spuriousness and shows market or ideological forces treated as spoiling agents.",
+              "language": "en",
+              "rationale": "Supports codes for purity boundary work and anti-commercial contamination.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Regina Bendix, In Search of Authenticity (1997), p. 9",
+              "summary": "\"[E]fforts to promote and market folklore invariably lead to a perceived loss of authenticity, because students of culture until recent years have considered ideological and market forces as outside agents that spoil folklore's authenticity... identifying some cultural expressions or artifacts as authentic, genuine, trustworthy, or legitimate simultaneously implies that other manifestations are fake, spurious, and even illegitimate.\" (p. 9)",
+              "source_original_code": "AUTH_02"
+            },
+            {
+              "excerpt": "Identifying something as authentic simultaneously creates its opposite: the fake or spurious.",
+              "language": "en",
+              "rationale": "Supports coding the genuine/spurious dichotomy when texts define flamenco against fake or adulterated forms.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Richard Handler and Jocelyn Linnekin, 'Tradition, Genuine or Spurious' (1984) & Regina Bendix (1997) p. 9",
+              "summary": "Handler & Linnekin interrogate Sapir's 'genuine and spurious' binary. Bendix notes that identifying something as authentic \"simultaneously implies that other manifestations are fake, spurious, and even illegitimate.\" (p. 9)",
+              "source_original_code": "AUTH_02"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "AUTH_03": {
+          "label_en": "tradition_continuity_roots",
+          "label_es": "tradicion_continuidad_raices",
+          "definition": "Language that grounds flamenco value in tradition, continuity, roots, origin, survival, inheritance, or faithful continuation of a valued past.",
+          "use_when": "Use when tradition, continuity, preservation, roots, origin, or inheritance carries evaluative authority for present flamenco.",
+          "do_not_use_when": "Do not use for neutral chronology, bare age, etymology, or origin stories without present-value or authority stakes.",
+          "merged_from": [
+            "AUTH:TRAD_01",
+            "AUTH:TRAD_02",
+            "AUTH:TRAD_03"
+          ],
+          "required_conditions": [
+            "The past is used to authorize, value, preserve, or judge a present practice.",
+            "The text implies continuity, rootedness, or origin as meaningful for flamenco."
+          ],
+          "do_not_code_if": [
+            "Advertising tradition unrelated to flamenco.",
+            "Subscription/administrative uses of continue/conservar.",
+            "Neutral etymological origin."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "tradicion / tradicional",
+              "language": "es",
+              "regex_or_seed": "tradici[oó]n|tradicional",
+              "translation_warning": "Do not assume stable inherited core.",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "term": "tradition / traditional / traditionalist",
+              "language": "en",
+              "regex_or_seed": "tradition(al)?(ist)?",
+              "translation_warning": "Do not assume stable inherited core.",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "term": "continuidad / conservar / mantener",
+              "language": "es",
+              "regex_or_seed": "continuidad|conservar|mantener|preserv",
+              "translation_warning": "May conceal selective reconstruction.",
+              "source_original_code": "TRAD_02"
+            },
+            {
+              "term": "continue / continuity / preserve / maintain",
+              "language": "en",
+              "regex_or_seed": "continu(e|ity)|preserve|maintain",
+              "translation_warning": "May conceal selective reconstruction.",
+              "source_original_code": "TRAD_02"
+            },
+            {
+              "term": "de raiz / raices / origen",
+              "language": "es",
+              "regex_or_seed": "de\\s+ra[ií]z|ra[ií]ces|origen",
+              "translation_warning": "Roots claims are not just chronology.",
+              "source_original_code": "TRAD_03"
+            },
+            {
+              "term": "roots / origin / source",
+              "language": "en",
+              "regex_or_seed": "root(s)?|origin|source",
+              "translation_warning": "Roots claims are not just chronology.",
+              "source_original_code": "TRAD_03"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Y hoy los tenemos vigentes y rehabilitados en toda su pureza gracias a la «tradición oral»",
+              "language": "es",
+              "rationale": "Tradition is invoked as the mechanism that authorizes present continuity and purity.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 14,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "excerpt": "I do the cante my own way, naturally without departing from the traditional boundaries.",
+              "language": "en",
+              "rationale": "Tradition is invoked as an authoritative boundary for proper performance.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 22,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "excerpt": "vamos a conservar los fandangos personales como patrimonio de sus creadores que sólo a título de evocación singular y en actos definidos, deben ser cantados",
+              "language": "es",
+              "rationale": "The passage calls for conserving repertoire as a continuing inheritance tied to its creators.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-09/1985-09.json",
+              "source_issue": "1985-09",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_02"
+            },
+            {
+              "excerpt": "Upon returning to Santa Fe in 1964, he began a tradition which has continued uninterrupted for 27 years.",
+              "language": "en",
+              "rationale": "The passage constructs continuity across time through an uninterrupted local tradition.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 14,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_02"
+            },
+            {
+              "excerpt": "UNA TRADICION QUE MANTENEMOS DIA TRAS DIA CERVEZAS El Alcázar",
+              "language": "es",
+              "rationale": "This uses the trigger word tradición but violates the negative constraint because it is advertising copy, not a flamenco tradition claim.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 24,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "excerpt": "traditional flamenco roots with contemporary dance music",
+              "language": "en",
+              "rationale": "This uses the trigger word traditional but violates the negative constraint because it is promotional genre description rather than a tradition claim authorizing properness.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 21,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "excerpt": "Todavía conservo en la carpeta de mi mesa su última tarjeta de Navidad.",
+              "language": "es",
+              "rationale": "This uses the trigger word conservo but violates the negative constraint because it refers to a personal object, not cultural continuity.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 13,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_02"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Handler and Linnekin argue that tradition cannot be defined by boundedness, givenness, or essence, but is an interpretive process.",
+              "language": "en",
+              "rationale": "Supports coding tradition as a claim or construction rather than an objective inheritance.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Richard Handler and Jocelyn Linnekin, 'Tradition, Genuine or Spurious' (1984), p. 273",
+              "summary": "\"We have concluded that tradition cannot be defined in terms of boundedness, givenness, or essence. Rather, tradition refers to an interpretive process that embodies both continuity and discontinuity.\" (p. 273)",
+              "source_original_code": "TRAD_01"
+            },
+            {
+              "excerpt": "Continuity with the past is constructed in the present; tradition is symbolic process, not approximate identity of an objective thing.",
+              "language": "en",
+              "rationale": "Use for continuity, preservation, survival, and faithful-transmission rhetoric.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "literature_source": "Richard Handler and Jocelyn Linnekin, 'Tradition, Genuine or Spurious' (1984), p. 287",
+              "summary": "\"Thus we can no longer speak of tradition in terms of the approximate identity of some objective thing that changes while remaining the same. Instead, we must understand tradition as a symbolic process that both presupposes past symbolisms and creatively reinterprets them.\" (p. 287)",
+              "source_original_code": "TRAD_02"
+            },
+            {
+              "excerpt": "Authenticity relies on the search for origins and the 'soul of the people' as the essence of cultural value.",
+              "language": "en",
+              "rationale": "Use when texts ground cultural authority and legitimacy in roots, origins, and primary essence.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Regina Bendix (1997) p. 6 & p. 19",
+              "summary": "Authenticity acts as the \"origin and essence of being human\" (p. 6) and relies on the \"exuberant search for the 'soul of the people'\" (p. 19). Roots/origin claims are the rhetorical mechanisms for securing this essence.",
+              "source_original_code": "TRAD_03"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "AUTH_04": {
+          "label_en": "anti_commercial_or_intimate_authenticity",
+          "label_es": "autenticidad_anticomercial_o_intima",
+          "definition": "Language that treats commercial spectacle, tourism, mass mediation, or staged/public distance as weakening authenticity, or treats intimate/social co-presence as more authentic.",
+          "use_when": "Use when markets, tourism, publicity, spectacle, or formal stage separation are framed as threats to real flamenco, or intimacy/co-presence is framed as evidence of real flamenco.",
+          "do_not_use_when": "Do not use for routine sales, sponsorship, publication economics, generic emotional intimacy, or event setting descriptions without authenticity stakes.",
+          "merged_from": [
+            "AUTH:AUTH_04",
+            "AUTH:AUTH_06"
+          ],
+          "required_conditions": [
+            "Commercial/public/spectacular or intimate/private/social setting is linked to authenticity or loss of authenticity."
+          ],
+          "do_not_code_if": [
+            "Routine commercial sponsorship.",
+            "Commercial videos as distribution information.",
+            "Generic personal closeness or sentimentality."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "comercial / para turistas",
+              "language": "es",
+              "regex_or_seed": "comercial|turist",
+              "translation_warning": "Needs authenticity stakes, not just economics.",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "term": "commercial / tourist / staged",
+              "language": "en",
+              "regex_or_seed": "commercial|tourist|staged|sellout",
+              "translation_warning": "Needs authenticity stakes, not just economics.",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "term": "intimo / intimidad / cercano / entre nosotros",
+              "language": "es",
+              "regex_or_seed": "intim|cercan|entre\\s+nosotr",
+              "translation_warning": "Do not confuse with generic sentimentality.",
+              "source_original_code": "AUTH_06"
+            },
+            {
+              "term": "intimate / close / among ourselves",
+              "language": "en",
+              "regex_or_seed": "intimate|close|among\\s+ourselves",
+              "translation_warning": "Needs evaluative authenticity force.",
+              "source_original_code": "AUTH_06"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "se ha sacado de su círculo original comercializándose y desposeyéndole de parte de sus valores reales",
+              "language": "es",
+              "rationale": "Commercialization is treated as removing flamenco from its original circle and stripping real values.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1981-07/1981-07.json",
+              "source_issue": "1981-07",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "excerpt": "the art will have to withdraw once more with the \"purists\" if it is to protect its vitality and to avoid the twin threats of academicism and commercialization",
+              "language": "en",
+              "rationale": "Commercialization is named as a threat to flamenco vitality and authenticity.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 31,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "excerpt": "pierde su enorme valor de intimidad, de hablar al oído del hermano, pero en cambio en los café-cantantes se va a engrandecer horizontalmente",
+              "language": "es",
+              "rationale": "Intimacy and closeness are treated as evidence of a more authentic earlier flamenco.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_original_code": "AUTH_06"
+            },
+            {
+              "excerpt": "flamenco is at its purest when shared between musicians and a few onlookers in marathon, all-night sessions. These \"juergas\" usually occur in intimate settings",
+              "language": "en",
+              "rationale": "Intimacy, small scale, and co-presence are treated as evidence of flamenco at its purest.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_06"
+            },
+            {
+              "excerpt": "patrocinado por la Diputación de Granada, el Ayuntamiento de Cúllar de Vega y firmas comerciales",
+              "language": "es",
+              "rationale": "This uses the trigger word comerciales but violates the negative constraint because it is routine sponsorship information without authenticity stakes.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 20,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "excerpt": "I am presently looking into a source for commercial videos of flamenco performances from Spain",
+              "language": "en",
+              "rationale": "This uses the trigger word commercial but violates the negative constraint because it is routine video distribution information without authenticity judgment.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "excerpt": "en un ritual que conlleva una mágica intimidad con él",
+              "language": "es",
+              "rationale": "This uses the trigger word intimidad but violates the negative constraint because it describes symbolic intimacy in villancico imagery, not flamenco authenticity.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-11/1982-11.json",
+              "source_issue": "1982-11",
+              "page_number": 5,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "AUTH_06"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Commercialization and tourist-oriented spectacles are treated as outside agents that spoil authenticity.",
+              "language": "en",
+              "rationale": "Supports coding anti-commercial sentiment when market forces are framed as corrupting genuine flamenco.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Regina Bendix (1997) p. 9 & Timothy deWaal Malefyt (1998) p. 63",
+              "summary": "Bendix observes that \"efforts to promote and market folklore invariably lead to a perceived loss of authenticity... market forces [are] outside agents that spoil folklore's authenticity\" (p. 9). Malefyt contrasts authentic peña practice against \"commercial venues for purposes of tourism\" (p. 63).",
+              "source_original_code": "AUTH_04"
+            },
+            {
+              "excerpt": "Malefyt's peña scenes treat intimacy, familiarity, crowding, shared attention, and emotional density as signs of a more real and valued flamenco than the tourist-oriented tablao.",
+              "language": "en",
+              "rationale": "Supports coding intimacy as a marker of authenticity rather than mere atmosphere.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 63",
+              "summary": "\"At the center of the flamenco tradition are Andalusian flamenco aficionados who practice an intimate, private, and emotional exchange of flamenco in exclusive peña clubs, which directly contrast flamenco performed publicly and spectacularly in commercial venues for purposes of tourism.\" (p. 63)",
+              "source_original_code": "AUTH_06"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        }
+      }
+    },
+    "HERIT": {
+      "name_en": "heritage / patrimony / public culture",
+      "name_es": "patrimonio / cultura publica",
+      "purpose": "Track patrimonialization, public heritage value, safeguarding, official recognition, institutional heritage authority, living heritage, memory, and contested community heritage.",
+      "use_when": "Use when passages invoke patrimonio/heritage, safeguarding, listing, institutional recognition, public cultural value, memory, or heritage management.",
+      "do_not_use_when": "Do not use for authenticity, roots, lineage, or tradition unless the passage also shifts into public-culture, institutional, or patrimonial framing.",
+      "concepts": {
+        "HERIT_01": {
+          "label_en": "heritage_discourse",
+          "label_es": "discurso_de_patrimonio",
+          "definition": "Language that frames flamenco as heritage or patrimony and treats value through public culture, collective identity, memory, recognition, or transmission.",
+          "use_when": "Use when patrimonio/heritage is a category of public value, identity, memory, or cultural policy.",
+          "do_not_use_when": "Do not use when heritage means personal ancestry, literary stock, or vague legacy without public cultural heritage framing.",
+          "merged_from": [
+            "HERIT:HERIT_01"
+          ],
+          "required_conditions": [
+            "The heritage/patrimony frame concerns flamenco or a related cultural practice.",
+            "The passage treats heritage as public/collective cultural value."
+          ],
+          "do_not_code_if": [
+            "Heritage as personal ancestry/appearance.",
+            "Patrimonio as one person's literary assets."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "patrimonio / patrimonio cultural",
+              "language": "es",
+              "regex_or_seed": "patrimoni[oó](\\s+cultural)?",
+              "translation_warning": "May mark institutional value rather than authenticity.",
+              "source_original_code": "HERIT_01"
+            },
+            {
+              "term": "heritage / cultural heritage",
+              "language": "en",
+              "regex_or_seed": "heritage|cultural\\s+heritage",
+              "translation_warning": "Check whether original wording was patrimonio, tradition, or legacy.",
+              "source_original_code": "HERIT_01"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Todos tenemos el deber y derecho irrenunciable de conservar el patrimonio cultural que se nos ha entregado.",
+              "language": "es",
+              "rationale": "Flamenco is framed as patrimonio cultural and as a collective public responsibility.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-09/1985-09.json",
+              "source_issue": "1985-09",
+              "page_number": 14,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_01"
+            },
+            {
+              "excerpt": "The purpose of these presentations was to enhance the students' and general public's awareness regarding the art of flamenco and its influences on the cultural heritage of the area.",
+              "language": "en",
+              "rationale": "Flamenco is framed as cultural heritage and public cultural value.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_01"
+            },
+            {
+              "excerpt": "constituía el patrimonio literario de Balmaseda",
+              "language": "es",
+              "rationale": "This uses the trigger word patrimonio but violates the negative constraint because it refers to one writer's literary stock, not public heritage discourse.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1986-11/1986-11.json",
+              "source_issue": "1986-11",
+              "page_number": 5,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_01"
+            },
+            {
+              "excerpt": "Támara is a small woman... with a pretty face that clearly shows the Mediterranean in her heritage.",
+              "language": "en",
+              "rationale": "This uses the trigger word heritage but violates the negative constraint because it refers to ancestry/appearance, not public cultural heritage discourse.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1981-09/1981-09.json",
+              "source_issue": "1981-09",
+              "page_number": 3,
+              "provenance_match_method": "longest_fragment",
+              "source_original_code": "HERIT_01"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Smith argues that heritage is not a thing but a cultural and social process that constructs and negotiates identities, values, and meanings in the present.",
+              "language": "en",
+              "rationale": "Use to keep heritage discourse analytically separate from authenticity or tradition claims.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Laurajane Smith, Uses of Heritage (2006), p. 11 & p. 44",
+              "summary": "\"There is, really, no such thing as heritage... ‘Heritage’ is therefore ultimately a cultural practice, involved in the construction and regulation of a range of values and understandings.\" (p. 11) It is a cultural process that identifies what can be given meaning and value as heritage (p. 44).",
+              "source_original_code": "HERIT_01"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "HERIT_02": {
+          "label_en": "institutional_authorized_heritage",
+          "label_es": "patrimonio_institucional_autorizado",
+          "definition": "Heritage discourse that privileges experts, institutions, official recognition, listing, inscription, proclamation, conservation, consensus, or state/public authority.",
+          "use_when": "Use when an institution, expert, listing, inventory, official recognition, or authorized heritage mechanism defines or valorizes flamenco.",
+          "do_not_use_when": "Do not use for grassroots memory, community pride, or ordinary recognition unless official/institutional heritage authorization is explicit.",
+          "merged_from": [
+            "HERIT:HERIT_02",
+            "HERIT:HERIT_04"
+          ],
+          "required_conditions": [
+            "An official, expert, institutional, listing, or recognition mechanism confers value.",
+            "The passage is about heritage authority, not ordinary event sponsorship."
+          ],
+          "do_not_code_if": [
+            "Routine institutional funding without heritage discourse.",
+            "Generic praise by an organization without patrimonial framing."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "authorized heritage discourse / AHD",
+              "language": "en",
+              "regex_or_seed": "authorized\\s+heritage\\s+discourse|\\bAHD\\b",
+              "translation_warning": "Do not impose as actor language.",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "term": "discurso patrimonial autorizado / AHD / oficial",
+              "language": "es",
+              "regex_or_seed": "discurso\\s+patrimonial|oficial|institucional|autoridad",
+              "translation_warning": "AHD is an analyst term; look for deference to institutions.",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "term": "inscripcion / declaracion / reconocimiento / inventario",
+              "language": "es",
+              "regex_or_seed": "inscrip|declar|reconoc|inventari",
+              "translation_warning": "Check if value comes from official recognition.",
+              "source_original_code": "HERIT_04"
+            },
+            {
+              "term": "list / listing / inscription / inventory / masterpiece",
+              "language": "en",
+              "regex_or_seed": "list(ing)?|inscription|inventory|masterpiece",
+              "translation_warning": "Masterpiece may romanticize rather than neutrally describe.",
+              "source_original_code": "HERIT_04"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "la institucionalización del Flamenco no puede reputarse... como algo negativo... porque el flamenco necesita ser tutelado como patrimonio cultural",
+              "language": "es",
+              "rationale": "The passage privileges official tutelage and institutional recognition in defining and protecting flamenco as heritage.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1988-03/1988-03.json",
+              "source_issue": "1988-03",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "excerpt": "the Government of Jerez... placed there by the Government... in memory... under a proposal by the councilman",
+              "language": "en",
+              "rationale": "Official municipal action authorizes memory and cultural value through public commemoration.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 17,
+              "provenance_match_method": "longest_fragment",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "excerpt": "es ésta la primera vez que, de manera colegiada, una ciudad declara el sentido popular y cultural del flamenco",
+              "language": "es",
+              "rationale": "An official civic declaration is treated as conferring cultural value and recognition.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_04"
+            },
+            {
+              "excerpt": "Recently Ms. Benitez and her company were given the golden key to the city of Miami by the mayor.",
+              "language": "en",
+              "rationale": "An official civic honor confers visibility and value on the artist/company.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 12,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_04"
+            },
+            {
+              "excerpt": "harán patrimonio común y con el paso del tiempo, pasarán a ser tenidas por populares",
+              "language": "es",
+              "rationale": "This uses heritage-like language but violates the negative constraint because it describes community uptake rather than official authorization.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1986-11/1986-11.json",
+              "source_issue": "1986-11",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "excerpt": "Flamenco is the musical heritage of a particular culture in Andalucía.",
+              "language": "en",
+              "rationale": "This uses heritage language but violates the negative constraint for HERIT_02 because it does not invoke official or expert authorization.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 38,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "excerpt": "yo hice unas declaraciones",
+              "language": "es",
+              "rationale": "This uses the trigger word declaraciones but violates the negative constraint because it means interview remarks, not listing, proclamation, or valorization.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_04"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Smith defines an authorized heritage discourse that privileges expert authority, monumentality, innate significance, social consensus, and nation-building.",
+              "language": "en",
+              "rationale": "Supports coding institutional authority and official public-culture framing.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Laurajane Smith, Uses of Heritage (2006), p. 11 & p. 29",
+              "summary": "\"The ‘authorized heritage discourse’ privileges monumentality and grand scale, innate artefact/site significance tied to time depth, scientific/aesthetic expert judgement, social consensus and nation building.\" (p. 11) It defines who the legitimate spokespersons for the past are, specifically experts (p. 29).",
+              "source_original_code": "HERIT_02"
+            },
+            {
+              "excerpt": "Kirshenblatt-Gimblett shows that listing and inscription are metacultural artifacts: the list is the context for everything on it and confers value symbolically.",
+              "language": "en",
+              "rationale": "Supports listing, inventory, inscription, and valorization codes.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Barbara Kirshenblatt-Gimblett, 'Intangible Heritage as Metacultural Production' (2004), p. 55",
+              "summary": "\"Some of those involved in the process of developing the intangible heritage initiative had hoped for cultural rather than metacultural outcomes; they wanted to focus on actions that would directly support local cultural reproduction, rather than on creating metacultural artefacts such as the list.\" (p. 55)",
+              "source_original_code": "HERIT_04"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "HERIT_03": {
+          "label_en": "safeguarding_living_contested_heritage",
+          "label_es": "salvaguardia_patrimonio_vivo_contestado",
+          "definition": "Language of safeguarding, protection, conservation, living practice, memory-work, community heritage, or contested/dissonant heritage politics.",
+          "use_when": "Use when the passage frames flamenco as something to be safeguarded, transmitted as living practice, remembered collectively, or contested among communities/institutions.",
+          "do_not_use_when": "Do not use for simple preservation vocabulary without heritage/public-culture stakes.",
+          "merged_from": [
+            "HERIT:HERIT_03",
+            "HERIT:HERIT_05",
+            "HERIT:HERIT_06",
+            "HERIT:HERIT_08"
+          ],
+          "required_conditions": [
+            "The passage connects safeguarding/memory/living practice/community heritage to public cultural value.",
+            "A community, institution, or public is positioned as responsible for meaning, preservation, or contestation."
+          ],
+          "do_not_code_if": [
+            "Generic protection/support with no cultural heritage frame.",
+            "Routine event promotion."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "salvaguardia / proteger / preservar / conservar",
+              "language": "es",
+              "regex_or_seed": "salvaguardi|proteg|preserv|conserv",
+              "translation_warning": "Needs public-culture or institutional framing.",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "term": "safeguarding / preservation / conservation",
+              "language": "en",
+              "regex_or_seed": "safeguard|preserv|conserv",
+              "translation_warning": "Can overlap with archive or museum discourse.",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "term": "patrimonio vivo / cultura viva / transmisores / portadores",
+              "language": "es",
+              "regex_or_seed": "patrimonio\\s+vivo|cultura\\s+viva|transmisor|portador",
+              "translation_warning": "Do not reduce to generic tradition.",
+              "source_original_code": "HERIT_05"
+            },
+            {
+              "term": "living heritage / living culture / carriers / transmitters",
+              "language": "en",
+              "regex_or_seed": "living\\s+heritage|living\\s+culture|carrier|transmitter",
+              "translation_warning": "Carrier/transmitter can erase agency; note tone.",
+              "source_original_code": "HERIT_05"
+            },
+            {
+              "term": "memoria / comunidad / control / representacion",
+              "language": "es",
+              "regex_or_seed": "memoria|comunidad|control|representaci[oó]n",
+              "translation_warning": "Needs contested heritage or identity politics context.",
+              "source_original_code": "HERIT_06"
+            },
+            {
+              "term": "memory / community / control / representation / oppressed",
+              "language": "en",
+              "regex_or_seed": "memory|community|control|represent(ation)?|oppressed",
+              "translation_warning": "Needs contested heritage or identity politics context.",
+              "source_original_code": "HERIT_06"
+            },
+            {
+              "term": "nuestro patrimonio / memoria nuestra / de nuestro pueblo",
+              "language": "es",
+              "regex_or_seed": "nuestro\\s+patrimoni|memoria\\s+nuestr|de\\s+nuestro\\s+pueblo",
+              "translation_warning": "Often vernacular rather than official.",
+              "source_original_code": "HERIT_08"
+            },
+            {
+              "term": "our heritage / our memory / our people",
+              "language": "en",
+              "regex_or_seed": "our\\s+heritage|our\\s+memory|our\\s+people|our\\s+roots",
+              "translation_warning": "Often vernacular rather than official.",
+              "source_original_code": "HERIT_08"
+            },
+            {
+              "term": "memoria / recuerdo / pertenencia / lugar / experiencia",
+              "language": "es",
+              "regex_or_seed": "memori|recuerd|pertenenc|lugar|experienc",
+              "translation_warning": "Requires active heritage framing, not generic emotion.",
+              "source_original_code": "HERIT_08"
+            },
+            {
+              "term": "memory / remember / belonging / place / experience",
+              "language": "en",
+              "regex_or_seed": "memor(y|ies)|remember|belonging|place|experience",
+              "translation_warning": "Requires active heritage framing, not generic emotion.",
+              "source_original_code": "HERIT_08"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Nos preocupa la forma en que dicho patrimonio deba transmitirse a enseñantes y escolares... la promoción de nuevos valores, la dignificación de festivales y certámenes",
+              "language": "es",
+              "rationale": "The passage focuses on transmitting and sustaining cultural heritage through public and institutional action.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-09/1985-09.json",
+              "source_issue": "1985-09",
+              "page_number": 14,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "excerpt": "Our focus has always been education and the promotion of cultural awareness. The company maintains an extensive schedule of presentations at the entire educational range from elementary schools to universities.",
+              "language": "en",
+              "rationale": "The passage frames cultural continuity through organized education and promotion.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "excerpt": "fueron los más fecundos transmisores de la riqueza artística del flamenco. Toda una herencia viva todavía.",
+              "language": "es",
+              "rationale": "The passage presents flamenco heritage as living transmission through people.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1981-09/1981-09.json",
+              "source_issue": "1981-09",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_05"
+            },
+            {
+              "excerpt": "the English-speaking world really lacks, a living heritage of vernacular dance",
+              "language": "en",
+              "rationale": "The passage explicitly treats vernacular dance as living heritage.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1989-03/1989-03.json",
+              "source_issue": "1989-03",
+              "page_number": 33,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_05"
+            },
+            {
+              "excerpt": "conservo en la carpeta de mi mesa su última tarjeta de Navidad",
+              "language": "es",
+              "rationale": "This uses the trigger word conservo but violates the negative constraint because it is ordinary personal preservation, not safeguarding.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 13,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "excerpt": "the chance to meet other flamenco enthusiasts is always pleasant",
+              "language": "en",
+              "rationale": "This suggests ordinary social contact but violates the negative constraint because it lacks safeguarding, institutional support, or policy framing.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "excerpt": "portador de todo el vitalismo añejo",
+              "language": "es",
+              "rationale": "This uses the trigger word portador but violates the negative constraint because it is a metaphor for a vehicle of feeling, not a living heritage system.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-11/1982-11.json",
+              "source_issue": "1982-11",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "HERIT_05"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "UNESCO (and similar cultural institutions) shifted from preserving records of disappearing traditions to sustaining living traditions by supporting practitioners and conditions for cultural reproduction.",
+              "language": "en",
+              "rationale": "Use for safeguarding and policy language focused on support infrastructures rather than authenticity.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Barbara Kirshenblatt-Gimblett, 'Intangible Heritage as Metacultural Production' (2004), p. 53",
+              "summary": "\"The most recent model seeks to sustain a living, if endangered, tradition by supporting the conditions necessary for cultural reproduction. This means according value to the ‘carriers’ and ‘transmitters’ of traditions, as well as to their habitus and habitat.\" (p. 53)",
+              "source_original_code": "HERIT_03"
+            },
+            {
+              "excerpt": "Intangible heritage is alive; the task is to sustain the whole system as a living entity, not merely collect intangible artifacts.",
+              "language": "en",
+              "rationale": "Use when passages emphasize living practice, people, habitat, or conditions for reproduction.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Barbara Kirshenblatt-Gimblett, 'Intangible Heritage as Metacultural Production' (2004), p. 53",
+              "summary": "\"Whereas like tangible heritage, intangible heritage is culture, like natural heritage, it is alive. The task, then, is to sustain the whole system as a living entity and not just to collect ‘intangible artefacts’.\" (p. 53)",
+              "source_original_code": "HERIT_05"
+            },
+            {
+              "excerpt": "Smith presents heritage as contested, political, and usable by subaltern groups to negotiate control, identity, and social meaning.",
+              "language": "en",
+              "rationale": "Use when heritage is the terrain of dispute rather than a consensus good.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "literature_source": "Laurajane Smith, Uses of Heritage (2006), p. 7",
+              "summary": "\"Part III... examines subaltern uses of heritage, and explores the various ways authorized and received notions of heritage and the values they represent are contested... Heritage is not only a social and cultural resource or process, but also a political one through which a range of struggles are negotiated.\" (p. 7)",
+              "source_original_code": "HERIT_06"
+            },
+            {
+              "excerpt": "Smith treats heritage as something communities use to remember, belong, negotiate change, and contest control, not only as expert designation.",
+              "language": "en",
+              "rationale": "Supports a distinction between vernacular/community heritage use and authorized heritage discourse.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Laurajane Smith, Uses of Heritage (2006), p. 7 & p. 1",
+              "summary": "\"Commemoration and remembrance are used as platforms from which the community is continually redefining and remaking both itself and the social networks that bind the people of the community together.\" (p. 7) Communities do 'heritage work' by \"being in place, renewing memories and associations, sharing experiences with kinswomen to cement present and future social and familial relationships.\" (p. 1)",
+              "source_original_code": "HERIT_08"
+            },
+            {
+              "excerpt": "Heritage is a process of engagement, an act of communication and meaning-making in the present, tied to memory, performance, place, and identity.",
+              "language": "en",
+              "rationale": "Supports coding heritage as lived experience and identity-work, not only as policy or recognition.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Laurajane Smith, Uses of Heritage (2006), p. 1",
+              "summary": "\"Heritage wasn’t only about the past – though it was that too – it also wasn’t just about material things – though it was that as well – heritage was a process of engagement, an act of communication and an act of making meaning in and for the present.\" (p. 1)",
+              "source_original_code": "HERIT_08"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        }
+      }
+    },
+    "PED": {
+      "name_en": "pedagogy / transmission / mediation",
+      "name_es": "pedagogia / transmision / mediacion",
+      "purpose": "Track how flamenco knowledge is taught, transmitted, authorized, mediated, accessed, institutionalized, or transformed.",
+      "use_when": "Use when passages discuss teaching, learning, apprenticeship, oral/embodied transmission, schools, workshops, institutional pedagogy, or access to flamenco knowledge.",
+      "do_not_use_when": "Do not use for neutral biography of teachers/students or generic education unless knowledge transmission carries flamenco authority or mediation stakes.",
+      "concepts": {
+        "PED_01": {
+          "label_en": "pedagogical_authority",
+          "label_es": "autoridad_pedagogica",
+          "definition": "Language that legitimates flamenco knowledge through teachers, masters, schools, methods, correction, or recognized pedagogical authority.",
+          "use_when": "Use when a person or institution is treated as authorized to teach, transmit, correct, explain, or mediate flamenco knowledge.",
+          "do_not_use_when": "Do not use for neutral mention of a class/teacher without authority or transmission stakes.",
+          "merged_from": [
+            "PED:PED_01"
+          ],
+          "required_conditions": [
+            "A teaching actor or method is positioned as authoritative.",
+            "The passage concerns flamenco knowledge, not education in general."
+          ],
+          "do_not_code_if": [
+            "Administrative class listings without authority claims.",
+            "Neutral biography of someone who teaches."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "teacher / instructor / master / mentor / apprentice",
+              "language": "en",
+              "regex_or_seed": "teacher|instructor|master|mentor|apprentice|student\\s+of|learned\\s+from|training\\s+with",
+              "translation_warning": "Do not code routine class listings without person-based pedagogical authority.",
+              "source_original_code": "PED_01"
+            },
+            {
+              "term": "maestro / profesor / mentor / aprendiz",
+              "language": "es",
+              "regex_or_seed": "maestr[oa]|profesor|mentor|aprendiz|alumn[oa]\\s+de|aprendi[oó]\\s+con|enseñ",
+              "translation_warning": "Maestro may be artistic-authoritative; check whether authority or transmission is at stake.",
+              "source_original_code": "PED_01"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "La misión de un maestro es enseñar, y Antonio Mairena ha ido enseñando en sus actuaciones en directo, en su discografía, poniéndole a los cantos nombre y apellido, y en sus escritos.",
+              "language": "es",
+              "rationale": "Mairena's maestro status is explicitly tied to teaching, naming, and transmitting flamenco knowledge across performance, recordings, and writing.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-09/1982-09.json",
+              "source_issue": "1982-09",
+              "page_number": 54,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_01"
+            },
+            {
+              "excerpt": "My dance teacher, a beautiful gitana named Teresa, brought this fact home to me in several imaginative ways, when I took flamenco dance lessons in Spain.",
+              "language": "en",
+              "rationale": "The passage grounds flamenco understanding in a teacher-student relation and the teacher's authority to make cultural meaning vivid.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_01"
+            },
+            {
+              "excerpt": "voy a mentar al maestro de verdad que se puso maestro de los maestros... Pepe Marchena.",
+              "language": "es",
+              "rationale": "This uses maestro as an honorific/evaluative title for an artist, not as pedagogical authority or a teaching relation.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1980-05/1980-05.json",
+              "source_issue": "1980-05",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_01"
+            },
+            {
+              "excerpt": "Guitarists and guitar students welcome to ac- company dance classes. Should know one Se- villanas, a copla of Fandangos and Tango rhythm.",
+              "language": "en",
+              "rationale": "This is a practical class notice/listing and does not frame teaching as authority, transmission, or legitimacy.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_01"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "Casas-Mas, Pozo & Montero (2022)",
+              "excerpt": "learning cultures",
+              "language": "en",
+              "rationale": "Supports coding pedagogy as a culture of shared practices and authority, not merely formal schooling.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "The authors define learning cultures as shared beliefs and practices for organizing and promoting musical learning.",
+              "source_original_code": "PED_01"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "PED_02": {
+          "label_en": "embodied_oral_lineage_transmission",
+          "label_es": "transmision_oral_corporal_de_linaje",
+          "definition": "Language that frames flamenco knowledge as transmitted through body, listening, imitation, oral practice, family, genealogy, master-apprentice relation, or intergenerational lineage.",
+          "use_when": "Use when learning by ear/body, beside a master, in family/community settings, or across generations authorizes knowledge or practice.",
+          "do_not_use_when": "Do not use for neutral family biography, institutional schooling alone, or generic practice descriptions.",
+          "merged_from": [
+            "PED:PED_02",
+            "AUTH:TRAD_04"
+          ],
+          "required_conditions": [
+            "The mode of transmission is embodied, oral, familial, intergenerational, or lineage-based.",
+            "Transmission carries authority, value, or correctness."
+          ],
+          "do_not_code_if": [
+            "Family mentioned as residence/biography.",
+            "Advertisement for teaching materials.",
+            "Generic repetition/practice."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "oral tradition / by ear / listening / gesture / embodied",
+              "language": "en",
+              "regex_or_seed": "oral\\s+tradition|by\\s+ear|listening|imitat|gesture|body|embodied|practice|rhythm|comp[aá]s|learn\\s+by\\s+doing",
+              "translation_warning": "Requires learning or transmission context.",
+              "source_original_code": "PED_02"
+            },
+            {
+              "term": "tradición oral / de oído / gesto / cuerpo / compás",
+              "language": "es",
+              "regex_or_seed": "tradici[oó]n\\s+oral|de\\s+o[ií]do|escuch|imit|gesto|cuerpo|pr[aá]ctica|comp[aá]s|aprender\\s+haciendo|aprender\\s+mirando",
+              "translation_warning": "Requires learning or transmission context.",
+              "source_original_code": "PED_02"
+            },
+            {
+              "term": "linaje / herencia / transmisión / maestro",
+              "language": "es",
+              "regex_or_seed": "linaje|herencia|transmisi[oó]n|maestr[oa]|aprendizaje|a\\s+su\\s+vera|generaci[oó]n",
+              "translation_warning": "Distinguish lineage authority from institutional schooling.",
+              "source_original_code": "TRAD_04"
+            },
+            {
+              "term": "lineage / heritage / transmission / master / passed down",
+              "language": "en",
+              "regex_or_seed": "lineage|heritage|transmission|master|apprentice|generation|pass(ed)?\\s+down|learned\\s+from",
+              "translation_warning": "Distinguish lineage authority from institutional schooling.",
+              "source_original_code": "TRAD_04"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "le había cogió el compás, puesto que aprendió a cantar estos cantes en el rincón donde mejor se canta por bulerías del mundo.",
+              "language": "es",
+              "rationale": "Learning is described as acquiring compás in a situated flamenco environment, linking embodied rhythm to transmission.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1983-01/1983-01.json",
+              "source_issue": "1983-01",
+              "page_number": 18,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_02"
+            },
+            {
+              "excerpt": "This is where the secret of compás can be learned--absorbing it done in that fashion hour after hour.",
+              "language": "en",
+              "rationale": "The passage explicitly frames compás as learned through repeated embodied absorption in a social setting.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-09/1977-09.json",
+              "source_issue": "1977-09",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_02"
+            },
+            {
+              "excerpt": "Todo mi aprendizaje como cantaor lo he hecho a su vera... yo no he tenido otro espejo donde mirarme",
+              "language": "es",
+              "rationale": "Apprenticeship beside a master authorizes the singer's present artistic identity.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_04"
+            },
+            {
+              "excerpt": "Hayes... returns to Seville after each tour to live and play with his Gypsy friends who come from families that have passed down the music from one generation to another.",
+              "language": "en",
+              "rationale": "Family transmission across generations authorizes the music and the learning context.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_04"
+            },
+            {
+              "excerpt": "Su compás nos arrebató por bulerías. Por siguiriyas nos hirió en lo más profundo del ser.",
+              "language": "es",
+              "rationale": "Compás is used as performance praise, but the passage does not describe learning, embodied transmission, or pedagogy.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1979-09/1979-09.json",
+              "source_issue": "1979-09",
+              "page_number": 16,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_02"
+            },
+            {
+              "excerpt": "Should know one Se- villanas, a copla of Fandangos and Tango rhythm. Contact Juana De Alva.",
+              "language": "en",
+              "rationale": "Rhythm appears in a skills requirement for an advertisement, not as embodied oral transmission.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_02"
+            },
+            {
+              "excerpt": "MATERIAL DE ENSEÑANZA PARA AUTO-ESCUELAS",
+              "language": "es",
+              "rationale": "This uses the trigger word escuelas but violates the negative constraint because it is an advertisement, not lineage or transmission.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "TRAD_04"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "Casas-Mas, Pozo & Montero (2022)",
+              "excerpt": "the body played a central role",
+              "language": "en",
+              "rationale": "Supports coding flamenco learning as embodied and multimodal.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "The article argues that flamenco oral-tradition learning uses listening, temporary external representations, and bodily rhythm processing through singing, playing, and dancing.",
+              "source_original_code": "PED_02"
+            },
+            {
+              "excerpt": "Tradition is commonly understood as an inherited body of customs passed down by specific carriers and transmitters.",
+              "language": "en",
+              "rationale": "Supports coding lineage and transmission when inheritance serves to authorize practice.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Barbara Kirshenblatt-Gimblett (2004) p. 53 & Richard Handler and Jocelyn Linnekin (1984) p. 273",
+              "summary": "Handler & Linnekin note tradition's commonsense meaning is an \"inherited body of customs\" (p. 273). Kirshenblatt-Gimblett critiques how safeguarding policies prioritize the \"carriers\" and \"transmitters\" of traditions (p. 53).",
+              "source_original_code": "TRAD_04"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "PED_03": {
+          "label_en": "institutional_transnational_learning_access",
+          "label_es": "aprendizaje_institucional_transnacional_acceso",
+          "definition": "Language that frames flamenco learning through institutions, academies, conservatories, workshops, media, outsiders, foreigners, diaspora, beginners, or access to knowledge across social/geographic boundaries.",
+          "use_when": "Use when institutional or transnational access to flamenco knowledge is thematized, enabled, contested, or evaluated.",
+          "do_not_use_when": "Do not use for mere event listings, travel, or foreignness without learning/access stakes.",
+          "merged_from": [
+            "PED:PED_03",
+            "PED:PED_04",
+            "PED:PED_05"
+          ],
+          "required_conditions": [
+            "The passage concerns access to flamenco knowledge or institutional/transnational pedagogy.",
+            "The learning context is evaluatively or socially meaningful."
+          ],
+          "do_not_code_if": [
+            "Foreign performance with no learning/access issue.",
+            "Institutional venue mention only."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "copy / reproduce / transform / adapt / improvise",
+              "language": "en",
+              "regex_or_seed": "copy|reproduce|faithful|correctly|transform|adapt|improvise|creative|autonomy|interpret|rework",
+              "translation_warning": "Requires learning or transmission context.",
+              "source_original_code": "PED_03"
+            },
+            {
+              "term": "copiar / reproducir / transformar / adaptar / improvisar",
+              "language": "es",
+              "regex_or_seed": "copiar|reproduc|fiel|correctamente|transform|adapt|improvis|creativ|autonom[ií]a|interpret|reelabor",
+              "translation_warning": "Requires learning or transmission context.",
+              "source_original_code": "PED_03"
+            },
+            {
+              "term": "conservatory / curriculum / academy / workshop / degree",
+              "language": "en",
+              "regex_or_seed": "conservatory|curriculum|academy|school|workshop|seminar|certificate|degree|formal\\s+training|institutional\\s+training",
+              "translation_warning": "Reject routine listings without legitimacy or transmission stakes.",
+              "source_original_code": "PED_04"
+            },
+            {
+              "term": "conservatorio / currículo / academia / taller / título",
+              "language": "es",
+              "regex_or_seed": "conservatorio|curr[ií]cul|academia|escuela|taller|seminario|certificado|t[ií]tulo|formaci[oó]n\\s+formal|institucional",
+              "translation_warning": "Reject routine listings without legitimacy or transmission stakes.",
+              "source_original_code": "PED_04"
+            },
+            {
+              "term": "beginner / foreign student / workshop / guide / video / glossary",
+              "language": "en",
+              "regex_or_seed": "beginner|foreign\\s+student|American\\s+student|workshop|guide|instructional\\s+video|glossary|translation|learners?|access",
+              "translation_warning": "Requires learning or access, not mere foreignness.",
+              "source_original_code": "PED_05"
+            },
+            {
+              "term": "principiante / estudiante extranjero / guía / video / glosario",
+              "language": "es",
+              "regex_or_seed": "principiante|estudiante\\s+extranjer|taller|gu[ií]a|v[ií]deo\\s+did[aá]ctico|glosario|traducci[oó]n|aprendices|acceso",
+              "translation_warning": "Requires learning or access, not mere foreignness.",
+              "source_original_code": "PED_05"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "la «pureza» de los demás cantaores vendrá en función de la mayor o menos fidelidad en la reproducción del modelo que se elija.",
+              "language": "es",
+              "rationale": "The passage explicitly links flamenco purity to fidelity in reproducing a chosen model, the reproductive pole of transmission.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1983-03/1983-03.json",
+              "source_issue": "1983-03",
+              "page_number": 5,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_03"
+            },
+            {
+              "excerpt": "learned as much on his own as from lessons... began to imitate and learn from their playing. He feels that these guitarists taught him the \"Whys\" of flamenco.",
+              "language": "en",
+              "rationale": "The passage connects self-directed learning, imitation, and deeper interpretive understanding of flamenco models.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1978-01/1978-01.json",
+              "source_issue": "1978-01",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_03"
+            },
+            {
+              "excerpt": "deberían mejor dedicarse a dar clases, por su gran sabiduría en el arte flamenco, aunque para eso hacen falta escuelas o centros que se dedicaran a estos menesteres, para que salieran nuevas figuras",
+              "language": "es",
+              "rationale": "The passage argues for schools or centers where knowledgeable elders could teach and form new flamenco figures.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1983-09/1983-09.json",
+              "source_issue": "1983-09",
+              "page_number": 22,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_04"
+            },
+            {
+              "excerpt": "Aside from their concerts and master classes, they founded the Academy of Creative Arts at 1349 Franklin in Bellingham, Washington.",
+              "language": "en",
+              "rationale": "Master classes and an academy provide formal institutional settings for flamenco-related instruction.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-09/1977-09.json",
+              "source_issue": "1977-09",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_04"
+            },
+            {
+              "excerpt": "cuya ejecución técnica y belleza interpretativa elevó a cimas difícilmente imaginables, prácticamente insuperables.",
+              "language": "es",
+              "rationale": "Interpretation is praised aesthetically, but the passage does not discuss learning, apprenticeship, reproduction, or transformation.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1980-11/1980-11.json",
+              "source_issue": "1980-11",
+              "page_number": 14,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_03"
+            },
+            {
+              "excerpt": "Send us their name and address and we'll mail them a complimentary copy of $ \\underline{\\text{Jaleo!}} $",
+              "language": "en",
+              "rationale": "Copy is an administrative circulation term here, not reproduction or transformation of flamenco knowledge.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 1,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_03"
+            },
+            {
+              "excerpt": "Yo trabajaba en un taller cosiendo, mi padre trabajaba, en fin, que por aquellos tiempos nosotros estábamos bien. Por entonces comenzaba a cantar",
+              "language": "es",
+              "rationale": "Taller means a sewing workshop here, not an institutional flamenco pedagogy setting.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1980-11/1980-11.json",
+              "source_issue": "1980-11",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "PED_04"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "Casas-Mas, Pozo & Montero (2022)",
+              "excerpt": "reproductive and transformative",
+              "language": "en",
+              "rationale": "Supports distinguishing faithful reproduction from creative transformation within apprenticeship.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "The study compares flamenco guitar apprentices with polarized reproductive and transformative profiles.",
+              "source_original_code": "PED_03"
+            },
+            {
+              "literature_source": "Casas-Mas, Pozo & Montero (2022); Cruces Roldán (2023)",
+              "excerpt": "formal realms",
+              "language": "en",
+              "rationale": "Supports treating institutional pedagogy as a contested form of legitimacy rather than a neutral container.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Casas-Mas et al. complicate formal/informal learning binaries; Cruces Roldán shows conservatory and policy debates around who should teach flamenco heritage.",
+              "source_original_code": "PED_04"
+            },
+            {
+              "literature_source": "William Washabaugh (1996); Casas-Mas, Pozo & Montero (2022)",
+              "excerpt": "educating and edifying",
+              "language": "en",
+              "rationale": "Supports coding periodicals and performance communities as mediators of flamenco knowledge, especially in North American contexts.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "summary": "Washabaugh notes that North American enthusiasts gather knowledge from books, films, performance groups, and other mediators; Casas-Mas et al. help theorize the learning practices involved.",
+              "source_original_code": "PED_05"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        }
+      }
+    },
+    "COMM": {
+      "name_en": "community / belonging / insider authority",
+      "name_es": "comunidad / pertenencia / autoridad interna",
+      "purpose": "Track community belonging, insider/outsider boundaries, peña/aficionado authority, public/private participation, familial/community grounding, and identity-based authority.",
+      "use_when": "Use when passages construct who belongs, who knows, who participates, which settings count, or which communities ground flamenco authority.",
+      "do_not_use_when": "Do not use for neutral group mentions, family biography, or venue descriptions without belonging/authority/participation stakes.",
+      "concepts": {
+        "COMM_01": {
+          "label_en": "insider_outsider_boundary",
+          "label_es": "frontera_dentro_fuera",
+          "definition": "Language that contrasts insiders and outsiders, those who know and those who do not, or inside versus outside flamenco.",
+          "use_when": "Use when belonging, proximity, initiation, or insider knowledge defines authority or value.",
+          "do_not_use_when": "Do not use for mere geographic inside/outside or generic audience distinction.",
+          "merged_from": [
+            "COMM:COMM_01"
+          ],
+          "required_conditions": [
+            "A social or epistemic boundary is drawn around flamenco belonging/knowledge.",
+            "The boundary affects authority, recognition, or evaluation."
+          ],
+          "do_not_code_if": [
+            "Physical inside/outside location only.",
+            "Neutral audience segmentation."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "dentro / fuera / de dentro / de fuera",
+              "language": "es",
+              "regex_or_seed": "de\\s+dentro|de\\s+fuera|dentro|fuera",
+              "translation_warning": "Context must indicate a social or evaluative flamenco boundary.",
+              "source_original_code": "COMM_01"
+            },
+            {
+              "term": "inside / outside / insider / outsider",
+              "language": "en",
+              "regex_or_seed": "inside(r)?|outside(r)?",
+              "translation_warning": "Context must indicate a social or evaluative flamenco boundary.",
+              "source_original_code": "COMM_01"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "el cante gitano no habría podido resistir el contacto fulminante de un pueblo heterogéneo... porque traspuso su natural ambiente privado y rebasó los límites de su familiar y coloquial auditorio",
+              "language": "es",
+              "rationale": "The passage constructs an evaluative boundary between an inner familial/private flamenco and an external public audience.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1992-11/1992-11.json",
+              "source_issue": "1992-11",
+              "page_number": 16,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_01"
+            },
+            {
+              "excerpt": "Though Andalucía lures many flamenco pilgrims, few outsiders master the complex music and even fewer win the respect of its Gypsy caretakers.",
+              "language": "en",
+              "rationale": "The passage constructs an outsider/insider boundary around mastery and respect.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_01"
+            },
+            {
+              "excerpt": "Fuera de tono, apelotonado y, de hecho, sin compás",
+              "language": "es",
+              "rationale": "This uses the trigger word fuera but violates the negative constraint because it is a musical/performance criticism, not an inside/outside social boundary.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_01"
+            },
+            {
+              "excerpt": "I heard something else outside. I heard something coming from the street.",
+              "language": "en",
+              "rationale": "This uses the trigger word outside but violates the negative constraint because it is literal spatial reference, not a flamenco social boundary.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_01"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Malefyt argues that public/commercial venues display an outside version of flamenco, while the peña cultivates an inside reality created for itself.",
+              "language": "en",
+              "rationale": "Use when inside/outside organizes value, belonging, or authenticity.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 64",
+              "summary": "\"Flamenco 'tradition' practiced locally among members in private peña clubs becomes a feminine construct of the 'inside,' which opposes but complements flamenco performed for tourist in the public arena of masculine display and challenge 'outside.'\" (p. 64)",
+              "source_original_code": "COMM_01"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "COMM_02": {
+          "label_en": "aficion_pena_community_authority",
+          "label_es": "autoridad_de_aficion_pena_comunidad",
+          "definition": "Claims that aficionados, peñas, families, neighborhoods, friends, or socially recognized participants possess authority to recognize, sustain, or judge flamenco.",
+          "use_when": "Use when community standing, afición, peña sociability, family/community grounding, or participant recognition authorizes flamenco value.",
+          "do_not_use_when": "Do not use for neutral references to fans, relatives, or clubs without authority/recognition stakes.",
+          "merged_from": [
+            "COMM:COMM_03",
+            "COMM:COMM_05"
+          ],
+          "required_conditions": [
+            "A community actor/group is presented as knowing, sustaining, recognizing, or authorizing flamenco.",
+            "The passage ties authority to social belonging or afición."
+          ],
+          "do_not_code_if": [
+            "Fan as consumer only.",
+            "Family as biographical fact only.",
+            "Club venue listing only."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "aficion / aficionado / entendido / conocedor",
+              "language": "es",
+              "regex_or_seed": "afici[oó]n|aficionad|entendid|conocedor",
+              "translation_warning": "May indicate taste, competence, or belonging.",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "term": "aficion / aficionado / connoisseur / insider",
+              "language": "en",
+              "regex_or_seed": "afici[oó]n(ado)?|connoisseur|understand|know",
+              "translation_warning": "May indicate taste, competence, or belonging.",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "term": "familia / familiar / entre amigos / convivencia / peña",
+              "language": "es",
+              "regex_or_seed": "famili|entre\\s+amig|convivenc|peña",
+              "translation_warning": "Peña can index community; confirm grounding function.",
+              "source_original_code": "COMM_05"
+            },
+            {
+              "term": "family / friend / gathering / home",
+              "language": "en",
+              "regex_or_seed": "family|friend|gathering|home|intimate",
+              "translation_warning": "Can index community; confirm grounding function.",
+              "source_original_code": "COMM_05"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante. Los aficionaos son los que tienen que decir cuándo y cómo se debe de entregar",
+              "language": "es",
+              "rationale": "Aficionados are explicitly granted authority to judge and confer flamenco recognition.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "excerpt": "The festivals are where the whole repertoire, with all its traditions, is displayed... the Sevillanas know exactly how a saeta is to be performed.",
+              "language": "en",
+              "rationale": "Local knowledgeable audiences are positioned as authorities who know correct performance.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "excerpt": "la comunicación artista-aficionado tiene su sitio entre pocos... aglutinantes... de lo bueno que deben conservar: la intimidad de quien dice y escucha",
+              "language": "es",
+              "rationale": "Flamenco legitimacy is grounded in dense peña sociability and intimate community interaction.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-03/1982-03.json",
+              "source_issue": "1982-03",
+              "page_number": 12,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_05"
+            },
+            {
+              "excerpt": "Many of the fine flamenco performers of the time where her father's friends. They were often in her home and frequently asked her to sing a little for them. Then they would correct her gently",
+              "language": "en",
+              "rationale": "Family, friendship, home, and informal correction ground flamenco learning and legitimacy.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_original_code": "COMM_05"
+            },
+            {
+              "excerpt": "mi padre era un gran aficionado al cante",
+              "language": "es",
+              "rationale": "This uses the trigger word aficionado but violates the negative constraint because it is biographical description, not insider legitimacy work.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 10,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "excerpt": "As a busy bond broker, it allows me continuous contact with the flamenco elements of the world",
+              "language": "en",
+              "rationale": "This mentions an aficionado-like reader but violates the negative constraint because it does not grant authority, discernment, or insider legitimacy.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz/spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz.json",
+              "source_issue": "spring-1986-flamenco-in-japan-joselero-obituary-porrina-de-badajoz",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "excerpt": "Edita: Peña Flamenca de Jaén",
+              "language": "es",
+              "rationale": "This uses the trigger word Peña but violates the negative constraint because it is masthead metadata, not community grounding.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 2,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_05"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Aficionados represent the socially authorized insiders whose intimate exchange defines the tradition.",
+              "language": "en",
+              "rationale": "Use when afición or insider knowledge is presented as conferring legitimacy on flamenco.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Timothy deWaal Malefyt (1998) p. 63",
+              "summary": "\"At the center of the flamenco tradition are Andalusian flamenco aficionados who practice an intimate, private, and emotional exchange\" (p. 63). The 'aficionado' is the socially authorized insider who validates the tradition.",
+              "source_original_code": "COMM_03"
+            },
+            {
+              "excerpt": "The peña is described as an extended-family world in which familiarity, dependence, and communal intimacy ground tradition and authority.",
+              "language": "en",
+              "rationale": "Use when family, neighborhood, or peña sociability is what makes the practice legitimate or real.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 64",
+              "summary": "\"The female image formally evokes a sense of familiarity, comfort, and equality, and engenders a sense of local private identity 'within'\" (p. 64), grounding the peña in the intimate sociability of extended family and neighborhood rather than the commercial hierarchy of the tablao.",
+              "source_original_code": "COMM_05"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "COMM_03": {
+          "label_en": "public_private_participatory_setting",
+          "label_es": "escenario_publico_privado_participativo",
+          "definition": "Language that contrasts public/commercial/spectatorial flamenco with private/social/intimate/participatory flamenco, especially where setting affects value or authenticity.",
+          "use_when": "Use when public/private setting or participant/spectator relation is socially or evaluatively meaningful.",
+          "do_not_use_when": "Do not use for bare event setting, venue description, or audience mention without participatory/authority stakes.",
+          "merged_from": [
+            "COMM:COMM_02",
+            "COMM:COMM_04"
+          ],
+          "required_conditions": [
+            "The setting or relation affects how flamenco is valued or understood.",
+            "The passage contrasts participation/co-presence with spectatorship/public staging."
+          ],
+          "do_not_code_if": [
+            "Concert listing.",
+            "Generic audience praise.",
+            "Neutral public event description."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "publico / privado / peña / tablao",
+              "language": "es",
+              "regex_or_seed": "p[úu]blic|privad|peña|tablao",
+              "translation_warning": "Venue mention alone is not enough; the contrast should matter.",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "term": "public / private / club / tablao",
+              "language": "en",
+              "regex_or_seed": "public|private|club|tablao",
+              "translation_warning": "Check whether venue type carries moral or authenticity value.",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "term": "participar / jaleo / publico / espectador",
+              "language": "es",
+              "regex_or_seed": "particip|jaleo|p[úu]blico|espectador",
+              "translation_warning": "Needs social or evaluative distinction, not just attendance.",
+              "source_original_code": "COMM_04"
+            },
+            {
+              "term": "participate / jaleo / audience / spectator",
+              "language": "en",
+              "regex_or_seed": "participat(e|ion)|jaleo|audience|spectator|gathering",
+              "translation_warning": "Needs social or evaluative distinction, not just attendance.",
+              "source_original_code": "COMM_04"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "la Peña Flamenca no puede ser numerosa, debe pecar de pequeñez, porque la comunicación artista-aficionado tiene su sitio entre pocos... la intimidad de quien dice y escucha, imposible en una masificación",
+              "language": "es",
+              "rationale": "The value of flamenco is tied to small-scale peña intimacy rather than mass public setting.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-03/1982-03.json",
+              "source_issue": "1982-03",
+              "page_number": 12,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "excerpt": "I refer to the private gatherings, in the rooms with the artists. Every night... there would be twelve, fifteen, or twenty people singing, dancing, playing. In that sense, it was better than now",
+              "language": "en",
+              "rationale": "The passage values private gatherings over the present loss of such intimate settings.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 8,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "excerpt": "una Peña debe estar creada para escuchar, no para oír; para hacer aficionados, no simples espectadores... la comunicación artista-aficionado tiene su sitio entre pocos",
+              "language": "es",
+              "rationale": "The passage devalues passive spectatorship and values involved, competent co-presence.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-03/1982-03.json",
+              "source_issue": "1982-03",
+              "page_number": 12,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_04"
+            },
+            {
+              "excerpt": "The soloists were then joined by the entire cast... creating the atmosphere of a village gathering of music and dance.",
+              "language": "en",
+              "rationale": "The passage values shared presence and gathering over detached spectatorship.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 17,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_04"
+            },
+            {
+              "excerpt": "Centros de enseñanza públicos y privados",
+              "language": "es",
+              "rationale": "This uses the trigger words públicos y privados but violates the negative constraint because it is neutral institutional categorization.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "excerpt": "major funding from public and private sources",
+              "language": "en",
+              "rationale": "This uses public/private language but violates the negative constraint because it refers to funding sources, not flamenco setting or value.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "excerpt": "Podrán participar cuantos cantaores aficionados y profesionales lo deseen",
+              "language": "es",
+              "rationale": "This uses the trigger word participar but violates the negative constraint because it only means contest eligibility.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1985-01/1985-01.json",
+              "source_issue": "1985-01",
+              "page_number": 20,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_04"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "The article's core contrast between tablao and peña shows that public/private is not just venue description but a moral and aesthetic contrast.",
+              "language": "en",
+              "rationale": "Use when venue type structures legitimacy, intimacy, or commercialization.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 64",
+              "summary": "\"Flamenco is similarly differentiated between public and private to divide and orient flamenco into a contrastive system of commercial and traditional. According to this schema, flamenco enacted for tourists operates outside in the public male realm of dramatic display...\" (p. 64)",
+              "source_original_code": "COMM_02"
+            },
+            {
+              "excerpt": "Malefyt contrasts detached spectatorship in the tablao with participatory listening, jaleo, and close performer-audience interaction in the peña.",
+              "language": "en",
+              "rationale": "Use when participation itself is a value marker for authentic or traditional flamenco.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 63",
+              "summary": "\"At the center of the flamenco tradition are Andalusian flamenco aficionados who practice an intimate, private, and emotional exchange... which directly contrast flamenco performed publicly and spectacularly in commercial venues.\" (p. 63) This contrasts the participatory exchange with detached spectacular display.",
+              "source_original_code": "COMM_04"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "COMM_04": {
+          "label_en": "identity_group_framing",
+          "label_es": "encuadre_identitario_comunitario",
+          "definition": "Language that frames flamenco through identity groups, including gendered tradition models or ethnic/local/community identities, where identity shapes belonging, authority, or representation.",
+          "use_when": "Use when identity categories organize who embodies, represents, transmits, or is authorized within flamenco discourse.",
+          "do_not_use_when": "Do not use for incidental demographic description or appearance unless it affects cultural authority, belonging, or representation.",
+          "merged_from": [
+            "COMM:COMM_06"
+          ],
+          "required_conditions": [
+            "Identity framing shapes authority, belonging, representation, or tradition.",
+            "A group/category is doing analytical work, not just being described."
+          ],
+          "do_not_code_if": [
+            "Incidental gender/ethnicity/nationality with no discourse function."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "hombre / mujer / domestico / publico / interior / exterior",
+              "language": "es",
+              "regex_or_seed": "hombre|mujer|dom[eé]stic|p[úu]blic|interior|exterior",
+              "translation_warning": "Very broad; use only with clear gendered tradition framing.",
+              "source_original_code": "COMM_06"
+            },
+            {
+              "term": "man / woman / men / women / domestic / public",
+              "language": "en",
+              "regex_or_seed": "m(a|e)n|wom(a|e)n|domestic|public|interior|exterior|bailaora",
+              "translation_warning": "Very broad; use only with clear gendered tradition framing.",
+              "source_original_code": "COMM_06"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "en la armonía de los contrarios y la oposición de las parejas se expresa así la idea de hombre y de mujer... la expresión de la virilidad, de la pasión, del erotismo y del dominio",
+              "language": "es",
+              "rationale": "The passage models flamenco meaning through gendered oppositions and roles.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 19,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_06"
+            },
+            {
+              "excerpt": "the classical dancer is called a bailarina, while the flamenco gypsy dancer is called a \"bailaora.\"",
+              "language": "en",
+              "rationale": "The passage marks gendered performer roles and links them to dance categories and legitimacy.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_original_code": "COMM_06"
+            },
+            {
+              "excerpt": "hombres y mujeres nacidos iguales",
+              "language": "es",
+              "rationale": "This uses the trigger words hombres y mujeres but violates the negative constraint because it is a general social statement, not a gendered model of flamenco tradition.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1991-09/1991-09.json",
+              "source_issue": "1991-09",
+              "page_number": 16,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_06"
+            },
+            {
+              "excerpt": "Jaleo Magazine is looking for a \"few good men and women!\"",
+              "language": "en",
+              "rationale": "This uses the trigger words men and women but violates the negative constraint because it is a generic recruitment phrase, not a gendered model of flamenco tradition.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1991-07/1991-07.json",
+              "source_issue": "1991-07",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "COMM_06"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "excerpt": "Malefyt links flamenco's inside/outside and public/private contrasts to broader Andalusian gender constructions of interior/exterior and male/female space.",
+              "language": "en",
+              "rationale": "Use when venue, sociality, and tradition are gender-coded rather than merely described.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "literature_source": "Timothy deWaal Malefyt, '\"Inside\" and \"Outside\" Spanish Flamenco' (1998), p. 63 & p. 64",
+              "summary": "\"Social space of inside and outside is organized respectively into 'feminized' and 'masculinized' concepts.\" (p. 64) \"By establishing performance contrasts through gender concepts, aficionados not only reveal how gender notions of unity and division can ultimately generate local and national performance sensibilities, but in doing so, they affirm a cultural identity against change in Spanish society.\" (p. 63)",
+              "source_original_code": "COMM_06"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        }
+      }
+    },
+    "CRIT": {
+      "name_en": "criticism / canon / evaluation",
+      "name_es": "critica / canon / evaluacion",
+      "purpose": "Track reviews, aesthetic judgment, criteria of quality, canon formation, rankings, expert/critic authority, and critique of commercial/pure/hybrid forms.",
+      "use_when": "Use when passages evaluate, rank, praise, blame, define quality, invoke critical expertise, or construct a canon/hierarchy.",
+      "do_not_use_when": "Do not use for neutral description, plot summary, event announcement, or generic adjectives without critical judgment.",
+      "concepts": {
+        "CRIT_01": {
+          "label_en": "critical_evaluation",
+          "label_es": "evaluacion_critica",
+          "definition": "Explicit praise, blame, judgment, or assessment of a flamenco artist, performance, recording, style, venue, publication, or event.",
+          "use_when": "Use when the passage evaluates quality, success, failure, seriousness, originality, artistry, or value.",
+          "do_not_use_when": "Do not use for neutral description, listing, or biography without evaluative judgment.",
+          "merged_from": [
+            "CRIT:CRIT_01"
+          ],
+          "required_conditions": [
+            "The passage makes an evaluative judgment.",
+            "The evaluated target is identifiable."
+          ],
+          "do_not_code_if": [
+            "Promotional adjectives without clear judgment.",
+            "Neutral report of an event."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "review / excellent / weak / serious / superficial",
+              "language": "en",
+              "regex_or_seed": "review|critic|excellent|poor|serious|weak|powerful|moving|deep|superficial|artistry|technique|virtuos|successful|failure",
+              "translation_warning": "Reject advertisement copy without criteria.",
+              "source_original_code": "CRIT_01"
+            },
+            {
+              "term": "reseña / excelente / flojo / serio / superficial",
+              "language": "es",
+              "regex_or_seed": "reseña|cr[ií]tic|excelente|pobre|serio|flojo|profundo|superficial|arte|t[eé]cnica|virtuos|logrado|fracaso",
+              "translation_warning": "Reject advertisement copy without criteria.",
+              "source_original_code": "CRIT_01"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Antonio Núñez «El Chocolate» gustó, hizo sentir la verdad desnuda de Andalucía, en una palabra: comunicó.",
+              "language": "es",
+              "rationale": "The passage explicitly judges a performance's success and expressive force.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1979-09/1979-09.json",
+              "source_issue": "1979-09",
+              "page_number": 16,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_01"
+            },
+            {
+              "excerpt": "There was a lack of what the Spaniards call DUENDE, a lack of that personal sense of matador-tragedy that is the essence of Spanish dance at its noblest and most ennobling.",
+              "language": "en",
+              "rationale": "A critic evaluates the performance by naming the absence of duende as a quality failure.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1978-07/1978-07.json",
+              "source_issue": "1978-07",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_01"
+            },
+            {
+              "excerpt": "el pobre cantaor era confundido por su propio pueblo con los más variados, desde Meneses a Camarón, desde Mairena a Ca- racol",
+              "language": "es",
+              "rationale": "Pobre means unfortunate here; it is not a quality judgment about the singer's flamenco artistry.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1979-02/1979-02.json",
+              "source_issue": "1979-02",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_01"
+            },
+            {
+              "excerpt": "This comparison is not referring to praise or criticism, but rather to pure observation.",
+              "language": "en",
+              "rationale": "The passage contains criticism as a word but explicitly rejects evaluative judgment.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1981-05/1981-05.json",
+              "source_issue": "1981-05",
+              "page_number": 19,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_01"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "William Washabaugh (1996)",
+              "excerpt": "contested interpretation",
+              "language": "en",
+              "rationale": "Supports treating reviews and judgments as cultural authority work.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Washabaugh reads flamenco commentary as contested interpretation rather than neutral description of a stable essence.",
+              "source_original_code": "CRIT_01"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "CRIT_02": {
+          "label_en": "aesthetic_criteria",
+          "label_es": "criterios_esteticos",
+          "definition": "Language that defines flamenco quality through criteria such as compás, duende, depth, restraint, power, technique, expression, purity, or emotional force.",
+          "use_when": "Use when the passage names or applies aesthetic criteria to define what counts as good flamenco.",
+          "do_not_use_when": "Do not use for mere mention of technical terms without judging or defining quality.",
+          "merged_from": [
+            "CRIT:CRIT_02"
+          ],
+          "required_conditions": [
+            "An aesthetic criterion is named or applied.",
+            "The criterion helps judge, define, or explain flamenco value."
+          ],
+          "do_not_code_if": [
+            "Technical vocabulary in a purely descriptive/instructional context."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "duende / compás / depth / restraint / technique",
+              "language": "en",
+              "regex_or_seed": "duende|comp[aá]s|depth|restraint|passion|technique|virtuosity|rhythm|expression|soul|purity|voice|improvisation",
+              "translation_warning": "Requires evaluative function.",
+              "source_original_code": "CRIT_02"
+            },
+            {
+              "term": "duende / compás / profundidad / sobriedad / técnica",
+              "language": "es",
+              "regex_or_seed": "duende|comp[aá]s|profundidad|sobriedad|pasi[oó]n|t[eé]cnica|virtuosismo|ritmo|expresi[oó]n|alma|pureza|voz|improvisaci[oó]n",
+              "translation_warning": "Requires evaluative function.",
+              "source_original_code": "CRIT_02"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Su quejío fue duende despierto... Su compás nos arrebató por bulerías. Por siguiriyas nos hirió en lo más profundo del ser.",
+              "language": "es",
+              "rationale": "Duende, compás, and depth are applied as criteria for judging flamenco quality.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1979-09/1979-09.json",
+              "source_issue": "1979-09",
+              "page_number": 16,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_02"
+            },
+            {
+              "excerpt": "There was a lack of what the Spaniards call DUENDE, a lack of that personal sense of matador-tragedy that is the essence of Spanish dance at its noblest and most ennobling.",
+              "language": "en",
+              "rationale": "Duende is used as a criterion for judging depth and nobility in performance.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1978-07/1978-07.json",
+              "source_issue": "1978-07",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_02"
+            },
+            {
+              "excerpt": "Este estado que llaman duende no es otra cosa que el resultado del proceso llamado por Aristóteles catarsis o purga de las emociones.",
+              "language": "es",
+              "rationale": "Duende is discussed as a historical/theoretical concept, not applied as an evaluative criterion for a flamenco performance.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1978-04/1978-04.json",
+              "source_issue": "1978-04",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_02"
+            },
+            {
+              "excerpt": "A change in the strum pattern alerts the dancers that the introductory melody will start at the beginning of the next compas.",
+              "language": "en",
+              "rationale": "Compas is used as a technical timing term, not as an evaluative criterion.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 7,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_02"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "Marta Wieczorek (2018); William Washabaugh (1996)",
+              "excerpt": "pure and commercial",
+              "language": "en",
+              "rationale": "Supports coding aesthetic disputes over purity, commerciality, depth, technique, and hybridity as critical criteria.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Wieczorek summarizes disputes over pure/commercial and traditional/contemporary flamenco; Washabaugh cautions that such criteria are historically contested.",
+              "source_original_code": "CRIT_02"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "CRIT_03": {
+          "label_en": "canon_hierarchy_ranking",
+          "label_es": "canon_jerarquia_ranking",
+          "definition": "Language that constructs canons, rankings, generations, hierarchies, exemplary artists/works/styles, or comparative status.",
+          "use_when": "Use when a passage elevates, ranks, compares, canonizes, or hierarchizes artists, styles, schools, venues, recordings, or repertoires.",
+          "do_not_use_when": "Do not use for simple comparison without value hierarchy.",
+          "merged_from": [
+            "CRIT:CRIT_03",
+            "CRIT:CRIT_06"
+          ],
+          "required_conditions": [
+            "A hierarchy, canon, exemplar, generation, or ranking is created or invoked.",
+            "The comparison has value/status implications."
+          ],
+          "do_not_code_if": [
+            "Chronological grouping only.",
+            "Comparison without evaluative hierarchy."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "classic / legend / master / reference / landmark",
+              "language": "en",
+              "regex_or_seed": "classic|legend|master|foundational|reference|model|exemplary|the\\s+great|canon|historic|landmark|definitive",
+              "translation_warning": "Reject name lists without exemplary status.",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "term": "clásico / leyenda / maestro / referente / hito",
+              "language": "es",
+              "regex_or_seed": "cl[aá]sic|leyenda|maestr[oa]|fundamental|referente|modelo|ejemplar|gran|canon|hist[oó]ric|hito|definitiv",
+              "translation_warning": "Reject name lists without exemplary status.",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "term": "better / worse / more authentic / compared with",
+              "language": "en",
+              "regex_or_seed": "better|worse|superior|inferior|more\\s+authentic|less\\s+authentic|compared\\s+with|unlike|rival|surpass|decline",
+              "translation_warning": "Requires value-bearing comparison.",
+              "source_original_code": "CRIT_06"
+            },
+            {
+              "term": "mejor / peor / más auténtico / comparado con",
+              "language": "es",
+              "regex_or_seed": "mejor|peor|superior|inferior|m[aá]s\\s+aut[eé]ntic|menos\\s+aut[eé]ntic|comparad|a\\s+diferencia\\s+de|rival|superar|declive",
+              "translation_warning": "Requires value-bearing comparison.",
+              "source_original_code": "CRIT_06"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "Un superdotado que ha sabido estudiar e interpretar el flamenco en toda su pureza, recogiendo todo lo bueno que quedaba y creando escuela.",
+              "language": "es",
+              "rationale": "The passage constructs Mairena as an exemplary figure who gathers tradition and creates a school.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-09/1982-09.json",
+              "source_issue": "1982-09",
+              "page_number": 61,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "excerpt": "the best cantaor of this century... 50 glorious years of authentic mastership in this difficult world of flamenco.",
+              "language": "en",
+              "rationale": "The passage canonizes Antonio Mairena through superlative ranking and enduring master status.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1980-03/1980-03.json",
+              "source_issue": "1980-03",
+              "page_number": 7,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "excerpt": "Se suele llamar «cante jondo» a ciertos cantes estimados superiores. El Flamenco abarca todas las modalidades conocidas de «cante» sin establecer jerarquías ni involucrar valoraciones.",
+              "language": "es",
+              "rationale": "The passage explicitly discusses hierarchy and superior valuation among cante categories.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1978-04/1978-04.json",
+              "source_issue": "1978-04",
+              "page_number": 3,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_06"
+            },
+            {
+              "excerpt": "they do not listen to other things, and therefore those tunes are getting worse all the time. In flamenco you must do everything, because everything is good when done properly.",
+              "language": "en",
+              "rationale": "The speaker compares repertoires over time and ranks current practice as decline when parts of flamenco are neglected.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1981-04/1981-04.json",
+              "source_issue": "1981-04",
+              "page_number": 11,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_06"
+            },
+            {
+              "excerpt": "QUIENES FUERON LOS 20 MAESTROS Rosario «La Mejorana»",
+              "language": "es",
+              "rationale": "This table-of-contents style title names maestros but does not itself construct canonical value or exemplary status.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1984-01/1984-01.json",
+              "source_issue": "1984-01",
+              "page_number": 2,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "excerpt": "Aside from their concerts and master classes, they founded the Academy of Creative Arts at 1349 Franklin in Bellingham, Washington.",
+              "language": "en",
+              "rationale": "Master classes is pedagogical biography here, not canon formation.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-09/1977-09.json",
+              "source_issue": "1977-09",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "excerpt": "La mejor organización al servicio del espectáculo mundial Siempre a sus órdenes",
+              "language": "es",
+              "rationale": "Mejor appears in advertising copy for an entertainment company, not as comparative flamenco evaluation.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1979-09/1979-09.json",
+              "source_issue": "1979-09",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_06"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "William Washabaugh (1996); Cristina Cruces Roldán (2023)",
+              "excerpt": "invented tradition",
+              "language": "en",
+              "rationale": "Supports coding narratives that make certain artists, competitions, or histories authoritative.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Washabaugh critiques top-down flamenco histories; Cruces Roldán discusses how mid-century publications and events created a flamenco canon.",
+              "source_original_code": "CRIT_03"
+            },
+            {
+              "literature_source": "William Washabaugh (1996); Marta Wieczorek (2018)",
+              "excerpt": "traditional and contemporary",
+              "language": "en",
+              "rationale": "Supports coding value-bearing comparisons across schools, generations, styles, and authenticity positions.",
+              "is_good_example": "yes",
+              "is_borderline": "yes",
+              "summary": "Both sources show that flamenco debates frequently proceed through contrasts between old/new, pure/commercial, local/global, and traditional/contemporary forms.",
+              "source_original_code": "CRIT_06"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        },
+        "CRIT_04": {
+          "label_en": "critic_expert_authority_and_boundary_critique",
+          "label_es": "autoridad_critica_y_critica_de_frontera",
+          "definition": "Language that grants critics, scholars, reviewers, editors, flamencologists, or expert voices authority, or uses critique to police commercial, staged, tourist, pure, hybrid, or improper flamenco.",
+          "use_when": "Use when expert critical voice or review discourse authorizes judgment, or when criticism enforces boundaries around proper/improper flamenco.",
+          "do_not_use_when": "Do not use for ordinary opinion without expert/critical authority or boundary stakes.",
+          "merged_from": [
+            "CRIT:CRIT_04",
+            "CRIT:CRIT_05"
+          ],
+          "required_conditions": [
+            "A critic/expert/reviewer/editor or critical discourse is positioned as authoritative, or critique polices flamenco boundaries.",
+            "The target and evaluative basis are identifiable."
+          ],
+          "do_not_code_if": [
+            "Personal preference without authority claim.",
+            "Commercial mention without critique."
+          ],
+          "common_confusions": [],
+          "trigger_variants": [
+            {
+              "term": "critic / reviewer / scholar / expert",
+              "language": "en",
+              "regex_or_seed": "critic|reviewer|scholar|expert|editor|flamencologist|authority|judge|according\\s+to|review",
+              "translation_warning": "Requires exercised evaluative or classificatory authority, not only a role label.",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "term": "crítico / reseñista / estudioso / experto",
+              "language": "es",
+              "regex_or_seed": "cr[ií]tico|reseñista|estudioso|experto|editor|flamenc[oó]logo|autoridad|juzg|seg[uú]n|reseña",
+              "translation_warning": "Requires exercised evaluative or classificatory authority, not only a role label.",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "term": "commercial / tourist / staged / pure / hybrid / nuevo",
+              "language": "en",
+              "regex_or_seed": "commercial|tourist|staged|pure|purist|hybrid|nuevo|fusion|sterile|artificial|innovative|modernist|traditionalist|contemporary",
+              "translation_warning": "Requires explicit evaluation.",
+              "source_original_code": "CRIT_05"
+            },
+            {
+              "term": "comercial / turístico / escénico / puro / híbrido / nuevo",
+              "language": "es",
+              "regex_or_seed": "comercial|tur[ií]stic|escenificad|puro|purista|h[ií]brid|nuevo|fusi[oó]n|est[eé]ril|artificial|innovador|tradicionalista|contempor[aá]ne",
+              "translation_warning": "Requires explicit evaluation.",
+              "source_original_code": "CRIT_05"
+            }
+          ],
+          "few_shot_examples": [
+            {
+              "excerpt": "los aficionados de verdad, los que te seguimos de cerca, sabemos de tu constante inquietud, de tu conciencia, de tu gran amor y compromiso con el cante",
+              "language": "es",
+              "rationale": "Aficionados are positioned as knowledgeable witnesses able to recognize and authorize artistic commitment.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1982-09/1982-09.json",
+              "source_issue": "1982-09",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "excerpt": "New York Post: dance and drama critic, Clive Barnes, observes, \"Now we are reduced to smaller, somewhat less distinguished groups, such as that of the Madrid-born Jose Molina...There was a lack of what the Spaniards call DUENDE",
+              "language": "en",
+              "rationale": "The named critic is given authority to judge the performance and define its aesthetic lack.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1978-07/1978-07.json",
+              "source_issue": "1978-07",
+              "page_number": 6,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "excerpt": "este intento de realizar socialmente el flamenco dio como consecuencia unos resultados rotundamente negativos en su valoración artística... la nefasta realidad de la Opera flamenca.",
+              "language": "es",
+              "rationale": "The passage evaluates theatrical/public diffusion as artistically damaging and tied to opera-flamenca decline.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1980-05/1980-05.json",
+              "source_issue": "1980-05",
+              "page_number": 4,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_05"
+            },
+            {
+              "excerpt": "Common complaints concern the poor attitude of the performers... and inartistic, commercial dancing with little value to the lover of good flamenco.",
+              "language": "en",
+              "rationale": "Commercial tablao dancing is explicitly judged as inartistic and low-value for serious flamenco listeners.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "example_type": "clear_positive_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-10/1977-10.json",
+              "source_issue": "1977-10",
+              "page_number": 2,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_05"
+            },
+            {
+              "excerpt": "Allí, sus amigos-aficionados. Allí, sus amigos-artistas.",
+              "language": "es",
+              "rationale": "Aficionados are merely present as friends at an homage; no critical authority is exercised.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1978-11/1978-11.json",
+              "source_issue": "1978-11",
+              "page_number": 9,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "excerpt": "We encourage letters to the editors, features by knowledgable members reports on trips to Spain, etc.",
+              "language": "en",
+              "rationale": "Editors are mentioned administratively as newsletter recipients, not as evaluative authorities.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_en",
+              "source_periodical": "Jaleo",
+              "added_by": "example_hunter_jaleo_en_v1",
+              "source_json": "history-dataset/jaleo/1977-08/1977-08.json",
+              "source_issue": "1977-08",
+              "page_number": 1,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "excerpt": "UTECO-JAEN Comercial COOSUR Avenida Generalísimo, 5",
+              "language": "es",
+              "rationale": "Comercial is part of business advertising, not a critique of commercial flamenco.",
+              "is_good_example": "no",
+              "is_borderline": "yes",
+              "example_type": "trap_example_es",
+              "source_periodical": "Candil",
+              "added_by": "example_hunter_candil_es_v1",
+              "source_json": "history-dataset/candil/1978-04/1978-04.json",
+              "source_issue": "1978-04",
+              "page_number": 2,
+              "provenance_match_method": "all_fragments",
+              "source_original_code": "CRIT_05"
+            }
+          ],
+          "theoretical_anchors": [
+            {
+              "literature_source": "William Washabaugh (1996)",
+              "excerpt": "flamencology",
+              "language": "en",
+              "rationale": "Supports coding flamencologists, critics, and aficionados as actors in contests over interpretive authority.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Washabaugh treats flamencology itself as a field of rivalry, authority, and contested interpretation.",
+              "source_original_code": "CRIT_04"
+            },
+            {
+              "literature_source": "Marta Wieczorek (2018); William Washabaugh (1996)",
+              "excerpt": "conflicting narratives",
+              "language": "en",
+              "rationale": "Supports coding disputes over traditional/contemporary and pure/commercial flamenco while avoiding automatic acceptance of purist criteria.",
+              "is_good_example": "yes",
+              "is_borderline": "no",
+              "summary": "Wieczorek frames flamenco research around conflicting narratives and disputes over traditional/contemporary and pure/commercial display; Washabaugh warns against treating commercial flamenco as automatically inauthentic.",
+              "source_original_code": "CRIT_05"
+            }
+          ],
+          "llm_output_requirements": [
+            "Provide a short evidence quote from the visible text.",
+            "Name the discourse action: authorizes, excludes, preserves, teaches, evaluates, ranks, contests, or describes.",
+            "Name the target of the claim when possible.",
+            "Return low confidence rather than forcing the code when the evidence is only lexical or descriptive."
+          ]
+        }
+      }
+    }
+  },
+  "active_primary_codes": [
+    "AUTH_01",
+    "AUTH_02",
+    "AUTH_03",
+    "AUTH_04",
+    "HERIT_01",
+    "HERIT_02",
+    "HERIT_03",
+    "PED_01",
+    "PED_02",
+    "PED_03",
+    "COMM_01",
+    "COMM_02",
+    "COMM_03",
+    "COMM_04",
+    "CRIT_01",
+    "CRIT_02",
+    "CRIT_03",
+    "CRIT_04"
+  ],
+  "annotation_rules": {
+    "evidence_rule": "Every positive code must include a direct quote from the visible review text and a one-sentence rationale.",
+    "keyword_rule": "Lexical triggers are retrieval aids, not sufficient evidence. Code only when the required discourse function is present.",
+    "truncation_rule": "For truncated articles, annotate only the visible excerpt and mark insufficient_context=true when missing context prevents a reliable decision.",
+    "multi_label_rule": "Multiple primary codes may be assigned to the same evidence span only when each code's required conditions are independently satisfied."
+  }
+}

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-05-11-right-viejas-paginas-flamencas",
+    "article_text_for_review": "CUANTOS hacemos «CANDIL», aparte de las deseables y necesarias diferencias ideológico-cantaoras, tenemos muy claro y conjunto el criterio de que la polémica sobre el origen gitano o no gitano de nuestros cantes es asunto ya suficientemente debatido. Más aún, pensamos que volver a entablar discusión sobre el tema, amén de innecesario, arrastraría las consabidas posturas maniqueas y las bizantinas discusiones. Y, evidentemente, no estamos en esto.\n\nNuestro irrenunciable rechazo de estas posturas antagónicas no significa de modo alguno eclecticismo —entre nosotros, como en toda la afición, existen ideas divergentes—, sino una postura que consideramos seria y responsable: la discusión tuvo su tiempo histórico, en el que se expusieron razones, sinrazones, réplicas y dúplicas y algunos escasos documentos. De aquí nuestro firme propósito que sólo alteraremos, si se aportasen datos inéditos o algún razonamiento realmente novedoso, cosa, nos atrevemos a prejuzgar, muy poco probable. Si hoy publicamos en esta sección un viejo artículo —diario «Córdoba», 28-1-1961— del poeta Juan Bernier, no es sólo por ofrecer una bella muestra literaria de uno de los poetas del grupo «Cántico» —en justicia hoy recuperado—, tan afín al mundo flamenco, sino por ser gráfico exponente histórico de la polémica entre González Climent y Ricardo Molina.\n\nHe pensado mucho sobre los gitanos como secuela de un principio de polémica. La culpa la tiene el «flolklore» andaluz y específicamente el cante «jondo». La raíz está en estos concursos primaverales, con que Córdoba ha dado actualidad y magnificado la expresión musical e íntima del tipismo o el indigenismo andaluz. Los personajes de la polémica en ciernes, son dos conocidos técnicos y enamorados, al mismo tiempo, del «duende» y el misterio, que rodea al puro y magistral cante flamenco. González Climent, de Buenos Aires, y Ricardo Molina de Córdoba, han escuchado juntos, oídos atentos y lápiz de calificación en mano, la variada polifonía, con que los cantaores andaluces han repetido, resucitado o vivificado, lo que estaba en trance de perderse o envilecerse definitivamente. Pero escritores los dos, han vislumbrado en su hora teórica, dos posiciones, antagónicas desde luego, utilísimas en cuanto a sus\n\nPor Juan Bernier\n\nfrutos sobre la historia y los orígenes del auténtico cante «jondo» y del entero «folklore» de nuestra Andalucía.\n\nEl caballo de batalla de la discusión es el tema «gitano». Climent descarta como extraña a la raza que, hasta ahora y tradicionalmente, hemos considerado más ligada a nuestro íntimo folklore. Ricardo Molina, en cambio, la hace depositaria, portadora y mantenedora, de las más puras tradiciones folklóricas andaluzas. Al parecer, la posición de Climent parte de juzgar una «separata» la gente gitana. De entenderla ajena a la personalidad andaluza y, por ende, a la española total. ¿Pero es que tú, Juan, no eres acaso español, andaluz y cordobés, a unque tus antepasados los trajo Olavi de a la posada de La Carlota? ¿Por qué dudarlo de Mercé, la «Serreta» o de Fernando el «gitano», cuya semilla vino a España mucho antes, en el siglo de los Enriques y de",
+    "title": "Viejas páginas flamencas",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 494,
+    "article_char_count_full": 3146,
+    "article_char_count_review": 3146,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-12-left-escucha-sobre-lo-gitano-y-su-pol",
+    "article_text_for_review": "los Reyes Católicos? Me decía Ricardo Molina para justificar su postura.\n\nEn verdad no me hacía gracia esta comparación, entre mi propia genealogía y la de la raza «calé». Pero el mundo de las genealogías está lleno de nebulosas. Puesto a pensar sobre la de los gitanos, saqué a colación mis olvidados conocimientos, ya que la heráldica no me ha preocupado nunca. Sabemos que doña Lupa de Galicia fue ilustre antepasada real de varias casas nobilísimas y sabemos también que no existió jamás. Nació, vivió y aún no ha muerto, en los pergaminos de los reyes de Armas y en los plúmbeos sellos de los privilegios cesáreos. Sabemos por cierta marquesa, desgraciadamente difunta, que su rama era más antigua que Salomón, más vieja que Rómulo, y desgraciados los Austrias y los Borbones!, porque ella descendía directamente (ya que se llamaba Aguilar-Tablada), de los que portearon las pesadísimas (diganlo nuestros pecados) Tablas de la Ley, en los páramos del Sinaí. Sabemos también, que muchas investigaciones genealógicas tocan a cualquier antepasado y se paran repentinamente, porque no es oro todo lo que reluce. Así, pues, si en lo que se refiere a una familia, es ardua tarea el de sus orígenes, nobleza y prosapia, cuando llegamos al concepto de la raza, se pierde el hilo y hasta la soga de sus principios.\n\nMuy sabio me parece este Eichman, ahora preso por los judíos, al demostrar, matemáticamente y también imprudentemente, que la camarera favorita de Hitler era, en su sesenta y ocho ava parte, de sangre hebrea. Pero no todos los especialistas han hilado tan delgado y razas enteras están sin padre ni madre como echadas a la inclusa por la ignoracia de los historiadores. Y es curioso que estos pueblos misteriosos (vascos y gitanos, por ejemplo), mantengan una inconfundible personalidad y un carácter racial casi sin cambios. Por lo que hace a los gitanos, su inconfundible carácter, los hizo mentir desde el principio. Si no miente también, cosa fácil en su oficio, el historiador bávaro Aventino, los negrísimos vagabundos, procedentes de Turquía y Hungría, se hacían a sí mismos penados con la pena del destierro, por no haber querido hospedar a la Virgen y su Hijo Santísimo, en su viejo país de Egipto. Así lo afirmaba la carta recomendatoria del Emperador Segismundo, pero ni por esas, el buen Palmirano, hijo de Valencia, les creía, «porque no de penitentes, sino de ladrones, llevan vida». Un poco duro era, a mi parecer, este «valencia», porque otros encantos tenía ya la raza entera. Y es que no sólo se apoderaban de un buen «muleto», sino que año tras año, lo efímero, lo gracioso, lo alegre de cada pueblo, se le iba asimilando. Viniesen de la India o de Armenia, se encasillaron en las naciones con un método análogo, pero más tranquilo, que el de las naciones bárbaras, en su visita a Occidente. Más pacíficos, usaron el cambalache fenicio o el ágil descuideo espartano y por ello no se le consideran dig-\n\nnos, ni caballeros, ni héroes, como nuestros gloriosos antepasados, señores de horca y cuchillo. Sus artes eran más sutiles e iban desde la mágica buenaventura al experto entretejido de la cestería. Tenían el tintileo de los martillos sobre los calderos o los ágiles dedos sobre las castañuelas sonoras. Pero «diforme por su negrura, raptores de niños, caníbales», el piadoso pueblo y los honrados menestrales, se sintieron amenazados. Proveyó la justicia, mandando que las tribus trashumantes se asentasen y, sobre todo, «prohibiéndoles trabajar»; so pena de destierro, azotes y cortes de orejas. He aquí una buena ley, para que nos la aplicaran a todos, en estos tiempos de horarios y prisas. Pero en aquella época, sólo el temor del monopolio de los gremios, dictó la medida. Y sin trabajar, que nos digan las ordenanzas qué ha de hacerse para comer. Así pensarían los gitanos, hasta hacer de esta signatura un arte. Porque aquí están, aquí viven, aquí trabajan o no, pero aquí cantan. Cinco siglos los contemplan desde la ancha Castilla, a los cuatro horizontes. Han pasado por todo lo que las generaciones de andaluces y españoles han pasado... Un poquito la tez más negra. Pero en el sentimiento, lo andaluz y lo gitano andan del brazo y aún el gitano, se lleva la palma de lo andaluz. Yo no sé si en otras cosas, pero en el cante, desde luego... Y dejo a Climent y Molina seguir, que el tema es «jondo»...",
+    "title": "Escucha sobre lo gitano y su polémica en el cante",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 738,
+    "article_char_count_full": 4346,
+    "article_char_count_review": 4346,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-13-right-x-congreso-de-actividades-flamen",
+    "article_text_for_review": "OMO el lector conoce, durante los días 16, 17 y 18 del próximo mes de septiembre, se celebrará en Jaén el X Congreso de Actividades Flamencas, un encuentro estudioso sobre nuestra problemática y realidad que está superando —por las adhesiones, comunicaciones y sugerencias recibidas— nuestras más optimistas previsiones. Dejando para un próximo número, por aquello del misterio y duende del flamenco, la información del material que se entregará a cada congressista de publicaciones, discos, etc., así como de las ponencias de las que nos quedan no pocas por recibir, tanto de España como del extranjero, consideramos de interés para nuestros lectores ofrecer una síntesis, ya estructurada, de las sugerencias que nos han llegado sobre los temas que deben ser tratados en este congreso. Una serie de sugerencias que fueron solicitadas a la afición y entidades flamencas por la Comisión ejecutiva del Congreso y que muy bien puede servir de base para nuevas comunicaciones y ponencias, o para ser puntos de debate dentro de las propias sesiones de estudio. De todos modos, y al margen de su utilización dentro del Congreso, los temas que se nos han sugerido demuestran vivamente el interés fundamental de los congressistas por una serie de puntos que la Mesa, de un modo u otro, debe tener en cuenta, por cuanto son, a nuestro entender, claro exponente del general sentir flamenco.\n\nDe las ciento sesenta y siete sugerencias recibidas hemos obtenido la siguiente clasificación, que expone-mos por orden riguroso de preferencias, según deduci-mos del examen de las mismas, y entre las que ha sido unánime la solicitud de que no se admita, por la falta de seriedad intelectual y flamenca, así como por las vanas polémicas despertadas en anteriores congresos, nada relativo a la paternidad del cante entre payos y gitanos. Las nominaciones, por el indicado orden de prioridad, pueden quedar estructuradas del siguiente modo:\n\nPrimera: Coordinación de Peñas\n\na) Necesidad de unión.\n\nb) Federaciones provinciales, potenciación.\n\nc) Federación Nacional de Peñas, operativa.\n\nf) Unión de las peñas no andaluzas con An dalu- cía.\n\nd) Confederación de Peñas andaluzas.\n\ne) Promoción de la creación de entes flamencos.\n\ng) Pureza y seriedad flamenca en las Peñas.\n\nh) Presencia y actuaciones menos profesionalizadas de los artistas flamencos en las Peñas.\n\nSegunda: Flamenco hoy\n\na) Rechazo casi absoluto de la actual estructura de los Festivales.\n\nb) Flamenco y emigración.\n\nc) Problemática del flamenco fuera de Andalucía.\n\nd) El flamenco en los medios de comunicación social.\n\ne) Discografia y su escaso rigor.\n\nTercera: Aspectos culturales, etc. del flamenco.\n\na) Flamenco y cultura andaluza.\n\nb) Rescate y conservación del patrimonio flamenco.\n\nc) Contenidos musicales, antropológico, histórico, social y poético del flamenco.\n\nd) El flamenco y la escuela.\n\nCuarta: Otros temas\n\na) Problemática del artista flamenco.\n\nb) Jurados de Concursos.\n\nc) El futuro incierto del cante.\n\nComo el lector habrá podido advertir con facilidad, las sugerencias recibidas suponen toda una llamada al rigor del estudio y debate en nuestro Congreso, que tiene la ineludible obligación de responderlas junto a otras que lleguen a la Comisión Ejecutiva encarnadas en comunicaciones o ponencias, las que tendrán como plazo improrrogable de admisión el día 15 de julio.",
+    "title": "X Congreso de actividades flamencas",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 521,
+    "article_char_count_full": 3341,
+    "article_char_count_review": 3341,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-14-left-el-cante-en-la-mirada",
+    "article_text_for_review": "Un silencio de siglos, resignado. Callar, callar sin más y andar camino. Olvidar las afrentas en el vino para seguir humilde y humillado.\n\nPoner ante las lanzas el costado y beber el acíbar de tu sino, hombre del Sur, estoico y campesino, que ves la luz en el dolor cansado.\n\nVuelca tu pena antigua en los cantares, alegra a los demás con tus pesares y aventa con el cante la amargura.\n\nTu angustia se hace ritmo en tu garganta, a gritos la miseria se la espanta y tu voz se estremece en nuestra hondura.\n\nEl ¡Ay!re se ha melado con tu grito, de emoción nos traspasa tu lamento, que encrespado se empina sobre el viento en un girón de Ayes infinito...\n\nTu rajo popular, miel y granito, es eco de incisivo sentimiento. Sollozo de mi gente, bronco acento que modulas a un tiempo queja y rito.\n\nTu cadencia nos besa o nos desgarra, a veces vuelta brisa, a veces garra, rebosante de aromas y de luz.\n\nRecio sentir que te entras por derecho calando el corazón, de pecho a pecho, con el grave escozor de lo andaluz.",
+    "title": "El cante en la mirada",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 187,
+    "article_char_count_full": 1009,
+    "article_char_count_review": 1009,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-14-right-manuel-celestino-cobos-cobitos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n* Ellos, los protagonistas, dicen\n\n—A usted se le considera como cantaor granadino, pero su cuna es jerezana.\n\n--Sí. Nací en Jerez y en el barrio de San Miguel. Mi abuelo materno era hermano mayor del Cristo de la Expiración y un buen aficionao; todos los años cuando lo sacaban mi abuelo le cantaba el pregón; también le cantaba a los amigos y eso, pero no llegó a ser profesional. Mi padre era de Baeza y llegó a Jerez de sargento primero, pero como a los militares así, bajos, las mozuelas tenían a menos hablarles, cuando lo conoció mi madre le dijo: «pá casarte conmigo tienes que presentar la dimisión». Y mi padre la presentó, luego le dieron un trabajo de celador de teléfonos en Sevilla y nos vinimos todos a Sevilla, yo con menos de un año. Me he criao en Sevilla, y cuando he vuelto a\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\nijo: «pá casarte conmigo tienes que presentar la dimisión». Y mi padre la presentó, luego le dieron un trabajo de celador de teléfonos en Sevilla y nos vinimos todos a Sevilla, yo con menos de un año. Me he criao en Sevilla, y cuando he vuelto a Jerez ha sío como cantaor, con El Niño de la Huerta, Juanito Valderrama, Marchena y otros cantaores, cuatro o cinco veces. —Entonces, sus inicios cantaores... —A mí siempre me ha gustao el cantá. Yo lo escuchaba de chiquillo en las máquinas esas que había antes y cuando me gustaba una cosa la copiaba. Empecé como aficionao dando recitales y conciertos por la parte de Graná, Sevilla, Córdoba, Huelva... de pueblo en pueblo. Esos sí que eran otros tiempos. Ibamos un tocaor y yo por los pueblos y en los casinos pedíamos permiso al presidente y entonces hacíamos una rifa: un billete de lotería, una botella de vino o coñá, y cantábamos. Así estuve una pila de años, roando, hasta que llegué a Graná que me coloqué en el café-cantante que había, La Montillana. Yo vine a Graná desde Tánger, donde actuaba con uno de los cantaores que a mí más me han gustao, El Cojo de Málaga, con el que coincidí cantando en el año 18 ó 20 en la feria de Osuna. Bueno, que yo estaba haciendo toos los pueblos que hay desde Cádiz a Tarifa, y en el café de Tarifa donde yo cantaba iba un buen aficionao, que le decían Diego Piñero, un hombre muy bueno que nos invitó a comer en su casa muchas veces, al tocaor y a mí. Pues, bueno, como en Tarifa yo oía que en Tánger estaba cantando el Niño del Genil, tío de Fosforito, le dije a ese Diego Piñero que quería ir a Tánger, y él me dijo que me podía ir en su barco. ¡Ay!, cuando yo ví su barco, que le faltaban dos deos pá hundirse; pero lo peor es que se escacharró en medio del Estrecho y se lió a dar vueltas y, fíjate lo que son las cosas,\n\n[ENDING CONTEXT]\n\nme han tocao tós, de Javier pá lante. Me ha tocao Ramón, quien siempre medió consejos cuando me veía en Málaga, en Córdoba... Uno de los que mejor me ha tocao en Graná fue el padre de Tranca, porque me dejaba cantar y no se liaba a hacer esos gorgoritos. Que lo sepas de una vez: la guitarra pá acompañar no tiene más que dar tonos, luego puede hacer lo que quiera y antes también; pero cuando cantamos no debe dar más que tonos. Mira, el otro día le dije a uno de esos niños modernos, cuando empezaba hacer esas cosas raras mientras yo cantaba: «¡Qué la vas a romper!». No me podía aguantar ya...\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Ellos, los protagonistas, dicen... Manuel Celestino Cobos, «Cobitos»",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 2037,
+    "article_char_count_full": 10773,
+    "article_char_count_review": 3441,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  }
+]
+```

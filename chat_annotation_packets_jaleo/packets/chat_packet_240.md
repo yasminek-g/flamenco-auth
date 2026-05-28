@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1986_SPRING::A15",
+    "article_text_for_review": "FROM SEVILLA Haley's comet was nothing to compare with the explosion of talent and rain of stars destined to descend on New York in late November and December. No, it's not the fall-out of debris and bodies from a sabotaged airliner to which we refer, but rather a spectacular flamenco show the likes of which have not landed on these shores in some years. Scheduled are canteores of first magnitude; El Chocolate and Fernanda de Utrera along with the greatest bailor alive (with the possible exception of our humble self) -- El Farruco; Lo Faraone and La Farruca, the two dancing daughters of the aforementioned, as well as El Güito, Angelita Vargas, and Spsin's best known bailora Msueta Carrasco. Will wonders never cease! This celestial assembly is due to spend 25 days in New York after passing through Switzerland, France, Italy and Holland. Guitarists have not been confirmed to date although it is reasonable to suppose they will be of no less quality than the rest of this assembly. Further details are not available as of this writing. Our purpose in relating what little we know of this matter at this time is to apprise our readers so that they may know of this event well in advance and make preparations to attend. Remember, you heard it here first in mighty Jaleo! New York Times, Times of London, Le Monde, Pravda, will you never catch up? And while the gentle reader digests these delectable tidings, we offer $ \\underline{\\text{de postre}} $ the following tidbit to savor, a bit of lore from days of yore. NEWS FROM AROUND ANDALUSIA CORODBA From the ancient capital of the Omayyid Caliphate, we learn that restorative works on the famous mosque have been concluded and that this architectural jewel is now turned over to artistic use from time to time. The first of such presentations was a concert recently sung by the great Zerzuela tenor José Carreras. Even more spectacular than this is the news of the founding in Córdoba of a cultural institution which is much needed in Spain and promises to be of great direct benefit to the flamenco art. The \"Gran Teatro\", in a state of advanced ruin, was recently rescued by the municipality and restored, st great cost, to its original state of princely splendor. A museum piece of architecture, the Gran Teatro has a capacity of 850 persons plus an exhibition space. Even more welcome is this news -- the establishment in one of its dependencies of a flamenco library consisting of books on flamenco and an archive of flamenco records and videotapas, all of which comprise part of a projected institute called -- \"Centro de Estudios Flamencos.\" The opening of the Gran Teatro is due to coincide with the beginning of the Concurso de Arte Flamenco in May. The establishment of such an archive is vary valuable and needed, the same can be said for the establishment of a legitimate center for flamenco studies, and the joining of these two enterprises with a theater is almost too good to be true -- a consummation devoutly to be wished.",
+    "title": "THE SHAH SPEAKETH",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SPRING",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "31",
+    "page_number": 31,
+    "word_count": 519,
+    "article_char_count_full": 2999,
+    "article_char_count_review": 2999,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A16",
+    "article_text_for_review": "NEW YORK It is February/March; the coldest days in New York; this is also the time when flamenco ballets are created--nearly all at Faisals Dance Studio on 8th Avenue, where the rehearsal hours are long. Here is where the \"belly dance\" tuition thrives and recent combination concerts Flamenco-Near East dance have been presented with success in New York City. MARIA BENITEZ Maria Benftez heads the list with her New Estampa Flamence ballet and no less than eleven dance premiers, projected: Kennedy Center, Washington, D.C. March 5 through 9, Joyce Theatre, New York City on March 11 through 16 and then on to the West Coast, beginning April 4th at Stanford, Davis, Pasadena, San Diego, Irvine, Santa Barbara, University of California. At the conclusion of her California tour Maria returns to her beloved Santa Fe, New Mexico to continue her summer classes at the Institute for Spanish Arts. In October 1986 Benitez joins Jose Greco concertizing in San Juan, Puerto Rico. The itinerary of the Estampa Flamenco for January/February included Florida towns: West Palm Beach, Key West, Miami, Tampa (La Columbia Restaurant), Nashville and Knoxville (Tenn) and Texarkana and Denton (Texas) where she completed her \"old\" company tour with master classes at the Texas Women's University and where her outstanding Texan guitarist Miguel Rodriguez entertained the enthusiastic public with solo performances. Benitez, called by some the \"Baryshnikova\" of the Spanish dance, has that many surprises for her beloved audiences: During her last performance in New York she had the nobleman of Spanish dance, José Greco, as special guest artist...this year the surprise is a nearly full change in program; most of her classical Spanish dances had the choreographic touch of Rosita Segovia (partner of the great Antonio) and the Jota master Pedro Azorin...these introductions led to the fiamenco puro which had the packed audiences spellbound. Fully armed, as a Bailarina el Concierto should be, Maria had two cantaores who cajoled her and at times joined vocally; yes Andalucia at its best, Pepe from the province of Málaga, Cuquito from Cádiz...the jaleos the baile and vocal rendition of the company...what with the choreography of La Tati and Ciro adding to the dimensions of this show...Special mention should be made of Sandra Jimenez; \"Alegrias\" (Ciro), the manly \"Farruca\" of Manolo de Cordoba and his choreography of \"La Caña\" that stole the show--Manolo is JALEO - VOLUME IX, No. 1 CARMEN ACEVEDO There are dual performers belly dancers/flamenco like Chicago's famous Maya; New York's Mara Sultani is an exquisite belly dancer and flamenco dancer; are there others? Villa del Parral had various flamenco events in the works: In February the beautiful dancer Carmen Acevedo headed a show which included the professional group namely: cantaores, Paco Ortiz and Luis Vargas; guitarists Paco Juanes and Jose Maria Moreno; and special appearance of the dancer Orlando Romero. After March Carmen Acevedo will have cantaor Paco Ortiz and the guitar of Miguel Céspedes at the Parral. On March 2, 1986 Parral presented Reunion del Cocido Flamenco II. The video presentation was organized by Vicente Granados and dedicated to the memory of Carmen Mora and showed some of her last performances before her death ever filmed. Her husband Mario Maya, also danced. This was preceded by the appearances of cantaores El Funi por Soleares, Mancer Manolete and all the other great ladies of Spain: Manuela Carrasco, Rosa Durán, Manuela Vargas, Blanca del Rey, Merche Esmeralda. Outstanding was the taranto on three guitars, tientos (I believe of Carmen Mora), peteneras and others Finally, with a Tia Fernanda de Utrera cante and the guitar of Diego del Gastor everybody applauded. Food was served by JALEO - VOLUME IX, No. 1 (1) La Compañía de Arte Español with choreographer La Cuiqui and husband/manager/guitarist/cantaor José Manuel Linares. La Compañía has distinguished itself in recitals and of performance of yearly guest artists, like Teo Morca--Jaleo Vol. VII No. 2, p. 13--Vol. VIII No. 2, pp. 26-28--Vol. VIII No. 3, p. 20. (2) Los Flamencos de San Antonio; probably the parent company headed by Terese; her whole family is in the flamenco business. El Curro, her flamboyant husband/guitarist, has been playing at Las Canarias-Mansion del Rio for some 10 years where Los Flamencos perform. Curro has been propagating the tuition of the flamenco guitar in town--Jaleo Vol. V No. 8. (3) Timo Lozano Spanish Dance Company. Lead dancer of the Benitez ballet has his own company now and performed recently in Dallas and San Antonio with success, La Tormenta from Corpus Christi was his guest artist. (4) Ballet Folklorico de Navarro. (5) Olé Flamenco Dancers. Perform six times a week in the Restaurant/Tablao at Fiesta Plaza. Gisela Noriega, the artistic director, herself a pupil of Manolo Vargas, Roberto Iglesias, has been able to draw her dancers from the rich talent of San Antonio. The power behind the Olé Restaurant at Fiesta Plaza is the ultra aficionado of flamenco Leonardo Noriega, and Gisela's husband. He is the livewire behind the tablao, MC, host, personable, likeable Leonardo makes the flamenco click in his restaurant. The dancing is superb due to such artists as Pearl Montoya and Oscar Treviño, Sylvia Betancourt Perello. The romeras, fandangos, bulerías with the guitars of Jose Maria GRAND OPENING OF \"OLE! RESTORAN & CARABET.\" MATILLA CUTTING BY HENRY CISNEROS AND JOSE GRECO. LEFT TO RIGHT: GUITARIST MIGUEL ANTONIO, JOSE GRECO, JUSTO CISNEROS, MAYOR HENRY DISNEROS, DANCER MARGARITA ELENA, CO-OWNERS OF OLE! GISELA AND LEONARDO NORIEGA, MS. HENRY CISNEROS. JALEO - VOLUME IX, No. 1 FIESTA BUMBAZO AT OLE! LEFT TO RIGHT; SILVIANA, ANITA, EDUARDO, GISELA, MALENA, ANDRE FLOOR SHOW AT OLE LEFT TO RIGHT: BONGOS INFANTE, RUDY TREVINO, EDUARDO MONTEMAYOR (DANCING), ALEJANDRO ANTONIO, LEONARDO NORIEGA, MALENA, OSCAR TREVINO, ANITA, ANDRE",
+    "title": "RYSS REPORT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SPRING",
+    "year": 1986,
+    "language": "en",
+    "article_type": "article",
+    "pages": "32-36",
+    "page_number": 32,
+    "word_count": 947,
+    "article_char_count_full": 5943,
+    "article_char_count_review": 5943,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A17",
+    "article_text_for_review": "\"LA UNION. CANTE DE LAS MINAS\" [from: El Pais, Jan.-Feb. 1986; sent by Brad Blanchard; translated by Paco Sevilla.] (Hispavox 30 130 346) 1985. Cante: Pencho Cros, Encarnación Fernández, Manolo Romero. Guitar: Antonio Fernandez, Antonio Piñana, hijo In 1985, the Festival Nacional del Cante de las Minas de la Unión celebrated its silver anniversary, and released this recording that brings together the three cantaores that are most significant today in this specific area of the cante flamenco. Pencho Cros, Encarnación Fernández and Manolo Romero have all won, on different occasions, the highest aware given in this festival, the \"Lámpara Minera.\" Cros is probably today's most authentic depository of the Levantine-Mineras cantes, which he cultivates with grandeur and \"jondura\"; his expressive capacity allows him to transcend the normal, especially in his deep contact with the cante; his voice suffers and has a moaning quality not often heard in these styles. Encarnación, a gypsy, gives these cantes the accent associated with her race, also uncommon to the usual interpretations of the cantes of the mines. She is a good singer of what is called the cante-jondo-andaluz, and there is an unusual charm in some of her creations within the cantes de Levante. Finally, Manolo Romero the major exponent, today, of the lineage started a quarter century ago by Maestro Piñana. He has a high, clear voice, with great ability. He sacrifices, perhaps, some of the profundity of the cante with an excessive display of baroque ornamentation that, at least to me, seems to take away from the emotional content. Fernández and Piñana, hijo, are reliable in their accompaniment of the cantaores. --Angel Alvarez Caballero AMERICAN INSTITUTE OF THE GUITAR RELEASES FIRST AIG RECORD AIG Records, a company that well emphasizes guitar music, has released its first album, \"Guitarmasters, Vol. I: Guitar Perspectives.\" The record was sent to Jaleo for review, but unfortunately there is only one piece that relates to flamenco in any way. The rest of the music is classical music, played, I'm sure, very nicely by five different guitarists. The flamenco piece is a bulerfas, \"Homenaje a Carmen Amaya,\" composed and played by Dennis Kaster. The piece is not particularly out of place on this record, as it's flavor is very sweet and the technique sounds predominantly classical in approach. The music reminds me very much of the playing of Vicente Gómez--sweet, delicate, and somewhat old-fashioned. For those who enjoy guitar music in general, here is how you can order this record. Send $8.50 to: The American Institute of Guitar, 204 W. 55th St., New York, NY 10019. THE FRAME STATION The Finest in Custom Picture Framing 20% DISCOUNT TO ALL MEMBERS OF JALEISTAS OWNER TOM SANDLER 1011 FORT STOCKTON DRIVE SAN DIEGO, CALIFORNIA (714) 298-8558 (Hillcrest/Mission Hills area)",
+    "title": "RECORD REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SPRING",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "37",
+    "page_number": 37,
+    "word_count": 459,
+    "article_char_count_full": 2866,
+    "article_char_count_review": 2866,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A18",
+    "article_text_for_review": "GUITARRA FLAMENCA PACO PEÑA Tito Losada -- Ricardo Mendeville Curso A - Curso AA BAILE FLAMENCO Curso C - Loli Flores Curso D - Carmen Cortes Flamenco is the musical heritage of a particular culture in Andalucía. Familiarity and involvement with that culture is a very significant step in getting to know and master the technique of flamenco music and dance. The \"Ecuentro Flamenco\" courses offer guitar and dance aficionados an intensive programme of study of the various flamenco techniques as well as the opportunity to live in the heart of this musical culture. Guitar Course Some important activities include the careful analysis of the flamenco rhythms, the construction of falsetas and the technical and emotional development of each form. The teaching will be done by Paco Peña assisted by Tito Losada. If standards among the students vary significantly it may be necessary to divide the course into groups in order to make the best possible use of the time spent in the class. Beginners or near beginners are also accepted to the course and will be taught by Ricardo Mendeville. (See special price for beginners - Course AA). These courses are also open to Auditors. Dance Courses As a result of the growing popularity of our dance courses we have thought it appropriate (in consultation with both star teachers) to divide them into two separate levels. Advanced students will be taught by Carmen Cortés and less advanced by Loli Flores. Both courses will concentrate on two fundamental aspects of the flamenco dance: 1. Technique in relation to foot-work, arms, hands and the particular character of body-movement in flamenco dance. 2. Study of the choreography and performance of some flamenco forms which will be selected by the teacher according to the level of the students and her own discretion. Note: Guitar accompaniment will be provided for the classes. JALEO - VOLUME IX, No. 1 FLAMENCO ENTERTAINMENT MONDAY & TUESDAY NIGHTS (619) 298-2010 LATE ANNOUNCEMENT FIESTA FLAMENCO with Rayna and her group will perform Sept. 12 and 26 at Drowsy Maggie's on 31st & University in San Diego, CA.",
+    "title": "CURSO DE LA GUITARRA CLASSICA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SPRING",
+    "year": 1986,
+    "language": "en",
+    "article_type": "article",
+    "pages": "38",
+    "page_number": 38,
+    "word_count": 348,
+    "article_char_count_full": 2105,
+    "article_char_count_review": 2105,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A19",
+    "article_text_for_review": "[from: $ \\underline{\\text{Rocky}} $ $ \\underline{\\text{Mountain}} $ $ \\underline{\\text{News}} $, April 11, 1986; sent by Guillermo Salazar.] by Jesse Tinsley Rene Herdia, the man credited with bringing flamenco guitar to Denver and the rest of Colorado, kicks off his 20th anniversary celebration Sunday in a performance with the Denver Chamber Orchestra. The guitar marvel will play a lengthy original composition titled \"Alborada Gitana\" (Dawning of the Gypsy) -- a song that paints a musical story of the struggling gypsies in Spain. Heredia, born a poor gypsy in Granada, Spain, 40 years ago, also will toast his year-long celebration with a May 4 performance in Carnegie Hall in New York, and the possible release of an album and a flamenco guitar book. Heredia said flamenco has come a long way since he arrived in Denver. \"I feel that flamenco has grown and people are more aware of the music. There is a resurgence of flamenco. When I came to Denver in 1966, there was only the western guitar. There was very little acoustic guitar. I brought flamenco to Denver in 1966,\" he boasted. He has traveled widely. In addition to performing throughout metropolitan Denver -- and Colorado, Heredia has performed in London, Paris, Madrid and Los Angeles. Taught by his father, Heredia picked up the guitar at age 10, and for 12 hours a day, his fingers raced along the neck of the Spanish instrument. At age 13, he was a professional flamenco guitarist. Four years later, he was on tour with the late Carmen Amaya, one of Spain's greatest flamenco dancers. For the past 30 years, Heredia has made a living playing and teaching guitar. He also teaches flamenco dance. \"I get a lot of pleasure out of flamenco. I used to study 12 or 15 hours a day. It requires energy and discipline. It relaxes me,\" Heredia said.",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SPRING",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "38",
+    "page_number": 38,
+    "word_count": 309,
+    "article_char_count_full": 1810,
+    "article_char_count_review": 1810,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

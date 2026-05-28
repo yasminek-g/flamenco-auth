@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1994-01-21-left-homenaje-a-f-lix-de-utrera",
+    "article_text_for_review": "Parece que se está entrando en razón al sopesar lo oportuno que resulta homenajear a un artista en vida. Atrás han de quedar los reconocimientos debidos a los que han fallecido, y son la historia y la literatura las que darán cuenta de una trayectoria artística famosa.\n\nAsí lo han entendido un grupo de cabales aficionados madrileños entre los que se encuentran José Blas Vega, Balbino Gutiérrez y Miguel Espín, organizando en Madrid —al producirse su retiro de los escenarios por enfermedad— un homenaje a Félix García Vizcaíno «Félix de Utrera». El mismo tuvo lugar en el «Club de Música y Jazz San Juan Evangelista», el pasado veintiuno de enero del presente año.\n\nDe esta manera se reconocían los méritos artísticos de un profesional que ha venido desarrollando una tarea flamenca a lo largo de más de cincuenta años, y de la cual se pueden destacar las cinco vueltas que ha dado al mundo con espectáculos flamencos, la grabación de más de trescientos discos de larga duración, acompañando a todas las figuras de esta y otras épocas de nuestro arte, la participación en varias películas, su presencia en numerosos programas de televisión y la composición de gran número de letras flamencas.\n\nA «Félix de Utrera» le ha llegado la hora del retiro; del retiro físico que no espiritual, del retiro impuesto por la enfermedad que no por la afición, de un tenerse que ir sin querer. Las traicioneras punzadas de su espalda han ido aprisionando —a través de una hernia discal en las cervicales— la sensibilidad y la inspiración de unos nervios que daban alas a sus manos y «jonda» musicalidad a su guitarra. Unas manos que han sabido bus-\n\ncar las adecuadas vereas por las cuales habían de caminar los duendes flamencos.\n\nEran las diez de la noche cuando su amigo Balbino Gutiérrez, en el escenario del Club de Música del Colegio Mayor San Juan Evangelista de Madrid, reconocía los méritos de este artista con las siguientes palabras:\n\n«Son pocas las ocasiones que tenemos los aficionados al flamenco de brindar un homenaje a un artista vivo; la mayoría de las veces se celebran festivales \"in memoriam\" de tal o cual figura desaparecida. En otros casos, ni siquiera eso, sólo el silencio».\n\n«A lo largo de sus cincuenta años de vivir por y para la guitarra, Félix García Vizcaíno ha sido testigo y eslabón destacado de la historia flamenca de este siglo; fue discípulo y compañero de los grandes maestros y ha presenciado y presencia los nuevos rumbos y la savia joven del momento».\n\n«Por problemas de salud hace tiempo ya que Félix no puede dejar oír su veterana sonanta; él ya no puede tocar para el cante, ni el baile; pero son muchos los compañeros de profesión que hoy han querido tocar, cantar y bailar para que él los vea y escuche».\n\nA partir de aquí, Manuela, hija de Félix, acompañada por las guitarras de Muñeco y Manzano, así como por el cante de Manuel el Flecha, abría por alegrías un largo y «jondo» espectáculo que duraría hasta pasadas las dos de la madrugada, y en el que participaron Carmen Linares, Chaquetón, El Flecha, Enrique Morente, Gabriel Moreno, José Menese, José Mercéy Juan Valderrama, al cante. Alejandro Manzano, El Niño del Tupé, El Muñeco, Enrique de Melchor, Jerónimo Maya, José María Pardo, Juan Carmona «Habichuela», Rafael Riqueni y Víctor Monge «Serranito», pusieron su enorme granito de arena con sus guitarras. Antonio Canales y la citada Manuela, hicieron lo propio con su baile. La presentación corrió a cargo del nombrado Balbino Gutiérrez, de José María Velázquez, Eduardo Márquez, Nicolás Dueñas, Eduardo Padrero y Fernando Quiñones. La anunciada presencia de Paco de Lucía no pudo hacerse realidad por motivos profesionales, como justificó el artista con el envío de un telegrama.\n\nEl acto estuvo patrocinado por la Sociedad General de Autores de España, la Universidad Complutense, la Sociedad de Gestión de España-Artistas Intérpretes o Ejecutantes, la Casa Gaditana en Madrid y la Junta de Andalucía. La labor organizadora la desarrollo Alejandro Reyes, director del Colegio San Juan Evangelista, y un numeroso grupo de personas ligadas a la entidad universitaria.",
+    "title": "Homenaje a Félix de Utrera. Una historia de la guitarra flamenca",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-21",
+    "page_number": 21,
+    "word_count": 687,
+    "article_char_count_full": 4113,
+    "article_char_count_review": 4113,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-01-22-left-avez-vous-vu-dans-barcelone",
+    "article_text_for_review": "«A vez-vous vu dans Barcelone..?» —preguntaba el poeta— Avez-vous vu dans Barcelone une andalouse au sein bruni?, preguntaba Alfred de Musset. Pregunta que ha sido invariablemente acogida por la risita suficiente de nuestra gente, que la ha erigido en ejemplo-tipo de una seudo-deformación mental de los sedientos de pintorescos ultrapirenaicos. Pues bien nuestra gente yerra una vez más...».\n\nCon este párrafo iniciaba el excelente crítico Sebastiá Gasch el artículo que publicaba Mirador, 21 de mayo de 1931, en el que propone un recorrido apasionado —impagable fuente de información— por los locales flamencos de la Ciudad Condal para demostrar la inconsistencia de las risitas irónicas. Aún hoy día hay quien también ríe con suficiencia despreciativa cuando se habla de flamenco en Cataluña. Son quienes más alejados se encuentran de los movimientos culturales, quienes viven anclados en la nostalgia de lo que antes fue, quienes tienen mitificados unos cuantos elementos exclusivamente como símbolos de la cultura catalana, quienes no se han enterado aún de que la cultura es viva, dinámica, cambiante y mestiza.\n\nAún no se han enterado de que Cataluña ha sido, y es, crisol de culturas. Aún no saben que las Ha-baneras y la Rumba Catalana, por ejemplo, no son originariamente catalanas. Aún no se han enterado de que el introductor de la tenora en la sardana, José María de la Purificación Casas, «Pep Ventura» es andaluz. Aún no han descubierto que en Cataluña acaba de juntarse\n\nla mejor generación flamenca de Cataluña. Aún no han sabido ver que el otoño más activamente flamenco es el catalán.\n\nBueno sería que se informasen mejor, corrigieran su actitud y solucionaran su ignorancia. En caso contrario deberemos seguir manteniéndolos castigados de cara a la pared. Nosotros, no obstante, perseveraremos en nuestro propósito de ayudarles para que superen su actitud cerril y su desconocimiento montaraz.\n\nOctubre fue el mes de Antonio Mairena. Su peña de L'Hospitalet celebra su veinticinco aniversario, otra peña más de Cataluña que alcanza su primer cuarto de vida, organizaba su ciclo cultural y su XI Festival Flamenco Memorial Antonio Mairena en homenaje al recordado Curro Mairena. La ciudad de L'Hospitalet aún vivió más acontecimientos flamencos durante el otoño: El certamen de guitarra «Ciutat de L'Hospitalet», de la Tertulia Flamenca y «La Sartén de los\n\nDesinteresadamente les ofrecemos unos cuantos datos para que tomen buena nota. Nada más volver de las vacaciones echó a caminar el V Concurso de los Cantes de Málaga, este año en homenaje a «El Perote», organizado por la Asociación de «Hijos de Almáchar, de Cornellá». El primer premio lo conquistó brillantemente la jovencísima cantaora malagueña Virginia Gámez. En los días del concurso se presentaba el libro de letras flamencas premiadas en las seis primeras ediciones del concurso internacional que convoca anualmente «Hijos de Almachar, de Barakaldo». Pestiños», primer certamen de Villancicos Flamencos organizado por la Casa de Ecija.\n\nEn el certamen de guitarra se inscribieron 18 guitarristas, acudieron finalmente 14 concertistas de toda España con la esperanza de volverse a su casa con las seiscientas mil pesetas del primer premio, el precioso trofeo y la magnífica guitarra construida expresamente por Francisco Montero para premiar el mejor toque por bulerías. El madrileño Pablo García Palomo fue el afortunado triunfador. Diego Garrido lo fue de los villancicos. Un concurso que «pretende recuperar distintos estilos de villancicos flamencos en vías de desaparición, se valorarán, además de la calidad de interpretación, el trabajo de investigación para aportar antigüedad, originalidad, rarezas, etc., de los distintos estilos flamencos de nuestros cantes de Navidad más en peligro de perderse».\n\nAl mismo tiempo, prácticamente todos los sábados y domingos se celebraban veladas flamencas en las distintas peñas. El Rincón Flamenco de la Casa de Andalucía de Barcelona impartía cada jueves su programa didáctico del Flamenco. La Peña de Cerdanyola celebraba sus Jornadas Culturales Flamencas: El «Taller de Músies» ofrecía quincenalmente recitales de Maite Martin y Miguel Poveda. La Peña Flamenca de Manlleu celebraba su concurso de cante Candil y la FECAC el Yunque Flamenco.\n\nEl certamen de la Federación de Entidades Culturales Andaluzas es, sin duda, el más importante de Cataluña y uno de los más significados de cuantos se celebran. Como características principales tiene su carácter itinerante, cada semana celebra una fase en una población distinta, Cardona ha sido este año la localidad más alejada de Barcelona que ha acogido una de ellas, y en palabras de su coordinador Rafael Morales, «la búsqueda de cantaores de fondo, cantaores generales, todo terreno. A juicio del jurado presidido por Gonzalo Rojo, de esta novena edición ese cantaor ha sido Juan Delgado. El segundo clasificado, por tanto, también el cantaor de Cataluña mejor clasificado, fue Antonio Heredia y Chiquí de la Línea el tercer premio.\n\n¿Hay quién dé más? Pues sí; las Entidades Flamencas y Andaluzas del Baix Llobregat y de L'Hospitalet que unieron una vez más sus esfuerzos para organizar el 2.º Festival «Flamencos Solidarios» con el propósito de ayudar a paliar la difícil situación económica por la que atraviesa la familia de un antiguo y querido aficionado.\n\n«Avez-vous vu dans Barcelona…?». Es precisamente en esta ciudad y en sus periferias de cemento y hormigón donde la frase de Musset adquiere un grosor considerable de verosimilitud y de exactitud. Quien así no lo vea está ciego o falto de la más mínima sensibilidad.",
+    "title": "Avez-vous vu dans Barcelona...?",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 878,
+    "article_char_count_full": 5610,
+    "article_char_count_review": 5610,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-01-23-left-precocidad-con-solera",
+    "article_text_for_review": "Correspondal / Madrid\n\nN o podemos por menos que, en principio, saludar con alborozo la irrupción en el mundo de nuestro Arte Flamenco de Carlitos Cruz. Suponemos que el lector tendrá noticia de cómo asombró a propios y extraños echándose «p’alante» a cantar sin micrófono nada menos que en el Palacio de los Deportes de Madrid a donde había acudido con su padre, de salida para acompañarle en el grupo familiar con el que Carlos interpreta una particular versión flamenca de antiguas cantigas sefarditas que, dicho sea de paso, también gustaron mucho al respetable.\n\nEl éxito del niño —¡sólo seis años!— fue total. Y no se trata sólo de que tenga fuerza y brío en su voz. Su sentido del compás y la forma de recogerse y quejar la voz constituyen aspectos aún más sobrecogedores. ción que en su casa se ha vivido siempre para el arte flamenco; Juan Cruz hijo, corresponda de Candil en Granada, filósofo, hombre de teatro y aficionado por los\n\nPero, claro, no hay por qué exagerar y estar dispuesto ya a asegurar que estamos ante alguien que será, indiscutiblemente, figura el día de mañana. Y ello por la misma razón que causa tanto asombro su forma actual de cantar. Obviamente por su cortísima edad. El niño habrá de seguir su desarrollo y evolución en todos los aspectos de su formación educacional. Y en cualquier momento —¿por qué no?— puede interesarle sobremanera, pongamos por caso, la química.\n\nPero el alborozo está justificado por lo que el hecho tiene de significativo. Conocemos a la familia Cruz. Afortunadamente vive el abuelo Juan, patriarca innegable de la afición o, mejor quizá, venera-\n\nte, puro y luchador en defensa de esa manera de entender el cante que hace que el buen aficionado sepa valorarlo sin duda, pues la calidad enorme de su cante no sería\n\ncuatro costados, conocedor del cante y ejecutor a veces inspiradísimo en reunión; sabemos de aquella Paqui Cruz a la que Dios llamó muy pronto y que era un portento de artista, y César Cruz, el más joven pero no el menos cabal. Y, claro, el padre de la criatura, nuestro amigo querido, y admirado cantaor Carlos Cruz. Un cantaor recio, serio y de línea nada vacilan-\n\nnada justo intentar medirla por el número de festivales o cosas por el estilo. Es en el seno de la familia, al lado de su padre, como Carlitos habrá sentido el impulso y ha comenzado el aprendizaje por tan buen camino.\n\nPero, es preciso llamar la atención acerca del cuidado que —a buen seguro Carlos lo hará así—hay que poner en el caso. Carlitos\n\nes todavía un niño. Hoy los jóvenes flamencos buscan —con desigual acierto, pero hacen bien en intentarlo— nuevos caminos. No estaría de más que miraran el ejemplo del niño Carlitos Cruz. Porque empezar a conocer el origen, la raíz, con seis añitos cantar por la Niña en los tangos, cantiñas y alegrías donde el buen catador puede encontrar ecos de Aurelio y Pericón, fandangos del de la Calzá..., eso es empezar bien. Sin esos conocimientos malamente se podrá hacer ir al cante por vereas nuevas que merezcan la pena.\n\nSuerte Carlos, suerte con Carlitos al que suponemos ahora durante el curso muy aplicadito en su escuela. Y a esperar, que a juzgar por las muestras puede haber mucho cante en el pecho de ese niño. Y nosotros que lo veamos.",
+    "title": "Precocidad con solera",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 565,
+    "article_char_count_full": 3234,
+    "article_char_count_review": 3234,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-01-24-left-flamenca",
+    "article_text_for_review": "Nos encontramos con un nuevo trabajo de Juana Silva Esteban «Juana la del Revuelo», en el que vuelve a patentizar su adaptabilidad para desarrollar con un marcado compás los estilos festeros de tangos y bulerías. La gracia innata de su arte, complementada con la singular tonalidad de su voz, le dan auténtica frescura a la serie de grabaciones que conforman este «A Compás», quizás el título más adecuado por el desarrollo que de los diversos palos festeros realiza la cantaora trianera. No en vano, su buen hacer en estos cantes quedó demostrado al conseguir el premio de Mairena del Alcor por bulerías.\n\nSin embargo, al escuchar con detenimiento las ocho grabaciones, se aprecia que las líneas generales de los arreglos musicales, aunque aportan determinado dinamismo y un enfoque muy particular de darle la entrada a la cantaora, quizá con el interés de acrecentar su difusión y venta, muestran una cierta marginación de la bella sonoridad de las guitarras flamencas, por cierto bastante brillantes para efectuar el\n\ntoque que la del Revuelo demanda. No quiero pecar de ortodoxo —aunque a veces ese defecto o virtud? me orienta sobremanera en los análisis— y caer en la cuenta de que todo lo adicional a nuestro arte es antiestético; pero he de insistir en que dichos arreglos no ayudan al lucimiento de la cantaora y las guitarras, por tal motivo, desarrollan un acompañamiento que a veces resulta bellamente monótono. Tal circunstancia desluce el personal «ángel» que Juana posee para comunicar con su público y entablar así el diálogo flamenco.\n\nP or otra parte, la grabación nú- mero siete nos redescubre a un Martín Revuelo cantaor. Pienso que el antiguo artista —así lo de- muestra en cada uno de los festi- vales en los que acompaña a su cónyuge— no ha dejado de sus- traerse a la demanda del duende flamenco y ha querido dejar cons- tancia de que su garganta aún tie- ne cierta fuerza para acometer unos tangos que nos extrapolan al año setenta y cuatro y a sus tan- gos de La Cachala, con cierta mo- dernidad. ALREO de la FIESTA GITANA",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 350,
+    "article_char_count_full": 2048,
+    "article_char_count_review": 2048,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-01-24-right-alre-de-la-fiesta-gitana",
+    "article_text_for_review": "Dibujos de Miguel Alcalá del libro «Le Flamenco et les gitans», Editorial Filipacchi, París, Francia, reproducidos bajo licencia del autor.\n\n12\n\nTextos de Manuel Martín Martín\n\nTía Anica la Piriñaca.—Ana Blanco Soto (Jerez de la Frontera, 1899 - Jerez de la Frontera, 1987). Hija de José el Piriñaco y de Josefa Soto, era una gitana «entreverá» —tenía un octavo de sangre calé— y encontró entre sus convecinos gitanos el ambiente propicio para su expresión flamenca. Las heridas incontenibles de Paco la Malé, la densidad de Juanichi el Manijero y su hermano El Titi o la queja más sentida de su maestro, Tío José de Paula, dieron el fuego purificador que se fundió en sus entrañas. Gracias a Antonio Mairena, la hermana del Enano y El Gachó, es reconocida como santo y seña de las siguiriyas de su tierra. Se sentía como gitana y repitió hasta la saciedad el objeto de sus cantes: «cuando canto a gusto, me sabe la boca a sangre». Juan Morao.—Juan Moreno Jiménez (Jerez de la Frontera, 1935). Hijo del cantaor no profesional Morao Viejo y de la bailaora La Mahora. Es hermano del también guitarrista Manuel Morao, jerezano universal, y padre de Moraíto Chico, hoy una de las guitarras más solicitadas. La textura de su música, de honda humildad y basada en el sentimiento, ha cruzado las fronteras más dispares con rotundo éxito, poseyendo toda ella un jovial vigor y una embriagadora melodía. Retirado con cierta celebridad en su Jerez natal, ha legado un rico caudal de belleza en el acompañamiento. Al tiempo presente saborea los triunfos de la rama que al tronco sale.\n\nManolo Jero.—Manuel Carrasco Jiménez (Jerez de la Frontera, 1929 - Jerez de la Frontera, 1992). Conocido también como El Gitano Blanco, de cuando figuró en la compañía de Imperio de Triana, trabajó con El Güiza, Pepe Albaicín, Maleni Loreto y El Chocolate, hasta dedicarse al cante y al baile en las fiestas íntimas de su localidad natal, preferentemente junto al Tío Borrico y El Batato en la Venta Los Cuatro Muleros. Ya retirado, evoca en sus conversaciones de qué manera influyó su maciza personalidad en sus soleares, fandangos y bulerías. Casado con Luisa Romero Pantoja, es padre de ocho hijos, entre los guitarristas Periquín y Antonio Jero, y Manuel, bailaor no profesional.",
+    "title": "Alreó de la fiesta gitana",
+    "periodical": "candil",
+    "issue_id": "1994-01",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-27",
+    "page_number": 24,
+    "word_count": 380,
+    "article_char_count_full": 2258,
+    "article_char_count_review": 2258,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

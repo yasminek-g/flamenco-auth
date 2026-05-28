@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-05-23-left-gabriel-diaz-fernandez-macande",
+    "article_text_for_review": "Selecciona: Rafael Valera\n\nGabriel Díaz Fernández «Macandé», nació un 9 de julio del siglo pasado, concretamente del año 1897. Y fue en Cádiz, en el número 9 de la actual calle del Paraguay, en el barrio de la Viña, recibiendo el bautizo en la cercana parroquia de San Lorenzo; siendo, posteriormente, vecino del barrio de Santa María.\n\nDe madre gitana (Fernández Heredia eran sus apellidos) heredó de ésta el rajo gitano que supo imprimirle a sus interpretaciones por diversos estilos. «Macandé» desarrolló una vida patética, llena de vicisitudes, enfermedades y miseria. Desempeñó varios oficios bastantes humildes en su Cádiz natal, en Málaga, en Algeciras, en La Línea de la Concepción, en Ceuta, en Sevilla y en otras ciudades, siendo el más señalado de estos el de vendedor público de caramelos.\n\nSegún Eugenio Cobo Guzmán, quien ha sabido profundizar y hacer un auténtico retrato de este artista gadi-tano, su apelativo artístico debe de datar del año 18 del presente siglo y lo expresa de la siguiente forma: «Macandé es una palabra que utilizan los gitanos extremeños para significar “loco”, “chalado”. A raíz de llevar Gabriel ese apodo se popularizó bastante el término en expresiones como “estás más loco que Macandé”, o, simplemente: “estás Macandé”».\n\nFue vendiendo caramelos como conoció en Vejer a su mujer, Encarnación, la cual era muda. Tuvieron dos o tres chiquillos, los cuales nacieron mudos como la madre, circunstancia que hizo que «Macandé» se trastornara de tal manera que ya nunca pudo recuperarse. Encarnación, por éstas y otras circunstancias, fue una auténtica víctima de «Macandé», a quien, a pesar de las vicisitudes y sufrimientos, adoraba con auténtica devoción.\n\n«Macandé» ingresó, en 1935 —según Fernando Quiñones—, en el Manicomio Provincial de Cádiz donde murió de tuberculosis a los cincuenta años, el 4 de diciembre de 1947; al decir de Manolo Caracol —siempre según Quiñones—, que lo trató y que lo visitó en su triste encierro de loco, durante sus últimos tiempos, «Macandé» disponía de una voz hermosísima y de gran eco gitano.\n\nSu vida vagabunda y de vendedor de caramelos, le permitía meter en cante, con especial brillantez, sus célebres y melodiosos pregones: A la salía de Asturia\n\ny a la entrá de la Montaña\n\njago yo mis caramelos\n\npa venderlos en toa España...\n\nSi tú los quieres de menta,\n\nyo los tengo de limón!\n\nY toda una larga y graciosa retahila de nombres de toreros de la época, así como de jugadores de la Balona, de La Línea de la Concepción.\n\nContinua Fernando Quiñones en su libro: «De Cádiz y sus cantes», que: «El cante de Macandé, que interpretaba todos los géneros gitanos y fue un eminentísimo cantaor de fandangos, muy suyos, y saetero; así, y puesto que lo que hacía en el trabajo y fuera de él, Macandé se pasó la vida cantando. Quizás como una venganza contra el constante, trágico silencio de su casa y de su familia, mudos de nacimiento la mujer y dos hijos...». A decir de Luque Navajas: «Era un artista genial, extravagante, de unas aptitudes de cantaor insuperables». Por otra parte, Pricon de Cádiz dice de él: «Era un gitanillo que había en Cádiz con un eco de voz que yo no se lo he oído a nadie, y luego era tan chico, tan menúo, tan negro, que cuando sacaba el eco aquel, uno decía: “Pero bueno, ¿de aónde saca el gitano este la voz?”. Y nunca se ponía ronco: a lo mejor se tenía que estar veinte horas cantando en una fiesta, salía, lo llamaban pa otra y cantaba tan tranquilo como si estuviera nuevo».\n\n«Macandé» detestó el profesionalismo. No aceptaba que le pagaran su arte. Una ejecución suya, interrumpida en Ceuta por tal causa, le costó su salida de la ciudad, después de cantar una saeta maravillosa, entre el entusiasmo del público acumulado, «Macandé» fue requerido por el general Sanjurjo para cantarle otra, lo que se dispuso a hacer de buen grado, hasta que le pusieron en las manos veinte duros, que él rechazó enojadísimo, llegó a empezar la saeta, pero la desazón le duraba, puesto que se le insistía en que aceptase el dinero, con que dejó de cantar después del primero o el segundo tercio; el asunto y la incomodidad fueron a más y a más: «Macandé» fue expulsado de Ceuta.\n\nFue gran intérprete de siguiriyas, soleares, tangos, bulerías, etc., recordándosele en Málaga como genial intérprete de tonás.",
+    "title": "Gabriel Díaz Fernández «Macandé»",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 730,
+    "article_char_count_full": 4299,
+    "article_char_count_review": 4299,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-05-23-right-antonio-mairena-galardonado",
+    "article_text_for_review": "A noticia ha saltado a la prensa y ha merecido el caliente comentario de Félix Grande, amigo y enorme aficionado: el Rey Juan Carlos ha entregado la medalla de oro de Bellas Artes a esa cabeza de estirpe de toda la gran familia gitana española, Antonio Mairena. El maestro de Mairena del Alcor constituye ya un hi-to histórico en la memoria del flamenco. Sin duda, con él se ha operado la síntesis más importante de lo jondo. En tiempos venideros se dirá, para localizar en el tiempo a un cantaor o a un cante, si fue antes o después de Antonio Mairena. A través de él, nos ha llegado el grito o la dentellada de todos los viejos siguiriyeros, los ecos remotos y venerados de un Tío Luis el de la Juliana, del Planeta, del Mellizo, de Silverio... Todos los que alguna vez nos hemos estremecido, nos hemos apaciguado o hemos muerto un poco, ante la rememoración de un cante antiguo, le debemos esta inigualable experiencia al maestro que tan justamente ha sido ahora distinguido por la más alta Magistratura del País. Ello, con ser de tremenda relevancia, no constituye el aspecto más destacable de la noticia. Como señala brillantemente Félix Grande en su trabajo titulado: «El suntuoso rumor de su memoria», ha sido un ilustre descendiente, el Rey D. Juan Carlos, de otros monarcas como Carlos III, el que ha hecho entrega del galardón a don Antonio Mairena. Quienes hemos investigado toda la normativa represiva y opresora que se dicta en este país, a partir del reinado de los Reyes Católicos, quienes hemos leído con estupor pragmáticas y disposiciones, sancionadas por numerosos monarcas españoles, que imponían la penalidad de la pérdida de una oreja o de un dedo y hasta la misma muerte a los gitanos que conservasen sus vestidos y que fuesen fieles a su propia identidad, quienes conozcan el escarnio y la persecución de que ha sido objeto este pueblo, tiene que conmoverle esta noticia por el significado profundo que entraña el otorgamiento de esa distinción. En reiteradas ocasiones hemos subrayado que la presente época marca un hito histórico, desde el instante en que de forma indubitada se ha hecho patente el respeto de las Instituciones por el Flamenco; y en la medida en que a los gitanos corresponde, significa el reconocimiento de los errores secularmente cometidos contra una comunidad mortificada, y da comienzo una reparación social y moral hacia un pueblo desgarrado, hacia un arte, expresión acaso la más estremecedora que pueblo alguno haya alumbrado.\n\nEnhorabuena, Maestro.\n\nSaluda a todas las peñas flamencas\n\nVIRGEN DE LA CAPILLA, 13 TELEFONO 253008 ___ JAEN",
+    "title": "Antonio Mairena, galardonado",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 436,
+    "article_char_count_full": 2587,
+    "article_char_count_review": 2587,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-05-24-left-placas-de-artistas-flamencos",
+    "article_text_for_review": "CORRUCO DE ALGECIRAS\n\nPor Manuel Yerga Lancharro",
+    "title": "Discografía (placas) de artistas flamencos Corruco de Algeciras",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 7,
+    "article_char_count_full": 48,
+    "article_char_count_review": 48,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-07-3-left-editorial",
+    "article_text_for_review": "EDITORIAL\n\nS E encontraba ya en prensa este nuevo número de nuestro empeño periódico, corregidas las pruebas y una editorial que rememoraba el nacimiento de una personalidad injustamente relegada al olvido, gran literato humanista y original estudioso de la copla andaluza: Rafael Cansinos Assens. Y he aquí que salta la noticia luctuosa; el maestro ha muerto. No nos importó que esta entrega de «CANDIL» fuera la correspondiente a los meses de julio-agosto y que el fallecimiento del entrañable Antonio Mairena se produjera una tarde —ya histórica— del mes de septiembre. Pese a tal descabalamiento, «CANDIL» ha querido hacerse eco de la terrible noticia, expresar su sincerísimo dolor y unirse a la rememoración de quien, sin duda, ha sido uno de los más grandes cantaores de este siglo.\n\nCon ocasión del X Congreso de Actividades Flamencas, «CANDIL» tributó al maestro desaparecido el modesto homenaje de dedicarle un número monográfico de nuestra revista, en cuya presentación Antonio Mairena expresó generosamente su reconocimiento a nuestro sencillo esfuerzo. Es esa una de las más consoladoras satisfacciones que al equipo de esta revista le cabe, en este momento, y, especialmente, a quien ostentó, en aquel instante, la responsabilidad y coordinación de este trabajo —Manuel Urbano— que ya es obligada referencia para los futuros biógrafos del maestro de los Alcores. Sabemos que resta mucho por decir de Antonio Mairena y que su enorme figura se irá engrandeciendo con la perspectiva de años venideros. Ahora sólo nos cabe testimoniar a los lectores y simpatizantes de «CANDIL» nuestra condolencia por esa ausencia irreparable, publicando en este mismo número dos preciosos ensayos de Antonio Mairena, y no será esta la última vez que nos acerquemos con devoción al venerado maestro. Descanse en paz quien nos deja, por fortuna, el hermoso legado de todos los duendes jondos.",
+    "title": "EDITORIAL",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 297,
+    "article_char_count_full": 1885,
+    "article_char_count_review": 1885,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-07-7-right-andres-segovia-linarense-univers",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor J. A. Pérez-Bustamante\n\nParece fuera de toda duda que también la jiennense revista «CANDIL» le dedique a su paisano, que es, además, Hijo Predilecto de Linares, Ilustre de Jaén y Adoptivo de Granada, unas breves líneas de homenaje y felicitación, al igual que ya lo han hecho diversas corporaciones españolas y extranjeras.\n\nE L 21 de febrero del presente año, el irrepetible maestro linarense ANDRES SEGOVIA, sin lugar a dudas el más grandioso guitarrista de todos los tiempos, ha rebasado el listón de longevidad de los 90 años, cota biológica intrínsecamente ya muy respetable, que lo es mucho más aún habida cuenta del envidiable estado de ánimo, salud, actividad, iniciativa y afán de vivir que impregna la personalidad del admirado y venerable maestro.\n\nEfectivamente, para ANDRES SEGOVIA\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_02 | trigger=\"reconocimiento\"]\n\nos 90 años, cota biológica intrínsecamente ya muy respetable, que lo es mucho más aún habida cuenta del envidiable estado de ánimo, salud, actividad, iniciativa y afán de vivir que impregna la personalidad del admirado y venerable maestro. Efectivamente, para ANDRES SEGOVIA el año 1983 constituye un año de especial y jubilosa significación ante el crecido número de entrañables homenajes de que ha sido objeto su persona, como más que justificado reconocimiento a su incommensurable labor y prolífica actividad artística, que a lo largo de tres cuartos de siglo ha conseguido para la guitarra un sitial de primera fila, en plano de absoluta igualdad con instrumentos solistas tan tradicionalmente consagrados como lo son el piano, el violín y el violoncelo; todo ello le ha resultado posible al maestro gracias no sólo a su indiscutible genialidad, sino también de modo muy notorio, gracias a su tesón, perseverancia, iniciativa, así como a su sensible y acertada intuición acerca de las auténticas posibilidades de la guitarra como instrumento de concierto. El virtuosismo de ANDRES SEGOVIA no se circunscribe únicamente a su impecable ejecución técnica, ni a su insólita musicalidad y capacidad interpretativa; por el contrario, aparte de desarrolla\n\n[ENDING CONTEXT]\n\nespañol de convicción y evangelista universal de la guitarra, cuyo patriótico espíritu benefactor lo demuestra bien claramente el hecho de que desde el año 1952, año en que se reintegra esporádicamente a España, todos sus conciertos en nuestro país los ha dado el maestro, sin excepción, a título benéfico.\n\n¡Quiera Dios seguir regalándonos por muchos y largos años la presencia y el placer de seguir contando con el maestro SEGOVIA, en la misma forma en que se halla y le disfrutamos actualmente!\n\nCONSTRUCCIONES\n\nCRUZ GARCIA\n\nOBRAS EN GENERAL\n\nPOLIGONO «LOS OLIVARES»\n\nCALLE ALCAUDETE, 10\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANDRES SEGOVIA, LINARENSE UNIVERSAL, SIGUE EN ACTIVO A SUS NOVENTA AÑOS",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-8",
+    "page_number": 7,
+    "word_count": 1787,
+    "article_char_count_full": 11284,
+    "article_char_count_review": 2890,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "reconocimiento"
+      }
+    ]
+  }
+]
+```

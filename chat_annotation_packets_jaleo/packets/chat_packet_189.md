@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_03::A13",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby John E. Philpott, Ph.D. Stradivari was a chemist! (So proclaims the American Chemical Society) \"Better music through chemistry\" is what the cover article of Science 84 announces. And so it is. Recently through the diligent efforts of Biochemistry Professor Dr. Joseph Nagyvary, the 350 year old secret that went to the grave with the Cremona Masters (notably: Stradivari, Guarnari, and Amati) has been rediscovered. Combine the talents of both Dr. Nagyvary and those of master luthier, Thomas Blackshear, and the results are a flamenco guitar with the \"Strad sound.\" Recently here in San Antonio the guitar had its world premiere before an astonished audience. The raw power of the instrument, then just 10 days after completion, was overwhelming. Imagine hearing the sound as brilliant as day in\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"practice\"]\n\nhas been rediscovered. Combine the talents of both Dr. Nagyvary and those of master luthier, Thomas Blackshear, and the results are a flamenco guitar with the \"Strad sound.\" Recently here in San Antonio the guitar had its world premiere before an astonished audience. The raw power of the instrument, then just 10 days after completion, was overwhelming. Imagine hearing the sound as brilliant as day in the back of a 450-seat auditorium while being practiced upon in a backstage dressing room one door and two additional walls away. It happened. Subsequently, \"El Curro\" Champion had an opportunity to become acquainted with the Gran Maestro Mirabile Guitar, as it is referred to, and found that his amplification system was not needed. In fact, the sound carried 30 feet beyond the concert hall. Photographer Herb Uecker (whose photographs accompany this article) remarked that the sound was analogous to a laser beam, as compared to a flashlight. That basically sums up just what has taken place. The tone is extremely clear, and the process gives it not additional volume, but rather incredible carrying power, along with a very rich tone. A TRIO OF BLACKSHEAR GUITARS, THE GMM IS IN THE CENTER FLANKED BY TWO \"CONTROL\" INSTRUMENTS Published details of Nagyvary's process indicate that the secret has several elements to it. Naturally, quality design and craftsmanship are most important (amplified trash is still trash). The main breakthrough\n\n[ENDING CONTEXT]\n\nhis constructing an instrument for you, he can be reached by writing to David H. Spivak at R.D. 1, Box 418, Emmaus, PA 18049, U.S.A. I am: Howard S. Hoffman Professor of Psychology Bryn Mawr College Bryn Mawr, PA 19010 CATALOGUE OF MODERN FLAMENCO RECORDS A collection of flamenco records from the modern era (1972-82), representing most of the important artists and including a number of unusual and rate items. Each record is described in detail and given a brief critical review. A tape library will make these records available. SEND $4.00 TO: PACO SEVILLA, 2958 KALMIA ST. SAN DIEGO, CA 92104\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO GOES STRADIVARIUS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1119,
+    "article_char_count_full": 6682,
+    "article_char_count_review": 3075,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "practice"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_03::A14",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nROSA MONTOYA BAILES FLAMENCOS Rosa Montoya's Bailes Flamencos presents their Tenth Anniversary Concert season in San Francisco with guest artist Cruz Luna, Flamenco dance master, on Thursday-Saturday May 24-26, 1984, 8:30 PM, at Footwork Studio, 3221 Twenty-Second Street (at Mission Street) and on Sunday, May 27, 1984, 2:00 PM at On-Broadway Theatre in North Beach at 435 Broadway. For information and tickets, call 415/824-8844. Three premiere works will be performed. \"El Polo,\" choreographed by Rosa Montoya, is a Classical Spanish Dance based on Gypsy rhythms of \"Bulerias\". The music by Isaac Albéniz was first conceived for piano and later orchestrated. \"La Torre Del Oro,\" choreographed by Cruz Luna, is based upon the Moorish temple, La Torre Del Oro, which is by The Guadalquivir in\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"Classic\"]\n\nth Beach at 435 Broadway. For information and tickets, call 415/824-8844. Three premiere works will be performed. \"El Polo,\" choreographed by Rosa Montoya, is a Classical Spanish Dance based on Gypsy rhythms of \"Bulerias\". The music by Isaac Albéniz was first conceived for piano and later orchestrated. \"La Torre Del Oro,\" choreographed by Cruz Luna, is based upon the Moorish temple, La Torre Del Oro, which is by The Guadalquivir in Seville. This Classical Spanish Dance is performed to music by Palacios Jiménez. \"Tangos\", choreographed and performed by Ms. Montoya, is a traditional flamenco dance of Southern Spain. Rosa Montoya is the only Spanish Gypsy Flamenco dance artist residing in the United States. She was born the niece of Carlos Montoya, Maestro of Flamenco Guitar, in Madrid, Spain. This year, Bailes Flamencos and Carlos Montoya performed together for the first time to a sold-out audience at the Sacramento Community Center Theatre. Ms. Montoya has toured in Asia, Europe, Australia and the Americas. While in the United States, Ms. Montoya performed at Lincoln Center, Carnegie Hall, Boston Opera with Sarah Caldwell, and San Francisco Opera with Beverly Sills. Cruz Luna performed with Flamenco Dance Masters Tarriba and Luisa Triana in Mexico and the United States. He has toured in Spain, Japan, London, South America, Hawaii, and Aus\n\n[ENDING CONTEXT]\n\nsinging, directing, play and screenwriting, enabling people in the community to take advantage of training and classes offered at a reasonably small fee.\" Dance Español Incorporated Proudly Presents The Juan Talavera Spanish and Flamenco Dance Workshop For Beginner and Intermediate Dance Students base Call (213) 699-9855 For Detail Supreme strings designed for today's finest classic and flamenco guitars At your local dealer or contact Antonio David Inc., 204 West 55th Street New York, NY 10019 USA Tels. (212) 307-1567 • 757-4412 or 3255 THIS SPACE RESERVED FOR YOUR AD FOR INFORMATION WRITE:\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "14-16",
+    "page_number": 14,
+    "word_count": 2659,
+    "article_char_count_full": 16324,
+    "article_char_count_review": 2981,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "Classic"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_03::A15",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n2 CENTURIES WITH PILAR RIOJA (From: $ \\underline{\\text{The Washington Post}} $, March 9, 1984) by Jennifer Dunning The dance in Spain has a rich and distinctive history. It is, to a large extent, a buried history. But \"Teoría y Juego del Duende\" (\"Theory and Play of the Deunde\"), a program spanning two centuries of Spanish dance, performed by Pilar Rioja on Wednesday at the Repertorio Español's Gramercy Arts Theater, provided tantalizing glimpses of its traditions. It was also an evening of beautifully produced and muanced theater. Knowing whistles and cheers greeted many of the 11 pieces performed by Miss Rioja, a Mexican-born dancer and choreographer who studied in Spain with such teachers as José Sánchez, Regla Ortega and Angel Pericet. And Miss Rioja's program was also just the thing\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"Classic\"]\n\nd tantalizing glimpses of its traditions. It was also an evening of beautifully produced and muanced theater. Knowing whistles and cheers greeted many of the 11 pieces performed by Miss Rioja, a Mexican-born dancer and choreographer who studied in Spain with such teachers as José Sánchez, Regla Ortega and Angel Pericet. And Miss Rioja's program was also just the thing for those who have given up on Spanish dance as unvariegated thud and clatter. Classical ballet and indigenous folk dancing interweave intriguingly here. The opening, aristocratic, classical bolero section was most notable for Miss Rioja's footwork, which suggested - with her beats, relevé walks and ronds de jambe, and her charming ports de bras and the forward tilt of her torso - period prints of the 19th-century ballerina, Fanny Elssler, in her noted Spanish \"Cachuca\" dance. More familiar Spanish toe and heel beats were introduced in the second ritual flamenco section, whose highlight was the closing \"Sevillanas del siglo XVIII,\" with its antic jumping and frappés. But these were beats of impressive delicacy and dynamic variety. In the closing section of four dramatic flamenco dances, Miss Rioja's hands and fanning, pointing fingers were particularly striking. Did Marius Petipa, the great late-19th-century ballet choreographer who visited Spain and had a fondness for \"national\" dances, adopt the farruca's brusque pointing gestures for his \"Finger Variation\" in the \"Sleeping Beauty\"? Miss Rioja is the sort of performer who lets the viewer into the dance rather than presenting it. Simple but resonant production values enhanced that sense of welcome, from Robert Weber Federico's stark lighting to the telling voices of Chiquito de Triana and Monica Ramirez, as well as guitar accompaniment and poetry read by two actors seated on stage. Fuller program notes would have been helpful. But there was no doubt of the import of the closing siguiriya. Miss Rioja's vibrant column of a torso looked almost elegiac in its alert stillness here, her fluttering hands suggesting the delicate-boned wings of a bird and the train of her somber black dress a bird's plumage. The\n\n[ENDING CONTEXT]\n\nthe vibrant world of Spanish dance, she is teaching the art to students. The school has served as a training ground for company members. Perhaps the best advertisement for her school was the introductory section featuring two students, Marissa Munoz and Andrea Rodriguez. Already this duo has mastered the cocrdination and style that epitomizes Peña's company. PHOTOS FROM 1983 PERFORMANCE AT KENNEDY CENTER ABOVE: SINGER ROBERTO ZAMORA, FERNANDO SIRVENT AND REQUEL PEÑA BELOW LEFT TO RIGHT: MARIA CISNEROS, JUAN VALENTIN, MORA SOLANO (DANCING), SUSANA ARANDA, ROBERTO ZAMORA AND FERNANDO SIRVENT\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "17-19",
+    "page_number": 21,
+    "word_count": 1466,
+    "article_char_count_full": 8935,
+    "article_char_count_review": 3781,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "Classic"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_03::A16",
+    "article_text_for_review": "NEW YORK We have just received the new Jaleo of 1984 and I am sure all aficionados in New York will add their best wishes to those of mine for the success story, \"San Diego Tablao Flamenco.\" Two special people were my guests in the car ride from the Ballroom to Villa del Parral--from the show to the juerga--La Tati and Reynaldo, and they wish you \"suerte\". The Ballroom did make it, as you predicted, and our coverphoto man is the show manager. The phenomenal dancing of La Tati has already stunned audiences; her bodywork, hands and the footwork and her duende and misstance...she is a beautiful person on and off-stage. The fireball from Sevilla (told me that she was born in Madrid) needs an exceptional guitarist to accompany her. Rincon is right there, as is cantaor, Juan José de Alcalá, un otro fenómino. Saturday nights show included Dominico Caro, La Tata, Mariano Parra, Victorio Korjhan, Liliana Lomas, Jorge Navarro. La Tati is giving dance classes in town, so is Victorio. I only wish the two could be presented in one show! The Ballroom also has Scott Jackson Wiley, I believe an ex-pupil of Yepes who is probably the best interpreter of the Spanish classics for guitar. LA TATA AND JESUS RAMOS The Juerga at Villa del Parral was led by the cante of La Tati and others at the bar. The guitarists were Rincon and Marito Escudero (Escudero, hijo); cantaor Juan José de Alcalá was joined by cantaor Dominico Alvarado and the dancers Mariano Parra, Victorio, Julio Deerfield and La Tata. The proceedings disbanded at daylight. Other big news in town was Mario Maya, Carnegie Hall presenting his \"¡Ay! Jondo,\" on the persecution of the gypsy people. Meson Asturias has a new composite of artists, namely, cantaor Pepe de Malaga, bailaor Manolo de Córdoba, and guitarist Carlos Lomas. Carlos (Chiipi) told me that he recently recorded with a gypsy singer Pelete, I believe, in New Mexico and says that this recording can be classed with the finest made in Spain. Maria Benítez will be presenting her show at Broadway & 95th Street, New York City. Her \"Estampa Flamenca\" and recital in Milwaukee, as well as the beautiful cover photo by La Vikinga in Jaleo, April 1982, have already given the Jaleo readers insight to her magic dancing. More on Benítez should be following. Guest artists for Chicago's Ensemble Español Festival this year are Maria Alba, Victoria Korjhan and husband-wife dancers from Ballet Nacional. March 19 Repertorio Español had the guitar recital by Pedro Bacán. Introduction by Vicente Granados and Brook Zern (English). Bacán and his endless beautiful complex toques, is the real mathematician of the flamenco guitar, master of the rondeña and who can play the guajiras at an incredible pace... and those bulerías! March 31....at Villa del Parral of course combination birthday -juerga Antonio de Jesus and yours faithfully with the beautiful cante of Dominico Caro, bailadores La Tata, Jesús Ramos also Pilar Rioja's cantaor Chiquito de Triana and the guitarists Arturo Martínez were present. Miguel Rodríguez and Basolio Georges (both of Molina ballet) also Pedro Baez, Miguel Céspedes and of course Roberto Reyes (see photos). April--Wedding of Roberto Reyes and Rita Acuñas Rojas at the fashionable residence at Central Park West of Howard Samuels in New York City...In a house visited by four US Presidents including Kennedy, Johnson and Carter and, Samuels himself having unsuccessfully run for Governor of New York State, the wedding aftermath was celebrated with early morning cante flamenco of Dominico Caro, Antonio de Jesus, the guitars of George Thompson (pupil of Diego del Gastor) and of course Roberto Reyes himself. A new flamenco record (by Lyricord) will be available in three months...two Jaleo past cover artists are the main headliners: Juan Amaya the other guitarist, also plays a solo. Bailaores and palmas are rendered by Manolo de Córdoba, Liliana Lomas, and Manolo Correa. Eleven items have been recorded live; Pepe sings malagueñas de Mellizo, malagueñas de Juan Breva and malagueñas de Trini. Carlos plays a bulerias with palmas. There is an alegrias, sevillanas, fandango natural and rumbas. The name of the CHIQUITO DE TRIANA AND ARTURO MARTINEZ ROBERTO REYES (DOING PALMAS) DAYS BEFORE HIS WEDDING, ONE OF JOSE MOLINAS BAILAORAS DANCING GUITAR REVIEW WORLD WIDE CLASSIC GUITAR QUARTERLY ACADEMIC YET YOUTHFUL BLOSSOMING FORTH WITH NEW IDEAS NEW WRITERS · NEW REVIEWERS · NEW DEPARTMENTS USA Subscription 4 issues: $24.00 postage included Send to: GUITAR REVIEW, P.O. Box 5375, F.D.R. Station, New York, NY 10150",
+    "title": "THE RYSS REPORT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "article",
+    "pages": "20-21",
+    "page_number": 24,
+    "word_count": 751,
+    "article_char_count_full": 4575,
+    "article_char_count_review": 4575,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_03::A17",
+    "article_text_for_review": "JUNE FLAMENCO JUERGA PARTY JULY JUERGA When? - SATURDAY JULY 14, 1984 B P.M. Where? LONG BEACH OANCE ACADEMY - STUDIO 2000 Address - 727 SOUTH STREET Phone # - (213) 423-9886 Long Beach, Calif. 90805 Hosts- Juaquin & Liza Feliciano Oscar & Virginia Robles Bring tapas to share, your own drinks & a donation for juerge expenses. Coffee & tea provided. Bring dance shoes, guitars, wear costumes. Everyone with an interest in flamenco at all levels of ability is invited to participate in this flamenco music & fellowship party. JUERGA INFORMATION - YVETTA WILLIAMS (213) 833-0567 RON SPAT2 - (213) 883-0932 Directions- Long Beach Freeway North to Oel Amo- turn East to Atlantic North to South Street. East to Studio 2000.",
+    "title": "LOS ANGELES JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 26,
+    "word_count": 122,
+    "article_char_count_full": 719,
+    "article_char_count_review": 719,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

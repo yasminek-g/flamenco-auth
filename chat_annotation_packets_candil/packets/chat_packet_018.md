@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1980-11-19-right-quienes-fueron-los-maestros",
+    "article_text_for_review": "De nombre Antonio Grau Mora, fue más músico que cantaor, al igual que Enrique «El Mellizo». Existen bastantes dudas sobre el lugar de su nacimiento, afirmándose por unos que nació en Almería, y por otros en Villena, en 1847.\n\nROJO EL ALPARGATERO\n\n«El Rojo el Alpargatero», está considerado como el definitivo estructurador de los cantes levantinos y mineros.\n\nEn su ciudad natal ejerció la profesión de zapatero (de donde le viene el apelativo), trasladándose posteriormente a Cartagena, dejando su primer oficio para establecerse en el puerto de dicha localidad como propietario de una taverna en la calle de Canales.\n\nDurante su estancia en Cartagena reelaboró y aflamencó todos los cantes levantinos: cartageneras, tarantos, tarantas, malagueñas, etc. Igualmente, Antonio Grau Mora, tuvo en su haber el haber sido considerado como un buen compositor de letras, se sabe que grandes figuras del cante pasaron por su casa para, en profundidad, familiarizarse con sus cantes y letras. El más sonado de estos fue don Antonio Chacón, que de «El Rojo el Alpargatero» aprendió muchos de los estilos levantinos, recreándolas y revalorizándolas él más tarde.\n\nComo seguidores y contemporáneos de «El Rojo el Apargatero» destacan: su hijo Antonio Grau, Concha «La Peñaranda», Paco el «Herrero», Enrique el de los Vidales, el mencionado don Antonio Chacón y, posteriormente, Antonio Piñana.\n\nHay varias coplas alusivas a su figura y a la de sus seguidores:\n\nFueron los firmes puntales\n\ndel cante cartagenero,\n\nLa Peñaranda, Chillares,\n\nEl Rojo el Apargatero\n\ny Enrique el de los Vidales.\n\nA la figura de «El Rojo el Alpargatero» va unida la de otro maestro de los cantes levantinos, Pedro «El Morato», cantaor nacido en Almería en el siglo XIX. «El Morato» es uno de los cantaores que dieron al taranto y a la taranta almeriense modalidades de gran valía. Era vendedor ambulante y su nombre ha quedado inmortalizado en muchas letras.\n\nEL LOCO MATEO\n\nNació hacia la mitad del siglo XIX. El apelativo de «Loco» tuvo su origen en que poseía una personalidad temperamental y desequilibrada. Dominaba todos los estilos, destacando por siguiriγas, soleares y cañas.\n\nNativo de Jerez de la Frontera, vivió mucho tiempo en Sevilla, donde alternó su arte jerezano con el trianero del Fillo, Los Caganchos y los Pelaos. Juan de la Plata, sigue en su obra «Flamencos de Jerez», las informaciones de Núñez de Prado, asegurando que la soleá era el cante predilecto de el Loco Mateo. Pero donde verdaderamente destacó, a nuestro juicio, como gran maestro, es en los cantes por siguiriγas. Estas, tienen el auténtico aire jerezano, pero atemperado por la profundidad de los viejos estilos trianeros.\n\nActuó en los cafés cantantes de Sevilla y otras localidades, perdurando sus estilos en el recuerdo, siendo éstos, a veces, objeto de recraciones.\n\nLos más importantes seguidores de el Loco Mateo han sido «Charito de Jerez» (nacido igualmente en el siglo XIX, siendo desde muy joven profesional del cante, alternando con Silverio en los cafés de cante sevillanos) y Juan Talega. Este último tiene una grabación realizada por siguiriyas, que se le atribuyen al Loco Mateo.\n\nYo no soy de esta tierra\n\nni conozco a nadie.\n\nY el que hiciera algo por mis niños,\n\nque Dios se lo pague.\n\nJOAQUIN EL DE LA PAULA\n\nNació en la segunda mitad del siglo XIX, en Alcalá de Guadaira, de raza gitana. Está considerado como uno de los más cualificados artífices del cante gitano pese a no haber sido profesional.\n\nJoaquín recreó los cantes de su tierra y puede asegurarse que sus soleares son las que han tenido una mayor divulgación dada su naturalidad.\n\nJoaquín Fernández (hermano de Agustín y éste a su vez, padre de Juan Talega) vivió y murió sin pena ni gloria, siendo sus cantes por soleá cada día más apreciados, posiblemente porque ha sido el que con más profundidad ha interpretado las soleares de Alcalá, por ello todo el que hoy aspira a realizar los cantes puros de esta licalidad, trata de beber en las fuentes de Joaquín y sus discípulos: Juan Talega, Manolito el de María, etc.\n\nSegún Ricardo Molina: «...al tratar las soleares de Alcalá conviene destacar un hecho elocuente: Ni Joaquín el de la Paula, ni Agustín Fernández, ni Juan Talega, crearon propiamente soleares. Limitáronse a interpretar las de su pueblo natal. Claro está que sus personalísimas interpretaciones matizaron de saber peculiar este cante». Y sigue Ricardo Molina «El maestro de Alcalá engrandeció toda la gama de soleares de su pueblo natal, diez o doce cantes que son la más excelsa representación de la soleá, porque expresan todos sus matices desde el grave, pausado y sentencioso hasta el exaltado y dramático pasando por varios grados intermedios de la confidencia, el piropo, la alegría, la desilusión, etc...».\n\nJoaquín el de la Paula ha escrito uno de los más bellos capítulos de los cantes por soleá de la historia del cante flamenco.\n\nSelecciona: RAFAEL VALERA\n\nPlaza Queipo de Llano, 1 Teléfono 22 95 65 JAEN\n\nDr. Civera, 17 - A Teléfono 22 74 25",
+    "title": "Quienes fueron los maestros",
+    "periodical": "candil",
+    "issue_id": "1980-11",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 827,
+    "article_char_count_full": 5004,
+    "article_char_count_review": 5004,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-02-3-left-revista-de-flamenco-pe-a-flamenc",
+    "article_text_for_review": "Revista de Flamenco - Peña Flamenca de Jaén - Enero - Febrero, 1981 - Número 13\n\nSUMARIO:\n\nNOTA.—«CANDIL» no se hace necesariamente solidario de los puntos de vista contenidos en los artículos firmados. Es, incluso, consciente de que muchos de ellos versan sobre materia controvertida, y por ello invita a los estudiosos de estos temas al debate sobre los mismos.\n\n«Candil» agradece a Cervezas «El Alcázar», S. A., su colaboración en este número.",
+    "title": "Revista de Flamenco - Peña Flamenca de Jaén - Enero - Febrero, 1981 - Número 13",
+    "periodical": "candil",
+    "issue_id": "1981-02",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 73,
+    "article_char_count_full": 446,
+    "article_char_count_review": 446,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-02-3-right-editorial",
+    "article_text_for_review": "Era necesaria, al menos, esta pequeña muestra de nuestro reconocimiento, este intento de recomponer el arte incomparable y la vida increíble de este viejo maestro que se nos ha muerto. Porque con Pepe el de la Matrona, de algún modo, se ha apagado el último quejó trianero, el último rompimiento de vida, la última verdad palpitante del cante. Después de él, acaso, sólo sea posible la rememoración...\n\nPepe el de la Matrona: cuántos viejos cantaores, entrañables maestros, han revertido en él, se han asomado a él, tomaron fecunda encarnadura por su voz y por su testimonio.\n\nDesde los dulces ecos chaconianos, hasta el alarido de Manuel, una voz o su sangre, una pasión o su horror, qué desnudez de vida, qué furor de vivir en un cuerpo prendido de anteriores extremecimientos en el reposado nomadeo del cante.\n\n«CANDIL», rompiendo, parcialmente, la norma de sólo acoger en sus páginas trabajos inéditos, ha reunido en este número monográfico, con la autorización expresa de sus autores, el juicio y la perspectiva de muy calificados estudiosos del flamenco sobre el viejo maestro y entrañable amigo que se nos a ido. Pero no está en nuestro ánimo ofrecer exclusivamente un reciente y selecto florilegio. Creemos, muy sinceramente, que si algún valor fundamental habita en nuestras páginas, no es distinto al de las íntimas, nobles e indestructibles vivencias del cante; a esa catarata, a ese terremoto de los pulsos del alma que inunda la recia e inmarchitable copla de Andalucía y que aquí, exclusivamente, tiene su origen y fin en la comunicación, en el poso, que dejara José Núñez en la memoria y el corazón de cada uno de los autores. Por ello, parafraseando a Walt Whitman, creemos que quien vuelca estas páginas toca a un hombre.\n\nCiertamente, Pepe el de la Matrona, se merece más, mucho más, que lo que este número especial de «CANDIL» pueda contener, nunca darle. Quede, sin embargo, patente nuestra admiración, nuestro respetuoso homenaje al cantaor que hizo del cante crónica puntual de vida, y de su vida, pudimos colegir la misma definición, integral y mágica, del cante.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1981-02",
+    "year": 1981,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 347,
+    "article_char_count_full": 2086,
+    "article_char_count_review": 2086,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-02-4-right-biografia",
+    "article_text_for_review": "BIOGRAFIA\n\n1887. – Nace el 4 de junio en el sevillano barrio de Triana.\n\n1899.-Primeras actuaciones públicas (3 días) en Burguillos.\n\n1901.-Aventuras toreras y actuación en el café de Villamartín. Conoce a Ramón el Ollero, Manuel Cagancho, Juan Pelao, etc. Comienzan sus relaciones con Chacón.\n\n1905.-Actuaciones profesionales en Sevilla y provincia, así como en Almería.\n\n1906.-Es contratado por un café cantante de Córdoba.\n\n1907.-Reside en Madrid. Actúa en el Café del Gato, de allí pasaría al Naranjeros y, posteriormente, a Fornos.\n\n1914.-Primer viaje a La Habana (nueve meses).\n\n1917.-Segundo viaje a La Habana, México y E.E. U.U.\n\n1918.-Actuaciones en Barcelona.\n\n1922.-Es contratado por «Los Gabrieles».\n\n1936.-Reside en Madrid actuando para los combatientes. En 1938 vive en Barcelona hasta el fin de la guerra civil, que se traslada a Sevilla.\n\n1939.-De nuevo en Madrid. Actuaciones en el Villarrosa, y alguna grabación para cine. A partir de estas fechas, fundamentalmente, canta para grupos de aficionados, y es miembro del jurado de diversos concursos.\n\n1956.-Recorre varias veces Francia, Alemania, Holanda, Bélgica, Austria, Inglaterra, Italia, la América hispana, diversos estados de los E.E. U.U., Argel y Túnez. Actuaciones en universidades. Grabaciones en Francia en «Le chant du monde» y «Boite a Musique».\n\n1955.-Graba para «Hispavox» algunos palos de la «Antología del cante flamenco».\n\n1970.-Graba para Hispavox «Tesoros del flamenco antiguo». Obtiene el Premio de la Cátedra de Flamencología de Jerez.\n\n1974.-Homenajes en Almería, Cádiz, Jaén, etc.\n\n1975.-Aparecen publicadas en «Demófilo» sus memerías, recogidas por J. L. Ortiz Nuevo, «Recuerdos de un cantaor sevillano».\n\n1977.—Se suceden los homenajes. Es nombrado presidente de honor del cincuentenario del Concurso de Granada. Actúa en París en el teatro 347 durante cincuenta y tres días.\n\n1980.-Fallece en Madrid el 8 de agosto.",
+    "title": "Biografia",
+    "periodical": "candil",
+    "issue_id": "1981-02",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-4",
+    "page_number": 4,
+    "word_count": 283,
+    "article_char_count_full": 1910,
+    "article_char_count_review": 1910,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-02-5-right-el-matrona-en-su-sitio",
+    "article_text_for_review": "Por Fernando Quifones\n\nDesde que en la memorable y primera «Antología del Cante Flamenco» (la de Ducreted/Thompson - Hispavox) le oí a Pepe Matrona el grito terrible de su añeja soleá-petenera de Triana, y el primor emocional de sus livianas y serranas (único cantaor él, que ha logrado más que convencerme, conmoverme con ese cante que Aurelio Sellé calificaba como «de cocheros», aludiendo a su monotonia melódica), pude darme cuenta del jondón de arte y de saberes que se apretaba en la garganta y en el corazón del veterano artista, y luego amigo, llamado José Núñez «Niño de la Matrona» y efectivamente niño siempre, niño valetudinario pero hasta última hora, con el corazón fresco, la alegre disposición de ánimo y la capacidad de sencillez y de humor que en todo momento le alejaron de esa pedante actitud habitual en los maestros de su talla y de su edad.\n\nLos recuerdos se apelotonan en mi memoria: Pepe Matrona en su homenaje de Cádiz y en el no menos inolvidable que le rindió Jaén en la Semana Cultural «Avances», cuando, bien ochentón ya y después de aguantar un largo tirón de conferencia con coloquio, se metió en la Peña Flamenca jiennense para ofrecernos hasta las tantas el sabor de sus cantes y el de sus añejas memorias sevillanas, madrileñas y de aventurero en ambas Américas (como Silverio Franconetti en la del Sur y, como él, cantaor enciclopédico, pragmático muestrario ambulante de estilos perdidos, o en trance de perderse, y por él rescatados y devueltos, en la misma línea de conservaciones y restituciones cantaoras que seguirían, después de Silverio, un Chacón, un Antonio Mairena y, en cierto modo hoy, un Menese).\n\nCantaor, Pepe el de la Matrona, de reuniones y no de teatros, salvo en muy contadas ocasiones, como en París, - años sesenta - junto a Vicente Escudero, su personalidad artística y humana lo configuran para muy largo como un andaluz y persona de primerísima, del que serán muy pocos, entre quienes lo conocieron y lo escucharon, los que van a olvidarlo.\n\nNada más cabal ni más justo que este homemaje que «CANDIL» le rinde, en el ámbito de Jaén, iluminando aquellos días en su ambiente cultural por la presencia del maestro, y despierto en saber agasajar, darle su sitio y concitar la atención ciudadana en torno a la figura de ese Pepe «Matrona», el cantaor y el hombre bonísimos que, aunque llegó a parecernos refractario al tiempo, acaba de dejarnos para siempre. No así su arte.",
+    "title": "El «Matrona» en su sitio",
+    "periodical": "candil",
+    "issue_id": "1981-02",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-5",
+    "page_number": 5,
+    "word_count": 415,
+    "article_char_count_full": 2430,
+    "article_char_count_review": 2430,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

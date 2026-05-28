@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1995-09-21-left-una-nueva-llave-de-oro",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(En contestación a Miguel Acal. \"Candil\" núm. 98. (1961-1968)\n\nEn el artículo de Miguel Acaltitulado «¿Una nueva Llave de Oro?», motivado al parecer por la iniciativa tomada por la dirección del Centro Andaluz de Flamenco, de Jerez, sobre el destino o el destinatario de una nueva Llave de Oro del Cante, hace un análisis particular de las circunstancias que acontecieron y que acontecen en torno a la Llave de Oro del Cante y, al final, no acierto a comprender si se opone a la concesión de la IV Llave porque entiende que no haya quien la merezca o la pueda merecer, o bien por el temor a que esta concesión sea sesgada, politizada o injusta de form a que se desvirtúe, la m agnitud, la diferenciación cualitativa y el sentido que esta distinción tiene en la actualidad.\n\nEn el segundo supuesto\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombre\"]\n\nla IV Llave porque entiende que no haya quien la merezca o la pueda merecer, o bien por el temor a que esta concesión sea sesgada, politizada o injusta de form a que se desvirtúe, la m agnitud, la diferenciación cualitativa y el sentido que esta distinción tiene en la actualidad. En el segundo supuesto estaríamos absolutamente de acuerdo con él, más si lo que pretende es dejar sentado, por los siglos de los siglos, a Antonio Mairena, al fin un hombre como todos, en un magisterio inalcanzable a través de esta distinción, significando que nadie más la mereció ni puede merecerla, mostramos nuestro desacuerdo, ya que utilizando sus mismas razones estaríamos impiidiendo o cayendo también en la injusticia de no considerar a otros y sus obras o sus posibles obras en reales, necesarias y convenientes para el Flamenco y su futuro. Planteada esta posición, me permito recordar, una vez más, mi punto de vista y posición, sobre la cuarta Llave de Oro del Cante; léanse: mi ponencia «La IV Llave de Oro del Cante. La necesidad de una referencia». Congreso de Arte Flamenco. Huelva-92\"; las actas de los siguientes Congresos que reivindican el cumplimiento de la propuesta aprobada en el XX Congreso; y mi último artículo al respecto, en Candil número 91, página 1.588: «Las Llaves de Oro del Cante. La necesidad de una referencia». En resumen: estoy a favor de la concesión de la IV Llave de Oro del Cante, siempre que la concesión esté dirigida a premiar trayectorias ejemplares y que la forma de otorgarla sea absolutamente imparcial, justa y objetiva. Es más, siendo de esta form a, no sólo es que esté a favor, sino que lo considero una necesidad de referencia, y este fue el motivo de la ponencia, «ante la amenaza que tiene el Flamenco de tener que responder y conservarse frente a la sociedad actual en la que tanto la industria cultural, como los intereses políticos van a exigir un artista al gusto del consumidor para que exprese: lo inofensivo, lo oportuno y, en definitiva, lo agradable». «Si no somos capaces de defender lo puro, lo creativo, de la intervención totalitaria de la sociedad de consumo y su sumisión ante las presiones económicas, políticas e ideológicas, aún corriendo muchas veces el riesgo de ser\n\n[ENDING CONTEXT]\n\nde origen: payo, gitano, de Sevilla, de Jerez, de Córdoba, de Cádiz, etc. Y si no existe, declárese desierta, pero no le pongamos, volviendo a la referencia, puertas al campo, por la admiración al reconocimiento anterior a un maestro, que fue necesario en su tiempo y como legado, su obra lo será siempre. Imprescindible?, ya sabemos que nadie; por eso, en estos momentos tan cruciales y tan faltos de referencias vivas en las que se puedan mirar las nuevas generaciones, dejemos que otros también puedan ser, si se lo merecen, por reales, necesarios y convenientes para nuestro Arte Flamenco.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Una nueva Llave de Oro",
+    "periodical": "candil",
+    "issue_id": "1995-09",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 2622,
+    "article_char_count_full": 15369,
+    "article_char_count_review": 3846,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombre"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-09-23-left-tito-ortiz-a-comp-s",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nHace varios años, el directivo de la Peña Flamenca \"Frasquito Yerbaguena» de Cullar Vega, en Granada, me puso un telegrama urgente: «Te necesito para presentar el mayor acontecimiento flamenco del siglo. Stop. Es un mano a mano entre Camarón y Morente. Stop. Ruego confirmación inmediata porque el cartel está en la imprenta. Stop. Firmado, Eugenio».\n\nAquella noche quiso el destino que la lluvia —cosa tan escasa por estos tiempos— hiciera suspender el gran acontecimiento flamenco en Cullar Vega de Granada. Pero afortunadamente, dos semanas después teníamos la oportunidad de celebrarlo bajo el «techao» en los Jardines Neptuno.\n\nDesde horas antes del comienzo, Granada palpitaba de una manera especial, gitanos venidos de toda España y algunos de Francia, paseaban por los alrededores esperando\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publico\"]\n\nuno. Desde horas antes del comienzo, Granada palpitaba de una manera especial, gitanos venidos de toda España y algunos de Francia, paseaban por los alrededores esperando que se abrieran las puertas de la Sala de Fiestas, que consagrada al turismo de medio pelo, en aquellos entonces, por circunstancias climatológicas iba a ser aquella noche sede de la Catedral del Cante del Siglo XX. Cuando salí a presentar, aunque los focos me impedían ver al publico, la emoción de los presentes era tan intensa que llegaba hasta mí como un clamor. Para ir acallando las pasiones, iniciamos la velada con un solo de guitarra de Paco Cortés, que interpretó su ya famosa «Rondeña por bulerías» acompañado por su hermánimo Miguel Ángel Cortés, entonces promesa de la guitarra, y hoy, una espléndida realidad. Como Enrique Morente jugaba en casa y por aquello de la cortesía, decidimos que él fuera en el duelo quien apareciera en primer lugar sobre el escenario. Entre bastidores, los cabales comentábamos que a Morente se le acogería con frialdad porque más del ochenta por ciento de los asistentes eran git\n\n[ENDING CONTEXT]\n\nhecho otras dignísimas instituciones.\n\nDe ahí que resulte paradójico que un jurado compuesto por grandes santones del mundillo flamenco, sea el último en darse cuenta de la importancia que el artista granadino tiene en el arte andaluz de los últimos cincuenta años. Insisto en que el Compás del Cante a Morente le llega tarde y devaluado, curiosamente, de las manos de quienes se tienen por los máximos conocedores de lo jondo. No obstante también es de agradecer el gesto, porque lo mismo les hubiera dado concedérselo a título póstumo. No en vano, alguno se les ha ido al otro mundo sin catarlo.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Tito Ortiz \"A compás\"",
+    "periodical": "candil",
+    "issue_id": "1995-09",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-24",
+    "page_number": 23,
+    "word_count": 1173,
+    "article_char_count_full": 6946,
+    "article_char_count_review": 2721,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publico"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-09-24-right-el-arte-de-pilar-l-pez",
+    "article_text_for_review": "José Luis Buendía López\n\nI bamos contratados como profesores, con la loable y repetida intención de la Universidad Complutense de ilustrar al mundo entero acerca de la importancia que el arte flamenco ha tenido en la historia cultural de las dos últimas centurias. Nos recibió Ronda, la ciudad de piedra bravía que acogiera, muchas décadas atrás, el arte impagable de Tobalo, intérprete sin paliativos del Polo que lleva su nombre, aquel nevero que bajaba hielo desde la abrupta serranía para refrescar rigores estivales como el que ahora padecíamos.\n\nDebíamos explicar a los alumnos, congregados allí para ello desde todos los lugares que marca caprichosa la Rosa de los Vientos, lo que ha significado el baile flamenco en estos doscientos años de ininterrumpida actividad, en los que ha marcado pautas artísticas de difícil autonomía frente al cante, impuesto de forma hegemónica en los modernos espectáculos por intrincadas causas que algún día habrá que analizar.\n\nTodos, alumnos y profesores, nos entregamos a esta labor con un entusiasmo que rebasaba la habitual situación académica y, desde el primer día, convivimos con unción, aprovechando, tanto la infraestructura magnífica que la ciudad del Tajo nos ofrecía, como el ardor y la amistad con la que nuestro trabajo fue reconocido por los aficionados rondeños, con su Peña Flamenca a la cabeza, y hasta presencias tan destacadas en los «tendidos» mu-déjares del Palacio de Mondragón, sede de los cursos, como la del maestro Antonio Ordóñez, que hizo que a alguno de los que en ese momento ocupábamos la tri-\n\nbuna de oradores, nos temblaran las piernas al socaire de un recuerdo lejano de naturales impecables y verónicas de manos bajas.\n\nEl curso estaba dedicado, en un acierto preciso de la dirección del mismo, a homenajear la figura de Encarnación López «La Argentinita», ese ciclón del bai-\n\nle, menudo y vanguardista, que encandiló a la plana mayor de la Generación del «Veinte y Siete», la última pléyade de poetas que abrieron de par en par las puertas de España al mundo entero, para aliviar un tanto el repetido olor de estos lares a naftalina y púlpito enmohecido.\n\nCincuenta años han transcurrido desde que Encarnación dejara su vida en un quirófano americano, sin que nadie sepa a ciencia cierta qué extraña enfermedad nos hizo prescindir de su arte. El ambiente rondeño exhalaba aromas de lección magistral en todos cuantos nos afanábamos en transmitir conocimientos sobre la herencia artística que allí se rememoraba, pero, pese a la calidad de conferencias y debates, todo sonaba a libro, a viejo pergamino de aleluyas ferroviarias, en una estación en la que se hubiese detenido el tiempo.\n\nFue en la m añana del jueves, 20 de Julio, cuando la caldera del arte se puso e hervir. La gran Matilde Coral desgranaba su lección del día acerca de cuáles fueron los grandes hitos del baile en el presente siglo. La bailaora sevillana, hoy en función de m aes-tra indiscutible, trazaba el desarrollo de sus comentarios contoneándose sobre la dura y poco apropiada tarima del acontecer académico, con intención más ilustrativa que artística, cuando, desde el fondo de la sala, sin que nadie la anunciara, se arrancó a bailar una anciana venerable, tallada, en la encarnadura única de las reliquias eternas, con el buril de leyenda que el tiempo acrisola en sus esquinas: era Pilar López, la herm ana de «La Argentinita» y, como aquélla, figura indiscutible del baile durante más de medio siglo de historia de España. Embutida en una cómoda camisola\n\nveraniega, sin cola ni faralaes, y calzada con zapatillas de calle, no pudo soportar el hecho de que solamente Matilde se enfrentara a la ardua tarea de definir para nosotros cómo había sido el baile de esa hermana que ella amó más que a su propia vida; de ahí que, sin haber sido previamente convocada, asombrándonos a todos, que apenas nos lo creíamos, Doña Pilar puso a galopar, con ternura y dureza conjugadas rítmicamente, a las telas de su corazón de artista, para unirse a la orgía del recuerdo colectivo.\n\nPuedo asegurar, y es opinión compartida por todos los que allí nos encontrábamos, que esos cuatro o cinco minutos de baile improvisados, han constituido una de las páginas más bellas que el Flamenco me ha dado ocasión de presenciar en vivo. Las lágrimas y la risa que se mezclaban en nuestros rostros, tan sorprendidos por lo inaudito del hecho, como quebrantados por la conciencia de su carácter irrepetible, configuraron una mezcla de histeria colectiva, en la que todos creíamos haber visto más de lo que, en realidad, había sucedido ante nuestros ojos, y que nos impulsaba, como yo ahora estoy haciendo, a recurrir a simples palabras humanas, y como tales, desgastadas por el uso, para intentar definir el brillo relampagueante de un milagro.\n\nAunque algunos habíamos sido contratados —ya lo dije antes—como profesores, y había buena gente dispuesta a escuchar nuestras disquisiciones académicas, en seguida se olvidó el escaso protocolo establecido, y todos, sin excepción, fuimos alumnos del magisterio de Pilar López, aquella fantástica e ilusionante señora de la danza. Manolo Canalejas",
+    "title": "El Arte de Pilar López",
+    "periodical": "candil",
+    "issue_id": "1995-09",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 839,
+    "article_char_count_full": 5124,
+    "article_char_count_review": 5124,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-09-25-right-i-encuentro-flamenco-y-universid",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDurante los días 24 y 25 de Marzo pasado tuvo lugar un «Encuentro Flamenco y Universidad», celebrado en la Facultad de Letras del Campus de la Merced, en la Universidad de Murcia, que constituyó de hecho el acto de presentación del Aula de Flamenco en dicha Universidad. Esta Aula está adscrita al Servicio de Actividades Culturales del Vicerrectorado de Extensión Universitaria.\n\nLa finalidad del Aula de Flamenco la constituye la investigación, la enseñanza, la difusión y el disfrute del Arte Flamenco en el ámbito universitario. El Arte Flamenco en un patrimonio cultural muy peculiar, cuyo estudio merece ser abordado desde perspectivas universitarias, sin prejuicios, complejos ni dogmátismos.\n\nEl programa de actuaciones desarrollado en este Encuentro fue amplio y profundo, probablemente\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"fundamentales\"]\n\nde las interesantes cuestiones que se fueron planteando desde su comienzo. Tras el acto de apertura, José Martínez Hernández disertó sobre el tema «Flamenco, Cultura y Universidad», seguido por la intervención de Génesis García Gómez, que lo hizo sobre «Futuro del Flamenco en la Universidad», estableciéndose turnos de debate a continuación de cada intervención, en los que afloraron numerosos intercambios de opiniones sobre espectos conceptuales fundamentales de ambas temáticas, que se prestan a muchas interpretaciones y puntos de vista. Seguidamente tuvo lugar en el Salón de Actos del Paraninfo de la Universidad un recital flamenco, actuando en primer término los artistas de La Unión y hermanos Encarnación y Rosendo Fernández. en este apartado se escucharon tientos, soleares, tarantas y mineras, pródigo todo ello en excelente rajo gitano y buen acento minero, propio del genuino Cante de Levante, derrochando ambos artistas voluntariedad, virtuosismo y afán de complacer. Posteriormente se celebró la esperada actuación de Calixto Sánchez, acompañado por Manuel Franco, que nos brindaron las más bellas y puras excelencias del Arte Flamenco, interpretando cantes por soleares, m alagueñas, alegrías (\n\n[ENDING CONTEXT]\n\n«Me gusta tocar sobre lo que yo llamo la técnica del silencio, jugar con los volúmenes sonoros. Puedo, por ejemplo, crear un gran volumen, agarrarlo y dejarlo vibrar de tal manera que no queda nada más, casi un silencio. Es una manera muy expresiva de hablar conmigo mismo que otro puede comprender. Puedo hacer un sonido, pararlo de golpe y traer otra cosa por sorpresa, o dejar que se desarrolle, y es eso lo que la gente escucha. En ese momento, el silencio no se compone solamente de mi música, sino también de las sonoridades que inventa el que escucha...».\n\nTOCAORES DE HOY\n\nPedro Bacán\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "I Encuentro « Flamenco y Universidad»",
+    "periodical": "candil",
+    "issue_id": "1995-09",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-27",
+    "page_number": 25,
+    "word_count": 1276,
+    "article_char_count_full": 8402,
+    "article_char_count_review": 2837,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "fundamentales"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-11-3-left-falla-y-el-cante-jondo",
+    "article_text_for_review": "S e cumplen los cincuenta años de la muerte de Don Manuel de Falla, que como señalara García Matos cabe considerar \"la más genial y conspicua figura española de nuestro tiempo\".\n\nDentro de la bibliografía flamenca que se ha ocupado del autor del Amor Brujo, son numerosas las referencias a su indiscutible protagonismo en el Concurso Granadino de 1922, toda vez que ha sido éste el primordial objeto de reflexión y sólo en la medida en que se han valorado aciertos y desaciertos del Concurso de la Placeta de San Nicolás del Albaicín, se ha enjuiciado también la personalidad de Don Manuel de Falla.\n\nEl intento más representativo de acotar la figura de Falla en el universo del Flamenco está representado por Eduardo Molina Fajardo (Manuel de Falla y el Cante Jondo. Universidad de Granada. Granada, 1962), sin que pese al título de la obra, la indagación realizada se refiera a la obra del músico. Antes al contrario, Molina Fajardo recrea el entorno flamenco de la Granada de 1922, centrándose, en su delicioso libro, en el origen y dearrollo del Concurso de \"Cante Jondo\".\n\nCon anterioridad a la edición de la obra señalada, el profesor García Matos publica un clarividente estudio (Folklore en Falla. Madrid, 1953) que coyunturalmente profundiza en cómo se produce esa música ósmosis entre Don Manuel de Falla y el Cante Jondo. Pero sólo coyunturalmente, ya que el indicado estudio persigue aclaraciones del concepto de inspiración en músicas folklóricas o desarrollo de obras musicales sobre la base de documentos folklóricos. La especificidad del Cante Jondo y la relación de éste con la hermosísima obra de Falla, está aún por indagar. Es curioso y hasta parado jico constatar cómo respecto del fenómeno flamenco en general faltan estudios musicales que profundicen, desde una perspectiva rigurosamente musical, en la misma entraña del flamenco. Tal déficit ha sido señalado en la bibliografía más reciente, en ponencias y comunicaciones de Congresos de Actividades Flamencas y, sin duda, es uno de los retos que el flamenco tiene planteados: profundizar en cuales sean, cómo se originan y desarrollan las estructuras musicales del flamenco.\n\nEn cualquiera de los casos, la figura de Don Manuel de Falla cabe recordarla no sólo por su protagonismo en el Concurso de Cante Jondo de 1922, sino por algo mucho más importante: Falla, sin necesidad de acudir a la aplicación directa del documento flamenco, es, en sí, el duende de lo jondo, es el flamenco, en su forma más universal de comunicarlo.",
+    "title": "Falla y el Cante Jondo",
+    "periodical": "candil",
+    "issue_id": "1995-11",
+    "year": 1995,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 412,
+    "article_char_count_full": 2501,
+    "article_char_count_review": 2501,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

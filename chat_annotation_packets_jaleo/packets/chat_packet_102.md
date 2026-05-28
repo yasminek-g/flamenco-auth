@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_04::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(from: Guidepost, March 24, 1967; sent by Marilyn Bishop) by N. Clements Perhaps the finest artistic expression of the Andalucian Holy Week -- and certainly its most unique feature -- is the popular devotional song known as the saeta. It is heard with increasing frequency as the Lenten season wanes, but finds its fit and proper setting in the processions of Holy Week. As the various figures and tableaux parade slowly through the streets, the band stops playing and only the drums mark the pace. Then, from a street corner or balcony, a solo singer directs his plaintive melody toward an image in the procession. The saeta, as sung today, is an authentic form of the flamenco music known as cante jondo (or cante grande). It borrows its complex melodies from traditional gypsy cantes, the\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"imit\"]\n\nrom a street corner or balcony, a solo singer directs his plaintive melody toward an image in the procession. The saeta, as sung today, is an authentic form of the flamenco music known as cante jondo (or cante grande). It borrows its complex melodies from traditional gypsy cantes, the martinetes, tonás, and siguiriyas which date back at least to the beginning of the nineteenth century. While these songs have remained for the most part without a limited circle of admirers and performers, the saeta is a truly popular song, sung throughout Andalucía during the Easter season by professional and non-professional singers alike. Yet only recently has the saeta come within the orbit of flamenco styles. Its traditions take it back well before the emergence of flamenco music, to the missionary fervor of the Counter-reformation. The original saeta, according to the testimony of 17th and 18th century documents, was sung or chanted by priests during certain religious processions, within and without Andalucía, as a means of persuading sinners to repent and confess their sins. From this context derived the name \"saeta\" or \"arrow,\" as the songs were intended to penetrate the soul of the The flamenco style, bursting out of gypsy homes to the taverns and cafes of Andalucían cities and then to theater stages, gradually absorbed the saeta and altered its style and character. Musically, the flamenco saeta differs most notably in its long and florid melismatic phrases. A normal performance presents two verses, the second usually sung to a variant melody on a higher pitch level, and thus more difficult and brilliant than the fi\n\n[ENDING CONTEXT]\n\nsoga le amarraron, los verdugos le tiraron y el cuerpo descoyuntaron. When one arm had been nailed, the other didn't reach; tying a rope to him the executioners pulled and disjointed his body. ● Es tan estrecha la cama que el Rey de los Cielos tiene que por no caber en ella un pie sobre el otro tiene. So narrow is the bed where the King of Heaven lies, that for lack of room one foot crosses the other. ● Nació la primera saeta al pie de la misma cruz y se envolvió en un suspiro de la Madre de Jesús. The first saeta was born beneath the cross itself, wrapped in a sigh of the Mother of Jesus.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "THE SAETA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14-17",
+    "page_number": 14,
+    "word_count": 1071,
+    "article_char_count_full": 6071,
+    "article_char_count_review": 3247,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "imit"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1981_04::A6",
+    "article_text_for_review": "CHANGING FLAMENCO IN CHANGING TIMES I do not think that there is anyone who is not in awe of the natural phenomena of a worry caterpillar that eats for awhile, then spins a cocoon, and later emerges as a most beautiful butterfly, ready to fly, completely transformed forever into a creature of beauty. When one enters into the beautiful world of flamenco in its totality, it is not unlike the caterpillar starting its transformation from one form to another, for there is constant change in both the person and in the total art of flamenco. I am writing this article, not on one specific aspect of flamenco, but as an overview of a total, ever-changing flamenco. The change grows from an unchanging taproot that is deep in a very old tradition of many cultures with many feelings and emotions. It is like a very old and beautiful tree that is strong of trunk and root, but is forever growing new branches, some more beautiful than others, adding to its total quality.",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 171,
+    "article_char_count_full": 967,
+    "article_char_count_review": 967,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_04::A7",
+    "article_text_for_review": "ELITISM IN FLAMENCO Have you ever wondered why there is so much conflict in flamenco? Or why there is so much conflict in the world in general? Of course, there are many reasons and corresponding social implications. I think that elitism in its many forms is one of the main causes of conflict. Let's discuss elitism and see if this is the direction you are going in, or want to go in. The Webster's New Collegiate Dictionary defines the noun \"elite\" as: \"the choice or select part; esp., a group or body considered or treated as socially superior.\" So elite is defined in terms of others. Without anyone to be superior to, the elite has no identity per se. It is obvious that there are differences in talent among individuals. Other obvious differences can be found in such things as origin, nationality, seniority, knowledge, and financial security. Conflict arises not in the Regional elitism develops when there are no threats of an international or national nature. The old competition between Sevilla and Granada is a good example. A similar type can be seen in music and sports' competitions. Is New York great because the Yankees have won more World Series? Many flamencos believe that either new or old flamenco is superior. I used to think that new flamenco was better until I read Teo Morca's observation that flamenco is like a tree with roots, trunk, and branches. Extending the comparison, you could say that the world itself is like a tree. All different types of music and nationalities are merely branches of the same tree. Should one branch choke the roots or other branches? Music's components are rhythm, melody, and harmony. Rhythm is the meter and the mathematical counting branch. Melody is the movement of notes, and harmony is the movement of chords. Different combinations of these components determine the beauty of any music. While there is certainly a difference of ability in composition among individuals, I don't think the usage of any one of the musical components is superior by nature. The last item deals with a more social question. Are successful flamencos more dignified? Human dignity does not have to be earned. The king of Spain and the \"pordioseros\" at the entrance of the Alhambra are equally deserving. On the other hand, denial of human dignity is a cause of violence. If you treat pan- handlers with respect, they will react with personal pride. If you treat them with disdain, they will respond accordingly. So in Spanish we have the concept of \"Usted.\" Originally this meant \"Vuestra merced\" or something like \"your mercy.\" You don't have to wear fine clothes, live in a prestigious neighborhood, or have other external measures of security to be \"Usted.\" While success and security are certainly desirable, it's easy to become elitist over them. The choice is yours regarding elitism.",
+    "title": "GAZPACHO DE GUILLERMO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 477,
+    "article_char_count_full": 2834,
+    "article_char_count_review": 2834,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_04::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Paco Sevilla A flamenco contest in Granada in 1922? With all of the flamenco activity taking place today in Spain--festivales, contests, study weeks, tablaos--why discuss a contest that took place over a half a century ago? One answer is that it was a fascinating and unusual event. But to really understand the importance of this event, it is necessary to know a little about the state of flamenco at that time. The period of the \"café cantante\" (similar to the tablao of today) had begun in the mid-1800's and had brought flamenco to the public for the first time. The gypsy cante was brought out from back rooms and family gatherings into the commercial world. At the same time, the cante-andaluz, especially the malagueñas, was being developed and eventually reached great heights of\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"public\"]\n\nhad brought flamenco to the public for the first time. The gypsy cante was brought out from back rooms and family gatherings into the commercial world. At the same time, the cante-andaluz, especially the malagueñas, was being developed and eventually reached great heights of popularity. After the turn of the century, the cante-andaluz--all the forms of fandangos--began to dominate the performing scene and the cante gitano slowly disappeared from public view. The cafés cantantes closed and a new era of flamenco began--the era of the \"ópera flamenca.\" During the period of the ópera flamenca, flamenco moved from the café cantante to the theater. By 1910 the trend was obvious and, by 1920, in full swing. Flamenco appeared in the \"zarzuelas\" (musical comedies) where it was mixed with operatic arias and often accompanied by orchestra and piano, as well as by guitar. Travelling Spanish ballets brought flamenco-style treatments of Spanish classical dance and music to theaters in Spain and around the world. There were many artists in this \"period of the Niños\" as Antonio Mairena put it (Niño Marchena, Niño de Huelva, Niño Ricardo, La Niña de la Puebla, etc.) and they made many records and huge fortunes, Non-gypsy singers became great stars and sang primarily variations of the fandangos, the Latin American inspired milongas, guajiras, and columbianas the popular tanguillos, zambras, and ga\n\n[ENDING CONTEXT]\n\nprize went to the legendary gypsy of Granada, Francisco Gálvez--better known as Frasquito Yerbagüena; a prize went to María Amaya \"La Gazpacha,\" a relative of Carmen Amaya who Mairena calls,\"...a stupendous festera who danced very well the zambra of Granada,\" $ ^{2} $(p. 32), and yet another to José Soler \"Niño de Linares.\" Mairena writes that there were other prizes for,\"...the senhoritas of Granada's high society who sang some little things\"; these included Carmen Salinas, Conch Sierra, and \"La Goyita.\" The prize for outstanding guitarist was split between Manolo de Huelva and José Cuéllar.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "GRANADA, 1922",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "21-25",
+    "page_number": 21,
+    "word_count": 1618,
+    "article_char_count_full": 9916,
+    "article_char_count_review": 3022,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "public"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1981_04::A9",
+    "article_text_for_review": "by Paco Sevilla \"LOS VIENTO DEL TIEMPO\": The flamenco guitar of San Luis. (International Book and Record Distributors, 4011 24th St., Long Island City New York 11101.) I find this record difficult to review for two reasons: First, solo guitar does not usually interest me a great deal, and guitarists who send me their solo records to review should realize the risk they run. Second, San Luis, a resident of New York, is an unusual guitarist--difficult to pin down or categorize. On listening to him, one is struck by a number of obvious qualities. His sound is strong and clear--and well recorded. The musical introductions for all of the numbers are very beautiful. Most of the time it is hard to trace the origins of his ideas; for the most part, he seems to fit neither in the old nor the new. San Luis is a lyrical musician; he seems to enjoy beautiful sounds and has the ability to savour single notes, to give them time to breathe and reach the listener. His rasgueos are strong and crisp, as are most of his other techniques; he uses technique to play music, not to dazzle the listener. His Conclusion: The pieces on this record can make interesting listening music. San Luis is talented and creative, has much potential, and deserves to be listened to. I would like to see him accompany and accompany, both singers and dancers, for a couple of years and, perhaps continue to listen to the established masters. With just a little bit more solid foundation to work from, he could be an outstanding soloist. Additional notes: The album jacket, designed by San Luis, is beautifully done and the song titles are tasteful--\"Fiesta de Cádiz\"(tango), \"Los Vientos del Tiempo\" (soleá), \"Taconeo Brillante\"(zapateado), etc. San Luis was kind enough to share some of the methods he used to make the record. He did the taping in his apartment with a TEAC A-6100 $ \\frac{1}{2} $-track master tape recorder and two Shure microphones (the quality of the sound is excellent). He took the tape to a studio to have it sequenced (no editing was done) and some reverb added. He then had the records pressed. This record can be ordered directly from San Luis by sending $6.95 to: St. Louis 231 W. 13th St. New York, N.Y. 10011 RODRIGO IN CONCERT May 15th WILSHIRE EBELL With El Yuri Remedios Flores Maria Diaz and guest artists Juana DeAlva & Diego Robles",
+    "title": "RECORDS BY AMERICAN GUITARISTS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_04",
+    "year": 1981,
+    "language": "en",
+    "article_type": "article",
+    "pages": "26-27",
+    "page_number": 26,
+    "word_count": 410,
+    "article_char_count_full": 2343,
+    "article_char_count_review": 2343,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

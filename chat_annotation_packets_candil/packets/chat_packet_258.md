@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-07-23-right-muerte-anunciada",
+    "article_text_for_review": "«Se fue pronto como todos los elegidos, en plena gloria y en plena juventud». Así dice la copla y así ha ocurrido con «Camarón de la Isla».\n\nP or conducto de un titular del periodismo cuya identidad lamento no recordar ahora, recibí la noticia. Quedé anonadado, hasta el punto que en una entrevista que me hicieron a través de Radio Nacional de España, sólo pude balbucear palabras sueltas entre sollozos. Y es que la muerte de alguien a quien se admira y se quiere por genio del cante y amigo resulta, en los primeros momentos, algo incomprensible e injusto.\n\nTenía esta muerte anunciada todas las trazas de un acontecimiento, triste en verdad, pero recordatorio y reflexivo sobre una de las figuras del cante más importante de nuestro tiempo, magnífica en su arte y con una dimensión de voz capaz de entreverarse de duendes azucarados y de desgarrarse como ninguna...\n\nNo recuerdo, por remota, la fecha inicial de mi contacto con «Camarón», pero sí tengo fresco en la memoria el impacto que me produjo la primera vez que le escuché cantar. Aprendí en aquella ocasión a conocer que —sin necesidad de plegarse a la ortodoxia de la regla, como ocurre con todos los genios, cualquiera que sea la actividad artística que desarrollen— acertaba como ningún otro en lo fundamental, en el buen hacer, produciendo así la recreación de una atmósfera, un clímax colectivo, precursores de los rasgos esencia-les de una época.\n\nLos componentes de la crítica no diferieron en sus calificaciones y aunque algunas veces chocaban con criterios encontrados, terminaban siempre coincidiendo en la misma conclusión: «Camarón de la Isla» es irrepetible. Por su personal manera de decir el cante, por el sonido de su voz, demostró ser un cantaor trascendental dentro del mundo del Flamenco. Sus cualidades como intérprete nacen con él y maduran con los elementos atávicos de la tradición popular que busca la renovación desde el clasicismo. Llevó dentro el cante, como dentro se lleva la alegría o la pena y le dio formas musicales que lograban a la perfección sincronizar lo arcaico con lo moderno. Y por todo esto sus numerosos seguidores, muchos de los nuevos cantaores, han encontrado en su cante el mejor precedente, puesto que se trata de un cante auténtico, saturado de pureza y genialidad.\n\nA trás quedó y para siempre su obra excepcional, a cuya glosa me dedicaré con la extensión y rigor que merece...\n\nPero como la historia de una vida se estructura también en torno a distintos comportamientos al margen del artístico, quiero resaltar una nota de su rico perfil humano. Su carácter tímido le alejaba de las reuniones faustas, hasta convertirle en un ser retraído, poco dado a ceremonias y vanidades. Esta timidez, sin embargo, no le impidió acercarse a los que le necesitaron, ni por ella dejó de rendir culto a la amistad y al compañerismo y en esta línea es fácil comprobar que jamás negó su colaboración desinteresada a los festivales que se organizaban a beneficio de los artistas flamencos de la tercera edad, así como para cualquier compañero que se hallara en horas bajas.\n\nSu muerte nos ha dejado a los aficionados al Arte Flamenco sumidos en la confusión y el desaliento. Saber que su obra, ya consagrada, irá creciendo en esencia a medida que la figura de su autor se aleje de nosotros, nos llena de alegría. Por el contrario nos entristece el pensar en la posibilidad de que en el futuro no aparezca otra figura —al menos en el ámbito musical de lo gitano— tan dotada para expresar con un estilo tan personal lo más esencial del Cante.\n\nUn testigo de excepción de la metéórica carrera de «Camarón de la Isla» fue su fiel amigo José Fernández Torres «Tomatito». Colaborador incesante en su andar por los senderos del Cante. Los dos personajes se configuraron, hasta la muerte del cantaor, mediante el contrapunto y la compenetración. Al complementarse la garganta de oro y los sensibles dedos del guitarrista se producía el punto de encuentro en el que el equilibrio alcanzaba toda su plenitud.\n\nYo fui testigo de este dualismo artístico. Lo disfruté de veras, y hoy lamento su fatal ruptura y aunque en un tono tal vez más bajo que «Tomatito» estoy llorando, por lo menos al par de cualquier otro aficionado de pro, la muerte de un mito, maestro y amigo que se llamó José Monje Cruz, Camarón de la Isla.",
+    "title": "Muerte anunciada",
+    "periodical": "candil",
+    "issue_id": "1992-07",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-24",
+    "page_number": 23,
+    "word_count": 736,
+    "article_char_count_full": 4305,
+    "article_char_count_review": 4305,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-07-25-left-pasi-n-muerte-y-ascensi-n-a-los-",
+    "article_text_for_review": "P or diciembre hubiera cumplido los cuarenta y dos años más largos de la historia del tiempo, pero el frío y los hielos no dañarán ya a este José Monje, de quien se burlaban los chavalillos de San Fernando al verlo tan claro y transparente como un camarón de los que pululan por la vieja Isla de León. Porque José era antiguo como el mundo, tenía en sus ojos afiebrados el esqueleto sin tacha de mil almanayes ya caducos, la fecha de todos los eventos que habían conmovido a la humanidad desde mucho antes de que ésta se iniciara; porque, a fin de cuentas, ¿qué es el tiempo para un gitano que, desde el instante mismo de nacer se sitúa por encima de sus coordenadas, marca con el compás de su arte los segundos que han de regir su vida y se desplanta, con un galleo garboso, frente al toro negro de la incertidumbre?:\n\nNi la experiencia ni el tiempo a mí me sirven de ná, que Undibé a mí me tenía sujeto a su voluntad.\n\nNada, ni es nada el tiempo ni lo son las lágrimas. Es preciso guardar los pañuelos para hablar serenamente de esta historia pretérita y que en realidad no ha sucedido todavía: es el eterno asunto de lo intangible lo que ahora nos ocupa, aquello que el viejo maestro de los Alcores, maestro también de este José que ahora dicen que se ha ido,\n\nproclamaba como la razón incorpórea del cante, esto es, un tejer y destejer las penas y alegrías en el cañamazo inacabado de la condición humana; o, si lo prefieren, la capacidad de expresar con arte incomparable los ancestrales sucesos que ocurrieron a la gente más desamparada de la historia, con palabras que nadie entiende porque suenan a bramido de la tierra, a sonido inaudible en medio del turbión de la rabia, y que, sin embargo, si en vez de emocionarnos, hubiésemos sido capaces de escuchar despacio a gente como Camarón, nos hubiésemos dado cuenta de que no sólo él lloraba, sino que sus letras negras, preñadas de tragedia, envolvían con un manto opaco a la misma naturaleza en la que José se refugiaba:\n\nEn una piedra me acosté porque venía falto de sueño y cuando me desperté de luto vestía la piedra de sentirme padecer.\n\nSí, ese es el privilegio de los genios; ablandar a las piedras, hacer llorar a los toros ocultos en lo más profundo del cerrao o contagiar de sus ducas a las ovejicas del prado. Camarón logró como nadie el privilegio de sacudir las fibras más sensibles sólo con su presencia, con su cante crispado y masculino, con esa melodía de dulce que se envolvía en el pañuelo del grito y el escozor más urticante.\n\nDesde luego que sí, «potro de rabia y miel». No sé a quién se le ocurrió la idea, ni tampoco me importa si buscaba con ello fines comerciales, pero definió al artista con los contornos más nítidos que había atesorado durante toda su vida: rabia para la indignación, para dar un puntapié en el trasero a la quincalla de indignidad que soportaran los viejos maestros, esos abuelos, padres y tíos, los buenos manantiales de los que, según la copla, se forman los buenos ríos flamencos, o nuestra tierra andaluzas, todavía alumbrada con los candiles de la miseria.\n\nTanta rabia acumulada que conducía al cantaor de la Isla a la negación de lo palpable, a bajar la cabecita y decir que lo blanco es negro por el sistema más antiguo que conozco, esto es, excluir la evidencia, negarse a ver aquello que nos horroriza, el fantasma de nuestras personales carencias:\n\nQué pena más grande tiene aquel que ha visto y no ve, más feliz hubiera sido si fuera ciego al nacer. P or ello, ahora sólo hay tiempo para la reflexión. Si él prefería al ciego de nacimiento, a impulsos de su rabia, es preciso que nosotros, mucho más serenos, nos remansemos en el lago de su miel, de su gracia insobornable. Camarón es, antes que nada, y no me importa ahondar en un pozo del que sé que se han de extraer muchos cubos de agua, un inmenso comunicador. Sobre todo para su pueblo, para su raza, que veían en él al elegido, al artista ungido por todo tipo de óleos sagrados, al gurú que, como tal, podía y debía salvar a su gente, conducirlos a la tierra prometida en donde habite una dicha no contaminada, al alcance de cualquiera.\n\nDebido a ello, como todos los profetas, Camarón, antes de su subida a los cielos hubo de padecer su pasión correspondiente. Buscó, tanteó, olfateó con su intuición sobrenatural, con su sensibilidad a flor de piel, por todos los senderos que una vida y una concepción artística pueden ofrecer. Sufrió persecución por la justicia de los que no creen en las diferencias, de los monolíticos e integrados. Su originalidad, su afán de búsqueda, fueron los signos determinantes que marcaron esa pasión asumida por José como un destino irremediable.\n\nAhora, días después de su subida a los cielos, nada puede dañarle. Ha resucitado para todos, limpio, transparente, más Camarón de la Isla que nunca, casi traslúcido al liberarse de tantas adherencias inmundas que en estos ambientes, no siempre limpios, pudiera haber asimilado. Al contrario de lo que algunos pudieran creer, nada malo le ha sucedido, pues estos acontecimientos de julio del noventa y dos, no han sido más que la culminación de un proceso iniciado desde el instante mismo en que fuera concebido. Hace un cuarto de siglo, cuando aún yo no entendía los enigmas de este hombre, se lo oí cantar por soleares:\n\nDel libro de la experiencia a un sabio le oí decir que se cumple la sentencia antes de llegar al fin.",
+    "title": "Pasión, muerte y ascensión a los cielos de Camarón de la Isla José Luis",
+    "periodical": "candil",
+    "issue_id": "1992-07",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 961,
+    "article_char_count_full": 5378,
+    "article_char_count_review": 5378,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-07-26-left-gracia-y-hondura-juan",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nHabía en su rostro siempre una expresión de gracia, determinada ingenuidad, algo angélico. Incluso para poner de manifiesto la tragedia, el desamparo, el desvalimiento. Con clara intuición se le ha llamado Príncipe; por antonomasia. Es como si José no hubiera querido —no quería— llegar a ser mayor. Y en su cante, incluso en los momentos de mayor desgarro, no faltaba nunca el aspecto de cierta dulzura, determinada gracia: la música al fin, el espíritu de la música siempre juguetón, siempre joven, $ \\underline{\\text{alegre}} $? quizá, pero a fuer de pesimista.\n\nEl cante de Camarón es rancio y radical, nuevo y liberador, está transido por estas dos coordenadas a un tiempo con la misma intensidad. Cabía esperar mucho de la capacidad transformadora del de la Isla, capacidad que surgía de una\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"interpretar\"]\n\nel espíritu de la música siempre juguetón, siempre joven, $ \\underline{\\text{alegre}} $? quizá, pero a fuer de pesimista. El cante de Camarón es rancio y radical, nuevo y liberador, está transido por estas dos coordenadas a un tiempo con la misma intensidad. Cabía esperar mucho de la capacidad transformadora del de la Isla, capacidad que surgía de una intuición inmediata, espontánea que hacía acto de presencia en el mismo instante de ponerse a interpretar lo que fuera. Sin duda que a ello contribuía de manera especial y directa su garganta, su voz especialí-sima, voz de niño sabio, de joven viejo. Según R. Pachón, José lleva-ba unos meses escuchando viejos discos de antiguos cantaores y preparaba un disco en que interpretaría sólo cantes clásicos. La Parca nos ha privado de esta maravilla. Más no ha de importarnos en exceso. El que tenga oídos y sepa escuchar que lo haga. Incluso en las grabaciones «comerciales» de José está presente siempre el soplo sublime del ángel o el vendaval arrebatador del duende. Que las formas arquetípicas son más ad\n\n[ENDING CONTEXT]\n\nestremecidos. ¿De qué manera había salido aquella improvisada armonización? Miré a Enrique que se echaba las manos a la cabeza, con un gesto demudado. Miró fijo a Camarón, pasó la mirada a mí que debía tener expresión de turulato y con voz entrecortada me dijo: «Es divino, es un dios».\n\nCuentan que Mairena dijo de él: «Canta “gracioso» y a fuer que es verdadero el acento. Pero incompleto. José estaba, en efecto tocado de la Gracia. Más, también había en él la jondura. ¡Ah! y algo a lo que algunos no suelen darle la importancia que ha de tener también en el cante: musicalidad ¡cómo afinaba!\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Gracia y hondura Juan",
+    "periodical": "candil",
+    "issue_id": "1992-07",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-26",
+    "page_number": 25,
+    "word_count": 1083,
+    "article_char_count_full": 6470,
+    "article_char_count_review": 2687,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretar"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-07-27-right-alre-de-la-fiesta-gitana",
+    "article_text_for_review": "Dibujos de Miguel Alcalá del libro «Le Flamenco et les gitans», Editorial Filipacchi, París, Francia, reproducidos bajo licencia del autor.\n\nTextos de Manuel Martín Martín\n\nCamarón de la Isla.—José Monje Cruz (San Fernando, 1950 - Badalona, 1992). Inscrito desde muy joven en la tendencia caracolera, pasó por ser el cantaor más activo en pos de una personalidad musical propia. Pocas veces se esforzó en revalorizar el auténtico cante gitano-andaluz, pero quemó todas sus energías en forjar un lenguaje universal inédito hasta el momento. Su gran mérito fue que sin ser rechazado, se permitió el lujo de presentar un producto muy diferente de aquel al que el aficionado estaba acostumbrado. La fenomenología camaronera fue la moda que arrollaba, y siempre nos concedió la esperanza de creer en unos duendes que pocas veces se dejaron ver. Fue, en síntesis, la asignatura pendiente de los clásicos y el eterno interrogante del futuro.",
+    "title": "Alreó de la fiesta gitana",
+    "periodical": "candil",
+    "issue_id": "1992-07",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-28",
+    "page_number": 26,
+    "word_count": 149,
+    "article_char_count_full": 934,
+    "article_char_count_review": 934,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-07-29-left-camar-n-de-la-isla",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCamarón de la Isla, El. Nombre artístico de José Monje Cruz, debido al color rubio de su pelo, pese a ser gitano. San Fernando (Cádiz), 1950. Cantaor. Desde muy pequeño cantaba en ventas —especialmente en la Venta Vargas—, y en fiestas íntimas, haciéndose profesional a los dieciséis años, en las compañías de Miguel de los Reyes y de Dolores Vargas. Tras una temporada en el tablao madrileño Torres Bermejas, graba su primer disco con la guitarra de Paco de Lucía, alcanzando una enorme popularidad y siendo requerido para actuar en los festivales andaluces como primera figura y con la máxima cotización económica del momento dentro del género flamenco. Exito que ha continuado tanto discográficamente como actuando ante los públicos de toda España. Es el cantaor preferido de la juventud\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"gran\"]\n\ngraba su primer disco con la guitarra de Paco de Lucía, alcanzando una enorme popularidad y siendo requerido para actuar en los festivales andaluces como primera figura y con la máxima cotización económica del momento dentro del género flamenco. Exito que ha continuado tanto discográficamente como actuando ante los públicos de toda España. Es el cantaor preferido de la juventud aficionada, y a pesar de lo corto de su trayectoria ha ejercido una gran influencia en muchos can- taores jóvenes, que le imitan abiertamente, por lo que en el ambiente flamenco se habla ya de cante camaronero, especialmente en los estilos de fandangos, tangos y tientos rumbas, bulerías y tarantos, a los que imprime una indiscutible personalidad. Su proyección ha traspasado las fronteras y goza de un gran cartel en el extranjero, especialmente en América. Está en posesión del Premio Nacional de Cante de la Cátedra de Flamencología de Jerez de la Frontera y del primer premio del Concurso de Mairena del Alcor. Su arte ha suscitado un gran número de comentarios, entre los que destacamos los siguientes: Manuel Ríos Ruiz: «El Camarón de la Isla es un artista mágico. Tras su aparición y consagración, puede decirse que empieza una nueva época por su gran influencia, no solamente en los intérpretes que le siguen, sino también en la afición, buena parte de ella creada por él mismo, pues su forma de cantar, que parece estar en cierto sentido a tono con los tiempos y las corrientes musicales modernas, ha promovido nuevos aficionados al cante flamenco entre la juventud española. Todo ello sin menoscabo de gustar y entusiasmar a los más exigentes y ortodoxos aficionados tradicionales. Y es así porque su jondismo está latente en su rajo, en su voz gitanísima, que aunque breve, es lastim\n\n[ENDING CONTEXT]\n\n«Indiscutiblemente, Paco de Lucía es el artista flamenco más popular de nuestros días. Con él, la guitarra flamenca puede decirse, por múltiples razones, que ha llegado a su cénit. Poseedor de una ejecución tan dinámica y turbadora, ha conseguido interesar y cautivar con su guitarra andaluza a los públicos más dispares y heterogéneos. Paco de Lucía, más que llevar a cabo una labor evolutiva, lo que ha realizado es una auténtica revolución». Junto a su amplia discografía como solista, ha grabado varios discos acompañando a cantaores, especialmente a «Camarón de la Isla».\n\nPaco de Lucía\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Camarón de la Isla",
+    "periodical": "candil",
+    "issue_id": "1992-07",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-31",
+    "page_number": 29,
+    "word_count": 1049,
+    "article_char_count_full": 6291,
+    "article_char_count_review": 3386,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "gran"
+      }
+    ]
+  }
+]
+```

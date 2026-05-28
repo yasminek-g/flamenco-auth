@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-07-22-left-cantes-nuevos-soleares",
+    "article_text_for_review": "¿CANTES NUEVOS? SOLEARES\n\nC on esta entrega, que fue precedida por dos anteriores, concluye este trabajo (¿CANTES NUEVOS?) dedicado a la Soleá, en lo referente a incorporar algo que pudiera ser novedoso en la creación o recreación de dicho palo y que ha sido publicado en un pasado reciente.\n\nEn la divulgación de estos títulos, se ha tenido en cuenta la fecha de publicación en la fuente discográfica y el hallazgo por nuestra parte.\n\nA continuación, pude comprobar en el nuevo LP de Calixto Sánchez, titulado «Calle ancha», que dichos estilos mencionados quedaban incorporados en uno de los títulos correspondiente a la soleá.\n\nDentro de los recitales programados por la Peña Flamenca «Pepe Montaraz» de Le-brija, fue invitado el cantaor mairenese Calixto Sánchez. En el repertorio del cantaor de Mairena del Alcor, fue incluido un cante por soleá. En mi curiosidad de aficionado, al llevarme grabado dicho recital, encontré con sorpresa dos cantes por soleá que de momento no podía encajar en los estilos tradicionales de este palo flamenco. Escuché varias veces dichos cantes y llegué a la conclusión de que podrían ser nuevos estilos soleaeros bien forjados (recreados) o creados por Calixto Sánchez.\n\nMás tarde, con motivo de la participación de Calixto Sánchez en la XXIV Caracolá lebrijana, dicho cantaor me confirmó la autoría de dichos estilos en su persona, sorprendiéndome gratamente por las dificultades que supone cuadrar musicalmente una nueva creación estilística.\n\nHe aquí los dos cantes a que hacíamos referencia, y que encabezan dicha soleá de una serie de cuatro estrofas, con la correspondiente reseña discográfica. Dichos cantes corresponden a dos estilos perfectamente diferenciados musicalmente.\n\n1. $ ^{a} $\n\n1 Repaso mi pensamiento\n\n2 y me acuerdo de aquel día (bis)\n\n3 que en el brillo de tus ojos\n\n4 yo noté que me querías.\n\n1 Con mentiras por barrera (bis)\n\n2 hay mala gente que quiere\n\n3 separarme de tu vera.\n\nA continuación, Calixto Sánchez interpreta dos nuevas letras (3.ª y 4.ª) que corresponden a estilos tradicionales de soleares.\n\nNiño Jorge",
+    "title": "¿Cantes nuevos? Soleares Ricardo",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 335,
+    "article_char_count_full": 2079,
+    "article_char_count_review": 2079,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-07-26-left-discografia-flamenca",
+    "article_text_for_review": "H e titulado este pequeño trabajo «La gaditanización de Diego Clavel» por cuanto la mayoría de los estilos recogidos en el mismo tienen los aires de la tierra gaditana, con el tratamiento personal que el cantaor suele dar a los mismos. Parece como si el nativo de la Puebla de Cazalla quisiera matizar al aficionado que, aunque su trayectoria artística se ha desarrollado por los derroteros de una línea flamenca que abarca los cantes más serios, y escribo serios en el sentido de manifestar la queja y el sentimiento flamenco, también suele abordar con determinada soltura unos palos que hasta estos últimos tiempos no han sido muy asiduos en su repertorio. Así, los caracoles denotan una salida personal y cierto afán de incidir en este aspecto en la totalidad de la grabación. Notable es la entonación y el compás en el mirabrás y otro tanto sucede en las cantiñas.\n\nPor otro lado, Diego Clavel denota con la matización dada a las colombianas que no quiere perder el tren de la citada aportación personal, así como del aflamencamiento de algo que ha estado anclado en el tiempo, como es la danza de los siglos XVI y XVII, que posteriormente se hiciera popular y fuera acompañada por castañuelas y que se denomina zarabanda. En este mismo sentido, la serie de juegos\n\nDiscografía Flamenca LA GADITANIZACIÓN DE DIEGO CLAVEL Rafael Valera Espinosa\n\nTítulo: MI SENTIR\n\nCanta: Diego Clavel\n\nTocan: Pedro Bacán y Fernando Rodríguez\n\nLetras: Diego Andrade Martagón «Die- go Clavel»\n\nEdita: PASARELA, S. L. Jesús del Gran Poder, 7, 2.° SEVILLA, 1990 melismáticos que utiliza en los tangos o en granaína y media granaína, patentiza aún más su matiz personal. En sus romances se aprecia el influjo de Antonio Mai-rena y en los tangos el de Pastora Pavón.\n\nOtra de las facetas nuevas que el cantaor ha querido poner de manifiesto en este trabajo, es su afición a la composición de letras flamencas, en un intento de no ser repetitivo en sus interpretaciones. Qué du-da cabe que cualquier trabajo creativo. De-be ser siempre positivo y así se intuye en Diego Clavel, pero creo que esta labor es bastante ardua.\n\nLas guitarras de Pedro Bacán y Fernando Rodríguez desarrollan un acompañamiento ajustado al compás de los estilos sin abusar de las falsetas, expresando cada uno su personalidad —encomiable la del lebrijano en las granaína y media granaína—, aunque en algunos palos como la colombiana y la zarabanda, persistía cierta monotonía.\n\nComo reflexión final, insistir en que esta inclinación de Diego Clavel por realizar los estilos festeros es bastante positiva; sin embargo, pienso que los logros conseguidos por el cantaor en el desarrollo de siguiriγas, soleares, tientos, etc., ha de tenerlos presentes para sucesivos trabajos.",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-26",
+    "page_number": 22,
+    "word_count": 451,
+    "article_char_count_full": 2728,
+    "article_char_count_review": 2728,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-07-23-left-hablan-las-pe-as",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nHABLAN LAS PEÑAS\n\nPeña Flamenca Unión del Cante\n\nMijas - Fuengirola\n\nPresidente: don Juan España Morales. Vicepresidente: don Manuel Cortez Fernández.\n\nSecretario: don José M. Arrebola Ruiz. Tesorero: don José Rodríguez Gómez. Relaciones públicas: don Lucas Luna Jiménez.\n\nDelegado de Flamenco: don Cristóbal Blanco Machuca.\n\nDelegado de Caseta: don Juan Lavado Sánchez.\n\nDelegado de Deportes: don Manuel Ro- jas Rubio.\n\nDelegado de Sede: don Antonio España Morales.\n\nContador-Auditor: don Lázaro Ruiz Sedeño.\n\nElegida en Asamblea General Extraordinaria celebrada el día 16 de marzo de 1990.\n\nPeña Flamenca Cultural Aires del Tajo\n\nPresidente: Benito Enrique Márquez. Vicepresidente: José L. Rodríguez Macías.\n\nSecretario: Juan J. Corbacho Guzmán. Vicesecretario: Miguel Alconchel\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"públicas\"]\n\nelegado de Sede: don Antonio España Morales. Contador-Auditor: don Lázaro Ruiz Sedeño. Elegida en Asamblea General Extraordinaria celebrada el día 16 de marzo de 1990. Peña Flamenca Cultural Aires del Tajo Presidente: Benito Enrique Márquez. Vicepresidente: José L. Rodríguez Macías. Secretario: Juan J. Corbacho Guzmán. Vicesecretario: Miguel Alconchel Linares. Tesorero: José González Navarro. Vicetesorero: Antonio Casas Márquez. Relaciones públicas: José M. Gómez Bal- berán. Vocales: José M.ª Benítez Reyes, Sebastián Sánchez Romero, José Morey Moreno, Maximino Ruiz Montero. Noche de gloria en Biarritz 14 de julio de 1990 El día 14 de julio, Francia conmemora el aniversario de la toma de la prisión de la Bastilla en 1789, símbolo de una reencontrada libertad. Toda la noche, los fuegos artificiales y las luces de bengala iluminan todos los pueblos del país. En Biarritz, el celebrísimo Hotel du Palais organiza una gran cena de gala acompañada de un espectáculo. Este año, los oros, los cristales y los bronces del palacio imperial (de Eugenia de Montijo) han formado el decorado de un tablao flamenco que vibró, de manera impresionante, bajo los pies embrujados del cuadro de Merengue de Córdoba, invitado por el comité directivo aconsejado por la Peña «La Debla». Junto con los cantaores Joselete de Linares y Manolo Cortés, acompañado por Antonio Flores en segunda\n\n[ENDING CONTEXT]\n\ncomo hacemos los demás en nuestras revistas, estudios históricos del tema flamenco (interesantes las páginas dedicadas a El Chaqueta) con reflexiones sobre el porvenir y el presente de este arte, así como emocionantes despedidas a nuestros recientes muertos ilustres (Vallecillo, Cano o Sabicas).\n\nAmigos linenses, suerte en la andadura jonda que ahora iniciáis. Os esperaremos en cada una de vuestras salidas con el aliento y el apoyo de verdaderos compañeros.\n\nEspectáculos Internacionales\n\nParticular: Teléfono 27 80 78 O'Donnell, 3, 4.° Piso Teléfonos (954) 22 20 58 y 21 69 20 SEVILLA\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Hablan las Peñas",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 974,
+    "article_char_count_full": 6243,
+    "article_char_count_review": 2979,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "públicas"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-07-24-left-noticiario-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nMadrid Flamenco\n\nVergonzosa actuación del Chocolate\n\nAntonio Corcobado Arroyo\n\nM al correspondió este artista a la cuidada programación que hizo el Excmo. Ayuntamiento de Madrid a través de su Concejalía de Cultura, concediéndole la inauguración de los Veranos de la Villa, que en la chopera del Retiro se celebran este año, y que había causado la natural expectación al darle la primacía a un veterano artista en el que se habían depositado las esperanzas de una gran actuación, que se vieron truncadas por la inadecuada presentación de este cantaor, al realizarla en unas condiciones que, como se demostró a través de toda su actuación, debieron evitarse.\n\nLamentable fue su comportamiento con el tocaor «El Bola» a quien él personalmente eligió como acompañante, sin que nadie se lo impusiera,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"público\"]\n\nustificar su falta de compenetración artística de manera tan poco seria como incorrecta, cuando su distonía no se debía a otra causa que a las circunstancias de excesos sabidos por todos, que le desequilibró anímicamente, llevándole en su discurso a unos planteamientos que además de nadie habérselos pedido, tampoco él supo en su desvarío explicar lo que quería o pretendía decir. De este lamentable espectáculo, en muy buena parte fue causante el público asis- tente, demostrando con su aliento al can- taor una falta de seriedad que dice muy poco en favor de la dignidad de que se pretende rodear a estos espectáculos ver- raniegos, de los que debe suprimirse el «cachondeo y la estupidez» de los espec- táculos flamencos. Chocolate ha logrado con su nefasta actuación cargarse en media hora los esfuerzos de una gran cantidad de intelectuales y gentes que saben de este género, que se han esforzado por dar al mismo una seriedad y dignificación que ha costado muchos años lograr, y sería conveniente que la censurable actitud del público no volviera a repetirse, si es que algún otro artista se viera asaltado en alguna improbable actuación de la estúpida locuacidad que en este artista hizo presa en su comportamiento. Al cantaor se le contrata para que cante, tr\n\n[ENDING CONTEXT]\n\nhasta determinar su fallecimiento.\n\nDescansa en paz querido amigo y para tu señora, tus hijos y tu hermano Angel, desde estas columnas os enviamos nuestros sentimientos.\n\nAsistió a tan doloroso acto el padre Bartolomé Rizo Pastor, buen amigo de los allí todos presentes, que cerró el acto con una piadosa plática.\n\nComo fue grande su entrega, fue también grande la cosecha de amigos que ha dejado entre nosotros, muchos de los cuales asistieron a su enterramiento emocionados por el dolor, al que él no concedió ninguna importancia aún conociendo su mal diagnóstico.\n\nAntonio Corcobado Arroyo\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Noticiario flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "news_roundup",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 1868,
+    "article_char_count_full": 11197,
+    "article_char_count_review": 2888,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "público"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-07-25-right-agosto-y-los-flamencos-llamados-",
+    "article_text_for_review": "E l mes de agosto ha sido, a lo largo de la historia del flamenco, poco indulgente con la existencia de determinados artistas llamados Manuel. El octavo mes del año ha segado no pocas vidas de estos Manolos que fueron baluartes del flamenco, cabales del arte; siendo poco generoso, como contrapartida, a la hora de proporcionarnos homónimos para sustituirlos.\n\nSólo sé de un Manolo nacido en esta mensualidad de cosecha y recolección: Manuel Mancheño Peña «El Turronero», y que en justa reciprocidad con su sobrenombre artístico, debería haber nacido en diciembre. Para el emperador Octavio Augusto en cuyo honor se cambió el nombre de Sextilis por el de Augustus, y para la historia de la Revolución Francesa (noche del 4 de agosto de 1789 en la que se celebró Asamblea constituyente y se votó la supresión de varios de los privilegios feudales que todavía subsistían), este mes canicular ha sido efectivo, pero los artistas que ahora vamos a recordar, la verdad que tienen poco que agradecerles. Vamos, que no hicieron su agosto.\n\nEl más antiguo de los fallecidos durante este mes es El Canario, cantaor malagueño de Alora al que siempre hemos tenido por Manuel y al que Yerga Lancharro descubrió inscrito como Juan. Pero por Manuel Reyes se le sigue nombrando siempre que se habla de él. Creador de malagueñas y maestro de los por entonces inominados cantes de Levante, vino a morir asesinado en Sevilla el 13 de agosto de 1885. Manuel Jiménez y Martínez de Pinillo, artísticamente conocido por Manuel Vallejo, es el segundo en el escalafón de Manuelles difuntos en el mes de agosto. Sevillano de nacimiento y universal en su arte, este Manolo de voz laía, algo estráfico y de temperamento propenso a la irritabilidad, marcó toda una época del cante y fue primerísima figura de la «Opera Flamenca». Vino a morir en su ciudad natal el 7 de agosto de 1960. El célebre músico y folclorista Manuel García Matos, nacido en la cacereña Plasencia, es el tercer fallecido de los anotados en el mes de agosto. Catedrático de Folclore del Real Conservatorio de Madrid, publicó numerosos estudios sobre flamenco compilados en su libro póstumo «Sobre el flamenco (Estudios y notas)». Fue autor también de «Danzas populares andaluzas» y dirigió la antología discográfica de Manolo Caracol. Este Manuel se nos fue en Madrid el 27 de agosto de 1974.\n\nCerramos el capítulo de finados caniculares con Manuel Oliver Dorado, trianero de pro y cantaor representativo del Zurraque. Pese a los muchos oficios practicados, el cante estuvo siempre presente en él. Cante para los suyos, los aficionados de Triana y aquellos otros que supieron escuchar. Cantaor de la Cava de los Civiles, se apagó en su barrio sevillano el 14 de agosto de 1989.\n\nOtro Manuel, éste malagueño, forma también parte de la nómina de fallecidos en el octavo mes del año. Manuel Soto Fernández, conocido por «Manolillo el Herraor», vino al mundo con el siglo y fue discípulo de «El Piyayo». De sus cantes grabó un disco en 1971 y fue además un buen intérprete de martinetes y soleares. La ciudad que le vio nacer le vio también morir el 10 de agosto de 1980.\n\nEsperemos que en el futuro haya más igualdad entre los doce meses del año y se respete el santoral más equitativamente.\n\nSi alguna vez intentáis hacer algunas grabaciones de placas antiguas a cassettes o a LP, tened muy presente que los derechos de los autores son hoy, más que nunca, «derechos sagrados» cuidadosamente protegidos por el Código Penal.\n\nLa Ley que regula el derecho de la Propiedad Intelectual, de fecha 11 de noviembre de 1987 hay que conocer la por necesidad, para no vernos envueltos en un procedimiento judicial.\n\nLo primero que hay que estudiar son los artículos 102,3, 106, 109 y 111.\n\nLos derechos de los cantaores prescriben a los cuarenta años\n\nDesde que dieron comienzo las grabaciones fonográficas, hubo una mayoría de intérpretes que vivieron en la mayor de las indigencias y como pasa siempre: «al perro flaco, pulgas», o lo que es lo mismo, al intérprete muerto de hambre se le entregaban unas pesetas, en el acto de grabar, y cedían todos sus derechos en favor de la casa grabadora.\n\nTambién esos derechos de las casas grabadoras prescriben a los cuarenta años\n\nExiste otro derecho de más larga duración: el del letrista, que lo será de por vida. Pero una vez que ha fallecido, pasa a sus causahabientes por sesenta años (todavía no ha prescrito el derecho de don Antonio Machado, por ejemplo).\n\nMi recomendación\n\nSi se decide a lanzar una cassette o un LP con cantes antiguos, deberá facilitar a la Oficina de Autores de su capital de provincia, una relación de los cantes con indicación del nombre del letrista. Así:\n\nCantaor: Manuel Vallejo.\n\nCante: Malagueña.\n\nLetra: Tú estás dormía en tu cama.\n\nLetrista: M. Vaca.\n\nY después no tiene más que esperar hasta que Dios quiera.\n\nSi las grabaciones las hace de forma clandestina o fuera de la Ley, se le echará el Código Penal encima y además los letristas o sus herederos le exigirán, de momento, el 50 por 100 de los beneficios que se haya obtenido en la comercialización de la cassette o del LP.\n\nSalúdoles\n\nManuel Yerga Lancharro\n\nNOTA: Sé que en la mayoría de las placas no consta el nombre del letrista, pero esto no es obstáculo que impida el facilitar la relación de los cantes a grabar.",
+    "title": "AGOSTO Y LOS FLAMENCOS LLAMADOS MANUEL",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 907,
+    "article_char_count_full": 5290,
+    "article_char_count_review": 5290,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

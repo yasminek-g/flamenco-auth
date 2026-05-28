@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-03-13-left-chano",
+    "article_text_for_review": "Fernando Quiñones\n\nChano\n\nM uertos ya los que, a mi entender y aún con mayor nectitud fue un Aurelio Sellé o un “Pericón”, interpretaron la escuela gaditana de Cante en las últimas décadas, son Chano Lobato, “Rancapino” y Juan Villar. Aquellos ausentes a los que empecé aludiendo se llamaron Manolo Vargas y Ramón “Jarana”; de los actuales, Chano Lobato, el más veterano, es también el más libre ejecutor del estilo de Cádiz, que cuenta con Triana y Jerez como una de las tres Mecas flamencas clásicas. Los primores y travesuras de compás a que llega el arte interpretativo de Chano, la trémula emoción que lo empapa unida (eficaz, increiblemente unida) a sus rasgos alegres y festeros, dan por resultado una personalidad admirable en la que se quintaesencian las peculiares maneras de los cantes de Cádiz.\n\nCHANO\n\nMuerto ya los fue, a mi entender y aun con mayor netitud que un Aurelio Selle lo en \"Pericion\" interpretaron la escuela Jadiana de Cante, en las últimas décadas, son Chano Lobato, \"Rancapino\" y Juan Villar. Aquellos ausente a los fue jempecé aludiendo. Se llamaron Manolo Vargas y Ramón \"Jarana\"; de los actuales Chano Lobato, el May veterano, es taubúel el más libre ejecutor del estilo de Ca'd'f, fue cuenta con Triaway Jerez como pua de las tres mecas flauezas clárias. Los primores y travesuras de compa's a fue lleja el arte (interpretativo de Chano, la tremula emocional que lo empapa, unida (aficaz, increiblemente unida) a Sus rasos aleres y festeros, dan por resultado una personalidad admirable en la fue Se quintalescían las reuniones anneras de los cantes de Ca'd'z.",
+    "title": "Chano",
+    "periodical": "candil",
+    "issue_id": "1997-03",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 266,
+    "article_char_count_full": 1593,
+    "article_char_count_review": 1593,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-03-13-right-a-chano-lobato-en-apasionado-hom",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAgustín Gómez\n\nSi en el principio del Génesis fue el Verbo, en el principio del flamenco fue la voz, esa voz «piel tensa —de la que hablara el poeta—, tambor sin lado o perfil que sube, baja y destrenza lo que es oculta raíz». La de Chano, voz de pecho bronco con brillo diamantino; negra como una piconá, caliente, muy caliente; entre agresiva y tierra entre ruda y amable; siempre humana, como piconá encendida; generoso por naturaleza; su dinámica, muy decidida y animosa; su actitud, muy vitalista. Voz de océano negro y profundo que desgarra el acantilado con un bramido terrible; voz abonada de rico cultivo que se torna en sonrisa. El milagro cantaor de Chano es transformar el duende atormentado en la sonrisa de un ángel ingrávido y etéreo. Otro gaditano, poeta éste, escribió desde su\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"interior\"]\n\nentre ruda y amable; siempre humana, como piconá encendida; generoso por naturaleza; su dinámica, muy decidida y animosa; su actitud, muy vitalista. Voz de océano negro y profundo que desgarra el acantilado con un bramido terrible; voz abonada de rico cultivo que se torna en sonrisa. El milagro cantaor de Chano es transformar el duende atormentado en la sonrisa de un ángel ingrávido y etéreo. Otro gaditano, poeta éste, escribió desde su tormenta interior mejor que nadie sobre los ángeles. Cádiz no ha conocido el campo. Rodeada de mar con una puerta a tierra siempre ha sido ciudad, la más antigua de nuestro suelo, y se aprecia en su cante. Es de una refinada evolución técnica, de curvas pronunciadas, de situación límite en la media voz tostada por el Levante, que se quiebra en fraseos cortos y acentos rítmicos picoteando un compás voluptuoso. Porque el cante de Cádiz es sonido que se palpa y... -¡qué gracia de contraste!- sutil y de capricho, finísimo y delicado arte musical donde los haya. Aquella anécdota del duende-tarah que nos cuenta Quiñones sitúa a Chano Lo-bato junto y frente a Caracol, dos temperamentos y sensibilidades afi- nes, aunque ninguno de ellos renunciara a su propia personalidad. Chano es Cádiz, ciudad romana; clásica, nunca romántica. Sin embargo, esta tacita fina y cultivada puede llegar a un modernismo altisonante que es tanto como un romanticismo con espíritu de grandeza. Ahí las coplas de doña Concha o los tangos de Gardel en un caldito caliente con picatostes acompasados que resucitan a un muerto avanzada ya la madrugada. Lo suyo es sensualidad, mímica, sonido y eco en su pecho -¡oh, eterna paradoja del flamenco!- de mar embravecido. Chano no hace el cante proletario de Jerez; canta al mundo desde su asentamiento tres veces milenario. El nombre artístico le viene de su padre: Chano (familiar de Sebastián) Ramírez Lobato. Que omitiera para sus vecinos el primer apellido Ramírez es consecuencia del matriarcado andaluz en las clases más populares. No hay antecedentes artísticos en nuestro Juan Ramírez Saravia, si acaso una tía suya \"se daba una vueltecita\". \"Mi padre (el primer Chano Lobato) daba consejos y opinaba de política muy familiarmente mientras le leían el periódico y compartía su cuartillo de vino\". Este Chano de nuestro h\n\n[ENDING CONTEXT]\n\n¡Qué difícil es la explicación del arte desde el papel!; pero bueno, tengamos la suerte de topar con nuestro cantaor a gusto en reunión de peña, que es la inmensa mayoría de sus ocasiones. La cosa puede resultar clara y fácil de entender. Chano tiene la sabiduría de sus años y la generosidad de su juventud primera, pues no escatima esfuerzo, repertorio ni conocimiento. Lo da todo a manos llenas, a borbotones bien organizados. Es posible que siempre tenga la imaginación puesta en el baile, así es más redondo: tiene ya un ideal, un destinatario seguro y se mueve alumbrado hacia la perfección.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "A Chano Lobato en apasionado homenaje",
+    "periodical": "candil",
+    "issue_id": "1997-03",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-16",
+    "page_number": 13,
+    "word_count": 2405,
+    "article_char_count_full": 14306,
+    "article_char_count_review": 3917,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "interior"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-03-17-left-chano-lobato-un-eslab-n-perdido",
+    "article_text_for_review": "Els indudable que a priori resulta sumamente fácil escribir a cerca de este insigne personaje, reliquia de pasados gloriosos y estandarte actual de una estirpe ya extinguida de luminarias flamencas que ya no volverán porque ni los tiempos son los mismos, ni las formas se respetan, ni siquiera los modelos de ejecución se parecen a aquellos pretéritos ni nada de nada.\n\nSin embargo, esa facilidad antes aludida es una trampa para quien esto escribe, puesto que personajes como Chano resultan irrepetibles y captar todas sus cualidades y sutilezas resulta harto difícil. Rey del compás, Cai en su voz, las salinas son su cante, banderillero (como él, en rasgo sin límites de humildad, se califica), número uno del escalafón di-\n\nríamos nosotros, etc., etc. Es otra forma de cantar, otro patrón de interpretación y así mismo un cultivar viejos y bellos estilos que estúpida-mente nuestros modernos “maestros” han abandonado por ser muy “gachés” o considerarlos fuera de época cuando la verdad es que la mayoría desconocen la forma de ejecutarlos. Chano, evocando a sus viejos maestros, resulta ser a estas alturas el eslabón perdido entre la pléyade de auténticos flamencos de antaño y la generación actual, todo eso impartiendo magisterio día a día, en cuanto a profesionalidad, cono-\n\ncimientos, saber estar, educación y... jcompás al cubo! Hablar de Chano es hablar de torrentes de gracia y \"age\", de afición sin límites y vivencias millionarias; de alternar o haber alcanzado a la flor y nata del Flamenco; mundo y más mundo con egregias figuras del baile, el cante y la guitarra; amigos de corazón de los de antes, juergas y noches, noches y días, y meses, y años hasta sentirse herido en lo físico y en lo moral aunque eso sí, respetado y querido, admirado y reconocido, y premiado aunque poco pagado crematística-mente por todo el orbe de gente de\n\nbuenos sentimientos porque así son los de mi dilecto Chano. Me niego a estas alturas de su vida a hacer una detallada y aburrida biografía de este sabio gaditano por considerar a Juan incombustible y sin edad, le admiro como es y bebo día a día hasta la última gota de su arte. Ya hace tiempo que Chano Lobato llegó al Olimpo sin orgullo ni rencores, porque él no los conoce, y aunque su salud de vez en cuando nos dé un sustito, ahí está en el escalafón especial deleitándonos noche tras noche con esa forma tan calentita y pegajosa de subirse a un escenario y de derramar sus dones y su gracia, empapándonos de esencias flamencas plenas de sal gaditana: espléndidamente, sin taca-nería.\n\nEstos regalos, por otra parte, para él tan queridos como su “romí” Rosario o su “chavoró” Chanito los ha derramado largamente Juan a lo largo de su vida artística por doquier. Valga el símil taurino tan releído para este honrado profesional cuyas faenas más ilustres se han producido en los medios del ruedo-escenario donde los maestros nunca mienten, y donde la verdad rebujaía con el inmenso “canguelo” que le domina explota en una catarata brillante y espumosa de gracia, son, compás y música para goce y climax de los que le escuchan.\n\nChano, viejo amigo, maestro de maestros, “güena gente”, cabal y pelín “jumeta”, te mando en estas torpes líneas pergeñadas con urgencia mi corazón, mi reconocimiento y mi deseo de que tu memoria quede perpetuada por los siglos de los siglos. Viva tú, Chano Lobato.\n\nArriba: En la Peña Flamenca “La Soleá”, de Palma del Río, con su hijo Chanito Abajo: Cantándole a su “romi” Rosario en el Teatro Calderón",
+    "title": "Chano Lobato: Un eslabón perdido",
+    "periodical": "candil",
+    "issue_id": "1997-03",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 593,
+    "article_char_count_full": 3487,
+    "article_char_count_review": 3487,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-03-17-right-de-macaca-a-chano",
+    "article_text_for_review": "“Sobre gustos no hay nada escrito”, proverbio donde se refugia el aficionao cuando comparando valores artístico-flamencos, la conversación transciende a la discusión, a la disputa y de ahí a la falta de respeto. No creo que de este número monográfico de Candil, surja nada parecido, ya que sus colaboradores dirán que Chano Lobato es un fuera de serie como cantaor festero. Otra cuestión sería encuadrar a este cantaor en el grupo “cante alante” donde han sido muchos —emínentes— que al igual que Chano tuvieron sus comienzos profesionales con servidumbre al baile: Antonio Mairena, Manolo Vargas, Chato de la Isla, Terremoto, Lebrijano, Chaquetón, Juanito Villar, Camarón, y un largo etcétera.\n\nAcude a mi memoria el nombre de Miguel Cruz \"Macaca\", que al decir del maestro Pepe \"El de la Matrona\", \"fue el mejor cantaor festero de su tiempo; con dominio general del cante, demostrado cuando por circunstancias la función lo requería. Admirado por el gran Silverio, que le contrató mientras pudo en su famoso café de cante, para cantar a las mejores bailaoras/es que allí actuaban\". También otros nombres me han traído recuerdos gozosos por mí vividos: Manolo Baena \"Espeleta\", \"El Güiza\", Chiquito Campoy, \"Chaqueta\", \"Chaleco\", \"Boquerón\", \"Turronero\", Fernando Gálvez, Curro Fernández, \"El Moro\", \"Escapachini\", \"Palacín\", \"Cancanilla\", Silverio Heredia, etc., etc., sorprendióndome de que sin premeditación, los mencionados son en su mayoría gaditanos. Sí, gaditanos, porque para Antonio Escribano\n\nmí todos los pueblos de Cádiz son gaditanos: Jerez, Sanlúcar, El Puerto, Chiclana, Algeciras, etc., y es que, “Del Cuervo pa’abajo, está el ajo”. Es la tierra madre del flamenco, del ritmo y compás, o sea: del “son”, a lo que sumando su vino, y la gracia simpar de sus gentes, da todos los componentes necesarios e imprescindibles para vivir una reunión flamenca. ¿Me falta algo? ¡Ah, ya!, mencionar que esa reunión indefectiblemente comenzara y termina por fiesta.\n\nDe Macaca a Chano, en un brinco festero en la historia, con palmas de todos los gaditanos y un salir jaleado por todos los flamencos que un día pusieron su mejor intención para aproximarse a este quehacer gaditano, de tangos, tanguillos, cantinas, chuflas y bulerías. Algunos salieron tan airosos que hasta nacimiento gaditano quisieron atribuirles, caso de Manuel Vallejo; otros aún siendo oriundos, viéronse forzados a refrescar la escuela festera gaditana \"in situ\", como afirmaba Juan Vargas, recordando las noches que en su Venta de Vargas, Manolo Caracol, entre cante y vino fino, bebía bulerías de Corruco de Algeciras. Y por último los más con nombres y fama grande, sólo quedaron en parangón, no pudiendo excederlo por faltarles gracia, sal, brisa y todo cuanto modifica esa esencia que se acomoda al vivir de cada comarca. Gadaira, Gadis, Gades, Cádiz... Cuando atraídos por tu fama, tu isla fue visitada por los maestros de la danza —primeros— del Jónico oriental, asombrados por tus bailes y tus cantos, dijeron que en ti se hallaba el cielo de Terpsícore, pero alguien les dijo que, en el continente, cerca del Templo de Meltart-Heracles, una discípula de esa musa, llamada Leyla, había creado un limbo..., al que solían asistir Dionisos y Pan.\n\nPara regocijo, admiración y gloria, tuvo que nacer en Cádiz Juan Ramírez Sarabía, que como Chano Lobato se ha escrito con letras de oro en la Historia del Cante Flamenco.\n\nChano, en ése, tu terreno festero has sido el más grande incluyendo a los grandes que un día se fueron al \"cante alante\". No surgirá la disputa, no temas, son cosas más refren-dadas por los mejores bailadores, gui-tarristas y cantaores de la segunda mitad de este nuestro siglo. Todos afirmamos que escucharte es una go-zada, que en un buen rato suenas a gloria y que en un superdía nos arrancas de la realidad, dejándonos asidero a un \"son\" misterioso meci-do por el duende del delirio.",
+    "title": "De Macaca a Chano",
+    "periodical": "candil",
+    "issue_id": "1997-03",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 627,
+    "article_char_count_full": 3889,
+    "article_char_count_review": 3889,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-03-18-right-chano-un-lujo-del-sur",
+    "article_text_for_review": "í, artistas y personas como Chano Lobato son todo un lujo para Andalucía, como se le ha sabido reconocer oficialmente.\n\nDe Chano siempre nos ha impresionado su dominio del compás, su conocimiento de los cantes —sobre todo de los de su tierra—, su gracia hablando, contando y cantando. Es una garantía artística y humana este Chano que sólo inspira confianza y ternura.\n\nFrente a los experimentos no siempre prudentes, Chano sitúa, humildemente, sin aspavientos, su cante de solera, con sabor a Cai, a salinas, a aire besado de sol y mar. Con sabor a Andalucía, a verdad.\n\nFrente a los chisteros televisivos de turno, tantas veces horteros y falsos, Chano, también sin pretenderlo, tan espontáneamente como el ave traza su vuelo o su surco interno la raíz, planta su aire de caballero, su ángel, su elegancia andaluza en el arte de contar con toda la gracia que la sal de su Cai es capaz de dar como un don que no se compra en sitio alguno.\n\nconozcan la hermosura de ese diamante artístico que junta de forma natural el duende y el ángel.\n\nArte y donaire, en fin, que se tiene o no se tiene, y que, cuando se tiene, se entrega gratuita y gozosamente a los demás, disfrutando contando y cantando a los otros para que éstos Nunca cambies, Chano, ni una cosa ni la otra. Sé eterno, Chano divino, Chano humano. Lujos así... no hay tantos en el Sur. Hazte aún más grande, que aún hay más ascuas en tu cante y más sal en tu boca, y más belleza en tu corazón. En fin:\n\nDejadle pasar, que viene de Cai con toda su sal.",
+    "title": "Chano, un lujo del Sur",
+    "periodical": "candil",
+    "issue_id": "1997-03",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-18",
+    "page_number": 18,
+    "word_count": 277,
+    "article_char_count_full": 1509,
+    "article_char_count_review": 1509,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

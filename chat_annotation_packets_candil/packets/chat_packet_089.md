@@ -1,0 +1,165 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1984-01-23-left-yerga-lancharro-quienes-fueron-l",
+    "article_text_for_review": "Lo mejor de Pepe Marchena\n\nPor Manuel Yerga Lancharro\n\nFandango\n\nComo el que se está muriendo A una pobre liebre hería Qué desgracia es la mía Cómo relucen Aunque fuera mi enemigo Que la guitarra lo llama No niego que te he querido Tengo penas mal de mí Vivir contigo tampoco Lo que yo la camelaba Y no te llamas María De oro barcelonés Le dije que te quería Pobre mi China querida Nunca le falta una pena Obra como a ti te cuadre Un ruiseño cantaba Ni a los hombres, ni a las fieras De un arbolillo frutal Si yo no puedo quererte Yo te he querido, no lo niego Pero como tú ninguna Lo remedian los doctores Que por la serranía pasaba Que me sirva de compañía Tú has perdido conmigo Siempre te encuentro llorando Al encontrarme perdía Cruzan los mares Tengo un libro escrito yo Fiesta de romería Yo me enamoré de ti La venganza Dime donde estás metía Quisiera ser perla fina (y Niño de la Flor Mamaíta de mi alma Yo no te quiero De las cristalinas aguas Y fue una noche mi cuna Se hizo la desentendía Que su querer lo dejara Llamarme por Soleá No llores guitarra mía Eres bonita Se mete entre los zarzales Los templarios de Málaga Deja franca la verea A esta triste sepultura Tu último adiós Pinceladas andaluzas La plaza del Potro Cuando expiró el Redentor El aire de magestad Un pastorcillo venía A los montes de Armería Aquel que tenga familia La camisa del cuerpo Soy Séneca en el saber No soy el diablo romera En mi celda de la Luna Roma tembló de espanto Madrugá en el Calvario\n\nIdem Idem Idem Idem Idem Idem Idem Idem M. Bonet Idem Idem Carlos Verdeal Idem Idem Idem Carlos Verdeal Idem Idem Idem Idem Idem Idem N. Ricardo Idem Idem Idem Idem Idem M. de Badajoz M. de Badajoz y Alfa Idem Idem Idem M. de Badajoz Paco Aguilera Idem Idem Trifón Rodríguez Idem Idem Paquito Simón Idem Idem Idem Idem Idem Banda Banda Paquito Simón Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Banda Banda",
+    "title": "YERGA LANCHARRO QUIENES FUERON LOS",
+    "periodical": "candil",
+    "issue_id": "1984-01",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-24",
+    "page_number": 23,
+    "word_count": 361,
+    "article_char_count_full": 1910,
+    "article_char_count_review": 1910,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-03-3-left-editorial",
+    "article_text_for_review": "EDITORIAL\n\nA noticia pudiera parecer irrelevante, sin más contenido que el de figurar en el árido anecdotario de la común actividad política: en un determinado pueblo andaluz, el Consejero de Cultura de la Junta de Andalucía asiste al acto de inauguración de una calle a la que se ha engrandecido con el nombre del recordado maestro Antonio Mairena. Nada, aparentemente, que merezca destacarse. Pero cuando uno sabe que éste ha sido el primer acto oficial del nuevo Consejero de Cultura, la noticia sí alcanza cotas importantes de significación.\n\nLas instituciones existen, deben de existir por encima de las personas y de las opciones políticas. Y es éste un axioma tan simple y, acaso, tan tau-tológico que olvidamos constituye la clave del buen funcionamiento de un país, singularmente en el área de cultura. No nos referimos sólo a la galanura de un gesto, el que ha protagonizado el recién estrenado Consejero de Cultura, pleno de deferencia hacia «lo jondo», sino a mucho más: a lo que significa de reconocimiento de la cultura flamenca, dentro de la máxima Institución andaluza. A este pueblo, por la vía de la trivialización de sus más recias y ancestrales expresiones, desde un centralismo cultural que incentivaba una especie flamenca elevada a la categoría de folklore oficial del Estado, se le habían expropiado contenidos esenciales de su cultura.\n\nResulta reconfortante, cuando menos, que el más cualificado responsable del área de cultura dentro de la Junta de Andalucía, inicie su gestión con tan flamenquísima andadura: la evocación del admirado maestro Antonio Mairena. Con ello no estamos propugnando una institucionalización, en sentido estricto, del flamenco, la cual anquilosaría, en último término, esta expresión como cualquiera otra de naturaleza cultural, hasta degradarla. Ese ha sido el error de estrategias culturales anteriores preocupadas, con su dirigismo, por implantar, manipulándola, una cultura homogeneizadora. Lo que sí debe institucionalizarse es la tutela del flamenco como permanente empeño por crear unas condiciones objetivas que posibiliten la identificación de lo genuinamente jondo, así como la reprobación de tantos y tantos espúreos sucedáneos.",
+    "title": "EDITORIAL",
+    "periodical": "candil",
+    "issue_id": "1984-03",
+    "year": 1984,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 337,
+    "article_char_count_full": 2192,
+    "article_char_count_review": 2192,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-03-4-left-angeles-ortiz-desde-el-homenaje-",
+    "article_text_for_review": "L filo de la primevera se nos ha ido, ¡ay!, Mano- lo Angeles Ortiz, aquel de la eterna sonrisa y la mirada vibrante.\n\nNoventa años de historia contenidos por dos fechas (Jaén, 13 de enero de 1895-París, 4 de abril de 1984) han quebrado su dinámica al horizontalizarse, eternamente inmóvil, la romana cabeza del pintor. Casi sin darse cuenta, como entre sueños, agarrado a las alas de sus «ángeles pajoleros» entre burbujas y estrellas se nos ha subido oblicuamente hacia ese cielo español de su Andalucía originaria.\n\nAquel que realizara el cartel del mítico primer concurso de cante flamenco celebrado en la Granada de 1922, cuyo nombre quedase excluido u olvidado (como si no existiera), para el segundo concurso celebrado cincuenta años después en la misma ciudad, nos ha abandonado, justo —casualidad aparte— cuando dibujaba los bocetos del cartel que debería anunciar la «III Bienal de Flamenco» a celebrar en Sevilla, que le había encargado, por carta, el alcalde de la ciudad.\n\nUna guitarra de la que salían estrellas y burbujas, se dejaba ver entre un tejar de líneas trazadas temblorosamente sobre el papel, en las últimas tardes del pintor que con una lucidez increíble me decía: «Mira Miguel, esta es una guitarra tendida de la que salen estrellas y burbujas. Pero ves, me falta sitio; no sé por qué los carteles tienen que tener un formato determinado, para que las estrellas y las burbujas se vieran ascender simbolizando la infinitud del flamenco». Y repetía: «El flamenco es una cosa extraordinaria» —la palabra extraordinaria adquiría, siempre que Manolo la pronunciaba, un valor especial—, «fíjate bien lo que representa mantener un valor de pureza a través de los años, del tiempo».\n\nDurante las cuatro tardes que pasamos con él unos amigos de Jaén y yo, recordamos mil cosas mientras acudían a su alma otras tantas nostalgias entre «descompostura y descompostura», como él decía. Luego, cuando nos íbamos, seguía con los bocetos para ese cartel de flamenco que sólo él ha visto terminado, mientras lo consumía la impaciencia y lamentaba no ver terminado el monumento a su compadre Federico: «no tengo tiempo de esperar... son ya muchos años... las piernas no me sujetan y las manos sólo me sirven un rato cada día.\n\nTodo era congelado recuerdo en la casa de los Angeles, ubicada en un elegante barrio parisino en cuyas paredes pintadas de blanco cuelgan las obras del pintor y de su mujer. Dentro, el estudio de Brigitte, sobre un sencillo mueble de madera que hay frente al piano, de cuyo costado pende un largo rosario, dos fotografías: una de Brigitte con el matrimonio Picasso, y la otra de Manolo Angeles con Federico.\n\n—«Fuimos universidades recíprocas el uno para el otro», me decía el pintor hablando del poeta granadino.\n\nLuego, más adentro, en la estancia contigua dedicada al estudio de Manolo, junto a un montón de cuadros apilados y una mesa en la que los papeles se agolpan desordenamente, como único elemento visible, una fotografía en blanco y negro del Entierro del Conde de Orgaz.\n\nDesde allí se nos ha ido, o acaso se nos ha venido a este cielo azul que nos envuelve a manera de cúpula infinita, guiado por sus «ángeles pajoleros» y revoloteadores, ¿te acuerdas? Desde allí estarás viendo tu sur contemplativa-mente como tú solías, después de lavarte los ojos cada mañana en la fuente del Abellano, para mantener eternamente limpia aquella primera propuesta artística de la «Generación del 27». «La primacía de la metáfora, la evasión de la vista cotidiana, el predominio de lo breve, el signo ahistórico y apolítico de la poesía», de la pintura, del ARTE...\n\nAl otro lado queda la vertiente del compromiso nacida después y hermosamente vigente en la obra de Rafael Alberti. ¿A lo peor por eso os separásteis o se enfriaron vuestras ardientes relaciones de los primeros años? Pero, mira, cada uno hace lo suyo para engrandecer la vida, la historia. En todo caso, él representa la vitalidad del toro. Tú, el aroma y la pureza del jazmín, cuya estela te ha acompañado en este tu postrero vuelo entre las burbujas y las estrellas salidas de la guitarra de tu último cartel inacabado.\n\nA fin de cuentas «la autonomía artística y el compromiso político son las dos trayectorias de la Generación del 27», como certeramente ha señalado Leo Geist.",
+    "title": "ANGELES ORTIZ, DESDE EL «HOMENAJE A LAS ARTES",
+    "periodical": "candil",
+    "issue_id": "1984-03",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-4",
+    "page_number": 4,
+    "word_count": 718,
+    "article_char_count_full": 4277,
+    "article_char_count_review": 4277,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-03-4-right-manuel-machado-entre-el-modernis",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nABRIMOS nuestro estudio sobre el poeta sevillano partiendo de esta dicotomía previa que creemos constituye el punto de referencia obligado a la hora de juzgar en su totalidad una de las obras más importantes de la poesía contemporánea, y desde luego, sin duda alguna, al autor que, desde un punto de vista culto, más ha aportado al cante jondo, no sólo como teórico excepcional de la copa y del mundo ambiental flamenco, sino también como autor de bellísimos cantes jondos, que pueden decirse por diferentes «palos» del cante, y que forman parte hoy en día del caudal andalucísimo de nuestro arte, siendo imposible, para los no versados en literatura, distinguir entre la mayoría de sus letras flamencas y las compuestas por el pueblo, tal y como manifestó Manuel y tendremos ocasión de analizar más\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"recuerdos\"]\n\nes una de las cumbres máximas del Modernismo hispánico, perfectamente compaginado con su andalucismo visceral. Y al hablar de su modernismo es preciso dejar muy claras las cosas: en ningún momento es Manuel un petimetre, frívolo plagiador de estéticas paenasianas o simbolistas de allende los Pirineos. Es cierto que vivió en París escenas inolvidables de su vida, que paseó su existencia bohemia en numerosas ocasiones por los bulevares llenos de recuerdos de Verlaine y su musa decadente, bien es cierto que asistía como alumno devoto a las tertulias del Café Cyrano, de Albaye de Thelème y de tantos otros centros culturales que derramaban esencias de la mejor literatura de vanguardia, pero hasta allí le persiguió implacable Andalucía, como una locura de la que no puede librarse, y que le lleva en el otoño de 1900 a recitarle poemas, copillas jondas a Amado Nervo, que escucha sorprendido este transplante de culturas; en el mismo rincón de Montmartre en que conviviera Manuel una temporada con autores de la talla de Gómez Carrillo y Rubén Darío. Machado ha comenzado su lucha entre los sones melódicos y decadentes del modernismo parisino y americano más avanzado y los pellizcos de su sangre macarena, hasta el punto de que lo proclamará más tarde con versos inolvidables en su retrato del «Mal Poema»: Medio gitano, medi\n\n[EVIDENCE WINDOW 2 | retrieval_hint=AUTH_01 | trigger=\"verdadero\"]\n\npara los valores esenciales de la poesía y de la vida. Nada más incierto que encasillar a Manuel como poeta de la frivolidad banal, olvidando que la obra artística no es más que la proyección de la sensibilidad del autor y un reflejo fiel de su compromiso con el mundo. Manuel se comprometió con su época, ya desde los lejanos tiempos de su formación en la Institución Libre de Enseñanza, y en la misma definición que da del Modernismo se ve ya su verdadero carácter, al insistir en que este movimiento: («No fue en puridad más que una revolución literaria de carácter principalmente formal, pero relativa, no sólo a la forma externa, sino interna del arte. En cuanto al fondo, su característica esencial es la anarquía»] (La guerra literaria, pág. 32). Queda claro que no pretende, pues, una revolución formal por las ramas, sino también enraizada en lo más profundo de los contenidos, aunque en estos, imp\n\n[ENDING CONTEXT]\n\nconceptos: Modernismo y Generación del Noventay Ocho. Granada, 1973.\n\nCASTILLO, M.: Estudios críticos sobre el Modernismo. Madrid, 1968.\n\nGonzalez Ruiz, N.: Manuel Machado y el lirismo polifónico. Madrid, 1942.\n\nGULLON, R.: Direcciones del modernismo. Madrid, 1971.\n\nMARCO, J.: La poesía hasta 1936. Madrid, 1980.\n\nMOLINA, R.: Obra Flamenca. Córdoba, 1977. PEREZ FERRERO, M.: Vida de Antonio Machado y Manuel. Madrid, 1952.\n\nla literatura española. Vol: II. Madrid, 1978. VIVANCO, L. F.: La poética de Manuel Machado. Barcelona, 1980.\n\nTejidos nuevos para tiempos nuevos\n\nCorrea Weglison, 9\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Manuel Machado: Entre el modernismo y la Andalucía flamenca",
+    "periodical": "candil",
+    "issue_id": "1984-03",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-8",
+    "page_number": 4,
+    "word_count": 6640,
+    "article_char_count_full": 39040,
+    "article_char_count_review": 3941,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "recuerdos"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "AUTH_01",
+        "family": "AUTH",
+        "trigger": "verdadero"
+      }
+    ]
+  },
+  {
+    "article_id": "1984-03-9-left-las-letras-flamencas-de-ana-la-l",
+    "article_text_for_review": "Me mandaste a callar por darte los buenos días; dos palabritas na más.\n\nSembré un claro limonero, serrano romero verde, y corales marineros.\n\nLas olas del mar no tienen horitas pa descansar; yo me paro unos ratitos pa mirarlas trabajar.\n\nAl igual que una agonía, es como un doló de clavo a toas las horas del día.\n\nCiego, pa que no vieran mis ojos lo que mis ojos están viendo.\n\nYo no sé lo que me entró, que el espíritu del alma de mi cuerpo se najó.\n\nVivía por satisfacer mi capricho y mi deseo que doló, y nunca le di ni un jalaguito a su cuerpo.\n\nQue no volverías a verme casi muerto te juré, y hoy vuelvo poquito a poco paso a paso a tu queré.\n\nLealtá me has prometío ilusiones no me jago, que eres capaz de venderme al primer canto del gallo.\n\nCuando Troya se echó a arder ardió por un solo lao; el fuego de mi queré arden sus cuatro costas, que así es como tié que ser.",
+    "title": "LAS LETRAS FLAMENCAS DE Ana la Lora, Andrés el Loro y",
+    "periodical": "candil",
+    "issue_id": "1984-03",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 173,
+    "article_char_count_full": 876,
+    "article_char_count_review": 876,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

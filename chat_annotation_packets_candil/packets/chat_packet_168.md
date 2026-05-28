@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1988-03-4-right-editorial",
+    "article_text_for_review": "Si desea recibir algún ejemplar de los indicados, diríjase a Pasarela, S. L., según las siguientes condiciones:\n\n— Para la Península: Contra reembolso o giro Postal, sin gasto de envío.\n\n— Para Baleares, Canarias, Ceuta y Melilla: Contra reembolso o giro postal más 15 % de gastos de envío. — Para Eurona: Giro postal más 20% de gastos de envío\n\n— Para Europa: Giro postal más 20% de gastos de envío.\n\nEl pedido mínimo debe ser superior a 1.000 pesetas, debiendo indicar las unidades y a continuación el número de referencia impreso, bien del disco o cassettes.\n\nNombre ___\n\nDirección ___\n\nPoblación _____ D. P. _____\n\nTeléfono ___\n\nDeseo recibir: Disco/s L/P: SERIE 1000 - 440 ptas.\n\nCassette/s _____ SERIE 2000 - 900 ptas.\n\nSERIE 5000 - 1.150 ptas.\n\nSERIE 6000 - 1.650 ptas.\n\nSERIE M-000 - 625 ptas.\n\nEDITORIAL\n\nDesde principios de la década de los ochenta, se está produciendo un fenómeno de institucionalización del Flamenco que creemos merecerá la atención de la futura historiografía. Las Administraciones Locales, y muy en particular la Autonómica, tal vez por la presión de innúmeros colectivos y también, en otros casos, por iniciativa propia, han intentado recuperar un discurso cultural genuinamente andaluz. Parecida reacción es atribuible a la totalidad de las Comunidades Autónomas que en el marco del Estado que plasma la Constitución como estado de las Autonomías, se afanan por definir sus señas de identidad. En Andalucía, concretamente, se pasa de la indiferencia e incluso de antiguos menosprecios, a una suerte de euforia jonda que se materializa en centenares de festivales flamencos, organizados o, más exactamente, malorganizados, con honrosas excepciones, por personas y concejos desinformados. Ello, no obstante, la institucionalización del Flamenco no puede reputarse, sin más, como algo negativo y en clave de pura negatividad proscribir cualquier clase de tutela oficial; entre otras razones, porque el flamenco necesita ser tutelado como patrimonio cultural que es sometido a permanentes acosos, a frívolos desviacionismos, a la agresión comercial.\n\nPero es que, además, institucionalización significa, para nosotros, que el flamenco queda subsumido en los propios afanes de la Admi-\n\nnistración y en la medida en que ello comporta conciencia y reconocimiento de la grandeza del flamenco, ya es algo positivo. Por otro lado, la desinformación antes aludida no es predicable, por igual, de todas las Administraciones. Hay festivales y festivales, concursos y concursos. Hay, pese a quien pese, con respecto a la Consejería de Cultura de la Junta de Andalucía, una trayectoria, puede ser que de aciertos y desaciertos, pero siempre en la línea de puntuales conocimientos y de rigor que cabe demandar de una institución pública.\n\nViene todo lo dicho a colación de la, hace pocas fechas, inaugurada sede de la Fundación Andaluzía de Flamenco en el flamenquísimo barrio de Santiago de Jerez de la Frontera. Junta de Andalucía, Diputación de Cádiz, Ayuntamiento y Caja de Ahorros de Jerez, han iniciado un proyecto ambicioso, del que cabe esperar importantes logros. Asistimos a esta inauguración. El gusto exquisito que se ha derramado en las instalaciones está requiriendo continuidad y que se llene de contenido este proyecto. Lo hasta ahora realizado merece todos nuestros elogios. Ojalá el talento y agresividad de que hacen gala la gerencia en la actualidad, no se vean cercenados por visiones partidistas, y no acabe en fuego de artificio lo que está llamado a ser una ordenación integral de las ayudas institucionales al Flamenco, en Andalucía.\n\nDedicatoria: A ti, que sabes de castillos y de mares.\n\nHievpe por tus paisajes una atmosfera arracimada en donde la boca te sabe a sangre y el cante se hace torso milenario en tu flamigera vivencia de veladuras y oleajes de cobre. Tus ojos. Dos negruras orientales aventando caligrafias candentes cuando la voz se hace gallo puntual en tu vespertino sem- [blante. Desnuda ante el pueblo la brisa de los mares imaginarios rasguea tus venas en una locura de nubes metamórficas. El Planeta, Manuel Torre, la Niña de los [Peines Antonio Mairena... En un Juicio Final te besarán, cantaora, con los labios agridulces de la memoria del [cante. Y no habrá campana, ni pregonero que malee tu sueño de caverna por más que la conjunción de los astros ponga un oratorio en tu cama o la primavera disfrace los árboles del in- [vierno. Entre la desenfrenada calidez de los gatos esta noche en la parte más alta del pueblo donde la historia se calla nos amaremos largamente como ese tren que viene de las cuatro esta- [ciones y escucharé el cante contigo. Silverio, la Trini, El Mellizo, Juan Breva, Don Antonio Cha- [con, Talega, el loco Macandé, Terremoto... Jesus Cu\n\nJesús Cuesta Arana",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-5",
+    "page_number": 3,
+    "word_count": 768,
+    "article_char_count_full": 4752,
+    "article_char_count_review": 4752,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-03-5-right-la-religiosidad-en-el-cante-flam",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPonencia:\n\nAlfredo Arrebola\n\nBENALMÁDENA\n\nQuiero exponer, con la mayor objetividad que merecen las cosas de nuestro cante flamenco, una brevísima síntesis de mi libro del mismo título, que pronto verá la luz pública. Se me ha pedido una colaboración para este XV Congreso Nacional de Actividades Flamencas, y es natural que no pusiera la menor objección. Siempre estoy dispuesto a colaborar en la difusión cultural que conlevan —pese a muchos— nuestros cantes flamen-\n\ncos. Mi libro está basado fundamentalmente en la experiencia de muchos años dedicados a interpretar el arte por excelencia del pueblo andaluz. Quiero manifestar, por otra parte, que considerándome hombre creyente y profundamente liberal en todos los aspectos, he sentido el máximo respeto a las concepciones religiosas de las\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"públicamente\"]\n\nión cultural que conlevan —pese a muchos— nuestros cantes flamen- cos. Mi libro está basado fundamentalmente en la experiencia de muchos años dedicados a interpretar el arte por excelencia del pueblo andaluz. Quiero manifestar, por otra parte, que considerándome hombre creyente y profundamente liberal en todos los aspectos, he sentido el máximo respeto a las concepciones religiosas de las personas consultadas. Y esta misma idea deseo manifestar públicamente aquí: máximo respeto a todos los congresistas, ya que es una auténtica forma de saber vivir en democracia. La religiosidad en Andalucía es, ciertamente, un fenómeno sorprendente. Y es verdad que Andalucía es una tierra impregnada de religiosidad —cfr. «La religión en Andalucía», pág. 9. Biblioteca de la Cultura Andaluzía— y ésta se expresa en mil formas en su arte, su folklore, sus fiestas y costumbres, su hábitat... Pienso que la religiosidad es un fenómeno omnipresente en las tierras del Sur y se canaliza en la forma de vivir y de ser del pueblo. En esta misma línea está el flamencólogo Ramón Porras en su «Donde Dios era UNDEBE» —cfr. CANDIL, marzo y abril, 1980 (Jaén)— donde leemos: «...En un país, en el que se han operado grandes síntesis doctrinales y científicas, es arriesgado preguntarse por el tema de Dios. El flamenco como expresión genuina de la cultura de este pueblo recoge de manera muy heterogénea las referencias al ser trascendente. Tal vez, porque el Cante Jondo es en sí mismo otra gran síntesis cultural y como toda síntesis concilia y refunde elementos antagónicos. Y más adelante afirma que «no nos cabe duda de que existen vestigios en las letras flamencas en todas y en cada una de las culturas que florecieron en Andalucía. Sería apasionante poder hablar del poso que dejó en el can- te jondo el hylozoísmo íbero hasta el monoteísmo cristiano, pasando por el eclecticismo romano, la dulzura sinagogal de los judíos o el nuevo monoteísmo de «Alá». Por tal motivo, señores congresistas, hay que acercarse al tema religioso del flamenco con la máxima humildad y reverencia. Hay que ser benévolos con las ideas ajenas, pues, en último término, todos tenemos «algo» de verdad. De esa verdad que nos hace libres y que aspiramos siempre. El tema está ahí y no podemos permanecer indiferentes. Siempre he pensado que el cante flamenco es un sistema complejo de vivencias de un pueblo que ha sido marginado social y políticamente. Y la religiosidad es una de ellas. El flamenco, que es una «queja resignada», engrendra una verdadera y auténtica sabiduría, y en el concepto filosófico una «sapiencia». El cante está abierto a tod\n\n[ENDING CONTEXT]\n\nuna exposición sobre La Navidad Flamenca que se viene celebrando en muchos pueblos andaluces y en la que se han distinguido tantos artistas flamencos: Manuel Torre, Niña de los Peines, Manuel Vallejo, Antonio Mairena, etc..., la «Saeta en el cante flamenco», para cuyo trabajo y conocimiento podría señalar una extensa bibliografía, la proyección musical del gregoriano en el cante flamenco, las misas flamencas, pero es imposible tratarlos aquí, donde los señores congresistas sólo podrán conocer una mera semblanza de lo que significa y comporta LA RELIGIOSIDAD EN EL CANTE FLAMENCO. Gracias.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La religiosidad en el cante flamenco. Ponencia",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-8",
+    "page_number": 5,
+    "word_count": 3470,
+    "article_char_count_full": 21148,
+    "article_char_count_review": 4242,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "públicamente"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-03-8-right-lo-dijo-don-ram-n-montoya-y-tamb",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA don Salvador Castro Morón y a don José Barroso, andaluz y extremeño respectivamente, compañeros de trabajo en Badalona y lectores de esta revista.\n\nFue en el año de 1969, en la ciudad hispalense, en una reunión de cabales y en el bar de mi amigo Pepe Pinto, cuando dije que Manuel «Torre» cantó muy bien por Levante. Uno de los presentes, por lo visto el que más sabía, me replicó: «Manuel tuvo, como cantaor, la categoría de águila real y usted sabrá que ésta no baja a tierra a comer tripicallos». Me dio tal parón que me vi obligado a callar, en vista de que me encontraba a más de cien kilómetros de mi casa y por ello imposibilitado para poder demostrar con pruebas contundentes, como a mí me gusta hacerlo, que el equivocado era él. Que yo había dicho la verdad. Alguien me dirá: ¿Y cómo no\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"mejor\"]\n\n«no tuvo más remedio que agachá la cabesita y desí...». En seguida se vino hacia mí y me dio la razón diciendo que ignoraba que Manuel hubiera cometido el sacrilegio de cantar por Levante, cuando lo suyo eran las siquiriyas y las soleares. ¡Craso error, señores! ¿Es que no cantó y grabó preferentemente por Levan- Lo dijo Don Ramón Montoya y también lo dije yo M. Lerga Lancharro te Joaquín Vargas Soto, «El Cojo de Málaga», quien sin duda fue el mejor cantaor por estos palos, después de don Antonio Chacón? ¡Qué pena, amigos míos, las cosas que me han sucedido durante cuarenta y seis años metido en el mundo de los flamencos! Siempre hubo en una reunión el simpático, el que mediaba en las disputas para decir: «Señores, menos llegar a las manos tó está permitió. Estas discusiones son la salsa del guisao flamenco. ¿Es que no sucede lo mismo en el mundo de la tauromaquia?». Y llevaba razón. Sin esos dimes y diretes, a veces acalorados, nuestras reuniones hubieran resultado aburridas. Yo os digo que entonces era raro encontrar a un solo aficionado que supiera algo de la historiografía de los cantes y de sus intérpretes. No conocían ni la de sus cantaores preferidos. Hoy, por suerte para todos, el panorama ha cambiado para bien, porque los aficionados, jóvenes en su mayoría, son estudiosos y preocupados por su arte sin igual y saben con seguridad que Manuel «Torre» cantó muy requetebién por tarantas, murcianas y cartageneras (él no grabó por Taranto porque en aquella fecha este cante era Taranta corta. Tarantos son los nativos de la región «donde nace lo temprano», como Perotes son los nacidos en Álora). Trabajo me costó sembrar para recoger la verdad. Y ello fue posible gracias a mi forma de ser y de comportarme: como un filántropo, regalando pruebas inequívocas: las grabaciones del artista, y lo hice siempre con mente no calenturienta. Igualmente tuve que hacer para destruir el concepto equivocado que se tenía de la cultura de don Antonio Chacón. Hoy no seré yo quien lo repita por enésima vez. Lo hará la historia; la historia de la vida de su más fiel amigo y compañero, don Ramón Montoya Salazar. Tampoco seré yo quien repita lo de Manuel «Torre», porque igualmente serán las vivencias del gran guitarrista madrileño-extremeño quien lo diga. Don Ramón Montoya dijo al periódico «La Nación», de Buenos Aires, el día 11 de mayo de 1937, lo que sigue: «EL ARTE POPULAR ANDALUZ RECUERDA FIGURAS DEL CANTE JONDO: RAMÓN MONTOYA. La pintoresca vida del cantaor Antonio Chacón. En las primeras horas de la mañana de ayer llegó a nuestra Metrópoli, a bordo del vapor “Campana”, procedente de Marsella, el celebrado guitarrista español Ramón Montoya, considerado como el intérprete más completo de la música popular andaluza. Viene el artista citado para actuar en nuestra capital, contratado por la empresa del teatro Maravillas de arte re\n\n[ENDING CONTEXT]\n\n“leona”, de arte flamenco puramente clásico, como soleares, malagueñas, granadinas, mineras, tarantas, rondeñas, bulerías, tangos, en mayor y menor, guajiras, farrucas, siguiriyas, y ejecuté cada una de ellas con arreglo a los deseos del público». Don Ramón Montoya cita en sus declaraciones a los siguientes artistas:\n\nDon Antonio Chacón Carmen Amaya Las Macarronas La Niña de los Peines La Malena Salud (hija del ciego) La Mejorana Antonio de Bilbao Faíco Ramirito de Jerez Mariquilla la Flamenca Manuel «Torre» Manuel Escacena La Argentinita\n\nMESONES, 18 TELF. 26 35 46 J A EN\n\nPágina 18 CANDIL\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Lo dijo Don Ramón Montoya y también lo dije yo",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-10",
+    "page_number": 8,
+    "word_count": 2441,
+    "article_char_count_full": 13992,
+    "article_char_count_review": 4485,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "mejor"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-03-10-right-antonio-pi-ana-como-se-a-de-iden",
+    "article_text_for_review": "Pero hemos de acudir a nuestro folklore, o saber vivo de nuestro pueblo, más que a nuestra tradición filosófica, que pudiera despistarnos.\n\nLuis Caballero\n\nEl cante jondo, el cante grande, el cante de verdad, el CANTE, es posible que perviva por una de esas razones oportunas que tanto se asemejan al milagro, por uno de esos misterios que tan estrecha relacionan mantienen con la geografía local, por el peso nivelador de unas magistrales apariciones, tan precisas como preciosas, que como enderezadoras de entuertos, una vez vez más, milagrosamente, misteriosamente, niveladoramente, vienen a ordenar «la arriesgada y desorbitada vulgarización del flamenco». Es por lo que admitimos que se equivocaran, en ese exacto sentido, ciertas reconocidas y prestigiosas autoridades a las que hoy tanto debe la historia del cante. Si verdade ramente una parcela del cante permaneció algún tiempo, más que oculta inadvertida, no por ello se produjo, como sabemos, la pérdida del cante. Desaparecerían matices, aires y hasta formas, pero jamás las raíces vivificadas por una tierra madre determinada. Son las tierras, las zonas, las comarcas, las que gestan los cantes, los distintos cantes, y esos puntos geográficos de nuestra península siguen inalterables.\n\nEl cante no desaparece: se esconde, se transforma, se enmascara, se ensucia. Lo vulgarizan los vulgares, lo desorientan los desorientados, lo desbordan los rebuscadores de nuevos giros y maneras como a un río salido de madre, pero la madrecauce no se desvía, está ahí, tantas veces oculta, pero viva. El cante transcurre y discurre de la mano evolutiva del tiempo, sufriendo las consecuencias circunstanciales del tiempo, de los tiempos que le vaya tocando vivir, pero sedimentándo-\n\nse, depurándose, estilizándose, en- grandeciéndose..., brillando al fin más que el oropel, aunque el oropel, evidentemente, abunde mucho, muchísimo más que el oro.\n\nY es ese oro puro, tan caro como escaso, el que mantiene en quilates el valor del cante en todas sus manifestaciones.\n\nEl cante es lo suficientemente abstracto en su espiritual y honda construcción natural que difícilmente pueden llegar a su comprensión y deleite total otras sensibilidades que no sean las nacidas e iniciadas por auténtica predisposición. De ahí la dificultad expansiva que origina la clásica minoría tan frecuentemente aislada, desanimada y escéptica. Pero así es el arte y así lo hacen los artistas, y así, en nuestro caso, los cantaores predestinados a mantener sus principios estructurales.\n\nEl árbol del cante es uno, lo demás son ramas (ramas, no restos, que tan mal suena). De igual manera, también la propia Andalucía es ese gran árbol que extiende sus ramas hasta más allá de sus límites. «El flamenco no es patrimonio exclusivo de las ocho provincias andaluzas. Hay el llamado cante de Levante (tarantos, murcianas, cartageneras, etc.)». «A semejanza de los gitanos, los judíos no han creado el cante flamenco, pero colaboraron en su conservación junto con andaluces y murcianos», dice el musicólogo Hipólito Rossy.\n\nTodo el cante de Levante es tan andaluz y flamenco como la misma seguiriya y la soleá (las dudas dependerán del aire con que se lleve cantado).\n\nCada rama del árbol del cante cuenta con la mano diestra de su fiel cultivador y la siniestra del irresponsable de turno. Pero como la razón, el equilibrio del cante, su identidad y conformidad natural, la sostendrá ese cierto brote apostólico que intermitentemente suele surgir por entre los distintos círculos cantaores.\n\nSin lugar a dudas, Antonio Piñana, desde su rincón cantaor, consigue hacerse escuchar en un momento en que el cante de Levante precisaba de una juiciosa ordenación básica, de una reestructuración regresiva en cuanto a rigurosidad inicial. Lo que no quiere decir exactamente que este serio intérprete de los cantes en cuestión haya repetido a nadie de un ayer no mejor que hoy o mañana. La línea general de esos cantes, sí, pero a través de su imprescindible personalidad, facultades y conceptos del cante. Antonio Piñana es él sin más remedio, como afortunadamente lo fueron y lo son otros, sin que por ello hayan dejado de ser o sean grandes conservadores-restauradores del cante. (Olvidémonos de la herencia calcada que tanto rezuma imitación).\n\nSabemos que la restauración de los cantes ni empiezan ni terminan en el restaurador. Lo que ya es más difícil de discernir inmediatamente es si en esta labor el intérprete ha llevado el cante a más o lo ha dejado como una muestra ejemplar a seguir. En cualquiera de los dos casos el cante saldrá ganando. También sin duda hemos salido ganando los que cantamos y sabemos escuchar teniendo, en los hondísimos y bellos cantes de Levante, a Antonio Piñana padre como señal de identidad.",
+    "title": "Antonio Piñana como seña de identidad",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 760,
+    "article_char_count_full": 4744,
+    "article_char_count_review": 4744,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-03-11-left-letras-flamencas",
+    "article_text_for_review": "«Letras» de José Márquez Cabello (Al pintor naif y buen aficionao: Guillermo Narbona)\n\nMalagueña\n\nDebió llevarme contigo 1.º y 2.º cuando el Señor te llamó que en este mundo traidor ya no encuentras ni al amigo «toito» es falsía y dolor.\n\nRondeña\n\nEn la sierra una partía va y me dijo el capitán: Te viá perdoná la vía pero me tiés que cantá otra «rondeña» bravía.\n\nJabera\n\nCaminito de Antequera siempre que a Mármoles voy por las Hermanas «Jaberas» mirando al cielo me estoy clamando ¡qué buenas eran!...\n\nLagareña\n\nMálaga tiene tres cosas sin punto comparación: su Parque siempre con rosas, su blanca Costa del Sol y sus mujeres hermosas.\n\nMarenga\n\nDesde el mar a la montaña 1.º y 2.º Málaga es luz y alegría; por el sol que a ti te baña eres flor de Andalucía ¡la más bonita de España!\n\nAbandolao\n\nViva la PEÑA JUAN BREVA, 1.º y 2.º callejón del Picaor, porque cante y cantaor de no habé sío por ella fuera de mal en peor.\n\nSerrana\n\nSi la Luna no sale no me importara, que a luz de tus ojos yo me alumbraba. Que tus «sacáis» son tan grandes luceros que más «nanay».\n\nJabegote\n\nQué cosa me da mirarte, 1.º y 2.º barquita de mis faenas, comía por las arenas y sin poé repararte con la mar «la má de güena».\n\nVerdial\n\nY sus verdiales de historia, 1.º y 2.º viva Málaga «la Bella», su Rincón de la Victoria y «tó» su zona costera que da tonelás de gloria.\n\n$ \\underline{\\text{Cante de J. Breva}} $\n\nDel otro mundo volvieran, 1.º y 2.º si Juan Breva o El Canario; a Málaga bendijeran viendo que han hecho un Sagrario con sus cantes por bandera.",
+    "title": "Letras flamencas",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 286,
+    "article_char_count_full": 1542,
+    "article_char_count_review": 1542,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1985_SPRING::A1",
+    "article_text_for_review": "MANOLO FRANCO, THE WINNER OF THE MOST IMPORTANT AWARD GIVEN FOR GUITAR [from: El Pais, Jan. 26, 1985; sent by Brad Blanchard; translated by Paco Sevilla] (Editor's Note: Manolo Franco won the \"Giraldillo de Toque\" in competition with such masters as Pedro Bacán, Tomatito) by J.M. Pérez Orozco PABLO JULIA sections as Triana or San Bernardo, proves once again that the traditional paths of transmitting flamenco from generation to generation have adapted to new times, resisting the profound and sudden social changes of our times--changes that seem incompatible with the survival of the requirements on values that favor the life of this art. Flamenco is now in one of the most fertile times of its history, no matter what the forecasters of doom say from time to time. If this were not true, then phenomena such as Manolo Franco and the contest of the Giraldillo and everything associated with it would not be possible. The Giraldillo--a reproduction of the statue that serves as a weathervane on the Giralda [the tower of the cathedral of Sevilla]--is the trophy awarded by the Bienal de Flamenco de Sevilla at each of its sessions. On the two previous occasions Calixto Sanchez and Mario Maya won the Giraldillos of Cante and Baile respectively. This time it was the guitar's turn, to which the Bienal was specially dedicated this year. Even though the six contestants also performed in other contests within the Bienal, the actual contest was held over a three day period, and they really had to fight tooth and nail. The contestants had to perform solo, accompanying the cante, and accompany the baile; in each facet the jury had to take into account creativity, technique, and purity. It was before a panel of judges, that it would be almost impossible to fool, since it was made up, for the most part, of top flamenco professionals such as the pianist José Romero and the guitarists Mario Escudero, Juan Carmona Habichuela, Victor Monje Serranito, Manolo Sanlúcar, and Paco de Lucía. It was a jury that just about gave up in trying to decide who was the best of the contetants, because the level of them all was incredibly high. We shouldn't be surprised, if we are to be consistent in our appreciation of the high qualities of today's flamenco, taking into account also the role of the guitar as vanguard in the artistic and social consolidation and expansion of this art. Well, Manuel Franco is now, by unanimous decision of the judges, the young symbol of dedication, study and art in the six magic paths of the flamenco toque. The musical development of Manolo Franco was supported from the beginning by the guitars of his father and his uncle [Ed. one of his uncles is U.S.A. resident, Manolo Barón] and later enriched by the rigorous instruction of Antonio Osuna. The academy of the outstanding bailaora Matilde Coral employed him in the first steps of his professional career. Manuel has very good memories of that breaking in period that allowed him to connect with other aspects of flamenco, to refine his judgment, and learn the subtleties of playing for the dance from a peerless teacher. Later, almost yesterday, he took off: Naranjito de Triana called on him for accompaniment in some performances; he also played for José de la Tomasa and José Antonio \"El Chozas\"; now it is the Giraldillo; from here on, whatever he wants. The playing of Manolo Franco is clean and pure; his falsetas resound with echoes of various schools of flamenco that he had adapted to his style according to the ancestral, yet living, processes of the so-called traditional art. The sense of compás that gives cohesion to his toque is so exact that it adjusts itself within a thousandth of a second to an entrance, a beat or the finish of a rasqueo; here, and in his harmonic conceptions we begin to see the basic foundation upon which the new generations of flamenco guitarists have constructed the framework of what is now an imposing musical legacy. Manolo Franco feels that one must admire Paco de Lucía and Manolo Sanlúcar, but it is no less important to learn from the Habichuelas, to dig deeply and respectfully into the music of Diego del Gastor, and, finally, to dive deeply within oneself in search of artistic sediments that will shape one's later development. The first thing that strikes one about the personality of Manolo Franco is his youthfulness, a childlike aspect superimposed on a continuous discovery of and admiration of the world, an extraordinary artistic innocence with which Manuel continues to penetrate the mysteries of the masters. For Manolo Franco, youth is not an inconvenience, since he has mastered technique to perfection and lacks the errors of the beginner. But Manolo also has aspects of maturity in his spirit that usually come from the experience of many years. There is something in the disposition of Manolo Franco that makes him different from other men. He is a master in the making, a wise man in his apprenticeship, a friend who has no jealousy of the success of others, an artist, a craftsman, and a worker. From him we can only expect the best.",
+    "title": "THE MAGIC TOQUE OF FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_SPRING",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 868,
+    "article_char_count_full": 5089,
+    "article_char_count_review": 5089,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A2",
+    "article_text_for_review": "CORRESPONDENT FROM ISRAEL Dear $ \\underline{\\text{Jaleo}} $, My name is Maria Cuperman and I've been a subscriber of Jaleo for about 3 years. Apart from being an ardent aficionado, I've also been studying flamenco dance for about five years. I'd like to keep you periodically informed of flamenca activity in Israel, what I'm sending in now concerns Dalia Low with whom I'm presently studying. I hope you will find the material of interest and that you'll publish it as I'd like to send you further material at a later stage. I'd like to add that I enjoy your magazine very much. Yours Sincerely, María To Whom It May Concern: This is in response to your Nov. 1984 form letter. I am, regretfully, no longer a subscriber for the following reasons: 1. Printing is way too small and causes severe eye strain and nervous tension; 2. Too few good-quality flamenco articles. (I realize \"Jaleo\" isn't a technical magazine, but with the lack of thorough instruction available (i.e., lack of willingness of teachers to impart their total knowledge) are should be able to obtain accurate and quality information from a magazine specifically dedicated to \"the Art of Flamenca.\" 3. The magazine, even though sent last class, arrives too late; 4. \"Jaleo\" mostly arrives in deplorable condition, and 5. Personally, I would like to see direction in your maga- zine (i.e., referrals for in-depth information semi- nars; continuing \"discourse\" on the theory of flamenca and its \"Greats\"; clubs to join in my area,...) Most Sincerely, Leonard D. Raminsky Bronx, NY Editor: We appreciate Mr. Kaminsky's courtesy in giving us his reasons for discontinuing as a subscriber. We have last many subscribers over the years without a word so we appreciate those who take the time to let us know their reasons. Also, our spologies and our gratitude to those of you who have hung in there and supported us over the last year of uncertainty with publication. It is your enthusiasm and support which keeps it going. CATALOGUE OF MODERN PLAMENCO RECORDS A collection of flamenco records from the modern era (1972-82), representing most of the important artists and including a number of unusual and rare items. Each record is described in detail and given a brief critical review. A tape library will make these records available. SEND $4.00 TO: PACO SEVILLA, 295B KALMIA ST. SAN DIEGO, CA 92104 TIPS FROM SEATTLE Just a note to say that a flamenco book, \"Ei Arte Del Baile Flamenca\" by Alfonso Puig Claramunt, (Teo Morca calls this a collectors book) is available from the Dance Mart, Box 48, Homecrest Station, Brooklyn, NY 11229. The price is $24.98 plus $1.25 shipping charge. Your readers might be interested. I was wondering about Jalec having a contest for a flamenco symbol or logo. Something that could be used as jewelry, on necklaces, rings, belt buckles, etc. You might think about it. Also to raise money maybe you could have some christmas cards designed with flamenco designs. I know of this woman in Albuquerque, N.M. that likes to do flamenco etchings. Also some calendars would be another idea. Yours sincerely, Orville Sherrard Seattle, WA Editor: Unfortunately Jaleo does not at present have a staff member to undertake contests, card sales, etc. But if there are subscribers who would like to start such projects they could exchange a free ad for a percentage of the sales. * * * DANCING AGAIN ANO NOT FEELING FOOLISH To Whom It May Concern: I recently discovered your wonderful magazine and would like very much to subscribe to it. However, the person who introduced me to Jaleo has some doubts as to whether or not you will continue to publish. She informed me that it has been several weeks since she last received an issue. I wonder if you could comment on this and if it is your intention to continue the publication, I would certainly like to offer my support. I just recently returned to Spanish dancing after an absence of several years. Even though I was inactive, flamenco has always been in my heart and thoughts. Thanks to the encouragement of a dear friend and my former teacher, María del Carmen, I am now performing again and having the best time of my life. The name of our group is María del Carmen Grupo España. We have given several successful concerts as well as individual presentations at festivals throughout the Michigan area. The company consists of seven dancers, Patricia Erneta, Evangelina Guzman, Mari Montes, Teresa Perella, Raquel Schreier, Mara Romera, and myself Luis Olivera, four guitarists, Hugo Borja, Irma Castillo, Luis Castillo, Guillermo Doub, and a flamenco singer, Eugenio Vara (\"El Zamorano\"). All of us feel very fortunate to be working with Maria del Carmen who is an outstanding performer, instructor, choreographer and director. Due of the things that kept me away from the dance for so long was the fear of looking old and foolish. According to my driver's license, I guess I am old, but thanks to some of the excellent articles I've read in Jaleo and the encouragement I have received from my dear friends in Grupo España, no longer feel foolish. Please let me know about the future of Jaled and what amount I should write my check for. Whatever the cost, it will be worth it. Very truly yours, Wally Jordan Birmingham, MI Editor: Congratulations to Wally on his renewed career. Letters of appreciation such as his are what sustain Jaleo even more than the yearly $20 subscription fee. Currently we are attempting to get out four issues per year.",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_SPRING",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 932,
+    "article_char_count_full": 5486,
+    "article_char_count_review": 5486,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A3",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nMARIA POSES WITH TWO OF HER GRANDCHILDREN. \"THROUGH MY HOUSE HAVE PASSED ALL THE GREATS: 'LA NIÑA DE LOS PEINES', ANTONIO MAIRENA, 'EL PINTO'.--MY HOME WAS THE 'CASA DE LA ALEGRIA'.\" [Translated by Paco Sevilla] by Carmen Amores Photos by Agustín Peréz de Guzmán Representing that almost-forgotten, authentic and ancient cante, Marfa La Perrata embodies the type of people who have remained on the fringe of popularity. In her gypsy home in Lebrija, in a conspicuous spot, there is a plaque, awarded by the Junta de Andalucía and signed by the president, dedicated to her as, \"a living monument to our 'cultura jonda', roots of the cante, authenticity of 'quejfos', and purity of voice.\" The mother of Juan Peña El Lebrijano, she confesses that Felipe González, \"that wonderful boy,\" wants to hear\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grandfather\"]\n\na conspicuous spot, there is a plaque, awarded by the Junta de Andalucía and signed by the president, dedicated to her as, \"a living monument to our 'cultura jonda', roots of the cante, authenticity of 'quejfos', and purity of voice.\" The mother of Juan Peña El Lebrijano, she confesses that Felipe González, \"that wonderful boy,\" wants to hear her sing. María La Perrata comes from a dynasty of cantaores from Utrera; she gets her nickname from her grandfather who, it seems, enjoyed the hounds [greyhounds were popular with some old-time flamencos]. The gypsies of his time, the gitanos of Utrera, lived very poorly, \"muy malamente. My parents,\" she recalls, \"were very poor. My mother, Teresa, used to sing and my father, who worked in the fields, used to also make chairs in our home. He used to sing por siguiriyas with such an echo--in the style of Arturo Pavón. My brother would sing along since, from a very early age, he had a gifted throat. That's the way it was! And I, listening to my father and, later, my brother, and I, with my 'faenillas y mis traptos' [children's things], would finish off their fandangos and my father and brother would look at each other as if to say 'what a beau\n\n[ENDING CONTEXT]\n\nshe likes to give her opinion about the situation of the gypsy people, a subject she knows very well: \"The gypsies have never been given their proper place. They have always been looked upon as something inferior. That's not right. For example, when have you ever read in the paper that a gypsy has robbed a bank or has stolen anything big? We never do that, simply because we don't have the courage. What they steal are mostly chickens from the farms, to feed their poor hungry children. The gypsies have never been given their proper place.\" And when one finds it difficult to imagine those same\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MARIA \"LA PERRATA\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_SPRING",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5-6",
+    "page_number": 5,
+    "word_count": 1684,
+    "article_char_count_full": 9166,
+    "article_char_count_review": 2829,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grandfather"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A4",
+    "article_text_for_review": "Using a simple storyline, each artist was allowed to give his best individually and yet the teamwork which such a story involves was totally unimpaired. Ciro was brought from Madrid to direct the production and supervise a scene in which most of the choreographies were his. Different musical forms were effectively interwoven to offer the audience a variety which, especially in Israel, is seldom enjoyed; Taranto, nanas, tangos de Granada, alegrías, martinete, siguiriya and alboréa. The Nue-Tsedek Theatre played to full houses each time and a similar success was had throughout Israel. The tour included the big cities, such as Jerusalem, Acre, Beersheba, and Haifa, as well as smaller towns. The public responded to the wide coverage given to Dalia's troupe by the press, television, and radio, and those who didn't",
+    "title": "FLAMENCO IN ISRAEL: DALIA LOW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_SPRING",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "7",
+    "page_number": 7,
+    "word_count": 131,
+    "article_char_count_full": 820,
+    "article_char_count_review": 820,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTHE MODERN ERA [from: Guitar and Lute, March 1983] by Paco Sevilla In part one of this article, \"Flamenco: The Early Years\", we saw how the café cantante period (roughly, 1850-1910) produced the foundation of what we know as flamenco. At this time the private and emotional cante gitano was first performed in public. It then mixed with the popular and festive folk music of Andalucía to produce many new song forms and styles. Also, the guitar joined the cante and baile to become an essential component of flamenco. The café cantante, a type of nightclub that presented flamenco entertainment, became extremely popular, many of them springing up in the major cities of Andalucía, in Madrid and Barcelona, and in other parts of Spain. In spite of the impressive growth of the flamenco art, all was\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\nAlso, the guitar joined the cante and baile to become an essential component of flamenco. The café cantante, a type of nightclub that presented flamenco entertainment, became extremely popular, many of them springing up in the major cities of Andalucía, in Madrid and Barcelona, and in other parts of Spain. In spite of the impressive growth of the flamenco art, all was not roses during the \"Golden Age.\" The cante gitano had come out of hiding and many of the important cantaores were gypsies, but in order to appeal to a wider audience, most cafés cantantes mixed popular music with flamenco. One that did not was the Café Silverio, the first of the cafés cantantes. Because Silverio Franconetti refused to join the commercialization, his business eventually suffered; he died poor and forgotten. Toward the end of the century, the adulteration of flamenco increased. The fandangos (a large group of non-gypsy flamenco cantes) became ever more popular, especially a style from Málaga called malagueñas. A singer named Juan Breva, a specialist in the malagueñas, transformed the cante from dance music into a profound song for listening. His style created flamaneo's first fad, for by the end of the 1800's, at least twenty differen\n\n[ENDING CONTEXT]\n\nplaying for the singer, Turronero, in the middle of a profound tientos, Melchor played a very fast scale run that was originally recorded by Paco de Lucía, and the audience applauded wildly; Turronero grabbed Melchor by the shoulder of his jacket, dragged him from his chair, and forced him to take a bow. Such a thing would have been unhessed of ten years ago. Today, the guitar and flamenco are obviously out of control. But flamenco is amszingly resilient. It follows fads until they go too far, and then snaps back and goes in a different direction. It bends, but does not break. It survives.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO: PART II--THE MODERN ERA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_SPRING",
+    "year": 1985,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "8-13",
+    "page_number": 8,
+    "word_count": 3628,
+    "article_char_count_full": 22062,
+    "article_char_count_review": 2857,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  }
+]
+```

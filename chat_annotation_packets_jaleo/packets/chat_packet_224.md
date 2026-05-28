@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1991_07::A8",
+    "article_text_for_review": "LA CHANA Authentic Flamenco Skirts La Chana is the name creating quality costumes for New York City's leading Flamenco professionals. Now, you too can wear the very best. Our skirts are of the finest quality fabric and workmanship. La Chana continues to work with and design for the top Flamenco professionals and students. Style No. 1 La Flamenca Classic eight-gored black Flamenco skirt with 6\" circular cut ruffle of red, hot pink or turquoise. Circumference at point of ruffle attachment approximately 176 inches. Made of high quality black poly-cotton. Price: $125 Style No. 2 Style No. 2 La Sevillana Fitted yoke with attached bias-cut black skirt with circular bottom ruffle. Circumference at point of ruffle attachment approximately 230 inches. Made of supple black poly-knit. Price: $125 Sizing Chart <table><tr><td>Size</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td></tr><tr><td>Waist</td><td>24</td><td>25</td><td>26</td><td>28</td><td>30</td></tr><tr><td>Hip $ ^{*} $</td><td>33</td><td>34</td><td>36</td><td>38</td><td>40</td></tr></table> *9* below waist standard measurement NOTE: Please specify length from waist to top of ankle bone. Shorter lengths on request. All prices include sales tax and shipping. <table><tr><td>Shipping Information</td></tr><tr><td>Name</td></tr><tr><td>Address</td></tr><tr><td>City, State, Zip</td></tr><tr><td>Daytime phone</td></tr></table> Thank you for your order! LA CHANA 595 Main Street Roosevelt Island New York, NY 10044 212.826.5889",
+    "title": "On Stage",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_07",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15",
+    "page_number": 15,
+    "word_count": 181,
+    "article_char_count_full": 1498,
+    "article_char_count_review": 1498,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_07::A9",
+    "article_text_for_review": "In January of 1988, Marcos and Rubina Carmona packed up their two children and moved from Los Angeles to Seattle, Washington. They had spent the previous ten years there actively performing in and around Los Angeles, including a long stint at the El Cid Flamenco Restaurant. The fact that Los Angeles had ceased to be an attractive environment to conscientious parents is undisputable and the wisdom of the move has shown itself. The Carmonas hardly lost a beat in establishing themselves as competent flamenco artists in the Northwest. After performances with Teo Morca, they formed Carmona Flamenco and added to their ranks local dancer Christina Vargas, whom they met in Seattle. Marcos not only is the guitarist of Carmona Flamenco, but is also the Artistic Director and Choreographer. Rubina sings and dances with equal authority and Christina Vargas completes the trio as dancer. They have a busy schedule ahead with an upcoming residency in Port Townsend, Washington at the Centrum International Folk Dance Festival as instructors and performers on the agenda. Immediately following, they will perform at the Bumbershoot Arts Festival at the Bagley Wright Theatre in the Seattle Center. The Seattle Classic Guitar Society will host Carmona Flamenco in a Christmas concert December 15, 1991 on the Seattle Pacific University Campus and the New Year will find the Carmonas at the Allegro Dance Festival in Seattle. Marcos Carmona Artistic Director and Choreographer JALEO - VOL. 1.1 CHRISTINA VARGAS Since performing in Spain, La Vargas has been a featured guest artist with CARMONA FLAMENCO. Her exciting, passionate style has entertained audiences throughout the state. This talented artist is fast becoming known as one of the finest flamenco dancers in the United States. Marcos Carmona Rubina Carmona ¡Carmona Ramenco! 3634 48th Ave. SW Seattle, WA 98116 (206) 932-4067 This version focused on movement and music to strike to the emotional core of Lorca's poem: the struggle between death-dealing power and freedom to live one's life. The acting and dancing by Joaquin and Marisol Encinias and narrator John Jaramillo were performed as single acts of character interpretation rather than by dividing the dance from the drama. After intermission, the program was packed with exciting, fast moving dances, and one flute and guitar duet composed by Cortez. \"Tio Negro\", played by Cortez and Juanito, was a fusion of rhythmic styles, demonstrating cross-over influences from other cultural areas that affect flamenco style. This was a great festival, demonstrating the growing universal appeal of the art of flamenco in this country, and especially in New Mexico. The Fountain Theatre Flamenco Series Los Angeles On June 23, 1991, the 80 seat capacity Fountain Theatre once again filled for a close look at Roberto Amaral's mixed bag of flamenco entertainment. The artists displayed a variety of wares. The most outstanding, of course, were Roberto Amaral, Yaelisa and Pepa Sevilla. To this critics mind, Jorgo sang valiantly for all the dancers and Pepa entertained, sang and tossed piropos and jaleo like a cocinera standing over a potaje of garbanzos. Pepa truly can charm in Andalucian spunk by surprising the crowd with her delightful one verse English translation por cante gitano in her final solo. The group numbers, Canastera, Cafe de Chinitas, Tangos and Fin de Fiesta, under the artistic direction of Amaral used choral singing, dramatic interplay and the duet of \"Cha Cha\" Bermudez and Amaral. This reviewer would have enjoyed seeing Amaral pair himself in a duet with the stunning and graceful dancer Yaelisa. Yaelisa's excellent \"Solea\", with a solo de pies section right in the beginning of the evening's first solo was a superb example of her creative footwork, impeccable timing, and distinctfully cultivated gorgeous postures. Her \"Alegrias\", done in a simple purple costume was full of gracia and sensitive usage of the dynamic music played by Bruce Patterson and Antonio Triana II. Her use of the stage and her finishing touches to each section made her a complete standout from the crowd. The final solo of the evening was Caña, danced by Amaral with serious intent, and as usual more dramatic intensity, great laconeo and crescendo buildups that led into a great \"Bulerias\". The man can really dance por Bulerias soulfully and leave you wanting more! Amaral is inventive, playful, improvisational and contemporary street wisdom exudes when he is enjoying it.",
+    "title": "Fundacion Andaluzas de Flamenco",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_07",
+    "year": 1991,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 716,
+    "article_char_count_full": 4486,
+    "article_char_count_review": 4486,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_07::A10",
+    "article_text_for_review": "Modern Flamenco Records To learn flamenco you have to listen to it! Access to the world of flamenco awaits you in four volumes that review most Spanish recordings released 1970-1990. Send for information about catalogues, \"The Living Flamenco Anthology\", books, and more. Special offer for teachers. Paco Sevilla PO Box 4706 San Diego, CA 92164",
+    "title": "III Seminario Internacional de Guitarra Flamenco",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_07",
+    "year": 1991,
+    "language": "en",
+    "article_type": "article",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 55,
+    "article_char_count_full": 344,
+    "article_char_count_review": 344,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_07::A11",
+    "article_text_for_review": "SOLICITUD DE SUSCRIPCION AL BOLETIN Código Postal.....Ciudad.....Provincia..... Teléfono.....Profesión Estoy interesado en continuar recibiendo el Boletín Informativo de la Fundación Andaluzas de Flamenco, a partir del n.º... III SEMINARIO INTERNACIONAL DE GUITARRA FLAMENÇA JEREZ, 2-13 SEPTIEMBRE 1991 - SOLICITUD DE INSCRIPCIÓN Solicito mi inscripción en el III Seminario Internacional de Guitarra Flamenca. Inscripción: 25.000 Ptas. Echa y Firma Este formulario debe ir acompañado de la copia de la traosferencia bancaria. JALEO - VOL. 1.1 El Seminario se celebrará en Jerez de la Frontera, en la sede de la Fundación Andaluzá de Flamenco (Palacio Pernartín, Plaza de San Juan, 11, durante los días 2 al 13 de Septiembre, en horario de mañana, intensivo, de lunes a viernes. Podrán participar personas de cualquier nacionalidad, que posean un conocimiento medio de la guitarra flamenca. Para solicitar la inscripción se remitirá el boleín adjunto, acompañado de un breve curriculum de los estudios de guitarra realizados, y actividades artísticas, así como una cinta cassette donde el solicitante grabará un toque flamenco. Los derechos de inscripción quedan fijados en 25.000 ptas. El pago se efectuará mediante ingreso en la c/c 16352-1 de la Caja de Ahorros de Jerez. O.P. Jerez, a nombre de la Fundación Anda-luza de Flamenco. Junto con la solicitud de inscripción se enviará copia del resguardo bancario. El plazo de inscripción se establece entre el 15 de Mayo y el 31 de Julio. No se admitirán inscripción-nes posteriores a esa fecha. Se realizarán actividades complementarias al Seminario (Visitas turísticas, proyecciones comentadas, conferencias, etc...). Al finalizar el Seminario se entregarán certificados acreditativos a todos los alumnos que hayan participado en el mismo, El alojamiento será por cuenta de cada participante, así como la manutención. Sugerimos, por su economía, la Residencia Juvenil (Jerez» (Avda. Carrero Blanco, s/n., Jerez. Tfno.: 342890). Cual-quier reserva de alojamiento deberá hacerse con anatelación, por ser fechas de alta ocupación. JUNTA DE ANDALUCIA Consejeria de Cultura y Medio Ambiente JALEO - VOL. 1.1 NEW YORK, NEW YORK SPAIN, LIVE MUSIC BRAVO! Saturday, July 13, 1991 at the Palladium. [Ed.: I wish I could have been there!] The Sociedad General de Autores de España (SGAE) and the New Music Seminar joined forces to host \"Spain, Live Músic Bravo!\" featuring four off the hottest groups in Spain: Azucar Moreno, Heroes del Silencio, Jalen and Seguridad Social. The key to Azucar Moreno's success resides in the combination of its traditional flamenco roots with contemporary dance music. The fire and passin of their voices accompanied by modern instrumentation result in a unique potion. Toni and Encarna Salazar, the two very beautiful Gypsies of Azucar Mnreno, recently received the award for \"New Artist of the Year\" at Premio Lo Nuestro a La Musica Latina, the Latin Grammies. With highly acclaimed releases, Azucar Moreno are set to devour American dance floors. Heroes Del Silencin's rapid rise to the top of the charts throughout Europe comes as no surprise. Their music is independent and daring, while urban and urgent. $ \\underline{\\text{Heroes's second and latest hit release was produced by Phil Manzanera off Roxy Music who took full advantage of $ \\underline{\\text{Heroes'}} $ musical talents. Heroes' goat for success is to break all barriers.}} $ Jaleo roughly translates as the scuffle of voices, clapping and tapping, dance from the heart and soul of flamenco. Jaleo involves the audience in a magnificent spectacle of dance, music and poetry. Band leader and renowned guitarist, Diego Cortes, has played with Paco de Lucia, Santana and John McLaughlin and is considered a pioneer in the use of electric flamenco guitar. In the tradition of modern flamenco groups like Gipsy Kings and Ketama, Jaleo's unique fusion captures a universal audience. Seguridad Social are no strangers to the Spanish music scene. Since their first cult release 8 years ago, Seguridad Social have not lost their freshness, strength and diversity. Through their honesty and clarity of ideas their music has refreshingly developed to include a mixture of rock, rap, reggae and Latin rhythms. In the spirit of their independent label, DRO-GASA, Seguridad Social offers an intelligent and eclectic style often unheard in today's music. Recent events have regained for Spain its traditional role as fountainhead of a distinctive global culture and SPAIN, LIVE MUSIC BRAVO! is just a beginning. In 1992, the world will beat a path to Spain's doorstep. From Expo '92 in Seville, to the Olympics in Barcelona, to Madrid's designation as cultural capital of Europe, coupled with the 500th anniversary of the Discovery of America, the world will celebrate Spain. JALEO - VOL 1.1 FLAMENCO DIRECTORY OF NORTH AMERICA We have received a few requests for copies of the Flamenco Directory of North America. Yes, there are a few and they are available at a cost of $15.00, including $2.50 shipping and handling. The directories are the property of the previous management and all proceeds become their right and property. Requests may be sent to the attention of Ms. Juana de Alva c/o of Jaleo, P.O. Box 4706, San Diego, CA 92164. Please make your check payable to Juana de Alva. Thank you. -Editor- San Diego Guitar Instruction Bruce Patterson Paco Sevilla Dance Instruction Yaelisa San Francisco Cante/Dance Instruction Isa Mura Jaleo P.O. Box 4706 San Diego, CA 92164",
+    "title": "New York, New York",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_07",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19-24",
+    "page_number": 19,
+    "word_count": 865,
+    "article_char_count_full": 5504,
+    "article_char_count_review": 5504,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_10::A2",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPunctual Mailing: This issue was mailed by hulk mail, which delayed delivery. We apologize for this delay. The next issue will go to the Post Office early enough to avoid this. Thank you! Flamenco Videos In response to those asking for information about flamenco about videos, here is some good news. Alegria Productions is distributing a series of videos from Spain. Please write to: Alegria Production, 666 West End Ave, Ste 14-J, New York, NY 10025, (212)874-5772. ...in Los Angeles... La Macia Restaurant and Casa Rafael continue their flamenco entertainment, and Linda Andrade and others can be seen at La Macia while Maria Bermudez is in Spain. Flamenco at the Fountain The Fountain Theatre in Los Angeles continues its flamenco series with Roberto Amarai as Artistic Director. The series\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"known\"]\n\nLinda Andrade and others can be seen at La Macia while Maria Bermudez is in Spain. Flamenco at the Fountain The Fountain Theatre in Los Angeles continues its flamenco series with Roberto Amarai as Artistic Director. The series dates are Sunday, October 20, November 3, November 17, and December 1, 1991. Showtimes are 3:00 PM. For reservations: (213) 663-1525. THE JUAN TALAVERA SPANISH AND FLAMENCO DANCE THEATRE Juan Talavera, the internationally known Spanish and Flamenco dancer/actor who can currently be seen in a dynamic new Diet Pepsi commercial called \"The Audition,\" featuring Ray Charles, and a new Moody Blues video, is slated to appear with specially selected members of THE JUAN TALAVERA SPANISH AND FLAMENCO DANCE THEATRE in FLAMENCO TALAVERA! in the CELEBRATIONS! CONCERT SERIES at the Spiral Court in California Plaza, 300 South Grand in Downtown Los Angeles, on Wednesday, October 30, 1991 at 12:00 noon. FLAMENCO TALAVERA will spotlight Southern California's finest Flamenco talent. Featured in the CELEBRATIONS! Concert at the Spiral Court at California Plaza will be soloists Antonia Lopez, Luana Moreno, Lourdes Rodriguez, and Juan Talavera. Providing the throat searing flamenco song will be Pepa Sevilla and Antonio Alcazar. Benito Palacios and Antonio Triana will accompany on\n\n[ENDING CONTEXT]\n\nor non-gypsies, who wanted a fortune told, expert advise on livestock, or wished to hire flamboyant entertainment. And while public gypsy song and dance tended to reflect a compromise with requirements of the payo community, it can nevertheless be suggested that near the end of the eighteenth century, cante gitano was being developed in the privacy of the gitanerias. This cante gitano was a powerful, passionate, dark manifestation of the harsh realities of the time, as well as of racial memory. Flamenco of the gitanerias epoch was formative, secretive, gypsy and amateur. (Continued on Pg. 6)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Workshop.....2-",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3-6",
+    "page_number": 3,
+    "word_count": 1982,
+    "article_char_count_full": 11682,
+    "article_char_count_review": 2923,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "known"
+      }
+    ]
+  }
+]
+```

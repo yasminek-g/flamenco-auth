@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1989-05-26-right-premium-iben-alcazar-premium-cri",
+    "article_text_for_review": "Si señor. Si ha pedido una cerveza Alcázar: ibien hecho!. Porque va a saborear una cerveza fresca, con cuerpo, en su punto. Una cerveza elaborada con las mejores cosechas de lúpulo y cebada, siguiendo la tradición de nuestros maestros cerveceros. Una cerveza que mantiene todo su aroma, porque va,\n\ncomo quien dice, de la fábrica directamente al consumidor. Si pide cerveza Alcázar, ¡bien hecho!. Disfrutará de una cerveza bien hecha.",
+    "title": "Premium IBEN Alcazar Premium CRIVIZA LORREN HECHO!",
+    "periodical": "candil",
+    "issue_id": "1989-05",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 70,
+    "article_char_count_full": 434,
+    "article_char_count_review": 434,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-07-3-right-sevillanas-show-editorial",
+    "article_text_for_review": "Editorial:\n\nSEVILLANAS\n\nSHOW\n\nciales las gracias escondidas del yupi y de la mujer del yupi o de quienes pretenden parecerse a los yupis.\n\nUno recuerda que la gran crisis de identidad que sufrió el flamenco se produjo precisamente por una inadecuada popularización del mismo, hasta el punto de convertirse en el folklor oficial del Estado; y tener que adaptar sus contenidos al gusto de un público desinformado. En algún sentido, el flamenco fue también objeto de expropiaciones como lo es en la actualidad el cante-baile por sevillanas. Uno recuerda también el eco de Pastora Pavón, en ese canto, al que muchos viejos maestros del flamenco, supieron impregnar de buen gusto, de frescor y hasta de jondura. Uno presume que en la gracia de ese baile se recoge seguramente la vieja tradición de la puellae andaluzas que asombraron a Plinio. Uno, en definitiva, se rebela no contra el cante-baile por sevillanas, sino contra las sevillanas de los mercaderes, reiterativas, plúmbeas, adocenadas, que se nos imponen una y otra vez, para divertimento, en distinguidos salones, de execrables danzantes, algunos de los cuales no se ocultan en despreciar públicamente las cosas y las gentes andaluzas.\n\nRamón Porras",
+    "title": "Sevillanas Show Editorial",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 194,
+    "article_char_count_full": 1206,
+    "article_char_count_review": 1206,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-07-5-right-viejo-carn-flamenco-manolo-carac",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAnselmo González Climent\n\nVayamos al grano:\n\n1 Al cante grande pertenecen esencialmente la debla, la siguiriya, la caña y la toná. El martinete desciende de la debla. Los dos son cantes sin guitarra, fragüeros. El martinete es un cante de dolor, con acompañamiento de remos y de yunques. Era un cante de gitanos antiguos, en tiempos en que no se conocía la guitarra. Hay que tener en cuenta que la guitarra, en el flamenco por lo menos, es un instrumento que apenas tiene medio siglo. Pero no vale la pena intentar el acompañamiento de estos cantes. Hay que conservar la tradición, la tradición de «a palo seco».\n\n2 Don Antonio Chacón es el cantar que ha dominado todos los cantes, pero no siempre llegaba a lo jondo. Pepe Marchena, entre los modernos, a pesar de dominarlo todo también, no conoce\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"recuerda\"]\n\ny que conservar la tradición, la tradición de «a palo seco». 2 Don Antonio Chacón es el cantar que ha dominado todos los cantes, pero no siempre llegaba a lo jondo. Pepe Marchena, entre los modernos, a pesar de dominarlo todo también, no conoce el cante. Sencillamente. Y véalo: popular al máximo, si los hay. 3 Manolo Torre era incompleto, pero genial en el «pronto», en la inspiración del momento. Fue un caso raro, poco frecuente. Por eso se le recuerda tanto, aunque muchos hablan de prestado. Pero quiero decirle volviendo a Pepe Marchena, que el primero que realmente achicó los cantes no fue él sino Enrique el Mellizo. De los grandes, no quiero olvidar a mi abuelo, Curro Dulce, incomparable en la especialidad de cañas y siguiriyas. 4 Nació cantando con mi propia escuela. La vocación flamenca—desde que tuve uso de razón—fue algo natural en mí; vamos, sin ningún motivo concreto, ni siquiera el saberme y el sentirme heredero de una excelente casta de cantaores. Eso es otra cuestión. Ya de mayor me fui interesando a propósito de todas las tradiciones que siempre han estado en el aire de mi casa. 5 El Concurso de Granada lo gané por escuela, escuela de lo bueno y lo puro. Después de los 17 años me dediqué al fandango, dándole grandeza y sabor gitano. Tan es así, que un fandango mío mereció llmarse «fandango caracolero». A partir de ahí, todos los cantaores vinieron a mi calor. Es que yo he creado un cante aparte con el fandango, sin perjuicio de haber hecho de todo lo bueno que pueda haber e\n\n[ENDING CONTEXT]\n\njondo lo que hace. Tiene su sello personal. El temple de su voz no se puede remedar. Eleco de su voz me ha hecho poner los pelos de punta. Arte sencillo, personal, que a nadie le es dado imitar. Voz, la de Marchena, que se presta al cante jondo, pero que el famoso cantaor no ha querido aprovechar. El caso es que hoy, más que nunca, es bueno Marchena.\n\n13 La verdadera fuente del cante está en la zona que va del Puerto a Cádiz. Málaga es gente corta que no ha abarcado el cante.\n\n14 Lo que más se parece al cante es el toreo. Yo me siento reflejado a mitad de camino entre el Gallo y Belmonte.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco Manolo Caracol",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 4053,
+    "article_char_count_full": 23587,
+    "article_char_count_review": 3137,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "recuerda"
+      }
+    ]
+  },
+  {
+    "article_id": "1989-07-8-left-el-tesoro-escondido",
+    "article_text_for_review": "Puntualicemos: Si hay cante gitano como hay baile gitano y toreo gittano. Desde que los calés penetran en la Península ibérica, comienzan a tomar contacto con el folklore hispano (indígena, morisco, judío) y muy en especial con sus cantes y danzas. Pronto los sabemos cantando y bailando seguidillas, boleros, romances y todo lo que era de curso corriente en la España recién integrada. A todas estas manifestaciones populares las sazonaban con su peculiar aliño y sabor y las dramatizaban a su imagen y semejanza, lo que significaría para el pueblo que las escuchaba o veía, unas novedosas formas expresionales e interpretativas de su folklore propio.\n\nAsí sería en lo general. Pero los recién llegados hicieron sus migas con gentes que, como ellos, vivían marginadas en el solar hispano. Nos referimos a los moriscos y judíos. De ellos también aprendieron su folklore proscrito. Airearlo en público era comprometido. Conservarlo como tesoro escondido era prudente. Gitanizarlo era alejarlo de toda sospecha. Y lo gitanizaron. Es decir, lo adoptaron como propio. O lo que es igual: se lo apropiaron.\n\nYa eran poseedores de dos tipos de canciones y bailes: uno de genuina procedencia autóctona, reconocible y explotable de inmediato ante el propio pueblo de que procedía. Nada había censurable en ello; otro, conseguido a hurtadillas (¿ hurtado?) de fuentes imposibilitadas de toda acción reclamatoria, que el tiempo se encargaría, además de dar por prescrita.\n\nE n algunos lugares, por la general circunstancia de una convivencia inmediata y permanente —Granada— no fue preciso ocultar el origen de la música expropiada. Sencillamente se exhibió la usurpación. Y la Zambra gitana sucedió, como botín de guerra, a la danza morisca del mismo nombre. A ella se fueron incorporando con el tiempo, los elementos folklóricos de origen puramente andaluz que hoy la integran.\n\nEn otras tierras fue preciso esperar más tiempo. El horno no estaba todavía para bollos. Cuando el asentamiento —permanente o temporal— en algunas ciudades populosas (Sevilla, Jerez, Cádiz) fue posible y permitido —vale decir «obligado»— salieron a relucir aquellos cantos y bailes hispanosemitas que tan diligentemente habían sido conservados por algunas familias gitanoandaluzas. Ni que decir hay que de estos cantos y danzas no quedaba en el pueblo bético ningún recuerdo, ninguna resonancia. Habían transcurrido casi tres siglos de hermético silencio. Ni una sola nota pautada. Ni un solo eco remoto. Todo abolido. Todo olvidado. Todo extraño. «Cuando los gitanos o flamencos empiezan a gozar de libertad y derechos (como españoles que eran), entonces y sólo entonces, se empiezan a conocer ciertos cantes, como la Caña, la Soleá y la Siguiriya. Estos cantes no lo conocían a principios del siglo XIX, sino ellos y lo ellos los cantaban en el seno del hogar» (R. Molina y A. Mairena. Mundo y formas del cante flamenco).\n\n¿Quién podía discutirles la legitimidad de esos cantes?. Sólo la tenacidad y la sabiduría de músicólogos como García Matos, podía rastrear la existencia residual de formas preflamencas que correspondieran con ellos. Pero era fácil eludir la prueba. ¡Estaban tan lejanas las referencias!\n\nY así nació el cante gitano. Ese cante que con razón Demófilo consideró «el menos popular de todos los llamados populares».\n\nEs obvio que nos estamos refiriendo a las formas más peculiares del cante gitano andaluz (tonás y siguiriyas) y al contenido musical —preformal— de ellas y no a su «estructura emocional» que, como diría Félix Grande, de ellos y sólo de ellos procede.",
+    "title": "El tesoro escondido",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 566,
+    "article_char_count_full": 3558,
+    "article_char_count_review": 3558,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-07-9-left-juan-friede",
+    "article_text_for_review": "E l me dijo, después de muchos años de amistad, que había nacido en Rusia, de familia judeo-polaco- alemana, que había estudiado en la universidad de París para al- guna vez nacionalizarse colom- biano.\n\nLo conocí al principio de los años 50. Aquella tarde de Sevilla no debía estar muy lejos de Semana Santa y feria. Estaba solo y sentado próximo a mi mesa en la terraza del bar Correos. Mientras paladeaba su café prestaba una singular atención a la melodía de la gaita y el tambor de aquél que tan rocieramente amenizaba la rifa de la vaca sin estorbar a los tranvías. De repente se volvió hacia mí, diciéndome: «Es curioso. Andalucía es un arcano, una amalgama de curiosidades; por ejemplo, ese tambor y esa gaita no son originariamente andaluces como instrumentos, la música no sé, pero la gaita y el tambor debieron introducirlas en el sur los leoneses que formaban como tropas en las huestes del Rey San Fernando» ¿...? El planteamiento de la conversación no podía ofrecer más atractivo, así, y mientras Andalucía y la historia obraban como protagonistas, fui sacando a la luz de mi interés la dedicación profesional de mi nueva amistad. Juan Friede, escritor, historiador, hispanista, crítico de arte, enviado por la Academia de la Historia de Colombia al Archivo General de Indias como investigador, enamorado de España y Andalucía y seducido por el enigmático cante flamenco en su más reconocida y profunda integridad.\n\ntemente aleccionadora, fructífera desde cualquier ángulo cultural.\n\nFriede contó en aquella pione-ra y positiva revista ceutí que con el nombre de «Flamenco» hicieron posible el milagro de Paco Vallecillo y Juan Muñoz Lasarte, su encuentro con el Cante. Fue en 1933 y mientras —con un amigo holandés pintor— descubrían España y Grecos abandonados. «Uno de mis más intensos y perdurables recuerdos de aquel viaje por España fue una noche que pasamos en un pueblecito de Andalucía cuyo nombre no recuerdo. Ya al anochecer entramos en un cafetín o taberna. Un débil foco eléctrico alumbraba el establecimiento. Todas las mesas estaban desocupadas salvo una, situada en un rincón y ocupada por dos jóvenes campesinos. Nos sentamos en una de las mesas cercanas y de pronto nos dimos cuenta de que uno de nuestros vecinos cantaba en voz baja, casi al oído de su compañero. Era un cante triste, lánguido, un grito de dolor retenido que luego, a través de modulaciones, bajaba como por una escalera para luego resolverse en nada. Y luego otra vez subía el tono, otra vez un grito que estremecía, grito de dolor retenido, sostenido, pero dominado. Y luego el descanso largo y trágico, elevándose a veces tímidamente para luego volver a descender como si estuviera de antemano condenado.\n\nEstábamos sentados como embrujados oyendo ese cante, esa queja interminable como de un animal herido de muerte, sin esperanza. Nos olvidamos del café que nos sirvieron. Sólo sentíamos la penumbra que nos rodeaba y la tragedia que expresaba este cante de un pueblo olvidado».\n\nSencilla, directa y exacta defini- ción de todo lo que puede «herir» el impacto enduendado de una\n\nmúsica espiritual, vieja y extraña en la fina sensibilidad de quien por primera vez la percibe; sencillo, directo y exacto enfoque social para penetrar en el alma dolorida de un pueblo.\n\nJuan era un hombre con una capacidad de trabajo infinita; no desaprovechaba el más mínimo detalle que pudiera engrosar su vasta cultura. Así guardó sin olvidar durante muchos años la honda impresión que le causó el cante allá por el año 1933 en una pobre taberna de un pueblecito andaluz: «En enero de 1948 volvi a España. Desde entonces, aprovechando mis largas permanencias en Sevilla, no omitía ocasiones de oír ese cante que tanto me había impresionado en mi juventud». La casualidad quiso que nos encontrásemos cuando yo ya había iniciado mi apasionada búsqueda por los entresijos de la oscura historia del cante. Inmediatamente activó mis propósitos comprometiéndose a dar una charla (la primera en mi vida) en aquellas sevillanas «charlas» de ca- fé del bar Giralda en la calle Ma-\n\nteos Gago. ¿Por qué no organizar reuniones de cante?. Y logró hacerme convocar a un buen número de aficionados para quincenalmente celebrar, en el Cañaveral trianero de la calle San Jacinto, verdaderos encuentros de alto nivel cantaor. Tal vez más de dos años, en esta oportunidad, magnetofón en ristre recogiendo el cante de los artistas del pueblo andaluz. Como la mayoría de los intelectuales prefería la soledad solemne de los cantes a palo seco o los más serios y enigmáticos discretamente acompañados.\n\nNo le agradaba la tendencia alegre de algunos cantes y menos la\n\nPágina anterior: Cajas de cerillas del siglo XIX.\n\nalgarabía festera. Le preocupaba el drama de los pueblos perseguidos, abandonados u olvidados y el sentimiento de rebeldía resignada de los que cantan como ciegos porque su cante no tiene otra perspectiva que la historia de su espíritu. Decía que ningún otro instrumento musical supera a la voz humana, voz que, precisamente, en el ejercicio gutural del cante flamenco rompe todas las normas conocidas y aplicadas tanto en la música llamada culta como en la popular. En el cante flamenco se miniarticular los tonos hasta extremos técnicamente indescifrables.\n\nNo encuentro concepto más serio del Cante que el de nuestro querido Juan Friede, concepto no tan amplio como el cante merece, pero sí el más importante y cerca de las verdades de este discutido fenómeno.\n\nBuen amigo, buen aficionado, viajero incansable por el mundo sin interrumpir 30 años su labor investigadora entre Bogotá y Sevilla. Hace unos años que se despidió y... creo que para siempre.\n\nO,Donnell, núm. 3-4.º Teléfs. 222058 - 216920\n\nSEVILLA\n\nPARTICULAR: Teléf. 278078",
+    "title": "Juan Friede",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-9",
+    "page_number": 8,
+    "word_count": 942,
+    "article_char_count_full": 5724,
+    "article_char_count_review": 5724,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

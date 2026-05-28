@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_04::A18",
+    "article_text_for_review": "Marilyn Bishop has offered her Escondido home for this month's juerga and will either provide dance boards or transport ours to the juerga. We surely could not refuse such a gracious offer and will abandon our new Market Street home at least for this month. Cuadro \"p\" will be in charge. (For cuadro members see below.) Marilyn Bishop ha ofrecido su casa en Escondido para la juego de este mes y ella consiguará tablas para bailar o transportará las muestra a la juerga. No podemos rehusar una ofreimiento tan amable y abandonaremos muestra nuevo hogar en la calle Market por los menos por este mss. Cuadro \"D\" ss va enoargar de esta juerga. (Para los que pertnecen al cuadro \"D\" miren mas abaso.) FECHE : 24 de Abril LUGAR : 3445 Ryan Drive HORA : 7:30 PM a?? TELEPONO: 747-6285 (day of juerga only) TRAIGAN : Tapas Donations: Members and first guest of $/G member...$1.00 Non-members.....$5.00 Children 15 and under.....$0.50 Directions: From San Diego take 163 north to I-15; from L.A. take 78 from I-5 to I-15 south. From I-15 take Via Rancho Parkway East toward the Wild Animal Park. (As you bear left road becomes Bear Valley Parkway.) Turn right on San Pasqual Road and left on Ryan Drive. Direcciones: De San Diego toma sl 163 hacia el norte al I-15 norte; de Los Angles toma sl 79 del I-5 al I-15 sur. Del I-15 toma Via Rancho Parkway Este. Hacia el \"Wild Animal Park\". (Al tocer al isquierda esta calle oambia nombre a \"Bear Valley Parkway.) Voltsa a la derecha en San Pasqual Road y al isquisrda en Ryan Drive. Cuadro \"D\": Vicki Dietrich (Juerga coordinator) 450-6218 or 468-3755, Jesus Soriano (cuadro leader) 422-3695, Carol Brewer, Naji Cabrera, Rafael Diaz, Benito Garrido, Reynolds and Pilar Heriot, Penelope Madrid, Carmen outcult, Walt and Doreen Welsh, George Willis.",
+    "title": "APRIL JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_04",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26",
+    "page_number": 27,
+    "word_count": 308,
+    "article_char_count_full": 1786,
+    "article_char_count_review": 1786,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A1",
+    "article_text_for_review": "(from: ABC, Nov. 19, 1981; sent by Gordon Booth; translated by Paco Sevilla) CHANO LOBATO WITH EL POETA JUANITO VILLAR WITH NIÑO JERO",
+    "title": "CADIZ",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 23,
+    "article_char_count_full": 133,
+    "article_char_count_review": 133,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A2",
+    "article_text_for_review": "Dear Friends, If you have to cut back to every other month and cut costs then you must, but please don't do it with that little print. I got drunk at a juerga last year and lost my magnifying glass. Sadana Tucson, AZ [Editor: This is the first complaint we've received about the reduced print. We hope that this means that most of our readers are not having a problem -- we wouldn't want to create a new generation of squinting flamencos.] Dear Jaleo: I am happy to see the return of Peter Baime to your pages, and hope that he will be contributing a regular column like the one in your current (April, 1982) issue. I would also like to compliment George Peters on his article, \"Flamenco Record Collecting.\" Next I would like to encourage Guillermo Salazar in publishing discographies of flamenco masters by supplying him with the following information on 3 records I have by Mario Escudero which were not in his list. They may be different issues of some which were on his list, however, and so I will include the titles of the selections to facilitate comparison to other Escudero records. The first is \"Sounds of Spain\" (International Award Series AK-159, AKS-159), on which Mario uses the name Niño de Granada or else he is one of the unidentified members of Niño de Granada's Flamenco Troupe, which seems unlikely because it is clearly the guitarist's album. There is no singer, but some dancers appear on several numbers, probably including Anita Ramos and someone named Pepe, judging by some jaleo. The selections are: Brisas de Malaga (malaguena), Mezquita Cardobés (saleares), Oanza oriental, En un Cuadro Flamenco (alegrías), Fantasía Española (guajira), Fiesta del Rocío (sevillanas), Fragua Andaluzas (serrana), Albaicin Granadino (granadina), and Garrotin Fec. This album presents some of Mario's most inspired and energetic playing, and the guitar he uses on it has an unusually beautiful tone and responsiveness. The second album is \"Flamenco!\" (Saga ERO-B033), El Niño de Alicante with Enrique Montoya, Mario Alvarez, and Anita Ramos. The selections are: Sevillanas, Toronto Nevao (Villacaias), La Luna y El Río (bulerías), Será Una Rosa, Noche Granadina, Torremolinos, Zapateado de las Campanas, Los Ojos Mios (serrana), Fandangos Gitanos, Temas de Huelva, Villancicos (bulerías), and Fiesta en Cádiz (alegrías). The third album is \"Andalucian Folk Songs of Spain\" (Olympic Records, Atlas Series 6105), Mario Escudero with El Niño de Almadén (cantaor), Carlos Ramos, and Anita Ramos. This album has the words to the songs printed on the back. The selections are: Canta la Sierra de Granada, De Triana (soleares, guitar solo), fandanguillos Variados, soleares, Canta de la Sierra (malagueña), Canta de Prefacio de la Iglesia (cana), sevillanas (guitar solo), alegrías y mirabras, Mosaico Gaditano (alegrías, guitar solo), Milonga, Melodía de un Corazón Oolorido (milonga), Lamento Minero (taranta), and Sanza Mora (guitar solo). I have also enjoyed the recent articles by Gabriel Ruir and the many interviews provided by El Chileno. I meant to say so earlier, but it was lost in the controversy over Jerry Lobdill's unwarranted criticism of Paco de Lucía. Regarding Paco Sevilla's reply to the letters concerned with that issue, for now I will note only that his comments carefully avoided all of the real issues raised, and I interpret this as implicit agreement with the statements in the letters. I am content to let the matter lie there, at least until I see what other responses you receive on this unfortunate subject. Meanwhile, good luck in your pursuits of the really good material which also appears in your magazine. Sincerely, John W. Powler Santa Monica, CA Dear Sirs: We recently had a visit from Teodoro Morca from the U.S. with his flamenco group and he has given me your address to subscribe to your magazine. There is a small group of \"aficionados\" here in Auckland and we would very much like to hear of U.S. flamenco happenings. Several of us have studied flamenco guitar or dance overseas and try to keep the spirit of flamenco alive here. We also have a great flamenco singer living in Auckland (originally from Spain, of course) -- Leo Azzapazdi who Teo also met. We spent a very pleasant few days \"flamenco-ing\" with him, his wife Isabel and guitarist Gary. Hoping to hear from you. Yours faithfully, Jane Luscombe Auckland, New Zealand WE APPRECIATE OUR ADVERTISERS PLEASE PATRONIZE THEM Antonio David - Flamenco Supreme Strings The Blue Guitar Shop R. E. Brune (Guitars for Sale) Chula Vista Travel Lester De Voe - Guitarmaker The Frame Shop Morca Workshop Ron Spatz - Yvetta Williams - L.A. Juergas Rubina Carmona",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 767,
+    "article_char_count_full": 4656,
+    "article_char_count_review": 4656,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCASTANETS There have been many countries in the world that have used musical instruments similar to castanets for rhythmical accompaniment to their dances, but Spain is one of the few countries in which the castanets have developed into a high art, a total musical instrument that has literally become part of the dancer's body in musical expression. Many of the regions of Spain use various types of castanets for their individual folk dances. Some have different names: postizos, pulgaretes, palillos. The word \"castanet\" probably came from castana, perhaps due to its chestnut-shell shape. In most of the regions, the castanets are worn on the middle finger. In fact, if you hand a pair of castanets to most people that have never played them, they will usually put them on their middle finger,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\ntheir individual folk dances. Some have different names: postizos, pulgaretes, palillos. The word \"castanet\" probably came from castana, perhaps due to its chestnut-shell shape. In most of the regions, the castanets are worn on the middle finger. In fact, if you hand a pair of castanets to most people that have never played them, they will usually put them on their middle finger, which is correct for most of the northern regional dances and the many styles of jota. In the regional dances, they are used mostly for rhythmical accompaniment. In the classical and theatre dance styles, the castanets are usually worn on the thumbs to facilitate a larger variety of techniques and better interpret all of the facets of the music. This is where the castanet playing is unique in all of the world. This style was started many years ago as dancers developed into performing artists and was a natural outgrowth of the total technique development of interpretation. People like Antonia Mercé, \"La Argentina\" made\n\n[ENDING CONTEXT]\n\nflop around, which makes them hard to control and makes your hand positions unnatural. One of the MORCA 1349 Franklin Bellingham, Washington 98225 Pb. (206) 676-1864 A CELEBRATION OF THE 4TH \"ALL FLAMENCO WORKSHOP, AUGUST 16 THROUGH 28, 1982 A ONE-OF-A-KIND HAPPENING TAUGHT BY MASTER TEACHER, DANCER, CHOREOGRAPHER, TEODORO MORCA WRITE OR CALL FOR INFORMATION AND BROCHURE best type of cord is a hollow-type shoe lace filled with yarn to the size that will fit the holes in your castanets snugly. The castanet should be able to go into any position and maintain its position relative to the hand.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MORCA: SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5,20",
+    "page_number": 5,
+    "word_count": 1267,
+    "article_char_count_full": 7530,
+    "article_char_count_review": 2631,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_05::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDEC. 1-15, 1981 (from: ABC, Nov. 24, 1981; sent by Gordon Booth; translated by Paco Sevilla) by Miguel Acal Program (All performances at 7:30 and 10:30 each day in the Lope de Vega Theater.) Dec. 1 -- Day of the teachers of dance in Sevilla (performing with their students): Adelita Domingo, Gitanillos de Bronce, Angelita Milla, Juanito Díaz, Antonio Zarandilla, Manolo Marín, Eugenia y José, Pepe Moreno, Fernando Rabay, Pepita Rabay. Singers for them will be Nano de Jerez, Antonio Saavedra, and Curro Fernández; guitarists: Sami and José Acebo. Dec. 2 -- Day of the Flamenco Guitar: Recitals by Pedro Bacán, Nino de Pura, Nino Gero, and Rafael Riqueni. Dec. 3 -- Day of the Cantes Rocieros: Los Marismenos, El Pali, Los Romeros de la Puebla, Loli la Canastera, and Los de Valme. Dec. 4 -- Coros\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Manolo\"]\n\nrists: Sami and José Acebo. Dec. 2 -- Day of the Flamenco Guitar: Recitals by Pedro Bacán, Nino de Pura, Nino Gero, and Rafael Riqueni. Dec. 3 -- Day of the Cantes Rocieros: Los Marismenos, El Pali, Los Romeros de la Puebla, Loli la Canastera, and Los de Valme. Dec. 4 -- Coros y Chirigotas de Cádiz. Dec. 5 -- Day of the Cante and Baile of Cádiz: Camerón de la Isla, Paquera de Jerez, Beni de Cádiz, Panseguito, Rancapino, Nano de Jerez. On guitar: Manolo Brenes and Tomatito. Dancing will be El Güito with the cante of Nano de Jerez and Curro Fernández. Dec. 6 -- Rock Flamenco: Alameda. Dec. 7 -- Day of the Flamenco Piano: Felipe Campuzano. Dec. 8 -- Day of the Gypsy Cuadros: Los Montoya, Los Farrucos, La Susi and her group. Dec. 9 -- Córdoba, Cádiz, and Sevilla \"Mano a Mano\": Fosforito and Antonio Cortés \"El Chiquetete\" with the guitars of Manolo Domínguez and Rafael Mendiola. Also, Manuela Carra\n\n[EVIDENCE WINDOW 2 | retrieval_hint=PED_01 | trigger=\"TEACHER\"]\n\nReina. Dec. 14 -- Piano recital by P. García Chornet, with orchestra, doing works by Albéniz, Malats, Torradell, Espla, Bacarises and Manuel de Falla. Dec. 15 -- Day of the Anthology of Cante and Baile: José Menese, Calixto Sánchez, Juanito Villar, Chocolate, Chano Lobato. Guitars: Enrique de Melchor and Manolo Domínguez. Dance: Matilde Coral with Chano Lobato, Romerito de Jerez, and Manolo Domínguez. EL CABRERO CURRO MELENA THE DAY OF THE DANCE TEACHERS (from: ABC, Dec. 3, 1981; sent by Gordon Booth; translated by Paco Sevilla) It hurts, with all the sincerity of which one is capable; it hurts to negate mastery, even if it is only for one night...It would be much easier to talk about the wonders of the first day of the Quincena, and forget the rest. But we swore to uphold the cause and we must remain faithful to it. The night of the teachers and academies of dance was anything but a night of maestros. There were exceptions -- even more worthy on this night -- but only exceptions: The honesty and suffering of Juanito Díaz -- fandangos and sevillanas at three in the morning, with five students, after waiting since ten o'clock; the discipline of the children of Gitanillos de Bronce -- with an original and well-applauded choreography; the quality of the school of Eugenia and José, and the good work of Manolo Marín. The rest, because children were involved, had their happy moments, for sure, but you could count on the fingers of one hand those who had excellence. MILAGROS MENGBAR NARANJITO DE TRIANA LOS MARISMENOS THE DAY OF THE CANTES ROCIEROS (from: ABC, Dec. 5, 1981; sent by Gordon Booth; translated by Paco Sevilla) bv Miguel Acal This sessi\n\n[ENDING CONTEXT]\n\nmicrophone, showing off that powerful voice that God gave her. This woman is different; she has the appearance of an old gypsy with the face of a child. When she sings as she did today, the theater has the smell of jasmin. Juan Montoya -- what elegance -- El Morito and Carmelilla -- all strength and compás -- dance afterwards. They bring the house down. Los Montoya, as with los Farrucos and la Susi, continued until the curtain fell for the last time, imprisoned the compás. Rubina Carmona Instruction in Cante and Baile Flamenco Personal Costume Design (213) 660-9059 Los Angeles, Ca. CHIQUETETE\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANDALUZA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-11",
+    "page_number": 6,
+    "word_count": 2292,
+    "article_char_count_full": 13210,
+    "article_char_count_review": 4269,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Manolo"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "PED_01",
+        "family": "PED",
+        "trigger": "TEACHER"
+      }
+    ]
+  }
+]
+```

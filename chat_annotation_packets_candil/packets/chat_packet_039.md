@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-01-8-right-cuatro-episodios-ineditos-en-la-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEn mi vida de aficionado —ni corta ni larga, sino todo lo contrario— he escrito mucho sobre Manuel Torre, del que conozco perfiles inéditos, no por méritos propios, sino porque el azar puso en el camino de mis afectos muy sinceros a su hermano Pepe: perfil de emperador romano, gracia a espuertas, bisagra sin estrenar y memoria de IBM. Por ella puedo ofrecer hoy, a la rutilante luz de nuestro «CANDIL», un póker cuya primera carta ya está sobre el tapete de «NOVEDADES»: el café cantante de Sevilla que recogía el mejor aliento de lo jondo verdad. Allí se presenta una noche, por vez primera, el jerezano Manuel Torre, con su traje de seda cruda, negro, camisa blanca, el gesto serio y un enigmático duende desbordándosele en la voz. Forman el cartel del acontecimiento —siéntese usté amigo— La\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionados\"]\n\nlas espaldas. Porque lo hace por algo que no es del uso: ¡por tangos-tientos! Ya, ya sé que esto se canta por bulerías, pero entonces iba por unos tientos que Tórre dedicara a cierta Amparito —junco de ribera, boca de caramelo, pechugoncilla y valentona—, que lo traía por la calle de la amargura. El éxito es enorme. Las palmas, coheterías; y los olés, de escalichar las paredes. Al día siguiente, y en los sucesivos, ya buscan a Manuel los buenos aficionados. Lo buscan, pero no lo encuentran, porque el gitano de la guasa se ha vuelto a Jerez y, si te vi, no me acuerdo. «Amparo, por Dios, mi Amparo, l'enfermo cuenta l'alivio: yo lo busco y no lo hallo...» El padre, al «sentirlo» entrar por esas puertas, pega un respingo y un grito: —¿Cómo la má de bien? Entonce... ¿se pué sabé por qué te has vuerto?... —¿Qué hace tú aquí, Núé? ¿Qué te has llevao un fracaso...? Madrid, ayer castillo famoso y hoy castillo de fuegos artificiales. Allá que se presenta Manuel Torre, contratado para el «Café de la Marina», en el que actúa junto a Juan Breva, el Pena de Málaga, Luis Molina y Ramón Montoya. Se hospeda en una pensión de la calle San Ildefonso... y todos los días se pierde por esas calles (como diría mi buen amigo Brageli, «con tontos de capirote corriendo pa ná»), paseándolas horas y horas, con tal de no preguntar a nadie la dirección, que uno tiene su orgullo. —No, pác: he quedao la má de bien. Manuel mira los ladrillos desde su altura gigantona, se atusa el tupé para el disimulo, levanta los hombros, como con frío, y explica: Es el tiempo en que alterna en las tertulias de Felipe Murube y de García Lorca. Cuando el cantaó está en Sevilla, viene el poeta granaíno a escucharlo cantar toda la noche. Por la mañana, Federico sigue en la Alameda, junto a Manuel y, cuando ya se siente muy cansado, pide una pieza de pan para hacerse un bocadillo de aspirinas... —Por ná... Es que... Es que ;me da jindama vé tantas luces encendías!... Reunión en el estudio de Sánchez-Cid. Intelectuales, artistas, flamencos. Aquella noche Torre está en vena y, al rematar una de sus seguiriγas, Federico García Sanchiz, el famoso charlist\n\n[ENDING CONTEXT]\n\nel marcial estruendo. Los que se han congregado en las aceras para oír a Manuel se vuelven con ojos airados hacia el jefe que va al mando del batallón, hasta que el más decidido exclama:\n\n—¡Callarse, que está cantando Manuel Torre...!\n\nEl jefe —que debía ser un aficionado hasta los tuétanos— ordena:\n\n—¡¡Allll...to!!!\n\nY así es como una mañana, nada menos que todo un batallón de Infantería se detiene en una calle sevillana, para rendir silencio y armas a aquel quejío «que paraba los relojes y quebraba el azogue de los espejos»...\n\nManuel Barrios\n\nCONSTRUCCIONES\n\nCALLE ALCAUDETE, 10\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cuatro episodios inéditos en la vida de Manuel Torre",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-9",
+    "page_number": 8,
+    "word_count": 1154,
+    "article_char_count_full": 6516,
+    "article_char_count_review": 3764,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionados"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-01-9-right-el-alma-de-la-copla-de-guerrita-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTranscripción y comentario de Manuel Yerga Lancharo\n\nEl «Alma de la Copla», escrita por Antonio Quintero y Pascual Guillén, grabada por «la Voz de su Amo» en tres placas —AE 2976, AE 2977 y AE 2978—, fue el cuadro flamenco más popular y de mayor éxito artístico y económico de la década de los años treinta. Ni que decir tiene, me agradaría que alguien se preocupase de reproducirlo en disco o cassette como medicina que, en unos minutos de audición, pueda desempachar a la afición de tantas siguiriyas y soleares. Por cierto, la siguiriya de Gabriel (Guerrita), no es de las «arrastrá», se trata de una interpretación normal en dicha época, justa en su estilo y medida musical, a la vez que muy preciosista y dulce.\n\nReparto:\n\nSra. Adamuz\n\n** ** **\n\nSr. París: Vamos a ver, ¿a qué le tiras tú,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombre\"]\n\nón de tantas siguiriyas y soleares. Por cierto, la siguiriya de Gabriel (Guerrita), no es de las «arrastrá», se trata de una interpretación normal en dicha época, justa en su estilo y medida musical, a la vez que muy preciosista y dulce. Reparto: Sra. Adamuz ** ** ** Sr. París: Vamos a ver, ¿a qué le tiras tú, sentránas mías? ¿A as liebres, a la perdiz o a las águilas reales? Grabié: (Canta el fandango de desafío): Yo le tiro al corazón al hombre que me ha ofendió yo le tiro al corazón; si ahora no lo he conseguió ya llegará la ocasión de darle su merecio. F. Alcolea: Maldita sea! Sr. París: ¡Quieto! ¡A dónde vamos a pará! Señores, a un hombre amarrao no se le avasalla. Lo primero se le sueltan las manos. ¡Así! ¡Ea, tos iguales! ¡Y ahora vamos a vé quién es el guapo que le contesta! F. Alcolea: ;Yo! (Canta un fandango de desafío) Ni me tires valentía ni me levantes la voz ni me tires valentía que esta riña entre tú y yo se ha de acabar con la vía de cualquira de los dos. Sr. París: ¡Hala! ¡Vamos a ver, hombre; vamos a ver si es verdad! ¡Ea, vamos a escuchar, niña! Que este que está ahí con tos sus blasones, cuando Dios lo echó al mundo, dijo: «Ahí va un flamenco de los pies a la cabeza». Y el que nace flamenco lo es aquí y en la «Onza de Oro» y en el Palacio Episcopal. ¡Anda, cántame tú, Alcolea! ¡Canta tú, Jiménez de mi alma! Que sepa el mundo esta mañana clara cómo ennoblecen la guitarra y el cante los señoritos de Despeña-perros pá bajo. ¡Hala, vamos a verlo, Fernando! F. Alcolea: (Canta un fandango de la cacería): Contra mí se revolvió una loba perseguía contra mí se revolvió; quiso defender su cría y tanta lástima me dio que le perdoné la vía. Sr. París: ¡Olé, muy bien, Fernando! Pá que se convenzan us-tedes cómo se canta. ¡Hala, Fernando, hala! F. Alcolea: (Canta un fandango): Se volvió manso cordero una yegua encabritá se volvió manso cordero; sin poderme\n\n[ENDING CONTEXT]\n\ndile a Grabié que venga; que hay aquí unos cuantos señores asustaos!\n\nSr. París:\n\n¡Ja, ja, ja, ja! Eso tiene grasia. Si no que su marío de uste no va a vení porque está más pá bajo esperando a ésta. ¡Es mucho Grabié! Ahora que Fernando Alcolea es un señorito muy simpático y un flamenco y uste... uste me está cantando a mí esa copla, ¡pero que ya mismo!\n\n¡Bueno! ¿Se quiere usté marchá a la calle? ¡Qué escándalo es este!\n\nMariquiya:\n\n¿Pero quién va a cantar?\n\nF. Alcolea:\n\nSr. París:\n\nEsta mujer porque la quiere Revilla.\n\n¡Le cantaré yo primero! (Canta un fandango de desafío).\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El «Alma de la Copla», de Guerrita y Pena Hijo",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-10",
+    "page_number": 9,
+    "word_count": 1511,
+    "article_char_count_full": 8218,
+    "article_char_count_review": 3499,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombre"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-01-11-left-en-torno-al-x-congreso-de-activi",
+    "article_text_for_review": "Por Ramón Porras\n\nDesde hace varias semanas, la Comisión Ejecutiva para el X Congreso de Actividades Flamencas, viene desarrollando una labor continua y eficaz, en orden a crear la infraestructura de organización necesaria para un más operativo desenlace de nuestro próximo CONGRESO.\n\nCONGRESO NACIONAL DE ACTIVIDADES FLAMENCAS≈ JAEN 1982\n\nYa dijimos que existe una cultura oficialista, académica y encorsetadora de aprendidos conceptos; ya dijimos que, pese a las numerosas adhesiones que artistas e intelectuales prodigan al Cante Jondo, éste sigue siendo una manifestación cultural desconocida, e incluso menospreciada, por quienes se erigen en cultivadores de un arte y de una cultura elitista. El problema se reconduce a falta de sensibilidad por un lado, y a desconocimiento de los hondones estremecidos del CANTE, que también son cultura, que también son historia, que también son prístina y elementalísima manifestación de arte.\n\nHe aquí los dos grandes planteamientos que la organización del X Congreso de Actividades Flamencas debe estructurar. Expandir vivencias y apreciaciones sensibilizadas respecto al Cante Jondo, y difundir el conocimiento exacto de este arte, vector, acaso el único que no se le ha expropiado, completamente a este pueblo, de una cultura singularísima, y sistemáticamente oscurecida por el mercado del consumo, por la alienación colectiva, por la opresión política, económica y cultural que ha atenazado secularmente a este Sur doliente. No se trata de hacer sólo divulgación, porque el Cante Flamenco, como toda expresión artística, no puede ser exclusivamente aprendido, sino que ha de ser también emocionalmente asumido, o, lo que es lo mismo, precisa conectar con la sensibilidad de quien lo contempla. En este sentido, el X Congreso de Actividades Flamencas pretende verse enriquecido con otras disciplinas que propicien el conocimiento del fenómeno en su más amplia dimensión. En otro orden de cosas, la trama organizativa del X Congreso de Actividades Flamencas, está muy avanzada. Por el momento, las colaboraciones económicas son exiguas y contractan con el apoyo moral masivo que la prácticamente totalidad de los aficionados vienen dispensando a los organizadores de este X Congreso.",
+    "title": "En torno al X Congreso de Actividades Flamencas",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 335,
+    "article_char_count_full": 2229,
+    "article_char_count_review": 2229,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-01-11-right-las-letras-flamencas-de-alfonso-",
+    "article_text_for_review": "***\n\nNo renuncio a lo fácil, agua menuita son estos cantes inéditos de Alfonso Canales, quien en «Casa de Juan Breva» —«Reales Sitios»—, dejara contundente constancia de su capacidad de asimilar la hondura de lo jondo, escribiendo uno de los más bellos poemas de inspiración flamenca que conocemos. No vamos a ser nosotros quienes intentemos, aquí y ahora, un análisis de estos cantes del autor de «Requien andaluz», los que, a la vez que nos deparan una auténtica sorpresa literaria, nos traen las constantes poéticas de su obra, sin lugar a dudas, una de las más sobresalientes de la poesía española contemporánea.\n\n«CANDIL», a la vez que se felicita por la edición de estas coplas del poeta malagueño, señala la gran belleza literaria de todas ellas y los ecos, genuinamente flamencos, verdadera asunción de los populares, en la inmensa mayoría de estos cantes.\n\nSi no te hubieran nacido, otro gallo te cantara que no hubieras conocido. Por tres veces cantó el gallo. Si San Pedro no llorara —dijo Jesús Nazareno—, otro gallo le cantara. Esto te cumple saber: mientras más vida contienes, menos puedes contener.\n\nEl mundo tiene que ver todo lo que tienes visto y lo que venga después.\n\nNadie sabe lo que piensa: sólo sabe lo que dice, cuando la palabra acierta.\n\nLo malo de toda fiesta es que comienza a acabarse tan pronto como comienza.\n\nNunca llegas a entenderte: aunque te canse la vida, más te cansará la muerte.\n\nEs menester estar vivo, y creer que estás despierto cuando más estás dormido.\n\nYa me estoy acostumbrando a que me coma la tierra y a que no me diga cuándo.\n\nMotivo para llorar: haber roto con la vida sin poderlo remediar.\n\nLibro, sueño y ocasión: si no los vives dos veces no merecen lo que son.\n\nPreguntadle al aduanero si en pasando la aduana va a servir este dinero.\n\nSíéntate un día a esperar, y verás que lo que esperas no termina de llegar.\n\nEl día que me morí se murió el pecado aquel del que no me arrepentí.\n\nNo se pueden contener ni río con mucha agua ni boca con mucha sed.\n\nVamos a ver si es posible no ver lo que estamos viendo y estar viendo lo invisible.\n\n¡Que me quiten del cartel! Que ensayo todas las noches y no me aprendo el papel. Me bañará mil veces el mismo río Pueden cambiar sus aguas: no cambia el frío.\n\nLa mar siempre está sola (¡lástima verla!) cuando la contemplamos desde la tierra.\n\nDijo el árbol a Eva: —¿Mi fruto es malo? Y Eva le contestaba: —No lo he probado.\n\nCuando te mueras vas a pasar un río. Fíate del barquero. Yo no me fío.\n\nTengo que hacer diez cosas: es la primera olvidarme de nueve cuando me muera.\n\nBusco un clavo perdido: mira por donde mientras que más lo busco más se me esconde.\n\nLa casa que no tuve yo la quería con las cuatro fachadas al Mediodía.",
+    "title": "Las Letras Flamencas de Alfonso Canales",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 492,
+    "article_char_count_full": 2724,
+    "article_char_count_review": 2724,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-01-12-left-escenario",
+    "article_text_for_review": "Todo dispuesto está. La noche brilla en un ojo de luz que nos convoca. Dos hombres solos. La guitarra toca y alguien se electrocuta en una silla. El cuello sus tendones agavilla, y una mano caudal se vuelve loca cuando baten las fraguas en la boca de un hombre que, en tristezas, se amartilla. El escenario es breve, apenas justo para que un corazón se sienta a gusto sacudiéndose el duende que lo agarra. Dos hombres solos para empeños pares; uno le va diciendo sus pesares y otro se los traduce a la guitarra.",
+    "title": "Escenario",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 94,
+    "article_char_count_full": 511,
+    "article_char_count_review": 511,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

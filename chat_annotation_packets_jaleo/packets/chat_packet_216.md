@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1989_03::A5",
+    "article_text_for_review": "[TRANSLATED BY THE SHAH OF IRAN] by Miguel Acal He is a whirlwind. The world of the baile shakes when his arms rise ceremoniously or his figure becomes a cyclone. The baile is a form of expression; the pellizco that the cante transmis in a quejio or the refrain the guitar sends us becomes movement, slow or dizzying, in the baile. Flamenco is a living art in continuous evolution, but faithful to certain mathematical constants. That which we call \"compás\" and define as division in exact counts of a musical measure must be indestructible and indispensable if flamenco is to maintain its expressive capacity. Only geniuses can divide or multiply for themselves these musical phases without losing a note of their reality and with perfect subjugation to the pre-set structure. The baile becomes a mighty hurricane that overthrows conventions when this man executes it. There is no way (or at least I know of none) to reflect completely his personality and to define his mannisms. Everything he has is distinctive, unconventional and light-years away from academic formality.",
+    "title": "EL FARRUCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1989_03",
+    "year": 1989,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 177,
+    "article_char_count_full": 1075,
+    "article_char_count_review": 1075,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1989_03::A6",
+    "article_text_for_review": "by the Shah of Iran That rare field of flamenco comedy has been reduced by one half with the passing in June of 1987 of Emilio Jiménez Gallego, \"Emilio el Moro\", leaving only, to the best of our knowledge, El Sardinia de Caí to carry on this delightful tradition. El Moro was born in the Spanish North Africa enclave of Melilla in 1923 $ ^{1} $ and gained recognition there as a cantaor while in his early teens, winning seven different competitions in the traditional cante, ranging across most of the gamut of palos. That El Moro was a seriously talented and capable cantaor, albeit touched with a bit of wackiness, is apparent to anyone who can put aside pretentiousness long enough to recognize that, behind his flippancy lay a deep and powerful command of the flamenco idiom, not to mention a fine voice “afilá”. A fun-loving good nature and a love of jokes probably vitiated his chances as a classical cantaor. Not only did El More sing cante, but is said to have played the guitar magnificently and to have garnished his performances with his own baile-cómico renditions. El Moro showed up in Madrid in 1949, wearing his jellabah, turban, babuehas and beard. Looking somewhat ridiculous and displaying not the slightest shred of self-consciousness, he took the place by storm. There soon followed contracts and great success throughout the principal cities of Spain. In 1959, El Moro toured South America, appearing in night clubs and on television throughout Venezuela, Argentina, Perú and Chile, always reaping great acclaim. He returned to Spain to form a group called \"The Congress of Humor\". In the past decade or so he had slipped into ablivion with few in Spain remembering him. To the two certainties, death and taxes, held to be inevitable by the American mind, we would like to propose a third — oblivion. The tribulations El Moro expressed in song were the trials of a good-natured man of common taste set on satisfying the appetite for good times or the mundane requirements of quotidian life, and finding his efforts thwarted by the unexpected, the ridiculous or the inglorious. Pretty women, good times, food, a decent house, a working automobile — while not highly philosophical issues, were the stuff of El Moro's concerns and the wellspring of his woe — and the crowd's delight! \"How pretty was my girlfriend,\" he sings sweetly, \"the day we first met; at forty kilos, she had the figure of a china doll.\" Once married, however, she can think of naught but food. She puts on 100 Kilos and hilarity takes center stage as El Moro explains the expense of an apron to accommodate her expanse, how she flattens the bed with her mass and lets out snores that can be heard in Portugal, how he is ruined by the expense of feeding her, horrified to look at her, and preparing to decamp to China or points beyond. \"Gentleman, I just bought a new apartment,\" sings Emilio as he satirizes the housing problem as vexatious then as now in Spain, \"one of those so small that one person can't fit in it vertically... the refrigerator door accommodates only four cloves of garlie... the bathroom's so cramped, we all use a family toothbrush... my sister's beau came the other day and we had to pass him his soup through the window.\" 1. Facts supplied by album cover \"Los Exitos de Emilio el Moro\"; mush supplied by the Shah. El Moro's car is no less a problem, being perpetually discombobulated. He finally manages to get shed of it by selling it to two characters who cart it off on top of two bicycles. His long-desired relief, alas, is short-lived as the accursed vehicle obstinately manages to insinuate itself back into his possession as many times as he gets rid of it. \"When I die, lay me out in a canary-yellow coffin,\" he instructs, in \"Unaud amarillo canario.\" Further specifications require that the coffin be air-conditioned, stocked with ham sandwiches, equipped with overdrive (if we recall correctly) and supplied with two fine stewardesses to accommodate him on his eternal flight through the stars. While it is beyond the mortal power of man to meet some of El Moro's requests for vehicular accessories, we would like to think that on a fine June day in Alicante, Emilio el Moro was stretched out in a yellow coffin as bright as the law would allow and as warm as the laughter with which he filled the hearts of his fans and friends. ☐ ☐ ☐ ☐ ☐ ☐ ☐ FLAMENÇO GUITAR Play the compositions of PACO DE LUCIA, SABICAS, SEHRANITO, PEPE HABICHUELA, MANOLO SANLUCAR, NÍNO MIGUEL, PACO CEPEHO, TOMATITO, ENRIQUE MELCHOR, ETC. From the transcriptions of their recordings in TABLATURE NOTATION. Respecting note for note the OVER 190 TITLES AVAILABLE PLUS 25 ANTHOLOGIES OF FALSETAS Write to: ALAIN FAUCHER, 28 RUE DE LA REINE BLANCHE, 75013 PARIS, FRANCE 'GYPSY GENUIS' Historic - Exclusive Video Release BY MANUEL AGUJETAS DE JEREZ (CANTAOR) For the first time in flamenco history the legendary Manuel Agujetas de Jerez performs on video cassette. The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance that will remain forever. Beautiful eantes por Soleá, Fandango Grande, Siguiriyas, Malagueñas, Romeras, Taranto, Tientos, Bulerías. Length: 90 minutes in color. This video features the special collaboration and original guitar accompaniments of recording and concert artist RODRIGO. Don't miss out on this first world release as it is a collectors item. No studio video of this kind has ever veen made. Order Beta of VHS. Only $49.00. Send each, check or money order to Alejandrina Hollman, 148 Taft Ave. #11, El Cajon, CA 92020. The performance took place on August 5, 1985. An educational \"must\" for guitarists and singers. Allow 3 to 4 weeks for delivery.",
+    "title": "CANARY YELLOW COFFIN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1989_03",
+    "year": 1989,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9",
+    "page_number": 9,
+    "word_count": 977,
+    "article_char_count_full": 5720,
+    "article_char_count_review": 5720,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1989_03::A7",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAYAKO ENDO After spending four years in Japan, I have to say that I have heard only one good Japanese singer. Her name is Ayako Endo. People always say \"ichi-ban\" which means number one, or that she is the best Japanese singer in Tokyo. A friend took me to her house where I met Ayako, her two small children and husband Ken, who is a good flamenco guitarist. My friends were right, she is very good. Still, people would say, \"You should hear her with Pepe.\" My next contribution to Jaleo will contain an article about Pepe Shimada; perhaps the pest flamenco guitarist in all of Japan.) Most tablaos in Tokyo stress dancing in order to please the non-flamenco public. So I was delighted when a friend gave me a ticket to hear only Ayako's singing with Pepe's accompaniment. Once the performance\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"rhythm\"]\n\nher with Pepe.\" My next contribution to Jaleo will contain an article about Pepe Shimada; perhaps the pest flamenco guitarist in all of Japan.) Most tablaos in Tokyo stress dancing in order to please the non-flamenco public. So I was delighted when a friend gave me a ticket to hear only Ayako's singing with Pepe's accompaniment. Once the performance started, the small room was filled with a musical and emotional charge. The lyrics, bursting with rhythmic vitality, came from deep within her. The music was mysterious, almost brooding, but not to the point of being heavy or sad. These two were drawing from, and sharing the art of flamenco in a way seldom seen in Japan, or elsewhere. —Sadhana INTERVIEW WITH AYAKO ENDO [from $ \\underline{\\text{Paseo}} $ magazine, Jan '88; translated by Mr. Aoki.] The interviewer was Mr. Goh Ohsaka, novelist and winner of the \"Naoki\" Prize. G. Ohsaka: The very first time that I had heard you sing was at a tablao, in Tokyo. I remember there was one evening dedicated to \"Cante\". Ikariyama (bailaora) with Mr. Takahashi and Mr. Nishimura playing accompaniment guitars. Maybe five or six years ago. I didn't know that you were there. Ayako: Oh! Did you? Since such a long time a\n\n[ENDING CONTEXT]\n\nhard. Even when you clap your hands, the palmas, you have to feel the \"aire\" not just the compás. Do you ever intend to teach the Japanese, because the singing is indispensable in the flamenco field. So Mrs. Endo, I hope that you will start pulling up the younger generation into the cante field. I, myself am learning a lot. So I have no confidence to teach. But if there are several who are interested in learning, like myself, I would really like to do it together with them. Well you have some wish then. They say that teaching is learning. So perhaps I should start learning cante from you.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO IN JAPAN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1989_03",
+    "year": 1989,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10-13",
+    "page_number": 10,
+    "word_count": 1746,
+    "article_char_count_full": 9512,
+    "article_char_count_review": 2836,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "rhythm"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1989_03::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[from: The American Dancer, Dec 1938; sent by Jimmie Crowell] by Dorathi Bock Pierre In Spain, as in no other modern country, dancing families are common. However, Antonio, the father of the dancing Cansinos, was the first dancer of his family. He founded the dynasty and his children and grandchildren are carrying on the tradition. Antonio Cansino came from a family closely connected with the church in Seville. There was a large fortune in which he would have shared if he had become a priest, as did the other men in his family, but young Antonio had other desires. He loved the gaiety of the Spanish gypsy dances and when he was fourteen he began serious study to make dancing his career. By the time he was seventeen he was dancing professionally in cafes and soon went into the theater. The\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"family\"]\n\nSpanish gypsy dances and when he was fourteen he began serious study to make dancing his career. By the time he was seventeen he was dancing professionally in cafes and soon went into the theater. The girl he chose for a wife worked in a tobacco factory, and like Carmen, she was a beautiful amateur dancer. Antonio coached her and they danced together until, with the birth of their first son, Enrico, she stopped dancing and devoted herself to her family which eventually numbered fourteen children. As soon as the children could toddle, father Antonio started their dance training. The second child, Gracia, started to dance when was three and as a child she had a large following. She developed into a very beautiful dancer and gave a command performance before Queen Victoria at the Palace. Unfortunately, her brilliant career was ended by her untimely death. Carmella was the third child and she was appearing with her father when she was only six years old. Elisa, the fourth child, first danced in public when she was four years old, appearing with a little boy who was a student of her father. When she was six she and her two sisters appeared in operettas and toured all over Spain. Carmella and Elisa toured South America with their father, enjoying great popularity and remaining two years. When they returned to Spain they danced in a show for a year and then Carmella died. \"Padre was broken hearted and said he would never dance again,\" Elisa explained. \"He never has. Since that time he has devoted all his time to teaching.\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_03 | trigger=\"represent\"]\n\now Me with Anna Held and their first tour to the Pacific Coast was in 1915 with Alice Lloyd. Elisa and Eduardo were a tremendous success here and they danced together in shows and in Vaudeville for years. In the summers, Elisa used to go home to visit the family and she painted such a glowing picture of America that Mother Cansino sent over the rest of the family, one by one, as they were old enough and considered by Padre good enough dancers to represent the Cansino name. In 1915 José and Angel came. They danced together, first in vaudeville with a Spanish-American girl, Flores. Their first show was Night Boat, in which they danced for two years. The mother came to visit and liked it so well she stayed two years. She brought ten-year-old Rafael with her and entered him in school here. \"Padre came over to visit later, but he did not like it so well. He only stayed six months. It was during prohib\n\n[ENDING CONTEXT]\n\nand grandchildren, to see them dancing and at peace, he is lonely for the life he has always known. Elisa says: \"The Cansinos have always danced and taught and we shall continue to dance and teach as long as there is the fire and beauty of Spain in our souls and the freedom of America in our hearts.\" SHEET MUSIC SEND SELF ADDRESSED STAMPED ENVELOPE FOR A FREE LIST (Flamenco music of the greats: Sabicas, Paco de Lucía, Seranito, Capero, Ramon Montoya, Ricardo, Sanlucar - many others) RARE FLAMENCO RECORDS - $5 Plus postage. (818) 789-1453 MAURICE SHERBANEE 5329 NORWICH AVE. VAN NUYS, CA 91411\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "A DANCING FAMILY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1989_03",
+    "year": 1989,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 14,
+    "word_count": 1319,
+    "article_char_count_full": 7455,
+    "article_char_count_review": 4147,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "family"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "represent"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1989_03::A9",
+    "article_text_for_review": "by Steven Roser From August 15th - 28th, Teo Morca opened his studio/residence in Bellingham Washington to thirty-six students and visitors for a rare total immersion in flamenco. Bellingham is a small college town in western Washington, near the Pacific coast and the Canadian border. Its charm is distinct from Andalucía. The weather is cool, with some rain in the summer, large trees, lush greenery, old New England-style houses, and more dogs and cats per capita than even in Granada. Students come from all over the USA and Canada to learn flamenco dance. Some have no prior dance or flamenco experience. Others are dance teachers and advanced dance students. This year, there were a few guitarists (including myself) who desired to round out their knowledge of flamenco through dance study. The level of student education was high. My two roommates were a data processing manager and an architect. There were several school teachers, a dance teacher, a psychologist, an artist and a legal secretary. For $9-10 per day, student accommodations were strictly sencillo — rented rooms within walking distance of the studio. Some slept on a couch or mattress on the floor. The dance studio is a converted church which has a raised hardwood floor, a perfect setting for the “reverence” or wind down which concludes each class. The floor is a blessing for most of us over thirty-five because footwork on a concrete floor can severely punish the knees and ankles. The walls are covered with photographs of Isabel and Teo’s lifetime of living flamenco. The photos of eagles inspire Teo, who admonishes his students to capture the audience with an intense stare of a bird of prey. The workshop consists of two dance classes (1 1/2 hours each) per day, with added evening flamenco related activities. On weekends there is only a Saturday morning class. The classes are divided into beginning and advanced sections. Students from either section are allowed to watch (audit) the other classes. Class size is limited to about eighteen, to allow enough room to move and avoid the sardine-can environment one finds in some other dance studios. Although there is considerable variance in individual abilities in each section, anyone electing the advanced classes is expected to have a firm grasp of the 12-count compás and the ability to pick up and retain a long JALEO - VOLUME X, No. 4 Sara de Louis dancing at Teo Morca Workshop choreography to memorize. The other dance was a medium fast bulerías or, rather, a group of bulería, in which Teo would frequently mix up the order in which they were to be performed. This was a prelude to one session on improvisation. Some of the class performed a couple of minutes each of bulerías, using previously unrehearsed routines. On the evening of the first day of classes, Teo conducted a flamenco \"rap session\". Teo defined flamenco terminology; desplante, llamada, escobilla, etc. He explained the development of a flamenco dancer, from understanding the forms and technique, through the development of skills to combine and execute the learned elements, to eventually becoming the dance and performing through feeling and expression, as opposed to counting the compás and consciously executing technique. Teo explained the origin of flamenco, the Indian, gypsy and Moorish influence and the relation of the dance to the cante and guitar—the latter a relatively recent addition. We heard some war stories from his forty years of dancing. Was Carmen Amaya really that good? He traced the evolution of the dance from around the campfire to the elaborate Las Vegas-type productions found in the modern big city tablaos. According to Teo, there is valid artistic expression to be found in both forms. Gratefully little time was wasted on the dreary subject of: Do you have to be a gypsy to create the magic of flamenco? Tco does not denigrate the combining of artistic expression with the business aspects necessary to survive and continue. Morca castanets, T-shirts, exercise videos and even used boots are for sale. Considerable time was spent throughout the workshop with palmas and jaleo, which we learned are an integral part of the performance. One evening session was spent doing palmas at sunset outdoors in a park by the bay. Palmas, with the guitar, provide the rhythm. For the student, palmas reinforce compás. Further, there is participation by the jaleadores, signaling feedback and appreciation of the dancer. The palmas are played like an instrument. Sorda (muffled-palm against palm) not to drown out delicate footwork, a beautiful falseta or cante, and seca (sharp-3 fingers against palm) to increase the intensity and excitement. Teo stresses dynamics, which give flamenco (or any art form) its emotional impact. Another evening was spent watching a flamenco video copied from Spanish TV. There was old style \"family\" flamenco, a mother holding an infant singing, an old couple dancing with young children etc. This is the flamenco of the people. In contrast, there was also Cameron, Manolete, lightning fast guitarists and others of the \"state of the art,\" high-tech flamenco.",
+    "title": "MORCA: 10TH ANNIVERSAY WORKSHOP",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1989_03",
+    "year": 1989,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 838,
+    "article_char_count_full": 5125,
+    "article_char_count_review": 5125,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

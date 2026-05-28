@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-11-8-right-a-los-organizadores-de-festivale",
+    "article_text_for_review": "L Departamento de Flamenco del Instituto de Cultura Andaluzia, dependiente de la Consejería de Cultura de la Junta de Andalucía, ha difundido una serie de circulares, algunas de las cuales, al referirse a plazos perentarios, han perdido actualidad. Otras, sin embargo, por su interés y validez general, estimamos deben ser ampliamente conocidas. He aquí dos de ellas dirigidas a los organizadores de Festivales Flamencos.\n\nInstituto de Cultura Andaluzia Departamento de Flamenco\n\nCircular 3/83.—E. F.\n\nLOS ORGANIZADORES DE FESTIVALES FLAMENCOS\n\nVolvemos sobre el contenido de nuestra precedente Circular 2/83 E. F., en la que resaltábamos la utilidad y conveniencia de anticipar al máximo posible la contratación de profesionales con vistas a la campaña de Festivales/84, al tiempo que suplicábamos la consiguiente urgencia en proporcionar a este Departamento la información atinente a la inclusión de aquéllos en nuestra GUIA DE FESTIVALES.\n\nSobre la gran ventaja que supone elegir y asegurar con tiempo la participación de los artistas deseados, conviene subrayar también que la contratación de un número determinado de profesionales puede resultar más conveniente antes del inicio de la temporada, cuya demanda lógicamente puede ir encareciéndolos a medida que avanza. De todos es conocido también que una buena publicidad resulta más efectiva cuando dispone de más espacio de tiempo (anticipación) para divulgarse.\n\nEn relación con la GUIA DE FESTIVALES, es nuestro propósito extenderla este próximo año a Centros de Emigración española, tanto en el resto de la nación como en el extranjero, de donde recalan en Andalucía un crecido número de connacionales en busca del flamenco. Esta difusión, en el extranjero, proyectamos conectarla también en relación con Organismos internacionales que a su vez publican Guías de festivales y manifestaciones folklóricas y posiblemente con algunas cadenas turísticas en los países que arrojan más elevado porcentaje de aficionados a nuestro arte.\n\nDe ahí que debamos insistir en nuestra sugerencia, con vistas al próximo año, de la adopción de una nueva y más dinámica política de contratación, siempre con independencia y a salvo de la necesaria, aunque no fácil, coincidencia de intereses entre contratados y contratantes.\n\nFrancisco Vallecillo Director del Departamento\n\nInstituto de Cultura Andaluzia Departamento de Flamenco\n\nCircular 4/83.—E. F.\n\nA LOS ORGANIZADORES DE FESTIVALES FLAMENCOS\n\nEste Departamento estima del mayor interés que cuantas entidades estén implicadas en la organización de Festivales Flamencos deben conocer con suficientes detalles el Reglamento General de Policía de Espectáculos Públicos y Actividades Recreativas aprobado por Real Decreto 2.816/82, de 27 de agosto, inserto en el «B.O.E.» número 267, del 6 de noviembre de 1982.\n\nEste Reglamento comprende, entre otros, los siguientes aspectos:\n\n— Requisitos, condiciones, habilitaciones, etc., de los locales de celebración de los espectáculos.\n\n— Empresas y personal de ellas dependientes (Seguridad e higiene, Libro de Reclamaciones, listas de precios de artículos expendidos).\n\n— Actores y ejecutantes, deberes y derechos; límites de edad a los jóvenes.\n\n— Requisitos que han de reunir los carteles: informa- ción mínima, plazos de presentación, alteraciones.\n\n— Derechos y deberes de los espectadores.\n\n— Despacho de localidades y reventa.\n\n— Horarios, prohibiciones y suspensiones.\n\nNos limitamos a una somera e incompleta descripción de los conceptos más relevantes. Obviamente existe también el que contempla las Infracciones y régimen de Sanciones que al responsabilizar sustancialmente a los organizadores constituye de por sí motivo suficiente para que este texto legal sea suficientemente conocido y cumplimentado.\n\nFrancisco Vallecillo Director del Departamento",
+    "title": "A LOS ORGANIZADORES DE FESTIVALES FLAMENCOS",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 555,
+    "article_char_count_full": 3799,
+    "article_char_count_review": 3799,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-11-9-left-buler-as-de-el-chozas",
+    "article_text_for_review": "S ABEMOS que una cosa es la letra flamenca escrita y otra, muy distinta, es la letra flamenca cantada. Podría decirse que la letra que sale del letrista, cantaor o aficionado, paga un alto tributo al ser interpretada por el cantaor. El cantaor tritura las palabras masticando sus sílabas, que salen de la boca cual volcán caliente que hiere y quema al que escucha.\n\nAsí, pues, al reconstruir este mosaico encontrado en los archivos del recuerdo, vemos que queda incompleto y falto de colores vivos. No es precisamente un modelo literario para ser mostrado en su escritura. «El Choza» escribía cantando.\n\nVd. no sabe «extinguir»\n\nporque no tenéis ninguno palabra de hombre. Así se lo digo yo el por qué Vd. no contaría la feria como la he contao yo. Mientras cien años viva, así la he contao yo.\n\nEsa boca presumía,\n\nsa boca presumia, le digo yo a toas las mujeres. A esa boca presumía más de mil besos le he dao; no lo conoce nadie, las veces que me ha dejao. Vaya que sí, vaya que sí...\n\nSin embargo, merece la pena saber que estas letras y otras muchas fueron interpretadas por bulerías, a compás, como es natural. Bulerías únicas con sones de ida y vuelta. Según parece, en su casa de Lebrija vivía alguien que estuvo en la Guerra de Cuba. Música original con la impronta de «El Choza».\n\nLos versos de su soleá (estructura de las bulerías) rara vez tenían ocho sílabas. Tenía la habilidad de amonto-nar palabras en cada verso. Pero lo más curioso es que todas las noches cantaba letras nuevas que sacaba sobre la marcha; pura improvisación. Esto no quiere decir que no tuviese sus letras favoritas. Siempre el mismo tema como fondo de sus letras, el rencor hacia la mujer. Quién sabe si fue engañado la primera vez. La cicatriz de esta herida se «queó» abierta para siempre.\n\nSólo hicieron un disco chico con su cante por fiesta; me parece que de la mano del afable y buen aficionado Manuel Fernández Peña.\n\n«El Choza» era simpático y amable, amigo de la fiesta íntima, de poquita gente. Siempre con la sonrisa a flor de labios, con su saludo ceremonio y su sombrero negro de ala ancha.\n\nLos cantaores de su tierra, Juan Peña «El Lebrija-no» y Curro Malena cantan (entre sus cantes) las Bulerías de «El Choza»\n\nJuan José Vargas Vargas, «El Choza», nació en Le-brija el 30 de agosto de 1903, en la calle de Cánovas, hoy Corredera, hijo de Manuel Vargas Peña, natural de Las Cabezas de San Juan, y de María Vargas Soto, natural de Lebrija.",
+    "title": "BULERIAS DE «EL CHOZAS»",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 436,
+    "article_char_count_full": 2440,
+    "article_char_count_review": 2440,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-11-9-right-viva-pepe-guillena",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Angel Martínez\n\nPUES sí, señores; así de fácil, sencillo y terminante: ¡Viva Pepe Guillena!\n\nQue nadie se asombre, si ya antes no se acostumbró, de cómo, no el Cante, sino las figuras cantaoras más cotizadas al uso, caen de nuevo en el cupleteo, ahora, más hueco de valores y duende que nunca. En el cupleteo, que no en el cuplé con categoría, con garra y temple flamencos, que podría pasar, sino en la más tonta, chavacana y monótona tonadilla «producida» por el último zapatero remendón de la música, con «m» de mamarracho. Señores, ¿de qué ha servido la alta escuela, la tradición oral, el gusto y la voz de la razón...? Y la verdad es que costó mucho allá por los 50, y después, restituir el cante a sus propiedades naturales, encauzar su corriente por los derroteros que le corresponden,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_01 | trigger=\"autenticidad\"]\n\nmple flamencos, que podría pasar, sino en la más tonta, chavacana y monótona tonadilla «producida» por el último zapatero remendón de la música, con «m» de mamarracho. Señores, ¿de qué ha servido la alta escuela, la tradición oral, el gusto y la voz de la razón...? Y la verdad es que costó mucho allá por los 50, y después, restituir el cante a sus propiedades naturales, encauzar su corriente por los derroteros que le corresponden, restablecer su autenticidad, consolidar su hondura, devolverle su grandeza... Costó mucho. Hubo que molestar y desenmascarar a buenos artistas, a buenas personas, a buenos amigos que más o menos vestidos de falsos andaluces, de exploradores o turistas, ofrecían a la inocencia de los públicos sus grandes «creaciones» (aunque en el cuarto, dicho sea de paso y en justicia, la cosa tal vez cambiara). Y se sacó del «cuarto», a la luz natural del día, de la luna y del cielo abierto, al cante y a los cantaores marginados. Se cambiaron bambalinas, lentejuelas y estampas escenificadas por la sobriedad sincera, seria y responsable del Cante solo, junto a una sola guitarra, frente al pueblo, la Universidad y la Iglesia. Inmediatamente, el git\n\n[ENDING CONTEXT]\n\nes así, pero también sabemos cómo tampoco lo es ese que venimos escuchando a una mayoría de cotizados, y que se salve esa corta minoría que no está en el candelero precisamente por su mejor hacer y también esa tercera minoría silenciada por la incomprensión de la verdad. Mientras tanto, no tendremos más remedio que conformarnos con el GUSTO y la aproximación a la pureza de Pepe Guillena, por ejemplo.\n\nRestaurante\n\nPropietario: CARLOS GUERRERO MURILLO (Medalla al mérito del trabajo)\n\nRecepción diaria de Mariscos y Pescados Especialidad en Asados\n\nRoldán y Marín, 7\n\nJ A E N\n\nTeléfono 22 97 65\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "VIVA PEPE GUILLENA!",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-10",
+    "page_number": 9,
+    "word_count": 1100,
+    "article_char_count_full": 6644,
+    "article_char_count_review": 2806,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_01",
+        "family": "AUTH",
+        "trigger": "autenticidad"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-11-10-right-las-coplas-de-paco-salgueiro",
+    "article_text_for_review": "Mi madre me lo decía y ella nunca me engañó: el martillito de oro puertas de hierro rompió\n\nYo te digo la verdad: en la palma de mi mano caben las aguas del mar.\n\nCaminito de Linares yo cantaba una taranta, y al cruzar los olivares me quemaba en la garganta el fuego de mis pesares.\n\nSi es que sabes esperar, mañana serán limones las flores del limonar.\n\nUn torito de miura; mira la fajita negra que me lio a la cintura.\n\nQue el surco salga derecho, mira que la tierra es llana; y el cante de mi besana que salga alegre del pecho como el sol de la mañana.\n\nVoy solo por esta tierra, nadie contesta a mis voces; a ver si araño en mi pecho y la sangre me responde.\n\nPaco Salgueiro",
+    "title": "LAS COPLAS DE PACO SALGUEIRO",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 134,
+    "article_char_count_full": 678,
+    "article_char_count_review": 678,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-11-11-left-manuel-yerga-se-qued-corto",
+    "article_text_for_review": "Por Antonio Escribano T AL vez resulte paradójico para los lectores de «CANDIL» el hecho de que en mi última aportación a esta revista, haya cerrado entre paréntesis el adjetivo «payo» a continuación del nombre del artista flamenco.\n\nHace tiempo que vengo diciendo que no se califique a los cantaores de payos o gitanos, pues siendo obvio su españolidad es necio adjetivar, máxime si no se tiene la certeza de la raza.\n\nTrabajos posteriores a la década de los cincuenta (mediados) han cometido atrocidades en este terreno, lo cual denota falta de respeto a la verdad y poca seriedad en ciertos escritores.\n\nManuel Yerga se subleva ante aquello que falsea sus testimonios, pero siendo mucho lo que corrige, no traslimita por prudencia lo supuestamente desconocido. Desconocido mucho más para los ligeros a que he hecho mención que para un investigador del calibre de Yerga.\n\nEn el pasado Congreso de Jaén advertí a Valera que cuando desconociese la procedencia de un sujeto lo dejase suelto. Ejemplo:\n\nLa gran lista que nos ofrece Antonio Machado Alvarez de cantaores anteriores a Silverio, salvo excepciones, no específica si fueron payos o gitanos. Setenta años después a Machado, Julián Pemartín, en «Guía Alfabética, ‘‘El Cante Flamenco’’», respeta la interrogante, pero será de ahí en adelante cuando surgen escritores JOVENCISIMOS, que sin decir por qué vía de veracidad les llegó, convierten la lista machadiana en cantaores gitanos. Para colmo y destape de su insensatez, se equivocan con cantaores contemporáneos de actualidad: La Sayago, Chano Lobato, Beni de Cádiz y un largo etcétera. Esto me hace preguntar: Si con los que aún viven se equivocan, ¿cómo poder creerles cuando nos aseguran que Juan de Dios Moya o Ana la Alondra, etc., etc., fueron gitanos?\n\nHay veces que se da más credibilidad a estos flamencó-logos que a venerables cantaores y personas de reconoci-da seriedad en nuestro ámbito flamenco.\n\nMaría Armento, paya. Leer conversaciones con Aurelio Sellés.\n\nMaoliyo el Maestro. Primera rivalidad histórica —payogitano— según Pepe el de la Matrona.\n\nTío José el Granaíno y Romero el Tito. Hasta hace poco tiempo siempre payos. Paquirri el Guante. Payísimo. Me lamenté ante Blas Vega cuando lo leí de Quinones. Posteriormente Quinones se ha retractado.\n\nLorente, Rivalta y Santamaría, no gitanos según el muy respetable García Martos.\n\nSalvaoriyo, payo. El Salvaoriyo a que hacía alusión don Antonio Mairena, q.e.p.d., era hijo del maestro jerezano Chacón, que aun cantando algo no se le puede llamar profesional. Murió en Madrid, en el Hotel Victoria, sito en la Plaza de Santa Ana. Ignoro si el histórico Salvaoriyo engendró a su hijo con una gitana, en cuyo caso no tendría que ser gitano, ni payo. Estos casos de descendientes de payos y gitanas han sido muy frecuentes en Andalucía, especialmente en Jerez. Pues bien, también en estos casos las listas los pasan a lo gitano.\n\nNadie me contestó en mi ponencia de Almería: «Primeramente mi reconocimiento a Ediciones Demófilo por su bien hacer, y seguidamente las declaraciones de Ricardo Molina en «CANTE Y CANTAORES CORDOBESES», página 26: «es lógico suponer que hasta el reinado de Carlos III, no hubo población gitana ni en Sevilla, ni en Jerez, al menos población asentada en barrios. Por eso no surgen nombres de cantaores flamencos hasta esa fecha. El hecho de que Tío Luis el de la Juliana (primer nombre de cantaor que suena en la historia) NO FUERA GITANO, sino «gacho» y vendedor de agua en Jerez, según Antonio Mairena, prueba sólo que el cante ya había cristalizado en sus modalidades fundamentales...».\n\nMas lo cortés no quita lo valiente. Las declaraciones de Francisco Vallecillo, en el mismo Congreso, y su abundar en CANDIL, van encaminadas a demostrar que la teoría de alguien que negaba a los gitanos españoles su aporte en la creación de Cante, era un gran disparate. Razón indiscutible. Por tanto, que nadie me adivine antigitano. Me hace un gran favor quien me entienda defensor de la verdad.\n\nEs necesario que seamos más rigurosos en la construcción de este hermoso edificio que es la historia del flamenco.",
+    "title": "Manuel Yerga se quedó corto",
+    "periodical": "candil",
+    "issue_id": "1983-11",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 671,
+    "article_char_count_full": 4106,
+    "article_char_count_review": 4106,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

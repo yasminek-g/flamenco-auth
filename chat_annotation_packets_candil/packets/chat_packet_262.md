@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-09-25-left-enderezando-entuertos",
+    "article_text_for_review": "Enderezando entuertos\n\nA don Sebastián Fuentes Galván, de Mijas-Costa (Málaga)\n\nSeñor mío. Le felicito por el hecho de ser asiduo lector de esta incomparable revista.\n\nAccediendo a sus deseos, con mucho gusto contesto a su amable carta a través de «Candil» con el propósito de «alumbrarle» como usted se merece.\n\nLe agradezco el envío que me ha hecho del trabajo publicado por el señor Gonzalo Rojo en el Diario «Sur», referente a mi llorado e inolvidable amigo José Muñoz «Pena hijo».\n\nEs cierto que hace ya algún tiempo que publiqué en este mismo vehículo de comunicación, unos datos biográficos del desaparecido cantaor. (Días antes de su óbito recibí una carta suya enviándome una fotografía en la que aparece junto a González Climent.)\n\nHoy reitero lo que ya dije a mis lectores. A esos lectores que admiro y respeto, dignos acreedores a que se les ofrezca la verdad y nada más que la verdad: Que el finado nació en la ciudad de Málaga, el día cuatro de septiembre de 1900. Que fue hijo de la gran bailaora «Carmen la Dientúa», quien lo alumbró en estado de soltera.\n\nPepito, como le decían en Madrid sus compañeros, hijo natural de Sebastián, el gran cantaor Perote, falleció en la ciudad de Mendoza, en su domicilio sito en la calle del General Paz, número 267, donde, junto a su compañera Lola, tenían establecida una humilde pensión, de la que vivían con honestidad. El óbito se produjo a las 15,30 horas del día primero de septiembre de 1969.\n\nAl igual que usted, yo también lamento que se den noticias falsas.\n\n¿Sabe usted por qué son muy pocos los que dicen la verdad biográfica? Sencillamente, porque no investigan. ¿Y por qué no lo hacen? Porque la investigación es muy pesada y costosa. Por eso no pueden decir la verdad, porque no poseen, como yo poseo, en este caso de «El Pena hijo», su certificación de nacimiento y la de su defunción. ¿Sabe usted cómo conseguir la certificación de defunción? Comprando dólares y después molestando a nuestro embajador en Argentina. Así, de igual forma, conseguí la de Angelillo y el Niño de Utrera, entre otros.\n\nQuiero que sepa que el original de la fotografía del cantaor, utilizada por el señor González Rojo, al igual que otras muchas que han sido publicadas, suprimiéndoles la indicación de «Archivo Yerga», es de mi propiedad. «El Pena hijo» me la envió junto a otra de su padre. Y en uno de mis desplazamientos a Málaga, hice copia de ellas en «Foto Arenas» y las regalé a la peña de Juan Breva (de la que soy socio de honor), lugar de donde, supongo, la habrá obtenido el articulista.\n\nSeñor Fuentes. El día que yo falte, ¡cuán tranquilos van a quedar aquellos que escriben sin ton ni son! ¡Qué alegría —dirán— saber que ya nadie nos va a enderezar nuestros entuertos!\n\nAbrace a mi hermano.\n\nManuel Yerga Lancharro\n\nSalúdole,\n\nA don Carmelo García Espejo, lector de «Candil»\n\nSeõor mó:\n\nLe agradezco su felicitación por mi minúsculo trabajo de investigación sobre aquel gran guitarrista, Luis Molina.\n\n¿Sabe usted cuánto tiempo me ha llevado la investigación sobre el artista para saber que fue hijo de una señora de Antequera, que en estado de soltera tuvo a dos hijos que serían dos portentosos guiarristas, Luis Molina y Antonio el de Jerez? ¿Mucho y... algunas pesetas!\n\nEn cuanto a la biografía del gran Silverio le diré lo que ya he dicho muchas veces: que la biografía, una vez terminada no será publicada, al menos por mí. Que tengo de él su partida de nacimiento, su defunción, sus dos expedientes matrimoniales, documento donde se justifica que no hizo el servicio militar. Que desde muy niño residió en Málaga. Tuvo en esta capital tres domicilios, en el último ya casado. Fue hombre de negocios y tuvo, por su enorme personalidad y aires de gran señor, relación con la buena sociedad de Málaga y Linares.\n\n¿Sabe usted por qué no la voy a publicar, porque ya estoy harto de que todo el mundo me copie sin mencionarme para nada.\n\n¿Quién supo que la madre de El Pena, hijo, fue Carmen la Dientúa? ¡Nadie! Lo publiqué y hoy lo sabe y lo ha publicado el ya célebre Alvarez Caballero.\n\nVea la fotografia del gran Silverio. ¿Verdad que no tiene aires de cantaor?\n\nSalúdole.\n\nManuel Yerga Lancharro",
+    "title": "Enderezando entuertos Manuel",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 724,
+    "article_char_count_full": 4164,
+    "article_char_count_review": 4164,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-09-27-right-alre-de-la-fiesta-gitana",
+    "article_text_for_review": "Dibujos de Miguel Alcalá del libro «Le Flamenco et les gitans», Editorial Filipacchi, París, Francia, reproducidos bajo licencia del autor. Textos de Manuel Martín Martín\n\nLa Fernanda.—Fernanda Jiménez Peña (Utrera, 1923). Con la ilustrísima Fernanda se anuncia el estilo severo y la fluidez de un flamenco de rango superior. Difícil resulta encontrar palabras para definir los cantes de Fernanda de Utrera. Es un imposible, sería como describir al duende. Lo cierto es que nos enloquece y hasta los más incautos se han convertido ya al fernandismo. El duende la ha elegido como confidente y destinataria de lo inmedible. Por eso, ni tiene rival ni puede someterse a cotejo histórico. Auroleada de genialidades hiperbólicas, forma tan personal de cantar es ya de por sí una puesta en ambiente incomparable. La gran portadora del más rancio cante gitano habitará de manera intemporal entre nosotros.\n\nLa Bernarda.—Bernarda Jiménez Peña (Utrera, 1927). Ha marcado un hito en la historia del cante gitano denotando un nuevo pensamiento festero y concretando unos cantes a los que ya resultan extraños cualquier ropaje que no fuera el que la propia Bernarda implanta. Quien no baja la cerviz ante nada ni ante nadie, quien lo mismo relata cronicas sentimentales que acentúa de manera personal el repertorio popular, ha logrado, por tanto, una unidad musical con personalidad propia, que se traduce en la creación de un estilo con las siguientes premisas: la asimilación de los matices más diversos, la hondura dulce de su voz, el fraseo ágil, el prodigioso ritmo asincopado y el magisterio técnico de su compás.\n\nGrabié y La Rebolera.—Gitanos alcalareños que gustaban acompañarse del arte especial del Poeta de Alcalá, aunque éste sea originario de Morón de la Frontera. Sus cantes por tangos, asincopados y chisposos, y su «pataíta» del mejor gusto, reducían su secreto a la forma, a la gracia expresiva de un ritmo tan suelto y ágil como natural y jugoso. Representan a esa gitanería de la tierra del gran Joaquín el de la Paula, que quedaron en el anonimato por ser celosos conservadores de sus maneras ejecutoras, y que sólo el paso del tiempo le rinde justicia póstumamente, a fin de buscar la comprensión en esa minoría aficionada y ávida de conocimientos jondos.\n\nTomás Torres.—Tomás Soto Torres (Sevilla, 1907 - Sevilla, 1976). Hijo de quien atesoró como nadie los «sonios negros», Manuel Torre, y de la gran bailaora Antonia la Gamba. Casóse con María Loreto, más conocida por María la Coja, y nos legó en el «Archivo del Cante Flamenco» seguiriγas de su padre y soleares de Joaquín el de la Paula y El Mellizo, donde su voz grave, oscurecida y enjundiosa, aumenta la tensión a la par que enriquece y da un especial interés a la coherencia de los estilos. Siempre acompañando al maestro Mairena, su sobresaliente personalidad le confería categoría de personaje extremadamente racial, de latente espíritu épico. Como bailaor rezumaba una gitanería apabullante.",
+    "title": "Alreó de la fiesta gitana",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-29",
+    "page_number": 25,
+    "word_count": 482,
+    "article_char_count_full": 2964,
+    "article_char_count_review": 2964,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-09-30-left-las-poes-as-de-los-gitanos-publi",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nE 1 libro que sobre los gitanos de España publicó George Borrow en 1841¹ y del que salió una versión en castellano en 1932², ha llegado a ser referencia inevitable en los estudios del flamenco. En realidad, esta posición de privilegio se la debe a una sola frase: ésa en la que Borrow nos comunica que por aquella época (los años 30 del siglo pasado) uno de los nombres que en varias partes de España se les daba a los gitanos era el de flamencos. Desde que Manuel García Matos, en 1950, incorporó el dato a los estudios del flamenco³ —aunque, de forma más oblicua, ya lo recogió en 1881 Hugo Schuchardt⁴ — la frase de Borrow se constituyó en el precario sustento documental que la tesis de que el vocablo «flamenco», tal como éste vino a designar, alrededor del 1850, a un tipo de música, debe ser\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"reproduce\"]\n\nonstituyó en el precario sustento documental que la tesis de que el vocablo «flamenco», tal como éste vino a designar, alrededor del 1850, a un tipo de música, debe ser interpretado como «gitano», teoría que entre las muchas que se formularon al respecto parece ser la más aceptada hoy día. Entre las pocas otras cosas contenidas en The Zincali que podrían ser relevantes para los estudios del flamenco, se halla una colección de coplas en caló que reproduce Borrow, con traducciones al inglés realizadas por él mismo, bajo el título bilingüe de Poesías de los gitanos. Rhymes of The gitanos $ ^{5} $. Sin embargo, en la traducción castellana del libro se incorporó tan sólo una pequeña parte de este cancionero que en la edición príncipe de Londres constaba de 101 estrofas y en la versión española quedó reducido a 33⁶. A estas 33 hay que sumar otras 4 que Borrow, además de incluirlas en el cancionero como tal, intercaló en su relato y por esta vía sí llegaron a figurar en la edición española. Presentaremos aquí, para su conocimiento y estudio, las 64 coplas no recogidas en la versión castellana, junto con las 37 restantes que ya aparecieron en ésta para que de una vez haya una edición íntegra y accesible del cancionero publicado en 1841 por Borrow. Como es sabido, las afirmaciones e interpretaciones que nos presenta el gitanista inglés en The Zincali, han sido cuestionadas una y otra vez, tanto por gitanólogos (a quienes, en realidad, incumbe enjuiciar la obra de Borrow) como por estudiosos del flamenco. El eminente filólogo Carlos Clavería, resumiendo una opinión bastante generalizada entre los comentaristas de Borrow, habló del «papel importante que desempeñó la fantasía en las lucubraciones filológicas y en el relato de las aventuras de Borrow» y llega a concluir que el único valor del testimonio del agente de la Bible Society reside no en su calidad, sino en su antigüedad⁷. Un ejemplo reciente, y directamente relevante para los estudios del flamenco, de las prevenciones que la obra de Borrow suscita entre los expertos en la materia, es el trabajo de Margarita Torrione, quien, con gran profusión de datos, refuta la interpretación que Borrow da al vocablo «debla». Esta interpretación, tantas veces repetida en los escritos sobre el flamenco —la de que «debla» significaría «diosa»—, debemos considerarla, según concluye Torrione, como una mistificación del propio Borrow⁸. También ha sido puesto en tela de juicio, ya por tratadistas del flamenco, lo que Borrow dice acerca del nombre de «flamencos» que se gún él tenían los gitanos\n\n[ENDING CONTEXT]\n\ndeslumbrante, rico, de rara belleza». Manuel Ríos Ruiz ha escrito sobre su arte: «Enrique de Melchor, dentro del panorama guitarristico-flamenco actual, es una indiscutible primerísima figura en sus diversas facetas: compositor, solista y acompañante. Las composiciones melhorianas tienen la virtud de la justeza, son piezas bien medidas en su duración, para que el tema o el leitmotiv no se diluyan, ni tampoco resulte reiterativo, sino para que se quede en quien lo percibe como impresión sencillamente inolvidable». (Del «Diccionario Enciclopédico Ilustrado del Flamenco»)\n\nEnrique de Melchor\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Las «Poesías de los gitanos», publicadas por George Borrow en 1841. Edición íntegra Arie",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-35",
+    "page_number": 29,
+    "word_count": 7571,
+    "article_char_count_full": 42142,
+    "article_char_count_review": 4190,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "reproduce"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-09-34-right-qu-date-con-el-cante",
+    "article_text_for_review": "Programa Flamenco\n\nAhora, con Manolo Curao\n\nSintonícenos de lunes a viernes, de 21,00 a 24,00 horas; sábados y domingos, a partir de las 24,00 horas: «EL FLAMENCO VIVO»",
+    "title": "\"Quédate con el Cante\"",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "34-34",
+    "page_number": 34,
+    "word_count": 28,
+    "article_char_count_full": 168,
+    "article_char_count_review": 168,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-11-3-left-anselmo-gonz-lez-climent",
+    "article_text_for_review": "Editorial\n\nC on este monográfico dedicado a la persona y a la obra del insigne maestro argentinó, «Candil» cumple con un proyecto acariciado, durante el último quinquenio. Testimoniamos así, aunque solo sea precaria y parcialmente, un deber de estricta justicia hacia quien con su propio esfuerzo personal, con sus libros, algunos de ellos paradigmáticos, ha marcado un hito en la historiografía del flamenco. Decimos precaria y parcialmente, por dos razones que explicamos: el contenido de este número se presenta como una aproximación al pensamiento de González Climent, sin que en modo alguno pretendamos agotar la reflexión sobre una figura que otras aportaciones, en el transcurso del tiempo, han de magnificar; además, segunda razón, la obra del aquí homenajeado no se circunscribe al universo del flamenco, con ser esencialísima para nosotros. Decenas de libros, algunos de ellos incomprensiblemente inéditos, evidencian la talla intelectual de su autor y lo identifican como uno de los ensayistas argentinos más notables en los últimos cincuenta años. Sus pesquisas sobre historiografía, sus análisis antropológicos y sociológicos de aquel país, sus excursiones teóricas tan rigurosas y ajustadas a mundos tan complejos como el del nacionalismo emergente o como el de la Bíblia, sus indagaciones respecto de las\n\nexpresiones más existenciales del hombre, formuladas con una penetración analítica y capacidad de síntesis en la mejor tradición orteguiana, merecen, desde ya, no una sino varias tesis doctorales y, sobre todo, el reconocimiento público de determinados sectores intelectuales de la Argentina, país que, en justa concordancia con su nascencia latina, silencia algunas de sus voces más prestigiosas e incurre, con frecuencia, en un triste daltonismo cultural. Precaria y parcialmente, he aquí nuestra humilde contribución a la obra de González Climent. Por fortuna, no somos los únicos; el Ayuntamiento de Córdoba, en el pasado mes de mayo, se hizo eco del protagonismo desarrollado por el escritor argentino, en la organización y desarrollo de los Concursos Nacionales de Arte Flamenco de Córdoba, y a tal efecto ha promovido la publica-\n\nción de la correspondencia entablada con Ricardo Molina, sobre documentación aportada por esta propia Revista.\n\nCualesquiera que sean las causas del imperdonable olvido de que ha sido objeto González Climent por parte de instituciones andaluzas y prebostes cualificados del flamenco, en las dos últimas décadas —Agustín Gómez aventura la idea de que hemos asistido a una revancha sin tregua del sector pangitanista del flamenco que ha copado, durante este tiempo, el liderazgo del flamenco oficial u oficializado— es lo cierto que el autor de «Flamencología» ha gozado de unánime estimación por los investigadores más independientes, e incluso, aquellos que, por razones que se nos ocultan, lo han postergado a un vejatorio silencio, jamás, frente a una interpelación directa, fueron capaces de desautorizarlo. La persona que fue calificada por Adriano del Valle «como el Menéndez Pidal» del Flamenco, y que en opinión de Edgar Neville ha construido «el pedestal sobre el cual levantar el monumento a todo lo que es flamenco», merecía, cuando menos, este esfuerzo. Confiamos en que nuestros lectores, en contacto con esta aproximación a la figura de González Climent, valorarán, si es que ya no lo han hecho, la inconmensurable talla intelectual y humana del maestro desaparecido.",
+    "title": "Anselmo González Climent",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 527,
+    "article_char_count_full": 3439,
+    "article_char_count_review": 3439,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

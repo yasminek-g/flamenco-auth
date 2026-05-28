@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-01-27-left-flamenca",
+    "article_text_for_review": "Con la edición de este disco, la Fundación Andaluzía de Flamenco, junto con la colaboración de A. Reina, F. Vallecillo, J. Blas Vega y la Editorial Cinterco, S. A., quizás haya puesto digno colofón al centenario del nacimiento de la insigne Pastora Pabón «Niña de los Peines».\n\nDe comienzo se puede pensar en lo fácil que ha de resultar la elaboración de un juicio crítico sobre unas grabaciones añejas de la cantora más grande de todos los tiempos. Y es en su facilidad donde estriba la dificultad, porque ¿qué calificativos se pueden añadir a su grandeza cantaora que no lo hayan sido dichos ya? ¿Qué virtudes artísticas se pueden enumerar que no figuren en las crónicas? Pienso que todo lo poseído por ella ha sido reflejado y con auténtica justicia.\n\nNos encontramos en este disco con una cantaora joven y demostradora de su capacidad de asimilación. A su fuerza y poderío juvenil, Pastora supo añadir la tonalidad necesaria; el matiz adecuado; la procedencia de la fuente con la que había regado su raíz flamenca; la demostración precoz de su maravilloso juego melismático; la Título: Niña de los Peines Canta: Pastora Pabón Cruz «Niña de los Peines» Toca: Luis Molina Edita: Fundación Andaluzas de Flamenco. Jerez de la Frontera. 1990 difusión sonora de un estilo auténicamente personal e inimitable... Muchas de estas características —como escribo arriba— pueden haber sido plasmadas; mas, tras la escucha de las catorce grabaciones que conforman este disco, no me queda más salida que reiterarlas.\n\nJiempre existe la dificultad de poder escuchar con la nitidez necesaria las reconstrucciones técnicas de las viejas placas de pizarra, y en este disco no iba a suceder lo contrario; pero, a pesar de ello, toda la serie de cualidades que antes he enumerado llegan al oidor con la suficiente nitidez para apreciar el tratamiento que Pastora daba a cada uno de los estilos aquí plasmados.\n\nAparte de lo que de homenaje tiene la edición de este trabajo, hay que resaltar el redescubrimiento que supone para muchos aficionados el poder escuchar a la Niña de los Peines «en su etapa germinal, bajo la influencia decisiva del faraón Manuel Torre», así como el fresco y magnífico toque desarrollado por el madrileño Luis Molina, evidenciando la maestría que poseía para desarrollar el acompañamiento al cantaor.",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-27",
+    "page_number": 27,
+    "word_count": 381,
+    "article_char_count_full": 2310,
+    "article_char_count_review": 2310,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-01-27-right-vii-distinci-n-comp-s-del-cante",
+    "article_text_for_review": "Serían las once de la noche de un veinte y tres de noviembre lluvioso y desapacible. A esa hora un artista gaditano estaba templando su guitarra, estudiando los co-queteos esquivos de ese instrumento con forma opulenta de mujer, que se muestra despechada con el hombre que no le da a diario su ración de mimo y disciplina. En el coto, las aves asombradas, antes de anidar entre los pinos, volvían el cuerpo ansiosas hacia Bajo de Guía, como temiendo perderse el último arpegio de la soleá.\n\nEn Sevilla, veinte aficionados nos reuníamos un año más en el Restaurante «La Albahaca» de la Plaza de Santa Cruz. Olor a naranjos empapados por la lluvia. Incienso en el brasero de cobre y una obligación común: ser fieles a la llamada del deber y la amistad que, encarnada por Enrique Osborne en nombre de la Cruz del Campo, nos convocaba a elegir, un año más, al artista que ha de llevar sobre sí uno de los galardones más preciados del arte flamenco: El «Compás del Cante» en su VII edición.\n\nT tras una votación previa que nos decidió por los caminos dignísimos de distinguir este año a un artista de la guitarra flamenca, pasamos a debates intensos, serios, a propósito de quién habría de ostentar la gloria que lo hermanaría en méritos con Manolo Mairena, Fosforito, Chano Lobato, Paco de Lucía, Pilar López o Fernanda de Utrera. Ninguno quería mirar a una silla colocada junto al cronista de estas líneas: en ella se sentaba, para dilucidar premios anteriores, un guitarrista granadino que quiso ausentarse del jurado la primera vez que premiamos a la guitarra para no tener que repartir el corazón entre sus amigos.\n\nManolo Sanlúcar\n\nTampoco nos aconsejó en esta ocasión la voz campanuda y certera de Paco Vallecillo. Estábamos más solos que nunca. Hubimos de husmear por los adentros de nuestra sensibilidad, rebuscar en lo más recóndito de nosotros mismos qué rasgueos de las seis cuerdas nos habían erizado los cabellos en más ocasiones, cuál de los toques había roto el azogue de nuestros espejos del alma.\n\nAbriéndose paso, poco a poco, en nuestra siempre difícil decisión, abandonando, sólo por este año, otros nombres egregios de la guitarra, la mayoría nos inclinamos por un hombre que une la técnica más depurada con el arte más exquisito; ese hombre al que antes me refería y que a esas horas de la noche hería al Levante que soplaba desde Sevilla a Bonanza con lo mejor de sus toques: Manuel Muñoz Alcón, quien, desde el año 1945 en que vino al mundo, es conocido en todos los ámbitos flamencos por un nombre artístico que lo ha hecho inmortal: Manolo Sanlúcar.\n\nSinceramente, creo que esta vez, los miembros del jurado, también estuvimos inspirados.",
+    "title": "VII Distinción «Compás del Cante»",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-27",
+    "page_number": 27,
+    "word_count": 458,
+    "article_char_count_full": 2660,
+    "article_char_count_review": 2660,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-01-28-left-enderezando-entuertos",
+    "article_text_for_review": "He recibido carta de un aficionado en la que me dice, entre otras muchas cosas, las que siguen:\n\nAmigos lectores, la verdad es que no sé cómo contestar a mi comunicante.\n\nLe diré escutamente, que nuestro llorado Manolo Cano se limitó a coger los dos discos de la marca «Gramófono» AE 484 y 985 de Joaquín Vargas Soto «El Cojo de Málaga», en los que, sin duda por error, aparecen en las caras de los mismos la nominación incorrecta de «Fandango de Alosno», en lugar de «Fandango de Pérez de Guzmán», que hubiera sido lo correcto. Me podrá decir que por qué lo hizo así y le contestaré: Porque desconocía el estilo del fandango de mi paisano.\n\nDe estos casos le podría contar bastantes. Sólo le expondré uno como ejemplo: Un buen día me escribió Vallecillo comunicándome que le habían regalado un disco de Manuel «Torre», con un cante por malagueña estupendamente canta-da. Como quiera que yo tenía —y aún tengo— todo lo que grabó el jerezano, con Juan «Habichuela», Javier Molina y Miguel Borrull, le pedí que me facilitara la letra de la malagueña para ver si yo la tenía. Así lo hizo y, como esperaba, obra-ba en mi archivo. De inmediato le contesté para informarle que esta-ba equivocado, que aunque en la placa constaba la nominación de Malagueña, se trataba de la conocida cartagenera «Acabaría de una vez, acaba penita, acaba».\n\nEn cuanto al acompañamiento de guitarra para la Serrana que grabara «El Niño de la Isla», insisto informándole que Luis, el que fuera gran guitarrista, hijo del también maestro de la sonanta Enrique López, el asiduo acompañante de Sebastián «El Pena», no fue quien le «tocó» al cantaor de San Fernando. De todo lo cual estoy muy seguro.\n\nNiño Jorge\n\nYo, como viejo aficionado, conozco el «toque» de casi todos los guitarristas que actuaron y grabaron en las décadas de los veinte y los treinta. Además, amigo mío, el de Ramón Montoya, Luis Molina y Manolo de Badajoz, por ponerlos como ejemplo, son inconfundibles; por lo que, siendo realmente así, no comprendo cómo esos errores tan elementales pudieron salir de la docta pluma de un eminente profesional de la guitarra, como sin duda lo fue nuestro recordado Manolo Cano, que en paz descanse.\n\nY en cuanto al resto de la consulta, perdone que le conteste en forma de telegrama:\n\nQue Rafael de Jerez no fue de Jerez.\n\nQue Paco Mazaco no nació en ningún pueblo de España llamado Coria.\n\nQue «El Cojo de Huelva» no fue de Huelva.\n\nQue Juaniquí ni fue de El Cuervo ni de Lebrija.\n\nQue Juanito Varea Segura no fue valenciano.\n\nQue los restos de Manuel Centeno nunca fueron trasladados a su Sevilla natal.\n\nQue «El Ciego la Peña» no fue gitano.\n\nCreo adivinar de dónde ha sacado Vd. los datos que ha utilizado para hacerme la consulta. ¿Puede ser del libro de Manuel Ríos Ruiz?\n\nTermino. Le contesto como ten- go por costumbre hacerlo: a través de esta revista Candil para su co- nocimiento y el de todos sus lec- tores. ■",
+    "title": "Enderezando entuertos",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "28-28",
+    "page_number": 28,
+    "word_count": 510,
+    "article_char_count_full": 2902,
+    "article_char_count_review": 2902,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-01-29-left-noticiario-flamenco",
+    "article_text_for_review": "Confederación Andaluzía de Peñas Flamencas Primer circuito de los cantes autóctonos de la Comunidad Autónoma Andaluzía\n\nRepresentantes\n\nNOTA:\n\nLa presentación será el día 10 de marzo de 1991, en cada provincia y el cartel y programación general ante los medios de comunicación dicho día y en cada capital. Los recitales del circuito se realizarán a partir del día 22 de dicho mes los viernes y sábados siguientes hasta completar las 11 semanas que durará el circuito.\n\nHuércal de Almería, a 24 de diciembre de 1990\n\nEstimado Sr. Director:\n\nRuego publique esta carta en su revista si lo estima oportuno, ya que creo que el contenido debe ser conocido por la opinión flamenca. De antemano, le doy las gracias por su colaboración.\n\nTesis Doctoral sobre flamenco\n\nEl pasado viernes 14 de diciembre, pudimos enterarnos, los que seguimos el programa flamenco «La puerta del Cante», que la admirada Génesis García Gómez, cartagenera estudiosa de los cantes de su tierra, estaba preparando la publicación de la tesis doctoral que ha realizado sobre los cantes mineros. Cual fue nuestra sorpresa cuando el director del programa, Manuel Curao, presentó a dicho trabajo como la primera tesis doctoral que se ha hecho sobre flamenco. Sólo recordar que el almeríense Antonio Carrillo Alonso, hoy afincado en Sevilla, obtuvo, en mayo de 1977, la calificación de sobresaliente «cum laude» por su tesis doctoral titulada «El Cante flamenco como expresión y liberación», presentada en la Facultad de Letras de la Universidad de Granada y dirigida por don Emilio Orozco Díaz. Dicha tesis fue publicada en 1978 por la editorial almeríense Cajal, bajo la dirección de José María Artero García, en la serie monográfica «Biblioteca de temas almerienses». ¿Llegaremos pronto a Almería?\n\nNorberto Torres Cortés\n\nProfesor de Música de la Escuela Municipal de Folclore de Almería, Concejal de Cultura de Huércal de Almería\n\n\"Quédate con el Cante\"\n\nPrograma Flamenco\n\nSintonícenos de lunes a viernes, de 20,15 a 22 horas; sábados y domingos de 22 a 24 horas.\n\nAguilar Belmonte, Inmaculada. Nacida en Córdoba en 1958. Bailaora. Estudió en el Conservatorio de Arte Dramático y Danza de su ciudad natal, siendo su profesor Luis del Río; obtuvo el título de profesora de danza española, ampliando estudios del flamenco con Pepe Ríos, La Tati, Paco Fernández y Mario Maya. En el año 1986 ganó el Premio «La Argentinita» en el XI Concurso Nacional de Arte Flamenco de Córdoba. Actúa en festivales y participa en cursos de Arte Flamenco. De ella dice Manuel Martín Martín: «Hermosura en el braceo, vigorosos desplazamientos, uniformidad en los giros, magnificencia en los desplantes, belleza y alta ambición del gusto, amén de estar sujeta a esos inflexibles principios que regulan el arte, para lograr momentos bellamente expresados que pocos mortales alcanzan». Agustín Gómez: «Su poder de comunicación es enorme; tiene distinción y señorío, elegancia y finura. Lejos ya de su expresión aquella rigidez en el desplante, su naturalidad y seguridad es total. Inteligente sabe calibrar la escena y el recinto en su momento para variar el vestido o el baile...».\n\nBAILAORAS DE HOY Inmaculada Aguilar",
+    "title": "Noticiario flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "news_roundup",
+    "pages": "29-31",
+    "page_number": 29,
+    "word_count": 507,
+    "article_char_count_full": 3163,
+    "article_char_count_review": 3163,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-01-29-right-hablan-las-pe-as-nuevas-juntas-d",
+    "article_text_for_review": "Federación de Peñas Flamencas de Málaga\n\nPresidente: Vicepresidente: Secretario: Tesorero: Rel. Públicas: Vocales: Don Francisco Valero Vargas Don Luis Ortega Benítez Don José M. Arrebola Ruiz Don Diego Pérez Don José Trigueros Martín Uno por cada Peña que no tenga asignado cargo específico\n\nPeña «El Taranto»\n\nAlmería\n\nPresidente: Vicepresidentes:\n\nSecretario: Vicesecretario: Tesorero: Contador: Vocales: Lucas López López Antonio Zapata García, Alfredo Sánchez Fernández y José Antonio López Alemán Agustín Molina Morales Ignacio Flores Sánchez Antonio Verdejo López Francisco López-Ortega López Juan Muñoz Soler, María José Fernán deznante Amate, Juan Manuel Pérez Company, Cristina Alvarez Secades y Miguel Gómez Padilla\n\nPresidente del jurado del\n\ntrofeo taurino: Marco Rubio de Bustos\n\nPeña Flamenca Cultural Linense\n\nPresidente: Secretario: Tesorero: Vocales: Antonio Martínez Bascón Enrique Fco. Morales Ramírez Germán Domínguez Francisco Pérez, Juan Ledesma, José L. Moreno, Francisco Heras, Juan García, Francisco Rojas, Joaquín Román, Rafael Sánchez, Eustáquio Macías, Ignacio Díaz Castillo y Manolo Pérez\n\nAsociación Andaluzay Hijos de Almachar Barakaldo (Vizcaya)\n\nTengo el honor de comunicarle que, habiéndose celebrado el día 8 de los corrientes la clausura del IV Concurso Internacional de Letras Flamencas, en el Instituto Politécnico de esta localidad, en su transcurso se dio a conocer el fallo del jurado a esta cuarta convocatoria literal flamenca que fue favorable a los siguientes concursantes:\n\nPremio especial.—A la mejor siguiriya, donado por José la Picá a don Juan Francisco Arana Rupelo, de Burgos, por su trabajo titulado «Poquito y Bueno», que fue entregado por José la Picá, y recogido por Mari de Linares (cantaora).\n\nTercer premio.—A don Salvador Pendón Muñoz, de Ardales (Málaga), por su trabajo titulado «Niño de María», que fue entregado por don Carlos Casado, Presidente de la Federación de Centros Regionales de Barakaldo, y recogido por don Manuel Sánchez Villalba, de la misma entidad.\n\nSegundo premio.—A don Antonio Rincón Muñiz, de Sevilla, por su trabajo titulado «Mosaico», entregado por doña Blanca Pera, delegada de Cultura del Iltmo. Ayuntamiento de Barakaldo; recogió don Joaquín Vallejo Fernández, secretario de esta Entidad Andaluzay organizadora.\n\nPrimer premio.—A don Antonio Espejo Arroyo, de Málaga, con su trabajo titulado «Poeta lorquiano», entregado por don Francisco Ruiz Fernández, «Presidente de esta Asociación Andaluzía Hijos de Almachar en Barakaldo; recogió Raimundo Navarro, cantador.",
+    "title": "Hablan las Peñas Nuevas Juntas Directivas / Concurso",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-29",
+    "page_number": 29,
+    "word_count": 365,
+    "article_char_count_full": 2552,
+    "article_char_count_review": 2552,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1986_FALL::A19",
+    "article_text_for_review": "Degree in Spanish dance; first Spanish dance examiner from USA sent overseas. Professional company. Marina Keet, founder of the Spanish Dance Society in the USA, has been lecturer at George Washington University since 1982. Starting this year, it is now possible to take the Dance degree course in Spanish dance, based on the syllabus of the Spanish Dance Society and her extensive course of history and the dances from all the Spanish regions, flamenco and classical dances as well as the usual subjects for a Bachelors degree. The Masters of Fine Arts degree will be available from the Fall semester. This is a great milestone for Spanish dance and the Spanish Dance Society. The Spanish Dance Society, which is an international organization, has also achieved another first for the USA when Joana del Rio went as examiner to London in December. Irina Montes was the first examiner trained entirely in this method in the United States. Studying at GWU after an extensive career as principal dancer with Antonio and Jose Greco, she realised the value of the syllabus offered by the Society and trained as a teacher through this method. She is at present revising the Society's theory with Paula Durbin, who came from Hawaii to study at GWU. The strength of the Society in the USA is that it attracts the intelligentsia of Spanish dance. In California, Prof. Nancy Ruyter of the University at Irvine was also attracted by the syllabus, which she has now incorporated into their curriculum there as well. Within the last year, the Society's performances have quadrupled in the Washington area. They now have a nucleus of professional dancers, who will soon be earning their living as performers in this area. This will be the professional arm of the Spanish Dance Society and they will perform under the name of Spanish Dance Theatre. The Society was the recipient of a three-year grant from the DC Commission on the Arts and Humanities. The Society serves the Hispanic community in Washington, DC and that of Baltimore and La Plata. * * * JALEO - VOLUME IX, No. 3 Sevillanas #1 • Sevillanas #2 Malagueña Clásica Para Baile Zapateado • Colombianas • Garrotín Fandangos de Almería • Farruca Danza Peteneras TRADITIONAL FLAMENCO GUITAR VOL. III Tanguillo Bahía de Monterey (Rumba Flamenca) Tientos • Recuerdo a Madrid (Caracoles) Serranas • Alma Flamenca (Soleares) Siguiriyas • Fiesta Gitana (Bulerías) by Mariano Córdoba 23.00 each plus 2.00 shipping Send $ \\underline{\\text{Cashier's Check}} $ or $ \\underline{\\text{Money Order}} $ to: Mariano Córdoba 647 E. Garland Terrace Sunnyvale, California 94086, U.S.A. JALEO - VOLUME IX, No. 3 JUAN TALAVERA Discussions are now underway with the Rio Hondo College's Drama Department for the possible presentation of Lorca's Blood Wedding with Talavera essaying a leading role, while choreographing the play's flamenco dance segments. For further information regarding the Juan Talavera Spanish and Flamenco Dance Theatre and their April 25 and 26 Wray Theatre appearance or the beginning and intermediate Spanish and Flamenco Dance Workshops that begin in February, at Rio Hondo and Rancho Santiago Colleges, call Juan at (213) 699-0105, evenings, after 6:00p.m. Make concert reservations early! Theatre seating will be at a premium on a first come first serve basis. The Wray Theatre seats only 320 per performance. Dont' be left out!! THIRD FUEGO ESPANOL CONCERT Aficionados of Spanish dance will thrill to the artistry of world-renowned performers Maria Alba and Roberto Lorca in concert at the Weinstein Center for the Performing Arts, 2840 Sheridan Road in Evanston on April 10th and 11th, 1987 at 8:00p.m. This concert, the third in a series aptly named \"Fuego Español\" will also showcase the dynamic Chicago-based company \"Teresa y las Preferidas\" and Lila Dole's \"Spanish Reflections\" from Northern Illinois University. Additional guest artists; Greg Wolfe, Luis el Primitivo, Pepe Culata, and Paco Alonso, will perform. Roberto Lorca will conduct a one-week intensive master class in the week following the performances. Tickets are $15.00 for adults, $8.00 for seniors and students.",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "34-36",
+    "page_number": 34,
+    "word_count": 663,
+    "article_char_count_full": 4134,
+    "article_char_count_review": 4134,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A20",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEL AMOH BRUJO [from: The Detroit Free Press, Jan. 29, 1987; sent by Max Bishop] by Lawrence DeVine ...This voluptuous gypsy romance reflects as much the passion of its characters as it does the passion of its director. That defines cinematic success. No bones about it: \"El Amor Brujo,\" based on the pulsating ballet of Manuel de Falla, is one of the best films I've ever seen. You are absorbed both in its physicality and its fine details. You notice, for example, how the wiry Spanish choreographer Antonio Gades, performing as the hypnotized lover Carmelo, has his tan trousers pressed in the back nearly up to his belt, so that a crease bisects each buttock. The Heroine of El Amor Brujo is the flamenco artist Christina Hoyos, who is not a classic beauty; her chin fades away, her eyes are\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"interpret\"]\n\nFederico Garcia Lorca's drama, Blood Wedding, in 1981 and the Bizet opera, Carmen, in 1983. formed and choreographed with the Opera of Rome and La Scala of Milan. In 1978, three years after Franco's death, Mr. Gades was appointed director of the National Ballet of Spain but was dismissed in 1980, in a dispute with the Ministry of Culture that had political overtones. Having already appeared in seven movies and having an interest in using film to interpret flamenco, he turned to an acquaintance, Mr. Saura... Many of Mr. Saura's works moved between real and dream worlds and back and forth in time. But the film maker, who began his career as a still photographer specializing in ballet, was interested in Mr. Gades' approach. \"In that first meeting it seemed as if I was recovering something that I had lost, the music of my country, the music of Andalusia,\" he said... For Mr. Saura and his longtime director of photography, Teo Escamilla, a major challenge lay in deciding how to film the flamenco sequences. The frequent cuts and shifting camera angles commonly used when filming dance for television can destroy the continuity of a developing drama. Mr. Escamilla shot most of the dancing with just one camera and in sequences up to four minutes long. Most of the camera work, he said, involved simply moving in and out for close-up and distance shots. The dramatic impact of dancers' movements was captured by framing, making sure to include crucial arm movements or the provocative hip and footwork of dancers charging into the camera... JALEO - VOLUME IX, No. 3 more fitting. \"Flamenco is not a physical exercise,\" he said, \"it's a sentiment, an expression of the self...\" $ ^{*} $ $ ^{*} $ $ ^{*} $ WHEN FILM MAKERS IATEAPBET BALLETS [from: The New York Times, Jan. 12, 1987;\n\n[ENDING CONTEXT]\n\nmuch subject to the musical influences of the day.\" In addition to his busy concert schedule, Redford performs as part of several touring programs, including the Texas Touring Program and the pretigious Mid-America Arts Alliance. Last season, he was the most sought-after solo performer in the MAAA's 13-year history. He also has been chosen to represent Oklahoma in a number of official capacities, including an appearance at the Bicentennial ceremonies in Washington, DC. He is often the artist chosen to perform, at official state functions -- most recently, at the Governor's Arts Award program.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "37-46",
+    "page_number": 37,
+    "word_count": 5041,
+    "article_char_count_full": 30803,
+    "article_char_count_review": 3414,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpret"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A21",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Tio Paco The proponents of the Big Bang Theory of Creation of the Universe will find support for their beliefs at the Feria de Sevilla. It is the biggest bang of them all, from which a succession of smaller, but no less energetic events spawn throughout the region to last the entire summer. After Sevilla comes Rota, Jerez, El Puerto, Córdoba, Sanlúcar, and on and on. Each will have its own individual flavour, perhaps a different name (Feria del Caballo, de la Manzanilla, de San Antonio, etc.) but the common denominator is having as much fun as it is humanly possible. For several days, the town will be practically paralyzed, as all the available energies are directed towards making the event a success, which invariably is. The noise level is deafening, with each caseta, amusement ride\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"imit\"]\n\nzanilla, de San Antonio, etc.) but the common denominator is having as much fun as it is humanly possible. For several days, the town will be practically paralyzed, as all the available energies are directed towards making the event a success, which invariably is. The noise level is deafening, with each caseta, amusement ride and shooting gallery having an all out decibel war with its neighbours, which will go on day and night for the duration. Limitless quantities of the most scrumptious foods and delicious beverages (witness the Sanlúcar Manzanilla Feria!) for every taste, round the clock dancing, clapping of the hands, parading, and general merry-making throughout the night until it is time to go in the morning. In spite of the vast quantities of alcohol consumed, drunks are a rare sight, and except for isolated events, obnoxious or disorderly conduct is almost unheard of. Depending upon the Feria, casetas may be strictly private, with an uniformed ID-checking guard at the entrance, to completely open to the public. Most casetas fall somewhere in between though, where a well-placed friend, dropping the right name, or waving an impressive photographic camera will gain you ready access without many questions asked. Although sevillanas are the order of the day, followed closely by rock, there is little flamenco played at ferias, and as I am told, less every year. Thus, although there is much \"ambiente\" at ferias otherwise, the flamenco-seeking purist would do well looking elsewhere for inspiration. There are a few notable exc\n\n[ENDING CONTEXT]\n\nyou'll ever meet. (6) Not strictly a \"feria,\" originally a religious pilgrimage, but now a massive event which takes on a more and more pagan trend every year as I am told. Well described by Michener and others, but must be experienced to grasp its' true meaning. A six day trek on horseback through the \"marismas\" along with 80,000 other people, with little or no sleep, and sustained mostly by large quantities of fino may be a bit much for the uninitiated, but smaller doses of it are possible. Best to secure an invitation from one of the \"hermandades\" and make the trip by Land Rover. 100\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ON THE FERIA CIRCUIT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "47",
+    "page_number": 47,
+    "word_count": 836,
+    "article_char_count_full": 6360,
+    "article_char_count_review": 3169,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "imit"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A22",
+    "article_text_for_review": "by Lew Jones The November 24, 1986 Juerga was a benefit evening in honor of the great dancer Cruz Luna, who has been ill. It certainly ranked among the best of the many excellent juergas I have been privileged to attend. (These juergas are currently held the last Monday of each month at 7:30p.m. at the Sainte Claire Hilton Hotel, 302 S. Market, San Jose.) The evening began with three dances from Northern Spain, performed by Nacho and Diana, who are now joined by Iva Lee. All wore beautiful costumes with red and green coloring from JALEO - VOLUME IX, No. 3 We Appreciate Our Advertisers Please Patronize Them The Blue Guitar La Casa de Nacho A. Casillas - Flamenco Guitar Chula Vista Travel Marlano Cordoba - Study Course Antonio David - Supreme Strings A. Faucher - Guitar Music The Frama Station Guitar Studies - Pace Peña Hajji Baba Restaurant E. & M. Haas - De Lucia Transcriptions Tee Merca - Videos Rodrigo - Recordings Safegard Fencing Maurice Sherbanee - Sheet Music \"GUAJIRAS DE LUCIA\" \"PERCUSION FLAMENCA\" (Zapateado) \"CEPA ANDALUZA\" (Bulerías) by Paco de Lucia Published by M Haas in staff notation plus tabulate. Published by: Gitarren-Studio Musikverlag E.M. Haas, Blissestr. 54, D-1000 Berlin 31 WEST GERMANY. Direct orders are welcome. Please wait for Pro-Forma invoice.",
+    "title": "FLAMENCO IN NORTHERN CALIFORNIA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "47-48",
+    "page_number": 47,
+    "word_count": 216,
+    "article_char_count_full": 1290,
+    "article_char_count_review": 1290,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A23",
+    "article_text_for_review": "I am a firm believer that flamenco goes in cycles, not only in San Diego but everywhere. That is why I don't get too upset when there seems to be a full in flamenco activity or join the predictors of doom who foresee the eminent demise of flamenco. At one time, a few years back, flamenco could be seen in five different locations in the San Diego area - the Andalucía Restaurant, El Moro, Old Town, Calliope's and Diaméndes. Both the Andalucía and El Moro closed along with the Ocean Playhouse (another restaurant which featured flamenco). Other shows (with the exception of Old Town) dried up and juenga turn out declined. The end of flamenco in San Diego? Not by a long shot! There is currently a world wide resurgence of flamenco activity and interest. The movie \"Carmen\" brought flamenco into the neighborhood theater and the livingroom television set. The visits of \"Cumbre Flamenco\" and \"Flamenco Puro\" have exposed U.S. audiences to a caliber of flamenco not seen here since the days of Carmen Amays. Locally, the opening of the Tablao Flamenco in Pacific Beach marked the beginning of a new era - the first time, in San Diego, that an establishment had been built expressly for the purpose of presenting flamenco. It has become a focal point for visiting performers and aficionados. Spin offs from the Tablao momentum have been flamenco shows at La Posada del Sol in La Jolla, Hajji Baba's in Mission Valley and La Costa Spa in La Costa. Teo Morca, Roberto Amaral, Manole Marin, Manuel Agujetas have given workshops and/or concerts. Local performers, Rayna, Carle and Esmerida Enrique, Rodrigo and Remedios, Yuria and Charo Zeltins, Pilar Moreno and Isabel Tercero, Pace Sevilla have presented concerts. Juergas are again picking up on a regular basis. Te keep this momentum going in San Diego we need three things: communication, participation and mutual support. CONPHICATION: We need a way of disseminating information both among ourselves and to the general public. This would involve reestablishing our Telephone-grape-vine for last minute events (TELEPHONE VOLUNTEERS) doing write-ups for fliers or press releases prior to flamenco events (PUBLICITY VOLUNTEERS) and submitting write-ups and photographa after flamenco events (REVIEWER & PHOTOGRAPHER VOLUNTEERS) also is going to try to improve its roll in this department by producing a supplement in between its quarterly issues devoted to updates of coming events and reviews. PARTICIPATION: When too few, do too much, over too long a time period, you have what is called BURN OUT. Ask at the next juerge how you can help. Come to a Junta meeting and give us your ideas. You may have talents you didn't know existed. MUTUAL SUPPORT: Whenever there is a special benefit such as, recently, for Cruz Luns or, many years back, for Paco Fernandez, the flamenco community seems to pull together for a brief period but then reverts back to divisiveness and apathy. The more people exposed to this beautiful art form, the bigger our audience, the greater the demand for more shows, classes, workshops, juerges... Let's pay together instead of pulling apart! -Juana De Alva JUEHGA SITES DEEDED FOR 1987 <table><tr><td>JANUARY</td><td>VICTOR SOTO</td><td>JULY</td><td>??????????</td></tr><tr><td>FEBRUARY</td><td>??????????</td><td>AUGUST</td><td>??????????</td></tr><tr><td>MARCH</td><td>MALENA</td><td>SEPTEMBER</td><td>??????????</td></tr><tr><td>APRIL</td><td>CARMEN MONZON</td><td>OCTOBER</td><td>??????????</td></tr><tr><td>MAY</td><td>??????????</td><td>NOVEMBER</td><td>??????????</td></tr><tr><td>JUNE</td><td>??????????</td><td>DECEMBER</td><td>??????????</td></tr></table> if you would like to offer site for one of the above months please contact Rafael Oiaz at 474-3794 or Paul Runyan et 272-2062. JALEO - VOLUME IX, No. 3",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_FALL",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "49",
+    "page_number": 49,
+    "word_count": 556,
+    "article_char_count_full": 3792,
+    "article_char_count_review": 3792,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

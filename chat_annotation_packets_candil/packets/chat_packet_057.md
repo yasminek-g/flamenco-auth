@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-23-left-que-es-el-cante-gitano-andaluz",
+    "article_text_for_review": "ba ni de jondo ni de flamenco, Estébanez Calderón nos dio las primeras noticias describiendo su imaginaria Asamblea y su fantástico Baile de Triana. Todo esto más fruto de su imaginación de narrador que de la realidad, pues nunca había sabido nada de lo que dijo haber escuchado ni podía ser entendido en aquellos cantes familiares, no populares, aunque tenía que serlo del Folk-lore andaluz, como gran malagueño y gran costumbrista. En aquellos tiempos Triana fue el imperio de la gitanería de Andalucía la baja, donde subterráneamente se había ido formando y desarrollando el fenómeno del Cante Gitano Andaluz, y era entonces cuando reinaba allí, entre aquella grey gitana, la figura legendaria de EL PLANETA, que fue el primero en dejarnos como tradición oral perfectamente conservada hasta hoy, la música de un bellísimo Cante por Siguiriyas. Este cante ha conservado el nombre glorioso de su creador por virtud de mi interés, pues yo sabía quién lo guardaba y así supe no desaprovechar la ocasión de hacerlo grabar para la posteridad a PEPE «TORRE», el hermano del gran Manuel, habiéndolo grabado también yo en dos distintas ocasiones. Creo que sin la reproducción de esta reliquia, cuando hoy queremos hablar del cante gitano-andaluz y de su origen hubiéramos tenido que partir de las tinieblas y de una nebulosa que nos llegara con el recuerdo y la intuición más que la realidad de unas formas subterráneas y herméticas procedentes de aquellas familias gitanas que para bien de lo que hoy se llama flamenco y jondo, acamparon en Triana. Es por esto, por considerar a Triana como emporio e imperio de la gitanería andaluza, que allí acudieron todos los gitanos de Jerez y de los puertos y de otros puntos importantes y así\n\nfue el caso del mítico FILLO, quien desde muy niño se instaló en Triana, donde, bajo el patronazgo de EL PLA-NETA, llegó a su vez a convertirse luego en el Patriarca del que con toda propiedad debemos llamar Cante Gitano Andaluz con sus cuatro puntales básicos: Tango, Soleares, Seguiriyas y Tonás, musicalidades cien por cien impopulares, puesto que no pertenecían en su origen al gran pueblo, a la masa, sino a un sector que se puede llamar privado y particular, todo lo contrario que popular. Tampoco hoy se puede decir que sea popular este cante o grupo de cantes, tras siglo y medio de grandes esfuerzos de divulgación, pues sólo una minoría selecta es la que nos siente y acepta incondicionalmente, mientras que en un sentido popular, solamente se admite y populariza coaligado con el Flamenco Andaluz, que es el producto del Folklore popular andaluz con guarniciones de Cante Gitano, que por este procedimiento ha podido tomar un grado de dignificación y de regular aprecio. Pero creo que es hora ya de dejar de llamarlo cante popular y de enmarcarlo en el Arte Popular de Andalucía, archiconocido éste por todo lo que hoy se entiende genéricamente como Flamenco. Lo que es pura y genuinamente Cante Gitano Andaluz no es popular ni lo fue nunca, dado que sólo es ejecutado por una reducida minoría del pueblo gitano, minoritario a su vez, siendo muy pocos los miembros de esta raza que, como privilegiados de esa ejecución, pueden contarse con los dedos de la mano. Estas son las poderosas razones que obligan a decir que el Cante Gitano Andaluz, desgraciada o afortunadamente, nunca, ni siquiera hoy, fue popular. No es popular.\n\nDesde su floración histórica este matiz de cante apenas nadie ajeno a su mundo reducidísimo, ha sido objeto de un tratado ni tampoco ha sido sometido a análisis de ningún concepto, por la suprema razón de que ni el noventa y cinco por ciento de los gitanos andaluces, artistas y no artistas, han contado con el cúmulo de autoridad para poder definirlo ni ejecutarlo.\n\nConceptos y calibraciones se vienen haciendo desde hace mucho tiempo sobre este dificilísimo tema por la inmensa mayoría de los gitanos bajo andaluces, que, dando palos a ciegas, por ejemplo: «Pegar pellizco, qué sonido más gitano, cómo canta a compás...», y tantas y tantas barbaridades tremendamente absurdas y sí, en cambio, se escuchan muchos comentarios de esos mismos gi\n\ntanos haciendo apreciaciones sobre ese cinco por ciento que por fortuna hemos contado y que gracias a ellos ese espíritu supervive. Me duelen los oídos de escuchar de los que en esta época se aprecian de entendidos que Manuel Torre era un mito, que Pastora era muy fría, no cantaba gitano ni dolía; la misma apreciación hacen de Tomás Pavón, y que Joaquín el de la Paula era un desgraciado y un pobre hombre que hoy nadie le pondría cuenta, y miles de cosas por el estilo; en cambio, una voz gitana que nunca cantó gitano y que ha sido la causa de la masiva contaminación de esta época, todo este noventa y cinco por ciento de gitanos bajo andaluces, ese sonido de corrupción les hizo un lavado de cerebro inmunizándolos contra lo que yo llamo la Razón Incorpórea del Cante Gitano Andaluz. ¿A quién se le puede hacer una apreciación real de lo que es el Cante Gitano?\n\nMe creo que ni Diógenes con su candil maravilloso lo encontraría, porque gitanos que tengan buen sonido hay muchos y no expresan nada gitano, y careciendo de todo valor y pureza, pero en un extremo, yo podría definir de cierta manera cómo tiene que ser un gitano que pueda dar esas dificilísimas calidades bajo las siguientes condiciones:\n\nPara que un Gitano sea cantaor de gran calidad debe sonar Gitano y saber principalmente cantar Gitano.\n\nUn Gitano sólo sonando Gitano es de inferior calidad o de calidades corrientes.\n\nY un Gitano excepcional deberá sonar Gitano, saber cantar técnicamente Gitano y saber ser Gitano.",
+    "title": "¿Qué es el cante gitano andaluz?",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 951,
+    "article_char_count_full": 5605,
+    "article_char_count_review": 5605,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-24-left-significado-y-responsabilidad-de",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSituémonos en el inicio de la segunda mitad del siglo pasado como época en la que, muy razonablemente, se la ha llamado Edad de Oro del Cante Gitano Andaluz. Al margen de las canciones folklóricas andaluzas existentes entonces, el Cante, que luego fue llamado Flamenco, no se daba nada más que en los gitanos de la Baja Andalucía. Esta fue entonces una regla absoluta que solamente modificó la honrosa excepción de Silverio Franconetti, quien por su continuo contacto con la familia de El Filló y del sobrino de éste, Tomás el Nitri, tuvo una poco explicable convivencia con las familias gitanas, tan marginadas entonces y apoyado en unas indudables grandes condiciones personales, tuvo el mérito de penetrar en los secretos de los gitanos, aprendiendo sus músicas, sus técnicas y sus peculiaridades\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"interpretación\"]\n\nla absoluta que solamente modificó la honrosa excepción de Silverio Franconetti, quien por su continuo contacto con la familia de El Filló y del sobrino de éste, Tomás el Nitri, tuvo una poco explicable convivencia con las familias gitanas, tan marginadas entonces y apoyado en unas indudables grandes condiciones personales, tuvo el mérito de penetrar en los secretos de los gitanos, aprendiendo sus músicas, sus técnicas y sus peculiaridades en la interpretación del Cante Gitano; Silverio hubiera sido perfecto, de no faltarle, como le faltó, ese raro matiz que es peculiar de una raza y que no se ha dado ni se dará jamás en los no gitanos. Ese raro matiz y acento que yo he dado en llamar «razón incorpórea del Cante», requisito imprescindible e inexplicado que es patrimonio exclusivo de los gitanos de Andalucía la Baja. Cuando nació el Cante Gitano Andaluz ese matiz tan importante, esa razón incorpórea no podía ser apreciado fuera del círculo racial del que era patrimonio y, lógicamente, no existiendo todavía cantaores no gitanos, carecía de toda posibilidad de comparación o matización. Cuando los gitanos cantaban «así», «a su modo», no podían intuir qué después se les copiaría, se llegaría a igualar muchas de sus estructuras y técnicas, pero que al propio tiempo se apreciaría un modo y una forma especiales, cuyo juicio ellos no podían preestablecer fuera de su propio círculo tribal o familiar. En aquella época de discriminación racial, cerradas todas las vías de acceso hacia la integración social para las que al cabo del tiempo el gitano se ha mostrado capacitado siempre, aquel fenómeno del Cante resultaba intransferible; quedaba encerrado en los escuetos contornos de la grey\n\n[ENDING CONTEXT]\n\ntransiciones y cambalaches, quedó ya contaminado y así a la sombra del Concurso de Granada surgieron legiones de artistas del Arte Flamenco que sin gran esfuerzo encontraron en el público una clientela fácil y adicta a la mercancía con tanta simplicidad elaborada. Y así aparecieron tantos cantaores que cambiaron este nombre por el de divos y así nació la ominosa Opera Flamenca, se ganaron grandes sumas de dinero y el famoso paquete circuló por la vía franca de los mismos conformismos que se posaron sobre las cenizas casi frías del Cante Gitano Andaluz.\n\n* * * *\n\n(Falta texto en el original)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Significado y responsabilidad de la llave de oro del cante",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 1803,
+    "article_char_count_full": 10805,
+    "article_char_count_review": 3335,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretación"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-25-right-apuntes-de-mis-vivencias-a-o-192",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEsperé hasta las cinco de la mañana a conocer el fallo que me concedió la Llave de Oro y, por fin, como al hilo de esa razón incorpórea, algo en mi interior me dijo: Has ganado el galardón por unanimidad, sin un solo voto en contra, y esta gloria que has ganado es tuya y de tus gentes, incluso de los que te dejaron solo e inerme en el campo de batalla, de los que antes y ahora y después te dejarían, si pudieran, malherido. Y entonces pensé, como pienso ahora, al cabo de más de dos lustros, que la gloria gitana es mucho más sublime que todas las mezquindades que me han rodeado y a veces me rodean. Yo he tenido por la bondad de Dios la dicha infinita que tuvo Tomás el Nitri de alcanzar el premio que más podía enorgullecerme luchando por él y sometiéndome a la decisión inapelable de un\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"protegido\"]\n\n. Y entonces pensé, como pienso ahora, al cabo de más de dos lustros, que la gloria gitana es mucho más sublime que todas las mezquindades que me han rodeado y a veces me rodean. Yo he tenido por la bondad de Dios la dicha infinita que tuvo Tomás el Nitri de alcanzar el premio que más podía enorgullecerme luchando por él y sometiéndome a la decisión inapelable de un Tribunal. Los que me abandonaron, los que no me perdonaron el haberles ayudado y protegido, los que pretenden cerrar los ojos a mi lucha, sacrificio y dedicación abnegada por el Cante Gitano Andaluz, no podrán tener ese premio ni esa dicha, porque no es fácil que vuelva a presentarse otra oportunidad de que cada uno juegue la carta de sus propios méritos a cambio del éxito o del fracaso. No es aventurado pensar que sean otros mucho más diplomáticos los procedimientos que en el futuro puedan arbitrarse para resolver los títulos de honor del Cante. Mairena del Alcor, junio de 1970 A mí me queda siempre la satisfacción de haber sido y de seguir siendo, hasta el final de mi vida, responsable y solidario del compromiso que recibí junto con la Llave de Oro, cuya significación creo haber explicado en estas líneas, que podréis encontrar pobres de expresión, pero ricas, colmadas de sinceridad. APUNTES DE MIS VIVENCIAS AÑO 1922 AL 1981 Año 1922. Año que marcó una historia al denominársele Cante Jondo, como se le dio en llamar, y con mucho acierto, al Primer Concurso que se convocó, en el mes de junio, en la plaza de los Aljibes, en la bella ciudad de Granada, con el nobilísimo objetivo de extraer de la miseria, en que estaba envuelto, el Cante Jondo, a pesar de que era una época que contaba con un plantel de intérpretes no igualado nunca en la historia. Mucho se había escrito por la intelectualidad al final del pasado siglo y principio del presente sobre la repugnancia que les causaba el mundo del Flamenco y su contorno, hasta el extremo de que se había establecido una distancia social que hacía casi imposible a este mundo desarrollar una convivencia para poder supervivir. Yo, como simple gitanito que trabajaba con mi padre en la herrería, desde que tenía 8 ó 9 años, ya, en una fiesta familiar, con motivo de la llegada del gran bailaor Faico a Mairena, de vuelta de Rusia, a hacerle una visita a un hermano que residía allí, pude dejar escuchar mi voz. En la referida fiesta, como muchos de ustedes conocerán por mi libro LAS CONFESIONES DE ANTONIO MAIRENA, precisamente en aquella fiesta, por\n\n[ENDING CONTEXT]\n\nel gran cordobés que señalaría a la gran ciudad de Córdoba que le había tocado una misión muy importante que cumplir en la historia del Flamenco y que Córdoba debía ganar una batalla decisiva para este Arte. Y, efectivamente, ese año 54 se conocerían Antonio Mairena y Ricardo Molina, que juntos emprenderían una larga y penosa empresa en la que la ciudad de Córdoba y sus muy numerosos pueblos deberían jugar un papel de primer orden y decisivo para provocar la explosión que moviera a una afición que permanecía completamente dormida y, por consecuencia, surgió después de su planteamiento en Gran\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "APUNTES DE MIS VIVENCIAS AÑO 1922 AL 1981",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-27",
+    "page_number": 25,
+    "word_count": 2678,
+    "article_char_count_full": 15342,
+    "article_char_count_review": 4111,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "protegido"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-27-right-cincuenta-a-os-de-luz-y-duendes",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nConcurso Nacional del año 56 en el que empezaría la resurrección que llevaría al Cante Jondo a unas cotas insospechadas; en dicho concurso se alzaría triunfador Antonio Fernández Díaz, «Fosforito», copando todos los premios, momento que serviría de estímulo para el resurgir de todas las grandes figuras con que hoy contamos y para la proliferación de cientos de festivales y organización de Peñas en todo el ámbito nacional y, por consecuencia, la elevación de este Arte a la dignidad que nunca tuvo.\n\nEs muy cierto que Córdoba, con sus hermosos pueblos, ha prestado un valioso esfuerzo contando, actualmente, con una afición de vanguardia seria y veladora de la pureza de este Arte tan nuestro y de tantos encantos. Antonio Mairena, después de tan largo caminar en este difícil mundo del Flamenco,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"memoria\"]\n\nen todo el ámbito nacional y, por consecuencia, la elevación de este Arte a la dignidad que nunca tuvo. Es muy cierto que Córdoba, con sus hermosos pueblos, ha prestado un valioso esfuerzo contando, actualmente, con una afición de vanguardia seria y veladora de la pureza de este Arte tan nuestro y de tantos encantos. Antonio Mairena, después de tan largo caminar en este difícil mundo del Flamenco, es más que imprescindible para mí retener en mi memoria una lánguida tarde en la misteriosa Plaza del Potro cordobesa cuando, en unión del grupo Cántico, le rendimos homenaje todos sus amigos y de allí partimos a la vecina calle del Coronel Cascajo, donde siempre vivió con su madre, y allí, en presencia de las excelentísimas autoridades de Córdoba y de todo el mundo flamenco, tuve el honor más grande de mi vida artística al descubrir el mosaico que por mi voluntad perpetuaba la permanencia del nombre de Ricardo Molina en la casa donde el poeta y el cantaor se conocieron y trabajaron por la elevación y dignidad del Cante, esperemos que para muchos años y que lo veamos todos. Deseo con estas líneas expresar, por un lado, mi agradecimiento a cuantas personas y entidades me han distinguido a lo largo de mi vida profesional, así como hacer un breve recorrido por ella, por esos cincuenta años de entrega a una faceta bastante importante, creo yo, de la Cultura Andaluzay, como es el cante. Algunos de estos recuerdos y notas, que de nuevo rememoro, están contenidos en «Las Confesiones de Antonio Mairena» publicado por la Universidad de Sevilla. El ser reiterativo en estos pasajes es sólo por la justificación del título de estos recuerdos, con motivo de haceros partícipes de mis Cincuenta años de Luz y Duendes en este arte al que nos estamos refiriendo. Fue por los años 29 cuando empezó mi carrera artística del flamenco profesional. Antes de esa fecha ya había iniciado mi andadura como aficionado, haciendo, en esos términos, mi debut en un concurso el añ\n\n[ENDING CONTEXT]\n\nse ha formado o se ha engrosado una parcela en un litoral sevillano de privilegio (Alcalá y Mairena, Mairena y Alcalá), lo que hace cincuenta años parecía un sueño y hoy es una auténtica realidad, pese a tantos intereses puestos en juego; pero hay que decir que el que tenga ojos que vea y el que tenga oídos que oiga.\n\nYa sólo me queda agradecer al pueblo que me vio nacer, mi pueblo, así como al Ayuntamiento, y felicitarle por su gran esfuerzo por conseguir este homenaje, en este festival que ha conseguido que el nombre de Mairena del Alcor haya resonado muy fuerte a escala internacional.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cincuenta años de luz y duendes",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-30",
+    "page_number": 27,
+    "word_count": 3729,
+    "article_char_count_full": 22052,
+    "article_char_count_review": 3597,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "memoria"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-30-right-el-placer-de-la-forja-de-una-ami",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTambién deseo agradecer a todo el que, de una forma u otra, haya querido contribuir a este acto como reconocimiento a mi humilde persona y arte y lo mucho o poco que yo haya podido aportar, pero con toda seguridad que lo he hecho con el corazón en la mano y completamente libre de toda ambición. Muchas gracias a todo el mundo del Flamenco y Gitano-Andaluz.\n\nMairena del Alcor, septiembre de 1979\n\nA mi viejo amigo Paco Vallecillo\n\nSin poemas, porque yo no soy poeta, pero a corazón abierto en esta, para nosotros, histórica ocasión, voy a intentar hacerte algunas nostálgicas recordatorias, quizás esquemáticas, por no serte muy pesado ni a ti ni al amigo lector, pero que en estos momentos nos puede servir de estimulante en el natural decaimiento por el peso de los años, recordándote aquellos\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"memoria\"]\n\nnostálgicas recordatorias, quizás esquemáticas, por no serte muy pesado ni a ti ni al amigo lector, pero que en estos momentos nos puede servir de estimulante en el natural decaimiento por el peso de los años, recordándote aquellos momentos que nos sirvieron para forjar nuestra amplia y sincera amistad. Para recordar en un largo conglomerado de tiempo cómo fue el principio de esta amistad, necesariamente, debo retroceder en el tiempo que, si la memoria no me engaña, fue por los años 39 al 41, al término de nuestra guerra civil. Por aquellos años yo me trasladaba en verano a la hermosa ciudad de Algeciras, a buscar mi vida en las fiestas, que eran los medios de ingresos por aquellos tiempos. Yo fui a Algeciras recomendado a un guitarrista que le llamaban el Titi de Marchena, un gitano que tocaba de maravilla y bailaba mejor y la gracia le rebosaba; era de la familia de Melchor de Marchena. Este hombre me sirvió para abrirme camino en el Campo de Gibraltar, donde él tenía muy buenos amigos; entre ellos conocía mucho y apreciaba a Paco Vallecillo; que al conocer yo al Titi aún no conocía a Paco. Paco... ¿recuerdas una mañana que subimos desde el muelle hacia la Plaza Alta de Algeciras? Ibamos Roque Montoya, Jarrito, el Chiquetete, Molina y un hermano de Jarrito, Joaquín, Mercedes, tú y yo, y un soldado trianero amigo de tu hermano Manolo; aque\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_04 | trigger=\"según\"]\n\nel primero de mi llegada a Algeciras en ese verano; yo por aquel entonces era el Niño de Mairena y, sin que nadie me recomendara, fui y me hospedé en el hotel Término, que aún existe todavía y, después de descansar un rato, a las ocho de la tarde, me recogió el Titi y nos fuimos a la Plaza Alta, al mismo bar Florida y allí nos sentamos todos en el mismo sitio de por la mañana y todos pedimos café; ellos esperaban que tú llegaras y nos invitaras, según su conversación. Porque yo lle- gué a Algeciras, de verdad, sin un céntimo, y me hospedé y no había comido, y tú recordarás, Paco, cuando llegaste por la tarde a la cita donde estábamos todos los de por la mañana, esperando que tú dieras una fiesta con motivo de mi llegada a Algeciras. Como recordarás, era aquella tarde 13 de junio, día de San Antonio, y yo me lo había callado por no tener para corresponder. Y cuando tú llegaste, acompañado de\n\n[ENDING CONTEXT]\n\nprimera obra importante en España como instrumento de su divulgación y dignificación; fue una pena que desapareciera, y el mundo del flamenco actual espera su reaparición.\n\nUnido a esto se creó el Gran Festival Flamenco de Ceuta, hoy en la cabecera de los más prestigiosos de España y así, amigo Paco, precisaría unos cien folios para poder hacerte referencia de tu inmensa obra en pro del flamenco. Para el que te conozca como yo, esto en ti no es extraño; tú has sido cabecera de mi Cincuentenario. Hemos tenido la dicha de alcanzarlo y tu calor y el de tu Tertulía no se me olvidan jamás.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El placer de la forja de una amistad",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "30-31",
+    "page_number": 30,
+    "word_count": 2530,
+    "article_char_count_full": 13943,
+    "article_char_count_review": 3951,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "memoria"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "según"
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_01::A3",
+    "article_text_for_review": "GUITAR OLYMPICS John W. Fowler The \"Guitar Olympics\" and \"Olympics III\" articles by Peter Baime in your August and October issues, respectively, were very interesting and useful, in my opinion. While the case of the Sabicas scale was easy to explain, Paco's scale in \"Palenque\" presents a more difficult problem. With the help of my friend, we located the fastest scale in the piece, which turns out to be in sextuplets and includes some ligados. We timed the fastest part of this scale repeatedly at full speed and at half speed on a Teac four-track reel-to-reel tape recorder, obtaining a result of 14.92 notes per second. This is too different from Mr. Baime's 16.07 to be explained by the effect discussed above. We were not able to discover the reason for the discrepancy, but we feel that our result is relatively accurate. Another suggestion is to expand the description of how the measurements are made and what the uncertainty is. For example, the value of the measurement depends upon the resolution of the stopwatch (or other clocking device), the number of measurements which were averaged, and the standard deviation of the results (for more information on such parameters, one should consult a text on probability and statistics). As an illustration, my measurement of the Sabicas scale As the title and tone of the text suggested, there was a bit of tongue-in-cheek in that undertaking, but beneath the facade were two purposes: First, to strip away all the adjectives used to describe guitarists with advanced motor skills, and support those descriptions with the same type of statistics afforded Bruce Jenner, and, secondly, to encourage the dialectical exploration of our chosen field of expression, so as to reveal objective technical information that will supplement the wealth of subjective information. I recorded the chosen passages from a turntable to reel-to-reel tape at 15 ips, and made the initial measurements at 7-1/2 ips, or half speed and one octave lower. Then I double-checked at 1-7/8, 3-3/4, 7-1/2 and finally back to 15 ips. This was all timed on a chronograph wristwatch that registers to hundredths of a second on a digital display. I then measured the metronome settings for the quarter note on a new device called a tempo watch, which uses base seven arithmetic; this served as an approximate check on the previous calculations. Unfortunately I forgot to include those metronome settings with the musical material. There is, of course, equipment error to contend with. Equipped with a bank of four tape decks (two cassette and two reel-to-reel, the $1,000 Akai being the cheapest), I selected the Revox for the task, with a.03 wow/flutter specification. This was compounded by similar turntable error; so one is unassured of 100% accuracy. Faced with this type of technology at our fingertips, we must take into account the obvious human and musical elements. Obviously, all of the participants included in the \"olympics\" are not playing the same musical passages. Realizing that, indeed, ascending scales are more difficult to play than descending, I chose mainly scales that included a little of both. Even that aside, some are definitely more difficult than others. So my intent should really be considered as a general survey and approach to the question, How fast",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_01",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5-7",
+    "page_number": 5,
+    "word_count": 542,
+    "article_char_count_full": 3309,
+    "article_char_count_review": 3309,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_01::A4",
+    "article_text_for_review": "Income tax time is right around the corner. If you are a working flamenco who claims self-employment, then it is critical that you keep careful records and claim all of your legal deductions. This article is not being written by a knowledgeable tax consultant, so the author will remain anonymous -- in case there are some overzealous IRS Jaleo readers out there. This is being written from a guitarist's point of view, but the idea should be applicable to other flamenco performers as well. The biggest tax deduction can be your automobile expenses. This is a tricky area. As I understand it, you cannot deduct travel to and from work. But you can deduct any travel you do during work. If you go to your studio for rehearsal and then go from there to a restaurant to perform, the latter trip is deductible. Also, if you go from house to house to give lessons you may be able to deduct much of that. There appears to be a number of ways to calculate your travel deduction: you can add up the applicable miles; you can add up auto expenses -- gas, oil, tires, repairs, etc.; or you can just take an estimated percentage of your total mileage. The latter method may produce the best results (and is the easiest); some artists deduct as much as 90% of their total mileage as business travel. That can amount to as much as a couple of thousand dollars for just local travel. If you travel to a distant city to perform, deduct everything -- car expenses, air fare, motels, food, etc. Clothing that is worn only for work (tuxedos, ruffled shirts, boots, etc.) can be deducted, as well as cleaning expenses. For your guitars, you must decide how long they will last, and then you deduct a percentage of their cost each year. The same with sound equipment (microphones, amplifiers, etc.). Deduct all of your guitar strings and anything else related to the guitar. studio rentals, guitar lessons, and perhaps much of a trip to Spain. Your phone bills can also be deducted if you do business out of your home. Also Here are some other items you might not think of: crazy glue (for fingernails), all publicity, all photographic work, including photos taken by friends at your performances, flamenco records (for study), tapes and tape recorders, flamenco books or guitar magazines (including Jaleo subscription), stationery and postage for letter writing, and anything else that applies to your career. These may seem like small things, but they add up. So start adding. 2023",
+    "title": "INCOME TAX",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_01",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 430,
+    "article_char_count_full": 2464,
+    "article_char_count_review": 2464,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_01::A5",
+    "article_text_for_review": "1922-1981 We were greatly saddened to learn of the death of Martha Nelson, one of the earliest supporters of $ \\underline{\\text{Jaleo}} $. The New York Society of the Classic Guitar sends us the following, written by Gregory d'Alessio: Martha Nelson, for the past 20 years Secretary of the New York Society of the Classic Guitar, Associate Editor of The Guitar Review, writer, and musicologist, died of cancer on November 7th in Atlanta, her birthplace. As Music Director of the Society of the Classic Guitar, Miss Nelson organized over 270 concerts in which many international guitar luminaries participated. Among her close friends were Andres Segovia, Julian Bream, Carlos Barbosa-Lima, Heitor Villa-Lobos, Rose and Albert Augustine, Carl Sandburg, Victoria de los Angeles, and Alicia de Larrocha. She was also friend, confidante, and advisor to many young guitarists who went on to professional careers. Miss Nelson's erudition, writing skills, and musical knowledge constantly manifested itself in the pages of The Guitar Review. She was responsible for expert editing of Andres Segovia's autobiography (Vol. I) and The Segovia Technique by Vladimir Bobri. A student also of flamenco --its dance, song and music--she wrote several definitive pieces on that art for The Guitar Review. Always in search of folk music, she did extensive research in Spain, Brazil, and Portugal. She was a modest performer on the guitar, but played with great musicality; as a player of castanets, she achieved expert status. The guitar world will mourn the loss of this brilliant and gifted personality.",
+    "title": "MARTHA NELSON",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_01",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 249,
+    "article_char_count_full": 1588,
+    "article_char_count_review": 1588,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_01::A6",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAN INTERVIEW by Paco Sevilla JALEO: Rubina, why don't you begin by giving us your background up to the point where you met Marcos. RUBINA: I started to study flamenco in about 1964; I had done folk singing, folk dancing and played an instrument for years. When I first saw and heard flamenco it bit me. I first studied with Isa Mura and then I went into Adela Clara's \"Theater Flamenco\" and did her first concert with her when she was getting started in 1965. Right after that I went to Spain for the first time. In Madrid for a few months, I studied with Mercedes and Albano; they're old-fashioned, but they give you a very solid foundation in the basics. I also took some ballet classes with José Granero, but soon realized I was a little bit out of my league. Mercedes and Albano helped me to\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"JALEO\"]\n\nrst concert with her when she was getting started in 1965. Right after that I went to Spain for the first time. In Madrid for a few months, I studied with Mercedes and Albano; they're old-fashioned, but they give you a very solid foundation in the basics. I also took some ballet classes with José Granero, but soon realized I was a little bit out of my league. Mercedes and Albano helped me to contact Bernardo el de los Lobitos to learn the cante. JALEO: Why were you interested in cante at such an early stage of interest in flamenco? RUBINA: Actually, before I went to Spain I had started to work at the Spaghetti Factory (a long established tablao in San Francisco) and there was no singer. I had a voice and started by singing sevillanas -- I wanted to sing, even if only to understand dancing better. Isa Mura sometimes sang there and she had a great influence on my development as a singer and dancer, as did a woman named Isabel who sang canciones and really turned me on. Those two women inspired me to take the double-barreled approach right away. JALEO: Back to your experience with Bernardo el de los Lobitos. Did you know at that time what a legend he was? RUBINA: I was pretty unsophisticated at that time and didn't know the significance of almost anything that was happening to me. Bernardo used to come to my pension several times a week and give me classes. Even more valuable than the singing lessons was when he would sit and tell me about old Andalucía, old customs, and about how to present oneself as a flamenca --\n\n[ENDING CONTEXT]\n\nwith her. MARCOS: And over here, being a foreigner is not such a problem, but the market for your product is almost negligible, no matter how good you are. So you can't win as a foreigner in flamenco. You just do it because it does something for you and it has something that you need and...too bad!! Rubina Carmona Instruction in Cante and Baile Flamenco Personal Costume Design (213) 660-9059 Los Angeles, Ca. (from: ABC, July 9, 1981) photos by Paco Sanchez ENRIQUE MELCHOR EL CABRERO WITH GUITARIST JOSE LUIS POSTIGO II FESTIVAL “JUAN TALEGA” DOS HERMANAS photos by Perea (see article page 22)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MARCOS & RUBINA CARMONA: INTERVIEW.",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_01",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9-20",
+    "page_number": 9,
+    "word_count": 2770,
+    "article_char_count_full": 15019,
+    "article_char_count_review": 3160,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "JALEO"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_01::A7",
+    "article_text_for_review": "photos from ABC Archives (from: $ \\underline{ABC} $, Sept. 8, 1981; sent by Gordon Booth by Jerónimo Roldán From a very young age, Terremoto de Jerez, showed indications of his excellent artistic qualities, beginning his first steps as a bailaor. Since then, he almost always closed his performances with the compás of the baile, with his particular way of doing it with the most exquisite aire of Jerez. Later, he began to demonstrate his aptitude as a cantaor, distinguishing himself with the unmistakable stamp of his extremely flamenco voice. The personal style, genius, quality, and expression awakened and formed one of the great figures of the cante of our time. His first recordings were done in the beginning of the 1960's, always with the accompaniment TERREMOTO AS A BAILAOR IN \"EL GUAJIRO\" Thirty years ago, Fernando appeared with this cuadro, which included Carmen Carreras, La Camboria, Matilde Coral, Manuela Vargas, El Poeta, El Toro, and Romerito de Jerez.",
+    "title": "TERREMOTO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_01",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21",
+    "page_number": 21,
+    "word_count": 158,
+    "article_char_count_full": 973,
+    "article_char_count_review": 973,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1988-03-11-right-flamenco-en-valencia",
+    "article_text_for_review": "Pepe Cózar\n\nUna excelente noche de Arte Flamenco, la del 25 de junio en Valencia, con la solera de María Soleá, la voz salobre de Aurora Vargas y la maestría de Luis Caballero\n\nEstamos ante la Trobada de Música del Mediterrani 1988, que llega felizmente así, a su octava edición. Durante los días que van del 20 al 26 de junio actual, la ciudad del Turia abre de par en par sus jardines, para que en su suelo se dé toda una amplia y variada muestra de la riqueza musical popular internacional.\n\nLas noches valencianas van a estar impregnadas por los aromas sonoros —voces e instrumentos— de países hermanos como Francia, Córcega, Italia, Turquía y Marruecos, además del nuestro, naturalmente.\n\nDos enamorados de la cultura popular de Andalucía —Albert García y Roberto Cantos— han hecho posible que el flamenco tenga presencia viva en una nueva edición de la Trobada.\n\nLos aficionados vamos a tener la dicha de saborear tres estilos de cantes diferentes, en las gargantas de María Soleá, Aurora Vargas y Luis Caballero.\n\nMaría Soleá, nacida y criada en el genuino solar flamenco de Jerez de la Frontera, y hermana del cantar en el recuerdo Fernando Terremoto, tiene en sus cantes la liturgia de lo jondo, el quejío dolorido de los de su raza, con tercios morenos y sabor a «sonakay» en román, que traducido al español es «oro gitano». Una de las últimas veces que presencié la actuación de María Soleá fue en Mairena del Alcor —tierra natal del inolvidable maestro del cante, Antonio—, la cual, al disponerse a cantar, alzó los ojos al cielo y dijo: «Estos fandangos se los dedicó a mi hermano Fernando Terremoto que está en los cielos». Y fueron magistralmente dichos aquellos fandangos, con el dolor y la pena de los «sonios negros».\n\nPor su parte, Aurora Vargas, que viene por segunda vez a Valencia, nos traerá con su cante la frescura radiante de su juventud, y que, como dijo el poeta, «Que con un tango de Cai / le hace un entierro a su pena». La calidad artística de esta sevillana ha quedado suficientemente demostrada allí donde quiera que ha cantado. Es principalmente una cantaora que conoce muy bien los cantes festeros. El metal de su voz, unida a su natural temperamento, nos hará vibrar a cuantos aficionados nos demos cita el sábado, 25 de junio, en el Palau de la Música.\n\nUn cantaor que lleva en su alma los cantes de ayer y de hoy es el trovador de la cultura y excelente amigo, Luis Caballero. Por su condición de cantaor, no le faltan razones para expresar, con su cante y su palabra, el misterio espiritual e histórico del arte jondo. Luis tiene la virtud de ir siempre con la verdad del cante, sin concesiones a la galería, y mucho menos de irse por la fácil vía de la comercialidad.\n\nLuis Caballero es un hombre que va y viene por el mundo flamenco —con su voz y su pluma— sin apenas «ruíos», no buscando el éxito, sino sembrando cultura y arte, que es su bandera.\n\nEl 25 de junio, en el Palau de la Música de Valencia, estaremos ante lo que promete ser una excelente noche de Arte Flamenco, con la solera de María Soleá, la voz salobre de Aurora Vargas y la maestria de Luis Caballero.\n\nEn nombre de los aficionados al flamenco —valencianos y andaluces— y en el mío propio, mi más sincero y profundo agradecimiento a los principales artífices de la magna Trobada de Música del Mediterrani y a cuantos la apoyan, por el gran servicio que prestan a la cultura.",
+    "title": "Flamenco en Valencia",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 603,
+    "article_char_count_full": 3384,
+    "article_char_count_review": 3384,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-03-12-left-la-prosa-de-fosforito",
+    "article_text_for_review": "Con menos frecuencia de la deseada, Antonio Fernández Díaz, Fosforito en el planeta flamenco, nos deleita de vez en cuando con alguna salida, airosa y digna, al campo de la literatura. Este raro e inconsueto caso de autodidactismo, fruto evidente de una exquisita sensibilidad, merece cumplidamente de una breve glosa. Breve, porque poco puede añadirse al hecho que por su propia importancia se comenta por sí mismo.\n\nEscribir bien arrancando del kilómetro cero de la cultura, expresar donosamente pensamientos profundos, usar de la metáfora y el tropo y discurrir con riqueza de vocabulario y honesto uso de normas sintácticas que llegan exclusivamente por el curso de las vivencias y el soporte de una lectura más próxima al desorden que al método, representan una aptitud que infunde admiración y respeto a un tiempo. Cuando hace unos meses Fosforito hizo de Rey Mago en la cabalgata de Córdoba, escribió —para él mismo, tal es su ya vieja costumre— unas reflexiones que un curio-\n\nso confidente y viejo amigo suyo trae hoy a estas columnas.\n\nFrancisco Vallecillo\n\nSeñor, Rey de todos los reyes:\n\nTú que tienes tanto poder, que puedes caminar sobre las aguas del mar, dar vida a Lázaro, convertir el agua en vino, y que has creado el aire, las flores, el sol y tantas y tantas maravillas, y que con tu benevolencia y tu bendición has hecho que yo —tan humilde, de la pobreza más infame y absoluta—llegue en el día de hoy a «rey», aunque sea por un día y se trate de un rey de guardarropía, te ruego Señor —desde mi máscara de Mago de pacotilla— que no te olvides de los niños. De esos niños que viven en el desamparo más cruel y que muerren de hambre y de frío; que saben del dolor y que no han aprendido a jugar, porque en sus cuerpos sólo hay sitio para la pena y la desesperanza.\n\nHay, Señor, que a ninguno de ellos les falte el pan. Y si puede ser... un juguete.\n\nAntonio Fernández Díaz «FOSFORITO»\n\nPUBLICIDAD\n\nJ. A. PULPON\n\nRepresentante\n\nO'Donnell, núm. 3 - 4.º Teléfs. 222058 - 216920\n\nSEVILLA\n\nParticular: Teléf. 228078\n\nPágina 22 CANDIL",
+    "title": "La prosa de Fosforito",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 359,
+    "article_char_count_full": 2049,
+    "article_char_count_review": 2049,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-03-12-right-madrid-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCORRESPONSAL\n\nAntonio Corcobado\n\nNoche grande e inolvidable la de hoy al celebrarse el V Festival de Arte Flamenco, organizado por la peña «Chaquetón» con la colaboración del grupo cultural de Sintel, en el V aniversario de la fundación de la peña, en el cine Consulado.\n\nVaya por adelantado mi agradecimiento, unido al de CANDIL, No podía faltar nuestra felicación, porque el esfuerzo realizado en todos los aspectos ha sido formidable para reunir en el mismo cartel a cuatro primerísimas figuras del cante con esos dos maestros de la «sonanta» que durante algo más de tres horas han entretenido y conmovido, haciendo vibrar a esa numerosa afición que tan magnificamente ha respondido, llenando la sala en justa reciprocidad para con la organización, que supongo tendría un serio reto en lo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"superar\"]\n\nrzo realizado en todos los aspectos ha sido formidable para reunir en el mismo cartel a cuatro primerísimas figuras del cante con esos dos maestros de la «sonanta» que durante algo más de tres horas han entretenido y conmovido, haciendo vibrar a esa numerosa afición que tan magnificamente ha respondido, llenando la sala en justa reciprocidad para con la organización, que supongo tendría un serio reto en lo económico que celebraríamos haya podido superar. por las atenciones que en esta ocasión nos ha dispensado la peña «Chaquetón» reparando omisiones anteriores de las que en su día di-mos cuenta. Entre el numerosísimo público asistente, ha destacado la presencia de escritores, estudiosos, comentaristas de este arte y, cómo no, la de prestigiosos y buenos aficionados. Presencia de honor ha sido la de Radio Nacional de España 1, con el gran equipo de El Cuarto de los Cabales, que dirige con tanto acierto don José Verdú, secundado por el ilustre comentarista y poeta don Manuel Ríos Ruiz, grabando el programa para emitirlo el próximo domingo. Difícil misión la de estos grandes aficionados para acoplar un programa tan extenso en emi\n\n[ENDING CONTEXT]\n\nsiempre con su presencia. Echamos en falta la asistencia de cantaores que brillaron por su ausencia.\n\nEl acto resultó ameno y entretenido, destacando la abundante programación que se puso a disposición del público, editada con verdadero primor. Enhorabuena, porque así el cante se viste de lujo.\n\nCorren, al parecer, malos vientos para la organización de la Cumbre Flamenca, cuya celebración ya viene siendo fiesta obligada en las fiestas patronales de Madrid, aunque en el Ministerio de Cultura ni afirman ni niegan su celebración, confiando tener prontamente noticias gratas sobre su organización.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Madrid Flamenco",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1277,
+    "article_char_count_full": 7771,
+    "article_char_count_review": 2766,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "superar"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-03-13-right-antonio-el-rociero",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nRafael Valera Espinosa\n\nCómo comenzastes a meterte dentro del mundo artístico y por qué?\n\n—Yo comencé a meterme dentro del mundo artístico desde que comencé a oír, lógicamente, música, cante, discos... Los primeros discos que yo tuve fueron los de los los hermanos Toronjo y los hermanos Reyes. A partir de ahí comencé a comprar discos como aficionado y, por tanto, empecé a cantar y conocer los cantes y, sobre todo, a preocuparme por el cante. Así que yo comencé como empieza cualquier persona y más viviendo en un pueblo flamenco como es Bullullos del Condado. Un pueblo que tenía un artista como era «Niño León» y donde iban todos los cantaores flamencos que tenían espectáculo o que estaban en él. En mi pueblo, cada vez que había un espectáculo o llegaba una compañía, se daban dos funciones.\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\nn pueblo flamenco como es Bullullos del Condado. Un pueblo que tenía un artista como era «Niño León» y donde iban todos los cantaores flamencos que tenían espectáculo o que estaban en él. En mi pueblo, cada vez que había un espectáculo o llegaba una compañía, se daban dos funciones. Por Bollullos han pasado todos, desde Juanito Val- derrama al Pinto, Mairena, en fin, todo el mundo. Luego entonces, moviéndome con este ambiente flamenco y con las escuchas de discos y la radio, como antes dije, fue como me inicié en el mundo artístico. Mi afición nace al escuchar el flamenco y posteriormente me di cuenta que soy capaz de hacerlo. Con pantalones cortos le canté un par de saetas a La Macarena, una por siguirias y otra por martínetes en la calle Sierpes. Fui también al concurso de Mairena del Alcor a participar en el cante por mirabrás, las que tiene grabadas Antonio Mairena, y resul- —Después comencé con las sevillanas y empecé a preocuparme de ser artista. Grabé un disco de fandangos de Huelva porque me han gustao mucho los fandangos de mi tierra y siempre me he preocupado de ellos y además tengo hechas dos antologías de los fandangos de Huelva, una con Manolo Sanlúcar y otra con un minero del Alosno que se llama Juan Díaz. Son las dos primeras antologías que se han hecho donde figuran todos los nombres de los cantaores de fandangos de Huelva, los cuales han sido luego cogidos por estudiosos del fandango de mi tierra, como el amigo conocida por el pueblo de Alosno que me dio un homenaje por la pu-reza y difusión de sus cantes tal como eran y tengo una placa del pueblo de Alosno entero. Cuando yo saqué la antología me fui al cine de Pedro Carrasco, a puertas abiertas y con la guitarra de Juan Díaz le canté al pueblo de Alosno, todo el que cabía en el cine, los fandangos que ellos me habían enseñao, por si estaban bien. O sea, que fui a la universidad a examinarme. —En relación con la polémica que existe sobre un determinado número de fandangos de Huelva... tó que no conseguí nada. Fue un fracaso para mí, pero yo continué. Pero era un fracaso político, no era un fracaso artístico. Estaban los premios daos. ¡Hombre! A mí me llevaron allí cuatro flamencos que me merecían mucho respeto y yo creo que estaba capacitao para conseguir algo en\n\n[ENDING CONTEXT]\n\nEl «dejillo» que el mismo fandango lo reclama como dice la letra que antes he expresao, luego el propio fandango se queja en esa letra. Yo en nombre del propio fandango me quejo de que el Cabrero hace el fandango de mi tierra con aire de Aznalcollar, que es de la provincia de Sevilla, o sea, sin «dejillo» y con letras que tienen un contenido que no son el de las letras de los fandangos de mi tierra que son siempre letras de amor, de cacería, de ronda, etc.\n\n—A parte del reconocimiento del pueblo de Alosno, ¿esta labor que tú dices que has realizado se te ha reconocido en algún otro sitio?\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Antonio «El Rociero»",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-15",
+    "page_number": 13,
+    "word_count": 2667,
+    "article_char_count_full": 14554,
+    "article_char_count_review": 3892,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-03-16-left-en-recuerdo-de-navarro",
+    "article_text_for_review": "J. Márquez Cabello\n\nJosé Navarro Rodríguez, cartameño de nacimiento y «perote» desde la edad de tres años, gustaba charlar conmigo horas seguidas en el seno de la peña Juan Breva, que éramos consocios y amigos de cuando los principios en el bar Casa Luna (luego Emilio) para acá y cuyo regenteo aún lleva el señor Sánchez E. Pepe Navarro sabía más que muchos de cantes de la tierra. Conmigo hacía buenas migas y me apreciaba al ver mi fervoroso apego a los variados estilos de los cantes de Málaga.\n\nMuchas noches, tarde ya, después de repasar todos los intríngulis de uno y otro palo, cogíamos un taxi que decíamos al de turno: «Llévenos a la cárcel». El Fulano, si era nuevo, nos miraba huraño y tiraba para adelante con recelo. Esto pronto se le pasaba en el momento que reanudábamos nuestros tira y afloja sobre el arte flamenco. Al llegar al centro penitenciario, que él vivía en frente, pagábamos y nos apeábamos y nos daban las claras del día discutiendo, desencombrando, canturreando cada cual con su «berreo», modulando melismas, como Dios nos daba a entender...\n\nUna noche, a raíz de haberse hecho socio el cantaor-profesor señor Arrebola, después de una reunión formal, nos llevó en su utilitario al sitio de costumbre y no dejaba apearse al amigo Navarro instándole a que le «dijera» por bajini la malagueña del maestro Ojana. Pepe la gozaba cantiñeando, explicando y enseñando a todo un enseñante con aquello: «El ser pobre no es deshonra...». Al fin agregaba: «De aquí un tal Gayarrito, que no sabemos dónde mamaría el primer chupetón, dicen que apañó esta otra: \"La mar se viste de luto, los peces se mueren de pena...\". Aunque a mi entender, esto —seguía el perote— es una copia sin aliño personal, arrimándose a Chacón...». Y seguía «diciéndonos» otros tipos de malagueñas no dejadas en estrías por sus parteadores. Arrebola se relamía, magnetó-fono de su sesera a la expectativa no teniendo que escuchar, sino sólo una vez cada estilo para luego él cantarlo con admirable fidelidad. Tal su capacidad receptiva. Al pan, pan...\n\nValgan verdades, de nuestro tra- to y amistad con este aloreño me convencí de que «El Canario» fue el primero que comenzara usando en la «malagueña» quebrado el primer tercio, así como que de él lo cogieron para las suyas «El Mellizo», «El Marrurro», «El de la Isla» y otros. Era más que aferrado a los cantes malagueños, a veces tan acértimo que chocaba su tozudez. Una vez en una reunión informal de aficionados dijo: «La malagueña tiene dos retoños en la vecina Graná: la “granaína” y la “media”». Alguien de la tertulia, por sonsacarle, le replicó: «Y se queda usted tan Pancho, ¿no?». «No, yo no —le respondió mirándolo con su característico tic facial—, un simple protésico; eso lo decía y dejó dicho en un libro documental un gran escritor, poeta, periodista de fuste, folklorista, gitanista y flamenquísimo (no le hacía tilín lo de flamencólogo) que se llamó Carlos de Luna. A mí —continuó— me basta con el confronte». Y nos «dijo» bajito «Eres guapa. Dios te guarde...» y «La que vive en la Carrera...». A poco sacó un papel y leyó: «La ma-\n\nlagueña tiene dos hijas... —así lo dice DE CANTE GRANDE Y CANTE CHICO— que se agazapan compuestas y vistosillas al pie de los murallones de la Alhambra; la malagueña tiene arrestos de “caña”, sentimientos de siguiriya, maítices de soleares y no se parece a ninguna. Es... Ella: suave, desgarrada, femenina, bravía, sentimental y gallarda...». Y metiéndose el papel en su bolsillo, avanzaba y retrocedía en un palmo de terreno, pujante y enorgullecido exclamando: Indiscutible, hombre, indiscutible! Era jocoso verle moverse triunfal, ensimismado en «sus siete».\n\nAl celebrarse en Madrid un Congreso de Arte Flamenco organizado por la UNESCO en el Instituto de Cultura Hispánica, fue y tomó parte en él y al regreso me cogió de los hombros zarandeándome contentísimo, diciéndome: «¡Márquez, lo que manteníamos nosotros; que nuestro cante no viene de los moros! Así lo ha asegurao un \"sabelotodo\" árabe y musicologista, remachando que lo que creíamos escuchar de flamenco en lo moruno, es andaluz, andaluz de lo que atraparon de música \"garnati\" los chilabos cuando andaron por nuestra región tanto tiempo».\n\nMe soltó al verme jadear y se frotaba las manos de gozo como cuando le fue otorgado el Premio «Carlos de Luna» en una Semana de Estudios Flamencos mala-gueños.\n\nLuego se disgustió con nosotros algunos porque había que admitir todas sus opiniones, o se estaba en contra. Desde luego, todo su empeño era revalorizar, categorizar y patentizar los cantes de «la Bella», incluida «su» Alora y contornos.",
+    "title": "En recuerdo de Navarro",
+    "periodical": "candil",
+    "issue_id": "1988-03",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 772,
+    "article_char_count_full": 4601,
+    "article_char_count_review": 4601,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

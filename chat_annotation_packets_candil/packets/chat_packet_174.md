@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1988-05-24-right-noticiario-y-buz-n-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNOTICIARIO FLAMENCO\n\nCÓRDOBA, DEL 17 AL 23 DE OCTUBRE DE 1988 PALACIO DE CONGRESOS Y EXPOSICIONES\n\nCIRCULAR\n\nNuevamente nos permitimos ponernos en contacto contigo para continuar informándote sobre la organización de nuestro Congreso.\n\nPodemos ya remitirte un avance del programa de actos que estamos preparando, en el que todavía podrán introducirse algunas modificaciones, ya que nos quedan algunos puntos pendientes de confirmar, como el FESTIVAL de la I.T.E.A.F. y los actos a realizar a mediodía que condicionamos a la densidad de las sesiones de trabajo.\n\nQueremos recordaros que el plazo para recibir ponencias y comunicaciones finaliza el día 15 de julio y que vamos a intentar, por todos los medios que, una vez impresas, los congresistas las reciban en su domicilio antes de su venida a\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_02 | trigger=\"inscripción\"]\n\na la densidad de las sesiones de trabajo. Queremos recordaros que el plazo para recibir ponencias y comunicaciones finaliza el día 15 de julio y que vamos a intentar, por todos los medios que, una vez impresas, los congresistas las reciban en su domicilio antes de su venida a Córdoba. Te remitimos información sobre los alojamientos que nos facilita la Agencia a la que hemos encomendado este tema, así como boletin de reserva hotelera y hoja de inscripción. Para compensar a los congresistas del gasto que puede suponer el no haber podido lograr mejores precios en los hoteles, hemos decidido mantener las mismas cuotas de inscripción de la reunión anterior, aunque tengamos que solucionar los problemas de financiación que se nos plantean. Te recuerdo que en la Secretaría del Congreso se te facilitará la información que precises. AVANCE DE PROGRAMA Martes 18.—Representación teatral. Lunes 17.—Presentación del Congreso. Presentación de publicaciones. Inauguración de exposiciones. Proyección cinematográfica. Miércoles 19.—Por la mañana: Recepción de congresistas. A las 13,00: Recepción oficial ofrecida por el Ayuntamiento. A las 17,00: Primera sesión de trabajo. A las 21,00: Visita nocturna a la Judería. Jueves 20.—Segunda y tercera sesiones de trabajo. Por la noche: Visita a los jardines del Palacio de Viana. Cena Flamenca. Viernes 21.—Cuarta y quinta sesiones de trabajo. Festival a benef\n\n[ENDING CONTEXT]\n\nCabrero; vicepresidente, Antonio Durán Rodríguez; secretario, Rafael García de la Hera; tesorero, Antonio Naranjo Domínguez; vocales, Antonio José Pérez Castellano, Eli Núñez Sastre, José Gallardo Monge, José Barragán Reina, Ricardo Pérez Naranjo, José Manuel González Blanco, Ricardo Parrilla Sarmiento, José Rodríguez Sánchez, José García Meléndez, Domingo López González.\n\nRestaurante MONTEMAR\n\nPropietario: CARLOS GUERRERO MURILLO (Medalla al Mérito del Trabajo)\n\nRecepción diaria de MARISCOS Y PESCADOS ESPECIALIDAD EN ASADOS\n\nROLDAN Y MARIN, 7\n\nJ A E N\n\nTELEFONO 22 97 65\n\nCANDIL Página 49\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Noticiario y buzón flamenco",
+    "periodical": "candil",
+    "issue_id": "1988-05",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 1875,
+    "article_char_count_full": 12231,
+    "article_char_count_review": 3031,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "inscripción"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-05-26-left-discograf-a-flamenca-placas",
+    "article_text_for_review": "Archivo: Manuel Yerga Lancharro",
+    "title": "Discografía flamenca (placas)",
+    "periodical": "candil",
+    "issue_id": "1988-05",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 4,
+    "article_char_count_full": 31,
+    "article_char_count_review": 31,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-07-3-right-editorial",
+    "article_text_for_review": "No comparto la totalidad de los análisis que Pedro Camacho vierte en su obra «Los Payos cantan Flamenco», acerca de la fundamentalidad de la aportación gitana o puramente andaluza al arte flamenco. Me parecen desajustadas sus exégesis sobre textos de Rafael Lafuente, innecesaria la referencia sobredimensionada a José Tejada «Niño de Marchena», equívoca la valoración de la voz desgarrada frente a la voz laína, erróneo el propio concepto de lo jondo. En otro sentido, la interpretación de la obra de Estébanez Calderón y de Demófilo adolece, a nuestro modesto entender, de ese prurito por la precisión terminológica que, al final, deviene en pura imprecisión. Ello, no obstante, este libro, pese a objeciones accidentales que contra el mismo puedan argúirse, debe ser reputado como un estudio riguroso y bien documentado que sale al paso con notable éxito, de la absurda dicotomía —al parecer contumaz de muchos, irreductible— cante gitano o cante payo, que promoviera el ensayo de Ricardo Molina «Mundo y Formas del Cante Flamenco», y que algunos automatizados seguidores del poeta cordobés se cuidaron de incentivar. Esta reflexión no viene a estimular, sino a zanjar, si ello es posible, una estéril contienda que, al día de hoy, parece superada, esencialmente en los propios términos que configuran la tesis de Pedro Camacho, con algunas matizaciones y sin ese singular aire gitanófobo —sin duda, no pretendido— que transpira el Ensayo. Los más recientes trabajos de Blas Vega han puesto en evidencia el discriminatorio etnocentrismo de algunos que proclamaban, sin más, la autarquía gitana en el flamenco. Esta reflexión viene, por otro lado, a recordar la contribución relevante de Pedro Camacho a la profundización analítica del fenómeno flamenco, junto a la de otros eximios maestros —Anselmo González Climent, el primero— que permanecen en una silenciosa diáspora y cuya aportación actual estamos deseando y necesitando. Es curioso constatar cómo las orientaciones de la última bibliografía flamenca retoman una línea de análisis de la que Pedro Camacho y González Climent son conspicuos exponentes y que se caracteriza por el alejamiento de disquisiciones fenomenológicas sobre vivencias del flamenco tan poéticas como infundadas las conclusiones que sobre aquéllas se extraen, y por el rigor historiográfico de los planteamientos bien pertrechados documentalmente. Ojalá los siempre admirados maestros de la diáspora asuman, de nuevo, un protagonismo que nunca han perdido. Ramón Porras",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1988-07",
+    "year": 1988,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 383,
+    "article_char_count_full": 2499,
+    "article_char_count_review": 2499,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1988-07-4-right-el-xxviii-festival-nacional-del-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDosCandil\n\nNo hay nada más desagradable y empalagoso que una borrachera de cante malo. Nos comentaban que era la tónica general de esta década. En consecuencia, la organización debiera plantearse la premiar al mejor, un fenómeno cordobés llamado Vicente Amigo, que acaricia la sonanta como los propios ángeles, y ha manifestado la paupérrima intervención cantaora dejando cinco premios desiertos, parro, Parrondo, Polaco, Ecijano, Fernando Mairena, Carrillo, Paco Moya, Emilio Cabello, Cabrillero, Juan Delgado, Canela de San Roque, Marcelo Sousa, Paco el Clavero y un largo etcétera se den cita el próximo año en La Unión, sabedores de que, al menos en esta edición, la generosidad y benevolencia del jurado ha pasado a mejor vida.\n\nASENSIO SÁEZ, ETERNO PREGONERO\n\nTodo comenzaba con una misa\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"participación\"]\n\nUnión, sabedores de que, al menos en esta edición, la generosidad y benevolencia del jurado ha pasado a mejor vida. ASENSIO SÁEZ, ETERNO PREGONERO Todo comenzaba con una misa minera oficiada por don José Manzano en la iglesia Ntra. Sra. del Rosario. La ilustración corrió a cargo de Encarnación Fernández (la Venus de los cantes mineros) y Paco Rabadán con textos extraídos del bianualidad del Festival Nacional del Cante de las Minas. Es nula la participación de cantaores de renombre de la baja Andalucía. Ahí, pensamos nosotros, debe estar el punto de mira de la comisión organizadora si quiere que el Festival gane en prestigio, credibilidad y flamenquería. Porque, queridos lectores, gentes que blasonan el lirismo aflamencado y que no se atreverían a cantar ni en las tabernas andaluzas para los amigos, cometen la osadía de presentarse a un Concurso Nacional porque saben, a ciencia cierta, que algunos pueden «colar». En el caso que nos ocupa el intento ha resultado fallido. Los inscritos han topado con un muro infranqueable que antes de llegar a la final ya había dejado desierto dos de los premios en disputa. El jurado, a él hacemos alusión, ha dejado patente la alta calidad de la guitarra de concierto, ha sabido si bien el correspondiente al primer grupo de cantes bajo andaluces debiera haber recaído en Rufo de Santiponce por el dominio que impuso en la siguiriya del Marrurro y la cabal de Silverio. A excepción de lo reseñado, «chapeau» para la valentía y el rigor flamenco de los miembros del jurado. Quizá éste sea el acicate necesario e imprescindible para que, una vez subido el listón, los Chadisco que acaban de impresionar y que, con el título de «Misa Minera en La Unión», ha sido patrocinado y repartido gratuitamente por Enrique Hernández, autor de todas las letras. Más tarde, en el reproducido Café Cantante instalado próximo al Mercado Público (aquí vale el tópico de marco incomparable), Ramón Porras y Manuel Martín co-director y redactor de CANDIL, respectivamente, presentaban el número 57 de la revista, donde el señor Porras manifestó el compromiso del grupo CANDIL de realizar, en colaboración con el Excmo. Ayuntamiento de La Unión, un número monográfico sobre el Festival Nacional del Cante de las Minas. A partir de las diez y media, con dos presentadores de cuyos nombres no quere\n\n[ENDING CONTEXT]\n\nEstamos en la seguridad de que los advenedizos han encontrado en La Unión quienes les amarren los cordones de los zapatos y a buen seguro que el Concurso Nacional se va a ver fortalecido con la presencia masiva de cantaores que garanticen el futuro inmediato de lo jondo. De lo contrario cabría preguntarse, ¿cuántas Lámparas Mineras han trascendido al mundo del Flamenco? De una mano sobran dedos. La comisión organizadora, cabalmente encabezada por Jesús Gordillo, a la que falta grandes dosis de flamenquería como las que rezuma el insobornable Deogracias Martínez, tiene la última palabra.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El XXVIII Festival Nacional del Cante de las Minas pasará a la historia",
+    "periodical": "candil",
+    "issue_id": "1988-07",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 3371,
+    "article_char_count_full": 20657,
+    "article_char_count_review": 3948,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "participación"
+      }
+    ]
+  },
+  {
+    "article_id": "1988-07-7-right-conferencia-internacional-dos-si",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nRamón Porras\n\nBajo los auspicios del Centro Español del Instituto Internacional del Teatro Unesco y el Instituto Nacional de las Artes Escénicas y la Música, y la coordinación de la Fundación Andaluzas de Flamenco, se ha celebrado el día 21 de junio pasado, la Conferencia Internacional «Dos siglos de Flamenco», acontecimiento éste de cuya relevancia nos hicimos eco en la Editorial del número 57 de la Revista CANDIL, y que ahora, de forma más pormenorizada, intentaremos enjuiciar no sin anteponer una precisión: la valoración global de esta Conferencia, como hecho incentivador de estudios y análisis sistemáticos para la profundización del flamenco, requiere una perspectiva de tiempo que no tenemos; por ello, cualquier conclusión que se formule ha de merecer, necesariamente, el carácter de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"interior\"]\n\norma más pormenorizada, intentaremos enjuiciar no sin anteponer una precisión: la valoración global de esta Conferencia, como hecho incentivador de estudios y análisis sistemáticos para la profundización del flamenco, requiere una perspectiva de tiempo que no tenemos; por ello, cualquier conclusión que se formule ha de merecer, necesariamente, el carácter de provisional. Antonio Gala fue el pórtico de esta Conferencia Internacional. En un patio interior del Palacio de Pemartín, sede de la Fundación, en el mismo corazón del barrio de Santiago, Antonio Gala no hizo un discurso, ni una ponencia o comunicación, ni una protocolaria bienvenida; se limitó a reflexionar sobre el universo flamenco, y lo hizo con tanta lírica penetración, con tan fascinante profundidad, como sólo otro poeta lo haya hecho hace más de medio siglo, Federico García Lorca. Antonio Gala siempre es un espectáculo por la brillantez de sus reflexiones, por la jondura de sus incursiones en un universo, contra lo que pudiera pensarse, más metafísico que lírico. Es su forma de captar el jondismo que nos adentra en un mágico mundo donde la firmación de lo propio, de lo genuino del alma andaluzí adquiere la virtualidad de lo universal, es decir, los parámetros vigentes siempre de la angustia, del dolor del hombre. Ello no nos impedirá insistir en una apreciación que, aunque por algunos pueda ser reputada como apresurada, ya lanzamos en la citada editorial de esta Revista: «Desde la óptica de la profundización analítica del fenómeno flamenco, esta Conferencia ha significado el acontecimiento más relevante de la última década. La calidad de alguna de las ponencias presentadas, el rigor con que se han abordado aspectos del jondismo, hasta ahora ignotos y, en general, la visión multidisciplinar que se ha ofrecido, justifican, a nuestro entender, tan comprometida afirmación...». Afirmación que intenta\n\n[ENDING CONTEXT]\n\ncon todas las especificaciones que queramos, pero música, a la postre. ¿Cuántos interrogantes que ahora perecen insolubres quedarían despejados si se acometiera por un equipo de expertos, un estudio musicalógico, riguroso y definitivo, del flamenco?.\n\nSugerimos a la Fundación Andaluza que incentive, de alguna manera, este tipo de estudios ya sea por la vía de convocar becas o por la vía —que estimamos la más idónea— de encomendar a persona o grupo de personas de reconocido prestigio en el campo de la investigación musical, un estudio integral sobre esta vertiente, todavía ignota del flamenco.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Conferencia internacional: «Dos siglos de flamenco»",
+    "periodical": "candil",
+    "issue_id": "1988-07",
+    "year": 1988,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-10",
+    "page_number": 7,
+    "word_count": 3547,
+    "article_char_count_full": 22467,
+    "article_char_count_review": 3517,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "interior"
+      }
+    ]
+  }
+]
+```

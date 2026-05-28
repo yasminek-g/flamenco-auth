@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1987-09-22-right-buz-n-flamenco",
+    "article_text_for_review": "Ha llegado a mis manos un ejemplar del libro lanzado por mi buen amigo, Alfredo Arrebola, y leo con desagrado algo que cae fuera del círculo de la verdad. Por eso quiero enderezarle un entuerto públicamente.\n\nM. Yerga Lancharro\n\nHace ya varios años y en presencia de nuestro común amigo, José Luque, le dije a Alfredo que la malaqueña que grabó el «Pena Hijo» con la letra: «Porque andando me desmayo», era de «La Trini», elaborada por ella inspirándose en la escuela de Baldomero Pacheco. Yo le canté un par de tercios, no precisamente como los cantaba «El Pena», sino como la interpretaba el señor Diego «El Pijín», que se ajustaba más al aire de «La Trini». Pero nunca dije que fuese de esta cantaora la malagueña que todos conocemos con la letra: «Ni mancha ningún linaje».\n\nYo pido a Alfredo que coja la revista «Candil», número 18 del año 1981 y verá mi trabajo titulado: «Relación orientativa de los cantes de Málaga y de Levante» publicado mucho antes que su libro y en donde digo que «La Trini» creó tres estilos por malagueñas.\n\n1. Haciendo por olviarte.\n\n2. Fuiste la paloma mía.\n\nEn cuanto a la del maestro «Ojana», dije hace más de cuarenta años y lo digo siempre, que una de las suyas es la que conocemos con la siguiente letra:\n\n3. Porque andando me desmayo (se inspiró en la escuela de Baldomero Pacheco).\n\n«Ni mancha ningún linaje»\n\nY no solamente en dicho trabajo lo afirmo, sino que, además, tengo publicados otros varios relacionados con los cantes por malagueñas Y EN ELLOS NUNCA DIJE QUE LA DEL MAESTRO «OJANA» FUESE DE «LA TRINI». Así, pues, es lamentable que se vierta en un libro un hecho o algo irreal con perjuicio del prestigio de un tercero.\n\nSeñores Directores de la Revista «Candil». Jaén. (España)\n\nSobre la familia Amaya\n\nLo que debería hacer, en este caso, mi amigo Alfredo, él bien lo sabe, y más contando con este medio de publicación.\n\nEstimados señores:\n\nLe envío estas líneas a propósito del artículo aparecido en el número 51 de «Candil», titulado «Carmen Amaya, reina de los gitanos» y que lleva la firma de don Manuel Ríos Vargas.\n\nSin intentar corregir la plana a don Manuel, quisiera puntualizar algo en lo referente a la familia Amaya.\n\nLos hermanos de Carmen fueron cinco y no tres como asegura el articulista. Paco, tocaor, fue el mayor de todos los hermanos. Seguía Carmen y luego, en orden sucesivo, Antonia, bailaora y extraordinaria festera. Leonor, más conocida como Leo, bailaora, pues si bien es cierto que grabó algunas canciones por bulerías y zambras, no me parece que se pueda considerar como cantaora. Antonio, bailaor y María, bailaora, que incursionó también en el baile clásico español.\n\nDe todos ellos viven las tres mujeres. Antonia y Leonor residen en México y María en Lima, Perú.\n\nAntonia está casada con Chiquito de Triana, un excelente cantaor que no ha perdido su pureza a pesar de sus muchos años en América.\n\nLeonor se casó en México con un señor español de nombre Roberto. No recuerdo su apellido.\n\nMaría, ex-esposa del genial guitarrista Mario Escudero, vive con su actual esposo, el flamenquísimo tocaor argentino Jorge Tomes, «El Moro».\n\nDe todas estas uniones matrimoniales, han surgido otras tantas bailaoras y tocaores que con su buen hacer flamenco prolongan en América el famoso apellido.\n\nLes saludo muy afectuosamente, Camilo Salinas Vázquez. Valencia (Venezuela).\n\nLa Peña «El Mirabrás»\n\nEstimados amigos:\n\nY en segundo lugar, comunicarles que en la relación de Peñas Flamencas que otorgaron sus insignias de oro al cantaor de la Puente, no figura la de «El Mirabrás».\n\nVaya en un principio nuestra felicitación por la publicación de vuestra revista «Candil» y en particular a ese número 50 dedicado a «Fosforito».\n\nTal concesión se aprobó en Asamblea Extraordinaria el día 28 de enero de 1984 y a los pocos días en un doble acto consistente en la inauguración, por el propio cantaor, de «El Callejón de El Mirabrás» que da acceso al local de la Peña, y de una charla a cargo de don Agustín Gómez sobre la personalidad de «Fosforito», le fue impuesta por nuestro presidente la insignia de oro y el título de Socio de Honor de «El Mirabrás».\n\n«Al fraile… ni darle, ni quitarle». Atentamente les saludan.",
+    "title": "Buzón flamenco",
+    "periodical": "candil",
+    "issue_id": "1987-09",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 716,
+    "article_char_count_full": 4186,
+    "article_char_count_review": 4186,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-09-23-left-podio",
+    "article_text_for_review": "Sitio de honor a la Peña Flamenca de Asturias, modelo de entusiasmo y eficacia, aliados a un concepto serio y formal del flamenco, con resultados sorprendentes. (320 socios en el primer aniversario de su fundación). Una excelente revista que si adolece de algo —es impecable en forma y contenido— es de editarse... una vez al año. La jacarandosa Peña está en la capital del Principado, pero Gijón es también entusiasta y multitudinaria cooperadora, hermanada con la afición flamenca de los carbayones.\n\nUna nueva peña en Alcobendas que se estrena convocando un concurso de aficionados y que se establece bajo la advocación de Rafael Alberti. (En una ocasión leímos una carta del eternamente joven Rafael, en la que decía a un poeta amigo que no sabía por qué le habían colgado el sambenito de poeta flamenco, que él no lo era). Pero como obras son amores y amor es otra entidad flamenca en la periferia madrileña, venga en buena hora a estas alturas del podio por su propio derecho.\n\nAquí también la obra social del Monte de Piedad de Córdoba por la organización de sus ocho «Jueves Musicales», un hermoso y valioso circuito que reparte generosamente buen arte flamenco a cargo de primeras figuras de la tierra califal, con algunas gotitas sevillanas.\n\nY que tampoco tarde más tiempo en subir al podio la organización del IV Coloquio Internacional del Romancero en El Puerto de Santa María. Allí conocerán prestigiosos romanceros de Europa y EE.UU. la novedad de los romances recuperados del cante de los gitanos, un descubrimiento que sólo la Universidad Autónoma de Madrid tuvo ocasión de descubrir hace años, cabe los muros del Acueducto segoviano, en la\n\nanillos ni nos importa que se nos tilde de vasallos cuando por nuestra libre voluntad traemos hoy a esta elevada cúspide el extraordinario de «Candil» dedicado a Fosforito. El merecimiento del homenaje, la decisión de realizarlo, la eficacia alcanzada, conceden este lugar de privilegio por derecho propio y sin pensar en los agoreros de turno, esos que por no hacer nada en su vida, ignoran y desconocen el placer de mojarse el culo. Que sigan la-drando, tal es su misión.\n\nso ensayo sobre la guitarra (la flamenca y la otra) publicado el 4 de febrero en la edición para Andalucía de un diario madrileño. De nuevo defiende Félix la grandeza de la guitarra flamenca, ahora desde una originalísima vertiente que ha movido un hecho inconsueto: la aportación de una técnica más brillante, ocasionalmente incluso más ruda —aunque él no apura tanto la definición— y, por tanto, menos encorsetada y monótona, del toque (modo de tocar) flamenco a la guitarra española y clásica. ¿Cómo?. «Por la forma en que la mano derecha puede pasar desde un sonido melancólico a un sonido tempestuoso cuando la partitura lo demanda».\n\nCon un ligero, incluso sutil, pero intrépido a la vez —¿valdrá decir?— matiz flamenco.",
+    "title": "Podio",
+    "periodical": "candil",
+    "issue_id": "1987-09",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 477,
+    "article_char_count_full": 2860,
+    "article_char_count_review": 2860,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-09-23-right-la-pe-a-una-entidad-apol-tica",
+    "article_text_for_review": "Omo ejemplo de buen criterio, corrección en las formas y espíritu associativo que tanto se echa a faltar hoy —y siempre— en el mundo flamenco, traemos a este lugar de honor el siguiente artículo que Onofre López ha publicado en un diario sevillano:\n\nEn los corrillos que frecuento me llega el rumor insistente de que la Peña Flamenca de Huelva está en la cuerda floja, respecto a posibles futuras ayudas, por parte de los departamentos culturales de nuestro municipio. Si realmente el rumor es cierto —y la mayoría de las veces lo es— está basado en la utilización del nombre de la entidad flamenca, por parte de su presidente y de un directivo, para avalar o reforzar sus respectivas personalidades en la campaña electoral de las pasadas municipales.\n\nComo socio de la Peña, desde sus primeros comienzos, me siento en la obligación de hacer una serie de puntualizaciones para tratar de aclarar, a quien proceda, esta delicada situación, poniendo cada cosa en su sitio.\n\nLa Peña Flamenca de Huelva la componemos doscientos y algo de socios, aficionados a este arte, estando concebida para promocionar el mismo, además de buscar en ella la convivencia con gentes de un sentir común. Hasta ahora, jamás navegó en las aguas de una marea política concreta, porque su mejor política fue siempre tener las puertas abiertas, tanto para unos como para otros. Todos, sin preferencias, recibieron el trato cordial de los socios de la entidad en sus muchas visitas a la sede de Adoratrices, 24, y de todos obtuvimos el apoyo moral, personal y oficial, cuantas veces se recurrió para su buena imagen y el\n\nEntiendo que cualquier persona quiera ejercer su legítima ambición para alcanzar la cota más alta en su paso por la vida. Entiendo también —un poco menos— que, en política, se echa mano de muchas cosas para proyectar el carisma necesario que dé confianza al electorado, al objeto de recabar el mayor número de votos para salir elegido. Hasta aquí se puede pasar. Después, que se crea en los programas y en quienes prometen desarrollarlos, es problema del personal que se quiera plantear la temática. Ahora bien, si para dar consistencia a la credibilidad de sus promesas se usa el cargo de una entidad cultural privada, sin el beneplácito del colectivo que la compone y, en el caso que nos ocupa, provocando un enfriamiento en las personas a las que se ha recurrido en muchas ocasiones, tanto para ayudas en actos culturales, como para agilizar futuros proyectos, la cosa hay que tomarla con mucha más seriedad que el ligero comentario de una simple anécdota. mantenimiento de un prestigio conseguido con sacrificios.\n\nAhora, haciendo caso al rumor, la cosa puede can- biar y, ante ello, tenemos que salir al paso de lo que puede ser un «te quiero, pero te olvido» para una so- ciedad apolítica que se ha visto involucrada en el pa- saje de un barco electoral, sin comerlo ni beberlo.\n\nAnte esta situación, y superando las exclamaciones triunfalistas de aquéllos que creen en la autofinancia-ción de la sociedad, no nos queda más que decir que los errores de la vida los deben pagar quienes los cometen: Unos, presidente y directivos, por arriesgar sus apetencias comprometiendo lo que representan, y otros, junta directiva en pleno, por conseguir que entráramos en un juego que puede tener graves consecuencias.\n\nSi la cosa toma fuerzas, a todos tendremos que contarles aquello de Ana Belén y Víctor Manuel: «Ahí está, ahí está la Puerta de Alcalá...», claro está, cambiando lo de Alcalá por Secretaría...\n\nOnofre López\n\nPicota\n\nVENTOLERA.",
+    "title": "La Peña, una entidad apolítica",
+    "periodical": "candil",
+    "issue_id": "1987-09",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 594,
+    "article_char_count_full": 3534,
+    "article_char_count_review": 3534,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-09-24-left-flamenca-placas",
+    "article_text_for_review": "CHATO VALENCIA\n\nPor: Manuel Yerga",
+    "title": "Discografía flamenca (Placas)",
+    "periodical": "candil",
+    "issue_id": "1987-09",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 5,
+    "article_char_count_full": 33,
+    "article_char_count_review": 33,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-11-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nEl baratillo de Manuel Barrios\n\nEn la página 14 del Diario ABC de Sevilla, correspondiente al día diez de noviembre de este año, Manuel Barrios, en su habitual columna «El Baratillo» reflexiona sobre lo que él denomina «Funcionariado Flamenco».\n\nDesde hace casi dos décadas, conocemos a Manuel Barrios, quien, justo y obligado es decirlo, siempre ha sido objeto de nuestra admiración, con independencia de que hayamos o no disentido sobre sus polémicos, rigurosos y enriquecedores planteamientos de la historiografía flamenca. Nadie debe cuestionar, por otro lado, el talante liberal del escritor sevillano, así como su compromiso —no de ahora— con el progreso y la modernidad. Por eso, resulta desconcertante el análisis que Manuel Barrios proyecta sobre instituciones, revistas y personas que, aun en su condición de titulares de un órgano autonómico, son acreedores al más respeito reconocimiento público por su trayectoria, por su honestidad, por su probada honradez y por lo mismo, incapaces de vehicular una «dictadura soterrada», aunque ésta provenga de la Junta de Andalucía.\n\nLos infundios producen envilecimiento no sólo en quienes los profieren, sino también en quienes los reciben y, sin un mínimo esfuerzo, por contrastarlos con la realidad, se hacen eco de los mismos. Pero acerquémonos al Baratillo.\n\nDecir que la Junta procura asegurarse todos los resortes «para tener el flamenco atado y bien atado» es una solemne desvergüenza. Afirmar que la Consejería de Cultura, por la vía de subvención a «Congresos, Federaciones de Peñas, entidades de la tercera edad, concursos de cante, fundaciones, revistas especializadas...», controla, censura y dirige, convirtiendo a los flamencos en funcionarios bajo su disciplina, es una majadería superlativa, una torpeza frívola que sitúa a quien la pronuncia en el baratillo de la maledicencia.\n\nSostener que la Junta ejerce dictadura en todo el ámbito flamenco, ya que «si se produce una opinión discrepante, esto supone la retirada de la subvención», es, sencillamente, una perversidad.\n\nCuando Manuel Barrios era presa de estas alucinaciones —10 de noviembre de 1987—, la revista CANDIL —subvencionada por la Junta— acababa de editorializar lo siguiente: «...que dará constancia para las generaciones futuras, de que quienes tuvimos alguna suerte de participación en el flamenco, lo intentamos y de que nuestra torpeza en la apreciación de lo jondo, no llegó, al menos, a las elevadas cotas de nuestros gobernantes». La cita es sólo un botón de muestra de lo que ha sido durante muchos años una línea editorial independiente, crítica hacia la Administración Central o autonomía, y equivocada o no, nunca mediatizada por quienes han tenido esa responsabilidad institucional. Desde estas líneas emplazamos a colectivos flamencos, personas físicas o jurídicas a que manifiesten si, en algún supuesto de discrepancia con la Administración autonómica, han sido objeto de presiones, coacción, agresiones morales de cualquier naturaleza, amenazas de retirada de subvención por parte de la Consejería de Cultura. Por lo que respecta a esta revista, y estamos seguros que también por lo que respecta a la otra revista hermana «Sevilla Flamenca», falsearíamos la realidad si no mantuviesemos que jamás hemos recibido indicación alguna —directa o indirecta— sobre la línea editorial a seguir, sugerencias sobre el enfoque de determinadas controversias, alusión a críticas dirigidas contra la propia institución subvencionadora.\n\nAcaso el problema de Manuel Barrios sea otro. El aspid de sus análisis no va dirigido al «Funcionariado Flamenco», sino al de un determinado partido político, quién sabe si para no desentonar con el diario que le da cobijo. Y ello puede ser hasta legítimo si en tal empeño se utilizan argumentos políticos. Pero si de los mismos se carece, no es honrado instrumentar el mágico mundo de la siguiente o de la solea, para dilucidar lides tan plebeyas. Como por aquí se dice, don Manuel, la política para los políticos, la mujer a ratos y el cante a cualquier hora.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1987-11",
+    "year": 1987,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 628,
+    "article_char_count_full": 4046,
+    "article_char_count_review": 4046,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

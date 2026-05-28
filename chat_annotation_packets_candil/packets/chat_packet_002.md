@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1979-09-12-right-haciendo-memoria-antonio-mairena",
+    "article_text_for_review": "HACIENDO MEMORIA\n\nANTONIO MAIRENA 50 AÑOS DE VIDA PROFESIONAL Jaén, en 1972, ya rindió un homenaje al maestro.\n\nFue con motivo de la presentación en nuestra ciudad del libro «Mundo y formas del cante Flamenco», reeditado entonces por Radio Popular y la librería Al-Andalus. Tras el homenaje, con entrega al maestro de una placa conmemorativa y una obra del pintor José Olivares, en un deseo de darle parte de nuestro paisaje, Antonio Mairena dio un recital. De su actuación apareció en el diario IDEAL lo siguiente:\n\nCON LOS DUENDES DE ANTONIO MAIRENA EN NOCHE DE ARTE GITANO-ANDALUZ\n\nUno había visto al gran maestro de Mairena del Alcor en diversos festivales. Uno sabía de su arte. Pero, en la noche del día 20, todo quiso ser distinto. Antonio Mairena, el número uno del actual momento del arte gitano-andaluz, venía a Jaén a recibir un homenaje y a regalarnos su sonoro decir. El acto en sí, ya quedó reflejado en la diaria historia de IDEAL, pero Antonio Mairena necesita más comentario. Su arte no se puede condensar en las líneas apresuradas de la crónica de un hecho. Hay que escuchar, saborear, pensar y luego escribir. ¿Por dónde empezar? ¿Escribiendo de su gran personalidad, de su sinceridad y firmeza a la hora de contestar a las preguntas del informador, o de su forma de llenar cualquier escenario? Hablando en términos taurinos habría que señalar, como si en todas estas suertes Antonio Mairena saliese airoso; hay una en la que su salida es por la puerta grande, cual torero de la mejor época. Me refiero a cuando Antonio canta. Cuando eleva su voz sobre todos los asistentes y nos envuelve en su arte. Y en verdad que en la noche del día 20, todos los presentes en el acto organi-",
+    "title": "Haciendo memoria. Antonio Mairena, 50 años de vida profesional",
+    "periodical": "candil",
+    "issue_id": "1979-09",
+    "year": 1979,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 296,
+    "article_char_count_full": 1698,
+    "article_char_count_review": 1698,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1979-09-13-right-quienes-fueron-los-maestros",
+    "article_text_for_review": "Iniciamos en este número de Candil, una relación seleccionada de los que a nuestro juicio fueron grandes maestros del arte flamenco en sus tres vertientes, cante, toque y baile. Seguimos un orden cronológico no riguroso, contemplando, ante todo, la época que llenan con su arte más que la fecha de nacimiento. La reseña biográfica que ofrecemos de cada cantaor no es exhaustiva, si bien pretende recoger lo esencial de cada uno. Invitamos a nuestros lectores a que nos escriban en caso de que puedan aportar datos y fechas más fidedignos que los que nosotros presentamos. Con esta sección, pretendemos una doble finalidad: en primer lugar, dar a conocer a los que fueron grandes maestros del arte flamenco; y, en segundo lugar, establecer una enriquecedora comunicación con nuestros lectores, algunos de los cuales, pueden tener mejor criterio que el nuestro.\n\nTIO LUIS EL DE LA JULIANA.\n\nDe «Tío Luis el de la Juliana» se sabe muy poco. «Demófilo» lo sitúa en el último tercio del siglo XVIII. Es el primer cantaor del que se tienen noticias escritas dentro de la historia del cante flamenco. Estas motivaciones, han hecho dudar a muchos aficionados y eruditos de su existencia real, estando hoy en día descartada esta eventualidad. La tradición oral dice que Tío Luis el de la Juliana nació en Jerez, de raza gitana —pues entre ellos se ha transmitido su evocación— y que era aguador, llevando con su reata de burros agua a Jerez desde la fuente de los Albarizones, situada en el camino de Medina Sidonia y junto al Monasterio de la Cartuja. De nuevo «Demófilo» lo cita en primer lugar en su lista, llevado de la información facilitada por el cantaor Juanelo de Jerez. Se cree que nació hacia 1750, dándose esta fecha de manera puramente especulativa, estimándose que si Tío Luis el de la Juliana, canta-ba como se cree, hacia 1775, habría nacido hacia 1750.\n\nLas noticias sobre su cante, son igualmente escasas. Se le tenía al parecer por un gran cantaor general, aunque a la hora de concretar, se hace incapié en las «tonás» que interpretaba —la grande, la liviana, la del Cristo, la de los pajari-tos...—, de alguna de las cuales pudo ser creador, citándose también que fue maestro de cantaores, siendo el más famoso de todos «El Fillo», al igual que el Planeta, afirmación ésta última hecha por Rodríguez Marín.\n\nEL PLANETA.\n\nEl que más noticias nos suministra sobre «el Planeta», es Serafín Estébanez Calderón en sus\n\n«Escenas andaluzas», como un viejo maestro de los cantes gitanos puros. De raza gitana, se cree que nació en Cádiz, aunque José Carlos de Luna afirmaba que en Málaga. Fue de los primeros cantaores que se acompañó con la guitarra y destacaba por cantes como tonás, romances, siguiriyas, cañas y polos. Es igualmente considerado el primer cantaor que lega un estilo de siguiriya conservado en la actualidad.\n\nDe nombre ignorado, sólo se sabe que apareció en Triana hacia 1845 ó 47, donde gozaba del respeto de su raza, debido a su edad. Es en este barrio sevillano donde «el Planeta» desarrollaba toda su actividad artística. Esto es todo cuanto conservamos del «Planeta», aunque se piensa que muchos de los cantes que llegan a nosotros a través de los discípulos del Fillo (Silverio, el Nitri, etcétera), procedan de este legendario cantaor. De lo que no hay duda, es de que fue uno de los primeros grandes cantaores de la historia del flamenco. Se dice que se debió su nombre a que en sus cantes mencionaba a los astros. Posiblemente, esta afirmación esté fundada en una letra por siguiriyas, que se ha transmitido de generación en generación y que dice:\n\n«A la luna le pido la del alto cielo, como le pido que me saque a mi pare de aonde está metio».\n\nSelecciona: Rafael Valera\n\n(Servicio J. ALAMEDA)\n\nBODAS - BANQUETES\n\nEspecialidad en CARNE A LA BRASA\n\nSU SITIO IDEAL\n\nDr. Juan Nogales, 11\n\nJ A E N\n\nTeléfono 22 99 18",
+    "title": "Quienes fueron los maestros",
+    "periodical": "candil",
+    "issue_id": "1979-09",
+    "year": 1979,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 661,
+    "article_char_count_full": 3845,
+    "article_char_count_review": 3845,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1979-09-14-right-notanda-sobre-el-viii-certamen-d",
+    "article_text_for_review": "Si no se sabe perder, es mejor no pelear, porque cuando la pelea es noble, tenemos que aceptar los resultados con nobleza, prescindiendo de raza, lugar de nacimiento y, mucho más, olvidando nuestras raíces más o menos artísticas; ésto es lo que desgraciadamente, no ha ocurrido en este certamen, en el que se desataron los nervios tensos como cuerdas de guitarra, y la violencia fue el resultado.\n\nAl asistir a un concurso, de antemano, tenemos que aceptar la decisión del jurado, máxime cuando éste está representado por hombres de los que no dudamos de sus conocimientos en la materia; no vamos a citar uno por uno el nombre de los componentes del jurado; para nosotros, muy conocidos y capacitados para opinar sobre la materia; lo contrario, que es lo ocurrido en esta edición del VIII Concurso Nacional de Guitarra, es, esperar a ver que opinan los demás y si la opinión no se ajusta a su idea, tirar por tierra, y lo peor, sin diálogo, la labor de unos señores que han puesto su ilusión y su entrega en que sea realidad un certamen que ya tiene categoría nacional, no decimos certamen local o localista. Es un concurso, donde pueden participar los que están interesados por este arte y que, afortunadamente para el flamenco, son muchos y muy bien dotados.\n\nFelicitamos a la Peña Flamenca «Los Cernícalos» por su organización perfecta, pese al final desagradable que tuvo la velada y que todos lamentamos. Con esas actitudes no se va a ninguna parte y se perjudica al flamenco, que todo buen aficionado debe defender. Porque, ¿cual será la reacción de esos muchachos que durante un año y otro se preparan y estudian con la ilusión de participar en el certamen? Nosotros hemos visto llorar, a unos, de alegría por su triunfo, y a otros con la ilusión rota, beberse las lágrimas prometiéndose volver para ver si ampliándose sus conocimientos y su creatividad, pueden alzarse triunfadores. Esto es lo correcto, lo noble; lo ocurrido en Jerez ha sido lamentable, y todavía más lamentable es, que ciertos medios de difusión pongan sus micrófonos a disposición de un grupo minoritario y desde ellos insultar a la organización, sin respeto a una audiencia que quiere escuchar lo positivo y educado de un programa dedicado al flamenco.\n\nVALERA",
+    "title": "Notanda sobre el VIII Certamen de la Guitarra en Jerez",
+    "periodical": "candil",
+    "issue_id": "1979-09",
+    "year": 1979,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 382,
+    "article_char_count_full": 2239,
+    "article_char_count_review": 2239,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1979-09-15-right-apuntes-flamencos-a-la-feria-de-",
+    "article_text_for_review": "Un año más, se nos fue la feria de San Lucas y es hora de hacer a modo de resumen artístico de los recitales programados en la Caseta Tres Morillas, cedida por el Ayuntamiento jiennense a la Peña Flamenca. Ocho han sido las noches en que el aficionado ha vivido, con más o menos fortuna, el acento de nuestro más expresivo y genuino arte.\n\nUna voz gaditana sería la encargada de abrir la serie de reuniones, y en verdad que en la noche del sábado día 13 de octubre, el duende, la comunicación no apareció por ninguna parte. María Vargas se limitó a decir unos cantes con más o menos acierto pero sin conectar con el público. Puede que faltara entendimiento guitarra-voz, pero de todas formas su actuación en la caseta Tres Morillas no pasó de ser aceptable.\n\nnos ofrecería su decir en noche fría y lluviosa que él supo encender con el calor de lo flamenco. Carlos Cruz, —en la memoria su recital del pasado año que le valiera, junto a la guitarra de Paco Cruz, el galardón al mejor artista de la feria—, sacó partido a esa tremenda voz que posee. Fue su cante volcán jondo arrojando verdades insertas en la vida de un pueblo.\n\n¡Qué decir de Rafael Romero «El Gallina! Hacía tiempo que no teníamos la oportunidad de vivir y sentir su cante en vivo, en directo. En esta feria Sanluqueña se hizo posible. Y Rafael Romero, andujareño de nacimiento, universal en su arte, nos dio el significado de lo que es el cante. ¡Qué maestría la suya para envolvernos en la más exacta pureza! En algunos cantaores el clímax de la comunicación puede ser un grito lamento, en Rafael Romero todo su decir adquiere matices de grandeza en formas melódicas hechas a golpes de compás. Rafael Romero fue la esencia jonda de una reunión inolvidable. Esa noche también, —se celebraba el día de Jaén—, actuó «El Niño Maeras». Desde una perspectiva de aficionado aplaudimos todas sus intervenciones en las que expresa unos deseos enormes de encontrarse con el cante. Le sugerimos que no pierda ese interés por llegar a un conocimiento más profundo de la geografía cantaora.\n\nRosario López — jaenera voz de mujer—, cantó en la caseta Tres Morillas con la responsabilidad de hacerlo en su tierra, ante una afición que la\n\nquiere. A cada estilo le dio el tono preciso, imprimiendo el justo compás a los palos que expuso en su recital. Muy bien de voz, supo, en todo momento, cantar para ella y para el aficionado, algo esencial a la hora de decir el flamenco.\n\nSe esperaba la noche del día 17 con verdadero interés. La personalidad de Antonio Fernández Díaz «Fosforito», siempre arrastra público, pero la voz del artista, rota quizás por exceso de festivales, restó a su actuación las posibilidades cantaoras que, indudablemente tiene. Sin dudar de su capacidad artística, en Jaén nos quedamos con las ganas de ver a un «Fosforito» pleno de facultades y demostrando, una vez más, su alta calidad flamenca. Aguantó el tirón a base de profesionalidad.\n\nY el día de San Lucas se programó el recital de Juan Peña «El Lebrijano». El hijo de «La Perrata», metido de lleno en una línea evolutiva, no fue el artista grande que conocemos. Su actuación no pasaría de ser discreta, a pesar de los deseos puestos por el de Lebrija; lo vimos con insistencia queriendo coger el cante pero no sería su noche.\n\nPor el contrario, el día 19 si fue la noche de Antonio Núñez «El Chocolate». Fiel a su raíz gitana cantó «El Chocolate» con sabor y sonidos negros. Por el camino de la más pura ortodoxia metió su decir. Su quejío fue duende despierto en la oscuridad del amargo sentimiento. Su compás nos arrebató por bulerías. Por siguiriyas nos hirió en lo más profundo del ser. Antonio Núñez «El Chocolate» gustó, hizo sentir la verdad desnuda de Andalucía, en una palabra: comunicó.\n\nEl último día actuaron Los Montoya. Diríamos que su paso por la Feria de San Lucas dio de sí lo que de antemano se esperaba, un cuadro bien conjuntado con sentido de lo que hacen.\n\nY en los distintos recitales como guitarristas, Pedro Peña, Manuel Domínguez, Pedro Bacán, Paco Cruz y Pepe Moreno. Cinco formas distintas de concebir el toque en actuaciones, a veces más afortunadas y otras no tanto.\n\n¿Qué aires jondos correrán en la feria de San Lucas de 1980? Esperemos que buenos para todos.\n\nJuan Antonio Ibáñez\n\nALMACEN DE MATERIALES PARA LA CONSTRUCCION Y DECORACION\n\nCtra. de Otiñar, 11\n\nTeléfono 23 34 90\n\nJ A E N",
+    "title": "Apuntes flamencos a la Feria de San Lucas",
+    "periodical": "candil",
+    "issue_id": "1979-09",
+    "year": 1979,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-17",
+    "page_number": 15,
+    "word_count": 767,
+    "article_char_count_full": 4355,
+    "article_char_count_review": 4355,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1979-11-3-right-editorial",
+    "article_text_for_review": "Hay quien considera que el flamenco es sólo un fenómeno estético, una expresión humana inteligible por sí misma, sin inviscerarse, necesariamente, en el Sur. A nuestro juicio, quienes establecen tales abstraciones se equivocan, desconocen la auténtica especificidad del cante.\n\nEstamos asistiendo a un proceso de redescubrimiento de la cultura andaluza. Se hace preciso retomar el hilo conductor de su historia; configurar su identidad. Ya es sabido que el feudalismo castellano-leonés liquida hace cuatro siglos la autonomía política de la nacionalidad andaluza. Desde entonces, se produce una ocultación sistemática de la historia real de Andalucía. La alienación cultural, el subdesarrollo, la explotación y emigración hacen que el pueblo andaluz pierda su memoria histórica y olvide que, en otro tiempo, fue el más culto y próspero de Europa. Sin embargo, los sustratos ancentrales de Andalucía, sus elementos primigenios étnico-culturales han seguido existiendo, siguen existiendo y operando. Y es ahí, donde el Flamenco, en los momentos actuales, evidencia su gran predicamento en cuanto manifestación sintomática de una cultura que al Pueblo Andaluz se le ha expropiado; es ahí, donde el Flamenco se nos muestra como vector de un pueblo que, políticamente, fue destruido pero, culturalmente, no. Al menos, en esta parcela de su cultura artística que en reducidos ámbitos ha permanecido esencialmente incólume, pese a los intentos de difuminarla, corromperla, ridiculizarla... ¿Explica esta sencilla reflexión el misterio que siempre ha envuelto al cante en sus orígenes y posterior desarrollo; la magia de su transmisión, el empeño que, en cada época, unos pocos han puesto en la conservación de su pureza?.\n\nLo cierto es, citando a Anselmo Caballero, que si el grado de personalidad de un pueblo se mide por cuanto tiene de original su civilización, su cultura propia, su filosofía genuina, su sabiduría popular y sus manifestaciones artísticas... Andalucía sobresale no sólo entre los pueblos hispánicos, sino entre las nacionalidades del mundo entero.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1979-11",
+    "year": 1979,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 310,
+    "article_char_count_full": 2061,
+    "article_char_count_review": 2061,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

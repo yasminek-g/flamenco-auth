@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_10::A2",
+    "article_text_for_review": "Dear Jaleo: I just recently found out about your magazine and, of course, immediately signed up. I received the first copy yesterday and was delighted to discover that I am not in as small of a minority group as I previously believed. Enclosed is a photo I took at the Don Quixote Restaurant in San Jose on a recent trip. My wife and I spent a delightful evening under the spell of Mariano Córdoba's Esteso guitar as he accompanied the singing and dancing of Pilar Sevilla. MARIANO CORDOBA WITH PILAR SEVILLA Instruction in Cante and Baile Flamenco Personal Costume Design Dear Jaleo: Here is a photo of Denver guitarist, Miguel Espinoza, who broke his hand this summer. Guillermo Salazar Denver, CO Dear Jaleistas: As a classical guitarist, I have always been intrigued by the idea of learning to play flamenco. Much of the reading I have done on the subject has been on the shroud of secrecy that surrounds the ability to learn this ethnic music. It seems (so I have read) that there are those who would like to keep flamenco a secret and would go so far as to teach in a manner that would lead the student further rather than closer to comprehending the concept of compás and interpretation of rhythmic structure. As an individual, I do not find this to be true and, in fact, would like to thank you and your wonderful publication for putting me in contact with some very helpful $ \\underline{\\text{Habladora}} $ organized a group booking and flowers for the first night, and the word went round the flamenco freaks from there. One of us managed all eleven nights (\"I'm skint,\" he says, \"but it was worth it\"). I managed eight, others got there on differing numbers. The people I feel sorry for are those who decided at the beginning that they would go on the last night. But that is their problem. Phil Coram, who is a very quiet person but more in touch with flamenco than many who say more, gave me some photocopies from back numbers of $ \\underline{\\text{Jaleo}} $, and I took the liberty of reproducing one in $ \\underline{\\text{Habladora}} $ because it summed up so well both flamenco and Mario's view of it. I expect that in America you hear the opinion that all is carefully rehearsed in flamenco, even the encores. Did you know that Mario's show changes? At the press conference I raised this, but made the mistake of using the word \"libre,\" whereupon a gentleman, English of course, took it upon himself to explain to me that there was chico and jondo, and so on. Mario, however, later took up my point. If he did not improvise, he said, he would be like a statue and, with due respect to Segovia, his performance would be like a concert. It was wonderful to see, as the season went on, steps you had not seen before. Mario had said, you must have a framework, because a company is involved; inside that you can change. How did they do it? Spend every afternoon rehearsing? In the performances I saw there were three material changes. Maybe others I did not notice. Not only the dancers changed, but the singers too. As for the guitarists, I cannot know. The show itself was an experience that stunned most of us, making us think, yes, this is what flamenco is meant to be. Those pitos in the siguiriya. The martinete. Did the show you saw have that fantastic cana? Perhaps no, as your write-up refers to the soleá. In London, Miguel López emerged as the strong singer. The week before the show, a group of us had been visiting Blanes on the Costa Brava. Last year someone bought a tape of Manuel de Paula there, so we combed the place looking for another, but without Cante Jondo is a cry from the heart of a race suffering from centuries of oppression, and vividly expressed in the songs and dances of Andalucia's gypsies. In recent years, Spain's desire to attract tourists has debased this ancient art into something best described as \"instant duende,\" automatically turned on and off as tourists arrive and depart. Mario Maya's attempt to stop this rot, by forming a group who weave these songs and dances into a musical drama with political overtones, is praiseworthy. For a Spanish audience, in an intimate theatre or club, it's doubtless impressive and moving in the way it reveals how gypsies have been persecuted from the fifteenth century to more recent times. Unfortunately, at Sadler's Wells, where Maya's \"Ay! Jondo\" is playing until Saturday, at least eighty percent of the audience will have difficulty in understanding what it is about. And many will imagine that they have seen -- or partly seen, since the artists are mainly in black against black curtains -- only the first half, when in fact they will have witnessed the whole $ 1\\frac{1}{2} $ hour show. Such obscurity is all the more sad because this group of six -- two dancers, two singers and two guitarists -- are all fine artists. Maya himself is a brilliant technician -- every movement perfectly timed and slickly finished -- as is his partner, Carmen Cortez Perez, who has very expressive arms. When disengaged from the drama, either together or in solos, these two -- in \"Alegrias,\" \"Cañas\" and \"Siguiriyas,\" for example -- cause the whole performance to catch fire and it's very exciting. Dear Jaleo:",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 915,
+    "article_char_count_full": 5196,
+    "article_char_count_review": 5196,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_10::A3",
+    "article_text_for_review": "(from: $ \\underline{\\text{The New York Times}} $, August 23, 1981; sent by John Lucas, William Dvorine, and La Vikinga) by Walter Terry \"Just because a female dancer wears a dress cut so low in the back that it displays what I call 'the parting of the ways,' doesn't make it true flamenco,\" says Carola Goya. The veteran Spanish dancer, who made her debut more than 50 years ago, was responding to a query on why Spanish dance, once so popular in New York, has virtually disappeared from the scene. Miss Goya blames the situation on the over-accenting of flamenco to the neglect of other expressions of Spanish dancing and on the low-grade quality of flamenco as seen today. \"Flamenco needs inner fire,\" she says, \"but what we see now is all outer stuff...flowers stuck into A FINE SELECTION OF GUITARS at the American Institute of Guitar Lovers of the Guitar have the opportunity to select from a great variety of guitars made by the best and most famous luthiers of today. You'll find this selection at ANTONIO DAVID, INC., sales office located at the American Institute of Guitar, 204 West 55th Street, New York, N.Y. 10019. • (212) 757-4412 or (212) 757-3255. La Argentina, in her six United States tours before her untimely death in 1936, was the undisputed queen of Spanish dance. She never danced flamenco and she never performed to guitar accompaniment. Argentinita -- would you believe there was also an Argentinitita! -- was totally different from her illustrious predecessor. To her public, she offered a remarkable panorama of Spanish dance. Not only did she and her company present Spain's classical dances and school dances impeccably, her regional dances went beyond the popular jotas into new (to us) folkloric areas. With La Argentina (born Antonia Mercé) and Argentinita (born Encarnación López) there were the variety of program, the esthetic surprises, the mystery that Miss Goya feels are absent today. Vincente Escudero, in those formative years when Spanish dance was moving from café to cabaret to theaters, concert halls and even opera houses, was the male pioneer. Versatile as well as individualistic, he danced with both La Argentina and the ballet's Anna Pavlová and, as a soloist, invented a mesmerizing dance using only his fingernails and knuckles on the seat of a chair. Rosario and Antonio, cousins, were teen-agers when they made their U.S. debut in 1940. They danced in clubs as well as in concert but although they excelled in flamenco dance, they filled their programs with a wide variety of Spanish dance. Brooklyn-born José Greco, Argentinita's partner for her last season and Pilar López's partner in the late 1940's, founded his own troupe in 1949. In his programs, he continued to explore and exploit the range of Spain's dances as did his mentor, Argentinita, and he achieved a success, thanks to the advent of television, that his predecessors could not have experienced. Big on Broadway, in movies and on TV, the dashing Greco was probably the greatest Spanish dance box-office attraction during the 50's and 60's. But with the sensational success of Carmen Amaya and her dancing relatives -- with her explosive energy, she sent flowers and combs flying and was compared, justifiably, with atomic forces -- the dancing and singing and guitar-playing of the Spanish gypsy, flamenco began to edge out other forms of Spanish dance. Greco commenced to give extra accent to his flamenco section, Roberto Iglesias sent sweat cascading in all directions as he emulated the flamenco over-exuberance of an Amaya. \"Spain has so much more in dance than flamenco, good or bad,\" says Miss Goya. There are too many people who seem to think 'the only true Spanish dancing is flamenco. Nonsense! It is the equivalent of saying that the only true Spaniard is a gypsy! \"Today,\" says Miss Goya, \"you see a jota aragonesa accompanied by the gypsy's guitar, of all things. A bagpipe, yes, but a guitar, never! And as for the 'Oleś', they've become yells for tricks instead of deeply felt, almost murmured, expressions of appreciation for the subtle and expert communication of a quality of movement.\" The answer to the oft-posed question, \"Whatever happened to Spanish dance?\" may be that few of today's dancers are giving the public Spanish dance. Instead, they are offering predictable programs of Spanish gypsy dancing. A decade or so ago, flamenco had the dubious advantage of being the noisiest and most frenetic form of entertainment available. Today's rock music events and accompanying rock dances have left flamenco far behind, drowning it out. The novelty has gone along with the decibels. Perhaps, someday, Spanish dance will make a glorious comeback if we, the audience, will permit it to sing as well as to shout.",
+    "title": "WHATEVER BECAME OF SPANISH DANCE?",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8,9,16",
+    "page_number": 8,
+    "word_count": 789,
+    "article_char_count_full": 4751,
+    "article_char_count_review": 4751,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_10::A4",
+    "article_text_for_review": "ZORONGO FLAMENCO AND 'SOUL MUSIC, GYPSY STYLE' (from: $ \\underline{\\text{Leader-Telegraph}} $, July 4, 1981) by Bruce Helland The Spanish dance group, Zorongo Flamenco, brought soul music gypsy style to the University of Wisconsin-Eau Claire's Gantner Concert Hall Wednesday night. Led by virtuoso dancer Suzanne \"Susana\" Hauser and her husband, guitarist Michael Hauser, both Americans, the group imported a musical form rarely heard live in Wisconsin's dairyland. The program ranged from the music of the classical Spanish masters, Enrique Granados and Manuel de Falla, to the traditional flamenco styles of Spanish festivals and nightclubs. Combining with the Hausers was the powerful dancing of Manolo Rivera and the singing of Dominico Caro. Along with its flashy and authentic style, the group, formed in 1975, carries some impressive credentials. Susana has studied and performed in Spain, including working with the all-gypsy company, La Singla. She has also toured throughout the United States. Michael Hauser has also studied in Spain under the flamenco masters. When not touring, he teaches flamenco guitar at the Guild of Performing Arts in Minneapolis. Rivera has toured throughout the world, and Caro is considered one of the few masters of flamenco singing in the United States. Precision was the dominant theme of the evening -- from the perfect unison of the castanets in the opening classical dances to the more loose but equally precise improvisation of the traditional dances that closed the show. Both Susana and Rivera avoided the exaggerated stiffness and melodrama that seems to be the caricature of flamenco from old late show movies. Both exhibited a controlled grace that was perhaps most evident in segments of soft but very rapid foot taps. The strength of Rivera's dancing was particularly impressive, at times raising clouds of dust from the Gantner stage that likely had been gathering there for years. His last solo was a dramatic soleares danced in a tight white suit -- Saturday Night Fever, Spanish style. Rivera is a good argument against those who would put any type of male classical dancers on the lower rungs of the ladder of masculinity. Michael Hauser's guitar work was showcased in a Cuban-flavor solo that was more in the classical form than straight flamenco. But here and elsewhere he produced the fast but clear melodic runs that are the hallmark of good flamenco fingers. Unlike some guitarists, he never opted for mere technical flash when the musical context didn't demand it. His tremolo, the fast repetitive notes on one string, one of the more familiar elements of flamenco, were clear and distinct, and sometimes played at a relatively slow tempo, requiring great finger control. The singer, Caro, showed strength and control over his entire vocal range, never pinching the higher notes. He gave none of the shrill wailing that seems to be characteristic of at least some recorded flamenco singers. The use of a hammer and anvil as the only accompaniment at one point was unusual but surprisingly effective. The eerie sound conjured up just what, according to the program notes, the gypsies intended. When their wandering lifestyle was outlawed, many gypsies adopted the trade of blacksmithing. They sang out their frustration to the rhythm of the pounding hammer. According to legend, it was a gypsy who forged the nails for Christ's crucifixion, dooming the race to forever wander. Particularly in the hammer and anvil segment, it seemed as if the performers were simply taking the music out of the air with whatever medium was convenient -- be it guitar, singing, clapping or hammer and anvil. A barrier to any flamenco concert that must be overcome is the formal atmosphere of the concert hall. Traditional flamenco was born in the gypsy bars and nightclubs, not the staid atmosphere of a Gantner Hall. Susana and company overcame the barrier as well as could be expected. Several Spanish speaking members of the audience helped by yelling encouraging words. A festival air was most evident in the closing numbers, particularly due to the addition of dancers Valerie Knode -- La Amapola -- and Joann Weber -- La Mariposa. The concert effectively combined flamenco's three essential elements: guitar, voice and dance. It is a mark of the group's stature that no one of the three elements over-shadowed the others. They alternately took appropriate supporting and starring roles. *** Zorongo Flamenco (from: Minnesota' Daily, 1981) by Caroline Hall Otis Flamenco dancer and guitarist Susana and Michael Hauser and their Zorongo Flamenco company have been performing regularly on area stages for years, but their Sunday night Guthrie debut was a stunning surprise for me. Susana, with guest artist Manolo Rivera, takes the traditional gypsy dance form to new choreographic heights. She was the dramatic centerpiece of \"La Fragua,\" a three-part work set in a murky church-like atmosphere with altar candles and incense, village maidens, musicians, and two wailing flamenco singers. Her gut-wrenchingly passionate yet thoroughly controlled performance turned what could have been melodrama into a hypnotic and moving experience for the rapt audience. Susana's got it all—the proudly arched back, long swirling hair, gracefully circling hands, percussive heels, precise isolations of hip and shoulder, and saucy head gestures—and then some. \"La Fragua\" was a knock-out. And so was the rest of the show. Rivera was forceful and charming, tapping and clapping syncopated rhythms with bullfighter bravura, flauntingly sensual while partnering Susana. Mezzo soprano Cynthia Munzer delivered seven traditional Spanish songs nicely, and guitarists Michael and Anthony Hauser and singers \"La Cordobesa\" and Dominico Caro shone, both as soloists and as accompanists for the dancers. A splendid evening, all in all, climaxed by a well-deserved standing ovation. Ole. $10.00-4 issues",
+    "title": "ZORONGO FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10-11",
+    "page_number": 10,
+    "word_count": 935,
+    "article_char_count_full": 5926,
+    "article_char_count_review": 5926,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_10::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTREBUJENA: THE FIRST FESTIVAL OF THE YEAR (photos by Mario) TERREMOTO DE JEREZ FESTIVALES 1981 TREBUJENA (from: ABC, Jan.22, 1981; sent by Gordon Booth; translated by Paco Sevilla) by Miguel Acal It is well-known that each year the organization of festivals gets an earlier start. Each season the number of celebrations increases and the promoters have to be prepared if they are to make contracts with calmness. As a consequence, given the number, the dates are becoming spread over a longer period. No longer is it only the months of July and August. June and September now present a confusing number of these competitions. But we never thought that one would be offered in January. The organizers must have thought that, in this manner, they would have no problem with competition. And I suppose\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"rival\"]\n\nnd September now present a confusing number of these competitions. But we never thought that one would be offered in January. The organizers must have thought that, in this manner, they would have no problem with competition. And I suppose they will be correct, for sure, in spite of the fact that we have heard vague news of another festival in the same month in Castro del Río -- although they are sufficient days apart that they will not create a rivalry in contracting artists. There are already festivals covering practically all the weekends in July and August. Naturally, the star figures will be kept busy. But now it will be much easier for those who have not yet broken into the top ranks of popularity to find work. Those in the second file...are almost assured of being able to find summer work. How good that is, without a doubt, because they also have their hearts and their needs. The festival in Trebujena is called \"The First Festival of the 'Mosto' (fresh squeezed grapejuice).\" That district of Cádiz produces a wine of excellent quality and its \"mosto\" has a deserved fame. With this festival it is hoped that this product will increase its popularity and prestige, which shows that flamenco can serve as something more than pleasure for a few and sustenance for even fewer. This was a good idea by the pena flamenca \"La Trilla\" with the sponsorship of the local government. The program includes the following: Lebrijano, Naranjito de Triana, El Cabrero, Terremoto de Jeréz, Juanita Villar, Manuel de Mariana, El Distinguido, José Joaquín, Niño de Pura, Pedro Bacán, and Pedro Peña. The \"XXI Festival Nacional de Cante de las Minas\" was held on Aug. 17th in La Union, Murcia. Antonio Ferrer López \"El Camionero\" won the first prize of 100,000 pesetas ($1,000) and the trophy, \"Lámpara Minera\" with his mineras, a repeat of the same cante por mineras and the same result he had in 1969; in other editions he has won prizes in almost all categories.\n\n[ENDING CONTEXT]\n\ntrend REGULAR §10 SET — SPECIAL 2 SETS §10 LESTER DeVOE - GUTARMAKER 2436 Renfield Way, San Jose, CA 95148 Enclosed is my check or money order payable to Lester D'Voe Send ___ sets (FSB) ___ sets (FSW) ___ sets plus 8.50 each set post-childg. California residents add 6.5% sales tax -- cantes of El Nitri, Cagancho, and Frasco el Colorado, with the temple of José de Paula; it was a mixture that did not come out very well for him. Por bulerías -- magnificent... MANOLO SANLUCAR FESTIVAL IN GINES (photos by Madueño and Paco Sánchez) CURRILLO DE BORMUJOS (LEFT) NANO DE JEREZ WITH PEDRO PEÑA (RIGHT)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FESTIVALES 1981",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12-17",
+    "page_number": 12,
+    "word_count": 1586,
+    "article_char_count_full": 9164,
+    "article_char_count_review": 3594,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "rival"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1981_10::A6",
+    "article_text_for_review": "After submitting the first article on \"Guitar Olympics,\" Paco Sevilla suggested a follow-up -- one that would include other guitarists for comparison. In addition, \"How about a little Carmen Amaya and Lucero Tena,\" Paco added. Well I was game, and with the encouraging feedback from a number of Jaleo readers, the race was on. I looked at a bookcase full of unsuspecting victims to be the contestants and began the arduous task of not only selecting the players, but the album that would best represent them. The whole thing was risky at best. Well, there were some surprises, as one might expect from the Olympics. Now keep in mind that in the last article we had Paco de Lucía clocked at 16.09 notes/second on the \"Friday Night in San Francisco\" album. I first pulled out several Sabicas albums and decided on \"El Rey del Flamenco.\" He was really sharp on that one and, besides, I hadn't listened to it in a long time. I selected the soleares and a typical Sabicas run. EXAMPL 1 (Sabicas) The picado was not that clean. Serranito seemed like a logical contestant in this elite group of players. I chose a bulería passage from the aptly entitled \"Virtuosismo\" album. Again this is near the end. by Peter Baime My next choice was Manolo Sanlúcar. I had some difficulty in choosing the right album and piece. I settled on \"Sentimiento,\" a guajira. He had been playing that piece for many years and really had it down. Much cleaner than on his earlier recording of it on the old Volume I recording \"Mundo y Formas de la Guitarra Flamenca.\" He has a lot of fast picado in almost any selection though. I chose a passage at the end, where one wouldn't need to recover back into compás. 20 notes in 1.65 seconds translates to 12.12 notes/second. plays triplets in an already fast tempo. I tried to keep in mind his unusual picado pattern of a, m, i,. The example is in A phrygian. Surprise! 28 notes in 2 seconds. That figure is out to an even 14 notes/second. He plays this different passage with excellent clarity, with the exception of a few notes near the end which I filled in. That put him in first place in this second heat. I wanted another just to fill out the field a little better, and after much deliberation chose Miguel Vega \"Niño Miguel.\" I knew there were many fast picados on both of his LPs. I picked a bulerías in A minor from \"Diferente\" and located a little lightning picado. Although it is an easy passage, it did indeed surpass Serranito, but lacked his clarity. An admirable 14.81 notes/second. Just for its own sake, I thought I would check out Paco de Lucía's latest, \"Solo Quiero Caminar.\" First, I tried a short little picado in the first bulerías that appears on the album.",
+    "title": "OLYMPICS III",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 484,
+    "article_char_count_full": 2696,
+    "article_char_count_review": 2696,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

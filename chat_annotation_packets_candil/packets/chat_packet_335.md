@@ -1,0 +1,179 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-05-14-left-fernando-fern-ndez-pantoja",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nFotografías: José Pamos Ellos, los protagonistas, dicen...\n\nRafael Valera Espinosa\n\nTiene el físico de su padre y también las hechuras, mas le falta esa mirada fija y a la vez ausente que en muchas ocasiones apreciamos en su progenitor. Y es que la rama de los Pantoja también anida en sus genes. Posee muy claras resonancias tonales de su antecesor y a veces emite ese quejumbroso latigazo que nos recorría el cuerpo cuando lo emitía \"Terremoto de Jerez\". Mantiene las ideas claras y es consciente de lo que supone llevar el apelativo artístico de \"Terremoto\". Desarrolla una lucha interna por intentar mantener su personalidad en el flamenco, pero su amor filial a veces inclina la balanza. Y es que le ha tocado un papel muy difícil, pues ser cantaor e hijo de Terremoto, conlleva no pocas\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"convivenc\"]\n\nso latigazo que nos recorría el cuerpo cuando lo emitía \"Terremoto de Jerez\". Mantiene las ideas claras y es consciente de lo que supone llevar el apelativo artístico de \"Terremoto\". Desarrolla una lucha interna por intentar mantener su personalidad en el flamenco, pero su amor filial a veces inclina la balanza. Y es que le ha tocado un papel muy difícil, pues ser cantaor e hijo de Terremoto, conlleva no pocas dificultades. —A tus pocos años de convivencia con tu padre, illegaste a valorar lo que artísticamente significaba él en el flamenco? —Algo se valora pero sin mucho fundamento. Hay que tener presente que cuando mi padre muere yo tenía doce años, y a esa edad no tienes mucha consciencia de lo que significa. -¿Qué referencias cantaoras te han llegado de él? —Muchas, y todas buenas. Todo el mundo me habla bien de él. Y cosa curiosa: a cada sitio que llego, siempre hay alguien que me dice: \"Yo era el mejor amigo de tu padre\"... Con esto está to dicho. Y es que era una persona que tenía algo especial, que atraía a la gente. -¿Qué piensas tú que has heredado de tu padre? Por eso la herencia de mi padre ha sido total. —Yo creo que lo he heredado too. El físico, la voz... Aunque yo ponga mi personalidad cantaora, indudablemente me tengo que parecer a él, aunque no lo quiera ni lo pretenda. —¿Has recibido presiones para que imites a tu padre? —¡No! A quien lo intente lo maldigo. Lo primero que es una tontenría pretender imitar a mi padre, porque parecerse a mi padre es imposible. Aunque quieras imitarlo, no puedes. Yo puedo asemejarme y parecerme un poco, porque indudablemente la genética es así y por eso me a\n\n[ENDING CONTEXT]\n\nlas músicas. Soy el enemigo número uno de esas músicas que se meten en el flamenco. El flamenco es sólo cante, guitarra y palmas. ¡Se acabó! Esos intérpretes que hacen ese tipo de música le han perdido el respeto al flamenco.\n\n-¿En qué cante te sientes más agusto?\n\n—Me encuentro muy bien cantando por siguirias, por soleá..., y en un cante que no es de Jerez: la malagueña. Es un estilo que yo he empezado a dominar y me encanta hacerlo. Además, creo que el premio de la Bienal tuvo mucho que ver por mi interpretación de la malagueña, a parte de las siguirias y bulerías que también canté.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Fernando Fernández Pantoja, “Terremoto Hijo”",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 1596,
+    "article_char_count_full": 9035,
+    "article_char_count_review": 3251,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "convivenc"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-16-left-un-cantaor-en-el-olvido",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDaniel Pineda Novo\n\nLa gran historia del Flamenco está llena de anónimos artistas que, modestamente, contribuyeron a ella, conservando y transmitiendo cantes, escuelas y estilos. Tal es el caso de Luis Márquez Alés, popularmente conocido por \"El Quija\" que, aunque nacido en Sanlúcar de Barrameda, se crió en Triana y en Coria del Río y aquí se hizo en el mundo flamenco, pues hasta el mismísimo D. Antonio Mairena venía a Coria a escucharlo, así como Pepe Marchena o Juanito Valderrama, como ya expuse en mi libro. $ ^{1} $ Así lo evoca Antonio Murciano: \"Luis \"El Quija\", aquel cantaor caramelero —como Macandé o Pericón—, sanluqueño de pro, recriado en Coria del Río, tan heredero de los viejos aires de La Frascola, como de Los Pelao y Los Cagancho, de Triana, y de quien nos contaba y no\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombre\"]\n\nvenía a Coria a escucharlo, así como Pepe Marchena o Juanito Valderrama, como ya expuse en mi libro. $ ^{1} $ Así lo evoca Antonio Murciano: \"Luis \"El Quija\", aquel cantaor caramelero —como Macandé o Pericón—, sanluqueño de pro, recriado en Coria del Río, tan heredero de los viejos aires de La Frascola, como de Los Pelao y Los Cagancho, de Triana, y de quien nos contaba y no acababa, su paisano Ramón Medrano, El de la Carne...\" $ ^{2} $, fue un hombre que, dentro de su incultura, le dio calidad al cante flamenco. Vamos a descubrir su biografía humana y personal —como nos dice el amigo Servando Repetto—; y vamos a indagar en su cante, alegre y hondo al propio tiempo.... Luis Márquez Alés nació el día 29 de noviembre de 1892, en la calle Sevilla, número 13, a las 6 de la noche, en la marinera y vendimiadora Sanlúcar de Barrameda. Está inscrito en el Registro Civil sanluqueño como Antonio Márquez, $ ^{3} $\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_04 | trigger=\"nuevos\"]\n\nernos: Juan y Francisca, y maternos: Antonio y Rocío. Padrinos: Luis Dorado Josué y Josefa Márquez Palomo, a quien advertí el parentesco espiritual y obligaciones que contrajeron. Testigos: Don Manuel Asencio y Don José Avila. En fe de lo cual lo firmo, fecha ut supra. Antonio Ramos Maceas (firmado y rubricado). $ ^{4} $ Siendo aún muy niño, su padre, Juan Márquez, carpintero, se trasladó con la familia al alfarero barrio de Triana, en busca de nuevos horizontes económicos, trabajando como lavador de ladrillos en los Tejares. Con él trabajaron sus hijos mayores. Uno de ellos, aficionado a los toros, con ansias de triunfar en La Pero una acertada descripción, un original retrato de \"El Quija\" nos dejó el buen amigo coriano, corresponsal del Diario ABC, Carlos Lobato, que tan directamente le conoció: \"No era de talla elevada, tendría, aproximadamente, 1'60 metros de estatura, y su peso rondaría los 60 kilos. Muy limpio, chaqueta de un blanco purísimo, pantalón negro y unas alpargatas muy blancas, cuando se bajaba todas las tardes del tranvía, que le traía desde Triana, portaba del brazo un canasto de mimbre repleto de pasteles. Con él recorría las calles corianas, alegrándolas con su característico pregón: \"¡Al hojaldre! ¡Al rico hojaldre! ¡Al rico pitisú!\", pregón que alertaba a toda la chiquillería para dar pronto fin a tan ricos manjares. Era amable y dicharachero y no era extraño, mientras nos acercá- Maestranza, se escapó más de una vez de casa, acompañado de Luis, yendo por cortijos y cerraos con la intención de torear, a campo vivo, alguna que otra vaquilla, hasta que un mal día —nos lo refiere Servando—, tuvo la desgracia de sufrir varias cornadas que le llevaron a la muerte, como a muchos maletillas de aquella época... Esta tragedia pudo, tal vez, quitarle a Luis las ansias de ser torero, aunque no su inmensa afición. Esa pasión por el difícil m\n\n[ENDING CONTEXT]\n\nasombrosa”.¹⁸\n\nLuis Márquez Alés “El Quijja”, profundo, intenso aficionado, vivió por y para el Flamenco; transmisor de una serie de viejos cantes que se han salvado por él... Hombre sencillo y humilde, sobrio y feliz en su pobreza, yo le recuerdo, de niño, en la consulta de mi padre, el Dr. D. Angel Pineda de la Carrera, que humana y médicamente le atendió en diversas ocasiones. Hoy, le rendimos homenaje, recordando aquellos momentos en los que, a pesar de la prohibición paterna, le comprábamos las sabrosas sultanas que, con flamenco son, pregonaba por las calles de Coria del Río.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Luis “El Quija”: Un cantaor en el olvido",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-18",
+    "page_number": 16,
+    "word_count": 3486,
+    "article_char_count_full": 20268,
+    "article_char_count_review": 4478,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombre"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "nuevos"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-19-left-el-nov-simo-cancionero-er-tico-s",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAmelina Correa Ramón\n\nJuan Manuel Villén, escritor giennense nacido con toda probabilidad en el primer tercio del siglo XIX y emigrado con posterioridad a La Habana (Cuba), desde donde cantaría en sus poemas su añorada ciudad natal, se encuentra domiciliado en Sevilla en 1887 cuando publica un curioso libro de pequeño formato titulado Novísimo cancionero erótico, sentimental y flamenco¹, muy en la línea de recuperación de lo popular iniciada por el arte y la literatura romántica, corriente que perduró al menos hasta los primeros años del siglo XX como síntoma de la profunda crisis espiritual que atravessaba la cultura europea.\n\nAsí, frente a una sociedad industrializada, donde prevalecen los valores materialistas y burgueses, el poeta vuelve su vista hacia manifestaciones artísticas que\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_02 | trigger=\"pureza\"]\n\n, sentimental y flamenco¹, muy en la línea de recuperación de lo popular iniciada por el arte y la literatura romántica, corriente que perduró al menos hasta los primeros años del siglo XX como síntoma de la profunda crisis espiritual que atravessaba la cultura europea. Así, frente a una sociedad industrializada, donde prevalecen los valores materialistas y burgueses, el poeta vuelve su vista hacia manifestaciones artísticas que contienen en su pureza la esencia del pueblo. En el caso del pueblo andaluz, la muestra más clara de su arte primitivo y original no es otra que el flamenco. Para introducir la figura de cualquier escritor olvidado resulta necesario acudir a sus textos, máxime, cuando apenas se conocen datos biográficos suyos al haber pasado inadvertido para estudiosos y bibliógrafos. Unicamente Alfonso Sancho Sáez y M.ª Isabel Sancho Rodríguez dan noticia de su existencia en su antología Poesía giennense del XIX², haciendo mención a varios poemas que Villén publicó en la revista Album Literario de El Industrial, uno de los cuales reproducen. En este poema, un romance titulado “Un recuerdo a mi patria”, Juan Manuel Villén evoca su añorada Jaén desde la distancia de la ciudad de La Habana: salve, Jaén, que custodias el Santo Rostro Divino, transunto fiel, verdadero de la faz de Jesucristo. $ ^{3} $ Salve, Jaén, que a la falda de ese formidable risco te estiendes [sic], cual gargantilla de perlas y de zafí\n\n[ENDING CONTEXT]\n\nvinculación con el flamenco a nivel temático, léxico, fonético y métrico, ejerció en la literatura española de finales del siglo XIX y comienzos del XX.\n\nA mi quibilera. $ ^{23} $\n\n22) Ibídem, p. 77. Remitiédonos al glosario de términos gitanos que consigna Juan Manuel Villén, el significado de las palabras empleadas en esta estrofa sería: angelo, “deseo”; oruna rachí, “noche oscura”; burdá, “puerta”; y goli, “voz”. 23) Ibídem, p. 78. En cuanto al significado del léxico empleado, según Villén: calorré, “solo”; mulani, “triste”; nicambó, “quitó”; murcias, “brazos”; y quibilera, “compañera”.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "“El Novísimo cancionero erótico, sentimental y flamenco” de Juan Manuel Villén",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-21",
+    "page_number": 19,
+    "word_count": 2332,
+    "article_char_count_full": 14021,
+    "article_char_count_review": 3059,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_02",
+        "family": "AUTH",
+        "trigger": "pureza"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-05-21-right-martinetes-y-ton-s",
+    "article_text_for_review": "Martinetes y Tonás\n\nUn día me condenaron porque dije la verdad y en la cárcel me encerraron \"pa\" que yo no hablara más.\n\nCon el yunque y el martillo no paró de machacar “pa” alimentar a mis niños y que no les falte “na”.\n\nEl martillo que has “traío” no lo puedo levantar, esta noche no he “dormío”; ni me he “llegao” a acostar.\n\nTampoco quiero la fragua porque da mucho calor; el botijo está sin agua y así no trabajo yo.\n\nNació en la herrería en una cuna de esparto, y la pobre \"mare\" mía se murió después del parto.\n\nEl alma la tengo negra y el corazón ya me falta, y al pobretico mi \"pare\" lo entierran por la mañana. Sólo me \"quean\" tres cosas: la fragua, yunque y martillo; es la herencia que yo dejo \"pa\" que coman mis chiquillos\n\nY esto que yo digo si no fuera verdad que yo pierda los amigos “pa” toda la “eternía”.\n\nAntonio Vallejo Muñoz",
+    "title": "Martinetes y Tonás (Letras flamencas)",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-21",
+    "page_number": 21,
+    "word_count": 164,
+    "article_char_count_full": 846,
+    "article_char_count_review": 846,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-05-22-left-guitarra",
+    "article_text_for_review": "Guitarra\n\nPozo vacío. Pozo sin agua donde la pena se esconde. Donde el dolor se desangra, con seis cuerdas -que templadas arrojan sonidos negros del fondo de sus entrañas. Guitarra; estuche alegre como sonaja. Jilgüero, que al ser de día jovial en su rama canta su copla de primavera con notas entrelazadas, que con dejos de alegría, se espan de su garganta Guitarra; refugio de los pesares, caja de donaire y gracia, y cofre de sentimientos, que entre risas y lamentos lo mismo llora que canta. Fernando Lastra Sánchez",
+    "title": "Guitarra (Poema)",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 89,
+    "article_char_count_full": 519,
+    "article_char_count_review": 519,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

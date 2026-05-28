@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1979_05::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby D.E. Pohren There exists a solid nucleus of people, mostly non-Spaniards, who are opposed to bullfighting on the grounds that it is a one-sided, unfair contest always won by man. In fact, some of this group feel so strongly about this that they have been heard to utter witticisms such as \"I'll begin going to bullfights when the bull starts winning!\" Well, REJOICE, practitioners of fair play in the Fiesta, there is a gleam of light at the end of that long black corridor of cruelty to bulls. You see, there is a whole series of festivities in Spain in which the bull does come out on top. The trick is to avoid the formal bullfights and attend the \"running-of-the-bulls\" events held annually in dozens of towns throughout Spain. In these festivities the bull is truly king. My torn and\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"body\"]\n\ng!\" Well, REJOICE, practitioners of fair play in the Fiesta, there is a gleam of light at the end of that long black corridor of cruelty to bulls. You see, there is a whole series of festivities in Spain in which the bull does come out on top. The trick is to avoid the formal bullfights and attend the \"running-of-the-bulls\" events held annually in dozens of towns throughout Spain. In these festivities the bull is truly king. My torn and trampled body can testify to that. But before recounting the gory details, let me digress a moment. No doubt you all know that bull worship has been prevalent in Spain for centuries, just as it was previously in other Mediterranean and Near Eastern cultures (Persia, Minoan, Roman, to name a few) as well as in prehistoric times (judging by the Paleolithic bull paintings in caves in northern Spain, southern France and elsewhere). The bull, in fact, was probably Spain's original Don Juanian macho, upon which so many Spanish men have tried hard to pattern themselves. When the bull wanted a female, he took her, no questions asked. When he desired several, he had them. Who would have dreamed of protesting! Due to this virility and to his prowess as a fighter, bull cults sprang up wherever bulls were found. All of today's bull rituals, including the bullfights and the running-of-the-bulls, are direct descendants of this wor\n\n[ENDING CONTEXT]\n\nwhich puzzled me a bit. And perhaps he noticed, for one day he looked at me intently. \"I may be white,\" he said, \"but my heart is black.\" Two years later I came back to Spain and headed for Granada to find Pepe. I did, but things had changed for the worse. Torrential rains had crumbled many of the habitable caves, and while the showplace caves were open for business most of the Gypsies had been relocated to flimsy, tin-roofed, windowless quonset huts beneath the Sacromonte. I can't imagine what they were like in the winter cold, but in summer the roof functioned as a broiler. It was hot.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "HARKEN, BULL LOVERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14, 15, 16, 17",
+    "page_number": 14,
+    "word_count": 1182,
+    "article_char_count_full": 6705,
+    "article_char_count_review": 2984,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "body"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_05::A10",
+    "article_text_for_review": "from Brook Zern SIGUIRIYAS - GRANADA 1961 SIGUIRIYAS BY PEPE TRANCA - DIEGO DEL GASTOR 1971 Granted, the martinete is never accompanied. If it was, Pepe told me, it might go like this. (The rhythm is siguiriyas - the rhythm to which Antonio danced martinete) BULERIAS - GRANADA 1963 (Editor's note: In order to avoid clutter, we have eliminated the compás counts that were in the original copy. The siguiriya is written in alternating measures of 3/4 and 6/8 time; that gives you the alternating three fast counts and two slow counts. In some spots we have put the compas count in ( ) under the music.)",
+    "title": "FALSETAS OF PEPE TRANCA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19, 20",
+    "page_number": 19,
+    "word_count": 107,
+    "article_char_count_full": 602,
+    "article_char_count_review": 602,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_05::A9",
+    "article_text_for_review": "• • • NEWS OF OUR JALEISTAS Rosala (from San Diego) is working with a flamenco group in Santander in the north of Spain. The other dancer is Angel Valverde, formerly with Antonio Gades, and the singer is \"El Fati\" from Málaga. There are two guitarists: Ramon Fernández, who owns a music store, and a gypsy named \"Cookie\" whose sister-in-law is \"La Chana;\" Rosala says that she has become well acquainted with \"La Chana\" who is supposedly taking a company to Buenos Aires, Argentina, for four months. Flamenco Dance Classes JUANA DE ALVA NOW OPENING NEW CLASSES IN NORTH COUNTY FOR INF. CALL: 436-3913",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20",
+    "page_number": 20,
+    "word_count": 104,
+    "article_char_count_full": 600,
+    "article_char_count_review": 600,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_05::A11",
+    "article_text_for_review": "By Paco Sevilla Here are some books that should be of interest to flamenco aficionados: LAS CONFESIONES DE ANTONIO MAIRENA by Alberto García Ulecia; published by the Secretariado de Publicaciones, Universidad de Sevilla, 1976. The book is number 53 in the series \"Colección de Bolsillo\". Carol Whitney reports on this book in her letter to Jaleo (March 1979, pg. 3) and recommends it highly. It might be a little tricky to get ahold of, but for those willing to try, the price is 175 pesetas and? for postage and handling. THE GYPSIES OF SPAIN by Jan Yoors, is essentially a book of photographs by Andre A. Lopez. Macmillan Publishing Co. Inc., N.Y., 1974. There is not a lot of flamenco in this book, but it is an interesting view of Spanish gyspies in general. THE SPANISH GUITAR by Gerald J. Bakus, Gothic Press, Los Angeles, 1977. 230 pp. $7.95 in paperback. This book, which I have been trying to track down for a year, was reviewed in the latest Newsletter of the Gypsy Lore Society, North American Chapter, by Bertha Quintana. It deals with the general history, construction, care and playing of the Spanish guitar as so many books have done, but it also goes at depth into flamenco and gypsies. There is extensive material dealing with Los Angeles' Heredia family, including a number of photographs. EL ARTE DEL BAILE FLAMENCO by Alfonso Puig Claramont with Flora Albaicín, Ediciones Poligrapha S.A., Balmes 54, Barcelona 7, Spain, 1976. 325 pp. $20 (originally $60). This is the book, possibly the finest book on dance that has been published. It was brought to my attention by María Solea and I was only able to briefly look at her copy. I am still waiting for my copy to arrive but was unable to wait to inform Jaleo's readers. It is basically a book of photographs, but there is a fair amount of text and, if it matches the pictures, it will be extremely interesting and worthwhile (included is an extensive section dealing with technique: arm and hand movements, palmas with exercises, shawl movement, turns, etc.). The photos alone are worth the original price of $60. Everyone is there! Have you ever wondered what Salud Rodríguez looked like? There is not one picture of her, but at least two! El Estampio, La Macarrona, La Quica -- all the old timers are there. Do you like Carmen Amaya or Vicente Escudero? You don't get a picture of them... you get several pages of excellent pictures. Are you curious about La Singla? There she is. It is like the photo section in Don Pohren's Lives and Legends of Flamenco expanded to more than 200 pages with every photo large and perfectly reproduced on high quality paper. And photos are not all; are you tired of seeing the painting \"El Jaleo\" as the representative of flamenco in art? There is a collection of paintings in the book that I never imagined existed -- beautiful pictures, and postcards and cartels (posters) from shows in the old days and on and on... Part of the reason for the large size of the book is the fact that the text is printed in four languages. (Spanish, English, French and German) This is probably very wise, as it makes the book salable and valuable on a worldwide scale) So, don't eat for a week if you have to, in order to save the 20 bucks for the book. Imagine having this book to refer to when reading $ \\underline{\\text{Jaleo}} $ so that artists can come to life for you! I don't know how long the following offer will be available, but it is worth a try. Write to: Publisher's Central Bureau, 1 Champion Ave., Avenel, New Jersey 07131. Ask for \"El Arte del Baile Flamenco\" item no. 2834X. Send $19.95 plus $1.95 mailing costs.",
+    "title": "SOME BOOKS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21, 22",
+    "page_number": 21,
+    "word_count": 642,
+    "article_char_count_full": 3621,
+    "article_char_count_review": 3621,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_05::A12",
+    "article_text_for_review": "by Paco Sevilla EL CANTE - PART II CANTINEARSE - to sing in a low voice or to oneself. ESPARRABARSE - to lose or go out of compás (from Caló) ESTRIBILLO - \"remates\" or tacked-on endings for certain, usually festive, cantes such as alegrías, fandangos, and tangos; sometimes, called \"juguetillos\". FARFULLEOS (LOS) - sounds used in place of words in the cante to feel out the compas and tones; examples are tirititran, tran, tran, or leelele...etc. MACHO (EL) - a personal ending or \"remate\" which is tacked on to the end of the cante. QUEJÍO (EL) - passages of \"Ay\"; can be used as a \"temple\" (salida), as part of the song, or as a \"remate\". REMATE (EL) - the closing of a cante by switching to a different, but related, cante, such as closing a solea with a change to the tones of alegrias or to a bulerías. TERCIO (EL) - a single line or phrase of song; this usually coincides with the poetic line (verso) of the verse (copla or letra) but need not do so. VERSO (EL) - a literary term referring to a single line of poetry. VOZ (LA) - voice; there are certain terms commonly used in describing voice quality: \"voz rajá\" is the very hoarse and rough voice common to gypsy cantaores and considered ideal for the cante jondo; \"voz afillá\" is similar to \"rajá\" and was derived from Diego El Fillo, a singer who had this type of voice (the term \"rajo\" is also heard in this context); \"voz natural\" and \"redonda\" are more natural and clear singing voices and more suited to singing the non-gypsy cantes, although there are many excellent cantaores with this type of voice (usually they can call forth a little \"rajo\" when needed); \"voz bonita is a negative term among flamencos and refers to the very sweet, operative type voices more common among the popular pseudo-flamenco singers in Spain.",
+    "title": "FLAMENCO TALK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 321,
+    "article_char_count_full": 1788,
+    "article_char_count_review": 1788,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

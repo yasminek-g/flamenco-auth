@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_02::A5",
+    "article_text_for_review": "(from: Time Out, May 1979) Paco Peña, one of the most highly regarded practitioners of flamenco guitar, performs with a little help from his friends on the South Bank this weekend. Jan Murray talked to him about doing right by the gypsy tradition. \"Flamenco isn't just a musical form, it's a whole culture, an expression of the basic emotions of a deprived people. You find gyp-sies all over Europe, but it was only in Andalucía that they created flamenco, because of their interaction with Jews and Arabs. In that sense, flamenco is also a geographical phenomenon.\"",
+    "title": "THE VIRTUOSO AND THE GYPSY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 96,
+    "article_char_count_full": 566,
+    "article_char_count_review": 566,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A6",
+    "article_text_for_review": "(from: $ \\underline{\\text{Sunday}} $ $ \\underline{\\text{Telegraph}} $, London, Summer 1979) It seemed that the only English word Loli Flores knew was \"wicky\". She needs \"wicky\", she said, before flinging herself into a flamenco dance. Ah....whiskey. She provides the full-blooded, raw, emotional element in Paco Peña's flamenco troupe, which has been stamping and thrumming round Britain for the past two months and begins two weeks at London's Sadler's Wells Theatre tomorrow. \"I had one cool, classic, refined dancer,\" explained Paco. \"I also needed someone different, someone earlier and not refined. So I picked Loli.\" At this the dramatic Loli from Seville stretched her long sunburnt arms approvingly. She then let it be known through the medium of a translator that \"when Paco plays a bad rhythm I feel like punching him on the nose.\" She can certainly look fierce when drawing up her vivid eyebrows and stamping her formidable foot. She recently had a daughter, we were told. So, Loli left a husband behind in Seville? \"Husband? No, no husband. Not Loli.\"",
+    "title": "PACO PENA & LOLI FLORES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17",
+    "page_number": 17,
+    "word_count": 171,
+    "article_char_count_full": 1063,
+    "article_char_count_review": 1063,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A7",
+    "article_text_for_review": "By Ray Mitchell (from:\"Foundations of Flamenco,\" a regular feature of $ \\underline{\\text{Guitar Magazine}} $; we don't normally reprint material from this magazine, but hope Ray won't mind this once; sent by Phil Coram) Paco's company, which this year includes El Sordera the highly acclaimed singer from Jerez, and dancer Loli Flores began their tour with a week at Sadlers Wells. I gather that some of the London aficionados were so enamoured of the show that they saw it three or four times, proving that there is a demand for works of this quality. Naturally enough, the music is a particularly strong feature of the Paco Peña flamenco company, his new arrangements for three guitars were very succussful. Paco's supporting guitarists are \"Willie\" Basilico, a popular London figure, who was until recently to be seen at the \"Chandos\" and Fernando Carranza, whom Paco has known and admired since boyhood. The star dancers Margarita and Faiquillo de Córdoba have been with Paco's company since its inception and Margarita in particular never fails to delight me, both with her dancing, and this time, singing. Finally, one must not forget to mention the very necessary and polished palmas and singing of Antonio Sevilla and Francisco Vega.",
+    "title": "PACO PENA AND HIS COMPANY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 202,
+    "article_char_count_full": 1241,
+    "article_char_count_review": 1241,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A8",
+    "article_text_for_review": "By Mariquita Flores I have always been amazed by the fact that dancers will exert great effort in perfecting the physical elements of their chosen medium while often ignoring (or at least paying minimal attention to) some of the vital staging elements necessary to convey their artistic message to the audience. Just think for a moment,...the prime objective of your artistic effort as a dancer is to create in the mind of your audience a visual image embodied in strong emotional overtones based on interpretation, characterization, and personification of the accompanying musical score. But, what if your audience can't see you perform? To what avail have been the many hours of practice in perfecting movements and lines? What message would they carry to the audience then? I use total audience blindness only to add impact to the point I am making. Since I haven't met a dancer (or any performing artist for that matter) who doesn't seem to understand the importance of selecting costume and make-up colors that best suit their own image and the image they intend to portray, I assume that most dancers instinctively know that they \"dance in color\". But, at the same time, most dancers don't seem to realize the effect that colored lighting can have on that image. And this is not a problem that should automatically be relegated to the jurisdiction of the stage hand (who might have an aversion to blue, yellow, orange, etc. -- or who might even be color-blind) -- after all, it's your performance. The more you understand about stage lighting and its effects, color and color perception, the better your chances of elevating an excellent performance into the realm of perfection. I cannot stress too much that color perception (the color one sees) is dependent on two basic elements: (1) the colorants contained in costumes, make-up, skin texture, hair, etc., and (2) the color content of the FLOODS: A single large light, used for broad surfaces. It cannot be focused. HOT SPOTS: Areas of the stage strongly illuminated by specific light. HOUSE LIGHTS: Light which illuminates the part of the theater occupied by the audience. WORK LIGHTS or REHEARSAL LIGHTS: Diffused white light from floods or strips. CONCEPTS OF COLOR IN LIGHTS: WHITE: purity, peace, innocence, goodness, absolute perfection, searching, revealing. YELLOW: gaiety. RED: excitement, rage, fire, passion, suspense, blood. GREEN: earthly, devilish, mysterious, hope, rejuvenation. VIOLET: dignity, royalty, splendor. BLUE: serene. AMBER: warmth. LIGHT AMBER: sunlight. PINK: warm, healthy. LIGHT BLUE or LIGHT GREEN: moonlight. VIOLET and DAYLIGHT BLUE: afternoon. BLUE and PINK: pleasant and lyrical. HARSH COLORS: unscrupulousness. COOL TINTS: sweetness, calmness. COOL LIGHTS: green-yellow through greens and blues to blue-violet. WARM LIGHTS: ambers, pink and similar hues. EFFECT OF COLOR LIGHTING ON COSTUMES: Colors for costumes should not blend with background scenery. Lights of a similar hue will enhance the beauty of the fabric. Light of a complementary hue will gray a costume. White and light gray will assume the color of the lights. To intensify colors in fabric (either for scenery or costumes) light of the similar color is used for brilliance. Black is excellent for contrasts and ties bright colors together. Black alone suggests sophistication, sorrow, in costume or in dance motif. Red is beautiful with pink lights. Yellow-amber or yellow can be gray in light blue light, or black in pure blue light. The reverse is also true. Brown is good with light amber or pink for highlights of bronze. Blue needs shades of blue or green lights, also good with pink. Blue is grayed in",
+    "title": "DANCE IN COLOR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 593,
+    "article_char_count_full": 3670,
+    "article_char_count_review": 3670,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A9",
+    "article_text_for_review": "(from: $ \\underline{\\text{Parade}} $ $ \\underline{\\text{Magazine}} $; sent by Joe Bubas) By Karen Feld A flamenco guitarist does not entertain every day in Patrick County, Va. But this rainy Saturday was different. Farmers, somewhat skeptical, traveled with wives, children and grandchildren down country roads to the local Ruritan (rural Rotary) hall in the tiny mountain community of Ararat (pop. 400). At one end of the small, rundown, barnlike building, 75 people sat on folding chairs in a semicircle around a makeshift stage. \"I want to see what it's all about,\" said one man who has lived all of his 70 years in the county. He had never seen an opera, a ballet -- any live performer, for that matter, except the local fiddlers. The only entertainment in this area is television. The closest movie is 60 miles away.",
+    "title": "CULTURE TAKES TO THE HILLS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21",
+    "page_number": 22,
+    "word_count": 138,
+    "article_char_count_full": 821,
+    "article_char_count_review": 821,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

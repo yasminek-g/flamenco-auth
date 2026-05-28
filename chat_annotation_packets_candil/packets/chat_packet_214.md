@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-07-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nE l Rector Magnífico —que no magnífico Rector— de la Universidad de Verano Menéndez Pelayo, se ha colgado de sus propias declaraciones, hace pocas fechas, respecto al Flamenco, en el ámbito universitario. Ernest Lluch descalificaba la iniciativa de otros colegas suyos, por haber promovido cursos o cátedras destinadas a la profundización o simple divulgación del Flamenco, como hecho cultural, conceptuándolos como pura frivolidad, inadecuada al rigor académico que debe informar la estructura universitaria. Aunque, al parecer, tales declaraciones que sólo cabe considerar de absolutos despropósitos, iban dirigidas al Rector de la Complutense, como dardos venenosos en respuesta a recientes imputaciones de éste que objetaba a la Universidad cantabra el ser púlpito para exaltación del PSOE, aunque, con posterioridad, se haya producido una puntualización a las manifestaciones del ex-ministro, no debemos eludir este comentario editorial, por dos básicas razones. La primera de ellas se refiere a la propia naturaleza de quien hizo tan torpes declaraciones. No hablamos de persona singular, sino del representante de una prestigiosa institución académica. Lo que evidencia que existe, pese a los esfuerzos desplegados, una inexacta información del hecho cultural flamenco en distintos colectivos —universitarios o no—, los cuales pasan por ser portavoces de la cultura, en el Estado español. Todavía existen quienes consideran lo jondo como una manifestación folklórica o, en el mejor de los casos, como espectáculo artístico sólo susceptible de una contemplación estética.\n\nTodavía hay quienes conceptúan el Flamenco como algo desencarnado, musicalmente aséptico, sin cimiento histórico, sin ferralla humana. Todavía son los más quienes no entienden que resulta ininteligible la cultura, incluso la historia de este Sur doliente, sin una referencia a la historiografía flamenca.\n\nLa segunda de las razones, antes aludida, hace referencia al propio sentido y significado de la Universidad, en nuestros días. Nadie discute hoy que las relaciones entre la sociedad y las instituciones académicas deben de ser fluidas y con influjos recíprocos. La realidad social y viva de nuestro país ha de penetrar en nuestra Universidad, al igual que ésta ha de proyectar en aquélla sus funciones. Lo contrario, en base a un equívoco rigor academicista, nos arrojará a una sociedad huérfana de valiosas aportaciones que no sean las de recibir títulos, o a una Universidad encastillada en sus propias sapiencias, encorsetada en hueras disquisiciones, sin ese aire caliente y vivificante que irradian las realidades sociales de cada país. Promover una cátedra de flamencología, un aula o un curso de verano sobre lo jondo, no es sino el intento de recuperar las señas de identidad de un Pueblo, con el rigor y método que, singularmente, la Universidad puede aportar.\n\nEl señor Ernest Lluch ha dicho una tontería más. En otros medios ya ha recibido adecuada respuesta. Nosotros, desde esta humilde tribuna de papel, le sugerimos que nos pida información, ya que no hemos de considerar estupidez lo que seguramente es falta de conocimiento.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 475,
+    "article_char_count_full": 3136,
+    "article_char_count_review": 3136,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-07-4-left-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n1 Butler asegura haber oído cantar públicamente en Jerez a Pepe y Manolo Torre. En Cádiz, a Enrique Hermosilla y a su hermano Antonio el Mellizo. A su juicio, Pepe, que no era profesional, cantaba mejor que Manolo; y Antonio, simple aficionado, mejor que Enrique.\n\nEs una tendencia característica de los viejos aficionados abultar los méritos de los consangúneos menos conocidos dentro de una misma rama; en algunos casos, directamente de los incomprobables. En el seno de una familia destacan con aire mitológico al personaje sombreado. Se troquelan valores en base a consideraciones declarativas y no argumentativas. Esta veneración colateral, sin valor probativo casi siempre, hace mella en la credulidad del que no maneja asunto tan arduo como es la genealogía flamenca.\n\nDe un arqueo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"entendidos\"]\n\na Pepe. b) De los hermanos Mellizo, se destaca Antonio. c) De los hermanos Farina, se destaca a Ramón. e) De los hermanos Badajoz, se destaca a Calderas. f) De los hermanos Rodríguez Rey, se destaca a Amós. g) De los hermanos Montoya («Jarrito»), se destaca a Antonio. h) De los hermanos Mairena, se destaca a Manolo. Etcétera. Es palmario que la sorpresa, lo esotérico, lo adiscográfico, supone el máximo regodeo de este tipo espe- cial de entendidos de la historia privada del flamenco. Lo que nos lleva de la mano a los diversos clanes taurinos (los Ortega, los Vega, los Dominguín, los Ordóñez, los Bienvenida, los Girón, etcétera), donde el jefe visible tiene inexorablemente aparejado un hermano superior en dotes estéticas que no ha podido demostrar cara al público por mala suerte, falta de garra o culpa de un apoderado nada perspicaz... un verdadero arsenal de hipótesis destinadas a sobreimponer al desplazado, al verdadero guía del que se ha privado la historia. El propio Niño de la Palma me decía que sólo había tenido un hijo torero: Pepe. 2 Augusto Butler —que al fin desenmascara su apócrifo Máximo Andaluz— es de Puerto Real. Allí, y en el Puerto de Santa María, fue profesor de violín. Actualmente vive en Madrid, donde se precia de haber montado paciente y costosamente un enorme archivo flamenco (literario y discográfico). En toda ocasión exhibe la guía del archivo\n\n[ENDING CONTEXT]\n\nse hacía pasar como discípulo dilecto de don Antonio Chacón, Marchena era un cantaor que prometía cosas mayores. Tenía juventud, trato con los viejos maestros, le sobraban facultades. Pero al compás de sus triunfos se fue envaneciendo y decidió darle al cante un giro absolutamente personal. Todos los cantes fueron rehechos a su imagen y semejanza. Fue un profano con mucha capacidad de invención. Luego no logró más que mantenerse sobre las mismas bases. Ahora ha entrado en decadencia definitiva. Ya no cabe esperar de él sino algún disparate senil.\n\nDoctor Arroyo, 12 / Teléfono 21 00 58 / JAEN\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 4850,
+    "article_char_count_full": 29110,
+    "article_char_count_review": 3008,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "entendidos"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-07-8-left-xxvi-concurso-nacional-de",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nOpinión\n\nHomenaje a Francisco Coronel Merelo\n\nRafael Valera Espinosa\n\nD esigual desarrollo ha tenido la edición del Concurso de Tarantas linarens de este año, pues, si bien ha existido cierta brillantez en los actos preliminares y complementarios del mismo, en lo que concierne propiamente a las fases de clasificación, entre la no presentación de concursantes y la mediana-baja calidad del resto, éstas han quedado deslucidas hasta el punto de declarar, con justicia, desierto el primer premio del apartado que da titularidad a dicho certamen. Parece aquí confirmarse, una vez más, la determinada decadencia que están sufriendo los concursos ante la proliferante cantidad de contrataciones que se producen por esta fecha. Si además sumamos lo que de monográfico tiene éste y la regresiva motivación\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"participar\"]\n\niana-baja calidad del resto, éstas han quedado deslucidas hasta el punto de declarar, con justicia, desierto el primer premio del apartado que da titularidad a dicho certamen. Parece aquí confirmarse, una vez más, la determinada decadencia que están sufriendo los concursos ante la proliferante cantidad de contrataciones que se producen por esta fecha. Si además sumamos lo que de monográfico tiene éste y la regresiva motivación de los cantaores a participar, nos encontramos con resultados como el que nos ocupa. Pienso que los organizadores han de propiciar nuevos incentivos que eleven la calidad de los concursantes. Tanto el Ayuntamiento linarense como la Peña Flamenca «Cabrerillo», a los que hay que sumar la loable presencia de aficionados locales y provinciales en las fases de clasificación y en la propia final, han contribuido con su homenaje a resaltar la personalidad de un minero cantaor de esta tierra que ha sabido pasear con orgullo la creatividad que en la misma se le ha dado a los estilos mineros, y muy concretamente a la taranta. A los Cabrerillo, Frutos, El Bacalao, Basilio, El Tonto de Linares, José Soler, Luis el Pavo, Luquitas de Marchena, Gabriel Moreno o Carmen Linares, hay que unir el nombre de Fran- Entre las diversas profesiones en que tuvo que trabajar, la que más huella ha dejado en su persona ha sido la de minero. Es a partir de aquí cuando adquiere la profundidad y el sent\n\n[ENDING CONTEXT]\n\nde concursantes.\n\nAntes de finalizar la sucinta crónica, decir que el jurado estuvo formado por Julio Gallego Ibáñez, presidente de la Comisión Especial de Feria; Juan Cardeñas Cantudo, miembro de la Peña Flamenca «Cabrerillo»; Gonzalo Rojo Guerrero, crítico de R.N.E. en Málaga; Fernando Lastra Sánchez, aficionado de La Unión y José Luis Navarro García, estudioso de los estilos mineros. También formaba parte del citado jurado el cantaor homenajeado, Francisco Coronel Mérelo «El Coronel de Linares», el cual no pudo estar presente en la mesa del mismo por las circunstancias antes referidas.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "XXVI Concurso Nacional de Tarantas de Linares",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 1476,
+    "article_char_count_full": 8906,
+    "article_char_count_review": 3046,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "participar"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-07-9-left-flamenco-en-la-universidad",
+    "article_text_for_review": "Opinión\n\n...A don Ernest Lluch, que ha elegido el camino, tan español, de despreciar cuanto ignora.\n\nE l pasado mes de agosto, entre los días 6 al 11, y dentro de los Cursos de Verano de la Universidad Complutense de Madrid, se han desarrollado unas jornadas que no dudamos en calificar de históricas para el flamenco. Gracias a la sensibilidad de las autoridades académicas madrileñas, que quisiéramos representar en el Rector Magnífico de la Universidad, don Gustavo Villapalos, y el Vicedirector de los cursos, don Gonzalo Santonja, ha sido posible la celebración del Seminario: «Historia, presente y futuro del Flamenco», dirigido por el poeta y flamencólogo Félix Grande, al que, desde aquí felicitamos, e impartido por una cuidada selección de especialistas en la materia que relacionamos a continuación, citando el título de sus disertaciones y el orden en que éstas se produjeron. El día seis, Félix Grande y José Luis Ortiz Nuevo hablaron respectivamente sobre: «El flamenco, más junto que una lágrima» y «El flamenco en el siglo XIX». El día siete, dedicado de manera muy especial, pienso que con acierto, al mundo gitano, intervinieron Antonio Gómez Alfaro: «Los gitanos españoles ante la ley. Siglos XV al XX», y Manuel Martín Ramírez: «La comunidad gitana entre la colonización interior y la identidad cultural».\n\nAl día siguiente, María Teresa Martínez de la Peña nos ofreció su experimentada visión sobre «Historia del Baile Flamenco», jornada completada por la sabia lección teórico-práctica de Andrés Batista, compartida con dos de sus discípulos, sobre la «Historia de la guitarra flamenca».\n\nEl jueves, nueve de septiembre, abría la mañana Manuel Ríos Hasta aquí la escueta crónica, el desnudo programa; pero hubo mucho más: el ambiente de seriedad y estudio que reinó en las aulas de esta universidad en la que la institución y el flamenco se enriquecieron mutuamente; el estrecho contacto entre los profesores y los cuarenta alumnos, la mitad de ellos gitanos becados, que demostraron, una vez más, que están de sobra los discursos racistas y xenófobos sobre su pueblo y, ¿cómo no?, el ambiente lúdico que debe acompañar a este tipo\n\nRuiz con el tema: «De la etapa teatral a la revalorización (1922-1956)», jornada que se completaba con el brillante e intuitivo estudio de Angel Alvarez Caballero sobre la «Actualidad y futuro del flamenco». Digamos, finalmente, que el último peldaño de esta interesante manifestación cultural fue cubierto por José Luis Buendía con su ponencia: «Los escritores ante el flamenco», y por el secretario del curso, Eugenio Cobo, que habló sobre «El flamenco en los medios de comunicación».\n\nde actividades veraniegas y que, en nuestro caso, giró siempre en torno al flamenco: proyección de vídeos de artistas diversos sobre los que más tarde versaban los coloquios; pases de películas antiguas, y, sobre todo, actuaciones en directo que, como muy bien resaltaba, con su proverbial acierto el director del curso, Félix Grande, no venían a ilustrar, sino a enriquecer al Seminario: el cante grande de Gabriel Moreno acompañado a la guitarra por Carlos Pardo, el recital de guitarra de Rafael Riqueni y, sobre todo, esa explosión de arte y colorido, que tuvo como escenario el del viejo y Real Coliseo de Carlos III, y que fue la actuación de Blanca del Rey, quien con su baile señero trazó signos de admiración en las viejas piedras escurialenses. A su lado, un niño de doce años, Jerónimo Maya, toca-ba la guitarra con unos dedos y una inteligencia que no se puede decir que fueran suyos en exclusiva, puesto que Jero lleva dentro de sí el misterio insondable y la técnica de doscientos años de flamenco.\n\nPara que no faltara la anécdota, en pleno Seminario, unas declaraciones desafortunadas del ex-ministro socialista don Ernest Lluch, descalificaban a la Universidad Complutense por dar entrada en sus aulas al flamenco. Los que allí nos encontrábamos reaccionamos flamencamente: levantamos nuestras copas y, todos juntos, brindamos por la ignorancia e indelicadeza del que, elegido un día por el pueblo, se escora tan peligrosamente hacia riberas lindantes con el fanatismo y la intolerancia.\n\n¡A su salud, señor Lluch! «Ami-go Sancho, ladran, luego cabalga-mos». Al menos eso ha hecho con buen rumbo nuestro arte en el espléndido Seminario flamenco de El Escorial.",
+    "title": "Flamenco en la Universidad",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 696,
+    "article_char_count_full": 4320,
+    "article_char_count_review": 4320,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-07-9-right-esa-m-sica-viene-de-la-tierra",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLuis Caballero\n\nPregón del Festival de los Cantes de las Minas, La Unión\n\nD espués de haber nacido no lejos de Triana, a la que amo y en la que tantas veces me inspiro, después de pertenecer a una familia rematadamente andaluzay cantaora, después de haber tenido uso de razón flamenca a los siete años, después de haber cantado con profesionales consagrados a los trece, después de haber escuchado a tantas y tantas figuras cumbres durante mi ya larga vida y no menos larga pasión por el cante, después de haber sido pionero pro-defensa del cante y dignificación del cantaor, después de cuarenta años estudiándolo, explicándolo y cantándolo, después de haberme pasado veinte años junto a don Antonio Mairena, después de conocer el cante por dentro y por fuera y rendirle el más respetuoso y\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"nuevo\"]\n\niguras cumbres durante mi ya larga vida y no menos larga pasión por el cante, después de haber sido pionero pro-defensa del cante y dignificación del cantaor, después de cuarenta años estudiándolo, explicándolo y cantándolo, después de haberme pasado veinte años junto a don Antonio Mairena, después de conocer el cante por dentro y por fuera y rendirle el más respetuoso y entrañable culto, me veo en la irremediable necesidad, si no de comenzar de nuevo, sí de abordar su existencia algo más allá de su simple presencia. ¿Qué aficionado no se lo ha oído decir a todo veterano cargado de experiencia? Cuántas veces escuché decir a Mairena: «Si viviera hasta doblar los años que tengo no acabaría ni de aprender a cantar, ni a saber de cante ni lo que es el cante». En principio yo estimo que a partir de este medio siglo de estudios y resurgimiento, si no de todo el cante, como debió ser, sí de una parte, así como de una afiliación lamentablemente heterogénea, el hecho de disponerse a hablar de cante honrada y respetuosamente obliga a despojarse total y absolutamente\n\n[ENDING CONTEXT]\n\ndel cante grande, con Chacón a la cabeza, lo hayan estilizado hasta hacerlo una obra del arte jondo.\n\nHuelga a estas alturas insistir en una bien conocida y tratada escala de valores altamente considerada. Así, pues, desde mi modesta condición de antiguo cantaor, concluyo agradeciendo a esta tierra, cantera de cante, la maravilla músico-espiritual que, siguiendo el misterioso devenir geográfico de la hondura, hizo un día exclamar al genial cantaor don Antonio Mairena la conclusión admirativa que debía servir de emblema a esta magna exaltación de los cantes propios, «¡Qué buen cante tenéis!».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Esa música viene de la tierra",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-10",
+    "page_number": 9,
+    "word_count": 1934,
+    "article_char_count_full": 11427,
+    "article_char_count_review": 2690,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "nuevo"
+      }
+    ]
+  }
+]
+```

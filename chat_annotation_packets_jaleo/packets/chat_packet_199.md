@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_10::A8",
+    "article_text_for_review": "CHIQUETETE: INTERVIEW [from: El Correo de Andalucía, July 31, 1984; translated by Paco Sevilla] by Pablo Jesús Rivera --Can you remember when you were not much more than Pulpón's [flamenco promoter] chauffeur? \"Of course I remember him -- I care for him as if he were my own father!\" --Bueno! Let's talk about the program we will see this Sunday la television special -- one hour of Chiquetetel. \"I am bery pleased! I have represented an Andalucia with class and incredible feeling [not clear whether he means \"he\" or \"Andalucia\" has the \"class\" and \"feeling\"].\" --But with lip-synch playbacks? \"Half were that way, but four of the songs were not.\" --The outside shots were in the Patio de los Naranjos, the Barrio de Santa Cruz, the Plaza de España, and... \"Triana, de mi corazón, with its \"Puesto de las Flores,\" the Iglesia de Santa Ana, the river, the Maestranza,...\" --And three beautiful women... \"With the most beautiful, La Giralda, in the background.\" --Antonio Cortés Pantoja, describe yourself! What are you like? \"I am tremendously shy, as you know: and I tell stories in the only way I know: singing. I have no tricks, I express myself as I am.\" --But don't deny to me that you have forgotten your flamenco origins! \"I haven't forgotten them. So much so that in more than one performance, they have asked me for siguiriyas, soleares and other 'palos juertes' [\"heowy\" flamenco forms].\" --But how about those \"potajés,\" \"gazpachos,\" and \"cara-colás\" [festivals]? \"You are probably unaware of it, but every year I ask them to include me in some festivals. For example, I am going to Cádiz, to the festival organized by the Peña Juanito Villar. And in the Colombinas, I will go to the caseta of Los Marismenos to sing flamenco.\" --Muy bien. But how did you get started singing canciones? \"After having dedicated my life to flamenco since I was eight years old, Paco Cepero told me one day that we were going to put two canciones on a record that was otherwise flamenco jondo. They were 'Tu y yo' and 'Las estrellas de plata.'\" --And then followed \"Aprender a sonar\" and \"Ser amante.\" \"The first record of canciones was that one, 'Aprender a sonar' with ten songs, among them, 'Corazón de acero' and 'Mare Manuela'.\" --As is the fashion among the famous from around here, you have purchased a chalet in El Aljarafe. \"In Palomares. It is an incredible neighborhood -- all the people are really good.\" \"When one earns money, one desires to have all that he has been lacking: a house in the country, a car, etc. To be sincere with you, I will be rich if I can continue at this rate for four or five years. I am working like a beast. Monday I will arrive home at noon with five hundred kilometers under my belt, going from Madrid to Mojácar to Sevilla.\" --And, on top of that, you will have to be hungry in order to watch your shape. \"I eat everything, although I try not to overdo it because of my tendency to put on weight. Some nights I go without dinner, but then I ruin it by eating sweets.\" --You must cry when you pass the windows of a pastry shop! \"The truth is that I don't pass by!\" --Who could ever have told you that you would reach a point where you could charge a million pesetas per show? \"It still seems like a dream to me.\" --And taxes, a nightmare? \"I have already paid a million and a half, and I still have to pay property taxes.\" --You must have earned a lot to have paid that much. \"I'll tell you that also -- over twelve million.\" --We conclude the interview talking about Antonio's three children: Antonio Manuel, Rocío, and Francisco Javier de la Salud. \"The 'de la Salud' comes from my 'Cristo de los Gitanos.' And don't forget to mention my wife Amparo, we get along phenomenally.\" --As does everybody who knows Antonio.",
+    "title": "CHI QUETETE: INTERVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 671,
+    "article_char_count_full": 3752,
+    "article_char_count_review": 3752,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A9",
+    "article_text_for_review": "[from: Cabal, May-June, 1984; translated by Paco Sevilla] by Alfredo Grimados Manolo Sanlúcar is, perhaps -- along with Paco de Lucía -- the professional flamenco guitarist who has achieved the greatest popularity in today's world, although, as Manolo himself says, \"Thanks, almost always, to the records of which I am least proud.\" He has inherited a great tradition in guitar playing; his father, Isidro, a breadmaker and guitarist, took classes from Javier Molina, one of the greatest figures in the history of flamenco, and two of his brothers are also professional guitarists. Manolo is decidedly partial to the evolution of the classic styles, to experimenting and trying to incorporate new forms of music that would enrich the traditional sonority of flamenco. Flamenco finds itself at a crossroads. Some professionals try, as they have for some years now, to feel their authentic roots, to keep them free from adulterations and keep them clear of the profane. Others, moving away from those roots, try to enrich them and look for new means of expression. Manolo Sanlúcar finds himself among these latter. \"I am in favor of looking for new forms; if, in that search, one percent turns out to be worthwhile, I believe that is sufficient. You can't sit there looking in the mirror, thinking about the genius of the classical flamenco, while other types of music, other artistic terrains, are in constant evolution. This, obviously, implies some risk, but I believe it has to be confronted bravely...",
+    "title": "MANOLO SANLUCAR: INTERVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 246,
+    "article_char_count_full": 1504,
+    "article_char_count_review": 1504,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A10",
+    "article_text_for_review": "[from: The San Diego Tribune] by Lynn Carrier Madrid, Spain - La Chunga, the Gypsy flamenco dancer, began performing barefoot at the age of 8 because her family had no money to buy her shoes. Her unique ability made her famous, and today, the bare-foot gypsy has earned the admiration of flamenco fanciers around the world. She has danced at the Cafe de chinitas, a flamenco dinner club, since it opened in 1969 at 7 Torija St. in the basement of an 18th-century palace. The lobby, adorned with Yet, La Chunga was in a mood to pierce myths. \"People think gypsies just sing and dance all day and all night,\" she said. \"They come in here, enjoy the entertainment and then they go home and leave us to our realities.\" \"We are human beings just like they are. We have our joys and our sadness.\" Her sadness, she said, was her separation from her husband. Her joy: their three children, especially the 11-year-old daughter reamining in her custody. She was fatalistic about her dancing. Flamenco, she said, isn't something you learn. \"It's something inside you. You either have it or you don't.\" She is among a small elite of talented gypsy performers who gave up their nomadic ways to prosper in the Spanish mainstream, but she spoke nostalgically of an earlier lifestyle. \"When I was a girl, we were hungry, but I think in some ways I was happier because I didn't have the care of an adult. There is no way to go back though. I live well now. I have a home. I like to dress well. I want my children to go to school and study.\" Thousands of other gypsies in the Madrid area live an unromantic existence as impoverished outcasts on the outskirts of the city, out of sight of most tourists. They eke out a living as vendors, selling anything from fresh flowers to fake watches. Despite government efforts to help them, the Gypsies haven't assimilated, our tour guide told us. When I asked our chauffeur to take us to a Gypsy camp, he replied, \"Why would you want to see them? They're just thieves and vendors here in the north. You should see the ones in Andalusia. At least, they live with the rest of the population, and some of them even have jobs.\" A few minutes later, perhaps feeling a twinge of remorse, he put on a tape of his favorite music, sung by the gypsy \"El Fary.\" The next day, he drove us to a dusty, foul-smelling camp about 10 miles outside Madrid on the road to Toledo. The women and children came out to greet us, while the men stood in the background. A donkey cart rumbled across the rutted, unpaved street. A gaunt gypsy, walking a greyhound, stopped to stare. Children in ragged, smudged clothing pressed closer, posing for pictures. A sea of outstretched hands begged for pesetas. An old woman dressed in black read our palms. She told one writer that someone close to him would get married soon. He looked at her incredulously. His sister was to be wed in two weeks. As we left, I watched a skinny, dark-haired gypsy girl raise her arm and dance, and wondered if here, in this camp, some future La Chunga would grow up and take Madrid by storm. GUITAR REVIEW WORLD WIDE CLASSIC GUITAR QUARTERLY ACADEMIC YET YOUTHFUL BLOSSOMING FORTH WITH NEW IDEAS NEW WRITERS · NEW REVIEWERS · NEW DEPARTMENTS USA Subscription 4 issues: $24.00 postage included Send to: GUITAR REVIEW, P.O. Box 5375, F.D.R. Station, New York, NY 10150",
+    "title": "LA CHUNGA DANCES WITH GYPSY FERVOR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20-21",
+    "page_number": 20,
+    "word_count": 601,
+    "article_char_count_full": 3340,
+    "article_char_count_review": 3340,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A11",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[You ask me what \"Ask the Shah,\" and by implication what my artistic name \"The Shah of Iran\" has to do with flamenco. Good question. To the readers of Jaleo, I am already known and recognized by this appellation. It is the name of an artist who is profoundly serious and superficially flippant. The name is an expression of a strong, well-centered man who is humble when appropriate and proud when pride is justified. What has \"earthquake\" to do with flamenco? Ask \"El Terremoto. de Jerez.\" What is the connection between beans and flamenco? Ask Sabicas, \"el niño de las habicas.\" \"Overcoat?\" Ask Chaquetón, Queen? Ask la Faraona. As for \"Shah\" and \"Iran,\" what of the spurious references to Egypt and pharaohs in which many gypsies indulge themselves? I am completely within Spanish tradition and\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"serious\"]\n\nbetween beans and flamenco? Ask Sabicas, \"el niño de las habicas.\" \"Overcoat?\" Ask Chaquetón, Queen? Ask la Faraona. As for \"Shah\" and \"Iran,\" what of the spurious references to Egypt and pharaohs in which many gypsies indulge themselves? I am completely within Spanish tradition and flamenco spirit using this name, which is accepted with good humor in Spain. There, I am El Shá, here, the Shah. In France Le Shah, etc. I purposely do not affect a serious Spanish name because I wish to be judged by my art alone. I do not depend on a name to confer \"Spanish authenticity\" upon me. Nor the \"traje cartic\" nor my physical appearance and airs, nor media hype, nor boastful inventions] 羊羊羊 PART THE FIRST Wherein a group of fine Spanish artists doth appear unannounced in New York, perform clandestinely, and then absquotilate. The New York Times review (published in the last issue of Jaleo) is complimentary and persuasive. It is powerful enough to fill many seats in great concert halls, to impress the names of artists on the public, to advance their careers, and to promote the art of Spanish music and dance. It did none of these. This encomium did not attract a single body to any of the five concerts. It did not sell a single ticket. Los Montoya, Morente, Serranito and El Güito departed New York as anonymously as they had arrived.\n\n[ENDING CONTEXT]\n\nto the use of the general public. This npera-film is a pleasure, and well worth viewing should it ever come to the viewers metropolis, hamlet, oasis or bivnuac. Film presentation and particularly video film presentation shall be considered seriously by the aspiring flamenc artist as an interesting and effective alternative in the usual cafe, street festival, concert hall presentation. Film is cost-effective, permits retakes and allows a much more elaborate presentation in the form of staging, orchestration and theme. And its potential audience is vast. The pen, having written, moves on\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "THE SHAH SPEAKITH",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22-23",
+    "page_number": 22,
+    "word_count": 1861,
+    "article_char_count_full": 11008,
+    "article_char_count_review": 2960,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "serious"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_10::A12",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSOLEARES--ARTE GRANDE One of the giant foundations of flamenco is soleares. This is true baile, toque, cante grande, the essence of arte grande, the essence of flamenco. Cristobal De Los Reyes, one of Spain's finest flamenco dancers, said at one time, \"I do not dance soleares because it 'has too much art',\" (English translation). I am sure that he was being a bit modast but if there is a degree of difficulty in artistic conquest among the many flamenco dance forms, soleares is way at the top in its total expression. At this point, I want to say that the very fact of putting down in words and writing, the feelings of this art, make this article a bit analytical, but any verbal expression of artistic feeling, emotion, or techniques make for a bit of analization. Soleares is often called\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\no say that the very fact of putting down in words and writing, the feelings of this art, make this article a bit analytical, but any verbal expression of artistic feeling, emotion, or techniques make for a bit of analization. Soleares is often called \"the mncher of flamenco song.\" Soleares could also be called the mother of flamenco dance and flamenco music for indeed it is a very special form held in universal high esteem for the soleares holds many of the possibilities of high art and expressinn in the world of flamenco. It could be a life time goal to express soleares in all of its potential and a true search of ones individuality in flamenco. There are probably forms older but solea (as it is often called) is artistic galaxy after artistic galaxy. It is the ocean, endless, calm, stormy, thunderous, powerful and deep, caressing and thrashing like giant waves on a rocky coast. Soleares can lull or frustrate you. Studying soleares is a primary study in control. When it is played and sung slowly it is the ultimate lesson in flamenco dance to capture that slowness with control, energy, dynamics, higness and interpretation of yourself in honesty of mood. It gives you that time. Of course, slow is relative to what we mean and feel about slow and fast. It is slow of almost clinging to the notes, the compás. Not letting it go too soon. A savoring of this jewel of a compás..a compas in 12 counts that you want to go on forever in slow but powerful climaxes. The marking in soleares can be sensuality in its purest form. In the movie Flamenco, that came out in the 50s, th\n\n[ENDING CONTEXT]\n\nserious flamenco dance students, soleares should be one of the first steps in discovery of what flamenco is. The study of soleares can also help get rid of the cliche that flamenco is a stiff, stomp the floor dance form. The fluidity of movement in soleares can be interpreted as beautifully as a cat, a stalking black panther. Soleares is but one journey in flamenco but a journey with many rewarding adventures for the serious study of this serious art. In modern terms, \"go for it.\" With intense joy, discover the aire, the arte of being alone with soleares, La soledad, La Madre... --Teo Morca\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24",
+    "page_number": 24,
+    "word_count": 1360,
+    "article_char_count_full": 7693,
+    "article_char_count_review": 3209,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  }
+]
+```

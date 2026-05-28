@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-58-left-fichas-para-una-hemeroteca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Manuel Urbano\n\nLos amplios juicios críticos, entrevistas, comentarios, etc., sobre la dilatada e inmensa vida y obra jonda de Antonio Mairena publicados en diarios y revistas, como el lector sabe, alcanzan un número casi torrencial y prácticamente imposible de conocer. La selva de hemerotecas y —lo que me parece realmente grave, casi imperdonable, por cuanto supone dejación de uno de los más ricos bienes culturales andaluces— la inexistencia de un Centro de documentación flamenca digno de tal nombre, nos impiden, pese a las múltiples diligencias efectuadas, ofrecer un justo y amplio catálogo de papeletas hemerográficas que completen, redondeándola, la visión que este número monográfico de «CANDIL» ofrece de tan egregio cantaor y los juicios que, sobre el cante y sus protagonistas e,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"reseñaban\"]\n\ngráfico de «CANDIL» ofrece de tan egregio cantaor y los juicios que, sobre el cante y sus protagonistas e, incluso, de su propia biografía, ha ido vertiendo a lo largo de tantos años en incontables diarios y revistas. Consciente de la insuficiencia de material recogido, de todos modos, dejamos constancia de las papeletas de lectura que nos han parecido de mayor interés de entre las que llegaron a mi poder —he omitido, por razones obvias, las que reseñaban actuaciones suyas, referencias de galardones, etc., etc.—y que, a mi parecer, si bien no ofrecen un resultado tan ambicioso como el que nos prometíamos, son de utilidad para una visión histórica del cantaor de Mairena. Queden por orden cronológico: «El ballet de Antonio: los peligros de perderse en la fantasía». Vicente Marrero Suárez, «Informaciones»; Madrid, 21-XI-53. «Antonio Mairena». Ricardo Molina, «Córdoba», 11-V-58. «Los cantes de Antonio Mairena, biblia actual del cante». Ricardo Molina, «Córdoba», 10-IV-59. «Antonio Mairena, sucesor de Manuel Torre y maestro supremo de la seguiriya». Ricardo Molina, «Córdoba», 29-IV-61. «La Llave de Oro del Cante, para Antonio Mairena» Tico Medina, «Pueblo»; Madrid, 23-V-62. «Antonio Mairena, ganador de la Llave de Oro del Cante». Ricardo Molina, «Córdoba», 27-V-62. «Por qué y cómo ganó Antonio Mairena la Llave de Oro del Cante». Ricardo Molina, «Córdoba», 27-V-62. «Las siguiriγas de Manuel Torre». Antonio Díaz-Cañabate, «A.B.C.»; Madrid, 25-X-63. «Antonio Mair\n\n[ENDING CONTEXT]\n\nMálaga, 3-I-82.\n\n«Antonio Mairena en la discografía: Cien años de Cante Gitano». Luis Melgar, Diario «Córdoba», 7-II-82.\n\n«Antonio Mairena en la discografía: Saetas». Luis Melgar; Diario «Córdoba», 4-IV-82.\n\n«Antonio Mairena en la discografía: Originalidad expresional». Luis Melgar; Diario «Córdoba», 20-VI-82.\n\n«Con la verdad por delante: Antonio Mairena se confiesa». Emilio Jiménez Díaz, «Suroeste», Sevilla, s./f.\n\n«Apuntes para la Historia del cante flamenco». Manuel Alvarez López, «A.B.C.»; Sevilla, s./f.\n\n«La llave de bronce de Antonio Mairena». Aquilio Duque, «El Alcázar»; Madrid, s./f.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Fichas para una hemeroteca…",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "58-58",
+    "page_number": 58,
+    "word_count": 894,
+    "article_char_count_full": 6314,
+    "article_char_count_review": 3108,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "reseñaban"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-59-left-de-l-tambi-n-se-ha-dicho",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«Antonio Mairena es el eslabón que enlaza los grandes cantaores del pasado con los que forman nuestro espléndido presente; el maestro que guarda la llave de oro de las viejas glorias».\n\nFrancisco Almazán\n\n«La figura más destacada entre los cantaores flamencos de la actualidad. No falta quien le considere el mejor cantaor de todos los tiempos. De facultades asombrosas, domina todos los cantes con la perfección de un maestro en todos ellos. Conoce, como pocos, la historia de todos los sones flamencos».\n\nCarlos Almendros\n\n«Hágansele las objecciones que se le hagan, es el maestro indiscutible de nuestra época. Un caso único en la historia del flamenco, ya que ningún artista tuvo su enorme interés por investigar la realidad del cante, desvirtuando muchas leyendas y restaurando estilos que sin\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_01 | trigger=\"fuera\"]\n\nde un maestro en todos ellos. Conoce, como pocos, la historia de todos los sones flamencos». Carlos Almendros «Hágansele las objecciones que se le hagan, es el maestro indiscutible de nuestra época. Un caso único en la historia del flamenco, ya que ningún artista tuvo su enorme interés por investigar la realidad del cante, desvirtuando muchas leyendas y restaurando estilos que sin él se habrían perdido para siempre. Por añadidura es un cantaor fuera de serie». Angel Alvarez Caballero «Por unanimidad del jurado, le fue concedido el primer premio al cantaor Antonio Cruz, natural de Mairena del Alcor, que con sus catorce años y pantalón corto todavía subió al tablao, provocando un verdadero entusiasmo en la interpretación que hizo de los cantes por seguirillas y soleares de Alcalá. Los restantes premios se declararon desiertos (...). Alcalá, pueblo de constante flamenco desde sus más remotos tiempos, creador de uno de los cantes por soleares más puros que se conocen, se anticipaba de esta forma en cincuenta años a la exaltación de uno de los más expresivos valores espirituales de nuestra región andaluza, el cante grande, y con clara visión de lo que es el arte, concedía el primer premio a quien al correr de los años habría de consagrarse como una de las más\n\n[ENDING CONTEXT]\n\nmás remedio) ha dicho la saeta por derecho ha sido Mairena; pero es porque ya llevaba dentro el cante, como lo ha llevado siempre Pastora (…). El origen de todo arte grande, cuando es grande de verdad, estará siempre en Manuel Torre, en la Niña de los Peines, en Tomás Pavón y en Mairena. Que no me saquen de ahí (…). Que me perdonen los demás».\n\nJosé Torres, «El Pinto»\n\n«Juan Talegas, legendario portavoz del cante de Alcalá, no puede reprimir el brillo de los ojos y la lágrima no avergonzada cuando Mairena terminaba la siguiriya de Silverio y comenzaba las soleares».\n\nP. Vázquez y A. Eduardo\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "De él también se ha dicho",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "59-61",
+    "page_number": 59,
+    "word_count": 3021,
+    "article_char_count_full": 17957,
+    "article_char_count_review": 2899,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_01",
+        "family": "COMM",
+        "trigger": "fuera"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-11-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nE L flamenco nunca estuvo desvinculado de parte de la realidad andaluza. En otro tiempo fue la proyección atávica más genuina de su cultura: cante como crónica puntual de cotidianas vivencias y pesares. Enrique el Mellizo cantaba, en su soledad gaditana, al mar, a los locos, o a la muralla que era una forma de cantarse a sí mismo. Surgió la disfunción cuando hubo que cantarle «al otro», posicionado, cuando más, en pura contemplación estética, fuera de coloquiales dolores, y sin más drama que el que te arroja, a veces, la memoria histórica.\n\nHay que preguntarse: ¿refleja hoy el flamenco, en alguna medida, la realidad andaluza, la realidad de los hombres del Sur? Evidentemente no. Al menos en la forma de épocas pretéritas. ¿Puede, acaso, el cante jondo retomar su virtualidad de síntoma, de voz secular representadora de algo o de alguien? Quienes respondan afirmativamente, han de esforzarse por despejar otras incógnitas: posibilidad de evolución en el cante jondo; modificación de formas expresivas sin que el cante pierda su propia identidad.\n\nHe ahí un tema para debate que, hasta el momento, no ha tenido el tratamiento riguroso que merecía. Como en otros órdenes de la vida, la realidad se ha adelantado a los conceptos. Pero sin fortuna, a nuestro juicio, ya que las experiencias realizadas han respondido más a incentivaciones crematísticas que a intentos serios de profundizar histórica, sociológica y musicalmente el flamenco. Parece que la disociación entre cante y vida es cada día más irreversible. La reflexión de quienes desde distintas ópticas nos preocupamos del flamenco en su más amplia dimensión, será una manera no sólo de recuperar áreas importantes de nuestra cultura, sino de identificarlas, definitivamente, y delimitar su ámbito existencial de vigencia.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1982-11",
+    "year": 1982,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 286,
+    "article_char_count_full": 1799,
+    "article_char_count_review": 1799,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-11-4-right-el-villancico-y-la-navidad-flame",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor José Luis Buendía López\n\nSanta Isabel a San Juan y la Virgen parió al Niño la noche de Navidad. (Bulería Navideña) Cuando los hielos del invierno hacen crujir las ya despobladas ramas de los árboles, cuando el cierzo se mete en la cintura y duelen los huesos, cuando diciembre nos humaniza a todos un poco y nos esforzamos en sonreír al vecino, en desearle y desearnos felicidad (a veces sin demasiado convencimiento interno), nos acercamos a la Navidad. Desde hace dos mil años, el mundo, influido por las tradiciones cristianas, conmemora la noche del 24 de diciembre como la fecha en que Dios se hizo hombre y bajó a vivir entre nosotros (ahí es nada), predicó el amor y la tolerancia entre todos los humanos como precepto principal, y fue muerto a causa del asombro que causaban tales\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"tradiciones\"]\n\na vez más sumida en el odio y en el sentimiento de individualismo insolidario. Era inevitable. Si en todo el orbe cristiano está fiesta conlleva alegría y optimismo, en nuestra Andalucía, sensual por los cuatro costados, con una sensibilidad a flor de piel, abierta a todo lo que signifique dar rienda suelta al sentimiento explosivo de alegría que yace agazapado junto a los graves problemas cotidianos, en esta tierra ubérrima y empapada de añejas tradiciones, la manifestación ancestral tenía que recurrir a toda una parafernalia sensitiva, en la cual el baile y el cante de la tierra fueran el natural vehículo, portador de todo el vitalismo añejo que caracteriza a estas tierras solares, como las bautizara un día el poeta Rubén Darío. Y así fue, el cante flamenco asimiló todo el caudal lírico peninsular que desde lejanas épocas medievales cantaba la Navidad y constituyó con él un nuevo y fresco venero de limpias y flamenquísimas manifestaciones andaluzas de ese mismo sentimiento. Para ello cantó por todos los «palos» flamencos (1) las estrofas que venían del más viejo tronco de nuestra lírica nacional: el villancico. Pero antes de examinar la apropiación flamenca de dicha estrofa, detengámonos a estudiar ésta con la atención que se merece. La más rancia manifestación lírica europea. Eso es en principio el villancico. La Real Academia Española de la Lengua lo define así: «Composición poética popular con estribillo, y especialmente la de asunto religioso, que se canta en Navidad y otras festividades». Obsérvese cómo ya de entrada la Academia insiste en su marcado carácter popular, y en algo que mucha gente desconoce, esto es, el carácter indistintamente religioso o pro fano del mismo, ya que ambas facetas abundan en la conformación tradicional del villancico. Técnicamente se\n\n[ENDING CONTEXT]\n\nentre la mula y el buey nació el cordero divino.\n\nMedalla de Plata en el X Salón Internacional de Bruselas\n\nFabricación de toda clase de plantillas ortopédicas en conglomerado de caucho y corcho, con extensa gama de piezas accesorias para confeccionar y adaptar a las mismas. (Arcos internos o longitudinales. Arcos transversos. Cuñas pronadoras y supinadoras. Herraduras, etc.) Las plantillas y piezas accesorias, se hacen en tres consistencias: BLANDAS, DURAS Y SEMIDURAS. También fabricamos según diseño Técnico.\n\nFábrica y oficinas: Arrastradero, 6 y 8 - Teléfonos 22 33 92 y 22 51 12 - J A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El Villancico y la Navidad flamenca",
+    "periodical": "candil",
+    "issue_id": "1982-11",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 4046,
+    "article_char_count_full": 24173,
+    "article_char_count_review": 3425,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "tradiciones"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-11-8-left-addenda-et-corrigenda-de-una-rel",
+    "article_text_for_review": "A la comunicación «Influencia de los gitanos en el Cante» (1) que presentamos al IX Congreso de Actividades Flamencas (Almería, 1981), acompañaba una relación de artistas gitanos de relieve, ya desaparecidos, sobre la que advertíamos que adolecía, posiblemente, de un par de du-das en cuanto a la etnia de los censados y seguramente de no pocas omisiones.\n\nLa primera duda fue, al parecer, aclarada en el propio Congreso por un inteligente y documentado investigador madrileño que aseguró que La Sayago no es gitana. (Por cierto que aquí nuestro fallo fue doble, puesto que Encarnación Marín vive, felizmente, y por muchos años). Aceptamos la rectificación y ni siquiera nos disculpamos con el hecho de que Manuel Ríos Ruiz, maestro de poetas y chanelador de los buenos, la da por gitana en su Introducción al Cante Flamenco. (Colecciones Itsmo, Madrid, 1972). La otra duda fue disipada incluso antes del Congreso, pues Sarvaoriyo no fue gitano.\n\nUna primera lista de omisiones la hemos podido confeccionar al poco tiempo; y la muerte, que no perdona, la ha aumentado con verdadero pesar para toda la afición, recientemente:\n\nManuel Lobato, EL LOLI.\n\nAntonio López, EL TRONI.\n\nJosé Durán Mediavilla, EL TORDO.\n\nManuel Fernández, SERNITA.\n\nFernando Fernández Monge, TERREMOTO.\n\nSi algún día, más completos nuestros datos, nos decidiéramos a rehacer la relación de intérpretes (que ojalá tarde mucho tiempo en acrecentarse si no es por medio de la investigación), añadiríamos al nombre de cada artista aquí relacionado los esquemáticos datos que, como norma general, acompañaron a nuestra lista inicial.\n\nA los buenos aficionados de Jerez y los Puertos encomendamos una petición de informes sobre estos tres nombres que tenemos en espera de clasificar:\n\nJULEPE, al parecer nacido en El Puerto a mitad del siglo pasado y del que solamente conocemos una simple cita de Julián Pemartín. FRANCISCO LA MICA, que suponemos hermano de María y, por tanto, sanluqueño.\n\nCHARAMUSCO DE JEREZ, sobre cuya existencia dentro del presente siglo no tenemos ninguna duda y del que un peculiar estilo de Soleares puede que en breve plazo sea exhumado (para deleite de la afición) por la única persona capacitada para ello.\n\nCon esto que esperamos obtener de algún generoso aficionado, y con las correcciones anteriores ni habremos completado nuestro modesto trabajo, ni siquiera garantizamos plenamente la veracidad de los datos divulgados. El flamenco lo escribieron a voces un puñado de analfabetos. Ni existen posibilidades hermenéuticas ni, por tanto, la investigación documentada pueden obrar milagros, puesto que apenas si existe.\n\nPor eso nos contentamos con la transmisión oral, siempre incompleta y tantas veces deformada al cabo del tiempo.\n\nPaco Vallecillo",
+    "title": "Addenda et corrigenda de una relación de artistas gitanos",
+    "periodical": "candil",
+    "issue_id": "1982-11",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 430,
+    "article_char_count_full": 2747,
+    "article_char_count_review": 2747,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

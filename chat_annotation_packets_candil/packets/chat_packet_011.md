@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1980-07-8-right-a-prop-sito-del-viii-congreso-de",
+    "article_text_for_review": "DE ACTIVIDADES FLAMENCAS\n\nNo cabe duda que el VIII Congreso de Actividades Flamencas na sido algo más que una reunión de Sociedad aunque en algunas fases del mismo lo pareciera. Creemos que el hecho de que aflorasen pintorescos protagonistas, se mediatizase, en casos singulares, el flamenco para exhibir una cultura poco rigurosa o surgiese, en algún que otro congresista, el prurito de practicar juegos etimológicos no siempre afortunados no desvirtúa otros logros encomiables. Cierto que el VIII Congreso de Actividades Flamencas no brilló, ni pasará a la historia por la altura y categoría de las ponencias presentadas; faltó, evidentemente, criterio y firmeza, por parte de los organizadores, a la hora de seleccionar ponencias y comunicaciones; algunas de estas últimas se expusieron con más garra, con más propiedad e interés que la mayoría de las ponencias. Cierto también, que el debate, salvo excepciones, no prendió entre los asistentes, acaso porque abundara más en los trabajos presentados el aspecto expositivo que el dispositivo. Pese a todo, nuestra valoración de este Congreso es positiva. Estimamos que un Congreso no es un Aula, ni su finalidad primordial es aprender algo, entre otras razones, porque lo aprendible en el flamenco, en términos de absoluta objetividad, es bien poco. La razón de ser de un Congreso ha de ir por otros derroteros. Tal vez, suene a tópico o lugar común pero lo más importante, ha sido el encuentro, un encuentro heterogéneo, pero un encuentro, al fin y al cabo, entre aficionados, entre hombres preocupados, desde concepciones dispares, por custodiar la puridad de un arte que, de alguna manera se nos desvanece.\n\nSuculento espectáculo para un análisis sociológico. Hemos dicho y no casualmente, encuentro heterogéneo, ¿puede tener en este u otro Congreso significado unívoco la expresión\n\n«conservar la pureza del flamenco»?. Ciertamente, no. Y con ello no queremos entrar en las espúreas intenciones de quienes manipulan estos conceptos con fines, exclusivamente, crematísticos. Es otro el tema. Nos preguntamos sobre cual es ese centro de interés en el que convergen tan variadas inquietudes y personalidades. Un psicólogo hablaría de fenómeno proyectivo. Se concibe y lógicamente su pureza según la perspectiva intimista de cada aficionado. Y nos olvidamos de la desnuda objetividad, como si el cante fuera sólo sentimiento, vivencia psicológica y no tuviera entidad suficiente para desprenderse, desgajarse de sus amantes estudiosos. Podríamos preguntarnos: ¿En qué momento de su historia es el cante puro? ¿Qué es, en consecuencia, lo que debemos conservar? No tengo, para tales preguntas, respuesta idónea. Me atrevería a sugerir que lo que hay que conservar es la pureza de los aficionados, es decir, su capacidad de contemplación ante esta expresión artística, porque el cante seguirá «¿puro?» mientras no se agoten sus contempladores.\n\nEn este sentido, el VIII Congreso de actividades flamencas ha cumplido una primordial finalidad: enriquecer, fomentar, mediante el encuentro, esta contemplación.\n\nEn el próximo número haremos un detenido examen de aquellas ponencias que, a nuestro juicio, tienen más interés.\n\nNo queremos terminar sin resaltar la impecable organización que ha tenido este Congreso en otros aspectos puntuales. Almería tiene para el año próximo la responsabilidad de organizar el IX Congreso de Actividades Flamencas. No dudamos que su gestión será todo un éxito.\n\nRAMON PORRAS",
+    "title": "A propósito del VIII Congreso de A. Flamencas",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 531,
+    "article_char_count_full": 3455,
+    "article_char_count_review": 3455,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-07-9-left-las-letras-flamencas-de",
+    "article_text_for_review": "Las letras flamencas de\n\nFRANCISCO VELEZ NIETO\n\nAndaluz de Lora del Río, Francisco Vélez Nieto es un poeta de incuestionable raíz y compromiso popular. A los diez años empezó a trabajar como carpintero, desde entonces ha recorrido muchos oficios y hasta la emigración; precisamente en su trastierro alemán fundó los cuadernos de «Poesía Nuestra» y la revista «Exodo», a la que alguien ha denominado como «la mejor voz de esa colonia de desamparados». Entre otros libros suyos, destaca el poemario «La otra historia de siempre». Hoy, y de su libro inédito «Al sur del desencanto», «CANDIL» publica algunas de sus letras en las que son palpables sus voces flamencas y sus ecos machadianos.\n\n1\n\nNo son aires, son suspiros, que algún pensamiento dan; suspirar por quien suspiro, desde el duro trajinar.\n\nII\n\nPajarito en la ventana migajas de pan le doy y vuelve cada mañana. Mendigo de quien yo soy.\n\nSe paró a contar estrellas y lo miraba la gente. Hay cosas en esta vida, que ya no son convenientes.\n\nIII\n\nSiento tu voz y me suena como el cántaro en la fuente. en la fuente de mis penas.\n\nY cuando se sale el agua del cántaro de tu voz hasta los caños me miran, para ver si sueño yo, o es que la fuente delira.\n\nI V\n\n«Andaluces levantaos» de tan doblegada tierra que el reló está marcando la hora de la conciencia\n\nPueblo cuida los colores; ponedle música al aire y flores a los balcones Que no se los lleve nadie.\n\nV\n\nYo puedo tirar la piedra sin tener que esconder brazo. No es suerte ni providencia, es sólo estar en un lado.\n\nY al que le dé que perdone, como dicen en mi pueblo, son muchos los desencantos que me gritan desde dentro.\n\nCaranta\n\nPara Pepe Cruz, cantaor y compás de la Peña Flamenca.\n\nAmarrando el aullido del espanto en la insondable y oscura profundidad del vientre de la tierra y las entrañas del dolor, recio hijo del jornal y la miseria, un golpe pedernal enciende el grito asolado del candil que alumbra el miedo y en el inmenso abismo del desgarro un filón de sangcorre acompasando su desconsuelo mineral por las más secretas galerías de las venas amenazando derrumbamiento. Un martillo, un barreno de voz, un pulso abierto en la negra soledad de la cueva más honda y amarga, en las vetas de la carne, en la tierra arrojada al desamparo de la tierra, inunda de plomo el quejio cerniendo la palabra, cortando el silencio a tajos, arrancándose a mordiscos la furia del sollozo y las lágrimas de la queja; mientras, un alarido loco busca la salida arañándose por la libertad y el aire, aporreando la cabeza por las angosturas de los respiraderos.\n\nManuel Urbano",
+    "title": "Las letras flamencas de Francisco Vélez Nieto",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 459,
+    "article_char_count_full": 2581,
+    "article_char_count_review": 2581,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-07-10-right-aunque-no-quepa-en-el-papel",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\ny, como era de esperar, una historia mágica del cante\n\nUna buena parte de la grandeza y servidumbre del cante flamenco le viene dada, pienso, por arrancar toda su ortodoxa tradición de una larguísima prehistoria totalmente desconocida, que, casi toca nuestros días. De aquí que, entre otras razones, el hondo misterio jondo e inenarrable de lo flamenco atraiga a buena parte de los intelectuales desde hace casi un siglo. El saldo de este acercamiento, si bien en un balance final es positivo, arrastra una auténtica riada de lo que podría denominarse como ilustres bagatelas, una retahíla de anécdotas, y, lo que me parece peor aún, una farragosa seudoerudición inoperante. Se ha olvidado con excesiva frecuencia, a mi juicio, algo fundamental: la descripción, la comprensión y la explicación del\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"histórico\"]\n\nositivo, arrastra una auténtica riada de lo que podría denominarse como ilustres bagatelas, una retahíla de anécdotas, y, lo que me parece peor aún, una farragosa seudoerudición inoperante. Se ha olvidado con excesiva frecuencia, a mi juicio, algo fundamental: la descripción, la comprensión y la explicación del pasado del cante encuadrado en las coordenadas de los correspondientes espacios sociales y tiempos que, por esa misma condición de fruto histórico, no permitan interpretaciones instrumentalizadas e ideológicas de su esencia y existencia. Hoy, como siempre, o, tal vez, más que nunca, se impone recordar la tan conocida como olvidada llamada de los hermanos Caba: «Si nosotros queremos atraer hacia lo jondo a los intelectuales, no es para que lo sometan o lo intelectualicen, sino, al revés, para que ellos refresquen sus raíces en sentimientos primarios, en jugo de vida y se preparen así para entender el alma morena de Andalucía, compleja y delicada». Y, entre tantas teorías que se suceden sobre el tema, como era de esperar, surgió una no muy novedosa historia mágica del cante dentro de una bien zarandeada —también obtuvo innumerables adeptos— Historia mágica de España (1), la que, tras las primeras críticas serias e implacables, resultaría ser una novela que se alzaría hasta con su premio nacional de literatura. Historia mágica escrita, como alguien ha dicho, «para rellenar horas de tertulias a la page de tíos majos». Pero no vamos a referirnos, por razones obvias, a este voluminoso libro como tal, sino a los comentarios mí\n\n[ENDING CONTEXT]\n\nparte que acepta al cante jondo. En verdad, no hubiese merecido comentario alguno; mas si en ella nos hemos detenido ha sido, fundamentalmente, por considerarla como representativa de una cierta nueva ola intelectual de media docena de oficiantes y maestros de ceremonias con bastantes com-parsas y teloneros.\n\nY ya que hemos estado de interpretaciones míticas y sandungueras, reseñemos las ilustraciones que acompañan a la presente crítica, de José Carlos de Luna, referidas al cante por caracoles, bastante más míticas, sandungueras y mágicas que el texto de nuestras referencias.\n\nMANUEL URBANO\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Aunque no quepa en el papel",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-12",
+    "page_number": 10,
+    "word_count": 2493,
+    "article_char_count_full": 15397,
+    "article_char_count_review": 3180,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "histórico"
+      }
+    ]
+  },
+  {
+    "article_id": "1980-07-12-right-manuel-vallejo-o-el-ruise-or-fla",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEXTRACTO BIOGRAFICO\n\nManuel Vallejo tuvo los defectos y virtudes que encarnan a toda persona, pero como artista fue perfecto, y sólo desde este ángulo hemos de contemplarlo y criticarlo.\n\nManuel Jiménez Martínez de Pinillo, el genial c a n t a o r que conocimos con el sobrenombre de VALLEJO, no fue natural de Sanlúcar la Mayor ni de Sanlúcar de Barrameda, como algunos estudiosos del arte han dicho sin fundamento. Manolo, como puedo demostrarlo documentalmente, tuvo el alto honor de nacer en Sevilla, en la casa número uno de la calle de Padilla, el día 15 de Octubre de 1891. Hijo de Manuel Jiménez y de Manuela Martínez de Pinillo y Vara. Nieto por línea paterna de Joaquín Jiménez y de Dolores Vallejo y por línea materna de Francisco Martínez de Pinillo y de Antonia Vara. Falleció en\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nntalmente, tuvo el alto honor de nacer en Sevilla, en la casa número uno de la calle de Padilla, el día 15 de Octubre de 1891. Hijo de Manuel Jiménez y de Manuela Martínez de Pinillo y Vara. Nieto por línea paterna de Joaquín Jiménez y de Dolores Vallejo y por línea materna de Francisco Martínez de Pinillo y de Antonia Vara. Falleció en Sevilla el día 7 de Agosto de 1960. Leí un comentario sobre Manolo y me consta que afectó profundamente a sus familiares, muy especialmente a sus sobrinos Joaquín y Pilar que le adoraban. Por MANUEL YERGA De Vallejo se sabe muy poco, y si queremos hablar de cómo fue y cómo actuó entre sus semejantes, hemos de investigar en su biografía con toda honradez para no sacar a la luz cosas y casos irreales que perjudiquen a nuestro arte y hieran la susceptibilidad de los suyos. Del artista podemos afirmar, sin lugar a equivocarnos, que fue hombre raro y muy hermético, llevado, sin duda, de su peculiar carácter que no le permitía convivir más que con un escogido número de amigos que se conocían lo suficiente como para aguantarse mutuamente sus rarezas e impertinencias. Por lo demás, Vallejo tuvo un buen corazón y en ocasiones se comportaba como un niño. Fue muy tímido, medroso por excelencia y rayano en la inocencia, siendo por estas condiciones humanas por lo que sus sobrinos le querían\n\n[ENDING CONTEXT]\n\n5 del corriente en el Teatro Pabón y en el que tomaron parte, Manuel Torre, Escacena, Cepero, Angeliillo, El Chata Vicálvaro, Faro 1.º, Villarrubia y otros. Madrid, 8 de Octubre de 1926. Periódico «El Paso atrás», revista de toros, teatro y espectáculos».\n\nTermino diciendo, que si Pastora Pavón «Niña de los Peines» recibió en vida el premio que indiscutiblemente se mereció, ¿por qué a Vallejo no le pagamos la deuda que los puros aficionados tenemos contraída con él? ¿Por qué no creamos una Peña flamenca que lleve el nombre inmenso de Manuel Vallejo? Los hijos de Sevilla, tienen la palabra.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Manuel Vallejo o el ruiseño flamenco",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 1627,
+    "article_char_count_full": 9577,
+    "article_char_count_review": 2951,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      }
+    ]
+  },
+  {
+    "article_id": "1980-07-13-right-noticia-de-los-caf-s-cantantes-c",
+    "article_text_for_review": "por Guillermo Sena Medina\n\nLa gran época dorada del cante flamenco, como escribe Ríos Ruiz, parece que debe ser centrada en torno a los cafés cantantes que surgieron en Sevilla, Cádiz, Jerez, Málaga y otras ciudades andaluzas a mediados del siglo XIX y hasta los diez o quince primeros años del XX. Esta época se corresponde con el apogeo minero y social de La Carolina y, por lo que hemos podido colegir, con el apogeo flamenco en nuestra ciudad.\n\nLa Carolina es en estos años una pequeña Babel de andaluces, fundamentalmente de Almeñía, mineros del Levante murciano, castellanos de paso y no pocos extranjeros que se mezclan con los habitantes. Es una ciudad ciertamente de aluvión, casi de frontera, que surge impetuosa al socaire de las minas de galena; donde el dinero corre fácil tras el vino, el juego y las mujeres; con pistolas y navajas en demasiadas cinturas; una ciudad joven de 30.000 habitantes, cuya vida es perfectamente reflejada en dos novelas: «Jauja» de Ricardo León y «El vencido» del gran escritor carolinense Manuel Andújar.\n\nUna ciudad así, andaluza, minera y joven, no podía ser ajena al flamenco, que se adueñaba de recónditos rincones, de cafés cantantes y de lupanares en esa hora mágica que abre la madrugada. Ricardo León describe así una posible noche festera carolinense: «Verbena andaluza en el Balcón de Europa. Noche magnífica, teatral, de luna llena. Templado ambiente de aires tónicos y fragancias montaraces. Fiestas y luminarias en la noche. Rasgueos y falsetas de guitarra, gemidos de cante hondo, voces y risas de mujer. Repiques de paliillos y retintín de cañas de cristal. Vino. Mujeres. Alegrías. Humo de buñolada y juerga...». Y es que La Carolina de entonces, de cuando viviera aquí el citado escritor y concibiera su novela, tenía mucho de «Jauja», de «Jauja la Real». Tres son los cafés cantantes que centran la atención por aquellos años heroicos, según nos refieren quienes tuvieron la oportunidad, bien jóvenes, de conocerlos. Junto a ellos, existieron, sin duda, numerosos locales donde al son de la guitarra se reunían mineros y aficionados para airear la taranta o la minera o para cantar los cantes nuevos que llegaban camino real arriba o abajo. Importancia decisiva en este ambiente flamenco, jcómo no!, tuvo —junto a los mineros— la comunidad gitana, asentada en las calles Las Minas o Los Tejares, camino de «El Guindo» y «El Centenillo».\n\nUN ANUNCIO DE LOS AÑOS VEINTE DEL \"CAFE IMPERIAL\", OBSERVESE LA PROGRAMACION \"CONCIERTOS POR TARDE Y NOCHE\"\n\nPero vayamos a los cafés cantantes. El primero al que nos referimos estaba situado en la calle Olavide número 28, donde ahora existe un supermercado. Hasta hace pocos años se ha podido ver, pese a la tienda de ultramarinos allí existente, la estructura del salón principal, con su semicírculo de palcos sobre columnitas de hierro forjado y barandal de caprichoso enrejado. Tal local fue primero «Juego de Pelota». Después «Teatro de Verano», hasta que hacia 1910 pasa a ser café cantante en el que actuaron importantes figuras, aunque no hemos podido constatar si cantaron los grandes de entonces. Una bailaora que hacía las delicias de los bigotudos carolinenses era «La Favorita». El local, a juzgar por lo que del mismo pudimos ver, debió ser verdaderamente agradable, bien decora- do y casi lujoso.\n\nOtro existió en la calle Olozaga, llamado Café de Manolín. Gracias a la amabilidad de Luis García Bravo hemos recorrido y fotografiado sus dependencias. Desde la referida calle se pasaba a un recibidor con dos reservados al fondo y una escalera de subida al salón principal, amplio y decorado, con señales de la situación del tablao y con más reservados al fondo. Como otros locales, tiene su leyenda de sangre y muerte. Sus mejores años debieron ser alrededor de 1915, año prácticamente final de esta era del cante. Después se convertiría en casa de citas. Hoy es almacén de materiales de ferretería.\n\nEl tercero es el actual «Café Imperial». Situado en la céntrica plaza del Generalísimo, aún conserva su primitiva forma, si bien su decora- do de madera y espejos, sus mesas de hierro y mármol han sufrido gran deterioro, desapareciendo los típicos sillones corridos a lo largo de las paredes. También tiene su historia trágica. Es el más moderno y el último café cantante carolinense, conservando este carácter hasta los años treinta e, incluso, los cuarenta. En él es casi seguro que actuara Pepe el de la Matrona, en sus años mozos; aunque las noticias ciertas de artistas que en él cantaran son ya de años posteriores a la época dorada de los cafés y de los más cercanos años treinta: Canalejas de Puerto Real, Angelillo, la Niña de Antequera, Juanito Barea, entre un largo etcétera. Hasta aquí esta primera noticia a la que, tal vez, pudiera sumársele otro café, el Café Colón, sintuado en la calle Madrid, desaparecido hace poco tiempo bajo la implacable piqueta para dejar su privilegiado lugar a una entidad bancaria (como es natural), aunque la actuación en él de artistas flamencos sería de forma más ocasional.\n\nLuego, sucediendo a estos cafés, los espectáculos flamencos serían en el Teatro Principal, en la Plaza de Toros, etc.; pero esto ya es otra época del flamenco, bien distinta de la de los cafés cantantes, que es la brevemente reseñada.",
+    "title": "Noticia de los cafés - cantantes Carolinenses",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 878,
+    "article_char_count_full": 5271,
+    "article_char_count_review": 5271,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

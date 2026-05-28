@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-11-17-left-notas-p-stumas",
+    "article_text_for_review": "7 septiembre de 1988 Francisco Vallecillo (Póstumo)\n\nSeñor Alcalde; Señora:\n\nA ti, Bernarda, también el elogio más sentido de admiración por tu generosidad cantaora. Bernarda, puro nombre de Romance gitano tras el que evocamos a los legendarios Pedro Niño, El Fillo, antes El Planeta y hace pocos años Miguel Bengala, y —¡qué voy a descubrir yo a tu infinita sabiduría!— Antonio, Antonio Mairena. En ti, Bernarda de Utrera, sentimos el perfume a canela y verbabuena y pimienta como una brisa de aire gitano que nos llegara de las verdes praderas del Valle del Indo en el trashumar de siglos de la raza que tú representas con Fernanda, con tanta elegancia y majestad.\n\nY un olé largo y flamenco al Ayuntamiento de esta bendita tierra que sabe calar tan hondo en el alma y el sentir de los gitanos, que tanta gloria y leyenda han dado secularmente a Utrera.\n\nLas empezar por transmitirte a ti y a tu hermana el saludo y la felicitación del consejero de Cultura con cuya representación me honro en este importante acto, no puedo renunciar al impulso de leer estas líneas. Y he de hacerlo para proclamar desde este viejo y rico solar flamenco la grandeza de tu Arte inmenso y repetir el título que tantas veces se me ha venido a los puntos de la pluma: Fernanda Primera de Utrera, Reina de la Soleá. En ti, señora, se reúnen y condensan los ecos grandiosos de La Andonda, de Mercé, de Rosario y de Rosalía. Tu cante transmina viejas y recónditas esencias y nos transporta a situaciones que después de tantos años al lado del Maestro, creíamos que ya no volveríamos a sentir.\n\nE s un caso de estudio. Y tal vez de monografía pura en cuanto a cátedra de cante jondo.\n\nEn principio puedo asegurar, de algún modo, la personalidad y ponerla o encuadrarla dentro de un mito para que se pueda entender a esta Fernanda de Utrera, que es la figura misma de Casandra. Es Casandra ante los muros de lo terrible. Se está desgarrando por la vivencia de los acontecimientos tremendos que van a suceder. El cante de Fernanda tiene esa posición. Es una videncia extraña.\n\nLo curioso en el cante de Fernanda es que ella posee, técnicamente hablando, una exquisitez y una dificultad de inteligencia que no es para todos. Ella tiene el cisma alejandrino, vale decir aquella pequeña coma sonora que hace diferenciar enormemente la entonación de cualquier sonido de otro. Este problema es tan profundo como matemático. Se advierte, así, que el cante de Fernanda viene de la hondura de los tiempos irremediablemente remotos.\n\nPero lo que más se alcanza de ella es que en su cante lo profundamente patético está inspirado por el Dios implacable. Se siente el cante de Fernanda en embate de lo implacable musical.\n\nY como cierre de esta viñeta, diré que Fernanda es de los pocos cantaores y cantaoras que poseen el ay. Posee el trenos terrible del arcaísmo homérico.\n\nNo obstante, en esa función de estar ante lo imposible y lo irresoluble, Fernanda siempre tiene la altura, la posición de una reina esclava, pero de una reina. Es una dominadora. Indudablemente ella maneja estos hilos, estas cuerdas misteriosas de lo terrible. Por eso, como estudio especial, en ella se advierte la extensión —el cante de ella, pese a las apariencias, es cante largo—, la extensión de lo incomensurable. Pero en esta inconmensurabilidad del cante largo de ella está la inconmensurabilidad de lo inevitable. Es su profundidad: la grandeza de lo fatal.",
+    "title": "Notas póstumas",
+    "periodical": "candil",
+    "issue_id": "1990-11",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-17",
+    "page_number": 17,
+    "word_count": 587,
+    "article_char_count_full": 3407,
+    "article_char_count_review": 3407,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-11-17-right-retrato-del-ngel-moreno-a-fernan",
+    "article_text_for_review": "Dices en los escatólogos que los ángeles no tienen sexo. O al menos ésta es la polémica esté-ril que, durante siglos, dividió a muchos desocupados, de esos que pierden la corona de tanto mirar al cielo.\n\nPara remachar la angélica disputa, Antonio Machín, dotado de ritmo increíble y sensibilidad a flor de piel, nos alentaba a todos, sobre todo al Supremo Hacedor, acerca de la necesidad de venerar ángeles negros.\n\nPues bien, el ángel moreno existe. Yo los he visto volar con sus grandes alas exterminadoras a altas horas de la madrugada; sobre mí ha planeado la espada flamígera de su condición etérea; he sentido cómo me rozaban los cabellos con el sutil tejido de su cuerpo de organdí; dirigirse a mi persona en el vehículo invisible de una soleá que me atravesaba el alma:\n\nDe noche no duermo en cama,\n\nlágrimas como garbanzos\n\nse me caen por la cara.\n\nEran ángeles morenos, con la dulzura asentada de las piedras prehistóricas de esa Utrera espeluznante que te atraviesa el corazón a golpes de cal blanca. No pude mirarlos a la cara; según dicen, los ángeles carecen de rostro definido. Por eso, seguí disfrutando de su voz, de su música crispada que hablaba de penas, de duquelitas negras en la mar embravecida de los años; oí el mensaje de siglos que la historia me traía a través del borbotón de agua que brotaba del fondo de las rocas. Su cante era la materialización del ángel moreno: hablaba de minerales sensaciones, de rotas ilusiones deshechas a causa del agobio añadido por los siglos a los desposeídos de la fortuna. Era una confidencia desgarrada que, desde las entrañas del pueblo andaluz, dos hermanas, ángeles negros que difuminaban sus contornos en lo estrellado de la noche, traían a toda la humanidad la expresión más pura de un trágico mensaje de amor: palabras con regusto de amargo reproche y, sin embargo, aún reconocible pleitesía sentimental:\n\n¿Qué quieres de mí?\n\nsi hasta el agüita que bebo\n\nte la tengo que pedir\n\nGracias a la visión solemne de estos dos ángeles morenos, mantengo viva mi fe, sin traumas, en lo que aún nos han dejado del flamenco.",
+    "title": "Retrato del ángel moreno (a Fernanda y Bernarda)",
+    "periodical": "candil",
+    "issue_id": "1990-11",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-17",
+    "page_number": 17,
+    "word_count": 360,
+    "article_char_count_full": 2081,
+    "article_char_count_review": 2081,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-11-18-right-poes-as-y-cantes-salvador-de-qui",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\na Fuente Vieja s'ha arborotao porque Pinini s'ha emborrachao». Akhenatón se ha vestido chaqueta y zapatos nuevos.\n\n«¿Y ese Pinini quién fue?»\n\nEl Potaje. Un Tablao. Cinco sillas. Cinco viejos. Cinco gitanos de luto como cinco versos negros.\n\nComo el negro de la noche como un fantasma, sereno, se va cantando Pinini camino del «mataero». Lleva el pantalón manchado con sangre de cien becerros.\n\n«Y las cantinas? ¡Qué ángel!\n\nLa noche templada, dura, pellizca en los pensamientos. Ya nadie charla de fúbol, ni de modas, ni de pleitos y hay como un escalofrío que se mete por los huesos.\n\n«Inventó er cante de Utrera. ¡Qué calé con más talento!».\n\nEn el aire se levanta la pirámide de Keops. Ramsés Segundo se viste con un traje de torero y Akhenatón, que ya tiene chaqueta y zapatos nuevos, pasa\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"mujeres\"]\n\nni de pleitos y hay como un escalofrío que se mete por los huesos. «Inventó er cante de Utrera. ¡Qué calé con más talento!». En el aire se levanta la pirámide de Keops. Ramsés Segundo se viste con un traje de torero y Akhenatón, que ya tiene chaqueta y zapatos nuevos, pasa despacio y garboso camino del «mataero». Con un murmullo de pasos se abre paso el cuchareo. Doña Julia, la Marquesa, don Antonio y don Anselmo hablan de modas, de fútbol, de mujeres y de pleitos. Suenan risas. Se oyen palmas llamando a los camareros. «¿Y dices que ese Pinini...? Cuchara de palo. Rábanos. Picadillo y vino negro. Sobre el «tablao», nerviosos —con los ojos bien abiertos— cinco gitanos de luto como cinco versos negros. «¿Entonces fue ese Pinini...? Alguien dice unas palabras. Se le arruga el entrecejo a Benito. Carraspea, escape. Saca un pañuelo y se lo lleva a los ojos. Emoción. Ya no hay remedio. La Luisa y la Dolores están haciendo «pucheros». «Por aquí está don Pinini...». Risas. Palmas. Comentarios. Alquien grita: «¡Qué salero!». Al «tablao», con los hijos, suben nietos y biznietos: La Bernarda, la Fernanda, Fernandillo —el del pañuelo— Inesita, la Feonga y el Funi. Ya está el completo. «Fue matarife. ¡Qué gracia!». María se arranca. Su voz se deshace entre lamentos. Canta Fernanda la vieja. Dolores hace un esfuerzo y apunta el paso de un baile que se queda en aspaviento. Se oye un «ole». Suena un llanto. Alguien se ríe. Silencio. «Cantaba las bulerías...» Salvador de Quinta Fernanda y Bernarda de Utrera E E llas son esa voz morena que hace temblar la guadaña, son el anillo de oro destilado por los ojos del duende, y la mano del espanto sorprendida entre la escarcha. Son, a la vez, un lenguaje espumoso de campanas que acarician el cuerpo del reposo efervescente, en la laguna azul del alba, adorable y despeinada. Su cante es un surtidor sombrío de pena transparente en que cada gota de compás redonda es un naciente impulso espeso y barroco de gozo y de fatiga: lujuria de la sangre insomne y memoriada, pendiente de dos brazos que luchan cuerpo a cuerpo con la vida. Fernanda ☐ antar, lo que se dice cantar, siempre ha habido buenos cantaores. Pero nadie ha llorado como llora, cant\n\n[ENDING CONTEXT]\n\nme está calando los huesos.\n\nSoleares de Fernanda\n\nFernanda:\n\nFernanda la está templando. Ya vienen locos los duendes por la calle Antón Quebrado: calle de Santa María —palmeritas y azahares— el barrio de la alegría. El de la torre que ríe hasta cuando están doblando sus campanas de alhelíes.\n\nVersos de la soleá: cuchillitos de oro fino que se nos quieren clavá por el corazón adentro, por las entrañas arriba con un regusto a veneno. A venenillo y a mié sabe la voz de Fernanda: la heredó de la Mercé, aquella que ar expirá se llevó la llave grande der cante por soleá.\n\nSalvador de Quinta\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Poesías y cantes Salvador de Quinta",
+    "periodical": "candil",
+    "issue_id": "1990-11",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-21",
+    "page_number": 18,
+    "word_count": 1287,
+    "article_char_count_full": 7205,
+    "article_char_count_review": 3818,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "mujeres"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-11-22-right-fernanda-de-utrera-y-el-cante-po",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nManuel Ríos Ruiz\n\nLevamos más de treinta años escuchando cantar a Fernanda de Utrera el mismo reperto. Lio de estilos y coplas, bien corto por cierto. Sin embargo, no nos importaría escucharla diariamente otros treinta y tantos años más, diciéndonos idénticos cantes y letras.\n\n(Por quê?\n\nSencillamente porque el cante jondo de Fernanda de Utrera reúne el trébol mágico de las esencialidades flamencas: tragirrabia, compás y duende, o sea, las claves para emocionar emocionándose.\n\nY el habérsele otorgado recientemente a la cantaora gitana un apreciado premio más, crea la ocasión de considerar sus valores y características, tan singulares dentro del panorama actual de su arte.\n\nFernanda de Utrera, como algunos otros importantes intérpretes de su generación, pasa de participar en reuniones\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"tablaos\"]\n\nlas esencialidades flamencas: tragirrabia, compás y duende, o sea, las claves para emocionar emocionándose. Y el habérsele otorgado recientemente a la cantaora gitana un apreciado premio más, crea la ocasión de considerar sus valores y características, tan singulares dentro del panorama actual de su arte. Fernanda de Utrera, como algunos otros importantes intérpretes de su generación, pasa de participar en reuniones íntimas a los escenarios y tablaos en los años cincuenta, con motivo de la revalorización que se iniciaba en torno al arte andaluz con el concurso de Córdoba, el auge de los tablaos y los primeros festivales. Este cambio en el ambiente flamenco de cara al público, permitió que Fernanda de Utrera, cuando ya cumplía más de treinta años, se incorporara al profesionalismo artístico y alcanzara inmediatamente la categoría de figura en su género, dado que encuentra un auditorio mentalizado para asumir las cualidades de su cante, un cante totalmente fundamentado en la ortodoxia heredada de su antepasadía gitana y sin ningún asomo, por aquellos tiempos, de concesión a la galería. Fernanda de Utrera todo lo que canta lo canta desde la entraña misma. Por siguiriya, por cantiñas, por fandangos, por bulerías, por tangos... y especialmente por soleá, el suyo es un cante de los adentros. Por eso en Jerez es la suya la voz más admirada de todas las no jerezanas. Para la afición de Jerez, y para mí por lo tanto, Fernanda de Utrera está dentro de nuestra concepción flamenca, por ese ir desde la intensidad a la pureza, donde importa más el son que el sonido, el embarazo musical jondo que revienta y nos conmueve. En los pocos, pero básicos, estilos que cultiva Fernanda de Utrera, da de sí su personalidad flamenca, deja siempre patente su aportación al cante, que estriba primordialmente en una sustantiva enjundia, por la que llega pronto y muy directamente a la sensibilidad de los auténticos cabales. Y en ocasiones incluso a la de gente que simplemente se acer\n\n[ENDING CONTEXT]\n\nllega a este fin de siglo, cuando el flamenco es un arte reconocido y admirado a escala universal, con la misma prestancia y representatividad jonda que aquellas gitanas legendarias. Se les compara con ellas y es como si el tiempo no hubiera pasado. Fernanda de Utrera, además de una cantaora genial es un arquetipo de su arte. Su cante por soleá lo salvaría si estuviera en peligro de extinción, porque es la raíz, esa que todos buscan. Fernanda de Utrera cuando canta siempre resucita lo ancestral, el meollo de lo jondo. Si alguien no se ha dado cuenta todavía, a tiempo está de descubrirlo.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Fernanda de Utrera y el cante por soleá",
+    "periodical": "candil",
+    "issue_id": "1990-11",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-24",
+    "page_number": 22,
+    "word_count": 2607,
+    "article_char_count_full": 15530,
+    "article_char_count_review": 3606,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "tablaos"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-11-25-left-la-sole-de-fernanda",
+    "article_text_for_review": "Paco V. Vargas\n\nCuando uno, en su inmensa ignorancia, se dispone a escribir sobre alguien, que se encuentra dentro del reducido círculo de los placeres y sentimientos más profundamente personales, pues uno siente como una cierta vergüenza y un miedo cierto a que el pudor no deje aflorar las emociones encerradas en un corazón muchas veces a punto de estallar.\n\nPues bien, ese alguien es Fernanda de Utrera: cantaora, mujer y reina por un siglo del cante por Soleá. Y, lo mismo que su cante, atreverse a escribir sobre su arte es como una larga travesía del desierto, como un doloroso parto, como un dolor de clavo que abre las entrañas y pellizca en el corazón.\n\nCallad que están naquerando\n\nCuatro versos a compás:\n\nFernanda y La Soleá.\n\n«La Fernanda fue una refrescante lluvia de verano», escribió Anselmo González Climent en su obra Oído al Cante, refiriéndose a la gloriosa aparición de la nieta de Pinini en el Concurso Nacional de Cante Jondo de Córdoba en 1959. Debió ser tan abundante la lluvia y tan refrescante ella que el largo estío va para treinta y dos años y aún la fuente mana: gotitas unas veces, chorros otras..., así es el Flamenco. De esa manera tan sencilla, tan flamenca y tan clara lo define Fernanda.\n\nCuando no tengas a nadie,\n\nyo seré tu compañero\n\ny tú, la novia del aire.\n\nEn Fernanda todo es esencial, nada, en su forma de entender el Cante, es añadido o superfluo. Desde el gesto a su puesta en escena, del quejío ronco —casi agónico en muchas ocasiones— a su dulzura de formas, de su eterna pelea contra ella misma a su pasión creativa. Todo, absolutamente, todo, es de una importancia capital para entender la genialidad de la cantaora de Utrera.\n\nYa no m'acuerdo de ti. M'acuerdo de los ratitos que fui contigo feliz.\n\n¿Es todo bueno en Fernanda? Evidentemente no, nadie es perfecto. Sin embargo, ella aprovecha sus «defectos» para convertirlos en triunfos. Su obvia escasez de facultades —desde siempre— la transforma en borbotones de sangre jonda en cada quejío. Al ser una cantaora corta de estilos, los que interpreta los domina: por Soleá, indiscutible; a los Fandangos les imprime un sello personal hasta conseguir sacarlos del saco donde están todos los demás; en las Cantiñas de su abuelo la sangre puede más que la geografía, Utrera es más que Cádiz; y por bulerías, el compás, el gusto y la ternura. Una copla se convierte en cante de la más alta jondura cuando Fernanda la canta. La emoción y el rajo que imprime a cada verso convierten lo prosaico en extraordinaria belleza. Para comprobar lo aquí escrito basta con escuchar la versión que ha hecho de una canción popularizada por Rocío Jurado, en su última grabación junto a Bernarda. Fernanda es ella misma y su universo cuando canta. Pero, ¿y cuándo calla?: son los «silencios» de Fernanda con la Soleá. Entonces Fernanda es sola, única, indiscutible emperadora. Segundos de callada tragedia, de búsqueda de lo imposible, de emoción desbordada, de impotencia, de esfuerzo sobrehumano, de agonía casi...Todo eso y más en segundos, sí, en segundos durante los cuales se para el tiempo y manda el silencio.\n\nUtrera tuvo que ser la cuna donde nacieras: cantaora y mujer.\n\nSi a mí me pidieran una definición de la Soleá yo diría Fernanda. En ella está resumida la historia y la geografía, la tradición y la verdad, la belleza más rotunda y más profunda que atesora lo jondo. Sí, sin duda ninguna, Fernanda y la Soleá son una dualidad falsa porque, en realidad, son una sola cosa. Fernanda resume toda la belleza del Flamenco.\n\nLa camisa me manchaste con tus labios la otra tarde. Yo la tengo corgaita donde no le da ni el aire.",
+    "title": "La soleá de Fernanda",
+    "periodical": "candil",
+    "issue_id": "1990-11",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 627,
+    "article_char_count_full": 3621,
+    "article_char_count_review": 3621,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

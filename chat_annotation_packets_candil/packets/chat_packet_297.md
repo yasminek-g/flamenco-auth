@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1994-11-24-left-una-nueva-era-de-la-m-sica-flame",
+    "article_text_for_review": "Manuel Ríos Ruiz\n\n-A\n\npecial. Como hemos recordado en alguna que otra ocasión, el público salió hablando entusiasmado de unas prodigiosas manos niñas, auténtica revelación del certamen, y de unos insólitos saberes flamencos. Ya sonaban sus primeros discos. Aparecieron en la televisión, actuaron en radio, rodaron el cortometraje «Antonio y las Cuevas de Nerja», y se incorporaron al ballet de José Greco en gira por América...\n\nQuien ha seguido el devenir artístico de Paco de Lucía desde entonces hasta su última grabación discográfica, «Live in América», ha sabido disfrutar de la obra del músico flamenco más significativo de los últimos cincuenta años. Por eso, cuando en 1988 nos correspondió dedicarle un capítulo del libro «Maestros del Flamenco», escrito en colaboración con José Blas Vega y editado por Planeta-Agostini, no dudamos en iniciar su semblanza con las siguientes palabras: «Indiscutiblemente, Paco de Lucía es el artista flamenco más popular de nuestros días. Con él la guitarra ha llegado a su cénit. Sin desvalorar lo más mínimo a los maestros de antaro, ni tampoco a la gran nómina actual de guitarristas, Paco de Lucía, poseedor de una ejecución dinámica, ha conseguido interesar y cautivar con su guitarra a los públicos más dispares y heterogéneos. Y en estos momentos, Paco de Lucía, además de ser el artista más cotizado de su género, es el más universal. La personalidad y las maneras de Paco de Lucía al interpretar han sido seguidas por la mayoría de los guitarristas que han surgido después y su estilo ha creado escuela. Paco de Lucía, pues, se ha convertido merecidamente en un mito, en un ídolo que convoca multitudes».\n\nHasta aquí el elogio de entonces, elogio que repito, porque ahora, al cabo de más de treinta años desde su participación en aquel concurso jerezano, y después de haber obtenido todos los más importantes premios correspondientes a su arte, llega el momento de los homenajes. El de la revista Candil abre la espita. Seguramente la pleitesía que se le empieza a rendir a Paco de Lucía sobrepasará su tiempo, porque es un músico andaluz inmortal, lo mismo como creador que como intérprete. Y el homenaje que esperamos resulte apoteó-sico será el que le rindan, en cualquier instante, los llamados jóvenes flamencos, puesto que para ellos ha sido luz y guía, inspiración desde el idilio de una admiración profunda.\n\nSí, amigos, como ha escrito recientemente Norberto Torres, Paco de Lucía ha sido el precursor de los nuevos grupos flamencos, debido a este razonamiento: «El grupo flamenco plantea una relación que también aparece en el jazz, la que existe entre individualidad y colectividad. El flamenco, de marcado carácter individual (recordamos que el término acompañamiento puede revelarse impropio para designar la relación cantaor/guitarrista, que es a menudo la confrontación de dos individualismos) se halla también de forma colectiva en el cuadro flamenco. ¿Qué relación existe entre cantaor/guitarrista/bailaor/bailaora/jaleo, cuando este colectivo actúa conjuntamente? Paco de Lucía aparece como el iniciador de una nueva forma de performancea en el flamenco: el grupo flamenco (que no el cuadro a la usanza clásica), por lo menos a nivel de impacto y éxito, con su tema Entre dos aguas».\n\nPrimer ensayista coetáneo de la fusión de músicas étnicas o autóctonas, con su flamenco toque vorágine —maravilla de armonía, por otra parte—, Paco de Lucía es el revolucionario clave de su arte de cara al futuro. Con él se inició una nueva era flamenco-musical. Quien no lo reconozca así, que se aplique, porque ignorarlo es imposible.",
+    "title": "Una nueva era de la música flamenca Manuel",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-24",
+    "page_number": 23,
+    "word_count": 577,
+    "article_char_count_full": 3591,
+    "article_char_count_review": 3591,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-25-left-paco-de-luc-a-un-genio-jos-n-ez-",
+    "article_text_for_review": "E1 inolvidable poeta granadino Federico García Lorca, entre sus muchos poemas dedicados al cante jondo, tiene una especial inspiración el que hace referencia a la guitarra, cuando dice: «/Empieza el llanto de la guitarra./Se rompen las copas de la madrugada./Empieza el llanto de la guitarra./Es inútil callalar./Es imposible callarla...».\n\nAl hablar de Paco de Lucía, se me han venido a la mente estas bellas estrofas lorquianas, porque cuando el genio algecreño se ensimisma intuitivamente con su guitarra, «es imposible callarla», el prodigio, el embrujo, el duende, también su guitarra tiene «sonidos negros», el arte en su ejecución, hace vibrar de emoción profunda y jonda al aficionado que posea la gracia de una exquisita sensibilidad musical.\n\nNo cabe duda, que Paco de Lucía ha sido y sigue siendo una auténtica revolución de la guitarra flamenca. El estudioso del arte flamenco Alvarez Caballero, dice muy acertadamente: Se habla de la guitarra flamenca «de antes y después de Paco\n\nde Lucía». Ha marcado una nueva etapa en la historia de este vivo instrumento. De las tres modalidades de nuestro arte flamenco: cante, baile y toque, es precisamente este último el que más ha evolucionado. Desde la afirmación rotunda y precisa de aquél extraordinario tocaor —gitano de raza y gaditano de cuna—, el maestro Patiño, la guitarra se ha hecho «pá acompañá ar cantaó», hasta simultanear esta sagrada misión, que fielmente siguieron verdaderos artífices, tocaores clásicos de la época gloriosa de la guitarra flamenca —el jerezano Javier Molina; Miguel Borrull; Manolo de Badajoz; Manolo de Huelva; Ramón Montoya y otros más que están en la memoria del buen\n\naficionado—, que sellaron con su arte momentos históricos, no solamente de «tocadores de acompañamiento», sino de un fructuoso marco creativo de composiciones, falsetas —recordemos al Niño Ricardo—, que han dejado una escuela felizmente seguida por muchos tocadores de ahora, surge la figura del solista, del concertista, que adquiere un papel de protagonista, al igual que en tiempos pretéritos era de exclusiva del cantaror.\n\nDe todos estos emperadores de la guitarra es obligado hacer una mención especial a la gran maestría del gitano navarro Sabicas, fallecido hace poco, que tanto influyese en su discípulo predilecto Francisco Sánchez Gómez, Paco el de la Lucía, el iniciador de un ciclo nuevo de la guitarra flamenca, producto de su proverbial talento y singular arte.\n\nHe aquí una conclusión de esta breve exposición: la convergencia de dos formas de expresión del sentimiento de la guitarra, la concomitancia de dos manifestaciones artísticas musicales en el propio artista, la del «tocaor de acompañamiento», —entre otros al recordado Camarón de la Isla—, con la del concertista; pura creatividad, profunda intuición de un toque por siguiriγas, soleares, tangos o bulerías, —recordemos a Melchor—, o interpretando, con una enorme personalidad, a compositores clásicos de la talla de un Manuel de Falla y últimamente al maestro Joaquín Rodrigo en su eterno «Concierto de Aranjuez».\n\nPaco el de la Lucía, sigue siendo el genio de la guitarra flamenca, me atrevería decir, como ya inidicara José María Roldán, Paco «es mucho más que una guitarra flamenca», porque ha sabido llevarla a la máxima altura y seriedad del concierto.",
+    "title": "Paco de Lucía: Un genio José Núñez de Castro",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 519,
+    "article_char_count_full": 3299,
+    "article_char_count_review": 3299,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-25-right-paco-de-luc-a-artista-y-andaluz-",
+    "article_text_for_review": "E1 pueblo que lo vio nacer le prepara un monumento en una preciosa fuente céntrica al virtuoso guitarrista de Algeciras Paco de Lucía, para perpetuar su memoria y su extraordinario arte. Y eso es bonito e incluso gratificante para todos los andaluces y, sobre todo, para los de este rincón gaditano, cuna del maestro. El campo gibralta-reño lo quiere y admira y está, sobre todo, orgulloso de su hijo predilecto que le ha dado honor y gloria a este paraíso andaluz donde saben apreciar y reconocer, en su justa medida, el trabajo de este monstruo de la guitarra flamenca. A Francisco Sánchez Gómez «Paco de Lucía», tuve yo la oportunidad, como tantos otros gaditanos, de verlo en sus primeros impulsos guitarristicos, junto con su hermano Pepe de Lucía, que se presentaban ambos con el apodo artístico de «Los Chiquitos de Algeciras», en aquel importante concurso de arte flamenco celebrado en mi tierra jerezana y en el hermoso Teatro Villamarta (hoy en remodelación) y bajo la organización de la propia\n\nCátedra de Flamencología. Recuerdo que el de Lucía ya despuntaba como un privilegiado de la guitarra y así también lo atestiguaba la crítica flamenca de por aquel entonces y donde supieron reconocer y premiar esa labor de acompañamiento con un premio muy especial en esa noche mágica en la capital del flamenco. Ello fuera quizá la iniciativa para su primera grabación discográfica y dar paso a nuevos triun-\n\nfos acompañando a grandes cantaores, o por lo menos de bastante renombre en el panorama musical andaluz. Ello le valió con ilusión para salir al extranjero con confianza y recorrer el mundo en reiteradas ocasiones con éxito apoteósico. Más tarde —como todos sabemos— fue el genial y señorial intérprete de conciertos como guitarrista flamenco y que fuera premiado por la Cátedra de Flamencología, otor-\n\ngándole el Premio Nacional y en Córdoba el del Arte Flamenco, que le hacen, junto con otros premios universales, ser el artista más popular y evolucionista en distintos países de los cinco continentes. Pero a pesar de todo Paco de Lucía, no pierde sus profundas raíces de lo nuestro y conserva con orgullo el liderazgo actual y el de todos los tiempos y por ello tiene muchos admiradores en el mundo profesional de la guitarra y quienes lo consideran un superdotado y un ídolo entre las juventudes que le siguen apasionados y ven la feliz evolución del artista. Este artista que está sobrado de técnica y de virtuosismo arrogante y al que consideran como único e inimitable. Por ello una gran escultura de Nacho Falgueras perpetuará muy pronto la señera figura de este nuestro genio en ese monumento que en fechas próximas se le quiere eregir en la bonita tierra que le vio nacer hace ya cuarenta y siete años y que hoy con ilusión proyectan sus paíssanos algecireños a este creador de arte de la guitarra flamenca. ¡Enhora-buena..., maestro!",
+    "title": "Paco de Lucía, artista y andaluz universal Antonio",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 481,
+    "article_char_count_full": 2862,
+    "article_char_count_review": 2862,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-26-left-la-guitarra-de-paco-de-luc-a",
+    "article_text_for_review": "Hace ya unos 25 años que, sin tener conocimiento previo del personaje, me llamó poderosamente la atención escuchar por la radio unos fandangos de Huelva, maravillosamente ejecutados, que resumían todas las esencias más flamencias de dicho palo, acompañadas de un compás insuperable.\n\nMe interesé, en consecuencia por el artista, adquirig algunas de sus grabaciones, y comprobé sin la menor duda de que Paco de Lucía era un guitarrista flamenco de excepción, largo de toque, perfecto de ejecución e impregnado del mejor eco «jondo».\n\nPor tanto, la virtud de este guitarrista no reside, ni mucho menos, en su metéórica ejecución, que presenta una clara predilección hacia la ejecución de imbatibles «picados»; por el contrario, se trata de un ejecutante genial, completo y equilibrado, que ha abierto nuevos caminos de extroversión a la guitarra flamenca, partiendo de cotas tan difíciles como las que establecieron previamente —cada uno a su estilo— los grandes maestros de la guitarra solista (prefiero este término al generalizado «de concierto») flamenca, tan significados como fueron Ramón\n\nMontoya, Sabicas y el «Niño Ricardo».\n\nDiversas motivaciones e inquietudes indujeron posteriormente a Paco de Lucía a salirse «de lo suyo» internándose en campos de la guitarra tradicionalmente tan alejados del mundo flamenco como son la guitarra de «jazz» y la guitarra clásica, campos ambos donde dejó valioso testimonio de su congénito sentido artístico como de su polifacetismo instrumental.\n\nEstá claro que para un artista de la talla de Paco de Lucía su propio mundo del flamenco le encorsetaba y se le quedaba pequeño, como también está claro que el artista era consciente de sus posibilidades artísticas y decidió «probarse» y demostrarse a sí mismo de lo que era capaz, poseído de sana ambición y consciente de las grandes limitaciones que presenta la dedicación exclusiva a la guitarra en su proyección flamenca.\n\nAficionado como soy a la guitarra, en todas sus versiones y manifestaciones, apolíneas o dionisíacas, Paco de Lucía me ha brindado un gran placer al demostrar, como ha demostrado, que un guitarrista flamenco de excepción también puede dedicarse a otros ámbitos artísticos sin menoscabo de su excelencia. En todo caso, pienso que se trata de un caso único, de una auténtica excepción.\n\nHe podido escuchar a Paco de Lucía interpretando a Falla, a Rodrigo, etc., y también le he visto y oído integrado con las figuras más sobresalientes del jazz y siempre he reconocido la misma personalidad artística. Hay quien piensa que tales actuaciones han contribuido a desvirtuar el flamenquismo congénito de Paco de Lucía; yo pienso que no, ya que ad-\n\nmirándole como le admiro en todo tipo de actuaciones sigo pensando que donde el artista sigue siendo más Paco de Lucía es precisamente cuando toca flamenco, con su inconfundible personalidad y estilo, que no se desdibujan. Estoy seguro de que el propio artista es consciente de ello y de que nunca se le ha pasado por la cabeza «aflojar» en el flamenco en beneficio de otros auditorios mucho más amplios —a escala mundial— y mucho más productivos desde un punto de vista económico.\n\nPaco de Lucía es grande, muy grande tocando música clásica, o de «jazz», pero donde es el más grande de todos, al menos para mí, es cuando «se suelta el pelo» y se hunde en el duende del flamenco, ya que si la música clásica tiene belleza grandiosa, la música de «jazz» tiene «swing», pero sólo el arte flamenco tiene el hondón del duende, auténtica catarsis visceral y vivencial.\n\n¡Siempre lamenté profundamente que el incomparable genio de la guitarra que fue Andrés Segovia no se dignase dedicar un simple comentario amable, no hablo de panegíricos laudatorios, a tan prodigioso e incomensurable artista!",
+    "title": "La guitarra de Paco de Lucía J",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 607,
+    "article_char_count_full": 3750,
+    "article_char_count_review": 3750,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-27-left-tres-recuerdos-de-paco-de-luc-a-",
+    "article_text_for_review": "E n tres ocasiones he compar- tido momentos de mi vida con Paco de Lucía. Fueron, han sido, momentos inolvidables para mí, de un modo u otro, que nunca he comunicado a nadie y que, ahora, cuando Candil me solicita unas líneas para un número especial dedicado al maestro de Isla Verde, he querido que esa buena afición flamenca que lee esta entra- ñable publicación los conozca.\n\nRecorréré, pues, esos tres momentos hilvanando una a modo de reflexión moral sobre lo que a mí me sugiere la música de Paco de Lucía que sólo tendrá el valor de la opinión de este radical enamorado de las músicas magas de mi tierra, del flamenco en cuya defensa, celebración y estudio he estado, estoy y estaré solidariamente unido con cuantos comparten este amor tan hermoso como inútil.\n\n1. Córdoba\n\nde invierno. Nos habíamos reunido en la Mezquita, bajo las más suntuosas bóvedas que haya sonado nadie, para grabar una actuación del guitarrista que iba a ser incluida en el capítulo correspondiente a la serie de TVE «Caminos Flamencos». El equipo técnico de la serie ultimaba los últimos detalles: luces, sombras, sonidos, amortiguados todos por la magia del momento y del lugar, componían un cuadro que, ahora, al evocarlo, parecía sacado de una leyenda de Bécquer.\n\nPaco, muy cerca del silencioso y oscuro mihrab de la mezquita, acariciaba distraídamente su guitarra\n\ny permanecía silencioso y un po- co como soñador.\n\nOnce siglos antes había llegado a Al-Andalus un hombre, Abu-l-Hasán Alí ibn Nafi, el Ziryab. Venía de Bagdad y entró en Andalucán.\n\ncía por una pequeña ciudad portuaria, Al-Diezirah al Hadra, Algeciras. Traía todo el bagaje de la tradición musical oriental, el respeto consciente a unas raíces milenarias, pero supo transformar toda esa herencia en desobediencia creativa, en angustia de artista, en orgullo de individuo.\n\nNo soy el único que ha realizado al Ziryab con Paco de Lucía. Es evidente que se puede hacer esa conexión entre el músico mesopotamio que entró por Algeciras y el músico de Algeciras que estaba en Córdoba, junto a unas piedras que, posiblemente, viera tallar el Pájaro Negro, y que ha desobecedido la tradición musical de la guitarra flamenca por respeto a esa misma tradición desobediente.\n\nAl cabo de un rato, la guitarra de Paco de Lucía sonó por las arquerías de la Gran Mezquita y fundió, en un solo instante, el milenio pasado que empezó con Ziryab y el milenio futuro del flamenco.\n\n2. Sevilla\n\nFue una de las últimas noches de la IV Bienal de Arte Flamenco, la que no es aludida por casi nadie, la que parece estar condenada al olvido porque cometió el delito imperdonable de no ser dirigida por José Luis Ortiz Nuevo. Hasta tal punto eso es así que, leyendo el otro día un periódico, me maravilló la asombrosa capacidad de olvidar que tienen algunos artistas flamencos que afirmaban no haber sido invitados nunca a participar en una Bienal. Es el caso de Chato de la Isla o de Lebrijano. Los dos actuaron en la IV Bienal.\n\nLa noche que nos importa actuaba en el Patio de la Montería de los Reales Alcázares el Niño de la Lucía, Paco, con su grupo, con su hermano, con todo su arte musical a cuestas, con toda su responsabilidad. En la Bienal anterior no se congregaron los duendes. Ese conjuro mágico, como de brujas de Macbeth, no había hecho corro alrededor de las manos de Paco, del corazón de Paco, de la inteligencia de Paco. Y no hubo comunicación fluida entre el artista y el público. Paco lo sabía mejor que nadie y estaba tenso, pálido, riguroso; paseaba entre los arriates perfumados por una luna pálida de septiembre y rumiaba su propio orgullo de artista inmenso.\n\nA la hora de salir al escenario, un aire de determinación empezó a mover las esbeltas siluetas de los cipreses eternos del patio mayor del Alcázar y, al pie de la rampa de acceso, le pregunté, más por deferencia que por convicción, si quería algo. La respuesta, puesto ya el pie en el estribo, fue breve, rápida, absoluta: «Sí. Irme».\n\nY subió. Y se sentó en la silla. Y echó levemente el cuerpo hacia atrás. Y se fue. Y ya no era un hombre tenso, ni pálido, ni siquiera un hombre. Su mano izquierda empezó a enviar órdenes a unos hilos de música y la derecha fue ejecutando aquellos recados y nos dejó a todos hermanados, limpios, consolados para siempre.\n\n3. San Fernando\n\nEra una mañana sofocante del verano andaluz. Habíamos ido muchos a dar tierra al cuerpo de un hombre, de un amigo, de un inmenso cantaor. Saludé brevemente a Paco que era, posiblemente, el más amigo de todos, el que mejor conocía aquella voz prodigiosa, aquel milagro del mejor cante gitano-andaluz, aquella polea mineral de donde surgía un manantial de aguas turbulentas.\n\nEstuve con él unos pocos minutos. Le pregunté cómo se encontraba. En esos momentos hay que echar mano de la retórica para refugiarnos un poco del diluvio de la pena. Paco no levantó los ojos, ensimismado como estaba en no sé qué recuerdo, en no sé qué recodo de la memoria. La palabra salió tranquila, escuela, definitiva: «Solo». Nada más me dijo eso. Me dio un abrazo. Siguió andando. En un recodo del camino alcancé a ver su espalda encorvada, su pelo ceniciento, su inconfundible aire de solitario.\n\nMeses más tarde, a requerimiento de Félix Grande, tuve que salir, como otros muchos, a defender una amistad, una relación humana y artística, que algunos desaprensivos estaban intentando empozoñar con el terrible veneno de la calumnia. Nunca le agradeceré bastante a Félix la oportunidad que me dio para salir al paso de tales insidias, para unirme a los amigos de Paco. A los amigos de la verdad, de la justicia. De la hermosura.\n\nYa no lo he vuelto a ver. Pero sigo sintiendo, y lo sentiré mientras mi alma no se me vuelva piedra, un afecto especial por Paco. Un orgullo inmenso por ser Paco de esta tierra. La misma tierra a la que pertenecemos todos.",
+    "title": "Tres recuerdos de Paco de Lucía Juan Alberto",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-27",
+    "page_number": 26,
+    "word_count": 1010,
+    "article_char_count_full": 5820,
+    "article_char_count_review": 5820,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

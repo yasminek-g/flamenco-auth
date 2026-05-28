@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_09::A17",
+    "article_text_for_review": "WEDDING BELLS RESULT IN FLAMENCO CONCERT by Juana De Alva The happy event of uniting two hearts in matrimony last month also united several flamenco artists here in San Diego, resulting in an impromptu concert. Flamenco dancer, Esmeralda Enrique, arrived from Toronto, Canada to attend the wedding of her sister Claudia. From Mexico City, came another sister, (dancer) Carla, and brother-in-law (guitarist-singer) Manuel Heredia-Canestro. This trio put together a program during their stay which was enjoyed by many Jaleístas. The free concert was presented at the Educational Community Cultural Complex Arts Theater on August 15th at 3 p.m. (the",
+    "title": "-ESMERALDA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "25",
+    "page_number": 29,
+    "word_count": 99,
+    "article_char_count_full": 646,
+    "article_char_count_review": 646,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A18",
+    "article_text_for_review": "A MAN WITH CONVICTION by Juana De Alva Roberto Amaral and company played to a packed house of enthusiastic fans at the Wilshire Ebell Theater in Los Angeles June 14th. Roberto is a man with a vision and despite what traditional purists may feel, he has the courage to put his ideas into practice. In Roberto's words this concert was \"dedicated to those who support not only the tradition-alism, but also the evolution of Spanish music and dance.\" Roberto's approach was to take the audience through this evolution in his program -- opening with classic Spanish pieces (Castilla and Triana), gradually incorporating more flamenco style, and culminating in \"Flamenco Moderno\". ACT I - TIEMPOS CLASSICOS Castilla, danced by Rosal Ortega, Laura Torres, Mari Sandoval, Rubina Carmona, Ambar Gozales, Irene Heredia and Valencia, was pure classic style -- rounded arms, tilted torsos and cocked heads -- whirring castanets -- bodies forming graceful geometric patterns in space. In classic, the essential element is design -- precision -- in flamenco, it is feeling. Roberto followed in Triana, again in plastic classic style. He was joined by Mari Sandoval for Canto de Los Pajaros, a dream sequence or Spanish Fantasy. Mari floated on and off in a filmy blue gown captivating and eluding her persuer. As costume colors became more intense, so did the dancing. In Ritmo, performed by Rosal Ortega and Laura Torres in gold and black, some of the classic feeling began to give way to flamenco. Fandango, danced in red and black by Roberto, Valencia, Irene, Rubina, Ambar, Linda Rosa and La Dajad was almost jazz-flamenco with strong rhythm and sharp angular movements -- a choreographic gem in simplicity and succinctness. ACT II - CONCIERTO FLAMENCO There is something to be said for the fast-moving, non-stop, no intermission,",
+    "title": "-AMARAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26",
+    "page_number": 30,
+    "word_count": 297,
+    "article_char_count_full": 1820,
+    "article_char_count_review": 1820,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A19",
+    "article_text_for_review": "by Caballero Bonald PART IV - CASTILLEJA DE LA CUESTA Translated by Brad Blanchard During one of our frequent returns to Sevilla, we went to nearby Castilleja de la Cuesta, a short distance from Triana. We were especially interested in gathering some information about the flamenco in this gleaming white pueblo, so close",
+    "title": "ARCHIVO - PART IX",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "27",
+    "page_number": 31,
+    "word_count": 53,
+    "article_char_count_full": 321,
+    "article_char_count_review": 321,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A20",
+    "article_text_for_review": "Here is the complete listing of cantes, cantaores, and guitarists on the anthology: \"History of Cante Flamenco: An Archive.\" The order of cantes is as found on the Everest version; other releases may have different sequences (some had 7 records instead of 5), but the information is still valid. If you don't have this record set (you should), the list can give you an idea of the immense variety of cantes that are sung and the complexity of flamenco. We thank Brad Blanchard for this information. Record 1A--Martinete-Carcelera: Juan Talegas --Toná chica y Martinete: José Menese --Debla: Rodolfo Parrita --Martinete: Tía Añica la Piriñaca --Toná Litúrgica: Montesino el Lobo --Martinete y Cambio de Toná: Juan Romero Pantoja --Corrida: José Reyes el Negro --Toná grande: Rodolfo Parrita lB--Siguiriyas de Diego el Marrurro y del Loco Mateo: Tía Añica la Piriñaca;g. Parilla de Jerez --Siguiriyas de Paco de la Luz y de Manuel Cagancho: Juan Talega; g. Eduardo el de la Malena --Siguiriyas de Joaquín la Cherna y Cabales del Fillo: José Menese;g.Pedro el del Lunar --Siguiriyas de Manuel Torre: Francisco Mairena; g.Eduardo el de la Malena --Siguiriyas de Padre Manuel: Tomás Torre; g. Eduardo el de la Malena 2A--Siguiriyas Cruzadas de Curro Dulce y Diego el Marrurro: Luis Torres Joselero; --Siguiriyas de Paco la Luz y Francisco la Perla; El Perrata de Utrera; g. Eduardo el de la Malena --Siguiriyas Cruzadas de Jerez; Juan Romero Pantoja; g. Luis Morales --Soleares de Joaquín el de la Paula; Manolito de María; g. Fernández el Negro --Soleares de Merced la Serneta y Juaniqui; Fernanda de Utrera; g. Eduardo de Malena 2B--Soleares de Alcalá; Juan Talega; g. Eduardo el de la Malena --Soleares de Jerez y Lebrija; Tía Añica la Piriñaca; g. Parrilla de Jerez --Soleares de Antonio Frijones; José Menese; g. Pedro el del Lunar --Soleares de Cádiz; Pericón de Cádiz; g. Pedro el del Lunar --Soleares de Utrera; Manuel de las Angustias; g. Eduardo de la Malena --Soleares de Córdoba; José Moreno Onofre; g. José Morales 3A--Soleares de Alcalá, Cádiz, y Jerez; Francisco Mairena; g. Eduardo de la Malena --Soleares de Joaquín el de la Paula y de Enrique el Mellizo; Tomás Torre; Eduardo el de la Malena --Soleares de Juan Breva y del Tenazas de Morón; Fernando Montoro; g. Luis Pastor --Soleares de Alcalá y Utrera; El Perrata de Utrera; g. Eduardo el de la Malena --Soleares Cruzadas de Jerez; Manuel Borrico g. Parrilla de Jerez --Soleares Cruzadas de Alcalá y Jerez; Santiago Donday; g. Nino de Rizos 3B--Polo y Soleá apolá; Juan el Lebrijano; g. Antonio Arenas --Cana: Amos Rodríguez; g. Benítez de Alcalá --Liviana Grande y Cambio de María Borrico; Manuel el de Angustias; g. Eduardo Malena --Liviana Chica y Serrana; Luis Caballero; g. Antonio de Sanlúcar --Saeta de la Monica; Antonio Almendrito --Saeta del Gloria; Jerónimo el Abajao --Saeta de Puebla de Cazalla; Montesino el Lobo --Saeta de Arcos; Manuel Zapata 4A--Tientos; Rafael Romero; g. Pedro del Lunar --Tangos; Luis Torres Joselero; g. Diego el del Gastor --Bulerías de Cádiz; Manolito el de María; g. Fernández el Negro --Bulerías de Jerez; Tía Añica la Piriñaca; g. Parrilla de Jerez --Bulerías de Utrera; Bernarda de Utrera; g. Eduardo el de la Malena --Alboreá; Luis Torres Joselero; g. Diego el del Gastor --Fandangos Gitanos; Fernanda de Utrera; --Fandangos Gitanos: Fernanda de Utrera; g. Eduardo el do la Malena 4E--Alegrias: Pericón de Cádiz; g. Pedro el del Lunar --Alegrias de Espleta: Amos Rodríguez; g. Joaquín de Parada --Mirabrás: Juan el Lebrijano; g. Antonio Arenas --Romeras: María Vargas; g. Paco Cepero --Cantiñas de Pinini y Estribillos de Alegrias: Luis Torres Joselero; g. Diego el del Castor --Caracoles: Antonio Almendrito; g. Niño de los Rizos --Tangos de Cádiz: Pericón de Cádiz; g. Pedro el del Lunar --Alegrias de Córdoba: José Moreno Onofre; g. José Morales 5A--Jaberas: Juan el Lebrijano; Antonio Arenas --Rondeñas: Rafael Romero; g. Pedro del Lunar --Bandolás: Ángel de Alora; g. Paco el de la Isla --Malagueña de Enrique el Mellizo: Pericón de Cádiz; g. Pedro el del Lunar --Malagueña de Fernando de Triana, Francisco Lema Fosforito, La Trini, Perotas: Ángel de Alora; g. Paco el de la Isla --Malagueña de Antonio Chacón: Luis Caballero; g. Antonio de Sanlúcar Fandango de Lucena: José Moreno Onofre: g. José Morales --Verdiales de Juan Breva: Ángel de Alora; g. Paco el de la Isla --Taranto de Almería: José Menese; g. Pedro el del Lunar --Taranto de Manuel Torre: Antonio Calzones; g. Antonio de Sanlúcar --Taranta de Jaen: Manuel Zapata; Juan Caro 5B--Taranta de las Minas: Luis Caballero; g. Antonio de Sanlúcar --Cartageneras: Juan el Lebrijano; g. Antonio Arenas --Granaina: Luis Caballero; Antonio Sanlúcar --Fandangos de Huelva: María Vargas; g. Paco de Antequera --Villancicos Flamencos: Amos Rodríguez; g. Benítez de Alcalá --Sevillanas Rocieras: Rafael Ruiz y Antonio Romero; flute/drum, Rafael el del Paterna --Garrotín: Rafael Romero; g. Pedro el del Lunar --Petenera Corta y Larga: Pericón de Cádiz; g. Pedro el del Lunar --Farruca: Rafael Romero; Pedro el del Lunar --Guajira: José Moreno Onofre; g. José Morales --Tanguillos de Piyayo: Ángel de Alora; g. Faco de la Isla",
+    "title": "CONTENTS OF THE ARCHIVO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "28-29",
+    "page_number": 32,
+    "word_count": 842,
+    "article_char_count_full": 5189,
+    "article_char_count_review": 5189,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_10::A1",
+    "article_text_for_review": "by Adela Vergara \"He, like Serrano and Sabicas, is a performer from whom one can really learn something. And this, after all, is often the best kind of entertainment.\" --The San Francisco Chronicle Mariano Córdoba's command and feeling for the guitar is equalled by his personality. He has the humility found only among the truly great. His optimism, sense of humor, and \"caballerosidad\" are only a few of the many virtues that make him a beloved man. I can say without exaggeration that everybody loves Mariano. His witty philosophy brings to my mind this episode: A dancer and mutual friend, feeling very depressed, told him that unkind things were being said about her dancing. He laughed and remarked, \"That's good! As long as they are talking about you, even if it's bad, you have nothing to worry about. When they stop talking, that's when you should start worrying!\" Mariano was born in a Castillian village. During the first year of the Spanish Civil War, his father died, leaving him to support his mother and sisters. \"I could scarcely read or write and I had no other way to make a living except by playing the guitar.\" After a year of study with a great teacher of the guitar, maestro Rafael Nogales, and practicing eight hours a day, he began playing with small professional groups. In the 1950's Mariano became guitarist for the greatest dancer of them all, Antonio, and a member of his troupe. He also worked in Barcelona and Madrid with such outstanding artists as dancer Flora Albaicín and cantaor Antonio Molina. His career then flourished with extensive tours of Europe and America. However, he considers his debut at the Teatro Español de Madrid to be the highest point. In 1960 he signed a recording contract with Capitol Records and in 1969 signed another contract with Oak Publications in New York to publish his books on flamenco music; he has published: (1) Escuela del Flamenco -- A complete method for the flamenco guitar, available from the author, Mariano Córdoba, 857-39th Ave., San Francisco, CA 94121. (2) Flamenco Guitar-Guitarra Flamenca (Now available at music stores.) (3) His third book, Traditional Flamenco Guitar, Vol. I, is ready for publication by the author and will be available this year. Devoted to teaching for quarter of a century, Mariano says, \"My greatest interest is in teaching my students to feel the great pleasure that can come from playing this marvelous instrument.\" In giving some helpful tips to students, he recommends learning the basic rhythms to perfection -- so well that they become second nature, \"until you can do them in your sleep.\" He adds, \"It is helpful to mark your compás with your foot. If you have the opportunity to play for dancers, so much the better, because it forces you to emphasize the beat (compás). For a beginner, fancy variations are not so important. That would be like putting on the roof before the foundation.\" For fingernail care Mariano gives a number of valuable hints and recommends the following methods and products. He comments, \"Taking care of your fingernails is a very important and delicate issue which many people don't pay too much attention to. What I recommend to my students, first of all, is to always carry a soft grain metal file (I use Diamond Deb brand) and to file the nails every three days, in a half-moon shape, rounded, and covering the flesh of the tips only -- not beyond. After filing the nail, I always smooth it with the finest black sand-paper (obtainable at hardware stores). \"For conditioning the nails, I use a product obtainable at ladies' beauty shops called 'Oil de Lore Organic Nail Hardner.' It contains Oleic acid, Palmetic acid, vitamins E and A, Iron, Thiamin, Riboflavin, and Niacin. Before my regular weekly performances, I use Max Factor's 'Stronghold Vinyl Nail Guard,' and remove it after the performance to give the nail a chance to breathe. The use of 'Crazy Glue' could be dangerous for the acid could cause permanent damage. The use of false nails is not recommended either, except in the case of emergency. The most important thing is to maintain the nail short, rounded and smooth. That's the trick.\" Mariano has taught hundreds of students, some of whom have excelled, like John Thompson, Greg Stitt, Glicerio Mera, Dona Rey, and some have acquired international fame like the great David Jones, Ricardo Peti, Freddy Mejía and others. Mariano comments on the quality of guitars. \"In my opinion the finest guitar made in America is that of Lester DeVoe. The Japanese guitar is good for the student be-",
+    "title": "U.S.A: CALIFORNIA: Tony Vakos, Juan Torre, Elena Villablanca, Richard Parker, Rosalie Branigan; ILLINOIS: Ridgeville Park District; LOUISIANA: Agustin R. Guitart; NEVADA: E. Ford; NEW MEXICO: Mrs. Alfred T. Peaslee Jr., Donald & Eva Encinias; NEW YORK: Stephen Janofsky; OHIO: Libby Lubinger; TEXAS: Amos Dubrawsky; FINLAND: Osmo Aaltonen; MARIANO CORDOBA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_10",
+    "year": 1981,
+    "language": "en",
+    "article_type": "article",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 772,
+    "article_char_count_full": 4548,
+    "article_char_count_review": 4548,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

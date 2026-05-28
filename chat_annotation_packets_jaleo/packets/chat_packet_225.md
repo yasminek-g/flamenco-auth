@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1991_10::A3",
+    "article_text_for_review": "THE LANGUAGE OF SPANISH DANCE By MATTEO Marcellus Vitucci With Carola Goya Foreword by Richard Cragun Drawings by Louis Gioia Flamenco Guitar Music by Peter Baime Piano Arrangements by Marc Saint-Germain “Although we’ve been watching Spanish dancing for decades, we must confess that what we don’t know about it could fill a book. Recently, it has, in fact: a big, remarkable volume from the University of Oklahoma Press.”—The New Yorker. “Your book, The Language of Spanish Dance, is an extraordinary accomplishment—not only because of your profound and untiring investigation on the subject, but also because it is so easy to understand. Congratulations! I am certain that future Spanish dancers and dance teachers will forever be grateful to you.”—José Greco. “It is a valuable resource for dancers, teachers, critics and aficionados. It embraces all aspects of Spanish dance with clearly defined dance terms, drawings and unusual photos.”—María Benítez. “A great gift from America to Spanish culture! So wonderfully researched that I learned many things. When, oh when will it appear in Spain?”—Pilar Rioja. \"A wonderful addition to the small world of books on Spanish dance: A big ole! to MATTEO.\"—Teo Morca. \"With a flick of a wrist, the rotation of a foot, the high arching of the back, one knows exactly what is being spoken; the universal language of dance. How ephemeral it all is.\"—Judith Jamison. \"This book is so well presented, with simple descriptions and clear illustrations, that it must be easily comprehensible to everyone... The book is a delight and a'must.' \"—Dame Margot Fonteyn. “The quality of this work is of the highest order. It is a landmark publication in the literature of Spanish dance... Matteo and the University of Oklahoma Press are to be congratulated on this groundbreaking accomplishment.”—Dance Chronicle. $65.00 MATTEO (Matteo Marcellus Vittucci) is a unique figure in the world of multiracial dance and ethnomusicology. Years of international concertizing, choreographing, lecturing, researching, and writing on these subjects has won him recognition by the New York Times as “the most versatile artist in the field of ethnic dance.” Carola Goya is most recognized for her pioneering efforts which introduced Spanish dance on the concert stage in the United States and many other countries. Their collaboration has produced this remarkable book. Write for FREE catalogs. From your bookseller, or University of Oklahoma Press Dept. MAC9—1005 Asp Ave.—Norman, OK 73019-0445 Add: $1.50 Post/hand. Accept: MC/Visa/AE/Checks JALEO - Vol. 1.2 \"With the weariness of death I crept to one side; with the fingers of my hand I tore at the wall...\" --Marinete TABERNAS The name tabernas, sometimes applied to this period of flamenco history (1800-1850), is meant to suggest that the art became semi-public at this time. In Triana, during the first half of the nineteenth century, we begin to discern some of the individual artists and interpreters of the early flamenco -- Tio Luis el de la Juliana, Jan Pelao, the Caganchos, and the master Planeta. Many of these artists were blacksmiths and met in taverns -- tabernas -- late in the day to sing, and it is a compelling image that crowds of passers-by would gather outside a tavern to hear the singing through the windows. Moreover, not only would the residents of Triana hear this cante gitano, but Sevillanos from the other side of the Rin Guadalquivir would cross the Triana Bridge on horseback or in carriages for an evening of revelry. This era of relative openness bore its literary witnesses, who in a series of memorable volumes, painted vivid, first-hand pictures of the time. Among the earliest to evince interest were foreign travelers -- for the most part British -- who acted in accord with Dr. Samuel Johnson's exhortation of some 75 years earlier: \"Na country is less known (than Spain) to the rest of Europe...I would have you go thither.\" George Borrow in the 1830s, Richard Ford in 1845, aad Walter Thornbury just after mid-century demonstrate a typically Victorian curiosity, infused with a sense of natural superiority, in their descriptions of gypsy singing aad dancing. From the accounts written during this time, it is clear that flamenco was viewed as quaint, primitive, romantic, aad rather incamprehensible. Such was not the case, however, when Estebanez Calderon wrote \"Escenas Andaluzas\" in 1847. As a sympathetic Spaniard, he made aa attempt to be historical and observant when writing about an evening of song and dance he saw in a tavem in Triana. CAFE CANTANTE By the middle of the nineteenth century, flamenco developed a new manifestatinn and outlet — the commercial performance. \"Cafe Cantantes\", or cafes-for-siaging, sprang up in large numbers throughout Spain, as the non-gypsy audience discovered and delighted in this new-found form of entertainment. Because of the cafe cantante performance often required as many as fifteen or more artists, the demand for perfirmers became so great that non-gypsy professionals began to perform in significant numbers. This era, which lasted until roughly 1910, is often termed the \"Golden Age\" of flamenco. So intense was the competition between performers and amang eafes that extraordinary heights of artistry and creativity were reached. The artists of this period are considered, in retrospect, to have been among the finest in flamenco history. To an aficionado, such names as El Nitri, La Malena, Silverio, Enrique el Mellizo, Estampio, Javier Molina, and Paco Lucena, ta name but a few, evoke images of a level of performance and creativity rarely see a after their time. It was not unusual, in the earliest years, far a cafe cantante to have half a dozen performaaces a night and for these in include animal aets, magicians, jugglers, and folkloric song and dance in addition to flamenco. By the 1870s and 1880s, however, flamenco itself had come to be the sole raison d'etre for the huadreds of cafe cantantes found in Spain.",
+    "title": "Epochs of Flamenco History.....4-",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "7-8",
+    "page_number": 7,
+    "word_count": 964,
+    "article_char_count_full": 5993,
+    "article_char_count_review": 5993,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_10::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAlarmed by these trends, Manuel de Falla, Federico Garcia Lorca, and others staged the famous Concurso of Granada in 1922 in an attempt to discover and reward authentic artists. This effort, although valiant, couldn't stem the general decline in the art of flamenco, a decline which persisted for three more decades. By the middle of the century, many aficionados were convinced that the art had been compromised so badly that it would never recover its genuine form and voice. At this time, large touring companies were promoting a picturesque and exciting, but highly theatrical version, of flamenco dance. The recording industry, meanwhile, had been supporting flamenco singing for many years. Its support, however, was marked by a strong emphasis on the gaudy, the sentimental, and the\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Marchena\"]\n\nmised so badly that it would never recover its genuine form and voice. At this time, large touring companies were promoting a picturesque and exciting, but highly theatrical version, of flamenco dance. The recording industry, meanwhile, had been supporting flamenco singing for many years. Its support, however, was marked by a strong emphasis on the gaudy, the sentimental, and the lightweight, as personified in the enormously popular figures Pepe Marchena, Antonio Molina, and Conchita Piquer. In sum, flamenco had attained broad popularity in its most commercial and theatrical form, but the castanets and polka dots bad obscured and largely negated its deeper, more profound impulse. RESURGENCE After some seventy years of decline, flamenco began to recover something of its original personality during the decade of the 1950s. Fundamental to this recovery was the founding of the Tablao Zambra in Madrid in 1954 by Feman Casares. Until it closed in 1975, this club was a mecca for those seeking some of the best and most honest flamenco of the time. The artists who worked at the Zambra, the guitarist Perico\n\n[ENDING CONTEXT]\n\nthe rehearsal, right? We had better leave quickly! Sr. Ruiz was in the midst of choreographing for the Maria Benitez Spanish Dance Company and graciously took time out from his busy schedule to have this interview. -Editor- DANCERS TEACHERS GUITARISTS Modern Flamenco Records To learn flamenco you have to listen to it! Access to the world of flamenco awaits you in four volumes that review most Spanish recordings released 1970-1990. Send for information about catalogues, \"The Living Flamenco Anthology\", books, and more. Special offer for teachers. Paco Sevilla PO Box 4706 San Diego, CA 92164\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Interview: Joaquin Ruiz.....8-",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "9-11",
+    "page_number": 9,
+    "word_count": 1697,
+    "article_char_count_full": 9927,
+    "article_char_count_review": 2732,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Marchena"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1991_10::A5",
+    "article_text_for_review": "On stage were fireworks of a different order: They were rhythmic rather than random outbursts conveying emotions sharpened through the centuries. Flamenco is every bit as explosive, and many times more resonating, as anything bought at a roadside stand. The atmosphere of the intimate Maria Benitez Club is swiftly charged when the houselights are doused. In darkness the zapateado begins, the pared-down beat of heels and palms. And even before spotlights come up on darkly clad, starkly fierce figures, we know that something heavy is going down. And that we are somehow involved. Frankly, traditional flamenco of this caliber is and should be a little on the scary side, and like a Hopi Snake Dance, it's impossible to stay aloof. Flamenco, an anguished but never despairing response to the persecution of Spanish Gypsies that began in the 16th century, calls upon chivalric code of honor and human dignity that smart bombs cheered on by yellow ribbons just can't hold a candle to. Maria Benitez knows like a water-witching dervish how to tap into that torrent of pride and passion. It's her depth of feeling, rather than virtuosic brilliance alone, that has propelled the Taos-born dancer to international stardom, the most celebrated prima ballerina assoluta of flamenco of her generation. For more than two decades now, following world tours, she has returned home to Santa Fe like a prodigal summer storm, one of the perennial wonders in this city's cultural climate. Even so, through three acts of her current show, I thought the queen might be in trouble - the fire quenched or reduced to banked embers of fame. Then, having coyly flirted with the routine, which is anathema to flamenco, Benitez erupted again, reducing all doubts to ashes. Her present company is not the ideal support vehicle of years past. Chief among the pluses is \"Chuscales,\" a flamenco guitarist of consummate artistry and sensitivity. He sets the emotional tone for each set and then follows the improvising soloists like a coach spotting an acrobat. Paco Pinon, who sings the wailing \"coplas\" of lost and unrequited loves, is less strong than clear, and somehow doesn't manage to drench the stage in woe. Both male dancers, Angel Atienza and Alfonso Simo, return from last year and both are scintillating in their own right. Simo has balletically expressive hands that counter-point his crisp foot work and perfect mask of disdain. Atienza's later solo is even more amazing in terms of timing, with instant accelerations and abrupt terminations symbolizing precise emotional control. Monica Flores and Ramona Garduno are too invisible as the other female dancers, leaving one to speculate whether they are holding back or being stifled. Alfonso Simo",
+    "title": "Flamenco at the Picacho - in Retrospect.....10-",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 445,
+    "article_char_count_full": 2733,
+    "article_char_count_review": 2733,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_10::A6",
+    "article_text_for_review": "\"Chuscales\", the heartbeat of the show",
+    "title": "On Stage: Paco Peña in Australia",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 14,
+    "word_count": 6,
+    "article_char_count_full": 38,
+    "article_char_count_review": 38,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1991_10::A7",
+    "article_text_for_review": "Authentic Flamenco Skirts La Chana is the name creating quality costumes for New York City's leading Flamenco professionals. Now, you too can wear the very best. Our skirts are of the finest quality fabric and workmanship. La Chana continues to work with and design for the top Flamenco professionals and students. Style No. 1 La Flamenca Classic eight-gored black Flamenco skirt with 6\" circular cut ruffle of red, hot pink or turquoise. Circumference at point of ruffle attachment approximately 176 inches. Made of high quality black poly-cotton. Price: $125 Style No. 2 La Sevillana Fitted yoke with attached bias-cut black skirt with circular bottom ruffle. Circumference at point of ruffle attachment approximately 230 inches. Made of supple black poly-knit. Price: $125 Sizing Chart <table><tr><td>Size</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td></tr><tr><td>Waist</td><td>24</td><td>25</td><td>26</td><td>28</td><td>30</td></tr><tr><td>Hip $ ^{*} $</td><td>33</td><td>34</td><td>36</td><td>38</td><td>40</td></tr></table> *9* below waist standard measurement NOTE: Please specify length from waist to top of ankle bone. Shorter lengths on request. All prices include sales tax and shipping.",
+    "title": "Paco de Lucia",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1991_10",
+    "year": 1991,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15",
+    "page_number": 15,
+    "word_count": 154,
+    "article_char_count_full": 1211,
+    "article_char_count_review": 1211,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

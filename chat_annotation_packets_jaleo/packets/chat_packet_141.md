@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_05::A6",
+    "article_text_for_review": "APRIL LOS AN JUERGAS ACROSS THE NATION APRIL JUERGA in LOS ANGELES",
+    "title": "LOS ANGELES JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 12,
+    "article_char_count_full": 66,
+    "article_char_count_review": 66,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A7",
+    "article_text_for_review": "by Lynn Wozniak The Philadelphia juerga of March 15, 1982, at the Meson Don Quixote Restaurant was a brilliant success with owner-dancer Julia Lopez coordinating the festivities of several hundred enthusiastic aficionados along with guitarist Carlos Rubio. The number of guitarists and dancers has multiplied in these past months. Hardly a spot was vacant as dancers Jose, Elaina, Julio, Lynn, Denise, Ann Margarette, Allison, Martin, Edwardo, Basia and others danced sevillanas, fandangos de Huelva, alegrias, and guajiras accompanied by guitarists Pete, Shirley, Paul and Howard. Julia sang and did a rhumba that inspired even the shy newcomers to dance. We had an added surprise when Dr. Muniz from Sevilla danced a fancy rendition of sevillanas with his lovely daughter. Later, dressed for mystery in exotic black, Julia Lopez danced zapateado accompanied by Carlos Rubia and finished with a superb alegrias de Cádiz demonstrating intricate rhythms and fantastir heelwork. In all of Philly, I doubt if there is a more spirited group of people offering spontaneous creativity. * * *",
+    "title": "PHILADELPHIA JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 15,
+    "word_count": 169,
+    "article_char_count_full": 1085,
+    "article_char_count_review": 1085,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A8",
+    "article_text_for_review": "by Mary McConnell Rugged mountains, orange trees, sandy soil -- it looked like Spain. As my family and I moved to Tucson, Arizona, I wondered if I would find a new community of flamenco here. Leaving aficionado friends in Akron and Columbus, Ohio, had been traumatic. Goodbye Columbus! I hoped that the landscape and street names like Camino Seco and Calle del Ciervo meant that I would find flamenco in Tucson. This is a bilingual community close to the Mexican border. A perusal of the newspaper and the yellow pages in Tucson turned up nothing -- but surely -- Yes, flamenco in Tucson is not only alive but it is sparkling, competent and growing. On March 7 a juerga was held at one of Tucson's most elegant homes, the home of Mrs. Mary Sloane. A circular drive surrounding a Spanish fountain took us to the front door. Inside was a large, elevated, stage-like living room with a superb wooden floor. They said it needed refinishing anyway -- I hope so as the wood was lovely and was about to be invaded by shoes with little nails in the toes and heels. The juerga was unusual in that it started early in the evening, 7:30, to accommodate people traveling back to Phoenix later on. Another unique quality was the eclectic style that emerged later in the evening. Patricia Majan, wearing an electric blue costume, danced a smooth, graceful soleares, followed by cana, bulerías and winding up with a fiery rumba. Eduardo Santiago, a professional guitarist from Phoenix, accompanied her. Patricia Majan is a professional flamenco dancer and teacher. She studied in Spain and has toured Europe with Antonio Castillo and Juan Antonio de los Reyes. She and Eduardo Santiago perform here and in Phoenix. Tucson's Sadhana played guitar also, sometimes together with Eduardo, sometimes alone. Sadhana and Teya, both students of the baile, surprised us with an impromptu Latin mime and dance of seemingly their own origin. I danced bulerías and enjoyed the energy of the group as they joined in palmas. An artist from Tubac, Barbara Ann Gurwitz, emerged from the audience to dance soleares in a flowing Isadora Duncan style. Nothing Spanish looking about her -- she wore beige culottes -- but pure in her compás. Kathryn Ferguson, a professional Arabic dancer in Tucson, danced Arabic to tarantos. She dances with an intriguing Arabic flair. Later in the evening she performed an Arabic dance, accompanied by her musicians, Susan Wilson on the drums, Nezar Elias on the oud. Arizona's juergas, so far, have been fast-paced and exciting. FOSFORITO (III QUINCENA -- ) excess. Cantes por soleá from Alcalá, Utrera, Juanqué, Fríjones, and Enrique el Mellizo, done with strength, cleanly, without a single fault. Por cantinas he did cantes of Aurelio and of Espeleta that would make Senhor José el de Sanlúcar turn in his grave. Por tarantos he was excellent. In the peteneras he let down a little, perhaps as a consequence of his previous effort, but then rose again for tangos, doing impeccably some cantes of Pastora. He finished por bulerías; even though they are not his strength, he did styles from Cádiz with good aire and a cante from Jerez with real flavor. It has been some time, a long time, since Fosforito has sung as he did in this Quincena. For some time I have wanted to write not only of his honesty and \"caballerosidad\" (being like a gentleman), but also of his quality as a cantaor. With Chiquetete and Manuela Carrasco the man from Puente Genil offered us a night to be excited about. With nights like this, el cante, el baile, and la guitarra -- we can't forget, it would be unpardonable; the outstanding labor of Julio Carrasco, Joaquín Amador, Rafael Mendiola, and Manolo Domínguez -- is saved. To the pessimists -- like a hippy who asked for her money back because Chiquetete had done the \"Tu y yo\" and she had come to hear cante -- this affirmation may seem crazy. But when one demonstrates the ability to sing well, it is permissible, with an eye on the gallery, to enjoy some license -- if it is well done and kept in its proper place. JUANITA REINA have seen what is normal in the theater: In the second show, everything has improved considerably. The \"Day of the Anthology\" closed the Quincena and was preceded by a certain fear. But the fear vanished when Chano Lobato opened his mouth por soleá. The cantes of Cádiz -- Enrique, Aurelio, Paquirri, El Morsilla -- has in the voice of this man a perfect resonance, a delicious flavor \"a sal y horizonte abierto\" (the salt and horizon characteristic of Cádiz), and of whiteness and remoteness. Por alegrías, with his mind fixed on the technique of the mourned for Aurelio, Chano was tremendous, and, por bulerías, he \"remató una faena sensacional\" (closed a sensational bullfight). With him, claiming constant applauses, was the guitar of Manolo Domínguez. Chocolate followed, in the first show accompanied by Pedro Bacán, and in the second by Manolo Brenes. Antonio offered two performances that were diametrically opposed. In the first he was at a level that a man of his class should consider to be unworthy. In the second show -- he recognized what had happened earlier, saying, \"I don't want a repeat of what happened in the first show\" -- Antonio sang por soleá, fandangos, and siguiriyas as, offering quality. He didn't round out a night to be remembered, of course, but he did well. THE FRAME STATION The Finest in Custom Picture Framing 20% DISCOUNT TO ALL MEMBERS OF JALEISTAS 1011 FORT STOCKTON DRIVE OWNER TOM SANDLER (714) 298-8558 SAN DIEGO, CALIFORNIA (Hillcrest/Mission Hills area)",
+    "title": "ARIZONA JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15-17",
+    "page_number": 16,
+    "word_count": 953,
+    "article_char_count_full": 5562,
+    "article_char_count_review": 5562,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A9",
+    "article_text_for_review": "EL CANTE Y SU HISTORIA (from: ABC, Nov. 25, 1981; sent by Gordon Booth) Angsl Alvarez Caballero has laid out, possibly, the most lucid and accurate History of Cante Flamenco in this book published by Alianza Editorial as part of their collection, \"Libro de Bolsillo.\" MATILDE CORAL OPENS A NEW DANCE ACADEMY: INÉS Y LUIS TO BE HONORED (from: ABC, Nov. 13, 1981; sent by Gordon Booth; translated by Paco Sevilla) by Miguel Acal Although 13 may be a disagreeable number for many, it has on this occasion a clear and pleasant flamenco aspect. Matilde Coral and Aafael el Hegro celebrate the opening of their new school of dance on Calle Castilla, numbezs 82 and 84. The official inauguration will take place at 8:00 PM. A little later, at 10:00 PM, Inés and Luis, the brother and sister from Utr. a, nephew and niece of Fernanda and Bernarda, and who have been finding small, but well-deserved success with their group, will be honored at the home of Pepe Camachao.",
+    "title": "NOTES FROM ANDALUCIA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 19,
+    "word_count": 169,
+    "article_char_count_full": 962,
+    "article_char_count_review": 962,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_05::A10",
+    "article_text_for_review": "PATTER DETRACTS FROM FLAMENCO DANCE (from: The Miami Herald, Apr. 1, 1982; sent by H. E. Huttig) by Laurie Horn You'd never know a flamenco dancer with a name like Pascual Olivera came from Canton, Ohio -- unless, of course, he opened his mouth. Olivera did Wednesday in an hour-long performance for the Miami-Dade Community College Lunchtime Lively Arts Series. But, for all the fancy heelwork, a stand-up comic he's not. Based on the informal, talk-to-the-audience format, Olivera and his wife, Angela del Moral, used Wednesday, it's hard to put together what their full two-and-a-half hour concert looks like. (They will dance at a said-out performance tonight for the Palm Beach Festival.) Fifty costume changes are one of the big draws of the evening, according to Olivera's on-stage comments. In Wednesday's performance, del Moral appeared in at least a dozen ruffled Spanish dresses ranging from white seguins to hot embroidered pink. Transplanting ethnic dance from the village square or cabaret to the stage has always been a difficult task. Folk dances are made mainly to be danced, not performed on stages; they sometimes appear too simple and repetitious unless jazzed up a bit. But there's a fine line to tread between theatricality and carniness. Although the talkative and kibitz-prone Lunchtime Lively Arts audience loved Olivera and del Moral's flashy costumes, many of their vaguely Spanish numbers in the first part of the program (tc canned Bizet and Rodrigo) didn't seem to have much clear link to dances actually being done on the Iberian peninsula. The second portion, including flamenco guitarist Juan Serrano and singer Cacharrito de Málaga, was so delightful and spontaneous I wondered why these dancers felt they need all the theatrics. Flirting with the audience, phany doubletakes and cornball mime are unnecessary for a dancer as fine as del Moral. She carves the space with precision and suppleness: both her sinuous arm movements and her pointillist heelwork emanate from a proud, strong back. Olivera is a little weaker. In the traditional Spanish dances, neither his back nor his arms created the illusion of immense resistance against an unseen pressure. And although his hselwork boiled up tension in the fiamenco finale, it was impossible to see what the rest of his body was doing because only his feet were spotlighted.",
+    "title": "CONCERT REVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_05",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 20,
+    "word_count": 381,
+    "article_char_count_full": 2358,
+    "article_char_count_review": 2358,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

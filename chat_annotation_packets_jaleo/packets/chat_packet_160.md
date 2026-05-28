@@ -1,0 +1,165 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1983_01::A13",
+    "article_text_for_review": "NEWS FROM OUR MEMBERS New York: The Casa De España presented a program called \"Mundo Flamenco\" in November with guitarists Pedro Cortes, Manolo Varon and Diego Castellon, dancers Manolo de Cordoba, Liliana Morales, Maca \"la Gitana,\" Carmen \"La Piconera,\" and singers Luis Vargas, Pepe de Malaga and Domingo Alvarado. On Novembec 27th Rincon de España presented cantaor Agujetas With dancer Mara Sultani and guitarist Robert Reyes. Pedrito Cortes, Estrella Morena and Pepe de Malaga have relocated in Florida. (from George Ryss) Baltimore/D.C. area: Regular performances in the area include: The Macis Mozales Spanish Dance Company (3 dancers, 1 alternate, guest guitarist) performs in area elementary and high schools and senior citizen centers under the auspices of Young Audiences, Inc. (Baltimore area); the Raquel Peña Spanish Dance Company (3-1D dancers, guitarist Fernando Sirvent) performs in Baltimore/D.C./Virginia schoolz, and will be appearing at the Kennedy Centre Terrace Theater, March 15-16, 19B3. Fernando and Raquel also perform Mon.-Sat. evenings at El Tio Pepe in D.C. (1st show 8:30pm). Natalie and Evelina alternate performing at El Bodagon in D.C. -- Carlos Ramos is the guitarist. The Baltimore area was also treated to a performance of the Boston Flamenco Ballet at Patterson High School. The first half of the pcogram was a peformance by a three-man Tuna band [Spanish minstrels]. The second half was devoted to guest artist Oscar Nieto's \"Gypsy Life,\" a well-paced, informative look at the history of flamenco. (from Sandra Nicht)",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 239,
+    "article_char_count_full": 1556,
+    "article_char_count_review": 1556,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_01::A14",
+    "article_text_for_review": "Alfonso de Bourbon, well-known La Jolla bon vivant and self-styled \"Goodwill Ambassador from Spain,\" who is the moving farce behind the Society, acted as master of ceremonies for the evening. Following an introductory talk on the Society, he showed color slides of San Diego's Sister City, Alcalá de Henares (the birthplace of the other Diego of note -- this one for whom our city is named) and vacious Spanish scenes. He then cead telegrams from Mayor Pete Wilson and California Secretary of State March Fong Bu expressing their enthusiasm for the Society and their sincere regret at being unable to attend the function. A brief talk followed describing a tour of Spain which Don Alfonso will host in May, 1983. Stops will be made in Segovia, Alcalá, Madrid, Toledo, córdoba, Sevilla, Jérez and Gcanada, with plenty of time for sightseeing, wine, tapas, music and flamenco. It sounds like a great time for Ibeciaphiles, and, as Don Alfonso said, \"Who needs to ever come back?\" Further information on the tour may be obtained from the Chula Vista Travel Center, 297 \"K\" Straet, Chula Vista. Phone: (619) 426-68D0. Lo último, pero no menos importante, Mr. Reynolds Heriot of the Casa de España introduced the high point of the evening: a flamenco performance by some of San Diego's artists. Tocaor Paco Sevilla opead the show playing per peteneras. As always, he presented an arresting figure -- master of his instrument, communicating effortlessly the soul of his music. The combination of technique, feeling and immense presence which are Paco's hallmark were evident in this song. The free and thoughtful introduction, graceful tremolos and cccisp runs, followed by the stack, evocative melody, moved inexorably toward an exciting rasqueado finish. Peteneras was the introduction to a delightful evening of flamenco soag and dance; a spirited jota by Sandra Aguayo and Yasmin Kapadis (students of Juanita Franco), whose regional costumes were authentic and charming, as was their dancing; the ever-sparkling Julia Romero (\"Tia Julia\" according to Reynolds Heriot) doing a lively pasodoble with her usual charm; Juanita Franco, a dancer of formidable presence and technique, dancing por alagrias, accompanied by Paco Sevilla; Jasús Soriaoo giving a surprise twist to the well-known classical guitar solo \"Romance Anónimo\" by turning it into a cumba and siaging it; cantaora María Jozé joining Paco, Juanita, Sandra and Yasmin por fandangos de Juelva; all followed by a cousing finale por savillanas, with Jesús singing, Paco accompanying, and ali of the dancers -- plus la María -- peforming.",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 415,
+    "article_char_count_full": 2593,
+    "article_char_count_review": 2593,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_02::A1",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSOLO PERFORMANCE POWER [from: THE NEW YORK TIMES, October 10, 1982] by Anna Kisselgoff The solo dance concert, as everyone knows, is the most difficult theatrical presentation for any dancer to sustain. It is no surprise that solo concerts are far and few between. In dance history, traces are left by only the most charismatic -- Isadora Duncan, Anna Pavlova, to name the most obvious. The footprints of lesser solo dancers leave no mark once their time is gone. There is no company to recall their name. The choreography itself seldom become sufficiently unglued from their bodies to be passed on. The power to hold the stage alone is rare. Technique is not the issue. Some indefinable inner force exuded by the dancer makes the difference. Recently, two very disparate solo dancers, neither of\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_02 | trigger=\"purity\"]\n\nhe choreography itself seldom become sufficiently unglued from their bodies to be passed on. The power to hold the stage alone is rare. Technique is not the issue. Some indefinable inner force exuded by the dancer makes the difference. Recently, two very disparate solo dancers, neither of them American, held their own in brief New York seasons. One is the Mexican-born Spanish dancer, Pilar Roja. Pilar Rioja is a dancer of great concentration and purity. Her smile is always tight-lipped. Her austerity is her beauty. Absent from New York for several years, she was presented now by Repertorio Español at the Gramercy Arts Theater and had such a success that there are plans for her return in March. All this was accomplished without a company of dancers, without theatricalized ballets, without sets and without extravagant costumes. In her simplicity, she radiated depth. She came, in fact, with an in\n\n[EVIDENCE WINDOW 2 | retrieval_hint=COMM_04 | trigger=\"matinée\"]\n\nerforming arts. On the popular level, duende could be thought of as \"soul.\" Its very indefinability is its essence. Yet when a performer possesses it, it is easily recognized. It is no disservice to as inspiring an artist as Miss Rioja to say that she has days when duende is more apparent than at other times. I saw the last part of her program twice. It was an all-flamenco section. And the difference between the electricity on the final Saturday matinée and an earlier night was obvious. One saw it in the mesmerized eyes of her fine singer, Pedro Angel, and of her two subtle guitarists, José Negrete and Emilio Perujo. Miss Rioja had only to circle the stage to establish her authority. Every movement left an imprint. In true flamenco style, she had no castanets. The eye was drawn rather to the outline of her expressive fingers. Her hip swayed out, the stately and startling power of her heelwork took over. Her body jacknified for a second. Stamping across the floor, she flung her shawl above her head onto her shoulders. By contrast, the Farruca, a male dance performed in male dress, was all ritual, a mysterious incantation exp\n\n[ENDING CONTEXT]\n\nof wind hits and blows over the sand.\" Miss Rioja spoke of her approach to programming the other day, as well as of her background. Because her English is limited, René Such, Repertorio Español's Cuban-born artistic director, was interpreter. The duende concert had its origin in a lecture-demonstration on Garcia Lorca's esthetics prepared by Miss Rioja's husband, the poet Luis Rius. Miss Rioja provided choreographic examples of points mentioned in the text and was so successful that the lecture was expanded into a full-evening theatrical event accompanied by singers, guitarists and a pianist.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "PILAR RIOJA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 1187,
+    "article_char_count_full": 7090,
+    "article_char_count_review": 3741,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_02",
+        "family": "AUTH",
+        "trigger": "purity"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "matinée"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1983_02::A2",
+    "article_text_for_review": "CIRCULATION DRIVE As we reported last month our advertising campaign is off the ground and $ \\underline{\\text{Jaleo's}} $ financial outlook is improving. However, our circulation has essentially remained the same for the last two years. We solicit the help of our readers in spreading the word about $ \\underline{\\text{Jaleo}} $ by passing on the gold form enclosed in $ \\underline{\\text{Jaleo}} $ to prospective subscribers. (Place your name on the back of this form. For each new subscriber you refer to us, your subscription will be extended one month.) Encourage those who are free-loading by reading your copy of $ \\underline{\\text{Jaleo}} $ to order their own subscription. Send us names and addresses of prospective subscribers so that we can introduce them to $ \\underline{\\text{Jaleo}} $. Any publication must have a healthy circulation to survive. --Juana De Alva ● ● ● EL CABRERO PARDONED In verification of and follow-up to a report in the January Jaleo [\"Letters\"] of the imprisonment of El Cabrero for swearing, we include the following from ABC, November 13, 1982 [sent by Gordon Booth]: The cantaor José Domínguez, \"El Cabrero\" was pardoned by decision of the Consejo de Ministros. The pardon was communicated by means of a telegram sent yesterday morning to the Court of Córdoba. José Domínguez had been condemned to six months of detention, later changed to two, for having used an expression considered to be a blasphemy during a recital. Among the people who had asked for the pardon was the Archbishop of Sevilla, Monsignor Amigo Vallejo.",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 252,
+    "article_char_count_full": 1559,
+    "article_char_count_review": 1559,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_02::A3",
+    "article_text_for_review": "FLAMENCO VIDEO CASSETTES Dear Jaleo, About the video tape of Paco de Lucía... (Letters: Jáleo, November 1982), I bought it in London in 1977 in a video Hi-Fi shop. I saw it in many Hi-Fi shops at that time. I do not know if they sell this tape in the U.S.A. (I live in France.) The records \"Flamenco Opera\" and \"Al Viento\" of Manolo Sanlúcar can be found in any record shop in Spain. The \"Flamenco Opera\" is a double L.P. with the participation of Lebrijano, Rocio Juardo and the guitar of Enrique Melchor. Ho Tong Nag Paris, France HOW TO START A FLAMENCO ASSOCIATION IN YOUR COMMUNITY Dear Jaleo, We would appreciate it, if you could send us any information on how to start a Jaleistas in the Detroit area. We have a few families who are interested in a group. Mrs. Irene Unrau Redford, MI Editor: We started the San Diego Jaleistas by contacting everyone in the area who we knew to be involved or interested in flamenco, including local Spaniards who were not necessarily involved in flamenco but added a lot of ambient and enthusiasm. We had an informal pot-luck and put our proposition to those present to get together on a monthly basis and put out a small newsletter to communicate between members. (This \"small\" newsletter grew into Jaleo.) We met in private homes for several years but have been seeking public places to meet in the last few years because it cuts down on the work, clean up, etc. The Los Angeles chapter meets every two months in Mexican restaurants and advertises their juergas in Jaleo. We try to maintain a supportive atmosphere in which the more advanced help and encourage the newcomers. It is, of course, more enjoyable for all if many people get involved in the planning and putting on of the juerga and beyond that it is a process of trial and error to see what works and what doesn't. Perhaps other groups around the country will write in their suggestions and experiences -- what is working for them and what isn't. 1349 Franklin Bellingham, Washington 98225 Ph. (206) 676-1864 AN EXCITING ONE WEEK WORKSHOP-FESTIVAL WILL BE TAUGHT BY TEODORO MORCA IN ALBUQUERQUE, NEW MEXICO, MARCH 21-26TH, FOR COMPLETE INFORMATION, PLEASE CONTACT: EVA ENCINIAS, 3110 EDITION, N.E. ALBUQUERQUE, N.M. 87107 TEL: 505/345-4718 OR OFFICE, 277-6143",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 393,
+    "article_char_count_full": 2264,
+    "article_char_count_review": 2264,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

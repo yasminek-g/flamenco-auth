@@ -1,0 +1,179 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-03-3-left-manuel-vallejo-en-el-centenario-",
+    "article_text_for_review": "Cuando las hojas del almanaque, en su continuo e insaciable avance, nos diga que estamos a quince de octubre de 1991, justo y gozoso será recordar que se cumple el centenario del nacimiento de don Manuel Jiménez Martínez de Pinillo, conocido en el flamenco como Manuel Vallejo, una de las primerísimas figuras del cante y, posiblemente, una de las personalidades más interesantes de nuestro amado arte andaluz.\n\nCuando asumimos que cualquier expresión artística, en cualquiera de sus manifestaciones, tiene su grandeza en su capacidad de conmover, es decir, en que los sentimientos afloren en el ser humano, pocos emisarios habrá tenido el arte flamenco, que se nos hayan adentrado con más facilidad en los recovecos del alma, como es el caso de Manuel Vallejo. Si añadimos que la genialidad consiste en traspasar la frontera entre lo humano y lo divino, tampoco estará de más el calificar de genio a este macareno universal.\n\nQuienes tuvieron la inmensa fortuna de escucharlo de viva voz (esa espina, por mi edad, la tendré siempre clavada en mi alma flamenca) hablan y no acaban de su dominio esplendoroso de los cantes, de su maravilloso sentido del compás (podría haber triunfado en el baile como hizo en el cante), de la atmósfera etérea que creaba a su alrededor cuando cantaba, despertando la admiración lo mismo en un teatro, que en una reunión de cabales o perfumando la primavera sevillana desde un balcón cantando sus inimitables saetas. Vallejo se embarca en la nave de don Antonio Chacón, y desde el maravilloso legado del patriarca jerezano, construye unas formas musicales flamencas verdaderamente sublimes. Sus detractores (no olvidemos que sólo los mediocres no los tienen), tratan en vano de «minar» su innegable reinado flamenco, con acusaciones tan baladías como las peculiaridades de su voz, la concesión de la segunda llave del cante o, en el colmo de los despropósitos, situarlo como distorsionador del flamenco puro a través de la Opera Flamenca. Afortunadamente, este año y coincidiendo con su centenario, aparecerá el libro que sobre Vallejo ha escrito don Manuel Centeno (sin lugar a dudas su mejor biógrafo), que a buen seguro pondrá las cosas en su justo término. Manuel Vallejo, como sevillano de pro, sufre desde su retiro celestial, la incomprensión y el olvido más humillante, lo que no es de extrañar en esta tierra de María Santísima, donde sólo los mediocres reciben homenajes y parabienes, mientras que sus mejores hijos (Cernuda, los Machado, Velázquez...) gozan de mayor consideración de Despeñaperros para arriba que en la tierra que les vio nacer.\n\nLa Peña Torres Macarena de Sevilla, en su permanente afán de rendir pleitesía a cuantos genios hicieron posible el milagro del Flamenco, constituye una comisión para preparar los actos del Centenario de Vallejo, e invita a Junta de Andalucía, Ayuntamiento de Sevilla, FAF, peñas flamencas, entidades privadas y aficionados en general, a que se sumen a los actos que tal evento merece.\n\nCuando la Isla de la Cartuja, sede de la Expo sevillana, se va poblando de innumerables pabellones, bueno será que Sevilla destine un trozo de piedra, en forma de monumento, a uno de sus hijos más ilustres: Manuel Vallejo.",
+    "title": "Manuel Vallejo en el centenario de su nacimiento",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 523,
+    "article_char_count_full": 3198,
+    "article_char_count_review": 3198,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-03-5-left-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n1 No es José Carlos de Luna una persona fácilmente deglutible. Aurelio, con socarrona greguería, lo define como al andaluz «que más se ha pasado en todo». Lo que el escritor tiene de melosamente patriarcal en sus libros y artículos, lo tiene de descortés y subitáneo para la difícil función de presidente de un jurado flamenco en ¡Jerez de la Frontera!\n\nAcepto que el desorden —también en gran parte a él atribuible— provocó que se formara una muchedumbre flamenca a la que había que seleccionar a corto plazo. Pero para todo hay un límite congruo. De Luna se especializó en acreditar o desacreditar valores por modo extemporáneo. Encaró el hacinamiento como una tienta en lugar de una respetuosa y cuidadosa preselección como es la que merecían aquellos buenos senores registrados en Jerez. De\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"ritmo\"]\n\nada táctica selectiva. Comprobé, en suma, que José Carlos de Luna no profesa cordialidad alguna a los cantaores. Los mira con viejo hastío. No los respeta. Curiosamente confiesa tener pánico a la función de jurado. De ahí su tendencia a repartir generosamente los premios. Por cesión del de Miguel Primo de Rivera, se manejó con doble voto. Esto le facilitó —además de su calidad de presidente— dar a la preselección, y aun a la selección final, un ritmo insensatamente expeditivo. Tanto vale, pues, decir que cayeron muchos valores en el camino y treparon al éxito más de dos o tres figuras desde mi punto de vista enteramente prescindibles. 2 Repito que la preselección del concurso jerezano fue singularmente bochornosa para cantaores ya hechos o a mitad de camino. Bastaba un solo detalle dudoso en un solo tercio o de un solo cante para que la eliminación se produjera automaticamente. El solo temple constituía un riesgo. Prevaleció un aire de campo de concentración que José Carlos de Luna se encargó de reencender con sus desplantes de grosero señoritismo. Juan Lavao, anterior concursante cordobés, reaccionó violentamente frente a aquel sistema policíaco. A pleno sol, sin ambiente, sin vino ni jaleo, casi siempre singuítarra, amontonado en pobladas trastiendas, le pidieron sin entonación previa que cantase por serranas. Lavao recordó la dignidad climática de Córdoba, se negó a hacerlo y resolvió marcharse sin más. No fue un caso aislado. 3 Su presión conceptual preferida era esta: Estimo necesaria una preparación técnica para el jurado que le toque emitir su voto en materia de toque y baile. Pero en materia de cante es ine vitable la apreciación subjetiva. No hay principios preconvenidos. Los juicios son todos excusables porque nacen en un dos por tres de la sensibilidad del autor. Sobre comisión de disparate normativo, aquel señor no entró a considerar siquiera los aspectos subalternos y mudadizos de la palabra «sensibilidad» dicha a secas. 4 No soy amigo de\n\n[EVIDENCE WINDOW 2 | retrieval_hint=AUTH_02 | trigger=\"pureza\"]\n\nAntónio Chacón a uno flamenco, acabarían con todos los premios posibles. Una vez embalado... 5 Se le advirtió a José Carlos de Luna (en esto coin- cidimos con Butler) cierta in- decisión en la captación, análisis y juicio de los cantes y sus intérpretes. Cuando la unanimidad iba a ser total para dar el voto a Jarrito, a última hora decidió utilizar su doble voto para contrapon- ner de candidato a Pepe de Algeciras, remitiéndose a raz- zones de pureza tan peregrin- nas y enredadas que nadie alcanzó a entenderlas. En el caso de la competición lírica, no puso debida atención, fi- jándose más en el sonido fla- menco de las coplas (su vara de medir era la «gracia audi- tiva»...) que en las formas y valores poéticos propiamente dichos. 6 Mis preferencias flamencas van en dirección de los cantes levantinos con previa advocación chaconiana al grupo de Málaga. No soy muy partidario de las serranas porque exigen tres tercios precisos que el común de los cantaores no practican. La caña y el polo tienen indudable grandeza y no creo en su origen culto como se viene diciendo de un tiempo a esta parte. Respeto seriamente a los cantes a palo seco. Por esa razón reaccionó firmemente contra el Manqui cuando salió a escena para cantarlos con acompañamiento de guitarra. No cameló a Terremoto en ningún momento. Desestimó sus serranas y particularmente sus «caóticos» martinetes. «Se ha ido para Roma y está chalao» lo dijo tres\n\n[ENDING CONTEXT]\n\nque es «aceptable». La creo innocua en materia flamenca. La descripción concreta de un cantaor «aceptable» implicaría, arrastraría a un absurdo dibujo retórico. En el cante pasan o no pasan cosas. No hay arbitrismo posible.\n\n30 Algunos espectadores suelen buscar instintivamente un aislamiento auditivo. El verdadero aficionado huye de la promiscuidad. Estos espectadores se acurrucan en rincones estratégicos, oyen con los ojos entornados, con un sobreentendimiento directo con el concursante, evitando, en suma, comunizar un goce tan directo e íntimo. Son testigos invisibles y por eso auténticos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-7",
+    "page_number": 4,
+    "word_count": 3507,
+    "article_char_count_full": 21938,
+    "article_char_count_review": 5103,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "ritmo"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "AUTH_02",
+        "family": "AUTH",
+        "trigger": "pureza"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-8-left-jos-antonio-d-az-fern-ndez-chaqu",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEllos, los protagonistas, dicen...\n\nRafael Valera Espinosa\n\n—Lógico es que tus inicios flamencos se hayan producido en el seno de tu familia, ¿cómo fueron?\n\n-¿Quién se lo llevó?\n\n—El primero se lo llevó un muchachito que no era ni fue cantaor. Lo que pasó es que el cura de los salesianos le tenía mucha simpatía. El salió cantando por Antonio Molina y yo por las cosas de mi padre. Claro, los aficionados que allí había hicieron los comen-\n\n—Mi padre tenía un bar en Algeciras que le llamaban «El Cuarenta y Uno». Mi madre murió cuando yo tenía diez años. Como consecuencia de esto, mi padre se retiró una temporada del cante. Por aquel bar pasaban todos. Allí conocí a Pastora, a su marido Pepe Pinto, a Melchor, a Pepe Marchena que era muy amigo de mi padre. Recuerdo que cuando Pepe iba a\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"segundo\"]\n\npe Pinto, a Melchor, a Pepe Marchena que era muy amigo de mi padre. Recuerdo que cuando Pepe iba a Algeciras decía: «Que llamen al Flecha de Cádiz que ya mismo estoy allí». Aquel día mi padre vendía en el bar una barbaridad. Y así fue como me fui metiendo de lleno en este mundo del flamenco. Pero antes, con siete años y con mi hermano que también se llamaba El Flecha de Cádiz, cantamos en un concurso que organizaron los salesianos y me llevé el segundo premio. Me acuerdo que me tocó Ramón de Algeciras y que decían que habían hecho trampa, que me tenía que haber llevado el primero. Tarios de que había habido trampa. Esa fue la primera vez que yo pisé un escenario. La cosa es que mi padre no quería porque la vida del artista de aquella época era muy distinta. Me encontré con que mi tío El Chaqueta me decía lo mismo... Pero yo seguí en mis trece. Y así, hasta los diecisiete años en que entré en «Zambra». Formé parte de «Zambra» porque Pericón se enteró de cómo yo cantaba y porque, además, necesitaban un cantaor para irse, en el sesenta y cuatro, a la feria mundial de Nueva York. Pericón le dijo a mi padre: «Antonio, yo me he enterao de cómo canta tu hijo y queremos que esté con nosotros». Mi padre muy reacio como siempre, dijo: «Bueno, yo se lo diré». Así fue cómo me Después murió mi padre y con doce años me tuve que venir a Madrid. Empecé a trabajar de camarero en la «Venta Manzanilla», donde paraban entonces todas las figuras del cante. Con todo lo que tenía oído y lo que por aquel tiempo aprendí, además de lo que escuché en casa de mi tío Antonio «El Chaqueta», pues me fui haciendo cantaor. Lo que tenía claro desde que tuve uso de razón es que iba a ser cantaor. A mí me preguntaban: ¿Tú qué vas a ser? Y contestaba: cantaor. Así como mi hermano decía que mataor de toros, yo, cantaor. uní a ellos y estuve en «Zambra» todo el tiempo que ellos estuvieron fuera. Seguidamente empezaron a salirme contratos para cantar fuera y yo los firmaba porque, además, Manolo el de Huelva me aconsejaba que saliera fuera para que no me apoltronara. Así fue como empecé a recorrer todo el mundo. He estado cuatro veces en Japón, dos veces en la Unión Soviética, de cuya primera vez recuerdo que era cuando no iba nadie y que había que sacar un pasaporte especial. Y también he estado en otros muchos países. En el año 1980 estuve en el Concurso Nacional de Córdoba, el único concurso donde he estado de profesional y tuve la suerte de conseguir tres primeros premios. Y ya de ahí empezaron a llamarme a Madrid para cantar en los colegios mayores, en las peñas, etc. —De los tiempos de la taberna de tu padre: ¿Qué te ha quedado? —Muchas cosas. Recuerdo la bronca que le echó la Niña de los Peines a su marido. Pepe Pinto estaba malo y el médico le había prohibido que bebiera. El caso es que mi padre y él se enzarzaron en una buena conversación y copa va y copa viene. A las cuatro de la tarde se presentó Pastora y le lió la bronca. Le echó la culpa a mi padre que no sabía que el Pinto estaba malo y rec\n\n[ENDING CONTEXT]\n\nencontrarme allí a un amigo que estuvo haciendo la mil comigo. La gracia está en que este amigo mío, mientras duró la mili se la pasó en el calabozo. También había uno como de mi cuerpo y me pidió ropa porque iba a salir y mientras apuntaba la dirección me estaban quitando las gafas por detrás. El caso es que le mandé el traje y me lo devolvieron diciéndome que en vez de salir iba para el penal del Puerto con cuarenta años más. Y conste que no me importaría ir mañana otra vez. Para finalizar quisiera decirte que me gustaría que ese dicho que dice: Nadie es profeta en su tierra desapareciera.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "José Antonio Díaz Fernández, «Chaquetón»",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-10",
+    "page_number": 8,
+    "word_count": 2907,
+    "article_char_count_full": 15414,
+    "article_char_count_review": 4642,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-11-left-el-flamenco-descrito-en-1850-por",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nArie C. Sneeuw En 1852, el que luego sería célebre compositor y musicólogo belga François Auguste Gevaert (1828-1908) dio a la prensa un breve estudio de la música española de esas fechas, en el que también dedica bastante espacio a la música popular, particularmente a la de Andalucía, en unas páginas, apenas conocidas aún, de gran interés para la historia y teoría del flamenco. El escrito, publicado en el Boletín de la Real Academia Belga de Ciencias, Letras y Bellas Artes, es uno de varios informes en que el joven compositor rindió cuentas ante el Gobierno de su país de un viaje de estudios que había realizado con una beca de dicho Gobierno por varios países europeos. En el informe que nos concierne aquí, presenta los resultados de sus indagaciones musicales en tierras españolas, donde\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publicada\"]\n\nemblanza de su autor. En 1847, François Gevaert había ganado —a la temprana edad de diecinueve años— el concurso nacional de composición musical de su país, lo cual le valió la beca para el mencionado viaje de estudios, que el joven laureado efectuó del 1849 al 1851. Pocos años más tarde se estableció en París, donde en 1867 llegaría a ser nombrado director musical de la Opera. La ópera cómica era el género de mayor relieve en su obra hasta ahí publicada, que además comprendía cantatas, música para órgano y algunas obras para orquesta. Entre estas últimas, una que compuso estando en España, Fantasia sobre motivos españoles, que según su biógrafo movió al Gobierno español a condecorar a Gevaert con la Cruz de Isabel la Católica y llegó a conocerse bastante en la Península. El musicólogo español Rafael Mitjana la calificó de «pieza brillante, de rico colorido y orquestación pintoresca, que durante mucho tiempo figuró en el repertorio de los grandes conciertos»². Después Gevaert se dedicaría, más que a la creación musical, a la musicología, terreno en el que se convirtió en una gran autoridad. Fue director del Conservatorio de Bruselas y publicó, entre otros títulos, manuales de armonía y de canto llano, así como estudios monográficos sobre la música de la Antigüedad y sobre música religiosa antigua. Su informe de 1852 ha pasado casi completamente desapercibido como fuente de información flamenca, hasta el punto de no figurar en ninguna bibliografía sobre el tema. Sin embargo, lo citaron unos pocos tratadistas, casi todos ellos auto\n\n[ENDING CONTEXT]\n\nel de su tonalidad y dualidad en el de sus características relativas a armonía. Desde luego, las interesantes apreciaciones al respecto del musicólogo habrán de ser contrastadas más detenidamente (y por otros más expertos en musicología que el que esto escribe), y muy en particular lo que dice sobre armonía, por ser una faceta del cante aún completamente inexplorada.\n\nDe todos modos, no parece sino que el breve estudio pionero de François Auguste Gevaert constituye un valioso aporte, tanto en el aspecto histórico como en el estructural, a nuestros conocimientos del singular arte andaluz. ■\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El flamenco descrito en 1850 por François A. Guevaert",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-24",
+    "page_number": 10,
+    "word_count": 8996,
+    "article_char_count_full": 54601,
+    "article_char_count_review": 3183,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicada"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-14-right-homenaje-p-stumo-a-rafael-romero",
+    "article_text_for_review": "Homenaje póstumo",
+    "title": "Homenaje póstumo a Rafael Romero «El Gallina»",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 2,
+    "article_char_count_full": 16,
+    "article_char_count_review": 16,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

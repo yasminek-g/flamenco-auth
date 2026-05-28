@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-11-12-left-musa-del-baile",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«En España existe un evidente divorcio entre los hombres de las letras, intelectuales, figuras representativas de la vida nacional y los grandes artistas. Algo se ha mejorado últimamente, si bien que da aún mucho por hacer»\n\n(Marrero, 1958)\n\nEste pensamiento introduce el enigma de España en la Danza Española, pero estas afirmaciones, no hubiesen tenido vigencia real con la desaparecida musa del baile, Encarnación López Júlvez (1945). En ella se unió la tradición del baile popular y del flamenco con los nuevos valores y propuestas, emergentes de la Generación del 27.\n\nLa existencia de un número alto de mujeres de gran espíritu, inteligencia, cultura y arte no es más que poner fechas y nombres a mujeres excepcionales de nuestra patria, desde Melibea, Catalina de Aragón, Paulina García,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"mujer\"]\n\nos valores y propuestas, emergentes de la Generación del 27. La existencia de un número alto de mujeres de gran espíritu, inteligencia, cultura y arte no es más que poner fechas y nombres a mujeres excepcionales de nuestra patria, desde Melibea, Catalina de Aragón, Paulina García, Concepción Arenal hasta Luisa Sánchez Saornil o Lidia Falcón y tantas otras que emprendieron la tarea de despertar de su letargo dorado y del anclaje del pasado, a la mujer campesina y popular española, abriendo las puertas a la modernidad, a la vida social y pública y al desarrollo de su propia personalidad y autoestima. Sin embargo, la mujer artista, la bailarina o bailaora no ha sido suficientemente reconocida y valorada en su aportación a cualquier movimiento cultural y artístico en el que ha dejado sus señas de identidad. A pesar de todo, estas señas de identidad inspiraron a pintores, músicos, escultores, diseñadores, poetas, escritores inmortalizándolas para siempre. Encarnación López Júlvez «La Argentinita» representa a este tipo de mujer que supo unir su don artístico del baile con las corrientes vivas y con los valores, emergentes de la Generación del 27. Una generación, cuyo impacto resuena en la mentalidad y conciencia actual. La Argentinita continúa esa larga tradición del cante y del baile flamenco y popular, mantenida por vía oral, y la transforma con las aportaciones e innovaciones de su momento, provocando un cambio personal o «mímesis» en palabras de José Bergamín. Su aportación consistió en detectar ese sentimiento trágico de la vida, ocasionado por el malestar social subterráneo\n\n[ENDING CONTEXT]\n\nnatural en la que baila. Un maestro de bai-\n\nle andaluz enseñaba a una inglesita fina y bonita y hasta con «gracia a su manera». Un día le preguntó La Argentinita cómo progresaba la niña: «Mu bien. Es mu inteligente, y comprende que desde aquí hay que llevar la mano hasta aquí arriba. Pero para no perder tiempo, va tó derecho». Hizo una pausa y sentenció: «Baila contraprodusente» (Madariaga, 1972).\n\nEste secreto natural y oculto en la fragilidad de su cuerpo, como pluma en el aire, convierte a La Argentinita en intérprete inimitable. Con razón, los Quintero la llamaron «la musa del baile».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La Argentinita: Musa del Baile",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 1088,
+    "article_char_count_full": 6495,
+    "article_char_count_review": 3221,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "mujer"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-11-13-right-imperio-argentina-entrevista",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLola Buendía\n\nImperio Argentina sólo es un seudónimo, por el que se la conoce en el mundo artístico, pero ella le gusta que le llamen Malena.\n\nTiene un apellido de origen inglés: su padre era gibraltareño y sus abuelos, de Manchester. En los comienzos de su vida artística, Imperio Argentina se hacía acompañar a la guitarra por su padre, Antonio Nile y, ella dice, que la vena artística, su gran pasión por ser artista, se la debe, sobre todo, a su madre. Su madre era Rosario del Río, que cantaba flamenco puro como nadie, pero que nunca llegó a destacar porque en su casa no se veía bien lo de ser artista. Un día se escapó a Buenos Aires en un barco, harta de limpiarle el uniforme y sacarle brillo a las botonaduras de su hermano que era guardia civil y que se oponía a que cantara en un\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"participar\"]\n\npasión por ser artista, se la debe, sobre todo, a su madre. Su madre era Rosario del Río, que cantaba flamenco puro como nadie, pero que nunca llegó a destacar porque en su casa no se veía bien lo de ser artista. Un día se escapó a Buenos Aires en un barco, harta de limpiarle el uniforme y sacarle brillo a las botonaduras de su hermano que era guardia civil y que se oponía a que cantara en un teatro. Malena siempre está dispuesta a conversar, a participar con su imagen y su presencia en muchos actos públicos, siempre que tengan un valor humano, cultural o artístico. Conoci a Imperio en Benalmádena, hace tres años, y me sorprendió su manera de cantar y la vitalidad que posee para estar casi dos horas en un escenario, actuando. Hoy la he llamado para entrevistarla sobre un personaje de su época: Encarnación López, Argentinita. Malena acepta encantada. Es un placer escucharla. Tiene tantos recuerdos, ha vivido tanto... Posee una voz dulce, llena de matices, producto de ese entrenamiento frecuente que aún ejercita y que hace que siga actuando con éxito. —Malena, ¿conociste a La Argen-tinita? ¿Qué relación tuviste con ella? —Eramos alumnas de la misma academia de baile. Ibamos con la profesora, Julita Castelao, en la calle Jardines, de Madrid. Su hermana y Encarnación, iban a la clase preferente; mi hermana y yo, a la popular. Era una cosa\n\n[ENDING CONTEXT]\n\nla famosa bailarina malagueña de la que se enamoró el maharajá de Kapurtala. Un día, este príncipe hindú la vio actuar y le pidió que se casara con él; poco después se casaron. Fíjate qué tres señoras se reunían en mi casa.\n\nMi amigo Manuel Alcántara —continúa Malena—, tiene muchas anécdotas de estas mujeres y de mi madre. Pronto va a terminar el prólogo de mis memorias. Yo admiro y quiero mucho a Manolo.\n\nCorto la grabadora y me quedo escuchando a Malena, a Imperio, que a sus 87 maravillosos años, aún recuerda tantas cosas. Sus ojos de caramelo son dos veleros reclamando el mar inmenso....\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Imperio Argentina (entrevista)",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 1618,
+    "article_char_count_full": 9262,
+    "article_char_count_review": 2980,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "participar"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-11-17-left-poema",
+    "article_text_for_review": "Vida y muerte del Farruco\n\nEs su majestad andando, es misterio en la mirada, es pellizco, es puñalada, es El Farruco bailando. Alza su bastón de mando para impartir su doctrina. Que la esencia jonda y fina de la casta los Montoya destapa el tarro y la olla y se arma la tremolina.\n\n¿Dónde está su majestad con la mirada perdida y la sangre estremecida en su inmensa soledad? Farruco, genio y verdad, sino trágico y siniestro. Ya está en el cielo el Maestro con Ramón y Farruquito. Yo desde aquí con mi grito os dedico un Padrenuestro.\n\nPaco Arana",
+    "title": "Poema",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-17",
+    "page_number": 17,
+    "word_count": 100,
+    "article_char_count_full": 546,
+    "article_char_count_review": 546,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-11-17-right-domingo-ramos-pic-n-pormenorizac",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNo es el fenómeno jondo-flamenco por su origen popular y por otras causas que vamos a analizar a renglón seguido, un género bien comprimido que pueda dejarse o tomarse en bloque.\n\nEs en cambio un mundo complejo, diverso, con sus épocas, sus escuelas, sus figuras, y sus epígonos, con su arte popular, su música de teatro, sus creadores solitarios, sus capillas, sus verdaderas y sus falsas glorias, sus intérpretes malditos y también los academicistas que quieren casi, meter el sol en botellas.\n\nPero al emplear el término genérico de jondo-flamenco, todo este complejo cuya modalidad musical es conocida universalmente, implica que hay una unidad de obra que vincula a ésta todas sus divisiones.\n\nPor tanto lo que diferencia fundamentalmente al arte jondo-flamenco es la noción de unidad cultural\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"conservar\"]\n\npretes malditos y también los academicistas que quieren casi, meter el sol en botellas. Pero al emplear el término genérico de jondo-flamenco, todo este complejo cuya modalidad musical es conocida universalmente, implica que hay una unidad de obra que vincula a ésta todas sus divisiones. Por tanto lo que diferencia fundamentalmente al arte jondo-flamenco es la noción de unidad cultural diferenciada. Si se quiere estudiar el fenómeno es preciso conservar esta noción. Pero mientras en la música clásica el valor es absoluto, en el jondo es una referencia necesaria, porque el compositor clásico, aunque haya escrito una obra a toda prisa, bajo la presión de las circunstancias y sin darse tal vez por entero en ella, no por esto habrá querido que esta obra no sea como es, hasta en sus últimas notas escritas en el pentagrama. En cambio, lo jondo no es más que un momento musical, arrebata-do al olvido en el recuerdo de un oyente, cuyo momento es irrepetible, porque el repertorio o produc-ción de la obra de un “cantaor” se compone de miles de momentos fugaces, surgidos y desaparecidos de la noche a la madrugada, muchas veces en un camarote o en una reunión de amigos, entre el humo y los silencios de las charlas. Estos momentos perdidos —de los que no quedan pruebas ni documentos—, si fuesen todos bien conocidos darían una cierta medida del artista. Por ejemplo, si del maestro Rodrigo sólo conociéramos composiciones anteriores al Concierto de Aranjuez, su grandeza se nos aparecería con evidencia total, pero es indudable que no con todo el alcance de sus potencias creadoras. en las grabaciones, una imagen fragmentaria y equivocada. Estos discos que nos han dejado, estas ocasiones, raras y múltiples que tenemos hoy la oportunidad de escuchar, no son más que muestra de una materia que no es necesariamente homogénea. Sól\n\n[ENDING CONTEXT]\n\ndebido a que el gregoriano es canto coral polifónico, y el jondo-flamenco es cante individual. Pero, de lo que llevamos estudiado, entendido, o intuido de nuestra música, ¿no podemos deducir con algo de imaginación que la voz solista busca con los compases amalgamados y los apoyados en palmas y guitarras una nueva polifonía? ¿Sería una herejía musical pensarlo?\n\n¿No es el “rubato parlante” de la seguiriya o el martilleo “ostinato” de Diego del Gastor en sus bulerías, algo inexplicable, en una cultura tan popular y tan antigua casi —en su analfabetismo— como la edad de la propia humanidad?³\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Pormenorizaciones en el arte jondo-flamenco",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "17-19",
+    "page_number": 17,
+    "word_count": 1652,
+    "article_char_count_full": 9813,
+    "article_char_count_review": 3465,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "conservar"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-11-19-right-las-fronteras-del-arte-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(Tercera parte)\n\nRicardo Rodríguez Cosano U on este trabajo, dedicado al Baile, concluimos Las Fronteras del Arte Flamenco. Al final del mismo, advertiremos, de nuevo, los objetivos que se pretendían con estas series. Sólo pretendíamos llevar propuestas de debate a la afición flamenca para su estudio y meditación. También propusimos dejar abierto este espacio para que fuera ocupado por otras inquietudes, en un futuro inmediato, sobre el tema.\n\nAntes de nada, hemos de resaltar que el Baile representa la máxima expresión flamenca, ya que, en el mismo, se dan cante, guitarra y danza al unísono. Así pues, el bailaor/ora necesita del cante y de la guitarra, con el apoyo de las palmas, para dar de sí todo lo que se lleva dentro en plasticidad y formas. Ha llovido bastante desde que se decorase\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publicado\"]\n\n. Antes de nada, hemos de resaltar que el Baile representa la máxima expresión flamenca, ya que, en el mismo, se dan cante, guitarra y danza al unísono. Así pues, el bailaor/ora necesita del cante y de la guitarra, con el apoyo de las palmas, para dar de sí todo lo que se lleva dentro en plasticidad y formas. Ha llovido bastante desde que se decorase el vaso romano (el bailaor pre-flamenco de la terra sigilata de Asta Regia de Juan de la Plata, publicado en esta revista. Se trata de un bailaor que aparece en un trozo de arcilla de un vaso romano que corresponde a los siglos I o II d. de C.) hasta ver cristalizadas definitivamente las formas actuales del flamenco bajo dos coordenadas: la alegría y la pena. De la misma manera, ha pasado el tiempo desde que Juan de Esquivel Navarro escribiera sus Discursos sobre el Arte del Danzado y sus Excelencias... en 1642 hasta ver en televisión a los bailadores actuales. En este tratado, se habla de los bailes populares de esta época, sus formas y estilos, las academias y los nombres de los protagonistas. Indudablemente, estaríamos ante diferentes muestras del baile a nivel de folklore, pero que estas formas sirvieron de base al baile flamenco actual no cabe la menor duda. José Blas Vega encontró una especie de cartel re\n\n[ENDING CONTEXT]\n\ncontemporáneo y también la proyección universal que se le abre al mismo. Lo deseable es que los nuevos intérpretes reconozcan la responsabilidad que tienen en sus manos y en sus pies, pero, sobre todo, en la cabeza para que los aficionados del siglo XXI recojan la buena semilla del baile flamenco.\n\nHasta aquí, nuestra inquietud y nuestras propuestas para debate. Repetimos, de nuevo, que este espacio queda abierto a nuevos ofrecimientos en la seguridad de que, entre todos, podamos advertir los peligros que le pueden acechar al Arte Flamenco, teniendo en cuenta que la evolución es inevitable.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Las Fronteras del Arte Flamenco",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 1141,
+    "article_char_count_full": 6840,
+    "article_char_count_review": 2906,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicado"
+      }
+    ]
+  }
+]
+```

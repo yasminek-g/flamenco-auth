@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1979_12::A1",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Michael E. Fisher (from: $ \\underline{\\text{B.M.G.}} $ July, 1957; sent by Michael E. Fisher) Editor's note: It is important to keep in mind that this article was written in 1957 About 18 months ago I wrote (see following article) two articles describing the making of a flamenco guitar I had witnessed in the workshop of the famous Spanish luthier Marcelo Barbero. A few months later $ \\underline{\\text{B.M.G.}} $ printed a short announcement of Marcelo's death. The sudden passing of this modest and gentle man meant more to me than the death of one of the world's leading guitar makers. Although I had met him only infrequently over the previous four years, his kindness and charm had so endeared him to me that I felt I had lost a lifelong friend and mentor. Marcelo Barbero was born in\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"poor\"]\n\nths later $ \\underline{\\text{B.M.G.}} $ printed a short announcement of Marcelo's death. The sudden passing of this modest and gentle man meant more to me than the death of one of the world's leading guitar makers. Although I had met him only infrequently over the previous four years, his kindness and charm had so endeared him to me that I felt I had lost a lifelong friend and mentor. Marcelo Barbero was born in Madrid 53 years ago. He came of a poor family and was orphaned as a boy. In later life he often used to joke about his lack of height which he attributed to his never having had enough to eat as a child. In spite of his small size, he was no weakling. At various stages in his life he had been a professional boxer and racing cyclist. During the Civil War in Spain he was called up for military service and took part in the most bitter fighting in the trenches in the University City of Madrid. Of his company of 150, only 23 survived. Undoubtedly his hard life was responsible for his more recent delicate health. He frequently suffered from bronchial trouble, especially in the winters. Although his experiences had left their marks on his body and constitution, his mind and spirit were untouched by bitterness. Resentment was alien to his personality and he always radiated an air of calm merriment. Marcelo once told my brother-in-law that as a youth he used to earn a few pesetas a week helping an old man who made castanets. This man was paid so poorly that he was forced to turn out castanets at a great rate and so did not have time to finish them individually. This became Marcelo's job\n\n[ENDING CONTEXT]\n\nArcángel should have an easier life than he did and so be enabled to take the art of guitar making to the greater heights that were Marcelo's aim. Spain Specialists AIR - BUS - STEAMSHIP - RAIL - DOMESTIC AND WORLD TOURS CHULA VISTA TRAVEL CENTER (714, 426 6800 - 297 \"K\" STREET - CHULA VISTA, CALIF. 92011) Gel more for less. REYNOLDS S. HERIOT 426-6800 OWNER AND MANAGER (Editor's note: Today, Arcángel Fernández is one of Spain's top guitar builders and Marcelo Barbero Jr. works in the same shop with him; the photo below is of Arcángel in 1977, taken by Ed Vaughan, donated by Yuris Zeltins)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MARCELO BARBERO - A TRIBUTE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_12",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3,4,30",
+    "page_number": 3,
+    "word_count": 1149,
+    "article_char_count_full": 6499,
+    "article_char_count_review": 3230,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "poor"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_12::A2",
+    "article_text_for_review": "by Paco Sevilla I would like to address one more time a problem that continues to haunt $ \\underline{\\text{Jaleo}} $. We are now almost half way into our third year of publishing the newsletter, yet the number of subscribers is still extremely small -- more than half of our readers are in San Diego or foreign countries; California alone should have more subscribers than our total current membership. We have been contacted by many flamenco societies and informal groups throughout the United States, but we seldom receive more than one subscription from each group; are we to believe that only one aficionado out of five, ten or twenty is interested in reading $ \\underline{\\text{Jaleo}} $? We have a number of teachers who subscribe to $ \\underline{\\text{Jaleo}} $, but very few of their students; can there really be teachers, even those who disapprove of $ \\underline{\\text{Jaleo}} $, who would not recommend it or even require it for their students? We receive many calls and letters from people who do not subscribe to $ \\underline{\\text{Jaleo}} $, yet are aware of its content and desire some service from us. There are exceptions to the above, but very few. We recognize that there are many who, for whatever reason, do not wish to read $ \\underline{\\text{Jaleo}} $ (looking through the current issue, it is hard to imagine a flamenco artist who could not find $ \\underline{\\text{something}} $ of interest), but that does not account for a great number of others. The problems arise from the fact that, at our current level of distribution, $ \\underline{\\text{Jaleo}} $ barely has enough income to meet its meager expenses and all work is done by volunteers. A volunteer-run operation is always precarious at best, especially if the work goes unappreciated. In my personal opinion, the $ \\underline{\\text{Jaleo}} $ must triple its membership in the next six months in order for it to survive and be economically viable. We can't even honestly seek advertising at our current distribution level. We at $ \\underline{\\text{Jaleo}} $ can do our part by campaigning for subscribers in new areas and attempting to get some advertising in our magazine. But we need help from the readers. Here are some suggestions: -- continue to send us names and addresses of prospective subscribers. -- do some active campaigning among your acquaintances. -- encourage others to subscribe rather than read your copy. -- if there is photocopying going on out there, see what you can do to discourage it -- if you teach, consider suggesting the $ \\underline{\\text{Jaleo}} $ to your students. -- buy gift subscriptions for your friends. -- write articles for $ \\underline{\\text{Jaleo}} $ about local artists and events, so that others will be encouraged to subscribe. If most of you could account for a couple of new subscribers, we would be on our way. FOOTNOTES: ZORONGO? In the article, \"The Flamenco Guitar Repertoire\" (Jaleo, November 1979), I considered the zorongo gitano to be a distinct flamenco toque. This was a relic left over from my original studies of the evolution of the cante and, for some reason, I never gave it much further thought. Actually, the zorongo has little to qualify it as a toque and is nothing more than an accompaniment for the song, part of which is done \"por bulerías.\" If we eliminate the zorongo, we are left with 36 toques, a number that appeals to me much more than 37. BANDOLAS? In the article, \"Fandangos de Málaga\" (Jaleo, July 1979), I used much space in attempting to sort out the various views on the existence or non-existence of the bandolás without coming to any definite conclusion. Since then, while reading Cantes y Cantaores Cordobeses by Ricardo Molina (ediciones Demofilo, 1977), I found a satisfactory resolution of the question. Molina quotes the opinion of José Luque Navajas, who says that the bandolás are the flamenco form of verdiales, that is, the verdiales that I listed as \"type II.\" In other words, he would separate the three types of verdiales into two groups, one called \"verdiales\" and the other \"bandolás.\" The verdiales are those of types I and III, the danceable cantes of the fiesta that are characterized by simple, festive letras and short, direct melodies which are relatively free of melisma. The bandolás are those of type II, intended for listening rather than dancing so that the cantaor is freed from the demands of compás and can develop and prolong the melodies. All of this makes a lot of sense, but I suspect that the name \"bandolás\" will not become widely nor predominantly used for a long time, if ever, due to the historical use of the name \"verdiales\" for all of these cantes.",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_12",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 782,
+    "article_char_count_full": 4652,
+    "article_char_count_review": 4652,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_12::A3",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTHOUGHTS ON LEARNING AND TEACHING THE DANCE by Martha Sid-Ahmed Whenever an issue of $ \\underline{\\text{Jaleo}} $ arrives at our house, anyone who happens to be around knows that, unless they suddenly begin losing quantities of blood, they are going to have to fend for themselves for a while. Much of the fulfillment and satisfaction that I get from feeding on $ \\underline{\\text{Jaleo}} $ is due in large part to the wonderful and generous contributions of Carol Whitney. Carol, I wonder if you know how much you are appreciated. I walked right into your coverage of the Anzonini happening. I was sitting next to you sharing in his first performance (an inadequate term, I know), I was at the table with everyone later in the restaurant. I laughed and I cried and I felt. And for all your\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\nnalysis of the dancer, Eloisa Vásquez, was one of the most lucid I've ever read. In an earlier issue I like-wise enjoyed reading your impressions of the Morcas, artists I greatly look forward to meeting someday. Reading Teo, I find myself constantly nodding and muttering affirmation. I dance, and I certainly empathize with your trepidations concerning the baile. The baile is by far the most circuitous route to the core of flamenco, with too darn many distractions (castanets, costumes - all the trappings that accompany our end of the art - my gosh! trappings certainly is the definitive term here - along the way. So many of us are tied into our bodies to tune in our minds, often a result of too much previous ballet training; the ideal approach would be to start both flamenco and ballet at the same time. There is much to be said for discipline, but as La Meri says in Spanish Dancing, technique \"must be remembered by the muscles but forgotten by the mind.\" Caballero Ronald echoes that theory in Andalusian Dances: \"when you learn a dance you must also know how to forget it; but the sediment must remain in the muscles themselves; they have learned the lesson in their silence.\" A few years ago, some friends encouraged me to start teaching. I was uncertain, feeling I was not that knowledgeable at that point to take on the considerable responsibility of traini\n\n[ENDING CONTEXT]\n\nto know what happens when the voice breaks too, not that I have any intention of trying to reproduce it. I certainly have no delusions of being a cantaora, on any level, but I love to sing for the tremendous kick it gives me and for the knowledge to be gained from trying. It has sharpened my ear more to what is happening with the guitar, too. At this point, if I had to make a choice, I think I would prefer an evening of cante to an evening of watching dance. I am very comfortable thinking of myself now not so much as \"a flamenco dancer\" but as someone who loves flamenco and happens to dance.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_12",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 1423,
+    "article_char_count_full": 7864,
+    "article_char_count_review": 2990,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_12::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAfter three years of scrimping, saving and planning, I left for my third trip to Spain to study dance on May 13, 1979; Roberto (Reyes) joined me seven weeks later. We bought a 1972 Volkswagen and, on July 22, we drove to Sevilla. In the next two months, we travelled 5000 kilometers in Andalucía to see sixteen different festivals (a festival is a special type of flamenco concert devoted primarily to the cante). The most difficult part was finding out when and where the festivals were going to take place. We bought all the newspapers, four each day at 20 pesetas (30¢) each, looked at the posters (a good place to look is the Calle Sierpes in Sevilla), and asked at the local \"peñas.\" We arrived back in New York City completely broke and in debt; were it not for friends who sent us money, we\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"worse\"]\n\no the cante). The most difficult part was finding out when and where the festivals were going to take place. We bought all the newspapers, four each day at 20 pesetas (30¢) each, looked at the posters (a good place to look is the Calle Sierpes in Sevilla), and asked at the local \"peñas.\" We arrived back in New York City completely broke and in debt; were it not for friends who sent us money, we would never have made it -- inflation has hit Spain worse than the United States. BUT, we are thoroughly inspired and exhilarated by all that's happening in the flamenco world in Spain. The following is the itinerary of the high points of our trip: May 14, 1979 -- La Vikinga arrives in Madrid May 15 \"Café de Chinitas\" (tablao) Entrada: 900 pesetas ($13.84) Artists: La Chunga, Serranito, El Fati Tony Maya, Tere Maya, La Polilla May 17 \"Torres Bermejas\" (tablao) Entrada: 700 pesetas ($10.77) Artists: \"Estampa flamenca del 'Romancero gitano' de García Lorca\" with Marcos Alvar, José Merced, Manoli Cordero, Faiquillo, and Margarita y Eugenio de Badajoz May 19 \"Las Brujas\" (tablao) Entrada: 700 pesetas ($10.77) Artists: Hermanos Reyes, Chato de la Isla, Dolores de Córdoba, Carmen Moreno, and the house cuadro May 20 \"Los Cabales\" (tablao) Entrada: 700 pesetas ($10.77) Artists: (the only artist I knew at the time was Reinaldo Rincón; Lillian Morales has been working there since June) La Vikinga LA VIKINGA (PHOTO BY KAREN MALOOF, N.Y.C.) May 25 \"Corral de la Pacheca\" (tableao) Entrada: 700 pesetas ($10.77) Artists: house cuadro plus Curra Jiménez, Angel Arocha, El Tauro, and José Luis Teruel June 6 \"Corral de la Pacheca\" (tableo) (same as above) June 9 \"Las Brujas\" (tablea) (same as above) June 12 \"Arco de Cuchilleros\" (tableos) Entrada: 600 pesetas ($9.23) Artists: Trini España, Julio Vallejo, and the house cuadro La Historia de los Tarantos de ALFREDO MAÑAS July 12 \"Torres Bermejas\" (tableo) (same attraction, different cuadro) (PHOTO BY JACK MITCHELL, N.Y.C.) ON THE SET OF THE MOVIE \"LAS SABINAS\" A JUERGA TAKING PLACE IN BETWEEN THE FILMING; FROM LEFT TO RIGHT: LA VIKINGA, ONE OF THE ACTORS IN THE PARTY SCENE, NANNETTE (ENGLISH TUTOR FOR ANGELA MOLINA), ANGELA MOLINA (DAUGHTER OF ANTONIO MOLINA AND ONE OF THE STARS OF THE FILM), PLAYING GUITAR IS ONE OF THE SINGERS FROM THE TABLAO \"TORRES BERMEJAS\" (PHOTO: BOB ROYAL, MADRID) July 22 \"Los Gallos\" (tablao) Entrada: 700 pesetas ($10.77) Artists: Ana María Bueno, Carmen-Juan Manoli, Esperanza Bermúdez, Carmen Var\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_02 | trigger=\"listed\"]\n\nine{\\text{Correo de Andalucía}} $, July 28, 1979; sent by Roberto Reyes and La Vikinga; translated by Paco Sevilla) by Manuel Cura On Tuesday, the Eve of Santiago, in the \"patio del lagar de don José\" in Los Palacios, the \"Gran Festival de la Mistela\" was celebrated. It was organized by the tertulia flamenca \"El Pozo de las Penas\" with the collaboration of the Ministry of Culture and dedicated to the memory of \"Niño de las Castanas.\" The cartel, listed in the order of performance, brings together the following cast of artists: In the first part, the winners of the contest, \"Venencia Flamenca\" (Enrique Fernández, Nene Escalera, and El Chiva), Niño de Pura playing guitar solos, and the cante of Itoly, Peregil, Curro Malena, and Fosforito; in the second part, José Joaquín and his cuadro flamenco, the cante of Luis de Córdoba, Manolo Mairena, Juanito Villar, and Lebrijano, and the guitars of Manol\n\n[ENDING CONTEXT]\n\nMorón de la Frontera\" and attended a fiesta in a local caseta with Miguel Funi, Pedro Bacán, and David Jones. September 18 Returned to Sevilla for the opening of \"Bar Fragua,\" Calle Navarros (great place for a juerga) owned by Salvador, cousin of Agujetas. Savarez §7.00 a set, August. Red 4.35 B1.4, 80 concertiste 8.00 concertiste 8.00 La Bella Prof.(=tc Sav, but longer lasting bases) D'Addario Pro Arte 4.25 QUANTITY BREAKS; 3-75¢ off, 6-3¢ off, 12-9.60. Tax & Postage included. Strings 4 most inst's. Quality tape & Casset. Free price list, Write: 523½ Santa Clara, Quality at wholesale prices\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FESTIVALES Y TABLAOS '79",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_12",
+    "year": 1979,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "9-22",
+    "page_number": 9,
+    "word_count": 3821,
+    "article_char_count_full": 22579,
+    "article_char_count_review": 5085,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "worse"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "listed"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_12::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(From: Mundo Obrero, July 25, 1979. Sent by Brad Blanchard translated by Roberto Vásquez) by Gloria Otero Like a prolonged tear clinging to the Andalusian people. Like an open wound of deep emotion in the gypsy poverty of so many centuries, lightning of what is most dear to the heart, flamenco keeps on sounding through the crevices of this frenetic society, where it escapes to us at a full rhythm and at any price. Where, on some particularly shameful nights (too much moon or too much insensibility with so much loneliness on our backs) melancholy stubbornly grows, along with much true emotion that pretends day after day to steal away. Where memory is going to stop sometimes in a distant copla; in four flamenco verses, of those who did not want to be de-tatched from the primary things, love\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"Grande\"]\n\nat any price. Where, on some particularly shameful nights (too much moon or too much insensibility with so much loneliness on our backs) melancholy stubbornly grows, along with much true emotion that pretends day after day to steal away. Where memory is going to stop sometimes in a distant copla; in four flamenco verses, of those who did not want to be de-tatched from the primary things, love and death, so subtle and so forgotten already. Felix Grande, who as a poet never forgot them, has dedicated a book to the memory of flamenco. Two volumes, in love with an art set against the grain of current fashion, purposely overturned to make important things seem common. He is an author, poet and essayist who has received awards and has been translated into many languages; he has lived 42 tall and thin years; simple and very attentive to that double flow of reality in which he has placed his biography: The feeling of those who, in their poverty, have no other holds but those given to them by their daily travails, and the experience of those who go opening ways to understanding with intellectual arms. A man from La Mancha, veteran of many trips, a shepherd, vintner, peddler and clerk before becoming chief editor of \"Cuadernos Hispanoamericanos\", and guitar player before becoming a poet. One of those who can speak of flamenco with fascination and lucidity, not because he has written books on the subject, but because he has paid the price that it takes to understand it. One's heart must have suffered, as he puts it. And\n\n[ENDING CONTEXT]\n\na good part of the people live in a manner which, with certain arrogance, we call frivolous or with little conscience, lives that are at an intense level. And maybe that is enough for them. And maybe the important thing is how much heart we put into things, even small ones, that make up our lives. What is proper is that the people are not lied to, that people who have the power, any kind of power (and I wish nobody had that power), never lie to those who don't have it. $ ^{*} $ $ ^{*} $ $ ^{*} $ $ ^{*} $ signs and visuals Simon Andrews 2952 Main Street, San Diego, California, 92113 · 232-5087\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO, THE PROLONGED TEAR OF POVERTY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_12",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23-25",
+    "page_number": 23,
+    "word_count": 1179,
+    "article_char_count_full": 6481,
+    "article_char_count_review": 3163,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "Grande"
+      }
+    ]
+  }
+]
+```

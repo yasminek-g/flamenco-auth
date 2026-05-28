@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_09::A12",
+    "article_text_for_review": "DUCAS TRIP In several conversations with older flamenco guitarists, the topic of guitar strings has come up. The point was made that, back in the good old days, it was common to remove the strings from the guitar, boil them in some liquid, and put them back on the guitar. This is quite interesting as factual information, but it also contains a different message. I can't help but hear overtones of \"ducas\" in this type of conversation. \"Ducas\" is the gypsy word for sufering. Cantaores often mention the words \"ducas\", \"Duquelas\", and the Spanish synonym, \"penas\". A common verse of the cante states: \"Tu pena y mi pena son dos penas.\" Is \"ducas\" one of the main life forces of flamenco? Can't flamenco be good unless \"ducas\" is involved? Frankly, I'm not sure. It seems that there are two kinds of \"ducas\": \"ducas\" of the victim, and \"ducas\" by choice. The first type seems to be much more serious than the second. The true victim hates \"ducas\" and wants no part of it. The person who chooses \"ducas\" is wrapped up in the glorification of the \"ducas\" lifestyle, which is like pretending to be a victim. In either case the memory may enter to preserve and protect the \"ducas\" philosophy. Here is where senility may get its beginnings. A senile brain may be overclogged with memories. The day you actually prefer to reflect on what it was like to play, dance, or sing, rather than playing, dancing, or singing, is the day you'd better buy your first rocking chair. The surprising thing here is that good memories may be as dangerous as bad memories. \"Ducas\" people tend to accentuate the bad memories, and play down the good ones. These bad memories usually deal with themes of poverty, death and loss of love. Generally, the older the person, the more he has of these bad memories. So how can a nine year old perform siguiriyas in a The next selection is a sevillanas, called \"Fantasía Sevilla\". It is a very sure-handed rendition on the part of Serranito. The orchestra gives a nice depth to the recording, especially here in the sevillanas. The only unaccompanied solo on side One is \"A la Perla de Triana\". This is an exciting solo overall. Only one small section of Serranito's special three finger picado seems to detract from the mood. It's near the end of the piece and is rather flighty, barely managing to stay in control. Side one finished with a slow rumba called \"Dos Caminos\". The effect of the orchestra and the selection of rumba makes \"Dos Caminos\" sound like it could have been done by Manolo Sanlucar. Side Two starts with another rumba, \"Junto al Mar\". I call this brand of music \"easy listening flamenco\". You have to be sipping your \"Fanta de Limón\" somewhere near the beach to be in the right frame of mind. This is the real Spain! Haven't you been there recently? Seriously though, the rumba is well done. Ever since Paco de Lucía came out with his rumba \"Entre Dos Aguas\", there has been a new interest in rumbas. The granaina is called \"Poema a Granada\", and is masterfully done. What a contrast to the mood of the previous piece! The next is \"En La Otra Orilla\", a guajira. This is a new guajira, which I wasn't expecting. It's pretty incredible, but Serranito is capable of very astounding things when he puts his mind to it. Then he plays a campanilleros titled \"Al Son de Las Campanillas\" which has appeared on an earlier record note for note. The record ends with the Paraguayan song \"Parjaro Compana\", a tune previously recorded by Sabicas. Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, festivals, competitions, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through- guitar & lute Magazine 1229 Waimanu Street Honolulu, Hawaii 96814 Send for Free Brochure. $2.00—sample copy. $10.00-4 issues",
+    "title": "GAZPACHO DE GUILLERMO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17-18",
+    "page_number": 21,
+    "word_count": 673,
+    "article_char_count_full": 3858,
+    "article_char_count_review": 3858,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A13",
+    "article_text_for_review": "(from: $ \\underline{\\text{Guidepost}} $, June 7, 1967; sent by Marilyn Bishop) by June A. Grimble Rosa Durán is of the race (gypsy) and province (Andalucía) which rightly or wrongly claim to be originator and cradle of flamenco. Born in Jerez de la Fontera, in the gypsy quarter of San Miguel, she is the half gypsy and half paya, daughter of the celebrated flamenco singer, Isabelita de Jerez. From birth, in fact, she has lived in an atmosphere of pure baile y cante jondo. Her first formal training took place in Madrid. There, at ten years old, she appeared in fiestas sponsored by the aristocracy, but neither training nor titles can cure her of her love for her original dancing set: the street. In the capital the renowned El Estampio took her as his pupil, and at fifteen she was working with the \"greats\". Rosa danced in Spain and abroad until 1954, when she found a settled home in the Zambra and the honors began to pour in: In 1962 she was awarded an honor never before accorded a nonclassical dancer, when General De Gaulle presented her, at the Theater of Nations, the \"Best Dancer of the Season Award\"... In London, she danced for the Queen. \"You were wonderful,\" murmured Her Majesty -- and in 1965, she represented Spain at the New York World Fair. It is a background of dizzying distinction, which duly reflects the sweep and majesty of her dance, but which says little about the warm immediacy of the person, Rosa Durán.",
+    "title": "ROSA DURAN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 23,
+    "word_count": 254,
+    "article_char_count_full": 1439,
+    "article_char_count_review": 1439,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A14",
+    "article_text_for_review": "The mobile face is suddenly still; the black eyes totally absorbed. \"That is a very big and difficult question.\" Yet it is answered with immediacy, touched, like her personality with the force of TYING STRINGS I spend a lot of time putting on and removing strings. Over the years it has been interesting to see the different kinds of knots guitarists use to secure strings. One that stands out in my mind involved a bridge tie that locked the adjoining strings into a jumbled web. To change one string involved undoing its neighbor and so on down the line. It must have taken the hands of a surgeon to tie them on. Of course, all of this was unnecessary and added time to my repair job. As a standard for tying on strings, I suggest this fast and simple method that is the best for the protection of the guitar. The diagram is from an old $ \\underline{\\text{Aaron Shearer Method}} $. simplicity. It sounds like a gust of conviction blowing straight from the heart.",
+    "title": "LESTER DEVOE ON GUITAR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "article",
+    "pages": "20",
+    "page_number": 24,
+    "word_count": 174,
+    "article_char_count_full": 964,
+    "article_char_count_review": 964,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A15",
+    "article_text_for_review": "SOME THOUGHTS ON FOSFORITO by Paco Sevilla Since writing a brief article about Forforito for the July $ \\underline{\\text{JALEO}} $, a few people have asked me about him -- is he really that good, etc. Gordon Booth wrote: \"I very much enjoyed your piece about Fosforito. I had never known much about him, except that he is very popular in Spain. I didn't like him very much at first because the fellow who really introduced me to much of flamenco didn't care for him (I think it was that old 'white boys can't play the blues' prejudice, that is, a non-gypsy can't do flamenco). After seeing him perform a few times, I came to enjoy and respect what he did. Certainly, he is not the most exciting of singers, but he is a fine artist, one well worth watching.\" On the ones I have heard, Paco plays so simply, so traditionally (except when there is no singing -- like in the. intros) that he sounds like any common guitarist from Spain or even the USA. Did Fosforito demand that, or did Paco feel the need to do it? Someday perhaps we can ask and find out. Meanwhile, don't judge Fosforito without listening to him -- he sings beautifully and does amazing things. Perhaps he is not at his best in the cold atmosphere of the festivals, and even when you listen to a beautiful interpretation of his on record, you have to realize that few artists ever sing with inspiration in a recording studio. For those who wish to learn the cante, there is no better model to try to imitate than Fosforito, for his compás, placement, and structuring of the cante are impeccable. * * * FOSFORITO: ADOPTED SON OF CORDOBA (from: ABC, May 9, 1981; sent by Gordon Booth; translated by Paco Sevilla) by Rafael López The government of Córdoba met in an extraordinary full session to approve the only order of business of the day: giving the title of adopted son of city to Antonio Fernández Díaz, \"Fosforito.\" For that reason, and to celebrate the completion of twenty-five years since his complete triumph in the \"Concurso Nacional de Cante Flamenco,\" a number of events will take place in the capital of Córdoba. It begins on the 13th with the presentation of a book dedicated to Fosforito and the awarding of the prize for the poster contest. The following day, a poetic event with participation of the poets who have collaborated in the publication of the book and also the concert guitarists Manuel Cano and Paco Peña, an event in which the adopted son title will be officially given to Fosforito. On the 15th, at a luncheon in honor of Fosforito, he will be given the Potro de Oro de la Federacion de Penas\" (the symbol of Córdoba), and that night, in the gardens of the Alcázar de los Reyes Cristianos, there will be a flamenco festival featuring Fosforito, El Cabrero, Camarón de la Isla, Luis de Córdoba, Chano Lobato, Chiquetete, José Meneses, Juan Navarro Cobos, Rafael Ordóñez, El Turronero, and Juanito Villar, plus the special appearance of Antonio Mairena. In the dance, Manuela Carrasco, and the guitarists Paco Cepero, Manuel Domínguez, Enrique de Melchor, and Rafael el Merengue.",
+    "title": "FOSFORITO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21-22",
+    "page_number": 25,
+    "word_count": 541,
+    "article_char_count_full": 3072,
+    "article_char_count_review": 3072,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_09::A16",
+    "article_text_for_review": "MINI-JUERGA Text & collage by Mary Ferguson August 1, 1981 -- a night to be remembered by classmates and other close friends of Victoria Ballardo who gathered at the mini-juerga in honor of her being awarded Masters Degree in Education from National University. The event was hosted by her sisters, Juanita and Elizabeth, at the lovely home of their parents, Francisco and Elizabeth Ballardo. Nephew Damian, was official guitarist for the night. Two tablaos had been set up in the garden with its many beautiful statues, fountain, colored lights, plants with luxurious foliage and a hillside view of the city in the distance. Add to this the very elaborate array of foods (credit the three Ballardo daughters with its preparation) on a long buffet table, the \"Cantina del Perro Andaluz,\" Damian Ballardo playing guitar and the gracia of the Ballardo's and the mood for a successful juérga was well established. As guests arrived the tempo increased. Other guitarists arrived -- Tony Pickslay, Earl Kenvin and Vincente Quintana (a many-talented man). Dancers Ernest Lenshaw, Carmelita Monzón, Sagario Din, Mari Pili Heriot (little but mighty), Raphael Díaz who also sang, Nina Espinoza, the Familia Ballardo and I kept the tablaos warm and the guitarists working. Many of Vicky's school friends took part and there were also dancing lessons. Then came the late arrivals -- those who had been performing -- Juanita Franco, María José Díaz and Juana De Alba, all helping to make it a memorable night. The guitarists were great. I think Tony played his heart out till 4 a.m. I left at 1:30 so part of that is heresay. The most \"amazing\" guitarist was Damian in his accompanying dancers for Sevillanas and bulerias -- he is terrific! \"Best wishes, Victoria, and now that'school is out' we'll be looking for you at the upcoming Jaleistas' juergas along with the rest of your flamenco family.\" JULY JUERGA AN EVENING WITH ROSA MONTOYA by Juana de Alva Many thanks to those who helped make the July Juerga so enjoyable. Rosa Montoya's performance accompanied by Yuris Zeltins on the guitar and Rosala's palmas was very exciting. Rosa was dressed in a violet and green train dress and she both sang and danced tangos, bulerías and alegrias. Her performance was filled with gracia gypsy pelliscos and intricate taconeo. I have never seen a mantón (Giant shawl) handled so beautifully. There were some faces who we have not seen in quite a while; flamenco aficionada Mirchya Monmartte took over the bar and ran it most of the evening. We were glad to see guitarists Joe Kinney and Cristina Reyes again at a Juerga. David DeAlva, Yvetta and Dick Williams made it down from the Los Angeles area.",
+    "title": "SAN DIEGO SCENE CONCERT REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_09",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23-24",
+    "page_number": 27,
+    "word_count": 451,
+    "article_char_count_full": 2682,
+    "article_char_count_review": 2682,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

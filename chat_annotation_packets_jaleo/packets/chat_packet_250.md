@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A29",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nFLAMENCO TRADITION LIVES ON IN SUPERB CONCERT BY RADFORO [from: Lincoln, NE Journal, March 17, 1986] by Laurence West 50 what's a name like Ronald Radford doing in the world of flamenco? The man who bears that name strode self-assurdly on stage at Kimball Hall Saturday evening to explain. His life's direction was changed when his mother bought an old album by Carlos Montoya, a real Spaniard and the undisputed king of flamenco. The music indeed spoke to his heart, and ended his rock 'n' roll career. As many musicians do, he talks of a union with his instrument. When he plays, his cheek is pressed to the cypress wood, and his fingers hammer and pull sounds from the nylon strings that literally fill the room. He talks of time he's spent with the gypsies, and explains, through personal\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"deep\"]\n\ned his rock 'n' roll career. As many musicians do, he talks of a union with his instrument. When he plays, his cheek is pressed to the cypress wood, and his fingers hammer and pull sounds from the nylon strings that literally fill the room. He talks of time he's spent with the gypsies, and explains, through personal experience, humor and poetry the enormous range of emotions found in their music. Hearing the nostalgic, mournful \"Cante Honda,\" or deep songs, and the festive, often explosive dances, you cross over with him into a realm in which visual and sensual dimensions are incorporated into the sound itself. You feel the heat, the dust and the magic as you listen. If there was too much strumming and too little picking in the first half of the program, it only served to make the second half more enjoyable. My favorite was the Tarantas, a lament of the Andalusian coal miners-picked and strummed to absolute perfection. After nearly a dozen flamenco songs, all delivered with impeccable technique, the experience was complete when the audience joined by clapping the rhythm for a final gypsy tango. Oléf. $ ^{*} $ $ ^{*} $ $ ^{*} $ FLAMENCO GUITARIST DRAWS HUGE APPLAUSE [from: The Lincoln Star, March 17, 1986] by John Cutler To know Ronald Rsdford's flamenco guitar credentials is to know the origins, workings and emotions of gypsy life in southern Spain. Redford would not let an appreciative Kimball Hall concert crowd hear one note Saturday night without explaining each work he performe\n\n[ENDING CONTEXT]\n\nthe story of an aging cobbler whose feet begin moving in flamenen rhythms when he puts on a pair of magic white boots. At the end of the performance, Morco paid tribute to Fairmount Center, one of the few arts schools in America that is helping to preserve the rich tradition of Spanish dance. 美美 OLE! FLAMENCO GUITARIST ORAWS CROWD TO FEET [from: The Southwest Daily Times, Liberal, KS, Sept. 23, 1986] by Esther Groves Shouts of \"Oté!\" and standing ovations accompanied the performance of flamenco guitarist Ronald Radford Saturday night at Liberal High School in a free concert hosted by Liberal\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "44-46",
+    "page_number": 44,
+    "word_count": 2469,
+    "article_char_count_full": 15207,
+    "article_char_count_review": 3125,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "deep"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A30",
+    "article_text_for_review": "EL CID PRIVATE DINNER AND FIESTA FLAMENCA by Juana DeAlva October twentieth and twenty-eighth, El Cid restaurant of Hollywood, California held its second invitational dinner-juerga. The first juerga, held earlier this year, was such a success that many had to be turned away. Co-owner, Jack Haywood, promised a repeat performance and true to his word, offered not one, but two gatherings this time around. Jack says that the idea behind the fiestas is to bring Southern California flamenco performers together in an atmosphere of comraderie. He feels that the flamenco community in the United States is so small that its members need to stick together and support each other. These invitational juergas are El Cid's effort to foster this goal. The following is a brief report of the October twentieth gathering which we attended. The evening began at six o'clock with cocktails, leaving an hour and a half to mingle, re-established old contacts and make new ones. Dinner, chicken in wine sauce, was at 7:30 with a performance at 9:00. The performers for this evening were singers Antonio Sanchez and Pepita Sevilla, guitarist Paco Arroyo, and dancers Yolanda Arroyo, Angelita, Linda Vega, Valeria Pico, Jesus Cano and diminutive guest artist Aubrey. Antonio Duran was the scheduled guitarist for the get together",
+    "title": "LOS ANGELES JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "47",
+    "page_number": 47,
+    "word_count": 211,
+    "article_char_count_full": 1312,
+    "article_char_count_review": 1312,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A31",
+    "article_text_for_review": "BY Juana De Alva FLAMENCO IN TIJUANA In years past tijuana, Baja California, sister city to San Diego, California, has been a center for flamenco with several instructors, regular nightclub shows and frequent concerts. With the recent arrival of flamenco guitarist Daniel Contreras to the area we hope to see a revival of flamenco in Tijuana. Born in Aguas Calientes, Mexico, Daniel began as many other guitarists studying classical, jazz and rock and later became exposed to flamenco. His pursuit of flamenco took him to Spain in 1973 where he studied in Barcelona under Enrique Calzas, worked in numerous clubs throughout Spain and won the distinction of Fine Flamenco Guitarist of Foreign Extraction at the Fiesta de Mairena de Alcor in honor of Manolo Caracol. In 1975 a grant from the Mexican government took him to Italy to participate in an experimental program in musical composition. While in Italy he also worked as a solo guitarist in Rome, Milan, Venice and Genoa. His guitar playing took him to Switzerland, Belgium, the Canary Islands and finally back to the North American continent and the United States in 1976. Here he has worked mainly in Los Angeles, Chicago, and for the past eight years, covered all of Mexico. DANIEL ACCOMPANYING ANTONIO IN TONICOS SPANISH RESTAURANT IN TIJUANA JALEO - VOLUME IX, No. 2 Gift Subscriptions to Jaleo !GIVE THE GIFT OF JALEO AT CHRISTMAS!! A SPECIAL NOTICE OF YOUR GIFT WILL BE SENT TO THE RECIPIENT. Send name and address of recipient, your name and a check or money order to Jaliestas (P.O. Box 4706, San Diego, CA 92104). Current Rates: U.S. $20 - U.S. Subscriptions U.S. $25 - Canada/Mexico U.S. $25 - Surface Overseas U.S. $30 - Air Mail Europe U.S. $35 - Air Mail Far East And something to look out for... A PROJECT IN COMMON [from: Tiempo, August 18, 1986; sent by El Tlo Paco] Before the end of summer, the details will be finalized for a long-play recording that no doubt will be much talked about. It is being prepared by Paco de Lucfa and Munolo Sanlucar, the two most universal Spanish flamenco guitarists. The project, carried out with a good deal of care by the two composers, has been in the conceptual stages for several years, although work on it began concretely about four months ago. FLAMENCO FENCING ORNAMENTAL IRON SAFEGUARD FENCE CO. SERVING NORTH COUNTY 619/745-4846 CA Contractor's Licence #374198 *** ANNOUNCEMENTS *** Announcements with the exception of classified ads are free of charge to subscribers. Include phone number and area code for use in the DIRECTORY. Classified ads ARE $2,000 per line (each 9 words). Make checks payable to JALIESTAS and mail to JALEO. P.O. Box 4706, San Diego, CA 92104.",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "48-49",
+    "page_number": 48,
+    "word_count": 456,
+    "article_char_count_full": 2684,
+    "article_char_count_review": 2684,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A1",
+    "article_text_for_review": "[This article, from and unidentified Spanish magazine, was found in a secondhand record purchased in Madrid by Basilio Ceravolo. Originally published in the early 1970's, we reproduce a translated version here because it deals with people many of us know and a record album that was well-known in this country.] The group in question, that has become a standard-bearer of flamenco-rock in specialized magazines and accredited charts (of supposed sales) in English-speaking countries, is called \"Carmen.\" The same as the Carmen of Sevilla and that of Merimee. The group is composed of five members: David Clark Allen (guitars), Roberto \"Bobby\" Amaral (vibraphone, bells, castanets), Angela Allen (voice, synthesizer, melotron), John Glascock (bass), Paul Fenton (drums). David is the leader and founder of the group, as well as brother of Angela, the only female member. The Allens are from Los Angeles and assure us that their parents have a flamenco nightclub in that California city, where the two of them (22 and 20 years old, respectively) took their first steps as performers. Roberto \"Bobby\" Amaral also comes from Los Angeles and has in his past remote chicano origins. The other two members, John Glascock and Paul Fenton, are English with little professional experience to speak of. The group \"Carmen\" has been performing about two years in the United States, with very little success. The reason, according to David Allen, is that their music is too far ahead of the times: \"Our music is about two years ahead of the capacity of the public to understand it.\" In 1973, they moved to England. They offered their material to many recording companies and almost all the tapes were returned. Almost all, because the well-known producer, Tony Visconti, believed in the sound of the group and decided to record them. Five months later the record, \"Fandangos in Space,\" was ready for sale. But, a factor previous to the appearance of the record would catapult the name of \"Carmen\" into the British musical media. The story goes that Tony Visconti took his charges to a party, where he introduced them to David Bowie. The youngsters told him about their musical ideas and their stage presentation. Bowie listened attentively to their explanations and then spoke with the producers of the television program \"Midnight Special Show.\" They were anxious to hear them. \"Carmen\" appeared on the program that starred Bowie, for the BBC. It was the month of October. The name \"Carmen\" enjoyed the best publicity that a musical group could get in England: the sponsorship of David Superstar.",
+    "title": "PLASTIC FLAMENCO ROCK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1987_SUMMER",
+    "year": 1987,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 422,
+    "article_char_count_full": 2583,
+    "article_char_count_review": 2583,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A2",
+    "article_text_for_review": "JALEO BRINGS FOND MEMORIES Dear Jaleo staff, My name is Leona Malerba Marolo. I am presently living in Buenos Aires, Argentina. My father, Juan Malerba forwarded your magazine $ \\underline{\\text{Jaleo}} $ and I wanted to let you know how much I enjoyed it. My family, for many years, worked as performing artists in the art of flamenco. Our name was \"Los Malerbas.\" My father, a guitarist, my sister and I danced and also did our share of singing coplas of tientos, rumbitas, etc. where ever needed. My brother, the youngest, danced. We worked when we were very young. My brother appeared with Roberto Iglesias and Company when only five years old, dancing the farruca. We were blessed to be in a time of flamenco when Carmen Amaya was appearing at the \"Village Gate\" in New York -- we saw her free every night. We grew up in the world of flamenco, but no longer make our living with it — but still very much flamenco in our homes and general beings. We studied briefly with Teo Morca in California, who I feel did much to polish our movements and is a very fine teacher and performer. As you know, you never stop learning and he was a great help to us. I enjoyed seeing him in this issue, Winter 1986, No. 4. I went to the same rehearsal studio in New York with Maria Alba when she was with Ximenez and Vargas company. She helped me with my soleares movements one day just to be nice. I saw Manuela Vargas at the New York world's fair and so on... So many people and places jumped out at me from the pages of your magazine. Living here in Argentina we have many flamenco performers - - visiting from Spain and local; Also many gypsies from all over Europe. Once again, thanks for organising something that never has had a reputation for being very organised and bringing an inside view of a world seldom seen by many people. Continued success! Leona Malerba Marolo Buenos Aires Written with fond memories of La Familia de Flamenco Los Malerbas $ ^{*} $ JALEO LONGER THAN NOVEL To the Editor Over the years I have watched Jaleo grow from a monthly report into a magazine and now into a journal. Congratulations on your latest, with fifty-two flamenco-action-packed pages! No longer can I sit down and read through Jaleo at one sitting. I simpathize with Juana De Alva's comment about novice computer-user's having suicide impulses (see \"Editorial\" Jaleo X-1). It will take this expensive machine to lessen the work load of organizing the English speaking flamenco world. In computer language a \"bit\" is a letter or a space where a letter could go. If I counted right, Jaleo has 8694 bits per page. The average paperback has 2000 pits per page. Which means that one page of Jaleo is equal to about four pages of a paperback. I just finished reading The Dangerous Summer by Ernest Hemingway which was 185 pages. This book is shorter than the latest issue of Jaleo! Olé! Sadhana Waszczak Nakano-Ku, Tokyo, Japan",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1987_SUMMER",
+    "year": 1987,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 520,
+    "article_char_count_full": 2908,
+    "article_char_count_review": 2908,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_03::A18",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[This article, which appeared in the San Diego Reader in the late 1970's, has little relevance to what this artist is doing today (See Jaleo, April 1979, for a more in-depth interview with David Cheney), but has so much gracia that we felt it worthwhile to share with the readers.] Interviewed by Elise Miller The hanging fans continue to rotate at their varied speeds, and lightly jar the ferns and ivy. The Thursday night regulars drift in, along with newcomers, and gather around small tables that face the stage, or lounge on the velvet-cushioned couch that forms the boundary between the bar and restaurant. You order a beer, a coffee, or a brandy, and settle into Art Deco surroundings. Restaurant sounds back there somewhere mingle with the tuning-up of a guitar. The spotlight flashes on,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"know\"]\n\ntables that face the stage, or lounge on the velvet-cushioned couch that forms the boundary between the bar and restaurant. You order a beer, a coffee, or a brandy, and settle into Art Deco surroundings. Restaurant sounds back there somewhere mingle with the tuning-up of a guitar. The spotlight flashes on, and it's David Cheney night at the Swan Song. Q. How did you first get the idea to go to Spain and study Flamenco? A. Oh, I was a surf bum, y'know? I'm a bum all the way -- I mean, I finally figured that out. And so I was in the islands surfing and I ran into a Flamenco guitar player over there -- I was at the time washing dishes in a coffee house (it was the Beatnik days) -- and this guy was working up the street in a nightclub. So I talked to him a while and got interested in it, and came back here and really started playing a lot, and buying records and just doing the normal trip that everybody does, nothing serious. But then I got to where it was not a bad way to make a dollar, being a bum, y'know. Anyway I came up against...you can teach yourself so much out of books and off of records, and then you need a teacher. So I went down to Mexico City -- I couldn't go to Spain, didn't have any money -- on the bus from Tijuana, because there's a big Spanish quartar there, and I found a good teacher, A Spaniard. I really go into it then, and he said, \"Yeah, you have to go to Spain.\" I came back and went, money or no money. And, since I had no money, I had to get into a scene like go hang out with the gypsies, because they're bums too. They were sort of right down\n\n[ENDING CONTEXT]\n\nworking part of it, I could care less. It just happens that people tend to always hire me for enough things to pay the rent. Q. Do you play, practice, every day? A. It depends. I just play when there's time. The other night, I played for five hours without moving. I didn't even realize it until I was telling one of my students who was JALEO - MARCH/APRIL 1984 write to: M. Sherbanee 5329 Norwich Ave. Van Nuys, CA 91411 U.S.A. THIS SPACE RESERVED FOR YOUR CARD-SIZE AD SPECIAL OFFER $10 FOR 1 MONTH - $25 FOR 3 MONTHS PRICE APPLIES TO PHOTO READY ADS (ONE TIME $5.00 FEE IF AD OESIGN IS REQUESTEO)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "SAN DIEGO'S GYPSY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23-24",
+    "page_number": 27,
+    "word_count": 1599,
+    "article_char_count_full": 8359,
+    "article_char_count_review": 3211,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "know"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_03::A19",
+    "article_text_for_review": "MAY JUNTA MEETING JALEISTAS GENERAL MEETING A new Board was elected at Jaleistas General Meeting on April 30, 1984, at JALEO Headquarters. The following slate of officers was chosen unanimously: PRESIDENT: Juana De Alva VICE-PRESIDENT: Paul Runyan SECRETARY: Carele Van Luren TREASURER: Roberto Vasquez DIRECTORS: Kathleen Beope Remedios Florez Carolina Mouritzer JUERGA COORD.: Rafael Diaz MEMBERSHIP: Tony Pickslay The new Board is already hard at work for the benefit of Jaleístas. We must thank them for their dedication and assist them in any way we can. For instance, Rafael - as Juerga Coordinator - always appreciates, and needs, offers and suggestions regarding Juarga sites. Let's hear from all of you out there! YOU are Jaleíztas. JULY JUERGA The June-July Juerga will be held at the home of Clemente and Veronica Oposculo and Santiago and Doleres Quintania. Dolores, a native of Sevilla, is a long time friend of our juerga coordinator, Rafasi Diaz and is looking forward to having an evening of Andalucian music in her home. We have again picked a weeknight followed by a holiday to enable the Tablao performers to join us and since no such holiday existed in June we picked the first such occasion in the beginning of July. DATE: July 3rd TIME: 8:00 p.m. to 2:00 a.m. PLACE: Home of Mr. & Mrs. Clemente Oposculo and Mr. & Mrs. Santiago Quintania 2932 Chicago St. PHONE: 619/276-8321 BRING: Tapas to share AND Drinks to SHARE or a $2.00 Donation DONATION: A $2.00 donation will be requested only of those who do not bring drinks to share. DIRECTIONS: Exit Claimmont Driva off of I-5, left on Denver, left on Gesner, right on Chicago. FLAMENCO DANCE CLASSES NEW BEGINNER CLASSES FOR CHILDREN AND ADULTS ONE BLOCK OFF 30TH NEAR FWY 94 IN SAN DIEGO CALL JUANA (619) 440-5279",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "25",
+    "page_number": 29,
+    "word_count": 300,
+    "article_char_count_full": 1784,
+    "article_char_count_review": 1784,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_05::A1",
+    "article_text_for_review": "(Sent by George Ryss) Francisco Sardonil Ruis, alias \"La Tati\", was born in Madrid, where she has lived most of her life. She began her professional career at the age of 12, when she danced at the once famous flamenco tablao, La Zambra. She has performed in over thirty countries among them France, Holland, England, Germany, Italy, Denmark, Canada, South America, Nigeria, Egypt, New Zealand, Australia, Japan, Hong Kong, and South Africa. When she was fifteen she was soloist with the company \"Festival Flamenco Gitano\" which toured Germany and Holland, presenting the best artists in the world of Jazz and Flamenco. Among the other artists in the tour were Ella Fitzgerald, Duke Ellington, Ray Charles, Paco de Lucía, José Menese. In 1968 the Phillips Recording Company released a recording of their performances, called \"Festival Flamenco Gitano.\" \"La Tati\" has performed on television in Venezuela, France, Colombia, Mexico, and Australia. In 1979 she received the Guicapuro, the maximum prize granted to a performer in Venezuela. Others who have received that prize are Lola Flores, Raphael, and Camilo Sexto. In 1978 she received the Trofeo de Espectáculos, a Spanish prize, for her performances in Los Canasteros, a flamenco tablao.",
+    "title": "LA TATI",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 197,
+    "article_char_count_full": 1240,
+    "article_char_count_review": 1240,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_05::A2",
+    "article_text_for_review": "Thanks to our subscribers generosity (most notably Antonio David of Supreme Strings), Ryszard Pawlowski of Poland (see Jaleo, Oct-Nov 1983, \"Letters\" section) is now receiving an air mail subscription to Jaleo, free guitar strings and other material. If you have cassettes or music for Ryszard write to Jaleo for his address. Jaleo wishes to welcome Thor Hanson back to the layout department. Perhaps with his speed and expertise we can get this show back on the road. \"Promises, promises...\" Well they say, \"While there is life there is hope,\" so don't give up on us yet. Special acknowledgement is certainly indicated for the contributions of Professor Brad Blanchard who has faithfully kept those articles coming from Spain and George Ryss continues to keep us up to date on flamenco activities and personalities on the East Coast.",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 136,
+    "article_char_count_full": 834,
+    "article_char_count_review": 834,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_05::A3",
+    "article_text_for_review": "NEW FORMAT FDR ANNOUNCEMENTS Dear Jaleo: In this last two years I missed a Sabicas concert while in New York and a Paco de Lucía/Chic Corea concert in Norman, Oklahoma simply because I received no notice about them! I hope all readers of Jaleo will join me in resolving to make this magazine a more complete source of concert information. I suggest that each of us NEVER ASSUME THAT SOMEONE ELSE IS SENDING THE CONCERT INFORMATION, but that we all drop a note to JALEO as soon as we have information to share. I suggest that the \"UPDATES\" and \"CONCERTS\" columns be combined into one master calendar of all flamenco events, festivals, juergas and coacerts, and that this calendar be arranged with events listed by the month for the entire season. The calendar could be updated each month as new information or changes come in. I think this would make the lay-out work faster and more logical and it would certainly make the information more accessible to the readers. The reason I know we are not doing a good job of sending in information is because I am a concert Flamenco guitarist performing 30 to 40 dates each season (Sept. to June) and very few of my concerts have been listed in JALEO. I now realise that those of us who are performers in pre-senters must be responsible for sending in notices about our own events! If everything reading this letter would take a few minutes right now to send whatever concert information you have to JALEO, I think we will all be surprised to find out just how much flamenco is going on out there! I'm sending mine under separate cover. Let's also do a better job of sending in concert Reviews! I love to hear about what other performers are doing and in hopes that others may be interested in what I am doing, I inclose several revinws never published in Jaleo. Here's hoping we don't miss any great concerts this season because it wasn't listed in the JALEO calendar! Warmest wishes to you all. Sincerely, Ronald Radford Tulsa, OK [Editor: We welcome suggestions such as Ronald's which will help improve the quality and usefulness of our magazine. We hope that other performers will follow suit in sending their performance information in to be listed under our new announcement format.]",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 392,
+    "article_char_count_full": 2230,
+    "article_char_count_review": 2230,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

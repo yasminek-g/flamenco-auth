@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1989-11-26-left-discografia-flamenca",
+    "article_text_for_review": "P arece ser que una de las demandas que en determinadas ocasiones he realizado en estas mismas páginas, en cierta medida, está a punto de hacerse realidad. Y esta realidad viene de la mano de uno de los estudiosos más serios que en la actualidad tiene nuestro arte flamenco: José Blas Vega. En colaboración con la editorial «Círculo de Lectores» y las diferentes casas grabadoras que han abordado, a lo largo de su historia, la difusión del arte de Tomás «El Nitri», sale a la luz el primer volumen de una antología —nunca mejor denominación para esta colección— que quiere alcanzar cotas de calidad inigualables en cuanto a la selección de grabaciones realizadas por los mejores cantaores flamencos de este siglo.\n\nDISCOGRAFÍA FLAMENCA\n\nEl haber conseguido poner de acuerdo o establecer una consonancia entre diferentes casas grabadoras, olvidándose éstas de su clásica y lógica lucha competencial, para aportar lo mejor de su archivo flamenco en beneficio de nuestro arte, es tarea magna y de reconocimiento por todos aquellos que amamos el flamenco. Cierra ilusión utópica se dejaba entrever cuando apuntábamos (en críticas anteriores a diferentes antologías) que lo mejor sería realizar una obra de esta índole, que abarcara grabaciones de diferentes cantaores y diferentes casas y que no estuviera en corsetada a ofrecer sólo interpretaciones de artistas exclusivos de una determinada empresa fonográfica, como así ha sucedido hasta ahora. La variedad de escuelas, matices, voces cantaoras, personalidades, localismos, etc., que se podían ofrecer en una obra de estas características, serviría para deshacer bastantes entuertos, así como para introducir al\n\nRafael Valera Espinosa\n\nTítulo: «El Flamenco». Volumen 1\n\nTocan: Félix de Utrera, Niño Ricardo, Manuel Moreno «El Morao», Melchor de Marchena, Manolo El Sevillano, Ramón Montoya, Perico el del Lunar, Eduardo de la Malena, Manolo Bonilla y Juan Salazar.\n\nCantan: El Negro, El Chozas de Jerez, Pepe de la Matrona, Enrique Morente, Pepe El Culata, Rafael Romero, Antonio Ranchal, Ramón Medrano, Terremoto de Jerez, Antonio Mairena, don Antonio Chacón y El Sevillano. neófito dentro de nuestro arte, sin miedo a que sufriera posibles despistes o pudiera establecer determinadas contradicciones que le llevaría a recorrer un camino mucho más largo hasta establecer sus propios criterios sobre este arte.\n\n«El Flamenco» va a contar con diez volúmenes y más de trescientas cincuenta grabaciones auténticamente seleccionadas, que pueden dar medida de la enormidad y calidad de la obra. Cantaores como don Antonio Chacón, La Niña de los Peines, Tomás Pavón, Manuel Vallejo, Aurelio de Cádiz, Antonio Mairena, El Chozas de Jerez, Rafael Romero, Pepe el de la Matrona, Manolo Caracol, Terremoto de Jerez, Camarón, Enrique Morente, El Sevillano, etc., dan muestra de la diversidad a la que antes aludía.\n\nPor otra parte, el cuadernillo orientador de cada uno de los volúmenes, la temática recogida en el mismo, los datos biográficos de los cantaores a los que se dedican dos de los tres discos con que cuenta cada volumen, así como la relación de las letras de los cantes que estos últimos interpretan son un complemento esencial y divulgador de diferentes aspectos del flamenco.\n\nEn cuanto al contenido del primer disco, seleccionado por grupos de cantes, da a conocer los diferentes estilos que se encuadran en el arte flamenco. Los personalismos reflejados en los dos siguientes discos —don Antonio Chacón y Antonio El Sevillano—, así como los que aparecerán en los siguientes volúmenes, no son todos los que hubiéramos deseado, pero sí son una muestra más que suficiente de cómo hacían y hacen los cantes muchas de las figuras más sobresalientes de este siglo.\n\nBAILAORES DE $ \\underset{\\cdot}{H} $OY El Farruco",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-27",
+    "page_number": 25,
+    "word_count": 596,
+    "article_char_count_full": 3766,
+    "article_char_count_review": 3766,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-11-26-right-premium-iben-alcazar-premium-grw",
+    "article_text_for_review": "Si señor. Si ha pedido una cerveza Alcázar; ibien hecho!. Porque va a saborear una cerveza fresca, con cuerpo, en su punto. Una cerveza elaborada con las mejores cosechas de lúpulo y cebada, siguiendo la tradición de nuestros maestros cerveceros. Una cerveza que mantiene todo su aroma, porque va,\n\ncomo quien dice, de la fábrica directamente al consumidor. Si pide cerveza Alcázar, ¡bien hecho!, Disfrutará de una cerveza bien hecha.",
+    "title": "Premium IBEN Alcazar premium GRWZA LONC HECHO!",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 70,
+    "article_char_count_full": 434,
+    "article_char_count_review": 434,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-01-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nLOS CIEN AÑOS DE\n\nEn estos días, una de las figuras más míticas y extraordinarias en la historia del cante, hubiera cumplido cien años: Pastora Pavón, «Niña de los Peines». Nacida en jondísima estirpe cantaora, fue en su tiempo, y con el devenir de los años lo sigue siendo aún más, paradigma de la mujer cantaora, voz admirable que entusiasmó a los escritores del 27; conocedora y ejerciente de todos los palos cantaores, suscitadora en el maestro Mairena de emocionada admiración. Sobre la amplia y muy notable discografía que nos ha legado la «Niña de los Peines», se ha escrito mucho, pero no siempre bien. Frente a generalizaciones tan entusiásticas como inadecuadas —«después de Pastora, ná»— análisis cicateros sitúan a la Niña de los Peines, como figura de géneros menores, que se alivia por lo general con cantes festeros, como si pudiera encontrarse alivio en ese tipo de bulerías y tangos gitanos. Como si la Niña no hubiera cantado por soleá, por siguiriyas y por lo que quisiera, de forma siempre admirable. Personaje tan destacado no pudo escapar tampoco a las simplistas bipolarizaciones —cante gitano o cante payo—; y, sin embargo, otros aspectos notables de su extraordinaria trayectoria artística ha quedado silenciados. Que sepamos ninguna de las pesquisas ha tenido por objeto la asunción que el flamenco hace de músicas folklóricas, operísticas y de otros temas populares\n\nPASTORA PAVÓN\n\n«NIÑA DE LOS\n\nPEINES»\n\ndurante las primeras décadas de este siglo, en el cante de Pastora Pavón. Una artistasíntesis, como es ella, por fuerza ha de arrojar luz sobre una realidad comúnmente aceptada y cuya vigencia pudo iniciarse en la misma prehistoria del cante: El flujo y reflujo del cante primigenio respecto a las músicas de su entorno geográfico. Nadie, como Pastora Pavón, ha logrado hacer de la mediocridad e incluso chabacanería de melodías al uso, auténticas expresiones de jondura. ¿Fue así como pudo conformarse el mágico y ecléctico producto que, desde hace doscientos años, llamamos Flamenco?\n\nPero por encima de cualquier otra erudita reflexión, la personalidad de Pastora Pavón, como artista singularísima, nos centra en un interrogante que hasta el momento sólo se ha resuelto en clave de hombres. ¿Qué significado tuvo y en la actualidad tiene la mujer-artista en la historiografía del cante? La grandeza de nombres como la Serneta, la Trini, Pastora Pavón, Tía Anica, Fernanda..., no tuvo virtualidad suficiente para situar a la mujer flamenca como protagonista de esa oculta historia, en el lugar que le correspondía. Son todavía mayoría quienes sostienen que la ejecución de los cantes duros —seguiriyas, tonás...— es patrimonio de hombres. Como si el dolor tuviese sexo; como si la hembra —inefable Pastora— no tuviese su propio y específico alarido.\n\nEL PRÓXIMO NÚMERO DE «Candil» SERÁ MONOGRÁFICO DEDICADO A FERNANDA Y BERNARDA DE UTRERA\n\nPara los próximos 18 y 19 de mayo, el Grupo «Candil» y la Peña Flamenca de Jaén, están organizando un homenaje regional a las incomparables artistas Fernanda y Bernarda de Utrera, con motivo de su treinta aniversario como profesionales.\n\nPor tal motivo, el próximo número de nuestra revista estará dedicado íntegramente a Fernanda y Bernarda; donde intentaremos recoger toda su vida y toda su trayectoria artística. Creemos que el esfuerzo de CANDIL merece la pena, dada la incommensurable valía de estas dos mujeres flamencas.\n\nDe todo lo concerniente al homenaje recibirán puntual información todas las peñas de Andalucía, a las cuales, desde ya, pedimos su solidaridad y adhesión, porque, en pocas ocasiones como ésta, tendremos los flamencos más motivos para agradecer a unos artistas su incontaminable trayectoria. La fase provincial fue presentada a los medios de comunicación y público en general durante el mes de diciembre en la sede de la Peña Flamenca de Jaén, según «Candil» recogió en su momento.\n\nE ste primer concurso de Cante Flamenco, promovido por la Confederación Andaluzas de Peñas Flamencas, y patrocinado por la Consejería de Cultura de la Junta de Andalucía, había despertado gran expectación desde su presentación pública en Sevilla en noviembre de 1989.\n\nDesde entonces se han venido celebrando en distintos puntos de la geografía jiennense las eliminatorias correspondientes a dicha fase, en un esfuerzo enorme llevado a cabo por un competente jurado nombrado al efecto.\n\nTras reñida competición en la que los finalistas interpretaron dos cantes de cada uno de los grupos que establecían las bases, los resultados fueron los siguientes: Primer premio, dotado con 150.000 pesetas y pase a la fase regional para Carlos Cruz. Segundo premio: 100.000 pesetas para Joselete de Linares. Tercer premio: 75.000 ptas. para Niño Jorge, y Cuarto premio: dotado con 50.000 ptas. para Cristóbal Beltrán.\n\nComo consecuencia, pasaron a la fase final del certamen provincial cuatro cantaores que el pasado 24 de febrero disputaron, en la Caseta el Condestable de la capital, cuál sería el ganador que representaría a nuestra provincia el 24 de marzo en la fase final (regional) del certamen.\n\nDesde aquí felicitamos a los finalistas, a la vez que deseamos toda clase de éxitos a nuestro representante, Carlos Cruz, en la reñidísima competición de Córdoba, a la que él sabrá aportar sus enormes cualidades cantaoras.\n\nEn la fotografía, Carlos Cruz, ganador de la fase provincial.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 856,
+    "article_char_count_full": 5373,
+    "article_char_count_review": 5373,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-01-4-right-paco-vallecillo-in-memoriam",
+    "article_text_for_review": "Para mis anchas incapacidades, no es empresa fácil escribir del amigo al que se ha querido y del flamenco que nos ha de servir de modelo para el futuro. Son tantos los atributos por reseñar a fin de dibujar un perfil que no desmerezca del original, que uno ya no sabe qué admirar más, si la magna lección que ha impartido como aficionado ejemplar o su gesto de benefactor hacia los demás. Como andaluz especacularmente humilde, el que su altruismo haya merecido tardíamente la Medalla de Andalucía no es cosa que le envaneciera o preocupara. Paco Vallecillo siempre tuvo la extraordinaria virtud de prescindir de sí mismo, y no por una consideración de falsa modestia, sino por escrúpulos de corte-sía ante los verdaderos protagonistas de este arte. Radical e intransigente con las adulteraciones, jamás cedió ante los problemas que genera la defensa de la puridad jonda. Cuando menos dio la cara en los conatos de polémica entre impugnadores y defensores. De ahí que fuese la desesperación de los malos cantaores, la pesadilla de los ventajistas y la guía de los buenos aficionados. Eso sí, expresándose con su acostumbrada sinceridad no exenta de delicadeza para no herir la falibilidad de los oportunistas.\n\nPor su modo tan personal de sentir el cante gitano-andaluz —guardó fidelidad a la máxima mairenista de que «el cante me duele porque ha sido toda mi vida»—, se le ha juzgado en ocasiones contradictoriamente, sobre to-\n\ndo por quienes escriben y hablan de oído. A Francisco de la Brecha, azote de los insensatos, algunos no lo comprendieron o no lo quisieron comprender —como decía Gerardo Diego—, porque la comprensión era obligada.\n\nEn este sentido, se le ha criticado muchas veces con inexactitud por falta de información o por la mala voluntad que los maliciosos tienen para contar los hechos como fuera. No es justo acusarle de que, desde su posición, haya propendido al capricho de su museo personal o de afinidades elegidas. ¿Quién tiene autoridad para solicitar del valedor que abdique de sus gustos y su estética, su sensibilidad y su fe? Paco Vallecillo tuvo el enorme mérito de acertar a armonizar ciertas creencias con la estimación histórica y con el respeto a las ilusiones del momento. Sus ideales reivindicadores, permanentes y actuales, respondieron al crédito y al prestigio que supo ganarse año tras año. Y sesenta años invirtiendo su tiempo y sus ahorros, sacrificando a la familia incluso, por dignificar este arte, son muchos como para que no perpetuemos su nombre en la lista de los defensores insobornables del flamenco.\n\nQuien tuvo el corazón de un niño, el alma de genio y una inteligencia fuera de lo común para lo jondo, ha visto su nombre impreso, con gruesas letras de oro, en el libro de las grandes gestas andaluzas. Gracias le sean dadas desde Andalucía en nombre del flamenco y de los flamencos. Ni los alanceadores de moro muerto conseguirán que su ausencia resulte cada día más visible.",
+    "title": "Paco Vallecillo, in memoriam",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-4",
+    "page_number": 4,
+    "word_count": 491,
+    "article_char_count_full": 2932,
+    "article_char_count_review": 2932,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-01-5-left-manuel-cano-in-memoriam-paco-val",
+    "article_text_for_review": "P recarías condiciones de salud nos han mantenido a nuestro pesar separados de la relación y el contacto con nuestro fraternal amigo Manuel Cano Tamayo, la gravedad de cuya dolencia hemos ido conociendo a través de amigos comunes y a la que apenas si hemos podido unirnos en un par de ocasiones con llamadas a sus hijas y nietos y a algún amigo tan entrañable como Paco Carmona o Enrique Osborne.\n\nSe nos fue Manuel para siempre y nuestra doliente queja no tuvo el eco que su incomparable amistad-hermandad merecía. Débil nuestra voz, contrito nuestro ánimo, apagado nuestro espíritu, solamente hoy podemos dar al aire la queja y el dolor que embargan nuestro ánimo, el pesar que nubla nuestro pensamiento...\n\nHemos disfrutado muchos años de sabernos elegidos por la amistad honda y leal de dos flamencos de excepción. Amistad que excedió los límites generosos del concepto amigo, para enracimarse en el de la fraternidad: Antonio y Manuel. Ahora quedamos solos, atados por ese lazo sutil y leve del recuerdo que el tiempo adelgaza y sólo el sentimiento sostiene.\n\nSan Manuel Cano, expresión fe- haciente de la bohonomía, a quien me unió la admiración, fruto del conocimiento vehemente de una admiración compartida hacia quien nadie conoció mejor que tú ni me- jor que yo: Antonio Mairena.\n\nManolico: aquí queda mi corazón renqueante y cansado. No tardaré en estar con vosotros dos en la eternidad, como antes estuvimos en la fraternidad y el amor. Manuel Cano Norberto Torres Cortés\n\na guitarra flamenca y el mundo flamenco están de luto. Se ha muerto el concertista de guitarra Manuel Cano. En homenaje a este gran artista, queremos recordar aquí brevemente la figura de este granaíno.\n\nEn una entrevista publicada en 1988 en el Ideal, Manuel Cano nos cuenta cómo, siendo niño, se aficionó al arte flamenco al escuchar cantar a Manuel Vallejo. Se dedicó a los negocios de su padre, pero consagrando sus ratos libres al instrumento de seis cuerdas. Cuando probó fortuna con la guitarra, ya tenía tres hijos y treinta y tantos años. Su preocupación o su vocación, a partir de este momento, es la que tuvo Andrés Segovia con la guitarra clásica: llevar la guitarra flamenca a las salas de concierto. Para esto, quiere que su guitarra en los escenarios internacionales suene clásica al clásico y flamenca al flamenco, decisión arriesgada, pues lo contrario podía ocurrir. Los éxitos logrados por Manuel Cano a lo largo de su carrera han confirmado que consiguió con creces su propósito.\n\nAutor de 17 LP's, ha recibido varios premios importantes como son el «Premio Internacional del Disco Flamenco» en 1964, el primer premio para «Guitarra Flamenca de concierto» en el Concurso Nacional de Arte Flamenco de Córdoba de 1965, el Premio Nacional de Flamenco en 1968, la Medalla de Oro como premio de Música Folklórica de «radio Bratislava», etc.\n\nPero ante todo, lo que aparece a través de la obra de este guitarrista, es el carácter generoso de un gran humanista. Su fe en los hombres que da patente, además de su actividad como concertista, en la importante labor de investigador y enseñante de la guitarra flamenca. Catedrático numerario de guitarra flamenca en el Conservatorio Superior de Música de Córdoba, este hombre enamorado de su sonanta (poseía una colección particular de instrumentos antiguos), tuvo siempre la inquietud de transmitir a las nuevas generaciones sus experiencias y sus conocimientos. Esta voluntad particular de entrega viene perfectamente ilustrada por su última publicación «La Guitarra, historia, estudios y aportaciones del Arte Flamenco», donde, además de incluir unas valiosas partituras de todos los estilos flamencos, Manuel Cano obsequia al lector aficionado o futuro aficionado con grabaciones inestimables de su colección de discos de pizarra. Todo un ejemplo a seguir.\n\nEl corazón de Manuel Cano, como el de Antonio Mairena a quien acompañó varias veces, testigo constante de injusticias y amarguras de los flamencos, a pesar de nunca renunciar a proyectos e ilusiones, estaba ya dañado.\n\nManuel Cano, un caballero cabal de la guitarra flamenca. Descanse en paz.\n\nExcmas. Autoridades Seõoras y Seõores\n\nSiempre han sido muy breves mis palabras al inicio de este acto de entrega de la DISTINCIÓN COMPÁS DEL CANTE de cada año, pues mi misión aquí ha sido la de un simple introductor de los embajadores de la palabra.\n\nPero hoy ruego que me permitan, sin ahogar un ápice el ambiente festivo de esta celebración, que llame al amigo ausente por su nombre y que lo cite aquí donde lo siente presente toda la gran familia flamenca.\n\nHace unos días se nos fue a interpretar un inacabable Con- cierto de Campanas don Manuel Cano Tamayo.\n\nSe nos fue el amigo de voz pausada que hizo de la sencillez su segunda naturaleza, de la verdad y la lealtad su estilo de vida.\n\nYo he tenido la suerte de encontrarme con él estos últimos años como miembro eminente del Jurado que otorga la Distinción Compás del Cante. Nunca faltó a su doble cita anual, siempre acompañado por Emilia, su mujer, el ángel de la guarda de su salud y su inspiración.\n\nSe nos ha ido, pero está.\n\nAllí, donde Dios lo sostiene con su poderosa mano, estará ya afinando las seis cuerdas de su guitarra para unirse al homenaje que hoy nos reúne junto a Fernanda de Utrera.\n\nY el toque por soleá hará enmudecer el Generalife del cielo porque Dios ha detenido por un momento la Creación y le ha dicho a su buena gente: «Escuchad y sentir».\n\nGracias, Excmo. Sr. D. Manuel Cano Tamayo por cuanto hiciste por el arte profundo y serio de nuestro pueblo.\n\nGracias, amigo Manolo, por dejarnos quererte por lo mucho que eres, ya que no nos ha dado oportunidad, afortunadamente, de quererte por lo que nunca fuiste.\n\nPara ti, en esa otra forma de vivir el ritmo y el compás del amor, nuestro más cariñoso y respetuoso aplauso.",
+    "title": "Manuel Cano, in memoriam Paco Vallecillo Norberto Torres Cortés Enrique",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-5",
+    "page_number": 5,
+    "word_count": 976,
+    "article_char_count_full": 5805,
+    "article_char_count_review": 5805,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1995-07-4-right-2-sobrevivir-en-cada-edici-n",
+    "article_text_for_review": "chentistas.\n\nPreautonomía. Afirmación de lo que constituyen señas de identidad. Diversos gobiernos autonómicos. Andalucía se debate por ser ella misma. En ese marco sociocultural —reitero primavera de 1978— nace la revista Candil, como fruto de una iniciativa que propongo al entonces presidente de la Peña Flamenca de Jaén, José Cruz, que se nos fue, y que éste, al instante, acepta, y secundan Pedro Sánchez, Fausto Olivares, Juan Antonio Ibáñez, Juan José Carrascosa y muchos otros. Se trataba de cubrir el hueco que dejaba la, por aquellas fechas, desaparecida Revista de Flamenco \"Ceuta\", abanderada por el recordado Paco Vallecillo.\n\nHe ojeado las primeras revis- tas, tan rezumantes de ilusio- nes como provincianas en el diseño y no he dejado de sen- tir esa emoción turbadora del que apenas se reconoce, tal era, como esos personajes —noso- tros mismos— que en los vi- deos retrospectivos de la tran- sición política exhiben pantalones acampanados, me- dias melenas, indumentarias de pana. La revista Candil, fue un producto más del tiempo apasionante en que nace y, di- ria, que resultado de la transi- ción cultural que simultánea- mente a la política, se opera en nuestra Sociedad.\n\n2. Sobrevivir en cada edición\n\nSólo quienes hayan sopor tado la responsabilidad de gestionar una publicación periódica de esta naturaleza, podrán comprender hasta qué punto resulta conflictiva y traumática la aparición de cada número. Candil comienza a sufragarse con fondos de la propia entidad editora, con la indigente ayuda de algunos anunciantes que, como es obvio, lo son no en mérito a criterios de marketing, sino a pasiones amistosas de Pepe Cruz y otros miembros de la Peña Flamenca de Jaén. La continuidad del proyecto peligraba; pero, por fortuna, la Diputación de Jaén ejerce a tiempo un digno mecenzago y subvenciona básicamente las sucesivas ediciones hasta el Otoño de 1983, en que toma el relevo la Consejería de Cultura de la Junta de Andalucía, con la valiosí-sima mediación de su primer asesor de Flamenco, Paco Vallecillo.\n\nA nadie se le oculta, por lo tanto, que esta Revista ha sobrevivido merced a cierta sensibilidad institucional que se instala en la Administración en período preconstitucional y se\n\ndesarrolla plenamente en los primeros años de la década de los ochenta. Hay que subrayar lo genuino de la cultura andaluzay poner al descubierto la veta de minerales artísticos que yacen en la sima del olvido y de la ignorancia. En otro lugar ya comentamos, a propósito de fórmulas propuestas para una nueva sistematización de la historiografía del flamenco, cómo éste se erige en guinda de centenares de Ayuntamientos andaluces que compiten entre sí por organizar festivales flamencos muy costosos y desproporcionados con relación a sus propios recursos. Las modas son pasajeras y no resisten el cambio de utilidades. Cuando se amortigua el crepitar de los fuegos autonómicos, el flamenco se silencia de nuevo, bien visto que las cotas de dignidad alcanzadas se han incorporado ya definitivamente a la percepción de amplios sectores de la sociedad andaluzay. Creo que es de estricta justicia constatar que la experiencia de esta Revista respecto de efímeras sensibilidades institucionales ha sido, por suerte, muy otra. Candil puede editar su número cien y esperamos que le si-gan varios centenares más, gracias a la subvención que continúa proporcionándole la",
+    "title": "2. Sobrevivir en cada edición",
+    "periodical": "candil",
+    "issue_id": "1995-07",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-4",
+    "page_number": 4,
+    "word_count": 539,
+    "article_char_count_full": 3383,
+    "article_char_count_review": 3383,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-07-5-right-ante-el-n-mero-100-de-candil",
+    "article_text_for_review": "E scribir en España es llorar\", decía apesadumbrado un Mariano José de Larra que no fue capaz de soportar las terribles contradicciones surgidas en su \"yo\" más recóndito, el choque terrible entre una realidad no asumible por su sensibilidad y un deseo inmenso (no olvidemos que estamos en el más profundo Romanticismo español) de elevarse hasta otras regiones menos contaminadas por miasmas diversos, y algunos tan hispánicos, y tan de la escritura,\n\ncomo la apatía, la zancadilla, la censura o la diatriba insoportable para todo aquel que avanza por la profesión periódística con la honradez como divisa, sabedor de que sólo el tiempo pone a cada cual en su sitio y que la verdad relativa — la absoluta nunca se sabrá del todo— solo completará su puzzle caleidoscópico el día que la gente acuda a consultar las hemerotecas.\n\n¿Y en Jaén?, ¿escribir es llorar, gozar, o, simplemente, vegetar?, ¿cómo se imaginan los no iniciados en el tema de publicaciones que se sienten, nos sentimos, los cuatro locos que, muy de tarde en tarde, nos da por emprender la ingrata tarea de editar una revista, sacar a la luz un libro o un folleto, en suma, ayudar a esta provincia a lavar su cara con la contundencia de la palabra escrita? Ello significa realizar un ejercicio de memoria colectiva, atreverse con los diagnósticos\n\nMadrid, 14 de diciembre de 1995\n\nSr. D. Marcos Gutiérrez Melgarejo Peña Flamenca de Jaén Mastra, 11 23002 JAÉN\n\nEstimado amigo:\n\nEs para mí motivo de satisfacción poderme dirigir a los lectores de la Revista \"Candil\" en este número especial; el n° 100.\n\nEspero que su índice cronológico, temático y de autores, facilite su consulta y sirva, a la vez, para poder profundizar en este conocimiento de la cultura española.\n\nCon el deseo de que la Peña Flamenca de Jaén persistan en su objetivo de seguir investigando y exponiendo este quehacer, tan representativo de nuestras raíces, envío un cordial saludo para todos y en especial para cada uno de los amantes del Flamenco.\n\nFeng. Gong.\n\nFelipe González Márquez",
+    "title": "Ante el número 100 de Candil",
+    "periodical": "candil",
+    "issue_id": "1995-07",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-7",
+    "page_number": 5,
+    "word_count": 340,
+    "article_char_count_full": 2022,
+    "article_char_count_review": 2022,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-07-8-left-el-presidente-de-la",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nComo aficionado al Flamenco y conocedor de la labor de difusión y promoción que realiza la Revista CANDIL de Jaén, envío al Consejo de Dirección y a todos sus lectores, un cordial saludó y felicitación por los éxitos alcanzados. No hace falta repetir que en el Flamenco se encuentran muchas de nuestras señas de identidad cultural e histórica. El Flamenco es una parte esencial de nuestras vidas y tal vez la forma suprema de expresión del alma andaluz.\n\nCuanto hagamos por favorecer su conocimiento entre aficionados, público en general y jóvenes generaciones, es una muestra delicada y exquisita de amor a Andalucía.\n\nFdo.: Manuel Chaves González\n\nEl hecho de que, a compás, una revista flamenca alcance su primer centenar de números, como es el gozoso caso de la jaenerísima \"Candil\", es algo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionado\"]\n\nez la forma suprema de expresión del alma andaluz. Cuanto hagamos por favorecer su conocimiento entre aficionados, público en general y jóvenes generaciones, es una muestra delicada y exquisita de amor a Andalucía. Fdo.: Manuel Chaves González El hecho de que, a compás, una revista flamenca alcance su primer centenar de números, como es el gozoso caso de la jaenerísima \"Candil\", es algo que, a la vez de confortarme personalmente como acallado aficionado, me alegra en mi calidad de Presidente de la Diputación, por cuantas rotundas afirmaciones conlleva esa efemérides: Jaén es redobladamente flamenca, en estos pagos por vez primera nace una revista jonda que permanece y alumbra con su tintineante y cálida llama por todo el mundo... A qué seguir. Quede mi felicitación para todos cuantos han hecho posible esta revista, voz y señera imagen de su editora la Peña Flamenca de Jaén, y a sus lectores. Felipe López García. Jaén, 22 de Diciembre de 1.995 Sr. D. MARCOS GUTIERREZ MELGAREJO Presidente de la Peña Flamenca de Jaén. JAÉN.- Mi querido presidente y amigo: De todo corazón me uno al gozo que supone, para esa Peña Flamenca de Jaén, para el mundo flamenco en general, y para nuestra tierra, la salida a la calle de la edición número Cien de la Revista de Flamenco \"Candil\". Siempre leo con interés, admiración y cariño la Revista \"Candil\", que, desde el primer momento, ha sabido proyectarse dentro y fuera de España, en numerosas Universidades y otros centros docentes y culturales, mereciendo una positiva consideración por sus valiosos trabajos que hoy constituyen fuente esencial para el estudio del flamenco. Al felicitar a todos los directores, Consejos de Redacción y colaboradores que se han sucedido en la Revista \"Candil\", quiero proclamar que esta prestigiosa publicación tiene en su haber una brillante ejecutoria en el campo de la investigación histórica, así como en la defensa y difusión del flamenco, y, por tanto, de las esencias más puras de este arte y de la cultura andaluz. Al flamenco han hecho mucho daño, en distintos ambientes, determinados factores, como ciertas juergas de ventas y tabernas; la presencia de pseudo-intelectuales que se arrimaron por el snobismo de la moda y la existencia de un mundillo movido por los intereses de la comercialización. Frente a todo ello es impagable la labor de la Peña Flamenca de Jaén y realmente ejemplar la trayectoria de \"Candil\". Una y ot\n\n[ENDING CONTEXT]\n\nflamenca y humana de Pepe Cruz\n\n1993 Fernández Malo, Alfonso Homenaje a Pepe Cruz\n\n1996 Buendía López, José Luis La poesía y el baile flamenco\n\n2003 Soler Guevara, Luis y Soler Díaz, Ramón Manuel Torres y los artistas del campo de Gibraltar\n\n2008 Arana Rupelo, Francisco Pregón del Quija\n\n2009 Ramos Picón, Domingo Camarón, el genio perdido\n\n2011 Núñez Romero, Antonio Jerez, su cuna le acogió con arte\n\n2013 Valera Espinosa, Rafael Discografia Flamenca\n\n2015 Gabete, Manuel Presencia de Cántico en el flamenco\n\n2017 Cabo Hernández, José Antiguos cantes de Linares\n\nContraportada: P. Moreno\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "EL PRESIDENTE DE LA",
+    "periodical": "candil",
+    "issue_id": "1995-07",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-41",
+    "page_number": 8,
+    "word_count": 7578,
+    "article_char_count_full": 49600,
+    "article_char_count_review": 4037,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionado"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-07-8-right-junta-de-andalucia",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n...sejena de Cultura\n\nLa salida a la luz del número 100 de la Revista Candil es un evento de incuestionable transcendencia para el mundo del flamenco y para todos los que estamos interesados en conocer este importante ámbito de la cultura de Andalucía.\n\nLa Peña Flamenca de Jaén evidencia con este acontecimiento una dilatada trayectoria, dominada por una ejemplar constancia en el empeño de transmitir información y conocimiento sobre su campo de trabajo. Así lo reconoce la Consejería de Cultura de la Junta de Andalucía y lo manifiesta en el apoyo que viene prestando y prestará en el futuro a la edición de esta singular revista.\n\nPor ello, quiero aprovechar esta ocasión para expresar el agradecimiento de las gentes de la cultura a este proyecto y la felicitación más calurosa a sus\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publicación\"]\n\nlo reconoce la Consejería de Cultura de la Junta de Andalucía y lo manifiesta en el apoyo que viene prestando y prestará en el futuro a la edición de esta singular revista. Por ello, quiero aprovechar esta ocasión para expresar el agradecimiento de las gentes de la cultura a este proyecto y la felicitación más calurosa a sus responsables. JOSE MARÍA MARTIN DELGADO Consejero de Cultura de la Junta de Andalucía REVISTA DE FLAMENCO \"CANDIL\" La publicación del número cien de la Revista “Candil” tiene una especial significación para todos los que apreciamos el flamenco como expresión artística y cultural. Si además, como sucede en este caso, las sucesivas ediciones han mantenido un indudable nivel de calidad, el logro merece un sincero reconocimiento y un efusivo aplauso. La difusión de esta entrañable revista es una de las más importantes iniciativas desarrolladas por la Peña Flamenca de Jaén, que merced a la gran labor desempeñada por sus miembros, ha logrado convertirse en una entidad señera en todo lo relacionado con el flamenco. Una de las principales virtudes del contenido de “Candil” es que no se queda en un mero repaso de los temas relacionados con el mundo del flamenco, sino que profundiza -mediante rigurosos análisis, estudios y comentarios- tanto en las raíces como en la evolución de éste arte. Como Alcalde de Jaén deseo agradecer a la Peña Fl\n\n[ENDING CONTEXT]\n\n8,11 10,7 10,19 28,6 28,16 29,11 31,31 37,15 47,15 52,39 54,7 56,9 56,19 59,31 59,36 62,52 62,53 65,229 70,447 77,827\n\nCANTE GITANO 14,25 23,44 23,80 31,17 64,156 83,1142\n\nCANTE INVENTADO 37,13\n\nCANTE JONDO 2,2 6,5 40,7 73,623\n\nCANTE MINERO 57,7\n\nCANTE MINERO DE CARTAGENA 38,24\n\nCANTE MINERO DE LA UNÍON 38,24\n\nCANTE NEGRO AMERICANO 31,17\n\nCANTES DE IDA Y VUELTA 4,19 38,32 40,39 42,15 65,225 86,1348\n\nCANTES DE LEVANTE 7,5 11,18 18,9 24,32 24,33 54,31 61,22 86,1336 94,1727 97,1929\n\nCANTES DE LINARES 99,2017\n\nCANTES DE MÁLAGA 18,9 24,32 24,33 97,1929\n\nCANTES EN DESUSO 44,47\n\nCANTIÑA 27,8 36,7\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "JUNTA DE ANDALUCIA",
+    "periodical": "candil",
+    "issue_id": "1995-07",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-41",
+    "page_number": 8,
+    "word_count": 12749,
+    "article_char_count_full": 83155,
+    "article_char_count_review": 2991,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicación"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-07-42-left-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCANDIL Revista de Flamenco Peña Flamenca de Jaén 2124\n\nCARACOLES 18,7 36,7\n\nCARTAGENA 40,13\n\nCOLOMBIANA 44,27\n\nCOMPÁS DEL CANTE 46,33 47,33 66,264 67,321\n\nCONF. ANDALUZA PEÑAS FLAMENCAS 38,5\n\nCopla 22,7\n\nCopla Flamenca 22,35 47,7 76,770\n\nCopla JONDA 86,1344\n\nCULTURA ANDALUZA 6,5\n\nC. ACTIVID. FLAMENCAS CÁCERES 35,32 35,34\n\nC. NAL. ARTE FLAMENCO CÓRDOBA 44,5\n\nDANZAS DE IDA Y VUELTA 52,7\n\nDARIO, R. 44,15\n\nDEBLA 65,211\n\nDon Preciso 55,21\n\nEL CARTEL FLAMENCO 63,114\n\nEROTISMO 52,21\n\nEVOLUCIÓN DEL FLAMENCO 66,281\n\nExpo'92 80,946 80,980\n\nFANDANGO 27,8 41,10 61,11 98,1969\n\nFANDANGO DE HUELVA 27,8 39,23 53,2 55,29\n\nFANDANGO DE VÉLEZ 15,7 49,29\n\nFANDANGUILLOS DE HUELVA 45,37\n\nFESTIVAL CANTE DE LAS MINAS 18,21 93,1695\n\nFESTIVAL FLAMENCO 5,5 9,7 38,23 40,5 41,21 63,99 68,347\n\nFLAMENCO\n\n15,25 16,7\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"ESCUELA\"]\n\nMINAS 18,21 93,1695 FESTIVAL FLAMENCO 5,5 9,7 38,23 40,5 41,21 63,99 68,347 FLAMENCO 15,25 16,7 18,39 21,9 21,39 23,41 25,7 25,17 25,27 26,7 26,45 27,8 33,7 34,7 34,21 35,5 35,19 38,9 39,6 45,13 45,20 45,28 47,11 48,5 52,21 60,7 60,12 60,21 64,159 66,281 68,347 71,505 73,587 74,672 78,843 78,869 79,903 90,1524 91,1573 97,1920 FLAMENCO E INNOVACIÓN 78,874 FLAMENCO EN CATALUÑA 90,1532 91,1596 97,1925 FLAMENCO EN JAÉN 98,1958 FLAMENCO EN LA ESCUELA 26,43 27,7 34,5 46,11 46,31 57,35 66,275 FLAMENCO RENOVADO 12,5 FLAMENCO Y CRÍTICA 87,1388 90,1522 93,1662 FLAMENCO Y MUJER 61,10 FLAMENCO Y MÚSICA ORIENTAL 71,503 FLAMENCO Y MUSICOLOGÍA 61,28 66,278 71,516 81,1047 FLAMENCO Y NOVELA 64,174 FLAMENCO Y PERIODISMO 85,1278 FLAMENCO Y PINTURA 59,15 73,619 FLAMENCO Y POESÍA 64,174 83,1167 FLAMENCO Y PRENSA ANDALUZA 79,934 80,988 FLAMENCO Y TAUROMAQUIA 76,773 FLAMENCO Y TEATRO 77,816 FLAMENCO Y UNIVERSIDAD 21,23 87,1408 91,1582 91,1583 FLAMENCOS EN CEUTA 45,11 47,25 FREIDE, J. 64,157 FUNDACIÓN ANDALUZA DE FLAMENCO 45,5 56,7 FUNDACION “ANTONIO MAIRENA” 53,24 FUTURO DEL FLAMENCO 65,222 GARCIA LORCA, F. 26,35 46,5 69,45 GARGALLO P. 18,24 GENERACIÓN DEL 27 43,7 GITANO 3,11 5,13 18,39 21,21 42,31 51,17 64,159 80,957 94,1722 GITANO ANDALUZ 42,7 GITANOS DE FLANDES 24,15 GITANOS DEL PUERTO 75,727 GITANOS FLAMENCOS 24,15 GONZALEZ CLIMENT, ANSELMO 60,5 65,204 84,1179 84,1191 84,1199 84,1201 84,1203 84,1206 84,1209 84,1237 84,1246 84,1254 84,1256 84,1260 84,1267 90,1511 GRAMÓFONO FLAMENCO 21,11 GRANAÍNA 27,8 66,262 75,735 GUITARRA FLAMENCA 21,13 33,15 GRANDE, FÉLIX 6,9 HABANERA 6,21 GUITARRA 2,14 5,25 21,42 22,47 29,24 35,42 HISTORIA DE ESPAÑA 16,7 HISTORIA DEL CANTE 68,375 HISTORIA DEL FLAMENCO 52,29 55,9 56,31 61,4 HISTORIA GITANA 2,6 JIMÉNEZ, J. R. 17,13 JONDO 3,5 4,5 18,29 26,35 LA UNIÓN 23,100 40,13 57,7 LETRAS FLAMENCAS 41,31 54,7 LETRISTA FLAMENCO 22,10 LÉXICO FLAMENCO 71,507 LITERATURA ROMÁNTICA 28,6 29,11 LIVIANA 27,8\n\n[ENDING CONTEXT]\n\nN ☺ 65,237\n\nRafael de León, poeta (poesía), N 26,30\n\nVera, Benito\n\nVillarejo García, Manuel\n\nOtra versión de Los Tarantos, N ☐ 51,7\n\nEl Flamenco: ¿Entendimiento o sen-\n\ntimiento?, N ☺ 60,12\n\nEl mito de las bailarinas gaditanas,\n\nN 0 65,233\n\nLos Cursos de Iniciación al Flamen-\n\nco en la Escuela, N º 66,275\n\nPaco de Lucía, flamenco universal,\n\nN 0 75,719\n\nEl Flamenco: Dos estéticas,\n\nN ☹ 97,1908\n\nViribay Abad, Miguel Angeles Ortiz desde el recuerdo, N º 32,6\n\nVisor, Juan El caso de Pepe el de la Matrona, N º 13,15\n\nYerga Lancharro, Manuel. A nadie se le puede sustraer lo que no posée, N ☺ 7,5\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO",
+    "periodical": "candil",
+    "issue_id": "1995-07",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "42-55",
+    "page_number": 42,
+    "word_count": 15668,
+    "article_char_count_full": 89305,
+    "article_char_count_review": 3555,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "ESCUELA"
+      }
+    ]
+  }
+]
+```

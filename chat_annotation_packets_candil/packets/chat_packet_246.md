@@ -1,0 +1,165 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-01-14-right-alre-de-la-fiesta-gitana",
+    "article_text_for_review": "Con ilustraciones de Miguel Alcalá, del libro «Le Flamenco et les Gitans», y textos de Manuel Martin Martin, se inicia con este número de la Revista CANDIL, una nueva sección que tendrá por objeto dar a conocer a nuestros lectores todo un catálogo de artistas significados, en el cante, en el baile y en la guitarra. La concisión de los textos, pensados en función de conformar una galería biográfica, vendrá siempre ilustrada por la jondura y las virtualidades de expresión que, ciertamente, laten en los dibujos de Miguel Alcalá, publicados por la editorial francesa «Filipacchi», y reproducidos con autorización del autor. ALREO de la FIESTA GITANA Dibujos de Miguel Alcalá del libro «Le Flamenco et les gitans», Editorial Filipacchi, París, Francia, reproducidos bajo licencia del autor. Textos de Manuel Martin Martin\n\nManuela Carrasco.—Manuela Carrasco Salazar (Sevilla, 1958). Rama del tronco gitano de «Los Cordobesas», debutó a los 11 años de edad en el tablao sevillano de «La Cochera». Tras conseguir el Premio Pastora Imperio en el Concurso Nacional de Córdoba de 1974, la trianera se hizo figura imprescindible de los Festivales Flamencos, colmando el gozo de quienes vimos en sus soleares, alegrías y bulerías toda una obra de arte tan temperamental como convincente, conteniendo sus propias leyes y poniendo de manifiesto la vitalidad y la densidad de su contenido. La absoluta superioridad de la que fuera llamada «Diosa del Baile Flamenco», impide cualquier cotejo con sus coetáneas.\n\nLa Farruquita.—Rosario Montoya Manzano (Sevilla, 1963). Extraordinariamente dramática y turbulenta, deja entrever las hondas huellas familiares, incorporando el donaire y los giros de su feminidad. Presenta, por tanto, todas las particularidades del estilo paterno, «El Farruco», pero impregnadas de vigorosos contratiempos en el braceo, muy lejos del academicismo sedoso de sus contemporáneas. Se inició a temprana edad, formando junto a su padre y su hermana Pilar el grupo «Los Farrucos» en 1977 y figurando en los espectáculos «Flamenco Puro» y «La Amante». Contrajo matrimonio muy joven con Juan el Moreno, notable cantaor de atrás, y fruto de esta unión nació su hijo Juan Manuel «El Mani», todo un prodigio de precocidad que pronto dará qué hablar. Farruco.—Antonio Montoya Flores (Pozuelo de Alarcón, 1936). Es el bailaor más genial que se nos ha dado a sentir. Ha cruzado por nuestras vidas de una manera imborrable. Nadie como él es capaz de transmitir el lenguaje plástico de la danza cañí. Es, al filo del siglo, el más intenso de todos, un bailaor de pura raza, porque no podía ser otra cosa, y rabiosamente gitano. La atracción de su arte no obedece a un ejercicio intelectual. A Farruco no hay que comprenderlo, sino sentirlo para entenderlo. Y es que no estamos ante algo rígido, estático y predeterminado, sino ante una angustia existencial que se implica en la sensibilidad y en la emoción colectivas. Para este príncipe de genios, el Flamenco es un medio de comunicación y una necesidad vital.\n\nJuana la del Revuelo.—Juana Sila Esteban (Sevilla, 1952). Esta trianera, gitana de viejo bronce, zalamera y cautivadora hasta la lasitud, justifica apodícticamente, que cantar gitano es siempre señal de buen cante. Partiendo de las ideas musicales recogidas por su marido Martín Revuelo y apoyándose en el ritmo inquietante que imprime a todo lo que toca, ha llegado a la madurez de su expresión consagrándose por tangos, fandangos y bulerías. Ella, por sí sola, es un espectáculo total, aunando la intuición pura del baile con la estructura minuciosamente articulada de aquellos elementos musicales de su raza que ha escogido para integrar su personalidad. El Chocolate.—Antonio Núñez Montoya (Jerez de la Frontera, 1931). Hijo de cantaores gitanos no profesionales, disputó en 1962 la III Llave de Oro del Cante y consiguió en 1986 el II Giraldillo del Cante. Su eco deambula entre una potencia dramática impensada y una profundidad inesperada. Destaca por una voz que cautiva y arrastra hasta lo indefinible, dejando al descubierto la ligazón en los tercios y una agradecida y enduendada personalidad en la caracterización de los estilos. Tomás Pavón y Manuel Torre presiden su pensamiento por taranto, seguiriyas y tonás, amén de hacer suyos los fandangos del Bizco Amate, El de la Carsá, Aznalcóllar y El Chato Méndez. Despierta en la afición el auténtico sentido de la jondura, una apoteósica exaltación de los sentimientos más elevados y solemnes.\n\nAurora Vargas.—Aurora Vargas Vargas (Sevilla, 1956). La flor de los cantes de Aurora Vargas llegan envueltos en una lluvia de pétalos raciales, arrastrándonos con la fuerza de un poderoso remolino. Es decir, alcanza la gloria por alegrías, emociona por tientos-tangos y fandangos, y es capaz de dejar un sendero bulearero preñado de llagas como claveles, poniendo en claro que son las ramas las que se revisten de hojas, y dejando patente que su figura está constituida más por la influencia de su raza que por una enseñanza metódica. Eso sí, flores con el perfume morado de una gitana de soberana belleza descontrolada, que aúna el baile y el cante, y que sabe recrear este último examinando, previamente, donde admite mejora.",
+    "title": "Alreó de la fiesta gitana",
+    "periodical": "candil",
+    "issue_id": "1992-01",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-18",
+    "page_number": 14,
+    "word_count": 833,
+    "article_char_count_full": 5199,
+    "article_char_count_review": 5199,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-01-18-right-algo-que-ya-es-historia",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nMis vivencias con Manolo el de Huelva, Centeno, El Gloria y Tío Borrico\n\nManuel Yerga Lancharro\n\n¡Qué guitarrista tan raro de carácter, pero qué genial fue Manolo el de Huelva!\n\nPara mi inolvidable Antonio Rengel, fue Manolo el mejor guitarrista del momento.\n\n¡Malditos años! Como dijo Antonia «La Gamba» cuando Fernando el de Triana se la encontró por la calle Sierpes, vestida de negro, negras también sus alpargatas de seis perras gordas y mendigando para poder comer.\n\n¡Fernando de mi alma, dijo Antonia, lo que hace Dios con las criaturas!\n\nEs verdad. Eso mismo pudo decirme Manolo el de Huelva, cuando le vi por última vez. Y menos mal que a última hora apareció ante él su Hada madrina para proporcionar diariamente el sustento al matrimonio onubense. Su Hada que no lo hizo gratis, porque\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"peña\"]\n\nAntonia, lo que hace Dios con las criaturas! Es verdad. Eso mismo pudo decirme Manolo el de Huelva, cuando le vi por última vez. Y menos mal que a última hora apareció ante él su Hada madrina para proporcionar diariamente el sustento al matrimonio onubense. Su Hada que no lo hizo gratis, porque según me informaron, consiguió grabar todo lo que la ingeniosa mente del huelvano había creado. Poco después me puse en contacto con los miembros de la peña flamenca, de la que soy socio de honor, y les pedí que se le hiciera a Manolo un homenaje en pago de la deuda que toda la afición onubense y en especial los socios de la peña teníamos pendiente con el artista. Advertí que deberían actuar con la máxima rapidez porque, para mí, el guitarrista no viviría mucho tiempo, como lamentablemente así fue. Antonio Toscano, Manolo Cayetano, q.e.p.d., y Eduardo Hernández Garrocho, entre otros, viendo muy bien mi idea, la llevaron a efecto con toda rapidez. Por cierto que yo lamenté mucho no poder asistir por encontrarme enfermo en aquellos días, lo que no impidió el que yo enviara a Manolo Cayetano mi pobre ayuda. Un mes después de celebrado el homenaje, recibí carta de un socio amigo mío detallándome el desarrollo del acto que, por lo visto, había sido espléndido. En ella me decía que fulano de tal había tenido la osadía de atribuirse la idea del homenaje y de palabra recibió su merecido. Aunque a mí me daba igual, porque lo verdaderamente importante era que se hubiera llevado a feliz término mi idea, no obstante escribí a Toscano comunicándole la noticia, noticia que él por lo visto llegó a conocer con oportunidad y también la rechazó públicamente. El no quiso decirme nada para evitarme un disgusto. Por supuesto que la noticia no era otra cosa que un afán desmesurado de protagonismo por parte de quien indebidamente y aprovechándose de no sé qué cargo que ocupaba, se había a\n\n[EVIDENCE WINDOW 2 | retrieval_hint=HERIT_03 | trigger=\"lugar\"]\n\nquedó claro que la idea había sido de usted, cosa que defendimos y que estamos dispuestos a seguir defendiendo. En página anterior la fotografía que le hicieron a Manolo el de Huelva y a su señora el día en que se celebró el homenaje que le rindieron sus paisanos y admiradores de todas las provincias andaluzas. Mis entrevistas con Manuel Centeno En una de mis frecuentes visitas a Sevilla, me encontré con Manuel Jiménez Centeno, en la Alameda, lugar visitado por mí cuando tenía que localizar a algún artista o a alguien relacionado con el mundo del arte flamenco. Nos fuimos a un bar donde charlamos largo y tendido, como se suele decir. Entre otras cosas me dijo que en su juventud quiso ser torero contando con el asesoramiento y aprendizaje de su tío José Centeno, alias Pepete. Cuando ya se consideró todo un maestro de la tauromaquia, debutó como novillero el año 1907 en la Maestranza, altern\n\n[ENDING CONTEXT]\n\ny el res- to de los invitados se echaron a reír a más no poder durante un rato, y yo mientras tanto, esperando una explicación. Después de sosegados y de haber hecho yo el ridículo, me dijo don José que él no le había insultado. Que siempre fue muy res- petuoso con las gentes que estaban a su alrededor; que era el apodo del cantaor y que él lo aceptaba de muy buen agrado. ¡Lo que es la ignorancia!\n\nAprovechando un pequeño inciso para beber y comer, le dije a don José Cantos: ¡Hombre, por Dios! ¿Por qué trata usted de esa forma al pobre cantaor? Me da pena que le diga que es un borrico.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Algo que ya es historia",
+    "periodical": "candil",
+    "issue_id": "1992-01",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-21",
+    "page_number": 18,
+    "word_count": 3410,
+    "article_char_count_full": 19201,
+    "article_char_count_review": 4474,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "peña"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "lugar"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-01-21-right-aunque-no-quepa-en-el-papel",
+    "article_text_for_review": "Indudablemente los amantes del flamenco estamos ante un doble acontecimiento, feliz por una serie de circunstancias que debemos desvelar a nuestros lectores. En primer lugar por la importancia intelectual del autor de los trabajos, el incansable Daniel Pineda, docente en la Universidad Hispálense, académico de diversas corporaciones, pero, sobre todo, espíritu fino, sevillano enamorado del flamenco y de la copla popular, tanto como del folclore andaluz —¡ay de aquellos que los crean incompatibles!— y con un talante abierto, liberal y serio que lo alejan de esta repentina carrera de fantasmas, surgida en las dos últimas décadas, que tienen una prisa enorme por llegar, nadie sabe adónde, puesto que, en realidad, en el flamenco, y lo digo con tristeza, hay bastante poco que repartir, a no ser la hermosura de su esencia. Frente a la velocidad de los necios, el reposo de un intelectual cuyos maestros son la nómina mayor de estudiosos sevillanos que sentaron las bases para este tipo de estudios, los Machado, Guichot, Collantes y un largo etcétera de escritores sin tacha que se propusieron dignificar lo que amaban y lograron poner a la cultura popular en el lugar de respeto de que hoy disfruta.\n\nEn segundo lugar, debemos destacar la validez misma de los trabajos de Daniel Pineda. Si uno es un suspiro gozoso («Cantes Flamencos») el otro («Demófilo») es un parto lento y doloroso, que el autor ha afrontado con la paciencia del investigador honesto que Cantes Flamencos, de Daniel Pineda, Sevilla, ediciones Aljarafe, 1991, prólogo de Pedro M. Piñero Ramírez.\n\nAntonio Machado y Alvarez «Demófilo». Vida y obra del primer flamencólogo español, de Daniel Pineda Novo.\n\nEdit. Cinterco. Madrid, 1991. desea no dejar ningún cabo suelto en la línea de su indagación, y también, ¿cómo no?, con el amor desmesurado hacia el biografiado que considero esencial en todo trabajo en el que se intente aproximarnos a la vida y a la obra de cualquier personalidad artística.\n\nDe los «Cantes Flamencos», poco voy a decir, toda vez que el profesor Rodríguez Baltanás tuvo la gentileza de anotar en el pasado número 78 de Candil toda la carga de intensidad y a la vez de juego personal que contienen estas letras jondas, que vienen a engrandecer al cancionero tradicional con letras personales de enjundia y calado profundo, emparejadas con otras más livianas, puro divertimento para el erudito sevillano, que juega al manierismo gracioso de composiciones andaluzas:\n\nEn la taberna der tiempo yo m'emborraché d'amó para abrasarte en silensio.\n\nEn cuanto al espléndido libro sobre Demófilo, que fuera finalista del I Premio de Investigación de la Fundación Andaluzas de Flamenco, hay que decir, simple y llanamente, que es un libro definitivo, un clásico desde el momento mismo de su concepción literaria. El autor no se dedica tan sólo a la biografía positivista, de datos exhaustivos y perfiles sentimentales del biografía-do, sino que profundiza en esa interesantísima etapa para la cultura andaluzas y española de la segunda\n\nRosario López\n\nTeléfono (953) 253139 mitad del siglo XIX, analizando las relaciones de Demófilo con el mundo intelectual de la época y sus aportaciones personales en la aparición de las grandes revistas que marcaron hitos definitivos en la definición culta del siglo XX, tales como: «La Revista Mensual de Filosofía, Literatura y Ciencias de Sevilla» y más tarde los números de «El Folk-lore Andaluz», hermoso fruto de la sociedad del mismo nombre que Demófilo creara. Todo ello sin olvidar su papel de flamencólogo y folclorista, que Pineda estudia con un rigor exento de apasionamiento, hasta el punto de considerarlo piedra angular de ambas disciplinas, de las que sería fruto inigualable su «Colección de Cantes Flamencos», a partir de los cuales echa a andar la moderna flamencología y de la que todos somos deudores en mayor o menor medida.\n\nLas trayectorias humana e intelectual de Demófilo son seguidas paso a paso, hasta el terrible momento de su grave enfermedad portorricense y su rápida y prematura muerte, momento en el que Daniel Pineda no puede contener la frustración que le causa el que ésta pasara inadvertida para una Sevilla a la que había dedicado su vida y su esfuerzo, y que el autor define como fría e indiferente: «sumida en estos días en la celebración del Carnaval» y algo aún peor, el olvido culpable en la prensa: «que no le dedicó ni el más mínimo artículo necrológico».\n\nPienso que es igual. La historia pone a cada cual en su sitio y hoy Demófilo está en el centro de nuestra cultura y de nuestros afectos. Para ahondar más y mejor en ambas dimensiones es imprescindible la lectura de este texto, tan reivindicativo en sus anhelos como perfecto en sus objetivos.\n\nCarlos Cruz",
+    "title": "Aunque no quepa en el papel",
+    "periodical": "candil",
+    "issue_id": "1992-01",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 776,
+    "article_char_count_full": 4732,
+    "article_char_count_review": 4732,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-01-23-left-discografia-flamenca",
+    "article_text_for_review": "¡O tra vez los franceses! Al margen de cualquier sentimiento nacionalista, edulcorado con un no reconocimiento a una labor —aunque no extensa ni sustanciosa— plena de sensibilidad y merecedora de los más loables calificativos, hay que reconocer que los franceses nos están dando una auténtica lección sobre dónde buscar la autenticidad y las raíces de nuestro arte. Con esto no quiero ni pretendo ridiculizar los trabajos que se están editando en nuestro país, ya que los hay muy honestos y con calidad necesaria para figurar entre los mejores. Todo lo contrario, quiero llamar la atención de los responsables discográficos españoles en el sentido de que no todos los trabajos han de tener una rentabilidad económica, pues algunos han de estar enfocados a difundir, sostener y conservar las singularidades de un arte excepcional y único en el mundo: el flamenco.\n\nPor otro lado, imagino que la idea de llevar el arte del clan Bacán al perfeccionismo sonoro del\n\ndisco compacto es española, ya que tanto el productor como el director artístico no son otros que el prestigioso pintor Miguel Alcalá y el guitarrista Pedro Bacán. Sin embargo, qué bien ha sido aprovechada la oportunidad por los franceses para evidenciar su determinado mecenzago y sutil sensibilidad para con el flamenco. Como apuntaba en esta misma sección al comentar «LA LUNA EN EL RÍO», de Carmen Linares, este trabajo debe de servir de lección una vez más a los que presumen de ser adalides en la difusión del flamenco.\n\nLa obra ha sido llevada a cabo en Lebrija, concretamente en el «Rancho Huertas», grabada por Digital Alta Frecuencia de Sevilla y actuando como ingeniero de sonido José Torrado. Entre todos han creado el ambiente necesario para que sólo en seis días, las voces de los artistas y el toque de Pedro Bacán, se viertan por los recovecos de la técnica sonora y nos lleguen plenos de compás, sabor añejo, voluntad cantaora y una cándida\n\nsencillez que eriza el vello al más reacio.\n\nPodría detenerme en cada uno de los cantes contenidos en la colección y en cada uno de los matices aportados por los intérpretes. Mas he de referir que generalmente todo lo plasmado me traslada a la profundidad cantaora de Utrera-Lebrija en su más esencial raíz flamenca. Porque todo está cantado con el corazón, con el regusto que se siente al difundir la personalidad familiar y local, con la satisfacción que produce el saber que se está realizando una obra de auténtica valía.\n\nAsí, con su personal estilo, La Morena, La Perrenga, Manuel de la Costa, El Daído y la sabrosa sorpresa de Pedro Bacán, abordan con auténtico ritmo los cantes por bulerías con los diferentes matices de su comarca cantaora, en FIESTA. Por su parte, Concha del Lagaña, Diego Vargas con su voz personal y Pepa de Benito, manifiestan a través de su cante que el flamenco hay que expresarlo con voluntad y sencillez, sin abusar de determinadas cualidades y dándole el matiz justo, en LUNA. Otro tanto les sucede en SOLERA a Inés Bacán, Pedro Bacán —con su conocimiento y ajustada voz—, Luisa Peña, Pepa de Benito y el patriarca Bastián Bacán —con su ensolerada transmisión—, portadores todos de genialidad personal para abordar siguiriyes, soleabulerías, tangos, soleares o fandangos por soleá. Y, por último, nuevamente las excelencias citadas son expuestas con reiterada sencillez a través de tangos, bulerías, soleabulerías, cantiñas del Pinini, debla y toná, por Pedro e Inés Bacán, con el sentimiento de los que disfrutan, viven y sienten el flamenco, en AL ALBA.",
+    "title": "Discografia Flamenca",
+    "periodical": "candil",
+    "issue_id": "1992-01",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-23",
+    "page_number": 22,
+    "word_count": 585,
+    "article_char_count_full": 3511,
+    "article_char_count_review": 3511,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-01-23-right-hablan-las-pe-as",
+    "article_text_for_review": "Junta Directiva de la Peña Flamenca de Jaén\n\nEn la asamblea anual ordinaria de la Peña Flamenca de Jaén, celebrada el día 28 de diciembre de 1991, fue elegido por unanimidad don Tomás Ortiz Ibáñez, como presidente de la Entidad que patrocina y tutela esta Publicación. Integran la Junta Directiva:\n\nVicepresidente: Juan J. Carrascosa Jurado\n\nLeovigildo Fco. Aguilar Burgos Manuel Villarejo García\n\nJuan J. Gay Torres (Peña Flamenca) Juan J. Carrascosa Jurado (Revista «Candil»)\n\nRafael Valera Espinosa Manuel Pérez Mesa Fernando Pérez Mesa\n\nFrancisco Cañada Cejudo José Cruz Carmona\n\nDe Archivo: José Pamos Mozas De Prensa: Rafael Valera Espinosa\n\nDe Relacio- nes Públicas: Miguel Hernández Martínez\n\nNos congratulamos con la elección y designaciones antes referidas, en la seguridad de que un equipo de trabajo tan homogéneo, eficiente y de acreditada trayectoria en la defensa del Flamenco es el mejor aval de éxitos futuros que, sinceramente, desde estas páginas deseamos.\n\nPeña Flamenca de Huelva\n\nPeña C. Flamenca Punta Umbría (Huelva)",
+    "title": "Hablan las Peñas",
+    "periodical": "candil",
+    "issue_id": "1992-01",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 159,
+    "article_char_count_full": 1040,
+    "article_char_count_review": 1040,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

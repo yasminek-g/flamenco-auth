@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1980-05-15-left-flamenca",
+    "article_text_for_review": "L A actualidad discográfica flamenca trae, a las páginas de \"CANDIL\", las voces de EL CABRERO, LUIS DE CORDOBA y el TURRONERO, tres formas de sentir y concebir el cante con el dominador común de estar, hoy día, en plena popularidad. Su entrada en un estudio de grabación, tiene ya la madurez que da la experiencia de haber intentado, en anteriores ocasiones, trasladar los ecos cantaores a las estrías de un disco. Acerquémonos a estas tres facetas flamencas.\n\n\"A LAS ERMITAS\" LUIS DE CORDOBA. Ref. 64 29 899. Philips.\n\nLuis de Córdoba sigue asimilando conocimientos, a la vez que imprime a la voz una flexibilidad altamente enriquecedora. Su último disco ha tenido, en general, una buena acogida. Colombianas, tangos, siguiriyas, bulerías, una nana, soleares de Córdoba, la media granaina, fandangos de Cayetano Muriel y malagueñas, configuran esta realización de un artista capaz de hacer muy interesantes aportaciones a la discografía flamenca.\n\nA MI ME LLAMAN EL CABRERO. Ref. 2.27.160. Belter.\n\nTiene El Cabrero, unos singulares esquemas flamencos que son expuestos en cada recital o disco que graba. Su voz derrocha unas naturales vivencias, haciéndolas simple en matices musicales, rica en profundidad. Podemos oir en este disco de El Cabrero, Fandangos de Calaña, del Alosno, del Gloria, de Pérez de Guzmán, de Santabarbara... soleares de Alcalá y siguirivas. Le acompaña a la guitarra, Antonio Sousa. El L. P. se escucha con agrado y y tiene la particularidad de ofrecer los fandangos de Calaña, aunque, en conjunto, pueda ser algo monótono por la limitación geográfica cantaora que contiene.\n\nAIRES DEL SUR. EL TURRONERO Ref. 2-37.006. Belter.\n\nEl Turronero sigue en sus discos, los acentos que ofrece en cada actuación. Es profesional que ha sabido seguir una línea artística, sacando provechosas consecuencias Bien es cierto, que su decir se mueve en unas coordenadas casi siempre fijas, sin variedad y sin otro contenido que dar al público una voz de personal compás y siempre apoyada por la guitarra de Paco Cepero. Es cantaor que gusta a numerosos aficionados, aunque particularmente creamos que su aportación al flamenco se queda reducida a simples gustos pasajeros. En esta ocasión ha grabado: bulerías, tangos, romeras, soleá por bulerías, tarantos y siguirias.\n\nDOSCANDIL",
+    "title": "Flamenca",
+    "periodical": "candil",
+    "issue_id": "1980-05",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 364,
+    "article_char_count_full": 2290,
+    "article_char_count_review": 2290,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-05-15-right-quienes-fueron-los-maestros",
+    "article_text_for_review": "Quienes fueron los maestros...\n\nE nombre Antonio Ortega, nació hacia 1840 en Vélez-Málaga y por la fecha de su nacimiento, se puede afirmar que alternó con legendarias figuras, como Silverio y el «Nitri».\n\nPocos son los datos que se tiene de Juan Breva, al igual que de la mayoría de los intérpretes de aquella época. Se sabe por declara-ciones realizadas por Pastora Pavón. a Ricardo Molina, que cuando la primera lo conoció, Juan Breva era un viejo casi cielo, que arropado con una castiza capa, solía encontrarse en los cafés de cante de Sevilla y Málaga. Su bien timbrada voz, temblaba al hablar y ya no podía cantar, sólo podía apuntar coplas. Federico García Lorca le dedicó un bello retrato en su «Poema del Cante Jondo».\n\nJuan Breva tenía cuerpo de gigante y voz de niña. Nada como su trino. Era la misma pena cantando detrás de una sonrisa. Evoca los limonares de Málaga la dormida, y hay en su llanto dejos de sal marina. Como Homero, cantó ciego. Su voz tenía algo de mar sin luz y naranja exprimida.\n\nLas declaraciones de Pastora Pavón «Niña de los Peines», vienen a confirmarse en las grabaciones realizadas por Juan Breva a edad muy avanzada, éstas no recogen la plenitud del arte de este cantaor.\n\nAntonio Ortega (Juan Breva), cantó en todos los cafés-cantantes de España, quedando bastantes testimonios de sonadas actuaciones. Gracias al haber cantado varias veces ante el Rey de España, Alfonso XII y Doña María Cristina, adquirió una resonada fama. Se cuenta que cada vez que actuaba ante Su Majestad, éste le regalaba un magnífico alfiler de corbata, aparte, por supuesto, de un buen regalo en metálico.\n\nHay igualmente, otra anécdota muy significativa en la comprensión del magnífico arte de Juan Breva, cual es, los llantos que realizó el tenor Gayarre al escuchar los cantes de este malagueño.\n\nSegún Fernando Triana, era tal la capacidad de este artista, que allá por el año 1884, Juan Breva actuaba en tres locales diferentes; el teatro del Príncipe, el café del Barquillo y el del Imparcial, con un sueldo en cada uno de 5 duros diarios que cobraba en oro, además el Imparcial complementaba su sueldo con el alojamiento para él y su familia.\n\nSegúún Ricardo Molina, entre los géneros cultivados por el Breva, el principal fue la malaqueña con su pariente el fandango de Verdiales. A ambos vincúlas la memoria del cantar. Su malagueña, es una modificación del cante de Verdiales o del primitivo fandango malagueño.\n\nJuan Breva fue también un extraordinario cantaor por los demás estilos, sobresaliendo sus cantes por soleá, que son un ejemplo de pureza.\n\nPor lo dicho aquí, se puede afirmar que Juan Breva fue el cantaor más cotizado de aquella época y se cuenta, que ni el propio Silverio podía darse el lujo de cantar después de él.\n\nHe aquí una malagueña de Juan Breva que adquirió una gran popularidad y que puede ser el mejor modelo de su arte:\n\nSe corta una rama verde\n\nse siembra y vuelve a nacer\n\npero una madre se pierde\n\ny no se vuelve más a ver\n\ncosa que tanto se quiere.\n\nMERCEDES LA SERNETA\n\nMercedes La Serneta, de nombre Merced Fernández Vargas y según Juan de la Plata, nació en Jerez de la Frontera hacia el año 1837, residiendo desde muy joven en Utrera. Se cuenta que era una mujer muy bella y de ahí su apodo artístico de «Sernet» evocador de un hermoso pájaro de brillante plumaje.\n\nAl igual que Juan Breva, esta cantaora actuó en casi todos los cafés-cantantes de la época, siendo admirada fervorosamente en Madrid y Triana. Se cree que La Sérneta aprendió a cantar en Sevilla y que se formó en el ambiente artístico de Triana. Esto se puede comprobar en sus soleares, cante perfectamente dominado por ella.\n\nSe conservan cinco a seis soleares suyas (hay flamencólogos que afirman que la creatividad de esta cantaora culminó en una docena de soleares) y algunos cantaores conocieron personalmente a la maestra de la soleá, destacando sobre todo Pastora Pavón, que de niña, pasaba temporadas en su casa de Utrera.\n\nTanto Pastora como su hermano Tomás, hicieron magistralmente los cantes de Merced. También solía cantarlos Manuel Torre. A través de ellos han llegado hasta nuestros días, salvándose así de su desaparición.\n\nLa difusión de sus cantes fue enorme y, además de los nombrados, también realizaban sus cantes Juan Breva y D. Antonio Chacón.\n\nMerced Fernández Vargas (Mercedes La Serneta) murió en Utrera en 1910, octogenaria y en los últimos años de su vida no podía cantar como es debido. Ricardo Molina dice que: «Su estilo confidencial tiene lentitud y expresividad de andante y la elocuencia conmovedora del sentimiento.\n\nSelecciona: Rafael Valera",
+    "title": "Quienes fueron los maestros...",
+    "periodical": "candil",
+    "issue_id": "1980-05",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 784,
+    "article_char_count_full": 4605,
+    "article_char_count_review": 4605,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-07-3-right-editorial",
+    "article_text_for_review": "«Oh qué grave medita la llama del candil». El verso maestro de Antonio Machado, una vez más, nos arrastra a serias y preocupadas consideraciones. Esa pequeña lengua de luz de resplandor enigmático que no alumbra los rincones y estremece las siluetas que la pared recorta; ese temblor puro de alma ardida de olivo, que no parte las sombras y enrojece, avivándolos, los rostros; esa llama sensible que habita fija en la cal y renuncia a señalar distancias, a marcar en la noche pueblos y campos; ese hueco incandescente en la cerradura angosta de las tinieblas; ese asombrado ojo de aceite abierto al espanto, presencia y compañía en la soledad y el desamparo; esa íntima alma llameante de la búsqueda y del encuentro, con los vientos flamencos que hoy corren, tiembla y medita.\n\n«CANDIL», que hace suyo el verso machadiano, invita a una reflexión seria, responsable y desapasionada sobre el actual momento flamenco. Los tiempos pasados fueron mejores y, oh paradoja, también peores; pero somos conscientes que el presente, tan lacerado, se denomina hoy, y sobre él recae por entero nuestra insoslayable responsabilidad; responsabilidad de un legado histórico riquísimo e inconmensurable que hemos de conservar en su virginal pureza, día a día, hora a hora, para que ella sea caudal y herencia de futuro.\n\n«CANDIL», que pretende alumbrar el prestigio de nuestra pesadumbre, renuncia a enumerar, denunciándolas, esa catarata de etcéteras que intentan apagar la pura, sensible e inquieta llama del cante; hoy, tan sólo, medita invitando a personales y colectivas reflexiones.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 251,
+    "article_char_count_full": 1571,
+    "article_char_count_review": 1571,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-07-4-right-el-sentido-intrascendental-de-la",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nONSTITUYE para mí una obligada referencia el magnífico artículo de Ramón Porras, publicado en el número 8 de la Revista Candil, («Donde Dios era Undebé»). El mencionado trabajo, serio y cientado en un importante bagaje de conocimientos flamencos, me ha obligado a reconsiderar un punto sobre el que siempre he mantenido serias dudas en mis investigaciones sobre el tema. Me refiero a la supuesta trascendencia religiosa que muchas personas creen ver en la actitud que conforman algunas letras flamencas. Debido a ello, por la importancia del citado trabajo, por el fino olfato que demuestra su autor en ese rastreo casi en el vacío que supone un tema tan arriesgado, me voy a permitir ahondar en el tema con estas observaciones particulares que espero complementen de algún modo las de Ramón Porras,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"interpretaciones\"]\n\ncreen ver en la actitud que conforman algunas letras flamencas. Debido a ello, por la importancia del citado trabajo, por el fino olfato que demuestra su autor en ese rastreo casi en el vacío que supone un tema tan arriesgado, me voy a permitir ahondar en el tema con estas observaciones particulares que espero complementen de algún modo las de Ramón Porras, pues como él mismo advertía un tema tan sugestivo quedará siempre abierto a todo tipo de interpretaciones. Comenzaré mi planteamiento señalando lo que en buena lógica debería constituir la conclusión final: pienso que en muy raras ocasiones el pueblo andaluz ha mostrado en el flamenco una verdadera trascendencia religiosa. Ese arte, salido de la más recóndita entraña del pueblo, ha tratado el tema religioso con la finura, la ironía y la elegancia que siempre han acompañado el buen decir flamenco. Pero no nos engañemos, con un despego tan acusado que ha hecho de Dios, de la religión, y de todo tipo de trascendencia un motivo estético, a veces un compañero de viaje inevitable. Pero nada más. Y la clave de todo ello la proporciona el mismo Ramón Porras en el citado trabajo: e\n\n[EVIDENCE WINDOW 2 | retrieval_hint=COMM_04 | trigger=\"mujer\"]\n\nta mía, como una presencia, invisible, una apelación desgastada semánticamente por el uso repetidísimo del término, alguien que a veces puede consolar sobre un problema material sin que por ello el mismo vaya a resolverse: Señor mío Jesucristo vuelve la cara patrás a los ciegos dale vista y a los presos libertá o sirve, sin cambiar el tono de la referencia religiosa, para expresar la alegría vital, desbordante, del piropo bello y gratuito a una mujer a la que se admira: El día que tú naciste el sol se vistió de limpio y hubo una juerga en el cielo que bailó hasta Jesucristo.. Tan absurdo sería señalar la fe inmensa del autor de la primera letra, como necio acusar de impiedad o sacrilegio al simpático creador de la segunda. No pretendemos en absoluto afirmar que el cante flamenco carezca de un importante elemento ritualista, mágico o religioso, como queramos llamarle. Todas las culturas au\n\n[ENDING CONTEXT]\n\ncuando los últimos varales y estandartes se han guardado en la capilla de la Iglesia correspondiente y la procesión ha terminado, el andaluz vuelve a pensar, irónico y distante, que «aquello», de verdad no es algo fundamental para su vida, ysonríe pensando que hay gente que se toma demasiado en serio el carácter sacro de la imagen a la que él acaba de cantar su saeta, y se asombra de que incluso alguien espere ganar algo (¿indulgencias tal vez?) rezándole «no sé qué»:\n\nEn un lugar no sé dónde hay un yo no sé qué santo, rezándole un no sé qué se gana yo no sé cuánto.\n\nJOSE LUIS BUENDIA LOPEZ\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El sentido intrascendental de la temática religiosa en el cante flamenco",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-6",
+    "page_number": 4,
+    "word_count": 1766,
+    "article_char_count_full": 10389,
+    "article_char_count_review": 3746,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretaciones"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "mujer"
+      }
+    ]
+  },
+  {
+    "article_id": "1980-07-6-right-ante-la-situaci-n-de-los-flamenc",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPROPUESTA (1)\n\nPor Francisco Vallecillo\n\nLa vida de los artistas flamen-cos en general no se ha caracterizado siempre por la abundancia y el bienestar, ni siquiera, en la inmensa mayoría de las ocasiones, por lo que común-mente se tiene por un pasar modesto, con las mínimas necesidades cubiertas. Hasta hace pocos años la imprevisión tan definitoria de las gentes flamen-cas, la insolidaridad del medio, la explotación de los en otros tiempos llamados «agentes artísticos», hicieron, en un país —Andalucía— de miseria y de explotaci o n e s, que los flamencos ocuparan el último estadio de un proletariado que había de distraer sus terribles hambres a cambio de distraer a los demás. Quienes fueron tenidos por excelsas figuras de nuestro arte popular, como Manuel y Don Antonio, para no\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"práctica\"]\n\nplotación de los en otros tiempos llamados «agentes artísticos», hicieron, en un país —Andalucía— de miseria y de explotaci o n e s, que los flamencos ocuparan el último estadio de un proletariado que había de distraer sus terribles hambres a cambio de distraer a los demás. Quienes fueron tenidos por excelsas figuras de nuestro arte popular, como Manuel y Don Antonio, para no remontarnos a épocas anteriores, no se libraron de morir abandonados y prácticamente en una atroz miseria. La poca atención que todavía a estas alturas se dedica a la Tercera Edad, hace que todavía el reconocimiento del flamenco como actividad laboral no esté definitivamente consagrado y no obstante la dig- nificación que la profesión ha experimentado en los últimos años, todavía quedan muchos jornaleros del Flamenco para los que la Seguridad Social y la Previsión no cuentan ni como segura ni como prevista. Pero no es éste el caso que mueve esta Propuesta. Los problemas laborales y los que conciernen en cada caso particular al momento en el que cesa la actividad, deberán resolverse por los propios interesados y ellos sabrán —nosotros ignoramos si lo han sabido aún— los medios que la Constitución pone al alcance de tales necesidades, por medio de la afiliación a una Central sindical. No es ese el caso, sino el de una serie de figuras, muchas de ellas egregias, que ya en el ocaso de su vida no Así, de momento, fiados a una memoria harto flaca, se nos vienen a los puntos de la pluma los nombres de Tía Ana Soto, La Piriñaca; Luis Torres, Joselero; Pepe de la Matrona y Tío Gregorio Manuel, El Borrico. No conozco a fondo la situación de estos grandes artistas y qué más quisiera yo haber nombrado ahora a alguno que no viva en condiciones precarias. No lo sé, pero de lo que estoy bien cierto es de que quedan muchos más por ahí —no pocos por mí conocidos— que no traigo a este t\n\n[ENDING CONTEXT]\n\nLas peticiones se harían a la Junta Ejecutiva y ésta, disponiendo de fotografías especiales, cuidaría de recoger la dedicatoria y las cedería a cambio de un donativo que justificara plenamente la pequeña compilación del procedimiento.\n\n7. Obtener de los organizadores de Festivales la cesión gratuita al Patronato de un determinado número de carteles sobrantes —se entiende de carteles pintados— que el Patronato podría vender, en plaza o por correo, a coleccionistas y a un precio remunerador.\n\nEl Congreso, si aprueba esta Propuesta, podrá darle mejor forma y completarla en lo que le falte.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Ante la situación de los flamencos de la Tercera Edad",
+    "periodical": "candil",
+    "issue_id": "1980-07",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-7",
+    "page_number": 6,
+    "word_count": 1119,
+    "article_char_count_full": 6707,
+    "article_char_count_review": 3485,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "práctica"
+      }
+    ]
+  }
+]
+```

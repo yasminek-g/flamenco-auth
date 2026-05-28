@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_10::A2",
+    "article_text_for_review": "SUBSCRIBERS RESPOND AND EDITOR IS REINSTATED Jaleo is grateful for its readers' response to the Aug./Sep. editorial. We have received donations, new advertisements and early renewals and we are well on the road to recovery. It is hoped that this is only the beginning of a momentum that will see Jaleo, in the future, as a thriving publication with growing circulation. We are also happy (and relieved) to announce that Paco Sevilla has taken up, again, many of the editorial tasks which he relinquished during his leave of absence. His infusion of energy is vital to Jaleo's survival. The signs definitely seem positive, as we embark on our sixth year of publication. Jaleo wishes to thank all of its supporters and contributors without whose support the past five years of Jaleo would not have been possible. Your continued participation is gratefully anticipated. -- Juana De Alva",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 146,
+    "article_char_count_full": 883,
+    "article_char_count_review": 883,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A3",
+    "article_text_for_review": "IN DEFENSE OF TRADITION Dear Jaleo: In response to Kathlyn Powell's response to Marta del Cid concerning \"Time Warp\" (Jaleo, March '82), this could go on forever! I must admit she has some strong points -- points to which I was open and also vulnerable. We must be aware and understanding of each other's viewpoints. personally I feel very uncomfortable with the new technological age and prefer the old traditions. To me they represent a time of a slower pace, of being more natural, less competitive, closer to our source of existence. Those who feel as I do will preserve the traditions so that they will not be lost -- so that there will always be that \"core\" to build from. Paco de Lucía is doing what he believes is right--and for him and his many followers, it is. His is the new frontier, the untried. I have yet to know and understand that core of flamenco more thoroughly before venturing out. Thank you, Marta del Cid $ \\underline{\\text{and}} $ Kathlyn Powell for your opinions. I learned from both of them. Sincerely, Ruth Fike VIVA LA FAMILIA CHAMPION! Dear Jaleo, I wanted to write to publicly shout \"iViva la Familia Champion y Los Flamencos de San Antonio!\" [See: Jaleo, April 1982.] I recently visited that city for a meeting and had the good fortune of spending my evenings with Curro, Teresa, their family and group. I was impressed not only by the excellence of their art and performances, but by their open warmth and hospitality as well. They exemplify the aura of sharing and amistad that flamenco is all about. On my last night there, they threw a juerga which was a delight. When what was left of me returned to Columbus, my wife, a non-flamenca, asked me what all I did in San Antonio. I told her and mentioned that there was a juerga on my final night. She was amazed and asked, \"How did you get to know them that well, that you'd be invited to a juerga?\" The answer was simple: \"They're flamencos.\" She thought a moment and said, \"You know, that's beautiful. You people are fortunate.\" Pure truth. My hat is off to Los Flamenco de San Antonio. Our art could not have finer representatives in that corner of the world. Sincerely, Bob Clark Columbus, Ohio",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 390,
+    "article_char_count_full": 2181,
+    "article_char_count_review": 2181,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nFLAMENCO — VEHICLE FOR UNBURDENING THE SOUL The controversy generated by Jerry Lobdill's satire (Punto de Vista, Jaleo, March '82) has gone a bit too far. I interpreted his tale as an attempt to remind us all of certain endangered principles that are critical to flamenco's continued survival as more than just music. It seems that many readers, instead, regarded the satire as a simple attack on Paco de Lucía. Their efforts to defend Paco, who could probably defend himself adequately if he desired, have become a bit frenzied. I doubt if Paco would appreciate the personal attacks recently being used in his unsolicited defense. First, one comment regarding the letter in July's \"Punta de Vista\": Anyone who knows Marta del Cid realizes that she needs no defense. Her sincerity and integrity as\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"roots\"]\n\nbecome a bit frenzied. I doubt if Paco would appreciate the personal attacks recently being used in his unsolicited defense. First, one comment regarding the letter in July's \"Punta de Vista\": Anyone who knows Marta del Cid realizes that she needs no defense. Her sincerity and integrity as an artist stand on their own merits. What are the endangered principles that I alluded to? They do not relate to virtusity or lack of it. They pertain to the roots of flamenca, the people who give it birth and the reasons that they had to do flamenca. When we speak of these things in a historic sense, we speak not of tablans, choreography, performances, taconeo or public acclaim. These additions/modifications came later. They are not necessarily good or bad -- they can be either, depending on who is involved. But it is common knowledge that flamenco began among the poor gitanos and Andaluces long before the window-dressing prompted by cafes cantantes. In fact, the guitar probably was generally absent at the time of flamenco's birth! This shacking fact honestly fails to bother me, despite my role as a guitarist.\n\n[ENDING CONTEXT]\n\nto flamenco solely for its performance aspects, I hope that all entering into this vast art form will pause to try out its original, nonperforming aspects. The noncompetitive, emotionally rich ambiente of a down-home juerga among friends may not be for everyone --we're all different, no? --but for many of us, the juergas and interpersonal sharing are all we want or need. And I hope that as Jaleo, bless its alma, continues with understandable demands for promotion of professional flamencos trying to elude starvation, it will not be forgotten that we are still out here, too. -- Bob Clark\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 1199,
+    "article_char_count_full": 6926,
+    "article_char_count_review": 2732,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "roots"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_10::A5",
+    "article_text_for_review": "[Editor: We are indebted to Miss Moya for submitting a series of articles on Spanish and flamenco dance by Juan Martínez which will begin in this issue. Besides a busy teaching and concert schedule, Miss Moya also presents educational programs for the public school system and the elderly. The following are some of the guest artists who have performed with this company: guitarists -- Carlos Rubio, Roberto Rico, Benito Palacios, Bruce Patterson, Chris Carnes and René Heredia; singers -- Miguel Gálvez and Chinín de Triana; dancers -- Antonio Triana, Victor de la Madrid, Oscar Nieto, Ambar González and José Antonio.] LAURA MOYA DANCES TO A SPANISH BEAT (from: The Phoenix Gazette, April 15, 1982; submitted by Laura Moya) by Kyle Lawson There is no doubt God meant Laura Moya to be a dancer. If he didn't, he had more than enough time to change his--and her--mind. \"If there ever was a day in which I didn't want to be a dancer; I cannot remember it,\" she says, flashing that beguiling, sultry smile which makes her seem the prototype of Spanish dancers and Spanish women in general. \"Even as a little girl in church, I would think about dancing. I would imagine that behind the pipe organ there were all these wonderful costumed dancers and I would make up dances to go with the hymns.\" God did not take offense. Instead, he seemed to open every door to enable Miss Mova to realize her dream. At 14, when most girls are worrying about boys and homework, usually in that order, she became a professional dancer, joining a schizophrenic vaudeville act--schizophrenic in that the performers were Greek but the act was Spanish. \"It was wild,\" Miss Moya says wryly. At least her Castillian heritage lent atmosphere to the troupe. And, she says, \"They really were quite good, you know. The experience I gained was invaluable. As far as I am concerned, there is only one way to become a performer. You perform. LAURA MOYA SPANISH DANCE COMPANY MARUJA SERRANO, ALBERTO TORRES, (LOLITA) LAURA MOYA IN THE HAVANA MADRID (NOW THE CHATEAU MADRID) IN NEW YORK",
+    "title": "LAURA MOYA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-7",
+    "page_number": 6,
+    "word_count": 353,
+    "article_char_count_full": 2051,
+    "article_char_count_review": 2051,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A6",
+    "article_text_for_review": "[Laura Moya has sent us a series of articles that ran in 30 issues of La Prensa, date unknown, but somewhere around 1942. The articles deal with many aspects of Spanish dance and were written by Juan Martínez, a well-known Spanish dancer in the 1930s-50s. We plan to reprint the columns that contain flamenco related material (keep in mind that this is one man's opinion, not gospel), beginning in this issue with an interview with Juan Martínez and his column #4. Translated by Paco Sevilla] ARTISTIC CAREER OF JUAN MARTINEZ Juan Martínez is not only a top exponent of the Spanish dance, but he has shown himself to be steeped in the roots, history, tradition, styles and evolution, and is acquainted with artists of the past and present. Having declined to write something about himself and his artistic development, we resorted to a kind of interview in order to present a synthesis of this very Spanish artist and authority, one of the most solid pillars in the art of Spanish choreography. After toasting with a glass of fine sherry, we asked him: -- Martínez, tell us something about your development into an artist. \"My first public appearance was when I was barely six years old, and I will never forget such a significant night, the beginning of an artistic career that was to present me with so many surprises, adventures and triumphs. I made my debut without knowing what I was doing -- I found out much later what an artist must do and go through to become something in the Spanish dance.\" \"It was the same with me as with almost all the children of bailadores who performed at the end of the 19th century. My father, without any sort of compassion, and without thinking of anything except the desire to make his son into a great artist in the baile, made my studies go beyond the normal, almost to the point of martyrdom if things didn't come out as he wished. Two hours a day was the average lesson that I had when things were going well. Aside from the little stage dances I was doing, I was learning the Spanish classical school and all kinds of mixtures of other dances, including those of flamenco. I wanted to dance the \"zapateado\" and my father told me, 'You can do whatever redobles you want in any other flamenco dance,' but for that type of baile you have to wait and do what I did; if you like it and want to steep yourself in it, you will have to do like * * * THE OFFICIAL BIRTHPLACE OF SPANISH DANCE HAD ITS ORIGIN AND DEVELOPMENT IN ANDALUCIA (from: La Prensa, c. 1940; senz by Laura Moya; translated by Paca Sevilla) by Juan Martínez Andalucía is the birthplace of the Spanish dance as it is most commonly known throughout the world. We owe gratitude to Andalucía for having created the most perfect and complete dance in Spain. Within that style can be found many types -- the dances with castanets and the many forms that we call flamenco -- that have all been born there. The \"cachucha\" and the \"fandango\" used to be danced by the Andalucians with armwork and body positions that came to dominate all of the other regional dances. Much is owed -- in fact, most -- to the gypsies who, even today not knowing exactly where they came from, brought with them rhythms and some footwork that later formed our great dance; they had a sureness and spontaneity that was amazing to whatever watched their movements. In Andalucía, this type of dance flourished easily, perhaps due to the climate, atmosphere, or other unknown causes, while no other region had the capacity for its development in those times. Most of the time the gypsies danced to the noise, or sounds, of palmas, banging on frying parts, castanets, or simply the knocking of knuckles on wood. In any case, they danced and, little by little, the noise and sounds changed into a solid campâs. The gypsies preserved a special type of dance. The Ancalusians, under the influence of the gypsies, broadened the scope of the baile. It would be difficult and of great length to explain in detail how the many and varied dances were developed throughout the different regions of Spain. The roots of the baile Andaluz, or gypsy, can be found perhaps in ancient Egypt, Syria, Hungary, Southern Russia, and included all of that which was gathered until the gypsies reached Andalucía, where it gave rise to all of the variation that was previously unknown in that region. Let us now pass to the time of the Moors in Spain...There is no doubt that the Moors left great treasures like the Aleázar, the Giralda, the Mezquita, and other works of art, but they also left another great wealth -- that which completed the baile Andaluz, particularly that of the gypsies. I do not mean to say that the Moors taught the gypsies, or the children of the land of María Santísima, to dance; these already had within them \"el baile por excelencia.\" But the Moors had great influence: first because their dances left many movements of flexibility, hips, head, arms, and some movements of the feet, along with aspects of melancholy, sexuality, passion. Second, their music applied especially well to the gypsy baile because of the campás and gave rise to a large number of danceable compositions that, without being Moorish, could not deny their origin. The Moorish influence is undeniable in Andalucía, as well as in other parts of Spain; witness the sentimental songs and dances of the Hebrews that are found in most regions. There are also traces of other races who spent time on Iberian soil. In no region of Spain can anything be found that can justifiably be called purely Spanish in origin. This can be considered a true miracle, and without any doubt, due to the characteristics of the Spanish people who, although centuries and more centuries pass, and race after race comes, we don't want anything except to have the most pure and that which has the most art. In Andalucía was born the dance called \"cachucha\" and",
+    "title": "JUAN MARTINEZ: EL ARTE FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8-9",
+    "page_number": 8,
+    "word_count": 1038,
+    "article_char_count_full": 5883,
+    "article_char_count_review": 5883,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

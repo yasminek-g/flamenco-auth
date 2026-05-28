@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1983_12::A6",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nFLAMENCO SPIRIT Spirit is a golden thread that runs in and through all of life, all of creativity. It is a word that is used often to try to describe smething that is higher and more divine than our pure, physical life force, our basic everyday physical function and existence. Like the word love, spirit has an almost endless variety of expressive uses and, as comfortable as it is to use, it is also uncomfortable to use in its realm of vagaries. Spirit has been expressed as.\"The principle in conscious life, identified by breath...The vital principle in man, animating the body or mediating between body and soul...An angel or demor...An inspiring or animating principle such as pervades and tempers thought, Feelings and actions. The divine influence, as an agency working in the heart of\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"creative\"]\n\ncious life, identified by breath...The vital principle in man, animating the body or mediating between body and soul...An angel or demor...An inspiring or animating principle such as pervades and tempers thought, Feelings and actions. The divine influence, as an agency working in the heart of man...The dominant tendency and character of everything...The essence or action, the principle life force that rises above the physical form.\" Applied to a creative expression of humanity, spirit then can be described as the basic essence of that creativity in its relation to the individuals creative expression. So, this article could almost be about the spiritual relationship of any man's or woman's creative or expressive or artistic outlets. The total realm of flamenco is a very multi-faceted manifestation of expression, whether we want to talk of the art of flamenco or just its basic origins in expression of feelings, emotions, and the personal cutpourings of the person or persons involved. Since my personal world has been involved with flamenco for so many of my years, I find it an exciting subject to explore in its ongoing realm, above the basic movements of dance and of the sound of music and song. It is then the spirit that runs in and through and all about flamenco that I explore here, for as hebulous the search or awareness of\n\n[ENDING CONTEXT]\n\nAs long as there is one soul on this earth with a true spirit of flamenco, of the art, the life farce, the love of the essence of flamenco then there will always be flamenco. Spirit does not die for spirit is, and therefore flamenco is, for in finale, the flamenco spirit like the spirit of life itself has always been. In the finale, it will be our spirit dancing, moving our being in truth and again we will know the meaning of life itself. We will become the dance, the dancing spirit, the true spirit of flamenco... --Teo Morca Instruction in Cante and Baile Flamenco Personal Costume Design\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_12",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11-12",
+    "page_number": 11,
+    "word_count": 1154,
+    "article_char_count_full": 6480,
+    "article_char_count_review": 2965,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "creative"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1983_12::A7",
+    "article_text_for_review": "(From: $ \\underline{\\text{El Pais}} $, Nov. 12, 1983; sent by Brad Blanchard; translated by Marysol West)",
+    "title": "CANTAOR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_12",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 16,
+    "article_char_count_full": 105,
+    "article_char_count_review": 105,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_12::A8",
+    "article_text_for_review": "The popularity of Jose Domínguez \"EL CABRERO\" is reflected logically in his recent recordings. The record I am now reviewing doesn't add much to previous recordings of one of the most controversial cantaores of our time. El Cabrero stirs up the most passionate support and no less radical rejection. I believe both positions are excessive. He is not a good cantaor, I am sure of that, but neither is he so terrible that he should be thrown into the trash. I also think that when he attempts the more difficult forms -- siguiriyas, tarantos, soleares and malagueñas, on this record -- he does it with respect and honesty, trying to achieve a dignified artistic product. What happens is that he doesn't always succeed. El Cabrero has his limitations, as does every artist, and cante flamenco is so difficult that only a few, a very few of the privileged, have been able, throughout its history, to unearth all its richness and leave us those memorable creations that are able to entrance us. Within his possibilities, El Cabrero sometimes comes close to being correct and it is precisely in those more difficult \"palos\" (forms) where he seems to me to be at his best. The soleá that he does from Triana, for example, with the echo of El Arenero, has its enchantment, and the siguiriya has, at times, el quejio, while in the cantes levantinos and malagueños he sometimes comes close to the brilliance they should have. To connect the \"tercios\" (sung phrases) as they should be, or to subject himself to the discipline of the compás when the compás calls for it, is something more complicated and not always within his reach. On the other hand in the fandangos, which seems to be the style in which this artist is most at ease -- at least that is what he does most, both on records as well as in personal appearances -- I still believe he doesn't escape vulgarity. The fandango is a cante that has been so degraded by the abuse and excesses of the \"cupleteros\" (pop singers) that are around by the hundreds, that it is unusual to hear even a single one that is gripping and profound. This is also the case with El Cabrero. Finally, there are on this record two cuts that are truly regrettable: \"Amor Mio\" and \"La Lluvia Sucede en el Pasado.\" They were written by Alberto Cortez and, in the second, the words seem to correspond to a poem by Jorge Luis Borges. All of that adds up to a guess. The bulerías are bulerías in name only; they have a pseudo-South American sound that can even be bothersome. The guitar of José Luis Postigo, normally sound, is not at the level we would expect from him. 2",
+    "title": "NOTES FROM SPAIN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_12",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 465,
+    "article_char_count_full": 2592,
+    "article_char_count_review": 2592,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_12::A9",
+    "article_text_for_review": "TERESA Y LAS PREFERIDAS An exciting new flamenco dance company has stamped its mark on the Chicago dance scene. The 6-member company, Teresa y Las Preferidas, is the resident Spanish dance company of the Ridgeville Cultural Arts Center in Evanston, Illinois. Organized in 1980, it has developed, under the",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_12",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 14,
+    "word_count": 49,
+    "article_char_count_full": 305,
+    "article_char_count_review": 305,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_12::A10",
+    "article_text_for_review": "FLAMENCO GUITARIST SABICAS IS FIRST STRING (From: San Francisco Examiner, Oct. 1983; sent by El Chileno) by Scott Beach At Herbst Theater Saturday evening, the Spanish gypsy guitarist, Sabicas, gave a recital of his own flamenco compositions, and the air was full of shouts of \"Ole!\" as he performed astonishing feats of dexterity and invention. He played three sets in a spectacular demonstration of skill, and he gave the audience an experience to remember. At first, it seemed odd to see a flamenco performer come out in an ordinary tuxedo. By its very nature, the style appears most at home in a Hemingway-story setting, complete with people in colorful costumes. And there should, rightly, be a few dancers, and the wine-bota should be passed around. But in the recital by Sabicas, the colors were all in his playing. It made the approving shouts from the audience seem strangely out of place in a \"polite\" American concert hall. There's something almost hypnotic about a full program of flamenco music. The traditional harmonic and melodic patterns don't vary, and most of the interest comes from the performance, rather than from the tune being played. Sabicas is billed as \"The King of the Spanish Guitar,\" and he may be just that. It's often difficult to believe what he can do with just 15 fingers and six strings. He can fire off bursts of notes in scale-passages that are sc rapid and crystal-clear as tc make you doubt your senses. \"that didn't really happen!\" But it did -- again and again. The traditional \"cante hando\" of Andalusia is one of the world's most solidly-entrenched song forms. The descending pattern: A, G, F, E, is a virtually invariable ingredient of flamenco music. Heaven knows it's a dramatic and poignant pattern, and it seems never to grow stale. It's almost as though an entire culture got hooked on that single statement, and hasn't left off repeating it since it first become popular in the mid-19th century. I've heard flamenco guitarists in many different places and situations, and I'm quite ready to believe that Sabicas is the best of them all. His manner as a recitalist, by the way, is deceptive. Before last Saturday's program began, there was a single chair with a small foctstool at center-stage, with the main curtain as a backdrop. When the lights came down and the house was quiet, out he came in his black-tie outfil, bowed formally, with an air of calm dignity, sat down, and let losse a dazzling torrent of music. Some of his running passages were so spectacular that it seemed impossible to expect that he could top them. But he kept adding touches that surpassed previous ones. By the time he was through, it seemed as though everything that one person could possibly do with a guitar, short of setting fire to it, had been done. Sabicas is unquestionably a great artist. I think, though, that I'd much rather hear his next recital in a place with a few dancers and a bota of wine. * * * BALLET NACIONAL ESPANOL IN LOS ANGELES by Ron Spatz As ballet companies go, this one is relatively new, having been formed in 1978. But in this short amount of time, they have developed a beautiful synthesis of classical ballet, Spanish fclk, and flamenco dance forms. While the classical ballet technique demonstrated by their principals isn't about to bring heartburn to the Geoffrey or ABT companies, the accented counterrythms provided by castenets are a delightful addition and more than make up for any lack of classical JAVIER GARCIA, ANTONIO GOMEZ AND ANTONIO MARQUEZ OF THE BALLET NACIONAL ESPANOL IN TANGILLOS PACO PENA \"Live in Munich\" $14.95\\text{u.s.}$ Postage & Handling U.S. and Canada - $1.50 Other Countries - $3.00",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_12",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 628,
+    "article_char_count_full": 3677,
+    "article_char_count_review": 3677,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

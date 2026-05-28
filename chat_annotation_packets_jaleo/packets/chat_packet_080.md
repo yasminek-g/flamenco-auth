@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_08::A5",
+    "article_text_for_review": "(from: $ \\underline{\\text{Feria y Fiestas}} $, 1973; sent by Phil Coram; translated by Carolyn Tamburo) by Manuel Barrios Aspect of a dethroned pharoah, smile of a wise angel, and hands of a little girl. Blown by a storm of duende-filled winds, his eyes used to shine like good copper or flint, depending on whether one came with \"guasa\" or with good intentions. Those who didn't know him became entangled in the web of hieroglyphics, without understanding why Diego, in the middle of a great moment, for less than a sigh, would put his guitar under his arm and go off alone to talk to himself. It was because Diego would hit the target on the first try with regards to ascertaining the feelings of each person. That is why he spent so many nights in the warm companion-ship of his friends and why, more than a hundred times, with all the money on the line and the promise of good business, he would pick up his things and leave; maestro that he was, in addition to discovering incredible secrets of the guitar, he would withdraw if things weren't going the way he thought they should. Diego Amaya Flores. In 1912 he went to El Gastor and remained there until 1923 when he settled in Morón de la Frontera, the land where Fernando Villalón composed his ballads romances of the 800's: \"Si no se me parte el palo, aquel torillo berrendo no me hiere a mí el caballo...\" (If my stick doesn't break on me, that little spotted bull will not wound my horse...) Rubina Carmona Instruction in Cante and Baile Flamenco Personal Costume Design (213) 66009059 Los Angeles, Ca. That is where Diego began to play the guitar, having as his teachers, his brother, Pepe, and Jose Naranjo Solis. Says F Francisco Ayala, who knows well the celestial limits of Diego, \"Other factors that contribute to the greatness of his toque are his exquisite talent for accompanying the cante (especially the cante gitano) and the fact that much of the material that he plays is his own creation and presently forms the nucleus of an authentic school or style.\" Neither fame, fortune nor life were important to him, but his toque contained the fortune, fame and life of the chosen. Noble Diego. Diego of the timid smile and all the true profundities of his experience in the darting of his meek eyes. Very soon he will have his permanent monument in stone so that those who pass by will remember the one from El Gastor. Away from the commemorations, I know that his friends will drink to him and cry in the streets. It was Seneca wasn't it who said that art was something beyond definition. Perhaps it is the \"aire of Andalusian Rome\" that García Lorca foretold. Perhaps it is the dark well in which the gypsy stars bathe. And the wait for the transcendental. Because there remains the clay waiting for the childlike hand of Diego; over there the bronze of his wounded smile. Meanwhile, his friends will continue their farewells to Diego, \"Adiós Diego, hasta manana,\" watching him go, with his reticent smile, enveloped in the ancient duendes of La Calle de las Minas.",
+    "title": "DIEGO EN SU NOCHE DE MORON",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 537,
+    "article_char_count_full": 3035,
+    "article_char_count_review": 3035,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A6",
+    "article_text_for_review": "(from: $ \\underline{\\text{Ferias}} $ $ \\underline{\\text{y Fiestas}} $, 1974; sent by Phil Coram; translated by Carolyn Tamburo) by Paco Ayala Where the festivals flamencos are concerned, in spite of the interest that the organizers put into them so that they will turn out in the best way possible, there is no way to reach an agreement, neither with regard to the dates, nor any of the many obstacles that must be overcome from the moment that the festival is planned until the time it is presented. The Gazpacho Andaluz has been suffering from poor preparation for some years with regard to the date. This year the date was to be June 6 (the first Saturday in June); nevertheless, in spite of having made all the contracts",
+    "title": "UN GAZPACHO CON MUCHO TOMATE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 126,
+    "article_char_count_full": 724,
+    "article_char_count_review": 724,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A7",
+    "article_text_for_review": "By Adela Those of us who were fortunate enough to know Diego can't help but feel a certain warmth at the sound or sight of his name. A legend indeed among gypsies and payos alike. Worshipped, 'loved, admired. Diego was known to be a nonconformist with a mind of his own. Also a man of incredible magnetism among the ladies. I'll never forget an episode which to me was surprising, but to those who knew him and lived around him in Moron it was a common thing. After an all night juerga at Finca Espartero in the summer of 1972, we all piled up in a jeep to go to town for breakfast. Among us was Diego. When we stopped at the designated corner to take him home, low and behold, there was a good looking blond woman standing in the corner waiting for him. She had waited for him all night. This woman, we learned later, was from a Scandinavian country who after having met Diego refused to go back home and left everything behind for HIM. The following summer we all felt the emptiness left by Diego's absence. That unforgettable witty genius who could get away with playing Beethoven's \"Für Elise\" por bulerías... But Diego's duende was present the night of Diego's Memorial in Moron. Among those who participated were the nephews, Agustín, Paco, Juanito, Dieguito, along with Matilde Coral and Rafael, Joselero, La Fernanda de Utrera, Luisa Maravilla, Antonio Mairena, and more...Yes, we did feel his presence that night in Morón de la Frontera. (see photo left)",
+    "title": "DIEGO DEL GASTOR, A LEGEND",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11",
+    "page_number": 11,
+    "word_count": 260,
+    "article_char_count_full": 1463,
+    "article_char_count_review": 1463,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A8",
+    "article_text_for_review": "(from: $ \\underline{\\text{Ferias y Fiestas}} $, 1975, sent by Phil Coram) Las horas que ayer fueron ambrosia, delirante hermosura, vida tensa, hoy son como las páginas de un álbum donde, heróicos, brillantes, proseguimos. En tus mágicas manos la guitarra era un profundo y entrañable enigma en cuya hegemonía naufragábamos. Y tu anciana cabeza alucinante se iluminaba con la inextinguible luz de los elegidos, que semejan perenne adolescencia entre los hombres. intransitables como los torrentes,",
+    "title": "EVOCACION A DIEGO DEL GASTOR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11",
+    "page_number": 11,
+    "word_count": 74,
+    "article_char_count_full": 496,
+    "article_char_count_review": 496,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A9",
+    "article_text_for_review": "(from: $ \\underline{\\text{Ferias y Fiestas}} $, 1974, sent by Phil Coram) Gitano de pura cepa, manos de dioses guerreros y alma pura de poeta. Así eres tú. Hombre con debilidad, como todo ser humano, y genio para captar esa gran sensibilidad de las cuerdas de una guitarra... Supistes hablar así con dolor, amor, desengaño, entrega, triunfo, poder, embrujo y garbo. Alma errante, manos firmes, dolor de hombre, idealismo de algo más que todo esto... Porque tú, Diego, fuistes y eres parte sensible, dardo hiriente del alma de un pueblo, que muere y vive a la vez, porque asi tú le enseñastes. Morón eleva hacia ti lo mejor de sus plegarias: a través de tu guitarra tú le supistes decir que politica, ambición, poder, dinero, no valen nada... Lo importante de una ciudad es el alma que llora con el dolor, que sufre con la desgracia, que vive por el amor al igual que tu guitarra! C. Calvo",
+    "title": "A DIEGO DEL GASTOR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 157,
+    "article_char_count_full": 888,
+    "article_char_count_review": 888,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-07-26-right-iben-alcazar-premium-cenveza-eut",
+    "article_text_for_review": "Si señor. Si ha pedido una cerveza Alcázar: ¡bien hecho!, Porque va a saborear una cerveza fresca, con cuerpo, en su punto. Una cerveza elaborada con las mejores cosechas de lúpulo y cebada, siguiendo la tradición de nuestros maestros cerveceros. Una cerveza que mantiene todo su aroma, porque va,\n\ncomo quien dice, de la fábrica directamente al consumidor. Si pide cerveza Alcázar, ¡bien hecho!, Disfrutará de una cerveza bien hecha.",
+    "title": "IBEN Alcazar Premium CENVEZA EUTICAM HECHO!",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 70,
+    "article_char_count_full": 434,
+    "article_char_count_review": 434,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-07-27-left-discografia-flamenca",
+    "article_text_for_review": "Rey, Blanca del. Nombre artístico de Blanca Avila Moreno. Córdoba, 1949. Conocida también en sus principios como La Plata. Debutó en Madrid, en 1961, en el Tablao Las Cuevas de Nemesio, para pasar seguidamente a El Corral de la Morería, alternando en éste sus actuaciones con giras a distintos países. En 1984, presentó en el Centro Cultural de la Villa de Madrid, su espectáculo «Poemas y Danzas de Andalucía». Su personalidad artística ha sido glosada por críticos, flamencólogos, poetas y escritores, como José Blas Vega: «En el panorama actual del baile flamenco, Blanca del Rey es una excepción, porque sobresale sobre todas las demás bailaoras gracias a su personal entendimiento de su arte, al que le imprime, llevada de su inquietud artística, cierto aire de evolución, de novedad creativa, sobre la base de su profundo conocimiento de los estilos, saliéndose de la monotonia usual, y ofreciéndonos un baile lleno de belleza y de armonía flamencas, que nos recuerda algo primordial: que el baile flamenco es donaire, apostura, gracia y compás». Angel Alvarez Caballero: «La soleá, el mantón y Blanca del Rey. Blanca ha creado esta soleá y ha logrado una obra original, personalísima, que hace casi siempre con éxito arrollador... En esta soleá el mantón vuela y revuela en manos de la bailaora, envuelve su cuerpo, le ayuda a crear una iconografía de sorprendente belleza. Como Blanca es una hermosa mujer, con estampa, con un enorme sentido de la estética formal del baile, va engarzando una secuencia no por sofisticada menos fascinante. Confieso que lo del mantón me produce a veces un cierto desasosiego, pues entiendo que los accesorios sobran en los grandes flamencos, pero en este caso siempre acabo convencido de que el mantón no estorba a la gran bailaora que es Blanca del Rey».\n\nBlanca del Rey",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1990-07",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-27",
+    "page_number": 27,
+    "word_count": 299,
+    "article_char_count_full": 1812,
+    "article_char_count_review": 1812,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-09-3-right-editorial",
+    "article_text_for_review": "dad que requieren? En el aire dejamos estas preguntas con el deseo de que puedan ser contestadas en algo en el Congreso de Arte Flamenco a celebrarse en Linares.\n\nHemos querido exponer en este número todo el detalle que se ha ofrecido en el Congreso de Badajoz. Nuestros enviados especiales relatan en ajustada crónica las sesiones de debate de ponencias, así como del complemento artístico que ha llevado aparejado dicho conclave flamenco. Se han plasmado igualmente la mayor parte de las ponencias debatidas y parte de las secciones fijas tienen un contenido de referencia al Congreso.\n\nEl sumario de este número lo completa un nuevo capítulo de Anselmo González Climent sobre Juan Rodríguez Mateo y José Palanca, «Hondura, duende y gusto» de Luis Caballero Polo, un humilde reconocimiento de Manuel Yerga Lancharro sobre sus escritos de «El Corruco de Algeciras», así como el resto de secciones fijas no alusivas a lo desarrollo de en Badajoz.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1990-09",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 155,
+    "article_char_count_full": 946,
+    "article_char_count_review": 946,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-09-4-left-viejo-carn-flamenco-anselmo-gonz",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n1 Soy un viejo sevillano de Coria del Río. Mi familia, humilde y campesina, me permitió ser naturalmente fiel a los usos y maneras de una Andalucía que yo llamaría clásica. Fue mi mejor herencia y mi mejor ejemplo. De la nada he llegado a ser secretario de la Real Academia Sevillana de Buenas Letras. Me considero jovial, liberal, amplio de criterio en tanto y cuanto no me vea obligado a doblegar el eje de la tradición.\n\n2 Mi afición al cante no es vergonzante como la de cierta gente expectable de Sevilla. Es cosa capital en mi vida. Al toreo le guardo menos afición. He dedicado casi toda mi existencia a la copla y el cante. No soy un improvisado. No sé de flamenco lo archisuficiente. Pero, por lo menos, me doy cuenta del que habla sin saber un adarme de él. Ser entendido en esta materia\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"serio\"]\n\neje de la tradición. 2 Mi afición al cante no es vergonzante como la de cierta gente expectable de Sevilla. Es cosa capital en mi vida. Al toreo le guardo menos afición. He dedicado casi toda mi existencia a la copla y el cante. No soy un improvisado. No sé de flamenco lo archisuficiente. Pero, por lo menos, me doy cuenta del que habla sin saber un adarme de él. Ser entendido en esta materia es algo que muchos andaluces no se toman realmente en serio. 3 El Macaca fue el mejor cantar por mirabrá. Esto está perfectamente documentado. El mirabrá es más macho y poderoso que las frágiles alegrías. En una revista madrileña publiqué un ensayo dedicado a este cante. Se me comenta que yo le doy demasiada importancia. Es posible: para el que tiene en cuenta mi desafección por la escuela de Cádiz. 4 Uno de los cantes que más me intrigan son las playeras. Pera José Carlos de Luna este palo es una variante más antigua de la siguiente. Es muy cierta la existencia de «playeras corridas», que arrancan por siguirías, siguen por playeras propiamente dichas y rematan casi siempre por carceleras. Esta trama de cantes corridos tiene un origen indiscutiblemente sevillano. No acepto la teoría contraria de don Antonio Machado y Alvarez al otorgarle cuna gaditana. Demófilo visitó ocasionalmente Sanlúcar de Barrameda y escuchó a un pescador del pueblo una «deliciosa siguiriya corta» que le maravilló por su síntesis y su buen aire formal. Averigió que se trataba de un cante corto «típico» de las playas sanluqueñas y dio por buena la deducción de que se había encontrado con las playeras. Para mí esta referencia es un símbolo del despiste de tantas folkloristas que se dejan llevar por un dato circunstancial, mezclando investigación con casualidad. 5 En materia de cante\n\n[ENDING CONTEXT]\n\nél me enviaba o yo se los robaba a él (sic).\n\n14 Los sabiondos no hablan más que de don Antonio Chacón y Manolo Torre. Como si con ellos se hubiera acabado el buen gusto del cante. El cante se «desata» con Marchena y conmigo. Lo sacamos de la «antigüedad» y lo pusimos al día. Nos «entienden» y nos admiran en cualquier punto de España y América. ¿Pasaría ahora lo mismo si volvieran a cantar aquellos viejos maestros?\n\n15 Me apasiona el tango argentino. Me apasiona la figura de Gardel. He hecho pruebas para meter el tango en el fandango. Pero son dos cosas distintas, sobre todo en las letras.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco Anselmo González Climent",
+    "periodical": "candil",
+    "issue_id": "1990-09",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-6",
+    "page_number": 4,
+    "word_count": 3840,
+    "article_char_count_full": 23096,
+    "article_char_count_review": 3393,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "serio"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-09-7-left-el-ni-o-de-la-ribera",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n—¿Cuál es tu nombre, dónde naciste y por qué lo de Niño de la Ribera?\n\n—Me llamo Simón García Berdejo. Nació en Cáceres y me dicen «Niño de la Ribera» porque mi padre tenía una huerta en la Ribera del Marco, de Cáceres. Siendo niño, cuando comencé a cantar, me hicieron una entrevista en la radio; me preguntaron cómo me llamaba y dónde vivía. Les dije que vivía en la Ribera y de ahí me viene el apelativo.\n\n—Pues casi de broma. Por aquella época íbamos los chicos a la catequesis y en la misma se habían instituido varios premios, entre los que se encontraba el de canto. Hubo un concurso para ver quién cantaba mejor y yo gané el concurso.\n\n-¿Cómo te inicias en el flamenco?\n\n-¿Pero el concurso era de flamenco?\n\n—No. Lo que pasa es que yo canté por flamenco. Otros cantaron otras cosas. Canté un\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\nRibera y de ahí me viene el apelativo. —Pues casi de broma. Por aquella época íbamos los chicos a la catequesis y en la misma se habían instituido varios premios, entre los que se encontraba el de canto. Hubo un concurso para ver quién cantaba mejor y yo gané el concurso. -¿Cómo te inicias en el flamenco? -¿Pero el concurso era de flamenco? —No. Lo que pasa es que yo canté por flamenco. Otros cantaron otras cosas. Canté un fandango que había escuchado y que era el único que sabía con aquella edad. Parece que a la gente le gustó y a partir de ahí me prestaron atención. Unas veces me llamaban para actuar en alguna función benéfica, y otro día para otra cosa; y así fue como me fui metiendo de lleno en el flamenco. Luego procuraba ir adonde estaban los aficionaos de Cáceres y gente que conocían el tema y mantenían sus reuniones. Además, conforme iban llegando las compañías de artistas, pues me iba a escucharlos cantar y siempre estaba detrás de ellos. Luego me dediqué a cantar por los bares, por las tabernas, en las fiestas... Había también concursos en Radio Cáceres y en los cuales me llevé bastantes premios. Más tarde me fui a Madrid en donde pasé una época difícil, pues también cantaba en los bares, donde pasaba el plato, hasta que comencé a trabajar en un tablao y en fiestas a las que nos llamaban. —¿Han existido en tu familia antecedentes cantaores? —¡No, qué va! En mi familia sólo he cantado yo. Buenos aficionaos sí que han habido. Mi padre era un buen aficionao e incluso tocaba un poquito la guitarra, según me dice mi madre, pues mi padre murió cuando yo tenía trece años y eso no lo recuerdo. Pero realmente lo que sí recuerdo es que en la huerta de La Ribera había un matrimonio mayor, y el marido era guitarrista. Vivía allí, pero cuando llegaban las compañías, lo contrataban para que les acompañaran. Le tocó a gente importante y famosa como Manolo Fregenal, Manuel Vallejo, La Ni- ña de la Puebla... Y aquél hombre tocaba en la puerta de la casa; yo le escuchaba y aquello me aficionó bastante. —¿Cómo se vivía en aquella época el amb\n\n[ENDING CONTEXT]\n\ny aparece el Niño Ricardo. Un poco antes de éste sale Manolo de Badajoz con una fuerza enorme. Pero no sólo aparece Manolo, sino que lo hacen también sus hermanos Pepe y Ernesto que también tocaban maravillosamente. Lo que ocurre es que Manolo de Badajoz tenía una forma y una cualidad especiales para tocar la guitarra, especiales porque era su gran afición. El grabó con todos los grandes como La Niña de los Peines, El Peluso, Tomás Pavón, El Gloria, La Pompi... Pienso que ha sido el que más ha grabado de todos. O'Donell, 3.°-A, piso Teléf. 222058 - 216920 Particular: 228078 41001 SEVILLA\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Entrevista a «El Niño de la Ribera»",
+    "periodical": "candil",
+    "issue_id": "1990-09",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-8",
+    "page_number": 7,
+    "word_count": 2687,
+    "article_char_count_full": 15072,
+    "article_char_count_review": 3692,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  }
+]
+```

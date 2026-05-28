@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_03::A7",
+    "article_text_for_review": "Esteban Delgado,\"El Niño de Sanlúcar, usually referred to as Esteban Sanlúcar, was born about 1915 (give or take five years) in Sanlúcar de Barrameda (near Cádiz). Esteban's main interest has been solo concert guitar and classical guitar; some of his flamenco arrangements have become classics in the flamenco repertoire and have been recorded by such top artists as Mario Escudero and Paco de Lucía. He has spent most of his life in Latin America (see: Jaleo, December 1978). These two photographs were taken in Puerto Rico in the early 1960's. The solo picture (above) was dedicated in 1960 to George Ryss of New York, who is sharing it with $ \\underline{\\text{Jaleo's}} $ readers. The photo on the next page was taken in the El Cortijo nightclub in San Juan.",
+    "title": "ESTEBAN SANLUCAR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 129,
+    "article_char_count_full": 761,
+    "article_char_count_review": 761,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_03::A8",
+    "article_text_for_review": "(from publicity material) \"Ballet Fiesta,\" a professional Spanish dance company based in Portland, Oregon, is now in its third performing year. The company consists of five dancers and a guitarist, and its repertoire includes both Mexican and Spanish dances. \"Ballet Fiesta's\" performance schedule includes continuing weekly dinner-show concerts at Norton House Restaurant in Portland's Old Town... now in the second year of bookings, concerts at the Portland \"Artquake\" guest appearances in the Washington Park Summer PHOTO: FAR LEFT, MARIA MORENO; FAR RIGHT, VIVIANA ORBECK; ALSO, DIANA LOVERSO, NINA RUSSEL, SOFIA BITTER.",
+    "title": "BALLET FIESTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 91,
+    "article_char_count_full": 624,
+    "article_char_count_review": 624,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_03::A9",
+    "article_text_for_review": "Juan Serrano has now founded the Fresno Guitar Society which meets on the first Monday of each month at Rosella's Salvadoran Restaurant in the Cedar Lanes Shopping Center. The meetings consist of a short business agenda, selected and voluntary performances by the membership and an informal social time. We wish Juan and the Society luck and hope that he has the same success that he had in Michigan. For information call or write: 41111 Ave. 11, Madera, CA 93637 209/439-2410",
+    "title": "JUAN SERRANO STRIKES AGAIN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20",
+    "page_number": 20,
+    "word_count": 80,
+    "article_char_count_full": 476,
+    "article_char_count_review": 476,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_03::A10",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSTRUCTURE AND GUITAR ACCOMPANIMENT The guitarist's role in accompanying malagueña is not a difficult one. When the style of malagueña to be sung is known ahead of time, the job is even easier; but even without that knowledge, the tones of the malagueña are relatively easy to identify once they have been heard a few times. Malagueñas are fandangos and, as such, follow the basic fandangos pattern. This pattern goes as follows: A four or five line poetic verse (copla), with eight syllables per line, is expanded to six lines of singing (tercios) through repetition of one or more lines. The song is in the major mode, or key, and is thus set off from the guitar introduction and interludes which are played in the phrygian mode; the modulation from one mode to the other by the singer is the most\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grande\"]\n\nE~o r~}_{\\mathrm{~G~}}^{7}{\\longrightarrow}\\mathrm{C-m a j o r} $$ $$ 2\\mathrm{~.~}\\mathrm{C}_{\\mathrm{~c~}}(C^{\\prime})\\longleftrightarrow\\mathrm{F-m a j o r} $$ $$ 3．G^{7}\\xrightarrow{\\quad}\\quad\\Rightarrow C $$ $$ 4。\\mathrm{C}\\longrightarrow\\mathrm{G}^{7} $$ $$ 5,\\ G^{\\prime}\\xrightarrow{\\quad}\\quad\\Rightarrow C $$ $$ 6\\,\\quad\\mathrm{C}\\rightarrow(\\mathrm{C}^{7})\\longrightarrow\\mathrm{F}\\longrightarrow\\mathrm{E} $$ The malagueña is a fandango grande, which means that the guitar interludes are played in a loose 3/4 time, while the cante has no defined rhythm; the guitar remains silent for most of the song, joining the singer at the end of each tercio and, perhaps, inserting occasional tones to highlight certain phrases of the song. The final line may be completed with a thunderous rasgueado or ended very simply and quietly; the type of ending will be decided by the cantaor's approach to that part of the song. The typical malagueña is accompanied using the basic fandango pattern described above. Occasional A-minor tones can be inserted at certain points in certain styles, and there are other refinements that are possible (see the discussions of individual styles). There is one peculiar tone that appears in many malagueñas and can affect the accompaniment. At the end of the second tercio, where the guita:ist changes to an F chord, the finishing tone of the singer is Bb--a tone that is not part of the F-major chord. That means that the singer is not really leading the guitarist; instead, the guitarist takes that Bb note as part of a C7 chord which leads to F-major. In other words, the guitarist resolves the song's unfinished progression on his own. Therefore, the guitarist must discern whether the singer has stopped on Bb or a semi-tone lower, on A, in which case an A-minor chord will be used to lead to F. Some old-time guitarists (Vargas Araceli and Melchor de Marchena are two examples) often dealt with this tone in an odd manner; they would go to a Bb chord to end this tercio; the Bb chord should sound out of place, but does not. Manolo Sanlúcar sometimes comes to rest in the C7 chord, without changing to F, and then goes right to G7 for the next tercio: MODERN ACCOMPANIMENT (similar to other styles of malagueñas). The second change made by El Mellizo in his \"doble\" was to descend down the tones of the phrygian mode, rather than stay in the major mode until the end of the copla. And, lastly, the guitarist must make the transition from the end tone of one t\n\n[ENDING CONTEXT]\n\ncantantes. It is likely, therefore, that others would begin to imitate him or create their own versions in the small towns around Málaga. One of those towns, Alora, is generally considered to be the site of origin of the malagueña libre, the true malagueña that is sung without compás or rhythm; perhaps a singer in that town discovered that he enjoyed the freedom of emotional expression and the spontaneity that was possible when there was no guitar accompaniment; then somebody got the idea of having the guitar play only at the end of the singer's tercios and the modern malagueña was born.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MALAGUENAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21-28",
+    "page_number": 21,
+    "word_count": 2536,
+    "article_char_count_full": 14456,
+    "article_char_count_review": 4124,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grande"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1981_03::A11",
+    "article_text_for_review": "Tony and Alba Pickslay again open their home to Jaleistas for the March juerga. We wish to make a special invitation to visitors from up the coast as the Del Mar location is north of San Diego and just off Hwy 5. This month we are going to experiment once more with the idea of having guest artists to stimulate and inspire the juerga. This has been Paco Sevilla's idea for a couple of years and he insists that it has not yet been tried correctly. We are fortunate to have two outstanding artists who will join us this month. They will be attending the juerga, not to perform in a formal sense, but to share their abilities and encourage others. At some point in the evening they will do a short performance of no more than fifteen minutes; the rest of the evening they will be involved as guests and juergistas. Marcos and Rubina Carmona are very knowledgeable and experienced artists. Marcos studied guitar with Diego del Gastor and most of the other guitarists in Morón, as well as with Pedro Bacán, Rafael Mendiola and Miguel Domínguez; his playing is a very strong modern style. Rubina is accomplished both as a singer and dancer. She began her studies in the San Francisco area and continued for extended periods in Madrid with Mercedes and Albano León and in Sevilla with Matilde Coral. Two of her singing teachers have been Bernardo el de los Lobitos and Joselero. The Carmonas have performed widly in both Spain and the USA. They are considered to be among the top artists currently working in this country.",
+    "title": "MARCH JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_03",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 271,
+    "article_char_count_full": 1517,
+    "article_char_count_review": 1517,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

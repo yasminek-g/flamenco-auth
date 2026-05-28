@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1981-07-19-left-flamenca",
+    "article_text_for_review": "Con especial dedicatoria a Antonio Mairena «Ahora que se cumple el medio siglo de su ejemplar tarea de dignificación y conservación del cante gitano-andaluz», José Menese ha acudido, nuevamente, a la discografía. En esta ocasión, con el garrotín, granaínas, tientos, soleares, tangos, siguiriyas, tangos de Málaga, tarantas, verdiales y romance, y las guitarras de Juan El Habichuela y Enrique de Melchor. Como título del disco, «MI CÂNTE A LA ESPERANZA» y las letras de los cantes —es habitual— salieron del sentir popular de Paco Moreno Galván. Señalemos el aire de hoy que las recorre, con un marcado carácter social y de clara denuncia:\n\nEl trabajo es un derecho\n\nque tós los hombres tenemos\n\ny que si no lo ejercemos\n\nque abran tajó pa los hijos\n\nque en esta tierra nacemos.\n\nHay una clara tristeza\n\nen la gente marinera,\n\nlas tripulaciones presas,\n\nlas barquitas prisioneras.\n\nEl disco importará más por lo que dice que como se dice. Llevará más a su audiencia el texto que los estilos en que se apoya el decir del cantar de la Puebla de Cazalla. José Menese sigue pues, en esa línea de cantaor comprometido con la realidad del pueblo. Una realidad que la hace gritar por soleá: Por qué han de llamar locura el motivo de mi canto y el compartir con mi hermano la risa, el dolor y el llanto. Qué alegría caminar por este camino abierto con rumbo a la libertad.\n\n«RECUERDOS», de Luis de Córdoba\n\nRecuerdos es el último hacer, en disco, del cantaor Luis de Córdoba. El mismo justifica el título al escribir: «Interesado por enriquecer mi repertorio discográfico, ha querido que el contenido de esta obra cuente —aparte una pretendida calidad global—, con cierto valor documental en las diferentes series de soleares que incluye, y rendir así —justificando su título—, mi más respetuoso «recuerdo» de admiración y agradecimiento a los grandes maestros que tan preciados tesoros nos legaron. «Estos maestros a los que evoca Luis de Córdoba son: Juan Breva, Cobitos, El Tenazas, Paquirri y José el de la Matrona, con un denominador común: Los cantes por soleá.\n\nEste joven cantaor, no por ello con cierto regusto añejo en su decir, está asimilando, con verdadero tesón, parte del tesoro del flamenco-recuerdo, añadiendo, por su parte, un sentido de hoy a su mensaje artístico. Digamos, por último, que en esta aventura discográfica Luis de Córdoba cuenta con las guitarras de Enrique de Melchor y Manolo Domínguez.\n\nDOSCANDIL",
+    "title": "Discografía flamenca",
+    "periodical": "candil",
+    "issue_id": "1981-07",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 406,
+    "article_char_count_full": 2425,
+    "article_char_count_review": 2425,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-07-19-right-quienes-fueron-los-maestros",
+    "article_text_for_review": "PACO LA LUZ\n\nPaco La Luz es una de las figuras cumbres del cante jerezano. Gitano nacido en el barrio flamenquísimo de Santiago, se llamaba Francisco Valencia y debió su apodo al nombre de su madre, María de la Luz. Nacido en la segunda mitad del siglo XIX, creó varios estilos de siguiriyas, de las cuales aún quedan algunas, con una serie de giros personales, que todavía son interpretadas en localidades como: Jerez, Sevilla, Alcalá, Utrera, etc. Según Ricardo Molina, se habla de dos siguiyas: de la corta y de la grande.\n\n«La grande, emotiva, dulce, con un tono de queja y aire reposado, expresa densamente su contenido. Entre las principales coplas que hoy es 'costumbre cantar al estilo de dicha siguiriya tenemos la siguiente:\n\nMi hermana Alejandra a la calle se echó.\n\nJoaquín la Serna, al que se le llamaba «Lacherna», debido a la pronunciación gitana del apellido, nació en Jerez de la Frontera, a mediados del siglo XIX. Fue creador de varias siguiríyas, una de las cuales popularizó su sobrino Manuel Torre, su más calificado intérprete.\n\nDios se lo pague a mi hermano Currito que me arrecogió.\n\nRicardo Molina nos dice: «El cante de Joaquín la Serna pudiera asumir muy bien la representación clásica de la siguiriya, porque es, sin lugar a dudas, la que canta la mayoría de los aficionados. Su desarrollo es horizontal; es un cante plañidero con dejos de llanto, y dolor de herida que, irrestañable, se desangra...».\n\nDe entre los cantaores que más y mejor han interpretado e interpretan esta siguiriya, hay que destacar la figura de Antonio Mairena.\n\nFue junto con Enrique el Mellizo uno de los\n\nJOAQUIN LA SERNA\n\nmejores maestros de su sobrino Manuel Torre. Al igual que la mayoría de los siguiriyeros jerezanos, Joaquín La Serna era un cantaor muy largo, conocedor de los estilos de todos los maestros que le antecedieron.\n\nCONCHA LA PEÑARANDA\n\nNació en Cartagena a mediados del siglo XIX. Estimada como discípula de Rojo el Alpargatero, se le considera extraordinaria intérprete de los cantes de Levante y creadora de un estilo muy personal de malagueñas.\n\nSegún Fernando de Triana, La Peñaranda fue menospreciada por sus paisanos en algún momento de su vida, cuando se negara a cantar en las fiestas de su pueblo mientras actuaba, por el contrario, en los cafés cantantes; por ello le sacaron la conocida letra:\n\nConchita la Peñaranda,\n\nla que canta en el café,\n\nha perdido la vergüenza\n\nAt salir del arrabal\n\nsiendo tan mujer de bien.\n\nle eché a mi galgo una liebre;\n\nConcha se presentó en el Café del Burrero en 1884, triunfando con sus cantes levantinos. Esta mujer, apodada «La Cartagenera», supo en su tiempo igualarse a figuras de la calidad de Antonia «La Lora», La Serrana, Mercedes La Serneta, la Bocanegra, etc.\n\ndéjalo, que buena va:\n\nEntre las letras que más se escuchan de concepción destaca la que sigue:\n\nel que la lleva la entiende\n\ny por pies, no se le irá.\n\nEn la actualidad existen dos intérpretes que han sabido grabar con acierto la mencionada malaqueña de La Peñaranda: el granadino Enrique Morente y el sevillano —de la Puebla— Diego Clavel.\n\nSelecciona: Rafael Valera",
+    "title": "Quienes fueron los maestros",
+    "periodical": "candil",
+    "issue_id": "1981-07",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 527,
+    "article_char_count_full": 3110,
+    "article_char_count_review": 3110,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-07-20-left-placas-de-artistas-flamencos",
+    "article_text_for_review": "DISCOGRAFIA (PLACAS) DE ARTISTAS FLAMENCOS\n\nPor Manuel Yerga Lancharro\n\nANTONIO ORTEGA ESCALONA (EL BREVA)",
+    "title": "Discografía (placas) de artistas flamencos",
+    "periodical": "candil",
+    "issue_id": "1981-07",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "20-20",
+    "page_number": 20,
+    "word_count": 14,
+    "article_char_count_full": 106,
+    "article_char_count_review": 106,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-09-9-right-editorial",
+    "article_text_for_review": "El décimo Congreso de Actividades Flamencas se celebrará en Jaén. Nos corresponde la responsabilidad de dinamizar el más importante encuentro de amantes y estudiosos del flamenco. Nos corresponde la responsabilidad de alentar esa refrescante corriente de opinión que esclarece conceptos, alerta sobre desviacionismos, instruye, ordena... En nueve ocasiones ya, el flamenco ha tenido la virtualidad necesaria para aglutinar la atención de varios centenares de Congresistas, y esa continuidad evidencia un dinamismo que, como en cualquier otra manifestación cultural, no es irrelevante.\n\nEn respetuosa atención al mandato recibido del IX Congreso, nuestros criterios de organización han de ser muy otros que los explanados en la Ponencia presentada por el Grupo Candil: «Por un Congreso Imperativo de Actividades Flamencas». Lo que no quiere decir que renunciemos, definitivamente, a nuestras posiciones, hasta que en el flamenco sólo existan motivaciones jondas, es decir, conocimiento, vivencia, contemplación, hasta que el flamenco deje de estar corroído por el consumo, tan a punto de irreversible disolución. La alegación de que nuestra idea de un «Congreso ejecutivo», está excesivamente burocratizada carece, a nuestro juicio, de fundamento y significa una lamentable confusión entre los aspectos -esenciales- de lo jondo, sólo susceptibles de ser contemplados desde la óptica y la libertad del arte, y aquellos otros aspectos que pueden ser reglados y que se refieren a la organización y método para una más operativa defensa de lo jondo.\n\nEn cualquiera de los casos, nuestro humilde esfuerzo se dirigirá hacia la ordenación de un Congreso, lugar y momento de reflexión, estudio e investigación conjunta del fenómeno flamenco en su más amplia dimensión. Ya desde ahora agradeceremos cuantas sugerencias nos lleguen para una más efectiva estructuración del décimo Congreso, con la idea de que en su éxito estamos, de una manera u otra, comprometidos todos los que amamos al flamenco.\n\nDe los últimos nómadas. De las últimas voces dolientes del Sur Más allá de la expresión y del lenguaje intimista de un hombre; más allá de un continuado monólogo con su propia muerte. Un grito más que se demuele, un testimonio tremendo de quejas seculares que se nos derrumban. Se asomaron a su cante toda la marginación, todo el estrépito de la sangre perseguida, y los gestos albriciados y las bocas saqueadas y la vida atónita. Se asomaron a su cante los viejos maestros del arcano, la siguiriya, grito o dentellada desde la raíz. Se asomaron a su cante todo maestro pasado desdeído, todos los nombres silenciados de una tribu irrepetible.\n\nEstás ahí, Fernando; perduras ahí como un libro de nuestras inconfesables cicatrices, porque anhelamos ser mástil para tu cante, entrañable poema de alcohólico que canta extremecidamente el dolor del otro, la soledad del otro, la muerte del otro, la propia libertad.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-9",
+    "page_number": 3,
+    "word_count": 450,
+    "article_char_count_full": 2900,
+    "article_char_count_review": 2900,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-09-4-right-el-villal-n-que-quisieron-enterr",
+    "article_text_for_review": "por Manuel Barrios\n\nO me avergüenza reconocer que, hasta hace unos meses, también yo estuve cogido, sin saberlo, en la trampa que a todos nos tendieron aquel 8 de marzo de 1930, cuando ese inmenso poeta —desconocido ayer y hoy—, que fue Fernando Villalón, moría en los brazos de una mujer, ejemplo de lealtad, sacrificio y amor verdadero: Concha Ramos, a la que dedico la biografía novelada que traigo entre manos. Porque, hasta hace unos meses, también yo creí la gran mentira que los escudos heraldicos, la hipócrita nobleza cortesana y el catolicismo tradicional, romano y apostólico, se había esforzado, en una alevosa ceremonia de la confusión que, durante más de cincuenta años, nos ha hecho comulgar con ruedas de molinos. Ese catolicismo tradicional, esa nobleza cortesana, esa engañadora devota de los escudos heraldicos tenía que enterrar, para su propia supervivencia, al Poeta con mayúsculas, que canta-ba a la República Federal y al hombre libre. La gente de orden, junto al Cura, la Sobrina, el Ama y el Barbero, echó paletadas de tierra mortuoria y cales blancas a los versos más sinceros y limpios de aquel Fernando Villalón, para dejárnoslo en el juglarillo menor de una Giralda, madre de artistas, molde de fundir toreros, que prestaba su voz para que el montañes echara vino pagado por Luis de Vargas...\n\nAnte la tumba, a distancia, de Fernando Villalón, prometo y juro por el Candil que nos alumbra, devolver al hombre andaluz, en la medida de mis posibilidades, a uno de sus más grandes y rebeldes poetas; pueblo mismo que, por eso, sabía templarse como él, para la confidencia: «Yo no quiero ser ladrón, pero robarle al Gobierno me tira la inclinación»...\n\nSon los versos por soleares que «¡Madre de la Soledad! ¡Qué malito es no ser libre y tener necesidad!»...\n\nLes aseguro que, para muchos, va a ser una sorpresa reconocer las «cuatro herraduras de plata» del «Zorongo» lorquiano en el Don Juan Fernández de Fernando, mayoral de toros con ojos verdes:\n\n«Una garrocha en el hombro,\n\ncuatro herraduras de plata\n\ny en la sombra del caballo\n\nY también al mejor Alberti, «marinero en tierra» de un 27 en el que no están todos los que son, ni son todos los que están:\n\nuna acollarada galga»...\n\n«¡Marinera de mis mares!\n\nYo soy marinero en tierra\n\nsi no me embarco en tu nave»...\n\nPara la hora quebrada de los pensamientos tristes, su verso roto, nada menos que por seguirias:\n\n«Arrea tu caballo, capitán valiente; que los caballistas tenemos la vida vendida a la Muerte»...\n\n«Viento sudoeste, salta pronto ya; que la vela blanca de mi marinero lo traiga del mar»...\n\nPerdonad, amigos, si no resisto la hermosa tentación de entrever a un García Lorca, recio, macho, duro, capaz de jurar por esta todo lo que va a hacer con un amor recién estrenado..., aunque se hunda el firmamento; que así era aquel Fernando Villalón, siempre perseguidor de versos y de faldas:\n\n«Si fueran puertas la mar tus dos limones dorados, y los guardara un dragón como el que mató Sant Yago, que en el agua fuera pez y en la tierra fuera macho, con mis dientes cortaría tus dos limones dorados.\n\nMi corazón a tus pies y mi vida entre tus manos; cuchillo mi pensamiento, volcán de besos mis labios, nadaría en el verde-mar de tu camisa de raso;\n\ny en una aurora alhelí\n\nde tus hombros, y en el lazo\n\nde tus piernas, tus dorados\n\nlimones serían la llave\n\ndel jardín de tus encantos.\n\nAunque te guarde un dragón como el que mató Sant Yago»...\n\nPoeta de Andalucía la Baja: bueno está. Pero también algo mucho más hondo, hiriente y lastimado, aun en medio de la alegría bullidora de una feria de abril; precursor del Poeta Social que, treinta y tantos años después, sería, para otros, caricatura de riesgo y moda rentable: «Camina el padre homicida/con sus seis hijos pequeños;/colgados van de seis globos/y la madre-globo y medio/reliada en el Manila/de sus moceriles tiempos./Treinta y tres duros de sueldo;/por la rúa de peatones/pasa el fúnebre cortejo;/jen vez de cirios llevaban/seis globos entre sus dedos!»...\n\nA Fernando Villalón —¡qué me dice usted!— no le gustaba el campo, por yacente, monótono y aburrido. Ni su Condado de Miraflores de los Angeles, por vetusto. Ni los poetas de «Mediodía», por ególatras y pedestres. Ni los obispos, ni los maestrantes, ni las dinastías, ni las vulgaridades.\n\n(Te prometo, querido y admirado Manolo Urbano, que serás de los primeros en conocer el texto de mi nueva obra «VILLALON O EL TORO DE LA BUENA MUERTE». Y, en él, sus versos más claros y rebeldes, con esas inolvidables resonancias a la malagueña de don Antonio Chacón:\n\n«¡República federal!»\n\n¡Con su gorro y su bandera,\n\nsu león amaestrado\n\ndetrás con la boca abierta!\n\nTan azul, tan escondida,\n\nque ni el mismo mar la encuentra.\n\n¡Muera el general Pavia! ¡Viva Málaga la bella!...»\n\nY, en los últimos tercios, el inmenso dolor de España clavándosele, de pico, en el costado:\n\n«Sus campos llenos de abrojos,\n\nsus pies llenos de cadenas.\n\nMuerta de pena a la patria\n\nseis generales la llevan.\n\nEl león se tiró al mar\n\nen el mar de Cartagena》.)",
+    "title": "El Villalón que quisieron enterrar",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-5",
+    "page_number": 4,
+    "word_count": 861,
+    "article_char_count_full": 5039,
+    "article_char_count_review": 5039,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_08::A15",
+    "article_text_for_review": "MELINDA MARQUEZ SPANISH DANCE COMPANY MELINDA MARQUEZ, an international performer and teacher, began her dance career as a classical ballerina. She studied at the Joffrey School and in London, and was with the Harkness Ballet in NYC, not only as a performer but often teacher of ballet and Spanish Dance. It was at Harkness House she began her training in Spanish Dance and MELINDA MARQUEZ",
+    "title": "PRESS RELEASES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_08",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "28",
+    "page_number": 28,
+    "word_count": 65,
+    "article_char_count_full": 389,
+    "article_char_count_review": 389,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_08::A16",
+    "article_text_for_review": "PEDRO BACAN WORKSHOP by Ron Spatz In March of this year, the great concert flamenco guitarist Pedro Bacan graciously took enough time from his busy schedule at Washington State University to give a one day workshop at the Long Beach Dance academy. Considering that all contact was by phone, there was a substantial showing from both L.A. and San Diego Jaliestas. The morning session was devoted mostly to compas and technique, and the afternoon to cante interpretation. Pedro demonstrated a knowledge of fingerboard harmonies and chord progressions that would cause any respectable jazz guitarist to sit up and take notice. \"Building a dissonant chord is simple,\" states Bacan. However, the tasteful manner in which he strings them together is anything but simple. Pedro is from Lebrija and is one of the world's foremost accompanists of the cante. Gypsy in origin, he is related to such notables as El Lebrijano, Pedro Peña, Fernanda and Bernarda De Utrera, and La Perrata. JALEO - AUGUST/SEPTEMBER 1984 PEDRO DEMONSTRATING, MIGUEL OCHOA TRANSLATING LOS ANGELES JULY JUERGA by Yvetta Williams and Ron Spatz Here we were again, at what seems to have become our most regular digs: Joaquin and Liza Feliciano's studio in Long Beach. The early-comers had a special treat...watching the video tapes of the last two Juergas. San Diego was well represented with Charo, Yuris and Lisa Mellizo sharing their talents with us. Rosita Merrich performed her gypsy candle ceremony. Dancing were Joy Padilla, Coral Citron, Lucia De Rocha, Rudy Montoya, Juana Escobar, Gisela Colon, Marlene Gael, Lisa Mellizo, Katina Vrinos, and Carolyn Berger. For cante we had Rudy, Charo, and Juana. On the guitar were Yuris, Gabriel, Tomás De Chicago, Roy Mendez Lopez, General Littleton, Guy Wrinkle, Yvetta, and Ron. It was a nice blend and a terrific Juerga. Thanks again to Joaquin and Liza. Our next juerga will be Sunday afternoon, Sept. 9th, one p.m. at the Montebello Youth Center, 115 S. Taylor Ave., Montebello Park. Take Pomona freeway to Paramount-Montebello exit, south on Montebello to Whittier, right to Taylor, left to 115 S. Taylor. Bring Tapas. LEFT TO RIGHT: GENERAL LITTLETON, GUY WRINKLE, GABRIEL RUIZ, TOMAS, LUCIA, YVETTA WILLIAMS, RON SPATZ, JOY PADILLA JALEO - AUGUST/SEPTEMBER 1984 GABRIEL, CHARO, JOY, RUDY KATINA VRINOS LUCIA JALEO - AUGUST/SEPTEMBER 1984 TOMAS WILSON, LUCIA DE LA ROCHE, YVETTA WILLIAMS, JUANA, RON SPATZ The Sunday November 11th Juerga will begin at 5 p.m. at El Gato Restaurant - 7324 Sepulveda Blvd., in Van Nuys. Plan to come for dinner. The prices are reasonable ($1.45 - $10.95 - with the majority of selections $4. - $6.). (For reservations - 213/781-1580) There is a beautiful outdoor patio where you can dine and take part in and enjoy the juerga. Bring a warm wrap. (If the weather is bad we can be inside.) Everyone with an interest in flamenco at every level is welcome to come and participate and meet others who share your interest in flamenco. DIRECTIONS. San Diego Freeway to Sherman Way. East on Sherman Way to Sepulveda Blvd. Left or North on Sepulveda to El Gato Restaurant. INFORMATION: Ron Spatz (213) 883-0932; Yvetta Williams (213) 833-0567. Mark your calendar for the LOS ANGELES AREA FIAMENCO JUERGA AND PARTY - SUNDAY NOVEMBER 11, 1984 5 P.M. GUITAR REVIEW WORLD WIDE CLASSIC GUITAR QUARTERLY ACADEMIC YET YOUTHFUL BLOSSOMING FORTH WITH NEW IDEAS NEW WRITERS · NEW REVIEWERS · NEW DEPARTMENTS USA Subscription 4 issues: $24.00 postage included Send to: GUITAR REVIEW, P.O. Box 5375, F.D.R. Station, New York, NY 10150",
+    "title": "FLAMENCO IN L.A",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_08",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "28-31",
+    "page_number": 28,
+    "word_count": 584,
+    "article_char_count_full": 3562,
+    "article_char_count_review": 3562,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_08::A17",
+    "article_text_for_review": "[from: Los Angeles Times, July 10, 1984; submitted by Dennis Sabella] by Kenneth Herman San Diego - In San Diego, the fragile flower of culture frequently blooms in the most unlikely places. Although few might expect to find a concert of flamenco music among the warehouses and soup kitchens south of Market Street, a standing-room-enly crowd filled the San Diego Public Theater Sunday night for just such an event. This festival of Andalusian music, in which all the songs and most of the onstage commentary were in Spanish, was the brainchild of the two featured singers, Pilar Moreno and Isabel Tercero. Because of the inherently theatrical nature of this traditional music from Southern Spain—notably its sensual body language and baroque costumes—their choice of the Public Theater proved to be the appropriate setting. In contrast to the demure demeanor of, say, a lieder recital, a flamenco singer may break into a heel-stomping dance right in the middle of a seng. Moreno and Tercero were accompanied by flamence guitarist Rodrigo, whose bravura performance both as accompanist and soloist could easily have overshadowed the singers were it not for his overly modest stage presence and permanently downcast eyes. Another singer, Remedios Flores, who is married to Rodrigo, joined the ensemble later in the program. Of the singers, Tercero displayed the most fluent vocal technique, a satiny contralto sonority underlined with smoldering suggestion. Of course, unlike the aesthetics of bel canto opera, the flamenco singer does not prize purity of tone or brilliant projection. Rather, this folk art values passionate statement-whether the passion is amorous or patriotic-and a declamatory nuance that brazenly thrusts the emotional subtext at the listeners. Stylistically, the songs ran the gamut from a sinuous melisma to a barely suppressed scream, yet much of the time they idled in a gentle parlando. Moreno's throaty wail relied on her fluid arm movements and explosive dance steps to complete her sometimes tentative vocal communication. Flores' songs erupted with bare emotions unmitigated by any civilizing influences. Her abrasive outhursts, however, had the unmistakable stamp of this music's gypsy origins. In an improvised encore, the performers invited other flamenco singers and dancers in the audience—this community is a small, close-knit enclave in San Diego—to the stage for a rousing finale. Basilic Ceravolo's attractive set, a courtyard suggested by potted flowers and strings of lanterns, softened the stark interior of the Public Theater. Jessica Anderson's lighting design could have been less murky. Relying on the rhythmic iteration of dance patterns native to Andalusia, the flamenco songs set up a hypnotic pulse. They virtually require the shouts and encouragements from the listecers to accelerate their intensity. Sunday's audience, of which about one-third was Spanish-speaking, complied with fervered abandon. * * * JUNTA MEETINGS The Jalaiste board has been meeting the first Monday after each juerga at the JALEO headquarters, 1628 Fern. All are welcome to come and contribute their input on our juergas. This is where juerga policies are discussed and established, so if anyone has suggestions please join us. The next Junta will be held at 8:00 PM on October 22. 单 半 半 JALEO - AUGUST/SEPTEMBER 1984 SEPTEMBER JUERGA Our appreciation to Tony and Elda Delgado for offering their home for the September juerga. It was deemed one of our better juergas with a large turn-out and many people getting involved. There was plenty of room to spread out, a beautiful view and a clear, star-lit sky. Some fielding lawn chairs were left at the juerga. Contact Juana at 440-5279 to receiver them. * * * JUERGA SCHEDULE OCTOBER 20 (Sat) CASA DE ESPAÑA, 1546 5th AVE., S.D. NOVEMBER 21 (Wed) LOCATIDN NEEDED DECEMBER 31 (NEW YEARS EVE1) LOCATION NEEDED JANUARY 19 LOCATION NEEDED If you have a location to offer or suggest please contact Rafael Diaz evenings 474-3794 or Paul Runyen 272-20E2. FLAMENCO DANCE CLASSES NEW BEGINNER CLASSES FOR CHILDREN AND ADULTS ONE BLOCK OFF 30TH NEAR FWY 94 IN SAN DIEGO CALL JUANA (619) 440-5279",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_08",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "32",
+    "page_number": 32,
+    "word_count": 662,
+    "article_char_count_full": 4159,
+    "article_char_count_review": 4159,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A1",
+    "article_text_for_review": "(Sent by Jeanne Payer) On October 20, 1984 a happy, exuberant evening was enjoyed by all when the Northern California Flamenco Society put on the show, \"Flamenco '84,\" at the Sunnyvale Performing Arts Theatre. Dancers and musicians displayed their talents with delight to the receptive audience. Although the evening was a combination of dance, guitar and song, the three guitarists, Anita Sheer, Luis Angel and Gliceria Mera held the show together not only with their brilliant solo playing but also by providing the live music so essential for flamenco dance. All pieces were authentically flamenco in spirit but some had been influenced by Central and South American rhythms while pieces played by the guitar duo, The Touch, gave a contemporary note. \"La Despedida,\" the story of a prisoner's last farewell to his betrothed was nicely choreographed by Patri Nader and magnificently danced by her and Cruz Luna with the able assistance of Teresita and Deborah Van Stone. A turnabout from this profoundly emotional piece came with Cruz Luna's virtuoso solo dance that left the audience gasping in amazement not only at the seeming magic of his steps but also at the beauty that his pace and dynamics evoked. Beautiful Diana Alejandre danced the farruca with such earthiness and good humor that for moments we in the theatre were all one in the high spirits of the dance.",
+    "title": "FLAMENCO '84",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 227,
+    "article_char_count_full": 1371,
+    "article_char_count_review": 1371,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A2",
+    "article_text_for_review": "FRUSTRATED CORRESPONDENT RESPONDS Dear Jaleo, I couldn't agree more with Ronald Radford's letter suggesting that performers take a more active role in reporting their performances. Having acted as correspondent for the L.A. area for quite a while, I have found it a study in frustration trying to report happenings in time for publication. I feel it conservative to estimate there is probably 10 times more flamence activity in this city than gets reported. A painless and expeditious way to have a future performance reported (although not guaranteed) is to phone your local correspondent or better yet, Jaleo directly as soon as a performance date is firm. Ron Spatz COMMENTS FROM CONNECTICUT [Editor: Our appologies for the late appearance of this letter.] Dear Jaleo: Thanks to David Alford for his interview of Paco de Lucia in the Volume III-3 1984 issue of Jaleo. What is so important about this interview is that he asked the right questions and Paco answered like we wanted to hear. For many of us, flamenco guitarists, Paco is a major source of inspiration and we couldn't help being worried that he would give up playing flamenco altogether. We enjoy jazz, but flamenco is part of our soul. To those Jaleistas that are beginning to feel uneasy about the slow evolution of flamenco, we point out two important considerations to have in mind. First, flamenco is an art only to the art-conscious. To those that are involved in it daily it's a way of life. Second, \"ambiente\" is essential for it not to become static and non-dynamic. Under the proper traditional ambienta, the desire for evolution and fast change doesn't become a concern. Our advice is that we all participate in groups, since flamenco is a social event of the same nature as any western celebration. Thank you and regards to all. Sincerely, José Ramón Ramos Valeriano Ramos, Jr. New Haven, CT $14.95 us Postage & Handling U.S. and Canada - $150 Other Countries - $3.00 Guitar Studios, Inc. 1411 Clement St. San Francisco CA. 94118 JALEO - OCTOBER/NOVEMBER/DECEMBER 1984",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 343,
+    "article_char_count_full": 2045,
+    "article_char_count_review": 2045,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

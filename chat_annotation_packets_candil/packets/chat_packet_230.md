@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-03-15-left-el-doble-homenaje",
+    "article_text_for_review": "Tuvo lugar, el primero, allá por el 84, con palabras dichas por el que suscribe, como presidente, entonces, de la Peña Flamenca de Jaén:\n\nRafael Romero, «El Gallina», este gitano perpendicular, de aquellos años de edad, que peina el viento airado de la vida, contrabandista de ecos de más allá, especialista de la caña del saber que pesca del mundo el arte de lo íntimo, este Rafael Romero tan nuestro y de Andújar, encerrado aquí, en el cuartito de tantas amistades y del Condestable, recibe hoy el choque de las manos y las voces acompañantes de su voz acompañada, en este noviembre de castañas de Galaroza, recibe hoy, repito, el impacto de este homenaje que no siempre la vida ofrece, que no siempre es merecido, pero merecido en él por tan cabal.\n\nAmigo Rafael, este es el símbolo que te entrego y su lectura: «La Peña Flamenca de Jaén a Rafael Romero. El reconocimiento más sincero a tu arte y a tu persona».\n\nAmigo Rafael, perdoma lo cursi que pueda resultar, pero, amigo Rafael, gracias por haber nacido.\n\nEl hombre cogió su bandeja grabada y es evidente que siguió su camino, también el bolsillo atesorado en lo poco que pudo ser, no más que un ánimo para seguir la marcha. A cuestas con su vida, arrancada desde la punta del nacimiento hasta la obra punta de la muerte, hizo su trayecto y en el trayecto lo descubrimos. Estuvimos con él en la esgrima de aquellos momentos y no pecamos de chispa de ignorancia ni de exceso de locura, las dos demencias del alma, como decía Platón, sino que fuimos conscientes de su enseñanza y ello nos hizo menos ignorantes y más carentes de vacíos demenciales.\n\nComo un espontáneo de afirmaciones íntimas y últimas, con el trapo burlador de lo efímero, surge, en el redondel de lo nuestro para siempre, este segundo homenaje, el del temple y el del compás que sigue a las vidas bien sopesadas, fuera ya del rito equívoco de las conveniencias y muy por encima de la línea de flotación de la hipocresía.\n\nPara la gala de los días de muerte, hemos sacado del armario de nuestro corazón un par de zapatos nuevos y hemos abandonado los zapatitos ortopédicos del tráfico diario, en el repudio total de cualquier desuello camisero.\n\nH $ \\underline{\\text{as ingresado en la Orden de los}} $ Hombres de Doble Homenaje.\n\nSegún nuestras noticias, parece ser que en esta Orden sólo se admiten muertos con muchísimas ganas de vivir.",
+    "title": "El doble homenaje",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 415,
+    "article_char_count_full": 2363,
+    "article_char_count_review": 2363,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-03-15-right-memoria-de-rafael-romero",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nR ecuerdo que estallaba ya la primavera en los viejos álamos del Parque de la Alameda. La esperábamos aquel grupo de amigos con la misma unción que en el pasado invierno habíamos esperado el eco de un tercio de soleá, en vivo. En Jaén, año mil novecientos sesenta y tantos, los días que preceden a la madrugada del Viernes Santo, bajan del Barrio de la Merced cargados de fragantes densidades. El «exultat» de la Resurrección se adelanta, en esta ciudad. Diria que se muestra ya, cuando aún el bulto de la noche cae sobre la Plaza de Santa María, baja el «Agüelo» por el Cantón y discurre por la Carrera de Jesús, estremecido por el fervoroso quejó de las saetas: «Polluelas» y Rosario. El cielo entretanto se destiñe en el azulón del alba, y más tarde en el gris insustancial del sol primero.\n\nLo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionado\"]\n\nados de fragantes densidades. El «exultat» de la Resurrección se adelanta, en esta ciudad. Diria que se muestra ya, cuando aún el bulto de la noche cae sobre la Plaza de Santa María, baja el «Agüelo» por el Cantón y discurre por la Carrera de Jesús, estremecido por el fervoroso quejó de las saetas: «Polluelas» y Rosario. El cielo entretanto se destiñe en el azulón del alba, y más tarde en el gris insustancial del sol primero. Lo sugirió un buen aficionado, Fernández Cos. Y era, sin duda, el primer acto de una Peña Flamenca, aún no constituida. Rafael Romero, Enrique Morente y Manuel Cano (jay, también desaparecido!). Pregón de Semana Santa, en el frontispicio. Y se celebró en un cine de la capital, hoy derruido. Con posterioridad he tenido la intención de que, tal vez, no fuera casualidad el que la primera manifestación jonda que propiciara la Peña Flamenca, se celebrase casi en vísperas de la más entrañable madrugada jiennense. Como tampoco fue casual el que se eligiese a Rafael Romero, cantaor de esta provincia, aunque entonces se le atribuyera ascendencia jerezana. Bullía en aquellos «aficionados» no sólo el deseo de, singularmente, penetrar, en los misterios de lo jondo, como un grupo más de iniciáticos burgueses. Existía, preponderante, ánimo de proyectar hermosísimas experiencias flamencas a instituciones y ciudadanos de esta provincia. Esos mismos que, ignorando la eclosión jonda que, una década antes, se había producido en Córdoba (I y II Concurso de la Ciudad de la Mezquita) —Antonio Mairena, Juan Talega, Fernanda, Fosforito, etc.—, confundían aún la jondura con el fandango delez- nable, y arrinconaban al solitario «Pollyelas» en sórdidos antros, sin poder discernir que aquel entrañable cantaor guardaba dentro, me- cía dentro, toda una familia de cantes añejos. Rafael Romero venía precedido de un notable halo de cantaor puro y de rescatador de acentos flamencos semiolvidados. Su estimable versión de la caña, la sobriedad interpretativa con que impregnaba ciertos cantes autóctonos, la recreación de los ecos del inolvidable Juanito Mojama, y en particular, de la soleá del γlinarense? José Illanda, constituían magnífica carta de presentación para quienes en esta ciudad, hermosa y patética a un tiempo, pretendíamos, sobre la vía de una constante y rigurosa indagación, p\n\n[ENDING CONTEXT]\n\nconciencia de este hermoso legado.\n\nRafael Romero pasará a la Historia Flamenca de este siglo no sólo por su indiscutible labor de rescate de cantes en trance de desaparecer, sino por la forma personalísima de interpretar una amplia gama de estilos y palos flamencos. Traemos a colación una cita de Antonio Murciano sobre el cantaor de Andújar, un juicio conciso, pero pleno de acierto y expresividad: «...cante hablado, susurrado, para ser escuchado con religioso silencio, para casi dicho al oído del aficionado cabal; cante fuerte, cante puro, manantial de labio a labio, de corazón a corazón».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Memoria de Rafael Romero",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-17",
+    "page_number": 15,
+    "word_count": 2285,
+    "article_char_count_full": 14080,
+    "article_char_count_review": 3944,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionado"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-17-right-rafael-romero-romero-el-gallina-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNace Rafael Romero Romero «El Gallina» en el senode una familia gitana de Andújar allá por el 1910. Desde pequeño, con pantalón corto y diez o doce años, cantaba para los señoritos de su tierra por diez duros; ellos le llamaban «el gitanillo». Por esa época sentía especial predilección por el arte de su padre, viejo aficionao que tocaba la guitarra y que hacía la soleá de su paisano José Illanda. Además de escuchar los cantes de sus abuelas, su progenitor y los gitanos de Andújar, Rafael Romero también perfeccionaba su aprendizaje con la escucha de placas de Manuel Torre, Tomás Pavón o La Niña de los Peines. Más tarde, recorrió los interesantes ambientes flamencos de la minera ciudad de Linares, en la que conoció al «Tonto Carica Dios», del cual —según versión propia del artista— aprendió\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"memoria\"]\n\ncuchar los cantes de sus abuelas, su progenitor y los gitanos de Andújar, Rafael Romero también perfeccionaba su aprendizaje con la escucha de placas de Manuel Torre, Tomás Pavón o La Niña de los Peines. Más tarde, recorrió los interesantes ambientes flamencos de la minera ciudad de Linares, en la que conoció al «Tonto Carica Dios», del cual —según versión propia del artista— aprendió los «Cantes de la Madrugá», estilos estos —sigo refiriendo la memoria del propio cantaor— que los mineros de Linares cantaban al realizar el cambio del turno de madrugada. Los mismos fueron grabados por «El Gallina» para el disco que se editó con motivo de la celebración del X Congreso de Actividades Flamencas de Jaén. Más tarde y durante la contienda civil española, Rafael Romero fue reclutado, llegando a alcanzar el grado de brigada. Tras finalizar la misma, el cantaor iliturgitano se traslada a Madrid y pasa a formar parte del espectáculo que en aquel entonces mantenía Lola Flores. Se afinca en Madrid en el año 42 y forma parte del elenco de artistas del Villa Rosa con Perico el del Lunar, Juanito Mojama o José Cepero. Forma parte del espectáculo flamenco del bailaor Vicente Escudero, cantándole al mismo y en solitario. Actúa igualmente con Teresa y Luisillo, José Greco y Antonio el bailarín, pasando posteriormente a pertenecer al rol cantaor del tablao Zambra. Es en esta época cuando el artista adquiere sus más altas cotas de popularidad al grabar los cantes por mirabras, siguiriyas, peteneras, alboreás, tonás, martinetes, deblas y cañas en la famosa Antología del Cante Flamenco de Hispavox. A esta popularidad también influyeron sus cantes por serranas o bulerías de la película «Llanto por un bandido». De sus largas temporadas en el extranjero habría que destacar sus interpretaciones en el «Scala» de Milán, la primera vez que en este santuario operístico se ha cantado flamenco. Sus estancias en Estados Unidos, Italia, Inglaterra, Francia —donde grabó un disco con su hija Luisa— o Japón, donde ha sido muy famoso, hasta el punto de cantar para el difunto emperador Hiro-Hito y grabar igualmente otro disco junto a los componentes de «Zambra» que le acompañaban. En el año 1973 la Cátedra de Flamencología de Jerez de la Frontera le otorgó el Premio Nacional de Cante. En 1976, Andújar, su pueblo, le rinde un homenaje con la celebración de un festival flamenco y la rotulación de una calle con su nombre. Ocho años más tarde, en 1984, la Peña Flamenca de Jaén le reconoce sus méritos artísticos con otro homenaje en el que\n\n[ENDING CONTEXT]\n\ncon especial nostalgia al «Tonto Carica Dios» y sus cantes mineros. Y así, uno a uno, podríamos ir desgranando las aportaciones y la personalidad que imprimía a sus cantes. Era buen intérprete de mirabrás, serranas —uno de los estilos mantenidos a cal y canto en su repertorio—, farrucas, garrotín, siguiriyas —con su casi siempre recuerdo de El Planeta—, tonás, martinetes, deblas o sus más inusuales cantes «por bulerías».\n\nLa afición flamenca jiennense y en especial la iliturgitana, han sufrido la pérdida de una de las voces flamencas más prestigiosas que ha dado esta tierra.\n\nDescanse en paz.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Rafael Romero Romero «El Gallina» Datos biográficos",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1230,
+    "article_char_count_full": 7381,
+    "article_char_count_review": 4171,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "memoria"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-18-right-rafael-romero",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA finales de los cincuenta el sello Hispavox lanzó su Antología del Cante Flamenco, premiada por la Academia Francesa del Disco, que así lo decía en letras doradas la tapa del negro estuche que contenía los tres preciosos discos y el folleto explicativo de los cantes y biografía de los cantaores. Aquella Antología sirvió, nos sirvió, para conocer lo que sabíamos de lecturas o por tradición oral en las voces, gastadas y roncas, de algunos viejos aficionados que nos aproximaron a ciertos palos, que en vivo no conocíamos, ya que la radio de entonces y los espectáculos, que venían al teatro al finalizar la aceituna, donde Pepe Marchena, Juan Valderrama o Manolo Caracol (que solamente vino con su espectáculo en una ocasión) repetían —sin aportar nada nuevo ni viejo— «los cuatro muleros», «el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\nuan Valderrama o Manolo Caracol (que solamente vino con su espectáculo en una ocasión) repetían —sin aportar nada nuevo ni viejo— «los cuatro muleros», «el emigrante» o sus hermosísimas zambras. Y eso que cuando iniciaban la actuación, tras el saludo de rigor, decían: «voy a comenzar con tal o cual cante y a continuación lo que ustedes quieran». Pero ese ustedes quieran, quedaba siempre para el año siguiente. Pero gracias a la Antología pudimos escuchar deblas, jaberas, tonás, marianas, polos, livianas... y otros cantes que rara vez se escuchaban y cuando tuvimos la oportunidad de escucharlos —sólo algunos— fue en grabaciones anti- guas, en discos desgastados por el uso, y, a veces, grabados por cantaores que falseaban la pureza de los palos para ajustarlos a sus facultades artísticas, cuyos nombres aparecían bajo la estampa del perrito blanco con lunares, escuchando por la bocina del fonógrafo. Con la Antología nos llegaban nombres que ignorábamos: Jacinto Almadén, Bernardo el de los Lobitos, El Chaqueta, Pepe el de la Matrona (Pepe no tanto, porque alguno lo recordaba de haber cantado en Martos) y las voces, nuevas para nosotros, de Roque Montoya «Jarrito» y una llena de matices y sentimientos, una voz que se desgarraba en la siguiriya, brillaba con todo esplendor en la petenera y se reflejaba transparente en las alboreás, que era la de Rafael Romero, del cual, en la biografía que aparecía en el folle-to, decía: Rafael Romero, natural de Andújar (Jaén); aquello nos llamó la atención, conocíamos sólo de nombre la existencia de otro cantaor iliturgitano, José Illanda, pero a Rafael, no. Por eso el gran cantaor comprovinciano fue el blanco de las devociones del grupo de aficionados que nos reuníamos junto al «pick-up» acoplado al aparato de radio. Y por él, antes de comprar la Antología completa, adquirimos un «single» —creo que se dice así—, que era una especie de separata de la misma. Era el volumen III. HH 1632. Mirabrás, alboreás, siguiriyas y peteneras. Cantaor: Rafael Romero. A la guitarra: Perico el del Lunar. Cierto día hablando con un\n\n[ENDING CONTEXT]\n\ncuando los del Grupo Poético «El Olivo», le concedimos el Olivo de Oro; y casi por esta fecha, era al principio de los setenta, en Madrid, en el Pabellón de Jaén en la Feria del Campo donde actuó junto al Grupo «Lola Torres», Rosario López y otros artistas jiennenses y, por último, en varias ocasiones en la Peña Flamenca de Jaén, en donde siempre que hablábamos me pedía un olivo de oro que el que le dimos se le había perdido. Y aquí ponemos fin a esta anécdota que nos ha servido para recordar la inolvidable figura de Rafael Romero, el paladín glorioso del flamenco en la provincia de Jaén.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Rafael Romero",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 1181,
+    "article_char_count_full": 6879,
+    "article_char_count_review": 3700,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-03-19-right-recuerdos-y-reflexiones-en-torno",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCerca de Callao había -¿hay?-una especie de taberna-mesón, «sherry», muy frecuentada por estudiantes andaluces en el Madrid de finales de los 50 y de los 60. En el sótano se formaban amplias reuniones que comenzaban invariablemente por sevillanas. Conforme avanzaba la noche, la «fiesta» se iba seleccionando, se «iban yendo» los más y quedábamos los menos, los ya iniciados en los misterios «cabalísticos», los que incluso echábamos mano a cantar por derecho. Destacado oficiante era Joaquín Juárez, sevillano, primer guitarrista (¿te acuerdas, Rafael Villanueva, amigo?, luego tú también fuiste guitarra principal) un tipo nada vulgar: pelo al cepillo, jersey y pantalón vaquero pero... con capa española. El nos descubrió a Rafael. Una de las discusiones que más se repetían era la de si Mairena\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"alma\"]\n\ntar por derecho. Destacado oficiante era Joaquín Juárez, sevillano, primer guitarrista (¿te acuerdas, Rafael Villanueva, amigo?, luego tú también fuiste guitarra principal) un tipo nada vulgar: pelo al cepillo, jersey y pantalón vaquero pero... con capa española. El nos descubrió a Rafael. Una de las discusiones que más se repetían era la de si Mairena o Caracol. Juárez decía, ¡con cuánta razón!, que había un tercero, que a él su «Gallina» de su alma. Y es que el cante de Rafael Romero ofrecía dimensiones y aspectos originales, exclusivos: su manera de pronunciar y acentuar —aspecto éste fundamental para alcanzar proyección personal— su forma de colocar el cante, de quejar la voz, sacando de ella todo el partido en servicio de la emotividad del cante, del patetismo expresivo, su riqueza de registros siempre en pro de una sentimentalidad seria, profunda, pero plena de múltiples matices: podemos percibir la ironía, el dolor, el escepticismo, el desgarro, la dulce pena y la pena amarga, el desprecio o el desdén, la resignación sabia... muy a menudo bajo la envoltura de la más exquisita sutileza, como si nos dijera que, a pesar de todo, siempre será posible aferrarse a la soledad y, desde ella, cantar, seguir cantando. En aquel Madrid más de una vez me quedé contemplando absorto de admiración la imagen llena de empaque y seriedad que Rafael Romero ofrecía en lugares como «Gayango», «La Alemana» o «Villa Rosa», que daba sus últimos estertores como colmao. No hubo entonces trato personal. Luego vendría la amistad, unos veinte años después: aquel festival agosteño en Villacarrillo. Rafael y Varea llegaron juntos desde Madrid. Se hospedaban frente a nuestra casa. Mi padre, mi hermano Carlos, amigos como Blas Mora, y yo, los atendimos con el mayor esmero que pudimos. Fueron casi tres días. Largas conversaciones. Ahora tenía a mi alcance a Rafael. Fue generoso. La verdad es que parecía disfrutar hablando de cante, recordando, y así fue desapareciendo mi preocupación de que llegara a cansarse. Ya los años le pesaban. «A Chacón no llegué a escucharlo. Sin duda era un monstruo» (...) «si tuviera que decir el más grande diría que Manuel, pero también estaba Tomás y... ¡Mojama!». (¡Cómo valoraba a Juanito Mojama! Y ningún otro ha llevado a su cante ciertos ecos de aquél gitano-dandy de Jerez como el propio Rafael). «Caracol era genial» (...). «Mairena es un gran cantaor. Completo, de mucho respeto». De los más jóvenes de entonces: «Camarón es indiscutiblemente figura principal, canta con ra\n\n[ENDING CONTEXT]\n\nel cante, esa «caída» en el tiento, aquella manera de rajar la voz y la expresión en la siguiente, el vibrato rápido y sutil en cualquier tercio y en no olvidarse nunca del «durse», de aportar miel a lo más terrible incluso.\n\nNo grabó mucho, es cierto. Pero con lo que nos dejó tenemos una auténtica antología, precisa, en donde nada sobra. La calidad preferible a la cantidad. Apoyándose en el documento incontestable que nos deja, la Historia del cante habrá de ir agigantando su importancia. Habrá de ir poniendo en su sitio de cumbre sobresaliente de nuestro arte a Rafael Romero «El Gallina».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Recuerdos y reflexiones en torno a Rafael Romero «El Gallina»",
+    "periodical": "candil",
+    "issue_id": "1991-03",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 1538,
+    "article_char_count_full": 9067,
+    "article_char_count_review": 4144,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "alma"
+      }
+    ]
+  }
+]
+```

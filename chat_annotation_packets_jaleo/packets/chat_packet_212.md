@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1985_10::A17",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nGuillermo: None of the addresses you have sent us are working. Mail is returned as undeliverable. Please bring us up to date. Guillermo is performing in Carnegie Hall in New York on March 29, as part of the American Institute of Guitar IV International Festival, and we wish him great success. REVIEWS STUDENTS DANCE THROUGH SCHOOL [from: San Antonio Light, Sept. 7, 1985; sent by Teo Morca.] by Josie Neal Teo Morca: \"A real amazing talent. Not just cute but art is there and what natural compás.\" Last month, when most students were busy squeezing the last drop of fun from summer vacations, two young San Antonians chose to be--in school. It was no ordinary school, however, that made Johanna Denis and Veronica Guel happily forgo two precious weeks of freedom. The two recently returned from the\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"Academy\"]\n\n, Sept. 7, 1985; sent by Teo Morca.] by Josie Neal Teo Morca: \"A real amazing talent. Not just cute but art is there and what natural compás.\" Last month, when most students were busy squeezing the last drop of fun from summer vacations, two young San Antonians chose to be--in school. It was no ordinary school, however, that made Johanna Denis and Veronica Guel happily forgo two precious weeks of freedom. The two recently returned from the Morca Academy of Creative Arts in Belingham, Wash., where they studied in the annual flamenco workshop of one of the country's acknowledged masters of Spanish dance, Teodoro Morca. \"I loved it,\" said 10-year-old Denis, who was to repeat the phrase over and over during an interview last week. It was her first trip away from home and family, and that, along with demanding classes, was an important part of the learning experience. \"The most exciting thing to me was that I went so far-especially without my mom! But to me, it was worth it, because I need that opportunity if I want to be a star.\" Such things as learning to be away from one's mom at an early age are important to Denis, who has had the goal of \"being a star\" firmly in her mind for several years. \"I did miss my\n\n[ENDING CONTEXT]\n\ns program of Spsnish dance? Why not, for in the unwritten history of dance, new blendings of movement and music create what eventually becomes the traditional. From Spain, because of her particular history and incorporation of cultures, comes a wealth of dance form. Teo Morca in his chareography draws from classical court and regional folk dances, the Spanish ballet of the \"Bolero Era,\" and contamporsy modern Spanish theatre dance, which uses all forms of movement. Let's explore some of these sources so important to Morce, the artist hanarably dubbed \"Dancing Eagle\" by the Taos Indian Puebla.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "GUILLERMO RIOS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_10",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "32-35",
+    "page_number": 32,
+    "word_count": 1649,
+    "article_char_count_full": 10114,
+    "article_char_count_review": 2852,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "Academy"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1985_10::A18",
+    "article_text_for_review": "JALEO - VOLUME VIII, No. 4 KATRIA VRINOS DANCES AT AUGUST JUERGA FLAMENCO FENCING ORNAMENTAL IRON SAFEGUARD FENCE CO. SERVING NORTH COUNTY 619/745-4846 CA Contractor's Licence #374198 PACO PENA \"Live in Munich\" $14.95\\text{u.s.}$ Postage & Handling U.S. and Canada - $1.50 Other Countries - 53.00",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1985_10",
+    "year": 1985,
+    "language": "en",
+    "article_type": "other",
+    "pages": "36-37",
+    "page_number": 36,
+    "word_count": 45,
+    "article_char_count_full": 296,
+    "article_char_count_review": 296,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1988_09::A1",
+    "article_text_for_review": "[from: $ \\underline{\\text{International Herald Tribune}} $, April 1988; sent by Ted Bakewell] by Mark Zwerin Paris - After Ketama and Pata Negra played for a packed house in Barcelona last January, the newspaper La Vanguardia said: \"The Spanish music of the nineties was born last night.\" Traditional flamenco has remained static for many years. It began to open its windows with Paco de Lucía's guitar collaborations with Al DiMeola and John McLaughlin, but this was imposed from the top, a star being accepted for himself rather than his music. Ketama and Pata Negra, among other young Andalusian gypsy groups, began reinventing traditional flamenco in the early eighties. They made records for the Spanish market and played local clubs and their reputation began to filter north by way of Mario Pacheco's Nuevos Medios label and Joe Boyd's Hannibal Records in London, but the Barcelona concert was the first time the music had been presented in a more or less formal setting with more than one group, as a \"movement.\" El País called it \"the final breakdown of barriers.\" Ketama is composed of José Soto and the brothers Antonio and Juan Carmona. Soto and the Carmonas come from distinguished flamenco families whose members include Manuel (El Sordera) Soto and Pepe Habichuela. The latter is one of today's great traditional flamenco guitarists who has also broadened his heritage through experiments with Don Cherry (who calls himself a \"global griot\") and Moroccan Andaluz musicians. Ketama revises the rules rather than making new ones. While transforming lyrics, rhythmic patterns and instrumentation (electric bass), they remain with both feet firmly in flamenco. Last month Joe Boyd recorded Ketama in Madrid with the twenty-two-year-old Malian master kora player Toumani Diabete, a mixture he called \"the most exciting world fusion music you can imagine.\" As with Astor Piazzolla's exciting tango-based fusion music, all of this has been viewed dourly by a conservative establishment - at least until January in Barcelona.",
+    "title": "REINVENTING AND FUSING FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 322,
+    "article_char_count_full": 2032,
+    "article_char_count_review": 2032,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1988_09::A2",
+    "article_text_for_review": "Flamenco Junkie Finds Dear Jaleo, On the way to looking up something else, I stumbled across your magazine at the Cultral Center in Chicago. Needless to say, I forgot about what I was looking for and spent a fascinating afternoon reading through about two and a half years of your magazine. I loved it! The one problem was that the librarian didn't know if the magazine was still being published. I hope it is and I hope this finds you. You'll really make an anglo who doesn't speak Spanish but finds the beauty of flamenco music and dance something special happy. Jim Leon Chicago, Il *** UPDATE FROM TERESA My name is Teresa from the past \"Teresa y Luisillo y su Compania Española\". For the past twelve years I have been coordinator of the dance department of the University of Maine at Orono, teaching flamenco dancing. I am on Sabbatical leave of absence during the Fall of 1988 and my research project will involve going to spain to produce a video film for distribution titled, \"The Legends of Spain, Dance Again\". Rosario, Antonio, Pilar Lopez, Mariemma, Luisillo, Roberto Ximenez, etc. will be the prime focus of his documentation. I have always been interested in receiving copies of your Jaleo publications and would like to become a subscribing member. Sincerely, Teresa Torkanowsky Hancock, ME Play the compositions of PACO DE LUCIA, SABICAS, SERRANITO, PEPE HABICHUELA, MANOLO SANLUCAR, NÍNO MIGUEL, PACO CEPERO, TOMATITO, ENRIQUE MELCHOR, ETC. From the transcriptions of their recordings in TABLATURE NOTATION. Respecting note for note the original fingering. OVER 180 TITLES AVAILABLE PLUS 20 ANTHOLOGIES OF FALSETAS Write to: ALAIN FAUCHER, 28 RUE DE LA REINE BLANCHE, 75013 PARIS, FRANCE Angelita Concierto Flamenco LA MIRADA, CA: Oct 2nd, 3:00pm at La Mirada Civic Theater. Singer Chinin de Triana, guitarist Gino D'Auri, guest artist Timo Lozano. Advance sale $15.00 check or money order to Angelita, 10918 Telechron Ave., Whitier, CA 90605 (or $17.00 at the door). Paula Moreno Spanish Dance Update This year the company featured the young flamenco guitarist from Granada, José Valle \"Chuscales\". [See Jalco Vol. X-3.] These concerts were recorded at the Bathurst Street Theater for broadcast by CBC stereo radio to be released later as an album by Producers Group International. José Valle grew up in Granada where he made his professional debut at age fourteen in tablaos flamencos. He has played on tours throughout Europe, Japan and South America, as well as the United States and Canada. In these concerts Chuscales performed solos and with four prominent Toronto musicians, Barbara Ackerman (flute), George Koller (bass), Joseph Peleg (violin) and Dick Smith (percussion), as well as accompanying the dance company and flamenco singer Cesar Alvarez.",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4-5",
+    "page_number": 4,
+    "word_count": 450,
+    "article_char_count_full": 2775,
+    "article_char_count_review": 2775,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1988_09::A3",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEnrique de Melchor Talks to Gerard Klingenstein “The Flamenco is Limitless” Gerhard Klingenstein: On almost three hundred different records you have not only accompanied singers and performed as a soloist, but you have also influenced the development of flamenco over the last twenty years. You have become the most sought-after guitarist at festivals, fairs and in recording studios throughout Spain. Your father Melchor de Marchena, who died seven years ago, was one of the most important guitarists of the last generation. What can you tell us about your family, your father, your own beginnings and the guitar itself? Enrique de Melehor: I was born April 28, 1950 in Marchena, Calle Espíritu Santo 27. Altogether we were six children at home. I have three older brothers and two sisters. Only\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grandfather\"]\n\nlast generation. What can you tell us about your family, your father, your own beginnings and the guitar itself? Enrique de Melehor: I was born April 28, 1950 in Marchena, Calle Espíritu Santo 27. Altogether we were six children at home. I have three older brothers and two sisters. Only two of my brothers have anything to do with flamenco. One plays the guitar a little, and the other is a singer. But it is only as hobby with them. My father, my grandfather and my uncle however were real artists and although not all of them were professionals, they were nevertheless well known. I went to school in Marchena until I was ten or twelve. It was then that I started to get interested in playing the guitar and soon I became completely dedicated to it. Even though my father was at that time a well-known, indeed historical, personality on the guitar, he made very little money. We were poor people, more or less; my father was the only one in the family to earn at least some money. As a child, of course, you don't notice poverty; you only think of fun and gam\n\n[ENDING CONTEXT]\n\nKlingenstein JALEO - VOLUME X, No. 3 Gift Subscriptions to Jaleo A SPECIAL NOTICE OF YOUR GIFT WILL BE SENT TO THE RICPIENT. Send name and address of recipient, your name and a check or money under to Joliestas (P.O. Box 4706, San Diego, CA 92104). Current Rates: U.S. $20 - U.S. Subscription U.S. $25 - Cana/Mexico U.S. $29 - Surface Dverseas U.S. $30 - Air Mail Europe U.S. $55 - Air Mail Far 1ast TEODORO MORCA IS NOW OFFERING ON VIDEO TAPE, A COMPLETE APPROACH TO STUDYING FLAMENCD DANCE, IN TECHNIQUE, INTERPRETATION REPERTOIRE AND UNDERSTANDING, WRITE OR PHONE FOR A \"MENU\" OF TAPE SELECTIONS.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ENRIQUE DE MELCHORE: INTERVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 1800,
+    "article_char_count_full": 10065,
+    "article_char_count_review": 2693,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grandfather"
+      }
+    ]
+  }
+]
+```

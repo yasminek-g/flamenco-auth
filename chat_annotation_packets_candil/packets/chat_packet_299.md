@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1994-11-32-left-paco-de-luc-a-francisco-del",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAlgunas acotaciones sobre la vida de un genio\n\nSi a la música creada a la guitarra por Paco de Lucía pudiera dotársela de colores, aparecería ante nuestra vista una fantástica policromía de tonalidades, en la que los matices severos, la oscuridad y la dureza ocuparían una parte importante del espectro. Lo colores suaves, blandos y serenos serían sólo una transición..., un respiro.\n\nY es que en la música de Paco de Lucía hay mucho de rabia reivindicativa. Parece como si toda la marginación a la que ha estado sometido el mundo flamenco, quisiera ser expresada con el rasgueo apasionado, a veces indignado aunque siempre con las pinceladas tiernas, delicadas y llenas de majestad: «Antes, ser flamenco era casi una deshonra y ahora, aunque las cosas cambian, todavía queda mucha marginación. Por\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"Grande\"]\n\ntiva. Parece como si toda la marginación a la que ha estado sometido el mundo flamenco, quisiera ser expresada con el rasgueo apasionado, a veces indignado aunque siempre con las pinceladas tiernas, delicadas y llenas de majestad: «Antes, ser flamenco era casi una deshonra y ahora, aunque las cosas cambian, todavía queda mucha marginación. Por eso explota esta rabia inconsciente a través de mi guitarra para que comprendan lo que es esto». Félix Grande escribe sobre la música de Paco de Lucía: «En su discurso musical sobrevienen a veces estallidos de júbilo; pero precisamente no se trata de un júbilo tranquilo, sino un júbilo que estalla, casi venal, provocativo y arrogante. Constantemente asoma en esa misma música la cara del consuelo, jamás la cara del olvido». El «Niño de la Portuguesa» F rancisco Sánchez Gómez, artísticamente Paco de Lucía, nació en Algeciras, en la casa número 6 de la calle de San Francisco, el día 21 de diciembre de 1947, a las nueve y media de la mañana. Su primer nombre artístico se lo puso su propio vecindario, «Niño de la Portuguesa». Su madre, Lucía, natural de Castromartín (Portugal), llegó a Algeciras a la muerte de su padre, cuando aún no había cumplido los nueve años. El primer profesor de guitarra de Paco de Lucía fue su propio padre, luego su hermano Ramón y decisivamente «Niño Ricardo». Hay situaciones parecidas en la vida de ambos artistas. Aunque la vocación de «Niño Ricardo» se iniciara con más edad que Paco de Lucía, Manuel Serrapi recuerda que pasó mucho frío y sueño cuando tenía que acostarse a las cuatro de la madrugada y levantarse dos horas más tarde para vender el carbón. El sufrimiento de Paco de Lucía era de otra índole. Sentía frío en su corazón joven cuando observaba los malos ratos de su padre porque no había dinero. Lo vio ejercer en profesiones tan dispares como corredor de ventas, músico en los bailes y en todo lo que honradamente le saliera. Paco de Lucía bebía en la fuente musical que para él era «Niño Ricardo», aprovechando los frecuentes viajes que éste hacía a Algeciras y la amistad que tenía con su padre. Contaba Paco entonces entre 11 y 13 años de edad. Su primer contrato Y es precisamente con 13 años cuando le llega su primer contrato. Era con la compañía del Ballet Clásico-Español de José Greco, con el que permaneció dos años, recorriendo numerosos países de Europa y América. En su primer viaje a los Estados Unidos conoció a Sabicas, quien le aconsejó que compusiera su propia música. Pa-co de Lucía ha guardado y guarda en su recuerdo, un gran respeto por Sabicas aunque discrepara en temas concretos. «Yo respeto a Sabicas como si fuera mi padre —decía Paco en una entrevista en octubre de 1986—. Ante él, hay que quitarse el sombrero, pero en algunas cosas no compartó su opinión». En lo que Paco no estaba de acuerdo con Sabicas era en un comentario realizado por el prestigioso guitarrista ya desaparecido, acerca de que a Paco de Lucía no le hacía falta actuar con «gente rara» para llegar a ser alguien, refiriéndose a las actuaciones que durante dos años había realizado Paco con\n\n[ENDING CONTEXT]\n\nla persona de Paco de Lucía, eran en sí, de algún modo, un acto de contestación, pero antes que nada, eran el jubiloso tributo que pagamos al genio».\n\nDesde entonces hasta la fecha la trayectoria creativa y artística de Paco de Lucía ha ido en aumento. Habría material y temas para llenar muchas páginas, aunque sólo fuera bajo el punto de vista del recuerdo o el repaso sintetizado de una vida dedicada al arte flamenco y en especial a la guitarra.\n\nSirvan, pues, estas breves acotaciones como muestra de admiración y respeto que desde la provincia de Cádiz sentimos por este guitarrista universal.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Paco de Lucía Francisco del Río",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "32-32",
+    "page_number": 32,
+    "word_count": 1148,
+    "article_char_count_full": 6710,
+    "article_char_count_review": 4718,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "Grande"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-11-33-left-paco-de-luc-a-es-aparte",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPaco de Lucía es el gran revolucionario de la guitarra flamenca en el siglo XX; ha liderado decididamente su evolución durante los últimos treinta años; el concepto del toque actual en él tiene su punto de partida y ha trascendido los esquemas clásicos del toque y del propio mundo del flamenco; la inmensa mayoría de los jóvenes guitarristas caminan tras su estela y ha contribuido con su actitud a la revalorización de la guitarra como instrumento imprescindible e individual, sin ataduras ni sumisiones. Paco de Lucía es un fenómeno, es aparte, es otra cosa. Nadie osa comparársele.\n\nEl tocaor de Algeciras —«poeta de las seis cuerdas»—, «Hendrix de Algeciras», «el segundo Andrés Segovia»... son algunos de los sobrenombres, más o menos afortunados, que le ha valido su brillantísima carrera\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"creatividad\"]\n\nde Algeciras —«poeta de las seis cuerdas»—, «Hendrix de Algeciras», «el segundo Andrés Segovia»... son algunos de los sobrenombres, más o menos afortunados, que le ha valido su brillantísima carrera profesional, mago de la guitarra, dominador del poderío jondo, está en plena madurez, por su edad y genialidad, y, al mismo tiempo, inacabado, precisamente porque está en permanente evolución, y es exactamente lo deseable del artista. Esa madurez y creatividad asombrosa no le viene por generación espontánea, sino que tiene su raíz y origen en un aprendizaje rigurosamente disciplinado, con un antecedente, su padre, y un aliento, su hermano Ramón de Algeciras. Desde su más temprana edad sacrifica la niñez del juego para dedicar horas y horas a descubrir y domeñar los sonidos de la guitarra, a desentrañar los secretos de la música flamenca. Para Paco, a los doce años, no tenía secretos la guitarra de Niño Ricardo. No es extraño, pues, que a esa edad fuera un dechado de perfección técnica. Más que por su precocidad, asombraba por su conocimiento tan preciso y tan amplio. A los dieciséis años era ya conocido por los artistas del género, unánimemente, por su dominio técnico, por su conocimiento, por su versatilidad y por su genialidad. Fosforito nos ha contado su propio asombro: «Por los años 60 me había hablado el hermano de Paco de Lucía de que tenía un hermano que tocaba muy bien: —Cuando escuc\n\n[ENDING CONTEXT]\n\nSu toque es ley. Sus innovaciones, diabluras, elucubraciones y aportaciones, doctrina. Su maestria, un sueño y un anhelo por todos compartidos. Su inagotable afán de evolución, inconformismo y perfección, una garantía cierta de futuro esplendoroso.\n\nLa guitarra ha encontrado en Paco de Lucía al mejor adalid en su reivindicación como instrumento capaz de evolucionar por sí mismo. Por su parte, Paco de Lucía ha encontrado en la guitarra su forma ideal de expresarse, de transmitir emociones, de compartir sensaciones y sensibilidades. Con este feliz y bendito encuentro todos hemos salido ganando.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Paco de Lucía es aparte",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "33-33",
+    "page_number": 33,
+    "word_count": 966,
+    "article_char_count_full": 6028,
+    "article_char_count_review": 3038,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "creatividad"
+      }
+    ]
+  },
+  {
+    "article_id": "1994-11-34-left-jos-luis",
+    "article_text_for_review": "U nos creyeron que era falta de cortesía; tal vez yo mismo incurri en el error en una ocasión en que la sensata decisión de Paco de Lucía no fue entendida en su justa medida. Otra vez lo tomaron por soberbio, por un divo engréido que se movía tan sólo por desmesuradas acciones, fruto de irreflexiva niñatería. Todos, alguna vez, nos hemos equivocado con Paco. Merece la pena, para entender mejor su grandeza de ánimo, su personalidad exquisita, pareja al menos a su genialidad artística, reflexionar sobre lo injusto de nuestras apreciaciones, para, de esta manera, aprender a quererlo mucho más, a valorar el pedazo de persona que se sienta cada día, ocho o diez horas, para fundirse otro poco con esa guitarra compañera de la que ya forma parte indisoluble.\n\nCasualmente, lo dos sucesos que hoy relato acaecieron en Sevilla, aunque no guarden otra relación entre sí que el protagonismo del artista. El primero tuvo lugar en los salones reales del Hotel Alfonso XIII de dicha capital, con ocasión de la entrega de la Distinción «Compás del Cante», patrocinado por la empresa Cruzcampo, S. A. que un jurado, del que yo forma-ba parte, había otorgado a Paco con todo merecimiento. Para los lectores que no conozcan el desarrollo del solemne evento en el que se entrega el galardón, debo decirles que aquellos magníficos habitáculos, que han alojado a miembros de la realeza y de todos los gobiernos del mundo, se transforman a los postres en un improvisado escenario en el que los premiados, como una pequeña muestra de agradecimiento, cantan, bailan o tocan, desgranan lo mejor de su arte, porque están convencidos de vivir una de las cumbres de sus respectivas trayectorias artísticas. Así lo han hecho todos los premiados, hasta esa maravillosa Pilar López, que, cargada de años, pero también de emociones, nos obsequió con el regalo sin par de un arte acrisolado en lo más profundo de sus añejas entrañas bailaoras.\n\nTodos menos Paco, y de aquí surgió la confusión. Su amable pero enérgica negativa a tocar la guitarra en aquella noche histórica, nos sumió a todos en el desencanto, y ¿por qué no decirlo?, en la du-da de haber distinguido a un artista extraordinario pero desagradecido. Pocos días después supe las razones: el de Lucía, el gran maestro de la guitarra flamenca, que divide este arte histórico en un antes y un después de él, no había tocado en aquella ocasión por un profundo compromiso con su arte. Aunque parezca mentira y cueste creerlo, Paco, el maestro de cuantos hoy se templan en el arte de la sonanta, no se atrevía a comparecer tocando ante un auditorio tan selecto por respeto a éste; el hecho de no haber ensayado previamente todo\n\nel tiempo que, según él, la guitarra necesita a diario, le impedía pasar un examen para el que no se encontraba preparado en la medida que su nivel de autoexigencia le pedía. Conocen ustedes otro ejercicio de mayor responsabilidad?\n\nEl segundo malentendido llegó a los medios de comunicación también desde la ciudad hispalense: Paco, anunciado en un cartel monstruo, que compartía con ídolos mundiales del espectáculo operístico y de la canción ligera, no había accedido a tocar porque, en el programa anunciador, su nombre aparecía ridículamente empequeñecido al lado del de los grandes divos.\n\nDe nuevo se desataron los comentarios desfavorables, fruto del desconocimiento de este hombre singular, irrumpió la malidicencia en los corrillos interesados en despretigiar su nombre. Como todo pasa en la vida, aquella rebaba indeseable también cesó con el tiempo y sus ecos se apagaron. Yo casi tenía olvidado el suceso hasta que, en un ambiente distinto, y muchos meses después, conocí toda la verdad. Un amigo común me la contó y yo se la traslado a ustedes para que juzguen desde prismas diferentes: Paco no se había negado a tocar porque su orgullo personal se viera menoscabado por lo ínfimo del reclamo publicitario, sino por razones más profundas. Cuando se dirigía a los ensayos y presenció el cartel anunciador discriminatorio, había recordado que su padre, el viejo gitano fundador de esa dinastía de artistas, sufrió, años atrás, en los aledaños del local que ahora menospreciaba su nombre, la humillación de unos señoritos tarambanas que se burlaron de él y le rompieron la guitarra que tocaba para ganar cuatro perras que dierán de comer a los que, con el tiempo, serían artistas que asombrarían al mundo entero, la saga de los Lucía.\n\nPaco no quiso, no pudo soportar, la espesura de las sombras de un mal recuerdo. Ven como no es tan fácil juzgar acciones cuya raíz desconocemos? Sus motivos verdaderos tenían que ver con el orgullo de una raza, de un linaje de artistas, con la llamada de una sangre rebelde que se alborotaba al contacto con el frío cuchillo de la injusticia pretérita. También con el respeto a su propio arte, sin el cual no hay artista verdadero que alcance la grandeza suficiente para merecer tal nombre. Paco de Lucía exigía que esa guitarra que él ha engrandecido y llevado a las más altas cimas que pueda escalar instrumento alguno, tuviera el mismo tratamiento en la escala de honores que compartían los otros invitados a aquel evento artístico; quería borrar con su gesto la negrura de un recuerdo inferido a su propia carne, pero también recordarnos a todos que la guitarra flamenca, denostada hasta por las autoridades académicas andaluzas, que no han sabido crearle un sitio en los Conservatorios de música de cualesquiera de las ocho provincias de nuestra comunidad, se merece un trato de respeto al menos tan exquisito como el resto de cualquier concurrencia artística.\n\nPoco nos queda por añadir. Hoy, cuando se homenajea desde todos los puntos del planeta a este artista universal, con estudios profundos sobre su vida y su obra, he querido aportar estas dos pequeñas, pero enjundiosas reflexiones, para que, desde su insignificancia relevante, nos hablen acerca del carácter genial de todo un mito, de todo un hombre.",
+    "title": "Zona de penumbra",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "34-34",
+    "page_number": 34,
+    "word_count": 994,
+    "article_char_count_full": 5927,
+    "article_char_count_review": 5927,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1994-11-35-right-glosas",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«La guitarra de Paco de Lucía es simultáneamente enraizada y fundacional, nutrida en la hondura de la tradición y, al mismo tiempo, creadora de libertad y de formas, impregnada de siglos y, a la vez, de aventura, calcificada por los antepasados, y al mismo tiempo, fastuosamente rica de inventiva. Jamás la guitarra andaluza sonó tan original y a la vez tan legible y remota; quiero decir que nunca hubo en una composición de guitarra tanta majestuosa invención, pero tan emergida desde una vastedad de música en la que deambulaban una multitud de moriscos, judíos, gitanos y marginados andaluces. Hay en la música de Paco de Lucía una soledad tumultuosa, una bravura radical, una impetuosa pena y una serenidad dramática. Sus variaciones pueden ser dolorosas y sus silencios un castigo. Sus picados\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"técnica\"]\n\nón de guitarra tanta majestuosa invención, pero tan emergida desde una vastedad de música en la que deambulaban una multitud de moriscos, judíos, gitanos y marginados andaluces. Hay en la música de Paco de Lucía una soledad tumultuosa, una bravura radical, una impetuosa pena y una serenidad dramática. Sus variaciones pueden ser dolorosas y sus silencios un castigo. Sus picados se disparan desde una especie de emoción colérica; la velocidad de su técnica no es únicamente una consecuencia de su disposición anatómica y sus horas de estudio, sino también, y sobre todo, el resultado de una furia comunicativa y anhelante, como si algo desde esa música estuviera pidiendo a la vez socorro y justicia. La extraordinaria conmoción sigilosa de sus trémolos debe hacernos pensar no únicamente Glosas en la delicadeza y la fortuna de un gran compositor, sino también en la fuerza ilustre de un dolor popular y añejo que este artista acierta con un amor y una sabiduría sin precedentes. Los bajos de Paco de Lucía merecen ser denominados con un nombre famoso: sonidos negros. El sol que hay en la música de este artista (y en todas sus composiciones hay sol, unas veces canicular, otras lejano, siempre vivificante) alumbra un mundo negro, abarrotado de rincones: son los rincones del corazón de muchos andaluces a lo largo de siglos, un corazón siempre abrasado de memoria, una memoria que recuerda los desmanes, la humillación, la pena, las fatigas, también la inmensa resistencia de los desposeídos. El júbilo de algunas de sus músicas está descomunalmente amarrado con nervios; en una lenta y lúcida reelaboración, Paco de Lucía ha llevado las bulerías a un inconcebible y genial nerviosismo en donde ese ritmo alcanza un bellísimo y sincopado perfume de tragedia. La guitarra de Paco de Lucía está mostrando en versiones «Para mostrar cuánto de memoria y naufragio habita en el flamenco no hay en el mundo manos más opulentas que las de Paco de Lucía. Tardará mucho tiempo en nacer, si es que nace un artista de la guitarra que pueda cargar con el peso de esta música prodigiosamente flamenca que Paco de Lucía compone, y pone a hervir, con sus dos manos, desde los dos palacios en donde mora todo creador auténtico: la celebración de todo cuanto llega desde la tradición, y la angustia por agrandarla. Las manos de Paco de Lucía se han hundido en la música flamenca y emergen chorreando naufragios y memoria; pero también emergen distribuyendo desobediencia, poderío y libertad: abrasando como tizones. Sólo hay respeto en la desobediencia, y sólo ella es creadora. Las manos de Paco de Lucía respetan las leyes profundas de las músicas andaluzas, pero desobedecen a los legisladores. En el mundo de la guitarra, las man\n\n[ENDING CONTEXT]\n\nque ha llegado a su cénit. Poseedor de una ejecución tan dinámica y turbadora, ha conseguido interesar y cautivar con su guitarra andaluz a los públicos más dispares y heterogéneos. Paco de Lucía, más que llevar a cabo una labor evolutiva, lo que ha realizado es una auténtica revolución». Junto a su amplia discografía como solista, ha grabado varios discos acompañando a cantaores, especialmente a «Camarón de la Isla».\n\nTOCAORES DE HOY\n\nPaco de Lucía\n\nCAJA GENERAL DE AHORROS DE GRANADA\n\nInstituto de Estudios Giennenses. Candil : boletín de la Peña Flamenca de Jaén. N.º 96, 11/1994. Página 39\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Glosas",
+    "periodical": "candil",
+    "issue_id": "1994-11",
+    "year": 1994,
+    "language": "es",
+    "article_type": "article",
+    "pages": "35-39",
+    "page_number": 35,
+    "word_count": 2323,
+    "article_char_count_full": 14048,
+    "article_char_count_review": 4349,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "técnica"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-01-3-left-editorial",
+    "article_text_for_review": "Editorial\n\nE n varias ocasiones, sobre la línea editorial de esta revista, hemos subrayado el efecto positivo que han proyectado sobre nuestros lectores y sobre la profundización de aspectos puntuales del Flamenco, algunas de las polémicas mantenidas por nuestros colaboradores. Siempre incentivamos que, desde esta tribuna, se defendieran las posiciones encontradas de quienes, animados por su mismo ardor —la defensa del Flamenco por la vía de la precisión, del acotamiento y de la redefinición de este o aquel contenido jondo—ostentan el legítimo derecho de hacer valer con energía sus convicciones. El ejemplo paradigmático en la más reciente historiografía del Flamenco, tal vez, lo hayan ofrecido Ricardo Molina y González Climent. Nunca, a posiciones que devinieron tan irreductibles les faltó la compostura, el respeto y la consideración hacia el enfoque discrepante. Y con ello, en el planteamiento de cualquier polémica no pretendemos entronizar ese «fair play» tan vacuo como falsamente caballeresco, en razón del cual parecen deslegitárse los criterios defendir\n\nAntes, al contrario, una momentánea salida de tono, igual que les ocurriera a viejos maestros en la interpretación de algunos cantes, puede venir impregnada de frescura, y hasta resultar hermosa. Pero sólo momentánea, porque si resultara definitiva, lo adecuado sería hablar de torpe subjetivismo o de obcecación. La actitud rigurosamente neutral de esta revista no ha significado, en ningún momento, miopía, ni que hayamos dejado de distinguir lo que la gran mayoría de nuestros lectores han captado: La disparidad de criterios, en éste como en los demás órdenes del conocimien-\n\nto, nunca justifica las descalificaciones personales, la agresión verbal, a extramuros del Flamenco. Y ello lo decimos, sin demérito de quienes gozan del mayor respeto y consideración del equipo de esta revista: Manuel Martín Martín por su valentía, por su fulgurante trayectoria como crítico de Flamenco; Agustín Gómez por su acreditada dedicación al mundo de la crítica tan poco gratificante y gratificado. Fue él junto al admirado Povedano y al desaparecido Fausto Olivares, entre otros, quien alentó, hace ya varias décadas, el Flamenco en Jaén y, en gran medida, fue como uno de sus progenitores.\n\nEn cualquier caso, la polémica ha concluido. Las precisiones que anteceden eran, muy a nuestro pesar, absolutamente necesarias, porque el silencio podría haber contaminado el criterio que hemos intentado mantener durante tanto tiempo: respeto, siempre respeto a las opiniones discrepantes. Es lo mejor; porque, tal vez, resulte que los exégetas polemizantes aportan, en sí, más interés para los lectores que el propio texto sobre el que combate.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 411,
+    "article_char_count_full": 2704,
+    "article_char_count_review": 2704,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

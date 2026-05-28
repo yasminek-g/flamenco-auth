@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-19-right-antonio-mairena-cabal-entre-caba",
+    "article_text_for_review": "Por Antonio Piñana\n\nRealizar un enjuiciamiento parcial de Antonio Mairena y de su obra, sin que esta opinión se vea rodeada de alabanzas que desemboquen en el consabido tópico, es tarea harto difícil, porque, y sin querer, la loa o el ensalzamiento sale fácil de esta pluma cuando mi pensamiento está centrado en su figura. A pesar de ello, como persona que se ha entregado en cuerpo y alma al flamenco y no desconoce de sus vicisitudes, voy, en breves líneas, a delinear sus cualidades como artista, su personilidad humana y su obra.\n\nComo artista, recuerdo, como si fuera ayer, a Mairena en una reunión en el cuarto número 8 de Villa Rosa, en el Madrid del año 1948. Noche inolvidable en la que cantó sin descanso desde las dos de la madrugada hasta las diez de la mañana. Interpretó sólo siguiriyas y soleares, pero con una maestría y un conocimiento tan cabal de los diversos estilos que ejecutó como yo no había escuchado jamás a nadie. Me confieso: a partir de aquella noche me convertí en un incondicional mairenista, en lo que se refiere al cante gitano-andaluz. Desde aquella memorable noche, y en el transcurrir de los años, he seguido —unas veces de cerca y otras no tanto— la trayectoria de este singular artista: sus numerosos y magistrales recitales, sus grabaciones, así como los grandes progresos realizados en su ya incansable labor investigadora en pro de muchos de los cantes andaluces que se habían perdido.\n\nRecordando mis afortunados encuentros con Mairena, quedó grabada en mi mente y, por qué no decirlo, en mi corazón, otra noche memorable al escucharle en Madrid en el Teatro de la Zarzuela, en el año 1970, con motivo del homenaje a Juan Talegas, en donde, nuevamente, volví a quedar convencido de su calidad de artista y de la gran realidad que atesoran, por su magisterio, cada.una de las interpretaciones de sus cantes.\n\nComo persona, y si en mi juicio anterior como artista no me dolieron prendas para decir la verdad, ahora, e introduciéndome en sus cualidades humanas, diré, con toda sinceridad, que es un hombre que atesora el don de la afición y un gran espíritu de progreso. Su manera de ser y su vocación de investigador le llevó, en múltiples ocasiones, a visitar los más alejados rincones y pueblos en donde podía encontrar a hombres y mujeres de avanzada edad y que en su haber albergaban el secreto de algunos de los cantes que él, más tarde, grabó para que existiera una continuidad en la Historia del Arte Flamenco. No me resistó a decir, aunque aquí no viene al caso —porque pecaría de inmodestia—, que esa gran labor que ha realizado este singular artista (incluidas las dificultades que ha encontrado en su camino —que no me son ajenas—), por el resurgir de muchos cantes perdidos y desconocidos para el aficionado, puede entrañar para algunos (y de hecho es así) una incredibilidad manifiesta... ¡Para mí no!\n\nPara finalizar, y como si de un pensamiento hecho realidad se trata-ra, asevero: que personas como Antonio Mairena, con un gran historial investigador y artístico —más que demostrado—, son los hombres que hacen falta y necesitan el mundo del flamenco. Y son necesarios para que nuestro arte siga latente con todos sus valores en nuestra maravillosa Cultura Popular.",
+    "title": "Antonio Mairena, cabal entre cabales",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 550,
+    "article_char_count_full": 3222,
+    "article_char_count_review": 3222,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-20-left-a-antonio-mairena",
+    "article_text_for_review": "ODA\n\nA ANTONIO MAIRENA\n\nPoema inédito de Ricardo Molina\n\nSe enredan en tu voz sombras de voces que fueron flor y luz de Andalucía y penas viejas que crecieron muertas y no murieron.\n\nRemontar no es posible el río oscuro hasta su pura y misteriosa fuente, cuando cruza el desierto. desolado del martinete.\n\nO ensimismado fluye por la inmensa selva sombría de las soleares, o se despeña desde abrupta cumbre de seguiriγas;\n\nporque en tu cante una canción de lágrimas y un imperio de luna se lamentan, allí donde alborea entre laureles, diosa, la debla.",
+    "title": "Oda a Antonio Mairena",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "20-20",
+    "page_number": 20,
+    "word_count": 95,
+    "article_char_count_full": 550,
+    "article_char_count_review": 550,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-20-right-escritos-de-a-mairena",
+    "article_text_for_review": "《ESCRITOS DE A. MAIRENA》\n\nN OS honramos presentando en este número monográfico dedicado al Maestro del Alcor, una serie de páginas, algunas de ellas inéditas, del propio Mairena, las que, sin duda alguna, serán excepcional complemento de este «extra» de «CANDIL».\n\nLa publicación de tan importantes textos cantaorísimos —de cuya selección y organización somos únicos responsables—, constituye para nosotros un homenaje al egregio cantaor y el rescate para la afición de una serie de páginas, muchas de ellas inéditas, dispersas en discos, conferencias, ensayos y artículos. Con su publicación, a la vez que creemos redondear la bibliografía maireniana, la más rica de la historia jonda, hemos intentado, en la medida que nos ha sido posible, ofrecer de modo ordenado los juicios de Antonio Mairena sobre el cante, aspectos autobiográficos, testimonios históricos, consideraciones específicas sobre cantes y, por último, algunas semblanzas de artistas fundamentales de nuestro arte. Una quincena de trabajos que se complementan armónicamente y que, a no dudarlo, aportan bastantes datos inéditos en la galanura, no exenta de cierto regusto literario y poético, de la pluma de Antonio Cruz, que sorprenderá gratamente a más de un lector.\n\nPor último, dos notas. Los trabajos que reproducimos son, de entre los que hemos tenido acceso, sólo una muestra de los numerosos escritos del cantaor sevillano, los que, para bien de la afición y de este arte andalucísimo, deberían ser rescatados en su totalidad publicándose. La última nota nos viene impuesta por el elemental respeto al autor: pese a alguna lógica reiteración, ya que no fueron concebidos para una publicación unitaria, damos los ensayos en su totalidad, tal y como fueron redactados por el gran cantaor hispalense.\n\nM. U. y F. V.",
+    "title": "«ESCRITOS DE A. MAIRENA»",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "20-21",
+    "page_number": 20,
+    "word_count": 280,
+    "article_char_count_full": 1787,
+    "article_char_count_review": 1787,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-21-right-por-que-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSin poner ni quitar nada en ningún sitio, sino con el limpio objetivo de poder sacar del confusionismo a una afición de este mal llamado Flamenco, y que creo que soy también uno de los envueltos en esta confusión, pero no convencido, supuesto que ya en el libro «Mundo y Forma del Flamenco» hicimos un fuerte intento don Ricardo Molina y un servidor, al tratar en sus páginas de clarificar un poco este tema y que en cierta manera mucho se ha conseguido, al poner la confusión a un lado y lo que a nuestra manera está bien claro, para poder hacer un tratado del Genérico Flamenco y Gitano Andaluz; o sea, tratar por separado estos dos matices de Arte. Al hacer una consulta con el Diccionario Español, nos encontramos con cuatro definiciones sobre la palabra Flamenco. La primera se expresa haciendo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grandes\"]\n\nlarificar un poco este tema y que en cierta manera mucho se ha conseguido, al poner la confusión a un lado y lo que a nuestra manera está bien claro, para poder hacer un tratado del Genérico Flamenco y Gitano Andaluz; o sea, tratar por separado estos dos matices de Arte. Al hacer una consulta con el Diccionario Español, nos encontramos con cuatro definiciones sobre la palabra Flamenco. La primera se expresa haciendo referencia al ave que ostenta grandes patas y que se cría en las lagunas de algunos países de Europa, ave bien conocida por todo el mundo y que sabemos que lleva este nombre, Flamenco. La segunda hace referencia a la lengua que hablan nada menos que cuatro millones de personas y que se trata de Flandes, en Bélgica, y que lleva por nombre la província flamenca, de la que se derivan una serie de artes como música, pintura, escultura y otras, además con lengua propia. Es de aquí de donde absurdamente parece que ha salido en cierta época este nombre para cubrir la autenticidad del patronazgo de Andalucía. Esto por un lado y, por otro, hacer desaparecer un nombre que trajo graves consecuencias para una raza, y que aún sigue coleando dicho problema. La tercera dice exactamente «Flamenco, pueblo germánico que en el siglo VI se estableció en la región de Flandes, donde habita, así como en la de Amberes y Limburgo (Flamenco)». Y la cuarta definición es la que verdaderamente afecta al tema, que nos estamos refiriendo, y dice así exactamente: «Flamenco, cante jondo, o cante hondo, canto popular, importado por los gitanos, que puede ir acompañado de guitarra, castañuelas, palillos, palmas, yunques, martinetes, crótalos, chinchines y bailes. De origen incierto, se conocen en él influencias griegas, árabes e indias, se caracteriza por las ricas improvisaciones vocálicas arrítmica sobre la cadencia dórica. Formas auténticas Tonás, Saetas, Carceleras, Siguiriyas y Soleares». En definitiva, de las cuatro definiciones, ésta es la única que hace referencia de lo que estamos tratando, de nuestro arte llamado Flamenco, y que no explica el por qué de este nombre a este arte. Y es en este punto donde\n\n[ENDING CONTEXT]\n\ncantes, bailes, religión y ritual, porque en contra de lo que una gran parte de los gitanos opinan, de que los gitanos no han aportado nada al llamado flamenco, hay que preguntarse ¿es que los gitanos, cuando entraron en España, venían ladrando como perros o con rebuznos como los burros?, ¿no trajeron, como todos los habitantes dé la Tierra, una forma de comunicación?, y si era así, ¿cómo los dejaron pasar sin entenderse con ellos, con lo precavidos que eran por aquel entonces los reyes de España?\n\nEsta teoría, como todas las racistas, se destruyó por sí misma, como todas las sin razones.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "¿Por qué flamenco?",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 1525,
+    "article_char_count_full": 8925,
+    "article_char_count_review": 3752,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grandes"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-22-right-un-cante-que-nunca-fue-popular",
+    "article_text_for_review": "A partir del asentamiento de aquel gran grupo de gitanos en aquel suburvio trianero, lo que les obligó a desplegar actividades diversas y, por añadidura, cumplir los deberes militares, así como hacerse cristianos, tomando el bautismo y nombre y apellidos casi siempre donados por la nobleza de la Tierra, a lo que aquel rey obligaba.\n\nAsí se fue formando en aquella margen del Guadalquivir una población gitana que, según el costumbrista Carlos Dembowski, polaco, antes de Estébanez Calderón, allí en la fiesta de Santiago y Santa Ana el número de los pobladores era mayor el de gitanos que el de no gitanos, por lo que ellos se dedicaban a la Masa Frita, al trato de ganado y cardería de cobre, así como más tarde fueron muchos forjadores de herraduras, clavos, etc.\n\nYa en esta época había alguna convivencia con la población castellana, pero muy poca y muy distante.\n\nPor todas estas motivaciones, desde que estos seres se asentaron en ese lugar Trianero en el siglo XV, hasta bien entrado el XIX, esta grey fue amasando de una forma subterránea y hermética a base de los problemas que les rodeaban por pura circunstancia, unas costumbres, una vida despejada del mundo al que no tenían acceso, una lengua, unos bailes y unos cantes para olvidar su tragedia y, cómo no, un ritual que aún perdura con todos sus ingredientes y aromas, lo que yo he llamado en esta época la razón incorpórea.\n\nAsí, cuando esta nebulosa tomó cuerpo sólido y vio la luz en el epicentro trianero, o bien el arte que ellos empezaron a dar a conocer y que era desconocido e incomprendido; a estos cantes no se les podía llamar más que cante gitano andaluz y baile gitano, fenómeno que por razón natural se produjo como un milagro en ese arrabal trianero, lo que luego había de servir de base para lo que hoy todavía se le está llamando la gran barbaridad de flamenco.\n\nEsperemos que algún día los muchos hombres de gran cultura que hoy han tomado el título de flamencólogos, tomen conciencia de este asunto y puedan poner las cosas en el sitio que les pertenece por el buen nombre de nuestra sin par Andalucía, dejando a los flamencos en Flandes, donde para nosotros, los españoles, no es un recuerdo muy agradable, supuesto que allí se nos puso el sol.\n\nVivimos en unos tiempos ambientados en el cante Flamenco o Jondo, como tal vez impropiamente se le viene llamando a un cante que tiene su verdadero nombre, que no suele dársele por razones absurdas a las que no es ajeno el confusionismo que en un lejano tiempo se sembró para beneficio de una gran farsa. Si a estos cantes y a su historia les damos un repaso, fácilmente nos daremos perfecta cuenta de cómo deben llamarse, sin eternos en profundidad y sin querer buscar innecesarias complicaciones a sus orígenes.\n\nBien sabido es de los intelectuales y de una buena parte de la juventud que se inquieta por estas cosas que los nombres de flamenco y jondo son relativamente nuevos y fueron creados precisamente en la época en que el cante verdaderamente popular, el andaluz, tomó contacto con el que no era popular, el cante de los gitanos andaluces, el Cante Gitano al que hubo que añadirle, razonablemente, lo de andaluz, por razón del peso e influencia de la geografía.\n\nSi retrocedemos en la historia a la década de los años treinta y cuarenta del siglo pasado y nos introducimos así en la época hermética de los gitanos, cuando no se habla-",
+    "title": "Un cante que nunca fue popular",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 593,
+    "article_char_count_full": 3376,
+    "article_char_count_review": 3376,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

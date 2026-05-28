@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1984-05-23-right-hablan-las-pe-as",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nI CONCURSO DE CANTE POR SOLEA DE ALCALA\n\nRGANIZADO por la Delegación de Cultura y el Aula Municipal de Flamencología «Joaquín el de la Paula» de ALCALA DE GUADAIRA (Sevilla). Ha sido convocado el I Concurso de Cante por Soleá de Alcalá para aficionados.\n\nDicho concurso estará dotado con un solo premio de 100.000 pesetas y Trofeo «Castillo de Alcalá». El plazo de inscripción finaliza el día 21 de Julio.\n\nTodos los aficionados que estén interesados en participar, deberán dirigirse al Aula de Flamencología «Joaquín el de la Paula», Delegación de Cultura del Ayuntamiento de Alcalá de Guadaira (Sevilla).\n\nNUEVA JUNTA DIRECTIVA DE LA FEDERACION PROVINCIAL DE PEÑAS FLAMENCAS DE SEVILLA\n\nN reunión extraordinaria de la Federación de Peñas Flamencas de la Provincia de Sevilla, celebrada en el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"Peña\"]\n\nscripción finaliza el día 21 de Julio. Todos los aficionados que estén interesados en participar, deberán dirigirse al Aula de Flamencología «Joaquín el de la Paula», Delegación de Cultura del Ayuntamiento de Alcalá de Guadaira (Sevilla). NUEVA JUNTA DIRECTIVA DE LA FEDERACION PROVINCIAL DE PEÑAS FLAMENCAS DE SEVILLA N reunión extraordinaria de la Federación de Peñas Flamencas de la Provincia de Sevilla, celebrada en el domicilio social de la Peña Flamenca «Pepe Mon-taraz», ha sido nombrada nueva Junta Directiva que quedó compuesta de la siguiente manera: Presidente: RICARDO RODRIGUEZ COSANO. Vicepresidente 1°: MANUEL HERRERA RODAS. Vicepresidente 2°: JUAN MENA DIAZ. Secretario: JUAN VELA INFANTE. Tesorero: JUAN GARCIA BODI. Vocales: JOSE HURTA-DO, JOSE CABELLO, PEDRO RODRIGUEZ, MANUEL MARISCAL y PEDRO ORTIZ. Asistió a esta Asamblea, como invitado, el Director del Departamento de Flamenco de la Junta de Andalucía, DON FRANCISCO VALLECILLO PECINO, quien cerró el acto animando a todas las peñas asistentes a realizar los objetivos marcados. Resaltando que todas las peticiones que cursen las peñas a su Departamento, serían canalizadas a través de sus respectivas Federaciones. Tambien, en esta Asamblea, quedaron marcados los nuevos objetivos a conseguir en esta nueva etapa de la Federación. VIII CONCURSO REGIONAL DE CANTE POR LIVIANAS P ATROCINADO por distintos organismos y firmas comerciales y organizado por la Peña Flamenca «Canalejas de Puerto Real», ha sido convocado el VIII Concurso Regional de Cante por Livianas, (cante propio de Puerto Real) el cual estará dotado de cuatro premios, siendo el primero de cincuenta mil pesetas y trofeo. La final de este concurso tendrá lugar el día 24 de Julio a las 10'30 de la noche en los locales de la citada Peña. Para todos aquellos aficionados que estén interesados en inscribirse, podrán di\n\n[ENDING CONTEXT]\n\nconvocado en su XXIV edición el ya tradicional Concurso de cante de las Minas, durante los días 16 al 18 de Agosto. Como prólogo del Concurso, el día 14 se celebrará una Gala Flamenca, en la que intervendrán: JOSE MENese, MIGUEL VARGAS, ENRIQUE MORENTE y RANCAPINO. Acompañados a la guitarra por: JUAN HABICHUELA y JOSE LUIS POSTIGO.\n\nPosteriormente, el día 16 y como Homenaje a Antonio Mairena, habrá otro recital flamenco a cargo de: JOSE DE LA TOMASA, acompañado a la sonanta por PEDRO PEÑA.\n\nLa Gran Final tendrá lugar el día 18.\n\nTejidos nuevos para tiempos nuevos\n\nCorrea Weglison, 9\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Hablan las peñas",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-24",
+    "page_number": 23,
+    "word_count": 1028,
+    "article_char_count_full": 6462,
+    "article_char_count_review": 3479,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "Peña"
+      }
+    ]
+  },
+  {
+    "article_id": "1984-05-25-left-buz-n-flamenco",
+    "article_text_for_review": "Estimados amigos:\n\nCon referencia al último número de CANDIL, quiero aclarar al señor Rodríguez Cosano en relación con su artículo «Bulerías de El Chozas», que el disco al que alude fue producido por mí para la firma Hispavox, sin que para nada interviniera Manuel Fernández Peña. Salió con la siguiente referencia HH 16-807. EL CHOZAS DE JE-REZ, Cantes personales: Bulerías, Jota por bulerías y soleares.\n\nComo información para los que quieran escuchar el arte del CHOZAR, los únicos cantes disponibles en el mercado sólo se encuentran en LA MAGNA ANTOLOGIA DEL FLAMENCO: Bulerías, Soleares y dos corridos.\n\nAprovechando esta nota y de acuerdo con Yerga y Antonio Escribano que se han ocupado del tema sobre aquellos cantaores que siendo payos pasan por gitanos, hoy traigo a relación simplemente el nombre significativo de tres: CARITO, Sebastián EL CHATO DE JEREZ y EL FLECHA DE CADIZ.\n\nAtentamente:\n\nJosé Blas Vega Señor Director de la REVISTA CANDIL.\n\nMe hago eco de la editorial de la revista y me propongo filtrar algunas ideas que tengo sobre la forma de otorgar la llave de oro del cante andaluz.\n\nPienso que la legitimidad la tenemos todos los que verdad amamos este arte, que por ser del pueblo es tan grande.\n\nHace falta la colaboración de todos los departamentos; pero sobre todo EL DEPARTAMENTO DE ACTIVIDADES FLAMENCAS DE LA JUNTA DE ANDALUCIA Y LA CATEDRA DE FLAMENCOLOGIA DE JEREZ, que ahora es cuando se necesita su esfuerzo y que se demuestre su razón de ser.\n\nEl procedimiento creo que tendría que ser por concurso, que es la única forma de seleccionar y elegir el merecedor de este galardón. No quiero pecar de fanático, al decir que la llave de oro del cante andaluz es el nobel de una CIENCIA, el máximo galardón que puede obtener una persona en su actividad y ese galardón debe recaer en una persona con mucha cualidades, que, aparte de cantar los cantes puros, sepa comportarse posteriormente con la dignidad que le corresponde al representante de la cultura de un pueblo, e imite al gran maestro en su RAZON INCORPOREA.\n\nPondría unas bases bastante lógicas que sería conocer y cantar bien los cantes, sobre todo los básicos y ponía un abanico de cantes bastante amplio, por ejemplo: TANGOS DEBLAS, TONA, MARTINETE, SOLEA, SIGURIYAS, CAVALES, SERRANAS, CAÑAS, POLOS¿Les parece mucho?, pues mucho más importante es el premio. Y por supuesto, los jueces deberían de ser los cantaores de mayor edad y reconocida tradición y honradez flamenca, y que sea responsabilidad de este colectivo la entrega del galardón, y sólo se les puede decir que tengan tan buen acierto como lo tuvieron sus antecesores.\n\nSalvador Castro\n\nPor: Manuel Yerga Lancharro\n\nMe permito cumplimentar su carta para ofrecerle los datos que me solicita. Perdone no lo haya hecho antes, la verdad es que no me ha sido posible.",
+    "title": "Buzón Flamenco",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 472,
+    "article_char_count_full": 2815,
+    "article_char_count_review": 2815,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-05-26-left-discograf-a-flamenca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTítulo: FANTASIA Canta: «EL CHOZAS» Tocan: MANOLO DOMINGUEZ Y MANOLO FRANCO. Referencia: BELTER 2-58.030. Barcelona 1984.\n\nV UELVE por sus fueros el cantaor de Sevilla. Qué lejano encontramos a este interprete con sus ejecuciones de mediados de los setenta. Qué lejanos aquellas soleares ajustadas al compás, con raíz y plenas de ortodoxia flamenca. ¡Pero que le vamos a hacer! La comercialidad, la difusión fácil y la popularidad mandan.\n\nAbre este «Fantasía» unas soleares trianeras apolás, intentando rememorar a «El Tenazas» y encontramos que «El Chozas» no tiene una voz adecuada para estas soleares. No por ello el cantaor sevillano deja de poner toda su alma en la ejecución. Continúa el disco con un acupletamiento de las bamberas y con entonaciones clásicas de este cantaor en sus últimos\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_04 | trigger=\"comerciales\"]\n\nlidad, la difusión fácil y la popularidad mandan. Abre este «Fantasía» unas soleares trianeras apolás, intentando rememorar a «El Tenazas» y encontramos que «El Chozas» no tiene una voz adecuada para estas soleares. No por ello el cantaor sevillano deja de poner toda su alma en la ejecución. Continúa el disco con un acupletamiento de las bamberas y con entonaciones clásicas de este cantaor en sus últimos tiempos. Entonaciones plenas de melismas comerciales con cierta desfiguración del estilo. Poco más podemos comentar de la siguiente grabación, tangos con aires de rumbas, con ecos más propios de grupos pseudo-flamencos y que se desarrollan con las mismas características que las bamberas, lo cual propicia una falta de coordinación con las guitarras. Mezcla de fandangos y granaína es la siguiente grabación, donde impera más —por no decir siempre— la granaína, con cierto recuerdo al jerezano José Cepero. Cierra esta cara otra grabación por tangos donde volvemos a escuchar la voz de «El Chozas» plena de ecos comerciales. Las dos grabaciones que abren la cara B mantienen las mismas constantes que las festeras de la cara primera, las dos son bulerías, sólo las guitarras mantienen el compás. En la rondeña y jabera encontramos a un «Chozas» más serio y mas conocedor de los estilos. No así en la grabación antecedente, unas ca\n\n[ENDING CONTEXT]\n\ndeja traslucir los cantes jerezanos, eso sí, adobados de solera, con la memoria de Manuel Torre presente. Y qué mejor broche para este disco, como es, la voz de Bernardo el de los Lobitos, ¿sencillez?, donde la haya; ¿conocimiento?, igualmente. Y sobre todo, ¡dulzura! Qué bien realizaba este cantaor los estilos y qué bien —en esta grabación— rememora la figura de «El Marruro», rematando con unas magníficas cabales.\n\nPara finalizar, de nuevo censurar a la casa grabadora por la omisión de los tocaores, ya que entendemos que son parte muy importante en el mundo del flamenco.\n\nJosé Cobo Marchal\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Discografía Flamenca",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-27",
+    "page_number": 26,
+    "word_count": 1205,
+    "article_char_count_full": 7459,
+    "article_char_count_review": 2968,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_04",
+        "family": "AUTH",
+        "trigger": "comerciales"
+      }
+    ]
+  },
+  {
+    "article_id": "1984-05-27-right-discograf-a-de-artistas-flamenco",
+    "article_text_for_review": "Por: Manuel Yerga Lancharro\n\nEn todas sus grabaciones le acompañó a la guitarra «Juaquiniyo» el hijo del Ciego. (Joaquín Rodríguez).\n\nJosé Muñoz «Pena Hijo», el rey de las malagueñas",
+    "title": "Discografía de artistas flamencos",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-28",
+    "page_number": 27,
+    "word_count": 29,
+    "article_char_count_full": 182,
+    "article_char_count_review": 182,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-07-3-right-editorial-escolarizar-el-flamenc",
+    "article_text_for_review": "AY que escolarizar el flamenco. Y en ese ambicioso proyecto estamos comprometidos muchos. También las Instituciones, sensibilizadas al fin, a cuanto redunde en la profundización de la «cultura jonda». Sabemos que el desarrollo y cristalización de este proyecto, no está ento de tremendas dificultades de muy compleja naturaleza. Por eso, nuestra reiterada llamada a la Institución andaluzas representativa —la Junta— para que coordié este esfuerzo, lo plasme en realidades, con planteamientos rigurosos, incentivadores que se alejen tanto de una conceptuación academicista del flamenco, como de la lectura frívola de quienes sólo captan —y mal— la superficie de este hermoso arte.\n\nAlgunas experiencias puestas en práctica por personas o colectivos, plenos de generosas intenciones, no acertaron, a nuestro juicio, a centrar el tema. Escolarizar el Flamenco no debe significar como objetivo único y ni siquiera primordial, la formación de nuevas generaciones de artistas flamencos, instrumentalizada mediante una imposible enseñanza mecánica del cante. En tal sentido, no es concebible una escuela del cante, a la manera en que se ha planteado la Escuela de Toreros. Y si en el supuesto del baile y del toque podía admitirse con reservas un curso de iniciación técnica, en el caso del cante, tal proyecto no sólo resultaría inviable sino carente de eficacia y perturbador para enseñantes y escolares. Y sentada esta precisión, estimamos necesario preguntarnos por el sentido que hay que atribuir a la «Escolarización del Flamenco».\n\nUn curso de flamenco en los niveles básicos de enseñanza halla su más lógica justificación en el carácter cultural —genuinamente andaluz— de la expresión «jonda». Y no reiteraremos las reflexiones contenidas en un largo artículo publicado en esta Revista sobre el papel esencialísimo del flamenco en la recuperación de la cultura andaluza. Nuestros escolares deben conocer este hermoso patrimonio, de manera que se genere en ellos un concepto exacto de lo jondo, de su tremenda dimensión espiritual, tan lejano del sello prostibulario que varias generaciones le han improntado. La forma de instrumentar este conocimiento —equilibrio entre clases teóricas y audiciones— entraña no pocas dificultades que nuestros enseñantes, debidamente sensibilizados no du-damos sabrán superar.",
+    "title": "EDITORIAL Escolarizar el flamenco",
+    "periodical": "candil",
+    "issue_id": "1984-07",
+    "year": 1984,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 345,
+    "article_char_count_full": 2311,
+    "article_char_count_review": 2311,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

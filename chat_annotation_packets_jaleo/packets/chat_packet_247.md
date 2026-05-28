@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A14",
+    "article_text_for_review": "[from: Correo De Andelucía, April 6, 1986; sent and translated by The Shah of Iran] Very rarely does one attend a night of flamenco such as the one celebrated last Saturday (May 31, 1986) in the beautiful French locality of Dioron, France. Organized by the local radio station, under the artistic direction and presentation of Santi Romates, the evening in the \"Sala Pelas\" can be termed glorious in terms of art, and melodic in terms of organization. Two cantaores, one cantaora, two bailaoras, two guitarists and 4 hours of duration provided the ingredients of success.",
+    "title": "FLAMENCO IN GAUL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "33",
+    "page_number": 33,
+    "word_count": 95,
+    "article_char_count_full": 571,
+    "article_char_count_review": 571,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A15",
+    "article_text_for_review": "In cante: Fosforito who substituted for El Cabrero, who was indisposed, José el de la Tomasa, and Aurora Vargas. In baile: Carmen Ledesma and Meme Reina, accompanied by the cantaor Jarillo and cantaora Juana Reina. In toque: José Luis Postigo and Manolo Domínguez. Great sound and lighting system, simple and effective staging and the presence of more than a thousand spectators. With enthusiastic applause they received the sounds of the bulerfas with which Domfnguez and Postigo opened the evening. After this beautiful opening, Domfnguez outdid himself in a rich and beautiful toque for granafnas. Following him came the cante from the lips of El de la Tomasa, accompanied by Postigo. Not even the exhaustion of having just arrived from Vienna after 20 days of singing in the Lorquian \"Bodas de Sangre,\" could diminish the excellence of this Sevillian cantaor. What good taste, beloved reader, por soleé, por cantinas and por fandangos del de la Carsá! From that moment on we had a hunch the evening was going to take the high road of great art, and so it was. Then came the temperament, the boldness, and the pure plaintive voice of Aurora Vargas. Aurora liberally tamped the powder and lit the fuse with alegrías de Pastora, bamberas and bulerfas and was required to repeat this number by the audience on their feet who would not allow her to go to her dressing room. On top of such a great act came the baile, With the cantes of Jarillo and Reina and the guitar of Domfnguez, Meme Reina danced por soleá with the most authentic stamp of the old Sevillean school, reaching the sublime limits of her art. Next, Carmen Ledesma with the guitar of Postigo made the alegrías her own, full of delicious good taste. Finally, they danced por bulerías with the enthusiastic audience keeping compás with palmas and by looks and gestures. . Fosforito in full control of his faculties, put the final touches on this first half of the spectacle, possessed by the perfection of the guitar of Manuel Domfnguez. Giving everything he had, enthusiastic and clear of voice, he sang por cantinas, tientos and tangos, taranto and fandango, galvinizing the fans with the excellent spread of his cantes. In the bull-sessions of the hallways and lounges all were exclaiming over the great night of art they were living. Here we pause to discount the notion that the French audience would understand little or nothing of the cante. In Oloron the public is critical, appreciates and understands. It's not in vain that Santi Romates has his numerous flamenco audience trained to distinguish the wheat from the chaff and what's pure from what's not. If the popular saying has it that the second half is never as good as the first, this refrain is out of order. What a second half, beloved readers! What communion between artists and the recipients of the art! What immense joy upon the countenances of the beholders. Paco de Marbella, and Andalusian who settled twenty years ago in Oloron, opened this session with the guitar of Postigo,",
+    "title": "NOTES FROM MADRID",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "34",
+    "page_number": 34,
+    "word_count": 513,
+    "article_char_count_full": 3014,
+    "article_char_count_review": 3014,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A16",
+    "article_text_for_review": "clay from Triana and the Giraldillo in bronze and the whole team from the Royal Betis Soccer Club (the Seville soccer squad)...Santi wept, we and the artists as well, and for this reason this guitars struck up again and the cante por bulerfas was made king, and the dance... And the audience, number one that beautiful, incredible night would not come down from their high enthusiasm. (And in the words that close many a good tale: \"Colorín, colorao, Este cuento Se ha acabado!\" -The Shah [from: ABC, June 3, 1986; sent by The Shah] by J.L. Monloya The cantaor Juan Peña \"El Lebrijano\", and guitarist-composer Paco Cepero, along with a common friend Julio Alavrez, are going into business in Madrid. There was a time in which the artists from this land went to the capital to work, to build up some following, but it seems that time has changed and now investment is made backwards, with an attempt to conquer the forum not with art, but with finances. Paco himself explained: \"It's a night club in the \"rociero\" style in which the decoration imitates the hermitage. There will be both group acts and individual performers.\" --Did it cost you all much? \"Well, as yet, we haven't made the final reckoning, but yes, it will be a considerable amount, since we stinted on nothing.\" \"We have named it 'Al-Andaluz' and it is located on the street Capitán Maya. It opens the first week of June.\" --What else have you been up to Paco? \"I have just finished a record with Rocfo Jurado and most of this summer, at least July and August, I shall be working with the Mexican singer José José. Regrettably, I shall miss going to the flamenco festivals. Madrid is Madrid, but I still enjoy shooting down to my land once in a while.\" JUAN PEÑA \"EL LEBRIJANO\" AND PACO CEPERO [from: ABC, June 3, 1986; sent by The Shah] by J.L. Montoya Since I wrote a few lines above on a guitarist, Paco Cepero, I shall now continue with another, and afterwards with yet another, since once I get on the subject of six strings, we might as well add a tail to the comet. The second we shall discuss is Rafael Riqueni, a trianero [person from the Triana neighborhood of Sevilla]. I was chatting with him this past Sunday just hours before he was to climb into an aluminum bird which would carry him to nordic lands, where, as a guest of the Spanish Ministry of Foreign Affairs, he will give a series of recitals.",
+    "title": "NOTES FROM THE FAR NORTH",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "34-35",
+    "page_number": 34,
+    "word_count": 429,
+    "article_char_count_full": 2379,
+    "article_char_count_review": 2379,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A17",
+    "article_text_for_review": "[from: El Pais, May 16, 1986; sent and translated by The Shah of Iran] Enrique Morente, cantaor from Granada, 42 years of age, always carries something of a scandal with him, for better or worse. He now confronts a new and delicate experiment, something which to date has not been attempted so far as we know. Of course there have been concerts of \"serious\" music with vignettes of cante flamenco. But here, the attempt is made to meld the cante and classical music into complete homogeneity. This evening in the Royal Theatre, Enrique Morente will sing flamenco accompanied by two guitarists, some palmeros and the 60 musicians of the Symphonic Orchestra of Madrid, directed by Luis Izquierdo. The composer and arranger of the orchestral scores for this concert is Antonio Robledo. The work is entitled \"Fantasia de Cante Jondo Para Voz y Orquesta.\" \"What is this?\" someone asked the cantaor. The cantaor reflected a moment, then replied, \"Well, it's a work for flamenco voice and orchestra, with the music composed and arranged by Antonio Robledo, a great composer and a man who is concerned with Spanish music, and with whom for the first time in history, I believe, a cantaor has joined forces and helped compose music with a classical musician and concert pianist...\" Enrique Morente speaks carefully, choosing his words well as if he were on the very razor's edge of his thoughts discovering the \"Fantasfa de Cante Jondo\" for himself, then concludes, \"Well, on the eve of the debut it is a bit difficult to explain and define clearly what we have done. I will understand it more clearly when we perform it.\" I asked him to explain the actual creative process they used in this collaboration, and Morente explains. The proposal of the cantes is his, but Robledo doesn't just limit himself to making a musical arrangement of them or an illustration, but has made an authentic composition in each case. \"He didn't make an arrangement for each theme or each cante, but rather he made entirely new compositions for each of the cantes I offered him.\" From which I understood—and I hope I am not sticking my neck out, since it is well known that anything can happen in an innovation—that the cante jondo is merely a base of departure... The flamenco guitar has a place in this concert but not in the way one would expect because, as Morente explains, he does not wish to do what a cantaor and a guitarist normally do when they go out on a stage or a tablao to perform. We are contemplating an entirely different experience that will confront Enrique Morente. \"What will the orthodox flamencos, the purists say?\" I ask the cantaor. And the cantaor doesn't have to contemplate his answer very long, \"Good grief! I understand that such things at first glance seem important and that I am a traditionalist at heart, a lover of tradition, and thus I usually am surprised when I see things out of place, because I love the roots and origins (of flamenco). I know there are going to be people who are surprised, but if a work of art is well-executed, or at least is well-meant, that's all that really counts.\" Of course, he hadn't answered my question. I called this to his attention and he broke out laughing when I repeated the question verbatim. \"Oh well, I think they will say I am crazy, and I understand. They are pretty much right--I am.\" Why would an artist such as Enrique Morente, who could be comfortably installed in a position earned by many years of effort, chase after something new? The cantaor is completely convinced it has something to do with destiny. \"My mind doesn't allow me to be at ease and to repeat myself much; each of my performances is different....on account of my set of mind. That's how I am. And therefore, I like adventure, and I like risk. Without them I wouldn't know how to live. Many times I pay a heavy price, but other times I receive beautiful rewards.\" Certainly the artistic credo of Enrique Morente can be summed up in few words: \"Purity must be preserved, but sometimes things must be stirred up in order not to stagnate and also in order to know what not to do in case things don't turn out right.\" New and unpublished things can be injected into flamenco without betraying the essence of true flamenco. If it is done with art, and talent, with sincerity and without vanity, Morente believes that the innovations are positive and true. JALEO - VOLUME IX, No. 2 ENRIQUE MORENTE IN REHEARSAL The cantator recognizes that what has been done in recent years and continues to be done and accorded the hallmark flamenco \"renovation\" has had the possibility of commercial exploitation and many times has misled the public, but that this is bound to happen in all the arts. But there are important things, new expressions, the will to continue (and this is very important in flamenco), and new sounds to allow us to continue.",
+    "title": "ENRIQUE MORENTE WITH SYMPHONY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "36",
+    "page_number": 36,
+    "word_count": 851,
+    "article_char_count_full": 4856,
+    "article_char_count_review": 4856,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A18",
+    "article_text_for_review": "\"Pala Negra, por bulerías and blues, and iconoclasic and unpredictable group.\" [from: El Pais, June 6, 1986; sent and translated by The Shah of Iran] by Nacho Saénz de Tejada Performances by one of the most interesting, anarchic, open, unpredictable and flamenco of groups, \"Pala Negra,\" are not extravagant. With varying orchestrations throughout their long and uneven rise, the backbone of this group has been Raimundo and Rafael Amador, gypsies of Sevilla who add or subtract musicians of differing types, according to the needs and desires of the moment. For this reason, each performance is unexpected and anything can happen. When they had not yet reached 15 years of age, brothers Raimundo and Rafael Amador began working with the Montoya family in one of their most emotional performances of flamenco, outstanding for its authenticity. Prodigious guitarists, with innate technical abilities, especially Raimundo, they can be included in the new generation of gypsies who do not adhere strictly to the canons of orthodox flamenco, for which reason they are always surrounded by controversy. This openness has permitted them to collaborate with Camarón de la Isla, Toti Soler, Rafael Riqueni, Radio Futura and, most significantly, Kiko Veneno--with whom they cut their first record. Introduced to the electric guitar, and therefore to rock, their gypsy roots have been influenced by this music. Their guitar improvisations have attained an unsurpassable level by mixing gypsy \"hondura\" with rock phrasing. They can be heard on their two LP's, now augmented by the mini-LP \"Guitarras Callejeras\" in which they have put aside their flourishes",
+    "title": "UNIVERSAL GYPSIES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1986_SUMMER",
+    "year": 1986,
+    "language": "en",
+    "article_type": "other",
+    "pages": "36",
+    "page_number": 36,
+    "word_count": 257,
+    "article_char_count_full": 1646,
+    "article_char_count_review": 1646,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

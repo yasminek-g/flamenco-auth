@@ -1,0 +1,203 @@
+[
+  {
+    "article_id": "1979-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "el cante jondo se le expropia al pueblo andaluz y queda trivializado como folklore oficial del estado",
+        "target": "cante jondo as official state folklore",
+        "rationale": "Commercial/public diffusion and official folklorization are framed as removing cante jondo from its Andalusian social base and weakening its authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "al difuminarse, como folklore oficial del estado, el cante tiene que ensanchar sus contenidos... En definitiva, falsearse",
+        "target": "expanded officialized cante",
+        "rationale": "The passage draws a boundary between legitimate cante and a diluted, falsified form produced by official folklorization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "mientras fue expresión de la etnia andaluza, mantuvo su riqueza de comunicación, su profundidad, su belleza intrínseca",
+        "target": "cante as expression of the Andalusian people",
+        "rationale": "The text grounds cante's value in Andalusian collective identity and contrasts that identity with state appropriation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_01",
+        "reason": "The article strongly criticizes fandango, cuplé, and vulgar representations, but the main discourse function is better captured by authenticity boundary-work."
+      },
+      {
+        "code": "AUTH_03",
+        "reason": "The final call to retake the old situation suggests continuity, but the evidence is less distinct than the anti-commercial and identity claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "cante jondo rooted in Andalusian people versus officialized folklore",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1979-09-4-right-de-los-caf-s-cantantes-al-festiv",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Los cafés-cantantes plantean el flamenco como espectáculo, como oficio... cante sometido a la mecánica de puntuales realizaciones, sin inspiración",
+        "target": "cafés cantantes and staged flamenco",
+        "rationale": "The text treats spectacularization, professional scheduling, and public performance as forces that damage the inspiration and authenticity of cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "cante que ha de ser dicho, por primera vez, para otros, antes que para uno mismo",
+        "target": "cante performed for spectators rather than oneself",
+        "rationale": "The passage contrasts private/self-directed cante with public/spectatorial cante and makes that setting difference evaluative."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "las Peñas Flamencas pueden desarrollar... fomentan la reunión íntima, cabal de esos mismos profesionales",
+        "target": "Peñas Flamencas",
+        "rationale": "Peñas are positioned as community institutions able to sustain a more cabal and intimate form of flamenco practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_04",
+        "reason": "The text invokes Machado Alvarez and disagrees with Ricardo Molina, but the excerpt's strongest function is authenticity and setting critique rather than expert authority itself."
+      },
+      {
+        "code": "CRIT_02",
+        "reason": "Terms such as duende, frescura, and profundidad appear as aesthetic criteria, but they support the main authenticity argument rather than a separate evaluative code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "intimate peña-based cante versus café/festival spectacle",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1979-09-5-right-para-una-sociolog-a-de-las-taran",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "conviven letras reaccionarias, obscenamente compuestas para halagar a un público... junto a otras nacidas en la calle... de decidido mal gusto",
+        "target": "flamenco lyrics from the historical period",
+        "rationale": "The author explicitly evaluates different kinds of letras, condemning some as reactionary and obscene and others as politically motivated but aesthetically poor."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "también nace como desgarro y expresión de una situación socio-laboral... a partir de 1854 el proletariado andaluz irá tomando conciencia de clase",
+        "target": "flamenco as expression of Andalusian socio-labor and class conditions",
+        "rationale": "The passage frames flamenco through class and regional social identity, linking cante to Andalusian labor conditions and proletarian consciousness."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "AUTH_04",
+        "reason": "The excerpt mentions product of consumption and loss of interiority, but the author explicitly brackets greatness or agony and does not develop a clear authenticity claim in the visible text."
+      },
+      {
+        "code": "CRIT_03",
+        "reason": "The phrase 'Epoca de oro del cante' appears as an attributed view by others, but the author does not clearly endorse a canon or hierarchy in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "historical cante and letras in relation to class and labor conditions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough evaluative and identity-framing discourse to code conservatively."
+  },
+  {
+    "article_id": "1979-09-7-right-la-taranta",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_02",
+        "reason": "The poem uses charged aesthetic imagery around taranta and mining, but it does not clearly define evaluative criteria or authorize a flamenco discourse function."
+      },
+      {
+        "code": "COMM_04",
+        "reason": "The mine and human condition are evoked, but no clear identity group is made authoritative in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic evocation without a clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse function."
+  },
+  {
+    "article_id": "1979-09-8-right-alusiones-gitanas-en-la-literatu",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "code": "COMM_04",
+        "reason": "The visible text contains strong ethnic and gendered framing of gitanos, but it is presented as literary/historical citation about gitanos rather than a clear flamenco discourse claim."
+      },
+      {
+        "code": "PED_02",
+        "reason": "The phrase 'generación tras generación, transmitidas por vía oral' describes transmission of fortune-telling recipes, not flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt discusses literary allusions and stereotypes about gitanos; without inferring from metadata, it does not clearly code as flamenco discourse."
+  }
+]

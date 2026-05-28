@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1981-09-14-right-con-la-voz-de-terremoto-de-jerez",
+    "article_text_for_review": "Pudo ser o no ser, no da lo mismo, un hombre atrás, sin horizonte, mano sobre mano, putrificado, quise decir y sin cintura, inmóvil, quieto, quizás hasta profundo porque muerto, u otro enfrente, dolido el gesto, fiero el gesto y la mirada, en pie, de fiera, la mirada solar de cicatrices, mirada ignivomo lobaro semper.\n\nPudo ser y se fue que se rebeló un hombre, un Dios para entendernos, sólo como un siglo milenio tras milenio, pero llegará el mar que no viajero, que como ritmo en olas y empellones, veraz y eterno como un pueblo, como un pueblo que respira como un pueblo ignívomo lobaro santo semper\n\nIgnívomo el dolor el pueblo late, volcánico el latido, el pueblo avanza.\n\nSemper lobaro el grito avanza el pueblo, orillando de aromas el recuerdo, avanza caudaloso como un río ignívomo lobaro unido semper entre espinos que arrasa con su espuma.\n\nJosé Heredia Maya",
+    "title": "Con la voz de Terremoto de Jerez",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 151,
+    "article_char_count_full": 871,
+    "article_char_count_review": 871,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-09-15-right-el-arte-de-terremoto-de-jerez",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Agustín Gómez\n\nC ON Terremoto se nos ha ido, ante todo, uno de los pocos cantaores vitalistas que nos iban quedando, una fuerza expresiva y comunicativa que radicaba en un principio vital más allá de lo puramente físico —y no digo químico porque, siendo de Jerez, la simple duda ofendería—, una fuerza que, si conocida, es inexplicable por mucho que la hayamos disfrutado, y hasta compartido, gracias a su entrega, a su generosidad, en nuestra calidad de espectadores.\n\nA Terremoto de Jerez no se podía —así, en pasado— explicar, como no se puede explicar el duende aunque todos hablemos de él; mucho menos se puede explicar ahora que ya nunca podrá ser presente, de la misma manera que nunca se pudo explicar, ni se podrá, a su paisano Manuel Torre, como a otros cantaores vitalistas. No\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionados\"]\n\ndad de espectadores. A Terremoto de Jerez no se podía —así, en pasado— explicar, como no se puede explicar el duende aunque todos hablemos de él; mucho menos se puede explicar ahora que ya nunca podrá ser presente, de la misma manera que nunca se pudo explicar, ni se podrá, a su paisano Manuel Torre, como a otros cantaores vitalistas. No obstante seguiremos con aquella emoción que nos dejó imborrable ya para siempre en nuestro espíritu y ser de aficionados, esto es, de hombres en su sintonía de emociones. No llegamos a tiempo de sintonizar con Manuel Torre, pero sí fuimos afortunados con Terremoto de Jerez. Y que conste que si hacemos la asociación no es en ningún modo por el paisanaje entre ellos ni porque fueran las suyas semejantes vibraciones vitales. La vibración vital de los vitalistas —valga le redundancia— es siempre única e intransferible. Hacemos esta asociación porque Terremoto de Jerez será otro cantar, como Manuel Torre, del que todos hablaremos en el futuro sin que podamos explicarle, ni siquiera testificarle con documentación suficiente. Y tiene buenas grabaciones Terremoto de Jerez, grabaciones que pueden de manera objetiva y sin la pasión que ejerce una sensibilización especial, competir entre las mejores que ha dado nuestra época. Pero Terremoto de Jerez era algo más, en su comunicación directa, otra vez; en su vitalismo. Cuando nos pasamos toda la vida midiendo el cante; en su línea melódica, en sus compases y ritmos, en sus cadencias y variaciones, antecedentes y consecuentes; haciendo cábalas entre lo posible y lo no posible, venía de pronto un burujón —porque lo de Terremoto eran burujones de cante— de su voz y nos sacudía de tal manera q\n\n[ENDING CONTEXT]\n\nnor de su sensibilidad, unas formas o una materialización deleznable de su cante. Nada de eso. El que la forma sea lo menos interesante en su caso, ya que tiene un contenido riquísimo, no quierre decir que por sí sola sea despreciable. El cante de Terremoto, en ese aspecto formal, es hasta más inteligible que muchos de los que sólo tienen forma, que muchos de los que sólo disponen de dialéctica. Terremoto de Jerez jamás trató de explicar su arte porque se explica por sí solo, porque acaso llegó como él solo al fin último del arte: la comunicación por sí mismo, sin explicaciones adicionales.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El arte de Terremoto de Jerez",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 1097,
+    "article_char_count_full": 6592,
+    "article_char_count_review": 3313,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionados"
+      }
+    ]
+  },
+  {
+    "article_id": "1981-09-16-right-carta-abierta-a-curro-terremoto-",
+    "article_text_for_review": "Estimado Francisco:\n\nHace unos días me encargó «Candil» que escribiera algo sobre Fernando, el otro Terremoto y, la verdad, acepté con la alegría de poder contribuir, de alguna manera, al gran homenaje que la afición flamenca de España le está tributando después de su muerte. Posteriormente, pensándolo bién, me acordé. ¿Qué puedo decir de su cante, de su duende, de su voz, de todo ese arte que encerraba en el cuerpo? Sinceramente, existen personas más documentadas que yo para escribir sobre eso. Y no es falsa modestia, es una verdad como una casa. Cierto, que le escuché tantas veces que no puedo recordar su número; pero no es menos cierto que siempre me puso la carne de gallina, y que fueron numerosas las ocasiones en que lloré al sentir sus cantes por soleá y por siguiriyas, con el compás que le daba la guitarra del Morao y que él tenía inmenso en su corazón jondísimo. ¿Pero quién soy yo para efectuar una valoración de sus cantes? Prefiero hablar de los días vividos con él y contigo en los días en los que frecuentaba nuestra Peña, de las pequeñas anécdotas que le ocurrieron en Jaén; así, creo, puedo valorar al hombre —algo insustituible— que era capaz de hacer llorar a quien le escuchaba cuando cantaba.\n\nRecuerdas el día que comimos juntos y que, al pedir el menú, advirtió al camarero que su «comía» no tuviera «pique», porque quería tener la garganta clara para poder cantar bien aquella noche que, por cierto, armó el taco. Por cierto, antes de su actuación yo tenía miedo porque el ambiente de una caseta de feria no era el más propicio para él por el silencio que exigía; pero, como recuerdas, los duendes lo consiguieron, su sólo presencia en el escenario detuvo hasta el vuelo de las moscas «pa» no meter ruido.\n\nY de aquel taco bien cortado de mojama que le dí, porque decía que hacía buena voz, y que, al estar perfectamente liado en un papel de seda parafinado, lo confundió y te dijo: «Mira Curro, que transistor me ha dao Pepe».\n\nY cómo acariciaba al animal la noche del gallo, era como un chiquillo con su juguete preferido. De madrugada, cuando el gallo comenzó a cantar en el hotel, despertó y te dijo: «Curro ¿es que estamos en un cortijo?»... y los camareros buscando y buscando el gallo que estaba en un caja de zapatos. Y de vuelta ya a Jerez, en la taberna de Andújar, cuando pidió trigo «pal» gallo, porque también tenía derecho a comer el pobre animalito.\n\nFoto Gerardo - Jerez\n\nTambién recuerdo aquello que me contaras, de que tuviste que llevarle el compás en los cantes por cañas cuando grabó su último disco.\n\nSabes que colecciono objetos personales de artistas flamencos, precisamente tu me regalaste una camisa, por cierto, muy gitana; también él, una noche después de cantar, me regaló un pañuelo de cuello que conservo con verdadera veneración.\n\nCuántas cosas más podría contarte; más, muchas más, conoces tú. Pero, Curro, no quiero entristecerte, sé lo que le querías y me imagino lo que para tí ha supuesto su muerte. Cuando estés sereno escúchalo en esa inmensa discografía que nos ha dejado, cierra los ojos, y el sonío grande de su voz te hará sentir de nuevo su presencia, sobre todo, cuando diga eso de «mamaita Luisa», vuestra madre, a la que ya «ve» de verdad, porque estoy seguro que está a la vera de ella.\n\nUn fuerte abrazo de tu buen amigo,\n\nPepe Cruz",
+    "title": "Carta abierta a Curro Terremoto, mi amigo",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 586,
+    "article_char_count_full": 3315,
+    "article_char_count_review": 3315,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-09-17-left-ante-por-y-sobre-su",
+    "article_text_for_review": "La discografía es, lógicamente, una proyección del artista que, en afortunada o desafortunada actuación, deja, mediante la técnica, constancia de su arte con una doble finalidad: hacer llegar el cante a un mayor número de aficionados y, por otra parte, como documento sonoro que sirva para estudio de los interesados en el tema, en este caso, el flamenco.\n\nTERREMOTO DE JEREZ -el ay del cante se nos fue - se prodigó poco en el mundo del disco. Y era lógico en una personalidad como la suya. No era Terremoto hombre de esquemas, de ortodoxa mecánica. Me imagino las dificultades del gran cantar desaparecido, para tener que entrar en ambiente, en la frialdad de un estudio de grabaciones. Libre en su decir era fiel exponente del cante-expresión no sujeto a rígidas normas estilísticas.\n\nPhilips, Hispavox y Ariola son las casas disco-gráficas que guardan su voz. A la hora de hacer un somero repaso a lo grabado, cabe señalar que es un reflejo de sus actuaciones. Así, su profesi-nalidad, en ocasiones irregular, producto, qué duda cabe, de un raro-rebelde-peculiar ser, también aparece en los discos. Dentro de una verdad indiscutible: la raíz gitana de su cante, Terremoto ha dejado, discográficamente, firmes muestras de su arte. No nos gustaría especificar, porque en el cantaor de Jerez hay que hablar de un todo. No de partes. Había, hay, una forma de sentir y expresar el cante.\n\nManuel Ríos Ríuz.\n\nCiertamente existen unos cantes inscritos con más fuerza en su geografía cantaora: bulerías, soleares, siguiriyas, fandangos, dando a todos ellos los especiales acentos de su Jerez natal.\n\nEn su voz - el mundo se le quedaba chico para su grito dionisíaco, escribió Juan de la Plata - los estilos tenían un sonido distinto, un eco patético. En Terremoto el arte jondo poseía uno de sus más genuinos intérpretes. Porque en él todo brotaba, de forma natural, de ese manantial que es la vieja cultura enraizada en el pueblo andaluz. Su quejio-música era de una estremecedora belleza. Si alguna vez el dolor ha sido bello, era cuando Terremoto cantaba. Como contrapunto, la gracia en él eran sobresaltos de alegría en un compás-tiempo por bulerías de inenarrable poder comunicativo. Rara pureza no aprendida, sí vivida.\n\nPor supuesto, significar que su discografía es necesaria para quien quiera adentrarse en los claros-oscuros-simbólicos-desnudos caminos del cante, no trazados ni perfilados por intelectual alguno, sólo si cabe, descritos en ocasiones. Caminos labrados por un pueblo, golpe a golpe, en su andar por la historia y la vida.\n\nPodríamos seguir escribiendo - hablando - del cante de Terremoto pero, el mejor homenaje que se le puede hacer ahora, es acercarse a su discografía y entrar en trance, juntos, escuchándolo por siguiriγas, para luego recuperar el aliento por bulerías. Porque su voz era el grito de lo trascendente.\n\nJuan Antonio Ibáñez",
+    "title": "Ante, por y sobre su discografía",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 468,
+    "article_char_count_full": 2863,
+    "article_char_count_review": 2863,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-09-18-right-ellos-los-protagonistas-luis-de-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n—Luis, ¿cómo es tu cante, de dónde viene, cuáles son sus raíces?\n\n—Mi cante es como el de todo el mundo, una expresión, necesidad de manifestarse; es una cosa que, en un momento determinado, te surge porque has oído a alguien o algo que te ha gustado, entonces te sientes identificado. Al principio imitas lo que has escuchado porque te gusta; después, vas teniendo tus propias ideas; luego, cribas todo lo que has escuchado para quedar con lo que mejor va con tu forma de ser y de pensar. Así lo creo yo e imagino que todos los cantaores, por supuesto a fuerza de tiempo que es lo que hace la solera, la personalidad; pero es necesario tener inquietud y ganas.\n\n—El flamenco es una cadena, una sucesión de magisterios, ¿quiénes han sido tus maestros?\n\n—Indudablemente, esto es una tradición. Como\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\ns todo lo que has escuchado para quedar con lo que mejor va con tu forma de ser y de pensar. Así lo creo yo e imagino que todos los cantaores, por supuesto a fuerza de tiempo que es lo que hace la solera, la personalidad; pero es necesario tener inquietud y ganas. —El flamenco es una cadena, una sucesión de magisterios, ¿quiénes han sido tus maestros? —Indudablemente, esto es una tradición. Como te he dicho antes, comienzas cantando lo que has escuchado y lo que te gusta; por eso te digo que unos cantes prevalecen más que otros. Unos se olvidan y otros siguen. Los que siguen son los cantes que más le gustan a la gente y a los cantaores, de aquí que los interpreten. Lógicamente esos cantes los has aprendido de alguien, si quieres, bueno, lo llamas maestro. En mi caso concreto he de decir que he aprendido de todo el mundo, a mí me han empezado gustando todos, hasta los actuales: Fosforito, Mairena, Camarón... Yo he tenido que sentir lo que suena en mi época —perdona, pero soy relativamente joven—, primero, en la radio; luego, cuando te vas metien-do en el mundillo, comienzas a escuchar a aficio-nados y vas creando dentro de tí mismo una se-lección lo más pura y auténtica de todo lo que has escuchado. Por último, te preguntas, ¿dónde tengo que buscar la autenticidad? Y ves claro que en los anteriores a estos cantaores que te he dicho, ya que ellos lo aprendieron de otros: Chacón, Manuel Torre, Cayetano Muriel... Ah, también hay una serie de aficionados sin mucho renombre pero con gran personalidad y, a veces, de ellos coges algo. Lo que está claro, por lo menos\n\n[ENDING CONTEXT]\n\n¡Y no se deben mezclar!\n\n—¿Por qué cantas, porque te sientes flamen- co o para comunicarte con los públicos?\n\n—Yo canto fundamentalmente porque me gusta y nunca me he preguntado por qué circunstancia. Que soy flamenco está claro y no cabendudas; pero te importa mucho que la gente te escuche, que sintonice contigo, que disfrute.\n\nBLOQUES - BOVEDILLAS - TUBOS MATERIALES DE CONSTRUCCION\n\nForjados ajustados a las especificaciones de la norma M. V. 101 - 1962 Autorizaciones de usos n.º 1.117 - 70 y n.º 2.126 - 74\n\nCtra. Córdoba-Valencia, Km. 180 - Teléfonos 441025 y 440150 VILLACARRILLO (Jaén)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Ellos, los protagonistas - Luis de Córdoba",
+    "periodical": "candil",
+    "issue_id": "1981-09",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 1194,
+    "article_char_count_full": 6724,
+    "article_char_count_review": 3206,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      }
+    ]
+  }
+]
+```

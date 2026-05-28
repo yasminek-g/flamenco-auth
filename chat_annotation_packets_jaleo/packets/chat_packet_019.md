@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_05::A6",
+    "article_text_for_review": "SPANISH DANCE AND CLASSICAL MUSIC Teodoro Morca has long been interested in using the techniques of flamenco dance to interpret other kinds of music, and it may surprise flamenco purists to find how powerful and impressive are his interpretations of classical and modern music. For those unfamiliar with Teo, he has an extensive background in flamenco. Currently he has the Academy of Creative Arts in Bellingham, Washington and is actively giving concerts with his wife, Isabel, and guitarist, Gary Hayes (see articles in this issue); they have performances in the near future in Seattle, Los Angeles, and Maryland (for more information about the Morcas, see $ \\underline{\\text{Jaleo}} $, Sept. 1977). Usually at least half of a Morca concert is devoted to traditional flamenco, which one reviewer describes as \"... not the type of flamenco dancing that is most commonly seen. Morca, who has set Spanish-style dance to the music of such composers as Vivaldi, Bach, and Scarlatti, infuses a more balletic feeling and a more dramatic orchestration of the body muscles to his dancing. But the result is no less true, in sensation, to the roots of an artistic expression in which rhythm and ritual romance of the ground are implicit.\" (by Lloyd Dykk in the Vancouver Sun, Feb. 25, 1978). The classical dance in a Morca concert is well described in the following review of a performance at the University of Washington in March, in which Morca was accompanied by a 22-piece chamber orchestra, lute and harpsichord. \"In all respects, the collaboration was a success. The Northwest Chamber Orchestra may consider its fifth anniversary well celebrated.\" The musicians played felicitously, and the Morcas responded with rhythms and phrasing that showed they are musicians as well as dancers. Vivaldi's Concerto for Lute and Strings in D Major opened the show. The Morcas moved around each other with studied ease and subtle flirting, their arms and hands floating mystically as their backs held a sensuous arc and their feet tapped softly... ...Virginia Moore played elegant harpsichord for the second work, J.S. Bach's Chromatic Fantasy and Fugue in D Minor. In this Morca danced alone, allowing one the luxury of absorbing all those intricate moves. He seemed to float across GUITAR CLASS - BULERIAS OF THE 1970s Flamenco is going through many changes and nowhere are these changes more evident than in the playing of the bulerfas. Through lecture, demonstration, and the teaching of guitar music, this class will deal with the bulerias of today, with special emphasis on the different styles of playing exemplified by a number of important guitarists. Participants will also have the opportunity to record (from records) these guitarists accompanying many of today's top singers. Falsetas and rhythm techniques of the following guitarists will be taught: Paco de Lucía, Serranito, Juan Carmona \"Habíchuela,\" Manuel Molina, Pedro Peña, Dieguito del Gastor Paco Cepero, Manolo Sanlúcar, and Parilla de Jerez. All interested persons are welcome to attend, but the class will be aimed at the intermediate guitarist (basic bulerías will not be taught). Participants should bring a guitar, tape recorder, tapes, and something to write with. For further details, see announcement section. the stage, at once retaining a quick strength in this darting feet and projecting a smooth, light flow in his upper body and arms.",
+    "title": "The Morcas the Merrier",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8, 9",
+    "page_number": 8,
+    "word_count": 546,
+    "article_char_count_full": 3407,
+    "article_char_count_review": 3407,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A7",
+    "article_text_for_review": "Gary Hayes, currently acompanist for Teo Morca, was first turned on to flamenco about eight years ago when he heard the Hispavox anthology, \"Antologia de Cante Flamenco,\" on which Perico el del Lunar does all of the accompanying. He was attracted very strongly to the cante and later became interested in the guitar. After studying guitar with Kyle Ickes in Berkeley, he went to Spain, where he studied with Eduardo de la Malena, Pedro Bacán, and a few other lesser-known guitarists in the Sevilla area. While in Spain, he accompanied as many singers as possible and spent a month living in a cave in the Sacromonte. During his second trip to Spain, Gary studied mainly with Miguel García in Sevilla and Raphael el Águila in Jerez de la Frontera. For several months he spent about four hours daily accompanying dance classes in the studios of Matilde Coral, Rafael el Negro, and Eloisa Albéniz -- an invaluable experience. Again he played for as many singers as possible at various juergas. For several months of his stay he shared an apartment with several people, one of whom was Pedro Bacán who was doing his military service in Sevilla; therefore, Gary had much opportunity to listen to Pedro play. Back in the United States, Gary played mainly in the San Francisco Bay area until 1976, when he moved to Bellingham, Washington, to work with Teo Morca. They are currently busy doing concerts throughout the country. Gary says that, \"While greatly appreciating the advances in sheer musicality made by the solo-oriented concert guitarists of today and being open to their influence to some extent...\" he still prefers, \"...the earthier and more emotional style of playing of the older artists such as Perico el del Lunar, Diego del Gastor, Melchor de Marchena, Paco Aguilera, and others.\" ☆",
+    "title": "Gary Hayes",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9, 10",
+    "page_number": 9,
+    "word_count": 302,
+    "article_char_count_full": 1792,
+    "article_char_count_review": 1792,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A8",
+    "article_text_for_review": "A record review which first appeared in the Madrid paper, $ \\underline{\\text{Informaciones}} $. It was written by Antonio Villarejo. Antonio Fernandez Díaz (Fosforito) is a cantaor who, besides having wisdom, has managed to elaborate a very personal style which is independent of any other trend and whose principle characteristic is, perhaps, the search for formal perfection that has had a substantial effect on the new generation of cantaores. Since a few years ago, he has lived in Alhaurin de la Torre (Málaga) and from there has emerged this record of the cantes of that area. After many years of making encyclopedic records, this singer from Puente Genil (near Granada) is one of the most qualified, given his wide knowledge, to realize this type of recording that specializes by locality. This record includes: rondeñas, tangos del Piyayo, malagueñas del Canario y la Trini, jabegotes polo de Tobalo, jaberas, bandolás de Juan Breva, fandangos abandolas de Vélez, and verdiales naturales. He is accompanied Juan Carmona (Habichuela) and his brother, Pepe (Habichuela).",
+    "title": "FOSFORITO EN LOS CANTES DE MÁLAGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 169,
+    "article_char_count_full": 1076,
+    "article_char_count_review": 1076,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A9",
+    "article_text_for_review": "PACO PEÑA - TOQUES FLAMENCOS transcribed by Diana Sainsbury and published by Musical New Services Limited, 20 Denmark St., London WC2H 8NE, 1976. \"This book is promoted as a transcription of Paco Penã's record album, \\\"Toques Flamencos.\\\" Although I have not heard the record, it is obvious that it was made to be transcribed and accompany a book; don't be mislead into thinking this is a book of Paco's best solos from his popular albums, \\\"Paco Peña - Fabulous Flamenco\\\" (London, SPC 21135), \\\"Flamenco Puro 'live'\\\" (London, SP 44172), and \\\"The Art of the Flamenco Guitar\\\" (London, SPC 21083). From what I have seen of the book, the music consists of traditional falsetas thrown together without a lot of creativity in composition and little evidence of any original Paco Peña material. The eleven solos, of varying difficulty, are written in both music and tablature and include the following: farruca, alegrías, siguirias, soleares, rumba, columbianas, tarantas & tarantos, garrotín, sevillanas, and tientos. For the beginner or intermediate guitarist who is stranded without other means of learning, this is an excellent book since the music is extremely well written and a very careful explanation of rasgueados and the symbols used for them is included (one of the clearest notations of rasgueado techniques that I have seen). The book and the record are available from: The Bold Strummer, P.O. Box 4116, Grand Central Station, New York 10017. The record costs $8.00 and the book $9.00; add $1.20 for the book (postage - handling) or $1.70 for both book and record. New York residents add 8% sales tax.",
+    "title": "NEW FLAMENCO GUITAR MUSIC",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "article",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 264,
+    "article_char_count_full": 1614,
+    "article_char_count_review": 1613,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A10",
+    "article_text_for_review": "From Roberto Reyes Editor's comments: The following \"traditional\" alegrias falsetas are by Mario Escudero, Roberto points out that the first note in a triplet or quadruplet will be accented more than the other notes (which fall between the beats). It is perhaps even more important to realize that the following falsetas can be accented several different ways, depending on the compas desired, or being used by a dancer. If a twelve beat compas is being used by the dancer, then beats 3, 6, 8, and 10 will be accented. If the dancer is doing escovilla in 6's, then the accents will fall on beats 2, 4, 6, 8, 10, and 12 or, beats 3, 6, 9, and 12. The guitarist should always be aware of what the dancer is doing. As another example, a falseta played in triplets (all of the following except the last line) will not sound too well with heelwork being done in doublets (2's) and vice versa.",
+    "title": "Alegrías",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 161,
+    "article_char_count_full": 887,
+    "article_char_count_review": 887,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

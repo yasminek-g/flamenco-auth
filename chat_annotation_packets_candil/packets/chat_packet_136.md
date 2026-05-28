@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1986-07-22-left-hablan-las-penas",
+    "article_text_for_review": "Con motivo de la inauguración de la nueva sede de la Peña Flamenca de Jaén\n\nCon una Semana de Estudios Flamencos, que tuvo lugar del 16 al 19 de julio, inauguró la Peña Flamenca de Jaén su nueva sede social; un bello y espacioso local, antigua sede del Café-Cantante «Lyon D'Ors».\n\nDicha Semana resultó un completo éxito tanto artístico como de asistencia de socios y público invitado.\n\nEn estos actos estuvieron presentes el presidente de la Diputación Provincial, don Cristóbal López Carvajal; el vicepresidente de la Diputación de Cádiz, don Rafael Palomino Kayser, y directivos de la Caja General de Ahorros de Granada, todos ellos patrocinadores de esta semana.\n\nEl programa se desarrolló de la si- guiente manera:\n\nDía 16: Presentación de la Semana a cargo del presidente de la Peña, que dijo: «Un silencio demasiado largo que el azar nos puso encima. Pero no estuvo vacío, sino pleno de reflexiones hondas, de evocaciones entrañables y de amorosas tensiones porque, a la postre, era como el silencio que media entre dos tercios de soleá. Guardamos, al menos, la memoria para un día empezar, de nuevo, y recuperar el tono ido, a la luz trémula del viejo candil. Fue, en definitiva, como vivir en un trastierro, al que fuimos condenados, acaso por veneradas voces, sobre los que, tal vez, arrojamos esa sutil infamia que se llama la futina. Pero eso pasó, y hoy nos presentamos, con toda la véhemencia de entonces, con la actitud respetuosa de quien sabe que, a partir de ahora, en muchas noches, puede ser henchido de un mágico “tarot”. Invitamos a cuantos quieran unirse a nosotros, a escribir esa página jonda que ya es, sin duda alguna, historia viva de Jaén».\n\nA continuación pronunció una conferencia don Francisco Vallecillo Pecino, asesor de Flamenco de la Junta de Andalucía, con el título: «Las Cantíñas y sus derivaciones», haciendo un bello recorrido por estos cantes gadi-tanos. La conferencia estuvo ilustrada por el cante de Chano Lobato y la guitarra de Perico del Lunar, interpretando todos los cantes a que hacía mención el conferenciante, haciéndolos plenos de gracia y compás.\n\nDía 1: Conferencia a cargo del crítico flamenco don Manuel Martín-Martín: «Cinco páginas del diccionario flamenco». Hizo referencia a los cantes por Alboreá, Bamberas, Alegrías, Bandolás y Bulerías. Conferencia que resultó sumamente interesante y muy del agrado de los aficionados, así como la interpretación de estos cantes, que corrió a cargo de Carlos Cruz y Rosario López, que dijeron estos palos con la maestría a que nos tienen acostumbrados estos dos grandes artistas.\n\nDía 18: Conferencia-recital a cargo del maestro Antonio Fernández Díaz «Fosforito»: «Apuntes sobre el flamenco». Fosforito hizo un recorrido por distintos estilos flamencos, interpretando todos los palos a que hacía mención, haciendo alusión a distintos personalismos y finalizando con una magnífica interpretación de la Soleá-Apolá. Gran demostración del maestro de Puente Genil.\n\nDía 19: Conferencia de don Ramón Porras González, ilustrada nuevamente por Rosario López y Carlos Cruz. Si estos dos artistas habían convencido la noche del día 17, esta noche entusiasmaron, quizás, debido a que los estilos que interpretaron estaban más en consonancia con su personalidad cantaora. ¡Qué bien cantó Rosario por Soleá y por Tangos! ¡Con qué fuerza y jondura cantó los Fandango de El Gloria!\n\nEsta es la verdadera esencia del flamenco. Si la noche anterior había estado bien en unos cantes, más o menos obligados, cuando se sintió «libre» cantó de otra manera. Qué hermosa actuación la suya. Carlos Cruz hizo Soleá, Bulerías de Jerez llenas de compás, y Siguiriyas. ¿Cómo cantó por Siguiriyas! Nosotros pensamos que pocos, muy pocos cantaores hay en el panorama flamenco que canten por este palo como lo hace Carlos Cruz.\n\nEn resumen, una Semana Flamenca con un espléndido resultado. Como tenía que ser.\n\nIII PREMIO DE MONOGRAFIAS A. MACHADO Y ALVAREZ «DEMOFILO» SOBRE TEMAS FLAMENCOS\n\nEl Excmo. Ayuntamiento de Córdoba, a través de su Delegación Municipal de Cultura, ha convocado el III Premio de Monografías sobre temas Flamencos «Antonio Machado y Alvarez “Demófilo”», al que podrán concurrir cuantas personas lo deseen, cualquiera que sea su nacionalidad, siempre que las obras que presenten sean inéditas, no hayan sido premiadas en otros certámenes y estén escritas en lengua castellana.\n\nLos originales serán remitidos a: Delegación Municipal de Cultura, Posada del Potro, 10. 14002-Córdoba. Los originales deberán obrar en poder de la citada Delegación de Cultura antes de las quince horas del día 31 de marzo de 1987.",
+    "title": "Hablan las Peñas",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 738,
+    "article_char_count_full": 4603,
+    "article_char_count_review": 4603,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-07-22-right-buzon-flamenco",
+    "article_text_for_review": "BUZON FLAMENCO\n\nA PROPOSITO DE UN CANTE POR SIGURIYAS\n\nEste año, en Córdoba, ha resurgi- do un cante por siguiriγas.\n\nHay quien ha escrito por ahí que esa siguiriya que cantó Antonio de Alora en el XI Concurso Nacional de Córdoba era una siguiriya simplona, es decir de poca calidad. Si se le preguntara al jurado uno por uno, seguro que muy pocos sabrían decirnos algo de esa siguiriya: de dónde viene, quién la ha creado.\n\nYo he tenido ocasión de hablar con un miembro del jurado de este último concurso de Córdoba y, sin inmutarse, sin pensarlo dos veces, me dijo que esa siguiriya la había inventado Antonio de Alora, porque era muy buen estudioso del cante, y se quedó tan fresco.\n\nYo, en este caso, le llamaría el resurgir de un cante por siguiriyes; una siguiriya olvidada y, por lo tanto, ignorada por la inmensa mayoría de los aficionados y artistas flamencos actuales. Pero para suerte del cante andaluz, este año ha vuelto a ver la luz en el Concurso Nacional de Córdoba. Desde luego, ha pasado por el Concurso sin pena ni gloria, pero eso es lo de menos, lo importante es que se ha dado a conocer a la afición.\n\nEl jurado, en esta ocasión, no ha sido muy sensible al juzgar este cante; no creo que se mereciera el premio de Manuel Torre, pero una mención sí creo que le podrían haber dado, aunque sólo fuera para dar auge a un cante por siguiriyas desconocido, que aunque no tenga el pellizco de Terremoto de Jerez no por eso hay que despreciarla.\n\nLa siguiriya que cantó Antonio de Alora está compuesta de tres cuerpos: dos cuerpos por siguiriyes y la cabal atribuida al Pena padre; estas siguiriyes tienen sonidos de nanas, y es muy importante que se haya dado a conocer para enriquecimiento de nuestro arte.\n\nCuando la escuchamos en nuestra tertulia nos sorprendimos, aunque teníamos una vaga idea de este cante por siguiriyas. Empezamos a averiguar y se sabe muy poco del creador de este cante; lo que hemos podido averiguar es que este cante se lo enseñó alguien a Juan Villodres, y a Juan Villodres se lo escuchó Manuel Avila, y según tiene entendido es de Los Caganchos, pero nada más.\n\nSi alguien conoce algo sobre este precioso cante por siguiriyas, o si está grabado en algún sitio, en fin, lo que sea, nos haría una gran favor a la afición.\n\nLa letra del cante por siguirias que me refiero es la siguiente:\n\nSi con llorar\n\ntu pena yo te aliviara, yo estaría llorando de noche y de día.\n\nCuando en capilla metieron a Riego, los suspiritos que daban sus tropas llegaban al cielo\n\nAtentamente,\n\nSalvador Castro\n\nROTUNDO EXITO DEL ESPECTACULO «CUMBRE FLAMENCA 86» EN MEXICO\n\nUn éxito rotundo logró el espectáculo «Cumbre Flamenca 86», ante miles de aficionados al arte andaluz de México, despedido entre interminables ovaciones, en el Palacio de Bellas Artes.\n\nSu estreno estuvo precedido por la amplia difusión que uno de los canales de la televisión oficial dio a su actuación del día anterior en la ciudad de Guanajuato, en el marco del Festival Internacional Cervantino.\n\nCristóbal Reyes mostró una vez más sus dotes de gran coreógrafo y excelente bailor. Bien conocido de los mexicanos devotos del flamenco, lo mismo que el cantaor Pedro Montoya, su reencuentro con la afición de esta ciudad no ha podido ser más afortunado.\n\nCautivaron también al público, que llenó las tres noches consecutivas el Palacio de Bellas Artes, las notables bailaoras Carmen Cortés, la Tati y la Tolea, así como el bailaor Antonio Canales y los cantaores Alfonso «El Veneno», Gabriel Cortés, Pedro Montoya y «Talegón de Córdoba».\n\nAcompañaron a la perfección los guitarristas Juan Carmona, Diego Losada y Juan Salazar, y el solista Gerardo Núñez.",
+    "title": "Buzón Flamenco y Noticiario Flamenco",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-22",
+    "page_number": 22,
+    "word_count": 632,
+    "article_char_count_full": 3649,
+    "article_char_count_review": 3649,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-07-23-left-d-iscografia-flamenca",
+    "article_text_for_review": "«LA FUENTE DE LO JONDO»\n\nEL PELE\n\nFICHA TECNICA:\n\nL.D. núm. PSD-2052 Edit. Pasarela S/L Sevilla Estudios Alta Frecuencia Cópyright Ayuntamiento de Córdoba. Portada Moreno Galván Año 1986 Guitarras Isidro de Sanlúcar y Vicente Amigo.\n\nde Cultura del Ayuntamiento cordobés de patrocinar el esperado disco de la figura más destacada en la inacabable nómina de cantaores de la tierra califal.\n\nSe abre la obra con unas Alegrías muy originales en la pretendida línea de la innovación, que no empecen en absoluto la médula clásica en la concesión, relativa, a unas formas diferenciadas y bastante aceptables. Y, seguidamente, se aborda lo mejor, a nuestro juicio, del disco: unas seguirias de excelente factura y enriquecidas con la voz flamenquísima de El Pele, tan rica en melismas. Porque la jondura está amadrinada en las formas de Mairena y Juan Talega, a pesar de algún final en el que la voz se quiebra en ligero exceso inarmónico y en el cambio final el acompañamiento se funde sutilmente hasta brillar por su ausencia.\n\nVienen luego unas Bulerías, de Ke-ko Ruiz, de aire alegre y propósito innovador en las que destaca esencialmente el buen compás de Juan Moreno Maya. Las Bulerías por Soleá que llevan por título la letra del maestro Mairena:\n\nEs tu querer como el viento... constituyen también una buena muestra de la capacidad transmisora del gitano cordobés que cuando llega al culmen del cante baja en el propio crescendo para alejarse en una inesperada opacidad que corta la tesitura sonora en su mejor momento.\n\nMuy buenas las Bulerías tituladas de Jerez, con aires de la calle Nueva y ecos de Fernando en su inicio. Buena también la Soleá («Caracoleando», se titula), buena obra en su conjunto a pesar de algunos remates en los que la voz se rompe sin agraciar la musicalidad del Cante. Hay, finalmente, unos Tangos (por ahí, no, Juan) y unos Fandangos.\n\nDel conjunto de la obra viene a concluirse que no ha sido suficiente-mente trabajada, que la dirección técnica ha debido hacer muy poco y que, puestas de relieve las indudables capacidades y aptitudes de El Pele, no han sido suficientemente aprovechadas. En una puntuación máxima de 10, a este disco le atribuiríamos un 7. Pero insistiendo mucho en cuanto a esa falta de dirección que se echa a faltar en los discos que últimamente salen al mercado y que se quedan muchas veces en intentos meritorios, pero baldíos o poco menos. Posiblemente las prisas y la inexperiencia malogran muchos resultados. Esos Tangos y Fandangos desmerecen mucho del resto de la grabación y no es explicable que tal matute pase fácilmente la aduana del mínimo rigor y la mínima exigencia.\n\nA Pasarela, como otras veces, felicitaciones por los resultados óptimos en cuanto a la técnica de grabación y la soberbia cubierta de ese general artista que es Paco Moreno.\n\nY de El Pele, colofón de este análisis, la certeza de que uno, tantas veces criticado y censurado, no se muestre arrepentido de haber contribuido con su voto en dos ocasiones decisivas para su no muy ortodoxa vida artística, todavía abierta a un gran porvenir si sus sostenedores son más exigentes y él quiere de verdad.\n\nFrancisco de la Brecha\n\nTITULO: ANTORCHA DE ORO DEL CANTE\n\nCURRO MALENA\n\nTOQUE: PEDRO BACAN y MANUEL DE PALMA\n\nREFERENCIA: FONORUZ. D-132. 1986. MONTILLA, Córdoba P arece que el mercado discográfico flamenco se está ampliando gracias a la labor desarrollada por ciertas personas y casas de nuestra Andalucía. Ciertamente, era menester que esto se produjera, porque, aunque el mercado parezca pobre, en nuestra Comunidad Autónoma no lo es.\n\nY gracias a lo enumerado arriba, no encontramos en el mercado con el disco de Curro Malena realizado en este año tras la consecución de la Antorcha de Oro del Cante, título que toma el disco.\n\nTangos ofrece el cantaor en la apertura del mismo y tras escuchar los demás estilos que conforman esta larga duración, es aquí donde se escucha a Curro con ciertos aires comerciales —eso sí, bien acompasados— y un muy repetitivo estribillo. Sin embargo, en las Soleares se aprecia un conocimiento exacto del compás y de los personalismos (de Alcalá, Triana o Cádiz) y saboreando con éxtasis el estilo. En cuanto a las Granaínas, Curro Malena realiza una interpretación muy sobria —yo diría que demasiado— y con cierto recorte de las melismas en un estilo muy propio para su desarrollo. Alegrias cierra la primera cara de este Antorcha de Oro del Cante, y en las cuales el lebrijano deja patente su conocimiento del compás y su quehacer en un estilo bastante asiduo en su repertorio.\n\n¿Y la cara b? ¿Completísima! En Alboreás, Siguiriyas, Taranta y ecos de Cartagenera y Bulerías, Curro Malena demuestra que sabe lo que es el flamenco, que lleva este arte en la sangre y que conoce la profesión.\n\nEn las primeras, el cantaor de Le-brija se adapta magnificamente al estilo realizándolo con acierto e imprimiéndole mucha alegría. Las Siguiriyas están hechas con quejío, mucha matización y un conocimiento profundo de los ecos jerezanos que redondean una brillante interpretación. Los cantes mineros expresan en la voz de Curro un cierto enciclopedismo flamenco y tras éstos cierra con unas acompasadas y festeras Bulerías donde manifiesta con singularidad su personalidad.\n\nBuen quehacer en el acompañamiento el de las guitarras de su paisano Pedro Bacán y Manuel de Palma, con un toque sobrio y virtuoso que en todo momento dejan patente cuál es su lugar, a la vez que conducen al cantaor al suyo.\n\nRafael Valera Espinosa",
+    "title": "Discografía Flamenca",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 915,
+    "article_char_count_full": 5483,
+    "article_char_count_review": 5483,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-07-24-left-a-placas",
+    "article_text_for_review": "-Discografía (Placas)\n\nPor Manuel Yerga\n\nCANTE LETRA GUITARRISTA\n\nEL COJO LUQUE\n\nEL CHATO DE VALENCIA\n\nMalagueña Ay, la mare mía M. Borrull Taranta Que lo mejor de Cartagena M. Borrull Fandando Por el vicio me dejó M. Borrull Fandango To el mundo le despreciaba M. Borrull Bulerías por Asturianas M. Borrull Media Granaína Viva el puente del Genil M. Borrull Siguiriya Dejadme que llore M. Borrull Granaína-Malagueña En mi corazón reinaba M. Borrull\n\nEL PELUSO\n\nFandango Esto le pasa a cualquiera M. Badajoz Fandango Razones tengo de más M. Badajoz Fandango La baña el sol cuando sale M. Badajoz Bulerías Chalanero, chalanero M. Badajoz Bulerías La panderetera M. Badajoz Fandango El agua te negaré M. Badajoz Fandango No te quiero M. Badajoz Fandango No te puedo perdonar M. Badajoz Fandango A tu casa me acerqué M. Badajoz Fandango He visto a un hombre llorar M. Badajoz Fandango Yo no ambiciono el dinero M. Badajoz Bulerías Para tus manos tumbaga M. Badajoz Zambra Por tos los gitanos te ves despreciá M. Badajoz Fandango Por ser delito el querer M. Badajoz Fandango Yo cumpli mi juramento M. Badajoz Fandango Ni me causan desazón M. Badajoz Fandango Por lo gitana y cañí M. Badajoz Fandango Que no se puede arrancar M. Badajoz Fandango Otra vez me has engañao M. Badajoz Fandango Más que el viento el huracán M. Badajoz Bulerías Cuando voy a la fuente M. Badajoz Fandango Tu querer me vuelve loco M. Badajoz Fandango Que no te va a faltar M. Badajoz Fandango Tengo yo una gitanita M. Badajoz Asturianas por Bulerías Esta noche ha llovido M. Badajoz Bulerías Mañana es domingo M. Badajoz",
+    "title": "Discografía Placas",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 273,
+    "article_char_count_full": 1591,
+    "article_char_count_review": 1591,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-09-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nD esde\n\nesde diversas instancias, se está confeccionando un censo de artistas profesionales flamencos. Sin perjuicio de que tal propósito nos parezca, desde la perspectiva de la Administración,\n\nSin perjuicio de que tal propósito nos parezca, desde la perspectiva de la Administración, acertadísimo, en orden a una más eficaz gestión tuteladora de los intereses de quienes ostentan el protagonismo de la expresión jonda, sin perjuicio de que estimemos indispensable la identificación neta de los posibles beneficiarios de toda acción de gobierno, con independencia de todo ello, la denominación «artista profesional» referida al flamenco nos sugiere algunas reflexiones que acaso en rápida lectura pudieran antojarse insustanciales pero que a nuestro juicio, lejos de su aparente superficialidad, conecta con aspectos esenciales en la captación de lo jondo.\n\nAl profesional del cante, del toque o del baile se le suele relacionar con el término «aficionao». Quien, con cierta aceptación, canta flamenco o es profesional o es aficionao. Surge el problema cuando hay que dilucidar quién es quién, esto es, el concepto de profesional. Comúnmente, se entiende por tal, quien hace del cultivo de un oficio o arte su forma primera de sustento; dicho en otros términos, quien vive del ejercicio de su arte. La confusión comienza cuando nos preguntamos si profesional y artista son dos conceptos que correlacionan, si a un cierto grado de profesionalidad corresponde siempre el mismo grado de arte. Evidentemente, no. Tampoco es de recibo la proporción directa: a más arte profesional, a menos arte aficionao. Ello nos llevaría a la absurda conclusión de que la tenencia de la inspiración, la magia de los duendes se consigue por la vía de adoptar una decisión que sólo reporta secuelas económicas —vivir de lo que renta el cante— de suerte que nadie pueda ser artista sin hacer de su arte la causa primera de su salario.\n\nSe incrementa aún más la confusión si, sobre este particular, manejamos las posibles hipótesis que nos dicta la experiencia. A saber: se puede ser magnífico profesional y sin embargo artista nulo o mediocre; se puede ser inconmensurable artista y un pésimo profesional; también un buen profesional y buen artista; y por último, hay quienes no son ninguna de las dos cosas.\n\nAlguien pudiera pretender el conectar la profesionalidad a la consecución de ciertos logros —editar un disco, ganar un concurso, etc.— con lo que nos veríamos abocados a concluir parecidos despropósitos. No puede o no debe identificarse éxito ante sectores más o menos populares con posesión del arte, ya que aquél, entre otras razones, depende de que se sepan pulsar determinados registros del marketing y de la publicidad. Ciertamente son dos tamaños diferentes.\n\nHace pocas semanas, en Córdoba, en el entorno de una charla distendida sobre este problema, entre algunos buenos aficionaos que allí tanto abundan, se urgía la necesidad de definir el concepto de profesional del arte flamenco. Lo que a nuestro modesto entender no nos parece factible. Y ello porque ambos términos referidos el uno al otro, resultan con harta frecuencia equívocos. En primer lugar por su diferente extracción: el término profesional (de profitere, profesar...), tiene significaciones propias del tráfico mercantil que encuentran su marco idóneo en la historia de la economía; la expresión artista proviene de otra esfera bien distante, la historia de la creatividad humana.\n\nEn segundo lugar hablamos de equivocidad entre ambos términos porque uno y otro expresan naturalezas diversísimas: el oficio la profesionalidad se genera con el hábito, con la reiteración de los actos. El arte es un atributo de los dioses, un singular modo de captar la realidad. El primero es pura objetividad, nace de cuantificaciones, de mecánicas habilidades; el segundo es plena subjetividad, cuando los duendes permiten su objetivación.\n\nPor desgracia la práctica común ha ligado estos dos términos, y así se habla de profesional artista o artista profesional. Tal vez, como fruto de otras reflexiones, pueda en el futuro acrisolarse un concepto que nos permita identificar la magnitud de personajes como «El Loco Mateo», «La Serneta», Manolito María, Juan Talegas y muchos más que sin ser profesionales, han pasado a la historia como incommensuables artistas.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1986-09",
+    "year": 1986,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 679,
+    "article_char_count_full": 4323,
+    "article_char_count_review": 4323,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-05-28-right-jes-s-gil-manuel-mart-n-mart-n-u",
+    "article_text_for_review": "El pasado mes de diciembre se cumplió el cuarto aniversario de la muerte de Beni de Cádiz, después de una dura y larga enfermedad. Tras su despedida, el primer reconocimiento que recibió vino por boca del alcalde de Marbella, Jesús Gil, en virtud del cual el Ayuntamiento, según recoge la hemeroteca, «le regalaba un chalé y una ayuda económica a su viuda», Dulce Nombre Vacas Cortés, más conocida por Perla.\n\nPoco después se asomaba el compañero Paco del Río en el número 82 de la revista Sevilla Flamenca, y lo hacía con un magnífico reportaje y dos suculentas entrevistas donde Perla acusaba a Felipe Campuzano de «que-darse con medio millón de pesetas de mi marido», al tiempo que Jesús Gil confesaba al periodista que «Perla, su viuda, tendrá en Marbella un buen piso, y si me necesita, aquí me tiene», según delata la grabación archivada.\n\nDe tal guisa Gil correspondía a lo mucho que Beni hizo por Marbella, consolaba a la viuda, conquistaba a los andaluces y deslumbraba al mundo entero. Reconozco sin ambages, y así lo hice saber a su hermano Amós Rodríguez, que las bravatas del alcalde forzaban al poco a dudar e infundían sospechas acerca de la veracidad de la intención. En efecto, tan altruista gesto, con irrebatibles apariencias de autenticidad, quedóse todo en una patraña que ha puesto en evidencia el fatuo engreimiento, la estólida necedad y la vanagloria satisfecha del alcalde, pregonero de su propia deshonra que nos ha revelado el abismo de vileza y abyección en que puede caer el ser humano ante el dolor ajeno, aprovechando éste con la más absoluta falta de escrúpulos y la pérdida de toda conciencia moral.\n\nHan pasado cuatro años y el falso esplendor del entusiasmo de Jesús Gil y Gil, tan pródigo en faroles, se ha apagado, con lo que más allá del valor supremo del hombre, la palabra, no hay nada en este caso, simplemente un bocazas que se presta sin pudor a divulgar la historia de su infamia.",
+    "title": "Jesús Gil, Manuel Martín Martín un bocazas",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "28-28",
+    "page_number": 28,
+    "word_count": 333,
+    "article_char_count_full": 1925,
+    "article_char_count_review": 1925,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-05-29-left-el-arte-flamenco-maltratado-cons",
+    "article_text_for_review": "Antonio Corcobado Arroyo\n\nCuando en Onda Madrid, después de una colaboración manteni-da por muchos años con la emisión del espacio Madrid Flamenco, dirigido por Juan Verdú y José Manuel Gamboa con un indudable acierto por la gran audiencia que tenía, de la noche a la mañana y sin previo aviso-les pusieron en la calle dando ocasión a que la audiencia que seguía su programa dirigiera una verdadera lluvia de cartas y escritos pidiendo explicaciones a los directores de esta emisora, explicaciones que todavía seguimos esperando.\n\nEstos amigos, verdaderos entusiastas y defensores del Arte Flamenco, fueron posteriormente acogidos por Radio Ole, de la Cadena Ser, cuyo director de los espacios flamencos fue acortando sus atribuciones porque la radio, formula, les resta iniciativa a personalidades que, como Borja, continuadora de su gran arte, profesionalidad y simpatía, se ha visto forzada a pedir una excedencia al no poder soportar los recortes que a su gran iniciativa le iba restando este tipo de radio, en la que consiguió grandes triunfos por la cantidad de personalidades de verdadera altura flamenca que aportó a sus programas, a los que yo personalmente contribuí en bastantes colaboraciones, aportando siempre personalidades relevantes que dentro del Arte Flamenco tenían mucho que decir para conocimiento y deleite de su audiencia.\n\nEn Radio Nacional de España, al jubilarse José Verdú, creador de El Cuarto de Cabales, que estableció premios nacionales de importancia artística y patrocinio casi siempre por firmas como González Byass, tu-vieron una resonancia digna de una mejor atención.\n\nEs frecuente comprobar cómo en esta importante cadena y en este espacio de Radio Ole se escucha de todo menos Arte Flamenco. Espacio que nació en Antena 3 con auténtica y exclusiva vocación flamenca, y que se ha ido diluyendo al cambiar de emisora.\n\nEn este espacio fue sucedido José Verdú por su colaborador auxiliar Manuel Ríos Ruiz, a quien hace poco tiempo suspendieron la emisión, quedando en Radio Nacional solamente el espacio Nuestro Flamenco, que hasta el momento dirige José M. Velázquez Gaztelu con extraordinario acierto, porque con su docta dirección hace asequible y docente su buen saber hacer radio para atraer la atención de los buenos aficionados a este arte, contán-dome yo como uno de sus más fervientes admiradores.\n\nPodríamos continuar criticando el escaso españolismo con que las emisoras de nuestro país tratan a este extraordinario arte tan nuestro y tan admirado fuera de nuestras fronteras, donde tiene mejor acogida y desarrollo que en nuestra propia nación.\n\nLímito la crítica a algunas de las emisoras más importantes de Madrid por tener conocimiento de que en otros puntos distantes de nuestra capital hay excepciones donde se acoge de manera diferente y con auténtico cariño a nuestro españolísimo arte.",
+    "title": "El Arte Flamenco maltratado conscientemente por las Emisoras de nuestra nación",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-29",
+    "page_number": 29,
+    "word_count": 447,
+    "article_char_count_full": 2842,
+    "article_char_count_review": 2842,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-05-29-right-premio-comp-s-del-cante",
+    "article_text_for_review": "Salvador Távora\n\nAndalucía tiene dos mares: el Atlántico y el Mediterráneo. Andalucía tiene, en su Norte de sierras en cadena, como en unos Piríneos con más sol, sus límites de frontera natural de unas formas, de un sentir, de una Historia milenaria. Andalucía tiene la riqueza de la fusión, no de tres, sino de cuatro culturas: la musulmana, la cristiana, la judía y la gitana.\n\nAndalucía es un pueblo viejo, sabio, tolerante, pacífico, orgulloso y bello; con sus campiñas, sus vinos, sus trigos y sus verdes olivos como símbolos de su deseada paz.\n\nAndalucía tiene grandes músicos: Falla, Granados; poetas como Bécquer, Machado, Lorca; eminentes hombres en la política, las leyes y las ciencias; y glorias del arte popular en las voces, en las manos virtuosas, y en los pies, de hombres y mujeres que están en la mente de todos.\n\nAndalucía tiene cantes, bailes, toques y emotivos rituales que organiza espontáneamente, sin directrices administrativas, la sociedad civil, en\n\ntre ellos las ferias, de costumbres y colores; Semanas Santas de sabores y devociones entre la tierra y el cielo.\n\nPero sobre todo, y en todo, Andalucía tiene compás; en su vivir cotidiano, en sus pensamientos profundos, en el trabajo y la generosidad de sus hombres y mujeres, y en todos los actos y comportamientos de la vida andaluzay, en particular, en su rico universosonoro y musical.\n\nPor todo ello, recibir una distinción con la denominación de “Compás del Cante”, es recibir de un golpe a toda mi tierra con su riqueza rítmica, con su compás; un compás que ya que lo tenemos todos, los que conceden la distinción, y los que la recibimos, debe servirnos para que, a compás, y juntos, hagamos una Andalucía que debe ocupar, por su historia y por el compás armónico que rige su vida y su arte, el privilegiado lugar que le corresponde en el concierto social de los pueblos del mundo.\n\nEn nombre de mis compañeros de \"La Cuadra\", y en el mío propio, Gracias.",
+    "title": "Premio “Compás del Cante”",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-29",
+    "page_number": 29,
+    "word_count": 331,
+    "article_char_count_full": 1940,
+    "article_char_count_review": 1940,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-05-30-left-bases-ii-concurso-de-guitarra-pa",
+    "article_text_for_review": "1. Podrán tomar parte en este concurso cuantos guitarristas no profesionales lo deseen, con la única condición de no haber cumplido 25 años al finalizar el plazo de inscripción.\n\n2. La convocatoria queda abierta desde la fecha de publicación de estas bases, hasta el 11 de septiembre de 1997. Los interesados en participar en el concurso deberán solicitarlo entregando, personalmente o por correo, su nombre y apellidos, domicilio, localidad, fecha de nacimiento, teléfono y D.N.I., en Diputación Provincial de Jaén, Area de Cultura, Plaza de San Francisco, n.° 2123071 - Jaén.\n\nAsí mismo, la solicitud deberá ir acompañada de fotocopia del D.N.I. del solicitante.\n\n3. El concurso constará de fase selectiva y final, estando facultada la Organización para, en función del número total de inscritos, determinar cuantas fases selectivas se estimen necesarias para la obtención del mejor resultado del Concurso.\n\n4. El lugar de celebración de este II Concurso de Guitarra para jóvenes Aficionados, será elegido por la Organización y se dará a conocer una vez determinado. 5. De igual manera, tanto las fechas y horas de la fase selectiva como de la final, las determinará la Organización y se comunicará a los participantes de forma personal, por escrito, y con la suficiente antelación, indicando fecha, lugar y hora de presentación de los concursantes. La no presentación presupone su eliminación inmediata, salvo que por causa suficientemente justificada, la Organización y su participación en otra fecha y/u hora distinta.\n\n6. Los gastos que se le originen a los concursantes por su participación en el Concurso, serán por cuenta de los mismos. Los concursantes que accedan a la final recibirán una ayuda, en concepto de gastos de traslado, a razón de 24 pesetas/Km, a contar desde la capital de la provincia de origen hasta Jaén y viceversa.\n\n7. Se establece una única modalidad: guitarra solista.\n\n8. Todos los participantes en este Concurso deberán interpretar, tanto en la fase selectiva como en la fi-\n\nnal, un toque de cada uno de los grupos siguientes:\n\na) Soleá, Bulerías, Alegrías, Tangos, Seguirilla, Soleá por bulería.\n\nb) Malagueña, Granaína, Taranas, Cantes de Levante en general.\n\nEl Jurado podrá establecer el tiempo máximo y mínimo de actuación de los concursantes.\n\n9. El Jurado, que será elegido por la Organización, estará formado por personas de reconocido prestigio dentro del mundo flamenco y de la guitarra.\n\n10. La Organización podrá grabar todas las actuaciones, reservándose el derecho de utilización de las mismas para una mayor difusión del flamenco y de la guitarra.\n\n11. Se establecen los siguientes premios:\n\nPrimer premio: 225.000 Ptas.\n\nSegundo premio: 100.000 Ptas.\n\n12. Los premios podrán declararse desiertos a juicio del Jurado, estando sujetos, si procede, a las retenciones legalmente establecidas.\n\n13. La decisión del Jurado será inapelable.\n\n14. La inscripción en el Concurso supone la aceptación de todas y cada una de las bases del mismo.",
+    "title": "Bases II Concurso de Guitarra para Jóvenes",
+    "periodical": "candil",
+    "issue_id": "1997-05",
+    "year": 1997,
+    "language": "es",
+    "article_type": "news_roundup",
+    "pages": "30-30",
+    "page_number": 30,
+    "word_count": 472,
+    "article_char_count_full": 2983,
+    "article_char_count_review": 2983,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-07-17-left-jos-cenizo-jim-nez-a-miguel-varg",
+    "article_text_for_review": "Qué doloroso es tener que seguir abordando, en la primera página —una vez más—, el fallecimiento de un artista flamenco. Sabemos que es ley de vida encontrarse con la muerte, mas pensamos que no debiera ser tan tempranamente en ocasiones. Sin embargo, no tenemos más remedio que aceptar el óbito, aunque no sin sentir mucha más rabia que resignación.\n\nSe nos ha ido Miguel Rubio Vargas en su plenitud artística, en el momento en que su arte se consideraba pleno de matices personales tras haber acrisolado los ecos y las enseñanzas de Rafael Romero, Juan Varea, Pericón, Pepe de la Matrona, etcétera, después de haber pasado por Zambra, aunque su base cantaora —como la de la mayoría de los nacidos en La Puebla— estaba influenciada por Antonio Mairena.\n\nSe nos marchó “El Cateto”, apelativo que tan cariñosamente le puso “El Gallina” por su procedencia agraria, por su sencillo comportamiento y por el enorme tamaño de sus manos, expresión corporal única de su sentimiento flamenco cuando cantaba. Porque Miguel Vargas era un cantaor serio, profundo y con amplio conocimiento de los estilos. Su quejío por siguirias aún resuena en la Peña Flamenca de Jaén —fue una noche del 10 de enero pasado—tras una armoniosa y anterior entonación por rondeñas, malagueñas, marianas y soleares, evidenciando un acercamiento a Manuel Torre.\n\nY es que Miguel se ha destacado siempre por imponer seriedad a sus interpretaciones, por cumplir como artista flamenco, por traspasar con su arte el cuerpo del aficionado hasta llegar a lo más profundo de su ser flamenco. \"El cante festero se queda para quienes lo han vivió\", decía, en un alarde de honestidad consigo mismo y con sus seguidores, dejando patente, una vez más, su formalismo cantaor. No llegó a ser considerado primera figura de este arte, pero sí consiguió el respeto y la admiración del aficionado serio, del crítico, del componente del jurado o de sus propios compañeros. Igualmente supo hacerse acreedor de un puesto en el corazón de cada una de las peñas flamencas y en la nómina de los sobresalientes de este arte.\n\nVuelve el flamenco a vestirse de luto con la muerte de Miguel Vargas y, posiblemente, con más motivo que en otras ocasiones, pues al igual que sucedió con Terremoto y algunos cantaores de fama, pensamos que sus grabaciones no hacen honor al inmenso caudal de arte que el morisco poseía. Sin embargo, la cordura y el amor por el flamenco seguirá perdurando y seguros estamos que grabaciones particulares han de aportarse por alguien o algunos para que se edite una justa y buena antología de su cante.\n\nAnoche estando en el monte a los vientos le decía, qué pena vivir tan solo cuando es tan corta la vía. (Letra de bambera, escrita por Moreno Galbán, que interpretaba Miguel Vargas.)\n\nT u ausencia nos disminuye, como diría Luis Caballero. Nos disminuye y nos engrandece. Nos quita presencia y nos da memoria. Algo deja la muerte tras su paso irreparable.\n\nNos queda tu memoria. Grande como fue tu cuerpo, tu voz y tu corazón. Admirado por muchos, querido por todos, te marchas así, de pronto, cuando mayor madurez alcanzabas. Hubieras sido un viejo cantaor de estirpe, sabio, tan puro, tan auténtico que los jóvenes, hartos de novelerías y tenderetes, acudirían a ti reconociendo tu añeja y eterna lección de arte.\n\nTu ejemplo ha sido grande, sin duda; como todos los que se fundan en la verdad y se manifiestan con sencillez. Grande para los que creían que el mairenismo, tu fuente y tu andamio, era un cauce monocirde. Tú has abierto los brazos y has llevado a tu voz, además de las soleares, seguiri-yas o tonás, cantes como la bambera, la mariana o los bellísimos campanilleros.\n\nGrande para los que buscan el reconocimiento fácil, no dudando en rebajar su persona y su arte. Tú, serio, adusto, como la meseta, nos da-bas ojana. Grande para los que creen que el Flamenco debe moverse a pasos agigantados y desproporcionados.\n\nTu cante está hecho de lo más grande que un hombre tiene: su verdad. Y la tuya, hecha de equilibrio y adustez, se refleja en tu cante, ahora ya para siempre, sin ti, entre nosotros.\n\nPoema\n\nFértil cepa del mejor cante jondo, profunda garganta anclada en el arte, fresco pozo blanco al son de guitarra. Voces y silbos de caballo loco, harapos de angustia grita tu sangre, eres jugo y canto de viña buena, eres vino cantaor, Miguel Vargas.",
+    "title": "A Miguel Vargas, cantaor",
+    "periodical": "candil",
+    "issue_id": "1997-07",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-17",
+    "page_number": 3,
+    "word_count": 739,
+    "article_char_count_full": 4335,
+    "article_char_count_review": 4335,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

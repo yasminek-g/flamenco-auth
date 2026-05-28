@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1995-01-3-right-la-poca-dorada-mis-encuentros-co",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nD. E. Pohren\n\nCapítulo IV Mis encuentros con LA ALAMEDA DE HERCULES\n\nAantes de contarmis experiencias en la sevillana Alameda de Hércules, pienso que es necesario dar una breve historia de ese pinto-resco barrio, ya que La Alameda ha jugado un importante papel en la vida flamenca de nuestra época. Si analizamos lo que sabe de los principios del flamenco, vemos que inicialmente la mayoría de los artistas calés eran de la provincia de Cádiz, que parece ser el lugar de nacimiento del flamenco gitano, desde donde emigraban a la próspera Sevilla capital. Importantes ejemplos de esto fueron El Planeta y Diego el Fillo, quienes se mudaron a Triana en los primeros años del siglo pasado, procedentes de la provincia gaditana. Esto no sorprende, pues con el río Guadalquivir conectando la ciudad con\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"pobres\"]\n\no, desde donde emigraban a la próspera Sevilla capital. Importantes ejemplos de esto fueron El Planeta y Diego el Fillo, quienes se mudaron a Triana en los primeros años del siglo pasado, procedentes de la provincia gaditana. Esto no sorprende, pues con el río Guadalquivir conectando la ciudad con el Atlántico, Sevilla era una capital floreciente. te desde tiempos de los romanos, una tierra de oportunidad para los habitantes de las regiones más pobres cercanas. Para los flamencos en particular, la era de los cafés cantantes, desde mediados del siglo pasado, acrecentó mil veces el atractivo de Sevilla, pues ampliaba enormemente el campo del profesionalismo, ese milagro que permitía a algunos de los flamencos ganarse la vida con el arte. Durante ese período, que duró hasta bien entrado este siglo, Sevilla se convirtió en la Meca mundial del Flamenco, donde acudieron muchos de los mejores artistas de Andalucía, pero sobre todo aquéllos de las aparentemente inagotables fuentes de Jerez, Los Puertos y Cádiz capital. La mayoría de los flamencos recién llegados se instalaban en las cercanías de la Alameda de Hércules y se ganaban el pan en los nuevos cafés cantantes, así como en los numerosos locales que poseían uno o varios apartados y que florecían gracias a la demanda creciente de estos lugares para la juerga flamenca. Los establecimientos más numerosos de esta índole estaban localizados en una zona contigua a la Alameda de Hércules llamada «La Europa», con la calle Ferria como su principal arteria. Esta concentración flamenca se componía de jerezanos recién llegados como Manuel y Pepe Torre, el Niño Gloria, Juanito Mojama, Curro de la Geroma, la Macarrona, la Malena, la Geroma, la Sordita, la Gamba, etc., de artistas de otras regiones, como Manolo de Huelva, los malagueñeros, etc, y también excelentes artistas sevillanos tales como Pastora y Tomás Pavón, Niño Ricardo, Antonio Mairena, la Morena, Manolo Caracol (aunque de familia gaditana), etc., etc. Entre todos ellos convertían la Alameda de Hércules y «La Europa» en un núcleo flamenco de tanta importancia que sobrepasó a Triana y llegó a ser el principal centro del flamenco durante los años comprendidos entre 1910 y 1959, aproximadamente. Mi mujer y yo llega- mos al final de esa era. Como mencioné en «Mis Encuentros con Antonio Mairena» (Candil, número 92), vivimos todo el verano de 1956 en la casa de los Pavón (1)\n\n[ENDING CONTEXT]\n\nlevantar un poco su ánimo. Yo entré primero y Pepe se puso un poco más vivo, pero la transformación de verdad llegó cuando entra-ron los otros y Pepe vio una inglesa rubia bastante guapa. No sólo se puso más alegre, insistió en vestirse y acompañarnos a su bar favori-\n\nto en la Alameda de Hércules donde se sentó al sol y comenzó a tomar fino y a charlar sobre el cante, de vez en cuando ilustrando algún punto a media voz. Tales eran el espíritu y la afición de Pepe Torre. No mucho tiempo después murió, ojalá para reunirse con Manuel donde las voces no se rompen y el hambre no existe.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La época dorada Mis encuentros con la Alameda de Hércules",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-7",
+    "page_number": 3,
+    "word_count": 4805,
+    "article_char_count_full": 27730,
+    "article_char_count_review": 4024,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "pobres"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-01-8-left-manuel-de-paula-rafael",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEllos, los protagonistas, dicen...\n\nromance flamenco\n\nRafael Valera Espinosa\n\nmenco basada en los usos y costumbres de dos familias de gitanos de la Baja Andalucía, en la que intervienen además del autor, El Funi, Terremoto hijo, Enrique Soto «Sordera», José Parrondo, Ana Peña, Carmen Ledesma, Manuel de Palma y el niño-bailaor Juan Diego, obra que fue estrenada en la pasada Bienal Flamenca de Sevilla. Mas pienso que al margen de su tarea como autor, es el apasionamiento que por el romance flamenco o corrido gitano que de su conversación se trasluce, el que ejerce verdaderamente de catalizador de la faceta intelectual que en su persona se adivina.\n\n-¿Cómo son tus inicios?\n\n—Dentro del seno familiar. Gateando, como se dice en nuestra tierra, empecé escuchando flamenco en mi propia casa. He\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\no se dice en nuestra tierra, empecé escuchando flamenco en mi propia casa. He escuchao a mi madre, a mis cinco hermanos, a mi padre... Yo he sío un futbolista frustrao, con esto te quiero decir que a mí me gustaba mucho jugar al fútbol, y cuando volvía de jugar me encontraba con el flamenco en mi casa. También he de decirte que he sío un torero frustrao igualmente. Luego, ya con diez o doce años vas adquiriendo ciertas formas. Porque cuando este arte lo tienes tan cerca no le das la importancia adecuada, y cuando llegas a cierta edad, en vez de jugar al fútbol juegas a cantar con los amigos. Recuerdo que en la feria de mi pueblo, en la caseta que montaba la Cofradía del Eccehomo, el Cristo de los gitanos de Lebrija, uno de mis amigos, que sabía que yo cantaba, me obligó con otros a que me subiera al escenario y tuve que cantar por siguiriγas. Aquel cante me salió más llorao que cantao, y cuando terminé y vi a la gente que había allí, me di cuenta que la mayoría estaba también llorando. Pienso que aquel cante me salió con tanta pena y tanto sentimiento que se nos desataron las lágrimas. —¿Por qué siguiriyas y no bulerías, como hubiera si- do lógico en una caseta de feria? —Porque el flamenco es así. Al que canta quizás le llegue la inspiración por un cante que no sea el adcuado en el momento, pero si lo es porque es por donde uno quiere sentirse y yo quería sentirme por siguiriyas, y eso que en aquel tiempo no tenía ni puñetera idea de la importancia que supone cantar por ahí. Lo cierto es que con esos pocos años yo ya escuchaba a Tomás, a La Niña, a mi madre... A mi madre le gustaban mucho las bulerías, pero mi madre se entonaba por siguiriyas para rabiar. Porque a ella también le gustaban las siguiriyas, la soleá, las bulerías por soleá, las cantiñas... -¿Te metió de lleno en el flamenco? —No así apretujamente, como se suele decir, ellos no me forzaban, pero sí incidían de una forma diplomática a que yo fuera cogiendo la noción del cante. —Tú eres el que destacas en la familia, ¿no? —Bueno, sí. Soy el que destaco porque para ser artista hay que tener una pasta especial, ya que no es solamente cantar, hay que adquirir igualmente la profesionalidad y para esto último hay que tener esa pasta. Te hablo de la pasta cantaora como una condición que ha de tener la persona, como para sus profesiones la tienen los toreros, los ciclistas... A mi hermana la he escuchao cantar muy bien, muy bien. A mi hermano José también, sobre\n\n[ENDING CONTEXT]\n\nun cante por siguiriyas, ya pueda tener la orquesta de Berlín o la que sea detrás, que siempre será buena. Desde luego, los músicos tienen que enterarse que se han de adaptar a escuchar la voz para sí poder hacer una falseta o rellenar con un acorde como lo hace la guitarra. Pero a la hora de echarle mano a los manojos por parte del cantaor, la orquesta ha de estar dándole las tonalidades como lo hace la guitarra. Hemos de pensar que primero se cantó sin guitarra, que luego ésta se suma al cante, y si ahora se meten bien los instrumentos y esto sirve para engrandecer al flamenco, bendito sea.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "«Manuel de Paula» Rafael",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-10",
+    "page_number": 8,
+    "word_count": 2798,
+    "article_char_count_full": 15400,
+    "article_char_count_review": 4086,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-01-11-left-perfil-humano-y-flamenco-de-el-c",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLa frase que resume lo que fue Juan Pavón «Cojito Pavón» —viejo cantaor de estirpe gitana— se la dijo como sentencia que le acompañó toda su vida el propio Enrique El Mellizo cuando Pavón era aún un niño y su padre lo llevó a Cádiz al histórico café de «La Marina» de la plaza de Cádiz para que éste lo escuchara. Sentenció Enrique: «Este niño es más lo que sabe de cante que cómo canta».\n\nJuan Pavón era enciclopedia viviente y representante último de una raza y de unos modos, de una filosofía, de unas familias que se extinguen con los tiempos modernos. Heredó en su sangre la «estirpe», eso que según el diccionario es la raíz, el tronco de una familia o linaje, su prosapia, su raza. Triana y Cádiz, y en medio, Los Puertos, Puerto Real, Los Vargas, Los Pavón, Los Ortega, Los Gallos. ¿De dónde\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"lugar\"]\n\nextinguen con los tiempos modernos. Heredó en su sangre la «estirpe», eso que según el diccionario es la raíz, el tronco de una familia o linaje, su prosapia, su raza. Triana y Cádiz, y en medio, Los Puertos, Puerto Real, Los Vargas, Los Pavón, Los Ortega, Los Gallos. ¿De dónde le viene a Pavón tanto enlace, tanta relación, tanta nobleza y tanto conocimiento?... De la estirpe, de haber nacido en la cuna de las cunas de los apellidos, la sal, el lugar y los paisajes. Nació Juan en Puerto Real por el año 1895, más o menos cuando el Gallo D. José. Su padre era José Pavón, maestro fragüero de Triana y que aquí le decían, según Juan, «El Sevillano». Su madre «La Curra» de Cádiz y en medio, y como uniendo las dos ramas, los dos troncos, las dos familias y geografías, él, Juan Pavón. Nunca Cádiz y Sevilla tan juntos y eso le dará a sus cantes una profunda variedad, sello, enjundia, estilo. Aprenderá mucho, escuchará bien. Se acunará en los aires del Guadalquivir-Triana y la sal de la Bahía. Como en aquellas épocas, se irá ha\n\n[ENDING CONTEXT]\n\ncon él cerraba toda una historia de hombre de bien generoso, honesto, de corazón humilde en lo personal y una página de vida de toda una estirpe de fragua y cante, raza y descendencia, pureza y estilo de lo que ha sido y es la cultura de honda raigambre del flamenco.\n\nUnas soleares de Juan:\n\n«En mi sueño te llamaba y como no respondía llorando me despertaba». Y unos humildes versos a su memoria:\n\nQue se quedó sin la voz la hermosa Puerto Real porque se ha ido su hijo Juan Pavón, la soleá. Que los Puertos están en deuda y le rinden a compás este sencillo homenaje... de historia y vida cabal.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Perfil humano y flamenco de «El Cojo Pavón»",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-13",
+    "page_number": 11,
+    "word_count": 2126,
+    "article_char_count_full": 11620,
+    "article_char_count_review": 2660,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "lugar"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-01-13-right-sobre-manuel-mart-n-mart-n-ultim",
+    "article_text_for_review": "Ultima publicación\n\nAgustín Gómez\n\nEstimados directores de Candil: Creedme si queréis, nunca leo ni he leído a Manuel Martín Martín, salvo cuando se ocupa de mí. Empezó en aquel número de «Sevilla Flamenca» donde me pusieron el nombre con negrillas muchas veces. Tal vez de no haber sido por las negrillas no le hubiera leído. No me interesa su prosa. En algunas ocasiones le he oído porque así venía rodado y no iba a levantarme; por supuesto que a la Universidad fui a ver a un cantaor y un guitarrista. Si en Benalmádena participé en su coloquio fue a nivel de debate de congreso, como ha podido ser en alguna otra reunión o asamblea. De su disparidad de opiniones con respecto al Lebrijano supe por un espacio de Canal Sur Radio, como del enfado que ambos sostuvieron y que muy pronto acabó cuando juntos emprendieron la ruta universitaria, donde, para «mantener el nivel», le llamó «maestro» y «príncipe».\n\nLa verdad no necesita un discurso tan largo; «su verdad», sí. Todo hubiese sobrado si hubiese presentado la gran prueba: la grabación primera y privada en la que se apoyan de Antonio Mairena para contrastarla con la de Morente, y así escuchar lo que cada uno ha puesto de su parte. Así se la pedí yo desde el principio, porque en su palabra no creo, y todavía la estoy\n\nesperando. Lo único que he reclamado siempre es el derecho de Santo Tomás. Yo sí le presenté en una Asamblea de Críticos las grabaciones montadas de Mairena, el Matrona, Morente y Marchena (Valderrama fue después, cuando recibí las cassettes de Utrera) y no hubo nada que objetar ni por su parte ni por la Asamblea. Mi verdad empieza y acaba en quienes me conocen bien, en mis paisanos, en quienes saben de mi vida. No me tienen por «califa con o sin perdón», ni mucho menos. Esas son cosas de hiperbólicos; el cordobés es ponderado. Jamás he pretendido otro ámbito para mi verdad y no voy a defenderme de M.M.M. Tampoco de algún paisano resentido, sin previo sentido, que arremeta contra mí, porque me defiende la evidencia, sobre todo en donde nos conocemos todos. No podría de otra manera llevar treinta años sin descanso en el mismo palmo de tierra, por más que M.M.M. me crea desahuciado.\n\nCualquiera podría pensar que esta disputa sólo puede detenerse en el campo del honor o en el juzgado de guardia; pero, tras de leer vuestros últimos papeles de M.M.M., que tenéis la gentileza de adelantarme para que pueda estar a tiempo en la réplica —¡ya veis, cuando os contesto a vuelta de correo!—, tengo la penosa impresión de asistir a aquel juicio que se hacía al capitán del amotinado Cai-ne. ¿Recordáis aquel manoteo de Humphrey Bogart con las bolas de níquel? No hizo falta más. Todo el mundo quedó tristemente emocionado y enmudecido. Los amotinados llevaban razón. Por favor, estimados directores de Candil, no me mandéis más papeles de M.M.M. Le perdono, pero no quiero leerlos.",
+    "title": "Sobre Manuel Martín Martín Ultima publicación",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 500,
+    "article_char_count_full": 2868,
+    "article_char_count_review": 2868,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-01-14-left-el-flamenco-dos-est-ticas-manuel",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nN o es la primera vez que me ha pasado por la cabeza expresar en alguna parte, y para ello nada mejor que esta revista, mi inquietud por el fenómeno que se viene observando desde hace ya algunos años atrás, demasiados tal vez, con las consecuencias irreversibles que dicho fenómeno puede tener o está teniendo ya, en el mundo del Flamenco. Me refiero a la marginación, postergación y «damnatio memoriae» de todo un sector de la afición que en otro tiempo fue pujante y que ahora vive acomplejada, hibernando en las cavernas, con lo que ello significa de amputación de una buena parte o de una fértil rama del frondoso árbol del arte flamenco, aunque sea la rama más etérea, la menos próxima a la raíz.\n\nLa lectura del libro de Antonio Murciano «Mi vida y el cante, Memorias flamencas de Juanito\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publicado\"]\n\nrginación, postergación y «damnatio memoriae» de todo un sector de la afición que en otro tiempo fue pujante y que ahora vive acomplejada, hibernando en las cavernas, con lo que ello significa de amputación de una buena parte o de una fértil rama del frondoso árbol del arte flamenco, aunque sea la rama más etérea, la menos próxima a la raíz. La lectura del libro de Antonio Murciano «Mi vida y el cante, Memorias flamencas de Juanito Valderrama», publicado por la Diputación de Jaén, en el que creo ver por encima de todo un contenido rei- Son todos aquellos artistas y aficionados que representan una estética diferente a la que impera en los canales oficiales que dominan hoy este mundillo, proscritos prácticamente de las apariciones públicas e ignorados por la crítica oficial, los supervivientes o herederos, si los hay, de la etapa anterior al renacimiento de los festivales, de la conocida como Opera Flamenca. vindicativo y deseo de un justo reconocimiento, me ha animado a decidirme a escribir estas líneas, consciente de que mi opinión es una humilde opinión, pero la de una persona que, después de mi profesión, es el flamenco la actividad humana que más me interesa, y que por razón de la edad he podido obser\n\n[ENDING CONTEXT]\n\nmarginación y de aquí a la extinción para siempre no hay más que un paso, porque ya no se van a volver a repetir las condiciones históricas y sociológicas que hagan al flamenco nacer de nuevo, si ahora alguna de sus ramas se seca. Si esto ocurriera, se empobrecería el panorama de nuestro arte, como se empobreció con el exclusivismo anterior de la Opera Flamenca, y habría que considerarlo, al menos, como una lamentable pérdida, de la misma manera que no hubiera tenido perdón de Dios que no se hubiera hecho a tiempo la recuperación de la otra rama que en otro momento estuvo a punto de secarse.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El Flamenco: Dos estéticas Manuel",
+    "periodical": "candil",
+    "issue_id": "1995-01",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 2176,
+    "article_char_count_full": 12774,
+    "article_char_count_review": 2849,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicado"
+      }
+    ]
+  }
+]
+```

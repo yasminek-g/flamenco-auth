@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1983_02::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Juana De Alva Over Labor Day weekend in September 1982, a three-day camp-out juerga was held in the Big Sur Mountains in California which included Middle Eastern, East Indian and flamenco performers and aficionados. The most exciting aspect of this gathering from this flamenco dancer's point of view was the exposure to so many styles of music and instruments which, in spite of their differences, seemed to have a common bond. Having been long familiar with the gypsies' claim of Indian origins it was enlightening to find what could be called the link between ancient Indian dance and flamenco in the form of the kathak (kātāk) which comes from Northern India. It was positively eerie to see the barefoot dancer executing rhythms and movements (some in twelve beat phrases) so like our\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"rhythm\"]\n\ns, seemed to have a common bond. Having been long familiar with the gypsies' claim of Indian origins it was enlightening to find what could be called the link between ancient Indian dance and flamenco in the form of the kathak (kātāk) which comes from Northern India. It was positively eerie to see the barefoot dancer executing rhythms and movements (some in twelve beat phrases) so like our \"desplantes\" por bulerías. This along with the intricate rhythm and verbal code with which the dancer and musicians communicated made me a believer. Much thought and preparation had gone into putting this gathering together, but it was still a place for only the heartiest souls. One had to endure a treacherous single lane road into the meadow, biting bugs, billows of dust, barking dogs and sleeping (if you were lucky) on a bed of straw. But what would one expect at a camp-out -- the Hilton? LEFT TO RIGHT: PIER \"GABRIEL,\" RICK HUNTER, DON \"AGUSTIN,\" PILAR MORENO, TRISHA DE ALVA, AND ROSA MONTOYA (FRONT) AT BIG SUR JUERGA Some of the comforts provided were: giant plastic-covered geodesic slee\n\n[ENDING CONTEXT]\n\npiano. Paco developed his abilities in Spain and, from there emerged before an audience that sought him in every corner of the world. Europe, America, and Asia are mere points of reference in a continuous itinerary that broke through new frontiers and won admirers. He became a virtuoso, a true phenomenon, recognized by music authorities and critics. Chick is now a musical genius; his records have dazzled different generations and represent the highest peak in the field of experimental jazz; the doors of the White House opened to him by special invitation of the President of the United States.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "BIG SUR JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-18",
+    "page_number": 6,
+    "word_count": 5006,
+    "article_char_count_full": 28000,
+    "article_char_count_review": 2712,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "rhythm"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1983_02::A6",
+    "article_text_for_review": "THE GITANOS DIO NOT UNDERSTAND THAT IT IS POSSIBLE TO LEARN DANCE IN AN ORGANIZED MANNER [from: La Prensa, c. 1942; sent by Laura Moya; translated by Paco Sevilla] by Juan Martínez Those gypsies of which I have spoken danced their spontaneous desplantes and did some step to prepare another \"dibujo\" [picture or posel], for it was all the same to them to stand still in one spat with the feet together and slowly raise the arms, as it was to jump to one side with a stamp of the feet or do a turn on one knee. It was not easy for them to get the idea into their heads that it is possible to dance mathematically and with an organized preparation. The Andalucian dance, although it was within their reach, required the playing of castanets and a certain amount of study; due to the time required for this study, they were not interested, but preferred their own style and form which did not depend upon anybody or anything. This was their greatest enemy, not only in those times, but even today, being almost impossible for the gypsy to dance anything of the classical dance. From that time on, the gypsy separated himself from the classical Andalucian dance, remained completely isolated, and pursued, alone and step-by-step, his personal development, searching with the help of the banduria, guitar, and palmas, a means of defending himself against the powerful baile Andaluz. And thus, the different forms and dances of the baile gitano gradually emerged and later -- as in the baile Andaluz -- were given names. As time passed, the bandurria was losing strength among the gypsies, who preferred the guitar because they could play everything on it from the bandurria and the sound was more agreeable to the eaz. For whatever reasons, they decided upon the guitar -- except for the gypsies of the caves of the Sacromonte in Granada, where, even today, the old gypsies still use the bandurria as part of the history of the \"arte gitano.\" These flamenco guitars, to which so much is owed for having made the baile gitano (flamenco) prosper, like the baile gitano turned their backs on the Andalusian music -- although what they did was music. Those men, using only their musical ear, were able to reproduce on the guitar that which they heard around them. With the thumb they reproduced the sound of the singing voice and, with the left hand they searched the notes of the fingerboard to harmonize and coordinate the toque with the dance as well as the song. It is a unique case, the ability of those primitive guitar players -- as with the gypsy dancers -- to start out knowing nothing and create toques [musical forms] that combined perfectly with the steps of the bailaor or bailaora, no matter how unusual those steps were. The art of the baile flamenco did not concern itself in any way with the other dances that were popular in Spain and kept to its own....For many years the art continued without leaving the juegas -- it was well-suited to the people immersed in fiesta and wine -- but eventually figures appeared, bailaoras as well as bailaores, who were celebrated throughout Spain and, in some cases, outside of Spain. (If the foreign public had known about flamenco in those days, as they do today, the art would have been universally accepted for a much longer time.) When the cafés cantantes [much like present day tablaos] began in Spain [in the mid-1800's], they brought about the formation of the first flamenca cuadros. The cuadro consisted of a half-circle of performers facing the spectators, seated on the front half of their chairs in order to maintain the body erect and wrinkle-free, with men and women mixed and dancing one after the other, that is, in turn, each dancing that which they did best. The order was not based upon the talent of the artist, nor on the category of dance, but on the age or seniority of the performers -- a tradition in the tablao or flamenco system, as it is in the bullring, where the youngest matador kills the first bull even if he is the star performer; so it was with the flamencos. First the women danced, then the men, and finally the cuadro ended with the cantacor and his accompanying guitarist going forward while the rest of the cuadro left the stage. During this period there were first class bailaores of flamenca in Spain, as there was in the baile Andaluz. The dances, as with those of the rest of Spain, were being recognized by their respective names, and we find among them, one of the most primitive, \"Tana\" or \"La Tana,\" a name given, certainly, because it was that of a celebrated gitana of that time. Another primitive dance rhythm is the zapateado, and I have already said that the cachucha gitana was the bulería, and later the soleares, alegrias, and tangos -- serious and \"por chufa\" -- were danced. THIS SPACE RESERVED FOR YOUR CARD-SIZE AD SPECIAL OFFER $10 FOR 1 MONTH - $25 FOR 3 MONTHS PRICE APPLIES TO PHOTO READY ADS (ONE TIME $5.00 FEE IF AO DESIGN IS REQUESTED)",
+    "title": "JUAN MARTIN: EL ARTE FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20",
+    "page_number": 20,
+    "word_count": 874,
+    "article_char_count_full": 4949,
+    "article_char_count_review": 4949,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_02::A7",
+    "article_text_for_review": "FLAMENCD DAZZLES: TEODORO MDRCA DANCES [from: The Daily Breeze; sent by Teodoro Morca] by Ray Bowman Teodoro Morca, an extraordinary Spanish dancer who can dazzle and excite, brought his spirited \"Flamenco in Concert\" to the Harbor College Theatre stage Friday for a one-night only performance. In his chosen field of creative ethnic dance, Morca is a complete master. He has a purity of style, a brilliant technique and a fiery temperament. Partnered enchantingly in the duo dances by his lovely wife (Isabel Morca) and accompanied by gifted Bruce Patterson on guitar, Morca's program offered a satisfying cross-section of flamenco rhythms and several Spanish style dances inventively chregraphed to the idiomatic compositions of Breton and Litbloff and to the unidiomatic compositions of J.S. Bach, Morca, were gorgeous and the stage lighting was artfully planned to effectively create the proper mood for each dance and to enhance and dramatize Morca's choreography. Morca, like the recently retired Jose Greco, is an American-born dancer who learned his craft by studying in Spain and by performing with well-known Spanish dance troupes. While in Spain and Europe, Morca was a principal dancer with the famed company of Pilar Lopez. Before that he toured around America with the Martin Vargas cuadro and also with the companies of Greco and Lola Montes. The tall, strikingly handsome Morca, who was in top form for Friday's appearance, possesses in his flamenco dancing all of the essential aspects serious aficionados look for in a male dancer: virility, fbrce, expressive footwork, feeling and good taste. His dancing also succeeds in preserving the original elements of flamenco by retaining the spontaneity and the purity of expression that sprang from the unique Moorish influenced Andalusian culture of Southern Spain. In \"En Las Minas de Cobre,\" a profound gypsy rhythm danred to the haunting song of the miners of Levante, Morca demonstrated his iron technique, uncompromising masculinity and prud elegance of figure and movement. Showing a starkness of interpretation which is a vital aspect of true flamenco dancing, every heel tap, hand clap, snap of the fingers and facial expression had a special meaning. A virtudistic display of improvised footwork with \"palmas\" in the joyous and dashingly danced \"Ritmos de Cádiz\" (alegrías), showcased Morca's absolute grasp of flamenco's complex rhythms and counter-rhythms. The sizzling male-female relationship in flamenco mixed dancing came alive when the Morcas performed a torrid \"Cana\" to the guitar rhythms of \"Sbleares por Bulerías.\" There was AM. BUS. STEMSHIP - RAIL - DOMESTIC AND WORLD TOURS REYNOLDS S. HERIOT OWNER - MANAGER also plenty of fire and emotional interplay between the partners in an earthy \"Mirabras.\" Isabel's \"Tango Gitana\" was sensuous and frivolous and the gay and wild \"fiesta de Jerez\" finale conveyed infectious spontaneity. Patterson's twb neatly executed guitar solo improvisations were well-received and his \"compás\" and accompaniments for the dances were excellent. 320 HIGHLAND AVENUE • NATIONAL CITY. CA 92050 • 477-0675 TRULY NATURAL INGREDIENTS AND A SPECIAL \"SECRET\" RECIPE MAKE ROSA'S GOLDEN BROILED CHICKEN THE BEST IN THE WEST! ONCE YOU TRY US -- YOU\"LL TRY US AGAIN & AGAIN & AGAIN & AGAIN!! FLAMENCO ENTERTAINMENT SATUROAY 7-10:30 p.m. Paco Sevilla & Pilar Moreno with: Juanita Franco & Angelita (Feb. 19 & 26) Juana De Alva and Liaa Mellizo (Mar 5 & 12) Coming in March - Rayna A premium string designed especially for the top line of flomenco guitors—the choice of many leading guitarists, classical or well-flamenca. At your local dealer or contact: Antonio David Inc., 204 West 55th Street, N.Y.C. 10019—(212) 757 3255 (212) 757-4412",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21",
+    "page_number": 21,
+    "word_count": 588,
+    "article_char_count_full": 3741,
+    "article_char_count_review": 3741,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_02::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJANUARY JUERGA by Yvetta Williams The Los Angeles area's January 15, 1983, juerga at Joaquín and Liza Feliciano's dance studio was great fun and a night to be remembered. Joaquín, Liza and Liza's parents were wonderful hosts and prepared a marvelous buffet of fantastic potato salad, ham, vegetables, dip and drinks. With the addition of \"tapas\" and drinks brought by everyone, there was plenty of good food, good conversation, good music, song and dance making for an evening of great flamenco fun. We all thank the Feliciano family for hosting us all. As well as a feast in food there was a feast of guitarists (most of them professionals). We were blessed with Filipi Lopez, Bill Freeman \"El Niño de Sepia,\" David De Alva, Trisha De Alva, Mr. Jingles, Alberto Almar, Roy Mendez Lopez, John,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"traditional\"]\n\ng and dance making for an evening of great flamenco fun. We all thank the Feliciano family for hosting us all. As well as a feast in food there was a feast of guitarists (most of them professionals). We were blessed with Filipi Lopez, Bill Freeman \"El Niño de Sepia,\" David De Alva, Trisha De Alva, Mr. Jingles, Alberto Almar, Roy Mendez Lopez, John, Miguel Ochoa, Yvetta Williams and others. We enjoyed all of them and their fine music, both in the traditional and contemporary flamenco styles. They all helped to make a great juerga and we hope to see them all at the March 4th juerga. Darian Cabral was visiting from Phoenix and shared some nice cante. Carla Ochoa sang and danced beautifully; Bill Freeman sang as well as played. We had the pleasure of watching Shauna Hanoff, a professional dancer from New York, who arrived the day of the juerga and shared her beautiful dancing talent. We also took pleasure in watching \"Paquita\" dance. She is originally from Chicago but has worked the last 5 years as a dancer in Spain. She was in California visiting her sister and family, and they all came to the juerga. She is a strong, beautiful dancer. Our youngest dance team of Eric Cortez and Yrma Horta danced sevillanas and alegrias. It is always good to see them dance. Special \"thank you's\" to all those who sew the beautiful costumes which add so much beauty and atmosphere to the juergas. And thanks to all of you beautiful dancers who wear your costumes and share your talents. We give thanks to Annette Pratte, Esthela Alarcon, Elizabeth Vaquer, Cynthia Ortega, Joy Padilla, Liza Feliciano, Joaquín Feliciano, Jean Wilder, Luisa Carmody and the others whose names I didn't get. Raul Berrios played guitar and sang La Bamba and Las Mujeres. It is always a pleasure to hear him perform. We thank our photographer Dick Williams for recording the juerga on film and taking the pictures for $ \\underline{\\text{Jaleo}} $. We appreciate the donations given at the door by those who did contribute. We still are not getting in enough money to cover the cost of the juergas. We hope that all who attend will give what they can afford a little more freely. We are still trying to avoid charging a s\n\n[ENDING CONTEXT]\n\ndance to Antonic Machado's poem written on the occasion of Lorca's death. In a magnificent black gown with ruffled train, Rioja brought the full beauty and individuality of Spanish dance to its tragic theme. Dignity, pride, passion, grief, the inevitability of fate -- it was all there in this dancer's brilliant performance. She is an exceptional artist. Maybe some purists might question her interpretations. But her performance is riveting. The presentation skillfully simple. Even on a small stage, musicians, actors and dancers managed to accommodate themselves without looking cramped... 一\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "LOS ANGELES JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "22-26",
+    "page_number": 22,
+    "word_count": 1223,
+    "article_char_count_full": 7371,
+    "article_char_count_review": 3821,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "traditional"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1983_02::A9",
+    "article_text_for_review": "RECENT PHOTOS OF PERFORMERS AT THE RINCON DE ESPAÑA IN NEW YORK LEFT: CANTAOR MANUEL AGUJETAS AND DANCER MARA SULTANI, RIGHT: GUITARIST ROBERTO REYES WITH MARA.",
+    "title": "MISCELLANEOUS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_02",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "27",
+    "page_number": 27,
+    "word_count": 26,
+    "article_char_count_full": 160,
+    "article_char_count_review": 160,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

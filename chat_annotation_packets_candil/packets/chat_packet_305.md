@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1995-05-6-right-la-personalidad-flamenca-y-human",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nS e consumó la serie de actos programados para rememorar el perfil humano y flamenco de José Cruz García, presidente que fue de la Peña Flamenca de Jaén durante casi una década. Personalidades flamencas como José de la Tomasa, «Joselete de Linares», Rosario López, «El Mistela», Rafael Salinas o Alfonso Fernández Malo, evidenciaron que en la memoria flamenca de los aficionados aún anida la labor y los bellos momentos vividos con el desaparecido Pepe Cruz.\n\nRamón Porras, en las motivaciones que justificaban el homenaje, lo expresaba de la siguiente manera: «Hubiera sido olvido imperdonable que la Peña Flamenca de Jaén, a los pocos meses de un fallecimiento que a todos nos conmovió, no rememorase la figura señera de Pepe Cruz. Era de estricta justicia, porque el rememorado personificó\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grande\"]\n\non el desaparecido Pepe Cruz. Ramón Porras, en las motivaciones que justificaban el homenaje, lo expresaba de la siguiente manera: «Hubiera sido olvido imperdonable que la Peña Flamenca de Jaén, a los pocos meses de un fallecimiento que a todos nos conmovió, no rememorase la figura señera de Pepe Cruz. Era de estricta justicia, porque el rememorado personificó singularmente la lucha diaria por la reivindicación del Flamenco. A éste lo han hecho grande, en las postrimerías del siglo XX, no la abundante bibliografía publicada, con ser importante; no las figuras estelares; los divos del cante, toque y baile, con ser primordial la aportación de las mismas. Al Flamenco lo han hecho grande gente que, como Pepe Cruz, ha desarrollado una labor indesmayable en favor de la pureza de este arte, gente en su mayoría anónima, auténticos braceros de lo jondo. Pepe Cruz fue, ante todo, el prototipo del genuino aficionado. Recordar en esta X Semana de Estudios Flamencos su ingente, su amoroso quehacer por el Flamenco, no es inocuo provincialismo. Es sencillamente una mínima muestra de reconocimiento a quien tanto ha sacrificado por la cultura de esta ciudad». La juventud y la voluntad Se iniciaba la Semana con la presentación\n\n[ENDING CONTEXT]\n\nRafael Romero, Pepe Marchenilla y el recientemente fallecido Pepe Cruz, la cual fue cantada por Rosario López, acompañada por la guitarra de José Rojo.\n\nMás tarde se celebró la cena conmemorativa de la fundación de la Peña, hace 24 años, y un fin de fiesta protagonizado —según mis noticias, pues tampoco puede estar presente— por el bailaor de Los Palacios «El Mistela» y su cuadro flamenco, el cual compuso —según las mismas fuentes— un artístico baile por alegrías en el que mostró su adecuación de la figura, compás y bellas maneras para desarrollar el baile, a pesar del reducido escenario.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La personalidad flamenca y humana de Pepe Cruz. X Semana de Estudios Fla- mencos de la Peña de Jaén Rafael",
+    "periodical": "candil",
+    "issue_id": "1995-05",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 1758,
+    "article_char_count_full": 10666,
+    "article_char_count_review": 2846,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grande"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-05-8-right-homenaje-a-pepe-cruz-alfonso",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCuando el tiempo estampa su último sello remitiéndonos con el último cartero a las tierras de quién sabe dónde, en ese viaje de ida, siempre de ida, nunca de vuelta, donde uno se lleva cualquiera sabe qué cosas, me siento reclamado por tus ojos de ida y vuelta, ni grandes ni desconocidos, reclamado por tu dedo siempre abierto a un amarillo nicotina, por la blanquísima tirantez de tu pelo, hoy que me encuentro sentado en el hueco que dejaste y donde aún retumba la voz de Carlos Marx en la bóveda de tu Cristo penitente.\n\nEn esa caja sonora —si del pecho hablo al corazón me arrimo ya que todo hueco se resume siempre en algo— late el ansia de dar sin recibir de Pepe Cruz, la vida que se da porque la vida tiene que seguir, el dolor como la hijuela del amor más enraizado, la soledad más\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"cuerpo\"]\n\na blanquísima tirantez de tu pelo, hoy que me encuentro sentado en el hueco que dejaste y donde aún retumba la voz de Carlos Marx en la bóveda de tu Cristo penitente. En esa caja sonora —si del pecho hablo al corazón me arrimo ya que todo hueco se resume siempre en algo— late el ansia de dar sin recibir de Pepe Cruz, la vida que se da porque la vida tiene que seguir, el dolor como la hijuela del amor más enraizado, la soledad más dilatada en el cuerpo más pequeño haciendo de las suyas. Algo de eso fuiste y si hablamos de huellas, esas son las huellas que venteo a través de tus letras, letras de la Academia del pueblo donde todo vive y todo explota al pie del sentimiento. Y así dijiste, tocando el bordón gordo de la muerte: Tú te mueres, yo me muero, toma sangre de mis venas, que yo me muera primero. Como a todo hombre, te recorre tu historia. Oíste a Marchena, tu tocayo, y a Canalejas y el toque enrachado de Ricardo, tiros esenciales en aquella época de tiros innecesarios, época de compás disparatado y voces atravesadas con guitarras funerarias. Y aquello fue, según memoria, ante la tiritona de los hombres hambrientos, un tiempo antes de que la parra floreciera en la taberna de la «Cachana», por los pagos de la Magdalena, el «maero» y el cante al son de los nudillos, al compás que no figura en los catecismos de la erudición como el de los premonitorios hermanos «Paraos» y el «Niño Ristra» entre otros. Cuando descubro en todo aque\n\n[ENDING CONTEXT]\n\nno nos vemos, por si los has perdido, decían así: Según dicen, de niño, Pepito Pegapalos, la gracia de su cruz: Pepe Soleá Calvario. Habitante de su hijo, justicia de paisano, tripulante de biblias en río comunitario, devoto persistente de Lenin y su mazo, catador de soleras, fabricante de agrados, (¿Qué hay?, Manolo el del Triángulo). Pretérito cantado, estoqueador de estómagos, (¡Niño, el bicarbonato!). Paseo de la Estación, la estatua en su peldaño, distancia para el choque, aviso de Bernardo, la voz tensa en el dedo y «¡Pepe, coño, Franco!», y Pepe por las nubes, según dicen, soñando.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Homenaje a Pepe Cruz Alfonso",
+    "periodical": "candil",
+    "issue_id": "1995-05",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-9",
+    "page_number": 8,
+    "word_count": 1440,
+    "article_char_count_full": 7930,
+    "article_char_count_review": 3069,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "cuerpo"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-05-10-left-la-poes-a-y-el-baile-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCursos de la Universidad Complutense (Ronda). Julio de 1995\n\nN o quiero pensar qué fue primero, si el baile o el cante, si la quemazón de la garganta o ese manoteo desgarrado con el que los primitivos integrantes del baile espantaban los malos mengues y pedían a undivé del cielo una muestra, siquiera mínima, de clemencia para tanto desgarro acumulado, para tanta pena desbordada, que amenazaba con romper los diques jondos y salpicar de espuma los límites de la sensatez. No sé qué fue primero. Ni quiero saberlo; que lo digan los especialistas, los sabios que hicieron entendible la historia del flamenco, los que la hieren con el escalpelo de sus indagaciones. Seguramente ellos tendrán respuesta para todo. Yo, solamente me arrodillo ante el estremecimiento que los poetas han sentido ante las\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombres\"]\n\nque hicieron entendible la historia del flamenco, los que la hieren con el escalpelo de sus indagaciones. Seguramente ellos tendrán respuesta para todo. Yo, solamente me arrodillo ante el estremecimiento que los poetas han sentido ante las vibraciones del baile, al percibir ese temblor primero de Telethusa, la mítica bailaora de Tarsis, que debió inaugurar el desgarro y el misterio primigenio, en aquella época dudosa en la que la historia de los hombres se mezclaba con los avatares increíbles de los dioses: Tu baile en la noche un relámpago de sombra. Tus brazos, alzados al cielo, ríos de dicha con luz propia que al alba iluminaban las estrellas. Un balanceo de caderas dulce como [el céfiro, y el vientre ondulado simulando dunas de un desierto por todos los deseos transitado. La luna no fue piadosa con mi pena y fue a esconderse, con rencor, en los posos amargos de mi copa. Más tarde, en todo tiempo y lugar de nuestras geografías, la jonda y la poética, la mayoría de los autores de prestigio se han asomado al brocal de este pozo sin fondo que es el baile. Si es cierto que nuestro arte tiene unos doscientos años de existencia, en los cuales podemos reconocer sus contornos, parece justo señalar que ya en el siglo XVIII, los escritores de aquella época, erudita y estirada, de Las Luces, se ocuparon de señalar su presencia, si bien, no sería hasta el entronque con la sensibilidad romántica cuando aparezcan los primeros textos expresivos de que, dicha constancia, no era simplemente fruto del gusto de tal o cual extravagante escritor, sino que respondía a una tendencia fuertemente arraigada, tanto en el contexto de la literatura popular, como en el de la mal llamada «literatura culta». Y es que, en efecto, tras la prueba de fuego y, ¿porqué no decirlo?, el desconcierto, causado, en los espíritus ilustrados, por la anarquía de nuestro arte, el Romanticismo supuso el espaldarazo definitivo al reconocimiento intelectual del mismo, puesto que el pueblo lo había adoptado, desde su primer vagido, como algo propio. Y es que, no podemos olvidar que nuestro arte, desarrollado y aclimatado en el siglo XIX, bajo las mismas coordenadas cronológicas y ambientales que el movimiento romántico andaluz, no podía permanecer al margen de esa circunstancia que le tocó vivir, y, de alguna manera, esos moldes expresivos estarían en estrecha conexión\n\n[ENDING CONTEXT]\n\nno debería tener fin, porque no lo tienen ni el baile ni la poesía. Tan sólo cabe esperar que se alce un telón, se ilumine un escenario y todo nuestro ser cruja, como un barco a la deriva, ante la grandeza de un cuerpo en tensión. Nos acordaremos entonces de la emoción compartida por aquel anónimo cantaor, que, ante una situación semejante, influido por los duendes misteriosos del baile, no pudo menos que exclamar, quedando con su voz la irremediable congoja que amenazaba con romperle el pecho:\n\nCuando sales a bailar con los brazos extendidos, pareces un águila real que abandonara su nio.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La poesía y el baile flamenco",
+    "periodical": "candil",
+    "issue_id": "1995-05",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-13",
+    "page_number": 10,
+    "word_count": 4390,
+    "article_char_count_full": 26002,
+    "article_char_count_review": 3988,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombres"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-05-13-right-manuel-torre-y-los-artistas-del-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLa importancia de la gitanería del Campo de Gibraltar en el arte flamenco, vía conexión con la familia de Manuel Torre, es enorme. Son muchos los lazos que a lo largo y ancho de la historia se entrecruzan en unos pocos apellidos que conforman el mapa más florido de esta comarca.\n\nSon los Montoya, Cortés, Arroyo, Soto, Fernández, Flores, Molina, Montero y Jiménez, junto con los jerezanos Vargas, Loreto y De los Santos, los que han provocado una inmensa nómina que sobrepasa la treintena de artistas del Campo de Gibraltar. Nómina que, «Manuel Torre», Jerez, 5-12-1878, Sevilla, 21-7-1933.\n\nAntecedentes por línea paterna\n\nManuel de Soto Gallardo (1749-?) y Gertrudis Leal. Miguel Arroyo (1736-?) y María Flores (1740-?).\n\nFrancisco Loreto (179?) y Catalina Medrano. Juan Jesús Vargas y Tomasa\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nsús Vargas y Tomasa Escalona. arrancando del legendario Juan Torres, pasa por Corruco, los Jarritos, los Chaqueta, llegando hasta nuestros días con Canela de San Roque y su sobrino Perico Cortés; ellos representan ciento cincuenta años de nuestra historia flamenca. De ahí que a continuación se aporte esta no exhaustiva relación de datos que estimamos obligados para su documentación y conocimiento. Es obvio que los parentescos directos con otras familias flamencas no acaba con lo expuesto, ya que las implicaciones y nexos acercan a los artistas del Campo de Gibraltar con muchas otras geografías. Diez días después de la aprobación por las Cortes de Cádiz de la Constitución Española de 1812, o sea, el 29 de marzo de 1812, en Algeciras tiene lugar el casamiento de dos gitanos, uno de Jerez, Manuel Soto Leal; otra catalana de Iguala la, Luisa Arroyo de Roxas (1788-?). Hijos de éstos fueron: Gertrudis (5-3-1813-?) de Alge- ciras. María Teodora (9-11-1815-?) de Algeciras. Juan Manuel (6-5-1819-?) de Al- geciras, de profesión primero jornalero, y después carnicero, que contrae matrimonio en Algeciras (30-11-1836) con la tembién algecreña Gabriela Montero Cortés (18-1-1820-?). Ambos son l\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_04 | trigger=\"segundo\"]\n\ntés, Manuel Montoya, «Canela de San Roque» y «Perico Cortés», todos ellos sanroqueños, excepto Miguel, natural de La Línea de la Concepción. Ramón (1826-?) de Algeciras. María del Rosario (17-6-1828 - 9-2-1895), de Algeciras. Cristóbal (17-6-1828-?). Igual fecha que su hermana María. De estos dos últimos también existen datos que los hacen hijos de José Soto y de Luisa Arroyo de Roxas, sin que hallamos resuelto esta contradicción. ¿Tal vez un segundo marido? Del matrimonio de los alge- cireños Miguel Arroyo Flores (1736-?) y María Flores (1740-?) nacieron al menos cinco hijos: Salvador de Algeciras, casado con María Molina, de Coín. Juan de Algeciras, casado con Luisa Jiménez, de Medina. José de Algeciras, casado con Josefa Molina, de Algeciras. Miguel de Los Barrios, casado con María Montoya, de San Roque, que tuvieron tres hijos, Diego, Andrés y Antonio; otro entronque que nos lleva a\n\n[ENDING CONTEXT]\n\nRíos Amaya, sobrino de Diego del Gastor.\n\nGabriela y Consuelo fueron sus últimas hijas. Tanto Amparo como María fueron cantaoras, pero sólo se prodigaron en la intimidad de la reunión familiar.\n\n(Ver árbol genealógico de «Manuel Torre» en páginas siguientes.)\n\n(2) Los datos del «Loco Mateo» fueron desvelados por José Manuel Barbadillo y Arellano a instancia de algunos otros que ya poseíamos.\n\n(1) En la partida de defunción dice hija de Antonio Soto y Grabiela Montero (2) En la partida de nacimiento dice hija de José Soto y Luisa Arroyo (3) Pendiente comprobación por desaparición de datos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Manuel Torre y los artistas del Campo de Gibraltar",
+    "periodical": "candil",
+    "issue_id": "1995-05",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-15",
+    "page_number": 13,
+    "word_count": 1668,
+    "article_char_count_full": 10445,
+    "article_char_count_review": 3786,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-05-16-left-preg-n-del-quija",
+    "article_text_for_review": "Viene pregonando El Quija su cante por Mirabrás, recorre la calle Ancha, Plaza el Cabildo y San Juan.\n\nDe miel y azúcar, de miel y azúcar, pasteles finos, son de Sanlúcar.\n\nRepostería, la de más fama, recién hecha en el barrio de Bajo Guía.\n\nSoy pastelero, soy pastelero, endulzarte la vida lo que yo quiero.\n\nNiños y niñas llorar y tirarse por el suelo, comprarán vuestras mamás pasteles al pastelero.\n\n¡Ay! carmelitas, bizcoteras, palmeras y sultanitas, sabrosa torta de aceite, los tocinitos de cielo. Pruebe, deguste y deleite, barquillos del barquillero.\n\nGrande y pequeño, grande y pequeño, toítos mis dulces,\n\nPaco Arana son sanluqueños.",
+    "title": "Pregón del Quija Poesía",
+    "periodical": "candil",
+    "issue_id": "1995-05",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 104,
+    "article_char_count_full": 644,
+    "article_char_count_review": 644,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

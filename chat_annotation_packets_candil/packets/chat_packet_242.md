@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-09-25-right-buz-n-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSr. Director:\n\nEl flamenco, nuestra pequeña-gran cultura, establecida dentro del folklore hispánico, ha aportado durante, aproximadamente, dos siglos, una sucesión de fenómenos inflexionantes, motivados por los avances temporales.\n\nDesde la «Epoca Hermética», representada por «Tío Luis el de la Juliana», pasando por el establecimiento cultural-espectáculo de los llamados Cafés Cantantes, creados por su principal modelo personal y a su vez fundamental, para dejar la «Epoca Estilo», fue sin lugar a dudas el majestuoso Silverio Franconetti, conocido por todos como «El Gran Silverio». Más tarde, como queriéndose repartir la ansiada cultura, única en nuestro entorno geográfico, una serie de estilistas, tales como: Torre, Pastora o Mairena, ponen punto final a la época del estilo tradicional y\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"críticas\"]\n\nor todos como «El Gran Silverio». Más tarde, como queriéndose repartir la ansiada cultura, única en nuestro entorno geográfico, una serie de estilistas, tales como: Torre, Pastora o Mairena, ponen punto final a la época del estilo tradicional y básico. Un paréntesis ocasionado como señal, razonable cansancio de una cultura atorada de competidores estilos, hace nacer, para disolver dulcemente el cante, una figura sin igual para soportar, con sus críticas nobles, el peso de una contra-cultura, necesaria para realizar el pequeño pero básico cante de Levante: éste fue el «Niño de Marchena». Posteriormente, una tumultuosa ola, híbrida, individual y colectiva, da paso al actual modo de hacer flamenco. Rozando la curva del cambio inflexionista, sólo de paso por los lugares más tradicionales y esperando, no sin realizar, como el resto de las pasadas épocas, dos lugares céntricos, a poca distancia, en su más honda tradición, dos cantes creados por el pueblo, he escuchado en dos gargantas distintas, pasadas y futuras, trabajadas a su forma, y han sido las únicas que última mente me han hecho pensar que aún existen como base catedralicia, para sostener el cante flamenco; la religiosa Toná y la fuerte y libre Siguiriya del pueblo. Y es\n\n[ENDING CONTEXT]\n\nNacional de Arte. Flamenco de Córdoba, el Premio La Macarrona, y en 1986 participa en la III Cumbre Flamenca de Madrid, en el Teatro Alcalá Palace, con el espectáculo «Cantando la pena, la pena se olvida», en compañía de Calixto Sánchez, María La Burra, Chano Lobato y otros destacados artistas, espectáculo con el que viaja por la geografía española. Entre sus actuaciones en 1987, cabe destacar su intervención en «Las noches flamencas» del ciclo artístico «Los Veranos de la Villa», de Madrid. De amplio repertorio, está considerada una de las más significativas intérpretes de la actualidad.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Buzón flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-09",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-27",
+    "page_number": 25,
+    "word_count": 1019,
+    "article_char_count_full": 6309,
+    "article_char_count_review": 2869,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "críticas"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-11-3-left-editorial",
+    "article_text_for_review": "Editorial\n\nE n las entrañas de un universo tan existencial como el del flamenco, la Navidad halla específicos espacios que por lo general, se relacionan con sentimientos materno-filiales. Por vía de asunción y adaptación de la copla popular, el flamenco plasma singularidades, en numerosos villancicos, que, a poco que se ahonde en ellos, deberían de asombrar a estudiosos y teóricos de la teología dogmática. Así, por dejar constancia de un solo ejemplo, la unidad de emoción con que se capta el misterio salvífico —referencias indisolubles a la Pasión y Resurrección—. Ello, sin que que de desvirtuado el carácter festivo de tan excelso alumbramiento y, sobre todo, sin que deje de acentuarse un anecdotario tan afín al mundo marginal de este arte, como el que hace referencia a la persecución, a la huida, a la indigencia.\n\nNo es posible, en términos flamencos, el realizar una sistema-\n\ntización del villancico como cantes básicos, y cantes derivados y cantes aflamencados. En terminología jonda lo que identifica al villancico es la letra, aunque tal afirmación, con ser cierta, demanda alguna preciación. Sin que podamos o sepamos exponer irrebatibles objetivaciones al respecto, es lo cierto que los artistas que han interpretado magistralmente el villancico, lograron impregnar\n\na éste de un aire, en melodía y en compás, pleno de júbilos o de entrañables asentimientos. Pastora, Vallejo y Canalejas de Puerto Real, por citar sólo tres ejemplos paradigmáticos, cantaban formalmente bulerías, fiestas o soleá, pero interpretaban villancicos. Más recientemente, Rosario López, en su último larga duración, aún manteniendo esta vieja tradición, invierte en algunas de sus creaciones este proceso, es decir, canta villancios —aires folklóricos o populares— pero interpreta flamenco o lo que es lo mismo, eleva a la categoría de jondo lo que formalmente son aires folklóricos navideños. En uno u otro caso, se echa en falta, dentro de la ya abundante bibliografía jonda, una monografía que sea capaz de sistematizar el villancico, o lo que es lo mismo: capaz de transmitirnos cómo susurra, cómo tiembla, cómo se estremece el flamenco en la flamenca Navidad.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1991-11",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 339,
+    "article_char_count_full": 2160,
+    "article_char_count_review": 2160,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-11-3-right-algunas-reflexiones-sobre-el-art",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n...P\n\n...Andalucía reúne históricamente la excelencia de grandes y geniales artistas, todo ello producto indudable de su eximia cultura. Las Instituciones públicas por el bien de la cultura de sus pueblos, no pueden silenciar, ni deben ser cicateras con aquellos que han dedicado y vaciado su vida por el arte, y el flamenco es tan arte como las letras y la pintura, y a sus más grandes artistas tienen la obligación de situarlos en los niveles que es de exigencia en la historia de las artes...\n\nSobran alegatos, sobran comparaciones y ni tan siquiera los ejemplos y conceptos arrojarán más luz que el sentimiento y patetismo que encarna una siguiriya, ni la pasión y el humanismo a rebosar que en-\n\nvuelve la jondura de una soleá.\n\nCon el siglo XX agonizante, no debiere seguir reinando en la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"Públicas\"]\n\nlas artes... Sobran alegatos, sobran comparaciones y ni tan siquiera los ejemplos y conceptos arrojarán más luz que el sentimiento y patetismo que encarna una siguiriya, ni la pasión y el humanismo a rebosar que en- vuelve la jondura de una soleá. Con el siglo XX agonizante, no debiere seguir reinando en la cultura de muchos andaluces, las connotaciones y valoraciones que aún se tiene de lo flamenco. Este reto lo tienen nuestras Instituciones Públicas y Docentes aún pendiente de superar, máxime si estimamos la lectura tan positiva que se ofrece en otros países del diálogo flamenco y de las motivaciones humanas que éste genera. El diseño artístico de lo flamenco en su más lejana formación, deviene en un diálogo abierto por costumbristas y escritores viajeros, poetas y músicos de muchas nacionalidades en el siglo pasado. La Generación del 27 fue más allá de la protesta, asumiendo y defendiendo sus valores intrínsecos. Manuel de Falla, García Lorca, entre otros muchos, también volcaron iniciativas e inquietudes en este sentir. El flamenco es la cultura lírica más genuina de Andalucía y puede que sea también la más definitoria en su identidad cultural como pueblo, y ello a muchos andaluces y no andaluces gustosos de este arte inconmensurablemente sublime, nos enorgullece. Nadi\n\n[ENDING CONTEXT]\n\nrobe la libertad, quizá no tengamos sensibilidad para distinguir el Ecuador de lo blanco y lo negro, del día y de la noche, del calor y del frío de la verdad y la mentira, quizá todas ellas sean producto de sus obras. Quizá nuestro arte flamenco venga parido del vientre de aquellas largas y negras noches de frío, del infortunio de la mentira de la llamada civilización del orden.\n\nSeguro que no tardarán el día en que las blancas fachadas de nuestra Andalucía, den su calor y abrigo a la verdad del cante, a la verdad de la más rica y sublime música nacida de entre las entrañas de un pueblo. ■\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Algunas reflexiones sobre el arte flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-11",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 1480,
+    "article_char_count_full": 8887,
+    "article_char_count_review": 2916,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "Públicas"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-11-5-left-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCon la entrega que hoy publicamos, termina la aportación que el maestro González Climent ha venido realizando a la revista «Candil». La difusión de «Viejo Carné Flamenco» suscitó enconos y opiniones irreductibles de personas muy significadas en los entornos flamencos. Desde quienes consideraron inadecuada su publicación —el escritor argentino zarandeaba la majestad de mitos recientes—, hasta quienes dogmatizaron sobre las convicciones últimas de González Climent, en el sentido de que éste no hubiese modificado hoy ni un ápice sus análisis, posición esta última que contradijo en esta misma revista Pedro Sánchez, en base a la nutrida correspondencia que mantuvo con el autor de «Flamen-\n\ncología», tan lamentablemente desaparecido.\n\nEn cualquiera de los casos, la revista «Candil», creemos\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"publicación\"]\n\nmajestad de mitos recientes—, hasta quienes dogmatizaron sobre las convicciones últimas de González Climent, en el sentido de que éste no hubiese modificado hoy ni un ápice sus análisis, posición esta última que contradijo en esta misma revista Pedro Sánchez, en base a la nutrida correspondencia que mantuvo con el autor de «Flamen- cología», tan lamentablemente desaparecido. En cualquiera de los casos, la revista «Candil», creemos que, con la publicación de esta obra póstuma de Anselmo González Climent, pendiente de revisión según sus propias manifestaciones, ha contribuido, por lealtad a sus propios lectores, a que sea conocido el pensamiento, respecto de figuras y estilos flamencos, de uno de los teóricos más brillantes, en este arte. Ramón Porras 1 El compositor Mauricio Ohana, nuevo miembro del jurado junto con Juan Talega, es un hombre de cincuenta años, gentil, ordenado, modesto. En torno al flamenco es muy reflexivo y sincero. Tiene una personalidad flexible sin dejar de atenerse a varias líneas directivas. Digo todo esto porque Ohana presumió que el concurso era un centro de organización de estudios donde correspondía a los miembros del jurado cumplir un trabajo lo más científico posible. Echó su cuarto a espadas en la cuestión. Por cierto llevaba toda la razón del mundo. Prodigó un verdadero arsenal de ideas y métodos a ser considerados. Pero pronto se dejó languidecer cuando dedujo, tras el comportamiento muelle y fatalista de Ricardo Molina y allegados, que lo mejor consistía en ser simplemente jurado. Se limitó, entonces, a anotar en un cuadernillo personal todas las reflexiones y datos que eventualmente podría aprovechar para un posterior estudio musicológico. Anselmo González Climent Viejo Carné Flamenco 2 Ohana nació en G\n\n[ENDING CONTEXT]\n\nMairena y que yo propuse como acto de justicia elemental. Molleda contrapopuso que se registrara la mención a condición de que no trascendiera al perriodismo (sic).\n\nOhana, más ecléctico, consiguió ganar el ánimo del jurado para a renglón seguido de proclamar a Antonio Mairena como dueño de la Llave, hacer una «declaración genérica» felicitando la actuación óptima del resto de los participantes. Ricardo y Paco Salinas, con tal de no ver en peligro todos los honores implícitos en el premio mayor, concedieron con manga ancha cualquier tipo de distinción colateral, particular o genérica.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1991-11",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "5-9",
+    "page_number": 5,
+    "word_count": 4568,
+    "article_char_count_full": 28548,
+    "article_char_count_review": 3388,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicación"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-11-10-left-juanito-maravillas",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPaco V. Vargas\n\nHacía tiempo que teníamos ganas de hablar con Juanito Maravillas, pero por unas circunstancias o por otras nunca hasta ahora se había presentado la ocasión de hacerlo. Esta vez, de la mano de Juan José Holgado «El Canuto», un amigo común, se dieron las condiciones propicias para que en el Bar la Reja —el más antiguo de La Línea, según me confesó— la palabra, primero, y el Cante, después, se erigieran en protagonistas de una calurosa tarde del mes de julio. Una ensalá fresquita, unas copitas de manzanilla y el grupo de amigos que nos acompañó fueron testigos de la conversación que con Juan mantuvimos.\n\n—Candil. ¿Dónde y cuándo naciste?\n\n—Juanito Maravillas. Yo nació en Villaviciosa de Córdoba en 1922, el día 24 de enero, a las 12 de la noche.\n\n—C. ¿Tradición flamenca en tu\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nmero, y el Cante, después, se erigieran en protagonistas de una calurosa tarde del mes de julio. Una ensalá fresquita, unas copitas de manzanilla y el grupo de amigos que nos acompañó fueron testigos de la conversación que con Juan mantuvimos. —Candil. ¿Dónde y cuándo naciste? —Juanito Maravillas. Yo nació en Villaviciosa de Córdoba en 1922, el día 24 de enero, a las 12 de la noche. —C. ¿Tradición flamenca en tu familia? —J. M. Pues sí, en mi familia han cantado todos excepto mi padre. Mi madre cantaba muy bien, recuerdo perfectamente, que en aquella época cantaba en los bailes de candillillo y cantaba divinamente. Luego, de mis cinco hermanos, uno se llevó cantando mucho tiempo con Marchena, mi José que cantaba muy bien, y yo que soy el más chiquito de todos que salí cantando en el año 36 y hasta la fecha. —C. En el año 36, es decir, muy joven ¿con quién comienza a cantar? -C. Después del Niño del Museo... —J. M. Yo comencé siendo cabrerillo. Huyendo de las avionetas aquéllas (ya era la guerra, nos aclara) íbamos hacia Ciudad Real y yo me perdí de mis padres y me metí en Villanueva de Córdoba. Allí comencé a cantar por las tabernas y «arrecogí» tres pesetas. Me hospedé en una posada y por tres pesetas comía y dormía. Y en aquella posada se encontraba un artista de mucho nombre que era El Niño del Museo que estaba con La Niña de la Sierra y Antonio el del Lunar, padre de Juanito Serrano, el gran guitarrista que está en América. Entonces ya empecé por ahí con El Niño del Museo: fue la primera vez que yo canté en el teatro. —J. M. Después de dejar al Niño del Museo me fui a Ciudad Real y cantaba en las tabernas y donde podía. Y allí se presentó Pepe Palanca y El Niño de Marchena y ya me unía a Palanca y Marchena: era la época cuando estrenaban, Marchena y El Niño de Almadén, una obra de teatro con los Hermanos Arroyo que se llamaba Cancionera. Y por allí pasé la guerra. Después me fui a Valencia y allí trabaje en las salas de fiestas. -C. Córdoba, Ciudad Real, Valencia... -J. M. Eso fue en la guerra... -C. Hasta el año 39... —J. M. Sí, después me fui a Sevilla que fue donde conocí a Valderrama y a las máximas figuras: a Pastora, a Tomás Pabón, a Pinto, al Sordito de Triana, que cantaba muy bien la Soleá de Trian\n\n[ENDING CONTEXT]\n\nen el Bar Maravillas, la gente decía: «A ver ese niño nuevo que tiene la voz que es una maravilla». Y entonces un representante fue el que me puso el nombre de Juanito Maravillas. Y hasta hoy.\n\nUna vez acabada la entrevista, y al calor de la charla informal, el Cante hace su aparición. Pepe Ortega saca «su guitarra de tres mil duros, con la que ha ganado tantos billetes», y las gargantas se templan por Soleá, por Fandangos, por Alegrías, por Tarantos, y, finalmente, Juan nos regala una serie por Fandangos y un cante por Siguirillas. La noche, ya bien entrada, se encarga de poner el remate.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Juanito Maravillas",
+    "periodical": "candil",
+    "issue_id": "1991-11",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-11",
+    "page_number": 10,
+    "word_count": 1593,
+    "article_char_count_full": 8724,
+    "article_char_count_review": 3874,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      }
+    ]
+  }
+]
+```

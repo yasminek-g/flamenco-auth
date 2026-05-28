@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_05::A9",
+    "article_text_for_review": "PHOTO DE ANTONIO MAIRENA (CARMONA 1952) DEDICATED TO PEPE EL CULATA, HIJO, JOSE LUIS MATALLANES WHO CURRENTLY LIVES IN CHICAGO (translated by Juana De Alva) Antonio Mairena $ \\underline{\\text{Has Not Died}} $ TO SAY CANTE: IS TO SING, IS TO EXPRESS IN FEELING, \"VIVA EL FLAMENCO\" This article is dedicated to the memory of my godfather Antonio Cruz García (El Niño de Mairena) \"ANTONIO MAIRENA\". Many thanks to the magazine $ \\underline{\\text{Jaleo}} $, which has for some time, introduced, given worth and provided \"un cobijo\" (a sheltered spot) for the art of flamenco. In whose honor they should put a great sign in the United States which reads \"Arte Flamenco Español\". \"Son\" of many cultures and shelter to all those in search of shelter. Antonio Mirena Has Not Died, Flamenco Has Not Died. Flamenco will live in the soul of those (as Miguel De Cervantes said) \"In every drop of blood that breaths adventure, altruism, interest and disinterest, pride and honor, lives a human being.\" Thanks to Sabicas; thanks to Carlos Monotya; thanks to \"El Greco\"; thanks to Juan Serrano; thanks to Angela del Moral and Pascual Oliveras and many thanks to all those, who in one way or another, feel united in spirit, to the philosophy of the flamenco art. Today, as never before, I feel that I am \"nobody\"; I feel that I am \"somebody\"; I don't feel myself to be who I am; I feel like who I would like to be... I FEEL GITANO! I feel gitano in the broadest sense of the word; I feel united with an history which makes me (feel) responsible. Flamenco has Not Died, Friends of Jaleo lets continue \"jaleando\"; \"jalemos\" as we never have before; jaleando \"Viva el Jaleo,\" someone has pasted into the history of Jaleo. LONG LIVE ANOTNIO MAIRENA! With great affection to Jaliestas, Pepe Culata Hijo",
+    "title": "IN BADAJOZ",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15",
+    "page_number": 15,
+    "word_count": 309,
+    "article_char_count_full": 1781,
+    "article_char_count_review": 1781,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_05::A10",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSPANISH RECORD REVIEWS CANTE FROM EXTREMADURA by A. Alvarez Caballero (from: El País, April 12, 1984; sent by Brad Blanchard) \"La Marelu: Sus Brandes Exitos\" (4 volumes) (Diamente 150147-150150)(cassettes) The cante from Extremadura is not very well-known, although some cantaores from Andalucía make use of some of its styles every now and then. There aren't too many cantaores of interest from Extremadura. I can only recall the deceased Porrinas de Badajoz, and Juan Cantero, Ramón el Português, Niño de la Ribera and Marelu, who is featured in a four volume collection under the general title \"Sus grandes exitos\" (her biggest hits). There isn't much cante that has originated in Extremadura, since, speaking in terms of flamenco this is a region outside of Andalucía. In reality, we can only\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\nrrinas de Badajoz, and Juan Cantero, Ramón el Português, Niño de la Ribera and Marelu, who is featured in a four volume collection under the general title \"Sus grandes exitos\" (her biggest hits). There isn't much cante that has originated in Extremadura, since, speaking in terms of flamenco this is a region outside of Andalucía. In reality, we can only talk about two styles specifically from Extremadura which are notably similar to each other in many ways: jaleos and tangos extrameños. Marelu is a specialist in both of these styles, and that's where the interest lies in this record. Marelu, gypsy from Extremadura, diligently cultivates both styles, throwing in a lot of gracia, a good sense of compás and plenty of vivaciousness. On the other hand, Marelu is rather a limited cantaora. Of the forty songs that form this collection, she only performs four different cantes: rumbas, fandangos, jaleos, tangos extremenos and occasionally, alegrías, tientos and some very unique and personal nanas. She is a good singer of fandangos. But, in any case, we shouldn't expect too much interpretive wealth, since, not being an artist who goes deeply into the\n\n[ENDING CONTEXT]\n\nCano, Sabicas, Luis Maravilla, Victor Monje Serranito, and Pepe Martinez. It is a valuable record because it gives us a small panorama of the flamenco guitar in the last half century. Manuel Cano and Serranito are the star figures in another interesting reissue, \"Tensión de sonoridades para dos guitarras flamencas\" (Hispavox 130 077), and Sabicas gives us a demonstration of his inimitable art on \"Flamenco Puro\" (Hispavox 130 076). PACO PENA \"Live in Munich\" $14.95 Postage & Handling U.S. and Canada - $150 Other Countries - $300 Guitar Studios, Inc. 31 Clement St San Francisco, CA, 94116\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANTONIO MAIRENA HAS NOT DIED;",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16-18",
+    "page_number": 16,
+    "word_count": 1572,
+    "article_char_count_full": 9484,
+    "article_char_count_review": 2775,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_05::A11",
+    "article_text_for_review": "choreography is more than just stringing a bunch of titillating steps together. It is the picture, the frame, the art, the artist. Choreography should be movement that can say something on its own. Choreography is a separate art, in a way a parallel art to dance and dancing. Just as a painter may be a great artist in his work and it doesn't mean that he can sculpt artistically in stone, so a great dancer isn't necessarily a choreographer of great works and visa-versa. They are two worlds that hope to live in artistic harmony. Flamenco choreography is very unique for many reasons. Flamenco being such an individual and silo dance firm seems to require an immediate adaptation of the choreography to the individual dancer. His or her interpretatinn and technique, feelings and emotions, should be considered from the outset. This could be said of any dance style, but flamencn, with its built-in emotional content coming from its long, deep roots of tradition and its personal nature need the added sensitivity to individuality to make it believable, real and true. Excitement is not created by copying what others have done chnreographically if the individual person or personality is left out. That is when it is just mimicking steps. Over the last century the technical craft of flamence has crystallized in a degree from many innovative artists. It has a technical vocabulary, zn to speak, as broad as classical ballst and it is still evolving like the many personal styles of jazz dance. If one is open minded, with the essence of tradition kept in mind, there iz an endless frontier of exciting and innovative possibilities to surmount the plateaus of stale and boring choreographies. Dancers should dance gond choreographies. They should seek nut good choreographers who fit dances to their individuality. Many artists are working toward that end. I feel that some dancers take the easy way nut and fall into the rut of trying to get away with mediocre choreographies, their personality, loud footwork, and emotional stage presence. The art of flamenco dance and dancer should grow together. There are no hard fast rules of really good choreography in how to become a good choreographer. sensitivity, good judgment, musicality, staging, movement construction are some qualities that should be taken into consideration when thinking of choreography. I feel that for flamenco dance a choraographer should choreograph to the individual as much as possible, mounting what will work for them perznally. Also it is important to develop a subjective sensitivity to \"feel\" what is right and working and to grow with the individuals as they grow into the work. It is that inner feeling that will let you know when in the choreography breath and expand artistically.",
+    "title": "FLAMENCO HAS NOT DIED",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 456,
+    "article_char_count_full": 2768,
+    "article_char_count_review": 2768,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_05::A13",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA dance that works, that speaks to the dancer, to the audience, to fellow artists, that speak a flamenco, a flamenco of continuity that will continue and inspire; that is a search worthwhile. When the magic of an inspiring choreography happens then there is truth, there is meaning and maybe for a flash, we will know flamenco, we will be flamenco, we will become the dance, the dancer, the choreography, the art.... Choreography, that rarest of arts, sculpts movement into art, weds to the music of the soul, makes substance from steps, and speak of life itself. From a pallet of movement, music and a myriad of feelings, the choreographer can speak a language that transcends all words, all peoples, and can reach the heart of all who experience this type of gift, this dance that says something\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"understanding\"]\n\nnt, music and a myriad of feelings, the choreographer can speak a language that transcends all words, all peoples, and can reach the heart of all who experience this type of gift, this dance that says something that is truly music in motion. The one who has the gift of choreography, to paint in movement and music is one with a rare and beautiful gift for there are never two alike. Great choreography and great dance when blended with sensitivity, understanding and inspiration can make movement an art. A flamenco choreographer that makes lasting works can be the rarest of breeds. --Teo Morca GUITAR TECHNIQUE by William Brinda All-too-often the guitarist is unable to progress above the present stage of development due to lack of precision, clarity, volume, or speed. Practice alone does not make perfect. A person merely continues to practice mistakes unless corrective action is taken. The key lies in advance preparation for both left and right hands. I came across this knowledge largely by word-of-mouth, but latar found something similar contained in a book by \"Charles Duncan titled The Art of Classical Guitar. He has developed this to a great degree using slightly different tarmicology. This book should be available\n\n[ENDING CONTEXT]\n\ntanguillos, tangos, cana, and farruca. -Arm technique. -pitos and palmas. -Use of the fan and castanets. The price of the course is 12,000 pesetas (around $80). Hotels, complete with meals can be provided for $12-15 per day. Unfortunately, the deadline for this course will be past before this Jaleo goes to press - the notice being sent to us too late. For information about future courses, contact Flora Albaicín: Vallizana 71-73, Barcelona 6 Spain (telephone 248-2300 or 248-2309). Rubina Carmona Instruction in Cante and Baile Flamenco Personal Costume Design (213) 660-9059 Los Angeles, Ca.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20-21",
+    "page_number": 20,
+    "word_count": 1397,
+    "article_char_count_full": 8514,
+    "article_char_count_review": 2862,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "understanding"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_05::A14",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nIt is both a pleasure and a privilege to offer the New York audience an opportunity to experience Mario Maya's Ay! Jondo. The power, spontaneity, tenacious courage and sheer dramatic impact of this work has proved spellbinding to audiences worldwide. Its emotional strength derives from its profound authenticity and from the constant infusion of inspiration and improvisation that this moving work demands. With Ay! Jondo the Consulate General of Spain initiates the series Paths of Flamenco, which will reveal the very best of this singular and fascinating art firm. Flamenco is a powerful and marvelous phenomenon, widely admired but frequently misunderstood. It is a veritable cry of grief and ecstasy. It simply defies rational explanation—because it is the human heart that impels the bodies\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Manuel\"]\n\nly admired but frequently misunderstood. It is a veritable cry of grief and ecstasy. It simply defies rational explanation—because it is the human heart that impels the bodies and the throats of the artists, and no logic can ever explain the dictates of the heart. Dancers..... Mario Maya, Juana Amaya, Pilar Heredia, Pepa Herrera, Charo Cruz, Concha Távora, Juan de los Reyes, José M. \"El Lele,\" Juan Fernández Guitarists..... Isidoro Carmona, José Manuel Roldán Singers..... Manuel de Paula, Rafael Alcalá Lighting..... Marcos Rodríguez Costumes..... Salao, M. Vaca Torres Make-up and Atrezzo..... The Company Recording Engineer..... José Ig. Narvaez Direction..... Mario Maya Ay! Jondo (A Musical Drama in Jondo Style) Text: JUAN DE LOXA Music and Choreography: MARIO MAYA \"Gypsies should be rigorously watched, and special care should be taken to check their documents, take stock of any distinguishing marks, observe their clothes, verify their lifestyle and anything which might contribute to give an exact idea of their displacements and activities, discovering the aim of their travels and the object of their destinations.\" [Instructions for the Guardia Civil in 1942.] The songs and dances of this performance are based on four historical decrees, the first dating from the fifteenth century and the last from the Civil War. It is a musical and choreographic setting of the persecution of the gypsy people, and by analogy it raises the question of all other ethnic minorities. \"Within sixty days following this decree, the Egyptian and foreign coppersmiths must take abode and serve fixed masters, who will provide for their needs and must not wander through the Kingdom. On expiry of the sixty days, if they are found they will be banished and receive one hundred lashes the first time, and if they are found a second time their ears are to be cut off, and they will be banished from Spain.\" [Royal decree issued by Ferdinand and Isabella at the end of the fifteenth century.] FLAMENCO GYPSY DANCE THEATRE A few years ago Mario Maya and José He\n\n[ENDING CONTEXT]\n\nme: I am a good person but your filthy mouth spat on me. A kerchief of roses covers me: for another blood: mountain sister guerrilla nourishes me. Recitation: Gypsy: together we'll demand freedom and our land. Recitation: Advance with a keening cry and rage in your heart. For the people's peace. For the children's bread. For the bellies of the women. For the guitar becomes rifle. Finale: (Tangos del Cerra) More than forty tempests rain on my livid back. The marks of jail, gallows and wire fence are burned into my blood. Our hope is a ship, our horizon, the sea. 8Brother, give me your hand\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "GUITAR TECHNIQUE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_05",
+    "year": 1984,
+    "language": "en",
+    "article_type": "article",
+    "pages": "22-23",
+    "page_number": 22,
+    "word_count": 1286,
+    "article_char_count_full": 7735,
+    "article_char_count_review": 3678,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Manuel"
+      }
+    ]
+  }
+]
+```

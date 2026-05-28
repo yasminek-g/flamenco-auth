@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-01-15-left-pastora-y-la-casa-de-los-pabones",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nOpinión\n\nPASTORA M.ª PABÓN CRU NIÑA DE LOS PEINES\n\nDibujos: JUAN VALDÉS Textos: MANUEL RÍOS RUIZ\n\nA dmitase, de entrada, como una declaración de principios, que no es mi intención el abrumaros con fechas y datos, o con caducos e insustanciales perfiles biográficos, que a la postre desviarían e invalidarían todo intento de aproximación a un triunvirato que, encabezado por Pastora Pabón, conforma el eje articulador de lo que, para quien les escribe, supone la más alta escuela sevillana de cante flamenco.\n\nPero en tanto llegamos a la culminación de esta escuela o movimiento sevillano, a nadie escapa el que, cuando en importantes foros de discusión suelen definirse complejos postulados acerca de los orígenes y evolución del flamenco, la teoría se desestabiliza y cede terreno ante la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"memoria\"]\n\nes escribe, supone la más alta escuela sevillana de cante flamenco. Pero en tanto llegamos a la culminación de esta escuela o movimiento sevillano, a nadie escapa el que, cuando en importantes foros de discusión suelen definirse complejos postulados acerca de los orígenes y evolución del flamenco, la teoría se desestabiliza y cede terreno ante la sustancial naturaleza de esta manifestación musical: las vivencias, es decir, la savia que nutre la memoria de los intérpretes. En consecuencia, llegamos con esta exégesis a la convicción de que es el núcleo familiar quien surte la fuente de la memoria de los intér- Y es que, apodícticamente, estos frondosos árboles afirman un carácter casi hermético, pero definidor y repleto de elementos simbólicos y ancestrales comunes, al tiempo que arrojan unas ramificaciones que, si bien adquieren con los años un posicionamiento más abierto, mantienen por lo general la esencia de un mismo aprendizaje. pretes, de la que emanarán, a la sa- zón, los chorreados recuerdos de una necesidad expresiva que brota por generaciones. Partiendo de esta premisa, y sin olvidar aquella frase lapidaria de Antonio Fernández Díaz, Fosforito, cuando afirmaba en la Revista Candil de Jaén que «esa familia de los Pabones ha sido punto y aparte», todos los indicios apuntan a que el punto de partida de la Casa de los Pabones arranca con Arturo Pabón, mar de sabiduría donde afluyeron las corrientes utreranas y gaditanas que él desparramaba con singular maestría en el café-bar de Ceferino y en reuniones privadas. Es sabido que en Arturo encuentra Pastora no sólo un padre —anótese que solventaba con las 12 pesetas que ganaba las carencias familiares—, sino también su primer maestro, tanto de cante como de baile, a tenor de las referencias que disponemos, por cuanto Arturo llegó a heredar las formas danzantes de su padre, Francisco Pabón, práctica que abandonó para ayudar en la academia de la Plaza de la Mata su mujer, la maestra Eloísa Albéniz, que fuer\n\n[ENDING CONTEXT]\n\nencontramos una serie de hallazgos en Pastora Pabón que colman las exigencias del flamenco auténtico. A saber: buena armonía, una madurez melódica que fue densa en contenido, moderado movimiento en los tonos altos, modulación natural en los bajos tonos y una sublime, por no decir insuperable, conducción del ritmo.\n\nPienso que, a fuer de sincero, y sin que esté el tema agotado, estos elementos son más que suficientes para probar por qué Pastora Pabón sigue siendo la gran figura de todos los tiempos.\n\nAPERITIVOS SELECTOS Especialidad en Plancha\n\nC/. Mesones, 18\n\nTeléfono 26 35 46\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Pastora y la Casa de los Pabones",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "15-19",
+    "page_number": 15,
+    "word_count": 4231,
+    "article_char_count_full": 26036,
+    "article_char_count_review": 3604,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "memoria"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-01-19-right-opini-n-el-flamenco-en-la-pintur",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJosé Cruz Gutiérrez\n\nDedicatoria\n\nPara mis amigos Pepe Salinas y Miguel López, Quijotes del cante.\n\nIntroducción\n\nUna de las puertas de acceso al mundo pictórico de Julio Romero, es la del flamenco. A caballo entre la copla, la mujer y la muerte —pilares de la estética del pintor— cabalgó este ilustre cordobés; y nadie pintó como él, ese caldo sazonado, fuerte las más veces, agridulce en demasía, trasunto del amor, los celos y las pasiones, de un pueblo ensimismado en esta clave aguda del cante flamenco.\n\nToda la Andalucía del sentimiento, abstraída e indolente, zaragatera y triste, guapa y valentona, celosa y fanática... la que el artista sintió, quedó perpetuada por el embrujo de sus pinceles.\n\nAcostumbraba Julio a frecuentar, en su juventud, los «tablaos» flamencos de la época. Si se\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nn demasía, trasunto del amor, los celos y las pasiones, de un pueblo ensimismado en esta clave aguda del cante flamenco. Toda la Andalucía del sentimiento, abstraída e indolente, zaragatera y triste, guapa y valentona, celosa y fanática... la que el artista sintió, quedó perpetuada por el embrujo de sus pinceles. Acostumbraba Julio a frecuentar, en su juventud, los «tablaos» flamencos de la época. Si se tiene en cuenta el predicamento que este arte tuvo en Córdoba, durante el último tercio del siglo XIX, es fácil de adivinar al, por aquel tiempo, aprendiz de pintor, recorrer con sus amigos los cafés cantantes de la ciudad de los Califas, verbi gratia: «Centro del Recreo» (antiguo café Recreo) arrendado por Paco el de Lucena en 1891, con la actuación estelar de Antonio Chacón; el famoso de la Iberia, donde cantó Silverio con su compañía, o el Teatro-Circo del Gran Capitán, en donde lo hizo Juan Breva, en 1885. En cierta ocasión, el pintor mostró sus preferencias por este cantaor, parece que llegó a decir: «Ser Juan Breva», antes que su pintor más admirado, Leonardo De Vinci. Esto es una exageración mayúscula, propia de un joven atraído por el «quejío» del malagueño, cuando, lógicamente, él se tenía que sentir más cerca de los Al final se apartó de esta «vida activa» de lo «jon-do», tomando el camino del pincel y de la paleta. «Mas sin dejar mi afición al flamenco» según dijo a su biógrafo. Esto lo refrendará siempre, pues cuando regresa-ba de la Corte a la Córdoba de su alma, solía ir con sus amigos a la taberna del «Bolillo», y, entre «medio» y «medio», de vino de «Veinticuatro», recordaba «viejos tiempos», en los que cantaba con excelente tono: Todo ello marca la aureola de un artista, ídolo y mito de generaciones. Por lo que, es entendible, esta «enajenación transitoria» del joven pintor\n\n[ENDING CONTEXT]\n\nal pintor que selló con su paleta, ese alto ideal de belleza del cante «jondo». Más tarde, nació por estas tierras el cantaor de Puente Genil, actualmente, en la cumbre del flamenco, por su sabiduría. ¡Ojalá! y, todos sepamos poner freno y remedio al abigarrado mundo que rodea a este arte secular (quizá tenga dos siglos de existencia), y, que no se nos escape, como el agua por el cuenco de las manos.\n\nParece que, ya no es tan válido, lo dicho anteriormente, de que una noche de cante, para los andaluces ¿es? o ¿era?, algo tan sagrado como una misa.\n\nDoctor Arroyo, 12 / Teléfono 21 00 58 / JAEN\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "El flamenco en la pintura de Julio Romero de Torres José",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "19-21",
+    "page_number": 19,
+    "word_count": 1752,
+    "article_char_count_full": 10130,
+    "article_char_count_review": 3445,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-01-21-right-en-defensa-del-cante-jondo-o-el-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nE n mayo de 1925, el escritor afrancés, hispanófilo y aficionado a los toros¹ Henry de Montherlant, asiste en el Hotel Alfonso XIII de Sevilla a un concurso de cante flamenco. Tres años más tarde, escribe un artículo que publicará en 1929, en la revista parisina Les Nouvelles Littéraires, bajo el título original «Pour le Chant Profond» («Por el Cante Jondo»). Montherlant puede ser considerado como uno de los primeros literatos extranjeros en enfocar el flamenco desde el punto de vista de su dimensión profundamente ontológica, y en celebrarlo, no como una sencilla costumbre local, sino como una efusión del alma. Desde mediados del siglo XIX, se había impuesto en Francia una moda literaria de los relatos de viaje, que atribuía a la novela una nueva función, la de informar en el sentido casi\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"gran\"]\n\nores franceses que emprendieron un viaje a Andalucía se convirtieron en reporteros, y los que se interesaron por el fenómeno flamenco nos dan de él una descripción más o menos rigurosa, considerándolo «Un francés en la plaza toreaba un novillo hizo tan bien la faena que el bicho se maravillo». En 1910, con sólo catorce años, Henri de Montherlant se iniciaba a la tauromaquia con el matador Relampaguito. a veces como un elemento del decorado del gran teatro exótico andaluz². Si ciertos escritores intentaron dar del flamenco una visión basada en una aproximación etnográfica, otros lo utilizaron más bien como un elemento suplementario que contribuía a alimentar un sistema de representación estereotípico del sur de España. El discurso literario que la literatura de evasión ha producido sobre Andalucía y sus componentes culturales más genuinos, es la mayor parte del tiempo esencialmente romántico y pintoresco. La literatura ha ido construyendo una representación poética y estilizada de Andalucía, transformando en arquetipos una serie de tópicos inspirados en ciertos casos, del género costumbrista. Esos clichés que vehicula la literatura romántica sobre Andalucía pertenecen a varios campos semánticos que se articularon bajo el denominador común de lo exótico: el universo gitano, moro, taurino, el mundo de los bandoleros y contrabandistas, la sensualidad femenina andaluza, etc.³. No es la personalidad exótica del triángulo andaluz Sevilla-Córdoba-Granada la que entusiasma a Henry de Montherlant, sino la ejemplaridad que Andalucía representa para él. Montherlant, mucho más que sus compatriotas, admiraba en profundidad, y desde el interior, la cultura popular del sur ibérico, la humilde nobleza de su gente depositaria de un conjunto de tradiciones —y la flamenca es una de ellas— sin comparación. A partir del modelo andaluz, el escritor francés construye una axiologya ideal, de la cual extrae la materia suficiente para hacer una autocrítica del etnocentrismo cultural francés que afectaba las conciencias desde el siglo XVIII. Según Montherlant, en comparación co\n\n[ENDING CONTEXT]\n\nse hace desconfiada. Sin dar las buenas tardes, se pierde en la muchedumbre.\n\nLa historia no sería completa sin ese cerdo final. El Kid americano, horrible payasito, contrahace las pasiones en sus películas, lo cual le permite ser millonario con sólo diez años, y recibido en privado por Su Santidad; magnífica operación publicitaria.\n\nEl chavo gitano se desgarra como un higo, enseña la pasión que lleva dentro, cobra unos duros y vuelve a sus cerdos, para cumplir entre ellos una vida que respeto, en la que se pasa habre, pero en la que se canta sólo cuando se tiene ganas. Henry de Montherlant\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "«En defensa del Cante Jondo» o el credo gitanoandaluz de Henry",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-25",
+    "page_number": 21,
+    "word_count": 4802,
+    "article_char_count_full": 28135,
+    "article_char_count_review": 3711,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "gran"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-01-25-right-eleg-a-por-do-a-concha-piquer",
+    "article_text_for_review": "E l acontecimiento que ha supuesto el fallecimiento de esta señora y reina de la copla en toda España, puede considerarse como un gran homenaje del que estábamos en deuda con esta irrepetible figura, que en sus quejas ante la insensibilidad de los rectores de la cultura justificaba plenamente su disgusto que hizo público en algunas ocasiones, razón por la cual se consideró obligada a no acudir a la entrega del Lazo de Isabel la Católica.\n\nEs obligado este recuerdo y homenaje a doña Concha Piquer, como excepción por cuanto en favor del Arte Flamenco hizo en todos sus espectáculos que fueron modelo de elegante distinción, al incorporar con dignidad a las figuras más brillantes que en cada momento tuvo el cante, el baile y la guitarra.\n\nEl tributo rendido por el pueblo de Madrid en su entierro, ha sido tan excepcional que al transcender\n\nHa sido tan grande la conmoción producida por su fallecimiento, que no ha habido medio de difusión que no la haya recordado con gran intensidad, ofreciendo su amplísima discografía e historia biográfica de su paso por el arte. su espíritu a la inmortalidad habrá colmado y superado la desilusión que le produjo el desentendimiento oficial para con sus innegables méritos.\n\nAl recorrer la historia de su vida artística que hemos conocido, nos hizo también rememorar momentos muy felices de nuestra vida, al alegrarlos con sus excelentes creaciones que permanecerán como modelo de un estilo inigualable y siempre de actualidad. El sector artístico del flamenco en sus distintas variedades, creo tiene desde este momento una deuda pendiente por cancelar de alguna manera, y nada mejor que ofrecer a su memoria un magnífico espectáculo que como punto de arranque pudiera ser la primera contribución para ese monumento que estamos seguros el pueblo quisiera erigirle.\n\nLa gran severidad y seriedad que como el primer mandamiento se imponía a sí misma para planificar todas sus escenificaciones, nos permitió ver elevados a la dignidad de arte las cosas más populares, razón por la que el pueblo le correspondió con todo el fervor al acompañarla ayer hacia su última morada.\n\nEl orgullo con que exhibía sus auténticas creaciones, era absolutamente legítimo, porque sólo a los artistas geniales les está reservado el uso de esta virtud, que en nada se relaciona con la absurda vanidad.\n\nAl darle nuestro último adiós, le prometemos nuestra permanente fidelidad a cuanto su ingenio supo crear y desarrollar con una indudable personalidad, dándole empaque, elegancia y señorío.\n\nMadrid, 14 diciembre de 1990. ■",
+    "title": "Elegía por doña Concha Piquer",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 416,
+    "article_char_count_full": 2548,
+    "article_char_count_review": 2548,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-01-26-left-aunque-no-quepa-en-el-papel",
+    "article_text_for_review": "«Mujeres gitanas ante el futuro»\n\nPocas veces le es dada al crítico la oportunidad de coger más de cerca la información que en esta ocasión del libro que comentamos. Las noticias son de primera mano; las opiniones, sin filtros ni segundas lecturas que las desvirtúen. Por eso resulta apasionante. Se trata, nada más ni nada menos, que de un amplio y bien organizado estudio sobre la situación actual de la mujer gitana, una extensa reflexión, en forma de mirada nunca airada, pero sí reivindicativa, del pasado, y una apuesta, como reza el título, ante el futuro que se avecina.\n\nEnseguida encontramos motivos suficientes para la positiva valoración del texto que, forzoso es decirlo, asumimos en su totalidad, pues, si difícil y comprometida es el papel general de la comunidad gitana a lo largo de la historia, sometida a humillaciones contundentes, cuando no a genocidios vergonzantes, mucho más precaria, y sobre todo desconocida, es la figura de la mujer, tanto soltera como casada. Figura silenciosa y mucho menos atractiva que la del varón, su aparición difuminada en los textos literarios y viajeros de antaño es tan folklórica como injusta, olvidando algo fundamental que este libro nos pone claramente. Título: «Mujeres gitanas ante el futuro»\n\nAutor: Equipo de Estudio de Presencia Gitana.\n\nEditor: Presencia Gitana. Madrid, 1990.\n\nte ante nuestros ojos, su papel de puente tendido entre la sociedad hostil y el grupo que reclama su derecho, no sólo a la subsistencia, sino también a la peculiaridad, a la diversidad de oficios y modus vivendi. La mujer, en esas múltiples zancadillas que la historia ha tendido al pueblo gitano, ha sido pilar básico en el que apoyar la solidez de las personales convicciones, la depositaria silente de los raciales y genéticos presupuestos de estas comunidades.\n\nHoy, cuando la brújula de la historia parece marcar un norte difícilmente reconocible para personas e ideologías de otros tiempos, examinar el reto de futuro de la mujer gitana puede ser angustioso y apasionante a la vez. El libro de Presencia Gitana refuerza ambas situaciones: las dificultades que tienen para dejar atrás esas mujeres los viejos lastres, sin perder por ello sus bien ganadas señas de identidad, la posibilidad de convivir sin integraciones que signifiquen manifiestas claudicaciones, y, sobre todo, la apuesta decidida por una cultura que sea propia sin dejar por ello de adaptarse a esos umbrales del siglo XXI en los que nos encontramos. Como verán, nada es fácil, y Presencia Gitana lo sabe, por eso, el gran mérito del libro, es ese no dar fáciles soluciones generales ni fórmulas mágicas de ningún tipo; tan solo pretende, y es mucho, reforzar las posturas éticas y los posicionamientos políticos correspondientes, que hagan posible que todo ello se logre en el marco sin mácula de la dignidad.\n\nComo dice Manuel Martín en sus ajustadas y cariñosas palabras preliminares, este libro no pretende demostrar nada. Tampoco es necesario que toda la literatura sea fruto de una afanosa y escolástica\n\n«El flamenco y los flamencos de Alcalá»\n\nbúsqueda de la Verdad, así con mayúscula. Pero, enseñar, sí que enseña, y además con amor, que es como los auténticos enseñantes deberíamos hacerlo. Porque, desde que unos gitanitos huidos de la Triana amenazada, según deducciones del propio Manolo Ríos, se aposentaran en las laderas del viejo Castillo de Alcalá para asentar los cimientos de lo que sería La Solé de Joaquín, que es como decir la soleá por excelencia, hasta esa promesa por descubrir aún por muchos, que es el Niño del Maúro, nacido en la vieja Alcalá de los Panaderos hace apenas veinte años, el autor recorre la nómina ilustre de artistas de la tierra. Nómina entre la cual forzosamente hay que descubrirse porque en ella aparecen nombres tan ilustres como La Roezna, Juan Talega o Manolito el de María, que son algo así como La Ilíada y la Odisea del arte flamenco. A todos ellos les dedica el autor bellas semblanzas en las que relaciona biografías con ambientes y Título: «El flamenco y los flamencos de Alcalá» Autor: Manuel Ríos Vargas. Editor: Virgilio Márquez Editor. Córdoba, 1990\n\nvivencias cantaoras.\n\nAdemás, este precioso librito, desciende a contarnos pequeños detalles que son los que engrandecen este arte de gigantes realizado por el pueblo más humilde: tal es el caso del sentido reverencial que sintiera Tío Joaquín por la Morayma de Boabdil, a quien le dedica un cante lleno de esencias, o las conmemoraciones diversas de acontecimientos importantes para el pueblo de Alcalá (incluyendo hasta la etimología de éste) y que irían desde la conmemoración del cincuentenario de la muerte del mítico cantaor a las relaciones que con el pueblo sostuviera el llorado maestro de los Alcores.\n\nEn todos estos pequeños detalles subyace el cariño del aficionado de raza, del investigador que lo sacrifica todo para esclarecer un poquito de la historia más amada, la cercana, y brindarlo a los demás con la dosis necesaria de amenidad para que aprendamos a compartir sus entusiasmos.\n\nJ. A. PULPON\n\nEspectáculos Internacionales\n\nParticular: Teléfono 27 80 78 O'Donnell, 3, 4.° Piso Teléfonos (954) 22 20 58 y 21 69 20 SEVILLA",
+    "title": "Aunque no quepa en el papel",
+    "periodical": "candil",
+    "issue_id": "1991-01",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 846,
+    "article_char_count_full": 5170,
+    "article_char_count_review": 5170,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

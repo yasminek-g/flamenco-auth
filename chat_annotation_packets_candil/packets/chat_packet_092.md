@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1984-03-25-right-discograf-a-de-artistas-flamenco",
+    "article_text_for_review": "Cantes muy antiguos de «La Niña de los Peines»",
+    "title": "Discografía de artistas flamencos",
+    "periodical": "candil",
+    "issue_id": "1984-03",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-26",
+    "page_number": 25,
+    "word_count": 9,
+    "article_char_count_full": 46,
+    "article_char_count_review": 46,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-05-3-left-editorial",
+    "article_text_for_review": "EDITORIAL\n\nA propósito de Macama Jonda\n\nACE no demasiado tiempo se llamaba despectivamente «ir a provincias» al poco ético proceder de algunas compañías de teatro madrileñas que, una vez agotado su hipotético éxito en la capital de España, y cuando sus intérpretes principales se ocupaban ya de nuevas actividades profesionales, siendo sustituidos por cuatro meritorios deseosos de darse a conocer, se lanzaban a recorrer las diversas capitales de provincia con su devaluado espectáculo para asombro de los boquiabiertos lugareños que, poco o nada, suponían estos desaprensivos, debían saber de teatro.\n\nEsto viene a cuento, a propósito del deleznable espectáculo con el que nos «obsequió» José Heredia Maya; se trataba de «Macama Jonda», obra que nos interesaba a priori extraordinariamente a los que conocíamos la buena labor del autor en «Camelamos Naquerar», de 1.976, obra en la que siguiendo el ejemplo de «Quejío», del grupo La Cuadra, trataba y conseguía dramatizar, a través del cante y la danza flamenca los avatares del pueblo gitano.\n\nPero he aquí que la obra «Macama Jonda», escrita y pensada para esa extraordinaria familia flamenca de los Montoya, nos llega a Jaén devaluada y con unos intérpretes flamencos poco cualificados, que deslucen el buen quehacer de la orquesta popular de Tetuán y ponen el espectáculo en unas cotas artísticas que lindan con lo grotesco. Como conocemos el buen quehacer habitual, incluso el perfeccionismo de Pepe Heredia, y hemos oído de sus deseos de llevar el espectáculo al extranjero, el equipo «Candil» le recomienda mayor seriedad en la elección de los intérpretes, a ser posible volver al magnífico equipo del estreno. Mucho nos tememos que si prospera esa absurda creencia de pensar que en provincias nos lo tragamos todo, al llevar a Alemania el espectáculo, su autor se atreva a sustituir al magnífico Chekara por un primo de Emilio el Moro.",
+    "title": "EDITORIAL",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 304,
+    "article_char_count_full": 1895,
+    "article_char_count_review": 1895,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1984-05-4-right-la-novela-andaluza-de-posguerra-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nE VIDENTEMENTE resultaría del todo absurdo hablar de una novela andaluz aislada de su contexto, esto es, del resto de la producción narrativa que se ha ido sucediendo en España a lo largo de las décadas posteriores al enfrentamiento civil entre españoles de 1.936.\n\nEstá claro que un mismo ambiente engloba a todas las obras sea cual sea la procedencia geográfica de los autores, ambiente moral que el crítico Juan Luis Alborg, en su Hora actual de la novela española define así: «Había por entonces en nuestra patria mucha costra de siglos amontonada por todos los rincones; injusticias petrificadas, estratos de abandono y miseria por los campos y ciudades, ignorancia que no se había querido remediar, insostenibles desigualdades y privilegios, caiciquismos políticos y morales amparados por el\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"tradiciones\"]\n\nde los autores, ambiente moral que el crítico Juan Luis Alborg, en su Hora actual de la novela española define así: «Había por entonces en nuestra patria mucha costra de siglos amontonada por todos los rincones; injusticias petrificadas, estratos de abandono y miseria por los campos y ciudades, ignorancia que no se había querido remediar, insostenibles desigualdades y privilegios, caiciquismos políticos y morales amparados por el celestinaje de tradiciones egoístas, vacías ya de sentido como caparazones de moluscos muertos». Vamos pues, y por razones metodológicas y de la propia extensión del trabajo, a proceder en nuestro estudio de la siguiente manera: En esta primera entrega analizaremos las direcciones en las que se desarrolló la novela española de habla castellana tras la postguerra española, señalando las diferentes tipologías y divisiones que los críticos han señalado en la producción narrativa de las décadas que van de los años cuarenta a los setenta. En un próximo número de «Candil» estudiaremos los rasgos que definen a la novela específicamente andaluzas, y dentro de ella esbozaremos la aparición del tema del flamenco como una presencia vivificadora y humanísima dentro de los diferentes relatos de esta región. nuestra que tan apasionadamente vive el tema de lo jondo. De todos es conocida la circunstancia de que con anterioridad a 1.936 vivían y publicaban novelas unos escritores como Unamuno, Valle Inclán, Baroja, Azorín, Pérez de Ayala, Miró, o Gómez de la Serna, por citar sólo a los más ilustres. Es bastante común a todos ellos que en casi todas sus novelas presenten una autonomía artística absoluta, arraigados en la esencia humana universal, pero sin conexión suficiente con la existencia histórica y comunitaria de los españoles. Quizá la excepción más notable del grupo sea Valle Inclán, que po\n\n[ENDING CONTEXT]\n\n(con mayor o menor éxito) de organizar núcleos geográficos de novela y hablar así de las nuevas narrativas andaluzas, catalana o canaria.\n\nEl montaje aditorial-comercial de los premios Planeta, Destino, Barral, etc, ha sido el padrino de la primera generación de escritores españoles no «tocada» directamente por la guerra, aunque sí politizada fuertemente. La rentabilidad de la llamada operación «Novela española» es evidente, los escándalos económicos y de otra índole de los premios Planeta a Marsé, Grosso o Quinones nos dan idea perfecta de hasta qué punto el montaje editorial funciona.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "LA NOVELA ANDALUZA DE POSGUERRA: LA APARICION DEL TEMA FLAMENCO (I)",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-8",
+    "page_number": 4,
+    "word_count": 5486,
+    "article_char_count_full": 34182,
+    "article_char_count_review": 3463,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "tradiciones"
+      }
+    ]
+  },
+  {
+    "article_id": "1984-05-8-right-la-guitarra-flamenca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAmpliamente utilizada en la música de concierto por intérpretes de crédito mundial como Segovia, Sainz de la Maza, Yepes, etcétera y elevada a la catego-ría de instrumento sinfónico merced al esfuerzo de Rodrigo («Concierto de Aranjuez»); y extendido su empleo a todas las músicas populares y folklóricas, la guitarra parece más estrechamente unida al flamenco, de cuya expresión oral es inseparable. En efecto no es posible cantar bien una variedad flamenca, si exceptuamos los cantes llamados «a palo seco», (que al igual que ya sucedió con la siguiriya acabarán por aceptar esa honrosa servidumbre) que no lleve la apoyatura del instrumento heredado de los pueblos orientales. Si entendemos la música como combinación de melodía y armonía y como sucesión de sonidos modulados para recrear el oído\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"origen\"]\n\na servidumbre) que no lleve la apoyatura del instrumento heredado de los pueblos orientales. Si entendemos la música como combinación de melodía y armonía y como sucesión de sonidos modulados para recrear el oído -y algo más que el oído-, difícilmente podrá aportarse un instrumento más adecuado que la guitarra. Por: Francisco Vallecillo Se asevera que la guitarra quedó establecida en España mediante dos corrientes simultáneas y distintas en su origen, la grecorromana y la morisca. La grecorromana, a su vez de origen griego, que posiblemente partiera de la «lira» asiria o babilónica, dando lugar a la «citara» y luego a la «Khitra», antecedentes de la guitarra latina o punteada. La morisca debió su origen al «laúd» (al-aud) o «nabla» egipcio y para otros autores asirios extendido en la música de Persia y Arabia y conocido luego como «al-kitara» ya desde su más remoto origen rasgueada. La impronta oriental está tan definida en la guitarra que hay que tomar como atendible la teoría que centra su definitiva instalación en la época de aquel gran mecenas de lo jondo que fuera Abderrahamán II quien nos trajo, para gloria del Califato cordobés y de El Andalus todo, al famoso cantor de Bagdad, llamado Ziryab, «El Pájaro Negro». Como ha dejado escrito con especial donaire el maestro Patricio Galindo, hace años fallecido, («Método de Guitarra Flamenca»), «a pesar de que centenares de años antes Andalucía cantara con la «kitara» parecida al actual laúd, fue el intuitivo e improvisado cantor y poeta Ziriab -eximio laudista- (sic) quien hubiera de ser considerado como importador de la guitarra que luego fuera flamenca». En el flamenco, cuyos verdaderos y ciertos orígenes aparecen siempre envueltos en la nebulosa de la historia\n\n[ENDING CONTEXT]\n\nconstituir temática flamenca. Ello resta unidad y homogeneidad al conjunto de los poemas presentados.\n\nPor ingrata que resulte, estimamos que el Departamento de Flamenco de la Consejería de Cultura de la Junta de Andalucía, debe continuar con esta labor de sistematización y compendio de festivales. Vaya por adelantado nuestro más sincero deseo de colaboración para futuras ediciones.\n\nLa Guía de Festivales 84 puede ser adquirida en las principales librerías andaluzas, y también en el Grupo Distribuidor Editorial, con domicilio en la Calle Polígono Industrial STORE, número 1. Teléfono 354133.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "LA GUITARRA FLAMENCA",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-10",
+    "page_number": 8,
+    "word_count": 2638,
+    "article_char_count_full": 16485,
+    "article_char_count_review": 3368,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "origen"
+      }
+    ]
+  },
+  {
+    "article_id": "1984-05-11-left-breve-res-n-e-n-mairena-de-alcor",
+    "article_text_for_review": "Por Manuel Ríos Vargas\n\nL sábado, día 7 de abril de 1984, a las 12,30 horas de la mañana, en Mairena del Alcor, pueblo andaluz y cantaor por excelencia, a la Plaza de las Flores se le cambió el nombre, pasando a denominarse desde este momento y hora «Plaza de Antonio Mairena», hijo preclaro de esta villa e Hijo Predilecto de Sevilla, amén de ostentar el título de Andaluz Universal y ser poseedor, entre otras cosas, de la Tercera Llave de Oro del Cante Flamenco, y de la Medalla de Bellas Artes, así como la del Mérito al Trabajo.\n\nMairena del Alcor, al ponerle a esta linda plaza su nombre, no hace más que saldar y hacer justicia a este grandioso cantaor y mejor persona, quien paseó el nombre de su «Patria Chica» por toda la geografía nacional e incluso allende nuestras fronteras.\n\nEl acto fue sencillo y emotivo, cual Antonio era y se merecía. Tomó la palabra el señor alcalde de Mairena para, tras bellas palabras, cedérsela a don Francisco Vallecillo, director del Departamento de Flamenco en la Junta de Andalucía; posteriormente, hizo su primer acto público el actual y flamante delegado de Cultura en dicha Junta, para terminar con unas palabras por parte del delegado de Cultura del Ayuntamiento local, el cual dio lectura del Acta del Pleno Municipal, mediante el cual se aprobaba por unanimidad denominar a dicha plaza con el nombre de Antonio Mairena, la cual, a partir de este momento, engrosará el callejero de Mairena del Alcor.\n\nLógicamente, y representando al finado —nuestro año-rado y llorado Antonio—, se encontraban sus hermanas Rosario y Angeles, así como sus hermanos Curro y Manuel.\n\nTambién asistieron los distintos medios radiofónicos se- villanos, representados por Miguel Acal, Emilio Jiménez y Paco Herrera, amén de numerosos amigos y paisanos del Papa del Cante Antonio I.\n\nEstas breves palabras, amigo Luis, van dedicadas a ti, pues aunque por imperativo de distancias no pudiste estar presente, sé que te hubiera gustado hacerlo, mas en mi pensamiento sí estabas.",
+    "title": "BREVE RESÊNÃ E N MAIRENA DE ALCOR",
+    "periodical": "candil",
+    "issue_id": "1984-05",
+    "year": 1984,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 336,
+    "article_char_count_full": 2001,
+    "article_char_count_review": 2001,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_11::A12",
+    "article_text_for_review": "Cuadro B will be in charge. See Junta report for names of cuadro members and phone numbers of cuadro leaders. DATE: Saturday, November 22 PLACE: 4141 Camino del Rio South (house at upper right hand corner of parking lot) TIME: 8:00P.M. BRING: Tapas of your choice GUESTS: By reservation only - call Thor or Peggy Hanson at 488-4139. ($5.00 donation for guests unless member holds a single plus guest card or family card and is attending alone) DIRECTORY canada <table><tr><td>DANCE</td><td>INSTRUCTION</td><td rowspan=\"2\">483-4046</td></tr><tr><td>Maximiliano</td><td>(Toronto)</td></tr></table> new york <table><tr><td colspan=\"2\">FLAMENCO ENTIERTAINMENT:</td></tr><tr><td colspan=\"2\">Chateau Madrid (Lexington Hotel)</td></tr><tr><td>Taverna Flamenca (Astoria)</td><td>212/545-4036</td></tr><tr><td>La Mancha (Brooklyn)</td><td></td></tr><tr><td>Meson Flamenco</td><td>234-9205</td></tr><tr><td colspan=\"2\">DANCE INSTRUCTION:</td></tr><tr><td>Esteban de Leon</td><td>212/724-4918</td></tr><tr><td>Jerane Michel</td><td>212/222-4973</td></tr><tr><td>Estrella Morena</td><td>212/489-8649</td></tr><tr><td>Victorio Korjhan</td><td>212/927-7220</td></tr><tr><td>Mariquita Flores</td><td>212/582-3350</td></tr><tr><td>Alicia Laura (Long Island)</td><td>516/928-3244</td></tr><tr><td colspan=\"2\">GUITAR INSTRUCTION:</td></tr><tr><td>Mario Escudero</td><td>212/586-6335</td></tr><tr><td>Michael Fisher (Ithaca)</td><td>607/257-6615</td></tr><tr><td colspan=\"2\">REHEARSAL SPACE:</td></tr><tr><td>40 West 24th St.</td><td>212/675-9308</td></tr></table> pennsylvania washington d c area <table><tr><td>El Bodegon</td><td>Tio Pepe</td></tr><tr><td>GUITAR INSTRUCTION: Tom Kreuzburg (Rofton, MD)</td><td>301/261-0261</td></tr><tr><td>Mariquita Martorell</td><td>301/992-4792</td></tr><tr><td>Paco de Malaga (Arlington, VA)</td><td>Carlos Ramos (Arlington, VA)</td></tr><tr><td>Fernando Sirvent (Arlington, VA)</td><td>Torcauto Zamora (Silverspring, MD)</td></tr></table> san francisco <table><tr><td colspan=\"2\">FLAMENCO ENTERTAINMENT:</td></tr><tr><td>La Bodega</td><td>415/398-9555</td></tr><tr><td>Las Cuevas</td><td>415/435-3021</td></tr><tr><td>Las Palomas Restaurant</td><td>415/435-3021</td></tr><tr><td colspan=\"2\">DANCE INSTRUCTION:</td></tr><tr><td>Adela Clara & Miguel Santos</td><td>415/431-6521</td></tr><tr><td>Rosa Montoya</td><td>415/824-5044</td></tr><tr><td>Isa Mura</td><td>415/435-3021</td></tr><tr><td>Teresita Osta</td><td>415/567-7674</td></tr><tr><td>José Ramón</td><td>415/775-3805</td></tr><tr><td colspan=\"2\">GUITAR INSTRUCTION:</td></tr><tr><td>Joel Blair</td><td>415/564-8351</td></tr><tr><td>Mariano Cordoba</td><td>408/733-1115</td></tr><tr><td>Ricardo Peti (Carmel Highlands)</td><td>408/624-3015</td></tr><tr><td colspan=\"2\">CANTE INSTRUCTION:</td></tr><tr><td>Isa Mura</td><td>415/435-3021</td></tr></table> los angeles FLAMENCO ENTERTAINMENT: El Cid 666-9551 DANCE INSTRUCTION: Roberto Amaral 213/785-2359 Pedro Carbajal 462-9356 Rubina Carmona 213/660-9059 Carmen Fabriga 213/589-6588 Carmen Heredia 862-1850 Ester Moreno 213/506-8231 Oscar Nieto 265-3256 Vicente Romero (Long Beach) 213/432-3795 Enrique Valadez 213/589-6588 GUITAR INSTRUCTION: Gabriel Ruiz (Huntington Park) 213/583-2801 CANTE INSTRUCTION: Rubina Carmona 213/660-9059 FLAMENCO COSTUMES: Rubina Carmona 213/660 Rubina Carmona 213/660-9059 san diego <table><tr><td colspan=\"2\">FLAMENCO ENTERTAINMENT:</td></tr><tr><td>Andalucia Restaurant</td><td>CLOSED</td></tr><tr><td>Don Carlos Mexican Restaurant</td><td>714/461-2750</td></tr><tr><td>El Moro Cuisine of So. Spain</td><td>714/222-2883</td></tr><tr><td>Olamendes Restaurant (Capistarano)</td><td>661-1207</td></tr><tr><td colspan=\"2\">Old Town (Bazaar del Mundo Sun afternoons)</td></tr><tr><td colspan=\"2\">DANCE INSTRUCTION:</td></tr><tr><td>Juana De Alva</td><td>714/444-3050</td></tr><tr><td>Juanita Franco</td><td>714/481-6269</td></tr><tr><td>Maria Teresa Gomez</td><td>714/453-5301</td></tr><tr><td>Rayna</td><td>714/475-4627</td></tr><tr><td>Julia Romero</td><td>714/278-4008</td></tr><tr><td colspan=\"2\">GUITAR INSTRUCTION:</td></tr><tr><td>Joe Kinney</td><td>714/274-7386</td></tr><tr><td>Rodrigo de San Diego</td><td>714/469-7732</td></tr><tr><td>Paco Sevilla</td><td>714/282-2837</td></tr><tr><td colspan=\"2\">FLAMENCO COSTUMES:</td></tr><tr><td>Clara Martinez</td><td>714/831-2596</td></tr></table> JALEO NOVEMBER 1980 usual 1,2,3,etc.; it is usually sung, but need not be, and most often appears after the \"silencio.\" CEJILLA (la) - a movable device that is clamp-ed to the fingerboard of the guitar in order to change the pitch; primarily used to adjust the guitar to the vocal range of the singer. CENEFAS (las) - the rosewood binding around the edges of the guitar. CIERRE (el) - a closing; a form of \"llamada\" used to close a section of dance. CLAVIJAS (las) - the wooden tuning pegs of the guitar; metal tuning machines are called CLAVIJAS MECHANICAS COLETAZO (el) - a kick with the side of the foot to move the \"cola\" (train) of the dress to one side or to extend it. COLETILLA (la) - a short, rhythmic verse of song tacked on to the main letra; usually used to bring the alegrías cante to a close. COLÍN (el) - a form of bata de cola with a very short train. COLMÃO (el) - a bar-restaurant where flamenco artists can be found looking for work; today it is generally a bar where informal flamenco is performed. COMPÁS (el) - the rhythmic aspect of flamenco music; the word incorporates the concepts of rhythm, number of beats in one rhythmic or melodic cycle, and accentuation. CONCIERTO (el) - concert. CONCURSO (el) - contest; flamenco contest - usually of cante, but sometimes guitar; held annually in many cities of Andalucía. CONTRATIEMPO ((el) - countertime; accentuation done on the off-beat, i.e. between beats. BULK RATE U.S. POSTAGE PAID La Mesa California Permit 368 TIME VALUE RETURN POSTAGE GUARANTEED",
+    "title": "NOVEMBER JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_11",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "37-40",
+    "page_number": 37,
+    "word_count": 538,
+    "article_char_count_full": 5877,
+    "article_char_count_review": 5877,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_01::A1",
+    "article_text_for_review": "(from: $ \\underline{El} $ $ \\underline{Pais} $, Summer 1980; sent by Suzanne Hauser; translated by Paco Sevilla) At the beginning of this week, the flamenco cantaor, José Domínguez, \"El Cabrero,\" was released from the provincial prison in Sevilla. He had been arrested four days earlier in his hometown of Aznalcollar for the alleged crime of an attack on an authority. The agent in question was a guard for the mines of Andaluzá de Piritas who disarmed him after an argument related to the second activity of Domínguez, that of goatherd. The day after having won two important prizes in the national flamenco contest in Córdoba, José Domínguez was once again deeply involved with the activity that constitutes his second reason for being -- the care of his goats, from which he takes his professional name, \"El Cabrero,\" and the attire he inevitably wears in his public appearances. He is what the critics call a cantaor of high quality and, at the same time, a very special and singular personality. In the middle of his one hundred goats, on the trails that the farmers squeeze in on more and more with each planting, is where you have to find him if you want to talk to him. The goats and flamenco have been El Cabrero's inseparable companions ever since his father began to take him into the countryside -- that is, since he was five or six years old. The cante had been a necessity and had only been done publicly during the town's fiestas. The herd had been the traditional means of subsistence for the entire family.",
+    "title": "JOSE DOMINGUEZ, \"EL CABRERO\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_01",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 267,
+    "article_char_count_full": 1524,
+    "article_char_count_review": 1524,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_01::A2",
+    "article_text_for_review": "Dear Jaleo: As a newly subscribing member, a relatively new student of flamenco, and an established performer and instructor of oriental dance, I would like to say hello from beautiful Vancouver. I would also like to say \"Olé y gracias, Teo Morca.\" by the brilliant classes presented by Paco Fernández, Carmen Mora and Ciro (I only watched). I had been trying to get my heels moving up here for about a year and did manage to co-ordinate my sevillanas, puntas and plantas. Then I went to Madrid and was immediately inspired, frustrated and overwhelmed Back home, I put on my beautiful new Gallardo shoes and found, to my dismay, that they were glued to the floor. I wanted more than anything to dance flamenco, but didn't even know where to begin. That's when I heard about Teo's August workshop in Bellingham, only a short drive away.",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_01",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4",
+    "page_number": 4,
+    "word_count": 146,
+    "article_char_count_full": 835,
+    "article_char_count_review": 835,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_01::A3",
+    "article_text_for_review": "BRACEO Do you know what baile flamenco makes me think of? A gnarled old tree: Its trunk and branches are all contortions; it has weathered a lot of adversity and you can see its reactions mapped out. But in spite of all, it has survived. That is just what flamenco is, a reflection of the persistence of life despite frequent adversity. Not that there have not been some gentler, relaxed times in the life of this tree also, the straight and carefree parts, but the overall impression is of an ugly beauty, of the bittersweetness of life itself. The twist and flow of a bailaora stem from her reaction to her life circumstances in a process of release possible only with a special combination of sensitivities -- musical, spiritual, and sensual. Only a few can match those old trees in expressiveness.... I was led to these thoughts at the end of a recent 6-month visit to Toronto by Concha Vargas, a stupendous bailaora, whose energy and honesty have helped me and many of the local students of baile in our strivings for self-liberation. L. Oraw Toronto, Canada 〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒〒� $ ^{*} $ Manuela de Cadiz 10620 Esther Avenue LOS ANGELES, CALIFORNIA 90064 *FLAMENCO* *CLASICO* *REGIONAL* PRIVATE & GROUP LESSONS phone: 213/837-0473 $ ^{*} $ $ ^{*} $ $ ^{*} $ $ ^{*} $ Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, festivals, competitions, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through- guitar & lute Magazine",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_01",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 266,
+    "article_char_count_full": 2901,
+    "article_char_count_review": 2901,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_01::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Carlena \"la Maya\" Ohio does seem to be \"out in the boonies flamenco-wise.\" I remember Marta reflecting on our fair state and I sharing her opinion exactly. Those many years ago flamenco was an earnest desire and fed only by occasional dance companies on tour through the Midwest. A miraculous transformation has occurred in Ohio; a growing oasis of aficionados has come together because of one great friend of our art, Marta del Cid. I met Marta at my flamenco \"low point\" nearly eight years ago. I had just recovered from an accident that crushed my left foot and I was resigned to a life without dance. Dick Brune, now a luthier par excellence in Chicago, heard of me and my past afición and raved about a girl in Akron... \"the best flamenco dancer in the state.\" I remember meeting Marta, her\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Matrona\"]\n\none great friend of our art, Marta del Cid. I met Marta at my flamenco \"low point\" nearly eight years ago. I had just recovered from an accident that crushed my left foot and I was resigned to a life without dance. Dick Brune, now a luthier par excellence in Chicago, heard of me and my past afición and raved about a girl in Akron... \"the best flamenco dancer in the state.\" I remember meeting Marta, her home humming to the sounds of Pepe el de la Matrona and Perico el del Lunar. She was exhuberant to find a new friend in flamenco and eager to get down to the business of guitar and baile. Here was a fair-skinned, red-haired, all-American, but when she broke into a bulerías, her then toddling boy and girl were admonished to watch out or they'd get \"stomped on.\" I could see why. Her concentration on the dance at hand was complete. Her sunny disposition and light-hearted manner turned to spectres of strength and seriousness. Her expression was not sudden and contrived drama. Like a wheel grinding in reverse, she seemed to draw inwards to some well of feeling and then slowly revealed her findings in movement. Her flamenco was thought provoking. She expressed herself in a way so unlike the flashy theatrical and nightclub flamenco I'd seen before. I remember Marta moving freely from bulerías to alegrías, then with the spirit, inching her way to my favorites, siguirias and tientos. I\n\n[ENDING CONTEXT]\n\nthose present, was her ability to react to the music, to create movements, explorations into the unknown that were forever new, Marta del Cid has made her estampa on a hard core group of flamencos in Ohio. She is a fine artist and a sincere friend of the art. She now makes her home in Atlanta, Georgia, to begin again the search for flamencos. Hopefully she is on her way to the great things she has affected here in Ohio. For my part, I am delighted to introduce Marta del Cid. To our dear friend amidst those tall trees of Georgia, a host of Flamencohioans wish Marta: ¡Mucha salud y Alegrias!\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MARTA DEL CID",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_01",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-9",
+    "page_number": 6,
+    "word_count": 1435,
+    "article_char_count_full": 8280,
+    "article_char_count_review": 3023,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Matrona"
+      }
+    ]
+  }
+]
+```

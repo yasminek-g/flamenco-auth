@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_10::A13",
+    "article_text_for_review": "NEWS FROM OUR MEMBERS Minneapolis, MN: Zorongo Flamenco with La Susana, Manolo Rivera, Dominico Caro and Michael Hauser returned recently from Europe where they performed to sold-out houses in Yugoslavia. Company members then went on to Spain before returning home. (from Suzanne Hauser) Presno, CA: The Fresno Guitar Society is well and flourishing, and extends an invitation to all interested persons to attend society meetings. The July and August meetings were held at the Upstart Crow Restaurant and Estrada's Spanish Kitchen, both in Fresno. On September 12th the society hosted a picnic at Woodward Park, and they may sponsor a concert by the Los Angeles Guitar Quartet in the near future. (from Dwayne A. Johnson) New York City: Flamenco guitar scene surpasses any previous concert expectations: October 2 - Paco de Lucía with Chick Crea and combo at the Beacon Theater, Broadway and 73rd. October 3 - Sabicas opening solpist for International Guitar Festival 1982/1983 at Cami Hall, 57th St. (organized by Antennip David and the American Institute of Guitar. December 2 - Mario Escudero in recital (presumably at YMCA, Lexington and 91rd St.) and there will be others. January 21 - Dennis Koster International Guitar Festival, Cami Hall. (from George Ryss)",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 202,
+    "article_char_count_full": 1265,
+    "article_char_count_review": 1265,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A14",
+    "article_text_for_review": "LOS ANGELES AUGUST JUERGA by Yvetta Williams {Editor: It was my great pleasure to join the Los Angeles Jaleistas at their August juerga. My heart was warmed to see the enthusiastic and supportive atmosphere of all present. We hope that the spirit of Jaleistas will continue to grow and spread to other communities. Juana De Alva] The August 7, 1982, Los Angeles juerga was held at Mexico City Restaurant in Long Beach. Everyone had a wonderful time. All were friendly and willing to share their talents to create an evening of good flamenco, good companionship, friendship and fun. There were many people who came for the first time. The food and drinks at the Mexico City Restaurant were very good, and our host Jimmy Jaurequi set aside one of the three rooms for our juerga. Ne was most cooperative and accommodating. Katina Urinos and Lucia de la Racka were great in dancing early in the evening and encouraging others to participate. Other dancers sharing their talents were Louisa Carmody, Jcy Padia, stella Alarcan, Lisa and Joaquin Feliciano, Eric Mossberg Cortez, Yrma Horta, Juana De Alva. Dther dancers in attendance were Ana Maria Gutierrez and Raúl De Alva. Curt (Carlos) Price, Yvetta Williams, David De Alva, and Ken Sanders provided guitar music. Paul Bezzios entertained with song and guitar, three songs in Spanish. Juana De Alva came from San Diego and added a great deal to the juerga with her graceful dance, lovely cante and palmas. We were all gald to have her with us. Thanks to Dick Williams for make and setting up a great dance floor and for being the official photographer. Thanks to the many friends and family members who added to the camaraderie of the evening. 1. Lucia de La Rocka JUERGA in LOS ANGELES COLLAGE Linda Córdoba FLAMENCO DIRECTORY OF NORTH AMERICA THE DIRECTORY MAY BE ORDERED AT THE FOLLOWING RATES: $ ^{1} $st $ \\underline{\\text{Clasa}} $ U.S. and all other countries..... 8.50 $ \\underline{\\text{Air}} $ $ \\underline{\\text{Mail}} $ to Europe.....ID.CO Australia, New Zealand, Japan.....11.00 Make checks or bank drafts in U.S. currency and payable to: JALEISTAS, Box 47C6, San Diego, CA 92104 U.S.A.",
+    "title": "JUERGAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18-21",
+    "page_number": 18,
+    "word_count": 358,
+    "article_char_count_full": 2147,
+    "article_char_count_review": 2147,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A15",
+    "article_text_for_review": "AUGUST JUERGA SWIRLING POLKA DOTS AND GUITARS BENEATH THE PALMS by Mary C. Ferguson What a marvelous juerga! But how could it have been otherwise? It was held in the beautiful gardens of the home of Francisco and Elizabeth Ballardo with their three lovely daughters assisting as hostesses at the entrance, setting the tables and working as bartenders. The tablaos were all in place -- nothing to be carted from here to there. With all this done for us, there was nothing left for us to do but \"ENJOY,\" which we did. There were so many familiar faces that I had not seen for some time and many new ones (to me) from Los Angeles. Yvetta and Dick Williams, along with Ron Spatz, should be credited with the attendance of many beautiful people from L.A. There were numerous other beautiful people from Mexico and Ecuador. My apologies to all for running out of film. Give me another chance, please -- I'm not a professional photographer. Dancing, singing and playing of guitars, mixed with a bit of tinto, started early and went on into the wee hours. Some of us struggled home with the dawn, weary but muy contento. Many thanks to all the Ballardo's for a lovely night. AUGUST JUERGA 1. Francisco Ballardo 13. Elizabeth Ballardo 2. Reynolds Heriot 14. Maria José 3. Juanita Ballardo a 15. Juanita Franco 16. Sandra Aguayo (also #20) 5. Elizabeth Ballardo 17. Victoria Ballardo 6. José Aguayo 7. Maria Aguayo 8. Pilar Moreno 19. Maripili Heriot 21. Mimette 9. Yvetta Williams 22. Elizabeth Mellizo 11. Franklin Wakefield 12. Magdalena Cardoso ularly by Charo and Marta as they sang and danced together around the clock. \"El Cazador\" displayed a tremendous virtuosity with both the guitar and the oud, and even charmed us with gypsy baile and cante. The end of this exciting adventure was agonizing and many tears fell: so glad they came, so sad they must leave. It was 11:00pm when the Sid Ahmed wagon reluctantly rumbled from the driveway. As the wagon crept forward, bulerías from \"El Cazador's\" guitar filled the night air while Charo and Marisol's palmas echoed sharply in the damp chill. We watched the red tail lights fade into the distance. Then there was dark, then quiet. That wonderful family must come back soon. \"Señores, esto es flamenco!\" 1. Pilar Moreno (also #9, 14, 20) 2. Remedies Flores (also #7, 10, 19) 3. Victoria Gill 4. Rodrigo (also #11, 18, 21) 5. Juana De Alva 6. Rich Hunter (also #13, 16) 8. Marta Del Cid (also #17) 12. Yuris Zeltins 15. Juanita Franco GUEST OF HONOR, MARTA DEL CID, LISTENS INTENTLY TO THE MUSIC OF RICK HUNTER AND HOSTESS CHARO BOTELLO SINGER PILAR MORENO DANCES ACCOMPANIED BY THE GUITAR OF PACO SEVILLA AND THE SONG AND GUITAR OF RICK HUNTER Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, festivals, competitions, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through- guitar & lute Magazine 1229 Waimanu Street Honolulu, Hawaii 96814 Send for Free Brochure. $2.00-sample copy. $10.00-4 issues $10.00-4 issues MIGUEL BERNAL FROM LOS ANGELES CARLA OCHOA STRIKES ELEGANT POSE PAULA REYES IS ACCOMPANIED BY YURIS ZELINS. RICK HUNTER, ARMIN ON THE CLAY DRUM JALEO ~ OCTOBER 1982 1349 Franklin Bellingham, Washington 98225 Ph. (206) 676-1864 EXCITING \"ALL FLAMENCO\" WORKSHOP TC BE HELO IN LOS ANGELES, CALIFORNIA, NOVEMBER 8TH FOR ONE WEEK BY MASTER TEACHER, TEODORO MORCA. FOR DETAILS, PLEASE WRITE OR CALL: ELLEN WINTSCHNIG, LINCDLN ACADEMY 2632 Lincoln Blvd, Santa Monica, CA 90405 tel: 213 396-6934 or 396-4316 or write or call Teo Morca at above address by Jaime Englesias Lifetime collection in easy reading Cifra. Inexpensive variations, over 20 different rhythms included. Pages of variations on each rhythm. Special price $19.95 plus $2.00 shipping and handling. Allow 2 weeks. Write: University Music 4733 Village Pl. NE, Seattle WA 98105 Flamenco Guitars For Sale 1962 JOSE RAMIREZ SPRUCE TOP CLASSICAL GUITAR STAMPED \"PB\" EXCELLENT CONDITION $2,800 1949 MARCELO BARBERO FLAMENCO, PEGS, CLEAR GOLPEADORES, OUTSTANDING FLAMENCO SOUND $2,400 1974 MANUEL VELAZQUEZ SPRUCE TOP CLASSICAL GUITAR, SIGNED, EXCELLENT CONDITION $2,000",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22-29",
+    "page_number": 22,
+    "word_count": 699,
+    "article_char_count_full": 4211,
+    "article_char_count_review": 4211,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_11::A1",
+    "article_text_for_review": "Information from George Ryss Mara Sultani, also known as \"La Mara,\" \"Mara la Sultana,\" and \"La Gitana del Puego,\" was born in Cuba, but has lived for twenty-one years in the United States. Her Sephardic father was from Turkey and her Spanish mother has Andaluz-gypsy background. For sixteen years she studied oriental dance with her father and, six years ago, began to study flamenco. Her teachers in New York were Ramón de los Reyes, Jesus Ramos and cantaor Luis Vargas, who taught her compás. Mara has danced flamenco in every possible New York City establishment, including Chateau Madrid, Casa Galicia, La Sangria, Mesón Flamenco, La Dilbaina, La Coruna, El Baturro, and Casa de España. She has worked with Estrella Morena, María Benitez, Jesus Ramos, Edo Sie, Roberto Lorca, Manolo Rivera, and many others. Mara has been active in theater, appearing in productions of such works as \"Man of La Mancha,\" \"Los Terantos,\" \"Terma,\" and \"Glood Wedding.\" For the Indian film \"Ganja Express,\" she was trained by Pakistani dancer Najma Ayasha; her dancing was featured in the Dino De Laurentis film, \"King of the Jypasies.\" Mara loves all Spanish music, but dances only flamenco, alearías and bulerías being her favorite dances. She makes her own dance dresses and is interested in learning to play LEFT TO RIGHT: EDO, MARA, PACO MONTES, PERRITO CORTES \"GUIT,\" UNIDENTIFIED, SANDRA MESSINA AND ROBERTO GONZALES AT HARVARD UNIVERSITY CLUB, NEW YORK CITY the guitar. Mara Sultani not only has the \"gitana\" looks and temperament for flamenco, but she is loved by all of those who know her and are exposed to her radiant personality. Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, festivals, competitions, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through- guitar & lute Magazine 1229 Waimanu Street Honolulu, Hawaii 96814 Send for Free Brochure. $2.00-sample copy, $10.00-4 issues $10.00–4 issues",
+    "title": "MARA SULTANI",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_11",
+    "year": 1982,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "3-4",
+    "page_number": 3,
+    "word_count": 328,
+    "article_char_count_full": 2026,
+    "article_char_count_review": 2026,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_11::A2",
+    "article_text_for_review": "FLAMENCO VIDEO CASSETTES Dear Jaleo, Peter Baime (guitarist) has heeded my request (Jaleo, Aug./Sept. '82, \"Letters\") for a flamenco guitar $ \\underline{\\text{video}} $ $ \\underline{\\text{cassette}} $. He put together a \"superb\" video recording which should satisfy the most demanding aficionado. He opened the tape with a stirring graninas and a spectacular rumba. He then played several \"moving\" soleares and siguiriyas, each first at normal speed, and then slowed down with close-ups for demonstration of technique, with accompanying remarks. He closed the tape by photographing an intimate \"after-the-performance\" party in which he and those who helped him in the production of the videotape celebrated their accomplishment. Anyone interested should contact Peter Baime, 1100 West River Park Lane, Milwaukee, WI 53209. Bill Brinda Huntsville, AL [Editor: Bill also informs us that dancer Raquel Pena and guitarist Fernando Sirvent are preparing some video cassettes which they will publicize in $ \\underline{\\text{Jaleo}} $ when they are ready for sale or rent.] Dear Editor, With reference to your Aug./Sept. issue (page 4) Ho Tong Hang mentioned a video tape available by Paco de Lucía produced by Carl Fisher and recorded at TV 1, London (1977). I am keen to obtain a copy but he didn't mention where to write to obtain it. Maybe Mr. Fisher is well-known in the States but here we have not heard of him. Would it be possible for you to print more details regarding the above? While on this subject, in the latest July issue reference was made to several Manolo Sanlúcar records including \"Al Viento\" -- 1982 and a flamenco opera -- 1982. I immediately wrote to my usual supplier (Union Musical) and was informed that these records are not available (at least in Spain). Are these records available in the States or elsewhere? If not you may like to mention this in your next issue to save other readers the trouble of writing for them. In closing, please accept my compliments on your excellent magazine. In our part of the world such publications provide invaluable stimulation and information. Thanking you. P. Hardwicke [Editor: Perhaps Ho Tong or others with information on these recordings will respond.] \"IT IS THE PEOPLE WHO MAKE THE PLACE\" Dear Jaleo: When we returned from our incredible vacation in San Diego this summer, I found myself incapable of writing about it---it was such a full and intense experience that, for one of the few times in my life, I was unable to find adequate words to get it down on paper. However, Raul Botello has restored my fluency and provided me with a launching point--it is with love, nostalgia and acute embarrassment that I read his account of our adventure (\"Marta del Cid Comes to San Diego,\" Oct. Jaleo).",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_11",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 455,
+    "article_char_count_full": 2759,
+    "article_char_count_review": 2759,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

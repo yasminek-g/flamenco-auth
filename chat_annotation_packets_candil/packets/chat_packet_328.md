@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-01-11-right-las-fronteras-del-arte",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(Primera parte)\n\nRicardo Rodríguez Cosano\n\nCreemos, en principio, que se ha escrito bastante sobre el tema pero no lo suficiente como para que se agote el mismo. Así pues, entendemos que con estas reflexiones que ahora vamos a esbozar, tampoco se tocará fondo en una cuestión tan delicada, espinosa y, al mismo tiempo, tan compleja. Sin embargo, creemos que apartarnos del debate, donde se ponga a prueba tal cuestión, podría ser engañoso para nosotros mismos, podríamos faltar a la responsabilidad como aficionados y despistar a las futuras generaciones que puedan acercarse a nuestro Arte incomparable. Ha ocurrido con alguna frecuencia que, al presentarse algún trabajo novedoso sobre la evolución y creatividad de nuestro Arte en Congresos de Flamenco, los receptores de dichos trabajos, en\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"nuevo\"]\n\nabajo novedoso sobre la evolución y creatividad de nuestro Arte en Congresos de Flamenco, los receptores de dichos trabajos, en ciertas ocasiones, desestimaron tales propuestas por entender que el debate sobre tales puntos podría degenerar en conflicto. Así pues, parece ser que, al hablar de estos temas, nos pusiéramos a caminar sobre arenas movedizas. Tenemos conciencia de ello y suponemos a ciencia cierta que, con la apertura de este debate de nuevo, todos saldremos ganando. Hemos de advertir que, entre la defensa del purismo y el reconocimiento del papel de la creatividad en el futuro del Arte Flamenco, no debe haber desaveniencia alguna. Por nuestra parte, no pretendemos sentar cátedra sobre nada, pero sí dar nuestra opinión para que otros que lo deseen, puedan dar la suya en momentos donde, en algunos ambientes, se intenta razonar entre la solidez de la ortodoxia y el furor actual, por otro lado, de la heterodoxia. De la misma manera, no pretendemos poner \"puertas al campo\" ni \"marcar las fronteras del Flamenco\" en una época donde\n\n[ENDING CONTEXT]\n\nmanifestaciones musicales podrán, en un momento dado, hacer música flamenca con ciertos aires rítmicos inspirados en determinados cantes flamencos.\n\nGeneralmente, los verdaderos aficionados al cante recomiendan las grabaciones de las obras flamencias que luego pasarán a los modestos archivos de otros aficionados. En dichas colecciones, no suelen entrar otras obras que las que interpretan los cantaores flamencos aunque pueda haber otras piezas musicales para el estudio comparativo o trabajos de investigación, o simplemente para el deleite de su audición como fuente de otra afición musical.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Las fronteras del Arte Flamenco",
+    "periodical": "candil",
+    "issue_id": "1997-01",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "11-12",
+    "page_number": 11,
+    "word_count": 1386,
+    "article_char_count_full": 8933,
+    "article_char_count_review": 2670,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "nuevo"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-01-13-left-jos-merc-paradigma-de-lo-jondo",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nManuel Martín Martín\n\nReconforta pensar que el placer derivado del reconocimiento en vida, siga entendiéndose en el flamenco como cosa satisfactoria y sagrada para la presencia viva del arte. Desde ese presupuesto es, al menos, de dónde arrancan todas las Semanas Culturales que en estos tiempos se vienen dedicando a quienes protagonizan el flamenco contemporáneo.\n\nEsta demanda ha hecho que su proliferación se dispare, pero también que se correspondan tales jornadas con una serie de conferencias manoseadas y repetitivas que, por no ser originales, sino más bien caducas y superescuchadas, no sólo están basadas en lo obvio sino que ni tan siquiera contemplan la vida u obra del homenajeado. Esta es la síntesis, en definitiva, de la precariedad del flamenco de hoy, algo que contrasta vivamente\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"peña\"]\n\noliferación se dispare, pero también que se correspondan tales jornadas con una serie de conferencias manoseadas y repetitivas que, por no ser originales, sino más bien caducas y superescuchadas, no sólo están basadas en lo obvio sino que ni tan siquiera contemplan la vida u obra del homenajeado. Esta es la síntesis, en definitiva, de la precariedad del flamenco de hoy, algo que contrasta vivamente con el sentido priori-tario que nos solicitó la peña «La Soleá», de Palma del Río, que en el año de 1996 nos permitió esbozar el perfil artístico de José Mercé, uno de los jóvenes flamencos hoy en candelero. José Soto Soto, cantaor grave y sustancial del jerezano barrio de Santiago y amamantado desde los seis años en la liturgia coral de la escolanía de la basílica de la Merced (de ahí el seudónimo artístico), nació en la calle del mismo nombre el día 19 de abril de 1955. Hijo de Curro Soto y María Bravo, muy pronto decidió dejar los estudios para, con el nombre de José Soto, iniciarse como cantaor a los trece años de edad. Esto ocurre gracias al poeta Antonio Gallardo que, tras escucharle el fandango del Gloria, lo lleva a los Jueves Flamencos de Jerez de la Frontera, festival organizado por Manuel Morao en la Plaza de Toros el día 22 de agosto de 1968, cuya entrada de preferencia costó 30 pesetas, debutaron igualmente Manuel Morao y Pepe Mo- reno, actuando como artistas invitados María Soleá, El Guapo, Juan Morao, Pansequito, Juanito Parrilla, Orillo del Puerto y Rafael Paulera. Dos años después, ya en 1970, actuaría en El\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_04 | trigger=\"segundo\"]\n\ningles en solitario donde se percibe su inequívoca tendencia fosforera. A saber: El primero se llamó Patio flamenco, disco que comparte con las voces de Romerito, Fernando Gálvez, El Chato de la Isla y Pepi Benítez, amén del baile de Faiquillo, y donde, con las guitarras de Manolo Sánlúcar e Isidro Muñoz, José aborda las bulerías de Manuela Rosa, rumba del tra y una fiesta por bulerías junto a Romerito, Fernando Gálvez y El Chato de la Isla. El segundo de los Lp citados es Canta el pueblo flamenco, con la guitarra de Manolo Sanlúcar y en compañía de María Vargas, Romerito y Fernando Gálvez, apareciendo José Mercé en cantes del Piyayo, media granaína, soleares de Utrera y Jerez, garrotín, seguiriyas de Manuel Torre y Tío José de Paula, debla de Tomás Pavón y martinete de Jerez. Y respecto a los singles, el primero en salir al mercado fue José Mercé (disco que en principio iba a ser canción española), y en el que, junto a Manolo Sanlúcar, contempla el garrotín del Lp Canta el pueblo flamenco y los fandangos de la margarita. El segundo single, por su parte, es el volumen IV de la serie Cante\n\n[ENDING CONTEXT]\n\nrara vez no conmueve al respetable. Y es que lo mismo mira a la pena de frente que se transforma en un preludio del lamento, o que plasma por los senderos de la fiesta un alto y variado cúmulo de sensaciones, tres rasgos ineludibles para recrear sobre lo más jondo pero sin perturbar la estructura original.\n\nEn tal sentido, y en los tiempos difíciles que corren, José Mercé se nos antoja cada vez más como un despertador de conciencias, pues resuelve el problema que hoy atisbamos en el cante con un fundamento inapelable: remover y transformar las raíces es el único medio de construcción posible.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "José Mercé, paradigma de lo jondo",
+    "periodical": "candil",
+    "issue_id": "1997-01",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "13-17",
+    "page_number": 13,
+    "word_count": 5201,
+    "article_char_count_full": 30422,
+    "article_char_count_review": 4344,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "peña"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-01-17-right-poema",
+    "article_text_for_review": "El Martinete En la vieja fragua, roja de canciones, percuten martillos de chispas inquietas. Y saltan, con brillo, del yunque bicorne los tercios triunfales del cante profeta. Montoyas y Vargas, Saavedras y Heredias, Modernos Vulcanos de torso peludo, se aferran al mazo, forjando tragedias al son monocorde del gesto ceñudo.\n\nY así, lentamente —suspiros al fuego—, queman el ambiente, ilustrando el cante más inteligente.\n\nEmilio González de Hervás ¡Hierro al fuego! ¡Fuego al yunque! Yunque y lumbre abrasándose en un juego celoso de sol y cumbre.\n\nHimno de profunda altura: calentura dura de fiebre gitana. Liturgia profana del dolor humano, inmolando carbón de amargura al viril martinete gitano.\n\n¡Alivio de los tormentos! ¡Lejos de ti la guitarra! Sólo en tu son que desgarra la aridez de los lamentos.\n\n¡Ay, Martinete gitano, fruto de golpes y lumbre! ¿Generosa reciedumbre que en vaso de cuatro versos das a beber al cristiano?\n\nBenditos tus cuatro versos, ¡ay, Martinete gitano! pa toda la eternía.",
+    "title": "Poema",
+    "periodical": "candil",
+    "issue_id": "1997-01",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-17",
+    "page_number": 17,
+    "word_count": 160,
+    "article_char_count_full": 1007,
+    "article_char_count_review": 1007,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-01-18-left-la-est-tica-del-toque",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJosé M $ ^{a} $ Gallardo del Rey Consideraciones sobre la técnica y las interpretaciones.\n\nEl ritmo y la métrica.\n\nLa guitarra flamenca y la guitarra clásica.\n\nE1 Flamenco, su técnica y comprensión, supone el gran puño de partida para alcanzar cotas importantes en la interpretación de la música y, más concretamente, en la música española. Si bien, no es menos cierto, que un conocimiento apropiado de ciertas disciplinas, como el estudio del lenguaje musical, la armonía o el contrapunto, dotarían al guitarrista flamenco de unas grandes posibilidades. Máxime cuando en nuestro actual panorama artístico cualquier intérprete de la guitarra flamenca se presenta a sí mismo como compositor de sus propios temas. Por lo que su estudio sería un gran avance para el mundo musical, indiferentemente de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nal panorama artístico cualquier intérprete de la guitarra flamenca se presenta a sí mismo como compositor de sus propios temas. Por lo que su estudio sería un gran avance para el mundo musical, indiferentemente de la estilística a tratar, ya que desde el principio voy a trazar la línea que conduzca a nuestra cultura, no a posiciones aisladas y en cierto modo localistas, sino a aquellas donde la Música lo preside todo. El Flamenco, pienso, es un arte joven en constante búsqueda y progresión. Joven en el contexto de la historia de la música, joven por su capacidad de fascinación ante otros estilos y su asombrosa facilidad para asimilarlos. Como pequeño paréntesis, pensemos que nuestros mejores guitarristas flamencos lo son no sólo por la brillantez de su técnica o su dominio de los palos tradicionales, sino, en gran medida porque han sabido y han querido convivir con un sin fin de influencias que les ha hecho más completos para, inclusive, tocar de la manera más añeja. Por eso es que cuando leo o escucho comentarios sobre el poder del peso de la tradición, en contra del progreso, o esa sentencia por la cual se es menos flamenco por saber música creo, sinceramente, que se provoca un gran daño a las presentes y futuras generaciones que, por suerte o, mejor, por destino, van ganando cada día más enteros en su apreciación musical y, al mismo tiempo, se van consolidando como músicos en el más amplio sentido de la palabra. La técnica de la guitarra flamenca, en cualquiera de sus consideraciones, es un factor importantísimo a tener en cuenta por mí, como guitarrista clásico. La velocidad al servicio del aire, la claridad cristalina de los arpegios, son, por nombrar dos, conceptos que fomentan, consciente o inconscientemente, los perfiles de la musicalidad. El «tener aire» o «tocar con aire» no es más que la pura y auténtica comprensión del ritmo en toda su magnitud, sin hacer sentir la pulsación métrica, como ocurre en la gran mayoría de intérpretes de corte académico. gran texto esclarecedor y experto publicado en 1921, se expresa así: El maestro I. Stravinsky lo comprendió enseguida cuando, en ese «Entre la música popular de España, y especialmente la música andaluza, y la de Rusia, percibo una afinidad profunda que se debe sin lugar a dudas, a oríge\n\n[ENDING CONTEXT]\n\nfueran originales.\n\nTambién hay una estupenda relación entre las tonalidades originales de las obras y cómo éstas suenan en la\n\nguitarra. Danzas como la de Los Vecinos (Re M), la Danza del Molinero (Sol M/La m) o la del Corregidor (La M), son claros exponentes de cómo un instrumento puede abordar un repertorio no original, pero conectado a sus entrañas tan de cerca.\n\nBibliografia\n\nY, finalmente, en su único Homenaje a Debussy encuentra la atmósfera adecuada para volcar todo su artificio armónico, simple, en el gran y creativo sentido del término y siempre elaborado con la maestría del genio.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La estética del toque",
+    "periodical": "candil",
+    "issue_id": "1997-01",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-20",
+    "page_number": 18,
+    "word_count": 2888,
+    "article_char_count_full": 17174,
+    "article_char_count_review": 3907,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-01-21-left-forman-el-gigantesco-rbol-flamen",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nE 1 fandango, desde su origen, es un baile andaluz, localizado en la comarca de Verdial, de la provincia de Málaga, el cual va acompañado, por una parte, de diversos instrumentos de percusión, y de otra, de un cante cuyo origen se desconoce.\n\nUnos lo creen de procedencia oriental y otros lo suponen de nacimiento malacitano. De este cante «prototipo» que iba asociado al baile fandango, se derivó o extrajo una hijuela que más tarde sería aflamencada, asignándosele el nombre de la región donde se produjo tan feliz acontecimiento: verdial.\n\nDespués sería padre de larga vida y de numerosa prole, entre la que destaca el que consideramos su primogénito y al que bautizaron con el mismo nombre del baile, esto es: Fandango.\n\nDicen doctores en la materia que el proceso de su aflamencamiento fue obra\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"segunda\"]\n\nto y al que bautizaron con el mismo nombre del baile, esto es: Fandango. Dicen doctores en la materia que el proceso de su aflamencamiento fue obra de árabes y otros aseguran que lo fue de judíos. De aquí que resulten dos etimologías: una para el fandango como cante flamenco y otra como cante jondo. Para los sustentadores de la primera opinión procedería de los vocablos árabes «Felahme-ihum» o «Felah-mengu», en cambio para los que mantienen la segunda de las opiniones, procedería del vocablo judío «Jon-Tod». Que me perdonen esos doctores porque rechace con estoicismo sus opiniones. La verdad es que del sufrido y siempre vejado cante flamenco, cada individuo, español o extranjero, puede «despacharse a su gusto». Puede decir de él cuanto se le antoje, porque nadie saldrá a su encuentro para rebatir sus teorías. ¡Cuán lamentable es para los que nos hemos dedicado a velar por la pureza del cante y por descubrir sus orígenes a través del camino de la investigación, que al final de su recorrido nos hayamos encontrado ante una barrera infranqueable que nos ha impedido proseguir las diligencias investigadoras! El arte flamenco es tan misterioso y se halla tan oculto por la nebulosa acumulada en torno a él, en el transcurso de los tiempos, que nadie honradamente puede decir que lo conoce y sabe de dónde procede. ¡Cuánto se ha escrito y cuántos puntos de vista tan dispares se han suscitado sobre su origen! Para el estudioso y diplomático indopakistaní Aziz Balouch, agregado cultural de la embajada de su país en España y cantaor profesional en la década de los treinta, formando compañía con Pepe Marchena, Niño de Almadén, Pepe Palanca y Ramón Montoya, el cante jondo fue introducido en Andalucía por el gran Portada del libro de Aziz Balouch, publicada en 1955 Ziryab, cantaor y músico de natura- leza persa. Este genial musicólogo, que pasó a la historia con letras de oro, se formó culturalmente en el Sindh, cuya región gozaba ya de pre- eminencia cultural y folklórica 2.500 años antes de Cristo. Nos dice además el señor Aziz, que Ziryab, para poder llegar al califato de Córdoba, a cuyo palacio fue enviado por el califa de Bagdad, Harum-El-Baschid, «para enseñar los músicos andaluces su música\n\n[ENDING CONTEXT]\n\nfamilia de cantes forman el tronco del árbol malagueño. Por ello les aplicó, honradamente, las leyes biológicas de la reproducción, porque de ellos nacieron todos los cantes enumerados, así como el resto de los injustamente titulados cantes payos.\n\nEsta es mi opinión sobre el origen y proceso evolutivo de los cantes de Málaga irradiados sobre Levante, Granada, Córdoba y Huelva. ¿Que estoy equivocado? Es posible. ¿Por qué? Porque todo, absolutamente todo, en este mundo del arte flamenco —como siempre he dicho—, se halla envuelto por una densa capa oscura, intraspirable e inescrutable.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "¿Forman el gigantesco árbol flamenco malagueño el verdial y los fandangos de Vélez?",
+    "periodical": "candil",
+    "issue_id": "1997-01",
+    "year": 1997,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "21-25",
+    "page_number": 21,
+    "word_count": 4963,
+    "article_char_count_full": 28868,
+    "article_char_count_review": 3839,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segunda"
+      }
+    ]
+  }
+]
+```

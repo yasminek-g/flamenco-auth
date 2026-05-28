@@ -1,0 +1,278 @@
+[
+  {
+    "article_id": "1979-11-13-right-canalejas-de-puerto-real",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Canalejas de Puerto Real, guardó siempre el fiel equilibrio de un hondo sentido profesional, junto al amplio conocimiento de un arte que dominaba.",
+        "target": "Canalejas de Puerto Real",
+        "rationale": "The passage explicitly evaluates Canalejas's artistic quality through professionalism, depth, and mastery."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "En ocasiones se siente la necesidad de ir al pasado para hacerlo, nuevamente, vivir. Y es posible, gracias a ese trozo de recuerdo hecho fotografía, disco antiguo o un viejo y amarillento recorte de periódico.",
+        "target": "memory of Canalejas de Puerto Real and past flamenco performance",
+        "rationale": "The article frames archival traces and remembrance as a way to make a past flamenco figure live again."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "references to past, local rootedness, and history are present, but the passage mainly memorializes rather than clearly using tradition to authorize present practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "duende and hondo appear, but the aesthetic criteria are not developed enough beyond praise to warrant a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Canalejas de Puerto Real",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Memorial profile with moderate evaluative and memory-work discourse."
+  },
+  {
+    "article_id": "1979-11-14-right-quienes-fueron-los-maestros-fran",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "fue uno de los primeros maestros del cante flamenco, teniendo discípulos famosos como su sobrino Tomás «El Nitri».",
+        "target": "Francisco Ortega Vargas «El Fillo»",
+        "rationale": "The passage canonizes El Fillo as an early master and places him in a hierarchy of influential flamenco figures."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Respecto a las cabales, se cree que se han transmitido hasta nuestros días, tres creaciones de Francisco Ortega... Tomás «El Nitri», que seguramente fue su principal transmisor.",
+        "target": "transmission of El Fillo's cabales and siguiriya styles",
+        "rationale": "The passage explicitly frames flamenco repertoire as transmitted through named lineage figures across generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "De otros cantes de Francisco Ortega, uno de los que con más pureza ha llegado a nuestra época, ha sido la caña, transmitida por dos grandes maestros",
+        "target": "the caña attributed to Francisco Ortega",
+        "rationale": "The passage values a present repertory item through continuity from the past and its pure transmission by great masters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "gitano identity is mentioned, but it is mostly biographical and does not clearly organize authority beyond the already coded lineage/canon discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "El Fillo and his transmitted cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Strong canon-and-lineage article; codes kept to the clearest master/transmission claims."
+  },
+  {
+    "article_id": "1979-11-15-right-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Diriamos que el trabajo es coherente. Hecho con sentido profesional, con intentos serios de configurar cada estilo según su conocimiento",
+        "target": "Luis de Córdoba's album María del Amor",
+        "rationale": "The reviewer directly evaluates the recording as coherent, professional, and serious."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "En los jóvenes cantaores, generalmente predomina un sentir innovador cimentado no sabemos sobre qué bases de conocimiento y experiencia artística... todo hacer debe tener unas coordenadas que conlleven a una obra digna.",
+        "target": "innovative tendencies among young cantaores",
+        "rationale": "The critic polices a boundary around proper innovation by requiring knowledge, experience, and dignified artistic coordinates."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "conjugando tradición cantaora y nuevos aires flamencos... siendo fiel a lo aprendido, abriera su decir a unos cauces de mayor expresividad y comunicación.",
+        "target": "Luis de Córdoba's interpretive development",
+        "rationale": "The passage treats tradition and fidelity to learned knowledge as necessary grounding for legitimate contemporary expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "según su conocimiento, asimilado —creemos—, en duras sesiones de aprendizaje, con conocedores profundos de lo que es el cante",
+        "target": "Luis de Córdoba's knowledge of cante",
+        "rationale": "The reviewer legitimates the artist's knowledge through apprenticeship-like learning with deep connoisseurs of cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "aesthetic terms such as expresividad, comunicación, and rigidez appear, but they are folded into the broader critical evaluation rather than used as a separate explicit criteria discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "the reviewer says not to call them purists and warns against deviation, but the passage does not clearly exclude an impure or fake target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "reviewed flamenco recordings and young cantaores",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Dense review discourse; includes praise for one recording and critical boundary-setting around innovation in another."
+  },
+  {
+    "article_id": "1980-01-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Memoria para dignificar las viejas cicatrices y recuperar la historia nunca escrita del cante.",
+        "target": "the unwritten history and memory of cante",
+        "rationale": "The editorial frames cante as collective memory-work that recovers and dignifies a suppressed cultural past."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "lo nuestro es el Candil: la luz diminuta sobre esta manifestación del misterio... Eso sí, luz con la autenticidad de la llama que es viva",
+        "target": "Candil's relation to cante",
+        "rationale": "The passage presents the magazine's illumination of cante as authentic through the metaphor of a living flame."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la pequeña llamita que inmortalmente atraviesa la región y los siglos",
+        "target": "cante as a continuing cultural manifestation across the South and across centuries",
+        "rationale": "The passage grounds the value of cante in continuity across place, region, and centuries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "pueblo and comunidades are invoked, but the visible text mainly frames memory and continuity rather than a clear belonging or authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "cante and Candil's memory project",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Editorial is strongly memorial and legitimating, with authenticity expressed through metaphor rather than direct technical judgment."
+  },
+  {
+    "article_id": "1980-01-4-right-a-nadie-se-le-puede-sustraer-lo-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "En varias ocasiones he tenido que decir a cantaores y aficionados que están equivocados; que no se trata de una malagueña, sino de una granaína.",
+        "target": "classification of granaína, malagueña, and related cantes",
+        "rationale": "The speaker exercises expert corrective authority over singers and aficionados in classifying cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cantó por granaína y terminó con una media granaína tal y como LO DISPUSO don Antonio Chacón y por supuesto, tal y como le siguieron casi todos los cantaores de su época.",
+        "target": "Antonio Chacón as model for granaína/media granaína",
+        "rationale": "The passage invokes Chacón as a canonical model whose arrangement was followed by other singers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "hacer una recopilación de los cantes levantinos, con la intención de ponerlos a disposición de cualquier peña o entidad flamenca... Me gustaría que estos cantes fueran ampliamente difundidos",
+        "target": "access to knowledge of cantes levantinos",
+        "rationale": "The passage proposes mediated circulation of recordings to broaden access and remove confusion about cante distinctions."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "singular peña flamenca se enseña todos los días a cantar y bailar como mandan los cánones. ¡Qué bonita y fructifera labor!",
+        "target": "daily teaching of singing and dancing in the peña",
+        "rationale": "The passage legitimates the peña's teaching work as fruitful instruction according to recognized canons."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "peñas and aficionados are mentioned, but the clearest function is pedagogical dissemination rather than community authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "classical/canonical repertoire appears, but the visible passage is more about expert classification and teaching than tradition as present-value authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "classification and dissemination of Levantine cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but visible excerpt is sufficient for expert classification and pedagogical access codes."
+  }
+]

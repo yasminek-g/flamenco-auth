@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-11-42-left-a-modo-de-homenaje",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDigámoslo piadosamente, una vez más la inconsecuencia de muchos ha impedido un mayor y sumo provecho de un hombre de una gran talla intelectual, tal vez el más grande narrador de las pasiones y sentires de nuestro arte.\n\nAunque nacido en Buenos Aires un 28 de marzo de 1927, por sus venas corría sangre andaluza. Sus abuelos paternos, Manuel González, nacido en San Roque, y Antonia Espinosa, en Algeciras, hicieron posible el nacimiento de Aurelio González Espinosa (1899-1964) en La Línea de la Concepción, quien contrajo matrimonio con la mala-gueña Carmen Climent Simó (1893-1972), hija que fue de Miguel Climent y Matilde Simó, ambos de Vinicolet (Valencia).\n\nAurelio y Carmen se hallaban en Argentina allá por el comienzo de la tercera década de este siglo y en 1921 tuvieron su primer hijo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"aficionao\"]\n\ntuvieron su primer hijo —Aurelio—, el mayor de los hermanos de Anselmo, quien reside actualmente en Argentina. Posteriormente nació Ariel (1924-1988) también natural de Argentina. El tercero y último hijo de ese matrimonio fue Anselmo González Climent, quien un día 30 de octubre de 1988, a la edad de 61 años, escribió la última página de su vida. Hasta aquí los datos que nos han sido facilitados por su viuda, doña Amalia López, a través de ese «aficionao» de lujo y amigo común: Pedro Sánchez Ortega, en carta fechada en Mar del Plata a 14 de abril de 1992. Anselmo pasó en España apenas cuatro años, si sumamos su algo más de media docena de viajes, la mayor parte de ellos en su blanco San Roque, como a él gustaba decir. El resto de sus días transcurrieron, en gran medida, en su Buenos Aires natal, pero ello no consiguió mermar su devoción por Andalucía y su arte. Fruto de esta devoción fue su impresionante obra; obra sin duda que de haber residido más tiempo entre nosotros, hubiese sido más prolija y, por qué no decirlo, tal vez más atinada en algunos conceptos flamencos que él, por desgracia, no pudo colegir desde la distancia. Desde esa situación cobra sentido nuestra crítica en el comienzo de este trabajo, donde tachamos de inconsecuentes a aquellos cuya ceguera imposibilitó el que González Climent nos ofreciera otros pareceres, un mayor contraste; puesto que él, con otros, fue agente directo de la primavera\n\n[ENDING CONTEXT]\n\ntema, ya que en justicia la prudencia aconseja ofrecer el más fuerte de los aplausos a la insigne figura de un gran hombre que dio tanto por tan poco.\n\nVaya por delante nuestro reconocimiento más profundo, aunque ello no sirva de mucho, pero es de bien nacido agradecer los méritos ajenos. También habría sido hermoso y justo el que dichos méritos se hubiesen visto justipreciados por nuestras autoridades públicas y flamencas, conviniendo en un gesto que les honraría, al hilo del V Centenario, el hermanamiento de los pabellones argentino y andaluz, celebrando homenaje en su memoria y recuerdo.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "A modo de homenaje",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "42-42",
+    "page_number": 42,
+    "word_count": 1075,
+    "article_char_count_full": 6501,
+    "article_char_count_review": 3059,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "aficionao"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-11-43-left-aunque-no-quepa-en-el-papel",
+    "article_text_for_review": "Como afirmamos en nuestra introducción a este bello librito, editado con ocasión del Concurso Nacional de Arte Flamenco de Córdoba que acaba de celebrarse (palabras que, por error, aparecen firmadas también por Ramón Porras, y de las que soy único responsable) el hecho de encontrar hoy en día, cuando nadie escribe cartas, una literatura epistolar que haga vibrar a quien la lea, no es tarea fácil. De ahí la importancia de este trabajo epistolar que analiza la correspondencia sostenida entre el poeta Ricardo Molina Tenor y el flamencólogo argentino (de origen español) Anselmo González Climent, entre el 1 de julio de 1955 y el 31 de diciembre de 1965, y de la que, por desgracia, desconocemos las respuestas que el argentino enviaría con aquella prosa suya, tan jugosa, que los lectores conocen de sobra, basta repasar el espléndido «Carné Flamenco» publicado por Candil, y en la que, sin duda, opinaría sobre una serie de puntos en torno al flamenco que Ricardo plantea en sus cartas, sobre todo en lo concerniente a la organización y desarrollo del Concurso Nacional de Cante Jondo de 1956, al cual González Climent fue invitado en ca-\n\nCartas de Ricardo Molina a Anselmo González Climent, ediciones de La Posada. Colección Demófilo. Córdoba 1992. Prólogo de Agustín Gómez. Introducción de José Luis Buendía. Notas de Ramón Porras.\n\nlidad de jurado. Recovecos íntimos de la sensibilidad flamenca del poeta de «Cántico» aparecen aquí recogidos y expuestos con la sinceridad que sólo la carta, que se supone algo íntimo, a un amigo, puede manifestar; filias y fobias no disimuladas, cambios de actitud y de gusto estético a medida que el pontanés conoce más de cerca al flamenco y traba amistad con sus protagonistas, en especial con Antonio Mairena, sin que falten afecciones y disgustos acerca de la esfera puramente literaria y multitud de referencias a la intimidad personal y familiar. En fin, un pequeño tesoro sobre el que Agustín Gómez, Ramón Porras y yo mismo hemos trabajado con el empeño, no sabemos si lo grado en su totalidad, ya que eso habrán de juzgarlo nuestros lectores, de dar a la luz pública el tesoro sin par de la intimidad de un poeta iluminado, del flamencólogo sensato y, sobre todo, del amigo embargado por los dulces sentimientos afectivos hacia la persona a quien va dirigido el dardo suave de la sensibilidad epistolar.\n\nCreemos, como grupo Candil, haber satisfecho la voluntad de An-selmo, quien nos hizo el regalo impagable de su documentación.",
+    "title": "Aunque no quepa en el papel...",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "43-43",
+    "page_number": 43,
+    "word_count": 411,
+    "article_char_count_full": 2481,
+    "article_char_count_review": 2481,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-11-43-right-casta-o-de-india",
+    "article_text_for_review": "De la correspondencia mantenida entre González Climent y Ricardo Molina, hemos seleccionado este poema que el poeta cordobés dedica al aquí homenajeado.\n\nA Anselmo González Climent\n\nE\n\nIl castaño de India que alarga poderoso su sombra negando con lo verde y lo risueño el vacío del verano donde vivo, me impone realidad y me asegura alta y viviente compañía.\n\ny a no comprendo ni amo otra cosa que este multiplicado árbol creciente que se da liberal a quien lo mira.\n\nDe rama, viento y sombra espero no sé qué revelaciones de espacios soleados, suspendida mi alma entre las hojas, tal una más entre ellas.\n\nOh revelación rauda del verde pródigo y asaltante; ansias colmadas en su puro temblor, así al deseo sentirse únicamente a sí mismo le basta en la feliz conciencia de bello adolescente.\n\nNi primera ni última realidad, sino única, he aquí el verde ofrecido graciosamente al mundo, don natural cuya riqueza exploró más que esmeralda, viva y duradera.\n\nNo más saber ni ciencia que la voluptuosa gracia tuya primaveral y la esperanza infalible y tierra que fluye a través del ligero viento verde de tus hojas, oh árbol adorable.",
+    "title": "Castanño de Indias",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "43-43",
+    "page_number": 43,
+    "word_count": 192,
+    "article_char_count_full": 1130,
+    "article_char_count_review": 1130,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-11-44-left-de-l-tambi-n-se-ha-dicho-selecci",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nUna información española acaba de anunciar que en el Centro Cultural Jerezano se ha creado la sección de «Flamencología». ¡Flamencología, nada menos!... Contará con archivo folklórico, discoteca, recopilación de bailes campesino-populares, boletín informativo y, oportunamente, instituirá una cátedra de Arte Flamenco. Pero la interrogante va más allá: el flamenco ¿es arte o ciencia?...\n\nQuien haya visto a Lola Flores —ahora casada con su guitarrista, el simpático «Pescadilla»— en estremecedores arrebatos de genio plástico, de estética y «nervio» del flamenco; a Carmen Ama-ya, gitana del más castizo «caléismo», en sus interpretaciones «jondas» —y hondas de verdad, como cuadra a su innata condición vocacional—; al bailarín Antonio, impresionante, incomparable; o a la «Argentinita», eximia\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\ncasada con su guitarrista, el simpático «Pescadilla»— en estremecedores arrebatos de genio plástico, de estética y «nervio» del flamenco; a Carmen Ama-ya, gitana del más castizo «caléismo», en sus interpretaciones «jondas» —y hondas de verdad, como cuadra a su innata condición vocacional—; al bailarín Antonio, impresionante, incomparable; o a la «Argentinita», eximia artista que igual que Falla en la música elevó exquisitamente las virtudes del arte flamenco a las expresiones más puras y exigentes... Quien haya reflexionado sobre todo esto, indudablemente convendrá en que se trata de algo realmente importante, trascendental. No hablemos ya del flamenquismo su-til de García Lorca, en su obra poética —bastaría su «Romancero gitano»— ni de Andrés Segovia, cuando enfila su guitarra hacia los temas selectos andaluces; o de míster Starkie, el gran hispanista inglés, que con razón se considera como uno de los grandes maestros, entre los más entendidos en flamencología. Y con estas citas no terminan, ni mucho menos, los especialistas en el tema del flamenco, que tratan de llegar a su hondón. Los hermanos Machado, los hermanos Quintero, Marañón, América Castro, Pemán, Waldo Frank, Reyles... Millares de escritores, compositores, periodistas, artistas e investigadores, se interesaron en la problemática del flamenco, reduciéndolo para su análisis en esto último; pero, i\n\n[ENDING CONTEXT]\n\nrecogidas por ninguna grabación o filmación. Asimismo, la expresión gitana, tan singular en el flamenco como en el toreo, y semejante en ambos. «La plena libertad expresiva del toreo se da en la capa —afirma González Climent en otro de sus libros—, mientras que en el cante se cumple normalmente en las bulerías». Junto al estudio de las motivaciones psicológicas, dramáticas o alegres, comunes a ambos géneros y que quedan bien explayadas en el texto, la provisión de ejemplos, citas y anécdotas es abundante en el rastreo de González Climent.\n\nFernando Quiñones y Manuel Ríos Ruiz en el «Cossío»\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "De él también se ha dicho... Selección de Pedro Sánchez Ortega",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "44-46",
+    "page_number": 44,
+    "word_count": 3861,
+    "article_char_count_full": 23796,
+    "article_char_count_review": 3002,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-11-47-left-carta-p-stuma-de-paco",
+    "article_text_for_review": "ASESORIA DE ACTIVIDADES FLAMENCAS\n\nD. PEDRO SANCHEZ ORTEGA Dr. Civera, 24 23001-JAEN\n\nJUNTA DE ANDALUCIA CONSEJERIA DE CULTURA Dirección Gral. ds Fomento y Promoción Cultural Fecha 09 FEB. 1990 Núm. 390 Registro de SALIDA\n\nQuerido Pedro:\n\nPor fin he recibido tus noticias largamente esperadas en esta situación difícil en que me encuentro. Al conocer que querríais hacer un número monográfico a Anselmo, no dudé un momento en pediros el favor de dejarme poner unas letras por mi cuenta. Esto es un tema que me preocupa mucho porque la maledicencia hace siempre de las suyas, y yo tengo de Anselmo incluso -desde hace más de veinte años, sin haberlo tratado jamás personalmente, la impresión de un caballero y un hombre de bien, aparte divergencias normales en temas tan opinables como es el flamenco, lejos de perjudicar el entendimiento entre personas que comulgan en un mismo ideal, hacen de éste justamente una afirmación rotunda de cordial y profundo conocimiento, y en lo que de mí depende de amplio e indiscutible entendimiento. Tú tienes dos o tres copias de cartas mías a Anselmo o de él a mí. Me parece que la reproducción fotostática de cualquiera de ellas sería suficiente para dejar prueba de cuanto afirmo, sin necesidad de añadir mayores elogios a una persona a la que admiré hace un montón de años.\n\nSi esto no fuera suficiente dímelo a ver si mi mal está tado actual me consiente hacer algo mejor.\n\nEn relación al homenaje a Fernando y Bernarda, te rue- go me digas de cuántos días puedo disponer para sin agobios mandarte también unas líneas.\n\nFdo: Francisco Vallecillo ASESOR",
+    "title": "Carta póstuma de Paco",
+    "periodical": "candil",
+    "issue_id": "1992-11",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "47-47",
+    "page_number": 47,
+    "word_count": 269,
+    "article_char_count_full": 1593,
+    "article_char_count_review": 1593,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

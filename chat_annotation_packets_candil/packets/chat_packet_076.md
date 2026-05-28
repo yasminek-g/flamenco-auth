@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-07-9-left-como-el-gazpacho-al-cante-flamen",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor M. Yerga Lancharro\n\nL título de este trabajo, aunque parezca un disparate, lo dice todo bien claro; que del sufrido y siempre vejado cante flamenco, cada individuo español o extranjero, puede «despacharse a su gusto». Puede decir de él cuanto le venga en gana, porque nadie saldrá a su encuentro para rebatirle sus teorías inciertas.\n\nSeñores lectores de «Candil», ¡Cuán lamentable es para mí, como aficionado dedicado a la investigación durante años y años, preocupado por «enderezar entuertos» y por descubrir sus orígenes, que al final del espinoso camino de la investigación, me haya encontrado con una barrera infranqueable impidiéndome proseguir mis diligencias! Es el arte flamenco tan misterioso y se halla tan oculto por la nebulosa acumulada en torno a él en el transcurso de los\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"origen\"]\n\nicado a la investigación durante años y años, preocupado por «enderezar entuertos» y por descubrir sus orígenes, que al final del espinoso camino de la investigación, me haya encontrado con una barrera infranqueable impidiéndome proseguir mis diligencias! Es el arte flamenco tan misterioso y se halla tan oculto por la nebulosa acumulada en torno a él en el transcurso de los tiempos, que nadie, honradamente, puede decir que lo conoce y sabe de su origen. ¡Cuánto se ha dicho y escrito y cuántos puntos de vista tan dispares se han suscitado sobre el tema de su origen! Para el estudioso y diplomático indopakistaní, señor Aziz Balouch, agregado cultural de la Embajada de su país en España y cantaor profesional en la década de los treinta, formando compañía con Pepe Marchena, Niño de Almadén, Pepe Palanca, Chato de las Ventas y Ramón Montoya entre otros, el cante jondo fue introducido en Andalucía por el gran Ziryab, cantaor y músico de origen Persa. Este genial «musicólogo» que pasó a la historia con letras de oro, se formó culturalmente en el Sindh, cuya región gozaba entonces de preeminencia cultural y folklórica dos mil quinientos años antes de J. C. Nos dice, además, el señor Aziz, que Ziryab para llegar al califato de Córdoba, a cuyo palacio fue enviado por el Califa de Bagdad, Harumel-Baschid, «para enseñar a los músicos andaluces su música y el CANTE JONDO, tuvo que recorrer la frontera entre Persia y Arabia, pasando por los califatos de los Abasidas y por el reino de los Algarávi-Jes. Prosigue diciendo que «la guitarra fue introducida en España por Ziryab. Que en principio este instrumento musical tenía tan sólo cuatro cuerdas, que la quinta fue añadida por el propio Ziryab, y que la sexta ha sido aplicada, relativamente, en época moderna». Que\n\n[ENDING CONTEXT]\n\nlectores de «CANDIL», yo jamás estaré al lado de los que apoyen este postulado mío, porque hemos de pensar que, incluso, esos aloreños originarios de Encinasola, pudieron muy bien aprender a cantar por malaqueñas en la bella ciudad de Málaga o en cualquier pueblo de su provincia de los que cuentan con escuela propia.\n\nY para terminar sólo me resta sugerir a los aficionados que hagan suyo el siguiente axioma:\n\nEl arte flamenco se halla enquistado en el centro de un anillo impenetrable, siendo totalmente imposible llegar hasta él.\n\nTejidos nuevos para tiempos nuevos\n\nCorrea Weglison, 9\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "COMO EL GAZPACHO, AL CANTE FLAMENCO ADMITE CUANTO SE LE ECHE",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 1176,
+    "article_char_count_full": 7086,
+    "article_char_count_review": 3400,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "origen"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-07-10-left-cantes-tradicionales-de-cartagen",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA L hablar sobre los cantes de estilos mineros de Cartagena, tenemos que decir que de nuestra tierra, a través del tiempo, han ido brotando las distintas manifestaciones musicales que, más tarde, dieron lugar al florecimiento de unos cantes característicos que denotan, en su estructura musical, un cariz autóctonamente cartagenero (1).\n\nTenemos que reconocer que esta faceta cartagenera —su cante— aún no ha sido estudiada y potenciada, en su totalidad, con el suficiente esmero. Y es muy importante recordar que si hoy nuestros cantes de estilos mineros mantienen su total vigencia ha sido como consecuencia de un hecho providencial y gracias a don Antonio Grau Dauset (hijo del Rojo el Alpargatero), que supo atesorar toda la belleza inconfundible de los estilos mineros de Cartagena (taranta\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"TRADICION\"]\n\nde estilos mineros mantienen su total vigencia ha sido como consecuencia de un hecho providencial y gracias a don Antonio Grau Dauset (hijo del Rojo el Alpargatero), que supo atesorar toda la belleza inconfundible de los estilos mineros de Cartagena (taranta cante matriz, cartageneras, tarantillas, etc.), que le transmitiera su padre don Antonio Grau Mora, Rojo el Alpargatero, creador y estructurador musical de los cantes y estilos mencionados. TRADICION ORAL. Los cantes de estilos mineros de Cartagena, como manifiestación cultural de esta tierra y dentro de su contexto musical, quedan fielmente interpretados para la posteridad, en la numerosa discografía que grabara, años atrás, Antonio Piñana, padre (2). Por fortuna para quienes seguimos más o menos de cerca las cosas del arte flamenco, los artistas que nos son contemporáneos han dejado —o tienen— grabados (y muy audibles por los adelantos de la técnica) la inmensa mayoría de estilos de cantes; por esta razón podemos apreciar fidedignamente —y con gran calidad— la riqueza musical de l\n\n[ENDING CONTEXT]\n\nde cantes mineros; de las controversias cantaoras de esas reuniones, entroncadas en una densa atmósfera en la que se respiraba el arte y se percibía el «duende», se fueron perfilando los «tercios» de cada estilo, y todos ellos, que de un mismo tronco nacían, estaban inmersos en la musicalidad que les aportaba —y les aporta— la belleza sonora de los «medios tonos», tonos graves, agudos y diversidad de melismas indispensables.\n\nFinalmente, los estilos mineros de Cartagena volvieron a resurgir (en el año 1952) de la mano de don Antonio Grau Dauset —Rojo hijo— y de don Antonio Piñana, padre.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cantes tradicionales de Cartagena",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 1168,
+    "article_char_count_full": 7245,
+    "article_char_count_review": 2675,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "TRADICION"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-07-12-left-taranta-del-arbol-malague-o-por-",
+    "article_text_for_review": "Con el fin de justificar, de alguna manera, lo que tantas veces vengo diciendo: que la taranta «Son desabrios», «Del soberano», etc., hace cincuenta años se canta-ba como tal y que después se viene interpretando como cartagenera, a continuación transcribo un acta notarial que acredita que a principios de siglo aquellos grandes cantaores, por Levante, la conocían e interpretaban como taranta. ¿Que desde hace cincuenta años, sin saber por qué causas, se viene interpretando como cartagenera? Así es, pero yo que casi pertenezco a aquella época continúo en mis trece:\n\nNUMERO Cuatrocientos diecinueve. ___ ___ ___ ___ En Fuente de Cantos, mi residencia, a seis de A - bril de mil novecientos ochenta y tres. ___ ___ ___ Ante mí, CRISTOBAL GARCIA ZAPATA, Notario del Ilustre Colegio de Cáceres, ___ ___ ___ ___\n\n= = C O M P A R E C E : = =\n\nDON MANUEL YERGA LANCHARRO, mayor de edad, casado, empleado y vecino de ésta, calle Capitán Navarrete, 58- Exhibe su D.N.I. número 3.321.130.- Interviene por su propio derecho.\n\nConozco al compareciente y tiene a mi juicio capacidad suficiente para este acto, y ___\n\nES COPIA DE SU MATRIZ, que libro para el compareciente Don Manuel Yerga Lancharro, en dos folios de clase oc - tava, serie OJ. números 7.885.972 el primero, y el pre- sente.- FUENTE DE CANTOS, dia siguiente al de su o - torgamiento.- DOY FE.=\n\nPor M. Yerga Lancharro\n\nFrancisco Tomás Pavón, hermano de «La Niña de los Peines», no creó ningún cante, como tampoco los creó Arturo ni Pastora. ¿Quiere usted saber de qué escuelas eran sus cantes? Voy a procurar no equivocarme refiriéndome solamente a los que a usted le interesa:",
+    "title": "TARANTA DEL ARBOL MALAGUEÑO Por M. Yerga Lancharro",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 282,
+    "article_char_count_full": 1634,
+    "article_char_count_review": 1634,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-07-14-left-cincuenta-a-os-de-luz-y-duendes",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA NTONIO Mairena ha muerto, el maestro se nos ha muerto. Nadie, en toda la historia del flamenco ha ostentado un magisterio más indiscutido. En cierto sentido con el entrañable maestro de los Alcores, se ha cerrado un ciclo; y la voz del mítico Joaquín el de la Paula, la voz dulce y hermosa como el pan, tal y como la definiera Antonio Mairena, se ha quedado sin su eco vivo y palpitante. Después del cinco de septiembre las nuevas generaciones de artistas jondos localizarán a una persona, a un cante; significando si fue antes o después de la muerte del maestro.\n\nHace exactamente un año, la revista «Candil» dedicaba un número monográfico al cantaor fallecido. Como ya se dijo en la editorial de aquel número, se trataba de expresar nuestro reconocimiento al redondo cantaor hispalense, a su\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\ny palpitante. Después del cinco de septiembre las nuevas generaciones de artistas jondos localizarán a una persona, a un cante; significando si fue antes o después de la muerte del maestro. Hace exactamente un año, la revista «Candil» dedicaba un número monográfico al cantaor fallecido. Como ya se dijo en la editorial de aquel número, se trataba de expresar nuestro reconocimiento al redondo cantaor hispalense, a su inmaculada dedicación a este arte, a toda su inconmensurable grandeza cantaora; fue aquel un trabajo estudioso y crítico que pretendía reflejar toda la jondura del maestro, su copiosísima bibliografía, la más abundante de la historia del cante. En estos momentos, de sincerísima tristeza, queremos sugerir a nuestros lectores cuanto en aquel trabajo monográfico, limitado, sencillo pero amoroso, queda reflejado. Quienes tuvimos la ocasión de presenciar en vísperas del X Congreso de Actividades Flamencas, la presentación de este número de la revista «Candil», dedicado íntegramente a Antonio Mairena, pudimos constatar su enorme satisfacción por el humilde esfuerzo realizado. Esa misma noche, en la que se descubrió una placa conmemorativa de la primera presencia documentada de gitanos en España, tuvimos el grupo «CANDIL» la hermosa sensación de que algo tremendamente importante se había recuperado para nuestra cultura. Por fin, en la persona del maestro desaparecido, se levantaba el unánime reconocimiento hacia un pueblo secularmente perseguido. Hemos querido reproducir uno de los trabajos de Antonio Mairena publicados en la revista a él dedicada, como emocionado homenaje a uno de los cantaores más importantes —y sin duda alguna el más completo— de este siglo. «Cincuenta años de luz y duende» constituyen a nuestro juicio lo que en el futuro vendrá a denominarse la edad de don Antonio Mairena. Deseo con estas líneas expresar, por un lado, mi ag\n\n[ENDING CONTEXT]\n\ntodo el que, de una forma u otra, haya querido contribuir a este acto como reco-\n\nnocimiento a mi humilde persona y arte y lo mucho o poco que yo haya podido aportar, pero con toda seguridad que lo he hecho con el corazón en la mano y completa-mente libre de toda ambición.\n\nMairena del Alcor, septiembre de 1979\n\nSea prudente...\n\nPLAZA JOSE ANTONIO, 4-4.° - Teléfono 23 23 22\n\nAsegúrese en:\n\nDelegado Provincial: JUAN AYBAR FUERTES J A E N\n\nSeguros de: VIDA - INCENDIOS - RC. GENERAL - RC. AUTOMOVILES - OCUPANTES - INDIVIDUAL - CRISTALES ROBO - INCENDIOS-ROBO - TRANSPORTES - MULTIRIESGO COMERCIAL\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cincuenta años de luz y duendes",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-17",
+    "page_number": 14,
+    "word_count": 3940,
+    "article_char_count_full": 23404,
+    "article_char_count_review": 3503,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-07-17-right-carmen-linares",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCómo fueron tus comienzos en el flamenco?\n\n—Sin duda Pepe el de la Matrona. Porque tenía una enorme personalidad, era un hombre que a mí me cautivaba. Escucharlo hablar era una delicia, y llegué a tener bastante amistad con él; siempre me aconsejaba y aprendí bastante de sus consejos.\n\n—El flamenco lo he vivido desde pequeña, siempre me ha gustado. Además, que mi padre tocaba la guitarra, como aficionado, nunca se hizo profesional, en mi casa se escuchaba mucho flamenco y claro, yo siempre estaba muy atenta. También he escuchao a bastante gente importante cantar y he procurado aprender de todos. Luego mi padre me animaba a que cantara acompañándome él a la guitarra.\n\n—Sin embargo, vemos que tú no haces los cantes de Pepe de la Matrona.\n\n—¿Tus inicios fueron en Linares?\n\n—Bueno, siempre he\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"recuerdos\"]\n\nmi padre me animaba a que cantara acompañándome él a la guitarra. —Sin embargo, vemos que tú no haces los cantes de Pepe de la Matrona. —¿Tus inicios fueron en Linares? —Bueno, siempre he procurado aprender de todos, porque en Madrid estaban la crema y nata de los cantaores. Tuve relación con Pericón, con Rafael Romero, con Enrique Morente, Juan Varea, etc., y de todos he procura- —No. Mis inicios fueron en Madrid. De Linares sólo tengo los recuerdos de niña, pero en Madrid fue donde conocí a muchos cantaores, entonces me entró el gusanillo y desde entonces estoy cantando. —¿De todos esos cantaores que conocistes, quién te impresionó más? do asimilar algo. En aquella época había un gran ambiente flamenco en Madrid. —¿Y actualmente, qué ambiente existe en el Madrid flamenco? —En Madrid siempre hay buen ambiente flamenco, porque gran número de artistas viven allí, puesto que es donde más fácil puedes proyectarte; lo que pasa es que la crisis económica afecta a todo, y cómo no, a la vida nocturna, por eso ahora los tablaos contratan menos artistas. El ambiente ahora es más de peñas. —El público madrileño ¿qué tal es? —Suponemos que como otros muchos artistas, tú habrás escuchado en discos de pizarra a los grandes maestros de principio de siglo. ¿Cuál de ellos te ha llegado más? —Han sido varios los que me han llegado. Chacón, por ejemplo, para mí, era un artista de una categoría extraordinaria, un cantaor muy completo. Al principio me costó trabajo conectar con su cante, por esa voz que tenía, que es una voz que no ent\n\n[ENDING CONTEXT]\n\na Juan Valderrama y a Fosforito; pero aprenderla, la aprendí de mi padre. De los otros cantaores poco te puedo decir, sólo lo que me cuenta mi padre, que en aquella fecha en Linares se cantaba muy bien por estos palos y que había un ambiente muy bueno donde corría el dinero.\n\n—¿Tú estás de acuerdo con que algunos tocaores alarguen en exceso las falsetas cuando están acompañando a un tocaor?\n\n—No, en absoluto, porque el tocaor que se pase en falsetas, lo que hace es quitarle concentración al cantaor y molestarle. Hay que tener en cuenta que el cante y la guitarra es una conversación entre dos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Carmen Linares",
+    "periodical": "candil",
+    "issue_id": "1983-07",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1786,
+    "article_char_count_full": 10132,
+    "article_char_count_review": 3174,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "recuerdos"
+      }
+    ]
+  }
+]
+```

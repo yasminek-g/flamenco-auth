@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1977_08::A6",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSEVILLANAS SIN GUITARRA--Kit Stowell (cont'd.) are often humorous little verses which are in themselves gems of literary precision, set to those catchy and repetitive tunes we all recognize. Even now, across many years in which I have not even heard a $ \\underline{\\text{sevillana}} $, the music brings those verses and their bright images to mind: The first verse may set a scene: blue rejas (burgier bars, we call them in unromantic English) In Spanish the very word evokes pictures of star-crossed lovers forever separated, the girl imprisoned in her father's house by these wrought-iron rejas. Blue rejas, then, glimpsed between green curtains. form the backdrop for the next verse, in which we find the inevitable sweethearts pledging their eternal devotion. In some versions, that is the end,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"man\"]\n\ners we learn the ironic conclusion to their idyll: they have already forgotten one another. Such verse, repetitious yet to the point, give us vignettes of Spanish life that are often virtual stereotypes. In presenting a scene easily understood by anyone, they communicate far more than the bare meaning of their words. In another, the singer threatens to throw the carnation a suitor has given her into the well, saying that she won't wear any young man's flower. This sort of overreaction is a rather typical form of Spanish flirtation, as is also the final scene when the carnation is glimpsed again, proudly perched in the young lady's hair. The $ \\underline{\\text{sevillanas}} $ sometimes have a broader, less subtle humor, as in the case of the girl who reports that, in her eternal quest for laughter, she has married a dwarf. Having done this, however, she obtains a very tall bed, in order to stay out of her husband's reach. As I recall, Teresa hemmed and hawed a little when asked to explain that one, and I didn't get the picture straight until just recently. Because we had no guitar music, each of the other elements of the $ \\underline{\\text{sevillanas}} $ was emphasized in such a way that later, when I became familiar with the music, they blended together to form the complex totality of the gitano spirit. In presenting the rria-rria-pi-ta of the castautets, for example, Teresa explained how they echoed that most Spanish of phonemes, the trilled $ \\underline{\\text{RR}} $. Although the ancestors of the castanets were apparently of Arabic origin, one still wonders which came first: the trill or the castanuela? Teresa had a $ \\underline{\\text{sevillana}} $ dress, but since she travelled on the bus to the lessons, she didn't want to bring it to show us. She found another v One day I found two scallop shells on the beach. She asked if she might borrow them. (The scall by the way, is the symbol of the patron saint of Spain--Santiago, also known as San Diego). W she returned the shells a couple of weeks later, her brother had painted in one a picture of a fis man, in the other a $ \\underline{\\text{sevillana}} $, the ruffles of he costume flowing into the sculpture of the shell. Teresa taught then, much more than the bas dance steps, so quickly forgotten. In her enthusiasm to communicate the beauties of her flame heritage, she made use of whatever came to hat to create a deep feeling for the $ \\underline{\\text{sevillanas}} $--leave an empty place in my soul that only the guitars of Andalusia could fill. SEVILLANAS CASTANETS Juana De Alva There is no universal castanet notating syster Therefore, the system presented has been adap from various sources, most notably from Erne Lenshaw's $ \\underline{\\text{Fundamental Technique of Playing}} $ Castanets. Neither are th\n\n[ENDING CONTEXT]\n\nvino lo amargo de Don Juan y lo perfecto de Dionisio. Sevilla para herir. ¡Siempre Sevilla para herir! SEVILLE Seville is a tower full of fine archers. Seville to wound. Córdoba to die in. A city that lurks for long rhythms, and twists them like labrinths. Like tendrils of a vine burning. Seville to wound! Under the arch of the sky, Across the clear plain, she shoots the constant arrow of her river. Córdoba to die in! And mad with horizons, She mixes in her wine the bitterness of Don Juan and the perfection of Dionysus. Seville to wound. Always Seville to wound! (translation by Lysander Kemp)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "SEVILLANAS CASTANETS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "article",
+    "pages": null,
+    "page_number": 5,
+    "word_count": 928,
+    "article_char_count_full": 16946,
+    "article_char_count_review": 4426,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "man"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1977_08::A7",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSEVILLANAS CASTANETS--Juana De Alva (cont'd.) Here is the castanet notation for the first Se- villana. \"Rria\" (Rrēā) rolling fingers across casta- net beginning with little finger The four Sevillanas dances are often initiated with a heelwork break. The castanets traditionally begin on or just after this break. An excerpt from Poema de la Saeta Federico García Lorca:\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"ritmos\"]\n\n<td>☑</td><td>☑</td><td>☑</td><td>☑</td></tr><tr><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td></tr><tr><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td></tr><tr><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td><td>☑</td></tr><tr><td>☑</td><td>☑</td><td>�</td><td></td><td></td><td></td></tr></table> SEVILLA Sevilla es una torre llena de arqueros finos. Sevilla para herir. Córdoba para morir. Una ciudad que acecha largos ritmos, y los enrosca como laberintos. Como tallos de parra encendidos. ¡Sevilla para herir! Bajo el arco del cielo, sobre su llano limpio, dispara la constante saeta de su río. ¡Córdoba para morir! Y loca de horizonte, mezcla en su vino lo amargo de Don Juan y lo perfecto de Dionisio. Sevilla para herir. ¡Siempre Sevilla para herir! SEVILLE Seville is a tower full of fine archers. Seville to wound. Córdoba to die in. A city that lurks for long rhythms\n\n[ENDING CONTEXT]\n\nvino lo amargo de Don Juan y lo perfecto de Dionisio. Sevilla para herir. ¡Siempre Sevilla para herir! SEVILLE Seville is a tower full of fine archers. Seville to wound. Córdoba to die in. A city that lurks for long rhythms, and twists them like labrinths. Like tendrils of a vine burning. Seville to wound! Under the arch of the sky, Across the clear plain, she shoots the constant arrow of her river. Córdoba to die in! And mad with horizons, She mixes in her wine the bitterness of Don Juan and the perfection of Dionysus. Seville to wound. Always Seville to wound! (translation by Lysander Kemp)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "SEVILLA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "poem",
+    "pages": null,
+    "page_number": 6,
+    "word_count": 225,
+    "article_char_count_full": 12727,
+    "article_char_count_review": 2105,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "ritmos"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1977_08::A8",
+    "article_text_for_review": "SEVILLANAS GUITAR Tom Reineking Sevillanas is commonly written in one of two meters: 3/4 or 3/8. The basic Sevillanas is composed of a continuing strum sequence/introductory melody and a copla. The guitarist starts playing the continuing strum pattern which allows the dancers to prepare themselves. A change in the strum pattern alerts the dancers that the introductory melody will start at the beginning of the next compas. After the introductory melody has been played, a copla is played and then repeated three times. The guitarist and dancers end together....hopefully. The first of the two Sevillanas presented below is one of the more familiar and is often taught to beginners. The second is at the intermediate level. Some guitar nomenclature follows:",
+    "title": "SEVILLANAS GUITAR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "other",
+    "pages": null,
+    "page_number": 7,
+    "word_count": 120,
+    "article_char_count_full": 759,
+    "article_char_count_review": 759,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_09::A1",
+    "article_text_for_review": "Each part of Spain has its music for fiestas: the jota in its various forms in Aragón, Galicia, and Navarra; malagueñas in the province of Málaga; verdiales, rodeñas, fandangos de Almería and fandangos de Lucena in Córdoba; sevillanas in Sevilla. And in Huelva: the fandanguillo or fandangos de Huelva. These \"little fandangos\" are not to be confused with fandangos grandes (or naturales), which are much more deeply and seriously emotional. Fandangos de Huelva are light-hearted and festive songs dealing with the everyday subjects of love, work and family. The following verse is perhaps not festive, but it does show a light-hearted irony. Cuando la vi llorar que creí de volverme loco pero luego me enteré que ella lloraba por otro, y entonces fui yo quien lloré. (When I saw her cry I thought that I would go crazy. But later I understood that she cried for another; then it was I who cried.) And this verse, a promise of undying love: Hasta después de la muerte te tengo que estar queriendo, que muerto también se quiere. Yo te quiero con el alma, y el alma nunca se muere. (I shall love you even after death, for the dead can still love I love you with my soul, and the soul never dies.) For the sake of comparison, the following are verses from the fandangos grandes: FANDANGOS!-- All fandangos from different areas of Andalusia are derived from one basic, simple 3/4 rhythm, similar to verdiales. From verdiales came the many different danceable forms of fandangos, and the non-danceable, serious songs such as mala-guenas, tarantas, granaina and fandangos grandes. These are characterized by having the singing in the major key, which is different from the tones (phrygian mode) played on the guitar between verses, or coplas. The guitar is usually played in tones of the E phyrigian mode with the songs accompanying in C major and various combinations of A major, A minor and E $ ^{7} $. Fandangos are also sometimes played in A phyrigian mode, with the singer accompanying in F major or a combination of D major, D minor and A $ ^{7} $. Fandanguillos are believed to have descended from the jota of northern Spain, which has been traced to a Moorish heritage. Originally they were accompanied by guitars, violins, tam-bourines and castanets. Or where these were not available, reed flutes and pieces of partially split cane which were struck together were used. Even today, the fandangos de Huelva are ac-companied by a drum, a flute, and the split cane which serves as a substitute for castanets. : Fandanguillos are performed by people at the fiestas, who usually take turns dancing the coplas but do not dance the rhythms between the coplas. However, in theatrical flamenco, the guitar rhythms and falsettas between coplas are choreographed and danced. According to some local Spaniards, the traditional fandangos is danced in four distinct coplas, as is sevillanas. The dance is a lively one, building to an exciting climax, full of movement and color, a small tempest which may feed the flames of your festive spirit at the September 9th juerga!",
+    "title": "i FANDANGOS!",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_09",
+    "year": 1977,
+    "language": "en",
+    "article_type": "other",
+    "pages": "1,3",
+    "page_number": 1,
+    "word_count": 519,
+    "article_char_count_full": 3062,
+    "article_char_count_review": 3062,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_09::A2",
+    "article_text_for_review": "I would like to deal with an aspect of fandangos de Huelva that I have not seen discussed in print: the differences in the styles of fandangos from different parts of Huelva. It is common practice to lump all of the fandangos from the province of Huelva and call them \"fandangos de Huelva.\" It is also the accepted practice to sing any copla from any part of Huelva along with other cantes, of course (soleares for example), but at least the informed singers can usually distinguish them if they wish. This is not often the case with the fandanguillos. There are some benefits to be derived from an awareness that there are different styles of fandangos. I, for one, would enjoy hearing on occasion a \"pure\" set of fandangos used on stage, as they are on the record \"Furia Amaya.\" In the northern part of the province of Huelva are pueblos with names like Paymogo, Cabezas Rubias, Almonaster, El Cerro, and Santa Eulalia. A number of the fandangos from this area tend to be in tones of A major-minor (when played in the E phrygian mode). The fandangos from Santa Eulalia can be heard sung by Chato Osuna on Carmen Amaya's \"Furia Amaya\" album, and are similar to those from Almonaster. the style from Cabezas Rubias uses only A minor and E $ ^{7} $ tones and can be heard on \"The History of Cante Flamenco\" (Murray Hill) where María Vargas sings it as her second copla. The very familiar copla melody played by most guitarists that utilizes the A major-minor-E $ ^{7} $ tones is found in a very slow lyrical fashion in Santa Barbara, also in the northern part of the region. Most of the familiar fandangos done in C major come from Alosno, which lies to the north of the city of Huelva. There are so many melodic variations that it becomes quite difficult to describe the differences on paper. To the east of Alosno lie the towns of Valverde de Camino, Zalamea and Riotinto. The only thing that I found to be characteristic of the fandangos from this area is the very sustained flowing nature of the lines. I looked for some tendency toward a long or short opening line in all of these fandangos, but could find nothing conclusive. The coplas from the mining region of Riotinto often deal with mining, but from the happy side of life, rather than the suffering found expressed in the tarantos. (continued next page) STYLES - If one is familiar with some of the publos around Huelva, the titles of some well-known guitar solos of fandangos will make sense. For example, \"Punta Umbría\" by Paco de Lucía refers to a town near the coast. And his \"Fiesta de Moguer\" (on \"Fantasía Flamenca\" refers to the town of Moguer. \"El Ayamonte\" by Andres Batista is the name of a town near the border of Portugal, and \"Fandangos de Arco Santiago\" on the \"Flamencos de Jerez\" album also refers to a town. Contrasting with this smooth, flowing style, are the short. terse phrases and an oddly extended first line of the fandangos Rebollo. Another unusual form is a style from Guzman that is done to a verdiales type of rhythm with the lines being very extended in length. To me, the most unusual style of fandangos is one from Encinasola, a town in the northernmost corner of the province of Huelva. The six lines have the following chord changes: (E7--A minor) (A minor--A minor) (A minor--G7) (G7--C) (C--F--E) (E--A minor--G7--E). Manolo Sanlúcar calls one of his fandangos \"Fandangos de Onuba.\" That word mystified me for a while--until I found that a person from Huelva is called an \"Onubense,\" just as a person from Cadiz is called \"Gaditano.\" in the latter case, the Romans named the City \"Gades\" and, while the word evolved to Cadiz, the inhabitants kept their old name. The situation must be similar in Huelva or Onuba, and though I have not been able to track down the dirivation of the word, it could be Greek, Roman, Moorish, or...? In any case, let's all get going on our Fandangos Onubenses, or if you prefer, FLANdingos de HUEVO. (714) 296-6154 455 Camino del Rio South San Diego, CA 92108",
+    "title": "FANDANGOS STYLES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_09",
+    "year": 1977,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3,4",
+    "page_number": 3,
+    "word_count": 709,
+    "article_char_count_full": 3985,
+    "article_char_count_review": 3985,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

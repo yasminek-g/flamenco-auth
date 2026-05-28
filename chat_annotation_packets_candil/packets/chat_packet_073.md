@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-05-12-right-con-paco-vallecillo",
+    "article_text_for_review": "El flamenco como fenómeno cultural, propio y específico de Andalucía, ha sido asumido por las Instituciones. La Junta de Andalucía y dentro de ella la Consejería de Cultura ha creado un Departamento de Flamenco, cuyo objeto y proyectos intentamos definir en esta entrevista. Al frente del mencionado Departamento de Flamenco, un viejo aficionado, sabio conocedor de toda la problemática jonda, y conocido por la práctica totalidad de la afición flamenca. Con él hemos conversado, de manera informal, y estos han sido sus juicios al respecto.\n\n—Hay quien opina que la asunción, por parte de la Junta de Andalucía, de la defensa del Flamenco como bien cultural ha marcado un hito histórico. ¿Qué opina al respecto?\n\n—No me gusta la definición. El Flamenco es rebelde por naturaleza y entiendo que a la Administración sólo le incumbe un papel de tutela, pero con un profundo respeto al desarrollo artístico que debe ser misión de las entidades que, por fortuna, avalan en la actualidad su desenvolvimento, con independencia obviamente de los circuitos y organizaciones de tipo comercial. La Junta de Andalucía tiene que ayudar, difundir, estimular, investigar, pero con un absoluto respeto a la independencia de la afición y, obviamente, de los profesionales. Que el Flamenco no será otra cosa que la que aquélla y éstos quieran que sea.\n\n—¿Podremos hablar, a partir de ahora, de un Flamenco institucionalizado?\n\n—En efecto. El Flamenco, fenómeno que rebasa ampliamente los límites del folklore, constituye un bien cultural acaso el más definitorio del pueblo andaluz. Sólo la ignorancia ha podido vivir de espaldas tanto tiempo ante esta realidad y si ahora, como esperamos y deseamos, la Junta de Andalucía lo asume decididamente concediéndole el rango que merece, es evidente que estaremos ante el hecho histórico sin duda más trascendente en la órbita de la cultura popular andaluza. —¿Qué sentido tiene la creación de un Departamento de Flamenco, dentro de la Consejería de Cultura de la Junta de Andalucía?\n\n—Al crearse en el seno de la Consejería de Cultura el Instituto de Cultura Andaluza, el Departamento de Flamenco está llamado a ser, cuando se le dote, como los otros departamentos, de los medios requeridos e indispensables, el organismo que cohoneste la conservación y difusión de este fenómeno cultural con las demandas del pueblo andaluz.\n\n—¿Asume la Junta, con carácter excluyente respecto a otras comunidades autónomas, la defensa del Flamenco?\n\n—No. Entendemos que lo asume, lo ha asumido, con un carácter preferente cuya necesidad le viene impuesta por la realidad de la radicación andaluza del fenómeno cultural. Pero lejos de excluir, Andalucía debe sentirse siempre orgullosa de que otros pueblos hermanos, incluso no pocos extraños a nuestra nacionalidad española, defiendan también el Flamenco que para muchos de ellos es un sentimiento compartido.\n\n—¿Qué gana y qué pierde el flamenco tratado desde las Instituciones?\n\n—Creo que esta pregunta está implícitamente contestada con la anterior.\n\n—¿Qué función reserva el Departamento de Flamenco a otros colectivos de dentro y fuera de Andalucía preocupados igualmente por el engrandecimiento del Flamenco?\n\n—El Departamento de Flamenco depende, como ya he dicho, del Instituto de Cultura Andaluzay, en el escalón superior, de la Consejería de Cultura. Esta lógica y normal dependencia implica, esperamos que transitoriamente, una limitación de medios gravísima. No es que falte autonomía presupuestaria, sino que apenas si existe. En esta tesitura, hablar de planes y proyectos resulta, por lo menos, superfluo a estas alturas. Nosotros mismos nos hemos marcado un plazo para desempolvarlos y ponerlos en marcha, pasado el cual nuestra presencia en el Departamento no tendría razón de ser.\n\n—Departamento de Flamenco y Congreso de Actividades Flamencas.\n\n—El Congreso de Actividades Flamencas puede y debe desempeñar un papel trascendente en eso que tú llamabas antes institucionalización del flamenco. Ahí le duele. Para ello, cuenta ya con el apoyo decidido y efectivo de la Junta de Andalucía. Para ello, resulta incuestionable la necesidad de que el Congreso sea más operativo, que adquiera una representatividad más amplia y que sus acuerdos en materia asociativa o institucional, como quiera llamársele, tengan fuerza de obligar. —Algunos temas que han constituido resolución en los pasados Congresos no se han asumido aún, de manera operativa, por el Departamento. A este respecto hay que citar dos cuestiones: a) Flamenco y Escuela. b) Flamenco de la tercera edad.\n\n—El Departamento los asumió desde el primer momento de su creación y no ha dejado de insistir en ellos. En el caso de la Enseñanza, elevó una propuesta tendente a un entendimiento con la Consejería de Educación que es, a nuestro juicio, a quien corresponde la decisión final. Sobre el problema de los artistas desvalidos, hemos hecho todo lo que estaba a nuestro alcance y hemos planteado soluciones perfectamente viables. Hasta ahora únicamente podemos dar como hecho concreto la importante ayuda a la I.T.E.A.F. para sufragar íntegramente el elevado costo de 2.000 ejemplares del disco de larga duración que ya ha empezado a grabar Antonio Mairena, quien junto a Enrique del Melchor y Pedro Peña ofrecen incondicionalmente, gratía et amore, esta sustanciosa aportación a la obra de aquélla. Pero la I.T.E.A.F. no será un éxito verdadero hasta que no quede subsumida en los organismos de la Seguridad Social y Previsión dependientes de la Junta. No afecta ya al Departamento la solución de estos dos temas que pusimos en la cabecera de nuestro programa mínimo. Esperamos, confiados y ciertos de que el problema es perfectamente conocido y sentido en nuestros organismos superiores, una pronta solución.\n\nEspecialidad en Desayunos y Meriendas\n\nPlaza Los Jardinillos, 8\n\nJ A E N",
+    "title": "Entrevista con Paco Vallecillo",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-13",
+    "page_number": 12,
+    "word_count": 916,
+    "article_char_count_full": 5822,
+    "article_char_count_review": 5822,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-05-13-right-ellos-los-protagonistas-dicen-ro",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEllos, los protagonistas, dicen:\n\n—De toda la vida, y nunca mejor dicho, puesto que nació en un teatro, concretamente en el desaparecido teatro Cervantes de Jaén, del que era mi padre Conserje y en ese mismo teatro viví hasta que me casé. Por lo tanto, fíjate la cantidad de vivencias que he tenido y la cantidad de artístas que conocí, no sólo del mundo del flamenco, sino del teatro y de la canción española. Por cierto, que mis primeros pinitos los hice con canción española, con canciones de doña CONCHA PIQUER y JUANITA REINA. Posteriormente, y debido a la influencia que sobre mí ejerció mi marido, opté por el flamenco.\n\nM ANUEL Barrios, en la carátula del primer disco que grabara Rosario López, se preguntaba por qué mágico conducto, le sobrevenía a la cantora de Jaén, una herencia de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"técnica\"]\n\nñola. Por cierto, que mis primeros pinitos los hice con canción española, con canciones de doña CONCHA PIQUER y JUANITA REINA. Posteriormente, y debido a la influencia que sobre mí ejerció mi marido, opté por el flamenco. M ANUEL Barrios, en la carátula del primer disco que grabara Rosario López, se preguntaba por qué mágico conducto, le sobrevenía a la cantora de Jaén, una herencia de sonidos morenos; el cante no puede aprenderse; se madura la técnica, se llena de contenido el conocimiento, se instrumentan aquellas condiciones objetivas que hacen posible la memoria del cante, pero éste cuando irrumpe, cuando se mece o explosiona, cuando toca la vida, arrastra siempre algo de clamor cromosómico, de recuperación genética. Ese es el supuesto que hoy contemplamos. Rosario no puede espigar en su genealogía sonoros nombres de estirpes cantaoras. Ha llegado a la soleá, fervorosamente, de la mano de un grupo de aficionados. Pero el cante no lo ha aprendido —nunca se aprende— sino que sólo lo ha recobrado de su pueblo, es decir, lo ha recordado... —¿Desde cuándo tu afición al flamenco? —¿Por qué no nos hablas de esas vivencias y de los artistas que conocistes en el teatro Cervantes? —Sí, mira, cuando yo era pequeña, era la época de la llamada «opereta flamenca» y en el teatro actuaban muchas compañías que casi siempre cantaban fandangos —no es que yo tenga nada c\n\n[ENDING CONTEXT]\n\notras dos veces más, una con la compañía de Antonio Amaya y otra con Luisita Esteso, claro esto lo hacía por mi ignorancia, porque por aquella fecha tendría yo 8 ó 10 años.\n\nOtra anécdota graciosa me ocurrió en Francia. En uno de los recitales que dí salí al escenario con un vestido negro y canté sentada, porque yo no sé cantar de pie. Al día siguiente la crítica de la prensa decía que había estado bien, que era una cantaora joven andaluza, pero que era una pena que hubiera tenido que salir a cantar llevando luto y además sentada, porque seguramente la pobre padecerá alguna enfermedad.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Ellos, los protagonistas, dicen: Rosario López",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 1800,
+    "article_char_count_full": 10067,
+    "article_char_count_review": 2995,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "técnica"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-05-15-left-mario-maya",
+    "article_text_for_review": "L libro «Laoconte Sur» de nuestro colaborador Francisco Antolín Chica acaba de obtener el VI premio «Jaén» de poesía. Por tratarse de un libro dedicado al arte flamenco, recibirá el correspondiente comentario en nuestra revista. Vaya por de- lante la felicitación a tan digno poeta y amigo, del que ofrecemos, a manera de primicia el siguiente poema.\n\nMARIO MAYA\n\nBorrando apariencias presentas tu contorno ante nosotros, sin otra aspiración que fijar la luna en el estanque muerto esta noche por ti y por tu cintura, abierta de pierna a pierna allá donde la doncella acecha al unicornio, jadeante en el ritmo de bulerías que los picos de los pájaros pretenden en vano atrapar, mientras tú deshaces ritos funerarios y acosas al león de la mañana con brazos de percalina, rugiendo por rescatar los primeros rayos de sol sobre la máscara de un público que llora por descifrar tu efigie\n\nFrancisco Antolín Chica",
+    "title": "Poema: Mario Maya",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 152,
+    "article_char_count_full": 908,
+    "article_char_count_review": 908,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-05-15-right-las-letras-flamencas-de-jose-mar",
+    "article_text_for_review": "LAS LETRAS FLAMENCAS DE JOSE MARIA GIL\n\nEl quererte, ya se sabe, es puerta con cerradura pero que no tiene llave.\n\nLas palabras de tu boca debieran ser como miel pero son como la roca.\n\nTus ojos son el reclamo de la tienda del querer que es una tienda sin amo.\n\nEntre quererte y odiarte escojo el peor camino: el que me lleva a olvidarte.\n\nCon el sudor de la frente gano el pan de cada día «pa» alimentar a mi gente; qué a gusto lo comería si tuviera suficiente.\n\nCaminito de la puerta se pueden marchar tus pasos y no es menester que «güervan».\n\nEn la fuente del querer estoy bebiendo amarguras porque es amargo beber las penas y desventuras que me causa una mujer.\n\nEs tu querer el mandón y mi querer el mandao si me mandas que te quiera verás que cumplo el recao.\n\nDe la blusa de tu amor dame un trocito de tela que no hay castigo peor que ir navegando sin vela.\n\nEl que ofende a una mujer en vez de darle homenaje como es justo y menester, pequeño le viene el traje si pretende un hombre ser.\n\nGuitarra, ponle estribillo a la copla que aquí canto que corte como un cuchillo pa que yo no sufra tanto cuando por pobre me humillo.\n\nSi la pobreza es el «prao» y la miseria el ladrillo, con el hambre que he «pasao» podría hacerme un castillo «pa» presumir de «hacendao».\n\nEl que vende su trabajo con sujeción a la norma lo tiran fuera del tajó si al precio no se conforma aunque lo pongan mu bajo.\n\nA la mina fui a pedir trabajo como minero, no lo pude conseguir porque hace falta primero que otro acabe de morir.\n\nYo faeno como un loco del trabajo en el crisol que no me limpio ni el moco, currelo de sol a sol y el amo dice que poco.",
+    "title": "Las letras flamencas de José María Gil",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 320,
+    "article_char_count_full": 1635,
+    "article_char_count_review": 1635,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-05-16-left-en-torno-al-x-concurso-nacional-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nN OSOTROS hemos cuestionado, en reiteradas ocasiones, la razón de ser de los concursos de Arte Flamenco. Su validez para incentivar la aparición de nuevos valores, en una sociedad de consumo, con potencialidades para encaramar en la cresta del éxito manifestaciones pseudo-flamencas, llenas de mediocridad, cuando no muestra elocuente de hasta donde puede llegar la degradación, en este Arte. Y ello lo decimos sin incurrir en la simpleza de homogeizar el rigor de unos y otros concursos. Córdoba ha retomado la línea que iniciara el Concurso Granadino de 1922, y, a mi juicio, ha soslayado los errores en que cayeron los organizadores del 27, extraordinarios músicos, pintores, poetas, pero poco conocedores del sustrato sociológico que, entonces y ahora, alumbra lo jondo. El Concurso de Córdoba\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"generación\"]\n\nde homogeizar el rigor de unos y otros concursos. Córdoba ha retomado la línea que iniciara el Concurso Granadino de 1922, y, a mi juicio, ha soslayado los errores en que cayeron los organizadores del 27, extraordinarios músicos, pintores, poetas, pero poco conocedores del sustrato sociológico que, entonces y ahora, alumbra lo jondo. El Concurso de Córdoba ha cumplido un rol importantísimo en la moderna historia del Flamenco. Consagró a toda una generación de jóvenes mástros, recuperó del anonimato a viejos artistas cuyo legado constituye todavía el último eslabón de rancias dinastías cantaoras. Del Concurso de Córdoba ha surgido, como señala Anselmo González Climent, un movimiento de rigurosa apreciación del Flamenco que configuró, de alguna manera, el boon de este fenómeno artístico, en la década de los sesenta. En definitiva, es innegable la validez del Concurso de Arte Flamenco de Córdoba. Lo que, en absoluto, entra en conflicto con nuestra primera apreciación. La validez de este Concurso en épocas anteriores no presupone la del presente y, sobre todo, la del futuro. Y ello porque siempre será necesario partir de una premisa: Todo concurso requiere cantaores a los que premiar, y si estos se agotan, si no surgen al compás trepidante con que ahora se organizan concursos y más concursos, por muy rigurosa y eficaz que sea la estructura competitiva, el concurso fallará. Por eso, coincidimos con el análisis de Agustín Gómez (La Voz de Córdoba, de 10 de junio de 1983) en el sentido de afirmar que cada Concurso Nacional de Arte Flamenco es un fiel reflejo de nuestro tiempo. No hay más cera que la que arde; ni más cantaores que los que ya hemos descubierto. Con ello, no pretendemos santificar el trabajo efectuado por el jurado, en esta X Edición del Concurso Nacional de Córdoba. Quienes asistimos a la velada televisiva que protagonizaron los premiados, recibimos una mediocre impresión. Impresión que, en algunos casos, se transformó en perplejidad cuando supimos quiénes fueron los oponentes\n\n[ENDING CONTEXT]\n\nrepresentado por «El Curri» e Isidoro Carmona, y otro que data de 20 ó 30 años atrás representado por Manolo Domínguez y Paco Peña. La lid en el Concurso pasado, se entabló entre «El Curri» y Manolo Domínguez; en el X Concurso, entre Isidoro Carmona y Paco Peña. El jurado se ha decantado hacia el concepto antiguo de la guitarra.\n\nPaco Peña obtuvo el premio «Ramón Montoya»; sus oponentes más conspicuos fueron Isidoro Carmona y José A. Rodríguez. En cuanto al premio «Manolo de Huelva» fue sin discusión para José Luis Postigo.\n\nTejidos nuevos para tiempos nuevos\n\nCorrea Weglison, 9\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "En torno al X Concurso Nacional de Arte Flamenco de Córdoba",
+    "periodical": "candil",
+    "issue_id": "1983-05",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 1671,
+    "article_char_count_full": 10223,
+    "article_char_count_review": 3644,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "generación"
+      }
+    ]
+  }
+]
+```

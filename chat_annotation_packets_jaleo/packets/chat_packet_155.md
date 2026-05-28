@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_11::A13",
+    "article_text_for_review": "San Diego: On September 25th Ernest \"Ernesto\" Lenshaw, the patriarch of San Diego Jaleistas, celebrated his \"90th\" with an open house. On his actual birthday, the 24th, he was surprised by a few flamenco friends who dropped in and dedicated an impromptu show to him. Although he is not able to get out as much as he would like to, Ernesto's spirit is undaunted and he is an inspiration to be around. (from Juana D.) REACH THE FLAMENCO WORLD! ADVERTISE IN WRITE FOR ADVERTISING BROCHURE WE WILL DESIGN YOUR AD FOR A NOMINAL FEE WRITE PO BOX 4706 SAN DIEGO, CA 92104 WE APPRECIATE OUR ADVERTISERS PLEASE PATRONIZE THEM The Blue Guitar Shop Rubina Carmona Chula Vista Travel Mariano Córdoba - Home Study Course Antonio David - Flamenco Supreme Strings Lester De Voe - Flamenco Supreme Strings Jaime Englesias - Flamenco Notebook Alex Grynhaus - Guitar for Sale Shelton-Farretta - Guitar for Sale FLAMENCO DIRECTORY OF NORTH AMERICA THE DIRECTORY MAY BE ORDERED, WHILE THEY LAST, AT THE FOLLOWING RATES: $ \\underline{\\text{lst Class}} $ U.S. and all other countries..... 8.50 $ \\underline{\\text{Air Mail}} $ to Europe.....10.00 Make checks or bank drafts in U.S. currency and payable to: JALEISTAS, Box 4706, San Diego, CA 92104 U.S.A. REYNOLDS S. HERIOT OWNER - MANAGER FLAMENCO SUPREME A premium string designed especially for the top line of flamenco guitars—the choice of many leading guitarists, classical as well as flamenco. At your local dealer or contact: Antonio David Inc., 204 West 55th Street, N.Y.C. 10019—(212) 757-3255 (212) 757-4412 MORCA 1349 Franklin Bellingham, Washington 98225 Ph. (206) 676-1864 TO BE HELD IN LOS ANGELES, CALIFORNIA, NOVEMBER 8TH FOR ONE WEEK BY MASTER TEACHER, TEODORO MORCA. FOR DETAILS, PLEASE WRITE OR CALL: ELLEN WINTSCHNIG, LINCOLN ACADEMY 2632 Lincoln Blvd, Santa Monica, CA 90405 tel: 213 396-6934 or 396-4316 or write or call Teo Morca at above address HELENA VLACTRON - ORIENTAL DANCER with envy. One particularly unbelievable feat was the demonstration of her ability to flip over every other coin from a row of quarters laid across her abdomen. SARITA HEREDIA As for the planning, we have the Botellos to thank for sacrificing ten days of anything resembling privacy as they welcomed another whole family and isolated individuals into their warm and vibrant home. Raul took a week's vacation so that he could spend more time with us and was as generous and attentive as anyone could ask for, whether organizing gatherings in their home or ferrying our happy little crowd to Old Town, Balboa Park or the beaches by day, Tijuana, Los Angeles or local flamenco events by night -- all the time spurred on by cante and palms issuing from the depths of the van (we more than once wondered where, and why, we were going when we had everything we needed in our mobile flamenco unit). Charo, with a heart and spirit to rival the size of Andalucía, soared with unflagging energy through the whole amazing week, carrying us with her on a wave of cante from one day, and night, to the next, somehow managing to remember to cook meals and do laundry. As we rolled into our fourth night with Charo the ever ebullient Sevillana still holding forth, I felt myself starting to slide downhill and was dimly aware of a small, cranky voice inside me saying, \"I'm beginning to hate this woman. When is she going to crack?\" Well, as a matter of fact the crack came the following night when she did yawn a couple of times and we all decided that maybe we should break precedent for a couple of nights by going to bed. Made all the difference in the world and we summoned our resources and surged through the rest of the week in admirable style. Through Charo and Raul we were introduced to San Diego's finest artists. I was impressed with the quality of all these talented people, but more than being impressed, I just got such a charge out of being with other flamencos and seeing others perform, a privilege denied me at home. I have such memories: lovely Juana De Alva and Julia Rómero dancing the most sparkling and graciosa sevillanas I could ever hope to see; Rick's funky gypsy dancing and his rich voice coursing through the smoothest of rumbas and then his beautiful offering to the dawn of \"Dime\"; dear, impish Marisol singing her incomparable bulerías \"de Manolito\"; Charo playing her favorite game of \"Stump the Guitarists\" with an impossible-to-follow copla of sevillanas; much-prettier-than-her-pictures Pilar and everything she sang; the wonderful, strident gypsy voice of Remedios--just hearing her jaleo excited me; the complex and beautiful person that is Yuris--his smile, his spirit, his powerful toque. There were so many people I just got a taste--when what I wanted was a big bite. I hope that impulse will be satisfied before too very long. A final thank you here to my husband Sid, who must have broken some record for non-stop driving (Atlanta to Tucson -- Grand Canyon to Atlanta), napping only when I could manage to prop my broken and sated body behind the wheel for an hour or two. And a note of appreciation for my son Stefan who never once complained. For a non-flamenco running on an entirely different time schedule from the rest of us (sleeping at night, awake in the morning) this kind of experience can be a nightmare. And so, Saludos a San Diego! You are a gracious city with a gorgeous climate, beautiful parks, great beaches. But it is people who make a place, and some of your people are most special. Yes, indeed! We'll be back. Fondly, Marta del Cid Alpharetta, GA",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_11",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22-25",
+    "page_number": 22,
+    "word_count": 947,
+    "article_char_count_full": 5532,
+    "article_char_count_review": 5532,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_11::A14",
+    "article_text_for_review": "We are still in need of juerga sites. The November Juega has been cancelled and there has been no acceptable site offered for our early December juerga (usually the second weekend) or the January general meeting. If anyone wishes to offer their home, business establishment or has any suggestions, please contact juerga coordinator Vicki Dietrich at 460-6218, 468-3755 or 459-4426. Remember that a garage makes a great extra, easy-care room if you have a small house. Colorful sheets can be draped on the walls to cover tools, etc., add a shaded lamp and \"voila\" an instant flamenco den. THIS SPACE RESERVED FOR YOUR A D FOR INFORMATION WRITE",
+    "title": "SAN DIEGO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_11",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26",
+    "page_number": 26,
+    "word_count": 108,
+    "article_char_count_full": 642,
+    "article_char_count_review": 642,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_12::A1",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nVILLANCICOS AND CAMPANILLEROS by Paco Sevilla To prepare the readers for the articles that follow, I offer here some background on the Christmas songs of Andalucía. Villancicos play a role similar to that of Christmas carols here, but tend to be of a lively nature -- more like \"Jingle Bells\" than \"Silent Night.\" In Andalucía, they often take on a flamenco quality and can be sung to any of the festive flamenco rhythms, including rumba, tango, or bulerías, although they are generally sung by non-flamenco people to straight 2/4 or 3/4 rhythm and accompanied by guitar, bandurrias, and tambourines. The gypsies often give the villancicos a humorous or clever theme in the verse and tend to think of Mary as gypsy and Joseph as payo. Here are the verses sung por rumba in the \"History of Cante\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Manuel\"]\n\nthe Mother of God. En el portal de Belén gitanitos han entrao y al Niño y a San José los calsones se le han robao. Pícaros gitanos, cara de pandero, que al Niño de Dios han dejado en cueros. Gypsies have entered the portal of Bethlehem and stolen the trousers of the Child and Joseph. Mischievous gypsies, \"cara de pandero,\" have left the child of God naked. The campanilleros have become part of flamenco only because a few cantaores, particularly Manuel Torre and La Niña de la Puebla, adapted the \"campanilleros de la Aurora\" to their flamenco style of singing. Most modern cantaores base their interpretations of this cante on the style of Manuel Torre. Here is a verse that Manuel popularized: A las puertas de un rico avariento llegó Jesu Cristo, limosna pidió y en igual de darle limosna los perros que había se los azuzó. Pero quiso Dios que los perros murieran ar momento y el rico pobre se quedó. Jesus Christ arrived at the door of a greedy rich man asking for alms; instead of giving Him alms, the rich man set the dogs on Him. But God made the dogs die at that very moment and the rich man became poor. Y NO ES NOCHE DE OORMIR [from: Sevilla Flamenco, Dec. '8D; submitted and translated by Paco Sevilla, with special thanks to Manolo Marin] by José Luis Ortiz Nuevo \"I don't believe there can exist another fable as adorable as that of the child, the manger full of people, the wonderstruck shepherds, the adoring kings, and the sudden song of glory of the celestial legions. If humanity had to possess a unique and effective redeemer among its children, one believes he could be born in no other manner.\" (Barrows Dunham) And the fable, the history, the doctrine, grew, to give life to other imaginative and beauti\n\n[ENDING CONTEXT]\n\nare those campanilleros that the flamencos lay down in broken cadences, solemnly, as in those of Manuel Torre, who was a giant in his greatness and genius. These are the campanilleros, of our Andalucía, that are capable of referring to incredible events and surprising images that are absurdly unusual and delicious; A la una o las dos de la noche está San Cristóbal en medio del mar con el niño de Dios en los brazos diciendo: Valerme, que no pueo más! At one or two in the morning St. Christopher was in the middle of the sea with the child of God in his arms, saying: Help me, I can't go on!\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "CHRISTMAS IN THE CANTE FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_12",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3,4,27",
+    "page_number": 3,
+    "word_count": 1252,
+    "article_char_count_full": 6915,
+    "article_char_count_review": 3347,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Manuel"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_12::A2",
+    "article_text_for_review": "Again we wish to thank our readers for their generous response in the way of donations, gift subscriptions and advertisements. $ \\underline{\\text{Jaleo}} $ is back on solid footing and with your continued support we look forward to another year of sharing and spreading the art of flamenco. JALEO THANKS THE FOLLOWING CONTRIBUTORS: - Gift Subscription - Gift Subscription Robert Dwyer Michael Fisher - Gift Subscription Henry Jova Paco de Malaga) - Gift Subscriptions - Donation Ana Martinez - Gift Subscription - Donation William Pope George Ryss Katina Vrinos - Donation/ Gift Subscription - Donation/ Gift Subscription Merry Christmas",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_12",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 98,
+    "article_char_count_full": 637,
+    "article_char_count_review": 637,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_12::A3",
+    "article_text_for_review": "PLANNING A TRIP TO SPAIN Dear Editor, Next year I am tentatively planning a trip to Spain. Right now the idea is very new and in the developmental stages. Since I've never traveled to a foreign country I'm a bit apprehensive and I'm writing to you with the hope that you can be of assistance. My interest in Spain is due to my interest in the art of flamenco. I have been a dance student and have been taking lessons from an instructor in San Francisco for the past four years. I intend to be going in the summer of '83. Since I don't know anything about Spain and the places that would be of interest, maybe you could make some suggestions and help me to plan an itinerary. I'll be going with my girlfriend, so we will be two women traveling alone. I'd prefer not to stay in hotels but make other accommodations such as staying in a pension or with a family. If time permits (I'm not sure how long we'll be staying), I may decide to enroll in a dance class. I would really appreciate any information that you can give me. Thank you again. Sincerely, Sarah Ibarra Half Moon Bay, CA [Editor: Letters such as Sarah's are not uncommon. Since our limited staff does not permit us to respond at length we refer her request to our readers. If you have any suggestions write to Sarah c/o Jaleo. We would also appreciate updates of teachers in Spain for our directory section.]",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_12",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 255,
+    "article_char_count_full": 1369,
+    "article_char_count_review": 1369,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1995-03-7-left-juan-habichuela-un-espejo-de-vir",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nS abido es que la vida y la obra de Juan Habichuela están traspasadas por su experiencia artística y su devoción por el mundo del cante. Esos son méritos que las hemerotecas vienen destacando razonablemente desde hace ya seis lustros, pero pienso que podemos apreciar algo más sustancial: estamos ante un guitarrista tradicionalmente clásico, apasionado y apasionante, capaz de envolvernos en una ola de placer y estremecimiento físicos, y cuyos ritmos están dados por imágenes y visiones armónicas que difícilmente se borrán de la mente del buen aficionado.\n\nEste granadino universal, que como veremos absorbé desde la cuna el ambiente que será el escenario central de su vida y con el cual se le identifica, procede de una familia flamenca y gitana que, fundada en la segunda mitad del siglo XIX,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"granadinos\"]\n\nísicos, y cuyos ritmos están dados por imágenes y visiones armónicas que difícilmente se borrán de la mente del buen aficionado. Este granadino universal, que como veremos absorbé desde la cuna el ambiente que será el escenario central de su vida y con el cual se le identifica, procede de una familia flamenca y gitana que, fundada en la segunda mitad del siglo XIX, arranca con el cantaor y guitarrista José Carmona, más conocido en los ambientes granadinos por «Mandeli», lo que justifica aquel trabajo en solitario que su nieto Pepe Habichuela le dedicó en 1983. La dinastía tuvo continuación en sus hijos Tía Marina, cantaora, y en José Carmona Fernández, guitarrista apodado por Tío José Habichuela y que, nacido en Lachar el 16 de julio de 1909, nos dio su último adiós en Granada a los 77 años de edad. Fruto del matrimonio de éste con Luisa Carmona Campos nacieron Juan (1933), Do- lores, José Antonio (1944), Luis (1947), Concha y Carlos (1950). Es obvio que las condiciones socio-ambientales del mundo flamenco de entonces no permitían al Tío José Habichuela grandes desahogos, de ahí que los hijos se criaran en la estrechez de un humilde hogar familiar, en una cueva del Sacromonte, y, por paradójico que resulte, acaso más por la necesidad imperiosa de mitigar el hambre que por tener claro el futuro que les aguardaba, Juan se hizo bailaor, siguiendo la imposición paterna, en tanto que Luis, fallecido en septiembre de 1993, se inclinó por el cante. Dicho esto, urgen dos precisiones a renglón seguido. La primera es que, por más que todos los biógrafos de Juan lo hacen natural de Granada, lo cierto es que nació en Málaga el 12 de agosto de 1933, lugar donde la madre se puso de parto cuando acompañaba a su marido de vuelta de una actuación en Melilla junto a su tía Marina. Empero, tras el parto, a los dos días marcharían para Granada. La segunda se refiere al seudónimo artístico, donde si bien nadie discute que fue heredado de su padre, encontramos tres hipótesis distintas y distantes. Por más que el apodo proceda de su baja estatura y su buen gusto en el vestir, hay, sin embargo, quien opina que fue porque imitaba el toque del gran maestro gaditano Juan Gandulla «Habichuela», no faltando, por último, quienes lo hacen originario de la debilidad que el Tío José tenía por estas legumbres y por la insistencia con que se las pedía a su madre. Sea como fuere, lo cierto es que antes de levantar un palmo del suelo ya andaba Juan mezclado en los ambientes flamencos. Comenzó, pues, de niño acompañando a su padre en las actuaciones del bar «El Mesón». Poco despu\n\n[ENDING CONTEXT]\n\ncante flamenco. Retablos 1, 2, 3, 5, 6, 7 y 8 (Zafiro, 1978) Nueva gran antología flamenca. Vol. 7 (RCA, 1979) Grandes del flamenco. Vols. 2 y 4 (Philips, 1981) Antología del cante gitano de nuestra tierra. Vol. 1 (Cinterco, 1986) El cante flamenco. Antología histórica. Vols. 2 y 4 (Philips, 1987) Antología de cantaores flamencos. Vol. 14 (Emi, 1988) Flamenco. Vols. 1 y 7 (Sarpe, 1988) 50 años de flamenco. Vols. 1 y 4 (Perfil, 1991) Homenaje a Juanito Valderrama. Vol. 1 (Divucsa, 1994) Grandes cantaores del flamenco. Manolo Caracol y Luis de Córdoba (Philips, 1994)\n\nPendientes de publicación\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Juan Habichuela, un espejo de virtudes Manuel",
+    "periodical": "candil",
+    "issue_id": "1995-03",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-11",
+    "page_number": 7,
+    "word_count": 3748,
+    "article_char_count_full": 21837,
+    "article_char_count_review": 4219,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "granadinos"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-03-11-right-la-saeta-alcalaina",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«A todos los Vegas, especialmente a Patro, porque viven la Semana Santa».\n\nLa saeta, esa flecha que arroja el cantaor, debió calar pronto en la sensibilidad y en el alma del pueblo alcalaíno. Pues «cantar una saeta» significa expresar los sentimientos más sinceros del pueblo ante los pasos de las imágenes de su Semana Santa. Y digo, su Semana Santa, ya que la gente sencilla considera todo lo relativo a la Semana Santa como perteneciente a su médula esencial. No es el Cristo de la Salud, la Virgen de las Angustias. Jesús Nazareno, el Señor de la Humildad y los gallardetes, sino «su cristo de la salud», «su virgen de las angustias», «su jesús», «su señor de la humildad» y «sus gallardetes». Cantar es la voz más sincera ante los momentos más trascendentes de la vida. Se canta en los\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nelativo a la Semana Santa como perteneciente a su médula esencial. No es el Cristo de la Salud, la Virgen de las Angustias. Jesús Nazareno, el Señor de la Humildad y los gallardetes, sino «su cristo de la salud», «su virgen de las angustias», «su jesús», «su señor de la humildad» y «sus gallardetes». Cantar es la voz más sincera ante los momentos más trascendentes de la vida. Se canta en los banquetes nupciales, en los bautizos, en las reuniones familiares e, incluso, en Semana Santa también se canta y el canto se convierte en piropo, en invectiva contra los personajes odiosos de la Pasión (los judíos, los sayones, los ladrones...), en oración, en súplica y en elogio. Estos cantos semanasanteros proceden de los entreactos serios de la catequesis eclesial, catequesis que se plasma en los desfiles procesionales y se adorna de ejemplos vivientes con la dramatización de la Pasión en nuestro pueblo. Era una costumbre muy conocida por toda nuestra Andalucía en la mayoría de sus poblaciones y que recoge José María Sbarbi de las prácticas de la Cofradía de la Congregación de Cristo Crucificado de Espinas, cuando dice: «entonación monótona, pausada y grave, lúgubre, dejando como en suspenso la cadencia final, a la que se agrega el tiempo, propio de la meditación y recogimiento, como es de Semana Santa en templo y calles» (1). En concreto, nuestros desfiles procesionales más genuinos (el paso de Jesús Nazareno en la mañana del Viernes Santo, los gallardes del Señor de la Columna, la Lámina del Ecce-Homo y el Antiguo Cristo de la Humildad en la tarde del Jueves Santo) nacieron de la mano de los padres dominicos y franciscanos. Aquellos desfiles procesionales solían ilustrarse, según documentos de estas venerables órdenes religiosas (2), con coplas referentes a la Pasión, intercaladas en el transcurso de la procesión y sin t\n\n[ENDING CONTEXT]\n\nen esta calle de antiguo abolengo cofradiero:\n\n«¡Qué es aquello que reluce! Que brilla y con tanta luz es un trono, cuajado de flores, y el Cristo de la Salud».\n\ny, en el encuentro con su madre el saetero-poeta de la calle Veracruz se identifica con Jesús y le dice a la Virgen de las Angustias este poema, muy significativo, para ilustrarnos de una saeta alcalaína que nació y coadyuvó al desarrollo de este peculiar cante con visos de futuro:\n\n«Madre mía de las Angustias, arrópame con tu manto, y concédeme un favor: ya que te quiero tanto, que no me falte la voz pa cantarte toos los años» (7).\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La saeta alcalaína",
+    "periodical": "candil",
+    "issue_id": "1995-03",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-13",
+    "page_number": 11,
+    "word_count": 2301,
+    "article_char_count_full": 13626,
+    "article_char_count_review": 3463,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      }
+    ]
+  },
+  {
+    "article_id": "1995-03-14-left-xi-distinci-n-comp-s-del-cante",
+    "article_text_for_review": "Lovía. El cielo de Sevilla se desangraba en lágrimas mansas y continuas. Uno, que no es milagrerero, estuvo a punto de creer que el prodigio se debía a la plenitud de la jornada, que sembró los campos de esta tierra con los tesoros de ese llanto benéfico e imprescindible.\n\nLos amigos de Cruz Campo, S. A., nos congregaban un nuevo año para homenajear al ganador de la XI Distinción «Compás del Cante». Una vez más, el salón real del hotel Alfonso XIII se vestía de gala para que, por sus rendijas de lujo, penetrara la luz del arte jondo y alegrara las solemnes estancias la bulla flamenca que nuestro pueblo, tan pródigamente, sabe repartir.\n\nEn esta ocasión, un jurado nuevo, más reducido en número que los que anteriormente lo formábamos, pero no en sabiduría, presidido por doña Cayetana de Alba, había elegido como ganador al guitarrista granadino Juan Carmona, «Habichuela», hijo, hermano, padre y tío de importantísimos intérpretes de la sonanta andaluza.\n\nComo puede suponer, cuanto yo dijera hoy aquí de la personalidad del autor distinguido en esta XI edición sería ocioso. La fama de los artistas de rango está muy por encima de los elogios ocasionales, y la de Juan Carmona, así como la de toda su estirpe tocaora, hace ya décadas que ocupa los primeros puestos en el reconocimiento internacional, aunque, eso sí, aún le falte acompañar con su instrumento a Mario Conde, como algún interviniente, más ducho en el mundo de las finanzas que en los trenos de la guitarra, se le escapó, confundiéndolo sin duda con Mario Maya, en un simpático lapsus que, a la postre, constituiría la anécdota más divertida de la noche.\n\nComo viene siendo tradicional en estos actos, y tras la solemne y emotiva entrega de la Distinción, «Habichuela» templó el instrumento, que él ha sabido elevar a categoría de obra de arte, y acompañó a un grupo de fieles amigos, cantaores de muchas noches jondas, de infinitos siglos de cuido y reserva de las más puras esencias flamencas.\n\nAl terminar la jornada, la madrugada cerrada seguía desgranando sus goterones potentes sobre el silente recogimiento de la calle San Fernando, despeinando los cabellos a los cedros ocultos en los cercanos Alcázares. Todavía con el sabor agridulce del toque por soleá de «Habichuela», haciéndonos coquillas en el alma, mojarnos hasta los huesos nos supo a gloria.■\n\nNacida aquel Jueves Santo, entre la gente siniestra, te engendró la luz del alba al filo de una tragedia.\n\nPor entre bosques de lirios, sangrante, moreno y malva, venía el Ajusticiao: ¡Nardo del Mayor Martirio!\n\nA la puerta de un colmao, Magdalena «La Sevilla» —¡cantaora soberana!— sin aliento se ha quedao al ver a Cristo en capilla. Tremante, terrible, inquieta, siente nueva luz que humilla perfumando su garganta; aquella Semana Santa, sin peineta ni mantilla, ella convirtió en Saeta la mística Siguiriya:\n\n«Er Señó der Gran Podé tenga compasión de mí; que tengo un hijo en presidio sólo por mi mar viví.»\n\nY en espiral inconcreta sube flotando el lamento; el redoble y la trompeta ayudan al pensamiento.\n\nNacida aquel Jueves Santo, al filo de una tragedia. Hueles a espiga de nardos.\n\n;Dios te bendiga, Saeta!",
+    "title": "XI Distinción «Compás del Cante»",
+    "periodical": "candil",
+    "issue_id": "1995-03",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-14",
+    "page_number": 14,
+    "word_count": 528,
+    "article_char_count_full": 3152,
+    "article_char_count_review": 3152,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-03-15-left-iv-itinerario-flamenco-a-la-verd",
+    "article_text_for_review": "Siendo cierto, como es, que cada situación y cada acto tienen su porqué, su comentario y su crítica, entristece abrir cualquier publicación diaria o periódica, pues en ella encontramos más penas y desconsuelos que satisfacciones y alegrías. No ocurre esto con las revistas flamencas como Candil, donde se procura plasmar la información clara, veraz y optimista de los hechos flamencos que acontecen en nuestra tierra.\n\nHoy nos alegra comentar el IV Itinerario Flamenco «A la Verde Oliva», que, con el patrónio de la Consejería de Cultura y organizado por la Federación Provincial de Peñas Flamencas, ha llevado el buen cante a once ciudades de Jaén, desde el 25 de noviembre al 17 de diciembre pasados. Recitales desarrollados en las peñas, pero abiertos al público interesado, con gran asistencia y amplia repercusión en prensa y radio.\n\nEn las tres anteriores «ediciones» de estos actos se contó con los cantaores más acreditados de nuestra provincia: Rosario López, Joselete y Carlos Cruz, descartando los afincados en otras tierras. Dieron buenas muestras de su excelente condición flamenca. Sin embargo, dando ejemplo de aperturismo y generosidad, fomentando el intercambio de artistas, ofreciendo a la afición de Jaén nuevas formas de\n\nsentir y decir el cante. Dos cantaores de prestigio y dos guitarras ya consagradas, de Granada y de Cádiz, junto a ocho buenos aficionados de Jaén, vinieron a formar la programación de los once recitales.\n\nSe inauguró el Itinerario en la Peña Flamenca de Jaén, auténtico santuario del Cante, el día 25 de noviembre, con una brillante actuación de la gaditana Carmen de la Jara, con la guitarra de Manolo de Ceuta. Con gran éxito, inició allí su peregrinar flamenco por la provincia. Esta pareja actuó después en Villacarrillo, Martos, Sabióte y Porcuna. Luis «El Polaco», con la guitarra de Miguel Ochando, cantó en Baeza, Linares, Andújar, Jódar, Villanueva de la Reina y Guarromán, en cuya Peña «La Fuentecilla» clausuró el circuito, el día 17 de diciembre.\n\nLarguísimo sería detallar estas actuaciones, en algunas de las cuales se vieron acompañados por cantaores de las Peñas: Niño de la Carmen y Rafael Carrillo, acompañaron a Carmen de la Jara en Sabiote y Martos, respectivamente. El Polaco se vio acompañado de Macareno en Baeza, Tolico en Linares, El Pecas en Andújar, El Zapatero en Jódar, Salvador de la Pita en Villanueva de la Reina y Gregorio de la Rosa en Guarromán.\n\nBalance positivo el del IV Itinerario: para las Peñas, porque han tenido una nueva oportunidad de darse a conocer a sus propios vecinos, de abrir su influencia y magisterio flamencos, demostrando que son algo más que «gente de cante y copas». Es de justicia destacar el esfuerzo y dedicación de la junta directiva de la Federación de Peñas Flamencas de nuestra província, para que esta serie de actos hayan sido una cadena de éxitos, colaborando con las Peñas receptoras en la organización de los mismos.\n\nY es que con buen hacer y paso firme, como decíamos en otra ocasión, los flamencos de Jaén van dando ejemplo, a cuantos quieran reconocerlo, de su bien probada afición. En sus más de veinte peñas federadas, rara es la semana en que no se organicen actos, a los que se suele invitar a miembros de otras Peñas: concursos, festivales, misas flamencas, semanas culturales, cursos de divulgación del cante y la guitarra, y tantos otros. Es de resaltar el hecho de que los dos concursos de cante organizados hasta la fecha (ahora estamos ya con el tercero) a nivel de toda Andalucía, los ganaran, un cantaor de Granada, El Polaco, y otro de Jaén, Joselete. Jaén y Granada, dos provincias consideradas tradicionalmente como «menos flamencas», reivindicaron así su auténtica dimensión cantaora, demostrando que en ellas, desde siempre, se conoce y se vive el cante, no sólo a\n\nNos queda insistir en la personalidad artística de Carmen de la Jara, cantaora gaditana de gran prestigio, con una larguísima relación de primeros premios en importantes concursos, que ha actuado en peñas y festivales flamencos en toda Andalucía y Extremadura, compartiendo cartel con las más importantes figuras del Flamenco, y muy conocida también en otros lugares de España y el extranjero. Muestra, en su forma de cantar, su «acercamiento» a los estilos más puros de la Bahía (La Perla, Vargas, Sellés, Pericón) y de los grandes maestros, como Mairena, Terremoto, Fernanda, etc., siempre con la guitarra de Manolo de Ceuta, tocaor con gran dominio del compás, con gran experiencia en el toque para el baile.\n\nDe la otra pareja de artistas, los granadinos Luis «El Polaco» y Miguel Ochando, poco podemos decir que no sea bien conocido. Son dos figuras de reconocido prestigio, destacando el Premio Concurso de la Comunidad Andaluza, su participación en obras de teatro flamenco, como Macama Jonda, etc., su genialidad y absoluto sentido de la medida, cantando para los más prestigiosos bailadores y, también, los constantes éxitos de Miguel Ochando, joven guitarrista, acreditado con importantísimas distinciones y premios, con clara influencia del maestro Manolo Cano.\n\nEn resumen, el IV Itinerario Flamenco «A la Verde Oliva», ha merecido un balance muy positivo por parte de la afición, y el beneplácito de la Delegación Provincial de la Consejería de Cultura, patrocinadora de estos actos.",
+    "title": "IV Itinerario Flamenco «A la verde oliva». Jaén en el cante",
+    "periodical": "candil",
+    "issue_id": "1995-03",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 862,
+    "article_char_count_full": 5296,
+    "article_char_count_review": 5296,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1995-03-16-right-una-nueva-llave-de-oro",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nU na de las primeras ideas que la dirección del Centro Andaluz de Flamenco de Jerez puso sobre la mesa, fue la del destino o el destinatario de una nueva Llave de Oro del cante. Y, por primera vez, se utiliza un sistema de consulta que puede influir sobre la decisión final. A distintas personas e instituciones se les está solicitando su opinión al respecto. Algo inusual y, desde luego, magnífico en un mundo tan dado a los dogmatismos. Al menos a quien firma, le parece prudente y encomiable la actitud de quien abandera la idea. Si esto pretende animar el catorro, despertar la polémica o, sencillamente, premiar a alguien, es otra cuestión. Pero es cuestión digna de atención porque puede conseguir, entre otras cosas, la aparición de un tiempo en el que los valores políticos primen sobre los\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"logrado\"]\n\nuien abandera la idea. Si esto pretende animar el catorro, despertar la polémica o, sencillamente, premiar a alguien, es otra cuestión. Pero es cuestión digna de atención porque puede conseguir, entre otras cosas, la aparición de un tiempo en el que los valores políticos primen sobre los culturales, en asuntos que sólo a la cultura competen. En todas las épocas ha existido el artista que ha conseguido atraer los elogios de manera más clara o ha logrado revivir el enfrentamiento entre ideas de forma más expresa. Silverio y el Fillo. Chacón y Manuel Torre. Vallejo y Pastora. Caracol y Marchena. Fosforito y Mairena... Y en todos los tiempos se ha mantenido una posición de defensa, soterrada o expresa, de los distintos valores, que ha servido para que cada sector alimentara el propio fuego dando luz a todo el cante. Había pasiones, sí. Incluso poco honrosas en algún momento, pero jamás se ha pretendido institucionalizar la discusión. Claro que los tiempos cambian y aparecen nuevos factores a tener en cuenta. Y como de la historia se debe aprender todo, no parece conveniente que nos quedemos sólo con una parte. Y mucho me temo, a lo peor uno es un mal pensado, que así sea por lo extraño del procedimiento. Ni dudo que sea bueno, ni afirmo que sea malo pero, en flamenco al menos, el pueblo soberano y la labor de cada cual, no los premios oficiales han dado o quitado el sitio. El flamenco, como música, no ya como conjunto de personas que practican un arte, se ha dignificado claramente. Ya no es un subproducto de origen folklórico que levanta entusiasmos en estamentos sociales de escasa significación socio-cultural. Se ha introducido oficialmente, en el círculo de las Bellas Artes, ha entrado en la élite de las formas culturales de proyección universal. Pese a todos los reconocimientos oficiales, todavía está lejano el momento en el que desaparezcan las inclinaciones en contra, por cuant\n\n[ENDING CONTEXT]\n\nParecería demasiado politizado si se concede por la ausencia del poseedor y el tiempo transcurrido desde su otorgamiento.\n\nLos premios, aun cuando tengan sentido en sí mismos y no en los premiados, deben ser otorgados —es una opinión personal— por la calidad demostrada y demostrable. Si alguien llegó a la cima y en ella no permanece porque se tambalea, poco merecimiento tiene. Si está ascendiendo, dejémosle un tiempo para alcanzarla. Y, sobre todo, si el premio es tal porque alguien le dio categoría y no en sí mismo, tengamos la generosidad de dar al César lo que es suyo y de nadie más.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "¿Una nueva Llave de Oro?",
+    "periodical": "candil",
+    "issue_id": "1995-03",
+    "year": 1995,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-20",
+    "page_number": 16,
+    "word_count": 3099,
+    "article_char_count_full": 18136,
+    "article_char_count_review": 3534,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "logrado"
+      }
+    ]
+  }
+]
+```

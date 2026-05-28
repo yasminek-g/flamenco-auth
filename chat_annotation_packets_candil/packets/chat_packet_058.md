@@ -1,0 +1,180 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-32-left-la-fragua-de-los-mairena",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nY todos estos aconteceres que acabo de recordarte no es raro en ti, porque tienes la suerte de estar tocado por la sustancia mágica de la Razón Incorpórea. Yo sé que tú no eres muy dado a estas creencias, como lo soy yo, pero debo recordarte que, delante mía, te entregó una noche esa sustancia y tú la viviste hasta emborracharte con ella y luego sigues creyendo que fue cosa de un sueño.\n\nNo fue sueño, Paco. Fui yo mismo en una noche jerezana el que te presenté a la Razón Incorpórea que tú no conocías y que ya no verás más. Fue una madrugada de una fuerte luna verde y blanca sobre el emparrado de un patio del barrio jerezano de Santiago. Allí se te introdujo la Razón Incorpórea y en un cubo nuevo te dio a probar el mosto de la gitanería jerezana y, en un momento, llegaste a dudar y me\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"profundo\"]\n\ntio del barrio jerezano de Santiago. Allí se te introdujo la Razón Incorpórea y en un cubo nuevo te dio a probar el mosto de la gitanería jerezana y, en un momento, llegaste a dudar y me dijiste que sentías complejo, y yo te contesté que tú habías sido un elegido por la Razón y, al rayar la madrugada, toda la potencia de Ella nos arras- tró hacia el néctar de la mañana y allí, envueltos en un perfume que nos embriagó, poco a poco nos sumió en un profundo sueño de encanto y aquella sustancia quedó im- pregnada en ti para secula seculorum, pero Paco, ten en cuenta que no fui yo quien te llevó a aquel recinto envuelto en una nube de perfume gitano bajoandaluz; yo no fui, fue eso que yo le llamo la Razón Incorpórea y que he querido recordarte en este momento feliz de tu vida como obsequio de brujería, porque bien lo merece tu inmensa obra en pro del Cante Flamenco y Gitano Andaluz y es por esto toda mi satisfacción en este bello día de otoño de 1980. Considero obligado que el texto que ilustra este disco contenga no sólo una pequeña biografía del artista Antonio Mairena (1), sino también una breve historia de mi casa familiar. En ella me formé primeramente y hallé los motivos precisos para ser un artista puramente gitano. Ayudé a mis padres y hermanos en aquel pequeño lugar de trabajo que constituyó la humilde fragua. He creído oportuno que este vocablo dé pie al título del disco, por llevar implícita la idea de que Antonio Cruz, en el cante, ha sido el fundador de la Casa de los Mairena. Alguien ha descubierto lo que se ha dado en llamar «mairenismo» en el cante. No es otra cosa que un matiz determinado en este arte: aires, formas y esencias que están sirviendo de base para la formación de futuras figuras, afortu\n\n[ENDING CONTEXT]\n\nse divisa una cantera de jóvenes valores con ímpetu y deseos de superación. Por ello, hemos de hacerles responsables de lo que será la nueva era del cante. Hablamos de quienes posean, por supuesto, las condiciones que son precisas para ocupar un sitio preferente en este Arte. Debo aclarar que el hecho de suspender mis grabaciones no quiere decir que yo vuelva la espalda al cante. Aunque los años no pasan en balde, gracias a Dios, estoy en plenas facultades y mientras respire no dejaré de cantar, porque creo que en cante es un objetivo que nunca se consigue íntegramente. Viene a ser, pues,\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La fragua de los Mairena",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "32-32",
+    "page_number": 32,
+    "word_count": 1366,
+    "article_char_count_full": 7735,
+    "article_char_count_review": 3361,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "profundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-33-left-en-segovia",
+    "article_text_for_review": "el título de este disco, un recuerdo de mi niñez, un repaso, aunque breve, de la historia de mi vida, de mi herería: LA FRAGUA DE LOS MAIRENA, donde yo tuve el punto de partida, donde sonaron mis primeros rasgos gitanos, donde los «duendes» dormían conmigo, en amor y compañía. Duendes que todavía no me han dejado ni creo que me dejarán hasta los últimos días de mi vida.\n\nMairena del Alcor, diciembre de 1968\n\n(1) AUTOBIOGRAFIA DE ANTONIO MAIRENA\n\nEs difícil para mí, y creo que para todo artista, escribir una autobiografía; sin embargo, en mí concurren circunstancias especiales que me obligan a hacerlo, ya que tanto el título de este disco como su substancia, y tanto el historial del folleto que le acompaña como el contenido de sus cantes, son objeto de asuntos familiares.\n\nNació en Mairena del Alcor, provincia de Sevilla, el día 5 de septiembre de 1909, hijo de padres puramente gitanos. En mi infancia trabajé en la herrería con mi padre y desde muy niño, y dentro de las posibilidades de aquel tiempo, fui un enamorado del cante de Manuel Torre y de Joaquín el de la Paula, que luego serían mis maestros. Estas fueron las piedras fundamentales de mi primera formación para llegar a ocupar un sitio de preferencia entre los artistas de aquella época.\n\nDesde muy joven fui absorbiendo toda la esencia del Cante Gitano Bajo Andaluz, hasta los últimos días de los dos genios que en mí influyeron, Pastora Pavón «Niña de los Peines» y Tomás, su hermano.\n\nHe sido un conservador radical, tanto de los cantes gitanos puros como de las leyes privadas dentro de mi família, y siempre me interpuse a su desintegración; por ello me siento altamente orgulloso de haber podido llegar a esta fecha, para mí histórica, con un cúmulo de cosas puras, tanto en el cante como en el privativo familiar, no sin esfuerzos sobrehumanos y a pesar de grandes obstáculos, para dejar a la posteridad esta reliquia discográfica como un pequeño testamento intransferible.\n\n(Publicado en la contraportada del disco «La Fragua de los Mairenas», RCA, LSP 10409, Madrid, 1970).\n\nSeñoras, señores. Por primera vez en mi larga historia de artista de Arte Flamenco, he podido conocer esta preciosa y gentil ciudad de Segovia, y precisamente he venido a conoceros a través de una invitación cursada por la Cátedra Seminario Menéndez Pidal en reconocimiento por mi aportación a la restauración y divulgación de algunas piezas del Romancero Hispánico, cantados y grabados con música gitano-andaluza y que, por tal motivo, me hacen la entrega del primer Diploma de los Amigos del Romance, titulado La Nave de Arnaldo. Por este solemne motivo me encuentro en esta hermosa ciudad de Segovia procurando encontrar las más nobles palabras para poder agradeceros tan emotivo homenaje y concesión del diploma antes referido.\n\nEs muy cierto que los gitanos bajo-andaluces desde casi su aparición en España le concedieron una gran importancia al romance castellano y fronterizo, supuesto se convirtieron en trovadores de ellos y, en algunos casos, con versiones distintas, poniéndoles lo mejor de su música ritual, como por aquellos tiempos se le llamaba en el barrio sevillano de Triana, la Giliana, así como en Jerez",
+    "title": "En Segovia",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "33-33",
+    "page_number": 33,
+    "word_count": 532,
+    "article_char_count_full": 3182,
+    "article_char_count_review": 3182,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-33-right-apuntes-para-la-historia-y-evolu",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\ny los Puertos le llamaron Corridos del Moro, lo que en sus fiestas más solemnes era lo que cantaban para bailar en su forma ritual y casi nunca se cantaba fuera de esas solemnidades.\n\nFue en el año 62, cuando en la ciudad de Córdoba se disputó la Tercera Llave del Cante Flamenco, me fue concedido dicho galardón por un competente jurado y de los dos cantes que debía hacer fuera de concurso uno fue el Romance de Bernardo del Carpio, en una versión distinta de la que figura en el Romancero Español y por primera vez se puso en público dicho cante y romance, lo que causó una gratísima sorpresa en el ambiente intelectual que, por aquel entonces, rondaba por el mundo del Flamenco. A partir de ello, yo grabé hasta cinco romances y luego ya se viene cantando por otros artistas en el público de los\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"profundo\"]\n\nfigura en el Romancero Español y por primera vez se puso en público dicho cante y romance, lo que causó una gratísima sorpresa en el ambiente intelectual que, por aquel entonces, rondaba por el mundo del Flamenco. A partir de ello, yo grabé hasta cinco romances y luego ya se viene cantando por otros artistas en el público de los festivales flamencos. No quiero cansarles más con este tema, pero de todo corazón deseo expresar a todos vosotros mi profundo agradecimiento sólo con estas palabras de un cantar muy melancólico que quiero recordar y que dice: Marcharse es morir un poco Pero es tan dulce el volver Que dan ganas de marcharse Para volver otra vez. Gracias. Muchas gracias. Es lógico y natural que alguien tenga que ocuparse de estas interesantes cosas que aún permanecen sin saberse en el mismo lugar donde se produjeron: el fenómeno del cante de soleares hoy llamado cante de Alcalá. La pequeña afición alcalareña —calculando que esta ciudad propietaria de un cante cuente con setenta mil habitantes—, preocupada por saber el fantástico mundo del flamenco, como hoy se le llama, tiene derecho a conocer cómo se ha producido en su pueblo ese fenómeno del que es propietario, cómo fue su evolución, cuál ha sido su historia humana y en qué estado se encuentra, qué le ha beneficiado y qué le ha perdujicado; en fin, toda esa serie de factores que giran misteriosamente alrededor de esta propiedad deben saberlo sus moradores, por lo menos de forma aproximada. Para deshacer un poco la nebulosa de la historia de este cante —muchos creerán que vamos a decir un disparate al no arrimar el ascua a la sardina que ellos desean—, hemos de anotar en principio que, antes de que todos estos cantes tomaran el nombre de Flamenco, ya el cante de Alcalá, como hoy se le llama, era una realidad marcada dentro del Cante Gitano-Andaluz. Bailable, en sus principios; puesto para escuchar, después. Así, para afirmar su forma autóctona de Cahte Gitano-Andaluz —confieso que el cante hoy de Alcalá, y digo hoy, porque en principio no se llamaba cante de Alcalá sino, simplemente, cante por Soleares—, hay que recurrir a la Antropología y ver cómo tomó el hombre de Alcalá por derecho propio. Veamos, como principio de este tema, lo que podemos llamar historia y evolución de dicho cante. Alcalá posee una rica historia anterior y poster\n\n[ENDING CONTEXT]\n\nfue un gran alcalareño.\n\nEs necesario resaltar qué, por aquellos tiempos, Alcalá contaba con una serie de buenos aficionados, no gitanos, que fueron conocidos en toda la Baja Andalucía. Joaquín refería continuamente a Juraco, al que yo no conocí, pero sí recuerdo a Mediano, a quien conocí cuando gané mi primer concurso en la feria de Alcalá, un hombre que sólo al verlo se olía el buen cante. Otro fuera de serie ha sido y es José Alvarez, uno de los mejores aficionados de España y de altísima inteligencia flamenca, como he podido comprobar en mis frecuentes cambios de impresiones con él.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Apuntes para la historia y evolución del cante por Soleá de Alcalá de Guadaira",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "33-35",
+    "page_number": 33,
+    "word_count": 3386,
+    "article_char_count_full": 19817,
+    "article_char_count_review": 3958,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "profundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-35-right-notas-referentes-al-cante-por-to",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCon posterioridad existió un altísimo número de aficionados digno de mención, destacándose como profesional Bernardo «El de los lobitos», quien, aparte de ser un buen cantaor, fue un gran alcalareño. Igualmente, debe mencionarse muy especialmente, ya que especial fue su cante, a Antonio Pérez El Sevillano, un gran artista que, aunque no nacido en Alcalá, se le puede considerar oriundo y una de las primeras figuras entre los fandangueros egregios. Y en este recorrido no pueden olvidarse algunos aficionados y verdaderos punteros, tales como Eloy Curraga «El Curilla», que tenía un fandango personal y brillantísimo; también conviví con los hermanos Castejones, extraordinarios fandangueros. Un respeto aparte mecere «El Platero», un cantaor digno de mejor suerte y del que he conocido toda su\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"lugar\"]\n\nros egregios. Y en este recorrido no pueden olvidarse algunos aficionados y verdaderos punteros, tales como Eloy Curraga «El Curilla», que tenía un fandango personal y brillantísimo; también conviví con los hermanos Castejones, extraordinarios fandangueros. Un respeto aparte mecere «El Platero», un cantaor digno de mejor suerte y del que he conocido toda su trayectoria artística. Otro cantaor que, de haber tenido otras facultades, pudo ocupar un lugar preferente fue «El Bizquito de Alcalá», famoso en La Alameda, donde alcanzó nombre. También conocí a un muchacho al que le sorprendió la muerte en la flor de la vida y en pleno triunfo, «El Niño de Alcalá» (El Sevillanito). Muchos otros artistas merecían ser relacionados y que siento no recordar, entre ellos merece especial mención Paquito León. Como mención aparte requiere el malogrado Manolito el de María, frondosa rama del tronco de los Paula, y que tenía unos sonios de nq sé cuantos siglos. Sus maneras de cante eran puros lamentos de la madrugada de la fuente de la Retama. Era de mi familia, sobri-no de mi padre. Otro moneda acuñada en Alcalá que no se volverá a repetir. Y Juan Barcelona, hijo de La Roezna y de Josele. Un gitano que era en este contorno como la Efigie al lado de las Pirámides. Era de Alcalá, era el albero, el pan; era las bizcotelas rellenas de tan especial elaboración; era la Torre Gorda del Castillo, era un alcalareño gigantesco como gigante era en su gracia y en su hombría. Siempre tengo presente que él era git\n\n[ENDING CONTEXT]\n\ntiene de la que debió ser la Toná de los Pajaritos.\n\nque suenan los pajaritos\n\nEsta toná, jamás cantada en público y quizás ni siquiera en reuniones particulares, está recogida directamente de la voz del cantaor en una cassette y parece ser que en la primera grabación de disco que se le presente, sería recogida como legado que entendemos muy significante.\n\ncantando la madrugá.\n\nEsta es la problemática de un cante por soleá la que yo creo que es la base fundamental de la toná de los pajaritos y que daré a conocer en alguna grabación para que pueda engrosar en las filas de las ya conocidas.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Notas referentes al cante por Tona",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "35-36",
+    "page_number": 35,
+    "word_count": 1535,
+    "article_char_count_full": 8753,
+    "article_char_count_review": 3128,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "lugar"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-37-left-mis-recuerdos-de-manuel-torre",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\npor los genios de los Pabores, distinto también a los que nacieron en los linderos de la recta Sevilla y Lebrija.\n\nEste Cante de Alcalá, aparte de su propia cuna, sólo permanece y vive en Mairena del Alcor donde, por fortuna, puede afirmarse que conserva toda su pureza y todos sus duendes. Alcalá de Guadaira puede estar tranquila y sentir el orgullo de que es en Mairena donde se custodia, como inmensa y cuidada reliquia, el Cante por Soleares de Alcalá. Por su conservación al abrigo de toda contaminación, en Mairena lo valoramos en el más alto grado que merece y de ello somos conscientes y plenamente responsables. Obras son amores. Y como dice el cantar,\n\nPasen y lo verán, y las malas lenguas enmudecerán.\n\n(Publicado en «Flamenco»; Ceuta, julio 1975).\n\nTengo motivos más que sobrados para\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"título\"]\n\nliquia, el Cante por Soleares de Alcalá. Por su conservación al abrigo de toda contaminación, en Mairena lo valoramos en el más alto grado que merece y de ello somos conscientes y plenamente responsables. Obras son amores. Y como dice el cantar, Pasen y lo verán, y las malas lenguas enmudecerán. (Publicado en «Flamenco»; Ceuta, julio 1975). Tengo motivos más que sobrados para sentir nostalgia al pretender realizar esta grabación que lleva por título, lo que son, sencillamente, mis recuerdos de uno de los genios más grandes que ha dado la historia del cante: MANUEL TORRE. Esta gigantesca figura del cante me inculcó, en mis primeros años de aficionado, una serie de ideas y maneras de cantar que jamás he podido olvidar, y que forma parte de lo que representó, actualmente como intérprete del cante gitano andaluz. Por los años 23 y 24 le escuché, por primera vez, en un pequeño local de mi pueblo natal, donde contaba con muchos admiradores. Su sonido y forma de cantar me causaron un gran impacto, y, junto con lo que había captado de Joaquín «El de la Paula», sirvió para constituir las piedras bás\n\n[ENDING CONTEXT]\n\nentre cuya afición formó un verdadero alboroto (de joven, lo que más popularizó fue la Farruca y los Tangos). Sevilla fue, pues, su consagración y allí conoció a su mujer, la gran bailaora Antonia Torres Vargas, apodada Antonia La Gamba, con la que tuvo dos hijos: Tomás y Juan, de los cuales vive solamente el primero: mi inseparable amigo Tomás.\n\nManuel Torre absorvió toda la esencia de los cantes de Manuel Molina, El Loco Mateo, El Viejo de La Isla, Francisco Laperla, su tío Joaquín la Cherna y Juan Junquera, y de esta forma se convirtió en el cantaor gitano más grande de todos los tiempos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Mis recuerdos de Manuel Torre",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "37-38",
+    "page_number": 37,
+    "word_count": 1977,
+    "article_char_count_full": 11338,
+    "article_char_count_review": 2733,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "título"
+      }
+    ]
+  }
+]
+```

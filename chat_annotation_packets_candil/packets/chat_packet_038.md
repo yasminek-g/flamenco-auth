@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1981-11-21-right-algunas-rese-as-de-la-m-s-nueva-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(continuación)\n\nEL BAILE DE SEVILLA\n\nUn trabajo distinto y, de algún modo, complementario al que antecede, es el presentado por Concepción Carretero (8), autora de un libro anterior que desconozco y que, si la memoria no me es infiel, fue finalista de la I Bienal de Sevilla: «Origen, evolución y morfología del baile por sevillanas».\n\nquién conoce el baile, qué es el baile y cómo se baila. De una vez, estamos ante un libro que ofrece mucho más que simple divulgación; en él se asoma la historia, la erudición —que no es mero refrito— y los conocimientos de los distintos bailes sevillanos, flamencos o populares —y ello perfectamente diferenciado—, desde el siglo pasado y con numerosas y efectivas calas en sus antecedentes.\n\nPor cierto, nos ha llamado la atención que este libro, insisto, de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_03 | trigger=\"público\"]\n\ny no muy manoseada bibliografía no anotase entre los precursores de la seguidilla a las combinaciones rítmicas ará-bigoandaluzas, perfectas seguidillas —sevillanas— con vuelta y todo, como las nuestras; lo que ya puso de relieve el insigne arabista Emilio García Gómez (9) y que, muy a regañadientes, hubo de aceptar Menéndez y Pidal. Pero no tomemos esto como una objección; repito estamos frente a un libro no muy frecuente, dirigido al más amplio público, que merece su lectura. UN LIBRO SERIO Y APASIONADO, QUE ABRE EL DEBATE Aunque el libro de nuestro comentario (10) se inicie —¿por razones editoriales?— con una boutade chauvinista y provinciana totalmente inconsentible en un intelectual riguroso y de pleno ejercicio andaluz —por ello la reseñamos—: «Y Sevilla. Como exponente y crisol de las Andalucías; como su reflejo y cabeza sin pretenderlo», nos encontramos ante una entrega seria que, desde sus originales y fundados planteamientos, así como por lo apasionado de la escritura, ‘nos empuja al debate y a la lectura de sus páginas de un tirón.\n\n[ENDING CONTEXT]\n\nfotografías, etc., aunque lo es; ni ante una biografía rigurosa del cantaor, lo que también contiene el libro; ni ante una serie de estremecidos sentimientos poéticos que arrancara el cantaor de Puente Genil, los que posee en abundancia. Estamos, simplemente, ante un libro muy bien compuesto e ideado, que se nos ofrece como un cantar y seguir. Un libro que encierra de modo ameno y riguroso los veinticinco primeros años cantaores de Fosforito y que se cierra con la esperanza de ser un primer volumen; es decir, con el deseo de que lo complete otro con los siguientes veinti-\n\nMANUEL URBANO\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Aunque no quepa en el papel.- Algunas reseñas de la más nueva Bibliografía Flamenca",
+    "periodical": "candil",
+    "issue_id": "1981-11",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 1582,
+    "article_char_count_full": 9421,
+    "article_char_count_review": 2678,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "público"
+      }
+    ]
+  },
+  {
+    "article_id": "1981-11-23-left-flamenca",
+    "article_text_for_review": "Título: COMO EL AGUA\n\nIntérpretes: CAMARON DE LA ISLA con las guitarras de PACO DE LUCIA y «TOMATITO» Casa grabadora: Philips - Referencia: 63 01 035 - A Año: 1981.\n\nEn la memoria y, afortunadamente, en la discoteca, tenemos aquellas maravillosas grabaciones que allá por el comienzo de la década de los 70 grabara Camarón de la Isla. Una voz llena de ecos flamencos, con compás y medida para realizar la serie de grabaciones que, entonces impresionó.\n\nEn la memoria, igualmente, los toques flamencos, estilistas y virtuosos de Paco de Lucía, que, al igual que en el disco que vamos a comentar, acompañaba junto a su hermano Ramón, la citada discografía del cantaor de la Isla de San Fernando.\n\nY viene a colación esta entradilla, porque el disco «Como el agua» es el reverso de aquellos primeros, en donde, si bien era Paco de Lucía junto con Ramón los que entonces acompañaban a Camarón; en en esta ocasión, Paco y «Tomatito» buscan a Camarón, para deleitar los oídos de los aficionados inclinados hacia un flamenco -¿flamenco?- muy evolucionado tanto en su medida como en el compás.\n\n»Como el agua es un disco donde se entremezclan algunas virtudes, tanto de Camarón, con su estilo personal, como de Paco de Lucía, con virtuoso toque, con la clásica comercialidad expresada por este cantaor en anteriores discos. Comercialidad bastante significativa en el título que da nombre al L. P., donde más que tangos, como reza en la carpeta, se asemeja más a esas rumbas que últimamente están interpretando algunos grupos de sobra conocidos por el aficionado. Camarón de la Isla, sigue incidiendo en sus innovaciones, tanto en los cantes por bulerías –muy numerosos en este disco– como en los tangos. Solamente tiene un cante no festero, de Levante, aunque resulta difícil su identificación, (en la carpeta figura por el estilo de tarantos). Y aquí, Paco de Lucía deja traslucir su nueva singladura artística; en las falsetas que realiza, se escucha perfectamente la influencia que haya podido adquirir junto a guitarristas de otro estilo musical. Además de los cantes mencionados, figuran, realizados en la misma tónica, alegrías y fandangos de Huelva.\n\nPor otra parte, se comprueba una reiterada repetición del estribillo de las letras que para esta grabación ha compuesto en su mayor parte Paco de Lucía.\n\nEn conclusión, un disco bastante comercial respecto al flamenco que nosotros entendemos; con las clásicas innovaciones de Camarón de la Isla y, quizás, con abuso de cantes festeros.\n\nFinalmente, destacaremos que es un disco alegre, desenfadado, que puede ser agradable para escuchar en el momento en el que los aficionados no nos sintamos ortodoxos.\n\nDOSCANDIL",
+    "title": "Discografía flamenca",
+    "periodical": "candil",
+    "issue_id": "1981-11",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 437,
+    "article_char_count_full": 2664,
+    "article_char_count_review": 2664,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1981-11-24-left-placas-de-artistas-flamencos",
+    "article_text_for_review": "DISCOGRAFIA (PLACAS) DE ARTISTAS FLAMENCOS\n\nPor Manuel Yerga Lancharro\n\nTOMAS PAVON CRUZ\n\nSiguiriya Mariana Siguiriya Bulerías al golpe Media granaína Fandango idem Bulerías al golpe Soleá de Cádiz Siguiriya de Cagancho Bulerías al golpe Soleá de Alcalá Fandango idem Soleá de Cádiz Martinete, debla, toná Siguiriya de Paco la Luz Fandango Saeta Soleá Serneta Soleá de Alcalá\n\nLETRA\n\nSaeta Fandango idem idem idem Fandango Verdial idem Fandango idem Taranta Fandango idem Saeta A clavito y canela (1) Con la Virgen del Pilar Aprisionao me tienes (1) Ven acá mujer malina Que le llaman la Alcazaba Amapolas de un trigal Como yo quise a mi mare Cuando tú me eches de menos A mi mare de mi alma Reniego de mi sino Yo me metia por los rincones El pasito que yo daba De la playa las arenas A mi mare por su alma Aunque fuera mi enemigo En el barrio de Triana Se te logró a tí el gusto Mi caballo se paró En el patio de faisán Tengo el gusto tan colmao Válgame Dios, no le teme\n\nMadre mía de la Merced Pelea vas a encontrar Un corazón que te adore Y ahora me das el castigo Porque olvidarte quería Viendo a mi madre llorar Dos águilas imperiales Aborrezco la quimera Compasión me da de tí Y tú la busque aconsejas Juntos estaban los dos Si algo te pide llorando Entre dos ladrones muere\n\nJESUS PEROSANZ\n\nSaeta idem Fandango idem idem Bulerias Soleares de Cádiz Petenera Fandango idem Alegrias Bulerias por Soleá Fandango\n\nISABELITA DE JEREZ\n\nN. Ricardo idem Tambores Melchor idem\n\nMare mía de la Piedad Sentao en la peña aguardando Un corazón como el mío Ella es buena y volverá Trátala con compasión Lo que estoy pasando No preguntes por saber Niño que en cueros y descalzo No dudes de mi color Dije yo que te quería Y por apellido rosa Que te he querido no lo niego Tiene la cara morena\n\nidem",
+    "title": "Discografía (placas) de artistas flamencos",
+    "periodical": "candil",
+    "issue_id": "1981-11",
+    "year": 1981,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 326,
+    "article_char_count_full": 1788,
+    "article_char_count_review": 1788,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-01-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nUN reto para con nosotros mismos y una responsabilidad para con la afición, supone nuestra decisión de no distribuir «CANDIL», a partir de este número, más que mediante suscripción.\n\nNuestras ambiciosas propuestas fundacionales —bien modestas en los medios— fijas en la defensa de la pureza y difusión del flamenco, así como de la cultura que conlleva, se han visto favorablemente desboridadas por una acogida que supera con creces nuestras posibilidades materiales, las de una Peña, como la Flamenca de Jaén, con un centenar de socios, que edita y distribuye gratuitamente una revista de tirada superior a los dos mil ejemplares y con más de cuarenta páginas de texto. Hoy, a los cuatro años de nuestra salida al mundo flamenco, aceptamos el reto y acatamos la responsabilidad tras serio y meditado estudio de nuestro futuro, que no es distinto al de mantener en actitud de servicio nuestra vocación de difundir, entre el mayor número posible de aficionados, opiniones, juicios, estudios y comentarios sobre este arte inigualable, renunciando a todo tipo de protagonismo.\n\nTras esta decisión, imperiosa y justificada, que deseamos sea comprendida por nuestros lectores, no anunciamos una nueva etapa para «CANDIL», puesto que cada número supone y ha supuesto un deseo de superación en su calidad, de mejorar su impresión, de elevar el número de páginas, etc., etc. Esta decisión nos obliga, y de ello somos conscientes, a ser firmes en nuestros inalienables propósitos y consecuentes con la responsabilidad que voluntariamente nos imponemos y asumimos.\n\nTambién «CANDIL» es conocedor de que su modesta significación en el ámbito flamenco la debe por entero a sus lectores; por ello, expresamos aquí nuestra pública gratitud, que extendemos a la generosidad de todos nuestros colaboradores, al altruísmo de los anunciantes y a las entidades públicas y privadas que, con verdadera sensibilidad para con la cultura jonda, siempre nos prestaron su apoyo y acudieron solícitas a nuestras llamada.\n\nPor último, queremos hacer patente que esta sopesada resolución, de algún modo, nos apesadumbra. Fieles a nuestros propósitos iniciales, mantenidos con entusiasmo durante 18 números, no renunciamos a perder uno solo de nuestros lectores, por lo que cualquier solicitud de suscripción gratuita por imposibilidad de colaboración económica será atendida; con esto no creemos caer en recusable y delecnable paternalismo, «CAN-DIL» conoce con certeza la realidad social y económica de no pocos de sus lectores. Más aún, si la Peña Flamenca de Jaén ha solicitado y obtenido dinero público, no ha sido por voluntarismo de poseer una revista, sino por responsabilidad ante la cultura popular andaluza.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 419,
+    "article_char_count_full": 2698,
+    "article_char_count_review": 2698,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-01-4-right-picasso-y-el-arte-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Manuel Urbano\n\nMe sorprende que la mitología andaluzay, por ende, españolísima, que anida la obra de Pablo Picasso, haya quedado reducida por una gran mayoría de la crítica a lo táurico.\n\nSin negar la importancia capital que el toro y su fiesta poseen en la obra del malagueño universal —en ella está lo mítico, lo teúrgico, lo esotérico, toda una filosofía, incluso, reveladora de los aspectos más profundos y trascendentes de ese rito que hemos dado en llamar corrida—, y a los que expresa con una hondura inigualable en la plástica española desde tiempos de Goya (1) —recordemos esa hermosísima tradición que llega hasta nuestros días con Barjola y que tuviera portavoces tan relevantes como Lucas, Alenza y Ferrant, primero; Sorolla, Unceta, Ricardo Marín, Zuloaga, Solana, etc., después—,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\ncluso, reveladora de los aspectos más profundos y trascendentes de ese rito que hemos dado en llamar corrida—, y a los que expresa con una hondura inigualable en la plástica española desde tiempos de Goya (1) —recordemos esa hermosísima tradición que llega hasta nuestros días con Barjola y que tuviera portavoces tan relevantes como Lucas, Alenza y Ferrant, primero; Sorolla, Unceta, Ricardo Marín, Zuloaga, Solana, etc., después—, considero que el arte flamenco —cante, toque y baile—, médula y raíz de esta etérea e indescriptible por alada esencia andaluza, tiene un redoblado pálpito de presencia en la vida y obra de Pablo Ruiz Picasso; aunque, ello es incuestionable, sin la representación concreta y directa que el toro alcanza en la obra artística del genial andaluz. Lástima que esta parcela, a mi juicio, imprescindible para comprender la obra toda de Picasso, haya sido enunciada muy de pasada por sus biógrafos y estudiosos, dejada y reducida a la categoría de simple anécdota del vivir del artista o, lo que me parece más grave, silenciada en impune escamoteo por esas sinrazones que nunca se manifiestan: el flamenco es un subproducto de mancebía, de señoritos horteras, truhanes y chulos. Por ello, bien pensado, mi sorpresa confesada al inicio de este ensayo no puede calificarse como tal. Los sorprendente hubiese sido lo contrario; entre otras razones, por el evidente despego de gran parte de la intelectualidad de la savia nutricia de lo popular. Antes de adentrarnos en las propuestas de este trabajo no será ocioso, a mi parecer, plantearnos alguna interrogante. Si el flamenco resulta indefinible y el arte no encaja, por mucho que lo limitemos, en una norma, en unos cánones, ¿qué hilos, qué nervios, qué venas les unen y alimentan? A mí no me caben dudas de que los dos constituyen unas profundas vías de conocimiento, un gran caer en la cuenta. Quedó dicho y para siempre; lo dejó grabado en los anales de la cultura andaluza el sentir jondísimo e iletrado de Manuel Torre ante una música de Falla: «Tó lo que tiene soníos negros tiene duende». El flamenco y el arte son memoria vivífica de quienes somos, figuración del grito y del desgarro, abrazo terrible y, a su vez, ternísimo del amor que no encuentra un hombro hermano al que agarrarse. De una vez y por todas, son la sentida expresión liberadora de la realidad. El flamenco y el arte —el flamenco también es un arte, y el arte también es expresión— nacen de una misma médula esencial y se configuran en ramas distintas, que no diferentes, del mismo árbol, del mismo pueblo, del mismo hombre que es el eje, la piedra primera y última, el universo que interesa. El flamenco y el arte son voces totales, únicas, personalísimas e irrepetibles —olvidemos ya los neocostumbrismos—, que no tienen por qué atarse, necesariamente, a la representación. Debajo de cada cante hoy un protagonista, un hombre que se dice en la copla, que se duele o reconforta, que no renuncia a ser él mismo y su lamento. En cada obra de arte, bajo cualquier escultura,\n\n[ENDING CONTEXT]\n\nandaluz decía claramente la raíz de lo jondo, la verdad única que sustenta a todas las artes, la tremenda aseveración de Manuel Torre que recordábamos al principio: «Tó lo que tiene soníos negros, tiene duende».\n\nQuede aquí este apresurado recorrido, sin afán alguno de catalogación, sobre el mundo flamenco en la pintura de Picasso.\n\nRecepción diaria de Mariscos y Pescados Especialidad en Asados\n\nPropietario: CARLOS GUERRERO MURILLO (Medalla al mérito del trabajo)\n\nRoldán y Marín, 7\n\nJ A E N\n\nTeléfono 22 97 65\n\nBODAS - BANQUETES - RECEPCIONES\n\nAvda. Generalísimo, 25 J A E N\n\nTeléfono 21 10 01\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Picasso y el Arte Flamenco",
+    "periodical": "candil",
+    "issue_id": "1982-01",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-8",
+    "page_number": 4,
+    "word_count": 4293,
+    "article_char_count_full": 26167,
+    "article_char_count_review": 4648,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  }
+]
+```

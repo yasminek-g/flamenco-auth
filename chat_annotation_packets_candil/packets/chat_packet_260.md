@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-09-12-right-ja-n-cuna-de-la-asociaci-n-de-cr",
+    "article_text_for_review": "E 1 gusto se nos logró sin tener que rezarle a ningún santito, pues el institucional alcance de la Diputación de Jaén, nos ha dado las suficientes garantías para desarrollar, en nuestra capital, una labor larga y sosegadamente hilvanada por una Comisión Organizadora que siempre ha querido mostrar su confianza en el funcionamiento de la Asociación desde unas premisas de independencia personal, libertad de criterios y unificación de esfuerzos. La tarea ha sido ardua por la complejidad que distingue a sus miembros, mas el esfuerzo aportado por las personas elegidas por la Peña Flamenca de Jaén, al que hay que sumar el de los sevillanos Miguel Acal y Manuel Martín Martín, los cordobeses Agustín Gómez y Miguel López, el jerezano Manuel Ríos Ruiz y los jaeneros Manuel Urbano y Eugenio Valdivieso, ha propiciado este reivindicado fin: la Asociación de Críticos de Arte Flamenco.\n\nLa primera piedra está puesta y la verdadera labor comienza ahora, pues la responsabilidad voluntaria asumida por la Junta Directiva que salió elegida, la cual preside Gonzalo Rojo Guerrero, ha de consolidar una organización que tiene como fines primordiales: «Velar por el prestigio de la función de la Crítica de Arte Flamenco», «Promover la investigación crítica e información artística a to-\n\ndos los niveles» y «Velar por el desarrollo, cultivo y conservación del Flamenco». Y la vela ha de ser constante y eficaz, pues los enemigos no han de faltar y siempre existen personajes que pueden perder su «status» en el mundo flamenco ante la profesionalidad definida y documentada de los miembros de la Asociación.\n\nLa ACAF ha nacido con ilusión y desde la prestigiosa responsabilidad de un grupo de profesionales que a lo largo del tiempo, y en diversos medios de comunicación, han venido ejerciendo una labor que se encuadra dentro de los fines arriba citados. Cierto es que no estuvimos todos los que somos; sin embargo, los que no pudieron o no quisieron asistir, han de reflexionar sobre la positiva viabilidad de una Asociación que ha de unificar esfuerzos en beneficio de una mayor dignificación del flamenco para deleite de sus seguidores.\n\nLo apuntaba Miguel Acal en su último escrito en Candil ¿Críticos unidos?: «Uno piensa que, en el mundo de la afición flamenca, lo único importante es el flamenco. Lograr su mayor difusión y admiración, piensa uno que debe ser un objetivo fundamentalísimo. Si este concepto no prima sobre el natural de las ambiciones humanas de notoriedad, la supuesta afición de alguien no es válida o, cuando menos, positiva».",
+    "title": "Jaén, cuna de la Asociación de Críticos de Arte Flamenco Rafael",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 415,
+    "article_char_count_full": 2545,
+    "article_char_count_review": 2545,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-09-13-right-la-bienal-ese-hermoso-disparate-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLuis Castillo Perea\n\nA 1 finalizar la anterior Bienal, la VI —que tanta polémica suscitó por sus fallos de publicidad, su costoso presupuesto para ofrecer tan poca calidad y, en definitiva, mucha fantasía para tan poca oferta auténticamente flamenca—su director trataba de justificar estos motivos de crítica diciendo: «Los organizadores no hemos sido capaces de transmitir la grandeza de la Bienal».\n\nEsta afirmación —aun siendo un reconocimiento público de cierta incapacidad— llevaba inherente su reafirmación de la valía del programa diseñado y algo que —en nuestra opinión— era ciertamente irrespetuoso con quienes habían formulado opiniones de críticas hacia aquella Bienal. Dicho de manera más concisa: negaba la capacidad a los críticos para manifestarse porque no estaban en sintonía con\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"Nuevo\"]\n\núblico de cierta incapacidad— llevaba inherente su reafirmación de la valía del programa diseñado y algo que —en nuestra opinión— era ciertamente irrespetuoso con quienes habían formulado opiniones de críticas hacia aquella Bienal. Dicho de manera más concisa: negaba la capacidad a los críticos para manifestarse porque no estaban en sintonía con sus puntos de vista; vamos a insistir: el flamenco hay que entenderlo como lo entiende el señor Ortiz Nuevo, quien no lo vea desde esa óptica no está en razón de criticar. En esta VII Bienal, con menor duración y con una dotación económica importantísima, su director —pese a lo que manifestara el señor Bernardo Bueno en aquella ocasión: «el director de la próxima Bienal, será un hombre que se deje aconsejar»—, vuelve a erigirse en autoridad de saberes flamencos y, ¿Le ponemos una flauta a la ca- bal del «Fillo»? ¿O quizás debemos «enriquecer» con otras músicas el cante de don Antonio Chacón? ¿Qué hacemos con lo que nos legaron, desde Tío Luis a don Antonio Mairena? en un nuevo alarde de autosuficiencia, marca las veredas por las cuales ha de transitar el flamenco; «su flamenco» y «su Bienal». Eso sí, empleando esa manida frase —sin perder las raíces— a la que tanto recurren qui\n\n[ENDING CONTEXT]\n\ncalladamente, a quienes no hemos sido capaces de dar solución a esa reivindicación. Y ahí es donde tendríamos que derrochar imaginación y volcar todos nuestros esfuerzos para encontrar los caminos que desembocaran en la encrucijada de la plena asunción, porque nos hayamos enterado todos, que el Arte Flamenco es parte indisoluble de la historia de nuestro pueblo y, por tanto, de su cultura.\n\nEn definitiva, el discurso del recién finalizado evento ha seguido caminos paralelos al que le precedió y por eso ha sido, «sin corregir y aumentada», la Bienal: «ese hermoso disparate», 2.ª edición.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La Bienal, «ese hermoso disparate» (2.ª edición)",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 1216,
+    "article_char_count_full": 7538,
+    "article_char_count_review": 2857,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "Nuevo"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-09-14-left-bienal-x27-92-la-consumaci-n-de-",
+    "article_text_for_review": "E 1 día 14 de septiembre, Salvador Távora, en el Teatro Central-Hispano de la Expo, inauguraba la VII Bienal de Flamenco. «Picasso andaluz o la muerte del Minotauro» era la obra representada. Los días 15 y 16 siguió, en el mismo lugar, idéntica representación.\n\nEl día 17, en el Teatro de la Maestranza, Enrique Morente y Max Roach ofrecían un concierto.\n\nEl 18, en el auditorio de la Expo, José Antonio Rodríguez presentó «Tango».\n\nEl 20, en el Teatro de la Maestranza, Manolo Sanlúcar ofrece «Aljibe».\n\nLos días 21 y 22, en el Teatro Lope de Vega, «Casiopea», de Eduardo Rodríguez.\n\nEl 23, en el auditorio, Pedro Bacán y su espectáculo «Al son del 3 × 4».\n\nEl 25, 26 y 27 de septiembre, en el Lope de Vega, «Mediterráneo», de José Luis Ortiz Nuevo.\n\nEl 1 de octubre, en la Plaza de Toros de la Real Maestranza, «...y Sevilla», de Eduardo Rodríguez.\n\nEste es el programa de una Bienal de Flamenco de la que se descolgó Paco de Lucía, por razones personales, y que contó con un casi improvisado comienzo por la lamentable ausencia de Camarón de la Isla.\n\nPara todo esto algo más —según reconoció el director en rueda informativa— de ciento cincuenta millones de pesetas.\n\nNo quiero ocuparme —con ser importante y dar mucho de sí— del tema de los dineros, porque casi es una anécdota junto a todo lo demás.\n\nA uno le parece que José Luis Ortiz Nuevo, como un Saturno que se alimenta de hibridaciones, ha devorado a la criatura a la que dio vida. El creó, con esfuerzo e imaginación, un acontecimiento de singular importancia. Lo cierto es que, con errores y aciertos, Ortiz Nuevo construyó un espectáculo con una significación muy superior a la espectacular. Y ahora —por la dificultad de superar el listón autoimpuesto, por agotamiento de la imaginación o por cualquier otra causa— ha optado por destruir lo creado.\n\nHa sido una Bienal de Flamenco sin flamenco. Magnífica la sinfonía de Manolo Sanlúcar, con la Orquesta Ciudad de Málaga; sensacional «Casiopea», de Eduardo Rodríguez, con el Ballet Nacional de Cuba. «Al son del 3 × 4», de Pedro Bacán, se encargó de destrozarlo un regidor del auditorio, llegando a la agresión física. Lo demás por qué y para qué?\n\nLa búsqueda constante de nuevos caminos equivale al desconocimiento de la meta. Lo importante para algunos —y es comprensible y hasta elogiable— es caminar, pero ¿hacia dónde?\n\nEsta Bienal ha sido una muestra de experiencias, de búsquedas, de interrogantes. O lo que es lo mismo, una ausencia de realidades, de certidumbres, de valores reconocidos. Pero es que —ojo al dato—para reconocer hay que conocer previamente.\n\nA lo mejor no se ha perdido una ocasión irrepetible de mostrar al mundo qué es y cómo es el flamenco. Puede que lo que hayamos aprendido es a no dejarnos engatusar por quienes no lo conocen.",
+    "title": "Bienal&#x27;92. La consumación de los tiempos",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 481,
+    "article_char_count_full": 2774,
+    "article_char_count_review": 2774,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-09-15-left-poes-a-jos-luis",
+    "article_text_for_review": "Seis cuerdas solas, como muchachas abandonadas que se peinan los cabellos en el centro de una plaza, una plaza de los pueblos y de los soles de España. Seis cuerdas que se hieren y apuñalan cuando la noche se rompe en tu vientre terciopelo de mujer embarazada. Seis cuerdas solas. Guitarra. Seis motivos para el llanto cuando un hombre se desplantan frente al toro de la pena que le habita la garganta y se desgarra en gemidos para contarnos la rabia que se enfría a borbotones en los adentros del alma. Seis cuerdas como suspiros. Sólo seis cuerdas. Guitarra.\n\nPor José Luis Buendía\n\nEscuché una tarde antigua la eterna queja amarga brotando de una fuente: madera labrada, cadenas que ocultan el cofre de plata, y tú, en mi oído: «es una guitarra». Tan sólo alcancé a ver seis espinas bien templadas, grilletes inoportunos de las rosas de tu cara; ancha como tus caderas, triste como tu mudanza, con un murmullo tan claro como aquellas diez palabras que aún recuerdo por ser tuyay me duelen por pasadas.\n\nVecinitas prisioneras en madera perfumada, echad al vuelo el repique de vuestro son de campanas; que la prima y el bordón olviden disputas vanas sobre quién puede mejor cortar las rosas del alba. Sois compañeras unidas en un pozo de desgracias, en ese hondón de las penas donde la soleá se planta al peinaros los cabellos cinco caricias de plata. Abriros a la ternura, dejad de estar enfrentadas, que en cuanto salga la luna más que gavilla tronchada seréis un toque flamenco, historias de tierra amarga. Todas juntas vais a ser la cima de una montaña, pañuelo de un pueblo altivo. Toque de gloria. Guitarra.",
+    "title": "Poesía José Luis",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 281,
+    "article_char_count_full": 1614,
+    "article_char_count_review": 1614,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-09-16-right-jos-heredia-joselete-figura-cant",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nN o sé si atreverme a manifestar que el verdadero triunfador del Concurso Nacional de Arte Flamenco de Córdoba, celebrado éste durante los meses de abril y mayo y en su XIII Edición, ha sido el linarese José Heredia «Joselete». Me induce a expresar esta «altanería? el logro de dos de los ocho premios instituidos para el cante, el Manuel Torre y el Don Antonio Chacón. Mas si me apuran algo, mi osadía está sustentada por la importancia que para mí y por qué no también para los demás?, tiene la consecución específica de sendos premios, por los grupos de cantes que engloban y por ser dos.\n\nA lo largo de la historia del concurso cordobés no han sido muchos los que han logrado el doblete en el certamen. Si exceptuamos al insigne Antonio Fernández Díaz «Fosforito», ganador absoluto en 1956 y\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"origen\"]\n\nción de la llave de oro por Antonio Mairena en el 62, sólo Benito Rodríguez Rey «Beni de Cádiz», supera a «Joselete de Linares». Con las lógicas salvedades, José Heredia se equipara a las figuras consagradas de José Domínguez «El Cabrero», José Soto Soto «José Mercé» y Juan Moreno Maya «El Pele». Alguien podrá argumentar que mi osadía al verter esta opinión está siendo desequilibrada, mas he de apuntar que desequilibrada en el tiempo y no en el origen, porque el cantaor de Linares pienso que se encuentra en las mismas circunstancias en las que se encontraban los intérpretes a los que le he equiparado tras conseguir los premios. Otro tema bien distinto es que «Joselete» consiga encauzar su proyección artística por los caminos que lo hicieron los demás. Sin embargo, creo que cualidades no le faltan. Quizá si amplía su formación, mantiene sobradas muestras de afición, continúa acrisolando matices de los añejos cantaores —dejando al margen los de los nuevos— y prosigue por esa última línea de seriedad profesional, el resultado es que contemos con una figura flamenca que puede aportar una amplia gama de matices artísticos. Por otro lado, tampoco hay que olvidar que el cantaor linarense —a mi parecer— cuenta con una de las voces más flamencas de la actualidad, lo que le reporta una amplia aceptación por parte de la afición en general. Y si, además, tenemos en cuenta que la utiliza con mesura y entendimiento para evocar persona- «Joselete» con Juan Ballesteros lismos como los de Manuel Torre, Pastora Pavón, Enrique el Mellizo o Manolo Caracol, el resultado final propicia que el cantaor de Linares llegue a las cotas de calidad y jondura de las primeras figuras actuales del flamenco. Estas últimas cualidades pienso que lo han llevado —con suficientes garantías— a conseguir también el Primer Premio del II Concurso de Cante Flamenco de la Comunidad Autónoma Andaluza, celebrado en Granada el pasado 13 de junio del presente año, por unanimidad del jurado. La trayectoria artística ha de continuar en lenta progresión. Y escrito lo lenta porque es así como se adquiere experiencia, se matizan los acrisolamientos influenciadores sobre su personalidad cantaora, se corrigen errores y se alcanza a vislumbrar el futuro, un futuro halagüeño que el linarense tiene a la altura de su mano si muestra ser\n\n[ENDING CONTEXT]\n\nMejorana»: Baile por soleá, si- guiriγas, la caña, el polo.\n\n— Por mayoría, a Antonio Alcázar.\n\n— Por unanimidad, a Eva Garrido «La Yerbaquena».\n\nPremio «Encarnación López La Argentina»: Baile por caracoles, rondeñas, serranas, peteneras, guajiras, jaberas...\n\n— Por mayoría, a «Mariló Regidor».\n\nPremio «Paco Laberinto»: Baile por bulerías, canasteros, zorongo, alboreá, rumba, tan-guillos.\n\n— Desierto, por unanimidad.\n\nPremio «Manolo de Huelva»: Acompañamiento a cante y baile.\n\n— Por mayoría, a «Paco Serrano».\n\nPremio «Ramón Montoya»: Guitarra de concierto.\n\n— Por unanimidad, a Paco Serrano.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "José Heredia «Joselete», ¿figura cantaora? Rafael",
+    "periodical": "candil",
+    "issue_id": "1992-09",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 985,
+    "article_char_count_full": 6165,
+    "article_char_count_review": 3941,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "origen"
+      }
+    ]
+  }
+]
+```

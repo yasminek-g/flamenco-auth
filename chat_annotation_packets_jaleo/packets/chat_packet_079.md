@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_07::A14",
+    "article_text_for_review": "We have received no information about an August juerga from CUADRO B. If there is to be a juerga in August, Los Angeles and San Diego members will be notified by mail. We need the information about the juerga by the first of the month previous to the juerga for it to appear in JALEO. So CUADRO C should be looking around $ \\underline{\\text{now}} $ for a September site.",
+    "title": "JULY JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_07",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "30",
+    "page_number": 30,
+    "word_count": 69,
+    "article_char_count_full": 370,
+    "article_char_count_review": 370,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A1",
+    "article_text_for_review": "By Ira Kamin Kenneth studied in Spain with a gypsy named Diego del Gastor, who died seven years ago. Diego was recognized as one of the masters of the pure style of flamenco. He turned down jobs even though his family needs the money, because he would not sacrifice his art. Diego lived and died in Morón, a small village near Seville, and spent his life in somber suits, standing in bars drinking tinto and fino (sherry), playing at fiestas for dancers like Anzonini del Puerto, who now lives in Berkeley, and singers like Juan Talega and La Fernanda, all exponents of the pure art form, which revolves around duende, a release of the soul, a singular dark cry that is never expressed the same way twice. American guitarists went to Diego del The next week she came back to the man's house, for his next lesson and she heard the man playing trumpet to Diego's tape. \"Oh, no,\" she thought. \"What would Kenneth Parker think if he heard this?\" Kenneth says his life right now is \"a little crazy.\" He is probably the best flamenco guitarist in the Bay Area right now, though he calls himself limited. And he rarely plays his guitar for money. He tells people he is a mechanic now, and that his fingers are so out of shape he can barely play at all. Now and then, when he is drunk enough, loose enough, at a party, he will sing. He once improvised a lyric about his broken fingernails. He describes his friend Anzonini as \"a fiestero,\" someone who gets a fiesta moving. He says Anzonini has the best hands in the business. A friend of Kenneth's has said, \"to watch Anzonini light a cigarette is enough.\" To watch Anzonini light a cigarette; to watch Diego del Gastor drink his sherry; to watch Pedro Bacán fry some liver. For some American aficionados, there is something so pure about the gypsies, you don't have to study the craft at all. You merely have to live in Spain for awhile and absorb the gypsies as they live their lives, tying their shoes, combing their hair, opening and closing doors. One American woman who lived in Spain for a couple of years told an eager young guitar student not to spend his money on lessons. \"Throw fiestas instead,\" she told him, \"and just watch. You can learn more that way.\" Kenneth met Anzonini several years ago in Morón, at Diego del Gastor's funeral. Diego died on the biggest flamenco day of the year -- the beginning of the Morón fair. Anzonini had been living on the Costa del Sol, running a butcher shop across from the Hilton. In 1978, Anzonini was living in Morón (where he had lived most of his life) and a series of horrors came upon him. He burned his leg on his motorcycle, His whole body broke out in sores. His hands began to bleed. 26 DON QUIXOTE RESTAURANT A DINING ADVENTURE IN SPANISH AND MEXICAN FOOD PAGE D The cave of El Chispa, a neighbor of Manolito el de la María; Chispa's wife dancing rumba (Chris Wilson) -- La Fernanda de Utrera (Chris Wilson) -- Luisa Maravilla -- Cave of El Chispa; Francisco Mairena singing (Chris Wilson) -- Francisco Mairena, with El Poeta doing palmas (Chris Wilson) PAGE E (all photos from Chris Wilson) - Chris Wilson, La Posaera, La Perla de Triana, Antonio Sanlúcar (brother of Esteban Sanlúcar) in a bar in Triana. -- La Posaera dancing -- Joselero and Diego del Gastor -- Chris Wilson, Donn Pohren, Joselero, and Diego at the finca -- La Perla de Triana and La Posaera PAGE F -- Joselero and Diego in Morón de la Frontera in 1971 (Peter Baime) -- Diego, 1970 (Dominico Caro) Wilson) -- View of the Finca Espartero (Chris Wilso -- The juerga room at the Finca (C. Wilson) -- Diego playing for Andorrano on the patio of the Finca in 1971 (Peter Baime) PAGE G -- Diego del Gastor (Ramón Ramírez) PAGE H -- Diego del Gastor (Ramón Ramirez) -- Diego del Gastor (Carol Whitney) -- Joselero, Luisa Pohren, El Farruco -- in the livingroom of the Finca Espartero (Chris Wilson) -- Fernandillo and maid (Chris Wilson) -- Manolito el de la María (Carol Whitney) -- Joselero dancing; Luisa looks on (Chris Wilson)",
+    "title": "ON THE FLAMENCO TRAIL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3,4,16",
+    "page_number": 3,
+    "word_count": 723,
+    "article_char_count_full": 3997,
+    "article_char_count_review": 3997,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A2",
+    "article_text_for_review": "This month's Jaleo was intended as a tribute to the flamenco artists of Morón de la Frontera. Very little material came in from the readers, however, so it consists primarily of a collection of odds and ends that have come in during the last year. I would like to thank the few people who did respond with material, especially Chris Wilson, Raymond Ramírez, Adela Vergara, Peter Baime, Phil Coram, and Guillermo Salazar. We plan to dedicate the November issue to Carmen Amaya. If you have $ \\underline{\\text{anything}} $ that deals with her or her companies, please consider loaning it to us or sending a copy. We have a pretty good record of returning borrowed material. PUNTO DE VISTA",
+    "title": "EDITORIAL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 118,
+    "article_char_count_full": 686,
+    "article_char_count_review": 686,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A3",
+    "article_text_for_review": "By Guillermo Salazar Brook Zern makes a good case for the validity of playing other people's music on fla- : menco guitar. We all play other people's music and enjoy it immensly. No one can escape playing this way to some extent; however I think the secret is to be influenced, but not dominated by others. It is interesting to meet flamenco guitarists and observe how they play, how they live their life styles, and how they think. It is not impossible for American guitarists to create good material. People here have varying talents and pursue the guitar with different degrees of intensity. Most of them have been obsessed at least for a little while with flamenco. If you can succeed at maintaining this intensity, you have more in your favor of ever creating music. Secondly, a conscious decision has to be made that you do indeed want to create. New material will not flow out for the great majority of artists. So, it is work. Not work in the sense of a job for money, but just as demanding. Flamenco creativity is very difficult since there are boundaries. New creative material has to be somewhat different, but it has to sound like flamenco. There are several ways of embarking on this journey if that is what the guitarist wants. Altering already existing material is good for starters. We can copy the rhymical phrasing, while altering melody and bass line. Or, we can copy melody while altering rhythm. It seems that most great flamenco creators have done this, after spending a period in their lives playing like their teachers or idols. Again, a conscious decision was made to change things, \"to add their own grain of salt to the dish.\"",
+    "title": "PLAYING OTHER PEOPLE'S MUSIC",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5",
+    "page_number": 5,
+    "word_count": 290,
+    "article_char_count_full": 1653,
+    "article_char_count_review": 1653,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_08::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Brook Zern This was written some years ago, and read at New York's Club Taurino and the Gypsy Lore Society. I wasn't anxious to see it in print, if only because it hardly poses a threat to Garcia Lorca's essay on the same subject. I decided to wait for a sign, so to speak, before I considered sending it to anyone. Today I read that Curro Romero was just named the \"triunfador absoluto\" of the 1980 Feria de Sevilla. If an omen is an incredible event which defies all logic and probabilities I think this should more than suffice. For twenty years, Curro Romero has embodied Sevilla, bearing its love through years of bitter frustration and constant doubt. Sevilla long ago had delivered itself to him -- completely, unequivocally, in a relationship between a man and a city which has no\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"woman\"]\n\nng ago had delivered itself to him -- completely, unequivocally, in a relationship between a man and a city which has no parallel. Now, at last, Romero has returned the favor. Now the sevillanos -- and I feel I am almost one of them -- have regained their belief in Romero and in themselves. Romero has confirmed the essential truth of their majestic myth. He has revalidated their faith. \"Years ago, during a flamenco dance contest in Jerez, an old woman of eighty, competing against beautiful women and young girls with waists as fluid as water, carried off the prize by simply raising her arms, throwing back her head, and stamping the platform with a single blow of her heel; but in that gathering of muses and angels, beauties of form and beauties of smile, the dying duende triumphed as it had to, dragging the rusted blades of its wings along the ground.\" The story of this man, his art and his strange power bears directly on the central mysteries of flamenco. may be praised again and again, without any need to use the peculiar word. Let's get down to cases. Antonio Ordonez was the greatest matador of recent times. He proved it regularly, displaying an inspired classical brilliance which no other torero could even dream of matching. His courage, consistency and sense of honor illuminated his profession. Curro Romero, on the other hand, is a \"sinverguenza\" -- loosely translated, a shameless coward. Actually, that's a pretty charitable word to apply to someone who behaves like he does in a bullring. On any given afternoon, Romero\n\n[ENDING CONTEXT]\n\nthe individual is simply serving as its host. While in our experience an inspired performer projects his unique personality through his art, a gypsy seeking to summon the duende can only contribute to the process by peeling away the strata of individuality. The objective is fusion with a performing principle. Such a conception may be a survival of Hindu thought, which posits denial of specific selfhood or personality as the only path to union with a greater \"universal\" consciousness. The impulse to merge individual and collective selves would thus be an aspect of the gypsy's Indian heritage.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "GHOST STORY",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_08",
+    "year": 1980,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "6-9",
+    "page_number": 6,
+    "word_count": 1337,
+    "article_char_count_full": 8026,
+    "article_char_count_review": 3166,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "woman"
+      }
+    ]
+  }
+]
+```

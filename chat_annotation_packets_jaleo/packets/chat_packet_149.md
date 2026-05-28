@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_08::A10",
+    "article_text_for_review": "COMPOSER OF FAMOUS THEMES, BUT AN UNKNOWN (from: Sol de España, May 1, 1982; submitted by Vera King; translated by Paco Sevilla) It is normal in our country for the composers of well-known songs to go more-or-less unnoticed, if not completely unknown. In the case of Manuel María Sánchez Pernía, this couldn't be more evident. The author of many songs, he is the composer of such hits as \"Háblame en la cama\" and \"Desnúdame sobre mayo,\" themes sung by María Jiménez, as well as \"No sé, no sé\" by Rumba Tres, and others that have been interpreted by Rocío Jurado and Gracia Montes. These songs that have reached the peak of popularity are almost always associated with the name of the performer and seldom with the author, who in this case is Manuel María Sánchez Pernía. The list of singers who perform his songs is not finished; we could continue with groups who specialize in sevillanas or rumbas, such as Los del Río, Hermans Reyes, Los de la Trocha, Ecos de las Marismas, and a long etc. [Sánchez Pernía's name can also be found on the record jacket credits of some excellent rantaores, Boquerón being one who comes to mind, as composer for themes for tango, bulerías, alegrías and scaleá.] Sánchez Pernía confesses that it has taken almost twenty years to be able to make a living from music, in spite of the musical hits. As a romposer, he demonstrates that he is demanding with himself; he usually only creates completely new and original themes, and those that don't please him, he throws in the waste basket, even though, with a little luck, they could be put on the market. Also, like the majority of composers who we could call \"modest,\" he laments the fact that, if a theme that he has romposed is successful, that is, reaches the list of hits, the triumph goes to the performer, but, on the other hand, if the theme doesn't reach the desired popularity, the composer suffers the failure. This year the picture looks better for him. He has composed sevillanas for Los Hermanos Reyes and it seems that one, \"Si fuera yo\" is doing well. In any case, Sánchez Pernía recognizes that composing sevillanas is not a paying proposition, since they are heard only three or four months of the year. It is, perhaps, for that reason that he has only composed eight, while he must have created at least two hundred songs that have all had great success in countries like Argentina, Mexico, or the United States. Sánchez Pernía, married, thirty-nine years old, and a native of Cazalla de la Sierra, divides his life between Sevilla and Madrid, the latter being the site of most regarding activity. He tells us that Madrid has had some seventy years of experience in this work, and it is time and effort that create success. For that reason, although there is much desire to create a recording industry in Sevilla, it is a difficult task due to the lack of tradition in that area. One of Sánchez Pernía's greatest dreams is to do authentic flamenco, although, upon introducing this objective, we could ask ourselves whether there exists a \"false\" or \"unauthentic\" flamenco. In any case, performers such as El Borriquito de Jerez, El Perrate, or La Fernanda de Utrera, who do \"authentic\" flamenco, in the judgement of the composer whose themes they sing, are good people, but they don't sell. For that reason, points out Sánchez Pernía, the Junta de Andalucía should give more aid to the rante that is characteristic of our land and stop putting on operas like \"Carmen.\" For this romposer, folklore is significant and is that which identifies a people. For that reason it should be promoted. Pernía, on speaking of foreign music, or foreign-influenced Spanish music, demonstrates that he has misgivings and points out that a people understand what is theirs, not what comes from outside. He is not mistaken when he points out, also, that the exchange of recorded material with other countries is a unilateral relationship and that there does not exist a musical exchange.",
+    "title": "SANCHEZ PERNIA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_08",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23",
+    "page_number": 27,
+    "word_count": 687,
+    "article_char_count_full": 3967,
+    "article_char_count_review": 3967,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_08::A11",
+    "article_text_for_review": "Concert Reviews A MASTERFUL LESSON BY MAESTRO SABICAS \"The legendary flamenco guitarist stirs an ultra-young audience.\" (from: La Vanguardia, June 13, 1982; submitted by Antonio David; translated by Paco Sevilla) by Albert Mallofre Sabicas, the legendary maestro of the flamenco guitar, 69 years old, and a thirty year resident of New York, finally returned to Barcelona and took his place in the Palau de la Musica to give a truly triumphant return concert. The audience, primarily youths, sat fascinated by his magic virtuosity and cheered him with fervor. Today, Sabicas, and shortly, The Rolling Stones...it is clear that the young people are ready for the rediscovery of old glories! Sabicas structured his concert in three parts, covering the full range of flamenco with strict respect for tradition; malaguenas, farrucas, alegrías, rondenas, tientos, soleares, siguirias, saetas, and the always joyful bulerías, with ornamentation for dances, aires, popular themes from Andalucía, Castilla, etc., and in every instance, his \"sabi-quismo,\" pure, serious, profound...eternal and elemental. A prodigious fingering, perfect articulation, a deep and calm rhythm, a timing that is virile, but contained, while melodic waves play along with the beat of a heart that gives of itself. Meanwhile, the fingers flutter playfully over the strings and settle lightly, like a tenuous caress, on a sensitive string that yields lovingly and trembles while its companions moan in complicity. It is poetry in motion, exuded feeling, vehemence held back by the reins of reason and channeled by the path of knowledge. And it is also a shared eloquence, tested and purified by the centuries, that is manifested with all of the splendid force of a genuinely popular form of expression. In addition, without the curse of electric amplification, it was possible to rediscover the pleasure of subtle shading, the flavor of a light, vaporous accent, the ethereal wink of a sudden silence, the exquisiteness of shimmering notes strung together like pearls in a magic rosary...It was another of the night's discoveries for the young people, whose ears had become muscular, but not totally insensitive, due to the frequent electronic aggression of rock. In summation, the applauses were fervent and the acclamation wholeheartedly enthusiastic, and Sabicas had to come out time after time for bows and repeated encores that included \"Zapateado,\" a \"Piropo a Galicia\" that began with \"El noi de la mare,\" an arrangement of the \"Malaguena\" of Lecuona, and, finally, a dazzling guitar version of the ineffable \"Sitio de Zaragoza\" that turned back all the clocks a half century in one stroke. \"Jesús!\" Sabicas has been away for a long time, but the memory of this concert will always stay with us. FLAMENCO GUITAR INSTRUCTION - a new approach - INTENSIVE GUITAR INSTRUCTION IN A CLASS FORMAT TWO 2 HOUR CLASSES PER WEEK \"FOR THE PRICE OF ONE HOUR\" WILL INCLUDE TECHNIQUE, MASTERING THE FINGERBOARD AND REPERTOIRE. BEGINNER-INTERMEDIATE THROUGH ADVANCED STARTS AUGUST 16TH",
+    "title": "REVIEW: SABICAS IN SPAIN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_08",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24",
+    "page_number": 28,
+    "word_count": 479,
+    "article_char_count_full": 3043,
+    "article_char_count_review": 3043,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_08::A12",
+    "article_text_for_review": "RONALD REAGAN DANCING WITH LUCERO TENA IN THE CORRAL DE LA MORERÍA IN 1972; GUITARIST IS FELIX DE UTRERA, CANTAOR, PROBABLY GABRIEL MORENO, PALMISTA LOOKS LIKE NANCY REAGAN (Submitted by Paco Sevilla) JALEO - AUGUST/SEPTEMBER 1982 PHOTOS TAKEN DURING A PARTY GIVEN BY THE COUNT AND COUNTESS RUIZ DE CASTILLA TO CELEBRATE THE INAUGURATION OF A TABLAO FLAMENCO CONSTRUCTED IN THEIR HOME UPPER LEFT: THE FAMED CLASSICAL/FLAMENCO DANCER ANTONIO WITH PILAR LOPEZ UPPER RIGHT: ANTONIO IS REUNITED WITH HIS LONG-TIME DANCE PARTNER ROSARIO LOWER LEFT: ANTONIO DANCES WITH THE COUNTESS LOWER RIGHT: ROSA MORENA AND ANTONIO",
+    "title": "MISCELLANEOUS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_08",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24-25",
+    "page_number": 28,
+    "word_count": 96,
+    "article_char_count_full": 613,
+    "article_char_count_review": 613,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_08::A13",
+    "article_text_for_review": "JULY JUERGA JUERGA TO END ALL JUERGAS by Juana De Alva The July juerga was truly a memorable one. After months of seeing our numbers dwindle, everyone in Southern California seemed to have decided that this was the month to drop in on the juerga. Hopefully there will be some photos submitted for the next issue which will be more descriptive, than I, of what went on. In the meantime I will just enumerate those present. Eighteen Guitarists: from San Diego: Ron Ryno, Herb Goulabain, Yuris Zeltins, Facb Sevilla, Jesus Soriano, Terry Setter, Mimette, Cristina Reyes, Thor Hanson, David Cheney, Tom Sandler, Damian Ballardo; from Los Angeles: Miguel Ochoa, Cris Carnes, David De Alva; San Francisco: Carlos Mullen; Georgia: Anya Sid Amed; Hawaii: Rick Hurter. Nineteen Dancers: from San Diego: Julia and Maria Clara Romero, Victor Gill, Juana and Trish De Alva, Elizabeth, Jr., Elizabeth, Sr., Victoria and Juanita Vallardo, Michelle Botello, Vicki Dietrich, Maripili Heriot; Los Angeles: Carla Ochoa, Miguel and Nana Eernal; San Francisco: Rosa Montcya, Faula Reyes; Georgia: Marta del Cid; Mexico: Magdalena Cardoso. Eight Singers: San Diego area: Charo Botello, Pilar Moreno, Remedios Flores, Marisol West, María José, Rafael Diaz; Hawaii: Rick Hunter; Mexico: Antonio Joven. There were some fifteen other friends and aficionados who contributed to a very full evening of music and dance that continued until 6am. $ ^{*} $ $ ^{*} $ $ ^{*} $ AUGUST JUERGA ANOTHER JUERGA UNDER THE STARS We return to the mountain top again -- to the home of Francisco and Elizabeth Ballardo. The juerga will be out-of-doors, so dress accordingly. It is requested that members fulfill their obligations as to bringing food, being present if they have invited guests and being responsible for the behavior of all members in their party. Date: Aug. 21st Time: 7:30pm -- 7 Place: 6271 Soledad Mt. Rd., La Jolla Phone: 714/454-4086 Bring: Tapas and warm clothing. SEPT. JUERGA: Call Vicki at 468-3755 or Juana at 440-5279 to check on September. (Mr. Lenshaw's 90th).",
+    "title": "SAN DIEGO SCENE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_08",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26",
+    "page_number": 30,
+    "word_count": 332,
+    "article_char_count_full": 2046,
+    "article_char_count_review": 2046,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_10::A1",
+    "article_text_for_review": "Out in the street everything is more opened and exposed to unforeseen happenings and interruptions. For one set a group of school girls from Spain join in singing sevillanas. Then a guest guitarist joins in for a few numbers. Later in the evening a drunk is politely pryed off one of the female dancers and escorted away. The atmosphere created is more fun if not as intense as the typical restaurant-cabaret scene. More chances are taken when one feels the lack of critical pressures that come up so often in serious performances of flamenco. This is not to say that the dancers and guitarist are taking what they do lightly. As they move through the traditional flamenco repertoire, the discipline and devotion to the art of flamenco shows from start to finish, and the effect is reflected in many of the faces watching, almost not believing their eyes. The dance ends, the applause dies down, and the crowd dispenses. I was thinking to myself how the things that survive are those we take the time for, and take our turn in passing on. The art of flamenco is no different and depends greatly on dedicated groups like this one, taking the dances and the music to an unsuspecting public. Who can know how far reaching, what future seeds were planted by what was done tonight? It is for certain though, that they have reached out and touched the lives of many people.",
+    "title": "FLAMENCO IS ALIVE AND WELL IN THE STREETS OF PARIS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_10",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 242,
+    "article_char_count_full": 1367,
+    "article_char_count_review": 1367,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

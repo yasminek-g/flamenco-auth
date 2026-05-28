@@ -1,0 +1,186 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-11-19-right-flamenca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTítulo: POR SOLEARES.\n\nCantan: ANTONIO MAIRENA, CURRO DE UTRERA, TERREMOTO DE JEREZ, PERLA DE CADIZ, PEPE PINTO, ENRIQUE MORENTE, EL SORDERA, GORDITO DE TRIANA, AURELIO SELLES, y EL CHOCOLATE.\n\nGuitarras: MELCHOR DE MARCHENA, FELIX DE UTRERA, MANUEL EL MORAO, MANOLO SAN-LUCAR, PARRILLA DE JEREZ, PERICO EL DEL LUNAR, SOTITO DE JEREZ y ANDRES HEREDIA.\n\nReferencia: HISPAVOX S. 50.018; Madrid, 1982\n\nUna nueva colección discográfica nos presenta esta casa grabadora: «Grabaciones históricas» que, a nuestro parecer, no sólo viene a recordar al aficionado cantes de ya muy difícil audición, sino que ofrece un muestreo de palos jondos con verdadero acierto. Desde luego, no nos atrevemos a llamar a estas grabaciones como antológicas, aunque en ellas concurren evidentes valores que las hacen\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_04 | trigger=\"segundo\"]\n\nego, no nos atrevemos a llamar a estas grabaciones como antológicas, aunque en ellas concurren evidentes valores que las hacen necesarias. No vamos a detenernos en un largo análisis de lo que nos ofrece esta carpeta en sus diez cantaores, pero sí que-remos dejar unas ligeras notas no ociosas del todo. Veamoslas. La Perla, es aquí toda una joya engarzada, con un hermoso recorrido de Alcalá a Cádiz. En el primer tercio, ecos de la Repompa; en el segundo, de Juan Talega y en el tercero, de Aurelio. Ya está. La guitarra del Morao, magnífica. Terremoto como siempre grande, aunque en esta soleá de Utrera con un remate por Juaquinín, quizá no muy acertado, no se nos muestra en todo su saber y jondura. Sin lugar a dudas, no es de sus mejores soleares. Curro de Utrera, todo hay que decirlo, no nos llegó. Su cante pausado pierde la imprescindible garra jonda. El Pinto nos deja constancia de las entonaciones flamencas de Tomás Pavón, y esa gratísima armonización de los cantes de Alcalá y Utrera y, sobre todo, algo que estimamos sobremanera: la grandeza del cante ligado. A. Mairena, en estas soleares de Alcalá en las que se advierte la huella de Juan Talega, nos vuelve a dejar nítida constancia de su perfecto dominio del compás, su gran conocimiento del estilo y sus innegables cualidades para decir el cante. El Sordera, no hay que dudarlo, deja igual de evidentes el buen gusto y su falta de desgarro, es un recorrido de Alcalá a Utrera con el magisterio de Juan Talega. Gordito de Triana, es una de las pocas ocasiones, que sepamos, que se mete por estos cantes, no acierta con sus sabores. En esta solea de ecos trianeros acompañada por la sobria guitarra de Melchor, no p\n\n[ENDING CONTEXT]\n\nde «malagueña doble del Mellizo», pues aquí estamos ante una granaína seguida de una malagueña como Aurelio Selles se autoimpusiera debido a sus facultades.\n\nNo nos importa, por otra parte y como colofón, repetir que Arrebola tiene paladar en las más de las malagueñas que ofrece, aunque en la de la Trini, la del Chato de las Ventas y la grande de Chacón no les da toda la fuerza que nosotros quisiéramos.\n\nDe la guitarra de Enrique Campos podemos decir que acompaña con honesta compostura, lo que en estos tiempos no es poco.\n\nAntologia de la Malagueña ALFREDO ARREBOLA Guitarrista: ENRIQUE CAMPOS\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Discografía flamenca",
+    "periodical": "candil",
+    "issue_id": "1982-11",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 1732,
+    "article_char_count_full": 10394,
+    "article_char_count_review": 3305,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_04",
+        "family": "CRIT",
+        "trigger": "segundo"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-11-21-left-placas-de-artistas-flamencos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Manuel Yerga Lancharro\n\nFiesta de Nochebuena Siguiriya del Mellizo Media granaína Malagueña Fiesta Fandango Idem Idem Idem Soleá Fandango Idem Idem Taranto Idem Fiesta por Bulerías Saeta Idem Idem Siguiriya Fandango Idem Idem Campanilleros Fandango Idem Idem Idem Tanguillo Fandango Idem Idem Idem Tango por bulería Fandango Idem Idem Idem Siguiriya Media granaína Taranta Fiesta por bulerías Siguiriya Fandango verdial Idem Fandango Pregón Fandango Idem Malagueña del Canaric Idem Fandango por soleá Idem Fandango Idem\n\nLos pastores del cielo No llamar al médico Sé que se llama la Alhambra Ay, la mare mía Dicen que tienes corazón de acero Que no tienes corazón Aunque mucho lo sentí Nadie en el mundo ha querido A donde aplaque mi sed Yo voy por la calle loco Porque el querer da experiencia\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"mujer\"]\n\nmala que eres para mí Un sombrero a lo lorquino Vestido de marinero Y no tengo más remedio Una bandera se veía Por un puñao de dinero Ahí presente lo tenéis Si el sitio yo supiera Pero no que me condeno Al cielo que es mi morada Aquel que dice ¡ay! Más hermoso es mi Dios Me puse a cantar un fandango Ni orgullo ni vanía Con la esperanza perdía Y rosa te llamas tú Al Cristo de la Humildad Nadie en el mundo ha querido No lo hacen los cristianos Era mujer de bandera Le voy tomando interés (No se le entiende) Ese mi gusto sería Ni hermosura ni dinero Y no me lo hubiera perdido Ruégale a Dios por salud Mi niña Pili Si yo te quiero de veras Tú la joya, yo el joyero Dices que duermes sola A voces te llamo Y te quiero como a ella Y que sin rumbo vivía A dónde apagué mi sed Llegó el frutero Porque el querer da experiencia Sangre pura gota a gota La gente Los buenos días Porque lo mandó el destino Que no se debe matar Tú serás una desgracia Lo mala que eres pa mí Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Idem Paco Aguilera Banda Idem Idem Idem R. Montoya Idem Idem Idem R. Montoya Idem Nino Ricardo Nino Pérez Manolo de Huelva Idem Idem Idem Idem Idem Paco Aguilera Idem Idem Idem Nino Pérez Manolo de Huelva Nino Pérez Idem Idem Nino Ricardo R. Monto\n\n[ENDING CONTEXT]\n\nPérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez Idem Nino Pérez\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Discografía (placas) de artistas flamencos Manuel Vallejo",
+    "periodical": "candil",
+    "issue_id": "1982-11",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 2082,
+    "article_char_count_full": 11105,
+    "article_char_count_review": 2909,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "mujer"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-01-3-right-editorial",
+    "article_text_for_review": "Editorial\n\nE L flamenco, como centro de interés escolar, ha sido una de las preocupaciones presentes en las últimas ediciones del Congreso Nacional de Actividades Flamencas. Ponencias como «El Flamenco en la Escuela». «El Flamenco en los Planes Educativos», etc., han evidenciado, acaso con poco sentido práctico, la necesidad de que lo jondo se ofrezca a los escolares como un componente importante de la realidad antropológica andaluza. Y se ofrezca didácticamente, pedagógicamente, es decir, como un modo de expresión dinámica que junto a la expresión oral o escrita contribuyan a la formación integral del educando. Y en ese aspecto, el flamenco tiene singular relevancia, como en el pasado Congreso destacaron Franco Quirós y Guzmán Valdivia, «no sólo por la riqueza de sus ritmos, belleza musical, etc., sino también por las sugerencias dramáticas que suponen sus letras, la actuación del cantaor, el papel de los acompañantes, la actitud de los que escuchan...».\n\nEste enorme acervo cultural que subyace en el flamenco, «ha de ser materia de enseñanza escolar, debe gozar, como expresión histórica y cultural valiosísima de lo más íntimo de nuestro pueblo, de público reconocimiento y protección».\n\nDesconocemos el alcance de las experiencias escolares que, en este momento, se están practicando. Intuimos la complejidad de este empeño y la multitud de problemas que hay que superar. Ello no ha sido óbice para que el «Grupo Candil» ponga en marcha, en colaboración con la Junta de Andalucía, un plan sistemático y progresivo de penetración del flamenco en la escuela en el ámbito de la provincia de Jaén. Se trata, en cierto modo, de una experiencia piloto de la que esperamos colegir propuesta concreta a las instituciones educativas y culturales del país, en orden a que el flamenco se imparta en los niveles básicos de enseñanza.\n\nEn definitiva, se trata de que nuestros escolares profundicen en el flamenco, en su más amplia dimensión, que es una forma más —tal vez la más ecléctica que existe— de recuperar su propia identidad cultural sin ningún tipo de manipulación.",
+    "title": "Editorial",
+    "periodical": "candil",
+    "issue_id": "1983-01",
+    "year": 1983,
+    "language": "es",
+    "article_type": "editorial",
+    "pages": "3-3",
+    "page_number": 3,
+    "word_count": 334,
+    "article_char_count_full": 2081,
+    "article_char_count_review": 2081,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-01-4-right-tierra-sobre-la-tierra-aproximac",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nel proceloso tiempo\n\npulsado de terribles tiranías...».\n\nI, tierra sobre tierra, como el propio autor titula uno de sus más famosos poemas sobre el cante jondo, o si lo preferimos cante flamenco, que ambas denominaciones son correctas cuando se trata de definir este fenómeno artístico tan arraigado en las tierras del Sur y que constituye probablemente las señas de identidad del pueblo andaluz, su «luz y sombra» como dirá en alguna ocasión nuestro escritor, que dedica una importantísima parte de su vida y de su obra a valorar, a ponderar, y si se me permite la expresión, a apuntalar esta única joya popular andaluza, amenazada de destrucción por dos vías, o, la desaparición por desuso, absorbida por la civilización de consumo que a través de modernos receptores reproducen el último «Hits»\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"peor\"]\n\nntidad del pueblo andaluz, su «luz y sombra» como dirá en alguna ocasión nuestro escritor, que dedica una importantísima parte de su vida y de su obra a valorar, a ponderar, y si se me permite la expresión, a apuntalar esta única joya popular andaluza, amenazada de destrucción por dos vías, o, la desaparición por desuso, absorbida por la civilización de consumo que a través de modernos receptores reproducen el último «Hits» de moda, o, lo que es peor, destrucción por mixtificación, por transformación en una blanda pasta para turistas, donde se atiende únicamente al brillo inefable de los caireles y la bata de cola, o emociona fugazmente al frívolo señorito, o al turista buscador de la fuerte raza hispánica prometidos por una agencia de viajes, previamente achispados por el whisky o el vino fino de garrafa. Por José Luiz Buendía En todo caso, superficialidad, vanalidad, ausencia total de rito, de profundidad; esta situación da una idea falsa del pueblo andaluz, definiéndolo como feliz, sensual, brillante, ausente de problemas, etc., que ante los espectros de la mala distribución de la renta, del paro o la emigración, se encoge de hombros, y como ha señalado el escritor Manuel Urbano de algunos andaluces: «En su fe lírica piden el milagro de Dios para salvar el Sur, o dolorida y senequistamente, con\n\n[EVIDENCE WINDOW 2 | retrieval_hint=COMM_03 | trigger=\"publicará\"]\n\ndíamos, y un poeta andaluz, jerezano por más señas. De ahí que desde hace algún tiempo, Caballero se haya convertido en autor de letras para cantar «fla- NOTA DE LA REDACCION.—La redacción de «CANDIL» se honra en presentar este trabajo de sistematización de José Luis Buendía López, sobre las ideas flamencas de José Manuel Caballero Bonal, uno de nuestros flamencólogos de ideas más claras sobre esta difícil materia. En este trabajo, que «CANDIL» publicará en varias partes, dada su extensión, el profesor Buendía analiza, estudia y sintetiza la labor del flamencólogo jerezano, a la vez que compara sus juicios con los de otros autores y con las ideas del propio autor del trabajo. Creemos que con esta publicación ofrecemos un material importante de cara, sobre todo, a los que no han seguido paso a paso los pocos datos que sobre el flamenco se poseen, e intentan, a través de «CANDIL», aumentar sus con\n\n[ENDING CONTEXT]\n\ny las tonás) tengan sus correspondientes intérpretes de baile que se han especializado en vitalizar con su expresión corporal el mundo vivencial del cante, que, no lo olvidemos, sigue siendo el que acapara lo más representativo del flamenco, como se deduce del hecho mismo de que en cualquier recital, festival o reunión de cante haya siempre varios intérpretes de cante y sólo uno o ningún representante de ese bello y solemne espectáculo que es el baile flamenco.\n\nJ. A. PULPON\n\nESPECTACULOS INTERNACIONALES\n\nO'Donnell, núm. 3 - 4.° Tlf. 22 20 58 - 21 69 20\n\nPARTICULAR: Teléfono 27 80 78\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "TIERRA SOBRE LA TIERRA (Aproximación a la flamencología de J. M. Caballero Bonald) (I)",
+    "periodical": "candil",
+    "issue_id": "1983-01",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "4-9",
+    "page_number": 4,
+    "word_count": 7338,
+    "article_char_count_full": 45552,
+    "article_char_count_review": 3912,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "peor"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "publicará"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-01-9-right-el-flamenco-a-los-centros-de-ens",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Manuel Martín Martín\n\nESPUES de no largos, pero sí intensos años de estudio minucioso y hermenéutico sobre el cante gitano-andaluz y flamenco-andaluz, y una vez establecidos los primeros contactos con profesores y aficionados en general, me veo en la necesidad de proclamar un derecho recogido —según mi interpretación— en el Estatuto de la Comunidad Andaluza, así como en la mente del más humilde de los andaluces —sabedor de que contamos con un patrimonio cultural único en el mundo—, cual es la difusión, clarificación y enseñanza del género flamenco, que como todos los lectores saben, abarca el cante, el toque y el baile.\n\nPASADO, PRESENTE Y FUTURO.\n\nYa, desde Silverio Franconetti hasta la fecha y a lo largo de más de cien años, se ha ido poniendo el grito en el cielo, pidiendo y\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"conservación\"]\n\ndaluza, así como en la mente del más humilde de los andaluces —sabedor de que contamos con un patrimonio cultural único en el mundo—, cual es la difusión, clarificación y enseñanza del género flamenco, que como todos los lectores saben, abarca el cante, el toque y el baile. PASADO, PRESENTE Y FUTURO. Ya, desde Silverio Franconetti hasta la fecha y a lo largo de más de cien años, se ha ido poniendo el grito en el cielo, pidiendo y reclamando la conservación, pureza y potencialidad de lo que algunos llaman cantes flamencos. Pero a decir verdad, poco, o muy poco, se ha hecho al respecto, salvo las honrísimas excepciones que confirman la regla, tales como la de algunos cantaores, aficionados y profesionales que a lo largo de la Historia del Flamenco —unos quedaron en el anonimato, otros fueron calificados de «raros» y entre los actuales, destacar la actitud creadora y revolucionaria de don Antonio Mairena— fueron capaces de imponer su fidelidad a la pureza ante las motivaciones comerciales que se les presentaban y, por otra parte, también es digno de tener en cuenta, la afición de algunos hombres que, guiados por su vocación y en su\n\n[ENDING CONTEXT]\n\ndel flamenco, proporciona al alumno conocimientos y explicaciones de hechos geográficos e históricos, esenciales para poseer «cultura andaluz».\n\n— Desarrollar el amor a nuestra Comunidad Autónoma a través de este patrimonio cultural, y repito una vez más, único.\n\n— Mediante el conocimiento, asociación y observación de los distintos estilos flamencos, fomentamos en nuestros alumnos el espíritu crítico para analizar, comparar y buscar las causas de su formación o de las posibles influencias entre ellos.\n\n— El estudio de la Historia del Flamenco se da la mano con la propia Historia de Andalucía.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Prospectiva flamenca: El Flamenco, a los Centros de Enseñanza",
+    "periodical": "candil",
+    "issue_id": "1983-01",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-10",
+    "page_number": 9,
+    "word_count": 1457,
+    "article_char_count_full": 9027,
+    "article_char_count_review": 2775,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "conservación"
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1979_05::A13",
+    "article_text_for_review": "TAPA NIGHT The April juerga, held in the home of Yvonne and Merrill Scott, was the first time since the conception of Jaleistas that we did not include dinner. Tapas, hors d'oeuvres, and wine were the fare of the evening; many felt this was a welcomed change, eliminating much preparation and post-juerga clean-up. The Scott split-level home afforded ample room for the members-only gathering. The atmosphere was relaxed, with lots of improvising taking place. Regla Dee improvised to tientos, accompanied by Paco and Pilar; Stephanie and Francisco did a long rumba. Fantasia Española squeezed in a rehearsal for an upcoming show, assisted by Jaleistas' newest singing duo, Jesus Soriano and José Roldán. We saw more of Betina's dancing than at the last juerga as she improvised to tientos in the \"cueva. Charo Botello was really hot, singing everything from sevillanas to saetas at the end of the evening.",
+    "title": "APRIL JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23",
+    "page_number": 23,
+    "word_count": 148,
+    "article_char_count_full": 906,
+    "article_char_count_review": 906,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_05::A14",
+    "article_text_for_review": "The May juerga will be held at the home of Jack Jackson or at the National University on Saturday, May 19th. Members will have to call Jack at 272-5748 (or Paco or Juana) to get up-to-the-minute details. We will again have \"tapas\" only (bread, cheese and fruit are a nice relief from \"chips n' dips\"). To initiate our plan of having local groups do small shows at the juergas, there will be a performance at about ten o'clock by Paco Sevilla, Luana Moreno, and Pilar \"La Canaria.\" ANNOUNCEMENTS Announcements are free of charge and will be placed for two months; they must be received by us by the 15th of the month previous to their appearance, earlier if possible. Send to: JALEO, P.O. BOX 4706, SAN DIEGO, CA. 92104",
+    "title": "MAY JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_05",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23",
+    "page_number": 23,
+    "word_count": 129,
+    "article_char_count_full": 718,
+    "article_char_count_review": 718,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_06::A1",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nDonn Pohren's flamenco ranch in Morón de la Frontera by Shay Oag (From: $ \\underline{\\text{Costa}} $ $ \\underline{\\text{Del}} $ $ \\underline{\\text{Sol}} $ $ \\underline{\\text{Magazine}} $, Oct. 1971; sent by Bill Regan) (Readers: Keep in mind that this was written in 1971; the flamenco sessions are no longer held at the Finca Espartero) Impressive wrought iron gates push open easily, but there is no one to be seen. We wander up the rough path leading to a terrace and in through the spacious entrance hall, peering at framed photographs of renowned flamenco artists past and present. After the parched glare of the surrounding olive grove, everything seems soothingly cool and shaded and in the big main red-tiled room a long heavy wooden table is laid for lunch. Twenty chairs are placed around\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Manolito\"]\n\nenty chairs are placed around it and alternating bottles of red and white wine glow invitingly against the two tall sun-filled windows. Doors, shutters and the high ceiling's beams are dark brown. There is the black iron of rejas and lamp fittings. Walls are whitewashed and left mercifully unadorned save for two striking studies of Luisa Maravilla. On the vast jutting chimney a dominating painted portrait of the unforgettable great gypsy singer, Manolito el de la María. In the distance a staccato rap of dancing heels and coming from all sides the plangent conflicting sound of practising guitars. We are at the Finca Espartero. Situated only two miles from that traditional stronghold of authentic flamenco, it intimately in its authentic form and natural habitat. Guitar, dance and singing lessons are available for those who wish to study; mainstay instructors include Diego del Gastor (guitar) and Luisa Maravilla (dance) both masters of the pure style. High points are the four flamenco juergas which take place each ten day session. One of the directors of the Society of Spanish Studies and the driving force behind the Finca Espartero is writer/guitarist/flamencol\n\n[ENDING CONTEXT]\n\nChicherrona, and El Choza, all stalwarts of true flamenco, all proud possessors of their three score years and ten. A lovely drive across a lovely stretch of country, a lovely dawn, a lovely juerga, a lovely story but...for another time. Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, competitions, festivals, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through— 1229 Waimanu Street Honolulu, Hawaii 96814 Send for Free Brochure. $2.00-sample copy, $10.00-4 issues\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FLAMENCO FLING",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_06",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "1, 14, 15, 16, 17, 18",
+    "page_number": 1,
+    "word_count": 1838,
+    "article_char_count_full": 10819,
+    "article_char_count_review": 2807,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Manolito"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1979_06::A2",
+    "article_text_for_review": "Dear Jaleo, Many thanks for my complimentary issue of $ \\underline{\\text{Jaleo...}} $ it proves to be a knowledgeable and enjoyable magazine. If you were to read some of the contributions to London magazines by \"the experts\", you would appreciate just what a breath of fresh air $ \\underline{\\text{Jaleo}} $ is! There seems to be no healthy flamenco scene in London that I know of and the few occasions that do occur are of dubious quality and oftimes of an embarrassingly poor standard. Most magazines which are devoted to the guitar have only a token article representing flamenco and these seem to be ill-versed in their art! I found all of the articles in Jaleo to be of interest (though some were of too high a calibre for me to fully comprehend) and the magazine as a whole was well presented. I would like to subscribe to Jaleo plus, I would like as many back issues as are available please. Although I don't think that the Morón de la Frontera school is the be-all and end-all of flamenco, I do like the playing of Diego del Gastor a lot. I think that he was a masterful interpreter of the toque grande. Others I also like are generally in the jondo style. I did visit Morón in 1970 for a short while (my only visit) and I bought a Conde Hermanos 1967 guitar from Diego... I also had a few lessons from him. I found him a generous person in the best sense of the word... he was tolerant too, especially as I couldn't speak Spanish at all! I'm rather fortunate in having many tapes of Diego accompanying various people so I'm never flamenco-less as it were. I have 50 or 60 flamenco discs plus a couple on 78 rpms, which means that my wife is equally as tolerant. Sincerely Yours, Phil Coram London, England",
+    "title": "LETTERS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_06",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 313,
+    "article_char_count_full": 1714,
+    "article_char_count_review": 1714,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_06::A3",
+    "article_text_for_review": "Mary Ellen Nolan (\"María Solea\") has been quietly supporting flamenco for a long time; if there were more aficionados like her, flamenco would be in much better shape in America. Aside from her active interest in flamenco as a participant, she has been tireless in attending flamenco events -- concerts, regular San Diego performances and fiestas, and she has helped support other artists by taking lessons from many of San Diego's guitar teachers. In addition, she was involved in producing the 1968 National Directory of Flamenco Artists, thought up the name \"Jaleo\" for our newsletter, and for the last nine months has typed most of every issue of Jaleo without reward and often under very pressured circumstances. We asked Mary Ellen to jot down a few things about herself to guide us in doing a story on her, and what she wrote was so entertaining that we convinced her to allow us to print it as it was, without further additions. * * * I was born in Detroit, Michigan, but my family moved to Laguna Beach, California, when I was young. I was still a kid when I saw the movie \"Blood and Sand\" and was instantly turned to bullfighting and flamenco. I thought the guitar was a big ukelele! But all I could think about was learning how to play that neat, nifty music. There was, of course, not much flamenco guitar instruction available at that time anywhere in the U.S., let alone Laguna Beach. I didn't even know the term \"flamenco\" so I couldn't designate \"flamenco music\", only \"that kind of music that was in \"Blood and Sand\", so I spent many fruitless years wishing I could play \"that kind of music\". However, I did know what bullfighting was and from junior high school on, was an involved aficionada and going to bullfights regularly in Tijuana. After getting out of high school, I moved from Los Angeles to San Diego in order to be closer to the bullrings, and became a keypunch operator at Convair in order to support myself; I have been there since and will probably die on the job! For about three years, I was on the staff of a magazine, $ \\underline{\\text{Programs}} $, which was produced in San Diego, but printed in Tijuana, and sold weekly at both bullrings during the season. I wrote a small column, translated articles from Spanish to English, and took dictations from the editor, Leo Romano, and then typed everything up. Those days were a lot of fun -- each Sunday carloads of us would go to Tijuana for the corridas. By that time, my flamenco education had progressed no further than the fact that I had a record collection. Then one day somebody told me that a real live flamenco guitarist was playing at a coffee house. Instantly, I was hot on the phone arranging guitar lessons and that weekend took a bus to Joe Trotter's house. After Joe, I studied off and on with several others, mainly Yuris Zeltins, Chris Wilson, and Paco Sevilla. I liked being exposed to a variety of styles so that I could assimilate a background of techniques and ideas that most turned me on. Just about every guitar teacher has something (material, technique, or approach) unique to offer, and by drawing on a variety of sources, one's own personality on the guitar (style) can emerge. I used to really drive some guitar teachers up the wall by my insistance that they present their lessons to me in a manner that I thought I could best assimilate them, that is, by thorough analysis of the music (pretty hard for many of them to do when the music has become so natural that they forget what they did to learn it). I was always positive that by the time I got home, my memory would have been totally erased, so I made them write every single thing down (those were the days before every one, as a matter of course, took their portable tape recorders to lessons) and they would get writer's cramps! Beginners, especially with a level of insecurity such as mine was, can be very difficult to teach. I often wondered later on if I was one of the reasons one guy decided to quit teaching. hum or twirl their hair to dissipate tension during their normal work activities, I used to forget where I was and start knocking out compás on my desk or do little phrases of taconeo while standing in the hall getting a cup of coffee. If $ \\underline{\\text{that}} $ didn't get some looks! All of this was back in the \"good old days\", the \"Golden Age\" of flamenco in San Diego (mid to late 1960's) when Carol Whitney was living here and there were parties in La Jolla, Mission Beach, and Pacific Beach. That period of my life was \"fun city\". Almost every weekend Carol or Bill Howard would throw some pretty heavy blasts that would start on Saturday evening and go on sometimes through Sunday. People would come down from Los Angeles (mostly guitarists since there were few dancers around then) and a Spaniard, Jose Luis, used to come up from Tijuana for guitar lessons from Carol and he could sing very loud, which made it doubly certain that there would be problems with neighbors. Carol had a landlady who lived right in front of her. Carol suspected that the landlady, who never budged from her house, would love to have seen her move out. If my memory is correct, Carol's rent was always being raised, maybe in hope that she would move. But Carol stayed and the greedy landlady couldn't kick her out. One night the cars began arriving (a herd of V.W.s) and parking along the street. The landlady slammed out of her house, threw some bedding in her car, and split. When Carol left, the juerga scene fizzled out for the most part, until 1977 when Juana de Alva organized Jaleistas. In the cover photo of the December $ \\underline{\\text{Jaleo}} $, the man doing palmas in the background is Vicente Escudero during a visit to the Sacromonte.",
+    "title": "ADVENTURES OF AN AFICIONADA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_06",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3, 4, 5",
+    "page_number": 3,
+    "word_count": 1025,
+    "article_char_count_full": 5733,
+    "article_char_count_review": 5733,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

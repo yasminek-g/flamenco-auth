@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1977_08::A1",
+    "article_text_for_review": "WHY A FLAMENCO ASSOCIATION? It is difficult to sustain one's enthusiasm and creativity without stimulation from others and exposure to new ideas; and so one of the reasons for our gathering in June was to see if there was enough interest and support to form a flamenco association in San Diego. Although forming any kind of formal organization may be repugnant to flamencos, it might be the only way to create an atmosphere in which flamenco can flourish. As Teo Morca says, \"Most of us were not born in the caves of Granada.\" Neither can we switch on the radio or T.V. to a local flamenco station, nor hear palmas in the streets in the wee hours of the morning, nor cante in our bars and cafés. Whatever atmosphere there is to be here, we must create ourselves. We have a relatively large group of flamenco enthusiasts in our county (over one hundred that we know of at present), and yet very few of us know of the existence of the others. For example, some of us might not be aware that we have quite a few Spaniards in the community who are not only enthusiasts and jaleistas, but who also are guitarists, dancers, and singers. Results were good on the sign up sheets at the June juerga: twelve people signed up to help work on the newsletter, five to work on the flamenco directory, and six to coordinate juergas. Having juergas on a regular basis will give us an opportunity to meet and share with some of these other contingents. This newsletter and the upcoming directory will be other sources of information, and means of communication between members. These people met throughout June and July and you are now holding the result of their first efforts. In addition, they came up with some policies: (1) The name of the association will be Jaleistas--the Flamenco Association of San Diego. (2) Jaleo, the newsletter of the Association, will be published monthly, providing there is enough support. (3) The first issue is being sent to everyone on the mailing list, but subsequent issues will be sent to the Association members only. (4) Association dues will be $6.00 per year for a single member, $10.00 per year for a couple or a family. For the remainder of this year, however, the rates will be $3.00 per year for a single member and $5.00 per year for a couple or family. (5) A 50¢ donation will be requested of non-members at the juergas (6) Membership will be open to all. (7) Members may make brief announcements in the newsletter without charge. THE PURPOSES OF THIS NEWSLETTER ARE TC INFORM AND COMMUNICATE...WE SOLICIT CONTRIBUTIONS FROM MEMBERS...We need information about coming events in the L.A., San Diego, and Baja California areas, including your own performances. We encourage letters to the editors, features by knowledgable members reports on trips to Spain, etc. Since our goal is to get Jaleo into your hands by the first of the month, all materials must be in by the 20th of the preceding month. Mail all correspondence to Jaleo P.O. Box 15111, San Diego, CA. 92115 Do you know someone who might enjoy the Association? Send us their name and address and we'll mail them a complimentary copy of $ \\underline{\\text{Jaleo!}} $",
+    "title": "WHY A FLAMENCO ASSOCIATION?",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "editorial",
+    "pages": null,
+    "page_number": 1,
+    "word_count": 551,
+    "article_char_count_full": 3155,
+    "article_char_count_review": 3155,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_08::A2",
+    "article_text_for_review": "JUERGA REPORT -- Juana De Alva I wish, again, to express my appreciation to those who helped make our June juerga such a success--those who came early and helped to set up, those who shuttled pople up and down the hill all evening, those who brought all the good food and wine and in general, by their presence and participation, made the evening what it was. We had an estimated sixty-nine people (and two dogs!) present at the juerga. People began arriving at 6:00 p.m. and continued to arrive until 12:30. The last \"die-hards\" left at 2:30 a.m. Food was pintiful (we could possibly use a few more hot dishes in containers that will stay warm, though). Booze was left over and it will be brought to the next juerga. The music was great and flowed all evening. We had some classic guitar and Veracruz harp interspersed among the flamenco. Much of the dancing was accompanied by the beautiful cante of our budding local flamenco singer Isabel Tercero. As far as the dancing was concerned, it was a cante chico evening. We danced a hundred Sevillanas, some Fandangos, Rumba, Bulerias, Tango, Alegrias and a little Soleares. I would like to see more people participating but I think that will come with time and more exposure. There were guitars that never came out of their cases and dancers who knew at least one Sevillanas but didn't muster enough courage to join in. Five dance areas were provided, but the only people who used the patio were the children to practice their Rumba. A couple of people went out to the studio. Next time, hopefully, some of the guitar students and dance students will get together and find a corner to practice and create. I hope the atmosphere of the juergas will be supportive to all. All ages were represented at the juerga. The Stowells arrived complete with playpen. That's great! Those who grow up in the juergas will grow up with rhythm in their blood. At the other end of the scale, we missed the presence of Ernest Lenshaw (the Spirit Incarnate of Spanish dance in San Diego) and hope he will be hale and hardy for the next juerga. ***** JUERGA REPORT ANYONE who is interested in helping to coordinate the juergas or who would like to donate a location or who has suggestions: write to the Jaleo staff! The juerga held on Wednesday, July 13th at the home of Martha Refuss was successful. About fifty people were there, each contributing in their own style to the proceedings. The evening was an active one--almost constant singing, dancing, guitar playing and jaleo, and all with the lively, loving excitement of true aficionados! ___ TELEPHONE GRAPEVINE There will be times when flamenco events come up on too short notice to get them into the newsletter. On these occasions we will attempt to notify all members by phone. If you would like to help in the telephone grape-vine, leave your name and number with one of the people below. With ten people each making five calls, we should be able to reach everyone in the Association. JACK JACKSON 272-5748 TOM REINEKING 233-3647 KIT or LINDA STOWELL 462-4653 Editors.....Betty Jobe Elizabeth Freedman Features.....Tom Reineking Kit Stowell Juana De Alva Design and Production.....Linda Stowell Stan Schutze Kevin Linker Mary Ellen Nolan Distribution.....Lucia Flores Maria Teresa Gomez",
+    "title": "JUERGA REPORT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "article",
+    "pages": null,
+    "page_number": 2,
+    "word_count": 561,
+    "article_char_count_full": 3274,
+    "article_char_count_review": 3274,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_08::A3",
+    "article_text_for_review": "-COMING UP— The August juerga will be held at the Recreation Park of Genese Highlands (see map) on August 20th. We'll follow the same Modus Operandi as the June juerga: bring food to share and whatever you like to drink. Warm clothes and blankets will be in order again. Eating utensils, ice cubes, coffee and punch will be supplied by the Association. One thing we're going to try in order to get more people involved is to carry the \"Rhythm of the Month\" idea (taken from the FISL Newsletter) over into the juergas. This month it will be Sevillanas since most people already know them. Come prepared to share and to learn. Everyone (guitarists, singers, aficionados alike) can learn the steps to one Sevillanas (if they want to--no arm twisting!). Guitarists can exchange melodies and learn to accompany singers. Anyone can bring verses to share (please know the melody or bring a recording). We'll teach Sevillanas castanets plus have a basic castanet class, so get a hold of at least a pair of plastic castanets from the music store before the 20th! SEE YOU THERE! --Juana De Alva The juerga must fold at 12:00 a.m., so get there early! Alba and Tony Pixslay are celebrating their anniversary with a juerga on August 6th at 6:00. The address is 210 Ocean View in Del Mar. To get there, go north on 5 and take the Del Mar Heights exit. Follow that until one block before Old Highway 101 and turn left on Nob. You'll see a small brick house on the corner of Nob and Ocean View: that's it! The party will be held both indoors and out, so dress accordingly. The Pixslay's can be reached at 481-9556 if you have any questions. MAP FOR THE AUGUST JUERGA AT THE RE- CREATION PARK OF GENESE HIGHLANDS: Subscription to $ \\underline{\\text{Jaleo}} $ is automatic to members of Jaleistas--the Flamenco Association of San Diego. Membership through the remainder of 1977 is 3.00 for individual members or 5.00 for a family or couple membership. If you want to join Jaleistas, make your check payable to Lucia Flores and mail it along with the coupon below, to 2018 Julian Ave. San Diego, CA. 92113. If you wish to have your membership card sent to you, enclose a self-addressed, stamped envelope. Otherwise, pick up your card at the next juerga. MEMBERSHIP APPLICATION--JALEISTAS The Flamenco Association of San Diego street city state …… Enclosed please find: $3.00 Individual Membership $5.00 Family or Couple (If you donated at the June juerga, deduct that amount from the above.)",
+    "title": "COMING UP",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "event",
+    "pages": null,
+    "page_number": 3,
+    "word_count": 429,
+    "article_char_count_full": 2473,
+    "article_char_count_review": 2473,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_08::A4",
+    "article_text_for_review": "SEVILLANAS Betty Jobe Sevillanas are members of the Seguidillas family of Spanish popular dances originating in the 18th century. As the Seguidillas were danced in each region of Spain, they took on the peculiar flavor of that region. In Andalusia, the city of Sevilla became the birthplace of the most popular Seguidilla: Sevillanas. Usually danced by couples in heeled shoes, it contains light springing steps. Everything is smooth in this dance and this smoothness of movement is emphasized in the Sevillanas by the beautifully co-ordinated sinuous use of the arms, shoulders, and body. As might be expected, the accompaniment is similar to that of the Seguidilla; song, guitar, castanets. The measure and balance of this dance is assured by the arrangement of steps into set coplas; each copla takes up an equal amount of music, always returning to a refrain, identical each time in rhythm and design. As in the old Seguidillas, the dancers pause between the coplas, in order to gather strength for the next one. Sevillanas are danced at all hours during the Feria y Fiesta in Sevilla. Guitarists make a stand any place and play for anybody who comes along. Boys and girls challenge anybody to dance the Sevillanas. References: $ \\underline{\\text{The Dance in Spain}} $, Anna Ivanova. Ernest Lenshaw SEVILLANAS SIN GUITARRA--a personal account by Kit Stowell For most aficionados, the word $ \\underline{\\text{sevillanas}} $ dredges up images of fingers flashing through intricate melodic runs on the guitar, while haughty dancers demonstrate equal precision in their $ \\underline{\\text{paseos}} $ and $ \\underline{\\text{pasadas}} $, \"killing the spider\" with all the dignity of which the human animal is possessed true images, indeed, of this centerpiece of the Andalusian rite of spring, $ \\underline{\\text{the fiesta de abril}} $. Fortunately, though Seville is anchored forever to the banks of the Guadalquivir, its spirit can be exported. Here in San Diego, the city named for the patron saint of Iberia, it seems only appropriat that we should celebrate the universal appeal of the music of Seville. Just as any folk tradition contains more than is evident at first glance, the reality of the sevillanas goes far beyond the guitar and the dance. My dance teacher, a beautiful gitana named Teresa, brought this fact home to me in several imaginative ways, when I took flamenco dance lessons in Spain. The steps are long since forgotten, but much that she taught me remains vivid, despite the fact that the circumstances of the lessons were far from ideal. The difficulty was that we had no record player, far less a guitarist, and nothing to carry the rhythm but her \"tántarará, tatatatatatátarrará,\" and the Spanish lyrics. The words, usually reduced to insignificance by the volume of the music and the dancers' footwork, (cont'd next page) Membership Application on the opposite side",
+    "title": "SEVILLANAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "article",
+    "pages": null,
+    "page_number": 4,
+    "word_count": 466,
+    "article_char_count_full": 2894,
+    "article_char_count_review": 2894,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1977_08::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nSEVILLANAS Betty Jobe Sevillanas are members of the Seguidillas family of Spanish popular dances originating in the 18th century. As the Seguidillas were danced in each region of Spain, they took on the peculiar flavor of that region. In Andalusia, the city of Sevilla became the birthplace of the most popular Seguidilla: Sevillanas. Usually danced by couples in heeled shoes, it contains light springing steps. Everything is smooth in this dance and this smoothness of movement is emphasized in the Sevillanas by the beautifully co-ordinated sinuous use of the arms, shoulders, and body. As might be expected, the accompaniment is similar to that of the Seguidilla; song, guitar, castanets. The measure and balance of this dance is assured by the arrangement of steps into set coplas; each copla\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"rhythm\"]\n\nthis dance and this smoothness of movement is emphasized in the Sevillanas by the beautifully co-ordinated sinuous use of the arms, shoulders, and body. As might be expected, the accompaniment is similar to that of the Seguidilla; song, guitar, castanets. The measure and balance of this dance is assured by the arrangement of steps into set coplas; each copla takes up an equal amount of music, always returning to a refrain, identical each time in rhythm and design. As in the old Seguidillas, the dancers pause between the coplas, in order to gather strength for the next one. Sevillanas are danced at all hours during the Feria y Fiesta in Sevilla. Guitarists make a stand any place and play for anybody who comes along. Boys and girls challenge anybody to dance the Sevillanas. References: $ \\underline{\\text{The Dance in Spain}} $, Anna Ivanova. Ernest Lenshaw SEVILLANAS SIN GUITARRA--a personal account by Kit Stowell For most aficionados, the word $ \\underline{\\text{sevillanas}} $ dredges up images of fingers flashing through intricate melodic runs on the guitar, while haughty dancers demonstrate equal precision in their $ \\underline{\\text{paseos}} $ and $ \\underline{\\text{pasadas}} $, \"killing the spider\" with all the dignity\n\n[ENDING CONTEXT]\n\nuniversal. In English, the actions of the hands are described, i.e. \"right\" castanet in right hand is struck, \"left\" castanet in left hand is struck, \"roll\"--rolling action with all fingers, usually of the right hand etc. In Spanish the terms are descriptive of the sounds made. Below are the Spanish terms accompanied by the castanet notation that I will be using: : \"Pa\" (Pă) both castanets struck at the same • \"Ta\" (Tâ) lower pitched (left) castanet is struck alone \"Pi\" (Pē) higher pitched (right) castanet is struck alone \"Choque\" (Chō-kā) castanets are struck together (cont'd. on next page)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "SEVILLANAS SIN GUITARRA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1977_08",
+    "year": 1977,
+    "language": "en",
+    "article_type": "article",
+    "pages": null,
+    "page_number": 4,
+    "word_count": 1169,
+    "article_char_count_full": 7113,
+    "article_char_count_review": 2866,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "rhythm"
+      }
+    ]
+  }
+]
+```

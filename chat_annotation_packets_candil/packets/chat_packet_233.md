@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1991-05-13-left-cantes-aut-ctonos-de-ja-n",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nExisten en la geografía cantaora andaluza provincias que tienen bien definidos sus cantes: Huelva, Málaga, Sevilla, Cádiz; pero otras provincias, con riquísimo folklore, contienen menor variedad en los cantes hondos, flamencos o aflamencados, y aún así, hablando con sincera honradez, han de compartir el origen de alguna de sus formas cantaoras, con otras provincias, en las que se repiten, alternativamente, las circunstancias sociales, culturales e históricas que motivaron estos cantes. Tal es el caso de Jaén, y de cuyos cantes y cantaores más significativos intentaremos dar una idea.\n\nCarátula del disco «Cancionero Anónimo y Popular de Jaén» Grupo Andaraje\n\nE s Jaén una provincia de riquísimo folklore no flamenco, como los fandangos de La Puerta de Segura, las jotas de Siles, de Albanchez\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nuna provincia de riquísimo folklore no flamenco, como los fandangos de La Puerta de Segura, las jotas de Siles, de Albanchez y de El Ojuelo: a Jimena por las brevas, A Jódar voy por esparto, a Bedmar por los cenachos, a Albanchez por las mozuelas las coplas del Carnaval, de Jódar, el romance de Pegalajar, las coplas del laboreo y de los quintos, en La Guardia, de tristes connotaciones, pues nos expresan el arrancarse un joven de su ambiente familiar adiós, Cerro de Almadén, Adiós, Pajarillo y Ponce, adiós, Cañá de las Varas, cuándo te volveré a ver. Y aproximándose a los estilos aflamencados, por ser Jaén zona de frontera durante los últimos siglos de la Edad Media, tenemos también los romances, como el de Gerineldo, llamado en otra versión, de la Condesita, o aquella versión oral que se conserva en Jódar, en que el protagonista es Gerineldo y la hija del emperador sustituye a la Condesita ya los van a sortear Ya sortean los quintos, madre, y a Gerineldo lo llevan de Capitán General y que termina como el romance que canta el Negro Tengo juramento hecho con la Virgen de la Estrella, que mujer que no haya «sío» mi dama, de no casarme con ella. De este romance y de otros ya aflamencados, que nos habla Estébanez Calderón en sus «Escenas Andaluzas» al relatar una fiesta en Triana y que luego cantarían, además del Planeta y el Tío Rivas, cantaores más modernos, como el Agujetas Viejo, Dolores, Juana y Alonso el del Cepillo, y el Negro, encontramos buenas raíces en Jaén. Otros cantes aflamencados, con matices propios en nuestra tierra, son las nanas, que oímos cantar a nuestros abuelos y cuyos sones los emparentan Molina y Mairena con las trilleras temporeras, pajaronas, etc., cuyos textos nos hablan de toronjiles, comintos, clavos y alcaraveas, y están directamente relacionadas con los cantes de aceituneros, llamados mononas y coplas del nacimiento, de tanta solera en la comarca de Andújar, en especia\n\n[ENDING CONTEXT]\n\nde muy flamenca voz, que, con dominio de los recursos técnicos, sabe, aunque a veces ni lo intente, transmitir el escalofrío y la emoción que la domina al hacer sus cantes, por granaínas, soleares, bulerías y, sobre todo, en sus bellísimos villancicos flamencos, rescatados del olvido por «El Gallina» y que ella ha elevado a la categoría máxima, por su dulzura, por la sencillez de sus ingenuas melodías, por la hondura de sus metales.\n\nUn lugar de privilegio en nuestro recuerdo para Pepe «Polluelas», aquel romántico y bohemio del cante, cuyos «quejos» tanto se clavaron en nuestro corazón.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cantes autóctonos de Jaén",
+    "periodical": "candil",
+    "issue_id": "1991-05",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-16",
+    "page_number": 13,
+    "word_count": 3313,
+    "article_char_count_full": 19536,
+    "article_char_count_review": 3551,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-05-16-right-homenaje-a-paco-vallecillo",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEl aficionado por excelencia, el hombre que ha entregado su vida al flamenco, el valedor del «mairenismo», en definitiva, una de las personas que mejor ha comprendido cuál ha de ser el comportamiento honesto en el escabroso mundo del flamenco, tuvo uno de los merecidos homenajes. La Fundación Andaluzía de Flamenco, en estrecha colaboración con el Departamento Asesor de Flamenco de la Junta de Andalucía, desarrollaron en su entrañable Ceuta, los días 4 y 5 de abril, el homenaje que en esta tierra africana, la figura del desaparecido Francisco Vallecillo Pecino era acreedora.\n\nQuizás hubo algunos malentendidos entre la afición ceutí, mas pienso que el citado homenaje mantuvo sus justos términos. ¿Que careció de promoción? Es posible. Sin embargo, el que quiso y pudo sumarse, lo hizo, como\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombre\"]\n\n. El 4 de abril, la mesa coloquial fue ocupada por José Montes, Luis Sentis, Fernando Tesón, Antonio Fernández Díaz «Fosforito», Pedro Piñero, Antonio Pozanco y el nieto del homenajeado Francisco. Y más que un coloquio, el acto consistió en la intervención de cada uno de los invitados al mismo, haciendo referencia a los diversos aspectos que habían conocido de la personalidad de Paco Vallecillo en torno al tema «Paco Vallecillo, el escritor y el hombre». El primer interlocutor fue José Montes con una específica alusión a los escritos flamencos y a la enorme correspondencia con que Paco Vallecillo inundaba a sus amigos. Luis Sentis abundó en el matiz polifacético de las actividades desarrolladas —según dijo, por su poco contacto con Vallecillo— y destacó dos facetas relacionadas con el flamenco en la vi- da de Paco: el trabajo y el tesón, así como la generosidad de su obra. Antonio Fernández Díaz «Fosforito» expresó lo difícil que resultaba resumir lo extensa que había sido su vida compartida con el difunto. Abundó en su amplia humanidad, su amistad fiel o sus sabios consejos. Pedro Piñero relató su tardío pero fructífero contacto con Vallecillo. Aludió a la enorme ayuda que había aportado en la puesta en marcha de la Fundación «Antonio Machado» y cómo acometía los trabajos con la pasión de un joven. Por su parte, Antonio Pozanco, como amigo de Paco Vallecillo, expresó cómo ha llegado a sentir el flamenco gracias a la persona del homenajeado. Dijo también que Paco Vallecillo era bueno por esencia, presencia y potencia. En último lugar, su nieto relató cómo su abuelo había sido centro y eje de su familia y cómo habían aprendido todos de las enseñanzas honestas y morales que su persona irradiaba. Tras finalizar el coloquio, el gu\n\n[ENDING CONTEXT]\n\nMoreno «El Morao» recordó el inicio de su amistad con Paco Vallecillo allá por el final de los años cuarenta, la defensa a ultranza que siempre hizo de los gitanos y del cante de éstos.\n\nTras las intervenciones citadas, seguidamente se desarrolló un debate que giró en torno al «mairenismo», durante el cual tuvieron destacada intervención Manuel Moreno «El Morao», Lucas López y Manuel Martín.\n\nLa jornada se cerró con un recital del cantaor Manuel Mairena con la guitarra de Enrique de Melchor. Cantó por soleares, siguiriyas y tangos, con facultades, sentido del compás, quejío y sentimiento.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Homenaje a Paco Vallecillo",
+    "periodical": "candil",
+    "issue_id": "1991-05",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 1074,
+    "article_char_count_full": 6571,
+    "article_char_count_review": 3379,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombre"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-05-17-right-opini-n-paco-de-luc-a-flamenco-u",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA caba de salir al mercado el último disco de Paco de Lucía titulado «Zyriab». El hombre y el personaje a que se refiere queda maravillosamente explicado por Félix Grande en el primer apéndice de sus «Memorias del Flamenco». Zyriab o «Pájaro Negro» es el sobrenombre del gran músico iraquí que procedente de Bagdad se instaló en la corte de Abderramán II en el año 822. La simpatía mítica de Paco hacia su ilustre antecesor le rinde este homenaje. Pero el motivo principal de estas líneas, aunque me ha parecido oportuno hacer alguna pequeña referencia al título, es hacer algo que siempre que escucho la música de Paco de Lucía deseo hacer, pero que siempre queda pospuesto para otra ocasión, desbordado por la intensidad del goce artístico; la crítica pasa a segundo plano ante tan gran caudal de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"lugar\"]\n\ntivo principal de estas líneas, aunque me ha parecido oportuno hacer alguna pequeña referencia al título, es hacer algo que siempre que escucho la música de Paco de Lucía deseo hacer, pero que siempre queda pospuesto para otra ocasión, desbordado por la intensidad del goce artístico; la crítica pasa a segundo plano ante tan gran caudal de arte. Me refiero a la reflexión sobre el fenómeno que representa la música de este artista incomparable y su lugar en el universo musical de la guitarra. La audición de este disco me ha animado a ello. Se compone de ocho piezas entre las dos caras de unos 40 minutos de duración; predomina el aire de bulerías en tres de ellos: «Soniquete», «Compadres» y «Playa del Carmen», un toque por tarantas en homenaje a Sabicas: «Tío Sabas», una pieza de difícil catalogación dentro del género flamenco, de fuertes resonancias jazzísticas: «Chick», dedicada al músico Chick Corea que colabora al piano en otra pieza de este disco, la composición que da nombre al conjunto: «Zyriab», una canción con acompañamiento vario «Canción de amor», y unos aires de Huelva: «Almonte». En «Soniquete» y «Almonte», concretamente, aparece la colaboración de las voces a coro de Pepe de Lucía y Potito. Es de destacar asimismo la colaboración por vez primera, que yo sepa, en una grabación entre Paco y Manolo Sanlúcar, además de otros músicos que aportan la instrumentación en los lugares previstos, ya viejos conocidos de los seguidores de esta música. Aunque es necesario hacer una reseña del contenido del disco, quisiera profundizar un poco más en el contenido de la música de Paco de Lucía, y, si fuera posible, de una forma fría, aséptica, para evitar caer en el elogio desmesurado o en una apología que ninguna falta le hace, porque ya hace mucho tiempo que demostró lo que es. Lo primero que me ha llamado la atención y me ha agradado ciertamente es comprobar cuán cierto es lo que Paco dice cuando se le habla de su «pereza» o len\n\n[ENDING CONTEXT]\n\nun artista singular. ¿Puede negar alguien el más puro sabor flamenco en la taranta de «Tío Sabas», en los aires huelvanos de «Almonte» o en el maravilloso diálogo de Paco y Sanlúcar en «Compadres»? ¿Puede negar alguien las resonancias de música de jazz en esas mismas piezas y en otras? Esa es su gran virtud. El público de Paco está en el mundo entero, porque utiliza un lenguaje universal y eso no debe dolernos a los que amamos el flamenco, sino alegrarnos porque los duendes andaluces se pasean por las cuerdas de la guitarra de Paco de Lucía y en ellas son transportadas a los últimos confines.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Paco de Lucía, flamenco universal",
+    "periodical": "candil",
+    "issue_id": "1991-05",
+    "year": 1991,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1554,
+    "article_char_count_full": 8938,
+    "article_char_count_review": 3585,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "lugar"
+      }
+    ]
+  },
+  {
+    "article_id": "1991-05-19-left-coplas-de-verde-luna",
+    "article_text_for_review": "Coplas de verde luna\n\nCuando sale mi serrana dos luceros verde luna despiertan a la mañana.\n\nNi tú me dices que sí ni yo te digo que no, pero siempre el caminto andamos juntos los dos.\n\nLa luna mirando está por entre las ramas verdes tu boquita colorá.\n\nSi me vienes a buscar, con aceitunitas verdes te llenaré el delantal.\n\nNo le digas a la gente y guarda en tu corazón lo que mi corazón siente.\n\nEl verde de tu querer es la flor del desengaño. No me parece el saber, que madura con los años.\n\nSolos en la madrugá, la noche viste de verde como viste el olivar.\n\nEntre besos de olivar le pregunté a mi serrana si se quería casar.\n\nCuando la noche se pierde cantando por soleá, las amapolas del campo nos vienen a despertar.\n\nVerde como verde mar verde como verde luna verde como el olivar y verde como aceituna.\n\nJuan Torres",
+    "title": "Coplas de verde luna",
+    "periodical": "candil",
+    "issue_id": "1991-05",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 156,
+    "article_char_count_full": 824,
+    "article_char_count_review": 824,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1991-05-19-right-carlos-cruz",
+    "article_text_for_review": "A Pepe Polluelas\n\nPara que tu corazón me oiga se adelgazan mis palabras. Pablo Neruda.\n\nN o precisaste de escuelas ni de gritos. Era igual... Tu cante conmovía. No te serviste de recursos. Para qué... Tu cante dolía.\n\nY dolía como un puñado de alfileres de oro puro y corazón a trozos, donde temblaba el susurro desvalido de tu sabia, atesorada por la angustia, en madrugadas de escarcha y de suplicio.\n\nTu sonido lloraba invisibles lágrimas por los cristales de tus ojos, apoyado en el frágil calado de un cigarrillo en la casi perenne lumbre del fino.\n\nA solas puedo oír tu cante, llanto más que cante, el tenue vibrar de tu voz de hombre bueno, niño extraviado por callejas sin nombre o en el silencio fúnebre del neón. Oficiante nocturno de la pausa, rota a veces por la caricia de tu álito; por tu pasión hecha jirones; reveses acumulados en agrias noches, suma del desdén y de la prisa.\n\nCarlos Cruz",
+    "title": "Carlos Cruz",
+    "periodical": "candil",
+    "issue_id": "1991-05",
+    "year": 1991,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 162,
+    "article_char_count_full": 905,
+    "article_char_count_review": 905,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

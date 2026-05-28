@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_03::A7",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAN INTERVIEW (From: El Correo de Andalucía, Nov. 25, 1979; sent by Jill Snow and Pedro Bacán; translated by Paco Sevilla) By Manuel Curao During this 1979 that is now leaving us, the name of Antonio Mairena completes fifty years with the cante andaluz to which he added the name, cante gitano. It has been and is a golden anniversary filled with homages, impositions and recognition...an endless number of honors that demonstrate the affection that the aficionados have for the maestro from \"Los Alcores\", who has recently been named an adopted son of the city of Sevilla. \"It is,\" says Antonio, \"one of the greatest emotions I have received in my life, since Sevilla has been the mother of my art. I am Sevilla's adopted son, officially now, but in essence, I already was before, spiritually. I was\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Mairena\"]\n\nndless number of honors that demonstrate the affection that the aficionados have for the maestro from \"Los Alcores\", who has recently been named an adopted son of the city of Sevilla. \"It is,\" says Antonio, \"one of the greatest emotions I have received in my life, since Sevilla has been the mother of my art. I am Sevilla's adopted son, officially now, but in essence, I already was before, spiritually. I was born on the fringe of Sevilla, because Mairena is only 21 kilometers from the capital...I remember when I was still a child, I used to come with my father to the San Miguel and April fairs; I saw bullfights in La Monumental; I used to come to many private gypsy fiestas in Triana. So I was absorbing the essence since I was quite small and, when I became an artist, I already had made Sevilla a part of me. \"When there existed the great grant of the cante 'por saetas', he continues saying, 'like Manuel Torre, El Gloria, Centeno, Pastora, etc., I made myself into the best saetero - a difficult thing. I remember one morning, it was Good Friday, when they carried me on their shoulders from the meeting place that was above what is today the Laredo Bar; the room was called 'La Tertulia Sevilla' and it was a gathering place for those interested in the cante and the bulls. But, since\n\n[ENDING CONTEXT]\n\ntheir own for a more extended visit. For more information contact \"Interplanner\" (see ad). Last minute note: Deposits received after April 1st will have to add $40 to the total price due to an increase in airfare. Read interviews with Segovia, Tomas, Romeros, Pujol, and many more. Find out about instrument builders, festivals, competitions, and master classes. Play our new music and lute tablature. Find out what is happening around the world in guitar and lute through- guitar & lute Magazine 1229 Waimanu Street Honolulu, Hawaii 96814 Send for Free Brochure. $2.00-sample copy, $10.00-4 issues\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANTONIO MAIRENA: AN INTERVIEW",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9-12",
+    "page_number": 9,
+    "word_count": 1464,
+    "article_char_count_full": 8235,
+    "article_char_count_review": 2925,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Mairena"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1980_03::A8",
+    "article_text_for_review": "The following two articles are the third part of a six-part series dealing with Manuel Torre. (From $ \\underline{\\text{Nueva}} $ $ \\underline{\\text{Andalucia}} $, July 21, 1978; sent by Bettyna Belen; translated by Vicki Dietrich.) By Ángel Marín Rújula We have been asked to collaborate on a special report for the Sevilla paper Nueva Andalucía which will be published on July 21st in comemoration of the 45th anniversary of the death of Manuel Torre in Sevilla, much has already been written, the best biography being that of Juan de la Plata. I don't wish to add further fuel to the words of Domingo Manfredi when he says, \"authors copy from one another and like a good father has recognized one of his own well loved sons in the sons of other fathers who copied him without shame.\" First, I would like to thank the Nueva Andalucía for the honor they have bestowed on me by asking for my modest contribution, to write about such an immense giant of a man in his art as is Manuel Torre. In fact it is extremely difficult to write something of interest about this jovial cantaor when so Manuel Ríos Ruíz, in La Instrucción al Cante Flamenco, says that Manuel Torre is the culmination of the cante in Jerez and that his voice is more important because he is also the epitome of cante flamenco in general. His voice had such echoes, such jondo properties, such terrifying sound. This passionate assertion makes us believe that the good \"Jerezano\" and friend Manolo Ríos Ruíz must have excellent recordings in which one could appreciate those qualities, seeing that he himself never heard Manuel in person.",
+    "title": "ANTONIO MAIRENA AND MANUEL TORRE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 278,
+    "article_char_count_full": 1604,
+    "article_char_count_review": 1604,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_03::A9",
+    "article_text_for_review": "(From: $ \\underline{\\text{Nueva Andalucía}} $, July 21, 1978; sent by Bettyna Belen; translated by Vicki Dietrich.) Antonio Mairena in his book entitled $ \\underline{\\text{Confesiones}} $, when speaking of Manuel Torre $ \\underline{\\text{called him}} $ \"the unforgettable Manuel\" and these are some of his opinions: \"Manuel Torre was a genius of the cante and there are so many anecdotes that were told and are still told about him. Manuel was often compared to Don Antonio Chacón, the former as the best mainstay of the cante gitano and the latter as the great artisan of the splendor of cante flamenco. A legend was created that presented Manuel Torre as an extravagant gitano and an irregular cantaor, unsure and with a short repetoire -- many thought of him as a good siguiriyero -- while Chacón appeared as a great gentleman, elegant and pontifical, sang \"el cante como nadie\" (the cante like no one) and was venerated by the aficionados. In all these tales there was great exageration and inaccuracy. I, for one, always heard Manuel sing masterfully and others did and could say the same with more authority, like the guitarist Manolo de Huelva who heard him so many times and affirmed that Manuel Torre always sang well. \"It is true that Manuel Torre was capricious and undisturbed by the majority of problems surrounding him, only concerning himself with his whismies and his hobbies such as his greyhounds, his English chickens and his pocket watches about which he was fanatical. He had no concern for money, he ignored the norms and rules of society and never learned how to behave in it. He could neither read nor write and everything he did was by some marvelous instinct. He was a being born for freedom and for this reason he behaved in an anarchistic manner, all his life following only the impulses of his heart. He was a creature of the woods like a butterfly. On the other hand he was pleasant and had an infectious charm. He was called the Majareta, but Don Antonio Chacón told him, 'Majareta, when you sing you are like Castellar when he talks.'",
+    "title": "ANTONIO MAIRENA ON MANUEL TORRE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14",
+    "page_number": 14,
+    "word_count": 355,
+    "article_char_count_full": 2066,
+    "article_char_count_review": 2066,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_03::A10",
+    "article_text_for_review": "by Guillermo Salazar Have you ever thought of making a flamenco record? Most records are made on a contract basis by well-known artists, since recording companies have reason to believe they will sell. However, many fine musicians never record because they are too esoteric in the eyes of the companies. Especially in America, recording companies make the artist famous. They choose who will make it, and it's not always the best talent, although in many cases it is. For some reason there is a lack of flamenco records available in the USA at present. One way of creating new interest in this country is for flamencos to record their own records. Of course not everyone is able to do this for a number of reasons. Some flamencos can't afford it; others simply don't have the entrepreneur mentality. Then there are those who are not worthy or knowledgeable enough, and those who are not ready just yet. Three years ago I recorded an album of guitar solos entitled \"The Flamenco Guitar of Guillermo\". Here are some of the decisions I had to make: 1) Is my toque exciting enough to turn a listener on? 2) Will I be able to sell all the copies I have pressed? 3) Can I handle all the comments and criticisms? 4) Do I have enough material ready? 5) Do I want to have palmas, cante, or baile on the record? 6) Should I record tracks of two guitars overdubbed? 7) If I record just one guitar, is stereo necessary? There are plenty of other questions that confuse the issue: photographs, cover art, liner notes, type of print, quantity of records to be pressed, two tone cover or full color, which recording studio, which company to press and print covers, how many copies, is test pressing satisfactory, etc. If you are still sane after all this, remember not to pay the full amount of pressing in advance. That way you still have some motivation from the presser to get the job done by the promised date. When you have received all of your records, you will want to hear how you used to play at the time of the recording. After doing a record there is more motivation to get new material, since you may get tired of hearing your own record. The difference between recordings and live flamenco is the spontaneity. Records freeze flamenco, even if it is a recording of a juerga. Since we hear a record over and over, we can pick it apart. It reminds me of the instant replay used in television sports. The fans want to prove that the referee was wrong, and the aficionados, that the artist was out of compás. Then there is the problem of storage -- where do you keep 500 copies of \"The Flamenco Guitar of Guillermo\"? After having them in the living room for a month I decided to distribute them to local record stores. Then, I realized that the best place to sell them is at concerts and parties. Of course all the relatives want them and will even sell some for you, even though they don't appreciate flamenco. If you are not considering making a record it's great fun to make tapes, either in a studio or at home on a cassette machine. This will furnish the goal of perfecting your art. Besides, you can listen to yourself without concentrating on performing. If you haven't done this, it might give you a whole new outlook on flamenco. Then when you hear flamenco records you will appreciate them much more and not be inclined to criticize them so harshly. For dancers and singers it is somewhat more complicated to make a record. They have to hire other personnel, which makes the enterprise all the more expensive. The hired artists may want to be paid in advance and quibble over the size of their name in the credits. Or maybe the singer gets a sore throat the week of the planned studio rental. Dancers can only be heard through the footwork, and jaleos. The visual part of dance; arms, costumes, and general appearance of the carriage of the body can't be captured. However, you can capture contratiempos done with palmas. You do have to use the imagination, but it's certainly worth it. After making your record you are in a better position, regardless of how it is reviewed. You've done something creative with your time and talents. Anyone who does anything becomes a target for others. The fear of not being accepted will hinder many people from ever making a record. Then others will never consider recording since they then become $ \\underline{\\text{someone}} $, thus losing the privilege of criticizing in public. America is a great lover of the underdog. People who record are constantly challenged and face upstaging. Though talent varies from individual to individual, egos seem to be the same wherever you go.",
+    "title": "MAKING A FLAMENCO RECORD",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "15",
+    "page_number": 15,
+    "word_count": 821,
+    "article_char_count_full": 4622,
+    "article_char_count_review": 4622,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_03::A11",
+    "article_text_for_review": "Guillermo Salazar, a flamenco guitarist who currently resides in Denver, Colorado, became interested in flamenco in 1964 upon hearing records of Carlos Montoya. After learning from records for several years, he discovered that his idol, Mario Escudero, gave lessons in New York. Before studying with the legendary Escudero, he had his first few lessons with Ramón de Algeciras when Ramón was touring the USA with dancer Carmen Rojas. Guillermo says, \"I used to get on a bus in Pittsburgh and ride eight hours to New York. I would arrive around 7 a.m., have breakfast, go flamenco record hunting, and call a few friends. Then I would get ready for my lessons with Mario Escudero. Usually I could get two or three lessons on a weekend, and Mario was gracious enough to give me a lesson on a Sunday, since I would come 300 miles to study.\" Over a period of four years he had around 30 lessons with Mario. He would study Escudero records and come prepared to the lesson. During the lessons he worked on fingerings, correcting bass lines, and getting the exact notes that sometimes he couldn't pick off the records. Later, Guillermo realized that it is very important to understand the other parts of flamenco and so he went to Spain, where anyone serious about flamenco eventually ends up. There he studied with Diego del Gastor, Joselero, and played for Luisa Maravilla's classes thanks to Donn Pohren's \"Flamenco Flings\". Guillermo attended two of the flings and then spent the rest of the year travelling around Spain in 1971. Salazar then decided to seek a career as a flamenco guitarist. He lived in many cities, playing the guitar and setting up his Guillermo Spanish Center where he teaches Spanish. While living in Phoenix Arizona he became a close friend of the late Manolo Vázquez. The two would spend hours each day exchanging falsetas and flamenco stories. Guillermo says, \"Manolo loved to drink beer and play guitars. He had his own juerga room, separate from the house, where he would organize parties for the Phoenix flamencos. Anyone who has seen Manolo dance, sing, and play at the same time, will remember this man very well.\" Guillermo has lived in Los Angeles, Reno, Phoenix, Pittsburgh, Spain, and now Denver. When he first arrived in Denver he met guitarist René Heredia who invited Guillermo to be second guitarist in his \"Flamenco Fantasy\" group. Back then, 1975, the group was basically involved in \"Young Audiences\" concerts. The group consisted of René, his sister Carmen Heredia, and Guillermo. Eventually Carmen moved back to California and was replaced by Vicente Romero. Guillermo remained with \"Flamenco Fantasy\" for two years and then decided to exit and do solo concerts. Guillermo organized a series of concerts with his friend John Fodor. Fodor was fairly well recognized in Denver as a virtuoso of the classical violin. He is the brother of Eugene Fodor of RCA records. When Salazar met Fodor he said, \"I admire your brother very much.\" John immediately replied, \"Thank you, but I'm better!\" The two musicians became friends and later launched their locally famous concerts. First came a three-week engagement at the Touchstone Theater. Then several engagements at Global Village and Denver Folklore Center. Since these theaters were fairly small, the musicians decided to rent auditoriums of a larger size and went on to stage several sellout performances. When Fodor moved to Australia, Salazar pursued his solo concerts locally and continued his private business of teaching Spanish. More recent concerts by Guillermo Salazar were performed at the First Unitarian Church and Loretto Heights College. In 1977 Salazar recorded his first album of flamenco guitar solos. \"Recording an album really helps get your toque together,\" Salazar said, \"I think more flamencos should do records in the USA. Maybe then flamenco will make a comeback, which will be better for everyone.\"",
+    "title": "GUILLERMO SALAZAR",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 645,
+    "article_char_count_full": 3907,
+    "article_char_count_review": 3907,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

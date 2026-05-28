@@ -1,0 +1,165 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_05::A11",
+    "article_text_for_review": "A CONCERT REVIEW by Jess Nieto On March 3, 1978, a friend and I drove to Mexicali, Mexico, to see \"Música y Danzas de España,\" a program of classical Spanish dance and flamenco, under the direction of José Luís Esparza. We were especially eager to see it because several Jaleistas would be performing, and we wished to both enjoy their art and lend them some support. The performance was part of a tour of the border cities of Ensenada, Tijuana, Mexicali, and San Luís Colorado. Arriving at Mexicali's beautiful new auditorium, the Teatro del Estado, we bought front row tickets and headed for the lobby to await the completion of the first performance. In usual concert fashion, things were running late -- about 30 or 40 minutes past the scheduled starting time of 9:00p.m. We remarked to each other that we'd never been to (or heard of) a concert that started on time. The two opening works by Albéniz, \"Córdoba\" and \"Leyenda,\" featured impressive choreography and attractive costumes. The \"Suite Andaluzia\" opened with guitars playing an introduction \"por verdiales\" and then \"Malagueñas Populares\" danced by bailarina, Marlene Cloward. She was surprisingly good and really impressed us with her dancing and her facial expression which lent a lot of emotion and interest to her performance. The final selection in the \"Suite\" was \"Fandangos de Huelva,\" our first full taste of what we came for -- live flamenco. Mercedes Molina's singing, Paco Sevilla and Juan Molina's beautifully interwoven guitar work, and the energetic and lively dancing of Rosala, Diana, Laura Crawford, Kevin Linker, Guillermo Martínez, and Jorge \"El Callao, combined in a rich and colorful fusion of elements to delight the senses. The following number was \"Fandango\" from the zarzuela, \"Dona Francisquita\" by Vives, and was danced by the ever-stirring Juana de Alva. As a guitarist and fan of our own Paco Sevilla, I must say that the next piece was the highlight of the evening for me. For his solo, Paco chose \"Cuerdas con Alma,\" a graninas, and his guitar strings truly assumed a life and soul of their own. From the captivating beginning to the impos-sibly fast ending, Paco played with a fluidity and ease that I found semi-astounding; the end result was an intense emotional experience not easily forgotten. The remaining selections in the first half of the program included \"Goyescas\" by Granados, a masterful \"Zapateado\" danced by Jose Luis Esparza, and a stirring rendition of the popular \"Las Bodas de Luís Alonso,\" danced by Jose Luís and the entire company. The second act opened with \"Vida Breve\" from the opera by Manuel de Falla, which was delightfully interpreted by José Luís and Juana de Alva; the appreciative audience was charmed by the light and delicate subtlety of their movements. After a very nice change of pace capably provided by Laura Crawford in Moskowsky's \"Danza Española Nn. 1,\" the evening's entertainment moved into high gear with the \"Taberna Flamenca,\" a tablao-like series of flamenco pieces. Juan Molina initiated this mini-juerga with a very nice guitar solo combining tarantas and tarantos; its Moorish sound provided a welcomed addition to the musical menu. Rosala then proceeded to demonstrate her version of the soleares in another of the evening's high points. Her heelwork was very sharp and she did some intricate steps I'd not seen before. After several more dances, including a guajiras by Marlene, siguiriya by Juana de Alva, sevillanas, and alegrías by José Luís, Mercedes Molina concluded the \"Taberna\" with her solo, \"El Cante de Mercedes,\" a bulerías which she sang and danced. She fully exhibited her talents which have added so much to our juergas, prompting me to reflect on just how much a cantaora (or cantar) contributes to live flamenco performance. The final selection of the night was \"Viva Zaragoza,\" an extremely lively and gay jota which proved to be a most suitable conclusion. I was very surprised at how much I enjoyed it, as I am more of a flamenco buff than a folk-dance enthusiast. The costumes were appealing and the lightness and high energy exhibited were contagious so that the evening ended on a high note. Although there were some technical difficulties with the lighting and sound equipment throughout the performance, this in no way affected the quality of the entertainment and, in fact, provided the performers with an opportunity to demonstrate their professionalism.",
+    "title": "Music & Dances of Spain",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 728,
+    "article_char_count_full": 4430,
+    "article_char_count_review": 4430,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A12",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTHE CRITICS TAKE A LOOK Jose Molina was born in Madrid and began his dance studies there. In the mid 1950's he came to the United States and joined Jose Greco's company. After five years with Jose Greco, he formed his own company and began his annual tours. The following reviews are by New York critics and cover Jose Molina performances at the Bijou Theater in December and at Carnegie Hall in April. We are reprinting them together here, not only because they present different views of one of the most active touring companies, but also because they reveal what the critics are saying about Spanish dance and, along with recent articles in Dance Magazine, give a rough picture of where Spanish dance stands today. * * * \"JOSE MOLINA AND SPANISH DANCERS\" by Jennifer Dunning (Originally appeared\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"home\"]\n\nm these days. What is left of it in New York is on the concert stage, far removed from the open squares and cafes where Spanish regional and flamenco dance flourished for so long. The New York restaurants that once provided a showcase for smaller Spanish dance groups are gone now, and the large companies that toured the United States through the 1960's have for the most part disbanded. Spanish dance has fallen on hard times, both here and in its home country, and so Mr. Molina's appearance at the close of his annual North American tour, was especially welcome. That he has survived is partly a matter of assiduous television talk-show appearances in this country. It is also because of dancers like Luís Montero, a quietly outstanding featured member of the group. Beltrán Espinosa and Jesus de Araceli, the company's guitarists, are more than accompanies, as musicians playing for Spanish dance must be. And in Simón Serrano the company has a flamenc\n\n[EVIDENCE WINDOW 2 | retrieval_hint=AUTH_03 | trigger=\"Originally\"]\n\nRoberto Lorca and Beni Pizarro conducted a conversation with their feet, ending in a soft hum of tapping that seemed inhumanly produced, so steady and persistent was it. Isabel Arenas and Jose Bejar completed the company's dance roster and the delicate playing of the pianist, Silvio Masciarelli, provided a cool relief in the midst of that storm of heel-beats and rattling castanets. * * * \"SPANISH DANCE WITH THE SPICE TAPPED OUT\" by Clive Barnes (Originally appeared in the $ \\underline{\\text{New York Post}} $, December 28, 1977) Someone once described Spanish dancing as tap-dancing set to groans, scowls and grins, while someone else suggested that it was family-style stamping. It isn't of course, but both comments pinpoint our current misunderstanding of Spanish dance and, perhaps as a result of that, the low estate to which it has fallen in our city. Spanish dance was the first folk dance form to be theatricalized -- originally in a manner deprived from flamenco cafes (the most famous survivor, still I trust surviving, is Cafe Zambra in Barcelona) where it developed into a form of cabaret dance. Eventually this worked up into the far more elaborate full-scale theatrical version, with ornate scenery, large companies and thrumming orchestras. In this conception even complete narrative ballets were given. The importance of this was the way in which it encouraged troupes to diversify\n\n[ENDING CONTEXT]\n\nwhere flamen-cos can be found looking for work; the name is now often applied to bars where informal flamenco is performed. CONCIERTO (el) - concert. CONCURSO (el) - contest; flamenco contests are held annually in many cities of southern Spain. CUADRO (el) - a complete flamenco group consisting of singers, dancers, guitarists, and jaleadores. FERIA (la) - fair; fairs are held on many occasions, some of the biggest being the spring fairs in cities like Sevilla. FESTIVAL (el) - a special form of flamenco concert in which a number of flamenco singers are presented, each singing several songs.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "José Molina",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "14, 15, 16",
+    "page_number": 14,
+    "word_count": 1200,
+    "article_char_count_full": 7247,
+    "article_char_count_review": 4053,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "home"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "Originally"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1978_05::A13",
+    "article_text_for_review": "ACTUACIÓN (la) - a performance by an individual or group.",
+    "title": "FLAMENCO TALK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 10,
+    "article_char_count_full": 58,
+    "article_char_count_review": 57,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A14",
+    "article_text_for_review": "MARATHON NIGHT In Sevilla, an all night juerga would be nothing out of the ordinary. But for Jal-eistas, this month's juerga set a record. People were late in arriving and we began to think that we had frightened everybody off with all the new rules. However, by 10:30, we were one hundred and thirty strong and had received many favorable comments about the new entrance procedure. We have not yet reached the magic formula as far as food is concerned (see article, \"Juerga Business\"); the menu consisted mainly of greens and beans (a true gypsy diet). There were also some delectable desserts, including two beautiful birthday cakes in honor of \"your's truly\" (one complete with flamenco dancer in bata de cola) Thank you all for your good wishes! Drinks ran out before the drinkers, so we passed the booze kitty around asking those who had come without some sort of",
+    "title": "APRIl JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16, 17 18",
+    "page_number": 16,
+    "word_count": 150,
+    "article_char_count_full": 868,
+    "article_char_count_review": 868,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_05::A15",
+    "article_text_for_review": "The May juerga will take place at the home of David Stowers at 11558 Johnson Lake Road in Lakeside. The food assignments are: K - M Bread or Chips & Dips $$ \\mathrm{~P~-~S~e~}\\quad\\mathrm{~M~a~i~n~d~i~s~h~} $$ $$ \\mathrm{~S~f~}~\\mathrm{~-~}~Z\\quad\\mathrm{~S~a~l~a~d~} $$ 85% wanted at least one thing taught at the juergas, the most requested being palmas dance, and singing (in that order). No arrangements were decided upon, but most teaching would be probably done during the early part of the evening. A number of people volunteered to help at the juergas, but we can always use more. If interested, contact Juana at one of the juergas. The most often mentioned positive aspect of the juergas was the atmosphere of spontaneity and friendship, along with the music, of course. Least enjoyed is the overcrowding (not so noticeable at the last juerga) and the people who are not interested in the flamenco. Again, try to be sure that the guests you invite are people who will be interested in flamenco, not just partying. At the meeting, it was decided that it is necessary to divide up the burden of running Jaleistas (currently, all of this work is done by Juana de Alva, who contrary to popular belief, does need time to eat, sleep, earn a living, and maybe even dance once in awhile). It was decided that we need a \"Jefe\" to run meetings and delegate tasks to others. Ideally, this person would be bilingual and available by phone at certain hours. The \"Sub-Jefe\" would assist the Jefe. The \"Secretary\" would be a person who could be reached easily by phone and could do small errands as well as taking notes at meetings. A \"Treasurer-Accountant\" would keep our books in order and look after the money; ideally, this person would have some experience in accounting. A \"Promotions\" person would help with advertising for Jaleo as well as working on fund-raising ideas for Jaleistas. Juana would like to continue to be in charge of the membership books and mailing lists. The last position we need is \"Editor\" of Jaleo, currently being filled by Paco Sevilla. Since we do not have large turnouts at meetings, it was decided that we would discuss this matter further at the next juerga between 8:30 and 9:00",
+    "title": "MAY JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_05",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": null,
+    "page_number": 18,
+    "word_count": 375,
+    "article_char_count_full": 2209,
+    "article_char_count_review": 2209,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

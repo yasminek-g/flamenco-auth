@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1997-11-24-right-abrir-las-puertas-flamencas",
+    "article_text_for_review": "José Luis Buendía López\n\nHay mucha gente a la que se les abren las carnes si se les llama conservadores en su arte. A los inseguros, a los que nunca han aportado nada a la difusión y buen estado de salud de esa actividad artística. Normalmente suele suceder en creaciones populares, como los toros o el flamenco, que por su misma personalidad, abierta y generosa, permiten creer, al último que se acerca a su mundo, que acaba de descubrirlo, por lo que no tiene empacho en hacer y deshacer todo lo que le venga en gana en unos registros ajenos que, como tales, deberían ser respetados, pero que, al ser pasto de todas las ignorancias y atrevimientos posibles, no lo son en absoluto.\n\nNo es este el caso del crítico flamenco Angel Alvarez Caballero, uno de los más serios estudiosos de este arte y abierto a todo tipo de innovaciones respetuosas en el mismo, con un criterio más generoso al respecto del que yo mismo sustento en la mayoría de mis juicios. Eso no im-\n\npide a un observador tan agudo, autor de páginas brillantes y arriesgadas sobre el fenómeno jondo, exigir a los intérpretes que se anuncian como flamencos (los meterruidos y pisauvas son otra cosa) un respeto hacia la herencia recibida, similar a la que se exige en un festival de ópera con las creaciones wagnerianas o en una muestra de Velázquez, en la que nadie admitiría vestir con pantalones vaqueros a la Venus del espejo.\n\nPues bien, por defender en un curso de la Complutense sus principios, que yo considero impecables desde el punto de vista ético y estético (ya estamos hartos de robos y suplantaciones con apariencia de “recreaciones”) fue duramente atacado por un advenedizo de tres al cuarto, que jamás ha ejercido la crítica flamenca, y que se permitía, en un diario nacional, motejar a Angel, criticando su actitud con un “poner trincheras en la puerta de la cueva, avalar el museo”, lo cual, siendo incierto como es, entra de lleno en el terreno de lo injusto pero opinable; estoy convencido de que la descalificación de teorías tan peregrinas vendrá de manos de los flamencos verdaderos.\n\nLo más grave es cuando el susodicho, con una agresividad que demuestra ir más allá de la libre expresión, para penetrar en el ámbito de las malas tripas, se atreve a afirmar que Alvarez Caballero \"pone bozal a la respiración flamenca\" por puro caciquismo, esto es, \"por el privilegio, por la propiedad del territorio\".\n\nDe donde se deduce que todos los que defendemos el urbanismo de las ciudades antiguas, lo inalterable de un texto o el respeto a las formas flamencas consagradas por la tradición, somos unos caciques que no damos cancha a nadie, y rechazamos la belleza innovadora de un puesto de hamburguesas en medio del Partenón, el Quijote escrito en cheli o unas soleares mas acompasadas al ritmo de un tambor.\n\nLa ignorancia del atacante, y su apuesta decidida por la modernidad jonda, se manifiestan en la recisión misma del espectáculo, al acusar a “Rancapino” de cantar bien, pero con “textos anodinos”, plenos de “palabras antiguas, frases de otra vida cotidiana en la que ya nadie se reconoce”, insultando de esta manera a la poesía flamenca andaluza, una hermosa realidad popular que encandilara a los Machado o a Lorca, a Alberti o Villalón, seguramente cuatro carcames, enemigos del progreso.\n\nOpina además que el otro interviniente, José Menese, es el “cantaor que se ha convertido en abandera-do voluntario del pelotón más conservador”, y vierte sobre él varias frases biliosas, como si el cantaor de la Puebla de Cazalla le hubiera robado la cartera, o, algo más triste aún, hubiera contribuido a la ruina del flamenco, cuando todo el mundo sabe de su colaboración en el resurgimiento de este arte, y su especial predicamento en una juventud que, por falta de raíces, había estado ausente en el desarrollo del mismo durante los años posteriores a la guerra.\n\nConfieso mi perplejidad ante tanto rupturismo progresista, que sería motivo de risa en otras actividades artísticas, cuya crítica no estuviera en manos de ignorantes. Creo en la creatividad que cada intérprete incorpora al patrimonio flamenco, a base de matices, gestualidades o apoyos rítmicos personales, aunque respetando su estructura, sus letras y música primitivas. Lo contrario está al alcance de cualquiera, aventureros de un camino a ninguna parte que la historia colocará en su lugar exacto.",
+    "title": "Abrir las puertas flamencas",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-25",
+    "page_number": 24,
+    "word_count": 733,
+    "article_char_count_full": 4354,
+    "article_char_count_review": 4354,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-11-25-right-del-and-valo-hasta-gata-por-los-",
+    "article_text_for_review": "Con el consabido retraso de las cosas de palacio..., ha visto la luz und doble CD en el que intervienen todos los cantaores y tocaores que hace unos años hicieron posible la celebración del I Circuito Andaluz de Cantes Autóctonos, en el que junto a Antonio Gómez \"El Colorao\" y Juan Cortés Heredia \"Coquillo\", tuve el honor de participar representando a Granada.\n\nSe hacía necesario el editar lo que fue aquel Circuito, y esa ha sido siempre la posición de la Confederación Andaluzas de Peñas Flamencas. Así queda reflejado en el prólogo de su vicepresidente el amigo Pepe Delgado, del que tomamos su misma palabra para enterarnos de que, “aquí están casi todos los que recorrieron amorosamente, con su cante o su guitarra, los caminos flamencos andaluces. Falta Antonio Aparicio “Niño del Parque” que representó a Cádiz en el Circuito, al que motivos profesionales le impi-\n\ndieron participar en esta grabación\".* En ella, por decisión de la Federación Provincial Gaditana, le ha sustituido el cantaor arcense, afincado en Jerez, Pepe Alconchel.\n\nAlgunos guitarristas, que no estuvieron presentes en aquel primitivo recorrido por las Peñas flamencas, se han unido generosamente a este proyecto: José Luis Rodríguez, José Manuel Alconchel, Peret de Linares, Niño de las Cuevas y Niño de la Manola. Todos, muy ligados al mundo peñista, enriquecen con su toque esta grabación antológica, poniéndole el justo contrapunto a los cantes de su tierra.\n\nPor desgracia, también tenemos la ausencia, obligada y sentida, del guitarrista almeriense Diego Ruano. Diego se nos fue demasiado pronto, aunque siempre sea pronto para morirse, tenía 26 años, paladar para el toque y mucho que decir todavía en el mundo del flamenco. Acompañó a José Sorroche por toda Andalucía; y fue decisión del cantar, decisión compartida por todos, sacrificar en su memoria la calidad de sonido que ofrece un estudio, y dejar para esta antología la grabación que en directo se hiciera en el pueblo sevillano de Las Cabezas de San Juan, acompañando los aires bailables del fandango de su tierra.\n\nLas pocas ausencias reflejadas son las que hubo cuando decidimos reunirnos en el patio albaicinero de La Platería para darle forma y vida a esta grabación. Allí disfrutamos de tertulía sabrosa, sabio copeo y apuntes flamencos, que todo es preciso cuando hay que avivar el rescoldo de la memoria, para recorrer Andalucía por los caminos del cante.\n\nOcho provincias representadas por ocho cantaores, nos traen, para esta antología, el abanico multicolor de sus cantes. Producto todos ellos del paisaje y del paisanja, que son en definitiva los que marcan sus diferencias melódicas y expresivas.\n\nEn esa rica variedad, aquí están los aires del fandango almeríense, los del taranto o los de aquella antigua petenera que se canta por tierras de Almería y que aún matizada por el estilo personal de José Sorroche conserva todavía su primitivo ritmo bailable.\n\nEn la voz de Pepe Alconchel saboreamos la gracia salinera del cante por alegrías, el son de la bulería jerezana y el eco siguiriyero que dejaron para la historia Manuel Molina, Francisco la Perla y Curro Durse.\n\nA la manera de Córdoba, António Ranchal nos dice fandangos de Lucena, serranas y alegrías.\n\nLa casta cantaora de Antonio “El Colorao” se pone de manifiesto haciendo la granaína, los cantes de Yerbabuena o el aire festero de los tangos sacromontanos.\n\nEduardo Garrocho une voz y conocimiento para recorrer garboso el rico legado del fandango onubense, desde las formas locales de Encinasola, Almonaster, Santa Bárbara y Calañas, pasando por la escuela alosnera de Antonio Abad, Fernando Camisa, Juan María Blanco, Marcos Jiménez y Manolillo “el Alcamao” o por las recreaciones personales que en Huelva hicieron Pepe “El de la Nora”, “El Comía”, Rebollo, Paco Isidro, Rengel y Rojita.\n\nLa voz gitana de Joselete de Linares es la que se arremolina con gusto al aire que, con el nombre de tangos de Jaén, grabó su paisano Gabriel Moreno, y es también la que modula los cantes taranteros, en su versión clásica o en la recreación personal de aquel linarense que se llamó Frutos.\n\nDesde Málaga la cantaora, la voz de Pepe Vergara nos trae los aires abandolaos de Juan Breba, la javera, la rondeña y el javegote. También las versiones malagueñeras del Canario, La Trini y El Perote, y el sabor aguajirao de los cantes del Piyayo.\n\nEl cante vivencial de Manuel de Paula nos evoca la escuela trianera de las tonás, se pasea solemne al compás de soleá siguiendo las formas de Juaniqui, Triana y la Serneta, y remata airoso la grabación con la vieja tradición cantiñera de su tierra lebrijana.\n\nEstos son los ocho cantaores, que por libre designación de sus federaciones provinciales, recorren, con afición y conocimiento, los caminos del cante, desde el Andévalo hasta Gata, ofreciéndonos un amplio muestrario del rico legado flamenco que se dice en este escenario espléndido, gozoso y trágico, que se llama Andalucía\".\n\nMi opinión de la experiencia de aquel Circuito es de lo más positiva. No cabe duda de que una antología en la que se pueden escuchar las formas cantaoras de toda Andalucía en una diversidad que la globaliza y la honra como verdadera y única cuna del arte flamenco en todos los rincones de la tierra, es una grabación que hacía falta.\n\nEsperemos que su difusión y aceptación por todos los aficionados de corresponda con el esfuerzo y el empeño puestos en su realización por todos los que han intervenido en este magno trabajo que sin duda hubiera conseguido mayor calor humano de haberse hecho en “caliente”. Pero con todo, un trabajo serio y digno, que sin duda enriquece la cultura musical de nuestra tierra.",
+    "title": "Del Andévalo hasta Gata por los caminos del cante",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-26",
+    "page_number": 25,
+    "word_count": 935,
+    "article_char_count_full": 5650,
+    "article_char_count_review": 5650,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-11-27-left-discografia-flamenca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNo sé claramente si la idea de publicar nuevamente estas grabaciones ha sido de Antonio González. Si ha sido así, que lo parece, ¡qué acertada! Y una vez más he de reiterar el tema: Ya está bien de ir mendigando a tanto egoísta como existe en este mundo del flamenco, las grabaciones que son necesarias para poder ir formando nuestra propia idea y criterio de lo que han sido y son las figuras a través de la discografía propia. Ahora podemos discernir con seguridad si nos gustan, si los aceptamos como paradigmas o si nos han colado gato por liebre. La verdad que este no es mi caso por haber podido disponer de la discoteca de la emisora en que trabajo desde 1965. Mas sí es el de innumerables aficionados que han estado a merced del coleccionista de turno que le ha ido facilitando, gota a gota,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"históricas\"]\n\neía pertinentes para que su criterio personal siguiera prevalenciendo. Cierto que no son los más, pero sí que los hay y ha habido en cantidad. Y es que en el año 1964 (caso del disco “La Llave de Oro” de Antonio Mairena) pocos podían disponer de los cuarenta duros necesarios para comprar el mismo. Ahora nos encontramos con la colección “Quejío”, en la que Hispavox junto con Emi (y lo que ésta última agrupa o posee), nos ofrecen las grabaciones históricas de figuras como Pastora Pavón, Manolo Caracol, Antonio Mairena, Pepe Marchena, Jarrito, Gabriel Moreno, Pepe de la Matrona y Rafael Farina, en una primera tanda (continuará la colección) para deleite y conocimiento del aficionado. La publicación de estos trabajos vienen en el formato de CD para una mejor audición de los mismos. La selección de esta primera serie está efectuada con comedimiento e intención ilustrativa sobre la capacidad creativa y cantaora de cada uno de los artistas. La diversidad de los estilos elegidos es la adecuada para acrecentar el conocimiento sobre el arte de cada uno, pues más de treinta palos en cada uno de los volúmenes es material más que suficiente para tal fin. Pero el auténtico mérito o valor de esta iniciativa está en la aportación que se ofrece a la historia sonora del arte flamenco en unos tiempos en los que esta música está considerada como única y\n\n[ENDING CONTEXT]\n\nverdadero, no se encuadraba en mi línea predilecta: las de los Pavones.\n\nSiempre recordaré su “Correo de Vélez” o la soleares de Paquirri —pero teniendo en mi memoria las resonancias del Tenazas—, la malagueña de Gayarrito, la caña de Tío José el Granaíno, la soleá-petenera, el polo de Tobalo, los tangos de Triana, la petenera de Medina el Viejo o la milonga de Pepa de Oro.\n\nPues bien, ahora los nuevos aficionados poseen en el mercado, gracias a Hispavox, estas grabaciones en CD y pueden contrastar todo lo que Pepe el de la Matrona exponía sobre el cante y sobre la historia del flamenco.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Discografia flamenca",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-27",
+    "page_number": 26,
+    "word_count": 1475,
+    "article_char_count_full": 8828,
+    "article_char_count_review": 2983,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "históricas"
+      }
+    ]
+  },
+  {
+    "article_id": "1997-11-28-right-aunque-no-quepa-en-el-papel",
+    "article_text_for_review": "José Luis Buendía López\n\nE1 autor, gran aficionado al flamenco y apasionado estudioso de todos los hechos jondos que tengan a su tierra granadina como protagonista, ha querido incidir en el tema de esa etapa flamenca, que con nombre tan oportunista como mercantil, ha pasado a la historia como el de los grandes espectáculos en teatros, plazas de toros, etcétera., que motivaron un nuevo espíritu empresarial y vivencial para los artistas.\n\nComo es sabido, esta etapa divide a los estudiosos entre los que están a favor y en contra, por considerar estos últimos que lo que se ganó en estatus se perdió en esencias. Guardia, analiza ambas posturas y se apunta sin disimulo al grupo de los entusiastas. Para su obra, parte de materiales ya conocidos sobre el nombre, cronología, etc., de tal suceso, y lo engrandece con un estudio, somero pero enjundioso, de la Granada de\n\nlos años 20, con especial dedicación al mundo del Concurso del año 22. Después, y en lo que sin duda constituye la parte más valiosa de la obra, nos ofrece una amplia y cuidada selección de carteles, que muestran sobradamente quiénes actuaban en las diversas compañías teatrales flamencas, en qué tipo de locales, etc.\n\nEchamos de menos un comentario pormenorizado, a manera de conclusiones, acerca de esta carte-ría, que da pie, más que suficiente, para que el mismo se hubiera llevado a cabo. De todas formas el libro\n\ntiene frescura y aporta los materiales suficientes para que, los que estamos en el ajo, saquemos nuestras personales conclusiones.\n\nApuntes para una Memoria Jonda (Flamenco en Granada, 1922-1997)\n\nPaula Marín Girón\n\nLXXV Aniversario del Concurso de Cante Jondo\n\nEdita: Comares. Granada, 1997. Prólogo de Manuel López Rodríguez y Miguel José Hagerty\n\nMás de un libro sobre flamenco, en el sentido tradicional del término, este trabajo, como la propia autora señala al final del mismo, es una guía o catálogo de altos vuelos para iluminar la exposición que tuvo lugar en Granada el pasado año para conmemorar el LXXV Aniversario del famoso Concurso del Patio de los Aljibes, una fantástica muestra, debida a la paciencia y enorme afición jonda de esta Paula Marín, que vive por y para el flamenco, sin más recompensa que ayudarnos a los demás a caminar por su difícil mundo, y proporcionarnos claves que activen nuestra memoria, ya que no somos capaces de actuar como ella en esa paciente recogida de materiales y testimonios.\n\nSi la exposición constituyó un éxito histórico en su momento, lo efímero de toda muestra queda conservado para la posteridad gracias a este librito que aporta fechas, fotografías, testimonios, imprescindibles todos ellos para dignificar la historia tan compleja de un arte como el nuestro, expuesto, si no fuese por el esfuerzo de gentes como Paula, a la acción devastadora del tiempo. Con ello, el presente trabajo se justifica sobradamente.\n\nAyer y hoy del cante flamenco Manuel Ríos Ruiz Edita: Ediciones Istmo. Madrid, 1997\n\nEl escritor jerezano vuelve a deleitarnos con un libro denso, pese a su volumen reducido, que continúa las indagaciones jondas iniciadas por el autor con su Introducción al cante flamenco, libro que ha sabido conservar su lozanía después de un cuarto de siglo. Atrás queda la experiencia cotidiana de Ríos Ruiz al frente de sus arduas investigaciones, con frutos tan imprescindibles como el justamente famoso Diccionario Enciclopédico Ilustrado del Flamenco, que realizara junto a Blas Vega.\n\nAhora, y como el nombre del trabajo indica, realiza una panorámica a las inquietudes jondas que irían desde los orígenes flamencos y las etapas básicas del mismo, hasta las aportaciones más recientes de lo que Manuel considera flamenco (de forma expresiva, llama a Camarón, con el que cierra su estudio “el último artífice”) sin entrar en experiencias y fusiones extrañas al mismo.\n\nEl trabajo está dividido en dos partes: en la primera se analiza la historia flamenca, sus periodos y creadores fundamentales, mientras que en la segunda se realiza un recorrido por la especial significación de cada uno de los estilos jondos, lo que convierte al libro en un adecuado manual de iniciación jonda para el que no sepa de qué va el flamenco, a la vez que asienta conocimientos en los que ya sabemos algo de él. Sin embargo, creemos que lo más importante de todo es resaltar cómo el autor, lejos de posturas blandas y descomprometidas, vuelve a responsabilizarse en la toma de posiciones, asumiendo temas tan polémicos como el de la profesionalidad de los primeros artistas, cuyos nombres han llegado hasta nosotros desde el siglo XVIII; una teoría que defiende a capa y espada, en la que intenta tirar por tierra, con razonamientos y testimonios, la idea de que sólo a partir de finales del XIX se logra dicha profesionalidad.\n\nVisión honrada y nunca exenta de riesgo, solucionado con la contundencia de los datos, la que plantea este libro, que suma, a la hora de recomendarlo, el estar perfectamente escrito, por la pluma privilegiada de uno de los mejores poetas andaluces en activo, con juicios sostenibles, derivados de una cabeza flamenca plena de madura sensatez.",
+    "title": "Aunque no quepa en el papel...",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "28-29",
+    "page_number": 28,
+    "word_count": 839,
+    "article_char_count_full": 5106,
+    "article_char_count_review": 5106,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1997-11-30-right-noticiario-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJerez de la Frontera y su recién remodelado Teatro Villamarta, serán del 18 al 30 de abril el centro del baile flamenco y danza española a nivel mundial. Durante estas fechas se darán cita en esta ciudad destacados artistas flamencos que, con el baile como hilo argumental, participarán en la segunda edición del Festival de Jerez. Un Festival que quiere hacer una apuesta decidida por la evolución creadora del flamenco, por el desarrollo de sus formas expresivas y por la modernización —desde la tradición— de sus lenguajes. Por ello propiciará el encuentro y el mestizaje, apoyando la actividad creativa de los artistas empeñados en encontrar nuevos caminos estéticos y expresivos para el flamenco del próximo siglo. Por ello, el Festival acoge también manifestaciones formativas, de apoyo a la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"artes\"]\n\npor la evolución creadora del flamenco, por el desarrollo de sus formas expresivas y por la modernización —desde la tradición— de sus lenguajes. Por ello propiciará el encuentro y el mestizaje, apoyando la actividad creativa de los artistas empeñados en encontrar nuevos caminos estéticos y expresivos para el flamenco del próximo siglo. Por ello, el Festival acoge también manifestaciones formativas, de apoyo a la creación y de encuentro con otras artes. El programa oficial se inicia el sábado, 18 de abril, con la gala inaugural que correrá a cargo de Milagros Mengíbar, Manolete y El Pipa. Le seguirán en días sucesivos, Manolo Sanlúcar, presentando Locura de brisa y trino y con la presencia de Carmen Linares como artista invitada; la Compañía de Carmen Cortés presentando Salomé, con música de Gerardo Núñez; Sara Baras y Joaquín Grilo; Carlos Ballesteros junto a Merche Esmeralda presentando Todas las primaveras; Manuel Morao y Gitanos de Jerez que presentarán en el Villamarta su espectáculo Sentir gitano y Lorca; Rocío Jurado junto a la Orquesta Sinfónica de Murcia interpretando canciones populares de Lorca y Manuel de Falla; el Ballet Flamenco de Antonio Canales, con Bengues; Eva la Yerbabuena y Rafael Amargo con su espectáculo La garra y el ángel; y finalizará la Compañía de Antonio Gades con la producción Carmen. Todos estos espectáculos tendrán como escenario el Teatro Villamarta. De forma paralela, tendrán lugar otros espectáculos que tendrán como protagonistas a Belén Maya, Israel Galván y a José Luis Ortiz Nuevo. Igualmente el programa se completa con actuaciones de baile flamenco en las sedes sociales de cinco peñas jerezanas, un Trasnoche por Bulerías, la convocatoria del I Certamen de Coreografías para espectáculos de danza flamenca y española; dos exposiciones fotográficas sobre flamenco a cargo de Alberto Schommer e Isabel Muñoz y cuatro conferen\n\n[ENDING CONTEXT]\n\n“Vicente Escudero”, farruca, zapateado y martinetes; “La Mejorana”, soleares, seguiriyas, La Caña y El Polo; “Encarnación López”, caracoles, rondeñas, serranas, peteneras, guajiras, jaberas...; “Paco Laberinto”, bulerías, zorongo, alboreá, rumba y tanguillo, con diploma y 250 pesetas.\n\nc) Sección de Toque de Guitarra. Premio especial “Ziryab”, al guitarrista más completo. Dotado con una escultura de Venancio Blanco y 1.000.000 de pesetas, además de los Premios “Ramón Montoya”, sólo flamenco (concierto); y “Manolo de Huelva”, acompañamiento a cante y baile, con diploma y 250.000 pesetas.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Noticiario flamenco",
+    "periodical": "candil",
+    "issue_id": "1997-11",
+    "year": 1997,
+    "language": "es",
+    "article_type": "article",
+    "pages": "29-30",
+    "page_number": 29,
+    "word_count": 1024,
+    "article_char_count_full": 6474,
+    "article_char_count_review": 3507,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "artes"
+      }
+    ]
+  }
+]
+```

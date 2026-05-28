@@ -1,0 +1,165 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1992-03-8-right-gitanos-y-moriscos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nN o les preguntemos a los gitanos andaluces por un culto religioso a Sara, a cuya deidad ofrecen las bohemias los cirios más grandes. No les preguntemos por su virtuosismo con el violín, su régimen de matriarcado, el ritual de los muertos, los temores al Benh (el mal), la entidad femenina de Ileana Darej, la predilección gastronómica por el niglo (erizo) o el descuartizamiento del caballo como liturgia y como operación mercantil.\n\nEn cambio, recordemos las páginas que han descrito el carácter, las costumbres, los deleites y las abominaciones de los moriscos españoles —aunque sea de forma sumaria—, en los que, a pesar de las diferencias primordiales entre éstos y los gitanos, vamos a descubrir paralelismos significativos:\n\n«El viajero alemán Münzer, que recorrió España en tiempos de los\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"mujeres\"]\n\nlos deleites y las abominaciones de los moriscos españoles —aunque sea de forma sumaria—, en los que, a pesar de las diferencias primordiales entre éstos y los gitanos, vamos a descubrir paralelismos significativos: «El viajero alemán Münzer, que recorrió España en tiempos de los Reyes Católicos, menciona, entre las profesiones más frecuentes de los moriscos, la de herrero» (1). «Entre los susodichos (moriscos) iban de cuando en cuando muchas mujeres de algunos moros ricos hechas unas debanaderas, con diversas patenillas de plata en los pechos, colgadas de los cuellos, con gargantillas, collares, arracadas, manillas, corales, y con mil gaiterías y colores en sus trajes y ropas (...). Se estaban ordinariamente ociosos, vagabundos, echados al sol de invierno, con su botija al lado, y en sus porches de verano (...) y de todos los entretenimientos en que con descompuesto bullicio y gritería sue\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_02 | trigger=\"almanaque\"]\n\nores agrícolas. Más adelante tendremos ocasión de estudiar esta circunstancia desde un ángulo que, no sólo no invalida la hipótesis de la integración de unos en otros, sino que la confirma. Presupuestos para una teoría gitano-morisca del flamenco Hace algunos años, en 1980, nos cupo el comprometido honor de recoger el material que sobre la temática flamenca había ido anotando Blas Infante —centenares de apuntes en cuartillas, recibos, hojas de almanaque, recetas médicas...— y, una vez ordenado, reconstruir su libro, hasta entonces inédito, «Orígenes de lo flamenco y secreto del cante jondo». Como es de suponer, fue una tarea paciente y desproporcionada para nuestra capacidad, que en varias ocasiones estuvo a punto de llevarnos al desaliento definitivo. Por fortuna, la lealtad a la memoria de aquel hombre extraordinario y el amor a nuestra tierra andaluzas consiguieron vencer todas las dificultades y, gracias a ello, el estudioso cuenta hoy con uno de los trabajos más interesantes y rigurosos de la bibliografía flamenca. Claro que, dado su carácter de obra inacabada, el libro presenta, más que teorías conclusas, sugestiones y caminos abiertos; entre ellos, el que puede conducir a un planteamiento basado en una circunstancia histórica que, en su relación con el cante, ha pasado casi inadvertida: «La música andaluza, lírica y coral, del Medievo, se nos ofrece con iguales caracteres en los siglos XV y XVI, perdiéndose la pista de ella en este último siglo hasta que vuelve a aparecer viva a finales del XVIII, afectada por una extraña técnica y en poder de los gitanos. Hemos, pues, llegado a reducir el ámbito cronológico dentro del cual habremos de buscar el nacimiento o la producción del Fenómeno Flamenco. Este ámbito se concreta a un período de, aproximadamente, dos siglos: desde el segundo cuarto del siglo XVI hasta el último cuarto del siglo XVIII» (9). El autor hace el envite con una pregunta clave: ¿Qué ha ocurrido en ese período andaluz para que una música polifónica, coral y lírica reaparezca, con unos caracteres absolutamente distintos: solitaria, individuali\n\n[ENDING CONTEXT]\n\nde 1609.\n\n(14) Condición social de los moriscos en España, de FLORENCIO JA-NER. Madrid, 1857.\n\n(15) Archivo General de Simancas. «Estado, Roma, 1611».\n\n(16) La Fénix Troyana. Valencia, 1681.\n\n(17) Historia del Derecho Español, de RIAZA y GARCÍA GALLO. Madrid, 1934.\n\n(18) Origen, usos y costrumbres de los jitanos, de R. CAMPUZANO. Madrid, 1848.\n\n(19) Informe de Campomanes.\n\n(20) La mala vida en la España de Felipe IV, de José Deleito y Piñuela. Madrid, 1987.\n\n(21) Historia de los gitanos, de J. M. Barcelona, 1832.\n\n(22) Los gitanos españoles, de M.ª HELENA SÁNCHEZ ORTEGA. Madrid, 1977.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Gitanos y Moriscos",
+    "periodical": "candil",
+    "issue_id": "1992-03",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-10",
+    "page_number": 8,
+    "word_count": 2696,
+    "article_char_count_full": 16725,
+    "article_char_count_review": 4690,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "mujeres"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "almanaque"
+      }
+    ]
+  },
+  {
+    "article_id": "1992-03-13-right-enderezando-entuertos-y-ense-and",
+    "article_text_for_review": "A 1 grabar el gran Paco de Lucía el «Concierto de Aranjuez» del maestro Joaquín Rodrigo, diversos medios de difusión y algunos informadores mal informados, han dicho, sin balbucear siquiera, que ha sido la primera vez que un guitarrista flamenco lo ha grabado, y no es así.\n\nYa estoy harto de decir, que antes de lanzar a los cuatro vientos una información, tenemos que estar plenamente seguros de que lo que vamos a manifestar pública-mente es la verdad.\n\n«El Concierto de Aranjuez» quien primero lo interpretó con su guitarra mágica, fue ese sevillano universal, residente en Madrid, Luis López Tejera «Maravilla». Y lo ejecutó de forma inimitable, un doce de abril de 1952 en Barcelona, cuando iba formando parte importante del Ballet de Pilar López. Y cómo lo ejecutaría, que el maestro Rodrigo, informado y felicitado por un aficionado, de forma inmediata envió a Luis el siguiente telegrama: «Muy agradecido. Enhorabuena. ¡Bravo! Rodrigo».\n\nTambién conserva nuestro gran maestro Luis infinidad de recortes de periódicos repletos de loas por su magistral ejecución del «Concierto de Aranjuez». Entre ellos figura uno del periódico «La Vanguardia» de Barcelona, que dice: «La sorpresa viene por la guitarra, porque en el ballet se ha encargado, por primera vez, un tocaor flamenco, en este caso Luis Maravilla, de imprimir a las páginas de Rodrigo un aliento andaluz que es difícil que le den los concertistas clásicos».\n\nEl día 5 de junio de 1952, lo interpretó en el teatro de la Comedia de Madrid.\n\nEl día 12 de agosto del mismo año, en el teatro Avenida de Buenos Aires.\n\nEl día 6 de febrero de 1953, en el teatro Alvarez Quintero de Madrid.\n\nEl día 16 de marzo del mismo año, en el Auditórium de La Habana.\n\nEl 15 de agosto, en el teatro Arriaga de Bilbao.\n\nEn el mes de septiembre en el teatro STDL de Londres.\n\nEl año de 1954, en el teatro Municipal de Caracas. En Puerto Rico. En el teatro de Bellas Artes de México. En el teatro Nacional de San Carlos de Lisboa. En los Festivales de Edimburgo. En Dublin. En el teatro de los Champs-Elysées de París. En Copenhagen, Estocolmo, Biarritz. Helsinki. Bruselas. En la Plaza Porticada de Santander. En la Plaza de España de Sevilla. En los Festivales de Granada. En el Palacio de los Reyes Cristianos de Córdoba y, en el año de 1955, en toda la geografía española.\n\nEn total se calcula que Luis ejecutó el «Concierto de Aranjuez» unas setecientas veces. Y cómo gustaría su ejecución en Buenos Aires, que estuvo interpretándolo diariamente durante meses. Tampoco son muchos los aficionados sevillanos que conocen su gigantesca categoría artística, ni tampoco la infinidad de premios que, a lo largo de su dilatada vida, ha obtenido fuera de España. Nuestro gran maestro recuerda, de forma especial, cómo en el año 1952 le concedieron el Gran Prix de la Academia «Charles Cross» de París, por su disco «Alegrías y penas de Andalucía».\n\nEs triste el constatar que ningún aficionado al Arte Flamenco o a la música clásica, se ha dignado realizar la figura y maestría de este español universal. Este silencio le ha dolido mucho al maestro Luis Maravilla y sé que todavía le sigue do-liendo.\n\nComo dije al promover el homenaje que los onubenses le hicieron a su paisano Manolo de Huelva, lo repito en estos momentos: Luis López Tejera es el decano de la sonanta, ha honrado a Andalucía y en general a España. ¿No sería justo que por la Consejería de Cultura de la Junta de Andalucía, se hiciesen las gestiones necesarias para pagar a nuestro querido maestro lo que tanto le debemos en forma de justo homenaje? ¡Adelante y contad con mi colaboración más decidida!\n\nEn nombre de Luis, muchas gra- cias.",
+    "title": "Enderezando entuertos y enseñando a quienes ignoran",
+    "periodical": "candil",
+    "issue_id": "1992-03",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 625,
+    "article_char_count_full": 3651,
+    "article_char_count_review": 3651,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-03-15-left-alre-de-la-fiesta-gitana",
+    "article_text_for_review": "Dibujos de Miguel Alcalá del libro «Le Flamenco et les gitans», Editorial Filipacchi, París, Francia, reproducidos bajo licencia del autor.\n\nTextos de Manuel Martin Martin\n\nCarmelilla Montoya.—Carmen Montañés Montoya (Sevilla, 1962). Hija de los también sevillanos Manuel el Morito y Carmen Montoya, bailaor y cantaora, se inició como profesional a los siete años de edad formando pareja con su madre, para dos años después integrarse en el grupo La Familia Montoya, conjunto que hizo furor en las décadas de los setenta y ochenta. Asimismo interviro en el espectáculo de teatro flamenco «La Amante», recorrió Europa con la compañía de Curro Vélez y consiguió en 1978 el Premio Nacional de Baile, otorgado por la cátedra de Flamencología de Jerez. Su fuerte potencial es la concentración de sentimientos que comparte en las alegrías y bulerías, destacando por su excepcional sentido del compás y su brío desenfadado y conmovedor.\n\nLa Negra.—Antonia Rodríguez Moreno (Orán, Argelia, 1936). Hija de trianero, Joaquín, y jerezana, Luisa. Aprendió a cantar de su padre, un vendedor de telas que se afincó en Orán. Elaño 1954 se traslada a Sevilla, a la calle Evangelista, en el mismísimo corazón de la cava gitana, donde al año siguiente contraería matrimonio con el bailaor Juan Montoya (Sevilla, 1933), si bien se conocieron en Casablanca, de cuya unión nacerían seis niñas. Gracias a la insistencia de su hija Lole se hizo profesional, formando parte del grupo La Familia Montoya en 1976 e interviniendo en el espectáculo «Casta». La seducción de su metal abarca por bulerías y tangos una gama de sentimientos comprendidos entre un estado de ánimo desbordante y la alegría gítana de vivir.\n\nLole.—Dolores Montoya Rodríguez (Sevilla, 1954). Lole, hermosa mezcla de Isabelita de Jerez, Sara Vaughan y Omkalsoum, posee una voz que es aguamiel y un eco que perfuma de juventud y placer su atmósfera vital. Pese a irrumpir con un valiente ejercicio estilístico de decantación por aquellas influencias orientales inevitable y perceptibles en la estética materna, ha logrado, junto a su marido, Manuel Molina, una novedad expresiva y en medio de los más densos pasajes de su obra, brota la revelación, la «lolemanía», una pista de despegue a partir del cual se inventa una estética propia, una corriente genuinamente sevillana que ha ido más allá de lo previsto por sus creadores. Manuel.—Manuel Molina Jiménez (Ceuta, 1948). «Caballa» como su padre, el famoso Manuel el Encajero, fija su situación ante el flamenco con la poesía sonora de su guitarra, símbolo de la soledad del ser humano enfrentado a su destino. Manuel, profeta y poeta que compone sus presagios en la paz de sus ilusiones, fue primero «Chavalillo del Tardón», después «Smash», luego esposo y compañero de Lole, y siempre fuego ingobernable y libertad sin riendas. Desde la ladera del clasicismo gitano, y en un clima muy cercano a las bulerías para escuchar, alegrías y tangos, Manuel es un compositor que sabe sacar el encanto y el requiebro lírico de lo jondo sin sacrificar su solidez. Todo genialidad y bohemio impenitente, es quien da sentido a la voz cromática de Lole.\n\nJosé de la Tomasa.—José Georgio Gutiérrez (Sevilla, 1951). Educado en la contemplación marinera y tapizando recuerdos orillados en efímeros sonidos, cinceló las formas en las inveteradas fuentes de los Torre e irrumpió en 1973 en Mairena del Alcor. Es un dominador nato de la baraja estilística y, con voz propia, ha conseguido navegar por las aguas del libre pensamiento. Este pensamiento, producto de largas meditaciones ancladas ante la vida y sus adversidades, es el mismo que sellaron, con la sangre de los ecos, heroicos mártires de lo jondo y el que resplandece en quienes sienten fluir la cultura secular por sus venas. El nieto del gran Pepe Torre encuentra en lo gitano el campo natural de sus triunfos y la viva fragua de la fatalidad genética. Que el cuarto pedestal flamenco de la Academia del Disco de Francia sea ocupado por una cantaora de nuestra tierra, nos enaltece el orgullo provincial y nos predispone a bregar con estoicismo contra esa determinada descalificación con que, por parte de algunos, se quiere obsequiar a nuestros artistas. Y lo cierto es que esta tierra jiennense se enorgullece de que dos nativos de ella ocupen sendos pedestales. Sí, uno compartido, pero el otro propio, entero, con rotundidad, con las esencias más finas y hondas del arte flamenco, con la maestría de quien ha tenido que luchar enormemente para ir subiendo peldaño a peldaño, aportando en cada uno de ellos, entrega, fuerza, conocimiento y ese adecuado acrisolamiento que sólo a los capaces les viene dado.",
+    "title": "Alreó de la fiesta gitana",
+    "periodical": "candil",
+    "issue_id": "1992-03",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-18",
+    "page_number": 14,
+    "word_count": 759,
+    "article_char_count_full": 4651,
+    "article_char_count_review": 4651,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-03-18-right-enhorabuena-carmen",
+    "article_text_for_review": "«La luna en el río» ha sido el instrumento para conquistar una meta importantísima en su carrera flamenca. Una carrera que comenzó públicamente al conseguir, con dieciséis años, el premio flamenco del concurso de Radio Madrid. Que se fue\n\ncuajando en las tertulias de «Charlot», en la madrileña calle de Lope de Vega. Que se acrecienta en el espectáculo de Manolo El Sevillano y en la «troupe» de Fosforito. Que adquiere prestancia y señorío con los bailadores Paco Romero y José Molina. Que se va perfeccionando en «Torres Bermejas» junto a Camarón, La Perla de Cádiz, José Mercé o Paco Cepero. Que se internacionaliza por Francia, Italia, Estados Unidos,\n\nJapón, Holanda o Bélgica. Que se prestigia con su participación en «Nuevo Cante Flamenco», al lado de Enrique Morente o José Meneses. Que se reconoce en La Unión al otorgársele el premio de los cantes andaluces. Que se engrandece con su inclusión en dos de las bienales sevillanas celebradas hasta la fecha. Que se intelectualiza en la puesta en escena de «Las arrecogías del Beaterio de Santa María Egipciaca» o «La historia de los Tarantos». Que se consolida con su cuidada discografía y que se incluye en los anales de la historia del flamenco junto a Luis Maravilla, los artífices de la antología de Hispavox y la honda persona de Fernanda de Utrera.\n\nLos aficionados de esta tierra podemos seguir presumiendo gracias a Carmen Linares. Sí, porque el adecuado tratamiento que ejerce de los cantes, la profundidad con que matiza los estilos, la belleza de su melisma flamenco, así como su largueza cantaora, son las contundentes cualidades que podemos esgrimir.\n\nEnhorabuena, Carmen. ■",
+    "title": ";Enhorabuena, Carmen!",
+    "periodical": "candil",
+    "issue_id": "1992-03",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-18",
+    "page_number": 18,
+    "word_count": 272,
+    "article_char_count_full": 1645,
+    "article_char_count_review": 1645,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1992-03-19-left-coplas-y-poemas",
+    "article_text_for_review": "A la memoria de Pastora Pavón y Antonio Mairena (Soleares)\n\nEn la taberna der tiempo yo m'emborraché d'amó para abrasarte en silensio.\n\nPor las viñas de Jeré va yorando una gitana las ducas'e su queré.\n\nLa Luna le dijo ar Só: Arroíyate en Armonte ante la Mare'e Dió.\n\nLos bronces'e la Girarda en noches'e luna nueva repican parmas gitanas.\n\nY ar yegá la Primavera luse la Torre de l'Oro su estirpe de marinera.\n\nDaniel Pineda Novo\n\nEnrique El Mellizo, el cante y la mar\n\nEntre el retrato atardecido de La Caleta a contraluz con la bola roja que fina un hombre oscuridad cantando va sin nadie.\n\nLas pisadas en la arena: un reloj espeso de memoria que va dejando una procesión de barcazas de vacío.\n\nLas huellas del cantaor campanas parecen que van a la espuma. Y la tristura rasgueando la pena.\n\nPor el festón de la orilla el columpio brillante del último beso de la ola levanta la enagua en un revuelo a la bailarina de los milenios.\n\nEl crujido de las olas del otoño cuando se arrima al hondo cante levanta una pirámide negra donde el mar sopla como el órgano de las catedrales.\n\nPor la verita adelante del océano del Barrio de Santa María se ve a Enrique El Mellizo solo solo a cantarle al agua va y a los locos del Manicomio le harán el compás.\n\nJesús Cuesta Arana",
+    "title": "Coplas y poemas",
+    "periodical": "candil",
+    "issue_id": "1992-03",
+    "year": 1992,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 233,
+    "article_char_count_full": 1267,
+    "article_char_count_review": 1267,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

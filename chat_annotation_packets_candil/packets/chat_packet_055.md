@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-15-left-maestro",
+    "article_text_for_review": "Por Arcadio de Larrea\n\nPocas veces me ha ocurrido, pero siempre que he tenido esa impresión, he sentido vivamente una presencia, distinta de la que somos capaces de apreciar otras personas: la de un maestro.\n\nTardé en conocer personalmente a Antonio Mairena, pues, cuando andaba yo con el intento de saber algo del entonces muy misterioso flamenco, Antonio estaba fuera y lejos de España. Así, pudo suceder que mi primer conocimiento personal se diera en Málaga y en las segundas Semanas de Estudios Flamencos.\n\nPoco bastó para revelarme la calidad del artista. Tan es así que, saliéndome de los cauces corrientes, resolví que mi intervención había de ser algo distinto de lo programado.\n\nSe había propuesto como tema la soleá. Y sobre ella se volcó tanto el lirismo como la real ignorancia, eso sí; adobada a las veces con listas más o menos nutridas de quienes se aseguraba habían cantado bien las soleares. Se comprenderá que ese no fuera mi camino.\n\nY propuse que, en lugar de decir una ponencia más, mi intervención consistiera en un diálogo con Antonio. Este, no sólo aceptó inmediatamente, sino tuvo la gentileza de posponer un viaje a Jerez para asegurar su presencia. No será menester afirmar que de la conversación con el artista brotó un caudal de enseñanzas sin parangón posible con las de una ponencia más o menos alaborada.\n\nAquella lección no fue la única. Todas las ocasiones que se me han presentado, y algunas buscadas en mis viajes a Sevilla, han sido aprovechadas para seguir aprendiendo de quien, si cantando ofrece mucho, tanto o más regala conversando. De estas conversaciones recuerdo particularmente la que tuvimos sobre Manuel Torre y la afirmación de que el artista jerezano era un excelente intérprete de los cantes de Levante, confirmando algo que me había asegurado antes Manolo de Badajoz.\n\nTan importante creo este magisterio que insistentemente urgí a Antonio para que fuera recogiendo sus vivencias en un registro magnetofónico de donde pudieran pasar a libro. En parte ha cumplido este deseo; pero sólo en parte. Me atrevo a esperar mucho más de su saber y de su sentido de la responsabilidad, quizá el motor más eficaz de toda su vida profesional y artística, la del que con verdad y con la veneración que merece quien desempeña la nobilísima misión de enseñar, ha de ser llamado maestro. Y, como tal, buscador infatigable de la verdad y de la belleza.",
+    "title": "Maestro",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 402,
+    "article_char_count_full": 2388,
+    "article_char_count_review": 2388,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-15-right-irene-cruz-serrano",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor M. a Adela Díaz Párraga\n\nFigúrense ustedes, la maravilla blanca de Mairena del Alcor. ¡Mairena del Alcor!, ¿verdad que es un nombre sonoro y decidor? Sí, señores, y, además, el lugar es gracioso y bonito como mocita postinera. Mairena es cantaora por derecho. Mairena se viste de lunares y enreda en sus volantes a nativos y forasteros, y se arranca por sevillanas, que es lo suyo y en lo que tiene tradición. En bodas y bautizos la gente canta y baila sevillanas, hasta que amenacen los claros del día. Y, a veces, siguen hasta enristrar con el otro. ¡Qué digo en bodas y bautizos! Y sin más. Simplemente cuando la tarde huele a claveles y albahaca, cuando las noches se columpian en los grillos del verano, se organizaban en las calles y patios cada festejo que ardía hasta el aire. Bueno,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nón. En bodas y bautizos la gente canta y baila sevillanas, hasta que amenacen los claros del día. Y, a veces, siguen hasta enristrar con el otro. ¡Qué digo en bodas y bautizos! Y sin más. Simplemente cuando la tarde huele a claveles y albahaca, cuando las noches se columpian en los grillos del verano, se organizaban en las calles y patios cada festejo que ardía hasta el aire. Bueno, pues en estos andurriales se aposentó hace montones de años una familia gitana. Eran la tía María y el tío Manuel Pitito, que hicieron su casa en la calle Alta. Y tuvieron una hija, guapa como la que más, la Gloria, que bailaba como si tuviera duendes en los pies. Y se casó con Juan Cruz Vargas, zapatero acomodado, con trabajo que le sobraba y muy buen pasar. Y que cuando se arrancaba en un cante, andaban sueltos los más puros melos gitanos. Y claro, de este maridaje, ya me dirán ustedes qué iba a salir. Carmela, Diego, Anselmo e Irene. Sí, señores, fue la Mairena de finales del siglo XIX la que vio nacer a Irene Cruz Serrano, la mocita guapa como una clavellina, y que cantaba como alondra mañanera. ¡Menuda cantaora era la chiquilla! Lástima que no se dedicara al cante como profesional, pero en su casa no había apuros, e Irene sólo se lució en las fiestas familiares.\n\n[ENDING CONTEXT]\n\nCruz Serra no, una mujer para el romance.\n\nMedalla de Plata en el X Salón Internacional de Bruselas\n\nFabricación de toda clase de plantillas ortopédicas en conglomerado de caucho y corcho, con extensa gama de piezas accesorias para confeccionar y adaptar a las mismas.\n\n(Arcos internos o longitudinales. Arcos transversos. Cuñas pronadoras y supinadoras. Herraduras, etc.)\n\nLas plantillas y piezas accesorias, se hacen en tres consistencias:\n\nBLANDAS, DURAS Y SEMIDURAS.\n\nTambién fabricamos según diseño Técnico.\n\nFábrica y oficinas: Arrastradero, 6 y 8 - Teléfonos 22 33 92 y 22 51 12 - J A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Mujeres para el romance: Irene Cruz Serrano",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-16",
+    "page_number": 15,
+    "word_count": 1105,
+    "article_char_count_full": 6085,
+    "article_char_count_review": 2886,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-09-16-right-la-creacion-en-mairena",
+    "article_text_for_review": "Una faceta magistral\n\nPor Paco Vallecillo\n\nClima, como la nada. Recrear es, en su primera acepción gramatical, crear o producir de nuevo alguna cosa. La creación del Cante pertenece al fondo insondable de la historia ignota, porque —lo hemos escrito en otras ocasiones— el Cante no pudo nacer por generación espontánea, ni merced a la idea de alguien determinado. El Cante hubo de tener su origen en un proceso evolutivo, como la propia raza humana. Por eso no se puede hablar de creadores del Cante Flamenco, o del Cante Andaluz, o del Cante Gitano-Andaluz, según se quiera llamarlo. Crear y recrear, pues, viene a ser igual en este caso, tal como la vida misma —y esto es apenas una irrupción acaso atrevida y posiblemente pedestre en el campo de la filosofía—, es decir, un incesante y permanente crear sobre lo ya creado. Por eso será más propio hablar de recreadores del Cante o incluso y tal vez preferentemente, aunque inusual, de creativos. Y aquí estamos, en el caso de Antonio Mairena, ante quien, recreando, ha creado no sólo formas y matices especiales, sino estilos propiamente dichos, todo ello en una medida inigualada en toda la historia del Flamenco. Y Antonio Mairena lo ha creado gracias y por encima o precisamente al unísono de sus grandes capacidades y aptitudes, de un modo natural, simple, llano y espontáneo merced a su enorme personalidad refleja. No se puede crear sin personalidad, porque la creación, la recreación, se consigue de ese modo, incluso sin proponérselo, ya que la\n\nEl Cante flamenco —allá cada uno con el adjetivo que más le guste— estuvo siempre y salvo muy contadas excepciones, encorsetado en unos rígidos cánones: la imitación, la capacidad mimética incluso en los matices de voz, constituía la credencial más valiosa que cada cantaor podía presentar como certificado de autenticidad. Porque todos entendían que\n\npersonalidad como rasgo definitorio y diferencial se impone, dominándolas, a todas las acciones del ser humano.\n\nel purismo o la pureza estaban en cantar como Fulano o Zetano. Un corsé, en suma, que frustraba toda posibilidad de aportaciones personales. Los puristas de entonces solían, por ejemplo, censurar: «No, el último tercio lleva dos ayes en vez de uno y, además, no se alargaba tanto»... En definitiva, no había recreación, sino reproducción, y así en un principio quien no tuviera la voz afiliá no podía ser buen cantaor, hasta que Manuel impuso la voz natural y entonces vino una nueva si que más racional forma-voz cantaora que permanece ya de modo exclusivo y excluyente.\n\nPara demostrar la obra creativa de Antonio Mairena tenemos ejemplos tan luminosos como su Toná y Livia-\n\nna, fruto de un verdadero trabajo de arqueología, siempre con su impronta, con su personal aportación y matización que de un cante serrano, la Liviana, apenas engrandecido desde su origen de cante de faena, de cante campero —del campo andaluz— ha pasado a ser una expresión de carácter excepcionalmente jondo. Tal su versión de los Tangos atribuidos al Piyayo y así sus versiones dentro de un mismo estilo de Cante: las distintas variaciones, por ejemplo, de la Soleá de Frijones o de los Tangos comúnmente llamados Canasteros y su capacidad imparangonable de poner al día estilos que sólo a través de su genio han llegado al conocimiento del gran público, desempolvando nombres tan escasamente conocidos como los de José Iyanda, Teresita\n\nMazzantini, La Roezna, y los diversos estilos de El Fillo y El Nitri o cuanas como las de Triana, de Jerez y los Puertos, y tantos más.\n\nCuando se trata de dejar constancia de la Obra del Cantaor de los Alcores, hay que colocar en primer término, como su característica fundamental, su aportación al enriquecimiento del acervo común del Cante. Algún autor muy significante ha censurado —y no le falta razón— la actitud de Mairena al etiquetar todas sus creaciones-recreaciones con el nombre del cantaor del que tal o cual cante o estilo proviene. Esto supone, en juicio del crítico en cuestión,· establecer una dificultad para la creatividad futura, una especie de muro infranqueable para las nuevas generaciones. Parece claro que Antonio Mairena ha podido poner en circulación esos cantes con su propia etiqueta, porque entre el origen remoto y su realidad expresiva ha mediado un abismo. Cuando tan reiteradamente no lo ha hecho, ¿sólo a excesiva modestia cabe atribuirlo? Francamente, no nos atrevemos a dar una respuesta categorica a la du-da que se plantea sobre la licitud de utilizar para sí mismo unos modos expresivos que constituyen la recreación no solamente de las formas externas, sino incluso de la propia sustancia original. Lo cierto es que para uso de las nuevas y futuras generaciones de cantaores, para disfrute de la afición, ahí está la imagen más fecunda de Antonio Mairena: la creación.\n\nREPUESTOS Y MATERIAL DEPORTIVO\n\nMillán de Priego, 21 Teléfono 22 66 55\n\n$ B H $\n\nJ A E N",
+    "title": "La creación en Mairena",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 812,
+    "article_char_count_full": 4889,
+    "article_char_count_review": 4889,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-17-right-las-siguriyas-de-manuel-torres",
+    "article_text_for_review": "Viejas páginas flamencas\n\nPor Antonio Díaz-Cañabate\n\nPor los años de mil novecientos veintitantos. Media noche. Acabamos de entrar en la estancia de Ignacio Sánchez Mejías, un par de franceses amigos suyos, Manuel Torres, otro cantar y una bailaora y un guitarrista. Ibamos a escuchar al famoso gitano Manuel Torres. Ignacio, gran admirador suyo, nos había estado ponderando su arte durante toda la cena. «Es algo que se estremece. Es algo único. Le oyes una siguiriya y ya no te importa morirte. Ya no puede uno encontrar en el mundo una belleza que iguale al cante de Manuel Torres». El cual se sentó en un rincón y empezó a beber vino, callado, como ausente de la reunión. El otro cantaor, cantó. La bailaora, bailó. Manuel Torre ni miraba la danza ni escuhaba el cante. Ignacio nos informa, «Hay que dejarle. Es un gitano puro». Y lo dejamos. El otro cantar, cantaba. La bailaora, bailaba. Nosotros comíamos jamón y pescadiño frito y bebíamos manzanilla. Las tres de la madrugada. Manuel Torres pidió aguardiente. Ignacio nos dijo: «Buena señal. Dentro de poco empezará a cantar». Manuel Torres se bebería sus treinta copas de aguardiente. Empezó... ¿a cantar? No. A hablar. Habló de galgos. Hasta las cinco de la mañana se estuvo hablando de galgos sin parar. Los franceses se durmieron borrachos perdidos. Ignacio y yo, a medios pelos, indignábamos a Manuel Torres con las herejías que decíamos sobre los galgos. Entraron en la habitación las claras del día. Bajito le pregunté a Sánchez Mejías «¿Tú crees que\n\ncantará?» Y me contestó muy compungido: «Me temo que no. Cuando la toma con los galgos, a lo mejor no canta hasta las dos de la tarde». Me espanté. «Pero, ¿nos vamos a estar aquí hasta las dos de la tarde». Ignacio, con toda naturalidad, repuso: «¡Ah, claro! Tú no sabes lo que es una siguiriya cantada por este hombre». Lo supe exactamente a las nueve y media de la mañana. De pronto, Manuel Torres empezó a cantar. Realmente era algo impresionante. Los dos franceses despertaron. Los otros artistas oían como en éxtasis. Ignacio Sánchez Mejías, aquel hombre tan hombre, lloraba. Yo tenía la carne de gallina. Recorrían mis nervios el escalofrío de la más intensa emoción.\n\nHan pasado muchos años de aquellas horas inolvidables pasadas en el cuarto de un colmao sevillano. Ja- Han pasado muchos años. Estoy en el salón de la Casa de la Cultura de Málaga, que rebosa de gente. Las ocho y media de la noche. Empieza la cuarta lección de la Semana de Estudios Flamencos. Habla Ricardo Molina, poeta y escritor cordobés. Buen poeta, del que conozco sus «Elegías de Sandua». Ricardo Molina comienza a hablar con llaneza. No es un conferenciante. No es un orador. Es un contentulio de una pe-\n\nmás volví a escuchar a Manuel Torres. Nunca artista ninguno logró emocionarme como lo consiguió Manuel Torres. Escuché varias veces a don Antonio Chacón. Muchas más a Pastora Pavón. Algunas a su hermano Tomás. A Cepero. A Aurelio el de Cádiz, y otros cantaores de tronío. Ninguno me produjo la honda, la «jonda» emoción del cante por siguirias de Manuel Torres.\n\nña muy numerosa que perora acerca de la formación de los cantes primivos. Don José Ortega y Gasset decía que los españoles han aprendido todo lo que saben en las tertulias. En esta gratísima tertulia malagueña, esta noche he aprendido de flamenco más que en toda mi vida. Ricardo Molina habla con poco empaque y mucha enjundia. De muchas tertulias he formado parte. En ninguna me encontré a nadie que hablara con tanta seguridad, conocimiento y galanura como Ricardo Molina. No tengo el honor de conocerle personalmente, pero desde aquí le envío mi gratitud. Gracias, Ricardo Molina. Por usted he sabido que las palmas, ese acompañamiento tan saleroso para ciertos cantes, ya las conocían los\n\nantiguos egipcios. Que según don Manuel de Falla hay una analogía entre los cantes hindúes y el flamenco. Que tal vez exista en él una influencia judía. Que desde el siglo XIII al XV persiste en España el influjo de la música arábigo-andaluza. Que en el XV entran en la Península los gitanos, por el Pirineo. Que el pueblo que, como el gitano, forja los metales es mago y dominan misteriosamente el cante y el baile. Que los gitanos que arribaron a Andalucía se compenetraron con su ambiente, quizá por la persistencia en aquella tierra de los moriscos. Que del XVI al XVIII no se habla de flamenco. Es en tiempos de Carlos III cuando se inicia. Que en ninguna parte del mundo los gitanos cantan flamenco.\n\nSólo en España. Que los cantes flamencos primitivos son la «toná», la «siguirilla» y los romances. Que el primer cantaor del que se tiene noticias se llamó Luis el de la Juliana. Luego «El Planeta», maestro de «El Fillo». Y Ricardo Molina hace una pausa y nos anuncia que Antonio Mairena nos va a cantar una «toná» sin guitarra, porque la aparición de la guitarra como acompañamiento del cante es muy posterior. Antonio Mairena no parece un cantaor. Su calva, su aspecto, es el de un buen burgués, jefe de Negociado. Pero, amigos, ¿cómo canta mi insigne tocayo! ¿Con qué pureza, con qué expresión, con qué refinado gusto! Nos embelesa. Nos conmueve. ¿Prodigio del flamenco puro! Ricardo Molina dice que conoce más de cincuenta siguirias diferentes. Y uno se queda asombrado. ¿Cualquiera aprende flamenco así como así! Antonio Mairena va a cantar la sola siguiriya que se conoce de «el Planeta», y luego unas viejas trianeras. Me recordó a Manuel Torres, no les digo a ustedes más. El otro cante fundamental es «la soleá», muy tardía, que no surge hasta mediados del XIX, siendo «la Andonda», gitana de Triana, la mejor cantaora de esa época. Y oímos a Antonio Mairena una «soleá». Y este cante se nos ahonda, nos llega a lo hondo, a la hondura del sentimiento, y nos la llevamos en el alma por las calles de Málaga, donde ya impera la soledad de la noche, tan maravillosa como el cante flamenco.\n\nSELECCION EN TEJIDOS\n\nNavas de Tolosa, 10 (Galería) - Teléf. 220045 - J A E N",
+    "title": "Las siguiriyas de Manuel Torres",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1025,
+    "article_char_count_full": 5944,
+    "article_char_count_review": 5944,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-18-right-antonio-mairena-y-ricardo-molina",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«En esta casa creó su más importante obra literaria y flamenca el eximio poeta Ricardo Molina Tenor. Su colaborador Antonio Mairena, en sus bodas de oro con el cante, le dedica el presente recuerdo. Córdoba, diciembre de 1979».\n\nFue en el frío atardecer de aquel 1.º de diciembre cuando Antonio Mairena, por deferencia del alcalde de Córdoba, quien le cedió tal honor, descubrió la preciosa placa realizada por el pintor Juan Valdés y que desde entonces figura en la casa número 26 de la calle Coronel Cascajo, conteniendo en sus doce azulejos trianeros la leyenda anteriormente transcrita, junto con la imagen del ilustre pontanés, rodeada de una orla con los escudos de Córdoba, Sevilla y Mairena.\n\nPor Angel Marín\n\nPoco antes, en la cercana Plaza del Potro, se había llevado a cabo un acto\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"voz\"]\n\nada de una orla con los escudos de Córdoba, Sevilla y Mairena. Por Angel Marín Poco antes, en la cercana Plaza del Potro, se había llevado a cabo un acto poético en homenaje al fundador de «Cántico», presentado por Angel Abellán, quien evocó la figura y significación del llorado poeta y leyó varios escritos de adhesión al acto, para dar paso a la guitarra de Manuel Cano. Fue luego Carlos Clementson quien rememoró los versos de Ricardo y prestó voz a las palabras enviadas por el co-fundador de «Cántico» y poeta Juan Bernier, para concluir con la lectura de un poema que había dedicado al homenajeado. Intervino posteriormente Francisco Vallecillo Pecino, antes de que Mercedes Castro y Manuel de César recitaran, respectivamente, un soneto de Molina, homenaje a Mairena, y un poema de Alberto García Ulecia. Participaron igualmente José Márquez Cabello, Carlos Rivera y Francisco Carrasco, así como Sebastián Cuevas, quien dio lectura a unos versos de Pablo García Baena, otro de los fundadores de «Cántico». Ahora quiero recordar otras cosas. En primer lugar, la influencia decisiva de los Concursos Nacionales de Arte Flamenco de Córdoba que, por iniciativa del alcalde Cruz Conde, fueron creados, organizados y asesorados, en 1956, por Ricardo Molina y que han constituido un hi- En la cervantina plaza, rodeados de autoridades, artistas, poetas, representaciones culturales y aficionados al flamenco, me encontraba emocionado recordando a Ricardo Molina cuando acudía, casi diariamente, al desaparecido «Mesón de la Judería» —propiedad de mi suegro—, con su insepa\n\n[ENDING CONTEXT]\n\nya que él contribuyó en gran medida a clarificar y dignificar este nuestro mundo».\n\nEl aire bajado de la sierra se llevó el último suspiro de Ricardo, el 23 de enero de 1968. He querido recoger, fundamentalmente, el sentir de Antonio Mairena hacia su electo amigo, pero al recordar brevemente algunos hechos trascendentes de la fecunda y primordial labor del admirado cantaor y del llorado poeta, me sobrecojo con una emoción profunda de respeto y veneración, puesto que sus voces supieron transmitir la esencia del sublime arte de nuestra eterna Andalucía y estas voces ya no callaron jamás.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Antonio Mairena y Ricardo Molina",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 1429,
+    "article_char_count_full": 8843,
+    "article_char_count_review": 3185,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "voz"
+      }
+    ]
+  }
+]
+```

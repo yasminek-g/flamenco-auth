@@ -1,0 +1,178 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-01-13-left-jorge-camacho",
+    "article_text_for_review": "Luis Caballero\n\n«E l trópico tiene muchas luces. Rompe los ojos. El día blanco no puede mirarse. La apariencia, luz fácil, paisaje que reverbera, son una tumba de pintores. La Habana, ciudad de Jorge Camacho, tiene esa luz extraña que rige la intuición poética de Cernuda y André Bretón. Jorge Camacho aporta una nueva luz a la pintura cubana. Un nuevo color. Un nuevo dibujo. Descubre la luz sudada. Implacable. Cambia el cielo de lugar. Da a las estrellas que parecen tocarse color de mediodía. Camacho es un trágico. Sus esqueletos bailan extrañas danzas. La pintura de Camacho es un amor furioso. Ceniza viva».\n\nJorge Camacho esqueletiza el sentimiento que destilan sus pinceles mientras busca un poema sonoro tan libre de esquemas como el viento en la rama. Son puñales que hieren la necesidad espiritual de hallar, sufrir y refugiarse en una desnudez musical tan lúbrica y pura como la luna que bajó a la fragua. Nostalgia de una tristeza antigua cantada para adentro, con los ojos cerrados, sin otra perspectiva que la hondura sin luz de lo atávico. Retrospectiva histórica tan sólo escrita en la voz de quien la canta. «De la tierra, esa música viene de la tierra», de cortezas superpuestas, del musgo milenario que gime en la humedad del abandono. «Pues, ¿qué es el cante? ¿Qué es una siguiriya / ¿No es algo roto cuyos pedazos aúllan / y riegan de sangre oscura el tabíque de la reunión?».\n\n¿Qué busca, qué encuentra un pintor de vértebras y tibias con ojos pensativos, de líneas radiográficas quemadas de color, subrealidades cósmicas resuelta en osamentas? ¿Qué busca y qué encuentra después de Margarita, París y Terciopelo? Jorge Camacho amanece cada primavera con los pies hundidos en las arenas de las marismas del sur y los oídos del alma traspasados por todas las voces del cante y de la amistad andaluza. Años —ya muchos— buscando cada día y cada día encontrando nuevos misterios por entre el grito subreal de sus pinceles cubanos y el gemido solo del cante andaluz. Ubicó su sed de sur sobre y bajo una onubense versión que canta sobre los pinos. Temblorosa paz de luna y uva mientras Garbosodormita aburguesado en el corral\n\ny cien siglos en el eco de Antonio el de Mairena taladran un silencio cruzado de obispas. «Luz de ayer y mañana. Norma de ayer encontrada». Jorge Camacho es un andaluz cubano que encontró a España deshojando una maravillosa Margarita de Madrid y al universo en la filosofía macilenta de su pintura y la profunda «pena de cauce oculto y madrugada remota» del cante jondo. Pinceles y guitarras, plásticos argumentos, el cante vivo en la voz. Subrealismo paralelo: «En el aire claroscuro, en la luz nocturna, nace la ceremonia secreta: una danza ancestral y libre, dibuja su ritmo, cintura de rumba, aterrorizando a los héroes que beben sangre humana». «El espacio asesinado en la luz del día, poetiza la noche, sol misterioso». «El campo / de olivos / se abre y se cierra / como un abanico».\n\nGoya, Falla, Charlot, Picasso, Juan Ramón, Zuloaga, los Machado, Pérez de Ayala, Fernando de los Ríos, Turina, Rusinol, Pedrell, Lorca, Mompou... y tantos y tantos más de ayer y de hoy, y entre ellos Camacho, dejaron y están definitivamente dejando claro el desconocimiento de causa y frivolidad con que un sector del 98 y la cursilería de turno vio el flamenco.\n\nLoor a esa estirpe de sensibilidades superiores, de aristócratas del sentimiento, de apóstoles del arte que desde su autenticidad genial avalan y rubrican los más altos valores musicales del pueblo andaluz. El flamenco, expresión espiritual con categoría de arte ya sin fronteras.\n\nJorge y Margarita Camacho viven el flamenco como la pintura y el cielo de Almonte. Andalucía os lo agradece y os condecora con su sol cargado de coplas, de duende y de arte.",
+    "title": "Jorge Camacho",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 639,
+    "article_char_count_full": 3756,
+    "article_char_count_review": 3756,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-01-13-right-antonia-la-negra",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nRamón Porras\n\n—Antonia, anoche en TV escuchamos que tú habías nacido en Tánger, cuando los datos que nosotros tenemos dicen que nacistes en Orán (Argelia).\n\n—Efectivamente, yo nací en Orán, porque mi padre fue vendeor de telas y se fue a Argelia y allí nací yo.\n\n—Lógicamente, tu arte no te vendrá de Argelia...\n\n—Yo lo que canto lo aprendí de mi padre, que también cantaba. Mi padre era de Triana, y toa mi gente, mis padres, mis abuelos, bisabuelos, vienen de Sevilla, Jerez, Utrera y Ceuta.\n\n—¿Desde cuándo cantas?\n\n—Yo vengo cantando desde que tenía diez años, pero en Casablanca. Yo nunca había escuchao a nadie cantar, na más que a mi padre que era de Triana. Mi padre se levantaba mu temprano y ya estaba cantando, hasta las diez de la mañana que se iba al mercao. Yo hacía algunos cantecitos\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"escuch\"]\n\nTriana, y toa mi gente, mis padres, mis abuelos, bisabuelos, vienen de Sevilla, Jerez, Utrera y Ceuta. —¿Desde cuándo cantas? —Yo vengo cantando desde que tenía diez años, pero en Casablanca. Yo nunca había escuchao a nadie cantar, na más que a mi padre que era de Triana. Mi padre se levantaba mu temprano y ya estaba cantando, hasta las diez de la mañana que se iba al mercao. Yo hacía algunos cantecitos y mi padre le decía a mi madre: ¡Luisa, escucha a esta niña, escucha ese tercio! Algunas veces llegaba a la casa con unas copitas de más con los amigos y le hacía a mi madre que me despertara pa que yo les cantara. A mí me daba mucho miedo cantar delante de él, porque como él sabía tanto de cante, pues a mí me daba miedo a equivocarme. —¿Tu padre te refería algunos cantaores que él hubiera escuchado? —Sí, mi padre me refería mucho a Tomás Pavón, era el que más le gustaba, decía que era el mejor. A Manuel Torre también. Claro, él, como era de Sevilla, pues los había escuchado a tos, pero yo no escuché a nadie. Sólo una vez escuché a Pastora que fue a cantar a Casablanca, cuando yo tenía quince años, que, por cierto, Juan, mi marido, iba con ella bailando. Lo que pasa es que yo nació gustándome el cante, pero lo poquito que sé lo aprendí aquí; yo no he estado en fiesta con Mairena ni con nadie. Sólo estuve un poquillo con Caracol porque me escuchó cuando yo tenía 18 años. Pero, vamos, decir que he estado en fiestas pa escuchar a unos y otros no, porque yo era una madre de mi casa y siempre he estado con mis niñas, con mis seis niñas, salvo alguna fiestecita familiar que otra. Yo, cuando más me di a conocer fue cuando formamos el grupo Familia Montoya, hace catorce años. Pero quien más me metió a mí en esto del cante fue mi Lole, que me dijo: ¡Mamá, tú sabes cantar y tienes que cantar, la gente tiene que escucharte! Y por ahí empecé. Interviene Juan Montoya. El Grupo Los Montoyas, en principio, lo formaban mi hermana, mi sobrina, mi cuñao y ella, con dos guitarristas. Yo no estaba con ellos, por entonces\n\n[EVIDENCE WINDOW 2 | retrieval_hint=COMM_03 | trigger=\"público\"]\n\na cual y se disolvió el grupo. —¿Cuántos discos grabó el Grupo Los Montoyas? Juan. Grabamos dos discos fenómenos, que por cierto uno está en América, en San Francisco, que desde que salió que no sé cuántos años hace, está pegando cañas y los americanos están locos con ese dis- co, pero no sólo en San Francisco, sino en otras partes, incluso en España lo hay. Antonia. Si te digo la verdad, a mí no me gusta mucho grabar, me gusta más cantar en público. Aunque ahora voy a grabar un disquito, porque, claro, tienes que darte a conocer a otras gentes. -¿Con qué cante te sientes más a gusto? Antonia. Yo, con las bulerías; en las bulerías es donde más a gusto me encuentro. —¿Tu padre también cantaba bulerías? Antonia. Sí, pero cantaba como se cantaba antes, más ligero. Juan. Eso hace cuarenta años. El cante y la guitarra ha progresao, el baile está aonde mismo, antes las bulerías eran al golpe.\n\n[EVIDENCE WINDOW 3 | retrieval_hint=PED_03 | trigger=\"academia\"]\n\nbién hay quien las canta muy bonitas, aunque, como he dicho, antes eran al golpe. Pero que hoy, hay quien canta muy bien por bulerías y me gustan más que las de antes. Angel García. Entonces, las bulerías al golpe, las de cuatro versos, ¿es que no te gustan? Juan. Esa es la mejor del mundo. Hace cuarenta años no existía televisión, si hubiera existido se hubiera visto a un Tomás Pavón, a un Arturo Pavón, Curro Vélez, yo, se hubiera visto en la academia a Tomás cantando por siguiriyes y yo bailando. La guitarra existía ya, pero lo difícil pa cantar es esto (compás con los nudillos sobre la mesa), aquí, sin guitarra y sin na, que son las bulerías de los gitanos, ahí es donde hay que morir. Hombre, la guitarra es preciosa y está hecha pa eso, pero... —¿Las bulerías las aprendistes de tu padre o fue con posterioridad? Antonia. Las bulerías que yo canto son mías, mi padre cantaba más ligero. —¿C\n\n[ENDING CONTEXT]\n\ncuando la edad pasa, amigo...\n\nAntonia. Mira, con una cosita que diga Fernanda vale más to.\n\nJuan. Hoy hay una serie de gente que quieren saber de flamenco que no saben, algunos saben flamenco de libro, y eso no es así; el flamenco hay que vivirlo. Este hombre, Mairena, lo ha vivió, lo ha estudioa, se ha gastao mucho dinero en escuchar a unos y a otros y aprendió mucho, aunque él sabía cantar desde que su madre lo trajo al mundo. Pero que hoy, hay mucha gente que no saben de la misa la media.\n\nO'Donnell, 3, 4.° Piso Teléfonos (954) 22 20 58 y 21 69 20 SEVILLA\n\nParticular: Teléfono 27 80 78\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Antonia «La Negra»",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-15",
+    "page_number": 13,
+    "word_count": 2513,
+    "article_char_count_full": 13510,
+    "article_char_count_review": 5598,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "escuch"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "COMM_03",
+        "family": "COMM",
+        "trigger": "público"
+      },
+      {
+        "window": 3,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "academia"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-01-15-right-de-desp-naperros-p-arriba",
+    "article_text_for_review": "Paco Arana\n\n¡Cómo reluce! ¡La gran calle de Alcalá, cómo reluce; cuando suben y bajan los andaluces! ¡Vámonos!, ¡vámonos!, al «Café de la Unión», donde paran Curro Cúchares, el Tato y Juan León.\n\n(Popular)\n\nQue nadie piense que el cante por caracoles tiene su origen en Madrid por las alusiones tan claras que en sus letras se hacen de la Villa y Corte, tales como las calles de Atocha y Alcalá y las fuentes de la Alcachofa y Cibeles... Sería más preciso pensar, que el cante que al parecer iniciara lentamente José el de Sanlúcar y con posterioridad metiera en compás Paco El Gandul, su creador, tuvo excelente acogida en la capital de España, sin por ello negar su procedencia lógicamente sureña.\n\nQuien esto escribe, nacido y «criao» en la estepa castellana, hace mucho tiempo que se quedó «prendao» de Andalucía a través de su arte y su cultura flamenca, y también, por qué no, de los tópicos y típicos que tanto la enriquecen; «prendao» de sus paisajes de cal y olivares, del colorido de sus fiestas, de sus costumbres y de ese sol que regala alegría de vivir y gracia sin par.\n\nNo es extraño que cualquier andaluz emigrado sienta nostalgia de su patria chica y de las señas de identidad artísticas y culturales que lo acompañan y definen. No es extraño que los «tarantos» que salieron de Almería para trabajar en las minas de La Unión, hicieran de las madrugás» un cante tan flamenco como lo son hoy la taranta o el fandango minero. No es extraño que los aficionados de verdad se reúnan en ese «Café de la Unión» que posiblemente exista en cada ciudad de España grande o chica, para cobijo y regocijo de los flamencos andaluces que sienten su arte y sus costumbres. No es extraño que donde haya un pequeño núcleo de nostálgicos de su cante, su baile, sus aceitunas «aliñás», su «pescaíto» y su vino fino, se creen peñas flamencas, casas de Andalucía y reuniones de cabales.\n\nAhora intentaré hacer un poco de historia de Despeñaperros p'arriba; la que me cuentan mis mayores y la que yo me sé. Me cuenta don José María Zugazaga, académico de la Institución Fernández, que fuera secretario particular de don Manuel Machado, aunque antepone su condición de amigo a los títulos citados, que este sevillano con «aire de guitarra florecido de jazmines», vivió en Burgos, mi ciudad natal, los tres tristes años de la guerra española, donde ejerció de andaluz, buscando sus raíces en los ambientes flamencos de El Colmao de la Moneda y El Patillas, hoy anclados en el tiempo y rememorando aquella época en la que el poeta hacía patria degustando la manzanilla de Sanlúcar, que él definió como «un poema divino», y escuchando la risa y el llanto de las guitarras y los cantares de su tierra.\n\nAllí, en el Bar Patillas, ateneo de artistas y bohemios, le hizo un retrato a plumilla su amigo el pintor Jesús Bernal, al que correspondió don Manuel con un autógrafo dedicado que se me antoja trisonoro por lo que contiene de consejo, sentencia y copla:\n\nConsidera compañero, que en el mundo hay bueno y malo pero más malo que bueno.\n\nEl pueblo gitano también tuvo su protagonismo flamenco por estos pagos castellanos. Junto al arco mudéjar de San Esteban y al solano de la muralla de la ciudad, se asentaron varias familias calés que aún celebran sus fiestas por tangos y bulerías y cantan en sus bodas las alboreás del «praíto verde».\n\nLas bodas entre los clanes gitanos, Periquenes, Masones, Jiménez y Pequeñarras, han traído una nueva generación gitana que no olvida el legado artístico que dejó prendido El Muñeco, que fue un torrente bailando por bulerías, y la voz rajada y honda de los hijos de El Masón, Antonio y El Tano.\n\nHasta aquí lo que me cuentan mis mayores, payos y gitanos. Mi aportación personal procede de la vivencia que me proporciona mi guitarra viajera y buena aficionada, gracias a la cual he podido observar y comprobar lo que anteriormente citaba como «no es extraño».\n\nHe visto, pues, que de Despeñaperros p'arriba también se vive el flamenco con la misma intensidad que en el sur, pero por supuesto con la gran carga emocional que supone la nostalgia de quien lo interpreta y quien lo percibe. En el Centro Andaluz El Séneca, de Vitoria, he sentido el cante de Paco Guerrero, de Diego y de Raimundo, que organiza festivales y concursos. En la Casa de Andalucía de Logroño he visto bailar a Charo Alvarez al compás embrujado de la guitarra de su padre Aurelio... Uno, dos y tres; uno, dos y tres. ¡Qué bonito!\n\nValladolid, de tradición flamenca, con su peña El Quejío, y ese Café de Diego, centro de reunión de cabales. Zamora, Toro, Salamanca, Medina del Campo... ¡Vámonos! a cualquier punto de esta otra parte de España, que encontraremos aficionados a este arte, puramente andaluz y universalmente reconocido, querido y envidiado.\n\nNo quiero pasar por alto la labor que hace la Asociación Andaluza Hijos de Almachar de Barakaldo, con el Concurso Internacional de Letras Flamencas que iniciara con gran acierto Mariely y continúa en esa aventura flamenca con un premio especial a la mejor siguiriya que entrega el cantaor José de la Pica. En las tres ediciones de este Concurso han sido premiados los letristas: José Luis Buendía, Agustín Cáceres, Antonio Rincón, Daniel Pineda, José Cenizo y este humilde aprendiz de cantaor de coplas nuevas que no se resigna a finalizar este artículo sin incluir esta copla, que define el pensamiento de algunos andaluces que tienen ya su segunda generación en tierra extraña:\n\nLa tierra donde nació y la tierra donde vivo, las dos me dan el castigo me están haciendo sufrir con su desprecio y su olvido.",
+    "title": "De Despeñaperros p'arriba",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "15-15",
+    "page_number": 15,
+    "word_count": 964,
+    "article_char_count_full": 5562,
+    "article_char_count_review": 5562,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-01-16-left-interrogantes-dimes-y-diretes-so",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nM. Yerga Lancharro\n\nProbablemente serán muchos los aficionados que desconozcan la auténtica verdad sobre estas tres figuras legendarias del cante flamenco.\n\nY es triste que esto sea así a pesar de que muchos acuden a los libros que, sobre el tema, inundan nuestra geografía cantaora, con el único y sano deseo de salir de su ignorancia.\n\nPero he aquí, que lo que debiera ser recto magisterio, sólo sirve para crear confusión y equivocar a quien únicamente deseaba conocer la verdad.\n\nEn este caso están todos aquellos aficionados que hayan leído el libro de Ricardo Molina Tenor, asesorado, en la parte artística, por aquel malogrado cantaor que fue Antonio Mairena.\n\nEste libro, desde mi óptica personal, está plagado de inexactitudes al haberse escrito únicamente a base de informaciones orales\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"arte\"]\n\nllos aficionados que hayan leído el libro de Ricardo Molina Tenor, asesorado, en la parte artística, por aquel malogrado cantaor que fue Antonio Mairena. Este libro, desde mi óptica personal, está plagado de inexactitudes al haberse escrito únicamente a base de informaciones orales que han resultado ser de poca credibilidad. Con ese escaso bagaje, poco se podía esperar del intento. Para escribir un libro sobre algo tan desconocido como nuestro arte, no hay más remedio que servirse de los frutos de la investigación en todo tipo de archivos. Hay que recorrer pueblo por pueblo de ese conocido triángulo cantaor de Andalucía. Hay que ir casa por casa de los viejos cantaores y aficionados de reconocida valía y hay que acudir cerca de los hijos y nietos de aquéllos que vivieron en la segunda mitad del siglo pasado. En Silverio Franconetti Aguilar. Reproducido del libro «Arte y Artistas Flamencos», de Fernando el de Triana, pág. 193. Yo creo que no, sencillamente porque quien los posee soy yo y no dicen lo que él proclama, precisamente. Para mí, el señor Molina no se ajusta a la verdad cuando refiriéndose a «El Ciego la Peña», dice que fue de raza gitana y que nació en Sanlúcar de Barrameda. ¿Por qué lo dijo así el señor Molina? ¿Poseía, quizá, los documentos que pudieran avalarlo? «El Ciego la Pe\n\n[ENDING CONTEXT]\n\ntendrían forzosamente que utilizar la verdad y ésta, por ser corta, no daría pie para el expansionismo alegre y sin límites ni para fabricar la fantasía ni la invención, como viene sucediendo ahora.\n\nAlguien podrá decir, con razón, que con tantas interrogantes, dimes y diretes, verdades y no verdades, he dejado al mundo del flamenco que no hay por dónde cogerlo. Y no es así. Al menos no ha sido ese mi propósito. Yo creo, honradamente, que sólo he dejado expuesta mi verdad. Y espero que con ella, al menos, pueda convencer a muchos aficionados que me siguen, de que vienen siendo engañados.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Interrogantes, dimes y diretes sobre «El Ciego la Peña», Silverio Franconetti y Rojo «El Alpargatero»",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-18",
+    "page_number": 16,
+    "word_count": 3324,
+    "article_char_count_full": 19581,
+    "article_char_count_review": 2929,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-01-18-right-opini-n-a-las-caba-as-baj-a-los-",
+    "article_text_for_review": "S evilla, 18 de enero de 1990. Hotel Alfonso XIII. Nueve de la noche... Podían ser los datos escuetos para enmarcar el excepcional evento que nos reunía a una buena parte del mundo flamenco en torno a Fernanda Jiménez Peña, Fernanda de Utrera para el mundo artístico, brillante ganadora de esta Dintinción que de forma ejemplar patrocina la empresa Cruzcampo, S. A. y que ella, en sus palabras entrecortadas por la emoción definió como «er Oscar der flamenco».\n\nPero había algo más, algo que me ha hecho reflexionar muy en serio sobre las palabras del don Juan Tenorio, de Zorrilla, que encabezan esta crónica de urgencia. El flamenco no estaba donde solía. Ni donde comenzó y se acrisoló para gloria de Andalucía. Y, sin embargo, estaba bien. Entre los tapices, las arañas de cristal de roca y los cubiertos de plata, el flamenco estaba bien. De veras. Porque es de justicia que a un arte se le ponga en el lugar más elevado cuando detrás se encierra la verdad más estremecedora, cuando sus componentes vivenciales son capaces de atravesar el magma de dos largos siglos y convencer a todos, con apenas un exiguo ejército de desposeídos e ignorados. El flamenco en la cabaña, en la cueva, en el más humilde de los tajos laborales, ahora se viste de gala sin recomendaciones, sin tráfico de influencias, por la real gana de un público que ya no puede pasar sin él, que ha comprendido que su música y su letra, su expresividad impagable, merecen este palacio, el brillo de estas joyas y el contacto suavísimo de los visones que adornaban los hombros de las dos hermanas cantaoras de Utrera, nietos de otros hombros que soportaron agobiados el pe\n\nso de la injusticia. De los harapos del Pinini al visón de las de Utrera; y enmedio el Alfonso XIII y una duquesa, la de Alba, la más alta en dignidades de este país, que se acuerda de las enseñanzas de su maestro, Enrique el Cojo, y desgrana unos magníficos pasos de baile con la incomparable Pilar López. Sí, estoy seguro: aquella noche, en el palacio, el flamenco estaba en su sitio.\n\nPero no todo había de ser alegría en esa noche; cuando Enrique Osborne tomó el micrófono y saludó a las autoridades allí presentes, a los asistentes y al jurado del premio, algo empezó a chirriar en el ambiente. Parecía como si ya nos estuviera escociendo la soleá de Fernanda tan cargada de penas, porque en ese jurado faltaba el hombre que en la anterior edición lo había presidido: el excelentísimo Sr. don Manuel Cano Tamayo, o, si queremos, San Manolo Cano, como lo rebautizara Paco Vallecillo. Y, naturalmente, ya nada podía ser igual. Manolo se había subido arriba para ver mejor el espectáculo, se marchó a tocar la guitarra de mil cuerdas, a juzgarnos a todos, estamos seguros, con la indulgencia que lo caracterizaba. No se nos ocurre nada mejor que transcribir en lugar aparte la magnífica intervención de Enrique Osborne, salida de esos adentros tan finos y espirituales que lo caracterizan. Gozar de sus palabras será para todos ustedes mucho más que un acto de justicia.\n\nA continuación, la solemnidad de un acontecimiento que se desarrolló traspasando el umbral de la emoción: el presidente del grupo Cruzcampo, Sr. Castroviejo, glosa la figura de Fernanda y pregona sus cualidades, a la vez que\n\nresalta la concesión del premio, que, segundos antes, había sido públicamente proclamado por la portavoz del jurado, Marta Carrasco. Y, enseguida, con una emoción incontenible, Fernanda que recibe la Distinción de manos de don Manuel del Valle, alcalde de Sevilla, que representa a su ciudad, al flamenco y a toda la afición del mundo que entiende de duendes y de noches oscuras a compás.\n\nNuestra galardonada ha venido acompañada de media Utrera, la otra mitad la estaba esperando al regreso con el chocolate puesto al fuego y la hoguera encendida. Fernanda habla de gratitude, y en primer lugar menciona a Bernarda, su otra mitad, se acuerda de Manolo Cano, se derrama en íntimas satisfacciones. Y, como la palabra nada tiene que hacer junto al arte, enseguida se organiza el ritual flamenco en el sitio des\n\nusado, que no inmerecido, que mencionábamos al principio. No queremos insistir en elogios que ya todo el mundo debe dar por supuestos: Utrera cantó en las dos mágicas hermanas, y en todos los acompañantes y familiares: «mi Inés», «mi Pepa», «mi Luis»... todos presentados con ese posesivo cariñoso y popular de Fernanda que hace que nosotros nos sintamos también un poco suyos. Y además las propinas generosas de los amigos: Nano de Jerez, Enrique Montoya, Gracia Montes, Caracolillo, Pilar López, José Luis Postigo, Doña Cayetana...\n\nPropietario: CARLOS GUERRERO MURILLO\n\nRoldán y Marín 7 - Teléfon 22 97 65 - Jaén",
+    "title": "«A las cabañas bajé, a los palacios subí»",
+    "periodical": "candil",
+    "issue_id": "1990-01",
+    "year": 1990,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 796,
+    "article_char_count_full": 4671,
+    "article_char_count_review": 4671,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

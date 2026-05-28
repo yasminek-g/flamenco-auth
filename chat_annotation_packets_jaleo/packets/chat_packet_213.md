@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1988_09::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA Few Observations from the Translator The convoluted tics of family relations that confound even the Andalusian gypsics untangle enough in this interview to grant the reader a fair understanding of who is (or was) who in the important communities of Lebrija, Jerez and Utera. Some of the greatest names in flamenco's history are pronounced herein with the easy familiarity of a simple family man at home one afternoon commenting on his own kith, kin and acquaintances. Paco Sevilla's tape No. B 13 complements this interview magnificently; in the tape, Paco pronounces many of the same names \"El Lagaña\" as in the interview and moreover provides the very music of the people being discussed, something the written page obviously can not do. Any serious flamenco is well-advised to acquire this\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\nfamiliarity of a simple family man at home one afternoon commenting on his own kith, kin and acquaintances. Paco Sevilla's tape No. B 13 complements this interview magnificently; in the tape, Paco pronounces many of the same names \"El Lagaña\" as in the interview and moreover provides the very music of the people being discussed, something the written page obviously can not do. Any serious flamenco is well-advised to acquire this tape, and indeed many others of Paco's series as the historical and artistic content of these tapes constitute indispensable elements of the education of any serious flamenco. -The Shah of Iran ***** [from Sevilla Flamenca, Sep-Oct 1987; translated by The Shah] by Manuel Herrera Rodas Lebrija is a basic point of geography of the cante to which we fin Sevilla], despite our proximity, have not paid due attention. This flamenco center is characterized by the amateur status of its outstanding artists. Lebrija, with its important gypsy settlement, has not developed flamenco professionalism until relatively recently. The names of El Lebrijano, his brother Pedro, of Pedro Bacán, Concha Vargas, Manolito de Paula and of Miguel Funi and Curro Malena are well-known, but they are recent names in the history afflamenca. We would like to know something more primitive, more ancient, to enter into that storehouse that has enriched these new wines. On another occasion we met a person who is fundamental to the history of the cante of Lebrija, Maria la Perrata who, although born in Utrera, passed the entirety of her life in the shadow of the Castillo, breathing the pure air of the wide marsh. This is how we came t\n\n[ENDING CONTEXT]\n\ntoday are more stimulated, but there is no one today who can sing.\" Night fell upon us and the memory of the cante. We have attempted to capture the memory of the cante of Lebrija by springing the trap with our questions, and have endeavored to ensnare ourselves in the enchantment of the art: The art of the cante por siguiriyas of a rare genius named Diego Peña and known as \"El Lagaña\". THE FRAME STATION The Finest in Custom Picture Framing 20% DISCOUNT TO ALL MEMBERS OF JALEISTAS OWNER TOM SANDLER 1011 FORT STOCKTON DRIVE (714) 298-8558 SAN OIEGO, CALIFORNIA (Hillcrest/Mission Hills area)\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "DIEGO PEÑA “EL LAGAÑA”",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9-13",
+    "page_number": 9,
+    "word_count": 3674,
+    "article_char_count_full": 20335,
+    "article_char_count_review": 3266,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1988_09::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[from Classical Guitar magazine in England, Feb. 1987; sent by Guillermo Salazar] by Juan Martin Last August I was invited to perform in the Festival of Cante Flamenco in the small white pueblo of Ojen. Ojen lies nine kilometers inland form Marbella in the province of Málaga, Andalucía. The guitarists appearing were Enrique de Melchor, Pedro Bacán, Juan \"El Habichuela\", el Nifio Puro and myself as soloists. The singers were a combination of the old school and the new: Fosforito, Juanito Valderrama, Niña de la Puebla, Naranjito de Triana, José McEnese, and of the new newer generation Calixto Sanchez, Diego Clavel, Tina Pavón and Pansequito. There was also the dancer José Juaquín and his small cuadro group. Even though Ojen is as small village this is recorded as one of the most prestigious\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"family\"]\n\nand his small cuadro group. Even though Ojen is as small village this is recorded as one of the most prestigious flamenco festivals in Andalucía. There has been much excitement leading up to this event. In Ojen itself this is the major happening of the year the festival director had received telephone calls for ticket reservations from as far afield as France. The tickets cost 1,500pts which is quite a lot of money when you are taking the whole family. Children are not charged entry provided they sit on their parents' laps and don't take up a seat. What, in fact, happens is that they do take up seats until someone arrives to claim them and then the parents are left for five or six hours with a heavy, maybe wriggling weight to make their already hard chairs feel like iron! The festival is held in the center of the pueblo in the open air surrounded by the white houses, and there is room for one thousand people. The radio is there to broadcast and television cameras have arrived to film certain artists during the evening. I leave my home near San Pedro in plenty of time to make my way up treacherous mountain roads which tonight are bumper to bumper with expectant aficionados. The time is ten in the evening. The festival is due to begin at eleven thirty, but previous experience of flamenco festivals tells me this is optimistic and that twelve thirty is more likely. There is a place to park for the artists, unlike most of Europe's great concert halls, and this saves one time and frustration. The personal touch of the director welcoming one and the offer of refreshments contrasts dramatically with, say, the Queen Elizabeth Hall at London's South Bank Arts Centre, where I have parked outside the artists' entrance to carry guitars in, and have come out to find some commissionaire threatening to have the ear towed away. Once inside one asks for a cup of coffee, and plastic mugs and spoons are brought along with an immediate demand for 25p or whatever it costs. No matter you're on stage trying an acoustic or have no change in your pocket; \"Now, if you please Sir!\" All of this is the wrong spiritual preparation for a recital. One does i\n\n[ENDING CONTEXT]\n\nBY F. TARREGA AFTER COTTIN (PARIS) AND ANDRE VERDIER GOOD CONDITION • WITH CASES R. Dussart Rue des Jonquilles 51. 7384 Onnezies. Beiguim An introduction to flamenco dance for beginners. A clear simple step-by-step instruction of the following dances, first by count and then with guitar accompaniment, in two speeds - slow and medium. * Sevillas* Tanguillo * Bulerías * Send check to A. Vergara, 1825 Echo Ave, San Mateo, CA 94401. $49 includes Video, postage and handling. FLAMENCO FENCING ORNAMENTAL IRON SAFEGUARD FENCE CO. Serving North County (619) 745-4846 CA Contractors's Licence #374198\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FESTIVAL OF OJEN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14-15",
+    "page_number": 14,
+    "word_count": 1643,
+    "article_char_count_full": 9400,
+    "article_char_count_review": 3789,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "family"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1988_09::A6",
+    "article_text_for_review": "[from: Hola May 26, 1988; sent and translated by Roberta Turner] by Titi Serverino Antonio \"el bilarín\" receives us in his famous Madrid studio to give us the great news of his return to the stage. At sixty-six he is still able to keep on delighting audiences with his arte. Antonio has danced all over the world, written a platinum page in Spanish Dance and achieved numerous successes demonstrated by the numerous trophies he enthusiastically displays in the museum room of his studio. Now he has decided to convert his memories into the present and is preparing his comeback for '89. But we prefer to let him tell us his reasons for returning to Spanish Dance himself. When did you decide to dance again? Pues, mira..., just last week, and I've decided to do it because I've always had something boiling inside me — my whole life is dancing. After all those years of directing the National Ballet, they kicked me out all the same. Later I directed some shows and (I have a creative mind) I've choreographed some ballets, like \"El Rocio\", for instance, for the independent company of María Rosa, which was a success. And after seeing so many artists, so many salas rocieras, so many programs of the Ballet Nacional de España... I say: \"I'm Antonio; \" I look at myself in the mirror; I look great; I have the same measurements I had when I was dancing in my prime. When I dance a simple sevillana in a room, people praise me extravagantly and they tell me I don't have to retire; all this gives me encouragement and besides I'm in great health and full of hope, as if I were starting all over again.",
+    "title": "ANTONIO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 289,
+    "article_char_count_full": 1600,
+    "article_char_count_review": 1600,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1988_09::A7",
+    "article_text_for_review": "by Josie Neal La Meri, renowned ethnic dancer, choreographer and teacher, died January 7 in San Antonio, Texas, at the age of 83. Hailed by critic Walter Sorrell as \"the undisputed queen of ethnic dance,\" La Meri was considered the world's greatest authority on the ethnic dances of many cultures, particularly those of India and Spain. Born Russell Meriweather Hughes in Louisville, Kentucky, La Meri grew up in San Antonio, had her first professional engagement in 1924, dancing prologues to silent movies at the Rialto Theater. As a young dancer in New York during the late 1920's, she played the subway circuit with the Spanish dance ensemble of Maria Montero, also performing as featured dancer in a vaudeville \"flash\" act, Sevilla, and in Shubert's A Night in Spain. At the height of her performing career, from 1928 to 1939, she toured the world as a solo dancer, receiving wide acclaim for appearances in South and Central America, Europe, Scandinavia, Australia, New Zealand, Tasmania, India, Burma, Malaya, Java, the Philippines, China, Japan and Hawaii. Her repertory included dances of many of the countries she visited, all learned and first performed in their country of origin. In Spain, she was a student of the great José Otero. In 1940, she established the School of Natya with Ruth St. Denis in New York, where she taught East Indian dance, and lectured and performed with her company, the Five Natyas. The school later became the Ethnologic Dance Center, and its curriculum was expanded to include Spanish and other dance forms. Until it was closed in 1960, the EDA was the only institution in the United States to offer a four-year course of intensive study in ethnic dance. La Meri was a close friend of Argentinita and her sister, Pilar Lopez, and it was at Argentinita's behest that she began teaching in 1942 at Jacob's Pillow, where she remained as a resident teacher, performer, and choreographer for 11 years. In 1953, she revived her 1944 production of El Amor Brujo, appearing with Ted Shawn, Carola Goya, Peter di Falco and members of her company.",
+    "title": "LA MERI",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17",
+    "page_number": 17,
+    "word_count": 349,
+    "article_char_count_full": 2078,
+    "article_char_count_review": 2078,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1988_09::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n*** LA MERI, 89, DANCER, TEACHER AND SPECIALIST IN ETHNIC REPERTORY [from The New York Times, January 21, 1988; sent by George Ryss] by Jennifer Dunning La Meri, the dancer, teacher, writer and dance ethnologist, died in a San Antonio hospital on January 7. She was eighty-nine years old. Described as “the undisputed queen of ethnic dance” by Walter Sorrell, the dance writer, La Meri was long considered the leading American authority on the subject, particularly the dance of India and Spain. She toured the world at the height of her career, in the 1920’s and 30’s, studying and performing. She founded the School of Natya with Ruth St. Denis in 1940 in New York, where she taught and performed with her company, the Five Natyas, and presented such guest lecturers as Pearl S. Buck,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"many\"]\n\nrticularly the dance of India and Spain. She toured the world at the height of her career, in the 1920’s and 30’s, studying and performing. She founded the School of Natya with Ruth St. Denis in 1940 in New York, where she taught and performed with her company, the Five Natyas, and presented such guest lecturers as Pearl S. Buck, Coomaraswamy, Lin Yutang, Ted Shawn and Argentinita. Her book \"Spanish Dancing,\" published in 1948, was considered by many to be the definitive text on Spanish dance. La Meri, whose real name was Russell Meriwether Hughes, was born in Louisville, Ky. She received her first dance training in San Antonio, where she studied ballet and Spanish and Mexican dance as a child. She later studied Hawaiian dancing in Hawaii and, in New York City, modern dance with Michio Ito and ballet with Aaron Tomaroff and Ivan Tarasoff. Dancing Before Movies La Meri made her professional stage debut in 1924 in San Antonio, where she danced prologues to silent movies. In New York, she performed with Maria Montero and was a featured vaudeville performer with Keith Time and in the 1949 Broadway revue \"A Night in Spain.\" Hr first major work was \"Krishna Gopala,\" presented in 1940 with St. Denis and Hadassah as guest artists. She also created an interpretation of \"Swan Lake\" in the Bharata Natyam school of Indian classical dance and created many dances in the styles of other cultures. \"An afternoon with Miss La Meri is rather like being shown a small corner of some connoisseur's collection of choreographiana,\" John Martin wrote in The New York Times in 1940 in a review of one of La Meri's many New York appearances. She taught and performed with her own company at the New York School of Natya, which was absorbed into the Ethnologic Dance Center she founded in 1942. The school continued until 1956 and was an important source of training in ethnic dancing. La Meri taught at universities across the nation. She also taught\n\n[ENDING CONTEXT]\n\n“Lament composition, del Monte said, “is a reminder that this must never happen again.” His compositions are drawn from his concepts and experiences in life. “The better understanding I have of myself, and the more sincere I am, the more creative the compositions. When something is totally crystallized, it’s pure and powerful.” Adam del Monte, who has lived in Madrid for three years, learned the true meaning of flamenco in Southern Spain. “I lived in the caves with the gypsies. They received me openly, although I was strange and bland. It was there that I got the real feeling of flamenco.”\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "FOREIGN GUITARISTS IN MADRID",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1988_09",
+    "year": 1988,
+    "language": "en",
+    "article_type": "article",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 1130,
+    "article_char_count_full": 6759,
+    "article_char_count_review": 3559,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "many"
+      }
+    ]
+  }
+]
+```

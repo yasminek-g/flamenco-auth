@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1987-05-6-left-tentativo",
+    "article_text_for_review": "Ahora no eres tú... que en cada palabra tuya hay un recodo jondo para los oráculos y el llanto\n\nAhora no eres tú... que la luz te penetra como hermoso atributo del amor de otros dioses vencidos.\n\nAhora no eres tú... que la lumbre sustenta cada destello antiguo de tus ojos, esculpidos al rescoldo de otras venerandas voces.\n\nAhora no eres tú... sino herida restanhada, fragante punzamiento, memoriales de huída, penúltimo estertor de un pueblo.\n\nR. PORRAS",
+    "title": "Tentativo",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-6",
+    "page_number": 6,
+    "word_count": 77,
+    "article_char_count_full": 455,
+    "article_char_count_review": 455,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-05-6-right-cumbre-flamenca-en-madrid",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAntonio Corcobado\n\nCorrespondal\n\nFntes de entrar en el juicio crítico que con toda honestidad trataré de realizar sobre cada uno de los espectáculos presenciados, se hace necesario destacar, de manera preferente, el trabajo realizado por el Ministerio de Cultura y Entidades Patrocinadoras en su programación con un indudable esfuerzo económico cuyo alcance desconozco, ignorando también la compensación económica que habrá podido ofrecer la taquilla, que ha debido ser interesante por cuanto según manifestaciones de la propia organización, todo el papel fue vendido en su totalidad, aunque en ninguna de las veladas el lleno fue absoluto con excepción del concierto en la Catedral de Madrid, donde muchísimo público se quedó en la calle sin poder presenciarlo. Quede también constancia de mi\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"crítica\"]\n\ne ha debido ser interesante por cuanto según manifestaciones de la propia organización, todo el papel fue vendido en su totalidad, aunque en ninguna de las veladas el lleno fue absoluto con excepción del concierto en la Catedral de Madrid, donde muchísimo público se quedó en la calle sin poder presenciarlo. Quede también constancia de mi agradecimiento personal por las atenciones recibidas como corresponsal de CANDIL, que ha facilitado la misión crítica que a continuación, comienzo a detallar. Al margen de este comentario, quedarán, naturalmente, las actuaciones que por diversas causas no me fue posible presenciar que fueron las del día 3 de José Romero, así como también la del día 10 de Andrés Batista en el Círculo de Bellas Artes, y la del día 7 de Manolo Sanlúcar, en el teatro Alcalá Palace. tual nómina cantaora. En esta exposición, resaltó la mayor abundancia biográfica de Pepe el de la Matrona, tomada toda ella del libro de J. L. Ortiz Nuevo, componente del Comité Organizador, y Se inició la Cumbre, con la exposición dedicada al centenario de aquellos magníficos intérpretes que el Cante tuvo en Aurelio de Cádiz, Bernardo el de los Lobitos y Pepe el de la Matrona, en cuya buena escuela, bebieron muchos de los buenos artistas que hoy tienen puesto preeminente en la ac sería interesante, conocer el interés despertado por este aconteci- miento, por cuanto nos permitiría conocer el grado de interés que marca el imaginable baremo de la afición que ciertamente no sería muy favorable en mi comentario, si tuviera que juzgar por lo apreciado el día en que yo acudí a pre- senciarlo que era festivo y por la tarde, encontrándome solo y sin ni un solo acompañante en el curso de mi permanencia. La velada del día 4 con la intervención exclusiva de Enrique Orozco, acompañado por Paco de Antequera, fue buena por la seguridad y sentido que pone este cantar en cuanto hace, estando en posesión de unas facultades muy bien dirigidas por una cabeza que rige y bien a su edad. Las incrustraciones jocosas cargadas del buen humor de Pericón de Cádiz y Pepe el de la Matrona, fueron muy celebradas por el público que llenaba la sala. En algún pasaje de esta parte, intervino J. L. Ortiz Nuevo, recordándonos partes de las biografías, publicadas por él mismo sobre estos artistas. Lo mejor, por su extraordinaria calidad musical y cantaora, y por tanto lo más resaltable de esta Cumbre, estuvo, a mi juicio, en el concierto del día 6 en la Catedral de Madrid, por la Banda de Música de Puente Genil, denominado Músicas Andaluzas de la Semana Santa, orígenes de l\n\n[ENDING CONTEXT]\n\nel fracaso de la organización del Congreso de Actividades Flamencas que se había solicitado para nuestra capital. Parece ser que la aportación ofrecida por el Ayuntamiento de Madrid, no cubría ni en su cuarta parte el presupuesto confeccionado y desconociendo si se han realizado otras gestiones cerca de entidades que pudieran haber completado el mismo, tenemos que lamentar un hecho que en el porvenir puede tener su importancia para nuestra capital, que asistida constantemente por una afición tan decantada como numerosa, nunca podrá explicarse el que no se haya podido cumplir este anhelo.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cumbre flamenca en Madrid. Madrid flamenco",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-8",
+    "page_number": 6,
+    "word_count": 2577,
+    "article_char_count_full": 15763,
+    "article_char_count_review": 4192,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "crítica"
+      }
+    ]
+  },
+  {
+    "article_id": "1987-05-9-left-carmen-amaya-reina-de-los-gitano",
+    "article_text_for_review": "Hoy queremos traer al recuerdo y a la memoria de todos los buenos aficionados, a Carmen Amaya, a la que creo injustamente olvidada por la gran familia flamenca. El título me ha venido a la mente tras leer el mismo en un disco de la genial bailaora.\n\nÉsta nació en el barrio barcelonés de Somorrostro, allá por el año 1910, siendo hija de José Amaya y Leonor Amaya, pues ambos eran primos. Carmen tuvo tres hermanos y los tres artistas: Paco, tocaor; Leonor, cantaora, y María, que actuaba junto a ella haciendo compás y jaleo.\n\nCarmen Amaya procede de una familia gitana granadina, comenzando a bailar por las calles y tabernas de Barcelona acompañada a la guitarra por su padre, quien después de la interpretación sacaba la gorra para recoger unas míseras y merecidas pesetas con que mitigar su precaria y débil situación económica.\n\nFue una bailaora temperamental que lució un estilo nada academicista, siendo la que más fuerza y velocidad imprimió a los pies, fue en suma la figura indiscutible del baile flamenco, mientras que en su vida privada era de una rotunda y total nobleza y sencillez, siendo tan sumamente humana que resultaba hasta tímida. Pero Carmen Amaya tuvo en su haber la dualidad bailaora-cantaora, interpretando ésta última faceta con un estilo muy propio y personal.\n\nSu carrera artística la desarrolló prácticamente fuera del territorio nacional, actuando en casi toda América del Sur, Nueva York, Londres, Hollywood y un largo etcétera. Su primer disco de larga duración llevaba por título «Cantes y bailes flamencos», editado en la neoyorquina casa DECCA, con la que firmó en exclusiva, y con cuya firma discográfica llegó a grabar cuatro discos en total, siendo el último el titulado «¡Furia Amaya!», el mismo que salió al mercado en el año 1962, un año antes de su fallecimiento.\n\nContrajo matrimonio en Barcelona con el santanderino Juan Antonio Agüero en 1952, siendo éste tocaor en su compañía, aunque su guitarrista habitual y asiduo fue Agustín Castellón «Sabicas», mientras que, igualmente, en su compañía estuvieron actuando además de su familia José Greco, Domingo Alvarado, Chato de Osuna, El Chino y Juan Maya «Marote», entre otros muchos. Junto al gran torero sevillano y trianero Joaquín Rodríguez «Cagancho» protagonizó una película en México, mientras que en España pudimos deleitarnos con su baile a través de la titulada «Los Tarantos».\n\nParece ser que los ensayos realizados por su compañía eran de mucha más calidad que los mismos espectáculos, pues éstos se solían convertir en una especie de fiesta íntima y familiar, donde hasta se comía y bebía para dar mayor veracidad al asunto.\n\nEsta genial bailaora tiene erigido en Barcelona un monumento para solaz de todos los buenos aficionados, donde podemos perpetuar su recuerdo y memoria. Es notorio que consiguió ganar mucho dinero con su inigualable arte, pero falleció en la pobreza debido a la excesiva carga familiar que hubo de soportar, falleciendo un día cualquiera del mes de noviembre del año 1963.\n\nY hasta aquí esta modesta y pequeña biografía de la insigne Carmen Amaya, tratando así de saldar en una ínfima parte la deuda que el mundo del Flamenco tiene contraída para con ella por su casi total olvido.",
+    "title": "Carmen Amaya, reina de los gitanos",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 531,
+    "article_char_count_full": 3212,
+    "article_char_count_review": 3212,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1987-05-9-right-algo-m-s-sobre-los-gitanos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nmicas que con relativa frecuencia surgen, y que pueden suscitarse por este artículo, o si por el contrario ha sido o no exclusivo del propio pueblo andaluz, existe un hecho evidente, y es que en el campo profesional, los propios cantaores gitanos y no gitanos, están muy por encima de estas discusiones, más o menos académicas, privando entre ellos un respeto y un reconocimiento a los distintos cantes que unos u otros interpretan, sin descender al detalle, de si lo que cantan es mejor o peor, porque sea o no gitano quien lo dice o así se expresa.\n\nYo he sido testigo, en muchas ocasiones, en donde han participado en reuniones de aficionados, recitales, festivales o concursos, cantaores de ambas procedencias, y el gitano ha respetado, reconocido y elogiado el cante interpretado por su\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"gran\"]\n\nan es mejor o peor, porque sea o no gitano quien lo dice o así se expresa. Yo he sido testigo, en muchas ocasiones, en donde han participado en reuniones de aficionados, recitales, festivales o concursos, cantaores de ambas procedencias, y el gitano ha respetado, reconocido y elogiado el cante interpretado por su compañero de tareas artísticas no gitano, y viceversa el no gitano al gitano, resaltando y admirando ese acento personalísimo, con su gran dosis de «duende», que todo buen aficionado sabe apreciar, por su indiscutible valor sentimental y emotivo. Como decía el insigne poeta granadino Manuel Benítez Carrasco, en su gracioso poema «La uanderilla», que con gran estilo recita Gabriela Ortega, «cada cosa, tiene su cosa especial»; asimismo vemos en el cante, que existen palos con una gran influencia gitana, que por este simple hecho, adquiere carta de naturaleza y que «coincide» que son, precisamente, los pecial... «para rezar,\n\n[EVIDENCE WINDOW 2 | retrieval_hint=PED_03 | trigger=\"interpretados\"]\n\nellos la gama de fandangos y de cantes levantinos, en donde sus intérpretes, da también la coincidencia de que son «los no gitanos», o es que no existe diferencia entre una cartagenera cantada por un gitano a unas bulerías cantadas por un no gitano? Cada cosa tiene su cosa es-no originarios o simplemente derivados de aquéllos, sin que ello suponga una discriminación cualitativa, en el sentido de que unos puedan ser mejores que otros, según sean interpretados por voces gitanas o no gitanas. De todo cuanto se expone hay un hecho, desde mi particular punto de vista, que es indiscutible y es el protagonismo que el gitano ha tenido y tiene en determinados cantes de nuestro mundo flamenco, por ése algo especial de su propia y específica personalidad artística que a veces no se encuentra explicación alguna que así lo justifique, sino que es así, quizás porque se trata del «duende», de esos «sonidos negros» de que hablaba uno de los mejores cantaores de todos los tiempos de la historia del cante flamenco, Manuel Torre y que nos cuenta Federico García Lorca, que tanto poetizó sobre los calés, porque conoció y vivió su propio mundo, ofreciendo una imagen dignificadora de los gitanos andaluces en su «Romancero gitano». Sobre esta palaba misteriosa, Manuel Barrios, en su «Ese difícil mundo del flamenco», dice que «el duende es más dolor que grandeza y roza al gitano en todas sus manifestaciones». Grandes y prestigiosos tratadistas, los llamados flamencólogos, han reconocido, tras profundos estudios e investigaciones, como auténticas fuentes de conocimiento, la enorme influencia gitana y su aportación a nuestro cante, que también es el de los gitanos, ¿por qué no?, y como testimonio de estas afirmaciones valga lo que algunos de ellos han manifestado a través de sus escritos y así tenemos relacionándolos un tanto desordenadamente, entre otros: Manuel Ríos Ruiz, en su «Introducción al cante flamenco», al hablar de la\n\n[ENDING CONTEXT]\n\ndel siglo XVIII habían un total de 24 reconocidos como tales, entre los que recordamos la zarabanda, el zarambaque, el cachirulo, etc.\n\nEn definitiva, hay que dar a cada uno lo suyo, ni todo el cante flamenco es gitano, ni tampoco poder dejar de reconocer la enorme y positiva influencia del gitano en determinados cantes del mundo flamenco, sobre todo en los llamados básicos, dándole ese «rajo», ese eco especialísimo y personal del que hemos hecho mención de forma reiterada. Ca- da cosa tiene su cosa especial.\n\nAPERITIVOS SELECTOS Especialidad en PLANCHA\n\nMesones, 18 Teléfono 26 35 46\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Algo más sobre los gitanos",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-11",
+    "page_number": 9,
+    "word_count": 2418,
+    "article_char_count_full": 14836,
+    "article_char_count_review": 4571,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "gran"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretados"
+      }
+    ]
+  },
+  {
+    "article_id": "1987-05-11-right-otra-vez-televisi-n",
+    "article_text_for_review": "José Núñez de Castro Gómez\n\n1 pasado día 10 de mayo, a las 7 de\n\nla tarde, y a través de la segunda cadena de televisión, o «caja tonta», se retransmitió el programa «De los flamencos», dedicado esta vez a Extremadura, esa región noble, conquistadora y cantaora, que por su proximidad geográfica con Andalucía, su gente siente el alma de ésta, por medio del cante, como si estuviera inmersa en sus propias entrañas.\n\nEl aficionado que se sentó delante de la cámara pensó, o al menos imaginó, que el contenido del programa iba a referirse a la influencia y proyección del cante, toque y baile flamenco en esta maravillosa región española, y escuchar a su vez el cante originario de Badajoz, con sus clásicos jaleos y tangos extremenos que con gracejo, acento personalísimo y calidad artística tantas veces hemos oído en la voz de Porrina de Badajoz, acompañado a la guitarra por su hijo, en anteriores ocasiones incluso por Ramón Montoya y Niño Ricardo, así como a Juan Cantero, extremeño a carta cabal, la musicalidad y letras de estos originales cantes son, francamente, deliciosos y de gran arraigo popular, o el Moro, o el Niño de Badajoz y tantos otros cantaores de la tierra, y cómo no, la familia de Porrina (Guadiana, Ramón el Português, Eugenio de Badajoz y los hermanos Porrina: La Negra y Juan Salazar, y nietos bailadores y tocadores) o un recuerdo al cante de Manolo Fregenal en su amplia gama de fandangos, o al cante por\n\ncolombiana de Pepe «El Molinero», o Pérez de Guzmán con sus fandangos huelvanos con aires de verdiales, y, en fin, una interminable lista de grandes artistas extremenos que han dado y dan vida a nuestro cante flamenco en todas sus dimensiones.\n\nCual fue la sorpresa escuchar diversos palos de cante, siguiriyas, soleares, tarantas, bulerías, tonás y livianas que, por supuesto, para un buen aficionado tienen audiencia en cualquier lugar de nuestra geografía, sin necesidad de afectarlos de forma exclusiva a esta querida región extremeña, que cualquier profano en la materia bien pudiera pensar que estos cantes estén vinculados de forma específica a Extremadura, lo que no deja de ser objeto de confusión. Todo esto, con un sentido indulgente, puede pasar, pero lo que no admite justificación alguna es que se simbolice el gitanísimo cante por siguiriya que interpretó Carmen Linares, acompañada del virtuoso Enrique de Melchor, cante básico por excelencia, majestuoso y severo, en donde se concentran como ingredientes el dolor, la pena, la traición, el olvido, la angustia, el quejío, en definitiva, el grito desgarrado del humano, con una parejita romántica amartelada confundiéndose en abrazos y besos amorosos. El cante por siguiriya es algo más serio.\n\nY luego, con todos los respetos para Chano Lobato, que interpretó como él sabe hacerlo esas bulerías acupletadas, con esa gracia y estilo, muy propias de su tierra gaditana, y de Carmen Linares en otros cantes profundos, he de insistir, sin quitar méritos a éstos, que faltaron cantaores de la tierra, que los hay y muy buenos, amén de Simón García «Niño de la Ribera», que sí encajaba con su paíssano Justo de Badajoz, interpretando unas tarantas, según decía el rótulo del Rojo «El Alpargatero» y unas saetas «extremeñas», todo ello adornado con unas visitas de fondo de su aspecto monumental, que es justo reconocer eran adecuadas al programa, para que el nombre de Extremadura, dentro de la serie televisiva «De los flamencos», hubiera tenido la entidad e importancia que esta tierra merece en el amplio y complejo mundo del flamenco.\n\n¿Y el zapateado de Sarasate?, bellísima pieza musical, muy original y atractiva por su ejecución, pero ¿qué relación podría tener con Extremadura?, la misma que si el bailarín Paco Moreno hubiera interpretado, por ejemplo, la danza de «El baile de Luis Alonso», de Giménez.\n\nEn conclusión, descartando que este amalgama «sin ton ni son», este desconcierto y desbarajuste televisivo se haya realizado «exprofeso», con intencionalidad manifiesta, no cabe otra motivación que «el mal gusto y los escasos conocimientos de su equipo responsable», como bien decía en la revista «Sevilla Flamenca» Manuel Ríos Vargas, comentando otro falló de televisión, cuando el homenaje a Antonio Mairena en un domingo por la tarde.",
+    "title": "Otra vez televisión",
+    "periodical": "candil",
+    "issue_id": "1987-05",
+    "year": 1987,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 698,
+    "article_char_count_full": 4249,
+    "article_char_count_review": 4249,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

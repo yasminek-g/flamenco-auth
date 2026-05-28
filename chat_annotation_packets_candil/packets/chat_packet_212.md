@@ -1,0 +1,187 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-05-6-left-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nNo es cante propicio para gente joven. Tiene algo de otoñal que no conviene a cantaores a medio hacer. A la juventud enciclopedista que Fosforito puso de moda, yo le aconsejo que no se inscriba en éste y otros cantes parecidos».\n\n2 «Las siguiriyas supremas son las que rematan por cabales. Esto se debe a Silverio. No obstante, le niego la genialidad que le atribuyen los payos. Silverio fue una personalidad en relación de dependencia. Fue un epifenómeno urbano y urbanizado de sus contemporáneos gitanos de fin de siglo. En el fondo no fue más que una caja de resonancia del genio que había en El Fillo».\n\nEn otra época es posible que haya sido un cante de alivio para introducir a la serrana. Pero hoy lo podemos ver con mejor perspectiva. Frente a todo esto, Antonio Mairena quiere devolver a\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"gran\"]\n\nFue un epifenómeno urbano y urbanizado de sus contemporáneos gitanos de fin de siglo. En el fondo no fue más que una caja de resonancia del genio que había en El Fillo». En otra época es posible que haya sido un cante de alivio para introducir a la serrana. Pero hoy lo podemos ver con mejor perspectiva. Frente a todo esto, Antonio Mairena quiere devolver a las livianas su personalidad propia, a la altura de las siguiriyas, con un coplerismo de gran aliento, condigno con este cante que vuelve a estar y que ahora, sin tergiversaciones, tiene un nuevo destino. 1 «Las livianas requieren coplas serias. Pepe el de la Matrona, por ejemplo, las canta con mucho empaque, pero las coplas que ha elegido para sus grabaciones son sinceramente superficiales. Caso claro de desnivel entre canto y letra. Lo mismo le sucede a Fosforito: recarga de emotividad musical la circunstancia literaria nada dramática de esos inciertos machos que van para Boyuyo. 3 Ricardo está en la avidez empírica de abarcar todos los datos concretos que aclaren las claves de cada estilo. Su curiosidad está polidirigida a todos los focos de información. No busca fáciles correlaciones. No acepta una versión sola. Se ha desembarazado de la especulación estética, psicológica y aun filosófica del cante (territorio que me cede con visible sobreprecio de mis trabajos). Tal parece que ha caído en el peligroso hechizo de la casuística flamenca. A su juego lo llamaron. Se apunta bien, muy bien el cante. Tiene una memoria feroz. Al carecer de una discografía organizada se obliga a sí mismo a retener hasta los detalles más furtivos de cualquier cantaor o de cualquier cante. Va camino de ser un extraordinario teórico-práctico por más que un colega suyo de Madrid sostenga caprichosamente: «Ricardo cambia de postura cada año. Ahora es un chapucero provisional del cante jondo». 4 Muchas de sus actitudes durante el concurso nacen de una mezcla de niño terrible y hombre sobrador (canchero decimos los argentinos). Esta bipolaridad no casa bien con su fondo de burgués tímido, católico vergonzante y académico consciente. Estas notas le limitan el espacio disponible para su dandismo intelectual. Sea de ello que lo que fuere, su dialéctica se ha aplomado. Está al borde de la pontificación. Se siente vicario de la mistagogia flamenca. Sus monólogos son venatorios, un verdadero espectáculo de cacería intelectual. Lo bueno es que respeta y es respetado. 6 «El mirabrás es una melopea inferior a su punto de arranque 5 Está obsesionado con su pangitanismo flamenco. «Para mí el cante es pa\n\n[ENDING CONTEXT]\n\nEl cante es de los cantaores. El cante nace y se mueve esencialmente entre ellos. Exclusivamente. Todo lo que se mueva fuera de este círculo es un mero eco. Los cantaores constituyen una casta sagrada».\n\n44 «He descubierto tardíamente la personalidad del compositor brasileño Villalobos. Es impresionante su fuerza telúrica. Es música terrena, no especulativa, surgente, densa, cristalina. Yo aconsejaría a los compositores españoles que tomaran el ejemplo de Villalobos. Con su técnica y su tono vital, a la española, el cante podría trepar velozmente a la universalidad de lo culto musical».\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-12",
+    "page_number": 6,
+    "word_count": 8375,
+    "article_char_count_full": 52382,
+    "article_char_count_review": 4180,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "gran"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-05-13-left-garc-a-lorca-y-el-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nM ediante nuestras numerosas visitas a su múltiple obra poéti-ca hemos averiguado, con un asombro que no excluye a la cer-tidumbre, que Federico García Lorca fue esa clase de artista a que llamamos genio. No disponemos de una definición precisa de la palabra genio. Ante la genialidad de algunos seres excepcionales de nuestra enigmática especie, los diccionarios son prudentes, casi lacónicos, y quizá prescindibles: nos aclaran muy poca cosa. En uno de ellos he encontrado esta mesurada ignorancia: genio es «el grado más alto a que llegan las facultades intelectuales de un hombre». Si esta frase, tan bien intencionada, tan servicial, fuese una unidad de medida, ¿cuántas veces tendríamos que usarla para abarcar las páginas más extraordinarias de Federico García Lorca?\n\nUstedes pensarán quizá\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombres\"]\n\nase, tan bien intencionada, tan servicial, fuese una unidad de medida, ¿cuántas veces tendríamos que usarla para abarcar las páginas más extraordinarias de Federico García Lorca? Ustedes pensarán quizá que estoy desestimando la labor de los académicos. No es así; no soy tan conformista como para caer en esa tentación a la vez tan vieja y tan cursi. No se trata de rechazar la generosidad de los diccionarios, que están compuestos casi siempre por hombres de sabiduría. Se trata de algo más humilde: proclamar que ni siquiera a la sabiduría le es dado establecer una cabal definición de esa trabazón de opulencia emocional, de exactitud técnica, de facultad de iluminación y de revelación, y de abundancia comunicatoria que, en misteriosas proporciones, se contiene en la genialidad. En ocasiones, sólo saber no basta. Y, en las aventuras del arte, saber no es suficiente. En la obra poética verdaderamente genial, el saber pue- de servir para empezar, pero nunca llega hasta el fin. De hecho, las grandes obras de arte alcanzan a menudo el poderío y la modestia de preguntas inmensas. Preguntas iluminadoras que nos van enseñando a preguntar. En la pregunta caben la angustia y el asombro, caben la necesidad y el candor, caben el júbilo, el dolor, la inocencia, el espanto. Todas estas facultades emocionales habitan en todos los seres. Cuando uno de ellos las combina precisamente de manera genial, la pobreza de los humanos se ve de pronto mitigada por dádivas que hace pocas décadas no existían sobre la Tierra, que hoy forman parte ya del genio del idioma español, y cuy\n\n[ENDING CONTEXT]\n\nsiguiriya, Dios se compadece de nosotros. Bach, en fin, compone el perfecto poema de la celebración del universo y de la criatura. Y Federico nos recuerda que la siguiriya es el «perfecto poema de las lágrimas».\n\nPara nosotros, García Lorca es hoy una estremecedora mezcla de Bach y de siguiriya gitana. Como Bach, compuso el perfecto poema de la grandeza y la inocencia. Como la siguiriya, y desde el mismo instante en que el crimen lo derribara, se lamenta sin fin y sin consuelo, componiendo un perfecto poema de las lágrimas. En esa siguiriya, suya es toda la música. Las lágrimas son nuestras.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "García Lorca y el flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-17",
+    "page_number": 12,
+    "word_count": 8641,
+    "article_char_count_full": 52507,
+    "article_char_count_review": 3205,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombres"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-05-18-left-v-semana-de-estudios-flamencos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n«E n el frontispicio de la V Semana de Estudios Flamencos que hoy presentamos, figura un nombre paradigmático en la historiografía del cante: Pastora Pavón, «Niña de los Peines». El aniversario centenario de su nacimiento ha pasado casi inadvertido y sólo ha merecido la atención de alguna reseña aislada en secciones especializadas de periódicos y algún que otro artículo de fondo en las revistas de Flamenco. Y es que, en realidad, falta por hacer la monografía que abonde en la personalidad y significación de quien, sin duda, debe catalogarse como la cantaora más completa de todos los tiempos. Pastora Pavón es, ante todo, síntesis y muestra emblemática de la propia evolución del cante, el cual desde un principio, alimenta sus contenidos con referencias folklóricas, con músicas triviales,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"voz\"]\n\ne Flamenco. Y es que, en realidad, falta por hacer la monografía que abonde en la personalidad y significación de quien, sin duda, debe catalogarse como la cantaora más completa de todos los tiempos. Pastora Pavón es, ante todo, síntesis y muestra emblemática de la propia evolución del cante, el cual desde un principio, alimenta sus contenidos con referencias folklóricas, con músicas triviales, entresacadas de concretos entornos, pero que, en la voz de la “Niña de los Peines” adquieren carta de naturaleza jonda». Así comenzaba Ramón Porras la presentación de la V Semana de Estudios Flamencos que la Peña Flamenca de Jaén ha desarrollado, bajo el patrocinio del Excmo. Ayuntamiento de la capital, durante los días que van del nueve al doce de mayo. Una semana exclusivamente dedicada a resaltar y evocar la grandeza cantaora de Pastora Pavón. Nueve de mayo. Conferencia de Ramón Porras sobre «Instituciones y Flamenco». Recital a cargo de Eduardo Martínez «Niño Jorge», con la guitarra de Paco Aguilar. A lo largo de su exposición, el director de Candil va relatando cómo el flamenco ha sido reconocido por las instituciones, citando la fecha de 1863 como la que marca el citado reconocimiento, siendo la reina Isabel II, en su viaje por Andalucía, la que lo efec\n\n[ENDING CONTEXT]\n\nsingularidad, otro tanto sucede con la joven guitarra de Vicente Amigo. El dominio que muestra en el acompañamiento, la sincronización y el entendimiento mantenido con el cantaor, el saber andar con soltura por los estilos, la frescura, naturalidad y fuerza que tiene su toque, así como la creatividad mostrada con sus composiciones, hacen de Vicente Amigo uno de los tocaores con más porvenir en la actualidad.\n\nEsta es la crónica sucinta de una V Semana de Estudios Flamencos que ha querido resaltar la gran figura de Pastora Pavón «Niña de los Peines», en el centenario de su nacimiento.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "V Semana de Estudios Flamencos",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "18-19",
+    "page_number": 18,
+    "word_count": 1581,
+    "article_char_count_full": 9742,
+    "article_char_count_review": 2883,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "voz"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-05-19-right-juan-moreno-maya-el-pele-y-vicen",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nC on serena seriedad y carácter desenfadado respectivamente, Juan Moreno Maya «El Pele» y Vicente Amigo, recibieron a este ocasional entrevistador a fin de mantener un diálogo que fuera ciertamente clarificador de cuáles son los criterios, los sentimientos y las iniciativas que ambos artistas cordobeses mantienen sobre el arte flamenco. Y he de confesar que el diálogo mantenido con ellos, creo, ha sido fructífero en cuanto a dejar bien matizadas cuáles son sus actitudes y cómo han llegado a concretarlas. —¿De qué forma llegasteis al flamenco? ¿Existen antecedentes familiares?\n\n—J. M. De nacimiento. El artista, la persona, el aficionao se va haciendo con el tiempo, sobre la brecha, a base de fatigas y estudios. En cuanto a mis antecedentes familiares, puedo decir que mis padres son\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"gran\"]\n\nellos, creo, ha sido fructífero en cuanto a dejar bien matizadas cuáles son sus actitudes y cómo han llegado a concretarlas. —¿De qué forma llegasteis al flamenco? ¿Existen antecedentes familiares? —J. M. De nacimiento. El artista, la persona, el aficionao se va haciendo con el tiempo, sobre la brecha, a base de fatigas y estudios. En cuanto a mis antecedentes familiares, puedo decir que mis padres son aficionaoas. Por otra parte, mi tío era un gran siguiriyero, se llamaba «El Niño Bronce», pero yo no lo he podido escuchar porque murió y no ha dejado ninguna discografia. Particularmente yo comencé de chiquitito escuchando, estudiando... —V. A. En mi casa no hay antecedentes musicales, ni relacionados con el flamenco, ni nada de nada. Lo mío es ciertamente raro. Dice mi madre que cuando tenía tres años, cogía un palo y hacía como que tocaba la guitarra. A mí me ha gustao siempre la música y la guitarra más que ningún otro instrumento. Comencé a tocar la guitarra con ocho años. —¿Quién te compró la primera guitarra? —V. A. Mi padre para Reyes. Estaba yo dándole mucho la vara... En mi casa somos ocho hermanos y tuve que darle bas- tante el coñazo para que me comprara la guitarra. —¿Se ha opuesto la familia a que entra- rais en el mundo del espectáculo? —J. M. Al contrario. Siempre hay una fiestecilla formal que lo propicia. —¿Es cierto que comenzaste a cantar en público a los catorce años? —J. M. Bueno, fue antes. Con once años participé en el Concurso Nacional en el cual me dieron un accesit. Recuerdo que ese año estaba allí, no sé si como jurao, Juan Talega. Recuerdo también que cantando yo por siguiriyas, tuve que hacer esa misma letra sentado en las piernas de Juan Talega y después de cantar vi cómo lloraba... -¿Qué te dijo? —Además de Juan Talega, ¿había en esa reunión más cantaores? -J. M. La verdad es que no te puedo contestar a esto, porque no lo recuerdo. Lo que sí recuerdo es la expresión de su cara, que no se me olvidará nunca.\n\n[ENDING CONTEXT]\n\n\\underline{i} $cho t $ \\underline{o} $o\n\n-¿Y don Antonio Chacón?\n\n—J. M. Ha sío un hombre al que le deben muchísimo los aficionaos. Se deberían de haber grabao todos los cantes que él hacía. A pesar de esa falta de grabaciones de Chacón, las que hay, a la juventud nos ha venio como anillo al deo.\n\nAntes de terminar, quiero manifestar que, aunque como te he dicho antes, comencé con once años, es a partir de la presencia de Antonio Montoya en Córdoba, que me coge con la vara y me dijo lo que tenía que hacer y el trabajo que había que desarrollar, que creo que tengo el sitio que me corresponde.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Juan Moreno Maya «El Pele» y Vicente Amigo",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-21",
+    "page_number": 19,
+    "word_count": 3567,
+    "article_char_count_full": 19683,
+    "article_char_count_review": 3587,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "gran"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-05-22-left-vii-trofeo-lucas-l-pez",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLa concesión del Trofeo Lucas López a los guitarristas Juan Carmona «Habichuela» y José Fernández Torres «Tomatito» constituye una novedad en la historia de dicho galardón que anda ya por su séptima edición. En efecto, todos los premios anteriores fueron a parar a manos de cantaores (por orden cronológico a don Antonio Mairena a título póstumo en 1984, Camarón de la Isla, Pansequito, José Mercé, Calixto Sánchez y José Menese). Es la primera vez que el toque de acompañamiento recibe este trofeo que premia a la mejor actuación realizada en la Peña el Taranto durante el año.\n\nEl Toque (a la memoria de Sabicas)\n\nSi el cante centra la atención de la afición flamenca, hay que recordar que éste alcanza su plenitud con el continuo apoyo de la guitarra. Aunque los cantes primitivos no se\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"técnica\"]\n\nla mejor actuación realizada en la Peña el Taranto durante el año. El Toque (a la memoria de Sabicas) Si el cante centra la atención de la afición flamenca, hay que recordar que éste alcanza su plenitud con el continuo apoyo de la guitarra. Aunque los cantes primitivos no se acompañaron de instrumentos, la guitarra flamenca o andaluzaparece a mediados del siglo XIX como acompañamiento único y propio del cante $ ^{1} $. Inicialmente carente de técnica y limitado a dar tono y compás a los cantaores, el toque de acompañamiento ha ido evolucionando con la incorporación de nuevas técnicas, generalmente asimiladas de la guitarra clásica, y creaciones originales de los tocaores. En este sentido, cabe recordar aquí las cinco escuelas apuntadas por Manuel Caño que nos confirman la gran evolución de la guitarra flamenca: escuela primitiva constituida por guitarristas no conocidos sonoramente; el Montoyismo o escuela influenciada por la aportación personal de Ramón Montoya Salazar; el Ricardismo o escuela derivada del Niño Ricardo; el Sabiquismo que irrumpe posteriormente y es seguido por los admiradores de Agustín Castellón «Sabicas» y la escuela libre que es la de todos los guitarristas personales². Nos permitimos añadir el bordón o sexta, la escuela moderna, encabezada por Paco de Lucía, Manolo Sanlúcar y Víctor Monje «Serranito», escuela que predomina hoy en día entre las más jóvenes. El toque tiene su propio léxico dentro del «argot» flamenco y puede ser airoso si es ágil, flexible rítmicamente y con gracia; bonito si tiene una sonoridad agradable y ligeramente débil, con tendencia a endulzar los pasajes rítmicos y melódicos; corto si tiene pocos recursos técnicos y repertorio; gitano o flamenco si pellizca con coraje; frío si carece de pellizco; largo si revela un extenso conocimiento técnico e interpretativo; sobrio si es templado, reacio a ornamentos, serio y\n\n[ENDING CONTEXT]\n\nTORRES CORTÉS. «Riqueni y Tomatito en la plaza del pescao», Boletín Informativo de la Peña el Taranto, núm. 19, diciembre 1987.\n\n16 La casa Philips acaba de volver a editar todos los discos de Camarón de la Isla con Paco de Lucía, para deleite de toda la afición.\n\n17 Queremos destacar una curiosa coincidencia. Niño Ricardo ha sido el primer punto de referencia en la inspiración de Paco de Lucía a través de su hermano Ramón de Algeciras y del propio Manuel Serrapi que visitaba a la familia Gómez. A su vez Juan Carmona el «Habichuela» y Tomatito han bebido en las fuentes de Ricardo y de Paco.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "VII Trofeo Lucas López",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "trofeo_section",
+    "pages": "22-23",
+    "page_number": 22,
+    "word_count": 2874,
+    "article_char_count_full": 17265,
+    "article_char_count_review": 3506,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "técnica"
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_10::A3",
+    "article_text_for_review": "FLAMENCO GRINGO I have been an aficionado for 20 years and was delighted to find Jaleo magazine. At first I read it from cover to cover, then the print became smaller and smaller and harder to read. Probably this was to accommodate more boring articles, writer second-hand, about someone I've never heard of who studied with so-and-so and got good enough to go on tour. And that's the end of the article, the article reflecting no personal experience with flamenco. This is what inspired me to submit this crank article. In fact this article is so bad that my wife said Jaleo would cancel my subscription if I sent it in. Insincerely Yours, Sadhana Tucson, AZ \"FLAMENCO GRIGO\" While still inside her mother's womb, she learned to master the complex rhythms of southern Spain. Her mother was a professional cock-roach stomper from Tarrta, the gypsy quarter of Seville. Her father was also a professional exterminator who, in spite of his handicap of being completely deaf, played the electric guitar. By tuning various controls on his amp until his false teeth would vibrate, the roaches would run for cover. That's when the real stomping would begin. With instructions from her parents she traveled to such places as: Harlem, N.Y., Bast St. Louis, MO., South Side Chicago, IL., completing her knock-out tour in Watts, CA.. Occasionally, for economic reasons, they had to perform in nightclubs which she detested, preferring the quiet life in the day care center. But this was not to last, as they were off on tour through Mexico City and South America. When In sane all roads lead to Ma-dread, where she studied with such well known names as; Truly Noler the Exterminator and Arnold Throw-a-dagger. She mastered such dances as Bowling-reas at Victor Lanes. Unfortunately she dropped a ball on her big toe, which became infected and was truly in com-puss. This proved to be a turning point in her life. She took the stage name Surely Insane and studied contour, both rough and harsh, with such well-known artists as; Cheech and Song and Mario Escon-tar-o from Labras, CA.. It was the pits! Today she is living in seclusion with her husband, Paco de Taco, and their three peppy boys, Manny, Moe and Jack, who are also learning the art of stomping. In closing, she wants to reveal her secret of wrinkling up her face in disgust when gooing a bug beneath her foot. Remember, the French language is for \"amore\", Japanese is for technique, English is for business and spanish is for pain! ￥ * * THE FRAME STATION The Finest in Custom Picture Framing 20% DISCOUNT TO ALL MEMBERS OF JALEISTAS 1011 FORT STOCKTON OPIVE SAN DIEGO, CALIFORNIA OWNER TOM SANDLER (714) 298-8558 (Hillcrest/Mission Hills area) Solo Guitarist by Ken Sanders ©Copyright, 1984 Alone he sits or so it seems. The solitary one, Absorbed in his own little world. In the midst of, yet separated from The chaotic masses. Whose constant chatter turns into the roar Of some imaginary zoo or circus, As Daniel in the Den of Lions, With the Guardian Angel of Mercy. The first few notes majestically pierce the air. Like the rays of a new dawn. Revealing a mysterious world of melodious beauty and wonder. Past reflections skyrocket and explode. In a picturesque display of blinding speed and passionate fury. Like the Arctic Northern Lights, Feelings too deep for words blossom harmonically. Within poetic phrases of flaming musical expression. Secret dreams and aspirations are unveiled. In a dramatic sound painting of spirit and emotion. A fairy tale atmosphere of mystery and bold adventure appears And serenely surrounds. Soaring high above the clouds, The spirit hovers over, touches and awakens Something of priceless beauty, value and worth, Deep inside the soul. Truth shines forth... Fly on noble messenger. Dance Espanhol Incorporated Proudly Presents The Juan Talavera Spanish and Flamenco Dance Workshop For Beginner and Intermediate Dance Students asr Call (213) 699.9855 For Detai",
+    "title": "PUNTO DE VISTA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4-5",
+    "page_number": 4,
+    "word_count": 660,
+    "article_char_count_full": 3951,
+    "article_char_count_review": 3951,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A4",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Frank Campbell Mariano Córdoba, one of the best known exponents of the flamenco guitar in the United States was born in 1924 in the small town of El Vado, deep in the heart of the Province of Castilla. The fourth of eight children in a family of modest means, Mariano demonstrated great interest and talent for the guitar at a very early age. When he was ten years old, the family moved to Madrid in search of better fortunes. His beginning in the Capital were marred by countless setbacks and misfortunes which would have easily discouraged a lesser man. His early years are beautifully described in a moving biographical account contained in his book \"Flamenco Guitar\" (Oak Publications, 1971), which is highly recommended as a model of inspirational reading. The death of his father and the\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Mariano\"]\n\nter fortunes. His beginning in the Capital were marred by countless setbacks and misfortunes which would have easily discouraged a lesser man. His early years are beautifully described in a moving biographical account contained in his book \"Flamenco Guitar\" (Oak Publications, 1971), which is highly recommended as a model of inspirational reading. The death of his father and the painful years of the Spanish Civil War proved to be further tests of Mariano's resilience and courage. His persistence finally began to pay off however, and in the early 40's his efforts began to meet with some artistic successes. His budding career was interrupted in a hitch in the Spanish Army, to be resumed a few years later with ever increasing success. Mariano Córdoba is not only an outstanding performer and teacher, but an extraordinary human being as well. He is an individual gifted with genuine warmth, friendliness; humility, true concern for others, and a keen sense of humor. It has been an honor to have him as a teacher, and a privilege to have him as a friend. We have touched upon a wide variety of subjects with Mariano during the course of our many conversations, ranging from studying techniques, composing, performing in public, to health enhancement. While much more could be said about his amazing career, I have chosen to emphasize his role as a teacher of flamenco, his first love, and one for which he is particularly suited. It is somewhat of a paradox to find this extraordinary flamenco artist living in the heart of the Silicon Valley, the capital of American high-tech industry. Far away indeed from the Castillian countryside in more\n\n[ENDING CONTEXT]\n\nfrom Japan, China, and Korea respectively. Different styles, aiming at self defense, that complement each other. They require concentration, and like music, you must memorize some variations. There are seven levels, or belts in this school. White, orange, purple, blue (which I have), green, brown, and black. They reflect knowledge and skills. J: Do they help to play the guitar? MARIANO ACCOMPANYING ANTONIO, FLORA ALBAICIN AND CANTAOR MANOLO VERAS, PARIS 1953 WITH BALLET DE ANTONIO 1953 LEFT TO RIGHT: ANTONIO ALBAICIN, MARIANO CORDOBA, \"EL MORAITO DE JEREZ,\" ANTONIO MAIRENA, FLORA ALBAICIN\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "CONVERSACIONES CON MARIANO CORDOBA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "6-12",
+    "page_number": 6,
+    "word_count": 3934,
+    "article_char_count_full": 21593,
+    "article_char_count_review": 3272,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Mariano"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_10::A5",
+    "article_text_for_review": "Sept. 12--\"Noctumo a la guitarra, y-a Sevilla\": Felix Grande, Rafael Riqueni, Romero Sanjuán, in the gardens of the Torre de Don Fadrique. --\"Giraldillo de Baile\": Mario Maya and his theater flamenco; including Rafael de Alacalá, Concha Távora, Juan Fernández, Pepa Herrera, Isidoro Carmona, Paco Carrillo, Manuel de Paula, Miguel López, Juana Amaya, Pilar Heredia, Charo Cruz, Juan de los Reyes, José el Lele. Sept. 13--\"La Casa de Los Habichuela\": Juan, Pepe, Luis, and Carlos Habichuela, José Menese, José el de la Tomasa, Carmen Linares, Tía Marina Habichuela, Manolete and Manolo Santiago. Sept. 14--Orquesta Bética Filarmónica, Victor Monje \"Serranito,\" José L. Gomez. Sept. 15--Manolo Sanlúcar. JALEO - OCTOBER/NOVEMBER/DECEMBER 1984 Sept. 29--\"Homenaje a San Juan de la Cruz.\" Enrique Morente. \"Clásicos.\" Sept. 30--Manolo Cano. Oct. 1 -- Eduardo Falú. Oct. 2 --Manolo Castillo. Oct. 3 --The Guitar Chamber Orchestra of Madrid, Jorge Cardoso. Oct. 4 --Pepe Romero. Oct. 5 --Paco de Lucía. Oct. 6 --Orchestra of Música Andaluzia. \"Camino\" Oct. 7 -- Camarón and Tomatito. Oct. 8 --Juan Peña, Pedro Peña, La Perrata, and Pedro Bacán. Oct. 9,10,11--\"Giraldillo de Toque\" (finals of the contest of Professionals): Pedro Bacán, Manolo Franco, Paco del Gastor, Rafael Riqueni, José Antonio Rodríguez, Tomatito. Oct. 11 -- \"Fin de fiestas,\" with Los Montoya. Oct. 12 -- \"Maestros\": Calixto Sánchez, Enrique de Melchor, Mario Escudero, Matilde Coral, El Mimbre, Rafael Fernández, Manolo Demínguez, Chano Lobato, Paco Arriaga. * * * COMPLETE SUCCESS FOR \"LAS NINAS\" [from: El Correo de Andalucía, Sept. 25, 1984; sent by Brad Blanchard; translated by Paco Sevilla] by Manuel Rios Vargas In the patio of the Hotel Triana on the 17th a great flamenco event took place under the auspices of the III Bienal de Sevilla -- the day, \"In the Memory of Diego del Gastor.\" The place was filled by a public that wanted and The other dimension of Triana, mysterious and distinctive, was given by Farruco, who danced a long time por scale, in spite of the delicate state of his heart. In the baila flamenco, Farruco represents secrecy, tragedy, rebellion, and the sublimation of all that into a radically personal art; he eletrified the audience in a number of moments with the greatest communicative tension that has been experienced in the Bienal up until that time. Tha \"Alameda\" cycle began in tha Plaza del Lucero, with a show called \"Musicas del Sur,\" where the old Andalucian folklore--La Alpujarra, El Alesno, and the ancestrai baile de cascabeleres--was brought together. The other three concerts that made up this cycle were the best of the cora of flamenca in The Blenal. In the first one, the performance of Manolo Fregenal stands out; he had an exquisite taste in this interpretation of his fendangos and hularias with an ancient but very facil thread of voice. The married couple, Tomasa/Ples de Plomo, performed separately, he with some magnificent soleares, she singing emotionally por siguiriya with cantes of Manuel Torre that she learned as a child seated on the knees of the giant, Chocolate; who also demonstrated his quality, insisting on very long tercios of siguiriya. \"Lo que es Cádiz\" was the second of these concerts that were nourished primarily by non-professional artists who have the authentic flamancn \"stuff.\" In this, as in the others, there was a notable difference between the individual performances and those of the fin de fiesta [grand finale]; this is understandable, not only because of a lack of stage experience, but because the fin de fiesta often reaches the point of being a staged version that resembles a flameaco gathering where there are the best circumstances for the production of this art. Gracia gaditana overflowed frnm Jinetn, Felipe Scapachin, Chini, Curro, La Gamba, and Pablitos, among nthars. \"La Fragua de Tío Juani\" closed the \"Alamada\" cycle on the 25th... The first scena in the show was a string of tonás and martinates by Tío Juani and his snns, El Gordo and Nano de Jerez, while they made a metal tool on a portable forge placed on the stage. Usually, with reason, there is criticism of the dramatic flamenco shows that have been done in recent years. But we have here a flamenco show of quality; the actors are not pretanding, because they represent the role that they live every single day, where the symbolic content of the forging of metal and cante flourishes all around them. The stark execution of the martinetes transports us to the origins of flamenco. For the first time, the strikes of the hammer on the anvil sound as authentic as the martinetes of the family of Tío Juani. If this representatinn of the forge refers to the birth of the cante, the postscript of the second part overflowed with demonstrations of the complexity, delicacy, and harmony that flamenco has achieved today; it was a fin de fiesta that the audience--entranced--extended by calling for the artists to come back again and again. There was the ancient beauty of Tía Juana de El Pipa, the tremendous sparceness of the cante of Tía Anica la Piriñaca, the spendor of the dance of Luisa Torra, the miniature and tiny steps of La Tita--to mention just the older, venerated artists. The \"Vanguerdia\" cycle has created the greatest arguments up to this point; it is debatable whether there is any connection between the paths of some of the musicians who were included and flamenco. An exception was the performance of Toti Soler, whose guitar incorporates very diverse musical influences and then molds them into a personal sound. In some of his compositions there were perceptible flamenco meters or phrases that had been learned from the fountain of Diego el del Gastnr. * * *",
+    "title": "III BIENAL DE ARTE FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13-15",
+    "page_number": 13,
+    "word_count": 941,
+    "article_char_count_full": 5709,
+    "article_char_count_review": 5709,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A6",
+    "article_text_for_review": "[from: El Correo de Andalucía, July 24, 1984; translated by Paco Sevilla] by Emilio Jiménez Diaz The basic definition of the word \"modorra\" given by the Royal Academy is \"...a heavy and dazed drowsiness.\" It ignores whether this word was invented with an eye on the future, to be included in the abundant lexicon of the summer flamenco festivals, in which the public becomes sleepy from boredom on not a few of the long nights. Clearly, there are many aficionados who are attentive to the artistic development of the program, but it is also true that, in these artistic celebrations of the long Andalucian summer, the bored \"modoros\" exist and far out number the stoic \"cabales\" [knowledgeable aficionados]. It is not necessary to call a fortune teller, nor use a magic crystal ball, nor even be especially intelligent to figure out the causes that so often produce this falling of the eyelids and people wandering in the aisles, because it is clear that the principal reason is boredom, boredom produced, no doubt, by lack of imagination on the part of the artists, who do not renew their repertoire, do not change, and continue with the same program for eight, ten, or twelve years; on some occasions boredom is produced by a poor combination of artists, or all the singers doing the same styles -- festeros, or from the Levante, for example -- when the ideal would by, if possible, to present a variety; boredom -- why not -- due to the length of the events, making it impossible for an audience to remain attentive, while sitting in seats that are normally uncomfortable, for six to eight hours of performance. Anyone who possesses a minimum capacity for observation will have been able to contemplate the signs, worthy of being captured by an expert camera: mouths hanging open, eyes that open and close intermittently, legs that cross and uncross, signaling an unusual nervousness, chairs that move as the occupant looks for an impossible position of comfort, etc. This is the \"modorra\" and, as we said, there are many \"modorros,\" conquered by boredom. A few days ago, some organizers in a town near Sevilla gave testimony to what I write today, saying: \"Es que no se púe aguantá, es que siempre lo mismo, lo mismo y lo mismo, eso sí, mancs el caché\" [It can't be put up with, its always the same, the same, and the same, that's how it is, except for their pay!] So let the artists at least change their repertoires; they must have something new to say through their cante! Because there are \"madorros\" who start right away, during the second or third cantacr; others start about two or three in the morning, and some -- such as the mayors, authorities, and invited guests who have no choice but to put up with it and show a false satisfaction all through the night, with their obligatory ear-to-ear smiles -- begin to carry out their special function almost at the end of the festival. The worst that will happen if the festivals continue in this \"moderrera\" line, is that the general drowsiness will pass into stupor, that morbid and unforgiving state of sleep. From \"modorra,\" dear reader, to \"soporra\" [stupor]. The sum will not permanently go down with the summer flamenco festivals, but perhaps, due to the lack of imagination, boredom is the danger waiting in ambush. Sodom and Gomorra.",
+    "title": "MODORRA Y SOPORRA FESTIVALERA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "16",
+    "page_number": 16,
+    "word_count": 571,
+    "article_char_count_full": 3299,
+    "article_char_count_review": 3299,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_10::A7",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nINTRODUCTION FROM THE TRANSLATOR: Antonio Mairena died a little over a year ago, and during this year, flamenco circles in Spain have been inundated with posthumous articles, records, etc. I chose to translate and send this article, originally published in the Granada newspaper El Ideal in November 1981, and republished in a special issue of Sevilla Flamenca dedicated to Antonio Mairena, because it gives a very deep and personal look into the decadent years of the opera flamenca - when the flamenco we hear today really had to struggle to survive - and for its unique look into the cauldron where flamenco artists were - and still are - born. Also, in the anecdote of el Piyayo, substance is given to an opinion I have often heard in Spain - that Antonio Mairena was a great creator of cantes\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"Mairena\"]\n\nldron where flamenco artists were - and still are - born. Also, in the anecdote of el Piyayo, substance is given to an opinion I have often heard in Spain - that Antonio Mairena was a great creator of cantes who humbly pegged onto his creations the mythical names of artists from the past. \"I WAS AS STRONG AS A HORSE\" [submitted and translated by Brad Blanchard] by José Delgado and A. Ramos Espejo The door of our office has been opened by Antonio Mairena, entering and taking off his hat. He wears shoes with silver toes, a shirt for fiestas, and the Pharoah-like composure of 72 years of living and of first-class art. His hands while talking, stretch, shrink and twist to give reverence to the words. Mairena is the genius of the Andalusian expression called cante. His biography, recitals, records and books are of a child in a blacksmith's shop in Mairena de Alcor, Sevilla, who takes off singing, doesn't stop, and flies through the world which inspires him and crowns him with Liaves de Cro del Cante Flamenco: \"Ever since I had use of my reason, I was a blacksmith. My father and grandfather were blacksmiths too. All of my grandfather's brothers were blacksmiths. When my father married he opened his shop. I was the second child, because there was a girl older than me who died almost when I was born. Then I remember, as a tot, working at the smithy fire.\" --So you traded school for the shop... \"Because my father needed me. After school he had me pump the fire. I went to school some days and sometimes. Sometimes I went to the state school and other times to private ones. I never went more than 4 days. I had to help my father. First in the shop, and when I was 13 and could do more, I did other jobs. And like that until 1922, when they had the 1st concursion d\n\n[ENDING CONTEXT]\n\n--And who is going to take the Llaves de Orn that you possess? \"There are some muchachos who are in gond form. Because of the position I occupy, I am prohibited from printing them out. The material is spinning around. The great artists have been human beings. Chacón was; Juan Breva was. I'm not supernatural. I don't think this will end; it will exist while there is a world.\" --You said at the beginning that you had the strength of a horse. Now that you have the knowledge of a genius, how are you going to continue this work of the master? \"By trying to be as faithful as possible to the art.\"\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "ANOTNIO MAIRENA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_10",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 2150,
+    "article_char_count_full": 11567,
+    "article_char_count_review": 3405,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "Mairena"
+      }
+    ]
+  }
+]
+```

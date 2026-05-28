@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_01::A8",
+    "article_text_for_review": "Miguel becomes animated when he talks about flamenco where otherwise he is a bit diffident, even shy. He is quite sincere when he says flamenco is his life. \"Since I've been back from Spain, I've looked at flamenco a lot differently. Before, I looked at flamenco technically. I really emphasized technique, having a fast rasgueado (strumming) and brilliant paseo (melodic passage work). But now I've been more laid back and I feel more of a spiritual continuity with the guitar. I've not put my ego in front of my guitar.\" Debra, too, has had to pursue her art from a disadvantage: flamenco teachers are hard to come by in Denver. \"I've been traveling around the United States,\" she said rather plain-tively. \"No stationary place -- just wherever I can find an instructor. Las Vegas, and in New Mexico, Vicente Romero and Maria (Benitez) when she's there. There's plenty in California, but they don't stay in one place. Whenever you know of one coming to town, you try to make contact.\" The concert, as it now stands, will be highly traditional in its first half, beginning with a bulerías and progress to less traditional inventions by Miguel and Debra. Miguel wants to try out a flamenco version of \"The Impossible Dream\" while Debra and Nazmiye (Mrs. Montgomery in private life) do a cross-choreography for flamenco and belly-dance. Also joining the ensemble will be bassist Jim Trujillo. Tickets for the concert will be on sale at the church prior to performance time.",
+    "title": "GYPSY LIFE OF FLAMENCO CIRCUIT",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_01",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11",
+    "page_number": 11,
+    "word_count": 250,
+    "article_char_count_full": 1472,
+    "article_char_count_review": 1472,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_01::A10",
+    "article_text_for_review": "\"Master technique so that it can be forgotten.\" Paco de Lucía TREMOLO One of the best ways to get your tremolo round and even is to hammer it out slowly, in time with the metronome. Set one tick of the metronome for each note of the tremolo. Later, when you feel comfortable with it, set the tick for the first note of each tremolo figure. One way to warm up for tremolo is through the practice of free stroke scales i.m., a.m., etc., and arpeggios. (Refer to previous article Jaleo, Vol. VI, No. 6 and No. 10). The flamenco tremolo is executed P.I.A.M.I. and the classical tremolo is done P.A.M.I. It is usually executed entirely free stroke, though thumb rest stroke can be used to accentuate a bass note or to bring out the bass line. A powerful thumb free stroke can produce a similar effect. It is important to be aware that the melody usually lies in the upper voice and should be louder than the accompanying bass line. Sometimes certain notes of the bass line are accented in order to produce a dramatic effect, etc. Incorporating ligado in either the bass line (played with P.), or the higher voice (played with I.A.M.I), serves to decorate or ornament the tremolo figure. It is similar to the way an artist embellishes his oil painting with highlighting brush strokes, shadings, etc. When the ligado appears in the bass, notice where the important thing again, is it in accurate rhythm. Keeping Don't rush it. One way is to play the ligado-tremolo figure several times slowly, without the ligado (one tick of the metronome for each note). Then incorporate the ligado in time with the metronome. Repetition and many hours of practice will make it smooth and fluid. Be patient. Give yourself plenty of time. Tremclo is a simple illustration of counterpoint, which is the study of voice leading (putting two or more melodic lines -- or voices -- together, so they correspond horizontally and invervalically). When Paco de Lucía performed in Los Angeles, October 27 and 28, 1983, at the Beverly Theatre with John McLaughlin and Al DiNeola, I had a moment backstage to ask about technique. I mentioned that when I attempt some of his picado passages, I choke, trip up, etc. Some classical guitarists advise pushing the string down more, towards the face of the guitar with the right hand fingers before releasing it. This achieves a fat, deep, more mellow sound in regards to tone control and production. I asked the maestro if there was something similar I could apply to better control high-speed picado and achieve an overall superior technique like he has. His reply was very honest: \"Forget about all that and just play. Play with feeling, soul. Play all the time and it will come to you.\"",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_01",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 471,
+    "article_char_count_full": 2699,
+    "article_char_count_review": 2699,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_01::A11",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nto reveal the true duende and the true marrow of flamenco. This primary birth is the meaning of flamenco in the first category, raw tradition to the core. In this day and age with so many artists, so many people stretching flamenco in all directions, which by the way, it can be stretched and still reveal its traditions, where can we find this tradition to respect? With so many rock arrangements, electric guitars, organs and interpretations resembling all forms of rock and roll, where can we get to the source? Where can we study tradition and get past the steps and really get to the roots so we can understand the art form better in its natural form, its intended uniqueness? Obviously there is no one single answer but it is a question that I feel everyone studying flamenco should ask\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"source\"]\n\ne get to the source? Where can we study tradition and get past the steps and really get to the roots so we can understand the art form better in its natural form, its intended uniqueness? Obviously there is no one single answer but it is a question that I feel everyone studying flamenco should ask themselves and start to use their instinct, intuition and desire to find it for themselves. I have already suggested that it is necessary to go to the source, to Spain, to the ambiente of flamenco which can start in the back alleys of Southern Spain. I have always felt the importance of going to this flamenco ambiente, not just Southern Spain, but anywhere which has given birth to flamenco. This, along with the study from knowledgeable artists and a strong inquisitive nature, will help bare the roots of flamenco tradition. It is more osmosis than pure analysis. It is experiencing the why, what, where and how, by doing, not by asking or studying only. Respect for tradition seems obvious but many times we bypass this basic foundation because we get caught up in the now, the immediate titillation of the movement. The fact is that it is the tradition that gives substance to the now. It is the backbone of today's flamenco. I feel that all great artists who have found their unique style and express\n\n[ENDING CONTEXT]\n\nalso lectured on the subject. He was taught the art in Mexico. During the 1920s, he toured Mexico as the dancing partner of Spanish dancer Dorita Coprano, and traveled extensively throughout Latin America. He received the Condor of the Andes decoration from Bolivia, Vasco Nunez de Balboa medal from Panama, and the Order of Civil Merit from Spain for his contributions to the historical records of the countries. He also worked as a logger in Western Canada, long-distance wire chief with American Telephone & Telegraph, as a bit player in movies, and a proprietor of a dance studio in Province.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "LEROY GLODELL: OBITUARY FLAMENCO IN CHICAGO-PART II:",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_01",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "13",
+    "page_number": 13,
+    "word_count": 1128,
+    "article_char_count_full": 6472,
+    "article_char_count_review": 2925,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "source"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1984_01::A12",
+    "article_text_for_review": "by George Ryss Bruné only builds the concert model guitar. He builds many more classical than flamenco guitars, but recently flamenco guitars have been shipped to New York with excellent reports by Brook Zern and others. Bruné has been experimenting with his own form of soundboard strutting. His Sonatas are fashioned after the Barbero and Manuel Reyes guitars. He has a sales agent in Vienna and has built guitars for clients in Germany, England, Guatemala, etc... I departed, but before I left we had combined in a farruca, soleares, peteneras, and siguiriyas on two of his guitars. I had left the master luthier but the music lingers on. * * * REB: Within each there is an infinite amount of variation possible, depending on the specie, growing conditions, how it was cut, and on and on. But generally, the spruce is a denser wood with a little wider growth pattern, and the spruce trees are not as old as the cedar. Spruce may be more subdued in volume, but often produces a more colorful sound; whereas the cedar tops tend to be louder and have a juicier, more \"Spanish\" sound. It's hard to describe a sound, of course. PH: I've heard that cedar does not have the long life span that spruce does. RFB: Not necessarily. As far as I'm concerned, there is no basis for that. I think that rumor got started because the bass strings on Ramirez guitars tend to go dead after about six years of playing. But that is not because of the cedar; more likely because of the bracing design. PH: Are there certain characteristics one could look for in a good piece of top wood? REB: It takes a lot of experience to tell. As you turn the guitar in the light and face it, you may notice the two halves of the top change color, which may mean there is runout in the grain. This is an indication that the top was not cut in the natural cleavage line of the tree, and therefore weak along the grain. Also, by looking at the rim of the sound hole, you can check the verticality of the grain. The more up and down the better. PH: You often hear people speak of the importance of the closeness of the grain. REB: Closeness of the grain is not that important. In fact, sometimes if the grain of a European spruce top is too close, the top gets so dense and heavy that the guitar sounds somewhat dead. The dark rings are denser than the light rings in a tree. The light rings are the spring growth and the dark rings are the summer growth. So a lot of dark things usually indicate a dense or stiff top which means it will take more energy to make it vibrate. PH: You come in contact with many guitarists. Do you see any trends in what they are looking for? REB: There is a very wide range of taste; now more than ever I think that may be a traditional hold-over in design. To compensate, the saddle should be positioned a little farther away from the twelfth fret than the distance of the nut to the twelfth fret. The Ramirez guitars have a slanted saddle to compensate. I place my saddle straight and just compensate all the way across. Remember, it is impossible to have any guitar that plays perfectly in tune, since it is impossible to divide a scale into twelve equal parts. That is the Pythagorean Comma. When you tune a piano you distribute the difference among the keys. The guitar has to compensate also. PH: Other stringed instruments last hundreds of years. How long could one expect a well-constructed guitar to last? REB: As far as physical endurance, the guitar should last as long as any other object made of wood. But guitars are very susceptible to humidity changes and people do not take good care of them. It only takes one or two bad winters of neglect to destroy a guitar. PH: How much does the guitar finish affect the final product? REB: The finish of a guitar is a real design feature, just as the bracing or type of wood. What it does for the sound (in terms of organizing and evening the color of sound up and down the fingerboard) is much like how a tint in the finish visually harmonizes the different woods. PH: So, refinishing an instrument could drastically alter the sound? REB: If you were to take the finish off of one of my guitars and put on a different type of finish because someone told you it was a better finish, it would not, in my opinion, improve the sound. With refinishing, the idea is to keep the same type of finish. The finish to a good guitar maker is an important design factor. PH: Is there any particular area in guitar construction that you feel needs improvement? REB: Yes. There is a certain presence in the quality of RICHARD E. BRUNE, LUTHIER, WORKS ON GUITAR IN HIS SHOP",
+    "title": "RICHARD BRUNE, AMERICAN LUTHIER",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_01",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14-16",
+    "page_number": 14,
+    "word_count": 850,
+    "article_char_count_full": 4611,
+    "article_char_count_review": 4611,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_01::A13",
+    "article_text_for_review": "Two items have been brought to our attention: The tapes of flamenco in Morón de la Frontera that are offered by The Zincali Recrónics [See ad in this issue] are very worthwhile and make for fascinating listening. It is about time somebody decided to share this music and permit us to hear some fine artists who are no longer alive. The following article describes an introduction to flamenco guitar presented in a book by Mariano Cócdoba. The music is written in both tablature (cifra) and standard notation, as well as in Spanish and English (a practice that is hard to understand); the 219 pages are therefore more like 110 pages. The material is clearly presented and, both technically and in music theory, goes from beginner to upper level beginner or perhaps low intermediate. [from: Guitar Player, July 1983; sent by Mariano Córdoba] Nearly every guitar teacher has thought about writing an instruction book. And for the small percentage of instructors who get past the idea stage and actually put a manuscript together, an even smaller number have their works accepted by a publishing company. But these days, fewec and fewer of those unaccepted tomes are gathering dust, because many authors are opting for publishing their work themselves. In fact, many writers are skipping the book companies altogether by self-publishing from the start. of course, the teacher who has an idea he believes in enough to spend a considerable amount of time and money on is to be admired. But he should also be warned: The risks ace high. Let's take a look at some of the disadvantages and advantages of publishing your own book. Obviously the guitarist who self-publishes runs the risk of losing a lot of money (although it's true you stand to make a lot more than the standard publishing royalty of 10% of wholesale if the book is a success). Printing a work yourself means that you'll have to pay all the printing and production costs, including typesetting, music engraving (if applicable), illustrations, graphics for the cover, etc. The reason most self-published books have amateur-looking graphics and use IBM type is to keep costs down. The difference between professional and do-it-yourself art can be hundreds if not thousands of dollars. And remember: These expenses precede the actual printing costs. For most teacher/author's budgets, producing a professional-looking book is out of the question. In addition to printing costs, there are advertising expenses to consider. Few if any teachers are so popular that they can rely on word of mouth to sell enough copies to offset printing expenses. And few distributors will handle a book that either isn't published by an established company or doesn't have a professional (and therefore saleable) look. That means the author is going to have to sell the book himself, which might entail hawking it at music stores or selling it through mall order. If mail order is attempted, ads in music-oriented publications will have to be purchased. Another drawback to publishing a book yourself is not having professional editorial advice. Major music book publishers often suggest constructive -- and often essential -- changes in a book's content, spelling, punctuation, and grammar, so that the author isn't misunderstood by the reader. This kind of fine tuning can mean the difference between a mediocre effort and one that uses economy and really gets to the heart of the subject. sut don't get the idea that all self-published books are money-losing failures. Many are well-done and published by the authors solely because they want to be their own boss -- and some are successful, too. Over the next couple of months Sheet Music will critique some of the many self-published books currently available. The highly respected performer/teacher/author Mariano Córdoba has just published his Traditional Flamenco Guitar, Vol. 1. While this 219-page volume starts simply, it quickly progresses to gather difficult material, and for that reason isn't recommended for absolute beginners. But if you already play and want to learn all about the passionate world of flamenco, this method is one of the best currently available. After an enlightening introduction, elementary technical exercises for picado (rest stroke), legato, arpeggio, and tremolo techniques are introduced. The remainder of the volume contains several of Mariano's arrangements of famous flamenco pieces, including sevillanas, fandangos, alegrías, and bulerías. Although the $30.00 (plus $2.00 p/h) price might seem steep, consider the quality of the contents and the scarcity of expert flamenco teachers, not to mention the fact that an invaluable cassette tape of the book's material is included. Flamenco Guitar is available from Mariano Córdoba, 647 E. Garland Terrace, Sunnyvale, CA 94086.",
+    "title": "MUSICAL NOTES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_01",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17",
+    "page_number": 17,
+    "word_count": 770,
+    "article_char_count_full": 4804,
+    "article_char_count_review": 4804,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

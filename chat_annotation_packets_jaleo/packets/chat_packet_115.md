@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_08::A13",
+    "article_text_for_review": "PHOTO COLLAGE BY MARY FERGUSON 1. Juana De Alva 2. Catalina Johnson 3. Loli Johnson 4. Pilar Moreno (also #8) 5. Yuris Zeltins 6. Eduardo Montemayor (guest artist - also #10,22,26,28) 7. Deanna (also #15, 21, 27) 9. Paco Sevilla 14.Jesus Soriano (also #16) 17. Stephanie Levin 18. Barbara Novak 19. Ernesto Lenshaw 20. Magdalena Cardoso 23. Rodrigo 24. David DeAlva 25. Remedios Flores 30. Juanita Ballardo 31. Miguel Ochoa",
+    "title": "JUNE JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20-21",
+    "page_number": 20,
+    "word_count": 70,
+    "article_char_count_full": 423,
+    "article_char_count_review": 423,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_08::A14",
+    "article_text_for_review": "This month's juerga will be held at the home of new Jaleístas members, Bart and Joan Boyer. Both are natives of California and as Bart says, \"raised on the Spanish culture.\" Bart has been a flamenco enthusiast for fifteen to twenty years and has gone out of his way to see available flamenco performances whether here in the U.S. or when stationed abroad in the airforce. Joan seems to share Bart's enthusiasm and they have been Friday night regulars at the Ocean Playhouse ever since the debut of Mosaicos Flamencos. Bart works as an engineer and Joan is an artist and draftsperson. In the brief time that the Boyer's have been members of Jaleístas they have lent these talents for Jaleo layout, assisted in collating the thousands of pages of Jaleo, helped set up for last month's juerga and offered their home for a juerga. We could use more members like these!! (Cuadro B will be in charge this month plus we will be trying a new experiment of drawing numbers for jobs at the juerga. For more details and cuadro members see the Junta Report.) DATE: August 22nd PLACE: 6874 50th Street (Baja Del Cerro) PHONE: 583-4251 TIME: 7:30 to? BRING: Tapas (Hors d'oeuvres), a warm wrap and a folding chair Donations: $5.00 for guests (non-members or non-Jaleo subscribers). Exempt are subscribers who live over 100 miles from San Diego or first guest of member holding single-plus-guest card. (Two guest Limit.) Directions: Take I-8 east off I-5, Waring Road north, left on Zion, right on 51st St., right on Havenwood St., right on 50th. It is the fourth house on the left. (Gazpacho - ) \"Tanidos de Guitarras,\" Luis Maravilla Westminster WL 5194 (1953) \"Danzas Flamencas, José Greco and Company\" Decca DL 9758 \"The Anatomy of Flamenco\" (cante) New Records, Inc. NRLP 5006 \"Justo de Badajoz\" Montilla FM 43 \"Luisa Triana, Temas de España,\" (w. Mario Escudero) Montilla FM 82 \"El Arte Flamenco,\" Carlos Ramos Spanish Music Center SMC 1004 \"Introduction to Flamenco\" Capitol T 10012 \"Mariano Córdoba,\" Capitol SP 8574 \"Antonio and the Ballets De Madrid\" London International TW 91341 \"Flamenco Guitar,\" Jerónimo Villarino RCA Victor LPM-1513 (1955) \"Musica Flamenca,\" Niño Ricardo Epic LC 3556 \"Juerga Flamenca,\" Columbia EX-5082 The secret to finding these things is persistence. It is not a good idea to merely leave your name in a store and wait for them to call you when something comes in. Store owners and employees forget and frequently don't know what they have in stock. I missed out on getting the Ramón Montoya solo record by letting my fingers do the walking once. A friend of mine got it by going to a store I had just called. They told me they never got any flamenco at all. I've noticed that the flamenco record market in Spain is slowing down a little. It is not true that flamenco is dying, but rather that the recording industry is probably in a slump in flamenco sales. Flamenco, just like any other product, must sell before investors continue to invest. How could anyone think that flamenco, especially the cante, is dead when people like Lebrijano, Aguejetas, Chocolate, Fosforito, Pansequito, Morente, Lole, La Negra, Chiquetete, Camarón, Turronero, Gabriel Moreno and Pepe de Lucía are around. Also we will be hearing more from people like Manuel de Paula, El Chozas, Salmonete, and Susi. They will continue to sing and create even if they don't record. In the meantime you may enjoy searching for these old records. What a great feeling it is to find one! --Guillermo Salazar",
+    "title": "AUGUST JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 595,
+    "article_char_count_full": 3492,
+    "article_char_count_review": 3492,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_08::A15",
+    "article_text_for_review": "by Paco Sevilla In case some of you are unaware of it, Paco de Lucía's latest album, with Al DiMeola and John McLaughlin, called \"Friday Night in San Francisco,\" is in the stores. This record, which features no flamenco, but a lot of guitar fireworks in a very linear and speed-oriented jazz idiom, was made live during the tour by the three artists last year. To find the record, you may have to look under each of the artist's names -- I found mine under DiMeola's name. Sources say that Paco will have another album (of his own) released very soon and it will be distributed in the United States, along with some of his other albums. More information on that as it becomes available. In addition, Paco's own new release has appeared in some stores and, according to sources, will soon be widely available in this country along with some of his other albums. The new album, \"Solo Quiero Caminar\" (Philips), will probably not please most flamenco aficionados, since there is a great deal of influence from Paco's recent jazz playing and nothing particularly new in the way of flamenco. Let's have some reviews by Jaleo readers with widely varied tastes.",
+    "title": "NEW RECORDS BY PACO DE LUCIA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "23",
+    "page_number": 23,
+    "word_count": 202,
+    "article_char_count_full": 1154,
+    "article_char_count_review": 1154,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_08::A16",
+    "article_text_for_review": "by Peter Baime Anyone who has either seen the Al DiMeola, John McLaughlin, and Paco de Lucía trio concerts, or heard the album, \"Friday Night in San Francisco\" (Columbia FC37152) had to be struck, as I was, by the incredible speed of these three. After thinking about it for a while, I felt compelled to calculate just how fast they really are -- and I mean down to the hundredth of a second. Before I embarked on this little venture, I knew the resulting information would shed dubious light on their collective creative energy, but if this is indeed the olympics, it could be treated in an appropriate fashion. There are passages on the album that are seemingly there for the exhibition of speed and agility on the fingerboard for its own sake. Some have little tone control, musical sensitivity, or grace of line and form. But, this is not a critique of the music, so down to the facts to be presented.",
+    "title": "GUITAR OLYMPICS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "article",
+    "pages": "23",
+    "page_number": 23,
+    "word_count": 163,
+    "article_char_count_full": 905,
+    "article_char_count_review": 905,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_08::A17",
+    "article_text_for_review": "by Paco Sevilla JUAN SERRANO FLAMENCO CONCERT SELECTIONS, a Mel Bay Publication. 1981. (Mel Bay Publications; Pacific, MO 63069) $9.95, 200 pages. Another excellent collection of flamenco music has been added to the available guitar literature. Juan Serrano offers a collection of twelve concert level pieces, including verdiales, peteneras, zambra (danza mora), farruca, alegrias de Córdoba, siguiriyas, zapateado, guajiras, soleares, bulerías, and two rumbas. There is a cassette tape of the material available for $6.95. It is ironic (although typical of many flamenco artists) that Juan Serrano, who was once considered to be a modern, even avant garde, and very technical guitarist, now defends the traditional and, by modern standards, is a very traditional guitarist -- although one who tends to use many arpeggios and picados. Whether or not one enjoys Juan's style of playing, there is material in this book that should interest just about everybody. The advanced beginner will find bits and pieces that he can attempt to play. The intermediate guitarist will find selections that he can play and there are many variations of traditional themes that are worth study. The advanced guitarist can add to his repertoire, or just play through the music for the ideas -- there should be $10 worth of ideas for just about anybody. It always disturbs me to see a book that is twice as big and thick as it need be. The notes that precede the music are in both Spanish and English and often the printing occupies less than half of a page; there are pages of nothing but Arabic writing. The music is written in both standard notation and tablature (cifra); the tablature is written so large and with such large areas of blank space that it seems to be intended for the aged or the partially blind. With some conservation effort, the 200 pages could easily have been condensed to less than 100. Perhaps paper is not expensive and the book was padded to its actual bulk in order to give the buyer the feeling that he is getting his money's worth. If so, it certainly was unnecessary, since this collection of music is a bargain at $9.95. I have been unable, so far, to find out how this material can be ordered through the mail; for now, it will have to be purchased at your local music store. As soon as we get more information, we will make it available. ARCHIVO The Making of an Anthology by Caballero Bonald",
+    "title": "NEW FLAMENCO GUITAR MUSIC",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "article",
+    "pages": "24",
+    "page_number": 24,
+    "word_count": 413,
+    "article_char_count_full": 2407,
+    "article_char_count_review": 2407,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1989-11-6-left-isabel-fern-ndez",
+    "article_text_for_review": "Ministero de Ásuntos Exteriores Rotocolo\n\n(q. D. g.) Gran Maestre de la Orden del Mérito Civil en atención a las circunstancias que en V. concuren y oído el Consejo de la Orden, ha tenido a bien otorgarle el..... LAZO DE DAM de la expresada Orden del Mérito Civil. Me complexo en comunicarte a V., en Sunombre, la concesión de dicha gracia por medio de la presente Credencial, para su conocimiento y satisfacción, y al mismo tiempo encargo a la Cancillería que instruya a V. de los requisitos que debe llenar, a fin de poder formalizar el oportuno nombramiento y expedirle el Citulo que le dará derecho al disfpute de los honores, distinciones y uso de las Insignias que le corresponder. Dios guarde a V. muchos años. Madrid, 24 de junio de 1989\n\nY Autori di Ushina SENORA DONA ISABEL FERNANDEZ CARRILLO\n\nEl Rey Juan Carlos, como Gran Maestre de la Orden del Mérito Civil ha concedido el Lazo de Dama a la baila-ora Isabel Fernández Carrillo, la gitana sevillana que tiene establecidos sus reales en la Roma imperial al frente de una academia de baile, que ha conquis-tado a los amplios sectores italianos entusiastas del flamenco. La Regina del Ballo Andaluso viene desarrollando una incansable y provechosa labor que de este modo ha sido reconocida por la repre sentación diplomática y cultural de España en la república transalpina y por todos cuantos allí aman nuestro arte flamenco.",
+    "title": "Isabel Fernández",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-6",
+    "page_number": 6,
+    "word_count": 237,
+    "article_char_count_full": 1387,
+    "article_char_count_review": 1387,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-11-6-right-viejo-carn-flamenco",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAnselmo González Climent\n\nPEPE MOTOS\n\nPepe Motos está lleno de vida y cordialidad. Su presencia y sus pensamientos desatan a su alrededor un clima energético difícil de eludir. Pese a su juventud, ya hay aficionados que lo estiman como un maestro en ciernes. Todo hace suponer que prontamente salte a primera fila como tocaor y concertista. Se siente vanguardista y lo es. Impugna el toque escolastizado —sin faltar el respeto ni la frecuente consulta de los pocos maestros que todavía graban, enseñan o actúan—. No para de ensayar y de estudiar porque no espera mucho de lo que el común llama inspiración. Hay madera.\n\n1 Soy gitano nacido en Madrid. Estudié con los Maristas. Fui un bachiller dejadizo. Sólo me interesó la guitarra. Por esta afición no pude rematar la carrera de abogado. El hecho\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"afición\"]\n\niar porque no espera mucho de lo que el común llama inspiración. Hay madera. 1 Soy gitano nacido en Madrid. Estudié con los Maristas. Fui un bachiller dejadizo. Sólo me interesó la guitarra. Por esta afición no pude rematar la carrera de abogado. El hecho es que entre libros abiertos y libros cerrados debuté con un do de pecho: al lado de Rosario y Antonio. Ya nunca más di marcha atrás. Había alcanzado meterme en lo que más deseaba hacer. 2 Mi afición me viene de familiaría. La guitarra ha sido como una prolongación de mi cuerpo y de mi alma. Mi primer maestro fue El Tripas. Posteriormente, completé estudios al lado de Ramón Montoya, no sin antes escaparme tantas veces podía a Villa Rosa. Alrededor de los quince años me pegué a Don Ramón, pero al ver poco a poco que su estilo era fácil, sin misterios, resolví iniciar estudios clásicos en flamenco. Creo que decidí bien. Tan mal no me ha ido. En 1950, y lo digo con orgullo, don Regino Sáinz de la Maza me elogió sin retaceos. 3 Lo realmente difícil, y p\n\n[ENDING CONTEXT]\n\nque una figura geométrica sin contenido. El cante jondo es una asociación tonta adherida a los toros (siendo Rusia y España los países que cuentan con mejor folklore). Que por siguiriγas se torea más lento es un tontería.\n\nEn cuanto a estética comienza en Lagartijo. Es plástica, es armonía musical. Ritmo, pero no melodía. El toreo, a la postre, es cuestión de empiria, mímesis, práctica. Esta es su verdadera razón al margen de las tauromaquias académicamente escritas. Niego, pues, la crítica en general.\n\nEn síntesis: la fiesta taurina abriga psicológicamente el sentido unamunesco de la muerte.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Viejo carné flamenco",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-10",
+    "page_number": 6,
+    "word_count": 4879,
+    "article_char_count_full": 28151,
+    "article_char_count_review": 2644,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "afición"
+      }
+    ]
+  },
+  {
+    "article_id": "1989-11-10-right-del-i-concurso-regional-de-cante",
+    "article_text_for_review": "V eintiocho cantaores de la província de Jaén se han inscrito en la fase provincial del I Concur-\n\nso de Cante Flamenco de la Comunidad Autónoma Andaluza, que organiza la Confederación de Peñas Flamencas con el patrocinio de la Consejería de Cultura de la Junta de Andalucía, cuya final regional tendrá lugar el día 24 de marzo en Córdoba. En ella estarán presentes ocho cantaores, uno por cada província de Andalucía.\n\nEn la última reunión celebrada por la Federación Jiennense de Peñas Flamencas en la localidad de Arjona, y mediante sorteo, quedaron establecidas las localidades en las que se desarrollarán las distintas fases, y que son las siguientes:\n\nLa primera de las siete fases tendrá lugar en Martos, el día 19 de enero, en la que intervendrán los cantaores José Caballero de Andújar; Francisco Marín, de Jódar; Francisco Expósito «Paco El Pecas», de Andújar; y Diego Sánchez, de Jódar. El día 26 se celebrará la segunda fase que tendrá lugar en Linares, en la que intervendrán Evaristo Marín, de Andújar; Paco Sánchez, de Ubeda; Joaquín Martínez, de Bailén; y Juan Marín, de Baeza.\n\nLa tercera fase selectiva tendrá lugar en La Carolina el día 27, en la que participarán José Heredia, de Linares; Santiago Gámez, de Jódar; Sebastián Moreno, de Baeza; y Antonio Jiménez, de Ubeda. La siguiente fase clasificatoria se celebrará el día 2 de febrero en Bailén, con los can-\n\ntaores José Pérez, de Linares; Juan Sánchez, de Navas de San Juan; Pedro Avilés, de Torreperogil; y Niño Jorge, de Jaén. En Jódar se celebrará la siguiente fase el día 3 en la que participarán Francisco Delgado «El Tato», de Ubeda; Gabriel Muñoz, de La Carolina; Blas Morillas, de Bailén; y Agustín Navarro, de Linares. La penúltima fase tendrá lugar el día 9 de febrero y se celebrará en Ubeda, y actuarán Lino Díaz, de Jódar; Carlos Cruz, de Villacarrillo; Antonio Cortés, de Andújar; y Antonio Fernández, de Torreperogil. La última fase tendrá lugar en Arjona el día 10 con la participación de Juan Pablo Expósito, de Ubeda; Nicolás Serrano, de Ubeda; Cristóbal Beltrán, de Jódar; y Juan Jiménez, de Baeza.\n\nA la final llegarán siete cantaores y se celebrará en Jaén el día de 24 de febrero.\n\nEstas fases selectivas serán organizadas por la peña local de cada una de las ciudades a las que se le han asignado, pudiendo realizarlas en su local social o en otro que consideran más idóneo.\n\nHay que destacar que ninguno de los participantes actuará en su localidad de origen. Esta decisión fue tomada por la Junta Directiva de la Federación Provincial al objeto de facilitar la labor del jurado, el cual estará compuesto por cinco miembros de prestigio flamenco dentro de la provincia de Jaén.\n\nPara la final provincial han sido establecidos los siguientes premios: Primero: 150.000 pesetas y clasificación para la finalísima que se celebrará en Córdoba. Segundo: 100.000 pesetas. Tercero: 75.000 pesetas y 50.000 para el cuarto.\n\nCada uno de los participantes deberá interpretar dos cantes de cada uno de los tres grupos en los que se divide esta fase provincial\n\nJunta Directiva de la Federación Provincial.",
+    "title": "I Concurso Regional de Cante",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 519,
+    "article_char_count_full": 3092,
+    "article_char_count_review": 3092,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-11-11-left-belleza-positiva-del-drama-andal",
+    "article_text_for_review": "Opinión\n\nLuis Caballero\n\nDe su libro inédito «...Y Sevilla, epicentro del arte flamenco»\n\nE 1 flamenco plantea una curiosa cadena de interrogantes que aumenta a medida que se van contestando; una serie de contradicciones que, chocando entre sí, provocan un caprichoso desbarajuste y hasta un cierto desmoronamiento de tesis, conceptos, ideas, enjuiciamientos que siempre nos parecieron inalterables por representativos. Por otro lado, la razón del sentimiento también es una razón, aunque no la tamice el intelecto. Desde fuera nos retratan, nos catalogan y nos cantan, más que desde un ángulo falso, yo diría que incompleto. Y también nosotros, los propios andaluces, echamos leña al fuego irremediable de la fantasía y el tópico autoconjugándonos, autodeslumbrándonos, autodefiniéndonos, llegada la hora mágica de la copla, la reja y el bordón, agareno símbolo de tez morena, empavonados bucles y ojos de noche. Con esa arabizada y tantas veces gitana carga de atributos físico-raciales, nos contempla España, si es que nos contempla, y nos sintetiza el mundo que lee, llegando Hollywood a aflamencar, que puede ser andaluzar, o lo contrario —tanto monta monta tanto— al típico y exótico personaje hispanoamericano de sus películas, por aquello de llevar, como mínimo, nuestros apellidos, nuestra pena y nuestra guitarra.\n\nPero si el río suena es porque lleva agua, y sabemos que fantasía y tópico obedecen en mucho a lo más bello de esta verdad, aunque de esta verdad haya aún más que contar.\n\n«A la sombra fresca de la vieja un mozo moreno rasguea la [guitarra».\n\nInnegable arquetipo del andaluz en lo andaluz, e innegable, por el contrario, el contraste real del que también canta, toca o baila con todo su rubio aspecto de vikingo descendiente de aquellos alemanes que poblaron cierta franja de tierra andaluzas en el siglo XVIII. aunque nacido en Sevilla, era hijo, según parece o dicen, de padre italiano y además voluminoso como un tonel.\n\nNo cabe duda de que todos conocemos a ese tipo «moreno de verde luna» que puede llamarse Antonio Torres Heredia y ser de Granada, Ronda o Jerez, pero también es rigurosamente cierto que el mejor cantaor del siglo XIX se llamó Silverio Franconetti y, Vimos y vemos, y quiera Dios que sigamos viendo y siempre sea así, bailar a bailaoras escapadas del arte y los cinceles de aquél que le dio vida escultural de mármol a la Venus de Milo, muchachas que nos hacen soñar, sentir, amar y sufrir y, cómo no, a viejas gordas, pero bailaoras también, que sin agilidad ni belleza, nos hieren hasta la raíz del alma con sólo le-\n\nvantar los brazos a tiempo y a compás en esa enduendada transfiguración y conversación de gestos que explican al aire lo que a su sentimiento le está diciendo el sentimiento de la guitarra y el cante.\n\nEn cuanto a los bailadores dice Teófilo Gautier que los encuentra «con aire caballeresco, galante y atrevido; no aparentan ocuparse de sí mismos ni del público, y sólo tienen miradas y sonrisas para sus parejas, de las que siempre parecen enamorados y dispuestos a defenderlas contra todos; poseen cierta donosura feroz, cierta actitud insolente; y podrían pasar por excelentes banderilleros y saltar de las tablas de los escenarios a las arenas de los cosos». Pero como réplica a toda esta maravilla de equilibrio estético surge el grotesco desafío de una aparente caricatura antípoda en la presencia pasiva de un bailaor cojo, sordo y de cuadra-da anatomía, pero bailaor hasta sentar cátedra y crear escuela. No es suficiente la belleza y el estilo, la fuerza y el ángel, la maestria y la escuela. El andaluz que\n\nsabe y siente «no pide formas sino tuétanos de formas». Por eso Federico, que sabía y sentía, decía que «al duende hay que despertarlo en las últimas habitaciones de la sangre», y si se despierta y nos traspasa ya lo demás es accesorio.\n\nEs mucha Andalucía ésta, y esta Andalucía tartesa mucho más, llegada la hora de «echá mano a cantá, a bailá y a educa un caballo».\n\n¡Pero...! Siempre hay un pero. Y es que Andalucía baja de la nieve a la caña de azúcar, así como sube de la marisma a la mina. Nunca falta, porque sobran, la indiferencia o la negación total del andaluz por y de lo andaluz. Se conoce que la otra cultura, la del libro y el Sena, daña a la andaluza en cuanto al sentido de cultura superior que poseen y esgrimen muchos andaluces. Tanto es así que aún quedan andaluces andalucistas que escriben cantor por cantaor, mientras que otros se inclinan más por el acordeón que por la guitarra. Pudor gramatical en uno y emancipación euro-peísta en otro. ¿No? («La guitarra ha occidentalizado el cante, y ha hecho belleza sin par, y belleza positiva del drama andaluz, oriente y occidente en pugna hacen de Bétique una isla de cultura»).\n\n«Enemigo del arte flamenco ha sido ese prejuicio de los cultos de archivo y redichos de librería que le suponían estancamiento de formas orientales o litúrgicas, en vez de comprobar sus fuentes maternas», escribió Tomás Borrás. Y no es que ofrezca menguado atractivo la investigación e importancia musical de un fenómeno como el cante jondo, ya que «incluso en alguna de sus manifestaciones, hoy vigentes, dice el musicólogo Hipólito Rossy, es anterior al idioma en que se canta».\n\nDe todas formas hemos de reconocer la intrincada barrera de dificultades que obstaculizan el profundo conocimiento de un tema sujeto a suposiciones en su raíz, maltratado en el principio de su conocimiento y fantaseado y discutido siempre y no precisamente por desapasionados imparciales.\n\nEspectáculos Internacionales\n\nO'Donnell, 3, 4.° Piso Teléfonos (954) 22 20 58 y 21 69 20 SEVILLA",
+    "title": "Belleza positiva del drama andaluz",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 939,
+    "article_char_count_full": 5603,
+    "article_char_count_review": 5603,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-11-12-left-enderezando-entuertos",
+    "article_text_for_review": "Opinión\n\n¿N o es cierto que se hace un grandí- simo mal a todos aquellos que pretenden iniciarse en los conocimientos de nuestro arte, vertiendo datos que no son auténticos?\n\nNo soy polémico ni lo busco. Lo que he hecho siempre es salir al encuentro de aquél que nos ha querido engañar. Estad seguros de que se continuará engañando con frecuencia, mientras no exista esa persona madura conocedora de nuestros cantes y de los cantaores fenecidos, que lo único que procure sea enderezar entuertos, como ahora lo vengo haciendo yo en beneficio de los jóvenes aficionados.\n\nHoy me propongo enderezar uno que, para mí, como todos, tiene verdadera importancia.\n\nEn la revista «Sevilla Flamenca» donde se recoge la entrevista que Manuel Herrera y Gonzalo Rojo hicieron a mi viejo amigo Angel de Alora, se dice algo que no es real. Y para conocimiento de los aficionados lo transcribo al pie de la letra:\n\n«Que “El Corruco” —apostilla Gonzalo— no era de Algeciras, sino de Fuengirola, que tengo yo la partida de nacimiento».\n\nYo me digo a mí mismo: ¿Cómo es posible que mi amigo, Gonzalo, tenga una partida de nacimiento distinta de la que obra en mi archivo?\n\nCon todos mis respetos hacia Gonzalo, yo, ante la duda, le invito en nombre de los lectores, a que fotocopie la partida y que la publique en la revista flamenca que prefiera y después haría yo lo mismo con la mía.\n\nPorque a lo que no hay derecho es a engañar a nadie a sabiendas de lo que se hace. Por supuesto que a Gonzalo Rojo le conozco de sobra y sé que es incapaz de hacerlo. A lo mejor es cierto que tie-\n\nne una partida distinta de la que yo poseo.\n\nY mientras, Gonzalo Rojo, nos ofrece la fotocopia, yo voy a decir a los lectores algo sobre «El Corruco», que estoy seguro de que les agradará.\n\nDicen que «El Corruco» fue natural de Algeciras, y otros que nació en Fuengirola y que no creó ningún estilo de cante.\n\nVeamos la verdad, desde mi punto de vista. «El Corruco» se llamó José Ruiz Arroyo, nació en La Línea de la Concepción, en el barrio de La Atunara y en el humilde hogar del matrimonio, no gitano, formado por Miguel Ruiz García y por Isabel Arroyo Haro. Este matrimonio con su «Corruquito», que entonces tenía sólo un año de edad, se trasladó definitivamente a la ciudad de Algeciras, donde establecieron su nuevo nido familiar, en la conocida calle López, hoy de El Teniente Riera, número 5. En cuyo hogar la procreación llegó a conseguir el número de siete retoños, de los que aún viven: Antonio, Miguel, Andrés y Salvadora.\n\nHace unos años también vivía, en Barcelona, con más de ochenta años, la señora Isabel, cónyuge supérstite de tan prolífico árbol familiar, quien para demostrarme su excelente forma física y su buena memoria, me dedicó varias letras de las que solía cantar su hijo.\n\nPepito, desde muy joven, sintió que el gusanillo del arte flamenco le producía una sensación desagradable en su garganta, una angustia vital para la que no encontró antídoto o fórmula capaz del desahogo y mitigación que no fuese llorar su cante. Es verdad que su cante fue un puro llanto. Su estilo por fandango fue muy personal, de tercios cortos como deben interpretarse los cantes con acompañamiento.\n\nRecordaréis algunos pocos que solía lanzar un clamor que quien lo percibía no podía evitar el conmoverse, porque le llegaba a lo más hondo de su alma. Era ese grito entrecortado que conocemos por pellizco, «tirado» por un cantaor —y esto era lo más importante—, en una época en que casi nadie los «tiraba». Por suerte para la afición podemos dar fe de ello, porque conservamos esos cantes en su preciosa garganta, acompañado a la guitarra por Manolo de Badajoz, Pepe de Badajoz y por Miguelito Borrull.\n\nEl Corruco, víctima de la guerra civil de 1936-39, dejó de alegrarnos con sus cantes. Dejó de lanzar esos «pellizcos», porque falleció el año de 1937 en el frente de Teruel, reposando sus restos en el pueblo de Balaguer (Lérida).\n\nEs curioso, pocos van a creer que si examinamos los más de tres millares de placas gramofónicas en poder de coleccionistas, observaremos que ningún cantaor, excepto «El Corruco», nos hirieron con sus «pellizcos» y es que, en verdad, el «pellizco» es cosa de ayer. Yo diría que es cosa de «El Corruco» en placas gramofónicas y de Fernando «Terremoto» por siguiriyas, en microsurco.\n\nTermino.\n\nPor favor, hagamos con la verdad oral o escrita un elemento de enseñanza y un vehículo que sirva de unión y comunicación entre todos los aficionados de buena fe.\n\nCarlos Cruz\n\nRepresentante:\n\nJ. A. Pulpón\n\nEspectáculos Internacionales\n\nO'Donell, 3.°-A, piso Teléfs. 222058 - 216920 Particular: 228078 41001 SEVILLA",
+    "title": "Enderezando entuertos",
+    "periodical": "candil",
+    "issue_id": "1989-11",
+    "year": 1989,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "12-12",
+    "page_number": 12,
+    "word_count": 798,
+    "article_char_count_full": 4614,
+    "article_char_count_review": 4614,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

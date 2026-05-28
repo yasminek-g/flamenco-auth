@@ -1,0 +1,172 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1980-09-6-right-a-prop-sito-de-un-juicio-progre-",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Manuel Urbano\n\nEn el número 84 de «El País Semanal» —19-X-1980—, Manuel Vicent, quien prefiere a los bailadores con barco de dos palos y doce metros de eslora a los intelectuales que toman fino La ina, dedica un apasionado daguerretipo al bailarín Antonio Gades repleto de viejos y mohosos prejuicios sobre el arte flamenco, los que, si nos atenemos al criterio del columnista de tan andaluz apellido, nos resultan tan inoperantes para transformar la sociedad como lo pueda ser un fandango marchenero. Anotando mi personal y alto aprecio por el hondo arte de Gades, y que el que esto afirma no pasa de escritor de provincias que difícilmente traspasa la cota del tinto peleón, quisiera señalar alguna perla del articulista, verdadera joyería, engarzada en una serie de aseveraciones rotundas,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_01 | trigger=\"de fuera\"]\n\nnables verdades absolutas, aunque del tema no conozcan más que los degradados olores que les llegan a Madrid. Quede, para abrir boca, el diamante con el que el Sr. Vicent justifica la esencia jonda del bailarín: «Haber nacido en Elda, ser hijo de masoísta redivivo en un pelotón de ajusticiados por la dictadura y llegar de niño a Madrid como inmigrante con las manos en los bolsillos probablemente lo ha librado de la gracia anda-luza que se mueve de fuera hacia adentro». El parrafito, a mi parecer, no tiene desperdicio: el famoso triángulo flamenco, tan defendido por los flamencólogos para adjudicar esencias jondas, es sustituido por ese magma del duende flamenco que es Elda —¡ele!—, conocida universalmente por esa riada de carne humana trasvasada a Madrid, cuna de represaliados, emigrantes y flamencos. Por el contrario, nosotros, los andaluces, nos quedamos con la grasia. Pero vayamos al concepto que posee Vi- cent del flamenco y del pueblo andaluz, soporte y protagonista del mismo: «Existe la estética del baile vengativo que no tiene nada que ver con esa tradición de inútiles lamentos del Sur. Ya se sabe que (...) la reforma agraria de Anda-lucía (no) se hace bailando correctamente la farruca, pero no sé qué sucede cuando oyes un zapateado de Gades contra una tabla y ves sus riñones profundos, su perfil de cuchillo, la ira en las cejas y los brazos reptiles, que no piensan lo mal que lo pasan los jornaleros recogiendo aceitunas ni en el hambre de los cortijeros parados, sino en la Mano Negra o en el Perna\n\n[ENDING CONTEXT]\n\nque no desafía a la sociedad, porque ni le aceptó, ni deseó permanecer en ella. Es el hombre, es el pueblo malherido que se desangra y en el desgarro de su grito, nunca insolidario, encuentra su propia esencia. Que se sepa de una vez, el único cante válido, de antes y ahora, fluye de unos hombres marginados que conocen su secular desdicha y no necesitan pasar por la Universidad para poder encontrar razones en que fundamentarla, y los que con corazón, cabeza, garganta y rabia suficientes, dicen, como confiesa la madre de Bernarda y Fernanda, cosas que han sido verdad y que se han vivido antes.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "A propósito de un juicio «progre» sobre el flamenco",
+    "periodical": "candil",
+    "issue_id": "1980-09",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-7",
+    "page_number": 6,
+    "word_count": 1084,
+    "article_char_count_full": 6314,
+    "article_char_count_review": 3158,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_01",
+        "family": "COMM",
+        "trigger": "de fuera"
+      }
+    ]
+  },
+  {
+    "article_id": "1980-09-7-right-las-letras-flamencas-de-joaquin-",
+    "article_text_for_review": "A nadie le caben dudas —salvo a los habitantes de la envidia—, de que Joaquín Márquez es uno de los más finos poetas andaluces de ahora. Si nosotros apreciamos su obra, tan cargada de galardones, es, sobre todo, porque canta como pocos el acontecer diario y la proximidad de los objetos con la más tintineante intimidad. «Candil» se complace en publicar en este número una serie de soleares del poeta sevillano que, a la vez que nos presentan una dimensión nueva e inédita de su hacer poético, nos traen redoblados los más auténticos sones flamencos.\n\nSi te dejo de querer que Dios me cuelgue de un árbol y se cuelgue de mis pies.\n\nVengo a pedirle a Dios que el tiempo que estoy contigo lo borre de su reloj. Ahora sabes la verdad; el tiempo que nos separa le llaman eternidad. Ya no tengo salvación. Quiero estar hecho a tu imagen y que me perdone Dios.\n\nAhora que somos iguales tiene Dios que estar contento con dos pecados mortales.\n\nNo quiero verte llorar. Dame, mujer, mis mentiras que yo las haré verdad.\n\nLa que yo amé está en prisión y nadie podrá sacarla. Las llaves las tengo yo.\n\nVestía de rojo y negro. Como una llama viuda a la mitad de su cuerpo.\n\nQue venga alguien a explicarme por qué un amor tan temprano se está acabando tan tarde.\n\nEl acordeón del tiempo entre los dos lo estiramos y el sólo se va encogiendo.\n\nY a mí que más me daría inventarte a tí que a otra. Si son invenciones mías.\n\nPara tenerte en mi casa nunca me faltó el valor y siempre la confianza.",
+    "title": "LAS LETRAS FLAMENCAS DE JOAQUIN MARQUEZ",
+    "periodical": "candil",
+    "issue_id": "1980-09",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "7-7",
+    "page_number": 7,
+    "word_count": 275,
+    "article_char_count_full": 1479,
+    "article_char_count_review": 1479,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-09-8-right-antonio-n-ez-el-chocolate",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEllos, los protagonistas, dicen:\n\nAntonio Núñez «El Chocolate»\n\n—¿Qué le pedirías al mundo flamenco de hoy?\n\n—Que too el que lo practique enseñé culturalmente o de otra forma a too el que está a su vera; que esto se pueda ir corriendo massivamente para que todos sepamos lo que es el flamenco. Si no, seguiremos escuchando se villanas y otras cosas como el ye-yé, como otras cosas que ni tú ni yo sabemos lo que son, ni falta que nos hace. Porque el flamenco es una droga pá el hombre y la mujer. Porque cuando tú te tomas o te alegras con una copa y con un flamenco, ya no tienes dinero en el mundo pá pagar ná: ni copas, ni mujer, ni ná... Cuando esto no es así, a ti te interesa el vino, el tabaco, la mujer... Ya ves si el flamenco es una droga. ¡La más cara del mundo! ¡Y no le damos, a veces,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"famili\"]\n\nflamenco es una droga pá el hombre y la mujer. Porque cuando tú te tomas o te alegras con una copa y con un flamenco, ya no tienes dinero en el mundo pá pagar ná: ni copas, ni mujer, ni ná... Cuando esto no es así, a ti te interesa el vino, el tabaco, la mujer... Ya ves si el flamenco es una droga. ¡La más cara del mundo! ¡Y no le damos, a veces, ningún valor! Creo que esa droga va a durar mucho rato, pero yo quiero morirme antes. —Creo que tu familia ha tenido buenos can- taores, cuéntanos algo de ella, de tus inicios y de aquellos artistas antiguos que conocieras. —Mi padre y mi madre cantaban, también mis hermanos; lo que pasa es que yo solamente he sido famoso. De los artistas antiguos al que más recuerdo es al Niño Gloria y a la Moreno, también a su hermana La Pompi. Y Tomás Pavón, eso es comía aparte: ha sío el que más me ha gustao cantando en gitano y en fineza. —¿Más que Manuel Torre? —Hombre, Manuel Torre... ¿Cómo te diría yo? ¿Cómo se puede considerar una pintura brusca y una fina: Goya y Velázquez? Pues comparo esas dos cosas igual. —¡Ole el Summa Artis contestando! Continúa, por favor. —Yo me metía en las reuniones de esos viejos artistas, pero yo era el que me salía, no podía estar con ellos porque era un chaval. Cantaba dos fandangos, me daban mis diez o veinte duros y me salía pa fuera. Yo me iba con Juanito Mojama andando\n\n[EVIDENCE WINDOW 2 | retrieval_hint=CRIT_03 | trigger=\"mejor\"]\n\nterraza, me buscaba la vida, también en La Parrala, que hoy es un Banco de Vizcaya. ¡Qué cosas! Yo he conoció toos esos rincones flamencos, donde me he buscao la vía y he alternao con gente cantaora, como el Gloria, Vallejo, Juanito Mojama, Caracol... pero cantábamos privadamente, porque entonces se cantaba privadamente. Luego vino eso de llevar el flamenco a la cultura y a las tablas, que lo llevaron Caracol y Marchena. Ahí, en las tablas, el mejor ha sío Caracol; porque cantando eran entonces Tomás Pavón, La Niña de Los Peines, El Gloria y Caracol. Los demás no eran nada, ¡en gitanos hablo, eh! —Creo recordar que en más de una ocasión has hablado de la importancia del fandango, dinos algo de esto. —Para mí todos los cantes son importantes, claro, aunque también interviene el intérprete. El fandango son los claveles de Andalucía, ya sea natural de Huelva o de donde sea. El fandango es m\n\n[ENDING CONTEXT]\n\nmás, mientras tú, metiéndote por siguiriyas, hasta rogaste silencio al público. ¿Por qué pasan estas cosas?\n\n—Porque hay una escucha muy repetía en Jerez de ese cante y también porque ellos lo tienen y entonces gusta cualquier cosa que no sea eso, y porque nadie es profeta en su tierra. Basta que ellos tengan esos cantes para no hacerles caso. Basta que uno tenga dinero para que no se acuerde del que no come.\n\n—Hablando de dinero ¿tú crees que con dinero se puede cantar bien?\n\n—Sí, ¿por qué no?, hay gente que tiene dinero y canta; porque con dinero también se puede tener sentimientos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Antonio Núñez \"El Chocolate\"",
+    "periodical": "candil",
+    "issue_id": "1980-09",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-9",
+    "page_number": 8,
+    "word_count": 1578,
+    "article_char_count_full": 8535,
+    "article_char_count_review": 3945,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "famili"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "mejor"
+      }
+    ]
+  },
+  {
+    "article_id": "1980-09-10-left-algo-m-s-sobre-los-cantes-de-lev",
+    "article_text_for_review": "A propósito de una charla con varios aficionados de la Unión, miembros de la Peña Flamenca \"Rojo el Alpargatero\" En Fuengirola, el día 4 de Octubre, tuve la satisfacción de conocer a varios aficionados de 'La Unión, miembros de la Peña Flamenca' «Rojo el Alpargatero», con quienes departí por espacio de varias horas, tratando de hacerles ver que los cantes de su tierra, tal y como se vienen interpretando en la actualidad, no guardan mucha similitud con aquellos que se interpretaron en el período 1.910-40.\n\nDe igual forma que lo hiciera un Licenciado en Ciencias Exactas, ante sus discípulos, coger la tiza y la pizarra para desarrollar una ecuación, Yerga viendo que teorizando no adelantaba gran cosa en el campo de la didáctica flamenca, optó también por coger la tiza y la pizarra, o lo que es lo mismo, ejecutó varios cantes, hoy poco conocidos, y al escucharlos quedaron extasiados ante la belleza y flamenquismo de sus estilos. De igual forma quedaron cuando oyeron las tarantas mineras en las voces de antiguos cantaores, así como los cantes que Fernando Rodríguez Gómez «El de Triana», hiciera grandes y preciosos utilizando el material que recogió en Levante.\n\n¿Habéis escuchado alguna vez estos cantes? Les dije. Y todos me contestaron al uníso- no en sentido negativo, porque evidentemente fué la primera vez que los habían escuchado en toda su salsa, en sus estilos puros y originarios, sin adulteración ni deformación. Era la primera vez que habían oído cantes diferentes de los que vienen escuchando.\n\nVosotros sabéis que algunos «enteraos modernos» de Levante me han acusado de querer «quitaros» un cante por taranta para «regalárselo» a la provincia malacitana y esto, amigos mios, no es así. ¿Es que, acaso, Málaga necesita dádivas para ser lo que realmente es dentro del mundo del arte flamenco? Los mala-gueños no necesitan regalos, sólo con que nos digan que el gigantesco árbol de la familia de los fandangos nació en su tierra, tienen méritos bastantes para ostentar el título con letras de oro de «CUNA DE CANTES».\n\nLos cantes de Levante son vuestros, aunque las esencias de algunos de ellos os hayan llegado de Málaga, Almería y Jaén. Son vuestros y ya forman parte de vuestra historia artístico-cultural y ni Yerga Lancharro ni nadie podrá quitároslo. Lo único que Yerga ha dicho y dirá siempre es que existe una taranta cuya raíz es malacitana. Pero el hecho agradable de que su raíz sea de esa provincia, no le obliga, en modo alguno, a decir que esa taranta hoy no sea un cante de Levante. La prueba más contundente de que su raíz es malacitana nos la ofrece el artista o aficionado cuando la escucha por primera vez y dice sin titubear: ¡Qué bonita malagueña!",
+    "title": "Algo más sobre los Cantes de Levante",
+    "periodical": "candil",
+    "issue_id": "1980-09",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-11",
+    "page_number": 10,
+    "word_count": 456,
+    "article_char_count_full": 2693,
+    "article_char_count_review": 2693,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1980-09-10-right-taranta-cl-sica-taranto-y-tarant",
+    "article_text_for_review": "Pensé ahorraros la engorrosa labor de búsqueda y recopilación de vuestros cantes históricos, entregándoos copia de los que poseo, pero después he recapacitado y me he dicho: Yerga, no debes tirar tu archivo por la borda. ¡Ya está bien! Tu archivo es tuyo y yas has dado bastante sin que nadie te lo haya agradecido. No te olvides que existen señores que de vez en cuando y sin saber porqué, utilizan el arma poderosa de la radio y otros medios de difusión para «destruirte». Ante tal campaña viperina no debes desprenderte de esos cantes legendarios aunque reconozcas que moralmente deberían estar depositados en la región en donde salieron: Levante.\n\nTermino ofreciéndoos una relación de can- taores y cantes de vuestra tierra para que os sirva de catálogo y sepáis los que tenéis que localizar.\n\nRELACION DE CANTES DE LEVANTE, CONSIGNANDOLOS COMO ERAN CONOCIDOS EN EL PERIODO 1910-40, POR LO QUE OMITO LAS DENOMINACIONES MODERNAS COMO: Taranta clásica, Taranto y Taranta Minera",
+    "title": "Taranta clásica, Taranto y Taranta Minera",
+    "periodical": "candil",
+    "issue_id": "1980-09",
+    "year": 1980,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-11",
+    "page_number": 10,
+    "word_count": 161,
+    "article_char_count_full": 979,
+    "article_char_count_review": 979,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

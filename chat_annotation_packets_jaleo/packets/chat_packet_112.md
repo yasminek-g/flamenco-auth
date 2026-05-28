@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1981_07::A12",
+    "article_text_for_review": "July 22nd through July 26th DANCE WORKSHOPS Two hour workshops will be presented at 7:00pm each day (except the 25th which will begin at 10:00am). Fee for each workshop will be $20.00. JUERGA PERFORMANCE BY ROSA MONTOYA July 25th Rosa will present a cameo performance prior to the Jaleístas juerga. For price and details see page 29. !!FREE SANGRIA!! Rosa Montoya was born into a flamenco family in Madrid, Spain, and is the grand niece of the great guitarist, Ramón Montoya and the niece of Carlos Montoya. She started dancing at an early age and was performing professionally by age sixteen. In 1961 she came to the United States as the partner of the renowned dancer, Ciro. With the promotion of Sol Hurok, the couple toured throughout Europe, Australia, Japan, Canada and the U.S.A., working together for fourteen years. Currently a resident of San Francisco, Rosa is active as a teacher of flamenco and, since 1975, has had her own company, \"Bailes Flamencos.\" FOR CLASS INF. CALL: 442-5362 OR 444-3050",
+    "title": "ROSA MONTOYA IN SAN DIEGO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_07",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "27",
+    "page_number": 27,
+    "word_count": 170,
+    "article_char_count_full": 1007,
+    "article_char_count_review": 1007,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_07::A13",
+    "article_text_for_review": "The May juerga was a great success, due in great part, to the enthusiasm and hospitality of our hostess Barbara Novak and house-mate Jessie. There were four juerga areas - the living room, a small sitting room, the garage and the patio. As usual activity migrated from one area to another. The living room was the scene of the most animated activity; here a new flower at the juerga, Juanita Franco's student, Hiroko Nagata, from Japan, danced her sevillanas and rumbas. The sitting room was quieter, more solo guitar and cante oriented. The garage ran the gamut from \"cuarto hondo\" to \"rumba room.\" The regulars were there, our performing members arriving late in the evening after finishing their gigs. The only out-towners were Dick and Yvetta Williams who sent the accompanying photos. Thanks to CUADRO C for seeing that everything ran smoothly and Tony Pickslay for lugging the dance boards atop his mini-station wagon so that we might have on which to stamp. Photos (clockwise from above): Guitarists Yvetta Williams, El Chileno & Rafael Diaz; Julia & Maria Clara Romero from Sevilla; Ernesto Lenshaw & Juana De Alva; Yvetta, Julia Ernesto & Juana.",
+    "title": "MAY JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_07",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "28",
+    "page_number": 28,
+    "word_count": 193,
+    "article_char_count_full": 1154,
+    "article_char_count_review": 1154,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_07::A14",
+    "article_text_for_review": "by Juana De Alva This month's juerga will be held at the home of Jan Jocoy in Solana Beach. Jan is one of those rare birds--a native Californian. She was raised on a small race horse ranch in Pamona surrounded by musicians. One brother plays classical and flamenco guitar, the other is a jazz drummer (currently performing at the Albatross in Del Mar) and her sister is a pianist. Her father loved Spanish music and took the family to whatever Spanish shows came to the Los Angeles area. Her first contact with flamenco, however, was in Paris, France in 1973, where she spent a year and frequented a restaurant which had a \"cueva flamenca.\" After moving to San Diego Jan heard that there was flamenco at the Andalucia restaurant. After seeing the show she joined Jaléistas, bought a guitar and began to study flamenco with Jim Owen. She works at the Child Crisis Center and selling oriental carpets on the side (which will be on display at the juerga). Participating in this month's juerga will be gypsy dancer-singer Rosa Montoya. (See announcement on page 27 for details. Rosa will give a special performance prior to the juerga at 8:00pm ($4.00 donation) for those who would like to enjoy this exciting artist without distractions or interruptions. Free sangria will be provided for those attending this performance. Rosa will stay on for the juerga which will begin at 8:30. As Cuadro A is temporarily without a cuadro leader, \"yours truly\" is organizing this juerga and would appreciate the help of anyone from Cuadro A or any other cuadro who can come early (6:00 or 7:00) to help set up. Especially needed is someone who can do carpentry to construct a temporary dance platform out of our dance boards. Call Juana mid-day at 442-5362 or 444-3050. DATE: July 25th PLACE: 638 B Seabright PHONE: 436-3163 TIME: Rosa Montoya Performance 8:00pm Juerga begins 8:30 BRING Tapas (hors d'oeuvres), a warm wrap and a folding chair Donations: Members (and one guest of S/G members): Montoya performance $4.00, juerga no charge; non-members: Montoya performance and juerga $7.00, juerga only - $5.00. $ \\underline{\\text{Directions}} $: Take Loma Santa Fe west off Hwy 5. Turn right at the third light (Cedros). Turn right again at Cliff and left on Seabright. House is in back of another house on right hand side.",
+    "title": "JULY JUERGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_07",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 393,
+    "article_char_count_full": 2308,
+    "article_char_count_review": 2308,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_07::A15",
+    "article_text_for_review": "by Paco Sevilla There are flamenco songs whose name origins have been a mystery. Pepe de la Matrona, in Recuerdos de un cantaor sevillano (Ediciones Demofilo, Madrid 1975), gives his version of one of these. About \"cabales\" he says: \"...to sing por siguiriyas, to complete the cante -- what we would call knowing how to sing -- you had to put the cabal after the cantes that had been sung -- in order to show a knowledge of singing; if not, no matter how well you had sung, it would not seem right to the aficionados. And since, in Andalucia they used to use the word 'cabal' to say that something was complete, they gave this part the title of cabal. So that, if you were singing in natural tones, you had to change to different tones and from there continue to the end; not like in some cantes de Triana, because almost all of those have many tone changes, but then they come back to the original tone and, therefore it is no longer a cambio (change). Because, when you would sing well por siguiriyas, at the moment of the cambio, you would say to the guitarist, 'Change!' And then the guitarist, in accordance with the tones that the cantaor used, would change and they would do the dominant from the moment the cabal began until the finish--always the same changed tone.\" (p. 204) So \"cabal\" was first used to mean the remate for siguiriyas. The tone change is from the phrygian mode to the major mode. Some cantaores developed the cante in the major, the cabal, to such an extent that it became an important, almost independent part of the cante. So we saw on records titles like, \"Siguiriya y Cabal.\" Then, in the 1970's we began to see recorded cantes called \"Cabales.\" Thus, the cabal has become, in some instances, a cante independent of the siguiriya, rather than just a brief ending for it. p The Ocean Playhouse RESTAURANT 442-8542 CALAMARES PAELIA Mosaico Flamenco fri & sat SEA FOOD TAPAS 691 EL CAJON BLVD. EL CAJON, CALIFORNIA",
+    "title": "ORIGIN OF THE CABALES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_07",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "29",
+    "page_number": 29,
+    "word_count": 350,
+    "article_char_count_full": 1942,
+    "article_char_count_review": 1942,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1981_08::A1",
+    "article_text_for_review": "(sent by George Ryss; translated by Paco Sevilla) José Zorrilla Guerrero, \"Pepe de Málaga,\" was born in Periana, a tiny pueblo in Málaga on the Costa del Sol. At fifteen years of age he went with his father and brothers to Valencia, where they worked for three years harvesting fruit. At the same time, he was developing his artistic afición and won his first two prizes for cante flamenco. He won first prize when he was sixteen in a town in the province of Castellón de la Plana called Burriana (home town of the famous cantaor, Juan Varea) and another prize in Vall de Uxo, another town in the same province. Continuing his artistic aspirations, Pepe moved to Madrid where some people saw his good voice, talent and aficion, and realized that these would serve him, not only for cante flamenco, but also for singing \"canción española\" (Spanish popular music). He was taken to meet great composers and teachers of Spanish canciones so that he could study with them and educate his voice. The teachers were: Solano, Gordillo, Jaén, Villacañas, Algarra, and Legaza. All of them saw in Pepe great promise for the canciones as well as the flamenco, even though he was still quite young -- eighteen years old. Although he enjoyed the canciones, Pepe was putting more effort into flamenco -- like a good Andaluz! He began to hang around the famous places where the greats of the cante and flamenco guitar used to gather. In those places he began his apprenticeship in the cante flamenco. One day a friend of his, a cantaor, introduced Pepe to the owners of the now famous tablao flamenco, \"Las Brujas,\" so that they could listen to him and consider him for employment. He went, they listened to him, liked him, and he was hired. Thus, he had his first professional debut. From that tablao, he went on to others of great renown and prestige, such as Arco de Cuchilleros, Cuevas de Nerja (now closed), Torres Bermejas, Los Califas, and Manolo Caracol's Los Canasteros. PEPE DE MALAGA WITH ESTRELLA MORENA After three years of absence to fulfill his military obligations, Pepe returned to the stage -- this time in the theaters and nightclubs with different artists who were famous in the cante flamenco or canción española, and in the companies of the great dancers such as Paco Ruiz, nephew of the great Antonio. In the canción española he worked with Antonio Molina, Rafael Farina, Marife de Triana, and Juanita Reina. In the cante flamenco he worked with Antonio Fernández \"Fosforito.\" After working in these places, he came to the highest point of his career, which was and continues to be, the theater, the concert halls throughout Spain. Two seasons he was with the famous dancer Rafael de Córdoba, for whom he sang on a Spanish television special. In 1975 he did a special with the greatest dancer of all times, Antonio.",
+    "title": "PEPE DE MALAGA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1981_08",
+    "year": 1981,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 489,
+    "article_char_count_full": 2821,
+    "article_char_count_review": 2821,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

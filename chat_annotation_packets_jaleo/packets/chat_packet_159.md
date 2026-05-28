@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1983_01::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n[from: El Cancionero; published by Better Records, 1980; submitted by Rafael Díaz; translated by Paco Sevilla] Manuel Ortega Juárez, better known by the nickname \"Caracol\" which he inherited from his father, was born July 9, 1910, in Sevilla, on the Alameda de Hércules. He was descended from a family with a great tradition in the cante; on one side was El Fillo (Francisco Ortega Vargas) and on the other, El Planeta; his great grandfather was Curro Durse (Francisco Fernández). Manolo Caracol's father, Manuel Ortega, known as Caracol el Viejo, was born in Cádiz in 1881. A great cantaor of siquiriyas and soleares, he spent most of his life as a sword boy for his relative, Joselito el Gallo, until the death of the latter in Talavera in 1920. He was a man of anecdotes and jokes and has passed\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"family\"]\n\nwas Curro Durse (Francisco Fernández). Manolo Caracol's father, Manuel Ortega, known as Caracol el Viejo, was born in Cádiz in 1881. A great cantaor of siquiriyas and soleares, he spent most of his life as a sword boy for his relative, Joselito el Gallo, until the death of the latter in Talavera in 1920. He was a man of anecdotes and jokes and has passed into history as a prototype of the Andalucian gypsy. With such artistic predecessors in his family, it is not surprising that Manolo Caracol would come to have the flamenco voice \"par excellence\" -- \"ronca y afillá\" [hoarse in the style of El Fillo], prototype of that which is now known as \"desgarro gitano.\" It was determined that professionals would be excluded from the contest. This decision provoked strong argument, but Manuel de Falla remained inflexible because he felt that the professionals had incorporated into their repertoire elements that distorted the pure cante. To alleviate somewhat the tensions, the composer from Cádiz accepted as the advisor to the organizing commission and as the president of the judges of the contest, the famous cantaor, Don Antonio Chacón. In 1922, Manuel de Falla, backed by other great artists such as Federico García Lorca, Ignacio Zuloaga, Santiago Rusinol, and Andrés Segovia, organized the first Concurso de Cante Jondo. The goal was the double objective of spreading the\n\n[ENDING CONTEXT]\n\nancestor, Curro Durse, or his martinetes and saetas -- all of them show, state his origins, but in a disarticulated, dismembered, incoherent, and irreconstructible manner. A sudden fit, a \"jipio,\" a heart-rending sound, a \"pellizco,\" identifies the cante, but it is an incomplete identification, inductive, indirect, precarious, macabre -- like the charred remains of a catastrophe. You need to be a detective to reconstruct his cantes. Yet, there can be no doubt that his renown is based on this regypsification of the cante. CONCHA DURAN Los Angeles and San Francisco For info. call: 213/223-1784\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "MANOLO CARACOL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "14-17",
+    "page_number": 14,
+    "word_count": 1804,
+    "article_char_count_full": 11042,
+    "article_char_count_review": 3006,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "family"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1983_01::A9",
+    "article_text_for_review": "The forerunners of the gypsies, as we know them today, were called \"Kathaka\" or \"Gitan\" and were traveling minstrels from Sind, just off central India (whence comes the term \"Sinte\"). They eventually migrated to northern India where their danca became heavily influenced by the culture that had been brought by the Moghul rulers. Among other innovations, they incorporated the turns and footwork used by the Dervishes and Sufis. The \"Kathaka\" evolved into resident singers and dancers of the court; their name was changed from \"Kathaka\" to \"Kathak.\" The men performed as singers, but both men and women danced, although aparataly. In those days they were treated as members of the royal family. The proud stance, touched perhaps with arrogance, of both men and women from southern and eastern Mediterranean countries is perhaps a legacy of the \"Kathak's\" short-lived reign as pampered resident artists of the court -- the days when they seemingly could do no wrong until apparently they did. It seems that they were caught dipping into the court coffers and making free with the imperial treasury. Their punishment was banishment from India. All things considered, it could have been worse. These ancestors of today's gypsies, having little alternative and being basically of a nomadic nature, traveled throughout the Middle East and Eastern and Western Europe, settling here and there along the way. For those who reached southern Spain, the artistic climate of the day was found to be Ideally suited to their own form of expression, and their music and dance flourished, taking on new dimensions as they mingled with, influenced and amalgamated the indigenous culture and that of Spain's Islamic conquerors. \"Kithara,\" \"chitarra,\" \"guitarra,\" guitar -- all are derived from the Indian \"gitar\" or \"sitar,\" singing strings. The basis of flamenco music is pure Indo-Moorish. The one-stringed forerunner of the Arabic \"rababa\" was at one time in use all over India. Dancers of many cultures have played hand-held percussive instruments to mark the rhythm of their dance. The ancient Greek and Egyptian dancers had their \"Krotalas,\" sometimes fashioned from shells and sometimes from metal. The Arabs had their \"sagat,\" or \"chinchines,\" as they are called by the Spanish (used to this day by flamenco dancers who still remember the zambra mora, the most Arabic of flamenco dances). But the Spanish wooden castanuelas or castanets are a direct descendant of the Kathak \"klavos,\" two pairs of wooden sticks played by the dancers, which eventually became carved into rounded shape and held together by taut cord. (Many gypsies, however, refuse to use them, referring to them disdainfully as \"postizos,\" false finger-snaps.) Also from India came the ankle-bells, no longer worn by Spanish dancers; heeled shoes and the resultant elaboration of \"taconeo\" (heel-work) were Western innovations. The \"peineta\" (high comb) and \"mantilla\" (lace head-veil) and flowers for the hair were traditionally worn by \"Kathak\" women, as were the \"sortijillas\" (rather gracefully rendered in English as \"spit-curls\" -- in Spanish it translates as \"little rings\"). To this day, segments of the Spanish gypsy population will decorate their foreheads with a caste mark.",
+    "title": "FLAMENCO ROOTS AND REVERBERATIONS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18",
+    "page_number": 18,
+    "word_count": 511,
+    "article_char_count_full": 3242,
+    "article_char_count_review": 3242,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_01::A10",
+    "article_text_for_review": "THE POWER OF SUBTLETY I am often asked, \"What has happened to Spanish and flamenco dance and why isn't there more flamenco dance to be seen and experienced, like there used to be?\" Even in a city like New York, with a population of 15 million, there is not one full time club or restaurant that features flamenco entertainment or a flamenco show on a full time basis. Where is flamenco, what happened? Well, there is obviously no easy answer and there might be many reasons for flamenco not being around with greater popularity. But, when asked what has happened, I find myself giving a very simplistic answer, though I feel an important facet of the total answer: \"The power of subtlety has lost its appeal.\" It has lost its appeal in this day and age of blasting, amplified sound, music and movement. There is also a trend for big, external technique for technique's sake; big and more are better, and the philosophy of quantity over quality is stressed. The power of flamenco is not in quantity. A large group of people dancing flamenco together is often not as exciting and powerful as one solo artist. Because of its very nature flamenco is a solo, individual form of expression. Much of the excitement of flamenco dance lies in the subtle movements and feelings, the unsaid, the hint and power of the understatement, much like subtle seasoning that brings out the flavor and at the same time creates a bit of mystery in artistic gourmet cooking. subtle movements and moments of a dancer: the artist who can stand still and look like he or she is exploding. Subtlety is not weak. It is awesome power, but at the same time it is something generated from within and expressed externally, much like the subtle opening of a bud, revealing the beauty of a gorgeous flower. When I think of the moving, emotional moments that stick in my mind, they are usually the When I used to perform in Las Vegas, Reno, Lake Tahoe, or the Mouliir Rouge, I would perform and also see the giant extravaganzas of the big shows, where there were airplanes on stage, swimming pools, earthquakes, millions of nude bodies, fire eaters, more millions of sequins and non-stog, overpowering visual and audible titillation that rocked your senses. The interesting thing is that it would be forgotten in an hour. To me, it was fun, but all cotton candy that, when boiled down, becomes just ten grains of sugar. The people who have tried to make rock and roll or jazz flamenco have usually failed because they replace the real power of flamenco, which is greatly internal, with the external cotton candy and fluff and usually they just make it something that it is not; the real power and excitement is lost.",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 472,
+    "article_char_count_full": 2681,
+    "article_char_count_review": 2681,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_01::A11",
+    "article_text_for_review": "INCREASE OF THE CLASSICAL DANCE WITHIN THE ANDALUCIAN DANCE [from: La Prensa, 1941; submitted by Laura Maya; translated by Paco Sevilia] by Juan Martin As I have said, it was in Valencia that the classical school of Spanish dance was born; its origin was Italian, but it was called classical Spanish because only certain parts of it were preserved in Spanish (exercises at the barre, beats in the air, some of the turns that I have already named, and steps that were appropriate for dances that already existed in different regions of Spain). For example, the primitive step of the jota was given the appropriate and wise name of \"mata la arana\" (kill the spider) by the classical school because of the position of the body when killing a spider. Quick walking movements they called \"paseos.\" Steps done with the points of the toes were called \"punteados,\" and there was also the \"punta y tacón\" -- this latter, aside from being done in Aragón, is used in Valencia, Legartera, Toledo, as well as other regions that were named previously. In \"La Montana\" is \"el embotada,\" so called because the feet, held closely together cross one behind the other, always crossing and moving backward to the compás. In Galicia, this was and is done without crossing the feet; similarly, many other regions have taken advantage of the \"embotado.\" I want to say that the classical school did not only serve to supply names for the steps, but, for the baile Andaluz it was the best resource that could have been hoped for. It began with the little known and rustic bolero of the Baleares [Islands] that was taken to Sevilla where the maestros [teachers] transformed it into one of the most difficult dances to execute. Later, the techniques passed into the other Andalucian dances and were presented to the rest of Spain. coplas [each verse of song danced more or less independently of the others] as were the sevillanas, the malaguenas, the peteneras, the valencianas, el vita, and the jota. In Sevilla, the teachers organized competitions and contests among their students, and each student would try to outdo the others in the Sevillanas or the Caplas of the Bolero, it being an honor for the academy to which the winner belonged. I should point out that the Boiero was danced by The Bolero also gave recognition to the classical bailarín [dancer] who had previously been called \"boleros.\" In Madrid, by the time of Goya, they were dancing boleros, la cachucha and other dances that I will name at the right moment -- all from the classical Andalucian school.",
+    "title": "JUAN MARTINEZ: EL ARTE FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20",
+    "page_number": 20,
+    "word_count": 437,
+    "article_char_count_full": 2544,
+    "article_char_count_review": 2544,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1983_01::A12",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCONCERT IN HAWAII by Paula Durbin Some 1700 high school students were treated to a short pre-program of four Spanish dances before the November 5 concert by Dave Brubeck and the Honolulu Symphony in the Neal Blaisdell Concert Hall. The dances performed were representative of classical, flamenco and contemporary choreographies, and had been selected for their potential appeal to a youthful audience. The \"Jaleo de Jerez,\" of the Escuela Bolera; the flamenco \"Tanguillo\"; and the short, powerful interpretation of Manuel de Falla's \"Danza No. 1,\" from \"La Vida Breve,\" had been brought to Hawaii from the Academia Pericet by Paula Durbin. Also participating in the performance were Bob Miller and Aurora Dismuke, who performed a shortened version of Mercedes' alegrías. Honolulu guitarist, Frank\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"classic\"]\n\nof the Escuela Bolera; the flamenco \"Tanguillo\"; and the short, powerful interpretation of Manuel de Falla's \"Danza No. 1,\" from \"La Vida Breve,\" had been brought to Hawaii from the Academia Pericet by Paula Durbin. Also participating in the performance were Bob Miller and Aurora Dismuke, who performed a shortened version of Mercedes' alegrías. Honolulu guitarist, Frank Cabral, completed this segment of the program. The featured concert included classical orchestral works and an original composition by Maestro Brubeck, \"La Fiesta de la Posada,\" a work originally commissioned by the Honolulu Symphony. This concert, entitled \"A Special Spanish Experience for Music and Spanish Language Students,\" was the result of a cooperative effort by the Honolulu Symphony, the American Association of Teachers of Spanish and Portuguese, and the Department of Education of the State of Hawaii. It was made possible by grants from the National Endowment for the Humanities\n\n[ENDING CONTEXT]\n\nthe dance and cante with precision and soul. We are privileged to have him working in the Los Angeles area. Being flamenco-minded we would have enjoyed hearing more of the guitar and cante with the beautiful dancing and we hope that El Paseo Inn will include more true flamenco in the coming year's entertainment. The costuming, music, dance and programming were very professional, very enjoyable, and we hope to see more of all of these very fine performers in the coming year. LEFT TO RIGHT: DAVID DE ALVA, PACO VERA, AMBAR GONZALES, OSCAR NIETO, CRISTINA PASTOR, DANIEL ANDRES, VALERIA PICO\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "REVIEWS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1983_01",
+    "year": 1983,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21-28",
+    "page_number": 21,
+    "word_count": 1193,
+    "article_char_count_full": 7270,
+    "article_char_count_review": 2586,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "classic"
+      }
+    ]
+  }
+]
+```

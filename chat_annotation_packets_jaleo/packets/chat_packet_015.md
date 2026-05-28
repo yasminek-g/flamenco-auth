@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_04::A4",
+    "article_text_for_review": "The following is an open letter, dated \"Sevilla - February, 1978.\" The letter is of special interest because it shows what a person who is in the process of learning flamenco guitar and the Spanish language might expect from a short visit to Sevilla. \"Sevilla is like a parade,\" observed my five and a half year old daughter, Jessica, as we sat in an outside cafe on a busy street. She's right too - lots of bright-eyed people bustling around in the Andalusian sunshine taking care of their daily business. The weather in February is very similar to that of Southern California - bright sunny days and cool breezey evenings. The city orange trees are laden with fruit and look very beautiful against a backdrop of white buildings, Spanish-tiled roofs, and blue sky. The atmosphere is made all the more authentic by the sound of flamenco music coming from radios in shops, bars and homes, mixed with the sounds of many canaries in cheer from everyone - much laughter, high spirits - indeed a highly infectious atmosphere! I attended an organized flamenco gathering at a Club Holiday on a Sunday morning from 11:30 to about 3:00 p.m.; groups appearing were: Los Alegrias, Triana 5, Los de la Trocha, Beni de Cadiz, El Pali, Enrique Montoya, Solera 4, Josele, El Hijo de Pepa, and guitarist, Manolo Brenes, who was exceptional. Dancing Sevillanas in Sevilla Later at Juan's shop, I met one of the fellows from Triana 5, and he informed me that his group was releasing an LP in Madrid, the material being mostly sevillanas with two of the tracks written by another friend of Juan's who composes music and lyrics for a lot of Spanish classical, folk, and flamenco music. I truly enjoyed meeting all of these people as they were very much involved in their musical trades, and one could no way ignore their tremendous vitality and dedication. I was invited back to another festival at a theatre in Sevilla, but unfortunately, due to other travel plans, I could not attend. Juan would be playing guitar at this one and Triana 5 would again appear. Staying at our hotel is a trainee bull-fighter who shaves his head except for a centre strip of hair from forehead to the nape of his neck; he autographed a postcard for my daughter, a momento for the future - possibly when he is famous! The old senoras dressed in black, who generally eye foreigners with suspicion and sail past with a WELCOME TO JALEISTAS - NEW MEMBERS \"Harumph!\" now smile sweetly at me and pat my daughter's head and say \"Guapa!\" José de Colorado (New Mexico), Teresita Osta (San Francisco), Linda Sena (Alhambra, CA.) Ken Saunders (Laguna Beach, CA.), Alex Peck (South Laguna, CA.), and from San Diego, Linda and David Cheney, Lilia Des Marais, Aida Durland, Jose Faget, Doris Fuller, Tony Heller, Robert and Hazel Lent, Karen and Robert Strack, Rob Owen, and Laura and Bonnie Tarantino. I will be sad to leave Spain again, but look forward to seeing you Jaleistas at the next juerga. Best wishes to you all, especially the driving force behind San Diego's flamenco organization, Juana de Alva.",
+    "title": "Like A Parade!",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "4, 5",
+    "page_number": 4,
+    "word_count": 531,
+    "article_char_count_full": 3057,
+    "article_char_count_review": 3057,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A5",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nA PLACE TO BE...TO SEE... AND TO BE SEEN! The Feria de Sevilla began formally in 1847 as an agricultural market for the sale of produce and livestock. It wasn't long however, before casetas and entertainment appeared and gradually the Feria took on its present form. The bullfights have continued as an important part of the fair since the beginning, but the market eventually disappeared, and, in the 1950s, the livestock fair was separated from the Feria and is now practically non-existent. For many years the Feria always began on the 18th of April. In order to standardize the days, the fair was changed to run from Tuesday through Sunday of the week that includes the 18th; the only exception occurs when the Feria must be delayed because it would come too soon after Semana Santa and Easter\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_03 | trigger=\"originally\"]\n\nbegan on the 18th of April. In order to standardize the days, the fair was changed to run from Tuesday through Sunday of the week that includes the 18th; the only exception occurs when the Feria must be delayed because it would come too soon after Semana Santa and Easter (there must be a week of recuperation between these two major and costly events). Because of late Easters, the Feria has even been held in May on a few occasions. The Feria was originally held on the outskirts of town on the Prado de San Sebastián Eventually, Sevilla grew around this area until the festivities were taking place in practically the center of town. In 1973, a new fairgrounds was set up on the outskirts of Los Remedios which lies across the river from Sevilla, next to the old gypsy barrio of Triana. The Feria can be thought of as having two major parts. In one section of the fairgrounds is assembled a large amusement park that assaults the senses with its dazzling array of lights, perpetual and chaotic movement, large assortment of food aromas, and an ear-shattering barrage of noise. This area, often referred to appropriately as La Calle del Infierno, is made up of a large number of such atracciones as ferris wheels, bumper cars, and assorted spinning rides. One ride very popular with young children is uniquely Spanish and somewhat hard to understand; a train filled with people goes around a small circle and through a simple tunnel, while clowns follow, hitting the riders with brooms - sometimes quite vigorously. The kids love it! There are the usual spookhouses, glass-houses, and freak shows with gypsies urging passersby to come in and see the snake-woman or the Indian woman \"en cueros\" (means colloquially \"naked,\" but turns out to have the literal meaning, \"in leather\"). This latter tradit\n\n[ENDING CONTEXT]\n\nstrength. These techniques were born out of necessity since the guitar is almost always used in very noisy situations - fiestas, ferias, bars, and tablaos - where the main sound that comes through is the percussive element. Therefore, strong rasgueo and thumbwork were of primary importance. Tuning is also de-emphasized since it can't be heard; in fact, it is not uncommon to see the guitar played by someone who does not know left hand fingering, but just beats out the rhythm on the open strings or holding one chord (the famous dance teacher, Enrique El Cojo, accompanies his classes that way).\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "La Feria de Sevilla",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "5, 6, 7, 8",
+    "page_number": 5,
+    "word_count": 1523,
+    "article_char_count_full": 8836,
+    "article_char_count_review": 3431,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_03",
+        "family": "AUTH",
+        "trigger": "originally"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1978_04::A6",
+    "article_text_for_review": "Personality of the month - Juanita Franco Juanita Franco, one of the liveliest participants at San Diego's juergas, was born of the liveliest par- juergas, was born and raised in Se- villa. She began to study dancing at the age of six with such teachers as the renowned Enrique \"El Cojo\" and his niece, Marisol, the Maestro Realito, with whom she learned the traditional dances so the Boleró school. Juanita's great- est ambition was to become a dancer, so she took every op- portunity to dance, Some of her most memorable moments were spent during the Feria de Sevilla and at the Romeria de Rocio. She was awarded a was also involved in concursos, which were similar to talent shows, and eventually was awarded a carnet de bailarina which entitled her to perform professionally. She was awarded the carnet when she appeared before most of the dance instructors in Sevilla and was tested in dancing flamenco, Spanish classical and ballet. After receiving the union card, she began performing in the flamenco, night clubs of Sevilla and spent four years working in the famous Hotel Cristina. Eventually she performed for such people as the late president of Spain, Francisco Franco and the present king, Juan Carlos de Borbon. Juanita also toured throughout Spain with the company of Adelfa Soto and worked with Juanito Valerrama for three summers. One of the most memorable experiences of Juanita's dancing career occurred while performing in a small town where the impresario was supposed to reserve the main theater. However other shows being held there had been detained by rain, so Juanita's company had to perform in the plaza de toros. They built a small tablao on top of a pig pen since they didn't want the platform to be in the mud. Juanita goes into hysterical laughter when she describes this because she says that every time they did heelwork, the pigs in the pig-pen would squeal - and they weren't in compas While performing at the Hotel Cristina, Juanita met a good looking man of German descent, Robert Middaugh, who later became her husband; I say \"later\" because it took them a long time to find someone to marry them in Sevilla due to their different religions. Robert brought Juanita to the United States where she eventually had four children, three daughters and a son who are now between the ages of six and twenty. Juanita has taught dancing since coming to this country and would like to continue teaching and performing around San Diego with her own dance company. Her favorite rhythm is Alegrias because she feels it is so happy. Just as much as she enjoys flamenco, she loves to perform such classical dances as \"La Boda de Luis Alonso\" and El Capricho Español. I leave Juanita with a smile, for nostalgia has come to life inside her. The fair is starting in Sevilla and she remembers the times when the whole family gathered for the festivities, the gorgeous costumes and the hours and hours of dancing. Looking back on this she is also reminded of the Romería in Rocío that will be following the feria. What a time to be in Sevilla! \"TOO LONG AGAIN!\" by George Willis For the past fifteen years I have been attending Spanish dance concerts in Los Angeles and San Diego. I have come to believe that they all have one thing in common - they are all too long! There seems to be a belief that Spanish concert dancers have a responsibility to display a cross section of each major type of dance to be found in Spain. For the audience this results in perceptual numbness. The fatigue of experiencing seventeen dances with only one intermission and no house lights between dances created a problem in following the performance for everyone except those who had committed the program to memory before the lights went out. The company consisted of eight dancers, two guitarists, a singer and a pianist. All exhibited a high level skill to the near capacity audience. The accompaniment switched throughout the evening from tape to live guitar. Early in the program Mr. Molina presented his Farruca which was followed by a Zapateado choreographed for three couples. The show-stopper of the evening was Luis Montero's choreographic interpretation of a section of Albeniz's \"Iberian Suite\". Performed to live piano accompaniment, the clarity",
+    "title": "LA LUZ",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9",
+    "page_number": 9,
+    "word_count": 728,
+    "article_char_count_full": 4258,
+    "article_char_count_review": 4258,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A7",
+    "article_text_for_review": "For the past fifteen years I have been attending Spanish dance concerts in Los Angeles and San Diego. I have come to believe that they all have one thing in common - they are all too long! There seems to be a belief that Spanish concert dancers have a responsibility to display a cross section of each major type of dance to be found in Spain. For the audience this results in perceptual numbness. The fatigue of experiencing seventeen dances with only one intermission and no house lights between dances created a problem in following the performance for everyone except those who had committed the program to memory before the lights went out. The company consisted of eight dancers, two guitarists, a singer and a pianist. All exhibited a high level skill to the near capacity audience. The accompaniment switched throughout the evening from tape to live guitar. Early in the program Mr. Molina presented his Farruca which was followed by a Zapateado choreographed for three couples. The show-stopper of the evening was Luis Montero's choreographic interpretation of a section of Albeniz's \"Iberian Suite\". Performed to live piano accompaniment, the clarity of rhythm and body design were superior to anything else seen that evening. The sixth and seventh dances on the program were two stylizations of the same theme, boy finds girl, boy loses girl and boy gets girl back. In $ \\underline{\\text{Lagarteranos}} $, the flavor is Castilian folk and in $ \\underline{\\text{Ben Amor}} $ it is heavy flamenco ending in a two minute, mandible to mandible, exit. These two dances could have been placed differently in the program. The first half of the program ended with a mild version of the potentially lively Jota. Part II of the program was the Cuadro Flamenco, in this case consisting of almost seven sections. All were lively numbers with the entire company on stage doing palmas and jaleo between each section. Two women performed Tanguillo. Two men presented a Sol-eares followed by solo dancers performing Garrotín, Alegrías, Cana and Jaleos in which Sr. Molina arrived in a Disco costume straight out of \"Saturday Night Fever\". The final section listed as a Rumba didn't materialize into anything except bows. This turned out to be fine with everybody. The concert was approaching three hours in length and although the rest of the audience was not driving back to San Diego, they all seemed just as eager to leave. 2 Luís de Córdoba A record review which first appeared in the Madrid paper, $ \\underline{\\text{Informaciones}} $. It was written by Antonio Villarejo. \"Los Consejos - Luis de Córdoba\" (Philip 64 29 876) This is the fourth record of one of the young worthies of the cante who has stood out in recent years. With a flamenco development acquired in part during his stay in Granada, he is an excellent specialist in the cantes of Granada, Málaga, and the Levante. On the other hand, he has some of the style of Fosforito, which has been well assimilated and is carried by his well-developed faculties and tonal flexibility. He has been awarded a number of prizes for his singing. On this record he interprets: tangos personales, soleá, verdiales, malagueñas, caña (with some low-pitched adornments in the remates, the \"ayes\"), bamberas, garrotín, taranto, jabera, romera, seguiriγas, and fandangos de Cavetano Muriel. The guitarists are Ramón de Algeciras and and Enrique de Melchor.",
+    "title": "TOO LONG AGAIN!",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9, 10",
+    "page_number": 9,
+    "word_count": 564,
+    "article_char_count_full": 3401,
+    "article_char_count_review": 3401,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_04::A8",
+    "article_text_for_review": "This is the fourth record of one of the young worthies of the cante who has stood out in recent years. With a flamenco development acquired in part during his stay in Granada, he is an excellent specialist in the cantes of Granada, Málaga, and the Levante. On the other hand, he has some of the style of Fosforito, which has been well assimilated and is carried by his well-developed faculties and tonal flexibility. He has been awarded a number of prizes for his singing. On this record he interprets: tangos personales, soleá, verdiales, malagueñas, caña (with some low-pitched adornments in the remates, the \\\"ayes\\\"), bamberas, garrotín, taranto, jabera, romera, seguiriγas, and fandangos de Cavetano Muriel. The guitarists are Ramón de Algeciras and and Enrique de Melchor.",
+    "title": "Luis de Córdoba",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_04",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 127,
+    "article_char_count_full": 778,
+    "article_char_count_review": 778,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

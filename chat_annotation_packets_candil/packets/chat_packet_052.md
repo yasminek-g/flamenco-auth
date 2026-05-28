@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-07-25-left-la-plastica-de-un-grito",
+    "article_text_for_review": "Por Agustín Gómez\n\nEl cartel anunciador del X Congreso de Actividades Flamencas, Jaén 1982, lleva la firma de Povedano. Su versión de «las tres gracias» —versión flamenca del mito—, aparece aquí con técnica publicitaria, donde la tinta plana y el dibujo cumplen su destino de gritar por las esquinas y a los cuatro vientos que el flamenco es tema de preocupación nuestra, que es arte, cualquiera que sea su medio de expresión, cuando se expresa con arte.\n\nLos lectores de CANDIL conocemos algún dibujo en línea y retratos imaginarios de cantaores, aparecidos en sus portadas, de Antonio Povedano. Estas dos facetas de su expresión artística con tema flamenco han tenido una correlación extraordinaria con temas de poesía, porque poesía y flamenco amamantan el vitalismo de Povedano. Recuerdo su exposición en Madrid de retratos de poetas contemporáneos y retratos imaginarios de poetas del pasado:\n\nPara los primeros, el dibujo en línea; admirable facultad de síntesis: unas cuantas líneas como esas apretadas notas rápidas que sólo el cantaor de flamenco sabe hacer en un golpe de voz. Para los segundos, Povedano, pintor antes que nada, pero en el que subyace un espíritu cantaor que anima y vivifica su obra, echa a volar con plena libertad sus maravillosas dotes creadoras y su imaginación se hace plástica. Esas imágenes tan íntimas, tan personales, esos sentires hondos imposibles de transferir se comunican, se hacen materia pictórica, y es entonces cuando el arte se entiende como un milagro de comunicación; cuando uno entiende que la imaginación del artista es el faro que ilumina el conocimiento; porque en los retratos imaginarios de Povedano, uno, sin haber visto jamás a Berceo, por ejemplo, puede identificar a Berceo a poco que haya leído dos o tres versos del poeta; porque Povedano da rasgos, facciones, da forma al alma. Es el alma de sus personajes lo que imagina y acierta en materia pictórica.\n\nA lo largo de su vida y obra ha cultivado gran variedad de temas. Sus personajes: el picaor, el campesino, el torero, el cantaor, los ovíparos... el mismo paisaje, todo ello —pienso— es imaginario que ha tomado naturaleza de arquetipo con una fuerza expresionista de escalofrío.\n\nEn su continua evolución —ya sus cuadros diríase que es pintura en movimiento—, Povedano ha llegado del retrato de un determinado y concreto modelo, al retrato imaginario por su cante interior y a través de su imagen de cantaor.\n\nSus primeros retratos imaginarios fueron cabezas de cantaores, y nada más natural; pienso que lo flamenco es una abstracción independientemente de la forma en que se manifieste. Lo flamenco es una manera de ser, una manera de sentir; lo flamenco es vivir con una gran fuerza emocional; lo flamenco es sacudida, es herida; es senti- X CONGRESO NACIONAL DE ACTIVIDADES FLAMENCAS - JAEN 1982\n\nmiento o drama humano tan personal e íntimo que difícilmente, su grito, su protesta, su reivindicación propuesta y exigida —dificilmente digo—, casa con un movimiento o espíritu entendido socialmente; porque lo social exige convencionalismos en unos medios y cauces expresivos; difícilmente casa con ello el flamenco porque es terriblemente individual. El flamenco es un solitario que ansía comunicación, y le basta, o puede satisfacer, si uno, tan sólo uno, le entiende; le siente. De ahí que Povedano —y nada más natural de acuerdo con esta lógica flamencamente entendida— no haya sido asociado a ningún grupo o movimiento pictórico de línea social. Sin embargo, puede sorprender que no haya sido así, cuando ve, palpa, siente, el grito terrible de sus personajes: sus picaores o toreros: sus personajes del pueblo; el grito, incluso, de su paisaje. No, en esa protesta, en ese grito, en ese espíritu reivindicativo, Povedano no puede ser asociado a ningún grupo, porque la fiereza expresiva de su trazo es movida por el mismo individualismo del cantaor flamenco ancestral, aquel felag-mengu o campesino apátrida que, cantaor desde que es hombre andaluz, empieza a ser cantaor, empieza su era flamenca, al cantar el llanto con un ¡ay!, ininteligible ¡ay! para los convencionalismos homologados. Este hombre, su cante, su expresión, no se homologa, es su venganza, es su desquite. Povedano es, en el más profundo estrato de su personalidad, ese campesino. Por eso sabe de qué va, por eso sólo tiene que abrir la boca, esto es, tomar el pincel, para, sin tener que articular palabra, sin tener que definir una forma, expresarse en campesino apátrida, esto es, en flamenco.",
+    "title": "La plástica de un grito",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 731,
+    "article_char_count_full": 4489,
+    "article_char_count_review": 4489,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-07-25-right-soleares",
+    "article_text_for_review": "Por Antonio Luis Baena\n\nLa espina que me clavaron hizo tal daño en la carne que sólo me queda el daño.\n\nEl muerto no siempre ha muerto. Mientras en recuerdos viva está en los demás viviendo.\n\nPor mucho que te lo digan no te creas lo que dicen hasta no verlo tú misma. Controlaíto el dolor lo tengo entre una sonrisa y el llanto del corazón. Me importa poco la gente: tengo que llorar y lloro cuando las ganas me vienen. Que el mar se ponga de azul o el mar se ponga de verde no me lo remedias tú. Aguanto lo que yo aguanto porque la gente no sabe a cuánto cuesta mi llanto.\n\nPerdóname mis desplantes, pero tú no eres la misma ni yo ya soy el de antes.\n\nPor mucho que lo maldiga tus penitas son mis penas, tus fatigas mis fatigas.\n\nTú por mi vera pasastes; mira lo que son las cosas que ni mi pena rozaste.\n\nTanto fue el cántaro mío a las fuentes del querer que se me llenó de olvido.\n\nNi la brújula te sirve para encontrar el fantasma de los besos que perdiste.\n\nTanto pregunté por ti que al verte ayer por la calle casi no te conocí.\n\nPongo mi reloj en hora. Relojitos que se paran no sirven para estas cosas. Con cada vez que te veo se levantan de sus tumbas los quereres que se han muerto.\n\nPor cada vez que me ves se te pone el corazón vuelta y media del revés.\n\nPara tan pocos valeres vas pregonándote mucho. Nadie sabe lo que vendes.\n\nConsejitos que te dieron, los sigas o no lo sigas, para nada te valieron.\n\nPero si no te lo dicen tú no sabes que yo vivo ni sabes lo que te quise.\n\nAbrió la noche la puerta para que entrara el recuerdo... pero el recuerdo la cierra.\n\nCochecito de caballos... Para la muerte de un día tanto galopar los años.\n\nLa muerte pasó segundo los pocos ratitos buenos que las penas me dejaron.\n\nVeletita de tu torre, yo bailo al son que me cantes y canto al son que me toques.\n\nCada vez menos palabras; que las palabras me sobran para desnudarme el alma.\n\nCon cuatro copas de menos o cuatro copas de más siempre sopla el mismo viento.\n\nMi pocito se secó pero tu fuente no quiso llevar agua a mi dolor.\n\nAunque le pongas al campo tapias y muros al mar, yo los iré derribando.\n\nYo seré lo que seré, pero eso, aunque no te guste, lo tienes que comprender. Que yo no le canto al pueblo, que el pueblo canta en mi voz lo poquito que recuerdo.\n\nVeredas que yo no piso las borra el viento en los mapas y las entierra el olvido.\n\nHubo un instante de gloria... ¿Dónde, que yo no lo vi? ¿Locuras de la memoria!\n\nEn mis ojos, repetida, se ve la barca que fue llevándose mi alegría.\n\nAdivina lo que digo: Aunque lejos, estoy cerca; y aunque sólo, estoy contigo.\n\nCansaíto estoy de ver que lo que una mujer rompe no lo arregla otra mujer.\n\nQue para domar los potros te fuistes a la verea y se te fueron con otro.\n\nIba el pensamiento mío a la orillita del mar sollozando por el río.\n\nSe echó en la cama y cerró los ojos porque sabía que muerto estaba mejor.\n\nTu candil se me apagó, que los caprichos del viento no sé manejarlos yo.\n\nLa pluma para escribir, el amor para olvidarlo y el vino para seguir.\n\nQue tienes en cuatro letras puesto tu destino claro. Que lo entienda el que lo entienda.\n\nAndan poniendo en papeles que amores como los nuestros ya ni se compran ni venden.\n\nCon tanto como te quise pongo el corazón alerta para que pronto te olvide.\n\nQue mira que no me esperes, que yo ya tengo bastante con tanto esperar la muerte.\n\nPañuelo que tú has perdí ni está en ninguna colá ni se te fue por el río.\n\nCositas que tú has de ver... quien te quiso ni saluda... se vuelve pa la pared.\n\nTu veredita tenía siempre camino de vuelta, nunca camino de ida.\n\nLas cositas del querer unas vienen por derecho y otras vienen del revés.\n\nQué desgraciaito soy: por mucho que tú me llames a tu casita no voy\n\nTengo los pasos contaos. Veinte me llevan a ti; más o menos, se han pasao.\n\nJustito te viene el tiempo. Cada vez que tú me miras yo te miro y no te veo.\n\nQue tiene que ser así: tú sigues por tu camino que a mi camino es pa mí.\n\nPor culpita de un querer yo tengo que estar sufriendo lo que no era menester.\n\nCon cada paso que das de mí te vas alejando; y yo sin poder andar.\n\nCada loco con su tema, que el tema de mi locura no hay cristiano que lo entienda.\n\nLos alambres de tu jaula se quedaron tan mohosos que no hay dios que te los abra.\n\nLe pido a la muerte cuentas de porqué sigo viviendo si está mi esperanza muerta.\n\nA las claritas del día te pones tú a cavilar lo que por la noche olvidas.\n\nEl papel lo aguanta todo... Pero no aguanta el papel las lágrimas con que lloro.\n\nAtaques de alferecía me dan cuando yo me acuerdo lo mucho que me querías. Cuando paso por tu calle hasta las piedras me gritan lo pronto que me olvidaste.\n\nMis penas dentro las guardo. Quien quiera saber de mí que me mire cuando callo.\n\nLa puerta que tú cerraste quedó con la tranca fija y se perdieron las llaves.\n\nLas arenas de la playa saben de la sal del mar y de la sal de mis lágrimas.\n\nQue somos arieritos y en el camino de vuelta, si es que hay camino de vuelta, tengo que verme contigo.\n\nQue tú te tienes en mucho y yo me tengo en bien poco; a ver quién sabe decir cuál de los dos es más loco.\n\nCon tus silencios castigas los errores que cometo; pero hay silencio también las pocas veces que acierto. Aunque tengo lo que tengo me falta lo que me falta. ¿Sacará mi noria viento cuando se ha perdido el agua?\n\nPlaza de Belén, 1\n\nTeléfono 22 47 89",
+    "title": "Soleares",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-26",
+    "page_number": 25,
+    "word_count": 1049,
+    "article_char_count_full": 5352,
+    "article_char_count_review": 5352,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-07-26-right-al-filo-del-x-congreso-de-activi",
+    "article_text_for_review": "Un honor para nuestro Congreso y una deuda impagable de toda la afición flamenca, supone la aceptación de S. M. la Reina, doña Sofía, de la Presidencia de Honor de este X Congreso de Actividades Flamencas, ya inminente y que, como el lector sabe, se celebrará en Jaén durante los días 16 al 18 del próximo mes de septiembre.\n\nCreemos, sinceramente, que por las ponencias y comunicaciones recibidas, así como por las inscripciones hasta ahora efectuadas, el X Congreso alcanza una cotas de verdadera responsabilidad y compromiso de futuro, que muy bien pueden centrarse en dos temas:\n\na) Posibilidad de construir una Federación Nacional de Peñas.\n\nb) Posibilidad de que las resoluciones de los Congresos sean imperativas y, de alguna manera, vinculadas a los miembros asociados.\n\nDos temas que se abordarán tras la exposición de la encuesta realizada a las diversas peñas y entidades flamen-cas (se recuerda que el plazo del cuestionario cumplimentado expira el próximo día 8 de septiembre) y que, por lo que conocemos, ha tenido muy buena acogida, aunque muy inferior a la esperada.\n\nCreemos que ya es llegada la hora de que los Congresos alcancen plena operatividad y se pronuncien con normas objetivas que sean válidas para todos sus miembros, ya que el actual momento flamenco plantea una serie de problemas que no podemos posponer.\n\nPero no son estas dos las únicas propuestas a debatir en el Congreso; sino que una veintena de comunicaciones y ponencias serán debatidas sobre aspectos fundamentales que muy bien pueden agruparse en los siguientes apartados:\n\nCierto que esta idea, ya vieja y sustentada por el equipo de «CANDIL» en el pasado Congreso de Almería y expuesta en su ponencia «Por un Congreso operativo de Actividades Flamencas», tiene sus detractores, a los que hay que advertirles, que ninguna planificación de actividades significa planificación del arte. Y que, menos aún y por su propia definición, el arte es imposible de burocratizar. Pero dejemos de opinar del tema y sea el Congreso quien se pronuncie sobre este aspecto que nos merece el mayor interés.\n\nA) Aspectos organizativos, estatutarios, etc., de los Congresos.\n\nB) Aspectos Sociales del cante.\n\nC) Estudios musicales del cante.\n\nD) Estudios literarios de la copla.\n\nE) Estudios históricos y sociales del cante.\n\n«CANDIL» colabora abiertamente en este X Congreso; pero su colaboración aunque total, es crítica. Si nosotros apoyamos la celebración de los Congresos y del X, fundamentalmente, es por nuestra firme creencia en la utilidad de los mismos; pero nuestro apoyo no es incondicional, «CANDIL» nació con el firme propósito de la defensa de la pureza de nuestro arte, de aquí que nuestra postura ante el propio Congreso sea crítica.\n\nUna amplísima gama de temas que de su seriedad en el tratamiento y responsabilidad en las conclusiones depende el éxito de este encuentro flamenco y la propia finalidad del Congreso. Los actos sociales, recitales de cante, al amplia bolsa del Congresista, dotada con un buen número de publicaciones, libros, discos y otros objetos, etc., etc., si bien ocupan un buen interés, no son, ni pueden ser fin único del Congreso. Más aún, creemos que los Congresos deben ser conscientes de su responsabilidad presente y futuro con el más noble y bello arte andaluz.\n\nHasta ahora hemos informado, en la medida de lo posible, de los aspectos organizativos que nos parecían de mayor interés para la afición. Nuestro póximo número ofrecerá a sus lectores un amplio y desapasionado análisis de cuanto suceda en este X Congreso.",
+    "title": "Al filo del X Congreso de Actividades Flamencas",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 575,
+    "article_char_count_full": 3537,
+    "article_char_count_review": 3537,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-07-27-left-dos-modos-distintos-de-acercarse",
+    "article_text_for_review": "AUNQUE NO QUEPA EN EL PAPEL\n\nA pesar del buen número de novedades que nos quedan por reseñar, dedicaremos esta sección al comentario de dos libros, a mi parecer, claros exponentes de formas distintas de acercarse al cante y de escribir sobre él.\n\nPor Manuel Urbano\n\n(Permítaseme un breve paréntesis para calificar de imprentable esa opinión de pretendidos, autoerigidos, flamencólogos que atacan a escritores de valía, pasmémosnos, ¡porque escriben bien!..., pero de este analfabetismo, que no es el machadiano, nos ocuparemos otro día).\n\nRetornemos al tema y acerquémonos a los dos libros:\n\nEL CANTE COMO VIVIDURA.\n\nAcaba de aparecer la segunda edición (1) de un libro necesario e inencontrable: «El flamenco, Vida y Muerte», de Fernando Quiñones. En él, el poeta y escritor gaditano nos ofrece una visión del fenómeno flamenco desde el punto de vista de su significación humana: la de los protagonistas del arte y la del propio autor; algo que, como el lector sabe, es totalmente indisociable para calar en la honda y jonda verdad del cante.\n\nA lo largo de más de doscientas páginas, Quinones, con amenísima erudición —por decirlo al modo andaluz, con conocimientos— y verdadera jondura, ofrece una amplia panorámica históricovital de nuestro arte, analizando aspectos esenciales del mismo: aspectos sociológicos, «el duende», «la gracia»... y hasta un retrato emocionado y significativo de uno de los últimos grandes: Juan Tallega. Un libro, repleto de sugerencias e ideas que nacen de la propia vida del flamenco, de la propia vida flamenca del autor, y que concluyen con una visión un tanto apesadumbrada del futuro y que transcribimos por parecernos asunto fundamental y de responsabilidad individual y colectiva: «Tampoco hay que dar por definitivamente perdido el flamenco. Aún le queda cuerda. Lo difícil va a ser prolongársela y ello nunca será posible si no se cuenta en todo momento con una entera constancia y un completo diagnóstico de su declinante situación y de las grandes causas que la originan, esas que acabamos de señalar. Es lo primero que no deben olvidar los mantenedores y la afición, y lo que olvidan casi siempre».\n\n«Sólo parece haber una salida: renovación sin pérdida de la tradición. Deben seguirse fijando y preservando en toda su pureza los antiguos rasgos que confirieron al flamenco su entidad humana y su importancia artística, pero han de buscársele nuevos caminos. No ignoro estar proponiendo algo muy difícil, quizá inasequible. Pero el flamenco está necesitando un urgente nuevo mundo, de un Colón y unos conquistadores geniales que, sin menoscabo de su genuino contenido, remuevan sus fondos procurando no sacarlos de quicio ni falsearlos, traigan su mensaje a términos de hoy».\n\nY aquí, hay parte de la muerte que el rótulo del libro indica; pero mantengamos la confianza, como el autor, si hoy es día de tener confianza en algo. UNA APROXIMACION AL CANTE JAENERO. Entre la bibliografía flamenca se tenía conciencia de la falta de un estudio sobre el cante jaenero, tarea que de modo entusiasta y con un indisimulado aprecio —en ocasiones excesivo— han acometido Alfonso Hortal Barba en su «100 años de cante jondo en Jaén» (2), del que es destacable, fundamentalmente, su pionerismo en los estudios, la recogida de nombres cantaores y el entusiasmo de la empresa literaria.\n\nDesde luego, a nosotros nos resulta difícil coincidir con los juicios que el libro mantiene y más aún en su clasificación de cantaores, etc., etc., y quizá con mayor discrepancia que con otros libros —dificil es desde luego a estas altura aceptar cualquier libro de temas flamencos en bloque—; pero de todos modos, esta primera búsqueda, esta indagación cantaora tiene su mérito y en ella misma está la llamada para continuar indagando sobre la historia y realidad del cante giennense.",
+    "title": "Dos modos distintos de acercarse al cante",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-27",
+    "page_number": 27,
+    "word_count": 616,
+    "article_char_count_full": 3803,
+    "article_char_count_review": 3803,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-07-27-right-flamenca",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTítulo: SACROMONTE.\n\nCanta: ENRIQUE MORENTE.\n\nGuitarras: TOMATITO e ISIDRO SANLUCAR.\n\nOtros instrumentos: Baterías, bongos, laud, cajón, tumbas, palmas y coros.\n\nNo podemos andar con rodeos buscando calificativos para definir la última entrega sonora del cantaor granadino. Este L. P. nos trae la pérdida de una voz jonda; pérdida que desearíamos no fuese definitiva.\n\nReferencia: ZAFIRO, ZL-552; MADRID, 1982.\n\nQue Enrique Morente ha dado numerosas pruebas de ser un cantaor flamenquísimo, de poderosa voz repleta de atractivos, es algo que al mínimo aficionado no se le escapa, como tampoco le es ajena su inquietud en la búsqueda de nuevos caminos para nuestro Arte. Pretensión esta última contra la que nada tenemos e, incluso, nos parece necesaria siempre que sea fiel al trazado, al legado\n\n[EVIDENCE WINDOW 1 | retrieval_hint=AUTH_01 | trigger=\"verdadera\"]\n\nte nos traen a la regresión. Y aquí, nos parece, cabe una interrogante ¿es que los cantaores se someten a esa seudointelectualidad que quiere engrandecer el flamenco privándole, precisamente, de lo que le caracteriza: lo popular? ¿Qué significado tiene esa pretensión de someter a laboratorio lo que es vida purísima? Por mucho que se empeñen, no llegaremos a los cantes probeta. Pero centrémonos en el disco que nos ocupa, que no es búsqueda, sino verdadera regresión, ¡qué lejano el homenaje de Morente a don Antonio Chacón!, en la que subsisten su espléndida voz y marcado compás, aunque supeditados, respectivamente, a unos coros que nada bueno aportan, o a unos cantes desfigurados. De lo primero pueden ser muestra los fandangos de Huelva, y de lo segundo, esos pseudotangos que abren la grabación y que nos recuerdan a Los Chichos, Los Marismeños, etc. Y aquí otra objección, Morente deja de ser personal: en las bulerías —donde juega con los melismas, alargardo y recortando los tercios— nos ofrece unos resultados muy parecidos a los arreglos de Manuel Molina para Lole; en las rumbas, suenan los sonidos de Camarón en «Como el agua»; en la colombiana, está toda la vieja opereta flamenca; en... para q\n\n[ENDING CONTEXT]\n\nde «El Sordillo», nos recuerdan ciertos matices de Manuel Oliver, por lo que nada tendría de extraño que ambos intérpretes bebieran en la misma finísima fuente.\n\nEl disco, finalmente, concluye con una ronda de martinetes de los tres cantaores, quienes saben diferenciar, personalizándolos, los cantes fragueros.\n\nLa guitarra, sobresaliente y compañera perfecta de estos cantaores, repleta de dulzura y bien marcado compás, dejando hacer al cantaor y arropándolo, incluso, cuando es necesario.\n\nEn definitiva, un disco «pá escuchá», con las voces de tres viejos y aficionados trianeros.\n\nDOSCANDIL\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Discografía flamenca",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "27-28",
+    "page_number": 27,
+    "word_count": 1817,
+    "article_char_count_full": 11169,
+    "article_char_count_review": 2836,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "AUTH_01",
+        "family": "AUTH",
+        "trigger": "verdadera"
+      }
+    ]
+  }
+]
+```

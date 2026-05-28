@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1979_10::A5",
+    "article_text_for_review": "Jaleo normally consists of short bursts of sound, words such as \"olē\" that are said in tones varying from deep whispers to high-pitched, very loud shouts. There are four general types of jaleo expressions: 1) animal-like grunts and yells; 2) words that are used without meaning; 3) words and short phrases that are used with meaning; 4) longer phrases and sentences. The first group, the animal grunts and yells, are a bit difficult to describe on paper. Provided they are not too grotesque, they can be an effective spontaneous contribution to jaleo, but, in general, they play a relatively minor role and are probably best avoided by all except the very experienced. Group two is made up of words that may or may not have meaning, but are used more for their sound than their meaning. The best example of this group is the classic \"olé\". Here are some others: agua <table><tr><td>a</td><td>qua</td><td>mira</td></tr><tr><td>anda</td><td>ole'</td><td>ole'</td></tr><tr><td>arriba</td><td>quiero</td><td>quiero</td></tr><tr><td>arsa</td><td>salero</td><td>salero</td></tr><tr><td>asa</td><td>sí, sí</td><td>sí, sí</td></tr><tr><td>así</td><td>sí senor</td><td>sí senor</td></tr><tr><td>azúcar</td><td>toma</td><td>tiene</td></tr><tr><td>bién</td><td>vamo</td><td>viene</td></tr><tr><td>chiquillo (a)</td><td>vamo allá</td><td>vamo allá</td></tr><tr><td>el arte</td><td>vaya</td><td>vaya</td></tr><tr><td>eso</td><td>venga alla'</td><td>venga alla'</td></tr><tr><td>fuerza</td><td>*za, za, za..</td><td>*za, za, za..</td></tr><tr><td>mi arma</td><td></td><td></td></tr></table> These expressions are usually used for the purpose of communicating something to the performers (or at least seeming to do so) and consequently must be said at the proper moment and in the proper context. The jaleador must, therefore, be well informed about what is going on. The final group of jaleo expressions is made up of longer phrases and whole sentences. This type of jaleo is not done very often and there are few standard ones, since most of them are improvised at the moment. Here are some typical ones: Sabe tocar bién = you know how to play well Esa guitarra buena = that good guitar playing Los buenos tocaores = what good guitar players Que canta bién, de verdá = you are singing well Va a cantar bién = you are going to sing well Así se escribe = that's the way to write (to describe rapid heelwork Y no tiene novio = and she doesn't have a boyfriend Esa cosa tuya buena = that good thing of yours Here are some unusual ones: Es un órgano = it is an organ (describing a guitar) Con esa guitarra monstrua = with that monster of a guitar El avión de Nueva York = the airplane of New York (describing Carlos Montoya) The complex and humorous jaleo expressions are more at home in the private fiesta than on the stage, where they usually go unappreciated (especially by English-speaking audiences), and should be attempted only by those who are fluent in Spanish and very experienced in flamenco. Surprisingly, the words and expressions listed in these four groups (plus their various combinations) comprise most of the jaleo commonly done today. These expressions have been used for years and have not changed as much as the other aspects of flamenco -- except for occasional references on records to \"marijuana\". As mentioned earlier, most jaleo consists of \"ole\" and \"names\". PERFORMING JALEO The more sophisticated are not content to mark only the major accents, but instead, do complex accompaniments and countertimes. Here are some of the classic ones: <table><tr><td>RUMBAC</td><td colspan=\"3\">one full compas</td></tr></table> JALEO JINTS If you would like to dress up your flamenco performances with jaleo and aren't exactly sure how to go about it, here are a few suggestions. These are not rules, but just guidelines based on what is usually done: -To start, pick just a few words, including \"olé\". -Use these words over and over. -Speak loudly; you have to shout to be heard in a stage performance, and it doesn't do much good if you are the only one to hear your jaleo. -Look for climax points in the song, dance, or music. -Try to hit some accents in the compás occasionally. -Keep jaleo to a minimum during profound flamenco and during quieter moments in the lighter numbers.",
+    "title": "JALEO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_10",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "7-9",
+    "page_number": 7,
+    "word_count": 636,
+    "article_char_count_full": 4279,
+    "article_char_count_review": 4279,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_10::A6",
+    "article_text_for_review": "Text and Photos by Candace Bevier Considered by many to be the flamenco event of the year, Paco de Lucia flew to Albuquerque, New Mexico for a \"one-night only\" concert this spring, April 6, 1979. Causing barely a ripple in the American press, it was once again dependent on friends and the flamenco grape-vine to alert as many aficionados as possible. It didn't take long for word to spread up and down the Rockies. And soon a caravan of gypsy mobiles was heading toward another flamenco happening. Paco had first visited New Mexico in 1975 when he and his friend Rene Heredia drove through on their way to Paco's Stanford University concert. Rene had energetically introduced Paco to as many flamenco fans in the Southwest as time had allowed. Since then, the \"Paco phenomenon\" had taken root and many fans were eagerly anticipating their first Paco concert. The concert promoters were themselves going to hear him for the first time. Paco was completing a hectic schedule on a 9-month European tour, including a special 3-month tour concertizing with the noted jazz guitarists John McLaughlin and Larry Coryell. Paco and his beautiful wife Casilda, were on their way to holiday on the beaches of Jamaica. This was Casilda's first visit to the Southwest. Paco's brother Ramon, also came to accompany Paco on second guitar. Having arranged with Paco to rendezvous mid-morning of the concert at his hotel lobby, Rene drove into Albuquerque and stopped two men downtown to ask directions to the Plaza Hotel.",
+    "title": "CONCERT NIGHT WITH PACO DE LUCIA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_10",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "10",
+    "page_number": 10,
+    "word_count": 253,
+    "article_char_count_full": 1505,
+    "article_char_count_review": 1505,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_10::A7",
+    "article_text_for_review": "(Excerpt from Albuquerque Newspaper, April 7, 1979); Sent by Candace Bevier by Richard Conway Santa Fe and Taos to hear the best solo music performance of 1978. But Paco de Lucía may already have provided Albuquerque with the same honor this year. We waited until Thanksgiving and David Moss' percussion concerts in Albuquerque, The flamenco guitarist played an un-announced program Friday evening that filled Kiva Auditorium with all the passion of an El Greco sky and the collective spirit of Andalucía, from whence the music came.",
+    "title": "PACO'S MUSIC INSPIRES",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_10",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11",
+    "page_number": 11,
+    "word_count": 86,
+    "article_char_count_full": 533,
+    "article_char_count_review": 533,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_10::A8",
+    "article_text_for_review": "(from: \"Flamenco'. Carmen Amaya\" Decca 9925) This Sabicas sevillanas was sent to us by Joe Bubas, who had it transcribed for him by Peter Baime. COPLA $ ^{*} $See below $ ^{*} $Variation",
+    "title": "SEVILLANAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_10",
+    "year": 1979,
+    "language": "en",
+    "article_type": "article",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 33,
+    "article_char_count_full": 186,
+    "article_char_count_review": 186,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1979_10::A9",
+    "article_text_for_review": "by Teo Morca The day that we returned to our studio in Bellingham from our six week tour of New York and Jacob's Pillow dance festival, the workmen called to say that they would be in our studio at 7:00 the next day to start putting in the all oak floor. This of course was a very exciting moment, because for the next two weeks, which were right before the Flamenco Seminar, our sloping, linolium-covered floor was going to be leveled with what I have dubbed \"our Arcángel floor\", a beautiful wooden \"flamenco floor\". TEO MORCA (LEFT) AND FLAMENCO WORKSHOP (photos by Bob Clifton) The floor was finished the day before the workshop and this alone was a great inspiration to dance. Also finished was a beautiful mural art piece on our wall, done by the great artist Michael Baron, called \"The Flower of Love\"; it looks like a giant swirl-",
+    "title": "MORCA'S FIRST FLAMENCO WORKSHOP-",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1979_10",
+    "year": 1979,
+    "language": "en",
+    "article_type": "other",
+    "pages": "12",
+    "page_number": 12,
+    "word_count": 151,
+    "article_char_count_full": 838,
+    "article_char_count_review": 838,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

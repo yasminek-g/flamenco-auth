@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1982_06::A7",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n\"OUR BUSINESS IS WITH OURSELVES\" (from: $ \\underline{\\text{Pais}} $, March 21, 1982; sent by Brad and Paca Blanchard; translated by Paco Sevilla) by Ricardo Dessau and Alfonso Domingo Andalusians and gypsies, but also lovers of Lennon and rock. Since they appeared on the Spanish music scene in the mid 1970's, Lole Montoya and Manuel Molina have changed substantially the traditional and perhaps fossilized concept of flamenco. The young people follow them fervently, while the older ones, who criticize them, listen to them on the sly. Their controversial ingredient is, surely, an indication of their value. \"I have always been a mediocre guitarist; I believe I am the worst of the guitarists. If I were in charge of giving out diplomas, I wouldn't give myself one. I learn, that's it. I'm an\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"know\"]\n\nenco. The young people follow them fervently, while the older ones, who criticize them, listen to them on the sly. Their controversial ingredient is, surely, an indication of their value. \"I have always been a mediocre guitarist; I believe I am the worst of the guitarists. If I were in charge of giving out diplomas, I wouldn't give myself one. I learn, that's it. I'm an aficionado, 'un tío' who plays the guitar, who likes the guitar. But I don't know how to do arpeggios, I don't know how to do tremelos, I don't picado, I don't know the guitar. I haven't the slightest idea! What happens is that I like music, and nothing else. It has been luck to do fourteen or fifteen songs for La Lole and that the people like them, as do the recording companies. Tío, I am just another musician. TruIy, I swear to God! With luck you will like it. Puea, qué bien, I'm glad you like it. Because, if each tío (person) that I meet tells me that I play well, it is a medal that he puts on me, an interior medal that I am not going to put here, that is, on the outside. As a guitarist I am worth nothing. My air'mi rollo,' my nourishment since I was born has been the guitar, and I have continued supporting myself with the guitar. But I don't want to deceive anybody. Do you understand what I am saying? No? I am not a guitarist who goes about deceiving people, saying that this is done this way because I say so. I don't know how to play the guitar, and anybody who does can come and teach me and do what he wants.\" soul; as she says, \"I am always flying.\" Under these conditions, one can't sum up her dialogue more than just in passing, especially because Manuel usually becomes the natural spokesman for the duo;\n\n[ENDING CONTEXT]\n\ncould give the appearance of a difference in elaboration between each of our records and that is: The first record we made was \"Nuevo Día,\" the second, \"Pasaje al agua.\" And what happened was that the second had drums and electric guitar. The third record, which was \"Romero verde\" had a lot of rehearsal, and the last record, \"El alba con alegría,\" had drums and a lot of rehearsal...\" As singers, Lole y Manuel don't believe in compromising themselves for others: \"We do things for ourselves...we are not going to worry about whether you like what we do; we are convinced that you will like it!\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "LOLE Y MANUEL",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_06",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1204,
+    "article_char_count_full": 6536,
+    "article_char_count_review": 3323,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "know"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_06::A8",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\n(fram: FISL Newsletter; Oct. 1968) by Brook Zern (Editor's note: We reprint here a report on a festival that took place almost fourteen years ago in Spain. You might wonder at our reasons. First, it is an early festival that took place before the explosion and commercialization of the festival phenomenon. Second, Brook Zern's writing is always entertaining and in this article he hits a number of nails on the head and makes some amazing observations that time has borne out. It should also be refreshing to the readers to see a point of view that is different from the ones we get from the Spanish newspaper critics.] Well, we did it again. My wife and I survived another Gazpacho of Morán -- our fourth in a row yet! we still haven't gotten it down to a science in the manner of guitarist Bob\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_02 | trigger=\"listened\"]\n\nthe head and makes some amazing observations that time has borne out. It should also be refreshing to the readers to see a point of view that is different from the ones we get from the Spanish newspaper critics.] Well, we did it again. My wife and I survived another Gazpacho of Morán -- our fourth in a row yet! we still haven't gotten it down to a science in the manner of guitarist Bob Haynes, for example, who paid his five dollars for a ticket, listened to the first singer warming up, and decided to go home and sleep. That was perhaps the most flamenco thing of the evening. At any rate, remembering last year's frigid night air which made us miserable all night, we both wore extra-heavy clothes. The temperature never dipped below ninety-three, which made us miserable all night. Still, it was a welcome relief from the daytime temperatures which were 112 degrees Fahrenheit in the shade (and in Morón you're lucky to find enough shade to fit a thermometer into.) Among those present at the event were the Don Pohrens, nattily outfitted in the latest Gazpacho wear. Asked to comment on the progress of the affair, Mr. Pohren smiled broadly and said, \"‡‡-‡#\" which seemed to sum up the situation just perfectly. Also present were the Pohren's house guests, known to their friends as Los Finkas de Espartera. Anoth\n\n[ENDING CONTEXT]\n\nto me to give a \"majestic lesson in the cante\" (to use the Spanish newspaper critic's enthusiastic phrase) when I would rather hear him just sing. From all the above remarks I would now hasten to exempt 20% DISCOUNT TO ALL MEMBERS OF JALEISTAS 1011 FORT STOCKTON DRIVE 5AN DIEGO, CALIFORNIA OWNER TOM SANOLER (714) 298-8558 (Hillcrest/Mission Hills area) Mairena's bulerías. As we finally got up to leave the Gazpacho, Mairena's last bulerías were echoing around us. They had made all his powerful singing por siguiriyas and por martinetes seem flat by comparison, and had delighted every- one.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "VI GAZPACHO ANDALUZ DE MORON DE LA FRONTERA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_06",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 1238,
+    "article_char_count_full": 7219,
+    "article_char_count_review": 2945,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_02",
+        "family": "HERIT",
+        "trigger": "listened"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1982_06::A9",
+    "article_text_for_review": "Pastora was born of gypsy parents on an obscure street in Sevilla's barrio of San Román, a parish distinguished only by its possession of the image of the Virgen de los Gitanos. She continued to live most of her life in her native city. At an early age, she and her brother, Tomás, began to sing professionally in taverns, first in Sevilla, then in several cities in the north. Pastora was a phenomenal success and eventually entered the glittering world of the cafe cantante. Her early specialty was the tango and she is said to have earned her nickname, \"Niña de los Peines,\" from the famous tango \"Peinate tu con mis peines,\" which became associated with her in the early years. In her youth Pastora knew intimately most of the great cantaores of the first part of this century, and her long love affair with Manuel Torre probably left a deep impression on her later cante. In her prime, Pastora's name was synonymous with the colorful and disreputable world of the Alameda de Hercules. Now a second-class neighborhood of shabby, once-grande houses, the Alameda was then the center of Sevilla's lively night life and the last remnant of the now mythical Andalusian world of juerga, cante, and toros. In this atmosphere, Pastora's flamboyant taste and exhuberant spirit were entirely at home, easily ugly, she dazzled all with the pride and confidence of her carriage, the brilliance of her smile and, of course, with her cante. In 1933, \"La Niña\" married the well-known malaguenero, Pepe Pinto, in ultra-Sevillian style, that is, at the feet of the Virgen de la Macarena. She was to remain with Pepe until his own death shortly before her own. With the decline of the Alameda and the loss of interest in gypsy cante, Pastora began to experience difficulties. In 1949, she made her last attempt to reach the public in an expensive theatrical presentation in which she starred. The show was a disaster. Enraged and disappointed, she retired from public life, singing only at gatherings of friends. She made a brief appearance at a 1961 performance in her honor, but was otherwise rarely seen except as she sat, dressed in black and wearing dark glasses, outside her husband's tavern, the Bar Pinto, on Sevilla's Plaza Campana. Late in 1969, Pepe died. Pastora followed him by only a few months. The loss to the flamenco world is, of course, incalculable. The greatest homage we can pay pastora now is to love and understand her particular kind of cante and the flamenco spirit from which it sprang. She was that rarest of rare-ties, a cantaor who sang everything and sang it not only well, but magnificently. Her enormous repertoire ran the gamut from the most serious to the most frivolous cantes and reflected her long association with some of the most knowledgeable cantaors of all times, in particular, Manuel Torre and her brother, Tomás. She stood in the tradition of both the singers of Triana and those of the province of Cádis. This broadening of stylistic horizons was widespread in the period of the cafe cantante as widely traveled professional singers, rather than local specialists, became the central figures of the flamenco world. There was a basic difference in Pastora's renditions of cante grande as versus her cante chico. She was conservative in her attitude towards the great cantes and sang them straight and unembellished, following the stylistic examples of Manuel and Tomás. Many old songs probably owe their preservation to her remarkable memory, just as others owe their revival and engrandisement to her deeply creative brother. In contrast, Pastora's own creative abilities were spent on the lighter styles. She transformed simple Andalusian folksongs like the Petenera and Bambera, into cantes of stylistic richness and nostalgic depth. Mer cante chico sparkled with wit and humor. She was one of the finest singers of bulerías, and reigning queen of the tango. Her artistry was infallible and she alone seemed capable of transforming the otherwise insipid styles of the \"Latin American period\" into something flamenco.",
+    "title": "PASTORA PAVON \"LA NINA DE LOS PEINES\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_06",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21",
+    "page_number": 21,
+    "word_count": 675,
+    "article_char_count_full": 4051,
+    "article_char_count_review": 4051,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_06::A10",
+    "article_text_for_review": "(from: El País, March 31, 1982; sent by Brad Blanchard; translated by Roberto Vazquez) by A. Alvarez Caballero Last weekend the Peña Fosforito held its third annual reunion of cante at Puente de Vallecas, naturally with the performance of the titular cantaor and others, both amateur and professional. The great firmness was Fosforito, of course. At this point, after a quarter century of being the first figure of the cante, everything about Fosforito has been said. He was brilliant, as always, in all the styles that he touched; alegrias, soleares, tarantos, tientos and tangos, bulerías. We had not heard Fosforito for some time, and it seems to us that the cantar is still the same. This can be taken as Praise or reproach. As praise, inasmuch as it supposes a permanency in a line of indisputable formal quality, the voice always powerful and flamenca, with all the resources of a long and wise experience; as a reproach, inasmuch as Fosforito puts everything at the service of a personal stereotype that repeats itself time and time again, not only in the modulation of the voice, but in the gestures, the tics, in the apparent feeling, in such a way that emotion remains distant in something that appears rehearsed even in its trivial details. For Carmen Linares, the art of the \"jipic\" is in her cry. Her deep voice, which frequently breaks forth unmercilessly, is tremendously effective for that cance with passionate abandonment and exasperation. She does it without ever losing her part and with a formidable ability to attract the audience. Later, when the spirit cools and one calmly meditates about what was heard, one asks oneself if the cance of this woman is as great as it seemed to us while hearing her. Chaquetón is, for me, the present young master of the styles of Cádiz. Each new performance of his reaffirms this belief. Saturday evening, hls granaína and the malaquena del Mellizo and las alegrías were exemplary. I don't think that, at the present time, there is a cantaor that can offer such an ample repertory and with such a variety of hues por alegrías as this man of great humanity and a natural voice -- round, able to go from almost the whisper to the scream, without an unwanted twist. Salako de Córdoba presented a sad spectacle on stage -- trying to be funny at all costs. He made a mockery of a poem by Miguel Hernández in a bulerías, a characteristic that marked all his cante, except perhaps in a soleares where he showed himself more moderate. Several aficionados of the fena Fosforito also sang, with better or worse luck, but all with great desire to please. An evening of the various hues, of which, if we were asked to summarize, we would say: the wonder of the malaquena and alegrías of Chaquetón, the cry of Carmen Linares, the controlled mastery of Fosforito. And the great guitar of Enrique del Melchoz. Serving Fine Greek Cuisine Join in our lively taverna atmosphere featuring ethnic dancing nightly: FLAMENCO SHOWS Thursdays beginning 7:30 Reservations 281-26:0 2927 Meade Ave. (1 clock north of Ei Cajon Bvo. at 30th St.)",
+    "title": "THE MASTERY OF FOSFORITO AND CHAQUETON'S GREAT EVENING AT VALLECAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_06",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 528,
+    "article_char_count_full": 3074,
+    "article_char_count_review": 3074,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1982_06::A11",
+    "article_text_for_review": "Los Angeles: Members of the Morca Flamenco Theater made the rounds of the Los Angeles flamenco scene during their stay in the area. The show at the Esparticus was great fun -- very upbeat. Talegón is a show in himself -- a veritable \"flamenco orchestra.\" The show at El Cid is beautiful -- a real \"meat and potatoes\" show. Marcos is playing beautifully. (From Teo Morca) Canada: The Toronto based group \"Los Hispanicos,\" under the direction of Maximiliano, will be appearing seven days a week at Canada's Wonderland. Performances are on International Street, between 12 and 6 in the afternoons. The theme park is open all summer. The dancers are accompanied by guitarists Marry and David Dwen. \"Los Hispanicos\" will also perform at night at the Palais Royale in the month of August. (From Maximiliano)",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1982_06",
+    "year": 1982,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22",
+    "page_number": 22,
+    "word_count": 135,
+    "article_char_count_full": 801,
+    "article_char_count_review": 801,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

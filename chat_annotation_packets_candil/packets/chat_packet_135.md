@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1986-07-16-left-las-coplas-de-paco-salguero",
+    "article_text_for_review": "A Francisco Vallecillo, por su verdad\n\nNi saber de dónde vengo. Pero la luz de mi sangre abrazaba el firmamento.\n\nNi saber a dónde voy. Pero la luz de mi pecho más alta que las estrellas, de tanto mirar al cielo.\n\nLa choza no tiene alas; sólo el aire de tu aliento, sólo el fuego de tu alma.\n\nDile al viento que no arranque con el suspiro, las ramas; con el barro, el corazón; con el techo, la esperanza.\n\nLa choza no tiene cielo. Un pedazo de tu alma.\n\nQue la tierra nos devora y nadie quiere saberlo; de tanto como lo sé la sangre me está doliendo.\n\nQue nadie se llame a engaño, tierra con sabor a fuego. Esta es la ciencia del mundo, en otras fuentes no bebo.\n\nF. S.",
+    "title": "Las coplas de Paco Salguero",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 132,
+    "article_char_count_full": 669,
+    "article_char_count_review": 669,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-07-16-right-un-curso-de-flamenco-para-ense-a",
+    "article_text_for_review": "Por: José Luis Navarro\n\nEl día 22 de mayo finalizó el I Curso de Iniciación al Cante Flamenco para Enseñantes que, con el patrocinio de la Dirección General de Promoción Educativa de la Consejería de Educación de la Junta de Andalucía, había organizado con carácter experimental el Seminario de Estudios Flamencos de la Escuela Universitaria de Magisterio de Sevilla. Con este Curso creemos que se ha dado un paso imprescindible para alcanzar esa meta que todos los andaluces amantes de sus raíces venían soñando desde hace años: llevar el Flamenco a nuestras escuelas e institutos.\n\nEs cierto que esta manifestación cultural tan genuinamente andaluza ya había accedido a los planes de estudios de nuestra Comunidad, una decisión en la que mucho ha tenido que ver el empeño de Francisco Vallecillo; pero no es menos cierto que entre la letra impresa en un boletín oficial y la realidad de un aula media una distancia abismal: se necesita un profesor que quiera y sepa dar vida a unos contenidos. Este I Curso fue concebido para ayudar a ese profesor a salvar esa distancia.\n\nA nuestro entender, la preparación de estos futuros profesores-animadores de Flamenco había de superar un doble reto: conseguir que llegaran a conocer y, sobre todo, a «sentir» estos cantes. El Curso había de ofrecer, por tanto, unos contenidos informativos, pero tenía además, para alcanzar el segundo objetivo, que propiciar unas vivencias auténticas.\n\nDe acuerdo, pues, con estos objetivos, los contenidos teórico-informativos se estructuraron en quince sesiones dedicadas de forma monográfica a uno o varios palos básicos. En cada sesión se incluían también apuntes biográficos de los cantaores que han escrito, quejío a quejío, la Historia del Cante. Finalmente, las vivencias flamencas se propiciarían como únicamente es posible hacerlo: con la verdad desnuda del cante, con un recital en directo. Dichos recitales servirían además como ilustración de los cantes que se tratasen en cada sesión.\n\nOrganizado así el Curso, el paso siguiente era encontrar la persona idónea que pudiese impartirlo. Nos decidimos por Calixto Sánchez. Consideramos que reunía las condiciones necesarias para llevar a buen puerto esta empresa. En primer lugar, porque Calixto Sánchez es un cantaor de reconocido prestigio y un estudioso y enamorado del Cante. En segundo lugar, por\n\nque es profesor y, como tal, conocedor de la realidad escolar sobre la que queremos incidir. No nos equivocamos. Tanto es así que hablar del desarrollo del Curso es, tiene que ser, un elogio continuo de su buen hacer.\n\nSesión tras sesión, Calixto Sánchez ha sabido dar lo que no es posible encontrar en ningún libro: el comentario esclarecedor inmediato a la ejecución magistral de cualquier tercio de cualquier cante. Los asistentes al Curso han podido así asistir a la recreación de la malagueña a partir del verdial; han visto cómo el fandango de Huelva se impregnaba de aires de verdial en la versión de Pérez de Guzmán; han aprendido a diferenciar el polo de la caña, las alegrías de las cantiñas, la granaína de la media granaína, la seguiriya de la cabal, etc., etc. Cuando ha hablado de los cantaores, ha conjugado el dato histórico con la anécdota de su peripecia humana; ha sabido ser, en suma, riguroso sin dejar de ser ameno. Gracias a él, todos sabemos hoy más de nuestros cantes.\n\nObligado es también mencionar aquí a todos los cantaores que, rebus-cando en la entraña de su sentimiento, han conseguido ponernos los vellos de punta, han logrado hacernos «sen- La Junta de Andalucía introducirá el Flamenco\n\nen las escuelas e institutos de nuestra comunidad. Para llevar a\n\ncabo esta iniciativa cultural, previamente, ha desarrollado un curso de\n\nFlamenco para enseñantes, celebrado en Sevilla. La preparación de estos futuros profesores ha estado enfocada en ofrecer unos contenidos\n\ninformativos y en propiciar unas vivencias auténticas con varios recitales en directo\n\ntir» cada cante. Han sido, por orden de actuaciones, Romerito de Jerez, Aurora Vargas, la Peña Flamenca de Huelva, Naranjito de Triana, Calixto Sánchez, el Coro de Campanilleros de Pilas, el Coro de las Animas de Mairena, Antonio Saavedra, Antonio Chacón, Cascabel de Mairena, Marcelo Sousa, Antonio Suárez, Emilia Jandra, Chaparro de Córdoba, Antonio «el Manta», Peregil, El Cabrero, El Niño de Mauro, Manuel Mairena, Curro Malena y María la Burra. Les acompañaron a la guitarra Quique Paredes, Manolo Franco, Pedro Bacán, Antonio Suárez (hijo), Manuel Domínguez, Juani «el Tomate», Antonio Sousa, Manolo de Palma, Juan Manuel Flores y José Luis Postigo.\n\nEl Baile Flamenco también ha estado presente; llegó rebosando jondura y elegancia con Milagros Mengíbar.\n\nTodos dieron lo mejor que llevaban dentro. A todos nuestro más entrañable agradecimiento; gracias que hacemos extensivas a aquellos otros que por tener que cumplir con el deber de todo profesional —otra actuación el mismo día— no han podido estar este año con nosotros, pero que se ofrecieron desde el primer momento «para lo que hiciese falta». Gracias a todos el Flamenco está hoy más cerca de nuestras escuelas e institutos.\n\nPara terminar, una buena noticia: en la clausura del Curso el consejero de Educación, Manuel Gracia, y el director general de Promoción Educativa, Antonio Rodríguez Almodóvar, se comprometieron a que, si estaba en sus manos hacerlo, en 1986-87 se organizarían cursos de similares características en cada una de las provincias andaluzas.",
+    "title": "Un curso de Flamenco para enseñantes",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 871,
+    "article_char_count_full": 5454,
+    "article_char_count_review": 5454,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1986-07-17-right-carta-abierta-a-cr-ticas-cerrada",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor: Luis Caballero\n\nM e molesta la sospecha de saberme ro- deado de una presencia viva que se oculta ante mis razonamientos, de unas voces que no responden a la mía de día y de frente, de una esquivez que no puede tener su origen tan sólo en el respeto siempre y cuando el desacuerdo suene directamente oscuro y a distancia y sobre el más amarillento e impenitente formulismo. Sobre todo eso: repetir por sistema lo que oyeron sin reparar inteligentemente en ninguna posibilidad analítica, continuar rutinariamente la defensa ciega de unos principios anquilosados, girar con la misma venda sobre la misma noria sin saber o querer avanzar con luz y catalejo.\n\nPor segunda o tercera vez aparece un modesto trabajo mío sobre el compás en el cante, y ni antes ni ahora han encontrado respuesta adecuada\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"compás\"]\n\ncipios anquilosados, girar con la misma venda sobre la misma noria sin saber o querer avanzar con luz y catalejo. Por segunda o tercera vez aparece un modesto trabajo mío sobre el compás en el cante, y ni antes ni ahora han encontrado respuesta adecuada mis argumentos. Claro que podría aducirse indiferencia o falta de lectores interesados por el tema, pero no, no porque decir con todas las letras, y además de molde, que el Cante es algo más que compás, descompone precisamente a todo un amplio sector sostenido por la monótona y milagrera muletilla del compás al uso, muletilla aplicable, según muchos entendidos, al problema del cante como resolución total. Y esa radical y absoluta conclusión por parte de repetidores sistemáticos es lo que me llevó a tratar de reflexionar, ya hace tiempo, sobre esta cuestión tan sencilla y clara de entender si además del título leemos el contenido de buena fe. Yo no niego —tuviera que ver— ni negué ni negaré jamás, porque sería incomprensiblemente absurdo en un músico, la naturaleza imprescindible del compás como sostén estructural del contenido musical. Lo que sí específico es el cometido del compás co- marco. Así es por lo que considero una auténtica arbitrariedad afirmar alegre-mente que el cante no sea otra cosa que compás. mo medida técnica de la obra y nunca l\n\n[ENDING CONTEXT]\n\nSchubert, Chopín, Ravel, Fleta, Gardel, Sinatra, Chacón, Mojama, Vallejo, Pastora, Tomás, Canalejas, el Pinto, el Gloria, Marchena, Mairena, etc. Con todos, absolutamente todos los que hicieron música, música desde su ángulo artístico-sentimental más personalísimo, pero música. La misma que hoy siguen haciendo los verdaderos cantaores que se enfrentan con el Cante por derecho y con res-peto.\n\nEl Cante, como el toro, está perfectamente realizado. Que cada cual lo toree a su forma, pero que lo toree. Cantemos a compás, sí, pero cantemos, que lo que suene sea el Cante, no tan sólo el andamiaje.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Carta abierta a críticas cerradas",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1944,
+    "article_char_count_full": 12057,
+    "article_char_count_review": 2944,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "compás"
+      }
+    ]
+  },
+  {
+    "article_id": "1986-07-19-left-porrina-de-badajoz-cantaor-extre",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nCOMUNICACION AL XIV CONGRESO NACIONAL DE ACTIVIDADES FLAMENCAS\n\nPor: Francisco Zambrano Vázquez\n\na Federación de Entidades Flamencas de Extre-\n\nmadura (F.E.F.E.X.) ha dedicado parte de los años 1985 y 86 a la memoria de José Salazar Molina «Porrina de Badajoz», como homenaje póstumo, que ha cristalizado en un Ciclo Regional de Arte Flamenco celebrado a lo largo de toda la geografía extrema, comprendiendo desde el 18 de febrero hasta el 1 de marzo de 1986, y que culminará con la ubicación de un busto del cantaor en su ciudad natal, Badajoz.\n\nCon este homenaje pretendemos conseguir dos fines principales: el primero, el reconocimiento de Porrina de Badajoz como artista genial en su tierra natal, reconocimiento que buscó a lo largo de toda su vida, quizás por eso de que «nadie es profeta en\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_01 | trigger=\"fuera\"]\n\nsde el 18 de febrero hasta el 1 de marzo de 1986, y que culminará con la ubicación de un busto del cantaor en su ciudad natal, Badajoz. Con este homenaje pretendemos conseguir dos fines principales: el primero, el reconocimiento de Porrina de Badajoz como artista genial en su tierra natal, reconocimiento que buscó a lo largo de toda su vida, quizás por eso de que «nadie es profeta en su tierra», y así como tantos extremenos tuviera que triunfar fuera, aunque es justo decirlo nunca perdió el arraigo de su tierra y en ella estuvieron siempre «sus gentes» y «sus devociones». El segundo, tomando como símbolo a Porrina, hacer justicia con todo ese grupo de grandes figuras del espectáculo flamenco, tales como Marchena, Vallejo, Valderrama, Fregenal, La Niña de la Puebla, etc., oscurecidos con la llegada de la moderna etapa flamenca de los festivales y que merecen, cuando menos, nuestra atención por toda una vida dedicada al cante flamenco, reconociendo en ellos unos valores artísticos que, teniendo que ajustarse a la época, han quedado patentes y vigentes en sus extensas discografías. Porrina de Badajoz nace en Badajoz el 13-1-24, en la calle Atocha, hijo de Juan (natural de Zalamea de la Serena) y Ana (natural de Badajoz), siendo el cuarto de seis hermanos: Manuel (que fue un cantaor en tertulias), Antonia, Quintina, Mari Carmen y Gonzalo (padre de los Chunguitos), y como buen gitano, no gustándole mucho su fecha de nacimiento en cuanto tuvo su oportunidad se puso siete días más, al hacerse el primer carnet de identidad (2.442.772), quedando para la afición extremeña como regalo de Reyes el 6-1-24. Porrina fue bautizado en San Agustín y vivió hasta los 28 años en Badajoz, fecha en que se traslada a Madrid donde permanecería el resto de su vida, con visitas constantes a Badajoz, no faltando, sobre todo, anualmente a dos citas: Semana Santa para cantarle a la Soledad, y la Feria de San Juan. A los 53 años, el 18 de febrero de 1977, moría en Madrid en Duque Sexto, 14, donde había vivido 22 años, como\n\n[ENDING CONTEXT]\n\nde definirlo sea simplemente como él mismo se presentaba por fandangos: «Gitano y de Badajoz», definición que con toda probabilidad llevará debajo de su nombre en el monumento en el que quedará perpetuado en granito de la Serena, en su ciudad natal, Badajoz, en la Plaza Alta o en la Soledad, saliendo de un tronco de encina y sufragado por todo el pueblo extremeño, en reconocimiento de justicia, por sus méritos artísticos, llevando el nombre de Extremadura por todo el mundo cantaor, en recuerdo de una etapa del flamenco que también requiere nuestra atención y para el orgullo de su raza.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Porrina de Badajoz, cantaor extremeño, genial y heterodoxo",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-20",
+    "page_number": 19,
+    "word_count": 2303,
+    "article_char_count_full": 13363,
+    "article_char_count_review": 3646,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_01",
+        "family": "COMM",
+        "trigger": "fuera"
+      }
+    ]
+  },
+  {
+    "article_id": "1986-07-21-right-fosforito-o-la-personalidad",
+    "article_text_for_review": "FOSFORITO O LA PROFESIONALIDAD\n\nPor Francisco Vallecillo\n\nCuando se habla de artistas profesionales no\n\nnos damos cuenta de que la generalización envuelve muchas veces una cierta inexactitud. Para entendernos mejor, digamos que existen dos formas de ser profesional: por el mero y frecuente ejercicio del oficio o la aptitud (la profesión, en suma) en todos los casos; por el celo y el sentido de la propia responsabilidad, no todas las veces.\n\nEn efecto, profesión (del lat. professio) no es solamente el empleo, la facultad o el oficio que cada uno ejerce. También, y muy sustantivamente en un sentido más elevado, profesar equivale a un profundo sentimiento vocacional, propensivo, nacido de una innata inclinación al reco to y exacto cumplimiento de las obligaciones que la profesión exige. Este es el caso de Antonio Fernández Díaz, la actual cabeza rectora del Cante, que de su sentido del deber, de su profesionalidad entendida y sentida vocacionalmente, ha hecho a lo largo de su vida una permanente autoexigencia, un vínculo al que se ha atado indisolublemente tal que compromiso impostergable. Sobre tantas otras cualidades éticas que un mínimo sentido de respeto a su gran modestia —ya salta aquí otra de sus características morales— nos obliga\n\na silenciar, esta aptitud vocacional de Fosforito merece ser resaltada. Y lo hace aquí alguien que preciándose de su amistad y habiendo disfrutado del placer de acompañarle en su deambular por los senderos a veces tortuosos y casi siempre incómodos de los festivales, puede testificar que Fosforito llega siempre con una hora de adelanto. (Envidiable modo de andar por la vida éste de llegar a todos los sitios con una hora de adelanto. ¡Ay de cuántos, simplemente, no llegan nunca!). En las raídas trastiendas de los festivales, cuartuchos descalichados, austeras aulas de colegios, camerinos (¡qué horror de palabra!) insalubres y desvencijados, cuando falta bastante tiempo por la hora oficial (que por oficial resulta siempre falsa) de comienzo del espectáculo, es inútil preguntar: —¿Ha llegado ya algún artista? Inútil, porque la respuesta será siempre la misma: —Sí, Fosforito lleva ahí ya un rato...\n\nY uno reflexiona muchas veces si, al margen de sus generosas capacidades cantaoras o acaso contribuyendo a ellas y conformando, entre otros rasgos que se dan en el artista, si no será la profesionalidad, ese modo vocacional de entender en las que él y su propia voluntad han cimentado de modo tan solvente la adquisición del título de Maestro.",
+    "title": "Fosforito o la personalidad",
+    "periodical": "candil",
+    "issue_id": "1986-07",
+    "year": 1986,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-21",
+    "page_number": 21,
+    "word_count": 402,
+    "article_char_count_full": 2509,
+    "article_char_count_review": 2509,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

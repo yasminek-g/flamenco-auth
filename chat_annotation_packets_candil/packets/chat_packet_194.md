@@ -1,0 +1,173 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1989-07-9-right-opini-n-sobre-flamenco",
+    "article_text_for_review": "C omo gitano, y por mi dedicación exclusiva al Flamenco durante más de 50 años, me veo en la obligación de opinar sobre ciertas afirmaciones que se vienen haciendo públicamente en torno al Flamenco, por estudiosos y conocedores de libros que escriben en prensa y dan conferencias.\n\nMe quiero referir a la relación gitano-flamenco. El intento de confundir debe estar presente, cuando se insiste en querer separarlos y más aún cuando se vierten auténticas mentiras falsas, a todas luces, suposiciones sobre el tema.\n\nEl afirmar que «El Loco Mateo, Diego Marrurro o Manuel Molina no eran gitanos». El destacar que Silverio era payo y olvidarse de señalar que convivió desde sus primeros años con los gitanos aprendiendo de ellos su cante. El dudar de que Tío Luis de la Juliana era gitano, es un intento claro de negar lo demostrado antes, ahora y probablemente siempre.\n\nLas razones de la vinculación del Flamenco y los gitanos yo no las sé, aunque comparto la hipótesis de que al ser los gitanos un pueblo trashumante que recorrió muchos países y culturas, teniendo que sobrevivir en circunstancias siempre adversas y asimilar el medio con el que se encontraban, fue conformando un estilo propio de Arte Musical para manifestar sus vivencias más profundas, el cual era un compendio de siglos de su historia. En los últimos dos siglos,\n\nPor lo visto, hay quienes por sus sentimientos racistas prefieren seguir dando vueltas a la noria que no va a ninguna parte, antes que partir de lo que se sabe para profundizar y abrir nuevas luces que aporten algo positivo al Flamenco, la historia de los pueblos y la sociedad en general.\n\nla cierta estabilidad que una comunidad de este pueblo consiguió en Andalucía, hizo una fusión entre la cultura ancestral que los gitanos traían y la música popular de esta tierra, ese puede ser el origen. El hecho de que a su vez la música andaluzay estuviera impregnada de otras muchas influencias culturales, algunas de ellas comunes en sus orígenes, como la árabe o la judía, pudieron facilitar esta bella realidad que hoy se llama Flamenco.\n\nEl protagonismo de los gitanos es indiscutible, a no ser para mentes retorcidas y mediocres que pretenden usurparnos un papel que la historia nos ha dado, al igual que a cada pueblo y persona en este mundo. Me pregunto qué objetivo pueden tener para querer quitarnos la identidad más evidente y que se constituye en uno de los rasgos más peculiares de nuestra raza.\n\nNadie discute hoy en día que el origen del jazz es la música africana y su genuino representante la raza negra, aunque hoy se está haciendo jazz por músicos blancos y llegando a innovaciones que harían dudar a cualquiera de su verdadero origen.\n\nA mí me complace sentir a verdaderos artistas flamencos payos; son personas que deben amar a los gitanos para identificarse con su arte, han tenido que compartir vivencias profundas con ellos y eso es positivo para el desarrollo de una cultura tradicionalmente marginada; el artista payo, con su cante, baile o toque de guitarra, está siendo solidario y colaborando en la difusión del Arte Gitano.\n\nAsí que, por favor, el Flamenco está falto de estudios e investigaciones en profundidad realizados por gente de mente sana, que aporten conocimientos sobre el pasado y nos ayuden a evoluciónar, respetando nuestros orígenes e historia, comprendiendo y amando este tesoro cultural que los gitanos hemos aportado y conservado.",
+    "title": "Opinión SOBRE FLAMENCO",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "essay_opinion",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 571,
+    "article_char_count_full": 3408,
+    "article_char_count_review": 3408,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-07-10-left-recuerdo-de",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nJosé Núñez de Castro Gómez\n\nA lguien dijo que «la distancia perfecciona el recuerdo», y «recordar», como indica el profesor Morales Padrón «no es sólo traer a la memoria una cosa, sino repetir (partícula, re), o volver a hacer pasar por el corazón (cor, en latín) sucesos pasados». Después de casi veinticinco años que dejé Salamanca, y asentado ya definitivamente en Sevilla, de la que media un trecho muy considerable, que roza con la lejanía entre estas dos ciudades, el recuerdo de aquellas tierras charras se sutiliza al máximo, mucho más teniendo en cuenta el objeto de esta evocación, que no es otro sino la vivencia flamenca durante más de un lustro y medio, 9 años en la capital del Tormes.\n\nAllá por la década de los 60, el ilustre profesor jiennense Rafael Láinez Alcalá, entonces\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"Arte\"]\n\nvilla, de la que media un trecho muy considerable, que roza con la lejanía entre estas dos ciudades, el recuerdo de aquellas tierras charras se sutiliza al máximo, mucho más teniendo en cuenta el objeto de esta evocación, que no es otro sino la vivencia flamenca durante más de un lustro y medio, 9 años en la capital del Tormes. Allá por la década de los 60, el ilustre profesor jiennense Rafael Láinez Alcalá, entonces catedrático de Historia del Arte en la Facultad de Filosofía y Letras de la Universidad salmantina, poeta, muy aficionado al cante y prendado de Sevilla, decía, con mucho salero, que «el Tormes se Guadalquivea», dando a entender, con ésta atinada frase, que entre Salamanca y Sevilla existe un auténtico parentesco de afinidades en sus diversas manifestaciones artísticas y culturales, y dentro de aquéllas, dos prosódicamente populares: el cante y el toro. Estas circunstancias, analógicamente concurrentes, no han nacido como producto de una mera coincidencia, de razones coyunturales o surgidas simplemente del azar, sino que la conjunción sinónima o «gemelizante» del centro artístico y cultural, en sus más diversas modalidades en ambas capitales, tienen unas raíces más «jondas» y profundas. Si mentalmente hacemos un ligero recorrido, de lo que al unísono encierran de belleza y atracción artística y cultural Salamanca-Sevilla, vemos que tanto una como otra, son fieles depositarias de auténticas joyas arquitectónicas de estilos varios; a un rosario valiosísimo de monumentos añadimos, lo que para sendas ciudades ribereñas, supone una arraigada tradición singular, como son las ganaderías de reses bravas, un P\n\n[ENDING CONTEXT]\n\nArabe; Paradinas, Emilio Nieto, Fernando Urrutia, Carlos Montalvo y el que suscribe, nos aventuramos con ilusión para llevar a cabo una empresa cultural y popular que sentíamos en pro del cante grande, del cante en general —de la que es buen exponente la Peña Flamenca de Jaén—, aun a riesgo de sufrir, como en un principio se creyó, un desencanto; pero «la fe mueve montañas» y conseguimos alcanzar que el Flamenco tuviera su sitio adecuado en las tierras del Tormes. Por fin se pudo confeccionar ese cesto porque sobraban mimbres y de los buenos, aunque su simiente no brotase del campo andaluz.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Recuerdo de la Salamanca Flamenca",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 1427,
+    "article_char_count_full": 8565,
+    "article_char_count_review": 3258,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "Arte"
+      }
+    ]
+  },
+  {
+    "article_id": "1989-07-11-left-joaqu-n-vargas-soto-el-cojo-de-m",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nTengo en mis manos el libro que Gonzalo Rojo lanzó sobre el mundo del Flamenco, a través del Congreso de Benalmádena, y leo con desagrado lo siguiente: «Junto a sus especialidad en los cantes de Levante, Joaquín Vargas, «El Cojo de Málaga», dominó dos tipos de fandangos, el de Pérez de Guzmán, que el propio cantaor de Jerez de los Caballeros había tomado de él...». Decirlo así, sin más ni más, sin que al decirlo le haya temblado el pulso, nos viene a demostrar que Gonzalo tiene un temple de acero toledano.\n\n«El Cojo» no fue lo que se dice un cantaor creador. Yo estoy convencido de ello, aunque él se atribuye un estilo por fandango que lo grabó así: Fandango del Cojo.\n\nComo recordará un amigo mío de Málaga, hace ya algunos años hice viaje a esa bella ciudad con la única finalidad de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"grano\"]\n\nme atendiera durante unos minutos en el momento que fuese para él más oportuno. Accedió a la entrevista, posponiéndola a las seis de la tarde, porque por la mañana, a causa de su trabajo, no podía atenderme todo lo bien que deseaba. Llegada la hora convenida, Ru- fo y yo estábamos ya dispuestos y puntuales en el domicilio de mi interlocutor. A lo largo de mi intervención Joaquín fue contestándome de forma pausada, sin titubear, directamente al grano. Señor Vargas —le dije—. ¿Tiene usted a mano los dos discos de su padre que contienen los fandangos de Alosno? (Marca Gramófono AE 484 y 985). Me contestó anticipándose a lo que después sería la base fundamental de mi pregunta: Opinión :JOAQUÍN VARGAS SOTO, «EL COJO DE MÁLAGA», CREADOR DE LOS CANTES DE PÉREZ DE GUZMÁN? M. Yerga Lancharro —Sí, señor, tengo los fandangos de Pérez de Guzmán. Le rogué que los pasara por su tocadiscos y así lo hizo, sin que pudiéramos enterarnos bien de lo que el artista estaba cantando debido al pésimo estado de conservación en que se hallaban las placas gramofónicas. A pesar de lo cual pude reconocer que se trataba de los fandangos de mi paisano. Una vez que los escuché le dije a Joaquín que ¿cómo era posible que su padre grabara los fandangos como si realmente fueran de Alosno, cuando él debió saber, como lo sabían todos los cantaores coetáneos suyos, que eran de Pérez de Guzmán? —Señor mío —me dijo—, no es esta la primera vez que alguien me ha dicho lo mismo que usted. Y a todos les he contestado que ignoro si son cantes de Alosno o de Pérez de Guzmán. Porque nunca tuve afición ni me interesó el cante fla-\n\n[ENDING CONTEXT]\n\na su encuentro para disputárselo.\n\n¿Por qué no grabó, como suyo, el fandango de Pérez de Guzmán? Porque no lo era. Esto es tan lógico que convence al más torpe.\n\nTerminada mi reflexión, a continuación ofrezco a los lectores la discografía de «El Cojo», tal y como aparece en los catálogos de las placas gramofónicas:\n\nRepresentante:\n\nEspectáculos Internacionales\n\nO'Donell, 3.°-A, piso Teléfs. 222058 - 216920 Particular: 228078 41001 SEVILLA\n\nRosario López\n\nRepresentante:\n\nJ. A. Pulpón\n\nEspectáculos Internacionales\n\nO'Donell, 3.°-A, piso Teléfs. 222058 - 216920 Particular: 228078 41001 SEVILLA\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": ":Joaquín Vargas Soto, «El Cojo de Málaga», creador de los cantes de Pérez de Guzmán? M",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-12",
+    "page_number": 11,
+    "word_count": 1351,
+    "article_char_count_full": 7721,
+    "article_char_count_review": 3229,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "grano"
+      }
+    ]
+  },
+  {
+    "article_id": "1989-07-13-left-la-rubia-se-orita",
+    "article_text_for_review": "M. Yerga Lancharro\n\nS in proponérmelo, esta es la verdad, he debido herir la susceptibilidad de un señor, valenciano, por lo que dije hace tiempo de la señorita Santisteban.\n\nLo que dije de la artista fue que, en sus años jóvenes, actuó de Triple en el campo del noble arte de la Ópera y la Zarzuela, pero nada más.\n\nNo creo que nadie se pueda sentir herido por esto.\n\nAdemás, no lo dije por decir. Puedo demostrar que es verdad mediante documentos sonoros.\n\nSiempre he tenido por norma de conducta, respetar la opinión de los demás y, en este caso concreto, también lo hago con mucho gusto.\n\nÉl me dice que su paisana fue buena cantaora de flamenco y yo me veo obligado a decir lo contrario y también lo puedo demostrar de igual forma.\n\nYo dije que «La Rubia» no debió desertar de su campo artístico al que siempre se dedicó, porque en él pudo haber hecho carrera.\n\nY en este momento digo, además, para reforzar aún más mi opinión, que el «Niño Ricardo», en su juventud, se negó a acompañarla a la guitarra diciendo que, aunque quisiera no era capaz de hacerlo, porque su timbre y potencia de voz —no apta para el cante flamenco—, le producía cierto malestar en los oídos. Esto nos lo dijo en Sevilla, en una reunión de amigos, en el domicilio de Pareja Obregón.\n\nLo que más me duele son esos pistole-tazos sórdidos que, a veces, me dirigen algunos, sin conmiseración alguna. No deben olvidar que, cuando manifiesto una opinión o soporto algún dato sobre un artista determinado, es porque se ve avalado por documentos contundentes en mi poder, como acontece en este caso que nos ocupa. Y sepan que si alguna vez, en el relato de una biografía no he dicho la verdad, es porque no me la ha ofrecido el informante que generalmente suele ser causahabiente o amigo íntimo del artista de quien se trate. Digo lo que me dicen. («Relata Refero»).\n\nQue sepa el señor valenciano, que «La Rubia» fue triple y no buena cantaora.\n\nPero un día, de suerte para ella —porque ganaría dinero—, conoció a Antonio del Pozo «El Mochuelo» y tras un breve contacto entre ambos, surgió una buena y sólida amistad. Y de Antonio salió la idea de encuadrarla dentro del marco del arte flamenco y también de que grabara, como él, gran cantidad de placas gramofónicas que, desde mi punto de vista, no debió grabar. (Ver «Candil», núm. 62).\n\nY por último, le ofrezco mi verdad, sin exigirle rectificación. La considero innecesaria entre caballeros.\n\nHela aqui:",
+    "title": "«La Rubia», Señorita Santisteban, fue triple M",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-13",
+    "page_number": 13,
+    "word_count": 431,
+    "article_char_count_full": 2431,
+    "article_char_count_review": 2431,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-07-13-right-paquito-de-la-isla",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nC onoci a Francisco Domínguez Rivera, más conocido en el mundo artístico con el sobrenombre de «Paquito de la Isla», en el domicilio-taller de nuestro común amigo y sobresaliente constructor de guitarras Marcelo Barbero, allá por el año 1952, en la madrileñísima calle de Ministriles, número 4.\n\nAún recuerdo la impresión que entonces me produjo la limpia ejecutoria y el jondismo flamenco —empapado en salero gaditano— de que hacía gala nuestro artista, así como su congénita simpatía y afán de agradar a sus amigos oyentes.\n\nPaquito de la Isla es un gran guitarrista, de figura enjuta, de costumbres austeras y de atípica personalidad dentro del mundo flamenco, que bien se merece un espacio para presentarlo a los lectores de Candil.\n\nDesde hace varios años abrigaba el que esto escribe la\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_04 | trigger=\"hombre\"]\n\nco, que bien se merece un espacio para presentarlo a los lectores de Candil. Desde hace varios años abrigaba el que esto escribe la intención de entrevistar al artista, empresa que se fue demorando ante el desconocimiento de su actual domicilio y la pérdida total de contacto personal durante varias décadas. Al fin, al cabo de unos treinta años de incomunicación absoluta me resultó posible volver a conectar y concertar una entrevista con nuestro hombre, en su madrileño domicilio de la calle Bronce, número 21. A la hora convenida me esperaba el artista, que se había molestado en preparar un aperitivo variado para celebrar nuestro reencuentro. Se advertía claramente la ausencia de una mano femenina en la preparación de aquella improvisada merienda. Tras un intercambio preliminar de impresiones diversas sobre un gran número de cuestiones, que nos sirvieron a ambos para establecer un diálogo interrumpido durante 30 largos años y una vez roto el inevitable hielo que crea tan larga incomunicación, conseguimos ambos crear la adecuada atmósfera de intimidad y confianza de épocas anteriores. A partir de ese momento, y durante cerca de tres horas, no dejamos de hablar y comentar sobre todo lo divino y humano, prestando una atención preferente a temas relacionados con el arte, la música y el Flamenco. Paquito de la Isla sigue conservando su inconfundible estilo y acento de auténtico «cañalla» de la Isla de San Fernando, adonde se trasladó desde Chiclana en 1936 cuando tenía tres años. Actualmente ya ha cumplido los 59 años y sigue siendo la misma persona que yo conociera a principios de la década de los años cincuenta: un hombre fiel a sí mismo, de convicciones profundas, repleto de filosofía, de ideas muy claras, p\n\n[ENDING CONTEXT]\n\na ser problemático el disponer de transporte público. El tiempo ha pasado sin sentirlo y la velada ha resultado nostálgica y espiritualmente muy remuneradora. Repetiremos la visita a la primera ocasión que se brinde procurando no tener que esperar otros 30 años para ello. Nos despedimos efusivamente, como antes hacíamos, conscientes de que hemos conseguido dar continuidad a una vieja amistad, que el paso del tiempo no ha conseguido borrar, ni debilitar. Atrás de jamos a Paquito de la Isla, tan cordial, vivaz, sensible, utópico, solitario y filosófico como siempre. ¡Hasta pronto, Paquito!\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Paquito de la Isla",
+    "periodical": "candil",
+    "issue_id": "1989-07",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "13-14",
+    "page_number": 13,
+    "word_count": 2153,
+    "article_char_count_full": 13404,
+    "article_char_count_review": 3350,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_04",
+        "family": "COMM",
+        "trigger": "hombre"
+      }
+    ]
+  }
+]
+```

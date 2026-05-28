@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1984_03::A7",
+    "article_text_for_review": "(Sent by George Ryss) The dancing career of Liliana Lomas covers many years and spans many miles. A classical ballet student of famed Orest Sergievsky (Fokine trained ballet master), Liliana found her Milieu in Spanish dance 15 years ago. During this period, she studied with Mariquita Flores, Carmen Lopez, and Maria Alba. Her first teachers recognized her unusual talent and encouraged her to further her studies in Spain. In 1969, Liliana studied in Seville with reknown Enrique \"El Cojo,\" Jiménez and in Barcelona with Flora Albaicín. In 1970 Liliana married flamenco guitarist Carlos Bond Lomas and moved to Málaga, Spain, where she became principal dancer with the Miguel De Los Reyes and Emi Bonilla Companies, both in Spain and in the United States. At Carnegie Hall she was a principal dancer with Antonio Santaella, and she has toured with Ramón de Los Reyes and Mariano Parría. An extremely gifted dancer, who continues to live and perform in Spain, Ms. Lomas often appears in concert with her husband. Her repertoire is very rich, her dancing superb, and her knowledge of Spanish dance and song extraordinary. In the past several years, Liliana has adapted some exciting and brilliant choreography of Francisco Fernández and Ciro, in addition to staging her own works. JALEO - MARCH/APRIL 1984 LEFT TO RIGHT: LILIANA LOMAS, LUIS VARGAS, ANDREA, PEDRITO CORTEZ only way to perform flamenco, and the best way. It has taken me many years to develop all one needs in this difficult art form.... and by that I mean requirements such as technique, compás, attitude, feeling, sentiment, knowledge of cante and guitar, interplay between artists, and even how to walk onto a stage (which is not easy, as any actor can tell you). My college background in speech and theatre has helped me, as has my association with great artists. I try to surround myself with the best, whenever possible. I will work for less money (taking the lesser paying job) if it means working with better artists. I do not mean that I undersell myself or work \"cheap\". In Spain, it often means a difference of two or three dollars, so that if I earn two or three dollars less working with \"Repompa\" instead of with José Fulano, I'll work with the best artist. Each year I think I'll have to stop dancing, because I am not \"young\", meaning not 18, or 28, or even 38! But maybe that will be an inspiration to others to keep dancing. José Greco is also not 38, and neither is Nana Lorca, and many many other great artists I have known and worked with. All the young, gorgeous Spanish ladies we see in tablaos, have a lot to look forward to in life. I have always felt that (forgive me) an 18 year-old woman cannot dance siguiriyas like a 38 year-old woman. Many people will back me up on this.... right Maria Alba? María is still a queen on stage... and she can just stand there while other younger women are perspiring and pounding the floor. In conclusion, a lot can be learned.... a lot cannot. That which cannot be taught must be learned by experience. But no one can ever teach you to feel and project. That comes with one's personality, soul, karma, whatever you wish to call it. Recently Alexandra Danilova said the same thing:",
+    "title": "LILIANA LOMAS",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "6-7",
+    "page_number": 6,
+    "word_count": 559,
+    "article_char_count_full": 3208,
+    "article_char_count_review": 3208,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_03::A8",
+    "article_text_for_review": "(from: El Fais, Nov. 15, 1983; sent by Brad Blanchard, translated by Mary Sol West; by Angel Alvarez Caballero When flamencos, professionals or aficionados, attend a flamenco show to watch the performers, it is usually for a good reason. Normally, it is because they have a big interest in seeing an unusual performer who might perhaps reveal to them another rare wonder of this fascinating art. This is what is now happening at Madrid's \"Los Canasteros\" with Tía María \"La Borrico\" or \"La Burra\" a 54 year-old gypsy and Juana la de Revuelo, gypsy from Triana. on the night that we attended Los Canastercs we saw Rosa Durán, Pacc Valdepeños, Vicente Soto, José León, El Ecijano... where, nowadays, the normal attendance is made up of an atypical audience, full of respectful and knowledgeable gypsies, payos with an eye for quality where singing or dancing are concerned, and performers aware of the fact that they are watching the jondo rite being executed in all its original purity. Of course the usual audience is not missing, either, namely, the tourists, and those fond of the light rumba and the fandanguillo. Tia Maria, La Borrico, is a 54 year-old gypsy three times a grandmother. She gets her stage name from her father, Tic Gregorio, el Borrico de Jerez, one of the legendary cantaores of the last half century. This man, seriously ill, cannot sing anymore; it would be very difficult for us to hear again his powerful quejio. Tia Maria is perhaps, then, the last link, probably without a further continuation of a flamenco dynasty truly full of glory. Precisely the fact that this non-professional woman, who rarely leaves her home in Sevilla, is in Madrid today is only to bring to us that particular style of carte that her family used to do, almost impossible to hear today and unfortunately slowly being lost. She says: \"Pure flamenco is being lost. It is very difficult now to hear pure flamenco. It is a thing of the past. We have to resign ourselves to that fact, as though to an incurable disease.\" If we want to know the history of this singing family, we will have to go all the way back to Paco, La Luz, a famous \"siguiriyero\" from Jerez during the middle of the last century. His brother José is Maria's great grandfather. The next step is taken by Tio Juanichc, El Manijero and his brother Fernando, El Manijero, also known as El Tati, Maria's grandfather. Manijero was something like the forman in a finca in this case Casaerjo de Trebujena. After him came Tio Gregorio, El Borrico. There are other branches of the family: that of Sernita, a fabulous cantaor, who died prematurely, El Borrico's cousin. El Borrico owes his nickname to the fact that every time Sernita would ask him: \"Did you make any money today?\" if the answer was \"yes\", Gregorio would say: \"The donkey is in the cabbages.\" The Parrillas branch of the family, with the great tocaores, include old parilla, Alsc Tic Borrico's cousin; and Fernando Terremoto and his family. A clar that is a very important part of the history of one and a half centuries of jondc art of Jerer. A family with \"casta\" (tradition, purity) in the singers words, which definitely is the most important element in this art that they do. Tia Maria has very little voice, almost nothing, but I believe that even being mute she would sing with the rajo and duende proper to her race. When asked what is more important, the voice, the head, or the heart, she answers: \"Everything, but the most important thing is that you have to like it, to have it inside your body from a family with \"casta\", where you parents and grandparents sang and you can bring it out. You inherit it, the same way you inherit a chalet. Calle Alcalá...You can inherit it, but also you must bring it out from within; I have three sons and they don't know how to sing...\" Another cut-of-the-ordinary performer is Juana, is de Revuelo, a gypsy from Triana, very popular in Sevilla. Her art comes mostly from herself and a little from her father who was a good aficionado. She does very proper and authentic singing and dancing for fiestas. Her art is joyful and fresh, with the result that, for once, one doesn't miss the plaintive aspect of flamenco.",
+    "title": "MARIA \"LA BORRICO\" AND JUANA \"LA DE REVUELO\" AT THE ROOTS OF FLAMENCO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 735,
+    "article_char_count_full": 4189,
+    "article_char_count_review": 4189,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_03::A9",
+    "article_text_for_review": "(from: Madrid, December 3, 1983; translated by Carla Herredia and Juana De Alva) by Angel Alvarez Caballero On Saturday, the Sports Palace of Madrid literally became a cathedral of gypsy art. It was an authentic explosion of gypsy expression and I do not only refer to flamenco -- the symbol of their essence, which the gypsies wish to maintain without feeling set apart in the Spanish nation (which is, in reality, their country). For this reason, it was good to see the gypsies joined on stage by payos (non-gypsies) such as José Merese, Fosforito, Manuel Soler, Victor Monge \"Serranitc\", Paco Cepero, and hundreds more in the audience. \"Good,\" I say, because, any way you look at it, flamenco is difficult to imagine without both the gypsies and the \"payos.\" The performance, which we witnessed on Saturday, organized by the Spanish Association for Gypsy Integration in benefit for their social and cultural services, was transformed, at times, into a song of unity and brotherhood. In the purely artistic sense, there existed beautiful competition without rivalry -- an evident desire on the part of the officials to put forth the best that each group had to offer. As far as the singing was concerned, the \"maestros\" again demonstrated proof of their mastery (of flamenco) and the reason why they are where they are. The first to sing was José Menese who began with tientos. His start was uneven -- as though insecure -- and certainly not measuring up to his capacity. He continued with soleares to the same end, but then obviously aware of the lack in his own performance, José put his great heart into the cante and burst forth -- as on so many other occasions -- with that terrible cry -- that shuddering lament. Juan Peña \"Lebcijano\" had a great night, singing in the styles which he dominates with brilliance: tientos, tangos, bulerías and galeras. In the latter, which he created and which refers to the persecution suffered by the gypsies in times past, he expressed singular emotion -- emotion which, given the atmosphere in which it was heard, was transmitted to the audience. The great Lebrijano, formidable of voice and totally giving of himself! Antonio Fernández Díar \"Posforito\" offered only two cantes -- alegrías and tangos -- toward the end of the show. He should have sung more since he was in such good voice. This \"cantaor largo\" dominates practically all styles with authority and truly impeccable compás and he demonstrated his authority once again effortlessly. I must also cite Lebrijano's mother, Maria \"La Ferrata, who did her accustomed bulerias with that rare voice full of resonance -- I don't know if near or far(lejanos o próximas, but in any case -- enigmatio and suggestive. Manuela Carrasco was made queen of the evening, being named honorary president of the Gypsy Integration. Earlier she had danced, with her characteristic strength, the",
+    "title": "GYPSY ART, \"PAYOÉ ART: ON THE RISE\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "8",
+    "page_number": 8,
+    "word_count": 482,
+    "article_char_count_full": 2879,
+    "article_char_count_review": 2879,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_03::A10",
+    "article_text_for_review": "FLAMENCO ANATOMY It is generally accepted that the human race has been dancing, moving our bodies, expressing our feelings, mimicking animal movements and in general, \"dance-expressing\" since the beginning of our appearance on this earth. Depending on the area, climate and all of the related living conditions, man and woman developed and evolved different ways and styles of movement expression. Like language, different peoples spoke differently even though we are all human with basically the same bodies, voice boxes and anatomy. Animals, plants, weather and topography were very influential in movement development of the various cultures along with the development of social and cultural customs. It is amazing to think of all of the ways human beings can move to express themselves and there have been literally thousands of forms and styles of movement that the human race has developed throughout the world. Not only the area, the peoples, the topography, the climate, but even heredity and the ways that people have evolved physiologically and anatomically has helped shape their dances, their feelings about dance, their outlook on what dance is to them personally and culturally. There is no dance form that looks quite like flamenco. This is probably due to the melting pot of cultures that it has evolved from that is why it can be related to the essence of jazz dance in the United States. Jazz is new enough to see the multi-cultured influences and how the various body movements from these different cultures have influenced the whole. The African torso influence, the Latin hip and East Indian arms all are basic influences in jazz and in flamenco you see similar influences. What all this means in today's flamenco dance is an interpretation that says something. What I call flamenco anatomy can be best described, as \"capturing body movement that best reflects this flamenco essence.\" This all may seem a bit technical but actually it is the opposite. It is simply getting back to basics of flamenco movement before a think of this movement as copied movement. Like all of the arts, we can ignite our imagination and \"feel\" or at least pretend to feel what our bodies are as flamenco bodies, reflecting a flamenco that is ageless, a flamenco that captures the initial language of the cultures that give it birth. In today's age of \"sitting a lot,\" driving instead of walking everywhere, a forced plan of exercise if we want to keep in good physical shape, our basic postures have become weak and our backs have developed slumps and our tummies are more often out than in. This of course does not apply to everyone, but it is nevertheless common in our modern computer age. This is the antithesis of the flamenco anatomy. Sure, there are many great artists who have been many shapes physically and of every shape and size, but the cliche of the thin, small-hipped male, lean and firm of body is a good thing to work towards as well as a well shaped firm pulled up body is for a woman. It is much easier to pull up and have that flamenco back come alive with strong muscles to life with, especially stomach muscles, which I have said are unfortunately not on the priority list in our modern society, but nevertheless, are the dancers main muscle group. A flamenco dancer can train in mind and body for that physiologically ideal anatomy that can best represent his or her feelings of the mind and body in its relation to flamenco.",
+    "title": "MORCA SOBRE EL BAILE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "9",
+    "page_number": 9,
+    "word_count": 588,
+    "article_char_count_full": 3449,
+    "article_char_count_review": 3449,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1984_03::A12",
+    "article_text_for_review": "RESERVE YOUR PLACE NOW FOR THIS EXCITING WEEK OF FLAMENCO DANCE INSTRUCTION WITH ONE OF THE JEWELS OF THE FLAMENCO WORLD, LUISA TRIANA. BEGINNING AND INTERMEDIATE/ADVANCED LEVELS - $90 EACH. FOR MORE INFORMATION, PLEASE CALL OR WRITE: MARIA LUNA, WORKSHOP COORDINATOR P. O. BOX 22127 SEATTLE, WA 98122 206/625-0604 or 206/323-2629 ♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣� A Classic Combination PACO PENA & D'ADDARIO Born in 1942 in Córdoba, Spain, Paco Peña has been playing professionally since the age of twelve and has toured Europe both as a soloist and as part of the \"Paco Peña Flamenco Company\" to wide critical acclaim. Dedicated to conserving the pure artistry of flamenco, Mr. Peña established the seminar \"Encuentro Flamenco\" offering the aficionado an intensive program of study as well as the opportunity to live in Andalucía, the heart of this musical culture. He has recorded nine albums for Decca Records including three live performances and a duo effort with Paco DeLucia, another world renowned flamenco guitarist. He has also made several highly successful tours of Australia, given recitals with the company at festivals in Hong Kong, Edinburgh, Holland, and Aldeburgh and performed to audiences in Japan and London, all to widespread enthusiasm. Paco Peña appears regularly worldwide on Television and has received extensive praise for his shared recitals with John Williams. Paco Peña uses D'Addario Strings. D'Addario E. Farmingdale, NY 11735 USA FLAMENCO SUPREME Guitar Strings Complete sets with black or clear trebles Retail $ \\underline{\\text{SPECIAL OFFER}} $ 11.00 6.00 Minimum order $12.00 Postage Paid California residents add 6.5% sales tax Make checks to Lester DeVoe - Guitar Maker Box AA, San Jose, CA 95151 Offer expires January 31, 1985",
+    "title": "LUISA TRIANA SPANISH DANCE WORKSHOP",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1984_03",
+    "year": 1984,
+    "language": "en",
+    "article_type": "other",
+    "pages": "11",
+    "page_number": 11,
+    "word_count": 273,
+    "article_char_count_full": 3100,
+    "article_char_count_review": 3100,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

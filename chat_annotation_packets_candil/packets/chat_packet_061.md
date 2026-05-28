@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-09-53-right-tradici-n-aportaci-n-y-grandeza",
+    "article_text_for_review": "En el acontecer flamenco, a lo largo de su histor. han ido surgiendo personajes que le han dado su impror. ta personal y artística, sirviendo de ejemplo y espejo donde poder beber y mirarse las nuevas generaciones flamencias. Siendo el flamenco una continua vivencia y una transmisión oral, ha debido, por su propia necesidad de pervivencia, ir asimilando lo anterior por incorporación de las particularidades personales y de la zona cantaora donde se desarrolla el yo personal.\n\nSi asumimos lo dicho por Eugenio D'Ors de que «todo lo que no es tradición es plagio», hemos de llegar a la conclusión —lejos de intentar dogmatizar— de que la tradición evolutiva es el gran reto para cualquier actividad creativa, salvadas, por supuesto, las distancias de lo que debería entenderse por creación.\n\nPor Federico Vázquez\n\nEn la sociedad maximalista que nos toca vivir estamos asistiendo a una irresistible tentación, por parte de los nuevos «genios», de intentar eso que ellos proclaman: la necesidad de buscar formas nuevas. Pero asombre que quienes tienen tanta «inquietud» no estén lo suficientemente preparados, ni concienciados, de lo que quieren, a dónde van y qué consecuencias aportarán con su búsqueda de lo nuevo. Parecería que se están inviertiendo los términos y el aprendizaje no fuera necesario porque ya se nace con la ciencia infusa. O, lo que sería más grave, estamos asistiendo al olvido de las enseñanzas de nuestros mayores, fundamentales a la hora de la incorporación de la experiencia para la consecución de la tradición evolutiva, porque, de lo contrario —ya lo estamos sufriendo— nos llevará a la pérdida de la calidad artística y, no digamos, de la desgraciadamente olvidada sensibilidad. Pues bien, toda esta introducción viene muy a cuento antes de entrar en materia sobre la vida y obra de mi admirado maestro Antonio Mairena, en las que son advertibles tres rasgos fundamentales: su tradición, su aportación y su grandeza.\n\nSi repasamos su discografía, su bibliografía y su vida afectiva, observaremos que tiene algo consistancial con el ser flamenco: su sentido de la importancia de las escuelas, respetadas en grado sumo sobre cualquier consideración subjetiva. Su concepto de la tradición cantaora, y no digamos la gitana, le llevan y le traen por caminos y derroteros difícilmente asimilables, sólo al alcance de una concienciación suma, a la hora de asumir responsabilidades de una tradición secular y de la valoración de lo que significa el legado de sus mayores. Su rectitud, su respeto y, lo que es más grande, su admiración por lo que ha recibido y está obligado a salvaguardar, le hacen pasar y repasar los más inaccesibles vericuetos en busca de su razón de ser: lo gitano y el gitano como una manera de ser y entender la vida flamenca.\n\nCuando se le oye hablar de sus maestros, puede uno vanagloriarse de que la máxima autoridad flamenca esté por encima de valoraciones innecesarias; quien tanto tiene, no se permite el menor asomo de comparación con ellos, a diferencia de quienes, sabiendo poco, se consideran algo. Su concepto del aprendizaje y de la conservación de las raíces llega a tales extremos de humildad que, habiendo reestructurado, tapado grietas, aportando su sapiencia, sensibilidad y arte a muchas variedades de cantes, jamás se ha permitido decir que algo es suyo. A lo más que llega a manifestar es que su forma de decir y sentir puede llamarse Mairenismo. Quien tanto ha dado al Arte Flamenco, no se deja arrastrar por la soberbia y decir: «¡esto es mío!». Y esto no puede ser. Todos sabemos que ha conseguido lo más difícil en el Arte: crear sobre lo creado, llevar la tradición evolutiva al grado sumo.\n\nTú sabes, Maestro, que la permanencia y el respeto a lo legado es una carga pesada y anuladora de lo personal. En la historia flamenca quienes eran capaces de hacerle cosas al flamenco, hacía olvidar lo anterior en beneficio del momento. Quizá ello trajera la desaparición de ciertos aires, estando todos los que son y no todos los que fueron. Sin embargo, Maestro, recoges el legado, bebes en las fuentes nutricias del ser flamenco, las clasificas, les das forma, las esquematizas en escuelas y nos das como faro-guía un modo de ser y entender la dignidad flamenca, como nadie en la historia fue capaz de hacer. Nos provocas la calma y el arrebato al saber dónde tenemos fuentes donde beber y remansar y, a la vez, nos incitas irremisiblemente a la defensa de la verdad; porque, sobre todo, eres eso, la verdad flamenca: tradición, aportación y grandeza.",
+    "title": "Tradición, aportación y grandeza",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "53-53",
+    "page_number": 53,
+    "word_count": 752,
+    "article_char_count_full": 4516,
+    "article_char_count_review": 4516,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-54-right-s-ntesis-o-creaci-n-del-cante",
+    "article_text_for_review": "La Historia de la Humanidad está llena de grandes hombres, de hombres grandes, de personas con espíritu creador, otras con imaginación que se elevan a la trascendencia y de genios. Todos ellos han aportado a la cultura universal, entendiendo esta en su más amplia concepción de la capacidad creativa del hombre, el sello o la impronta de la evolución constante. Sin embargo, muy pocos hombres, o mujeres, han dejado la barrera, auténtica muralla ideológica, del «antes y después». Son estos, seres humanos que de por vida asumieron la función de entregar al futuro el legado del pasado, siendo ellos mismos el presente que participa sin solución de continuidad en la motivación de su ley de vida.\n\nLos orígenes del cante permanecen oscuros, más no supone ese fenómeno traba alguna para que nos encontremos ante un fenómeno cultural y social de primera mag\n\nPor Joaquín Herrera Carranza\n\nnitud proporcionado a la civilización universal por el pueblo andaluz. Y, como ya manifesté en otra ocasión, este hecho sólo admite comparación con las grandes creaciones de los grupos étnicos que, según nos cuenta la Historia, se conoce que, cuando aquellos han estado sometidos a circunstancias muy concretas en el tiempo y en el espacio, se manifiestan en distintas direcciones utilizando todas las características inherentes a su propia identificación y las del entorno con el que establecen relación.\n\nDentro del mundo del cante flamenco, evento cultural que no admite similitud ni paralelismo con cualquier otra obra originada por el hombre, la presencia de ANTONIO MAIRENA no.es la de un gran cantaor, ni con mucho la de un genial maestro, sino que viene a representar la primera división de su breve historia: «Antes y después de Antonio Mairena», se dirá cuando los cronistas y narradores del porvenir sigan ocupándose de su cosmo.\n\nEsta alta consideración no parte de la oportunidad u obligación de la circunstancia, sino que lo hace desde la esfera de la razón de los hechos conocidos como testigos del tiempo que somos.\n\nLa obra de Antonio Mairena pertenece, aunque él mismo no lo reconozca así, a la creación. Representa la creación personal que, partiendo de profundos conocimientos vivos, llega a la forma nueva de su huella, que se transforma en la misma estructura del cante.\n\n¿Cómo podemos explicar de otra forma ese legado que nos ha dejado y que va a seguir marcando?\n\nPara fundamentar, como se dice, el rescate o resurrección de la liviana debemos acercarnos a la idea creacional de Mairena. Es obvio que el artista no inventa nada nuevo, ni hace surgir algo que previamente no estuviese establecido, empero, desde su concepción personal aduce su creación, que otros, nacidos en tiempos más recientes, toman como su origen porque no han conocido otra génesis.\n\nPor algunos derroteros se afirma que Antonio Mairena ha restaurado cantes de El Nitri, de Juan Junquera, de Juanelo, de Silverio, del Loco Mateo, de Joaquín la Cherna y tantos otros. En su discografía, que certifica como\n\nnotario de fe, se dejan oír y sentir los legendarios ecos de las seguiriyes de Paco la Luz, Viejo de la Isla, Diego el Marruro, señor Manuel Molina, señor Manuel Cagancho, Curro Durse, Enrique el Mellizo, Perico Frascola y algunos más. Y las soleares viejas y nuevas de Curro Frijones, José Iyanda, Juaniquí, Joaquín de la Paula, Agustín Talegas, la Serneta, Teresa Mazzantini, etc. Los corridos o romances suponen una alta contribución personal.\n\n¿Cómo interpretar, por tanto, esa vasta producción cultural e histórica?\n\nRicardo Molina, que asimismo debe formar parte de este cabal homenaje, recogió en unos de sus escritos: «a él se deben versiones fidelísimas de modalidades que vegetaban semiolvidadas, identificar y localizar formas que creíamos perdidas, restaurar con vigor y autoridad cantes que han llegado a nosotros mutilados».\n\nPersonalmente, hago más caso de la restauración que de las versiones fidelísimas. En la Historia restaurar significa la creación o punto de partida para algo mejor, mientras que versión fidelísima se asemeja a copista, y Antonio Mairena será todo menos un copista.\n\nAntonio Mairena entrega su creación personal en todos los cantes del universo flamenco, que le sitúan en la línea de la división histórica para compendiar en su ser de artista la síntesis del cante.\n\nCONSTRUCCIONES\n\nPOLIGONO ◄LOS OLIVARES↘ CALLE ALCAUDETE, 10\n\nJ A E N",
+    "title": "Síntesis o creación del cante",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "54-55",
+    "page_number": 54,
+    "word_count": 708,
+    "article_char_count_full": 4365,
+    "article_char_count_review": 4365,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-55-right-antonio-mairena-y-su-raz-n-incor",
+    "article_text_for_review": "Por Amparo Jimenez\n\nProfundizar en la personalidad de Antonio Mairena es harto difícil. Ser objetivo y olvidarse de su arte, más difícil todavía. No obstante y aun teniendo como tengo pocos conocimientos sobre su persona, me ha fascinado siempre una faceta suya, que en un hombre de su origen y dé su raza, le ha distinguido sobre los demás: SABER QUE SABE Y POR QUE LO SABE. Analicemos su vida y su entorno, genéricamente, ya que es conocida por todo el mundo flamenco y el espacio de estas consideraciones es corto.\n\nRompió a cantar un día, de chiquito, en la falda de su madre, en una fiesta gitana que en Mairena le organizaron al bailaor Faíco. Nadie sabía que cantaba. Se quedaron bo-\n\nGitano, con toda la carga, problemas y autenticidad que ello conlleva aun siendo andaluz. De familia gaditana, él nació, no obstante, en Mairena (Sevilla), pueblo cuyo «cante flamenco es muy especial dada su sensibilidad por el cante gitano-andaluz», según sus propias palabras en el libro autobiográfico Las Confesiones de Antonio Mairena. quiabiertos. Luego, toda una vida dedicada al cante. Cante en fiestas, pueblos, festivales, en compañías de artistas ya consagrados viajando por todo el mundo, luchas, mal pago, en vidias, desgracias familiares, incomprensiones, años de guerra, amigos que han ido quedando en los caminos, etc.\n\nTodo esto podría ser común a muchos cantaores, independientemente de su arte y sus facultades. Sin embargo en Antonio Mairena hay algo más que lo distingue. Ya desde muy joven, empieza a tomar forma en él un deseo de conocer, aprender, buscar orígenes y formas antiguas, profundizar en los grandes maestros, en la herencia de sus mayores; y todo con tal fuerza, que no ha tenido hasta ahora parangón en ningún otro cantaor de todos los tiempos. Su evolución ha sido una búsqueda continua en las raíces y en el sentir de su pueblo.\n\nEn varios momentos de su vida ha hecho examen y balance de sí mismo, ha analizado lo que estaba haciendo y el camino a seguir. Se ha planteado seriamente preguntas a las que él mismo ha dado respuesta, cambiando así el rumbo de su vida artística, aun en contra de las corrientes que se iban formando dentro del mundo complejo y a veces comercializado del cante.\n\nY, en un momento clave de su vida, buscando su verdad, buscando su por qué, surgió «su RAZON INCORPOREA». No sé si consciente o inconscientemente. Lo que sí se deduce de sus propias palabras, es que él canta por algo que no sólo es «duende». Canta por lo que él llama la RAZON INCORPOREA. Necesita de ella para ir por su camino, que no es el de nadie y que, para él, no puede ser otro. Mairena lo identifica con ser gitano y saber serlo. Yo creo que no es únicamente el ser gitano, lo que le permite encontrar su RAZON INCORPOREA. Sintió la necesidad de encontrar respuestas a su por qué y a su cante y halló algo tangible, fuerte, auténtico, atávico y la combinación perfecta de razón y sentimiento, de inteligencia y corazón. La RAZON INCORPOREA. Las dos palabras juntas parecen un contrasentido, una incoherencia o algo «fantasmagórico», como él mismo dice en sus Confesiones. Pero es real, es su razón, su guía y lo que le da fe en ser lo que es.\n\nMairena no canta porque es artista, ni porque sabe, ni siquiera porque lo siente. Canta por «su RAZÓN INCORPOREA», y ésta no todo el mundo la encuentra, ni tal vez la busca.\n\nY..., amigos, la persona que en su vida logra «su RAZON INCORPO-REA» es porque tiene raíces, está vivo, ama la vida y le entrega a ella parte de sí mismo, por amor y para beneficio de los demás. ¿Existe más generosidad? A la historia me remit-to y las generaciones futuras tienen la palabra.",
+    "title": "Antonio Mairena y su razón incorpórea",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "55-55",
+    "page_number": 55,
+    "word_count": 639,
+    "article_char_count_full": 3641,
+    "article_char_count_review": 3641,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-56-right-discograf-a-de-antonio-mairena",
+    "article_text_for_review": "DISCOS DE PIZARRA:\n\nPor F. de la Brecha y Diego Alba\n\nCantes atrás\n\nCante atrás:\n\nColumbia A. Ruiz Soler y Antonio Mairena (2).\n\n(1) El disco original es de fecha muy anterior que, como sucedía entonces, no viene marcada en el mismo: éste que se cita es una posterior edición.\n\n(2) Se trata de uno de los clásicos «refritos» a los que nos tienen acostumbradas las casas discográficas.\n\n(3) Se trata de un disco que debe corresponder a la década de los sesenta (final) y que carece de indicación de fecha.\n\nHemos de hacer constar también que en todos los discos más antiguos, cuando la fecha no era inscrita en ellos, hemos usado de referencias y datos de aficionados a los que concedemos suficiente solvencia como para dar por exactas las fechas que consignamos. Pero, de cualquier modo, hemos de formular reservas a tal fin. Existen, además, muchas reproducciones en formatos pequeños que inducen a errores, solamente corregibles tras una labor de exclusión escuchando todas ellas, puesto que no reproducen las carpetas originales en la mayoría de los casos, si no en todos.",
+    "title": "Discografía de Antonio Mairena",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "56-56",
+    "page_number": 56,
+    "word_count": 183,
+    "article_char_count_full": 1075,
+    "article_char_count_review": 1075,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-09-57-left-discograf-a-incunable-de-antonio",
+    "article_text_for_review": "Por Francisco Vallecillo\n\nExisten dos discos de Antonio Mairena grabados privadamente, es decir, fuera de los circuitos. Estos discos son identificados por el propio cantaor como el disco de Tánger y el disco de Londres. La breve historia de cada grabación la cuenta el interesado en su libro «Las Confecciones de Antonio Mairena» y hela copiada aquí en cada caso:\n\nEn Tánger, Vallecillo me presentó a unos amigos suyos, hebreos, a través de los cuales entramos en contacto con una casa de discos, la cual, aunque era modesta y utilizaba material endeble, grababa pronto y entregaba en seguida los discos. Hice allí una grabación que, por cierto, salió estupendamente, si no fuera porque la guitarra apenas se oye. Por una cara grabé un cante por soleá de Enrique el Mellizo y otro de Alcalá, y, por la otra, un par de fandangos que quizás sean los que mejor me han salió en mi vida. No conservo ningún ejemplar de ese disco, el cual dediqué, por una cara, a la familia hebrea que allí conocí y, por la otra, a Paco Vallecillo.\n\nA la grabación, que se hizo al medio día y completamente en frío, esto es, sin ninguna ambientación previa, asistimos solamente Antonio, el guitarrista —un viejecito que se buscaba la vida tocando en los ambientes flamencos que por aquellas calendas existían en el popular Zoco Chico, y yo. Habichuela, que tal era el nombre artístico del tañedor de la bajañí, no estaba ungido por el Espíritu Santo en estos menesteres del acompañamiento; acaso por esto Antonio dice en su libro citado que la guitarra apenas se oía. Los cantes de ambas caras son magníficos y si luego (el disco se grabó el año 1944) el Maestro de los Alcores ha sublimizado más las Soleares, es exacta su afirmación de que los fandangos han sido irrepetidos. Al final, se oye un anónimo jaleador que dice: —¡El mejor de España, Antonio! En aquella fecha, este elogio íntimo hubiera merecido en la gran masa de la afición el calificativo de sacrilegio. El tiempo demostró que era más que una augurio, que el jaleador en cuestión no se tuvo nunca por augur y estaba ya entonces bien cierto de lo que decía. De la plaquita en cuestión se hicieron dos ejemplares, evidente falta de previsión más que egoísmo como pudiera parecer. Antonio debió extraviar —si no se le rompió— su ejemplar y nosotros conservamos el nuestro, ya con una picadura, pero todavía perfectamente audible. En una cara se lee, claramente escrito con la letra de Antonio Mairena: Tánger, 1944 (1). Sobre el disco de Londres escribe el Maestro en su libro antes citado, que, como conocen la mayoría de los aficionados (que leen), está preparado por el admirado poeta Alberto García Ulecia:\n\nSe realizó en 1954 y a través de un médico gallego, don Alejandro Martínez, al que conocimos en Londres. Por su mediación, el embajador de Argentina proyectó una grabación que se realizó en un estudio australiano. Fue cuando empezaban los microsurcos. Grabé cantes por seguiriya, soleá, cantiñas, liviana, la Nochebuena de Jerez; y me acompañó el Moraíto. Los 500 ejemplares que se hicieron de aquella grabación se repartieron entre muchos aficionados, pero, que yo sepa, los únicos discos que llegaron a España fueron los cinco que le dieron al Moraíto y los cinco que me dieron a mí.\n\nSe trata, en este caso, de una grabación perfecta, tanto técnica como artísticamente. La variedad de seguiriγas,\n\nlas cantiñas —acaso lo mejor de todo— y la liviana constituyen sendas piezas maestras (2).\n\nDe los discos que llegaron a España, aparte los de Manuel Morao, cuyo final ignoramos, nos consta que uno obra en poder del gran aficionado madrileño Faustino Otero, otro se alinea en los densos y ricos anaqueles del doctor Reina, otro lo tiene mi hermano y otro, parcialmente rayado por una artera aguja, forma en nuestro modesto patrimonio. Alguno más debe andar por ahí, casi con toda seguridad.\n\nQuede aquí constancia de esta información que sin duda puede contribuir al conocimiento de la discografía tan acertadamente calificada de incunable por Arcadio Larrea, a quien ofrecemos estos datos. Solamente este prestigioso investigador ha ordenado —que nosotros sepamos— en su Guía del Flamenco, que tan generosamente tuvo la delicadeza de ofrecernos con una exagerada dedicatoria, una serie muy completa de incunables.\n\nDISTRIBUTOR OFICIAL DE:\n\nVIDRIO LAMINAR DE SEGURIDAD - ACRISTALAMIENTOS EN GENERAL\n\nTRABAJOS DE ALUMINIO PARA OFICINAS Y TERRAZAS",
+    "title": "Discografía incunable de Antonio Mairena",
+    "periodical": "candil",
+    "issue_id": "1982-09",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "57-57",
+    "page_number": 57,
+    "word_count": 736,
+    "article_char_count_full": 4401,
+    "article_char_count_review": 4401,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

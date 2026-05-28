@@ -1,0 +1,152 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-05-8-right-de-nuevo-sobre-los-cafes-cantant",
+    "article_text_for_review": "ACE poco tiempo me llegó un artículo del periódico malagueño «Sur» en el que se contestaba a la pregunta de ¿hubo en La Carolina cafés cantantes?, hecha por el aficionado y torero, Pedro Mesa, paisano nuestro. La contestación, basada en el artículo anterior que apareció en estas mismas páginas, me anima a continuar con el tema.\n\nConviene recordar que terminaba el anterior con la alusión al Café Colón. Este café, del mejor estilo modernista, de aire provinciano y señoril, perfectamente conservado hasta el mismo momento en que la piqueta lo arrasara hace escasos años, fue así mismo un verdadero café cantante aunque de manera ocasional. La muerte del dueño, amigo de todos, Paco Cuesta, nos ha privado de la mejor fuente de información sobre su enorme anecdotario. Tenemos propaganda impresas de este establecimiento de 1912, séptimo centenario de la Batalla de Las Navas de Tolosa, de 1927 y en todos los programas de feria.\n\nPor estas fechas del primer cuarto de siglo, es el gran florecimiento de la afición al flamenco, como ya dijimos. El poeta carolinense, aunque nacido y muerto en Madrid, Marcos Pérez-Sauquillo y Cádiz, en su poema sobre el ambiente de la ciudad titulado «1920», nos dejó estos versos testimoniales: «Sórdido y sucio, distante,\n\nen turbio café cantante,\n\nmujerucas de Levante\n\nfuman y beben soleras\n\nal son de cartageneras\n\nque no es mal son, que es buen cante» (1).\n\nOtro local que podemos incluir entre los cafés cantantes de nuestra ciudad fue «El Cortijo Real», situado en la calle Olózaga número 1, casi enfrente del reseñado «Café de Manolín». Su propietario era José del Arco Moreno. En el periódico carolinense «La Razón», leemos: «¡El Cortijo Real...! Típico Restaurant andaluz, donde la alegría de los vinos hace olvidar preocupaciones y tristeza, y donde el ambiente castizo de juerga andaluza pone en el alma añoranzas de alegres horas vividas bajo el hermoso cielo sevillano, mientras a lo lejos se lamentan las guitarras y fluyen las coplas sus sentires y sus quejas...» (2).\n\nEste local era; creemos, el preferido de los aficionados al cante grande, que se reunían a diario para decir sus coplas. En él se podía escuchar a las mejores voces cantaoras de nuestro pueblo: Valentín «Comino», «Rabote», José Maleno, Juan Bellido, minero de «Araceli», «Tresdedos», «El Morao», Barragán «El Niño de la Huerta», Joaquín «El Carretillero», gran cantaor, am-",
+    "title": "De nuevo sobre los cafés cantantes carolinenses",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "8-8",
+    "page_number": 8,
+    "word_count": 392,
+    "article_char_count_full": 2395,
+    "article_char_count_review": 2395,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-9-left-un-autografo-de-manuel-escacena",
+    "article_text_for_review": "plio y profundo, que bien pudo poner su nombre entre los buenos cantaores profesionales, y otros.\n\nHemos de recordar que estos locales eran frecuentados por Pepe Marchena, sobre todo en el tiempo en que residió en nuestra ciudad, allá por los años 1938-1940, en los que vivió con la familia De la Torre en la calle O'Donell. También dejó oír su voz aquí Pepe «Palanca», en su corta estancia carolinense, de quien Ríos Ruiz nos da esta breve cita: «Excelente fandanguero, creador de un estilo muy popular. Nació a principios de siglo» También nos han hablado de que fue minero en «La Rosa» por aquellos años veinte otro gran cantaor, «El Carbonerillo», que creo es el mismo del cual el autor citado dice: «Personalísimo cantaor sevillano de fandangos. Gozó de popularidad en el primer tercio del siglo XX. Grabó muchos discos» (3). Es cierto que estos grandes artistas no tenían nombre famoso en aquellos años, pero de lo que no hay duda es de que sí tenían hermosas voces flamencas, que enardecían a los «cabales» carolinenses que tuvieron la fortuna de saborear sus cantes.\n\nVolviendo a «El Cortijo Real», insistimos en que no fue un verdadero café cantante; era más bien un «colmao» que un «tablao», pero de gran raigambre flamenca. Por otra parte, era un local bien surtido y de excelente cocina, a juzgar por la propaganda, por lo que «no es extraño que a diario se vean sus reservados llenos de público...» Y un dato para la añoranza: «Chuleta con pan y vino por 0'25 pesetas». «El Cortijo Real», «donde se come y se bebe por excelencia y donde la alegría de vivir es más grande», debe quedar como nombre importante en el contexto carol inense, y de toda esta amplia zona comarcal de Sierra Morena, del mundillo del flamenco jaenero.\n\nComo se ve, la nómina de locales se va incrementando poco a poco y va situando a La Carolina como un centro flamenco de primer orden —o de segundo, pues no vamos a pretender compararnos con los grandes emporios del cante—, pero realmente importante. Cuatro son los factores que hacen de nuestra ciudad un núcleo clave para el arraigo del cante y para su irradiación a otros pueblos más o menos cercanos: a) La cuenca minera, tanto por la llegada de mineros de otros lugares andaluces, como por la indudable prosperidad económica. b) La comunidad gitana, como ya indicamos, inseparable del cante. c) La situación geográfica que, a caballo del «camino real» construido por Lemur a instancias de Carlos III, le hace ser lugar de «parada y fonda», para viajeros e influencias, desde Andalucía a Madrid y viceversa, con lo que el cordón del cante que unía a Se villa, y el Sur, con la capital de España, pasaba por aquí, en donde, sin duda, se quedaban «arbitrios y alcabalas» de la mayor hondura. Y d) La antigua tradición bandolera de Sierra Morena.\n\nPero dejemos estas consideraciones para otra ocasión, que nos alejamos de los cafés cantantes, esos que, en el decir de Félix Grande, llenan «casi un siglo» de la historia, de la «memoria», flamenca, y, como vemos, también llenan muchos años del vivir de La Carolina.\n\n(3) «Introducción al Cante Flamenco», Istmo. Madrid, 1972, págs. 243 y 191 respectivamente. Guillermo Sena Medina\n\nManuel Yerga nos facilita de su archivo este autógrafo del «Niño Escacena», dedicado a Carmen la Flamenca y escrito al dorso de una fotografía del cantaor.\n\nAparte de la curiosidad que, comó autógrafo, tiene el docu- mento, no es menor el signifi- cado que arrastra, contestan- do a la «leyenda negra» del analfabetismo casi gener- ral de nuestros artistas flamencos.\n\nComo el-lector sabe, Manuel Escacena fue uno de los más significados artistas de esa etapa de transición, que reclama serios estudios diferenciadores, conocida como «Opera flamenca».\n\nSi bien Escacena difundió La hija de Juan Simón —curiosamente hoy nuevamente de moda por el ritmo afrocubano de «Salsa»; imprevisibles idas y vueltas de la copla—, de tanta aceptación popular, como de graves consecuencias para el flamenco, merece ser recordado coo buen intérprete de saetas, tarantas, cartageneras, cantes de ida y vuelta y, sobre todo, por sus fandangos de Lucana.",
+    "title": "Un autógrafo de Manuel Escacena",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 694,
+    "article_char_count_full": 4107,
+    "article_char_count_review": 4107,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-9-right-el-canario-de-madrid",
+    "article_text_for_review": "A muerto, enmudeció para siempre, «El Canario de Madrid». El día 31 de octubre del pasado año de 1981, desapareció una de las figuras artísticas más significativas del flamenco madrileño y conocedor, como pocos, de la historia cantaora de la Villa y Corte. Con la ingratitud del olvido, los grises y despiadados polvos del tiempo hicieron que se apagase, que pasara casi al anonimato uno de los más serios cantaores que ha dado Madrid, Pedro Sánchez Lanagá, «El Canario». ¿Qué quiénes motivan tanta injusticia? Uno, por su parte, anotaría un buen brazado de razones; pero dejémoslas para otra ocasión, aunque, bien pensado, no serán totalmente desconocidas por los auténticos aficionados. «El Canario» nació en Madrid el día 1 de octubre de 1897. Hombre de mediana estatura, menudo, vivaz, alegre y repleto de esa singular chispa castiza del más puro madrileñismo. Mucho más aficionado que cantaor y, sin lugar a dudas, muchísimo mejor artista que no pocos de los que formaron parte en los distintos elencos con los que actuó: las compañías de Centeno, Vallejo, Escacena, Cojo de Málaga, Niña de los Peines; Luisa Requejo, Cepero, Niño de la Huerta, Marchena, Palanca, Sevillano y muchas otras más. Junto a su esposa, Victoria de Miguel, joven y precoz guitarrista, alumna de Patena (padre) y de Ramón Montoya, quien la presentó a los 16 años en el Teatro Fuencarral, «El Canario» actuó para los cuadros flamencos de Estampio, La Macarrona, La Malena, Las Coquineras, Vicente Escudero, etc. y fue, igualmente, acompañado por las egregias guitarras de Javier Molina, Ramón Montoya, Borrul, Manolo de Badajoz, Luis Yance y Niño Ricardo, entre otras. Conoció y actuó en los últimos cafés cantantes madrileños, aprendiendo sus cantes de los grandes\n\nmaestros y estuvo dotado de una fuerte voz que le facultaba a pasar el cante sin necesidad de micrófonos. De su amplísimo repertorio sobresalían las soleares, fandangos y cantes de Málaga. Por cierto, hace unos días me comentaba Perico el del Lunar (hijo), la fuerte y hermosa voz de «El Canario» quien, precisamente, trabajó con su padre en la Segunda Antología Flamenca, realizada para Méjico y grabada por Orfeón. Entre los diversos cantes que en ella realiza, sobresale una jabera sin lugar a dudas soberbia.\n\nQuede aquí este breve y apretado perfil flamenco de uno de los cantaores injustamente silenciados y que, a mi parecer, ocupa, por derecho propio, un lugar importante en la historia cantaora de Madrid.\n\nAntonio Escribano\n\nAPERITIVOS SELECTOS\n\nEspecialidad en\n\nMesones, 18 Teléf. 23 40 46\n\nPLANCHA\n\nJ A E N",
+    "title": "El canario de Madrid",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "9-9",
+    "page_number": 9,
+    "word_count": 418,
+    "article_char_count_full": 2564,
+    "article_char_count_review": 2564,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-10-left-las-letras-flamencas-de-rafael-g",
+    "article_text_for_review": "O es esta la primera vez que estamos con el criterio de Juan Ramón: «Díficil es para el escritor culto cogerle el corazón a lo popular; al pueblo le es muy fácil, en cambio, coger el corazón de lo culto». Y la razón, nos parece, no es más que una, en el pueblo está la desnudez de la cultura, mejor, la cultura desnuda, a palo seco. Pero cuando el poeta es y se siente pueblo, las coplas le nacen bailándose desde los enraizados sentimientos. Y este es, sin lugar a duda alguna, el caso del poeta granadino Rafael Guillén, uno de los más recios de la llamada generación del cincuenta, y a quien el compadrazgo mesetario, por mucho que se afane, no puede regatearle su puesto. Ahí están los «Poemas Terrales», «Moheda», o todos sus «Gestos».\n\nLa copla, lo hemos dicho, no es algo ocasional en Guillén, muchas de ellas aparecen en las más distintas publicaciones y hasta pintadas en cerámicas, cómo no, de Fajalauza; también, si la memoria no me es infiel, dio a la imprenta un libro, «Apuntes de la corrida», en el que la copla nacía de las honduras del cante y ciertos sones gerardianos.\n\nHoy supone todo un halago para «Candil» poder ofrecer a nuestros lectores esta mano de coplas, cinco cantes inéditos amarrados al puño de lo popular, a la garganta y el corazón cantaores.\n\nMira tú si de inmediato te olvidé, mala mujer, que anoche vi tu retrato y pregunté de quién es. Después de llorar un rato.\n\nQue tú no tienes conciencia. Que las culpitas son tuyas y mía la penitencia. La mujer y el rastrojo no se asemejan, porque el rastrojo arde cuando se seca. Y las mujeres, mojaditas de llanto mejor se prenden. Por tener tu voluntad yo gasté mi vida entera. Y ahora me vengo a enterar que eso lo tiene cualquiera sin tener que gastar ná. De qué color era el fuego vino un ciego a preguntarme. Dímelo tú, te lo ruego, porque de tanto mirarte yo también me he vuelto ciego.\n\nServicio: HERMANOS BARRANCO",
+    "title": "Las letras flamencas de Rafael Guillén",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-10",
+    "page_number": 10,
+    "word_count": 346,
+    "article_char_count_full": 1900,
+    "article_char_count_review": 1900,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1982-05-10-right-chiclanita",
+    "article_text_for_review": "E N el número XV de CAN-DIL se publica una relación biográfica del antiguo cantaor Chiclanita, cuyo nombre y ejecutoria han venido pendulando desde hace muchos años, y aún continúan así, entre una realidad más o menos presunta y un fantasía y fabulación a la que las gentes flamencas suelen ser tan dadas. Frente a tantos casos como el que nos ocupa, escribimos en cierta ocasión que el flamenco está formado por muy escasas verdades y muy bellas mentiras que merecerían ser verdades. Y no es que ahora podamos oponer nada a cuanto se ha escrito sobre Chiclanita, que más o menos coincide con las referencias que de él teníamos a través de prolongadas charlas con Aurelio —muchas noches perdidas con él y Capinetti (valga la ortografía genuina de las dos t)— cuando más que escucharlos en el desarrollo de su arte que, sobre todo en José era excepcional, nos embóábamos oyendo historias, explicaciones sobre cantes (que también Capinetti sabía decirlos, a media voz, como los propios ángeles) y biografías de figuras pretéritas. Ahora hemos refrescado algunos datos al respecto de Chiclanita en nuestra charla con Juan Carrasco, en sus tiempos de artista «Niño de Jerez II», actualmente comerciante establecido en Ceuta, que el año 1953 ganara el primer premio de cante por Seguiriyas en el mismo Concurso en el que Manolo Vargas obtuvo el de Alegrías, en el famoso Teatro Falla de nuestro Cádiz del alma... flamenca. Juan es hijo del que fuera popular tocaor de raza gitana «Botita» y nuestra amistad se cimentó al extremo de que hace muchos años —tantos como para no confesarlos— lo hicimos venir a Larache, donde tuvo ocupación en una Venta (al estilo andaluz) en la que alternaba su recién aprendido\n\noficio de camarero con el de animador de las reuniones de Cante, en un extrarradio de la capital lara-chense, antigua Lixus romana, en el barrio llamado de Nador, cabe el faro de Punta Negra.\n\nNos dice Juan Carrasco que conoció y escuchó a Chiclanita cuando debería tener unos sesenta años de edad, allá por los de la guerra civil que últimamente sufrimos los españoles. Por entonces las Ventas y lugares de esparcimiento nocturno estaban cerrados y como tanto mi amigo como su inseparable Pericón y el viejo Chiclanita eran muy amigos unidos por una misma afición, muchas noches iban los tres a pescar.\n\nCoincide Juan Carrasco con otras referencias en que Chiclanita usaba lentes, era de baja estatura, llevaba un sombrero blando de los impropiamente llamados mascota, de ala vuelta, y vestía una especie de largo levitón en el que embutía las manos en un gesto de modestia y humildad.\n\nNo es cierto —nos asegura con toda firmeza— que se acompañara a la guitarra, que apenas si sabía rasguear. Tampoco coincide nuestro informador en que Chiclanita tuviese poca voz, pues, al contrario, asevera, tuvo, hasta el final, una voz fuerte y sana. «Todos le admirábamos mucho y nuestra admiración estaba influida de escucharle unas formas musicales que, en ocasiones, nos parecían extrañas, cantes que parecían venir de muy lejos y que tal vez hoy podrían estudiarse detenidamente para buscarles paralelos y coincidencias con los que nos son conocidos. La afirmación de Aurelio de que no dominaba bien el compás me parece rara, máxime cuando no todos sus cantes, ni mucho menos, eran acompasados».\n\nEsa letra que tú me refieres (1)\n\nSi vas a la mar y cuentas de la playa las arenas, hazte cuenta que has conta(d)o una por una las penas que por ti tengo pasa(d)o.\n\nla escuché cantar a Antonio el Troni, gitano, de Sanlúcar, hoy injustamente olvidado y para mí, con todo el respeto para Chiclanita y aparte del mérito que tuviera la antigüedad de sus cantes, fue por aquella época el mejor de todos los que se rompieron en Cádiz. Al contrario que Chiclanita, El Troni era abierto y locuaz y siempre dispuesto a enseñar toda la inigualable riqueza cantaora que atesoraba.\n\nLa conclusión que sacamos es que Chiclanita no fue, ni mucho menos, un gigante que pudiera doblegar con sus conocimientos a ninguno de los buenos cantaores actuales. (Y mucho menos a Antonio Mairena). Chiclanita, y en esto coinciden todos, decía unos cantes raros, de oscuro y tal vez secular origen, que ninguno conocía. Esto debió tener cierto mérito, pero no se podrá valorar como máximo el que se deriva del desconocimiento de los demás. Se trató o debió tratarse de un personaje singular, pero en modo alguno nadie lo ha considerado jamás como uno de los pilares del Cante de ninguna de las épocas de las que existe constancia más o menos exacta, generalmente menos.\n\nSi estas líneas sirvieran para que alguien con los conocimientos y la preparación que a nosotros nos falta pudiera hacer puntualizaciones sobre el cantaor de Chiclana —que, por cierto, siempre vivió en Cádiz, en La Viña popularísima y flamenca—contribuiría, sin duda, a un aspecto no indiferente de la historiografía flamenca. Porque sólo con nuevas y veraces investigaciones podría afirmarse que Chiclanita fue un gigante de nuestro arte: lo que para uno no dejaría de ser una grata sorpresa. En cuanto a la muy mudable opinión de Aurelio sobre el maestro Mairena de la que uno sabe lo suyo, incluso por boca del propio Aurelio, y por no pocas y variadas circunstancias, no es tema que se corresponda con el objetivo de estas modestas líneas. Ni incluso tampoco en otro caso distinto valdría la pena el someterlo a divulgación.\n\n(1) Como de Chiclanita la cita Arcadio de Larrea, en Guía del Flamenco.\n\nFRANCISCO VALLECILLO",
+    "title": "Chiclanita",
+    "periodical": "candil",
+    "issue_id": "1982-05",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "10-11",
+    "page_number": 10,
+    "word_count": 922,
+    "article_char_count_full": 5464,
+    "article_char_count_review": 5464,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

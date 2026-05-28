@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1978_10::A11",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nby Carol Whitney Copyright © 1978 by Carol Whitney All rights reserved PART II Paco's second question is \"People write and talk about Diego as if he were a saint; certainly he appears to have had a sense of inner peace. He was also painted as enigmatic and eccentric. Was he really that way? If not, what was he really like?\" Of course you should ask the Spaniards who knew him if you want the whole story. My own knowledge is that of an outsider, and is therefore limited. Still, I have opinions on these questions, since I know something of human nature, and I believe those who knew Diego really well would agree with most, if not all, of them. Pohren's Art of Flamenco, his Lives and Legends of Flamenco, and David George's The Flamenco Guitar, all published by the Society of Spanish Studies,\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"Legend\"]\n\nn these questions, since I know something of human nature, and I believe those who knew Diego really well would agree with most, if not all, of them. Pohren's Art of Flamenco, his Lives and Legends of Flamenco, and David George's The Flamenco Guitar, all published by the Society of Spanish Studies, give biographical information on Diego. (Pos-sibly the Blue Guitar, San Diego, can help you locate these books, either to buy or borrow, as Lives and Legends is out of print, and probably The Flamenco Guitar is too.) The most important facts are that Diego was the son of a wealthy Gypsy cattle trader, that his family owned a lot of land in Morón (sources: Juan del Gastor and Agustín Ríos), that his father consistently took care of the poor, feeding and clothing them (source: Diego's sister Amparo), and that the family lost its wealth eventually. Diego told me that he especially wanted to learn the guitar, but his parents didn't want him to be a professional, and didn't like his going out to juergas, which would have provided him with ideal learning conditions--perhaps they feared he would want to live only in juergas thereafter. So, he told me with a devilish grin, he had to sneak\n\n[ENDING CONTEXT]\n\nmeasure of freedom of choice. When poor, as he was (except for that country house) for the rest of his life, he maintained this freedom another way, in defiance of material loss. He chose how to choose; he chose to take care of people, of himself and his art (as best he could), he chose not to put on airs, and to ridicule those who did. His ability to maintain a freedom of choice and to use it in preservation of his artistic and personal integrity was what set him off from those who never had such freedoms or abilities. This is perhaps why people called him enigmatic, eccentric, or a saint.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Diego del Gastor: Flamenco Stories",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_10",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "14, 15, 16, 17, 18",
+    "page_number": 14,
+    "word_count": 1940,
+    "article_char_count_full": 11509,
+    "article_char_count_review": 2818,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "Legend"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1978_10::A12",
+    "article_text_for_review": "A Book Review: FLAMENCO GITANO by La Vikinga & Roberto Reyes Anyone who ever \"made the Morón scene\", traveled to Lebrija, or was invited to a fiesta in Alcalá de Guadaira, has returned to the states a little richer after experiencing a brand of flamenco which touches the lives of every person living and passing through the pueblos of Andalucia. Most of us who have made this pilgrimage have tapes, films, falsetas, and memories...and of course, there was the outstanding personality, Diego del Gastor, guitarist. Donn E. Pohren's books have enticed many aficionados in search of the roots of the mysterious flamenco folklore, to witness for themselves in small towns of southern Spain, this ancient art. A new breed of aficionado has emerged. For example, many American guitarists are collectors, exclusively, of \"Morón falsetas\". These humble pueblos quite obviously have something very unique, profound, and powerful. Charles Berger, professional photographer, has been able to capture this \"gracia\" in his book, \"Flamenco Gitano\", published by Artisan Press, 1974. The book is divided into 4 sections: 1) Juerga, 2) A Palo Seco, 3) Fiesta, and 4) Raices. Charles Berger's lens caught those familiar moments, such as the hand and facial expressions of Joselero wailing through a \"soleares\", the many pellizcos of Miguel Funi dancing, and certainly, the guitar playing of Diego del Gastor. (Note: the pictures of Diego del Gastor were taken 10 months before his death). With the effect of the silk-screened color prints, one can clearly hear the beats of the guitar, smell the aroma of the wine, and the odor of olive oil. This book is a must for every flamenco and collector of fine art. We are the proud owners of a signed copy, #20, of this limited edition of 250. There are still books available. The cost is $85.00, and it is distributed, exclusively, by Book People, 2940 Seventh St., Berkeley, Calif. 94710. For more information, write: Charles Berger, Richcrest Road, Lake Peekskill, New York, 10537. MORCA ... sobre el baile SONG AND DANCE (UN TROZO) One of the most important parts of flamenco dance is learning to dance with a singer. I make a point of this because, frankly, in America, there are very few singers and even fewer that perform with dancers. In Spain, the process of studying dance is also usually just with a guitarist and, after studying and studying, a dancer may feel very lost when working with a singer for the first time. With or without a singer the choreographies that a dancer is working on should always consider the \"place\" for song, the involvement of the singer; it is only with the totality of the flamenco elements of guitar, song, and dance, that the dance will \"speak\". The guitarist should also \"hear and feel\" the cante whether it is present or not. This may sound mysterious, but it is really just being sensitive to an important part of the totality of performing flamenco. Here are some suggestions to help better understand the art of working with a singer: The obvious is to listen to as much singing as possible; if not live, then on records preferably singers such as Chocolate or Mairena and other top singers that have worked with dance. Most records now are just song and guitar so there will be much freedom in the compás, but you can still become sensitive to the length of the different letras and the feeling of the different compases, as well as the dynamics of the various letras.",
+    "title": "Duende Through a Lens",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_10",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "18, 19",
+    "page_number": 18,
+    "word_count": 586,
+    "article_char_count_full": 3445,
+    "article_char_count_review": 3445,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_10::A13",
+    "article_text_for_review": "The guitar is one of them. There was a period -- the period of the father -- when he was forced to perfect his technique. Today he does not shut himself in a room to \"make his hands.\" He is worried more about ideas, expression. He didn't learn to read music. In moments of inspiration, generally during the night, he tapes what occurs to him and later works it all out. He can play for hours. But he has never said \"Today I have played well!\" \"He is neither happy nor sad. He can be both because he lives in a state of constant feelings. His life can be summed up in one word: feeling.\" \"He lives much at night. He likes to sleep. And nature. He loves the beach and the sea; they are the relief from the alcohol of the winter...he enjoys little things. He seeks the company of simple people, with them he can relax. With his long time friend, Carlos. With Bartolo, a dog without breed nor pedigree...with his Brazilian parrot who sings to him flamenco 'por canasteras'.\" And with Casilda, his fiancee, whom he will marry this year. But that is another story! (Ed. note: they were married in 1977) THE RECORDS OF PACO DE LUCIA For the collectors and Paco de Lucía fans, here is an update on Paco's records (including some catalogue number corrections). A large number of letters to many parts of the United States and Spain yielded not a single response concerning this matter. We have to thank Jerry Lobdill of Texas and William Regan of Colorado for the following additions to our list. If you have any other titles, please send them to $ \\underline{\\text{Jaleo}} $. For the first part of this list, see $ \\underline{\\text{Jaleo}} $, June, 1978. \"La Fabulosa Guitarra de Paco de Lucía\" Ph 843 139 PY \"Fantasía Flamenca de Paco de Lucía\" Ph 843 198 PY \"Paco de Lucía Interpreta a Manuel de Falla\" Ph 91 13 008 GT 146 \"La Guitarra de Oro de Paco de Lucía\" A two record set of past hits. Ph 66 41 043 \"Canciones Andaluces Para 2 Guitarras\" (with Ramón de Algeciras) Ph 843 140 PY \"12 Hits Para 2 Guitarras Flamencas y Orquesta de Cuerda\" (with Ramón de Algeciras) Ph 58 65 025 PY \"El Mundo del Flamenco\" (with brothers, Ramon -- guitar, Raul -- bailaor, and Pepe -- cantaor) Ph 63 28 025 WITH CAMARÓN DE LA ISLA: \"Camarón de la Isla con la Colaboración Especial de Paco de Lucía\" Ph 58 65 026 Ph 63 28 004 Ph 63 28 021 \"Canastera\" Ph 63 28 076 ? Ph 63 28 100 \"Soy Caminante\" Ph 28 130 \"Arte y Majestad\" Ph 63 28 166 \"El Camarón de la Isla - Disco de Oro\" Ph 63 28 190 \"Rosa María\" Ph 63 28 191 \"Castillo de Arena\" Ph 63 28 225",
+    "title": "MORCA... sobre el baile",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_10",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19, 20",
+    "page_number": 19,
+    "word_count": 482,
+    "article_char_count_full": 2524,
+    "article_char_count_review": 2524,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_10::A14",
+    "article_text_for_review": "• • • NEWS OF OUR JALEISTAS QUIZ OF THE MONTH: 1. What teacher-dancer- choreographer who has been threatening to go to Spain for the last five years, finally got there and threatens to stay for a year? 2. Who gave a mini-concert, unannounced in $ \\underline{\\text{Jaleo}} $, at the Marquis Theater on the 22nd of September? 3. What flamenco group, formerly at the Posada del Sol, was seen at a fund-raiser for Pete Chacon and the Oz discoteque last month? 4. What beloved dancer-guitarist-painter of gypsies-maker of castanets celebrated his 86th birthday on Sunday, September 24th? ANSWERS: 1. Jose Luis Esparza; 2. Rayna's Spanish Ballet, with dacers Rayna, Alfredo Aja, and Jesus Moreno, singer Isabel Tercero, and guitarists Joe Kinney and Yuris Zeltins; 3. Fantasia Espanola; 4. Ernest \"Ernesto\" Louis Lenshaw.",
+    "title": "EL OIDO",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_10",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20",
+    "page_number": 20,
+    "word_count": 132,
+    "article_char_count_full": 815,
+    "article_char_count_review": 815,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1978_10::A15",
+    "article_text_for_review": "AROS (los) - The sides of the guitar; usually made of cypress or rosewood.",
+    "title": "FLAMENCO TALK",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1978_10",
+    "year": 1978,
+    "language": "en",
+    "article_type": "other",
+    "pages": "21",
+    "page_number": 21,
+    "word_count": 14,
+    "article_char_count_full": 74,
+    "article_char_count_review": 74,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,192 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1982-07-6-right-catalogo-de-libros-librillos-y-c",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nAquí sigue una selección de diversas publicaciones que a uno le ha sido posible recoger al cabo del tiempo relacionadas de modo directo con las coplas —las llamadas letras— más o menos flamencas. Mas en cuanto vienen de esa ignota pléyade de poetas populares; menos, con tal que cual excepción, cuando son fruto de la inspiración del vate culto que raras veces, para su desfortuna, consigue ocultar su conocimiento de la poesía cuando afronta, lleno de entusiasmo flamenco, la usurpación de esa difícil y tantas veces inabordable gracia.\n\nBreve es nuestro comentario, en muchos casos una precaria cita de autor y título cuando la obra no resulta acreedora de grandes méritos o incluso se pierde en la pura chabacanería; breve también en los casos —tan pocos— en que al tratarse de alguna rara Opera\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"imit\"]\n\nar su conocimiento de la poesía cuando afronta, lleno de entusiasmo flamenco, la usurpación de esa difícil y tantas veces inabordable gracia. Breve es nuestro comentario, en muchos casos una precaria cita de autor y título cuando la obra no resulta acreedora de grandes méritos o incluso se pierde en la pura chabacanería; breve también en los casos —tan pocos— en que al tratarse de alguna rara Opera Magna nos encontramos cohibidos ante nuestras limitaciones de meros aficionados y conscientes, por tanto, de nuestra incapacidad de juzgar que cedemos gustosamente a la sensibilidad de los poetas y, aunque sea con algún que otro recelo, a los flamencólogos. Que de eso uno, al decir de ahora, pasa. Acaso porque como dijo aquella inolvidable Pastora, la de los ojos verdes, eso nos suena a cosa de botica. Hemos realizado, pues, un cernido escasamente riguroso y medianamente testimonial. Nos faltan textos importantes (no en vano, por ejemplo, llevamos años persiguiendo ese inaccesible Don Preciso) y el lector verá que nos sobran algunos. Quede, en suma aquí consignado el modesto propósito que nos ha llevado a esta recopilación antológica, que debe ser tomada más en su sentido estadístico que laudatorio, salvo las contadas excepciones de todos conocidas: y si algún lector nos sigue en la lectura, verá si hemos llegado cerca de nuestra intención. De cualquier modo, a su benevolencia nos acegemos de antemano. Aguilar de la Serra, Joaquín. SAETAS. Ediciones Patrióticas, Cádiz. (Sin fecha). 0,40 pesetas y 16 páginas. Selección cuyo mayor interés acaso estribe en apreciar la evidente y positiva evolución poética que este cante —dentro de la órbita de influencia creada por los gitanos principalmente— ha tenido en el breve devenir del tiempo. Aguilar y Tejera, Agustín. SAETAS POPULARES. Cía. Iberoamericana de Publicaciones, Madrid. Por Francisco Vallecillo A José Manuel, a Antonio, a Félix a Manolo y a Fernando: Los Maestros. Contiene esta publicación un interesantísimo prólogo que constituye un trabajo muy completo sobre el origen de la Saeta popular. Las notas complementarias en las que se establecen comparaciones y diferencias entre las saetas locales y, por último, partituras de las Saetas de Sevilla, Cabra y Marchena. Cerca de doscientas páginas con letras de Saetas clasificadas por orden litúrgico: Samaritana, entrada en Jerusalén, Ultima Cena, Oración del H\n\n[ENDING CONTEXT]\n\ndos cerquita de ti, limón del aire y la hoja verde y picaíta del peregi.\n\nAlborea\n\nCuatro potros cerriles, cortan el aire esta noche las crines, van a rizarles.\n\nPañolito blanco, velito de novia, viva quien le viene de casta la honra.\n\nSi del junto el agua, del álamo el aire, de tu flor abierta sangra tus lunares.\n\nReluciente está mi huerto de este ramiño de flor de almendro.\n\nDISTRIBUTOR OFICIAL DE:\n\nPolígono «LOS OLIVARES» - Teléfonos 22 30 00 - 22 30 04 - J A E N\n\nFABRICA Y OFICINAS:\n\nVIDRIO LAMINAR DE SEGURIDAD - ACRISTALAMIENTOS EN GENERAL\n\nTRABAJOS DE ALUMINIO PARA OFICINAS Y TERRAZAS\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Catálogo de libros, librillos y modernas coplas fla-mencas",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "6-16",
+    "page_number": 6,
+    "word_count": 12583,
+    "article_char_count_full": 75966,
+    "article_char_count_review": 4011,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "imit"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-07-16-right-rancapino",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nEllos, los protagonistas, dicen\n\n—¿Tú procedes de una familia con numerosos cantaores?\n\n—Sí. Mi padre cantaba mu bien por siguiriγas, le decían «Orillito» y mi hermano también ha podía estar trabajando y se llevó catorce o quince años con el ballet de Antonio Gades, le decían «Orillo».\n\nYo he tenía muchos artistas en la familia. Mi abuela cantaba muy bien por bulerías y los cantes que hace La Perla por bulerías son de mi abuela, que le decían «La Obispa». Mi padre era un buen aficionao y realizaba un cante añejo por siguiriya, el de Manuel Torre, los que se hacían por aquellos rincones de San Fernando, Barbate, Jerez... Por allí, cualquier gitano que sepa templarse canta por solea, siguirias, martinetes, los corrios y tó ese lío.\n\nDe mi padre poco puedo decirte porque murió cuando yo\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"almadraba\"]\n\nos corrios y tó ese lío. De mi padre poco puedo decirte porque murió cuando yo tenía cuatro años; pero mi madre siempre me ha contao que tenía su fama. Se juntaba con el padre de Camarón, mi tío Luis, en La Isla y cuando se emborrachaban juntos se ponían a cantar por siguiriyas. —¿De dónde procede tu nombre de Rancapino? —Aunque nosotros siempre hemos vivido en Chiclana, donde había trabajo era en Barbate, íbamos con mi padre a trabajar en la almadraba, la pesca y esas cosas. Yo era muy chiquitillo y siempre estaba corriendo en cuerros, y un gitano que le decían El Mono, al verme así me decía: «¿Dónde vas que pareces un pino quemao?». Y de eso me viene lo de Rancapino, y yo no arranco ni yerbaguena. —¿Cuándo comenzaste a cantar? —¡Ojú! Yo creo que nació cantando. —¿Cómo te llegaron los viejos estilos gaditanos de los que eres buen intérprete? —Yo he escuchao a mucha gente vieja de mi tierra, y a Manolo Vargas, que lo conocí en Madrid; también he escuchao a Pericón, pero quien más me ha metío a mí en la línea ha sio Aurelio. —Bueno, también haces algo de Caracol. —Para mí gusto Caracol ha sío el mejor cantaor que ha tenío el flamenco. A mí me ha llegao mucho y he llo-rao cuando lo he escuchao. Yo y Camarón lo hemos escuchao en la Venta de Vargas, donde iba cuando terminaba sus espectáculos, porque Juan Vargas era como un hermano para él. Y entonces íbamos a buscarnos la vía a la venta gente como el Camarón, El Chato de la Isla y yo. Caracol, siempre que se templaba, dolía. La mayor satisfacción que he tenía en mi vía fue una noche cantando con Caracol mano a mano en la Venta de Vargas. El hacía un tercio y yo otro. Entonces tenía yo catorce o quince años. —¿Qué opinión tienes de Aurelio? —Para mí era un gran cantaor por los cantes que hacía. El cantaba la soleá de Cádiz y las bulerías, un cante que no se le da mu bien a los payos. Con esto no quiero decir que los payos no canten, lo que pasa es que los gitanos de ese rincón de Cádiz hacemos un estilo mu alegre, quizás por la tración y esas cosas. Pero eso no me lo puedes negar, que está ahí. Bueno, yo de Aurelio tengo muchos recuerdos. Cuando yo trabajaba en el tablao, en Cádiz, por las mañanas me iba al «Español», que era donde estaba Aurelio tomando café, y me hablaba de Caracol, del que era un enamorao. También me hablaba de «Hermosilla», de Espeleta, de la madre de La Perla. Me decía que Hermosilla era un artista mu negro. En fin, que hablaba mucho con él de cantes y de artistas antiguos. —Supongo que lo oirías cantar con frecuencia. —Bastantes veces. Antes de morirse l\n\n[ENDING CONTEXT]\n\nque se terminaban con una ronda de martinetes, que se tocaban toos los palos... y hoy no pasa así. Antes el público aprendía porque se hacían toos los cantes, y hoy no pasa así: venga bulerías y tangos, vengan tangos y bulerías. Yo creo que, por lo menos, se le debían pedir al cantaor dos cantes de la tierra en que se hace el festival y luego que haga lo que quiera.\n\n—Entonces, los Festivales...\n\nBueno, también en el extranjero se canta el carro de Manolo Escobar, diciendo que es flamenco. Y lo cantan de memoria, sin saber una palabra de español, to aprendió de memoria de los discos.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Ellos, los protagonistas, dicen... Rancapino",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-17",
+    "page_number": 16,
+    "word_count": 1294,
+    "article_char_count_full": 7022,
+    "article_char_count_review": 4186,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "almadraba"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-07-17-right-cante-jondo-en-el-grito",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Fernando Quiñones\n\nEstrenada ya, con setenta representaciones, en teatros comerciales de catorce ciudades de Andalucía, Extremadura, Baleares y Levante, la comedia dramática andaluza «El Grito», de Fernando Quiñones, ha obtenido una buena acogida de crítica y público en el Teatro Español de Madrid, donde fue incorporado a su reparto el cantaor José Meneses.\n\n«CANDIL» solicita a Quiñones unas cuartillas sobre este hecho flamenco-dramatúrgico, que el escritor y poeta gaditano no tardó en enviarnos y que publicanos a seguido:\n\nDesde el primer momento de concebir «El grito», que en modo alguno es un espectáculo flamenco ni musical, pensé en colocarle algunas ilustraciones —o contrapuntos— de cante. En la obra, una familia pueblerina andaluza, de la provincia de Cádiz, vive en Alemania del\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"logrado\"]\n\ne el escritor y poeta gaditano no tardó en enviarnos y que publicanos a seguido: Desde el primer momento de concebir «El grito», que en modo alguno es un espectáculo flamenco ni musical, pensé en colocarle algunas ilustraciones —o contrapuntos— de cante. En la obra, una familia pueblerina andaluza, de la provincia de Cádiz, vive en Alemania del Norte un exilio laboral que dura ya diez años y al que la protagonista, Manoli (Vicky Lagos), casi ha logrado adaptarse, pero sin conseguir que también se adapten los dos hombres que viven con ella: Paco, su marido, y su abuelo (Ismael Merlo). Desesperados por el alejamiento de su tierra, el alcohol ha provocado en ambos muchas y dramáticas situaciones, que incluso han ocasionado indirectamente la muerte del niño del matrimonio y un grave accidente al abuelo, cuya expresiva mudez, que sólo se rompe al final de la obra, no se sabe si es obligada o voluntaria. Quedan claras la paciencia y también la desesperación, ante esa mudez, de la nieta, mujer vital, alegre en el fondo, y luchadora constante contra la adversidad. En el curso de la obra, su marido ha ido a recoger el coche de segunda mano con el que culmina el bienestar económico de la familia. Pero no llega, no llega —todo el «tempo» teatral es esa larga espera—, ni llegará ya más... En la primera gira de la obra, a partir de su estreno en Andalucía, y a unas ilustraciones del guitarrista Rafael de Cádiz, incorporé como pórtico musical de la obra una letra flamenca —cuatro versos— de Francisco Moreno Galván, que José Meneses gravó especialmente por soleá de Alcalá para «El\n\n[ENDING CONTEXT]\n\nunido al espacio del drama) y, en sus cortas inserciones —Meneses, Mairena, Vicky misma y la guitarra del «Niño Ricardo»— cumple un papel semejante, creo, al del hueso de jamón en el puchero. Pero con bastante jamón.\n\n«CANDIL» se complace en anunciar a sus lectores y amigos, a la vez que se felicita, la reedición de «LA SOLERA FINA», el libro de cantes de don ANTONIO ALCALA VENCESLADA, que tuvo su primera aparición impresa en 1925, y que hoy es el número dos de la colección de libros «CANDIL».\n\nPara pedidos, dirigirse a la administración de esta revista: Apartado de Correos, número 510, Jaén.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cante Jondo en «el grito»",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1189,
+    "article_char_count_full": 6909,
+    "article_char_count_review": 3222,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "logrado"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-07-22-right-un-tema-para-estudiar-en-serio",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nQue el Flamenco es una manifestación cultural perfectamente seria está fuerza de toda duda. La grandeza y la verdad del Cante Jondo, con su dramatismo y su sentimiento doliente, no se pueden discutir, ni tomar a broma. Pero lo anterior no impide que hablemos de un aspecto que, aunque en tono menor, también tiene su rincón, su espacio, su presencia, dentro del variadísimo mundo que compone el Flamenco, bien directamente —cante, baile y toque—, bien como manifestaciones artísticas relacionadas con él —poesía, artes plasticas, etc.—. Por tanto, entendemos que no es disparatado que intentemos acercar el humor y nuestro arte, o, dicho de otra forma, que nos acerquemos al Flamenco desde la perspectiva del humor.\n\nSi es cierto que en el Flamenco prima el dolor, también la alegría hace acto de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_02 | trigger=\"alma\"]\n\nue—, bien como manifestaciones artísticas relacionadas con él —poesía, artes plasticas, etc.—. Por tanto, entendemos que no es disparatado que intentemos acercar el humor y nuestro arte, o, dicho de otra forma, que nos acerquemos al Flamenco desde la perspectiva del humor. Si es cierto que en el Flamenco prima el dolor, también la alegría hace acto de presencia para ponerle contrapunto y evitar la desesperación. Si es cierto que nos desgarra el alma la reciedumbre y la tragedia de cantes como la seguiriya, la soleá, el martinete, la saeta...; no lo es menos que los cascabeles del corazón se ponen a bailar con las alegrías, la bulería, la sevillana, la alboreá... La gracia, el «salero», de las gentes de Andalucía está presente en su arte de forma consistancial. La alegría es una manifestación importante del estado de ánimo en muchos momentos de la vida. Y de la alegría al humor hay un solo paso, un pequeño paso que vamos a intentar. «¡Y topamos con la gracia andaluza!». como exclama González Climent, y, como él, nos arriesgamos a discurrir por esta senda, aunque nos diga: «Indudablemente, una de las formas ideales de no caer en error cuando se toca un tema de este calibre, es la\n\n[EVIDENCE WINDOW 2 | retrieval_hint=PED_02 | trigger=\"cuerpo\"]\n\nntido que nos indica Martínez Remis, «estilo literario donde se hermanan la gracia con la ironía, lo alegre con lo triste», y añade, «en todo humorismo hay una buena dosis de poesía» (5). Poesía y humor en las letras de cantes antiguos, como los que recogiera Demófilo: «Te casaste, te enterrastes, Bien te lo desía yo, Que er que se casa se entierra Como a mí me sucedió». «Las jitanas y los jitanos, Cuando estrenan un bestío No se lo quitan der cuerpo Jasta que no está rompido» (6). O en aquellas otras que Fernández Caballero, en su novela «La Gaviota», pone en boca de Momo: «Eres blanca como el cuervo y bonita como el hambre, colorá como la cera y gorda como el alambre» y en las de su personaje Marisalada contestando al anterior: «Tienes la boca que parece un canasto de colar ropa. Con unos dientes que parecen zarcillos de tres pendientes» (7). Como en la novela que citamos, en la litera\n\n[EVIDENCE WINDOW 3 | retrieval_hint=PED_03 | trigger=\"interpretación\"]\n\nmás afable y natural de la sensibilidad y la imaginación humanas», y también de la «guasa», «otra de las modalidades que frecuentemente asume la gracia andaluza» y que «es la reductio ad absurdum del ángel, su inversión, su negatividad graciosa» (9). Bajo este punto de vista se pueden estudiar muchas obras de José María Pemán. En otro tipo de narrativa, la de Ramón J. Sender, Manuel Urbano, en las páginas de «CANDIL», ve con cierta ironía una «interpretación humorística del cante» (10). Interpretación que, evidentemente, no es la que nosotros vamos buscando, por cuanto tiene de desconocimiento y de «panderetada», de «humor negro», que también se realiza a costa del Flamenco. El humor andaluz, la gracia andaluz, se manifiesta igualmente en lo popular que en la literatura culta. En letras populares como éstas que aluden a nuestra provincia: «Yebas el mandí cortito al estilo de Linares, y te echa sie\n\n[ENDING CONTEXT]\n\nComo ejemplo traemos los dibujos que ilustran este artículo. Los nombres de los grandes dibujantes como Mingote, K-Hito, Herreros..., los andaluces como Tono, Garmendia, Soria, nuestro giennense Vica, etc. hay que unirlos a los de R. Matín, de principios de siglo, y al de Serafín, del que ofrecemos uno inédito, etc., etc. Con ellos, deseando les hayan arrancado alguna sonrisa, de las que andamos tan escasos, les dejo por ahora, pues creo que el tema merece volver sobre él, ¡en serio!\n\nPolíg. Industrial «Los Olivares», C/. Mancha Real, 6 Teléfs. 22 91 00 - 22 91 04. Part. 23 30 29\n\nJAEN\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Flamenco y humor: Un tema para estudiar en serio",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "22-24",
+    "page_number": 22,
+    "word_count": 1809,
+    "article_char_count_full": 10642,
+    "article_char_count_review": 4763,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_02",
+        "family": "CRIT",
+        "trigger": "alma"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "cuerpo"
+      },
+      {
+        "window": 3,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretación"
+      }
+    ]
+  },
+  {
+    "article_id": "1982-07-24-right-la-guitarra-entre-el-virtu-sismo",
+    "article_text_for_review": "Por Antonio Piñana (padre) y Juan Ruipérez Vera.\n\nLa guitarra, ese instrumento de figura delicada y armoniosa, constituye en la actualidad nuestro instrumento nacional. En ella se ha producido, desde su adaptación para el acompañamiento del arte flamenco, una gran evolución musical dentro de la amplísima gama de «toques» que emanan de los variados estilos que, hoy día, son representativos de aquellos pueblos y regiones de España, que acogen al flamenco como una manifestación cultural.\n\nSu evolución histórica, un tanto ambigua, merece un estudio pausado y detenido; por ello hoy nos centraremos en su evolución musical e interpretativa, partiendo desde sus primeros pasos como apoyo al cantaor y como digno acompañante del baile, sin olvidar su gran proyección en el toque de concierto.\n\nLa evolución en el toque de la guitarra flamenca queda fielmente plasmada en la extensa discografía. Remontándonos a la última década del siglo pasado y a la primera del presente veremos, comparada con hoy, la simplicidad musical, justificada por obedecer el acompañamiento de la guitarra al cante; la justeza de las falsetas cortas, el rasgueado a la vieja usanza y el apoyo al cantaor daban el fondo apetecido y, al mismo tiempo, cumplía la misión para la que fue concebida.\n\nEl arte en todas sus parcelas ha ido evolucionando y la guitarra flamenca, siguiendo esta tradición, encontró en Ramón Montoya y en Manuel Serrapi «Niño Ricardo» a los verdaderos artistas que marcaron no sólo una época, sino las reglas en que todo tocador apoya su estudio actualmente; artistas que fueron contemporáneos de los dos grandes maestros y de quienes adquirieron sus conocimientos y mantuvieron su escuela son: Borrull, Manolo de Huelva, Sabicas, Esteban de Sanlúcar, Juanito Serrano, Mario Escudero, etcétera. Desde los comienzos del uso de la guitarra para el acompañamiento del arte flamenco, los artistas que la ejecutan han imprimido, progresivamente, una mayor calidad y dificultad a la interpretación de su música, con lo que se ha conseguido llegar al virtuosismo y a que sea considerada como instrumento de concierto; este virtuosismo queda reflejado en brillantísimos guitarristas, tales como Paco de Lucía, Manolo Sanlúcar y Víctor Monje «Serranito», que han transportado la guitarra flamenca a la cúspide de lo sublime.\n\nEntre el comienzo del acompañamiento simple de principios de siglo y el virtuosismo actual, queda un paréntesis que incide de un modo preeminente en el arte flamenco y en el acompañamiento del cante principalmente. Hoy el tocador que acompaña a un cantaor se encuentra a caballo de dos épocas muy definidas, quedando totalmente influenciado por el acompañamiento cabal del cante y el virtuosismo del concertista de la guitarra flamenca. Por ello, no es del todo raro ver al tocador que intenta, en su acompañamiento, hacer alardes de concertista, con lo que, al desear ponerse a la altura del cantaor, lo entorpece y apaga y, al mismo tiempo, confunde al aficionado. Pero, esto no quiere decir que el tocador, en un momento dado, no realice cualquier variación, expresando un «duende», que haga brotar la inspiración del cantaor que acompaña. De aquí la necesidad de resaltar la labor de buenos tocadores actuales, conscientes del papel que representan al artista que, con su voz, transmite al aficionado los sabores de un cante lleno de valores musicales y honda raíz; de estos buenos tocadores podemos nombrar —sin desmerecer la calidad artística de quienes no citamos— a José María Pardo, Alverto Vélez, Ramón de Algeciras, Enrique de Melchor, etcétera.\n\nEn definitiva, es nuestra intención que se preste una gran atención al toque de la guitarra flamenca en todas sus modalidades, tanto en el acompañamiento para el cante y el baile como cuando el toque es de concierto, quedando cada una de estas versiones totalmente definidas y, por supuesto, que la atención que merece la guitarra flamenca debe ser concebida desde el conocimiento científico de la música; llegándose de este modo a dejar de forma perdurable escritas en el pentagrama todas aquellas obras de los artistas de intuición creativa.",
+    "title": "La guitarra, entre el virtuosismo y el acompañamiento",
+    "periodical": "candil",
+    "issue_id": "1982-07",
+    "year": 1982,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 657,
+    "article_char_count_full": 4116,
+    "article_char_count_review": 4116,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

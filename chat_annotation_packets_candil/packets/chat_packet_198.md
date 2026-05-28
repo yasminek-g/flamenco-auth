@@ -1,0 +1,166 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1989-09-11-right-la-debla",
+    "article_text_for_review": "Opinión\n\nLA DEBLA\n\nSin más ni más, Demófilo aseguró: «la palabra «debla» es gitana y significa «Diosa». De ahí partió la confusión. No lo hubiera sido tanto si se hubiera tenido en cuenta las dudas que sobre el particular manifiesta, a renglón seguido, el propio eminente folklorista. «Pero, significa realmente esto? No lo sabemos; los cantaores nada dicen sobre la materia; algunos, pienso que por no quedarse callados, contestaron que Debla era el apellido de un cantador; no lo creo, mucho más sabiendo que esta palabra es gitana y no se halla empleada, que sepamos, como apellido de ningún español ni extranjero. “Deblica barea”, nos dice Juanelo, equivale a decir “mírala”; esto es, “ahí tienes la copla cantada”. Otros cantaores, cuyos nombres no tenemos en memoria, me aseguraban que “debla barea” equivalía a decir: una “mentira”, una “cosa falsa”..., etc., etc.».\n\nPedro Camacho Galindo\n\nD e todos los nombres raros de los cantes de extracción gitana es, sin duda, debla el más misterioso e indescifrado. A nuestro juicio, ello obedece a que se ha partido de una falsa y desorientadora premisa: la de suponerlo vocablo calé.\n\nRicardo Molina, continuando por la misma senda, termina perdido en similares dudas, que lo llevan a decir: «La debla es el nombre de un cante gitano». Yo me quedaría con esa definición, apurada en un extremo: en un nombre. No en cante. Porque, continúa: «Lo que ahora se canta con el nombre de debla es una hermosa tonía que no justifica en ningún momento su relación con lo que el nombre de debla musita a nuestro oído espiritual». No obstante, afirma: «Debla puede venir de la raíz indoeuropea “Dei”, que significa “cielo brillante”, a través de la forma “Devah” que Havero llama “india antigua”... “Devah” designa tanto “lo celeste” como “lo celestial”, esto es, una persona divina, Dios. Por otro lado, debla (de Devi o Diosa Grande) nos transporta a los viejos cultos de la Gran Madre, Gran Diosa».\n\nY prueba de ello es que el mencionado escritor vuelve a esternar su confusión. «Nos hallamos ante una simple y exótica palabra, Debla, hispanización de “Devi”, que como pozo de vértigo nos arrebata hacia remotísimas visiones religiosas. Y por azares de la historia, esa palabra que debía significar tanto, no designa casi nada, o casi nada presente, al menos». Y se hace esta pregunta acuciante, atormentadora: «¿Cómo es que aludiendo el nombre de esa toná a la primitiva deidad femenina y fertilizante, no\n\nconocemos ni una sola «letra» o «copla» cuyo contenido literario responda al carácter sagrado del nombre de Debla?».\n\nNosotros nos permitimos sugerir un cambio de método para la investigación del misterio. Veamos: si el nombre Debla se aplica a una «hermosa toná»... relatadora de sublimes sentimientos de pena; si los mismos gitanos ignoran el significado de dicha palabra, y la confunden con «mentira» y «cosa falsa»; si para llegar a la formación del vocablo debla hemos de pasar por una serie de transformaciones fonéticas que no corresponden al desarrollo normal idiomático o dialectal (de «devi» «deva», de «deva», «debla»); si aún aceptando como posible esta filiación filológica, no le hallamos acomodó a las probables deidades del grupo gitano... ¿Por qué no renunciamos a esta gratuita radiación caló del vocablo debla y le buscamos ascendencia en nuestro propio idioma?\n\nEl «Poema de Alexandre», compuesto en el siglo XIII, incluye una palabra, hoy, naturalmente, en desuso, la «dobla», que analizada y traducida por López Chávarri en su interesante estudio «Música popular española», Collección Labor, 3.ª edición, Barcelona, 1958, página 76, viene a significar «canción».\n\n«Ally era la música cantada por [sazón], Las doblas que referen coytas del [corazón].»\n\n¿No podría venirle a esa mélan-cólica y bella toná el nombre de debla como una leve deforma-ción fonética, por andalucismo o gitanismo, de dobla o canción que refiere «coytas del corazón»? Un más detenido, documentado y autorizado estudio de esta hipótesis puede que nos encaminara a resolver este rompecabezas lingüístico.",
+    "title": "La debla",
+    "periodical": "candil",
+    "issue_id": "1989-09",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "11-11",
+    "page_number": 11,
+    "word_count": 654,
+    "article_char_count_full": 4046,
+    "article_char_count_review": 4046,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-09-12-left-xvii-congreso-nacional",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nLlegar a Jerez para asistir a un Congreso de estas características era para nosotros la más pura expresión de la felicidad. En efecto, quién discutiría a priori lo idóneo del lugar, solar acrisolado de esencias jondas? Como dijo uno de los congresistas, asistíamos todos un poco de puntillas, con ese reverencial misterio con el que se entra en las catedrales. Sin embargo... Era el día 13 de septiembre y ya el guarismo no nos gustaba... jlagarto, lagarto!\n\nLa noche anterior, en medio de las muestras de afecto y júbilo por el reencuentro que los congresistas manifestábamos, para mí lo más importante de estos acontecimientos, tuvo lugar la inauguración de la Exposición de bronces con motivos flamencos del extraordinario escultor Venancio Blanco, que ha sido uno de los pocos aciertos totales\n\n[EVIDENCE WINDOW 1 | retrieval_hint=COMM_02 | trigger=\"Peña\"]\n\ntrata del artista que con más primor, rabia y acierto ha plasmado en un soporte tan difícil como el bronce todo el misterio y trascendencia del flamenco. Los lectores de «Candil» conocen ya, a través de nuestras portadas, la enorme dimensión artística que comentamos. Esa noche el centro de Jerez bullió pero en silencio; pequeños grupos de amigos jondos degustábamos los caldos de la tierra, como lobos esteparios rondábamos por los aledaños de la Peña «Los Cernícalos» que esa noche, desgraciadamente, estaba cerrada. Todo eran promesas e ilusiones. A la mañana siguiente, o mejor dicho, dentro de unas horas, porque la madrugada nos amenazaba cada vez con más fuerza, estábamos seguros, iba a ser el gran día. Las añejas botas del flamenco jerezano se nos abrirían ¡ay! a los que sedientos veníamos desde tan lejos ansiosos de beberlo. 13 de septiembre: aciaga fecha que parecía simbolizar el resto de los males. Para empezar, los congresistas que habíamos hecho caso omiso a la templada calidez de las sábanas y a las diez en punto nos encontrábamos en el auditorio de la Caja de Ahorros de Jerez (lugar donde se celebraría todo el Congreso) nos encontramos con la desagradable sorpresa del incumplimiento absoluto de los horarios. A las once de la mañana, o sea, una hora más tarde de lo anunciado, empezó a constituirse la presidencia más larga que José Luis Buendía López (Enviado especial) uno haya contemplado en su ya dilatada existencia; veintitantos señores, todos con méritos indudables, la componían. Cuando, tras los discursos oficiales y la interpretación del Himno de Andalucía, nos disponíamos a votar la Mesa del Congreso, eran las doce y pico de la mañana. Dicha Mesa quedó integrada por Mariano Ruiz Carretero y Gonzalo Rojo, presididos por el veterano Antonio Alarcón, y su actuación ha sido una de las pocas cosas irreprochables del encuentro. Casi a la hora de cierre de la sesión matinal, Manuel Ríos Ruiz dio lectura a la primera ponencia, titulada: «Nuevas formas y tradic\n\n[ENDING CONTEXT]\n\nverdaderamente jerezano, nos ofreció la velada más agradable del Congreso, con una fiesta de baile y de cante similar a la que muchos esperábamos encontrar a diario en este acontecimiento. Cuando asistíamos más tarde a la pesadez insulsa de la XXII Fiesta de la Bulería, y entre ruidos y empujones asistíamos al naufragio de lo jondo, nos acordábamos del respetuoso silencio y la belleza sencilla de aquellos pasitos por bulerías con que los peñistas nos obsequiaron. Algo es algo. Lo de «Flamenco y Futuro» pertenece ya al pasado, ahora el futuro se llama Bada-joz. Hasta el Congreso que viene.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "XVII CONGRESO NACIONAL",
+    "periodical": "candil",
+    "issue_id": "1989-09",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "12-15",
+    "page_number": 12,
+    "word_count": 4405,
+    "article_char_count_full": 26984,
+    "article_char_count_review": 3620,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "COMM_02",
+        "family": "COMM",
+        "trigger": "Peña"
+      }
+    ]
+  },
+  {
+    "article_id": "1989-09-16-left-poema",
+    "article_text_for_review": "CANDIL Revista de Flamenco Peña Flamenca de Jaén 220\n\nGitana a la vera del mar\n\nLs tu pasión un apretado ramaje en donde se posan los pájaros de tus ojos.\n\nTu cuerpo unas olas al viento por donde se trasluce una barcaza con remos de almendros. Eres marinera entre el cante la primavera se te viene encima cuando los sueños son animados con las guitarras floreadas en ese tablado de arena que te abre la boca al compás del agua de ninguna parte agua que ciega tu piel con un beso prolongado de sal. Y yo te hago memoria cantaora a la vera del mar echándole aire a la luna cuando la flama del pueblo pone un mercadillo de soledades. Tu pregón —cante del universo—, se hace obelisco en el desierto cuando el espejo oscuro de tu raza grita tu paisaje cantaora, gitana, cantaora. cantaora a la vera del mar...\n\nJesús Cuesta Arana",
+    "title": "Poema",
+    "periodical": "candil",
+    "issue_id": "1989-09",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 153,
+    "article_char_count_full": 824,
+    "article_char_count_review": 824,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-09-16-right-coplas",
+    "article_text_for_review": "Serranas\n\nMi yegua pelitorda, trabuco y manta, mis mejores recuerdos, y mi sonanta. Que en la montaña, canté por serranas, con mi guitarra.\n\nEstrella de los cielos, que alumbras sola, te mando un «recordito» (pa) mi pastora. ¡Cómo la quiero! que por su personita, soy bandolero.\n\nDel cante por Serranas, son los pastores, los que dicen las coplas, de mil amores. Los bandoleros, se iluminan con lumbre, de los luceros.\n\nMe vienen persiguiendo, los migueles, se desboca mi yegua, como un torrente. Y entonces pienso: Si tengo buena jaca, no caigo preso.\n\nPaco Arana",
+    "title": "Coplas",
+    "periodical": "candil",
+    "issue_id": "1989-09",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "16-16",
+    "page_number": 16,
+    "word_count": 94,
+    "article_char_count_full": 564,
+    "article_char_count_review": 564,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1989-09-17-left-hacia-d-nde-vamos",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\na sugerencia vino de mi entrañable paisano y viejo amigo Pepe Blas Vega: Cómo entiendo será el futuro del Flamenco. El resultado de esta reflexión se daría al XVII Congreso de Actividades Flamencas.\n\nLo que a priori me pareció muy simple por tratarse de una cuestión coherente, a medida que transcurrían los días me iba resultando cada vez más enrevesado. La cortita frase de tres palabras futuro del flamenco produjo en mi mente una especie de laberinto, cuya salida no hallaba una vez que había entrado en él.\n\nEn desafío conmigo mismo me pareció lo más oportuno optar por plantarme ante mi propio devenir flamenco, tomando como base mi grado de iniciado en el arte para desde este punto exponer mis conjeturas básicas sustentadas con argumentos vistos ahora de cara hacia el futuro, de igual\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_01 | trigger=\"profundo\"]\n\no del flamenco produjo en mi mente una especie de laberinto, cuya salida no hallaba una vez que había entrado en él. En desafío conmigo mismo me pareció lo más oportuno optar por plantarme ante mi propio devenir flamenco, tomando como base mi grado de iniciado en el arte para desde este punto exponer mis conjeturas básicas sustentadas con argumentos vistos ahora de cara hacia el futuro, de igual forma que suele realizarse un estudio psicológico profundo que permite un poco aventuradamente determinar el fondo de lo que estás observando, emitiendo después un imparcial diagnóstico. Como el tema del cual se está tratando es objetivamente sobre el flamenco del futuro, parece más acertado decir premonición que diagnóstico. Voy, pues, a premonizar con mi más leal saber y entender sobre tan complejo tema, de la forma siguiente: Desde mediados del siglo XIX el cante ha venido evolucionando mediante manifestaciones estéticas y personales que el tiempo fue desgastando, las cuales fueron denominadas por los flamencos como escuelas o estilos, que en el fondo son prototipos de cantes y aires interpretativos consistanciales con el marco geográfico del cual surgieron, esto es, su lugar de origen. Así las cosas, sucedía que el cante ensanchaba su mundo e iba ampliando su gama merced a la muy estimada tarea artesanal del artífice cantaor, que aflamencaba con su más sentida pureza nuevas formas que en ocasiones eran derivaciones y en la mayoría de las veces bellos retazos extraídos del folklore o del cantable popular, que innegablemente la afición aceptaba sólo y exclusivamente si eran portadoras de marchamo flamenco, de acuerdo con los in\n\n[ENDING CONTEXT]\n\nmalagueñas, soleares, etc., etc., porque al final puede ocurrir que los buenos cantaores sean perjudicados, y los menos buenos beneficiados en el concurso.\n\n¡Ay, flamenco amado...! Cuánto nos entristece a quienes por ti sentimos un desvelo apasionado ver cómo te están inoculando unos gérmenes nocivos que te harán enfermo, de igual forma que le está ocurriendo a la capa ozónica con ese agujero que ya ha empezado a aquejarla, y que de no remediarse enfermará atrozmente a los habitantes de la Tierra.\n\nAPERITIVOS SELECTOS Especialidad en Plancha\n\nC/. Mesones, 18\n\nTeléfono 26 35 46\n\nJ A E N\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "¿Hacia dónde vamos?",
+    "periodical": "candil",
+    "issue_id": "1989-09",
+    "year": 1989,
+    "language": "es",
+    "article_type": "article",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 1865,
+    "article_char_count_full": 11687,
+    "article_char_count_review": 3267,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_01",
+        "family": "CRIT",
+        "trigger": "profundo"
+      }
+    ]
+  }
+]
+```

@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_02::A10",
+    "article_text_for_review": "A Brief Biography (from: Nuevo Andalucía, July 21 1978; The second in a six part series dealing with Manuel Torre; sent by Bettyna Belen; translated by Paco Sevilla.) By Juan de la Plata Juan de la Plata, in his book $ \\underline{\\text{Flamencos de Jerez}} $, tells us the following: \"Illustrious gypsy cantaor, son of an also great interpreter of the cante, Juan de Soto\" Era un día senalaíto de Santiago y Santa Ana; yo le rogue a Dios que le aliviara a mi mare las ducas de su corazón. It was a day to remember, the day of Santiago and Santa Ana; I pleaded with God for him to alleviate the suffering in my mother's heart. \"Manuel Torre sang of an anguished suffering that was inconsolable. His was a powerful suffering, terrible and cruel, that little by little brought illness into his chest.\" \"In Sevilla they baptized Manuel Soto Loreto with a new alias: 'Nino de Jerez'. And in Sevilla he made his home for many years, until the day of his death, July 21, 1933, on the small narrow Amapola Street. In that capital city, he achieved his greatest artistic triumphs and, from there, he went out to cut records and sing all over Spain. \"He was married (?) to the \"graciosa\" bailaora known as 'La Gamba'. In his last years he hardly ever performed in public. The last time he sang in Jerez was during the centennial celebration of the Bodega Domecq in 1930. \"When Manuel Torre died in Sevilla, surrounded by the greatest of miseries and his daughters, greyhounds and fighting roosters, his unique duende died with him: Cuatro soleares de luto, cuatro jípiosagoreros, cuatro siguiriγas negras iban formando el cortejo. Four soleares in mourning, four ominous \"jipiōs\" four black siguiriyas made up the funeral procession. \"His death was the sad epilogue of the finest period of the cantes of Jerez. To immortalize him, in November 1959, the government of his city of birth ordered a commemorative plaque placed on the house where he was born, at the request of the Catedra de Flamencología. TWO ANECDOTES I. The following anecdote is recalled by Pedro Camacho Galindo in his book, $ \\underline{\\text{Los Payos También Cantan Flamenco}} $: One day Manuel Torre, Don Antonio Chacón,",
+    "title": "MANUEL TORRE (biography)",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "22-23",
+    "page_number": 23,
+    "word_count": 376,
+    "article_char_count_full": 2182,
+    "article_char_count_review": 2182,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A11",
+    "article_text_for_review": "(from: $ \\underline{\\text{The News World}} $, Oct. 29, 1978; sent by La Vikinga and Roberto Reyes) By Arlene B. Isaacs To interview Carlos Montoya means to talk about flamenco. Music teachers and their influence are irrelevant. It is \"feeling\" that is omnipotent. Flamenco is gypsy and Montoya tells you that gypsies instinctively dislike musicologists, or for that matter, anyone who wants to capture for posterity the illusive quality of the art. Art is a personal expression of man's soul. In his living room, filled with casually placed awards and honors, hazel-eyed Montoya sat in an armchair. \"The young today play very well. But there are two ways to play the guitar: to play it or to make art with it. You must be born with this, this 'feeling.' \"My 'Suite Flamenco' I have performed dozens of times with symphony orchestras throughout the world. Recently in St. Louis for the seventh time. This month in Denver. No one has ever performed it but Montoya -- it is the expression of my soul.\" Born in Madrid 75 years ago, Montoya is a \"gitano por los cuatro costados,\" or, \"gypsy Will the maestro write a book? Smiling shyly he replied, \"Sally will write for me.\" Mrs. Montoya revealed, \"He often changes the order of themes and adds new variations.\" Montoya, who neither reads nor writes music, enlisted the help of Julio Esteban to write his \"Suite Flamenco.\" \"Each time he performs his 'Flamenco' he varies it according to the feeling he gets from the audience.\" she added. \"In the suite the solo guitar parts are taken from what I play and the orchestra parts are never out of character. I even have candzas where I can improvise, so long as I end with the same phrase to give the conductor his cue. This improvisation -- this is flamenco.\" \"Suite Flamenco\" is based on four traditional flamenco forms. It is the rhythm, the chord structure and the moods that are traditional. For example it is a tradition that the mood of the \"Taranta\" is sad; it is an outpouring of the soul, filled with pathos. Accordingly it is played in the minor keys. But, the melodies are original, they are Montoya's. Last year he made an album for Victor-Japan which will unfortunately not be released here. What's more most of his recordings are no FUTURE ISSUE, \"MORON DE LA FRONTERA\"? Sometime in the next few months Donn Pohren should be sending us his new book, which deals with his years in Morón, for us to review. When that happens, how about devoting the entire issue to Morón de la Frontera and the events that took place there from the late 1950's to the early 1970's? The issue could be dedicated to Diego del Gastor. We have been slowly gathering miscellaneous bits of information and photos. Readers can send in articles dealing with their experiences and the people they knew there. Photographs would be especially valuable (we can return them to you), and if anyone can come up with a good 5 X 7 or 8 X 10 photo of Diego del Gastor, we could use it on the cover. So, if you like the idea, get to work and start sending in material.",
+    "title": "FLAMENCO INCARNATE: CARLOS MONTOYA",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24-25",
+    "page_number": 25,
+    "word_count": 539,
+    "article_char_count_full": 3035,
+    "article_char_count_review": 3035,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A12",
+    "article_text_for_review": "by La Chiquitina The lights are dim. The forceful rhythm immerges as the guitar sadly cries out. An unintelligible utterance. A scream of anguish! A lamentable sob. The words penetrate with the guitar expressing longing, despair; yet pride. The electrically charged atmosphere is shattered... Que no suenen los clarines Que se doblen los capotes Que se pliegen las muletas y se fundan los estoques Que se ha muerto Manuel Rodríguez Que se ha muerto Manolete... The voice is hard and rough. The body is powerfully built. The face is proud. The man is the singer. The singer is Miguel Herrero. MIGUEL HERRERO (LEFT) AND ERNESTO HERNANDEZ, 1979",
+    "title": "MIGUEL HERRERO (biography)",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "26",
+    "page_number": 27,
+    "word_count": 107,
+    "article_char_count_full": 641,
+    "article_char_count_review": 641,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_02::A13",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nREVIEW: Juan Martín's Guitar Method, El Arte Flamenco de la Guitarra, United Music Publishers Ltd, 1 Montague Street, London, W. C. I. U. S. Distributor, Theodore Presser, Bryn Mawr, Pa., $24.95 (U. S.) By Jerry Lobdill (We thank $ \\underline{\\text{Guitar}} $ $ \\underline{\\text{Lute}} $ magazine for permission to reprint this article which appeared in their October, 1979 issue.) There has long been a need for a non-nonsense authentic flamenco guitar method book written specifically for those who have grown up in an English speaking country in a culture completely foreign to that of the flamencos. Until now all method books I have examined have been fatally flawed in some respect. Frequently the music presented is highly inferior to available recordings by professionals. Often the concept\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_02 | trigger=\"compás\"]\n\nn their October, 1979 issue.) There has long been a need for a non-nonsense authentic flamenco guitar method book written specifically for those who have grown up in an English speaking country in a culture completely foreign to that of the flamencos. Until now all method books I have examined have been fatally flawed in some respect. Frequently the music presented is highly inferior to available recordings by professionals. Often the concept of compás is not understood by the author or is not adequately explained and emphasized. Another frequent flaw is that unique flamenco techniques such as the various types of rasgueado, the alzapúa, the golpe and the five note tremolo are not clearly explained, and effective practice techniques for the development of playing skills are not covered in adequate detail. Methods written by guitarists who do not have a thorough knowledge of standard musical notation usually have serious inaccuracies in rhythm and unnecessarily complex concepts of compas and structure. The relationship of the guitar to the cante and baile is all too often only casually mentioned. These flaws are not to be found in $ \\underline{\\text{Juan Martin's Guitar Method}} $, $ \\underline{\\text{El Arte Flamenco de la Guitarra}} $. This new method is truly a remarkable achievement which will very likely beco\n\n[ENDING CONTEXT]\n\nSevilla</td><td>282-2837</td></tr></table> etc... THE BLUE GUITAR in San Diego carries books by Donn Pohren, Music by Mario Escudero and Sabicas, and a complete line of guitar supplies (strings $ \\frac{1}{2} $ price). Flamenco guitar lessons by Paco Sevilla. See ad for location GUITARISTS AND STUDENTS are welcome to accompany dance classes. Call Juana at 442-5362. BACK ISSUES OF JALEQ AVAILABLE: Vol.I No.1-6 are 1.00 each; all others, 2.00 each; add 1.00 per copy for overseas orders. BULK RATE U.S. POSTAGE PAID La Mesa California Permit 368 TIME VALUE RETURN POSTAGE GUARANTEED\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "JUAN MARTIN'S GUITAR METHOD",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_02",
+    "year": 1980,
+    "language": "en",
+    "article_type": "article",
+    "pages": "27-33",
+    "page_number": 28,
+    "word_count": 1559,
+    "article_char_count_full": 10285,
+    "article_char_count_review": 2944,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_02",
+        "family": "PED",
+        "trigger": "compás"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1980_03::A1",
+    "article_text_for_review": "In her early teens she began an era on the New York circuit, including Chateau Madrid, El Chico, and several other Hispanic clubs and theaters. Billed as the \"Dancing Demon from Spain\" she toured throughout the United States. Extensive touring outside of the U.S. enabled her to perform in Canada, Puerto Rico, and Mexico. Reviews have emerged expressing her performance with great enthusiasm. $ \\underline{\\text{The Newark}} $",
+    "title": "MARIA DEL CARMEN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_03",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "3",
+    "page_number": 3,
+    "word_count": 67,
+    "article_char_count_full": 427,
+    "article_char_count_review": 427,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

@@ -1,0 +1,178 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1983-09-14-right-algo-sobre-las-tarantillas-de-es",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nPor Antonio Piñana, padre, y Juan Ruipérez Vera\n\nN O nos resulta altamente sorpresivo el leer ciertas elucubraciones (y permitasenos el barbarismo) que se refieren, y quizás se desprenden, de nuestra afirmación al definir como TARANTILLA a esa extensa gama de cantes «menores» que se derivan de la Taranta, cante matriz propia del Campo de Cartagena y su sierra minera.\n\nDejaremos patente que esta «crítica constructiva» que se hace a nuestras ideas, investigaciones y conclusiones sobre la «categoría musical» de nuestros estilos mineros de Cartagena y La Unión, de las que, afortunadamente, nace una «CLASIFICACION» de estos cantes —clasificación que nadie, que nosotros sepamos, hasta hoy se ha atrevido a hacer—, aparece, la «crítica constructiva», en un artículo firmado por Esteban Bernal\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"mejor\"]\n\nlo firmado por Esteban Bernal Velasco en la revista GALERIA, número siete, dedicada como monografía al XXIII Festival Nacional del Cante de las Minas de La Unión. Vaya por delante que nosotros, a pesar de ser aludidos, aunque no nombrados con nombres y apellidos (?) —por aquello de que nosotros somos quienes mantenemos esta tesis de las «Tarantillas»—, sólo deseamos agradecer al señor Bernal su defensa al considerarnos profetas y genios (y a lo mejor, con perdón, al decirlo así nos estamos sobrevalorando) de este tiempo en una materia tan difícil como es el Arte Flamenco y dentro de él de los diversos estilos de cantes mineros de Cartagena y La Unión. Para comprobar lo dicho, primeramente transcribiremos textualmente algo de lo que se dice o se «critica» en el artículo del señor Bernal: «Ultimamente, como parece que los profetas y los genios abundan tanto como las langostas en verano de buen año, lo mismo que antes grabaron como minera un cante, ahora dicen que no son tales, sino tarantillas, vaya usted a saber qué es lo\n\n[EVIDENCE WINDOW 2 | retrieval_hint=AUTH_01 | trigger=\"De verdad\"]\n\nINERA» para que ésta no pueda ser llamada TARANTILLA?, o ¿el nombre de «MINERA» —refiriéndonos a un cante determinado—, así como suena, desde cuándo es conocido como tal?... Sinceramente, nosotros no queremos cambiar nada. Nosotros queremos dejarlo todo —algo más concreto— como está. Tampoco deseamos «olvidar» lo que un día, por necesidad, dijimos. Y tampoco queremos —ni mucho menos—hacer «oídos sordos» a lo que otro día grabáramos como MINERAS. De verdad, nosotros queremos, aunque no se entienda, aportar datos suficientes que sirvan para ir construyendo la todavía no escrita historia de nuestros cantes mineros de Cartagena y La Unión. Nosotros, fundamentalmente, no deseamos «enterrar» ningún cante, ningún estilo o el nombre genérico mediante el cual se le conoce; a pesar de que, y esto no hay que olvidarlo, el nombre genérico de «MINERA», por ejemplo, sólo tenga veintí-trés (XXIII) años de exist\n\n[EVIDENCE WINDOW 3 | retrieval_hint=PED_03 | trigger=\"interpretaciones\"]\n\nMinera», estilo muy impues to por estos lares al ser la modalidad que asiduamente se ha venido —y se viene— premiando en el Festival Nacional del Cante de las Minas de La Unión. Ahora bien, ante lo dicho es necesario hacer una aclaración: la MINERA que, en la mayoría de los casos, se viene premiando en el Festival Nacional del Cante de las Minas de La Unión, corresponde a este grupo —tan singular— de seudocantes mineros por constituir, diversas interpretaciones de esta modalidad, una versión «mal copiada» de un original existente y grabado (El Taleguico y El Carburico) por Antonio Piñana, padre (coautor del presente artículo). Consideramos, a la vista de lo dicho y por sensatez, que nuestro aserto y nuestras palabras no tendrían valor si ellas no estuvieran apoyadas por una documentación real; documentación que está, ¡afortunadamente!, al alcance de cualquiera que desee, de verdad, introducirse en est\n\n[ENDING CONTEXT]\n\nWeglison, 9\n\nJ A E N\n\n34 ___\n\nSombras movedizas y burbujas de pena estallando al oxígeno solar.\n\nSombras movedizas y tenebrosas luces soñando con la lenta oscuridad.\n\nUn eco, octava plomiza aferrándose a la rocalla,\n\nlevanta un compañero electrizado por fluorescente mineral en verdor de antorcha...\n\nPasos de invertebrados sones deslizándose por entre angostos corredores.\n\nCrisálidas diariamente vestidas de noche\n\ncon dentro del corazón una astilla de poema dentro del gesto un llanto de amor dentro de la mirada un tacto de ciego con\n\nen la garganta un cante de mina.\n\nFrancisca Gerardín\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Algo sobre las tarantillas de estilos mineras Ellos, los protagonistas, Carlos Cruz",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "14-18",
+    "page_number": 14,
+    "word_count": 5306,
+    "article_char_count_full": 31187,
+    "article_char_count_review": 4620,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "mejor"
+      },
+      {
+        "window": 2,
+        "retrieval_hint": "AUTH_01",
+        "family": "AUTH",
+        "trigger": "De verdad"
+      },
+      {
+        "window": 3,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "interpretaciones"
+      }
+    ]
+  },
+  {
+    "article_id": "1983-09-19-left-victoria-de-miguel-chequeo-grafo",
+    "article_text_for_review": "Chequeo Grafológico\n\nA firma y rúbrica de cuatro personajes importantes de la historia del Flamenco, extraídos del archivo de Yerga, que nos han sido facilitados por nuestro colaborador, son, acaso, un dato irrelevante en la estimable bibliografía que sobre Silverio Franconetti, Antonio Chacón, Pepe Marchena y Antonio Mairena, ya existe. No hemos, sin embargo, resistido a la tentación de someter estas firmas y rúbricas a un chequeo grafológico. Damos fe de que la persona que ha dictaminado desconocía, hasta el momento de consumar este trabajo, la significación artística de los representados por tales firmas y rúbricas. Sorprende, cuando menos, la coincidencia entre los rasgos caracterológicos registrados en el dictamen y los datos personales que en algunos casos ya conocemos, históricamente, de estos cuatro artistas desaparecidos.\n\nNOTA DE LA REDACCION\n\nSILVERIO FRANCONETTI\n\nSociabilidad pulcra con aire un tanto diplomático. Amabilidad altiva. Selección meticulosa de los amigos. Autodisciplina. Tendencia al idealismo y a la vida intelectiva. Intuición y subjetivismo que, a menudo, se orientan hacia el campo del misticismo, de la especulación filosófica o de la creación artística. Seguro de sí mismo y afianzada personalidad. Sentimentalidad romántica. Sentido de comunidad muy partidista. Persona dominada por un extraordinario subjetivismo y propensa a caer en estado de angustia. Tiene frecuentes presentimientos y es muy profundo su sentido místico de las cosas. Hogareño, íntima vinculación con los propios familiares. Sociabilidad bien canalizada. Los sentimientos imperans sobre la razón. Afan de éxito. Ambicioso, que no pierde las ilusiones.\n\nJOSE TEJADA (PEPE MARCHENA)\n\nDenota un sentido anárquico y agresivo frente a la sociedad. Tendencia a las situaciones incoherentes. Escaso dominio de sí mismo. Actitudes poco uniformes en la forma de proceder. Carácter de lucha entre dos tendencias. Temperamento instintivo. Afan de simplificar las cosas. Espíritu práctico, inteligente y vivaz. Agudez de pensamiento. Dinamismo y sentido de la oportunidad. Educación rudimentaria. Poca ductilidad en la forma de proyectarse socialmente. Gusto poco matizado. Cultura de estructura simple y primaria. Sobreestimación de la propia personalidad. Afan de méritos. Orgullo de la posición social.\n\nANTONIO CHACON\n\nSentido del pasado. Proceder objetivo y sentido de la acción y la actividad. Temperamento muy instintivo. Seguridad en las propias determinaciones. Seguro de sí mismo. Espíritu agresivo. Oculta mucha astucia y sutileza bajo una capa aparentemente tosca y mordaz. Carácter resuelto y decidido en su forma de obrar. Fuerza de voluntad y criterio propio. Actitudes de persona que sabe luchar para abrirse camino. Sentido de responsabilidad y capacidad de dominio. Energía de proceder. Reacciones muy razonadas y reflexivas, aunque es de fondo intransigente y de inclinación obstinada. Sentido de lo justo y tendencia hacia la moderación y la discreción en la forma de proceder. Su estado de ánimo no sufre alteraciones muy acusadas. Le concede mucha importancia a la familia y al hogar y gusta rememorar su infancia.\n\nANTONIO MAIRENA\n\nSeguro de sus méritos y personalidad. Hombre que se siente triunfador. Carácter de ostentación. Teatralidad en sus actitudes, incluso en los momentos de sinceridad busca el efectismo escenográfico. Las apariencias le seducen. Fuerte temperamento. Intima vinculación con los propios familiares. Sensibilidad. Sin grandes alteraciones en el estado de ánimo ni hacia el pesimismo ni hacia el optimismo. Algunas oscilaciones en su emotividad. Sentido del pasado. Viva afición a rememorar la vida de otros tiempos. Amor a la Historia y marcado interés en los asuntos de la propia patria. Complacencia en sí mismo, sin caer en exageraciones. Justo sentido de la propia importancia. Inteligencia muy intuitiva. Originalidad y fuerza creadora. De juicios muy elaborados. Tendencia al análisis y a la indagación. Gran capacidad de razonar pero de débil impulso para la acción. Gran capacidad de trabajo y con gran rendimiento en los momentos de brillantez intuitiva, pero con poca continuidad en la tarea.",
+    "title": "Victoria de Miguel Chequeo grafológico",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 617,
+    "article_char_count_full": 4156,
+    "article_char_count_review": 4156,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-09-19-right-las-letras-flamencas-de-jos-s-nc",
+    "article_text_for_review": "LAS LETRAS FLAMENCAS DE JOSE SANCHEZ DEL MORAL\n\nLa taranta de Linares es un cante por derecho que ha nació de pesares, fatiguitas en el pecho y corazón de puñales.\n\nSi yo fuera marinero escribiría en mi barca el mar que te estoy queriendo.\n\nQue hasta el más impío llora, ¡Ay! Dios, qué tiene el Abuelo cuando al subir la Carrera lo mecen los costaleros.\n\nNacieron con mucha suerte y el pan debajo del brazo pero el amor y la muerte a tos termina igualando.\n\nTiene Jaén un Castillo que guarda el Guadalquivir de los moros granadinos.\n\nQué mal tiene esa mujer que a Dios canta por saetas y se queja de un querer.\n\nSi Paco el del Puente pasa, la gente empieza a dudar si es que una juerga comienza o acaba de terminar.\n\nQue yo te vea la cara y me lo dices de frente porque si aquí veo mentira aquí te hago una muerte.\n\nMi prima Dolores guarda. un cante por soleá y hasta que no la enamore me ha jurado no cantar.\n\nFatigas de cuerpo y alma te tienen hecha una cruz, o al Abuelo haces promesa o te vas a Jabalcuz.",
+    "title": "Las letras flamencas de José Sánchez del Moral",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "19-19",
+    "page_number": 19,
+    "word_count": 196,
+    "article_char_count_full": 1008,
+    "article_char_count_review": 1008,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-09-20-left-de-qu-enfermedad-mueren-nuestros",
+    "article_text_for_review": "Por M. Yerga Lancharro\n\nEstimados lectores de CANDIL, la causa del óbito la transcribo literalmente de las actas de defunción que obran en mi archivo. Por no hacer demasiado extensa la relación me limito a relacionar los siguientes por orden alfabético.\n\nBar TOMAS\n\nAPERITIVOS SELECTOS\n\nEspecialidad en\n\nPLANCHA\n\nMesones, 18\n\nTeléf. 23 40 46",
+    "title": "¿De qué enfermedad mueren nuestros artistas?",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "20-20",
+    "page_number": 20,
+    "word_count": 54,
+    "article_char_count_full": 341,
+    "article_char_count_review": 341,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1983-09-21-left-cayetano-muriel-ni-o-de-cabra",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nD E nombre Cayetano, Vicente, Rafael de la San-tísima Trinidad Muriel, nació en Cabra de Córdoba el 13 de agosto de 1870 (don José Morales cita la fecha del 7 de agosto de 1860). Fue bautizado al día siguiente en la Iglesia Parroquial de Ntra. Sra. de la Asunción de dicha localidad. Su niñez transcurrió en la famosa calle de La Cruz, en la cual nació. Contrajo matrimonio en Benamejí en julio de 1896 con una nativa de dicha ciudad, conformando un matrimonio numeroso en vástagos. Cayetano Muriel «Niño de Cabra» residió desde su casamiento en Benamejí, pueblo donde murió el 10 de mayo de 1948 tras 60 años de cante, único medio de vida que tuvo el artista.\n\nPor la fecha de su nacimiento, Cayetano Muriel pudo convivir con grandes figuras del arte flamenco como Enrique «El Mellizo», «La\n\n[EVIDENCE WINDOW 1 | retrieval_hint=CRIT_03 | trigger=\"mejor\"]\n\niel «Niño de Cabra» residió desde su casamiento en Benamejí, pueblo donde murió el 10 de mayo de 1948 tras 60 años de cante, único medio de vida que tuvo el artista. Por la fecha de su nacimiento, Cayetano Muriel pudo convivir con grandes figuras del arte flamenco como Enrique «El Mellizo», «La Serneta» o Juan Breva. De raza paya, demostró sus inigualables condiciones como cantaor en los estilos malagueños y levantinos. Está considerado como el mejor intérprete de los fandangos de Lucena —aprendidos, según propia declaración del maestro a Aurelio Sellé, del viejo Rivas— y dominador de los estilos sobrios y profundos como la caña, soleá, siguiriya, tientos, etc. Según Ricardo Molina, en su libro «Cante y cantaores cordobeses», dice: «Y es curioso repasar en el hecho de que el arte de Cayetano recibe las mismas influencias que se conjugan en su comarca natal: los influjos del folklore levantino aflamencado, el malagueño y el granadino, es especial. Por esto fue Cayetano un formid\n\n[ENDING CONTEXT]\n\nadoramos, se ha dicho, a través de algunos medios de comunicación, que naciste el día 4 de septiembre de 1909, y yo tengo que rebatir diciendo que viniste a este mundo el día 5, coincidiendo con la fecha de tu fallecimiento. No obstante, querido don Antonio, voy a investigar en el Registro civil y en la Iglesia, por si se produjo error en la expedición del acta de tu bautismo.\n\nQue descanses en la Paz del Señor es lo que deseo.\n\nNo dudo que te habrá acogido con el cariño que El suele recibir a sus hijos preferidos.\n\nNosotros aquí, en este perro mundo, jamás te olvidaremos.\n\nM. Yerga Lancharro\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Cayetano Muriel «Niño de Cabra»",
+    "periodical": "candil",
+    "issue_id": "1983-09",
+    "year": 1983,
+    "language": "es",
+    "article_type": "article",
+    "pages": "21-22",
+    "page_number": 21,
+    "word_count": 2201,
+    "article_char_count_full": 13213,
+    "article_char_count_review": 2612,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "CRIT_03",
+        "family": "CRIT",
+        "trigger": "mejor"
+      }
+    ]
+  }
+]
+```

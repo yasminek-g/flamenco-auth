@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "1990-05-23-right-de-juan-breva",
+    "article_text_for_review": "C on motivo de haberse cumplido recientemente (8 de junio) setenta y dos años de la muerte de Antonio Ortega Escalona «Juan Breva», reseño a continuación su obra discográfica que, para la biografía del genial cantaor veleño, me facilitó en su momento el buen amigo y aficionado Andrés Sarria.\n\nEn 1910, para la International Zonophone Company, dependiente de la Cía. Francesa del Gramophone, impresionó cinco discos de doble cara, etiqueta roja, junto a otros artistas de la talla de La Niña de los Peines, Niño de la Isla, Niño de las Marianas, Fernando el Herrero, etc. Curiosamente todos estos cantaores grabaron series de diez discos, mientras que el Breva, como queda dicho, hizo sólo cinco. Fueron estos: Estos diez discos pasan en 1914 al sello Gramophone, figurando en la etiqueta el perrito de La Voz de su Amo y dependiendo igualmente de la Cía. Francesa del Gramophone. Continúan inalterables los números de matriz, la duración y la etiqueta roja. Cambian los números de catálogo y quedan de la siguiente forma:\n\nEl año 1916 tiene lugar una nueva tirada de los cinco discos con los mismos números de referencia de 1914, es decir, los 3-62..., pero cambia la etiqueta que pasa a ser de color verde. El disco permuta también la marca Gramophone por la de Gramófono, que es dependiente ya de la Cía. Española del Gramófono.\n\nEsta situación se mantiene hasta 1922 en que son nuevamente lanzados al mercado bajo la misma marca Gramófono, etiqueta verde. En esta nueva reedición no aparece el disco número 2 (FANDANGUILLOS-VERDIALES), siendo los nuevos números de referencia los siguientes:\n\nEl año 1924 desaparece el disco número 1 (AE-746) de la anterior relación, quedando sólo tres en catálogo, y así vuelven a reeditarse en 1926, desapareciendo definitivamente el año 1927, ya que la Cía. Española del Gramófono, al incorporar las nuevas técnicas de grabación eléctrica a sus discos, quita de la circulación todos los discos mecánicos que aún quedaban en sus catálogos, respetando sólo una pequeña parcela denominada «grabaciones históricas», a la que el flamenco no debió tener acceso, ya que en élla encontramos nada más que discos de ópera.\n\nAunque en 1927 la Cía. Española del Gramófono hiciera desaparecer de sus catálogos los discos de Juan Breva, éstos seguirían vendiéndose en los comercios de música, al menos, mientras existiera mercancía, por lo que podemos asegurar que sus grabaciones estuvieron vendiéndose alrededor de veinte años.\n\nLa guitarra acompañante de todas las ediciones, aunque no se especifique en las etiquetas, fue la de Ramón Montoya, existiendo una segunda guitarra, perceptible en las grabaciones de buen uso, del propio Juan Breva.\n\nFinalmente, a título de curiosidad, indicar que en todos los discos de todas las épocas y referencias, su nombre figura en las etiquetas como JUAN BREBA.",
+    "title": "Discografia de Juan Breva",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "23-23",
+    "page_number": 23,
+    "word_count": 460,
+    "article_char_count_full": 2828,
+    "article_char_count_review": 2828,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-05-24-left-jugando-al-despiste",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nC on el fin de este siglo está desapareciendo una forma de arte flamenco; lo que algunos aficionados y estudiosos llaman «la pureza» (concepto de extraña aplicación a un arte tan mezclado).\n\nLa verdad es que hasta hace poco se cantaba y bailaba por motivaciones bien distintas. Ya lo dijo Pepe Marchena: «Tó el que canta bien por soleá y por seguiría lleva un remiendo en los calzones...». Y así se nos fueron muriendo, entre la miseria y la indiferencia, los genios flamencos del siglo: Manuel Torre, Tomás Pavón, Pastora, El Gloria... y no hace muchos años los últimos eslabones de la cadena gitana: Juan Talega, Diego del Gastor, Mairena, Terremoto, Tío Gregorio Borrico, Tía Anica... ¿Qué nos queda de esa época? Me temo que sólo Perrate y Fernanda en su soledad de Utrera.\n\nCon la llegada de\n\n[EVIDENCE WINDOW 1 | retrieval_hint=HERIT_03 | trigger=\"representación\"]\n\na miseria y la indiferencia, los genios flamencos del siglo: Manuel Torre, Tomás Pavón, Pastora, El Gloria... y no hace muchos años los últimos eslabones de la cadena gitana: Juan Talega, Diego del Gastor, Mairena, Terremoto, Tío Gregorio Borrico, Tía Anica... ¿Qué nos queda de esa época? Me temo que sólo Perrate y Fernanda en su soledad de Utrera. Con la llegada de los festivales flamencos y los espectáculos de masas, se inicia la época de la «representación» del flamenco. Se canta por dinero, como profesión, y los jóvenes «recrean» viejos estilos, viejos poemas que ya no sienten, pero que reproducen. Sin embargo el arte flamenco, en este breve período de tiempo, ha tenido fuerzas para conmover espíritus alrededor de todo el mundo. La única escapada posible de los músicos jóvenes está en la evolución, en la investigación de otros campos poéticos y musicales, respetando siempre la métrica inflexible de los estilos flamencos. Camarón está entre esa vanguardia de artistas que están ampliando el ámbito de este arte, haciéndolo más inteligible a los aficionados de todo el mundo. Los camaroneros de hoy buscarán mañana las escasas grabaciones de los viejos cantaores, y comprenderán que el tiempo histórico de la toná y la seguiriya estaba tocando sus últimos compases. El futuro del flamenco no ha hecho más que empezar. R. Pachón Comienza el señor Pachón guillotinando gratuitamente lo que tanto tiempo, desvelos y dificultades ha costado a no pocos entusiastas, para poner alguna luz al tema del Cante Fla\n\n[ENDING CONTEXT]\n\nmañana». Espero que lo hagan no mañana, ya, pues sin esta referencia del pasado difícilmente puede tenerse una clara visión de la actualidad. «Y comprenderán que el tiempo histórico, etc., etc...». Si son sensibles e inteligentes, y así lo espero, comprenderán que usted trata de despistarles con términos agoreros y pseudoproféticos, augurando la muerte de dos cantes, la toná y la siguiriya, donde ¡qué casualidad!, hasta ahora no ha descollado precisamente su ensalzado intérprete. Ah, creo que la policía montada del Canadá toca muy bien por soleá. Puede ser una idea para futuras grabaciones.\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "Jugando al despiste",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "24-24",
+    "page_number": 24,
+    "word_count": 1103,
+    "article_char_count_full": 6580,
+    "article_char_count_review": 3153,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "HERIT_03",
+        "family": "HERIT",
+        "trigger": "representación"
+      }
+    ]
+  },
+  {
+    "article_id": "1990-05-25-left-buz-n-flamenco",
+    "article_text_for_review": "Estimado Sr. Presidente de la Peña: Le saludamos atentamente. Soy un profesor de Lengua Española de Bachillerato. Hace años que me embruja el Flamenco y es mi intención investigar sus esencias perdidas y, por otro lado, difundirlo entre mis alumnos.\n\nPrecisamente hace meses que vengo investigando acerca de los palos o estilos flamencos perdidos o, al menos, en desuso hoy día, de los que le ofrezco una lista extensa. Mi labor de búsqueda individual se ha visto respaldada ahora por la de tres de mis alumnos, a los que la Junta de Andalucía les ha aprobado un proyecto, coordinado por mí, titulado «Formas flamencas olvidadas».\n\nPor ello, queremos entrar en contacto con todos los aficionados y entendidos en el tema flamenco, con el deseo de que amablemente puedan ayudarnos, cada cual con su granito de arena, en esta tarea de recuperación de estilos perdidos y olvidados.\n\nNos ponemos en comunicación ahora con usted para rogarle que dé la máxima publicidad a esta nota y para pedirle que nos remita cuantos datos sobre esos estilos perdidos pueda, tanto usted como los socios de la peña, los aficionados del pueblo, los cantaores, etc.\n\nEn caso de que en la zona en que usted vive existan restos —ya a punto de perderse— de ciertos cantes como, por ejemplo, la gañana o la temporera, la roá o la pajarona, cantados directa y cotidianamente por los aficionados en sus tareas o en sus fiestas, nos alegraría que nos mandase una grabación o bien que nos informase sobre dónde entrar en contacto con esas personas y cómo o cuándo poder visitarlas.\n\nNos anima a todos el amor al Flamenco. Esta es la lista de los estilos menos usuales o perdidos ya. Rogamos información que no venga en la bibliografía al uso (F. Grande, M. Ríos Ruiz, M. Barrios, C. Donald, etc.), sino la que recoja sobre todo la tradición en su zona, la que pueda ser difícil encontrar en las obras de flamencología ya conocidas.\n\nEn la lista que adjuntamos hay estilos perdidos, otros poco oídos hoy día. En cualquier caso, nos interesa ahondar en el\n\nEn el número 66 de «Candil», mi amigo Manuel Yerga Lancharro indica que en una entrevista que junto a Manuel Herrera hacíamos al cantaor Angel de Alora, dije que el Corruco no era de Algeciras, sino de Fuengirola. Efectivamente eso dije. Por fuengiroleño se le tenía por estos pagos y así me lo habían comentado varios familiares.\n\nPero, al tener en mi poder la copia literal de su partida de bautismo, rectifico en el sentido de que José Ruiz Arroyo nació el 22 de enero de 1910, en La Línea de la Concepción, siendo bautizado ocho días después en la parroquia linense de la Inmaculada Concepción.\n\nSi él no fue malagueño, sí lo fue su padre Miguel Ruiz García, nacido en Fuengirola, y sus abuelos paternos José Ruiz y Salvadora García, de la misma naturaleza, según consta en el citado documento. Tal vez por ello, durante mucho tiempo se le tuvo por malagueño.\n\nY puestos a seguir con los datos de Corruco, indicar a mi amigo Yerga que no murió en 1937, como señala en el citado artículo de «Candil», ya que, según el certificado de defunción del Registro Civil de Balaguer, que adjunto a esta contestación, falleció en «campaña, el 11 de abril de 1938, a las veinte horas, a consecuencia de heridas de fusil».\n\nEsperando sirva esto para también enderezar entuertos, les saluda atentamente,\n\nGonzalo Rojo Guerrero\n\nfalleció en(4)___ el día ___\n\nhabiéndola presenciado como testigos don.\n\n— Alboreá\n\n— Andandito.\n\n— Arabica.\n\n— Arriera.\n\n— Bambera.\n\n— Bandolá.\n\n— Bezanera.\n\n— Bolera.\n\n— Cabales.\n\n— Cachucha.\n\n— Calesera.\n\nCaracoles.\n\nCaravana.\n\n- Chufla.\n\n- Danzón.\n\nGalera.\n\nGañana.\n\nGarrotín.\n\n- Huertana.\n\n— Ida y vuelta (vidalita, milonga, guajira, rumba, colombiana, habanera, danzón, punto cubano y triste; algunos se oyen hoy, como la colombiana, mucho de nue\n\n— Jabegote.\n\n— Serenata.\n\n— Jabera.\n\n- Jácara.\n\n— Jaenera.\n\n— Serrana.\n\n— Jarcha.\n\n— Juguetillo.\n\n- Tana.\n\n— Juncal.\n\n— Madrugá.\n\n— Tanguillo.\n\n— Sexta.\n\n— Marengos.\n\n— Marina (?)\n\n— Mariana.\n\n— Sombrerito.\n\n— Temporera.\n\n— Mayo o maya.\n\n— Manchegas.\n\n— Lamento minero.\n\n— Minera.\n\n— Levantica.\n\n— Liviana.\n\n— Mojiganga.\n\n— Mirabrás.\n\n— Lorqueña.\n\n— Macho.\n\n— Morería.\n\n— Tirana.\n\n— Mosca.\n\n— Torrijos.\n\n— Trilleras.\n\n— Triste.\n\n— Verdiales.\n\n— Villancico.\n\n– Zambra.\n\n- Zángano.\n\n— Zapateado.\n\n— Zarandeo.\n\n— Zarandillo.\n\n- Zéjel.\n\nFirman: José Cenizo Jiménez, coordi- nador,\n\nMarcos Borrego\n\n— Zorongo.\n\nDe nuevo le agradecemos su colabora- ción dándonos algún dato discográfico, bi- bliográfico o vivencial novedoso sobre estos estilos, sobre todo de aquéllos que a ustedes y a nosotros nos resultan más inusuales.\n\nUn saludo cordial y cabal.\n\nEnrique Rodríguez,\n\ny Fco. Manuel García\n\nAvda. de la Paz, 59, 6.º C Teléf. (95) 4612045 - 41013 Sevilla\n\nNiño Jorge\n\nRepresentante:\n\nJ. A. Pulpón\n\nEspectáculos Internacionales\n\nO'Donell, 3.°-A, piso Teléfs. 222058 - 216920 Particular: 228078 41001 SEVILLA",
+    "title": "Buzón flamenco",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "25-25",
+    "page_number": 25,
+    "word_count": 821,
+    "article_char_count_full": 4899,
+    "article_char_count_review": 4899,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-05-26-left-discografia",
+    "article_text_for_review": "Manuel Yerga: Discografia flamenca (placas)\n\nAna Parrilla. Nombre artístico de Ana Fernández Molina. Jerez de la Frontera (Cádiz), 1953. Nieta de Juanichi «El Manijero», hija de Tío Parrilla, sobrina de El Borrico y El Sernita, y hermana de los tocaores Juan Parrilla y Parrilla de Jerez. En 1984 obtuvo la Copa Jerez de la Cátedra de Flamencología y Estudios Folklóricos Andaluces, año en el que actuó en la II Bienal de Sevilla. Entre sus actuaciones es de destacar su participación en la III Cumbre Flamenca de Madrid, en 1986, acompañada a la guitarra por sus hermanos y con el cante de Antonio de Malena.\n\nDestaca por la elegancia y majestad que imprime a sus interpretaciones.\n\nEstá considerada una de las figuras más relevantes de su arte.\n\nAna Parrilla",
+    "title": "Discografia",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-27",
+    "page_number": 26,
+    "word_count": 128,
+    "article_char_count_full": 760,
+    "article_char_count_review": 760,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "1990-05-26-right-premium-iben-alcazar-premium-cri",
+    "article_text_for_review": "Si señor. Si ha pedido una cerveza Alcázar: ¡bien hecho!, Porque va a saborear una cerveza fresca, con cuerpo, en su punto. Una cerveza elaborada con las mejores cosechas de lúpulo y cebada, siguiendo la tradición de nuestros maestros cerveceros. Una cerveza que mantiene todo su aroma, porque va,\n\ncomo quien dice, de la fábrica directamente al consumidor. Si pide cerveza Alcázar, ¡bien hecho!. Disfrutará de una cerveza bien hecha.",
+    "title": "PREMIUM IBEN Alcazar premium CRIVEZA LORICINA HECHO!",
+    "periodical": "candil",
+    "issue_id": "1990-05",
+    "year": 1990,
+    "language": "es",
+    "article_type": "article",
+    "pages": "26-26",
+    "page_number": 26,
+    "word_count": 70,
+    "article_char_count_full": 434,
+    "article_char_count_review": 434,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```

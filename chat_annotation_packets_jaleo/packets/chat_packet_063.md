@@ -1,0 +1,159 @@
+Annotate the following flamenco periodical articles using the collapsed codebook.
+
+Be conservative. Prioritize precision over recall.
+
+Rules:
+- Annotate only the visible article_text_for_review.
+- Do not infer from title, metadata, periodical, author identity, or missing text.
+- Default to 0–3 codes per article.
+- Use 4–6 codes only when clearly distinct evidence spans support different discourse functions.
+- Never assign more than 6 codes.
+- Do not emit low-confidence codes.
+- Keywords are not enough. A code requires a discourse function: the passage must evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority.
+- Every emitted code must include family, code, confidence, evidence_quote, target, and rationale.
+- If no code is clearly supported, return codes: [] and no_relevant_discourse: true.
+- If the text is too short, OCR-damaged, or insufficient for judgment, set insufficient_context: true.
+- Put weak or ambiguous possibilities in possible_but_not_emitted, not in codes.
+
+Allowed families and codes:
+AUTH: AUTH_01, AUTH_02, AUTH_03, AUTH_04
+HERIT: HERIT_01, HERIT_02, HERIT_03
+PED: PED_01, PED_02, PED_03
+COMM: COMM_01, COMM_02, COMM_03, COMM_04
+CRIT: CRIT_01, CRIT_02, CRIT_03, CRIT_04
+
+Return valid JSON only, as an array with one object per article_id:
+
+[
+  {
+    "article_id": "...",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "...",
+        "target": "...",
+        "rationale": "..."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating | delegitimating | contested | mixed | neutral | unclear",
+      "basis": ["authenticity"],
+      "target": "...",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]
+
+---
+
+Articles:
+
+```json
+[
+  {
+    "article_id": "JALEO_1980_01::A14",
+    "article_text_for_review": "by George Gomez I first heard about Edward Freeman in San Antonio, Texas, in the summer of 1960. I had just graduated from high school and had been playing guitar for about six months. As fate would have it, I was soon to be introduced to flamenco music and, eventually, led to study with maestro Freeman. Very unsuccessfully, I had been fiddling around with various guitar styles and trying to accompany myself while singing rock and roll and Mexican country songs. One day a friend of mine asked me over to listen to a guitar record he was very excited about. As I listened to this record of Bernabe de Morón, I was immediately taken in by the exotic, Moorish flavor of the music and, then and there, I started my search for a good flamenco method book or teacher from whom to learn this fascinating \"arte\". Eventually, I found a little cafe where El Curro was playing in a romantic, outdoor atmosphere. It was through Curro that I first learned about Edward Freeman. Curro was very much impressed with what he had heard about Freeman, and one of his dreams was to study with the famous teacher someday. He left me with the mistaken impression, however, that one had to be an advanced student before going to the maestro; so I didn't think of studying with Freeman then. Besides, Dallas was too far away. When fall arrived, I went off to school at the University of Texas. I started taking lessons from a guitarist named David Senechalle, who was originally from Chicago. He had also heard about Edward Freeman and one year later, he asked if I wanted to share gas expenses to drive to Dallas and study with Mr. Freeman. I agreed and was very excited to begin my studying with the man I had heard was such an excellent teacher of flamenco. I remember a couple of things about my first lesson. One, I could hardly move my right thumb since I had injured it the day before playing touch football (that, by the way, was the last time I played touch football). Secondly, I was very impressed with the whole \"ambiente\" in the Freeman house- Ed never competed with us as a performer but preferred to leave the performing to us \"kids\". He suffered from arthritis and couldn't move his right hand very well. He always kiddingly but proudly bragged about his left hand, though. He had been a \"fiddle player\" as he called himself, and still had tremendous dexterity in his left hand fingers. As a matter of fact, I still love to listen to Ed play the violin. A story about Eduardo Freeman would not be complete without saying something about two other Freemans -- Maureen and Anne. Maureen is Ed's wife and, it seems to me, his perfect companion. She is a delightful person with a beautiful Irish wit and sense of humor. She is a lively, petite lady, always full of life, love and energy. Maureen warms the Freeman household and always makes you feel right at home. She's a fantastic story-teller and conversationalist. Where Ed talks about London or Spain or the intricacies of flamenco playing or guitar building, Maureen tells about her trips to Mexico and South Texas, always spiced with humorous, witty and perceptive anecdotes. Anne, their daughter, is also a unique and charming person but in a more serious, intellectual and artistic way. She is an excellent pianist and holds a doctorate in English literature. She is a quiet and reserved person who loves to sit around drinking wine and listening to good flamenco or classical music, or having an in-depth discussion on art, politics, etc. The last time I saw Anne she was writing an annotated bibliography of Joseph Conrad. She is a very generous individual who always gives more than she asks for. I spent many years in the Freeman household, sharing good times and learning about flamenco, and I also learned a great deal about life from all the Freemans. Ed counseled me and set me straight many times along the way. Maureen enriched me with her stories and her good food, while Anne was an inspiration on the more artistic, subtle areas of life. I recently saw all three after an absence of almost ten years. It was like old times, the same joyful atmosphere. I went with Ed and watched him tune a piano and then went home with him to shoot several games of pool in his dining room. Yes, Ed built a dining room table that converts into a pool table. Needless to say, Ed is very handy with wood. In addition to building the pool table, he has built many other pieces of",
+    "title": "A PORTRAIT OF ED FREEMAN",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_01",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "17-18",
+    "page_number": 17,
+    "word_count": 793,
+    "article_char_count_full": 4425,
+    "article_char_count_review": 4425,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_01::A15",
+    "article_text_for_review": "by Tom Cotton To study Flamenco guitar with Ed Freeman is to engage in a very carefully developed and highly efficient process designed to transmit a maximum of information and understanding in a minimum amount of time. There are no limits on the speed with which a student can progress except his willingness to work and his ability to absorb the material. Ed has been a professional musician literally since childhood, and his approach to teaching Flamenco shows it. To begin with, he insists that his students learn to read standard music notation starting with the first lesson, a requirement that often provokes cries of anguish from the unsuspecting beginner who has heard that most Flamenco guitarists cannot read a note. In typical Freeman style, however, Ed has devised a very simple system for teaching reading and basic music theory, so that even the most reluctant student has no excuse for not learning. In any case, the pain of learning to read music is repaid many times over, since it allows the student to focus on the substance of the subsequent lessons, rather than on simply trying to remember the falsetas that he has been shown. As a person who has studied both with Ed and with other guitarists who use the \"traditional\" approach of teaching off of the fingerboard, I can attest that Freeman's method is far more efficient and effective.",
+    "title": "INSTRUCTION",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_01",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "19",
+    "page_number": 19,
+    "word_count": 232,
+    "article_char_count_full": 1360,
+    "article_char_count_review": 1360,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_01::A16",
+    "article_text_for_review": "by Phillip McCarter As a current student of Ed Freeman, I have a few \"dead accurate\" reflections (Ed's term for how one should do nearly anything) on my experiences learning to play flamenco guitar. I was one of those people who grew up fascinated by the sounds of flamenco and was always tempted, even in the midst of seeking college degrees, to stop everything and discover how to play. Filled finally to the realm of daydream, my interest was not renewed until I got word of Ed Freeman and heard his students play in the very place I never thought to look, Dallas, Texas. In a space of a week, I was on my way to learning to play from bare scratch. That was two years ago, with a six month break while my patient-eared wife and I took time out to have our new son. My first lesson, how to read music, was accomplished in such rare simplicity that I was left sitting on a studio bench wondering why \"I had not thought of doing it that way.\" The following two years of Saturday afternoon visits were a continual revelation of complexity undone between cups of Maureen Freeman's Irish tea. In a world beset with deliberate over-complication, I found myself in a casual atmosphere where even the surroundings, designed and built by Ed, reflected the genuine inventiveness of these people. The music and guitar, however, were approached with precision and exactness. A professional person, trained in math and science and engaged in the manufacture of photo-optical gear by my own hand, I leaped to meet this kind of challange. I was delighted when my practice of a first soleares, one by Esteban Sanlucar, about six months into the study, produced a soleares just like the recording of the piece. This alone, represented a culmination of months of study at technique on pieces selected by Ed to develop my ability before I even began to study the soleares. Learning the techniques required persistence and perspiration, but the main thing about Ed's form of teaching is him through the building of several of his guitars. The methods, the care in construction, minute detailing, and inventiveness are far beyond that of any guitar manufactured today. This judgement comes, mind you, from one who knows what it takes to build a fine piece of equipment from scratch. Many of Ed's ideas and ways of approaching problems in construction have found their way into my shop. I also hope to place more of his guitars in my study, as my son may need one some day. Since his guitars do not warp or bow out, I do not have to worry about how long they might have to hang on the wall in wait of new hands. With regard to children, it has been great fun to bounce a four month-old along to the rhythms of flamenco. It is also a necessary ingredient, as I mentioned, to have a patient family. To have sat quietly while I went over and over particular phrases and to politely point out errors, took great courage. The above, while sounding something like a commercial for Ed Freeman and company, is as faithful and dead accurate a recollection as I can muster. My work with Ed has been intertwined with relaxed evenings with his family, talk, humorous tales from England and Ireland, pool games and projects. But my efforts at flamenco and the results have amazed me. The Western mind has difficulty gaining a native feel for the beat-driven flamenco. The fact that I have begun to assimilate something of a natural feel for the music has led me toward the quiet confidence of one who possesses ancient secrets. I intend to continue as long as there is another piece to learn. Perhaps, sometime, I will be able to write my own -- \"dead accurately\".",
+    "title": "\"DEAD ACCURACY\"",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_01",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "20-21",
+    "page_number": 20,
+    "word_count": 646,
+    "article_char_count_full": 3631,
+    "article_char_count_review": 3631,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  },
+  {
+    "article_id": "JALEO_1980_01::A17",
+    "article_text_for_review": "[BEGINNING CONTEXT]\n\nBy Emilio Jiménez Díaz (This is the first of a five or six part series dealing with the great cantaor, Manuel Torre. The articles appeared in the Spanish newspaper Nueva Andalucía, July 21, 1978, as a centennial celebration of Torre's birth. The articles vary greatly in readability and style, but each has something to offer. Translating Spanish newspaper articles is often very difficult due to the incredibly bad writing in many of them. It may be that people who know flamenco are not often good writers. In many cases, perhaps in an attempt to be eloquent, writers put down all sorts of meaningless nonsense, while others cannot write a complete sentence. We attempt in our translations to remain faithful to the style of the author, sacrificing correct grammar and coherence when necessary. So\n\n[EVIDENCE WINDOW 1 | retrieval_hint=PED_03 | trigger=\"translation\"]\n\nredibly bad writing in many of them. It may be that people who know flamenco are not often good writers. In many cases, perhaps in an attempt to be eloquent, writers put down all sorts of meaningless nonsense, while others cannot write a complete sentence. We attempt in our translations to remain faithful to the style of the author, sacrificing correct grammar and coherence when necessary. So most of the difficulties encountered in reading these translations are the responsibility of the original author, not the translator. We thank Bettyna Belen for the articles and Roberto Vásquez for the translations.) A little more than four decades, almost half a century, separate from our memory the voice and presence of that Manuel Soto Loreto, Niño de Jerez, who would immortalize in the history of the \"cante gitano Andaluz\" the name of Manuel Torre. The memory is still fresh for those who knew him and had the good fortune of listening to his \"yayay jondo\", slipping inside the veins, marking with an agonized grin the hearts of aficionados. Fresh as mint (yerba buena) in the hidden nooks of white-washed adobe patios, like the amapola in the cradl\n\n[ENDING CONTEXT]\n\nthat cante that Manuel made great with his very valuable contribution of profundity and undecipherable echo, that cante that was great yesterday and should still be great today. Let's hope it won't be lost in the near future. August. Red 4.35 B1.4, 80 Concertiste 8.00 La Bella Prof. (=tc Sav. but longer lasting bases D'Addario Pro ▲ 4.25 QUALITY BREAKS; 3-75¢ off, 6-3¢ off, 12-9¢. Tax & Postage included. Strings ↓ most inst's. Quality tape & Casset. Free price list, Write: 523½ Santa Clara, Acoustic and electric strings Alameda, Ca. 94501.(415)521-2613(home) Quality at wholesale prices\n\n[NOTE: Review text constructed from beginning/end context plus selected trigger windows. Retrieval hints are not labels.]",
+    "title": "IN REMEMBRANCE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_01",
+    "year": 1980,
+    "language": "en",
+    "article_type": "poem",
+    "pages": "22-23",
+    "page_number": 22,
+    "word_count": 1062,
+    "article_char_count_full": 6281,
+    "article_char_count_review": 2779,
+    "article_text_was_truncated": true,
+    "review_strategy": "head_tail_windows",
+    "retrieval_hints": [
+      {
+        "window": 1,
+        "retrieval_hint": "PED_03",
+        "family": "PED",
+        "trigger": "translation"
+      }
+    ]
+  },
+  {
+    "article_id": "JALEO_1980_01::A18",
+    "article_text_for_review": "Dance is one of the most unique of human experiences, involving our total physical, spiritual, mental and emotional being. As a creative art form, it is a total personal high and flamenco dance is a giant facet of the total beautiful jewel of dance. One of the extraordinary features of flamenco dance is it's focus on individuality, a solo dance that shines with the energy of a personal individual interpretation. How exciting to realize that each dancer has a different mind and body and approach to personal feelings that can give something of fresh energy and life to a dance. For the flamenco dancer who was not born in the flamenco embiente of Spain, it is this search for individuality that is of prime importance, something that should be kept in constant focus. No matter how many great steps you learn, great pellizcos you pick up from exciting dance artists and teachers, you must keep in mind how they will look on you, with your feelings, style, body and emotions. The only thing that a person can achieve by copying the feelings, expressions and dance movements of others, is to become a copy -- never anything higher. It is the search for originality through the understanding of flamenco as a whole that produces the exciting artist and the inspiration to continue to grow as an artist. A teacher can give the ingredients: movements, understanding of the different compases and interpretation. Going to Spain can submerge you into the flamenco ambiente and let you absorb by that special flamenco osmosis, the feeling of flamenco from it's source, but it is you as an individual who will let yourself know what it is all about, your feelings about it. We all admire the creators, for they are the ones who dared to explode with their originality. Carmen Amaya, Vicente Escudero, Estampio, Antonio de Bilbao, are just a few innovators who were followed by countless imitators, but dance is more than technique and copying steps; it is the personal \"estampa\" and style that generates growth in the art. personal factors involved, but I feel that becoming a dancer or any other kind of artist is a sort of three stage operation. I have been asked many times, \"How long does it take to become a dancer?\" Of course, there is no set time because of all of the The first stage I call \"inspiration\". You usually have been inspired by seeing flamenco or being exposed to it in some way that inspires you to pursue it, to study it and have it become part of your life. This whole explanation is very simplistic, but it roughly describes the experience. The second stage I call, \"the technique stage\". This is the stage that you never really get out of if you continue your pursuit of flamenco. Very quickly your inspiration leaves, at least for awhile, as you start to learn the basics; your body awakens to flamenco movement, the frustration of making your body do what you think it should and having it respond in awkward movements of slow awakening; the searching for that means of personal expression that is bursting inside, wanting to grab onto the compás, the music, the feeling and cry out and say \"here I am, I feel, I love\" through dance. The third stage will happen I know not when, but it is the blending of the inspiration and technique, and one day it will happen when you least expect it; you will not think of steps, compás, desplantes or anything; you will become the dance, you will feel, you will float, you will dance your personal feelings in all of their glory, your joys and sorrows, your love of that creative expression called dance, that special dance called flamenco; you will become the dance -- call it duende if you will -- the dancing bug will have bit you in this ultimate high and, for a split second, you will know dance, you will know yourself as an individual creative expression of life itself. To paraphrase Shakespeare, -- To thine ownself and flamenco be true, and as the night follows the day to the next juerga, you and flamenco shall not be false to anyone.",
+    "title": "INDIVIDUALITY AND FLAMENCO DANCE",
+    "periodical": "jaleo",
+    "issue_id": "JALEO_1980_01",
+    "year": 1980,
+    "language": "en",
+    "article_type": "other",
+    "pages": "24",
+    "page_number": 24,
+    "word_count": 707,
+    "article_char_count_full": 4007,
+    "article_char_count_review": 4007,
+    "article_text_was_truncated": false,
+    "review_strategy": "full",
+    "retrieval_hints": []
+  }
+]
+```
