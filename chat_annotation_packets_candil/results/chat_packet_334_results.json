@@ -1,0 +1,285 @@
+[
+  {
+    "article_id": "1997-05-3-left-camar-n-a-los-cinco-a-os-de-su-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Como artista singular, creativo e irrepetible, no tiene sucesor ni sustituto",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón as a singular, irreplaceable artist without successor."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Mas éste no era el Camarón cotidiano... era un Camarón de estudio de grabación, de producción discográfica, de tertulia reducida a un determinado marketing... El José Monje de la reunión de amigos, el de la fiesta familiar, el de los festivales flamencos... era un cantaor con más dosis de ortodoxia que de heterodoxia",
+        "target": "Camarón's recorded/marketed persona versus intimate and live flamenco practice",
+        "rationale": "The text contrasts the marketed studio Camarón with the more orthodox, rooted figure of family gatherings, friends, and festivals."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "sólo pedimos que nadie intente utilizar o tergiversar su memoria, que su obra sea mantenida tal como la efectuó",
+        "target": "Camarón's memory and artistic work",
+        "rationale": "The passage calls for safeguarding Camarón's memory and preserving his work against distortion."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase about recovering roots supports tradition discourse, but the stronger visible function is the contrast between marketed studio production and intimate/live authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates Camarón positively, but the more precise critical function is canonization through irreplaceability."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Camarón de la Isla and the proper preservation/interpretation of his flamenco legacy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-3-right-con-el-g-ito-asom-el-duende",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "echó en falta los arranques apasionados, la flexibilidad expresiva y las esquiveces de esas sonoridades jondas que los antiguos denominaron “bailar macho”",
+        "target": "flamenco dance aesthetics associated with El Güito",
+        "rationale": "The passage frames proper flamenco dance through a gendered traditional model, using 'bailar macho' as an organizing category of value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "cada “contratiempo” un desbordamiento de elegancia en los tiempos exactos del compás; cada “braceo” una caricia... cada “escobilla” un ahondamiento",
+        "target": "El Güito's dance",
+        "rationale": "The text applies aesthetic criteria such as compás, braceo, escobilla, elegance, and depth to judge flamenco quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la recuperación de las esencias más puras... pone de manifiesto la invalidez de algunos planteamientos estéticos que hoy... se venden bajo el equívoco del flamenco",
+        "target": "contemporary aesthetic approaches presented as flamenco",
+        "rationale": "The passage draws a purity boundary by opposing El Güito's recovery of pure essences to invalid aesthetics sold under the misleading label of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions lessons and teachers, but the visible passage mainly uses them as biography rather than clearly authorizing a pedagogical method."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The ending critiques improper flamenco boundary-making, but AUTH_02 captures the same purity boundary more directly."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "El Güito's dance as proper flamenco and contemporary aesthetics framed as invalid flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The opening quotation contains derogatory gender/sexual language; the annotation treats it only as evidence of gendered flamenco boundary discourse."
+  },
+  {
+    "article_id": "1997-05-6-right-un-joven-cantaor-de-70-a-os",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "No conozco a nadie, quizás, más verdadero que él, más honesto en este sentido",
+        "target": "Chano Lobato",
+        "rationale": "The passage explicitly attributes truthfulness and honesty to Chano's flamenco persona and performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su cante ha sido y es muy importante para nosotros, que lo que él ha dado al cante es un rico caudal de lo más hermoso que tiene este arte",
+        "target": "Chano Lobato's cante",
+        "rationale": "The text directly evaluates Chano's contribution to flamenco as important and artistically beautiful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La entrega de Chano Lobato sí es como la de esos hombres. Una entrega total, ejemplar, sin trampa ni cartón",
+        "target": "Chano Lobato's performance style",
+        "rationale": "The passage uses total, exemplary entrega as an aesthetic criterion for valuing Chano's singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The word 'hombres' appears in a comparison about age and entrega, not as identity-group framing that structures flamenco belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article praises Chano's importance, but it does not clearly construct a hierarchy or canon beyond general homage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Chano Lobato's cante and artistic persona",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-8-right-el-inmenso-caudal-cantaor-de-cha",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "su arte perdurará en la memoria de los aficionados mientras existan documentos sonoros que nos evoquen su recuerdo. Se suceden los homenajes con la intención de perpetuar aún más al artista",
+        "target": "flamenco artists and Chano Lobato's memory",
+        "rationale": "The passage frames recordings and homages as mechanisms for sustaining artistic memory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Chano Lobato reúne en su ser la grandiosidad de un artista humilde, cariñoso y rotundamente completo",
+        "target": "Chano Lobato",
+        "rationale": "The passage explicitly evaluates Chano as grand, humble, affectionate, and artistically complete."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Una auténtica lección de cómo ha de usarse el ritmo festero",
+        "target": "Chano Lobato's use of festive rhythm",
+        "rationale": "The text presents Chano's performance as an authoritative lesson in how festive rhythm should be used."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The language of emblematic figures and grandiosity suggests status, but the visible evaluation is more direct than hierarchical."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'creatividad' describes a guitarist's falsetas, but it does not clearly concern institutional or transnational learning/access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Chano Lobato's artistry and memory within the Peña Flamenca de Jaén homage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-12-left-tardar-en-nacer-si-es-que-nace",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "no admitía desviaciones formales si éstas dañaban la armonía. No sólo la meramente musical sino, especialmente, la espiritual",
+        "target": "formal deviations in flamenco music",
+        "rationale": "The passage draws a boundary against deviations that damage the musical and spiritual harmony of proper flamenco expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la música que él hacía era mucho más gitana que la que exige el estereotipo y que la que venden... quienes cambian, día a día, las primogenitura por un plato de lentejas",
+        "target": "stereotyped and commercially sold versions of gitano music",
+        "rationale": "The passage uses criticism to police a boundary between Pedro Bacán's deeper gitano music and stereotyped or commercialized forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pedro Bacán fue un genio. El tiempo lo confirmará.",
+        "target": "Pedro Bacán",
+        "rationale": "The passage canonizes Pedro Bacán as a genius whose status will be confirmed by time."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central to the rhetoric, but the stronger visible function is critical boundary-work around stereotype and commercial distortion."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article implies a more genuine gitano music, but the clearest authenticity move is exclusion of damaging deviations and stereotype."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates Pedro Bacán positively, but CRIT_03 captures the stronger canonizing claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Pedro Bacán's music versus stereotyped or commercially distorted flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

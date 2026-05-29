@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "1982-09-7-right-unos-recuerdos-para-antonio-mair",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La lista de cantaores enciclopédicos... Contó ayer, sucesivamente, con un Silverio Franconetti y con un Antonio Chacón. Cuenta hoy con Antonio Mairena. Son tal vez los tres ejemplos más firmes e invocables... Iluminan y ensanchan. Crean escuela.",
+        "target": "Antonio Mairena within the canon of encyclopedic cantaores",
+        "rationale": "The passage canonizes Mairena by placing him in a hierarchy with Silverio Franconetti and Antonio Chacón as one of the firmest exemplary figures who create a school."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "para que acabará resplandeciendo, en la voz de Antonio Mairena, el misterio hiriente del duende. Compatible, en el solo caso que uno conoce, con la mayor ortodoxía interpretativa.",
+        "target": "Antonio Mairena's singing",
+        "rationale": "Duende and interpretive orthodoxy are applied as explicit criteria for judging the special quality of Mairena's cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "yo recogí un hilo que andaba por ahí, en labios de una gitana vieja. Un hilo limpio y de confianza.",
+        "target": "Mairena's attributed seguiriya",
+        "rationale": "The passage frames the source of the cante as oral transmission from an older gitana, using lineage and oral circulation to authorize the material."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses old repertory and the ancient masters, but the stronger emitted PED_02 and CRIT_03 codes capture the clearest discourse functions without overcoding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy", "tradition"],
+      "target": "Antonio Mairena as canonical cantaor and transmitter of flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible text supports coding; advertising footer ignored."
+  },
+  {
+    "article_id": "1982-09-8-right-mairena-y-la-guitarra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su cante es una continua lección de compás, medida y sabiduría que no hay más que seguir, dejarse llevar, mecer y cerrar, o rematar en sus tiempos.",
+        "target": "Antonio Mairena's cante in relation to guitar accompaniment",
+        "rationale": "The passage uses compás, measure, timing, and sabiduría as aesthetic criteria for explaining the quality of Mairena's singing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Su cante es una continua lección de compás, medida y sabiduría que no hay más que seguir",
+        "target": "Antonio Mairena as a model for accompanists and flamenco knowledge",
+        "rationale": "Mairena's cante is positioned as a lesson that guides others, giving him pedagogical authority in compás, measure, and interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "esa inconmensurable obra de estilos y variantes en todos los palos del flamenco a compás... todos lecciones de sabiduría y bien decir en el cante unido a la guitarra",
+        "target": "Mairena's recorded work and cante-guitar collaborations",
+        "rationale": "The author explicitly evaluates Mairena's body of work as immense and exemplary in its union of cante and guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "References to aficionados and intimacy are present, but they do not clearly grant community authority beyond the stronger pedagogical and critical claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "Antonio Mairena's artistic authority in cante and guitar accompaniment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Code overlap between CRIT_02 and PED_01 is retained because the same passage both defines quality criteria and frames Mairena as instructive authority."
+  },
+  {
+    "article_id": "1982-09-9-right-arte-sentimiento-y-cultura",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Flamenco auténtico. Su seriedad y concentración son todo un poema, que no necesita comentarios.",
+        "target": "Antonio Mairena's flamenco",
+        "rationale": "The passage explicitly presents Mairena's flamenco as authentic and ties that authenticity to seriousness and concentration."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "En Mairena tiene el Flamenco el eslabón entre los viejos estilos y el Arte actual; siempre bajo el signo de la autenticidad.",
+        "target": "Antonio Mairena as link between old styles and current flamenco",
+        "rationale": "Mairena is framed as a continuity link between old styles and present art, with authenticity authorizing that continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "La familia poseía en el pueblo una fragua, la célebre «Fragua de los Mairena», que habría de ser la escuela primera, dura y «honda» del chaval. Mientras éste corretea por la fragua, va oyendo y asimilando los sones recios que allí se prodigaban.",
+        "target": "Mairena's early flamenco formation",
+        "rationale": "The passage describes embodied and oral learning through family environment, listening, and assimilation in the fragua."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no podríamos encontrar una figura con más cualidad y merecimientos que Antonio Mairena para encarnar las tres características señaladas",
+        "target": "Antonio Mairena as representative figure of flamenco culture, art, and feeling",
+        "rationale": "The author elevates Mairena as an exemplary figure uniquely qualified to embody flamenco as art, culture, and feeling."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "pedagogy", "criticism"],
+      "target": "Antonio Mairena as authentic bearer and exemplar of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but visible beginning and ending provide sufficient evidence for these codes."
+  },
+  {
+    "article_id": "1982-09-11-left-mediaocena-de-repentizaciones-pa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Mairena lleva una fragua en la garganta para forjar siempre nueva la vieja copla que canta desde el fondo de su cueva.",
+        "target": "Antonio Mairena's singing",
+        "rationale": "The verse values Mairena's cante as renewing an old copla, linking present creation to inherited tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "lo remonta en su grandeza, mide el tercio, lo baraja y no pierde su pureza.",
+        "target": "Antonio Mairena's cante",
+        "rationale": "The passage evaluates Mairena's singing through aesthetic criteria of measured tercio, grandeur, and maintained purity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem praises Mairena, but the emitted CRIT_02 captures the clearest evaluative criteria."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The historical posters list performers and events, but they do not themselves construct a clear hierarchy or canon in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism", "authenticity"],
+      "target": "Antonio Mairena's cante as pure continuation and renewal of old forms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Historical program listings are treated as descriptive evidence only and not coded."
+  },
+  {
+    "article_id": "1982-09-14-right-ejemplo-a-seguir",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena debería ser el gran ejemplo a seguir por los cantaores jóvenes; hay razones, más que de sobra, por todos conocidas, que justifican tal ejemplaridad",
+        "target": "Antonio Mairena as model for young singers",
+        "rationale": "The passage constructs Mairena as an exemplary figure whose prestige and artistic level should guide younger cantaores."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "esta influencia creo que no debe sobrepasar el aprendizaje y conocimiento de los cantes y su técnica; después ha de venir —si se es artista de verdad—, la propia aportación personal a lo aprendido",
+        "target": "young singers learning from great masters",
+        "rationale": "The passage explicitly defines a model of flamenco learning that moves from apprenticeship and technical knowledge to personal artistic transformation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "algo de lo mucho que, a mi entender, debe el Flamenco a Antonio Mairena: Ahí está, por ejemplo, su gran labor de recopilación... su gran personalidad artística con tan enorme carga de creatividad",
+        "target": "Antonio Mairena's contribution to flamenco",
+        "rationale": "The author explicitly evaluates Mairena's contribution through his work of collection, artistic personality, creativity, and dignification of the art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "de sobra sabemos lo mal vista que está la imitación (y con razón, dado su escaso valor artístico), por muy buena que sea la copia",
+        "target": "mere imitation in flamenco performance",
+        "rationale": "The passage draws a boundary between legitimate influence/recreation and illegitimate imitation or copying, devaluing the latter as artistically weak."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mairena is called Maestro, but the more precise pedagogical issue is learning, imitation, and personal transformation, captured under PED_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "pedagogy", "authenticity"],
+      "target": "Antonio Mairena as exemplar and the boundary between learning and imitation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article both legitimates Mairena and criticizes imitation as a poor substitute for creative learning."
+  }
+]

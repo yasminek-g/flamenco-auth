@@ -1,0 +1,264 @@
+[
+  {
+    "article_id": "1993-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "el mismo se conecta a la petición de la Medalla de Oro de Andalucía... esta Comunidad Autónoma haga oficial su reconocimiento",
+        "target": "Fernanda and Bernarda's public recognition by Andalusian institutions",
+        "rationale": "The passage frames official institutional recognition as the appropriate validation of the cantaoras' cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Nadie, como las hermanas de Utrera, puede presentar una trayectoria tan rica y rigurosa... Nadie ha cantado mejor por soleá que Fernanda",
+        "target": "Fernanda and Bernarda, especially Fernanda's soleá",
+        "rationale": "The editorial elevates the sisters through superlative ranking and canonical status within flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "haber recreado con absoluta lealtad a los viejos legados lo más básico del flamenco",
+        "target": "Fernanda and Bernarda's flamenco practice",
+        "rationale": "Their value is grounded in loyal recreation of old legacies and continuity with the basic core of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains strong praise, but the emitted CRIT_03 captures the more specific ranking and canonizing function."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text values an intimate, non-protocol path, but it does not clearly frame commercial/public distance as an authenticity threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda's entitlement to official Andalusian recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-09-3-right-un-d-a-con-diego",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ese sonido tan flamenco y embriagador... el compás, preciso y justo, para crear el estado anímico que motiva a la voz para expresar con hondura",
+        "target": "Diego's guitar playing",
+        "rationale": "The passage evaluates Diego's artistry through aesthetic criteria including flamenco sound, precise compás, and hondura."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "los ecos del arte más puro habían parado el reloj... el regalo de toda una raza en su forma más genuina",
+        "target": "the family flamenco gathering with Diego and Joselero",
+        "rationale": "The scene is explicitly framed as pure and genuine flamenco, authorizing it as real artistic experience."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Se habréis dado cuenta de que el de Huelva no es gitano, ¡no!, ¡ea! pó sacabó la fiesta",
+        "target": "the non-Gitano narrator's presence in the Gitano family fiesta",
+        "rationale": "The passage draws an insider/outsider boundary around Gitano belonging and participation in the intimate flamenco gathering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article values a private family fiesta, but the stronger and clearer discourse function is the explicit insider/outsider boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The private intimate setting carries authenticity force, but there is no clear contrast with commercial or staged flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Diego's intimate Gitano family flamenco setting",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-09-4-right-la-guitarra-creadora-de-diego-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Tuvo un gran maestro... José Naranjo Solís... A pesar de esto, el discípulo superó al maestro",
+        "target": "Diego el de El Gastor's guitar formation",
+        "rationale": "The passage frames Diego through master-disciple transmission and evaluates his development beyond that lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "no probablemente en técnica, sí en sentimiento, armonía y «jon-dura»... distinta tonalidad, compás y arquitectura melódica",
+        "target": "Diego's guitar style",
+        "rationale": "The text applies aesthetic criteria such as feeling, harmony, jondura, compás, tonal distinction, and melodic architecture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la ausencia de ese virtuosismo hortera de rapidez automática, que es lo que se lleva hoy por los que presumen en el ambiente comercial, de genios del flamenco",
+        "target": "commercially fashionable virtuosity versus Diego's guitar art",
+        "rationale": "The passage uses critical boundary-work to devalue commercial virtuosity and authorize Diego's non-commercial aesthetic."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The wording 'renovada pero vieja como el mundo' and 'cultura popular y milenaria' suggests continuity, but the strongest evidence is aesthetic and pedagogical."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text says José Naranjo created a school and Diego surpassed him, but the passage is more focused on lineage and aesthetic criteria than broad canon construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Diego el de El Gastor's guitar art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotations rely only on visible context and evidence window."
+  },
+  {
+    "article_id": "1993-09-6-right-glosario-antol-gico-a-diego-del-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una guitarra muy jonda, muy profunda, casi primitiva pero con un sabor maravilloso... con una pureza y una gracia",
+        "target": "Diego el de El Gastor's guitar playing",
+        "rationale": "The excerpt evaluates Diego's toque through aesthetic criteria of jondura, depth, primitivism, sabor, purity, and grace."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Diego había aprendió de un hermano suyo, pero él lo superó, porque Diego tenía una gran intuición",
+        "target": "Diego's familial guitar learning",
+        "rationale": "The passage frames his artistry through family-based transmission and subsequent surpassing of the learned model."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "forma el núcleo de una auténtica escuela o estilo del toque flamenco",
+        "target": "Diego's material and style",
+        "rationale": "The passage canonizes Diego's playing as the basis of an authentic school or style of flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text uses 'auténtica' and 'música auténtica', but these claims are better captured by the canonizing and aesthetic evaluation of Diego's style."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The term 'hombre' appears in the excerpt, but it is descriptive and does not organize identity-based authority or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Diego el de El Gastor's guitar style and legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotations rely only on visible context and evidence window."
+  },
+  {
+    "article_id": "1993-09-9-right-junto-al-r-o-espartero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Soleares brillantes, solitarias, llorando... Un son de seguiriya, tartamudo y violento... Sollozaba el bordón golpeando en la pena",
+        "target": "the guitar music by the river",
+        "rationale": "The poetic prose applies aesthetic criteria of emotional force, sorrow, violence, and expressive depth to the flamenco forms performed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text is strongly appreciative, but its discourse is poetic evocation rather than a direct review or explicit critical judgment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage treats the music as deeply affecting, but does not clearly assert genuineness or proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the affective power of the flamenco guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

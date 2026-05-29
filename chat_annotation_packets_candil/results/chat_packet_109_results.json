@@ -1,0 +1,340 @@
+[
+  {
+    "article_id": "1985-03-13-left-algo-sobre-los-cantes-de-estilos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "es necesario recorrer y conocer la historia del solar de donde nacen expontáneamente cada uno de ellos",
+        "target": "cantes de estilos mineros de Cartagena y La Unión",
+        "rationale": "The passage grounds understanding and value of the cantes in their origin, birthplace, and historical rootedness."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "sobre el maestro Antonio Piñana padre, por considerar que tal figura señera es el máximo velador de los cantes de Cartagena y la Unión",
+        "target": "Antonio Piñana padre",
+        "rationale": "Piñana is positioned as an authoritative master and guardian of knowledge about the Cartagena and La Unión cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "partir de un axioma y no sólo de la vulgar hipótesis que tanto, desgraciadamente, ha proliferado",
+        "target": "erroneous flamenco bibliography and hypotheses",
+        "rationale": "The author asserts corrective expert authority against vulgar or erroneous accounts of flamenco origins."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "los irrepetibles e inigualables cantes de estilos mineros",
+        "target": "cantes de estilos mineros",
+        "rationale": "The passage explicitly evaluates the mining styles as unique and unsurpassable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The language of Piñana as guardian suggests preservation, but the visible passage frames this more as pedagogical/master authority than public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "cantes mineros de Cartagena y La Unión and Antonio Piñana padre",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible evidence supports origin, master authority, and corrective criticism."
+  },
+  {
+    "article_id": "1985-03-15-right-manolo-de-huelva",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "«El amo de los modernos guitarristas»",
+        "target": "Manolo de Huelva",
+        "rationale": "The passage canonizes Manolo de Huelva by presenting him as the master figure of modern guitarists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Artista supremo de la guitarra; compositor del más delicado y caprichoso paladar",
+        "target": "Manolo de Huelva",
+        "rationale": "The passage explicitly praises his artistic quality as guitarist and composer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "sin rozar una nota ni separarse un átomo del más estricto compás",
+        "target": "Manolo de Huelva's guitar playing",
+        "rationale": "The passage applies strict compás and technical precision as criteria for evaluating his guitar artistry."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "¡Quien sabe si rumiando consejos y rectificaciones!",
+        "target": "Manolo de Huelva as senior guitarist",
+        "rationale": "The ending imagines him as a figure capable of giving advice and corrections, reinforcing pedagogical authority among guitarists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Compás appears, but the main function is aesthetic evaluation rather than oral/embodied transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The homage by his paisanos indicates community affection, but it does not clearly authorize flamenco value beyond the stronger critical/canonical framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Manolo de Huelva",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible text is strongly evaluative and canonizing."
+  },
+  {
+    "article_id": "1985-03-17-left-aportaci-n-del-flamenco-a-los-ac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los aires de la Guajira y la Rumba cubanas, la Milonga y la triste Vidalita argentina, la Colombiana... llegaron a convertirse en cantes flamencos",
+        "target": "cantes de ida y vuelta",
+        "rationale": "The passage explains these styles through historical movement, return, and incorporation into flamenco continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "dieron forma y rango a las variedades citadas",
+        "target": "Pepa de Oro, Diego Antúnez, and cantes de ida y vuelta",
+        "rationale": "The passage assigns formative status to named artists and elevates their role in giving rank to these styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "cantes no ciertamente jondos, pero sí ricos en melismas traducidos en un felicísimo mestizaje",
+        "target": "cantes de ida y vuelta",
+        "rationale": "The passage uses aesthetic criteria and genre distinction to evaluate the styles as non-jondo but musically rich and successfully hybrid."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "realice una campaña de difusión y potenciación de los cantes de ida y vuelta",
+        "target": "cantes de ida y vuelta",
+        "rationale": "The passage frames public cultural action as needed to disseminate and strengthen these flamenco styles."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "De la Asesoría de Actividades Flamencas de la Consejería de Cultura de la Junta de Andalucía, hemos recibido el programa",
+        "target": "official program for cantes de ida y vuelta",
+        "rationale": "The cantes are valorized through an official cultural program tied to the Junta de Andalucía and the V Centenary events."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text says some artists were 'muy poco flamenca,' but the stronger boundary concerns genre classification and critical hierarchy rather than a central purity exclusion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "heritage"
+      ],
+      "target": "cantes de ida y vuelta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible text supports historical legitimation and public diffusion."
+  },
+  {
+    "article_id": "1985-03-18-right-del-aciago-marzo-al-funesto-abri",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "este apasionado patrimonio cultural andaluz",
+        "target": "flamenco",
+        "rationale": "The passage explicitly frames flamenco as Andalusian cultural heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "unos brazos primorosos que hermosearon el encanto plástico de una Sevilla",
+        "target": "Enrique el Cojo",
+        "rationale": "The passage evaluates Enrique el Cojo's dance artistry through praise of his expressive arms and plastic beauty."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "el maestro supo desparramar sus enseñanzas",
+        "target": "Enrique el Cojo",
+        "rationale": "The passage presents Enrique el Cojo as a master who transmitted flamenco dance knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "sólo apta para una minoría de cabales ortodoxos y puros, ante la adulteración engañosa y aberrante",
+        "target": "Joselero's cante and opposed commercialized flamenco",
+        "rationale": "The passage draws a strong purity boundary between orthodox/pure flamenco understanding and adulterated commercial distortion."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "quienes confunden la cultura flamenca con un envilecido comercio de persas",
+        "target": "commercialized flamenco culture",
+        "rationale": "Commercial treatment of flamenco is framed as degrading and corrupting the culture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "todo lo que de patético y embriagador palpitaba en este aljibe de esencias incorruptas",
+        "target": "Joselero's siguiriyas",
+        "rationale": "The passage evaluates Joselero's cante through aesthetic criteria of pathos, intensity, and incorruptible essence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Terms like 'reliquia intemporal' canonize Joselero, but the article already reaches the six-code maximum and stronger distinct functions are prioritized."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory and obituary framing are present, but the explicit heritage claim and other stronger discourse functions take precedence under the code limit."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Enrique el Cojo, Joselero, and orthodox/pure flamenco culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-03-19-right-verg-enza-ajena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "se autoriza la adscripción a la Universidad de Cádiz de la cátedra de «Flamencología y Estudios folklóricos andaluces»",
+        "target": "Cátedra de Flamencología y Estudios folklóricos andaluces",
+        "rationale": "The passage centers official ministerial and university authorization of a flamencology chair."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "pueda dedicarse atención y estudio, al desarrollo de algo tan vital por representativo para el Pueblo Andaluz",
+        "target": "university study and research of flamencology",
+        "rationale": "The passage contests institutional access to flamenco study because the chair is authorized without material support."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "órdenes de esta naturaleza tienen mucho de descalificadoras y negativas",
+        "target": "the ministerial order authorizing the chair without public funding",
+        "rationale": "The author uses explicit critique to delegitimize the official order and its treatment of flamenco study."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "algo tan vital por representativo para el Pueblo Andaluz",
+        "target": "flamenco/Andalusian folkloric studies as representative of the Andalusian people",
+        "rationale": "The passage frames flamenco study through Andalusian collective identity and representation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "se le niegan toda clase de medios para la investigación de una de las facetas que más se acusan en su extraordinaria personalidad",
+        "target": "flamenco research as Andalusian cultural practice",
+        "rationale": "The passage argues that a culturally representative practice requires support for research and transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is strong evaluative language, but it is better captured as expert/boundary critique of institutional policy under CRIT_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "official treatment of flamencology and Andalusian cultural research",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

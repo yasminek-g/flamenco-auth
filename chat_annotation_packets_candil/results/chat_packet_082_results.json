@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "1983-11-8-right-a-los-organizadores-de-festivale",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Instituto de Cultura Andaluzia and its Departamento de Flamenco issue guidance, but the visible text is administrative festival coordination and legal compliance rather than explicit heritage authorization or patrimonial framing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The guide is projected toward emigrant centers and foreign/international festival circuits, but the passage concerns promotion and logistics rather than learning, pedagogy, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative circulars about contracting, publicity, festival guides, and legal regulations; no clear evaluative or authorizing flamenco discourse beyond routine institutional coordination."
+  },
+  {
+    "article_id": "1983-11-9-left-buler-as-de-el-chozas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Bulerías únicas con sones de ida y vuelta. Según parece, en su casa de Lebrija vivía alguien que estuvo en la Guerra de Cuba. Música original con la impronta de «El Choza».",
+        "target": "las bulerías y estilo de «El Choza»",
+        "rationale": "The passage evaluates El Choza's bulerías as unique and original, attributing a distinctive artistic imprint to his style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "todas las noches cantaba letras nuevas que sacaba sobre la marcha; pura improvisación.",
+        "target": "la práctica compositiva e interpretativa de «El Choza»",
+        "rationale": "Improvisation is used as an aesthetic criterion to characterize and value the singer's creative practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase 'amigo de la fiesta íntima, de poquita gente' evokes intimate setting, but the passage does not clearly frame that intimacy as more authentic or as a boundary against public/commercial flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Later singers are said to sing the Bulerías de «El Choza», but the visible text does not clearly describe embodied, oral, familial, or lineage transmission as an authorizing mode of knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Choza and his bulerías",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-11-9-right-viva-pepe-guillena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "restablecer su autenticidad, consolidar su hondura, devolverle su grandeza",
+        "target": "el cante",
+        "rationale": "The passage explicitly claims that proper cante had to have its authenticity restored, authorizing a true or proper flamenco ideal."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "buenos artistas, a buenas personas, a buenos amigos que más o menos vestidos de falsos andaluces, de exploradores o turistas, ofrecían a la inocencia de los públicos sus grandes «creaciones»",
+        "target": "formas escenificadas o turistificadas de cante",
+        "rationale": "The text draws a boundary between legitimate cante and false, tourist-like, staged creations presented to naïve publics."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Se cambiaron bambalinas, lentejuelas y estampas escenificadas por la sobriedad sincera, seria y responsable del Cante solo, junto a una sola guitarra",
+        "target": "cante solo frente a espectáculo escenificado",
+        "rationale": "Staged spectacle is opposed to sober, serious cante with one guitar, making anti-spectacular simplicity a marker of authentic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "las figuras cantaoras más cotizadas al uso, caen de nuevo en el cupleteo, ahora, más hueco de valores y duende que nunca",
+        "target": "figuras cantaoras cotizadas y su cupleteo",
+        "rationale": "The critic uses evaluative authority to police the boundary between valuable cante and hollow, degraded cupleteo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "más hueco de valores y duende que nunca",
+        "target": "el cupleteo de las figuras cantaoras cotizadas",
+        "rationale": "Duende and value are applied as aesthetic criteria to judge the criticized performances as deficient."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage mentions 'tradición oral', but the stronger discourse function is authenticity/purity boundary-work rather than a separate claim about continuity or roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text contrasts majorities and minorities of singers, but it does not construct a stable canon or ranking distinct from its broader critical boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "proper cante, Pepe Guillena, and commercial/staged cupleteo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible excerpt is truncated, but the available text contains enough clear boundary-work and critical evaluation to annotate confidently."
+  },
+  {
+    "article_id": "1983-11-10-right-las-coplas-de-paco-salgueiro",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of coplas without evaluative, authorizing, pedagogical, communal, heritage, or critical framing."
+  },
+  {
+    "article_id": "1983-11-11-left-manuel-yerga-se-qued-corto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Trabajos posteriores a la década de los cincuenta (mediados) han cometido atrocidades en este terreno, lo cual denota falta de respeto a la verdad y poca seriedad en ciertos escritores.",
+        "target": "escritores y flamencólogos que clasifican cantaores sin rigor",
+        "rationale": "The author exercises critical authority over flamenco historiography, condemning inaccurate writers for lack of truth and seriousness."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Hace tiempo que vengo diciendo que no se califique a los cantaores de payos o gitanos, pues siendo obvio su españolidad es necio adjetivar, máxime si no se tiene la certeza de la raza.",
+        "target": "clasificación payo/gitano de los cantaores",
+        "rationale": "Identity categories are explicitly debated as a framework for representing and authorizing flamenco history, with the author contesting their careless use."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Es necesario que seamos más rigurosos en la construcción de este hermoso edificio que es la historia del flamenco.",
+        "target": "la escritura de la historia del flamenco",
+        "rationale": "The passage evaluates the quality standards required for flamenco historiography, calling for greater rigor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text repeatedly invokes 'verdad', but this concerns factual historical accuracy rather than authenticity or properness of flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Historical lists and named singers appear, but the passage is not ranking or canonizing them; it is correcting identity attribution and historiographical method."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco historiography and payo/gitano identity attribution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

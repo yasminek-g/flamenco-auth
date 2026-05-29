@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1986-09-4-right-reflexiones-sobre-la-voz-y-la-co",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "el flamenco es una forma de expresión artística de índole oral-cantado, que privilegia las modalidades de la voz frente a la mera dimensión textual de la copla",
+        "target": "la copla flamenca cantada",
+        "rationale": "The passage frames flamenco meaning as orally and vocally embodied rather than merely textual."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Recordemos lo que dijo Demó-filo... es imposible juzgarlas bien no oyéndolas cantar",
+        "target": "critical methods for judging flamenco coplas",
+        "rationale": "Demófilo is invoked as an authoritative expert voice to police how flamenco poetry should be judged."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "la copla, cuando nace, verdaderamente real y espontánea, nace ella misma cantándose",
+        "target": "the sung flamenco copla",
+        "rationale": "The quoted claim attributes genuineness and spontaneity to the copla as something born in song."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word tradición appears, but the stronger visible discourse concerns oral/vocal execution rather than continuity or roots as a present-value claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Voice and emotional tone are aesthetically important, but the passage mainly argues for method and oral transmission rather than applying criteria to evaluate a performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "the sung, orally performed flamenco copla as the proper object of interpretation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation uses only visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1986-09-6-right-consideraciones-en-torno-al-flam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "donde te va a juzgar el oído de la sabiduría mientras la voz de la intransigencia va a corregirte, aconsejarte y bautizarte",
+        "target": "the narrator's initiation into flamenco singing",
+        "rationale": "Flamenco learning is presented as embodied, oral correction and initiation by knowledgeable listeners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "nacer flamenco o para el Flamenco, crecer en la tierra del Flamenco e ir encontrándolo día a día en tu propia casa, por los rincones de alguna taberna, en la troupe pueblerina, en el campo y en tu voz",
+        "target": "natural paths into flamenco",
+        "rationale": "The passage grounds flamenco authority in rooted local continuity, birthplace, home, tavern, countryside, and voice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "te va a juzgar el oído de la sabiduría mientras la voz de la intransigencia va a corregirte",
+        "target": "community judgment of emerging flamenco practice",
+        "rationale": "A socially recognized listening community is positioned as able to judge, correct, and authorize flamenco belonging."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "pedagogy"
+      ],
+      "target": "flamenco knowledge acquired through local, communal, embodied initiation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-8-right-el-concepto-de-justicia-en-el-pr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "no pretendemos con ello aludir a que sea precisamente este grupo humano el único que ha padecido en sus carnes la amarga experiencia de la injusticia",
+        "target": "Gitano and broader Andalusian social groups in relation to cante",
+        "rationale": "The passage explicitly frames flamenco through ethnic and social group identity while contesting exclusive group ownership of suffering and cante."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el cante en sus orígenes es patrimonio andaluz, una comunidad formada por etnias muy diversas",
+        "target": "the origins and ownership of cante",
+        "rationale": "Cante is framed as Andalusian patrimony belonging to a diverse collective community."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "tenemos suficientemente claro que el cante en sus orígenes es patrimonio andaluz",
+        "target": "the origins of cante",
+        "rationale": "The passage uses an origin claim to authorize an Andalusian, rather than exclusively Gitano, understanding of cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The passage contests exclusive Gitano ownership, but it does not use purity/fake/impurity boundary rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "community",
+        "tradition"
+      ],
+      "target": "claims about the collective origins and belonging of primitive cante flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation uses only visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1986-09-12-left-flamencas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text consists of flamenco lyrics without clear evaluative, authorizing, pedagogical, heritage, community, or critical discourse."
+  },
+  {
+    "article_id": "1986-09-12-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "incansables aficionados y estudiosos, que nos prestan el servicio impagable de transmitirnos sus vivencias",
+        "target": "memory and transmission of flamenco history",
+        "rationale": "The passage frames flamenco memory as something preserved and transmitted through lived testimony and research."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "un nutrido grupo de incansables aficionados y estudiosos... nos están legando el goteo parsimonioso, de sus vivencias",
+        "target": "aficionados and scholars as preservers of flamenco knowledge",
+        "rationale": "Aficionados and scholars are positioned as socially authoritative transmitters of flamenco memory and knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "una especie de diccionario de autoridades en las que Arrebola apoya todas y cada una de las opiniones",
+        "target": "expert authorities used to support flamenco interpretation",
+        "rationale": "The review explicitly identifies a chain of authorities used to legitimate critical opinions about flamenco topics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Official support is mentioned, but the visible passage does not show an institution conferring heritage recognition or authorized heritage status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Transmission of memory is clear, but the visible evidence is more heritage-memory and community authority than embodied or lineage-based learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "written and oral memory work about flamenco figures and history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation uses only visible beginning, evidence window, and ending context."
+  }
+]

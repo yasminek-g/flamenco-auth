@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "1982-11-8-right-de-los-gitanos-de-flandes-a-los-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "documentos de gran relevancia sobre el asentamiento y, en general, sobre la historia de los gitanos en Andalucía",
+        "target": "historical origins linking Andalusian Gypsies and flamenco terminology",
+        "rationale": "The article grounds a hypothesis about flamenco naming and identity in documentary origins and historical continuity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca de Jaén is mentioned only as the current location of a palace, not as an authorizing community actor."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word título refers to a military rank, not to learning access or institutional pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article uses documentary-history language, but the visible text does not clearly frame safeguarding, living heritage, or public heritage responsibility."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition"],
+      "target": "historical understanding of Gypsies in Andalucía and the flamenco appellation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated documentary article; coded only the visible origin/continuity claim, not trigger-only references."
+  },
+  {
+    "article_id": "1982-11-11-right-las-letras-flamencas-de-servula-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "estas letras tienen por sí mismas el peso específico para merecer su publicación en estas páginas",
+        "target": "Sérvula Palacios's flamenco lyrics",
+        "rationale": "The passage explicitly evaluates the lyrics as valid and worthy of publication despite possible reservations."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "un maravilloso ejemplo de afición del que tanto, hoy día, necesitamos",
+        "target": "Sérvula Palacios as an example of afición",
+        "rationale": "The author presents afición as a valued communal disposition needed by flamenco culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The author identifies Palacios as a woman over seventy, but gender is not developed as a basis of flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "Sérvula Palacios's lyrics and afición",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic lyrics themselves were not separately coded; the evaluative introduction supplies the discourse evidence."
+  },
+  {
+    "article_id": "1982-11-12-left-a-la-tona",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem evokes the tona as a cry, prayer, and agony, but it does not clearly apply aesthetic criteria or make an evaluative judgment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text is expressive and definitional, but it does not assert what is genuinely or properly flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short poetic text; no clear code-level discourse function beyond metaphorical description."
+  },
+  {
+    "article_id": "1982-11-12-right-ellos-los-protagonistas-dicen-la",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "hablar de la soleá de Triana, sin otras precisiones, es desconocer algo tan fundamental... Es, en definitiva, empobrecerla",
+        "target": "generalized discussion of Triana soleá",
+        "rationale": "The passage critiques imprecise critical generalization as a way of impoverishing knowledge of Triana styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Ese cante lo hacía mi padre y de él lo he sacao yo",
+        "target": "the cante of El Zurraque",
+        "rationale": "The singer authorizes his version through direct familial transmission from his father."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Es una pena que el cante de «El Zurraque» se pierda porque no salgan nuevos valores que puedan continuar con este cante",
+        "target": "continuity of the cante of El Zurraque",
+        "rationale": "The passage values the cante through continuity, preservation, and concern that it may be lost without new transmitters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Comercial describes perceived public appeal of a soleá style, not commercialization as a threat to authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are aesthetic judgments such as 'más dulce,' but the stronger discourse function is lineage transmission and preservation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy", "criticism"],
+      "target": "the differentiated Triana/El Zurraque soleá tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only visible claims about critical precision, family transmission, and continuity."
+  },
+  {
+    "article_id": "1982-11-14-right-carta-abierta-al-cantaor-don-ant",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Nos referimos al enfrentamiento, más que crítico diríamos analítico, reflexivo, valiente, noble e imparcial",
+        "target": "Antonio Mairena's theoretical writings on cante",
+        "rationale": "The letter explicitly frames its intervention as critical-analytical engagement with Mairena's authority as a theorist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "un largo período de siglos de influencias recíprocas, unos aires musicales perdurables hasta nuestros días",
+        "target": "historical formation of cante",
+        "rationale": "The authors ground cante in long-term historical continuity and accumulated cultural influences."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "TODOS LOS AUTENTICOS ARTISTAS DEL CANTE SIN DISTINCION DE RAZAS",
+        "target": "racially exclusive definitions of authentic cante artistry",
+        "rationale": "The passage explicitly contests race as a boundary for flamenco artistic authenticity and belonging."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The passage mentions traditions and influences, but it does not clearly describe embodied, oral, or lineage-based learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The ending canonizes Mairena as perhaps the best and most extensive gitano-andaluz singer, but the article's main visible discourse is a critical contestation of his theory."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Authenticity language appears, but it is embedded in a race-boundary argument better captured by COMM_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "tradition", "community"],
+      "target": "Mairena's theories of cante origins and race-linked authenticity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated open letter; coded visible disagreement with Mairena as theorist, not broader unseen arguments."
+  }
+]

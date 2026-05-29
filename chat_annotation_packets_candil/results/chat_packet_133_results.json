@@ -1,0 +1,170 @@
+[
+  {
+    "article_id": "1986-05-21-left-buzon-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article corrects a biographical/date error using civil and baptismal records, but the visible text does not clearly position the author as a flamenco-critical authority or evaluate flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The photocopies are described as important for the biography/history of a cantaor, but the passage does not frame this as public heritage safeguarding or collective memory-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Archival factual correction; no clear code-bearing discourse beyond documentation."
+  },
+  {
+    "article_id": "1986-05-21-right-festivales-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a brief source note for a festival guide, insufficient for judgment."
+  },
+  {
+    "article_id": "1986-05-23-right-xiv-congreso-nacional-de-activid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "esa refrescante corriente de opinión que esclarece conceptos y alerta sobre desviacionismos, cosa muy frecuente en el flamenco",
+        "target": "el Congreso Flamenco y sus debates conceptuales",
+        "rationale": "The congress is framed as an authoritative critical forum that clarifies concepts and polices deviations in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Lo que sí tenemos que conservar es la pureza de los aficionados... porque el cante seguirá siendo puro mientras no se malogren sus aficionados.",
+        "target": "la pureza del cante y de los aficionados",
+        "rationale": "The passage explicitly links proper flamenco to the preservation of purity and warns against its deterioration."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "el cante seguirá siendo puro mientras no se malogren sus aficionados",
+        "target": "los aficionados flamencos",
+        "rationale": "Aficionados are treated as the community whose condition sustains the purity and legitimacy of flamenco song."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text mentions concepts, ponencias, and debates, but explicitly says the congress is not an aula and is not mainly about learning."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "There is institutional sponsorship and honorary presidency, but the visible text does not explicitly frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "the Catalonia congress as a serious forum for protecting pure flamenco afición",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes focus on concept-policing and purity/community claims, not routine event logistics."
+  },
+  {
+    "article_id": "1986-05-24-left-a-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Discography/catalog list without clear evaluative, pedagogical, heritage, authenticity, or community discourse."
+  },
+  {
+    "article_id": "1986-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una de las figuras sin duda más relevantes de la lírica y el teatro en el presente siglo",
+        "target": "Federico García Lorca",
+        "rationale": "The passage canonizes Lorca through high-status ranking as a major literary figure of the century."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "iniciaron su dignificación... por la vía de cernerlo de otras espúreas manifestaciones",
+        "target": "flamenco separated from spurious manifestations",
+        "rationale": "The editorial frames flamenco's dignity as requiring separation from spurious or degraded manifestations, drawing a legitimacy boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Algunos puristas, encorsetadores de cualquier manifestación de arte... señalan... con acento peyorativo, a García Lorca, y sus coetáneos.",
+        "target": "purist criticism of Lorca and the Generation of 27",
+        "rationale": "The editorial critiques purist gatekeeping and contests their authority to delegitimize Lorca's flamenco engagement."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text mentions 'verdad flamenca' and 'vetas auténticas de jondura', but the stronger visible move is boundary-work against spurious manifestations, captured by AUTH_02."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duende and jondura appear as aesthetic criteria, but the article's main function is canonization and debate over critical authority rather than applying a distinct criterion to a specific performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Concurso Granadino and 1920s writers are historically invoked, but tradition/continuity is not the primary basis of authority in the visible argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "Lorca's role in flamenco and the dignification of flamenco by the Generation of 27",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial both legitimates Lorca and contests purist delegitimation while endorsing boundary-work against spurious flamenco manifestations."
+  }
+]

@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "1993-11-13-right-cante-en-la-bodega-poes-a-manuel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Entraron pobres y ricos, gente joven, gente vieja... se enciende en el ambiente una flama que es la greca del arranque de la copla en la voz siguiriera.",
+        "target": "la fiesta flamenca participativa en la bodega",
+        "rationale": "The passage values flamenco as a shared participatory social event that gathers many social groups and generates the conditions for cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Los presentes sintieron latir el alma y su estela: era el pellizco del cante, el misterio que lo alienta.",
+        "target": "el cante de la fiesta",
+        "rationale": "The text defines flamenco value through aesthetic criteria of pellizco, mystery, emotional force, and felt depth."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "El cante, el baile y el toque dejaron allí la esencia de un pueblo de antigua casta con el arte por vivencia.",
+        "target": "cante, baile y toque como continuidad de un pueblo",
+        "rationale": "The passage grounds flamenco value in inherited collective continuity, ancient caste, and art lived as a way of life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text contains local and gitano identity language, but the stronger visible discourse is the participatory setting and inherited continuity rather than an explicit identity-boundary claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism", "tradition"],
+      "target": "the bodega flamenco fiesta as socially rooted and aesthetically powerful flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic narration rather than explicit criticism; codes are limited to spans where the poem clearly values participatory setting, aesthetic depth, and continuity."
+  },
+  {
+    "article_id": "1993-11-14-left-ayer-y-hoy-del-flamenco-en-catal",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Hora es de conocer la historia, de desvelar el pasado, de defender la verdad y de erradicar la ignorancia, los tópicos y las falsedades",
+        "target": "claims that flamenco in Cataluña is recent or imposed",
+        "rationale": "The author claims expert corrective authority over flamenco history and frames opposing accounts as ignorance, clichés, and falsehoods."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Cataluña, y más concretamente Barcelona, ha sido desde hace más de un siglo... uno de los enclaves donde el arte andaluz, el flamenco, ha tenido una difusión notable fuera de su ámbito natural.",
+        "target": "Cataluña/Barcelona as a legitimate flamenco enclave",
+        "rationale": "The passage authorizes Catalan flamenco presence through historical continuity extending for more than a century."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "en un hipotético «ranking», Barcelona ocuparía el tercer puesto, tras Sevilla y Madrid, por número de «Cafés Cantantes».",
+        "target": "Barcelona within flamenco geography and history",
+        "rationale": "The text constructs a comparative hierarchy of flamenco places, ranking Barcelona against canonical flamenco centers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Catalan and Andalusian identities are central, but the visible evidence functions more directly as historical legitimation and ranking than as a distinct identity-belonging frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["tradition", "criticism"],
+      "target": "the historical legitimacy of flamenco in Cataluña",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning and window clearly support historical correction, continuity, and ranking."
+  },
+  {
+    "article_id": "1993-11-17-left-aunque-no-quepa-en-el-papel-jos-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el crítico deberá saber explicar, clasificar y juzgar lo que está viendo y escuchando en cada momento",
+        "target": "la función de la crítica flamenca",
+        "rationale": "The review defines the critic's authority and responsibilities: explaining, classifying, judging, and mediating flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "capaces de dilucidar sobre la marcha la barrera entre lo auténtico y lo falso",
+        "target": "critical judgment of authentic versus false flamenco",
+        "rationale": "The passage explicitly frames criticism as drawing a boundary between authentic and false flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "el que analizare la función jonda deberá hacer traslúcido e inteligible el mensaje que desea hacer llegar al receptor de dicha crítica",
+        "target": "critical mediation of flamenco understanding",
+        "rationale": "The text positions critics and their methods as authorized mediators who make flamenco meaning intelligible to readers or listeners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article mentions pureza and authentic/false boundaries, but the dominant function is critic authority and boundary policing rather than a separate aesthetic-criteria discussion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "authenticity", "pedagogy"],
+      "target": "professional flamenco criticism as an authoritative practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a review of conference proceedings, but the visible text repeatedly defines and legitimates criticism itself."
+  },
+  {
+    "article_id": "1993-11-17-right-alre-de-la-fiesta-gitana-miguel-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Hija de Manuela Flores... y del Tío Borrico, de quien adopta el sobrenombre y hereda sus cantes.",
+        "target": "María la Burra's inherited cante",
+        "rationale": "The passage frames flamenco knowledge as inherited through family lineage and transmitted across generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el último rescoldo de una dinastía verdaderamente gloriosa donde el clan familiar resume siglo y medio del mejor cante gitano de Jerez",
+        "target": "the Jerez family lineage of cante",
+        "rationale": "The text authorizes the artist through continuity with a long, valued family tradition of Jerez gitano cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una dinastía verdaderamente gloriosa donde el clan familiar resume siglo y medio del mejor cante gitano de Jerez",
+        "target": "María la Burra's family dynasty",
+        "rationale": "The phrase constructs a hierarchy by presenting the lineage as glorious and as embodying the best gitano cante of Jerez."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano and Jerez identity terms are present, but the passage uses them mainly to support lineage transmission and canonization rather than to develop a separate identity-belonging argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "tradition", "criticism"],
+      "target": "María la Burra as heir to a prestigious Jerez gitano cante lineage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is short, the lineage and evaluative hierarchy are explicit enough to code."
+  },
+  {
+    "article_id": "1993-11-21-left-m-s-sobre-pedro-mart-n-alonso-el",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "tuvo la suerte de conocer a la genial cantaora Paca Aguilera, que llegaría a ser su maestra en los cantes por soleá y malagueñas.",
+        "target": "Paca Aguilera as teacher of El Chato de las Ventas",
+        "rationale": "The passage legitimates the singer's knowledge through a named authoritative teacher in specific flamenco styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "se desplazó a Sevilla en busca de sus amigos y compañeros... le cantaron lo que Pedro quería aprender... regresó en pocos días a Madrid con los cantes aprendidos.",
+        "target": "El Chato's learning of Triana cantes",
+        "rationale": "The text presents flamenco knowledge as acquired orally through listening to companions and carrying learned cantes back to Madrid."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Dedicado a los cantes hispanoamericanos, logró ser uno de los mejores intérpretes por esos palos.",
+        "target": "El Chato de las Ventas as interpreter of Hispano-American cantes",
+        "rationale": "The author explicitly evaluates the singer's artistic standing, praising him as one of the best interpreters in those palos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author corrects biographical errors using documentary evidence, but the passage does not clearly grant critic or flamencologist authority as a separate discourse function beyond factual correction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "El Chato de las Ventas as a learned and highly valued cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Political-death material is historically significant, but not coded because it does not itself evaluate, authorize, transmit, or define flamenco belonging under the collapsed codebook."
+  }
+]

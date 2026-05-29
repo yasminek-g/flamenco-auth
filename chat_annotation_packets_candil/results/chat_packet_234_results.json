@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "1991-05-21-left-rojo-el-alpargatero-en-la-uni-n-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Diez duros costó enterrar al patriarca de los cantes levantinos.",
+        "target": "Rojo «El Alpargatero»",
+        "rationale": "The phrase canonizes Rojo as a foundational patriarchal figure within the cantes levantinos rather than merely giving biography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article corrects prior chronology using archival evidence, but the visible text does not clearly position the author as a flamenco-critical authority policing artistic boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The historical reconstruction concerns origins and dates, but it does not clearly use tradition or continuity to authorize present flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Rojo «El Alpargatero» as a canonical figure of cantes levantinos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-05-21-right-una-historia-en-coplas-la-traged",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "pudo recogerlo el año 1966 de un gitano octogenario, Juan Vargas Ortega",
+        "target": "the romance of «Los gitanitos del Puerto»",
+        "rationale": "The passage frames flamenco-related knowledge as recovered through oral testimony from an elder informant, making oral transmission central to the account."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "pequeños trovos en los que se conservan hechos particulares que aún viven algunos en la memoria de los cantadores",
+        "target": "the corrido/romance tradition preserved by singers",
+        "rationale": "The passage values the romance through continuity and survival in singers' memory, linking present knowledge to preserved past events."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text contains memory and preservation language, but the visible excerpt does not clearly frame the romance as public heritage or assign communal safeguarding responsibility."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The persecuted gitanos are central to the romance, but the visible analysis does not clearly use identity to authorize belonging or define flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "the romance as orally transmitted and historically continuous flamenco-related material",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-05-25-right-ense-ar-a-quien-no-sabe",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "lleva dentro de la órbita flamenca más de cuarenta años y sabe muchas cosas, unas nimias y otras majestuosas que hoy son harto difíciles de aprender por falta de maestros de altura",
+        "target": "the author as a knowledgeable flamenco teacher/mediator",
+        "rationale": "The speaker explicitly grounds his ability to answer in long experience and the scarcity of high-level teachers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "La granaína es lo más parecido a cierto estilo por malagueña... Sin embargo, en la media granaí-na sus tercios tienden a irse hacia arriba",
+        "target": "the distinction between granaína and media granaína",
+        "rationale": "The passage defines flamenco quality and classification through stylistic and technical criteria."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "que editen para los aficionados dos cassettes, una con cantes por granaína y otra por media granaína... terminar... con el confusionismo imperante",
+        "target": "didactic cassette access for aficionados",
+        "rationale": "The passage proposes mediated learning materials for aficionados to resolve widespread confusion about flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "correct knowledge of granaína and media granaína",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-05-26-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "editar libros sobre nuestro arte por la falta de clientela... ¿dónde se forman las nuevas generaciones que se aproximan a lo jondo?",
+        "target": "flamenco books and formation of new generations",
+        "rationale": "The passage links publishing to access, formation, and transmission of flamenco knowledge across generations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "esta bellísima edición... nuestro reconocimiento al señor Raya por su entrega editorial",
+        "target": "Andrés Raya Saro's flamenco publishing work",
+        "rationale": "The text explicitly evaluates the edition and praises the publisher's contribution to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "es también una reivindicación del cantaor sevillano... apasionada, rabiosa a veces, defensa de Pepe Marchena",
+        "target": "Pepe Marchena",
+        "rationale": "The reviewed book is framed as a reivindication and defense of Marchena, positioning him within a contested canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The concern over books, learning, and loss of clientele suggests cultural continuity, but it lacks explicit public heritage or safeguarding discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text mentions testimony from journalists and cantaores, but the visible excerpt does not clearly grant expert critical authority beyond ordinary review evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco publishing and the reivindication of Pepe Marchena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-05-27-left-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Hoy me veo obligado a salir a su encuentro con este trabajo porque he leído en la revista, «Sevilla Flamenca», algo incorrecto relacionado con mi inolvidable y llorada «Niña de los Peines».",
+        "target": "Ríos Vargas's claim about Pastora and La Trini",
+        "rationale": "The author assumes corrective critical authority over published flamenco knowledge and challenges another writer's factual claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "No es cierto que fuesen primas por cuanto Pastora fue gitanísima y «La Trini» no.",
+        "target": "Pastora Pavón and La Trini's claimed kinship",
+        "rationale": "Identity framing is used to define the plausibility of belonging and kinship within the flamenco genealogy under dispute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The author instructs readers by giving genealogical data, but the main function is corrective critical authority rather than a teacher or method being legitimated."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The correction concerns genealogical truth, not a claim that a flamenco style, practice, or performer is genuinely flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "published genealogical claims about Pastora Pavón and La Trini",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

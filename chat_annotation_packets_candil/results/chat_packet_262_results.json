@@ -1,0 +1,269 @@
+[
+  {
+    "article_id": "1992-09-25-left-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "A esos lectores que admiro y respeto, dignos acreedores a que se les ofrezca la verdad y nada más que la verdad",
+        "target": "biographical writing about flamenco artists",
+        "rationale": "The writer positions truthful documentation as the standard by which flamenco biography should be judged."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "¿Sabe usted por qué son muy pocos los que dicen la verdad biográfica? Sencillamente, porque no investigan.",
+        "target": "writers who publish false or undocumented flamenco biographies",
+        "rationale": "The passage criticizes other writers and authorizes research-based expertise as the basis for correcting flamenco historiography."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "porque no poseen, como yo poseo, en este caso de «El Pena hijo», su certificación de nacimiento y la de su defunción",
+        "target": "archival documents as access to flamenco biographical knowledge",
+        "rationale": "Archival documents are presented as the means for accessing and transmitting correct knowledge about flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article repeatedly invokes truth, but the target is biographical accuracy rather than authenticity of flamenco practice or performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Artists such as Silverio and El Pena hijo are described as important, but the visible discourse mainly concerns factual correction rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco biographical authority and undocumented writers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The dominant discourse is correction of false biography through archival research."
+  },
+  {
+    "article_id": "1992-09-27-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ni tiene rival ni puede someterse a cotejo histórico",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage canonizes Fernanda by placing her beyond rivalry or historical comparison."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la hondura dulce de su voz, el fraseo ágil, el prodigioso ritmo asincopado y el magisterio técnico de su compás",
+        "target": "Bernarda Jiménez Peña's cante",
+        "rationale": "The passage evaluates Bernarda through explicit aesthetic and technical criteria: voice, phrasing, rhythm, and compás."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "La gran portadora del más rancio cante gitano habitará de manera intemporal entre nosotros",
+        "target": "Fernanda de Utrera as Gitano flamenco bearer",
+        "rationale": "Gitano identity is used to frame the artist as bearer and representative of a valued flamenco tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "esa gitanería de la tierra del gran Joaquín el de la Paula... celosos conservadores de sus maneras ejecutoras",
+        "target": "Grabié and La Rebolera's local Gitano performance manners",
+        "rationale": "The passage values their performance through continuity and conservation of inherited local manners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The passage uses language of preservation and posthumous justice, but it does not clearly frame these figures through public heritage or safeguarding institutions."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text names inheritance and legacies, but does not clearly describe oral, embodied, familial, or intergenerational transmission as a learning process."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "tradition"
+      ],
+      "target": "Gitano flamenco artists and local styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article strongly canonizes performers through aesthetic judgment and Gitano/local identity framing."
+  },
+  {
+    "article_id": "1992-09-30-left-las-poes-as-de-los-gitanos-publi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se constituyó en el precario sustento documental que la tesis de que el vocablo «flamenco»... debe ser interpretado como «gitano»",
+        "target": "the thesis that flamenco means Gitano",
+        "rationale": "The passage critically evaluates the documentary basis for a major flamenco-origin interpretation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "para que de una vez haya una edición íntegra y accesible del cancionero publicado en 1841 por Borrow",
+        "target": "Borrow's Poesías de los gitanos cancionero",
+        "rationale": "The article frames publication of a complete edition as making source material accessible for knowledge and study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el único valor del testimonio del agente de la Bible Society reside no en su calidad, sino en su antigüedad",
+        "target": "George Borrow's testimony",
+        "rationale": "The passage explicitly evaluates Borrow's testimony, limiting its value to antiquity rather than quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Enrique de Melchor... es una indiscutible primerísima figura en sus diversas facetas: compositor, solista y acompañante",
+        "target": "Enrique de Melchor",
+        "rationale": "The visible ending applies aesthetic criteria and roles to evaluate Enrique de Melchor's standing as guitarist."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text discusses whether flamenco should be interpreted as Gitano, but the visible passage critiques evidence rather than drawing a purity boundary around legitimate flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article concerns historical sources and origins, but the strongest visible function is critical-documentary evaluation and access to source material."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Borrow's documentary authority in flamenco studies",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt clearly evaluates documentary authority and source accessibility."
+  },
+  {
+    "article_id": "1992-09-34-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase «EL FLAMENCO VIVO» is a program title or slogan here, not a clear living-heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief program notice without a clear evaluative, authorizing, pedagogical, communal, or heritage discourse function."
+  },
+  {
+    "article_id": "1992-11-3-left-anselmo-gonz-lez-climent",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha marcado un hito en la historiografía del flamenco",
+        "target": "Anselmo González Climent",
+        "rationale": "The editorial canonizes González Climent as a landmark figure in flamenco historiography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el autor de «Flamencología» ha gozado de unánime estimación por los investigadores más independientes",
+        "target": "González Climent's authority among flamenco researchers",
+        "rationale": "The passage legitimates him through the esteem of independent researchers and scholarly authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el Ayuntamiento de Córdoba... se hizo eco del protagonismo desarrollado por el escritor argentino... y a tal efecto ha promovido la publicación de la correspondencia",
+        "target": "González Climent's role in the Córdoba flamenco contests",
+        "rationale": "Municipal action is presented as official recognition and publication of documentary memory tied to flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "merecen, desde ya, no una sino varias tesis doctorales y, sobre todo, el reconocimiento público",
+        "target": "González Climent's broader intellectual work",
+        "rationale": "The editorial explicitly evaluates the intellectual significance of his work and calls for scholarly recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text mentions official and pangitanista sectors, but the visible passage does not clearly construct an insider/outsider boundary around belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The editorial concerns historiography and recognition, but it does not clearly ground present flamenco value in tradition, roots, or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Anselmo González Climent's place in flamenco historiography",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial both canonizes González Climent and contests his institutional neglect."
+  }
+]

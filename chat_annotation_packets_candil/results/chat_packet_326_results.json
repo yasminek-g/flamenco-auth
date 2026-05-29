@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "1996-11-17-right-sobre-la-poes-a-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "las letras flamencas que pueden ser consideradas poemas sin paliativos... son... muy pocas. Pero las que son, poseen el don más propio de la mejor poesía",
+        "target": "selected flamenco lyrics as poetry",
+        "rationale": "The passage creates a hierarchy within flamenco letras, canonizing only a small subset as true poems with the highest poetic qualities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "poseen el don más propio de la mejor poesía: ser testimonio de una realidad determinada y, a la vez, abrirla a una nueva dimensión",
+        "target": "flamenco lyrics judged as poetry",
+        "rationale": "The author defines aesthetic value through criteria of expressive testimony, poetic transformation, and added reality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "un posible camino de renovación poética partiendo de esta fuente popular, aprovechando sus genuinos reacomodos estróficos",
+        "target": "popular flamenco lyric tradition as a source for poetic renewal",
+        "rationale": "The passage grounds future poetic renewal in a valued popular source and inherited formal resources."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word 'genuinos' appears, but the stronger visible function is tradition/source-based renewal rather than an explicit claim that a flamenco object is truly or properly flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition"],
+      "target": "a small subset of flamenco letras as serious poetry and as a source for renewal",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpt contains sufficient evaluative and tradition-grounding discourse."
+  },
+  {
+    "article_id": "1996-11-18-right-la-est-tica-plural-del-baile-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "hay que saber llegar a un justo equilibrio entre lo que entendemos como baile de «arte» y lo que entendemos por «técnica»",
+        "target": "flamenco dance aesthetics",
+        "rationale": "The author explicitly defines flamenco dance quality through the aesthetic criterion of balance between art and technique."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "No es lo mismo el baile del hombre que el baile de mujer... esa controvertida y eterna disputa de bailes payos y bailes gitanos",
+        "target": "identity categories in flamenco dance",
+        "rationale": "Gendered and ethnic categories are used to organize debate over flamenco dance, even though the author ultimately resists reducing dance to those divisions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "esa controvertida y eterna disputa de bailes payos y bailes gitanos cuando yo creo que lo que existe, por encima de todo, es el BAILE con mayúsculas",
+        "target": "payo/gitano boundary in flamenco dance criticism",
+        "rationale": "The author intervenes in a critical boundary dispute and contests the usefulness of ethnicized divisions by asserting an overarching category of dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'arte puro' appears, but it praises Farruco's jumps rather than drawing a purity boundary around legitimate versus illegitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "community"],
+      "target": "plural aesthetics of flamenco dance and identity-based dance boundaries",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly presents a personal critical position rather than a fixed theory."
+  },
+  {
+    "article_id": "1996-11-20-left-la-est-tica-y-el-braceo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Yo no tengo más remedio que enmendarle y lo haré de manera acorde y consecuente, con juicio crítico basado en uno de los diez puntos del DECÁLOGO DE LA DANZA",
+        "target": "Rafael Valera's question about masculine arm movement",
+        "rationale": "The author claims critical authority to correct another flamenco commentator by invoking Escudero's Decalogue as expert evidence."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "seguir la verdadera tradición del baile flamenco puro (jondo) y masculino",
+        "target": "Escudero's model of male flamenco dance",
+        "rationale": "The passage uses tradition as an authoritative standard for judging proper masculine flamenco dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "baile flamenco puro (jondo) y masculino, con el respeto indispensable a la estética y plástica sin mixtificaciones",
+        "target": "proper masculine flamenco dance",
+        "rationale": "Purity language and 'sin mixtificaciones' draw a boundary around legitimate flamenco dance aesthetics."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "un hombre perdía masculinidad cuando levantaba los brazos por encima de la cabeza",
+        "target": "masculinity in male flamenco dance technique",
+        "rationale": "The article frames the legitimacy of a dance gesture through gendered expectations about masculinity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The interview is described as 'lección y experiencia', but the visible passage chiefly performs criticism and correction rather than establishing a teaching relation or pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "tradition", "criticism", "community"],
+      "target": "the proper interpretation of masculine braceo in flamenco dance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong boundary and expert-correction discourse is visible despite truncation."
+  },
+  {
+    "article_id": "1996-11-21-right-y-se-despertaron-los-duendes-en-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "logró tres formidables malagueñas que harán historia",
+        "target": "Andrés Lozano's malagueñas",
+        "rationale": "The reviewer explicitly praises the performance and judges it as historically significant."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Se bailó por soleá y por alegrías con cierre a la bulería con gracia y temple, pero algo deshilvanado en su ritmo y acompañamiento",
+        "target": "dance performance and accompaniment",
+        "rationale": "The review applies aesthetic criteria such as gracia, temple, rhythm, and accompaniment to judge performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Andrés Lozano, es uno de los pocos que presenta, con toda justicia, el reclamo de un lugar y un sitio en el mundo del cante",
+        "target": "Andrés Lozano's status in flamenco singing",
+        "rationale": "The passage elevates Lozano into a selective hierarchy of artists who deserve a recognized place in the cante world."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'raíces como pueblo' appears, but the visible passage refers broadly to local cultural roots rather than using tradition or roots to authorize a specific flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and promoters are addressed, but they are not clearly positioned as possessing community authority to judge or sustain flamenco in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "performers at the Casabermeja flamenco event, especially Andrés Lozano",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is primarily a performance review with both praise and specific criticism."
+  },
+  {
+    "article_id": "1996-11-22-right-el-flamenco-en-asturias",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Esos cantes los expresaba con buenas maneras y gusto... Con todo, cantaor no desdeñable, ni mucho menos",
+        "target": "José González 'El Presi' as flamenco singer",
+        "rationale": "The passage directly evaluates El Presi's flamenco singing, acknowledging limits while affirming his artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "cantaor no desdeñable, ni mucho menos, este Pepe que —como tantos otros...— tienen en blanco su página en la historia flamenca",
+        "target": "El Presi's place in flamenco history",
+        "rationale": "The author argues that El Presi belongs in flamenco history despite being omitted, creating a corrective canonizing claim."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article discusses regional culture and history, but it does not clearly frame flamenco as public heritage or patrimony in the visible text."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text describes flamenco influence on El Presi's feeling and style, but it does not use roots or continuity as an authority claim for proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "José González 'El Presi' as an overlooked flamenco singer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; strongest discourse is evaluative and corrective-historical rather than heritage or authenticity framing."
+  }
+]

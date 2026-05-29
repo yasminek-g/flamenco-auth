@@ -1,0 +1,203 @@
+[
+  {
+    "article_id": "1988-05-24-right-noticiario-y-buz-n-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The visible text mentions a congress, official reception, registration, and institutional logistics, but these function as administrative event information rather than heritage authorization or patrimonial recognition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The ending lists a flamenco association board, but it is a neutral roster without community authority, afición-based judgment, or belonging work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt is mostly congress logistics, announcements, board names, and advertising; no clear discourse function is supported."
+  },
+  {
+    "article_id": "1988-05-26-left-discograf-a-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only an archive/byline notice and is too short for discourse coding."
+  },
+  {
+    "article_id": "1988-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Me parecen desajustadas sus exégesis..., innecesaria la referencia..., equívoca la valoración..., erróneo el propio concepto de lo jondo.",
+        "target": "Pedro Camacho's analyses in Los Payos cantan Flamenco",
+        "rationale": "The passage explicitly evaluates the book's arguments, naming specific interpretive faults and then balancing them with praise for its rigor."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la absurda dicotomía —al parecer contumaz de muchos, irreductible— cante gitano o cante payo",
+        "target": "gitano/payo identity framing in flamenco interpretation",
+        "rationale": "The editorial treats ethnic identity categories as shaping contested claims about flamenco contribution and belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Los más recientes trabajos de Blas Vega han puesto en evidencia el discriminatorio etnocentrismo de algunos que proclamaban, sin más, la autarquía gitana en el flamenco.",
+        "target": "ethnocentric flamenco scholarship and origin claims",
+        "rationale": "The passage invokes scholarly work as corrective critical authority against a boundary-policing account of flamenco origins."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text calls Camacho and González Climent 'maestros' and 'conspicuos exponentes', but the stronger visible function is critical evaluation and expert authority rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "interpretations of gitano and payo contributions to flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-07-4-right-el-xxviii-festival-nacional-del-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "No hay nada más desagradable y empalagoso que una borrachera de cante malo.",
+        "target": "the singing level at the Festival Nacional del Cante de las Minas",
+        "rationale": "The article opens with a direct negative quality judgment of the festival's cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "a excepción de lo reseñado, «chapeau» para la valentía y el rigor flamenco de los miembros del jurado.",
+        "target": "jury standards and flamenco quality at the contest",
+        "rationale": "The passage applies 'rigor flamenco' and specific performance standards as criteria for evaluating contest decisions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "gentes que blasonan el lirismo aflamencado y que no se atreverían a cantar ni en las tabernas andaluzas para los amigos, cometen la osadía de presentarse a un Concurso Nacional",
+        "target": "unqualified contestants and contest standards",
+        "rationale": "The critique polices a boundary between legitimate flamenco competitors and alleged opportunists or 'advenedizos'."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The word 'participación' concerns low participation in a contest, not a public/private or participatory flamenco setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text praises Vicente Amigo and discusses raising the bar, but the visible evidence mainly performs evaluation and boundary critique rather than sustained canon or ranking construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Festival Nacional del Cante de las Minas contestants, jury, and organizing standards",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible windows contain multiple explicit evaluative and boundary-policing claims."
+  },
+  {
+    "article_id": "1988-07-7-right-conferencia-internacional-dos-si",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Desde la óptica de la profundización analítica del fenómeno flamenco, esta Conferencia ha significado el acontecimiento más relevante de la última década.",
+        "target": "Conferencia Internacional «Dos siglos de Flamenco»",
+        "rationale": "The article explicitly evaluates the conference's importance for flamenco studies."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Gala no hizo un discurso... se limitó a reflexionar sobre el universo flamenco, y lo hizo con tanta lírica penetración, con tan fascinante profundidad, como sólo otro poeta lo haya hecho hace más de medio siglo, Federico García Lorca.",
+        "target": "Antonio Gala's intervention at the conference",
+        "rationale": "The passage elevates Gala by comparison with Lorca, creating a value hierarchy of exemplary poetic reflection on flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "si se acometiera por un equipo de expertos, un estudio musicalógico, riguroso y definitivo, del flamenco",
+        "target": "future musicological study of flamenco",
+        "rationale": "The author grants expert research authority the power to resolve unresolved questions about flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'lo genuino del alma andaluzí' suggests authenticity language, but in context it is lyrical commentary on Gala's reflection rather than a direct claim defining genuine flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes Andalusian identity, but the visible passage does not clearly use that identity to define group belonging or authority within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the conference and expert scholarly study of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt supports strong critical evaluation and expert-authority claims despite truncation."
+  }
+]

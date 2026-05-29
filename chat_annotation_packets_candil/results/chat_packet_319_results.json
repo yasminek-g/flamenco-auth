@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "1996-05-17-left-manuel-balmaseda-gonz-lez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Por este estilo continúa la carta, transcribiendo también algunas de sus coplas que poseen un gran sentimiento y profundidad",
+        "target": "las coplas de Manuel Balmaseda",
+        "rationale": "The passage explicitly evaluates Balmaseda's coplas as possessing feeling and depth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Muy sentidas son sus seguidillas gitanas; de ellas puede decirse... que son 'delicados poemas de dolor'.",
+        "target": "las seguidillas gitanas de Balmaseda",
+        "rationale": "The assessment uses emotional force, pain, and poetic delicacy as criteria for valuing the flamenco-related verses."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text calls the cancionero an 'herencia', but the frame is mainly literary/familial and charitable rather than clearly public cultural heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Balmaseda is praised and linked to Demófilo and Pitre, but the visible text does not clearly build a flamenco canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manuel Balmaseda's flamenco coplas and seguidillas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-05-22-right-homenaje-a-fausto-olivares",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Some listed titles mention roots, canons, and jondo colors, but titles alone do not provide enough discourse function for coding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is essentially a table of contents or title list for a homage section, so there is not enough visible argument to annotate conservatively."
+  },
+  {
+    "article_id": "1996-05-23-right-salgan-por-esas-ventanas-los-tra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "De Jaén... de un pueblo con el que siempre era y del que respiraba sin esfuerzo cuanto de jondo y de hondo tenía su cultura. Lo esencial andaluz fue para él masa viva, forma definitiva, no un añadido.",
+        "target": "la pintura jonda de Fausto Olivares",
+        "rationale": "Fausto's artistic value is grounded in rooted Andalusian and local cultural belonging, presented as essential rather than decorative."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el magnetofón gira incansable con los más serios y ortodoxos cantes... Fausto... se estremece a cada compás del grito",
+        "target": "los cantes que informan la pintura de Fausto",
+        "rationale": "The text uses seriousness, orthodoxy, compás, and expressive cry as aesthetic criteria that structure the value of the cante and its pictorial translation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "en la pintura de Fausto Olivares anida toda la fuerza vital del cante, cuando ya el cante se ha ido",
+        "target": "la pintura de Fausto Olivares",
+        "rationale": "The passage explicitly evaluates Fausto's painting as carrying the vital force of cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Although compás appears, the passage describes aesthetic reaction and inspiration rather than embodied oral transmission or learning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Terms such as 'puros' and 'ortodoxos' appear, but the stronger visible function is aesthetic valuation and rootedness, not a direct authenticity claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fausto Olivares's flamenco painting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-05-25-right-que-ya-no-estaba-pero-est",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ni escuchando mejor que nadie unas cantiñas... expuesta sobre trémulos fondos, paisajes del deseo que la nutre y enciende como a la voz una guitarra",
+        "target": "Fausto Olivares and his painting",
+        "rationale": "The text offers an evaluative memorial portrait of Fausto as an especially perceptive flamenco listener and painter whose work is aesthetically linked to flamenco expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'mejor que nadie' is comparative, but it is too brief and elegiac to establish a broader hierarchy or canon."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'puro, oscuro amor biológico' is poetic description of the paintings, not a direct authenticity claim about flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fausto Olivares's artistic memory and painting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-05-26-right-fausto-olivares",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "poníamos nuestros reparos a las deficiencias, “condenábamos” los cruces indebidos, los desafinamientos, etc.",
+        "target": "improper flamenco crossings and deficient practice",
+        "rationale": "The passage draws a boundary around proper flamenco by condemning inappropriate crossings and deficiencies."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La pintura sobre flamenco estaba en manos de pseudoartistas, desprestigiada y vulgarizada hasta el descrédito... nuestro interés por el 'saneamiento' de este aspecto",
+        "target": "vulgarized flamenco painting by pseudoartists",
+        "rationale": "The author uses expert-critical boundary language to delegitimate vulgarized flamenco painting and frame reform as necessary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco ha perdido un defensor de sus valores fundamentales",
+        "target": "Fausto Olivares",
+        "rationale": "The passage evaluates Fausto as a defender of flamenco's fundamental values."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición and shared conversations appear, but the stronger coding evidence concerns critical boundary work rather than community authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Recovery and asentamiento are mentioned, but the passage does not clearly ground present value in roots, origin, or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Fausto Olivares as defender of flamenco values and critic of vulgarized flamenco painting",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

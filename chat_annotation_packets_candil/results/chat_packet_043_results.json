@@ -1,0 +1,234 @@
+[
+  {
+    "article_id": "1982-03-11-left-las-saetas-de-miguel-calvo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miguel Calvo nos da hoy cumplida muestra de su hacer flamenco con esta gavilla de saetas, íntimas, naturales y sentidas",
+        "target": "las saetas de Miguel Calvo",
+        "rationale": "The passage explicitly praises Calvo's saetas as intimate, natural, and felt, making a clear evaluative judgment of flamenco work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to 'pueblo y lo popular' suggests popular grounding, but it functions mainly as biographical characterization rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "las saetas de Miguel Calvo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-03-11-right-una-saeta-para-manolo-zapata",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la voz montaña de Monolo Zapata, un hombre bueno que, en vez de escribir versos como los demás habitantes de mi Arcos, los dibujaba en el aire",
+        "target": "Manolo Zapata",
+        "rationale": "The passage gives strong aesthetic and moral praise to Zapata's voice and artistry."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Zapata ya era una institución para el pueblo liso y llano",
+        "target": "Manolo Zapata's local flamenco standing",
+        "rationale": "Local popular recognition is presented as the basis for Zapata's authority and importance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ya va siendo hora de que Arcos, su pueblo y el mío, le restituya cuanto le han quitado, le rinda un homenaje",
+        "target": "public memory of Manolo Zapata and his saeta",
+        "rationale": "The passage calls for communal restitution and public commemoration of Zapata, framing his saeta as a local memory object."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text evokes local continuity and future recognition, but it does not clearly use tradition or roots to authorize a present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "heritage"
+      ],
+      "target": "Manolo Zapata",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-03-12-left-una-manera-de-ser-y-entender-el-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "a pesar de ciertos intentos masificadores, que han tratado de mercantilizarlo",
+        "target": "massified or commercialized flamenco",
+        "rationale": "The article frames massification and commercialization as threats to flamenco's proper expressive nature."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "una Peña debe estar creada para escuchar, no para oír; para hacer aficionados, no simples espectadores",
+        "target": "the peña as a participatory flamenco setting",
+        "rationale": "The passage explicitly contrasts active, knowledgeable participation with passive spectatorship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la comunicación artista-aficionado tiene su sitio entre pocos",
+        "target": "artist-aficionado communication within peñas",
+        "rationale": "Flamenco value is grounded in small-scale aficionado community and the authority of intimate artist-listener interaction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'para enseñar, no para confundir' is pedagogical, but the stronger discourse function is the peña's communal and participatory authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article draws boundaries around proper peña behavior, but the main boundary work is anti-commercial/intimate rather than purity rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "peñas flamencas and anti-commercial flamenco practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-03-12-right-noticias-de-algo-mas-que-de-una-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "como ha sido señalado por Arcadio Larrea, que nos sirve la literatura española noticias «sobre un cante considerado flamenco, interpretado precisamente por gitanos»",
+        "target": "the literary-historical significance of Cadalso's account of the polo",
+        "rationale": "The passage invokes an expert authority to classify the text as significant evidence about a flamenco cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la VII ... se nos viene con el alto interés de un monumento literario sobre uno de nuestros cantes, el polo",
+        "target": "Cadalso's Carta VII as a source on the polo",
+        "rationale": "The article elevates the text as a literary monument and early authoritative point in the canon of writings on a flamenco cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article concerns early historical evidence, but it does not clearly use origin or continuity to authorize present flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The word 'crítica' mainly describes Cadalso's critique of Spain, not a direct evaluation of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Cadalso's literary account of the polo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; the annotation is limited to the visible beginning, evidence window, and ending."
+  },
+  {
+    "article_id": "1982-03-13-right-x-congreso-de-actividades-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Hay planos que alumbrar desde una óptica antropológica, musical y cultural, etc.",
+        "target": "the Congress's flamenco knowledge program",
+        "rationale": "The Congress is framed as an institutional setting for producing and circulating flamenco knowledge across scholarly perspectives."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Se han considerado los criterios de valoración que han de primar en el sistema de selección de Ponencias",
+        "target": "selection of Congress papers and communications",
+        "rationale": "The passage grants evaluative authority to selection criteria that determine which flamenco contributions count as substantively valuable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Congress is institutional, but the visible text lacks explicit heritage or patrimonial framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The comment on Kayros and social festivities is evaluative, but it is secondary to the clearer institutional criteria and knowledge-production discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "X Congreso de Actividades Flamencas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

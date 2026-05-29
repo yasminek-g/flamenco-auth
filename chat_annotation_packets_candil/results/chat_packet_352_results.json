@@ -1,0 +1,274 @@
+[
+  {
+    "article_id": "1998-05-43-left-retrato-de-silverio-franconetti",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Su grito fue terrible. Los viejos dicen que se erizaban los cabellos... Y fue un creador y un jardinero.",
+        "target": "Silverio Franconetti",
+        "rationale": "The poem evaluates Silverio's cante as powerful and artistically creative rather than merely describing him."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Ahora su melodia duerme con los ecos. Definitiva y pura.",
+        "target": "Silverio Franconetti's melody/cante",
+        "rationale": "The passage applies aesthetic criteria of definitiveness and purity to characterize the value of his cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'pura' appears, but it does not draw a boundary excluding impure or illegitimate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Silverio is praised as a creator, but the visible poem does not clearly rank or canonize him within a hierarchy of flamenco artists."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Silverio Franconetti as a powerful and creative cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic language is coded only where it performs clear evaluation of the flamenco artist or cante."
+  },
+  {
+    "article_id": "1998-05-43-right-importancia-hist-rica-y-art-stic",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "¡El tesoro artístico de toda una raza va camino del olvido!... Es una obra patriótica y digna la que se pretende realizar; es una obra de salvamento",
+        "target": "cante jondo as endangered Andalusian cultural treasure",
+        "rationale": "The passage frames cante jondo as a collective cultural treasure threatened by oblivion and requiring active safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "No es posible que las canciones más emocionantes y profundas de nuestra misteriosa alma, estén tachadas de tabernarias y sucias",
+        "target": "cante jondo",
+        "rationale": "The text rejects degraded stereotypes of cante jondo as tabernary or dirty and defends it as profound and legitimate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "las voces de músicos, poetas y artistas españoles, se unan, por instinto de conservación, para definir y exaltar las claras bellezas y sugestiones de estos cantos",
+        "target": "cante jondo",
+        "rationale": "The passage assigns artists and intellectual voices authority to define and exalt cante jondo's value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "a todos los amantes de la tradición engarzada con el porvenir... que no dejen morir las inapreciables joyas vivas de la raza, el inmenso tesoro milenario",
+        "target": "cante jondo / Andalusian song tradition",
+        "rationale": "The text legitimates cante jondo through tradition, millennial continuity, and survival into the future."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The reference to 'pasadas generaciones' concerns loss and heritage continuity, not a clear mode of oral, embodied, or lineage-based transmission."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The passage has strong public cultural value language, but HERIT_03 more precisely captures the safeguarding and living-treasure frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage praises depth and beauty, but the stronger discourse function is expert definition and boundary defense rather than applying aesthetic criteria to a performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "authenticity", "tradition", "criticism"],
+      "target": "cante jondo as endangered, profound, and culturally authoritative Andalusian art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough explicit safeguarding, boundary, and definitional discourse to code confidently."
+  },
+  {
+    "article_id": "1998-05-50-left-teor-a-y-juego-del-duende",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Tú tienes voz, tú sabes los estilos, pero no triunfarás nunca, porque tú no tienes duende.",
+        "target": "flamenco singing/performance quality",
+        "rationale": "Duende is used as a decisive aesthetic criterion that determines whether a technically capable performer can truly triumph."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Manuel Torre, gran artista del pueblo andaluz, decía... 'Todo lo que tiene sonidos negros tiene duende.'",
+        "target": "duende as a criterion of artistic value",
+        "rationale": "The argument authorizes the definition of duende through named flamenco artists and culturally recognized expert voices."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The speaker calls the talk a 'lección', but the excerpt defines an aesthetic concept rather than establishing pedagogical authority over flamenco teaching."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'raíces' appears in a metaphorical definition of duende, but it does not clearly ground flamenco value in tradition or continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'la gente habla constantemente del duende' suggests popular recognition, but it is not enough to code community authority beyond the stronger expert/aesthetic framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "duende as an authoritative aesthetic criterion for flamenco and broader Spanish art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible duende discussion is sufficient for aesthetic-criteria coding."
+  },
+  {
+    "article_id": "1998-05-54-left-el-poeta-de-granada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "No ha existido criatura en las letras hispanas -tal vez Lope de Vega- con tanta luminosidad, poderío y duende como García Lorca",
+        "target": "Federico García Lorca",
+        "rationale": "The passage canonizes Lorca through an explicit superlative comparison within Hispanic letters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Tanta fuerza tuvo el grito de Lorca que aquella voz fue arropada por escritores, catedráticos, pintores y músicos de renombre",
+        "target": "Lorca's intervention around cante jondo",
+        "rationale": "The text positively evaluates the force and cultural impact of Lorca's voice in mobilizing support for cante jondo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The word 'duende' is used in praise of Lorca, but the passage does not define or apply it as a distinct aesthetic criterion for flamenco performance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The mention of writers, professors, painters, and musicians supporting the Concurso suggests elite recognition, but the passage does not frame it as official or institutional heritage authorization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitanos and Granada appear in the poem, but they function as elegiac imagery rather than identity-based authority or belonging discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Federico García Lorca as a canonical poet and influential figure in cante jondo discourse",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the poem is elegiac; codes are based on explicit evaluative and canonizing prose near the end."
+  },
+  {
+    "article_id": "1998-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fernando Romero... con una puesta en escena plena de fantasía de movimientos, realizados con una técnica irreprochable y mucha riqueza de ritmo y compás",
+        "target": "Fernando Romero's baile / staging",
+        "rationale": "The editorial explicitly evaluates a flamenco performance using praise of staging, technique, rhythm, and compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "técnica irreprochable y mucha riqueza de ritmo y compás",
+        "target": "flamenco baile quality",
+        "rationale": "Technique, rhythm, and compás are named as aesthetic criteria for evaluating flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "los consagrados y eminentes coreógrafos de la talla de Mario Maya, María Pagés, Manolo Marin",
+        "target": "Mario Maya, María Pagés, Manolo Marín and other Bienal artists",
+        "rationale": "The text constructs a hierarchy of status by distinguishing consecrated and eminent choreographers from other participants."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "gracias a la dinámica organizativa de las instituciones patrocinadoras, presionadas por el colectivo de aficionados",
+        "target": "the aficionado collective in relation to the Bienal",
+        "rationale": "Aficionados are presented as a collective with enough social authority to pressure institutions and sustain flamenco events."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The editorial mentions study, diffusion, ponencias, and knowledge expansion, but it does not clearly frame institutional or transnational learning access as the main discourse function."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions sponsor and organize events, but the visible text does not explicitly frame this as heritage authorization or official patrimonial recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Family trajectory and traditional forms are mentioned, but they do not clearly ground present value in tradition or continuity beyond descriptive evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "contemporary flamenco events, artists, and aficionado-supported institutional activity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The editorial contains broad event reporting, but the emitted codes are limited to explicit evaluation, hierarchy, aesthetic criteria, and aficionado authority."
+  }
+]

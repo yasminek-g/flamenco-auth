@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "1986-07-16-left-las-coplas-de-paco-salguero",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The dedication says 'por su verdad' and the poem uses truth-like language, but it does not clearly attribute flamenco authenticity or properness to a flamenco actor or practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text with no clear evaluative, pedagogical, communal, heritage, or critical discourse about flamenco in the visible excerpt."
+  },
+  {
+    "article_id": "1986-07-16-right-un-curso-de-flamenco-para-ense-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "llevar el Flamenco a nuestras escuelas e institutos",
+        "target": "school and institute access to flamenco education in Andalucía",
+        "rationale": "The passage explicitly frames flamenco knowledge as entering formal educational institutions through a course for teachers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "la preparación de estos futuros profesores-animadores de Flamenco había de superar un doble reto: conseguir que llegaran a conocer y, sobre todo, a «sentir» estos cantes",
+        "target": "future flamenco teachers and the course pedagogy",
+        "rationale": "The course legitimates teachers as mediators of flamenco knowledge and defines what they must know and feel in order to teach."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "propiciar unas vivencias auténticas... con la verdad desnuda del cante, con un recital en directo",
+        "target": "direct recital-based experience of cante",
+        "rationale": "The article presents live cante experience as the genuine way to grasp flamenco beyond printed curriculum."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Calixto Sánchez ha sabido dar lo que no es posible encontrar en ningún libro: el comentario esclarecedor inmediato a la ejecución magistral de cualquier tercio de cualquier cante",
+        "target": "Calixto Sánchez's teaching and performance in the course",
+        "rationale": "The passage explicitly praises Sánchez's explanatory and performative quality as exemplary within the course."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article links flamenco to schools, roots, and cultural initiative, but the visible discourse is primarily pedagogical rather than explicit safeguarding or heritage-management language."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "institutional flamenco education for teachers and schools",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article clearly frames formal education as a route for transmitting flamenco, while insisting that authentic live experience is necessary."
+  },
+  {
+    "article_id": "1986-07-17-right-carta-abierta-a-cr-ticas-cerrada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Yo no niego... la naturaleza imprescindible del compás como sostén estructural del contenido musical... nunca la resolución total",
+        "target": "compás as an aesthetic criterion for cante",
+        "rationale": "The author defines compás as necessary but insufficient, explicitly debating the criteria by which cante should be judged."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "repetir por sistema lo que oyeron sin reparar inteligentemente en ninguna posibilidad analítica, continuar rutinariamente la defensa ciega de unos principios anquilosados",
+        "target": "critics or commentators who reduce cante to inherited formulas about compás",
+        "rationale": "The passage criticizes a closed critical discourse and claims analytic authority against routine formulaic judgments."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "los verdaderos cantaores que se enfrentan con el Cante por derecho y con respeto",
+        "target": "true cantaores and proper engagement with cante",
+        "rationale": "The author invokes true singers and proper respectful performance as a standard of legitimate cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Compás is central, but the visible passage debates aesthetic judgment rather than embodied/oral transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "claims that cante is reducible to compás",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is a polemical argument over critical criteria, not a pedagogical discussion of learning compás."
+  },
+  {
+    "article_id": "1986-07-19-left-porrina-de-badajoz-cantaor-extre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el reconocimiento de Porrina de Badajoz como artista genial en su tierra natal",
+        "target": "Porrina de Badajoz",
+        "rationale": "The text canonizes Porrina by seeking public recognition of him as a genial artist in his home region."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "culminará con la ubicación de un busto del cantaor en su ciudad natal, Badajoz",
+        "target": "public commemoration of Porrina de Badajoz",
+        "rationale": "A formal bust in the singer's birthplace functions as institutional/public recognition of cultural value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "«Gitano y de Badajoz», definición que con toda probabilidad llevará debajo de su nombre en el monumento",
+        "target": "Porrina's gitano and Badajoz identity",
+        "rationale": "The proposed monument inscription makes ethnic and local identity central to how the singer is represented and remembered."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "grandes figuras del espectáculo flamenco... oscurecidos con la llegada de la moderna etapa flamenca de los festivales y que merecen, cuando menos, nuestra atención",
+        "target": "Porrina and other older spectacle flamenco figures",
+        "rationale": "The article evaluates a neglected generation of artists as deserving renewed attention for their artistic value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text mentions triumphing 'fuera' and keeping ties to the homeland, but this is a local recognition narrative rather than a clear insider/outsider boundary of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "community"
+      ],
+      "target": "Porrina de Badajoz and neglected flamenco spectacle artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text performs regional canonization and public commemoration rather than simply biography."
+  },
+  {
+    "article_id": "1986-07-21-right-fosforito-o-la-personalidad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Fernández Díaz, la actual cabeza rectora del Cante",
+        "target": "Fosforito / Antonio Fernández Díaz",
+        "rationale": "The phrase places Fosforito at the top of a hierarchy as the current guiding figure of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su sentido del deber, de su profesionalidad entendida y sentida vocacionalmente, ha hecho a lo largo de su vida una permanente autoexigencia",
+        "target": "Fosforito's professional conduct",
+        "rationale": "The article explicitly evaluates Fosforito's professional ethics and self-discipline as exemplary artistic qualities."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "conformando, entre otros rasgos que se dan en el artista... la adquisición del título de Maestro",
+        "target": "Fosforito's status as Maestro",
+        "rationale": "The passage legitimates Fosforito's title of Maestro through vocation, responsibility, and artistic-professional qualities."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The title 'Maestro' is used as an artistic honorific, not as evidence that Fosforito is positioned as an authorized teacher or transmitter in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Fosforito as exemplary professional and maestro",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The piece is primarily a laudatory critical profile that canonizes professional ethos."
+  }
+]

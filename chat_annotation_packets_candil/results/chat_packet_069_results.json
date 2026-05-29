@@ -1,0 +1,257 @@
+[
+  {
+    "article_id": "1983-03-10-right-antecedente-teresiano-del-mirabr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "este intento de enraizar un cante flamenco, el «mirabrás», con manifestaciones musicales gallegas",
+        "target": "the mirabrás as rooted in earlier musical/literary traditions",
+        "rationale": "The article explicitly seeks to root a flamenco cante in earlier cultural forms, using origin and continuity to authorize the mirabrás historically."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "sostiénen los flamencólogos que «mirabrás» provenía de la unión fonética de «mira, Blas». Desde luego me sumo a esta interpretación.",
+        "target": "flamencological interpretation of the origin of mirabrás",
+        "rationale": "The author invokes and aligns with flamencologists' interpretive authority to define the cante's etymological and historical origin."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "tal vez el más evidente y más antiguo que se conoce",
+        "target": "the Teresian villancico as antecedent of the mirabrás",
+        "rationale": "The passage ranks the proposed antecedent as possibly the clearest and oldest known example, constructing historical priority and importance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article discusses transmission and deformation of words, but the visible excerpt mainly makes origin and scholarly-interpretive claims rather than showing embodied or oral learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the mirabrás as historically rooted in older popular/religious textual and musical forms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for origin and expert-interpretive coding."
+  },
+  {
+    "article_id": "1983-03-13-right-el-cante-jondo-en-antonio-machad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el libro, plagado de erratas de imprenta, faltas de ortografía y mal quehacer impresor",
+        "target": "Manolo Urbano's book El cante jondo en Antonio Machado",
+        "rationale": "The review explicitly judges the book's material and editorial quality negatively."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "lo que constituye algo así como un «criticar al crítico»",
+        "target": "Manolo Urbano as critic and the reviewer's critical authority",
+        "rationale": "The article foregrounds a critic reviewing another critic and contests Urbano's interpretive authority over Machado and cante jondo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una no muy cuidada elaboración, más pseudoliteraria que flamenca",
+        "target": "the interpretive substance of Urbano's essay",
+        "rationale": "The passage delivers a final evaluative judgment that the work is poorly made and insufficiently flamenco in substance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The review quotes Urbano's framing of exploited Andalusian women, but this is embedded in a critique of Urbano's interpretation rather than an emitted identity-authority claim by the article itself."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text mentions copla jonda and flamenca, but does not clearly assert authenticity or proper flamenco beyond critical evaluation of the book."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo Urbano's book and interpretive authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-14-right-ellos-los-protagonistas-dicen-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "yo he escuchado allí a muchos artistas... he recibido influencia de los cantaores de Mairena",
+        "target": "Calixto Sánchez's flamenco formation",
+        "rationale": "The speaker grounds his cante in listening, local influence, and situated exposure to older artists, a clear oral/community transmission claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los pueblos estan perdiendo su identidad y muchos de ellos sus raíces",
+        "target": "local flamenco roots and village identity",
+        "rationale": "The passage frames flamenco value through roots and local identity, while warning that these are being lost in a new flamenco era."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "la Universidad tendría un buen papel en esta labor, organizando aulas de cultura flamenca, coloquios, conferencias, recitales",
+        "target": "institutional flamenco education through universities and cultural bodies",
+        "rationale": "The speaker proposes universities, peñas, and public institutions as organized channels for teaching and disseminating flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Mairena is presented as a cantaor community with shared knowledge, but the stronger visible function is transmission of influence and roots."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The ending proposes maintaining and diffusing flamenco, but it is framed more directly as institutional pedagogy than explicit heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Calixto Sánchez's local roots and broader flamenco transmission through community and institutions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but visible passages clearly support transmission, roots, and institutional pedagogy."
+  },
+  {
+    "article_id": "1983-03-16-left-rememorando-a-rafael-de-leon",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "fue, además, uno de los grandes del cancionero español popular y andaluz",
+        "target": "Rafael de León within Spanish popular and Andalusian song",
+        "rationale": "The article canonizes Rafael de León by placing him among the great figures of the Spanish popular and Andalusian songbook."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "autor de las más y mejores letras del cancionero popular de su tiempo",
+        "target": "Rafael de León's song lyrics",
+        "rationale": "The passage explicitly evaluates his lyrics as among the most numerous and best of his time."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The remembrance connects Rafael de León to popular Andalusian song and cante grande, but it does not clearly use tradition or continuity as the main authorizing basis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Rafael de León as a major poet and lyricist of popular Andalusian song and cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-16-right-arbol-del-tango-gitano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "TANGO: Cante atribuido a la raza gitano-andaluza. Su raíz suponemos está en Sevilla, Cádiz o Los Puertos.",
+        "target": "tango gitano and its origin",
+        "rationale": "The article grounds the tango gitano in ethnic-regional roots and named places of origin, using origin to define the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los intérpretes actuales confunden el TANGO GITANO por el TIENTOS y cuando creen estar cantando por TANGO GITANO lo hacen realmente por TANGO LIGERO",
+        "target": "current performers' confusion of tango gitano, tientos, and tango ligero",
+        "rationale": "The author polices stylistic boundaries and criticizes performers for misidentifying and confusing related flamenco forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "De tercios muy ligeros y de aire festero, se sale, desde mi punto de vista, fuera de la órbita flamenca",
+        "target": "tanguillo de Cádiz",
+        "rationale": "The passage applies aesthetic/stylistic criteria such as tercios, aire festero, and flamenco orbit to judge a form's flamenco status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text names best and great interpreters, but the more central discourse is origin definition and boundary critique among styles."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The statement that tanguillo falls outside the flamenco orbit has purity-boundary implications, but it is better captured as critical stylistic boundary policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "tango gitano as a rooted flamenco form distinguished from tientos, tango ligero, and tanguillo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt clearly supports origin and boundary-critique coding."
+  }
+]

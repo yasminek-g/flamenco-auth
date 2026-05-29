@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "1997-11-20-right-juan-de-loxa-me-presta-dos-poema",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Morente, una vez más, nos entrega su arte",
+        "target": "Enrique Morente",
+        "rationale": "The passage explicitly praises Morente's artistic delivery and frames the essay as a reaffirmation of his recognized artistic personality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "no entraré pues, en el círculo de la ortodoxia, ni aplaudiré la llamada pureza que, de voz en voz, la historia me dice. Sólo deseo sumergirme, con el cantaor... Quiero libre al artista.",
+        "target": "orthodox/purity-based judgments of Morente's flamenco",
+        "rationale": "The writer uses critical discourse to reject orthodoxy and inherited purity as limiting frames for evaluating the artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Morente cuando canta pone música al pensamiento, compás a la palabra, grito a la creación.",
+        "target": "Morente's singing",
+        "rationale": "The passage applies aesthetic criteria such as compás, voice, expressive force, and creative intensity to value Morente's cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text mentions ortodoxia and pureza, but mainly rejects these as critical frames rather than drawing its own purity boundary around proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "authenticity"],
+      "target": "Enrique Morente's free and creative flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is poetic and evaluative; codes are limited to clear judgment and boundary-critique passages."
+  },
+  {
+    "article_id": "1997-11-21-left-gloria-y-honores-a-t-o-evaristo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Tío Evaristo, flamenco cabal y hombre de bien donde los haya",
+        "target": "Tío Evaristo",
+        "rationale": "Calling him a 'flamenco cabal' presents him as a proper and genuine flamenco figure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "los muchos momentos vividos en tu Sociedad de Cante Grande, donde nos dábamos cita con muchos y buenos flamencos algecireños",
+        "target": "Tío Evaristo and the Algeciras flamenco community",
+        "rationale": "The passage grounds Evaristo's value in peña-like sociability and recognition among 'buenos flamencos' in a local flamenco community."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Evaristo Heredia Maya ha puesto de manifiesto su enorme sapiencia... por sus muchos conocimientos, por la veracidad y frescura de sus palabras y por su lealtad flamenca",
+        "target": "Evaristo Heredia Maya's interview and flamenco knowledge",
+        "rationale": "The passage explicitly evaluates Evaristo's knowledge, truthfulness, freshness, and flamenco loyalty."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "Tío Evaristo as a respected local flamenco authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is a tribute that legitimates Evaristo through cabal authenticity, community belonging, and praised knowledge."
+  },
+  {
+    "article_id": "1997-11-21-right-t-o-mollino-tras-un-a-o-de-su-mu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "prestigiar y defender nuestras raíces en Andalucía",
+        "target": "Andalusian flamenco roots",
+        "rationale": "The passage grounds the duty to honor Tío Mollino in defending Andalusian roots and cultural continuity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "los munícipes algecireños al frente de su alcalde no tomen acuerdos para inmortalizar su arte y su memoria, ni tan siquiera con el nombre de una calle de su pueblo",
+        "target": "official commemoration of Tío Mollino",
+        "rationale": "The passage explicitly criticizes municipal authorities for failing to confer public recognition through a commemorative street name."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "La memoria de este gitano trovador de ‘sonidos jondos’ nos exige su recuerdo, nos invita a la reflexión de un Arte como el nuestro que se nos cae a jirones por los pueblos de nuestra Andalucía.",
+        "target": "memory of Tío Mollino and local flamenco culture",
+        "rationale": "The passage frames flamenco memory as a collective obligation and presents local flamenco culture as endangered and needing safeguarding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article criticizes media and institutional neglect, but the stronger discourse function is heritage-memory safeguarding rather than expert criticism of flamenco forms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["heritage", "tradition", "community"],
+      "target": "Tío Mollino's flamenco memory and the obligation to recognize neglected artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article strongly combines official commemoration, memory-work, and rooted Andalusian cultural value."
+  },
+  {
+    "article_id": "1997-11-23-left-paul-villmoare-cante-puro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El entiende ‘como flamenco ‘puro’, no sólo lo ya establecido y tradicional, sino cualquier creación, innovación o fragmento espontáneo, basado en la tradición flamenca que caiga dentro de los límites del palo que pretende ser... y que suene flamenco’.",
+        "target": "definitions of pure flamenco and flamenco fusion",
+        "rationale": "The quoted definition draws a boundary for pure flamenco by requiring tradition, palo limits, compás, structure, and a flamenco sound."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "si alguien va a intentar aportar algo nuevo al flamenco, tiene que tener un dominio del pasado del flamenco",
+        "target": "new flamenco creation",
+        "rationale": "The passage authorizes future innovation only through mastery of flamenco's past and traditional foundations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Crean bodrios por desconocimiento de los prototipos tradicionales. Es una falacia lo de neoflamenco porque su contenido de flamenco no tiene nada",
+        "target": "neoflamenco and poorly grounded new flamenco attempts",
+        "rationale": "The passage uses authoritative critique to police boundaries against creations judged empty of flamenco content."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Antonio Escribano is called the writer's maestro, but the passage mainly uses him as an authoritative evaluator rather than describing a teaching relation or method."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "tradition", "criticism"],
+      "target": "pure flamenco, fusion, and legitimate innovation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "This article contains explicit definitional boundary-work around pure flamenco, fusion, tradition, and neoflamenco."
+  },
+  {
+    "article_id": "1997-11-23-right-dos-genios-cruzan-sus-corazones",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Según la valoración del jurado, el nivel de los finalistas alcanzó cotas de gran calidad. El ganador, Rubén Díaz Lavariego, ya es algo más que una firme promesa.",
+        "target": "Rubén Díaz Lavariego and the contest finalists",
+        "rationale": "The passage directly evaluates the finalists' quality and elevates the winner beyond the status of a mere promise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El toque del niño le producía cosquilleo, tenía ángel... La complejidad del duende de los genios.",
+        "target": "Rubén Díaz's toque and the Chano-Habichuela performance moment",
+        "rationale": "The passage applies aesthetic criteria such as toque, ángel, and duende to explain flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Juan Carmona ‘Habichuela’, el maestro... Dos titanes en el tablao. Chano y El Habichuela... Dos genios cruzan sus corazones.",
+        "target": "Chano Lobato and Juan Carmona Habichuela",
+        "rationale": "The passage canonizes Chano and Habichuela through master, titan, and genius language that constructs hierarchy and exemplary status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña and 'cabales' mark a knowledgeable community setting, but the article's dominant discourse is critical evaluation and canonizing praise rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Rubén Díaz, Chano Lobato, and Juan Carmona Habichuela as valued flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article moves from contest report to highly evaluative canonizing prose around Chano and Habichuela."
+  }
+]

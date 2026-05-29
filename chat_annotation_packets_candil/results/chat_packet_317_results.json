@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "1996-03-18-right-manuel-yerga-lancharro-enderezan",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Una vez que he leído el fantástico álbum que contiene una relación completa de los cantes, he observado los siguientes errores, producto de un total y absoluto desconocimiento de los cantes",
+        "target": "Fonobrón album classifications of Chacón recordings",
+        "rationale": "The author claims expert authority to correct mislabeled cantes and frames the label's classifications as ignorance requiring correction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no digan ustedes seguidillas, digan seguiriya o bien siguiriya. Sepan que las seguidillas son chambergas, boleras, manchegas, etc., que nada tienen que ver con las siguirias flamencas",
+        "target": "incorrect use of 'seguidillas' for flamenco siguiriyas",
+        "rationale": "The passage explicitly evaluates and rejects an incorrect flamenco classification."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "tendrían que agradecerme mis enseñanzas",
+        "target": "record companies commercializing flamenco cantes",
+        "rationale": "The author positions his corrections as instruction that teaches companies what they do not know about flamenco categories."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "commercial record-label classifications of flamenco cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; coding centers on correction of cante labels and the author's claimed authority to define proper terminology."
+  },
+  {
+    "article_id": "1996-03-19-left-la-fascinaci-n-literaria-por-el-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Se revalorizan así los antiguos poemas épicos o legendarios, las canciones, las tradiciones locales, se favorece el cultivo de las lenguas vernáculas",
+        "target": "Romantic valuation of local popular traditions",
+        "rationale": "The passage explains how Romantic discourse authorizes culture through old poems, songs, local traditions, and vernacular languages."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Andalucía cuenta con una forma de arte distinta y que refleja netamente la expresión de todo un pueblo: el flamenco",
+        "target": "flamenco as expression of the Andalusian people",
+        "rationale": "Flamenco is framed through collective identity, as the expression of an entire people."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El flamenco se ofrece a la mirada fascinada del escritor como una forma pura de la pasión, como un arte virgen, incontaminado aún por la uniformidad de la sociedad burguesa occidental",
+        "target": "literary/Romantic construction of flamenco",
+        "rationale": "The passage presents flamenco through purity and uncontaminated-art language, drawing a boundary against bourgeois uniformity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The purity claim also implies authenticity, but the stronger visible discourse function is purity/contamination boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "community"],
+      "target": "flamenco as imagined by Romantic and modernist literary discourse",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article, but the visible window gives enough evidence for Romantic tradition, collective-identity, and purity discourse."
+  },
+  {
+    "article_id": "1996-03-22-right-la-comunicaci-n-catalu-a-pionera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la prestigiosa firma Bèrben en Ancona (Italia) cuyo primer volumen... se debe al cualificado autor Mario Dell'Ara y el segundo... al no menos cualificado profesor, guitarrista y compositor Angelo Gilardino",
+        "target": "scholarly histories of the guitar and their authors",
+        "rationale": "The passage authorizes guitar history through prestige, qualified authorship, and specialist expertise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Recomendamos la lectura de esta monumental obra italiana a todos cuantos se interesen por la historia del instrumento musical más español",
+        "target": "Manuale di Storia della Chitarra",
+        "rationale": "The work is elevated as a monumental reference for the history of the Spanish guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Ayuntamiento de Córdoba and specialist publications suggest institutional cultural work, but the visible text frames this mainly as scholarship, not explicit heritage authorization."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article concerns guitar history and didactics in the title, but the visible excerpt does not clearly frame learning access or pedagogy as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "specialist scholarship on the history of the Spanish guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Ending context is OCR-damaged, so codes rely only on the readable beginning and evidence window."
+  },
+  {
+    "article_id": "1996-03-24-right-el-flamenco-ante-la-juventud",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "la problemática que aquélla encuentra para sintonizar con dicho arte. Dificultades de la juventud para acceder al Flamenco",
+        "target": "young people's access to flamenco",
+        "rationale": "The article explicitly frames youth as facing access difficulties in relation to flamenco knowledge and reception."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "esta juventud está desatendiendo y haciendo caso omiso a sus raíces, tradición, cultura...",
+        "target": "youth relationship to flamenco",
+        "rationale": "The passage grounds flamenco's value for youth in roots, tradition, and culture."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "entiendo el flamenco como algo tan humano, verdadero, espiritual e identificado con el ser",
+        "target": "flamenco",
+        "rationale": "The author attributes truth, humanity, spirituality, and deep being to flamenco, presenting it as genuinely meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text discusses participants, receivers, and age groups, but it does not clearly contrast participatory social settings with spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as sublime, sentir, and ensimismamiento suggest aesthetic criteria, but they are used mainly to explain youth access rather than to evaluate a performance or style."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "tradition", "authenticity"],
+      "target": "flamenco as a tradition youth should be able to access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible evidence supports access/transmission and roots-based legitimation."
+  },
+  {
+    "article_id": "1996-03-26-left-noticiario-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The congress program lists didáctica, profesores, communications, and roundtables, but this is routine scheduling rather than a clear discourse about institutional learning access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Sessions on 'La estética del cante/baile/toque' name aesthetic topics, but the visible text does not state or apply evaluative criteria."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The university, city reception, congress, and Bienal indicate institutional context, but no explicit heritage or official cultural-authorization discourse is present."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full article is a program/news listing; weak institutional and pedagogical cues are not enough under the conservative rules."
+  }
+]

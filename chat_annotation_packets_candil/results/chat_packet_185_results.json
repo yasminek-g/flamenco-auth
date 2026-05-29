@@ -1,0 +1,224 @@
+[
+    {
+        "article_id": "1989-01-15-left-sole-entre-los-rboles",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Creative prose and flamenco-style lyrics are visible, but they do not clearly evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging/authority."
+    },
+    {
+        "article_id": "1989-01-16-left-flamenco-y-musicolog-a",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "hay que admirar en \u00e9ste su resoluci\u00f3n en acometer una dimensi\u00f3n del Flamenco respecto a la cual las plumas que se suponen m\u00e1s cualificadas ha hecho dejaci\u00f3n. Creemos sinceramente que el autor de \u00abFlamenco y Musicolog\u00eda\u00bb merece esta excepci\u00f3n.",
+                "target": "Philippe Donnier and his musicological treatment of flamenco",
+                "rationale": "The editorial voice grants Donnier exceptional critical authority by praising his courage where supposedly qualified writers have failed to act."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "high",
+                "evidence_quote": "Culturas de tradici\u00f3n oral... La estabilidad de las estructuras sociales permit\u00eda una continuidad en la educaci\u00f3n. La disponibilidad y el tiempo favorec\u00edan un aprendizaje mediante el m\u00e9todo por ensayo y error lleno de los matices imprescindibles",
+                "target": "oral-tradition learning in flamenco-related culture",
+                "rationale": "The passage explicitly frames knowledge transmission through oral tradition, social continuity, and trial-and-error learning rather than written notation."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "presentar el Flamenco en un lenguaje asequible a los m\u00fasicos cl\u00e1sicos permitir\u00eda desvelar a un p\u00fablico \u00abculto\u00bb... toda una sutileza, inteligencia y complejidad que no sospechaba",
+                "target": "musicological transcription and mediation of flamenco to classical musicians and a cultured public",
+                "rationale": "The passage treats musicological language as a means of making flamenco knowledge accessible across institutional and cultural learning boundaries."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "Terms such as voice, rhythm, timbre, and expressive melody are discussed as transcription problems, but they are not applied as evaluative criteria for judging flamenco quality."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "musicological analysis and transcription as a legitimate way to mediate flamenco knowledge",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article is truncated, but the visible sections provide sufficient evidence for oral-transmission and access/mediation codes."
+    },
+    {
+        "article_id": "1989-01-19-left-la-m-sica-andalus",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "La presencia de un grupo de m\u00fasicos marroqu\u00edes en la \u00faltima y escasamente flamenca Bienal sevillana, ha podido confundir a m\u00e1s de un aficionado",
+                "target": "the Moroccan musicians' presence at the Seville Bienal and its relation to flamenco/Andalus\u00ed music",
+                "rationale": "The passage uses critique to police the boundary between flamenco, Andalus\u00ed music, and a performance context judged as barely flamenco."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "medium",
+                "evidence_quote": "la m\u00fasica de los \u00e1rabes andaluces fue m\u00fasica patrimonial de nuestra Andaluc\u00eda",
+                "target": "Arab-Andalusian music as Andalusian cultural patrimony related to flamenco origins",
+                "rationale": "The passage frames the music as patrimonial to Andalusia, giving it collective cultural value rather than treating it as only a technical musical style."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "la aventura posiblemente compensada en el aspecto comercial, no se ha visto correspondida musicalmente cuando se prescindi\u00f3 de la Nuba tetu\u00e1n\u00ed del maestro Tensamani... y del incomparable cantor Achkara",
+                "target": "commercial rediscovery attempts of Andalus\u00ed music in Spain",
+                "rationale": "The author explicitly judges recent spectacles as commercially successful but musically inadequate because they omit valued performers and repertoire."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The text discusses historical origins and survival of Andalus\u00ed music, but the visible claim is more patrimonial and critical than a direct tradition-continuity authorization of flamenco practice."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "Andalus\u00ed music's relation to flamenco and its staging in Spain",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The evaluative language includes ethnic generalizations; the annotation records the discourse function without endorsing those claims."
+    },
+    {
+        "article_id": "1989-01-19-right-en-torno-a-pilar-l-pez-jos-n-ez-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "he de reconocer cu\u00e1nto de grandeza, de infinitud y de arte, hizo esa noche una mujer no gitana, no bailaora, a secas, cuando se arranc\u00f3 por alegr\u00edas",
+                "target": "Pilar L\u00f3pez's dance performance",
+                "rationale": "The passage explicitly evaluates Pilar L\u00f3pez's performance as artistically great and transformative."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "evitando movimientos ficticios y posturas exageradas... No abus\u00f3 del zapateado... Hizo lo que tuvo que hacer. Todo medido, muy a comp\u00e1s",
+                "target": "aesthetic criteria for Pilar L\u00f3pez's baile",
+                "rationale": "The review applies concrete aesthetic criteria\u2014restraint, absence of artificiality, controlled zapateado, and comp\u00e1s\u2014to define the quality of the performance."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "high",
+                "evidence_quote": "una mujer no gitana, no bailaora, a secas... ese dif\u00edcil baile, que por su ejecuci\u00f3n parece que est\u00e1 reservado s\u00f3lo a los gitanos",
+                "target": "ethnic and performer-identity framing around flamenco baile authority",
+                "rationale": "The passage makes gitano/non-gitano and bailarina/bailaora identity categories central to how the dancer's authority and legitimacy are interpreted."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The text compares Pilar L\u00f3pez with canonical figures such as La Macarrona, La Malena, and La Mejorana, but the emitted critical evaluation and aesthetic-criteria codes already capture the main evaluative work conservatively."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "reason": "The award and jury ceremony provide institutional recognition, but the passage primarily functions as a review of performance rather than heritage authorization."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "Pilar L\u00f3pez as a legitimate and exemplary flamenco dancer",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The advertisement for correspondence guitar instruction is treated as non-codeable promotional material."
+    },
+    {
+        "article_id": "1989-01-22-left-ii-acto-de-presentaci-n-de-publi",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "organizado por el Servicio de Publicaciones y el Vicerrectorado de Extensi\u00f3n Universitaria de dicha Universidad... mantener vigente la atenci\u00f3n y el cultivo de las actividades propias de un \u00abAula Flamenca\u00bb",
+                "target": "University of C\u00e1diz support for Aula Flamenca activities",
+                "rationale": "The passage frames a university and its official cultural-extension structures as maintaining and legitimating flamenco activity."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "este tipo de actos \u00abh\u00edbridos\u00bb, en su doble faceta intelectual-popular... obligada cita anual de la intelectualidad con su pueblo",
+                "target": "university-mediated intellectual and popular access to flamenco culture",
+                "rationale": "The event is presented as an institutional setting that mediates between academic/intellectual culture and popular flamenco expression."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "esa indefinible e irrepetible proyecci\u00f3n del pueblo andaluz a trav\u00e9s de su incopiable expresividad visceral, que subyace en todo lo \u00abjondo\u00bb y flamenco",
+                "target": "Andalusian people as the identity source of jondo and flamenco expression",
+                "rationale": "The passage frames flamenco through collective Andalusian identity, making the pueblo andaluz the source and representative ground of jondo expression."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The text mentions continuity and cultivation of flamenco activities, but the visible evidence is more specifically institutional authorization and university mediation than safeguarding or living-heritage work."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "pedagogy",
+                "community"
+            ],
+            "target": "University-backed flamenco activities as a legitimate intellectual-popular cultural practice",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The excerpt is truncated, but the visible beginning and ending provide sufficient evidence for institutional and identity-framing codes."
+    }
+]

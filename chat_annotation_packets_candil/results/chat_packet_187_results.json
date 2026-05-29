@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "1989-03-10-left-ni-o-de-cabra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cayetano Muriel \"Niño de Cabra\", figura puntera del cante en toda Andalucía y fuera de ella",
+        "target": "Cayetano Muriel \"Niño de Cabra\"",
+        "rationale": "The passage elevates Niño de Cabra as a leading figure of cante across and beyond Andalucía, creating a status hierarchy rather than merely naming him."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "mi \"Media\", con su fresca y potente voz iría con ellos como \"telonero\", para abrir plaza",
+        "target": "Antonio \"Media\" as cantaor",
+        "rationale": "The passage evaluates the singer's vocal quality while also placing him as a younger, less established opening performer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions a 'gran aficionado y mecenas', but the reference is brief and mostly biographical, not a clear claim that afición or community standing authorizes flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Niño de Cabra and Antonio \"Media\" as flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-11-left-aurelio-de-c-diz-y-el-mal-gusto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la talla inconmensurable de Juan Talega... Antonio Mairena maestro indiscutido de maestros",
+        "target": "Juan Talega and Antonio Mairena",
+        "rationale": "The passage canonizes Talega and Mairena through superlative status claims and master-of-masters hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La honestidad y rigor profesional de Anselmo González Climent no ofrecen la más mínima duda",
+        "target": "Anselmo González Climent's publication of Aurelio's comments",
+        "rationale": "The editor invokes professional rigor to authorize the publication of controversial critical testimony as historical evidence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Carece de esa decisión... interna que lleva al libre vuelo de la expresión... no recibe los aguijones del duende",
+        "target": "Juan Talega's cante",
+        "rationale": "The passage directly assesses Talega's artistic limitations despite acknowledging his difficult flamenco conditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text uses duende and expression as criteria, but this is tightly embedded in the broader explicit critical evaluation already captured by CRIT_01."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Talega, Antonio Mairena, Aurelio de Cádiz, and Anselmo González Climent's critical authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-12-left-reflexiones-y-conclusiones-sobre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "hemos conseguido que se acepten las denominaciones de origen de nuestros cantes extremeños",
+        "target": "cantes extremeños",
+        "rationale": "The passage legitimates these cantes through accepted origin designations, grounding their recognition in place and origin."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "en este Congreso hemos conseguido que se acepten las denominaciones de origen de nuestros cantes extremeños",
+        "target": "institutional recognition of cantes extremeños",
+        "rationale": "The Congress functions as an authorized institutional forum that formally accepts classifications of cultural value and origin."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article discusses critics, ponencias, debate, and documentation, but the visible excerpt is mainly procedural rather than exercising expert critical authority over flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage"
+      ],
+      "target": "cantes extremeños and their accepted origin designations",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-12-right-sem-foro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la ITEAF, que canaliza la ayuda de la afición hacia los mayores, desvalidos",
+        "target": "afición and ITEAF support for veteran flamenco artists",
+        "rationale": "The passage presents afición and artist networks as a community mechanism that sustains and recognizes vulnerable elder flamenco artists."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "un arte incopiable y ajeno a su práctica que constituye un patrimonio único e intransferible de la buena tierra andaluz",
+        "target": "flamenco as Andalusian cultural patrimony",
+        "rationale": "The passage explicitly frames flamenco as unique, non-transferable patrimony belonging to Andalusian public culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Japón... seguirá asistiendo al flamenco... en el disfrute de un arte incopiable y ajeno a su práctica",
+        "target": "Japanese audiences in relation to Andalusian flamenco",
+        "rationale": "The passage draws an insider/outsider boundary: Japan may respectfully attend and enjoy flamenco, but the art is described as not theirs to practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'agresiones con sedicentes propósitos de renovación' hints at boundary policing, but the visible excerpt does not provide enough context to identify the excluded practices precisely."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Successors of named artists and Andalusian patrimony imply continuity, but the stronger visible discourse is heritage and belonging rather than tradition-continuity rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "heritage"
+      ],
+      "target": "veteran flamenco artists, afición, and flamenco as Andalusian patrimony",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-13-right-podio-y-picota-ventolera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "rendir homenaje a Fosforito, declarándolo alhaurino de adopción... el municipio y vecindario que se han honrado a sí mismos ofreciéndole este honor",
+        "target": "Fosforito's municipal recognition by Alhaurín de la Torre",
+        "rationale": "The passage treats official civic adoption and public homage as an authorized recognition that valorizes the flamenco artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "habría que ponerlo junto a Silverio, Don Antonio Chacón, Manuel Torre y Pepe Marchena, entre los maestros y los genios",
+        "target": "Manolo Caracol",
+        "rationale": "The passage constructs a canon by placing Caracol among named masters and geniuses of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La presentación, lastimosa... la serie de lamentables defectos acumulados",
+        "target": "Canal Sur's early flamenco programming",
+        "rationale": "The passage explicitly criticizes the quality, representativeness, scheduling, and treatment of flamenco on Canal Sur."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The column uses a tribunal/censure voice and polices media treatment of flamenco, but the main visible evidence is direct evaluation and canon ranking already captured by CRIT_01 and CRIT_03."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The afición, peñas, and tertulias are mentioned as affected audiences and settings, but the passage does not clearly grant them authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Fosforito, Manolo Caracol, and Canal Sur's flamenco programming",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

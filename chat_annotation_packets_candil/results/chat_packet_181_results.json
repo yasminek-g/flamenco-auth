@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "1988-11-7-left-el-flamenco-entendimiento-o-sent",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Si ambas formas de satisfacción van asociadas estamos en la mejor situación; si van disociadas, la satisfacción por el sentimiento es superior. En este sentido, creo que debería entenderse aquello de que «el Flamenco hay que sentirlo».",
+        "target": "la comprensión y experiencia estética del flamenco",
+        "rationale": "El pasaje define el valor de la experiencia flamenca mediante el criterio estético del sentimiento, incluso por encima del entendimiento cuando ambos se separan."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "La mención a los aficionados introduce una comunidad de reflexión, pero no les atribuye claramente autoridad para reconocer, sostener o juzgar el flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "la experiencia sentida del flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Artículo truncado, pero el cierre visible permite codificar de forma limitada la jerarquización estética entre sentir y entender."
+  },
+  {
+    "article_id": "1988-11-9-right-exposici-n-de-antonio-povedano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "¡El quiebro! El quiebro, gesto enérgico y sabiamente anárquico que rompe la armonía tranquila revaluándola.",
+        "target": "la flamencidad de la obra pictórica de Antonio Povedano",
+        "rationale": "El texto propone el quiebro como criterio estético que explica cuándo una forma artística entra en el mundo flamenco o jondo."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Así, podríamos tal vez afirmar que, lo que nos propone la exposición entera, es arte flamenco ante todo.",
+        "target": "la exposición de Antonio Povedano",
+        "rationale": "La exposición es presentada como propiamente flamenca, aunque la formulación prudente del autor hace aconsejable una confianza media."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "La fuerza de un creador no se presenta tal como una superposición o una suma de valores abstractos. Esta fuerza consiste en seguir su propio caminar expresivo",
+        "target": "Antonio Povedano como creador",
+        "rationale": "El pasaje formula una valoración crítica positiva de la fuerza creadora de Povedano y de la coherencia expresiva de su obra."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "La comparación con Fernanda y Chocolate tiene fuerza canónica, pero funciona sobre todo como analogía expresiva y no como una jerarquía desarrollada de artistas o escuelas."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "la obra pictórica de Antonio Povedano como arte flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "La reseña traslada criterios flamencos al análisis de una exposición pictórica; se codifican solo los pasajes donde esa operación es explícita."
+  },
+  {
+    "article_id": "1988-11-10-right-un-apunte-m-s-para-la-peque-a-hi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Cumplido nuestro objetivo, deleitando ampliamente a nuestros paisanos con el arte inigualable siempre del genio",
+        "target": "Antonio Mairena",
+        "rationale": "El texto canoniza a Mairena mediante un lenguaje de genialidad e inigualabilidad que lo eleva como figura ejemplar del flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una legendaria actuación de Antonio que encendió hasta el delirio el entusiasmo de una nutridísima asistencia",
+        "target": "la actuación de Antonio Mairena en Barcelona",
+        "rationale": "La actuación es evaluada explícitamente como legendaria y capaz de provocar entusiasmo extremo en el público."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "promocionar los primeros el flamenco en su vertiente pura y al margen de chabacanerías ni parodias antiflamencas",
+        "target": "la promoción del flamenco en Cataluña",
+        "rationale": "El pasaje establece una frontera de pureza entre una vertiente legítima del flamenco y formas desvalorizadas como chabacanerías o parodias antiflamencas."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "mantendrán viva y encendida la llama de su apoyo material a la conservación del flamenco en la querida tierra catalana",
+        "target": "la conservación del flamenco en Cataluña",
+        "rationale": "El texto formula una expectativa de apoyo institucional y comunitario para mantener vivo y conservar el flamenco en un contexto territorial concreto."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Las peñas, amigos y andaluces flamencos aparecen como comunidad de apoyo, pero el pasaje final funciona más claramente como promoción/conservación que como atribución de autoridad comunitaria para juzgar."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Antonio Mairena y la promoción de un flamenco puro en Cataluña",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Se codifica la canonización de Mairena y la frontera explícita entre flamenco puro y parodia antiflamenca."
+  },
+  {
+    "article_id": "1988-11-11-right-xvi-congreso-nacional-de-activid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "en la poesía popular de todos los tiempos, y en la del flamenco más que en ninguna otra... estos dos polos tan pasionales adquirieron fuerte categoría estética",
+        "target": "la poesía popular flamenca",
+        "rationale": "El texto define el valor estético de la poesía flamenca mediante la unión pasional de amor y muerte."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "no debemos de olvidar que el flamenco creció y se aclimató en el siglo XIX, al compás de los movimientos románticos europeos y españoles... ponen los cimientos de un lenguaje",
+        "target": "el lenguaje amoroso y tanatológico del flamenco",
+        "rationale": "El pasaje fundamenta una dimensión expresiva del flamenco en una continuidad histórica con movimientos románticos y sedimentos de cultura popular."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "La frase sobre participar activamente en los congresos critica la falta de participación, pero no contrasta de forma suficiente una relación público/privada o espectador/participante propia de la práctica flamenca."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "El trigger 'fuera' no marca una frontera social de dentro/fuera del flamenco, sino un uso no pertinente para insider/outsider."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "la estética amor-muerte en la poesía flamenca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Artículo truncado; se codifica solo la sección visible que teoriza la estética flamenca."
+  },
+  {
+    "article_id": "1988-11-14-right-carta-abierta-a-pedro-s-nchez-or",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "hubo un estilo o método de profundizar en el flamenco, antes y después de que se publicase la obra del Maestro desaparecido",
+        "target": "Anselmo González Climent y su obra flamencológica",
+        "rationale": "El pasaje canoniza la obra de González Climent como hito que divide un antes y un después en el estudio del flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "me atrevo a calificar como el más sutil y profundo investigador del universo flamenco",
+        "target": "Anselmo González Climent como investigador flamenco",
+        "rationale": "El texto otorga autoridad experta a González Climent al presentarlo como investigador superior del universo flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "una obra que el transcurso de dos décadas no ha deteriorado; antes al contrario, tras un paréntesis de injusto olvido, ha consolidado definitivamente",
+        "target": "la obra de González Climent",
+        "rationale": "La obra es evaluada como duradera, consolidada y merecedora de recuperación tras un olvido considerado injusto."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Aunque se habla de método y conocimiento, el pasaje no presenta a González Climent como autoridad de enseñanza o transmisión pedagógica."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "La referencia a 'un pueblo concreto' vincula jondismo y cultura, pero no organiza claramente pertenencia, representación o autoridad identitaria dentro del flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Anselmo González Climent y su contribución a la flamencología",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "El texto es principalmente una reivindicación crítica y canónica de un investigador y su obra."
+  }
+]

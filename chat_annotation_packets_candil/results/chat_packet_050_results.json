@@ -1,0 +1,279 @@
+[
+  {
+    "article_id": "1982-05-23-right-flamenco-y-toros-un-insustituibl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un rotundo trabajo de deliciosa lectura y repleto de erudición: «Toros y arte flamenco»",
+        "target": "Fernando Quiñones and José Blas Vega's study on toros and flamenco",
+        "rationale": "The review explicitly evaluates the study as forceful, enjoyable, and erudite."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el más serio y riguroso estudio de las confluencias toreo cante",
+        "target": "the study's place in flamenco-tauromachy scholarship",
+        "rationale": "The passage ranks the work as the most serious and rigorous study of its topic, constructing it as a reference work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el mundo taurino, quiérase o no, es y seguirá siendo fuente viva de nuestra cultura",
+        "target": "the cultural relationship between bullfighting, flamenco, and Spanish/Andalusian culture",
+        "rationale": "The passage frames the bullfighting-flamenco nexus as a living source of collective culture and public cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions 'entrelazada raíz' and inherited cultural weight, but the clearer discourse function is heritage/public culture and critical canonization of the study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review praises the authors' rigor and criticism, but it does not primarily grant critic authority or police improper flamenco boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "the flamenco-bullfighting interrelation and the study by Quiñones and Blas Vega",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-25-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Ciego de la Peña, fue uno de los más sobresalientes creadores de siguiriyas del siglo pasado, y a la altura de las grandes figuras",
+        "target": "El Ciego de la Peña within the siguiriya canon",
+        "rationale": "The passage places El Ciego de la Peña among leading creators and alongside major figures, constructing a flamenco hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "esta siguiriya ha podido llegar a nuestros días con verdadera autenticidad",
+        "target": "the siguiriya associated with El Ciego de la Peña and transmitted by Pastora Pavón",
+        "rationale": "The passage explicitly attributes genuine authenticity to the survival of the siguiriya into the present."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Don Antonio Chacón —al igual que Pepe el de la Matrona— tomara de ella los estilos de colombianas y milongas, que extendería por toda España",
+        "target": "Pepa de Oro's colombianas and milongas as transmitted to later singers",
+        "rationale": "The passage describes repertoire moving from Pepa de Oro to later artists and being carried across Spain, a lineage-like transmission of styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative phrases such as 'eminente cantaora', but the stronger critical function is canonical ranking and transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions possible calé identity, but it is presented as uncertain biography rather than identity-based authority or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "El Ciego de la Peña, Pepa de Oro, and their repertoires",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "la apropiación indebida de un bien público, fruto de la hermosa historia cantaora",
+        "target": "the traditional, anonymous, and popular flamenco songbook",
+        "rationale": "The editorial frames flamenco letras as a public cultural good rooted in collective cantaor history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "recusamos públicamente a aquellas personas que... registran como propias a canciones anónimas, populares, o de autor cierto",
+        "target": "people who appropriate or register flamenco lyrics as their own",
+        "rationale": "The editorial uses public critical authority to condemn and police improper appropriation of flamenco texts."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el indecente expolio del cancionero tradicional, anónimo y popular",
+        "target": "the traditional anonymous popular songbook",
+        "rationale": "The passage grounds the value of the letras in their traditional, anonymous, and popular character and defends that inherited corpus."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The editorial draws a moral boundary against plagiarists, but it is not primarily a purity/impurity boundary around proper flamenco forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The issue's studies are praised, but the central visible discourse is heritage/public ownership and boundary critique against appropriation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "appropriation of traditional flamenco letras",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-07-4-right-el-tren-y-la-copla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "discrepe de modo radical de los juicios flamencos de mi fraternal y admirado Fernando Quinones",
+        "target": "Fernando Quinones's interpretation of train imagery in flamenco letras",
+        "rationale": "The passage explicitly contests another flamenco critic's judgment and frames the article as a corrective interpretive intervention."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la fortaleza ancestral, universalísima y abierta del pueblo andaluz",
+        "target": "Andalusian flamenco culture's capacity to assimilate new themes",
+        "rationale": "The argument grounds flamenco's ability to absorb apparently external modern themes in ancestral cultural strength and continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "esta ahistoricidad literaria y el gusto por la copla arqueológica... la crisis de creación",
+        "target": "contemporary flamenco lyric creation",
+        "rationale": "The passage critically evaluates current lyrical practice as stagnant, ahistorical, and marked by a creative crisis."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text discusses literary criteria for coplas, but the visible evidence is more clearly a broad critical evaluation than an aesthetic criterion applied to a specific performance or repertoire."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article invokes archaeology and history, but it critiques creative stagnation rather than framing safeguarding or public heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "interpretations of modern themes in flamenco coplas and contemporary lyric creation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1982-07-6-left-viejos-letristas-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Minusvaloración esta de los letristas que ocasiona una gran laguna —una más diríamos— en el arte flamenco",
+        "target": "the neglect of flamenco lyricists",
+        "rationale": "The passage explicitly evaluates the omission of lyricists as undervaluation and a serious gap in flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una seria investigación sobre esta parcela literaria del cante... podría rastrearse en los archivos de Emi-Odeón y, quizá con mayor fortuna, en la Sociedad General de Autores",
+        "target": "archival recovery of flamenco lyricists",
+        "rationale": "The text calls for archival research to recover an overlooked literary dimension of flamenco cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ofrezco a continuación una nómina de cerca de medio centenar de letristas",
+        "target": "old flamenco lyricists listed from gramophone records",
+        "rationale": "The article constructs a corrective list of named lyricists, giving canonical visibility to figures otherwise hidden as 'popular' or 'no consta'."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The catalog offers access to information for readers, but it does not clearly frame learning or pedagogy as a discourse function."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article concerns recovery of flamenco literary history, but it does not explicitly frame the lyricists as public patrimony or collective heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "old flamenco lyricists and their recovery through records and archives",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

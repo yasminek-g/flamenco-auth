@@ -1,0 +1,281 @@
+[
+  {
+    "article_id": "1995-11-3-right-la-escuela-de-antonio-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "el maestro, en cambio, es consciente de su labor didáctica, pretende enseñar, y buscar la metodología y la filosofía apropiada para ello, consiguiendo crear una escuela",
+        "target": "Antonio Mairena and mairenismo",
+        "rationale": "Mairena is explicitly legitimized as a master whose authority lies in teaching method, philosophy, and creating a school."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Se sigue una estética del cante, y una ética; se sigue un concepto, una filosofía, un menester concreto de cante. Y una fuente, una tradición",
+        "target": "the Mairena school",
+        "rationale": "The school is authorized through continuity with a named source and tradition rather than as mere personal imitation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La obra mairenista es ya un clásico",
+        "target": "Mairena's work and school",
+        "rationale": "The article canonizes Mairena's work as a classic and ranks his school as historically significant."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "El arte de Mairena es universal, eterno, porque está dirigido al corazón, y no sólo al oído... y no a la masa comercializada",
+        "target": "Mairena's art",
+        "rationale": "Mairena's value is framed against commercialized mass reception and tied to intimate emotional authenticity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The skeptical reference to Nuevo Flamenco and 'actuales (flamencos?)' suggests boundary critique, but the stronger visible discourse centers on Mairena's school rather than a developed critique of those groups."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Antonio Mairena, his work, and the Mairena school",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-11-4-right-antonio-bonilla-un-cantaor-en-el",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el gran público no tenga noticias de cantaores que hubieran podido integrarse en el histórico Catálogo Flamenco",
+        "target": "anonymous or underrecognized cantaores such as Antonio Bonilla",
+        "rationale": "The article contests the canon by arguing that artists excluded from the historical catalogue deserved inclusion."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "su fama estaba muy limitada a los niveles del gran público, aunque el selecto y entendido sí que tenían referencias notorias de sus dotes artísticas",
+        "target": "knowledgeable aficionados and recognized but unrecorded cantaores",
+        "rationale": "Authority to recognize Bonilla's value is assigned to a select, knowledgeable community rather than to the mass public."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "sí que existen documentos escritos y la consabida transmisión oral, que no han sido lo suficientemente buceados por investigadores y estudiosos para ampliar, en toda su medida, la historia de este arte",
+        "target": "written documents and oral transmission about forgotten flamenco artists",
+        "rationale": "The passage frames oral and written memory as neglected resources needed to recover and preserve the public history of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la omisión en sus trabajos —por esa falta de interés— de la aparición de nuevos valores del flamenco en la época citada, ha propiciado que figuras conocedoras de esta música hayan quedado en el anonimato",
+        "target": "flamenco historians and researchers",
+        "rationale": "The article critiques scholarly and historical gatekeeping for omitting artists and thereby shaping who remains anonymous."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Bonilla is praised as a quality cantaor, but the dominant discourse function is canon correction and community recognition rather than a standalone review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "heritage"
+      ],
+      "target": "Antonio Bonilla and other underrecognized flamenco artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-11-6-left-paqui-lara-por-las-vereas-del-ar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "evidenciando la determinada seguridad profesional de la artista que sabe lo que ha de arriesgar",
+        "target": "Paqui Lara",
+        "rationale": "The introduction explicitly evaluates Paqui Lara's professional assurance and artistic promise."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "me dio grabaciones para que escuchara, a la vez que me fue orientando en algunas cosillas... Quino me ofrece otras grabaciones en las que aprecio otros talantes y otras escuelas cantaoras",
+        "target": "Paqui Lara's flamenco learning",
+        "rationale": "Her formation is described through listening to recordings and guidance by experienced figures, a mediated oral/listening transmission process."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Lo que no me gusta es lo que hacen algunos grupos que hay por ahí, porque eso son cosas aflamencadas",
+        "target": "some contemporary groups",
+        "rationale": "The speaker draws a boundary between flamenco and merely 'aflamencadas' things, devaluing the latter as improper or diluted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The interview names lines such as Mairena, La Niña de los Peines, and Fernanda de Utrera, but the visible passage does not develop tradition or continuity as an explicit authorizing claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición appears in a question, but the passage mainly describes personal initiation and learning rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Paqui Lara's artistic formation and her boundary against aflamencado groups",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text was truncated in the packet; annotations use only the visible beginning, ending, and evidence window."
+  },
+  {
+    "article_id": "1995-11-9-left-rafael-salazar-motos-rafael-fari",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "disfrutó del privilegio de contar con la voz más sonora y flamenca de nuestro Arte",
+        "target": "Rafael Farina",
+        "rationale": "The article explicitly evaluates Farina's voice and artistic stature."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "constituyéndose en la figura cantaora más importante de nuestro siglo",
+        "target": "Rafael Farina",
+        "rationale": "Farina is ranked superlatively as the most important cantaor figure of the century."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Rafael Farina nos ha dejado la referencia sonora ortodoxamente flamenca",
+        "target": "Farina's flamenco singing",
+        "rationale": "The phrase presents Farina's sound as an orthodox flamenco reference, attributing proper flamenco authority to his work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The article mentions commercial dedication to copla, but it does not clearly frame commerce itself as corrupting authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Rafael Farina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-11-9-right-el-adios-a-rafael-farina",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un gran profesional del cante flamenco y de la canción española, un gran hombre",
+        "target": "Rafael Farina",
+        "rationale": "The obituary explicitly praises Farina's artistic and personal stature."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "iba modulando su voz con las inflexiones adecuadas a la expresión de sus sentimientos, pasando de un tono a otro, llevando el cante por donde quería",
+        "target": "Farina's fandango singing",
+        "rationale": "The passage applies vocal modulation, expressive control, and emotional delivery as criteria of flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Rafael Farina ocupa ya un lugar de especial relevancia en esta selecta lista de creadores de fandangos personales",
+        "target": "Rafael Farina within the canon of personal fandango creators",
+        "rationale": "The article canonizes Farina by placing him in a select ranked list of creators of personal fandangos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text uses identity markers such as 'gitano de los pies a la cabeza' and 'charro de cuna', but they function mostly as biographical/color descriptors rather than a developed authority or belonging claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The closing says Farina's art remains alive, but the passage is elegiac memory rather than a clear tradition-continuity claim authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Rafael Farina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

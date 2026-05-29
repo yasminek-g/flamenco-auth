@@ -1,0 +1,230 @@
+[
+  {
+    "article_id": "1990-07-17-left-poes-a-y-letras-flamencas-paco-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Mírate en tu memoria antepasada, rebusca en tus lamentos de jondura que hallarás una copla que nos hiera.",
+        "target": "el cante del cantaor",
+        "rationale": "The poem grounds the value of the cantaor's song in ancestral memory and jondura, using rooted continuity as an authorizing frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Será tu voz más ronca y más sincera al eco de tu grito y desventura",
+        "target": "la voz del cantaor",
+        "rationale": "The passage defines flamenco expressive value through aesthetic criteria of roughness, sincerity, grief, and depth."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "el cante del cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic rather than review prose, so codes are limited to explicit value-framing in the visible text."
+  },
+  {
+    "article_id": "1990-07-18-left-camilo-salinas-y-rafael-e-bejara",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Se casó con el tocaor argentino Camilo Salinas, aficionado tan puro y cabal como el que menos presuma de serlo y lo sea, que ya es ser.",
+        "target": "Camilo Salinas como aficionado flamenco",
+        "rationale": "The text attributes purity and cabal flamenco standing to Salinas, legitimating him as a genuine flamenco participant."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Una larga conversación por encima del océano, un intercambio de ideas, razones, críticas, libros, grabaciones, noticias y amistades siempre surgidas desde dentro de ese mundo apasionado, convulso y minoritario que se llama flamenco",
+        "target": "transatlantic flamenco knowledge exchange",
+        "rationale": "The article frames flamenco knowledge as transmitted through books, recordings, criticism, correspondence, and friendship across geographic boundaries."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "mientras México parece quedarse en la asimilación del flamenco más alegre e intranscendente, Argentina penetra en el fenómeno de una forma más inteligente, culta y honda.",
+        "target": "Argentina and Mexico as flamenco-reception contexts",
+        "rationale": "The passage constructs a hierarchy between two national flamenco receptions, ranking Argentina as deeper and more cultured than Mexico."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article praises groups of friends, aficionados, and a peña foundation, but the stronger visible function is transnational mediation rather than community authority as such."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise of Salinas and Bejarano's work, but it overlaps with the more specific authenticity and hierarchy claims already emitted."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "pedagogy", "criticism"],
+      "target": "Camilo Salinas, Rafael E. Bejarano, and Argentine/Venezuelan flamenco participation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR noise in several Andalusian/Spanish terms does not prevent interpretation of the main discourse moves."
+  },
+  {
+    "article_id": "1990-07-18-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la relación que figura en el diccionario de los señores José Blas Vega y Manuel Ríos Ruiz, carece de valor por cuanto se omite lo más importante: las letras de los cantes",
+        "target": "la relación incluida en el diccionario de José Blas Vega y Manuel Ríos Ruiz",
+        "rationale": "The writer explicitly evaluates the dictionary relation as lacking value because it omits the letras, which are framed as essential."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Voy a complacerle facilitándole la relación que me pide, pero lo hago a través de «Candil» para que al mismo tiempo sirva a todos los lectores.",
+        "target": "readers' access to flamenco reference knowledge",
+        "rationale": "The magazine is used as a medium to make requested flamenco documentation available to a broader readership."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author corrects a reference work, but the visible excerpt does not strongly foreground the author's expert status beyond the act of evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "pedagogy"],
+      "target": "a flamenco dictionary entry/list and public reader access to corrected information",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is short but sufficient for the explicit critique and knowledge-access function."
+  },
+  {
+    "article_id": "1990-07-19-right-evocaci-n-de-pastora-pav-n-ni-a-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "cantaores consagrados que sin ruborizarse habían acudido a ti como a la fuente inagotable de la mejor agua flamenca, en demanda de tus sabias lecciones",
+        "target": "Pastora Pavón's flamenco knowledge",
+        "rationale": "Pastora is positioned as an authoritative teacher whose lessons are sought even by established singers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "habían acudido a ti como a la fuente inagotable de la mejor agua flamenca",
+        "target": "Pastora Pavón as an exemplary flamenco authority",
+        "rationale": "The metaphor canonizes Pastora as an exemplary source of the best flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "tengo que decir, que no estoy de acuerdo con el señor Molina, porque lo correcto es cantar por Tango lento y terminar por Tango ligero",
+        "target": "the proper relation between Tango gitano, Tango lento, Tango ligero, and Tientos",
+        "rationale": "The writer exercises critical authority to contest another position and define the correct performance/classification boundary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage invokes origins of the cantes, but the stronger visible claim is an expert classificatory correction rather than a broad tradition-continuity argument."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The bar discussions include aficionados and shared knowledge, but the passage mainly emphasizes Pastora's individual pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Pastora Pavón's authority and the correct naming/performance of Tango/Tientos",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1990-07-21-left-bibliograf-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "cuidadas ediciones que engrandecen nuestro patrimonio flamenco con su espléndida Biblioteca Virgilio Márquez",
+        "target": "Biblioteca Virgilio Márquez and flamenco publications",
+        "rationale": "The passage explicitly frames flamenco publications as enhancing a collective flamenco patrimony."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "efectuar la lectura íntegra de los textos y trasladar a los lectores las pertinentes conclusiones",
+        "target": "the bibliography/review section's critical mediation",
+        "rationale": "The section presents itself as an expert critical mediator that reads texts fully and conveys conclusions to readers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La reseña de estos dos breves pero enjundiosos libritos, que merecieron respectivamente los prestigiosos premios",
+        "target": "the two reviewed flamenco books",
+        "rationale": "The books are explicitly evaluated as brief but substantial and their prestige is reinforced through awards."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The review section mediates knowledge to readers, but the visible discourse is more specifically critical and bibliographic than pedagogical access."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The trigger refers to publications, not to public/private participatory flamenco settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "criticism"],
+      "target": "flamenco bibliography and reviewed publications",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt clearly supports heritage and review-authority codes."
+  }
+]

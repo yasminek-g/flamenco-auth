@@ -1,0 +1,230 @@
+[
+  {
+    "article_id": "1981-05-20-left-discograf-a-de-artistas-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a heading/byline/name and is insufficient for discourse coding."
+  },
+  {
+    "article_id": "1981-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "¿En qué momento de su historia es el cante puro? ¿Qué es en consecuencia lo que debemos conservar?",
+        "target": "la pureza del flamenco/cante",
+        "rationale": "The editorial makes purity the explicit object of boundary debate, questioning how pure cante can be defined and conserved."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "lo que hay que conservar es la pureza de los aficionados, es decir, su capacidad de contemplación",
+        "target": "aficionados as sustainers of flamenco value",
+        "rationale": "Aficionados are positioned as the social group whose contemplative capacity sustains the purity and value of cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "enriquecer, fomentar, mediante el encuentro de los aficionados, esta contemplación",
+        "target": "congress as aficionado encounter",
+        "rationale": "The value of the congress is framed through participatory encounter among aficionados rather than classroom learning or abstract debate."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses whether a congress is an aula, but it explicitly downplays learning and does not frame institutional pedagogy as the main legitimating mechanism."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "flamenco purity reframed through aficionado contemplation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Purity discourse is explicit but partly contested rather than straightforwardly asserted."
+  },
+  {
+    "article_id": "1981-07-4-right-documentos-flamencos-para-una-in",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "he intentado documentar las letras que siguen, a la vez que he efectuado unas ligeras anotaciones sobre los personajes y acontecimientos históricos",
+        "target": "political-historical flamenco letras",
+        "rationale": "The author positions his documentation and annotation as scholarly mediation for interpreting the flamenco letras."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "esta cantiña recogida por José Blas Vega de Aurelio Sellés ... es más incompleta y de gusto inferior a la antecedente que recogiera Demófilo",
+        "target": "a cantiña version collected from Aurelio Sellés",
+        "rationale": "The passage explicitly evaluates one collected version as less complete and aesthetically inferior to another."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The word 'inscripciones' refers to republican political banners, not institutional heritage authorization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to 'hombres' are historical-political descriptions, not identity framing that structures flamenco belonging or authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "'Flamenco histórico' is mainly chronological in the visible text and does not clearly authorize present value through roots or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "documented political flamenco letras and their variants",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Most historical-political material is descriptive; only the documentary mediation and explicit aesthetic comparison were coded."
+  },
+  {
+    "article_id": "1981-07-8-right-pedagogia-de-un-arte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "perdieron sus raíces y origen por la falta de una correcta enseñanza",
+        "target": "flamenco transmission through correct teaching",
+        "rationale": "The passage frames access to flamenco continuity as dependent on proper teaching, making pedagogy central to cultural survival."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el flamenco surge como la necesidad imperiosa de expresión de un pueblo ... su origen es simple y bello",
+        "target": "flamenco as rooted popular expression",
+        "rationale": "Flamenco value is grounded in origin, roots, and continuity as popular expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "después de una perfecta programación, se impartirían tras una eficiente enseñanza oficial a distintos niveles",
+        "target": "official teaching of flamenco subjects",
+        "rationale": "The article legitimates flamenco knowledge through programmed, official, multi-level instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The museum/folklore scenario suggests public culture, but the visible argument primarily concerns roots and teaching rather than explicit patrimonial heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aesthetic language from Luis Millet is quoted, but it is used mainly to support origin/pedagogy claims rather than to evaluate a flamenco performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "flamenco as a popular art requiring official teaching and continuity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible excerpt contains enough sustained argument about roots and official teaching to code confidently."
+  },
+  {
+    "article_id": "1981-07-9-right-los-extremos-se-tocan",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "desviada de las más mínimas exigencias ortodoxas ... tachados de «impuros»",
+        "target": "innovation/arreglo and desviated cante practices",
+        "rationale": "The passage draws a purity and orthodoxy boundary around legitimate flamenco and marks some practices as impure or deviated."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "este origen sólo es sostén y proyección en su calidad de raíz-base ... una lógica y natural permanencia evolutiva",
+        "target": "flamenco evolution grounded in folkloric roots",
+        "rationale": "The article authorizes acceptable evolution by tying it to roots, inherited richness, and continuity over time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "distingan públicamente lo aceptable de lo absurdo",
+        "target": "public judgment of musical renewal in flamenco",
+        "rationale": "The writer explicitly calls for informed critical discrimination between acceptable renewal and absurd deviation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article uses aesthetic criteria such as orthodoxy, harmonic nature, and technique, but these are largely subsumed under the stronger boundary critique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad evaluation throughout, but CRIT_04 better captures the article's explicit policing of acceptable and absurd flamenco innovation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco innovation versus rooted evolutionary continuity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article legitimates rooted evolution while delegitimating hybrid, distorted, or merely novelty-driven innovation."
+  }
+]

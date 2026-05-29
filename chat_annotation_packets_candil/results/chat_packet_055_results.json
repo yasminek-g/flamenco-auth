@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1982-09-15-left-maestro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "de la conversación con el artista brotó un caudal de enseñanzas sin parangón posible",
+        "target": "Antonio Mairena as maestro and source of flamenco knowledge",
+        "rationale": "The passage explicitly frames Mairena as a teacher whose conversation produces unmatched flamenco instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Todas las ocasiones que se me han presentado... han sido aprovechadas para seguir aprendiendo de quien, si cantando ofrece mucho, tanto o más regala conversando.",
+        "target": "learning through direct conversation with Antonio Mairena",
+        "rationale": "Flamenco knowledge is presented as transmitted through repeated personal encounters and oral exchange with Mairena."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Poco bastó para revelarme la calidad del artista.",
+        "target": "Antonio Mairena's artistic quality",
+        "rationale": "The author makes a direct evaluative judgment about Mairena's artistic quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdad y belleza' is too general here and does not clearly assert flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Antonio Mairena as pedagogical and artistic authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-09-15-right-irene-cruz-serrano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "se arranca por sevillanas, que es lo suyo y en lo que tiene tradición",
+        "target": "Mairena del Alcor's sevillanas practice",
+        "rationale": "The passage grounds local flamenco-related practice in tradition and presents it as belonging naturally to the place."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "En bodas y bautizos la gente canta y baila sevillanas... se organizaban en las calles y patios cada festejo",
+        "target": "Mairena community festivities",
+        "rationale": "The text locates flamenco/sevillanas practice in communal, familial, and neighborhood settings that sustain local cultural authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Irene Cruz Serrano... cantaba como alondra mañanera. ¡Menuda cantaora era la chiquilla!",
+        "target": "Irene Cruz Serrano's singing",
+        "rationale": "The article explicitly praises Irene's quality as a singer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The family setting suggests lineage, but the visible excerpt does not clearly describe learning or transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Irene Cruz Serrano and the Mairena community setting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1982-09-16-right-la-creacion-en-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "no había recreación, sino reproducción",
+        "target": "imitation versus creative recreation in cante transmission",
+        "rationale": "The article explicitly contrasts reproductive imitation with creative transformation as a mode of flamenco transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha creado no sólo formas y matices especiales, sino estilos propiamente dichos, todo ello en una medida inigualada en toda la historia del Flamenco",
+        "target": "Antonio Mairena's creative contribution",
+        "rationale": "Mairena is placed in a hierarchical, canonizing position as an unmatched creator/recreator in flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la imitación... constituía la credencial más valiosa que cada cantaor podía presentar como certificado de autenticidad",
+        "target": "purist standards of authentic cante",
+        "rationale": "The passage identifies imitation as a certificate of authenticity and critiques the purity boundary that constrained personal contribution."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes origins and the common repertoire, but the stronger visible discourse concerns authenticity boundaries and creation/reproduction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Antonio Mairena's creative/recreative authority and purist imitation norms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-09-17-right-las-siguriyas-de-manuel-torres",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Realmente era algo impresionante... Recorrían mis nervios el escalofrío de la más intensa emoción.",
+        "target": "Manuel Torres's siguiriya performance",
+        "rationale": "The passage gives an explicit evaluative response to Manuel Torres's singing as emotionally overwhelming."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "¿Con qué pureza, con qué expresión, con qué refinado gusto! Nos embelesa. Nos conmueve.",
+        "target": "Antonio Mairena's cante",
+        "rationale": "The passage applies aesthetic criteria such as purity, expression, and refined taste to judge Mairena's performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "esta noche he aprendido de flamenco más que en toda mi vida... nadie que hablara con tanta seguridad, conocimiento y galanura como Ricardo Molina",
+        "target": "Ricardo Molina as flamenco educator",
+        "rationale": "Ricardo Molina is positioned as an authoritative speaker whose lecture teaches flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'flamenco puro' appears, but the passage primarily uses purity as an aesthetic criterion rather than drawing an explicit purity boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The comparisons with other great singers imply hierarchy, but the strongest evidence is direct evaluation rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Manuel Torres, Antonio Mairena, and Ricardo Molina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-09-18-right-antonio-mairena-y-ricardo-molina",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "por deferencia del alcalde de Córdoba, quien le cedió tal honor, descubrió la preciosa placa",
+        "target": "official commemoration of Ricardo Molina",
+        "rationale": "The passage describes a municipal, public act of commemorative recognition that authorizes Molina's flamenco-literary significance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "él contribuyó en gran medida a clarificar y dignificar este nuestro mundo",
+        "target": "Ricardo Molina's role in flamenco discourse",
+        "rationale": "Molina is credited with expert work that clarifies and dignifies the flamenco world, positioning him as an authoritative critical figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la fecunda y primordial labor del admirado cantaor y del llorado poeta",
+        "target": "Antonio Mairena and Ricardo Molina",
+        "rationale": "The article elevates both figures as central, exemplary contributors to flamenco history and discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The visible excerpt includes 'voz' and 'esencia', but does not clearly apply a distinct aesthetic criterion beyond general praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Ricardo Molina and Antonio Mairena as publicly commemorated flamenco authorities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible opening and ending support the emitted codes."
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "1997-07-15-right-y-por-fin-el-t-tulo-universitari",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "título de Grado Medio en baile flamenco y propio de la Universidad de Granada",
+        "target": "university-level flamenco dance study",
+        "rationale": "The passage frames flamenco learning through an official university title and formal hours of study."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Gran importancia reviste éste reconocimiento oficial por parte de la Universidad de Granada",
+        "target": "University of Granada flamenco degree",
+        "rationale": "Official university recognition is presented as legitimating flamenco as a cultural and academic subject."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco como fenómeno único entre los pueblos; lleno de música, de historia, de arte, de poesía popular genuína; digno de entrar por la puerta grande",
+        "target": "flamenco as public cultural value",
+        "rationale": "The text frames flamenco as a collective cultural phenomenon worthy of full cultural and academic recognition."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "formal university study of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong institutional pedagogy and official recognition; no low-confidence authenticity code added."
+  },
+  {
+    "article_id": "1997-07-18-right-la-fascinaci-n-por-el-flamenco-e",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco, como expresión quinta-esenciada de las alegrías y las penas de todo un pueblo desde tiempos inmemoriales",
+        "target": "flamenco as rooted popular expression",
+        "rationale": "The passage grounds flamenco value in deep popular continuity and long-standing collective expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la faceta de pasión dolorida, de tristeza, de desgarro que se contiene en el cante hondo y que es uno de sus elementos constitutivos",
+        "target": "cante hondo",
+        "rationale": "The text defines flamenco quality through aesthetic criteria of pain, sadness, visceral expression, and emotional depth."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "las coplas no se escriben ; se cantan y se sienten, nacen del corazón, no de la inteligencia",
+        "target": "popular flamenco song",
+        "rationale": "The passage frames flamenco song as embodied by the people and organized through collective feeling rather than literary authorship."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco in modernist Andalusian poetry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Annotated only visible literary-discourse claims, not the full article."
+  },
+  {
+    "article_id": "1997-07-20-left-ziryaby-mugaddan-al-qabri",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "sí puede tener a nuestro juicio alguna participación en la creación del arte jondo-flamenco",
+        "target": "Mugaddan-al Qabri / Ciego de Cabra",
+        "rationale": "The article grounds flamenco value in origins and possible progenitors of arte jondo-flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Desmitificando a Ziryab, y magníficando como nos parece de justicia a aquel músico popular, el Ciego de Cabra",
+        "target": "Ziryab and Ciego de Cabra",
+        "rationale": "The passage reorders a historical hierarchy by demythologizing Ziryab and elevating Ciego de Cabra as a more deserving source figure."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco origins and progenitor figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Origin claims are visible; no stronger code for aesthetic expression because the expression passage is mostly historical description."
+  },
+  {
+    "article_id": "1997-07-22-right-flamenco-en-el-xlvi-festival-int",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una gran producción flamenca del Festival Internacional de Música y Danza es asignatura pendiente",
+        "target": "Festival Internacional de Música y Danza de Granada",
+        "rationale": "The writer explicitly evaluates the festival programming and identifies an unmet artistic obligation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco también visitó los nuevos espacios... volvió a entornos más reducidos... y rehabilitó, en fin, ambientes que siempre han sido suyos: cuevas del Sacromonte, y carmen de la Peña Platería",
+        "target": "festival flamenco settings in Granada",
+        "rationale": "The passage treats public, reduced, and historically associated settings as meaningful to flamenco’s social and cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "muy escaso de facultades; más deficitario aún, se quedó sin fuelle... guitarra y voz estuvieron muy desconcertadas",
+        "target": "the reviewed singer/guitar performance",
+        "rationale": "The review applies aesthetic-performance criteria such as faculties, breath, coordination, and stylistic execution."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Granada festival flamenco programming and performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible review contains enough evaluative evidence."
+  },
+  {
+    "article_id": "1997-07-25-left-xxxiii-concurso-nacional-de-tara",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "habría que valorar la importancia que su promoción —del concurso— ha de tener para el enriquecimiento de nuestra historia en general, y de Linares en particular",
+        "target": "Concurso Nacional de Tarantas de Linares",
+        "rationale": "The passage frames the contest as safeguarding and enriching local flamenco history."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "no concienciarse en resaltar nuestro patrimonio musical",
+        "target": "Linares taranta tradition",
+        "rationale": "The author explicitly frames the Linares flamenco tradition as collective musical patrimony."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "lo desacertado de convocar para dichas fechas el desarrollo del evento flamenco",
+        "target": "scheduling of the tarantas contest",
+        "rationale": "The passage criticizes the decision to fold the contest into feria dates as undervaluing the flamenco event."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Linares tarantas contest and mining-zone flamenco heritage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Artist lists were treated as support for heritage memory, not separately coded as canon beyond the stronger patrimony claim."
+  }
+]

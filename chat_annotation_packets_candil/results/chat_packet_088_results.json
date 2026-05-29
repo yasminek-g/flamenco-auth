@@ -1,0 +1,266 @@
+[
+  {
+    "article_id": "1984-01-18-right-la-verdad-sobre-el-viejo-medina",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "sus amplios saberes de cantes, formas, estilos y orígenes, adquiridos en contacto con infinidad de artistas pertenecientes a tres generaciones y contrastados con un caudal discográfico",
+        "target": "Manolo Yerga's flamenco knowledge",
+        "rationale": "The passage grounds Yerga's authority in knowledge acquired through intergenerational contact with artists and corroborated by recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "No quiero hacer afirmaciones arriesgadas, como tantas se hacen sobre la historia del arte flamenco. No existen datos suficientes",
+        "target": "claims about El Viejo Medina as creator of the Petenera",
+        "rationale": "Yerga is positioned as an expert whose documentary caution polices unsupported claims in flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la entrevista va a versar sobre la Petenera, mejor dicho, sobre su supuesto creador El Viejo Medina",
+        "target": "the origin of the Petenera",
+        "rationale": "The excerpt treats origin and authorship as meaningful to defining the historical status of a flamenco cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The retrieval trigger 'Hombre' is only a generic description of Yerga and does not frame identity-group belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "historical claims about the Petenera and El Viejo Medina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt centers expert research authority and caution around flamenco origins; identity framing is not supported by the visible text."
+  },
+  {
+    "article_id": "1984-01-19-right-rosario-la-mejorana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha figurado en la historia de nuestro arte como una de las mejores bailaoras",
+        "target": "Rosario Monje «La Mejorana»",
+        "rationale": "The passage canonizes La Mejorana by placing her among the best bailaoras in flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "demostró su gran calidad como cantaora y bailaora",
+        "target": "Rosario Monje «La Mejorana»",
+        "rationale": "The passage explicitly evaluates her artistic quality as both singer and dancer."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "creándose así una nueva estética del baile flamenco femenino",
+        "target": "female flamenco dance",
+        "rationale": "The passage frames La Mejorana's innovation as defining a gendered tradition of feminine flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions dynasty and descendants, but it does not clearly describe transmission of flamenco knowledge as lineage-based authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Uses 'auténtica' in phrases like 'auténticos maestros' and 'auténtica maestra', but the passage mainly ranks and praises artistry rather than making a distinct authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Rosario Monje «La Mejorana» and female flamenco dance aesthetics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article functions as canonizing biographical criticism, with a clear gendered aesthetic claim around women's flamenco dance."
+  },
+  {
+    "article_id": "1984-01-20-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "el nombramiento de Hijo Predilecto de Alcalá de Guadaira por la Corporación Municipal",
+        "target": "Joaquín el de la Paula",
+        "rationale": "Municipal recognition officially authorizes the cultural memory and public value of the flamenco figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Joaquín el de la Paula, gran artífice del cante por soleá de Alcalá",
+        "target": "Joaquín el de la Paula",
+        "rationale": "The phrase elevates Joaquín as a major formative figure in the cante por soleá of Alcalá."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas appear as organizational actors, but the visible text mostly lists boards and events rather than granting peñas interpretive authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The trigger 'Públicas' appears in the administrative role 'Relaciones Públicas', not in a public/private participatory setting contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Joaquín el de la Paula as a publicly commemorated flamenco figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is administrative peña news; only the municipal homage passage clearly performs heritage/canonizing work."
+  },
+  {
+    "article_id": "1984-01-21-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todo el que participa, realiza, dirige u organiza cualquier acto público (teatro, cine, cante, baile, etc.) está sujeto a una crítica positiva o negativa",
+        "target": "public flamenco events and their organizers/participants",
+        "rationale": "The passage explicitly asserts the legitimacy of positive or negative critical evaluation for public flamenco activity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "tengo que defender, por el bien de nuestros estilos mineros de Cartagena y La Unión, la PUREZA genuina del cante de esta tierra murciana, cartagenera o unionense",
+        "target": "mining styles of Cartagena and La Unión",
+        "rationale": "The passage defends the genuine purity of local mining cante and draws a boundary around correct regional styles."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "nos recuerde a los aficionados de esta tierra —y en especial a mí— que gracias al festival conocemos —conozco— la Minera, Taranta, Cartagenera, Taranto, Murciana, Levantica",
+        "target": "local aficionados of Cartagena and La Unión",
+        "rationale": "Local aficionados are positioned as knowledgeable participants with standing to defend and know regional mining styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The letter discusses knowing local styles through the festival, but the main function is boundary defense and criticism rather than pedagogy or access to learning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text refers to regional styles and their resurgence, but the stronger claim is purity-boundary work around local cante."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "community"
+      ],
+      "target": "regional mining cante styles and festival judgment",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The letter defends criticism as legitimate while asserting local authority over the purity of mining cantes."
+  },
+  {
+    "article_id": "1984-01-22-right-discografia-flamenca-discografia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Soleares con justo compás, conocimiento y calidad interpretativa",
+        "target": "Antonio Mairena's recorded soleares",
+        "rationale": "The review directly evaluates the quality, knowledge, and interpretive success of Mairena's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sigue con la profundidad de las siguirias... con la misma solera y profundidad",
+        "target": "Antonio Mairena's siguiriyas and related recordings",
+        "rationale": "Depth, solera, compás, and interpretive quality are used as aesthetic criteria for flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "un disco de Antonio Mairena sienta auténtica cátedra en el mundo flamenco",
+        "target": "Antonio Mairena's recording",
+        "rationale": "The recording is presented as pedagogically authoritative, capable of teaching or setting standards for flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article references 'Grandes del Flamenco' and Mairena's historical status, but the clearest visible functions are review evaluation, aesthetic criteria, and pedagogical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Mairena's interest in primitive and old cantes suggests tradition, but the passage applies this mainly as evaluative criteria within a discographic review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Antonio Mairena's recordings and flamenco authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review strongly legitimates Mairena through aesthetic evaluation and treats his recordings as authoritative models for flamenco knowledge."
+  }
+]

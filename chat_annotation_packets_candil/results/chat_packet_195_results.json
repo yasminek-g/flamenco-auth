@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "1989-07-15-left-cantaores-de-granada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Voces que... cantaron, cantan y cantarán... Y perdón en nombre de todos si la historia te ha olvidado.",
+        "target": "cantaores/voces de Granada",
+        "rationale": "The passage frames the inventory as memory-work that recovers and preserves overlooked flamenco voices."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Una voz, hoy ronca, profunda, seria y dolorida. Mañana alegre y cantarina.",
+        "target": "la voz en el cante",
+        "rationale": "The article treats voice quality and modulation as central aesthetic criteria for cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "sólo llevado por la afición pura y altruista... apoyarme en amigos sin cuya ayuda quizá no lo hubiera conseguido",
+        "target": "afición and friends supporting the Granada inventory",
+        "rationale": "The author grounds the project in afición and a supporting community of knowledgeable participants."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text evokes tradition and historical continuity, but the clearer discourse is memory preservation of voices rather than tradition as authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "community"
+      ],
+      "target": "Granada's flamenco voices",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations are limited to visible evidence."
+  },
+  {
+    "article_id": "1989-07-16-left-curiosidades-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la interpretación de las jotas puede calificarse tranquilamente de deleznable... monótonas, cansinas y francamente aburridas",
+        "target": "Niño de Medina's jotas",
+        "rationale": "The passage gives explicit negative critical evaluation of a recorded performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "demuestra bien a las claras el más completo descafeinamiento que se opera cuando incluso los mejores intérpretes de un determinado género se salen de lo suyo",
+        "target": "cross-genre recordings by flamenco performers",
+        "rationale": "The author uses critique to police genre boundaries and condemn performers leaving their proper artistic domain."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "las bulerías, cantadas por la Niña de los Peines, se comentan por sí mismas, incomparables",
+        "target": "Niña de los Peines' bulerías",
+        "rationale": "Calling the recording incomparable elevates it within a hierarchy of exemplary recordings."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "curiosidades pretéritas, que bien merecen ser conocidas y objeto de comentario por la afición flamenca",
+        "target": "old flamenco recordings",
+        "rationale": "The article frames rare historical recordings as objects worth preserving, knowing, and discussing by the flamenco community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The author speculates about comerciabilidad, but the visible critique is primarily genre-boundary criticism rather than anti-commercial authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "old flamenco and mixed-genre gramophone recordings",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotations use only visible reviewed text."
+  },
+  {
+    "article_id": "1989-07-17-left-el-flamenco-en-la-poes-a-y-en-la",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el flamenco, desarrollado y aclimatado en el siglo XIX... como arte comprometido con su propio tiempo, imbricado en la trama de la más exacta correspondencia histórica",
+        "target": "flamenco's relation to Romantic poetry",
+        "rationale": "The passage grounds flamenco's value and meaning in historical development, continuity, and roots in nineteenth-century cultural conditions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un verdadero creador de coplas flamencas llenas de rajo y hondura sin límites... dos libros claves",
+        "target": "Augusto Ferrán",
+        "rationale": "The passage canonizes Ferrán as a key creator and identifies exemplary works within the flamenco-literary tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "coplas flamencas llenas de rajo y hondura sin límites... ajustadísimo a los más rigurosos canones del flamenco",
+        "target": "Ferrán's flamenco coplas",
+        "rationale": "The article applies aesthetic criteria such as rajo, hondura, and rigorous flamenco canons to evaluate the literary-flamenco works."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "una indagación seria y sistemática entre las conexiones existentes entre ambas actitudes estéticas",
+        "target": "the author's research on flamenco and literature",
+        "rationale": "The author positions scholarly/critical research as an authoritative way to define and explain flamenco-literary connections."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The retrieval trigger 'publicando' is only about publication history and does not create a public/private participatory setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word 'verdadero' supports praise of Ferrán, but the stronger evidence is canonization and aesthetic evaluation rather than a separate authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco as a literary and historical aesthetic tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotations are limited to visible evidence windows and context."
+  },
+  {
+    "article_id": "1989-07-21-left-poema",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "baila bailando el bailaor bailes medidos en suspensión... dando a compás —dedomesura— el guitarrista su asignatura",
+        "target": "flamenco performance by singer/dancer/guitarist",
+        "rationale": "The poem uses compás, measure, and performance control as aesthetic criteria for flamenco expression."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "por la memoria llega un aviso de tabla vieja patada y tino... está naciendo lo reinventado",
+        "target": "reinvented flamenco grounded in old memory",
+        "rationale": "The passage values new/reinvented flamenco through continuity with memory and older performance forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'tres veces bueno' praises the trio, but the poetic context is too elliptical for a confident ranking or canon claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "new-old flamenco performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-07-23-left-festivales-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Text is too short and only describes the relation as a supplement to a previous issue."
+  }
+]

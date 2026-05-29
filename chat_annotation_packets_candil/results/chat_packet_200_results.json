@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1989-09-26-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Jerez existe la suficiente nó-mina de intérpretes flamencos con la específica calidad para pasear por otros lugares sus raíces... uno de los núcleos más importantes de la historia del Flamenco",
+        "target": "Jerez and its flamenco artists",
+        "rationale": "The review grounds the value of Jerez artists in roots, locality, and historical centrality within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Manuel Moneo... Tiene jondura, conocimiento, compás... voz y afición.",
+        "target": "Manuel Moneo's recording",
+        "rationale": "The passage explicitly evaluates the singer's artistic qualities and performance value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "siguiriγas plenas de quejío flamenco... perfecto recuerdo de Manuel Torre... sabor jerezano de su voz y su forma de cantar",
+        "target": "Manuel Moneo's cante",
+        "rationale": "The review applies flamenco aesthetic criteria such as quejío, compás, sabor, and stylistic memory to define quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición is mentioned, but the visible passage does not clearly grant aficionados authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Manuel Moneo, the Jerez recording project, and Jerez flamenco roots",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-09-26-right-iben-alca-ar-premium-crivera-lup",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word tradition appears in beer advertising, but it is unrelated to flamenco tradition or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Beer advertisement; no flamenco-relevant discourse."
+  },
+  {
+    "article_id": "1989-11-3-right-los-impremiables-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su rigor expositivo, y de su penetración... la densidad y calidad indiscutible de sus análisis",
+        "target": "Anselmo González Climent's flamenco writing",
+        "rationale": "The editorial explicitly evaluates the quality and seriousness of González Climent's analytical work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "acaso sea junto a Ricardo Molina el escritor más citado por la bibliografía flamenca de las últimas décadas",
+        "target": "Anselmo González Climent",
+        "rationale": "The passage canonizes González Climent by placing him alongside Ricardo Molina in a hierarchy of major flamenco writers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una perfecta construcción sistemática del flamenco... Flamencología, se penetra, con tonos metafísicos, en el «ser jondo»",
+        "target": "González Climent's critical authority",
+        "rationale": "The text grants González Climent authority as a systematic interpreter of flamenco and contests the critical neglect of his work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions gitano/payo accusations, but the visible passage focuses on critical reputation rather than identity-based belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Anselmo González Climent's place in flamenco criticism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-4-left-otras-formas-de-avanzar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "aportaciones que tiendan a robustecerlo sin desvirtuarlo, a incrementar sus ramas sin dañar la raíz",
+        "target": "new initiatives in flamenco",
+        "rationale": "The passage defines legitimate advancement as growth that does not distort flamenco or damage its root."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "organizado por la Confederación Andaluza de Peñas Flamencas... vehículo de encuentro y comunicación entre todos los que valoramos la importancia del flamenco",
+        "target": "peña federation and flamenco community",
+        "rationale": "Peñas and the community of those who value flamenco are presented as sustaining and connecting flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Curso: «Iniciación al Flamenco en la Escuela»... revertirá en las escuelas e institutos de la provincia, hasta completar la imprescindible cadena que ata el arte de unas a otras generaciones",
+        "target": "school-based flamenco education",
+        "rationale": "The article frames institutional education as a meaningful means of transmitting flamenco across generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Calixto Sánchez is praised as cantaor and pedagogue, but the stronger discourse function is the institutional access/transmission of flamenco in schools."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Generational transmission is present, but the passage is more directly about pedagogy than public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "peña-led concursos and school-based flamenco education",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-5-left-memorable-preg-n-flamenco-de-nav",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "pasó que la belleza, el arte, el compás y el duende, estuvieron presentes toda la noche",
+        "target": "Christmas flamenco performance",
+        "rationale": "The article offers explicit praise and positive evaluation of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Alegrías, plenas de compás... dejó constancia de sus grandes conocimientos y de una profesionalidad fuera de toda duda",
+        "target": "Chano Lobato and the performers",
+        "rationale": "Compás, knowledge, professionalism, duende, and expressive force are applied as criteria of flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Pocas, muy pocas veces, hemos visto una comunicación más perfecta entre público y artistas.",
+        "target": "public-artist interaction during the event",
+        "rationale": "The review values the event through intense co-presence and communication between artists and audience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as moved spectators, but they are not clearly positioned as authorities who judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the Christmas flamenco pregón and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

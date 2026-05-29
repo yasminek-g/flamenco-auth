@@ -1,0 +1,221 @@
+[
+  {
+    "article_id": "1988-03-11-right-flamenco-en-valencia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Una excelente noche de Arte Flamenco... con la solera de María Soleá, la voz salobre de Aurora Vargas y la maestría de Luis Caballero",
+        "target": "the flamenco evening in Valencia and its featured artists",
+        "rationale": "The passage explicitly praises the event and evaluates the artists through positive artistic descriptors."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Luis tiene la virtud de ir siempre con la verdad del cante, sin concesiones a la galería, y mucho menos de irse por la fácil vía de la comercialidad.",
+        "target": "Luis Caballero's flamenco practice",
+        "rationale": "The text legitimates Caballero by opposing truthful cante to pleasing the crowd or taking the easy commercial path."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "María Soleá, nacida y criada en el genuino solar flamenco de Jerez de la Frontera",
+        "target": "María Soleá's flamenco authority",
+        "rationale": "The passage grounds the singer's value in rootedness in Jerez as a genuine flamenco place."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "References to aficionados are present, but they mostly name the audience rather than clearly authorizing judgment or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "authenticity", "tradition"],
+      "target": "the Valencia flamenco event and its artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "AUTH_04 is based on explicit anti-commercial authenticity language around Luis Caballero."
+  },
+  {
+    "article_id": "1988-03-12-left-la-prosa-de-fosforito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "expresar donosamente pensamientos profundos, usar de la metáfora y el tropo y discurrir con riqueza de vocabulario... representan una aptitud que infunde admiración y respeto",
+        "target": "Fosforito's literary prose",
+        "rationale": "The passage gives an explicit positive critical assessment of Fosforito's writing skill."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions autodidactism and lived experience, but the passage evaluates literary ability rather than flamenco transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Fosforito's prose",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The code is limited to critical evaluation; the religious reflection itself is not coded as flamenco discourse."
+  },
+  {
+    "article_id": "1988-03-12-right-madrid-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Noche grande e inolvidable... han entretenido y conmovido, haciendo vibrar a esa numerosa afición",
+        "target": "the V Festival de Arte Flamenco",
+        "rationale": "The article explicitly evaluates the festival as memorable, moving, and successful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "reunir en el mismo cartel a cuatro primerísimas figuras del cante con esos dos maestros de la «sonanta»",
+        "target": "the festival lineup",
+        "rationale": "The performers are elevated through hierarchical status language such as first-rank figures and masters."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Entre el numerosísimo público asistente, ha destacado la presencia de escritores, estudiosos, comentaristas de este arte y, cómo no, la de prestigiosos y buenos aficionados.",
+        "target": "the knowledgeable audience at the festival",
+        "rationale": "The passage marks the presence of respected aficionados and commentators as socially meaningful recognition of the event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Named commentators and Radio Nacional appear as prestigious presences, but the excerpt does not show them exercising critical judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "the Madrid flamenco festival and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although truncated, the visible text contains sufficient evaluative and community-recognition discourse."
+  },
+  {
+    "article_id": "1988-03-13-right-antonio-el-rociero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "moviéndome con este ambiente flamenco y con las escuchas de discos y la radio... fue como me inicié en el mundo artístico. Mi afición nace al escuchar el flamenco",
+        "target": "Antonio El Rociero's flamenco formation",
+        "rationale": "The speaker describes initiation into flamenco through listening, recordings, radio, and local flamenco environment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "me dio un homenaje por la pu-reza y difusión de sus cantes tal como eran... le canté al pueblo de Alosno... los fandangos que ellos me habían enseñao, por si estaban bien. O sea, que fui a la universidad a examinarme.",
+        "target": "Antonio El Rociero's work with Alosno fandangos",
+        "rationale": "The passage legitimates his work through faithful transmission, local validation, and continuity of the fandangos as taught by the community."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "me quejo de que el Cabrero hace el fandango de mi tierra con aire de Aznalcollar... o sea, sin «dejillo» y con letras que tienen un contenido que no son el de las letras de los fandangos de mi tierra",
+        "target": "Cabrero's performance of Huelva fandangos",
+        "rationale": "The speaker draws a boundary around proper Huelva fandango by rejecting another singer's style and textual content as not belonging to that tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The discussion of dejillo and lyrical content functions mainly as authenticity boundary-work rather than a separate aesthetic-criteria judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "tradition", "authenticity"],
+      "target": "Antonio El Rociero's Huelva fandango authority and Cabrero's disputed version",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt contains both self-legitimation through local transmission and delegitimation of a rival version of the fandango."
+  },
+  {
+    "article_id": "1988-03-16-left-en-recuerdo-de-navarro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Pepe Navarro sabía más que muchos de cantes de la tierra... en una reunión informal de aficionados dijo",
+        "target": "Pepe Navarro's aficionado authority",
+        "rationale": "The article grants a knowledgeable aficionado authority to discuss and judge local Málaga cantes."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Pepe la gozaba cantiñeando, explicando y enseñando a todo un enseñante... Arrebola... no teniendo que escuchar, sino sólo una vez cada estilo para luego él cantarlo con admirable fidelidad.",
+        "target": "Pepe Navarro's transmission of malagueña styles",
+        "rationale": "The passage depicts Navarro as teaching and explaining styles even to a recognized teacher, positioning him as a pedagogical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "me convencí de que «El Canario» fue el primero que comenzara usando en la «malagueña» quebrado el primer tercio, así como que de él lo cogieron para las suyas «El Mellizo», «El Marrurro», «El de la Isla» y otros.",
+        "target": "the lineage of malagueña styles",
+        "rationale": "The text uses origin and transmission claims to establish continuity and authority for the malagueña tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Expert references such as Carlos de Luna and the UNESCO congress appear, but the article's strongest discourse is community and pedagogical authority rather than formal critic authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "tradition"],
+      "target": "Pepe Navarro and the Málaga cante tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a remembrance, but it also clearly authorizes Navarro as a knowledgeable transmitter of local cante."
+  }
+]

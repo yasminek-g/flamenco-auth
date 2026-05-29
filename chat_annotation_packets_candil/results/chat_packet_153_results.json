@@ -1,0 +1,255 @@
+[
+  {
+    "article_id": "1987-05-12-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "este incansable avivador de las vivencias jondas, realiza una labor que yo me atrevería a calificar de modélica",
+        "target": "José Luis Ortiz Nuevo / el libro sobre Tía Anica",
+        "rationale": "The reviewer explicitly praises Ortiz Nuevo's work as exemplary and worthy of unlimited praise."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una incursión de Ortiz Nuevo en la memoria de los viejos flamencos... vivencias jondas",
+        "target": "the memories and testimonies of old flamenco figures",
+        "rationale": "The review frames the book as recovering lived flamenco memory and sustaining the experiences of older practitioners as cultural memory."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Anica realiza una incursión en las viejas raíces que aún la mantienen en pie: las reuniones familiares, el cante de la madrugá en cuartos iniciáticos",
+        "target": "Tía Anica's flamenco world and repertoire",
+        "rationale": "The passage grounds the value of the flamenco testimony in old roots, family gatherings, and intimate inherited settings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article discusses testimony and memory, but it does not clearly describe a process of embodied or oral learning/transmission as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "tradition"
+      ],
+      "target": "Ortiz Nuevo's memory-work and Tía Anica's rooted flamenco world",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full review text; coded only explicit evaluative and memory/roots discourse."
+  },
+  {
+    "article_id": "1987-05-12-right-ullos-uos-protagonistas-dicen-lo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "los hombres de la junta directiva de la Peña Flamenca de Jaén los que, en base a su desmesurada afición, posibilitaran este hermoso encuentro",
+        "target": "Peña Flamenca de Jaén and its aficionados",
+        "rationale": "The peña's intense afición is presented as the community force that enables and authorizes the encounter with the Pinini family."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "todos encadenados por un nexo diferenciador: son Pinini por los cuatro costados",
+        "target": "the Pinini family",
+        "rationale": "Family identity is used as the organizing basis for belonging, representation, and flamenco significance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el Ayuntamiento reconsidere su postura absurda... el atropello de prescindir de la profunda capacidad expresiva de sus hijos ilustres",
+        "target": "Lebrija municipal handling of the Caracolá / exclusion of local artists",
+        "rationale": "The ending explicitly criticizes the institution's position and evaluates excluding local flamenco figures as an outrage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text gestures toward recovering family memories and local history, but the visible excerpt is too truncated to establish a clear heritage-safeguarding frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the Pinini family, peña-mediated flamenco memory, and Lebrija's local flamenco obligations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes rely on visible community-authorizing and municipal-critical passages."
+  },
+  {
+    "article_id": "1987-05-16-right-pepe-aznalc-llar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Traspasar el misterio supone distinguir entre el virtuosismo espectacular y el sentimiento puro, porque una cosa es la forma y otra el tuétano de formas",
+        "target": "criteria for judging flamenco performance",
+        "rationale": "The passage defines flamenco value through aesthetic criteria opposing superficial virtuosity to inner feeling."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "distinguir entre el virtuosismo espectacular y el sentimiento puro",
+        "target": "proper flamenco expression",
+        "rationale": "The text draws a boundary between legitimate inner flamenco feeling and devalued spectacular virtuosity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "fue dueño de un caudal sonoro admirablemente portentoso. Voz «laina» pero al mismo tiempo pastosa, lenta y vibrante de sentimiento",
+        "target": "Pepe Aznalcóllar's singing voice",
+        "rationale": "The author evaluates Aznalcóllar's vocal qualities with explicit praise and aesthetic judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article values feeling and depth, but it does not explicitly claim that Aznalcóllar or a style is the true or genuine flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Pepe Aznalcóllar and a feeling-centered model of flamenco value",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated but the visible aesthetic argument is sufficient for coding."
+  },
+  {
+    "article_id": "1987-05-17-right-in-memoriam-francisco-valls-tori",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Estuvo en posesión de una voz limpia, muy apta para la ejecución de los mal llamados cantes de «ida y vuelta»... Su fandango personal gustó sobremanera",
+        "target": "Francisco Valls Toribio «El Americano»",
+        "rationale": "The obituary evaluates the singer's voice, repertoire suitability, and audience appeal."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "estaba muy dolido de la afición española, porque le habíamos echado al rincón del olvido",
+        "target": "the memory of El Americano and earlier singers",
+        "rationale": "The text frames the singer's neglect as a problem of collective flamenco memory and remembrance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición is mentioned as the group that forgot him, but the passage does not clearly authorize aficionados as knowledgeable judges."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Antonio Mairena is briefly called 'gran', but the article does not develop a hierarchy or canon around him."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "El Americano's artistic value and neglected memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full text; coded the obituary's evaluative and memory-work functions."
+  },
+  {
+    "article_id": "1987-05-18-left-buz-n-y-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "me gustaría saber quién escribió esta «Picota» con el seudónimo de «Ventolera»... tendría que tener un vasto conocimiento del cante para igualar a un modesto aficionado como yo",
+        "target": "the anonymous critic «Ventolera» and the letter writer's own authority",
+        "rationale": "The letter contests the authority of a critic and grounds valid judgment in knowledge of cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "como el buen aficionado sabe, fue Joaquín «el de la Paula»",
+        "target": "good aficionados as knowers of flamenco attribution",
+        "rationale": "The passage presents the knowledgeable aficionado as an authority on cante history and attribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "don Antonio Mairena debe de escribirse con mayúscula; porque don Antonio es la última fuente del saber",
+        "target": "Antonio Mairena",
+        "rationale": "Mairena is canonized as a supreme source of flamenco knowledge whose status demands special reverence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text contains criticism of the prior review and of a book review, but the stronger function is a dispute over critical authority rather than a standalone review of an artistic object."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mairena is called a source of knowledge, but the visible passage does not frame him as teaching or correcting within a pedagogical relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "critical authority over flamenco writing and Mairena's canonical status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; coded only the visible dispute over criticism, aficionado knowledge, and Mairena's status."
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "1993-03-9-left-antonio-ranchal-y-alvarez-de-sot",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "con la humildad que se va adquiriendo conforme se aprecian y asumen las matizaciones de los buenos aficionados",
+        "target": "buenos aficionados",
+        "rationale": "The passage treats knowledgeable aficionados as a community whose judgments shape humility and understanding within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Anselmo, que para mí ha sido un gran conocedor de este arte",
+        "target": "Anselmo González Climent",
+        "rationale": "Anselmo is explicitly authorized as a knowledgeable expert in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "La de Córdoba tiene unos bajos de mucha categoría... No es frecuente oírla con pureza.",
+        "target": "soleá de Córdoba",
+        "rationale": "The speaker evaluates the style through purity language, implying a boundary between pure and less pure renditions."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Antonio Ranchal, Anselmo González Climent, and the soleá de Córdoba",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-03-11-left-viii-semana-de-estudios-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "un colectivo de aficionados laboriosos que se agrupan entorno a la Peña Flamenca de Jaén",
+        "target": "Peña Flamenca de Jaén",
+        "rationale": "The peña and its aficionados are presented as a competent community able to commemorate and recognize flamenco merit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "siempre basándome en las investigaciones de los estudiosos",
+        "target": "investigaciones de los estudiosos",
+        "rationale": "The speaker grounds claims about flamenco history in scholarly authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Noche de cabales porque el duende nos acarició hasta erizarnos el vello en momentos de álgido flamenco",
+        "target": "Manuel Mairena's performance",
+        "rationale": "Duende and jondura are used as aesthetic criteria to value the performance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Peña Flamenca de Jaén, Tomás Pabón Cruz, and Manuel Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-03-12-right-cantes-de-levante-cantes-mineros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "esta definición, desde nuestro particular criterio, no era la más correcta y adecuada",
+        "target": "the category 'Cantes de Levante'",
+        "rationale": "The passage uses expert critical judgment to challenge an established flamenco classification."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "los cantes autóctonos de Granada, Jaén, Almería o Málaga... caer, concienzudamente, en un craso error",
+        "target": "proper classification of regional cantes",
+        "rationale": "The author frames correct naming and regional rootedness as necessary for properly understanding these cantes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "responden a la propia historia musical autóctona del Campo de Cartagena",
+        "target": "Cantes de Cartagena",
+        "rationale": "The proposed category is legitimated through local musical history and autochthonous roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The word 'dentro' appears, but it marks classificatory inclusion rather than an insider/outsider social boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "naming and classification of Cantes de Levante, Cantes Mineros, and Cantes de Cartagena",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-03-14-left-cr-tica-y-flamencolog-a-aurelio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Normalmente, un crítico debe ser hombre de aprendizaje y experiencia, por lo que debe merecer respeto.",
+        "target": "flamenco critics",
+        "rationale": "The passage defines the critic's authority through learning and experience while also judging the limits of that authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Otros... no realizan un verdadero análisis de lo visto y oído.",
+        "target": "some flamenco critics",
+        "rationale": "The author evaluates and criticizes the quality of some flamenco criticism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El crítico debe velar por la pureza del flamenco, enjuiciando con dureza la inclusión de «armonías extrañas»",
+        "target": "pure flamenco and foreign harmonies/instruments",
+        "rationale": "The passage explicitly assigns critics the role of policing flamenco purity against elements framed as distorting."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco criticism and flamenco purity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-03-16-left-desdramatizar-la-copla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "comunidades tan distintas como el pueblo gitano o esa tropa callada de andaluces pobres",
+        "target": "pueblo gitano and poor Andalusian communities",
+        "rationale": "The passage frames flamenco song through identity communities whose suffering and social position shape its meaning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "estas comunidades primitivas que nos donaron, hace más de dos siglos, las músicas y las letras más estremecedoras del pueblo andaluz",
+        "target": "copla jonda and Andalusian flamenco repertoire",
+        "rationale": "The passage grounds the value of the repertoire in historical origin, inheritance, and transmission from earlier communities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "debido al dramatismo que nosotros mismos hemos acentuado en las posturas vitales de nuestros artistas",
+        "target": "critical interpretation of copla jonda",
+        "rationale": "The author identifies dramatism as an aesthetic-interpretive criterion that has shaped how flamenco artists and lyrics are read."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "copla jonda and the communities associated with it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

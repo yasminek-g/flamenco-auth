@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "1980-09-17-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El disco, bien en casi todos los estilos —peteneras y el polo, dichos con menos fortuna—, es una confirmación del hacer jondo del de Mairena",
+        "target": "Calixto Sánchez LP",
+        "rationale": "The passage explicitly reviews the recording, praising most styles while identifying weaker moments."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "su dominio, la mayoría de las veces, de la voz, su inteligente dosificación de las facultades",
+        "target": "Calixto Sánchez's singing",
+        "rationale": "Vocal command and measured use of faculties are applied as criteria for judging flamenco quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "RCA, presenta una nueva grabación de su arte, en natural herencia de su casa Mairenera... Fiel a su acento, a su raíz",
+        "target": "Manuel Mairena's recorded cante",
+        "rationale": "The review grounds the singer's value in inherited continuity, fidelity to accent, and rootedness in the Mairena house."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'uno de los primeros cantaores de la nueva generación flamenca' ranks Calixto Sánchez, but the core function of the review is better captured by critical evaluation and criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Calixto Sánchez and Manuel Mairena recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-18-left-apuntes-flamencos-a-la-feria-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "el ambiente lógicamente fiestero de gentes hetereogéneas que nada tiene que ver con el climax que los verdaderos aficionaos creamos en las íntimas veladas celebradas en los locales de la Peña",
+        "target": "fair setting versus intimate peña setting",
+        "rationale": "The passage contrasts a heterogeneous public festive atmosphere with the intimate peña environment created by true aficionados as the proper setting for cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Carlos Cruz... no estuvo a la altura de sus últimas actuaciones... El Chocolate, disperso, desigual... Emilia Pérez... estuvo fuera de tono y desacompasada",
+        "target": "performances at the San Lucas fair",
+        "rationale": "The article explicitly evaluates multiple singers' performances, identifying success, decline, unevenness, and failure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Exito de público que, como es sabido no lleva aparejada siempre la presencia del duende",
+        "target": "public success of the San Lucas performances",
+        "rationale": "The review invokes duende as an aesthetic criterion that public success alone does not guarantee."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Calling Carlos Cruz 'uno de los cantaores más puros' suggests authenticity, but the stronger article-level discourse is critical evaluation of performances and settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "San Lucas fair flamenco performances and their setting",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-18-right-dimensi-n-social-del-cante-flame",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a short beer advertisement and contains no flamenco discourse despite the metadata title."
+  },
+  {
+    "article_id": "1980-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "¿Hasta donde la evolución puede producirse para que lo jondo siga siendo jondo y no una manifestación (¿artística?) distinta?",
+        "target": "limits of flamenco evolution",
+        "rationale": "The editorial draws a boundary between what can remain jondo and what becomes a different, implicitly illegitimate manifestation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los ensayos para abrir nuevos horizontes al flamenco han sido... desafortunados. No sólo porque rezuman poco respeto a la raíz",
+        "target": "attempts to renew flamenco",
+        "rationale": "The critique grounds flamenco value in respect for roots and treats lack of rootedness as a reason to reject innovation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Por el momento, limitémonos a señalar nuestro rechazo a ese «flamenco renovado».",
+        "target": "flamenco renovado",
+        "rationale": "The editorial uses critical authority to police the boundary of proper flamenco against renewed or hybridized forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The editorial contains broad negative judgments, but these are better captured by boundary critique and authenticity/tradition codes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco renovado and recent innovation attempts",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-11-4-right-el-comp-s-de-la-sole",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "los diferentes tercios de los variados estilos flamencos van encajados en múltiples compases definidos por el guitarrista... lo que supone una gran dificultad",
+        "target": "cantes a compás and soleá",
+        "rationale": "The passage uses compás and the difficulty of fitting tercios into it as aesthetic criteria for understanding flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Dentro de los cantes a compás, para muchos aficionados al cante rey, sobresale la soleá",
+        "target": "soleá",
+        "rationale": "The article explicitly values soleá as standing out within cantes a compás for many aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article explains compás technically, but the visible excerpt does not clearly frame knowledge as oral, embodied, familial, or lineage-based transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text is didactic in tone, but it does not position a teacher, school, or method as pedagogically authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "soleá and cantes a compás",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for the emitted aesthetic-criteria codes."
+  }
+]

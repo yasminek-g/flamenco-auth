@@ -1,0 +1,205 @@
+[
+  {
+    "article_id": "1987-05-19-left-podio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un sitio de honor en el podio a la Federación de Entidades Flamencas de Extremadura... reuni[rá]n las primeras figuras del flamenco... rindiendo honores a esas joyas del flamenco",
+        "target": "Federación de Entidades Flamencas de Extremadura and Extremaduran flamenco figures/repertoires",
+        "rationale": "The passage creates an honorific ranking and canonizing frame by placing the federation on a 'podio' and calling the regional artists and tangos/jaleos 'joyas del flamenco'."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "es un agravio y un insulto al pueblo gitano, aunque gitanos hayan sido los protagonistas de este execrable suceso",
+        "target": "TVE representation of a gitano wedding and the gitano people",
+        "rationale": "The article frames the televised representation as an insult to an identity group, making gitano representation and dignity the basis of critique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "a la pública acusación y desestima... este execrable suceso... Misión miope... amargas críticas... La decisión del más puro estilo fascistizante merece este duro castigo",
+        "target": "TVE, Madrid municipal/cultural authorities, video-reportage producers, and the Barcelonaes venue owner",
+        "rationale": "The column explicitly praises and blames flamenco institutions and actors, using strong evaluative judgment rather than neutral reporting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The monument to Porrina de Badajoz suggests public commemoration, but the visible passage uses it mainly as one merit among others rather than developing institutional heritage authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The column polices improper public uses of flamenco, but the stronger and clearer coding is general critical evaluation rather than explicit expert-authority discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "community"],
+      "target": "Extremaduran flamenco actors are legitimized while TVE, authorities, exploitative producers, and a venue owner are delegitimized.",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is a polemical column organized around public praise and public censure."
+  },
+  {
+    "article_id": "1987-05-19-right-ablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "se ha venido realizando un ciclo de conferencias y recitales... Alfredo Arrebola dio una charla-recital acerca de «Málaga en el cante»; ... «Evolución e historia del baile flamenco»; ... «Maestros del Cante»; ... «Flamenco y Juventud»",
+        "target": "Peña Flamenca El Mirabrás conference-recital cycle",
+        "rationale": "The peña is presented as an institutional setting for mediated flamenco knowledge through lectures, recital-talks, history, and youth-oriented access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Interesante y amena resultó su intervención... con voz bronca y desgarradora, nos fue emborrachando poquito a poco con fandangos... acompañado sobriamente y con gran sencillez, sin aspavientos",
+        "target": "Juan J. González Merino's talk and Paco Toronjo's recital",
+        "rationale": "The passage evaluates the quality and effect of both the talk and performance with explicit aesthetic praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "con voz bronca y desgarradora... acompañado sobriamente y con gran sencillez, sin aspavientos",
+        "target": "Paco Toronjo's singing and guitar accompaniment",
+        "rationale": "The review applies aesthetic criteria of vocal texture, emotional force, sobriety, simplicity, and restraint to define performance value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña setting and anniversary imply community activity, but the visible evidence mainly reports organization and pedagogy rather than asserting peña authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "The peña's conference-recital programming and Paco Toronjo's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The evidence window contains both pedagogical programming and evaluative performance language."
+  },
+  {
+    "article_id": "1987-05-21-right-gu-a-de-festivales-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Su eficiente vocal de Relaciones Públicas, Rafael Banderas, está por tal motivo promocionando los nuevos valores jerezanos, tanto cantaores, bailadores como guitarristas",
+        "target": "Peña Flamenca El Garbanzo and new Jerez flamenco artists",
+        "rationale": "The peña is presented as a community institution actively recognizing and sustaining emerging local flamenco performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The contest awards rank participants, but the passage is mostly an administrative results list and does not develop canon or hierarchy beyond prize reporting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Promotion of new values may support access, but there is no clear teaching, learning, workshop, or knowledge-transmission frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "Peña Flamenca El Garbanzo as a supporter of new local artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is event and office-holder reporting; only the peña's promotion of new Jerez performers clearly carries discourse function."
+  },
+  {
+    "article_id": "1987-05-24-left-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a short heading/byline and is insufficient for discourse judgment."
+  },
+  {
+    "article_id": "1987-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el enjuiciamiento de cuanto integre el patrimonio cultural jondo, no debe dejar indiferentes a los aficionaos y, ni tan siquiera, a los ciudadanos en general",
+        "target": "patrimonio cultural jondo",
+        "rationale": "The editorial frames flamenco as collective cultural heritage whose judgment concerns aficionados and the wider citizenry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los Profesionales de la Información y la Crítica Flamenca... deben reflexionar conjuntamente... redefinir... los perfiles del comentarista o crítico de este arte, fijar los parámetros dentro de los cuales deba desarrollar su trabajo",
+        "target": "flamenco information professionals, commentators, and critics",
+        "rationale": "The passage explicitly defines the authority, responsibility, and parameters of flamenco criticism and information work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "es impresentable la osadía de algunos que sin un conocimiento mínimo del universo flamenco... enaltecen la mediocridad... resulta depravada la actitud de otros que... venden su criterio",
+        "target": "uninformed or compromised flamenco commentators and critics",
+        "rationale": "The editorial makes explicit negative judgments about poor or corrupt critical practice in flamenco journalism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'espúreos' appears in relation to media/marketing results, but the passage is primarily about critical responsibility rather than drawing a pure/impure flamenco boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Knowledge is required of critics, but the article does not frame a teacher, school, method, or pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["heritage", "criticism"],
+      "target": "Responsible flamenco criticism and journalism are legitimized while uninformed or compromised criticism is delegitimized.",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial is centrally about critical authority, public responsibility, and flamenco as cultural patrimony."
+  }
+]

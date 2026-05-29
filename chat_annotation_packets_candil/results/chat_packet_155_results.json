@@ -1,0 +1,265 @@
+[
+  {
+    "article_id": "1987-07-4-right-danzas-de-ida-y-vuelta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Habaneras, rumbas, milongas, tangos y tanguillos dialogando más o menos secretamente casi desde siempre... fúndense, mueren, renacen, desde los hontanares del tiempo.",
+        "target": "danzas y músicas de ida y vuelta",
+        "rationale": "The passage grounds the value and meaning of these forms in long historical circulation, continuity, and repeated renewal across time."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Que no se corte la comunicación entre quienes conservan las tradiciones y los que —niños y jóvenes hoy— la ofrecerán a su vez a quienes le siguen.",
+        "target": "tradiciones musicales y dancísticas transatlánticas",
+        "rationale": "The passage explicitly frames tradition as something conserved and transmitted intergenerationally as a living cultural practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Que no se corte la comunicación entre quienes conservan las tradiciones y los que —niños y jóvenes hoy— la ofrecerán a su vez a quienes le siguen.",
+        "target": "intergenerational transmission of dance/music traditions",
+        "rationale": "The text emphasizes transmission from current conservers to younger people who will pass the tradition onward."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The text mentions chroniclers, travelers, and recognition, but it does not clearly show official or institutional heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "danzas y músicas de ida y vuelta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coding limited to visible historical and transmission claims."
+  },
+  {
+    "article_id": "1987-07-7-right-l-evenement-du-jeudi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la entrada en escena del actual «monstruo» del cante, Camarón de la Isla",
+        "target": "Camarón de la Isla",
+        "rationale": "Calling Camarón the current 'monstruo' of cante elevates him as an exceptional canonical figure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "continúa viviendo en su estado primitivo, en la fiesta improvisada en la que todos, profesional o aficionados, son artesanos de una cultura viva",
+        "target": "flamenco as communal improvised fiesta",
+        "rationale": "The passage values an improvised participatory setting where professionals and aficionados jointly sustain the practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "son artesanos de una cultura viva que toda una comunidad —en mayoría gitana— ... practica aún a la sombra de los proyectores",
+        "target": "flamenco as living community culture",
+        "rationale": "The passage explicitly frames flamenco as living culture practiced by a community, rather than only as stage spectacle."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "Lo esencial es que continúa siendo el modo de expresión de un mundo marginal y que continúa viviendo en su estado primitivo, en la fiesta improvisada",
+        "target": "flamenco's marginal improvised communal expression",
+        "rationale": "The text locates flamenco's essential value in marginal, primitive, improvised social practice rather than fashionable public display."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The majority-gitano community is named, but the visible text more strongly emphasizes participatory living culture than identity-based authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community",
+        "heritage",
+        "authenticity"
+      ],
+      "target": "Camarón and contemporary flamenco as living communal culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt contains contested views on openness: dispersal/denaturalization versus vitality."
+  },
+  {
+    "article_id": "1987-07-9-left-pena-padre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Tos aprendimos de él... menos Señá Trini, que por sí sola era un fresquísimo manantial.",
+        "target": "learning from Chacón and local singers",
+        "rationale": "The speaker frames flamenco knowledge as learned through direct contact with exemplary performers in informal social settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha sido escuchada, degustada y estudiada por su posterior generación y, tal vez, sea hoy la que sirva de modelo fielmente representativo",
+        "target": "Pena Padre's recorded malagueña",
+        "rationale": "The recording is canonized as a model for later generations and as representative of a valued style."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sin haber tenido ocasión de gozar del resurgimiento, revalorización y esplendor de las malagueñas de su Álora, de Málaga y demás cantes de la província",
+        "target": "malagueñas de Álora, Málaga, and provincial cantes",
+        "rationale": "The passage legitimates local repertory through revival, revaluation, and continuity of regional forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise of singers and styles, but the strongest evaluative function is canon/model construction rather than a discrete review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Pena Padre and local malagueña tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-07-9-right-adios-andr-s-segovia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un maestro universal que llevó a la guitarra más lejos de lo que las palabras pueden expresar",
+        "target": "Andrés Segovia",
+        "rationale": "The obituary canonizes Segovia as a universal master whose contribution transformed the guitar."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "uno de sus más significados y valiosos hombres del siglo XX",
+        "target": "Andrés Segovia",
+        "rationale": "The passage explicitly evaluates Segovia as one of the most valuable figures of the twentieth century."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The word 'hombres' appears, but it is generic praise of a male artist, not identity-group framing that structures flamenco authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions Segovia making plans 'para enseñar algo más', but the excerpt does not develop teaching authority as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Andrés Segovia",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article concerns classical guitar more than flamenco, but the visible text clearly canonizes the guitarist."
+  },
+  {
+    "article_id": "1987-07-11-right-pierre-loujys-el-flamenco-como-e",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "verdaderas mixtificaciones que lo desnaturalizaron y hasta hicieron parecer ridículo lo que siempre había sido sublime",
+        "target": "travelers' and costumbrista representations of flamenco",
+        "rationale": "The passage uses critical authority to police misrepresentations that distorted flamenco and made the sublime appear ridiculous."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "mixtificaciones que lo desnaturalizaron y hasta hicieron parecer ridículo lo que siempre había sido sublime",
+        "target": "distorted representations of flamenco",
+        "rationale": "The text draws a boundary between legitimate flamenco and denaturalizing misrepresentations that corrupt its proper value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "igual ligereza y hasta imperdonable frivolidad a la hora de enjuiciar y valorar este mismo arte flamenco",
+        "target": "Spanish and Andalusian costumbrista judgments of flamenco",
+        "rationale": "The author explicitly criticizes frivolous and lightweight evaluation of flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Although 'sublime' elevates flamenco, the passage is mainly boundary critique of distorted representation rather than canon/ranking construction."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The ending analyzes eroticized bodies and gendered feeling, but the visible excerpt does not clearly frame identity groups as sources of flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "representations and interpretations of flamenco by travelers/costumbristas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coding focuses on visible critique of misrepresentation and denaturalization."
+  }
+]

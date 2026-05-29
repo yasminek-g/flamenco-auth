@@ -1,0 +1,180 @@
+[
+  {
+    "article_id": "1992-01-24-left-poes-a-flamenca",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poems mention payos and gitanos, but the passage does not use identity categories to authorize belonging, representation, or flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text and titles/styles do not by themselves perform evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "1992-01-25-left-testimonios-de-la-prensa-andaluz",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la copla (índice de una cultura tradicional oral dominada) y la prensa (índice de una cultura escrita dominante)",
+        "target": "la copla popular andaluza/flamenca",
+        "rationale": "The passage frames the copla as an oral traditional culture in a value-laden relation to dominant written press culture, making tradition and oral continuity analytically central."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "un conjunto de juicios de valores constitutivos de cierta mirada ideológica sobre la identidad cultural andaluz",
+        "target": "la identidad cultural andaluza represented through press discourse on coplas",
+        "rationale": "The passage explicitly treats press discourse on coplas as constructing an ideological view of Andalusian cultural identity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article mentions critical viewpoints and methodology, but the visible excerpt mainly describes the study's object rather than exercising authoritative flamenco criticism."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The excerpt discusses culture and identity but does not clearly frame copla or flamenco as public heritage/patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "la copla popular andaluza/flamenca as traditional oral culture and identity marker",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; codes are limited to visible methodological framing and the explicit oral-traditional versus written-dominant contrast."
+  },
+  {
+    "article_id": "1992-01-28-left-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el «quid» estuvo en que a criterio del Jurado usted obtuvo una puntuación inferior a la de los siete concursantes que ese día se clasificaron",
+        "target": "the jury's elimination of Juan Ledesma Mesa in the Concurso Nacional de Tarantas de Linares",
+        "rationale": "The passage explicitly defends expert/jury authority to evaluate, rank, and eliminate a flamenco contestant."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "tienen largo historial como aficionados y estudiosos, además de amplia experiencia como jurado en concursos de este tipo",
+        "target": "the contest jurors",
+        "rationale": "The jurors' authority is grounded in aficionado status, study, and recognized community experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "si lo eliminamos fue con la seguridad de haber creído que usted ese día estuvo por debajo de sus compañeros clasificados",
+        "target": "Juan Ledesma Mesa's contest performance",
+        "rationale": "The passage gives an explicit evaluative judgment of the contestant's performance relative to classified competitors."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text contains conflict within the flamenco field, but it does not clearly draw an insider/outsider boundary around belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The contestant is ranked below others in a contest, but the excerpt does not construct a broader canon, hierarchy, or exemplary status beyond the immediate judging decision."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the contest jury's evaluative authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible excerpt contains a clear defense of jury authority and aficionado expertise."
+  },
+  {
+    "article_id": "1992-01-29-right-final-de-una-larga-rese-a-de-pla",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The long index of discographic entries could support archival access in a broader context, but the visible text is primarily a list without explicit safeguarding, memory, or public-culture framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The artist list may resemble a canon, but no value hierarchy or exemplary status is asserted in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is an index/list of prior discography entries, not an evaluative or authorizing discourse passage."
+  },
+  {
+    "article_id": "1992-01-30-left-noticiario-flamenco-xiii-concurs",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The contest rules list prizes and phases, but they do not yet rank artists or construct a canon in the visible passage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The contest is institutional, but the passage concerns eligibility, expenses, and prizes rather than learning, pedagogy, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is administrative contest information and a continuation of an index, with no clear evaluative or pedagogical discourse function."
+  }
+]

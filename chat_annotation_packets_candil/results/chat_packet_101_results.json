@@ -1,0 +1,189 @@
+[
+  {
+    "article_id": "1984-09-22-left-la-guitarra-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Víctor Monje, SERRANITO, uno de los grandes adalides de la guitarra flamenca de concierto en la época actual.",
+        "target": "Víctor Monje, Serranito",
+        "rationale": "The article elevates Serranito to exemplary status within contemporary concert flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text contains praise, but the clearest discourse function is hierarchical canonization rather than a developed critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Serranito and other named flamenco guitarists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-09-22-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Quienes pretendemos historiar el arte flamenco, si lo hacemos con honradez, debemos alegrarnos cada vez que un error, una leyenda o una hipótesis dudosa son reemplazados por un dato fehaciente",
+        "target": "flamenco historiography and source-based criticism",
+        "rationale": "The speaker claims expert historiographical authority and frames reliable source correction as the proper basis for judging flamenco history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage evaluates accuracy and reliability, but not an artist, performance, recording, style, venue, publication, or event in the primary review sense."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "source-based flamenco historiography",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt is sufficient for this historiographical authority code."
+  },
+  {
+    "article_id": "1984-09-23-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "NUEVA JUNTA DIRECTIVA EN LA PEÑA FLAMENCA «FOSFORITO» DE MADRID",
+        "target": "peñas flamencas and their elected leadership",
+        "rationale": "The article foregrounds peña governance as the communal infrastructure through which flamenco activity is organized and sustained."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Festival and contest participation is announced, but the text does not contrast participatory settings with spectatorship or assign evaluative value to that relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "organized peña flamenca community activity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-09-24-right-discografia-de-artistas-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "se mete de lleno en los estilos que dice con frescura de voz, pero apoyada en unos esenciales y añejos ecos para hacer que se respiren —respiremos— aires jondísimos y verdaderos.",
+        "target": "Carmen Linares's singing",
+        "rationale": "The review explicitly authorizes Carmen Linares's flamenco as true and deeply jondo through essential, old echoes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Ajustada a cada ritmo, y desde el estudio realizado con rigor profesional, Carmen nos dice sus cantes por tangos, bulerías por soleá, siguiriyas, fandangos, malagueñas, cantiñas, tarantas —que dedica a su pueblo— y bulerías.",
+        "target": "Carmen Linares's recording",
+        "rationale": "The passage applies aesthetic criteria such as rhythmic adjustment, professional rigor, and command of styles to judge the recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Y hay, en cada cante, un destello de recreación artística a valorar muy positivamente.",
+        "target": "Carmen Linares's recording",
+        "rationale": "The review directly evaluates the recording positively for artistic recreation in each cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "un artista que conmueve al más exigente aficionado a este arte",
+        "target": "Juan Casillas",
+        "rationale": "The passage uses the demanding aficionado as a knowledgeable audience whose recognition validates the artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el joven cantaor malagueño ... viene a confirmarnos su madurez y sus conocimientos de las sedas y los percales de su oficio.",
+        "target": "Juan Casillas",
+        "rationale": "The review constructs Juan Casillas's status by positioning the new recording as confirmation of artistic maturity and craft knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The album title includes 'Pureza' and the text mentions 'pureza', but the passage does not clearly draw a boundary excluding impure or illegitimate flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Words such as 'añejos' and references to family/dynasty appear, but the strongest function is authenticity and evaluation rather than a developed tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Carmen Linares and Juan Casillas recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-09-25-right-jos-l-pez-alvarez-bernardo-el-de",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is too short and mostly bibliographic/advertising fragments, with insufficient discourse for coding."
+  }
+]

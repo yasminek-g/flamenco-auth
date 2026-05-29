@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "1997-05-28-right-jes-s-gil-manuel-mart-n-mart-n-u",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article strongly denounces Jesús Gil's broken promise and moral conduct, but the evaluative target is a political/public figure's behavior toward a widow rather than a flamenco artist, performance, recording, style, venue, publication, or event."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'apariencias de autenticidad' evaluates the apparent sincerity of a charitable gesture, not the authenticity or properness of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Moral and political denunciation around a flamenco artist's widow, but no clear collapsed-code discourse about flamenco value, authority, pedagogy, community, heritage, or criticism."
+  },
+  {
+    "article_id": "1997-05-29-left-el-arte-flamenco-maltratado-cons",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Es frecuente comprobar cómo en esta importante cadena y en este espacio de Radio Ole se escucha de todo menos Arte Flamenco.",
+        "target": "Radio stations and flamenco radio programming in Spain",
+        "rationale": "The passage explicitly criticizes major broadcasters for failing to treat flamenco programming properly."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Espacio que nació en Antena 3 con auténtica y exclusiva vocación flamenca, y que se ha ido diluyendo al cambiar de emisora.",
+        "target": "Radio Ole/Antena 3 flamenco programming",
+        "rationale": "The text contrasts an originally genuine, exclusively flamenco vocation with later dilution, drawing a boundary between proper flamenco programming and corrupted mixed content."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "con su docta dirección hace asequible y docente su buen saber hacer radio para atraer la atención de los buenos aficionados a este arte",
+        "target": "José M. Velázquez Gaztelu's radio program Nuestro Flamenco",
+        "rationale": "The passage legitimates radio as a mediated teaching/access channel that makes flamenco knowledge accessible to aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "References to 'buenos aficionados' identify an audience, but the article does not clearly grant that community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Spanish radio treatment of flamenco and selected flamenco radio programs",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-29-right-premio-comp-s-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Andalucía es un pueblo viejo, sabio, tolerante, pacífico, orgulloso y bello",
+        "target": "Andalusian collective identity",
+        "rationale": "The article frames flamenco-linked compás through Andalusian peoplehood and collective identity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sus límites de frontera natural de unas formas, de un sentir, de una Historia milenaria",
+        "target": "Andalusian artistic and cultural forms",
+        "rationale": "The passage grounds the value of Andalusian art and feeling in deep historical continuity and rootedness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Andalucía tiene compás; en su vivir cotidiano, en sus pensamientos profundos... y en particular, en su rico universo sonoro y musical.",
+        "target": "Andalusian music, art, and everyday culture",
+        "rationale": "Compás is elevated from a technical term into a defining aesthetic criterion for Andalusian flamenco-related value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article invokes history and collective culture, but it does not clearly frame flamenco as patrimony, heritage, safeguarding, or public heritage management."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Andalusia and the Compás del Cante distinction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-30-left-bases-ii-concurso-de-guitarra-pa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "El Jurado, que será elegido por la Organización, estará formado por personas de reconocido prestigio dentro del mundo flamenco y de la guitarra.",
+        "target": "Jury of the II Concurso de Guitarra para jóvenes Aficionados",
+        "rationale": "The rules authorize evaluation through a jury whose prestige inside the flamenco and guitar world legitimates its judgment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Podrán tomar parte en este concurso cuantos guitarristas no profesionales lo deseen... II Concurso de Guitarra para jóvenes Aficionados",
+        "target": "Institutional guitar competition for young amateur guitarists",
+        "rationale": "The contest structures institutional access for young nonprofessional guitarists to participate in and develop flamenco guitar practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The rules establish prizes and a final decision, but they do not yet construct a canon or hierarchy beyond ordinary competition administration."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The reference to 'mayor difusión del flamenco y de la guitarra' suggests promotion, but it lacks a clear safeguarding, living heritage, or public heritage frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "The guitar competition and its expert judging structure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-07-17-left-jos-cenizo-jim-nez-a-miguel-varg",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miguel Vargas era un cantaor serio, profundo y con amplio conocimiento de los estilos.",
+        "target": "Miguel Vargas as cantaor",
+        "rationale": "The obituary explicitly evaluates Vargas's artistic quality, seriousness, depth, and knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "sí consiguió el respeto y la admiración del aficionado serio, del crítico, del componente del jurado o de sus propios compañeros.",
+        "target": "Miguel Vargas's recognition by flamenco insiders",
+        "rationale": "The passage legitimates Vargas through recognition by serious aficionados, critics, jurors, peers, and peñas."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "supo hacerse acreedor de un puesto en el corazón de cada una de las peñas flamencas y en la nómina de los sobresalientes de este arte.",
+        "target": "Miguel Vargas's canonical status",
+        "rationale": "The text places Vargas among the outstanding figures of flamenco, constructing a hierarchy of artistic status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Hubieras sido un viejo cantaor de estirpe, sabio, tan puro, tan auténtico",
+        "target": "Miguel Vargas's flamenco artistry",
+        "rationale": "The passage explicitly attributes purity and authenticity to Vargas's cante, legitimating him as properly flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'profundo', 'serio', 'quejío' and 'equilibrio' function as aesthetic criteria, but they substantially overlap with the emitted general critical evaluation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Mentions of mairenismo, estirpe, and older lessons suggest continuity, but the visible evaluative force is better captured by explicit authenticity and canonization codes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Miguel Vargas as cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

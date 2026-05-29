@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1985-07-4-right-metaf-sica-del-dolor-y-la-muerte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Cante Jondo o cante Flamenco, es la más singular y extraordinaria de cuantas manifestaciones musicales han nacido en Andalucía, siendo además la herencia de un sentimiento ancestral que nos muestra como ninguno el auténtico carácter andaluz",
+        "target": "Cante Jondo / cante Flamenco",
+        "rationale": "The passage explicitly authorizes Cante Jondo as an exceptional Andalusian manifestation that reveals the authentic Andalusian character."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "debido fundamentalmente al desconocimiento de sus raíces verdaderas que darían origen a un Arte",
+        "target": "origins and roots of Cante Jondo",
+        "rationale": "The text grounds flamenco's value and recognition in true roots and origin, using rootedness to counter superficial misreadings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "lo más grande del Cante de esta época: Silverio, El Nitri, Enrique el Mellizo, Loco Mateo, Curro Durse, Paco la Luz, Cagancho, don Antonio Chacón..., componentes entre otros muchos de la llamada Edad de Oro del Cante",
+        "target": "nineteenth-century cantaores and the Edad de Oro del Cante",
+        "rationale": "The passage constructs a canon and hierarchy by identifying named singers as the greatest figures of a Golden Age."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la SIGUIRIYA la que con mayor rotundidad reconstruye las vicisitudes y tragedias de los gitanos cantaores de Andalucía al ser la expresión desgarrada del sentimiento amargo",
+        "target": "the siguiriya",
+        "rationale": "The passage defines the aesthetic value of the siguiriya through expressive force, tragedy, pain, and emotional depth."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Cante Jondo and especially the siguiriya as rooted Andalusian/gitano flamenco expression",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpt contains enough explicit authenticity, roots, canon, and aesthetic-evaluative discourse to code."
+  },
+  {
+    "article_id": "1985-07-7-right-flamenco-de-la-uni-n-y-cartagena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "¿Y por qué negarle a este mito el derecho de ser el precursor del primitivo canto andaluz?",
+        "target": "flamenco of Cartagena and La Unión",
+        "rationale": "The article legitimates Cartagena and La Unión by rooting their flamenco in a precursor myth and expanded historical-geographic origin story."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "la prédica flamenca en tierras de Cartagena y de La Unión no es predicar en tierra de infieles sino compartir afinidades, coincidencias e inquietudes parejas, entre hermanos que comulgan en una misma fe y en un mismo rito",
+        "target": "Cartagena and La Unión within flamenco belonging",
+        "rationale": "The passage explicitly rejects an outsider/infidel framing and redefines these regions as insiders sharing the same flamenco faith and ritual."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Flamencos de La Unión y Carta-gena, título adquirido por un doble derecho, geográfico —de nacencia— y de sangre, regada y mezclada en todas sus minas por la emigración andaluzas de Jaén y de Almería",
+        "target": "identity basis for La Unión and Cartagena flamencos",
+        "rationale": "The text frames flamenco authority through local identity, birth, blood, and Andalusian migration, making identity the basis of belonging."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article legitimates non-Andalusian flamenco, but the clearest mechanism is roots and identity-belonging rather than an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "the flamenco legitimacy of La Unión and Cartagena",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-07-8-right-realidades-y-suposiciones-en-tor",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt canonizes Andrés Segovia and Francisco Tárrega as guitar masters, but the visible evaluative discourse targets classical/universal guitar more than a flamenco actor, practice, or canon."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word maestro appears repeatedly as an honorific, but the passage does not clearly frame teaching, transmission, or pedagogical authority in flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article mentions a supposed anti-flamenco stance, the visible excerpt does not develop a flamenco-related authority or evaluation claim enough to code."
+  },
+  {
+    "article_id": "1985-07-10-right-dialoguillos-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "cuando el tocaor se come el cante y sobresale y lo tapa, ni eso es floresimiento ni eso es na",
+        "target": "guitar accompaniment that overwhelms the cante",
+        "rationale": "The speaker makes an explicit negative judgment about accompaniment that dominates rather than supports the singer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "está tocando a compás y el muchachito va por los cerros de Ubeda y al trote cochinero",
+        "target": "the young singer's performance",
+        "rationale": "The criticism applies compás and rhythmic control as criteria for judging flamenco performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "¿Es que vamos a viví siempre con ese cuento de la pureza? El cante pide renovación, hay que inyectarle sangre nueva, deja a los puristas que son un puñao de viejos",
+        "target": "purist resistance to renewal",
+        "rationale": "The passage uses critique to police a boundary debate between purity/purism and renewal in flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no vayamos ahora a orvidá las fuentes que alimentaron estos veneros de hoy, porque ahí están todavía, frescos y grandiosos, los grandes maestros desde Don Ramón hasta Ricardo y el de Huelva",
+        "target": "historical guitar masters",
+        "rationale": "The text invokes named masters as canonical sources that should continue to orient present guitar practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Purity language is present, but the strongest visible discourse is a critique of purism and renewal rather than a stable purity boundary authorizing proper flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The source/masters language evokes continuity, but it functions mainly as critical canon reference for guitar practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "festival performance, compás, guitar accompaniment, and renewal versus purism",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-07-11-right-naranjito-de-triana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Este cante me decía mi tío que era del Fillo y del Quino. La cantaba mi tío y mi padre; mi hermano que era un buen aficionado también la hacía",
+        "target": "family transmission of a soleá",
+        "rationale": "The passage frames knowledge of the cante through familial and intergenerational transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "había una convivencia grande con todos, éramos como una familia grande... se terminaba cantando porque había una gran afición al cante",
+        "target": "old Triana's patio and neighborhood community",
+        "rationale": "The excerpt grounds flamenco practice in neighborhood convivencia, family-like sociability, and shared afición."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "cuando se celebraba una boda o un bautizo duraba hasta las ocho o las diez de la mañana, se cantaba y se bailaba con mucho arte",
+        "target": "Triana social celebrations",
+        "rationale": "The passage values participatory social settings of singing and dancing as meaningful flamenco environments."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "La crítica debe ser independiente y objetiva... está escribiendo la historia del cante, y esa historia debe ser fiel reflejo del momento",
+        "target": "flamenco criticism",
+        "rationale": "The speaker assigns critics an authoritative responsibility to write the history of cante objectively and faithfully."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The trigger word 'fuera' appears in a lyric rather than a social insider/outsider boundary, and the visible social material is better captured by community authority and participatory setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Triana and gitano/castellano identities appear, but the passage emphasizes neighborhood convivencia and access more than identity as an explicit authority framework."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Naranjito's Triana-rooted flamenco knowledge and the role of flamenco criticism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpt supports family transmission, community grounding, participatory setting, and a bounded claim about critical responsibility."
+  }
+]

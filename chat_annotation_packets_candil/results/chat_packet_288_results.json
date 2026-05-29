@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1994-03-16-left-enrique-jim-nez-ram-rez-enrique-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Mi afición se desarrolla por la escucha que siempre he efectuado de mi padre... la guitarra me venía de familia... por orden de mi padre, éste fue el que comenzó a enseñarme el toque",
+        "target": "aprendizaje flamenco de Enrique de Melchor",
+        "rationale": "The passage grounds Enrique's flamenco formation in family inheritance, listening to his father, and direct apprenticeship in guitar toque."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Su toque está plasmado de las más bellas falsetas, a la vez que es perfecto encauzador del cantaor por los caminos del duende.",
+        "target": "toque de Enrique de Melchor",
+        "rationale": "The review applies aesthetic criteria such as falsetas, accompaniment, and duende to define the value of his guitar playing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The tablao is mentioned as a setting for Enrique's early exposure, but the visible text does not contrast participatory/private and public/spectatorial flamenco as a value boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "A teacher is mentioned, but the stronger and more precise discourse function is lineage and embodied/familial transmission rather than institutional or formal pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Enrique de Melchor's flamenco guitar authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible interview and framing text."
+  },
+  {
+    "article_id": "1994-03-19-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En este «Típtico Flamenco» escuchamos a un Vicente Soto «Sordeira» maduro como cantaor... Pienso que es la adecuada recreación de lo gaditano por Jerez.",
+        "target": "Vicente Soto «Sordeira» and Típtico Flamenco",
+        "rationale": "The passage explicitly evaluates the recording and the singer's artistic maturity and success in recreating Cádiz material through a Jerez idiom."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Buen compás el efectuado en las bulerías... Adecuado tratamiento el de las soleares de Alcalá y muy flamenca la de Cádiz... pleno de compás en las bulerías finales, a pesar del modernismo.",
+        "target": "aesthetic qualities of the recording",
+        "rationale": "The review judges the recording through named flamenco criteria including compás, treatment of palos, flamencura, rhythm, and modernism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Aunque en las diferentes grabaciones... el cantaor evoca a señeras figuras gaditanas, nunca pierde el eco de los «Sordeira»... acrisolando dichos personalismos por las entonaciones de su familia.",
+        "target": "Vicente Soto's relation to Cádiz/Jerez and family tradition",
+        "rationale": "The recording's value is grounded in continuity with revered figures and family echoes, using tradition and lineage to authorize present performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "RTVE is praised as a public entity supporting flamenco recordings, but the passage does not clearly frame this as heritage authorization or patrimonial management."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text contrasts RTVE with commercial recording companies, but the critique is not developed as expert boundary-policing of proper or improper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "tradition"],
+      "target": "Vicente Soto's Típtico Flamenco and RTVE's flamenco recording initiative",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review includes reservations about instrumentation and modernism, so polarity is mixed rather than purely legitimating."
+  },
+  {
+    "article_id": "1994-03-20-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Estos dos libros se complementan para el buen aficionado y, sobre todo, para el profesional de la guitarra... que no dudamos en recomendar a todo buen aficionado.",
+        "target": "books on flamenco guitar by Andrés Batista, Jerónimo Peña, and Donn E. Pohren",
+        "rationale": "The bibliographic commentary evaluates and recommends the books for aficionados and guitar professionals."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "el «Plan» del patriarca, Antonio Sánchez Pecino, padre de Paco y sus hermanos, para formar como artistas flamencos a sus hijos... cada cual fue asumiendo su papel en el mundo flamenco, formándose una de las dinastías más compactas de la historia jonda",
+        "target": "the Sánchez / Paco de Lucía family formation",
+        "rationale": "The passage frames flamenco formation as a family-based, intergenerational plan that produces a recognized artistic dynasty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una de las dinastías más compactas de la historia jonda... bajo la dirección del inigualable Paco de Lucía",
+        "target": "Paco de Lucía and the Sánchez family",
+        "rationale": "The text canonizes the family as a major flamenco dynasty and elevates Paco de Lucía through exceptional status language."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase about avoiding professional indignities suggests moral concern, but it does not clearly frame commercial spectacle as weakening authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "flamenco guitar literature and the Paco de Lucía family lineage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "No truncation; codes are based on explicit review, family transmission, and canonizing language."
+  },
+  {
+    "article_id": "1994-03-21-left-quejas-por-el-estado-del-centro-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "el flamenco es algo vivo y no debe ser tratado como una realidad muerta desde una perspectiva exclusivamente historicista de acumulación de datos",
+        "target": "Centro Andaluz de Flamenco's treatment of flamenco",
+        "rationale": "The passage explicitly frames flamenco as living practice that should be supported through active promotion rather than reduced to passive documentation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "El Centro Andaluz de Flamenco no se puede convertir en una institución puramente arqueológica y pasiva... El centro está obligado a desarrollar funciones de promoción y a ayudar activamente a artistas modernos",
+        "target": "Centro Andaluz de Flamenco as a public cultural institution",
+        "rationale": "The text debates the official institution's authorized role in managing, promoting, and defining flamenco cultural activity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Manuel Morao... ha calificado este hecho como «una auténtica barbaridad»... «éste era un lugar de documentación, no para que ensayen los flamencos»",
+        "target": "the Centre's documentation-only policy and closure of rehearsal space",
+        "rationale": "A recognized flamenco artist is presented as an authoritative critical voice contesting the institutional boundary between documentation and living artistic practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'raíces del pueblo andaluz' invokes roots, but the main discourse function is institutional living-heritage management rather than tradition authorizing a specific practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["heritage", "criticism"],
+      "target": "the Centro Andaluz de Flamenco's public cultural function",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a compilation of press complaints; coded the repeated discourse contesting the Centre's official role."
+  },
+  {
+    "article_id": "1994-03-21-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a short credit/licensing note and is insufficient for discourse coding."
+  }
+]

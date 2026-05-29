@@ -1,0 +1,191 @@
+[
+  {
+    "article_id": "1984-07-4-right-noche-flamenca-en-buenos-aires",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Anselmo González Climent, un clásico de la investigación del tema «jondo», cuyos rigurosos análisis... han promovido la aparición de una nueva generación de estudiosos del flamenco.",
+        "target": "Anselmo González Climent and scholarly interpretation of the jondo",
+        "rationale": "The passage authorizes flamenco knowledge through a named researcher whose rigorous analyses are credited with shaping later scholarship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Es una reunión de cabales aunque alguno de ellos, por primera vez, hayan sentido el cante",
+        "target": "the Buenos Aires gathering of listeners/interpreters",
+        "rationale": "The gathering is framed as one of cabales, granting participant status and interpretive seriousness to the group."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el cante es el arte del júpio o del grito plástico... la letra pierde territorio... para que el júpio ascienda y baje, provoque climas muy sutiles",
+        "target": "flamenco singing",
+        "rationale": "The passage defines flamenco value through aesthetic criteria of cry, trance, subtle atmosphere, and independence from literal text."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "expert and insider interpretation of cante jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; codes are based only on visible opening/window/ending text."
+  },
+  {
+    "article_id": "1984-07-8-left-razones-de-un-ay",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "gran parte del público recién iniciado en el sentimiento del arte flamenco, vayan estas líneas con la sola intención de arrojar alguna luz sobre el tema",
+        "target": "newly initiated flamenco audience",
+        "rationale": "The author explicitly frames the article as explanatory mediation for beginners seeking access to flamenco understanding."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "toda la miseria, hambre e injusticias a que ha sido sometido el pueblo llano andaluz",
+        "target": "the Andalusian common people as embodied in flamenco expression",
+        "rationale": "The flamenco cry is tied to a specific collective identity and historical suffering, making group identity central to the meaning of cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "la invasión de otros gustos musicales que nada tienen que ver con la esencial naturaleza del alma andaluza",
+        "target": "other musical tastes opposed to Andalusian flamenco essence",
+        "rationale": "The passage draws an exclusionary boundary between flamenco's essential Andalusian nature and external musical tastes presented as unrelated."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "authenticity"
+      ],
+      "target": "the flamenco ay as expression of Andalusian suffering and essence",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-8-right-los-misterios-de-la-siguiriya-gi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Si olvidamos este factor esencial no se pudiera explicar por qué los Andaluces... adoptaron su rara música oriental, se reconocieron en ella y la hicieron suya",
+        "target": "the historical roots of the siguiriya gitana in Andalusian/Gitano encounter",
+        "rationale": "The passage grounds the meaning of the siguiriya in origins, historical continuity, and rooted cultural encounter."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "los Andaluces, después de acoger en sus pueblos a los Gitanos perseguidos y de convivir con ellos, adoptaron su rara música oriental, se reconocieron en ella y la hicieron suya",
+        "target": "Andalusian and Gitano identity in the formation of the siguiriya",
+        "rationale": "Identity groups are used to explain belonging, adoption, and representation within the development of the flamenco form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text discusses interpretation and historical explanation, but not learning access, pedagogy, or transmission across institutional/social boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "the siguiriya gitana as historically rooted Andalusian-Gitano expression",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; codes are based only on visible opening/window/ending text."
+  },
+  {
+    "article_id": "1984-07-11-right-la-novela-andaluza",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Nuestro arte sirve continuamente de vehículo expresivo a este puñado de novelistas honestos y arriesgados",
+        "target": "new Andalusian novelists using flamenco/jondo material",
+        "rationale": "The passage explicitly evaluates the writers positively and values their use of flamenco as expressive material."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "este Sur doliente, que clama, desde hace siglos, por una redención que nunca llega. Nuestro Sur...",
+        "target": "Andalusian/Southern identity represented through flamenco and literature",
+        "rationale": "The passage frames flamenco-inflected narrative through a collective regional identity and shared historical suffering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt discusses literary periods and characteristics, but the visible flamenco-related evidence does not clearly canonize or rank flamenco artists, styles, or works."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco as an expressive vehicle in new Andalusian narrative",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; the main visible critical framework concerns literature, so flamenco-specific codes are limited to clear jondo/flamenco passages."
+  },
+  {
+    "article_id": "1984-07-16-left-las-coplas-de-paco-salgueiro",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of coplas/poetic lyrics without clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse about flamenco."
+  }
+]

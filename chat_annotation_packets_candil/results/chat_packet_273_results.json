@@ -1,0 +1,267 @@
+[
+  {
+    "article_id": "1993-05-11-left-emilio-gonz-lez-de-herv-s",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem mentions rhythms and 'gran verdad', but it does not function as critical evaluation or define flamenco quality criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text about soleá; no clear authorizing, critical, pedagogical, heritage, or community discourse beyond aesthetic imagery."
+  },
+  {
+    "article_id": "1993-05-12-left-jos-menese-scott-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El interés de Candil por dialogar con un artista de prestigiosa, dilatada y reconocida trayectoria artística, era manifiesto.",
+        "target": "José Menese",
+        "rationale": "The passage explicitly evaluates Menese as an artist with prestigious, long, and recognized artistic standing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Rafael conmigo se portó sinceramente bien, me ayudó mucho y a la hora de enjaretar los cantes, era un tío cabal, era un tío que sabía lo que quería y lo que debía ser.",
+        "target": "Rafael Romero as helper/authority in arranging cantes",
+        "rationale": "Rafael is presented as someone whose knowledge helped organize the cantes and who knew what they should be, giving him pedagogical and corrective authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "esos festivales multitudinarios que duran hasta las cuatro, cinco o seis de la mañana, me parecen horrorosos.",
+        "target": "multitudinous, overlong flamenco festivals",
+        "rationale": "The speaker makes a direct negative judgment about a festival format and argues that it should be restructured."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The family singing reference is suggestive, but it functions mainly as biography rather than clear community authority or recognition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'suenan muy gitano' invokes identity, but the visible excerpt does not clearly make identity the basis of authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "José Menese, Rafael Romero, and flamenco festival formats",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes limited to explicit evaluative and pedagogical claims; family/identity language was treated conservatively."
+  },
+  {
+    "article_id": "1993-05-14-left-el-lenguaje-de-la-cr-tica-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La gran dificultad de la crítica flamenca o flamencología —decía— es hallar correspondencia u homologación entre la sensibilidad y la vida práctica",
+        "target": "flamenco criticism and flamencology",
+        "rationale": "The passage reflects on the authority and difficulty of critical/flamencological discourse in translating flamenco experience into language."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "los flamencos tenemos nuestras claves de entendimiento... estamos los aficionados al flamenco haciendo un pino porque nos entiendan ellos que son absolutamente legos en nuestra materia.",
+        "target": "flamenco insiders versus non-flamenco music professors",
+        "rationale": "The text draws an epistemic boundary between flamencos/aficionados who possess internal codes of understanding and professors described as lay outsiders."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "En el fondo es aquí donde radica la enorme dificultad para acercarse al flamenco, sobre todo cuando se quiere aprender en un cursillo intensivo.",
+        "target": "attempts to access flamenco knowledge through intensive courses",
+        "rationale": "The passage frames access to flamenco knowledge as difficult and criticizes rapid institutionalized learning as inadequate to the art's internal language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Pienso que es el medio más idóneo para hacer crítica y no mostrador o mesa capilla de dimes y diretes.",
+        "target": "radio as a medium for flamenco criticism",
+        "rationale": "The author authorizes radio as an appropriate medium for flamenco criticism while distinguishing it from gossip."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The trigger 'gran' is intensifying language here; the excerpt does not construct a canon, hierarchy, or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "flamenco critical language and access to flamenco knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly meta-critical; insider/outsider and learning-access claims are visible in the excerpt."
+  },
+  {
+    "article_id": "1993-05-18-left-sinopsis-hist-rica-de-los-cantes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "fuimos exponiendo... el fundamento y el principio de los Cantes de Cartagena, porque sobre ellos la historia, afortunadamente, está escrita.",
+        "target": "Cantes de Cartagena",
+        "rationale": "The passage grounds the value and legitimacy of the Cantes de Cartagena in historical foundation, origin, and documented continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "esta jabera antigua y la rondeña del Negro, también se han conservado en Madrid a través de una línea que parte de Silverio y que corresponde al Chato de Jerez... enseñó a varios cantaores de Madrid como El Mimi.",
+        "target": "transmission of the jabera antigua and rondeña del Negro",
+        "rationale": "The passage describes lineage-based conservation and teaching from Silverio through Chato de Jerez to later Madrid singers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "entendemos como un grave error y una gran negligencia de la organización el di-luir a «La minera»... con las «tarantillas» de Cartagena: La organización... acaba de extender el certificado de defunción de la «minera».",
+        "target": "the separation of La minera from tarantillas de Cartagena",
+        "rationale": "The author polices a boundary around the proper identity of La minera, treating its dilution with tarantillas as destructive and illegitimate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "grave error y una gran negligencia de la organización",
+        "target": "the contest or organizational requirement concerning La minera",
+        "rationale": "The text uses expert criticism to condemn an organizational decision that, in the author's view, misdefines the repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The earlier phrase 'plata pura' is literal historical description of silver and was not used as purity boundary-work around flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text discusses conservation and survival of cantes, but the visible excerpt frames this more as lineage/tradition than public heritage or safeguarding policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Cantes de Cartagena and La minera",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Literal mining-history use of 'pura' was excluded; the emitted boundary code rests on the later critique of diluting La minera."
+  },
+  {
+    "article_id": "1993-05-21-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Moviendo con genialidad incomparable su más de cien kilos de peso, sus brazos dejaron en el lienzo de noches memorables todas las vicisitudes del alma gitana de mujer.",
+        "target": "Tía Juana del Pipa",
+        "rationale": "The passage explicitly praises the performer's artistry through superlative aesthetic judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "todas las vicisitudes del alma gitana de mujer",
+        "target": "gendered Gitana identity in performance",
+        "rationale": "The text frames the performance through ethnic and gendered identity, making 'alma gitana de mujer' the representational core of the artistry."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Juana Fernández... cantaora y bailaora del más rancio sabor... reaccionando ante los arrebatos academicistas con la sinceridad de su verdad y con un lenguaje desgarrado y directo",
+        "target": "Juana Fernández / Juana de Jerez",
+        "rationale": "The passage presents her art as rooted in old-style flavor and sincere truth, opposed to academicist excess, thereby authorizing it as genuine flamenco expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "con la sinceridad de su verdad y con un lenguaje desgarrado y directo de destreza singular.",
+        "target": "Juana Fernández's artistic style",
+        "rationale": "Sincerity, directness, expressive harshness, and singular skill are applied as criteria of flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "References to family relations and inherited singing are present, but the excerpt does not clearly frame them as authoritative transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text includes strong praise, but it does not clearly construct a broader canon or hierarchy beyond individual evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "Tía Juana del Pipa, La Chicharrona, and Juana Fernández",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Academicism is treated as a contrastive foil only where it supports the authenticity claim around Juana Fernández."
+  }
+]

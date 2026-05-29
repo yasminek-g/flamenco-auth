@@ -1,0 +1,277 @@
+[
+  {
+    "article_id": "1997-05-22-right-la-verdad-sobre-las-mutilaciones",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "quiero dejar claro... que no tengo ideología política determinada, sólo me interesa el Flamenco y la verdad... paso a dar luz e intentar aclarar, corri-giendo, una barbaridad",
+        "target": "Manuel Cerrejón's broadcast claim about phonographic mutilations",
+        "rationale": "The writer claims corrective authority over another flamenco commentator's public interpretation and frames it as a falsehood requiring correction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "cada vez que he tratado con estos nuevos flamencólogos ha sido para llevarme un palo... hoy sólo interesa, bien el publicar un libro o hacer el comentario con la información ajena. Y a cobrar.",
+        "target": "new flamencologists and their use of information",
+        "rationale": "The passage explicitly criticizes a class of flamenco commentators as opportunistic and unreliable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The repeated appeal to 'verdad' concerns factual correction about recordings rather than an authenticity claim about what is truly flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'baúl de los recuerdos' is used polemically about storing information, not as collective memory or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the broadcast interpretation and the authority of opportunistic flamencologists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt is sufficient for the emitted critical-authority codes."
+  },
+  {
+    "article_id": "1997-05-24-right-la-ltima-lecci-n-del-curso",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Conmigo, la cantora Mariana Cornejo, quien además de aportar la ejecución de los cantes, complementó las explicaciones con los conocimientos y gran profesionalidad de la artista gaditana.",
+        "target": "the flamenco lesson led by Paco del Río and Mariana Cornejo",
+        "rationale": "The article presents explanation, demonstration, knowledge, and professional expertise as authoritative means of teaching flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Medio centenar de señoras asistían a esa última clase de un curso sobre conocimientos de materias andaluzas... se había reservado para esta lección de cierre el tema flamenco.",
+        "target": "institutional adult-education access to flamenco knowledge",
+        "rationale": "Flamenco is framed as a subject taught within an adult education course, making access to flamenco knowledge institutional and socially meaningful."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el tema flamenco. Concretamente, los cantes de Cádiz y la aportación flamenca de la mujer... Se tuvo un recuerdo para la mujer flamenca y su labor a lo largo de los tiempos difíciles.",
+        "target": "women's contribution to flamenco",
+        "rationale": "The article explicitly frames flamenco history and transmission through women's contribution and labor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Su quejío llenó el patio de Trille de tonos multicolores, de flamenco, de flamenco limpio, sin sofisticaciones, guardando las formas... No hace falta chillar.",
+        "target": "Mariana Cornejo's singing",
+        "rationale": "The passage applies aesthetic criteria such as clean flamenco, restraint, form, and controlled expression to evaluate the performance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "the flamenco class, Mariana Cornejo's performance, and women's flamenco contribution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-25-right-beato-ceferino",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "esa actividad sobre la que tanto se ha especulado en perjuicio de esta raza... ellos mismos organizan en el cante flamenco su defensa con una mijita de guasa",
+        "target": "Gitano identity and its representation through flamenco cante",
+        "rationale": "The passage frames flamenco cante as a community response to stereotypes and discrimination against Gitano people."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "gracias por tu testimonio humano, que tanto bien hace a tu pueblo... 'Gitanito, desde el cielo / mándanos tu bendición / a todos los hombres buenos'.",
+        "target": "Ceferino as a representative figure for the Gitano community",
+        "rationale": "Ceferino is positioned as a morally exemplary witness whose significance is tied to representing and benefiting his people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article includes collective suffering and memory-like language, but it does not clearly frame flamenco as safeguarded or public cultural heritage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'gitano de ley' authorize Ceferino's character and identity, not the authenticity of flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Ceferino Jiménez Maya and Gitano communal dignity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-26-right-cante-de-mujer-cante-de-siempre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todo en ella está muy cuidado... Es un ejemplo, sin duda, de cómo se debiera trabajar la discografía flamenca.",
+        "target": "Carmen Linares's anthology and its production",
+        "rationale": "The passage explicitly praises the recording's care, production, and exemplary status as flamenco discography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "de cincuenta años para acá nadie se atrevió con semejante empresa... Antes, sólo Pastora Pavón fue tan larga y mostró tanto conocimiento flamenco.",
+        "target": "Carmen Linares in relation to the flamenco canon",
+        "rationale": "The article elevates Carmen Linares by comparing her scope and knowledge to Pastora Pavón and by placing her in a high-status lineage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la mujer ha sufrido las consecuencias del machismo que desde siempre ha impregnado todo lo tocante al Flamenco... reivindicar el primordial papel jugado por las mujeres en la conformación del actual cante flamenco.",
+        "target": "women's role in forming flamenco cante",
+        "rationale": "The passage uses gender to frame authority, recognition, and historical representation within flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "un disco reclamador de derechos eternos eternamente negados... a la voz femenina en tanto que instauradora de formas genuinas de interpretación",
+        "target": "female flamenco voice and interpretation",
+        "rationale": "The passage presents women's flamenco interpretation as genuine and foundational, giving it legitimating force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "formas cantaoras inyectadas de pasión, de inteligencia, de humilde sensibilidad... de controlado compás, de equilibrio sonoro sin estridencias.",
+        "target": "Carmen Linares's cante",
+        "rationale": "The article names aesthetic qualities—passion, intelligence, compás, balance, and lack of stridency—as criteria for valuing the recording."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions tradition oral and earlier artists, but the main discourse function is critical/gendered legitimation rather than grounding value in continuity or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "Carmen Linares's anthology and women's flamenco voice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1997-05-27-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los trabajos por él efectuados con matices heterodoxos, tienen su base en la ortodoxia flamenca.",
+        "target": "Enrique Morente's heterodox artistic work",
+        "rationale": "The passage legitimates Morente's innovation by grounding it in continuity with flamenco orthodoxy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "¿Se equivoca cuando se arriesga a buscar otros derroteros obviando un lugar preferente en el gusto de los ortodoxos?, o ¿está complementando ambas facetas?",
+        "target": "Morente's relation to orthodox and heterodox flamenco",
+        "rationale": "The article uses critical discourse to negotiate the boundary between proper orthodox flamenco and risky innovation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pepe Marchena... ensalzado por el granadino hasta el punto de considerarlo como uno de los tres o cuatro artistas más grandes que ha tenido el flamenco",
+        "target": "Pepe Marchena's canonical status",
+        "rationale": "The passage explicitly ranks Marchena among the greatest artists in flamenco, constructing a hierarchy of value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el contenido del 'Homenaje a Miguel Hernández'—particularmente para mí la mejor obra del artista granadino—",
+        "target": "Morente's 'Homenaje a Miguel Hernández'",
+        "rationale": "The writer makes a direct evaluative judgment by calling this work Morente's best."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The orthodoxy/heterodoxy contrast suggests boundary language, but the article ultimately negotiates complementarity rather than excluding an impure or illegitimate form."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The recordings are said to allow detailed study of Morente's trajectory, but this is review discourse rather than a clear learning-access or institutional pedagogy claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Enrique Morente's orthodox and heterodox flamenco trajectory",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

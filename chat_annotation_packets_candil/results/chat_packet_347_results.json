@@ -1,0 +1,236 @@
+[
+    {
+        "article_id": "1998-01-27-left-una-iniciativa-valiosa",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "high",
+                "evidence_quote": "El flamenco es patrimonio popular andaluz y ni siquiera todo el pueblo comulga con \u00e9l.",
+                "target": "el flamenco",
+                "rationale": "The passage explicitly frames flamenco as Andalusian popular patrimony and links it to collective public cultural value."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "confidence": "medium",
+                "evidence_quote": "facilitar la entrada de elementos que corrompan el hecho flamenco esencial",
+                "target": "elementos que corrompen el hecho flamenco esencial",
+                "rationale": "The passage draws a boundary between an essential flamenco fact and external elements that would corrupt it."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "medium",
+                "evidence_quote": "La idea de la investigaci\u00f3n no s\u00f3lo es buena para captar a gente joven \u2014futuro inmediato\u2014 para desentra\u00f1ar entresijos hist\u00f3ricos o t\u00e9cnicos.",
+                "target": "investigaci\u00f3n flamenca y transmisi\u00f3n a gente joven",
+                "rationale": "Research is valued as a way to involve younger people and sustain historical and technical knowledge as a living cultural responsibility."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The text mentions public appearance and minority reception, but does not clearly contrast participatory/private flamenco with public spectatorship."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "heritage",
+                "authenticity",
+                "criticism"
+            ],
+            "target": "flamenco as Andalusian popular patrimony and essential cultural practice",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Truncated article; annotations are limited to visible context and evidence window."
+    },
+    {
+        "article_id": "1998-01-29-right-tientos-tangos-y-tanguillos",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "de suyo, en pura ortodoxia, deber\u00eda alterarse el orden de la familia de este tr\u00edo de cantes, tomando como vital preferencia, dado su car\u00e1cter de cante b\u00e1sico, el tango gitano o flamenco, al considerarse como uno de los pilares en que se fundamenta el cante flamenco",
+                "target": "tango gitano o flamenco",
+                "rationale": "The passage ranks the tango gitano/flamenco as a basic cante and one of the foundational pillars of flamenco."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "se desmarcan aqu\u00e9llos de \u00e9stos en cuanto a su \u00abacompa\u00f1amiento\u00bb lento, lo que le da un sentido m\u00e1s solemne y profundo",
+                "target": "tientos and tangos",
+                "rationale": "The text applies aesthetic criteria such as comp\u00e1s, slowness, solemnity, depth, expressiveness, and jondura to distinguish and value the cantes."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "Tangos y tientos est\u00e1n \u00edntimamente emparentados \u2014son los tangos tronco del que proceden los tientos\u2014",
+                "target": "genealogical relation between tangos and tientos",
+                "rationale": "The passage grounds present classification and value in lineage, origin, and continuity between related flamenco forms."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "tradition"
+            ],
+            "target": "tangos, tientos, and tanguillos as related flamenco cantes",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Truncated article; annotations are limited to visible context and evidence window."
+    },
+    {
+        "article_id": "1998-01-32-left-la-microtonalidad-del-flamenco",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "lo que posibilita al cantaor o cantaora un medio de expresi\u00f3n sonoro especialmente rico, flexible y libre sin someterse a ninguna regla de afinaci\u00f3n",
+                "target": "microtonal vocal expression in flamenco cante",
+                "rationale": "The passage defines flamenco vocal value through aesthetic and technical criteria of richness, flexibility, freedom, and sonic expression."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "The article explains musical concepts, but it does not frame institutional or transnational access to flamenco knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "microtonality as a source of flamenco sonic value",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1998-03-3-left-grabaciones-antiguas-y-selectas-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "la creatividad y jondura de los artistas m\u00e1s legendarios y sobresalientes del flamenco",
+                "target": "artists represented in old flamenco recordings",
+                "rationale": "The passage canonizes the recorded artists as legendary and outstanding, constructing a hierarchy of exemplary flamenco figures."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "medium",
+                "evidence_quote": "archivos que s\u00f3lo iban a servir para la investigaci\u00f3n sobre nuestro arte. De esta forma, los aficionados tenemos a nuestra disposici\u00f3n... lo m\u00e1s a\u00ednejo y selecto de las placas antiguas.",
+                "target": "old flamenco discographic archives",
+                "rationale": "The passage values archival recordings as resources for research and public access to older flamenco materials."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "suspiramos con la satisfacci\u00f3n de un movimiento bien ejecutado en favor del flamenco",
+                "target": "publication of old flamenco recordings",
+                "rationale": "The article explicitly praises the publication of archival recordings as a well-executed action in favor of flamenco."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The article values old recordings as a\u00f1ejo/selecto, but the visible text is more clearly archival, critical, and canonizing than tradition-continuity discourse."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "archival publication of old flamenco recordings and canonical artists",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1998-03-3-right-reflexiones-en-voz-baja",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "A los que no queremos formar parte de ese reba\u00f1o, y mostramos nuestra peque\u00f1a rebeld\u00eda, nos llaman puristas, ortodoxos o trasnochados; qu\u00e9 m\u00e1s da, si la cuesti\u00f3n no es tanto la descalificaci\u00f3n que se hace de esas ideas como la de continuar vendiendo cada cual \u00absu propio kiosco\u00bb",
+                "target": "commercially adaptive flamenco discourse and those who dismiss purist positions",
+                "rationale": "The passage uses polemical critical authority to police boundaries around improper, commercially self-serving flamenco positions."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "confidence": "high",
+                "evidence_quote": "La p\u00e9rdida de la impronta bohemia del artista, cada vez m\u00e1s supera-da por el inter\u00e9s del \u00e9xito y del dinero",
+                "target": "success- and money-driven flamenco practice",
+                "rationale": "The passage frames success and money as forces that weaken the artist's valued bohemian imprint and artistic authenticity."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Aqu\u00ed, en nuestro pa\u00eds tan lleno de culturas milenarias y folklores diversos, seguimos sin dar el valor tan inconmensurable que tiene nuestro Arte Flamenco.",
+                "target": "Arte Flamenco",
+                "rationale": "The passage frames flamenco as a public cultural value within a wider field of millenary cultures and folklores that deserves recognition."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The mention of hombres y mujeres is incidental to cultural neglect and does not organize flamenco authority through identity framing."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Adaptaci\u00f3n is used as moral-commercial critique, not as learning, pedagogy, or access to flamenco knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "authenticity",
+                "heritage",
+                "criticism"
+            ],
+            "target": "Arte Flamenco against commercialization and cultural neglect",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Truncated article; annotations are limited to visible context and evidence windows."
+    }
+]

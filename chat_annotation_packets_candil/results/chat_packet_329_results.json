@@ -1,0 +1,263 @@
+[
+  {
+    "article_id": "1997-01-25-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Rubichi” es un intérprete que mantiene una tesitura cantaora ortodoxa.",
+        "target": "Diego de los Santos “Rubichi” and his recording",
+        "rationale": "The review explicitly assesses Rubichi's interpretive position and quality as orthodox flamenco singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "En las bulerías mantiene las esencias de su casta y su cuna cantaora, y en la granaína la musicalidad que un gitano de Jerez le da al estilo.",
+        "target": "Rubichi's treatment of bulerías and granaína",
+        "rationale": "The passage applies aesthetic criteria of lineage, local vocal identity, and musicality to judge the performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Cierra su trabajo en la más pura tradición de su cuna familiar y jerezana por martinetes.",
+        "target": "Rubichi's martinetes and Jerez family tradition",
+        "rationale": "The review grounds the value of the performance in continuity with family and Jerez traditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text contrasts orthodoxy, hybridism, and vanguardist listening, but it ultimately accepts hybrid works rather than excluding them as illegitimate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The reviewer discusses modernism and hybridism, but the clearest function is general critical evaluation rather than expert boundary policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Rubichi's recording and Rafael Riqueni's flamenco guitar compositions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article reviews two recording contexts; codes focus on explicit evaluative and tradition-based claims in the visible text."
+  },
+  {
+    "article_id": "1997-01-26-right-el-cante-de-la-petenera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "tiene que ser por derecho propio cante arraigado a nuestro suelo.",
+        "target": "the petenera as a flamenco cante rooted in Andalusian/Cádiz soil",
+        "rationale": "The passage authorizes the petenera through rootedness, origin, and territorial continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Por supuesto que no estamos de acuerdo con el señor González de Hervás en legar con carácter de gratitud nuestro cante gaditano a esta población almeriense.",
+        "target": "González de Hervás's attribution of the petenera",
+        "rationale": "The author uses critical disagreement with a named flamencological claim to police the proper origin and belonging of the cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Ellos han sabido recoger la savia de nuestros poetas andaluces... e incorporarlo a su repertorio para ir pregonando por los caminos de esta bendita tierra la razón de vivir y de ser de un cante.",
+        "target": "interpreters who transmit the petenera repertoire",
+        "rationale": "The passage frames singers as carrying forward poetic material into repertoire and transmitting the cante's reason for being."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Jewish, Gitano, Andalusian, Cádiz, and Paterna identities appear in origin arguments, but the stronger visible function is roots/authenticity rather than identity-based authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as emotive, melancholic, sentimental, and duende are present, but they mostly report others' classification rather than applying an aesthetic criterion in the author's own evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the petenera's origin, rootedness, and transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Origin claims are contested; the emitted codes rely on the author's explicit rejection and rootedness claim, not on the presence of origin vocabulary alone."
+  },
+  {
+    "article_id": "1997-01-27-right-recordando-a-carmen-amaya",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fue, junto a Pau Casals, la figura catalana más universalmente conocida.",
+        "target": "Carmen Amaya",
+        "rationale": "The passage canonizes Amaya by ranking her among the most universally known Catalan figures."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Carlos Arnau, alcalde de la villa, y los Amigos de Carmen Amaya inauguraron oficialmente la hermosa terracota",
+        "target": "official commemoration of Carmen Amaya in Begur",
+        "rationale": "The commemorative object is officially inaugurated by municipal authority and a named association, conferring public recognition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "una petición insistente y unánime: que sea el Mas Pinc, su masía, un museo dedicado en exclusividad a ella.",
+        "target": "Carmen Amaya's memory and proposed museum",
+        "rationale": "The passage calls for museum-based memory work to safeguard and publicly sustain Amaya's legacy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text names Amaya as woman and gitana, but the visible function is commemoration and canonization rather than identity-group authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Carmen Amaya as a publicly commemorated flamenco figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article combines canonizing praise with official and community memory work."
+  },
+  {
+    "article_id": "1997-01-28-right-festival-flamenco-homenaje-a-man",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "recibió distintos recuerdos por parte del Ayuntamiento, Diputación Provincial y distintas entidades flamencas.",
+        "target": "Manuel Fernández Castro “Finito”",
+        "rationale": "Municipal, provincial, and flamenco entities publicly recognize the homenajed artist through commemorative offerings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En esta segunda parte habría que destacar, además del baile de Javier la Torre, la buena actuación de «Nano de Jerez» y el arte de Aurora Vargas.",
+        "target": "festival performers",
+        "rationale": "The article explicitly evaluates the quality of several performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text notes public affection and flamenco entities, but it does not clearly present the community as an authority judging or sustaining flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "the homenaje to Finito and the festival performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The heritage-authority code is medium confidence because the official recognition is clear, though the passage is more homage report than explicit heritage discourse."
+  },
+  {
+    "article_id": "1997-01-29-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Resulta alentador, y debiera ser un acicate para todos los que nos dedicamos a la crítica flamenca, la lectura de obras como ésta del profesor Penna",
+        "target": "Mario Penna's book",
+        "rationale": "The review explicitly praises the book and frames it as valuable for flamenco criticism."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "otras gentes no gitanas, pero verdaderamente interesadas en él, ese público al que Penna denomina \"busné\" (ésto es, extranjeros, pero no \"extraños\")",
+        "target": "non-Gitano but trusted flamenco observers",
+        "rationale": "The passage draws an insider/outsider boundary between paying outsiders and non-Gitano observers who are not treated as strangers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "gozarían de la confianza del pueblo gitano, y disfrutarían por ello de un arte verdadero y no adulterado",
+        "target": "flamenco shared with trusted non-Gitano observers",
+        "rationale": "The passage opposes true, unadulterated art to a more superficial version offered to paying outsiders."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The book is called a manual for non-initiates and a documented study, but the stronger visible functions are review evaluation and insider/outsider authenticity boundary work."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano and payo identity categories structure the example, but the clearest coded boundary is insider versus outsider trust rather than broad identity-group representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "Penna's account of access to true flamenco and the book's critical value",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review uses Penna's account to distinguish trusted access to true flamenco from superficial access mediated by payment."
+  }
+]

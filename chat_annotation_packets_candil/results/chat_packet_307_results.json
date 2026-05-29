@@ -1,0 +1,210 @@
+[
+  {
+    "article_id": "1995-07-4-right-2-sobrevivir-en-cada-edici-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La continuidad del proyecto peligraba; pero, por fortuna, la Diputación de Jaén ejerce a tiempo un digno mecenzago y subvenciona básicamente las sucesivas ediciones hasta el Otoño de 1983, en que toma el relevo la Consejería de Cultura de la Junta de Andalucía",
+        "target": "la Revista Candil",
+        "rationale": "The passage frames Candil's survival as dependent on public cultural institutions that recognize and support the flamenco publication."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Hay que subrayar lo genuino de la cultura andaluzay poner al descubierto la veta de minerales artísticos que yacen en la sima del olvido y de la ignorancia.",
+        "target": "la cultura andaluza vinculada al flamenco",
+        "rationale": "The passage authorizes the cultural project by presenting Andalusian culture as genuine and artistically valuable, in the context of flamenco historiography and publication."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "centenares de Ayuntamientos andaluces que compiten entre sí por organizar festivales flamencos muy costosos y desproporcionados con relación a sus propios recursos. Las modas son pasajeras y no resisten el cambio de utilidades.",
+        "target": "festivales flamencos municipales",
+        "rationale": "The text explicitly evaluates municipal flamenco festivals as costly, disproportionate, and fashion-driven."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["heritage", "authenticity", "criticism"],
+      "target": "Candil and institutional flamenco culture in Andalucía",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Institutional support is coded because it is tied to Andalusian cultural identity and flamenco historiography, not merely listed as funding."
+  },
+  {
+    "article_id": "1995-07-5-right-ante-el-n-mero-100-de-candil",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ello significa realizar un ejercicio de memoria colectiva, atreverse con los diagnósticos",
+        "target": "la edición de publicaciones culturales en Jaén",
+        "rationale": "The passage frames publishing as collective memory-work, giving the cultural activity public mnemonic value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Espero que su índice cronológico, temático y de autores, facilite su consulta y sirva, a la vez, para poder profundizar en este conocimiento de la cultura española.",
+        "target": "el índice de la Revista Candil",
+        "rationale": "The index is presented as a tool for access to knowledge and deeper study, mediating flamenco-related cultural learning through the publication."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "seguir investigando y exponiendo este quehacer, tan representativo de nuestras raíces",
+        "target": "el quehacer flamenco/cultural de Candil",
+        "rationale": "The text legitimates the activity by linking it to investigation, exposition, and collective roots."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "tradition"],
+      "target": "Candil as a publication of cultural memory and knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The letter is brief, so codes are limited to explicit memory, knowledge-access, and roots claims."
+  },
+  {
+    "article_id": "1995-07-8-left-el-presidente-de-la",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "No hace falta repetir que en el Flamenco se encuentran muchas de nuestras señas de identidad cultural e histórica. El Flamenco es una parte esencial de nuestras vidas y tal vez la forma suprema de expresión del alma andaluz.",
+        "target": "el flamenco como identidad andaluza",
+        "rationale": "The passage frames flamenco as collective cultural and historical identity, giving it public heritage value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "mereciendo una positiva consideración por sus valiosos trabajos que hoy constituyen fuente esencial para el estudio del flamenco",
+        "target": "la Revista Candil",
+        "rationale": "Candil is legitimated as an essential source for the study of flamenco, mediating access to flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la defensa y difusión del flamenco, y, por tanto, de las esencias más puras de este arte y de la cultura andaluz. Al flamenco han hecho mucho daño... la presencia de pseudo-intelectuales... y la existencia de un mundillo movido por los intereses de la comercialización.",
+        "target": "el flamenco defendido por Candil frente a snobismo y comercialización",
+        "rationale": "The passage draws a boundary between the pure essences of flamenco and damaging pseudo-intellectual or commercial forces."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions aficionados and the Peña Flamenca de Jaén, but the strongest visible claims concern heritage identity, knowledge mediation, and purity boundary-work rather than community authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The anti-commercial critique could support boundary critique, but it substantially overlaps with the emitted AUTH_02 purity-boundary claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["heritage", "pedagogy", "authenticity"],
+      "target": "Candil and flamenco as Andalusian cultural identity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains clear identity, study, and boundary evidence."
+  },
+  {
+    "article_id": "1995-07-8-right-junta-de-andalucia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Así lo reconoce la Consejería de Cultura de la Junta de Andalucía y lo manifiesta en el apoyo que viene prestando y prestará en el futuro a la edición de esta singular revista.",
+        "target": "la Revista Candil",
+        "rationale": "The Consejería de Cultura is explicitly shown recognizing and supporting Candil, giving the flamenco publication authorized institutional value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "una ejemplar constancia en el empeño de transmitir información y conocimiento sobre su campo de trabajo",
+        "target": "la Peña Flamenca de Jaén y Candil",
+        "rationale": "The passage values Candil's work as the transmission of flamenco information and knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "las sucesivas ediciones han mantenido un indudable nivel de calidad, el logro merece un sincero reconocimiento y un efusivo aplauso",
+        "target": "las ediciones de Candil",
+        "rationale": "The passage explicitly evaluates Candil's editions as maintaining a clear level of quality and deserving recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text says Candil studies the roots and evolution of flamenco, but the phrase is mainly about the publication's analytical scope rather than using roots to authorize a present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "criticism"],
+      "target": "Candil as an institutionally recognized and high-quality flamenco publication",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The ending context is an index and was not used as evidence for codes."
+  },
+  {
+    "article_id": "1995-07-42-left-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Entries such as 'FLAMENCO EN LA ESCUELA' and 'Los Cursos de Iniciación al Flamenco en la Escuela' suggest institutional learning topics, but they are index headings without visible discourse function."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Index entries such as 'Paco de Lucía, flamenco universal' could imply canonical status, but the visible text only lists titles and references."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is an index/listing; headings and references alone do not establish evaluative, pedagogical, heritage, or authority discourse."
+  }
+]

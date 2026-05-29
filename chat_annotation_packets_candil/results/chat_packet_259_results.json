@@ -1,0 +1,260 @@
+[
+  {
+    "article_id": "1992-09-3-right-apuntes-sobre-la-sole-y-la-sigui",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "los cantes grandes sean casi específicamente pertenencia masculina. En cambio, la soleá... ha sido el camino elegido por la mujer",
+        "target": "gendered belonging in soleá and cantes grandes",
+        "rationale": "The passage explicitly organizes flamenco styles through gendered belonging, assigning cantes grandes largely to men and soleá to women."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "los otros cantes de igual jerarquía",
+        "target": "soleá and other jondo styles",
+        "rationale": "The article places soleá within a hierarchy of 'cantes grandes' and compares it to other styles of equal rank."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "En la soleá, la mujer ha expresado mejor su temperamento... el garbo de este cante realmente único entre los grandes",
+        "target": "women's performance of soleá",
+        "rationale": "The passage applies aesthetic criteria such as temperament, affective expression, garbo, and uniqueness to evaluate why soleá suits women singers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'memoria' appears only as ordinary recollection and does not frame safeguarding, living heritage, or public cultural memory."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The ending mentions regional tradition in a bullfighting analogy, but the visible excerpt does not clearly use flamenco tradition or roots to authorize a present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "women's place in soleá within the hierarchy of jondo styles",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Gendered style assignment is explicit; heritage hint is keyword-only."
+  },
+  {
+    "article_id": "1992-09-7-left-ocho-im-genes-de-ocasi-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "recomponer... la imagen de un pasado que se niega a desaparecer para siempre",
+        "target": "archival photographs of flamenco artists",
+        "rationale": "The photographs are framed as memory-work that preserves a threatened past and helps flamenco culture survive amid modern forgetting."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el mundo del arte flamenco, que ha perdurado hasta el presente como la magnífica cristalización de una cultura",
+        "target": "flamenco as public cultural inheritance",
+        "rationale": "The passage frames flamenco as a collective cultural crystallization that carries identity and historical value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Terms such as 'mítico cantaor' and named artists suggest canonical status, but the passage mainly documents photographs rather than constructing a ranking or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "archival flamenco photographs and the older flamenco world they preserve",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-8-right-por-malague-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nos encontramos ante una obra coja que contribuye más al despiste del aficionado que a una divulgación seria del cante malagueñero",
+        "target": "Diego Clavel's album '31 Malagueñas'",
+        "rationale": "The article explicitly criticizes the recording as artistically and pedagogically defective."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "toda la obra está privada del gusto preciso para cantar por malagueñas... se nota la falta de sabor propio de la tierra",
+        "target": "performance of malagueñas on the album",
+        "rationale": "The critique applies aesthetic criteria such as taste, local flavor, fidelity to styles, and knowledge of original versions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "cantaores de la «Málaga cantaora»... excelentes malagueñeros que hubieran cumplido muy dignamente el encargo",
+        "target": "local Málaga authority over malagueñas",
+        "rationale": "The passage grounds proper performance and dissemination of malagueñas in local roots and continuity with Málaga's singing tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "las malagueñas perotas no son un saco donde cabe todo... sus desafortunadas versiones de tales estilos",
+        "target": "improper attribution and performance of malagueña styles",
+        "rationale": "The critic polices stylistic boundaries, rejecting confused or improper versions as misleading and aesthetically invalid."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The contrast between Málaga singers and a singer 'de fuera de la tierra' implies local belonging, but the passage functions more as authenticity/tradition and criticism than as an insider-outsider social boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Diego Clavel's '31 Malagueñas' and the institutional choice behind it",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-9-left-loli-la-revoltosa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "otra artista descendiente de una gran estirpe cantaora",
+        "target": "Loli la Revoltosa's flamenco authority",
+        "rationale": "The article grounds Loli's legitimacy in recognized family and community lineage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "mi padre, que era flamenco y conocía la tradición de la familia",
+        "target": "family knowledge of the Antúnez flamenco lineage",
+        "rationale": "The passage frames flamenco knowledge as transmitted and authorized through family memory and intergenerational lineage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Está claro que éste no es mi disco..., el que yo siento; el día que lo haga sola lo haré más puro.",
+        "target": "Loli's projected solo recording",
+        "rationale": "Loli contrasts the collective recording with a future solo record she would make 'más puro,' drawing a purity boundary around the music she truly feels."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article notes Loli is a woman and discusses female relatives, but the visible passage does not use gender itself to define flamenco authority or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The introductory praise suggests artistic value, but the stronger discourse functions are lineage, transmission, and purity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Loli la Revoltosa and her family-grounded flamenco practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-12-left-i-congreso-de-cr-ticos-de-arte-f",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "analizar la realidad del lenguaje crítico flamenco, su posible definición associativa y los cauces por la que tal actividad pudiera desarrollarse en el futuro",
+        "target": "institutional authority of flamenco criticism",
+        "rationale": "The congress positions critics as an organized expert body defining the language, ethics, and future functions of flamenco criticism."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "hacer del estudio del flamenco algo más sólido y reputado por el conjunto social",
+        "target": "institutional study of flamenco",
+        "rationale": "The article frames flamenco knowledge as something to be strengthened and socially legitimated through institutional organization and collective study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "There is official approval and institutional procedure, but the passage does not frame flamenco as heritage or patrimony."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca hosts the event, but this is organizational context rather than a claim that peña community authorizes flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "organized flamenco criticism and study",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

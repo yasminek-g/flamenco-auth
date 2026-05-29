@@ -1,0 +1,83 @@
+[
+  {
+    "article_id": "1998-11-25-left-letras-flamencas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short lyric excerpt only; no visible evaluative, authorizing, pedagogical, heritage, community-boundary, or critical discourse."
+  },
+  {
+    "article_id": "1998-11-25-right-fernando-el-de-la-morena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "siempre ante-pone la conservación de las raíces flamencas ante cualquier nuevo movimiento innovador",
+        "target": "Fernando el de la Morena's stance toward flamenco roots and innovation",
+        "rationale": "The passage explicitly values conservation of flamenco roots over new innovative movements, using roots and continuity as authority for proper flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Luego, como eran de otra generación, yo escuchaba a los viejos del lugar. Entre ellos puedo citar a Tío Borrico, Tío Cuquejo, Mari Bala, Antonia la Peña...",
+        "target": "Fernando el de la Morena's early flamenco learning",
+        "rationale": "The excerpt frames flamenco knowledge as learned by listening to older local figures across generations, a clear oral/intergenerational transmission mode."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Cuando era chiquillo... me enteraba bien dónde había uno de los nuestros... Entonces llegaba yo a la fiesta correspondiente y no paraba hasta desgañitarme.",
+        "target": "Jerez gitano party/community setting as a grounding for flamenco practice",
+        "rationale": "The passage grounds his flamenco formation in community belonging, family-like gatherings, and socially recognized local participation rather than formal training."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "para bailar hay que utilizar todos los elementos de tu cuerpo. Hasta los ojos...",
+        "target": "criteria for flamenco dance",
+        "rationale": "The speaker defines a criterion for good baile flamenco by insisting that the whole body, not only footwork, must be used."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Although the excerpt mentions memory, roots, and conservation, it frames them as authenticity/tradition and personal/community transmission rather than public heritage, safeguarding, or heritage-policy discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The preference for roots over innovation suggests a boundary, but the visible excerpt does not explicitly devalue innovation as impure, fake, or illegitimate enough for purity-boundary coding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Fernando el de la Morena's flamenco formation and criteria of value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes are based only on the visible review excerpt; retrieval hint is not treated as a label."
+  }
+]

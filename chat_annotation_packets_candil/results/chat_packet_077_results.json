@@ -1,0 +1,209 @@
+[
+  {
+    "article_id": "1983-07-19-left-las-letras-flamencas-de-alfonso-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of lyric fragments with social and emotional imagery, but no clear evaluative, authorizing, pedagogical, heritage, community-boundary, or critical discourse about flamenco."
+  },
+  {
+    "article_id": "1983-07-19-right-a-antonio-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Y yo mismo te cuido en la memoria, y caliento tu voz, la recupero",
+        "target": "Antonio Mairena's remembered voice",
+        "rationale": "The elegiac speaker frames Mairena's voice as something recovered and cared for through memory, giving the passage a remembrance and preservation function."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "el son volcánico de un pueblo ... nos convoca a una memoria de tiniebla",
+        "target": "collective memory around Mairena",
+        "rationale": "The poem links Mairena to the sound and memory of a people, using group identity to frame cultural meaning and belonging."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem venerates Mairena, but it does not make a clear critical evaluation of his artistic quality through review-like judgment."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "There is collective memory language, but no explicit public heritage or patrimony framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "Antonio Mairena as a figure of collective memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic diction is dense, so only the clearest memory and group-identity functions were emitted."
+  },
+  {
+    "article_id": "1983-07-20-left-un-solo-ritmo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "se nos brinda la oportunidad de bucear en una profunda investigación de donde se podrán sacar notas para el constante aprendizaje que suponen nuestras vivencias en el Cante",
+        "target": "flamenco knowledge about rhythm and cante",
+        "rationale": "The author frames investigation and debate as a source for ongoing learning about cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ambos consiguen el ritmo único, total, que se transmite en la emoción indescriptible ... si falla alguno de ellos ... el aficionado notará el desfase y la atmósfera decae inevitablemente",
+        "target": "rhythmic coordination between cante and guitar",
+        "rationale": "The article uses rhythm, compás, and balance between cante and guitar as explicit criteria for successful flamenco interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Sin ánimo de sentar cátedra, sino con afán de diálogo ... he aquí algunas consideraciones",
+        "target": "Caballero Bonald/Buendía's rhythm distinction",
+        "rationale": "The author enters an expert-critical dialogue to clarify and contest a prior flamencological distinction between internal and external rhythm."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'dará auténtico valor' appears, but it functions mainly as aesthetic evaluation of rhythmic coordination rather than a broader authenticity claim about proper flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Compás and gesture are mentioned, but the passage is analytical and critical rather than describing embodied or oral transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the correct understanding of rhythm in cante and guitar accompaniment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-20-right-xi-congreso-nacional-de-a-flamen",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The program lists conferences, work sessions, exhibitions, and film sessions, but the visible text is an event schedule without evaluative or access-oriented pedagogy discourse."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Universities, municipal bodies, and cultural centers appear, but they are venue or program details rather than explicit institutional heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the schedule contains flamenco institutions and cultural programming, it does not itself evaluate, authorize, preserve, teach, or define belonging."
+  },
+  {
+    "article_id": "1983-07-21-left-jose-cepero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Su voz era agradable, musical y clara ... Servía su cante de recreo para el oído y para el espíritu",
+        "target": "José Cepero's cante",
+        "rationale": "The passage explicitly evaluates Cepero's voice and cante through praise of its musical and expressive qualities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ejecutaba con poderío y buen compás soleares y siguiriyas",
+        "target": "José Cepero's execution of soleares and siguiriyas",
+        "rationale": "The assessment applies aesthetic criteria of power and compás to judge Cepero's flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cantaor que rondó lo que había de jerarquía y maestrazgo en la llamada por él “época de oro del cante”",
+        "target": "José Cepero's place in flamenco hierarchy",
+        "rationale": "The passage situates Cepero within a hierarchy of maestrazgo and an 'época de oro,' constructing comparative canonical status while noting limits."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Quizás el autor que mejor definió su cante y su persona fue González Climent",
+        "target": "González Climent's critical definition of Cepero",
+        "rationale": "The text privileges González Climent as an expert voice whose critical definition authorizes the interpretation of Cepero's artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Terms like 'raíces' and 'época de oro' appear, but the dominant function is critical ranking and evaluation rather than grounding present flamenco value in tradition or continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'acaudillar discípulos' appears in a negative critical assessment, but there is no clear discussion of teaching authority or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José Cepero's artistry and canonical standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains both praise and negative/limiting criticism, so polarity is mixed."
+  }
+]

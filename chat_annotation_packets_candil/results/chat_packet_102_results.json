@@ -1,0 +1,251 @@
+[
+  {
+    "article_id": "1984-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "lo constata como genuino hecho cultural, específico de este Sur doliente, de manera que, queda inventariado en su, tantas veces, expoliado patrimonio",
+        "target": "flamenco as cultural patrimony",
+        "rationale": "The passage frames flamenco as a genuine cultural fact inventoried within an exploited collective patrimony."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los grandes medios de comunicación y, más en particular, T.V.E., difunden, con harta frecuencia, una imagen espúrea de lo jondo",
+        "target": "media representations of lo jondo",
+        "rationale": "The text draws a legitimacy boundary by calling televised representations of flamenco spurious."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una fiesta flamenca, que resulta el colmo de la incongruencia y del poco rigor historiográfico",
+        "target": "the flamenco scene in the TV series Mariana Pineda",
+        "rationale": "The editorial voice polices representational accuracy and criticizes the scene as historically careless and improper."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The ending mentions public entities, federations, and the Department of Flamenco, but the visible passage is mostly administrative and does not clearly authorize flamenco as heritage through official recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco as patrimony versus spurious media representation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible editorial excerpt clearly supports heritage framing and critique of spurious media representations."
+  },
+  {
+    "article_id": "1984-11-4-right-las-canti-as-y-sus-derivaciones",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "las Soleares, como árbol fundamental de tantas variaciones de ella nacidas",
+        "target": "Soleares within the genealogy of cantes",
+        "rationale": "The passage hierarchizes flamenco forms by presenting Soleares as a fundamental source from which many variations derive."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "las Cantiñas... constituyen de por sí un cante específico, ajeno a los juguetillos, de una ascendencia claramente gitana",
+        "target": "Cantiñas as a specific cante",
+        "rationale": "The passage grounds the value and identity of Cantiñas in specificity, origin, and rooted gitano ancestry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Los estudiosos del flamenco no se ponen de acuerdo y buena parte de ellos soslayan el argumento de Cantiñas/Derivados de Cantiñas",
+        "target": "flamenco scholars on Cantiñas and their derivatives",
+        "rationale": "The author invokes and critiques expert disagreement as part of defining the proper classification of Cantiñas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions family-related terms and named local figures, but the visible text does not clearly grant community or family authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Cantiñas as a specific flamenco form with genealogy and origin",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt supports classification and genealogy claims despite the article being truncated."
+  },
+  {
+    "article_id": "1984-11-7-right-alexandre-el-valor-de-la-palabra",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The quoted Nobel rationale mentions tradition and modern currents, but it concerns Aleixandre's poetry rather than flamenco or a flamenco-related practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Academia Sueca is an institution, but the passage concerns literary recognition, not institutional access to flamenco learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text canonizes literary figures, but the evaluative hierarchy is about Spanish poetry, not flamenco discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible evidence is literary homage and criticism, not flamenco-related discourse under the collapsed codebook."
+  },
+  {
+    "article_id": "1984-11-10-right-la-ca-a-y-el-polo-por-ejemplo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "No comprendo cómo voces autorizadas del Cante y su literatura aseguran lo históricamente menos seguro, menospreciando mucho de lo respaldado por alguna referencia de origen.",
+        "target": "authorized voices in cante and flamenco literature",
+        "rationale": "The passage challenges expert authority and criticizes their role in devaluing certain cantes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "poner en duda la identidad honda de los más",
+        "target": "cantes excluded from the reduced set of important basic cantes",
+        "rationale": "The article contests boundary work that denies the deep flamenco identity of many cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ese empeño en reducir el número de cantes importantes a tan pocos para, rindiéndole culto como básico a esos menos",
+        "target": "hierarchies of basic versus non-basic cantes",
+        "rationale": "The passage explicitly critiques a hierarchy that elevates a small number of cantes as basic and important."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la verdadera frontera, única y musicalmente clara, que separa el Cante del canto",
+        "target": "musical criteria distinguishing Cante from song",
+        "rationale": "The author defines flamenco value through musical criteria, including the boundary between Cante and ordinary song."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions origin references and distant inheritance, but the main discourse function is boundary critique and hierarchy rather than continuity authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "the legitimacy of the Caña, Polo, and other disputed cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-11-11-right-cr-nica-de-la-vi-quincena-de-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una programación —al parecer, asesorada por el crítico lebrijanista Miguel Acal— que no a todos satisfacía",
+        "target": "the Quincena programming",
+        "rationale": "The chronicle explicitly evaluates the festival programming as unsatisfactory to some."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Los organizadores que organizen, la crítica que sea aficionada al cante y no a los cantaores, que enseñe, divulgue, informe y no defienda intereses crematísticos.",
+        "target": "festival organizers and flamenco critics",
+        "rationale": "The passage asserts norms for critical authority and criticizes criticism that serves personal or financial interests."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el mejor cantaor de este año festivadero (pureza, profesionalidad y constancia), según los organizadores, ha sido Manuel Mairena",
+        "target": "Manuel Mairena and festival-era singer ranking",
+        "rationale": "The passage invokes ranking and exemplary status through the label of best singer and associated criteria."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Que nadie desacredite este patrimonio cultural. Las futuras generaciones os lo agradecerán.",
+        "target": "flamenco as cultural heritage",
+        "rationale": "The passage frames flamenco as cultural patrimony whose reputation matters for future generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The ending says critics should teach, disseminate, and inform, but this is a normative aside about criticism rather than a concrete pedagogical authority relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "the Quincena, flamenco critics, organizers, and flamenco as cultural patrimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible critique and heritage claim are clear."
+  }
+]

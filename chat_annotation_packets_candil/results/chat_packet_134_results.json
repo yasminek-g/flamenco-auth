@@ -1,0 +1,220 @@
+[
+  {
+    "article_id": "1986-07-4-right-un-apret-n-de-manos",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions a divide between two communities and peaceful coexistence, but the visible passage frames an ethnic-historical polemic rather than flamenco as public heritage, safeguarding, or community heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author invokes documents, truth, and exhaustive study, but the exercised expert authority concerns historical treatment of gitanos in Spain and is explicitly described as moving away from flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt centers on a non-flamenco historical polemic and explicitly notes that the debate is moving away from flamenco."
+  },
+  {
+    "article_id": "1986-07-6-left-el-loco-que-canta",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poem uses the word memoria, but as lyric imagery rather than public heritage, safeguarding, or collective memory-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem evokes cante poetically but does not apply aesthetic criteria to judge or define flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic depiction only; no clear evaluative, pedagogical, heritage, community, or authority discourse."
+  },
+  {
+    "article_id": "1986-07-9-right-vida-y-cante-de-don-antonio-chac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Porque el estudio de José Blas Vega es una obra de trinchera, de las que toman partido; libro perfectamente documentado, empapado de las esencias chaconianas, pero beato; libro hagiográfico para cantarle al santo",
+        "target": "José Blas Vega's book on Antonio Chacón",
+        "rationale": "The reviewer explicitly evaluates the book's documentation and polemical, hagiographic stance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El, prácticamente en este cante fue su revolucionador, su jerarquizador, su mejor intérprete, su divulgador y su creador genial",
+        "target": "Antonio Chacón's status in malagueñas and related cante history",
+        "rationale": "The quoted claim canonizes Chacón through superlative ranking and assigns him foundational creative authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el autor se mete en el intrincado mundo de los análisis e interpretaciones del mundo flamenco... rompe con gracia e inteligencia una certera lanza en favor del desacreditado mundo del teatro flamenco",
+        "target": "Blas Vega's expert reinterpretation of flamenco historiography and theatre flamenco",
+        "rationale": "The passage presents scholarly-critical interpretation as an authoritative intervention in contested flamenco boundaries and reputations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Terms such as pureza, desvirtuar, and advenedizos appear in reported controversy, but the clearest visible discourse is critical historiographic boundary critique rather than a standalone purity boundary claim by the article."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text says Chacón sang to enseñar al que no sabe, but this is a brief reported justification rather than a developed claim about pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Chacón and José Blas Vega's pro-Chacón reinterpretation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Review strongly foregrounds polemic, canon hierarchy, and expert reinterpretation; limited to three clearest codes."
+  },
+  {
+    "article_id": "1986-07-10-right-informe-sobre-el-xiv-congreso-na",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "un concepto nuevo, una teoría contraria a nuestras convicciones o una noticia o dato sorprendente e insospechado que nos viene como anillo al dedo para desarrollar nuestra formación y cumplimentar nuestro aprendizaje",
+        "target": "the flamenco congress as a learning forum",
+        "rationale": "The congress is framed as an institutional setting that gives participants access to knowledge and develops flamenco learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "algunas ponencias, puntuales y complejas, sean encargadas a especialistas que, en base a sus trabajos de investigación, puedan ofrecer garantias plenas",
+        "target": "specialist-authored congress papers",
+        "rationale": "The article grants authority to specialists and research-based expertise as a guarantee for serious flamenco discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "En nombre de nuestro Arte Flamenco, gracias, muchas gracias.",
+        "target": "participants and organizers serving flamenco through the congress",
+        "rationale": "The closing evaluates the named participants positively for their service to flamenco, though the excerpt is partly truncated."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions democratic and participatory norms in debates, but this is congress procedure rather than a public/private or participant/spectator setting that defines flamenco value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase manifestación cultural suggests public cultural value, but the visible passage does not clearly frame flamenco as heritage to be safeguarded or contested."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the XIV Congreso Nacional de Actividades Flamencas as a serious learning and expert forum",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt still contains clear institutional learning and expert-authority claims."
+  },
+  {
+    "article_id": "1986-07-13-right-juan-carmona-habichuela",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Ese fue el que me enseñó a tocar la guitarra. Así empecé y hasta ahora.",
+        "target": "Juan Carmona Habichuela's guitar formation through Juan El Ovejilla",
+        "rationale": "The interview grounds Habichuela's flamenco guitar knowledge in personal apprenticeship with an older guitarist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "pero luego no dice ná y el público dice: ¡Qué fuelle tiene ese tío! ¡Qué fuerza! Pero ¿y la calidad, dónde la dejamos? ¿Y el gusto? ¿Y el flamenco?",
+        "target": "festival performance judged by force versus quality and taste",
+        "rationale": "The passage applies aesthetic criteria such as quality, taste, and flamenco substance against mere force or display."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ese tocaor serio y de reconocido talento, Juan Carmona, «Habichuela»",
+        "target": "Juan Carmona Habichuela",
+        "rationale": "The interviewer explicitly evaluates Habichuela as a serious and talented guitarist."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The prompt asks about afición and the account includes family context, but the visible passage does not clearly grant community or aficionado authority to judge flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Juan El Ovejilla is called a monstruo of the guitar, but the passage functions mainly as apprenticeship evidence rather than sustained canon or hierarchy construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Habichuela's formation and standards of guitar/performance quality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible excerpt supports apprenticeship and aesthetic-criteria coding; community authority is not clear enough to emit."
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "article_id": "1985-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "ostenta la representación de cerca de trescientos colectivos flamencos, dentro de nuestra Comunidad autónoma",
+        "target": "Confederación Andaluza de Peñas Flamencas",
+        "rationale": "The confederation is legitimized as the representative body for a broad community of flamenco collectives."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "alentada reiteradamente por la Consejería de Cultura de la Junta de Andalucía",
+        "target": "Confederación Andaluza de Peñas Flamencas",
+        "rationale": "The passage frames the new confederation through institutional cultural encouragement and public authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Existen demasiados vértices extraños al flamenco, demasiadas bolsas espúreas, demasiadas degradaciones que sin pertenecer a la esencia de lo jondo",
+        "target": "spurious or degraded elements around flamenco",
+        "rationale": "The editorial draws a boundary between proper flamenco/jondo essence and external, spurious degradations."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "este patrimonio histórico y cultural tiene planteado actualmente",
+        "target": "flamenco as historical and cultural heritage",
+        "rationale": "The passage explicitly frames flamenco as historical and cultural patrimony with current claims requiring public-cultural action."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "todo tipo de intervención resulta negativo... señalar cauces, a fijar alguna suerte de control, a manipular en definitiva",
+        "target": "bureaucratic or controlling intervention in flamenco",
+        "rationale": "The passage treats intervention and control as threats to flamenco's authentic freedom and artistic health."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "A la eliminación de estos y otros perniciosos agentes, debe tender la Confederación recien constituida",
+        "target": "pernicious agents and degradations around flamenco",
+        "rationale": "The editorial uses critique to police boundaries around proper flamenco and authorize the confederation's corrective role."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The desire for flamenco to be 'todo lo que fue' invokes continuity, but the stronger functions are purity boundary-work, heritage, and institutional/community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Confederación Andaluza de Peñas Flamencas and proper flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-03-5-right-la-poes-a-espa-ola-de-la-postgue",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "presentaremos un marco general, una suscinta panorámica de la poesía española de postguerra",
+        "target": "reader understanding of postwar Spanish poetry and flamenco as a poetic theme",
+        "rationale": "The article frames itself as a structured explanatory mediation of knowledge about the flamenco theme in postwar poetry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los mismos críticos, especializados en dicha materia, presentan frecuentes controversias sobre un mismo fenómeno artístico e ideológico",
+        "target": "specialized critics and classification of poetic movements",
+        "rationale": "The passage invokes specialized critical authority while noting disagreement over artistic and ideological classification."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'escuela poética' appears, but it refers to literary classification rather than institutional or transnational access to flamenco learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text discusses tendencies and schools, but the visible excerpt does not clearly rank or canonize flamenco artists or styles."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "study of flamenco as a theme in postwar Spanish poetry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; the visible passage is mostly methodological framing."
+  },
+  {
+    "article_id": "1985-03-8-right-sobre-la-palabra-payo-y-otros-ex",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "ni el uso —el mal uso— impuesto por la costumbre... desvirtúan la evidencia de esta clarificación",
+        "target": "misuse of the word «payo»",
+        "rationale": "The author asserts corrective critical authority over a disputed flamenco-adjacent term and contests prevailing usage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "atribuimos al acervo de un grupo étnico específico perfectamente respetable (los gitanos), aquello que pertenece",
+        "target": "Gitano ethnic-cultural language and attribution",
+        "rationale": "The passage frames ethnic identity and cultural attribution as central to who can be represented through the term."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "deberíamos conservar en toda su pureza, sin las perjudiciales adherencias de la jerga bergante",
+        "target": "language legitimized by the Gitano ethnic group",
+        "rationale": "The passage draws a purity boundary between legitimate ethnic language and corrupting external jargon."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un lenguaje que, legitimado por la extraordinaria personalidad de la etnia, deberíamos conservar",
+        "target": "Gitano-associated language in flamenco discourse",
+        "rationale": "The passage frames language as a collective cultural resource that should be conserved from distortion."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The word 'autoridad' appears, but the author explicitly denies personal authority and the passage is not about official or institutional heritage authorization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The payo/non-gitano distinction implies insider/outsider identity, but the visible argument focuses more on ethnic framing and linguistic correction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "use of «payo» and Gitano-associated language",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coding is based only on the visible linguistic polemic."
+  },
+  {
+    "article_id": "1985-03-9-right-ellos-los-protagonistas-dicen-jo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "yo he ido asimilando los cantes de mi familia",
+        "target": "José de la Tomasa's family cantes",
+        "rationale": "The passage presents flamenco knowledge as learned through family environment and embodied/oral assimilation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Siempre era cuando había una reunión familiar, con motivo de una boda, un bautizo, etc., entonces se cantaba",
+        "target": "family gathering as flamenco setting",
+        "rationale": "The passage grounds flamenco practice in family/community sociability rather than formal performance alone."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "una grabación es muy difícil que refleje la verdadera talla de un artista",
+        "target": "studio recordings of flamenco artists",
+        "rationale": "The passage presents the cold recording context as unable to capture the true measure of an artist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "yo dije que no... la soleá y la siguiriya era una cosa más seria que todo eso",
+        "target": "adding pop background music to soleá and siguiriya",
+        "rationale": "The singer rejects commercial/pop treatment as improper for serious flamenco forms, drawing a boundary around legitimate treatment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "para ellos MANUEL era como un dios, siempre que conversaban sobre él lo hacían con verdadera devoción",
+        "target": "Manuel Torre",
+        "rationale": "The passage canonizes Manuel Torre through exceptional, almost sacred family devotion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "creo que los hizo con mucha dignidad",
+        "target": "Pepe Torre's recorded cantes",
+        "rationale": "The speaker explicitly evaluates Pepe Torre's performances as dignified."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Family memory is present, but the strongest evidence is oral/familial transmission rather than public heritage or safeguarding discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Family cantes and ancestors imply continuity, but the passage emphasizes learning by family assimilation more than tradition as an explicit value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "José de la Tomasa's family-based flamenco knowledge and serious cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; visible windows provide strong evidence for family transmission and anti-commercial boundary-work."
+  },
+  {
+    "article_id": "1985-03-12-left-letras-flamencas-de-j-m-rquez-ca",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of flamenco lyrics without clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse about flamenco."
+  }
+]

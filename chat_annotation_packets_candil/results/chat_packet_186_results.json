@@ -1,0 +1,251 @@
+[
+  {
+    "article_id": "1989-01-23-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Esperamos una feliz gestión flamenca de los amigos de Valladolid, puesto que nos consta que existen buenos «aficionaos» para llevarla a cabo.",
+        "target": "Peña Flamenca «La Siguiriya» de Valladolid and its new leadership",
+        "rationale": "The text grounds confidence in the peña's management in the presence of recognized good aficionados, assigning community/afición authority to sustain flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of Antonio Povedano concerns plastic arts rather than a flamenco artist, performance, style, or event, so it does not meet the target condition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "local peña leadership and aficionado community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated news roundup; annotation limited to visible peña/community language."
+  },
+  {
+    "article_id": "1989-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "quedaría con ello frustrado el intento de apoyo institucional al flamenco más importante que en la historia de este arte se haya producido",
+        "target": "Fundación Andaluza de Flamenco and institutional support for flamenco",
+        "rationale": "The editorial frames institutional backing as historically important authorization and public-cultural support for flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "esa nueva sensibilidad institucional tuteladora del legado jondo de nuestra cultura",
+        "target": "flamenco as legado jondo de nuestra cultura",
+        "rationale": "The passage casts flamenco as a cultural legacy requiring institutional tutelage, implying safeguarding of a public cultural inheritance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "nuestra responsabilidad desde este medio demanda éstas y más fuertes descalificaciones",
+        "target": "Ayuntamiento de Jerez, Diputación de Cádiz, and Caja de Ahorros de Jerez",
+        "rationale": "The editorial explicitly claims critical responsibility from the periodical and uses that authority to condemn institutional abandonment of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The strong negative language evaluates institutional conduct, but CRIT_04 captures the more specific expert/editorial authority and boundary-policing function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "institutional protection of flamenco and the institutions withdrawing from it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; main discourse is institutional heritage support and editorial critique of withdrawal."
+  },
+  {
+    "article_id": "1989-03-5-right-de-la-discriminaci-n-en-el-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Cada provincia andaluza modela y estiliza el cante de su lugar en el tiempo y el espacio y según su base geográfica, idiosincrasia, sensibilidad, medio ambiente, etc.",
+        "target": "Andalusian provincial cantes",
+        "rationale": "The passage grounds flamenco value and differentiation in place, origins, geography, and continuity across time."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "porque Andalucía es un país y los que hayamos nacido en Andalucía, por muy fenicios, romanos, gódos, árabes, judíos o gitanos que seamos, primero somos andaluces y el cante flamenco... es andaluz",
+        "target": "Andalusian identity as the belonging frame for flamenco",
+        "rationale": "Identity categories organize who belongs to and represents flamenco, with Andalusian identity asserted over ethnic subdivisions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ha venido emancipándose hasta tomar carácter, valor y categoría de arte, gracias... a la categoría, valor y carácter de una buena parte de sus intérpretes",
+        "target": "cante flamenco and its interpreters",
+        "rationale": "The passage evaluates cante flamenco's elevation from folklore to art through the quality and agency of its interpreters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article contests racism, localism, and discrimination, but the visible text does not clearly draw a pure/impure boundary around legitimate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'grupo musicalmente superior y selecto' suggest hierarchy, but the clearer discourse function is broad critical evaluation rather than canon/ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "cante flamenco as Andalusian art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible conclusion strongly authorizes Andalusian identity as the relevant frame."
+  },
+  {
+    "article_id": "1989-03-6-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Para mí no hay manera de considerar a un torero o a un cantaor como intérprete puro si no tiene consigo un 99% de cosa gitana, natural o adquirida.",
+        "target": "pure flamenco and bullfighting interpreters",
+        "rationale": "The speaker defines purity through a boundary that makes 'cosa gitana' a requirement for legitimate pure interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Tanto en el toreo como en el arte flamenco, Triana es la cuna de los mejores estilos y de los mejores artistas.",
+        "target": "Triana's styles and artists",
+        "rationale": "The passage constructs a hierarchy by ranking Triana as the cradle of the best styles and artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Hoy por hoy, no veo nada de valor en el ballet flamenco. Muchas estrellas y poca luz.",
+        "target": "ballet flamenco",
+        "rationale": "The speaker makes an explicit negative aesthetic judgment of ballet flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano/andaluz identity is central to the purity claim, but it is already captured through AUTH_02's boundary work rather than a separate identity-framing code."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Triana and Ronda are framed as origins or schools, but the clearest function is canon hierarchy/ranking rather than tradition-continuity rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "pure flamenco interpretation, Triana, and contemporary flamenco/ballet forms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; codes focus on the quoted Gitanillo positions rather than Baroja's broader non-flamenco remarks."
+  },
+  {
+    "article_id": "1989-03-8-right-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no puedo callar que se insista, por algunos mal titulados \"flamencólogos\", llamando Bandolá a un cante de Málaga",
+        "target": "flamencologists and the naming of Bandolá",
+        "rationale": "The author asserts expert critical authority against improperly titled flamencologists and polices classificatory boundaries in flamenco terminology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no por ello voy a callar, mansamente, ante improcedencias y desafueros que afecten de forma notoria al buen nombre y gran prestigio de nuestro arte flamenco-andaluz",
+        "target": "errors and improprieties affecting flamenco-andalusian art",
+        "rationale": "The passage explicitly criticizes perceived errors and improprieties as damaging the reputation and prestige of flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "siquiera por respeto hacia los aficionados",
+        "target": "aficionados who possess or care about the LP",
+        "rationale": "The author invokes respect owed to aficionados as a community of stakeholders affected by inaccurate flamenco documentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The repeated appeal to 'verdad' concerns factual discographic correction, not a claim that a person, style, or practice is genuinely flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Although the author rejects improper names and false attributions, the boundary is primarily factual/classificatory rather than pure versus impure flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "incorrect flamenco classifications, LP documentation, and mal titulados flamencólogos",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; strongest discourse is corrective expert criticism and community accountability to aficionados."
+  }
+]

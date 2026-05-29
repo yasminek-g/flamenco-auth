@@ -1,0 +1,301 @@
+[
+  {
+    "article_id": "1982-09-32-left-la-fragua-de-los-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "En ella me formé primeramente y hallé los motivos precisos para ser un artista puramente gitano.",
+        "target": "Antonio Mairena's artistic formation",
+        "rationale": "The passage presents Mairena's artistic identity as genuinely Gitano, grounding his flamenco authority in that identity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "mi casa familiar. En ella me formé primeramente",
+        "target": "Mairena family house as formative space",
+        "rationale": "The text frames flamenco formation as taking place through the family environment rather than formal instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Cruz, en el cante, ha sido el fundador de la Casa de los Mairena. Alguien ha descubierto lo que se ha dado en llamar «mairenismo» en el cante.",
+        "target": "Antonio Cruz and mairenismo",
+        "rationale": "The passage constructs a lineage and school around the Mairena family, elevating Antonio Cruz as founder and mairenismo as a recognizable model."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "aires, formas y esencias que están sirviendo de base para la formación de futuras figuras",
+        "target": "mairenismo as a model for future artists",
+        "rationale": "The passage presents mairenismo as a formative model that mediates flamenco knowledge for future performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central, but the emitted AUTH_01 and PED_02 codes better capture the text's immediate claims about genuine artistic formation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text praises Paco's work, but the stronger evaluative function is canonizing mairenismo and a family lineage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the Casa de los Mairena, mairenismo, and Mairena's Gitano artistic formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt provides enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1982-09-33-left-en-segovia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "fui un enamorado del cante de Manuel Torre y de Joaquín el de la Paula, que luego serían mis maestros. Estas fueron las piedras fundamentales de mi primera formación",
+        "target": "Mairena's early formation through Manuel Torre and Joaquín el de la Paula",
+        "rationale": "The passage explicitly presents named masters as foundational sources in Mairena's flamenco formation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "He sido un conservador radical, tanto de los cantes gitanos puros como de las leyes privadas dentro de mi família, y siempre me interpuse a su desintegración",
+        "target": "pure Gitano cantes and family laws",
+        "rationale": "The passage uses purity and resistance to disintegration to define and protect legitimate Gitano cante and family practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "para dejar a la posteridad esta reliquia discográfica como un pequeño testamento intransferible",
+        "target": "La Fragua de los Mairena recording",
+        "rationale": "The recording is framed as a preserved relic and testament for posterity, linking value to continuity and inheritance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "una invitación cursada por la Cátedra Seminario Menéndez Pidal en reconocimiento por mi aportación a la restauración y divulgación de algunas piezas del Romancero Hispánico",
+        "target": "Mairena's restoration and dissemination of Romancero pieces",
+        "rationale": "An academic institution publicly recognizes Mairena's restoration and dissemination work, conferring authorized cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article foregrounds Gitano identity, but the strongest visible functions are lineage transmission, purity preservation, and institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition",
+        "heritage"
+      ],
+      "target": "Mairena's Gitano cante formation, preservation work, and Romancero restoration",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-09-33-right-apuntes-para-la-historia-y-evolu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "la pequeña afición alcalareña... tiene derecho a conocer cómo se ha producido en su pueblo ese fenómeno del que es propietario, cómo fue su evolución, cuál ha sido su historia humana",
+        "target": "Alcalá afición's access to knowledge about the cante of Alcalá",
+        "rationale": "The passage frames historical explanation as giving a local community access to knowledge about its own cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "antes de que todos estos cantes tomaran el nombre de Flamenco, ya el cante de Alcalá... era una realidad marcada dentro del Cante Gitano-Andaluz",
+        "target": "cante de Alcalá / soleares of Alcalá",
+        "rationale": "The passage authorizes the cante through an origin and continuity claim predating the generic label flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Alcalá... ciudad propietaria de un cante... tiene derecho a conocer",
+        "target": "Alcalá and its afición",
+        "rationale": "The local community is positioned as owner and rightful knower of the cante's history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "José Alvarez, uno de los mejores aficionados de España y de altísima inteligencia flamenca",
+        "target": "José Alvarez as an aficionado authority",
+        "rationale": "The passage grants a named aficionado critical authority through exceptional flamenco intelligence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The public debut of the romance is said to cause surprise, but that is weaker than the article's historical and authority-making claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "the cante of Alcalá and the local afición's authority over its history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotations are limited to the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1982-09-35-right-notas-referentes-al-cante-por-to",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Eloy Curraga «El Curilla», que tenía un fandango personal y brillantísimo; también conviví con los hermanos Castejones, extraordinarios fandangueros.",
+        "target": "Alcalá fandangueros and cantaores",
+        "rationale": "The passage explicitly praises individual performers and their artistic qualities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Pérez El Sevillano, un gran artista... una de las primeras figuras entre los fandangueros egregios",
+        "target": "Antonio Pérez El Sevillano",
+        "rationale": "The passage places the artist among the leading exemplary fandangueros, creating a status hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "está recogida directamente de la voz del cantaor en una cassette y parece ser que en la primera grabación de disco que se le presente, sería recogida como legado que entendemos muy significante",
+        "target": "Toná de los Pajaritos",
+        "rationale": "The passage values the cante as a recorded legacy to be preserved and transmitted into the known repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The language of legacy and recording suggests safeguarding, but the passage is stronger as tradition/continuity preservation than public heritage discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Local and family identity appears, but it does not clearly organize authority beyond biographical and evaluative description."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Alcalá performers and the preservation of the Toná de los Pajaritos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; coding is limited to the visible evidence."
+  },
+  {
+    "article_id": "1982-09-37-left-mis-recuerdos-de-manuel-torre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "conserva toda su pureza y todos sus duendes... Por su conservación al abrigo de toda contaminación",
+        "target": "Cante por Soleares de Alcalá preserved in Mairena",
+        "rationale": "The passage draws a purity boundary by valuing the cante's conservation away from contamination."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "en Mairena donde se custodia, como inmensa y cuidada reliquia, el Cante por Soleares de Alcalá",
+        "target": "Cante por Soleares de Alcalá",
+        "rationale": "The cante is authorized as a relic preserved and guarded through continuity in Mairena."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Manuel Torre... me inculcó, en mis primeros años de aficionado, una serie de ideas y maneras de cantar que jamás he podido olvidar",
+        "target": "Mairena's learning from Manuel Torre",
+        "rationale": "The passage frames flamenco knowledge as transmitted personally through a master-like figure's ideas and ways of singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los genios más grandes que ha dado la historia del cante: MANUEL TORRE",
+        "target": "Manuel Torre",
+        "rationale": "The passage canonizes Manuel Torre by ranking him among the greatest geniuses in cante history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Mairena is presented as custodian of the Alcalá cante, but the stronger evidence concerns purity, continuity, and personal transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Cante por Soleares de Alcalá, Mairena's custody, and Manuel Torre's canonical influence",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotations are based only on the visible excerpt."
+  }
+]

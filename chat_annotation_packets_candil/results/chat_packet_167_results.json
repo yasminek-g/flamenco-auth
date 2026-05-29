@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1988-01-21-right-profesionales-de-la-informaci-n-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "El informador da cuenta, sin más, de un determinado evento; el crítico intenta profundizar en el mismo, y aporta su personal observación sobre méritos y desméritos de los protagonistas de ese evento cultural.",
+        "target": "la información y crítica flamenca",
+        "rationale": "The passage defines the critic's evaluative role and grants critical discourse authority to judge merits and faults in flamenco events."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la confusión que puede generarse como consecuencia del comentario irresponsable de un crítico o informador respecto a presuntas cualidades del artista compañerete de turno",
+        "target": "críticos e informadores flamencos irresponsables",
+        "rationale": "The text polices the responsibility of critics and informers, warning that careless expert commentary can distort judgments of artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'lugar' appears, but the visible passage concerns who counts as a professional critic, not safeguarding, memory, or living heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The trigger 'mejores criterios' is about openness to better arguments, not canon formation, hierarchy, or ranking of artists/styles."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco criticism and information",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but visible text is sufficient for the critical-authority annotation."
+  },
+  {
+    "article_id": "1988-01-23-left-podio-y-picota",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la Real Academia de la Lengua... ha dado inusitadas pruebas de su interés por el arte flamenco... se ha preocupado de legítimar el vocablo soleá",
+        "target": "vocabulario flamenco reconocido por la Real Academia",
+        "rationale": "An official linguistic institution is presented as conferring legitimate recognition on flamenco terminology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Honor a José Menese... por su soberbio recital... Aquella introducción al toque por seguiriyas fue epopéyica.",
+        "target": "José Menese and the recital at Casa del Arte Flamenco Antonio Mairena",
+        "rationale": "The passage gives explicit positive critical evaluation of a flamenco recital and its artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el mejor testimonio de devoción y fidelidad a la memoria del inigualado Maestro... credenciales de discípulo predilecto de la Cátedra",
+        "target": "Antonio Mairena, José Menese, and mairenero authority",
+        "rationale": "The article constructs a hierarchy of exemplary flamenco authority through the inigualado Maestro, Cátedra, and favored-disciple language."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "arremetieron contra Camarón y su cohorte por aquello de ser gitanos... ¿Por qué no respetar los gustos de cada uno?... El Cante es de todos y para todos",
+        "target": "ethnic and factional boundaries around cante",
+        "rationale": "The passage explicitly contests identity-based exclusion and asserts an inclusive belonging model for cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The paid recital/private homage distinction is used mainly to criticize presenter conduct, not to valorize participatory flamenco over public spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article contains boundary critique, but the strongest visible function is general critical evaluation and identity-boundary contestation already captured by CRIT_01 and COMM_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism",
+        "community"
+      ],
+      "target": "official flamenco recognition, exemplary artists, and inclusive cante belonging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; multiple clearly distinct discourse functions justify four codes."
+  },
+  {
+    "article_id": "1988-01-23-right-buz-n-y-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "los actos que hemos organizado han estado abiertos a todo aficionado, portador o no del carnet de la Federación",
+        "target": "aficionados and federated peña access to flamenco acts",
+        "rationale": "The passage frames peña-organized events in terms of aficionado access and community participation, including whether federation membership should regulate entry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'acceso' concerns event entry, not access to flamenco knowledge, learning, or institutional pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "'Portador' refers to a carnet holder and does not frame anyone as a living heritage carrier or transmitter."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The passage concerns administrative access to events, not an evaluative contrast between participatory/private and spectatorial/public flamenco settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community"
+      ],
+      "target": "federated peña community access rules",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated administrative correspondence; one medium-confidence community-access code is supported by visible text."
+  },
+  {
+    "article_id": "1988-01-24-right-hablan-los-poetas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el Festival artísticamente no dejó mucho para guardar en el archivo de la memoria de los buenos aficionados",
+        "target": "IV Festival Flamenco de Cornellá",
+        "rationale": "The reviewer makes an explicit negative artistic assessment of the festival as a whole."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "aunque un poquito agarrado de la voz demostró en los cantes que hizo ser un cantar como la copa de un pino",
+        "target": "Diego Garrido's singing",
+        "rationale": "The review applies aesthetic criteria such as vocal condition and execution of cantes to judge the performer."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "hizo según él unas Romeras que nada tienen que ver con las auténticas Romeras",
+        "target": "José Beltrán hijo's claimed Romeras",
+        "rationale": "The passage draws a boundary between authentic Romeras and a performance judged not to belong to that legitimate form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'buenos aficionados' indexes knowledgeable listeners, but the visible passage does not clearly grant them judging authority beyond the reviewer's own evaluation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There is strong evaluation, but no stable canon, hierarchy, generation, or exemplary ranking is constructed in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "festival performances and proper palo identification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible review window contains clear evaluative and authenticity-boundary evidence."
+  },
+  {
+    "article_id": "1988-01-26-left-discograf-a-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is too short and appears to be a heading/advertisement fragment without evaluative or authorizing discourse."
+  }
+]

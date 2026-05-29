@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "1995-07-57-right-el-jaleo-fue-madre-de-la-sole",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Ningún pintor, como él, somatizó con tanta hermosura el magnífico universo de lo jondo.",
+        "target": "Fausto Olivares and his flamenco-themed painting/cover work",
+        "rationale": "The passage explicitly praises Olivares's artistic rendering of the jondo universe."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Fausto Olivares se constituyó en emblema de esta publicación, en referencia obligada no sólo para quienes le admirábamos, sino para la generalidad de los lectores de Candil",
+        "target": "Fausto Olivares as a visual reference for Candil/flamenco",
+        "rationale": "The obituary elevates Olivares into an emblem and obligatory reference, constructing exemplary status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The bibliographic index contains labels such as 'Crítica' and discographic titles, but these are headings/list entries rather than visible evaluative discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fausto Olivares and his visual association with Candil/flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the visible text is index material; codes are based only on the obituary-style ending passage."
+  },
+  {
+    "article_id": "1995-07-63-right-indice-de-rese-as-discogr-ficas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a four-word index heading and is insufficient for discourse annotation."
+  },
+  {
+    "article_id": "1995-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nuestra atención en este film se centra en las intervenciones de los artistas flamencos y en sí éstos, conocida y admitida la solvencia artística de los mismos, han estado a la altura de las circunstancias. Creemos de verdad que no.",
+        "target": "the flamenco interventions in Carlos Saura's film",
+        "rationale": "The editorial directly judges the flamenco performances in the film as not meeting the circumstances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fernanda de Utrera, tal vez la más grande cantaora por soleá de todos los tiempos",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage ranks Fernanda de Utrera at the top of a canonic hierarchy for soleá."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "No es de recibo la inclusión de algunos intervinientes —Lole y Manuel, y Manzanita, por citar sólo dos ejemplos— en un film en cuyo frontispicio existe una sola leyenda: Flamenco. No es problema de calidad artística de los citados, sino cuestión de que se identifique como flamenco lo que cualquier neófito en este arte sabe que no lo es.",
+        "target": "the inclusion of Lole y Manuel and Manzanita under the label Flamenco",
+        "rationale": "The passage polices the boundary of what may properly be identified as flamenco, explicitly excluding named acts from that category."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "merecían una selección más rigurosa de cantes y de artistas, más acorde a lo verdaderamente básico del flamenco",
+        "target": "the film's selection of cantes and artists",
+        "rationale": "The passage applies rigor and fidelity to the basic elements of flamenco as aesthetic criteria for judging the film."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Carlos Saura's film Flamenco and its selection of artists/cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-09-3-right-flamenquismo-y-modernismo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "su polémico y conflictivo encaje en la «cultura nacional» elaborada y acuñada por el catalanismo y, sin embargo, su concomitancia con la cultuta popular de la Cataluña contemporánea",
+        "target": "flamenquismo within Catalan national and popular culture",
+        "rationale": "The passage frames flamenco/flamenquismo through national-cultural identity conflict and popular-cultural belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la beligerancia que ostentaron hacia el «flamenquismo» los guías ideológicos y culturales del «proyecto catalanizador» de la época",
+        "target": "ideological and cultural guides of early Catalanism toward flamenquismo",
+        "rationale": "The passage identifies authoritative cultural actors policing or contesting the place of flamenquismo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The section announces hypotheses about origins and persistence, but the visible excerpt uses these mostly as historical framing rather than to authorize present flamenco through roots or continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The trigger 'título' appears in a bibliographic aside; there is no clear institutional or transnational learning/access discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "flamenquismo in Catalonia",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is a scholarly-historical argument; codes are limited to the explicit cultural-boundary conflict."
+  },
+  {
+    "article_id": "1995-09-12-left-cr-nica-del-xxiii-congreso-de-ar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Las fotografías de la barcelonesa Rosa Mª Panadés componen una impresionante galería de actitudes, de rostros, de gestos, de instantes, sobradamente expresiva de las emociones que el arte de que son portadores puede transmitirnos.",
+        "target": "Rosa Mª Panadés's flamenco photographs",
+        "rationale": "The chronicle explicitly praises the photographic work for its expressive force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "fotografías hechas, naturalmente, con sentido y sentimiento de lo jondo, con conocimiento de un arte que tiene sus propios códigos expresivos",
+        "target": "flamenco photography",
+        "rationale": "The passage names jondo feeling and knowledge of flamenco's expressive codes as criteria for successful flamenco photography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Carmen Linares (Cante), Vicente Amigo (Toque) —en su ausencia lo recogió Pepe Arrebola—, Milagros Mengíbar (Baile), Blas Vega (Investigación) y el Grupo Cruzcampo (Labor de Conjunto) han sido los premiados en esta primera edición.",
+        "target": "the award recipients at the Congress of Flamenco Art",
+        "rationale": "The named awards create formal recognition and hierarchy across cante, toque, baile, research, and collective labor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'culturas vivas' and the memory of events suggest cultural vitality, but the visible passage does not clearly frame safeguarding, heritage responsibility, or contested heritage politics."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Conferences and historical summaries are mentioned, but the excerpt does not clearly foreground learning access or institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco photography and recognized Congress award recipients",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

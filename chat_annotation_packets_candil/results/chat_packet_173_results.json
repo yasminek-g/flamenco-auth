@@ -1,0 +1,198 @@
+[
+  {
+    "article_id": "1988-05-17-left-la-universidad-de-c-diz-celebr-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El espectáculo resultó un éxito total, artístico y de público... Todo el desarrollo de la actuación artística en esta noche resultó brillante y equilibrado, sin decaer en ningún momento",
+        "target": "la IV Fiesta Flamenca de la Universidad de Cádiz",
+        "rationale": "The passage explicitly evaluates the flamenco event as artistically successful, brilliant, and balanced."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "demostró cumplidamente la excelente compatibilidad del Arte Flamenco con el espíritu universitario, tanto en sus niveles docentes como discentes",
+        "target": "flamenco within the university setting",
+        "rationale": "The passage frames flamenco as compatible with university teaching and learning, giving it institutional educational access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The public is described as numerous and enthusiastic, but the passage does not contrast participatory/private flamenco with spectatorial/public settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the university flamenco event and flamenco's place in university culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotation is limited to the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1988-05-18-left-la-an-cdota",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "una primera parte muy interesante por el conjunto de excelentes guitarristas que, tanto individual como conjuntamente, cerraron su actuación con un clamoroso éxito",
+        "target": "Juan Carrete and the guitarists at the Cumbre Flamenca",
+        "rationale": "The quoted review explicitly praises the guitarists and judges their performance a resounding success."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The anecdote involves tablao colleagues and jaleo, but it does not clearly grant community authority or recognition beyond ordinary social interaction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Carrete's artistic promise and performance reputation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-05-18-right-el-flamenco-a-la-escuela",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "el auge del «sevillanismo» con la adulteración de formas y modos que está trayendo consigo, supone que el niño recibe una imagen exclusiva de lo que es su folklore, imagen, que por lo demás, puede ser falsa",
+        "target": "distorted school-age understandings of Andalusian folklore/flamenco",
+        "rationale": "The passage draws a boundary against adulterated or false forms that distort legitimate cultural understanding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "integrar efectivamente el Flamenco en el currílum de las áreas de la EGB... incluir en los planes de estudio de los futuros profesores... cursos para post-diplomados y para maestros en ejercicio",
+        "target": "formal educational access to flamenco in schools and teacher training",
+        "rationale": "The passage explicitly advocates institutional curriculum, teacher preparation, and formal access to flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "el primer paso para iniciar al niño en el Flamenco es a través de los compases y los ritmos... desarrollo corporal y psicomotriz del alumno... una pedagogía participativa",
+        "target": "children's embodied learning of flamenco",
+        "rationale": "The passage presents compás, rhythm, bodily development, and participation as the route into flamenco learning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article frames flamenco as secular Andalusian culture needing school transmission, but the stronger visible discourse is pedagogical rather than explicit safeguarding or heritage management."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'cultura secular del pueblo andaluz' invokes long-standing culture, but it is not developed as a continuity or roots claim authorizing present flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "flamenco as school knowledge and as Andalusian cultural practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest evidence is pedagogical: the article argues for curriculum integration, teacher training, and participatory embodied learning."
+  },
+  {
+    "article_id": "1988-05-19-right-la-fundaci-n-andaluza-de-flamenc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "fue inaugurada la Fundación Andaluzia de Flamenco, por don José Rodríguez de la Borbolla, presidente de la Junta de Andalucía y presidente honorífico de dicha Fundación",
+        "target": "the Fundación Andaluza de Flamenco",
+        "rationale": "The passage presents a public institution and regional government authority as officially authorizing flamenco infrastructure."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "trabajo de grabación de los fondos sonoros que actualmente posee la Fundación... podrá ser disfrutado por todos los usuarios del centro",
+        "target": "the Fundación's flamenco sound, video, and library collections",
+        "rationale": "The recording and public access to collections frame flamenco materials as resources to be preserved and made available to a community of users."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "abre sus puertas a investigadores, estudiosos, artistas y aficionados al flamenco en general, ofreciéndoles una serie de programas y de servicios diversos... SEMINARIOS INTERNACIONALES DE BAILE Y GUITARRA",
+        "target": "institutional and international flamenco study through the Foundation",
+        "rationale": "The Foundation is presented as an institutional site that provides access to flamenco knowledge through research services, programs, and seminars."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'la mejor biblioteca especializada' is a ranking of the library, but it does not canonize flamenco artists, styles, works, or repertoires."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "the Fundación Andaluza de Flamenco as institutional support for flamenco study and access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-05-21-right-festivales-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text contains only page markers and is insufficient for judgment."
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1989-03-14-left-petenera-de-vida-y-bronce",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "En el pueblo del cante late un corazón de bronce que se hace voz en la memoria ... Porque está viva Dolores porque está viva en su cante",
+        "target": "Dolores la Petenera / la Petenera",
+        "rationale": "The poem frames Petenera as a remembered and still-living figure within the cante community, making memory and living presence the basis of cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The reference to Paterna de Rivera as her cuna suggests roots, but the visible text is primarily poetic commemoration rather than a clear tradition/continuity claim authorizing present flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "Dolores la Petenera / la Petenera",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic language; coded conservatively for memory/living-heritage discourse only."
+  },
+  {
+    "article_id": "1989-03-14-right-cante-gitano-andaluz",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The title and lyrics use gitano-andaluz identity language, but the visible text consists of song/verse lines without a clear discourse function defining belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is largely lyric/poetic material, not evaluative or authorizing commentary."
+  },
+  {
+    "article_id": "1989-03-15-left-para-el-recuerdo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "González Climent acaso haya sido el más sutil y profundo investigador del universo flamenco ... punto de referencia obligado para todo estudioso del Flamenco",
+        "target": "Anselmo González Climent",
+        "rationale": "The passage grants a flamencologist scholarly authority by presenting his work as an obligatory reference for flamenco study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la IV Semana de Estudios Flamencos que ha constituido un rotundo éxito, por la calidad de los conferenciantes y de los artistas que han intervenido",
+        "target": "IV Semana de Estudios Flamencos",
+        "rationale": "The article explicitly evaluates the event as a strong success on the basis of the quality of speakers and artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "de acompañar debe ampliar sus conocimientos; por su juventud creemos que está a tiempo",
+        "target": "Ramón Trujillo",
+        "rationale": "The passage criticizes the accompanist's knowledge and frames improvement as necessary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The closing statement that people in peñas should know how to listen suggests participatory listening norms, but the brief aphorism is too general to establish a public/private or participant/spectator contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Anselmo González Climent, the IV Semana de Estudios Flamencos, and Ramón Trujillo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-16-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "hay que aplaudir con vigor este Voz Flamenca con que nos ha deleitado Agustín Gómez",
+        "target": "Agustín Gómez's Voz Flamenca",
+        "rationale": "The review explicitly praises the book and frames it as a valuable contribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "cuando este crítico regala halagos lo hace con fundamento ... y que cuando fulmina, su voz es emisaria de la transparencia",
+        "target": "Agustín Gómez as critic",
+        "rationale": "The passage authorizes Gómez's critical voice by presenting both his praise and attacks as grounded and transparent."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "la valentía y apasionamiento de sus dictados, que respiran la frescura de lo auténtico sin posteriores amaneramientos",
+        "target": "Agustín Gómez's critical judgments",
+        "rationale": "The passage legitimates the judgments by attributing to them the freshness of authenticity and absence of later mannerism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ya lo hemos dicho antes, ellos son los clásicos",
+        "target": "the judgments/texts under review",
+        "rationale": "The passage canonizes the reviewed judgments by calling them classics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text criticizes those who call themselves aficionados without really being so, but the visible span primarily supports critical boundary-policing rather than community authority as a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Agustín Gómez's Voz Flamenca and his critical authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-03-17-right-noticiario",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "El público, compuesto de muchos profanos y de algunos aficionados, pero preparado y sensibilizado por dos semanas de coloquio, supo distinguir el arte puro",
+        "target": "the French audience at the Nice colloquium",
+        "rationale": "The passage frames a transnational audience's access to flamenco knowledge as enabled by an organized colloquium that prepared them to distinguish value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "supo distinguir el arte puro de lo que puede escuchar en las radios o televisiones",
+        "target": "pure flamenco cante versus mediated radio/television forms",
+        "rationale": "The passage draws a boundary between legitimate pure art and what is heard through mass media."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el cante tan puro, tan sincero, tan lleno de duende y matices de \"EL CHOCOLATE\"",
+        "target": "El Chocolate's cante",
+        "rationale": "The article evaluates the performance through aesthetic criteria of purity, sincerity, duende, and nuance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "su persona, que supo crear un diálogo verdadero con la asistencia. La comunión fue total",
+        "target": "El Chocolate's relation with the audience",
+        "rationale": "The passage values the performance through participatory co-presence and reciprocal communion between artist and audience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and aficionados appear in listings and audience description, but those mentions alone do not clearly authorize flamenco value beyond the stronger participatory-setting evidence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text contains broad praise such as 'Triunfo bien merecido', but the more specific evaluative discourse is captured under CRIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "El Chocolate's cante and the Nice flamenco colloquium",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

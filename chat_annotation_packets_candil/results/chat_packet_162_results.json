@@ -1,0 +1,292 @@
+[
+  {
+    "article_id": "1987-11-11-left-cuando-del-flamenco-se-hace-rito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "un flamenco verdad el que tuvimos la suerte de degustar",
+        "target": "la juerga flamenca en la propiedad de Curro Fernández",
+        "rationale": "The passage explicitly presents the event as true flamenco, attributing genuineness to the intimate performance setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "en una total intimidad... sin que sus interpretaciones estuviesen mediatizadas por ningún tipo de compromiso o contrato",
+        "target": "the informal, non-contractual juerga setting",
+        "rationale": "The text links authenticity to intimacy and freedom from contractual or staged obligations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "quedamos maravillados del buen espectáculo flamenco... ¡Qué derroche de arte el derramado por estas buenas bailaoras y cantaoras!",
+        "target": "the artists and performances at the juerga",
+        "rationale": "The article makes explicit positive judgments about the artistic quality of the performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga is intimate and participatory, but the stronger claim is authenticity through intimacy rather than an explicit public/private participatory contrast."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and flavor are praised, but the aesthetic-criteria function is secondary to general review praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "the intimate juerga and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is a review-like account that legitimates the event through intimacy, non-commercial spontaneity, and direct praise."
+  },
+  {
+    "article_id": "1987-11-11-right-la-familia-fern-ndez-entre-trian",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "jamás dieron su brazo a torcer por aquello que se apartaba de la etérea pureza",
+        "target": "the inherited flamenco norms of the Fernández/Vargas lineage",
+        "rationale": "The passage draws a boundary around proper flamenco through purity and resistance to what departs from it."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "un boyante tesoro heredado... esas normas y pautas que marcaron nuestros predecesores y que se fijan en el firmamento flamenco con el rótulo de clásico",
+        "target": "the family's flamenco inheritance from Triana and Lebrija",
+        "rationale": "The article grounds present flamenco value in inherited treasure, predecessors, norms, and classical continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "desciendo de Curro Puya, de los Pelaos de Triana, de Gitanillo de Triana... el patriarca de una casta flamenca",
+        "target": "Juan José Fernández Vega and the Fernández family lineage",
+        "rationale": "Flamenco authority is framed through descent, dynasty, and intergenerational lineage rather than formal schooling."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "pertenecer a un grupo étnico muy especial, a una raza con notables privilegios para lo jondo",
+        "target": "Curro, Pepa, and their ethnic/community identity",
+        "rationale": "The passage uses ethnic identity to frame who embodies and is privileged in relation to jondo flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The mention that aficionados in peñas became interested in Curro indicates recognition, but it is brief and less central than lineage and identity authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Rhythm, compás, and vocal qualities are mentioned as criteria, but the excerpt's dominant function is lineage/authenticity framing rather than sustained aesthetic analysis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "pedagogy"
+      ],
+      "target": "the Fernández family as a flamenco lineage between Triana and Lebrija",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although truncated, the visible excerpt gives strong evidence for purity boundary-work, inherited continuity, lineage, and identity-based authority."
+  },
+  {
+    "article_id": "1987-11-16-left-plagio-de-rdago",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la evidencia del plagio cometido por Alfredo Arrebola... me veo obligado a presentar pruebas contundentes",
+        "target": "Alfredo Arrebola's writing on Juan Breva and Málaga cantes",
+        "rationale": "The author explicitly criticizes Arrebola's publication as plagiarized and presents evidence for that judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "para que la afición a nuestro arte juzgue por sí misma",
+        "target": "the flamenco afición as judge of the plagiarism dispute",
+        "rationale": "The passage grants the community of aficionados authority to judge the dispute over flamenco writing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article concerns scholarly/source authority, but the clearest function is direct criticism of plagiarism rather than an expert critic being authorized as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Arrebola's authorship and credibility in flamenco writing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The target is not a performance but a flamenco-related publication and authorship dispute, which falls under critical evaluation of a publication."
+  },
+  {
+    "article_id": "1987-11-16-right-copia-parcial-de-una-carta-ya-hi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Los encuentro vanos, fríos y sin contenido flamenco",
+        "target": "current interpretations of Levante cantes",
+        "rationale": "The author makes a direct negative assessment of the artistic and flamenco content of current interpretations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "les falta «sal y pimienta»... omiten lo más importante, como es la ligazón de los tercios",
+        "target": "young singers' interpretations of old Levante cantes",
+        "rationale": "Specific aesthetic criteria—vitality, expressive seasoning, and linking of tercios—are used to judge quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "dar a conocer a las nuevas promesas los auténticos cantes de esa tierra... construir los que representen al verdadero cante levantino",
+        "target": "authentic Levante cantes",
+        "rationale": "The passage explicitly distinguishes authentic/true Levante cante as the proper object to be recovered and taught."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "se hace apremiante la necesidad de dar a conocer a las nuevas promesas los auténticos cantes de esa tierra",
+        "target": "new young singers learning Levante cantes",
+        "rationale": "The passage frames access and transmission of flamenco knowledge to new performers as an urgent task."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt invokes a better Chacón-era model and Tomás Pabón as exemplary, but this overlaps with the stronger aesthetic-evaluation and authenticity claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas flamencas are proposed as sources of material, but the passage does not strongly develop peña authority beyond practical transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Levante cantes and their current versus proper transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is truncated but still contains enough explicit evaluative and authenticity language to code confidently."
+  },
+  {
+    "article_id": "1987-11-18-right-aunque-no-quepa-en-el-papel-leta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "este hermoso poemario, andaluz por los cuatro costados... El libro de Enrique Alcalá es un muestrario de esas enormes posibilidades",
+        "target": "Enrique Alcalá Ortiz's poemario Andaluz que vas errante",
+        "rationale": "The review explicitly praises the book and evaluates its artistic and cultural value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "en el más puro sentido del término... fibra auténtica, verdadero pronunciamiento humano",
+        "target": "the poemario's Andalusian and jondo expression",
+        "rationale": "The text attributes genuineness and true expressive force to a work framed through letra jonda and cante flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "en el cante flamenco tan importante es una buena letra como una bien acompasada melodía",
+        "target": "flamenco song and its letras",
+        "rationale": "The author defines a criterion of flamenco quality: good lyrics matter as much as well-compassed melody."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "recomendable no sólo para su lectura, sino también para ser vivero de letras de tantos cantaores, aficionados y profesionales",
+        "target": "cantaores, aficionados, and professionals using the book as a source of letras",
+        "rationale": "The book is framed as a medium that gives performers and aficionados access to renewed flamenco letras."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The reviewer criticizes repetitive cassette-based performance habits, but the stronger code is aesthetic criteria about letras and melody."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poemario is tied to folklore and a cancionero, but the passage does not clearly frame this as safeguarding or public heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the poemario and the renewal of flamenco letras",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a critical review that also makes a normative claim about the role of letras in cante flamenco."
+  }
+]

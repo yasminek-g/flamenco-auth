@@ -1,0 +1,258 @@
+[
+  {
+    "article_id": "1982-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "«CANDIL» ... tampoco es árbitro de ninguna contienda. Su compromiso irrenunciable, sólo uno, el arte flamenco; por ello, el deseo ... de ser una revista abierta, plural y partidaria del diálogo.",
+        "target": "CANDIL's editorial role in flamenco debate",
+        "rationale": "The editorial defines the magazine's critical authority as plural dialogue rather than factional judgment, setting boundaries for legitimate flamenco discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "la Peña Flamenca de Jaén sintió la necesidad responsable de crear esta revista de y para la afición",
+        "target": "Peña Flamenca de Jaén and the afición",
+        "rationale": "The passage grounds the magazine's communicative and cultural role in a peña and frames it as made for the knowledgeable flamenco community."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "recusar con toda firmeza a los púgiles del flamenco que, por cierto, tanto dañan al nobilísimo arte que dicen amar y sentir",
+        "target": "polemical flamenco factions",
+        "rationale": "The passage explicitly criticizes factional combatants as damaging the noble art of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdad eterna e inalterable' concerns dogmatic interlocutors, not a positive authenticity claim about flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "CANDIL as plural flamenco forum and the factional discourse it rejects",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is not insufficient; the editorial stance itself supplies the discourse evidence."
+  },
+  {
+    "article_id": "1982-03-4-right-las-saetas-de-manuel-vallejo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "hemos de convenir en reconocerle como uno de los saeteros más apreciados y de mayor categoría de la historia flamenca",
+        "target": "Manuel Vallejo as saetero",
+        "rationale": "The passage canonizes Vallejo by ranking him among the most appreciated and highest-category saeteros in flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "artista sobre el que han pesado las más inquisicionales losas y que ahora, parece ser, se está rehabilitando notoriamente entre la afición",
+        "target": "critical reputation of Manuel Vallejo",
+        "rationale": "The article evaluates and contests the historical judgment of Vallejo, describing a movement from harsh devaluation toward rehabilitation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Quede, finalmente, la transcripción de tan interesante como histórico cancionero y que parcialmente reproducimos",
+        "target": "Vallejo's saeta songbook",
+        "rationale": "The text presents the transcription and reproduction of an unpublished historical songbook as a preservation act for flamenco memory and practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The manuscript suggests canto-oriented composition, but the visible text does not clearly describe oral, embodied, or lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Manuel Vallejo and his saeta cancionero",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR-damaged song text is present, but the surrounding commentary is sufficient for annotation."
+  },
+  {
+    "article_id": "1982-03-6-left-interrogantes-sobre-la-saeta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "«Unas saetas hondas, tristes, sin barroquismos y por eso precisamente más conmovedoras»—me hacen imaginarla semejante a las saeta vieja de Arcos de la Frontera, seca, tajante, grave",
+        "target": "the saeta described by Cazabán / possible Jaén saeta",
+        "rationale": "The passage applies aesthetic criteria such as depth, austerity, emotional force, dryness, and gravity to define the saeta's value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "La saeta en los labios del pueblo es el grito de dolor lanzado en el Calvario y repetido por la humanidad en la sucesión de los siglos.",
+        "target": "saeta as popular Andalusian song",
+        "rationale": "The passage grounds the saeta's value in popular voice and long continuity across time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Don Alfredo Cazabán, «uno de los cronistas más prestigiosos, cultos y sabios de España», según su biógrafo Moreno Bravo, nos dejó este boceto poético",
+        "target": "Alfredo Cazabán as commentator on the saeta",
+        "rationale": "The passage invokes Cazabán's prestige and cultivated status to authorize his poetic account of the saeta."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The quoted text differentiates woman, man, and child, but it does so poetically rather than clearly making gender a basis of flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the saeta and Cazabán's account of it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is largely reflective and quoted, but the evaluative and authorizing passages are visible."
+  },
+  {
+    "article_id": "1982-03-6-right-una-aportacion-al-estudio-de-la-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "esa impresión brutal que produce a quien lo siente el cante por saetas, ese rezo roto y disperso por el aire",
+        "target": "cante por saetas",
+        "rationale": "The passage defines the saeta's flamenco value through emotional force and expressive rupture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "De nuevo la saeta se había apoderado de la noche y desgarrado a unas personas que interponían su sensibilidad entre el cantaor y la imagen hierática a la que iba dirigida.",
+        "target": "performance effect of the saeta",
+        "rationale": "The article evaluates the saeta by describing its powerful effect on listeners, including those outside flamenco or religious predisposition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage mentions roots and origins, but mainly stresses skepticism about them rather than using origin or continuity to authorize the saeta."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The author rejects a 'rancia y tópica postal turística,' but the visible text does not clearly frame tourism or spectacle as a threat to flamenco authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The retrieval trigger 'hombre' is incidental; identity is not used to define flamenco belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "cante por saetas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is truncated, but the visible passage contains sufficient evaluative discourse."
+  },
+  {
+    "article_id": "1982-03-9-right-copiando-a-los-demas-saeta-del-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "todo lo que sé de la saeta me lo enseñó fray Diego de Valencia",
+        "target": "fray Diego de Valencia as teacher of saeta knowledge",
+        "rationale": "The author explicitly legitimates his knowledge of the saeta through a named teacher."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ya don Agustín Aguilar Tejera, máxima autoridad y gran investigador, dijo: «Interrogantes e hipótesis más o menos acertadas son las que casi todos los autores formulan al tratar de saetas»",
+        "target": "expert scholarship on the saeta",
+        "rationale": "The passage invokes a named maximum authority and investigator to authorize uncertainty about the saeta's definition and origin."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Existieron grandes estudiosos del canto «Saeta», entre otros, don Alejandro Guillot, don Francisco Rodríguez Marín y don Luis Montoto",
+        "target": "scholarly authorities on the saeta",
+        "rationale": "The passage constructs a hierarchy of notable figures by naming them as great scholars of the saeta."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Origin and root vocabulary is central, but the article emphasizes that the origin is unknown rather than using roots to authorize present flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The author cites teachings, but the evidence is a named teacher and textual scholarship rather than embodied/oral lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "knowledge about the saeta and its scholarly authorities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt clearly establishes pedagogical and expert authority."
+  }
+]

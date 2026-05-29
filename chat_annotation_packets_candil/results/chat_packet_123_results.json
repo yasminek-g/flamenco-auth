@@ -1,0 +1,249 @@
+[
+  {
+    "article_id": "1986-01-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Andalucía será tanto más Andalucía cuanto más rigurosos seamos en la salvaguarda del patrimonio cultural-flamenco que nos ha sido legado.",
+        "target": "patrimonio cultural-flamenco andaluz",
+        "rationale": "El editorial enmarca el flamenco como patrimonio cultural colectivo ligado a Andalucía y a una obligación de salvaguarda."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Hermosos e irrepetibles testimonios de cantaores ya desaparecidos, no justifican la conservación de una mísera porción de cintas.",
+        "target": "grabaciones televisivas de artistas flamencos desaparecidos",
+        "rationale": "La protesta trata los vídeos como testimonios irrepetibles que deben conservarse, articulando una lógica de salvaguarda y memoria cultural."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se perpetúe, una vez más, el escarnio hacia la forma más dramática de sentir de un pueblo que no puede tolerar las bufonadas, los chistes ramplones, la horrorosa vulgaridad.",
+        "target": "representación televisiva del flamenco",
+        "rationale": "La voz editorial ejerce autoridad crítica para denunciar una representación pública vulgarizante que desvirtúa el flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Hay lenguaje de desvirtuación y vulgaridad, pero el eje principal visible es la crítica institucional y patrimonial, no una frontera explícita de pureza flamenca."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Se mencionan instituciones y la Confederación Andaluza de Peñas Flamencas, pero la evidencia visible no desarrolla claramente un mecanismo autorizado de patrimonialización."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "tratamiento institucional y mediático del flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "El editorial legitima el flamenco como patrimonio cultural andaluz y delegitima su tratamiento televisivo e institucional."
+  },
+  {
+    "article_id": "1986-01-4-left-otro-aniversario-est-ril",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ese homenaje nacional a que tiene derecho nuestro insigne amigo como premio a sus extraordinarios méritos, a su irrepetible figura y también a la bondad y generosidad del MAESTRO.",
+        "target": "Pepe Marchena",
+        "rationale": "La frase canoniza a Marchena mediante lenguaje de figura irrepetible, maestro y méritos extraordinarios que justifican un homenaje nacional."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la fecha que en el mundo del flamenco nunca debió pasar inadvertida por cuanto éste le debe",
+        "target": "memoria de Pepe Marchena",
+        "rationale": "El artículo convierte el aniversario y el monumento proyectado en trabajo de memoria colectiva dentro del mundo flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la pérdida del amigo y gran artista",
+        "target": "Pepe Marchena",
+        "rationale": "El texto emite una valoración explícita de Marchena como artista grande, aunque el foco principal sea memorial y canónico."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Se mencionan paisanos, amigos y admiradores, pero no se les concede autoridad flamenca clara para reconocer o juzgar el arte."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Pepe Marchena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "La pieza funciona como reclamación de memoria y reconocimiento canónico para Marchena."
+  },
+  {
+    "article_id": "1986-01-4-right-fernando-villal-n-0-la-aristocra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un gran poeta que abarcó en sus versos desde la copla popular jonda hasta los experimentos más valientes de la incipiente vanguardia.",
+        "target": "Fernando Villalón",
+        "rationale": "El artículo sitúa a Villalón en una jerarquía literaria y artística como gran poeta capaz de integrar copla jonda y vanguardia."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "hacer del popularismo tradicional un hermoso motivo poético",
+        "target": "popularismo tradicional y copla jonda en la poesía de Villalón",
+        "rationale": "La tradición popular se presenta como fuente de valor y autoridad estética para la obra poética vinculada a lo jondo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Esa es su mayor grandeza, prestar carácter aristocrático de alto nivel a las expresiones sencillas del pueblo.",
+        "target": "obra poética de Fernando Villalón",
+        "rationale": "La frase evalúa explícitamente la calidad y grandeza de Villalón por elevar expresiones populares."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "La palabra 'Generación' aparece como clasificación literaria, no como transmisión oral, corporal o de linaje flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "La referencia al pueblo y a lo popular sugiere identidad colectiva, pero no organiza claramente pertenencia o autoridad flamenca."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernando Villalón y su tratamiento poético de lo popular/jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Aunque el artículo es literario, la evidencia visible vincula explícitamente la copla jonda y el popularismo tradicional con una valoración estética."
+  },
+  {
+    "article_id": "1986-01-10-right-carta-a-un-apasionado-viajero-an",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "puntos de vista que ven la luz pública en una publicación monográfica de Flamenco, éstos —quiérase o no—inciden grandemente",
+        "target": "crónica festivalera publicada en CANDIL",
+        "rationale": "La carta subraya que la crítica publicada en una revista especializada ejerce autoridad e influencia sobre el campo flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la validez de tus argumentos queda, cuando menos, en entredicho.",
+        "target": "juicios del cronista sobre festivales flamencos",
+        "rationale": "El autor evalúa críticamente la validez, objetividad y alcance de los argumentos del cronista."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "¡No sigas poniendo la raya de tiza entre los cantaores, gitanos o no, que bastante han pasado unos y otros tiempo atrás!",
+        "target": "distinción entre cantaores gitanos y no gitanos",
+        "rationale": "La carta denuncia una frontera identitaria gitano/no gitano como criterio divisorio dentro del cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "La expresión 'aficionados de a pie' describe una actitud válida, pero no les otorga autoridad comunitaria clara para juzgar flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Se enumeran cantaores importantes y frecuencias de contratación, pero la función visible es corregir sesgos críticos, no construir un canon propio."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "autoridad crítica y fronteras identitarias en la crónica de festivales",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "La carta disputa la autoridad del crítico y rechaza fronteras identitarias aplicadas al cante."
+  },
+  {
+    "article_id": "1986-01-12-left-cantaora-en-verde",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "La imagen 'pueblo de las raíces al viento' es poética, pero no usa raíces/tradición para autorizar una práctica flamenca."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "La mención de memoria es metafórica dentro del poema y no formula salvaguarda, patrimonio vivo ni memoria colectiva como discurso cultural."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aparecen voz, quejas y cante, pero no se aplican como criterios explícitos de evaluación estética."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Texto poético con imaginería flamenca, sin discurso evaluativo, pedagógico, patrimonial o comunitario suficientemente explícito."
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "1981-11-8-left-flamencolog-a-y-flamenc-logos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "A cualquier persona se le ocurriría preguntar en primer término quién da a su vez a la Cátedra de derecho a otorgar la titulación.",
+        "target": "la Cátedra de Flamencología de Jerez y el supuesto título de flamencólogo",
+        "rationale": "The passage challenges an institution's claimed authority to confer the category of flamencólogo, making expert/critical authority itself the object of critique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "aceptaré en mala hora la palabreja flamencólogo: con tal que sea aplicada sola, exclusiva y excluyentemente a muy determinados y concretos cantaores",
+        "target": "quién puede ser considerado flamencólogo",
+        "rationale": "The author creates a restrictive hierarchy by reserving the status of flamencólogo for only a narrow class of exceptionally knowledgeable cantaores."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "cantaores que sobre do-minar todos los cantes, tengan, además de la máxima intuición, la cultura suficiente para explicar y hacer entendible sus propios conomimien-tos",
+        "target": "cantaores capaces de explicar el cante",
+        "rationale": "The passage links legitimate flamenco authority to the ability to explain and make knowledge understandable, framing pedagogical capacity as a criterion for the title."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The term aficionado is praised as preferable, but the passage does not clearly grant aficionados collective authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the authority to define and confer the status of flamencólogo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-11-8-right-las-letras-flamencas-de-jose-mar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "sabe que la buena copla nace cantándose, no sólo teniendo en cuenta su medida y enfoque, sino lo más esencial, su engarce prosódico",
+        "target": "la buena copla flamenca",
+        "rationale": "The article defines quality in flamenco lyrics through aesthetic and performative criteria: being born in singing, measure, focus, and prosodic fit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pepe Márquez es, tal vez, el más prolífico creador de letras flamencas en nuestros días",
+        "target": "Pepe Márquez as a flamenco lyricist",
+        "rationale": "The passage positions Márquez hierarchically as perhaps the most prolific contemporary creator of flamenco lyrics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "es, sin lugar a dudas, uno de los más aceptados y reconocidos letristas populares",
+        "target": "Pepe Márquez's work as a popular lyricist",
+        "rationale": "The passage explicitly evaluates Márquez's status and reception as a recognized and accepted lyricist."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The note that some lyrics pass as anonymous suggests popular uptake, but it does not clearly frame them as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pepe Márquez and his flamenco lyrics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-11-10-right-el-centenario-del-primer-cancion",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la copla flamenca, la que tiene en su haber una serie de canciones ... de igual o mayor belleza y, sin lugar a dudas, infinita más profundidad existencial",
+        "target": "la copla flamenca within Spanish literary history",
+        "rationale": "The passage ranks flamenco coplas against canonical literary songbooks, asserting equal or superior beauty and deeper existential value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el monumento literario e histórico que es el «Primer cancionero de coplas flamencas populares según el estilo de Andalucía»",
+        "target": "Manuel Balmaseda's Primer cancionero",
+        "rationale": "The cancionero is framed as a literary and historical monument whose value belongs to public cultural memory rather than mere private authorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "cualquier análisis o intento de historiar nuestra literatura que prescinda ... del estudio de la que se subestima por popular, no dejará de ser una coja, miope y elitista visión descafeinada",
+        "target": "literary scholars who exclude popular and flamenco poetry",
+        "rationale": "The author uses critical authority to attack elitist literary historiography and police the boundary of what must count in serious literary study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "admitamos la grandeza inmarchitable del «Cancionero» de Balmaseda",
+        "target": "Balmaseda's Cancionero",
+        "rationale": "The article explicitly evaluates Balmaseda's cancionero as enduringly great."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes popular roots and origin-like language, but the stronger visible function is canonization and heritage valuation rather than tradition authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "popular flamenco copla and Balmaseda's cancionero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-11-11-right-el-festival-nacional-del-cante-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "como consecuencia de la deficiente labor de la Organización ... y miembros del jurado calificador del concurso de cante, pensamos que nada positivo se ha conseguido",
+        "target": "the Festival Nacional del Cante de las Minas organization and jury",
+        "rationale": "The passage makes an explicit negative assessment of the festival's organization and judging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "el cante ... se encuentra estancado y en la más deprimente falsedad de como se debe interpretar los estilos mineros",
+        "target": "current interpretation of mining styles at the festival",
+        "rationale": "The article draws a boundary between proper interpretation of mining styles and a false, degraded current practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "ir a esa reunificación necesaria para que el origen, la tradición y la pureza de nuestros cantes brillen en su máximo explendor",
+        "target": "the origin, tradition, and purity of mining cantes",
+        "rationale": "The passage grounds the desired reform of the festival in origin, tradition, and continuity as sources of flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "siempre guiados y apoyados por opiniones solventes— los errores y defectos de nuestro Festival",
+        "target": "errors and defects of the festival",
+        "rationale": "The author presents the critique as supported by authoritative opinions and uses it to police proper festival and cante standards."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text discusses correct interpretation and líneas maestras, but the visible excerpt does not clearly present a teaching actor or pedagogical method."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "the current organization, judging, and interpretive standards of the Festival Nacional del Cante de las Minas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for these codes."
+  },
+  {
+    "article_id": "1981-11-12-right-guitarra",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem metaphorically praises or evokes the guitar, but it does not clearly evaluate a flamenco artist, performance, style, event, or practice under the codebook rules."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic description only; no clear evaluative, authorizing, pedagogical, heritage, or community discourse is emitted."
+  }
+]

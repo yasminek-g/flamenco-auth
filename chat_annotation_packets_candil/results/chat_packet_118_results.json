@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1985-09-15-right-sim-n-serrano-de-haro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "A mí quien más me ha enseñado y corregido ha sido Vallejo, y para darme buenos consejos, Pepe Pinto",
+        "target": "Simón Serrano's learning of cante",
+        "rationale": "The passage frames flamenco knowledge as acquired through correction and advice from recognized artists, giving authority to embodied master-apprentice transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la necia polémica de ciertas banderías de Murcia, Cartagena, La Unión, que están deteriorando la imagen cabal de la afición de esa zona",
+        "target": "regional factional polemics around flamenco afición and contests",
+        "rationale": "The passage explicitly criticizes factional behavior as damaging the proper image of the local flamenco afición."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The trigger 'Recuerdo' introduces personal memory and career recollection, but it does not frame the material as public heritage, safeguarding, or collective memory-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text mentions important figures and 'auténticos creadores', but within the visible excerpt this mainly supports learning context rather than constructing a clear canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Simón Serrano's learning and the contested local afición around competitions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1985-09-16-right-las-letras-del-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "consideramos un fraude lo que sea desnaturalización, apartamiento de los préstinos, cánones establecidos desde hace tiempo... y, en fin, de todo lo que vaya en contra de lo auténtico en esta materia",
+        "target": "lyrics and innovations that depart from authentic flamenco cante",
+        "rationale": "The passage draws a strong boundary between authentic flamenco and fraudulent denaturalization, irresponsible renewal, mediocrity, and pseudo-innovation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "No queremos decir que seamos partidarios del inmovilismo... guiados por quien tiene que serlo (el pueblo), y no por el despistado y pseudoinnovador de turno",
+        "target": "legitimate evolution of flamenco cante",
+        "rationale": "The passage authorizes change only as slow continuity guided by the people, opposing abrupt pseudo-innovation to tradition-based development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el excesivo garganteo, que no hace más que afear el cante, que es, entre otras muchas cosas, delicadeza, sensibilidad, gracia y duende",
+        "target": "vocal execution in flamenco cante",
+        "rationale": "The passage applies aesthetic criteria—delicacy, sensitivity, grace, and duende—to judge excessive throatiness as damaging cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad evaluative language, but the strongest evaluative work is already captured by AUTH_02, AUTH_03, and CRIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "proper flamenco lyrics, cante evolution, and vocal execution",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible evidence window contains a complete and clear argument."
+  },
+  {
+    "article_id": "1985-09-18-left-las-coplas-jondas-de-antonio-caz",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of poetic coplas without explicit evaluative, authorizing, pedagogical, communal, heritage, or critical discourse."
+  },
+  {
+    "article_id": "1985-09-18-right-guitarristas-conocidos-compa-ero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "lo hubiese catalogado y ubicado sobre el pedestal inamovible de los más ilustres guitarristas flamencos de la historia",
+        "target": "Melchor de Marchena",
+        "rationale": "The passage canonizes Melchor by placing him among the most illustrious flamenco guitarists in history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Melchor de Marchena, un guitarrista completo, un tocaor, como solía decir Mairena, de los que conocen su obligación",
+        "target": "Melchor de Marchena's guitar artistry",
+        "rationale": "The passage explicitly evaluates Melchor as a complete guitarist and a tocaor who understands his artistic duty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el maravilloso concierto con que, más que acompañar, encumbró los aires chaconianos, ya que el lenguaje musical que desarrolló resulta verdaderamente digno de un Falla",
+        "target": "Melchor de Marchena's accompaniment and musical language",
+        "rationale": "The passage judges Melchor through aesthetic criteria of musical elevation, accompaniment, and compositional dignity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The anecdote about something 'enseñao' is playful and isolated; it does not establish flamenco learning or lineage transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions history and resurgence, but the main visible discourse is critical evaluation and canonization rather than tradition as an authorizing principle."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Melchor de Marchena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-19-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "ha nombrado un jurado compuesto de veinte personas de máximo prestigio dentro del mundo del flamenco",
+        "target": "Compás del Cante award judgment",
+        "rationale": "The passage grants evaluative authority to a prestigious jury within the flamenco world."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Los criterios principales que habrá de tener el jurado es la calificación de la pureza, profesionalidad y constancia... la resurrección de estilos en desuso, la puesta al día de matices perdidos",
+        "target": "criteria for awarding the Compás del Cante",
+        "rationale": "The award defines flamenco value through explicit criteria such as purity, professionalism, constancy, research, recovered styles, and restored nuances."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la resurrección de estilos en desuso, la puesta al día de matices perdidos... ese necesario monumento vivo a nuestro cante",
+        "target": "flamenco cante as a living practice to be sustained",
+        "rationale": "The passage frames the award as supporting living cante through recovery of unused styles and lost nuances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Pureza is listed as one criterion for an award, but the passage does not itself draw a clear impure/fake exclusion boundary."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The award and jury confer recognition, but the visible excerpt does not clearly frame this as official or institutional heritage authority rather than critical prize administration."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "award-worthy flamenco cante and its recognized practitioners",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible prize criteria are sufficient for the emitted codes."
+  }
+]

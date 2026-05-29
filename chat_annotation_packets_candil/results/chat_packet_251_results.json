@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "1992-03-30-left-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "sin duda empujaría la balanza ampliamente hacia el lado positivo... dando como resultado la consecución de un espectáculo de un más que aceptable nivel artístico",
+        "target": "III Festival Andaluz de Jóvenes Aficionados al Flamenco",
+        "rationale": "The writer explicitly evaluates the festival and its artistic level while also weighing positive and negative aspects."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "me veo en la obligación de aludir... a la «imparcialidad de los jurados». Es una imparcialidad que, sin lugar a dudas, brilla por su ausencia",
+        "target": "flamenco contest juries",
+        "rationale": "The passage directly critiques the authority and fairness of juries as arbiters in flamenco competitions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca and aficionados are praised for supporting the event, but the passage does not clearly grant them authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "III Festival Andaluz de Jóvenes Aficionados al Flamenco and its judging process",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-03-30-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Radio-program schedule only; no evaluative, pedagogical, communal, heritage, authenticity, or critical discourse is visible."
+  },
+  {
+    "article_id": "1992-03-31-left-tocaores-de-hoy",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "tiene una brillantez inusitada y un ritmo poco común",
+        "target": "Paco Cepero's guitar artistry",
+        "rationale": "The quoted commentary explicitly praises Cepero's artistic quality and performance style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "él resuelve gracias a un virtuosismo sorprendente, asombroso, producto de un consumado dominio de la técnica",
+        "target": "Paco Cepero's guitar technique",
+        "rationale": "The passage applies aesthetic criteria such as rhythm, virtuosity, intensity, and technical mastery to define artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Su arte ha sido glosado por numerosos escritores y críticos flamencos, entre ellos por Manuel Ríos Ruiz, el cual manifiesta",
+        "target": "critical recognition of Paco Cepero",
+        "rationale": "The article authorizes Cepero's value through named flamenco critics and writers whose judgment is quoted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Awards and critical praise suggest status, but the excerpt does not clearly rank Cepero within a canon or hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase about the legitimate sound of Jerez links artistry to place, but the passage mainly functions as critical evaluation rather than tradition/roots authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco Cepero",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-05-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "profesionales de la información y de la crítica flamenca... reflexionaron conjuntamente sobre la trascendencia de su propia función de críticos",
+        "target": "flamenco critics",
+        "rationale": "The editorial explicitly foregrounds critics as an organized expert body reflecting on their authority and function."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "tuvieron el coraje de proscribir lo espúreo y subrayar lo genuino",
+        "target": "proper flamenco",
+        "rationale": "The passage draws a clear boundary between spurious and genuine flamenco, valuing critics who police that boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "muy positivo para redefinir el presente del flamenco, e indagar sobre posibles proyecciones del futuro",
+        "target": "the present and future definition of flamenco",
+        "rationale": "The editorial grants the critics' encounter a canon- and field-shaping role in redefining flamenco's present and future."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial discusses dignification and future projection, but it does not clearly frame flamenco as public heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco criticism as an authority for defining genuine flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-05-3-right-apuntes-sobre-la-sole-y-la-sigui",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "La siguiriya es invariablemente actualidad vital, no analítica sino desnudamente vivida. La soleá es la historia equidistante, tamizada, el afán sublimado",
+        "target": "soleá and siguiriya",
+        "rationale": "The passage defines flamenco value through aesthetic criteria such as depth, vitality, sublimation, voice gravity, and expressive force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Salvo la soleá, la siguiriya y el resto del cante grande, jondo, son una unidad... Lo «claro» es lo que distingue el mensaje de los cantes chicos: la superficie, la simplicidad",
+        "target": "cante grande, soleá, siguiriya, and cantes chicos",
+        "rationale": "The text constructs a hierarchy between jondo/cante grande and lighter or chico forms, assigning greater depth to the former."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Para el flamenco de ley, lo «negro» simboliza definitivamente la idea de lo jondo absoluto",
+        "target": "jondo flamenco",
+        "rationale": "The phrase 'flamenco de ley' presents a proper or authorized flamenco perspective that defines 'lo negro' as absolute jondo value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "lo jondo faraónico para el gitano, del duende para el bético... lo negro equivale a la Andalucía Alta... Lo claro equivale a la Andalucía Baja",
+        "target": "identity and regional framings of flamenco categories",
+        "rationale": "The article uses ethnic, regional, and identity categories to organize flamenco meanings and aesthetic authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The excerpt mentions initiation into cante grande, but it does not clearly describe oral, embodied, familial, or lineage-based transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Regional contrasts evoke rootedness, but the visible text mainly classifies aesthetic meanings rather than authorizing present practice through tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "jondo flamenco, especially siguiriya in relation to soleá",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible excerpt contains enough sustained definitional and evaluative discourse to code conservatively."
+  }
+]

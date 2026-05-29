@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "1985-09-7-right-notas-para-una-aproximaci-n-al-c",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The excerpt discusses etymology, old folklore, and a proposed urban origin for bamberas, but the visible text mainly describes origins rather than using tradition or roots to authorize present flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The Real Academia and dictionaries are cited as lexical sources, but the passage does not frame flamenco learning, institutional pedagogy, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Scholarly etymological framing is present, but the visible excerpt does not clearly perform one of the required code functions beyond description."
+  },
+  {
+    "article_id": "1985-09-10-right-la-llave-de-oro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "en el que de ser cierto que hubo rey, éste fue Antonio Mairena (y nosotros ampliaríamos el título al de emperador",
+        "target": "Antonio Mairena",
+        "rationale": "The article canonizes Mairena through explicit royal hierarchy and presents him as unmatched within the cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "ostentaría el magisterio indiscutible que el cante precisaba a la sazón",
+        "target": "Antonio Mairena's authority over cante",
+        "rationale": "Mairena is positioned as an unquestioned master whose knowledge and example give him authority over flamenco understanding."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "estas lagunas sin embargo no empañan la magnitud y grandeza de su obra",
+        "target": "Mairena's artistic work",
+        "rationale": "The passage explicitly evaluates Mairena's work as great despite possible errors or contradictions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to 'gitanería cantaora' links Mairena to a group identity, but the visible passage primarily canonizes him rather than developing identity-based belonging or representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes inheritance-like terms such as 'acervo' and succession, but the clearest discourse function is canonical hierarchy and master authority rather than tradition/continuity as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Antonio Mairena and the prestige of the Llave de Oro",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-11-right-seg-n-un-apasionado-viajero-anda",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un público atípico que camina con pasos agigantados hacia los senderos de una nueva opereta flamenca y gastronómica",
+        "target": "festival audiences and festival culture",
+        "rationale": "The passage explicitly criticizes the audience and festival environment as degraded into a flamenco-gastronomic operetta."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "una seudoafición que tan sólo escucha a su cantaor...; a una afición auténtica y cabal",
+        "target": "festival afición",
+        "rationale": "The article distinguishes pseudo-aficionados from authentic, serious aficionados, making afición a basis for community authority and recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "demanda los cantes fáciles y livianos: aquellos que, sin requerir esfuerzos, carecen de pelea",
+        "target": "preferred festival repertoire",
+        "rationale": "The passage uses difficulty, seriousness, and struggle as aesthetic criteria for judging the cantes demanded by the public."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text devalues easy cantes and pseudo-afición, but it is framed more as critical/aesthetic judgment than an explicit purity boundary around legitimate flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The excerpt concerns public festival settings, but it does not clearly contrast public spectatorship with private or participatory flamenco as the basis of value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "pseudo-afición and degraded festival culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-13-right-ellos-los-aficionados-tambi-n-di",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la creación de la Confederación Andaluzía de Peñas Flamencas era una necesidad que no solamente se venía demandando por los aficionados al flamenco",
+        "target": "aficionados and peñas flamencas",
+        "rationale": "The passage presents aficionados and peñas as organized community actors whose collective demand authorizes the Confederation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Cultural institutions and the Junta de Andalucía appear as administrative actors, but the excerpt does not clearly frame flamenco as heritage or patrimony under official heritage authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The final visible passage mentions social support for old artists, but it is welfare-oriented rather than a clear safeguarding or living-heritage claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Confederación Andaluza de Peñas Flamencas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-15-left-sociedad-y-cante-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El resultado es un texto bastante aceptable en cuanto a contenidos, en líneas generales, pero que llega un poco tarde",
+        "target": "the book Sociedad y Cante Flamenco",
+        "rationale": "The review explicitly assesses the book's quality and limitations."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "bastante aprovechable para aquellos que por vez primera y con mirada virgen se aproximan al hecho cultural analizado",
+        "target": "the book as an introductory guide to flamenco culture",
+        "rationale": "The book is framed as useful access for beginners approaching flamenco as a cultural object."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Del pasado se queda con Vallejo y la Niña de los Peines; de la actualidad, dos cantaores destacan sobre los demás: José Menese y Fosforito.",
+        "target": "flamenco singers across past and present",
+        "rationale": "The passage creates a value-bearing hierarchy by singling out past and current singers who stand above others."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The book's claim that copla and cante are joint works of payos and gitanos invokes identity groups, but the visible review reports the argument without clearly making identity the basis of belonging or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review mentions artistic, terminological, metrical, and thematic aspects, but the excerpt does not clearly apply a specific flamenco aesthetic criterion such as compás, duende, technique, or depth."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the reviewed book and selected flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

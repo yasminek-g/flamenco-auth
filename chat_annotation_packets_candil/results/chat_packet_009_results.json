@@ -1,0 +1,234 @@
+[
+  {
+    "article_id": "1980-05-6-right-viejas-p-ginas-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "CANDIL solicita de sus lectores el envío de viejos textos, documentos, etc. prácticamente desconocidos de la afición flamenca, a fin de darles la justa y necesaria difusión en estas páginas.",
+        "target": "old flamenco texts and documents",
+        "rationale": "The passage frames neglected flamenco documents as materials that should be recovered and publicly circulated for the afición."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Que es el baile andaluz un hilo de oro del espléndido collar de nuestra historia...",
+        "target": "baile andaluz",
+        "rationale": "The text grounds the value of Andalusian dance in historical continuity and cultural rootedness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "¡Baile andaluz, de clásico abolengo, flor y nata de las alegrías españolas!",
+        "target": "baile andaluz",
+        "rationale": "The passage explicitly praises Andalusian dance through elevated aesthetic and cultural judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible text mentions listening and inherited cultural mixtures, but it does not clearly frame flamenco knowledge as learned through oral or embodied transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "baile andaluz and recovered flamenco documents",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only visible editorial framing and quoted Ricardo León excerpt."
+  },
+  {
+    "article_id": "1980-05-8-right-los-cafes-cantantes-de-madrid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un trabajo que no dudo en calificar de exhaustivo",
+        "target": "Antonio Escribano's catalogue of Madrid cafés cantantes",
+        "rationale": "The passage directly evaluates Escribano's work as exhaustive and valuable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Queden, por mi parte y como coda final, abiertas las interrogantes en la confianza de que serán borradas por el propio Escribano, o por cualquier otro estudioso o aficionado.",
+        "target": "scholarly correction of café cantante history",
+        "rationale": "The writer positions Escribano, other scholars, and knowledgeable aficionados as authorities able to resolve documentary discrepancies."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "documentary scholarship on Madrid cafés cantantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-05-9-left-tres-instantes-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "lo que enaltece a este gitano mítico y salobre su perdurable voz de madera encarada",
+        "target": "Antonio Mairena",
+        "rationale": "The poem performs explicit praise of Mairena's voice and artistic stature."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "En Caripén estamos todos, sólo los que sabemos ir acompañados.",
+        "target": "Caripén flamenco gathering",
+        "rationale": "The line draws a boundary around those who know how to belong within the flamenco gathering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central in the poem, but the visible language is too poetic to code a clear identity-based authority claim beyond the emitted belonging boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco artists and the Caripén gathering",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic register; only relatively explicit praise and belonging language coded."
+  },
+  {
+    "article_id": "1980-05-10-right-joselero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El cante es cosa muy delicada, no se aprende, no es aprendido, el cante es nacio, y el que nace con el cante tiene que tener algo propio",
+        "target": "cante",
+        "rationale": "Joselero defines proper cante as innate and personally possessed rather than merely learned."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "el que se hace aficionao por la garganta u otra cosa, tiene que aprender, lo que le hace carecer de mérito. El mérito radica en nacer con el cante",
+        "target": "learned or acquired cante",
+        "rationale": "The passage draws a legitimacy boundary by devaluing learned cante and locating merit in being born with it."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "sin poner posturas femeninas, vamos, que eran más masculinos... haciendo desplantes, pero ¡macho!",
+        "target": "dance style and performer masculinity",
+        "rationale": "The passage uses gendered framing to define valued dance posture and style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Family artists and lack of academy are mentioned, but the visible passage does not clearly describe oral, embodied, or intergenerational transmission as the source of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "innate cante and gendered dance style",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only visible statements."
+  },
+  {
+    "article_id": "1980-05-12-right-aunque-no-quepa-en-el-papel-a-pr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el refrito es plato común en los escritos sobre el cante... la iletralidad de muchos de sus exégetas",
+        "target": "flamenco exegesis and bibliography",
+        "rationale": "The writer critiques the authority and reliability of flamenco commentators who cite without reading or repeat derivative claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "nos encontramos frente a un amenísimo libro de impecable factura literaria",
+        "target": "George Borrow's book",
+        "rationale": "The passage explicitly evaluates the literary quality of Borrow's book."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "ofrece un dibujo demasiado pintoresco, a lo viajero anglosajón, de poca credibilidad y con más pinta de una sesión de brujería que de baile, producto de auténtica elucubración",
+        "target": "Borrow's depiction of flamenco dance",
+        "rationale": "The writer exercises critical authority by challenging the credibility of Borrow's account as exoticizing and unreliable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The quoted passage includes women and gitanos, but the visible discussion is mainly historiographic critique rather than identity-group authority or representation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The quoted scene includes compás and dance, but it is descriptive evidence rather than a claim about learning or transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco bibliography and Borrow's testimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; the two CRIT_04 codes address distinct targets: flamenco commentators and Borrow's account."
+  }
+]

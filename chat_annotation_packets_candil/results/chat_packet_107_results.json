@@ -1,0 +1,266 @@
+[
+  {
+    "article_id": "1985-01-17-right-constituida-la-fundaci-n-antonio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "ha quedado constituida, mediante escritura notarial, la FUNDACION ANTONIO MAIRENA, de carácter cultural privada",
+        "target": "Fundación Antonio Mairena",
+        "rationale": "The passage frames flamenco cultural value through a formally constituted foundation and patronato structure."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "cuyos fines se encamina a la promoción, desarrollo, protección y fomento del arte flamenco como expresión cultural",
+        "target": "arte flamenco",
+        "rationale": "The foundation's stated mission explicitly frames flamenco as a cultural expression to be promoted, protected, developed, and sustained."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la exaltación de la figura artística del desaparecido cantaor",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena by presenting the foundation as dedicated to exalting his artistic figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The foundation implies continuity after Mairena's death, but the visible text frames this mainly as institutional cultural protection rather than tradition/roots authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and arte flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-01-18-left-quienes-fueron-los-maestros-migu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "La transmisión oral alude a que su nombre era Manuel",
+        "target": "knowledge about Miguel Cruz «Macaca»",
+        "rationale": "The passage identifies oral transmission as a source of flamenco-historical knowledge about the cantaor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "fue un verdadero maestro de cante, al que el gran Silverio contrataba por años consecutivos",
+        "target": "Miguel Cruz «Macaca»",
+        "rationale": "The passage elevates Macaca through master status and association with Silverio, constructing a hierarchy of exemplary artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fue un cantaor de extraordinarias facultades, completísimo en todos los cantes grandes",
+        "target": "Miguel Cruz «Macaca»",
+        "rationale": "The passage explicitly evaluates Macaca's artistic ability and breadth as a cantaor."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ha estado olvidado en los anales de la historia del cante gaditano... queremos dejar constancia de este gran intérprete gaditano",
+        "target": "Miguel Cruz «Macaca»",
+        "rationale": "The article frames its work as recovering memory of an overlooked flamenco figure for the historical record."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Su choza era lugar de peregrinación para los buenos aficionados de la comarca",
+        "target": "Juaniquín de Lebrija and local aficionados",
+        "rationale": "The passage presents knowledgeable local aficionados as a community whose recognition marks Juaniquín's flamenco authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "en el más castizo compás para bailar por alegrías, y no esa monótona lata de que disfrutamos hoy",
+        "target": "Miguel Cruz «Macaca» and later evolved versions",
+        "rationale": "The passage applies compás and castizo style as aesthetic criteria while criticizing later monotony."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Historical continuity is present through older singers and styles, but the stronger visible functions are canonization, evaluation, oral transmission, and memory recovery."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage",
+        "community"
+      ],
+      "target": "Miguel Cruz «Macaca» and Juaniquín de Lebrija",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-01-20-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Deseamos toda clase de aciertos a este numeroso colectivo",
+        "target": "Casa del Arte Flamenco Antonio Mairena collective",
+        "rationale": "The passage treats the peña/casa collective as a recognized community body sustaining flamenco activity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Nuestra felicitación a los amigos de Los Barrios",
+        "target": "Peña Flamenca Fosforito de Los Barrios",
+        "rationale": "The text recognizes the peña community as part of the network of flamenco sociability and organizational life."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la floración de estas Entidades es tan espectacular como cuantitativa y su inmensa mayoría nacieron al calor y vivencia del «Tocadiscos Flamenco»",
+        "target": "Andalusian/flamenco entities in Barcelona",
+        "rationale": "The passage frames the growth of community entities as a living cultural formation sustained by flamenco experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "There are peña and contest settings, but the visible text mostly lists organizations and does not clearly contrast participatory value against spectatorship."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public sponsors and boards appear, but routine sponsorship and administration do not amount to authorized heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "heritage"
+      ],
+      "target": "flamenco peñas and Andalusian community entities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible material is largely organizational notice, so coding is conservative."
+  },
+  {
+    "article_id": "1985-01-22-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "José Romero nos presenta como fruto de su personalidad y de un profundo trabajo",
+        "target": "José Romero's Fantasía-Suite Andaluza-Iberoamericana",
+        "rationale": "The passage evaluates the recording as the result of artistic personality and deep work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "La grabación nos deja oír, en perfección de sones, no sólo la técnica, también la pasión",
+        "target": "José Romero's recording",
+        "rationale": "The passage applies aesthetic criteria of sonic perfection, technique, and passion to judge the work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "innumerables saberes que tienen sus raíces en el alma de un pueblo que hace de lo popular máxima expresión artística",
+        "target": "José Romero's music and its popular-cultural roots",
+        "rationale": "The passage grounds the work's value in roots, collective popular knowledge, and continuity with a people's expressive tradition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "se incorpora... a un testimonio de Cultura común avalado por la realidad de los siglos",
+        "target": "Fantasía-Suite Andaluza-Iberoamericana",
+        "rationale": "The work is framed as testimony of a shared culture validated by historical depth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la obra FANTASIA-SUITE ANDALUZA-IBEROAMERICANA, queda incompleta. Hay que andar más en este camino",
+        "target": "Fantasía-Suite Andaluza-Iberoamericana",
+        "rationale": "The passage offers an explicit critical limitation, judging the work incomplete and calling for further development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes a pueblo and shared culture, but identity framing does not clearly organize belonging or authority beyond heritage/tradition rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition",
+        "heritage"
+      ],
+      "target": "José Romero's Fantasía-Suite Andaluza-Iberoamericana",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible review gives enough evidence for aesthetic evaluation and cultural legitimation."
+  },
+  {
+    "article_id": "1985-01-23-right-discograf-a-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is too short to support a discourse code."
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "1991-07-17-left-dos-discursos-hom-logos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Los dos tipos de expresión traducen primero la voluntad de una vuelta a lo esencial, a lo auténtico... Detrás de la búsqueda de las raíces de una identidad colectiva",
+        "target": "flamenco and tauromaquia as Andalusian popular arts",
+        "rationale": "The passage legitimates flamenco and bullfighting by grounding them in essential values, authenticity, roots, and collective identity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Hoy día la reivindica el patrimonio nacional, incluso internacional, después de un largo período de ostracismo y de desprecio",
+        "target": "flamenco and tauromaquia as public cultural heritage",
+        "rationale": "The passage explicitly frames these arts as national and even international patrimony after earlier rejection."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "no puede haber lidia, cante o baile flamencos, sin participación activa de los espectadores-actores que ocupan el sitio y desempeñan el papel del coro",
+        "target": "spectator-actor participation in flamenco and bullfighting",
+        "rationale": "The passage defines the arts through active communal participation rather than detached spectatorship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage says 'lo auténtico', but the stronger visible discourse is roots/tradition and heritage legitimation rather than a separate claim of proper flamenco authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text mentions understanding 'mejor' and elevates the arts, but it does not create a concrete canon, ranking, or hierarchy among artists, styles, or works."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "community"
+      ],
+      "target": "flamenco and tauromaquia",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-19-right-la-alegr-a-de-la-huerta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "intentar partir de un nuevo concepto para el estudio de los cantes malagueños, cuyas raíces preceden al cante flamenco... tiene unas raíces propias en su folklore",
+        "target": "cantes malagueños",
+        "rationale": "The passage grounds the study and value of malagueño song forms in roots that precede flamenco and belong to local folklore."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "cuyo ritmo es un poco extraño, rudo si se quiere, pero no tiene nada de vulgar ni frívolo",
+        "target": "malagueñas and related Andalusian popular songs",
+        "rationale": "The quoted description applies aesthetic criteria to defend the rhythm as non-vulgar and non-frivolous despite its rough or strange quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article cites books and travelers, but the visible excerpt does not clearly position them as expert critical authorities policing flamenco value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The passage discusses folklore and local roots, but it does not clearly shift into public heritage or patrimony discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "cantes malagueños",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-23-left-siguiriyas-gitanas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem uses gendered and Gitana imagery, but it does not clearly construct flamenco belonging, authority, representation, or tradition as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text without clear evaluative, authorizing, pedagogical, heritage, or community-authority discourse about flamenco."
+  },
+  {
+    "article_id": "1991-07-23-right-cantaor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Mírate en tu memoria antepasada, rebusca en tus lamentos de jondura... Será tu voz más ronca y más sincera",
+        "target": "the cantaor's voice and cante",
+        "rationale": "The poem defines valued cante through aesthetic criteria of ancestral memory, jondura, roughness, sincerity, lament, and expressive wound."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'memoria antepasada' suggests ancestry, but the poem does not clearly use continuity or roots to authorize a present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the cantaor's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-24-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "«Alma de Barco», por todo ello, es mucho más que un libro de poemas",
+        "target": "José Giorgio Soto's Alma de Barco",
+        "rationale": "The passage explicitly praises the work as exceeding the status of a poetry book."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "con la expresividad plástica del cante, con su ductilidad para los matices... cantes tan profundos... suena a una verdad tan directa que hay que rendirse a ella",
+        "target": "José Giorgio Soto's written and sung cantes",
+        "rationale": "The passage evaluates the cantes through aesthetic criteria of plastic expressivity, nuance, depth, and direct truth."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "lo más hermoso de todo es que suena a una verdad tan directa que hay que rendirse a ella... Donde no existe la pena el cante desaparece",
+        "target": "José Giorgio Soto's cante",
+        "rationale": "The text presents the cante as true and grounded in pena, attributing genuine flamenco force to it rather than treating it as mere writing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text calls Soto an 'augusto descendiente de los Torre', but it does not describe oral, embodied, familial, or intergenerational transmission as a learning process."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The Arriate team's introduction is praised, but expert authority is secondary and not developed enough to warrant a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "José Giorgio Soto's Alma de Barco and cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "1994-09-30-left-aunque-no-quepa-en-el-papel-bibl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "ésta que nos ocupa no va a pasar a la historia... libro de labazado y mal pergeñado",
+        "target": "biografía sobre El Cojo de Málaga",
+        "rationale": "The passage explicitly evaluates the book negatively as poorly made and not historically significant."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "afirmaciones categóricas que nadie se molesta en probar, porque al autor le falta la más elemental investigación sobre el asunto acerca del cual pontifica",
+        "target": "un libro/autor sobre estudios flamencos",
+        "rationale": "The reviewer polices scholarly authority by criticizing unsupported claims and lack of basic research in flamenco writing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Tarda en salir a la luz un libro que nos enseñe, de verdad, a los que estamos algo iniciados en el tema.",
+        "target": "flamenco study books for initiated readers",
+        "rationale": "The passage frames books as mediators of flamenco knowledge and evaluates whether they genuinely teach readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to a second edition and to Paco Serrano's international successes suggest status, but the central discourse is review evaluation rather than canon construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco bibliography and research quality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The first review is truncated but contains enough visible evaluative and research-authority discourse to code."
+  },
+  {
+    "article_id": "1994-11-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "es incluso consciente de que muchos de ellos versan sobre materias controvertidas e invita a los estudiosos al debate sobre los temas tratados",
+        "target": "Candil's editorial forum",
+        "rationale": "The publication frames itself as a venue for expert debate over contested flamenco topics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The masthead mentions Peña Flamenca de Jaén, but this is administrative metadata and does not itself authorize community judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "debate in Candil",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Most of the item is masthead and publication information; only the debate invitation has a clear discourse function."
+  },
+  {
+    "article_id": "1994-11-3-right-paco-de-luc-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tal vez, más importante guitarrista de la historia reciente del flamenco",
+        "target": "Paco de Lucía",
+        "rationale": "The passage canonizes Paco de Lucía through an explicit historical ranking."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una técnica tumultuosa, enfebrecida... memoria de cantes aduendados, pura jondura",
+        "target": "Paco de Lucía's guitar playing",
+        "rationale": "Technique, duende, and jondura are used as aesthetic criteria to explain the value of Paco's toque."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "en los hondones de su toque... se instala toda la cultura de lo jondo",
+        "target": "Paco de Lucía's flamenco rootedness",
+        "rationale": "The passage grounds Paco's innovative guitar work in continuity with the culture of jondo."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "contribuir humildemente al conocimiento y la difusión de uno de los andaluces más universales",
+        "target": "the monographic issue on Paco de Lucía",
+        "rationale": "The monograph is framed as a medium for access to knowledge and dissemination of Paco de Lucía's flamenco significance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Paco de Lucía",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-11-5-right-paco-la-persona-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "su miedo genera la energía nerviosa tan necesaria para ejecutar el flamenco con agallas y emoción",
+        "target": "Paco de Lucía's performance",
+        "rationale": "Nervous energy, courage, and emotion are presented as aesthetic conditions for effective flamenco execution."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "si no practicas un día, lo sabes tú; si no practicas varios días, tus colegas lo saben; y si no tocas durante una semana, lo sabe todo el mundo",
+        "target": "Paco de Lucía's guitar practice discipline",
+        "rationale": "The passage frames flamenco competence as maintained through embodied practice and peer-recognized performance knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "los artistas consideran el flamenco como un negocio... Esta es una actitud inteligente y recomendable, pero ¡cómo se echan de menos aquellas juergas despreocupadas!",
+        "target": "professionalized flamenco versus earlier juerga culture",
+        "rationale": "The passage contrasts modern businesslike flamenco with nostalgic informal juergas, implying a loss of social/intimate flamenco life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Creativity and work cycles are discussed, but the visible passage does not clearly frame institutional/transnational learning or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Paco de Lucía's artistic life and modern flamenco professionalism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpts support coding performance criteria, practice, and anti-commercial/intimate authenticity."
+  },
+  {
+    "article_id": "1994-11-7-right-integrados-apocal-pticos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "No es un disco más... Se trata de una decisiva aportación en la discografía flamenca.",
+        "target": "Paco de Lucía's recording",
+        "rationale": "The passage explicitly evaluates the recording as exceptional and decisive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una técnica no sólo rica, sino temeraria, una pasión enriquecida por el rigor... una extraordinaria capacidad de invención",
+        "target": "Paco de Lucía's guitar aesthetics",
+        "rationale": "Technique, passion, rigor, and invention are used as criteria for judging flamenco musical quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "vivida en la experiencia de las madrugadas laboriosas y en todo el complejo bloque de la tradición de un arte de borrosos orígenes",
+        "target": "Paco de Lucía's flamenco knowledge",
+        "rationale": "The passage authorizes Paco's artistry by grounding it in lived experience and flamenco tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "es algo que únicamente puede superar, hoy por hoy, el mismo Paco de Lucía",
+        "target": "Paco de Lucía",
+        "rationale": "The passage hierarchizes Paco by claiming only he can surpass the achievement."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase about lived experience in madrugadas suggests experiential knowledge, but it functions more as tradition-based authorization than explicit transmission or apprenticeship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Paco de Lucía's recording and artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible review strongly legitimates Paco de Lucía through aesthetic criteria, tradition, and canon hierarchy."
+  }
+]

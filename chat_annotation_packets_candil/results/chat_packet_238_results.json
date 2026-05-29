@@ -1,0 +1,398 @@
+[
+  {
+    "article_id": "1991-07-25-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "fue inaugurado en Cabra (Córdoba), un monumento dedicado a Cayetano Murriel, Niño de Cabra. Pronunciaron sendas alocuciones el alcalde de Cabra... y el diputado de Cultura",
+        "target": "Cayetano Muriel, Niño de Cabra",
+        "rationale": "The monument and speeches by municipal and provincial cultural authorities officially commemorate and authorize the singer's public cultural memory."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas are named as section actors, but the visible text mainly reports organizational facts rather than assigning afición or peñas authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "Cayetano Muriel, Niño de Cabra",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-26-right-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "el cante de Manuel Arroyo Jiménez, «Tío Mollino», está desprovisto de hojarasca y artificios comerciales",
+        "target": "Tío Mollino's cante",
+        "rationale": "The review legitimates the cante by contrasting it with commercial artifice and ornamental excess."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "contribuyendo a que los menos iniciados sintonicen con el auténtico Flamenco que desde las Peñas siempre hemos pregonado",
+        "target": "authentic flamenco promoted through peñas",
+        "rationale": "The passage explicitly names 'authentic Flamenco' as the proper object novices should learn to recognize."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En el cante por siguiriyas es donde «Tío Mollino» nos mete el resuello en el cuerpo",
+        "target": "Tío Mollino's siguiriyas",
+        "rationale": "The reviewer explicitly assesses the emotional and artistic effect of Tío Mollino's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su queijo es desgarrador, hondo, pellizcando hasta lastimar",
+        "target": "Tío Mollino's vocal style",
+        "rationale": "The passage applies flamenco aesthetic criteria of depth, expressive wound, and vocal force to define the cante's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Confirmándose, tal vez, como uno de los mejores siguiriyeros de los últimos tiempos",
+        "target": "Tío Mollino's status as siguiriyero",
+        "rationale": "The review ranks him among the best recent singers of siguiriyas, constructing a clear hierarchy of status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'se perpetúa el arte y el nombre' suggests preservation, but the review's dominant function is critical and authenticity evaluation rather than explicit heritage safeguarding."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and aficionados appear as valuing communities, but the strongest visible evidence is the authenticity claim rather than a separate sustained community-authority argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Tío Mollino's recording and cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-27-left-bailaoras-de-hoy",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Recogemos los siguientes comentarios sobre su personalidad artística: Francisco Millán... Enrique López Oneto",
+        "target": "Cristina Hoyos's artistic personality",
+        "rationale": "The article presents named critics' comments as authoritative evaluation of the bailaora's artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Después pasamos por el momento de creerla perfecta, automática, sin fallos. Y, a la tercera, nos quedamos de piedra",
+        "target": "Cristina Hoyos's dance performance",
+        "rationale": "The quoted critic explicitly evaluates Hoyos's performance development and impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "sus ojos se convierten en diamantes oscuros que la danza parece cargar de cólera... unos brazos de mujer que hacen arte al moverse",
+        "target": "Cristina Hoyos's expressive dance qualities",
+        "rationale": "The passage defines her dance value through expressive bodily criteria: gesture, intensity, movement, and emotional charge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'brazos de mujer' is gendered, but it functions as aesthetic description rather than a broader claim about identity, belonging, or authority in flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text states she was a disciple of Adelita Domingo, but the visible passage does not develop lineage transmission as a source of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Cristina Hoyos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "creemos vislumbrar que Linares ha retomado la mejor tradición. Un Congreso sin Ponencias, sin propuestas formales de resolución, sin debate, carece de sentido y significación",
+        "target": "XIX Congreso de Actividades Flamencas in Linares",
+        "rationale": "The editorial uses continuity with the 'best tradition' of congress practice to authorize what a meaningful flamenco congress should include."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "foráneos por pasaporte, que no por corazón y por entrega al flamenco",
+        "target": "foreign contributors to the congress",
+        "rationale": "The passage draws and softens an insider/outsider boundary by saying formal foreignness does not exclude belonging through devotion to flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Linares ha realizado un trabajo serio y encomiable",
+        "target": "Linares congress organization",
+        "rationale": "The editorial explicitly evaluates the congress organization as serious and praiseworthy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la ponencia de Blas Vega, que centra en su justa dimensión la personalidad cantaora y humana de Manuel Vallejo, frente a desinformados detractores",
+        "target": "Blas Vega's ponencia on Manuel Vallejo",
+        "rationale": "The passage authorizes an expert corrective intervention against uninformed detractors of Vallejo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The congress includes formal ponencias and debate, but the visible passage evaluates organization and scholarship more than access to flamenco learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Linares congress and its contributors",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-3-right-los-intelectuales-ante-el-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "el Seminario de la Universidad Complutense... ha constituido un repaso por los dos siglos de historia flamenca a través de los intelectuales que se han aproximado a ella",
+        "target": "Complutense University flamenco seminar",
+        "rationale": "The passage frames flamenco knowledge as mediated through a formal university seminar and intellectual historical review."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ríos Ruiz, analizó con precisión las causas y efectos del anteriormente citado fenómeno del antiflamenquismo",
+        "target": "Ríos Ruiz's analysis of antiflamenquismo",
+        "rationale": "A named expert is credited with precise critical analysis of anti-flamenco discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un justísimo homenaje a Demófilo, el fundador de la moderna flamencología",
+        "target": "Demófilo",
+        "rationale": "The passage canonizes Demófilo by identifying him as the founder of modern flamencology and the proper object of homage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "las actuaciones flamencas... estuvieron más que dignamente representadas por José Mercé al cante, José Luis Rodríguez a la guitarra, además del baile, solemne y pleno de estética, de Javier Barón",
+        "target": "seminar flamenco performances",
+        "rationale": "The passage explicitly evaluates the performances as dignified and aesthetically full."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The university is called a high cultural institution, but the visible passage frames the event primarily as pedagogy and critical discourse rather than official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco intellectual study in the university seminar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-23-left-siguiriyas-gitanas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem addresses a 'gitana', but the visible text does not use identity to define flamenco belonging, authority, representation, or transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Literary poem without clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse about flamenco."
+  },
+  {
+    "article_id": "1991-07-23-right-cantaor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Será tu voz más ronca y más sincera al eco de tu grito y desventura",
+        "target": "the cantaor's voice",
+        "rationale": "The poem defines valued cante through aesthetic criteria of roughness, sincerity, cry, and suffering."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Mírate en tu memoria antepasada, rebusca en tus lamentos de jondura",
+        "target": "the cantaor's cante",
+        "rationale": "The passage grounds the cantaor's expression in ancestral memory and jondura, invoking rooted continuity as a source of value."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the cantaor's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-07-24-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "«Alma de Barco», por todo ello, es mucho más que un libro de poemas",
+        "target": "José Giorgio Soto's Alma de Barco",
+        "rationale": "The article explicitly evaluates the work as exceeding the status of an ordinary poetry book."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "pertenecen todavía a esa servidumbre de la lectura individual... nada estará completo hasta que no tengamos la dicha de tropezarnos con José y oírle gritar",
+        "target": "José Giorgio Soto's written cantes versus live cante",
+        "rationale": "The passage treats the printed text as insufficient and live vocal co-presence as the fuller, more authentic realization of the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "cantes tan profundos... suena a una verdad tan directa que hay que rendirse a ella",
+        "target": "José Giorgio Soto's cantes",
+        "rationale": "The passage applies aesthetic criteria of depth and direct truth to define the value of the cantes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "suena a una verdad tan directa que hay que rendirse a ella",
+        "target": "José Giorgio Soto's flamenco expression",
+        "rationale": "The review presents the work's direct truth as a marker of genuine flamenco expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The reference to being a descendant of the Torre family suggests lineage, but the passage does not describe learning or transmission through that lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The Torre descent lends prestige, but the visible passage does not clearly rank or canonize José Giorgio Soto through that comparison."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "José Giorgio Soto's Alma de Barco and cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

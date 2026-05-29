@@ -1,0 +1,253 @@
+[
+  {
+    "article_id": "1993-05-24-left-el-flamenco-en-la-universidad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "crear una «Cátedra de Flamencología»... «Mariquilla», en su academia particular, comenzó a impartir lo que sabía, el baile.",
+        "target": "University of Granada flamencology program / Cátedra de Flamencología",
+        "rationale": "The passage directly concerns institutional flamenco learning through a university chair, academy, tuition, scholarships, and degree expectations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "habían pagado tan cara matrícula para recibir sólo la asignatura de la práctica de baile",
+        "target": "the university flamencology course as implemented",
+        "rationale": "The article evaluates the program critically, judging its expensive matriculation and narrow delivery against the promised broader flamencology title."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Granada la primera Universidad pionera en dignificar el flamenco",
+        "target": "flamenco within the university",
+        "rationale": "The university is framed as an institution capable of dignifying and authorizing flamenco as a legitimate field of public cultural study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article discusses teaching, but the strongest evidence concerns institutional access and program structure rather than a clearly authorized teacher or method."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage"
+      ],
+      "target": "university flamenco education",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to visible beginning/window/ending text."
+  },
+  {
+    "article_id": "1993-05-25-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "aquellos creadores que, o bien hayan dejado una huella indeleble en nuestro arte o que, por su singularidad vital y ejemplaridad interpretativa, merezcan ser resaltados como ejemplos generacionales",
+        "target": "flamenco artists selected for biography",
+        "rationale": "The passage sets hierarchical criteria for which artists merit biographical treatment, constructing exemplary and generational status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el libro de Salvador Arias... peca de adjetivación elogiosa y abunda en el ditirambo",
+        "target": "Salvador Arias Nieto's book on Diego Clavel",
+        "rationale": "The reviewer explicitly evaluates the book negatively for excessive praise and contrasts it with a more sensible, balanced treatment of Luis de Córdoba."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "quien firma este trabajo... mucho más sensato y ponderado, por tanto pertinente, el tratamiento otorgado al artista cordobés",
+        "target": "critical treatments of Luis de Córdoba and Diego Clavel",
+        "rationale": "The reviewer exercises explicit critical authority by judging which biographical treatment is pertinent, excessive, or unlikely to succeed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Terms such as magisterio and conocedor appear, but they function mainly as artistic status or biographical description rather than teaching authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco biography and books on Luis de Córdoba and Diego Clavel",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-07-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "por muchos ha sido conceptuado como el más grande cantaor de todos los tiempos",
+        "target": "Antonio Mairena",
+        "rationale": "The editorial invokes superlative ranking and canonical status, presenting Mairena as a paradigmatic figure in flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "indagando los ecos y estilos de una y mil familias de viejos gitanos, a la busca siempre de un legado ya extinguido o en trance de desaparecer",
+        "target": "Mairena's recovery of old flamenco styles and legacy",
+        "rationale": "The passage grounds Mairena's value in recovering and dignifying a disappearing inherited legacy of old cantes and styles."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "la reivindicación de los valores singulares de su etnia",
+        "target": "Mairena's ethnic/community values",
+        "rationale": "The text frames Mairena's contribution through ethnic identity, making that identity part of his authority and historical significance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mairena is called maestro y guía, but the visible passage emphasizes canonization and tradition recovery more than explicit pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-07-4-left-antonio-mairena-la-necesidad-del",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio mantuvo firme su papel de primero... nadie controvierte el hecho de su capitania, de su calidad de líder",
+        "target": "Antonio Mairena",
+        "rationale": "The article constructs Mairena's hierarchical position as first, captain, and leader within flamenco movements."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los análisis asentados en el inconformismo con su importancia... aseguren la necesidad de otras motivaciones musicales más acordes con la realidad actual",
+        "target": "critical debate over Mairena and newer flamenco tendencies",
+        "rationale": "The passage stages and evaluates critical positions about Mairena, modernism, tradition, and the legitimacy of new musical directions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el cante no nace por generación espontánea... se ha basado en ellos... cada cual, ha ido aportando evolución y grandeza",
+        "target": "flamenco cante as continuity from past models",
+        "rationale": "The argument authorizes flamenco evolution by grounding it in continuity with past figures rather than spontaneous rupture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The final warning against mixing forms suggests boundary-work, but the visible excerpt does not clearly name an impure or illegitimate target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Antonio Mairena and mairenismo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to visible beginning/window/ending text."
+  },
+  {
+    "article_id": "1993-07-5-right-antonio-mairena-ante-los-valores",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "figuras ejemplares... Este es el caso de António Mairena, el último cantaor que además de ser considerado un gran intérprete, se le tiene como el dignificador del flamenco de nuestra época",
+        "target": "Antonio Mairena",
+        "rationale": "The text canonizes Mairena as an exemplary figure, major interpreter, and dignifier of flamenco in his era."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "mucha ciencia, mucha devoción al cante y al toque",
+        "target": "proper flamenco practice and interpretation",
+        "rationale": "The passage defines serious flamenco through aesthetic and ethical criteria such as knowledge, devotion, and seriousness rather than mere entertainment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "demostrando sus verdaderos valores frente a los estropicios de una mixtificación realizada a mansalva",
+        "target": "Mairena's defense of flamenco values against mixtification",
+        "rationale": "The passage draws a boundary between true flamenco values and damaging mixtification, legitimating Mairena as a restorer of proper flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The ending says Mairena created a school, but in the visible excerpt this mainly supports canon status rather than explicit teaching authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Antonio Mairena and his flamenco values",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to visible beginning/window/ending text."
+  }
+]

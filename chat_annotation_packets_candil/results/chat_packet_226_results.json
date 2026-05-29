@@ -1,0 +1,273 @@
+[
+  {
+    "article_id": "1991-01-3-right-flamenco-y-marginalidad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "hacemos del protagonismo andaluz sobre cualquier otro, en la génesis y posterior desarrollo del flamenco, con todos los acentos gitanos que se quieran",
+        "target": "Andalusian and Gitano identity in flamenco origins/development",
+        "rationale": "The passage uses Andalusian and Gitano identity categories to define who centrally embodies and grounds flamenco's historical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "a través de lo jondo, puede retomarse el hilo conductor de la historia y de la cultura andaluzas",
+        "target": "lo jondo as continuity with Andalusian history and culture",
+        "rationale": "The text grounds flamenco value in continuity with Andalusian cultural history."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "se ha producido, se está produciendo, el reconocimiento institucional del flamenco, como legado de la cultura específicamente andaluza",
+        "target": "institutional recognition of flamenco as Andalusian cultural legacy",
+        "rationale": "Official recognition is presented as authorizing flamenco's public cultural status as an Andalusian legacy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article strongly criticizes identifying flamenco with marginality, but the clearer discourse function is identity, continuity, and institutional heritage recognition rather than aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["tradition", "heritage", "community"],
+      "target": "flamenco as Andalusian cultural expression rather than marginal-only practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The piece contests a marginality reduction while positively grounding flamenco in Andalusian cultural continuity and institutional recognition."
+  },
+  {
+    "article_id": "1991-01-5-right-viejo-carn-flamenco-pepe-el-de-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "«El cante es cantar con melodía musical una copla literaria concreta»... dicho a su edad lo debe escuchar la juventud con rango de cañón",
+        "target": "Pepe el de la Matrona's definition of cante",
+        "rationale": "A senior flamenco figure's definition is positioned as authoritative knowledge that younger listeners should heed."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Son los dos últimos maestros que tenemos a mano y es cuestión de retener esos rasgos suyos",
+        "target": "Pepe and Aurelio as exemplary masters",
+        "rationale": "The passage canonizes these figures as last available masters whose traits should be retained."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "el folklore debe de ser materia de estudio desde la educación primaria. Sería la única forma de conservar la tradición",
+        "target": "formal study of folklore/flamenco tradition",
+        "rationale": "The text frames institutional education from primary school as the means of conserving tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "me declaro enemigo de Pepe Marchena y la Opera Flamenca. Marchena ha paralizado el cante. Le ha hecho un daño infinito",
+        "target": "Pepe Marchena and Opera Flamenca",
+        "rationale": "The passage uses critical authority to police a damaging boundary around improper or harmful flamenco influence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Ordóñez is called an extraordinary aficionado, but the visible passage does not clearly make afición itself the basis of authority beyond biographical praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The ending classifies cantes and mentions compás, but the visible evidence is more taxonomic than a fully developed aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "criticism", "tradition"],
+      "target": "Pepe/Aurelio as authoritative masters and Marchena/Opera Flamenca as damaging influence",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible windows contain enough evidence for pedagogical authority, canonization, institutional learning, and critical boundary-policing."
+  },
+  {
+    "article_id": "1991-01-10-left-carta-abierta-a-agust-n-g-mez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Este «tercer tirón» fue obra mía, como responsable de Candil y tenedor del manuscrito, y lo hice siguiendo y respetando la cronología que, previamente, había establecido el maestro",
+        "target": "editorial handling of Viejo Carné Flamenco",
+        "rationale": "The writer asserts editorial authority and documentary control to correct another critic's interpretation of a flamenco publication."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Candil únicamente ha sido y seguirá siendo considerada con el flamenco y los flamencos",
+        "target": "Candil's relationship to flamenco and flamencos",
+        "rationale": "The passage evaluates and defends the publication's stance against the charge of alignment with an officialist flamenco regime."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word maestro is used for Anselmo González Climent, but the passage concerns editorial chronology and revision rather than teaching authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Respecting manuscript chronology is not enough to make a tradition-continuity claim about flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "Candil's editorial legitimacy and interpretation of González Climent's manuscript",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is mainly a polemical editorial correction; codes are limited to the visible critical/editorial authority claims."
+  },
+  {
+    "article_id": "1991-01-11-left-fernanda-y-bernarda-homenaje-nac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el cante... ha llevado a dos artistas, Fernanda y Bernarda, a la cima del reconocimiento y la admiración general",
+        "target": "Fernanda and Bernarda",
+        "rationale": "The homage elevates the artists to a high canonical position of recognition and admiration."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "No faltó nadie, socios de todas las peñas provinciales, instituciones jiennenses como el Gobierno Civil, Diputación, Ayuntamiento o Delegación de Cultura, y, ¿cómo no?, la Junta de Andalucía",
+        "target": "public and institutional recognition of the homage",
+        "rationale": "The passage emphasizes official and civic institutional participation as part of the artists' public cultural recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "en nombre de vosotras y en el de la gran familia del flamenco verdad",
+        "target": "Fernanda and Bernarda within flamenco verdad",
+        "rationale": "The phrase situates the honorees within a community of true flamenco, authorizing their status as genuinely flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Quienes expresan con intensidad y penetración los auténticos sentimientos de la tradición familiar",
+        "target": "Fernanda and Bernarda's expression of family tradition",
+        "rationale": "Their value is grounded in expressive continuity with family tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas, readers, and family are present, but the strongest visible function is homage/canonization rather than community authority to judge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article foregrounds Gitano and female identities, but the cited evidence does not clearly develop identity categories as an analytical authority structure beyond representation in the homage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "heritage", "authenticity", "tradition"],
+      "target": "Fernanda and Bernarda as canonical representatives of flamenco verdad and family tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The truncated excerpt still contains clear homage discourse, canonical elevation, institutional recognition, and authenticity/tradition claims."
+  },
+  {
+    "article_id": "1991-01-13-left-gabriel-moreno",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Es, quizás, uno de los más fieles seguidores de la escuela de Tomás Pabón y su hermana Pastora. Heredero nato de la singularidad cantaora de su madre",
+        "target": "Gabriel Moreno's artistic lineage",
+        "rationale": "The passage positions Moreno within an exemplary school and inherited line, creating a hierarchy of artistic reference."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Ya de pequeñito yo estoy oyendo cantar a mi madre desde siempre... y ya la vocación me nace a mí",
+        "target": "Gabriel Moreno's familial learning from his mother",
+        "rationale": "Flamenco knowledge and vocation are framed as transmitted through childhood listening within the family."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Tú sabes que a veces se tiene la voz bonita pero falta esa garra. Ella no, tenía un fuelle inacabable, una capacidad y una memoria musical extraordinarias",
+        "target": "Moreno's mother's singing",
+        "rationale": "The speaker applies aesthetic criteria such as garra, vocal force, capacity, and musical memory to evaluate flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Actualmente yo no veo a nadie para darle la llave del flamenco... la llave, en todo caso se podría partir y hacer cachitos y repartirla",
+        "target": "the llave del flamenco as a ranking/canonical award",
+        "rationale": "The speaker contests the possibility of a single current canonical recipient and reframes recognition as divisible by style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Linares/Málaga identity and family origin are discussed, but much of it is biographical self-location rather than a clear authority claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The statement that cante has no doors rejects gatekeeping, but it does not construct a stable insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "pedagogy", "tradition"],
+      "target": "Gabriel Moreno's lineage and the contested hierarchy of flamenco recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The first CRIT_03 code concerns Moreno's lineage; the second concerns the contested llave del flamenco hierarchy, so both are retained as distinct canonical-ranking functions."
+  }
+]

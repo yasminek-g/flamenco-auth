@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "1980-07-8-right-a-prop-sito-del-viii-congreso-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el VIII Congreso de Actividades Flamencas no brilló, ni pasará a la historia por la altura y categoría de las ponencias presentadas; faltó, evidentemente, criterio y firmeza",
+        "target": "VIII Congreso de Actividades Flamencas and its papers",
+        "rationale": "The passage explicitly evaluates the congress, criticizing the quality of papers and selection criteria while later giving an overall positive assessment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "¿puede tener en este u otro Congreso significado unívoco la expresión «conservar la pureza del flamenco»?. Ciertamente, no.",
+        "target": "claims about conserving flamenco purity",
+        "rationale": "The article directly contests purity boundary-work by questioning whether preserving flamenco purity has a single legitimate meaning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "lo más importante, ha sido el encuentro... entre aficionados, entre hombres preocupados, desde concepciones dispares, por custodiar la puridad de un arte",
+        "target": "aficionados gathered at the congress",
+        "rationale": "Aficionados are presented as the community whose encounter and contemplative concern sustains flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article uses preservation language, but the visible claim centers on contested purity and aficionado contemplation rather than tradition, roots, or continuity with a valued past."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "the congress as a site for aficionado encounter and debated purity claims",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-07-9-left-las-letras-flamencas-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Francisco Vélez Nieto es un poeta de incuestionable raíz y compromiso popular... CANDIL publica algunas de sus letras en las que son palpables sus voces flamencas y sus ecos machadianos.",
+        "target": "Francisco Vélez Nieto's flamenco lyrics",
+        "rationale": "The introductory note evaluates the poet and authorizes the published lyrics by attributing palpable flamenco voices and literary echoes to them."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word 'raíz' appears, but it characterizes the poet's popular commitment rather than grounding flamenco value in tradition or continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poems invoke pueblo, Andalusians, work, and misery, but the visible text does not clearly use identity groups to authorize flamenco belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the published lyrics as flamenco-inflected poetry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-07-10-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una auténtica riada de lo que podría denominarse como ilustres bagatelas... una farragosa seudoerudición inoperante",
+        "target": "intellectual and pseudo-erudite interpretations of flamenco history",
+        "rationale": "The passage uses critical authority to delegitimate pseudo-erudite writing about flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "surgió una no muy novedosa historia mágica del cante... resultaría ser una novela... escrita... «para rellenar horas de tertulias a la page de tíos majos»",
+        "target": "the 'historia mágica del cante' and its source text",
+        "rationale": "The author explicitly evaluates and dismisses the magical history as unserious and novelistic rather than rigorous flamenco scholarship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The excerpt discusses flamenco's past and historical coordinates, but it does not clearly use continuity or roots to authorize present flamenco practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The critique rejects ideological interpretations, but the boundary is primarily scholarly/critical rather than a purity boundary around legitimate flamenco itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "magical and pseudo-erudite histories of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted critical codes."
+  },
+  {
+    "article_id": "1980-07-12-right-manuel-vallejo-o-el-ruise-or-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Manuel Vallejo tuvo los defectos y virtudes que encarnan a toda persona, pero como artista fue perfecto",
+        "target": "Manuel Vallejo as an artist",
+        "rationale": "The passage makes a direct evaluative judgment about Vallejo's artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "¿por qué a Vallejo no le pagamos la deuda que los puros aficionados tenemos contraída con él? ¿Por qué no creamos una Peña flamenca que lleve el nombre inmenso de Manuel Vallejo?",
+        "target": "Manuel Vallejo's canonical status",
+        "rationale": "The article elevates Vallejo as a figure owed collective recognition and worthy of institutional commemoration through a peña bearing his name."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "la deuda que los puros aficionados tenemos contraída con él... Los hijos de Sevilla, tienen la palabra.",
+        "target": "pure aficionados and the people of Seville",
+        "rationale": "The passage assigns responsibility for recognizing Vallejo to the aficionado community and local civic community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call to create a peña in Vallejo's name has memorial force, but the excerpt does not clearly frame it as public heritage or safeguarding discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author corrects unnamed scholars with documentary evidence, but the stronger visible discourse is artistic evaluation and canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Manuel Vallejo's artistic and commemorative authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1980-07-13-right-noticia-de-los-caf-s-cantantes-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La gran época dorada del cante flamenco... debe ser centrada en torno a los cafés cantantes",
+        "target": "the café cantante period in flamenco history",
+        "rationale": "The passage constructs a historical hierarchy by naming the café cantante era as flamenco's golden age."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Importancia decisiva en este ambiente flamenco, ¡cómo no!, tuvo —junto a los mineros— la comunidad gitana",
+        "target": "the Gitano and mining communities of La Carolina",
+        "rationale": "The article frames local identity groups as decisive in shaping the city's flamenco environment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article narrates historical origins and continuity of cafés cantantes, but it mainly periodizes and documents local history rather than using tradition to authorize present practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The account preserves local memory of vanished venues, but it lacks explicit heritage, safeguarding, or public-culture framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Some venues are described favorably, but those judgments are incidental to the broader historical account."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "La Carolina's café cantante history and local flamenco communities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

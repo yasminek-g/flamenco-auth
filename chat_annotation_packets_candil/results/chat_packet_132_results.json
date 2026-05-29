@@ -1,0 +1,262 @@
+[
+  {
+    "article_id": "1986-05-17-right-el-peso-de-una-localidad-cantaor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Alcalá tiene un público entendido y respetuoso... sepa escuchar, y a la vez que escucha sepa discernir, digerir y saber lo que escucha",
+        "target": "el público flamenco de Alcalá",
+        "rationale": "The local audience is presented as knowledgeable and able to judge flamenco, granting community-based authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "en Alcalá siempre ha existido una buena escuela de cante, cuyos alumnos muy aventajados...",
+        "target": "la escuela cantaora de Alcalá",
+        "rationale": "The article grounds Alcalá's present flamenco weight in a continuing local school and lineage of singers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Alcalá de Guadaira tiene un gran peso específico en el ámbito del cante flamenco... Alcalá... causa un respeto imponente",
+        "target": "Alcalá de Guadaira as a cante locality",
+        "rationale": "The locality is elevated within the hierarchy of flamenco places through claims of weight and imposing respect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions a school and pupils, but the visible passage functions more as local lineage/canonization than as explicit embodied or oral transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Alcalá de Guadaira's authority as a flamenco/cante locality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-05-18-left-m-s-sobre-el-ni-o-de-alcal-y-el-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "puede inducir a equivocación a todo aficionado poco adentrado en estos temas",
+        "target": "less initiated aficionados interpreting cantaor names",
+        "rationale": "The passage distinguishes less knowledgeable aficionados from those sufficiently initiated to interpret the issue correctly."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los que nos dedicamos a investigar la vida de los artistas... nunca nos presentaremos, a sabiendas, a ofrecer a nuestros lectores versiones que vayan en contra de la verdad",
+        "target": "researchers writing artists' biographies",
+        "rationale": "The author positions biographical investigators as responsible expert mediators whose authority depends on truthful versions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Truth language concerns factual biographical accuracy, not authenticity or genuineness of flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The caller is praised as a great aficionado, but the passage does not clearly grant him broader community authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "correct identification and biographical knowledge about Niño de Alcalá and El Sevillanito",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only from the visible correction and research-authority passages."
+  },
+  {
+    "article_id": "1986-05-19-left-un-adi-s-a-manolo-heras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Entre tanto, medio mundo supo de su buen hacer",
+        "target": "Manolo Heras's flamenco artistry",
+        "rationale": "The obituary explicitly evaluates Heras's artistic work as recognized for its quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The obituary remembers an artist and mentions history, but it does not clearly frame this as safeguarding, collective heritage, or public memory-work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase about keeping his flamenco spirit alive is expressive biography, not a clear claim of genuine or proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo Heras",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-05-19-right-los-fandanguillos-de-huelva",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Ningún artista foráneo —repito— podrá interpretarlo en su más prístina pureza por muy buen cantaor que sea",
+        "target": "foráneo interpretations of Huelva fandanguillo",
+        "rationale": "The article draws a purity boundary around who can faithfully and properly interpret Huelva fandanguillo."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "el artista tiene que haber nacido y haberse criado en cualquier pueblo de los enumerados",
+        "target": "artists authorized to sing Huelva fandanguillo",
+        "rationale": "Birth and upbringing inside the listed Huelva towns are made conditions for legitimate knowledge and performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ambos se tutean en los escenarios, porque los dos son parejos en grandeza, flamenquismo y «jondura»",
+        "target": "Huelva fandanguillos and Málaga fandangos",
+        "rationale": "The passage applies aesthetic criteria of greatness, flamenquismo, and jondura to judge the cantes as equal in value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "en Huelva tienen sus cantes propios... tienen sus cantes propios, Alosno... Valverde y Cabezas Rubias",
+        "target": "Huelva's local cantes",
+        "rationale": "The article grounds flamenco value in local origin and rooted repertoire specific to Huelva towns."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article rejects inferiority and asserts equivalence, but the stronger evidence is aesthetic criteria and boundary work rather than canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Huelva fandanguillos as locally rooted, pure, and aesthetically equal cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-05-20-left-hablan-las-pe-as-concurso-de-can",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "La Tertulia se preocupa de estudiar los cantes, tono por tono, con todo el rigor y seriedad que nuestro arte merece",
+        "target": "Tertulia Flamenca de Badalona's study of cantes",
+        "rationale": "The tertulia is framed as an organized setting for rigorous study and mediation of flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la elevada calidad de los mencionados cantaores... Manolo Simón, vino, cantó, se entregó y convenció",
+        "target": "the local singers and Manolo Simón",
+        "rationale": "The passage explicitly evaluates the quality and success of the performances."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "un cantaor, con sonidos del Torre, de los Agujetas y Chocolate, la más pura y rancia escuela jerezana",
+        "target": "Manolo Simón and the Jerez school",
+        "rationale": "The singer is legitimized through association with a pure and old Jerez school of flamenco sound."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "han sido designados Presidente de Honor... y Director Honorario... en atención a los méritos que en los mismos concurren por su brillante actividad",
+        "target": "Anselmo González Climent and Fosforito",
+        "rationale": "Honorary titles are conferred on named figures because of their intellectual and artistic merits, creating an institutional hierarchy of prestige."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Cátedra confers institutional honors, but the visible text does not explicitly frame flamenco as heritage or patrimony."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and tertulias appear throughout, but most mentions are organizational notices; the clearer function is study, evaluation, and institutional prestige."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "peña/tertulia flamenco activity, Manolo Simón, and institutionally honored flamenco figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

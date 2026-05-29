@@ -1,0 +1,262 @@
+[
+  {
+    "article_id": "1986-05-6-right-artistas-flamencos-en-ceuta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Ceuta goza de una rancia tradición flamenca",
+        "target": "la tradición flamenca de Ceuta",
+        "rationale": "The passage grounds Ceuta's flamenco value in an established local tradition and historical continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "convivieron alrededor de un selecto grupo de aficionados, civiles y militares, que en cierto modo ejercieron un mecenzago meritorio",
+        "target": "aficionados ceutíes",
+        "rationale": "The local group of aficionados is presented as a sustaining and legitimating social network for flamenco artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Macandé... adquirió popularidad por la manera personal, sensible y con garra, de cantar el fandango",
+        "target": "Macandé y su fandango",
+        "rationale": "The passage evaluates the singer's artistic manner through qualities of personality, sensitivity, and force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Mentions of gitano and family identity are mainly biographical and do not clearly organize authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Ceuta as a historically meaningful flamenco setting and its associated artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations use only visible local-history and evaluation spans."
+  },
+  {
+    "article_id": "1986-05-8-left-el-flamenco-afluente-del-r-o-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "tanta ignorancia y mala fe acerca de un tema sobre el cual el frívolo escritor de la «jet» madrileña parece desconocerlo todo",
+        "target": "Francisco Umbral's claim about flamenco",
+        "rationale": "The author uses critical authority to delegitimate an outsider's statement as ignorant and malicious boundary-crossing commentary on flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la fidelidad sin quiebras a la entraña del pueblo andaluz del que procede",
+        "target": "flamenco's relation to the Andalusian people",
+        "rationale": "Flamenco is framed as proceeding from and remaining faithful to the Andalusian people, making collective identity central to its authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "nuestro arte participa de las convulsiones e inquietudes de aquella",
+        "target": "flamenco as historical art",
+        "rationale": "The passage asserts flamenco's proper seriousness and historical participation against the claim that it is merely aesthetic refuge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes origins in the Andalusian people, but the visible evidence works more as identity and authenticity defense than tradition-continuity argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "flamenco as historically serious Andalusian art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a rebuttal; codes reflect the visible defense of flamenco against Umbral's disparaging formulation."
+  },
+  {
+    "article_id": "1986-05-9-left-por-fin-flamencolog-a-y-flamenc-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la bendita RAE terminaría por consagrar el vocablo flamencólogo y todos los derivados de flamencología",
+        "target": "the terms flamencólogo and flamencología",
+        "rationale": "The RAE is invoked as an official expert authority that legitimates and delimits flamenco-critical terminology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "pretendían establecer un linaje doctoral al que se accedía por la puerta falsa de la propia egolatría",
+        "target": "self-styled flamencologists",
+        "rationale": "The passage attacks a hierarchy of scholarly prestige claimed by flamencologists and challenges their elevated status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "la carta de legitimidad concedida lo ha sido mesurada y ajustadamente",
+        "target": "official recognition of flamencología/flamencólogo",
+        "rationale": "The passage explicitly treats the RAE's recognition as a measured grant of legitimacy for flamenco-related terminology."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Definitions mention knowledge and expertise, but the passage does not frame teaching or transmission of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamencology terminology and self-authorizing flamencologists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is about authorized terminology and the limits of expert status, not a neutral dictionary notice."
+  },
+  {
+    "article_id": "1986-05-9-right-paco-de-luc-a-un-guitarrista-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Mi padre fue el que me obligó a tocar la guitarra de chiquitito.",
+        "target": "Paco de Lucía's early guitar formation",
+        "rationale": "The passage frames Paco's flamenco knowledge as family-based, intergenerational, and embodied from childhood."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "para mí Camarón es el mejor que ha salido en toas las épocas",
+        "target": "Camarón",
+        "rationale": "The speaker explicitly ranks Camarón above all other singers across periods."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Un artista de la calidad de Paco de Lucía... ha de mantener las cotas de popularidad y buen hacer con su guitarra",
+        "target": "Paco de Lucía",
+        "rationale": "The interviewer evaluates Paco's artistic quality, popularity, and guitar mastery."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición is mentioned in questions and in reference to aficionados, but the visible passage does not make aficionados the source of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Paco de Lucía's formation and Camarón's canonical status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated interview; codes are limited to visible formation and ranking claims."
+  },
+  {
+    "article_id": "1986-05-11-left-flamenco-y-tradiciones-musicales",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "de recibir muchas lecciones de él, porque sabía mucho",
+        "target": "Antonio Mairena as a source of flamenco knowledge",
+        "rationale": "Mairena is positioned as someone whose knowledge authorizes lessons and understanding of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ver qué es lo que había mudado en cada uno de ellos, porque así tendríamos una idea de su línea estética",
+        "target": "Antonio Mairena's cante",
+        "rationale": "The passage proposes aesthetic criteria for judging Mairena's creative changes across recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio era un real, enorme creador de cantes festeros",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena as a major creator and exemplary figure in cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "este artículo de Vallecillo, sí es fundamental, sí es básico, sí señala un nuevo camino",
+        "target": "Francisco Vallecillo's article on Antonio Mairena",
+        "rationale": "The speaker explicitly evaluates Vallecillo's article as fundamental and methodologically important."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The proposed comparison of recordings suggests a research method, but not institutional or transnational access to flamenco learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and Vallecillo's interpretive approach",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the title contains tradition language, the visible discourse centers on Mairena's aesthetic creativity and interpretive method."
+  }
+]

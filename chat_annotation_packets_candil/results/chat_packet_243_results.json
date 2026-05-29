@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "1991-11-11-right-cr-nica-del-xix-congreso-de-acti",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "muestra exquisita, más de sombras que de luces, más de gestos expresivos que de poses académicas",
+        "target": "David Zaafra's flamenco- and bullfighting-inspired pictorial exhibition",
+        "rationale": "The passage explicitly evaluates the exhibition's artistic quality and expressive character."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "llenaron de hermosura ese errabundo caminar del sabio Fernando a través de nuestras quimeras",
+        "target": "Fernando Lastra's illustrated conference with Joselete and Paco Serrano",
+        "rationale": "The article applies aesthetic criteria of beauty, wisdom, and jondo depth to evaluate the congress performance-conference."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "un peregrinar a través del cante de nuestra tierra",
+        "target": "Andalusian cante and congress participants",
+        "rationale": "The phrase frames flamenco through a collective territorial identity, presenting cante as belonging to 'our land'."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The visible text mentions borders and opening frontiers, but these are metaphorical/geographical rather than a clear insider-outsider boundary around flamenco authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The city is described as intimist and cordial, but intimacy is attached to local hospitality rather than to flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the congress's artistic events, Andalusian cante, and flamenco community gathering",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; emitted codes rely on visible evaluative and collective-identity language."
+  },
+  {
+    "article_id": "1991-11-14-right-d-nde-moraron-los-duendes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el panorama artístico actual no es muy brillante",
+        "target": "current flamenco artistic panorama at congress performances",
+        "rationale": "The passage makes a direct negative evaluative judgment about the quality of the current artistic scene."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "he de reiterar mi desacuerdo con la actual denominación del festival más importante que se celebra durante el congreso: «Festival de Cantes Autóctonos»",
+        "target": "the festival denomination 'Festival de Cantes Autóctonos'",
+        "rationale": "The reviewer uses critical authority to contest a naming/category boundary for the congress festival."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "adoleció de la garra y el quejío necesarios",
+        "target": "the reviewed flamenco performance",
+        "rationale": "The passage judges performance quality through flamenco aesthetic criteria such as garra and quejío."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions provincial roots, but mainly to dispute an event label rather than to authorize flamenco value through rooted continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The audience is described as 'público generalmente entendido', but it is a contextual explanation rather than a claim that aficionados possess authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the congress festival format, its naming, and specific performances",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a strongly evaluative review; roots language is treated as contested festival framing, not a straightforward tradition claim."
+  },
+  {
+    "article_id": "1991-11-17-left-el-flamenco-evoluci-n-y-tradici-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el flamenco se ha visto sacudido siempre entre los dos polos opuestos: tradición y cambio",
+        "target": "flamenco's historical development",
+        "rationale": "The passage explicitly frames flamenco through the tension between tradition and change as a condition of its existence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Entre dichos criterios, que quedan por estudiar y definir de manera rigurosa, pueden considerarse como básicas las oposiciones siguientes",
+        "target": "criteria for defining what belongs within flamenco",
+        "rationale": "The author asserts expert classificatory authority by calling for rigorous criteria to define flamenco's boundaries."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "concepción modal y concepción tonal de la música... Cantos largos sin compás y cantos silábicos de compás binario o ternario",
+        "target": "flamenco musical forms and boundaries",
+        "rationale": "The passage names technical aesthetic criteria used to distinguish and define flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The essay is explanatory and classificatory, but the visible text does not clearly foreground teaching access, institutional pedagogy, or transnational learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The word 'fuera' appears in a classificatory phrase about what is left outside flamenco, but the boundary is stylistic/technical rather than social insider-outsider belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco as a historically evolving but definable musical art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible ending supplies explicit definitional criteria."
+  },
+  {
+    "article_id": "1991-11-19-left-ensayo-de-una-tipolog-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "enriquecer la herencia de los maestros del pasado",
+        "target": "flamenco innovation and inherited tradition",
+        "rationale": "The passage legitimates innovation by framing it as enrichment of inherited tradition from past masters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "ese otro aficionado que se arroga la autoridad de decir con el mayor dogmatismo: Esto sí es flamenco y eso no",
+        "target": "dogmatic aficionados who police flamenco boundaries",
+        "rationale": "The passage explicitly critiques boundary-policing claims about what is or is not flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "algunos aficionados, esos que se autodefinen como aficionados de siempre, peñistas cabales",
+        "target": "self-defined lifelong aficionados and peña members",
+        "rationale": "The passage identifies aficionados and peñistas as a community claiming authority over flamenco judgment, even while criticizing that authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text denies that added instruments adulterate cantes, but the central discourse is critique of dogmatic boundary policing rather than the author's own purity boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Mairena learning the siguiriya from Pepe Torre indicates transmission, but the visible passage emphasizes creative recreation more than embodied/oral lineage authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "innovation in flamenco and anti-innovation aficionado authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The essay explicitly contests purist aficionado authority while legitimating innovation through continuity with inherited forms."
+  },
+  {
+    "article_id": "1991-11-22-left-villancicos-de-francisco-almagro",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text consists of villancico lyrics without clear evaluative, authorizing, pedagogical, critical, or boundary-making discourse."
+  }
+]

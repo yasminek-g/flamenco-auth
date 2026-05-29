@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1982-01-8-right-cuatro-episodios-ineditos-en-la-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "el café cantante de Sevilla que recogía el mejor aliento de lo jondo verdad",
+        "target": "el café cantante de Sevilla y el cante jondo asociado a Manuel Torre",
+        "rationale": "The passage presents the café and Torre's context as carrying the truthful essence of jondo flamenco, not merely as a neutral venue description."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "un enigmático duende desbordándosele en la voz",
+        "target": "la voz y el cante de Manuel Torre",
+        "rationale": "Duende is used as an aesthetic criterion to explain the exceptional force of Torre's performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Al día siguiente, y en los sucesivos, ya buscan a Manuel los buenos aficionados.",
+        "target": "Manuel Torre",
+        "rationale": "Knowledgeable aficionados are positioned as the community whose recognition confirms Torre's flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The final anecdote canonizes Torre indirectly, but the hierarchy/ranking function is less explicit than the direct aesthetic and community-recognition evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Manuel Torre and his jondo cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes rely only on the visible excerpt."
+  },
+  {
+    "article_id": "1982-01-9-right-el-alma-de-la-copla-de-guerrita-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "fue el cuadro flamenco más popular y de mayor éxito artístico y económico de la década de los años treinta",
+        "target": "El Alma de la Copla",
+        "rationale": "The passage explicitly evaluates the work's artistic success and status within its decade."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "justa en su estilo y medida musical, a la vez que muy preciosista y dulce",
+        "target": "la siguiriya de Gabriel (Guerrita)",
+        "rationale": "The passage judges the interpretation through aesthetic criteria of style, musical measure, preciosity, and sweetness."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "cuando Dios lo echó al mundo, dijo: «Ahí va un flamenco de los pies a la cabeza». Y el que nace flamenco lo es aquí y en la «Onza de Oro» y en el Palacio Episcopal.",
+        "target": "Fernando Alcolea / the figure described as born flamenco",
+        "rationale": "The excerpt defines flamenco belonging as innate and total, presenting the person as genuinely flamenco across contexts."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The visible text contains identity language around being 'flamenco', but it does not clearly organize an ethnic, gendered, local, or community identity category beyond an individual authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "El Alma de la Copla and selected performers within it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes rely only on the visible excerpt."
+  },
+  {
+    "article_id": "1982-01-11-left-en-torno-al-x-congreso-de-activi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el Cante Jondo... sigue siendo una manifestación cultural desconocida, e incluso menospreciada",
+        "target": "Cante Jondo",
+        "rationale": "The passage frames cante jondo as public cultural value that has been neglected by official and elitist culture."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Expandir vivencias y apreciaciones sensibilizadas respecto al Cante Jondo, y difundir el conocimiento exacto de este arte",
+        "target": "X Congreso de Actividades Flamencas",
+        "rationale": "The congress is framed as an institutional mechanism for expanding access to flamenco knowledge and understanding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "una cultura singularísima, y sistemáticamente oscurecida por el mercado del consumo, por la alienación colectiva",
+        "target": "Cante Flamenco / Cante Jondo",
+        "rationale": "The text treats the consumer market as a force that obscures a singular popular culture, linking market forces to cultural loss."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique of official, elitist culture is strong, but it targets broader cultural institutions rather than a critic/expert authority or a flamenco boundary-policing act."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Cante Jondo as popular Andalusian culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-01-11-right-las-letras-flamencas-de-alfonso-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nos deparan una auténtica sorpresa literaria",
+        "target": "los cantes inéditos de Alfonso Canales",
+        "rationale": "The passage explicitly praises the literary value of Canales's flamenco lyrics."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "los ecos, genuinamente flamencos, verdadera asunción de los populares",
+        "target": "las coplas de Alfonso Canales",
+        "rationale": "The article attributes genuine flamenco quality to the lyrics through their assumed popular echoes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una de las más sobresalientes de la poesía española contemporánea",
+        "target": "la obra poética de Alfonso Canales",
+        "rationale": "The passage places Canales's work in a high-status hierarchy within contemporary Spanish poetry, supporting canonizing evaluation around the author being presented."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Hondura and jondo appear, but the clearest evaluative work is broader literary praise and authenticity rather than a specific flamenco aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Alfonso Canales's flamenco lyrics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-01-12-left-escenario",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem mentions duende, but it does not explicitly use it as a critical criterion to judge or define flamenco value under the annotation rules."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic depiction without clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  }
+]

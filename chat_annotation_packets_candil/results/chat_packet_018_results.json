@@ -1,0 +1,293 @@
+[
+  {
+    "article_id": "1980-11-19-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "«El Rojo el Alpargatero», está considerado como el definitivo estructurador de los cantes levantinos y mineros.",
+        "target": "Rojo el Alpargatero's status in cantes levantinos and mineros",
+        "rationale": "The passage canonizes Rojo el Alpargatero by presenting him as the definitive structuring figure for these styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "grandes figuras del cante pasaron por su casa para, en profundidad, familiarizarse con sus cantes y letras. El más sonado de estos fue don Antonio Chacón, que de «El Rojo el Alpargatero» aprendió muchos de los estilos levantinos",
+        "target": "Rojo el Alpargatero as transmitter of cantes levantinos",
+        "rationale": "The passage frames flamenco knowledge as learned directly through contact with Rojo and his repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "tienen el auténtico aire jerezano, pero atemperado por la profundidad de los viejos estilos trianeros",
+        "target": "Loco Mateo's siguiriyas",
+        "rationale": "The passage applies aesthetic criteria of authentic local air and depth to evaluate Loco Mateo's style."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "todo el que hoy aspira a realizar los cantes puros de esta licalidad, trata de beber en las fuentes de Joaquín y sus discípulos",
+        "target": "Joaquín el de la Paula and his disciples as sources for Alcalá soleares",
+        "rationale": "The text grounds present practice in continuity with earlier sources and disciples as authoritative roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "diez o doce cantes que son la más excelsa representación de la soleá",
+        "target": "the Alcalá soleares associated with Joaquín el de la Paula",
+        "rationale": "The passage constructs a hierarchy by presenting these cantes as the highest representation of soleá."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'cantes puros' appears, but the visible passage mainly uses it to mark source-continuity rather than to exclude impure or illegitimate forms."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Joaquín is identified as gitano, but the identity label is incidental and does not clearly organize authority or belonging in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "canonical masters and lineages of cantes levantinos, siguiriyas, and soleares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-02-3-left-revista-de-flamenco-pe-a-flamenc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "muchos de ellos versan sobre materia controvertida, y por ello invita a los estudiosos de estos temas al debate sobre los mismos",
+        "target": "debate among scholars of flamenco topics",
+        "rationale": "The note positions scholarly debate as an appropriate way to handle contested flamenco questions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peña Flamenca appears in the masthead, but this is metadata-like publication context, not community authority discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "controversial flamenco topics in signed articles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Very short editorial notice; only one modest but clear critical-authority/debate code is emitted."
+  },
+  {
+    "article_id": "1981-02-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "con Pepe el de la Matrona, de algún modo, se ha apagado el último quejó trianero, el último rompimiento de vida, la última verdad palpitante del cante",
+        "target": "Pepe el de la Matrona's place in flamenco history",
+        "rationale": "The editorial canonizes Matrona as the final living embodiment of a Triana-linked cante tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la última verdad palpitante del cante",
+        "target": "Pepe el de la Matrona's cante",
+        "rationale": "The passage presents Matrona as an embodiment of true, living cante."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "el poso, que dejara José Núñez en la memoria y el corazón de cada uno de los autores",
+        "target": "collective memory of Pepe el de la Matrona",
+        "rationale": "The issue is framed as memorial work preserving Matrona's impact in the memory and hearts of witnesses."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "el juicio y la perspectiva de muy calificados estudiosos del flamenco sobre el viejo maestro",
+        "target": "qualified scholars' judgments on Pepe el de la Matrona",
+        "rationale": "The editorial invokes qualified flamenco scholars as authoritative voices for judging and contextualizing Matrona."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "hizo del cante crónica puntual de vida, y de su vida, pudimos colegir la misma definición, integral y mágica, del cante",
+        "target": "Pepe el de la Matrona's cante as an aesthetic model",
+        "rationale": "The passage defines flamenco value through cante as lived chronicle and integral magical expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The editorial strongly evokes continuity and old masters, but the clearer functions are authenticity, canonization, and memorialization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "Pepe el de la Matrona as an authentic and canonical embodiment of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-02-4-right-biografia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Obtiene el Premio de la Cátedra de Flamencología de Jerez.",
+        "target": "Pepe el de la Matrona's institutional recognition",
+        "rationale": "The biography records formal recognition by a flamencology institution, conferring authorized cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Es nombrado presidente de honor del cincuentenario del Concurso de Granada.",
+        "target": "Pepe el de la Matrona's honorary status in the Concurso de Granada commemoration",
+        "rationale": "The passage marks honorary status within a major flamenco commemorative context, elevating him within the canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The biography mentions university performances and international travel, but it does not clearly frame these as learning or access to flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text says he sang for groups of aficionados, but this is a neutral career note without clear community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Pepe el de la Matrona's recognized flamenco career",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Chronological biography is mostly neutral; codes are limited to explicit recognition and honorific status."
+  },
+  {
+    "article_id": "1981-02-5-right-el-matrona-en-su-sitio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el grito terrible de su añeja soleá-petenera de Triana, y el primor emocional de sus livianas y serranas",
+        "target": "Pepe el de la Matrona's recorded cante",
+        "rationale": "The passage explicitly evaluates Matrona's singing through expressive force and emotional refinement."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el jondón de arte y de saberes que se apretaba en la garganta y en el corazón del veterano artista",
+        "target": "Pepe el de la Matrona's artistic knowledge and depth",
+        "rationale": "The author applies depth, artistry, and knowledge as criteria for flamenco value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "cantaor enciclopédico, pragmático muestrario ambulante de estilos perdidos, o en trance de perderse, y por él rescatados y devueltos",
+        "target": "Pepe el de la Matrona as rescuer of endangered styles",
+        "rationale": "The passage frames Matrona as safeguarding and restoring styles that were lost or in danger of being lost."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "en la misma línea de conservaciones y restituciones cantaoras que seguirían, después de Silverio, un Chacón, un Antonio Mairena y, en cierto modo hoy, un Menese",
+        "target": "Pepe el de la Matrona within a lineage of major flamenco conservation figures",
+        "rationale": "The text places Matrona in a canonical lineage alongside Silverio, Chacón, Mairena, and Menese."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Cantaor, Pepe el de la Matrona, de reuniones y no de teatros, salvo en muy contadas ocasiones",
+        "target": "Matrona's preferred performance setting",
+        "rationale": "The passage gives value to Matrona's identity as a singer of intimate gatherings rather than theaters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The 'reuniones y no de teatros' contrast suggests intimate authenticity, but the passage does not explicitly frame theaters or publicity as weakening authenticity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The lineage of conservation is present, but the visible text stresses safeguarding and canon more than direct teaching or embodied transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "community"
+      ],
+      "target": "Pepe el de la Matrona as an artist, conservator, and canonical figure",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

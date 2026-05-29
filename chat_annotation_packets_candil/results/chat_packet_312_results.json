@@ -1,0 +1,222 @@
+[
+  {
+    "article_id": "1995-11-10-right-ni-de-varea-ni-de-el-ni-o-le-n-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "un aficionado del Río Tinto de gran categoría, nada menos que D. Manuel Gómez Vélez \"Manolo el de Huelva\" ... excelente entendido, \"conocedor profundo del Cante\"",
+        "target": "Manolo el de Huelva as authoritative witness on the fandango's authorship",
+        "rationale": "The passage grants authority to an aficionado/connoisseur whose standing and deep knowledge validate the attribution claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Este es, en definitiva, el testimonio que yo hasta ahora consideraba como veraz debido fundamentalmente a la fuente de información.",
+        "target": "the testimony attributing the fandango to Rafael Pareja",
+        "rationale": "The author evaluates competing testimony by weighing the credibility of an expert source, using critical authority to adjudicate the polemic."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "terminar de una vez con la polémica de este fandango, haciendo justicia a su creador",
+        "target": "the true origin/creator of the fandango",
+        "rationale": "The dispute gives authority to origin and rightful creation, treating correct lineage of the fandango as meaningful for flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Rafael Pareja as the likely creator of the fandango",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is primarily an attribution dispute, not a general biography."
+  },
+  {
+    "article_id": "1995-11-11-left-coplas-a-la-verde-sombra",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Lyric text only; no clear evaluative, authorizing, pedagogical, communal, or critical discourse in the visible passage."
+  },
+  {
+    "article_id": "1995-11-11-right-para-antonio-murciano-gonz-lez-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Que no hay ciudad andaluz que no pronuncie tu verso, que no hay llanto ni quejío que no lleve tu recuerdo.",
+        "target": "Antonio Murciano González's verse and flamenco-linked poetic presence",
+        "rationale": "The homage evaluates the addressee's work by presenting it as widely remembered and emotionally resonant across Andalusian flamenco geographies."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "¡Qué belleza y qué alegría cuando tus Peñas Flamencas te aplauden por Bulerías.",
+        "target": "recognition of Antonio Murciano by flamenco peñas",
+        "rationale": "The peñas are invoked as a socially grounded flamenco community whose applause authorizes the honoree's value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem names gitano and Andalusian/local identities, but they function mainly as imagery rather than a clear identity-based authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Antonio Murciano González's flamenco-linked poetic stature",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded as poetic homage only where the praise and peña recognition perform clear evaluative/community work."
+  },
+  {
+    "article_id": "1995-11-12-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la brillante sabiduría de Bernard Leblon ... fruto de décadas de estudio",
+        "target": "Bernard Leblon as a scholarly authority on flamenco",
+        "rationale": "The review authorizes Leblon's book through his recognized scholarly expertise and long-term study."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "dirigido a gentes que no han tenido contacto profundo con este arte ... pudiera servir como manual universitario",
+        "target": "Leblon's Flamenco as a didactic and university-level access text",
+        "rationale": "The passage frames the book as mediating flamenco knowledge for non-specialists and potentially institutional university learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "los trata con tanto rigor y profundidad ... una aportación didáctica",
+        "target": "Leblon's book Flamenco",
+        "rationale": "The review explicitly evaluates the book's quality through rigor, depth, and didactic usefulness."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "habla, por boca de un buen plantel de amigos y admiradores encardinados a la tertulia flamenca de Badalona",
+        "target": "the remembrance and judgment of Manuel Avila",
+        "rationale": "The ending frames a flamenco tertulia community of friends and admirers as the source of an authoritative remembrance and judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text says the book could serve as a university manual and uses 'definitivo', but it does not clearly canonize or rank the work against other flamenco books."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Bernard Leblon's book and the community remembrance of Manuel Avila",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt contains two review segments; both are annotated only where visible evidence supports them."
+  },
+  {
+    "article_id": "1995-11-14-left-avante-claro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "configuran la manera de cantar flamenco, propia de una figura creadora de personalidad única",
+        "target": "Juan Moreno Maya \"El Pele\" and the album Avante Claro",
+        "rationale": "The review explicitly praises El Pele's creative individuality and evaluates the recording as an expression of that artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su metal de voz, el juego melismático de su garganta ... los tonos bajos ... ecos personales y melismas enduendados",
+        "target": "El Pele's vocal and stylistic quality",
+        "rationale": "The review applies aesthetic criteria such as voice, melisma, low tones, personal echoes, and duende to define artistic quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "a veces le hacen perder la flamencura ... evidenciar la rumba por el poco contexto flamenco",
+        "target": "arrangements and rumba elements in Avante Claro",
+        "rationale": "The review draws a boundary around proper flamenco by criticizing some arrangements and the rumba for weakened or insufficient flamenco character."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "figuras jóvenes consagradas y actuales del flamenco ... una figura creadora de personalidad única",
+        "target": "El Pele's status among contemporary young flamenco figures",
+        "rationale": "The passage places El Pele within a hierarchy of contemporary artists and elevates him as a uniquely creative figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review critiques heterodox/commercial-sounding elements, but the stronger evidence is direct purity boundary-work and aesthetic evaluation rather than expert-authority discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "El Pele's Avante Claro",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The album is praised overall while some arrangements and rumba elements are criticized as less flamenco."
+  }
+]

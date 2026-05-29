@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "1983-05-17-right-enderezando-entuertos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author says he has observed errors and will correct them, but the visible text does not show the substance of the critique or a clearly flamenco-related boundary or authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only an introductory statement; there is not enough substantive discourse to code confidently."
+  },
+  {
+    "article_id": "1983-05-19-right-el-bizco-amate-mendigo-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "H OMBRE de una personalidad muy sugestiva, entre extraña y desconcertante.",
+        "target": "Enrique Guillén Carcajosa, El Bizco Amate",
+        "rationale": "The article evaluates the singer as a personality and performer rather than only reporting biographical facts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Si el Cante es en sí, lamento y queja, unas veces, y en otras, desacuerdo y rebeldía",
+        "target": "cante as expressive form",
+        "rationale": "The passage defines cante through aesthetic and emotional criteria such as lament, complaint, disagreement, and rebellion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Llegó a popularizarse con sus fandangos que en parte se parecían a los de Pepe Aznalcollar, pues algunos aficionados trataron de imitarle.",
+        "target": "El Bizco Amate's fandangos",
+        "rationale": "The article gives his fandangos status by noting their popularization and imitation by aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The final remark that the afición has forgotten him mentions the flamenco community, but it does not clearly grant that community authority to recognize or judge him."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Bizco Amate and his cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Biographical hardship is not coded by itself; codes are limited to explicit evaluation and aesthetic framing of cante."
+  },
+  {
+    "article_id": "1983-05-20-right-a-todas-las-pe-as-flamen-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "todas y cada una de las peñas flamencas que, hoy más que nunca, asumen el difícil papel de ser correa de transmisión de los valores más irrenunciables de nuestro arte",
+        "target": "flamenco peñas",
+        "rationale": "The text assigns peñas a community authority role as transmitters of flamenco's essential values."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ser un instrumento vivo, al servicio del mundo flamenco",
+        "target": "Candil and flamenco peñas",
+        "rationale": "The magazine and peñas are framed as living supports for sustaining and communicating flamenco culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Entre todos nos conoceremos mejor, nos sentiremos menos solos frente a tantas incomprensiones y olvidos",
+        "target": "network of flamenco peñas and peñistas",
+        "rationale": "The passage frames the section as a participatory communal space that strengthens recognition among peñas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'correa de transmisión' suggests transmission, but the passage does not clearly describe oral, embodied, familial, or pedagogical learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "heritage"
+      ],
+      "target": "flamenco peñas as transmitters and participants in flamenco culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The notice is coded because it explicitly defines the social role of peñas, not merely because it addresses them."
+  },
+  {
+    "article_id": "1983-05-21-left-el-xi-congreso-nacional-de-activ",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The congress and cultural center are institutional contexts, but the passage is mainly an administrative announcement without explicit heritage authorization or valuation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'gran escultor granadino Miguel Moreno' praises the cover artist, but the visible passage is a correction notice rather than a substantive flamenco critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Program logistics and submission instructions are not coded as heritage or pedagogy without a stronger discourse function."
+  },
+  {
+    "article_id": "1983-05-21-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un disco agradable de escuchar y delicioso para los aficionados a los fandangos de Huelva",
+        "target": "El Cabrero's fandangos de Huelva recording",
+        "rationale": "The reviewer explicitly evaluates the recording's listening value and appeal to aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "no se acerca al perfeccionamiento y hondura de Paco Toronjo en la interpretación de estos cantes",
+        "target": "El Cabrero's interpretation of fandangos de Huelva",
+        "rationale": "The judgment applies aesthetic criteria of perfection and depth to assess the interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no se acerca al perfeccionamiento y hondura de Paco Toronjo",
+        "target": "Paco Toronjo as benchmark for fandangos de Huelva",
+        "rationale": "The review ranks El Cabrero's interpretation below Paco Toronjo, treating Toronjo as an exemplary standard."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Notamos la falta de algunos estilos del grupo de las cantiñas como: los mirabrás o las romeras",
+        "target": "Hispavox discographic collection",
+        "rationale": "The reviewer uses critical authority to identify omissions in the record collection's representation of styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténtica dimensión' has authenticity language, but it mainly describes popularity and mastery of fandangos rather than drawing a clear authenticity claim about proper flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage discusses interpretations and local styles, but it does not thematize learning, pedagogy, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Cabrero's recording and the discographic representation of flamenco styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Review discourse is coded for explicit evaluation, aesthetic criteria, hierarchy, and expert criticism of omissions."
+  }
+]

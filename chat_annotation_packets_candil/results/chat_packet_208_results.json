@@ -1,0 +1,293 @@
+[
+  {
+    "article_id": "1990-01-24-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "pongo mi colección al servicio de aquellos aficionados a los que les interesen algunas de las más de seis mil grabaciones que conservo",
+        "target": "aficionados flamencos and archival sharing",
+        "rationale": "The writer frames his private collection as a resource offered to the aficionado community, giving communal access and preservation-oriented sociability value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "¡Seamos justos y verídicos, señor Borrego! ... escritores estudiosos y conferenciantes intenten confundir a los neófitos del Arte Flamenco",
+        "target": "writers and public claims about flamenco history",
+        "rationale": "The letter polices critical and scholarly authority by accusing writers of misleading beginners and demanding truthful attribution."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Allí se reúnen los aficionados del pueblo y comparten entre copas unas tertulias que giran siempre sobre el mismo tema: el arte flamenco... actividades vitales para la buena salud de todas las peñas",
+        "target": "local peña and village aficionados",
+        "rationale": "The passage presents peña sociability, tertulias, and member activities as vital to sustaining flamenco community life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The excerpt includes a councillor signature and cultural-office context, but the visible text does not clearly frame official heritage authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'auténticas mentiras falsas' is polemical, but it targets false statements rather than drawing a stable genuine/impure flamenco boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "aficionado networks, peñas, and public flamenco writing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only visible letter and ending-context material."
+  },
+  {
+    "article_id": "1990-01-26-left-discografia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Para muchos, la mejor bailaora de la época.",
+        "target": "Matilde Coral",
+        "rationale": "The passage explicitly ranks Matilde Coral as the best bailaora of her era."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Es flamenca de los pies a la cabeza, en el andar, y en el mirar, y en el sentir",
+        "target": "Matilde Coral's flamenco identity and dance",
+        "rationale": "The quote presents her as fully and genuinely flamenco in body, attitude, and feeling."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "siente al modo flamenco y así lo transmite a su baile, aun sin proponérselo",
+        "target": "Matilde Coral's baile",
+        "rationale": "The passage evaluates the artistic value of her dancing by praising how flamenco feeling is expressed in it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The beer advertisement mentions tradition, but it is not flamenco-related and cannot support a flamenco tradition code."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Her conservatory post is listed biographically without a visible claim about teaching, access, or institutional transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Matilde Coral",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertising copy was ignored because it is unrelated to flamenco discourse."
+  },
+  {
+    "article_id": "1990-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "sainetes vergonzantes que hicieron de lo jondo alimento de chistes, postales degradantes, folklores oficiales, historias blandas y deleznables",
+        "target": "degraded representations of lo jondo",
+        "rationale": "The passage excludes shameful, officialized, postcard-like versions as degrading distortions of jondo flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la entrañable memoria de tus juicios... Juicios para el desbroce, para el enérgico decantamiento... para la dignidad de un códice, recuperado ya, y limpio de interpolaciones degradantes",
+        "target": "Paco Vallecillo's critical judgments on flamenco",
+        "rationale": "Vallecillo's judgments are authorized as critical acts that clear away degrading interpolations and defend flamenco dignity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Aquí nos queda tu concepto, sólido siempre, indesmayable, del tamaño de tu vida misma.",
+        "target": "Paco Vallecillo's concept of flamenco/jondo",
+        "rationale": "The editorial praises the solidity and endurance of Vallecillo's flamenco concept as an evaluative tribute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The postponed homage mentions institutions, but the visible note is logistical rather than an official heritage-authorization claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The recovered 'códice' language suggests continuity, but the clearer discourse function is boundary critique against degrading interpolations."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "lo jondo and Paco Vallecillo's critical legacy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Poetic elegiac language was coded only where it made explicit evaluative or boundary claims."
+  },
+  {
+    "article_id": "1990-03-4-left-eduardo-toldr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "exhibe su tercera faceta: la de crítico musical... Sus reparos y sus observaciones son piadosas sin dejar de ser claros y ciertas veces inapelables",
+        "target": "Eduardo Toldrá as musical critic",
+        "rationale": "The article positions Toldrá as an authoritative critical voice whose judgments are clear and sometimes decisive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Su españolismo es distinto al de Ravel... En Debussy sólo hay fragancia de folklore... A diferencia de los impresionistas, Bizet se limitó al atractivo de un libreto.",
+        "target": "European composers' representations of Spanishness",
+        "rationale": "The passage creates comparative hierarchy among composers by contrasting Ravel, Debussy, Bizet, and others in their relation to Spanish musical material."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En Bizet hay muy poco espíritu español, ningún espíritu español. La marcha del torero quiere ser un pasodoble, pero es una simple marcha marcial francesa.",
+        "target": "Bizet's Spanish-themed music",
+        "rationale": "This is a direct negative evaluation of Bizet's musical Spanishness and stylistic success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Lo que tenía Debussy de la exactitud folklórica de España eran informaciones vagas, imprecisas.",
+        "target": "Spanishness in European art music",
+        "rationale": "The passage applies folkloric exactness and depth of Spanish spirit as criteria for judging musical value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'conservan' refers to composers keeping notes and does not frame safeguarding or living heritage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The ending makes ethnic generalizations about gitanos and payos, but in the visible text this functions mainly as taste/evaluation rather than a clear belonging or representation framework."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Spanishness, folklore, and jondismo in European art music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview/article; coded only visible critical comparisons."
+  },
+  {
+    "article_id": "1990-03-10-right-ellos-los-protagonistas-dicen-ch",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "es el auténtico genio del cante flamenco. Como él sólo nace uno en el siglo",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón through an exceptional, once-per-century ranking."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Canta con cierta fatiguita pero muy a compás y con mucho ritmo, canta muy requetebién.",
+        "target": "Rancapino's singing",
+        "rationale": "Compás, rhythm, and expressive fatigue are applied as criteria for judging cante quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "con las zambombas, los cajones, los tambores y esas tonterías que están sacando. Están perjudicando al flamenco auténtico.",
+        "target": "new instrumental additions and sonic innovations",
+        "rationale": "The speaker draws a boundary between authentic flamenco and new elements framed as harmful intrusions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Esa labor que están haciendo las peñas me parece maravillosa. Si no fuera por la labor de las peñas, el noventa y nueve por ciento de nosotros los artistas, estaríamos en Agromán",
+        "target": "flamenco peñas",
+        "rationale": "The peñas are credited with sustaining flamenco artists and are thus framed as crucial community institutions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The son who sings Camarón rather than his father's things hints at transmission, but the visible passage does not clearly authorize lineage learning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténtico genio' praises Camarón's genius; the stronger authenticity boundary appears later in the critique of innovations."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Camarón, Rancapino, peñas, and authentic flamenco against new sonic additions",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only visible statements with clear evaluative or boundary force."
+  }
+]

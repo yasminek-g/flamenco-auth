@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "1991-09-21-right-tres-fandangos-naturales",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Verse text contains moral and social commentary but no clear flamenco-related evaluative, authorizing, pedagogical, communal, heritage, or critical discourse in the visible text."
+  },
+  {
+    "article_id": "1991-09-22-left-madrid-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "dentro de la más pura ortodoxia flamenca",
+        "target": "José Menese's recording/performance",
+        "rationale": "The phrase presents Menese's cantes as properly and genuinely flamenco through explicit orthodox purity language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "José Menese tuvo una gran y lucida actuación",
+        "target": "José Menese's presentation performance",
+        "rationale": "The passage explicitly evaluates the quality and success of Menese's performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "para nosotros los viejos aficionados, es de una gran satisfacción",
+        "target": "old aficionados and their role in flamenco dignification",
+        "rationale": "The text positions old aficionados as a community that recognizes and celebrates progress in the dignification of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "disfrutáramos de la intimidad de una vieja fiesta flamenca",
+        "target": "the intimate listening setting of the event",
+        "rationale": "The event's value is tied to the intimacy of an old flamenco gathering, framing close co-presence as a privileged mode of flamenco experience."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "José Menese's performance and the Madrid flamenco event",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains sufficient independent evidence for the emitted codes."
+  },
+  {
+    "article_id": "1991-09-23-left-dos-libros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "despertar la curiosidad y afición de los jóvenes por la esencia de tan invalorable y extenso patrimonio artístico andaluz",
+        "target": "Andalusian folklore and flamenco",
+        "rationale": "The passage frames flamenco and Andalusian folklore as a valuable collective artistic patrimony to be transmitted to youth."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "una obra introductoria que explique y valore la esencia del folclore andaluz y del cante flamenco",
+        "target": "Arrebola's introductory book for children and adolescents",
+        "rationale": "The book is explicitly framed as an access tool for introducing young learners to flamenco and Andalusian folklore knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "cual corresponde a un consagrado profesional de la enseñanza, tanto teórica, como práctica",
+        "target": "Alfredo Arrebola as teacher-author",
+        "rationale": "The reviewer legitimates the book's explanations through Arrebola's recognized pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su valor pedagógico innegable su característica más destacada",
+        "target": "the reviewed book",
+        "rationale": "The passage explicitly evaluates the book's quality and value, especially its pedagogical merit."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible text mentions oral popular tradition as a source for examples, but the discourse function is primarily textbook pedagogy rather than embodied or oral transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Arrebola's introductory flamenco/folklore book",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible review contains clear heritage, pedagogical, and evaluative discourse."
+  },
+  {
+    "article_id": "1991-09-24-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la profundidad, frescura y calidad del arte de Carmen Linares",
+        "target": "Carmen Linares's recording/performance",
+        "rationale": "The passage makes direct critical praise of Carmen Linares's artistry and recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ofrece con compás... grandeza cantaora... una acusada personalidad... profundidad cantaora y la buena ejecución",
+        "target": "Carmen Linares's interpretation across the repertoire",
+        "rationale": "The reviewer applies specific flamenco aesthetic criteria such as compás, cantaora depth, personality, and execution to judge quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "equiparable a la de las más notables figuras de nuestro arte",
+        "target": "Carmen Linares's artistic trajectory",
+        "rationale": "The text hierarchically places Linares's artistic development alongside the most notable figures of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'genuina calidad' and 'cantaora por derecho' suggest properness, but the visible passage functions mainly as critical praise rather than a distinct authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Carmen Linares's flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-25-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "contribuir al enriquecimiento de la memoria colectiva de la ciudad a través de la investigación histórica",
+        "target": "history of guitar construction in Córdoba",
+        "rationale": "The scholarship frames guitar-making history as collective urban memory and public cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el Jurado... don Juan Salido Freyre y don Manuel Ríos Ruiz, flamencólogos... acordó declarar desiertos los premios... por no considerar suficiente la calidad de las obras presentadas",
+        "target": "submitted works in the II Certamen de Pintura Flamenca",
+        "rationale": "An expert jury including flamencologists exercises authoritative critical judgment by withholding awards for insufficient quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "he sido objeto del fraude... incluyen una voz joven... que falsamente hacen constar",
+        "target": "the Manolo Caracol cassette attribution",
+        "rationale": "The text denounces a spurious recording attribution as fraud, drawing a boundary between genuine and false flamenco documentation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "como aficionado de los de antes, me considero obligado moralmente a no consentir que se engañé a nadie",
+        "target": "the author's warning to flamenco listeners",
+        "rationale": "The speaker claims moral authority as an old-style aficionado to protect others from deception."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The cassette and painting passages contain evaluation, but the stronger discourse functions are expert/jury authority and authenticity boundary policing."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions organize the research grant and certamen, but the visible heritage language is better captured by collective memory rather than official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Córdoba guitar-history research, the painting certamen, and the contested Manolo Caracol cassette",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

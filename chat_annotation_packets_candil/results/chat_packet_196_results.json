@@ -1,0 +1,241 @@
+[
+  {
+    "article_id": "1989-07-24-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "voz afila, redonda y cortante como una faca, tocado de las más altas capacidades para ocupar un lugar de privilegio entre los grandes cultores del cante del Barrio",
+        "target": "Luis de Pacote as cantaor",
+        "rationale": "The passage explicitly evaluates the singer's vocal quality and artistic capacity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ocupar un lugar de privilegio entre los grandes cultores del cante del Barrio",
+        "target": "Luis de Pacote within Jerez/Barrio cante",
+        "rationale": "The text places him in a hierarchy among major cultivators of a valued flamenco tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "heredera del cante grande, gitano y puro de su hermano. Su quejío «terremotero» tiene todo el duende del mundo, auténticamente gitano.",
+        "target": "María Soleá's cante",
+        "rationale": "The passage attributes genuineness and proper flamenco value to María Soleá through gitano authenticity and duende."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Su quejío «terremotero» tiene todo el duende del mundo",
+        "target": "María Soleá's cante",
+        "rationale": "Duende and quejío are used as aesthetic criteria to define the quality of her singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Neighborhood, family, and Peña-like community terms appear, but the visible text does not clearly present a community actor as authorizing or judging flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Luis de Pacote and María Soleá as valued flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible evaluative passages are sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1989-07-25-left-hablan-las-pe-as-amigas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and federations are mentioned as organizers, but the passage is mainly administrative and does not clearly claim community authority or insider recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Contest prizes and winners are mentioned, but the visible text does not construct a broader canon, hierarchy, or evaluative ranking beyond routine competition logistics."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Routine announcements and administrative contest information without clear discourse function."
+  },
+  {
+    "article_id": "1989-07-25-right-buz-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "tengo que decir rotundamente, con conocimiento de causa, que Aurelio no se ajustó a la realidad histórica de los hechos acaecidos",
+        "target": "Aurelio Sellé's account of Pastora Pabón and the Medina family",
+        "rationale": "The letter writer claims experiential authority to correct another flamenco authority's historical account."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ese «be, bé», ese «guin, guin» y ese meter la nariz hasta más no poder... me obligaron a no volverlo a escuchar más.",
+        "target": "Aurelio Sellé's recorded singing",
+        "rationale": "The passage gives an explicit negative evaluation of Aurelio's vocal mannerisms and recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio fue un gran copista por su excelente oído musical y, además, fue un intérprete genial de los cantes de unos y de otros.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage elevates Mairena by assigning him exemplary interpretive status and defending his place in flamenco hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "leí en la revista número 62 lo que escribe don Manuel Yerga sobre la Bandolá, diciendo que no admite este cante flamenco como tal. Mi opinión de la Bandolá es la siguiente",
+        "target": "Bandolá as flamenco cante",
+        "rationale": "The letter intervenes in whether Bandolá should be accepted as a flamenco cante, making a claim about proper belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Del árbol genealógico de los cantes vernáculos malagueños, el tronco es la Bandolá... la masa generatriz de todos los demás cantes de esta familia",
+        "target": "Bandolá within the genealogy of Málaga cantes",
+        "rationale": "The passage authorizes Bandolá by presenting it as the root and generative trunk of a flamenco cante family."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Pastora is described as learning songs by hearing them from José Medina, but the stronger discourse function in the article is historical correction and lineage/origin authorization rather than pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "Aurelio Sellé's authority, Antonio Mairena's status, and Bandolá's flamenco belonging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains two letters; the first contests historical and critical authority, while the second defends Bandolá's flamenco status through genealogy."
+  },
+  {
+    "article_id": "1989-07-26-right-iben-alcazar-premium-criviza-spi",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The advertisement mentions beer-making tradition, but it is unrelated to flamenco and therefore outside the code's scope."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The advertisement praises the beer, but it does not evaluate any flamenco-related target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Commercial beer advertisement with no flamenco discourse."
+  },
+  {
+    "article_id": "1989-09-3-right-a-pedro-s-nchez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Nadie, como él... ha buceado con tanto fervor en el misterio de lo jondo... ha sabido proyectar la magia del Flamenco.",
+        "target": "Pedro Sánchez",
+        "rationale": "The editorial elevates Pedro Sánchez as an exemplary figure in flamenco reflection and mediation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "entregan tiempo y patrimonio por la salvaguarda, por la difusión de este hermoso legado",
+        "target": "flamenco as a collective legacy",
+        "rationale": "The passage frames flamenco as a legacy requiring safeguarding and diffusion through collective effort."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "desde su Peña, desde su tertulia, desde su anonimato, han generado una conciencia colectiva, respecto al Flamenco",
+        "target": "anonymous peña and tertulia participants",
+        "rationale": "The text credits community-based participants with sustaining and authorizing flamenco consciousness."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "erigiéndose en permanentes vigías de su pureza frente a detractores o gentes simplemente desinformadas",
+        "target": "flamenco purity guarded by community actors",
+        "rationale": "The passage defines proper flamenco through protection of purity against detractors and the uninformed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions Pedro's discipline of learning and ability to project flamenco, but it does not clearly position him as an authorized teacher or pedagogical method."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Pedro Sánchez and anonymous community actors safeguarding flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

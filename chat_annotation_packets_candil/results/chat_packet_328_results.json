@@ -1,0 +1,255 @@
+[
+  {
+    "article_id": "1997-01-11-right-las-fronteras-del-arte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "entre la defensa del purismo y el reconocimiento del papel de la creatividad en el futuro del Arte Flamenco, no debe haber desaveniencia alguna",
+        "target": "debate sobre purismo, creatividad, ortodoxia y heterodoxia en el Arte Flamenco",
+        "rationale": "The passage explicitly frames and critiques a boundary debate over proper flamenco between purist/orthodox and creative/heterodox positions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Generalmente, los verdaderos aficionados al cante recomiendan las grabaciones de las obras flamencias que luego pasarán a los modestos archivos de otros aficionados.",
+        "target": "verdaderos aficionados al cante as selectors of valued flamenco recordings",
+        "rationale": "The passage gives knowledgeable aficionados a community role in recommending and preserving which flamenco recordings enter aficionado archives."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article discusses purism and 'fronteras del Flamenco', but the visible text mainly opens debate rather than clearly excluding a specific impure or illegitimate form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "criteria for defining the boundaries and future of Arte Flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1997-01-13-left-jos-merc-paradigma-de-lo-jondo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "José Soto Soto, cantaor grave y sustancial del jerezano barrio de Santiago",
+        "target": "José Mercé",
+        "rationale": "The passage explicitly evaluates José Mercé as a serious and substantial cantaor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "rara vez no conmueve al respetable... tres rasgos ineludibles para recrear sobre lo más jondo pero sin perturbar la estructura original",
+        "target": "José Mercé's cante",
+        "rationale": "The passage judges Mercé through aesthetic criteria of emotional force, jondura, expressive range, and fidelity to original structure."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "remover y transformar las raíces es el único medio de construcción posible",
+        "target": "the future construction of cante",
+        "rationale": "The passage grounds legitimate renewal in the transformation of roots, using rootedness and continuity as the basis for future development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña is mentioned as commissioning a profile, but the visible text does not clearly make peña or aficionado community authority the basis of evaluation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Mercé is strongly elevated, but the visible excerpt does not clearly construct a broader canon or hierarchy beyond individual critical praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "José Mercé and his approach to lo jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible beginning, evidence windows, and ending context."
+  },
+  {
+    "article_id": "1997-01-17-right-poema",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ilustrando el cante más inteligente",
+        "target": "el martinete",
+        "rationale": "Although poetic rather than review prose, the passage explicitly evaluates the martinete as an especially intelligent form of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Himno de profunda altura... Liturgia profana del dolor humano",
+        "target": "el martinete gitano",
+        "rationale": "The poem defines the martinete's value through aesthetic criteria of depth, ritual intensity, pain, and expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'martinete gitano' marks identity, but the poem does not clearly use identity to define authority, belonging, or representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The poem evokes eternity and old forge imagery, but it does not clearly ground present flamenco value in tradition, continuity, or origins."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "el martinete as a flamenco form",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only the poem's visible evaluative language; no inference from title or metadata."
+  },
+  {
+    "article_id": "1997-01-18-left-la-est-tica-del-toque",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "un conocimiento apropiado de ciertas disciplinas, como el estudio del lenguaje musical, la armonía o el contrapunto, dotarían al guitarrista flamenco de unas grandes posibilidades",
+        "target": "formal musical study for flamenco guitarists",
+        "rationale": "The passage frames institutional/formal musical knowledge as meaningful access that expands flamenco guitar practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "cuando leo o escucho comentarios sobre el poder del peso de la tradición, en contra del progreso, o esa sentencia por la cual se es menos flamenco por saber música creo, sinceramente, que se provoca un gran daño",
+        "target": "claims that musical training makes a guitarist less flamenco",
+        "rationale": "The author directly criticizes a boundary-policing claim that opposes tradition to progress and devalues trained musicianship as less flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El «tener aire» o «tocar con aire» no es más que la pura y auténtica comprensión del ritmo en toda su magnitud",
+        "target": "flamenco guitar technique and interpretation",
+        "rationale": "The passage defines flamenco guitar quality through aesthetic and technical criteria such as aire, rhythm, clarity, and musicality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Tradition is discussed, but the visible passage mainly contests tradition-versus-progress boundary claims rather than grounding authority in continuity or roots."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'pura y auténtica comprensión' evaluates rhythmic understanding, not the authenticity of flamenco itself as a practice or actor."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "formal musicianship and technical-aesthetic understanding in flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1997-01-21-left-forman-el-gigantesco-rbol-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Esta es mi opinión sobre el origen y proceso evolutivo de los cantes de Málaga irradiados sobre Levante, Granada, Córdoba y Huelva.",
+        "target": "origin and evolution of Málaga-derived flamenco cantes",
+        "rationale": "The article grounds flamenco classification and value in origin, derivation, and evolutionary continuity among cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Que me perdonen esos doctores porque rechace con estoicismo sus opiniones.",
+        "target": "expert theories about the origin of fandango/cante flamenco",
+        "rationale": "The passage explicitly contests expert or scholarly authority over flamenco origins and offers corrective critical judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "familia de cantes forman el tronco del árbol malagueño... de ellos nacieron todos los cantes enumerados",
+        "target": "Málaga cantes within the flamenco family tree",
+        "rationale": "The metaphor of trunk, family, and descendants constructs a hierarchy and genealogy of cantes with value-bearing classificatory force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The author mentions having worked to 'velar por la pureza del cante', but the visible text does not clearly identify an excluded impure target."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions 'cantes payos', but the visible passage does not clearly use identity framing to define authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "classification and origins of fandango and Málaga-related flamenco cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible beginning, evidence window, and ending context."
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1994-03-7-left-si-fu-ramos-catalanes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "todavía tenemos mucho que aprender de quienes sí saben luchar por su identidad y sus valores",
+        "target": "Andalusian cultural identity and values, including cante",
+        "rationale": "The passage frames cante as part of an Andalusian identity whose public defense determines belonging and cultural representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la ausencia de cante, de la falta de cante a que nos han condenado los poderes fácticos de la comunicación pública",
+        "target": "public radio and communication powers",
+        "rationale": "The article explicitly criticizes public communication institutions for removing or marginalizing cante from shared media space."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text invokes collective identity and defense of 'lo nuestro', but the visible excerpt does not clearly frame flamenco as heritage safeguarding or living heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The piece is polemical criticism, but it does not clearly position a critic, scholar, reviewer, or expert discourse as authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Andalusian cante and cultural identity in public radio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt; codes are limited to visible identity and media-critique discourse."
+  },
+  {
+    "article_id": "1994-03-8-left-todos-por-el-oro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "el flamenco es la más secular y genuina del Pueblo andaluz",
+        "target": "flamenco as Andalusian cultural expression",
+        "rationale": "The passage explicitly authorizes flamenco as a genuine expression of the Andalusian people."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "las irrepetibles Fernanda y Bernada de Utrera, como actuales máximos exponentes de la grandeza cantaora de nuestra tierra",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The article canonizes Fernanda and Bernarda by presenting them as unmatched maximum exponents of regional cante greatness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "un quejío de Fernanda es como una tragedia que surge de improviso",
+        "target": "Fernanda de Utrera's singing",
+        "rationale": "The passage applies aesthetic criteria such as quejío, tragic force, expressivity, and jondura to define the quality of Fernanda's cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses purity language, but the stronger visible function is positive authenticity and aesthetic evaluation rather than exclusion of a clearly identified impure target."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes ancestral traditions, but the selected codes already capture the main legitimating work and the tradition claim is not developed as a separate discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Fernanda and Bernarda de Utrera and flamenco as Andalusian art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Purity language is present, but emitted codes prioritize the clearest authenticity, canonizing, and aesthetic-evaluative functions."
+  },
+  {
+    "article_id": "1994-03-10-left-tertulia-en-torno-a-fernanda-y-b",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Manuel Martín Martín, crítico de gran circulación de Diario 16; Aurelio Gurrea Chalé, musicólogo; Onofre López, crítico flamenco",
+        "target": "the round-table speakers on Fernanda and Bernarda",
+        "rationale": "The text foregrounds critics, a musicologist, and flamenco investigators as authorized voices whose debate frames the artistic value of Fernanda and Bernarda."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "son el último eslabón de la cadena flamenca de tradición oral",
+        "target": "Fernanda and Bernarda as links in oral flamenco transmission",
+        "rationale": "The passage explicitly frames flamenco knowledge through oral lineage and embodied lived experience rather than record-based learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "siempre serán hontanar y espejo donde deberían beber y mirarse las generaciones venideras",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The article canonizes Fernanda and Bernarda as exemplary models for future generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco contemporáneo está ejecutado por intérpretes de plástico",
+        "target": "contemporary flamenco interpreters lacking lived experience",
+        "rationale": "The speaker draws a boundary between legitimate flamenco grounded in lived oral tradition and devalued contemporary interpreters characterized as artificial."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Tradition and continuity are central, but PED_02 more precisely captures the visible oral-lineage transmission claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is explicit criticism of contemporary flamenco, but the emitted hierarchy and boundary codes capture the more specific discourse functions."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "Fernanda and Bernarda as oral-tradition exemplars, contrasted with contemporary record-based flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible excerpt contains clear expert-authority, oral-lineage, canonizing, and purity-boundary discourse."
+  },
+  {
+    "article_id": "1994-03-15-left-por-soleares-romualdo",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is poetic/lyrical material without clear discourse evaluating, authorizing, preserving, teaching, transmitting, ranking, or defining flamenco authority."
+  },
+  {
+    "article_id": "1994-03-15-right-eleg-a-a-dolores-parral",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The elegiac tone remembers a flamenco figure, but the visible text does not clearly frame collective memory, safeguarding, or public heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The poem evokes La Parrala and cante, but does not clearly perform one of the codebook discourse functions."
+  }
+]

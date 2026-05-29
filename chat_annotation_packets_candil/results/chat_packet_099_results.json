@@ -1,0 +1,180 @@
+[
+  {
+    "article_id": "1984-09-4-left-estudio-historico-literario-del-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Este estilo de cante... tiene una larga tradición literaria y cultural en nuestra historia peninsular... ancla sus raíces en la más rancia tradición greco-latina",
+        "target": "el cante por Serranas",
+        "rationale": "The passage grounds the value of the Serrana in literary-cultural tradition, roots, and continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "conoce la calidad poética y musicológica de este cante sin igual... convencidos de la belleza y arraigo jondo de estos cantes",
+        "target": "el cante por Serranas",
+        "rationale": "The article explicitly praises the poetic, musicological, and jondo value of the Serrana."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdadera carta de naturaleza' suggests legitimacy, but the stronger and clearer discourse function is roots/tradition rather than a direct authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "el cante por Serranas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only from visible roots/tradition and evaluative framing."
+  },
+  {
+    "article_id": "1984-09-11-left-introduccion-a-la-discografia-an",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "considero que es una de las fuentes en la que los estudiosos, los entusiastas y los profesionales del cante, tenemos que beber",
+        "target": "la discografía antigua",
+        "rationale": "Discography is framed as a knowledge source for scholars, enthusiasts, and professionals, giving mediated access to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "La lucha entre la calidad y la comercialidad aún continúa en pie en nuestros días y, como es natural, queda recogida perfectamente a través de la discografía.",
+        "target": "la relación entre calidad y comercialidad en la discografía flamenca",
+        "rationale": "The passage frames discography as evidence of an ongoing evaluative boundary between artistic quality and commerciality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Historical recording preservation is implied, but the visible text does not frame it as safeguarding or public heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "la discografía antigua",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Commercial reproduction history alone was not coded; codes rely on the explicit knowledge-source and quality/commerciality claims."
+  },
+  {
+    "article_id": "1984-09-12-right-la-llave-de-oro-del-flamenco-y-e",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ese galardón máximo que es la IV LLAVE DE ORO DEL CANTE FLAMENCO... la elección recaerá sobre un cantaor que domine una amplia gama de estilos o palos flamencos; tendría que ser el cantaor más completo posible",
+        "target": "la Llave de Oro del Cante Flamenco y su destinatario ideal",
+        "rationale": "The passage constructs a hierarchy of recognition around the highest award and defines the canonical winner as the most complete singer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el cantaor que consiga la LLAVE... debería cantar saetas como las cantaron Vallejo y Mairena... hubiese cantado bien por saetas a lo largo de su carrera artística",
+        "target": "los aspirantes a la Llave de Oro",
+        "rationale": "The article sets mastery of saetas, modeled by Vallejo and Mairena, as an aesthetic criterion for deserving the award."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "En un cuarto... se encuentran los cabales en intimidad y cuatro paredes para que nada se escape; es el escenario ideal... En los festivales... el cantaor juega con una ventajosa posición frente a su audiencia.",
+        "target": "el cante por saetas in intimate versus festival settings",
+        "rationale": "The passage contrasts intimate cabal listening with festival amplification and treats setting as meaningful for evaluating the cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'sólo hay una verdad desnuda: cantar' suggests authenticity, but the passage mainly defines evaluative criteria for saeta performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "el cantaor merecedor de la Llave de Oro",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-09-13-left-homenaje-a-rafael-romero",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The notice says the order does not alter the artists' category, but this avoids ranking rather than constructing a clear hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event notice and program listing without sufficient evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "1984-09-13-right-pe-a-flamenca-de-jaen",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The final comparison to 'una siguiriya' is aesthetically charged, but the passage is mainly poetic description and does not clearly apply a flamenco quality criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic description only; no clear evaluative, pedagogical, heritage, authority, or community-boundary claim."
+  }
+]

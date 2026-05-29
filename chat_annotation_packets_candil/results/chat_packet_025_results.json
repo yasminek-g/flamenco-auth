@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "1981-05-8-right-chiclanita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Chiclanita recordaba cantares tan antiguos que ni los más viejos profesionales de nuestro tiempo sospechan que hayan existido.",
+        "target": "Chiclanita's remembered repertoire",
+        "rationale": "The passage values Chiclanita through access to very old cantes, using remembered antiquity and survival of repertoire as authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un mediano cantaor en la lista de los intérpretes de Cádiz; pero, posiblemente, el más grande en cuanto a conocimientos que nos ha proporcionado la historia oral y escrita.",
+        "target": "Chiclanita",
+        "rationale": "The text explicitly ranks Chiclanita modestly as a singer but exceptionally as a knowledge-holder, constructing a hierarchy of value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions old cantes and oral/written history, but the visible excerpt does not clearly describe a learning or transmission process."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The barbería and 'vieja escuela' setting suggest community knowledge, but the visible evidence is more descriptive than authorizing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Chiclanita as repository of old Cádiz flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; codes are based only on the visible beginning/window/ending."
+  },
+  {
+    "article_id": "1981-05-9-right-datos-para-la-historia-del-arte-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Juaniquín y el Viejo Medina fueron dos grandes de nuestra historia flamenca",
+        "target": "Juaniquín de Lebrija and Viejo Medina",
+        "rationale": "The passage canonizes both singers as major figures in flamenco history."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "he logrado incorporarlos definitivamente a la extensa y extraordinaria nómina de cantaores de la ciudad más flamenca de España: Jerez de la Frontera.",
+        "target": "Juaniquín's place in Jerez flamenco identity",
+        "rationale": "The birthplace correction is framed as incorporation into Jerez's local flamenco identity and prestige."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Esclarecer la naturaleza de estos artistas me ha proporcionado una enorme satisfacción",
+        "target": "historical classification of Juaniquín and Viejo Medina",
+        "rationale": "The author asserts documentary-historical authority to correct mistaken artistic labels and settle contested origins."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article concerns historical origins, but the visible passage mainly performs correction and local-canonical classification rather than tradition-continuity valuation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Juaniquín de Lebrija's historical and local classification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-05-10-right-las-letras-flamencas-de-mario-lo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "se impone de un modo decidido el estudio de las influencias del arte flamenco en buena parte de la literatura española",
+        "target": "study of flamenco influence in Spanish literature",
+        "rationale": "The passage claims critical authority for a needed scholarly revision of flamenco's role in literature."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "debería estudiarse la jondura de todo el grupo cordobés de «Cántico»",
+        "target": "the Córdoba group 'Cántico'",
+        "rationale": "The text attributes jondura to a literary group, presenting its work as properly connected to deep flamenco-Andalusian value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative phrases such as 'excelentes aproximaciones' and 'fundamental Ricardo Molina', but the stronger discourse function is critical authorization of a research agenda."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco-inflected Spanish literature and the group 'Cántico'",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-05-11-left-se-cubr-a-la-noche",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El cante es nacio del vientre de las mares. Si naces pa eso, pa eso sirves.",
+        "target": "cante as innate vocation",
+        "rationale": "The speaker defines true cante as an innate calling, authorizing flamenco ability through birth and natural vocation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "ya puedes tener toos los días un maestro a tu vera, que no aprendes en la vía.",
+        "target": "formal or teacher-based learning of cante",
+        "rationale": "The passage evaluates pedagogical authority by denying that even constant access to a master can produce cante without innate capacity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "«Oye, ¿tú con diecinueve años sabes to eso?..., ¿y por martinetes, sabes cantar?»",
+        "target": "young Gregorio's singing ability",
+        "rationale": "The narrative evaluates the singer's exceptional repertoire and ability through the astonished response of an experienced listener."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Specific styles are listed, but the excerpt does not apply them as aesthetic criteria beyond general admiration."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Gregorio's cante and flamenco vocation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-05-11-right-gregorio-el-borrico-de-jerez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "yo estaba acostao, pero no me dormía pa escucharlos; otras veces me alevantaba y me sentaba al lao de mi tío en una sillita, así aprendí.",
+        "target": "Gregorio's flamenco learning",
+        "rationale": "The speaker describes learning cante through listening beside family and older singers in an informal oral setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "se juntaban toos los gitanos viejos, mi padre y Frijones; yo me colaba pa sentirlos cantar",
+        "target": "older Gitano singers and family/community gatherings",
+        "rationale": "The passage grounds flamenco authority in a community of older Gitano singers, family members, and tabanco gatherings."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Comencé a cantar por siguiriyas, porque mi gente canta",
+        "target": "Gregorio's siguiriyas and family/community repertoire",
+        "rationale": "The singer grounds his practice in inherited community continuity, treating 'mi gente' as the source of the repertoire's authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás appears in the passage, but it functions as part of the learning environment rather than as an aesthetic criterion for judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "tradition"
+      ],
+      "target": "Gregorio's orally transmitted Jerez cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; codes rely on the visible interview evidence window."
+  }
+]

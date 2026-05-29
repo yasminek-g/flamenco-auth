@@ -1,0 +1,261 @@
+[
+  {
+    "article_id": "1988-11-15-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "ha querido ofrecer a sus lectores este trabajo tan lleno de frescura, pese al tiempo transcurrido, tan penetrado en agudeza, rigor y sentido de la oportunidad",
+        "target": "la obra inédita «Viejo Carné Flamenco» de Anselmo González Climent",
+        "rationale": "The passage explicitly evaluates the published work as fresh, acute, rigorous, and timely."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "tiene una facilidad extraordinaria en la garganta. Y luego, es curioso, ha escuchado muchísimo y de lo mejor. Tiene motivos y sabe.",
+        "target": "Morente as cantaor",
+        "rationale": "The speaker assesses Morente's vocal facility and knowledge as evidence of artistic capacity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Morente describes childhood exposure, neighborhood peña, and family fiestas, but the visible passage emphasizes improvised early experience more than authoritative oral or lineage transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The correspondence-course advertisement mentions instruction, but it is advertising copy and not part of a discourse about flamenco authority or meaningful access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "González Climent's work and Morente's cantaor knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text was truncated; annotation is limited to the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1988-11-18-left-cantaor-el-mochuelo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Pozo «El Mochuelo» no había creado ni recreado nada de nada, ni lo que tenía de tal palo valía un duro",
+        "target": "Antonio Pozo «El Mochuelo»",
+        "rationale": "The passage reports an explicit negative judgment of El Mochuelo's creative value and repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "«El Mochuelo»variaba unas décimas por aquello de inflular un algo de sí mismo, cosa que —a mi entender— no iba en demérito suyo, cuando es más admirable evitar el mimetismo.",
+        "target": "El Mochuelo's interpretation of malagueñas",
+        "rationale": "The passage applies aesthetic criteria of variation, personal contribution, and avoidance of mere mimicry to judge performance value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el abandolao «En criticar y murmurar» se había fraguado en Puente Genil, aunque con esencias del llamado «...del Guadalhorce»",
+        "target": "the origin and rootedness of the abandolao «En criticar y murmurar»",
+        "rationale": "The passage makes a roots/origin claim about where a flamenco form was forged, using locality to frame its identity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Juan Breva and aficionados are mentioned as a study setting, but the visible passage does not clearly grant the group collective authority beyond the speakers' opinions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The comparison with Sebastián «Pena Padre» is evaluative, but it functions mainly as aesthetic assessment rather than constructing a broader canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "El Mochuelo's artistic value and the origins of specific cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-11-18-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "De magno acontecimiento para el flamenco hay que catalogar la obra aquí reseñada.",
+        "target": "the reviewed flamenco reference work",
+        "rationale": "The reviewer explicitly evaluates the work as a major event for flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "se nos antoja imprescindible para la consulta futura de toda información referida a nuestro arte",
+        "target": "the reviewed compendium/dictionary",
+        "rationale": "The passage canonizes the work as an indispensable future reference for flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "estos dos tenaces estudiosos del flamenco que, por separado, y ahora conjuntamente, tantos y tan buenos servicios han prestado a este arte que conocen como pocos",
+        "target": "the authors of the reviewed work",
+        "rationale": "The passage grants the authors expert authority by stressing their research service and exceptional knowledge of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sustituye por la conjunción de dos sectores sociales andaluces: el de la picaresca gitana y los elementos camperos de influencia castellana, que unidos desembocarían en el fandango, uno de los orígenes del flamenco más fácilmente demostrable para Luque Navajas",
+        "target": "Luque Navajas's account of flamenco origins",
+        "rationale": "The review highlights a roots/origin argument that grounds flamenco genesis in identifiable Andalusian social sectors and the fandango."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The reviewer calls flamenco 'nuestro arte', but this does not develop a public heritage or patrimonial frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco reference scholarship and origin claims",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-11-19-right-las-alas-del-coraz-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "dirigida a unos amigos nuestros, los doctores Agustín Jiménez, Rafael Belmonte y Antonio Herola, inquiriendo de ellos, en su alta capacidad profesional y flamenca a un tiempo, aclaración o explicación posible",
+        "target": "expert explanation of the phrase «alas del corazón» in flamenco coplas",
+        "rationale": "The passage appeals to expert professional and flamenco authority to clarify the meaning of a recurrent expression in flamenco lyrics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la variedad rica e inacabable de la temática en las coplas que enriquecen el tejido musical del Flamenco",
+        "target": "the thematic repertoire of flamenco coplas",
+        "rationale": "The passage evaluates flamenco coplas through the aesthetic criterion of thematic richness and expressive variety."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The essay explains a lyric phrase to readers, but it does not position a flamenco teacher, school, or method as pedagogically authoritative."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call for more coplas to be recopiled suggests documentation, but it lacks public heritage, safeguarding, or community responsibility framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco copla language and its interpretation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-11-20-right-pilar-l-pez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Me había gustado mucho la serena delicadeza de su baile y su concepto coreográfico.",
+        "target": "Pilar López's dance",
+        "rationale": "The narrator explicitly praises the quality and choreographic concept of Pilar López's dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "«El baile flamenco con hondura y arte es de tierra llana. En las zonas montañosas se baila para arriba, verticalmente, con menos brazos —los brazos son los que bailan— y más pies.»",
+        "target": "Pilar López's criteria for flamenco dance",
+        "rationale": "The quoted statement defines flamenco dance quality through aesthetic criteria such as hondura, arte, bodily orientation, arms, and footwork."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en compañía de la eximia bailarina Pilar López",
+        "target": "Pilar López",
+        "rationale": "The passage elevates Pilar López with exemplary status as an eminent dancer, contributing to her canonical positioning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The passage contrasts flat land and mountain zones, but this is geographic-aesthetic framing rather than identity-group belonging or authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The claim that deep flamenco dance belongs to flat land hints at rootedness, but the passage functions more clearly as an aesthetic criterion than a tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pilar López and flamenco dance criteria",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated; annotation is limited to the visible beginning, evidence window, and ending context."
+  }
+]

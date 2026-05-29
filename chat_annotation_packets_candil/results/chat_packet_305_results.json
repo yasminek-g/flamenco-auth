@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "1995-05-6-right-la-personalidad-flamenca-y-human",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Al Flamenco lo han hecho grande gente que, como Pepe Cruz, ha desarrollado una labor indesmayable en favor de la pureza de este arte, gente en su mayoría anónima, auténticos braceros de lo jondo.",
+        "target": "Pepe Cruz and anonymous aficionados/community workers",
+        "rationale": "The passage grants community-based aficionados authority and credit for sustaining and enlarging flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "una labor indesmayable en favor de la pureza de este arte",
+        "target": "Pepe Cruz's flamenco work",
+        "rationale": "The phrase frames Cruz's value through defense of flamenco purity, marking a purity-based boundary around the art."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en la memoria flamenca de los aficionados aún anida la labor y los bellos momentos vividos con el desaparecido Pepe Cruz",
+        "target": "Pepe Cruz's remembered work in Jaén flamenco culture",
+        "rationale": "The article frames the homenaje as community memory-work preserving the meaning of Cruz's flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'lo han hecho grande' elevates community workers, but the main discourse function is afición/community authority rather than a ranked canon of artists."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "Pepe Cruz as a prototypical aficionado and flamenco community worker",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Annotated only visible memorial and event-report text; the ending performance description is routine praise."
+  },
+  {
+    "article_id": "1995-05-8-right-homenaje-a-pepe-cruz-alfonso",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "esas son las huellas que venteo a través de tus letras, letras de la Academia del pueblo donde todo vive y todo explota al pie del sentimiento",
+        "target": "Pepe Cruz's lyrics and popular/community flamenco world",
+        "rationale": "The passage grounds Cruz's flamenco meaning in the pueblo and its communal emotional memory."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "el «maero» y el cante al son de los nudillos, al compás que no figura en los catecismos de la erudición",
+        "target": "informal flamenco memory and practice around Pepe Cruz",
+        "rationale": "The passage contrasts embodied, informal compás and practice with written erudition, implying non-institutional transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text is elegiac and memory-heavy, but the visible excerpt does not clearly frame the remembrance as public cultural safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Pepe Cruz's popular flamenco memory",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The poetic style is dense; emitted only codes tied to clear community and embodied-transmission functions."
+  },
+  {
+    "article_id": "1995-05-10-left-la-poes-a-y-el-baile-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ante la grandeza de un cuerpo en tensión",
+        "target": "flamenco dance",
+        "rationale": "The passage defines the value of flamenco dance through embodied intensity and aesthetic grandeur."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el pueblo lo había adoptado, desde su primer vagido, como algo propio",
+        "target": "flamenco dance/art",
+        "rationale": "The passage grounds the legitimacy of the art in popular adoption from its origins and continuity through time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la mayoría de los autores de prestigio se han asomado al brocal de este pozo sin fondo que es el baile",
+        "target": "flamenco dance as literary/aesthetic object",
+        "rationale": "The passage canonizes flamenco dance by linking it to prestigious authors and a long literary tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to 'hombres' is generic historical language and does not clearly organize flamenco authority through identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "flamenco dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt provides sufficient evidence for aesthetic and tradition-based legitimation."
+  },
+  {
+    "article_id": "1995-05-13-right-manuel-torre-y-los-artistas-del-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "arrancando del legendario Juan Torres, pasa por Corruco, los Jarritos, los Chaqueta, llegando hasta nuestros días con Canela de San Roque y su sobrino Perico Cortés; ellos representan ciento cincuenta años de nuestra historia flamenca",
+        "target": "Campo de Gibraltar flamenco artist lineages",
+        "rationale": "The passage frames flamenco history through family lineage and intergenerational transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "ellos representan ciento cincuenta años de nuestra historia flamenca",
+        "target": "Campo de Gibraltar artist families",
+        "rationale": "The article authorizes the importance of these artists through continuity across a long historical span."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "La importancia de la gitanería del Campo de Gibraltar en el arte flamenco, vía conexión con la familia de Manuel Torre, es enorme.",
+        "target": "Gitanería of the Campo de Gibraltar and Manuel Torre's family network",
+        "rationale": "The passage uses ethnic/local family identity to frame who embodies and represents flamenco significance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family networks are central, but the stronger function is lineage/identity framing rather than aficionado or peña community authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The mention of data and documentation shows scholarship, but no critic or expert is clearly exercising evaluative authority in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "community"
+      ],
+      "target": "Campo de Gibraltar flamenco genealogies",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Genealogical listings alone were not coded; codes rely on explicit claims of importance, lineage, and historical representation."
+  },
+  {
+    "article_id": "1995-05-16-left-preg-n-del-quija",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is a short poetic pregón with no clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse about flamenco."
+  }
+]

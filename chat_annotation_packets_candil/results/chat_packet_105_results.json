@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "1985-01-7-left-gazhira-bailaora",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem praises Gazhira's dance imagery, but it does not clearly function as critical evaluation with criteria under the codebook."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text is centered on a female dancer, but gender does not organize belonging, authority, or representation in a codeable way."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is poetic homage rather than clear evaluative, authorizing, pedagogical, communal, heritage, or boundary discourse."
+  },
+  {
+    "article_id": "1985-01-7-right-el-cante-inventado",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "engendros sedicentemente flamencos, en cantes inventados, en hueras canciones folklóricas aflamencadas",
+        "target": "invented or superficially flamenco cantes",
+        "rationale": "The passage excludes invented and pseudo-flamenco songs from legitimate flamenco through strongly delegitimating purity boundary language."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "tales cantes, como básicos, son fundamentales y como fundamentales inmutables",
+        "target": "basic or medullary cantes",
+        "rationale": "The author grounds proper cante in continuity and immutability of fundamental inherited structures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Porque sin compás no habrá cante medular",
+        "target": "cante medular",
+        "rationale": "The text defines legitimate deep cante through the aesthetic and structural criterion of compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "bodrios que hay que calificar —descalificar— con la mayor dureza",
+        "target": "invented cantes and folkloric aflamencado songs",
+        "rationale": "The critical voice explicitly claims authority to disqualify improper flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses innovation and creativity, but not learning, reproduction, or access to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named figures such as Pastora, Juan Talega, and Mairena imply a reduced elite, but hierarchy is secondary to boundary critique and aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "invented cantes versus medullary/basic cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-01-8-right-el-flamenco-oficial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "ha merecido capítulo aparte en el organigrama de Cultura de la Junta de Andalucía que ha creado para este fin un departamento exclusivo para su estudio y difusión",
+        "target": "flamenco within the Junta de Andalucía cultural administration",
+        "rationale": "The passage frames flamenco as officially recognized and managed through a dedicated cultural institution."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "El cante jondo perdió pureza con su divulgación y ecumenismo, también es cierto que se enriqueció al apropiarse de otras normas igualmente válidas",
+        "target": "publicly disseminated cante jondo",
+        "rationale": "The article explicitly weighs loss of purity through public diffusion against enrichment through wider circulation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Del ghetto, de la cava, de la taberna... se sienta por derecho propio en la poltrona de la administración",
+        "target": "cante jondo's movement from private/social spaces to official administration",
+        "rationale": "The passage contrasts marginal intimate settings with official public administration as socially meaningful contexts for flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "debe desprenderse de todo matiz sectarista y espíritu de infalibilidad que pudiera arrogarse atendiendo a su función rectora",
+        "target": "the official flamenco department",
+        "rationale": "The author critiques the institution's possible authoritative boundary-setting and demands impartial, non-dogmatic governance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text calls for defense, diffusion, and good administration of flamenco, but the stronger frame is institutional authorization rather than safeguarding/living heritage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as hopeful and requiring respect, but the passage does not clearly grant them authority to recognize or judge beyond stakeholder expectation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "official/institutional flamenco and public dissemination of cante jondo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-01-10-left-las-letras-flamencas-de-jos-luis",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of lyric verses without clear codeable discourse function."
+  },
+  {
+    "article_id": "1985-01-10-right-ellos-los-protagonistas-dicen-ma",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "mi padre llevaba a mi hermano a Alcalá o a cualquier otro sitio, pa que escuchara a MANUEL TORRE a JOAQUIN, etc., esto mismo lo hacía conmigo, me hacía que escuchara a mi hermano",
+        "target": "Manuel Mairena's and Antonio Mairena's flamenco learning",
+        "rationale": "The passage frames flamenco formation through listening, family mediation, and embodied oral transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "quien tiene que hacerlo sois vosotros, los aficionaos, los que sabéis de cante",
+        "target": "aficionados as judges of the Llave del Cante",
+        "rationale": "The speaker explicitly grants knowledgeable aficionados authority to decide recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se debiera de formar una comisión de personas entendidas, suficientemente cualificadas, para que algún día se entregue la llave",
+        "target": "qualified experts deciding the Llave del Cante",
+        "rationale": "The passage calls for an expert qualified commission to exercise authoritative judgment over a major flamenco honor."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "era un amante de los cantes gitanos, como gitanos que somos, aunque los cantes no gitanos nunca los despreciaba",
+        "target": "gitano and non-gitano cante repertoires",
+        "rationale": "The passage frames repertoire and respect through gitano identity while also noting a boundary that is not treated as absolute exclusion."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Antonio is called a maestro and compared to an exceptional craftsman, but the stronger visible discourse concerns transmission and authority to confer recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The family and forge imagery suggests continuity, but it is better captured as embodied/familial transmission than as tradition-continuity rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Mairena family transmission and authority to confer the Llave del Cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible opening and ending clearly support transmission and recognition-authority codes."
+  }
+]

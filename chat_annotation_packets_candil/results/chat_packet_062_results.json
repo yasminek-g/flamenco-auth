@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "1982-09-58-left-fichas-para-una-hemeroteca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la inexistencia de un Centro de documentación flamenca digno de tal nombre... supone dejación de uno de los más ricos bienes culturales andaluces",
+        "target": "flamenco documentation and hemerographic preservation",
+        "rationale": "The passage frames the absence of documentation infrastructure as a failure to safeguard an Andalusian cultural good."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Several cited article titles canonize Mairena, but they appear mainly as bibliographic entries rather than the article's own sustained evaluative discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article discusses critical judgments and hemerographic records, but the visible passage does not clearly exercise expert critical authority beyond archival compilation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "flamenco documentation as Andalusian cultural preservation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is based only on visible context and the selected window."
+  },
+  {
+    "article_id": "1982-09-59-left-de-l-tambi-n-se-ha-dicho",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena es el eslabón que enlaza los grandes cantaores del pasado con los que forman nuestro espléndido presente",
+        "target": "Antonio Mairena's role in flamenco continuity",
+        "rationale": "Mairena is legitimated as a link between past masters and the present, making continuity with tradition the basis of his value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "es el maestro indiscutible de nuestra época. Un caso único en la historia del flamenco",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through exemplary and hierarchical status claims."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "ningún artista tuvo su enorme interés por investigar la realidad del cante, desvirtuando muchas leyendas y restaurando estilos",
+        "target": "Mairena's cante research and restoration",
+        "rationale": "The passage authorizes Mairena by presenting his work as a recovery of the reality of cante against distorted legends."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The trigger 'fuera de serie' is an idiom of excellence, not an insider/outsider boundary."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The claim that styles would have been lost suggests preservation, but the passage frames this primarily as tradition/authenticity and canonization rather than public heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; visible material is a compilation of quoted evaluations, so codes are limited to claims clearly visible in the excerpt."
+  },
+  {
+    "article_id": "1982-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "fue la proyección atávica más genuina de su cultura",
+        "target": "flamenco as Andalusian cultural expression",
+        "rationale": "The editorial explicitly presents flamenco as a genuine expression of Andalusian culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "hubo que cantarle «al otro», posicionado, cuando más, en pura contemplación estética, fuera de coloquiales dolores",
+        "target": "spectatorial reception of flamenco",
+        "rationale": "The passage contrasts lived communal pain with detached aesthetic spectatorship, making setting and relation socially meaningful."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "las experiencias realizadas han respondido más a incentivaciones crematísticas que a intentos serios de profundizar histórica, sociológica y musicalmente el flamenco",
+        "target": "commercially motivated flamenco experiments",
+        "rationale": "Commercial motivation is criticized as a failed substitute for serious engagement with flamenco's historical, social, and musical identity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The editorial invokes past Andalusian reality and cultural recovery, but the stronger coded claims concern genuineness, spectator distance, and commercial distortion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique of crematistic experiments has boundary-policing force, but it is already captured more directly as anti-commercial authenticity discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco's relation to Andalusian life and culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-11-4-right-el-villancico-y-la-navidad-flame",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el cante flamenco asimiló todo el caudal lírico peninsular que desde lejanas épocas medievales cantaba la Navidad",
+        "target": "flamenco Christmas villancico tradition",
+        "rationale": "The passage grounds flamenco Christmas song in continuity with older medieval and peninsular lyric traditions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "un nuevo y fresco venero de limpias y flamenquísimas manifestaciones andaluzas de ese mismo sentimiento",
+        "target": "Andalusian flamenco villancico manifestations",
+        "rationale": "The passage presents these manifestations as distinctly and properly flamenco-Andalusian expressions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'La más rancia manifestación lírica europea' ranks the villancico, but it concerns the villancico broadly and is not developed as a flamenco canon claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article explains and defines the villancico using the Real Academia, but it does not clearly frame a flamenco teaching authority or pedagogical transmission relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "authenticity"
+      ],
+      "target": "flamenco adaptation of the villancico",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; advertisement text in the ending context was ignored."
+  },
+  {
+    "article_id": "1982-11-8-left-addenda-et-corrigenda-de-una-rel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "una relación de artistas gitanos de relieve... dudas en cuanto a la etnia de los censados",
+        "target": "classification of flamenco artists as gitano or not gitano",
+        "rationale": "Identity categories organize how artists are classified and represented within flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "aclarada en el propio Congreso por un inteligente y documentado investigador madrileño que aseguró que La Sayago no es gitana",
+        "target": "expert correction of artist identity classification",
+        "rationale": "An expert investigator's authority is used to correct the published classification of a flamenco artist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Por eso nos contentamos con la transmisión oral, siempre incompleta y tantas veces deformada al cabo del tiempo",
+        "target": "flamenco historical knowledge",
+        "rationale": "The passage frames flamenco knowledge as dependent on oral transmission, while noting its limits and deformation over time."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses oral transmission and historical recovery, but the visible passage does not use tradition or roots to authorize a present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "ethnic classification and documentation of flamenco artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "1980-09-6-right-a-prop-sito-de-un-juicio-progre-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Manuel Vicent... dedica un apasionado daguerretipo al bailarín Antonio Gades repleto de viejos y mohosos prejuicios sobre el arte flamenco",
+        "target": "Manuel Vicent's published judgment on flamenco and Antonio Gades",
+        "rationale": "The author exercises critical authority by denouncing Vicent's account as prejudiced and poorly grounded."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco y del pueblo andaluz, soporte y protagonista del mismo",
+        "target": "the Andalusian people as the social ground of flamenco",
+        "rationale": "The passage frames flamenco through a collective identity group whose experience and representation are central to the art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "el único cante válido, de antes y ahora, fluye de unos hombres marginados que conocen su secular desdicha",
+        "target": "valid flamenco song",
+        "rationale": "The passage defines legitimate cante as emerging from lived marginalization and historical suffering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'de fuera hacia adentro' appears inside a quoted passage being criticized, but the visible excerpt does not itself clearly establish an insider/outsider authority boundary beyond the broader identity framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "valid flamenco and external journalistic interpretations of it",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible beginning, selected window, and ending."
+  },
+  {
+    "article_id": "1980-09-7-right-las-letras-flamencas-de-joaquin-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Joaquín Márquez es uno de los más finos poetas andaluces de ahora",
+        "target": "Joaquín Márquez's poetry",
+        "rationale": "The introduction explicitly praises and evaluates Márquez's poetic quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "nos traen redoblados los más auténticos sones flamencos",
+        "target": "Joaquín Márquez's soleares",
+        "rationale": "The passage attributes genuine flamenco sound and value to the published poems."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Joaquín Márquez's flamenco lyrics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-8-right-antonio-n-ez-el-chocolate",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Que too el que lo practique enseñé culturalmente o de otra forma a too el que está a su vera... para que todos sepamos lo que es el flamenco",
+        "target": "practitioners as transmitters of flamenco knowledge",
+        "rationale": "The speaker assigns teaching responsibility to flamenco practitioners so that others can know what flamenco is."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Yo me metía en las reuniones de esos viejos artistas... cantábamos privadamente",
+        "target": "private gatherings of older flamenco artists",
+        "rationale": "The speaker grounds flamenco knowledge and experience in socially recognized private gatherings with established artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Ahí, en las tablas, el mejor ha sío Caracol; porque cantando eran entonces Tomás Pavón, La Niña de Los Peines, El Gloria y Caracol. Los demás no eran nada",
+        "target": "Caracol, Tomás Pavón, La Niña de Los Peines, El Gloria, and other singers",
+        "rationale": "The passage creates a clear hierarchy of exemplary singers and excludes others from the top rank."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The contrast between private singing and the later move to stages is visible, but the excerpt does not clearly state that one setting is superior."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco knowledge, private artist circles, and canonical singers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible beginning, selected windows, and ending."
+  },
+  {
+    "article_id": "1980-09-10-left-algo-m-s-sobre-los-cantes-de-lev",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "viendo que teorizando no adelantaba gran cosa en el campo de la didáctica flamenca... ejecutó varios cantes, hoy poco conocidos",
+        "target": "Yerga's demonstration of little-known cantes",
+        "rationale": "The passage presents Yerga as a pedagogical authority who teaches flamenco knowledge through demonstration rather than theory alone."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los habían escuchado en toda su salsa, en sus estilos puros y originarios, sin adulteración ni deformación",
+        "target": "historical styles of Levante cantes",
+        "rationale": "The passage defines proper versions of the cantes through purity and absence of adulteration or deformation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Los cantes de Levante son vuestros, aunque las esencias de algunos de ellos os hayan llegado de Málaga, Almería y Jaén... existe una taranta cuya raíz es malacitana",
+        "target": "origins and belonging of Levante cantes",
+        "rationale": "The text authorizes present ownership and interpretation of the cantes by tracing roots, essences, and historical continuity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and a peña are present in the scene, but they are primarily recipients of teaching rather than the source of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "historical and origin-based understanding of Levante cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-10-right-taranta-cl-sica-taranto-y-tarant",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "esos cantes legendarios aunque reconozcas que moralmente deberían estar depositados en la región en donde salieron: Levante",
+        "target": "legendary Levante cantes and their regional custody",
+        "rationale": "The passage frames historical cantes as materials that morally belong in their region of origin and should be preserved there."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "una relación de cantaores y cantes de vuestra tierra para que os sirva de catálogo y sepáis los que tenéis que localizar",
+        "target": "catalogue of Levante singers and cantes",
+        "rationale": "The passage mediates access to flamenco knowledge by providing a catalogue for locating historical cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions historical and legendary cantes from Levante, but the stronger visible discourse function is preservation/access rather than a full tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "historical Levante cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is short but sufficient for limited annotation."
+  }
+]

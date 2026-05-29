@@ -1,0 +1,316 @@
+[
+  {
+    "article_id": "1996-01-17-left-multitudinario-homenaje-de-despe",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "evidencia el cariño que a un hijo de la tierra le profesan sus paisanos",
+        "target": "Granada and the flamenco community honoring Juan Carmona \"El Habichuela\"",
+        "rationale": "The homage is framed as community recognition by paisanos, peña members, artists, and aficionados who sustain the artist's value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "flamenco ortodoxo, neoflamenco, flamenco-jazz, flamenco-salsa y flamenco-rock, suponiendo que a todo este conglomerado de músicas pueda anteponérseles el calificativo flamenco, circunstancia esta última que me cuesta admitir",
+        "target": "hybrid forms labeled as flamenco",
+        "rationale": "The author draws a boundary around legitimate flamenco by questioning whether hybrid commercial styles deserve the label."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En línea acertada estuvieron principalmente nuestras paisanas Rosario López y Carmen Linares",
+        "target": "the performers in the tribute concert",
+        "rationale": "The article explicitly evaluates the artistic quality of individual performers and accompaniment during the homage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Casi todos ellos son neófitos de este arte aunque a la vez potenciales aficionados",
+        "target": "the audience attracted by the more popular and hybrid programming",
+        "rationale": "The critic distinguishes novice mass spectators from flamenco aficionados and uses that distinction to frame proper reception and judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "El Habichuela is described as an example to follow, but the article's strongest functions are community homage, boundary work, and performance evaluation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial matices are mentioned for Chiquetete, but the passage does not develop a full anti-commercial authenticity argument beyond boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Juan Carmona's tribute and the distinction between orthodox flamenco and hybrid/popular forms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-01-18-left-la-noche-de-enrique",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "fue elegido por el jurado... como el ilustre intérprete que tal honor merecía",
+        "target": "Enrique Morente's recognition through the Compás del Cante award",
+        "rationale": "The award, jury, sponsor, protocol, and symbolic statuette constitute institutional authorization of Morente's flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el denso trabajo está en los anales de la historia flamenca y sería de necios no considerarlo",
+        "target": "Enrique Morente's body of work",
+        "rationale": "The passage canonizes Morente's work by placing it in the annals of flamenco history and treating its importance as undeniable."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "reconociendo las enseñanzas que le habían prodigado los viejos maestros",
+        "target": "Morente's relation to older flamenco masters",
+        "rationale": "Morente's authority is partly grounded in received teachings from old masters, marking lineage-based transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Morente says he is enamored of the orthodox, but the visible passage mainly reports his balance of innovation and received teaching rather than grounding value in tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The jury exercises judgment, but HERIT_02 better captures the institutional award mechanism and public authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Enrique Morente's institutional and historical standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-01-19-right-la-rumba-catalana-de-la-habanera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el flamenco cristalizó en ese territorio, en tiempos llamado Al-Andalus, y no en ninguna otra parte del territorio español",
+        "target": "the territorial origins of flamenco",
+        "rationale": "The article grounds flamenco legitimacy and explanation in documented origins, territorial roots, and historical development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una manera irrefutable de descartar en cualquier discusión que los gitanos crearon el flamenco \"per se\" es recurrir al silogismo",
+        "target": "claims that Gypsies created flamenco per se",
+        "rationale": "The author uses argumentative and scholarly authority to police a contested claim about flamenco origins."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "no reconocer la gran importancia que en la gestación de una parte del Arte Flamenco tuvieron los gitanos que se asentaron en el Sur",
+        "target": "Gypsy and regional contributions to flamenco formation",
+        "rationale": "Identity and regional group framing organize who is credited with shaping flamenco and where that authority is located."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "La rumba catalana, sin discutir su graduación flamenca, es un cante autóctono de Cataluña y más concretamente de Barcelona y su entorno.",
+        "target": "rumba catalana",
+        "rationale": "The conclusion defines the rumba catalana's flamenco-related status and local authenticity as an autochthonous Catalan/Barcelona cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The trigger 'reconocer' appears, but the passage does not involve official heritage recognition or institutional authorization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The geography of cante is discussed, but the visible text does not clearly create a hierarchy or canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco origins and the flamenco status of rumba catalana",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt supports the emitted origin, authority, and identity-framing codes."
+  },
+  {
+    "article_id": "1996-01-24-right-catalu-a-pionera-de-la-did-ctica",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "el primer enseñante de la guitarra en la forma que siempre se ha acompañado al flamenco y al cante popular: el sistema de rasgueado",
+        "target": "Joan Carles Amat as a guitar pedagogue",
+        "rationale": "The article positions Amat as an authoritative early teacher of the rasgueado system used to accompany flamenco and popular song."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "un curso de guitarra rasgueada o por acordes, que es posiblemente el más antiguo aparecido en imprenta",
+        "target": "printed guitar pedagogy for rasgueado",
+        "rationale": "The passage frames access to guitar knowledge through an early printed instructional method."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el primer método de guitarra por el sistema de rasgueado, como hoy se acompaña al cante y el baile flamencos",
+        "target": "rasgueado guitar accompaniment in flamenco",
+        "rationale": "The argument grounds contemporary flamenco accompaniment in a historical predecessor and continuity of method."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "veo nombres... Y observo que falta uno, uno que para mí es el primer enseñante",
+        "target": "histories of flamenco guitar that omit Joan Carles Amat",
+        "rationale": "The author corrects existing histories by asserting expert judgment about who should be recognized in the genealogy of guitar pedagogy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article was a communication to a congress, but the visible argument does not frame Amat through official heritage recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Calling Catalonia 'pionera' has ranking force, but the stronger coding is pedagogical authority and corrective critical argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Joan Carles Amat and Catalonia's place in flamenco guitar pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt supports the emitted codes."
+  },
+  {
+    "article_id": "1996-03-3-left-juan-talega",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "es una verdadera manifestación de fe de la transmisión oral de los clanes gitanos sobre nuestro arte",
+        "target": "Juan Talega and Gitano oral transmission of flamenco",
+        "rationale": "The passage explicitly frames flamenco knowledge as transmitted orally through family and clan lineage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los más fieles transmisores del arte flamenco de este siglo",
+        "target": "Juan Talega",
+        "rationale": "Talega is legitimated through faithful transmission, inheritance, and continuity of flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Como acontece con la mayoría de las figuras legendarias del flamenco",
+        "target": "Juan Talega's place in flamenco memory",
+        "rationale": "The article canonizes Talega as a legendary figure and an important reference for understanding earlier flamenco styles."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "el cante se devalúa ante los intentos innovadores de algunos, lo que apreciamos como meros hechos de imitación sin creatividad ni aporte personal",
+        "target": "some contemporary innovative attempts in cante",
+        "rationale": "The article devalues certain innovations as imitative and lacking personal contribution, implicitly defending a more legitimate flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Talega and criticizes innovations, but those judgments are better captured by canonization and authenticity boundary work."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano clan identity is central to transmission, but the visible evidence functions more specifically as oral-lineage pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Juan Talega as a transmitter and reference for serious flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

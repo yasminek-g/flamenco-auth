@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "1993-03-25-right-todos-los-festivales-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Enrique de Melchor, dentro del panorama guitarristico-flamenco actual, es una indiscutible primerísima figura en sus diversas facetas: compositor, solista y acompañante.",
+        "target": "Enrique de Melchor",
+        "rationale": "The passage canonizes Enrique de Melchor by ranking him as an indisputable leading figure across multiple flamenco guitar roles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Las composiciones melchorianas tienen la virtud de la justeza, son piezas bien medidas en su duración",
+        "target": "Enrique de Melchor's compositions",
+        "rationale": "The passage explicitly praises the quality and measured construction of his compositions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "para que el tema o el leitmotiv no se diluyan, ni tampoco resulte reiterativo",
+        "target": "Enrique de Melchor's compositional style",
+        "rationale": "The judgment defines quality through aesthetic criteria of proportion, thematic clarity, and avoidance of repetitiveness."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The listings mention memoria and homenajes, but these appear as routine festival dedications rather than sustained public heritage or safeguarding discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas organize several events, but the visible text does not grant them special community authority beyond administrative organization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Enrique de Melchor and his guitar compositions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the visible article is an event listing; only the closing evaluative quotation clearly supports coding."
+  },
+  {
+    "article_id": "1993-03-26-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a brief schedule line and gives no evaluative, authorizing, pedagogical, communal, heritage, or critical discourse."
+  },
+  {
+    "article_id": "1993-05-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "la afirmación de valores genuinos andaluces, pasaba por el subrayado de aquello que constituye señas de identidad de este Sur jondo, esto es, el Flamenco",
+        "target": "Flamenco as an Andalusian identity marker",
+        "rationale": "The passage presents flamenco as the sign of genuine Andalusian values, attributing proper cultural authenticity to it."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "señas de identidad de este Sur jondo, esto es, el Flamenco",
+        "target": "Andalusian collective identity",
+        "rationale": "The passage uses regional identity framing to define flamenco as representative of a community and its cultural belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Festivales promovidos en la mayoría de los casos por gentes sin convicción, desinformadas, que en su imprudente demanda de artistas por afán exclusivo de competir o por provinciano localismo",
+        "target": "festival promoters and the festival boom",
+        "rationale": "The editorial uses critical authority to delegitimate festival promotion driven by opportunism, ignorance, competition, and localism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions and subsidies are discussed, but the passage critiques political opportunity rather than authorized heritage recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text proposes a historiographic period called the Festival Flamenco, but the visible passage primarily critiques the festival phenomenon rather than building a canon or ranking artists."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco as Andalusian identity and the festival flamenco phenomenon",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article legitimates flamenco as a genuine Andalusian identity marker while sharply delegitimating much of the festival boom."
+  },
+  {
+    "article_id": "1993-05-4-left-silverio-franconetti-aproximaci-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los cantaores que pienso ha sido básico y fundamental en la historia y el desarrollo del arte flamenco: Silverio Franconetti. Figura cantaora y creativa considerada como el gran genio del cante del siglo XIX.",
+        "target": "Silverio Franconetti",
+        "rationale": "The passage canonizes Silverio as a foundational figure and great nineteenth-century genius of cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "se han conservado en Madrid a través de una línea que parte de Silverio y que corresponde al Chato de Jerez, con discípulo de Silverio",
+        "target": "transmission of older cante forms from Silverio through Chato de Jerez",
+        "rationale": "The passage frames knowledge as preserved through a lineage from master to disciple."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "esta jabera antigua y la rondeña del Negro, también se han conservado en Madrid a través de una línea que parte de Silverio",
+        "target": "jabera antigua and rondeña del Negro",
+        "rationale": "The passage grounds the value of these cantes in continuity and preservation through a named historical line."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author invokes documents and research, but the visible text mainly establishes historical evidence rather than exercising critic or expert authority to police boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Silverio Franconetti and cantes transmitted through his line",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is truncated, the visible beginning and ending provide sufficient evidence for canonization and lineage transmission."
+  },
+  {
+    "article_id": "1993-05-10-left-el-disparate-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ante la falta de coherencia y aparente trabazón lógica de la poesía flamenca, es preciso estar muy alerta y tomar precauciones acerca de la posible irracionalidad de las letras",
+        "target": "flamenco song lyrics",
+        "rationale": "The passage defines interpretive and aesthetic criteria for judging flamenco poetry, especially coherence, logic, subtlety, and apparent irrationality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "fenómenos ininteligibles exigiendo «exégetas andaluces» para su correcta lectura",
+        "target": "interpretation of difficult flamenco coplas",
+        "rationale": "The passage grants interpretive authority to expert readers capable of correctly decoding obscure flamenco lyrics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "no cabe la menor duda de la total falta de lógica de muchas de estas composiciones populares",
+        "target": "popular flamenco compositions",
+        "rationale": "The author explicitly evaluates many popular compositions as lacking logic, while situating that judgment within a critical interpretation of flamenco lyric discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions primitive communities and bodas gitanas, but these references do not clearly organize flamenco authority or belonging in the visible passage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The discussion implies interpretation and access to meaning, but it does not thematize learning institutions, outsiders, or transnational access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco lyrics and their interpretation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated but contains a coherent visible argument about the critical interpretation of flamenco lyrics."
+  }
+]

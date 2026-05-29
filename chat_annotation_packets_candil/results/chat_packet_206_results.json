@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "1990-01-13-left-jorge-camacho",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "desde su autenticidad genial avalan y rubrican los más altos valores musicales del pueblo andaluz. El flamenco, expresión espiritual con categoría de arte ya sin fronteras.",
+        "target": "flamenco as Andalusian musical art",
+        "rationale": "The passage explicitly uses authenticity to authorize flamenco as a high-value spiritual art beyond borders."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Jorge Camacho aporta una nueva luz a la pintura cubana. Un nuevo color. Un nuevo dibujo.",
+        "target": "Jorge Camacho's artistic work",
+        "rationale": "The article evaluates Camacho's artistry through explicit praise of his originality and expressive contribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Goya, Falla, Charlot, Picasso, Juan Ramón, Zuloaga, los Machado... y entre ellos Camacho, dejaron y están definitivamente dejando claro el desconocimiento de causa y frivolidad con que un sector del 98 y la cursilería de turno vio el flamenco.",
+        "target": "Camacho and a canon of major artists validating flamenco",
+        "rationale": "The passage places Camacho among a canon of exemplary cultural figures whose authority elevates flamenco and rebukes earlier dismissals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as duende, arte, and spiritual expression appear, but the strongest visible discourse is broad evaluation and canonization rather than a distinct applied aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "flamenco and Jorge Camacho's relation to it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-13-right-antonia-la-negra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Yo nunca había escuchao a nadie cantar, na más que a mi padre que era de Triana... ¡Luisa, escucha a esta niña, escucha ese tercio!",
+        "target": "Antonia's flamenco learning through family listening and correction",
+        "rationale": "The passage frames Antonia's knowledge as orally and familially transmitted through listening to her father."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "lo difícil pa cantar es esto (compás con los nudillos sobre la mesa), aquí, sin guitarra y sin na, que son las bulerías de los gitanos, ahí es donde hay que morir.",
+        "target": "bulerías and compás-based flamenco singing",
+        "rationale": "Compás without guitar is presented as the decisive criterion of difficulty and value in this flamenco form."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Hoy hay una serie de gente que quieren saber de flamenco que no saben, algunos saben flamenco de libro, y eso no es así; el flamenco hay que vivirlo.",
+        "target": "book-based flamenco knowledge versus lived insider knowledge",
+        "rationale": "The speaker draws an epistemic boundary between people who know flamenco only from books and those who know it through lived experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The father says Tomás Pavón was the best, but the visible passage treats this mainly as biographical memory rather than sustained canon formation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "An academy is mentioned hypothetically in a past scene, but the visible evidence does not center institutional access to learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community", "criticism"],
+      "target": "Antonia's cante knowledge and lived flamenco authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpts provide sufficient evidence for these codes."
+  },
+  {
+    "article_id": "1990-01-15-right-de-desp-naperros-p-arriba",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "No es extraño que cualquier andaluz emigrado sienta nostalgia de su patria chica y de las señas de identidad artísticas y culturales que lo acompañan y definen.",
+        "target": "flamenco as rooted Andalusian cultural identity beyond Andalusia",
+        "rationale": "The passage grounds flamenco's present value outside Andalusia in roots, identity, continuity, and emigrant memory."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "donde haya un pequeño núcleo de nostálgicos de su cante, su baile... se creen peñas flamencas, casas de Andalucía y reuniones de cabales.",
+        "target": "diasporic Andalusian and aficionado communities",
+        "rationale": "Peñas, casas de Andalucía, and gatherings of cabales are presented as community structures that sustain flamenco belonging and authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "encontraremos aficionados a este arte, puramente andaluz y universalmente reconocido, querido y envidiado.",
+        "target": "flamenco as Andalusian identity and universal art",
+        "rationale": "The passage frames flamenco through an Andalusian identity claim that organizes belonging while also extending recognition beyond the region."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article mentions legacy and not forgetting, but it does not clearly shift into safeguarding or public heritage-management discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'puramente andaluz' authorizes origin, but it is better captured as tradition/roots than as a separate authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community"],
+      "target": "flamenco practice and belonging north of Despeñaperros",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-16-left-interrogantes-dimes-y-diretes-so",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Este libro, desde mi óptica personal, está plagado de inexactitudes al haberse escrito únicamente a base de informaciones orales que han resultado ser de poca credibilidad.",
+        "target": "Ricardo Molina's book and its account of flamenco history",
+        "rationale": "The author explicitly criticizes the book's accuracy and evidentiary basis."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Para escribir un libro sobre algo tan desconocido como nuestro arte, no hay más remedio que servirse de los frutos de la investigación en todo tipo de archivos.",
+        "target": "proper authority for writing flamenco history",
+        "rationale": "The passage asserts an expert research standard and uses it to police who can make reliable claims about flamenco history."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "lo que debiera ser recto magisterio, sólo sirve para crear confusión y equivocar a quien únicamente deseaba conocer la verdad.",
+        "target": "books as mediators of flamenco knowledge",
+        "rationale": "The passage evaluates books as failed pedagogical authorities that should teach flamenco knowledge but instead mislead readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The repeated language of truth concerns factual accuracy about historical figures, not authenticity of flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "pedagogy"],
+      "target": "flamenco historiography and knowledge authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpts are sufficient for the source-critique and knowledge-authority codes."
+  },
+  {
+    "article_id": "1990-01-18-right-opini-n-a-las-caba-as-baj-a-los-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "es de justicia que a un arte se le ponga en el lugar más elevado cuando detrás se encierra la verdad más estremecedora",
+        "target": "flamenco as a truthful art deserving elevated recognition",
+        "rationale": "The passage authorizes flamenco's place in an elite setting through a claim about its profound truth and artistic legitimacy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Fernanda que recibe la Distinción de manos de don Manuel del Valle, alcalde de Sevilla, que representa a su ciudad, al flamenco y a toda la afición del mundo",
+        "target": "Fernanda de Utrera and flamenco public recognition",
+        "rationale": "A civic official and public award mechanism confer institutional recognition on Fernanda and flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su música y su letra, su expresividad impagable, merecen este palacio, el brillo de estas joyas",
+        "target": "flamenco's artistic value",
+        "rationale": "The passage explicitly evaluates flamenco's music, lyrics, and expressive power as worthy of the highest ceremonial setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article contrasts humble and palace settings, but the contrast is about social elevation and recognition rather than participatory public/private flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The award suggests canonization, but the visible passage is better captured as institutional recognition and broad evaluation than a distinct hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "heritage", "criticism"],
+      "target": "Fernanda de Utrera and flamenco's status as elevated art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

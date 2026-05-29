@@ -1,0 +1,278 @@
+[
+  {
+    "article_id": "1991-11-23-left-bendito-seas-t-tulo-de-opera-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "cuando escriben sobre aquella época, lo hacen sin base alguna y de forma peyorativa",
+        "target": "writers who dismiss the Opera Flamenca period",
+        "rationale": "The author uses critical authority to contest a received negative boundary around Opera Flamenca and accuses other commentators of judging without basis."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "creen, por su ignorancia, que decir «Opera Flamenca» es de lo más bajo que se pueda expresar. Y no es así",
+        "target": "the category 'Opera Flamenca'",
+        "rationale": "The passage directly evaluates and reverses a negative judgment of Opera Flamenca, defending the category against charges of low artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la capital de España se convirtiera en la única «Meca» de nuestro arte en sus tres facetas",
+        "target": "Madrid as a flamenco center during the Opera Flamenca period",
+        "rationale": "The passage elevates Madrid to a privileged historical status as a central flamenco site, constructing a hierarchy of cultural importance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text says artists followed the taste of the paying public and filled theatres, but it explains market pressure rather than contrasting participatory/private flamenco with spectatorial/public flamenco as a value boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The visible passage discusses theatres, paying publics, and commercial interests, but it does not frame commerce as weakening or strengthening flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Opera Flamenca and its historical reputation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; the visible excerpt is a polemical defense of Opera Flamenca against prior critical depreciation."
+  },
+  {
+    "article_id": "1991-11-24-left-los-cantes-flamencos-de-daniel-p",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Pineda Novo se inscribe en una corriente que viene de lejos y que cuenta con suficiente solera y tradición",
+        "target": "Daniel Pineda Novo's Cantes flamencos",
+        "rationale": "The review legitimates the book by situating it within a long-standing tradition with solera."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su identificación con lo popular, con lo sentidamente flamenco, es verdaderamente notable",
+        "target": "Daniel Pineda Novo's flamenco coplas",
+        "rationale": "The passage explicitly praises the quality and flamenco feeling of the poems."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ha sabido estar a la altura de los mejores hitos de esta tradición",
+        "target": "Daniel Pineda Novo within the tradition of flamenco poetry",
+        "rationale": "The passage ranks the author against exemplary milestones of a recognized tradition, constructing canon-like comparative status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'patrimonio de la poesía flamenca' appears, but in context it functions more as a literary corpus or stock of themes than as public heritage discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The prologue writer and specialists are mentioned, but the text does not clearly position them as authoritative teachers or mediators of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Daniel Pineda Novo's Cantes flamencos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-11-24-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el intento es honrado, el libro se lee con facilidad",
+        "target": "Salvador Aleu Zuazu's Flamencos de la Isla en el recuerdo",
+        "rationale": "The reviewer explicitly evaluates the book's merit, readability, and limitations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "los cabeza de serie de cada época, en los fundadores de las dinastías y familias cantaoras de La Isla",
+        "target": "artists and lineages from San Fernando/La Isla",
+        "rationale": "The passage argues that the book should focus on leading figures, founders, dynasties, and families, creating a hierarchy of historical importance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "sí tiene la virtud de motivarnos con elegancia para proseguir en su busca",
+        "target": "readers' pursuit of flamenco knowledge",
+        "rationale": "The review frames the book as a written mediator that motivates readers to continue seeking knowledge about flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions 'buenos aficionados', but it uses the phrase to describe human interest rather than to grant aficionados authority to recognize or judge flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory and biographical cataloguing are present, but the visible passage does not clearly frame them as public heritage safeguarding or community heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco biographical books and artist catalogues",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible excerpts support a mixed review and a hierarchy of relevant artists."
+  },
+  {
+    "article_id": "1991-11-26-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "con la audición de discos como el que nos ocupa, estamos complementando sonoramente toda la documentación que llega a nuestro poder",
+        "target": "recordings and sound archives as sources of flamenco knowledge",
+        "rationale": "The passage frames recordings as mediated access to flamenco knowledge that complements documentary learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "la loable labor de archivo sonoro desarrollada y difundida por aficionados como Gonzalo Rojo, Andrés Zarrías, Yerga Lancharro, Antonio Reina, Miguel Aguilar o Pepe Claro",
+        "target": "aficionados who archive and disseminate flamenco recordings",
+        "rationale": "The passage credits named aficionados with sustaining and disseminating flamenco knowledge through archival work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "claros ejemplos de creatividad, personalidad artística y adecuado tratamiento de los estilos que conforman nuestro arte",
+        "target": "artists and styles represented on the recording",
+        "rationale": "The reviewer applies aesthetic criteria such as creativity, personality, and stylistic treatment to assess the recorded performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The quoted judgment that Concha Vargas is 'la bailaora gitana más completa de la actualidad' is clearly hierarchical, but it appears in a separate appended profile rather than the main discography review, so it is not emitted under the default 0–3 code limit."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The review uses añejo and solera language, but the stronger discourse function is evaluative and pedagogical rather than tradition-continuity authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "archival recordings, local Linares artists, and aficionado archival labor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-01-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "una manifestación artística, peculiarísima, plena de sentido trágico, y musicalmente única: nos estamos refiriendo, lógicamente, al «flamenco»",
+        "target": "flamenco",
+        "rationale": "The editorial asserts flamenco's genuine artistic uniqueness and seriousness against reductive external characterization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "acentuar el carácter específicamente andaluz de lo jondo",
+        "target": "flamenco as Andalusian cultural expression",
+        "rationale": "The passage frames flamenco through Andalusian cultural identity and belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Que a éste se le meta en el mismo saco junto a chistes, romerías, ferias y procesiones nos parece tan poco riguroso como de mal gusto",
+        "target": "José M. Vaz de Soto's treatment of flamenco within Andalusian culture",
+        "rationale": "The editorial uses critical authority to police a boundary between flamenco and stereotyped or frivolous Andalusian cultural items."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The editorial strongly rejects lumping flamenco with frivolous stereotypes, but the emitted CRIT_04 better captures the explicit critical boundary-policing discourse without overcoding purity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text criticizes Vaz de Soto's generalization, but the stronger function is expert boundary critique rather than simple evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco as serious Andalusian jondo culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

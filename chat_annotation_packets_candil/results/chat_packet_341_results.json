@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "1997-09-14-left-entrega-de-premios-de-la-c-tedra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Conceder los Premios Nacionales de la Cátedra de Flamencología... a la mejor labor desarrollada por los siguientes artistas, autores y entidades",
+        "target": "premiados por la Cátedra de Flamencología",
+        "rationale": "The awards rank and canonize artists, authors, entities, and activities through named prize categories such as honor, best work, and field-specific recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "El jurado encargado de conceder... lo integraron... Paco Cepero... director de la Cátedra de Flamencología... subdirector... secretario de la Cátedra y del jurado",
+        "target": "jurado y Cátedra de Flamencología",
+        "rationale": "The text presents an expert/institutional jury as authorized to confer critical recognition and classify merit within flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "artists, authors, entities, and flamenco activities recognized by the Cátedra prizes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Awards discourse clearly legitimates through hierarchy and expert recognition; routine sponsorship details were not coded."
+  },
+  {
+    "article_id": "1997-09-16-right-cr-nica-del-xxv-congreso-de-acti",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la generosidad y capacidad organizativa de las Peñas malagueñas y de su afición de oro, salvaron un Congreso que pudo no celebrarse",
+        "target": "Peñas malagueñas y afición local",
+        "rationale": "The local peñas and afición are credited as community actors whose commitment sustains a major flamenco congress."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "elevar a una altura digna la seriedad de nuestros trabajos congresuales y hacernos pasar unos días inolvidables",
+        "target": "organización del Congreso de Málaga",
+        "rationale": "The chronicle evaluates the organization and seriousness of the congress positively rather than merely describing it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text uses rescue and continuity language for the congress, but the visible excerpt does not clearly frame flamenco as public heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "Málaga peñas, local afición, and congress organization",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible passages provide sufficient evidence for community authority and evaluative praise."
+  },
+  {
+    "article_id": "1997-09-20-right-las-bodas-de-plata-del-congreso-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "La valentía de los miembros de la Peña Flamenca \"Juan Breva\"... ha servido para que el Congreso de las \"Bodas de Plata\" se llevara a cabo",
+        "target": "Peña Flamenca Juan Breva",
+        "rationale": "A peña is represented as the community institution whose courage and responsibility made the congress possible."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "No fue tan brillante en los fandangos de Huelva... Daniel Casares evidenció... fuerza... soltura... dotes de composición... Buen final de fiesta el ofrecido por esta artista malagueña",
+        "target": "performances at the XXV Congreso de Arte Flamenco",
+        "rationale": "The article explicitly reviews multiple performances, balancing praise and criticism of artists and pieces."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "evidenció su conocimiento de los personalismos malacitanos... soltura en el toque y dotes de composición... basando su arte en el taconeo... mostrando formas y giros propios",
+        "target": "flamenco performance quality",
+        "rationale": "The evaluations are grounded in aesthetic criteria such as stylistic knowledge, touch, composition, taconeo, forms, and giros."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase about not cutting the trajectory of the congress suggests continuity, but it concerns event continuity rather than tradition authorizing proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["community", "criticism"],
+      "target": "congress organizers and reviewed performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Performance criticism is the dominant discourse; community authority is present through the peña’s sustaining role."
+  },
+  {
+    "article_id": "1997-09-22-right-juan-manuel-vill-n-y-su-cancione",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "aunque comprendí que distaba bastante de la Colección de Cantes Flamencos que, en 1881 publicó, con sentido científico, Antonio Machado y Alvarez, Demófilo",
+        "target": "Juan Manuel Villén's Cancionero",
+        "rationale": "The article assesses Villén's book by comparing it unfavorably with Demófilo's more scientifically framed collection."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Todas las citas y referencias que hacemos en nuestro artículo se han tomado de esta edición... Indagando en archivos y bibliotecas y repasando libros antiguos, pude encontrar, por fin, algunos datos",
+        "target": "bibliographic and archival reconstruction of Villén",
+        "rationale": "The author grounds the evaluation and reconstruction of Villén in scholarly bibliographic practice and archival authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The author calls himself a buen aficionado, but this self-description does not clearly grant community authority to judge or sustain flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The contrast with Demófilo's scientific collection authorizes scholarly value, but it does not make a direct authenticity claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Villén's Cancionero and its scholarly reconstruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; coding is limited to the visible bibliographic and evaluative passages."
+  },
+  {
+    "article_id": "1997-09-30-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Premio especial \"Silverio\", al cantaor o cantaora más completo... Premio Especial \"Antonio\", al bailaor o bailaora más completo... Premio especial \"Ziryab\", al guitarrista más completo",
+        "target": "Concurso Nacional de Arte Flamenco prize structure",
+        "rationale": "The contest creates formal hierarchies and exemplary categories by ranking completeness and naming prize divisions after canonical figures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Obtuvo un magnífico triunfo, siendo de los artistas flamencos más aplaudidos... Calixto Sánchez... fue uno de los triunfadores",
+        "target": "performers at the Mairena del Alcor festival",
+        "rationale": "The noticiario evaluates festival performances through judgments of triumph, applause, and relative success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Fernando de la Morena... nos enganchó con una soberana lección de compás y de cómo cantar gitano",
+        "target": "Fernando de la Morena's performance",
+        "rationale": "The praise applies flamenco aesthetic criteria, especially compás and a valued manner of singing, to define performance quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase lección de compás is evaluative metaphor rather than a literal pedagogical authority or teaching relation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase cantar gitano carries identity language, but the visible passage uses it mainly as an aesthetic judgment rather than developed identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "contest categories and festival performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Contest rules are coded only where they create hierarchy; ordinary administrative details were not coded."
+  }
+]

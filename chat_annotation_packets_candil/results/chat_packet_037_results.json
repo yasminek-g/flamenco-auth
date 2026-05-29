@@ -1,0 +1,260 @@
+[
+  {
+    "article_id": "1981-11-13-left-presencia-jonda-en-pablo-gargall",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Un artista que supo modelar el hierro con las yemas de los dedos.",
+        "target": "Pablo Gargallo y su obra escultórica",
+        "rationale": "The passage explicitly praises Gargallo's artistic skill and frames his work as aesthetically significant."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "está todo el arrebato de la sangre y la gracia embrujada en gesto jondísimo: el reposo, la firmeza, la pasión y el desplante del auténtico señorío",
+        "target": "la representación escultórica de la bailaora española",
+        "rationale": "The passage applies aesthetic criteria such as jondura, passion, firmness, and señorío to define the flamenco value of the sculpture."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "para convertirse en el más hondo pálpito de las raíces",
+        "target": "la presencia jonda en la obra de Gargallo",
+        "rationale": "The work is authorized by being linked to deep roots rather than remaining a merely anecdotal representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténtico señorío' is evaluative, but it modifies señorío rather than making a clear authenticity claim about flamenco itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition", "authenticity"],
+      "target": "Gargallo's flamenco-themed sculpture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full article visible; codes focus on evaluative and roots-based claims in the visible review text."
+  },
+  {
+    "article_id": "1981-11-13-right-diego-clavel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los que estamos apegaos a las raíces no pegamos el bombazo para luego caer. Si el cante está basao en las raíces, creo que no se perderá.",
+        "target": "Diego Clavel's cante and cante grounded in roots",
+        "rationale": "The passage grounds lasting flamenco value and survival in attachment to roots."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Este cante se lo escuché a Antonio Mairena... sólo había escuchao de esa manera en Mairena",
+        "target": "Diego Clavel's learning and reinvention of the cambio de Manuel Molina",
+        "rationale": "The singer frames his knowledge of the cante as acquired through listening to an authoritative performer and then reworked in practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "En aquellos años ganar el concurso de Mairena era lo máximo para un aficionado; prueba de ello es que de allí salió Camarón, Meneses...",
+        "target": "the Mairena contest and its status among aficionados",
+        "rationale": "The contest is hierarchized as the highest achievement for an aficionado and linked to exemplary later artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "References to alma, entrañas, and force are expressive, but they do not clearly function as criteria for judging flamenco quality in the visible excerpt."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Antonio Mairena is an authoritative model, but the excerpt emphasizes listening and imitation rather than an explicit teacher or institutional authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy", "criticism"],
+      "target": "Diego Clavel's cante and rooted artistic trajectory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations are limited to the visible beginning, evidence windows, and ending context."
+  },
+  {
+    "article_id": "1981-11-15-right-el-testimonio-jondo-de-j-m-cabal",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "para hacerse patrimonio del pueblo",
+        "target": "Caballero Bonald's flamenco letras/coplas",
+        "rationale": "The passage frames the value of the letras through their possible transformation into collective popular patrimony."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "la posibilidad de sufrir alteraciones a bordo de ese bello vehículo que es la transmisión de boca a boca",
+        "target": "oral circulation of flamenco poetry",
+        "rationale": "The passage explicitly describes oral transmission from mouth to mouth as the vehicle through which flamenco poetry changes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "entonces tú serás la copla verdadera",
+        "target": "the copla once detached from its written author and taken up by singers",
+        "rationale": "The quoted framework defines the true copla as one that becomes lived and sung by others rather than remaining only authored writing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'verdadero ramillete lírico' praise the lyrics, but the dominant discourse function is heritage/oral transmission rather than sustained critical evaluation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text discusses oral circulation and popular uptake, but does not clearly frame safeguarding, living heritage management, or public responsibility."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "authenticity"],
+      "target": "Caballero Bonald's flamenco letras as potential popular coplas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; the visible excerpt clearly supports patrimony and oral-transmission coding."
+  },
+  {
+    "article_id": "1981-11-20-left-del-congreso-de-almeria-y-una-gr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "todo respondió a un plan preconcebido para resaltar el mairenismo",
+        "target": "the Congress of Almería organizers and mairenismo",
+        "rationale": "The author uses critical authority to accuse the congress apparatus of manipulating recognition around mairenismo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la desastrosa calidad de la grabación que, de ninguna forma acepto como provinente de mi archivo",
+        "target": "the distributed recording/cassette attributed to the author's archive",
+        "rationale": "The passage explicitly evaluates the recording quality negatively and rejects its attribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "¿por qué, pongamos por caso, se olvidaron de Don Antonio Fosforito? ¿Es que no se considera uno de los mejores cantaores desde el ya lejano Concurso de Córdoba?",
+        "target": "recognition of Mairena versus Fosforito and other major singers",
+        "rationale": "The passage contests a hierarchy of recognition by invoking Fosforito's status as one of the best cantaores."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "IAhI, alguien me dice al oído que no es gitano. Yo tampoco lo soy, ni siquiera andaluz",
+        "target": "identity-based recognition within flamenco institutions",
+        "rationale": "The passage presents gitano and Andalusian identity as categories affecting recognition and belonging in flamenco authority disputes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article defends the good of cante, but does not clearly ground proper flamenco in tradition, roots, or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "community"],
+      "target": "Congress of Almería authority, recordings, and artist recognition",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; codes reflect the author's explicit critique of congress authority and recognition politics."
+  },
+  {
+    "article_id": "1981-11-20-right-los-gitanos-y-el-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el pueblo gitano... merece un crédito y un cariño muy contrario a la actitud de algunas poblaciones españolas, donde están intentando marginarlo",
+        "target": "the gitano people in relation to Spanish society and flamenco discourse",
+        "rationale": "The passage foregrounds gitano identity and marginalization as a central frame for evaluating belonging and representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "reconociendo su extraordinaria calidad de interpretación y su difícil habilidad para la recreación no los considere como creadores de ningún estilo de cantes",
+        "target": "claims about gitanos as flamenco creators versus interpreters",
+        "rationale": "The author draws a critical boundary between interpretation/recreation and authorship of cante styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "¿Que su arte es excepcional? Por supuesto. ¿Que son unos grandes intérpretes? Seguro.",
+        "target": "gitano performers' artistry and interpretation",
+        "rationale": "The passage explicitly evaluates gitano performers as exceptional artists and great interpreters, even while limiting creator status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The preserved archive document is historical evidence, but the passage does not frame flamenco as heritage to be safeguarded or publicly managed."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The closing boundary between flamenco and gitanos is classificatory and critical, but it is not framed as purity or fake/real flamenco boundary-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "criticism"],
+      "target": "gitano authority, interpretation, and creator status in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on the visible beginning, evidence window, and ending context."
+  }
+]

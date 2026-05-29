@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1994-11-32-left-paco-de-luc-a-francisco-del",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "El primer profesor de guitarra de Paco de Lucía fue su propio padre, luego su hermano Ramón y decisivamente «Niño Ricardo».",
+        "target": "Paco de Lucía's flamenco guitar formation",
+        "rationale": "The passage frames Paco's knowledge through familial and master-lineage transmission, especially the decisive role of Niño Ricardo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "en la música de Paco de Lucía hay mucho de rabia reivindicativa... con las pinceladas tiernas, delicadas y llenas de majestad",
+        "target": "Paco de Lucía's music",
+        "rationale": "The passage explicitly evaluates the expressive quality and emotional force of Paco's music."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "eran el jubiloso tributo que pagamos al genio",
+        "target": "Paco de Lucía",
+        "rationale": "Calling the homage a tribute to a genius elevates Paco into exemplary, canonized status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text uses aesthetic vocabulary, but the clearest function is broad evaluative praise already captured under CRIT_01."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Paco de Lucía and his guitar music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt gives enough evidence for these codes."
+  },
+  {
+    "article_id": "1994-11-33-left-paco-de-luc-a-es-aparte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Paco de Lucía es el gran revolucionario de la guitarra flamenca en el siglo XX; ha liderado decididamente su evolución durante los últimos treinta años",
+        "target": "Paco de Lucía",
+        "rationale": "The passage creates a clear historical hierarchy by making Paco the central revolutionary figure of twentieth-century flamenco guitar."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "tiene su raíz y origen en un aprendizaje rigurosamente disciplinado, con un antecedente, su padre, y un aliento, su hermano Ramón de Algeciras",
+        "target": "Paco de Lucía's artistic development",
+        "rationale": "The text legitimates Paco's creativity by grounding it in disciplined familial learning and early embodied practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "asombraba por su conocimiento tan preciso y tan amplio... por su dominio técnico, por su conocimiento, por su versatilidad y por su genialidad",
+        "target": "Paco de Lucía's guitar artistry",
+        "rationale": "The passage names technical mastery, knowledge, versatility, and genius as criteria for evaluating flamenco guitar quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The trigger word creativity appears, but the learning discourse is familial and disciplined rather than institutional or transnational access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Paco de Lucía as a revolutionary flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but visible evidence strongly supports the codes."
+  },
+  {
+    "article_id": "1994-11-34-left-jos-luis",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el gran maestro de la guitarra flamenca, que divide este arte histórico en un antes y un después de él",
+        "target": "Paco de Lucía",
+        "rationale": "The passage canonizes Paco by making him the dividing point in the history of flamenco guitar."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Sus motivos verdaderos tenían que ver con el orgullo de una raza, de un linaje de artistas, con la llamada de una sangre rebelde",
+        "target": "Paco de Lucía's refusal to perform",
+        "rationale": "The text frames Paco's action through identity, race, lineage, and inherited artistic dignity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "la guitarra flamenca, denostada hasta por las autoridades académicas andaluzas, que no han sabido crearle un sitio en los Conservatorios de música",
+        "target": "flamenco guitar",
+        "rationale": "The passage explicitly contests institutional exclusion from conservatories and argues for formal recognition of flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad praise of Paco's artistry, but the stronger and more specific evaluative function is canon/hierarchy under CRIT_03."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Awards and institutions appear, but the passage does not frame flamenco as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Paco de Lucía and the dignity of flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-11-35-right-glosas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "La guitarra de Paco de Lucía es simultáneamente enraizada y fundacional, nutrida en la hondura de la tradición",
+        "target": "Paco de Lucía's guitar music",
+        "rationale": "The passage grounds Paco's artistic value in roots, tradition, ancestry, and continuity while also presenting him as foundational."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la velocidad de su técnica no es únicamente una consecuencia de su disposición anatómica y sus horas de estudio, sino también... el resultado de una furia comunicativa",
+        "target": "Paco de Lucía's guitar technique",
+        "rationale": "The text defines quality through technique transformed into expressive and communicative force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Tardará mucho tiempo en nacer, si es que nace un artista de la guitarra que pueda cargar con el peso de esta música prodigiosamente flamenca",
+        "target": "Paco de Lucía",
+        "rationale": "The passage ranks Paco as a nearly unsurpassable guitarist and canonizes his music as exemplary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'creador auténtico' appears, but the stronger discourse function is tradition/continuity rather than a distinct authenticity claim."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory and marginalization are invoked poetically, but the passage does not clearly frame public heritage safeguarding or community heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Paco de Lucía's flamenco guitar music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; codes are based only on visible quoted review text."
+  },
+  {
+    "article_id": "1995-01-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la defensa del Flamenco por la vía de la precisión, del acotamiento y de la redefinición de este o aquel contenido jondo",
+        "target": "flamenco criticism and polemical interpretation",
+        "rationale": "The editorial grants critical discourse the authority to define, delimit, and redefine flamenco content."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Manuel Martín Martín por su valentía, por su fulgurante trayectoria como crítico de Flamenco; Agustín Gómez por su acreditada dedicación al mundo de la crítica",
+        "target": "Manuel Martín Martín and Agustín Gómez",
+        "rationale": "The passage explicitly authorizes named critics through their recognized trajectories and dedication to flamenco criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The editorial mentions delimiting and redefining jondo content, but it does not itself draw a clear pure/impure or proper/improper flamenco boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'extramuros del Flamenco' appears, but it concerns verbal aggression outside the field rather than a clear insider/outsider authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco critical debate and critic authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

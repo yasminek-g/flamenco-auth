@@ -1,0 +1,249 @@
+[
+  {
+    "article_id": "1986-11-4-right-la-poes-a-popular-de-manuel-balm",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "el resto de la comunidad, si las encuentra en sintonía con sus inquietudes lúdicas y anímicas, harán patrimonio común y con el paso del tiempo, pasarán a ser tenidas por populares",
+        "target": "las composiciones populares/flamencas de Balmaseda",
+        "rationale": "The passage frames popular flamenco poetry as becoming shared community patrimony through collective uptake and memory over time."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "harán patrimonio común y con el paso del tiempo, pasarán a ser tenidas por populares",
+        "target": "popular flamenco coplas",
+        "rationale": "The text explicitly frames these compositions as common patrimony and public cultural value rather than merely individual authorship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The community is central to recognition, but the passage emphasizes patrimonialization more than community authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "popular flamenco coplas as common patrimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Annotated only the visible evidence window and ending context despite truncation."
+  },
+  {
+    "article_id": "1986-11-8-right-cantaores-conocidos-compa-eros-y",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "la naturaleza que importaba era la de ser hijo de Mairena del Alcor como ellos",
+        "target": "Antonio Mairena's local belonging",
+        "rationale": "The passage frames the singer's authority and identity through local belonging rather than only ethnic origin."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio podía alguna vez mostrarse convencido de su importancia",
+        "target": "Antonio Mairena",
+        "rationale": "The passage invokes Mairena's exceptional importance and status within flamenco memory, contributing to canonical hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Manolo Caracol era genial para algunos y mucho menos o apenas nada para otros",
+        "target": "Manolo Caracol",
+        "rationale": "The passage explicitly presents contested critical evaluation of Caracol's artistic stature."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible text mentions listening to recordings, but does not clearly frame this as embodied, oral, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and Manolo Caracol",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; codes rely only on visible passages."
+  },
+  {
+    "article_id": "1986-11-11-right-sobre-el-piyayo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Málaga la cantaora había empezado a olvidar a una de sus figuras flamencas más representativas y trascendentes",
+        "target": "memory of El Piyayo",
+        "rationale": "The passage treats flamenco memory and forgetting as a collective cultural problem around a representative figure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la principal labor de mantenimiento, conservación, vigilancia y mejoramiento de la pureza del cante la llevan a cabo las «peñas», que agrupan en sus cenáculos a aficionados",
+        "target": "peñas and aficionados",
+        "rationale": "Peñas and aficionados are explicitly granted authority to maintain, conserve, monitor, and improve cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "sus «ayes» han vuelto a ponerse de moda para alcanzar ese «status» de solera y definitiva consagración",
+        "target": "El Piyayo's cante",
+        "rationale": "The passage constructs canon-like status by describing renewed recognition, solera, and definitive consecration."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pureza del cante' appears, but the passage does not clearly draw a genuine/impure exclusion boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "El Piyayo and the peñas' role in preserving cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible window gives sufficient evidence for memory-work and peña authority."
+  },
+  {
+    "article_id": "1986-11-13-left-ellos-los-protagonistas-dicen-cu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Curro Mairena, uno de los mejores siguiriyeros que, recordamos, es un eslabón más de la Casa de los Mairena",
+        "target": "Curro Mairena",
+        "rationale": "The passage ranks Curro Mairena among the best siguiriyeros and situates him in a valued flamenco lineage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "siempre al reparo de su hermano y maestro",
+        "target": "Curro Mairena's relation to Antonio Mairena",
+        "rationale": "The passage frames Curro's artistry through a master-brother relationship that carries lineage and transmission authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Con cantaores como mi hermano Manolo, Menese, Curro Malena y muchos más..., el mairenismo sigue vivo",
+        "target": "mairenismo",
+        "rationale": "The passage presents mairenismo as a continuing tradition kept alive through present singers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Curro Mairena and mairenismo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but visible evidence supports hierarchy, lineage, and continuity claims."
+  },
+  {
+    "article_id": "1986-11-18-left-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Porque si se suena gitano se puede cantar gitano, si no, no hay ná que hacer",
+        "target": "gitano sound as a marker of flamenco belonging",
+        "rationale": "The passage makes identity-based sound the condition for legitimate gitano singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "eso es un sello personal, otra forma de quejarse y de matizar el cante",
+        "target": "gitano cante",
+        "rationale": "The passage defines flamenco quality through aesthetic criteria of sound, quejío, and vocal nuance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha sío el más completo de tóis los tiempos",
+        "target": "Antonio Mairena",
+        "rationale": "The passage ranks Antonio Mairena as the most complete singer of all time, creating a clear hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el mairenismo es la casa de los Mairena en un escaparate, pero que sin Antonio no existiría el mairenismo",
+        "target": "mairenismo",
+        "rationale": "The passage grounds mairenismo in the continuity of the Casa de los Mairena and Antonio's foundational role."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The identity boundary is strong, but the passage does not explicitly frame non-gitano cante as fake, impure, or corrupted flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism",
+        "tradition"
+      ],
+      "target": "gitano cante, Antonio Mairena, and mairenismo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The ending includes advertising material; it was not coded."
+  }
+]

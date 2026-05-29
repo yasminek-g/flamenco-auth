@@ -1,0 +1,248 @@
+[
+  {
+    "article_id": "1984-05-23-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Asistió a esta Asamblea, como invitado, el Director del Departamento de Flamenco de la Junta de Andalucía... quien cerró el acto animando a todas las peñas asistentes a realizar los objetivos marcados.",
+        "target": "Federación Provincial de Peñas Flamencas de Sevilla and affiliated peñas",
+        "rationale": "The passage presents the peñas as coordinated community actors with shared objectives and a recognized role in channeling flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Junta official appears in the assembly, but the passage is administrative and does not clearly frame the activity as heritage authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'cante propio de Puerto Real' suggests local rootedness, but it is only a contest description without a clear tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "organized peñas and their federated objectives",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is routine contest and festival information; only the federated peña assembly clearly gives community actors an organizing role."
+  },
+  {
+    "article_id": "1984-05-25-left-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Pienso que la legitimidad la tenemos todos los que verdad amamos este arte, que por ser del pueblo es tan grande.",
+        "target": "those who truly love flamenco as a popular art",
+        "rationale": "The writer explicitly locates legitimacy in the community of committed flamenco lovers and in the art's belonging to the people."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la llave de oro del cante andaluz es el nobel de una CIENCIA, el máximo galardón que puede obtener una persona en su actividad",
+        "target": "Llave de Oro del cante andaluz",
+        "rationale": "The passage constructs a hierarchy of distinction by defining the award as the highest possible flamenco honor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los jueces deberían de ser los cantaores de mayor edad y reconocida tradición y honradez flamenca, y que sea responsabilidad de este colectivo la entrega del galardón",
+        "target": "older cantaores with recognized tradition and flamenco integrity",
+        "rationale": "The writer grants evaluative authority over the award to a specific expert collective defined by age, tradition, and flamenco honor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The requirement to sing 'cantes puros' suggests purity criteria, but the stronger discourse function here is award evaluation and expert judging."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions such as the Junta and Cátedra are invoked, but the passage asks for collaboration rather than clearly authorizing flamenco as heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism",
+        "tradition"
+      ],
+      "target": "the procedure and authority for awarding the Llave de Oro",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-05-26-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "La comercialidad, la difusión fácil y la popularidad mandan.",
+        "target": "El Chozas's recording Fantasía",
+        "rationale": "Commercial success and easy diffusion are framed as forces that have displaced the singer's earlier rooted and orthodox flamenco style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "encontramos que «El Chozas» no tiene una voz adecuada para estas soleares",
+        "target": "El Chozas's interpretation of soleares",
+        "rationale": "The reviewer makes an explicit negative aesthetic judgment about the singer's suitability for the style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Entonaciones plenas de melismas comerciales con cierta desfiguración del estilo... sólo las guitarras mantienen el compás.",
+        "target": "the recording's stylistic execution",
+        "rationale": "The passage applies aesthetic criteria such as stylistic integrity and compás to judge the quality of the recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "tangos con aires de rumbas, con ecos más propios de grupos pseudo-flamencos",
+        "target": "commercialized tangos/rumbas on the recording",
+        "rationale": "The reviewer uses critique to police a boundary between proper flamenco style and pseudo-flamenco commercial echoes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The review contrasts earlier 'raíz' and 'ortodoxia flamenca' with current commercialism, but the clearer coding is anti-commercial authenticity and critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "commercial and stylistically distorted elements in El Chozas's Fantasía",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible review text contains enough explicit evaluation and boundary critique for reliable coding."
+  },
+  {
+    "article_id": "1984-05-27-right-discograf-a-de-artistas-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "José Muñoz «Pena Hijo», el rey de las malagueñas",
+        "target": "José Muñoz «Pena Hijo»",
+        "rationale": "The epithet 'rey de las malagueñas' canonizes the artist through a compact hierarchy within a specific flamenco style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase is evaluative, but its main function is hierarchical/canonical rather than a developed review judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José Muñoz «Pena Hijo» as a canonical malagueñas singer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is very short but contains a clear canonical epithet; insufficient_context is not set because the evidence supports one limited code."
+  },
+  {
+    "article_id": "1984-07-3-right-editorial-escolarizar-el-flamenc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "AY que escolarizar el flamenco... nuestra reiterada llamada a la Institución andaluzas representativa —la Junta— para que coordié este esfuerzo",
+        "target": "institutional schooling of flamenco",
+        "rationale": "The editorial explicitly argues for institutional access to flamenco knowledge through schooling coordinated by the Andalusian Junta."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Nuestros escolares deben conocer este hermoso patrimonio, de manera que se genere en ellos un concepto exacto de lo jondo",
+        "target": "flamenco as cultural patrimony for schoolchildren",
+        "rationale": "Flamenco is framed as a collective patrimony that should be known and transmitted through public education."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "el carácter cultural —genuinamente andaluz— de la expresión «jonda»",
+        "target": "the jondo expression",
+        "rationale": "The text presents jondo as genuinely Andalusian, making an authenticity claim about its cultural character."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The rejection of a 'sello prostibulario' contests stigma, but it does not draw a clear proper/improper flamenco boundary."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Junta is asked to coordinate the project, but the heritage claim is broader public patrimony rather than specifically authorized heritage discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers are mentioned, but no specific teacher, master, or method is positioned as pedagogically authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "authenticity"
+      ],
+      "target": "flamenco education as transmission of Andalusian cultural patrimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

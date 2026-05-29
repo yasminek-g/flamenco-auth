@@ -1,0 +1,268 @@
+[
+  {
+    "article_id": "1986-11-17-right-letras-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "velando siempre por la buena formación de los iniciados en nuestros asuntos flamencos, enseguida me dispongo a salir de mi letargo para EN-DEREZAR ENTUERTOS",
+        "target": "iniciados en asuntos flamencos",
+        "rationale": "The writer presents correction of biographical errors as an authoritative pedagogical duty toward learners of flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Así lo hago hoy para, con todos mis respetos, anular la afirmación de Oliver de Triana en cuanto a que Miguel Borrull era catalán.",
+        "target": "Oliver de Triana's claim about Miguel Borrull",
+        "rationale": "The passage exercises expert corrective authority by publicly invalidating a flamenco-historical assertion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "felicitando a Manolo Herrera por sus afortunadas entrevistas, a esas reliquias flamencas vivientes que tanto prestigian a su revista. Para mí es, con mucho, lo más enjundioso de su habitual contenido.",
+        "target": "Manolo Herrera's interviews",
+        "rationale": "The writer explicitly evaluates the interviews as the most substantial and prestigious part of the magazine."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'reliquias flamencas vivientes' evokes living memory, but the passage does not clearly frame safeguarding, public heritage, or community heritage responsibility."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco-historical correction and Herrera's interviews",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1986-11-19-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "sólo nos queda aconsejar este libro verdaderamente imprescindible, señalando que su autor, Manuel Cano, ha tenido la grandeza de unir el rigor científico más irreprochable con un carácter ameno",
+        "target": "Manuel Cano's book La guitarra",
+        "rationale": "The review explicitly praises the book as indispensable and judges its scholarly rigor and accessibility."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "ejercido un amplio magisterio desde su cátedra en el conservatorio cordobés",
+        "target": "Manuel Cano",
+        "rationale": "Cano's authority is grounded in recognized teaching status and institutional pedagogical experience."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "un carácter ameno, de iniciación verdadera para los que tenemos la desgracia de no ser especialistas ni siquiera conocedores del tema",
+        "target": "non-specialist readers of Cano's book",
+        "rationale": "The book is framed as a medium that gives non-specialists access to flamenco-guitar knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "uno de los profesionales más completos que en el orden de la guitarra (flamenca y de concierto) hayan existido, a lo largo de la historia de dicho instrumento",
+        "target": "Manuel Cano",
+        "rationale": "The passage elevates Cano within a historical hierarchy of guitar professionals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The review discusses accumulated teachings and historical recordings, but does not clearly shift into safeguarding or public heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Manuel Cano and La guitarra",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-11-20-right-e-hacian-pensar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "“Niña, tú eres de nosotros, que lo sé yo”.",
+        "target": "La Sallago's belonging within a gitano flamenco community",
+        "rationale": "The quoted statement draws an explicit insider boundary by claiming La Sallago as 'one of us'."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "si tu honradez decía que eras paya, ahora también serás tan honrada como para no negar que tienes sangre gitana",
+        "target": "La Sallago's gitana/paya identity framing",
+        "rationale": "The passage makes ethnic identity central to belonging, representation, and recognition within flamenco discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The family line of cantaores suggests lineage, but the text does not clearly describe learning, transmission, or apprenticeship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community"
+      ],
+      "target": "La Sallago's flamenco identity and belonging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-11-21-left-ablan-las",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Ninguna concesión a la facilidad comercial, sino un cante, un toque y un baile «por derecho».",
+        "target": "the Biarritz flamenco performance",
+        "rationale": "The performance is authorized as proper flamenco through the phrase 'por derecho' and contrast with commercial ease."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Ninguna concesión a la facilidad comercial",
+        "target": "commercially easy performance choices",
+        "rationale": "Commercial concession is rejected as contrary to the valued flamenco presented in the review."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El gran triunfador de la velada organizada por la Peña Flamenca «La Debla» fue, sin lugar a dudas, un duende algo particular que encarnaron la valentía y el pundonor.",
+        "target": "the Biarritz flamenco evening",
+        "rationale": "The article reviews the event through explicit praise of its success, courage, and artistic seriousness."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "La Peña Flamenca «El Taranto», de Almería, organiza anualmente el Trofeo «Lucas López», consistente en premiar la mejor actuación de un artista flamenco",
+        "target": "Peña Flamenca El Taranto",
+        "rationale": "The peña is presented as a community institution authorized to recognize and reward the best flamenco performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'duende', 'cante jondo', and 'por derecho' carry aesthetic value, but the selected CRIT_01 and AUTH codes capture the main evaluative function more directly."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "peña-organized flamenco performances and recognitions",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-11-22-left-podio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "actitud largamente recriminable cuando ha tomado el Cante a puro pitorreo",
+        "target": "a young Cordoban singer's treatment of cante",
+        "rationale": "The passage makes a direct negative critical judgment of the singer's artistic attitude."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "cantando Siguiriyas con acompañamiento de guitarra, violín y no sabemos si algún extraño y absurdo instrumento más",
+        "target": "hybrid instrumental treatment of siguiriyas",
+        "rationale": "The criticism polices a boundary around proper flamenco practice by mocking an improper hybrid arrangement."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la vieja, ridícula y antiflamenca escenita del bombero",
+        "target": "Nano de Jerez's televised sketch",
+        "rationale": "The passage explicitly marks the sketch as anti-flamenco, drawing a boundary between legitimate and illegitimate performance behavior."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Columna de honor entre las de este podio para el maestro Fosforito",
+        "target": "Fosforito",
+        "rationale": "The column's podium/honor structure ranks figures and places Fosforito in an elevated canonical position."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text praises the constitution of a peña, but the passage does not clearly present the peña as exercising community authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Fosforito, peña/sponsor recognition, and improper modernized or televised flamenco behavior",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

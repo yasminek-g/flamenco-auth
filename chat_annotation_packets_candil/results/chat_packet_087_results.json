@@ -1,0 +1,258 @@
+[
+  {
+    "article_id": "1984-01-11-right-el-peque-o-mundo-de-laocoonte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Frente a ese mundo de focos y decorados en el que contaba más la ambientación que la voz del cantaor",
+        "target": "el mundo escenificado del nacional flamenquismo",
+        "rationale": "The passage criticizes staged flamenco spectacle by contrasting decorative atmosphere with the singer's voice as the more meaningful center."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The excerpt contains personal recuerdos and initiation into flamenco, but the memory-work is individual and literary rather than clearly public/community heritage safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word iniciación suggests access to flamenco, but the visible text does not frame this as pedagogy or structured knowledge transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "staged decorative flamenco spectacle",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; the visible evaluative contrast is sufficient for one boundary-critical code, but broader memory or pedagogy claims remain ambiguous."
+  },
+  {
+    "article_id": "1984-01-12-right-a-prop-sito-de-un-congreso-gitan",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el Cante —escrito así, con mayúsculas— no es patrimonio de los gitanos o, para matizar un poco, no es patrimonio exclusivo",
+        "target": "el Cante",
+        "rationale": "The passage explicitly frames Cante as patrimony while contesting exclusive ownership by one identity group."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "tan disparatado sería reservarse la exclusividad como negar la participación decisiva que los roms andaluces han tenido en nuestro arte impar",
+        "target": "gitanos andaluces, payos, and Andalusian flamenco belonging",
+        "rationale": "The passage uses identity-group framing to define belonging and authority in flamenco without granting exclusive ownership."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "con el mismo ardor y el mismo desconocimiento con el que los sedicentes gitanófilos, más papistas que el Papa, menosprecian la impostergable influencia del medio andaluz",
+        "target": "exclusive gitanophile interpretations and anti-Gitano minimization",
+        "rationale": "The author uses critical discourse to police competing boundary claims about who may define flamenco's ethnic and Andalusian bases."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses roots and origin of the Roma people, but much of that material concerns historical geography rather than using roots to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "the cultural ownership and identity basis of Cante/flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse function is a contested ownership/belonging argument: neither Gitano exclusivity nor erasure of Gitano contribution is accepted."
+  },
+  {
+    "article_id": "1984-01-13-right-la-canastera-el-cante-por-invent",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "cree en la posibilidad de renovar las melodías flamencas, «aunque sin prescindir de las soleras, como no prescindieron de ellas los grandes creadores»",
+        "target": "renovación de las melodías flamencas",
+        "rationale": "The passage authorizes innovation only when it remains continuous with inherited flamenco soleras."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "son los cantes básicos y fundamentales... tonás (inclusive la seguiriya), soleares y tangos. Este es el cante medular",
+        "target": "tonás, seguiriyas, soleares, and tangos",
+        "rationale": "The passage constructs a hierarchy of basic, fundamental, and medullar cantes against which other forms are judged."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "nuestros graves reparos a aceptar como creación lo que no es sino injerto",
+        "target": "la canastera as claimed new cante",
+        "rationale": "The author uses critical boundary-policing to reject the canastera as true creation and characterize it as an grafted hybrid."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text contrasts genuine creation with injerto, but the stronger and less redundant coding is tradition-continuity plus critical boundary critique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is clear negative evaluation of the canastera, but the evaluative work is already captured more specifically by CRIT_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the canastera and the traditional core of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt legitimates traditional soleras and basic cantes while delegitimating the canastera as insufficiently new or genuine."
+  },
+  {
+    "article_id": "1984-01-14-right-ellos-los-protagonistas-dicen-pe",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "quienes, con mejor fortuna y menor autenticidad, inmolaron la verdad jonda que conocían, a efímeros éxitos comerciales",
+        "target": "artists who sacrificed verdad jonda for commercial success",
+        "rationale": "Commercial success is framed as weakening authenticity and betraying deep flamenco truth."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "esta es una época que la afición no debe olvidar hoy... víctimas de un entorno abyecto que degradaba, embrutecía y malversaba el caudal cultural de un pueblo",
+        "target": "the remembered era of marginalized flamenco artists",
+        "rationale": "The passage frames collective remembrance as necessary to understand and safeguard a people's cultural wealth from degradation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "ni aun gozó del reconocimiento de la entonces denominada «afición»",
+        "target": "Pepe Polluelas and the afición",
+        "rationale": "Recognition by the afición is treated as a meaningful form of community authority that the artist lacked."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The closing praise of Chano as 'un gran cantaor' is evaluative, but it is brief interview preference rather than a developed critical judgment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The passage opposes commercial success to 'verdad jonda', but AUTH_04 captures the anti-commercial authenticity function more precisely."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "community"
+      ],
+      "target": "marginalized flamenco artists and commercialized performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt combines anti-commercial authenticity, afición recognition, and cultural-memory framing."
+  },
+  {
+    "article_id": "1984-01-16-right-desde-alora-pinceladas-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Sobre todo, las peñas, de tan generosa y rápida proliferación... verdaderas cátedras del flamenco",
+        "target": "flamenco peñas",
+        "rationale": "Peñas are presented as community institutions with authority to sustain and legitimate flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "verdaderas cátedras del flamenco, centros de estudio, conservación, aprendizaje, perfeccionamiento",
+        "target": "flamenco peñas as teaching centers",
+        "rationale": "The passage explicitly authorizes peñas as pedagogical centers for study, learning, and improvement."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "constatación y mantenimiento de la pureza de este arte",
+        "target": "flamenco as an art",
+        "rationale": "The passage frames peñas as maintaining flamenco purity, drawing an implicit boundary around proper flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The conservation vocabulary suggests safeguarding, but the passage is more directly about peña authority, pedagogy, and purity than public heritage policy or community heritage contestation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The closing remarks criticize some flamenco letras and free poetry, but the excerpt is too brief to warrant an additional code beyond the stronger peña-focused discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "flamenco peñas and their role in conserving pure flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The passage strongly legitimates peñas as authoritative spaces for learning, conserving, and maintaining flamenco purity."
+  }
+]

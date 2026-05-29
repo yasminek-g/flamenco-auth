@@ -1,0 +1,277 @@
+[
+  {
+    "article_id": "1988-09-11-right-la-historia-se-repite",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la afición flamenca del momento estaba dividida en dos tendencias geniales distintas; el mairenismo y...",
+        "target": "mairenismo, caracolismo, and the canonization of Antonio Mairena",
+        "rationale": "The passage frames flamenco history through named tendencies and rival canonical figures, creating a hierarchy and canon debate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Basta ya de estas cosas que, a mi entender, sólo retrasan y entorpecen el proceso de «canonización artística» del maestro de los Alcores.",
+        "target": "published discourse around Antonio Mairena and attempts to shape his artistic canonization",
+        "rationale": "The writer uses critical authority as an aficionado to police distortive or manipulative discourse around Mairena's artistic status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el continuo bombardeo de barbaridades a que hoy es sometido nuestro Arte",
+        "target": "contemporary flamenco writing and commentary",
+        "rationale": "The article explicitly judges current commentary on flamenco as harmful and misguided."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions afición, but the stronger function is canonical and critical evaluation rather than community authority as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Mairena's artistic legacy and the discourse that canonizes or distorts it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient to code the critical and canonical dispute."
+  },
+  {
+    "article_id": "1988-09-12-right-ellos-los-protagonistas-dicen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "La Fundación Andaluza de Flamenco es una fundación cultural privada, de ámbito andaluz, constituida por la Consejería de Cultura de la Junta de Andalucía, la Diputación de Cádiz, el Ayuntamiento de Jerez y la Caja de Ahorros de Jerez",
+        "target": "Fundación Andaluza de Flamenco",
+        "rationale": "The passage legitimates flamenco through a formal institution backed by public and civic bodies."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "cuyo objetivo básico consiste en la promoción de los valores tradicionales del Arte Flamenco",
+        "target": "traditional values of flamenco art",
+        "rationale": "The Foundation's mission explicitly grounds flamenco value in tradition and continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "servicios estables para los más diversos usuarios y una serie de programas puntuales dirigidos a: — Los investigadores y estudiosos del flamenco. — Los artistas y creadores. — Los aficionados... — La población infantil/juvenil andaluza",
+        "target": "institutional access to flamenco knowledge through the F.A.F.",
+        "rationale": "The passage frames the Foundation as a mediator of flamenco knowledge across researchers, artists, aficionados, and younger generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'uno de los mayores logros' praise the Foundation, but the main discourse function is institutional heritage legitimation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Fundación Andaluza de Flamenco as an institutional guardian and mediator of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is enough to code the Foundation's institutional, traditional, and pedagogical authority."
+  },
+  {
+    "article_id": "1988-09-14-right-es-el-camino",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Israelitas, japoneses, canadienses, italianos... y, por supuesto españoles... se han acercado a la perfección del toque y del baile de la mano de los grandes maestros.",
+        "target": "institutional and transnational access to flamenco learning",
+        "rationale": "The passage presents Foundation courses as opening flamenco learning across national and social boundaries."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Manolo Sanlúcar corregir la cejilla de la guitarra tocada por un canadiense o a Matilde y su centenar de alumnos",
+        "target": "Manolo Sanlúcar and Matilde Coral as authoritative teachers",
+        "rationale": "Named masters are shown correcting and directing students, legitimating flamenco learning through recognized pedagogical authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "el arte flamenco ha sido una cosa patrimonial, que de manera íntima y hasta endogámica se ha transmitido a los miembros de distintas generaciones como un preciado tesoro",
+        "target": "traditional intergenerational flamenco transmission",
+        "rationale": "The passage explicitly frames flamenco knowledge as intimate, familial or closed, and transmitted across generations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "no malgastéis los escasos recursos... en consumir unos eventos flamencos que a veces resultan fácilmente prescindibles. Es mucho mejor enseñar a caminar por las sendas del arte",
+        "target": "festival and recital spending versus pedagogical transmission",
+        "rationale": "The author uses critique to police priorities in flamenco culture, delegitimating expendable events in favor of serious teaching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The passage uses patrimonial transmission language, but the clearest function is pedagogy and lineage transmission rather than public heritage safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text mentions loss of intimacy, but it frames this as a tradeoff for technique and diffusion, not as an authenticity loss."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Foundation-led flamenco courses as the proper path for transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains several distinct pedagogical claims, so four codes are justified despite the default 0-3 preference."
+  },
+  {
+    "article_id": "1988-09-15-right-utrera-y-su-comp-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el compás es un inexorable son que delimita tiempos, formas, quiebros, «quejos» y suspiros",
+        "target": "compás as an aesthetic criterion for flamenco performance",
+        "rationale": "The passage defines compás as a central criterion organizing and judging flamenco expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Utrera, afortunadamente, tiene su compás... este espectáculo singular, único e irrepetible en la historia flamenca de Utrera.",
+        "target": "the performance 'Utrera y su compás'",
+        "rationale": "The review explicitly praises the event as singular and historically exceptional."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "los estilos personales de cada uno y de forma más especial, en los estilos que cada uno escuchó de sus mayores",
+        "target": "local flamenco styles transmitted from elders",
+        "rationale": "The passage links performance style to listening to elders, an oral and intergenerational mode of transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Utrera and local participants are strongly present, but the clearest coded function is aesthetic evaluation and lineage transmission, not community authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano-andaluz and gitanismo appear, but identity terms are mostly descriptive and celebratory rather than organizing authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Utrera's local compás and the reviewed performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1988-09-16-right-triana-y-sevilla-en-la-andaluc-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El cante no muere porque es tierra. Mueren los capítulos de su historia con quienes lo interpretaron, pero no",
+        "target": "cante as rooted and historically continuous",
+        "rationale": "The article grounds flamenco value in rootedness, continuity, and survival beyond individual performers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la intensidad, la extensión y la autenticidad flamencas están en razón directa de la proximidad a Triana",
+        "target": "Triana as a source of flamenco authenticity",
+        "rationale": "The passage explicitly attributes flamenco authenticity to proximity to Triana."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "forma un muy diferenciado núcleo de población, entre gitana, morisca y campesina. Su humilde pero recia personalidad... radica en la propia interioridad humana del barrio",
+        "target": "Triana's local and identity-based flamenco authority",
+        "rationale": "The passage frames Triana's authority through a differentiated local community identity and inner social character."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The excerpt uses aesthetic terms such as jondo, grande, and profundidad, but these mainly support authenticity and rootedness rather than a separate evaluative criterion."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text evokes pueblo, memory, and continuity, but it does not clearly shift into public heritage safeguarding or policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community"
+      ],
+      "target": "Triana and Sevilla as rooted sources of Andalusian cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt clearly supports authenticity, continuity, and community-identity framing."
+  }
+]

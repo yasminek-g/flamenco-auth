@@ -1,0 +1,266 @@
+[
+  {
+    "article_id": "1982-07-25-left-la-plastica-de-un-grito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "admirable facultad de síntesis: unas cuantas líneas como esas apretadas notas rápidas que sólo el cantaor de flamenco sabe hacer en un golpe de voz",
+        "target": "Antonio Povedano's flamenco-themed visual art",
+        "rationale": "The passage explicitly praises Povedano's artistic technique by comparing its synthesis to flamenco vocal artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Lo flamenco es una manera de ser, una manera de sentir; lo flamenco es vivir con una gran fuerza emocional; lo flamenco es sacudida, es herida",
+        "target": "flamenco as an expressive aesthetic mode",
+        "rationale": "The passage defines flamenco quality through emotional and expressive criteria such as force, wound, feeling, and drama."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "movida por el mismo individualismo del cantaor flamenco ancestral, aquel felag-mengu o campesino apátrida que, cantaor desde que es hombre andaluz",
+        "target": "the ancestral Andalusian campesino/cantaor identity attributed to Povedano",
+        "rationale": "The text frames flamenco expression through an identity model of the Andalusian campesino-cantaor, using that group identity to explain artistic authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article defines 'lo flamenco' in strong terms, but the visible function is more aesthetic and identity-based than a clear authenticity claim distinguishing genuine from non-genuine flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word 'ancestral' suggests rootedness, but the passage does not clearly use continuity with the past to authorize present flamenco practice beyond the identity framing already coded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Povedano's flamenco-inflected visual art and its relation to flamenco expression",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; coded only evaluative, aesthetic-definitional, and identity-framing discourse."
+  },
+  {
+    "article_id": "1982-07-25-right-soleares",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The line 'Que yo no le canto al pueblo, que el pueblo canta en mi voz' evokes collective voice, but it appears within poetic lyrics rather than an explicit discourse move about belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The soleares contain pain, death, memory, and emotional intensity, but they do not explicitly define or evaluate flamenco aesthetic criteria in commentary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a sequence of poetic coplas/soleares, not critical or authorizing commentary."
+  },
+  {
+    "article_id": "1982-07-26-right-al-filo-del-x-congreso-de-activi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "«CANDIL» nació con el firme propósito de la defensa de la pureza de nuestro arte, de aquí que nuestra postura ante el propio Congreso sea crítica",
+        "target": "flamenco and the Congress's relation to it",
+        "rationale": "The passage frames CANDIL's critical stance as a defense of the purity of flamenco, drawing a boundary around proper treatment of the art."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Posibilidad de construir una Federación Nacional de Peñas... normas objetivas que sean válidas para todos sus miembros",
+        "target": "peñas and associated flamenco congress members",
+        "rationale": "The text positions peñas and associated members as the organized community through which flamenco activity should be governed and sustained."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "su colaboración aunque total, es crítica... nuestro apoyo no es incondicional",
+        "target": "CANDIL's role toward the X Congreso de Actividades Flamencas",
+        "rationale": "The periodical claims a critical, non-unconditional stance toward an institutional flamenco event, asserting authority to evaluate and police its direction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Queen's honorary presidency and congress organization indicate institutional prestige, but the visible text does not explicitly frame flamenco as heritage/patrimony or official heritage recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates the Congress's seriousness and responsibilities, but the stronger function is expert/boundary critique rather than ordinary review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "the X Congreso de Actividades Flamencas and organized peña activity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; institutional prestige alone was not treated as heritage discourse."
+  },
+  {
+    "article_id": "1982-07-27-left-dos-modos-distintos-de-acercarse",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un libro necesario e inencontrable... con amenísima erudición... y verdadera jondura, ofrece una amplia panorámica históricovital de nuestro arte",
+        "target": "Fernando Quiñones's El flamenco, Vida y Muerte",
+        "rationale": "The passage explicitly reviews and praises the book's value, knowledge, depth, and historical-vital treatment of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "renovación sin pérdida de la tradición. Deben seguirse fijando y preservando en toda su pureza los antiguos rasgos que confirieron al flamenco su entidad humana y su importancia artística",
+        "target": "the future renewal of flamenco",
+        "rationale": "The quoted argument authorizes flamenco renewal only through continuity with tradition and preservation of older defining traits."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "pretendidos, autoerigidos, flamencólogos que atacan a escritores de valía... porque escriben bien",
+        "target": "self-appointed flamencologists attacking valued writers",
+        "rationale": "The reviewer challenges the authority of certain flamencologists and criticizes their evaluative boundary-policing as illiterate and illegitimate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "esta primera búsqueda, esta indagación cantaora tiene su mérito y en ella misma está la llamada para continuar indagando sobre la historia y realidad del cante giennense",
+        "target": "Alfonso Hortal Barba's 100 años de cante jondo en Jaén",
+        "rationale": "The passage evaluates the second book as meritorious for its pioneering inquiry despite reservations about its judgments and classifications."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The quoted passage invokes 'pureza' and 'genuino contenido,' but the broader discourse is better captured as tradition/continuity rather than explicit exclusion of impure flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The reviewer mentions classifications of singers and 'uno de los últimos grandes,' but visible evidence does not develop a clear canon or ranking beyond ordinary review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "two books on flamenco and the proper renewal/study of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; the quoted Quiñones passage was coded because it is reproduced as a fundamental argument endorsed by the reviewer."
+  },
+  {
+    "article_id": "1982-07-27-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Este L. P. nos trae la pérdida de una voz jonda; pérdida que desearíamos no fuese definitiva",
+        "target": "Enrique Morente's LP Sacromonte",
+        "rationale": "The reviewer makes a direct negative assessment of the recording as a loss of Morente's deep flamenco voice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "nos parece necesaria siempre que sea fiel al trazado, al legado... este disco no nos trae la evolución que necesitamos; nos traen a la regresión",
+        "target": "Morente's experimental search for new paths in flamenco",
+        "rationale": "The passage accepts innovation only if faithful to inherited flamenco lines and rejects this recording as regression, drawing a proper/improper boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "esa seudointelectualidad que quiere engrandecer el flamenco privándole, precisamente, de lo que le caracteriza: lo popular... no llegaremos a los cantes probeta",
+        "target": "pseudo-intellectual experimental treatment of flamenco",
+        "rationale": "The reviewer polices a boundary against laboratory-like, pseudo-intellectual manipulation that would remove flamenco's popular character."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "subsisten su espléndida voz y marcado compás, aunque supeditados... a unos coros que nada bueno aportan, o a unos cantes desfigurados",
+        "target": "aesthetic qualities and failures in Sacromonte",
+        "rationale": "The review applies aesthetic criteria such as jonda voice, compás, accompaniment, and deformation of cantes to judge the record."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage uses 'verdadera regresión' and 'vida purísima,' but the stronger supported authenticity function is boundary work around improper deformation rather than a standalone authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Comparisons with Chacón, Lole, Camarón, and opereta flamenca appear, but they function mainly as evaluative reference points rather than a developed hierarchy or canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Morente's Sacromonte and proper innovation in flamenco recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; coding is based on the visible negative review of Sacromonte and the visible positive evaluation of traditional criteria."
+  }
+]

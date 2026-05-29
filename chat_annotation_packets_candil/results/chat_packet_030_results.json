@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1981-07-19-left-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "«Ahora que se cumple el medio siglo de su ejemplar tarea de dignificación y conservación del cante gitano-andaluz»",
+        "target": "Antonio Mairena's work conserving cante gitano-andaluz",
+        "rationale": "The passage values Mairena through dignification and conservation of cante, grounding authority in continuity and preservation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El disco importará más por lo que dice que como se dice. Llevará más a su audiencia el texto que los estilos en que se apoya el decir del cantar",
+        "target": "José Menese's record «Mi cante a la esperanza»",
+        "rationale": "The reviewer explicitly assesses the record's value, judging its message as more important than its stylistic execution."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "rendir así —justificando su título—, mi más respetuoso «recuerdo» de admiración y agradecimiento a los grandes maestros que tan preciados tesoros nos legaron",
+        "target": "Luis de Córdoba's evocation of soleá masters",
+        "rationale": "The record is authorized through respectful remembrance of masters and inherited treasures, linking present practice to a valued past."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'conservación del cante' suggests preservation, but the visible passage does not clearly shift into public heritage or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Menese's and Luis de Córdoba's recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-07-19-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Paco La Luz es una de las figuras cumbres del cante jerezano.",
+        "target": "Paco La Luz",
+        "rationale": "The article canonizes Paco La Luz by placing him among the summit figures of Jerez cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "«La grande, emotiva, dulce, con un tono de queja y aire reposado, expresa densamente su contenido.»",
+        "target": "Paco La Luz's siguiriya grande",
+        "rationale": "The passage applies aesthetic criteria such as emotional force, sweetness, complaint, repose, and density to define the style's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El cante de Joaquín la Serna pudiera asumir muy bien la representación clásica de la siguiriya",
+        "target": "Joaquín la Serna's siguiriya",
+        "rationale": "The passage elevates La Serna's cante as a classical representative model of the siguiriya."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to Gitano and Jerez identity are present, but they are mainly biographical and do not clearly organize authority or belonging."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Mentions of maestros and interpreters suggest lineage, but the visible discourse mainly canonizes and evaluates rather than describing transmission as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "historic singers and siguiriya/malagueña styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-07-20-left-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a heading, byline, and artist name, so there is insufficient context for a reliable discourse code."
+  },
+  {
+    "article_id": "1981-09-9-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "lugar y momento de reflexión, estudio e investigación conjunta del fenómeno flamenco en su más amplia dimensión",
+        "target": "Décimo Congreso de Actividades Flamencas",
+        "rationale": "The congress is framed as an institutional setting for study, reflection, and collective investigation of flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "hasta que el flamenco deje de estar corroído por el consumo, tan a punto de irreversible disolución",
+        "target": "flamenco affected by consumption",
+        "rationale": "The passage treats consumption as a corrupting force that threatens the survival or integrity of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Se asomaron a su cante los viejos maestros del arcano, la siguiriya, grito o dentellada desde la raíz.",
+        "target": "Fernando's cante and its relation to old siguiriya masters",
+        "rationale": "The passage canonizes the singer by linking his cante to old masters, archaic depth, and rooted siguiriya."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial speaks of alerting against desviacionismos, but the stronger coded evidence is the explicit anti-consumption authenticity claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text implies a boundary around lo jondo, but the most precise coding is anti-commercial authenticity rather than a separate purity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "lo jondo, the congress, and Fernando's cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-4-right-el-villal-n-que-quisieron-enterr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ese inmenso poeta —desconocido ayer y hoy—, que fue Fernando Villalón",
+        "target": "Fernando Villalón",
+        "rationale": "The passage makes an explicit evaluative judgment of Villalón as an immense but unrecognized poet."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "devolver al hombre andaluz, en la medida de mis posibilidades, a uno de sus más grandes y rebeldes poetas",
+        "target": "Fernando Villalón's place in Andalusian literary memory",
+        "rationale": "The author canonizes Villalón by claiming him as one of Andalusia's greatest and most rebellious poets."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "devolver al hombre andaluz... a uno de sus más grandes y rebeldes poetas; pueblo mismo que, por eso, sabía templarse como él",
+        "target": "Villalón as a poet belonging to the Andalusian people",
+        "rationale": "The passage frames Villalón's value through Andalusian collective identity and positions him as belonging to that people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes resonances with soleares, seguiriyas, and Chacón, but these do not clearly authorize flamenco practice through tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Fernando Villalón",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

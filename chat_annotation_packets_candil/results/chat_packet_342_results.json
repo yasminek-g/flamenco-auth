@@ -1,0 +1,274 @@
+[
+  {
+    "article_id": "1997-09-29-right-discografia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "su afán de promocionar y difundir la verdad del flamenco, y más concretamente del suyo, del de Jerez",
+        "target": "Manuel Morao's promotion of Jerez flamenco",
+        "rationale": "The review explicitly presents Morao's work as spreading the 'truth' of flamenco, especially Jerez flamenco, making an authenticity claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los modernos artistas son eso, modernos, y a veces demasiado... fórmulas, artilugios o montajes... lo que hacen es desvirtuar una música",
+        "target": "vanguardist or overly modern flamenco staging",
+        "rationale": "The passage devalues certain modern or vanguardist formulas as distortions of flamenco music, drawing a boundary around legitimate practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "para desarrollar el arte gitano-andaluz es menester tener en cuenta lo pasado... sin olvidarse de las raíces",
+        "target": "development of gitano-Andalusian art",
+        "rationale": "The text grounds legitimate artistic development in the past and in roots, using continuity as an authorizing value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "suena bastante flamenco... sus acordes mantienen el compás de un estilo que pregona su flamenquería... su faceta más ortodoxa",
+        "target": "Juan Carlos Romero's album Azulejo",
+        "rationale": "The review applies aesthetic criteria such as sounding flamenco, compás, flamenquería, and orthodoxy to judge the recording."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions are named as collaborators, but the passage frames this as promotion/support rather than authorized heritage recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Jerez-rooted flamenco and evaluated recordings, contrasted with overly modern distortion",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Discography review with strong authenticity and anti-distortion language; institutional sponsorship is not treated as heritage authority."
+  },
+  {
+    "article_id": "1997-11-3-left-el-baile-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "la creatividad didáctica de maestros como Enrique el Cojo, Pepe Ríos, Manolo Marín, etc., los cuales han formado una auténtica cantera de valores",
+        "target": "teachers who formed a new generation of flamenco dancers",
+        "rationale": "The passage legitimates the new dance generation through the didactic creativity and authority of named maestros."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el baile flamenco se erige en el principal impulsor del arte flamenco en la actualidad",
+        "target": "flamenco dance in the contemporary flamenco field",
+        "rationale": "The article constructs a hierarchy of current flamenco forms by presenting dance as the principal driving force."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "figuras masculinas mantienen determinada inclinación por las formas femeninas... Milagros Mengíbar... mantienen altas dosis de feminidad... El Güito... mantienen su masculinidad bailaora",
+        "target": "gendered norms in flamenco dance",
+        "rationale": "The passage evaluates flamenco dance through masculine and feminine identity categories, making gender central to artistic representation and authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la genialidad masculina del... Farruco, como la garbosa y artística gracia femenina de Matilde Coral, siempre quedarán grabadas en nuestra memoria como paradigmas del baile flamenco",
+        "target": "Farruco and Matilde Coral as models of flamenco dance",
+        "rationale": "The author explicitly praises and evaluates two artists as paradigms of flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco dance as a contemporary leading form shaped by maestros and gendered paradigms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is evaluative and programmatic, with clear pedagogical and gendered framing."
+  },
+  {
+    "article_id": "1997-11-4-left-en-el-centenario-de-la-argentini",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Su nombre ha quedado en los anales como una de las más grandes bailarinas y bailaoras de la historia",
+        "target": "La Argentinita",
+        "rationale": "The article canonizes La Argentinita by placing her among the greatest dancers and flamenco dancers in history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su arte es castizo: su braceo y su colocación conservan en todo momento la pureza de línea que no se descompone jamás con retorcimientos monstruosos o extravagantes",
+        "target": "La Argentinita's dance style",
+        "rationale": "The quotation applies specific aesthetic criteria—castizo quality, line purity, restraint against distortion—to define the value of her art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "cuando el arte da en la verdad... La Argentinita ofreció con sus interpretaciones la esencia de un españolismo artístico",
+        "target": "La Argentinita's artistic interpretations",
+        "rationale": "The passage links her art to truth and essence, presenting her performances as genuinely embodying Spanish artistic identity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Spanishness is invoked, but the passage does not clearly use identity categories to define belonging or group authority within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "La Argentinita as a canonical and authentic artistic figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Centenary homage with explicit canonization and aesthetic criteria."
+  },
+  {
+    "article_id": "1997-11-5-left-recordando-a-mi-hermana-encarnac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha sido una de las más importantes e interesantes artistas de todos los tiempos",
+        "target": "La Argentinita",
+        "rationale": "The memoir explicitly elevates La Argentinita into a historical artistic hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Su formación era absolutamente de la auténtica bailarina española o sea, académica, escuela bolera, regional... y por supuesto apasionada por el flamenco",
+        "target": "La Argentinita's formation as a Spanish dancer and flamenco artist",
+        "rationale": "The passage claims authentic Spanish-dance formation and links it to her flamenco identity and legitimacy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "este arte llevaba algunos años en total decadencia... Argentinita quiso reivindicar a estos excepcionales artistas y llevarlos a un gran teatro de Madrid",
+        "target": "flamenco artists and flamenco art in decline",
+        "rationale": "The passage frames La Argentinita's intervention as recovering and publicly sustaining a declining living flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la coreografia, la escenografia, la luminotecnia y la magistral dirección de Argentinita, tomaron una dimensión hasta entonces desconocida y que está vigente",
+        "target": "La Argentinita's staging and direction",
+        "rationale": "The passage evaluates her artistic direction as masterful, innovative, and enduring."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Although the text discusses formation and wisdom, it does not clearly position La Argentinita or another actor as a teacher transmitting flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "La Argentinita's artistic authority and public recuperation of flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Memoir tone creates canonizing praise; heritage code is limited to the visible recovery/decadence passage."
+  },
+  {
+    "article_id": "1997-11-7-right-vida-y-obra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tal vez la persona que sentó las bases del ballet español tal como lo conocemos hoy en día",
+        "target": "La Argentinita's role in Spanish ballet",
+        "rationale": "The article gives La Argentinita foundational status in the canon and history of Spanish ballet."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "reescribió todo un género que hundía sus raíces en el mundo del café cantante, en el de las varietés al más puro estilo español",
+        "target": "the genre reworked by La Argentinita",
+        "rationale": "The passage authorizes her innovation by grounding the genre in roots and continuity with café cantante and Spanish varietés."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "los sones más puros de nuestro flamenco y del folklore",
+        "target": "flamenco and folklore sounds used in La Argentinita's work",
+        "rationale": "The passage attributes purity to the flamenco and folklore materials that underpin the artist's work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The father is described as an aficionado, but this is biographical and does not grant community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "La Argentinita as a foundational artist rooted in pure flamenco and Spanish performance traditions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning/window provides enough evidence for the emitted codes."
+  }
+]

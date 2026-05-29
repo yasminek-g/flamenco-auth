@@ -1,0 +1,155 @@
+[
+  {
+    "article_id": "1998-05-19-left-caf-cantante-poema",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic imagery is visible, but it does not make an evaluative, authorizing, pedagogical, communal, heritage, or critical discourse claim under the codebook."
+  },
+  {
+    "article_id": "1998-05-19-right-jondo-es-federico",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Entonces podríamos decir que lo jondo es la forma de exponer y comunicar el sentimiento de unas raíces y vivencias humanas, que cobran vida en situaciones concretas, recreadas por el artista —cantaor, escritor, pintor, etcétera—, en simplificación de formas, buscando la belleza en lo natural, en lo real, huyendo de todo lirismo hueco.",
+        "target": "lo jondo as an aesthetic category",
+        "rationale": "The passage explicitly defines jondo quality through aesthetic criteria: rooted feeling, concrete human experience, simplicity, natural beauty, reality, and avoidance of empty lyricism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "lo jondo es la forma de exponer y comunicar el sentimiento de unas raíces y vivencias humanas",
+        "target": "lo jondo",
+        "rationale": "The text grounds the value of jondo expression in roots and lived human experience, using rootedness as an authorizing basis for the aesthetic."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "García Lorca, como ser del sur, como persona marcada por una idiosincrasia propia de nuestro pueblo, ahonda a la hora de vagar por su entorno.",
+        "target": "Federico García Lorca's jondo authority",
+        "rationale": "Lorca's relation to jondo is framed through southern and collective Andalusian identity, making identity central to his authority and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions cuerpo and artistic recreation, but it does not clearly describe embodied, oral, familial, or lineage-based transmission of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "criticism", "community"],
+      "target": "Lorca's work as jondo art rooted in Andalusian identity and human experience",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible definition of lo jondo and the identity framing of Lorca are sufficiently explicit for coding."
+  },
+  {
+    "article_id": "1998-05-24-left-saeta-poema",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a poem and does not contain a codeable discourse move about flamenco authority, heritage, pedagogy, community, or criticism."
+  },
+  {
+    "article_id": "1998-05-26-right-lorca-y-gasch-apasionados-por-el",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Lorca fue, sin duda, el maestro primero de Gasch en el tema. Éste, incluso maneja habitualmente conceptos literales de aquél.",
+        "target": "Lorca as Gasch's flamenco teacher",
+        "rationale": "The passage explicitly positions Lorca as the first authoritative teacher who transmitted flamenco concepts to Gasch."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Rezumaba «sur» por todos sus poros; (...) cada frase, una idea; cada palabra, un verso (...). A través de su conversación, esmaltada de bellísimas imágenes y sabrosísimas comparaciones, vine en conocimiento de una Andalucía que ignoraba en absoluto.",
+        "target": "Lorca's authority as mediator of Andalusian flamenco culture",
+        "rationale": "The text frames Lorca's knowledge and charisma through southern/Andalusian identity, making identity the basis for cultural mediation and authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "potencia anímica. Lo jondo, lo profundo. La infinita tristeza, la infinita soledad, la infinita desolación (...).",
+        "target": "lo jondo",
+        "rationale": "The passage characterizes jondo through aesthetic-emotional criteria such as depth, psychic force, sadness, solitude, and desolation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'puro aroma' and 'emoción pura' are evaluative, but they do not clearly assert authentic or proper flamenco as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community", "criticism"],
+      "target": "Lorca as an authoritative mediator of flamenco knowledge and jondo aesthetics for Gasch",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible passage directly authorizes Lorca as Gasch's teacher and frames jondo through aesthetic criteria."
+  },
+  {
+    "article_id": "1998-05-39-left-el-romancero-otra-vez",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article offers literary-aesthetic analysis of Lorca's Romancero Gitano, but the visible excerpt does not clearly apply those criteria to flamenco, flamenco practice, or flamenco authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The mention of 'el rito gitano cantado en la alboreá' is isolated and does not describe transmission, learning, or lineage-based authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Conservative non-emission: the visible excerpt is literary criticism of Lorca rather than a codeable flamenco discourse claim."
+  }
+]

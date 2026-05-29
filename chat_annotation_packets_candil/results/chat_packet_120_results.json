@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "1985-11-4-right-una-visi-n-del-gitano-andaluz-en",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "concedamos al pueblo gitano la importancia que su presencia cultural y étnica ha tenido y tiene en nuestra península",
+        "target": "the Gitano people as a cultural and ethnic presence in Spain and Andalusia",
+        "rationale": "The passage frames Gitano identity as culturally and ethnically important, directly contesting reductive stereotypes and shaping cultural belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "La polémica en torno a su mayor o menor aportación al cante flamenco puede reflejar, mejor que ninguna otra cosa, lo que aquí estamos exponiendo",
+        "target": "Gitano contribution to flamenco cante",
+        "rationale": "The text makes Gitano identity and contested contribution central to how flamenco cultural authority is represented."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Although the text mentions 'mayor o menor aportación,' it describes a controversy over contribution rather than clearly ranking flamenco artists, styles, or canons."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article critiques literary stereotypes, but the visible excerpt does not clearly position a flamenco critic or expert as the authority policing flamenco boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Historical arrival and cultural presence are discussed, but the visible excerpt does not clearly use tradition or continuity to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community"
+      ],
+      "target": "Gitano cultural identity and its relation to flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotated only visible beginning, evidence window, and ending."
+  },
+  {
+    "article_id": "1985-11-8-left-copias-del-portal",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Religious/seasonal coplas without visible evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "1985-11-8-right-un-disco-sobre-los-cantes-de-ida",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Ni los pliegos de cordel ni sus difusores desmienten... el origen americano de la guajira y la rumba ni de la milonga y la vidalita",
+        "target": "cantes de ida y vuelta",
+        "rationale": "The article uses origin and transmission history to classify and explain the legitimacy of these flamenco forms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "los inventos del órgano eclesial y el bongo y el jazz mal se compadecerán siempre con los cantes básicos fundamentales",
+        "target": "organ, bongo, and jazz elements in relation to basic flamenco cantes",
+        "rationale": "The passage draws a boundary between acceptable recovery of neglected forms and incompatible innovations that do not fit fundamental cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Blas Vega, uno de nuestros más eminentes investigadores en el reducido campo del flamenco, se refiere a los primeros indicios de popularidad",
+        "target": "historical classification of cantes de ida y vuelta",
+        "rationale": "The article invokes a named flamenco researcher as an authoritative expert source for classifying origins and historical evidence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains evaluative phrasing, but its main function is classification and boundary-setting rather than a review of a specific performance or recording."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article explains terminology and origins, but it does not clearly frame institutional or transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cantes de ida y vuelta and their acceptable flamenco classification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; classification and boundary claims are based only on visible review text."
+  },
+  {
+    "article_id": "1985-11-10-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no es ni bueno ni malo, sino sencillamente innecesario y redundante",
+        "target": "José Luis Ortiz Nuevo's book Pensamiento político en el cante flamenco",
+        "rationale": "The passage explicitly reviews and negatively assesses the book's value and originality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "una empresa de tales características ha de hacerse con un mayor rigor en la selección de las letras y sobre todo, en los comentarios",
+        "target": "standards for flamenco anthology and commentary",
+        "rationale": "The reviewer asserts critical standards of rigor for selecting and commenting on flamenco texts, exercising evaluative authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "todavía caminamos; con más o menos vacilaciones, pero caminamos seguros de que esas raíces son hondas y la semilla profunda",
+        "target": "the continuity and survival of cante flamenco",
+        "rationale": "The passage grounds flamenco's endurance in deep roots and continuity despite claims of decline."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text discusses bibliography and divulgation, but it evaluates scholarship more than it frames learning access or pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The passage mentions studies and preservation-like concerns, but it does not clearly frame flamenco as public heritage or safeguarding work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Ortiz Nuevo's book and the continuity of cante flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-11-11-left-acerca-de-la-memoria-una-vez-m-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "impulsarles en la noble tarea del rescate que ejemplificó tan noblemente Antonio Mairena",
+        "target": "historical memory and rescue of flamenco cante",
+        "rationale": "The passage frames flamenco as a fragile memory practice requiring rescue and preservation, with Mairena as an exemplar."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "la música popular —letra y compás— es rara y poca la que ha llegado hasta nosotros",
+        "target": "transmission of popular flamenco music, lyrics, and compás",
+        "rationale": "The article emphasizes the difficulty of transmitting unwritten popular music and the fragility of what reaches the present."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Cuando se trata de memoria histórica... MEMORIA DEL FLAMENCO",
+        "target": "flamenco as historical memory",
+        "rationale": "The article explicitly places flamenco within a collective historical-memory frame, treating its preservation as culturally meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The trigger word 'hombre' appears generically; it does not frame gender or identity as organizing flamenco authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Continuity with the past is implied, but the stronger discourse function is heritage memory/rescue rather than tradition as authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The ending contrasts dignified stage incorporation with singing for a señorito, but the visible excerpt does not develop a public/private participatory setting distinction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco historical memory and transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; heritage and transmission codes rely on the visible memory/rescue discussion."
+  }
+]

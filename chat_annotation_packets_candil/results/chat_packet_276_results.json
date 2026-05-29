@@ -1,0 +1,219 @@
+[
+    {
+        "article_id": "1993-07-22-left-flamenca",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "ha sido siempre fiel en la transmisi\u00f3n de lo aprendido... escuchar la primera versi\u00f3n, es una garant\u00eda que forma al aficionado y esclarece la historia flamenca",
+                "target": "Bernardo el de los Lobitos / early recordings of the mariana",
+                "rationale": "The passage authorizes flamenco value through faithful transmission, first versions, and historical clarification for aficionados."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "La calidad interpretativa de las malague\u00f1as, la guajira o los tientos, muestra que Luis L\u00f3pez pose\u00eda conocimientos de los diversos estilos",
+                "target": "Luis L\u00f3pez's recordings and stylistic knowledge",
+                "rationale": "The reviewer explicitly evaluates the quality of the performances and the artist's command of multiple styles."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Nunca pierde la estructura flamenca de los estilos, a la vez que los adoba de connotaciones cl\u00e1sicas... muestra un perfecto dominio del traste",
+                "target": "Luis Maravillas's guitar solos",
+                "rationale": "The assessment applies aesthetic criteria such as flamenco structure, classical inflection, and technical mastery."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The article contains exemplary language about first versions and current soloists, but the stronger evidence is evaluative and aesthetic rather than a clear canon or ranking claim."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "tradition",
+                "criticism"
+            ],
+            "target": "the historical recordings and the artists' flamenco value",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1993-07-22-right-aunque-no-quepa-en-el-papel",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "el voluminoso tratado es el m\u00e1s serio y documentado almac\u00e9n de datos que se puede presentar al estudio-so acerca de la g\u00e9nesis, evoluci\u00f3n y posterior diversificaci\u00f3n cantaora",
+                "target": "the reviewed scholarly treatment of siguiriyas and soleares",
+                "rationale": "The excerpt explicitly praises the publication's seriousness, documentation, and value for studying flamenco history."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "piedra fundacional de los llamados \u00abor\u00edgenes\u00bb de este arte... testifican a don Antonio como el especialista m\u00e1s destacado de tan compleja sensibilidad cantaora",
+                "target": "siguiriyas, soleares, and Antonio Mairena's status",
+                "rationale": "The passage constructs foundational styles and elevates Mairena through a hierarchy of specialization and recorded breadth."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "El m\u00e9todo de trabajo seguido por los autores se basa en una delimitaci\u00f3n de las geograf\u00edas flamencas espec\u00edficas... una ampl\u00edsima y bien documentada muestra de registros sonoros",
+                "target": "the authors' scholarly method and documentary authority",
+                "rationale": "The review authorizes the authors' critical claims through documented method, geography, statistics, recordings, and biographical expertise."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The word 'maestro' appears for Mairena, but the visible passage mainly ranks him as a specialist rather than showing him teaching or transmitting knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "tradition"
+            ],
+            "target": "the reviewed study and Antonio Mairena's canonical authority",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Article text is truncated, but the visible excerpts contain sufficient evaluative and canon-forming discourse."
+    },
+    {
+        "article_id": "1993-07-24-left-juan-francisco-reyes-osuna-el-ca",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "Me he llevado cincuenta a\u00f1os dedicado a la investigaci\u00f3n de nuestros artistas fenecidos... un fichero biogr\u00e1fico de enorme importancia, del que extraigo para publicar lo que s\u00e9",
+                "target": "the corrected biographical identity of El Canario de \u00c1lora",
+                "rationale": "The writer claims expert documentary authority to correct the flamenco record and establish the artist's true identity."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Estoy harto y m\u00e1s que harto de leer en libros, revistas y en carteles de la Pe\u00f1a de \u00c1lora, el nombre equivocado de \u00abEl Canario\u00bb",
+                "target": "published and institutional misnaming of El Canario",
+                "rationale": "The passage criticizes existing books, magazines, and pe\u00f1a materials for perpetuating an error about a flamenco artist."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "reason": "The article repeatedly asserts the 'verdadero nombre', but this is primarily a factual biographical correction rather than an authenticity claim about proper flamenco."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "Aficionados are asked to rectify records, but they are not clearly positioned as the source of authority; documentary research is."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "criticism"
+            ],
+            "target": "the public record of El Canario de \u00c1lora's identity",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1993-07-25-right-noticiario-flamenco",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "si Solera Flamenca, Pe\u00f1a Flamenca y el Ayuntamiento... dejar\u00e1n de prestar esa ayuda al flamenco, el premio no tendr\u00eda sentido",
+                "target": "local pe\u00f1as and municipal support for flamenco in Melilla",
+                "rationale": "The excerpt presents pe\u00f1as and local institutions as necessary community actors who sustain flamenco through continuing activity."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "uno de los tocaores m\u00e1s galardonados de su generaci\u00f3n: Premio Giralda de Plata... Premio Nacional de Guitarra...",
+                "target": "the guitarist discussed in the roundup",
+                "rationale": "The passage establishes status through awards and generational ranking."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Su toque est\u00e1 considerado no solamente como uno de los m\u00e1s leg\u00edtimos de la escuela guitarristica jerezana... signific\u00e1ndose por su hondura y clasicismo",
+                "target": "the guitarist's toque",
+                "rationale": "The description applies aesthetic criteria of legitimacy, suitability for accompaniment, depth, and classicism."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "reason": "The phrase 'm\u00e1s leg\u00edtimos de la escuela guitarr\u00edstica jerezana' suggests properness, but the stronger discourse function here is critical-aesthetic evaluation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "There is general praise throughout the excerpt, but the emitted CRIT_02 and CRIT_03 capture the more specific evaluative functions."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community",
+                "criticism"
+            ],
+            "target": "local flamenco support networks and the guitarist's artistic standing",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated; annotations are limited to the visible beginning/window/ending excerpts."
+    },
+    {
+        "article_id": "1993-07-26-right-qu-date-con-el-cante",
+        "no_relevant_discourse": true,
+        "insufficient_context": true,
+        "codes": [],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The visible text is only a short schedule notice and is insufficient for discourse coding."
+    }
+]

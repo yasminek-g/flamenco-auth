@@ -1,0 +1,264 @@
+[
+  {
+    "article_id": "1993-11-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "una vida, entregada, en gran parte, a la memoria, preservación, difusión y profundización de este arte",
+        "target": "Pepe Cruz and anonymous aficionados' work for flamenco",
+        "rationale": "The passage frames flamenco as something sustained through memory, preservation, diffusion, and deepening by community actors."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "personajes como Pepe Cruz... con su fervor, dedicación y... con su dinero, han propiciado el que el flamenco se halle hoy día en tan alta cota de aceptación cultural y popular",
+        "target": "Pepe Cruz and similar aficionados",
+        "rationale": "The article grants aficionados and peña figures authority as the people who materially and socially sustain flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "a preservar con tierra contumacia aquello que consideraron básico y fundamental en el flamenco... el grado de recepción de antiguos legados",
+        "target": "basic flamenco values and old legacies",
+        "rationale": "The passage legitimates flamenco continuity by valuing the preservation and reception of old legacies considered fundamental."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'auténtica ferralla del templo del flamenco' is strongly honorific, but it functions more as community legitimation than as canon/ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "tradition"
+      ],
+      "target": "Pepe Cruz and anonymous aficionados as sustainers of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-11-4-left-los-subrayados-de-anselmo-gonz-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los genuinos cantaores, vivos o desaparecidos, que sin titubear declara que sólo pueden ser gitanos",
+        "target": "Ricardo Molina's claim about genuine cantaores",
+        "rationale": "The passage reports a purity boundary that restricts genuine flamenco singers to gitanos."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "sólo pueden ser gitanos, hasta el punto de que a Silverio lo considera gran cantaor en la medida en que se aproximó el estilo calé",
+        "target": "gitano/calé identity as a criterion of flamenco authority",
+        "rationale": "Identity is used to define who can embody genuine flamenco and to evaluate a non-gitano figure by proximity to calé style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "dar una idea lo suficientemente amplia de hasta qué punto las posiciones de uno y otro autor son absolutamente irreductibles",
+        "target": "the critical positions of Ricardo Molina and González Climent",
+        "rationale": "The excerpt stages flamencological disagreement as a dispute over interpretive authority and the definition of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'saber práctico' appears in a quoted debate, but the visible passage contests the term rather than clearly framing oral/embodied transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative remarks such as 'Mentira', but the main discourse function is expert boundary dispute rather than review-style evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "definitions of genuine flamenco singers and flamencological authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotation is limited to the visible excerpts."
+  },
+  {
+    "article_id": "1993-11-5-right-jos-manuel-rodr-guez-el-mistela-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "se remite de continuo al recuerdo y memoria de forma casi reverencial de sus maestros, a sus enseñanzas y directrices",
+        "target": "Mistela's relation to his masters",
+        "rationale": "The passage legitimates Mistela's dance through reverent adherence to teachers, their teachings, and their directives."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "sus evoluciones incontaminadas y sin afeminamientos siguen por la línea recta del camino espinoso e incomprendido de lo puro",
+        "target": "Mistela's male flamenco dancing",
+        "rationale": "The passage uses purity and contamination language to define and defend a proper flamenco dance path."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ya tiene un lugar privilegiado entre los grandes del baile flamenco",
+        "target": "José Manuel Rodríguez 'El Mistela'",
+        "rationale": "The interviewer places the dancer within a hierarchy of major flamenco dancers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The excerpt mentions memory of masters, but this functions more as pedagogical authority than public heritage or safeguarding discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'baile en hombre' and 'sin afeminamientos' has gendered force, but the visible passage is more clearly purity/aesthetic boundary work than a broader identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Mistela's flamenco dance authority and style",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotation is limited to the visible excerpts."
+  },
+  {
+    "article_id": "1993-11-9-left-futuro-de-la-cr-tica-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la crítica flamenca es ejercida... por un alto porcentaje de personas no muy cualificadas en la materia",
+        "target": "current flamenco critics",
+        "rationale": "The passage evaluates the authority and qualifications of flamenco critics as a field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "críticas y crónicas que cualquier parecido con la realidad es pura coincidencia",
+        "target": "poor flamenco criticism and chronicles",
+        "rationale": "The author explicitly criticizes inaccurate flamenco criticism and reporting."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la información diaria o semanal... forma parte del acervo cultural de Andalucía",
+        "target": "flamenco criticism and information",
+        "rationale": "The passage frames flamenco information and criticism as part of Andalusia's collective cultural stock."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions 'personas conocedoras del flamenco' and aficionados, but it mainly critiques their inadequate critical authority rather than granting community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "the authority and future role of flamenco criticism",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotation is limited to the visible excerpts."
+  },
+  {
+    "article_id": "1993-11-11-left-estudios-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "atención por parte de las universidades nacionales y extranjeras hacia estas tareas investigadoras",
+        "target": "contemporary flamenco studies",
+        "rationale": "The passage authorizes flamenco studies through academic and institutional research attention."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "obras que hoy consideramos fundacionales de la moderna flamencología... libros pretenciosos y hasta oportunistas... permanecen en un discreto y justísimo olvido",
+        "target": "works of modern flamencology",
+        "rationale": "The article constructs a hierarchy between foundational works and opportunistic books that deserve oblivion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "recientes y valiosas aportaciones de Jesús García Solano, Pineda Novo... Fosforito y José de la Tomasa me han interesado de forma muy especial",
+        "target": "modern flamenco lyricists and interpreter-composers",
+        "rationale": "The ending excerpt explicitly evaluates recent contributions to flamenco lyric composition as valuable and especially interesting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Universities and congresses are institutional settings, but the visible passage frames them as research authority rather than authorized heritage recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "contemporary flamenco studies and their canon of works",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotation is limited to the visible excerpts."
+  }
+]

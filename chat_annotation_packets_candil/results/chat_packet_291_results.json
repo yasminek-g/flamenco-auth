@@ -1,0 +1,260 @@
+[
+  {
+    "article_id": "1994-07-19-left-para-los-lectores-de-candil",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "«El Mochuelo ha sido, entre los cantaores de flamenco, el de mayor popularidad. Los habrá habido más considerados por los inteligentes, pero más del dominio público, más universalmente conocido, no».",
+        "target": "Antonio del Pozo «El Mochuelo»",
+        "rationale": "The passage ranks El Mochuelo within flamenco by public popularity while contrasting that status with recognition by knowledgeable judges."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "este hombrecillo, que ha sido en sus años mozos un ídolo de las multitudes, que con los jipíos y trinos de su garganta privilegiada, lo conquistó todo",
+        "target": "El Mochuelo's singing career",
+        "rationale": "The article explicitly evaluates the singer's past artistry and public impact through praise of his voice and mass appeal."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase «el auténtico Antonio Pozo» identifies the real person behind the stage name, but it does not make a flamenco authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The cante jondo/cante serio taxonomy names genres, but the visible passage does not clearly apply those terms as evaluative criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio del Pozo «El Mochuelo»",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-07-23-right-discograf-a-flamenca-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "la difusión del legado cultural más importante y universal de nuestra región: El Cante Flamenco",
+        "target": "Cante Flamenco",
+        "rationale": "The passage frames flamenco recordings as access to a collective regional cultural legacy of broad public value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "El documento sonoro está al alcance de todos los aficionados, y por tanto, el debate flamenco se orienta hacia un horizonte clarificador y libre de oscuras manipulaciones",
+        "target": "access to historic flamenco recordings",
+        "rationale": "The passage treats recorded sound documents as a medium that expands access to flamenco knowledge and clarifies debate among aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Reitear el magnífico compás de Pastora en sus cantes por bulerías... siempre dejando claro su dominio de la ortodoxia... su personal juego melismático y su dominio de los tonos.",
+        "target": "Pastora Pavón's recordings",
+        "rationale": "The review applies explicit aesthetic criteria such as compás, orthodoxy, melisma, and tonal control to judge Pastora's flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The attack on obstructive collectors is critical, but the stronger emitted codes already capture heritage access and pedagogical mediation without overcoding."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as beneficiaries of access, but they are not clearly granted independent communal authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "historic flamenco recordings and the artists represented on them",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-07-24-left-a-manuel-martin-martin-el-de-la-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "¿Es que fue endeble el varapalo que te endié en mi crítica sobre tu actuación en la Universidad? Hombre, insultos, ninguno por mi parte. Yo soy concreto y contundente, pero no insulto.",
+        "target": "Manuel Martín Martín's critical position and university intervention",
+        "rationale": "The speaker asserts his own critical authority and distinguishes legitimate critical force from insult within a flamenco polemic."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la rica escuela de Silverio en donde se enmarcan estilos tan diferentes como los de Juan Breva, el Matrona, Pepe el de Jun, Cobitos, El Tenazas, El Mulato, Fosforito, Camarón...",
+        "target": "soleares and the Silverio school",
+        "rationale": "The passage situates styles and artists within a named school, creating a lineage-like hierarchy of reference points for evaluating the disputed soleares."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word «escuela» appears, but here it functions mainly as stylistic/canonical lineage rather than institutional or access-oriented pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The trigger «Recuerda» is retrieval scaffolding or ordinary polemical memory, not public heritage or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "authority over the interpretation of disputed soleares and flamenco criticism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible polemical and stylistic evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1994-07-26-left-pastora-pab-n-cruz-afortunada-en",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Por su indiscutible alta categoría de cantaora incopiable, nunca le faltó trabajo en la capital del Reino.",
+        "target": "Pastora Pavón",
+        "rationale": "The passage explicitly evaluates Pastora as an exceptionally high-ranking and inimitable cantaora."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Cordobeses fueron sus primeros maestros en la guitarra: Juan Muñoz «el Tomate» y «Merengue de Córdoba». Más tarde fue discípulo de Manolo Sanlúcar",
+        "target": "Vicente Amigo's guitar formation",
+        "rationale": "The passage legitimates Vicente Amigo's flamenco formation through named teachers and a recognized disciple relationship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "hay que tener la técnica y hay que estudiar mucho..., lo suficiente para que las manos luego estén al servicio de la cabeza, de la sensibilidad",
+        "target": "Vicente Amigo's conception of guitar artistry",
+        "rationale": "The quoted artist defines flamenco guitar quality through technique, study, intellect, and sensitivity as aesthetic criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article strongly frames Pastora through gender and romance, but the identity framing does not clearly organize flamenco belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The list of Vicente Amigo's prizes and honors signals status, but it reads mainly as biographical enumeration rather than canon-building discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Pastora Pavón and Vicente Amigo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text contains multiple adjacent items; codes are assigned only where the discourse function is explicit."
+  },
+  {
+    "article_id": "1994-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "la tiranía que ejercen las grandes casas discográficas que limitan y determinan la versión propia del artista flamenco, imponiéndole concesiones basadas exclusivamente en criterios comerciales que desfiguran el rostro íntimo de la obra",
+        "target": "large record companies' control over flamenco artists",
+        "rationale": "Commercial recording structures are framed as corrupting or weakening the intimate integrity of flamenco work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "erradicar cualquier suerte de servidumbre frente a quienes priorizan la cuenta de resultados sobre valores genuinos del flamenco",
+        "target": "Enrique Morente's independent record-label project",
+        "rationale": "The editorial authorizes Morente's independence by contrasting commercial profit with genuine flamenco values."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no estamos extendiendo una patente de corso a todas las producciones que ha realizado o pueda realizar en el futuro este cantaor. Es más, en casos puntuales hemos dejado constancia de nuestro disentimiento.",
+        "target": "Enrique Morente's recordings and future productions",
+        "rationale": "The editorial voice asserts critical authority to support Morente's independence while reserving the right to judge his productions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of Morente's independence is evaluative, but the more specific critical-authority and anti-commercial authenticity codes capture the discourse function."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The editorial values flamenco culturally, but it does not frame it explicitly as patrimonio, heritage, or public cultural memory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "independent flamenco recording against commercial record-company control",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

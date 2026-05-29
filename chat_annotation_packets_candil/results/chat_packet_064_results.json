@@ -1,0 +1,262 @@
+[
+  {
+    "article_id": "1982-11-15-right-la-gracia-y-la-guasa-de-juan-bel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "cierto señoritismo irrespetuoso con los artistas flamencos",
+        "target": "the condescending treatment of flamenco artists in the reproduced anecdote",
+        "rationale": "The editorial framing explicitly criticizes an attitude toward flamenco artists as disrespectful and class-inflected."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Manuel Torre, puede colocarse —y en ello la Historia es elocuente— a la misma altura del torero y del escultor",
+        "target": "Manuel Torre's artistic status",
+        "rationale": "The passage elevates Manuel Torre into a hierarchy equal to celebrated figures from bullfighting and sculpture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The word voz appears in the anecdote, but it describes a telephone voice rather than an aesthetic criterion for flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase vieja página flamenca suggests archival memory, but the visible text mainly frames a critical reprint rather than public safeguarding or heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manuel Torre and the treatment of flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article text is truncated, but the beginning and ending provide enough context for the editorial evaluation."
+  },
+  {
+    "article_id": "1982-11-16-right-un-cante-que-destruye",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "he sentido escuchando a Antonio Mairena y desde entonces mi actitud y pensamiento hacia el Arte es muy estrecho, pero muy profundo y no ancho y superficial",
+        "target": "Antonio Mairena's singing",
+        "rationale": "The author evaluates Mairena's cante as transformative and artistically profound rather than superficial."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "toda persona con sensibilidad suficiente para captar tal mensaje, se queda sobrecogido; es un cante que no es normal. No busca tu felicidad, sino que parece buscar tu destrucción",
+        "target": "Mairena's seguiriyas and their aesthetic effect",
+        "rationale": "The passage defines the value of the cante through criteria of depth, emotional violence, sensitivity, and overwhelming expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The 'cuarto' setting is described as unusual, but the visible text does not clearly contrast participatory private flamenco with public spectatorship as a source of authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The Schumann quotation and remarks about genius imply high status, but the main discourse function is aesthetic evaluation rather than canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Mairena's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative subscription material at the end was ignored as non-article discourse."
+  },
+  {
+    "article_id": "1982-11-17-left-algunas-apreciaciones-sobre-los-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "son cartageneras auténticas; además, las llamamos por aquí la Grande de Chacón",
+        "target": "specific cartageneras and their classification",
+        "rationale": "The author explicitly asserts the genuine identity of particular cantes as cartageneras."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "La afición busca hoy la pureza del cante andaluz... los cantes ligados dejan de interesar al aficionado... hoy, gracias a una grabación de Antonio Mairena... se cantan las cantiñas auténticamente puras",
+        "target": "pure Andalusian cante versus mixed or linked cantes",
+        "rationale": "The passage values pure forms and devalues linked cantes as less interesting and at risk of loss, drawing a boundary around proper repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "lo confirman muchas grabaciones de cantaores de tanta credibilidad... y un largo etcétera más, que han ganado premios en La Unión... Y los jurados eran Agustín Gómez, Diego Alba Villagrán, Francisco Sánchez Yélamo, etc., etc., aficionados de reconocido prestigio",
+        "target": "the classification of the disputed cartagenera/taranta",
+        "rationale": "The author invokes recordings, prize decisions, and prestigious aficionados as expert authority for a classificatory judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article discusses knowledge and classification, but it does not clearly frame a teacher, school, or method as pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There are comparisons among cantes and cantaores, but the stronger discourse function is authenticity classification and expert boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Málaga and Levante cante classifications",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a polemical classification response; codes focus on clear evaluative and authorizing passages."
+  },
+  {
+    "article_id": "1982-11-17-right-dialogo-abierto-sobre-los-cantes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "intentaré, dialogando, hacer algunas precisiones... es un error atribuir la paternidad de este fandango al gran egabrense",
+        "target": "the attribution and naming of the fandango de Cartagena",
+        "rationale": "The author exercises corrective expert authority by disputing attribution and clarifying classification."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "si existen aficionados a quienes no les gusta el auténtico nombre de fandango de Cartagena, pueden nominarlo como cartagenera chica",
+        "target": "the name and identity of the fandango de Cartagena",
+        "rationale": "The passage presents a particular name as the authentic designation of the cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Si se desean conocer los cantes levantinos, debe estudiarse la escuela de Chacón",
+        "target": "knowledge of Levantine cantes",
+        "rationale": "The author positions the school of Chacón as the authoritative route for learning or understanding these cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The author rejects the chico/grande hierarchy and mentions great cantaores, but the passage does not chiefly build a canon beyond the expert classificatory argument."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned, but they are not clearly granted collective authority; the author primarily asserts his own classificatory position."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the naming, attribution, and study of Levantine cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review text is truncated, so only visible classification and concluding claims were coded."
+  },
+  {
+    "article_id": "1982-11-18-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Puede decirse que fue el gran maestro de la siguiriya de su barrio en su tiempo y uno de los mejores intérpretes de su época, por lo que ha pasado a la historia del flamenco como una figura legendaria",
+        "target": "Frasco, El Colorao",
+        "rationale": "The passage canonizes Frasco through master status, comparative excellence, and legendary historical standing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "una seguiriya de cambio que muy pocos cantaores actuales conocen en su pureza",
+        "target": "Frasco's seguiriya style",
+        "rationale": "The passage presents the style as a proper pure form whose genuine knowledge is rare among current singers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "frecuentaba las reuniones flamencas jerezanas demostrando su arte trianero, el cual era asimilado por los flamencos de Jerez",
+        "target": "transmission of Frasco's Triana style to Jerez flamencos",
+        "rationale": "The passage describes situated social transmission in which a local style is absorbed by another flamenco community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad praise of Frasco and Enrique Ortega, but it is covered more specifically by canon/hierarchy and authenticity codes."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Flamenco gatherings and friendships are described, but community authority is not the main authorizing function in the visible passage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Frasco, El Colorao and early siguiriya traditions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertising copy at the end was ignored."
+  }
+]

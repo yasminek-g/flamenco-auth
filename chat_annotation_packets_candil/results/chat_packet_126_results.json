@@ -1,0 +1,203 @@
+[
+  {
+    "article_id": "1986-01-23-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Nos encontramos ante la aparición de un nuevo disco de la serie lanzada por la casa Hispavox —con mucho acierto—, que vienen a completar las dos magníficas antologías editadas por esta casa discográfica",
+        "target": "Hispavox flamenco anthology/recording series",
+        "rationale": "The review explicitly praises the discographic series as well judged and magnificent."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "quizás con falta de matización en el estilo... cantaores como Aurelio, Manolo Vargas, etc., van por este estilo con más profundidad",
+        "target": "La Perla de Cádiz's cantiñas and alternative interpreters of the style",
+        "rationale": "The passage applies aesthetic criteria such as matización and profundidad to judge the adequacy of interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "sin menospreciar el arte de La Perla—que cantaores como Aurelio, Manolo Vargas, etc., van por este estilo con más profundidad",
+        "target": "Relative standing of La Perla de Cádiz, Aurelio, and Manolo Vargas in this style",
+        "rationale": "The reviewer creates a hierarchy by judging some cantaores as deeper representatives of the style than La Perla."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to clásicos ecos, Chacón, solera, and revalorizar suggest continuity, but the visible discourse is primarily critical review rather than a sustained tradition-authorizing claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Flamenco recordings, interpreters, and cantiñas/cantes de ida y vuelta repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated review text, but the visible review contains enough explicit evaluative discourse for the emitted codes."
+  },
+  {
+    "article_id": "1986-01-23-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la sapiencia en estas lides del distinguido Yerga... tú sabes más que Lepe, por escudriñador pacienzudo y tenaz en este terreno ingrato",
+        "target": "Manuel Yerga Lancharro's authority on malagueñas and early recordings",
+        "rationale": "The letter grants Yerga expert authority as a patient investigator able to clarify disputed flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Yo siempre he creído que las auténticas «malagueñas» chaconianas, no pasarían de ocho o nueve",
+        "target": "The corpus of authentic Chacón-style malagueñas",
+        "rationale": "The passage asserts a limited set of genuinely Chacónian malagueñas, making authenticity a criterion for defining the repertoire."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "cuando hablaba de los cantes de esta tierra, nombrando a otros señores que yo les preguntaría donde estuvieron durante 60 años que no se habló de dichos cantes... le estaba adjudicando algo que no les pertenecía en toda su extensión",
+        "target": "Claims over local cantes and their rightful representatives",
+        "rationale": "The passage frames authority over the cantes through local belonging and contests attribution to people seen as lacking a legitimate connection."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The dispute involves memory and local cultural ownership, but the visible passage does not clearly frame it as public heritage safeguarding or heritage politics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Chacón and Piñana function as important reference figures, but the visible text does not clearly build a broader canon or ranking beyond the disputed attribution."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Authority to define malagueñas, cantes de Levante, and local flamenco attribution",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible exchange clearly stages a dispute over expert and local authority."
+  },
+  {
+    "article_id": "1986-01-24-left-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is too short and mostly advertising/contact copy, with no clear flamenco discourse function to code."
+  },
+  {
+    "article_id": "1986-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el concurso cordobés marcaba un hito, un antes y un después, de suerte que con el mismo se determina una nueva sistemática de los grandes períodos que configuran la historia del flamenco",
+        "target": "Concurso Nacional de Arte Flamenco de Córdoba",
+        "rationale": "The editorial canonizes the Córdoba contest as a landmark that reorganizes flamenco historiography."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "afirmando los estilos más puros y menos conocidos, frente al reinado fandangueril y cupletero tan del gusto de la época",
+        "target": "Pure and lesser-known flamenco styles versus fandangueril/cupletero dominance",
+        "rationale": "The passage draws a purity boundary by valorizing purer styles against a devalued popular/commercial repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "En 1922 se idealiza sobre el flamenco, sin apenas conocerlo; en 1956 se habla, se profundiza en el mismo con absoluto rigor",
+        "target": "Granada 1922 discourse versus Córdoba 1956 discourse",
+        "rationale": "The editorial uses critical authority to police interpretive legitimacy, opposing uninformed idealization to rigorous knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "una pléyade de artistas, de genuino cuño, que oficiarán de maesfros de las más recientes generaciones, con lo que se asegura, fidedignamente, la transmisión del legado flamenco",
+        "target": "Artists formed around the Córdoba contest and later generations",
+        "rationale": "The passage frames flamenco continuity as intergenerational transmission through artists who become masters for newer generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The contest is institutionalized and publicly recognized, but the passage does not explicitly use heritage/patrimony or official heritage-listing mechanisms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as verdad flamenca and genuino cuño imply authenticity, but the stronger emitted AUTH_02 captures the explicit purity boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "The Córdoba contest as a legitimate turning point in flamenco history and transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible article; coding emphasizes explicit historiographic, purity, critical, and transmission functions."
+  },
+  {
+    "article_id": "1986-03-3-right-concurso-nacional-de-arte-flamen",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a poetic dedication/lyrics-like passage and does not clearly evaluate, authorize, transmit, rank, or define flamenco authority."
+  }
+]

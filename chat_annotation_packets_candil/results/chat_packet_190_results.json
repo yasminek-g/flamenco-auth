@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "1989-05-11-left-la-propaganda-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "con un sentido artístico en la mayoría de los casos de neta originalidad andaluza, al querer representar los distintos mensajes que encierra el flamenco",
+        "target": "la propaganda gráfica y los carteles flamencos",
+        "rationale": "The passage evaluates flamenco graphic propaganda as artistically original and expressive rather than merely describing it."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "en la mayoría de estos casos se da en ellos la condición de excepcionales aficionados al flamenco, de auténticos cabales",
+        "target": "los pintores/cartelistas vinculados al flamenco",
+        "rationale": "The artists' value is grounded in recognized afición and cabal insider status, not only in their professional role."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text names major poster artists and says the cartel reaches a 'cumbre', but the visible passage does not clearly construct a flamenco-specific canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco posters and the artists who produced them",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes rely only on the visible discussion of flamenco graphic culture and artist-aficionado status."
+  },
+  {
+    "article_id": "1989-05-13-right-la-osada-ignorancia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "En la Universidad que se llama Don Antonio Mairena habita todo el Cante. Cuanto no recuerde Mairena no lo recordaremos nunca.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena as an unsurpassed repository and measure of cante knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "ahora descubren los sagaces entrevistadores y paísanos de El Pele que Antonio Mairena ocultó siempre todo lo que había aprendido de Juan Tallega",
+        "target": "El Pele and his interviewers' claims about Mairena",
+        "rationale": "The writer uses critical authority and sarcasm to police an allegedly ignorant boundary-crossing judgment about Mairena's legacy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "se apreciaron evidentes progresos en su mejorada técnica interpretativa, con bastantes posibilidades por delante y, en contraste, haciéndose evidente la falta de una tutoría correctora de defectos propios de la inexperiencia",
+        "target": "El Pele's performance",
+        "rationale": "The passage explicitly evaluates the singer's technique, potential, and defects."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'tutoría correctora' suggests training, but it is used as part of a performance critique rather than a sustained claim about pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Mairena's authority versus El Pele's claims",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-05-14-left-la-malague-a-es-de-m-laga",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la malagueña, en dos zonas tan diametralmente opuestas como son la Axarquía veleña y la perota de Alora",
+        "target": "la malagueña",
+        "rationale": "The article grounds the style's legitimacy in local origin and rootedness in Málaga rather than in Chacón alone."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Me remito a las autorizadas opiniones de don José Luque Navajas y a su libro «Málaga en el cante» y a don José Blas Vega y a su libro «Vida y cante de don Antonio Chacón»",
+        "target": "the claim that Chacón created the malagueña from a fandango",
+        "rationale": "The writer invokes expert authors and flamencological works to authorize a corrective judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "auténticos bodrios por lo mal tratado que fue el arte flamenco",
+        "target": "the television program «Caminos Flamencos»",
+        "rationale": "The passage explicitly criticizes the program's treatment of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The reference to 'los no iniciados' marks an audience knowledge difference, but it is secondary to the corrective origin argument and not enough for a separate insider/outsider boundary code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the Málaga origin of the malagueña",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-05-14-right-sentimiento-y-raz-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el Cante, un árbol frondoso de vida milenaria desde sus más ocultas raíces a sus más altas y últimas ramas",
+        "target": "el Cante",
+        "rationale": "The metaphor grounds cante's value in deep roots, continuity, and organic historical growth."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "un arte que sólo pueden comprender totalmente los que lo sienten",
+        "target": "understanding of cante",
+        "rationale": "The passage draws an epistemic boundary between those who feel cante and those who cannot fully understand it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "el mal gusto facilón y comercial que salpica y molesta a nuestro arte espiritual en su más depurada exquisitez",
+        "target": "commercial/easy-taste tendencies in flamenco",
+        "rationale": "The writer uses critical language to police a boundary against commercialized bad taste."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text discusses discriminatory distinctions among cantes, but the visible excerpt mostly contests hierarchy rather than constructing a clear ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "cante as a rooted, spiritually valued art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; the ending supports the commercial-boundary code but wider argument may be missing."
+  },
+  {
+    "article_id": "1989-05-16-left-siguiriyas-nombre-de-un-cante-pl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "desentrañar el nombre del príncipe de los cantes: las siguirias gitanas",
+        "target": "las siguiriyas gitanas",
+        "rationale": "Calling siguiriyas the 'prince of cantes' assigns elevated hierarchical status within flamenco repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "nos lo ilustra con lujo de rigor documental y musicográfico el maestro García Matos",
+        "target": "the explanation of the name and history of siguiriyas/playeras",
+        "rationale": "The argument authorizes its classification through an expert figure and documentary/musicological rigor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article investigates origins and nomenclature, but the visible origin discussion is largely etymological and historical rather than using roots to authorize present flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The retrieval trigger 'fuera' does not function as an insider/outsider social boundary in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "siguiriyas and expert explanations of their naming",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; coding avoids treating neutral etymology as tradition/roots authorization."
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "article_id": "1987-03-3-right-fosforito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Córdoba ... nombrándole «hijo adoptivo» ... la institución jerezana de ámbito nacional denominada «Cátedra de Flamencología», nombraba presidente y director honorarios",
+        "target": "Fosforito",
+        "rationale": "Official civic and flamencological institutions are shown conferring public recognition and value on Fosforito."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "para el pueblo de Córdoba no hay otro artista máximo que Fosforito, «el elegido»",
+        "target": "Fosforito's status within flamenco and Córdoba",
+        "rationale": "The passage constructs Fosforito as a ranked, exemplary figure above other artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ha dado consecuencia lógica y remate a muchos cantes ... les ha dado estructura de pieza musical completa. Ha dado perfil definido y contundente y evolución.",
+        "target": "Fosforito's cante",
+        "rationale": "The text explicitly evaluates Fosforito's artistic contribution as structurally completing, defining, and advancing cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase «arte verdadero» suggests authenticity, but it is framed broadly as true art leaving a mark on the people rather than a direct claim about proper flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Popular voting and pueblo recognition appear, but the stronger function is canonizing Fosforito's rank rather than establishing afición or peña authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "community"
+      ],
+      "target": "Fosforito as an exemplary flamenco artist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpts provide sufficient evidence for institutional recognition, evaluation, and ranking."
+  },
+  {
+    "article_id": "1987-03-11-left-alto-sentido-y-grado-poetico-en-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Alguna de las otras restantes coplas no se escapó sin su genial toque supervisor ... reconocimiento a su indiscutible valía letrística.",
+        "target": "Fosforito's poetic and lyrical judgment",
+        "rationale": "The author explicitly praises Fosforito's corrections and lyrical ability as artistically valuable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el pontanense FOSFORITO, a más de cantaor de época, patentizábase sencillamente como inspirado poeta popular",
+        "target": "Fosforito",
+        "rationale": "Calling him a «cantaor de época» elevates him beyond ordinary praise into exemplary historical status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Fosforito corrects a lyric, but the passage frames this as artistic-poetic judgment rather than a teaching relation or pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito as cantaor and popular poet",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-03-11-right-antonio-fern-ndez-d-az-ayer-segu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "EL SEGUNDO DE A BORDO, pero hoy puedo proclamar que ... su lugar en el escalafón, el número uno, es tuyo y únicamente tuyo.",
+        "target": "Fosforito's place in the flamenco hierarchy",
+        "rationale": "The article explicitly ranks Fosforito in the flamenco hierarchy and declares him number one after Mairena."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "reconocimiento público a tu valiosa aportación al arte flamenco",
+        "target": "Fosforito's artistic contribution",
+        "rationale": "The passage directly evaluates Fosforito's contribution to flamenco as valuable."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "deambular por ciudades, pueblos y aldeas de nuestra geografía cantaora, libando aquí y allá el néctar de la sabiduría flamenca en las más añejas flores: «El Seco de Puente Genil» y otros.",
+        "target": "Fosforito's formation as cantaor",
+        "rationale": "His knowledge is framed as acquired through situated contact with older flamenco sources across the cantaora geography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The author says many aficionados share the ranking, but this mainly supports the hierarchy claim rather than independently positioning afición as judging authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The text mentions a public homage, but it does not clearly develop official or institutional heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Fosforito as successor to Mairena and leading cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-03-12-left-cuantos-habremos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "he podido observar entre los flamencos cierta inclinación a no descubrir nuestras fuentes de información y formación flamenca ... o ... atribuir ... nuestros conocimientos ... a personas y circunstancias que ... sirvan para aumentar o fortalecer nuestro prestigio.",
+        "target": "Prestige-building through claimed flamenco sources",
+        "rationale": "The author critically exposes how flamenco authority is constructed through selective claims about sources of formation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Que nuestros conocimientos, nuestra formación, hayan sido a través de cantaores de renombre ... figuras históricas ya",
+        "target": "Flamenco knowledge and formation",
+        "rationale": "The passage treats knowledge as authorized through lineage-like transmission from renowned singers and historical figures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "citar a Chacón ... o a cualquiera otra de esas figuras que son ya pilares inamovibles del edificio flamenco",
+        "target": "Historical flamenco figures such as Chacón",
+        "rationale": "Historical artists are presented as canonical, immovable pillars whose names carry authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Family tradition and historical roots are mentioned as prestige markers, but the visible passage is primarily a critique of authority-claiming rather than an endorsement of tradition as value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Fosforito is called a maestro later in the excerpt, but the evaluative detail is too brief compared with the clearer critique of prestige and lineage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Claims of flamenco authority based on prestigious sources and canonical figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible evidence window gives enough context for the critique of prestige-based flamenco authority."
+  },
+  {
+    "article_id": "1987-03-13-left-fosforito-el-hombre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tejer entre todos la corona de laurel que simboliza una ejemplar obra literaria y tipográfica ofrecida al genio cantaor",
+        "target": "Fosforito",
+        "rationale": "The tribute language canonizes Fosforito as a genius singer worthy of laurel-crown homage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "para su gloria y como testimonio de su grandeza de alma, de su sensibilidad extraordinaria",
+        "target": "Fosforito's personal and artistic qualities",
+        "rationale": "The author explicitly praises Fosforito's greatness of soul and extraordinary sensitivity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "una pléyade de escritores, de poetas, de aficionados ansiosos de ejercitar su derecho a tejer entre todos la corona de laurel",
+        "target": "Collective homage to Fosforito",
+        "rationale": "A community of writers, poets, and aficionados is framed as collectively authorized to recognize and honor Fosforito."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase «téngase por cierto y verdadero» asserts sincerity of the author's statement, not authenticity of flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The term Maestro appears as an honorific for Mairena and Fosforito rather than a clear teaching or transmission relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Fosforito as honored flamenco artist and human figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

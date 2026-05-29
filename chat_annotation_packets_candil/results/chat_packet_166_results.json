@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "1988-01-16-right-las-cabales-de-plata",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "su audiencia y afición flamenca, a participar de manera tan activa que bien pudieran ofrecernos el índice estimable de muchas cosas, y entre ellas muy especialmente la de estimar el grado de perfección en que se encuentra la afición al flamenco en su conjunto",
+        "target": "la afición flamenca participante en el programa y el premio",
+        "rationale": "The passage treats the participating afición as a meaningful community whose responses can measure the state and competence of flamenco fandom."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "garantizando la seriedad de los fallos, un jurado, compuesto por personalidades de reconocida solvencia, además de la vigilancia y presencia de Pepe Verdú, más la actuación notarial",
+        "target": "el premio «Los Cabales de Plata»",
+        "rationale": "The award's legitimacy is grounded in expert jury authority, recognized solvency, and notarial oversight."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la 4. a Distinción «Compás del Cante» ... recayó en la personalidad universal de Francisco Sánchez Gómez, conocido en el mundo artístico como «Paco de Lucía»",
+        "target": "Paco de Lucía",
+        "rationale": "The award and wording canonize Paco de Lucía by presenting him as a universal personality receiving major flamenco recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article mentions institutionalized awards and authorities, but it does not frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "flamenco awards, Paco de Lucía, and the participating afición",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Award discourse and expert adjudication are clearer than heritage framing."
+  },
+  {
+    "article_id": "1988-01-17-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Así, desgranando pequeños detalles humanos, el autor desarrolla este libro bellísimo que ha sido otro regalo más para no olvidar nunca este increíble XV Congreso de Actividades Flamencas",
+        "target": "el libro de Gonzalo Rojo sobre cantaores malagueños",
+        "rationale": "The reviewer explicitly praises the book's quality and value as a memorable contribution."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Sería suponer el cante o al baile una envoltura etérea, inmaterial y situada fuera del discurso implacable de la historia. Sería caer en el imperdonable olvido",
+        "target": "la biografía histórica de artistas flamencos malagueños",
+        "rationale": "The passage argues that flamenco art must be understood through its historical and human roots rather than detached from history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un siglo de la historia cantaora de Málaga, con nombres de tal resonancia que a cualquier flamenco le entran por la sangre apenas pronunciados: Juan Breva, el Piyayo, el Cojo de Málaga, el Canario, Paca Aguilera o la Pirula",
+        "target": "los cantaores y cantaoras malagueños mencionados",
+        "rationale": "The text constructs a local canon by naming exemplary artists whose status is presumed to resonate deeply with flamenco insiders."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'nuestra antigua raza' suggests identity framing, but the visible passage does not develop a clear group authority or belonging claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "Málaga's historical cantaores and their biographical recovery",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The central move is a review that legitimates biography as necessary to flamenco history."
+  },
+  {
+    "article_id": "1988-01-17-right-el-ballet-pre-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "puede arrojar bastante luz sobre los desconocidos orígenes de los cantes y bailes andaluces, que actualmente conocemos como flamencos",
+        "target": "los orígenes antiguos de los cantes y bailes andaluces/flamencos",
+        "rationale": "The Roman artifact is used to ground present flamenco forms in deep historical origins."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La prueba, pequeña, pero esclarecedora, se conserva como el mejor tesoro de la historia anti-quísima de nuestro folklore en el Museo Arqueológico de Jerez",
+        "target": "la pieza arqueológica vinculada a la historia del baile flamenco",
+        "rationale": "The passage places the object's cultural value under museum conservation and archaeological authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "trascendental hallazgo arqueológico, inadvertido hasta ahora para todos los investigadores flamencos",
+        "target": "el hallazgo arqueológico y su interpretación flamenca",
+        "rationale": "The author positions researcher attention and expert recognition as central to validating the artifact's significance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "heritage", "criticism"],
+      "target": "a Roman artifact interpreted as evidence for flamenco-related origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible beginning and ending provide enough evidence for roots, museum authority, and expert validation."
+  },
+  {
+    "article_id": "1988-01-18-right-el-romance-en-el-cancionero-infa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Muchos de los cantos y juegos infantiles son eco de aquellos romances entroncados con las gestas medievales",
+        "target": "los romances conservados en cantos y juegos infantiles",
+        "rationale": "The passage grounds the value of present children's songs and games in continuity with medieval romance traditions."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "conservado como canción infantil en Europa y en América, quizá retorne al viejo continente como romance en estos ininterrumpidos diálogos ultramarinos",
+        "target": "el romance de Mambruno as transatlantic living repertoire",
+        "rationale": "The text frames the romance as a conserved and circulating living practice across Europe and America."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The word 'oficiales' appears inside the quoted romance narrative and does not indicate official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "heritage"],
+      "target": "children's romance repertoire and its transatlantic continuity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is truncated and not all flamenco connections are visible, the excerpt clearly develops continuity and living-transmission discourse around romance repertoire."
+  },
+  {
+    "article_id": "1988-01-21-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nos situamos ante uno de los trabajos más redondos, por antológico y flamenco, que conocemos sobre los villancicos",
+        "target": "el disco de villancicos de Rosario López",
+        "rationale": "The review makes an explicit positive judgment of the recording's quality and flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Con gran dominio y conocimiento de los recursos técnicos, el profundo vibrar de su relampagueante magnetismo, imanta un mensaje de paz y alegría",
+        "target": "Rosario López's singing",
+        "rationale": "The evaluation applies aesthetic criteria such as technical command, depth, expressive force, and emotional magnetism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "algunos de ellos recreados sobre los viejos testimonios que nos legaron la Niña de los Peines y Vallejo, entre otros",
+        "target": "Rosario López's recreated villancicos",
+        "rationale": "The recording is authorized through continuity with inherited testimony from earlier flamenco figures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Y es que el cante, cuando no es un soplo de vida, es fingido ... la tradición queda enriquecida con una expresión flamenca que despoja el cante de melífluos folklorismos",
+        "target": "Rosario López's cante versus merely decorative or false folklorism",
+        "rationale": "The passage draws a boundary between living, genuine cante and fingido or melifluous folklorism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article invokes memory and popular wisdom, but the primary discourse is critical/authenticating rather than public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "authenticity", "tradition"],
+      "target": "Rosario López's flamenco villancico recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This is a dense review; four codes are retained because the praise, aesthetic criteria, tradition claim, and purity boundary are distinct."
+  }
+]

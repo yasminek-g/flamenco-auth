@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "1990-05-6-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Las siguiriyas supremas son las que rematan por cabales... le niego la genialidad que le atribuyen los payos.",
+        "target": "siguiriyas, Silverio, El Fillo, and livianas within cante hierarchy",
+        "rationale": "The passage ranks forms and artists, granting or denying canonical status and comparative greatness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Las livianas requieren coplas serias... las coplas que ha elegido para sus grabaciones son sinceramente superficiales. Caso claro de desnivel entre canto y letra.",
+        "target": "performance and repertoire criteria for livianas",
+        "rationale": "The text defines quality through aesthetic criteria such as seriousness of lyrics and balance between cante and text."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "El cante es de los cantaores. El cante nace y se mueve esencialmente entre ellos. Exclusivamente. Todo lo que se mueva fuera de este círculo es un mero eco.",
+        "target": "authority over cante",
+        "rationale": "The passage draws a strong insider/outsider boundary around cantaores as the exclusive circle where cante properly exists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The boundary around cantaores implies legitimacy, but the visible wording is more directly a community/insider authority claim than an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "cante, cantaores, and named artists/styles within cante hierarchy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt, but the visible spans provide sufficient evidence for critical hierarchy, aesthetic criteria, and insider boundary discourse."
+  },
+  {
+    "article_id": "1990-05-13-left-garc-a-lorca-y-el-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Federico García Lorca fue esa clase de artista a que llamamos genio... ¿cuántas veces tendríamos que usarla para abarcar las páginas más extraordinarias de Federico García Lorca?",
+        "target": "Federico García Lorca as an artist in relation to flamenco poetics",
+        "rationale": "The passage canonizes Lorca through exceptional genius and superlative artistic status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Federico nos recuerda que la siguiriya es el «perfecto poema de las lágrimas». Para nosotros, García Lorca es hoy una estremecedora mezcla de Bach y de siguiriya gitana.",
+        "target": "siguiriya gitana and Lorca's relation to it",
+        "rationale": "The passage defines the siguiriya through an aesthetic criterion of tragic emotional force and uses it to evaluate Lorca's art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The word 'hombres' appears, but it does not organize flamenco authority or belonging through identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "García Lorca and the siguiriya as aesthetic model",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; coding is limited to the visible canonizing and aesthetic claims."
+  },
+  {
+    "article_id": "1990-05-18-left-v-semana-de-estudios-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "quien, sin duda, debe catalogarse como la cantaora más completa de todos los tiempos. Pastora Pavón es, ante todo, síntesis y muestra emblemática de la propia evolución del cante",
+        "target": "Pastora Pavón, Niña de los Peines",
+        "rationale": "The passage canonizes Pastora Pavón through superlative ranking and emblematic status in the history of cante."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco ha sido reconocido por las instituciones, citando la fecha de 1863 como la que marca el citado reconocimiento, siendo la reina Isabel II... la que lo efec[túa]",
+        "target": "institutional recognition of flamenco",
+        "rationale": "The passage frames flamenco value through institutional recognition and official authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El dominio que muestra en el acompañamiento, la sincronización y el entendimiento mantenido con el cantaor... hacen de Vicente Amigo uno de los tocaores con más porvenir en la actualidad.",
+        "target": "Vicente Amigo's guitar playing",
+        "rationale": "The passage explicitly evaluates Vicente Amigo's performance quality and future artistic standing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The Vicente Amigo passage names criteria such as dominio, sincronización, frescura, and creatividad, but these mainly support the emitted overall critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Pastora Pavón, institutional recognition of flamenco, and Vicente Amigo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt supports both canonization and institutional-recognition discourse despite truncation."
+  },
+  {
+    "article_id": "1990-05-19-right-juan-moreno-maya-el-pele-y-vicen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "De nacimiento. El artista, la persona, el aficionao se va haciendo con el tiempo, sobre la brecha, a base de fatigas y estudios... comencé de chiquitito escuchando, estudiando",
+        "target": "El Pele's formation as artist and aficionado",
+        "rationale": "The passage frames flamenco formation as a gradual embodied and experiential process of listening, study, effort, and lived practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Antonio Montoya en Córdoba, que me coge con la vara y me dijo lo que tenía que hacer y el trabajo que había que desarrollar",
+        "target": "Antonio Montoya's guidance of El Pele",
+        "rationale": "Antonio Montoya is positioned as an authoritative pedagogical figure who directs what the singer should do and how to work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "don Antonio Chacón... Ha sío un hombre al que le deben muchísimo los aficionaos. Se deberían de haber grabao todos los cantes que él hacía.",
+        "target": "Antonio Chacón",
+        "rationale": "The passage elevates Chacón as a major reference figure whose complete repertoire deserved preservation and study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family and aficionado references appear, but the clearest discourse function is pedagogical formation rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "El Pele's formation, Antonio Montoya's authority, and Antonio Chacón's canonical status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The interview excerpt is truncated, but the visible learning and mentor passages are sufficient for pedagogical coding."
+  },
+  {
+    "article_id": "1990-05-22-left-vii-trofeo-lucas-l-pez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "este trofeo que premia a la mejor actuación realizada en la Peña el Taranto durante el año",
+        "target": "Juan Carmona Habichuela and Tomatito receiving the Trofeo Lucas López",
+        "rationale": "The award constructs a value hierarchy by singling out the best performance in the peña's annual field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El toque tiene su propio léxico... puede ser airoso si es ágil... corto si tiene pocos recursos técnicos... gitano o flamenco si pellizca con coraje; frío si carece de pellizco; largo si revela un extenso conocimiento técnico e interpretativo",
+        "target": "flamenco guitar accompaniment and toque categories",
+        "rationale": "The passage defines flamenco guitar quality through explicit technical and expressive aesthetic criteria."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "las cinco escuelas apuntadas por Manuel Caño... el Montoyismo... el Ricardismo... el Sabiquismo... la escuela moderna, encabezada por Paco de Lucía, Manolo Sanlúcar y Víctor Monje «Serranito»",
+        "target": "lineage and evolution of flamenco guitar schools",
+        "rationale": "The passage grounds present flamenco guitar value in continuity across named schools and authoritative stylistic lineages."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'han bebido en las fuentes' suggests influence, but the excerpt does not clearly describe embodied, oral, or lineage-based learning as transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "flamenco guitar accompaniment, awarded guitarists, and guitar-school lineages",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible passage includes explicit award hierarchy, aesthetic taxonomy, and lineage-based school history."
+  }
+]

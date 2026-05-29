@@ -1,0 +1,198 @@
+[
+  {
+    "article_id": "1981-07-15-left-ceaso-del-idolo",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text contains poetic language about voice, grito, suffering, and theatre, but the visible passage does not clearly identify a flamenco target or apply an explicit aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Highly figurative prose with no clear visible flamenco-related evaluative, authorizing, pedagogical, communal, or heritage discourse function."
+  },
+  {
+    "article_id": "1981-07-15-right-viejas-paginas-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "cantaor admirado del flamenco de verdad",
+        "target": "Joaquín el de la Paula",
+        "rationale": "The phrase explicitly attributes genuine flamenco status to the singer, authorizing him as a true flamenco figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "nada de fandanguillos ni cantes ligeros, sino por lo jondo; vamos, lo tuyo",
+        "target": "Joaquín el de la Paula's requested performance",
+        "rationale": "The request distinguishes lighter cantes from lo jondo as the valued aesthetic mode appropriate to the singer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga setting is visible, but the passage mainly narrates an event rather than explicitly valuing private participatory flamenco over public or spectatorial settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Joaquín el de la Paula and his jondo cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Codes are limited to explicit authenticity and aesthetic distinction in the visible excerpt."
+  },
+  {
+    "article_id": "1981-07-16-right-el-flamenco-en-el-arte-espa-ol-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la cultura e identidad de un pueblo surgen más de su decidido camino de futuro amarrado a la memoria",
+        "target": "cultural identity and flamenco roots",
+        "rationale": "The passage grounds cultural value in memory, roots, and continuity rather than in detached archaeological essentialism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la visita a la espléndida y elocuente exposición de dibujos, esculturas y pinturas",
+        "target": "the exhibition on flamenco in contemporary Spanish art",
+        "rationale": "The author explicitly praises the exhibition as aesthetically and culturally successful."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "nuestras raíces, tan específicas como universales; nuestras raíces jondas, que no hondas. Nuestras evidentes señas de identidad",
+        "target": "Andalusian/flamenco identity",
+        "rationale": "The passage frames flamenco roots as collective identity markers that define cultural belonging and representation."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community", "criticism"],
+      "target": "flamenco as a rooted cultural identity represented through art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt combines positive exhibition review with a broader argument about roots, memory, and collective identity."
+  },
+  {
+    "article_id": "1981-07-17-right-de-cayetano-muriel-y-una-ltima-g",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Aseguraban que fue el mejor cantaor por don Antonio. Yo también puedo dar fe de ello.",
+        "target": "Cayetano Muriel as interpreter of Chacón's school",
+        "rationale": "The passage ranks Muriel as the best singer in relation to Antonio Chacón, constructing a clear hierarchy of artistic status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Y debió denominarlas así: Granaína: «Engarzá en oro y marfil». Media Granaína: «Río del Genil, viva Graná que es mi tierra».",
+        "target": "Pepe Arias's labeling of granaína and media granaína",
+        "rationale": "The author exercises expert critical authority by correcting the classification of recorded styles and policing a technical boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "nadie se ha preocupado de cantar las excelencias artísticas de Cayetano",
+        "target": "Cayetano Muriel's artistic qualities",
+        "rationale": "The passage explicitly evaluates Muriel by asserting that his artistic excellence deserves recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word maestro appears for Chacón, but in this visible passage it functions mainly as an honorific within critical hierarchy, not as pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Cayetano Muriel's canonized status and Pepe Arias's recording classification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article both legitimates Muriel's status and criticizes a classificatory error in the recordings."
+  },
+  {
+    "article_id": "1981-07-18-right-los-escritos-de-demofilo-en-la-r",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el patriarca de los estudios flamencos",
+        "target": "Antonio Machado y Álvarez, Demófilo",
+        "rationale": "The article canonizes Demófilo by positioning him as a foundational authority in flamenco studies."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "hasta ahora, parecían prácticamente inexpugnables para buena parte de los aficionados",
+        "target": "access by aficionados to Demófilo's early writings",
+        "rationale": "The reedition is framed as making previously inaccessible flamenco knowledge available to aficionados through print mediation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la obra flamenca de Antonio Machado y Alvarez, Demófilo reclama con urgencia una edición total y crítica, sistemática, científica y desapasionada",
+        "target": "Demófilo's flamenco writings",
+        "rationale": "The author invokes scholarly-critical standards as the proper authority for editing and reassessing Demófilo's flamenco work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The centenary and reedition have commemorative force, but the visible passage does not clearly frame the texts as heritage/patrimony or safeguarding in the codebook sense."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Demófilo's writings as foundational flamenco scholarship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse concerns canonization, mediated access for aficionados, and expert scholarly-critical authority."
+  }
+]

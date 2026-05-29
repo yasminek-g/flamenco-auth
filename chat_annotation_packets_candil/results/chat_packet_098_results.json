@@ -1,0 +1,198 @@
+[
+  {
+    "article_id": "1984-07-22-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "¿Se han dado cuenta, amigos aficionados, del poco interés que determinados artistas de los llamados de primera fila ponen en sus actuaciones? Se diría que sólo van a cobrar y a justificarse con dos o tres cositas facilonas",
+        "target": "determinados artistas de primera fila en festivales",
+        "rationale": "The letter explicitly criticizes the quality, effort, and seriousness of some prominent performers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "han cantado los mismos y además las mismas letras, sin jondura ninguna",
+        "target": "festival singing by repeated prominent artists",
+        "rationale": "The complaint uses jondura and repertoire repetition as aesthetic criteria for judging deficient flamenco performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Que el flamenco es bastante más serio de lo que algunos de ustedes demuestran en el escenario",
+        "target": "artists who treat flamenco as easy paid stage work",
+        "rationale": "The writer uses criticism to police a boundary between serious flamenco conduct and improper, superficial stage performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The letter devalues careless performance, but it does not clearly construct a pure/impure or genuine/fake flamenco boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "careless festival performances by first-line artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is advertising/business copy without flamenco discourse."
+  },
+  {
+    "article_id": "1984-07-24-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "una lección de cante Flamenco dictada desde la maestría y el personal saber de Juan Varea",
+        "target": "Juan Varea's recorded cante",
+        "rationale": "The review frames Varea's recording as a lesson authorized by his mastery and personal knowledge of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la Cátedra de Flamencología el pasado año reconocía la labor desarrollada por el cantaor de Burriana, ofreciéndole la distinción y título de Maestro, para situar en la historia cantaora, de forma rotunda y definitiva",
+        "target": "Juan Varea",
+        "rationale": "Institutional recognition and the title of Maestro place Varea in flamenco history as a canonical figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el disco es necesario, para recoger, en su justa medida, la capacidad comunicativa de Manuel Soto",
+        "target": "Manuel Soto's recording",
+        "rationale": "The review explicitly assesses the disc's value and necessity as a record of Soto's communicative capacity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The phrase 'participación colectiva' suggests shared response, but it does not clearly contrast participatory and spectatorial settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "References to compás and rhythmic vivacity are evaluative, but they overlap with the broader emitted critical evaluation and are not necessary as a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Juan Varea and Manuel Soto recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-25-right-discografia-de-artistas-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a brief attribution line for a discography and is insufficient for discourse coding."
+  },
+  {
+    "article_id": "1984-09-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Esa es la verdad del cante que no ha de ser rememorado porque está hecho vida. Ese es, con todos los vulgares añadidos, el impoluto, el hermoso flamenco de la Emigración.",
+        "target": "flamenco de la Emigración",
+        "rationale": "The editorial explicitly defines emigrant cante as the truth of cante and as impoluto, presenting it as genuinely flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "El cantar, de espaldas a su propia realidad servil, por encima de la dinámica crematística que generan sus ya desmesurados honorarios festivaleros",
+        "target": "commercialized festival cante versus emigrant cante",
+        "rationale": "The passage contrasts truthful cante with the money-driven dynamics of festival honoraria, making commercial mediation a threat to authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "A veces, son auténticos guetos, esparcidos por toda Centroeuropa, que han de soportar junto a la amarga lejanía de nuestro sur caliente, el fustigamiento de una creciente y generalizada xenofobia.",
+        "target": "Andalusian emigrant communities in Central Europe",
+        "rationale": "The editorial frames flamenco authenticity through the collective identity and hardship of emigrant Andalusian communities."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text invokes memory, past suffering, and a millenary living culture, but the stronger discourse function is authenticity of emigrant cante rather than tradition-continuity as a separate claim."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article mentions collective memory and living culture, but it lacks a clear public heritage, safeguarding, or heritage-management frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage mentions compás and orthodoxy, but mainly to subordinate technical criteria to essence, not to define a separate aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "flamenco de la Emigración",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

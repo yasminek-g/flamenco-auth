@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1982-11-19-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La Perla, es aquí toda una joya engarzada... Terremoto como siempre grande... Curro de Utrera, todo hay que decirlo, no nos llegó.",
+        "target": "the reviewed flamenco recordings and performers",
+        "rationale": "The passage explicitly evaluates individual performances and recordings through praise and criticism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "su perfecto dominio del compás, su gran conocimiento del estilo y sus innegables cualidades para decir el cante",
+        "target": "Antonio Mairena's soleares",
+        "rationale": "The review applies aesthetic criteria such as compás, stylistic knowledge, jondura, garra, and force to judge flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The review mentions historical recordings and refuses to call them antológicas, but the visible passage mainly evaluates performances rather than constructing a canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the reviewed recordings and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated review text, but the visible review judgments are sufficient for coding."
+  },
+  {
+    "article_id": "1982-11-21-left-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The word 'mujer' appears in a lyric/title list, but it does not frame identity, belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is essentially a discographic/listing table and lyric/title fragments without evaluative discourse."
+  },
+  {
+    "article_id": "1983-01-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "un plan sistemático y progresivo de penetración del flamenco en la escuela en el ámbito de la provincia de Jaén",
+        "target": "flamenco in schools",
+        "rationale": "The editorial frames flamenco knowledge as something to be institutionalized and taught through schools and educational policy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Este enorme acervo cultural que subyace en el flamenco, «ha de ser materia de enseñanza escolar... expresión histórica y cultural valiosísima de lo más íntimo de nuestro pueblo»",
+        "target": "flamenco as Andalusian cultural value",
+        "rationale": "Flamenco is framed as a collective cultural inheritance tied to public education and Andalusian identity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "debe gozar, como expresión histórica y cultural valiosísima... de público reconocimiento y protección",
+        "target": "flamenco as a protected public cultural expression",
+        "rationale": "The passage calls for public recognition and protection, giving institutional authority a role in valorizing flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Transmission and cultural recovery are implied, but the stronger visible functions are institutional schooling and public heritage recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco as school subject and Andalusian cultural identity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-01-4-right-tierra-sobre-la-tierra-aproximac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "constituye probablemente las señas de identidad del pueblo andaluz",
+        "target": "flamenco as Andalusian identity",
+        "rationale": "The passage frames flamenco through collective Andalusian identity and representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "amenazada de destrucción... absorbida por la civilización de consumo... transformación en una blanda pasta para turistas",
+        "target": "consumer and tourist-oriented flamenco",
+        "rationale": "Commercial consumption and tourist spectacle are presented as threats that degrade flamenco's deeper value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "superficialidad, vanalidad, ausencia total de rito, de profundidad; esta situación da una idea falsa del pueblo andaluz",
+        "target": "touristic and superficial representations of Andalusian flamenco",
+        "rationale": "The passage uses critical boundary work to delegitimate staged/tourist superficiality as a false representation of flamenco and Andalusia."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text describes flamenco as threatened, but the visible passage emphasizes identity and anti-commercial critique more than public safeguarding practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The ending says cante is the most representative part of flamenco, but this hierarchy is brief and less central than the anti-tourist critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco as Andalusian identity, against consumer/tourist distortion",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; codes rely only on the visible beginning, selected window, and ending."
+  },
+  {
+    "article_id": "1983-01-9-right-el-flamenco-a-los-centros-de-ens",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "contamos con un patrimonio cultural único en el mundo",
+        "target": "flamenco as Andalusian cultural patrimony",
+        "rationale": "The passage explicitly frames flamenco as a unique collective cultural heritage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "la difusión, clarificación y enseñanza del género flamenco... abarca el cante, el toque y el baile",
+        "target": "flamenco education in schools",
+        "rationale": "The article argues for institutional access to flamenco knowledge through diffusion, clarification, and teaching."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "pidiendo y reclamando la conservación, pureza y potencialidad de lo que algunos llaman cantes flamencos",
+        "target": "conservation and transmission of flamenco",
+        "rationale": "The passage frames flamenco as something requiring conservation and sustained cultural transmission."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "proclamar un derecho recogido —según mi interpretación— en el Estatuto de la Comunidad Andaluza",
+        "target": "institutional right to disseminate and teach flamenco",
+        "rationale": "The author invokes the Andalusian Statute and later institutional educational aims to authorize flamenco's public-cultural place."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text contrasts fidelity to purity with commercial motivations, but the dominant visible discourse is heritage protection and institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco as a protected and teachable Andalusian cultural patrimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt clearly supports heritage and pedagogy codes."
+  }
+]

@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1981-03-13-right-el-sentimiento-amoroso-en-el-pri",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "con la visión del mundo de cada sociedad y de cada época, como por ejemplo la cultura popular gitano andaluza, se construye una episteme particular que genera su peculiar estimación de los contenidos amorosos",
+        "target": "la cultura popular gitano andaluza y el sentimiento amoroso en el cante",
+        "rationale": "The passage frames flamenco-related love discourse through an ethnic/community cultural worldview that shapes representation and meaning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible trigger 'imita' concerns nature imitating art in a general literary argument, not flamenco oral or embodied transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The excerpt cites scholars and proposes a study, but the visible passage does not clearly position flamenco critics or experts as authoritative judges of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "la cultura popular gitano andaluza como marco interpretativo del sentimiento amoroso",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible methodological framing and does not infer the full argument."
+  },
+  {
+    "article_id": "1981-03-17-right-los-cafes-cantantes-en-una-notic",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "todo cuanto se haga con esos centros de corrupción será poco... esos malditos Cafés, causa de muchos crímenes y foco de enfermedades vergonzosas",
+        "target": "los cafés cantantes",
+        "rationale": "The quoted critical discourse polices cafés cantantes as morally corrupt and illegitimate cultural spaces."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "durante muchos años se le ha negado el ser a la cultura viva",
+        "target": "la forma de expresión asociada a los cafés cantantes",
+        "rationale": "The commentary contests the denial of a living cultural practice, framing the attacked expression as cultura viva rather than mere vice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "esta forma de expresión que ya es común en casi toda Andalucía",
+        "target": "el cante en cafés y tabernas",
+        "rationale": "The author counters the moral attack by asserting the practice as a legitimate Andalusian form of expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Andalucía and Jaén are invoked, but the visible passage primarily legitimates a cultural practice rather than defining belonging through identity categories."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "los cafés cantantes y la cultura viva del cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article includes both the older condemnatory quotation and the later corrective commentary; polarity is therefore contested."
+  },
+  {
+    "article_id": "1981-03-18-right-honor-y-lecturas-para-un-libro-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "primera pieza investigadora en el tiempo y fundamental aún, a cien años de distancia",
+        "target": "la Colección de cantes flamencos de Demófilo",
+        "rationale": "The passage canonizes the book as a foundational and still-fundamental work in flamenco studies."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "al que, por cierto, en numerosísimas ocasiones se acude para citarle como magisterio",
+        "target": "el prólogo y la autoridad crítica de Demófilo",
+        "rationale": "The text positions Demófilo's work as a source of scholarly and critical authority that later readers cite as magisterial."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sin cuya aportación nuestro recio y limpio arte, de seguro, hubiese llegado a nuestros días de un modo bastante trunco",
+        "target": "el cante flamenco como arte transmitido hasta el presente",
+        "rationale": "The contribution of Demófilo is framed as crucial to the continuity and present-day transmission of flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article praises scholarly authority, but it does not clearly invoke official heritage recognition, listing, or institutional patrimonial authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Demófilo's Colección de cantes flamencos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-03-19-right-discograf-a-flamenca-no-es-el-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Esto no es arte. Es trabajo de laboratorio.",
+        "target": "El New Hondo de El Turronero",
+        "rationale": "The passage explicitly evaluates the recording as artistically invalid."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "rompe su esquema musical, su profundidad, su emoción, su contenido, su comunicación",
+        "target": "la caña y el tratamiento musical del disco",
+        "rationale": "The review applies aesthetic criteria such as musical structure, depth, emotion, content, and communication to judge flamenco quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "no estamos de acuerdo con actitudes, hechos que atentan contra su fundamento, su esencialidad",
+        "target": "el New Hondo como nuevo cauce para el flamenco",
+        "rationale": "The passage draws a boundary around proper flamenco by rejecting a recording practice as an attack on flamenco's foundation and essence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "No. Esperemos que el camino quede cortado, bruscamente. Este camino, creemos, no llevaría al flamenco a ninguna parte. Lo llevaría a su despersonalización, a su muerte.",
+        "target": "la propuesta de un 'nuevo camino' para el flamenco",
+        "rationale": "The critic uses review discourse to police the boundary of acceptable innovation and reject a hybrid/commercialized direction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions 'raíz' and 'esencia', but the stronger discourse function is purity/boundary work rather than continuity with a valued past."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The recording is criticized as a technical studio montage, but the passage does not explicitly frame commerce, tourism, or public spectacle as the authenticity threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "El New Hondo de El Turronero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-03-20-left-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El nombre de Paquirri ha quedado en los anales flamencos como figura eminente",
+        "target": "Paquirri 'El Guante' and the listed maestros",
+        "rationale": "The article constructs canonical status by presenting historical singers as eminent figures, creators, masters, and classics."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "su soleá apolá, que ha llegado fielmente hasta nuestros días en la versión grabada de Diego Bermúdez Cala «El Tenazas de Morón»",
+        "target": "la soleá apolá de Paquirri",
+        "rationale": "The passage values a style through faithful continuity from an older creator to present-day recorded transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la siguiriya de María Borrico tiene una personalidad inigualable, pudiendo considerarse su estilo como eslabón entre el viejo y moderno",
+        "target": "la siguiriya de María Borrico",
+        "rationale": "The passage applies aesthetic criteria of unique personality and historical-stylistic force to evaluate a flamenco style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible text mentions oral tradition and stylistic survival, but it does not clearly describe a learning relation or embodied/oral transmission process carrying pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Flamencologists and named authorities are cited, but the main function is canonization and aesthetic evaluation rather than expert authority as a separate discourse move."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "historical flamenco maestros and their styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

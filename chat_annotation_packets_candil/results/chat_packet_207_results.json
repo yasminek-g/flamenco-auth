@@ -1,0 +1,211 @@
+[
+  {
+    "article_id": "1990-01-19-right-el-solitario-int-rprete-sui-g-ne",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Larrea no miente al hacer señalamiento de la actitud cantaora de «El Solitario», mas da en error al referirse a la persona que firma la carta de 1842.",
+        "target": "Arcadio Larrea Palacín's bibliographic claim about Estébanez Calderón",
+        "rationale": "The article exercises scholarly-critical authority by correcting an existing flamenco-historiographic source and judging the reliability of its documentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The trigger term 'título' appears, but the passage does not clearly concern institutional, transnational, or access-oriented flamenco learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'aficionado práctico' suggests participant credibility, but the visible passage mainly develops a bibliographic correction rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "historical knowledge about Estébanez Calderón as a flamenco interpreter",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt, but the visible evidence is sufficient for a narrow source-criticism code."
+  },
+  {
+    "article_id": "1990-01-20-right-bibliograf-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la obra poética y crítica del autor nos parece frívola y carente de importancia, aquejada en todo caso del peor de los costumbrismos",
+        "target": "José Carlos de Luna's work and the reviewed edition of Gitanos de la Bética",
+        "rationale": "The reviewer makes an explicit negative assessment of the author's literary and critical value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no desde la aplicación de métodos etnológicos ni la utilización de una seria y rigurosa bibliografía sobre el tema, sino desde el refrito de unas apreciaciones más o menos discutibles",
+        "target": "the scholarly method behind Gitanos de la Bética",
+        "rationale": "The passage polices expert standards for writing about gitano culture by criticizing the book's lack of serious method and sources."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "sus observaciones sobre las costumbres, canciones, músicas, atuendos o rasgos físicos y psíquicos de los gitanos, no son más que el reflejo de lo que una parte importante de la sociedad dominante ha pensado, piensa aún, sobre ellos",
+        "target": "representations of gitanos in the reviewed book",
+        "rationale": "The passage frames gitano identity as represented through dominant-society stereotypes and criticizes that representational boundary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'espúreo' appears near the end, but it criticizes ideology generally rather than drawing a purity boundary around legitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "José Carlos de Luna's representation of gitanos and the value assigned to the book",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-21-left-poemas-paco-arana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "no hubo ni habrá en la vida quien iguale a esta señora, en los cantes de la tierra ni en los cantes de la gloria",
+        "target": "Pastora",
+        "rationale": "The poem canonizes Pastora through explicit superlative ranking, presenting her as unmatched across flamenco song."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "No hubo cante por derecho... cantes de duende y alcoba; cada cual en su momento, en su sitio y a su hora",
+        "target": "Pastora's cante",
+        "rationale": "The passage applies aesthetic criteria such as cante por derecho, duende, and proper timing/place to define the quality of Pastora's singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem uses gendered and gitana descriptors, but they mainly function as praise and imagery rather than a developed identity-based authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pastora as an exemplary cantaora",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-22-left-noticiario",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "el Centro de Documentación que esta Fundación mantiene abierto al público, con servicios de videoteca, fonoteca y biblioteca especializados en flamenco, que constituyen el único punto de acceso al público en nuestro país para cualquier interesado en el Arte Flamenco",
+        "target": "the Fundación Andaluza de Flamenco documentation center",
+        "rationale": "The passage frames an institutional archive and media-library as public access infrastructure for flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Consejería de Cultura de la Junta de Andalucía, la Diputación Provincial de Cádiz, el Ayuntamiento de Jerez y la Caja de Ahorros de Jerez... se aprobó el Presupuesto Ordinario para 1990",
+        "target": "institutional support for flamenco documentation and promotion",
+        "rationale": "Public institutions and a formal foundation allocate resources to document, research, and promote flamenco, giving it authorized public-cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The documentation center implies preservation, but the visible text emphasizes access and institutional funding more than safeguarding or living heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "public institutional access to flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated news item; codes are limited to the visible institutional-access passage."
+  },
+  {
+    "article_id": "1990-01-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "El jurado, designado por la organización, estará formado por conocedores del cante y su fallo será inapelable.",
+        "target": "the contest jury for Concurso de Cante Flamenco «Mirando a la Torre»",
+        "rationale": "The contest rules grant judging authority to recognized connoisseurs whose decision defines competitive value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas organize the events and elections, but the visible text is mostly administrative and does not clearly make peña sociability or afición an authority claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Prize structures imply ranking, but the passage mainly lists contest rules rather than constructing a canon or hierarchy beyond the competition format."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "contest adjudication by flamenco connoisseurs",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Most of the visible excerpt is event administration; only the jury-authority rule is coded."
+  }
+]

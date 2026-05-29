@@ -1,0 +1,197 @@
+[
+  {
+    "article_id": "1998-03-29-right-premio-de-ensayo-gonz-lez-climen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "El premio, cuyo tema versa sobre el Arte Flamenco en cualquiera de sus facetas... y enfoques (histórico, geográfico, musical, lingüístico, social, etc.)",
+        "target": "Premio de Ensayo González Climent",
+        "rationale": "The essay prize frames flamenco knowledge as an institutional scholarly object open to multiple research approaches."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Daniel Pineda Novo con su excelente trabajo... Eugenio Cobo con su interesantísimo rastreo de materiales y noticias",
+        "target": "previous prize-winning flamenco essays",
+        "rationale": "The passage explicitly evaluates prior winning studies as excellent and highly interesting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The public presentation is an event format, not a meaningful public/private or participatory flamenco setting contrast."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions and a prize jury are present, but the visible text does not frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "institutional flamenco essay research",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1998-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "es su «Poema del Cante Jondo» uno de los más conocidos, representando un auténtico hito en la poesía de nuestro país",
+        "target": "Federico García Lorca and Poema del Cante Jondo",
+        "rationale": "The passage canonizes Lorca's work as a landmark within national poetry and flamenco-related culture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la defensa que efectuó de este nuestro arte frente a las críticas injustas y desaforadas que ejercieron intelectuales como Pío Baroja, Ortega y Gasset o Eugenio Noel",
+        "target": "Lorca's defense of flamenco against intellectual criticism",
+        "rationale": "The passage frames Lorca as countering unfair critical attacks and thereby authorizing flamenco's cultural value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "sus luchas por hacer resurgir lo esencial y verdadero de este arte",
+        "target": "the essential and true dimension of flamenco",
+        "rationale": "The passage explicitly presents Lorca's work as recovering the true essence of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial invokes memory and homage, but not safeguarding or public heritage responsibility in a sufficiently explicit way."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Lorca's flamenco significance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1998-05-4-left-una-existencia-intensa",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The excerpt grounds Lorca in land and oral tradition, but the visible passage does not clearly connect those roots to flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Servants teaching traditional songs and stories suggests oral transmission, but the visible evidence is about Lorca's childhood culture rather than flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The trigger 'declaró' is merely an interview verb here, not official or institutional heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt is biographical and literary; no flamenco-specific discourse function is clear enough to emit."
+  },
+  {
+    "article_id": "1998-05-14-left-canci-n-de-jinete-poema",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text only; no explicit flamenco evaluative, authorizing, pedagogical, communal, or heritage discourse."
+  },
+  {
+    "article_id": "1998-05-14-right-garc-a-lorca-y-el-flamenco-un-am",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "jamás la obra de un poeta culto ha sido tan copiosamente asimilada por el flamenco en sus varias facetas ni dado origen a un fenómeno tan esplendoroso de identificación de sensibilidades",
+        "target": "Lorca's work within flamenco",
+        "rationale": "The passage elevates Lorca's work as uniquely and exceptionally assimilated into flamenco, constructing canonical status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "cualificados estudiosos y críticos literarios, como el profesor Álvaro Salvador, han señalado certeramente",
+        "target": "interpretation of Lorca's relation to flamenco",
+        "rationale": "Qualified scholars and critics are invoked as authoritative interpreters of Lorca's flamenco engagement."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el acercamiento lorquiano al flamenco... es más bien el resultado de toda una preocupación intelectual “neopopularista”... arraigada en los principios estéticos del romanticismo",
+        "target": "Lorca's approach to flamenco",
+        "rationale": "The passage grounds Lorca's flamenco engagement in a rooted aesthetic and intellectual tradition rather than as isolated intuition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The love of the flamenco universe and its artists for Lorca suggests communal reception, but it does not clearly grant community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Lorca-flamenco relationship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

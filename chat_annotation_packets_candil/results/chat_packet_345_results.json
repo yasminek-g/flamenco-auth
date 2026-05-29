@@ -1,0 +1,273 @@
+[
+  {
+    "article_id": "1997-11-24-right-abrir-las-puertas-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "No es este el caso del crítico flamenco Angel Alvarez Caballero, uno de los más serios estudiosos de este arte... exigir a los intérpretes que se anuncian como flamencos... un respeto hacia la herencia recibida",
+        "target": "Ángel Álvarez Caballero and his critical defense of respectful flamenco innovation",
+        "rationale": "The passage explicitly grants authority to a critic-scholar and presents his judgment as a legitimate boundary-setting critique of flamenco practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el respeto a las formas flamencas consagradas por la tradición",
+        "target": "flamenco forms inherited from tradition",
+        "rationale": "The text grounds legitimate innovation in continuity with inherited, tradition-sanctioned flamenco forms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "ya estamos hartos de robos y suplantaciones con apariencia de ‘recreaciones’",
+        "target": "improper or falsely legitimized flamenco recreations",
+        "rationale": "The passage draws a boundary between legitimate recreation and illegitimate substitution or appropriation masquerading as flamenco innovation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text mentions 'patrimonio flamenco', but the dominant function is tradition-based authenticity and critical boundary policing rather than a developed public heritage frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad evaluative language, but the strongest critical function is expert/boundary authority already captured by CRIT_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "respectful innovation grounded in inherited flamenco forms versus improper modernizing substitutions",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strongly polemical article; coded only the clearest boundary and authority claims."
+  },
+  {
+    "article_id": "1997-11-25-right-del-and-valo-hasta-gata-por-los-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "todo es preciso cuando hay que avivar el rescoldo de la memoria, para recorrer Andalucía por los caminos del cante",
+        "target": "the recording anthology of Andalusian cantes",
+        "rationale": "The anthology is framed as memory-work that revives and sustains flamenco knowledge across Andalusian territories."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "conserva todavía su primitivo ritmo bailable",
+        "target": "the Almería petenera and other regional cantes",
+        "rationale": "The value of the style is grounded in its continuity with an earlier or primitive rhythmic form."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Todos, muy ligados al mundo peñista, enriquecen con su toque esta grabación antológica",
+        "target": "guitarists and the peña flamenca network",
+        "rationale": "The passage gives value to performers through their connection to the peña community, which helps authorize the anthology."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises the anthology as serious and dignified, but its main discourse function is preservation, memory, and regional continuity rather than review judgment."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'rico legado flamenco' suggests heritage value, but the more specific safeguarding/memory function is better captured by HERIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "community"
+      ],
+      "target": "regional Andalusian cantes preserved and circulated through an anthology",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article legitimates the anthology through memory, regional rootedness, and peña-community participation."
+  },
+  {
+    "article_id": "1997-11-27-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "las grabaciones que son necesarias para poder ir formando nuestra propia idea y criterio de lo que han sido y son las figuras a través de la discografía propia",
+        "target": "access to historical flamenco recordings",
+        "rationale": "The passage frames recordings as a medium that gives aficionados access to knowledge and enables independent judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "nos ofrecen las grabaciones históricas de figuras como Pastora Pavón, Manolo Caracol, Antonio Mairena, Pepe Marchena, Jarrito, Gabriel Moreno, Pepe de la Matrona y Rafael Farina",
+        "target": "canonical flamenco figures represented in the Quejío collection",
+        "rationale": "The text constructs a canon of major flamenco figures through historical recordings and exemplary status."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el auténtico mérito o valor de esta iniciativa está en la aportación que se ofrece a la historia sonora del arte flamenco",
+        "target": "the Quejío CD reissue project",
+        "rationale": "The recording initiative is valued as preservation and transmission of flamenco's sound history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The author evaluates the initiative positively, but the specific functions of canon formation and access to knowledge are more precise."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word 'auténtico' appears in 'auténtico mérito', but it modifies merit/value, not the authenticity of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage"
+      ],
+      "target": "historical flamenco recordings as canon-forming and knowledge-enabling resources",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations rely only on the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1997-11-28-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Después, y en lo que sin duda constituye la parte más valiosa de la obra, nos ofrece una amplia y cuidada selección de carteles",
+        "target": "the reviewed book on flamenco spectacle in Granada",
+        "rationale": "The passage explicitly evaluates the book and identifies its most valuable contribution."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "lo efímero de toda muestra queda conservado para la posteridad gracias a este librito que aporta fechas, fotografías, testimonios, imprescindibles todos ellos para dignificar la historia tan compleja de un arte como el nuestro",
+        "target": "Paula Marín Girón's catalogue and exhibition work",
+        "rationale": "The passage frames documentation as safeguarding memory and preserving flamenco history against disappearance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "lo que convierte al libro en un adecuado manual de iniciación jonda para el que no sepa de qué va el flamenco, a la vez que asienta conocimientos en los que ya sabemos algo de él",
+        "target": "Manuel Ríos Ruiz's book Ayer y hoy del cante flamenco",
+        "rationale": "The book is explicitly positioned as a learning resource that mediates flamenco knowledge for beginners and reinforces knowledge for existing aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review praises Ríos Ruiz's informed positions and data, but it does not primarily authorize a critic's right to define flamenco beyond ordinary book-review evaluation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'sin entrar en experiencias y fusiones extrañas' suggests boundary work, but it is reported as the author's scope rather than developed by the reviewer as a central claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "reviewed flamenco books as critical, documentary, and instructional contributions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Multiple books are reviewed; codes target distinct discourse functions across the review column."
+  },
+  {
+    "article_id": "1997-11-30-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la modernización —desde la tradición— de sus lenguajes",
+        "target": "Festival de Jerez's model of flamenco modernization",
+        "rationale": "The passage legitimates modernization by grounding it in continuity with tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "el Festival acoge también manifestaciones formativas, de apoyo a la creación y de encuentro con otras artes",
+        "target": "Festival de Jerez programming",
+        "rationale": "The festival is framed as an institutional space for formation, creative development, and cross-artistic access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage promotes evolution and creativity, but it reads mainly as programmatic announcement rather than critical evaluation of a specific performance or artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text mentions new aesthetic and expressive paths, but it does not apply concrete aesthetic criteria to judge flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "creative evolution and institutional formation at the Festival de Jerez",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; contest prize details at the ending are treated as administrative unless tied to evaluative discourse."
+  }
+]

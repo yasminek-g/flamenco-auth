@@ -1,0 +1,241 @@
+[
+  {
+    "article_id": "1981-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "se erigía la otra cultura palpitante y viva, integral y de ser, cultura jonda",
+        "target": "la cultura jonda y la revista Candil",
+        "rationale": "The passage frames flamenco culture as living public culture requiring support against neglect and abandonment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "una cultura entrecomillada, sin amparo, que, paulatinamente, se abandona a las estructuras depredadoras del consumo",
+        "target": "la cultura jonda",
+        "rationale": "The text presents consumption structures as predatory forces threatening a living jonda culture."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Excma. Diputación Provincial de Jaén, acudió presurosa al reto... La ayuda... es importante como gesto, como pauta.",
+        "target": "el apoyo institucional a Candil",
+        "rationale": "An official public institution is presented as recognizing and supporting the cultural work of the flamenco publication."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_04",
+        "reason": "The criticism of official culture is strong, but it is not primarily exercised as flamenco expert/reviewer authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity"
+      ],
+      "target": "la cultura jonda and Candil as cultural-public work",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-05-4-right-forman-el-gigantesco-rbol-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El fandango, desde su origen... De este cante «proto-tipo»... se derivó o extrajo una hijuela que más tarde sería aflamencada",
+        "target": "el origen y proceso evolutivo del verdial y el fandango",
+        "rationale": "The article grounds flamenco value and classification in origin, derivation, and continuity among cante forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "que me perdonen esos doctores porque rechace con estoicismo sus opiniones. Para mí, y mientras no se me demuestre lo contrario",
+        "target": "las opiniones eruditas sobre el aflamencamiento del fandango",
+        "rationale": "The writer asserts critical authority by rejecting expert etymological explanations and substituting his own interpretation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "El verdial... está hoy a punto de desaparecer, a menos que sea salvado por uno de esos jóvenes valores... grabándolo y popularizándolo de nuevo",
+        "target": "el verdial",
+        "rationale": "The passage frames a flamenco form as endangered and in need of revival through recording and renewed transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el mas grande cantaor que, para mí, ha dado Sevilla: MANUEL VALLEJO",
+        "target": "Manuel Vallejo",
+        "rationale": "The author places Vallejo at the top of a hierarchy of singers through explicit superlative ranking."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "AUTH_02",
+        "reason": "The phrase 'prístina pureza' suggests purity, but the visible passage does not clearly draw a proper/improper boundary around flamenco as a whole."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "the genealogy and value of malagueño cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible evidence is sufficient for these codes."
+  },
+  {
+    "article_id": "1981-05-6-left-solidaridad-frustrada",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "code": "COMM_02",
+        "reason": "The article discusses solidarity among flamenco artists, but it does not construct community authority, afición, belonging, or recognition in the codebook sense."
+      },
+      {
+        "code": "CRIT_01",
+        "reason": "The article criticizes artists' lack of response to a social proposal, but it is not an aesthetic or flamenco-critical evaluation of artistry, repertoire, performance, or publication."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-05-6-right-la-pintura-jonda-de-manuel-angel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la alta calidad artística de su obra —sin lugar a dudas es el exponente plástico por excelencia de la Generación del 27—",
+        "target": "la obra pictórica de Manuel Ángeles Ortiz",
+        "rationale": "The passage explicitly evaluates the artistic quality and status of the painter's work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "el innegable sabor y tono de copla andaluza, de cante jondo en esencia, que la misma encierra",
+        "target": "la pintura de Manuel Ángeles Ortiz",
+        "rationale": "The text presents the painter's work as genuinely containing the essence of cante jondo."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "localizar a gente que conociera viejos cantes en toda su pureza. Los jóvenes no conocían el cante grande",
+        "target": "los viejos cantes and cante grande",
+        "rationale": "The passage grounds flamenco authority in old repertoire, continuity, and the knowledge of older bearers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "recorrer barrios, tabernas, pueblos, cortijos. Preguntábamos por los viejos del lugar que supuieran estilarse",
+        "target": "knowledge of old cantes",
+        "rationale": "The passage frames flamenco knowledge as located in older community bearers and recoverable through oral/social transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_04",
+        "reason": "The note criticizes excessive literature far from truth, but the visible excerpt gives too little detail about the critical boundary being policed."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Manuel Ángeles Ortiz's jonda painting and knowledge of old cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but visible evidence supports the emitted codes."
+  },
+  {
+    "article_id": "1981-05-8-left-por-arcadio-larrea",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "nuestro artista me plantea un problema: el de su ser y real valor artístico y el de la figura que de él nos llega y ha quedado",
+        "target": "Pepe el de la Matrona",
+        "rationale": "The author explicitly evaluates and questions the artist's real artistic value and received public image."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los testimonios de Jacinto Almadén, Rafael Romero, Juan Varea, Pepe el Culata y otros señalaban como verdadero artífice y seleccionador a Perico del Lunar",
+        "target": "Perico del Lunar's role in the Antología",
+        "rationale": "The passage uses named knowledgeable witnesses to authorize a correction about who selected and shaped the anthology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Estimo que su fama le ha llegado más bien por otros caminos: la promoción de la casa grabadora de la Antología",
+        "target": "the fame/canonical image of Pepe el de la Matrona",
+        "rationale": "The text contests the basis of Matrona's status and distinguishes reputation from artistic value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "PED_01",
+        "reason": "The word 'cátedra' appears, but the passage does not show Matrona exercising pedagogical authority in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pepe el de la Matrona's artistic reputation and the Antología attribution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

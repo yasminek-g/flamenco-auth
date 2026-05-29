@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "1994-01-4-left-homenaje-a-pepe",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "imaginar un mundo más perfecto, en el que quepa un flamenco sin aditamentos, puro, pleno de duende",
+        "target": "the ideal flamenco imagined by Pepe Cruz",
+        "rationale": "The passage defines valued flamenco through purity and absence of additions, drawing a boundary around proper flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "una verdadera antología de la historia reciente del flamenco y una importante base para la formación del aficionado",
+        "target": "the magazine Candil",
+        "rationale": "Candil is framed as a collective cultural record and historical resource for flamenco knowledge and memory."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "el colectivo de aficionados que conforman la entidad jiennense acordó homenajear al antiguo presidente",
+        "target": "Pepe Cruz and the Peña Flamenca de Jaén community",
+        "rationale": "The peña and its aficionados are positioned as a community with authority to recognize and honor flamenco service."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "una necesaria obra de consulta para los investigadores de nuestro arte... una importante base para la formación del aficionado",
+        "target": "Candil as a flamenco knowledge resource",
+        "rationale": "The magazine is presented as a mediated access point for researchers and for the formation of aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Pepe Cruz, Candil, and the Peña Flamenca de Jaén",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes are retained because the homage explicitly links purity, cultural memory, community recognition, and knowledge formation."
+  },
+  {
+    "article_id": "1994-01-4-right-juan-pe-a-fern-ndez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "su nuevo trabajo y colaboración... que se denomina: Flamenco en la Universidad. Una encrucijada de caminos",
+        "target": "the project Flamenco en la Universidad",
+        "rationale": "The visible text frames flamenco knowledge through a university setting and institutional collaboration."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "si consigue que ese determinado número de asistentes se integre en el colectivo de aficionados flamencos",
+        "target": "the audience and the colectivo de aficionados flamencos",
+        "rationale": "The value of the event is tied to integrating attendees into the recognized community of aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Cómo se puede enjuiciar el arte de un profesional? Con qué criterios se puede definir el cante de un artista",
+        "target": "contests and evaluative judgment of professional flamenco artists",
+        "rationale": "The passage explicitly questions the authority, criteria, and impartiality of judging professional flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The question about whether a child continues the artistic tradition mentions continuity, but the excerpt does not develop it as an authorizing tradition claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "university flamenco pedagogy and contest-based judgment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible windows clearly support institutional pedagogy, community integration, and critique of evaluative authority."
+  },
+  {
+    "article_id": "1994-01-7-right-proceso-a-manolo-de-huelva",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "La guitarra era por entonces el medium de la verdad cantaora",
+        "target": "the flamenco guitar as vehicle of cante truth",
+        "rationale": "The passage links the guitar to flamenco truth, presenting it as a medium of genuine cante knowledge and expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "se acepta como un nudo fundamental de la red histórica... uno de los genios más significativos del instrumento",
+        "target": "Manolo de Huelva",
+        "rationale": "The article canonizes Manolo de Huelva by placing him as a fundamental historical node and one of the instrument's major geniuses."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una música original e incisiva, exenta de grandes contrastes y efectos efímeros, pero de una serena grandiosidad",
+        "target": "Manolo de Huelva's guitar music",
+        "rationale": "The passage defines artistic value through aesthetic criteria such as originality, incisiveness, restraint, and grandiosity."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Manolo de Huelva and his place in flamenco guitar history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible excerpt strongly canonizes and aesthetically evaluates Manolo de Huelva."
+  },
+  {
+    "article_id": "1994-01-10-right-los-estudios-flamencos-contempor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la aparición del verdadero, aunque embrionario, cante flamenco, en el siglo XVIII",
+        "target": "early cante flamenco",
+        "rationale": "The passage explicitly identifies an early form as the true, though embryonic, cante flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la función crítica, una labor que no siempre se ha desarrollado por los límites de la mesura y contención que en toda actividad científica debe significar",
+        "target": "contemporary flamenco criticism and scholarship",
+        "rationale": "The text evaluates critical practice as a scholarly activity and polices the standards of proper disagreement and critical conduct."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "no conozco estudio más profundo y riguroso que «Tras la huella del flamenco»",
+        "target": "Manuel López Rodríguez's study",
+        "rationale": "The passage explicitly praises a flamenco study for depth and rigor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The ending mentions bright scenographies and instrumental enrichments, but it does not clearly frame them as corrupting authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "origins of cante flamenco and contemporary flamenco studies",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text supports both an authenticity claim about early cante and expert-critical standards for flamenco studies."
+  },
+  {
+    "article_id": "1994-01-14-left-coplas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt consists of copla lyrics without visible evaluative, authorizing, pedagogical, heritage, communal, or critical discourse about flamenco."
+  }
+]

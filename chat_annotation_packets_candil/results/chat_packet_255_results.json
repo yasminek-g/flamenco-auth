@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "1992-05-28-left-buz-n-flamenco-r-plicas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "lo que reitero y pongo en duda es la valoración que se hizo a mis cantes",
+        "target": "jury evaluation at the Concurso de Linares",
+        "rationale": "The writer contests the evaluative authority and judgment of the contest jury while distinguishing this from attacking its honesty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una voz laína es aquella que se manifiesta en tonos bajos o graves... los cantes por medio de Vallejo o Camarón que son cantaores de poderío",
+        "target": "criteria for assessing the singer's voice and cantes",
+        "rationale": "The letter argues through technical and aesthetic criteria such as tone, vocal placement, power, brilliance, transmission, and style."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Soy profesional del cante... y aficionado para hacer un seguimiento que redunde en el mismo sentido",
+        "target": "the writer as professional singer and aficionado",
+        "rationale": "The writer grounds his right to respond in both professional practice and aficionado engagement with flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The comparison 'Alora es a la Malagueña, como Jerez es a las Bulerías' evokes local rootedness, but it is brief and mainly part of factual biographical response."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'me aleccionas' appears, but the exchange does not clearly establish pedagogical authority beyond disagreement."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "contest judging and technical evaluation of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-05-28-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "El jurado, formado por Agustín Gómez, flamencólogo; Roberto Loya, poeta; Andrés Raya, editor... Luis de Córdoba, cantaor; y Francisco Martínez, crítico flamenco, ha elegido la obra ganadora",
+        "target": "Premio Nacional de Letras Flamencas",
+        "rationale": "The news item presents an expert jury and institutional prize mechanism as authorizing the winning flamenco literary work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la promoción y difusión del arte flamenco en la región de Franche-Comté (este de Francia)",
+        "target": "Asociación Alurican's flamenco promotion in France",
+        "rationale": "The association is framed as an organized vehicle for sustaining and disseminating flamenco as public cultural practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "IV Seminario Internacional de Guitarra Flamenca... Armonía y estructura musical del Flamenco... Desarrollo de la técnica específica de la guitarra flamenca... Perfeccionamiento",
+        "target": "Centro Andaluz de Flamenco guitar seminar",
+        "rationale": "The item describes formal institutional and international access to flamenco guitar learning through a structured seminar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The publication/distribution to peñas is circulation information, not a public/private participatory setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Awards and biographies suggest status, but the roundup format does not clearly construct a sustained canon beyond institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco literary recognition, cultural diffusion, and guitar pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated and a news roundup, so codes are limited to items with clear visible institutional, heritage, or pedagogical functions."
+  },
+  {
+    "article_id": "1992-05-30-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Radio-program schedule only; no relevant evaluative or authorizing discourse is visible."
+  },
+  {
+    "article_id": "1992-07-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la muerte nos arrebatara al último mito populista del Flamenco: José Monje Cruz, «Camarón de la Isla»",
+        "target": "Camarón de la Isla",
+        "rationale": "The editorial canonizes Camarón as a mythic and paradigm-level figure in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "En ninguno de los casos se debe cuestionar la ortodoxia básica de Camarón",
+        "target": "Camarón's flamenco art",
+        "rationale": "The passage explicitly defends Camarón's fundamental orthodoxy despite controversy over innovation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Camarón ha sido siempre un cantar puro, elemental, pleno de rajo y de jondura, un cantaor de duende y de mágica inspiración",
+        "target": "Camarón's cante",
+        "rationale": "The editorial evaluates Camarón through flamenco aesthetic criteria such as purity, rajo, jondura, duende, and inspiration."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "decenas de placas y constituyen un hermosísimo legado para la posteridad",
+        "target": "Camarón's recordings",
+        "rationale": "The editorial frames Camarón's recorded work as a legacy for posterity, authorizing its continuing value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial mentions diatribes against Camarón's innovations, but it does not dwell enough on expert boundary policing as a separate function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "Camarón de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-07-4-left-aproximaci-n-a-la-figura-de-cama",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La muerte, por sentida que sea, no legítima tal mudanza de criterio... tratemos de objetivar... la significación de un cantaor genial",
+        "target": "posthumous critical reassessments of Camarón",
+        "rationale": "The article critiques shifting critical judgments after Camarón's death and asserts the need for objective evaluation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "preferimos... al Camarón clásico, respetuoso con las antiguas formas, aunque elevándolas con su cuño personalísimo",
+        "target": "Camarón's classical flamenco work",
+        "rationale": "The author legitimates the preferred Camarón through respect for old forms and personal continuation of them."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una de las figuras más señeras y paradigmáticas del flamenco, en la segunda mitad de este siglo",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón as a leading and paradigmatic figure of late twentieth-century flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "preferimos... al Camarón clásico... antes que el Camarón de la Royal Philharmonic Orchestra de Londres",
+        "target": "Camarón's classical work versus orchestral innovation",
+        "rationale": "The author makes an explicit aesthetic preference between phases or modes of Camarón's work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The retrieval trigger 'pura' appears in the phrase 'pura coherencia', which is not flamenco purity boundary-work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article mentions demands for a posthumous Llave de Oro, but it is discussed as a current fervor rather than endorsed institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Camarón de la Isla and his critical legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for coding critical authority, traditional preference, and canonization."
+  }
+]

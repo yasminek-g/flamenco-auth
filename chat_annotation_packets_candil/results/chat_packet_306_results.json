@@ -1,0 +1,261 @@
+[
+  {
+    "article_id": "1995-05-17-left-camar-n-el-genio-perdido-domingo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "E1 cante de Camarón es realmente patético... la pelea conmovedora entre el hombre y el fuego",
+        "target": "el cante de Camarón",
+        "rationale": "The passage explicitly evaluates Camarón's cante as moving and tragic, making a clear critical judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su voz menuda casi «laina», con poca fuerza, no es el mejor instrumento para comunicar todo lo que de «jondura» lleva dentro",
+        "target": "la voz y capacidad expresiva de Camarón",
+        "rationale": "Voice, force, and jondura are applied as aesthetic criteria for judging flamenco expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Por este sendero hubiera llegado sin dilación a ocupar el trono del reino",
+        "target": "la trayectoria artística potencial de Camarón",
+        "rationale": "The text constructs a hierarchy of artistic status by imagining Camarón as capable of occupying the throne of the realm."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The references to orthodoxy, old cantes, and old/new mixture are present, but the dominant function is critical evaluation rather than a distinct tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Camarón's cante and artistic development",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated review, but the visible excerpt contains sufficient evaluative evidence."
+  },
+  {
+    "article_id": "1995-05-18-left-jerez-su-cuna-lo-acogi-con-arte-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "porque es mi raíz, donde yo he nació y por considerar a Jerez un pilar fundamental del cante",
+        "target": "Jerez as a root and foundation of cante",
+        "rationale": "The passage grounds flamenco value in roots, birthplace, and foundational continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "sus vivencias, sus memorias, sus maestros, sus amigos, sus rincones favoritos y sus familiares son de aquí, y por tanto su conocimiento de todos es mucho más amplio",
+        "target": "Vicente Soto's Jerez-based flamenco knowledge",
+        "rationale": "Family, teachers, friends, memories, and local belonging are presented as grounding authoritative knowledge of Jerez flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Jerez un pilar fundamental del cante. Este arte, sin el pilar de Jerez, se vendría al suelo",
+        "target": "Jerez within the hierarchy of flamenco places",
+        "rationale": "The text elevates Jerez to foundational status, creating a hierarchy of flamenco places and traditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The final call for institutions to care about flamenco suggests support, but the visible passage does not clearly frame flamenco as public heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Jerez flamenco and Vicente Soto's Jerez-rooted project",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest evidence concerns roots, local belonging, and Jerez's elevated status."
+  },
+  {
+    "article_id": "1995-05-19-left-discografia-flamenca-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mucho más flamencas son sus siguientes soleares, con una acompasada entrada por Alcalá, bellezas melismáticas",
+        "target": "Joselete de Linares's recordings",
+        "rationale": "The article repeatedly evaluates specific tracks and recordings, praising or criticizing their flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el matiz ortodoxo imprimeme al flamenco sentimiento, profundidad, quejío, ansias de libertad, grandeza de pueblo",
+        "target": "orthodox flamenco as an aesthetic model",
+        "rationale": "The passage defines flamenco quality through aesthetic criteria such as depth, quejío, emotion, and orthodox restraint."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Tomás Pavón no se merece esto. ¡Ah!, Curro Frijones, tampoco",
+        "target": "jazzistic or heterodox treatment of canonical cantes",
+        "rationale": "The critic polices a proper/improper boundary by implying that the modern jazz-like arrangement violates respected flamenco figures and repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una grabación que parece hecha en el neoyorkino «Harlem» en plan de Jam-Sessión... se aprecia un montaje musical",
+        "target": "hybrid jazz-like musical arrangement in the recording",
+        "rationale": "The reviewer uses critical authority to police the boundary of acceptable flamenco against hybridized or staged musical treatment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Orthodox/classical formation is important, but the clearer discourse function is aesthetic and boundary critique rather than continuity as a separate claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Joselete de Linares's orthodox and heterodox recorded interpretations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; the review is explicitly evaluative and boundary-policing."
+  },
+  {
+    "article_id": "1995-05-20-left-presencia-de-c-ntico-en-el-flame",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la poesía se concibe, en sus orígenes, para ser cantada es un aserto incuestionable",
+        "target": "the relationship between poetry, music, and flamenco",
+        "rationale": "The passage authorizes the poetry-flamenco connection by grounding it in origins and continuity between song and poetic expression."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el Ateneo de Córdoba, pendiente siempre de ponderar los valores de nuestra identidad y cultura, deja impresa a la presente y las futuras generaciones",
+        "target": "flamenco reflection as cultural identity transmitted to future generations",
+        "rationale": "The text frames the publication as public cultural value tied to collective identity and intergenerational memory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Agustín Gómez devana toda la luz de su pasión y su ciencia en las páginas afables, de ágil comprensión y lectura",
+        "target": "Agustín Gómez's book on Cántico and flamenco",
+        "rationale": "The passage explicitly praises the author's work, clarity, passion, and knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage links sentiment, music, voice, and lyrical word to flamenco, but this functions more as broad aesthetic reflection than applied evaluative criteria for a specific performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "the poetry-flamenco relationship and Agustín Gómez's study",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated review, but the visible passage has clear origin, public-culture, and evaluative claims."
+  },
+  {
+    "article_id": "1995-05-21-left-antiguos-cantos-de-linares-jos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "situar éstos en el contexto histórico de la localidad... Guardan entera vitalidad los de Semana Santa y los de trabajo",
+        "target": "popular chants of Linares and their historical continuity",
+        "rationale": "The passage grounds the value and intelligibility of the songs in local history, survival, and continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "los cantos mineros, cuya más genuina expresión es la taranta",
+        "target": "the taranta among Linares mining songs",
+        "rationale": "The passage elevates the taranta as the most genuine expression within a repertoire, creating an internal hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "aprovechando vaguedades más o menos poéticas de flamencólogos, poco y nada al corriente de la historia de la minería y su técnica",
+        "target": "flamencologists' origin claims about the taranta",
+        "rationale": "The author asserts expert historical authority by criticizing rival flamencological claims as poorly informed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The ending notes that an artist teaches at the Conservatorio de Jerez, but this is neutral biography without pedagogical authority or transmission stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Linares songs, the taranta, and competing origin claims",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is heavily truncated, but the visible excerpt clearly contests origin authority and local-historical interpretation."
+  }
+]

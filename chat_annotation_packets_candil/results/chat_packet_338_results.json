@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "1997-07-3-left-a-miguel-vargas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miguel Vargas era un cantaor serio, profundo y con amplio conocimiento de los estilos.",
+        "target": "Miguel Vargas as cantaor",
+        "rationale": "The passage explicitly evaluates Vargas's artistic quality, seriousness, depth, and knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "por imponer seriedad a sus interpretaciones, por cumplir como artista flamenco, por traspasar con su arte el cuerpo del aficionado hasta llegar a lo más profundo de su ser flamenco",
+        "target": "Miguel Vargas's cante",
+        "rationale": "Seriousness, depth, and affective penetration are used as aesthetic criteria for flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "sí consiguió el respeto y la admiración del aficionado serio, del crítico, del componente del jurado o de sus propios compañeros",
+        "target": "Miguel Vargas's recognition by flamenco communities",
+        "rationale": "The passage legitimates Vargas through recognition by serious aficionados, critics, jurors, peers, and peñas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article places Vargas among 'sobresalientes', but the stronger evidence is general evaluation and community recognition rather than sustained canon construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "Miguel Vargas's artistic stature and flamenco value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Obituary/editorial praise grounded in visible performance evaluation and community recognition."
+  },
+  {
+    "article_id": "1997-07-3-right-fin-de-la-epoca-dorada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "El creciente turismo en masa... generó una gran demanda del flamenco de tablao... causó la desintegración casi inmediata de esa vida tal como lo habíamos conocido.",
+        "target": "mass tourism and tablao prosperity",
+        "rationale": "Tourism, commercialization, and remunerated tablao work are framed as forces that disintegrated an earlier flamenco life."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "el énfasis cambió del flamenco del reservado o cuartito... a... escenario... teatro y tablao",
+        "target": "shift from private/reserved flamenco to staged tablao/theatre flamenco",
+        "rationale": "The passage contrasts intimate private settings with public staged performance as socially and aesthetically meaningful."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El resultado: un seudo flamenco, en el mejor de los casos, o un no-flamenco en el resto, que los modernos aceptan rápidamente como flamenco auténtico.",
+        "target": "modern copied/fusion flamenco",
+        "rationale": "The text draws a strong boundary between legitimate flamenco and pseudo- or non-flamenco accepted as authentic."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique polices boundaries, but AUTH_02 and AUTH_04 more directly capture the purity and anti-commercial authenticity discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "commercialized, staged, and modern copied/fusion flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpt contains clear authenticity boundary-work and public/private contrast."
+  },
+  {
+    "article_id": "1997-07-8-right-manuel-p-rez-narv-ez-la-serneta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "cantaora que llegó a ser reconocida como la mejor soleaera de la historia y acaso la mejor cantaora del siglo XIX",
+        "target": "La Serneta",
+        "rationale": "The passage canonizes La Serneta through superlative historical ranking."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "debió comenzar interpretando los cantes básicos antiguos de sus paisanos... que aprendería de niña en la fragua donde trabajaba su padre",
+        "target": "La Serneta's early flamenco learning",
+        "rationale": "The passage frames her repertoire as learned in a local, childhood, family/workplace setting tied to old cantes."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "que todos los que sentimos el flamenco y mostramos preocupación por la cultura y la historia del pueblo, pongamos de nuestra parte para que el recuerdo de La Serreta se perpetúe aquí de una forma digna",
+        "target": "public memory of La Serneta in Utrera",
+        "rationale": "The article calls for collective local memory-work to perpetuate La Serneta's legacy as part of the town's culture and history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article notes La Serneta as a woman cantaora, but gender is not the main analytic frame shaping authority beyond her individual canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "criticism"],
+      "target": "La Serneta's historical and local flamenco significance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text supports canonization, local memory-work, and a cautious lineage/transmission reading."
+  },
+  {
+    "article_id": "1997-07-10-left-a-prop-sito-de-unas-quejas-de-ga",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el más antiguo de cuantos hoy podemos manejar para asomarnos a ese momento histórico en el que lo que después conoceríamos como cante flamenco estaba dando sus primeros balbuceos",
+        "target": "early documentary evidence for flamenco origins",
+        "rationale": "The text grounds flamenco understanding in an origin/early-history document and uses that past to interpret present flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Este texto constituye un documento precioso, el más antiguo de cuantos hoy podemos manejar",
+        "target": "the Bachiller Revoltoso document",
+        "rationale": "The passage elevates the document as an exceptional and foundational historical source for flamenco study."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "la afición de las gitanas por los bailes, así como su profesionalidad... un arte en el que han demostrado siempre su personalidad y singulares dotes interpretativas",
+        "target": "gitanas as early dance practitioners",
+        "rationale": "The passage frames an ethnic and gendered group as historically central to the practice and interpretation of dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The document was edited by a city council and circulated at a congress, but the passage does not make institutional heritage authorization the main value mechanism."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism", "community"],
+      "target": "early gitano dance evidence and its relevance to flamenco origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but visible text clearly uses origins/history and group identity to frame early flamenco-related practice."
+  },
+  {
+    "article_id": "1997-07-13-right-t-o-evaristo-entrevista",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "en Algeciras hay mucha y muy buena afición",
+        "target": "Algeciras flamenco community and Sociedad del Cante Grande",
+        "rationale": "The text grounds flamenco value and authority in local afición and the activity of a flamenco society."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "De to la vida de Dios, porque en mi casa siempre había flamencos... Ya os podéis imaginar lo que allí se armaba y lo bien que se cantaba.",
+        "target": "Evaristo Heredia Maya's flamenco formation",
+        "rationale": "Flamenco knowledge is presented as emerging from family/home gatherings, listening, and lived intergenerational experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "pa ser un buen crítico de flamenco hay que saber de flamenco, y no que algunos, por el hecho de tener una pluma fácil creen que tienen licencia para hablar de tó.",
+        "target": "flamenco critics",
+        "rationale": "The passage explicitly polices critical authority by requiring flamenco knowledge rather than mere writing ability."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Estamos asistiendo a un proceso de manipulación y trivialización del Arte Flamenco",
+        "target": "manipulated and trivialized flamenco",
+        "rationale": "The opening frames current flamenco as being degraded by manipulation and trivialization, establishing a boundary against improper treatment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article uses terms like 'cabal' and names admired figures, but the visible evidence is stronger for community, transmission, and critic authority than for ranking or canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "pedagogy", "criticism", "authenticity"],
+      "target": "Evaristo's insider authority and the proper basis for judging flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible interview excerpts support a distinct critic-authority code in addition to community and transmission evidence."
+  }
+]

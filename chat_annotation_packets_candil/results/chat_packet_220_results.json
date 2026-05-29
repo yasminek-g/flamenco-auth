@@ -1,0 +1,211 @@
+[
+  {
+    "article_id": "1990-09-20-left-musicolog-a-del-flamenco-3-er-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "enseñé unos gráficos obtenidos por computadora que permiten una transcripción fina y rápida de los melismas tan características del cante flamenco",
+        "target": "musicological analysis of flamenco cante",
+        "rationale": "The passage frames computer-assisted transcription and projected musical examples as formal tools for mediating flamenco knowledge in a congress setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "el mismo cantaor, si es flamenco de verdad, podrá recrearse de otra forma y en otro sitio",
+        "target": "the cantaor's capacity for recreative variation",
+        "rationale": "The phrase explicitly uses 'flamenco de verdad' to mark a quality of genuinely flamenco performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions representation and traditional music, but it does not frame flamenco as public heritage, safeguarding, or community memory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as rhythm, melisma, and melodic nuclei are used analytically rather than as explicit aesthetic criteria for judging quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "musicological study and authentic flamenco performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-09-22-right-hondura-duende-y-gusto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "estas tres imprescindibles cualidades sensibles: hondura, duende o gusto",
+        "target": "quality in cante",
+        "rationale": "The article explicitly defines flamenco quality through the aesthetic criteria of hondura, duende, and gusto."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "para el oído, la sensibilidad y predisposición solidificada del que sepa escuchar ... al aficionado definitiva y apasionadamente inmerso en el mundo del cante",
+        "target": "the knowledgeable aficionado-listener",
+        "rationale": "The passage grants evaluative authority to the aficionado who knows how to listen, contrasting this listener with a novice majority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The final claim that no unanimous best singer will exist mentions ranking, but mainly rejects ranking rather than constructing a canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "cante judged through hondura, duende, gusto, and expert listening",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-09-23-left-cante-hondo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Aquí en este cuarto, se ha puesto un halo de misterio que flota entre botellas vacías y pitillos apagados",
+        "target": "the intimate room-based flamenco gathering",
+        "rationale": "The article values flamenco through an intimate participatory setting of guitars, wine, jaleo, and shared night-time performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Gran parte de los cantes más genuinos se han evocado esta noche en este cuarto",
+        "target": "the cantes evoked in the gathering",
+        "rationale": "The phrase 'cantes más genuinos' explicitly presents the repertoire as genuinely flamenco within the described gathering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as tono, cabal, acompasado, and compás appear in poetic description, but the article does not clearly apply them as critical criteria."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The intimate setting suggests authenticity, but the text does not explicitly oppose intimacy to commercial or staged flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity"
+      ],
+      "target": "intimate evocation of genuine cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-09-23-right-campanilleros",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poem invokes memory and campanilleros, but it does not clearly frame them as safeguarding, living heritage, or public cultural memory."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The nostalgic poetic language is not enough to ground an explicit tradition, continuity, or roots claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text without a clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse function."
+  },
+  {
+    "article_id": "1990-09-24-left-bibliograf-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el libro se lee sin problemas, es más, nos engancha de principio a fin en el primor de su desarrollo y apenas nos deja respirar",
+        "target": "Francisco Gutiérrez Carbajo's book",
+        "rationale": "The review explicitly praises the book's readability, structure, and effect on the reader."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "textos acabados, con verdadero espíritu científico y sobrada documentación que demuestren lo que se afirma en ellos más allá de la pura especulación",
+        "target": "scholarly flamenco research",
+        "rationale": "The passage authorizes the work through scholarly standards of scientific spirit, documentation, and evidence over speculation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The book analyzes flamenco copla and popular lyric systematically, but the visible text does not clearly frame it as access to learning or institutional pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "Popular and flamenco poetry are discussed as study objects, but the text does not clearly invoke public heritage or patrimonial value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the reviewed flamenco scholarship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

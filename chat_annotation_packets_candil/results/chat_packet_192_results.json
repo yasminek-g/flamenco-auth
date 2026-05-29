@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "1989-05-22-left-podio-y-picota-ventolera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Romper de este modo la indiferencia y la modesta acogida que nuestro arte merece en los amplios sectores melómanos, constituye un acto ejemplar y laudatorio.",
+        "target": "la edición de compactos flamencos por casas discográficas",
+        "rationale": "The passage explicitly praises the record companies' use of compact-disc technology for flamenco as exemplary and laudable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Queden aquí consignados estos dos nombres como pioneros... del interés y la decisión realizada de ir acomodando al flamenco en un medio de difusión que hasta ahora le parecía vedado.",
+        "target": "Philips and Pasarela",
+        "rationale": "The article elevates these labels as pioneering exemplars in the diffusion of flamenco through a new recording medium."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "El cante requiere exigencias distintas al cultivo del baile o de la guitarra. Un cantaor difícilmente adquiere su capacidad antes de los cuarenta años y su granazón antes de los cincuenta.",
+        "target": "youth cante contests",
+        "rationale": "The passage defines quality in cante through vocal and artistic maturation, using that criterion to criticize contests for very young singers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'renovadores del flamenco tradicional' invokes tradition, but the visible passage does not clearly use tradition or continuity as the main authorizing basis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "new recording initiatives and youth cante contests",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article combines praise for new dissemination media with criticism of premature youth cante competitions."
+  },
+  {
+    "article_id": "1989-05-22-right-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Las formas, ni viejas ni nuevas, simplemente intactas, porque si cambian, el cante se deforma.",
+        "target": "new forms of flamenco cante",
+        "rationale": "The passage draws a boundary between legitimate recreation and deformation, treating altered forms as improper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Todo el disco se constituye en una magnífica lección de compás, salvado sea el fandango. Armonioso compás que subraya la mano maestra del almeriense",
+        "target": "Pansequito's recording and Tomatito's accompaniment",
+        "rationale": "The review uses compás as a central aesthetic criterion for judging the quality of the recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Muy hermosos los fandangos... Muy flamencos los tangos... La recreación en las alegrías... son de una admirable perfección",
+        "target": "the recording 'Suenan las campanas'",
+        "rationale": "The passage gives explicit praise and assessment of multiple tracks on the recording."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review polices the boundary of 'nuevas formas', but that function is already captured by AUTH_02 and CRIT_01 without needing an additional overlapping code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "Pansequito's legitimate recreation versus 'new forms' of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review praises the disc while sharply rejecting deformation under the banner of new forms."
+  },
+  {
+    "article_id": "1989-05-23-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Caló es hoy una reserva, casi un lecho ecológico a proteger",
+        "target": "Caló, the language of the Gitanos",
+        "rationale": "The passage frames Caló as an endangered living cultural resource requiring protection and recovery."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Estoy hablando del Caló, la lengua de los gitanos... que los configuraba como seres inteligentes, que los hermanaba ante la adversidad",
+        "target": "the Gitano people and their language",
+        "rationale": "The passage presents language as a marker of Gitano identity, belonging, solidarity, and representation under oppression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Libro, pues, precioso y necesario, y no sólo para los estudiosos... sino sobre todo para el mismo pueblo gitano",
+        "target": "Tineo Rebolledo's Gitano-Spanish dictionary",
+        "rationale": "The review explicitly evaluates the dictionary as valuable and necessary for both scholars and the Gitano community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The call to transmit Caló to children is clear cultural transmission, but it is not specifically flamenco knowledge or pedagogy in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "community", "criticism"],
+      "target": "Caló and Gitano linguistic-cultural identity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is not directly about flamenco performance, the visible text clearly treats Gitano language as endangered cultural heritage and identity."
+  },
+  {
+    "article_id": "1989-05-24-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Fomentar la práctica, el estudio y la investigación del arte flamenco... velando por su pureza como bien irrenunciable",
+        "target": "the Congress's objectives for flamenco practice and study",
+        "rationale": "The Congress frames flamenco purity as an inalienable good to be guarded, drawing a boundary around proper flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "El Ayuntamiento de Jerez organizará... el XVII CONGRESO NACIONAL DE ACTIVIDADES FLAMENCAS... por la importancia que la ciudad ha tenido y tiene en el origen y desarrollo del flamenco",
+        "target": "Jerez as official host and flamenco site",
+        "rationale": "Municipal and congress institutions authorize Jerez through its recognized role in flamenco origin and development."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "supongan un avance en el estudio de los problemas que afectan al fenómeno del flamenco... Fomentar la práctica, el estudio y la investigación del arte flamenco",
+        "target": "the National Congress of Flamenco Activities",
+        "rationale": "The Congress is presented as an institutional setting for study, research, and organized knowledge-building about flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and congress participants are mentioned, but the visible text emphasizes institutional organization rather than community authority or insider recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "heritage", "pedagogy"],
+      "target": "the Congress and its role in organizing flamenco practice, study, and purity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible Congress objectives provide enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1989-05-25-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mario Maya es un bailaor excepcional.",
+        "target": "Mario Maya",
+        "rationale": "The quoted passage directly evaluates Mario Maya's artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sobrio y casi trágico de gesto... la quietud de sus caderas y la armonía de sus pies y sus manos, también parecían una defensa de la dignidad",
+        "target": "Mario Maya's dance style",
+        "rationale": "The passage applies aesthetic criteria such as sobriety, tragic gesture, harmony, restraint, and dignity to define the value of Maya's baile."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "De él dice Enrique Llovet: «Mario Maya es un bailaor excepcional...»",
+        "target": "Enrique Llovet's assessment of Mario Maya",
+        "rationale": "The article invokes a named critical voice to authorize the evaluation of Maya's artistic stature and style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The many peña notices identify clubs and contests, but mostly as routine organizational information without clear community authority discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Mario Maya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Most peña material is administrative; the substantive codable discourse appears in the quoted critical note on Mario Maya."
+  }
+]

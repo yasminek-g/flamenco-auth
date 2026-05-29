@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "1986-07-22-left-hablan-las-penas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Esta es la verdadera esencia del flamenco.",
+        "target": "Rosario López's and Carlos Cruz's freer cante in the Peña week",
+        "rationale": "The passage explicitly defines the praised performance as the true essence of flamenco, authorizing it as genuinely flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Dicha Semana resultó un completo éxito tanto artístico como de asistencia de socios y público invitado.",
+        "target": "Semana de Estudios Flamencos at the Peña Flamenca de Jaén",
+        "rationale": "The article makes an explicit evaluative judgment of the event's artistic and attendance success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Nosotros pensamos que pocos, muy pocos cantaores hay en el panorama flamenco que canten por este palo como lo hace Carlos Cruz.",
+        "target": "Carlos Cruz's singing by Siguiriyas",
+        "rationale": "The writer ranks Carlos Cruz against the broader flamenco field, constructing a hierarchy of excellence for this palo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'fuerza', 'jondura' and 'compás' are evaluative criteria, but the selected CRIT_01 and CRIT_03 annotations already capture the main critical work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The conference format and named experts suggest pedagogical mediation, but the article mostly reports the event and performances rather than asserting teaching authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "the Peña week and especially Rosario López and Carlos Cruz's performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-07-22-right-buzon-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "una siguiriya olvidada y, por lo tanto, ignorada por la inmensa mayoría de los aficionados y artistas flamencos actuales... ha vuelto a ver la luz",
+        "target": "the forgotten siguiriya sung by Antonio de Alora",
+        "rationale": "The passage frames the cante as a forgotten cultural practice being recovered and returned to public flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "este cante se lo enseñó alguien a Juan Villodres, y a Juan Villodres se lo escuchó Manuel Avila, y según tiene entendido es de Los Caganchos",
+        "target": "the transmission history of the siguiriya",
+        "rationale": "The writer traces the cante through teaching, listening, and attribution to a lineage, using oral transmission to ground its authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El jurado, en esta ocasión, no ha sido muy sensible al juzgar este cante... una mención sí creo que le podrían haber dado",
+        "target": "the Córdoba contest jury's treatment of the siguiriya",
+        "rationale": "The passage evaluates the jury's judgment and argues that the cante deserved at least recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The appeal to 'la afición' suggests community participation, but it asks for information rather than clearly granting aficionados authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The reference to 'pellizco' and the cante's quality is evaluative, but the stronger critical act is the explicit judgment of the jury and recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the recovered siguiriya and its need for recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-07-23-left-d-iscografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En una puntuación máxima de 10, a este disco le atribuiríamos un 7.",
+        "target": "El Pele's album 'La Fuente de lo Jondo'",
+        "rationale": "The review explicitly grades the recording and evaluates its successes and shortcomings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "unas seguirias de excelente factura y enriquecidas con la voz flamenquísima de El Pele, tan rica en melismas",
+        "target": "El Pele's seguiriyas and vocal performance",
+        "rationale": "The reviewer applies aesthetic criteria such as facture, flamenco vocal quality, melisma, compás, sobriedad, and quejío to judge quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la figura más destacada en la inacabable nómina de cantaores de la tierra califal",
+        "target": "El Pele among Córdoba singers",
+        "rationale": "The text elevates El Pele within a local hierarchy of singers, constructing exemplary status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'voz flamenquísima' and 'sabe lo que es el flamenco' imply genuineness, but the dominant discourse function is critical evaluation rather than a standalone authenticity claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to Mairena, Juan Talega, Jerez, and personalismos evoke tradition, but they mainly serve aesthetic review criteria rather than an explicit continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the reviewed recordings by El Pele and Curro Malena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-07-24-left-a-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Discographic listing only; no visible evaluative, authorizing, pedagogical, heritage, community, or critical discourse beyond catalog data."
+  },
+  {
+    "article_id": "1986-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "no puede ser artista sin hacer de su arte la causa primera de su salario",
+        "target": "the definition of a true flamenco artist versus a professional",
+        "rationale": "The editorial contests the idea that professional status defines real artistic legitimacy in flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El arte es un atributo de los dioses, un singular modo de captar la realidad.",
+        "target": "flamenco artistry as distinct from professional oficio",
+        "rationale": "The passage defines aesthetic value through inspiration, duende, subjectivity, and artistic perception rather than economic professionalism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "personajes como «El Loco Mateo», «La Serneta», Manolito María, Juan Talegas y muchos más que sin ser profesionales, han pasado a la historia como incommensuables artistas",
+        "target": "non-professional historical flamenco artists",
+        "rationale": "The editorial canonizes named figures as historically important artists despite their lack of professional status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The critique of marketing and publicity challenges market-based success, but it does not clearly frame commerce as corrupting authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to 'buenos aficionaos' indicates a knowledgeable community, but the passage does not clearly grant them authority to judge beyond reporting a discussion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial exercises definitional authority, but the stronger observable functions are authenticity definition, aesthetic criteria, and canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "professional status as a measure of flamenco artistry",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

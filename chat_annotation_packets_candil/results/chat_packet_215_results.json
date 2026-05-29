@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "1990-07-11-left-pedro-s-nchez-y-ram-n-porras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Creemos llegado el momento oportuno de que sean los «aficionanos» quienes nos aporten sus valiosos puntos de vista sobre el flamenco... Ello hace aconsejable que concurra el criterio de los «aficionanos» para que... puntualicen, subrayen, acoten, aplaudan o desmientan.",
+        "target": "los aficionados como voces autorizadas sobre el flamenco",
+        "rationale": "The passage explicitly grants aficionados recognized authority to judge, correct, delimit, praise, and refute flamenco discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se levantan voces perturbadoras, grabaciones deleznables y artistas que, amparados en intentos de originalidad, más que evolucionar, degradan",
+        "target": "artists and recordings framed as degrading flamenco under claims of originality",
+        "rationale": "The passage uses critical boundary-policing to reject certain innovations as degradation rather than legitimate evolution."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "donde nos reuníamos los flamencos era en el barrio de la Magdalena, en la taberna de «la Cachana»... Allí hacíamos nuestros cantes, la mayoría de las veces sin guitarra.",
+        "target": "local flamenco gatherings in Jaén",
+        "rationale": "The passage values flamenco as a shared participatory practice grounded in informal local gatherings rather than merely staged performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The account mentions listening and expanding knowledge, but the visible span does not clearly frame embodied/oral transmission as authoritative enough for a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "aficionado authority and proper flamenco judgment",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-07-13-right-bamberas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Los promotores de entonces, le ofrecieron dinero y fama por dedicarse al «cuplé», pseudo-flamenco de su época, a lo que renunció de plano, creando sin embargo, en favor del flamenco puro este semijuego del columpio",
+        "target": "Pastora Pavón's refusal of cuplé and creation of bamberas",
+        "rationale": "The passage draws a boundary between pseudo-flamenco cuplé and flamenco puro, authorizing Pastora's choice as proper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pastora Pavón, La Niña de los Peines, inmortalizó estos cantes... dominó todos los estilos flamencos.",
+        "target": "Pastora Pavón / La Niña de los Peines",
+        "rationale": "The passage canonizes Pastora by presenting her as an immortalizing figure who mastered all flamenco styles."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Como buena gitana, se distinguió en los cantes festeros y tiró pellizcos en los palos del cante grande.",
+        "target": "Pastora Pavón's gitana identity and flamenco artistry",
+        "rationale": "The passage links ethnic identity to flamenco capacity and representation, making identity part of the authority claim."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The rejected offer of money and fame hints at anti-commercial authenticity, but the clearer discourse function is purity boundary-work against pseudo-flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Pastora Pavón and bamberas as flamenco puro",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-07-14-left-un-ejemplo-a-seguir",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todos ellos brillaron a gran altura, ofreciéndonos una madurez artística que justificaba plenamente su incorporación a este grandioso cartel",
+        "target": "artists performing at the festival",
+        "rationale": "The passage explicitly evaluates the artists' performances and artistic maturity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "la gran actuación del público, que con su saber estar y cariñoso recibimiento a los artistas... comunión de sentimientos que acreditan a esta capital como lo que siempre ha sido, la Catedral del Arte Flamenco.",
+        "target": "Madrid public and afición",
+        "rationale": "The passage grants the audience and local afición legitimating power through their knowledgeable conduct and emotional communion with artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Sigue siendo Juan Habichuela el gran maestro... pudiéndose aplicar la misma teoría al ya joven y consumado maestro que es Enrique de Melchor.",
+        "target": "Juan Habichuela and Enrique de Melchor",
+        "rationale": "The passage hierarchizes the guitarists as master figures, elevating their status beyond ordinary praise."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Mentions of voice, garra, solera, and accompaniment are evaluative, but the article mostly gives broad performance judgments rather than defining stable aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "festival artists, guitar masters, and Madrid afición",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-07-14-right-legado-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "un patrimonio (y se hace necesario recordar una vez más que estamos ante uno de los lenguajes artísticos más elaborados de la cultura occidental)",
+        "target": "flamenco as artistic heritage",
+        "rationale": "The passage explicitly frames flamenco as patrimonio and as a highly developed cultural/artistic language deserving public value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "una Muestra como ésta encaminada a promocionar y dar a conocer al gran público los nuevos valores del arte flamenco, que a falta de una difusión adecuada suelen quedar restringidos a un pequeño círculo de fieles para acabar extiguiéndose",
+        "target": "young flamenco artists and public transmission infrastructure",
+        "rationale": "The passage argues for promotion, continuity, and diffusion to prevent new flamenco values from disappearing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "aspectos problemáticos del mundo del flamenco... ponen de relieve la precariedad en que se sigue sustentando hoy su manifestación pública",
+        "target": "public infrastructure for flamenco",
+        "rationale": "The passage criticizes the conditions and policies governing flamenco's public presentation, policing the adequacy of support structures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text contrasts a small circle of faithful listeners and the wider public, but the main discourse function is safeguarding/diffusion rather than participatory setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "flamenco as public cultural heritage requiring infrastructure and continuity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-07-15-right-una-evidencia-ignorada-durante-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Lo expuesto por el señor Buendía López, a mi modo de ver, no se adapta fielmente a la realidad",
+        "target": "José Luis Buendía López's account of Rubén Darío's influence",
+        "rationale": "The author exercises corrective critical authority by challenging another scholar's account as not faithful to reality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "¿terminará de una vez para siempre la falsa leyenda que tan bien sembraron los componentes de la élite intelectual de la llamada «Generación del 98»?",
+        "target": "the received literary-historical legend about Rubén Darío and Andalusian modernism",
+        "rationale": "The passage contests a canonical literary-historical hierarchy or legend and attempts to reorder attribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "don José Luis Buendía López, presentó la ponencia «El flamenco en la poesía y en la novela», magnífico y extraordinario ensayo",
+        "target": "Buendía López's essay",
+        "rationale": "The passage explicitly evaluates the essay as magnificent and extraordinary before disputing part of its account."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The text mentions conferences, actas, a foundation, and university activity, but these are context for scholarly debate rather than institutional heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "scholarly accounts of flamenco, poetry, and modernist influence",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

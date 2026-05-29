@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1991-03-3-left-manuel-vallejo-en-el-centenario-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Vallejo, una de las primerísimas figuras del cante y, posiblemente, una de las personalidades más interesantes de nuestro amado arte andaluz.",
+        "target": "Manuel Vallejo",
+        "rationale": "The passage canonizes Vallejo by placing him among the foremost figures of cante and as a major personality of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "su dominio esplendoroso de los cantes, de su maravilloso sentido del compás... construye unas formas musicales flamencas verdaderamente sublimes.",
+        "target": "Manuel Vallejo's cante",
+        "rationale": "The article defines Vallejo's value through aesthetic criteria such as mastery of cantes, compás, and sublime musical forms."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Peña Torres Macarena de Sevilla... constituye una comisión para preparar los actos del Centenario de Vallejo, e invita a Junta de Andalucía, Ayuntamiento de Sevilla, FAF, peñas flamencas, entidades privadas y aficionados en general",
+        "target": "public commemoration of Manuel Vallejo",
+        "rationale": "The centenary is framed as a public commemorative effort involving peñas and official institutions, conferring authorized cultural recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'distorsionador del flamenco puro' appears as an accusation by detractors, but the article mainly dismisses it rather than developing a clear purity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Manuel Vallejo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-03-5-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "De Luna se especializó en acreditar o desacreditar valores por modo extemporáneo... dar a la preselección, y aun a la selección final, un ritmo insensatamente expeditivo.",
+        "target": "José Carlos de Luna as flamenco jury president",
+        "rationale": "The passage critiques the exercise of jury authority and the power to accredit or discredit flamenco values."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la preselección del concurso jerezano fue singularmente bochornosa para cantaores ya hechos o a mitad de camino.",
+        "target": "the Jerez contest preselection process",
+        "rationale": "The article explicitly evaluates the contest process as shameful and damaging to qualified singers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "El verdadero aficionado huye de la promiscuidad... evitando, en suma, comunizar un goce tan directo e íntimo. Son testigos invisibles y por eso auténticos.",
+        "target": "true flamenco listening and aficionado experience",
+        "rationale": "The text ties authenticity to intimate, private, non-promiscuous listening rather than public shared consumption."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text mentions 'razones de pureza', but presents them as confused and unintelligible rather than establishing a clear legitimate/illegitimate flamenco boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical terms such as temple and ritmo appear, but the strongest discourse function is critique of jury procedure rather than a stable aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco jury authority and authentic aficionado listening",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-03-8-left-jos-antonio-d-az-fern-ndez-chaqu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Con todo lo que tenía oído y lo que por aquel tiempo aprendí, además de lo que escuché en casa de mi tío Antonio «El Chaqueta», pues me fui haciendo cantaor.",
+        "target": "Chaquetón's formation as a cantaor",
+        "rationale": "The singer frames his flamenco learning as accumulated listening and family-based transmission rather than formal schooling."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and family networks appear, but the visible excerpt mostly describes biography and learning rather than granting community authority to judge flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Contest prizes and important figures are mentioned, but the excerpt does not build a clear canon or hierarchy beyond biographical milestones."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Chaquetón's flamenco formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-03-11-left-el-flamenco-descrito-en-1850-por",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Después Gevaert se dedicaría, más que a la creación musical, a la musicología, terreno en el que se convirtió en una gran autoridad.",
+        "target": "François Auguste Gevaert as musicological authority",
+        "rationale": "The article explicitly positions Gevaert as an expert authority whose observations can inform flamenco history and theory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el breve estudio pionero de François Auguste Gevaert constituye un valioso aporte, tanto en el aspecto histórico como en el estructural, a nuestros conocimientos del singular arte andaluz.",
+        "target": "Gevaert's 1852 study of Spanish and Andalusian music",
+        "rationale": "The passage evaluates the study as a valuable contribution to flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text concerns scholarly access to flamenco knowledge, but it is framed as historical/musicological research rather than learning access or pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article discusses historical value and Andalusian art, but it does not clearly frame flamenco as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Gevaert's study as an authoritative flamenco source",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-03-14-right-homenaje-p-stumo-a-rafael-romero",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only two words, so there is insufficient context for coding."
+  }
+]

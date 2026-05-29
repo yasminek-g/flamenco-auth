@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "1992-09-12-right-ja-n-cuna-de-la-asociaci-n-de-cr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la Asociación de Críticos de Arte Flamenco... tiene como fines primordiales: «Velar por el prestigio de la función de la Crítica de Arte Flamenco», «Promover la investigación crítica e información artística a todos los niveles»",
+        "target": "Asociación de Críticos de Arte Flamenco and flamenco criticism",
+        "rationale": "The passage explicitly institutionalizes critics as professional authorities responsible for prestige, research, and artistic information."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "«Velar por el desarrollo, cultivo y conservación del Flamenco». Y la vela ha de ser constante y eficaz",
+        "target": "flamenco as a cultural practice to be developed, cultivated, and conserved",
+        "rationale": "The association's stated mission frames flamenco as something requiring ongoing organized conservation and cultivation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "una Asociación que ha de unificar esfuerzos en beneficio de una mayor dignificación del flamenco",
+        "target": "the ACAF project and its effect on flamenco",
+        "rationale": "The article positively evaluates the association as a vehicle for dignifying flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The passage mentions afición flamenca, but the visible text does not clearly grant aficionados community authority independent of the critics' association."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "the Association of Flamenco Art Critics as a legitimate professional body for criticism and conservation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-13-right-la-bienal-ese-hermoso-disparate-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "sus fallos de publicidad, su costoso presupuesto para ofrecer tan poca calidad y, en definitiva, mucha fantasía para tan poca oferta auténticamente flamenca",
+        "target": "the Bienal flamenco program",
+        "rationale": "The passage directly criticizes the Bienal for poor quality, excessive cost, and insufficient flamenco substance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "negaba la capacidad a los críticos para manifestarse porque no estaban en sintonía con sus puntos de vista... vuelve a erigirse en autoridad de saberes flamencos",
+        "target": "Ortiz Nuevo's authority over the Bienal and flamenco knowledge",
+        "rationale": "The article contests a director's claimed authority to define flamenco and defends the legitimacy of critical judgment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "¿Qué hacemos con lo que nos legaron, desde Tío Luis a don Antonio Mairena?... esa manida frase —sin perder las raíces—",
+        "target": "flamenco programming in relation to inherited tradition",
+        "rationale": "The passage invokes roots and what earlier figures handed down as a standard against which contemporary programming should be judged."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el Arte Flamenco es parte indisoluble de la historia de nuestro pueblo y, por tanto, de su cultura",
+        "target": "flamenco as part of collective history and culture",
+        "rationale": "The article frames flamenco as an inseparable part of a people's history and culture, giving it public collective value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'oferta auténticamente flamenca' implies a boundary, but the stronger visible discourse is critical evaluation of programming and authority rather than a developed purity exclusion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "heritage"
+      ],
+      "target": "the Bienal program and Ortiz Nuevo's claimed authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-14-left-bienal-x27-92-la-consumaci-n-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ha sido una Bienal de Flamenco sin flamenco. Magnífica la sinfonía de Manolo Sanlúcar... sensacional «Casiopea»... Lo demás por qué y para qué?",
+        "target": "the 1992 Bienal de Flamenco program",
+        "rationale": "The passage gives explicit aesthetic judgment, praising some works while condemning the event as lacking flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Ha sido una Bienal de Flamenco sin flamenco",
+        "target": "the Bienal as an allegedly flamenco event",
+        "rationale": "The statement draws a boundary between the event's label and what counts as proper flamenco, effectively excluding the program from legitimate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Puede que lo que hayamos aprendido es a no dejarnos engatusar por quienes no lo conocen.",
+        "target": "the Bienal organizers/director",
+        "rationale": "The article uses critique to police authority, suggesting that those responsible lack the knowledge needed to present flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The critique mentions budget and spectacle, but commercialization is not clearly framed as the cause of authenticity loss in the visible text."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text asks what the world could learn about flamenco, but it is a rhetorical criticism of the Bienal rather than a clear discourse about pedagogy or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "the 1992 Bienal as a legitimate flamenco event",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-09-15-left-poes-a-jos-luis",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses aesthetic imagery around guitar, soleá, and toque, but it does not clearly define or apply criteria for judging flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'pañuelo de un pueblo altivo' invokes collective identity poetically, but it does not clearly organize authority, belonging, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic homage with flamenco imagery, but no clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "1992-09-16-right-jos-heredia-joselete-figura-cant",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "José Heredia se equipara a las figuras consagradas de José Domínguez «El Cabrero», José Soto Soto «José Mercé» y Juan Moreno Maya «El Pele»",
+        "target": "José Heredia «Joselete»",
+        "rationale": "The passage positions Joselete in a hierarchy alongside already consecrated flamenco figures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "cuenta con una de las voces más flamencas de la actualidad... la utiliza con mesura y entendimiento... llegue a las cotas de calidad y jondura de las primeras figuras actuales del flamenco",
+        "target": "Joselete's singing",
+        "rationale": "The article applies aesthetic criteria such as flamenco voice, restraint, understanding, quality, and jondura to judge his artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "creo que cualidades no le faltan... el resultado es que contemos con una figura flamenca que puede aportar una amplia gama de matices artísticos",
+        "target": "Joselete's artistic promise",
+        "rationale": "The passage explicitly evaluates Joselete's qualities and future artistic potential."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to 'añejos cantaores' and evoking Manuel Torre or Pastora Pavón suggest continuity, but the visible passage mainly uses them as aesthetic comparison rather than tradition-authority discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The recommendation that he 'amplía su formación' is advisory, but it does not clearly discuss institutional or transnational access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José Heredia «Joselete» as an emerging flamenco figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

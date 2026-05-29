@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1984-11-13-left-las-letras-flamencas-de-paco-sal",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The line 'el campo es un libro abierto que enseña sabiduría' uses teaching language, but it is poetic content rather than flamenco pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of lyric verses without clear metadiscourse evaluating, authorizing, preserving, teaching, or defining flamenco."
+  },
+  {
+    "article_id": "1984-11-13-right-la-bienal-ha-terminado-viva-la-b",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mario bailó extraordinariamente bien, demostrando la obtención y ostentación de dicho galardón",
+        "target": "Mario Maya's Bienal performance",
+        "rationale": "The passage explicitly evaluates the performance and links it to deserved prize status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "resaltar las mejores noches cantaoras, así como los momentos de más claros relieves artísticos",
+        "target": "Bienal performances and artistic highlights",
+        "rationale": "The review organizes the Bienal through hierarchy, selecting the best nights and most artistically prominent moments."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la garra, fuerza y compás del baile de Angelita Vargas",
+        "target": "Angelita Vargas's dance",
+        "rationale": "The passage applies aesthetic criteria such as force and compás to judge flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions the Habichuela family and performers' children, but family presence is not clearly used as community authority or belonging work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The ending mentions learning at Matilde Corral's academy, but it is a brief biographical fact rather than institutional pedagogy being evaluated or authorized."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Bienal performers and performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible review language clearly supports critical evaluation and ranking."
+  },
+  {
+    "article_id": "1984-11-15-left-carta-abierta-y-demasiado-imprec",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "usted fue cualificadísimo mentor",
+        "target": "A. González Climent",
+        "rationale": "The addressee is explicitly positioned as an authoritative mentor in flamenco reflection and judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "esperando que este arrebato se atempere con la segura precisión de su juicio",
+        "target": "A. González Climent's critical judgment",
+        "rationale": "The writer grants the addressee expert authority to clarify and discipline flamenco interpretation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "el flamenco vuelve a españolizarse, a convertirse en una suerte de folklore oficial andaluz, es decir, vuelve a diluirse ante un público copioso pero desatento",
+        "target": "festival-era public flamenco",
+        "rationale": "The passage frames officialized, mass public spectacle as diluting flamenco and weakening its communicative authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Lo festivo es sólo su comparte, que puede resultar hasta grotesto si no se contempla como el vértice de su contrario: el dolor.",
+        "target": "festival framing of expresión jonda",
+        "rationale": "The author defines proper jondo expression through an aesthetic criterion of tension between festivity and pain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'cercenan hoy la verdad flamenca' suggests authenticity boundary work, but the visible excerpt supports anti-spectacle dilution more directly."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text criticizes a large inattentive public, but the public/private participatory contrast is not developed enough to code separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "festival-era flamenco and expert flamenco interpretation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible passages clearly authorize an expert addressee and critique festival/public dilution."
+  },
+  {
+    "article_id": "1984-11-15-right-ellos-los-protagonistas-dicen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "pertenezco a una familia de una larga tradición cantaora, por lo tanto mis vivencias flamencas me vienen a través de mi familia",
+        "target": "Fosforito's flamenco formation",
+        "rationale": "The passage frames flamenco knowledge and lived experience as transmitted through family lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Con estas andanzas y esta forma de vida, se cimentó mis conocimientos y mi sentido del compás se acentuó.",
+        "target": "Fosforito's sense of compás",
+        "rationale": "The speaker presents compás as a key criterion and embodied knowledge formed through practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "mi pueblo ha tenido siempre una gran tradición cantaora",
+        "target": "Puente Genil's flamenco environment",
+        "rationale": "The passage grounds flamenco authority in a continuous local singing tradition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "yo siempre he estado con la oreja puesta en todos los viejos que cantaban",
+        "target": "older local singers in Puente Genil",
+        "rationale": "The singer locates knowledge in attentive listening to local elders, granting community performers authority as sources of flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Fosforito's flamenco knowledge and authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible autobiographical account clearly supports embodied, familial, and local transmission."
+  },
+  {
+    "article_id": "1984-11-18-left-buz-n-flamenco-a-juan-p-rez-s-nc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "los verdaderos aficionados tienen contraída una gran deuda contigo",
+        "target": "true aficionados and Juan Pérez Sánchez",
+        "rationale": "The passage assigns responsibility and recognition authority to true aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "FUE EL MEJOR CANTAOR QUE NOS HA DADO LA CIUDAD DE LA GIRALDA",
+        "target": "Manuel Vallejo",
+        "rationale": "The passage canonizes Vallejo through a superlative ranking."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "EL MEJOR ECO FLAMENCO DEL SIGLO ACTUAL y que con él cantaste muy requetebién para todos los gustos: con dulzura, a la vez que con gran flamenquismo",
+        "target": "Juan Pérez Sánchez 'Canalejas'",
+        "rationale": "The passage explicitly evaluates Canalejas's voice and singing quality in strongly positive terms."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Si algunos escriben o hablan de Vallejo y de ti, es para no perdonaros el que hayáis nacido de padres «castellanos» (no gitanos)",
+        "target": "non-gitano singers Vallejo and Canalejas",
+        "rationale": "The passage frames flamenco recognition through ethnic identity boundaries that affect legitimacy and criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The reference to Vallejo having a street commemorating his name is official recognition, but the passage emphasizes aficionado gratitude and artistic ranking more than institutional heritage authorization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as compás, eco, flamenquismo, and dulzura appear as aesthetic criteria, but the stronger coding is general evaluation and canonizing rank."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Juan Pérez Sánchez 'Canalejas', Manuel Vallejo, and non-gitano singers' recognition",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1990-11-7-left-fernanda-y-bernarda-de-utrera-el",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "ejecutan una tradición musical de rango superior... la valía de un arte se hace más perdurable por lo que es capaz de conservar",
+        "target": "Fernanda y Bernarda de Utrera and their flamenco tradition",
+        "rationale": "The passage authorizes their art through superior tradition, continuity, and the capacity to conserve valued flamenco forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el tormento de soportar con locura el flamenco malo... las mamarrachadas de Juan el Lebrijano... la nociva fenomenología de Camarón de la Isla",
+        "target": "techno-rhythm, bad flamenco, Juan el Lebrijano, Diego Carrasco, and Camarón-associated phenomena",
+        "rationale": "The author uses critical authority to police boundaries between valued flamenco and forms framed as harmful, ridiculous, or destructive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ese totem enduendado que distingue a las cantaoras geniales de los comerciantes de hábil talento",
+        "target": "Fernanda and Bernarda as exemplary cantaoras",
+        "rationale": "The passage establishes a hierarchy between genius cantaoras and merely talented commercial performers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Fernanda and Bernarda as preservers of superior flamenco tradition, contrasted with devalued contemporary/commercial forms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Text is truncated, but the visible evidence is sufficient for these conservative codes."
+  },
+  {
+    "article_id": "1990-11-10-right-por-cabales",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nadie me ha conmovido y llenado tanto flamencamente como Fernanda interpretando las soleares",
+        "target": "Fernanda de Utrera's soleares",
+        "rationale": "The passage explicitly evaluates Fernanda's performance by describing its exceptional emotional and flamenco impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "estas dos geniales hermanas han entrado en la historia del flamenco, en cuyo libro figuran grabados sus nombres artísticos con letras de oro",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The passage canonizes the sisters by placing them in flamenco history with exemplary status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Fernanda de Utrera... se instala en el espíritu y compás del cante por soleá de forma magistral y cuasi inimitablemente",
+        "target": "Fernanda's cante por soleá",
+        "rationale": "The passage applies aesthetic criteria such as spirit, compás, mastery, and inimitability to define flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Utrera origin framing suggests roots and locality, but the strongest discourse function is evaluative and canonizing rather than a distinct continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda de Utrera as exceptional and canonical flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-11-left-las-ni-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Utrera descubrió los azulejos que rotulaban una calle dedicada a sus hijas muy preclaras, Fernanda y Bernarda de Utrera",
+        "target": "Fernanda and Bernarda's public recognition by Utrera",
+        "rationale": "The dedication of a street functions as official civic recognition that publicly authorizes their cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un mismo compás alimenta y guía las gargantas supremas de estas gitanas de lujo",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The passage elevates the sisters through superlative, exemplary language that constructs them as canonical figures."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "puede decirse que Fernanda y Bernarda aprendieron a cantar en el patio de su casa, entre los suyos",
+        "target": "Fernanda and Bernarda's flamenco learning",
+        "rationale": "The passage frames their knowledge as learned through familial, local, embodied community transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Phrases such as 'herencia natural' and 'a la manera de Utrera' suggest tradition and roots, but they overlap with the clearer familial transmission and canonization codes already emitted."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitana identity is repeatedly invoked, but the clearest functional claim in the selected evidence is familial transmission rather than a separate identity-boundary argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Fernanda and Bernarda as officially recognized, canonical, locally transmitted artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-11-right-a-fernanda-y-bernarda",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "siempre dentro de una pura ortodoxia flamenca, llegando a la expresión de lo perfecto",
+        "target": "Fernanda and Bernarda's flamenco practice",
+        "rationale": "The passage legitimates their art as properly flamenco through purity and orthodoxy language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "situándola hoy en el panorama flamenco como artista sin igual dentro de su estilo",
+        "target": "Fernanda within her style",
+        "rationale": "The passage explicitly evaluates Fernanda as unmatched within her flamenco style."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Nacidas del mismo tronco familiar y artístico... revisar sus ancestros familiares que también dejaron huella entre los buenos artistas de sus generaciones anteriores",
+        "target": "Fernanda and Bernarda's family-artistic lineage",
+        "rationale": "The passage frames their artistic authority through family lineage and intergenerational transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Superlative phrases such as 'más alto nivel' imply hierarchy, but the article's central function is direct critical evaluation rather than a broader canon-ranking claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Fernanda and Bernarda as orthodox, highly evaluated, lineage-grounded flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-12-left-expresi-n-vivencial-del-cante-gi",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "forma parte del acervo cultural del pueblo andaluz: EL FLAMENCO en su trilogía de Cante, Baile y Toque",
+        "target": "flamenco as Andalusian cultural patrimony",
+        "rationale": "The passage frames flamenco as collective cultural heritage belonging to the Andalusian people."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "un arte que no se aprende, que se lleva amasado misteriosamente a la propia subsistencia que, como la nobleza, se hereda",
+        "target": "Fernanda and Bernarda's inherited cante gitano",
+        "rationale": "The passage presents flamenco knowledge as inherited and embodied rather than formally learned."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "De ese cante que las define como un capítulo de gloria en la cultura gitano-andaluza... Y porque sois casta y raza",
+        "target": "Fernanda and Bernarda within gitano-andalusian culture",
+        "rationale": "The passage uses ethnic-cultural identity framing to authorize their artistic belonging and representative value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "'vieja tradición del cante puro' suggests tradition, but the stronger visible discourse is inherited transmission and identity-based authorization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "'capítulo de gloria' and 'base inamovible' are canonizing, but adding this would over-code a truncated excerpt where heritage, lineage, and identity are more distinct."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Fernanda and Bernarda as inherited bearers of gitano-andalusian flamenco culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Text is truncated, but the visible evidence is sufficient for these codes."
+  }
+]

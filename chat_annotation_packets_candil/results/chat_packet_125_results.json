@@ -1,0 +1,263 @@
+[
+  {
+    "article_id": "1986-01-19-left-aunque-no-quepa-en-el-papel-agen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El libro que reseñamos... es una muleta en la que apoyar el corazón... un bálsamo para las heridas de la noche, un aviso para caminantes.",
+        "target": "Agenda flamenca de Félix Grande",
+        "rationale": "The review explicitly evaluates the book's emotional and cultural value for flamenco readers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "no tomaré jamás parte en esa polémica que intenta separar lo que ha nacido junto, lo que junto ha crecido y se ha desarrollado",
+        "target": "divisive debates around flamenco and related communities",
+        "rationale": "The quoted stance rejects a boundary-making polemic that would separate elements presented as historically and culturally joined."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Es preciso estar «más juntos que una lágrima» ante nuestro arte, porque el flamenco lo está, lo ha estado siempre.",
+        "target": "flamenco as a unified inherited art",
+        "rationale": "The passage grounds the proper stance toward flamenco in continuity: it is and has always been joined together."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text says the books are not for learning flamenco, so pedagogy is mentioned only to reject that function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "tradition"
+      ],
+      "target": "Félix Grande's flamenco writing and an anti-divisive view of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-01-19-right-el-sevillanito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "dejándonos, solamente, doce grabaciones, de excelente factura",
+        "target": "Antonio Rivero / Niño de Alcalá recordings",
+        "rationale": "The passage gives an explicit quality judgment on the surviving recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "quiero... hacer llegar a don Manuel Ríos Vargas, algunos detalles aclaratorios... artísticamente, y fuera de su localidad, siempre figuró, con el «Niño de Alcalá».",
+        "target": "the correct artistic identification of Antonio Rivero",
+        "rationale": "The writer uses documentary correction to police the boundary of accurate flamenco attribution and naming."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'puro' appears in the ending context, but it is lyrical obituary language and not a clear purity boundary around legitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Rivero's recordings and artistic identification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The ending context appears to shift to an obituary-like passage; only clear visible evaluative and corrective claims were coded."
+  },
+  {
+    "article_id": "1986-01-20-right-pessoa-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el conjunto de la grabación es una reprobable incoherencia",
+        "target": "the recording 'Pessoa Flamenco'",
+        "rationale": "The passage directly condemns the recording as incoherent."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una extensa serie de arbitrariedades absolutamente ajenas a cosa tan sencilla como el Cante y sus circunstancias naturales",
+        "target": "the fusion concept linking Pessoa and flamenco forms",
+        "rationale": "The critic polices a boundary between proper cante and what he frames as arbitrary, alien additions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "absolutamente ajenas a cosa tan sencilla como el Cante y sus circunstancias naturales",
+        "target": "foreign or arbitrary additions to cante",
+        "rationale": "The passage defines proper cante by excluding elements treated as alien to its natural circumstances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "teclados, metales (sic) y percusiones... liquidan... las guitarras de Enrique y Tomatito y el buen cante y el eco jondo de Vicente Soto",
+        "target": "instrumentation and arrangement choices on the recording",
+        "rationale": "The passage applies aesthetic criteria—guitars, good cante, and jondo echo—to criticize the arrangement."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text mentions 'comercial' and nouvelle vague, but the main visible critique is aesthetic/boundary policing rather than a developed anti-commercial authenticity argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Pessoa Flamenco and its hybrid/fusion treatment of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-01-21-left-m-s-sobre-silverio-franconetti-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "teniendo en cuenta los valiosos documentos que sobre el artista poseo, creo que no fue a América, ni conoció el pueblo de Morón, ni por supuesto al Fillo",
+        "target": "claims about Silverio Franconetti's biography",
+        "rationale": "The writer claims documentary authority to correct and delimit acceptable flamenco-historical knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "tal versión pueda ser pura inventiva... pero careciendo de base auténtica; de base carente de credibilidad",
+        "target": "the story of Silverio singing after returning from America",
+        "rationale": "The passage denies the genuineness and credibility of a flamenco-historical anecdote."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "esa fruta UNICA nacida en Andalucía por obra y gracia de María Santísima: El arte flamenco. Ese arte sublime que no nos vino de otras patrias, sino que nació de las entrañas hambrientas del proletariado andaluz.",
+        "target": "flamenco's Andalusian origin",
+        "rationale": "The passage grounds flamenco's value and identity in a claimed Andalusian origin and social roots."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "debe dirigirse, porque, por su naturaleza, tienen más obligación que yo de «enseñar a quien no sabe»",
+        "target": "young Andalusian flamenco writers",
+        "rationale": "The writer assigns pedagogical authority and responsibility to knowledgeable Andalusian contributors."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains polemical criticism of opportunistic writers, but the stronger function is expert boundary correction rather than review-style evaluation of a flamenco work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Silverio Franconetti historiography and flamenco's Andalusian origin",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-01-22-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "la Peña Flamenca de Jaén va a comenzar una nueva etapa para recuperar el rol que tenía en la sociedad jiennense",
+        "target": "Peña Flamenca de Jaén",
+        "rationale": "The peña is framed as a community institution seeking to recover its recognized social role."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "conferencias ilustradas a cargo de conocidos maestros y aficionados... mesas redondas sobre temas de actualidad flamenca y clases gratuitas",
+        "target": "new program of the Peña Flamenca de Jaén",
+        "rationale": "The passage frames the peña's program around organized access to flamenco knowledge through talks, roundtables, and free classes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "intervención en los foros de decisión y potenciación de la revista «Candil»",
+        "target": "Peña Flamenca de Jaén's public role",
+        "rationale": "The plan positions the peña and its magazine as actors in decision-making and critical mediation around flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article mentions peña activities and public meetings, but does not clearly contrast public/private or spectator/participant settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Peña Flamenca de Jaén's renewed institutional and community role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "article_id": "1987-11-4-right-importancia-de-las-letras-en-el-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Todos coinciden en señalar que el flamenco, a medida que rompía la intimidad familiar, iba dejando a un lado lo más puro de su autenticidad",
+        "target": "flamenco separated from familial intimacy",
+        "rationale": "The passage draws a purity boundary by linking the loss of familial intimacy to the loss of flamenco's pure authenticity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "por proceder de una cultura oral, transhumante y castigada por la acción implacable de la historia, no tiene otro sistema de transmisión que lanzar al aire los resortes más profundos de esa memoria colectiva",
+        "target": "flamenco letters and collective memory",
+        "rationale": "The excerpt explicitly frames flamenco knowledge as orally transmitted through collective memory."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "No, no consintamos que se pierda tan rico patrimonio... Ayudemos entre todos a recuperarla cuidando como un tesoro nuestras letras.",
+        "target": "flamenco letras as patrimony",
+        "rationale": "The passage presents flamenco lyrics as a rich patrimony that must be collectively recovered and safeguarded."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The opening diagnosis of decadence and routine is evaluative, but the more specific visible discourse concerns authenticity loss, oral transmission, and safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco letras and their oral-memory transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1987-11-6-left-poema-para-t-a-anica",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Hoy la tempestad de su cante sigue con la vigencia de las estrellas",
+        "target": "Tía Anica La Piriñaca's cante",
+        "rationale": "The poem explicitly praises the lasting force and value of her singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Es su vida un altarito ambulante en donde se adora la Historia del Canti",
+        "target": "Tía Anica La Piriñaca",
+        "rationale": "The hagiographic framing elevates her as an exemplary figure through whom flamenco history is venerated."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem invokes gitano imagery, but identity terms function mainly as poetic atmosphere rather than explicit authority or belonging work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The references to memory and history are evocative, but they do not clearly ground present flamenco value in continuity or roots beyond praise of the artist."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Tía Anica La Piriñaca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The text is a poem; codes are limited to explicit evaluative and canonizing discourse."
+  },
+  {
+    "article_id": "1987-11-6-right-el-cante-extreme-o-ponencia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "supone el hasta ahora trabajo más importante de recuperación y difusión de nuestros cantes y de nuestros jóvenes valores que ha realizado la F.E.F.E.X.",
+        "target": "cantes extremeños and young Extremaduran performers",
+        "rationale": "The passage frames the recording and institutional activity as recovery and diffusion of a regional flamenco heritage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "venir a plantar a Andalucía la paternidad para Extremadura de una serie de modalidades y estilo de nuestro cante flamenco",
+        "target": "Extremaduran flamenco modalities and styles",
+        "rationale": "The argument grounds legitimacy in regional origin and paternity claims for specific flamenco styles."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "dónde empieza y dónde termina Extremadura, o dónde termina y empieza Andalucía",
+        "target": "Extremadura and Andalucía as flamenco cultural regions",
+        "rationale": "The passage uses regional identity boundaries to contest who can represent or claim flamenco styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The excerpt mentions a research study and a recording, but the visible text does not clearly thematize learning access or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The warning that classifications may cause confusion is critical, but the stronger function is regional-origin legitimation rather than expert boundary policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "tradition",
+        "community"
+      ],
+      "target": "Extremaduran flamenco cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt clearly presents regional recovery and contested origin claims."
+  },
+  {
+    "article_id": "1987-11-9-right-la-fundaci-n-andaluza-de-flamenc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "editado por la Consejería de Cultura de la Junta de Andalucía, en colaboración con la Excma. Diputación Provincial de Cádiz y los Excmos. Ayuntamientos de Cádiz y Jerez de la Frontera",
+        "target": "Fundación Andaluza de Flamenco",
+        "rationale": "The foundation is presented through official cultural institutions whose sponsorship authorizes flamenco as public cultural heritage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Jerez de la Frontera, de rancia tradición cultural, folclórica y vitivínicola, que siempre ostentó categoría de primer rango en la génesis, evolución y recreación de los palos del cante jondo más bellos y más profundos",
+        "target": "Jerez as seat of the Fundación Andaluza de Flamenco",
+        "rationale": "The choice of Jerez is legitimated through tradition, origins, continuity, and its role in the genesis and recreation of cante jondo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La insuperable tradición de artistas de la talla de Juanelo de Jerez... don Antonio Chacón... Manuel Torres... La Paquera, Fernando «Terremoto» y un larguísimo etcétera de artistas de excepción",
+        "target": "Jerez artist lineage",
+        "rationale": "The passage constructs a canon of exceptional Jerez artists to justify the city's exemplary flamenco status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises the initiative, but that praise mainly supports institutional authorization and canon-building rather than a separate review judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "the Fundación Andaluza de Flamenco and Jerez as its seat",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt gives sufficient institutional, traditional, and canonical evidence."
+  },
+  {
+    "article_id": "1987-11-10-right-madrid-flamenco-corresponsal",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "diez recitales de guitarra, baile y cante, cuidadosamente seleccionados... que merecen nuestro aplauso y felicitación a la organización por su acierto",
+        "target": "Veranos de la Villa flamenco programming",
+        "rationale": "The correspondent explicitly evaluates the programming positively as carefully selected and successful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "La guitarra ha tenido una magnífica representación por la indudable calidad de los artistas contratados... en una progresión muy considerable sobre el momento actual del cante",
+        "target": "guitar performance compared with cante",
+        "rationale": "The passage applies quality and artistic progress as criteria for judging guitar and cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "la gran y creciente afición que existe y en la que también se aprecia una muy deficiente orientación y formación",
+        "target": "Madrid flamenco afición",
+        "rationale": "The passage evaluates the audience community through deficiencies in orientation and formation, making access to flamenco knowledge a meaningful issue."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The correspondent criticizes artist-public conduct and municipal funding choices, but the passage does not clearly invoke expert authority or police a proper/improper flamenco boundary beyond ordinary review criticism."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Ayuntamiento's support and failed congress funding are institutional, but the visible text lacks explicit heritage or authorized-cultural-recognition framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Madrid flamenco events, performers, and afición",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full article visible. Codes focus on explicit review judgment, aesthetic criteria, and formation/orientation of the afición."
+  }
+]

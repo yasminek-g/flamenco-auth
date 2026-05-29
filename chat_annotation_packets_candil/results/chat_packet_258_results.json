@@ -1,0 +1,267 @@
+[
+  {
+    "article_id": "1992-07-23-right-muerte-anunciada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una de las figuras del cante más importante de nuestro tiempo",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón by ranking him among the most important cante figures of his time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Por su personal manera de decir el cante, por el sonido de su voz, demostró ser un cantaor trascendental dentro del mundo del Flamenco.",
+        "target": "Camarón's cante and voice",
+        "rationale": "The text applies aesthetic criteria of personal delivery and vocal sound to define Camarón's flamenco importance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "se trata de un cante auténtico, saturado de pureza y genialidad",
+        "target": "Camarón's cante",
+        "rationale": "The passage explicitly attributes authenticity and purity to Camarón's cante as a legitimating claim."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage mentions tradition and synchronizing the archaic with the modern, but the stronger visible discourse function is authenticity/evaluation rather than tradition as an independent authority claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as mourners and followers, but they are not clearly positioned as authoritative judges in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Camarón de la Isla and his cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-07-25-left-pasi-n-muerte-y-ascensi-n-a-los-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Camarón logró como nadie el privilegio de sacudir las fibras más sensibles sólo con su presencia, con su cante crispado y masculino",
+        "target": "Camarón's cante",
+        "rationale": "The passage evaluates Camarón through emotional force, vocal expressivity, and affective power as aesthetic criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Sobre todo para su pueblo, para su raza, que veían en él al elegido, al artista ungido",
+        "target": "Camarón as representative of his people/race",
+        "rationale": "Identity-group framing organizes Camarón's authority as an artist chosen by and meaningful to his people and race."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ese es el privilegio de los genios",
+        "target": "Camarón as genius",
+        "rationale": "Calling Camarón one of the genios elevates him into an exemplary hierarchy of exceptional artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text invokes old masters, ancestors, and flamenco rivers, but this functions poetically more than as a clear tradition-continuity authority claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The community's devotion is visible, but the passage does not clearly make aficionados or community participants judges of flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "Camarón de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-07-26-left-gracia-y-hondura-juan",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El cante de Camarón es rancio y radical, nuevo y liberador",
+        "target": "Camarón's cante",
+        "rationale": "The passage defines the quality of Camarón's cante through aesthetic criteria of depth, radicality, novelty, and liberation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Incluso en las grabaciones «comerciales» de José está presente siempre el soplo sublime del ángel o el vendaval arrebatador del duende.",
+        "target": "Camarón's commercial recordings",
+        "rationale": "The text explicitly praises even the commercial recordings as possessing sublime and duende-like artistic force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "«Es divino, es un dios»",
+        "target": "Camarón",
+        "rationale": "The quoted reaction elevates Camarón into an exceptional, near-divine artistic hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions interpreting classics and listening to old recordings, but it does not clearly frame learning, access, or transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial recordings are mentioned, but the text does not frame commerce as weakening or strengthening authenticity in a sustained way."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Camarón's cante and recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-07-27-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Pocas veces se esforzó en revalorizar el auténtico cante gitano-andaluz",
+        "target": "authentic gitano-andalusian cante",
+        "rationale": "The passage explicitly invokes authentic gitano-Andalusian cante as a valued category, even while saying Camarón did not chiefly revalorize it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fue, en síntesis, la asignatura pendiente de los clásicos y el eterno interrogante del futuro.",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage places Camarón in a canonizing historical frame between the classical tradition and the future of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Su gran mérito fue que sin ser rechazado, se permitió el lujo de presentar un producto muy diferente de aquel al que el aficionado estaba acostumbrado.",
+        "target": "Camarón's artistic product/language",
+        "rationale": "The text explicitly evaluates Camarón's merit in presenting a markedly different flamenco language."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The aficionado appears as a reference audience, but not as an authoritative community actor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duendes are mentioned, but not clearly applied as a distinct evaluative criterion beyond the broader critical judgment already coded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "Camarón and authentic gitano-Andalusian cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-07-29-left-camar-n-de-la-isla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "siendo requerido para actuar en los festivales andaluces como primera figura y con la máxima cotización económica del momento dentro del género flamenco",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage ranks Camarón as a first-rank figure with maximal status within flamenco performance circuits."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "puede decirse que empieza una nueva época por su gran influencia",
+        "target": "Camarón's influence",
+        "rationale": "The quoted commentary canonizes Camarón as inaugurating a new epoch through his influence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "su jondismo está latente en su rajo, en su voz gitanísima",
+        "target": "Camarón's voice and jondismo",
+        "rationale": "The passage applies aesthetic criteria of jondismo, rajo, and gitano vocal quality to explain his flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Young singers imitate him, but the visible text frames this mainly as influence and style formation rather than a learning/access discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as audiences created by him, but not clearly as community authorities who judge or sustain value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase voz gitanísima invokes identity, but it functions primarily as an aesthetic criterion rather than broader identity-based authority framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Camarón de la Isla and his cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

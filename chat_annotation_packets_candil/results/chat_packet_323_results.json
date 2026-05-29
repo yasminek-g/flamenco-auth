@@ -1,0 +1,189 @@
+[
+  {
+    "article_id": "1996-09-3-right-creador-y-recreador",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "No es mero reproductor o copista, frío transmisor... Se trata, como explica Ricardo Molina, de una labor ardua de «refundición»: «Estas creaciones o reelaboraciones... siempre parten de un sujeto preexistente»",
+        "target": "Antonio Mairena como recreador del cante",
+        "rationale": "The passage explicitly frames Mairena's flamenco work as transformative transmission rather than simple copying, satisfying the reproduction/reelaboration pedagogy criterion."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Muchos de los cantes que rescata, con ayuda de los viejos cantaores a los que se arrima con oídos y corazón atentos",
+        "target": "Mairena's learning from older cantaores",
+        "rationale": "Knowledge is legitimated through attentive listening to old singers and source-based transmission, an oral/embodied lineage model."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Todo artista se basa en una tradición, en una experiencia de los otros, en un bagaje cultural personal y social, colectivo, que le viene, a veces, de siglos atrás.",
+        "target": "Mairena's cante and flamenco creation",
+        "rationale": "The article grounds artistic creation in inherited collective tradition and continuity across centuries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Terms such as maestro, genio, and mejor cante elevate Mairena, but the visible excerpt's main discourse function is transmission and recreation rather than explicit canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Antonio Mairena's recreated and recovered cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible evidence windows and beginning/end context."
+  },
+  {
+    "article_id": "1996-09-5-left-lorca-en-la-memoria-propuesta-fl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Fueron tiempos de obligado silencio, no de olvido. Y el pueblo, después de rescatarte Federico, rompe su voz en un desgarro —siguirya— para evocar tu muerte",
+        "target": "collective remembrance of Federico García Lorca through flamenco forms",
+        "rationale": "The passage frames flamenco singing as public memory-work that rescues and evokes Lorca after enforced silence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes el pueblo and collective mourning, but identity categories do not clearly organize flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "flamenco as a vehicle of Lorca memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1996-09-6-left-el-flamenco-y-el-pueblo-bases-pa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "El flamenco es un complejo músico-oral de la cultura andaluza, y una de sus señas de identidad más destacadas.",
+        "target": "flamenco as Andalusian public culture",
+        "rationale": "The passage defines flamenco as a collective cultural and identity-bearing form for Andalusia."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "aunque en ocasiones sea vendido sin más como un «producto» descontextualizado y sólo en su dimensión formal",
+        "target": "commercialized, decontextualized flamenco",
+        "rationale": "Commercial product framing is criticized as stripping flamenco of social and contextual meaning."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Desde 1984, la Junta de Andalucía ha asumido las funciones en materias de conservación, difusión y promoción cultural",
+        "target": "administrative cultural management of flamenco in Andalusia",
+        "rationale": "Institutional authority is explicitly positioned as responsible for conserving, diffusing, and promoting flamenco as cultural value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "se hace indispensable una doble política: de conservación y estudio, y de divulgación y fomento",
+        "target": "safeguarding and cultural reproduction of flamenco",
+        "rationale": "The article calls for conservation, study, dissemination, support, and later training activities as a public safeguarding framework."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article strongly frames flamenco through Andalusian and popular-class identity, but this is already captured by the emitted heritage/public-culture codes and does not separately define insider authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The ending mentions cursillos, seminarios, and formación de nuevas generaciones, but this is subordinate to the broader safeguarding policy rather than a developed learning-access argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "flamenco as Andalusian cultural heritage and policy object",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible excerpts provide enough evidence for policy, heritage, and commercial-decontextualization codes."
+  },
+  {
+    "article_id": "1996-09-12-left-letras-flamencas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is lyric content only and does not evaluate, authorize, transmit, or define flamenco discourse."
+  },
+  {
+    "article_id": "1996-09-12-right-poema",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses flamenco-adjacent imagery such as sonidos negros, pena, and lamentos, but it does not apply these as criteria for judging flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic description of guitar without a clear evaluative or authorizing discourse function."
+  }
+]

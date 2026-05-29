@@ -1,0 +1,196 @@
+[
+  {
+    "article_id": "1997-07-26-right-catalu-a-flamenca-una-exposici-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "conocen y respetan profundamente la tradición, al tiempo que la renuevan y enriquecen día a día",
+        "target": "Barcelona flamenco creators and performers",
+        "rationale": "Tradition and continuity are used to authorize contemporary renewal of flamenco in Barcelona."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "la tradición flamenca forma parte, desde el siglo pasado, de la vida y el patrimonio cultural de Barcelona",
+        "target": "flamenco in Barcelona",
+        "rationale": "The passage explicitly frames flamenco as part of Barcelona’s cultural patrimony and public cultural life."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Organizada por el Instituto de Cultura de Barcelona... la exposición... ha estado dividida en dos grandes ámbitos complementarios: el histórico y el actual",
+        "target": "Flamencs exhibition",
+        "rationale": "An official cultural institution and curated exhibition are presented as mechanisms placing Catalan flamenco in its proper cultural position."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage"
+      ],
+      "target": "flamenco in Catalonia/Barcelona",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible context provides strong tradition and heritage discourse."
+  },
+  {
+    "article_id": "1997-09-3-left-el-centenario-de-la-argentinita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "nadie parece haberse dado cuenta de ello, a pesar de la enorme importancia artística que la bailaora flamenca ha tenido en la historia de este arte",
+        "target": "centenary memory of La Argentinita",
+        "rationale": "The article calls attention to failed commemoration and frames remembrance as culturally necessary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "los merecidos homenajes... Los merecimientos no son pocos",
+        "target": "La Argentinita",
+        "rationale": "The passage constructs La Argentinita as a figure whose status merits canonizing homage."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "los responsables de cada uno de los posibles estamentos culturales e institucionales implicados en organizar los merecidos homenajes",
+        "target": "cultural and institutional bodies",
+        "rationale": "The text assigns responsibility for official commemorative recognition to cultural and institutional actors."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "La Argentinita as a historical flamenco figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Carmen Linares praise is not separately coded because the main discourse function is remembrance of La Argentinita."
+  },
+  {
+    "article_id": "1997-09-3-right-antecedentes-y-consecuentes-cord",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Es el cante en su estado de pureza e inocencia primitivas... preservar de la contaminación ciudadana y profesional",
+        "target": "primitive cante / cante jondo",
+        "rationale": "The passage draws a purity boundary between primitive cante and contaminating urban/professional influences."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "preservar de la contaminación ciudadana y profesional",
+        "target": "cante jondo tradition",
+        "rationale": "The passage links present value to preserving a valued earlier form from later degradation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la voz... vibra con toda la energía del genio, se pliega, desciende rápida o perezosa, aguda o leve",
+        "target": "cante voice",
+        "rationale": "The quoted discussion uses vocal force, expression, and soberness as aesthetic criteria for cante value."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante jondo and Lorquian flamenco interpretation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated; codes are limited to visible purity, preservation, and aesthetic criteria."
+  },
+  {
+    "article_id": "1997-09-9-right-una-utop-a-est-tica-y-reivindica",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "El tesoro artístico de toda una raza va camino del olvido",
+        "target": "Cante Jondo / flamenco artistic treasure",
+        "rationale": "The passage frames cante as an endangered collective treasure requiring urgent safeguarding from oblivion."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "revalorizar y reivindicar el arte flamenco; un arte que creían mixtificado y en decadencia",
+        "target": "flamenco before the 1922 contest",
+        "rationale": "The text presents the contest as a response to flamenco perceived as mixed, degraded, and in decline."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "posiblemente, el hecho más importante de la historia flamenca",
+        "target": "Concurso de Cante Jondo de Granada/1922",
+        "rationale": "The contest is elevated within flamenco history through a superlative historical ranking."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Concurso de Cante Jondo de Granada/1922",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Origin discussion is present, but the stronger visible function is safeguarding and revalorizing a threatened art."
+  },
+  {
+    "article_id": "1997-09-13-right-letras",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": "song lyrics without meta-discourse",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text consists of letras without evaluative, authorizing, pedagogical, heritage, or community discourse about flamenco."
+  }
+]

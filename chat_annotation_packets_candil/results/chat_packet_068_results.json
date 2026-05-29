@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "1983-01-18-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Religiosidad y marginación, que expresadas por separado en las mencionadas obras —más flamencas que la que comentamos— se mezclan de una forma, a veces comercial",
+        "target": "Juan Peña «El Lebrijano»'s Ven y Sígueme compared with earlier works",
+        "rationale": "The review explicitly evaluates the album as less flamenco than the earlier works and criticizes its mixture as sometimes commercial."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "aporta sus bonitas matizaciones melismáticas y su conocimiento de esta técnica, aunque por otra parte no brille en la ejecución de los diversos estilos flamencos",
+        "target": "Juan Peña «El Lebrijano»'s execution of flamenco styles",
+        "rationale": "The passage applies technique, melismatic nuance, and execution of flamenco styles as criteria for judging the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "se mezclan de una forma, a veces comercial",
+        "target": "commercial tendency in Ven y Sígueme",
+        "rationale": "The reviewer uses commerciality as a critical boundary marker that weakens the flamenco value of the work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The trigger 'Peña' is only part of Juan Peña's name here, not a peña/aficionado community authority claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The comparison with Persecución and Felix Grande implies relative ranking, but the stronger visible discourse is direct critical evaluation and aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the reviewed recordings, especially Ven y Sígueme and Fosforito's A mi tierra, Córdoba",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible review excerpt contains sufficient evaluative discourse for coding."
+  },
+  {
+    "article_id": "1983-01-19-right-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is too short and consists mainly of author credit and advertising, with no usable flamenco discourse."
+  },
+  {
+    "article_id": "1983-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Hay concursos sin criterio, sin honestidad, sin las más mínimas garantías de objetividad. Y hay concursos fidedignos, con regla",
+        "target": "flamenco competitions and their authority to judge cante",
+        "rationale": "The editorial critiques the institutional/critical authority of contests by distinguishing valid and invalid judging structures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El mejor, en un concurso, no es quien más genuinamente recrea el cante, lo autentica, lo transmite, lo hace, en definitiva, arte.",
+        "target": "genuine flamenco cante beyond competition criteria",
+        "rationale": "The passage explicitly defines proper flamenco art through genuineness, authentication, transmission, and artistic recreation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la competición no es válida en este arte, contradice a la misma razón de ser del cante jondo",
+        "target": "competition structures in relation to cante jondo",
+        "rationale": "The editorial draws a boundary between legitimate cante jondo and competition structures that are framed as alien to its essence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "se compensa más que el arte, el oficio de ser artista. Y el oficio no significa, a veces hasta contradice, la genialidad.",
+        "target": "contest rankings and the idea of the best flamenco artist",
+        "rationale": "The passage contests contest-based ranking by arguing that prizes reward professional craft rather than artistic greatness or genius."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text discusses stimulating young values, but it does not frame this as institutional learning or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco contests as inadequate mechanisms for defining the best cante jondo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-4-right-tierra-sobre-la-tierra-aproximac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "nunca ha coincidido en la raíz, en los orígenes",
+        "target": "flamenco's roots and origins in relation to Andalusian folklore",
+        "rationale": "The article grounds flamenco's distinctiveness in roots and origins, using origin discourse to define its proper historical identity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Es como si a la vez que el gitano liberara sus vivencias lanzándolas al aire nos estuviera dando una lección magistral de historia.",
+        "target": "gitano experience as source of flamenco meaning",
+        "rationale": "The passage frames flamenco through gitano identity and lived experience, making that group identity central to representation and authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "reabsorbida a través de un patético y familiar aprendizaje humano",
+        "target": "flamenco as transmitted through familial human learning",
+        "rationale": "The passage describes flamenco history and expression as absorbed through a familial learning process, indicating lineage-based transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "a mayor antigüedad y carácter primitivo de un cante corresponden mayor sencillez y gravedad en la guitarra",
+        "target": "guitar accompaniment for older or more primitive cantes",
+        "rationale": "The article defines aesthetic criteria for accompaniment, valuing simplicity and gravity in relation to older cante forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage defines flamenco's essence and personality, but the clearest authenticity work is through roots/origins rather than an explicit genuineness claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The four basic cantes are identified as central, but the passage primarily defines aesthetic/structural criteria rather than ranking artists or creating a canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco as a distinct gitano-andalusian expressive system rooted in origins, lived experience, and primitive cante structures",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1983-03-8-left-principios-elementales-de-musico",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Sirva este artículo para iniciarse en la grandeza musical de nuestros cantes.",
+        "target": "schoolchildren's introductory learning about flamenco music",
+        "rationale": "The article explicitly frames itself as an introductory educational tool for access to flamenco musical knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "me voy a limitar a ofrecer unas nociones generales y breves que sirvan de fundamento a las posteriores explicaciones acerca de la música folklórica y, sobre todo, flamenca",
+        "target": "the author's basic musicological instruction for flamenco learning",
+        "rationale": "The author positions his explanatory method as foundational instruction for later understanding of folkloric and flamenco music."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Así podrán comprender fácilmente la riqueza musical de España y, en este caso, Andalucía. Con esta base comprenderán, por otra parte, las grandezas de nuestros cantes flamencos.",
+        "target": "flamenco cantes as musically valuable",
+        "rationale": "The passage positively evaluates flamenco cantes as possessing musical greatness and richness to be understood by students."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The word 'grandezas' signals praise, but it does not construct a hierarchy or canon among artists, styles, or works."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text criticizes commercial uses of music generally, but it does not link commercialization specifically to loss of flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco music as a teachable object of school-level musical understanding",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible educational framing is sufficient for coding."
+  }
+]

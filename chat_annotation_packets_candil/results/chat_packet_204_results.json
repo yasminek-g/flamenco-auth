@@ -1,0 +1,225 @@
+[
+  {
+    "article_id": "1989-11-26-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "quiere alcanzar cotas de calidad inigualables en cuanto a la selección de grabaciones realizadas por los mejores cantaores flamencos de este siglo",
+        "target": "la antología discográfica «El Flamenco»",
+        "rationale": "The review explicitly evaluates the anthology's quality and selection of recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "los mejores cantaores flamencos de este siglo... don Antonio Chacón, La Niña de los Peines, Tomás Pavón, Manuel Vallejo, Aurelio de Cádiz, Antonio Mairena",
+        "target": "the anthology's selected singers",
+        "rationale": "The passage constructs a canon of exemplary twentieth-century flamenco singers through selection and naming."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "serviría... para introducir al neófito dentro de nuestro arte... hasta establecer sus propios criterios sobre este arte",
+        "target": "new listeners and the anthology's mediating function",
+        "rationale": "The anthology is framed as a mediated learning tool that gives newcomers access to flamenco knowledge and criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticamente seleccionadas' modifies the act of selection rather than asserting authentic flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the anthology and its selected singers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-26-right-premium-iben-alcazar-premium-grw",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word 'tradición' refers to beer-making tradition, not flamenco or flamenco-related cultural authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Beer advertisement with no flamenco discourse."
+  },
+  {
+    "article_id": "1990-01-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una de las figuras más míticas y extraordinarias en la historia del cante... paradigma de la mujer cantaora",
+        "target": "Pastora Pavón, «Niña de los Peines»",
+        "rationale": "The editorial canonizes Pastora through superlative status and presents her as a paradigm."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "se ha escrito mucho, pero no siempre bien. Frente a generalizaciones tan entusiásticas como inadecuadas... análisis cicateros",
+        "target": "critical writing about Pastora Pavón",
+        "rationale": "The passage critiques existing interpretive discourse and contests inadequate critical framings of Pastora."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "¿Qué significado tuvo y en la actualidad tiene la mujer-artista en la historiografía del cante?... la mujer flamenca como protagonista de esa oculta historia",
+        "target": "women flamenco artists in cante historiography",
+        "rationale": "The editorial explicitly frames flamenco historiography through gender and contests the exclusion of women from authority and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticas expresiones de jondura' is evaluative, but the stronger discourse functions here are canon formation and gendered historiographic critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Pastora Pavón and women flamenco artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-4-right-paco-vallecillo-in-memoriam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Radical e intransigente con las adulteraciones, jamás cedió ante los problemas que genera la defensa de la puridad jonda",
+        "target": "Paco Vallecillo's defense of jondo flamenco",
+        "rationale": "The text defines Vallecillo's authority through resistance to adulterations and defense of purity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "la desesperación de los malos cantaores, la pesadilla de los ventajistas y la guía de los buenos aficionados",
+        "target": "Paco Vallecillo as guide for aficionados",
+        "rationale": "The passage positions him as an authority who guides knowledgeable aficionados and exposes illegitimate actors."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "del flamenco que nos ha de servir de modelo para el futuro... perpetuemos su nombre en la lista de los defensores insobornables del flamenco",
+        "target": "Paco Vallecillo",
+        "rationale": "The article canonizes Vallecillo as an exemplary model and places him among enduring defenders of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Medalla de Andalucía is mentioned, but the passage does not frame the medal as heritage authorization of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Paco Vallecillo and his purist defense of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-5-left-manuel-cano-in-memoriam-paco-val",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Los éxitos logrados por Manuel Cano a lo largo de su carrera han confirmado que consiguió con creces su propósito",
+        "target": "Manuel Cano's guitar career",
+        "rationale": "The passage directly evaluates Cano's artistic project as successful."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Catedrático numerario de guitarra flamenca en el Conservatorio Superior de Música de Córdoba... transmitir a las nuevas generaciones sus experiencias y sus conocimientos",
+        "target": "Manuel Cano's institutional teaching and transmission",
+        "rationale": "The text frames Cano's flamenco knowledge as transmitted through a formal conservatory role and intergenerational pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Todo un ejemplo a seguir... Manuel Cano, un caballero cabal de la guitarra flamenca",
+        "target": "Manuel Cano",
+        "rationale": "The obituary elevates Cano as an exemplary figure in flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Cano is clearly a teaching authority, but the stronger and more specific code is institutional learning access through the conservatory and publications."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Manuel Cano and his flamenco guitar legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

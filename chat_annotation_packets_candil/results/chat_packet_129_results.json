@@ -1,0 +1,183 @@
+[
+  {
+    "article_id": "1986-03-28-left-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a title/byline fragment and a name; there is not enough context for reliable discourse coding."
+  },
+  {
+    "article_id": "1986-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "nacieran las peñas, federaciones, agrupaciones culturales, etc. como colectivos que... han contribuido a que permaneciera viva la llama de lo jondo",
+        "target": "peñas, federaciones, and cultural collectives",
+        "rationale": "The passage credits flamenco community organizations with sustaining lo jondo, giving them community-based authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "la función de preservarlo debe de corresponder a toda la sociedad en su conjunto",
+        "target": "flamenco as a cultural practice requiring preservation",
+        "rationale": "The editorial frames flamenco preservation as a collective public responsibility, a safeguarding discourse."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la reciente constitución de la Fundación Andaluza de Flamenco... Junta de Andalucía, Diputación de Cádiz, Ayuntamiento de Jerez y Caja de Ahorros de Jerez",
+        "target": "Fundación Andaluza de Flamenco",
+        "rationale": "The passage legitimates flamenco support through a newly constituted foundation backed by public institutions and organized peñas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The references to mercaderes and commercial or spurious threats suggest anti-commercial authenticity, but the stronger discourse function is institutional safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase cultura genuinamente andaluza gives rooted value to lo jondo, but the passage mainly develops preservation and institutional coordination rather than tradition-continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "the Fundación Andaluza de Flamenco and collective/institutional preservation of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-05-4-left-jaleos-para-juana-la-del-revuelo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Baile que al triste lo anima... reina de la flamencura",
+        "target": "Juana la del Revuelo's baile",
+        "rationale": "The poem explicitly praises Juana's dance and flamenco presence, though in lyrical rather than review prose."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el replante que levanta tu compás y tu jondura",
+        "target": "Juana la del Revuelo's flamenco quality",
+        "rationale": "The praise applies flamenco aesthetic criteria, especially compás and jondura, to characterize her value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem mentions raza and Triana, but these function as lyrical imagery rather than a clear identity-based authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juana la del Revuelo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The evaluative codes are medium confidence because the article is a poem, but the praise is direct and flamenco-specific."
+  },
+  {
+    "article_id": "1986-05-4-right-a-cotaciones-a-un-proceso",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "quienes no tienen la capacidad, la formación y la objetividad imprescindibles para descubrir... las verdaderas intenciones",
+        "target": "participants in the antigitanismo debate",
+        "rationale": "The author frames interpretive authority as dependent on capacity, training, and objectivity, policing who can judge the debate."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "dejar abiertas unas heridas, entre gitanos y no gitanos, que desde hace mucho tiempo debieron quedar cicatrizadas",
+        "target": "relations between gitanos and no gitanos",
+        "rationale": "The passage organizes the controversy around identity-group relations and representation of gitanos versus non-gitanos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The trigger term título appears, but the passage does not discuss learning, access, or institutional pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article discusses collective memory and historical harm, but the visible excerpt does not clearly frame this as heritage safeguarding or public cultural value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Barrios's response to Leblón and the framing of antigitanismo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Coded cautiously because the visible excerpt is chiefly a polemic on gitano history and representation rather than a direct flamenco-performance discussion."
+  },
+  {
+    "article_id": "1986-05-6-left-pintor-de-guitarras",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as cante grande, soleá, and compás appear, but they are used poetically rather than as evaluative criteria for a flamenco performance or artist."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

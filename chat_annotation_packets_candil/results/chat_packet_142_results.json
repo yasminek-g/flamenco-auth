@@ -1,0 +1,234 @@
+[
+  {
+    "article_id": "1986-11-22-right-iscografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "acogemos este primer larga duración de una trianera de oro que justifica, apodicticamente, aquello de que cantar gitano es siempre señal de buen cante",
+        "target": "Juana la del Revuelo and her recording",
+        "rationale": "The review explicitly authorizes Juana's flamenco value through a claim that gitano singing is a sign of good cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una primera entrega que, en base al delirio rítmico y a la lujosa flamenquería de Juana, ha conseguido ser el disco más vendido del pasado año",
+        "target": "Juana la del Revuelo's first LP",
+        "rationale": "The passage evaluates the record positively through praise of its rhythm, flamenquería, and success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "teoriza armónicamente sobre el compás y el ritmo, domina los entresijos de los tangos",
+        "target": "Juana la del Revuelo's singing",
+        "rationale": "The review applies aesthetic criteria such as compás, rhythm, and command of tangos to judge flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "el desahogo turbado de toda una gitanería oprimida y aún marginada",
+        "target": "Juana la del Revuelo's cante and gitano identity",
+        "rationale": "The review frames the cante through gitano collective identity and marginalization, making identity central to representation and authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase 'alguna concesión mercantil' hints at commercial compromise, but the passage does not develop commerciality as an authenticity threat strongly enough for a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Juana la del Revuelo and her recording",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-11-23-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Consejería de Cultura de la Junta de Andalucía (Asesoría de Flamenco), nos remite relación de los distintos Consejos que configuran la FUNDACION ANDALUZA DE FLAMENCO",
+        "target": "Fundación Andaluza de Flamenco",
+        "rationale": "The passage presents flamenco governance through official cultural institutions and advisory councils, giving institutional form to authorized flamenco management."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The university publications and contest rules circulate flamenco knowledge, but the text is mainly administrative notice rather than evaluative learning or access discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and federations are mentioned, but mostly as administrative entities and funding recipients, not as community authorities judging or sustaining flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "institutional organization of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-11-23-right-ia-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only an author byline is visible, so there is insufficient context for discourse coding."
+  },
+  {
+    "article_id": "1987-01-3-right-flamenco-92",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los contenidos jondos ceden la vez a montajes esperpénticos, y así los signos que identifican al Flamenco, la liturgia de este arte, es centro de ludibrio y escarnio para innúmeros payasos andaluzados",
+        "target": "distorted public representations of flamenco",
+        "rationale": "The editorial excludes grotesque staged distortions and mockery as improper treatments of flamenco's identifying signs."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sería injusto ignorar los esfuerzos de toda índole realizados por la suprema institución andaluza, motivando, subvencionando, incentivando, promoviendo estructuras de coordinación",
+        "target": "Andalusian institutional support for flamenco",
+        "rationale": "The passage legitimates flamenco dignification through official institutional funding, coordination, and cultural policy action."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Es necesario que este pueblo someta a la consideración de propios y foráneos su hermoso y único patrimonio cultural.",
+        "target": "flamenco as Andalusian cultural patrimony",
+        "rationale": "The editorial explicitly frames flamenco as a unique cultural patrimony to be presented publicly to insiders and outsiders."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "instituciones, peñas, federaciones, confederación, otros colectivos culturales y en general la afición, se esfuercen por consolidar esa vía que conduce hacia la dignificación plena del Flamenco",
+        "target": "flamenco institutions, peñas, and afición",
+        "rationale": "The passage assigns responsibility for flamenco dignification to peñas, federations, cultural collectives, and the afición as sustaining community actors."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial polices improper flamenco representations, but the same evidence is more directly captured as purity boundary work under AUTH_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "community"
+      ],
+      "target": "flamenco's public dignity and representation for 1992",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-01-4-right-reflexiones-ante-la-revoluci-n-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la lección más cabal y edificante de los doscientos años de cante gitano-andaluz",
+        "target": "Antonio Mairena and mairenismo",
+        "rationale": "The passage canonizes Mairena by ranking his legacy as the most complete and edifying lesson in two centuries of gitano-Andalusian cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el mairenismo, su magna obra, permanece vivo e inmortal en el indeleble recuerdo de la afición y en la memoria de los cantaores contemporáneos",
+        "target": "mairenismo as continuing flamenco tradition",
+        "rationale": "The text grounds Mairena's authority in continuity, survival, and living memory among aficionados and contemporary singers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "todos los cantaores pueden asumir la condición de herederos legítimos de un gitano universal y andaluz, cien por cien, Antonio Mairena",
+        "target": "Mairena's gitano-Andalusian legacy and its heirs",
+        "rationale": "The passage frames flamenco inheritance through gitano and Andalusian identity, defining who inherits and represents the tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "la más genuina, la general, la más aborigen ahora, la más antigua de esta tierra",
+        "target": "Mairena's voice as collective flamenco voice",
+        "rationale": "The closing quotation attributes genuineness, aboriginal rootedness, and antiquity to Mairena's representative voice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'labor didáctica y hermenéutica' suggests pedagogical authority, but the visible excerpt does not develop a concrete teaching method or actor enough for a separate emitted code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity",
+        "community"
+      ],
+      "target": "Antonio Mairena and mairenismo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains sufficient evaluative and legitimating discourse for conservative coding."
+  }
+]

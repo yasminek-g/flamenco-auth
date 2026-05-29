@@ -1,0 +1,228 @@
+[
+  {
+    "article_id": "1987-03-31-left-sangre-entera-volcada-o-el-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el cante —nuestro signo de ser pueblo-raíz o cumbre de una expresión antigua",
+        "target": "el cante de Fosforito / cante flamenco",
+        "rationale": "The poem grounds the value of the cante in collective rootedness, origins, and an ancient expressive continuity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses aesthetic language such as 'hondo' and 'grito', but it is too metaphorical to function clearly as a criterion-based evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition"
+      ],
+      "target": "el cante de Fosforito / cante flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text; coded only where roots/origin language clearly authorizes the cante."
+  },
+  {
+    "article_id": "1987-03-31-right-la-2-distinci-n-compas-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "barajábamos los términos de las bases: pureza, profesionalidad, constancia, nuevos matices cantaores, labor de difusión del cante",
+        "target": "Fosforito as recipient of the Compás del Cante",
+        "rationale": "The passage explicitly lists aesthetic and professional criteria used to judge flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el jurado que otorga la distinción del «Compás del cante»... Fosforito era su ganador por práctica unanimidad de los aficionados",
+        "target": "jury and aficionados conferring the Compás del Cante",
+        "rationale": "A jury and group of aficionados are positioned as authorized evaluators who confer recognition through a critical award."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el jurado, que acertó plenamente; la entidad organizadora, que se prestigió más si cabe en su noble empeño a favor de nuestro arte",
+        "target": "the award decision in favor of Fosforito",
+        "rationale": "The author explicitly evaluates the award decision as correct and valuable for flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The award is institutional, but the passage frames it mainly as critical recognition rather than heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito and the Compás del Cante award",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-03-32-left-de-el-tambien-se-ha-dicho",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "se ha convertido andando el tiempo en el maestro flamenco, en el nuevo maestro del cante andaluz... hacen de Fosforito la figura actual",
+        "target": "Fosforito",
+        "rationale": "The quoted assessment canonizes Fosforito as the current central master and figure of cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "fuente donde tiene que beber el que quiera permanecer puro",
+        "target": "Fosforito as source for pure flamenco",
+        "rationale": "The passage uses purity language to make Fosforito a source for maintaining legitimate flamenco purity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Dotado de un prodigioso sentido musical, jamás comete un fallo",
+        "target": "Fosforito's cante",
+        "rationale": "Musical sense and faultless execution are applied as criteria of artistic quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The mention of a family in flamenco for several generations suggests lineage, but the visible quote does not clearly frame transmission as authorizing knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Fosforito",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article compiles quotations; codes are based only on visible quoted judgments."
+  },
+  {
+    "article_id": "1987-03-33-left-poemas-a-fosforito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Ese cante es cante grande, puro y jondo por derecho... Cante de verdad",
+        "target": "Fosforito's cante / cante grande",
+        "rationale": "The poem explicitly presents the cante as true, pure, and properly jondo, authorizing it as genuine flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Tiene voz de tribu errante, raíces, sonidos negros, duendes sueltos por la sangre",
+        "target": "Fosforito's voice and cante",
+        "rationale": "The passage invokes roots, black sounds, and duende as aesthetic markers of flamenco depth and quality."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Tú, Córdoba, has marcado un nuevo hito porque has reconocido con decoro el arte de tu hijo, «Fosforito»",
+        "target": "Córdoba's recognition of Fosforito",
+        "rationale": "The poem frames civic recognition by Córdoba as a public act that valorizes Fosforito's art."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "heritage"
+      ],
+      "target": "Fosforito's cante and public recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although poetic, the authenticity and civic-recognition claims are explicit enough to code."
+  },
+  {
+    "article_id": "1987-03-34-right-los-escritos-de-fosforito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Después del maestro está el gran vacío (en cierto modo lógico), después, los demás.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage constructs a sharp hierarchy with Mairena above all others in the flamenco field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "no todo el trigo está tan limpio como pretende aparentar... a muchos «se les ve el plumero» de la vanidad, el afán de protagonismo",
+        "target": "inauthentic or self-serving Mairena homages",
+        "rationale": "The author uses critical discourse to police the boundary between sincere homage and self-serving public display."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El gran maestro en todos los cantes Antonio Mairena, a estas alturas no es un artista criticable ni discutible.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage explicitly evaluates Mairena's artistic status as beyond criticism or dispute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word 'Maestro' is used as an honorific for artistic status, not as evidence of teaching or pedagogical authority in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio Mairena and public homage practices",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is partly about Mairena rather than Fosforito; annotations follow the visible discourse target."
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "article_id": "1980-03-14-left-una-revista-flamenca-sevilla-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "«Sevilla Flamenca», a través de sus dieciséis páginas, se nos viene como una publicación sencilla —¿qué revista en sus orígenes no lo fue?—, amena y directa",
+        "target": "la revista «Sevilla Flamenca»",
+        "rationale": "The passage explicitly reviews and evaluates the new publication's quality, tone, and usefulness."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "claramente, a nuestro juicio, se desdoblan en información y divulgación de temas jondos",
+        "target": "la función divulgadora de «Sevilla Flamenca»",
+        "rationale": "The magazine is framed as a mediator of flamenco knowledge through information, divulgation, bibliography, questions, and aficionado-oriented learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "ha cumplido su objetivo de ser boletín de las peñas sevillanas",
+        "target": "las peñas sevillanas y su órgano informativo",
+        "rationale": "The review treats peñas as the community base whose voice, dialogue, and activity the magazine should sustain and represent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase \"auténtico son flamenco\" is authenticity language, but it appears briefly in a bibliographic section and does not carry enough independent discourse function."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article is a review, but the stronger coding is general critical evaluation rather than explicit critic/expert authority or boundary policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "«Sevilla Flamenca» as a peña-based flamenco periodical",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-03-15-left-pepe-de-la-matrona-ya-en-la-memo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "voz de ayer, de hoy y de siempre",
+        "target": "Pepe de la Matrona",
+        "rationale": "The obituary canonizes Pepe de la Matrona by placing his voice beyond the present and giving him enduring exemplary status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "cantando y cantando por derecho, sin trampas",
+        "target": "Pepe de la Matrona's cante",
+        "rationale": "The passage defines the legitimacy of his singing through a purity boundary: proper cante is 'por derecho' and without tricks."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "con duende, con aplomo, mandando, con compás, sin cruzarse, sin falsos respiros, ligando",
+        "target": "Pepe de la Matrona's performance style",
+        "rationale": "The passage applies concrete aesthetic criteria such as duende, compás, control, and phrasing to evaluate flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The obituary is commemorative, but it does not clearly frame memory as public heritage, safeguarding, or community heritage work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Continuity is implied by 'ayer, de hoy y de siempre', but the stronger function is canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Pepe de la Matrona and his cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-03-15-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "vamos a elegir a los más sobresalientes",
+        "target": "selected historical flamenco interpreters",
+        "rationale": "The article explicitly constructs a hierarchy by selecting the most outstanding figures from a broader group."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Por fortuna, los cantes del señor Manuel Cagancho (sobre todo las siguiriyas), han llegado hasta nuestros días en las voces de Tomás Pavón, Juan Talega, Pastora Pavón, Antonio Mairena y Pepe Pinto",
+        "target": "Manuel Cagancho's cantes",
+        "rationale": "The passage values the survival and continuity of Cagancho's repertoire through later voices."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions later voices and oral tradition, but the visible excerpt does not clearly describe a learning or embodied transmission process."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Ethnic identity terms appear, but they are mainly descriptive and do not clearly organize authority or belonging in the visible passage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Manuel Cagancho and selected historical flamenco interpreters",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-03-16-left-enrique-el-mellizo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Enrique el Mellizo está considerado como uno de los más cualificados intérpretes por todos los estilos",
+        "target": "Enrique el Mellizo",
+        "rationale": "The article places Enrique el Mellizo in a high canonical rank among interpreters across styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "se convirtió en el maestro de una escuela cantaora, que tantos y tan excelentes discípulos tuvo",
+        "target": "Enrique el Mellizo's cantaora school and disciples",
+        "rationale": "The passage frames flamenco knowledge and style as transmitted through a master, school, and disciples."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "para hacerse una idea del son y del dramatismo de la malagueña de Enrique el Mellizo, no hay más camino que oír la grabación realizada por su discípulo, el maestro Aurelio Sellé",
+        "target": "la malagueña de Enrique el Mellizo",
+        "rationale": "The passage uses aesthetic criteria such as son and dramatism to judge how the malagueña should be understood and heard."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article emphasizes what remains perdurable, but continuity is already captured through canon and lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is explicit evaluation throughout, but the more specific hierarchy and aesthetic-criteria codes capture the main discourse functions."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Enrique el Mellizo and his school of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-05-4-right-los-festivales-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "este intento de realizar socialmente el flamenco dio como consecuencia unos resultados rotundamente negativos en su valoración artística",
+        "target": "la difusión pública/espectacular del flamenco",
+        "rationale": "The passage frames public staging and spectacle as damaging to flamenco's artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una nueva corrupción de nuestro arte no exenta, por cierto, de las más variadas corruptelas",
+        "target": "los festivales flamencos",
+        "rationale": "The article uses critical discourse to police a boundary around proper flamenco by condemning the festival system as corrupting the art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "estos festivales deberían ser sólo para propagar el buen flamenco, todo el flamenco, y no como la experiencia demuestra un producto recortado, cuando no pan-deretero y amorfo",
+        "target": "festival flamenco repertoire and presentation",
+        "rationale": "The passage draws a boundary between 'buen flamenco' and an illegitimate, reduced, panderetero, amorphous festival product."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text is strongly evaluative, but CRIT_04 captures the more specific boundary-policing critique."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call for collective responsibility and action is strong, but it is framed as artistic and authenticity protection rather than explicit heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "contemporary flamenco festivals and public spectacular diffusion",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains sufficient explicit boundary and evaluative discourse for coding."
+  }
+]

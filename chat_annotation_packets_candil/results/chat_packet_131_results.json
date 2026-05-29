@@ -1,0 +1,270 @@
+[
+  {
+    "article_id": "1986-05-11-right-cr-nica-del-xi-concurso-nacional",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Con más pena que gloria finalizaba... el XI Concurso Nacional de Arte Flamenco de Córdoba. Las expectativas... no se han visto reflejadas en las gargantas de los finalistas, el veredicto del jurado tan sólo ha convencido a los familiares de los artistas",
+        "target": "XI Concurso Nacional de Arte Flamenco de Córdoba",
+        "rationale": "The passage explicitly evaluates the contest, finalists, jury verdict, and organization as disappointing and poorly handled."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Córdoba valedora insobornable de la pureza de lo jondo",
+        "target": "Córdoba as guardian of jondo purity",
+        "rationale": "The text legitimates Córdoba through its role as defender of the purity of lo jondo, invoking purity as a boundary of flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "por encima de todo, en la exquisita afición cordobesa que una vez más volvió a brillar con luz propia",
+        "target": "Córdoba's flamenco afición",
+        "rationale": "The local afición is presented as a knowledgeable community whose presence sustains and validates the event despite institutional failures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'visto y escuchado' refers to critical observation of contest phases, not oral or embodied transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article discusses prizes and awards, but the visible excerpt does not clearly construct a canon or durable hierarchy beyond contest results."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "community"
+      ],
+      "target": "the Córdoba contest, its institutions, and Córdoba's afición",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible critique and community/purity claims are sufficient for these codes."
+  },
+  {
+    "article_id": "1986-05-13-left-aunque-no-quepa-en-el-papel-poes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Amplio y complejo estudio... casi cuatrocientas páginas de apretado texto... un enorme esfuerzo realizado por una persona seria, cualificada y apasionada por el tema",
+        "target": "María del Carmen García Tejera's study of Antonio Murciano's flamenco poetry",
+        "rationale": "The passage reviews and evaluates the study's scope, complexity, seriousness, and scholarly quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "profesionales universitarios que... han tenido el buen gusto de dedicar una parte de sus esfuerzos investigadores a este diverso y poco conocido mundo del flamenco",
+        "target": "university research on flamenco",
+        "rationale": "Flamenco knowledge is mediated through university scholarship and formal academic analysis, making institutional access to flamenco knowledge meaningful."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "han quedado registrados los cantes... Han dejado constancia de su arte, de su saber flamenco, de expresiones ya perdidas... para que nuestra juventud flamenca se empape de ellas y pueda beber de las fuentes",
+        "target": "recorded cantes and flamenco knowledge of 'Los últimos de la Fiesta'",
+        "rationale": "The recording is framed as safeguarding endangered expressions and transmitting living flamenco knowledge to younger generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The professor's qualification is praised, but the stronger visible function is review/evaluation of the study rather than explicit expert boundary-setting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The final passage implies intergenerational transmission, but the emphasis is on preservation through recording rather than oral, embodied, or lineage-based learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "academic and recorded mediation of flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The ending context appears to shift to recorded cantes; it is still visible review text and is annotated conservatively."
+  },
+  {
+    "article_id": "1986-05-15-left-cuchillo-un-extra-o-significado-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "puede condensarse la fuerza expresiva del Cante Flamenco... matarnos o herirnos en el alma con el cuchillo de la emoción incontrolada del duende",
+        "target": "Cante Flamenco",
+        "rationale": "The passage defines flamenco value through expressive force, emotional wound, and duende as aesthetic criteria."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el compromiso de reavivar constantemente las excelencias de un arte incomparable",
+        "target": "flamenco as an art form",
+        "rationale": "The article explicitly praises flamenco as an incomparable art whose excellence leaves a lasting mark on the aficionado."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses the historical meaning of the word 'flamenco', but this is primarily etymological rather than a tradition or roots claim authorizing present flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article cites books and investigators, but it does not frame institutional learning, access, or pedagogy as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Cante Flamenco and flamenco expressive force",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-05-15-right-chismolog-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la Cataluña flamenca en su esencia y sede de la novena provincia andaluza, la de los hermanos de la diaspora",
+        "target": "Catalan flamenco community and Andalusian diaspora",
+        "rationale": "The passage frames flamenco belonging through regional and diasporic identity, positioning Catalonia as an Andalusian-flamenco community space."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Madrid sigue siendo el enemigo público número uno del flamenco... Con Televisión Española, Atila destructor, a la cabeza",
+        "target": "Madrid-based radio and television institutions",
+        "rationale": "The text sharply criticizes media institutions as harmful to flamenco and evaluates their conduct in explicitly negative terms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "se han cargado el programa de Radiocadena Flamenca, el intento más serio y transcendente hasta ahora puesto al servicio de la afición mayoritaria andaluza",
+        "target": "the cancellation of Radiocadena Flamenca",
+        "rationale": "The critique uses an authoritative evaluative voice to defend a serious flamenco mediation project and condemn institutional decisions that damage flamenco access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The mention of a professor's volume indicates scholarly work, but the excerpt does not develop learning or institutional access enough for a separate pedagogy code."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The 'afición mayoritaria andaluza' is named as a public served by radio, but it is not clearly granted authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "diasporic flamenco belonging and media institutions",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; codes rely only on visible identity framing and media critique."
+  },
+  {
+    "article_id": "1986-05-16-right-el-villancico-y-la-saeta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Literariamente considerado nace, pues, el villancico en las postrimerías de la Edad Media... La aparición de la saeta se hace necesariamente posterior... nació y vive en España y casi circunscrita a Andalucía",
+        "target": "the saeta's historical and Andalusian grounding",
+        "rationale": "The article grounds the saeta's flamenco value in historical development, origin, and regional continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Así como el villancico es risa y alegría... la saeta es tristeza y suspiro... Suspiro que brota hondo... El villancico es bullicioso, liviano y casi inconsciente; la saeta es personal, densa y experimentada",
+        "target": "the saeta in contrast with the villancico",
+        "rationale": "The passage defines flamenco value through aesthetic criteria of depth, density, emotional seriousness, and expressive intensity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no dudamos en considerar la saeta... como uno de los motivos mimados, predilectos del cante flamenco",
+        "target": "the saeta within flamenco repertoire",
+        "rationale": "The passage places the saeta in a privileged position within flamenco repertoire, constructing a hierarchy of valued forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article discusses folklore and national/regional culture, but it does not frame the saeta as public heritage or patrimony."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article legitimates the saeta through origin and aesthetics, but it does not explicitly claim authenticity or proper flamenco in the stricter sense."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the saeta as a valued flamenco form",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

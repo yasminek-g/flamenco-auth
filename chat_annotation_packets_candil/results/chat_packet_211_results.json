@@ -1,0 +1,240 @@
+[
+    {
+        "article_id": "1990-03-24-left-noticiario-flamenco",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "high",
+                "evidence_quote": "Kiki de Castilblanco, cantaor aficionado de gran autenticidad y sabidur\u00eda jonda en la interpretaci\u00f3n de los cantes de M\u00e1laga y Huelva",
+                "target": "Kiki de Castilblanco as a flamenco singer/interpreter",
+                "rationale": "The passage explicitly attributes authenticity and jondo knowledge to the singer's flamenco interpretation."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "high",
+                "evidence_quote": "las principales caracter\u00edsticas que hacen del cante flamenco una de las manifestaciones m\u00e1s originales del patrimonio po\u00e9tico oral actual",
+                "target": "cante flamenco",
+                "rationale": "The passage frames flamenco song as part of current oral poetic patrimony, assigning it public cultural heritage value."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Sabicas cre\u00f3 escuela y de \u00e9l bebieron todos los grandes maestros de hoy... el compositor m\u00e1s sabio y m\u00e1s importante de la historia de la guitarra flamenca",
+                "target": "Sabicas",
+                "rationale": "The passage canonizes Sabicas through school formation, influence on later masters, and superlative ranking in flamenco guitar history."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The conference explains flamenco characteristics, but the excerpt does not clearly position the speaker as pedagogically authoritative beyond reporting a talk."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "authenticity",
+                "heritage",
+                "criticism"
+            ],
+            "target": "Kiki de Castilblanco, cante flamenco, and Sabicas",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article is truncated; codes rely only on visible beginning, evidence window, and ending text."
+    },
+    {
+        "article_id": "1990-05-3-right-editorial",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "lo jondo ocupa en el elenco de bienes culturales que han de ser tutelados",
+                "target": "lo jondo / flamenco",
+                "rationale": "The editorial frames jondo as a cultural good requiring official tutelage, invoking authorized public heritage management."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "high",
+                "evidence_quote": "no s\u00f3lo se mantendr\u00e1n los mecanismos de profundizaci\u00f3n ya implantados, sino que se incentivar\u00e1n y desarrollar\u00e1n nuevas formas de tutelar el jondo y m\u00e1gico legado recibido",
+                "target": "jondo as inherited cultural legacy",
+                "rationale": "The passage calls for maintaining, expanding, and safeguarding flamenco as a received legacy."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "justifican un juicio positivo de la pol\u00edtica cultural del extinto equipo de Gobierno, aparte singulares y aislados desprop\u00f3sitos que tambi\u00e9n los ha habido",
+                "target": "Andalusian government cultural policy toward flamenco",
+                "rationale": "The passage explicitly evaluates the quality of flamenco cultural policy, giving it a positive judgment while noting some failures."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The phrase 'legado recibido' suggests inheritance, but the stronger discourse function is heritage safeguarding rather than tradition-continuity authorization."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "public institutional protection of flamenco/jondo",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Institutional heritage framing is explicit and central to the editorial."
+    },
+    {
+        "article_id": "1990-05-4-left-la-lealtad-y-la-amistad-en-paco-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "lo mucho que fuiste y representaste en defensa del arte al que tanto decimos querer",
+                "target": "Paco Vallecillo",
+                "rationale": "The tribute evaluates Paco Vallecillo positively as someone who represented and defended flamenco art."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "he tenido que asistir y soportar cr\u00edticas que se hac\u00edan a nuestro amigo del todo injustificables... para conocimiento de cuantos le adjudicaron un anti-marchenismo que nunca sinti\u00f3",
+                "target": "criticisms of Paco Vallecillo's flamenco commitments",
+                "rationale": "The passage contests prior critical judgments and polices the fairness of public claims about his flamenco position."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The 'semilla' and future fruits metaphor suggests legacy, but it is chiefly moral tribute rather than flamenco tradition-continuity discourse."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The author invokes those who knew him, but this does not clearly grant community authority to recognize or judge flamenco."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Paco Vallecillo's role and reputation in flamenco",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Most of the article is personal memorial discourse; only passages tied to flamenco reputation and criticism were coded."
+    },
+    {
+        "article_id": "1990-05-4-right-jos-n-ez-de-castro-g-mez",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "Fue un gran conocedor y un profundo estudioso. Gran parte de su vida la dedic\u00f3 a esta noble y sana tarea de la investigaci\u00f3n del arte flamenco",
+                "target": "Paco Vallecillo as flamenco researcher and expert",
+                "rationale": "The passage grants him expert authority as a knowledgeable scholar of flamenco research."
+            },
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "high",
+                "evidence_quote": "destacaban sus sapiencias y grandes conocimientos sobre estos atractivos temas, convirti\u00e9ndose sus intervenciones y exposiciones en verdaderas lecciones magistrales",
+                "target": "Paco Vallecillo's talks and interventions",
+                "rationale": "His interventions are explicitly framed as authoritative lessons transmitting flamenco knowledge."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "medium",
+                "evidence_quote": "al frente, durante a\u00f1os, de la Asesor\u00eda de Actividades Flamencas de la Consejer\u00eda de Cultura de la Junta de Andaluc\u00eda. A trav\u00e9s de estos estamentos, llev\u00f3 a cabo una labor encomiable",
+                "target": "Paco Vallecillo's institutional flamenco work",
+                "rationale": "The passage valorizes flamenco activity carried out through official and institutional cultural bodies."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Paco fue un hombre puntal en todo lo concerniente al flamenco",
+                "target": "Paco Vallecillo",
+                "rationale": "The passage elevates him to a foundational or exemplary status within the flamenco field."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The 'resonante eco entre los aficionados' phrase mentions aficionados, but it does not clearly make them an authorizing community."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "Discography and institutions may support transmission, but the excerpt does not explicitly frame them as safeguarding or living heritage."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "pedagogy",
+                "heritage"
+            ],
+            "target": "Paco Vallecillo's flamenco authority and institutional legacy",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article is a tribute that repeatedly legitimates Vallecillo as expert, teacher, institutional actor, and key figure."
+    },
+    {
+        "article_id": "1990-05-5-right-se-ora-madre-polluelas",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The phrase 'en la intimidad de mi familia' is personal remembrance, not a value-bearing public/private flamenco setting."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "The closing mention of singing and 'cante' is evocative but does not apply an aesthetic criterion to judge flamenco quality."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Visible text is a poetic personal tribute with no clear flamenco discourse function beyond a brief mention of singing."
+    }
+]

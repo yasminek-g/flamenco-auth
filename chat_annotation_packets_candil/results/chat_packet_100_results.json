@@ -1,0 +1,225 @@
+[
+  {
+    "article_id": "1984-09-14-left-apunte-an-nimo",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The martinete and siguiriya imagery is aesthetically charged, but the text is literary description rather than a clear evaluative criterion for flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic prose with flamenco imagery; no clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "1984-09-14-right-ellos-los-protagonistas-dicen-jo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "pertenezco a la familia de los «Sotos»... a mí me tiraba el flamenco",
+        "target": "José Mercé's flamenco formation",
+        "rationale": "The passage frames flamenco inclination and formation through family lineage and inherited proximity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "todo el cantaor que empieza debería hacer su aprendizaje cantando para bailar",
+        "target": "learning to sing through singing for dance",
+        "rationale": "Mercé explicitly defines singing for dance as a necessary learning stage that gives experience, rhythm, and compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el Sernita... el más largo y el de más conocimiento... siempre se hablaba de Terremoto",
+        "target": "Sernita de Jerez in comparison with Terremoto",
+        "rationale": "The passage ranks Sernita as the most extensive and knowledgeable postwar Jerez singer while contrasting him with the better-known Terremoto."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Tablao and stage contexts are mentioned, but the clearest discourse function is apprenticeship through singing for dance, not a public/private setting contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "José Mercé's formation and judgments about Jerez singers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only clear lineage, learning, and ranking claims visible in the excerpt."
+  },
+  {
+    "article_id": "1984-09-17-left-ponencias-del-congreso-de-cacere",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Parrilla estuvo sobresaliente en su exposición y ejecución... estos señores nos defraudaron: Larguísima y espesa la teoría del primero; altamente idolatra a su Jerez, la del segundo, y graciosa, pero ajena a los cantes de Cádiz, la del tercero.",
+        "target": "the congress presentations and presenters",
+        "rationale": "The author gives explicit praise and blame of the presentations, judging their quality, relevance, and effectiveness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Si tocar gitano es tocar cabal... ello significa que los gitanos se arrogan un montón de cualidades como patrimonio gitano. Naturalmente, esto no lo comparto",
+        "target": "the claim that 'tocar gitano' uniquely defines cabal or perfect playing",
+        "rationale": "The passage uses critical argument to contest an identity-based boundary claim about proper guitar playing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "No te avergüences de la pereza de los aficionados gaditanos en la continuidad de su viejo patrimonio... Cádiz guarda similitud con un enorme Golfo Pérsico, que siempre exportó los crudos a toda la España flamenca.",
+        "target": "Cádiz and Los Puertos as sources of flamenco forms",
+        "rationale": "The author grounds Cádiz's flamenco authority in continuity, old patrimony, and source-like contribution to wider flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'viejo patrimonio' appears, but the passage functions more as roots/continuity and regional authority than public heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "congress discourse and Cádiz's role in flamenco history",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-09-18-left-encuesta-realizada-en-el-congres",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se les arroga la sapiencia sin fallos y ellos son unos estudiosos como muchos de los que estamos aquí sentados",
+        "target": "the authority granted to congress speakers",
+        "rationale": "The passage contests expert authority at the congress and argues against treating presenters as infallible."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "los flamencos venimos a hacer hermandad, a acortar distancia, a abrazarnos... cambiamos impresiones con ellos",
+        "target": "flamenco congresses as community gatherings",
+        "rationale": "The passage defines congresses as spaces of flamenco brotherhood, exchange, and community belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "estamos tratando sobre una cosa que es lo que nos gusta, que es defender, por encima de todo, la pureza del arte flamenco",
+        "target": "the purity of flamenco art",
+        "rationale": "The passage explicitly frames the congresses' purpose as defending flamenco purity, drawing a boundary around proper flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The complaint that twenty soleareros were ignored implies canon correction, but the visible evidence is better captured as expert-authority critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "flamenco congress authority and the purity of flamenco art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated survey; coded only visible claims about expert authority, community function, and purity defense."
+  },
+  {
+    "article_id": "1984-09-20-left-conversaci-n-con-pi-ana-padre-ma",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Antonio Piñana padre... es un pozo de saber en todo lo que concierne al arte flamenco en general, y por ello... nos ha esclarecido cualquier punto oscuro y dudoso",
+        "target": "Antonio Piñana padre",
+        "rationale": "Piñana is positioned as an authoritative source able to clarify flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "dentro del cante flamenco, con su inconfundible voz y estilo, ha creado cátedra... su figura ha traspasado... la frontera del más allá del flamenco",
+        "target": "Antonio Piñana padre",
+        "rationale": "The passage canonizes Piñana by presenting him as a foundational, school-making figure beyond ordinary flamenco status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "viví, por tradición familiar, el cante y la guitarra, ya que mi padre y mi abuelo cantaban y tocaban la guitarra",
+        "target": "Piñana's early flamenco formation",
+        "rationale": "The passage frames his initiation into flamenco through family tradition and intergenerational transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The recovery of lost cantes is visible, but the excerpt does not clearly frame it as public safeguarding or heritage policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Antonio Piñana padre and the cantes mineros of Cartagena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; the final curriculum-like list was not coded because it lacks visible interpretive context."
+  }
+]

@@ -1,0 +1,252 @@
+[
+    {
+        "article_id": "1991-07-9-right-de-pregones-y-fandangos-malague-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "una M\u00e1laga muy tradicional en sus costumbres... Estos vendedores pregonaban su mercanc\u00eda... con un estilo muy peculiar, posiblemente derivado de los antiguos fandangos \u00ababandolaos\u00bb, descendientes directos de los ancestrales \u00abverdiales\u00bb",
+                "target": "pregones y fandangos malague\u00f1os",
+                "rationale": "The passage grounds the value and identity of the pregones/fandangos in old M\u00e1laga, tradition, ancestry, and continuity from verdiales to abandolaos."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "nacieron las mal llamadas \u00abMalague\u00f1as de Juan Breva\u00bb que en realidad deben ser llamados \u00abCantes de Juan Breva\u00bb",
+                "target": "naming of Juan Breva's cantes",
+                "rationale": "The author exercises corrective classificatory authority by rejecting one label as wrongly used and prescribing the proper name."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "The text mentions voice and style, but the visible passage mostly traces origins and nomenclature rather than applying aesthetic criteria to judge performance quality."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "tradition",
+                "criticism"
+            ],
+            "target": "Malague\u00f1o pregones, bandol\u00e1s, and Juan Breva repertoire",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1991-07-12-left-luis-el-de-la-venta-premiado-en-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "Gracias a las repercusiones del m\u00edtico concurso cordob\u00e9s... las clases de Merengue de C\u00f3rdoba y Rafael Mu\u00f1oz \u00abTomate\u00bb, las del catedr\u00e1tico de guitarra flamenca del Conservatorio Superior de C\u00f3rdoba... los cursos internacionales del centro Paco Pe\u00f1a",
+                "target": "C\u00f3rdoba's flamenco guitar training ecosystem",
+                "rationale": "The passage presents contests, classes, conservatory teaching, and international courses as institutional mechanisms producing flamenco guitar knowledge and access."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "est\u00e1 saliendo de la ciudad califal una de las generaciones de guitarristas m\u00e1s importantes de la historia flamenca",
+                "target": "Cordoban flamenco guitar generation",
+                "rationale": "The passage canonizes a generation by ranking it among the most important in flamenco history."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Vicente Amigo demostr\u00f3 con su derroche de sensibilidad, comp\u00e1s e ideas originales, que las posibilidades de la guitarra flamenca son infinitas",
+                "target": "Vicente Amigo's guitar performance",
+                "rationale": "The sentence explicitly evaluates the performance through praise of sensitivity, comp\u00e1s, originality, and expansive artistic possibility."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "Luis pertenece a la escasa n\u00f3mina de aficionados que tenemos en Almer\u00eda... sin contar con el apoyo inicial de pe\u00f1as, instituciones o de la Federaci\u00f3n Provincial de Pe\u00f1as",
+                "target": "Luis \u00abEl de la Venta\u00bb and Almer\u00eda flamenco community",
+                "rationale": "The passage frames Luis through local afici\u00f3n and criticizes the lack of pe\u00f1a and institutional support for sustaining local flamenco participants."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism",
+                "community"
+            ],
+            "target": "C\u00f3rdoba guitar culture and Luis \u00abEl de la Venta\u00bb",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1991-07-12-right-manuel-vallejo-o-el-ruise-or-fla",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Manuel Vallejo tuvo los defectos y virtudes que encarnan a toda persona, pero como artista fue perfecto",
+                "target": "Manuel Vallejo as artist",
+                "rationale": "The passage makes an explicit evaluative judgment that separates human flaws from artistic perfection."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "\u00bfpor qu\u00e9 a Vallejo no le pagamos la deuda que los puros aficionados tenemos contra\u00edda con \u00e9l? \u00bfPor qu\u00e9 no creamos una Pe\u00f1a Flamenca que lleve el nombre inmenso de Manuel Vallejo?",
+                "target": "Manuel Vallejo's canonical status",
+                "rationale": "The passage canonizes Vallejo through debt, commemorative naming, and the claim that his name is immense."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "la deuda que los puros aficionados tenemos contra\u00edda con \u00e9l... Los hijos de Sevilla tienen la palabra",
+                "target": "aficionados and Sevillian community responsibility toward Vallejo",
+                "rationale": "The passage assigns recognition and commemorative responsibility to aficionados and local Sevillian community members."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The proposed pe\u00f1a suggests memory-work, but the visible text lacks explicit heritage, safeguarding, or public-culture framing."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "Manuel Vallejo",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1991-07-14-left-homenaje-al-veterano-cantaor-mad",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "destacando tanto en su actuaci\u00f3n por Malague\u00f1as que le concedieron un trofeo",
+                "target": "Alfonso Chozas's early performance",
+                "rationale": "The passage evaluates Chozas's performance positively by linking it to distinction and a prize."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Antonio Chac\u00f3n... el viejo maestro a quien considera como el mejor de los int\u00e9rpretes que ha tenido nuestro arte flamenco",
+                "target": "Antonio Chac\u00f3n",
+                "rationale": "The passage establishes a clear hierarchy by calling Chac\u00f3n the best interpreter flamenco has had."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "medium",
+                "evidence_quote": "comenz\u00f3 a codearse con artistas de renombre, recordando con especial cari\u00f1o a Bernardo \u00abel de los Lobitos\u00bb, de quien aprendi\u00f3 grandemente",
+                "target": "Alfonso Chozas's learning from Bernardo \u00abel de los Lobitos\u00bb",
+                "rationale": "The passage frames Chozas's flamenco formation through close social contact with a recognized artist from whom he learned."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The word maestro appears for Chac\u00f3n, but in the visible passage it functions mainly as an honorific and ranking rather than a teaching authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "pedagogy"
+            ],
+            "target": "Alfonso Chozas and Antonio Chac\u00f3n",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "1991-07-15-left-la-intertextualidad-como-recurso",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "Los autores del Diccionario Enciclop\u00e9dico del Flamenco, Blas Vega y Manuel R\u00edos Ruiz, al hablar de las caracter\u00edsticas ret\u00f3ricas de la copla flamenca, nos dicen que el recurso de la intertextualidad es uno de los m\u00e1s frecuentes",
+                "target": "intertextuality in flamenco copla",
+                "rationale": "The passage relies on named flamenco scholars and a reference work to authorize a classification of flamenco copla rhetoric."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "el diminutivo resulta m\u00e1s flamenco y expresivo (ag\u00fcita, ojitos, corasonsito) y la rima impone su ley",
+                "target": "rhetorical qualities of flamenco copla",
+                "rationale": "The passage defines flamenco expressive quality through rhetorical criteria such as diminutive form and rhyme."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "el sino fatalista que atribuye a la mujer el pecado de la infidelidad est\u00e1 patente en el terceto",
+                "target": "gendered representation in flamenco copla",
+                "rationale": "The passage interprets copla meaning through a gendered framing of woman, fatalism, and infidelity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The text mentions pervivencias and traditional compositions, but the visible passage is mainly analytical rather than using tradition to authorize present flamenco value."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_01",
+                "reason": "The trigger 'fuera' appears only inside examples and discussion; it does not create an insider/outsider boundary around flamenco belonging or knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "flamenco copla rhetoric and gendered representation",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    }
+]

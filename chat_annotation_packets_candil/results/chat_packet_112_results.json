@@ -1,0 +1,241 @@
+[
+  {
+    "article_id": "1985-05-19-left-la-vieja-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la vieja del cante, se consume y se va lentamente jubilando de los falsos fastos que da el oropel",
+        "target": "la vieja del cante / cante staged through false pomp",
+        "rationale": "The passage uses strongly evaluative language to criticize the condition and theatrical framing of cante rather than merely describing it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text suggests staged falseness and vulgar presentation, but does not clearly link commercial spectacle or public staging to loss of flamenco authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique is literary and metaphorical, but no critic, expert authority, or explicit boundary-policing discourse is clearly present."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["criticism"],
+      "target": "false pomp and degraded staging around cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic OCR-damaged prose, but evaluative critique is still visible."
+  },
+  {
+    "article_id": "1985-05-21-left-d-iscografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se comprueba cierto dominio de los estilos y con el pasar del tiempo esperamos que se vaya incrementado la profesionalidad",
+        "target": "Itoli de los Palacios / Jesús Sánchez Trigueros recording",
+        "rationale": "The review explicitly assesses the singer's artistic command and future professional development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "deja constancia de saber andar por los cantes a compás... una gran entrega con matización en su voz",
+        "target": "vocal and stylistic quality in the recordings",
+        "rationale": "The reviewer applies aesthetic criteria such as compás, matización, entrega, sensitivity, and professional development to judge the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "se suma a esa serie de figuras que en su día ganaron el premio del concurso de Mairena del Alcor, instituido por el maestro, Antonio Mairena",
+        "target": "Mairena prize winners and emerging singers",
+        "rationale": "The passage places the singer within a recognized lineage of prize-winning figures associated with Antonio Mairena, creating a status hierarchy for emerging artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The word comercialidad appears, but it is treated as a stylistic facet rather than as an authenticity-threatening commercial force."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The review mentions progression and professionalization, but does not discuss institutional learning, access, or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "new flamenco recordings and emerging singers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Discographic review with both praise and developmental reservations."
+  },
+  {
+    "article_id": "1985-05-21-right-pepe-de-la-matrona",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "consta que fue una institución viviente en su barrio y en toda la ciudad",
+        "target": "Pepe de la Matrona",
+        "rationale": "The passage canonizes Matrona as a living institution and exemplary figure in flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "desgranando con maestría lo mejor del cante antiguo, que él ha conservado como nadie en una discografía",
+        "target": "Pepe de la Matrona's preservation of old cante",
+        "rationale": "The text grounds Matrona's value in conserving and transmitting old cante, using continuity with the past as authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "había que oírlo en privado, en el rincón de cabales, con su copa y su «colilla»",
+        "target": "private cabal listening context for Matrona's cante",
+        "rationale": "The passage explicitly values a private, knowledgeable setting as the proper context for hearing his art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "lo suyo fue una lección magistral de compás y de medida, de gracia y sabiduría de siglos",
+        "target": "Matrona's late performance in Jaén",
+        "rationale": "The passage evaluates the performance through aesthetic criteria including compás, measure, grace, and accumulated wisdom."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article emphasizes memory and conservation, but it does not frame this as public heritage safeguarding or community heritage politics."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community", "criticism"],
+      "target": "Pepe de la Matrona as canonical preserver of old cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Multiple clear discourse functions: canonization, tradition-continuity, private cabal setting, and aesthetic evaluation."
+  },
+  {
+    "article_id": "1985-05-25-right-a-placas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "llegando a ser uno de los mejores cantaores por siguirias, medias granaínas y cantes sin acompañamiento",
+        "target": "Paco Mazaco",
+        "rationale": "The passage explicitly evaluates Paco Mazaco's quality and status as a singer in specific flamenco styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Although the text says he learned the cantes of Luis El Quijá, it does not clearly frame that learning as authoritative lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author corrects a published biographical error, but this is factual correction rather than expert boundary critique about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Paco Mazaco's status as a cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly anecdotal biography; only the explicit artistic ranking is coded."
+  },
+  {
+    "article_id": "1985-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El Festival Flamenco ha entrado en una fase de irreversible recesión. Sencillamente, se acaba.",
+        "target": "Festival Flamenco as a mass event form",
+        "rationale": "The editorial makes a direct critical judgment about the decline and exhaustion of flamenco festivals."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Como ocurre en todo fenómeno de masas... el arte queda desdibujado, sobre todo si éste tiene un carácter tan intimista... como el Flamenco",
+        "target": "mass festival format in relation to flamenco authenticity/intimacy",
+        "rationale": "The passage frames mass spectacle as damaging to the intimate character through which flamenco retains artistic value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "La comunicación no se produce y el público termina por agotarse ante una expresión «standalizada», sin garra y sin dolor",
+        "target": "festival audience-performance relation",
+        "rationale": "The editorial contrasts meaningful flamenco communication with mass spectator fatigue and standardized public presentation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "un espectáculo devaluado, donde el Flamenco alcanza su más baja cota de expresión",
+        "target": "festival performances",
+        "rationale": "The text applies aesthetic criteria of expression, garra, dolor, and communicative force to judge festival flamenco as degraded."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial strongly polices the festival format, but the coded CRIT_01, CRIT_02, AUTH_04, and COMM_03 already capture the critique without adding a redundant expert-authority label."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article mentions the history of festivals but does not frame the issue as heritage safeguarding, public cultural memory, or policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "mass flamenco festival format",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Editorial explicitly critiques the festival as a mass format that devalues intimate flamenco communication."
+  }
+]

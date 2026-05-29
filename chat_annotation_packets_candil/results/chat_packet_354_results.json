@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "1998-09-25-left-cr-nica-del-xv-concurso-de-arte-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Proponer como supremo objetivo el reconocimiento y conservación, purificación y exaltación del viejo cante jondo.",
+        "target": "viejo cante jondo and the Córdoba flamenco contest's mission",
+        "rationale": "The contest is legitimated through conserving and exalting old cante jondo, grounding present activity in continuity with a valued past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "En la petenera estableció una identificación plena del estilo y ciertas dotes de virtuosismo en las falsetas.",
+        "target": "contest guitar performance",
+        "rationale": "The passage explicitly evaluates a performance by praising stylistic identification and virtuosity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "en el baile por bulerías, su introducción resultó de una belleza simple, realizando posteriormente un buen acompañamiento.",
+        "target": "flamenco guitar accompaniment",
+        "rationale": "The review applies aesthetic and technical criteria such as beauty, accompaniment, acoplamiento, compás, and adequacy to judge quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'purificación' appears, but the visible excerpt does not clearly identify an excluded impure target, so purity boundary-work is not independently supported."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the Concurso Nacional de Arte Flamenco de Córdoba and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt, but the visible beginning and review language provide enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1998-09-28-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Su veteranía y enjundia le da empaque a la evocación de Tío José de Paula, llevado en alas de maestría también por la guitarra de Fernando Moreno.",
+        "target": "José Vargas 'El Mono' and Fernando Moreno in the recording",
+        "rationale": "The review praises the performers' veteran depth, authority, and mastery."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "abundando en la jondura ... con un adecuado compás en los tangos.",
+        "target": "Fernando Terremoto's singing",
+        "rationale": "Jondura and compás are used as criteria for assessing flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "se transmiten influencias, son rivales y a la vez se unen para evidenciar sus localismos cantaores.",
+        "target": "Jerez, los Puertos, and their local singing identities",
+        "rationale": "Local identity frames how the recording represents flamenco schools, rivalry, influence, and belonging."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt contrasts añejo/nuevo and mentions schools and canonical names, but the visible passage mainly reviews and characterizes rather than clearly ranking a hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the recording 'Flamenco de Jerez a los Puertos' and its local cantaor traditions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review evaluates the recording through technical/aesthetic criteria and local identity, not through a strong exclusionary authenticity boundary."
+  },
+  {
+    "article_id": "1998-11-11-right-origen-y-proyecci-n-flamenca-del",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los Congresos de Flamenco son los llamados a dar luz y evidencia histórica, dentro de los límites posibles",
+        "target": "flamenco congresses and historical research",
+        "rationale": "The passage authorizes congresses and researchers as legitimate voices for clarifying flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "podríamos vislumbrar en cierto sentido el origen común de todos los fandangos, y por tanto el del llamado Fandango de Lucena.",
+        "target": "the Fandango de Lucena",
+        "rationale": "The argument grounds the value and intelligibility of the style in historical origins and continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un arte que ha llegado a convertirse en plenipotenciario de la canción andaluza",
+        "target": "flamenco",
+        "rationale": "The passage elevates flamenco to a high representative status within Andalusian song, creating a value hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article invokes folklore and Andalusian culture, but the visible excerpt does not clearly frame flamenco as public heritage or patrimonio."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the Fandango de Lucena and flamenco historical research",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is scholarly and definitional; emitted codes focus on research authority, origins, and hierarchical valuation."
+  },
+  {
+    "article_id": "1998-11-17-left-b-el-fandango-de-lucena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "siguiendo los esclarecedores trabajos de Philippe Donnier sobre este fandango.",
+        "target": "musicological interpretation of the Fandango de Lucena",
+        "rationale": "The article relies on named expert musicological work to authorize the analysis and definition of the style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage uses technical musical descriptors such as bimodalismo and cromatismo, but they define structure rather than judging flamenco quality."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The excerpt maps geographic areas and styles, but it does not frame them as safeguarding, living heritage, memory-work, or contested heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Fandango de Lucena as a musicological object",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Mostly technical analysis; only the expert-authority function is coded."
+  },
+  {
+    "article_id": "1998-11-24-right-manuel-vila-el-gran-olvidado-del",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manolo Ávila ha sido el mejor embajador del fandango de Lucena y el más fiel defensor y discípulo de Cayetano",
+        "target": "Manolo Ávila",
+        "rationale": "The passage ranks Ávila as the best ambassador and faithful defender of the Lucena fandango, canonizing his status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la historia es testigo de una realidad que aquí se ha querido ocultar.",
+        "target": "the Congress of Lucena's omission of Manolo Ávila",
+        "rationale": "The author uses critical authority to denounce the congress's omission as a distortion of flamenco history."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Servía de polea de transmisión de los viejos maestros",
+        "target": "Manolo Ávila's role in transmitting old masters' flamenco knowledge",
+        "rationale": "Ávila is explicitly framed as a transmitter of knowledge from old masters, satisfying lineage-based transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains evaluative praise, but the stronger and more specific functions are hierarchy/canonization and critique of omission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Manolo Ávila and the Congress of Lucena's historical framing",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article both legitimates Ávila and delegitimates the congress's omission of him."
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "article_id": "1985-11-19-right-a-don-jos-m-rquez-cabello-endere",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Después de largos años de investigación en la vida artística y privada de don Antonio Chacón, puedo decir, sin equivocar a nadie, que creó siete estilos por malagueñas.",
+        "target": "Antonio Chacón's malagueña styles and prior claims about them",
+        "rationale": "The author grounds a corrective judgment in long research and positions himself as an expert able to clarify disputed flamenco-historical claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "creó siete estilos por malagueñas. Veamos:",
+        "target": "Antonio Chacón's created malagueña styles",
+        "rationale": "The passage classifies Chacón's repertoire into a numbered set of authored styles, contributing to canonizing and organizing his status as a creator."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The word 'cuerpo' appears only inside a quoted letra and does not describe embodied, oral, familial, or lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "Antonio Chacón's malagueña repertoire and its correct attribution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the expert-corrective and canon-classification claims."
+  },
+  {
+    "article_id": "1985-11-22-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Radiocadena Andalucía ha puesto en marcha un nuevo programa de información y difusión de las actividades flamencas en la Comunidad Andaluza",
+        "target": "Puente Flamenco radio program",
+        "rationale": "The radio program is framed as a media institution that expands access to flamenco information and activity across Andalusia."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la segunda edición de la distinción «Compás del Cante»... ha sido otorgada al cantaor Antonio Fernández Díaz, «Fosforito», quedando como finalistas los cantaores José de la Tomasa y Chano Lobato",
+        "target": "Fosforito and the finalists of the Compás del Cante distinction",
+        "rationale": "The award creates a public hierarchy among singers by naming a winner and finalists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "en la decisión del mismo pesaron... criterios como la pureza, profesionalidad y constancia del cantaor, así como las labores investigadoras y de resurrección de estilos en desuso",
+        "target": "criteria for judging the Compás del Cante award",
+        "rationale": "The passage explicitly names aesthetic and professional criteria used to evaluate flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'recuperación de sus raíces culturales' suggests roots and recovery, but the surrounding passage is mainly congratulatory award coverage rather than a developed tradition-continuity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The program is described as open to participation, but the passage does not contrast participatory flamenco with spectatorship or private/public setting strongly enough."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "flamenco diffusion through radio and Fosforito's award recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest evidence is the radio program's mediating purpose and the award's explicit evaluative criteria."
+  },
+  {
+    "article_id": "1985-11-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "El resultado de la votación del jurado es el siguiente: Ganador del 1er Premio... 2.º Premio... 3er Premio...",
+        "target": "participants in the XIV Certamen Nacional de Guitarra Flamenca",
+        "rationale": "The jury vote and ordered prizes construct a formal hierarchy among guitar contestants."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and tertulias are repeatedly listed, but mostly as organizers or administrative bodies without a clear claim that community actors authorize flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The essay prize concerns flamenco scholarship and publication, but the notice is administrative and does not strongly frame learning access or institutional pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public sponsorship and prizes appear, but there is no explicit heritage or patrimonial recognition frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "guitar contest rankings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is organizational notice text; only the contest results clearly perform ranking."
+  },
+  {
+    "article_id": "1985-11-23-right-palmas-a-comp-s-para-pasarela-po",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "siempre es gratificante difundir y reconocer la labor encomiable de los que apoyan con su esfuerzo, trabajo y dedicación a esta seña de identidad genuinamente andaluz",
+        "target": "supporters of flamenco, especially Pasarela",
+        "rationale": "The passage explicitly praises and evaluates the work of those supporting flamenco as commendable."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "el Ministerio de Cultura, galardonando a Pasarela con el «Premio Nacional a la Empresa Discográfica... por la obra más destacada de música popular española»",
+        "target": "Pasarela's flamenco recording work",
+        "rationale": "A state cultural institution confers official recognition and public cultural value on Pasarela's flamenco-related work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "«Mientras Diego y yo estemos aquí, jamás entrarán músicas extrañas en nuestras grabaciones flamencas»",
+        "target": "Pasarela's flamenco recordings",
+        "rationale": "The statement draws a purity boundary by excluding 'foreign' musics from legitimate flamenco recordings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'seña de identidad genuinamente andaluz' frames Andalusian identity, but the main discourse function is better captured by praise, official recognition, and purity boundary-work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "'Genuinamente andaluz' suggests authenticity, but it modifies identity framing rather than making a direct claim about genuinely proper flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "heritage", "authenticity"],
+      "target": "Pasarela as a supporter and guardian of flamenco recordings",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The text combines praise, official cultural recognition, and explicit exclusion of non-flamenco musical elements."
+  },
+  {
+    "article_id": "1985-11-24-left-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a short byline/name fragment and is insufficient for discourse coding."
+  }
+]

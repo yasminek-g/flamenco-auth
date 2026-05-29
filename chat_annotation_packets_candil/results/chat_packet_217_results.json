@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "1990-07-22-left-cantes-nuevos-soleares",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "encontré con sorpresa dos cantes por soleá que de momento no podía encajar en los estilos tradicionales de este palo flamenco",
+        "target": "dos cantes por soleá de Calixto Sánchez",
+        "rationale": "The passage applies stylistic fit with traditional soleá forms as an aesthetic/classificatory criterion for judging the cantes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "dos cantes por soleá que de momento no podía encajar en los estilos tradicionales de este palo flamenco",
+        "target": "new or recreated soleá styles",
+        "rationale": "Traditional soleá styles are used as the reference frame against which new creations are identified and evaluated."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "podrían ser nuevos estilos soleaeros bien forjados (recreados) o creados por Calixto Sánchez",
+        "target": "Calixto Sánchez's new soleá styles",
+        "rationale": "The author evaluates the newly identified soleá styles as well forged or successfully recreated/created."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "Calixto Sánchez's newly created or recreated soleá styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-07-26-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Notable es la entonación y el compás en el mirabrás y otro tanto sucede en las cantiñas.",
+        "target": "Diego Clavel's performance on the recording",
+        "rationale": "The review explicitly praises the singer's execution in specific styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Las guitarras de Pedro Bacán y Fernando Rodríguez desarrollan un acompañamiento ajustado al compás de los estilos sin abusar de las falsetas",
+        "target": "guitar accompaniment by Pedro Bacán and Fernando Rodríguez",
+        "rationale": "The passage uses compás, stylistic adjustment, and restraint in falsetas as criteria for musical quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "En sus romances se aprecia el influjo de Antonio Mairena y en los tangos el de Pastora Pavón.",
+        "target": "Diego Clavel's romances and tangos",
+        "rationale": "The review positions Mairena and Pastora Pavón as canonical reference figures whose influence helps locate the recording's value and style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions older forms and influences, but the past is not clearly used to authorize present practice beyond normal review description."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Diego Clavel's album Mi sentir and its performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review is mostly positive but includes reservations about monotony and the need to remember earlier strengths."
+  },
+  {
+    "article_id": "1990-07-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "invitado por el comité directivo aconsejado por la Peña «La Debla»",
+        "target": "Peña La Debla",
+        "rationale": "The peña is presented as a community actor whose advice helps authorize the selection of the flamenco performers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "un tablao flamenco que vibró, de manera impresionante, bajo los pies embrujados del cuadro de Merengue de Córdoba",
+        "target": "Merengue de Córdoba's flamenco cuadro in Biarritz",
+        "rationale": "The passage praises the impact and quality of the performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Os esperaremos en cada una de vuestras salidas con el aliento y el apoyo de verdaderos compañeros.",
+        "target": "the new flamenco periodical/community of La Línea",
+        "rationale": "The text frames flamenco publication work through companionship and mutual support within a shared community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The visible text mentions a gala and tablao setting, but does not clearly contrast public/private or participatory/spectatorial value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "peña-mediated flamenco activity and related flamenco publications",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; codes are limited to visible evidence."
+  },
+  {
+    "article_id": "1990-07-24-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Vergonzosa actuación del Chocolate",
+        "target": "Antonio Núñez 'El Chocolate' performance",
+        "rationale": "The headline and following review explicitly condemn the performance as shameful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Chocolate ha logrado con su nefasta actuación cargarse en media hora los esfuerzos de una gran cantidad de intelectuales y gentes que saben de este género",
+        "target": "Chocolate's performance and the audience response",
+        "rationale": "The critic invokes knowledgeable intellectuals and genre experts as authorities whose efforts to dignify flamenco were damaged by the performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "fue causante el público asistente, demostrando con su aliento al cantaor una falta de seriedad que dice muy poco en favor de la dignidad de que se pretende rodear a estos espectáculos veraniegos",
+        "target": "audience behavior at the flamenco performance",
+        "rationale": "The passage evaluates the audience's participatory response as undermining the seriousness and dignity expected in the public performance setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "debe suprimirse el «cachondeo y la estupidez» de los espectáculos flamencos",
+        "target": "frivolous conduct in flamenco spectacles",
+        "rationale": "The passage frames frivolous spectacle behavior as a threat to the seriousness and dignity of flamenco presentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as falta de compenetración and distonía point to performance criteria, but the dominant discourse is moral-critical rather than a sustained aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["criticism", "community", "authenticity"],
+      "target": "Chocolate's performance and the audience's enabling response",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; codes apply only to the visible review window."
+  },
+  {
+    "article_id": "1990-07-25-right-agosto-y-los-flamencos-llamados-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manolos que fueron baluartes del flamenco, cabales del arte",
+        "target": "flamenco artists named Manuel remembered in the article",
+        "rationale": "The passage canonizes the named artists as pillars and exemplary figures of flamenco art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Vallejo... marcó toda una época del cante y fue primerísima figura de la «Opera Flamenca».",
+        "target": "Manuel Vallejo",
+        "rationale": "The article hierarchizes Vallejo as a first-rank figure who defined an era of cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Catedrático de Folclore del Real Conservatorio de Madrid, publicó numerosos estudios sobre flamenco compilados en su libro póstumo «Sobre el flamenco (Estudios y notas)».",
+        "target": "Manuel García Matos",
+        "rationale": "The passage legitimates García Matos through institutional scholarly authority and published flamenco studies."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Cante para los suyos, los aficionados de Triana y aquellos otros que supieron escuchar.",
+        "target": "Manuel Oliver Dorado's cante",
+        "rationale": "The phrase grounds the singer's cante in a community of Triana aficionados and discerning listeners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article remembers deceased artists, but the visible text does not clearly frame this as public heritage safeguarding or community heritage politics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The legal advice about recordings is prescriptive, but it concerns copyright procedure rather than critical or flamenco-boundary authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy", "community"],
+      "target": "remembered flamenco artists named Manuel and lawful handling of old recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The second half gives legal guidance on reproducing old recordings; it was not coded because the discourse is legal/administrative rather than flamenco legitimation."
+  }
+]

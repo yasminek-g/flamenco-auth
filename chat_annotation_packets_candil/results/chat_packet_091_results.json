@@ -1,0 +1,279 @@
+[
+  {
+    "article_id": "1984-03-18-right-a-prop-sito-de-charamusco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el buen aficionado al Cante tiene que estudiar los diferentes estilos que comportan los diversos palos más ramificados si desea conocer sus auténticas raíces",
+        "target": "flamenco cante and its styles",
+        "rationale": "The passage grounds legitimate flamenco knowledge in studying styles in order to reach their authentic roots."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Al principio, el asombro por los primeros descubrimientos; luego, el análisis y los términos comparativos... el buen aficionado al Cante tiene que estudiar",
+        "target": "the good aficionado's formation in cante knowledge",
+        "rationale": "The article frames flamenco afición as a learning process requiring study, analysis, and comparison."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Soleá valiente como todas sus hermanas interpretada por Antonio Mairena con sobriedad, gusto y garra.",
+        "target": "Antonio Mairena's interpretation of soleá apolá",
+        "rationale": "The review applies aesthetic criteria such as bravery, restraint, taste, and force to evaluate the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article uses authenticity vocabulary, but the clearest discourse function is roots/continuity rather than a separate general authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Mairena is repeatedly called Maestro, but the visible passage does not separately build a canon or hierarchy beyond the emitted roots and aesthetic evaluation codes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Antonio Mairena's cante and the study of flamenco roots",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-03-19-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tampoco vacilamos en situar a Andrés el Loro entre el grupo de intérpretes a los que “Mundo y formas del cante flamenco” considera como de “creadores” —no ya meros intérpretes— del género",
+        "target": "Andrés el Loro",
+        "rationale": "The passage elevates Andrés el Loro from interpreter to creator, constructing canonical hierarchy and status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "su cante «por soleares» poseyó auténtica personalidad, «rajo» y originalidad fuera de lo común. Es igualmente sabido que fue una cantaora magnífica",
+        "target": "Ana de Lora's singing",
+        "rationale": "The text explicitly evaluates the artistic quality, originality, and force of Ana de Lora's cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "es el gaditano Aurelio Sellés en sus conversaciones con Blas Vega, el que aporta, por expresarlo de alguna forma, auténtica veracidad sobre este cantaor",
+        "target": "knowledge about Andrés el Loro",
+        "rationale": "A named insider/expert testimony is treated as providing authoritative verification about the cantaor."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "se adaptó más a los cantes de los Puertos... porque esos cantes son más a propósito para mujer que los cantes de la escuela sevillana",
+        "target": "Antonia la Lora and gendered suitability of cante styles",
+        "rationale": "The passage organizes flamenco styles through a gendered framing of which cantes are considered more suited to a woman's voice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word auténtica appears, but it modifies personality/veracity rather than making a distinct authenticity claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Los Loros family and their place in flamenco history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-03-20-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "tendrá lugar el 4.° Encuentro Flamenco y 2.° Curso de Guitarra clásica. Los cursos estarán dirigidos: el de guitarra flamenca por Paco Peña, Víctor Monge «Serranito» y Manuel de Palma",
+        "target": "institutional courses at the Centro Flamenco Paco Peña",
+        "rationale": "The excerpt presents flamenco learning through organized courses directed by named specialists."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "recital de cante de aficionados de la provincia, en colaboración con las peñas federadas",
+        "target": "federated peñas and provincial aficionados",
+        "rationale": "The passage frames peñas and local aficionados as collective participants sustaining public flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article mentions participation and public access, but mostly as contest/event logistics rather than a value-bearing public/private participatory contrast."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public institutions sponsor events, but the excerpt does not frame this as official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "peña-based events and flamenco learning infrastructure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible windows provide enough context for the emitted community and pedagogy codes."
+  },
+  {
+    "article_id": "1984-03-22-left-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "encuentro varios errores, tanto de estilo de Cante, como acompañantes de guitarra o letras cantadas. Estos errores, según mis conocimientos, son los siguientes",
+        "target": "Yerga Lancharro's Pepe Marchena discography",
+        "rationale": "The letter writer exercises corrective expert authority over styles, accompaniment, and recorded repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "otras existentes de igual o superior calidad artística, ya que se trata de dar a conocer LO MEJOR DE PEPE MARCHENA",
+        "target": "selection of Pepe Marchena recordings",
+        "rationale": "The passage contests a ranked selection of Marchena recordings and argues for works of equal or superior artistic quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "las cuales creo, son del conocimiento de todo buen aficionado",
+        "target": "the knowledgeable flamenco aficionado community",
+        "rationale": "The writer invokes the good aficionado as a community standard for recognizing relevant recordings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The stated aim of giving readers more exact information is informative, but no clear teaching authority or pedagogical method is developed."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "published discographic knowledge about Pepe Marchena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-03-22-right-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "los romances antiguos o corridos gitanos tienen a la hora de despejar las sombras del origen del flamenco",
+        "target": "romances antiguos and the origin of flamenco",
+        "rationale": "The review grounds flamenco value and historical understanding in old romances as roots/origin evidence."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "van dejando constancia de la solera y profundidad que la transmisión oral ha dejado de estos romances",
+        "target": "oral transmission of romances",
+        "rationale": "The passage explicitly treats oral transmission as the mechanism preserving and authorizing depth and solera."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "bajo la dirección del estudioso José Blas Vega... Con auténtica sabiduría, José Blas Vega ha ido numerando los volúmenes de esta obra",
+        "target": "José Blas Vega's direction of the anthology",
+        "rationale": "The reviewer grants scholarly authority to Blas Vega's organization and classification of the anthology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "poder realizar «esa» auténtica y grandiosa antología que fuera el gran compendio de nuestro arte",
+        "target": "a comprehensive flamenco anthology",
+        "rationale": "The text imagines the anthology as a grand compendium of flamenco art, constructing canon and repertoire hierarchy through archival selection."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Authenticity vocabulary is present, but the clearest authenticity work is specifically roots/continuity and canon-building."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The review contains praise, but the stronger distinct functions are expert authority, roots, oral transmission, and canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the Magna Antología del Cante Flamenco and its historical organization of flamenco repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotations are limited to the visible beginning/end context and evidence window."
+  }
+]

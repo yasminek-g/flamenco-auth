@@ -1,0 +1,236 @@
+[
+  {
+    "article_id": "1989-07-9-right-opini-n-sobre-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "El protagonismo de los gitanos es indiscutible... pretenden usurparnos un papel que la historia nos ha dado",
+        "target": "la vinculación gitano-flamenco",
+        "rationale": "The passage frames Gitano identity as the authoritative community basis for flamenco origin, belonging, and representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "respetando nuestros orígenes e historia, comprendiendo y amando este tesoro cultural que los gitanos hemos aportado y conservado",
+        "target": "el flamenco como arte gitano",
+        "rationale": "Flamenco value is grounded in origins, history, continuity, and conservation by Gitano people."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "mentiras falsas... suposiciones sobre el tema... mentes retorcidas y mediocres que pretenden usurparnos un papel",
+        "target": "estudiosos que separan lo gitano del flamenco",
+        "rationale": "The author uses polemical critique to police interpretive boundaries around who may define flamenco history and identity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "positivo para el desarrollo de una cultura tradicionalmente marginada... este tesoro cultural que los gitanos hemos aportado y conservado",
+        "target": "cultura gitana/flamenca",
+        "rationale": "The passage frames flamenco as a marginalized cultural inheritance to be conserved, developed, and transmitted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article asserts truth and falsehood, but the clearest discourse is identity/origin boundary work rather than a separate authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "identity",
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Gitano authority over flamenco origins and cultural meaning",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-07-10-left-recuerdo-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la conjunción... entre Salamanca y Sevilla... tienen unas raíces más «jondas» y profundas",
+        "target": "Salamanca flamenca",
+        "rationale": "The passage legitimates flamenco in Salamanca by grounding it in deep cultural affinities and roots shared with Sevilla."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "nos aventuramos con ilusión para llevar a cabo una empresa cultural y popular que sentíamos en pro del cante grande",
+        "target": "promotores y aficionados de la Salamanca flamenca",
+        "rationale": "The passage presents a community of aficionados/promoters as sustaining and giving a proper place to flamenco outside Andalucía."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is evaluative language about cultural affinity, but it functions mainly as legitimation through roots rather than a review of a performance or artist."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "flamenco practice in Salamanca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt provides enough evidence for these limited codes."
+  },
+  {
+    "article_id": "1989-07-11-left-joaqu-n-vargas-soto-el-cojo-de-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Decirlo así... nos viene a demostrar que Gonzalo tiene un temple de acero toledano",
+        "target": "Gonzalo Rojo's attribution of fandangos to El Cojo de Málaga",
+        "rationale": "The author contests a published flamenco-historical claim and exercises corrective critical authority over attribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "«El Cojo» no fue lo que se dice un cantaor creador. Yo estoy convencido de ello",
+        "target": "El Cojo de Málaga as alleged creator",
+        "rationale": "The passage denies canonical creator status to El Cojo and reorders the hierarchy of authorship around the fandangos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article argues for factual truth in attribution, but it does not clearly frame a practice as genuinely or properly flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the claim that El Cojo de Málaga created the cantes of Pérez de Guzmán",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpts center on attribution and critical correction."
+  },
+  {
+    "article_id": "1989-07-13-left-la-rubia-se-orita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Él me dice que su paisana fue buena cantaora de flamenco y yo me veo obligado a decir lo contrario",
+        "target": "La Rubia / Señorita Santisteban",
+        "rationale": "The passage explicitly evaluates and rejects the artist's quality as a flamenco singer."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "su timbre y potencia de voz —no apta para el cante flamenco—",
+        "target": "La Rubia's voice and flamenco suitability",
+        "rationale": "The author draws a boundary around proper flamenco singing by declaring her voice unfit for cante flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "cuando manifiesto una opinión... es porque se ve avalado por documentos contundentes en mi poder",
+        "target": "the author's judgment about La Rubia",
+        "rationale": "The author legitimates his critical judgment through documentary evidence and claims expert authority."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "La Rubia as a flamenco cantaora",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-07-13-right-paquito-de-la-isla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Paquito de la Isla es un gran guitarrista... que bien se merece un espacio para presentarlo a los lectores de Candil",
+        "target": "Paquito de la Isla",
+        "rationale": "The passage explicitly praises Paquito de la Isla's artistic value as a guitarist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "dar continuidad a una vieja amistad, que el paso del tiempo no ha conseguido borrar, ni debilitar",
+        "target": "relationship with Paquito de la Isla",
+        "rationale": "The visible text uses continuity with a past flamenco social relationship to give value to the encounter and artist profile."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The interview atmosphere is intimate, but it is presented as personal reunion rather than a broader participatory flamenco setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Mentions of hombre and feminine absence are incidental and do not organize flamenco identity or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Paquito de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations are limited to visible praise and continuity language."
+  }
+]

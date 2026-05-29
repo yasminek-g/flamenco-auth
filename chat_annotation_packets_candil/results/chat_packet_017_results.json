@@ -1,0 +1,319 @@
+[
+  {
+    "article_id": "1980-11-13-right-marcelo-barbero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Marcelo Barbero, uno de los más prestigiosos guitarreros españoles de todos los tiempos",
+        "target": "Marcelo Barbero as a guitar maker",
+        "rationale": "The passage canonizes Barbero by ranking him among the most prestigious Spanish guitar makers of all time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "cuya categoría artística fue solamente superada por su calidad humana",
+        "target": "Marcelo Barbero's artistic and personal qualities",
+        "rationale": "The text explicitly evaluates Barbero's artistic stature and personal character."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "aficionado donde los haya al cante «jondo», por cuya causa abandonaba fugazmente y con frecuencia su trabajo para escuchar... los cantes de los más destacados intérpretes de la época",
+        "target": "Marcelo Barbero as an aficionado of cante jondo",
+        "rationale": "The passage presents Barbero's afición as a meaningful part of his flamenco-related identity and authority within the guitar-making milieu."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions Barbero as a disciple and workshop successor, but the visible excerpt does not clearly frame this as flamenco knowledge transmission carrying authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The intimate tertulia around his workshop is described, but not clearly as more authentic than public or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Marcelo Barbero's status as a flamenco-related guitar maker and aficionado",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt gives sufficient evidence for the emitted evaluative and community-authority codes."
+  },
+  {
+    "article_id": "1980-11-15-right-el-sentido-de-las-letras-en-el-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El Cante fue siempre —y tendrá que seguir siéndolo para no perder su esencialidad— una expresión viva, varia y renovada de la peripecia humana",
+        "target": "the essential nature of cante",
+        "rationale": "The passage defines what cante must truly be in order not to lose its essence."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El Cante que no nos vale, el que no pudo valernos nunca... es el que... representa al señoritismo trasnochado",
+        "target": "cante associated with outdated elite servility",
+        "rationale": "The author draws a boundary around legitimate cante by excluding servile or señoritismo-oriented lyrics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la letra en sí —el «mensaje» ad usum no puede ser base única de la copla, ni muchísimo menos, salvar o mejorar siquiera una música, un Cante defectuoso",
+        "target": "relationship between lyrics and musical/cantaora quality",
+        "rationale": "The passage defines aesthetic criteria for flamenco value by insisting that lyrical message cannot compensate for defective cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "han abordado el tema en profundidad y han dado al mismo una dimensión notoria y muy digna de tener en cuenta... Ambos admirables",
+        "target": "books by José Relardo and Francine Belade, and Antonio Carrillo",
+        "rationale": "The author explicitly evaluates these works as deep, important, and admirable contributions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article frames cante as living and socially renewed, but the visible excerpt does not clearly shift into heritage/safeguarding or public-culture discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The trigger 'escuche' appears, but it does not describe embodied/oral transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "the proper social and aesthetic function of flamenco lyrics in cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt directly defines and evaluates the function of letras in cante."
+  },
+  {
+    "article_id": "1980-11-17-left-una-mirada-atr-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no se me diga, que lo más que se publica son refritos y basuras retóricas... amén de no ser cierto",
+        "target": "dismissive attitudes toward flamenco books",
+        "rationale": "The author uses critical authority to reject a common delegitimating judgment about flamenco publications."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Si tanto nos dolemos por la falta de escritos y documentos para conocer los dos tercios de la historia del cante... semejante rechazo de la escritura de temas flamencos",
+        "target": "written documentation of flamenco history",
+        "rationale": "The passage frames books and documents as necessary memory resources for knowing and preserving flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "este grano de arena es sólido y consistente. Es más, la historia del cante flamenco nunca podrá hacerse sin libros como éste",
+        "target": "Rodríguez Cosano's book on flamenco letters and biographies",
+        "rationale": "The author explicitly evaluates the book as a solid contribution necessary to flamenco historiography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el autor intenta explicar por qué algunas letras perfectamente medidas silábicamente no entran en el cante propuesto",
+        "target": "criteria for whether letras fit a proposed cante",
+        "rationale": "The passage treats fit between poetic meter and cante as an aesthetic/technical criterion for flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "configuran y ahorman este riquísimo legado que es el cante",
+        "target": "cante as a rich inherited legacy",
+        "rationale": "The text grounds the value of local histories and books in their contribution to shaping the inherited legacy of cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and peñas are mentioned, but the main function is critique of reading habits and preservation of documentation rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage",
+        "tradition"
+      ],
+      "target": "flamenco books and documentation as necessary to cante history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-11-17-right-el-muestrario-flamenco-de-jose-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una amplísima serie de composiciones poéticas traspasadas de hondura y flamenquismo",
+        "target": "José Luis Tejada's book Del río de mi olvido",
+        "rationale": "The passage explicitly praises the book's poems for depth and flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "José Luis Tejada pertenece a un cualificado grupo de escritores andaluces exponentes de una época necesitada de urgente revisión críticoliteraria",
+        "target": "José Luis Tejada and Andalusian writers of the Generación del 50",
+        "rationale": "The author places Tejada in a qualified literary group and calls for canon-revising critical attention."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "conscientes de que el cante y su carga anímica nunca puede quedarse en un tiempo, en moda",
+        "target": "cante and its emotional charge",
+        "rationale": "The passage authorizes cante's value by presenting it as continuous and not reducible to a passing fashion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "elevan a cotas bien altas el alma de Andalucía y el sublime rajo de 'lo jondo",
+        "target": "Andalusian writers' treatment of lo jondo",
+        "rationale": "The text applies depth and sublimity as aesthetic criteria for evaluating the writers' flamenco-Andalusian work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text invokes Andalusian cultural value, but it does not clearly frame flamenco as public heritage or patrimonio."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "José Luis Tejada's flamenco literary work and the Andalusian literary canon",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-11-18-right-dimension-social-del-cante-flame",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "un artículo titulado «Flamenco verdad o flamenco estandarizado»?, cuyo contenido, lleno de aberraciones, merece una respuesta",
+        "target": "the article 'Flamenco verdad o flamenco estandarizado?'",
+        "rationale": "The author asserts corrective critical authority against another published interpretation of flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "es imposible admitir tal concepción del cantaor y del flamenco, como manifestación artística y cultural de un pueblo que tanto ha tenido que sufrir en sus propias carnes",
+        "target": "the cantaor and flamenco as expression of a suffering people",
+        "rationale": "The passage frames flamenco and the cantaor through collective social identity and representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "El flamenco es algo más serio que la simple visión... de desprecio del cantaor como persona y ente social",
+        "target": "flamenco as a serious social and artistic practice",
+        "rationale": "The author defines proper understanding of flamenco against a contemptuous reduction of the cantaor."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "todas las Peñas Flamencas dedican un día a la semana para estudiar y comentar los cantes flamencos... ¿por qué en Andalucía, no?",
+        "target": "organized study and formal teaching of flamenco in Andalusia",
+        "rationale": "The passage argues for institutionalized and community-based access to flamenco knowledge through peñas and educational bodies."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "alcanzó gracias a la labor de divulgación y revalorización del flamenco",
+        "target": "public revaluation and dissemination of flamenco",
+        "rationale": "The text frames flamenco's improvement through collective dissemination and revalorization, a public cultural preservation function."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Cantaores and aficionados are invoked as rejecting the article, but the stronger community framing concerns social identity and representation of the cantaor."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article contests a demeaning view of flamenco, but the visible text does not clearly draw a purity or fake/proper flamenco boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "the social dignity and educational recognition of cante flamenco and cantaores",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains clear polemical, social, and pedagogical discourse."
+  }
+]

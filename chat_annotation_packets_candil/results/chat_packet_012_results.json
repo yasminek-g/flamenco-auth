@@ -1,0 +1,280 @@
+[
+  {
+    "article_id": "1980-07-14-right-carta-a-pastora-pav-n-i-ina-de-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "¿En un multitudinario festival? ¿En una reunión de técnicos señores? ¿En un espectáculo teatral o televisivo y como música de fondo de tantos y tantos payasos andaluzados?",
+        "target": "contemporary staged, technical, theatrical, televisual, and entertainment-oriented cante",
+        "rationale": "The passage frames mass, theatrical, televisual, and entertainment settings as distorting cante away from lived flamenco authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "quien recuerda por efecto de una transmisión de pálbitos y desgarramientos que saltan por arriba del tiempo y del espacio; quien recuerda su historia y su dolor",
+        "target": "cante grounded in transmitted memory, history, and pain",
+        "rationale": "The text grounds legitimate cante in continuity with remembered history and transmitted affect across time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "El cante, en demasiados casos, es impresentable. No tiene encarnadura. Suena perfectamente bien, pero carece de gemidos que no sean aprendidos.",
+        "target": "contemporary cante",
+        "rationale": "The passage judges cante by aesthetic criteria of embodied substance, lived expressive force, and non-mechanical lament."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article contrasts lived cante with disguise, entertainment, and mimetism, but the clearer discourse function is anti-spectacular/intimate authenticity rather than a discrete purity boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is explicit negative evaluation, but CRIT_02 captures the more specific aesthetic criteria doing the evaluative work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante that remains close to lived memory, pain, and ancestral voices, against staged entertainment cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-07-15-left-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "fue uno de los grandes maestros jerezanos del cante",
+        "target": "Manuel Molina",
+        "rationale": "The article canonizes Molina by placing him among the great Jerez masters of cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "anteriormente también lo fue por Manuel Torre, quien aprendió algunos cantes de la figura que nos ocupa",
+        "target": "transmission of Manuel Molina's cantes to later singers",
+        "rationale": "The passage describes lineage-based transmission of cantes from Molina to Manuel Torre and later performers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "tiene aún hoy, una gran vigencia, sobre todo entre los artistas de su tierra, y en Sevilla",
+        "target": "Curro Frijones's cante",
+        "rationale": "The article values a past artist's cante through its continuing present validity among local artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as inventiva, ternura, pasión, and espiritualidad evaluate artistry, but they are scattered descriptive praise rather than a sustained criterion-based judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to raza gitana and local origins are present, but identity is mostly biographical rather than clearly organizing authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "historic flamenco masters and their transmitted cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-07-16-left-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "las nuevas generaciones, salvo contadas excepciones, no tienen demasiada capacidad creativa con posibilidades de llegar al público. Su comunicabilidad, en líneas generales, es pobre. Su dimensión artística, lo mismo.",
+        "target": "new generations of flamenco recording artists",
+        "rationale": "The article explicitly evaluates the artistic and communicative weakness of newer flamenco artists."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "cuando se escucha el rasgueo de una guitarra, palmas y una voz que trata de dar a su decir cierto aire flamenco, resulta que, en opinión de estos «técnicos», ya tenemos cante en su máxima pureza",
+        "target": "technicians' superficial identification of pure cante",
+        "rationale": "The passage rejects a superficial imitation of flamenco signs as wrongly treated as cante in its maximum purity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "La primera y principal es su no rentabilidad... la rentabilidad, no olvidemos que una empresa vive de las ganancias, es nula",
+        "target": "record companies' treatment of flamenco recordings",
+        "rationale": "The discussion links commercial profitability to neglect of flamenco recording and frames market logic as a problem for the art."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "habría que plantearse la necesidad de, por una parte las peñas flamencas, tratar de iniciar una búsqueda de nuevos valores",
+        "target": "peñas flamencas as actors sustaining new artistic values",
+        "rationale": "The passage assigns peñas an active community role in finding and sustaining new flamenco values."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The closing phrase about roots and pure essences invokes tradition, but AUTH_02 and AUTH_04 capture the clearer boundary and commercial critique functions."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Support and preservation language appears, but it lacks a clear public-culture or heritage frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "community"
+      ],
+      "target": "a better flamenco recording culture rooted in pure, knowledgeable practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "La Cátedra de Flamencología de Jerez, ha distinguido a la Revista «Candil» por su labor en «pro» de la difusión del Flamenco.",
+        "target": "Candil's role in disseminating flamenco",
+        "rationale": "An expert institution is presented as formally recognizing and authorizing the publication's cultural work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "las instancias oficiales, a las que les viene atribuida por el ordenamiento jurídico la custodia y defensa de la cultura",
+        "target": "official institutions responsible for cultural custody and defense",
+        "rationale": "The passage frames culture as requiring public custody and defense while criticizing official neglect of flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "conocer y difundir el arte «jondo» desde una contemplación histórica y cultural del mismo",
+        "target": "flamenco as historical and cultural public value",
+        "rationale": "The editorial frames flamenco as a historical-cultural domain to be studied, known, and disseminated as part of culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "se perfile ya su, en otro tiempo desdibujada, identidad como pueblo",
+        "target": "the people whose identity is shaped through flamenco cultural recognition",
+        "rationale": "The passage links flamenco cultural recognition to the emergence of collective identity as a people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The Cátedra de Flamencología is an expert institution, but its role here is better coded as institutional heritage recognition than critic authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Candil's flamenco dissemination work and flamenco as living culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-09-4-right-seguridad-social-para-los-artist",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "al final todo se redujo a un puro fuego de artificio. Se hizo realidad una vez más la incoherencia y falta de seguimiento",
+        "target": "follow-through after the VIII Congreso de Actividades Flamencas",
+        "rationale": "The passage explicitly criticizes the failure to follow through on congress discussions about artists' social welfare."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article advocates social protection for flamenco artists, but the visible excerpt frames this mainly as labor and legal welfare rather than cultural heritage safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger 'cuerpo' appears only as 'cuerpo legal' and does not indicate embodied or oral transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions professionals and interested readers, but it does not clearly construct community authority over flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "incoherent and incomplete institutional/action follow-through on flamenco artists' welfare",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible legal-social excerpt."
+  }
+]

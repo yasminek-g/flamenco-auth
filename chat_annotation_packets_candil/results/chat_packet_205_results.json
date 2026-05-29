@@ -1,0 +1,246 @@
+[
+  {
+    "article_id": "1990-01-6-right-a-pepe-polluelas-ram-n-porras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "En Cádiz, en Jerez, en Triana, dentro de un clima hermético y tribal, el flamenco pudo guardarse en su más prística jondura. En bodas, en bautizos se cantaba para uno mismo —cante todavía como expresión existencial— o para el hermano, el padre o el amigo.",
+        "target": "private and communal flamenco settings versus degraded public/commercial settings",
+        "rationale": "The passage values intimate familial and community performance as the setting in which flamenco preserved its deepest quality, contrasting it with the later brothel context."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "por encima de las cositas fáciles y frívolas que se te escuchaban, había raudales de jondura, cantes hermosísimos que se te arrinconaban dentro.",
+        "target": "Pepe Polluelas's cante",
+        "rationale": "The article explicitly evaluates Polluelas's artistry by distinguishing superficial repertory from his deeper jondura and beautiful cantes."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "empezaron a admirarte y a quererte y por primera vez te llamaron maestro... La Peña Flamenca de Jaén fue su casa; y tú, Pepe, lo supiste desde el principio.",
+        "target": "Pepe Polluelas's recognition by aficionados and the Peña Flamenca de Jaén",
+        "rationale": "A community of aficionados and the peña are presented as recognizing, dignifying, and giving belonging to the artist."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text contrasts flamenco's 'esencias' with detractors, cuplé singers, and brothel flamenquerías, but the stronger visible discourse function is the public/private community setting rather than a clean purity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Pepe Polluelas and the social settings that recognized or degraded his flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-7-right-eduardo-de-la-malena-in-memoriam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se nos ha ido un guitarrista muy emocional, de interpretaciones llenas de gran color y fluidez.",
+        "target": "Eduardo de la Malena's guitar artistry",
+        "rationale": "The article directly praises Eduardo's interpretive quality and expressive style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su arte al servicio del cante daba prioridad a la concentración de la expresión y del sonido. Tenía tal técnica y talento natural suficientes como para hacer lo que le diese la gana con la precisión de un relojero.",
+        "target": "Eduardo de la Malena's accompaniment and technique",
+        "rationale": "Expression, sound, technique, natural talent, and precision are used as criteria for evaluating flamenco guitar quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Eduardo de la Malena, la séptima cuerda de Niño Ricardo, ha dejado de latir.",
+        "target": "Eduardo de la Malena within the Ricardo guitar lineage",
+        "rationale": "The metaphor canonizes Eduardo by placing him as an exemplary extension of Niño Ricardo's guitar tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions nineteenth-century roots and traditions, but these claims mainly support Eduardo's ranking and artistic evaluation rather than a separate continuity argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Eduardo de la Malena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-8-right-m-sica-culta-y",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Se sintió observado como un raro fenómeno musical. No podía entender que no entendieran.",
+        "target": "the gap between flamenco insiders and classical musicians analyzing cante",
+        "rationale": "The passage draws an epistemic boundary between Mairena/flamenco knowledge and the external analytical gaze of cultivated musicians."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Ricardo y yo nos regocijábamos al ver aquellos desesperados intentos para reglar el cante. Cuando los músicos no tuvieron más remedio que renunciar, nos quedó una mezcla de extrañezas y alegrías al ver una vez más indemne el misterio del sonido flamenco.",
+        "target": "classical-musical attempts to regulate or notate cante",
+        "rationale": "The narrator critically deauthorizes expert attempts to codify cante and presents flamenco sound as resistant to that external analytical authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and musical features appear, but the central function is boundary critique of analytical authority rather than applying aesthetic criteria to a performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco cante as resistant to external classical-music analysis",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-12-left-bailar-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El fandango de José Cepero es recortado, de buena expresión y sabor. Por saber cantar ha podido ser primera figura. Es jondo... y sin embargo le falta corazón.",
+        "target": "José Cepero's fandango and cante",
+        "rationale": "The passage explicitly evaluates a singer's quality, strengths, and perceived lack."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Torre fue el cantaor más genial. Artista desordenado, sorpresivo, único.",
+        "target": "Manuel Torre in relation to other flamenco figures",
+        "rationale": "The text constructs a hierarchy by elevating Manuel Torre through superlative and exemplary status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Matilde... va a hacer en Hospitalet lo que hace en todas partes: crear escuela, enseñar, perfeccionar a los que se inician en esta difícil andadura.",
+        "target": "Matilde Coral's teaching role in the dance seminar",
+        "rationale": "Matilde Coral is positioned as an authoritative teacher who creates a school and perfects initiates in flamenco dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "las soleares y las siguiriyes, cuándo deben ser, cómo son, cantes de corazón y de «voz natural».",
+        "target": "soleares and siguiriyas",
+        "rationale": "The passage uses heart and natural voice as aesthetic criteria for defining how these cantes should be performed."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco artists, dance pedagogy, and valued performance criteria",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-01-12-right-cante-y-toque-dos-aires-distinto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la guitarra flamenca tiene la obligación de sonar flamenca, de ser, como acompañante o solista, eminentemente flamenca",
+        "target": "flamenco guitar as accompaniment or solo instrument",
+        "rationale": "The passage defines what guitar must be in order to be properly flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "intuyendo una ortodoxia atávica, obedeciendo a unas raíces no escritas pero sí profundamente sentidas, girando... alrededor del eje que sostiene y centraliza toda la remota identidad genuinamente andaluza",
+        "target": "flamenco guitar practice",
+        "rationale": "The value and proper development of toque are grounded in unwritten roots, inherited orthodoxy, and Andalusian identity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "de nada nos valdrá el virtuosismo si el toque desborda la naturaleza que lo origina.",
+        "target": "virtuosity and proper flamenco guitar playing",
+        "rationale": "The passage applies an aesthetic criterion: virtuosity is insufficient if it exceeds the natural flamenco basis of the toque."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The phrase 'ordinaria y de mal gusto' critiques improper solo guitar behavior, but it is covered by the broader aesthetic-criteria code rather than requiring a separate boundary-critique code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "proper flamenco guitar practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

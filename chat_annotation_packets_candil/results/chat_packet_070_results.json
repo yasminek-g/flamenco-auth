@@ -1,0 +1,269 @@
+[
+  {
+    "article_id": "1983-03-18-left-el-x-congreso-de-actividades-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Salvo excepciones, las ponencias tratan más la corteza que el núcleo flamenco",
+        "target": "the congress presentations and communications",
+        "rationale": "The author explicitly evaluates most congress papers as superficial, contrasting them with work that reaches the core of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Tengo la sospecha de que el setenta por ciento de los congresistas no «está puesto en el Cante»",
+        "target": "congress participants as flamenco discussants",
+        "rationale": "The passage contests the competence of many congress participants and asserts a boundary around who is qualified to debate cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "no «está puesto en el Cante»",
+        "target": "knowledgeable versus unknowledgeable congress participants",
+        "rationale": "The phrase draws an epistemic insider/outsider boundary between those who are properly versed in cante and those who are not."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text discusses debate and clarification at congresses, but it does not clearly frame institutional learning access or pedagogy as the main discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco congress authority and the need for knowledgeable debate on cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-18-right-lo-jondo-en-federico-garcia-lorc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "lo jondo es la forma de exponer y comunicar el sentimiento de unas raíces y vivencias humanas... buscando la belleza en lo natural, en lo real, huyendo de todo lirismo hueco",
+        "target": "the aesthetic of lo jondo",
+        "rationale": "The passage defines jondo value through aesthetic criteria: rooted feeling, lived experience, natural beauty, reality, and rejection of hollow lyricism."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "García Lorca, como ser del sur, como persona marcada por una idiosincrasia propia de nuestro pueblo",
+        "target": "Federico García Lorca as an Andalusian/jondo artist",
+        "rationale": "The passage frames Lorca's jondo aesthetics through collective southern/Andalusian identity and belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "escribiendo cumple su compromiso de artista jondo",
+        "target": "Lorca's writing as jondo artistic expression",
+        "rationale": "The author presents Lorca's writing as genuinely jondo, authorizing it as a proper expression of deep flamenco aesthetics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The definition mentions roots and lived experience, but the stronger visible function is aesthetic definition and identity framing rather than tradition-continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "Lorca's work as an Andalusian jondo aesthetic expression",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1983-03-20-right-viaje-por-la-solea-mesa-redonda-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "el juicio de los aficionados, que no ha nacido de libros o de siempre subjetivas referencias, centra nuestro interés",
+        "target": "aficionados' judgment in the mesa redonda",
+        "rationale": "The article explicitly privileges aficionados' judgment as a source of flamenco knowledge over bookish or indirect references."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la menos contaminada es la de Triana... auténticamente pura, auténticamente originaria, sólo es la primera",
+        "target": "soleá de Triana compared with other soleá forms",
+        "rationale": "The passage draws a purity boundary by identifying Triana's soleá as the least contaminated and the only authentically pure/original form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "hay que hablar de antes y después de Tomás Pavón",
+        "target": "Tomás Pavón's role in soleá",
+        "rationale": "The passage canonizes Tomás Pavón as a before/after landmark in the history and hierarchy of soleá performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Se considera este cante como columna vertebral del flamenco, por su sobriedad y belleza, y por ser el cante a compás por excelencia",
+        "target": "soleá as a flamenco form",
+        "rationale": "The passage defines the value of soleá through aesthetic criteria such as sobriety, beauty, and compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text discusses origin and rootedness of soleá, but the clearest authority claim is purity boundary work around Triana."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Triana soleá, soleá as a central flamenco form, and Tomás Pavón's canonical role",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1983-03-22-left-las-letras-flamencas-de-ramon-po",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Las letras flamencas de Ramón Porras tienen la enorme ventaja de no tener que guardar turno para pasar a ser verdadero trino popular.",
+        "target": "Ramón Porras's flamenco lyrics",
+        "rationale": "The passage explicitly praises the lyrics as immediately fit to become popular song."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "el cante verdadero de una mujer, su compañera, las aguarda",
+        "target": "Rosario López's singing of Ramón Porras's lyrics",
+        "rationale": "The phrase presents the performance context as true cante, authorizing the lyrics through genuine flamenco expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "se precipitan como un rayo a la voz de una cantaora, Rosario López, que las acrisola, las hace suyas, las mece al compás",
+        "target": "transmission of Porras's lyrics into sung flamenco practice",
+        "rationale": "The passage frames the lyrics as transformed into living cante through a singer's embodied voice and compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and estremecimiento appear as aesthetic language, but the passage primarily evaluates the lyrics and their passage into performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "Ramón Porras's lyrics as immediately performable true flamenco song",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-22-right-la-experiencia-que-es-madre-de-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "El flamenco en la escuela hay que hacerlo realidad, hay que potenciarlo.",
+        "target": "flamenco education in schools",
+        "rationale": "The passage explicitly calls for institutionalizing and strengthening flamenco learning in schools."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la Junta de Andalucía pretende llevar nuestro arte a los centros de enseñanza; y en ello está rigurosamente empeñado el departamento de flamenco del ente autonómico",
+        "target": "Junta de Andalucía and official flamenco education policy",
+        "rationale": "The passage invokes an official autonomous institution as authorizing and implementing flamenco's public-cultural place in schools."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "nosotros no estamos en contra de cualquier innovación en el flamenco... pero ojo!, dentro de los canones básicos con que nació",
+        "target": "innovation in flamenco",
+        "rationale": "The article uses critical boundary discourse to allow innovation only within the basic canons of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article discusses diffusion and school practice, but the strongest heritage evidence is institutional recognition rather than safeguarding/living heritage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The reference to basic canons with which flamenco was born suggests origins, but it functions mainly as critical boundary work around innovation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "school-based flamenco education and institutionally supported diffusion, with innovation bounded by flamenco canons",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

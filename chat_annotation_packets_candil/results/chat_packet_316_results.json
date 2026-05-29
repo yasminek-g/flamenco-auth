@@ -1,0 +1,273 @@
+[
+  {
+    "article_id": "1996-03-3-right-la-epoca-dorada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Desde el punto de vista total, el flamenco de verdad se vio seriamente disminuido por la muerte de cada uno de ellos.",
+        "target": "the flamenco associated with Fernandillo, Diego del Gastor, María and related older artists",
+        "rationale": "The passage explicitly identifies a valued form as 'flamenco de verdad', authorizing those artists as bearers of real flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "pronto este arte se quedará completamente en manos de los profesionales astutos, un espectáculo teatral sin alma ni significado",
+        "target": "professionalized theatrical flamenco",
+        "rationale": "The text frames staged professional spectacle as a soulless degradation of real flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "No quedan muchos de los auténticos flamencos",
+        "target": "the named older artists and their philosophy of flamenco",
+        "rationale": "The passage canonizes a small group of older figures as among the remaining authentic flamencos whose deaths diminish the art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article evokes fiesta and lived sociability, but the visible excerpt does not clearly contrast participatory settings with spectatorship as a distinct discourse function beyond the anti-theatrical authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "older intimate flamenco associated with Fernandillo and the Morón milieu, contrasted with professional theatrical flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article, but the visible ending gives clear authenticity and anti-spectacle evidence."
+  },
+  {
+    "article_id": "1996-03-7-left-qu-pasa-con-el-flamenco-de-hoy",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "un flamencólogo es un señor que escribe relativamente bien, tiene poder en el mundo del flamenco, ha escrito algún que otro libro, pero que adolece de un desconocimiento enorme de nuestros cantes",
+        "target": "flamencologists and literary-critical authority",
+        "rationale": "The author directly contests expert/flamencologist authority by accusing it of power without cante knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Sólo me siento un aficionado que llega al mundo de la literatura y de la crítica desde lo más jondo de nuestros cantes y sus vivencias y no al contrario.",
+        "target": "aficionado knowledge grounded in cante and lived experience",
+        "rationale": "The passage draws an epistemic boundary between insider aficionado knowledge rooted in lived flamenco and outside literary criticism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Diferenciamos el decir el cante con el saber cantar. Saber cantar es relativamente fácil... Pero la dificultad donde se genera, es en el decir.",
+        "target": "criteria for good cante",
+        "rationale": "The passage defines flamenco quality through the aesthetic criterion of 'decir el cante' rather than merely singing well."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions vivencias and accumulated experience, but it does not clearly describe oral, embodied, familial, or lineage transmission as the mechanism of learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "authority to define and judge contemporary flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is polemical and clearly contests who has authority to speak about flamenco."
+  },
+  {
+    "article_id": "1996-03-12-left-matilde-coral-sabidur-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Entonces, tu baile se forma de lo aprendido de las familias. —¡Claro, como se bailaba antes!",
+        "target": "Matilde Coral's flamenco dance formation",
+        "rationale": "The passage explicitly frames her learning as family/community-based transmission rather than formal schooling."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "conviviendo con personas y con familias de una estirpe fuera de serie, como la de los \"Pelúos\", los \"Amador\"... Todo eso lo he vivido y me ha llenado de arte",
+        "target": "families and neighborhood convivencia that shaped Matilde Coral's art",
+        "rationale": "Community, family lineage, and convivencia are presented as the social ground that authorizes and fills her art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "éste era otro baile, un baile más estudioso dentro de la raíz, porque estábamos más cerca de la base. Hoy hay más estudio que raíz, por desgracia.",
+        "target": "older rooted flamenco dance versus contemporary study-heavy dance",
+        "rationale": "The text grounds value in roots and proximity to the base, contrasting it with a present loss of rootedness."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The opening mentions official recognition of her classes, but the visible passage mainly authorizes her through public experience and community formation rather than a concrete teaching authority claim."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Official recognition is mentioned, but the passage does not frame the issue as heritage, listing, patrimony, or institutional heritage authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Matilde Coral's flamenco knowledge and dance authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The ending poem contains praise, but it appears only loosely connected to the main interview excerpt, so it is not used for additional coding."
+  },
+  {
+    "article_id": "1996-03-16-left-manuel-yerga-lancharro-en-las-d-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "para hablar con cierta autoridad sobre el tema que nos ocupa, se tiene que estudiar con atención los cantes",
+        "target": "claims about whether older cante was worse than current cante",
+        "rationale": "The author polices who may speak with authority, requiring deep study before making evaluative claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "¿Existen en la actualidad cantaores que sean capaces de superar o de igualar los cantes de Fernando el Herrero? Creo que ni los hay ni los habrá.",
+        "target": "Fernando el Herrero and other older cantaores",
+        "rationale": "The passage constructs a hierarchy by ranking older figures as unsurpassable exemplars."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "entonces se acompañaba más pausadamente y con más \"honradez\" hacia el cantaor... hoy lo hacen... por exponer públicamente su virtuosismo",
+        "target": "guitar accompaniment then versus now",
+        "rationale": "The text applies aesthetic criteria of restraint, honesty toward the singer, and criticism of excessive virtuosity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "El cante... ha tenido unos intérpretes y aficionados que han actuado de correa de transmisión en el tiempo, haciendo posible que el cante... continúe llegando hasta nosostros",
+        "target": "historical continuity of cante through interpreters and aficionados",
+        "rationale": "The passage legitimates cante through transmission and continuity across time."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The final note calls flamenco 'nuestro arte singular' and Andalucía its mother, but it does not explicitly shift into patrimony, public heritage, or cultural policy framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "older cante and guitar practice, especially Fernando el Herrero and early twentieth-century cantaores",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; more than three codes are justified because the excerpt separately contains authority policing, canon ranking, aesthetic criteria, and continuity discourse."
+  },
+  {
+    "article_id": "1996-03-17-left-se-nos-fue-am-s-rodr-quez-rey",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Tus amigos del mundo te recordaremos siempre.",
+        "target": "collective memory of Amós Rodríguez Rey",
+        "rationale": "The obituary frames remembrance as a collective community act around a flamenco figure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Habían asistido a este último viaje su viuda... representantes de peñas y entidades gaditanas",
+        "target": "peñas, entities, friends, and aficionados surrounding Amós Rodríguez Rey",
+        "rationale": "The presence of peñas, entities, and friends presents community recognition as part of the singer's final commemoration."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Grandullón, buena gente. Cantaor completo.",
+        "target": "Amós Rodríguez Rey",
+        "rationale": "The passage explicitly evaluates Amós as a complete singer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Aula Militar de Cultura and peñas are named, but they do not clearly confer official heritage recognition or authorized heritage status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text praises Rancapino's ending of a malagueña as 'magistralmente', but it does not develop a clear aesthetic criterion beyond generic praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Amós Rodríguez Rey as remembered flamenco singer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible memorial language supports conservative community-memory and evaluation codes."
+  }
+]

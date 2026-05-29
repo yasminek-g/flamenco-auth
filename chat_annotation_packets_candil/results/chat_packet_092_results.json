@@ -1,0 +1,202 @@
+[
+  {
+    "article_id": "1984-03-25-right-discograf-a-de-artistas-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'muy antiguos' signals age, but the text is too short and does not use antiquity to authorize, preserve, or evaluate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only a nine-word fragment is visible, so there is insufficient context for reliable coding."
+  },
+  {
+    "article_id": "1984-05-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "deleznable espectáculo ... nos llega a Jaén devaluada y con unos intérpretes flamencos poco cualificados ... en unas cotas artísticas que lindan con lo grotesco",
+        "target": "la representación de «Macama Jonda» llegada a Jaén",
+        "rationale": "The editorial explicitly evaluates the production as artistically devalued, poorly performed, and nearly grotesque."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "el equipo «Candil» le recomienda mayor seriedad en la elección de los intérpretes, a ser posible volver al magnífico equipo del estreno",
+        "target": "José Heredia Maya y la selección de intérpretes para «Macama Jonda»",
+        "rationale": "The editorial voice claims critical authority to police standards of proper staging and performer selection for the flamenco-theatrical work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The capital/provinces contrast marks cultural condescension, but it does not clearly define a flamenco insider/outsider boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage implies criteria such as seriousness and qualified performers, but the stronger and less redundant coding is general critical evaluation plus boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "la versión de «Macama Jonda» representada en Jaén",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-05-4-right-la-novela-andaluza-de-posguerra-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la aparición del tema del flamenco como una presencia vivificadora y humanísima dentro de los diferentes relatos de esta región",
+        "target": "el tema del flamenco en la novela andaluza",
+        "rationale": "The passage evaluates flamenco as an enlivening and deeply human presence within Andalusian narrative."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The visible word 'tradiciones' occurs in a quoted critique of selfish social traditions, not in a flamenco roots or continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Named literary critics and publishing prizes appear, but the visible excerpt does not use them to authorize a flamenco judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco as a literary theme in Andalusian postwar fiction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains one clear evaluative claim about flamenco as a literary theme."
+  },
+  {
+    "article_id": "1984-05-8-right-la-guitarra-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la guitarra parece más estrechamente unida al flamenco, de cuya expresión oral es inseparable ... instrumento heredado de los pueblos orientales",
+        "target": "la guitarra flamenca",
+        "rationale": "The passage grounds the guitar's flamenco value in inseparable continuity with flamenco expression and an inherited historical origin."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "difícilmente podrá aportarse un instrumento más adecuado que la guitarra",
+        "target": "la guitarra como acompañamiento del cante flamenco",
+        "rationale": "The passage makes an explicit evaluative judgment that the guitar is the most suitable instrument for flamenco expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The discussion implies aesthetic suitability, but it does not clearly name or apply a distinct flamenco quality criterion beyond the broader evaluation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Department of Flamenco is mentioned in relation to festival systematization, but the visible excerpt does not frame this as official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "la guitarra flamenca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is truncated and appears to include ending material from a separate item; only visible claims with clear discourse function were coded."
+  },
+  {
+    "article_id": "1984-05-11-left-breve-res-n-e-n-mairena-de-alcor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "dio lectura del Acta del Pleno Municipal, mediante el cual se aprobaba por unanimidad denominar a dicha plaza con el nombre de Antonio Mairena",
+        "target": "la memoria pública de Antonio Mairena",
+        "rationale": "Municipal approval and renaming of a public square officially authorize Mairena's cultural commemoration."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "grandioso cantaor ... Papa del Cante Antonio I",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through hierarchical honorific language that elevates him as an exemplary flamenco figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text praises Mairena as a grand singer and person, but that evaluative force is captured more specifically by canon/hierarchy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The commemoration has public-memory value, but the stronger visible mechanism is official institutional recognition rather than general heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

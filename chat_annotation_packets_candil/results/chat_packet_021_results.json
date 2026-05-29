@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1981-02-19-right-aunque-no-quepa-en-el-papel-bibl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "cada vez que muere un viejo cantaor es como si un archivo ardiera",
+        "target": "Pepe el de la Matrona's remembered knowledge and documentary legacy",
+        "rationale": "The article frames the old cantaor as a living archive whose memories, writings, and testimony preserve flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el excelente libro, por varias razones, de José Luis Ortiz Nuevo «Recuerdos de un cantaor sevíllano»",
+        "target": "publications on Pepe el de la Matrona",
+        "rationale": "The article explicitly evaluates the quality and importance of the bibliography devoted to Matrona."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una de las más interesantes y completas de nuestros cantaores",
+        "target": "the bibliography and historical status of Pepe el de la Matrona",
+        "rationale": "The passage ranks Matrona's bibliography among the most complete and historically valuable for flamenco singers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "PED_03",
+        "reason": "The article discusses books and recordings as sources of knowledge, but the visible text does not clearly frame them as pedagogical access or institutional learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Pepe el de la Matrona's documentary, bibliographic, and historical legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-02-20-right-pepe-el-de-la-matrona-notas-para",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "hay algo que quisiéramos significar y que es factor dominante: Su definitoria categoría artística",
+        "target": "Pepe el de la Matrona's recorded singing",
+        "rationale": "The passage makes a direct evaluative judgment about Matrona's artistic stature."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "como contrapunto a la otra Andalucía que se ofrecía a nuestros vecinos. Así, frente a la Andalucía de la «grasia», la pan-dereta y la juerga",
+        "target": "Matrona's discography as a truer representation of Andalusian flamenco",
+        "rationale": "The article contrasts Matrona's flamenco with a degraded caricature of Andalusia, drawing a boundary between legitimate jondo expression and stereotype."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Documento sonoro de una vida, de «una hermosa epopeya del hombre que vivió, al aire de la libertad, los fecundos territorios del flamenco»",
+        "target": "Los tesoros del flamenco antiguo recordings",
+        "rationale": "The recordings are framed as a sonic document preserving a life and an older flamenco world for cultural memory."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "AUTH_03",
+        "reason": "The phrase 'auténtica raíz' suggests rootedness, but the stronger discourse function in the passage is boundary work against caricature."
+      },
+      {
+        "code": "CRIT_02",
+        "reason": "The article mentions style, voice, and 'saber decir', but does not develop them enough as distinct aesthetic criteria beyond the broader evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Pepe el de la Matrona's discographic legacy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-03-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Es, acaso, el primer ensayo que, pese a lo dogmático de sus aservaciones y a la heterogeneidad de planteamiento, afronta con ambición y rigor la temática jonda",
+        "target": "Demófilo's Colección de Cantes Flamencos",
+        "rationale": "The editorial positions Demófilo's work as an authoritative early critical study while also assessing its limitations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el cante sigue ahí, sin diluir su contenido, ante nuevos y sensibles receptores. Sigue siendo expresión genuina y, esencialmente, conserva su puridad",
+        "target": "cante flamenco after the cafés cantantes and ópera flamenca",
+        "rationale": "The passage grounds present flamenco value in survival, continuity, genuineness, and preserved purity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "los intentos realizados son demasiado torpes para que valoresos esta posibilidad",
+        "target": "attempts at creative evolution in cante",
+        "rationale": "The editorial evaluates contemporary creative attempts in cante negatively."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "HERIT_03",
+        "reason": "The editorial invokes memory and rememoration, but the visible text works more directly through tradition/continuity than through public heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Demófilo's critical legacy and the continuing value of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-03-4-right-lo-jondo-en-fernando-villal-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Villalón fue, fundamentalmente, poeta por la copla y no por esa especie de determinismo geoliterario",
+        "target": "critical interpretation of Fernando Villalón's poetry",
+        "rationale": "The article contests an existing critic's interpretive frame and asserts an alternative expert definition of Villalón's poetic basis."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "tiene su raíz más íntima, más auténtica, en el sentimiento directo de aquel ambiente, de aquel paisaje, de aquella tradición y de aquellas costumbres",
+        "target": "the Andalusian popularism in Villalón's poetry",
+        "rationale": "The passage authorizes Villalón's work through roots, authenticity, tradition, and direct continuity with Andalusian customs."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la cultura popular andaluzay, muy en especial, la jonda no puede olvidar en su centenario",
+        "target": "Fernando Villalón's place in Andalusian jondo culture",
+        "rationale": "The article elevates Villalón as a figure who should be remembered within the jondo cultural canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "CRIT_02",
+        "reason": "The text uses terms such as 'expresión' and 'certera', but the visible excerpt does not clearly apply them as independent flamenco aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Fernando Villalón's relation to lo jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt provides sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1981-03-7-right-notas-in-ditas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Figura mítica y legendaria",
+        "target": "Joaquín el de la Paula",
+        "rationale": "The article canonizes Joaquín by presenting him as a mythical and legendary flamenco figure."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Con sumo orgullo suele comentar Antonio Mairena, refiriéndose a Joaquín, que él fue su gran maestro",
+        "target": "Joaquín el de la Paula as Antonio Mairena's teacher",
+        "rationale": "The passage legitimates Joaquín through a recognized pedagogical relationship with Antonio Mairena."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Su pueblo, Alcalá, le rindió merecido homenaje al ponerle a una calle su nombre",
+        "target": "public commemoration of Joaquín el de la Paula in Alcalá",
+        "rationale": "The naming of a street is an official civic act that publicly recognizes and memorializes the flamenco figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "code": "COMM_04",
+        "reason": "The text uses gitano identity framing, but the relevant passages are mostly biographical or stereotyped description rather than a clear claim about authority or belonging."
+      },
+      {
+        "code": "AUTH_03",
+        "reason": "The mention of Soleá de Alcalá as a local cante suggests rootedness, but it is not developed enough as a tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Joaquín el de la Paula's status in flamenco memory and transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

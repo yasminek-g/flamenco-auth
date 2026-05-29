@@ -1,0 +1,264 @@
+[
+  {
+    "article_id": "1990-07-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ernest Lluch descalificaba la iniciativa de otros colegas suyos... conceptuándolos como pura frivolidad, inadecuada al rigor académico",
+        "target": "Ernest Lluch's dismissal of university flamenco courses/chairs",
+        "rationale": "The editorial directly contests an academic authority's boundary-policing claim that flamenco study is frivolous and unsuitable for university rigor."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "Promover una cátedra de flamencología, un aula o un curso de verano sobre lo jondo, no es sino el intento de recuperar las señas de identidad de un Pueblo",
+        "target": "flamenco as collective cultural identity",
+        "rationale": "Flamenco is framed as public cultural heritage tied to recovering the identity markers of a people."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "cursos o cátedras destinadas a la profundización o simple divulgación del Flamenco, como hecho cultural",
+        "target": "university-based flamenco study and dissemination",
+        "rationale": "The passage explicitly centers institutional access to flamenco knowledge through courses, chairs, and university dissemination."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "University institutions are central, but the stronger evidence concerns pedagogy and public identity rather than official heritage authorization mechanisms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco's legitimacy as university-level cultural knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article rebuts an exclusionary academic judgment and legitimates flamenco as cultural knowledge and identity."
+  },
+  {
+    "article_id": "1990-07-4-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Se troquelan valores en base a consideraciones declarativas y no argumentativas. Esta veneración colateral, sin valor probativo casi siempre",
+        "target": "old aficionados' genealogical value claims",
+        "rationale": "The passage criticizes a mode of flamenco authority-making as unsupported and credulous, policing evidentiary standards for flamenco history."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "el máximo regodeo de este tipo especial de entendidos de la historia privada del flamenco",
+        "target": "specialized insiders of private flamenco history",
+        "rationale": "The text identifies a class of knowledgeable insiders whose private-history expertise shapes claims about flamenco value, though in a critical tone."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ahora ha entrado en decadencia definitiva. Ya no cabe esperar de él sino algún disparate senil.",
+        "target": "Marchena's later singing/artistic trajectory",
+        "rationale": "The passage gives an explicit negative evaluation of an artist's decline and expected future output."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There are comparative claims about lesser-known relatives being elevated, but the passage mainly critiques unsupported canon-making rather than building a stable hierarchy itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "unsupported insider genealogical authority and Marchena's late style",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but visible evidence clearly supports critique of authority claims and direct artistic evaluation."
+  },
+  {
+    "article_id": "1990-07-8-left-xxvi-concurso-nacional-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "entre la no presentación de concursantes y la mediana-baja calidad del resto, éstas han quedado deslucidas hasta el punto de declarar, con justicia, desierto el primer premio",
+        "target": "the contest's classification phases and contestants",
+        "rationale": "The passage explicitly evaluates the contest phases as diminished by low quality and justifies withholding first prize."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "han contribuido con su homenaje a resaltar la personalidad de un minero cantaor de esta tierra que ha sabido pasear con orgullo la creatividad que en la misma se le ha dado a los estilos mineros",
+        "target": "Francisco Coronel Merelo and Linares mining-song tradition",
+        "rationale": "The homage elevates Coronel as a representative figure of local mining-style creativity, giving him exemplary status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The word participar appears, but it refers to contest participation and does not construct a participatory/public-private flamenco setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and the peña are mentioned as participants in the event, but their authority to judge or define flamenco is not the main discourse function in the visible span."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the contest's quality and Coronel's local artistic standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text primarily evaluates contest quality and commemorative status."
+  },
+  {
+    "article_id": "1990-07-9-left-flamenco-en-la-universidad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "dentro de los Cursos de Verano de la Universidad Complutense de Madrid, se han desarrollado unas jornadas que no dudamos en calificar de históricas para el flamenco",
+        "target": "the Complutense summer seminar on flamenco",
+        "rationale": "The passage legitimates institutional university access to flamenco knowledge through a seminar and structured specialist instruction."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Gracias a la sensibilidad de las autoridades académicas madrileñas... ha sido posible la celebración del Seminario: «Historia, presente y futuro del Flamenco»",
+        "target": "academic institutional recognition of flamenco",
+        "rationale": "Academic authorities and institutional programming are presented as conferring recognition and cultural value on flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "unas declaraciones desafortunadas del ex-ministro socialista don Ernest Lluch, descalificaban a la Universidad Complutense por dar entrada en sus aulas al flamenco",
+        "target": "Ernest Lluch's criticism of university flamenco study",
+        "rationale": "The article attacks an external authority's attempt to delegitimize flamenco's place in university education."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "la sabia lección teórico-práctica de Andrés Batista, compartida con dos de sus discípulos, sobre la «Historia de la guitarra flamenca»",
+        "target": "Andrés Batista's teaching of flamenco guitar history",
+        "rationale": "The passage presents a recognized instructor delivering authoritative theoretical-practical flamenco knowledge with disciples."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions gitano students and racist/xenophobic discourse, but the visible passage mainly reports inclusion in the seminar rather than defining flamenco authority through identity framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is performance praise, but the article's dominant discourse functions are institutional pedagogy and legitimation; additional review coding would be less central."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "flamenco as legitimate university knowledge and cultural practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "This article strongly legitimates university flamenco study and rebuts its exclusion."
+  },
+  {
+    "article_id": "1990-07-9-right-esa-m-sica-viene-de-la-tierra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "después de haberme pasado veinte años junto a don Antonio Mairena, después de conocer el cante por dentro y por fuera",
+        "target": "the speaker's flamenco knowledge through long association with Mairena and lived practice",
+        "rationale": "The speaker authorizes his knowledge through long embodied proximity to a master and insider experience of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "después de cuarenta años estudiándolo, explicándolo y cantándolo... me veo en la irremediable necesidad... de abordar su existencia algo más allá de su simple presencia",
+        "target": "the speaker's authority to interpret cante",
+        "rationale": "The passage establishes the speaker as an expert-practitioner entitled to interpret and define cante beyond surface description."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Jero lleva dentro de sí el misterio insondable y la técnica de doscientos años de flamenco",
+        "target": "Jerónimo Maya's guitar playing/flamenco inheritance",
+        "rationale": "The text grounds present artistry in embodied continuity with two centuries of flamenco technique and mystery."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'figuras cumbres' and praise of Mairena suggest hierarchy, but the visible evidence more directly authorizes expertise and lineage than canon construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "expert-practitioner interpretation of cante and inherited flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible excerpt is truncated but provides clear self-authorization through study, singing, and proximity to Mairena."
+  }
+]

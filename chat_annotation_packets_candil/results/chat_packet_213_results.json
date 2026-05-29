@@ -1,0 +1,199 @@
+[
+  {
+    "article_id": "1990-05-23-right-de-juan-breva",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "para la biografía del genial cantaor veleño",
+        "target": "Antonio Ortega Escalona «Juan Breva»",
+        "rationale": "The passage explicitly praises Juan Breva as a 'genial' singer while introducing his discographic record."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Breva",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is descriptive discographical chronology; only the explicit evaluative phrase supports a code."
+  },
+  {
+    "article_id": "1990-05-24-left-jugando-al-despiste",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Con la llegada de los festivales flamencos y los espectáculos de masas, se inicia la época de la «representación» del flamenco. Se canta por dinero, como profesión, y los jóvenes «recrean» viejos estilos, viejos poemas que ya no sienten, pero que reproducen.",
+        "target": "festival/mass-spectacle flamenco and professionalized recreation of old styles",
+        "rationale": "The passage links mass spectacle and paid professional performance to a loss of lived feeling, framing staged representation as a weakened or distanced form of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sin esta referencia del pasado difícilmente puede tenerse una clara visión de la actualidad",
+        "target": "historical reference to older flamenco forms and singers",
+        "rationale": "The author presents reference to the past as necessary for correctly understanding present flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "comprenderán que usted trata de despistarles con términos agoreros y pseudoproféticos, augurando la muerte de dos cantes, la toná y la siguiriya",
+        "target": "R. Pachón's claims about the future and decline of flamenco forms",
+        "rationale": "The passage uses critical authority to reject another commentator's interpretation as misleading and to police claims about legitimate flamenco history and repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article mentions 'pureza' and questions the concept, but the visible excerpt does not sustain a clear purity boundary that excludes a specific improper flamenco form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "debates over old styles, mass representation, Camarón-era innovation, and the future of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt contains both Pachón's position and the respondent's critique; polarity is therefore contested."
+  },
+  {
+    "article_id": "1990-05-25-left-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "ayudarnos, cada cual con su granito de arena, en esta tarea de recuperación de estilos perdidos y olvidados",
+        "target": "lost and forgotten flamenco styles",
+        "rationale": "The passage frames endangered flamenco styles as objects of collective recovery and preservation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "difundirlo entre mis alumnos... tres de mis alumnos, a los que la Junta de Andalucía les ha aprobado un proyecto, coordinado por mí, titulado «Formas flamencas olvidadas»",
+        "target": "student research and dissemination of flamenco knowledge",
+        "rationale": "Flamenco knowledge is being mediated through an approved school project and classroom dissemination."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "entrar en contacto con todos los aficionados y entendidos en el tema flamenco... los socios de la peña, los aficionados del pueblo, los cantaores",
+        "target": "aficionados, peña members, local singers, and knowledgeable community participants",
+        "rationale": "The passage treats local aficionados, peña members, and singers as holders of knowledge needed to recover flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The request invokes tradition and lost styles, but the stronger discourse function is safeguarding/recovery and community knowledge rather than an explicit tradition-continuity claim authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "community"
+      ],
+      "target": "recovery and transmission of forgotten flamenco styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The later Corruco correction is mainly factual documentation and was not coded."
+  },
+  {
+    "article_id": "1990-05-26-left-discografia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Destaca por la elegancia y majestad que imprime a sus interpretaciones.",
+        "target": "Ana Parrilla's interpretations",
+        "rationale": "The passage explicitly evaluates the aesthetic quality of Ana Parrilla's performances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Está considerada una de las figuras más relevantes de su arte.",
+        "target": "Ana Parrilla",
+        "rationale": "The passage canonizes Ana Parrilla by ranking her among the most relevant figures in her art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article lists family relations to flamenco artists, but it does not state that knowledge or authority was transmitted through that lineage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Ana Parrilla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-05-26-right-premium-iben-alcazar-premium-cri",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The advertisement mentions 'tradición de nuestros maestros cerveceros', but it concerns beer production rather than flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise evaluates a beer product, not a flamenco artist, performance, style, venue, publication, or event."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Beer advertisement; no flamenco-relevant discourse."
+  }
+]

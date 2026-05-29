@@ -1,0 +1,264 @@
+[
+  {
+    "article_id": "1988-09-18-right-del-alma-de-andaluc-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Y en sus brazos —¡octava maravilla!—, vibró el alma profunda de Sevilla por su Arte inmortal: Pastora Imperio.",
+        "target": "Pastora Imperio",
+        "rationale": "The poem explicitly praises Pastora Imperio through exalted evaluative language, presenting her art as extraordinary and immortal."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The dedication says CANDIL 'mantiene viva el ascua del Flamenco', but this is a brief honorific phrase rather than developed safeguarding or public-culture heritage discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'duende' and 'pasión' appear poetically, but they are not applied as explicit criteria for judging a performance or style."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pastora Imperio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short poetic homage; coded only the clear evaluative/canonizing praise."
+  },
+  {
+    "article_id": "1988-09-19-left-tiempo-igual-a-evoluci-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la oscura esfera donde vivía y de donde no debió salir fuera si aspiraba a conservarse puro y genuino",
+        "target": "el cante gitano / cante flamenco",
+        "rationale": "The passage quotes and discusses a purity boundary that ties legitimate preservation of cante to remaining in a restricted social sphere."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "La evolución desarrolla, mueve, transforma, pero sucesivamente, progresivamente, serenamente.",
+        "target": "la evolución del cante",
+        "rationale": "The article grounds legitimate change in continuity, gradual development, and accumulated historical sedimentation rather than rupture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Porque no es igual innovar que evolucionar. Innovación equivale a novedad, a invento, a romper o alterar lo construido",
+        "target": "innovación frente a evolución en el cante",
+        "rationale": "The author uses critical boundary work to distinguish acceptable evolution from improper innovation that disrupts established flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions oral tradition, but mainly as a historiographic source and object of critique, not as an authoritative mode of embodied or lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "References to diction, artistic polish, and expressive quality appear, but the core discourse function is about evolution and authenticity rather than a sustained aesthetic criteria framework."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "the historical evolution of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly debates purity, evolution, and innovation as competing criteria for legitimate cante."
+  },
+  {
+    "article_id": "1988-09-19-right-sobre-la-nana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "puedo asegurarle que la NANA no forma parte de la nómina general de cantes. Sé que existen estudiosos que opinan lo contrario.",
+        "target": "la Nana como posible cante flamenco",
+        "rationale": "The author exercises classificatory authority by excluding the Nana from the general roster of flamenco cantes while acknowledging opposing expert views."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el cante flamenco fue creado por los hijos de Andalucía, para nuestro deleite y envidia de otros pueblos.",
+        "target": "the origin of cante flamenco",
+        "rationale": "The passage grounds flamenco's legitimacy in an Andalusian origin claim and treats that origin as culturally defining."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "A professor is quoted about the Nana, but the quote explains lullaby form rather than establishing flamenco pedagogical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article makes a strong origin claim, but it does not explicitly frame a practice as genuinely or truly flamenco beyond the Andalusian origin assertion already captured by AUTH_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "the classification and origin of flamenco cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt is sufficient for a clear boundary/classification code and an origin-continuity code."
+  },
+  {
+    "article_id": "1988-09-21-left-voces-del-futuro-juan-de-la-male",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "conforman, hoy día, una avanzadilla del jondo más puro y respetuoso de la tradición.",
+        "target": "Juan de la Malena and his generation of cantaores",
+        "rationale": "The passage legitimates a group of singers through purity and respect for tradition, drawing a boundary around valued jondo practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "tengo tradición cantaora porque toda mi gente ha cantao",
+        "target": "Juan de la Malena's flamenco formation",
+        "rationale": "The singer grounds his flamenco knowledge in family and generational singing tradition, a lineage-based mode of transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "las peñas es en el único sitio donde se puede ir a cantar y charlar de Flamenco; es el único sitio que encuentras donde tienes calor flamenco, donde hay una gran familia que entiende lo que tú dices",
+        "target": "peñas flamencas",
+        "rationale": "Peñas are presented as authoritative communal spaces that sustain understanding, warmth, and flamenco belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Lo que sí digo es que el gitano lo dice de otra manera... La voz del gitano suena de otra forma.",
+        "target": "gitano identity in cante",
+        "rationale": "The interview frames ethnic identity as shaping vocal authority and expressive difference in flamenco performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Statements such as 'Antonio Mairena ha sido el más completo de todos' rank artists, but this is a brief interview aside and less central than the article's stronger purity, lineage, community, and identity claims."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Tablaos, festivals, and peñas are mentioned as learning sites, but the strongest learning evidence is lineage and community transmission rather than institutional or transnational access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Juan de la Malena and community-based flamenco authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains several distinct discourse functions; four codes are used because they are supported by separate, clear spans."
+  },
+  {
+    "article_id": "1988-09-22-left-podio-y-picota",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "el Ayuntamiento de Utrera... rotulando, en emotivo acto público, con los nombres de Fernanda y Bernarda la avenida",
+        "target": "Fernanda and Bernarda as publicly commemorated flamenco figures",
+        "rationale": "The municipal naming of an avenue publicly authorizes flamenco memory and cultural value through official civic recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Un espectáculo serio, digno, pleno de arte y de enjundia flamenca lo viene a ocupar por derecho propio.",
+        "target": "the spectacle 'Esa forma de vivir'",
+        "rationale": "The column explicitly praises the spectacle's seriousness, dignity, artistry, and flamenco substance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se puede hacer teatro flamenco sin concesiones a la galería, sin flamenquismo al uso... nada más que con buen cante, baile ajeno al academicismo, y toque y palmas a compás.",
+        "target": "proper flamenco theatre",
+        "rationale": "The passage polices the boundary of proper flamenco theatre by rejecting pandering, stock flamenquismo, and academicism in favor of cante, dance, toque, and compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The 'Decálogo para el buen aficionado' is called a norm, but the excerpt does not show enough of its content to establish a clear pedagogical authority code."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peña and aficionado authority are present in the background, but the strongest visible discourse is official commemoration and critical evaluation rather than community authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "official flamenco commemoration and proper flamenco theatre",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is a column of praise/blame; emitted codes focus on official recognition and clear critical boundary work."
+  }
+]

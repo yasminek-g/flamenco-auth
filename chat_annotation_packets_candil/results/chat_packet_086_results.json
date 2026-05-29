@@ -1,0 +1,134 @@
+[
+  {
+    "article_id": "1984-01-4-right-juan-rejano-el-andaluz-olvidado-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt canonizes Juan Rejano within literary history, but the visible discourse is about poetry and Andalusian literary culture rather than flamenco authority or flamenco canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt evaluates a poet's literary-historical position, but no flamenco-related discourse function is clear enough to code."
+  },
+  {
+    "article_id": "1984-01-4-right-juan-rejano-el-andaluz-olvidado-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The excerpt canonizes Juan Rejano within literary history, but the visible discourse is about poetry and Andalusian literary culture rather than flamenco authority or flamenco canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Duplicate article_id/text in the packet; annotation matches the duplicate input record."
+  },
+  {
+    "article_id": "1984-01-9-left-cante-en-la-venta-paralelismo-y",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic evocation of cante and suffering, but no explicit evaluative, authorizing, pedagogical, heritage, community, or critical discourse function is present."
+  },
+  {
+    "article_id": "1984-01-9-right-coincidencia-entre-el-cante-negr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Esta música, que nunca salió de su hogar, funcionó para dar expresión a la enorme tragedia racial que les había sucedido, y también para registrarlos para sus hijos y para la historia. Era un testamento viviente de sus angustias.",
+        "target": "la música del grupo racial perseguido comparada con el flamenco",
+        "rationale": "The passage frames the music as collective memory and a living testament transmitted to descendants and history."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la nueva música que surgió era patrimonio único de este grupo perseguido. Todos los intérpretes fueron miembros del grupo racial minoritario, y todos los centros de la música fueron también lugares donde vivieron los «morenos».",
+        "target": "la música creada por el grupo racial minoritario",
+        "rationale": "Identity-group belonging defines who owns, embodies, performs, and represents the musical tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Cuando nosotros los americanos aventuramos a definir el llamado duende del cante jondo, no hay otro recurso que recurrir a la palabra americana soul",
+        "target": "el cante jondo y su relación estética con el soul",
+        "rationale": "The passage uses duende and soul as aesthetic criteria to define the expressive quality shared by the two traditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'minoría de la minoría' suggests exceptional performers, but it functions mainly as identity representation rather than a clear canon or ranking."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The excerpt discusses origins of a music in a persecuted group, but it does not clearly use rootedness or continuity to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "the persecuted group's music and its comparison with cante jondo/flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only where the visible comparison gives identity, memory, and aesthetic-definition functions; the retrieval hint alone was not used as evidence."
+  },
+  {
+    "article_id": "1984-01-11-left-las-letras-flamencas-de-alfonso-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of flamenco-style letras, but it does not make a discourse claim about authority, heritage, pedagogy, belonging, or criticism."
+  }
+]

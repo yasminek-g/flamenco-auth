@@ -1,0 +1,199 @@
+[
+  {
+    "article_id": "1988-07-11-left-viejo-carn-flamenco-aurelio-de-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Uno de los aspectos que más estimo en el cante es la capacidad de producir “silencios”, dar cabida oportuna a “silencios oportunos”",
+        "target": "el cante de Aurelio de Cádiz / criterios del cante",
+        "rationale": "The passage explicitly names the production of well-timed silences as an aesthetic criterion for valued cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word “maestro” appears as an honorific for Aurelio, but the visible passage does not position him as a teacher or pedagogical authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The introduction frames the serial as recovered notes and intrahistory, but the visible text does not clearly connect this recovery to public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Aurelio de Cádiz's cante and aesthetic authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; coded only the visible aesthetic statement about cante."
+  },
+  {
+    "article_id": "1988-07-13-left-poemas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic flamenco imagery is present, but no clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse function is visible."
+  },
+  {
+    "article_id": "1988-07-13-right-ellos-los-protagonistas-dicen-la",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Yo empecé imitando a Marchena, cantaba mucho por Marchena.",
+        "target": "La Niña de la Puebla's early flamenco learning",
+        "rationale": "The singer describes beginning through imitation of Marchena, making a recognized artist a model in oral/performative transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "para cantar lo que hace falta es llevarlo dentro, la prueba está en que hay quien no sabe ni leer ni escribir y te levantan para arriba y te pegan un pellizco",
+        "target": "criteria for flamenco singing",
+        "rationale": "The passage defines good cante through inward feeling and affective force rather than formal education."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions homage to a woman singer, but the visible text does not clearly use gender as an analytic frame for flamenco authority or belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase “llevarlo dentro” implies inward authenticity, but the passage functions more directly as an aesthetic criterion for singing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "La Niña de la Puebla and criteria for cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only visible statements about imitation and criteria for singing."
+  },
+  {
+    "article_id": "1988-07-15-right-madrid-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no estuvo ni mucho menos a la altura a que su saber y veteranía le obligaban. Mal de voz y asfixiado en algún final",
+        "target": "Chano Lobato's performance",
+        "rationale": "The review explicitly judges the performance as falling below the standard expected of the artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "aconsejamos, si ello es posible, el reforzamiento de la parte cantaora, a nuestro juicio, la más débil de su magnífico espectáculo",
+        "target": "the cantaora component of the dance spectacle",
+        "rationale": "The reviewer applies a specific aesthetic criterion, the strength of the singing component, to assess the overall spectacle."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text is a critical review and mentions “referencia crítica,” but it does not foreground critic or expert authority beyond ordinary reviewing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Madrid flamenco recital performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; visible review contains both negative and positive evaluation."
+  },
+  {
+    "article_id": "1988-07-17-left-voces-del-futuro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el flamenco constituye un legado inestimable de nuestro patrimonio cultural",
+        "target": "flamenco",
+        "rationale": "The passage explicitly frames flamenco as an invaluable legacy of collective cultural patrimony."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "el carácter dinámico de este patrimonio, que no está muerto, mientras existen voces que por vía de la rememoración lo traigan a la realidad vivida",
+        "target": "flamenco as living cultural heritage",
+        "rationale": "The passage treats flamenco heritage as living, dynamic, recreated through memory and performance, and linked to safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "no nos cabe duda de que la suya es una de las auténticas voces del futuro",
+        "target": "José Heredia “Joselete”",
+        "rationale": "The passage legitimates Joselete by presenting his voice as an authentic future bearer of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text praises Joselete's “estricto sentido del compás,” but this is secondary to the stronger heritage and authenticity framing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions sources such as Manuel Torre and Antonio Mairena and recovery of local cantes, but the visible passage does not clearly make tradition/roots the primary authorizing move."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "authenticity"
+      ],
+      "target": "flamenco as living patrimony and Joselete as a future voice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Clear public heritage and living-heritage framing; the restaurant advertisement at the end was ignored."
+  }
+]

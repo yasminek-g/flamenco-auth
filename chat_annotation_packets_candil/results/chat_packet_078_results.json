@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1983-07-21-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ha habido un programa excelente",
+        "target": "Festival Internacional de la Guitarra / 3.er Encuentro Flamenco",
+        "rationale": "The passage explicitly evaluates the festival program as excellent."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "ha tenido muy buena acogida en la afición cordobesa",
+        "target": "Córdoba flamenco audience/community",
+        "rationale": "The reception by the local afición is used as a marker of community recognition and value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "sobresalió el cante de Antonio Núñez «Chocolate», con ese metal de voz tan puro y tan gitano",
+        "target": "Antonio Núñez «Chocolate»'s cante",
+        "rationale": "The passage applies aesthetic criteria of vocal metal, purity, and gitano quality to praise the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'voz tan puro y tan gitano' suggests purity language, but in context it functions as performance praise rather than a clear boundary excluding impure flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Municipal cultural sponsorship appears, but the excerpt does not frame the event as official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco festivals, performers, and peña activity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The ending context about the northernmost peña is descriptive; it was not emitted because it does not clearly authorize community authority beyond location/status."
+  },
+  {
+    "article_id": "1983-07-22-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Cuidada la presentación, acertado el planteamiento, esta realización de la prestigiosa firma discográfica es algo a tener en cuenta por la afición flamenca",
+        "target": "the LP 'Homenaje a Terremoto'",
+        "rationale": "The review explicitly evaluates the album's presentation and conception positively."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Dentro de una verdad indiscutible e indiscutida: la raíz gitana, Terremoto ha dejado, discográficamente, firmes muestras de su arte",
+        "target": "Terremoto de Jerez's recorded cante",
+        "rationale": "The passage uses artistic firmness, gitano roots, and truth as criteria for assessing Terremoto's recorded artistry."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "dando a todos ellos los específicos acentos de su Jerez natal",
+        "target": "Terremoto's interpretation of flamenco styles",
+        "rationale": "The review grounds the authority and character of Terremoto's singing in rooted local continuity with Jerez."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'nombres y hombres' is not identity-group framing; it simply describes participants in the tribute album."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The album preserves recordings of a deceased singer, but the visible excerpt frames this chiefly as discographic review rather than safeguarding or heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Terremoto de Jerez and the tribute LP",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-24-left-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a name and is insufficient for discourse coding."
+  },
+  {
+    "article_id": "1983-07-24-right-jos-palanca",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is too short and mostly memorial/advertising header material, so it is insufficient for judgment."
+  },
+  {
+    "article_id": "1983-09-2-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "encaran el flamenco, en la actualidad, como un signo más de una civilización brillante que a este Sur atormentado se le ha expropiado",
+        "target": "flamenco as part of Andalusian cultural identity/history",
+        "rationale": "The editorial grounds flamenco's present meaning in Andalusian identity, historical roots, and a recovered civilizational past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La importancia como instrumento de exégesis de «La Copla Andaluzia» estriba, a nuestro juicio, en el enfoque original con que se plantean integralmente las formas de expresión andaluzas",
+        "target": "Rafael Cansinos Assens's 'La Copla Andaluza'",
+        "rationale": "The editorial asserts critical authority by evaluating the book as an important interpretive instrument for Andalusian expressive forms and flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "contribuir, en la medida de nuestras humildes posibilidades, a rescatar del olvido y de la indiferencia a valores como Rafael Cansinos Assens",
+        "target": "Rafael Cansinos Assens and his contribution to flamenco understanding",
+        "rationale": "The passage frames the editorial act as recovery from oblivion and cultural memory work around a neglected figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "autor prolífico como pocos, y de una perspicacia extraordinaria para profundizar en el arcano mundo de lo jondo",
+        "target": "Rafael Cansinos Assens",
+        "rationale": "The editorial explicitly praises Cansinos Assens's insight and capacity to interpret the jondo world."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The editorial strongly invokes cultural identity and recovery, but does not explicitly use patrimony/heritage as a public cultural category."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text discusses exegesis and understanding, but it does not position a teacher, school, or method as pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Cansinos Assens's role in interpreting flamenco and Andalusian expressive history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

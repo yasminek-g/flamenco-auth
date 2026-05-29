@@ -1,0 +1,257 @@
+[
+  {
+    "article_id": "1980-01-6-right-martos-en-la-geografia-de-los-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "las noticias del Martos de principios de siglo, salvo raras excepciones, las recibimos a través de la tradición oral",
+        "target": "knowledge of Martos cafés cantantes",
+        "rationale": "The passage explicitly frames local flamenco history as transmitted through oral tradition because written sources were destroyed."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "cuanto podía ser fuente de información veraz y fidedigna del pasado... fue destruido",
+        "target": "lost historical memory of Martos and its cafés cantantes",
+        "rationale": "The article treats destroyed archives and surviving memories as a problem of recovering and preserving local cultural history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "historia que ni por asomo yo pensara que viera la luz impresa en una revista dedicada a fomentar el conocimiento y grandeza de los cantes de nuestra bendita Andalucía",
+        "target": "Candil's publication of Martos flamenco history",
+        "rationale": "The magazine is positioned as an authoritative mediator that brings local flamenco knowledge into print and promotes the value of Andalusian cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The trigger 'leyendas' appears, but the passage uses it as oral-memory material rather than constructing a canon, ranking, or hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article invokes past continuity, but the clearest function is oral transmission and memory recovery rather than tradition authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Martos cafés cantantes as recoverable Andalusian flamenco history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; codes are based only on visible beginning/window/ending text."
+  },
+  {
+    "article_id": "1980-01-8-right-quejio",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem evokes pain, lament, and quejío, but does not clearly apply these as explicit criteria for judging flamenco quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text poetically associates cante with pain and desolation, but does not make a clear authenticity or proper-flamenco claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text with strong imagery but no clearly codable discourse function under the conservative rules."
+  },
+  {
+    "article_id": "1980-01-9-right-a-antonio-cuevas-el-piki-devorad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el gemido sobrehumano continuaba brotando... hasta convertirse en una protesta viva",
+        "target": "Antonio Cuevas «El Piki» singing por siguiriyas",
+        "rationale": "The passage interprets the quality and force of the singing through aesthetic criteria of gemido, protest, and expressive intensity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "una protesta viva... de la gente humilde a la que no le sale ni una a derechas... sino su voz para quejarse",
+        "target": "humble and marginalized people represented through siguiriyas",
+        "rationale": "The cante is framed as the voice and protest of an identified marginalized community, making social identity central to its meaning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The prose strongly responds to a performance, but the visible excerpt is more interpretive and poetic than a direct evaluative review."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory and persecution appear, but the passage does not clearly frame the cante as public heritage safeguarding or collective memory-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "El Piki's siguiriyas as expressive protest of marginality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are based only on visible beginning/window/ending text."
+  },
+  {
+    "article_id": "1980-01-12-right-la-saeta-de-ja-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Unas saetas hondas, tristes, sin barroquismos y por eso precisamente más conmovedoras.",
+        "target": "the saetas of Jaén",
+        "rationale": "The passage defines the value of the Jaén saeta through aesthetic criteria of depth, sadness, austerity, and emotional force."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Pero añoro aquella humilde saeta de Jaén, en labios de aceituneros",
+        "target": "humble Jaén saeta sung by olive workers",
+        "rationale": "The article preserves and mourns the memory of a local, socially grounded saeta practice as a disappearing cultural form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "En aquella Semana Santa humilde y sencilla de nuestro Jaén de principios de siglo, sin oropeles ni excesivo terciopelo",
+        "target": "early twentieth-century Jaén saeta practice",
+        "rationale": "The passage values humble, intimate, unadorned local practice over ornate public display, linking setting and simplicity to flamenco-religious authenticity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text contrasts humble Jaén saetas with later modernized or more ornate forms, but it does not clearly exclude the latter as fake or impure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Aceituneros and local Jaén identity are important, but the clearest functions are aesthetic evaluation, memory preservation, and intimate-authentic setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage",
+        "authenticity"
+      ],
+      "target": "the old humble saeta of Jaén",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-01-13-left-alfredo-arrebola-embajador-flame",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "unas sobrias, medidas y valientes interpretaciones —verdaderas oraciones— de diversos cantes de la mejor solera y prosapía flamenca",
+        "target": "Alfredo Arrebola's Cádiz performance",
+        "rationale": "The article directly praises Arrebola's interpretations as sober, measured, brave, and rooted in strong flamenco lineage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "dedicar especial atención a la introducción del cante flamenco y de sus motivaciones en los medios universitarios",
+        "target": "Arrebola's university flamenco work",
+        "rationale": "The passage frames Arrebola as expanding institutional access to flamenco knowledge in university settings."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "esta manifestación única, verdadero tesoro universal y patrimonio artístico genuinamente andaluz, como es el cante flamenco",
+        "target": "cante flamenco",
+        "rationale": "The passage explicitly frames flamenco as universal treasure and genuinely Andalusian artistic heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "un gran cantaor flamenco y a un erudito conocedor... que le distingue netamente de tanto «flamencólogo» estereotipado, diletante y sabihondo",
+        "target": "Arrebola versus stereotyped flamencologists",
+        "rationale": "The article grants Arrebola expert authority while policing a boundary against shallow or false flamencological expertise."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Arrebola's Aula de Flamencología and conference-singer role suggest pedagogical authority, but PED_03 more precisely captures the institutional university-access function."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'genuinamente andaluz' has authenticity force, but it appears inside a stronger explicit heritage framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Awards and distinctions are mentioned, but the main visible function is evaluation and expert authority rather than canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Alfredo Arrebola and university mediation of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

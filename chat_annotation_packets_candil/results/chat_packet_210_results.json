@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "1990-03-18-right-la-di-spora-del-flamenco-pe-a-fl",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "los especialistas del “show-business” internacional ... están ya al acecho de cualquier posibilidad de “hacer dinero”",
+        "target": "international commercialization and media treatment of flamenco",
+        "rationale": "The passage frames show-business and mediatization as threats that could corrupt the cante and make it lose value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "una música que, por más respetable que fuera, en ningún caso podía coincidir con la etiqueta flamenca de la cual se jactaba",
+        "target": "music marketed in France under a flamenco label",
+        "rationale": "The text draws a boundary between legitimate flamenco and music falsely claiming the flamenco label."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "la necesidad de una información seria en torno al cante para evidenciar dichos fraudes y tratar de imposibilitarlos en el futuro",
+        "target": "French students, professors, and aficionados seeking access to serious knowledge about cante",
+        "rationale": "Serious information is presented as a transnational mechanism for educating listeners and preventing fraudulent flamenco claims."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Rennes peña is described as defending cante, but the visible evidence is better captured as transnational pedagogy and authenticity boundary-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco’s international reception in France",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt, but the visible text clearly supports the emitted codes."
+  },
+  {
+    "article_id": "1990-03-20-left-cantes-nuevos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "nada se parece esta soleá, en su estructura melódica, al resto de los demás estilos tradicionales de este palo",
+        "target": "El Lebrijano’s new soleá composition",
+        "rationale": "The passage evaluates and explains the cante through aesthetic criteria of melodic structure and relation to traditional styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "sería conveniente, por parte de los aficionados ... poder escuchar de nuevo estos temas y proponer otros distintos diseminados por la discografía flamenca con el fin de catalogar",
+        "target": "aficionados cataloging new flamenco styles through recordings",
+        "rationale": "The article calls for collective access to recordings and classification work by aficionados as a means of organizing flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional styles are invoked as a reference point, but the passage mainly performs aesthetic analysis and cataloging rather than grounding present value in tradition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "newly composed or cataloged soleá styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-03-20-right-cr-nica-de-la-final-del-i-concur",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "lo ofrecido por Canal Sur no correspondió a las esperanzas que se habían creado",
+        "target": "Canal Sur’s broadcast and the competition final",
+        "rationale": "The passage explicitly judges the event and broadcast as falling short of expectations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "largas falsetas ... más que ayudar en algo a los artistas, propició un determinado desangelamiento en la estructura unitiva de los tercios",
+        "target": "guitar accompaniment and the structure of the performed cantes",
+        "rationale": "The reviewer applies aesthetic criteria such as accompaniment, unity, structure, and expressive force to judge performance quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas are mentioned as a flamenco public watching the final, but they are not clearly granted authority to judge or sustain flamenco in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the final of the regional cante competition and some performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible review language is sufficient for critical-evaluation coding."
+  },
+  {
+    "article_id": "1990-03-21-right-de-la-ra-z-y-la-evoluci-n-del-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "su base musical, su aire tonal, su raíz espiritual de la que procede el que ahora conservamos",
+        "target": "the historical root and continuity of cante",
+        "rationale": "The passage authorizes present cante through a claimed spiritual and musical root preserved from earlier history."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Se nace cantaor para después hacerse cantaor heredando por pura tradición oral los cantes de nuestros últimos cantaores antepasados",
+        "target": "cante transmission among cantaores",
+        "rationale": "The passage explicitly frames flamenco knowledge as inherited through oral tradition from previous generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "los mantenedores de la pureza natural siempre se verán obligados a luchar por hacer prevalecer la verdad de esa pureza",
+        "target": "the purity of cante against adulteration and mercantilism",
+        "rationale": "The article draws a boundary between pure, truthful cante and adulterating forces such as artistic excess or mercantilism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The Andalusian people are central to the origin narrative, but the strongest discourse functions are roots/continuity, oral transmission, and purity boundary-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text uses aesthetic vocabulary such as Tierra, Pueblo, Dolor, Grito y Arte, but the main function is definitional-authenticating rather than a specific critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "cante flamenco as rooted, orally transmitted, and pure",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-03-23-left-poemas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is poetic material rather than discourse that evaluates, authorizes, teaches, transmits, ranks, criticizes, or defines belonging."
+  }
+]

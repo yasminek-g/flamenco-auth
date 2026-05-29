@@ -1,0 +1,204 @@
+[
+  {
+    "article_id": "1988-03-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The visible text lists several peñas and their new boards, but this is administrative reporting rather than a claim that peñas or aficionados possess authority to recognize, sustain, or judge flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The ending cites legal regulation around use of the term «nacional» for flamenco activities, but it does not frame flamenco as heritage or patrimony through official recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt is mainly organizational notices and legal-administrative information; no code is clearly supported by discourse-function evidence."
+  },
+  {
+    "article_id": "1988-03-24-left-discograf-a-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only a byline is visible, so there is insufficient context for annotation."
+  },
+  {
+    "article_id": "1988-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "esta Conferencia ha significado el acontecimiento más relevante de la última década",
+        "target": "Conferencia Internacional «Dos siglos de Flamenco»",
+        "rationale": "The editorial explicitly evaluates the conference's importance and quality, while also judging its shortcomings."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "puede convertirse en el foro más importante para la profundización y mejor defensa del arte flamenco",
+        "target": "institutional conference forum for flamenco study",
+        "rationale": "The text frames an institutional forum as a means for deepening flamenco knowledge and defending the art, giving the conference a knowledge-mediating role."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The conference is institutionally sponsored, but the visible passage does not frame flamenco as heritage or patrimony through official heritage recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The editorial names criteria for scholarly seriousness such as debate, musicology, and bibliography, but these judge a conference rather than defining aesthetic quality in flamenco performance or repertoire."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Conferencia Internacional «Dos siglos de Flamenco»",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article combines strong legitimation of the conference with specific critical reservations."
+  },
+  {
+    "article_id": "1988-05-4-right-la-uni-n-catedral-del-cante-mine",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "esa Unión aromada y apresada por el orgullo de una tradición histórica y cultural",
+        "target": "La Unión and Cante Minero",
+        "rationale": "The passage grounds the value of La Unión's flamenco role in historical and cultural tradition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el Arte Flamenco, como sentimiento definidor del ser andaluz, tiene en La Unión un valedor insobornable",
+        "target": "Arte Flamenco as Andalusian identity represented through La Unión",
+        "rationale": "Flamenco is framed as defining Andalusian being, and La Unión is positioned as a community/place that represents and defends that identity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el mejor símbolo de La Nueva California, la fragua viva y protectora del cante",
+        "target": "La Unión as symbolic and protective center of Cante Minero",
+        "rationale": "The text elevates La Unión into an exemplary symbolic center and guardian of the cante, creating a value hierarchy around place and tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The language of protection and living tradition is suggestive, but the visible passage does not clearly shift into public heritage, safeguarding, or patrimonial framing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article addresses the «gran familia flamenca», but this is a communal invitation rather than a clear claim that aficionados or peñas authorize flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "La Unión as guardian and symbolic center of Cante Minero",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is truncated, the visible excerpt clearly legitimates La Unión through tradition, identity, and exemplary status."
+  },
+  {
+    "article_id": "1988-05-7-right-g-nesis-garc-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "docente, escritora, conferenciante y pregonera... una tratadista de lujo para desentrañar el siempre resbaladizo origen de los Cantes Mineros",
+        "target": "Génesis García as an authority on Cantes Mineros",
+        "rationale": "The passage legitimates García as someone authorized to explain and mediate flamenco knowledge about the origins of Cantes Mineros."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el Taranto de Almería es el origen y la madre de la Minera",
+        "target": "origin and development of Cantes Mineros",
+        "rationale": "The interview grounds flamenco forms in origin, continuity, and genealogical relation, using the past to define the present repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "tenemos que distinguir entre lo que yo llamo el cante de los ancestros, Taranto y Taranta, y el cante de los maestros que serían las Cartageneras",
+        "target": "classification of Cantes Mineros styles",
+        "rationale": "The speaker constructs a classificatory hierarchy between ancestral cantes and master cantes, assigning comparative status within the repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "García is clearly presented as knowledgeable, but the stronger fit is pedagogical authority and classification rather than critic/reviewer authority or boundary policing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The interview mentions ancestros and maestros, but the visible text does not clearly describe embodied, oral, familial, or master-apprentice transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Génesis García's explanation of Cantes Mineros origins and classifications",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The interview is mainly a knowledge-authorizing and classificatory discussion of origins, terminology, and historical stages."
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "article_id": "1982-05-11-right-viejas-paginas-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "volver a entablar discusión sobre el tema, amén de innecesario, arrastraría las consabidas posturas maniqueas y las bizantinas discusiones",
+        "target": "the gitano/non-gitano origin debate in flamenco",
+        "rationale": "The editorial voice critiques a recurring flamenco debate as exhausted, polarizing, and not worth reopening without new evidence."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "los cantaores andaluces han repetido, resucitado o vivificado, lo que estaba en trance de perderse o envilecerse definitivamente",
+        "target": "cante jondo revived through Andalusian singers and contests",
+        "rationale": "The passage frames flamenco value through revival and continuity of something threatened with loss or degradation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Ricardo Molina... la hace depositaria, portadora y mantenedora, de las más puras tradiciones folklóricas andaluzas",
+        "target": "the Gitano people as bearers of Andalusian flamenco traditions",
+        "rationale": "The passage reports an identity-group framing in which Gitano people are positioned as carriers and maintainers of Andalusian folk-flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text mentions 'auténtico cante jondo', but the stronger function is origin/tradition debate and identity framing rather than a direct authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article discusses historical polemic figures and recovered literary value, but it does not clearly rank artists or works in a canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "the gitano/non-gitano origin debate and Gitano role in cante jondo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-12-left-escucha-sobre-lo-gitano-y-su-pol",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "en el sentimiento, lo andaluz y lo gitano andan del brazo y aún el gitano, se lleva la palma de lo andaluz. Yo no sé si en otras cosas, pero en el cante, desde luego",
+        "target": "Gitano identity in relation to Andalusian cante",
+        "rationale": "The text explicitly frames Gitano identity as especially representative of Andalusian feeling in cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Cinco siglos los contemplan desde la ancha Castilla, a los cuatro horizontes. Han pasado por todo lo que las generaciones de andaluces y españoles han pasado",
+        "target": "Gitano belonging within Spanish and Andalusian history",
+        "rationale": "The passage grounds Gitano belonging and cultural authority in long historical continuity and shared experience across generations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "el mundo de las genealogías está lleno de nebulosas... cuando llegamos al concepto de la raza, se pierde el hilo y hasta la soga de sus principios",
+        "target": "racial genealogy as a basis for flamenco origin claims",
+        "rationale": "The passage critiques genealogical and racial origin arguments as unstable and unreliable foundations for the flamenco polemic."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text contrasts Gitano and non-Gitano belonging, but it does not primarily draw an insider/outsider boundary around flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage links Gitano identity to cante, but it does not directly claim that a specific flamenco practice is authentic or inauthentic."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Gitano belonging and authority in Andalusian cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-13-right-x-congreso-de-actividades-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Rescate y conservación del patrimonio flamenco",
+        "target": "flamenco heritage as a cultural object for rescue and conservation",
+        "rationale": "The congress agenda explicitly frames flamenco as heritage requiring rescue and conservation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Coordinación de Peñas... Necesidad de unión... Federación Nacional de Peñas, operativa... Confederación de Peñas andaluzas",
+        "target": "flamenco peñas and their federated organization",
+        "rationale": "The passage treats peñas as key community institutions whose coordination and union matter for flamenco activity and authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no se admita, por la falta de seriedad intelectual y flamenca... nada relativo a la paternidad del cante entre payos y gitanos",
+        "target": "payos-versus-gitanos paternity debate in flamenco congresses",
+        "rationale": "The congress organizers police the agenda by excluding a debate judged intellectually and flamencologically unserious."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "El flamenco y la escuela",
+        "target": "flamenco knowledge in school contexts",
+        "rationale": "The suggested congress themes explicitly include flamenco in school, indicating institutional access and educational mediation as a topic of debate."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The list includes 'Pureza y seriedad flamenca en las Peñas', but the agenda phrase alone is too compressed to show clear purity boundary-work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The congress has an executive commission and structured agenda, but the visible text does not clearly show official heritage authorization beyond congress organization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The rejection of festival structure and discographic rigor are agenda items, but the clearest evaluative action is boundary policing of the debate and heritage/community planning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the X Congreso agenda for flamenco institutions, heritage, schooling, and debate boundaries",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-14-left-el-cante-en-la-mirada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Tu angustia se hace ritmo en tu garganta... tu voz se estremece en nuestra hondura",
+        "target": "cante as expressive voice of suffering",
+        "rationale": "The poem defines flamenco value through aesthetic criteria of rhythm, voice, anguish, and emotional depth."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Tu rajo popular, miel y granito, es eco de incisivo sentimiento. Sollozo de mi gente",
+        "target": "cante as rooted popular expression of the poet's people",
+        "rationale": "The passage grounds cante in popular voice and collective rooted feeling, giving it value as continuity with a people."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "hombre del Sur, estoico y campesino... con el grave escozor de lo andaluz",
+        "target": "southern Andalusian identity represented through cante",
+        "rationale": "The poem frames cante through regional and social identity, linking its expressive authority to the suffering southern/Andalusian figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poem evokes collective memory and old suffering, but it does not clearly frame cante as heritage or safeguarding."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The language is evaluative and lyrical, but it does not review or judge a specific artist, performance, or work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "cante as Andalusian popular expression",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-14-right-manuel-celestino-cobos-cobitos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Yo lo escuchaba de chiquillo en las máquinas esas que había antes y cuando me gustaba una cosa la copiaba.",
+        "target": "Cobitos's early learning of cante",
+        "rationale": "The singer describes learning by listening and copying, a concrete oral/aural transmission process."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la guitarra pá acompañar no tiene más que dar tonos... cuando cantamos no debe dar más que tonos",
+        "target": "guitar accompaniment for cante",
+        "rationale": "Cobitos defines an aesthetic criterion for proper accompaniment: the guitar should support the singer with tones rather than intrusive ornament."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "le dije a uno de esos niños modernos, cuando empezaba hacer esas cosas raras mientras yo cantaba: «¡Qué la vas a romper!»",
+        "target": "modern guitarists' accompaniment practices",
+        "rationale": "The speaker uses critical authority as an experienced cantaor to police a boundary against modern intrusive accompaniment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "en el café de Tarifa donde yo cantaba iba un buen aficionao... un hombre muy bueno que nos invitó a comer en su casa muchas veces",
+        "target": "aficionado Diego Piñero and local flamenco sociability",
+        "rationale": "The interview grounds flamenco circulation in aficionado support and hospitality within local social networks."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Ramón is said to have given advice, but the visible passage does not make him a sustained pedagogical authority compared with the stronger listening/copying evidence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Cobitos names admired singers and guitarists, but the excerpt does not clearly construct a broader canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Cobitos's learning and standards for cante accompaniment",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; coded only visible review text."
+  }
+]

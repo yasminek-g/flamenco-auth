@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1996-05-43-right-fausto-olivares-en-las-cuevas-ce",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la voz verdadera-mente honda del flamenco no es — no tiene que ser necesariamente— ni la voz melodiosa ni la voz formidable de los grandes tenores: es la voz terrible, ancestral, profunda",
+        "target": "la voz honda del flamenco",
+        "rationale": "The passage defines what the truly deep flamenco voice is, authorizing a non-melodious, terrible, ancestral quality as proper flamenco depth."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la voz terrible, ancestral, profunda, que alía raíces nocturnas con las raíces de todos nuestros antepasados",
+        "target": "la voz honda del flamenco",
+        "rationale": "Flamenco value is grounded in ancestral roots and continuity with predecessors, not merely in present technical beauty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "También ésta ha renunciado a la estética de la perfección: atiende más al grito que al argumento, más al latido que a la melodía.",
+        "target": "la estética de lo jondo en flamenco y pintura",
+        "rationale": "The passage names aesthetic criteria for jondo value—grito, latido, depth—against perfection, argument, and melody."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En Torremolinos vi esa floresta última, abrumadora, fantástica y deslumbrante como un incendio purificador.",
+        "target": "la obra de Fausto Olivares",
+        "rationale": "The author explicitly evaluates Olivares's late work with strong praise for its overwhelming and dazzling force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "References to 'amigos del cante' and shared cante nights evoke community, but the visible passage does not clearly grant that group authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fausto Olivares's jondo painting and the deep flamenco voice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The main boundary is aesthetic rather than social: true jondo value is defined against melodic/perfectionist expectations."
+  },
+  {
+    "article_id": "1996-05-44-right-fausto-olivares-la-persona",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The excerpt praises Fausto as an artist and person, but the visible text does not connect the evaluation to flamenco or a flamenco-related artistic criterion."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The trigger word 'fuera' appears only in an ordinary subjunctive construction, not as an insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although truncated, the visible excerpt is a personal memorial and does not provide enough flamenco-specific discourse to code."
+  },
+  {
+    "article_id": "1996-05-46-right-el-mundo-en-sus-ojos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "donde el duende del flamenco se le coló por sus siempre alertados y expectantes ojos. Y en su alma se quedó para siempre porque el flamenco no podría encontrar mejor acomodo y abrigo.",
+        "target": "Fausto Olivares as a vessel for flamenco",
+        "rationale": "The passage legitimates Fausto by presenting his soul as an especially fitting home for flamenco and its duende."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el talento del artista devolvió cargado de magia, en el que alienta para siempre, inmortal, el espíritu de un hombre ejemplar y de un pintor prodigioso.",
+        "target": "Fausto Olivares",
+        "rationale": "The author explicitly evaluates Fausto as an exemplary man and prodigious painter whose artistic talent transforms the world."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The word 'duende' appears, but it is not clearly applied as an aesthetic criterion for judging a performance or artwork."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text describes Fausto as a man and older-brother figure, but gender does not organize flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Fausto Olivares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The flamenco-specific evidence is brief but explicit; confidence for AUTH_01 is medium because the excerpt is truncated."
+  },
+  {
+    "article_id": "1996-05-49-left-25-de-julio-de-1995",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "References to seguiriya, fandango, sones, and letras are poetic memorial language rather than applied criteria of flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'letras nuevas por memorizar' suggests repertoire memory, but the passage does not frame transmission, learning, or lineage authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is an elegy with flamenco imagery, but the visible text does not perform clear authorization, criticism, pedagogy, heritage work, or belonging boundary-making."
+  },
+  {
+    "article_id": "1996-09-3-left-a-ram-n-porras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ramón ha sido un referente sobre el flamenco básico y literario para mi persona. Sus escritos me han servido de guía literaria; sus consejos me han orientado sobre la forma de evaluar el hecho flamenco",
+        "target": "Ramón Porras González's critical authority",
+        "rationale": "The passage grants Porras authority as a reference figure whose writings and advice guide evaluation of flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Sus escritos me han servido de guía literaria; sus consejos me han orientado sobre la forma de evaluar el hecho flamenco; sus mensajes e ideas han ampliado mis quehaceres sobre el tema",
+        "target": "Ramón Porras González's transmission of flamenco knowledge",
+        "rationale": "Porras's writings, advice, and ideas are presented as authoritative guidance that teaches the author how to approach and evaluate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "su constante enfoque hacia parámetros ciertamente ortodoxos, sin olvidar los matices heterodoxos de sus escritos flamencos",
+        "target": "Porras's criteria for flamenco writing and evaluation",
+        "rationale": "The passage identifies orthodox and heterodox parameters as evaluative criteria shaping Porras's flamenco criticism."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "contribuir a un mayor esplendor, perfeccionamiento y difusión de esta cultura musical universal como es el flamenco",
+        "target": "flamenco as universal musical culture",
+        "rationale": "The passage frames flamenco as a public cultural form whose diffusion and improvement are collective editorial aims."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The editorial mentions eighteen years of accumulated work and history, but does not use the past to authorize proper flamenco through roots or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Porras is called a 'referente,' but the passage mainly authorizes his critical guidance rather than constructing a broader canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Ramón Porras González and Candil's flamenco editorial project",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is an editorial transfer-of-authority text, so the strongest codes concern critical authority and pedagogical guidance."
+  }
+]

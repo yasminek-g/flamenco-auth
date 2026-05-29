@@ -1,0 +1,257 @@
+[
+  {
+    "article_id": "1997-03-19-right-una-entre-mil-cr-nicas-chano-lob",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Eduardo no regateó esfuerzos para hacer comprender al auditorio el sentimiento de afecto y cariño que en Cádiz se tiene por Chano Lobato, de quien dijo que era un buen cantaor, gran artista y excelente persona.",
+        "target": "Chano Lobato",
+        "rationale": "The passage explicitly evaluates Chano's artistic and personal quality through praise by the speaker."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Gracias a Cádiz por parir a Enrique; gracias a Enrique por parir el cante; gracias a Aurelio por mantenerlo; y gracias a Chano por continuarlo",
+        "target": "Chano Lobato as continuer of Cádiz cante",
+        "rationale": "The passage legitimates Chano by placing him in a chain of origin, maintenance, and continuity from Cádiz and earlier masters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "No cabe duda de que este gaditano es la bandera, el escudo de la intensidad del cante. Es un fiel vigía de la pureza, de la legitimidad de un arte tan difícil, como es el flamenco",
+        "target": "Chano Lobato's cante",
+        "rationale": "The passage applies aesthetic and value criteria such as intensity, purity, legitimacy, and difficulty to define Chano's flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The language of pureza and legitimidad suggests authenticity, but it is already captured through the more specific aesthetic-criteria judgment in CRIT_02."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "A flamencologist and conference speaker mediate the judgments, but the article foregrounds the judgments themselves more than expert authority as a separate discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "authenticity", "criticism"],
+      "target": "Chano Lobato and Cádiz cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full article; strong evaluative and continuity discourse."
+  },
+  {
+    "article_id": "1997-03-20-right-del-baile-al-cante-y-del-cante-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Así, pues, el interés podrá radicar en la continuidad de las raíces atávicas, la exaltación de la propia personalidad y también por la adquisición de diferentes recursos como medio de vida.",
+        "target": "Chano Lobato's artistic formation in Cádiz",
+        "rationale": "The passage grounds artistic value and development in continuity with ancestral roots and local flamenco environment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "el proceso del aprendizaje parte de unas facultades innatas y de un ambiente que rodea al individuo... unas determinadas imágenes y unos sonidos que constituyen la música popular",
+        "target": "Chano Lobato's flamenco learning",
+        "rationale": "Learning is framed as situated, embodied, environmental transmission through sounds, images, imitation, and local practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "No obstante, es necesario que las futuras generaciones de aficionados flamencos sepan la importancia cantaora de acompañar al baile. En esta ‘escuela del compás’ se educaron mucha figuras del cante flamenco.",
+        "target": "accompaniment to baile as flamenco knowledge",
+        "rationale": "The article explicitly teaches future aficionados that accompaniment to dance is an authoritative school for forming complete cantaores."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text calls Chano a general cantaor, but the stronger function is pedagogical explanation of how dance accompaniment forms a complete singer."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy"],
+      "target": "Chano Lobato's formation from baile to cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is partly expository, but it clearly uses learning theory and roots to legitimate Chano's trajectory."
+  },
+  {
+    "article_id": "1997-03-24-right-retrato-de-cantaor-con-sal",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Chano es, sin lugar a dudas, uno de los últimos románticos, parte de la aristocracia flamenca que forjó la industria del hambre.",
+        "target": "Chano Lobato",
+        "rationale": "The passage places Chano in a privileged hierarchy of exemplary flamenco figures, using aristocratic and last-of-a-kind language."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Yo, cuando empecé a concentrarme, a digerir los cantes, era con 16 ó 17 años, que iba a la venta a escuchar a Aurelio... pues en un cuarto, yo por fuera lo escuchaba.",
+        "target": "Chano Lobato's learning from Aurelio and the Cádiz environment",
+        "rationale": "The passage frames flamenco knowledge as acquired through listening, proximity, and informal embodied transmission around respected artists."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "¡Ole! ¿Qué bonito! ¡Eso es cultura viva! Fíjate tú, lo echaba por la boca, fíjate.",
+        "target": "spoken/sung flamenco expression",
+        "rationale": "The phrase explicitly frames the expressive practice as living culture, connecting performance and memory to living heritage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The barrio concentration of flamencos suggests community grounding, but the visible evidence functions more clearly as a learning/transmission context."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duende is discussed briefly, but the quoted passage is more about Chano's bodily feeling than an applied criterion for evaluating a performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "heritage", "criticism"],
+      "target": "Chano Lobato as living transmitter of Cádiz cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated review text, but the visible windows provide enough evidence for these codes."
+  },
+  {
+    "article_id": "1997-03-30-left-jos-n-ez-de-castro-g-mez-la-aleg",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "creó la Distinción Compás del Cante en honor del arte flamenco... por un jurado nombrado al efecto, y cuyos condicionamientos estaban perfectamente establecidos",
+        "target": "Distinción Compás del Cante and Chano Lobato's award",
+        "rationale": "The passage frames flamenco value through an authorized award mechanism, jury, formal criteria, and public recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la pureza; la profesionalidad y la constancia a lo largo de una trayectoria artística; la revitalización de estilos en desuso; la puesta al día de matices cantaores",
+        "target": "criteria for awarding flamenco artists",
+        "rationale": "The passage explicitly lists evaluative criteria by which flamenco quality is judged and recognized."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "hoy día, sin dejar esta faceta primordial, puede sentirse orgulloso de ser ya un maestro consumado y el rey del compás",
+        "target": "Chano Lobato",
+        "rationale": "The passage canonizes Chano through master status and superlative ranking as the rey del compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'genuino de Cádiz' and the criterion of pureza suggest authenticity, but the article mainly uses them as part of critical evaluation and award criteria."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Cádiz and Los Puertos are described through history and rancio abolengo, but the central discourse is Chano's evaluation and institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "criticism", "authenticity"],
+      "target": "Chano Lobato as award-worthy master of Cádiz cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Institutional recognition is present through award/jury criteria, though not in a full patrimonio frame."
+  },
+  {
+    "article_id": "1997-03-30-right-una-sencilla-manera-de-ser-impor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Yo sólo conocía, de su trabajo, el aprecio que le tenían los profesionales —que es cosa rara... su calidad cantaora—",
+        "target": "Chano Lobato's professional recognition",
+        "rationale": "Recognition by flamenco professionals is used as community authority validating Chano's cantaor quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Por calidad humana y artística Candil acierta de lleno con este número monográfico.",
+        "target": "Chano Lobato and Candil's monographic tribute",
+        "rationale": "The passage explicitly evaluates Chano's human and artistic quality and judges the tribute as justified."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "A los artistas, cuando ya han demostrado su calidad de forma sobrada, cuando ya son reconocidos y estimados por la mayoría, es cuando hay que homenajearlos.",
+        "target": "Chano Lobato as an artist deserving homage",
+        "rationale": "The passage constructs a status threshold for homage based on demonstrated quality and broad recognition, positioning Chano within that canonizing logic."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions La Privadilla, Villa Rosa, fiestas, and juergas, but these settings are biographical rather than a clear public/private participatory value contrast."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The references to night, juerga, and direct acquaintance suggest intimate sociality, but they are not explicitly framed as more authentic than public or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "Chano Lobato as recognized artist deserving homage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible beginning and ending provide sufficient support for recognition and evaluation codes."
+  }
+]

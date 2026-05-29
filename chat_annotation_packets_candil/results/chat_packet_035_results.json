@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1981-09-23-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ha sido considerado figura del arte flamenco a raíz del famoso concurso flamenco de Granada en 1.922",
+        "target": "Diego Bermúdez Cala, «El Tenazas de Morón»",
+        "rationale": "The passage elevates El Tenazas into flamenco stature through post-contest recognition as a figure of the art."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "El Tenazas fue paisano y discípulo personal de Silverio Franconetti, de él aprendió los cantes por cañas",
+        "target": "El Tenazas's learning from Silverio Franconetti",
+        "rationale": "The passage frames flamenco knowledge as transmitted through a personal disciple-master relationship."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "representa en los cantes que grabara un fiel testimonio de pureza y limpia transmisión",
+        "target": "El Tenazas's recorded cantes",
+        "rationale": "The article explicitly authorizes El Tenazas's recorded cantes as genuine testimony of purity and clean transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la profundidad dolorosa de su arte por siguiriyes",
+        "target": "Francisco La Perla's siguiriyas",
+        "rationale": "The passage evaluates La Perla's art through the aesthetic criterion of painful depth in siguiriyas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article uses purity language, but it does not clearly exclude or devalue a specific impure target."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Named authorities such as Ricardo Molina and Fernando Quiñones are cited, but the visible passage mainly uses them for transmission/evaluation rather than explicit boundary-policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "El Tenazas and Francisco La Perla as historically valuable flamenco figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-24-left-discograf-a-placas-de-artistas-f",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a heading, byline, and place name, so there is insufficient context for a reliable discourse code."
+  },
+  {
+    "article_id": "1981-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la denuncia de los adobados intereses, de las basuras retóricas intencionadas, los bizantinos debates, las visiones maniqueas, las tomas de posiciones, los racismos mal disimulados",
+        "target": "distorting interests and polemics around flamenco",
+        "rationale": "The editorial uses critical authority to police unacceptable discourse around flamenco, denouncing rhetorical trash, sectarian debates, and racism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la más honda, auténtica y noble de las músicas andaluzas",
+        "target": "flamenco / cante jondo as Andalusian music",
+        "rationale": "The passage explicitly authorizes flamenco as authentic, deep, and noble Andalusian music."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "De esta agorera, inintelectual y desafortunada predicción... no queda ya más que el recuerdo como «desbarre»",
+        "target": "Roque Barcia's 1881 prediction about flamenco",
+        "rationale": "The editorial explicitly evaluates and dismisses Barcia's prediction as ominous, unintellectual, unfortunate, and absurd."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The editorial invokes a century-long historical correction, but the stronger claim is authenticity and critical refutation rather than tradition/continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions racism and Andalusian origins, but it does not develop identity categories as a clear basis of authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco as authentic Andalusian music against hostile or distorted discourse",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-11-4-right-el-caso-especial-de-los-caracole",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Dos fuentes parecen confluir, con toda claridad, en el nacimiento del cante de caracoles; una de ellas —la esencial— es andaluza; la otra, posterior y temática, es madrileña.",
+        "target": "origin and development of the cante de caracoles",
+        "rationale": "The passage grounds the cante's meaning in origins, sources, and historical continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ramón Gómez de la Serna lo menciona como al «salvador del cante de caracoles», cuando realmente fue uno de sus creadores y el más antiguo",
+        "target": "Tío José «El Granaíno» in relation to caracoles",
+        "rationale": "The passage places El Granaíno in a canonizing origin position as one of the creators and the oldest figure linked to the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "imprimiendo así a esa modalidad un aire más vivo y valiente, creó y propulsó torrijos, romeras y otras cantiñas",
+        "target": "El Granaíno's contribution to cañas and cantiñas",
+        "rationale": "The article evaluates his stylistic contribution through aesthetic criteria of liveliness, bravery, creation, and propulsion."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la fuerza y la supervivencia del tema tauromáquico... una consecuencia o testimonio de la secular vecindad de dos mundos, andaluces y españoles",
+        "target": "tauromachic themes in flamenco modalities",
+        "rationale": "The passage presents survival across time as evidence of a long-standing historical relationship between bullfighting and flamenco worlds."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The authors correct earlier claims about El Granaíno, but the visible passage mainly establishes historical origins and canon status rather than broader expert boundary-policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the cante de caracoles and El Granaíno's historical role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text was truncated, but the visible excerpt contains sufficient historical-origin and evaluative evidence."
+  },
+  {
+    "article_id": "1981-11-7-left-hacia-el-x-congreso-de-actividad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Se pretende estudiar el fenómeno flamenco en su más amplia dimensión, y mediante un tratamiento riguroso, inferir ideas y visiones generales",
+        "target": "X Congreso de Actividades Flamencas",
+        "rationale": "The congress is framed as an institutional setting for rigorous study and knowledge production about flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "reconstruir, de recuperar, de situar en sus justos términos esta manifestación básica de la cultura andaluza",
+        "target": "flamenco as Andalusian cultural manifestation",
+        "rationale": "The passage frames flamenco as a basic Andalusian cultural manifestation requiring recovery and proper public-cultural positioning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "hay que discrepar del análisis realizado por Kayros... Creemos que es poco respetuosa la aseveración de Kayros",
+        "target": "Kayros's critique of the IX Congress and flamenco funding",
+        "rationale": "The author exercises critical authority by contesting another critic's assessment of flamenco's cultural value and resources."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "propiciará sin duda, un planteamiento más riguroso del flamenco, en el que tengan cabida las correcciones críticas razonables",
+        "target": "the X Congress's planned approach to flamenco",
+        "rationale": "The passage evaluates the projected congress positively as a more rigorous treatment open to reasonable criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The congress is institutional, but the passage does not clearly invoke official heritage recognition or authorized heritage mechanisms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text disputes whether flamenco has more or less cultural relief than other arts, but it rejects ranking rather than constructing a stable hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "the X Congress and flamenco as a serious Andalusian cultural manifestation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

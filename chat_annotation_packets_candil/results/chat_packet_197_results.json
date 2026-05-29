@@ -1,0 +1,307 @@
+[
+  {
+    "article_id": "1989-09-4-left-carta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "nadie que conozca la trayectoria de Anselmo González Climent, su versación profunda, su rigor de análisis, su honestidad intelectual, su seguridad al juzgar",
+        "target": "Anselmo González Climent",
+        "rationale": "The letter authorizes Climent as an expert critical judge through his analytical rigor, intellectual honesty, and secure judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la extraordinaria revista, cada día más rica intelectual y espiritualmente",
+        "target": "Revista Candil",
+        "rationale": "The passage explicitly evaluates the magazine positively for its intellectual and spiritual richness."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The repeated word 'verdad' concerns moral or factual truth around a dispute, not a clear authenticity claim about flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The final greeting to the Peña and 'amiga flamenca de corazón' signals community affiliation but does not clearly authorize judgment through community belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Anselmo González Climent and Revista Candil",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-09-4-right-miguel-de-linares-y",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La Trini fue la mejor cantaora por malagueñas... El Cojo de Málaga fue el mejor cantaor por tarantas; pero mejor, sin discusión, el Escacena",
+        "target": "Flamenco singers and repertoires",
+        "rationale": "The passage constructs a hierarchy by ranking artists as the best in specific cante forms."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "él también está capacitado para una fiesta íntima, de buenos aficionados. Tenga en cuenta que el cante de juerga es cante de derecho y no el de teatro.",
+        "target": "Cante in intimate aficionado settings versus theater",
+        "rationale": "The passage values intimate aficionado/juerga contexts over theater as the proper setting for cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Se ha perdido la pureza en el teatro. A lo puro se le ha hecho quedar atrás.",
+        "target": "Theatrical flamenco",
+        "rationale": "The passage draws a purity boundary by treating theater as the site where flamenco purity has been lost."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El cante moderno se perderá pronto, pero los cantes grandes de siempre habrán de recuperar su sitio. No se pueden perder.",
+        "target": "Cantes grandes de siempre",
+        "rationale": "The passage grounds flamenco value in enduring older cantes that must recover their proper place."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "mi enseñanza ha sido cosa absolutamente personal. Nunca tuve un maestro determinado. Mis mejores fuentes de formación fueron los discos y las audiciones flamencas.",
+        "target": "Luis Maravilla's flamenco guitar formation",
+        "rationale": "The passage thematizes access to flamenco learning through self-directed formation and mediated sources rather than formal teachers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Hoy solamente se pide voz bonita y buen tipo. Es el deseo de la nueva generación de flamencos. Pero ni por esas ha de morir el cante grande.",
+        "target": "New-generation flamenco taste",
+        "rationale": "The passage applies aesthetic criteria by contrasting superficial vocal/physical appeal with the valued depth of cante grande."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'serio, para hombres, para cabales' has gendered and identity language, but the visible excerpt does not develop a clear identity-based tradition model."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Cante grande, intimate aficionado practice, and ranked flamenco artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible windows contain sufficient independent evidence for the emitted codes."
+  },
+  {
+    "article_id": "1989-09-8-left-el-pr-ximo-monogr-fico-sobre-ans",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Anselmo González y Ricardo Molina constituyen, por méritos propios, los dos centros de interés sobre los que ha pivotado la investigación del fenómeno flamenco",
+        "target": "Anselmo González Climent and Ricardo Molina",
+        "rationale": "The passage canonizes González and Molina as central figures in flamenco research."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Uno y otro, pueden reputarse maestros de sucesivas generaciones de escritores cuya solidez investigadora está ya perfectamente contrastada.",
+        "target": "Anselmo González Climent and Ricardo Molina as teachers of later writers",
+        "rationale": "The passage legitimates them as pedagogical authorities who formed successive generations of flamenco writers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el análisis de los hondones metafísicos del cante; la visión globalizada del flamenco, en la que geografía, cultura, arte, antropología... hallaban un marco sistemático pleno de coherencia y de agudísimas precisiones",
+        "target": "Anselmo González Climent's flamenco scholarship",
+        "rationale": "The passage authorizes Climent's expert critical discourse by praising its systematic coherence and analytical precision."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'dignidad de una cultura cantada inigualable' elevates flamenco culturally, but it does not clearly frame it as public heritage or patrimony."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "General praise of Climent's contribution is present, but the stronger discourse function is expert authority and canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Anselmo González Climent and Ricardo Molina as flamenco scholars",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt supports the emitted codes without relying on missing text."
+  },
+  {
+    "article_id": "1989-09-9-right-manolo-barrios",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "al Cante con mayúscula lo han rescatado de sus propias cenizas los que escriben, no los que cantan, pues también el cante; como el interior de la tierra, necesita de espeleólogos que lo estudien.",
+        "target": "Writers and flamenco scholars",
+        "rationale": "The passage grants writers and analysts authority as necessary rescuers and interpreters of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "a esta estirpe de Fallas, Lorcas y Climents debe el Cante, evidentemente, la muy estimable y alta consideración que —¡por fin!— ha llegado a obtener",
+        "target": "Manolo Barrios within a lineage of authoritative flamenco writers",
+        "rationale": "The passage places Barrios in a canonical lineage of figures credited with raising cante's status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "todo un positivo programa de actos culturales auténticamente flamencos",
+        "target": "The cultural program associated with the Tertulia Flamenca de Radio Sevilla",
+        "rationale": "The passage explicitly presents the program's acts as genuinely flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la grabación que como esquema histórico del cante por siguiriya y por sóleá puede ser la variedad de cantes, dentro de sólo dos aires, más honda y trascendental que jamás haya podido escucharse.",
+        "target": "The recording produced by Manolo Barrios with Antonio Mairena and Melchor de Marchena",
+        "rationale": "The passage makes an explicit aesthetic judgment, praising the recording as exceptionally deep and transcendent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and cabales appear, but the strongest function is critique of their limits rather than community-based authorization."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The language of rescue and dignification is preservation-adjacent, but it lacks a clear public-heritage or safeguarding frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Manolo Barrios and writer-scholar mediation of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-09-10-right-cantes-nuevos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "con la aquiescencia de la afición flamenca que queda invitada a participar en la búsqueda, audición y publicación de lo concerniente al tema",
+        "target": "The flamenco afición",
+        "rationale": "The passage gives the afición a recognized role in validating, searching for, and publishing knowledge about new cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se podrán intercambiar, entre los aficionados, los argumentos sobre las raíces de cualquier estilo estudiado en el sentido de autenticidad, plagio, creación o recreación",
+        "target": "New soleá styles and their classification",
+        "rationale": "The passage frames aficionados as participants in boundary-setting debates over authenticity, plagiarism, creation, and recreation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Todo este material podrá servir de base para los futuros congresos al no contar, en las sesiones de los mismos, con el tiempo suficiente para la audición y debate.",
+        "target": "Materials for future flamenco congresses",
+        "rationale": "The passage presents published materials and congresses as institutional media for collective learning, access, audition, and debate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la catalogación definitiva de estos nuevos cantes",
+        "target": "New cantes",
+        "rationale": "The passage seeks definitive cataloging of new cantes, constructing a classificatory hierarchy or canon of styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Authenticity is named as a debate criterion, but the passage does not itself assert that a specific cante is authentic."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Roots and traditional styles are mentioned, but mainly as objects for classification and debate rather than as an explicit tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "New soleá styles and their legitimacy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

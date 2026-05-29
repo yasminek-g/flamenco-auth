@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "1994-11-19-left-francisco-s-nchez-paco-de-luc-a-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Un artista de la calidad de Paco de Lucía, sea el lugar que sea, ha de mantener las cotas de popularidad y buen hacer con su guitarra",
+        "target": "Paco de Lucía",
+        "rationale": "The passage explicitly evaluates Paco de Lucía's artistic quality, popularity, and guitar performance standard."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "para mí, Camarón es el mejor que ha salio en toas las épocas",
+        "target": "Camarón",
+        "rationale": "The statement canonizes Camarón through a superlative ranking across all periods."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word 'maestro' appears, but it functions as an honorific for Paco de Lucía rather than as evidence of teaching or pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to 'aficionados' is part of a respectful disclaimer and does not grant them authority to recognize, sustain, or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía and Camarón",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated review text; annotations are limited to the visible evaluative and ranking statements."
+  },
+  {
+    "article_id": "1994-11-20-right-paco-de-luc-a-compositor-y-guita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el más profundo relator de una Andalucía viva que se ha proyecta- do al mundo entero con los seis ríos del diapasón de su guitarra",
+        "target": "Paco de Lucía",
+        "rationale": "The passage evaluates Paco de Lucía as a profound artistic narrator whose guitar projects a living Andalusia globally."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Camarón tenía conmigo la confianza que nunca tuvo con nadie, éramos como hermanos",
+        "target": "Paco de Lucía's relation to Camarón",
+        "rationale": "Paco grounds his authority to speak about Camarón and the controversy in intimate, brother-like community proximity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "se ha tratado de confundir a la opinión pública, distorsionando los hechos con el maldito «derecho de autor», y nadie se ha preocupado de saber lo que en realidad se estaba pidiendo",
+        "target": "public claims about Camarón's author-rights dispute",
+        "rationale": "The speaker uses corrective critical authority and documentary evidence to contest public distortion around the dispute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'ensuciado su memoria' concerns Camarón's reputation in a dispute, but it does not frame memory as collective heritage or public cultural safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Paco de Lucía's authority and Camarón's memory in the author-rights controversy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The community code is based on the visible use of intimate proximity as authority, not on family mention alone."
+  },
+  {
+    "article_id": "1994-11-22-left-paco-de-luc-a-interpreta-a-don-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Maravilla del arte al natural. (Paco es punto y aparte: jondo cabal.)",
+        "target": "Paco de Lucía's interpretation of Manuel de Falla",
+        "rationale": "The poem explicitly praises Paco's artistry and presents the performance as exceptional."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "jondo cabal... A compases sonoros punteos brillantes",
+        "target": "Paco de Lucía's guitar performance",
+        "rationale": "The passage applies flamenco aesthetic criteria such as jondo quality, compás, and brilliant punteo to define the performance's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Paco es punto y aparte",
+        "target": "Paco de Lucía",
+        "rationale": "The phrase elevates Paco as a singular figure, creating a hierarchy of exceptional artistic status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'jondo cabal' praises flamenco depth and completeness, but the passage does not explicitly claim authenticity or proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía's guitar interpretation of Falla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic praise is coded only where it performs clear evaluation or hierarchy."
+  },
+  {
+    "article_id": "1994-11-22-right-paco-de-luc-a-poes-a-daniel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "De las tierras atlánticas surgido como un dios de la música sagrada",
+        "target": "Paco de Lucía",
+        "rationale": "The poem strongly praises Paco de Lucía by elevating him through sacred and exceptional artistic imagery."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "hondo gemido— del ritmo y del compás, esencia alada...",
+        "target": "Paco de Lucía's music",
+        "rationale": "The passage uses aesthetic criteria including depth, rhythm, compás, and expressive essence to define the value of Paco's music."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to Falla, Camarón, soleá, and fragua evoke flamenco associations, but they do not clearly use tradition or roots to authorize present practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The poem compares Paco with Camarón and Falla, but the comparison is analogical rather than a clear ranking or canon-building hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía's music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The poem is highly laudatory, but non-evaluative imagery is not separately coded."
+  },
+  {
+    "article_id": "1994-11-23-left-unas-palabras-para-paco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Paco de Lucía es nombre señero y, en más de un aspecto, inigualado",
+        "target": "Paco de Lucía",
+        "rationale": "The passage explicitly evaluates Paco as distinguished and unequalled within flamenco guitar."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "de la andante guitarristica flamenca, el caballero Paco de Lucía es nombre señero y, en más de un aspecto, inigualado",
+        "target": "Paco de Lucía",
+        "rationale": "The statement canonizes Paco by placing him at an exceptional hierarchical status among flamenco guitarists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "no hay momento de ella que no haya sido limado e imaginado con probidad; en su caso, la palabra perfecionismo puede emplearse en cualquier sentido salvo en el peyorativo",
+        "target": "Paco de Lucía's music",
+        "rationale": "The passage defines the value of Paco's music through aesthetic criteria of craft, probity, and perfectionism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text ends with the fragment 'tradición y', so there is not enough visible evidence to establish a tradition/continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible article stops mid-thought after 'tradición y'; no tradition code is inferred from the incomplete fragment."
+  }
+]

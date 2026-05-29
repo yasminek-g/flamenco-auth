@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1989-11-13-right-cantar-por-grana-nas-paco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "requiere del cantaor o la cantaora: gusto para cantarla, conocimiento del cante y fuerza medida y exacta; de tal suerte que ha de llegar sin pasarse",
+        "target": "el cante por granaínas",
+        "rationale": "The passage explicitly defines quality in granaínas through aesthetic criteria: taste, knowledge, measured force, and restraint."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Que el gusto, excepto en contados artistas, está perdido. Que el conocimiento, salvo honrosas excepciones, brilla por su ausencia. Y entonces sólo nos queda la fuerza.",
+        "target": "muchos cantaores actuales que cantan por granaínas",
+        "rationale": "The author directly evaluates contemporary performance as deficient in taste and knowledge, leaving only force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Chacón es la fuente a donde todos han de ir a beber... En Chacón comienza y, casi me atrevo a decir, en él acaba.",
+        "target": "Antonio Chacón as model for granaínas",
+        "rationale": "Chacón is canonized as the foundational source and near-terminal exemplar for proper granaína interpretation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions origin and sources, but the strongest function is critical canon-making rather than tradition/continuity as an independent authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "proper interpretation of granaínas and its exemplary interpreters",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-14-left-vi-distinci-n-comp-s-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "esta distinción... fue definida... como el Nobel del Flamenco... se premia... una trayectoria vital y artística",
+        "target": "Distinción «Compás del Cante»",
+        "rationale": "The award is framed as an authorized recognition mechanism that publicly valorizes a lifetime flamenco trajectory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "es el jurado nombrado al efecto el que propone la figura que ese año será distinguido con la misma",
+        "target": "the jury's authority to select the honored flamenco figure",
+        "rationale": "The passage explicitly grants a named jury the authority to determine which artist merits distinction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "aún queden en el panorama jondo figuras geniales como Fernanda a quien distinguir con tan poca polémica",
+        "target": "Fernanda de Utrera",
+        "rationale": "Fernanda is elevated within a hierarchy of major flamenco figures worthy of a prestigious distinction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The closing phrase 'gratificación de la pureza' praises purity, but it does not clearly exclude or devalue an impure target."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article mentions hondura, compás, and entrega, but these are not developed as distinct aesthetic criteria beyond the award/canon frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Fernanda de Utrera and the Compás del Cante distinction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-15-left-cantes-y-coplas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is mainly song/coplas transcription and recording listing without clear evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "1989-11-16-left-homenaje-a-juan-carmona-habichue",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "ha quedado demostrado que el flamenco, cuando se hace con dignidad, es tan hermoso y sublime que, por derecho propio, es un puntal indispensable de los que sostienen el templo de las artes",
+        "target": "flamenco performed with dignity",
+        "rationale": "The passage explicitly evaluates dignified flamenco as beautiful, sublime, and indispensable to the arts."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña is mentioned as organizer and venue context, but the visible text does not clearly grant peña/community authority to recognize or judge flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'patrimonio de todos' refers to the cultural venue/public facility, not clearly to flamenco as collective heritage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author criticizes restricted access to the venue, but the boundary critique is civic/institutional rather than a flamenco purity or expert-critical boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco as dignified art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains enough evidence for the emitted evaluation."
+  },
+  {
+    "article_id": "1989-11-17-right-canal-sur-y-el-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "no como un pasatiempo de entendidos, ni como una «fiesta nacional», sino como un hecho cultural de primera magnitud para afirmar nuestra identidad",
+        "target": "flamenco in Canal Sur programming",
+        "rationale": "Flamenco is framed as public cultural value tied to collective identity rather than mere entertainment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el arte flamenco, como expresión musical andaluza, es un hecho que nos diferencia del resto de los pueblos españoles",
+        "target": "Andalusian identity through flamenco",
+        "rationale": "The passage uses regional identity to define flamenco as a marker of Andalusian distinctiveness and representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "«Quédate con el cante», específicamente dedicado al arte flamenco más puro",
+        "target": "the flamenco presented in Canal Sur programming",
+        "rationale": "The phrase attributes a valued properness or genuineness to the flamenco being programmed, though without strong exclusionary boundary-work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The term 'más puro' appears, but no impure, fake, or degraded target is clearly excluded in the visible text."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Broadcast programming broadens access, but the visible text does not clearly frame this as learning or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The program's light and sound are called new and respectful, but this is secondary to the cultural/identity framing and not a distinct critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "authenticity"
+      ],
+      "target": "flamenco as Andalusian public culture in Canal Sur media",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt supports the emitted identity and public-culture claims."
+  }
+]

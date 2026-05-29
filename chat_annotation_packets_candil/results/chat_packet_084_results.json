@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "1983-11-19-right-ellos-los-protagonistas-dicen-tu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "me gustaba más escuchar, sobre todo porque escuchando se aprende más",
+        "target": "Turronero's flamenco learning in Utrera",
+        "rationale": "The passage explicitly frames flamenco knowledge as acquired through listening in a local social environment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "a través de ese parentesco me metieron en las fiestas",
+        "target": "access to flamenco fiestas through kinship/community ties",
+        "rationale": "Family and community connection are presented as the route into participatory flamenco settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Para mí ha sido uno de los mejores cantaores de esta época, y el mejor cantaor que ha dao Utrera",
+        "target": "El Perrate",
+        "rationale": "The speaker ranks El Perrate as one of the best singers of the era and the best male singer from Utrera."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Utrera is called 'tierra flamenquísima', but the visible passage does not develop a tradition/continuity claim strongly enough."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Turronero's formation and El Perrate's local artistic authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible learning and community-access window."
+  },
+  {
+    "article_id": "1983-11-22-left-amanecida",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic evocation without clear evaluative, authorizing, pedagogical, communal, heritage, or boundary-making discourse."
+  },
+  {
+    "article_id": "1983-11-22-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "actuando con las grandes figuras de la época como don Antonio Chacón, Juan Breva, Manuel Torre, Pastora Pavón «Niña de los Peines»",
+        "target": "Hermosilla and his artistic milieu",
+        "rationale": "The article places Hermosilla within a canonized hierarchy of major flamenco figures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Cantaba Hermosilla con mucho arte, gran fidelidad y buen eco gitano los maravillosos cantes de su progenitor",
+        "target": "Hermosilla's singing",
+        "rationale": "The passage explicitly evaluates Hermosilla's artistry, fidelity, and vocal quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Hijo del famoso Enrique el Mellizo, fiel imitador de su padre",
+        "target": "Hermosilla's inherited repertoire from Enrique el Mellizo",
+        "rationale": "The passage frames his cante as lineage-based transmission from father to son, with fidelity as a value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Several expert voices are cited, but their authority mainly supports canon/evaluation rather than becoming a separate discourse object."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Hermosilla as a canonically valuable inherited-style singer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-11-23-left-la-ltima-sole-de-t-o-gregorio-bo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "testimonio vivo de un cante que se nutrió de calientes experiencias y que, en definitiva, recoge la más hermosa tradición del arte jondo",
+        "target": "Tío Gregorio as living testimony of cante tradition",
+        "rationale": "The passage frames the old singer as living memory and transmission of a valued flamenco tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Tío Gregorio no aprendió en los discos. Su personalísimo cante por soleá le vino de su padre «El Tati», de «Juanichi el Manijero», de Antonio «Frijones», el viejo Manuel Torre",
+        "target": "Tío Gregorio's soleá transmission",
+        "rationale": "The text explicitly contrasts recorded learning with inherited oral/lineage transmission from named singers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "esa queja que pudiera referirse a casi toda la afición flamenca, resulta tanto más penosa cuanto significa no sólo insolidaridad con los viejos maestros",
+        "target": "the flamenco afición's responsibility toward old masters",
+        "rationale": "The passage assigns the afición a communal duty to recognize and sustain elder masters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Tradition language is present, but the stronger discourse function is living testimony/safeguarding and lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is affective praise of his cante, but it is secondary to remembrance, transmission, and community neglect."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Tío Gregorio as a neglected living bearer of soleá tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-11-23-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la calidad interpretativa de las soleares de Triana que incluyen en el mismo, rayan la suma perfección en entonación, voz y ejecución",
+        "target": "Antonio Mairena's recordings",
+        "rationale": "The review explicitly praises the quality and execution of Mairena's recorded cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "hemos criticado otras veces en esta misma página, concretamente con el disco «Sacromonte»",
+        "target": "Enrique Morente's vanguardist recording direction",
+        "rationale": "The reviewer invokes prior critical authority to evaluate and police Morente's stylistic direction."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "en los estilos festeros que ha incluido —tangos y bulerías— se le aprecia comercialidad",
+        "target": "Enrique Morente's tangos and bulerías on Cruz y Luna",
+        "rationale": "Commerciality is framed as a negative authenticity-related concern in relation to flamenco styles."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "rogarle que en sus entonaciones incluya de vez en cuando, aunque sea muy pequeñita, alguna dosis de ortodoxia",
+        "target": "Enrique Morente's entonations",
+        "rationale": "The reviewer draws a proper/improper boundary by asking Morente to restore some orthodox flamenco element."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aesthetic criteria such as compás, sobriedad, and voz appear, but they are already covered under the broader critical evaluation code."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Mairena is called a maestro and great artist, but the passage functions primarily as review evaluation rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Antonio Mairena's recordings and Enrique Morente's Cruz y Luna",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

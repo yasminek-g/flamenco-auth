@@ -1,0 +1,201 @@
+[
+  {
+    "article_id": "1992-01-30-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief radio-program notice; no evaluative or authorizing discourse is visible."
+  },
+  {
+    "article_id": "1992-01-31-left-tocaores-de-hoy",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The word 'heredero' and family relations suggest lineage, but the passage remains biographical and does not frame transmission as authority or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Awards and notable collaborators are listed, but the visible text does not itself construct a canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": "Pepe Habichuela",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Primarily a concise biographical listing of career facts."
+  },
+  {
+    "article_id": "1992-03-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "a qué razones ocultas o sobreentendidas obedece el criterio mantenido, es decir, por qué inexplicable causas se minusvalora el Flamenco",
+        "target": "responsables de la Exposición Universal",
+        "rationale": "The editorial uses critical authority to condemn institutional criteria that undervalue flamenco and to police the boundary between adequate and inadequate cultural representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "siempre que lo jondo no resulte trivializado como consecuencia de una subliminal y en cualquier caso inaceptable identificación entre lo flamenco y lo tópicamente aflamencado",
+        "target": "identification of flamenco with stereotyped aflamencado imagery",
+        "rationale": "The passage draws a value boundary between legitimate jondo/flamenco and trivializing stereotyped pseudo-flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la Administración institucional andaluza, en este caso, ha frustrado, vía omisión, una de las reivindicaciones culturales más arraigada... la divulgación y, tal vez, absoluta dignificación del Flamenco",
+        "target": "institutional recognition and public dignification of flamenco",
+        "rationale": "The text frames Andalusian public administration as responsible for the public cultural recognition and dignification of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'música genuinamente andaluza' supports authenticity language, but the stronger discourse function is the exclusion of trivialized aflamencado from proper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is clear negative evaluation, but CRIT_04 captures the critic/editorial boundary-policing and institutional critique more precisely."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "heritage", "criticism"],
+      "target": "flamenco as a dignified Andalusian cultural form within Expo 92 representation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong editorial critique of institutional marginalization and stereotyping of flamenco."
+  },
+  {
+    "article_id": "1992-03-3-right-apuntes-sobre-la-sole-y-la-sigui",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el fandango resulta más acompasado y más próximo al cante grande",
+        "target": "fandango linked rhythmically to soleá",
+        "rationale": "The passage applies aesthetic criteria such as compás and proximity to cante grande to evaluate stylistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el fandango sólo conseguirá definir su discutida posición en la escala de los cantes (grandes, chicos o fronterizos)",
+        "target": "fandango within the hierarchy of flamenco cantes",
+        "rationale": "The passage explicitly places fandango within a ranked hierarchy of cantes and discusses its disputed status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "para el entendido esta actualización pueda resultar impura con respecto a la soleá del buen cante",
+        "target": "modernized or updated soleá",
+        "rationale": "The passage invokes impurity relative to 'buen cante', drawing a boundary around proper soleá, though it is mediated through the perspective of the entendido."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word 'maestro' appears, but it is not used to establish teaching authority or pedagogy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The word 'dentro' appears only as a spatial/style phrase, not as insider-outsider social boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "soleá, fandango, and their stylistic relationships",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but visible windows contain enough explicit aesthetic and hierarchical discourse to code."
+  },
+  {
+    "article_id": "1992-03-6-left-vicente-soto-sordera-la-ra-z-jer",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "El fue mi auténtica escuela, y por supuesto mi casa. Allí todos hemos cantao y hemos bailao. Era toda una auténtica casa de cante, baile y mucha comía.",
+        "target": "Vicente Soto's family and household learning environment",
+        "rationale": "The passage frames flamenco knowledge as transmitted through family, home, embodied practice, and intergenerational experience."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los jóvenes vástagos del flamenco árbol genealógico formado por la savia de Paco La Luz, por un lado, y del Gloria, por otro",
+        "target": "Vicente Soto's Jerez-linked flamenco lineage",
+        "rationale": "The text grounds his flamenco value in rooted genealogical continuity and inherited tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la verdad es que hubo duende y determinada fiesta en su recital",
+        "target": "Vicente Soto's recital",
+        "rationale": "The review applies duende and fiesta as aesthetic criteria to evaluate the recital's flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca de Jaén and aficionados are present, but the excerpt does not clearly grant them authority to define or judge flamenco beyond ordinary audience interest."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is evaluative language about the recital and his brother, but CRIT_02 captures the more specific aesthetic criteria actually used."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy", "criticism"],
+      "target": "Vicente Soto as a Jerez-rooted flamenco artist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest evidence links lineage, household transmission, and aesthetic evaluation."
+  }
+]

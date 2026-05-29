@@ -1,0 +1,234 @@
+[
+  {
+    "article_id": "1983-09-23-left-hablan-las-pe-as-buz-n-flamenco-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "queremos seguir insistiendo en la magnífica labor que la casa Hispavox viene realizando con esa serie de reediciones de antiguas grabaciones que enriquecen su archivo flamenco",
+        "target": "Hispavox reeditions and Antonio Piñana recording",
+        "rationale": "The passage explicitly praises the record company's reissue work as enriching the flamenco archive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Piñana, como maestro indiscutible del cante de Levante",
+        "target": "Antonio Piñana",
+        "rationale": "Calling Piñana an undisputed master constructs exemplary status within the cante de Levante canon."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "ha ido derivando hacia un —por denominarlo de alguna manera— pseudo-flamenco en el cual intervienen una serie de instrumentos —bajo eléctrico, percusión, etc.— que siempre le han sido ajenos a nuestro arte",
+        "target": "Camarón's Calle Real and its hybrid instrumentation",
+        "rationale": "The review draws a boundary between proper flamenco and a devalued pseudo-flamenco marked by supposedly alien instruments."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aesthetic terms such as jondura, compás, sobrio, and virtuoso appear, but CRIT_01 and AUTH_02 already capture the main evaluative work without over-coding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The comparison to commercial groups suggests anti-commercial concern, but the boundary is expressed more directly as pseudo-flamenco, so AUTH_02 is stronger."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Piñana/Hispavox as legitimate archival flamenco; Camarón's Calle Real as boundary-challenging pseudo-flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Two record reviews are present in one article; codes reflect distinct evaluative and boundary-making passages."
+  },
+  {
+    "article_id": "1983-09-24-left-discograf-a-placas-de-artistas-f",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a heading and names, with no sufficient discourse function to judge."
+  },
+  {
+    "article_id": "1983-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "se despreciaba era la españolada, la andaluzada, en el sentido más peyorativo del término, y que se identificaba torpemente con el cante y el baile flamenco. Desconocieron que junto a ese producto deleznable que se ofrecía como espectáculo, existía el auténtico arte jondo sumergido",
+        "target": "españolada/andaluzada spectacle versus authentic arte jondo",
+        "rationale": "The editorial separates authentic jondo art from a devalued spectacle mistakenly identified as flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Tales asertos... no revelan sino el tremendo desconocimiento que nuestro universal ensayista y filósofo tuvo de las esencias jondas",
+        "target": "Ortega y Gasset's interpretation of cante jondo",
+        "rationale": "The editorial exercises critical authority by rejecting Ortega's judgment as ignorance of jondo essences."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "sin el más mínimo esfuerzo por su parte en profundizar, a través de un pseudoflamenco degradante, esperpéntico, prostibulario. ¡Tremenda frivolidad!",
+        "target": "intellectual and literary treatments of flamenco based on pseudoflamenco",
+        "rationale": "The passage explicitly criticizes certain intellectual framings as frivolous and based on degrading pseudoflamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text uses authenticity language, but the stronger discourse function is boundary-making between authentic arte jondo and degraded spectacle, captured by AUTH_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "authentic arte jondo against intellectual misrecognition and pseudoflamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-11-4-left-el-honor-de-la-pareja-y-el-mar-o",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "determina el nivel de relación social entre los miembros de la comunidad afectada por el código de costumbres y valores éticos",
+        "target": "primitive flamenco communities and their codes of honor",
+        "rationale": "The passage frames flamenco letras through community identity, social relations, and ethical codes that organize belonging and behavior."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el cante flamenco, a través de sus letras, a la vez hermosas y perfectamente descriptivas, es el mejor y más certero testimonio popular de todas estas actitudes y comportamientos estudiados",
+        "target": "flamenco letras as popular testimony of social attitudes",
+        "rationale": "The article treats flamenco lyrics as a living popular record/testimony of community memory and social behavior."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions añejas letras and primitive communities, but the visible text uses them mainly for anthropological analysis rather than to authorize proper flamenco through tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author cites scholars and defines concepts, but the passage does not clearly exercise flamenco critical authority or police aesthetic boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "heritage"
+      ],
+      "target": "flamenco letras as testimony of primitive Andalusian/flamenco community values",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible head/tail/window text is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1983-11-7-right-bodas-de-plata-de-la-c-tedra-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la Cátedra de Flamencología de Jerez de la Frontera, ha venido desarrollando una estimable labor en relación al estudio, recuperación, investigación y difusión del flamenco",
+        "target": "Cátedra de Flamencología de Jerez",
+        "rationale": "An institution is credited with authorized study, recovery, research, and diffusion of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "ecos y expresiones sublimes que han sido heredados y conservados a través de siglos y generaciones",
+        "target": "Jerez flamenco styles",
+        "rationale": "The manifesto grounds flamenco value in inheritance, conservation, and continuity across centuries and generations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Jerez... es base principal y capital indiscutible de los estilos llamados «jondos» o «flamencos» y ha aportado a la historia del arte andaluz los más célebres intérpretes de todos los tiempos",
+        "target": "Jerez and its flamenco artists/styles",
+        "rationale": "The passage canonizes Jerez as an undisputed capital and ranks its artists among the most celebrated of all time."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "cuenta con el decidido aliento y colaboración de todas aquellas personas que aman firmemente la tradición hermosísima de los cantos y bailes de Andalucía",
+        "target": "community and institutional support for Andalusian songs and dances",
+        "rationale": "The manifesto frames the Cátedra's aims as sustained by collective collaboration around maintaining a valued cultural tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as gracia, ángel, and duende appear, but they function mainly as celebratory description rather than applied aesthetic criteria in this excerpt."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage legitimates Jerez flamenco, but it does so more specifically through tradition/continuity and canonizing hierarchy than through an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "the Cátedra de Flamencología and Jerez as a central flamenco heritage authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains distinct institutional, tradition, and canonizing discourse."
+  }
+]

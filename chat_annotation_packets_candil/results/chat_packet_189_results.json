@@ -1,0 +1,304 @@
+[
+  {
+    "article_id": "1989-03-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "En dicho almuerzo se habló del sentido de la Federación de Málaga, su pasado, y futuro y de la necesidad de Federarse.",
+        "target": "Federación de Peñas Flamencas de Málaga and peña community",
+        "rationale": "The passage presents peñas as a community infrastructure that should federate and organize its collective flamenco future."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Se da la circunstancia de que el presidente de esta Peña también lo es de la Federación de Peñas Flamencas de Málaga, a las que desde aquí hace un llamamiento para que se federen.",
+        "target": "Peñas Flamencas de Málaga",
+        "rationale": "The peña/federation leadership is positioned as a community authority calling other peñas into collective belonging and organization."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The lunch is described as friendship and camaraderie, but there is no clear contrast between participatory/private and public/spectatorial flamenco settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'muchos éxitos' and 'feliz andadura flamenca' are formulaic well-wishing rather than substantive critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "peña federation and peña community organization",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly administrative peña news; emitted only where federation/community authority is explicit."
+  },
+  {
+    "article_id": "1989-03-24-right-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "tiene gran voz, llena de modulaciones y con un rajo flamenquísimo, destacando en los cantes festeros, especialmente en las bulerías, y también en soleares y siguiriyas.",
+        "target": "Curro Malena's singing",
+        "rationale": "The review explicitly evaluates the singer's voice, modulation, flamenco quality, and strengths across styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "mantiene un buen compás con aires evocadores de su tierra y desarrolladas con entrega, oficio y facultades.",
+        "target": "Curro Malena's bulerías",
+        "rationale": "The passage applies aesthetic criteria such as compás, local airs, entrega, oficio, and faculties to judge the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Pedro Bacán denota ser maestro en su oficio con un desarrollo del compás pleno de matiz y gustó.",
+        "target": "Pedro Bacán's guitar accompaniment",
+        "rationale": "The passage praises the accompanist's mastery and tasteful, nuanced handling of compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "significar el acierto en la elección de las letras de estos cantes y señalar igualmente un cierto abuso en la selección de las bulerías.",
+        "target": "the recording's repertoire selection",
+        "rationale": "The review evaluates both a strength in lyric selection and a weakness in overusing bulerías."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to Antonio Mairena, Charamusco, and Manolo Vargas evoke canonical figures, but the main function is performance comparison rather than constructing a clear hierarchy or canon."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Mentions of gitano identity and family appear largely biographical and do not independently organize authority or belonging in the review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Curro Malena's Manantial Gitano and Pedro Bacán's accompaniment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "A discographic review with clear aesthetic and evaluative discourse; advertising copy at the end was not coded."
+  },
+  {
+    "article_id": "1989-05-3-right-festivales-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Un Festival Flamenco tiene siempre algo de spot publicitario; sólo que inidóneo porque no subraya lo más apreciable del producto artístico",
+        "target": "Festival Flamenco format",
+        "rationale": "The festival is framed as publicity-like mass spectacle that fails to foreground the most valuable artistic qualities."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "el Festival Flamenco difiere sustancialmente de la reunión de los cabales en las que el duende en forma de mágico tarob se posesiona, sí llega a hacerse presente, de quienes participan.",
+        "target": "festival flamenco versus reuniones de cabales",
+        "rationale": "The passage contrasts mass festival format with participatory insider gatherings where duende may emerge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "instituciones que, con loable sensibilidad, reivindicaron la grandeza de este hecho cultural propio frente a detractores desinformados.",
+        "target": "flamenco as a cultural fact of public identity",
+        "rationale": "The passage frames flamenco as a public cultural value claimed by institutions against detractors."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Creemos que la época del Festival Flamenco fenece, como en su día decayó el Café Cantante y la Opera Flamenca.",
+        "target": "Festival Flamenco as a historical format",
+        "rationale": "The editorial evaluates the festival form as being in irreversible artistic and communicative decline."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article situates festivals historically, but it does not use tradition or roots as a positive authority for present flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutions are mentioned as promoters, but the passage lacks explicit authorized heritage mechanisms such as official listing, declaration, or heritage tutelage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Festival Flamenco and alternative cabal/participatory flamenco settings",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The piece is a critical editorial contrasting mass festivals with more valued participatory flamenco contexts."
+  },
+  {
+    "article_id": "1989-05-4-left-desde-el-valle-flamenco-lecci-n-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "El profesor éste se pirra por el Flamenco y, siempre que puede, coloca un trabajo así en la clase.",
+        "target": "flamenco instruction in a literature classroom",
+        "rationale": "A teacher deliberately mediates flamenco knowledge through classroom work, positioning flamenco as teachable cultural material."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "les habla de su garganta «con cuerdas vocales de caballo», de su sacerdocio dedicado a la dignificación del Flamenco, de la Medalla de Oro a las Bellas Artes",
+        "target": "Antonio Mairena",
+        "rationale": "Mairena is canonized through exceptional bodily gift, dignifying mission, and prestigious official recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Pero él a todos nosotros, sí: era un artista de verdad...",
+        "target": "Antonio Mairena as flamenco artist",
+        "rationale": "The student's statement attributes genuine artistic truth to Mairena and treats his art as reaching the community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory and cultural transmission are present, but the visible excerpt is more clearly pedagogical and canonical than public-heritage safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The school context suggests institutional learning access, but the stronger evidence is the teacher's pedagogical authority and mediation rather than institutionalized flamenco pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Antonio Mairena and flamenco as classroom cultural knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt, but visible evidence is sufficient for pedagogical mediation, canonization, and authenticity."
+  },
+  {
+    "article_id": "1989-05-5-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Mairena recoge de la tradición oral y del seno de su propia familia.",
+        "target": "Mairena's corrido",
+        "rationale": "The passage frames Mairena's knowledge as transmitted through oral tradition and family lineage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "lo aprueba como auténtico.",
+        "target": "Mairena's corrido",
+        "rationale": "The passage explicitly attributes authenticity to a flamenco form, even while qualifying the approval as circumstantial."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Deduce que esta forma tradicional del romance elige en cada zona una apoyatura flamenca distinta.",
+        "target": "traditional romance/corrido forms",
+        "rationale": "The passage grounds stylistic variation in a traditional form that persists across zones."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "su protogaditanismo le induce a canonizar la fórmula de Enrique, de quien rara vez se aparta para verificar la pureza de sus colegas.",
+        "target": "Enrique el Mellizo's formula as evaluative model",
+        "rationale": "The passage describes a hierarchy in which Enrique's formula becomes a canonized standard for judging others' purity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Ricardo y Salinas podrían ser los jurados y así traernos al concurso unos cuantos cantaores seguros y aguantables",
+        "target": "contest judging and selection of cantaores",
+        "rationale": "The passage presents expert jurors as gatekeepers who could preselect acceptable singers for a contest."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Purity is mentioned as a criterion, but the visible excerpt more strongly supports canon/ranking around Enrique as a model than independent purity boundary-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative remarks about performances and contests, but the more specific codes for canon hierarchy and expert boundary authority capture the discourse function more precisely."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Mairena's corrido, Enrique el Mellizo's formula, and contest judging authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated long article, but the visible excerpt contains strong evidence of oral-lineage transmission, authenticity, tradition, canonization, and expert gatekeeping."
+  }
+]

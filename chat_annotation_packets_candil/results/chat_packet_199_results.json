@@ -1,0 +1,282 @@
+[
+  {
+    "article_id": "1989-09-19-left-el-desprop-sito-estriba-en-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Decir Cantes de ida y vuelta es un despropósito a todas luces. Mientras no se me demuestre lo contrario, tendré que decir que es pura invención fantástica",
+        "target": "la denominación y explicación de los 'Cantes de ida y vuelta'",
+        "rationale": "The author uses critical authority to reject a flamenco category as false and irresponsible, policing proper terminology and historical explanation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Por favor, seamos más serios y más responsables cuando tratamos de temas flamencos. Yo diría, mejor, del supremo arte flamenco.",
+        "target": "writers and commentators on flamenco topics",
+        "rationale": "The passage explicitly evaluates the handling of flamenco discourse as insufficiently serious and responsible."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "sí pudiera ser que andaluces diseminados por el Nuevo Continente, en el pasado siglo, escucharan a los indígenas de Cuba, Colombia y Argentina sus cantes por guajira, milonga, colombiana y vidalita, los captasen y después se los trajeran a Andalucía. Esto sí pudiera ser creíble.",
+        "target": "the historical origin and transmission of guajira, milonga, colombiana, and vidalita",
+        "rationale": "The author grounds legitimacy in a more credible historical route of origin and transmission rather than the rejected 'ida y vuelta' account."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The afición is addressed as deserving respect, but the visible excerpt does not clearly grant aficionados authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "the category 'Cantes de ida y vuelta' and its historical explanation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations rely only on the visible head/tail/window text."
+  },
+  {
+    "article_id": "1989-09-21-left-la-minor-a-de-los-caballistas-ba",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "de entre los grupos marginados el más cohesionado, el que tiene más sentido «grupal» y de casta es el gitano-andaluz. Y éste acaba de descubrir a través de la comunicación un medio de subsistencia: el Flamenco.",
+        "target": "the gitano-andaluz group in early flamenco formation",
+        "rationale": "The passage frames flamenco through an identity group whose cohesion and marginal position shape its cultural role."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la tradición flamenca más cabal considere a Silverio como el mejor y más completo cantaor de todos los tiempos",
+        "target": "Silverio",
+        "rationale": "The passage invokes a canonical hierarchy by presenting Silverio as the best and most complete singer of all time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "estamos en presencia de una música absolutamente trágica, desgarrada, una música procedente de los bajos fondos oscuros de los calabozos",
+        "target": "Diego Corrientes's prison tonadas",
+        "rationale": "The author applies aesthetic criteria of tragedy, anguish, and darkness to define the character of the cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercialization is mentioned, but the author explicitly says it is not used pejoratively, so no anti-commercial authenticity claim is present."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Tradition and transmission are implied around Silverio's knowledge, but the visible span does not clearly describe oral, embodied, familial, or lineage-based learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "gitano-andaluz participation, Silverio, and prison tonadas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; commercial vocabulary was treated as descriptive because the author explicitly disavows pejorative meaning."
+  },
+  {
+    "article_id": "1989-09-22-right-el-mito-de-las-bailarinas-gadita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "tales fuentes están sobrevaloradas y a la ligera en lo que se refiere a su relación con el flamenco; podrán significar algo... pero nunca podrán, a mi entender, estimarse como primeras manifestaciones del arte flamenco.",
+        "target": "claims linking ancient Cadiz dancers to the first manifestations of flamenco",
+        "rationale": "The author exercises critical authority to reject an origin claim and police the boundary of what counts as flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Parece que se parte del supuesto aceptado de que el flamenco es un fenómeno muy antiguo, cuanto más antiguo más valioso, y de un deseo acendrado de demostrarlo y ubicarlo en un determinado lugar, Cádiz",
+        "target": "antiquity-and-Cadiz origin claims for flamenco",
+        "rationale": "The passage explicitly identifies and contests a roots/antiquity logic that treats older origins as more valuable."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "los tiempos modernos, que es el flamenco propiamente dicho",
+        "target": "modern flamenco as flamenco properly understood",
+        "rationale": "The phrase defines what is properly flamenco by distinguishing modern flamenco from earlier alleged precedents."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The word 'escuchando' appears in a historical example, but it does not describe flamenco learning or embodied/oral transmission."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Place and memory-like language appear, but the visible text is about historical argument, not safeguarding or community heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Roman-antiquity and Cadiz-origin narratives for flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only the visible argument against ancient-origin claims."
+  },
+  {
+    "article_id": "1989-09-24-left-andaluc-a-siempre-maltratada",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Injertarle aires de moda incubados al calor de los más extraños y sofisticados experimentos de laboratorio urgente es una aberración sin otro sentido que el del absurdo.",
+        "target": "foreign or fashionable music imposed on Andalusian/flamenco imagery",
+        "rationale": "The passage draws a purity boundary by treating fashionable experimental additions as aberrant and improper for the Andalusian-flamenco frame."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "A ese argumento lírico-andaluz de expresivas imágenes mudas, pero vibrantes de autenticidad, hay que hacerlo hablar meciéndolo en la cuna musical de sus propias raíces.",
+        "target": "the proper musical framing of Andalusian/flamenco imagery",
+        "rationale": "The author grounds proper musical treatment in authenticity and roots, making rootedness the basis of value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Es necesario, además, fomentar una amplia y permanente labor de información, ilustración y educación orientada hacia esa gran mayoría del pueblo andaluz que sigue ignorando el capítulo espiritual más importante de su propia cultura.",
+        "target": "the Andalusian public's access to flamenco cultural knowledge",
+        "rationale": "The passage explicitly calls for sustained information, illustration, and education to provide access to flamenco as cultural knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "nuestra innata transigencia... nos sobran indudables razones a los flamencos para considerarnos de siempre maltratados desde los medios más eficaces de comunicación y difusión",
+        "target": "flamencos as an identity/community group",
+        "rationale": "The passage frames flamencos as a collective identity whose representation and treatment by media are at stake."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text strongly invokes culture and values, but it does not explicitly frame flamenco as patrimonio/heritage or use a clear public-heritage category."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Andalusian/flamenco cultural representation in audiovisual media",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible article; coded the explicit critique of mismatched media music and the call for education."
+  },
+  {
+    "article_id": "1989-09-24-right-podio-y-picota-ventolera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "en defensa del flamenco, que representa nuestra seña de identidad artística y cultural más definitoria y diferenciadora de Andalucía",
+        "target": "flamenco as Andalusian artistic and cultural identity",
+        "rationale": "The passage frames flamenco as a collective cultural identity marker and public cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tu aportación inigualada y universalmente reconocida a nuestro arte impar",
+        "target": "Paco de Lucía",
+        "rationale": "The passage canonizes Paco de Lucía through unmatched and universally recognized status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "La Empresa de Espectáculos Tres In, por su ofensa y desprecio al Flamenco en la persona de quien más que nadie ha contribuido a afianzar en el ancho mundo el máximo crédito y la universal apreciación que hoy disfruta la música flamenca.",
+        "target": "Tres In's treatment of Paco de Lucía and flamenco",
+        "rationale": "The passage uses public critical condemnation to police disrespect toward flamenco and its representative artist."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "representa a toda una cultura, a un pueblo, que son los flamencos. Todavía hoy, ser flamenco es ser un ciudadano de segunda o tercera categoría.",
+        "target": "flamencos as a people/cultural group",
+        "rationale": "The passage frames flamenco through collective identity and social status, linking artistic treatment to group representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article praises flamenco's universal importance, but the stronger function is cultural identity and critical condemnation rather than a direct authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Paco de Lucía, flamenco's cultural dignity, and Tres In's treatment of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible article; coded both the quoted defense and the periodical's 'A la Picota' condemnation."
+  }
+]

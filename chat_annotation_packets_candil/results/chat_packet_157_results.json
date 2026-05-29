@@ -1,0 +1,201 @@
+[
+  {
+    "article_id": "1987-07-23-left-ablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "en defensa siempre de las esencias flamencas... cuando se lidia contra la degradación, el nepotismo y, en general, los contenidos espúreos",
+        "target": "las esencias flamencas frente a degradación y contenidos espúreos",
+        "rationale": "The passage draws a legitimacy boundary between defended flamenco essences and degraded or spurious contents."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "sus juicios no alcanzan la mesura de Solón... es necesario ese arrojo, ese sentido crítico, aunque resulte hiriente",
+        "target": "Manuel's critical stance in defense of flamenco",
+        "rationale": "The text authorizes a critic's forceful judgment as necessary for policing degradation and improper flamenco content."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la valía personal, el rigor profesional y el sentido cotidiano de lucha del escritor ecijano",
+        "target": "the writer Manuel",
+        "rationale": "The passage explicitly evaluates the writer's value, rigor, and commitment in flamenco discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'mejor estudio monográfico' is an award criterion, but the excerpt does not itself construct a lasting canon or hierarchy of flamenco works."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "critical defense of flamenco essences against degradation and spurious contents",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations rely only on the visible contest/premio notice and ending evaluative paragraph."
+  },
+  {
+    "article_id": "1987-07-24-left-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Correction notice about a misprinted guitarist name; no evaluative or authorizing flamenco discourse is present."
+  },
+  {
+    "article_id": "1987-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Maestro incuestionable, engrandecedor de estilos, tutela de los mejores ecos",
+        "target": "Antonio Chacón and recognized flamenco masters",
+        "rationale": "The editorial constructs canonical hierarchy through exemplary masters, superlative status, and contrast with overlooked 'secundones'."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "no se penalice el quehacer auténtico de otros sin acceso a la amistad de líderes políticos",
+        "target": "overlooked artists with authentic flamenco work",
+        "rationale": "The passage attributes genuine flamenco value to overlooked artists and contrasts it with politically mediated recognition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el público reconocimiento que las más altas instituciones del Estado hicieron de su arte... las distinciones de ayuntamientos, diputaciones, Junta de Andalucía, etc., deben administrarse con enorme cautela",
+        "target": "official institutional recognition of flamenco artists",
+        "rationale": "The text treats state and municipal distinctions as mechanisms that confer cultural value, while questioning how that authorized recognition is distributed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The call for 'juicio crítico honesto' suggests critical authority, but the stronger visible functions are authenticity, canon hierarchy, and institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "heritage"
+      ],
+      "target": "overlooked flamenco artists versus officially elevated presumed masters",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible editorial; coding prioritizes explicit canon, authenticity, and institutional-recognition claims."
+  },
+  {
+    "article_id": "1987-09-4-right-el-romancero-tradicional-gitano-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "mientras haya en la tierra un hombre que cante siempre tendrá por guía y norte a Antonio Mairena",
+        "target": "Antonio Mairena",
+        "rationale": "Mairena is canonized as an enduring guide and exemplary point of orientation for all singers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "En la Universidad que se llama don Antonio Mairena habita todo el cante. Cuanto no recuerde Mairena no lo recordaremos nunca",
+        "target": "Antonio Mairena as source of flamenco knowledge",
+        "rationale": "The metaphor of Mairena as a university positions him as an authoritative repository and teacher of flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "su Majestad el Rey Juan Carlos I le imponía la Medalla de Oro de las Bellas Artes... recibía el primer Diploma «La Nave de Arnaldos», concedido por la Cátedra Menéndez Pidal de la Universidad Complutense",
+        "target": "institutional recognition of Antonio Mairena and the romancero tradition",
+        "rationale": "Royal and university awards are invoked as official mechanisms authorizing Mairena's cultural value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "este campo del flamenco, tan falseado a veces por unas concepciones del pseudo-andalucismo",
+        "target": "pseudo-Andalusian conceptions of flamenco/romancero",
+        "rationale": "The passage delegitimates certain conceptions as falsifying flamenco, drawing a boundary around proper understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The trigger word 'hombre' is generic in 'mientras haya en la tierra un hombre que cante' and does not create identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage",
+        "authenticity"
+      ],
+      "target": "Antonio Mairena as canonical guide and authorized exponent of flamenco romancero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible excerpt strongly centers Mairena's authority and official recognition."
+  },
+  {
+    "article_id": "1987-09-8-left-duende",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem invokes duende, but it does not apply duende as a criterion to evaluate a specific flamenco artist, performance, or practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic treatment of duende; no codable evaluative, pedagogical, heritage, authenticity, or community discourse under the conservative rules."
+  }
+]

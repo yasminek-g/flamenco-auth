@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "1994-01-15-left-flamenco-en-la-universidad",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Urge, pues, una nueva metodología didáctica y descubrir otros foros de debate... ha nacido Flamenco en la Universidad",
+        "target": "Flamenco en la Universidad as an institutional learning forum",
+        "rationale": "The passage explicitly frames the university cycle as a new didactic methodology and forum for debate, expanding access to flamenco knowledge through an institutional setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Tomás Pavón y Antonio Mairena... eslabones esenciales de la cadena transmisora del flamenco tradicional",
+        "target": "Tomás Pavón, Antonio Mairena, and traditional flamenco",
+        "rationale": "The article grounds flamenco value in continuity and transmission through recognized figures presented as essential links in the chain of traditional flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco ha pasado a encarnar... un compromiso al servicio de quienes desean potenciar su amor por esta seña de identidad única en el mundo",
+        "target": "flamenco as Andalusian cultural identity",
+        "rationale": "The passage frames flamenco as a collective cultural identity marker and public value, moving beyond entertainment into heritage-like cultural formation."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "heritage"
+      ],
+      "target": "Flamenco en la Universidad and traditional Andalusian flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes are based on explicit didactic, transmission, and cultural-identity framing in the visible text."
+  },
+  {
+    "article_id": "1994-01-16-left-una-encrucijada-de-caminos-rafae",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Se ha retomado la idea de acercar el flamenco a los universitarios",
+        "target": "university outreach through Flamenco en la Universidad",
+        "rationale": "The article explicitly describes an effort to bring flamenco to university audiences, making institutional learning and access central to the discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "le ha permitido ocupar un lugar preferente en el escalafón histórico y actual de los artistas andaluces",
+        "target": "Juan Peña El Lebrijano",
+        "rationale": "The passage explicitly places Lebrijano in a preferred position within a historical and current hierarchy of Andalusian artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El complemento artístico de Enrique de Melchor estuvo realizado con la brillantez que denota a un virtuoso de la guitarra flamenca",
+        "target": "Enrique de Melchor's guitar performance",
+        "rationale": "The passage directly evaluates the quality of the performance, praising its brilliance and virtuosity."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Flamenco en la Universidad, Juan Peña El Lebrijano, and Enrique de Melchor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Low attendance is discussed, but the clearest codeable claims concern institutional access and artistic evaluation/ranking."
+  },
+  {
+    "article_id": "1994-01-17-right-entrega-de-la-x-distinci-n-comp-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "entregaron respectivamente el preciado galardón en bronce... al genial Mario Maya, tras glosar ambos su trayectoria y dedicación",
+        "target": "Mario Maya",
+        "rationale": "The award ceremony and language of a prized distinction construct Mario Maya as a canonized, honored figure within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "este arte que, gracias a artistas como él, se engrandece y universaliza día tras día",
+        "target": "Mario Maya's contribution to flamenco",
+        "rationale": "The passage explicitly praises Maya's artistic contribution as enlarging and universalizing flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The award and jury confer recognition, but the visible text does not clearly frame this as heritage or patrimonial authority rather than ordinary artistic distinction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mario Maya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest evidence is evaluative and canonizing rather than explicitly patrimonial."
+  },
+  {
+    "article_id": "1994-01-18-left-las-llaves-de-oro-del-cante-la-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se convocara pública y libremente, en base a valoraciones objetivas y con un jurado representativo y ecuánime",
+        "target": "the proposed IV Llave de Oro del Cante or Arte Flamenco",
+        "rationale": "The passage defines legitimate flamenco judgment through objective criteria and a representative, impartial jury, foregrounding expert-critical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "La IV Llave de Oro del Cante o del Arte Flamenco",
+        "target": "Llave de Oro del Cante award",
+        "rationale": "The proposed award functions as a high-status reference point for ranking and canonizing flamenco excellence."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Jurado en el que participen: a) Las Federaciones y Peñas Flamencas. b) Los críticos, escritores y entendidos del Arte Flamenco. c) La Consejería de Cultura de la Junta de Andalucía...",
+        "target": "institutional and expert mechanisms for awarding the Llave de Oro",
+        "rationale": "The passage privileges federations, critics, experts, and Andalusian cultural institutions as authorized bodies for public recognition of flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "the Llave de Oro recognition process",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is primarily about creating an authoritative, objective, institutionally supported recognition mechanism."
+  },
+  {
+    "article_id": "1994-01-20-left-los-romances-antiguos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "los romances y la música se van perdiendo y la costumbre de cantarlos acabará también por perderse... todavía puede que se conserve algo de esta tradición",
+        "target": "the tradition of sung ancient romances/corridos",
+        "rationale": "The passage explicitly frames the sung romances as a disappearing living practice that may still survive among rural communities, invoking memory, conservation, and loss."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Este baile, que nos parece rústico y exclusivo de ese pueblo de Avila, fue antes un baile común y elegante. Las costumbres populares fueron por lo general antes costumbres aristocráticas",
+        "target": "popular romance-related dance/customs",
+        "rationale": "The passage uses historical continuity and origins to revalue a popular custom, arguing that what seems rustic has older and broader roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text describes remembered oral singing by a nurse and a rural worker, but it does not clearly frame this as authoritative learning or transmission of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition"
+      ],
+      "target": "ancient romances/corridos as living traditional practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The codeable discourse concerns preservation, survival, and historical revaluation of sung romances rather than present performance criticism."
+  }
+]

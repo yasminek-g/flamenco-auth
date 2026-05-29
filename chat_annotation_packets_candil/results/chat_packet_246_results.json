@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "1992-01-14-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "colmando el gozo de quienes vimos en sus soleares, alegrías y bulerías toda una obra de arte tan temperamental como convincente",
+        "target": "Manuela Carrasco and the profiled flamenco artists",
+        "rationale": "The passage explicitly evaluates flamenco performers through strong praise of artistic quality and expressive force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Despierta en la afición el auténtico sentido de la jondura, una apoteósica exaltación de los sentimientos más elevados y solemnes.",
+        "target": "El Chocolate's cante",
+        "rationale": "Jondura and elevated emotional expression are applied as aesthetic criteria for flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La absoluta superioridad de la que fuera llamada «Diosa del Baile Flamenco», impide cualquier cotejo con sus coetáneas.",
+        "target": "Manuela Carrasco",
+        "rationale": "The passage constructs a hierarchy by asserting superiority and rejecting comparison with contemporaries."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "justifica apodícticamente, que cantar gitano es siempre señal de buen cante",
+        "target": "gitano identity as a marker of flamenco authority",
+        "rationale": "Identity framing is used to authorize flamenco quality by linking gitano belonging directly to good cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Several references to family and race suggest continuity, but the stronger visible discourse function is identity-based evaluation rather than explicit tradition or roots authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community", "authenticity"],
+      "target": "the profiled gitano flamenco artists and their artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Strong evaluative and identity-authorizing language supports more than the default three codes."
+  },
+  {
+    "article_id": "1992-01-18-right-algo-que-ya-es-historia",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Para mi inolvidable Antonio Rengel, fue Manolo el mejor guitarrista del momento.",
+        "target": "Manolo el de Huelva",
+        "rationale": "The passage ranks Manolo as the best guitarist of his moment, constructing a value hierarchy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "les pedí que se le hiciera a Manolo un homenaje en pago de la deuda que toda la afición onubense y en especial los socios de la peña teníamos pendiente con el artista",
+        "target": "the Huelva afición and peña as recognizers of Manolo el de Huelva",
+        "rationale": "The afición and peña are positioned as a community with a duty and authority to recognize the artist's value through homage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The homage and memory language could suggest communal remembrance, but the visible excerpt does not clearly frame this as heritage or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "Manolo el de Huelva and his recognition by the Huelva flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible windows provide enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1992-01-21-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "debemos destacar la validez misma de los trabajos de Daniel Pineda",
+        "target": "Daniel Pineda's books on Cantes Flamencos and Demófilo",
+        "rationale": "The article explicitly evaluates the quality and validity of Pineda's flamenco-related scholarship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "es un libro definitivo, un clásico desde el momento mismo de su concepción literaria",
+        "target": "Daniel Pineda's book on Demófilo",
+        "rationale": "The book is canonized as definitive and classic, creating exemplary status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el incansable Daniel Pineda, docente en la Universidad Hispálense, académico de diversas corporaciones",
+        "target": "Daniel Pineda as scholarly authority on flamenco and folklore",
+        "rationale": "The review legitimates its judgment by foregrounding Pineda's academic and intellectual authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article invokes popular culture and collective respect, but it does not clearly frame flamenco as patrimony or heritage in the visible text."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Demófilo is described as foundational to modern flamencology, but the passage mainly canonizes scholarship rather than grounding present flamenco practice in tradition or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Daniel Pineda's scholarship and Demófilo's place in flamencology",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review strongly authorizes scholarly expertise and canonizes the book and Demófilo."
+  },
+  {
+    "article_id": "1992-01-23-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "los franceses nos están dando una auténtica lección sobre dónde buscar la autenticidad y las raíces de nuestro arte",
+        "target": "the French-produced Bacán clan recording project",
+        "rationale": "The passage explicitly authorizes the recording through authenticity and roots claims about flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "algunos han de estar enfocados a difundir, sostener y conservar las singularidades de un arte excepcional y único en el mundo: el flamenco",
+        "target": "recordings that preserve flamenco singularities",
+        "rationale": "The value of recordings is grounded in conserving and sustaining flamenco's distinctive continuity rather than only producing profit."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "no todos los trabajos han de tener una rentabilidad económica",
+        "target": "Spanish record-industry priorities",
+        "rationale": "Commercial profitability is contrasted with the more authentic task of sustaining and conserving flamenco singularities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todo lo plasmado me traslada a la profundidad cantaora de Utrera-Lebrija en su más esencial raíz flamenca",
+        "target": "the recorded collection by the Bacán clan and associated artists",
+        "rationale": "The passage positively evaluates the recording's artistic value and its relation to a local flamenco depth."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text uses criteria such as compás, sabor añejo, sencillez, and raíz, but these overlap heavily with the broader critical evaluation already emitted."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "There is criticism of record-industry priorities, but the main boundary work is better captured by AUTH_04's anti-commercial authenticity frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "tradition", "criticism"],
+      "target": "the Bacán clan recording and the contrast with profit-driven record production",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article legitimates the recording while criticizing commercial priorities in flamenco production."
+  },
+  {
+    "article_id": "1992-01-23-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "un equipo de trabajo tan homogéneo, eficiente y de acreditada trayectoria en la defensa del Flamenco es el mejor aval de éxitos futuros",
+        "target": "the Junta Directiva of the Peña Flamenca de Jaén",
+        "rationale": "The peña leadership is presented as a community institution whose recognized trajectory authorizes the defense and support of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'defensa del Flamenco' suggests protection, but there is no clear heritage, safeguarding, or public-culture framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise evaluates the administrative team rather than a flamenco artist, performance, recording, style, or event."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "the Peña Flamenca de Jaén leadership as defenders of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative content is mostly descriptive, with one clear community-authority claim."
+  }
+]

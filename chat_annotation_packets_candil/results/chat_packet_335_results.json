@@ -1,0 +1,209 @@
+[
+  {
+    "article_id": "1997-05-14-left-fernando-fern-ndez-pantoja",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Por eso la herencia de mi padre ha sido total. —Yo creo que lo he heredado too. El físico, la voz...",
+        "target": "Fernando Fernández Pantoja / Terremoto Hijo",
+        "rationale": "The passage frames his flamenco identity and vocal authority through familial inheritance from his father."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Soy el enemigo número uno de esas músicas que se meten en el flamenco. El flamenco es sólo cante, guitarra y palmas. ¡Se acabó!",
+        "target": "non-traditional musical additions to flamenco",
+        "rationale": "The speaker draws a hard boundary around proper flamenco and excludes added musical forms as disrespectful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Esos intérpretes que hacen ese tipo de música le han perdido el respeto al flamenco.",
+        "target": "interpreters who incorporate other musics into flamenco",
+        "rationale": "The passage uses critical judgment to police the boundary between legitimate flamenco and improper hybrid practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Community memory of the father is present, but it functions mainly as biographical recollection rather than community authority over flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Terremoto Hijo and proper flamenco practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1997-05-16-left-un-cantaor-en-el-olvido",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "conservando y transmitiendo cantes, escuelas y estilos",
+        "target": "Luis Márquez Alés 'El Quija'",
+        "rationale": "The article values El Quija by presenting him as a figure of continuity for older cantes, schools, and styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Luis Márquez Alés “El Quijja”, profundo, intenso aficionado, vivió por y para el Flamenco; transmisor de una serie de viejos cantes que se han salvado por él",
+        "target": "old flamenco cantes transmitted by El Quija",
+        "rationale": "The passage explicitly frames El Quija as a transmitter whose embodied practice preserved old cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "fue un hombre que, dentro de su incultura, le dio calidad al cante flamenco",
+        "target": "El Quija's cante",
+        "rationale": "The passage makes an explicit qualitative judgment about El Quija's contribution to flamenco singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text uses saving/transmission language, but the visible excerpt does not clearly shift into public heritage or institutional safeguarding discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The word 'hombre' appears, but it is not doing identity-group framing work for belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Luis Márquez Alés 'El Quija'",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible opening and ending provide clear evidence for continuity and transmission."
+  },
+  {
+    "article_id": "1997-05-19-left-el-nov-simo-cancionero-er-tico-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "manifestaciones artísticas que contienen en su pureza la esencia del pueblo. En el caso del pueblo andaluz, la muestra más clara de su arte primitivo y original no es otra que el flamenco.",
+        "target": "flamenco as Andalusian popular art",
+        "rationale": "The passage presents flamenco as the pure, original expression of the Andalusian people."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "recuperación de lo popular iniciada por el arte y la literatura romántica",
+        "target": "popular/flamenco material in Villén's cancionero",
+        "rationale": "The article frames the cancionero through recovery of popular roots and uses origin language to authorize flamenco's cultural value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Remitiédonos al glosario de términos gitanos que consigna Juan Manuel Villén, el significado de las palabras empleadas en esta estrofa sería",
+        "target": "Villén's glossary and flamenco/gitano vocabulary",
+        "rationale": "The passage mediates access to specialized flamenco-related vocabulary through explanatory glossing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'pureza' appears, but the passage mainly authorizes flamenco as pure/original rather than excluding a clearly identified impure target."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The discussion of popular recovery has cultural-memory overtones, but it does not explicitly frame flamenco as heritage or public patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "flamenco and popular Andalusian literary material",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt supports authenticity/origin claims and a modest mediation code."
+  },
+  {
+    "article_id": "1997-05-21-right-martinetes-y-ton-s",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The lyric says 'dije la verdad' and 'si no fuera verdad', but these are internal poetic truth claims, not authenticity claims about flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text consists of flamenco-style lyrics rather than meta-discourse evaluating, authorizing, transmitting, or defining flamenco."
+  },
+  {
+    "article_id": "1997-05-22-left-guitarra",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses aesthetic imagery such as 'sonidos negros' and 'sentimientos', but it does not apply criteria to judge or define flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a poem about the guitar and does not contain clear annotation-worthy discourse under the codebook."
+  }
+]

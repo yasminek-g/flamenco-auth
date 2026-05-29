@@ -1,0 +1,235 @@
+[
+  {
+    "article_id": "1997-11-12-left-musa-del-baile",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la mujer artista, la bailarina o bailaora no ha sido suficientemente reconocida y valorada en su aportación a cualquier movimiento cultural y artístico en el que ha dejado sus señas de identidad",
+        "target": "mujeres artistas, bailarinas y bailaoras",
+        "rationale": "The passage frames women performers as an identity group whose cultural and artistic contribution has been undervalued, making gender central to recognition and representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "La Argentinita continúa esa larga tradición del cante y del baile flamenco y popular, mantenida por vía oral, y la transforma con las aportaciones e innovaciones de su momento",
+        "target": "La Argentinita's baile",
+        "rationale": "The passage legitimates La Argentinita through continuity with a long oral flamenco/popular tradition while also valuing her transformation of it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Este secreto natural y oculto en la fragilidad de su cuerpo, como pluma en el aire, convierte a La Argentinita en intérprete inimitable. Con razón, los Quintero la llamaron «la musa del baile»",
+        "target": "La Argentinita",
+        "rationale": "Calling her an inimitable interpreter and 'musa del baile' elevates her to exemplary, quasi-canonical status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions oral maintenance of tradition, but the visible span does not clearly describe a concrete learning or transmission relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "La Argentinita and women baile artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt; coded only the visible gender, tradition, and evaluative canonizing language."
+  },
+  {
+    "article_id": "1997-11-13-right-imperio-argentina-entrevista",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Su madre era Rosario del Río, que cantaba flamenco puro como nadie",
+        "target": "Rosario del Río's singing",
+        "rationale": "The phrase attributes exceptional pure flamenco quality to Rosario del Río's singing, presenting it as genuinely flamenco rather than merely biographical."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "me sorprendió su manera de cantar y la vitalidad que posee para estar casi dos horas en un escenario, actuando",
+        "target": "Imperio Argentina / Malena",
+        "rationale": "The interviewer explicitly evaluates Malena's singing and stage vitality as impressive."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The word 'participar' appears in relation to public acts, but it does not establish a participatory flamenco setting or public/private value contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Rosario del Río's flamenco singing and Imperio Argentina's artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the interview excerpt is reminiscence; only the explicit purity and evaluative claims were coded."
+  },
+  {
+    "article_id": "1997-11-17-left-poema",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Que la esencia jonda y fina de la casta los Montoya",
+        "target": "Farruco's baile",
+        "rationale": "The poem grounds Farruco's flamenco value in 'esencia jonda' and lineage-associated casta, presenting his art as deeply genuine."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Farruco, genio y verdad, sino trágico y siniestro. Ya está en el cielo el Maestro",
+        "target": "Farruco",
+        "rationale": "The poem canonizes Farruco through elevated titles such as genius, truth, and Maestro."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to 'casta los Montoya' has identity resonance, but the short poem does not clearly develop group belonging or representation beyond praise of Farruco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Farruco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short poetic tribute with strong canonizing language; no insufficient context because the evaluative function is clear."
+  },
+  {
+    "article_id": "1997-11-17-right-domingo-ramos-pic-n-pormenorizac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "lo que diferencia fundamentalmente al arte jondo-flamenco es la noción de unidad cultural diferenciada. Si se quiere estudiar el fenómeno es preciso conservar esta noción",
+        "target": "arte jondo-flamenco",
+        "rationale": "The essay grounds flamenco's intelligibility and value in preserving a differentiated cultural unity, a continuity/rootedness claim about the form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "lo jondo no es más que un momento musical, arrebatado al olvido en el recuerdo de un oyente, cuyo momento es irrepetible",
+        "target": "jondo-flamenco musical practice",
+        "rationale": "The passage defines jondo aesthetic value through irrepetibility, memory, and fugitive performance rather than fixed musical text."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'verdaderas y falsas glorias' suggests possible boundary language, but in the visible excerpt it is part of a broad descriptive list rather than a developed purity exclusion."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "References to gatherings of friends provide social setting, but the excerpt does not clearly contrast participatory/private flamenco with public or spectatorial flamenco as a value boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "arte jondo-flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated theoretical excerpt; coded only the visible conceptual definitions and aesthetic criteria."
+  },
+  {
+    "article_id": "1997-11-19-right-las-fronteras-del-arte-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el Baile representa la máxima expresión flamenca, ya que, en el mismo, se dan cante, guitarra y danza al unísono",
+        "target": "flamenco baile",
+        "rationale": "The passage explicitly ranks baile as the maximum flamenco expression because it integrates cante, guitar, and dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "estas formas sirvieron de base al baile flamenco actual no cabe la menor duda",
+        "target": "current flamenco baile",
+        "rationale": "The passage authorizes current flamenco baile by tracing continuity from earlier popular and folkloric dance forms."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Lo deseable es que los nuevos intérpretes reconozcan la responsabilidad que tienen en sus manos y en sus pies, pero, sobre todo, en la cabeza para que los aficionados del siglo XXI recojan la buena semilla del baile flamenco",
+        "target": "future transmission of flamenco baile",
+        "rationale": "The text frames new interpreters as responsible for carrying forward baile flamenco so future aficionados inherit its 'good seed'."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Although the article mentions debate with the afición and future aficionados, it does not clearly define a participatory setting or public/private contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "heritage"
+      ],
+      "target": "flamenco baile",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt; coded the visible ranking, historical continuity, and future-safeguarding language."
+  }
+]

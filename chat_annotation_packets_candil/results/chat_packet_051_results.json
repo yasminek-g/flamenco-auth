@@ -1,0 +1,292 @@
+[
+  {
+    "article_id": "1982-07-6-right-catalogo-de-libros-librillos-y-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "cuando la obra no resulta acreedora de grandes méritos o incluso se pierde en la pura chabacanería",
+        "target": "publications of flamenco-related coplas/letras",
+        "rationale": "The passage explicitly evaluates some listed works as lacking merit or falling into vulgarity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "conscientes, por tanto, de nuestra incapacidad de juzgar que cedemos gustosamente a la sensibilidad de los poetas y, aunque sea con algún que otro recelo, a los flamencólogos",
+        "target": "poets and flamencologists as judges of major flamenco-related works",
+        "rationale": "The annotating voice positions poets and flamencologists as authorities to whom judgment is deferred, even with reservations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Selección cuyo mayor interés acaso estribe en apreciar la evidente y positiva evolución poética que este cante... ha tenido",
+        "target": "the poetic evolution of the saeta",
+        "rationale": "The passage makes an explicit positive assessment of the saeta's poetic evolution."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The contrast between popular poets and the cultivated poet's 'usurpación' suggests boundary work, but the visible passage is primarily literary-critical rather than a clear proper/improper flamenco purity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger points to imitation, but the visible text does not clearly frame flamenco knowledge as embodied, oral, familial, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco-related copla publications and evaluative authorities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated long catalogue; annotations are limited to visible evaluative framing and sample entries."
+  },
+  {
+    "article_id": "1982-07-16-right-rancapino",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Yo he escuchao a mucha gente vieja de mi tierra... pero quien más me ha metío a mí en la línea ha sio Aurelio.",
+        "target": "Rancapino's learning of old Cádiz styles",
+        "rationale": "The singer grounds his style in listening to older local singers and especially Aurelio, a clear oral/lineage transmission claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "El cantaba la soleá de Cádiz y las bulerías, un cante que no se le da mu bien a los payos... los gitanos de ese rincón de Cádiz hacemos un estilo mu alegre",
+        "target": "Cádiz gitano style and payo/gitanos identity boundary",
+        "rationale": "Ethnic/local identity is used to explain who embodies and performs a particular flamenco style with authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Para mí gusto Caracol ha sío el mejor cantaor que ha tenío el flamenco.",
+        "target": "Caracol",
+        "rationale": "The passage canonizes Caracol through a superlative ranking as the best singer flamenco has had."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "en el extranjero se canta el carro de Manolo Escobar, diciendo que es flamenco",
+        "target": "foreign performances labeling Manolo Escobar songs as flamenco",
+        "rationale": "The speaker criticizes a mislabeling of non-flamenco popular song as flamenco, drawing a boundary around legitimate flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Antes el público aprendía porque se hacían toos los cantes, y hoy no pasa así: venga bulerías y tangos",
+        "target": "festival programming as public learning access",
+        "rationale": "The passage frames festivals as a medium through which audiences used to learn the full repertoire, contrasting that with narrower current access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Phrases such as 'Caracol... dolía' and references to cantes offer aesthetic language, but the stronger visible function is canon ranking and transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Rancapino's inherited Cádiz flamenco style and legitimate festival repertoire",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Interview speech includes dialectal/OCR forms; coding follows only visible claims."
+  },
+  {
+    "article_id": "1982-07-17-right-cante-jondo-en-el-grito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "ha obtenido una buena acogida de crítica y público en el Teatro Español de Madrid",
+        "target": "the play El Grito with José Meneses incorporated",
+        "rationale": "The passage reports explicit positive reception by critics and the public."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "en sus cortas inserciones —Meneses, Mairena, Vicky misma y la guitarra del «Niño Ricardo»— cumple un papel semejante, creo, al del hueso de jamón en el puchero. Pero con bastante jamón.",
+        "target": "the cante insertions in El Grito",
+        "rationale": "The author evaluates the dramatic function of the cante insertions as small but strongly enriching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text clarifies that El Grito is not a flamenco or musical spectacle, but this is genre description rather than an authenticity claim about proper flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The announcement of a reedition of La Solera Fina suggests preservation, but the visible passage is primarily promotional and lacks explicit safeguarding or heritage framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the use of cante in El Grito",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only visible reception and authorial evaluation are coded; plot summary is not coded."
+  },
+  {
+    "article_id": "1982-07-22-right-un-tema-para-estudiar-en-serio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Si es cierto que en el Flamenco prima el dolor, también la alegría hace acto de presencia... la reciedumbre y la tragedia de cantes como la seguiriya, la soleá, el martinete, la saeta",
+        "target": "flamenco expressive qualities",
+        "rationale": "The passage defines flamenco through aesthetic-emotional criteria such as pain, joy, toughness, and tragedy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "La gracia, el «salero», de las gentes de Andalucía está presente en su arte de forma consistancial.",
+        "target": "Andalusian identity as grounding flamenco humor",
+        "rationale": "The passage frames Andalusian collective identity as a constitutive source of artistic expression in flamenco-related humor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Interpretación que, evidentemente, no es la que nosotros vamos buscando, por cuanto tiene de desconocimiento y de «panderetada», de «humor negro», que también se realiza a costa del Flamenco.",
+        "target": "a humoristic interpretation of cante associated with ignorance and panderetada",
+        "rationale": "The author uses critical authority to reject an interpretation as ignorant, stereotyped, and damaging to flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text asserts flamenco's seriousness and truth, but the stronger supported codes are aesthetic criteria and critical boundary critique rather than a direct authenticity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'interpretación' appears, but it concerns literary/critical interpretation rather than learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "humor as a legitimate but bounded perspective on flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; visible text is sufficient for the coded discourse functions."
+  },
+  {
+    "article_id": "1982-07-24-right-la-guitarra-entre-el-virtu-sismo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "La evolución en el toque de la guitarra flamenca queda fielmente plasmada en la extensa discografía... el rasgueado a la vieja usanza y el apoyo al cantaor daban el fondo apetecido",
+        "target": "continuity and evolution of flamenco guitar accompaniment",
+        "rationale": "The passage grounds present guitar practice in documented historical continuity and older performance functions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Ramón Montoya y... «Niño Ricardo» a los verdaderos artistas que marcaron no sólo una época, sino las reglas en que todo tocador apoya su estudio actualmente",
+        "target": "Ramón Montoya and Niño Ricardo",
+        "rationale": "The passage canonizes these guitarists as foundational masters who set rules for later study."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "las reglas en que todo tocador apoya su estudio actualmente; artistas... de los dos grandes maestros y de quienes adquirieron sus conocimientos y mantuvieron su escuela",
+        "target": "the pedagogical authority of Montoya, Niño Ricardo, and their school",
+        "rationale": "The article legitimates current guitar knowledge through masters, rules, acquired knowledge, and maintained schools."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la simplicidad musical... la justeza de las falsetas cortas, el rasgueado a la vieja usanza... se ha conseguido llegar al virtuosismo",
+        "target": "flamenco guitar quality across accompaniment and concert playing",
+        "rationale": "The passage defines guitar value through aesthetic and technical criteria such as simplicity, precision, old-style rasgueado, and virtuosity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el tocador que intenta, en su acompañamiento, hacer alardes de concertista... lo entorpece y apaga y, al mismo tiempo, confunde al aficionado",
+        "target": "guitarists who impose concert virtuosity on cante accompaniment",
+        "rationale": "The passage polices the boundary between proper accompaniment and inappropriate concert-display, criticizing the latter as damaging to the singer and audience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call to write works permanently in staff notation suggests preservation, but it is framed as musical documentation rather than explicit public heritage or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco guitar accompaniment, concert virtuosity, and canonical guitar schools",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article visible; multiple codes are supported by distinct discussion of history, canon, pedagogy, criteria, and boundary critique."
+  }
+]

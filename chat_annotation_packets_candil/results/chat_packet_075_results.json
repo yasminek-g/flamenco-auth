@@ -1,0 +1,194 @@
+[
+  {
+    "article_id": "1983-05-23-left-gabriel-diaz-fernandez-macande",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Era un artista genial, extravagante, de unas aptitudes de cantaor insuperables",
+        "target": "Gabriel Díaz Fernández «Macandé» as cantaor",
+        "rationale": "The passage explicitly evaluates Macandé's artistic quality and singing aptitude."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no se lo he oído a nadie... a lo mejor se tenía que estar veinte horas cantando en una fiesta",
+        "target": "Macandé's voice and endurance as exemplary",
+        "rationale": "The quoted testimony elevates Macandé by comparison with all others and constructs exceptional status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "«Macandé» detestó el profesionalismo. No aceptaba que le pagaran su arte.",
+        "target": "Macandé's non-professional relation to flamenco art",
+        "rationale": "The passage frames refusal of payment and professionalization as a meaningful feature of his artistic identity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is mentioned as biographical and vocal inheritance, but the visible text does not clearly use it to define broader belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Gabriel Díaz Fernández «Macandé»",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-05-23-right-antonio-mairena-galardonado",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "el Rey Juan Carlos ha entregado la medalla de oro de Bellas Artes... significa el reconocimiento de los errores secularmente cometidos",
+        "target": "Antonio Mairena and flamenco/gitano cultural recognition",
+        "rationale": "The passage treats an official state honor as institutional recognition with public cultural and reparative significance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "En tiempos venideros se dirá... si fue antes o después de Antonio Mairena.",
+        "target": "Antonio Mairena's canonical status",
+        "rationale": "The passage makes Mairena a temporal and artistic reference point for the flamenco canon."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "A través de él, nos ha llegado el grito... de todos los viejos siguiriyeros, los ecos remotos y venerados",
+        "target": "Mairena as transmitter of older cante traditions",
+        "rationale": "The text grounds Mairena's value in continuity with revered older flamenco voices."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "da comienzo una reparación social y moral hacia un pueblo desgarrado, hacia un arte",
+        "target": "the gitano community and flamenco as represented through Mairena",
+        "rationale": "The passage frames the award through gitano collective identity, persecution, and public representation."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "Antonio Mairena and institutional recognition of flamenco/gitano cultural value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-05-24-left-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a heading and byline, too short to support discourse coding."
+  },
+  {
+    "article_id": "1983-07-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "quien, sin duda, ha sido uno de los más grandes cantaores de este siglo",
+        "target": "Antonio Mairena",
+        "rationale": "The editorial canonizes Mairena through a superlative ranking among twentieth-century singers."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "unirse a la rememoración... obligada referencia para los futuros biógrafos del maestro",
+        "target": "Candil's memorialization of Antonio Mairena",
+        "rationale": "The passage frames remembrance and the magazine's prior monographic issue as memory-work for future cultural transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "quien nos deja, por fortuna, el hermoso legado de todos los duendes jondos",
+        "target": "Mairena's legacy",
+        "rationale": "The editorial grounds Mairena's value in the legacy he leaves for flamenco continuity."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "tradition"
+      ],
+      "target": "Antonio Mairena's memory and legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-7-right-andres-segovia-linarense-univers",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text clearly canonizes Andrés Segovia as a guitarist, but the visible passage concerns classical guitar rather than flamenco discourse."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutional honors and recognition are mentioned, but they are not framed as flamenco or flamenco heritage recognition in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Despite strong praise and recognition language, the visible text is about Andrés Segovia and concert guitar, not flamenco-specific discourse."
+  }
+]

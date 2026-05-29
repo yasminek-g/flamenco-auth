@@ -1,0 +1,236 @@
+[
+  {
+    "article_id": "1993-01-10-right-ix-distinci-n-comp-s-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "De la ortodoxia, una vez registrada, hay que pasar inmediatamente a la valoración de la originalidad. Y para esto no existe catón específico, es la intuición y sensibilidad del crítico quien tiene la palabra.",
+        "target": "la crítica flamenca / periodismo flamenco",
+        "rationale": "The passage explicitly gives the critic authority to move from orthodoxy to judging originality through sensitivity and intuition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Menese, con su plenitud madura, ha dado al cante lecciones de sabiduría y, al mismo tiempo, ha dictado, en momentos difíciles, importantes dictados éticos",
+        "target": "José Menese",
+        "rationale": "The text evaluates Menese's artistic maturity, wisdom, and ethical significance as grounds for the award."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "este arte añejo, preñado de siglos y de sufrimientos, va mucho más allá de la momentánea emoción estética, para fundirse con la lección trascendente de la historia",
+        "target": "arte flamenco / cante",
+        "rationale": "Flamenco value is grounded in age, accumulated suffering, and continuity with historical experience rather than momentary aesthetics alone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The award and majority vote imply distinction, but the visible text does not strongly construct a broader canon or hierarchy beyond this single prize."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "José Menese and flamenco criticism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-01-11-left-recordando-al-beni-de-c-diz-jos-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "En su faceta artística, era genial.",
+        "target": "Beni de Cádiz",
+        "rationale": "The passage directly praises the artist's quality and frames the obituary as an evaluative remembrance of his flamenco artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Dominaba con arte y gusto toda la gama de las cantiñas, especialmente el cante por alegrías... sin perder el obligado compás.",
+        "target": "Beni de Cádiz's cante",
+        "rationale": "The evaluation applies aesthetic criteria such as command of repertoire, taste, art, and compás to define the quality of his singing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "se sentía orgulloso de su maestro «el Caracol»... el eco inigualable de su voz se vería plasmado en la de «el Beni», su fiel discípulo.",
+        "target": "Beni de Cádiz's relation to Caracol",
+        "rationale": "The passage frames Beni's artistic identity through master-disciple lineage and embodied vocal transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'entre cabales' hints at insider afición, but it is not developed enough as community authority or recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to 'grandes figuras' and 'insigne cantaor' are honorific, but they do not create a clear canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Beni de Cádiz",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-01-12-left-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Varios son los conceptos nuevos que se le aprecian a José el de la Tomasa en este «Al compás del sueño».",
+        "target": "José el de la Tomasa's album Al compás del sueño",
+        "rationale": "The article explicitly reviews and assesses the recording, identifying artistic development and new concepts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "una matizada redondez en su cante, a la que hay que sumar melodía... melisma personal y tratamiento tonal propio",
+        "target": "José el de la Tomasa's cante",
+        "rationale": "The review judges quality through concrete aesthetic criteria: roundedness, melody, melisma, tonal treatment, and adaptation to cante structures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "su afán por evocar añejos ecos que han tenido especial significación en la historia del flamenco",
+        "target": "José el de la Tomasa's repertoire and stylistic choices",
+        "rationale": "The passage values the recording partly through its continuity with old echoes and historically significant flamenco figures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text names historically significant figures, but the main function is to assess the album rather than construct a hierarchy or canon."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial distribution problems are discussed, but not as a threat to authenticity or intimate flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "José el de la Tomasa's album Al compás del sueño",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-01-13-left-a-prop-sito-de-la-conferencia-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "escuchamos una agradable pero superficial exposición, síntesis arbitraria de lo que podemos encontrar sobre guitarra flamenca en la bibliografía actual.",
+        "target": "Ángel Álvarez Caballero's conference on flamenco guitar",
+        "rationale": "The passage gives a direct negative evaluation of the conference as superficial and arbitrary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el marco requiere una responsabilidad mayor, al ser internacional y constituido por un público fundamentalmente guitarristico y especializado.",
+        "target": "conference speaker and critical discourse on flamenco guitar",
+        "rationale": "The author invokes the specialized institutional setting and audience to demand higher expert responsibility from the flamenco critic-speaker."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "rogarle como coordinador de los cursillos del Festival de Córdoba, que dé al flamenco el mismo trato que a las demás modalidades",
+        "target": "flamenco instruction at the Córdoba Festival courses",
+        "rationale": "The passage contests institutional access and treatment of flamenco within a formal course setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "¡Ya es hora de escuchar y analizar de verdad lo que hicieron y componen los concertistas flamencos!",
+        "target": "historiography and analysis of flamenco guitar",
+        "rationale": "The author asserts analytic listening and serious treatment of guitar production as criteria for adequate flamenco-guitar criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article mentions generations and new creators, but mainly to criticize omission rather than to establish a hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ángel Álvarez Caballero's conference and institutional treatment of flamenco guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-01-13-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a short credit line for reproduced drawings and texts, insufficient for discourse coding."
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "article_id": "1985-11-12-left-justificaci-n-de-la-sole",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "entiendo las venerandas voces, cante de desgarros hondos, de jirones de carne, de sangrias sin destino",
+        "target": "la soleá",
+        "rationale": "The poem explains the value and meaning of soleá through aesthetic-emotional criteria of depth, wound, solitude, and suffering."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "la soleá",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic rather than argumentative, so only the clearest aesthetic-definition discourse is coded."
+  },
+  {
+    "article_id": "1985-11-12-right-perrate-de-utrera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Perrate de Utrera, un valioso tesoro de pureza jonda",
+        "target": "Perrate de Utrera",
+        "rationale": "The passage presents Perrate as an embodiment of genuine jondo flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un cantaor que fue portador de los rancios y abruptos soníos gitanos y que sus recios hilos de puro llanto reflejan las hermosas y apodícticas palabras de Luis Cernuda",
+        "target": "Perrate de Utrera's cante",
+        "rationale": "The article explicitly praises Perrate's cante through evaluative language about sound, force, and expressive depth."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Perrate de Utrera",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The social critique of poor support for elderly artists is present, but it is not itself a flamenco authenticity, heritage, pedagogy, community, or canon claim."
+  },
+  {
+    "article_id": "1985-11-16-left-saquemos-a-la-luz-de-la-actualid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "¡Cuántos grandes creadores e intérpretes hemos olvidado!",
+        "target": "forgotten flamenco creators, interpreters, lyricists, guitarists, and singers",
+        "rationale": "The article frames remembrance of neglected flamenco figures as a collective memory-work and preservation problem."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Tres grandes cantaores, entre pocos más, fueron RELOJES CAROS POR SU PRECISIÓN: Chacón, «Niño de Medina» y «Niño de la Isla».",
+        "target": "Chacón, Niño de Medina, and Niño de la Isla",
+        "rationale": "The passage constructs a hierarchy of exemplary cantaores through superlative comparison and canonical grouping."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "sin omitir ningún «palo» por liviano que pareciera a los que no veían más cantes válidos que la siguiriya y la soleá",
+        "target": "the range of valid flamenco palos",
+        "rationale": "The author contests a purity boundary that recognizes only siguiriya and soleá as valid cantes and devalues lighter palos."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "forgotten flamenco artists and broader cante repertoire",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article both canonizes selected singers and challenges a restrictive hierarchy of valid palos."
+  },
+  {
+    "article_id": "1985-11-16-right-contrarr-plica-sobre-el-cal-y-lo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "CANDIL tiene antigua constancia del rigor historiográfico que, en la totalidad de su importante obra sobre el flamenco, maneja el admirado Manuel Barrios",
+        "target": "Manuel Barrios and Bernard Leblond as expert interpreters",
+        "rationale": "The editorial grants scholarly and critical authority to named experts whose documentation and analysis frame the debate."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "buceantes en una realidad histórica —la de los gitanos— cuya interpretación resulta, en el trabajo del profesor de Perpiñán, siempre audaz y muy sugerente",
+        "target": "gitanos as a historically interpreted identity group",
+        "rationale": "The passage frames flamenco-adjacent debate around the interpretation and representation of a specific identity group."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions publication and readers, but does not contrast participatory/private versus spectatorial/public flamenco settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "expert debate over caló, gitanos, and flamenco-related historiography",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Because the article is truncated, only the visible editorial framing and closing identity discussion are used."
+  },
+  {
+    "article_id": "1985-11-18-right-el-sevillanito",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un digno y buen cantaor de flamenco conocido como El Sevillanito",
+        "target": "El Sevillanito",
+        "rationale": "The article explicitly evaluates El Sevillanito as a worthy and good flamenco singer."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Manuel Vallejo, quien, al escucharle pregonar quedó inmediatamente prendado del timbre y la potencia de voz que poseía aquel chaval, y de tal manera le entusiasmó que lo enroló en su troupe y se lo llevó con él como cantaor, luego lógicamente de educarle la voz y enseñarle.",
+        "target": "El Sevillanito's apprenticeship with Manuel Vallejo",
+        "rationale": "The passage frames El Sevillanito's flamenco formation through a master-apprentice relation involving vocal education and teaching."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "para Alcalá y para casi todo el ámbito flamenco este cantaor haya pasado prácticamente desapercibido",
+        "target": "memory of El Sevillanito within Alcalá and the flamenco world",
+        "rationale": "The article performs recovery of a neglected flamenco figure and asks the community to contribute further memory and information."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "El Sevillanito",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The final request for information reinforces the article's recovery and memory-work function."
+  }
+]

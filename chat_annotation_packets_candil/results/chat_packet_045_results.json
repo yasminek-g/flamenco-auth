@@ -1,0 +1,228 @@
+[
+  {
+    "article_id": "1982-03-22-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Estamos ante cuatro horas largas de excelentes grabaciones flamencas; lo que, a nuestro juicio y sin duda alguna, merece un entusiasta aplauso.",
+        "target": "la colección discográfica 'Grandes del Flamenco'",
+        "rationale": "The reviewer explicitly evaluates the quality and value of the recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no se nos ofrezca el trabajo con carácter antológico ... ni siquiera como un ajustado muestreo del flamenco revalorizado a partir del II Concurso de Arte Flamenco de Córdoba, 1956",
+        "target": "la selección de cantes y cantaores de Philips",
+        "rationale": "The review questions the collection's status as anthology or representative sample, invoking canon-selection criteria."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Siempre que los intentos sean realizados desde una responsable actitud, habrá que reconocer el esfuerzo. Pero cualquier comercialidad barata, cuenta, contará, con nuestro total rechazo.",
+        "target": "la comercialidad barata en la recreación discográfica del flamenco",
+        "rationale": "The critic polices a boundary between responsible artistic recreation and cheap commerciality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commerciality is criticized, but the clearest discourse action is reviewer boundary critique rather than an explicit authenticity-loss claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "la colección 'Grandes del Flamenco' y sus criterios de selección/comercialidad",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; coded only visible review text."
+  },
+  {
+    "article_id": "1982-03-24-left-un-libro-sobre-la-saeta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un libro, breve en contenido, pero rico en sugerencias",
+        "target": "el libro 'La Saeta' de Rafael López Fernández",
+        "rationale": "The passage gives a direct critical assessment of the book's quality and usefulness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "ya van sobrando en la historiografía flamenca los alambristas que pontifican desde la cuerda floja de su ignorancia",
+        "target": "la historiografía flamenca ignorante o poco rigurosa",
+        "rationale": "The reviewer asserts critical authority by contrasting the book's source-based work with ignorant pontification in flamenco historiography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "En resumen, un trabajo bien hecho, más divulgativo que científico, en una colección irregular",
+        "target": "el estudio sobre la saeta y su colección editorial",
+        "rationale": "The closing judgment evaluates the book positively while qualifying its level and editorial context."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The review reports the author's origin theory for the saeta, but the visible text does not clearly use origins to authorize present flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "el libro 'La Saeta' y la historiografía flamenca sobre la saeta",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-03-24-right-dos-libros-en-el-centenario-de-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "su recuperación no puede significar cosa distinta a la de un enlace vivo con el pasado, a un amarre de la memoria... no es un regreso, sino una asunción crítica de la Historia",
+        "target": "la recuperación histórica de pensamientos, autores y folklore olvidados",
+        "rationale": "The passage frames historical recovery as active memory-work and a living relation to the past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "constituye todo un monumento literario repleto de historia y actualidad, y, lo que me parece de mayor interés, de auténtico ejemplo vivo",
+        "target": "la edición facsímil de 'El Folk-Lore Andaluz'",
+        "rationale": "The review canonizes the publication as a literary monument and exemplary source."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "dos libros que, por su interés, recomendamos de entrada al lector",
+        "target": "los dos libros sobre Demófilo/Machado y Álvarez",
+        "rationale": "The article explicitly recommends and evaluates the books' interest and value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article invokes cultura popular and folklore, but the stronger visible discourse is memory-work and recovery rather than explicit patrimony/heritage terminology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text praises scientific study and rigor, but expert authority is less central than the direct evaluations and canonization already coded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Demófilo, 'El Folk-Lore Andaluz', and recent books recovering Andalusian folklore history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-03-25-right-discograf-a-placas-de-artistas-f",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a byline and artist name, too short to judge."
+  },
+  {
+    "article_id": "1982-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la Consejería de Cultura de la Junta de Andalucía prepara unos encuentros de artistas flamencos en los que se estudien, debatan y adopten conclusiones sobre su propia problemática",
+        "target": "los encuentros institucionales de artistas flamencos promovidos por la Junta de Andalucía",
+        "rationale": "A public cultural institution is positioned as authorizing and enabling official recognition of flamenco artists' problems."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Un arte, parte fundamentalísima de la cultura andaluz, que les exige su purísima conservación y, en la medida de lo posible, su engrandecimiento.",
+        "target": "el flamenco como parte de la cultura andaluza entrusted to its artists",
+        "rationale": "The passage frames flamenco as public culture requiring conservation and continued strengthening by its practitioners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "responsabilidades que, como protagonistas que son, tienen contraidas con el arte del que son depositarios",
+        "target": "los artistas flamencos como depositarios del arte",
+        "rationale": "Artists are given responsibility for continuity of a valued flamenco inheritance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The editorial criticizes neglect and paternalism toward artists, but the coded discourse is more clearly institutional recognition and safeguarding than aesthetic evaluation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text names men and women who make flamenco, but identity framing is professional/social rather than a clear belonging or representation boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "community"
+      ],
+      "target": "flamenco artists and their role in sustaining Andalusian flamenco culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

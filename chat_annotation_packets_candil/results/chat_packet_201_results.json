@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "1989-11-6-left-isabel-fern-ndez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "El Rey Juan Carlos, como Gran Maestre de la Orden del Mérito Civil ha concedido el Lazo de Dama a la baila-ora Isabel Fernández Carrillo",
+        "target": "Isabel Fernández Carrillo's flamenco cultural work",
+        "rationale": "The passage frames an official state honor as institutional recognition of a flamenco dancer's cultural labor."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "al frente de una academia de baile, que ha conquis-tado a los amplios sectores italianos entusiastas del flamenco",
+        "target": "Isabel Fernández's academy in Rome",
+        "rationale": "The academy is presented as a transnational site through which Italian audiences gain access to flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of her labor as 'incansable y provechosa' is evaluative, but it is closely tied to the official-recognition frame already captured by HERIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "Isabel Fernández Carrillo and her flamenco activity in Italy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-6-right-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Pepe Motos está lleno de vida y cordialidad. Su presencia y sus pensamientos desatan a su alrededor un clima energético difícil de eludir.",
+        "target": "Pepe Motos",
+        "rationale": "The article opens with direct praise of Pepe Motos's artistic presence and personal force."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Pese a su juventud, ya hay aficionados que lo estiman como un maestro en ciernes.",
+        "target": "Pepe Motos's standing among aficionados",
+        "rationale": "Aficionados are presented as a knowing community whose recognition authorizes his emerging status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Mi afición me viene de familiaría. La guitarra ha sido como una prolongación de mi cuerpo y de mi alma. Mi primer maestro fue El Tripas. Posteriormente, completé estudios al lado de Ramón Montoya",
+        "target": "Pepe Motos's flamenco learning",
+        "rationale": "The passage grounds his flamenco knowledge in family afición, embodied relation to the guitar, and apprenticeship beside named masters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "'Maestro en ciernes' and 'primera fila' imply status hierarchy, but the stronger visible function is general evaluation and community recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Pepe Motos as guitarist and future concert artist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the emitted codes are supported by the visible excerpt."
+  },
+  {
+    "article_id": "1989-11-10-right-del-i-concurso-regional-de-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "facilitar la labor del jurado, el cual estará compuesto por cinco miembros de prestigio flamenco dentro de la provincia de Jaén",
+        "target": "the contest jury",
+        "rationale": "The contest delegates judgment to a jury whose authority is grounded in recognized flamenco prestige."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Para la final provincial han sido establecidos los siguientes premios: Primero: 150.000 pesetas y clasificación para la finalísima que se celebrará en Córdoba. Segundo: 100.000 pesetas. Tercero: 75.000 pesetas y 50.000 para el cuarto.",
+        "target": "contest participants",
+        "rationale": "The competition structure explicitly ranks singers through prizes and advancement to the regional final."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas organize the contest, but the passage mainly reports administrative organization rather than community authority or insider recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the provincial cante contest and its ranked participants",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-11-left-belleza-positiva-del-drama-andal",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Con esa arabizada y tantas veces gitana carga de atributos físico-raciales, nos contempla España, si es que nos contempla, y nos sintetiza el mundo que lee",
+        "target": "representations of Andalusian/flamenco identity",
+        "rationale": "The passage analyzes how ethnic, regional, and racialized identity frames shape external representations of Andalusian flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "también es rigurosamente cierto que el mejor cantaor del siglo XIX se llamó Silverio Franconetti",
+        "target": "Silverio Franconetti",
+        "rationale": "The text canonizes Franconetti through a superlative ranking as the best nineteenth-century singer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "No es suficiente la belleza y el estilo, la fuerza y el ángel, la maestria y la escuela. El andaluz que sabe y siente «no pide formas sino tuétanos de formas». Por eso Federico, que sabía y sentía, decía que «al duende hay que despertarlo en las últimas habitaciones de la sangre»",
+        "target": "flamenco performance value",
+        "rationale": "The passage defines flamenco quality through criteria of depth, duende, feeling, and substance beyond external form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Enemigo del arte flamenco ha sido ese prejuicio de los cultos de archivo y redichos de librería que le suponían estancamiento de formas orientales o litúrgicas, en vez de comprobar sus fuentes maternas",
+        "target": "the roots of flamenco art",
+        "rationale": "The quoted argument treats proper understanding of flamenco as requiring attention to its maternal sources rather than superficial scholarly prejudice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article invokes named writers and scholars, but the main supported functions are identity framing, canonization, aesthetic criteria, and roots discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Andalusian flamenco identity, roots, and aesthetic value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-11-12-left-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "¿N o es cierto que se hace un grandí- simo mal a todos aquellos que pretenden iniciarse en los conocimientos de nuestro arte, vertiendo datos que no son auténticos?",
+        "target": "flamenco historical knowledge about El Corruco",
+        "rationale": "The article explicitly frames correct flamenco knowledge as a matter of authenticity and truth."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "mientras no exista esa persona madura conocedora de nuestros cantes y de los cantaores fenecidos, que lo único que procure sea enderezar entuertos, como ahora lo vengo haciendo yo en beneficio de los jóvenes aficionados",
+        "target": "young flamenco aficionados",
+        "rationale": "The speaker positions mature knowledgeable correction as pedagogical authority for younger learners."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Su estilo por fandango fue muy personal, de tercios cortos como deben interpretarse los cantes con acompañamiento.",
+        "target": "El Corruco's fandango style",
+        "rationale": "The passage evaluates his style through a criterion of proper interpretation for accompanied cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ningún cantaor, excepto «El Corruco», nos hirieron con sus «pellizcos» y es que, en verdad, el «pellizco» es cosa de ayer. Yo diría que es cosa de «El Corruco» en placas gramofónicas y de Fernando «Terremoto» por siguiriyas, en microsurco.",
+        "target": "El Corruco's recorded pellizco",
+        "rationale": "The text elevates El Corruco by comparing him uniquely against other singers in the gramophone record corpus."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article addresses aficionados and mentions the afición as witnesses, but its strongest discourse functions are authenticity correction, teaching, and critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "El Corruco and truthful flamenco knowledge about him",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

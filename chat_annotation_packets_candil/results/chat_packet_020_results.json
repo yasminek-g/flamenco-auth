@@ -1,0 +1,319 @@
+[
+  {
+    "article_id": "1981-02-12-right-conversaciones-entre-cante-y-can",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Y me llamaron. Gusté.",
+        "target": "Pepe el de la Matrona's early singing",
+        "rationale": "The speaker reports a direct positive reception of his early performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "porque entonces a Guerrita le respetaban mucho los toreros y Guerrita se puso en la primera fila que pusieron de sillas para oír cantar",
+        "target": "performance before respected local figures in Córdoba",
+        "rationale": "The passage frames the listening setting and recognition by respected participants as socially meaningful for the singer's opportunity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Ha sido la única vez que he «llorao» de verdad, de verdad. Y canté... abrieron veinte veces las cortinas",
+        "target": "audience response to Pepe el de la Matrona's performance",
+        "rationale": "The passage evaluates the performance through overwhelming audience emotion and repeated curtain calls."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The trigger 'hombre' appears only in ordinary speech and does not construct identity-based authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article includes professional negotiations and named figures, but no clear critic/expert authority or boundary-policing discourse is visible."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Pepe el de la Matrona's career development and performance reception",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; emitted codes are limited to visible performance reception and socially meaningful listening contexts."
+  },
+  {
+    "article_id": "1981-02-14-right-un-encuentro-sevillano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Con la tranquilidad que proporciona la charla íntima, sin periodistas ni fotógrafos",
+        "target": "intimate conversation with Pepe el de la Matrona",
+        "rationale": "The passage values a private, unspectacular encounter over mediated public attention."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "el bar de Salvador se transforma de repente en una academia de sabiduría, en un archivo de recuerdos, a veces en un manual de filosofía vital",
+        "target": "Pepe el de la Matrona as source of wisdom and memory",
+        "rationale": "The passage turns the informal encounter into a pedagogical setting where Matrona mediates knowledge and life philosophy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "surgen ochenta y pico de años de experiencia vital, de viajes fantasmas a través de continentes... Viajes centrados en una única actividad: el cante",
+        "target": "Matrona's lived memory of cante",
+        "rationale": "The text frames Matrona's life experience and cante memories as a living archive."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "uno de los intérpretes más verdaderos del flan",
+        "target": "Pepe el de la Matrona as a true flamenco interpreter",
+        "rationale": "The passage explicitly presents Matrona as one of the truest interpreters of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The trigger 'reconocemos' is ordinary recognition by the narrators, not institutional or authorized heritage recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The intimate setting is strongly present, but the clearest code is public/private participatory setting rather than explicit anti-commercial or intimate authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "heritage",
+        "authenticity"
+      ],
+      "target": "Pepe el de la Matrona as true interpreter, living archive, and informal teacher",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt clearly supports intimate setting, pedagogical authority, and living-memory framing."
+  },
+  {
+    "article_id": "1981-02-15-right-pepe-el-de-la-matrona-nos-habla-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Como gran cantaor y maestro de los cantes gitanos",
+        "target": "Pepe el de la Matrona's status as singer and master of gitano cantes",
+        "rationale": "The passage canonizes Matrona as a great cantaor and master of a repertoire."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "apasionado amante de los puros cantes tradicionales",
+        "target": "traditional pure cantes",
+        "rationale": "The text grounds Matrona's authority in devotion to pure traditional cantes."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Ha convivido con los maestros supremos que se llamaron don Antonio Chacón, Juan Breva, Manuel Torre, Niña de los Peines, Salvaorillo, etc.",
+        "target": "Matrona's knowledge through direct proximity to supreme masters",
+        "rationale": "The passage authorizes Matrona's knowledge through lived contact with major masters across generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "una de las raras fuentes donde se puede uno ilustrar sobre los cantes auténticos sin mixtificaciones ni impurezas",
+        "target": "Matrona as source for authentic cantes",
+        "rationale": "The passage draws a purity boundary by opposing authentic cantes to mixtures and impurities."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "una de las raras fuentes donde se puede uno ilustrar sobre los cantes auténticos",
+        "target": "Matrona as a rare source of instruction on authentic cantes",
+        "rationale": "The text presents Matrona as an authoritative source from whom others can learn about authentic cantes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Good aficionados are mentioned, but the clearer function is their recognition of Matrona as a source rather than community authority itself."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano cantes are named as a repertoire category, but the text does not use identity itself to organize belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Pepe el de la Matrona as master and rare source of authentic traditional cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-02-16-right-persistes-tu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la voz persiste entre tantas depauperaciones y desgarros. Persiste el mismo Sur, las mismas inflexiones del dolor compartido y devocionado de mi pueblo",
+        "target": "Matrona's voice and cante as continuing Southern expression",
+        "rationale": "The poem grounds the value of the voice and cante in persistence, continuity, and shared Southern memory."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "si no persistieran, la memoria destilaría una larga mestruación de pretéritos horrores para que la voz persista, con la misma calor persista el cante",
+        "target": "memory sustaining cante after death",
+        "rationale": "The passage frames memory as the force that keeps the voice and cante alive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la desvencijada voz entre oración y alarido; la cadencia de este Sur",
+        "target": "Matrona's voice",
+        "rationale": "The poem characterizes the voice through aesthetic criteria of cadence, prayer, cry, and Southern expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem says 'mi pueblo', but the identity/community frame remains lyrical and not clearly about belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Matrona's voice and cante as persistent collective memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text; codes are limited to clear persistence, memory, and aesthetic-evaluative language."
+  },
+  {
+    "article_id": "1981-02-17-right-glosa-y-recuerdo-de-pepe-el-de-l",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "José Núñez Meléndez tenía una apabullante personalidad y una mente lúcida, sabía del cante la «intemerata». Y me pareció algo así como la salud del flamenco puro.",
+        "target": "Pepe el de la Matrona's personality, knowledge, and flamenco value",
+        "rationale": "The passage evaluates Matrona through knowledge, lucidity, and purity as criteria of flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "me pareció algo así como la salud del flamenco puro",
+        "target": "Pepe el de la Matrona as embodiment of pure flamenco",
+        "rationale": "The passage presents Matrona as a living sign of genuine or healthy pure flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "plena cava trianera, núcleo gitano de lo más legendario... el sitio donde cantó La Andonda... y donde El Fillo se quedó hasta morir, legando toda la sustancia",
+        "target": "Triana as the rooted source of Matrona's flamenco authority",
+        "rationale": "The text grounds Matrona's flamenco value in legendary Triana origins and inherited substance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pepe el de la Matrona se elevó a los países del escalofrío... La biblia en pasta",
+        "target": "Pepe el de la Matrona's performance and knowledge",
+        "rationale": "The passage canonizes Matrona by describing his performance and knowledge as overwhelming and encyclopedic."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Fuimos del mostrador al sótano. Se habló y se discutió, se apuntaron cantes",
+        "target": "informal flamenco gathering around Matrona",
+        "rationale": "The passage frames flamenco knowledge and value as emerging in an informal participatory gathering of discussion, listening, and notation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Memory language appears, but the visible passage more clearly works through personal recollection, rooted tradition, and critical canonization than public heritage or safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The scene includes discussion and noting cantes, but the passage does not clearly frame this as transmission from master to apprentice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "tradition",
+        "community"
+      ],
+      "target": "Pepe el de la Matrona as embodiment of pure, rooted, canonical flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but visible excerpts provide strong evidence for authenticity, rootedness, evaluation, and informal participatory setting."
+  }
+]

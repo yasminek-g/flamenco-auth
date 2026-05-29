@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "1988-07-17-right-las-grabaciones-de-manolo-de-hue",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "este disco no representa el verdadero toque de Manolo de Huelva",
+        "target": "el disco «Concierto de Arte Clásico Flamenco» como representación de Manolo de Huelva",
+        "rationale": "The passage explicitly denies that the recording represents Manolo de Huelva's true flamenco guitar style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La música es desigual. En su empeño de tocar con fuerza, pierde control, toca demasiado fuerte, violentamente, y, a veces, resulta desagradable la música.",
+        "target": "la grabación de La Cuadra de Manolo de Huelva",
+        "rationale": "The reviewer gives explicit negative and positive critical judgments about the quality of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "acompañar con compás y con los tonos correctos... su fuerza, las inesperadas paradas... su estilo creativo y personal",
+        "target": "el toque de Manolo de Huelva",
+        "rationale": "The evaluation is grounded in aesthetic and technical criteria such as compás, tonal correctness, force, phrasing, and creative personal style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author claims knowledge of recordings and corrects the historical record, but the stronger visible evidence is direct critical evaluation rather than a clearly institutionalized critic or expert-authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Manolo de Huelva recordings and their representational value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpts provide enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1988-07-18-right-carta-abierta-al-amigo-arrebola",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el «error de imprenta» de marras te ha presentado —en mi caso— como un simple plagiario",
+        "target": "Arrebola's book and handling of attribution",
+        "rationale": "The writer explicitly criticizes the book's attribution problem and Arrebola's conduct."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el cantaor A. Arrebola, está considerado como el mejor y más fiel intérprete de esta “malagueña”",
+        "target": "A. Arrebola as interpreter of the malagueña del Niño de Vélez",
+        "rationale": "The quoted claim constructs a hierarchy by naming Arrebola the best and most faithful interpreter, even though the letter contests the self-promotional tone."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "somos ambos consocios de la veterana Peña Juan Breva... los dos estamos «majaretas» por el cante",
+        "target": "shared peña and afición community around cante",
+        "rationale": "The writer grounds the dispute and reconciliation in shared membership, afición, and commitment to flamenco community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Arrebola is called a professor, but the passage does not clearly frame him as pedagogically authorized to teach flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Arrebola's scholarly and interpretive authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The ranking code is medium confidence because it appears inside a contested quotation from the book rather than as the letter-writer's own endorsement."
+  },
+  {
+    "article_id": "1988-07-19-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la casa discográfica Hispavox viene desarrollando una labor que no nos recatamos en calificar de encomiable",
+        "target": "Hispavox's historical flamenco recordings series",
+        "rationale": "The article explicitly praises the record company's archival and discographic work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "esta serie viene a reforzar el conocimiento de ecos y formas de cantar de añejos cantaores, desconocidos para toda una generación que se ha incorporado recientemente al flamenco",
+        "target": "newer generations gaining access to older flamenco singing through recordings",
+        "rationale": "The recordings are framed as media that transmit flamenco knowledge to a recently incorporated generation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Pastora Pavón «Niña de los Peines» —más divulgado, más personalista y por tanto más auténtico—",
+        "target": "Pastora Pavón's personal style in petenera",
+        "rationale": "The passage explicitly attributes greater authenticity to one personal style within the petenera tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la interpretación del estilo de Rafael Romero, plena de matización, desnudez y buen gusto",
+        "target": "Rafael Romero's interpretation of petenera",
+        "rationale": "The review applies aesthetic criteria such as nuance, desnudez, and good taste to evaluate an interpretation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions historical evolution and older forms, but the clearest visible claims are pedagogical access, authenticity, and critical evaluation rather than a sustained tradition-continuity argument."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase transmisión oral appears for the Viejo Medina style, but the passage does not develop embodied or lineage-based learning enough to code separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "historical flamenco recordings and selected interpretations",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Four codes are used because distinct visible spans support review praise, pedagogical access, authenticity, and aesthetic criteria."
+  },
+  {
+    "article_id": "1988-07-20-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "muestran la autenticidad de un folclore diverso y riquísimo, el cual hoy en día, y por parte de determinados grupos, se está degradando",
+        "target": "sevillanas/folkloric forms and their degradation by certain groups",
+        "rationale": "The passage contrasts authentic, rich folklore with degraded contemporary treatments, drawing a boundary around legitimate forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se podría haber continuado la serie con otros estilos como cañas, polos o cantes abandolaos",
+        "target": "the recording series' selection of styles",
+        "rationale": "The writer evaluates the publication and identifies a limitation in what the series could have included."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "resaltar el acierto y la gran ayuda que supone la serie de datos que figuran con las grabaciones como son el título, los guitarristas acompañantes o la fecha de grabación",
+        "target": "discographic metadata accompanying flamenco recordings",
+        "rationale": "The passage values recording metadata and missing lyrics as aids that mediate access to flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The contest notice uses participar only for eligibility, not as an evaluative participatory setting or public/private distinction."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Several peñas are listed, but the passage mostly reports organizational news rather than granting peñas authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "recorded sevillanas/folkloric forms and their documentation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The opening lines appear to continue a discographic review; only visible text was used."
+  },
+  {
+    "article_id": "1988-07-20-right-noticiario-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Danza tradicional de Marruecos uses a tradition keyword, but it describes a non-flamenco program item and does not authorize flamenco through continuity or roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Homenaje a los maestros del baile names masters in an event title, but the visible text is a program listing and does not itself construct a canon or hierarchy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The municipal archive exhibition and institutional sponsors suggest public cultural infrastructure, but the visible text is routine program and sponsorship information without explicit heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt is primarily an event program and institutional listing."
+  }
+]

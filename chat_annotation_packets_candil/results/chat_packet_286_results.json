@@ -1,0 +1,260 @@
+[
+    {
+        "article_id": "1994-01-27-right-aunque-no-quepa-en-el-papel",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "high",
+                "evidence_quote": "Juan no quiere que a la memoria flamenca se la trague la tierra, y lo proclama con voz solemne: \u00abMis queridos inmortales flamencos, ya en silencio, pero no en olvido. Nunca en olvido. Nunca\u00bb.",
+                "target": "la memoria flamenca y los artistas flamencos recordados",
+                "rationale": "The passage frames flamenco memory as something that must be actively preserved against oblivion."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Este amable folleto del cr\u00edtico jerezano... es una apasionada retrospectiva sobre la aventura flamenca jerezana y sobre s\u00ed mismo.",
+                "target": "el folleto de Juan de la Plata",
+                "rationale": "The text evaluates the publication as an affective and passionate retrospective rather than merely describing it bibliographically."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "reason": "Although Juan de la Plata is identified as a critic and the text reviews his work, the visible passage does not clearly position critical expertise itself as the source of authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "Juan de la Plata's memorializing account of flamenco in Jerez",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated, but the visible excerpt provides enough evidence for memory-work and evaluative review codes."
+    },
+    {
+        "article_id": "1994-01-28-right-and-jar-en-paz-con-rafael-romero",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Su forma reposada y solemne al decir los cantes, es reflejo de su personalidad y su elegancia. Esto le aporta un gran prestigio en el extranjero",
+                "target": "Rafael Romero \u00abEl Gallina\u00bb",
+                "rationale": "The passage explicitly evaluates Romero's artistic manner and links it to prestige."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "cantaor flamenco de fama universal... En Espa\u00f1a, interviene en los m\u00e1s importantes festivales y aconteciimientos flamencos, y en 1973, la C\u00e1tedra de Flamencolog\u00eda de Jerez le otorga el Premio Nacional del Cante.",
+                "target": "Rafael Romero's artistic status",
+                "rationale": "The text canonizes Romero through universal fame, major festivals, and national prize recognition."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "Ahora, la Corporaci\u00f3n Municipal, en Comisi\u00f3n de Gobierno celebrada el 23 del pasado noviembre, acuerda poner el nombre de Rafael Romero \u00abEl Gallina\u00bb, a una calle de nueva apertura.",
+                "target": "public recognition of Rafael Romero in And\u00fajar",
+                "rationale": "Municipal naming of a street officially authorizes Romero's memory and cultural value in public space."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "Pe\u00f1as and disciples are mentioned as supporters, but the dominant discourse function is public commemoration rather than community authority to judge flamenco."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "heritage"
+            ],
+            "target": "Rafael Romero \u00abEl Gallina\u00bb",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article combines artistic evaluation with official civic commemoration."
+    },
+    {
+        "article_id": "1994-01-29-right-noticiario-flamenco",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "un acuerdo de su Ayuntamiento-Pleno (propuesta un\u00e1nime de todos los grupos pol\u00edticos)... design\u00f3 la Plaza de la Constituci\u00f3n como emplazamiento m\u00e1s id\u00f3neo",
+                "target": "monument to Enrique Montoya in Utrera",
+                "rationale": "The passage presents municipal and civic mechanisms as authorizing a public monument to preserve Montoya's cultural memory."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "high",
+                "evidence_quote": "la invitaci\u00f3n a participar en esta suscripci\u00f3n promonumento... por contribuir a perpetuar la figura art\u00edstica y admirada de Enrique Montoya Fern\u00e1ndez",
+                "target": "collective perpetuation of Enrique Montoya's memory",
+                "rationale": "The commission calls on the flamenco community to help preserve and transmit Montoya's memory through a public monument."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "pureza y ortodoxia (pilares b\u00e1sicos del cante), conocimiento y sabidur\u00eda, \u00abjusteza\u00bb emocional e interpretativa, empuje y estudiada entonaci\u00f3n en su voz, comp\u00e1s marcado y virtuosamente perfeccionado",
+                "target": "Juan Casillas's cante",
+                "rationale": "The passage names specific aesthetic criteria used to define the quality of Casillas's flamenco."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Fue, para m\u00ed, sin duda, un gran maestro, pese a su juventud. Fue un claro ejemplo a seguir por cualquier buen aficionado",
+                "target": "Juan Casillas",
+                "rationale": "The article elevates Casillas as an exemplary figure and model for aficionados."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "reason": "The words pureza and ortodoxia appear, but they function mainly as aesthetic criteria within praise rather than drawing a clear purity boundary against excluded forms."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "Enrique Montoya's public memory and Juan Casillas's artistic value",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article contains two distinct notices: one about Montoya's monument and one elegiac-critical tribute to Casillas."
+    },
+    {
+        "article_id": "1994-01-30-left-hablan-las-pe-as-nuevas-juntas-d",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "En este magn\u00edfico recital destacaron dos facetas distintas, una recordando a los viejos maestros, y otra, en que sin apartarse de las ra\u00edces, realiz\u00f3 las innovaciones que le han consagrado como el m\u00fasico m\u00e1s importante del flamenco actual.",
+                "target": "Enrique Morente's recital",
+                "rationale": "The passage explicitly praises the recital and evaluates Morente's balance of roots and innovation."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "sin apartarse de las ra\u00edces, realiz\u00f3 las innovaciones que le han consagrado como el m\u00fasico m\u00e1s importante del flamenco actual",
+                "target": "Enrique Morente's innovations",
+                "rationale": "The text legitimates innovation by stressing continuity with flamenco roots."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "le han consagrado como el m\u00fasico m\u00e1s importante del flamenco actual",
+                "target": "Enrique Morente",
+                "rationale": "The passage creates a hierarchy by ranking Morente as the most important musician in contemporary flamenco."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "revela secretos de musa, \u00e1ngel y duende con silencios oportun\u00edsimos, pian\u00edsimas caricias de sonidos y fuertes vibraciones de comp\u00e1s",
+                "target": "El Merengue's guitar playing",
+                "rationale": "The quoted critic applies aesthetic criteria such as duende, comp\u00e1s, timing, and sound quality to judge the guitarist's art."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "The article mentions El Merengue as a disciple of Antonio del Lunar, but this is brief biographical lineage without a clear discourse of transmission or authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "tradition",
+                "criticism"
+            ],
+            "target": "Enrique Morente and El Merengue",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The visible text includes both a pe\u00f1a prize notice for Morente and an evaluative profile of El Merengue."
+    },
+    {
+        "article_id": "1994-03-3-left-editorial",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "high",
+                "evidence_quote": "El Pueblo andaluz no deber\u00eda consentir tan innobles ultrajes a su propia Cultura.",
+                "target": "flamenco artists as part of Andalusian culture",
+                "rationale": "The editorial frames the treatment of elderly flamenco artists as an affront to collective Andalusian culture."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "medium",
+                "evidence_quote": "los flamencos de la tercera edad resultan acreedores no a dispendios o a limosnas bienintencionadas, sino a una cobertura adecuada que les proteja de cualquier contingencia",
+                "target": "elderly flamenco artists",
+                "rationale": "The passage argues that flamenco practitioners deserve protective public support rather than charity, linking social protection to cultural responsibility."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "se public\u00f3 un estudio en esta revista, sobre la Seguridad Social de los artistas flamencos. En el mismo se analizaba la situaci\u00f3n precaria... en que se encontraban figuras se\u00f1eras del cante",
+                "target": "the social-security situation of flamenco artists",
+                "rationale": "The editorial invokes prior analytical work in the magazine as expert critical authority for its claim about flamenco artists' precarity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The phrase 'Pueblo andaluz' frames a collective identity, but the passage mainly argues for cultural responsibility and social protection rather than identity-based authority within flamenco."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "heritage",
+                "criticism"
+            ],
+            "target": "elderly flamenco artists' right to social protection",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The editorial is primarily a public-culture and social-rights argument rather than an aesthetic review."
+    }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "1987-09-22-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "leo con desagrado algo que cae fuera del círculo de la verdad. Por eso quiero enderezarle un entuerto públicamente",
+        "target": "Alfredo Arrebola's published attribution of malagueña styles",
+        "rationale": "The letter uses expert correction to police the truth of flamenco attribution and publicly contest an erroneous published claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "es lamentable que se vierta en un libro un hecho o algo irreal con perjuicio del prestigio de un tercero",
+        "target": "the book's inaccurate statement about La Trini/Ojana attribution",
+        "rationale": "The passage explicitly evaluates the publication of a flamenco-historical error as damaging and lamentable."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "le fue impuesta por nuestro presidente la insignia de oro y el título de Socio de Honor de «El Mirabrás»",
+        "target": "Fosforito's recognition by Peña El Mirabrás",
+        "rationale": "A flamenco institution formally confers symbolic honor and status on an artist through its insignia and honorary membership."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The Amaya family passage mentions descendants becoming bailaoras and tocaores, but it does not clearly describe embodied, oral, or intergenerational transmission as an authority mechanism."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'no ha perdido su pureza' praises Chiquito de Triana, but the passage does not draw a clear purity boundary around legitimate versus illegitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco attribution, reputation, and institutional recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-09-23-left-podio",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "traemos hoy a esta elevada cúspide el extraordinario de «Candil» dedicado a Fosforito... conceden este lugar de privilegio por derecho propio",
+        "target": "Candil's special issue dedicated to Fosforito",
+        "rationale": "The 'podio' frame explicitly ranks the special issue into a place of privilege and canon-like honor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Sitio de honor a la Peña Flamenca de Asturias, modelo de entusiasmo y eficacia, aliados a un concepto serio y formal del flamenco",
+        "target": "Peña Flamenca de Asturias",
+        "rationale": "The passage gives explicit evaluative praise to the peña as a model of serious and effective flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la aportación de una técnica más brillante... menos encorsetada y monótona, del toque flamenco a la guitarra española y clásica",
+        "target": "flamenco guitar technique",
+        "rationale": "The text defines the value of flamenco guitar through technical and expressive criteria such as brilliance, freedom, and tonal range."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions peñas and afición, but the main discourse function is evaluative ranking rather than granting community authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "peñas, flamenco publications, events, and guitar technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-09-23-right-la-pe-a-una-entidad-apol-tica",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "La Peña Flamenca de Huelva la componemos doscientos y algo de socios, aficionados a este arte, estando concebida para promocionar el mismo, además de buscar en ella la convivencia con gentes de un sentir común",
+        "target": "Peña Flamenca de Huelva and its socios",
+        "rationale": "The passage defines the peña as an aficionado community that sustains flamenco through promotion and shared belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "si para dar consistencia a la credibilidad de sus promesas se usa el cargo de una entidad cultural privada, sin el beneplácito del colectivo que la compone... la cosa hay que tomarla con mucha más seriedad",
+        "target": "political use of Peña Flamenca de Huelva's name and offices",
+        "rationale": "The article polices the boundary of proper conduct for a flamenco cultural institution and criticizes its instrumentalization for electoral legitimacy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "su mejor política fue siempre tener las puertas abiertas, tanto para unos como para otros. Todos, sin preferencias, recibieron el trato cordial de los socios",
+        "target": "the peña's open social setting",
+        "rationale": "The peña's value is framed through inclusive access and shared participation rather than alignment with a political faction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article discusses support for cultural acts and future projects, but it does not frame flamenco as heritage requiring safeguarding or public-culture preservation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the proper communal and apolitical role of Peña Flamenca de Huelva",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-09-24-left-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a title/name/byline and is too short for reliable discourse coding."
+  },
+  {
+    "article_id": "1987-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Desde estas líneas emplazamos a colectivos flamencos, personas físicas o jurídicas a que manifiesten si... han sido objeto de presiones, coacción... amenazas de retirada de subvención",
+        "target": "Manuel Barrios's claim about institutional control of flamenco",
+        "rationale": "The editorial asserts critical authority by challenging a public critic's accusation and demanding evidence from the flamenco field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "es una solemne desvergüenza... una majadería superlativa, una torpeza frívola",
+        "target": "Barrios's argument about Junta control and flamenco subsidies",
+        "rationale": "The passage explicitly evaluates and condemns Barrios's claims in strongly negative critical language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "siempre ha sido objeto de nuestra admiración... sus polémicos, rigurosos y enriquecedores planteamientos de la historiografía flamenca",
+        "target": "Manuel Barrios as a flamenco historiographical voice",
+        "rationale": "The editorial positions Barrios within a hierarchy of respected flamenco historiographical authority before contesting this specific intervention."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article discusses the Junta, subsidies, congresses, federations, foundations, and journals, but the issue is institutional control and criticism rather than heritage authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The editorial rejects political instrumentalization of flamenco, but it does not frame commerce, public spectacle, or intimacy as affecting flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "claims about institutional control, editorial independence, and flamenco criticism",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

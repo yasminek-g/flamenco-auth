@@ -1,0 +1,304 @@
+[
+  {
+    "article_id": "1983-09-4-left-imposici-n-de-la-medalla-de-trab",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "en mi pueblo siempre ha habido muchos aficionados que han cantado muy bien, siempre ha tenido mucha afición flamenca",
+        "target": "Torredelcampo's flamenco community",
+        "rationale": "Valderrama grounds his beginnings in a local afición whose members sang well, making community participation a source of flamenco authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "esos cantes los aprendí de pequeño de los aficionados viejos que trabajaban en el campo",
+        "target": "Valderrama's learning of siega, trilla, and temporera cantes",
+        "rationale": "The passage explicitly frames knowledge of these cantes as learned in childhood from older aficionados in a work/community setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Son cantes de aquí, de nuestra tierra",
+        "target": "siega, trilla, temporera / Arjoneras",
+        "rationale": "Valderrama authorizes the cantes by rooting them in local origin and territorial belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "en CANDIL se me ha ignorado, y si se ha hablado de mí ha sido para mal",
+        "target": "Candil's treatment of Juanito Valderrama",
+        "rationale": "The interview foregrounds a dispute over critical recognition and challenges prior attribution and evaluation of Valderrama's flamenco role."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative remarks about artists and Dolores Abril, but the clearest discourse functions are community grounding, oral transmission, roots, and contested critical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses 'muy puro' for a guitarist, but it is brief performance praise rather than clear purity boundary-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Valderrama's flamenco legitimacy and local/work-song repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-09-6-right-literatura-rom-ntica-y-cante-fla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "quisiéramos analizar cómo el flamenco responde con sus letras a esas inquietudes temáticas que todo el mundo reconoce como románticas",
+        "target": "flamenco lyrics in relation to Romantic literature",
+        "rationale": "The article positions the author as an analytical critic interpreting flamenco letters through a literary-historical framework."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Analicémoslos con cierto detenimiento y por separado. POR LA LIBERTAD Y LA DIGNIDAD DE LOS SERES HUMANOS",
+        "target": "thematic classification of flamenco lyrics",
+        "rationale": "The passage constructs a thematic hierarchy/classification for understanding flamenco letras within Romantic concerns."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article uses historical context, but the visible excerpt mainly performs literary-critical analysis rather than grounding present flamenco value in roots or continuity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The passage invokes national liberty and cultural history, but it does not frame flamenco as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco letras as analyzable Romantic-literary expression",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The historical-political material is coded only where it is tied to the author's analytic framing of flamenco letras."
+  },
+  {
+    "article_id": "1983-09-11-left-responsabilidad-de-figura",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "espectáculos «pseudo-flamencos» que lejos de orientar a esa inmensa afición que se había despertado, la desorientaban",
+        "target": "commercial pseudo-flamenco spectacles",
+        "rationale": "The passage draws a clear boundary between Mairena's defended art and pseudo-flamenco spectacles that falsely represent it."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "la voracidad de quienes generalmente no atendían a otra razón que a la de su exclusivo beneficio, explotando unos espectáculos «pseudo-flamencos»",
+        "target": "commercial exploitation of flamenco spectacle",
+        "rationale": "Commercial exploitation is framed as corrupting and obscuring real flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "las enseñanzas derivadas de las directrices que tanto tú, como algún otro artista excepcional, marcábais con vuestra pedagogía",
+        "target": "Antonio Mairena's pedagogical authority",
+        "rationale": "Mairena is explicitly credited with pedagogical direction that teaches aficionados how to understand flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "auténtico catedrático de un ARTE",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena as a master authority and exemplary figure in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la fidelidad de tus interpretaciones ajustadas a lo que mandan los cánones",
+        "target": "Mairena's interpretations",
+        "rationale": "The author legitimates Mairena's singing through fidelity to established canons and continuity with proper flamenco practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article strongly praises Mairena, but the emitted canon, pedagogy, authenticity, and anti-commercial codes capture the main discourse functions more precisely."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The author speaks as an aficionado and addresses the afición, but community authority is less central than Mairena's pedagogical and canonical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and proper flamenco against pseudo-flamenco spectacle",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "This article clearly supports more than three codes because distinct spans handle anti-commercial critique, purity boundary-work, pedagogy, canonization, and fidelity to canons."
+  },
+  {
+    "article_id": "1983-09-11-right-con-ternura-y-con-gran-valor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la Casa Real... el presidente del Gobierno... el vicepresidente del Gobierno... el ministro de Cultura... el Ministerio de Trabajo le otorgó la medalla al Mérito en el Trabajo",
+        "target": "official recognition of Antonio Mairena",
+        "rationale": "The passage frames Mairena's value through state, royal, ministerial, and institutional recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ningún cantaor, tal vez, más digno de esa distinción que el gran don Antonio Mairena",
+        "target": "Antonio Mairena",
+        "rationale": "The passage elevates Mairena through comparative distinction, presenting him as exceptionally worthy among cantaores."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Pocas artes tan fieramente bellas como el arte flamenco",
+        "target": "flamenco art",
+        "rationale": "The passage explicitly evaluates flamenco as fiercely beautiful and worthy of high distinction."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "hay muchos artistas flamencos, a quienes la vejez los convierte en mendigos. Le pido a mi Gobierno que legisle contra esa mendicidad, contra esa humillación",
+        "target": "aging flamenco artists",
+        "rationale": "The article shifts from memorial recognition to a public call for safeguarding the welfare and dignity of flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text identifies Mairena as a gitano and mentions the gitano community, but the stronger visible discourse is institutional recognition and public safeguarding."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "There is public cultural value, but the more specific institutional-recognition and safeguarding codes are better supported."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and the dignity of flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-09-13-left-colecci-n-de-guitarras-de-manuel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "excelente concertista y profesor de guitarra flamenca",
+        "target": "Manuel Cano Tamayo",
+        "rationale": "The article opens with explicit praise of Cano's quality as concert guitarist and teacher."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "brillante virtuosismo, así como de la gran originalidad de su repertorio guitarristico",
+        "target": "Manuel Cano's guitar artistry",
+        "rationale": "Virtuosity and originality are used as aesthetic criteria to evaluate Cano's flamenco guitar work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "disponer de ejemplares o muestras representativas de las obras de arte que han ido saliendo de la mano de los más destacados maestros guitarreros españoles",
+        "target": "Manuel Cano's guitar collection",
+        "rationale": "The collection is framed as representative preservation of works by major Spanish guitar makers, giving it a cultural-memory and safeguarding function."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Cano is called a professor, but the visible excerpt does not discuss his teaching authority or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text mentions destacados maestros guitarreros, but it does not clearly rank or canonize them beyond describing the collection."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Manuel Cano and his guitar collection",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

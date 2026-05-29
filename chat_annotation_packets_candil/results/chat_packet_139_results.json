@@ -1,0 +1,222 @@
+[
+  {
+    "article_id": "1986-09-19-right-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "unos artistas de cuarenta y ocho horas y pico, que pretenden «evolucionar» este arte... «jóvenes valores» carentes de afición y conocimientos, para los que su principal y único objetivo es ganar dinero",
+        "target": "jóvenes valores y flamencólogos que promueven una evolución comercializada sin conocimiento",
+        "rationale": "The passage uses expert critical voice to police the boundary between serious flamenco knowledge and commercially motivated novelty."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "pedimos encarecidamente la reedición de reliquias magistrales correspondientes a la década de los cincuenta, sesenta y setenta... primero conocer, ahondar en lo legado; después aprender",
+        "target": "reedition and study of older flamenco recordings",
+        "rationale": "The passage grounds legitimate future flamenco practice in knowing, preserving, and learning from inherited recordings and past masters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la demanda imperante de pureza cantaora... Buen gusto y melodiosidad... deja constancia del compás... le imprime quejío y fuerza",
+        "target": "discographic performances and cante quality",
+        "rationale": "The review applies aesthetic criteria such as purity, buen gusto, compás, quejío, and force to judge flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There is value-bearing contrast between new and consecrated artists, but the stronger function is boundary critique and aesthetic evaluation rather than a sustained canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "older recorded flamenco traditions and serious learning over commercially promoted novelty",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-22-left-buz-n-y-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "No estaría mal que el señor director de esta revista dedicara, con su preclara pluma, un editorial a los «plagiarios»",
+        "target": "the magazine editor as an authoritative public critic of plagiarism",
+        "rationale": "The letter asks an editorial authority to publicly judge and police improper conduct in flamenco writing."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Asesoría de Actividades Flamencas de la Consejería de Cultura nos informa que su propósito de confeccionar un Censo de Cantaores Profesionales y Semiprofesionales y Aspirantes",
+        "target": "official census of flamenco performers",
+        "rationale": "An official cultural body is presented as identifying and recognizing flamenco practitioners through an institutional mechanism."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "el Flamenco pueda ser mediatizado y su difusión y conocimiento a través de sus intérpretes perjudicada... que nuestro arte más importante continúe escondido en las cavernas y marginado de la realidad social",
+        "target": "public diffusion and social recognition of flamenco through its interpreters",
+        "rationale": "The note frames institutional documentation as supporting the diffusion, knowledge, and social visibility of flamenco as public culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The plagiarism complaint is sharply evaluative, but it concerns writer ethics more than evaluation of flamenco art, performance, or publication quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "institutional recognition and public visibility of flamenco practitioners, contrasted with plagiarism and anti-census rumor",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-22-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Reunido el jurado dio ganador por mayoría al cantaor jerezano José Mercé... Primer premio... Segundo premio... Tercer premio",
+        "target": "contest winners in peña-organized flamenco events",
+        "rationale": "The article reports juried rankings and prize hierarchies that confer comparative status on performers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Organizado por la Peña Flamenca de Elche... En asamblea general celebrada por la Peña Flamenca... Organizado por la Peña Flamenca «Los Cernícalos»",
+        "target": "peñas as organizers and sustainers of flamenco events",
+        "rationale": "The repeated peña activity presents flamenco clubs as community institutions that organize, recognize, and sustain flamenco participation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase 'firmas comerciales' appears only as routine sponsorship information and does not frame commerce as an authenticity threat."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Jury decisions are present, but the text does not develop expert reasoning or boundary critique beyond reporting contest results."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "peña-organized contests and prize-winning flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-24-left-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a title/byline and is too short to support discourse coding."
+  },
+  {
+    "article_id": "1986-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El flamenco es andaluz por los cuatro costados... desde tiempos remotos... todas y cada una de ellas han aportado su granito de arena para la construcción... que llamamos arte flamenco",
+        "target": "Andalusian origins and historical formation of flamenco",
+        "rationale": "The editorial grounds flamenco's value and identity in historical roots, origins, and accumulated cultural continuity in Andalusia."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "hoy en día el flamenco pertenece a todos los caminos hollados por el arte... sienten el flamenco como un patrimonio espiritual compartido",
+        "target": "flamenco as shared cultural heritage beyond Andalusia",
+        "rationale": "The passage explicitly frames flamenco as a shared patrimony and public cultural value extending beyond its place of origin."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "el viejo crisol... numerosos pueblos... numerosas etnias, comunidades humanas y culturas diferentes... los gitanos... contribuyeron de manera decisiva a su grandeza",
+        "target": "ethnic and regional communities in the formation of flamenco",
+        "rationale": "Identity groups and communities are used to explain who contributes to and represents flamenco's cultural authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The article mentions 'Patrimonios de la Humanidad', but it does not rely on an actual official listing or institutional heritage mechanism."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The article contests exclusivity over flamenco, but the stronger evidence concerns community identity framing rather than an explicit insider/outsider knowledge boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "community"
+      ],
+      "target": "flamenco as Andalusian in origin but globally shared as cultural patrimony",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

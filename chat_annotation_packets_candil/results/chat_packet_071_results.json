@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "1983-03-23-right-la-epoca-clasica-del-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "conservar el cante flamenco en sus formas más genuinas",
+        "target": "classical flamenco song forms",
+        "rationale": "The passage values flamenco by stressing preservation and continuity of its most genuine inherited forms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "añadiéndoles «postizos» al flamenco, se tire por tierra y se desvirtúen los estilos más representativos",
+        "target": "modernizing innovations in flamenco",
+        "rationale": "The text draws a boundary between legitimate established styles and innovations framed as artificial additions that distort flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "los geniales creadores y artistas nos han legado... Cantes de la Epoca Clásica del Flamenco",
+        "target": "inherited classical flamenco repertoire",
+        "rationale": "The article canonizes a body of inherited cantes as a classical period and elevates its creators as exemplary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "aunque sabemos que no hay escuelas oficiales y que éstas, en verdad, serían muy necesarias",
+        "target": "formal flamenco schools",
+        "rationale": "The passage frames institutional learning as necessary for artists to acquire deeper knowledge and responsibly develop flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Musical quality and interpretation are discussed, but the emitted codes better capture the stronger canon, preservation, and boundary-work functions."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "classical flamenco forms and their inherited repertoire",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-03-24-left-discografia-flamenca-car-tulas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Nos parece bastante acertada la idea de Heredia Maya de hermanar a dos pueblos y dos culturas",
+        "target": "the recording Macama Jonda",
+        "rationale": "The reviewer explicitly evaluates the artistic concept of joining two cultures as successful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "llevan con arte el compás de los estilos por ellos interpretados, con buena conjunción y acoplamiento",
+        "target": "the flamenco performances on the recording",
+        "rationale": "The review applies flamenco aesthetic criteria such as compás, artistry, conjunction, and ensemble fit to judge performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los mencionados aplausos nos sacan de esa necesari",
+        "target": "applause included in the recording",
+        "rationale": "The reviewer uses critical authority to police the recording's mediation, criticizing applause as disrupting the intended artistic atmosphere."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténtica joya flamenca' appears near the end, but it functions as general praise of possible archival material rather than a developed authenticity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions two peoples and two cultures, but the passage evaluates an artistic concept rather than using identity categories to define belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Macama Jonda and its flamenco/Andalusian musical realization",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article_text_for_review is truncated, but the visible review text contains enough evaluative discourse for coding."
+  },
+  {
+    "article_id": "1983-03-25-left-aurelio-selles",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "está considerado como el mejor cantaor de Cádiz de este siglo e incluso de la historia flamenca gadi-tana",
+        "target": "Aurelio Sellés",
+        "rationale": "The passage explicitly ranks Aurelio Sellés at the top of a local historical flamenco hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "anteponiéndole en la cima artística a Enrique el Mellizo",
+        "target": "Aurelio Sellés in relation to Enrique el Mellizo",
+        "rationale": "The article constructs comparative canonical status by placing Sellés above another recognized figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Premio Nacional de Cante and contest jury roles show institutional recognition, but the visible passage does not clearly frame this as heritage or public-culture authorization."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The fiesta anecdote shows a social performance setting, but it does not clearly contrast participatory/private and public/spectatorial value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Aurelio Sellés as a canonical Cádiz cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article_text_for_review is truncated, but the visible opening contains clear ranking discourse."
+  },
+  {
+    "article_id": "1983-03-26-left-placas-de-artistas-flamencos",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a title/byline and is too short for reliable discourse coding."
+  },
+  {
+    "article_id": "1983-05-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "El reconocimiento institucional del «arte jondo», como realidad cultural que hay que tutelar",
+        "target": "institutional recognition of arte jondo",
+        "rationale": "The editorial treats official recognition and tutelage by Andalusian institutions as a legitimate mechanism for valuing flamenco as public culture."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "hay que tutelar incentivándola en sus más genuinas manifestaciones, identificándola, protegiéndola de espúreas exégesis",
+        "target": "flamenco as a cultural reality needing protection",
+        "rationale": "The passage frames flamenco as a living cultural practice requiring protection, identification, and safeguarding from distorted interpretations."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "¿Por qué, en rigurosa coordinación con el departamento de Educación no se introduce el Flamenco en la Escuela?",
+        "target": "flamenco in schools",
+        "rationale": "The editorial explicitly calls for institutional educational access to flamenco through schools."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco no puede desvincularse de este Sur doliente. Sólo cuando se le contempla inviscerado en Andalucía alcanza plurales dimensiones.",
+        "target": "flamenco's Andalusian rootedness",
+        "rationale": "The passage grounds flamenco's full value in its rooted relationship to Andalucía."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The editorial broadly frames flamenco as public cultural value, but the stronger and more specific institutional and safeguarding codes capture the visible discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'espúreas exégesis' suggests boundary-work, but the passage is primarily about institutional safeguarding rather than excluding specific impure flamenco forms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "institutional protection and educational integration of flamenco in Andalucía",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

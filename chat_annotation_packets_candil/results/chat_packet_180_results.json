@@ -1,0 +1,183 @@
+[
+  {
+    "article_id": "1988-09-23-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la precaria situación por la que atraviesa la Federación, situación motivada por la inoperancia del hasta entonces presidente",
+        "target": "presidencia de la Federación Provincial de Peñas Flamencas de Jaén",
+        "rationale": "The notice explicitly evaluates and blames flamenco federation leadership for organizational failure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and federations are mentioned throughout, but mostly as administrative bodies; the visible text does not clearly grant them flamenco-recognition or insider authority beyond ordinary organization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "outgoing federation leadership",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is administrative peña news; only the federation leadership passage clearly performs evaluative work."
+  },
+  {
+    "article_id": "1988-09-23-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "El Jurado se reserva el derecho a no admitir a ninguna de las fases del Concurso, a aquellos solicitantes que, a su juicio, no reúnan la calidad mínima que la categoría del Certamen exige.",
+        "target": "XII Concurso Nacional de Arte Flamenco applicants",
+        "rationale": "The rules explicitly authorize the jury to judge minimum artistic quality and exclude applicants from the contest."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The word 'dentro' refers to travel expenses within Spain, not an insider/outsider boundary around flamenco belonging or knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Prize names such as Silverio, Antonio, Ramón Montoya, and Manolo de Huelva invoke canonical figures, but the visible text lists awards rather than constructing a canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "contest jury authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Contest bases are mostly procedural; the jury-quality clause clearly authorizes critical gatekeeping."
+  },
+  {
+    "article_id": "1988-09-24-right-discograf-a-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible review text contains only an author byline and is insufficient for judgment."
+  },
+  {
+    "article_id": "1988-11-4-left-a-juan-breva-una-voz-con-seis-cu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Un hombreguitarra como un centauro galopa ciego por el recuerdo Juan Breva, una voz con seis cuerdas caña de azúcar y limón palosanto en la mirada se deja retratar eterno, callado, como los dioses siempre a punto de arrancar.",
+        "target": "Juan Breva",
+        "rationale": "The poetic homage elevates Juan Breva into an enduring, quasi-mythic figure, constructing exemplary status rather than merely describing him."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to history and memory are poetic and do not clearly use tradition or continuity to authorize present flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem is laudatory, but its main discourse function is canonizing homage rather than concrete critical assessment of a performance or recording."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Breva",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short poetic text; coded only for clear elevation/canonizing language."
+  },
+  {
+    "article_id": "1988-11-4-right-el-flamenco-en-la-prensa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "antiguas revistas que hacia finales del siglo XIX o principios del siglo XX, ya se dedicaban exclusiva o parcialmente, a la defensa y divulgación de la cultura flamenca",
+        "target": "flamenco periodical press",
+        "rationale": "The passage frames periodicals as media that defend and disseminate flamenco knowledge across publics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "las tradiciones orales, incluso si se les concede un fondo de verdad, han de ser consideradas con mucha prudencia al momento de redactar una historia rigurosamente documentada. Es necesario recurrir a otras fuentes si existen",
+        "target": "oral tradition as historical evidence for flamenco origins",
+        "rationale": "The author invokes scholarly source criticism and rigorous documentation to authorize how flamenco history should be written."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Sería, pues, una pena que dejáramos «dormir» en los anaqueles de los archivos hemerográficos tantos documentos que sin duda alguna proporcionarán numerosísimos datos sobre la historia del flamenco",
+        "target": "hemerographic documents on flamenco",
+        "rationale": "The passage presents archived press materials as cultural-historical resources that should be recovered rather than left dormant."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text says flamenco has been judged and commented on in the press, but it does not itself evaluate a specific artist, performance, or work in the visible excerpt."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage discusses oral tradition and historical origins, but primarily as historiographical evidence rather than as a continuity claim authorizing present flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco press archives as sources for documented history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible passage clearly frames the press as a mediator and documentary source for flamenco history."
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1996-11-3-right-celebraci-n-del-xxiv-congreso-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Es llevar a este arte a su lugar de origen, al sitio primigenio donde se reunieran las desgracias de unos cuantos andaluces, payos y gitanos",
+        "target": "Sevilla as the proper site for the XXIV Congreso de Arte Flamenco",
+        "rationale": "The passage legitimates the congress location by grounding flamenco in a valued origin site and collective historical roots."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "profundamente arraigado en la verdadera médula espinal de donde arranca el flamenco puro y hasta sus variantes más o menos admisibles",
+        "target": "the congress and the flamenco it presented",
+        "rationale": "The article invokes pure flamenco and only 'more or less admissible' variants, drawing a legitimacy boundary around acceptable forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "este ha sido un Congreso serio de contenidos, abundantes en ofertas sonoras y literarias, con ciertas carencias de intendencia y protocolo",
+        "target": "the XXIV Congreso de Arte Flamenco",
+        "rationale": "The article explicitly evaluates the congress, praising its serious content while noting organizational shortcomings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'deberían estar canonizados' praises the organizers, but it is hyperbolic event praise rather than stable canon formation around artists, works, or styles."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["tradition", "authenticity", "criticism"],
+      "target": "the Sevilla congress as rooted in flamenco origins and serious flamenco content",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible text contains sufficient explicit origin, purity, and evaluative discourse."
+  },
+  {
+    "article_id": "1996-11-8-left-xxiv-congreso-de-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "supone institucionalizar un precedente en la cooperación por estudiar, difundir y conservar el arte flamenco",
+        "target": "university involvement in the flamenco congress",
+        "rationale": "The passage authorizes flamenco through institutional university cooperation devoted to study, diffusion, and conservation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "figuras como José Menese, Antonio Mairena, Fosforito, Manuel Cano, etc., impartieron sus magistrales clases en las aulas de diversas Universidades españolas",
+        "target": "flamenco instruction in Spanish universities",
+        "rationale": "The text frames flamenco knowledge as taught through university spaces and master classes, making institutional pedagogy central."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Inés Bacán evidenció cierta frescura cantaora en sus siguiriyas, aunque adoleció de los determinados matices dramáticos del estilo",
+        "target": "Inés Bacán's siguiriyas",
+        "rationale": "The passage makes a balanced critical judgment, praising freshness while identifying a lack of dramatic nuance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The verbs estudiar, difundir, and conservar suggest safeguarding, but the visible passage mainly stresses university authorization, so HERIT_02 is the more precise code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "criticism"],
+      "target": "the XXIV Congreso and university-based study, diffusion, and conservation of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible excerpt is enough to code institutional pedagogy and heritage authorization despite truncation."
+  },
+  {
+    "article_id": "1996-11-10-left-la-est-tica-del-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "esta música no pertenece a una estética sino a varias",
+        "target": "flamenco aesthetics",
+        "rationale": "The passage defines flamenco quality through an explicit aesthetic framework of plurality and contrast."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "merece más respeto y consideración que aquéllos que le han tributado hasta ahora los círculos oficiales, quizá por tener los oídos anestesiados con música escrita... y por desprecio, burguesa y estúpidamente aristocrático, hacia todo lo «popular»",
+        "target": "official circles' treatment of flamenco",
+        "rationale": "The passage uses critical authority to rebuke official and aristocratic dismissal of flamenco as popular art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article surveys historical influences and origins, but the visible text does not clearly use roots or continuity to authorize present proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "flamenco as a plural and undervalued aesthetic system",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Historical origin material is descriptive in the visible excerpt; the strongest coding is aesthetic and critical."
+  },
+  {
+    "article_id": "1996-11-13-right-la-cultura-de-la-sangre",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Culta porque, en su expresión más auténtica, niega la sensiblería... hace imposible el olvido de nuestras raíces",
+        "target": "cante jondo",
+        "rationale": "The article attributes genuine cultural value to cante jondo by defining its authentic expression against sentimentality and forgetfulness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el cante jondo es hoy... una de las formas de expresión musical más ricas, sabias, intensas y profundas que poseemos",
+        "target": "cante jondo",
+        "rationale": "The passage applies aesthetic criteria of richness, wisdom, intensity, and depth to define cante jondo's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no debe aceptar por más tiempo la mirada altanera o displicente de quienes llevan su estupidez clasista hasta el terreno del arte, de quienes juzgan con sordera de corazón",
+        "target": "classist critics or dismissive observers of cante jondo",
+        "rationale": "The article critiques external classist judgment and contests who has the authority to value cante jondo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Roots and memory are invoked, but they are embedded in the broader authenticity and aesthetic argument already captured by AUTH_01 and CRIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "cante jondo as authentic, cultured, and aesthetically profound",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible text strongly defines and defends cante jondo's value."
+  },
+  {
+    "article_id": "1996-11-17-left-ideas-generales-para-un-debate-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Lo contrario es caer en el error de creer que lo chabacano o, lo mal dicho, es lo auténticamente flamenco.",
+        "target": "claims that vulgar or badly articulated singing is authentically flamenco",
+        "rationale": "The passage explicitly rejects a false authenticity claim and draws a boundary around improper flamenco presentation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la vocalización es fundamental y básica... Otro aspecto fundamental, es el de la afinación... El cante ha de ir cosido a su compás",
+        "target": "cantaor technique and flamenco singing aesthetics",
+        "rationale": "The article defines aesthetic criteria for good singing through vocalization, tuning, compás, and stylistic differentiation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "hay quien nos intenta vender esto como algo muy flamenco cuando es, en realidad, rematar desafinado",
+        "target": "performers or promoters who present poor tuning as flamenco authenticity",
+        "rationale": "The passage polices a boundary around proper flamenco by criticizing attempts to legitimize technical defects as flamenco style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'lo que hemos recibido' gestures toward inherited repertoire, but the main function is aesthetic guidance rather than a developed tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "badly articulated, untuned, or homogenized singing presented as flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a prescriptive critical argument about cantaor aesthetics, not merely a technical checklist."
+  }
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "article_id": "1986-09-13-right-artistas-flamencos-en-ceuta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "«Mi tesis es esta: de no haber existido el pueblo gitano, no tendríamos cante flamenco».",
+        "target": "Arrebola's gitano-andaluz thesis about the origins of cante flamenco",
+        "rationale": "The passage frames flamenco origins through an identity group claim in which the pueblo gitano becomes constitutive of cante flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "apoyado en estudios anteriores y a los que se suma la inexcusable valía de la práctica profesional del cante",
+        "target": "Arrebola's book and its basis of authority",
+        "rationale": "The review legitimates the book's claims through prior scholarship and the author's practical professional knowledge of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "constituyen el glorioso —y para nosotros imparangonable— trío de bailaores gitanos de casta",
+        "target": "El Gato, Paco Laberinto, and Antonio Farruco",
+        "rationale": "The article constructs a hierarchy by elevating these artists as an unmatched canonical trio of gitano dancers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The book is described as a manual and pedagogically organized, but the main discourse function is review/critical authority rather than a broader claim about institutional learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Arrebola's gitano-andaluz thesis and the canon of gitano dance artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-14-left-se-sec-el-arbolito",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text inspired by a milonga, but no clear evaluative, authorizing, pedagogical, communal, heritage, or boundary discourse is visible."
+  },
+  {
+    "article_id": "1986-09-14-right-enrique-orozco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "yo me iba detrás de él de taberna en taberna para escuchar los discos; de esta forma me aficioné al cante",
+        "target": "Enrique Orozco's early formation as an aficionado",
+        "rationale": "The passage frames his entry into cante as a listening-based, informal learning process outside formal instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "hay algunos críticos que saben muy poco, no saben ni de nombres ni de cantes",
+        "target": "newspaper critics who misidentified Orozco and his malagueña",
+        "rationale": "The speaker directly challenges the competence and authority of critics to identify artists and cantes correctly."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise of Vallejo/Manuel as complete and knowledgeable, but the truncated context makes the target wording slightly ambiguous and the stronger critical-authority passage is clearer."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Orozco's informal formation and the authority of critics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-17-right-la-mayor-a-se-pronunci-por-chano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "tomó como módulos principales ... la pureza, la profesionalidad y la constancia a lo largo de una trayectoria artística; la revitalización de estilos en desuso; la puesta al día de matices cantaores",
+        "target": "criteria for the III Distinción «Compás del Cante»",
+        "rationale": "The article explicitly names aesthetic and professional criteria used to define flamenco merit for the award."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Acto seguido se pasó a una interesante y nutritiva exposición argumental sobre el voto expresado en primer lugar.",
+        "target": "the award jury's deliberative authority",
+        "rationale": "The passage foregrounds expert jurors explaining and justifying their votes as an authoritative critical process."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "arrojaron el siguiente resultado de mayor a menor: Chano Lobato, José Menese y José el de la Tomasa",
+        "target": "Chano Lobato, José Menese, and José el de la Tomasa",
+        "rationale": "The voting process ranks artists and creates a hierarchy of distinction among finalists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Pureza appears as an award criterion, but the passage does not clearly exclude impure or illegitimate flamenco forms."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'historia de nuestro pueblo' gives public cultural weight to flamenco, but the article remains primarily award/review discourse rather than explicit heritage framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Chano Lobato and the Compás del Cante award hierarchy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1986-09-18-right-los-de-la-tercera-edad-en-catalu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "estuvo magistral derrochando arte, duende y maestría",
+        "target": "Manolo Brenes's guitar solo and interpretation of «Ecos de Semana Santa»",
+        "rationale": "The passage explicitly praises the performance as magistral and full of artistry, duende, and mastery."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "cuando empezó por siguirias parecía como si una voz, con un quejío desgarrador, como saeta que se clava en el corazón",
+        "target": "Manolo Brenes's flamenco interpretation",
+        "rationale": "The review applies flamenco aesthetic criteria such as duende, maestría, siguiriyas, quejío, and emotional force to judge the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and peñas are present and supportive, but the visible text does not clearly grant them authority to define or judge flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The homage to elder artists suggests memory and respect, but the visible text does not clearly frame this as safeguarding or public heritage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo Brenes and the honored elder flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

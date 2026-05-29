@@ -1,0 +1,309 @@
+[
+  {
+    "article_id": "1991-09-4-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Explica, también, el proceso de masificación y superficialización del cante... fue un mero desfile de fandangos y fandanguillos trasnochados, con el sello ramplón de la Opera Flamenca",
+        "target": "Opera Flamenca / Circo Price spectacle",
+        "rationale": "The passage frames mass spectacle and opera-flamenca staging as superficializing and degrading the cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Los Gaditanos constituyen una junta de saboteadores del flamenco",
+        "target": "Los Gaditanos",
+        "rationale": "The phrase draws a strong boundary by casting the group as actively damaging or illegitimate within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El Sevillano ha vuelto a la circulación con pérdida global de aquella armonía y sutileza... Se ha decidido por la vulgaridad",
+        "target": "El Sevillano",
+        "rationale": "The passage directly evaluates the artist negatively, judging loss of harmony and a turn toward vulgarity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Mezcla fandangos con soleares, bulerías con siguiriyas... sin hundir raíces acompasadas",
+        "target": "Pepe Pinto's cante",
+        "rationale": "The critique applies aesthetic criteria of stylistic propriety, compás, and rootedness to judge flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "A reserva siempre de su pangitanismo, Mairena está artillado de conocimientos que sabe exponer",
+        "target": "Antonio Mairena's knowledge and authority",
+        "rationale": "The passage evaluates Mairena's expert knowledge while also contesting the ethnic restriction and performative handling of that authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'buenos aficionados' appears, but it mainly names an affected audience rather than granting aficionados authority to recognize or sustain flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Ethnic terms such as casta, tribu, and pangitanismo appear, but the visible passage is chiefly a critique of Mairena's authority rather than a sustained identity-based belonging frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Opera Flamenca, Circo Price performers, and disputed flamenco authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-8-right-francisco-almagro-herrera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "por aquellas fechas, en Pegalajar, el pueblo donde yo nació, había muchos y buenos aficionados",
+        "target": "Pegalajar aficionado community",
+        "rationale": "The passage grounds early flamenco experience in a local community of knowledgeable aficionados."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "De mi madre, que cantaba muy bien, aprendí las malagueñas y los cantes mineros",
+        "target": "Francisco Almagro Herrera's flamenco learning",
+        "rationale": "The passage presents flamenco knowledge as learned through family-based oral transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Pepe el de la Matrona el que me enseñó a cantar las romeras y la liviana, al tiempo que me dio lecciones de compás por soleá",
+        "target": "Pepe el de la Matrona as teacher",
+        "rationale": "A recognized cantaor is positioned as an authoritative teacher of repertoire and compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Pepe el de la Matrona... cosa que él dominaba a la perfección, como gran figura del cante que era",
+        "target": "Pepe el de la Matrona",
+        "rationale": "The passage canonizes Matrona by calling him a great figure of cante and attributing perfect mastery."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The interview mentions origins and roots of history, but the visible excerpt does not develop the claim enough to authorize present flamenco through continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Francisco Almagro Herrera's flamenco formation and Pepe el de la Matrona",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-11-right-existe-una-cultura-andaluza",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "una cultura milenaria... sus logros y tradiciones en campos específicos de la cultura, aparecen como una cima de la creatividad del género humano",
+        "target": "Andalusian culture",
+        "rationale": "The passage authorizes Andalusian culture through ancient continuity, traditions, and civilizational achievement."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "falsas y artificiosas veladas con rimbombantes nombres y aquello «...de Arte Flamenco»",
+        "target": "artificial flamenco-themed events",
+        "rationale": "The passage excludes certain staged events as false and artificial uses of flamenco cultural value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en defensa de los valores autóctonos de la cultura andaluza",
+        "target": "autochthonous values of Andalusian culture",
+        "rationale": "The passage frames Andalusian cultural values as needing defense amid crisis, marginalization, and mutation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "una cultura propia del pueblo andaluz, hoy en día casi marginada",
+        "target": "Andalusian people and culture",
+        "rationale": "The text frames culture through the identity and marginalization of the Andalusian people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text criticizes institutions and academics, but the primary function is cultural defense rather than expert critical authority or boundary critique within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "heritage",
+        "community",
+        "authenticity"
+      ],
+      "target": "Andalusian culture and flamenco-related public representations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-12-left-acercamiento-a-la-discograf-a-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el tratamiento que se le ha dado a la personalidad de Juan Pérez Sánchez «Canalejas de Puerto Real», no ha sido todo lo justo que por su calidad cantaora el artista merece",
+        "target": "Canalejas de Puerto Real",
+        "rationale": "The passage explicitly evaluates previous judgments of Canalejas as unfair relative to his artistic quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "su discografía... está plagada de comercialidad y de grabaciones que no mantenían la seriedad requerida para el arte flamenco",
+        "target": "Canalejas's commercial recordings",
+        "rationale": "Commerciality is framed as a possible threat to the seriousness required for flamenco art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "sus coplas están hechas con el gusto de la época y sin llegar a perder el matiz flamenco",
+        "target": "Canalejas's coplas",
+        "rationale": "The passage applies aesthetic criteria of period taste and flamenco nuance to evaluate the recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "llevarlo a los anales de nuestro arte",
+        "target": "Canalejas's place in flamenco history",
+        "rationale": "The passage argues for Canalejas's inclusion in the historical canon of flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Creativity and reproduction are discussed in relation to recordings and style, not as a learning or pedagogical transmission issue."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Canalejas de Puerto Real's discography and artistic status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-14-left-el-flamenco-y-el-teatro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "el flamenco subía de nuevo a los escenarios, a unos lugares en los que se había corrompido, prostituido y cargado con todos los signos de envilecimiento que un arte puede soportar",
+        "target": "staged flamenco",
+        "rationale": "The passage frames the theatrical stage as historically corrupting and debasing flamenco authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "«Quejío», una propuesta dramática cargada de dignidad... para que el acontecimiento merezca ser recordado como clave en la historia del flamenco",
+        "target": "La Cuadra's Quejío",
+        "rationale": "The passage explicitly praises the work as dignified, artistically effective, and historically key."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "una concepción bastarda y pseudoflamenca ha primado en los mismos",
+        "target": "many flamenco theatrical montages",
+        "rationale": "The critique polices the boundary of proper flamenco by condemning many theatrical montages as bastardized and pseudo-flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco deja de ser una caricatura deformada de sí mismo y se analiza... lo mucho que hay en él de rito, de raíces profundas",
+        "target": "modern dramatic flamenco stagings",
+        "rationale": "The passage legitimates newer theatrical approaches by locating flamenco value in ritual and deep roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The trigger 'fuera' appears in 'fuera de serie', an idiomatic quality judgment rather than an insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco theatrical staging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

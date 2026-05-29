@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1995-01-3-right-la-poca-dorada-mis-encuentros-co",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la provincia de Cádiz, que parece ser el lugar de nacimiento del flamenco gitano",
+        "target": "flamenco gitano and its Cádiz/Seville historical roots",
+        "rationale": "The passage grounds flamenco gitano in a claimed birthplace and migration history, using origins to frame later flamenco development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Sevilla se convirtió en la Meca mundial del Flamenco, donde acudieron muchos de los mejores artistas de Andalucía",
+        "target": "Seville, the Alameda de Hércules, and La Europa as flamenco centers",
+        "rationale": "The text constructs a hierarchy of flamenco places by naming Seville the world Mecca of flamenco and ranking the Alameda/La Europa as the principal center."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "los numerosos locales que poseían uno o varios apartados y que florecían gracias a la demanda creciente de estos lugares para la juerga flamenca",
+        "target": "Alameda/La Europa juerga spaces",
+        "rationale": "The passage links flamenco life to semi-private juerga spaces and social gathering places that sustained the historical flamenco community."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Alameda de Hércules and Seville as historically authoritative flamenco spaces",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are based only on the visible historical framing and ending anecdote."
+  },
+  {
+    "article_id": "1995-01-8-left-manuel-de-paula-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Dentro del seno familiar. Gateando... empecé escuchando flamenco en mi propia casa. He escuchao a mi madre, a mis cinco hermanos, a mi padre",
+        "target": "Manuel de Paula's flamenco formation",
+        "rationale": "The interview frames his learning as domestic, oral, familial, and acquired through listening from childhood."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "aquel cante me salió con tanta pena y tanto sentimiento que se nos desataron las lágrimas",
+        "target": "siguiriyas performance and cante expression",
+        "rationale": "The passage applies emotional force, pena, and sentimiento as criteria for the value and effect of the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "los músicos tienen que enterarse que se han de adaptar a escuchar la voz... y si ahora se meten bien los instrumentos y esto sirve para engrandecer al flamenco, bendito sea",
+        "target": "instrumental additions to flamenco cante",
+        "rationale": "The speaker authorizes instrumental expansion only under a critical boundary: musicians must adapt to the voice and serve the enlargement of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "familial cante transmission and properly integrated instrumental innovation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The retrieval trigger 'arte' alone was not used; codes rely on explicit learning and evaluative criteria."
+  },
+  {
+    "article_id": "1995-01-11-left-perfil-humano-y-flamenco-de-el-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Heredó en su sangre la «estirpe», eso que según el diccionario es la raíz, el tronco de una familia o linaje, su prosapia, su raza",
+        "target": "Juan Pavón's flamenco legitimacy",
+        "rationale": "The text grounds Pavón's flamenco value in inherited lineage, roots, family trunk, and continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Aprenderá mucho, escuchará bien. Se acunará en los aires del Guadalquivir-Triana y la sal de la Bahía",
+        "target": "Juan Pavón's acquisition of cante knowledge",
+        "rationale": "The passage presents flamenco knowledge as absorbed through listening and place-based/familial environments rather than formal instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Juan Pavón era enciclopedia viviente y representante último de una raza y de unos modos",
+        "target": "Juan Pavón as exemplary flamenco figure",
+        "rationale": "The article canonizes Pavón as a living encyclopedia and final representative of a disappearing flamenco lineage and mode of life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions extinction and memory, but the visible excerpt frames this mainly as lineage and homage rather than explicit public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Juan Pavón's authority as a lineage-based flamenco knower",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The identity and lineage language is coded only where it authorizes Pavón's flamenco knowledge and status."
+  },
+  {
+    "article_id": "1995-01-13-right-sobre-manuel-mart-n-mart-n-ultim",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Todo hubiese sobrado si hubiese presentado la gran prueba: la grabación primera y privada... porque en su palabra no creo",
+        "target": "Manuel Martín Martín's critical authority",
+        "rationale": "The writer contests another critic's authority by demanding evidentiary proof and rejecting his word as a basis for judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Mi verdad empieza y acaba en quienes me conocen bien, en mis paisanos, en quienes saben de mi vida",
+        "target": "Agustín Gómez's credibility",
+        "rationale": "The passage grounds credibility in recognition by local people and those who know the writer's life."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "critical credibility in a flamenco polemic",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a polemical reply; codes are limited to explicit critic-authority and community-credibility claims."
+  },
+  {
+    "article_id": "1995-01-14-left-el-flamenco-dos-est-ticas-manuel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "todo un sector de la afición que en otro tiempo fue pujante y que ahora vive acomplejada",
+        "target": "a marginalized sector of flamenco afición",
+        "rationale": "The text treats a sector of afición as a meaningful flamenco community whose recognition and place in the field have been suppressed."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "artistas y aficionados que representan una estética diferente a la que impera en los canales oficiales... proscritos prácticamente de las apariciones públicas e ignorados por la crítica oficial",
+        "target": "official channels and official criticism",
+        "rationale": "The passage criticizes official critical and institutional channels for policing which flamenco aesthetics are visible and legitimate."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "de aquí a la extinción para siempre no hay más que un paso... si ahora alguna de sus ramas se seca. Si esto ocurriera, se empobrecería el panorama de nuestro arte",
+        "target": "threatened flamenco aesthetic branches",
+        "rationale": "The passage frames marginalized flamenco aesthetics as living branches at risk of extinction and as losses to the collective cultural field."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The root/branch metaphor suggests continuity, but the stronger function is safeguarding a marginalized aesthetic rather than authorizing by tradition alone."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism",
+        "heritage"
+      ],
+      "target": "marginalized Opera Flamenca-linked aesthetics and their afición",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; the visible excerpt clearly frames a dispute over official criticism, public visibility, and the survival of a flamenco aesthetic."
+  }
+]

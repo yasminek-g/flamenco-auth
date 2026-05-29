@@ -1,0 +1,288 @@
+[
+  {
+    "article_id": "1987-07-13-left-ellos-los-protagonistas-dicen-pa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "—?Es verdad eso de que para cantar por Huelva hay que haber nacido en Huelva? —Yo creo que sí. Tú sabes que ha habió mucha gente que lo ha intentao y han fracasao casi toos.",
+        "target": "cantar por Huelva / fandango de Huelva",
+        "rationale": "The passage draws a social and epistemic boundary between those born in Huelva, who can properly perform the style, and outsiders who generally fail."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "No porque yo haya nacido en ese pueblo, pero la madre del fandango de Huelva es Alosno.",
+        "target": "Alosno as origin of the fandango de Huelva",
+        "rationale": "The value and authority of the style are grounded in an origin claim that makes Alosno the source or root of the fandango de Huelva."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Juanito Valderrama que ha cantao muy bien por fandangos naturales, pero cuando se mete por Huelva ya no es igual.",
+        "target": "Juanito Valderrama's fandangos de Huelva",
+        "rationale": "The interview constructs a comparative hierarchy in which even a highly valued artist is ranked as less adequate when performing the Huelva style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The local Huelva identity framing is strong, but the same evidence is more precisely captured as an insider/outsider boundary in COMM_01."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase about making the fandango 'más flamenco' suggests authenticity, but the visible evidence is more about origin and local authority than a general authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "fandango de Huelva and its proper performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible interview window contains sufficient evidence for local-origin authority and exclusionary boundary work."
+  },
+  {
+    "article_id": "1987-07-15-right-algunos-datos-nuevos-para-la-his",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "hemos encontrado unos documentos aún inéditos cuyo interés rebasa evidentemente el marco de dicho trabajo, extendiéndose a la historia y teoría del flamenco como tal.",
+        "target": "new documentary sources for flamenco history and theory",
+        "rationale": "The scholarly voice authorizes the documents as historically and theoretically significant for flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Ejecutaron con el más admirable y característico primor, todo el repertorio andaluz de playeras, cañas, jarabes, rondeñas, seguidillas afandangadas, etc.",
+        "target": "the 1853 flamenco performance",
+        "rationale": "The reproduced period review explicitly praises the performers' execution and characteristic quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "no es para culpar o disculpar a nadie, sino simplemente porque sobre este cantaor tenemos hasta ahora más información que sobre otros en cuanto al status de los primeros intérpretes, sea cual sea la etnia a que pertenezcan.",
+        "target": "ethnic framing of early flamenco interpreters",
+        "rationale": "The passage explicitly addresses ethnicity as a category in flamenco historiography and rejects assigning cultural culpability to one ethnic group or another."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article concerns early historical sources, but the visible text does not use roots or continuity to authorize present flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The documents are historically valuable, but there is no explicit public heritage or patrimonial framing in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "early flamenco history and the status of early interpreters",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible scholarly framing and reproduced review provide clear evaluative and historiographic discourse."
+  },
+  {
+    "article_id": "1987-07-19-right-aunque-no-quepa-en-el-papel-le-f",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "ha recogido en este hermoso libro una soberbia colección de dibujos a lápiz que reflejan, vivos y en movimiento casi, las imágenes de una larga serie de personajes del flamenco",
+        "target": "Miguel Alcalá's book of flamenco drawings",
+        "rationale": "The passage explicitly evaluates the book and its drawings through strong praise of their artistic quality and representational force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "personajes esenciales en el Gotha del Cante, deteniéndose en Chacón, Caracol y Mairena especialmente.",
+        "target": "Chacón, Caracol, Mairena and other canonical flamenco figures",
+        "rationale": "The passage canonizes named artists as essential figures within a hierarchy of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Silverio Franconetti, al que califica como «el mejor cantaor de todos los tiempos» y al que libera del sambetino que le colgaron en su día Ricardo Molina y Antonio Mairena de haber sido culpable de la pérdida de la pureza del cante",
+        "target": "Silverio Franconetti and prior purity-based criticism",
+        "rationale": "The reviewer highlights expert critical intervention that contests an earlier boundary critique blaming Silverio for the loss of cante purity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word 'maestra' appears in 'obra maestra', but it means masterpiece and does not establish pedagogical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Purity loss is mentioned, but the article's visible discourse primarily critiques that accusation rather than directly policing purity itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco books, canonical artists, and Silverio Franconetti's status",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a review; critical evaluation and canon formation are central in the visible text."
+  },
+  {
+    "article_id": "1987-07-21-right-iscografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "auténticas reliquias de lo jondo, no sólo por su carácter orientador, pedagógico y dominante en la presente movida, sino porque el material que albergan —grabadas en décadas pretéritas—, permite una visión más completa del panorama estilístico",
+        "target": "reissued historical flamenco recordings",
+        "rationale": "The passage frames recordings as mediated access to flamenco knowledge with orienting and pedagogical value for understanding style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todos con temas convenientemente seleccionados y de buena calidad sonora a excepción del que nosotros hemos escuchado del admirado Melchor de Marchena, donde el abuso de agudos y el extraño sonido metálico no permite el deleite",
+        "target": "Hispavox reissued LPs and Melchor de Marchena recording quality",
+        "rationale": "The reviewer evaluates the selection and sound quality of the recordings, including a specific negative judgment about one copy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "voces que han sido y que son piezas fundamentales e indispensables para un acercamiento a las inveteradas esencias de Jerez de la Frontera",
+        "target": "Jerez singers in the Canta Jerez recording",
+        "rationale": "The passage canonizes these voices as fundamental and indispensable reference points for approaching Jerez flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The reissue of archival recordings suggests preservation, but the visible text frames them more as pedagogical and critical resources than as public heritage safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'esencias de Jerez' evokes rooted tradition, but the stronger discourse function is canonizing the recordings and artists as indispensable references."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "historical Hispavox flamenco recordings and Jerez repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt supports pedagogy through recorded media and critical canonization of historical performers."
+  },
+  {
+    "article_id": "1987-07-22-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pepe Pinto, Maestro del Cante... a la cantaora más larga de todos los tiempos, a la inigualable Niña de los Peines.",
+        "target": "Pepe Pinto and Niña de los Peines",
+        "rationale": "The passage constructs canonical hierarchy through master status and a superlative ranking of Niña de los Peines."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la guitarra de Melchor de Marchena pone al descubierto el buen hacer de una reliquia que, junto con el resto ya reseñado, vale su peso en oro",
+        "target": "Pepe Pinto recordings with Melchor de Marchena",
+        "rationale": "The article explicitly evaluates the recordings as artistically valuable and worthy."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "se trataba con ello de incidir en el acercamiento del flamenco a los enseñantes de cualquier nivel, con el objetivo de abrir esta rama del arte al ámbito de la escuela.",
+        "target": "Jornadas sobre la Investigación en el Flamenco",
+        "rationale": "The seminar is framed as institutional educational access, bringing flamenco to teachers and into the school domain."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "José Blas Vega, destacado investigador, autor de numerosos libros, que desglosó en su charla las líneas fundamentales que deben presidir una investigación en el terreno del flamenco.",
+        "target": "José Blas Vega's research authority",
+        "rationale": "The passage grants an expert researcher authority to define the principles that should govern flamenco research."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The conferences transmit knowledge, but the stronger and more specific frame is institutional access to flamenco education in PED_03."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "School transmission could support cultural continuity, but the visible text does not explicitly frame flamenco as heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Pepe Pinto recordings and institutional flamenco research/education",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article; both the discography note and the seminar report contain clear evaluative and pedagogical discourse."
+  }
+]

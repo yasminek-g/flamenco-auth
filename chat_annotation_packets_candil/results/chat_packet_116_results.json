@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1985-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se enjuicia el XIII Congreso, desde una, en ocasiones, frívola perspectiva... ha venido adoleciendo de falta de operatividad, de sentido del rigor",
+        "target": "XIII Congreso de Actividades Flamencas and commentary about it",
+        "rationale": "The editorial explicitly evaluates both prior analyses and the congress itself, judging them for superficiality, lack of rigor, and poor operativity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial voice contests other analyses, but the passage does not clearly establish a critic, scholar, or expert authority beyond ordinary editorial judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "XIII Congreso de Actividades Flamencas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-4-left-hip-rbole-po-tica-en-las-coplas-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "D e poesía plena y sugestiva, bien surtida siempre anduvo la tema—tica en las «letras» del cante flamenco",
+        "target": "flamenco coplas and letras",
+        "rationale": "The article evaluates flamenco lyrics as full and suggestive poetry and repeatedly praises their imaginative and emotional effects."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en boca de un «tercer clase» no llegarían muy lejos ni una ni otro. En efecto, no se equivocó un ápice",
+        "target": "Gayarrito in relation to Antonio Chacón's malagueña",
+        "rationale": "The passage creates a hierarchy between Chacón and a lower-status interpreter, using rank to explain the repertory's fate."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions oral tradition and one singer learning a malagueña from another, but it does not clearly frame this as authoritative embodied or lineage transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The reference to tradición oral supports provenance, but it is not clearly used to authorize present flamenco value or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "poetic value and status of flamenco letras and interpreters",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-4-right-prop-sito-de-la-palabra-payo-y-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "los abusos de un caló espúreo, improvisado o reconstituido",
+        "target": "improvised or reconstructed caló used by flamenco aficionados",
+        "rationale": "The passage explicitly criticizes a linguistic practice associated with flamenco discourse as abusive, spurious, and improvised."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "es cosa que puedo asegurar después de haber recopilado y cotejado pacientemente durante años trece de ellos",
+        "target": "the author's correction of caló vocabulary and dictionary traditions",
+        "rationale": "The author grounds his judgment in scholarly labor over dictionaries, positioning himself as an expert able to correct false vocabulary claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "si el flamenco nació en Andalucía y no en otra parte, ello se debe en gran parte a la tradición hospitalaria y antirracista de los andaluces... familias gitanas de donde salieron dinastías de cantaores",
+        "target": "Andalusian and Gitano communities in the origin of flamenco",
+        "rationale": "The passage frames flamenco origins through identity groups, making Andalusian hospitality and Gitano families central to the cultural formation of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Words such as espúreo and false vocabulary draw a language-correctness boundary around caló, but not clearly a legitimate/improper flamenco boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article states an origin claim for flamenco in Andalucía, but the visible excerpt does not strongly use that origin to judge a present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "claims about caló, payo language, and flamenco origins",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible beginning, evidence window, and ending provide enough context for these codes."
+  },
+  {
+    "article_id": "1985-09-6-left-a-vueltas-con-el-fandango",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fandangos que señalaron una época y personificaron unos nombres que constituyen una parte no indiferente del cante que llamamos flamenco",
+        "target": "historical fandango interpreters and styles",
+        "rationale": "The article constructs a canon of exemplary fandango artists and styles, presenting them as historically significant within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Años de 1984 y 1985. Vuelve de nuevo el fandango... su tabla de salvación... es —quién lo diría— el fandango",
+        "target": "the contemporary return and use of fandango",
+        "rationale": "The article evaluates the current revival of fandango skeptically, criticizing its use as a predictable performance rescue device."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "vamos a conservar los fandangos personales como patrimonio de sus creadores que sólo a título de evocación singular y en actos definidos, deben ser cantados",
+        "target": "personal fandangos associated with their creators",
+        "rationale": "The passage explicitly calls for conserving personal fandangos as an inherited repertoire tied to their creators and appropriate occasions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text invokes criteria such as cante grande, cante menor, and inspiración jonda, but these are secondary to the stronger canon, evaluation, and conservation claims."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "Patrimonio appears in the phrase patrimonio de sus creadores, but the framing is closer to conserving creator-linked tradition than public cultural heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "fandango styles, historical creators, and contemporary fandango practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-7-left-versos-de-oto-o-para-macande",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "tu voz como un trueno espantaba las nubes aguitarradas hasta dejar caer un torrencial de caramelos sobre el enigmático santuario del cante",
+        "target": "Macandé's flamenco voice",
+        "rationale": "Although written as poetry, the passage praises and evaluates Macandé's voice through strong aesthetic imagery tied to cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poem mentions historical photography, memory, and survival, but these remain lyrical homage rather than clear public heritage or safeguarding discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase fotografía histórica suggests commemoration, but it does not clearly construct Macandé as part of a canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Macandé",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

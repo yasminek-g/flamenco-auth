@@ -1,0 +1,207 @@
+[
+  {
+    "article_id": "1987-09-19-right-cantaores-conocidos-compa-eros-y",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pastora fue genial e intachablemente completa",
+        "target": "Pastora Pavón",
+        "rationale": "The article canonizes Pastora by presenting her as a complete and exemplary cantaora within flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Pastora sonaba flamenca, gitana y dueña de una técnica y conocimientos fuera de lo común.",
+        "target": "Pastora Pavón's singing",
+        "rationale": "The passage judges Pastora through aesthetic criteria of flamencura, gitano sound, technique, and exceptional knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "el aficionado total, el que va más allá, el que no se anquilosa, distingue, valora y siente la diferencia entre mujer y hombre a la hora de cantar",
+        "target": "gendered interpretation of Pastora Pavón's cante",
+        "rationale": "The passage frames flamenco evaluation through gendered difference, making woman/man identity central to how Pastora's singing is understood."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Pastora is called flamenca and gitana, but the stronger discourse function is critical/aesthetic evaluation rather than an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Pastora Pavón as a canonical cantaora",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-09-20-left-las-soleares-de-juaniqu",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "el aficionado que quiera estudiar alguna parcela del cante flamenco se encontrará, inevitablemente, con el maestro de Mairena",
+        "target": "Antonio Mairena as guide for studying cante",
+        "rationale": "Mairena is positioned as an unavoidable pedagogical authority for the study and classification of flamenco styles."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "la ingente labor de Antonio Mairena en el rescate de los cantes... rescate y catalogación de estas reliquias sonoras",
+        "target": "Mairena's rescue and cataloguing of Juaniquí's soleares",
+        "rationale": "The passage frames Mairena's work as safeguarding and cataloguing endangered sonic heritage for future memory."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "en la búsqueda de alguna raíz flamenca, nos encontramos, en muchas ocasiones, con los cantes que interpretara Antonio Mairena",
+        "target": "roots and continuity of flamenco cante",
+        "rationale": "The text grounds the authority of present study in flamenco roots and continuity preserved through Mairena's interpretations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Mairena is clearly elevated, but the strongest visible function is pedagogical and preservational rather than a separate ranking hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "tradition"
+      ],
+      "target": "Antonio Mairena's role in preserving and teaching Juaniquí's soleares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-09-20-right-ablan-las-pe-as",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and contests are listed, but the text mostly gives administrative information and does not grant community authority or insider legitimacy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Prize lists appear, but they function as event results rather than a discourse of canon, hierarchy, or evaluative ranking beyond contest administration."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative peña notices and contest listings without sufficient evaluative or authority discourse."
+  },
+  {
+    "article_id": "1987-09-21-right-las-letras-flamencas-de-emilio-b",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The lyrics mention identity terms such as gitano/gachó, but they do not clearly frame authority, belonging, or representation in flamenco discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The lyrics are flamenco-themed, but no explicit aesthetic criterion or evaluative discourse is provided."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Lyric text only; no visible critical, pedagogical, heritage, authenticity, or community-authority discourse."
+  },
+  {
+    "article_id": "1987-09-22-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Esta Cátedra de Flamencología de la Universidad de Cádiz ha concedido sus Premios Nacionales 1984-86",
+        "target": "artists, works, institutions, and media recognized by the Cátedra de Flamencología",
+        "rationale": "An institutional flamencology body confers authorized recognition and public cultural value through national awards."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cante: Al cantaor Naranjito de Triana... Baile: A la bailaora Angelita Vargas... Guitarra: Al guitarrista Mario Escudero",
+        "target": "award-winning flamenco artists and works",
+        "rationale": "The awards construct a hierarchy of recognized exemplary figures and works across flamenco categories."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "en mérito al conjunto de su obra pictórica sobre temática flamenca desarrollada a lo largo de tantos años y a la calidad y brillantez creadora de la misma",
+        "target": "Antonio Povedano's flamenco-themed visual art",
+        "rationale": "The passage explicitly evaluates Povedano's work for long-term merit, quality, and creative brilliance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The award category 'Enseñanza' names a conservatory guitar classroom, but the passage does not discuss institutional learning or access beyond a list item."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "institutionally recognized flamenco artists, works, and cultural actors",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

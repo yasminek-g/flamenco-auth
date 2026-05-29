@@ -1,0 +1,270 @@
+[
+  {
+    "article_id": "1987-01-11-right-lucas-l-pez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Lucas López es de esos aficionados de lujo, imprescindibles en la movida jonda, que lo dan todo a cambio de nada",
+        "target": "Lucas López and committed aficionados serving flamenco",
+        "rationale": "The passage grants community authority and value to an aficionado whose unpaid service sustains the flamenco world."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena, el maestro por antonomasia a cuyo talento creador tanto le debe el cante",
+        "target": "Antonio Mairena",
+        "rationale": "Mairena is canonized as the paradigmatic master whose creative talent is presented as foundational for cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Yo a Antonio se lo debo todo, todo lo que sé.",
+        "target": "Lucas López's flamenco knowledge derived from Antonio Mairena",
+        "rationale": "The speaker frames his flamenco knowledge as personally transmitted through a master figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The ITEAF receives official recognition and appears institutionally organized, but the visible passage frames this mainly as social aid for elderly artists rather than heritage authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'falsos' appears, but it refers to modesty/alardes rather than purity boundary-work around proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Lucas López, ITEAF service, and Antonio Mairena's authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is truncated; codes are based only on the displayed beginning, evidence windows, and ending."
+  },
+  {
+    "article_id": "1987-01-15-left-precisiones-a-un-comentario-escr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Evidentemente, valor humano más que valor poético, aunque no sea desdeñable y merezca toda nuestra atención",
+        "target": "Félix de Utrera's 'Acrósticos del Arte Flamenco'",
+        "rationale": "The reviewer explicitly evaluates the book by distinguishing its human value from its poetic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "para el crítico cordobés que con harta frecuencia, se erige en profeta iracundo de lo jondo",
+        "target": "Agustín Gómez's critical commentary and authority",
+        "rationale": "The article disputes another critic's authority and condemns his polemical style as illegitimate critical practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la dejación del deber de tutela hacia los artistas flamencos que con tanta insistencia venimos reclamando de las instituciones",
+        "target": "institutional protection of flamenco artists",
+        "rationale": "The text frames institutional responsibility toward flamenco artists as a public protective duty, though the emphasis is social tutela rather than explicit patrimony."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The book is published by a university press, but the visible discussion does not clearly frame it as institutional learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Félix de Utrera's book, Agustín Gómez's criticism, and institutional tutela of flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-01-15-right-forman-el-gigantesco-rbol-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Para mí, que he investigado durante años y años, el cante flamenco o jondo, nació de las entrañas de Andalucía",
+        "target": "the origins of flamenco or cante jondo",
+        "rationale": "The author grounds flamenco's value and identity in Andalusian origin and rootedness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Que me perdonen esos doctores porque rechace con estoicismo sus opiniones.",
+        "target": "expert theories about fandango and cante origins",
+        "rationale": "The passage explicitly contests expert authority and asserts the writer's critical right to reject origin theories."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "el alma de las gentes de Al-Andalus es toda ella pura poesía... donde haya un andaluz, habrá un poeta",
+        "target": "Andalusian identity as the source of flamenco creativity",
+        "rationale": "The passage uses regional identity to explain and authorize who created and embodies flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The tree/family metaphor organizes cantes genealogically, but the visible passage is more about origins than ranking or canon hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'cantes payos' appears, but the visible passage does not clearly draw a proper/improper purity boundary around those cantes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Andalusian origin claims for flamenco and competing scholarly theories",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible text is truncated; the origin argument is still clear in the review excerpt."
+  },
+  {
+    "article_id": "1987-01-20-left-buzon-flamenco-respuesta-a-enriq",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no puedo dejar de intentar, como dice el buen aficionado Manuel Yerga Lancharro, «enderezar este entuerto»",
+        "target": "Enrique Orozco's claim of authorship over a malagueña",
+        "rationale": "The writer adopts the correcting role of an informed aficionado to police an erroneous attribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "me gustó mucho, porque cantó esta malagueña divinamente... pero al decir que eran creaciones suyas me causó disgusto, me sentí engañado",
+        "target": "Enrique Orozco's performance and authorship claim",
+        "rationale": "The passage evaluates the singing positively while criticizing the false claim of creation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "hoy no se puede engañar al público, por lo menos a lo que al Cante se refiere, no nos van a dar gatos por liebres",
+        "target": "knowledgeable flamenco public",
+        "rationale": "The passage attributes discernment and corrective authority to the flamenco public/listeners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The 'gatos por liebres' language suggests deception, but the issue is attributional accuracy rather than purity or inauthentic flamenco boundary-work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "References to recordings and cassettes allow verification, but they are used as evidence for correction rather than as a learning-access discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "false authorship claims and attribution errors in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-01-20-right-la-universidad-de-c-diz-inaugura",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "la Universidad desea mantener un contacto directo con temas populares, especificamente andaluces, sin perjuicio de seguir manteniendo su programa de publicaciones estrictamente académico",
+        "target": "University of Cádiz publications on Andalusian folklore and flamenco",
+        "rationale": "The passage frames university publishing as institutional access to flamenco and popular Andalusian knowledge beyond restricted academic circles."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la instauración de un Aula Flamenca que, indudablemente, hará mucho en pro de una mayor comprensión y acercamiento de la Universidad a su pueblo",
+        "target": "Aula Flamenca and university-community connection",
+        "rationale": "The passage frames flamenco programming as public cultural outreach that brings an institution closer to the community."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "conseguir una mayor comunicación entre la Universidad y la sociedad",
+        "target": "relationship between the university and society",
+        "rationale": "The text values a less distant, more communicative institutional setting for flamenco knowledge and public participation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The university gives institutional support, but the visible passage emphasizes educational outreach more than official heritage designation or authorized patrimonial recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "community"
+      ],
+      "target": "University of Cádiz flamenco publications and Aula Flamenca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is truncated, but the institutional learning-access discourse is explicit."
+  }
+]

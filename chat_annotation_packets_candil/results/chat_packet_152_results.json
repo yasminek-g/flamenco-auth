@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "1987-05-6-left-tentativo",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The poem invokes memory, flight, and 'pueblo', but the language is too metaphorical to establish public heritage, safeguarding, or community memory-work around flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text lacks a clear observable discourse function under the codebook."
+  },
+  {
+    "article_id": "1987-05-6-right-cumbre-flamenca-en-madrid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "las atenciones recibidas como corresponsal de CANDIL, que ha facilitado la misión crítica que a continuación, comienzo a detallar",
+        "target": "the critic's review of the Cumbre Flamenca events",
+        "rationale": "The writer explicitly frames his role as a correspondent carrying out a critical mission, positioning the review voice as authorized to judge the spectacles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "aquellos magníficos intérpretes que el Cante tuvo en Aurelio de Cádiz, Bernardo el de los Lobitos y Pepe el de la Matrona, en cuya buena escuela, bebieron muchos de los buenos artistas que hoy tienen puesto preeminente",
+        "target": "Aurelio de Cádiz, Bernardo el de los Lobitos, Pepe el de la Matrona, and their artistic lineage",
+        "rationale": "The passage constructs a hierarchy and canon by calling these artists magnificent interpreters and treating their school as the source of current preeminent artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Lo mejor, por su extraordinaria calidad musical y cantaora, y por tanto lo más resaltable de esta Cumbre, estuvo, a mi juicio, en el concierto del día 6",
+        "target": "the concert by the Banda de Música de Puente Genil at the Cumbre Flamenca",
+        "rationale": "The writer explicitly evaluates the concert as the best and most notable event because of its musical and cantaor quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions afición as numerous and as a possible measure of interest, but the visible passage does not clearly grant aficionados authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Cumbre Flamenca events and selected canonical performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible review window contains sufficient evaluative and canonizing discourse."
+  },
+  {
+    "article_id": "1987-05-9-left-carmen-amaya-reina-de-los-gitano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "fue en suma la figura indiscutible del baile flamenco",
+        "target": "Carmen Amaya",
+        "rationale": "The article canonizes Carmen Amaya by presenting her as the indisputable figure of flamenco dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fue una bailaora temperamental que lució un estilo nada academicista, siendo la que más fuerza y velocidad imprimió a los pies",
+        "target": "Carmen Amaya's dancing style",
+        "rationale": "The passage evaluates her artistic style through force, speed, temperament, and non-academic originality."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "tiene erigido en Barcelona un monumento para solaz de todos los buenos aficionados, donde podemos perpetuar su recuerdo y memoria",
+        "target": "public memory of Carmen Amaya",
+        "rationale": "The monument is framed as a site where aficionados can perpetuate memory, making remembrance a public/community cultural act."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'buenos aficionados' names a community audience, but the passage mainly concerns remembrance rather than granting aficionados authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Carmen Amaya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1987-05-9-right-algo-m-s-sobre-los-gitanos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "ni todo el cante flamenco es gitano, ni tampoco poder dejar de reconocer la enorme y positiva influencia del gitano en determinados cantes del mundo flamenco",
+        "target": "Gitano and non-Gitano identity in flamenco cante",
+        "rationale": "The passage uses ethnic/community identity to define influence, belonging, and representation within flamenco without reducing all cante to one group."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ese acento personalísimo, con su gran dosis de «duende», que todo buen aficionado sabe apreciar, por su indiscutible valor sentimental y emotivo",
+        "target": "Gitano-accented cante and its aesthetic value",
+        "rationale": "Duende, personal accent, and emotional value are named as aesthetic criteria by which good aficionados appreciate cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Grandes y prestigiosos tratadistas, los llamados flamencólogos, han reconocido, tras profundos estudios e investigaciones, como auténticas fuentes de conocimiento, la enorme influencia gitana y su aportación a nuestro cante",
+        "target": "flamencologists' recognition of Gitano influence in cante",
+        "rationale": "The passage invokes prestigious flamencologists and their research as expert authority validating a claim about Gitano contribution."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text calls Manuel Torre one of the best singers of all time, but this is a supporting reference rather than the main discourse function of the visible excerpt."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticas fuentes de conocimiento' describes sources of knowledge, not the authenticity or properness of flamenco itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Gitano influence and non-exclusive belonging in flamenco cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt explicitly negotiates Gitano/non-Gitano belonging while rejecting simple qualitative discrimination."
+  },
+  {
+    "article_id": "1987-05-11-right-otra-vez-televisi-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no cabe otra motivación que «el mal gusto y los escasos conocimientos de su equipo responsable»",
+        "target": "the television program 'De los flamencos' dedicated to Extremadura",
+        "rationale": "The writer explicitly criticizes the program and attributes its failures to bad taste and poor knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el gitanísimo cante por siguiriya que interpretó Carmen Linares... cante básico por excelencia, majestuoso y severo, en donde se concentran como ingredientes el dolor, la pena, la traición, el olvido, la angustia, el quejío",
+        "target": "cante por siguiriya",
+        "rationale": "The passage defines the siguiriya through aesthetic criteria of seriousness, majesty, severity, pain, and quejío."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "lo que no admite justificación alguna es que se simbolice el gitanísimo cante por siguiriya... con una parejita romántica amartelada confundiéndose en abrazos y besos amorosos. El cante por siguiriya es algo más serio.",
+        "target": "the television staging of Carmen Linares's siguiriya",
+        "rationale": "The critique polices an improper staged representation of siguiriya by contrasting it with the seriousness proper to that cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions originario and arraigo popular for Extremaduran cantes, but the main function is critical evaluation of a television program rather than authorizing present practice through tradition or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the television program's representation of Extremaduran flamenco and siguiriya",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

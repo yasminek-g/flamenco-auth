@@ -1,0 +1,272 @@
+[
+  {
+    "article_id": "1992-09-17-left-sobre-el-gratuito-invento-del-ca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El cante no pudo ser creación genuina de los gitanos",
+        "target": "la teoría del cante gitano como origen genuino del flamenco",
+        "rationale": "The passage explicitly denies a genuine Gitano origin for cante, drawing an exclusionary boundary around legitimate origin claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Por la propia limitación creadora del gitano... «El gitano no crea, por regla general. Se sirve de coplas hechas por otros»",
+        "target": "los gitanos as a flamenco identity group",
+        "rationale": "Identity is used to determine cultural authority and creative capacity within flamenco, making group identity central to belonging and authorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los argumentos en contra de mi teoría se documenten con textos que puedan contrastarse, único método que merece credibilidad y respeto",
+        "target": "valid argumentation about flamenco origins",
+        "rationale": "The author asserts documentary method as the credible basis for judging competing flamenco-origin theories."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Oral transmission is mentioned in relation to Mairena, but the visible passage mainly uses it as contested evidence of authenticity rather than clearly describing embodied/oral pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage concerns origins, but the strongest discourse function is exclusionary authenticity boundary-work rather than tradition/continuity authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "gitanista origin claims about cante flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible excerpt contains sufficient explicit boundary-work and methodological authority claims."
+  },
+  {
+    "article_id": "1992-09-18-right-cr-nica-del-xx-congreso-de-arte-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la hermosura de vuestra aportación al Nuevo Mundo, la desazón agridulce de vuestros fandangos marineros incomparables",
+        "target": "Huelva and its fandangos marineros",
+        "rationale": "The chronicle explicitly praises the cultural and aesthetic value of Huelva's flamenco contribution and fandangos."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "aunque carentes del dejillo que sólo vosotros sabéis imprimirles, nos apropiamos",
+        "target": "Huelva's local flamenco community",
+        "rationale": "The passage grants local participants special authority over the proper flavor or accent of their fandangos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article is a congress chronicle, but the visible excerpt does not clearly position a critic or expert voice as an authority policing flamenco boundaries."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The Columbus/New World framing suggests public culture, but the visible passage does not clearly frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Huelva's fandango tradition and congress-hosting role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is rhetorically ornate; only the clearest local-authority and evaluative claims are coded."
+  },
+  {
+    "article_id": "1992-09-23-left-el-arte-de-mario-maya-y-el-miste",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la pobreza de la coreografía y el visualizar siempre el mismo escenario y atalajes, otorgaba determinada monotonia a la representación",
+        "target": "the espectáculo «Y... después América»",
+        "rationale": "The passage explicitly criticizes the performance's choreography, staging, and monotony."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "con el compás necesario para ir desarrollando composición de figura, perspectiva del escenario, seguridad en los giros",
+        "target": "El Mistela's baile",
+        "rationale": "The evaluation applies aesthetic and technical criteria such as compás, stage perspective, figure composition, and secure turns."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "fueron muestra de la maestria actual del sevillano y que estuvieron en consonancia con su espléndido arte",
+        "target": "El Mistela",
+        "rationale": "The review elevates the dancer by presenting his current mastery and splendid art as exemplary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word representación appears, but the article is evaluating performances rather than framing public heritage, memory, or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "festival performances and especially El Mistela's baile",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Negative evaluation of one spectacle and positive elevation of El Mistela are both visible."
+  },
+  {
+    "article_id": "1992-09-24-left-presentado-el-libro-antonio-mair",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "dentro de los actos programados por la Junta de Andalucía... en homenaje a don Antonio Mairena como Andaluz Universal",
+        "target": "Antonio Mairena and the institutional honoring of his flamenco legacy",
+        "rationale": "Official cultural institutions frame Mairena through public recognition and authorized commemoration."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un instrumento de consulta imprescindible para todo buen aficionado, y que a buen seguro se convertirá en un clásico del flamenco",
+        "target": "the book «Antonio Mairena en el mundo de la Siguiriya y la Soléa»",
+        "rationale": "The passage canonizes the book by calling it indispensable and predicting its status as a flamenco classic."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "consiguiendo hacer de este libro —casi 600 páginas— un instrumento de consulta imprescindible para todo buen aficionado",
+        "target": "the book as a knowledge resource for aficionados",
+        "rationale": "The book is framed as a substantial access tool for flamenco knowledge and study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "trabajo de investigación rigurosa... los autores objetivan con honestidad sus criterios sin dejarse llevar por preferencias cantaoras personales",
+        "target": "the authors' research method and criteria",
+        "rationale": "The article authorizes the book through expert-like rigor, method, and objective criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses historical recordings and evolution, but the visible discourse primarily authorizes the book institutionally and critically rather than grounding present practice in tradition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Discography and publication preserve access to Mairena's work, but the passage lacks explicit safeguarding or living-heritage framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the Mairena book, its authors, and Mairena's legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines institutional recognition, research authority, and canonizing evaluation."
+  },
+  {
+    "article_id": "1992-09-24-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Cuando uno se enfrenta al debate científico, resulta fácil desmontar las opiniones del contrario... a base de una constatada y sería argumentación",
+        "target": "scientific or critical argument about flamenco interpretation",
+        "rationale": "The passage explicitly reflects on critical authority and the standards for dismantling rival interpretations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "si todo ello no es cierto, cosa que yo no sé, aunque mantengo mis dudas, está magistralmente contado",
+        "target": "Félix Grande's book on García Lorca and flamenco",
+        "rationale": "The author evaluates the book, acknowledging doubts about factual truth while praising its literary-critical execution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "El granadino hablaba, como en su preciosa definición de «El Duende», «desde la planta de los pies»",
+        "target": "Lorca's flamenco poetics and definition of duende",
+        "rationale": "Duende and embodied poetic knowledge are used as criteria for understanding Lorca's flamenco discourse beyond factual accuracy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The quoted claim that cante flamenco is a 'creación del pueblo español' is discussed, but the article's main function is critical evaluation of poetic truth rather than directly asserting authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The author disputes some of Lorca's claims about cantes gitanos, but the visible passage does not draw a sustained purity or exclusion boundary around proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Félix Grande's poetic-critical reading of García Lorca and flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly stages tension between documentary/scientific critique and poetic-critical authority."
+  }
+]

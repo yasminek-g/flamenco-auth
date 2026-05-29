@@ -1,0 +1,251 @@
+[
+  {
+    "article_id": "1982-05-4-right-las-malague-as-de-juan-breva",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "flamenco y flamencología no se entienden porque... ésta quiere ejercer su dictadura sobre aquel",
+        "target": "flamencología and self-authorizing theorists",
+        "rationale": "The passage explicitly contests the authority of flamencology when it imposes theory on flamenco rather than observing the phenomenon."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "no ya en las etiquetas, sino en el decir común de las gentes flamencas de su tiempo",
+        "target": "the common usage of flamenco people regarding Juan Breva's malagueñas",
+        "rationale": "Community usage by 'gentes flamencas' is invoked as evidence against abstract theorists' classifications."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "demasiado frecuentemente demuestre o explique sus conclusiones por el consabido método de «esto es así porque lo digo yo»",
+        "target": "flamencologists' method of explanation",
+        "rationale": "The text evaluates and criticizes a mode of flamencological argument as arbitrary and unsupported."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text discusses older meanings and common memory, but it does not clearly frame flamenco as public heritage or safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The older meaning of 'malagueñas' is defended, but the passage is primarily about classification and authority rather than tradition as legitimating continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "flamencological classification of Juan Breva's malagueñas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1982-05-5-right-el-flamenco-como-medio-de-promoc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ante la falta de auténticas autoridades en la materia, cualquier aficionado de anteayer, pontifica ante un grupo de amigos de su peña.",
+        "target": "self-styled flamencologists and weak expert authority",
+        "rationale": "The passage critiques the absence of real authority and the rise of unqualified speakers who claim interpretive authority over flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "una pretendida ciencia... nada menos que Flamencología, que por no tener, ni siquiera dispone de una taxonomía elementalmente sistemática",
+        "target": "flamencology as a field of knowledge",
+        "rationale": "The text explicitly evaluates flamencology as insufficiently serious and lacking basic systematic foundations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticas autoridades' concerns authority rather than authenticity of flamenco itself."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "A peña setting is mentioned, but the passage does not grant the peña community authority; it criticizes opportunistic pontification."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamencology and self-promoting flamencologists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains direct evaluative critique."
+  },
+  {
+    "article_id": "1982-05-6-right-el-popularisimo-gramofono-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el quejo que anuncia espantado la salida del cante, el derrame lacerado y trágico que se eleva dolorido",
+        "target": "flamenco cante heard through the gramophone",
+        "rationale": "The passage uses aesthetic criteria of quejo, tragedy, pain, and expressive intensity to characterize flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "¿Por qué aristas, por qué surcos, discurre desangrándose el auténtico compás de las penas?",
+        "target": "the compás and emotional substance of recorded flamenco",
+        "rationale": "The phrase attributes genuineness to the compás of flamenco suffering, presenting the recorded sound as retaining authentic value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The gramophone is a mediated form and is described as 'en lata', but the passage does not clearly frame mass mediation as corrupting authenticity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text evokes survival across time, but does not clearly frame the gramophone as safeguarding public heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "recorded flamenco cante through the gramophone",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-7-left-una-sensible-perdida-para-el-can",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "el gran aficionado y eminente investigador del flamenco don Augusto Butler y Genis",
+        "target": "Augusto Butler y Genis as aficionado-investigator",
+        "rationale": "The text grounds Butler's authority in recognized afición and investigative standing within flamenco culture."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "fue amigo de viejos profesionales de los que supo recoger datos, referencias y, en suma, vivencias",
+        "target": "Butler's knowledge of flamenco",
+        "rationale": "Knowledge is presented as gathered through direct relations with older professionals and lived transmission rather than only formal study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pocos flamencos van quedando —si es que queda alguno todavía— de la talla de don Augusto Butler y Genis",
+        "target": "Augusto Butler y Genis",
+        "rationale": "The obituary elevates Butler into a rare exemplary rank among flamenco figures."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Poseía un envidiable archivo... tuve la satisfacción de contribuir para que lo fundamental fuese a parar a las manos... de otro eminente investigador",
+        "target": "Butler's flamenco archive and its preservation",
+        "rationale": "The passage treats the archive as valuable flamenco memory that should pass into careful hands for preservation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'pura e incluso prístima entidad' suggests authenticity, but it is embedded in biographical praise and is less central than community, transmission, canon, and archive discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Augusto Butler y Genis / Máximo Andaluz",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-7-right-tambien-ellos-fueron-importantes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "merecen todo respeto y, desde luego, más alta consideración que la que se le viene dando en escritos, libros y conferencias",
+        "target": "early twentieth-century flamenco guitarists",
+        "rationale": "The passage explicitly evaluates the guitarists as undervalued and deserving greater critical consideration."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "rellenaron una página importante e insoslayable del arte flamenco",
+        "target": "guitarists preserved in the author's nómina",
+        "rationale": "The text constructs a corrective canon or hierarchy by naming overlooked guitarists as an indispensable part of flamenco history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The list is offered to younger aficionados, but the pedagogical access function is too slight to code confidently."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "early flamenco guitarists with old recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

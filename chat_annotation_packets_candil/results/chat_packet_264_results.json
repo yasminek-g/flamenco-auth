@@ -1,0 +1,275 @@
+[
+  {
+    "article_id": "1992-11-15-left-dos-soleares",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The introductory note calls the selected poems significant, but it does not clearly evaluate flamenco artistry or a flamenco-critical target."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The poems use soleá-like form and cante imagery, but there is no explicit tradition, continuity, or roots claim authorizing flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text with flamenco/cante imagery but no clear codeable discourse function under the conservative rules."
+  },
+  {
+    "article_id": "1992-11-16-left-derroteros-pedro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Estaba en peligro la pureza del cante gitano. El café cantante amenazaba aniquilarlo.",
+        "target": "cante gitano in relation to the café cantante",
+        "rationale": "The passage explicitly presents café cantante as a threat to the purity and survival of cante gitano, drawing a purity boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Su templo era el hogar gitano, la taberna, la fragua, la reunión de amigos",
+        "target": "private/social settings of cante gitano",
+        "rationale": "The passage frames intimate, social, non-stage settings as the authentic locus of cante gitano."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "hacerlo regresar del tablao y del disco a la fragua y al coloquio familiar",
+        "target": "proper social setting for cante gitano",
+        "rationale": "The text contrasts staged/mediated flamenco with familial and workshop-based co-presence as a meaningful participatory setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Es decir: hacer las paces con el gitanicida.",
+        "target": "purist hostility toward the café cantante",
+        "rationale": "The article critically challenges a boundary-policing narrative that treats the café cantante as destructive to Gitano cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central, but the strongest visible discourse concerns purity, setting, and the café cantante rather than identity representation alone."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses classic masters and historical continuity, but the visible discourse is primarily a contested purity and setting argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "purist accounts of cante gitano and the café cantante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt explicitly stages and critiques purity discourse around Gitano cante, café cantante, and intimate settings."
+  },
+  {
+    "article_id": "1992-11-17-left-la-intimidad-flamenca-de-ricardo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la sensatez del crítico avezado que aventura opiniones, afianza criterios o pone en solfa verdades admitidas rutinariamente pero nunca demostradas",
+        "target": "Ricardo Molina's flamenco correspondence",
+        "rationale": "The passage explicitly authorizes Molina as an experienced critic who tests accepted but unproven flamenco truths."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "yo recomiendo confrontar, con atención exhaustiva a las fechas... con los escritos de éste sobre flamenco",
+        "target": "the correspondence as material for studying flamenco judgments",
+        "rationale": "The article frames the letters as access material requiring comparative study to understand flamenco evaluations and historical circumstances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Benítez Carrasco, al que considera «un cero a la izquierda», o la que él considera insufrible pedantería de Victoria Ocampo",
+        "target": "literary figures discussed in Molina's correspondence",
+        "rationale": "The passage reports explicit evaluative judgments within the correspondence, showing its critical discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The trigger word «declarara» refers to an illness, not to an official declaration or institutional heritage authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage discusses accepted truths, but it concerns critical verification rather than authentic flamenco as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ricardo Molina's letters as flamenco-critical evidence",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible excerpt foregrounds correspondence as critical evidence and Molina as an authoritative evaluator."
+  },
+  {
+    "article_id": "1992-11-18-right-gonz-lez-climent-y-la-d-cada-pro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "una etapa de resurrección casi milagrosa... cuando los más pesimistas se disponían a entonar las definitivas exequias del cante",
+        "target": "mid-century revival of cante",
+        "rationale": "The passage frames cante as surviving and reviving from threatened decline, grounding value in continuity and resurrection."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "¿Dónde aquel cante bravo y terrible, nacido de las entrañas de la tierra?",
+        "target": "older cante",
+        "rationale": "The passage invokes bravery, terror, and earth-born depth as aesthetic criteria for valued cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "figuras míticas —desde Manuel Torre hasta don Antonio Chacón—",
+        "target": "Manuel Torre, Antonio Chacón, and older cante figures",
+        "rationale": "The text constructs a canon of mythic figures whose disappearance marks a historical crisis in flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "pocos libros ejercieron tan profundo influjo como éste, ni promovieron con tanta eficacia hechos de trascendentes consecuencias",
+        "target": "Anselmo González Climent's «Flamencología»",
+        "rationale": "The passage authorizes Climent's book as a decisive critical work with deep influence on flamenco history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase «bien dicho» and references to roots suggest valued cante, but the clearer function is tradition/continuity and aesthetic evaluation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions juergas and gatherings, but not enough to code a sustained public/private participatory contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the revival of cante and González Climent's role in it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines revival/continuity rhetoric, aesthetic criteria, canonization of figures, and authorization of Climent's work."
+  },
+  {
+    "article_id": "1992-11-20-left-discurso-de-ingreso-en-la-real-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Siempre existe una Andalucía negada o temida. Siempre hay una Andalucía opósita en candelero.",
+        "target": "Andalusian identity and representation",
+        "rationale": "The passage frames Andalusian identity through contested representation and denied or feared versions of the community."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "aun hoy no se quiere valorar del todo la fuerza original de esta corriente flamenca, ni menos que menos su central razón de ser",
+        "target": "lo flamenco as an original Andalusian current",
+        "rationale": "The passage asserts an original force and central reason of being for flamenco, authorizing it as more than superficial performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Suele dislocarse el concepto o la unidad fundamental del ser andaluz con amputaciones inspiradas en prejuicios políticos, estéticos, pedagógicos",
+        "target": "interpretations of Andalusian identity and flamenco",
+        "rationale": "The speaker critiques reductive interpretive frameworks and claims authority to correct how Andalusia and flamenco are understood."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Bueno es observar que lo flamenco ha sido usualmente limitado —y con mirada torcida— a las expresiones del baile, del cante y del toreo.",
+        "target": "restricted definitions of lo flamenco",
+        "rationale": "The passage contests a boundary that narrows flamenco to certain expressive forms and implies a broader belonging or scope."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The word «generación» appears, but the visible passage does not describe lineage or embodied/oral transmission of flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The discourse concerns Andalusian identity and transatlantic belonging, but it does not explicitly frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Andalusian identity and the broader meaning of lo flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the speech is broad, the visible excerpt clearly contests reductive definitions of Andalusia and lo flamenco."
+  }
+]

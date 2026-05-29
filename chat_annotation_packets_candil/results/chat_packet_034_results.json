@@ -1,0 +1,284 @@
+[
+  {
+    "article_id": "1981-09-20-left-el-misterioso-final-del-programa",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el vituperable trato dado al programa «Flamenco», de la Segunda Cadena, en esta su última etapa",
+        "target": "TVE's treatment of the program «Flamenco»",
+        "rationale": "The article explicitly condemns TVE's handling of the flamenco program as blameworthy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "un programa... que ganó en justicia el Premio Nacional de Musicales RTVE y que ha sabido mantenerse en la misma línea de calidad y de generalizada respetabilidad pública",
+        "target": "the television program «Flamenco»",
+        "rationale": "The passage evaluates the program positively through quality, public respectability, and deserved recognition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "«Flamenco» había conquistado y seguía conquistando público para el flamenco en todo el territorio español, o creando para este arte unánimes y merecidas difusión y respetabilidad",
+        "target": "the television program as mediator of flamenco",
+        "rationale": "The program is framed as a mass-media vehicle that broadened access, audience formation, diffusion, and respectability for flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The passage mentions aficionados and cabales as complainants, but their authority is not developed beyond audience reaction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article criticizes an institution, but the clearest discourse is general critical evaluation and media access rather than expert boundary-policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the program «Flamenco» and TVE's treatment of it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-20-right-el-centenario-de-george-borrow",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "«La Bíblia en España» y «Los Zincali», dos piezas singulares e imprescindibles en la cuantiosa bibliografía",
+        "target": "George Borrow's books in flamenco-related bibliography",
+        "rationale": "The passage canonizes Borrow's works as singular and indispensable within a relevant bibliographic field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "se impone la revisión de criterios y, sobre todo, de lecturas de temas flamencos",
+        "target": "flamenco scholarship using Borrow",
+        "rationale": "The author asserts critical authority by calling for revision of criteria and readings in flamenco studies."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "predominan quienes utilizan sus textos como dogma para luego hacer estudios a la brasa, es décir, arrimándole el ascua a su sardina",
+        "target": "flamencologists and writers who use Borrow dogmatically",
+        "rationale": "The passage polices scholarly method by criticizing dogmatic and self-serving uses of Borrow in flamenco writing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The author urges reading Borrow's books, but the dominant function is critical revision of scholarship rather than access to flamenco learning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Borrow is linked to historical data on cante and gitanos, but the passage does not clearly use tradition or roots to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Borrow's place in flamenco bibliography and scholarly use of his texts",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-21-left-las-letras-flamencas-de-pe-pe-cr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "la letra flamenca... nace fresca y jugosísima, repleta de vida, de la más cercana realidad por auténticos poetas populares",
+        "target": "Pepe Cruz's flamenco lyrics",
+        "rationale": "The passage explicitly attributes genuine popular poetic authenticity and lived reality to the flamenco lyrics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "letras aladas de las purísimas e irrenunciables vivencias jondas de Pepe Cruz",
+        "target": "Pepe Cruz's flamenco lyrics",
+        "rationale": "The article evaluates the lyrics through aesthetic criteria of jondo experience, purity, vitality, and expressive depth."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "tengo raíces de sangre, yo soy del pueblo andaluz",
+        "target": "Andalusian belonging expressed in the lyrics",
+        "rationale": "The lyric frames identity and belonging through roots, blood, and the Andalusian people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The introduction uses purity language, but it does not clearly exclude or devalue an impure target."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The lyric mentions roots, but the clearest function is identity belonging rather than tradition/continuity authorizing present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Pepe Cruz's letras as authentic jondo popular poetry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-21-right-algunas-rese-as-de-la-m-s-nueva-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "la amargura y la defraudación ante no pocas basuras retóricas y páginas de refrito",
+        "target": "recent flamenco and para-flamenco bibliography",
+        "rationale": "The author explicitly evaluates parts of the new bibliography as derivative and worthless."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "insista en la necesidad de un estudio serio, conjunto, desapasionado y sin prisas... por todo un ámplio equipo de especialistas: historiadores, sociólogos, músicos, etnólogos",
+        "target": "proper study of flamenco bibliography and flamenco culture",
+        "rationale": "The passage grants authority to rigorous specialist study and criticizes superficial flamenco writing."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "construir el edificio necesario, que contenga este bien inalienable del pueblo andaluz con profundidad y rigor",
+        "target": "flamenco as an inalienable good of the Andalusian people",
+        "rationale": "The article frames flamenco as a collective public cultural good requiring serious documentation and interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "las actuales sevillanas... son ya otra cosa... hoy ronda el desmadre por culpa de la moda, el popularismo regional mal entendido y, claro, los intereses económicos",
+        "target": "current sevillanas and their commercial/regionalist drift",
+        "rationale": "The author uses critical boundary-policing to distinguish current sevillanas as degraded by fashion, bad regionalism, and economic interests."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The critique of fashion and economic interests overlaps with anti-commercial authenticity, but the passage functions mainly as critical boundary-policing of bibliography and sevillanas."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes the Andalusian people, but the stronger function is heritage/public-culture framing rather than identity-based authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco bibliography, flamenco as Andalusian public culture, and current sevillanas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible excerpts contain clear critical and heritage-framing evidence."
+  },
+  {
+    "article_id": "1981-09-23-left-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nos encotramos a un José «El de la Tomasa» en una interesante joven-madurez que él entrega al oyente con muy buena voz",
+        "target": "José «El de la Tomasa» on the record «Vereas Negras»",
+        "rationale": "The review explicitly evaluates the singer's artistic maturity and vocal quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "muy buena voz, amplia en sonoridad, rica en tonos y dosificada para mandar en el cante",
+        "target": "José «El de la Tomasa»'s voice and cante",
+        "rationale": "The reviewer applies aesthetic criteria of sonority, tonal richness, control, musicality, rhythm, and interpretive beauty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la voz ir perdiendo musicalidad, ritmo y, en cosecuencia, belleza interpretativa",
+        "target": "specific moments in José «El de la Tomasa»'s recording",
+        "rationale": "The review offers a negative evaluative judgment about loss of musicality, rhythm, and interpretive beauty in some passages."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The record is addressed to aficionados, but the passage does not grant them authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review exercises judgment, but it does not explicitly invoke expert or boundary-policing authority beyond ordinary critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José «El de la Tomasa»'s recording «Vereas Negras»",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

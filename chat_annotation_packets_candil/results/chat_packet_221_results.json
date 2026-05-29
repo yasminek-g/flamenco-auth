@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "1990-09-25-right-que-nadie-se-fie-de-su-memoria",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "con la desafortunada edición del Lp de Benalmádena, donde los malagueños dicen haber grabado para la afición una malagueña de la Rubia de Málaga, cuando lo que en él figura es una malagueña de la señorita Encarnación Santisteban",
+        "target": "la edición del LP de Benalmádena y su atribución de una malagueña",
+        "rationale": "The passage explicitly criticizes a flamenco recording edition for a mistaken attribution, making a value-bearing judgment about the publication/recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "antes de lanzarme a escribir no me fiaré de mi memoria y consultaré mis ficheros que para eso los confeccioné",
+        "target": "archive-based correction of flamenco biographical and discographic facts",
+        "rationale": "The author positions documentary files and certifications as the proper authority for correcting flamenco historical claims and public errors."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article corrects factual errors about artists and recordings, but it does not clearly claim that one practice is genuinely or properly flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco historical and discographic attribution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is mainly factual correction; codes are limited to explicit critical and expert-authority functions."
+  },
+  {
+    "article_id": "1990-09-26-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se ha querido, y pienso que se ha conseguido, revitalizar la figura de este tocaor pacense",
+        "target": "the Manolo de Badajoz recording",
+        "rationale": "The reviewer evaluates the recording positively as successfully reviving the guitarist's figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "las necesarias e imprescindibles para desarrollar un acompañamiento como mandan los cánones... elaboradas falsetas plenas de matiz y conocimiento del compás",
+        "target": "Manolo de Badajoz's guitar accompaniment",
+        "rationale": "The passage defines quality through explicit aesthetic criteria: canonical accompaniment, falsetas, nuance, compás, and not disturbing the singer."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "se ha querido plasmar con este disco la vigencia y la renovación del cante extremeno... las nuevas voces del flamenco extremeno abonan aún más la gran afición que existe en estos lares",
+        "target": "cante extremeño",
+        "rationale": "The review values the regional cante through its continuing vitality and renewal, linking present performers to an ongoing regional flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The review praises Manolo de Badajoz and regional performers, but it does not clearly construct a broader canon or explicit ranking beyond aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Manolo de Badajoz and cante extremeño recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Discographic review with clear evaluative and aesthetic criteria; regional continuity is present but not framed as heritage policy."
+  },
+  {
+    "article_id": "1990-09-26-right-premium-iben-alcazar-premium-cri",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The advertisement mentions brewing tradition, but it is unrelated to flamenco and therefore fails the codebook's flamenco-discourse condition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Beer advertisement; no flamenco-related discourse is visible."
+  },
+  {
+    "article_id": "1990-09-27-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "El crítico musical Antonio Fernández Cid, dice de ella: «Lucero Tena mezcla el nervio y la precisión, la gracia y el desplante y el ordenado cálculo que surge del estudio",
+        "target": "Lucero Tena's artistry",
+        "rationale": "A named music critic is used as an authoritative voice to evaluate and legitimize Lucero Tena's artistic qualities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "mezcla el nervio y la precisión, la gracia y el desplante y el ordenado cálculo que surge del estudio, el análisis y la más severa de las autocríticas",
+        "target": "Lucero Tena's dance and castanet performance",
+        "rationale": "The passage applies explicit aesthetic criteria—nerve, precision, grace, desplante, study, analysis, and self-criticism—to define her quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Lucero Tena es una virtuosa, equiparable a las grandes figuras de cualquier campo",
+        "target": "Lucero Tena",
+        "rationale": "The text elevates Tena into a high-status hierarchy by presenting her as a virtuoso comparable to great figures in any field."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Carmen Amaya is called her teacher, but the passage gives only biographical information and does not foreground pedagogical authority or transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Lucero Tena's artistic status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article uses expert quotation and aesthetic vocabulary to canonize Tena's singularity."
+  },
+  {
+    "article_id": "1990-11-5-left-fernanda-y-bernarda-o-la-reclama",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Nadie que yo haya oído, formula, en cada cante, una reclamación más honda de los duendes... nadie con más exactitud me ha ilustrado sobre realidades elementales del hombre",
+        "target": "Fernanda de Utrera's cante",
+        "rationale": "The passage evaluates Fernanda through aesthetic criteria of duende, depth, expressive exactness, and human truth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "nadie mejor que ella ha hecho el cante por soleá, o lo que es lo mismo, nadie ha alcanzado cotas más altas de expresividad flamenca y de jondura",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage creates a clear hierarchy by ranking Fernanda as unsurpassed in soleá, expressivity, and jondura."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "excelente continuadora de una singular tradición cantaora... se dan la mano lo mejor de la tradición flamenca con unas voces y un compás",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The article legitimates the sisters by presenting them as continuators and embodiments of a valued flamenco tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Bernarda viene dado por su personalidad en la ejecución de los cantes festeros... Cantaora de enorme temperatura jonda",
+        "target": "Bernarda de Utrera's cante",
+        "rationale": "The passage explicitly evaluates Bernarda's artistry and counters her perceived undervaluation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text uses identity-inflected language such as 'gitanísimos pellizcos', but identity is not developed enough as the basis of belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Ricardo Molina is quoted as a poet and scholar, but the main discourse function is aesthetic evaluation and canonization rather than expert-authority framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Fernanda and Bernarda de Utrera",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article strongly legitimates both sisters through jondura, duende, hierarchy, and continuity with tradition."
+  }
+]

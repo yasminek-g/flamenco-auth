@@ -1,0 +1,210 @@
+[
+  {
+    "article_id": "1981-03-8-right-joselero-y-el-quino",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "aquella fue también, a mi entender, la edad de oro de ese cantaor, que se inició y quizá se consumó bajo su mecenazgo",
+        "target": "Joselero under Antonio Camacho's patronage",
+        "rationale": "The passage constructs a privileged 'golden age' for the singer, giving that period elevated canonical status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "tan difícilmente alcanza alturas auténticas de verdadera valía. Y ahí, en ese terreno, el Quino y Joselero le venían a la medida.",
+        "target": "El Quino and Joselero in cante de fiesta",
+        "rationale": "The author evaluates their fit and value in a difficult flamenco domain, making an explicit quality judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'alturas auténticas de verdadera valía' has authenticity language, but the visible use functions mainly as aesthetic praise rather than a clear authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Joselero and El Quino in Morón's remembered flamenco scene",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coding is limited to the visible head/tail evidence windows."
+  },
+  {
+    "article_id": "1981-03-10-right-algo-sobre-los-cantes-de-la-madr",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "se trataba de un cante que no me decía nada, de un cante muy frío, sin vida ni flamenquismo",
+        "target": "the first recorded cante de la madrugá attributed to Rafael Romero",
+        "rationale": "The author explicitly evaluates the cante negatively, judging its artistic and flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "lo que yo no puedo hacer es colaborar con nadie diciendo que los cantes que he escuchado son los auténticos de la «madrugá»",
+        "target": "the recorded cantes presented as authentic cantes de la madrugá",
+        "rationale": "The passage directly refuses to authorize the recordings as authentic examples of the named cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "tengo que oponerme a sus propósitos de dar vida a ese segundo cante utilizando para ello la conocida TARANTA MINERA DE CHACON",
+        "target": "Rafael Romero's proposed identification of the second cante de la madrugá",
+        "rationale": "The author uses expert critical judgment to police a classification boundary between the alleged cante de la madrugá and Chacón's taranta minera."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The closing call to find the root of the cantes invokes origins, but it mainly supports the authenticity dispute already coded rather than a separate continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "the claimed cantes de la madrugá recorded by Rafael Romero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a sustained evaluative dispute over authenticity and classification."
+  },
+  {
+    "article_id": "1981-03-11-left-checo-jean",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "«Charo» cantó en Jaén aquel sábado: una noche ensalzada",
+        "target": "Charo's singing in Jaén",
+        "rationale": "The short poetic notice positively evaluates the remembered performance as exalted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Images such as 'queja añejada' and 'repique de alma' are expressive, but they do not clearly define or apply stable aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Charo's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Very short article; only the explicit evaluative praise is coded."
+  },
+  {
+    "article_id": "1981-03-11-right-rafael-romero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Yo me limito a cantar lo que he escuchado y aprendío... Por otro lao, como tú sabes, yo he actuado mucho con el padre de Perico y de él he aprendió muchas cosas.",
+        "target": "Rafael Romero's knowledge of the cantes de la madrugá",
+        "rationale": "Romero legitimates his singing through oral and experiential transmission from listening, apprenticeship, and older performers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Yo no me invento ná porque er cante no se inventa... Vuelvo a repetir que yo no he inventao nada.",
+        "target": "Romero's cantes de la madrugá",
+        "rationale": "The speaker grounds the value of the cantes in continuity rather than invention, presenting them as inherited or remembered practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en Linares ha habió gente que ha hecho los cantes mineros maravillosamente, incluso mejor que en otros sitios",
+        "target": "Linares performers of mining cantes",
+        "rationale": "The passage constructs a value hierarchy by ranking Linares performance of mining cantes above other places."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Local aficionados and named elders appear as sources, but the stronger visible discourse function is oral transmission rather than community authority as such."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Romero defends genuineness indirectly by denying invention, but the clearer code is continuity/roots rather than an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy", "criticism"],
+      "target": "Rafael Romero's account of the cantes de la madrugá",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coding is limited to the visible dispute and transmission evidence."
+  },
+  {
+    "article_id": "1981-03-13-left-las-letras-flamencas-de-antonio-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Luis Baena ocupa el espacio literario de varios kilómetros",
+        "target": "Antonio Luis Baena as poet of flamenco lyrics",
+        "rationale": "The passage gives Baena strong literary praise, evaluating his importance beyond neutral description."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "muchas letras que nacieran de los hondos y serenos sentires flamencos de Antonio Luis Baena, corren ya por la superficie flamenca como anónimas y populares —¿hay algo mejor que se pueda decir en beneficio de una copla y su autor?—",
+        "target": "Antonio Luis Baena's flamenco lyrics",
+        "rationale": "The passage elevates Baena's lyrics by treating their popular anonymization as the highest status a copla and author can attain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The lyrics are described as becoming anonymous and popular, but the passage does not clearly use tradition or continuity to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Antonio Luis Baena's flamenco lyrics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The poem texts themselves are not treated as separate evidence unless the framing prose assigns discourse value."
+  }
+]

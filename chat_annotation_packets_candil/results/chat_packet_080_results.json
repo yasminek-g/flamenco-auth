@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "1983-09-14-right-algo-sobre-las-tarantillas-de-es",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "esta «crítica constructiva» que se hace a nuestras ideas, investigaciones y conclusiones sobre la «categoría musical» de nuestros estilos mineros de Cartagena y La Unión",
+        "target": "classification of Cartagena and La Unión mining styles",
+        "rationale": "The article explicitly enters a critical dispute over the authors' research, conclusions, and musical classification of mining styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "nace una «CLASIFICACION» de estos cantes —clasificación que nadie, que nosotros sepamos, hasta hoy se ha atrevido a hacer—",
+        "target": "classification of tarantillas and mining cantes",
+        "rationale": "The authors present their classification as a new authoritative ordering of styles, creating a hierarchy/taxonomy for the repertoire."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "cante matriz propia del Campo de Cartagena y su sierra minera",
+        "target": "Taranta and derived tarantilla styles",
+        "rationale": "The passage grounds the taranta and its derivatives in local origin, roots, and stylistic continuity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "seudocantes mineros por constituir, diversas interpretaciones de esta modalidad, una versión «mal copiada» de un original existente y grabado",
+        "target": "festival-prized Minera interpretations",
+        "rationale": "The authors draw a boundary between legitimate originals and pseudo-mining cantes that are framed as badly copied versions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "diversas interpretaciones de esta modalidad, una versión «mal copiada» de un original existente y grabado",
+        "target": "interpretations of the Minera",
+        "rationale": "The passage uses fidelity to an original recording as an aesthetic criterion for judging interpretations as deficient."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage discusses copying and interpretation, but the function is classificatory and critical rather than about learning access or pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'De verdad' appears, but it functions as sincerity/intensification rather than a distinct authenticity claim about flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "the classification and legitimacy of tarantillas/mining cantes",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The poem in the ending context was not coded because it does not clearly perform codebook discourse functions beyond imagery."
+  },
+  {
+    "article_id": "1983-09-19-left-victoria-de-miguel-chequeo-grafo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Damos fe de que la persona que ha dictaminado desconocía, hasta el momento de consumar este trabajo, la significación artística de los representados",
+        "target": "graphological assessment of flamenco artists",
+        "rationale": "The editorial note authorizes the graphological judgment by stressing the evaluator's supposed independence from prior artistic knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Seguro de sus méritos y personalidad. Hombre que se siente triunfador... Originalidad y fuerza creadora",
+        "target": "Antonio Mairena's character/artistic personality",
+        "rationale": "The graphological profile evaluates Mairena's merits, originality, creative force, and personality traits."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Some profiles mention family, community, and patria, but these are character traits rather than identity framing that organizes flamenco authority or belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Terms such as 'sentido del pasado' and 'amor a la Historia' appear, but they describe personality traits rather than grounding flamenco value in roots or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "graphological interpretations of major flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The text is unusual for the codebook; only the explicit authorizing frame and evaluative profile language were coded."
+  },
+  {
+    "article_id": "1983-09-19-right-las-letras-flamencas-de-jos-s-nc",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "La taranta de Linares es un cante por derecho que ha nació de pesares",
+        "target": "taranta de Linares",
+        "rationale": "The lyric frames the taranta de Linares as a proper cante rooted in suffering, giving it an origin-based claim to value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'cante por derecho' has evaluative force, but within a lyric it is less clearly a critical review or assessment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition"
+      ],
+      "target": "taranta de Linares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the visible text consists of lyric fragments; only the opening lyric clearly makes a flamenco-related properness/origin claim."
+  },
+  {
+    "article_id": "1983-09-20-left-de-qu-enfermedad-mueren-nuestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la causa del óbito la transcribo literalmente de las actas de defunción que obran en mi archivo",
+        "target": "archival record of deceased flamenco artists",
+        "rationale": "The author frames archival transcription of death records as a form of documentation and memory work around flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author invokes an archive, but the visible text does not use expert criticism to evaluate or classify flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Civil death records are institutional documents, but the passage does not frame them as official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "heritage"
+      ],
+      "target": "documented memory of flamenco artists' deaths",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is short, but the archival-documentation function is explicit enough for a conservative HERIT_03 code."
+  },
+  {
+    "article_id": "1983-09-21-left-cayetano-muriel-ni-o-de-cabra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Está considerado como el mejor intérprete de los fandangos de Lucena",
+        "target": "Cayetano Muriel as interpreter of fandangos de Lucena",
+        "rationale": "The passage explicitly ranks Muriel as the best interpreter of a specific repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "dominador de los estilos sobrios y profundos como la caña, soleá, siguiriya, tientos",
+        "target": "Cayetano Muriel's command of sober and deep styles",
+        "rationale": "Sobriety, depth, and mastery of specific styles are used as aesthetic criteria for evaluating Muriel."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "aprendidos, según propia declaración del maestro a Aurelio Sellé, del viejo Rivas",
+        "target": "Muriel's learning of fandangos de Lucena",
+        "rationale": "The passage presents Muriel's repertoire as learned from an older source, invoking lineage-based transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Según Ricardo Molina, en su libro «Cante y cantaores cordobeses», dice",
+        "target": "Ricardo Molina's account of Cayetano Muriel",
+        "rationale": "The article invokes Ricardo Molina's published expert account as authority for interpreting Muriel's artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions influences from local and regional traditions, but the visible evidence mainly supports critical ranking and lineage transmission."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The closing memorial language says Mairena will not be forgotten, but it appears in a separate memorial tail fragment and is not clearly tied to the Muriel article's main discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Cayetano Muriel's cante and historical standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The ending context appears to shift into memorial material about Antonio Mairena; it was not used except as a rejected possibility."
+  }
+]

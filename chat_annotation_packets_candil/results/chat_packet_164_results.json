@@ -1,0 +1,171 @@
+[
+  {
+    "article_id": "1987-11-23-right-ablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "hace figurar la constitución de un centro de investigación, reflexión y documentación del flamenco",
+        "target": "Presence du Flamenco / French flamenco association",
+        "rationale": "The passage frames a flamenco association in France as creating institutional access to flamenco knowledge through research, reflection, and documentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text lists peñas and juntas directivas, but mostly as administrative notices without clear community authority or recognition work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Research and documentation may support safeguarding, but the visible text does not explicitly frame flamenco as heritage to be protected or transmitted."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "institutional flamenco research and documentation outside Spain",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the piece is administrative reporting; only the French association's stated research/documentation purpose supports an emitted code."
+  },
+  {
+    "article_id": "1987-11-24-left-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a title/byline and is too short for reliable discourse coding."
+  },
+  {
+    "article_id": "1988-01-4-right-editorial",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The passage is commercial order information, but it does not criticize commerce or link sales to authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Catalogue/order-form text only; no relevant evaluative, authorizing, pedagogical, communal, heritage, or critical discourse."
+  },
+  {
+    "article_id": "1988-01-4-right-cumplimos-diez-a-os",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "este arte es el más puro y hermoso del mundo",
+        "target": "flamenco",
+        "rationale": "The passage explicitly attributes purity and exceptional value to flamenco as an art, presenting it as genuinely and supremely valuable."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "esos viejos artistas que con su vida aborrascada, con su arte irregular, pero siempre pletórico de genio y entrega, hicieron posible el nacimiento de este río inacabable del flamenco",
+        "target": "old flamenco artists and the continuity of flamenco",
+        "rationale": "The text grounds present flamenco in predecessors whose lives and art made possible an ongoing historical current."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "construyendo una pequeña historia que algún día lejano alguien leerá para alabarnos o criticarnos",
+        "target": "CANDIL's flamenco work and future memory",
+        "rationale": "The magazine frames its accumulated work as historical memory for future readers, turning flamenco writing into a form of preservation and memory-work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of flamenco as beautiful overlaps with the emitted authenticity claim and does not add a distinct critical judgment target."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The mention of Demófilo, Don Preciso, and Núñez de Castro suggests a genealogy of researchers, but the excerpt does not clearly rank or canonize them beyond acknowledgement."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The passage thanks readers and collaborators as a collective, but it does not grant them authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "heritage"
+      ],
+      "target": "flamenco and CANDIL's role in documenting it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The anniversary text uses memory, predecessors, and purity language to legitimize flamenco and the magazine's documentary role."
+  },
+  {
+    "article_id": "1988-01-5-left-poema-en-puente-genil",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The poem mentions cabales and shared social presence, but it does not clearly present them as authorities who recognize, sustain, or judge flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The line about a child learning is poetic and ambiguous, without a clear claim about embodied or oral flamenco transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named artists appear in a commemorative poetic scene, but the visible text does not construct a clear canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic evocation of a flamenco gathering, but no clear codeable discourse function under the conservative rules."
+  }
+]

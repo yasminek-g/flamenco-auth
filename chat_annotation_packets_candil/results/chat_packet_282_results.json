@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "1993-11-21-right-cartas-al-director",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Se necesita valentía para decirlo, lo sé; pero el crítico tiene que ser valiente",
+        "target": "la función del crítico flamenco en la polémica sobre Mairena y la soleá de Charamusco",
+        "rationale": "El texto explicita una ética y autoridad crítica, vinculando la crítica flamenca con valentía, demostración y obligación deontológica."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mairena no ha puesto absolutamente nada de su parte, salvo la voz, en tal soleá",
+        "target": "la aportación de Antonio Mairena a la soleá etiquetada de Charamusco",
+        "rationale": "El pasaje formula una evaluación explícita y negativa de la originalidad/aportación artística de Mairena en esa soleá."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Mairena había hecho a sus maestros para proclamarse heredero de ellos, esto es, había confeccionado la tradición que a él le interesaba",
+        "target": "la tradición construida alrededor de Antonio Mairena",
+        "rationale": "La tradición aparece como mecanismo de legitimación y continuidad, pero el texto la presenta de forma crítica como una construcción interesada para autorizar a Mairena como heredero."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Aunque se habla de copiar, reproducir y comparar modelos melódicos, el foco no es el aprendizaje o acceso pedagógico sino la polémica crítica sobre autoría y originalidad."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "tradition"],
+      "target": "Antonio Mairena, su autoridad tradicional y su aportación a la soleá de Charamusco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "La carta usa la crítica musical y documental para impugnar una atribución de autoridad tradicional."
+  },
+  {
+    "article_id": "1993-11-22-right-opini-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "leemos artículos destructivos y con una innegable maldad",
+        "target": "el artículo de Paco V. Vargas y su crítica de Diego Clavel",
+        "rationale": "El texto juzga explícitamente la calidad y la intención de una intervención crítica flamenca como destructiva y maliciosa."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "todos podemos participar en él, aunque no se tenga ni la más remota idea de lo que nos traemos entre manos",
+        "target": "quienes intervienen públicamente en el flamenco sin conocimiento suficiente",
+        "rationale": "El pasaje contrapone participación pública e ignorancia, trazando una frontera entre quienes saben y quienes no están autorizados por conocimiento interno."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "recibiendo tanto del Sr. Luque Navajas como de muchos de los componentes de la Peña «Juan Breva», el apoyo y consentimiento del trabajo",
+        "target": "el trabajo de Diego Clavel sobre malagueñas",
+        "rationale": "La aprobación de una peña y de aficionados reconocidos funciona como respaldo comunitario para legitimar el trabajo flamenco estudiado por Diego Clavel."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "La frase sobre el flamenco como manifestación cultural nacida del pueblo andaluz apunta a identidad colectiva, pero la función principal del pasaje es distinguir conocimiento legítimo de participación ignorante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Hay comparaciones y elogios del trabajo de Diego Clavel, pero no se construye una jerarquía canónica sostenida más allá de la defensa polémica."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["community", "criticism"],
+      "target": "la autoridad de Paco V. Vargas para criticar y la legitimidad del trabajo de Diego Clavel",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "El texto combina defensa comunitaria de Diego Clavel con desautorización del crítico adversario."
+  },
+  {
+    "article_id": "1993-11-24-right-que-pena-de-jerez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Jerez como centro gestor del flamenco más profundamente auténtico y trascendental en sus tres manifestaciones",
+        "target": "Jerez de la Frontera como lugar flamenco",
+        "rationale": "El pasaje atribuye a Jerez una autenticidad flamenca profunda y trascendental, legitimando su valor dentro del arte."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "nos miran a los demás como a balbucientes aprendices de lo que ellos, además de ser los «amos», son «catedráticos»",
+        "target": "la afición jerezana frente a los demás aficionados andaluces/españoles",
+        "rationale": "El texto describe una frontera insider/outsider en la que los jerezanos se situarían como expertos y los demás como aprendices."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "lo que aquí lamentamos no es un motivo individual, sino una conducta global",
+        "target": "la actitud de la afición flamenca jerezana",
+        "rationale": "El artículo formula una crítica explícita de una conducta colectiva dentro de la afición flamenca de Jerez."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "La identidad local jerezana estructura el texto, pero la codificación más precisa es la frontera insider/outsider creada por esa identidad."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Jerez es elevado como centro flamenco, pero el pasaje no desarrolla una jerarquía artística comparativa suficiente más allá de la autenticidad y la crítica comunitaria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "Jerez y la afición flamenca jerezana",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "El texto legitima a Jerez como foco auténtico, pero critica el localismo excluyente de su afición."
+  },
+  {
+    "article_id": "1993-11-25-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "hermosos proyectos que sirvieron para reivindicar nombres y modos expresivos y que devolvieron a muchos artistas —que estaban orillados por la afición y los propios circuitos comerciales— la ilusión del reencuentro con su mundo",
+        "target": "artistas flamencos mayores y modos expresivos marginados",
+        "rationale": "El pasaje presenta una labor de recuperación y reivindicación de artistas y formas expresivas, cercana a salvaguardia/memoria viva dentro de la historia flamenca."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "el aspecto asistencial lo cubríamos, pues, con nuestras propias producciones y con la generosidad y solidaridad de muchísimos artistas",
+        "target": "la comunidad artística flamenca y sus viejos artistas",
+        "rationale": "La autoridad y sostenimiento del mundo flamenco aparecen vinculados a la solidaridad comunitaria de artistas, peñas y redes de apoyo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Está considerado uno de los más sobresalientes guitarristas de su generación",
+        "target": "Quique Paredes",
+        "rationale": "El texto sitúa al guitarrista en una jerarquía generacional, elevándolo como figura destacada."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "El elogio de Quique Paredes está subsumido por la formulación jerárquica generacional más específica de CRIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "community", "criticism"],
+      "target": "artistas flamencos mayores recuperados por ITEAF y Quique Paredes como guitarrista destacado",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "El fragmento combina noticia asistencial/patrimonial con una breve canonización generacional de un guitarrista."
+  },
+  {
+    "article_id": "1994-01-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "esa sólida cadena de premios que ha avalado su trayectoria artística",
+        "target": "Mario Maya",
+        "rationale": "El editorial legitima la trayectoria de Mario Maya mediante premios y reconocimientos acumulados, construyendo una posición jerárquica destacada."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "su arte se esculpe y define en el marco más genuinamente flamenco",
+        "target": "el arte de Mario Maya",
+        "rationale": "El pasaje atribuye al baile de Mario Maya una formación en un marco genuinamente flamenco, autorizando su autenticidad artística."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "ha sabido conjugar el rigor de la técnica con una sentida interpretación de lo jondo",
+        "target": "el estilo de baile de Mario Maya",
+        "rationale": "El texto define la calidad del baile mediante criterios estéticos concretos: técnica rigurosa, interpretación sentida, sobriedad, gesto y jondura."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "La revista declara una línea editorial hacia baile y guitarra, pero no desarrolla una autoridad crítica experta o una frontera crítica suficiente para emitir este código."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Sacromonte y los tablaos históricos sugieren trayectoria y raíz, pero el argumento principal es autenticidad y evaluación estética, no continuidad tradicional como tal."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Mario Maya y su baile jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "El editorial canoniza y autentica a Mario Maya mediante premios, genealogía escénica y criterios estéticos de jondura."
+  }
+]

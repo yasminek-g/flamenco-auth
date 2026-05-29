@@ -1,0 +1,256 @@
+[
+    {
+        "article_id": "1996-11-23-right-ix-semana-cultural-la-gaviota",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Era como una acumulaci\u00f3n de arte en una composici\u00f3n sin nombre. De pronto, un fuerte rasgueado y el punto final. Aplauso espont\u00e1neo de todos los asistentes puestos en pie.",
+                "target": "Paco Cepero's guitar performance at Pe\u00f1a La Gaviota",
+                "rationale": "The passage explicitly evaluates the performance as artful and successful, confirmed by the standing ovation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "\u00a1Qu\u00e9 bien sonaron esos tangos! Era una m\u00fasica descriptiva a la que no hac\u00eda falta im\u00e1genes. Llena de comp\u00e1s, de arte.",
+                "target": "Paco Cepero's tangos",
+                "rationale": "The review applies aesthetic criteria such as comp\u00e1s, art, descriptive musicality, and expressive force to define the performance's value."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "Los espectadores, en su mayor\u00eda buenos aficionados \u2014algunos de Jerez\u2014 no cre\u00edan lo que escuchaban. Luis Guerrero... no paraba de decir \u00ab\u00a1No se puede cantar mejor!\u00bb.",
+                "target": "Juan Villar's cante and the evening's performance",
+                "rationale": "The judgment of knowledgeable aficionados is used as socially grounded recognition of flamenco quality."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The opening quotation mentions guitar inheritance and popular origin, but it mainly praises the guitar generally rather than grounding a flamenco practice in tradition with clear authority stakes."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "Paco Cepero, Juan Villar, and the Pe\u00f1a La Gaviota performance",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Full review text is available; codes focus on explicit evaluative review discourse and community recognition."
+    },
+    {
+        "article_id": "1996-11-24-right-escuela-de-arte-flamenco-de-este",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "el proyecto que hoy traemos ante vosotros, ilustres congresistas: la Escuela de Arte Flamenco de Estepona",
+                "target": "Escuela de Arte Flamenco de Estepona",
+                "rationale": "The article presents an institutional school project as a formal mechanism for flamenco learning and cultural access."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "la Escuela de Arte Flamenco de Estepona, que nace como puente hacia el progreso, pero tambi\u00e9n como mirada retrospectiva y mano tendida hacia nuestros m\u00e1s remotos or\u00edgenes",
+                "target": "the proposed flamenco school and Estepona's cultural development",
+                "rationale": "The school is legitimated by balancing future progress with retrospective continuity and deep origins."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "reason": "The speaker seeks administrative support, but the visible excerpt does not clearly frame the school through official heritage recognition or patrimonial authorization."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The project is tied to Andaluc\u00eda and Estepona, but identity language is too general in the visible excerpt to show identity-based authority or belonging."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "tradition"
+            ],
+            "target": "Escuela de Arte Flamenco de Estepona",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article is truncated; the visible text still clearly supports institutional pedagogy and roots-based legitimation."
+    },
+    {
+        "article_id": "1996-11-26-left-noticiario-flamenco",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "servir de puente entre los artistas y el p\u00fablico, difundiendo una m\u00fasica y explic\u00e1ndola, a trav\u00e9s de los comentarios efectuados por sus autores",
+                "target": "RNE program Nuestro Flamenco",
+                "rationale": "The radio program is explicitly framed as a mediating institution that gives public access to flamenco knowledge by disseminating and explaining the music."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "ha contado desde el primer momento con el respaldo de los oyentes y los profesionales: cantaores, guitarristas, bailaores, escritores y personas especializadas",
+                "target": "Nuestro Flamenco's authority and standing",
+                "rationale": "The program's legitimacy is grounded in recognition from listeners and recognized flamenco participants and specialists."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "reason": "Critics, investigators, and journalists are mentioned as participants, but the excerpt does not show them exercising evaluative or boundary-setting authority."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "Sections such as historical recordings suggest preservation activity, but the text does not clearly frame this as safeguarding or public heritage work."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "community"
+            ],
+            "target": "Nuestro Flamenco radio program",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The news item is descriptive, but it contains clear mediation and community-recognition discourse."
+    },
+    {
+        "article_id": "1997-01-3-left-pepe-marchena",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Desaparec\u00eda uno de los artistas m\u00e1s famosos y pol\u00e9micos de la historia del arte flamenco",
+                "target": "Pepe Marchena",
+                "rationale": "The article places Marchena within flamenco history as a major and controversial canonical figure."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "sus detractores son tambi\u00e9n bastante numerosos y que siguen reiterando los r\u00edgidos criterios sobre su arte",
+                "target": "critical reception of Pepe Marchena's art",
+                "rationale": "The passage foregrounds expert or critical boundary dispute through detractors' rigid criteria and changing respect for his work."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "Su escuela ha servido para incorporar a numerosos aficionados a este arte, los cuales han ido posteriormente descubriendo otras formas o maneras de cantar.",
+                "target": "Pepe Marchena's school/style",
+                "rationale": "Marchena's school is described as a pathway that gives aficionados access to flamenco and leads them toward further learning and stylistic discovery."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The article contains broad praise of Marchena's knowledge and creativity, but that evaluative function is already captured through the more specific canon and critical-boundary codes."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "reason": "Terms such as orthodoxy and rajos gitanos suggest purity debates, but the visible passage does not itself draw a clear genuine/impure flamenco boundary."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "criticism",
+                "pedagogy"
+            ],
+            "target": "Pepe Marchena and his artistic school",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article explicitly presents Marchena as both canonically important and critically disputed."
+    },
+    {
+        "article_id": "1997-01-3-right-el-cante-ante-la-melancol-a-y-el",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "una minor\u00eda de aquellos que... han reconstru\u00eddo poco a poco el origen y car\u00e1cter del flamenco... apoy\u00e1ndose en los conocimientos y m\u00e9todos cient\u00edficos adecuados... frente... a una mayor\u00eda... que siguen creyendo y propagando el mito o la leyenda flamenca",
+                "target": "scientific flamenco research versus general aficionado myth-making",
+                "rationale": "The passage grants authority to scientific research and uses that authority to criticize mythic or uncritical aficionado discourse."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "high",
+                "evidence_quote": "En el cante se busca y en el cante se encuentra, pues, una identidad \u00e9tnicocultural de toda una regi\u00f3n",
+                "target": "cante flamenco as Andalusian ethno-cultural identity",
+                "rationale": "The passage frames flamenco through regional identity and argues that cante becomes a vehicle for defining collective ethno-cultural belonging."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "la ideolog\u00eda de \u00abpureza\u00bb, que confunde el criterio art\u00edstico con la nostalgia o una visi\u00f3n de est\u00e9tica completamente aislada del desarrollo del proceso creativo",
+                "target": "purity ideology in flamenco interpretation",
+                "rationale": "The author explicitly discusses aesthetic criteria and criticizes purity-based judgment as confusing artistic criteria with nostalgia."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "reason": "The excerpt discusses an ideology of purity, but the author's own discourse contests that ideology rather than drawing a purity boundary around legitimate flamenco."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Scientific knowledge and research are invoked, but the excerpt does not clearly discuss institutional or transnational learning access."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "mythic/purist interpretations of cante and Andalusian identity claims",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for expert-authority critique and identity framing."
+    }
+]

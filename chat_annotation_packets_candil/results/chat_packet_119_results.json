@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "1985-09-21-right-buzon-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Rojo el Alpargatero, La Trini, Chacón y el Torre, a los que describe como cuatro puntales del flamenco",
+        "target": "Rojo el Alpargatero, La Trini, Chacón y El Torre",
+        "rationale": "The passage invokes these figures as foundational 'puntales' of flamenco, constructing canonical status and hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "su hijo Antonio, que aprovechó el nombre artístico de su progenitor para poder vender unos discos cuyos cantes dejan bastante que desear",
+        "target": "Antonio, son of Rojo el Alpargatero, and his recordings",
+        "rationale": "The note explicitly evaluates the son's recorded cantes negatively, judging their artistic quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage discusses origins and naming of cantes de Levante, but the visible text does not clearly use tradition or roots to authorize present flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The writer invokes an aficionado viewpoint, but the visible passage does not clearly grant aficionados collective authority beyond ordinary opinion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "cantes de Levante, canonical flamenco figures, and related recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotated only visible beginning, evidence window, and ending."
+  },
+  {
+    "article_id": "1985-09-22-right-hablan-las-penas-ii-concurso-de-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas are named as organizers and associations, but the text is a routine contest/directive notice without community authority or evaluative discourse."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public institutions sponsor the contests, but the passage does not frame this as official heritage authorization or cultural patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative contest and peña notice; no clear discourse function beyond announcement."
+  },
+  {
+    "article_id": "1985-09-23-left-discograf-a-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Este flamenco orquestado o con sus variantes, al que algunos llaman melódico no tiene cabida en lo que yo al menos entiendo por flamenco",
+        "target": "orchestrated or melodic flamenco on Ricardo Losada Maya's LP",
+        "rationale": "The reviewer explicitly excludes this style from what counts as flamenco, drawing a legitimate/improper boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "una primera grabación tiene muchos inconvenientes y que a veces hay que buscar lo comercial, en detrimento del buen cante",
+        "target": "commercial choices in flamenco recording",
+        "rationale": "Commercial imperatives are framed as damaging 'buen cante,' linking market logic to loss of flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "en éste no existe nada que se parezca a lo que el aficionado entiende por flamenco",
+        "target": "the LP El Yunque by Ricardo Losada Maya",
+        "rationale": "The review offers explicit negative judgment of the recording's flamenco value and quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The second review says the tonás/deblas/martinetes disc is useful 'para aprender, estudiar y asimilar,' but this is a brief recommendation rather than a developed access/transmission discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The second review values listening 'en reunión cabal' and says there is no stage or public, but the passage does not strongly contrast participatory setting against public spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aesthetic terms such as grito, voz, and esquema melódico appear, but CRIT_01 and AUTH_02 capture the main evaluative force without overcoding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "commercial/orchestrated recordings versus valued traditional cante recordings",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1985-09-24-left-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Text is too short to support a reliable annotation."
+  },
+  {
+    "article_id": "1985-11-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "No es andaluz, en la magia del flamenco, quien nace en Andalucía sino quién, por su natural sensibilidad, conecta con los hondones de la cultura jonda",
+        "target": "territorial definitions of Andalusian/flamenco belonging",
+        "rationale": "The editorial explicitly reframes local identity and belonging as a matter of cultural sensitivity and jondo connection rather than birthplace."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "es capaz de testimoniarlo, y aún más, de transmitirlo y ofrecer del cante cumplida fehaciencia",
+        "target": "Juan Varea's flamenco legitimacy",
+        "rationale": "The passage presents Varea as genuinely able to transmit and bear witness to cante despite territorial doubts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Juan Varea era un maestro; una voz de estremecedora jondura, un hermoso renglón de la más reciente historia del flamenco",
+        "target": "Juan Varea",
+        "rationale": "The editorial canonizes Varea as a maestro and places him within recent flamenco history, elevating his status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text contests insider/outsider territorial boundaries, but COMM_04 more precisely captures the identity/geographic framing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'venerable tradición flamenca' appears, but the main discourse function is Varea's legitimacy and identity framing rather than tradition as a separate continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Varea's artistry, but CRIT_03 better captures its canonizing function and avoids redundant evaluation coding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Juan Varea and non-territorial flamenco belonging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

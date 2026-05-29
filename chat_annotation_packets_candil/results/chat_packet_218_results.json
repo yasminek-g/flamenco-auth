@@ -1,0 +1,214 @@
+[
+  {
+    "article_id": "1990-07-26-right-iben-alcazar-premium-cenveza-eut",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'siguiendo la tradición de nuestros maestros cerveceros' is beer advertising and does not authorize flamenco tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement text; tradition language is unrelated to flamenco."
+  },
+  {
+    "article_id": "1990-07-27-left-discografia-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Blanca del Rey es una excepción, porque sobresale sobre todas las demás bailaoras gracias a su personal entendimiento de su arte",
+        "target": "Blanca del Rey's baile flamenco",
+        "rationale": "The passage explicitly evaluates Blanca del Rey as exceptional and superior in her artistic understanding."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "el baile flamenco es donaire, apostura, gracia y compás",
+        "target": "criteria for flamenco dance quality",
+        "rationale": "The passage defines flamenco dance value through aesthetic criteria such as grace, bearing, and compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "sobresale sobre todas las demás bailaoras",
+        "target": "Blanca del Rey among contemporary bailaoras",
+        "rationale": "The passage constructs a hierarchy by placing Blanca del Rey above other bailaoras."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Su personalidad artística ha sido glosada por críticos, flamencólogos, poetas y escritores, como José Blas Vega",
+        "target": "critical authorization of Blanca del Rey",
+        "rationale": "The article frames named critics and flamencologists as authoritative voices legitimating her artistic profile."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Blanca del Rey's flamenco dance artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-09-3-right-editorial",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The phrase 'Hondura, duende y gusto' appears only as a listed section title, not as an applied aesthetic criterion in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text summarizes issue contents and congress coverage without clear evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "1990-09-4-left-viejo-carn-flamenco-anselmo-gonz",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "naturalmente fiel a los usos y maneras de una Andalucía que yo llamaría clásica. Fue mi mejor herencia y mi mejor ejemplo",
+        "target": "Andalusian tradition as grounding for the speaker's flamenco perspective",
+        "rationale": "The speaker grounds his authority and values in inherited Andalusian usages, classical continuity, and tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "No soy un improvisado... me doy cuenta del que habla sin saber un adarme de él",
+        "target": "speaker's authority to judge flamenco knowledge",
+        "rationale": "The speaker asserts critical authority by distinguishing himself from uninformed commentators."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Macaca fue el mejor cantar por mirabrá. Esto está perfectamente documentado. El mirabrá es más macho y poderoso que las frágiles alegrías.",
+        "target": "El Macaca and mirabrá within flamenco hierarchy",
+        "rationale": "The passage ranks a performer and compares flamenco forms through value-laden hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Para mí esta referencia es un símbolo del despiste de tantas folkloristas que se dejan llevar por un dato circunstancial, mezclando investigación con casualidad.",
+        "target": "folklorists' claims about playeras",
+        "rationale": "The passage criticizes a scholarly interpretive practice as confused and methodologically weak."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text contrasts people who know flamenco with those who speak without knowing, but this is covered more directly by CRIT_04 expert-authority discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco interpretive authority and cante hierarchy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but the visible evidence is sufficient for these codes."
+  },
+  {
+    "article_id": "1990-09-7-left-el-ni-o-de-la-ribera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Canté un fandango que había escuchado y que era el único que sabía con aquella edad",
+        "target": "Niño de la Ribera's early flamenco learning",
+        "rationale": "The singer describes learning repertoire by hearing it, a clear oral/listening mode of transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "procuraba ir adonde estaban los aficionaos de Cáceres y gente que conocían el tema y mantenían sus reuniones",
+        "target": "Cáceres aficionados as a flamenco knowledge community",
+        "rationale": "The passage presents aficionados and knowledgeable local participants as a community through which the singer entered flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "yo le escuchaba y aquello me aficionó bastante",
+        "target": "informal listening to a local guitarist",
+        "rationale": "The speaker links repeated listening to a guitarist with the development of flamenco afición and learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Manolo de Badajoz tenía una forma y una cualidad especiales para tocar la guitarra, especiales porque era su gran afición",
+        "target": "Manolo de Badajoz's guitar playing",
+        "rationale": "The passage evaluates Manolo de Badajoz's guitar artistry by attributing special form and quality to his playing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The mentions of 'todos los grandes' and 'el que más ha grabado' suggest status, but the visible passage does not build a sufficiently explicit canon or ranking beyond general praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Niño de la Ribera's flamenco formation and Manolo de Badajoz's guitar artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article, but the visible evidence is sufficient for the emitted codes."
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "1989-05-26-right-premium-iben-alcazar-premium-cri",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The advertisement mentions 'siguiendo la tradición de nuestros maestros cerveceros', but the tradition claim concerns beer production, not flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Beer advertisement; no flamenco-related discourse in the visible text."
+  },
+  {
+    "article_id": "1989-07-3-right-sevillanas-show-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "uno se rebela no contra el cante-baile por sevillanas, sino contra las sevillanas de los mercaderes, reiterativas, plúmbeas, adocenadas",
+        "target": "commercialized sevillanas",
+        "rationale": "The editorial treats market-driven sevillanas as a degraded commercial spectacle opposed to valued cante-baile."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la gran crisis de identidad que sufrió el flamenco se produjo precisamente por una inadecuada popularización del mismo... adaptar sus contenidos al gusto de un público desinformado",
+        "target": "improper popularization of flamenco and sevillanas",
+        "rationale": "The passage draws a boundary between proper flamenco/sevillanas and forms distorted for an uninformed public."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "muchos viejos maestros del flamenco, supieron impregnar de buen gusto, de frescor y hasta de jondura... la vieja tradición de la puellae andaluzas",
+        "target": "valued sevillanas tradition",
+        "rationale": "The editorial authorizes sevillanas by linking them to old masters, jondura, and a deep Andalusian tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text criticizes commercial sevillanas, but the stronger and less duplicative coding is the authenticity/anti-commercial boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante-baile por sevillanas versus commercialized sevillanas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial defends sevillanas as a tradition while rejecting their commercialized show version."
+  },
+  {
+    "article_id": "1989-07-5-right-viejo-carn-flamenco-manolo-carac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Hay que conservar la tradición, la tradición de «a palo seco».",
+        "target": "unaccompanied cante grande forms",
+        "rationale": "The speaker explicitly calls for preserving a valued traditional performance practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El Concurso de Granada lo gané por escuela, escuela de lo bueno y lo puro.",
+        "target": "Caracol's school of cante",
+        "rationale": "The phrase uses purity and goodness to authorize one school of cante as legitimate."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "sentirme heredero de una excelente casta de cantaores... todas las tradiciones que siempre han estado en el aire de mi casa",
+        "target": "Caracol's familial cante inheritance",
+        "rationale": "The passage frames flamenco knowledge as inherited through family lineage and household tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Don Antonio Chacón es el cantar que ha dominado todos los cantes... Pepe Marchena... no conoce el cante. Sencillamente.",
+        "target": "Chacón, Marchena, and other canonical singers",
+        "rationale": "The passage ranks major singers and constructs a hierarchy of cante knowledge and status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are several explicit evaluations of singers, but they are already captured through the stronger canon/hierarchy code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "traditional cante practice and canonical singer hierarchies",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible excerpt contains enough direct evaluative and tradition-preservation language to code."
+  },
+  {
+    "article_id": "1989-07-8-left-el-tesoro-escondido",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Si hay cante gitano como hay baile gitano y toreo gittano.",
+        "target": "Gitano identity as a basis for cante",
+        "rationale": "The article frames flamenco forms through Gitano identity and group-based cultural belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "salieron a relucir aquellos cantos y bailes hispanosemitas que tan diligentemente habían sido conservados por algunas familias gitanoandaluzas",
+        "target": "origins and continuity of cante gitano andaluz",
+        "rationale": "The passage grounds flamenco value and identity in conserved origins and long continuity across families."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "¿Quién podía discutirles la legitimidad de esos cantes?.",
+        "target": "legitimacy of Gitano-associated cantes",
+        "rationale": "The rhetorical question explicitly authorizes the legitimacy of the cantes claimed by Gitano performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Family conservation implies intergenerational transmission, but the visible passage emphasizes origin and legitimacy more than a learning process."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The vocabulary of conservation and hidden treasure is present, but it is not framed as public heritage, institutional safeguarding, or community heritage policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community"
+      ],
+      "target": "cante gitano and its Gitano-Andalusian origins",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is an origin and legitimacy argument, not a neutral history."
+  },
+  {
+    "article_id": "1989-07-9-left-juan-friede",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sencilla, directa y exacta definición de todo lo que puede «herir» el impacto enduendado de una música espiritual, vieja y extraña",
+        "target": "Friede's account of cante flamenco",
+        "rationale": "The passage uses duende, spiritual age, strangeness, and emotional wound as criteria for understanding cante's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Juan Friede, escritor, historiador, hispanista, crítico de arte... seducido por el enigmático cante flamenco en su más reconocida y profunda integridad",
+        "target": "Juan Friede as authoritative interpreter of cante",
+        "rationale": "The text positions Friede's scholarly and critical status as authorizing his interpretation of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "No encuentro concepto más serio del Cante que el de nuestro querido Juan Friede... el más importante y cerca de las verdades de este discutido fenómeno.",
+        "target": "Friede's concept of cante",
+        "rationale": "The author explicitly evaluates Friede's conception of cante as unusually serious, important, and close to truth."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions aficionados and gatherings, but the core discourse is Friede's expert interpretation rather than afición as community authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The remembered tavern scene is intimate, but the passage does not clearly contrast intimacy with commercial or public performance as authenticity evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Friede's interpretation of cante flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text mainly legitimates an expert-critical way of understanding cante."
+  }
+]

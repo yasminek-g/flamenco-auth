@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "1981-07-10-left-datos-para-la-historia-del-arte-",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a mostly factual biographical/discographic fiche; it does not clearly evaluate, authorize, preserve, teach, transmit, rank, or police flamenco authority."
+  },
+  {
+    "article_id": "1981-07-10-right-chuflillas-de-luisa-ortega-por-j",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Insistiendo en que no sería ocioso un repaso serio y desapasionado sobre el concepto y las numerosas noticias que, sobre el cante, dejara Pemán",
+        "target": "José María Pemán's writings and ideas on cante",
+        "rationale": "The passage calls for a serious, dispassionate critical reassessment of Pemán's flamenco ideas rather than simply reporting his death."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "hasta ponerse a cantar, flamenca y desafiante, en lo más alto y pimpante: sube y sube; corre y corre: giraldillo de la torre de la catedral del cante",
+        "target": "Luisa Ortega's singing/performance persona",
+        "rationale": "The poem praises Luisa Ortega's flamenco performance through explicit evaluative elevation and imagery of artistic ascent."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "¡Qué ladrona! como entona ese tono medio y roto; alboroto del bajo Sur español; escuela del «Caracol» que desgarra y desordena a fuerza de grito y pena todo el do, re, mí, fa, sol",
+        "target": "Luisa Ortega's vocal style and Caracol-associated school",
+        "rationale": "The passage applies aesthetic criteria of tone, expressive rupture, grit, and pena to characterize flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Phrases such as 'entre gitana y princesa' and regional references are poetic identity imagery, but they do not clearly organize flamenco belonging or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to 'estrella', 'catedral del cante', and 'escuela del Caracol' have possible canonizing force, but the evidence is embedded in poetic praise rather than a clear ranking or canon argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pemán's flamenco writing and Luisa Ortega's flamenco performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-07-11-right-miguel-vargas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "había un programa en Radio Nacional de España... que radiaba discos de Chacón, Manuel Torre, de Antonio Mairena..., y aquello me gustaba una barbaría; entonces empecé a cantar",
+        "target": "Miguel Vargas's access to flamenco learning through radio recordings",
+        "rationale": "The singer frames his learning pathway through mediated access to recorded masters rather than formal instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel es el fenómeno del siglo, más puro que nadie",
+        "target": "Manuel Torre",
+        "rationale": "The statement canonizes Manuel Torre through superlative ranking and purity-based superiority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Manuel es el fenómeno del siglo, más puro que nadie",
+        "target": "Manuel Torre's cante",
+        "rationale": "The passage attributes exceptional flamenco genuineness or purity to Manuel Torre as an artist."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "En los festivales, que siempre hay más gente que en una peña",
+        "target": "festival performance versus peña setting",
+        "rationale": "The contrast between festivals and peñas appears in an argument about whether cante can occur with proper inspiration and social conditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The paid, scheduled performance critique suggests staged/public distance may weaken authenticity, but the visible excerpt is truncated before the full contrast is developed."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The passage mentions 'viejos maestros', but it does not show a direct teacher-authority relation; the stronger learning evidence is mediated access through radio recordings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity",
+        "community"
+      ],
+      "target": "Miguel Vargas's learning route, Manuel Torre, and performance settings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-07-13-left-las-letras-flamencas-de-carlos-m",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "poeta nutrido de los sones y sonios populares, sabe, como pocos escritores, qué tronco anuda el cante, que la raíz de la copla crece hacia arriba",
+        "target": "Carlos Muñiz's flamenco letras",
+        "rationale": "The passage authorizes Muñiz's letras by rooting them in popular sounds and the trunk/root of cante and copla."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Las letras flamencas de Carlos Muñiz, serenas en su poderío, poseen la grandeza de cantar y contar",
+        "target": "Carlos Muñiz's flamenco letras",
+        "rationale": "The passage explicitly praises the artistic quality and expressive power of Muñiz's letras."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "muchas de ellas corran como anónimas o, lo que denunciamos, apropiadas por terceros que impune y equívocamente quieren anotárselas como propias",
+        "target": "authorship and attribution of Carlos Muñiz's letras",
+        "rationale": "The editorial voice intervenes as a critical authority to police improper attribution and defend the rightful authorship of flamenco letras."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text implies collective circulation of letras but does not frame them as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Carlos Muñiz's flamenco letras",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-07-13-right-julio-romero-de-torres-y-el-flam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Querías saber si Julio Romero de Torres, era un auténtico aficionado al flamenco... la identificación de Julio con el flamenco fue absoluta, plena",
+        "target": "Julio Romero de Torres as a flamenco aficionado",
+        "rationale": "The passage grounds Julio's flamenco authority in his status as an authentic, deeply identified aficionado."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "sin la menor duda, en el más alto grado de pureza. El cante jondo era su gran pasión",
+        "target": "Julio Romero de Torres's relationship to flamenco",
+        "rationale": "The passage explicitly presents Julio's flamenco afición as genuine and pure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "nadie —que yo sepa— con autoridad y poder ha recabado para él, seriamente, el lugar que le corresponde en la pintura simbolista española",
+        "target": "Julio Romero de Torres's artistic status",
+        "rationale": "The passage argues that Julio has not been granted his proper canonical place within Spanish symbolist painting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The author invokes reports heard from good sources and surviving biographers, but the visible text does not clearly frame flamenco knowledge as embodied, oral, or lineage transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses 'pureza', but it does not clearly exclude or devalue an impure opposing form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Julio Romero de Torres as an aficionado and artist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

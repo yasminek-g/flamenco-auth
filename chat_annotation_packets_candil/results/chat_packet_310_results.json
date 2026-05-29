@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "1995-09-21-left-una-nueva-llave-de-oro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "estoy a favor de la concesión de la IV Llave de Oro del Cante, siempre que la concesión esté dirigida a premiar trayectorias ejemplares y que la forma de otorgarla sea absolutamente imparcial, justa y objetiva",
+        "target": "IV Llave de Oro del Cante and exemplary flamenco careers",
+        "rationale": "The passage defines a major flamenco distinction as a mechanism for ranking and canonizing exemplary artistic trajectories."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Si no somos capaces de defender lo puro, lo creativo, de la intervención totalitaria de la sociedad de consumo y su sumisión ante las presiones económicas, políticas e ideológicas",
+        "target": "pure and creative flamenco against consumer-society pressures",
+        "rationale": "The author draws a boundary between pure/creative flamenco and forms shaped by economic, political, and ideological pressures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "tan faltos de referencias vivas en las que se puedan mirar las nuevas generaciones, dejemos que otros también puedan ser, si se lo merecen, por reales, necesarios y convenientes para nuestro Arte Flamenco",
+        "target": "living references for future flamenco generations",
+        "rationale": "The passage authorizes present recognition through continuity, living models, and transmission to new generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions origins such as payo, gitano, Sevilla, Jerez, Córdoba, and Cádiz, but the visible passage uses them mainly to reject origin-based exclusion rather than to frame an identity group as authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "tradition", "criticism"],
+      "target": "the IV Llave de Oro del Cante as a canonizing reference for flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible text gives clear evidence for canon/ranking and purity-boundary claims."
+  },
+  {
+    "article_id": "1995-09-23-left-tito-ortiz-a-comp-s",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el Compás del Cante a Morente le llega tarde y devaluado",
+        "target": "award of the Compás del Cante to Enrique Morente",
+        "rationale": "The passage explicitly evaluates the award as delayed and diminished in value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "un jurado compuesto por grandes santones del mundillo flamenco, sea el último en darse cuenta de la importancia que el artista granadino tiene en el arte andaluz de los últimos cincuenta años",
+        "target": "flamenco jury and its recognition of Morente",
+        "rationale": "The author criticizes an expert jury's authority and its failure to recognize Morente's importance in time."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la importancia que el artista granadino tiene en el arte andaluz de los últimos cincuenta años",
+        "target": "Enrique Morente's status in Andalusian art",
+        "rationale": "The passage places Morente within a half-century hierarchy of artistic importance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The venue and audience are described vividly, but the visible passage does not clearly contrast participatory/private flamenco with spectatorial/public flamenco as a value framework."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Enrique Morente and the flamenco institutions judging him",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest evidence is the critique of late institutional recognition."
+  },
+  {
+    "article_id": "1995-09-24-right-el-arte-de-pilar-l-pez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "todos, sin excepción, fuimos alumnos del magisterio de Pilar López",
+        "target": "Pilar López as a pedagogical authority in flamenco dance",
+        "rationale": "The passage explicitly frames Pilar López's embodied intervention as a master lesson that authorizes knowledge through her presence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "esos cuatro o cinco minutos de baile improvisados, han constituido una de las páginas más bellas que el Flamenco me ha dado ocasión de presenciar en vivo",
+        "target": "Pilar López's improvised dance",
+        "rationale": "The author gives a direct aesthetic evaluation of the improvised performance as one of the most beautiful flamenco moments witnessed live."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pilar López, la hermana de «La Argentinita» y, como aquélla, figura indiscutible del baile durante más de medio siglo de historia de España",
+        "target": "Pilar López and La Argentinita in the canon of Spanish dance",
+        "rationale": "The passage canonizes Pilar López by presenting her as an indisputable dance figure across more than half a century."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Pilar López's dance authority and legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines pedagogical setting, live embodied authority, and critical canonization."
+  },
+  {
+    "article_id": "1995-09-25-right-i-encuentro-flamenco-y-universid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "La finalidad del Aula de Flamenco la constituye la investigación, la enseñanza, la difusión y el disfrute del Arte Flamenco en el ámbito universitario",
+        "target": "Aula de Flamenco at the University of Murcia",
+        "rationale": "The passage frames flamenco knowledge as institutionalized through university research, teaching, and diffusion."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "El Arte Flamenco en un patrimonio cultural muy peculiar, cuyo estudio merece ser abordado desde perspectivas universitarias",
+        "target": "flamenco as cultural heritage",
+        "rationale": "Flamenco is explicitly framed as cultural patrimony whose public value merits university study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "excelente rajo gitano y buen acento minero, propio del genuino Cante de Levante... las más bellas y puras excelencias del Arte Flamenco",
+        "target": "performances in the Encuentro Flamenco y Universidad",
+        "rationale": "The passage applies aesthetic criteria such as rajo gitano, mining accent, genuineness, purity, and excellence to judge the performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrases 'genuino Cante de Levante' and 'puras excelencias' have authenticity force, but they are embedded mainly in performance evaluation and are covered more precisely by CRIT_02 here."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "criticism"],
+      "target": "university study and performance of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt clearly links university institutional access, heritage value, and aesthetic evaluation."
+  },
+  {
+    "article_id": "1995-11-3-left-falla-y-el-cante-jondo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la más genial y conspicua figura española de nuestro tiempo",
+        "target": "Manuel de Falla",
+        "rationale": "The passage canonizes Falla through superlative status as a major Spanish figure."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Falla, sin necesidad de acudir a la aplicación directa del documento flamenco, es, en sí, el duende de lo jondo, es el flamenco, en su forma más universal de comunicarlo",
+        "target": "Falla's relation to cante jondo and flamenco",
+        "rationale": "The author presents Falla as genuinely embodying flamenco and jondo essence, not merely referencing it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "es, en sí, el duende de lo jondo, es el flamenco, en su forma más universal de comunicarlo",
+        "target": "Falla's musical expression of the jondo",
+        "rationale": "The passage uses duende, jondo depth, and universality as aesthetic criteria for valuing Falla's relation to flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text calls for rigorous musical studies of flamenco, but the visible passage is more about a research deficit than access, teaching, or institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Manuel de Falla as an embodiment of jondo flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial is a strong canonizing and authenticity-authorizing statement about Falla."
+  }
+]

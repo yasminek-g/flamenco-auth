@@ -1,0 +1,214 @@
+[
+  {
+    "article_id": "1991-09-15-right-por-carceleras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "La opinión general es que hoy ha habido más calidad... Se canta y se canta bien, unos mejor que otros; pero todos con el corazón, entregándose en cada tercio, sin dar ojana.",
+        "target": "prison flamenco contest performances",
+        "rationale": "The passage explicitly evaluates the quality and sincerity of the contestants' singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "La deliberación del jurado es larga. Solamente cuatro pasarán a la gran final. Después, dada la calidad y el bien hacer que se aprecia, la organización —a propuesta del jurado— decide ampliar el número de finalistas hasta siete",
+        "target": "contest finalists",
+        "rationale": "The jury and organization exercise evaluative authority by revising the finalist structure in response to perceived artistic quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The fin de fiesta creates shared participation, but the passage does not contrast participatory flamenco with spectatorship as a value-bearing setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text frames prisoners through social marginality and equality, but not as a flamenco identity group authorized to represent or transmit flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "prison flamenco contest performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-16-right-el-jaleo-fue-madre-de-la-solea",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Para mí, lo manifestado por el autor, es un despropósito imperdonable... no hay lugar a duda en cuanto a que el «jaleo» no existe como cante.",
+        "target": "claim that jaleo was the mother of soleá",
+        "rationale": "The author uses expert corrective criticism to reject a classificatory claim about flamenco forms."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Acuda únicamente a los cantaores profesionales de alta categoría, tales como Fosforito, Menese, y también a los jóvenes estudiosos, Calixto Sánchez y Luis de Córdoba",
+        "target": "authoritative sources for flamenco knowledge",
+        "rationale": "The passage assigns authority to recognized professional singers and knowledgeable scholars as legitimate sources of flamenco understanding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "toda mi juventud la pasé buceando entre Triana, La Alameda y La Campana, donde convivía con Francisco González Sanromán... ¿Cómo podría yo aprender en Badajoz lo que aprendí en la tierra de mis mayores junto a los artistas citados?",
+        "target": "the author's flamenco knowledge",
+        "rationale": "The author legitimates his knowledge through situated learning and convivencia with named flamenco figures in a lineage-like environment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article debates origins of soleá, but the main visible discourse is classificatory correction rather than grounding present value in tradition or continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The Badajoz/Triana contrast creates a knowledge hierarchy, but it is better captured as community authority and embodied learning than as an insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "classification of jaleo and soleá origins",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-18-left-xxvii-concurso-nacional-de-taran",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La edición de este 91 ha tenido una elevada cuantía en premios, lo que ha supuesto una mayor y más variada participación que ha incrementado la calidad del certamen anterior",
+        "target": "1991 tarantas contest",
+        "rationale": "The passage evaluates the contest by comparing its participation and quality with the previous edition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "voz flamenca y jondura... Su personalidad flamenca se mostró por cantiñas-alegrias, bulerías y tangos con fases de auténtica gracia y compás",
+        "target": "contest performance",
+        "rationale": "The passage applies aesthetic criteria such as jondura, personality, gracia, and compás to judge flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Participation is discussed as contest turnout and incentives, not as participatory setting or public/private flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The jury is listed, including critics and peña representatives, but the visible passage does not substantially frame their expertise as the basis of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "XXVII Concurso Nacional de Tarantas and its performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-19-right-el-cantar-del-arriero",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "trataba de buscar el eslabón perdido de los fandangos «abandolaos»... Dejémoslo para otra excursión por el valle del Guadalhorce, en busca de la partida de nacimiento de las malagueñas de cante.",
+        "target": "origins of fandangos abandolaos and malagueñas de cante",
+        "rationale": "The passage frames flamenco understanding through roots, origins, and the search for a missing historical link."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "tengo la obligación moral de corregir un «lapsus calami» que cometí en mi relato anterior... Pero... ¿fueron realmente «malagueñas» de cante lo que escucharon nuestros visitantes?",
+        "target": "classification and historical account of malagueñas",
+        "rationale": "The author performs corrective scholarly criticism by revising an earlier statement and questioning whether the historical examples were truly malagueñas de cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The word 'gran' appears in 'gran sorpresa', but it does not construct a canon, hierarchy, or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "historical origin of malagueñas de cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-09-21-left-por-siguiri-as",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses terms such as esencia and compás, but they function poetically rather than as explicit aesthetic criteria for judging or defining flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

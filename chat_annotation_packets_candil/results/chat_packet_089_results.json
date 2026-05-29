@@ -1,0 +1,198 @@
+[
+  {
+    "article_id": "1984-01-23-left-yerga-lancharro-quienes-fueron-l",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The heading 'Lo mejor de Pepe Marchena' suggests selection or ranking, but the visible body is essentially a list of titles/credits without evaluative discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a discographic/listing-style inventory, not a clear evaluative or authorizing passage."
+  },
+  {
+    "article_id": "1984-03-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "lo que significa de reconocimiento de la cultura flamenca, dentro de la máxima Institución andaluza",
+        "target": "cultura flamenca",
+        "rationale": "The passage treats recognition by the Junta de Andalucía as official institutional authorization of flamenco's cultural value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "crear unas condiciones objetivas que posibiliten la identificación de lo genuinamente jondo, así como la reprobación de tantos y tantos espúreos sucedáneos",
+        "target": "lo genuinamente jondo versus espúreos sucedáneos",
+        "rationale": "The passage explicitly draws a boundary between genuine jondo culture and spurious substitutes."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Lo que sí debe institucionalizarse es la tutela del flamenco como permanente empeño por crear unas condiciones objetivas",
+        "target": "flamenco",
+        "rationale": "The passage calls for institutional tutelage that safeguards conditions for flamenco's proper identification and protection."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editorial critiques official folklore and spurious substitutes, but the stronger primary functions are heritage authorization/safeguarding and authenticity boundary-work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text criticizes prior state folklorization and trivialization, but it does not clearly frame commercial spectacle or intimate co-presence as the authenticity axis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity"
+      ],
+      "target": "flamenco culture and lo genuinamente jondo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial legitimates institutional recognition and protection while warning against both degrading institutionalization and spurious substitutes."
+  },
+  {
+    "article_id": "1984-03-4-left-angeles-ortiz-desde-el-homenaje-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "fíjate bien lo que representa mantener un valor de pureza a través de los años, del tiempo",
+        "target": "flamenco",
+        "rationale": "The passage grounds flamenco's value in maintaining purity across time, linking authority to continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El flamenco es una cosa extraordinaria",
+        "target": "flamenco",
+        "rationale": "The quoted evaluation explicitly praises flamenco's exceptional value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article invokes the 1922 concurso and the Generación del 27, but the visible excerpt does not clearly construct a flamenco canon or hierarchy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article is memorial in tone, but memory centers the painter and literary-artistic friendship rather than clear public flamenco heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco as enduring pure artistic value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only the visible quoted reflection on flamenco's purity and extraordinariness directly supports flamenco-related coding."
+  },
+  {
+    "article_id": "1984-03-4-right-manuel-machado-entre-el-modernis",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "sin duda alguna, al autor que, desde un punto de vista culto, más ha aportado al cante jondo",
+        "target": "Manuel Machado",
+        "rationale": "The passage canonizes Machado by ranking him as the cultured author who contributed most to cante jondo."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "sus letras flamencas... forman parte hoy en día del caudal andalucísimo de nuestro arte",
+        "target": "Manuel Machado's flamenco lyrics",
+        "rationale": "The passage frames Machado's letras as part of a collective Andalusian artistic inheritance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "siendo imposible, para los no versados en literatura, distinguir entre la mayoría de sus letras flamencas y las compuestas por el pueblo",
+        "target": "Manuel Machado's flamenco letras",
+        "rationale": "The passage authorizes Machado's letras through their continuity with popular flamenco composition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The term 'verdadero carácter' concerns literary modernism rather than a claim of genuine flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Machado is called a theoretical figure, but the visible text does not frame him as teaching or pedagogically authorizing flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage",
+        "tradition"
+      ],
+      "target": "Manuel Machado's place in cante jondo and Andalusian flamenco art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is literary, the visible excerpt explicitly relates Machado's work to cante jondo and flamenco letras."
+  },
+  {
+    "article_id": "1984-03-9-left-las-letras-flamencas-de-ana-la-l",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text consists of letras; it does not make an explicit discourse claim about authority, heritage, pedagogy, community, or criticism."
+  }
+]

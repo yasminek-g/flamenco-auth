@@ -1,0 +1,235 @@
+[
+  {
+    "article_id": "1991-09-25-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "ponen punto final a la época del estilo tradicional y básico",
+        "target": "flamenco historical styles and cante tradition",
+        "rationale": "The passage grounds flamenco value in a historical sequence of traditional styles and treats the traditional/basic period as a meaningful foundation for present flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "una serie de estilistas, tales como: Torre, Pastora o Mairena",
+        "target": "Torre, Pastora, Mairena, Silverio Franconetti, and Niño de Marchena",
+        "rationale": "The article constructs a historical hierarchy of exemplary figures and epochs, positioning named artists as landmarks in flamenco development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "aún existen como base catedralicia, para sostener el cante flamenco; la religiosa Toná y la fuerte y libre Siguiriya del pueblo",
+        "target": "Toná and Siguiriya",
+        "rationale": "The passage applies aesthetic and structural criteria, treating Toná and Siguiriya as foundational forms that sustain flamenco cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'del pueblo' suggests collective identity, but the visible passage uses it mainly to describe origins of cantes rather than to define identity-based belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "traditional flamenco styles, foundational cantes, and canonical artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; codes are based only on the visible historical and evaluative framing."
+  },
+  {
+    "article_id": "1991-11-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "aún manteniendo esta vieja tradición",
+        "target": "flamenco villancico tradition",
+        "rationale": "The passage values Rosario López's work by linking it to continuity with an older flamenco Christmas-villancico tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "interpreta flamenco o lo que es lo mismo, eleva a la categoría de jondo lo que formalmente son aires folklóricos navideños",
+        "target": "Rosario López's Christmas folkloric airs",
+        "rationale": "The passage defines value through the aesthetic category of the jondo, judging the transformation of folkloric airs into flamenco depth."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "se echa en falta, dentro de la ya abundante bibliografía jonda, una monografía que sea capaz de sistematizar el villancico",
+        "target": "knowledge about flamenco villancicos",
+        "rationale": "The article calls for a monograph to systematize and transmit knowledge of the villancico within flamenco bibliography, framing written mediation as necessary access to understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Pastora, Vallejo, and Canalejas are called paradigmatic examples, but the passage uses them mainly to illustrate a stylistic point rather than build an extended canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco villancicos and their jondo interpretation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-11-3-right-algunas-reflexiones-sobre-el-art",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El flamenco es la cultura lírica más genuina de Andalucía",
+        "target": "flamenco as Andalusian lyrical culture",
+        "rationale": "The passage explicitly attributes genuineness to flamenco as an expression of Andalusian culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "puede que sea también la más definitoria en su identidad cultural como pueblo",
+        "target": "Andalusian people and cultural identity",
+        "rationale": "The passage frames flamenco as a defining expression of Andalusian collective identity and belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "a sus más grandes artistas tienen la obligación de situarlos en los niveles que es de exigencia en la historia de las artes",
+        "target": "major flamenco artists",
+        "rationale": "The passage argues that great flamenco artists should be placed at the proper level within the history of the arts, constructing a hierarchy of cultural recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public and teaching institutions are assigned responsibility, but the visible passage does not clearly frame this as heritage, patrimony, listing, or authorized heritage management."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco as Andalusian cultural identity and high art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible evidence is sufficient for authenticity, identity, and canon-recognition claims."
+  },
+  {
+    "article_id": "1991-11-5-left-viejo-carn-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "uno de los teóricos más brillantes, en este arte",
+        "target": "Anselmo González Climent",
+        "rationale": "The passage authorizes González Climent as a major theoretical voice whose thought on flamenco figures and styles deserves publication and attention."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "a renglón seguido de proclamar a Antonio Mairena como dueño de la Llave",
+        "target": "Antonio Mairena and the contest participants",
+        "rationale": "The passage invokes the Llave award and related distinctions as a hierarchy of honor and canonical recognition within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "felicitando la actuación óptima del resto de los participantes",
+        "target": "other contest participants",
+        "rationale": "The jurors' declaration explicitly evaluates the performance of the remaining participants as excellent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Publication makes González Climent's thought accessible to readers, but the passage frames this more as critical-theoretical authority than as a learning-access discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "González Climent's critical authority, Antonio Mairena, and contest recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotation uses visible framing around publication, jury authority, and contest honors."
+  },
+  {
+    "article_id": "1991-11-10-left-juanito-maravillas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The interview mentions flamenco tradition in the family, but the visible passage functions mainly as biography rather than claiming family/community authority to judge or authorize flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'tradición flamenca en tu familia' indicates lineage background, but the passage does not clearly use that tradition to authorize present flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The closing informal cante gathering is evocative, but it is described narratively rather than contrasted with public spectatorship or used to define participatory authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Conservative reading: the visible excerpt is mainly biographical interview narrative without a clear authorizing, evaluative, or boundary-making discourse function."
+  }
+]

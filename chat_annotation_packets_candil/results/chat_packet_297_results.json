@@ -1,0 +1,241 @@
+[
+    {
+        "article_id": "1994-11-24-left-una-nueva-era-de-la-m-sica-flame",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Paco de Luc\u00eda es el artista flamenco m\u00e1s popular de nuestros d\u00edas. Con \u00e9l la guitarra ha llegado a su c\u00e9nit... su estilo ha creado escuela. Paco de Luc\u00eda, pues, se ha convertido merecidamente en un mito",
+                "target": "Paco de Luc\u00eda and his place in flamenco guitar",
+                "rationale": "The passage constructs a hierarchy and canonizes Paco as the most popular, universal, school-forming, mythic figure of contemporary flamenco guitar."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "la obra del m\u00fasico flamenco m\u00e1s significativo de los \u00faltimos cincuenta a\u00f1os",
+                "target": "Paco de Luc\u00eda's musical work",
+                "rationale": "The text explicitly evaluates Paco's work as the most significant flamenco music of the last fifty years."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "como ha escrito recientemente Norberto Torres, Paco de Luc\u00eda ha sido el precursor de los nuevos grupos flamencos, debido a este razonamiento",
+                "target": "Paco de Luc\u00eda as precursor of new flamenco groups",
+                "rationale": "The article invokes an identified commentator's reasoning to authorize an interpretive claim about Paco's role in transforming flamenco performance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "The text says Paco's style created a school and influenced younger flamencos, but it does not directly frame institutional, transnational, or access-oriented learning."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Paco de Luc\u00eda as canonical innovator of flamenco guitar and group performance",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Strong canonizing article; innovation is framed as a new era rather than as a pedagogical-access issue."
+    },
+    {
+        "article_id": "1994-11-25-left-paco-de-luc-a-un-genio-jos-n-ez-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Se habla de la guitarra flamenca \u00abde antes y despu\u00e9s de Paco de Luc\u00eda\u00bb. Ha marcado una nueva etapa en la historia de este vivo instrumento.",
+                "target": "Paco de Luc\u00eda's historical status in flamenco guitar",
+                "rationale": "The text explicitly creates a before/after hierarchy around Paco and positions him as a periodizing figure in the history of flamenco guitar."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "el prodigio, el embrujo, el duende, tambi\u00e9n su guitarra tiene \u00absonidos negros\u00bb, el arte en su ejecuci\u00f3n, hace vibrar de emoci\u00f3n profunda y jonda",
+                "target": "Paco de Luc\u00eda's guitar playing",
+                "rationale": "Duende, sonidos negros, execution, and jondo emotional depth are applied as aesthetic criteria for judging the quality of Paco's playing."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "medium",
+                "evidence_quote": "la gran maestr\u00eda del gitano navarro Sabicas... que tanto influyese en su disc\u00edpulo predilecto Francisco S\u00e1nchez G\u00f3mez, Paco el de la Luc\u00eda",
+                "target": "Sabicas's influence on Paco de Luc\u00eda",
+                "rationale": "The passage frames Paco through a master-disciple relation in which Sabicas's influence helps authorize Paco's place in flamenco guitar lineage."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "pedagogy"
+            ],
+            "target": "Paco de Luc\u00eda as a lineage-bearing and historically transformative flamenco guitarist",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article combines aesthetic praise, canon formation, and a clear master-disciple lineage claim."
+    },
+    {
+        "article_id": "1994-11-25-right-paco-de-luc-a-artista-y-andaluz-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "le prepara un monumento en una preciosa fuente c\u00e9ntrica al virtuoso guitarrista de Algeciras Paco de Luc\u00eda, para perpetuar su memoria y su extraordinario arte",
+                "target": "Paco de Luc\u00eda's public memory and artistic value",
+                "rationale": "A public monument is presented as an official/civic mechanism for recognizing and preserving Paco's cultural value."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "a pesar de todo Paco de Luc\u00eda, no pierde sus profundas ra\u00edces de lo nuestro y conserva con orgullo el liderazgo actual y el de todos los tiempos",
+                "target": "Paco de Luc\u00eda's flamenco identity",
+                "rationale": "The text grounds Paco's ongoing authority in continuity with deep roots identified as 'lo nuestro'."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "conserva con orgullo el liderazgo actual y el de todos los tiempos... lo consideran como \u00fanico e inimitable",
+                "target": "Paco de Luc\u00eda's rank among guitarists",
+                "rationale": "The passage ranks Paco as a leader for the present and all times and elevates him as unique and inimitable."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The passage includes memory language, but the stronger discourse function is civic/institutional recognition through a monument."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "tradition",
+                "criticism"
+            ],
+            "target": "Paco de Luc\u00eda as publicly memorialized Andalusian flamenco genius",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The monument and award references make the public-recognition frame stronger than ordinary praise."
+    },
+    {
+        "article_id": "1994-11-26-left-la-guitarra-de-paco-de-luc-a",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "todas las esencias m\u00e1s flamencias de dicho palo, acompa\u00f1adas de un comp\u00e1s insuperable... perfecto de ejecuci\u00f3n e impregnado del mejor eco \u00abjondo\u00bb",
+                "target": "Paco de Luc\u00eda's flamenco guitar playing",
+                "rationale": "The passage applies explicit aesthetic criteria, including flamenco essence, comp\u00e1s, execution, and jondo resonance, to judge Paco's playing."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "donde es el m\u00e1s grande de todos, al menos para m\u00ed, es cuando \u00abse suelta el pelo\u00bb y se hunde en el duende del flamenco",
+                "target": "Paco de Luc\u00eda in relation to flamenco and other guitar domains",
+                "rationale": "The text ranks Paco as the greatest when playing flamenco and constructs his flamenco identity as his highest artistic position."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "confidence": "medium",
+                "evidence_quote": "Hay quien piensa que tales actuaciones han contribuido a desvirtuar el flamenquismo cong\u00e9nito de Paco de Luc\u00eda; yo pienso que no... nunca se le ha pasado por la cabeza \u00abaflojar\u00bb en el flamenco en beneficio de otros auditorios mucho m\u00e1s amplios... y mucho m\u00e1s productivos",
+                "target": "Paco de Luc\u00eda's flamenco authenticity despite classical and jazz work",
+                "rationale": "The passage explicitly contests the idea that wider, more economically productive audiences or non-flamenco domains dilute Paco's flamenco authenticity."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "criticism",
+                "authenticity"
+            ],
+            "target": "Paco de Luc\u00eda's flamenco artistry across flamenco, classical, and jazz contexts",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The author openly engages a boundary dispute about whether extra-flamenco work dilutes Paco's flamenco identity."
+    },
+    {
+        "article_id": "1994-11-27-left-tres-recuerdos-de-paco-de-luc-a-",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "Tra\u00eda todo el bagaje de la tradici\u00f3n musical oriental, el respeto consciente a unas ra\u00edces milenarias, pero supo transformar toda esa herencia en desobediencia creativa",
+                "target": "Paco de Luc\u00eda's creative relation to flamenco tradition through the Ziryab analogy",
+                "rationale": "The article grounds Paco's creative innovation in respect for roots, inheritance, and tradition, making continuity with the past authorize transformation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Su mano izquierda empez\u00f3 a enviar \u00f3rdenes a unos hilos de m\u00fasica y la derecha fue ejecutando aquellos recados y nos dej\u00f3 a todos hermanados, limpios, consolados para siempre.",
+                "target": "Paco de Luc\u00eda's performance at the Reales Alc\u00e1zares",
+                "rationale": "The passage gives an explicit positive assessment of the performance's transformative emotional effect on the audience."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "un afecto especial por Paco. Un orgullo inmenso por ser Paco de esta tierra. La misma tierra a la que pertenecemos todos.",
+                "target": "Paco de Luc\u00eda's belonging to a shared Andalusian/local identity",
+                "rationale": "The passage frames Paco's value through collective belonging to a shared land and local identity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The text is structured around memory and recollection, but it does not clearly frame these memories as public heritage safeguarding or community heritage work."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "tradition",
+                "criticism",
+                "community"
+            ],
+            "target": "Paco de Luc\u00eda as a tradition-transforming and locally shared flamenco figure",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The Ziryab analogy is the strongest discourse-function evidence because it explicitly links roots, inheritance, tradition, and creative transformation."
+    }
+]

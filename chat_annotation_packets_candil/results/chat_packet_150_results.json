@@ -1,0 +1,253 @@
+[
+  {
+    "article_id": "1987-03-37-right-por-sus-dichos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "«Lo flamenco yo lo defino como la expresión del pueblo andaluz en su más pura esencia...»",
+        "target": "lo flamenco",
+        "rationale": "The speaker explicitly defines flamenco as the pure essence of the Andalusian people, presenting a proper account of what flamenco is."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "«A los que empiezan hay que darles todos los medios posibles para acentuar su afición e indicarles el camino derecho...»",
+        "target": "beginners in flamenco",
+        "rationale": "The passage frames novice formation as requiring guided means and a correct path, positioning experienced guidance as pedagogically authoritative."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "«Las peñas aúnan a los amantes del Flamenco, y gracias a ellas nuestro Cante puede pervivir por tiempo indefinido con la categoría que merece...»",
+        "target": "peñas and the survival of cante",
+        "rationale": "Peñas are credited with sustaining flamenco as a living practice into the future and preserving its deserved cultural status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Roots and Andalusia are mentioned, but the strongest visible move is a direct authenticity definition rather than a separate continuity argument."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas and aficionados appear, but the passage primarily emphasizes safeguarding/pervivencia rather than community authority to judge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "flamenco as Andalusian expression and living cante sustained by peñas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Compiled quotation article; coded only quotations with clear definitional, pedagogical, or safeguarding function."
+  },
+  {
+    "article_id": "1987-03-38-left-homenaje-a-un-cabal-cabalisimo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "una figura a la que solamente en lo personal conozco por referencias pero de tan buena intención y contrastada seriedad dentro del ámbito flamenco que al merecer toda mi confianza",
+        "target": "Fosforito",
+        "rationale": "The author explicitly evaluates Fosforito's seriousness and trustworthiness within the flamenco sphere."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "proponer su nombre para solicitar la Gran Cruz de Beneficiencia que bien se tiene ganada",
+        "target": "official recognition for Fosforito",
+        "rationale": "The passage argues that Fosforito deserves an official public honor, using an institutional recognition mechanism to valorize him."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'más puro y aséptico sentido' modifies a denomination and does not define authentic flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article uses honorific praise such as magisterio artístico but does not clearly construct a ranking or canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Fosforito's human and public merit",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Conservative coding: most of the article is homage praise; emitted only explicit evaluation and official-recognition argument."
+  },
+  {
+    "article_id": "1987-03-38-right-agenda-1987",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Formalmente, es perfecto, pero... Me deja frío, de puro bien que canta. Demasiado control",
+        "target": "Fosforito's soleá apolá performance",
+        "rationale": "The passage reports explicit evaluative judgments of Fosforito's performance, then contests them as mistaken."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Fosforito administra una intuición armónica del conjunto expositivo... El equilibrio de Fosforito es un equilibrio que enlaza con los desbordes de su sentimiento.",
+        "target": "Fosforito's cante style",
+        "rationale": "The quoted critical reflection defines Fosforito's quality through aesthetic criteria of harmonic intuition, equilibrium, feeling, and depth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ya en casa, releo una esclarecedora reflexión... de Anselmo González Climent... Grave error de interpretación",
+        "target": "critical interpretation of Fosforito",
+        "rationale": "The author invokes a named expert critic to correct the notables' judgment and police a faulty interpretation of Fosforito's cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The quoted language of roots and origins functions as aesthetic depth imagery rather than a tradition-continuity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición appears as a group that vilifies some artists, but the passage centers expert critical judgment rather than community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito's controlled but deep cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The entry stages a dispute over critical interpretation; the expert quotation supplies the clearest discourse function."
+  },
+  {
+    "article_id": "1987-03-39-left-medalla-al-erito-en-el-trabajo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "propone al Ayuntamiento Pleno solicitar... la concesión a don Antonio Fernández Díaz, «Fosforito», de la Medalla al Mérito en el Trabajo",
+        "target": "official medal request for Fosforito",
+        "rationale": "A municipal authority formally seeks state recognition for Fosforito, using an official honor to authorize his public value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "desde esa plataforma surgiría más adelante la gran figura que hoy representa Antonio Fernández Díaz, «Fosforito»",
+        "target": "Fosforito's status in flamenco",
+        "rationale": "The motion elevates Fosforito as a major figure, constructing a status hierarchy in support of the award."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "en el seno de una familia humilde, de ascendencia artística, cuyo entronque hay que buscarlo más allá de la tercera generación... al contacto con los maestros",
+        "target": "Fosforito's formation",
+        "rationale": "The biographical justification grounds Fosforito's formation in family artistic lineage and contact with masters, using transmission as part of his credentialing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The genealogy and early formation imply rootedness, but the stronger visible function is lineage-based transmission supporting the award."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The motion contains evaluative praise, but the clearest critical move is hierarchical canonization rather than a separate review-like assessment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Fosforito as deserving official labor merit recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated municipal-motion excerpt; coded only visible award rationale and biographical credentialing."
+  },
+  {
+    "article_id": "1987-03-45-left-poemas-dedicados-a-perfecto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Se hace más ortodoxo el difícil compás... Toro, pluma y cante grande, son de la misma hermandad.",
+        "target": "Fosforito's cante",
+        "rationale": "The poem praises the cante through aesthetic criteria of orthodoxy, compás, and cante grande, rather than merely describing imagery."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Memory and depth imagery appear, but there is no clear tradition-continuity or roots argument."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The poem is broadly laudatory, but the most precise codeable evidence is its use of aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito's cante as aesthetically orthodox and grande",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic text; avoided coding general metaphor unless it named recognizable evaluative flamenco criteria."
+  }
+]

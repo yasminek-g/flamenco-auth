@@ -1,0 +1,235 @@
+[
+  {
+    "article_id": "1993-09-22-right-el-xxi-congreso-de-arte-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "debe... recibir el tratamiento correspondiente a todos los niveles: a) reconocimiento y estudio en todos los conservatorios de música, b) reconocimiento en las universidades...",
+        "target": "flamenco as a musical and cultural phenomenon",
+        "rationale": "The congress conclusions seek official institutional recognition of flamenco through conservatories, universities, and educational authorities."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "reconocimiento y estudio en todos los conservatorios de música... formando parte de los programas de etnomusicología, musicología y antropología cultural... contenido obligatorio como materia de cultura andaluzas",
+        "target": "formal study of flamenco in educational institutions",
+        "rationale": "The passage explicitly frames flamenco knowledge as something to be institutionalized in conservatories, universities, and school curricula."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "instituciones que dependan de ella y que se ocupan del patrimonio cultural andaluz, tramite la rápida publicación del fondo de documentos musicales de tradición oral de Andalucía",
+        "target": "Andalusian oral-tradition musical documents related to flamenco origins",
+        "rationale": "The conclusion calls for institutional action to publish and preserve oral-tradition materials as Andalusian cultural heritage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The call for official bodies to consult experts suggests expert authority, but the strongest visible discourse is institutional heritage and pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text invokes oral tradition and origins, but these are mainly framed through heritage preservation and institutional study rather than a present-value tradition claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "flamenco as an institutionally recognized cultural and educational object",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-09-23-left-discograf-a-flamenca-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la Junta de Andalucía y su Consejería de Cultura y Medio Ambiente tenían que dar la cara, y lo han hecho con la edición de la colección completa de las grabaciones",
+        "target": "official edition of Tomás Pavón's complete recordings",
+        "rationale": "The passage presents the Junta and its cultural ministry as responsible institutional actors authorizing and preserving flamenco recordings."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la reafirmación ortodoxamente flamenca que efectúa de los cantes... el engrandecimiento del flamenco sólo ha necesitado de intérpretes como Tomás",
+        "target": "Tomás Pavón's recorded cantes",
+        "rationale": "The review grounds the recordings' value in orthodox flamenco continuity and exemplary interpretation of established cantes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "un auténtico deleite escuchar cada una de las grabaciones... nos encontramos con un trabajo bien desarrollado",
+        "target": "the compact disc edition and its recordings",
+        "rationale": "The passage explicitly evaluates the listening experience and the quality of the edition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The booklet is said to guide comprehension and analysis, but the stronger claim is evaluative and research-oriented rather than access across learning institutions or publics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article mentions tonal treatment, style details, and sound quality, but the emitted CRIT_01 covers the main evaluative function without needing a separate aesthetic-criteria code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Tomás Pavón's recordings and their official cultural edition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-09-23-right-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Concursos de villancicos y zambombas populares serán la programación durante las fiestas navideñas en la totalidad de las peñas flamencas jerezanas",
+        "target": "Jerez flamenco peñas and Christmas flamenco programming",
+        "rationale": "The peñas are presented as community institutions sustaining and organizing local flamenco-related traditions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "unas magníficas intervenciones... ese joven y extraordinario bailaor Fernando Galán... la noche del 22 la cubrió con seriedad y arte",
+        "target": "performers in the Peña El Garbanzo cycle",
+        "rationale": "The roundup explicitly praises the quality and seriousness of the performances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "cerraba el 29 con un exquisito compás de buen baile el Cuadro de la Academia de la Chiquí de Jerez",
+        "target": "Cuadro de la Academia de la Chiquí de Jerez",
+        "rationale": "The passage applies compás and good baile as aesthetic criteria for evaluating the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The zambombas and publications suggest local cultural continuity, but the visible text reads mainly as event programming rather than explicit safeguarding or heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Jerez peñas and young flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotations are limited to the visible beginning/window/ending excerpts."
+  },
+  {
+    "article_id": "1993-09-26-left-cartas-al-director-agust-n-g-mez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Esa pregunta me viene a decir que Cerrejón entiende poquísimo de cantes y de sus orígenes",
+        "target": "Manuel Cerrejón's claim about Escacena and tarantas",
+        "rationale": "The letter uses critical authority to challenge another commentator's knowledge of cante history and origins."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Creo que las tarantas, cantes mineros por excelencia, ya se cantaban a finales del siglo dieciocho... especialmente en Almería, cuna del cante que nos ocupa",
+        "target": "the historical origins of tarantas",
+        "rationale": "The passage grounds the style's authority in origins, rootedness, and historical continuity before Escacena."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Sabido es de todos los buenos aficionados que Escacena fue un gran tarantero, pero que fuese el primero en ejecutarla, eso no es cierto",
+        "target": "knowledgeable aficionados' understanding of Escacena's place in taranta history",
+        "rationale": "The statement invokes 'buenos aficionados' as a community of knowledgeable participants who can recognize the correction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage criticizes Cerrejón and praises several artists, but the main discourse function is expert boundary-setting and historical correction captured by CRIT_04."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The ending mentions teaching guitar, but it is biographical and not enough to establish institutional or transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "claims about the origins and first interpreters of tarantas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotations are limited to the visible excerpts."
+  },
+  {
+    "article_id": "1993-09-26-right-qu-date-con-el-cante",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a radio schedule notice and is insufficient for discourse coding."
+  }
+]

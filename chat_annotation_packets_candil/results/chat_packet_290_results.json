@@ -1,0 +1,207 @@
+[
+  {
+    "article_id": "1994-07-12-left-un-manifiesto-sobre-los-cantes-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "revista fundada por ese gran hombre y caballero que fue don Francisco Vallecillo Pecino, sabedor, como nadie, de los íntimos secretos del cante y del flamenco, en general",
+        "target": "Francisco Vallecillo Pecino as flamenco commentator",
+        "rationale": "The passage grants Vallecillo expert authority by presenting him as uniquely knowledgeable about the secrets of cante and flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el Flamenco —una vez que se produjeron los diversos estilos de cante— está vivo, y los Cantes de Cartagena también los están",
+        "target": "Cantes de Cartagena within flamenco tradition",
+        "rationale": "The passage grounds the value of the Cantes de Cartagena in their continuing vitality within flamenco rather than treating them as obsolete history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "los Cantes de Cartagena también los están, ocupando por su calidad un lugar preferente en este arte",
+        "target": "Cantes de Cartagena",
+        "rationale": "The passage ranks the Cantes de Cartagena as occupying a preferential place in flamenco because of their quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions history and remembering, but the visible passage frames this mainly as tradition and valuation rather than public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Cantes de Cartagena and their place within flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Annotated only the visible excerpt; the manifesto itself is not fully present."
+  },
+  {
+    "article_id": "1994-07-14-left-modernidad-y-flamenco-rafael",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "patentar en exclusiva aquel flamenco almacenado y expuesto «in vitro», lo que se antoja indispensable para su mercantilización aséptica ... y su comercialización discográfica ... y, sobre todo, para su neutralización cultural e ideológica",
+        "target": "commercialized and culturally neutralized flamenco",
+        "rationale": "The passage frames marketable, in-vitro flamenco as a distortion that neutralizes the culture, linking commercialization to loss of authentic social context."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "secuestrar la paternidad del arte flamenco a quienes lo recrean y reproducen en el ambiente sociocultural que le es propio",
+        "target": "flamenco practitioners in their proper sociocultural environment",
+        "rationale": "The text locates authority over flamenco in the community that recreates and reproduces it in its own social context."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "la beligerancia del «modernismo» ... y del «neomodernismo» ... contra las tradiciones y expresiones musicales flamenca, aflamencada y afines",
+        "target": "modernist and neomodernist treatment of flamenco traditions",
+        "rationale": "The passage uses critical discourse to contest cultural forces that oppose or reframe flamenco traditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions traditions, but the stronger discourse function is critique of commercialization and community authority rather than a direct continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "socially grounded flamenco versus commercialized or high-culture appropriation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible window contains a clear argument about community authority and commercialization."
+  },
+  {
+    "article_id": "1994-07-15-right-a-don-fernando-ca-as-merch-n-man",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word 'auténtico' appears in 'matrimonio auténtico', but it concerns legal/familial status, not flamenco authenticity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article reconstructs genealogy, but it does not frame flamenco knowledge as transmitted through lineage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a documentary/genealogical correction about Fosforito, not a flamenco value or authority claim under the codebook."
+  },
+  {
+    "article_id": "1994-07-16-left-poemas-y-coplas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'duende', 'compás', and 'voz jonda' appear poetically, but they are not applied as explicit evaluative criteria in critical discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The poem invokes memory, antiquity, and estirpe, but it does not make a clear tradition-continuity argument about flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Creative poetic language is not treated as codeable critical or authorizing discourse without an explicit evaluative function."
+  },
+  {
+    "article_id": "1994-07-17-left-la-poderosa-figura-de",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Carmen Amaya, la más genial bailaora de todos los tiempos, la más personal e inimitable, la de la poderosa figura sobre los escenarios, la inolvidable e irrepetible gitana del Somorrostro",
+        "target": "Carmen Amaya",
+        "rationale": "The passage canonizes Carmen Amaya through superlative ranking and exemplary, unrepeatable status."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "La dedicatoria de la calle ha sido una iniciativa del propio Ayuntamiento de Barcelona ... se aprobó por unanimidad que fuese Antonio Ruiz quien ayudara al alcalde de Barcelona a descubrir la placa conmemorativa",
+        "target": "public commemoration of Carmen Amaya",
+        "rationale": "Municipal action, unanimous approval, and a commemorative plaque officially authorize Carmen Amaya's public cultural memory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Antonio ... afirmaba que el acto «me ha parecido maravilloso... homenaje a la sin par, única y jamás repetible Carmen Amaya. Genios como ella no se dan con facilidad, es irrepetible»",
+        "target": "Carmen Amaya's artistic status",
+        "rationale": "The text uses a named authoritative artist-witness to validate Carmen Amaya's exceptional artistic status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text names Carmen Amaya as a gitana del Somorrostro, but identity primarily supports canonization and commemoration rather than a broader identity-boundary argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Carmen Amaya as a canonical flamenco figure worthy of public commemoration",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains clear official recognition and canonizing praise."
+  }
+]

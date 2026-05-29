@@ -1,0 +1,214 @@
+[
+    {
+        "article_id": "1992-03-8-right-gitanos-y-moriscos",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "Presupuestos para una teor\u00eda gitano-morisca del flamenco",
+                "target": "or\u00edgenes gitano-moriscos del flamenco",
+                "rationale": "The passage frames flamenco through a historical-origin theory that seeks roots and continuity between Andalusian music, Moriscos, and Gypsies."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "el estudioso cuenta hoy con uno de los trabajos m\u00e1s interesantes y rigurosos de la bibliograf\u00eda flamenca",
+                "target": "Blas Infante's reconstructed book on flamenco origins",
+                "rationale": "The text explicitly evaluates the scholarly work as interesting and rigorous within flamenco bibliography."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "Gypsies and Moriscos are discussed as identity groups, but the visible text mainly develops historical comparison and origin theory rather than clearly assigning present flamenco authority or belonging through identity."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "tradition",
+                "criticism"
+            ],
+            "target": "a gitano-morisco origin theory of flamenco and Blas Infante's work",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Truncated article; coded only visible origin-theory and evaluation passages."
+    },
+    {
+        "article_id": "1992-03-13-right-enderezando-entuertos-y-ense-and",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "diversos medios de difusi\u00f3n y algunos informadores mal informados, han dicho... que ha sido la primera vez que un guitarrista flamenco lo ha grabado, y no es as\u00ed",
+                "target": "claims that Paco de Luc\u00eda was the first flamenco guitarist to record or perform the Concierto de Aranjuez",
+                "rationale": "The author exercises corrective critical authority by rejecting misinformed public accounts and asserting the accurate flamenco-historical record."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Luis L\u00f3pez Tejera es el decano de la sonanta, ha honrado a Andaluc\u00eda y en general a Espa\u00f1a",
+                "target": "Luis L\u00f3pez Tejera 'Maravilla'",
+                "rationale": "The passage canonizes Luis Maravilla through exemplary status, seniority, and national/regional honor."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "medium",
+                "evidence_quote": "\u00bfNo ser\u00eda justo que por la Consejer\u00eda de Cultura de la Junta de Andaluc\u00eda, se hiciesen las gestiones necesarias... en forma de justo homenaje?",
+                "target": "official recognition of Luis Maravilla",
+                "rationale": "The passage calls on a public cultural institution to authorize and recognize the artist through an official homage."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "There is extensive praise of Luis Maravilla, but CRIT_03 and CRIT_04 more specifically capture the canonizing and corrective functions of the article."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism",
+                "heritage"
+            ],
+            "target": "Luis Maravilla and the historical record of flamenco guitar performance",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article both legitimates Luis Maravilla and delegitimates inaccurate public reporting."
+    },
+    {
+        "article_id": "1992-03-15-left-alre-de-la-fiesta-gitana",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Su fuerte potencial es la concentraci\u00f3n de sentimientos que comparte en las alegr\u00edas y buler\u00edas, destacando por su excepcional sentido del comp\u00e1s y su br\u00edo desenfadado y conmovedor.",
+                "target": "Carmelilla Montoya",
+                "rationale": "The passage explicitly praises the artist's expressive power, comp\u00e1s, energy, and emotional effect."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "sin sacrificar su solidez... entrega, fuerza, conocimiento y ese adecuado acrisolamiento",
+                "target": "Manuel Molina and the profiled flamenco artists",
+                "rationale": "The text applies aesthetic criteria such as solidity, knowledge, force, and refinement to define artistic value."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "cincel\u00f3 las formas en las inveteradas fuentes de los Torre... quienes sienten fluir la cultura secular por sus venas",
+                "target": "Jos\u00e9 de la Tomasa's flamenco artistry",
+                "rationale": "The passage grounds artistic legitimacy in long-standing sources, genealogy, and secular cultural continuity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The article uses gitano identity language, but the strongest visible function is aesthetic and continuity-based legitimation rather than a clear claim about identity-group authority."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Family learning is mentioned for La Negra, but it is brief biographical context and not developed as authoritative embodied or oral transmission."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "tradition"
+            ],
+            "target": "the profiled Gitano flamenco artists",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Artist-profile prose is highly evaluative; codes limited to criticism and tradition/continuity to avoid over-coding identity references."
+    },
+    {
+        "article_id": "1992-03-18-right-enhorabuena-carmen",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "se incluye en los anales de la historia del flamenco junto a Luis Maravilla, los art\u00edfices de la antolog\u00eda de Hispavox y la honda persona de Fernanda de Utrera",
+                "target": "Carmen Linares",
+                "rationale": "The passage places Carmen Linares in a historical flamenco canon alongside exemplary figures and works."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "el adecuado tratamiento que ejerce de los cantes, la profundidad con que matiza los estilos, la belleza de su melisma flamenco, as\u00ed como su largueza cantaora",
+                "target": "Carmen Linares's singing",
+                "rationale": "The text defines her value through explicit aesthetic criteria: treatment of cantes, depth, melisma, and breadth as a singer."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "\u00abLa luna en el r\u00edo\u00bb ha sido el instrumento para conquistar una meta important\u00edsima en su carrera flamenca.",
+                "target": "Carmen Linares and La luna en el r\u00edo",
+                "rationale": "The article explicitly evaluates the recording as a major achievement in her flamenco career."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The phrase 'Los aficionados de esta tierra podemos seguir presumiendo' shows community pride, but it does not clearly grant aficionados authority to judge beyond the critical praise already coded."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Carmen Linares",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article is a concise congratulatory critical review with canonizing language."
+    },
+    {
+        "article_id": "1992-03-19-left-coplas-y-poemas",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Poetic homage and imagery are visible, but no clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse function is asserted."
+    }
+]

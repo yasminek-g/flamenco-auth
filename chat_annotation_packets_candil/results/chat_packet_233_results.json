@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "1991-05-13-left-cantes-aut-ctonos-de-ja-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "encontramos buenas raíces en Jaén",
+        "target": "cantes aflamencados y romances vinculados a Jaén",
+        "rationale": "El pasaje usa raíces y origen territorial para fundamentar la autoridad cultural de ciertos cantes en Jaén."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "bellísimos villancicos flamencos, rescatados del olvido por «El Gallina»",
+        "target": "villancicos flamencos asociados a Rafael Romero «El Gallina»",
+        "rationale": "La formulación presenta esos villancicos como repertorio recuperado de la memoria perdida y sostenido como práctica cultural viva."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "ella ha elevado a la categoría máxima, por su dulzura, por la sencillez de sus ingenuas melodías, por la hondura de sus metales",
+        "target": "la intérprete y sus villancicos flamencos",
+        "rationale": "El texto emite una valoración explícita de calidad artística y eleva la interpretación a un rango superior."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "La mención al ambiente familiar aparece dentro de una copla de quintos y no confiere autoridad comunitaria sobre el flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "cantes y repertorios flamencos o aflamencados de Jaén",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Artículo truncado, pero los fragmentos visibles bastan para codificar raíces, recuperación y evaluación crítica."
+  },
+  {
+    "article_id": "1991-05-16-right-homenaje-a-paco-vallecillo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "El aficionado por excelencia, el hombre que ha entregado su vida al flamenco, el valedor del «mairenismo»",
+        "target": "Paco Vallecillo",
+        "rationale": "La autoridad de Vallecillo se legitima desde su condición de aficionado ejemplar y sostenedor de una corriente flamenca."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "La Fundación Andaluzía de Flamenco, en estrecha colaboración con el Departamento Asesor de Flamenco de la Junta de Andalucía, desarrollaron... el homenaje",
+        "target": "homenaje institucional a Paco Vallecillo",
+        "rationale": "La valoración pública del homenajeado se canaliza mediante organismos institucionales flamencos y autonómicos."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Cantó por soleares, siguiriyas y tangos, con facultades, sentido del compás, quejío y sentimiento",
+        "target": "recital de Manuel Mairena",
+        "rationale": "El pasaje aplica criterios estéticos flamencos como compás, quejío y sentimiento para valorar el recital."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "La palabra 'hombre' y las referencias a gitanos no organizan por sí solas una frontera identitaria o autoridad de grupo en el fragmento visible."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Paco Vallecillo y el homenaje flamenco celebrado en Ceuta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Se evita codificar enseñanza moral familiar porque no funciona como pedagogía flamenca."
+  },
+  {
+    "article_id": "1991-05-17-right-opini-n-paco-de-luc-a-flamenco-u",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el fenómeno que representa la música de este artista incomparable y su lugar en el universo musical de la guitarra",
+        "target": "música de Paco de Lucía en Zyriab",
+        "rationale": "El autor formula una valoración explícita de la importancia artística de Paco de Lucía y su posición en la guitarra."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "¿Puede negar alguien el más puro sabor flamenco en la taranta de «Tío Sabas», en los aires huelvanos de «Almonte» o en el maravilloso diálogo de Paco y Sanlúcar en «Compadres»?",
+        "target": "flamencura de piezas de Paco de Lucía con resonancias jazzísticas",
+        "rationale": "La pregunta retórica afirma la genuina condición flamenca de piezas que también contienen elementos no flamencos."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Esa es su gran virtud. El público de Paco está en el mundo entero, porque utiliza un lenguaje universal",
+        "target": "estética híbrida y universal de Paco de Lucía",
+        "rationale": "El texto usa criterios estéticos como sabor flamenco, resonancias jazzísticas, diálogo musical y lenguaje universal para explicar la calidad del disco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "La palabra 'lugar' no activa una lógica de patrimonio vivo, salvaguardia o memoria comunitaria en el fragmento."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Aunque se defiende la flamencura de la obra, no se excluye claramente un objeto como falso, impuro o ilegítimo."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Paco de Lucía y el disco Zyriab",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "La valoración de lo universal se codifica como crítica estética y autenticación, no como patrimonio."
+  },
+  {
+    "article_id": "1991-05-19-left-coplas-de-verde-luna",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "La mención 'cantando por soleá' aparece dentro de una copla y no evalúa ni define calidad flamenca."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Texto poético sin discurso evaluativo, pedagógico, patrimonial, comunitario o autenticador visible."
+  },
+  {
+    "article_id": "1991-05-19-right-carlos-cruz",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Tu cante conmovía. No te serviste de recursos. Para qué... Tu cante dolía.",
+        "target": "cante de Pepe Polluelas",
+        "rationale": "El homenaje valora explícitamente la fuerza expresiva del cante de Pepe Polluelas."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "A solas puedo oír tu cante, llanto más que cante, el tenue vibrar de tu voz",
+        "target": "voz y expresión cantaora de Pepe Polluelas",
+        "rationale": "El pasaje aplica criterios de expresividad emocional, voz y dolor para definir el valor del cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "'No precisaste de escuelas' niega la necesidad de formación formal, pero no establece una autoridad pedagógica concreta ni un método de transmisión."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "'oro puro' funciona como metáfora lírica del dolor y no como frontera de pureza flamenca."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "cante de Pepe Polluelas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "El texto es elegíaco, pero contiene evaluación clara del cante."
+  }
+]

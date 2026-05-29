@@ -1,0 +1,302 @@
+[
+  {
+    "article_id": "1982-05-8-right-de-nuevo-sobre-los-cafes-cantant",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Este café, del mejor estilo modernista, de aire provinciano y señoril, perfectamente conservado... fue así mismo un verdadero café cantante",
+        "target": "Café Colón as a flamenco café cantante",
+        "rationale": "The passage evaluates the venue's style, preservation, and status as a true café cantante rather than merely listing it."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Este local era; creemos, el preferido de los aficionados al cante grande, que se reunían a diario para decir sus coplas.",
+        "target": "local aficionados and the Cortijo Real flamenco setting",
+        "rationale": "The text grounds the venue's flamenco significance in the daily practice and recognition of aficionados of cante grande."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "En él se podía escuchar a las mejores voces cantaoras de nuestro pueblo",
+        "target": "local singers associated with El Cortijo Real",
+        "rationale": "The passage creates a local hierarchy by identifying these singers as the best voices of the town."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article reconstructs local flamenco history, but it does not clearly frame the cafés as public heritage requiring safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The historical account suggests continuity of local afición, but pastness alone is not used strongly enough as an authenticity or tradition claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "La Carolina cafés cantantes and local flamenco singers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-9-left-un-autografo-de-manuel-escacena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "va situando a La Carolina como un centro flamenco de primer orden —o de segundo... pero realmente importante",
+        "target": "La Carolina within flamenco geography",
+        "rationale": "The passage explicitly ranks La Carolina as an important flamenco center while qualifying its place below the great cante centers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "La comunidad gitana, como ya indicamos, inseparable del cante.",
+        "target": "the Gitano community in La Carolina's flamenco formation",
+        "rationale": "The text makes an identity group central to the explanation of flamenco rootedness and local authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "de tanta aceptación popular, como de graves consecuencias para el flamenco, merece ser recordado coo buen intérprete de saetas, tarantas, cartageneras, cantes de ida y vuelta y, sobre todo, por sus fandangos de Lucana",
+        "target": "Manuel Escacena's flamenco legacy",
+        "rationale": "The passage gives a mixed critical judgment, noting damaging consequences for flamenco while preserving Escacena's value as an interpreter."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'historia' and 'memoria flamenca' appears, but the visible text mainly ranks local significance rather than framing public heritage work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses arraigo and historical factors, but the stronger discourse function is critical ranking of La Carolina's importance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "La Carolina's flamenco status and Manuel Escacena's legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text combines the end of a café-cantante discussion with the Escacena autógrafo note; annotations follow only the visible article_text_for_review."
+  },
+  {
+    "article_id": "1982-05-9-right-el-canario-de-madrid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "desapareció una de las figuras artísticas más significativas del flamenco madrileño",
+        "target": "Pedro Sánchez Lanagá, El Canario de Madrid",
+        "rationale": "The obituary canonizes El Canario as one of the most significant figures of Madrid flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "muchísimo mejor artista que no pocos de los que formaron parte en los distintos elencos con los que actuó",
+        "target": "El Canario's artistic quality",
+        "rationale": "The passage explicitly evaluates El Canario as a better artist than many colleagues in the companies where he worked."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Conoció y actuó en los últimos cafés cantantes madrileños, aprendiendo sus cantes de los grandes maestros",
+        "target": "El Canario's flamenco knowledge and repertoire",
+        "rationale": "His authority is tied to learning cantes from great masters in café cantante settings, a lineage-based mode of transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "no serán totalmente desconocidas por los auténticos aficionados",
+        "target": "authentic aficionados as witnesses to El Canario's neglect",
+        "rationale": "The text invokes knowledgeable aficionados as a community able to recognize the injustice of El Canario's neglect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "'Auténticos aficionados' describes the quality of the aficionados, not the authenticity of flamenco or El Canario's art."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "El Canario de Madrid",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-10-left-las-letras-flamencas-de-rafael-g",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "cuando el poeta es y se siente pueblo, las coplas le nacen bailándose desde los enraizados sentimientos",
+        "target": "Rafael Guillén's flamenco coplas",
+        "rationale": "The passage grounds the value of the coplas in rooted popular feeling and the poet's identification with the pueblo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el caso del poeta granadino Rafael Guillén, uno de los más recios de la llamada generación del cincuenta, y a quien... no puede regatearle su puesto",
+        "target": "Rafael Guillén as poet and flamenco lyric writer",
+        "rationale": "The text explicitly praises Guillén's stature and defends his rightful place against neglect."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "cinco cantes inéditos amarrados al puño de lo popular, a la garganta y el corazón cantaores",
+        "target": "Guillén's unpublished cantes",
+        "rationale": "The passage applies aesthetic criteria of popular force, voice, and cantaor feeling to characterize the value of the lyrics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The pueblo is invoked as a source of value, but the passage functions more as rooted tradition/authenticity discourse than identity-boundary framing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text discusses popular forms and coplas, but it does not describe a concrete mode of transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Rafael Guillén's flamenco lyrics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-05-10-right-chiclanita",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "el flamenco está formado por muy escasas verdades y muy bellas mentiras que merecerían ser verdades",
+        "target": "flamenco biographical legend around Chiclanita",
+        "rationale": "The passage critiques flamenco historical discourse as a field where legend and truth must be critically separated."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "nos embóábamos oyendo historias, explicaciones sobre cantes... y biografías de figuras pretéritas",
+        "target": "knowledge about Chiclanita and older flamenco figures",
+        "rationale": "The author frames knowledge as transmitted orally through extended listening to older artists' stories, explanations, and memories."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "no fue, ni mucho menos, un gigante... en modo alguno nadie lo ha considerado jamás como uno de los pilares del Cante",
+        "target": "Chiclanita's place in the flamenco canon",
+        "rationale": "The text explicitly rejects an inflated canonical rank for Chiclanita and denies that he should be treated as a pillar of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Antonio el Troni... para mí... fue por aquella época el mejor de todos los que se rompieron en Cádiz",
+        "target": "Antonio el Troni compared with Chiclanita and Cádiz singers",
+        "rationale": "The passage makes an explicit evaluative judgment ranking El Troni above other singers of that Cádiz milieu."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "decía unos cantes raros, de oscuro y tal vez secular origen, que ninguno conocía. Esto debió tener cierto mérito",
+        "target": "Chiclanita's unusual cantes",
+        "rationale": "The passage identifies rarity, obscure origin, and possible antiquity as aesthetic-historical criteria for judging the cantes' merit, while limiting their value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage mentions secular origin and antiquity, but it treats them as contested criteria rather than clearly authorizing Chiclanita as tradition-bearing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "A shared afición among friends is described, but it functions mainly as context for oral testimony rather than community authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call for better historiography could support preservation of memory, but it lacks a clear public heritage or safeguarding frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Chiclanita's historical and canonical status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

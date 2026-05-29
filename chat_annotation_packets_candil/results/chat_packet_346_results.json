@@ -1,0 +1,216 @@
+[
+  {
+    "article_id": "1998-01-3-left-nuevos-aires-y-renovada-ilusi-n",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "queremos incentivar la vigilancia para que todos los artículos o trabajos tengan las suficientes garantías de calidad, veracidad y juicio crítico",
+        "target": "Candil's editorial and article selection standards",
+        "rationale": "The editorial positions the publication's critical oversight as an authority guaranteeing quality, truthfulness, and critical judgment in flamenco writing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "en un claro intento de revalorizar, incentivar y difundir nuestro arte flamenco",
+        "target": "Candil's role in valuing and disseminating flamenco",
+        "rationale": "The passage evaluates the magazine's mission as revalorizing and promoting flamenco rather than merely reporting administrative changes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article asks institutions to support the survival of the publication, but the visible passage does not frame flamenco as heritage safeguarding or public cultural heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Candil as a critical vehicle for flamenco valuation and dissemination",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1998-01-4-left-la-investigaci-n-del-flamenco-he",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "este género ocupó en el ámbito de su conversión en un elemento clave de la cultura andaluz, más aún, en una seña explícita de identidad colectiva",
+        "target": "flamenco as Andalusian collective culture",
+        "rationale": "The passage frames flamenco as public collective cultural value and an explicit sign of identity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "también de estudios científicos, que contrastaron considerablemente con los anteriores conceptos neorrománticos y especulativos",
+        "target": "scientific flamenco research versus earlier neoromantic concepts",
+        "rationale": "The article authorizes scholarly research as a corrective expert discourse against prior speculative flamenco concepts."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "surgió el deseo entre los cantaores y aficionados de retomar ciertas tradiciones en el cante para evitar su olvido y desaparición",
+        "target": "cante traditions",
+        "rationale": "Tradition and continuity are invoked as valued practices to be recovered so they do not disappear."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "El cante «renació» entonces como «cante gitano-andaluz», modelado por la voz del gran cantaor de Mairena del Alcor y declarado propiedad exclusiva de los gitanos.",
+        "target": "cante gitano-andaluz and Gitano ownership claims",
+        "rationale": "The passage describes identity-group framing in which Gitano identity is made central to ownership and representation of the cante."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "flamenco research and cante as collective, traditional, and identity-marked culture",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; codes are limited to visible beginning/end context and evidence windows."
+  },
+  {
+    "article_id": "1998-01-21-left-ellos-los-protagonistas-dicen-ma",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Admite los vanguardismos y los nuevos movimientos flamencos, mas siempre antepone la pureza de este arte.",
+        "target": "Mariana Cornejo's valuation of flamenco purity",
+        "rationale": "Purity is explicitly used as an aesthetic criterion that takes precedence over avant-garde or new flamenco movements."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Amante de este arte y muy concretamente del de su tierra. Amante igualmente de los artistas de su Cádiz y defensora a ultranza de Pastora y La Perla de Cádiz",
+        "target": "Mariana Cornejo's Cádiz-grounded artistic identity",
+        "rationale": "The passage frames local Cádiz identity as central to her artistic belonging and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text prioritizes purity over new movements, but it does not clearly exclude or devalue a specific impure target strongly enough for purity boundary-work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The pianist gives her vocal lessons, but the passage does not position him as an authoritative mediator of flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Mariana Cornejo's flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; codes are limited to visible beginning/end context and evidence window."
+  },
+  {
+    "article_id": "1998-01-23-left-poema",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible poem contains no clear flamenco-related evaluative, authorizing, pedagogical, communal, heritage, or critical discourse."
+  },
+  {
+    "article_id": "1998-01-23-right-una-vida-llena-de-seis-figuras-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Se forjó pues, en el seno de una familia gitana y lebrijana de gran tradición flamenca",
+        "target": "Pedro Bacán's flamenco formation",
+        "rationale": "The passage grounds Bacán's artistic value in rooted continuity with a Gitano and Lebrija flamenco tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Aunque recibió las primeras enseñanzas del lebrijano Benito Vázquez Caro, el maestro Penaca, sus principios quedaron influenciados por el legado familiar",
+        "target": "Pedro Bacán's learning and artistic formation",
+        "rationale": "The article frames his flamenco knowledge as transmitted through both a named teacher and family legacy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "un lebrijano de oro y andaluz universal",
+        "target": "Pedro Bacán",
+        "rationale": "The article canonizes Bacán through elevated exemplary status, presenting him as both locally rooted and universally significant."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family and local community grounding are present, but the emitted AUTH_03 and PED_02 codes capture the tradition and transmission functions more precisely."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad praise, but the stronger discourse function is canonization and hierarchy rather than a discrete review-style evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Pedro Bacán's flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; codes are limited to visible beginning/end context and evidence window."
+  }
+]

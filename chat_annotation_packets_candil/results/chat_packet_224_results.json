@@ -1,0 +1,262 @@
+[
+  {
+    "article_id": "1990-11-17-left-notas-p-stumas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fernanda Primera de Utrera, Reina de la Soleá",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage canonizes Fernanda through a royal title that elevates her as an exemplary figure of soleá."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "ella posee, técnicamente hablando, una exquisitez y una dificultad de inteligencia que no es para todos",
+        "target": "Fernanda's cante",
+        "rationale": "The passage applies explicit aesthetic and technical criteria—exquisiteness, difficulty, intelligence—to define the value of her singing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "el cante de Fernanda viene de la hondura de los tiempos irremediablemente remotos",
+        "target": "Fernanda's cante",
+        "rationale": "The value of Fernanda's cante is grounded in deep temporal continuity and remote origins."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions race and gitano identity, but the strongest visible discourse function is canonizing and rooting the cante rather than explicitly defining identity-based belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Fernanda de Utrera and her cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-17-right-retrato-del-ngel-moreno-a-fernan",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "su cante era la materialización del ángel moreno",
+        "target": "Fernanda and Bernarda's cante",
+        "rationale": "The passage uses a supernatural aesthetic criterion to define the expressive force and value of their cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "traían a toda la humanidad la expresión más pura de un trágico mensaje de amor",
+        "target": "Fernanda and Bernarda's cante",
+        "rationale": "The passage presents their cante as the purest expression of a tragic flamenco message, attributing genuineness and proper value to it."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "oí el mensaje de siglos que la historia me traía",
+        "target": "Fernanda and Bernarda's cante",
+        "rationale": "The passage grounds the cante's authority in historical depth and a message transmitted across centuries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to pueblo and desposeídos suggest collective identity, but they remain poetic background rather than a clear boundary of belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-18-right-poes-as-y-cantes-salvador-de-qui",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la heredó de la Mercé, aquella que ar expirá se llevó la llave grande der cante por soleá",
+        "target": "Fernanda's soleá",
+        "rationale": "The passage authorizes Fernanda's soleá through inheritance from a valued predecessor and continuity with an older cante lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Su cante es un surtidor sombrío de pena transparente en que cada gota de compás redonda",
+        "target": "Fernanda and Bernarda's cante",
+        "rationale": "The passage uses compás, sorrow, and expressive density as aesthetic criteria for valuing their singing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Fernanda cantar, lo que se dice cantar, siempre ha habido buenos cantaores. Pero nadie ha llorado como llora",
+        "target": "Fernanda",
+        "rationale": "The passage ranks Fernanda above other good singers in the specific expressive domain of flamenco lament."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The retrieval-window reference to mujeres is ordinary conversation content and does not frame flamenco identity, belonging, or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda, especially Fernanda's soleá",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1990-11-22-right-fernanda-de-utrera-y-el-cante-po",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "reúne el trébol mágico de las esencialidades flamencas: tragirrabia, compás y duende",
+        "target": "Fernanda de Utrera's cante",
+        "rationale": "The passage explicitly defines flamenco value through named aesthetic criteria: tragirrabia, compás, and duende."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "pasa de participar en reuniones íntimas a los escenarios y tablaos en los años cincuenta",
+        "target": "Fernanda de Utrera's professional trajectory",
+        "rationale": "The passage marks a meaningful transition from intimate participatory settings to public stages and tablaos in the revaluation of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "un cante totalmente fundamentado en la ortodoxia heredada de su antepasadía gitana",
+        "target": "Fernanda de Utrera's cante",
+        "rationale": "The passage grounds the legitimacy of Fernanda's cante in inherited orthodoxy and lineage continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fernanda de Utrera, además de una cantaora genial es un arquetipo de su arte",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage canonizes Fernanda as an archetype of her art, giving her exemplary status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text invokes the afición of Jerez and cabales, but the visible passage does not clearly grant them authority beyond reception of Fernanda's cante."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "tradition"
+      ],
+      "target": "Fernanda de Utrera's cante por soleá",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1990-11-25-left-la-sole-de-fernanda",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "En Fernanda todo es esencial, nada, en su forma de entender el Cante, es añadido o superfluo",
+        "target": "Fernanda's cante",
+        "rationale": "The passage defines the quality of Fernanda's cante through aesthetic criteria of essence, restraint, and absence of the superfluous."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Entonces Fernanda es sola, única, indiscutible emperadora",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage constructs Fernanda as unique and supreme within the canon of soleá."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "En ella está resumida la historia y la geografía, la tradición y la verdad",
+        "target": "Fernanda's soleá",
+        "rationale": "The passage authorizes Fernanda's soleá by presenting it as the condensation of history, geography, tradition, and truth."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad praise, but the stronger, more specific evidence is captured under aesthetic criteria and canon hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Fernanda de Utrera and her soleá",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

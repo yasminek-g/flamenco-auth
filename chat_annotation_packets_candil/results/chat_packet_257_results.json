@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "1992-07-16-right-al-camar-n-de-la-isla",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses words such as 'jondo' and refers to Camarón's voice, but the visible text is primarily elegiac/poetic and does not clearly apply an aesthetic criterion as critical judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Elegiac poetic homage without a clearly codable discourse function under the collapsed codebook."
+  },
+  {
+    "article_id": "1992-07-17-right-camar-n-la-misma-verdad-distinta",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Cuando «Camarón de la Isla» aparece, los flamencólogos no se vuelcan en elogios. Incluso lo rechazan o lo arrinconan.",
+        "target": "flamencólogos and their reception of Camarón",
+        "rationale": "The passage explicitly critiques expert flamencological judgment and its prior boundary-policing rejection of Camarón."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "José Monje Cruz ... ha sido el heredero directo, no de una forma de cantar, sino de concepción gitana del cante.",
+        "target": "Camarón's cante",
+        "rationale": "Camarón's value is grounded in inheritance and continuity with a 'concepción gitana del cante,' not merely in individual style."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Camarón, como gitano, cumplió con su obligación histórica.",
+        "target": "Camarón as Gitano artist",
+        "rationale": "The passage frames Camarón's artistic significance through ethnic/community identity and historical obligation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article calls Camarón a 'leyenda viva' and discusses creators/restorers, but the stronger visible discourse is expert reception and inherited gitano conception rather than a sustained ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition",
+        "community"
+      ],
+      "target": "Camarón's flamenco significance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Codes focus on the visible contrast between expert rejection, later recognition, and gitano continuity."
+  },
+  {
+    "article_id": "1992-07-18-right-camar-n-de-la-isla-algo-m-s-que-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Camarón de la Isla ya es historia y leyenda.",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón by placing him in history and legend, later comparing his social magnitude with Carmen Amaya."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Camarón, sin embargo, no lo es tanto para este último... pero rechaza el apasionamiento extraflamenco que provocaba en una parte de sus incondicionales",
+        "target": "Camarón's extraflamenco following",
+        "rationale": "The passage invokes the 'aficionado clásico' as a judging authority that accepts Camarón's cante while policing the boundary around extraflamenco enthusiasm."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Nunca ningún gitano había alcanzado tales cotas de reconocimiento mundial. Sus gentes eran plenamente conscientes de ello",
+        "target": "Camarón as Gitano public figure",
+        "rationale": "The passage frames his significance through Gitano identity and collective recognition by 'sus gentes.'"
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is clear evaluative praise, but it largely supports the stronger canonization and boundary-critique codes already emitted."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Camarón's status as more than a cantaor",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article legitimates Camarón canonically while marking a contested boundary around his wider popular following."
+  },
+  {
+    "article_id": "1992-07-19-right-camar-n-para-siempre-recuerdos-y",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "aquellos cantes escuetos, estrictos, vivos —guitarra y voz solitarias solamente—... los quejíos y «bocaos» tremendamente acompasados",
+        "target": "Camarón and Tomatito's recorded performance",
+        "rationale": "The passage applies aesthetic criteria such as restraint, aliveness, voice, guitar, quejíos, bocaos, and compás to explain the recording's value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "¡qué voz tan auténtica la de José por alegrías!",
+        "target": "Camarón's voice",
+        "rationale": "The passage explicitly attributes authenticity to Camarón's flamenco voice in a value-bearing assessment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The older Gitano listener's response suggests community recognition, but the excerpt does not clearly present him as an authority who judges or sustains flamenco for others."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The ending reflects memory and remembrance, but it remains personal and affective rather than public cultural safeguarding or community heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Camarón's recorded cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Authenticity and aesthetic criteria are both explicit in the visible text."
+  },
+  {
+    "article_id": "1992-07-22-right-el-caro-precio-de-la-gloria-la-f",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha sido para mi gusto personal el segundo genio que ha dado el Arte Flamenco, después de Pepe Marchena en este siglo",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage explicitly ranks Camarón within a hierarchy of twentieth-century flamenco geniuses."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "con sus creaciones ha roto todos los moldes establecidos hasta su aparición como estrella del cante",
+        "target": "Camarón's creations",
+        "rationale": "The passage evaluates Camarón's artistic originality and impact as breaking established forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The phrase 'dogma y herejía' signals polemic, but the visible text does not clearly exercise expert authority to police a specific proper/improper flamenco boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text says Camarón connected a wide youth audience with the flamenco environment, but this is audience expansion rather than institutional or transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Camarón's place in flamenco history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest visible discourse is ranking and evaluative assessment of artistic innovation."
+  }
+]

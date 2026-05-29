@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1988-03-4-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "el flamenco necesita ser tutelado como patrimonio cultural que es sometido a permanentes acosos, a frívolos desviacionismos, a la agresión comercial",
+        "target": "flamenco as cultural patrimony",
+        "rationale": "The passage explicitly frames flamenco as patrimonio cultural requiring protection as a public cultural good."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "la institucionalización del Flamenco no puede reputarse, sin más, como algo negativo... porque el flamenco necesita ser tutelado como patrimonio cultural",
+        "target": "official institutional tutelage of flamenco",
+        "rationale": "The editorial legitimates official institutional involvement as an authorized mechanism for recognizing and protecting flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "permanentes acosos, a frívolos desviacionismos, a la agresión comercial",
+        "target": "commercial and frivolous deviations from flamenco",
+        "rationale": "The passage draws a boundary between protected legitimate flamenco and commercial or frivolous distortions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The editorial praises the new foundation and criticizes poorly organized festivals, but these evaluations are secondary to the heritage/institutional argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["heritage", "authenticity"],
+      "target": "institutional protection and ordering of flamenco in Andalucía",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The opening order-form material is not coded."
+  },
+  {
+    "article_id": "1988-03-5-right-la-religiosidad-en-el-cante-flam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El flamenco como expresión genuina de la cultura de este pueblo recoge de manera muy heterogénea las referencias al ser trascendente.",
+        "target": "flamenco as expression of Andalusian religious culture",
+        "rationale": "The passage explicitly attributes genuineness to flamenco as an expression of the culture of the people."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Siempre he pensado que el cante flamenco es un sistema complejo de vivencias de un pueblo que ha sido marginado social y políticamente.",
+        "target": "the socially and politically marginalized people associated with flamenco",
+        "rationale": "The passage frames flamenco through collective identity and marginalization, making group experience central to its meaning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "existen vestigios en las letras flamencas en todas y en cada una de las culturas que florecieron en Andalucía",
+        "target": "historical-cultural roots of flamenco religiosity",
+        "rationale": "The visible text grounds flamenco religious expression in historical residues and cultural continuity in Andalucía."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article cites flamencological sources, but the excerpt mainly uses them to support a cultural argument rather than to exercise critic/expert evaluative authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "community"],
+      "target": "religiosity as a meaningful dimension of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated text still contains enough visible evidence for the emitted codes."
+  },
+  {
+    "article_id": "1988-03-8-right-lo-dijo-don-ram-n-montoya-y-tamb",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Joaquín Vargas Soto, «El Cojo de Málaga», quien sin duda fue el mejor cantaor por estos palos, después de don Antonio Chacón",
+        "target": "El Cojo de Málaga and Antonio Chacón within Levante cantes",
+        "rationale": "The passage explicitly ranks singers and constructs a hierarchy of excellence for these styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "poder demostrar con pruebas contundentes, como a mí me gusta hacerlo, que el equivocado era él. Que yo había dicho la verdad.",
+        "target": "author's correction of accepted flamenco opinion about Manuel Torre",
+        "rationale": "The narrator claims authority through evidence and historiographic correction, policing a mistaken flamenco judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Hoy, por suerte para todos, el panorama ha cambiado para bien, porque los aficionados, jóvenes en su mayoría, son estudiosos y preocupados por su arte sin igual",
+        "target": "young flamenco aficionados",
+        "rationale": "Aficionados are presented as knowledgeable, studious participants whose competence sustains flamenco understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The repeated claim to truth concerns factual correction about repertoire, not a genuineness claim about flamenco itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "community"],
+      "target": "knowledgeable correction of flamenco historiography and artist rankings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is truncated but the visible debate and ranking evidence are sufficient."
+  },
+  {
+    "article_id": "1988-03-10-right-antonio-pi-ana-como-se-a-de-iden",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Lo vulgarizan los vulgares, lo desorientan los desorientados, lo desbordan los rebuscadores de nuevos giros y maneras",
+        "target": "vulgarizing and disorienting approaches to cante",
+        "rationale": "The passage draws a strong boundary between legitimate cante and vulgarizing or misguided distortions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Desaparecerían matices, aires y hasta formas, pero jamás las raíces vivificadas por una tierra madre determinada.",
+        "target": "roots and continuity of cante",
+        "rationale": "The text grounds the survival and value of cante in roots, territory, continuity, and persistence through change."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "difícilmente pueden llegar a su comprensión y deleite total otras sensibilidades que no sean las nacidas e iniciadas por auténtica predisposición",
+        "target": "listeners capable of fully understanding cante",
+        "rationale": "The passage creates an epistemic boundary between initiated sensibilities and others who cannot fully understand the art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Piñana padre como señal de identidad",
+        "target": "Antonio Piñana as exemplar of cantes de Levante",
+        "rationale": "The article canonizes Piñana as an identity-bearing model and exemplary restorer of the Levante repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'cante de verdad' support authenticity language, but the stronger and more specific discourse here is purity boundary-work and roots/continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "tradition", "community", "criticism"],
+      "target": "Antonio Piñana and the legitimate continuity of cantes de Levante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Four codes are used because the article contains distinct boundary, roots, insider, and canonizing claims."
+  },
+  {
+    "article_id": "1988-03-11-left-letras-flamencas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Viva la PEÑA JUAN BREVA... porque cante y cantaor de no habé sío por ella fuera de mal en peor.",
+        "target": "Peña Juan Breva",
+        "rationale": "The lyric credits the peña with sustaining cante and cantaor, granting a community institution authority as a support structure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to Juan Breva and El Canario are honorific but too poetic and brief to clearly construct a canon or hierarchy beyond admiration."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "Peña Juan Breva as sustainer of flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most lyrics are not coded because they are poetic or descriptive rather than explicit discourse about authority, heritage, pedagogy, community, or criticism."
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "article_id": "1990-11-13-left-de-do-a-bernarda-a-la-ilustr-sim",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la valía de un arte se hace más perdurable por lo que es capaz de conservar que por las precipitadas y efímeras construcciones instrumentales que nos asolan",
+        "target": "Fernanda y Bernarda de Utrera and the flamenco tradition they embody",
+        "rationale": "The passage grounds artistic value in conservation, durability, and resistance to ephemeral modern constructions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "su música, tan indefinible como verdadera, al estar inspirada en la auténtica raíz del cante de los gitanos, no es una vuelta a los orígenes, sino el principio mismo de lo jondo",
+        "target": "the sisters' music as rooted jondo cante",
+        "rationale": "The text defines their music as true and rooted in an authentic source, separating it from lesser or merely derivative flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Ellas son únicas y creadoras de un lenguaje que las distingue de sus coetáneos",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The passage canonizes them as unique creators whose artistic language sets them above contemporaries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad praise, but the stronger function is canonization and authenticity boundary work rather than a discrete review judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda de Utrera as rooted, superior flamenco artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; codes are based only on the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "1990-11-14-left-fernanda-y-bernarda-en-mairena-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la más genial solearera de todos los tiempos",
+        "target": "Fernanda de Utrera",
+        "rationale": "The superlative creates a clear hierarchy and canonizes Fernanda as an unmatched figure in soleá."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "espejo de toda una dinastía cantaora, de toda una afición, de todo un pueblo",
+        "target": "Fernanda and Bernarda within Utrera/Mairena flamenco continuity",
+        "rationale": "The sisters are authorized through dynastic continuity, communal memory, and inherited cantaora tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "la transmisión espiritual y cantaora la dio el duende de Fernanda",
+        "target": "Fernanda's cante",
+        "rationale": "Duende is used as an aesthetic criterion explaining the force and value of Fernanda's performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición and pueblo are invoked, but the clearer coding function is tradition/canon legitimation rather than community authority independently exercised."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "community"
+      ],
+      "target": "Fernanda and Bernarda de Utrera as canonical artists in Mairena/Utrera flamenco memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-14-right-dos-gitanas-en",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fernanda a quien la solemos denominar como la «última emperatriz del cante por soleá», nos transporta a otro mundo",
+        "target": "Fernanda de Utrera's soleá",
+        "rationale": "The passage explicitly praises Fernanda's artistic effect and quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la «última emperatriz del cante por soleá»",
+        "target": "Fernanda de Utrera",
+        "rationale": "The title elevates Fernanda into a canonical, hierarchical position within soleá."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "el reconocimiento a sus muchos méritos por toda la afición flamenca",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The passage frames the homage as recognition by the flamenco afición, giving community validation to their merits."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitana identity is repeatedly foregrounded, but most uses function as descriptive/honorific framing rather than a distinct argument about identity-based authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Fernanda and Bernarda de Utrera as admired and community-recognized artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-15-right-utrera-y-sus-cantaoras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "la Soleá, de la que Fernanda ha sido su máximo exponente, de «su soleá», la de su tierra natal, la heredada de Mercedes la Serneta, Juaniqui de Lebrija y María Peña",
+        "target": "Fernanda's Utrera soleá",
+        "rationale": "The passage authorizes Fernanda's soleá through inheritance, place, and continuity with named predecessors."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Fernanda ha sido su máximo exponente",
+        "target": "Fernanda de Utrera",
+        "rationale": "Calling Fernanda the maximum exponent of soleá establishes a clear artistic hierarchy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "se han hecho acreedoras a un justo reconocimiento y admiración de todos los que sentimos de verdad la esencia del cante de nuestra tierra",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The passage presents knowledgeable affective community recognition as validating the sisters' artistic standing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Awards and institutions are mentioned, but the passage does not clearly frame them as heritage authorization or public cultural heritage management."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "community"
+      ],
+      "target": "Fernanda and Bernarda de Utrera as inheritors and recognized exponents of Utrera cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1990-11-16-left-ole-viva-utrera",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "nunca si antes no eres hijo natural de la tierra del Cante",
+        "target": "belonging to the land of cante as condition for cantaor identity",
+        "rationale": "The passage makes geographic and communal identity a condition of flamenco embodiment and authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Fernanda y Bernarda, cantaoras de Utrera, fueron fundidas en el barro fértil de su campiña y la luz inmensa de su cielo azul",
+        "target": "Fernanda and Bernarda's rooted Utrera cante",
+        "rationale": "The sisters' value is grounded in rootedness, origin, and continuity with the land that formed them."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "nuestras dos mejores artistas flamencas",
+        "target": "Fernanda and Bernarda de Utrera",
+        "rationale": "The phrase ranks the sisters as the community's best flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article presents their art as genuinely rooted, but the clearest authenticity mechanism is origin/continuity, captured by AUTH_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Fernanda and Bernarda as artists authorized by Utrera's geographic and communal identity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,299 @@
+[
+  {
+    "article_id": "1991-01-15-left-pastora-y-la-casa-de-los-pabones",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "es el núcleo familiar quien surte la fuente de la memoria de los intérpretes... una necesidad expresiva que brota por generaciones",
+        "target": "la Casa de los Pabones / transmisión familiar del cante",
+        "rationale": "The passage explicitly frames flamenco knowledge and expressive memory as transmitted through family and across generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "mantienen por lo general la esencia de un mismo aprendizaje",
+        "target": "la escuela familiar sevillana de los Pabones",
+        "rationale": "The article grounds present flamenco value in continuity, inherited learning, and preservation of an essential familial style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "buena armonía, una madurez melódica que fue densa en contenido... y una sublime, por no decir insuperable, conducción del ritmo",
+        "target": "Pastora Pabón's cante",
+        "rationale": "The passage defines Pastora's flamenco quality through explicit aesthetic criteria such as harmony, melodic maturity, modulation, and rhythm."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pastora Pabón sigue siendo la gran figura de todos los tiempos",
+        "target": "Pastora Pabón",
+        "rationale": "The article canonizes Pastora by placing her at the top of an all-time hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'flamenco auténtico' appears, but the stronger supported function in the visible ending is aesthetic criteria and canonization rather than a distinct authenticity claim."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions memoria, but the function is familial lineage transmission rather than public heritage safeguarding or community heritage politics."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Pastora Pabón and the Pabón family school of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt; codes are limited to visible beginning/window/ending evidence."
+  },
+  {
+    "article_id": "1991-01-19-right-opini-n-el-flamenco-en-la-pintur",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nadie pintó como él, ese caldo sazonado... de un pueblo ensimismado en esta clave aguda del cante flamenco",
+        "target": "Julio Romero de Torres's flamenco-related painting",
+        "rationale": "The passage makes an explicit evaluative judgment about the painter's artistic representation of flamenco and Andalusian feeling."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Todo ello marca la aureola de un artista, ídolo y mito de generaciones",
+        "target": "Julio Romero de Torres",
+        "rationale": "The text elevates Romero de Torres to mythic, generational status, constructing a hierarchy of artistic importance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el pintor que selló con su paleta, ese alto ideal de belleza del cante «jondo»",
+        "target": "the pictorial representation of cante jondo",
+        "rationale": "The passage links cante jondo to an explicit aesthetic criterion, an ideal of beauty, and credits the painter with capturing it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'arte secular' suggests age, but the visible passage does not clearly use continuity or roots to authorize present flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The wording about perpetuation through painting is memory-like, but it lacks a public heritage or safeguarding frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Julio Romero de Torres's artistic treatment of flamenco/cante jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt; annotations rely only on visible evaluative passages."
+  },
+  {
+    "article_id": "1991-01-21-right-en-defensa-del-cante-jondo-o-el-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "no como una sencilla costumbre local, sino como una efusión del alma",
+        "target": "cante jondo / flamenco",
+        "rationale": "The passage authorizes cante jondo as a profound expression of the soul rather than a merely local custom."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "otros lo utilizaron más bien como un elemento suplementario que contribuía a alimentar un sistema de representación estereotípico del sur de España",
+        "target": "French literary representations of Andalusia and flamenco",
+        "rationale": "The article uses critical discourse to challenge stereotyped, exoticizing representations of flamenco and Andalusian culture."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la cultura popular del sur ibérico, la humilde nobleza de su gente depositaria de un conjunto de tradiciones —y la flamenca es una de ellas— sin comparación",
+        "target": "Andalusian popular culture and flamenco tradition",
+        "rationale": "The passage grounds flamenco's value in a tradition-bearing people and presents that inherited culture as exceptional."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "El Kid americano, horrible payasito, contrahace las pasiones en sus películas... magnífica operación publicitaria. El chavo gitano se desgarra... se canta sólo cuando se tiene ganas.",
+        "target": "commercialized performance versus spontaneous gitano singing",
+        "rationale": "The contrast delegitimates commercial spectacle and publicity while valuing spontaneous, need-driven singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The retrieval trigger 'gran' occurs in a descriptive phrase about exotic theatre, but it does not itself construct a flamenco canon or ranking."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'desde el interior' suggests proximity, but it is not a clear insider/outsider boundary around flamenco belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante jondo as profound Andalusian/gitano expression versus exoticized or commercial representations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated excerpt; ending appears to include translated source text, but it is visible and directly relevant."
+  },
+  {
+    "article_id": "1991-01-25-right-eleg-a-por-do-a-concha-piquer",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "todos sus espectáculos que fueron modelo de elegante distinción, al incorporar con dignidad a las figuras más brillantes que en cada momento tuvo el cante, el baile y la guitarra",
+        "target": "Concha Piquer's spectacles and her relation to flamenco artists",
+        "rationale": "The elegy explicitly praises the artistic quality and dignity of Piquer's spectacles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "sus excelentes creaciones que permanecerán como modelo de un estilo inigualable y siempre de actualidad",
+        "target": "Concha Piquer's artistic creations",
+        "rationale": "The passage canonizes Piquer's creations as an enduring and unmatched stylistic model."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticas creaciones' praises originality, but it does not clearly claim flamenco authenticity or properness."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text calls for memory, fidelity, and a monument, but it remains an elegiac tribute rather than a clear public heritage/safeguarding frame for flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Concha Piquer and her artistic contribution to flamenco-related spectacle",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1991-01-26-left-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Enseguida encontramos motivos suficientes para la positiva valoración del texto que, forzoso es decirlo, asumimos en su totalidad",
+        "target": "the book 'Mujeres gitanas ante el futuro'",
+        "rationale": "The reviewer explicitly gives a positive critical assessment of the book."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "su papel de puente tendido entre la sociedad hostil y el grupo que reclama su derecho... a la peculiaridad, a la diversidad de oficios y modus vivendi",
+        "target": "gitana women and the gitano community",
+        "rationale": "The passage frames gitana women through identity, community representation, and the group's right to distinctiveness."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Pero, enseñar, sí que enseña... el autor recorre la nómina ilustre de artistas de la tierra",
+        "target": "the book 'El flamenco y los flamencos de Alcalá'",
+        "rationale": "The review frames the book as a mediating text that teaches readers flamenco history and local artist knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "nombres tan ilustres como La Roezna, Juan Talega o Manolito el de María, que son algo así como La Ilíada y la Odisea del arte flamenco",
+        "target": "Alcalá flamenco artists and local canon",
+        "rationale": "The passage canonizes named artists by comparing them to foundational epic works and constructing a local hierarchy of importance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text discusses local history, cimientos, and Alcalá traditions, but the stronger visible function is canon formation and pedagogical mediation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'aficionado de raza' suggests insider authority, but the passage does not clearly develop afición as the basis of authority beyond praising the investigator."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténticos enseñantes' refers to genuine teachers in a general sense, not to authentic flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "gitana identity discourse and Alcalá flamenco historiography",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This visible article contains two separate book reviews; codes reflect distinct discourse functions from both."
+  }
+]

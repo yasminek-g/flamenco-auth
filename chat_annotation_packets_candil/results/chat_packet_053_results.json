@@ -1,0 +1,278 @@
+[
+  {
+    "article_id": "1982-07-29-left-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "se le considera como una de las figuras más tempranas y grandes del flamenco de Lebrija. Uno de los grandes intérpretes históricos de siguiriγas",
+        "target": "Diego 'El Lebrijano'",
+        "rationale": "The passage canonizes El Lebrijano by placing him among the earliest great figures and historical interpreters of specific flamenco forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Bernardo fue durante muchos años una de las primeras figuras de los cafés de cante madrileños y de los principales escenarios de España",
+        "target": "Bernardo 'El de los Lobitos'",
+        "rationale": "The article ranks Bernardo as a leading figure in major flamenco venues, constructing his canonical status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Cantaba con la delicadeza de un pájaro y con el sentimiento de una alma en pena. Ni más ni menos: un maestro",
+        "target": "Bernardo 'El de los Lobitos'",
+        "rationale": "The quoted criticism evaluates flamenco quality through expressive delicacy and emotional feeling, then converts those criteria into master status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions that El Lebrijano was Gitano, but this is primarily biographical and does not clearly organize authority or belonging."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "References to followers and schools suggest lineage, but the visible text does not clearly frame learning or transmission as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Diego 'El Lebrijano' and Bernardo 'El de los Lobitos' as historical masters",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Biographical notices mainly perform canonization and aesthetic praise."
+  },
+  {
+    "article_id": "1982-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "El rigor en pro de la defensa y pureza del flamenco, que nos impusiéramos desde la aparición de «CANDIL»",
+        "target": "CANDIL's editorial mission toward flamenco",
+        "rationale": "The editorial explicitly defines its mission as defending flamenco purity, drawing a boundary around proper flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los artistas flamencos más grandes de la historia cantaora, a la vez que egregio cuidador de las limpias esencias jondas, Antonio Mairena",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through superlative historical ranking and casts him as a guardian of jondo essences."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "un número estudioso y crítico en sus más nobles acepciones intelectuales y que estuviese repleto de hondura y jondura",
+        "target": "CANDIL's monographic issue on Antonio Mairena",
+        "rationale": "The editorial frames the issue's critical and scholarly mode as an authoritative way to treat Mairena's flamenco significance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text uses purity and essence language, but the strongest visible function is purity boundary work rather than a separate genuineness claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Mairena is described as a caretaker of jondo essences, but the passage emphasizes purity and canonization more than tradition/continuity as a distinct claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Antonio Mairena and CANDIL's monographic issue devoted to him",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editorial strongly legitimates both Mairena and CANDIL's critical-purist mission."
+  },
+  {
+    "article_id": "1982-09-4-right-antonio-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "cumplirá con su cometido inexorablemente, su cometido de la sustanciosa siembra de la Cultura Flamenca",
+        "target": "CANDIL's monographic issue",
+        "rationale": "The letter frames the magazine issue as a medium for disseminating flamenco culture across the flamenco world."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "decir cada día más la Verdad en donde está en éste Arte Flamenco y tan andaluz",
+        "target": "flamenco culture and knowledge",
+        "rationale": "The passage treats flamenco work as a matter of speaking the truth of the art, attributing properness and truth to a particular cultural mission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Yo deseo, con mis setenta y tres años... y con mi simple y humilde autoridad, seguir ayudando a ésta gran obra de reivindicar al máximo al mundo del Cante Flamenco y Gitano Andaluz",
+        "target": "Antonio Mairena's role in vindicating Cante Flamenco y Gitano Andaluz",
+        "rationale": "Mairena invokes his own authority as an elder artist to support a critical-cultural project of vindicating flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text stresses future, culture, and dissemination, but it does not explicitly frame flamenco as heritage, safeguarding, or public cultural patrimony."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The City and Peña Flamenca of Jaén are praised, but not clearly as community authorities that judge or sustain flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "authenticity", "criticism"],
+      "target": "CANDIL's cultural work and Mairena's authority in flamenco vindication",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The letter emphasizes cultural dissemination and authorized vindication rather than event description."
+  },
+  {
+    "article_id": "1982-09-5-right-salia-y-remate-para-antonio-mair",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "pionero en abrir caminos... pregonero de jondura, creador, re- creador y rehabilitador",
+        "target": "Antonio Mairena",
+        "rationale": "The tribute constructs Mairena as an exemplary and pioneering figure whose work reshapes the flamenco canon."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "los aficionados de verdad, los que te seguimos de cerca, sabemos de tu constante inquietud, de tu conciencia, de tu gran amor y compromiso con el cante",
+        "target": "knowledgeable aficionados recognizing Antonio Mairena",
+        "rationale": "The passage explicitly grants 'true' close-following aficionados authority to recognize Mairena's artistic commitment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "presintiendo estilos y recatándolos cuando ya estaban en clara fase de extinción y que, en tu voz, son cantes nuevos por desconocidos",
+        "target": "Antonio Mairena's recovery of endangered styles",
+        "rationale": "Mairena's value is grounded in recovering styles near extinction and carrying them forward in his voice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "que tú has tratado con exquisita y jonda esencia y con la más pura y fiel ortodoxia",
+        "target": "Mairena's treatment of recovered cantes",
+        "rationale": "The passage evaluates Mairena's cantes through purity and faithful orthodoxy, marking proper treatment of flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions a legacy for present and future aficionados and scholars, but it does not clearly describe oral, embodied, familial, or master-apprentice transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The 'aficionados de verdad' phrase could support community authority, but the codebook's exact pattern is more directly covered here by critic/expert authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition", "authenticity"],
+      "target": "Antonio Mairena as a canonical preserver and orthodox recreator of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although truncated, the visible beginning and ending provide strong, distinct evidence for canonization, expert recognition, and tradition/purity claims."
+  },
+  {
+    "article_id": "1982-09-6-right-antonio-mairena-y-el-duende",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Si al cante le falta el duende, es como si al cuerpo le falta el alma, le falta la vida",
+        "target": "duende as a criterion of cante quality",
+        "rationale": "The passage defines duende as an essential aesthetic criterion without which cante lacks life."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "La Razón Incorpórea es intransmible e ininteligible fuera de nosotros, porque no se puede conocer de verdad lo que no se puede sentir",
+        "target": "gitano understanding of Razón Incorpórea and cante gitano",
+        "rationale": "The quoted theory draws a strong insider/outsider boundary around who can know and live the source of cante gitano."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "es el honor nuestro, la base de la cultura gitana, el conjunto de nuestras tradiciones y de nuestros ritos antiguos: una cosa que sólo entiende un gitano como Dios manda y que sólo los gitanos la viven",
+        "target": "gitano identity as the basis of Razón Incorpórea",
+        "rationale": "The passage frames flamenco authority and meaning through gitano identity, tradition, and exclusive lived experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Mairena vuelve a poner en el ruedo de la polémica el elemento racial, y quienes dan al elemento andaluz un valor por lo menos igual al elemento gitano, pienso que tendrán algo que decir al respecto",
+        "target": "Mairena's gitano-centered theory of duende and flamenco essence",
+        "rationale": "The author uses critical commentary to contest and delimit Mairena's authoritative racial framing of duende."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text repeatedly discusses what cante 'is' and what makes a good cantaor, but the visible discourse is more precisely aesthetic and community-boundary work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Mairena discusses transmitting duende to prepared listeners, but this is performance transmission rather than learning, lineage, or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "community"],
+      "target": "duende and Mairena's gitano-centered account of flamenco authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article both explicates Mairena's theory of duende and marks it as a polemical claim about gitano versus andaluz authority."
+  }
+]

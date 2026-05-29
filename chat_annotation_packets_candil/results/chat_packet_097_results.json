@@ -1,0 +1,256 @@
+[
+  {
+    "article_id": "1984-07-21-left-enrique-morente",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Pepe fue un gran maestro, fue un gran amigo y fue un hombre del que aprendí muchísimas cosas de la vida y del cante.",
+        "target": "Enrique Morente's learning from Pepe el de la Matrona",
+        "rationale": "The passage frames flamenco knowledge as learned through a master-apprentice relationship, giving Pepe authority as transmitter of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los genios, tal vez el genio más grande que ha tenido el cante flamenco.",
+        "target": "Pepe el de la Matrona",
+        "rationale": "The text canonizes Pepe by ranking him as possibly the greatest genius flamenco singing has had."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "estoy proyectando la grabación de una antología sin salirme de los cánones como decimos, pero no de museo, una cosa que tenga actualidad y que sirva.",
+        "target": "Morente's planned anthology",
+        "rationale": "Morente authorizes his future project by positioning it within inherited canons while keeping them alive for present use."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The line about aficionados accepting his records suggests community reception, but the visible excerpt does not clearly grant aficionados authority to define or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Morente's flamenco knowledge and its lineage through major canonical figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only visible evidence."
+  },
+  {
+    "article_id": "1984-07-19-left-vocalizar-el-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Hoy tenemos que lamentar la desastrosa vocalización de algunos cantaores.",
+        "target": "current singers' vocalization",
+        "rationale": "The author explicitly criticizes the quality of some contemporary singers' vocalization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Así, tal y como lo dejo escrito, es como se debe vocalizar para no destruir la rima",
+        "target": "proper vocalization in cante",
+        "rationale": "The passage defines an aesthetic and technical criterion for good cante: vocalizing in a way that preserves the verse and rhyme."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "QUE FALTA NOS ESTA HACIENDO UNA ESCUELA DE APRENDIZAJE EN NUESTRA GEOGRAFIA CANTAORA!",
+        "target": "formal learning for singers",
+        "rationale": "The author calls for an institutional school of learning to correct and transmit proper cante practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "volvieran a ejecutar sus cantes como lo hacían aquellos artistas que he citado.",
+        "target": "young contemporary singers",
+        "rationale": "The passage uses earlier singers as an authoritative model whose practice should be continued in the present."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'tan poco flamenca' devalues the vowel ending, but the boundary is mainly technical/aesthetic rather than a broader purity exclusion of legitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "proper vocalization and contemporary cante practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-19-right-memoria-de-terremoto",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "ha editado la obra que hoy presentamos, «Memoria de Terremoto», como homenaje póstumo al fallecido cantaor jerezano.",
+        "target": "Memoria de Terremoto",
+        "rationale": "The publication is framed as organized memory-work preserving and commemorating a flamenco singer after death."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "el genial artista, considerado ya por muchos como uno de los más grandes siguiriyeros de las últimas décadas.",
+        "target": "Fernando Terremoto",
+        "rationale": "The passage canonizes Terremoto by placing him among the greatest siguiriyeros of recent decades."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "esta obra presenta algunas lagunas",
+        "target": "Memoria de Terremoto",
+        "rationale": "The reviewer explicitly evaluates the publication by identifying shortcomings in its coverage and approach."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "No hemos apreciado ningún esfuerzo en este sentido y, desde luego, está por publicarse un estudio monográfico de la saeta que afronte con rigor muchos de los interrogantes",
+        "target": "Juan de la Plata's study of the saeta",
+        "rationale": "The reviewer exercises expert critical authority by judging the study's lack of rigor and defining what a serious monograph should address."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Cátedra de Flamencología is an institution, but the excerpt mainly presents publication and commemoration rather than official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Fernando Terremoto's memory and the reviewed flamenco publications",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-20-right-iii-bienal-de-arte-flamenco-ciud",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Organizado por el Patronato de la Bienal de Arte Flamenco Ciudad de Sevilla y patrocinado por el Ayuntamiento sevillano, Ministerio de Cultura, Consejería de Cultura de la Junta de Andalucía y la Diputación Provincial de Sevilla",
+        "target": "III Bienal de Arte Flamenco Ciudad de Sevilla",
+        "rationale": "The event is framed through public institutions and cultural authorities that authorize and support flamenco as public culture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "es, sin duda, el festival más importante en su especialidad en la bisecular historia del Arte Flamenco Andaluz.",
+        "target": "III Bienal de Arte Flamenco Ciudad de Sevilla",
+        "rationale": "The passage ranks the Bienal as the most important festival of its kind in the history of Andalusian flamenco art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "No sólo por el número y la importancia de los artistas que intervienen en los distintos ciclos, sino por el enfoque riguroso y el tratamiento de los montajes que conforman el certamen.",
+        "target": "the Bienal's programming",
+        "rationale": "The article positively evaluates the event through the importance of its artists and the rigor of its staging."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "proclamando así el valor exacto de la capacidad creativa del pueblo andaluz.",
+        "target": "Andalusian flamenco music and creativity",
+        "rationale": "The passage frames flamenco as public cultural value expressing the creative capacity of the Andalusian people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to 'pueblo andaluz' invokes collective identity, but the excerpt does not clearly use identity to define belonging or authority within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism",
+        "community"
+      ],
+      "target": "the Bienal and Andalusian flamenco art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1984-07-21-right-proximos-festivales",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Peñas organize several events, but the text is a listing and does not present peñas or aficionados as authorities who recognize, sustain, or judge flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The contest notice is administrative and mentions eligibility and registration, not meaningful institutional learning or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly event listings, advertisements, and administrative announcements without clear evaluative or authorizing discourse."
+  }
+]

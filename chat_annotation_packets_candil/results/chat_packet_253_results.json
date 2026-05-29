@@ -1,0 +1,280 @@
+[
+  {
+    "article_id": "1992-05-15-right-flamenco-en-cornell",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "por la entrega y pasión de las gentes de las peñas hacia el Flamenco",
+        "target": "Cornellà peña communities",
+        "rationale": "The passage credits peña communities with sustaining and giving flamenco significance in Cornellà."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "joven bailaora llena de brío, flamencura y entusiasmo. Espléndida en cada uno de los bailes",
+        "target": "Mónica Fernández's dance recital",
+        "rationale": "The chronicle explicitly praises the bailaora and assesses the quality of her dances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Rafael Morales habló con profundidad y conocimiento de la «Estética jonda de Fosforito». Se pudo constatar que ha analizado y estudiado con rigor",
+        "target": "Rafael Morales as analyst of Fosforito's aesthetics",
+        "rationale": "The passage grants authority to a speaker through his depth, knowledge, analysis, and rigor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Talks and lectures occur in the festival, but the excerpt mainly evaluates scholarship and performance rather than access to learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as jondura, compás, taconeo, and formalism appear, but CRIT_01 already captures the main performance evaluation without needing a separate criteria code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco activity in Cornellà and its performers/speakers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible excerpt is sufficient for conservative coding."
+  },
+  {
+    "article_id": "1992-05-17-left-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "más como ejercicio racial que plástico. Sabe ganarle terreno al agitado mar de sus ancestros",
+        "target": "Angelita Vargas's performance identity",
+        "rationale": "The passage frames her flamenco performance through racialized ancestry and identity rather than only formal aesthetics."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El pontífice del cante gitano-andaluz es el más grande cantaor que se nos ha dado a escuchar",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through superlative rank and titles of authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "A este patriarca incomparable del cante gitano debemos las soleares de Los Paula, martinetes de Triana y las siguiriyas de Cagancho, Paco la Luz, Loco Mateo y Tomás el Nitri. Asimismo, facilitó al gran maestro Mairena la levadura de varios cantes",
+        "target": "Juan Talega's transmission of cante repertoire",
+        "rationale": "The passage presents Talega as a patriarchal transmitter of specific cantes to Mairena and the flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Several artists are evaluated, but the stronger functions are identity framing, canonization, and lineage transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Purity is attributed to Juan Talega, but the passage does not clearly draw an exclusionary pure/impure boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "gitano-andaluz flamenco figures and repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-05-20-right-angel-de-alora-in-memoriam",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "había demostrado con creces ser un aficionado cabal, un extraordinario cantaor",
+        "target": "Ángel de Álora",
+        "rationale": "The passage legitimates Ángel through the category of the cabal aficionado and community recognition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "fue el último maestro de los cantes malagueños, que él fue transmitiendo a todo aquél que tenía capacidad para recogerlos",
+        "target": "Ángel de Álora's transmission of cantes malagueños",
+        "rationale": "The text explicitly frames Ángel as a master who transmitted repertoire to capable receivers."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "sería hermoso que una calle de Málaga llevara el nombre de Angel de Alora",
+        "target": "public commemoration of Ángel de Álora",
+        "rationale": "The author proposes official civic commemoration through a street name as recognition of flamenco memory."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Calling him the last master suggests canonical status, but the more precise code is lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Ángel de Álora and his cantes malagueños legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-05-21-left-coplas-y-poemas",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "en el cante no hay más truco que el valor de las verdades",
+        "target": "cante",
+        "rationale": "The poem defines cante through truth-value, presenting truth as its proper inner measure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "El cante cuando es cabal se escucha por los adentros",
+        "target": "cante cabal",
+        "rationale": "The poem states an aesthetic criterion for good or proper cante: inward listening and felt depth."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The poem invokes oral and bodily feeling, but it does not describe transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Poetic language is coded only where it directly defines cante's value."
+  },
+  {
+    "article_id": "1992-05-22-left-vestir-de-limpio-a-la-copla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "algunos de sus «restauradores» oficiales, capaces de bastardearlo con músicas espúreas y de mezclarlo con ambientes abominables",
+        "target": "improper restorations or mixtures of flamenco",
+        "rationale": "The passage draws a strong purity boundary against spurious music and abominable settings that corrupt flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "No consintamos que se pierda el rico patrimonio literario de nuestros cantes",
+        "target": "literary patrimony of flamenco cantes",
+        "rationale": "The passage frames flamenco lyrics as a collective patrimony that must not be lost."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "si el cante es un fenómeno vivo... debemos procurar incorporar letras nuevas",
+        "target": "cante as a living tradition",
+        "rationale": "The author legitimates renewal by grounding cante in living continuity rather than static repetition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "por proceder de una cultura oral, trashumante y castigada por la acción implacable de la historia, no tiene otro sistema de transmisión",
+        "target": "flamenco cante transmission",
+        "rationale": "The text explicitly defines flamenco cante as transmitted through an oral culture and collective memory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "algunos indocumentados y rutinarios incapaces, intenten disminuir el valor de las letras en el cante jondo",
+        "target": "those who devalue flamenco lyrics",
+        "rationale": "The author uses polemical critique to police interpretive authority over the value of letras in cante jondo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates Sérvula Palacios and her book, but the stronger discourse functions are boundary critique, heritage safeguarding, tradition renewal, and transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions collective memory and a persecuted oral culture, but identity categories do not clearly organize belonging or authority as a separate function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "new flamenco coplas and the literary patrimony of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

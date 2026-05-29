@@ -1,0 +1,239 @@
+[
+  {
+    "article_id": "1993-07-12-left-el-recuerdo-de-una-vida-consagra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El más ilustre de los cantaores conocidos... Antonio Mairena erigido en el rescatador que el flamenco necesitaba.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through superlative status and presents him as an indispensable rescuer of flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "anunciaba la época que habría de venir: la de la reivindicación de la autenticidad flamenca.",
+        "target": "Mairena's recorded cante and mairenismo",
+        "rationale": "The article explicitly links Mairena's work to the vindication of flamenco authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "reavivar el conocimiento y el cultivo de lo estrictamente flamenco... respetuosa en el trato con la tradición musical de la Andalucía eterna.",
+        "target": "mairenismo and strictly flamenco musical tradition",
+        "rationale": "The passage grounds future flamenco value in continuity with and respect for Andalusian musical tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The language about divulgation and knowledge transmission is present, but it is secondary to authenticity/tradition claims and not clearly about institutional or transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and mairenismo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only the visible context and evidence window."
+  },
+  {
+    "article_id": "1993-07-14-left-a-antonio-mirena-poes-a",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "entras en la casa del cante con los modos con que su amo legítimo entraría.",
+        "target": "Antonio Mairena",
+        "rationale": "The poem presents Mairena as a legitimate possessor of the house of cante, authorizing his proper belonging within flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Y en tu garganta suenan siglos",
+        "target": "Mairena's cante",
+        "rationale": "The line grounds the value of Mairena's voice in temporal depth and continuity across centuries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The poem is honorific, but the visible lines do not clearly construct a ranking or canon beyond poetic legitimation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition"
+      ],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-07-14-right-oda-a-antonio-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Se enredan en tu voz sombras de voces que fueron flor y luz de Andalucía y penas viejas que creímos muertas y no murieron.",
+        "target": "Antonio Mairena's cante",
+        "rationale": "The poem frames Mairena's voice as carrying old Andalusian voices and surviving memory, giving his cante value through continuity with the past."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pura y misteriosa fuente' uses purity language, but it is a poetic image rather than purity boundary-work around legitimate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem evokes duende-like imagery and affect, but it does not clearly apply aesthetic criteria as a critical judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition"
+      ],
+      "target": "Antonio Mairena's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1993-07-15-left-manuel-mairena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Aquello era para vivirlo, porque el flamenco que nosotros hacemos es de convivencia. Después ha habido que ser artista y dedicarse profesionalmente a este arte. En casa era flamenco de familia.",
+        "target": "the Mairena family/home flamenco environment",
+        "rationale": "The passage grounds flamenco authority in lived family sociability and convivencia rather than only professional performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "cuando tuvo edad su primer hijo, Antonio, para llevarlo de la mano, se iba con él a escuchar a cantaores como Manuel Torre, el Gloria, los Pabones...",
+        "target": "Antonio and Manuel Mairena's familial flamenco learning",
+        "rationale": "The passage describes intergenerational learning through family accompaniment and listening to recognized cantaores."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "para tener un director que no sabe lo que es el cante jondo, que no sabe lo que es una soleá o una siguiriya y encima me dirija, no.",
+        "target": "recording directors lacking cante knowledge",
+        "rationale": "The speaker draws an epistemic boundary between those who know cante jondo and outsiders who should not direct it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano/family identity appears, but the stronger visible discourse function is family-community authority and embodied transmission rather than broad identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "familial flamenco transmission and insider cante knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; coded only visible portions."
+  },
+  {
+    "article_id": "1993-07-17-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Con la ilustrísima Fernanda se anuncia el estilo severo y la fluidez de un flamenco de rango superior... ni tiene rival ni puede someterse a cotejo histórico.",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage places Fernanda in a superior, incomparable rank and explicitly removes her from ordinary historical comparison."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Difícil resulta encontrar palabras para definir los cantes de Fernanda de Utrera. Es un imposible, sería como describir al duende.",
+        "target": "Fernanda de Utrera's cante",
+        "rationale": "Duende and expressive indefinability are used as aesthetic criteria to define the exceptional value of her cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "La gran portadora del más rancio cante gitano habitará de manera intemporal entre nosotros.",
+        "target": "Fernanda de Utrera",
+        "rationale": "The passage legitimates Fernanda by presenting her as carrier of an old, enduring gitano cante tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity language is prominent, but the coded passages mainly evaluate and traditionalize artists rather than explicitly defining community belonging or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad evaluative praise throughout, but CRIT_02 and CRIT_03 capture the specific aesthetic and hierarchical functions more precisely."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Tomás Torre, Curro Malena, and especially Fernanda de Utrera",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

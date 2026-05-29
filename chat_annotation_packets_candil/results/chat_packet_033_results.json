@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "1981-09-14-right-con-la-voz-de-terremoto-de-jerez",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem repeatedly invokes 'pueblo', but the visible text does not clearly connect that collective identity to flamenco belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses expressive language around pain, rhythm, and cry, but it does not clearly apply flamenco aesthetic criteria to an identifiable target in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible poem is too abstract to code flamenco-specific discourse without relying on title or external context."
+  },
+  {
+    "article_id": "1981-09-15-right-el-arte-de-terremoto-de-jerez",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "uno de los pocos cantaores vitalistas que nos iban quedando, una fuerza expresiva y comunicativa",
+        "target": "Terremoto de Jerez",
+        "rationale": "The passage explicitly evaluates Terremoto as a rare vitalist cantaor with exceptional expressive and communicative force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Terremoto de Jerez será otro cantar, como Manuel Torre, del que todos hablaremos en el futuro",
+        "target": "Terremoto de Jerez in relation to Manuel Torre",
+        "rationale": "The comparison to Manuel Torre and the claim that he will be spoken of in the future canonize Terremoto within a hierarchy of memorable cantaores."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "venía de pronto un burujón —porque lo de Terremoto eran burujones de cante— de su voz y nos sacudía de tal manera",
+        "target": "Terremoto de Jerez's cante and voice",
+        "rationale": "The article applies aesthetic criteria of vocal force, communication, duende, and emotional impact to define the value of his cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions the author's 'ser de aficionados', but aficionados are positioned mainly as emotionally affected spectators rather than as an authoritative community."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The claim that the art 'se explica por sí solo' suggests artistic self-sufficiency, but it is better captured as aesthetic evaluation than as a clear authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Terremoto de Jerez as an exceptional and enduring cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text was truncated, but the visible passages contain sufficient evaluative and canonizing evidence."
+  },
+  {
+    "article_id": "1981-09-16-right-carta-abierta-a-curro-terremoto-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "existen personas más documentadas que yo para escribir sobre eso",
+        "target": "evaluation of Fernando Terremoto's cante",
+        "rationale": "The writer explicitly defers evaluative authority over Terremoto's cante to more documented voices, marking expert authority around critical judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "siempre me puso la carne de gallina, y que fueron numerosas las ocasiones en que lloré al sentir sus cantes por soleá y por siguiriyas, con el compás que le daba la guitarra del Morao",
+        "target": "Fernando Terremoto's singing",
+        "rationale": "The passage evaluates the cante through aesthetic criteria of emotional force, compás, duende, and jondo feeling."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The letter mentions the Peña and shared memories, but the anecdotes primarily value personal intimacy rather than community authority over flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains praise for Terremoto, but the clearest evaluative discourse is through aesthetic criteria and deferral to more documented critics."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fernando Terremoto's cante and its evaluation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-17-left-ante-por-y-sobre-su",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "hacer llegar el cante a un mayor número de aficionados y, por otra parte, como documento sonoro que sirva para estudio de los interesados en el tema",
+        "target": "Terremoto de Jerez's discography",
+        "rationale": "The discography is framed as a mediated access point for aficionados and as study material for flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "En Terremoto el arte jondo poseía uno de sus más genuinos intérpretes.",
+        "target": "Terremoto as interpreter of arte jondo",
+        "rationale": "The passage explicitly presents Terremoto as a genuine interpreter of arte jondo, attributing flamenco authenticity to him."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "todo brotaba, de forma natural, de ese manantial que es la vieja cultura enraizada en el pueblo andaluz",
+        "target": "Terremoto's cante",
+        "rationale": "The passage grounds the value of Terremoto's cante in roots, old culture, natural emergence, and the Andalusian people."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Rara pureza no aprendida, sí vivida.",
+        "target": "Terremoto's cante",
+        "rationale": "The text applies aesthetic criteria of purity, lived expression, beauty, pain, and communicative power to evaluate his cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes pueblo and Andalusian rootedness, but the stronger function is tradition/authenticity rather than identity-based community belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Terremoto's discography and cante as authentic, rooted, and pedagogically valuable",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1981-09-18-right-ellos-los-protagonistas-luis-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "comienzas cantando lo que has escuchado y lo que te gusta; por eso te digo que unos cantes prevalecen más que otros",
+        "target": "Luis de Córdoba's formation as a cantaor",
+        "rationale": "The passage frames flamenco learning as oral/aural transmission through listening, imitation, selection, and continued practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El flamenco es una cadena, una sucesión de magisterios",
+        "target": "flamenco transmission and Luis de Córdoba's cante",
+        "rationale": "The interview explicitly grounds flamenco in continuity, tradition, and chains of masterly transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "vas creando dentro de tí mismo una selección lo más pura y auténtica de todo lo que has escuchado. Por último, te preguntas, ¿dónde tengo que buscar la autenticidad?",
+        "target": "Luis de Córdoba's selection of cante models",
+        "rationale": "The speaker explicitly frames his artistic formation as a search for authenticity through selecting and weighing listened-to cante models."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The speaker says he listens to aficionados and sometimes takes something from them, but the stronger evidence concerns oral transmission and authenticity rather than community authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The wording 'pura y auténtica' suggests purity, but it does not clearly exclude a specific impure target in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Luis de Córdoba's cante and formation through oral tradition and authentic models",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible interview excerpt gives sufficient evidence for transmission, tradition, and authenticity codes."
+  }
+]

@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "1982-01-18-right-reflexiones-en-torno-a-un-homena",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "La irradiación emanada de estos grandes aficionados mantuvo el interés —escaso interés— que había en este largo momento de desdoro del flamenco",
+        "target": "grandes aficionados / mundo flamenco",
+        "rationale": "The passage credits knowledgeable aficionados with sustaining flamenco interest during a period of decline, giving community actors preservational authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "nuestras raíces, nuestras costumbres y nuestro folklore estuvieron en entredicho y, en ocasiones, duramente criticadas",
+        "target": "flamenco as rooted Andalusian custom and folklore",
+        "rationale": "The text grounds flamenco value in roots, customs, and folklore under attack, making continuity with a valued past part of the legitimation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "poner de relieve ciertas «piezas» fundamentales del complejo engranaje del mundo flamenco",
+        "target": "El Lucero and non-professional figures in flamenco",
+        "rationale": "The homage elevates otherwise overlooked actors as fundamental components of the flamenco world, creating a hierarchy of exemplary contributors."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text suggests preservation of roots and folklore, but does not clearly frame this as public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "El Lucero and the older aficionados who sustained flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt provides enough evidence for these codes."
+  },
+  {
+    "article_id": "1982-01-19-right-peteneras",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Indiscutiblemente debemos este cante a Paterna de Ribera.",
+        "target": "origin of the petenera",
+        "rationale": "The article authorizes the cante through a specific origin claim and continuity from Dolores de Paterna de Ribera to later interpreters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "COROMINAS, en su «Breve diccionario etimológico», afirma: «Aire popular de origen incierto, alteración de Paterna, pueblo de Andalucía».",
+        "target": "scholarly authority over the petenera's origin",
+        "rationale": "The passage invokes named scholarly and documentary authorities to adjudicate competing origin claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "tal cante sea hoy admirado cual lo que es: un cante recio, magestuoso y digno de figurar en las mejores programaciones",
+        "target": "the petenera as a cante",
+        "rationale": "The passage explicitly evaluates the petenera's artistic value and asserts its worthiness for high-quality programming."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The final sentence mentions revaluing and protecting the cante, but the visible wording lacks a clear public heritage or safeguarding frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the petenera and Paterna de Ribera as its origin site",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-01-20-left-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ignacio Espeleta destacó por su majaza y admirable compás en los cantes por bulerías y alegrías, de los que fue intérprete señero",
+        "target": "Ignacio Espeleta's singing",
+        "rationale": "The passage explicitly praises Espeleta's artistry and identifies him as a distinguished interpreter."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "admirable compás... muy adecuado, desde el punto de vista técnico, para «cogerse a la guitarra». Igualmente, sus tientos fueron muy personales y repletos de pureza.",
+        "target": "Espeleta's bulerías, alegrías, and tientos",
+        "rationale": "The evaluation uses aesthetic and technical criteria such as compás, technical fit with guitar, personality, and purity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ignacio fue el más importante de una larga dinastía gitano-gaditana, que dio numerosos flamencos y toreros.",
+        "target": "Ignacio Espeleta within a flamenco dynasty",
+        "rationale": "The passage ranks Espeleta as the most important figure in a named lineage, constructing a hierarchy of status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text names gitano-gaditano identity, but the visible passage mainly uses it descriptively rather than clearly making identity the basis of authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Ignacio Espeleta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1982-01-20-right-un-inmenso-catalogo-cantaor",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "un título que reclama todo y que, como cualquier aficionado sabe, resulta prácticamente imposible de abordar hoy en solitario",
+        "target": "Álvarez Caballero's Historia del cante flamenco",
+        "rationale": "The reviewer exercises critical authority by challenging the scope and scholarly adequacy implied by the book's title."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "la bibliografía que cierra el volumen, a mi parecer, no es suficiente",
+        "target": "the book's bibliography",
+        "rationale": "The passage makes a direct evaluative judgment about a specific component of the reviewed flamenco book."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "un volumen al que auguramos larga vida en la fundamental bibliografía flamenca",
+        "target": "the reviewed volume",
+        "rationale": "The review canonizes the book by placing it in the fundamental flamenco bibliography despite earlier reservations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses flamenco studies entering print culture, but does not clearly focus on learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Álvarez Caballero's Historia del cante flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible review contains sufficient evaluative and canonizing discourse."
+  },
+  {
+    "article_id": "1982-01-21-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el disco contiene una buena grabación de fandangos de Huelva —lo más destacado—",
+        "target": "El Rufo's recording Sevilla y Triana",
+        "rationale": "The review directly evaluates the recording, distinguishing stronger and weaker parts of the disc."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "una grabación que no esconde sus aires comerciales",
+        "target": "commercial elements in El Rufo's recording",
+        "rationale": "Commerciality is framed as a problem affecting the artistic legitimacy of the recording."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "si al de la orquesta y vano jipío, adornado de facilones aplausos y fáciles pesetas, o a los «palos» durísimos e irrenunciables del único y auténtico cante",
+        "target": "commercial-orchestral singing versus authentic cante",
+        "rationale": "The passage draws a sharp boundary between easy commercial spectacle and the unique authentic cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "demuestra afición a la hora de realizar los cantes por soleá, alegrías, tientos y malagueñas; aunque, igualmente, la comercialidad es detectable fácilmente en las bamberas",
+        "target": "El Rufo's handling of specific palos",
+        "rationale": "The review applies flamenco aesthetic criteria by judging the singer's handling of palos and detecting commerciality within specific forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review polices commercial boundaries, but AUTH_02 and AUTH_04 capture the stronger authenticity boundary work more directly."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "El Rufo's first recording and its commercial elements",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

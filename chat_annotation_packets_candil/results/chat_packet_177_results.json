@@ -1,0 +1,262 @@
+[
+  {
+    "article_id": "1988-07-21-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "¿Quién tiene que velar por el patrimonio cultural de un pueblo?, naturalmente todos los ciudadanos",
+        "target": "flamenco as cultural patrimony",
+        "rationale": "The passage explicitly frames flamenco as a people's cultural heritage and assigns collective responsibility for it."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "a la cabeza los organismos oficiales; pero los responsables de TVE, circuito catalán 2.ª cadena, esto parecen ignorarlo",
+        "target": "official bodies and TVE's responsibility toward flamenco",
+        "rationale": "Official institutions are positioned as responsible authorities for recognizing and protecting flamenco's public cultural value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "entre todos lentamente llenemos nuestro Gran Museo Flamenco —único, mundial— nuestra Casa Universal del Flamenco, nuestra esperada y al fin conseguida Fundación Andaluza del Flamenco",
+        "target": "Fundación Andaluza del Flamenco and Museo Flamenco",
+        "rationale": "The call to collectively fill a museum/foundation frames flamenco materials as objects of safeguarding and public memory-work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The TV program would have expanded access to flamenco, but the passage emphasizes heritage responsibility and public neglect more than learning or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The complaint criticizes TVE's cancellation, but it is not mainly an expert critical judgment policing flamenco boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage"],
+      "target": "flamenco as public cultural patrimony requiring institutional and collective care",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; only visible review text was annotated."
+  },
+  {
+    "article_id": "1988-09-3-right-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Insustancial «El año de Silverio» y «Una aproximación a los principios históricos de la Etnomusicología». Admirable el esfuerzo de Philippe Donnier, pero desmesurado en su intento",
+        "target": "papers presented at the Córdoba congress",
+        "rationale": "The editorial explicitly judges the quality and adequacy of specific congress papers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Si de verdad pretendemos profundizar en el fenómeno flamenco, es necesario que éste sea sometido al dictamen multidisciplinar de estudios científicos",
+        "target": "scientific and multidisciplinary study of flamenco",
+        "rationale": "The passage authorizes expert scholarly judgment as necessary for properly understanding flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "alguno de los trabajos leídos se mece en cuestiones tan inocuas como la determinación del sexo de los ángeles",
+        "target": "overly abstract congress papers",
+        "rationale": "The critique applies a criterion of substantive relevance to judge whether flamenco scholarship has value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions habitual congress attendees and lived experience of lo jondo, but does not grant them community authority; it criticizes their resistance to scholarship."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The congress is an institutional knowledge setting, but the visible passage evaluates papers rather than thematizing learning or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "scholarly and critical treatment of flamenco at the congress",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a sustained critical evaluation of a congress and its intellectual authority claims."
+  },
+  {
+    "article_id": "1988-09-3-right-xvi-congreso-nacional-de-activid",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Sea como fuere, lo cierto e incuestionable es que el desencanto ha sido mayúsculo.",
+        "target": "XVI Congreso Nacional de Actividades Flamencas",
+        "rationale": "The article explicitly evaluates the congress as a major disappointment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "el lenguaje del Congreso no tuvo nada que ver con la gravosa problemática del mundo de las peñas",
+        "target": "the world of flamenco peñas",
+        "rationale": "The peñas are presented as a relevant flamenco community whose concerns should ground the congress agenda."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "no entendemos qué han hecho durante los dos años que han contado para la organización de un Congreso de Flamenco para flamencos",
+        "target": "the congress organizers and their selection of topics",
+        "rationale": "The author uses critical authority to police whether the congress properly serves flamenco and flamencos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'autenticidad de lo jondo' appears as an omitted debate topic, but the visible text does not itself substantively assert an authenticity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The congress is a knowledge institution, but the passage criticizes its relevance rather than discussing learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["community", "criticism"],
+      "target": "a congress disconnected from flamenco communities and contemporary flamenco problems",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coding is based only on the visible critique and ending resolutions."
+  },
+  {
+    "article_id": "1988-09-8-right-el-flamenco-en-la-pintura",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "sacar al flamenco como plástica de la baja calidad en que se encontraba sumergido",
+        "target": "flamenco as a subject in visual art",
+        "rationale": "The passage explicitly evaluates the prior state of flamenco-themed plastic art as low quality and in need of elevation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El flamenco como tema en la plástica estaba en manos de pseudo artistas y, naturalmente, tenía mala prensa.",
+        "target": "artists representing flamenco in visual art",
+        "rationale": "The passage creates a hierarchy between prestigious artists and devalued 'pseudo artists' who damaged flamenco's artistic status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "si queríamos tener un arte digno había que luchar por la recuperación de los valores olvidados",
+        "target": "flamenco-themed visual art",
+        "rationale": "The passage defines artistic dignity and recovered values as criteria for evaluating flamenco's representation in painting and sculpture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'fuera de lugar' is idiomatic and does not draw an insider/outsider flamenco boundary."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Fundación Andaluza de Flamenco sponsors the exhibition, but the visible passage does not frame this as authorized heritage recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "the artistic legitimacy of flamenco in contemporary Spanish visual art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; the visible evidence supports aesthetic and hierarchical criticism, not the insider/outsider retrieval hint."
+  },
+  {
+    "article_id": "1988-09-10-right-temas-flamencos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "El Cante no nació por generación espontánea ni se inventó como la penicilina o el avecrem. El Cante —antes el baile— devino hasta su situación presente a través de una ósmosis, un proceso evolutivo",
+        "target": "the historical development of cante flamenco",
+        "rationale": "The passage grounds flamenco value and understanding in continuity, evolution, and historical roots prior to Silverio."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Ante esta evidente prueba documental, cabe preguntarse cómo se puede aventurar un juicio tan temerario",
+        "target": "claims that nothing was known of cante before Silverio",
+        "rationale": "The author invokes documentary evidence and critical judgment to reject an improper historical claim about flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "El Cante y sus apéndices (tan importantes como el baile y la guitarra) nace, crece, se desarrolla (y esperamos que no muera jamás) en Andalucía... Los gitanos lo han marcado profundamente, los gitanos andaluces",
+        "target": "Andalusian and Gitano contributions to cante",
+        "rationale": "Identity groups and regional belonging are used to frame who shaped and represents flamenco's historical development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text asks whether artists learned from older voices and toques, but this is a rhetorical support for historical continuity rather than a clear account of embodied or oral transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Silverio is called 'el gran sevillano' and other names are listed, but the passage mainly disputes origins rather than constructing a canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["tradition", "community", "criticism"],
+      "target": "historical claims about flamenco origins and pre-Silverio cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article directly contests a historical-origin claim using documentary evidence and regional/identity framing."
+  }
+]

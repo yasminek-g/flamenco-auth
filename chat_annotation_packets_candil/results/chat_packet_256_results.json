@@ -1,0 +1,234 @@
+[
+  {
+    "article_id": "1992-07-5-right-camar-n-abandon-su-isla",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "uno de los más grandes y creativos cantaores de este siglo; aunque también discutido por los guardianes de la ortodoxia",
+        "target": "Camarón de la Isla",
+        "rationale": "The passage canonizes Camarón through superlative status while noting his contested place in orthodox flamenco hierarchies."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "acompañado por miles de personas, la mayoría de su raza. Los del bronce lo proclamaban Rey de los Gitanos",
+        "target": "Camarón as a Gitano/community figure",
+        "rationale": "Ethnic/community identity frames Camarón's authority and representation, especially through the community proclamation of him as 'Rey de los Gitanos'."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Camarón ha sido un fuera de serie. Esta generación y las que vengan tendrán muy presente a Camarón de la Isla",
+        "target": "Camarón's artistic value",
+        "rationale": "A named cantaor explicitly evaluates Camarón as exceptional and enduringly significant."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and artists gather and mourn, but the visible text mostly reports attendance rather than clearly granting them authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Camarón de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Obituary language strongly legitimates Camarón while noting orthodox contestation."
+  },
+  {
+    "article_id": "1992-07-10-right-la-esperanza-de-creer-en-los-due",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el disco, su último recuerdo del que se arrepintió haberlo grabado... fue un devaneo con el alcance estético y efectista, pero sin ningún valor ético",
+        "target": "Camarón's final recording",
+        "rationale": "The passage makes an explicit negative critical judgment of the recording's aesthetic and ethical value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "creó un estilo lo suficientemente diáfano como para servir de modelo a las generaciones subsiguientes",
+        "target": "Camarón's style",
+        "rationale": "Camarón is positioned as a model for subsequent generations, constructing canon and hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Nunca se esforzó en revalidar el auténtico cante gitano andaluz, pero no es menos cierto que quemó todas sus energías en forjar un lenguaje universal inédito",
+        "target": "Camarón's relation to authentic gitano-Andalusian cante",
+        "rationale": "The text explicitly frames Camarón against an authentic cante category while legitimating a different universal language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el flamenco malo —léase sin capacidad de emocionar—",
+        "target": "flamenco quality",
+        "rationale": "The passage defines bad flamenco through the aesthetic criterion of failure to move emotionally."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'no iniciados' marks audience familiarity, but the passage does not strongly construct an insider/outsider authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Camarón de la Isla and his recordings/style",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt combines legitimation of Camarón's innovation with sharp critique of aspects of his later recording."
+  },
+  {
+    "article_id": "1992-07-13-left-camar-n-el-ltimo-revolucionario-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "sólo unos pocos han conseguido merecer el apelativo de revolucionarios... crearon nuevos cánones estéticos y una nueva concepción artística",
+        "target": "revolutionary flamenco cantaores",
+        "rationale": "The passage constructs a canon of exceptional revolutionary figures who reshape flamenco aesthetics."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Silverio Franconetti como el primer revolucionario frente a la tradición que heredó de sus antepasados",
+        "target": "Silverio Franconetti's place in flamenco tradition",
+        "rationale": "The passage grounds flamenco transformation in inherited tradition and continuity with a valued past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Chacón dotó al cante de una belleza formal desconocida hasta entonces y Manuel Torre... transmitir... toda su primitiva jondura",
+        "target": "Chacón and Manuel Torre",
+        "rationale": "Formal beauty and primitive jondura are applied as aesthetic criteria explaining each artist's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Le dio señorío al flamenco y lo dignificó, dejando su huella indeleble en los estilos que dominó",
+        "target": "Antonio Chacón",
+        "rationale": "The passage explicitly praises Chacón's artistic contribution and impact on flamenco styles."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "major historical flamenco cantaores",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is a historical-canonical argument rather than a neutral chronology."
+  },
+  {
+    "article_id": "1992-07-15-right-a-un-flamenco-inolvidable",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "vistió de «quejos» y lamentos, sus más profundas y ancestrales raíces",
+        "target": "Camarón's expressive flamenco identity",
+        "rationale": "The passage authorizes Camarón's value by grounding his expression in deep ancestral roots."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Un grito que permanecerá inmortal en el corazón de muchos, un grito ya clavado en la memoria de sus gentes",
+        "target": "Camarón's cultural memory",
+        "rationale": "The text frames Camarón's voice as collective memory held by his people."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Nos han arrancado de cuajo, una de las páginas más hermosas de dos siglos de cultura gitana andaluza",
+        "target": "Camarón within gitano-Andalusian culture",
+        "rationale": "The passage canonizes Camarón as one of the most beautiful pages in a two-century cultural history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text invokes collective culture and memory, but it does not explicitly frame flamenco as patrimonio or public heritage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano-Andalusian identity is present, but the stronger function is elegiac canonization and memory rather than defining group authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Camarón de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is elegiac and highly legitimating, but only codes with clear discourse functions were emitted."
+  },
+  {
+    "article_id": "1992-07-16-left-coplas-y-poemas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is poetic expression of suffering and supplication without clear evaluative, authorizing, pedagogical, heritage, community, or critical discourse about flamenco."
+  }
+]

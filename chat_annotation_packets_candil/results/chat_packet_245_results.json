@@ -1,0 +1,273 @@
+[
+  {
+    "article_id": "1992-01-3-right-apuntes-sobre-la-sole-y-la-sigui",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "la soleá no es cuestión de un estilo entre tantos, sino de una vertebra esencial en la salud toda del arte flamenco",
+        "target": "soleá within flamenco",
+        "rationale": "The passage hierarchizes the soleá as an essential structural form rather than merely one style among others."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "corresponde reiterar el sentido enciclopédico que gobierna a la soleá, vale decir su carácter representativo de la psicología y estética andaluza",
+        "target": "soleá",
+        "rationale": "The passage defines the soleá's value through aesthetic and expressive criteria, presenting it as representative of Andalusian psychology and aesthetics."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "no aceptable si ascendemos a la conservación de los cantes grandes, intrínsicamente lentos, graves",
+        "target": "cantes grandes and soleá",
+        "rationale": "The passage invokes conservation of major cantes and their inherited formal qualities as a basis for judging acceptable transformation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text has a strong theoretical voice defining categories, but the emitted CRIT_03 and CRIT_02 more directly capture the visible hierarchy and aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "soleá as an essential and representative flamenco form",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible evidence is sufficient for hierarchy, aesthetic criteria, and conservation-oriented tradition claims."
+  },
+  {
+    "article_id": "1992-01-6-right-juan-g-mez-belmonte",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "en mi casa nadie ha síó profesional de esto, pero sí ha habido muy buenos afícionaos. Mi padre, mis tíos, los hombres viejos que yo escuchaba de niño, amigos de mi familia. De ahí me viene la afición",
+        "target": "Juan Gómez Belmonte's family and old aficionados",
+        "rationale": "The passage grounds the singer's flamenco formation in family, friends, and old aficionados as a knowledgeable community."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "los hombres viejos que yo escuchaba de niño, amigos de mi familia. De ahí me viene la afición",
+        "target": "Juan Gómez Belmonte's early flamenco learning",
+        "rationale": "The passage frames flamenco knowledge as transmitted through childhood listening in a familial and local social setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "hay otros que no son auténticamente flamencos. Entonces no te puede sentenciar un miembro del jurado que no tiene ni idea de lo que estás cantando",
+        "target": "contest jurors lacking flamenco knowledge",
+        "rationale": "The passage draws a boundary between authentically flamenco judges and illegitimate judges who lack the knowledge to evaluate cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique of jurors clearly concerns judging authority, but it overlaps strongly with the emitted AUTH_02 boundary around who is authentically flamenco enough to judge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdad del cante almeriense' suggests authenticity, but the visible text does not develop it beyond introductory characterization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Juan Gómez Belmonte's formation and the legitimacy of contest judging",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated interview; emitted codes focus on explicit family/aficionado transmission and contest-judging boundary work."
+  },
+  {
+    "article_id": "1992-01-8-left-la-ni-a-de-ecija",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "hacer justicia a un personaje considerado del todo nonato en la historia del flamenco",
+        "target": "La Niña de Ecija",
+        "rationale": "The article seeks to restore an overlooked artist to flamenco history, constructing her rightful canonical recognition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Las enseñanzas flamencas de su tía Valle, unidas a una vocación musical temprana y el querer imitar a su hermana Valle",
+        "target": "La Niña de Ecija's flamenco formation",
+        "rationale": "The passage presents her flamenco learning through family teaching and imitation, a familial mode of transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "una mujer que fue punta de lanza de su tiempo y que dio un espíritu nuevo al flamenco y a la auténtica copla andaluza",
+        "target": "La Niña de Ecija",
+        "rationale": "The passage explicitly praises her as an innovative leading figure who renewed flamenco and Andalusian copla."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'auténtica copla andaluza' appears, but it is secondary to the evaluative praise of the artist and does not clearly develop an authenticity claim about the form."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions 'tierra de origen', but this functions as local pride in an homage rather than a clear identity-based authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "La Niña de Ecija's place in flamenco history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible evidence supports recovery of an overlooked figure, family transmission, and evaluative praise."
+  },
+  {
+    "article_id": "1992-01-12-right-viii-distinci-n-comp-s-del-cante",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "tan importante galardón... se acordó su concesión al genial bailar o gitano Antonio Montoya, «Farruco»",
+        "target": "Antonio Montoya 'Farruco'",
+        "rationale": "The passage constructs Farruco's status through a prestigious award and describes him as a genial flamenco dancer, placing him in a hierarchy of recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la fidelidad de una estirpe, el arte de toda una dinastía de la que Antonio es patriarca indiscutible e indiscutido",
+        "target": "Antonio Montoya 'Farruco' and the Montoya dynasty",
+        "rationale": "The passage legitimates the award through lineage, continuity, and fidelity to a flamenco dynasty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la categoría excepcional, la pureza interpretativa de este auténtico monstruo",
+        "target": "Antonio Montoya 'Farruco'",
+        "rationale": "The passage applies aesthetic criteria of exceptional category and interpretive purity to justify Farruco's distinction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The prize is an institutional recognition mechanism, but the article does not frame it explicitly as heritage or public cultural patrimony."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The act is described as intimate despite a crowded setting, but the passage does not use that setting to define participatory flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Farruco, the Montoya dynasty, and flamenco award recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The first code quote names Carmen Linares despite appearing in a neighboring review-like segment; the article also centers Farruco's award and dynasty."
+  },
+  {
+    "article_id": "1992-01-13-right-viii-festival-de-oto-o",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el momento esplendoroso de la gran madurez artística que ha alcanzado en plena juventud",
+        "target": "Carmen Linares",
+        "rationale": "The review explicitly praises Carmen Linares's artistic maturity and current performance quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "puede continuar enriqueciéndose con otras aportaciones orquestales de nuestra gran cantera musical, sin desvirtuar para nada la ortodoxia y pureza del flamenco, cerrando el paso a esa corriente que pretende extranjerizar nuestro arte",
+        "target": "orchestral contributions to flamenco and anti-foreignizing currents",
+        "rationale": "The passage draws a boundary between acceptable enrichment that preserves flamenco purity and an excluded foreignizing current."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la inspiración de este acontecimiento musical tiene en parte sus raíces en artistas tan egregios como fueron García Lorca y Encarnación López «La Argentinita»",
+        "target": "Carmen Linares's spectacle and its artistic lineage",
+        "rationale": "The passage legitimates the spectacle by linking it to prestigious antecedent figures and a valued artistic lineage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text invokes roots in Lorca and La Argentinita, but the stronger emitted code is CRIT_03 because the passage uses them as prestigious artistic antecedents rather than a direct tradition-continuity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The review asks for wider circulation for the knowledge and enjoyment of the afición, but the main discourse is promotion and evaluation rather than pedagogy or access to learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Carmen Linares's orchestral flamenco spectacle",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

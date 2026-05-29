@@ -1,0 +1,219 @@
+[
+  {
+    "article_id": "1990-09-9-right-xviii-congreso-nacional-de-activ",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "difícilmente se puede lograr mayor grado de brillantez y atención a los señores congresistas que los conseguidos por este grupo de entusiastas aficionados y, como acaban de demostrarnos ahora, competentes organizadores",
+        "target": "organización del XVIII Congreso Nacional de Actividades Flamencas de Badajoz",
+        "rationale": "The passage explicitly praises the congress organization and evaluates the organizers as competent and successful."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Recalar en la Asociación de Arte Flamenco de Badajoz, que ese y todos los días fue un claustro abierto al diálogo y a la amistad... mientras que la soleá, los tangos y los jaleos... apuntados en la voz de los buenos aficionados pacenses.",
+        "target": "Asociación de Arte Flamenco de Badajoz and local aficionados",
+        "rationale": "The association and local aficionados are framed as a community space of dialogue, friendship, and competent flamenco participation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "a propuesta de la Comisión Organizadora del XVIII Congreso Nacional de Actividades Flamencas de Badajoz, dicho artista fue nombrado, por aclamación unánime de los allí presentes, Congresista de Honor",
+        "target": "Antonio Fernández Díaz «Fosforito»",
+        "rationale": "The congress institution publicly confers honorary recognition on the artist, authorizing his cultural value through an official distinction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The trigger word 'dentro' refers to scheduling within congress days, not an insider/outsider boundary around flamenco belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community", "heritage"],
+      "target": "the Badajoz congress, its local flamenco community, and Fosforito's honorary status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are based only on the visible review excerpt."
+  },
+  {
+    "article_id": "1990-09-12-right-enorme-muestra-de-cante-extreme-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Pienso que esa oportunidad ha sido pero que muy bien aprovechada.",
+        "target": "the presentation of contemporary Extremaduran flamenco at the Badajoz congress",
+        "rationale": "The author explicitly evaluates the programming opportunity as successfully used."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "poseedor de una bonita voz flamenca... Chiquito de Cáceres evidenció su afán por agradar a los aficionados así como su carencia de melodía... El Portugués... con falta de matiz... bulerías con un apresuramiento en el compás inusitado",
+        "target": "individual singers' performances",
+        "rationale": "The passage applies aesthetic criteria such as flamenco voice, melody, nuance, and compás to judge performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Juan Cantero, quizás uno de los cantaores actuales más sobresalientes de la zona",
+        "target": "Juan Cantero",
+        "rationale": "The singer is placed in a regional hierarchy as one of the most outstanding current cantaores in the area."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Extremaduran flamenco performances and individual cantaores",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible evidence includes both praise and negative assessment."
+  },
+  {
+    "article_id": "1990-09-13-right-el-flamenco-entre-las-m-sicas-or",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "la necesidad apremiante de rehabilitar el Cante jondo, apelando a una noble alcurnia más o menos hipotética",
+        "target": "origin narratives linking cante jondo to noble ancient sources",
+        "rationale": "The passage identifies origin and noble ancestry claims as a means of authorizing or rehabilitating cante jondo, while treating them as partly hypothetical."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "su reconstitución... no ofrece ninguna garantía de autenticidad. En este caso, la comparación entre el Flamenco y una liturgia desaparecida es totalmente incomprobable... la comparación... es un disparate de primera magnitud.",
+        "target": "scholarly comparisons between flamenco and disappeared liturgical or Jewish musical sources",
+        "rationale": "The author uses expert critique to police unsupported origin claims and dismisses certain comparisons as unverifiable or absurd."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The phrase 'futura investigación y pedagogía del Flamenco' gestures toward pedagogy, but the visible passage does not develop an institutional or access-oriented learning discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger is not supported by visible oral, embodied, lineage, or intergenerational transmission discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "claims about flamenco's oriental, liturgical, or Jewish origins",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coding is limited to visible critique of origin hypotheses."
+  },
+  {
+    "article_id": "1990-09-14-right-la-importancia-de-granada-en-la-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Granada es, para propios y extraños, tierra matriz del cante flamenco. Que Granada aportó al nacimiento y sigue aportando tanto en el cante como en el baile y, sobre todo, en la guitarra",
+        "target": "Granada's role in flamenco origins and continuity",
+        "rationale": "The passage grounds flamenco value and authority in Granada as an origin point and continuing source of contribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "unos cantes básicos, primitivos y fundamentales que, por su antigüedad, constantes musicales y métrica, son cimiento y apoyo de todo el desarrollo posterior de nuestro arte",
+        "target": "basic flamenco cantes",
+        "rationale": "The passage constructs a hierarchy in which certain cantes are foundational, primitive, and fundamental to later flamenco development."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "pido a este congreso que entienda y comparta mis razones para decir a los cuatro vientos que Granada es, para propios y extraños, tierra matriz del cante flamenco",
+        "target": "Granada as a local identity and representative flamenco community",
+        "rationale": "The argument frames a local community identity as central to flamenco representation and belonging."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism", "community"],
+      "target": "Granada's status in the genesis of basic flamenco cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible excerpt clearly advances an origin and status claim for Granada."
+  },
+  {
+    "article_id": "1990-09-15-right-contribuci-n-a-la-etimolog-a-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "la etimología de los vocablos que conforman el léxico flamenco ha estado bastante olvidada y, hasta el momento, no ha sido abordada de forma sistemática... nunca un estudio serio y extenso",
+        "target": "specialized flamenco etymological scholarship",
+        "rationale": "The author claims scholarly authority by critiquing prior flamenco etymology as unsystematic and insufficiently serious."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Existen algunos estudios aislados, sin terminar a veces, que tienen más de curiosidad o anécdota que de ciencia.",
+        "target": "earlier studies of flamenco vocabulary etymology",
+        "rationale": "The passage explicitly evaluates prior studies as fragmentary and more anecdotal than scientific."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'impulso definitivo' ranks a general philological contribution, but the visible claim is not clearly a flamenco canon or hierarchy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The references to 'el hombre' and 'todos los pueblos' are generic linguistic categories, not identity framing that shapes flamenco belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "the state of flamenco lexical and etymological research",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; visible evidence supports scholarly critique rather than performance or community coding."
+  }
+]

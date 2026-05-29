@@ -1,0 +1,281 @@
+[
+  {
+    "article_id": "1980-01-13-right-quienes-fueron-los-maestros",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "El siguiente gran maestro a Francisco Ortega «El Fillo», es su sobrino Tomás «El Nitri»",
+        "target": "Tomás «El Nitri»",
+        "rationale": "The passage places Nitri in a hierarchy of major flamenco masters, constructing canonical status rather than merely naming him."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Silverio Franconetti, indudablemente cantaor genial, conoció y dominó todos los cantes, y su orientación y actividad fueron decisivos en el desarrollo histórico del cante flamenco.",
+        "target": "Silverio Franconetti",
+        "rationale": "The passage explicitly evaluates Silverio as a brilliant singer whose mastery and historical influence were decisive."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "habían llegado hasta nuestros días algunos de estos cantes a través de grabaciones realizadas por discípulos suyos",
+        "target": "cantes associated with Silverio Franconetti",
+        "rationale": "The passage values continuity by explaining how cantes survived into the present through recordings by disciples."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Ríos Ruiz and Antonio Murciano are cited as sources, but the visible passage does not clearly position their expertise as evaluative authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The reference to disciples suggests transmission, but the visible text emphasizes preservation through recordings rather than embodied or oral lineage learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Tomás «El Nitri», Silverio Franconetti, and the continuity of associated cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible evaluative and continuity claims are sufficient for the emitted codes."
+  },
+  {
+    "article_id": "1980-01-14-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Está visto que solo interesa vender para la mayoría que es mucha, claro.",
+        "target": "record companies and commercial flamenco production",
+        "rationale": "The passage frames mass sales and commercial motives as displacing serious engagement with Arte Jondo."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "están muy lejos de nscribirse en la pureza de unos estilos que configuran el frondoso árbol del cante",
+        "target": "commercial recordings modeled on Lole y Manuel",
+        "rationale": "The passage draws a purity boundary by placing commercially oriented flamenco far from the pure styles of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Entonces la comercialidad se impone, y adios profesionalidad, conocimientos y deseos de seguir una trayectoria presidida por el Arte.",
+        "target": "commercial flamenco recordings and artists who follow commercial ease",
+        "rationale": "The reviewer uses critical authority to police the boundary between art-led flamenco professionalism and superficial commercial production."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage contains clear evaluation, but the stronger discourse function is boundary critique of commerciality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms like jondo, pureza, superficialidad, and profesionalidad function as criteria, but they are already captured in the anti-commercial and boundary codes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "commercialized flamenco discography",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-01-15-right-juan-a-ib-nez-miembro-de-la-c-te",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Ha sido concedido el primer premio de la 1.ª Bienal de Arte Flamenco para libros de ensayo sobre el Flamenco",
+        "target": "Manuel Urbano's flamenco scholarship",
+        "rationale": "An official cultural prize is presented as an institutional recognition mechanism that valorizes flamenco scholarship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manolo Urbano es uno de los valores más importantes dentro de ese movimiento de intelectuales que tratan de acercarse y profundizar en el Flamenco",
+        "target": "Manuel Urbano",
+        "rationale": "The passage ranks Urbano among the most important intellectual figures studying flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "desde perspectivas sociológicas, políticas, antropológicas... Toda una serie de áreas insuficientemente estudiadas o a las que se le han aplicado tratamientos poco rigurosos.",
+        "target": "intellectual approaches to flamenco",
+        "rationale": "The text authorizes rigorous scholarly approaches to flamenco by contrasting them with insufficiently studied or poorly treated areas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The conference setting involves explanation, but the visible text does not clearly frame Ibáñez as pedagogically authorized to teach flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Manuel Urbano, Juan Antonio Ibáñez, and institutional flamenco scholarship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-01-16-left-fernando-montoro-en-el-club-cult",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Fernando Montoro, profundo conocedor del cante andaluz, se extendería en los orígenes del vocablo «flamenco» - ¿gitano?, ¿árabe? - y acertaría, en nuestra opinión, al tomar la letra de los cantes para esbozar una clasificación temática",
+        "target": "Fernando Montoro's classification of flamenco/cante",
+        "rationale": "Montoro is positioned as a knowledgeable authority whose classificatory approach is explicitly endorsed by the writer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "no caer en la manida y subjetiva división de los «grandes» y «chicos»",
+        "target": "the hierarchy between grandes and chicos cantes",
+        "rationale": "The passage critiques an established evaluative hierarchy of cantes and favors an alternative thematic classification."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Pero bastaron media docena de cantes para dejar ese regustillo andaluz en cuantos escuchamos la voz fuerte y apurada de Meneses",
+        "target": "José Meneses's performance",
+        "rationale": "The passage evaluates Meneses's shortened appearance positively through its effect on listeners and his vocal qualities."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions origins and an epoch of gold, but these are not clearly used to authorize present flamenco through tradition or roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Rhythm is used for classification, but not clearly as an aesthetic criterion for judging quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Montoro's classification and Meneses's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-03-4-right-donde-dios-era-undeb",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "El flamenco como expresión genuina de la cultura de este pueblo",
+        "target": "flamenco",
+        "rationale": "The passage explicitly presents flamenco as a genuine expression of the people's culture."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "el cante jondo, en la manera aproximada en que históricamente se conoce, comienza a nuclearse y configurarse a partir de la expulsión de los moriscos y del quebrantamiento de fondo racial autóctono andaluz",
+        "target": "cante jondo",
+        "rationale": "The passage grounds the formation and meaning of cante jondo in historical origins and rooted Andalusian continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "las referencias a Dios estuviesen mediatizadas por el credo oficial que, a fuego, se les imponía a los herejes",
+        "target": "religious references in flamenco lyrics and oppressed Andalusian communities",
+        "rationale": "The passage frames flamenco meaning through identity groups and power relations between dominated communities, official religion, and victorious authorities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Muchos estudiosos no han captado esta realidad en Andalucía.",
+        "target": "scholarly interpretations of cante jondo",
+        "rationale": "The author contests prior scholarly interpretation and asserts an expert right to define cante jondo as a complex cultural synthesis."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'dentro de nuestro arte' is present, but it does not clearly draw an insider/outsider boundary around flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The text discusses culture and acervo cultural, but it does not clearly frame flamenco as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "cante jondo as a genuine, historically rooted cultural synthesis",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible theoretical claims are sufficiently explicit for the emitted codes."
+  }
+]

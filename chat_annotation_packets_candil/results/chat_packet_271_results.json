@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "1993-03-17-right-siguiriyas-gitanas",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The poem uses gendered and gitana imagery, but it does not clearly make identity function as flamenco authority, belonging, representation, or community boundary-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic/erotic imagery around a gitana does not by itself satisfy a collapsed codebook discourse function."
+  },
+  {
+    "article_id": "1993-03-18-left-ritmos-de-ida-de-vuelta-y-de-vai",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Los puristas absolutos y algunos partidarios incondicionales de los cantes básicos suelen despreciarlos rotundamente",
+        "target": "los cantes indianos o de ida y vuelta",
+        "rationale": "The passage explicitly presents purist actors devaluing ida-y-vuelta cantes from a boundary position around legitimate flamenco repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "muchos aficionados y algunos flamencólogos famosos —Manfredi Cano, Fernando Quiñones y otros— confiesan haberse rendido a sus encantos",
+        "target": "los cantes indianos o de ida y vuelta",
+        "rationale": "The text invokes aficionados and named flamencologists as authoritative evaluators who contest the purist dismissal of these cantes."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "la música étnica de los gitanos catalanes, quienes se identifican totalmente con ella",
+        "target": "la rumba como música de los gitanos catalanes",
+        "rationale": "The passage frames a flamenco-adjacent musical form through an ethnic/community identity that defines belonging and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article mentions expansion of the public in café-cante history, but the visible text does not clearly contrast participatory/private versus spectatorial/public settings as a value claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses historical evolution and transatlantic circulation, but tradition/continuity is not clearly used to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "cantes indianos/de ida y vuelta and rumba",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Coded only the visible beginning/window/ending material; the article is truncated but the relevant boundary and authority claims are explicit."
+  },
+  {
+    "article_id": "1993-03-20-right-alre-de-la-fiesta-gitana",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "un reencuentro con la auténtica dimensión humana del cante gitano",
+        "target": "el cante de Tío Bacán / cante gitano",
+        "rationale": "The text explicitly attributes authenticity and proper human depth to Bacán's cante gitano."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "no admiten sobreañadidos ni adulteración",
+        "target": "las soleares interpretadas por Tío Bacán",
+        "rationale": "The passage draws a purity boundary by declaring that these soleares cannot accept additions or adulteration."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "soleares de embarazosa estructura, muy elaboradas y pulidas hasta un grado máximo",
+        "target": "las soleares de Tío Bacán",
+        "rationale": "The passage applies aesthetic criteria of structure, elaboration, polish, and expressive measure to define the quality of the cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central vocabulary, but the coded authenticity and purity claims already capture the evident discourse function more directly than a separate identity-framing code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "criticism"],
+      "target": "Tío Bacán and his cante gitano",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is short but contains explicit authenticity, purity, and evaluative aesthetic language."
+  },
+  {
+    "article_id": "1993-03-24-left-aunque-no-quepa-en-el-papel-jos-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El resultado es un libro espléndido, abundante en datos e inexcusable",
+        "target": "el estudio biográfico de Gonzalo Rojo sobre Juan Breva",
+        "rationale": "The passage makes an explicit positive critical evaluation of the book's quality and value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "la egregia figura de Antonio Ortega Escalona",
+        "target": "Antonio Ortega Escalona / Juan Breva",
+        "rationale": "The review elevates the biographical subject as an exemplary canonical figure whose status justifies serious study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "utilizando métodos científicos de trabajo como la semiología o el estructuralismo",
+        "target": "specialized flamenco scholarship and research methods",
+        "rationale": "The passage authorizes rigorous specialist and scientific methods while criticizing superficial general flamenco studies."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'un auténtico tesoro' praises the cassette as valuable, but it does not assert flamenco authenticity or properness."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The review values archival recordings, period texts, and historical sources, but it does not clearly frame them as public heritage safeguarding or living heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Juan Breva scholarship and specialized flamenco research",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible review text clearly evaluates the book and authorizes specialist research over superficial generalization."
+  },
+  {
+    "article_id": "1993-03-25-left-noticiario-flamenco-congreso-de-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Diego Clavel no ha demostrado estar en posesión de los conocimientos que exige la antológica grabación",
+        "target": "Diego Clavel's recording of malagueñas",
+        "rationale": "The passage explicitly criticizes the singer's competence for undertaking the recording."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "la preponderancia radical del «cante gitano puro» dejó sin posibilidad de aprendizaje a jóvenes como Diego Clavel",
+        "target": "the dominance of cante gitano puro over malagueña learning and repertoire",
+        "rationale": "The text criticizes purity-based boundary work that excludes malagueña from legitimate learning and performance attention."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "dejó sin posibilidad de aprendizaje a jóvenes como Diego Clavel",
+        "target": "access to learning malagueña",
+        "rationale": "The passage frames repertoire politics as restricting access to flamenco knowledge and learning across stylistic boundaries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Knowledge, study, and local accent operate as evaluative criteria, but this overlaps with the clearer negative evaluation and pedagogy/access codes already emitted."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity shapes the polemic, but the visible discourse function is more precisely the purity boundary around repertoire and learning."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The congress notice lists official figures and institutions, but it is routine event organization rather than explicit authorized heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "pedagogy", "criticism"],
+      "target": "malagueña, Diego Clavel's recording, and purity-based cante hierarchy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The congressional notice itself is mostly administrative; the emitted codes come from the visible critical letter on malagueña, Diego Clavel, and purity-based repertoire exclusion."
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1983-07-9-left-como-el-gazpacho-al-cante-flamen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "nadie, honradamente, puede decir que lo conoce y sabe de su origen",
+        "target": "the origin and knowability of flamenco",
+        "rationale": "The passage makes origin and roots the central ground of authority, while contesting whether anyone can honestly claim such knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "puede decir de él cuanto le venga en gana, porque nadie saldrá a su encuentro para rebatirle sus teorías inciertas",
+        "target": "unsupported theories about flamenco",
+        "rationale": "The author frames himself as an investigative aficionado criticizing unchallenged, uncertain theories about flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "claims about flamenco origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Coded only the visible dispute over origin-knowledge and critical authority; the Ziryab narrative itself is treated as cited theory, not independently verified by the annotator."
+  },
+  {
+    "article_id": "1983-07-10-left-cantes-tradicionales-de-cartagen",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "han ido brotando las distintas manifestaciones musicales que, más tarde, dieron lugar al florecimiento de unos cantes característicos que denotan, en su estructura musical, un cariz autóctonamente cartagenero",
+        "target": "cantes de estilos mineros de Cartagena",
+        "rationale": "The article grounds the value of these styles in local rootedness, continuity, and an autochthonous Cartagenan musical character."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "que le transmitiera su padre don Antonio Grau Mora, Rojo el Alpargatero, creador y estructurador musical de los cantes y estilos mencionados. TRADICION ORAL.",
+        "target": "transmission of Cartagena mining styles",
+        "rationale": "The passage explicitly frames flamenco knowledge as passed intergenerationally through oral tradition from father to son."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "quedan fielmente interpretados para la posteridad, en la numerosa discografía que grabara, años atrás, Antonio Piñana, padre",
+        "target": "recorded preservation of Cartagena mining styles",
+        "rationale": "Recordings are presented as a faithful medium for preserving these styles for posterity, giving the passage a safeguarding and living-transmission function."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "Cartagena mining-style cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-12-left-taranta-del-arbol-malague-o-por-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "hace cincuenta años se canta-ba como tal y que después se viene interpretando como cartagenera",
+        "target": "the classification of the taranta 'Son desabrios' / 'Del soberano'",
+        "rationale": "The passage uses historical continuity and earlier practice to authorize one classification of the cante over a later one."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "transcribo un acta notarial que acredita que a principios de siglo aquellos grandes cantaores, por Levante, la conocían e interpretaban como taranta",
+        "target": "documentary proof for naming the cante as taranta",
+        "rationale": "The author invokes documentary authority to police a classificatory boundary between taranta and cartagenera."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "proper classification of a Levante cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-14-left-cincuenta-a-os-de-luz-y-duendes",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Nadie, en toda la historia del flamenco ha ostentado un magisterio más indiscutido",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through a superlative historical hierarchy and presents his authority as unmatched."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "toda su inconmensurable grandeza cantaora",
+        "target": "Antonio Mairena's artistry",
+        "rationale": "The article makes explicit evaluative praise of Mairena's flamenco greatness and artistic stature."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "algo tremendamente importante se había recuperado para nuestra cultura. Por fin, en la persona del maestro desaparecido, se levantaba el unánime reconocimiento hacia un pueblo secularmente perseguido",
+        "target": "public cultural recognition linked to Mairena and the Gitano people",
+        "rationale": "The passage frames remembrance and recognition as cultural recovery for a historically persecuted community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article repeatedly calls Mairena 'maestro' and invokes magisterio, but the visible excerpt does not clearly discuss teaching or pedagogical transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to a persecuted people has identity framing, but the main discourse function in the visible span is public recognition and remembrance rather than defining belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Antonio Mairena and the cultural memory associated with him",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1983-07-17-right-carmen-linares",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "siempre he procurado aprender de todos, porque en Madrid estaban la crema y nata de los cantaores",
+        "target": "Carmen Linares's flamenco learning",
+        "rationale": "The interview frames her knowledge as accumulated through listening to and learning from recognized singers in a situated flamenco milieu."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "pero aprenderla, la aprendí de mi padre",
+        "target": "familial transmission of a cante",
+        "rationale": "The passage explicitly identifies family-based learning as the source of her knowledge of the cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "el tocaor que se pase en falsetas, lo que hace es quitarle concentración al cantaor y molestarle. Hay que tener en cuenta que el cante y la guitarra es una conversación entre dos.",
+        "target": "guitar accompaniment in flamenco",
+        "rationale": "The answer defines good accompaniment by an aesthetic criterion of restraint and dialogic balance between cante and guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions Madrid's flamenco environment and important artists, but it does not clearly grant community authority to aficionados, peñas, or local participants."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Chacón is praised as extraordinary and complete, but the stronger visible evaluative function is the applied criterion for accompaniment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Carmen Linares's learning and flamenco accompaniment norms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

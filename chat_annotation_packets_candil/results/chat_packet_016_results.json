@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "1980-11-6-right-lo-jondo-en-salvador-rueda",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "aparezca en las referencias de los estudiosos como una época vacía de atenciones intelectuales, cuando no de clara hostilidad... Algo que, a mi parecer y de ningún modo, se corresponde con la realidad",
+        "target": "scholarly accounts of flamenco's late nineteenth-century reception",
+        "rationale": "The author contests received expert/scholarly interpretations and asserts a corrective critical authority over flamenco historiography."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "se impone recobrar la memoria, sin ella será imposible efectuar el estudio profundo y colectivo que todo el arte flamenco reclama",
+        "target": "flamenco as Andalusian cultural memory",
+        "rationale": "The passage frames flamenco as requiring collective memory-work and recovery from cultural forgetting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Estimo, por las fechas mencionadas en este artículo, que la primacía no es del poeta sevillano",
+        "target": "the literary primacy of Manuel Machado versus Salvador Rueda in flamenco-themed poetry",
+        "rationale": "The text explicitly disputes canonical precedence and ranking in the literary treatment of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The memory and cultural-continuity language is present, but the visible excerpt more clearly frames recovery as collective memory/heritage work than as tradition authorizing present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco historiography and literary canon formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt gives enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "1980-11-8-right-una-broma-de-mal-gusto-dada-en-1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "me atreví a decirle que lo que había cantado no era cartagenera de Chacón, sino un cante de La Trini",
+        "target": "misattribution of La Trini's cante to Chacón",
+        "rationale": "The author exercises corrective expert judgment to police the proper attribution and classification of a flamenco cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "todo había quedado aclarado ante la afición y principalmente ante los profesionales que era su mayor preocupación",
+        "target": "afición and professional flamenco community",
+        "rationale": "The passage treats recognition by aficionados and especially professionals as the relevant community authority for settling the attribution dispute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The author's correction resembles a lesson, but the passage is primarily about attribution and expert judgment rather than a pedagogical transmission setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the authorship and naming of the cartagenera associated with La Trini and Chacón",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-11-9-right-mi-encuentro-con-aurelio-en-c-di",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Aurelio había aceptado aquel desafío. Y lo había aceptado —pude darme perfecta cuenta de ello— con la satisfacción de que tenía frente a él a un Juez digno de su arte.",
+        "target": "Juan Cotta's authority to judge Aurelio Sellés's cante",
+        "rationale": "The passage explicitly frames the listener as a worthy judge whose critical authority the artist accepts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "todavía me siento algo avergonzado de no haber podido captar los matices que aquel día trazaron la frontera entre lo bueno y lo mejor",
+        "target": "subtle quality distinctions in Aurelio Sellés's cante",
+        "rationale": "The author defines flamenco value through fine aesthetic nuance, distinguishing merely good from best."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "de él aprendí lo poco que sé sobre ese misterioso arte... profundo conocedor de todos los secretos del cante y la guitarra",
+        "target": "Juan Cotta as a source of flamenco knowledge",
+        "rationale": "The narrator presents his uncle as an authoritative knower from whom he learned flamenco understanding."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Existe hoy mucho bueno. ¿Pero existe lo mejor? ¿Existe la humildad suficiente, el sacrificio suficiente... para alcanzar la mayor grandeza del arte flamenco?",
+        "target": "contemporary flamenco standards compared to Aurelio's artistic discipline",
+        "rationale": "The article ends with an explicit evaluative question about whether current flamenco reaches the highest artistic standard."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The intimate setting of three people without guitar suggests private authenticity, but the passage values humility and expert judgment more explicitly than anti-commercial or intimate authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The private setting matters narratively, but the text does not clearly contrast it with public/spectatorial flamenco as a social value boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Aurelio Sellés's artistic humility and refined cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1980-11-10-right-las-letras-flamencas-de-fernando",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text presents flamenco lyrics and brief publication/performance context, but it does not evaluate, rank, authorize, or critique them."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is primarily lyric content and neutral contextual note."
+  },
+  {
+    "article_id": "1980-11-11-left-guitarra",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "«Candil», excepcionalmente y camo homenaje póstumo, se honra en reproducir este soneto del joven y excelente poeta sevillano recientemente fallecido.",
+        "target": "José Luis Núñez and his sonnet",
+        "rationale": "The editorial note explicitly praises the poet as excellent and frames reproduction as an honorific posthumous tribute."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The poem invokes the South and Andalusian imagery, but it does not use tradition, roots, or continuity to authorize flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem contains aesthetic language about guitar and cante, but it is metaphorical lyric description rather than explicit criteria for judging flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José Luis Núñez's flamenco-themed sonnet",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

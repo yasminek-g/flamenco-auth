@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "1983-05-4-left-a-diego",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "fino de olfato, músico de cascabeles, arriero de caminos propios, solitario con reata de amigos, con guía de identidad universal",
+        "target": "Diego el del Gastor",
+        "rationale": "The homage evaluates Diego through elevated artistic praise rather than merely reporting biography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The remembered nocturnal gathering in a tabernilla is socially intimate, but the passage does not clearly contrast participatory/private flamenco against public spectatorship as a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Diego el del Gastor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Poetic memorial language is coded only where it clearly performs evaluative praise."
+  },
+  {
+    "article_id": "1983-05-4-right-la-experiencia-que-es-la-madre-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "encaminada a completar la formación musical de los alumnos de cursos superiores de Educación General Básica, el tema elegido con carácter monográfico ha sido el Cante Flamenco",
+        "target": "school-based flamenco instruction in Jaén",
+        "rationale": "The passage frames flamenco learning through an institutional school initiative that expands student access to flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "El procedimiento seguido por José Luis Buendía consistía en partir de la realidad socioeconómica de la región... A continuación se pasaba a una descripción de los grandes estilos primitivos de cante",
+        "target": "José Luis Buendía's flamenco pedagogy",
+        "rationale": "Buendía is positioned as an authorized pedagogical mediator who explains flamenco through a structured method."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "esa labor de difusión de nuestras raíces culturales andaluzas, tarea que juzgamos imprescindible de cara a las nuevas generaciones",
+        "target": "flamenco as Andalusian cultural inheritance for new generations",
+        "rationale": "The passage frames flamenco education as transmission of collective cultural roots to future generations."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "institutional flamenco education",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly joins school pedagogy, authorized explanation, and intergenerational cultural transmission."
+  },
+  {
+    "article_id": "1983-05-5-left-tierra-sobre-la-tierra-aproximac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "los dotó de la cualidad precisa, de «jondura» sin la cual es inconcebible el verdadero cante flamenco",
+        "target": "gitano-shaped flamenco styles",
+        "rationale": "The passage defines verdadero cante flamenco by the possession of jondura, making an explicit authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "la cualidad precisa, de «jondura» sin la cual es inconcebible el verdadero cante flamenco",
+        "target": "cante flamenco quality",
+        "rationale": "Jondura is used as an aesthetic criterion that determines whether cante counts as true flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Caballero Bonald opta por establecer dos grandes grupos distintivos que él llama respectivamente «Cantes Flamencos Primitivos» y «Cantes Flamencos Derivados»",
+        "target": "Caballero Bonald's classification of flamenco styles",
+        "rationale": "The passage invokes an expert classificatory hierarchy that organizes the flamenco repertoire into primitive and derived groups."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible text discusses origins and classification but does not clearly describe embodied, oral, familial, or lineage-based transmission as a pedagogical process."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "classified flamenco repertoire and true cante flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The truncated excerpt is still sufficient for coding because the visible window contains explicit classificatory and authenticity language."
+  },
+  {
+    "article_id": "1983-05-6-right-las-corridas-o-corridos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "no goza en exceso de nuestra simpatía... no descubre ningún mundo poético nuevo en su vulgar y estrecho prosaísmo",
+        "target": "the repeated letra of the caña",
+        "rationale": "The passage explicitly evaluates the letra negatively for poetic weakness and prosaic vulgarity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "han evolucionado poquísimo, y se siguen repitiendo hasta el infinito siempre que se interpretan estos cantes",
+        "target": "the caña and polo styles",
+        "rationale": "Limited evolution and repetitive letras are applied as criteria for judging the styles' aesthetic limitations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article describes traditional romances and historical derivations, but the past is mostly classificatory rather than used to authorize present value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The passage names derivations and variants, but it does not clearly construct a sustained canon or ranking beyond localized aesthetic judgments."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "caña, polo, and their repeated letras",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Historical classification is treated as descriptive unless paired with explicit evaluative criteria."
+  },
+  {
+    "article_id": "1983-05-10-right-cante-jondo-el-otro-sacramento-d",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "el cante jondo, como expresión cultural de este Sur imaginero y fervoroso, ha sido vehículo idóneo de participación en la celebración de la Eucaristía",
+        "target": "cante jondo as southern cultural expression in religious participation",
+        "rationale": "The passage frames cante jondo as a living cultural expression through which a community participates in ritual life."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "cada pueblo tiene el derecho y hasta el deber de dirigirse a Dios de acuerdo con su propia especificidad",
+        "target": "the community's right to express worship through its own cultural specificity",
+        "rationale": "The passage uses collective identity and cultural specificity to define who may represent religious expression through flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "falta de sensibilidad respecto al clamor de un pueblo... No carece, a nuestro juicio, de relevancia la decisión adoptada por el Pastor de Jaén",
+        "target": "the Bishop of Jaén's refusal to authorize a flamenco mass",
+        "rationale": "The article exercises critical authority to contest an institutional boundary that excludes flamenco from the Eucharistic setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The passage discusses church authorization and Vatican II, but the institutional frame concerns liturgical permission more than authorized heritage recognition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The bishop's stated reasons draw a boundary between mass and spectacle, but the visible text presents this mostly as reported institutional reasoning rather than a flamenco authenticity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco mass and cante jondo as legitimate cultural-religious expression",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough explicit cultural-rights and institutional-critique language for coding."
+  }
+]

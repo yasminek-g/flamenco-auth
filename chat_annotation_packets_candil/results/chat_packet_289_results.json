@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "1994-03-24-left-noticiario-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Primer premio, dotado con la «Lámpara Minera», que será el máximo galardón del Festival",
+        "target": "XXXIV Concurso de Cante del Festival Nacional del Cante de las Minas",
+        "rationale": "The contest rules establish a formal hierarchy of cante awards, explicitly naming the Lámpara Minera as the festival's highest distinction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text mentions selection procedures and organization, but the visible excerpt does not show expert judgment or boundary-policing being exercised."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Festival competition prizes and cante categories",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-03-26-left-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "nuestra protesta más sentida por el trato inadecuado que recibe el Arte Flamenco en Canal Sur Televisión",
+        "target": "Canal Sur Televisión's treatment of Arte Flamenco",
+        "rationale": "The peña federation explicitly criticizes the broadcaster for giving flamenco inadequate and insufficient treatment."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "uno de los pilares básicos de nuestro rico acervo cultural",
+        "target": "Arte Flamenco as Andalusian cultural patrimony",
+        "rationale": "Flamenco is framed as a core part of collective Andalusian cultural heritage rather than merely as programming content."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "ofrezca a todos los andaluces un programa serio y digno, que difunda y enseñe, en hora adecuada, el Arte Flamenco",
+        "target": "public television as mediator of flamenco knowledge",
+        "rationale": "The passage demands institutional media access that would teach and disseminate flamenco knowledge to present and future audiences."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The Serranito dictionary excerpt applies aesthetic criteria to guitar technique, but the article already has stronger discourse functions in the Canal Sur protest and heritage framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Arte Flamenco and its treatment by Andalusian public television",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-07-3-left-editorial",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "Hay centenarios y centenarios... tibieza y hasta olvido con que ha transcurrido el centenario de Rafael Ramos Antúnez, «Niño Gloria»",
+        "target": "public memory of flamenco artists such as Niño Gloria",
+        "rationale": "The editorial frames commemoration and neglect of flamenco artists as a problem of collective cultural memory and responsibility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "las últimas actuaciones de la Administración son indicadoras de que nos hallamos en una situación recesiva",
+        "target": "administrative and public-institutional support for flamenco",
+        "rationale": "The passage criticizes recent institutional actions, especially reduced radio space, as a decline in support for flamenco culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The text mentions public recognition and administration, but it mainly criticizes neglect rather than showing official heritage authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "flamenco artists' public memory and institutional protection",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-07-4-left-la-poca-dorada-diego-del-gastor-",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "la Casa Pepe, un humilde bar que servía como segundo hogar para los flamencos de Morón",
+        "target": "Casa Pepe as a local flamenco gathering space",
+        "rationale": "The bar is valued as a socially intimate, participatory flamenco setting rather than a neutral venue."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "su toque se llenaba de una increíble e inspirada emoción",
+        "target": "Diego del Gastor's guitar playing",
+        "rationale": "The passage evaluates Diego's toque through an aesthetic criterion of inspired emotional force."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "un guitarrista flamenco, un carnicero, un pastelero, un zapaterro, un escribano, un conductor de taxi jubilado, un barbero y dos obreros parados recitando de memoria y discutiendo inteligentemente",
+        "target": "Morón's local flamenco sociability",
+        "rationale": "The passage constructs flamenco culture as sustained by a socially mixed local community whose shared knowledge and participation carry value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The narrator notes being a rare foreigner interested in flamenco, but the passage does not clearly draw an insider/outsider authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Diego del Gastor and Morón flamenco sociability",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1994-07-9-left-aportaci-n-de-los-gitanos-a-la-c",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "la singularidad de la aportación gitana a la cultura andaluza",
+        "target": "Gitano contribution to Andalusian and flamenco culture",
+        "rationale": "The passage uses ethnic/community identity to explain cultural formation and the authority of gitano contribution within flamenco history."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "nadie niega el papel fundamental que han jugado los gitanos en la formación y posterior desarrollo del cante flamenco",
+        "target": "formation and development of cante flamenco",
+        "rationale": "The text grounds flamenco value and development in historical origins, continuity, and foundational contribution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Bernard Leblon... prototipo muy estimable de toda una bibliografía que indagará y se planteará la cuestión gitana como vía para la comprensión de cuáles son los fundamentos del fenómeno flamenco",
+        "target": "scholarly study of gitano foundations of flamenco",
+        "rationale": "The passage authorizes interpretation through named scholars and research traditions that define the foundations of the flamenco phenomenon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'señas de identidad de la cultura andaluza' suggests public cultural value, but the stronger visible function is identity-based historical authorization rather than explicit heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "criticism"
+      ],
+      "target": "gitano contribution to flamenco and Andalusian culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

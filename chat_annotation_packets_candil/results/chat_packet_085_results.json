@@ -1,0 +1,256 @@
+[
+  {
+    "article_id": "1983-11-24-right-buz-n-flamenco",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "el éxito artístico y de crítica ha sido excelente, no así el económico",
+        "target": "the flamenco festivals in Paris",
+        "rationale": "The passage explicitly evaluates the festivals' artistic and critical success while distinguishing it from economic failure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "un error de nominación en el LP y también en la paternidad del cante, debido, sin duda, a la falta de una investigación previa",
+        "target": "the LP's attribution of a fandango style to Niño León",
+        "rationale": "The writer uses critical correction and research standards to police accurate authorship and naming of a cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "ni el TENAZAS DE MORON ni JOAQUIN EL DE LA PAULA, ni JUAN TALEGA, ni TIA ANICA LA PERIÑACA, ni el PERRATE DE UTRERA, ni MANOLITO MARIA han sido ARTISTAS, pero han sido la verdad del cante",
+        "target": "non-professional or non-artist singers as bearers of cante truth",
+        "rationale": "The passage explicitly attributes the truth of cante to named singers, authorizing them beyond professional status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña is mentioned as producer/context, but the visible passage does not clearly make peña community authority the main discourse function."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The final list of respected singers has canonizing force, but the clearer function is authenticity/truth rather than hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "festival conduct, cante attribution, and truthful cante bearers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible windows and ending context."
+  },
+  {
+    "article_id": "1983-11-25-right-hablan-las-pe-as",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "A quedado constituida la Federación de Peñas Flamencas de Extremadura, estando integradas hasta ahora en la citada Federación las siguientes Peñas",
+        "target": "Federación de Peñas Flamencas de Extremadura",
+        "rationale": "The passage organizes flamenco activity through peña networks, presenting them as collective structures for sustaining and coordinating flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "fomentar la afición al flamenco en Extremadura y velar por su pureza",
+        "target": "the Federation's mission toward flamenco in Extremadura",
+        "rationale": "The Federation explicitly claims a role in guarding flamenco purity, drawing a boundary around proper flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "la defensa y prestigio del Arte Flamenco, así como su conservación, promoción, divulgación y enriquecimiento de sus más genuinos valores artísticos y culturales",
+        "target": "Arte Flamenco as a cultural value to conserve and promote",
+        "rationale": "The passage frames flamenco as a cultural good to be conserved, promoted, disseminated, and enriched through organized collective action."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Federation is institutional, but the passage stresses peña coordination and conservation rather than official state/expert heritage authorization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The word Arte appears, but the text mainly states organizational goals rather than evaluating a specific performance or artist."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "the Federation and its role in defending, purifying, conserving, and promoting flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only visible organizational statements."
+  },
+  {
+    "article_id": "1983-11-26-right-de-c-mo-fracas-en-mis-investigac",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "de qué forma debía enfocar el trabajo de investigación de la biografía del genial cantaor Francisco Lema «Fosforito»",
+        "target": "biographical research on Francisco Lema 'Fosforito'",
+        "rationale": "The article foregrounds investigative authority and method as the basis for constructing reliable flamenco biography."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "QUIEN FUE UNO DE LOS MEJORES CREADORES E INTERPRETES DE CANTES POR MALAGUEÑAS",
+        "target": "Francisco Lema 'Fosforito'",
+        "rationale": "The closing sentence canonizes Fosforito through superlative ranking as one of the best creators and interpreters of malagueñas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "References to certificates and baptism records are archival research mechanics, not heritage authorization or official patrimonial recognition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'dentro de lo posible' is literal/idiomatic and does not construct an insider-outsider flamenco boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Medical students' learning from the body is unrelated to flamenco pedagogy or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito's biography and canonical status in malagueñas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; no code assigned for archival record terms alone."
+  },
+  {
+    "article_id": "1983-11-28-left-discografia-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Too short and purely listing-like for reliable discourse coding."
+  },
+  {
+    "article_id": "1984-01-3-left-editorial-la-llave",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "evidencia la enorme responsabilidad que ha de asumir quien se crea legitimado para realizar una siempre controvertida concesión",
+        "target": "authority to award the llave del cante",
+        "rationale": "The editorial centers the authority and responsibility of those who would make a controversial legitimating judgment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "aislar a los impostores y cortar el paso a un flamenco, de nuevo cuño que, acaso, esté en un punto de irreversible degradación",
+        "target": "commercially driven evolved/new flamenco and impostors",
+        "rationale": "The text draws an explicit boundary against impostors and degraded new flamenco as threats to proper cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "contar con su evangelio vivo, poseer un guardián cercano, sentirse reflejado en una voz de hoy, en la que se recapitulen la magia, el duende, los estremecimientos de un ayer difuso",
+        "target": "the llave del cante as living guardian of jondo tradition",
+        "rationale": "The passage grounds present authority in living continuity with a valued flamenco past."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "experiencias regidas sólo por aventurerismo comercial para producir, insensatamente, un flamenco evolucionado",
+        "target": "commercially driven evolved flamenco",
+        "rationale": "Commercial adventurousness is framed as a threat producing degraded flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "¿Las Instituciones, el Congreso de Actividades Flamencas, un colectivo de Peñas Flamencas agrupadas?",
+        "target": "possible collective authorities for awarding the llave",
+        "rationale": "The passage explicitly considers institutions and grouped peñas as potential communities of authority over flamenco recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "La llave del cante no debe tener, en este momento, dueño. El otorgamiento hay que dilatarlo.",
+        "target": "the llave del cante as a canonizing distinction",
+        "rationale": "The editorial treats the award as a high-status, canonizing distinction whose assignment requires careful hierarchy-making."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutional authority is discussed, but the discourse concerns artistic legitimation and award authority rather than heritage listing or official patrimonial recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "the legitimacy, criteria, and authority for awarding the llave del cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Six codes are used because the editorial clearly develops distinct authority, purity, tradition, commercial-threat, community-authority, and canonizing-award functions."
+  }
+]

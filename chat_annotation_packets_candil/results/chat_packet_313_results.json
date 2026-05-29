@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "1995-11-14-right-noche-flamenca-en-sanl-car",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Ha empezado el ritual de los flamencos",
+        "target": "la reunión nocturna en la Peña Puerto Lucero",
+        "rationale": "The article frames the peña gathering as a participatory ritual of shared singing, jaleo, guitar, wine, and all-night co-presence rather than a neutral venue."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "gran parte de los cantes más genuinos, se han evocado esta noche en este cuarto",
+        "target": "the cantes performed in the peña room",
+        "rationale": "The passage explicitly authorizes the repertoire as genuinely flamenco within the intimate peña setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Juan \"El Plazoleta\" se apunta por cantiñas, justo al tono, cabal y acompasado",
+        "target": "Juan \"El Plazoleta\" and the performed cantes",
+        "rationale": "The description applies aesthetic criteria such as tone, cabal quality, compás, depth, and jondo expression to evaluate the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña community is visible, but the stronger discourse function is the participatory/intimate setting rather than explicit community authority to judge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "the peña-based nocturnal flamenco gathering in Sanlúcar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-11-15-left-carta-abierta-a-yerga-lancharro",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Pero Vd. sabe que tenerlo todo es casi imposible; eso lo puede comprobar con algunos cantes que Vd. me pidió y que mando para que vean que el Sr. no lo tiene todo, ni lo sabe todo.",
+        "target": "Yerga Lancharro's archival and flamenco authority",
+        "rationale": "The letter contests an expert's authority by using archival evidence, discographic correction, and public verification to police claims about flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "después de veinte minutos hablando, se convenció de los muchísimos entuertos escritos por Vd. mismo",
+        "target": "Yerga Lancharro's published flamenco claims",
+        "rationale": "The writer explicitly evaluates Yerga's prior writings as erroneous and positions his own response as corrective criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as possible verifiers, but the article does not clearly grant them independent community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "authority over flamenco discographic and biographical knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1995-11-16-left-enderezando-entuertos",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "con la autoridad que me confieren mis numerosos y asiduos lectores",
+        "target": "the author's authority to judge Juan Valderrama and correct flamenco claims",
+        "rationale": "The author explicitly claims critical authority and uses it to intervene in disputes over flamenco artistry and historical facts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "no es precisamente la voz, sea cual sea ésta, la que realmente hace al artista",
+        "target": "voice type as a criterion for judging cantaor quality",
+        "rationale": "The article debates aesthetic criteria for cante, rejecting afillá voice as the decisive measure of artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "en Juanito concurren las esencias y virtudes necesarias para ser un buen cantaor por todos los palos flamencos",
+        "target": "Juan Valderrama",
+        "rationale": "The passage explicitly evaluates Valderrama as possessing the qualities needed to be a good cantaor across flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase about artistic essence could imply authenticity, but the visible argument is mainly an aesthetic-critical claim about voice and artistry."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text contrasts gitano and non-gitano voice types, but the passage functions mainly as aesthetic evaluation rather than identity-based belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Valderrama and criteria for judging cantaor quality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "1995-11-17-right-nostalgias-guitarr-sticas-madril",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "ambos maestros, en tres sesiones semanales de clase",
+        "target": "Luis García Nieto and Manuel Bonet as guitar teachers",
+        "rationale": "The passage positions both figures as maestros who transmit flamenco guitar knowledge through regular instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "fieles ambos a sus respectivos maestros",
+        "target": "flamenco guitar learning through teacher lineages",
+        "rationale": "The article frames guitar knowledge as transmitted through fidelity to prior masters and personal apprenticeship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "su magistral virtuosismo tocaor y sus excelencias pedagógicas eran tan ampliamente conocidos como unánimemente ensalzados",
+        "target": "Luis García Nieto",
+        "rationale": "The closing praise explicitly evaluates García Nieto's guitar artistry and pedagogical excellence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The home tertulias are evocative, but the passage emphasizes learning and remembrance more than a public/private participatory boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to the orthodox line of Ramón Montoya suggest continuity, but this is not developed enough beyond pedagogical lineage to emit separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Madrid flamenco guitar teachers and their remembered authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt supports the emitted pedagogy and evaluation codes."
+  },
+  {
+    "article_id": "1995-11-19-left-homenaje-a-antonio-murciano",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "recibió en el transcurso del festival flamenco-homenaje varias distinciones de las diferentes Peñas gaditanas y la I Medalla de Oro de la Federación de Peñas Flamencas de Cádiz",
+        "target": "Antonio Murciano's recognition by flamenco institutions",
+        "rationale": "Institutional honors from the federation and peñas publicly authorize Murciano's cultural value within the flamenco world."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Más de ochocientos aficionados al mundo flamenco se dieron cita",
+        "target": "the flamenco community honoring Antonio Murciano",
+        "rationale": "Aficionados, peñistas, and flamenco friends are presented as the community that gathers to recognize and sustain Murciano's status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "en honor al maestro de las letras gaditanas",
+        "target": "Antonio Murciano",
+        "rationale": "The tribute canonizes Murciano through exemplary titles such as great writer, flamencologist, and maestro of Cádiz letters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The event has public cultural value, but the visible text does not explicitly frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Antonio Murciano's standing in the Cádiz flamenco world",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

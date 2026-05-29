@@ -1,0 +1,235 @@
+[
+  {
+    "article_id": "1988-11-21-right-desaparece-el-aula-de-flamencolo",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Desde aquella fecha de inauguración, se ha venido desarrollando una amplísima divulgación de la cultura flamenca andaluza... Por esta aula, han pasado conferenciantes, cantaores y concertistas de verdadera categoría",
+        "target": "Aula Universitaria de Flamencología de Málaga",
+        "rationale": "The passage frames the university aula as an institutional vehicle for disseminating flamenco knowledge through lectures, artists, peñas, schools, and cultural centers."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Nunca ha dispuesto de una oficina con el mobiliario necesario para ir formando nuestra biblioteca, una fonoteca con equipo de sonido... ¿No hay ganas de servicio a la cultura popular?",
+        "target": "Flamenco culture in the University of Málaga",
+        "rationale": "The complaint links libraries, sound archives, institutional support, and service to popular culture as conditions for sustaining flamenco as a public cultural practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "todos los que han venido detrás, han puesto cada uno su piedrecita, para hundir cada vez más el navio del arte flamenco en la Universidad",
+        "target": "University authorities after the aula's founders",
+        "rationale": "The author uses critical authority to denounce institutional neglect as damaging the place of flamenco in the university."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdadera categoría' and 'verdadera antropología' are evaluative but do not clearly assert authenticity or genuine flamenco properness."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Aula Universitaria de Flamencología and its institutional support",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coding is limited to the visible institutional-support and closing cultural-service passages."
+  },
+  {
+    "article_id": "1988-11-22-right-jaima-cultural-andaluza-en-catar",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Como parte importante de la cultura del pueblo andaluz, no podía faltar... un magno festival flamenco",
+        "target": "Arte flamenco within Andalusian culture",
+        "rationale": "The passage frames flamenco as a significant component of Andalusian collective culture and public cultural representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Siguiendo por los caminos auténticos del cante, nos deleitó seguidamente con unas malagueñas rematadas con verdiales.",
+        "target": "Lucas de Écija's cante",
+        "rationale": "The review presents the singer's repertoire path as authentically flamenco, using authenticity to authorize the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "El Pele llegó, cantó y convenció... tras cantar con ritmo y sabiduría, unas muy buenas bulerías, abandona el escenario ante el clamor de un público totalmente entregado.",
+        "target": "Manuel Moreno Maya «El Pele» and the festival performances",
+        "rationale": "The passage explicitly praises the success, quality, and audience impact of the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The word 'afición' appears as an applauding audience, but the visible passage does not grant that community authority to judge or sustain flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The term 'Compás Extremeño' is a group name in an event report, not evidence of embodied or oral transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Aesthetic terms such as rhythm, taste, and wisdom appear, but the review mainly offers general praise rather than developing distinct criteria beyond CRIT_01."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "The Jaima festival and its flamenco performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; advertising and contest-list material were not coded."
+  },
+  {
+    "article_id": "1988-11-24-right-discograf-a-flamenca-placas",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is too short to support any discourse code."
+  },
+  {
+    "article_id": "1989-01-3-right-candil-a-o-12-doce",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "puso su periplo en la memoria adormecida de las ocho provincias andaluzas para recuperar un hermosísimo legado que la ramplonería y el dirigismo cultural de la dictadura habían envilecido",
+        "target": "Candil's recovery of Andalusian flamenco memory and legacy",
+        "rationale": "The passage frames the magazine's work as recovering a damaged collective legacy and memory, a clear safeguarding and memory-work function."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "nuevas amenazas, nuevos y más sutiles detractores: consumo, desconocimiento... inadecuación entre la autenticidad y el éxito de los artistas... confunde el populismo con la esencialidad del grito jondo",
+        "target": "Threats to authentic or essential flamenco",
+        "rationale": "The text draws a boundary around legitimate flamenco by identifying consumption, ignorance, opportunistic institutions, and populism as threats to authenticity and jondo essence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "crítica desinformada... queremos... reflexionar conjuntamente, sin prepotencia, pero con rigor, sobre el flamenco de ayer, sobre el flamenco de hoy",
+        "target": "Candil's critical role and uninformed flamenco criticism",
+        "rationale": "The editorial positions rigorous critical reflection against uninformed criticism, asserting an expert boundary-policing role for the publication."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The passage names 'consumo' and success as threats, but it does not specifically contrast commercial spectacle or intimate co-presence as authenticity markers."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Candil's mission and the legitimacy of flamenco discourse",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1989-01-4-left-reflexiones-sobre-la-etapa-de-re",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "una cosa es conocer el cante y apuntarlo con cierta calidad, y otra ser creador de estilos o un verdadero artista flamenco",
+        "target": "Aficionados, creators of styles, and true flamenco artists",
+        "rationale": "The passage creates a value hierarchy between merely knowing or performing cante and being a creator or true flamenco artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "sin ánimo de quitarle méritos a nadie... han intervenido muchas circunstancias y muchas personas que no se han valorado al respecto, incluso que se ignoran por ciertos arribistas",
+        "target": "Narrow or opportunistic accounts of flamenco revalorization",
+        "rationale": "The author contests existing critical narratives and claims authority to correct who and what should be recognized in flamenco's revalorization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El flamenco está revalorizado, es verdad; ahora corresponde engrandecerlo, porque todo verdadero arte no se entiende momificado.",
+        "target": "The present state and future treatment of flamenco",
+        "rationale": "The passage evaluates flamenco's current recognition and argues that it must be enlarged rather than treated as static."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger points to imitation, but the visible passage does not develop embodied, oral, familial, or lineage-based transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'verdadero artista flamenco' supports the critical hierarchy, but the passage does not separately make an authenticity claim beyond that evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Narratives and hierarchies of flamenco revalorization",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coding focuses on the visible argument about revaluation, professionalism, and artistic hierarchy."
+  }
+]

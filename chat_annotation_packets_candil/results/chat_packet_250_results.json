@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "1992-03-20-left-hemeroteca-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "otras músicas —algunas protagonizadas por brillantes mediocres tan efímeros como incoherentes— tendrán una vida holgada a costa del doloroso sufrimiento de un colectivo",
+        "target": "Expo'92 treatment of flamenco versus other musics",
+        "rationale": "The passage uses critical boundary discourse to denounce the institutional privileging of other musics over flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "como se va a ofrecer en la Muestra Universal, no vivirá",
+        "target": "flamenco as presented in the Expo'92 context",
+        "rationale": "The visible excerpt frames the public mega-event presentation as damaging to flamenco's living value rather than sustaining it."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "desde allí se minarán las más excelsas virtudes de Andalucía... la expresión más feliz del Pueblo andaluz",
+        "target": "flamenco as an expression of Andalusian public culture",
+        "rationale": "The passage frames flamenco as a collective Andalusian cultural expression whose public value is threatened."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word 'maestro' appears as an honorific for a respected figure, not as pedagogical authority or teaching."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'Recuerdo' introduces a personal recollection and does not itself establish safeguarding or memory-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Expo'92 public handling of flamenco and flamenco as Andalusian cultural expression",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible polemical framing of Expo'92 and Andalusian flamenco value."
+  },
+  {
+    "article_id": "1992-03-24-left-testimonios-de-la-prensa-andaluz",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "reconoce en la copla una de las manifestaciones más genuinas de la personalidad cultural",
+        "target": "copla as Andalusian cultural expression",
+        "rationale": "The passage explicitly attributes genuineness to the copla as a cultural manifestation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "high",
+        "evidence_quote": "elemento depositario de la identidad endógena de Andalucía y del alma de su Pueblo",
+        "target": "copla as repository of Andalusian identity",
+        "rationale": "The passage frames copla as a collective cultural repository of identity and memory-like public value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "la personalidad cultural y de la configuración humana y espiritual de Andalucía",
+        "target": "Andalusian people and identity",
+        "rationale": "The text uses Andalusian collective identity to define what the copla represents and authorizes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The term 'alma' is part of identity discourse rather than an applied aesthetic criterion for judging performance quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage concerns authenticity and identity more than continuity, roots, or preservation of a valued past."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "community"
+      ],
+      "target": "copla as an authentic expression of Andalusian identity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is about copla and press discourse, the visible text links copla to flamenco/Andalusian cultural identity strongly enough for coding."
+  },
+  {
+    "article_id": "1992-03-27-right-aunque-no-quepa-en-el-papel",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "el libro de Paco Sánchez será un hermoso recordatorio",
+        "target": "Paco Sánchez's flamenco photography book",
+        "rationale": "The passage explicitly evaluates the book positively as a valuable reminder of flamenco emotion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Sus apariciones en revistas especializadas, en congresos científicos y en una serie de actividades pedagógicas diversas, confieren sobrado rango de seriedad a sus trabajos",
+        "target": "Jean Paul Tarby's flamenco research",
+        "rationale": "The passage grants scholarly and specialist authority to the author as a basis for evaluating his work."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "para la recuperación de la memoria artística de la genial gitana de Somorrostro",
+        "target": "Carmen Amaya's artistic memory",
+        "rationale": "The passage frames the periodical's central dossier as recovering artistic memory, a form of cultural memory-work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'hondura' and 'desgarro' are evocative aesthetic language, but the clearer function here is review/evaluation of books."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Pedagogical activities are mentioned as credentials, not as a substantive discussion of learning access or institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco publications, research, and memory recovery",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated review section; coded only visible review judgments and explicit memory-recovery language."
+  },
+  {
+    "article_id": "1992-03-28-right-flamenca",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "La honestidad de sus soleares está en contraposición de los comerciales fandangos de Huelva, a los que les sobra el estribillo",
+        "target": "Chaquetón's album 'Ayer y hoy'",
+        "rationale": "The passage explicitly evaluates parts of the recording positively and negatively."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sus alegrías mantienen las características de su trayectoria flamenca, o sea, compás, frescura, cierto salero e intuición nativa",
+        "target": "Chaquetón's alegrías",
+        "rationale": "The reviewer applies specific aesthetic criteria such as compás, freshness, salero, and native intuition to judge quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Se creen que se engrandece un cante por meter una flauta; no, mentira... ¿Que es más vendible? ¡Sí! Pero lo otro no",
+        "target": "use of new instruments and commercial appeal in flamenco recordings",
+        "rationale": "The passage uses critique to police the boundary between artistic enrichment and marketable instrumentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to 'raíces' and 'casta' support a rootedness idiom, but the dominant visible discourse is critical evaluation of the recording."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commerciality is criticized, but it functions primarily as critical boundary evaluation rather than a sustained authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Chaquetón's recording and its commercial/instrumental choices",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "1992-03-29-left-noticiario-flamenco",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The item lists events, organizers, places, and artists; names such as Granada are not used to build a canon or hierarchy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Institutional organizers and Expo venues are listed, but there is no explicit heritage authorization or patrimonial framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "News roundup/event listing without clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  }
+]
