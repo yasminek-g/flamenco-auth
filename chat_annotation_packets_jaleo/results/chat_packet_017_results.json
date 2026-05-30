@@ -1,0 +1,202 @@
+[
+  {
+    "article_id": "JALEO_1978_04::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "be prepared to unlearn and relearn everything when proper guidance is finally found",
+        "target": "flamenco guitar learning",
+        "rationale": "The passage positions teacherly 'proper guidance' as the corrective authority required for legitimate flamenco guitar learning."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "They can be used with a teacher as supplements... for learning new material during periods when a teacher is not available",
+        "target": "method books as mediated access to flamenco guitar knowledge",
+        "rationale": "The article explicitly evaluates method books as partial media-based access to flamenco knowledge across gaps in direct instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The music is very simple and, in my opinion does not accurately convey the feeling of the different toques. Not recommended.",
+        "target": "Jack Buckingham, El Arte Flamenco",
+        "rationale": "The author makes an explicit evaluative judgment of a flamenco guitar method book and rejects it on artistic/technical grounds."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compas, technique, aire, notation, and accuracy appear as criteria, but the stronger discourse function is the pedagogical evaluation of method books rather than a standalone theory of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco guitar learning through teachers and method books",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_04::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Community names and performance notices are present, but they function as social/news updates without clear authority, belonging, evaluative, or transmission discourse."
+  },
+  {
+    "article_id": "JALEO_1978_04::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The major article presents a rather pessimistic view of the dance... but the pictures of many of the top Spanish dancers currently working in this country are outstanding.",
+        "target": "Dance Magazine coverage of Spanish dance",
+        "rationale": "The passage evaluates the magazine's treatment of Spanish dance and explicitly praises the photographs while characterizing the main article's stance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The meeting notice asks members to contribute votes and ideas, but this is organizational governance rather than community authority over flamenco knowledge or value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Dance Magazine coverage of Spanish dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_04::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "all gathered together with the same devoted enthusiasm for flamenco that makes us all one for at least one spellbound night",
+        "target": "the San Diego juerga community",
+        "rationale": "The home juerga is framed as a participatory setting where shared flamenco enthusiasm creates social belonging and collective value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "two young students to the juerga who are learning to dance the way a Sevillana learns - movement, arms and aire first, steps later",
+        "target": "flamenco dance learning at the juerga",
+        "rationale": "The passage explicitly describes embodied learning through movement, arms, and aire as a valued mode of transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Perhaps we could show them a little more respect and silencio during their performances so that we could further enjoy their talents",
+        "target": "juerga audience behavior toward guitarists",
+        "rationale": "The author makes an explicit criticism of audience noise and evaluates respectful listening as necessary for appreciating performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article shows community enthusiasm, but the clearer community discourse is the participatory juerga setting rather than aficionados or a peña exercising authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the juerga as a participatory flamenco setting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_04::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Due to the degeneration in quality of the last two juergas, the coordinators of Jaleistas are holding an open meeting",
+        "target": "recent Jaleistas juergas",
+        "rationale": "The passage explicitly evaluates recent juergas as declining in quality and uses that criticism to justify corrective action."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "showing some interest in and respect for the singing and dancing. Do your socializing in an area away from the dance floor.",
+        "target": "conduct within the juerga setting",
+        "rationale": "The passage defines proper participation in the juerga by distinguishing respectful attention to performance from ordinary socializing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "not inviting large numbers of guests or people who are not interested in the flamenco",
+        "target": "non-member and guest access to the juerga",
+        "rationale": "The rules draw a social boundary around participation by distinguishing legitimate guests interested in flamenco from outsiders or party-crashers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The instruction about the correct way to do palmas concerns knowledge, but it functions mainly as conduct regulation within the juerga rather than a learning/access discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "proper participation and access at Jaleistas juergas",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

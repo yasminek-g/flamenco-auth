@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "JALEO_1980_01::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "he made its melodies, rhythms, and basic forms understandable to any guitarist who could read standard musical notation",
+        "target": "Edward Freeman's flamenco guitar notation/transcription work",
+        "rationale": "The passage frames written notation as a means of opening flamenco knowledge to guitarists who could read standard notation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Freeman was primarily a flamenco guitar teacher and transcriber of flamenco music.",
+        "target": "Edward Freeman as flamenco teacher and transcriber",
+        "rationale": "Freeman is positioned as an authorized teacher and mediator of flamenco guitar knowledge through teaching and transcription."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "When Guitar Review published their first flamenco issue (No. 19) in the 1950's they selected Freeman's music above everything else they could find to publish.",
+        "target": "Freeman's flamenco music/transcriptions",
+        "rationale": "The selection of Freeman's music above all other available material creates a value hierarchy that elevates his work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'capture the essence of the flamenco guitar' is evaluative, but it does not clearly claim that Freeman's work is genuinely or properly flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise of Freeman as excellent and important, but the stronger discourse function is pedagogical mediation and hierarchy rather than a sustained critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Edward Freeman's authority as a flamenco guitar teacher, transcriber, and mediator",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The boundary around guarded flamenco techniques is visible, but the article mainly legitimates Freeman by emphasizing written access and institutional selection."
+  },
+  {
+    "article_id": "JALEO_1980_01::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "They won't tell you because you're a foreigner.",
+        "target": "foreign learners seeking flamenco knowledge in Spain",
+        "rationale": "The passage explicitly marks foreignness as a barrier to access and constructs an insider/outsider boundary around flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "there was nothing in writing on the flamenco, no explanation. It was a folk art, not recorded.",
+        "target": "Freeman's effort to document and explain flamenco",
+        "rationale": "The article frames Freeman's learning and transcription project as creating access to flamenco knowledge where written explanation was absent."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The biggest coming star I believe is Francisco Sánchez, known as Paco de Lucía... A young man and virtuosic genius",
+        "target": "Paco de Lucía",
+        "rationale": "Freeman ranks Paco de Lucía as a rising star and canonizes him through the status term 'virtuosic genius.'"
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Freeman's guitars and Paco de Lucía, but the clearest evaluative move is ranking/canonization rather than a broader critical review."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Freeman's authority is implied through his transcription work, but the passage emphasizes access and documentation more than a formal teacher-authority relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "Freeman's transnational access to flamenco knowledge and his judgments about artists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines an exclusionary access boundary with a legitimating account of Freeman's documentation work."
+  },
+  {
+    "article_id": "JALEO_1980_01::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions 'the student struggling to effect a correct hand position' and teaching, but the visible passage does not clearly frame flamenco knowledge transmission or pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Biographical praise such as 'Never idle' and 'best London musicians' is not a clear flamenco-focused critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is primarily biographical and does not clearly perform flamenco-specific authority, heritage, community, pedagogy, or criticism work."
+  },
+  {
+    "article_id": "JALEO_1980_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "It was for their own edification only and was a part of their guitar education with Freeman.",
+        "target": "Freeman's guitar students and lesson materials",
+        "rationale": "The library is explicitly framed as part of Freeman's instructional system for students."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Freeman's library of transcriptions is organized by lessons, small sheets containing five lines of music per sheet.",
+        "target": "Freeman's transcription library",
+        "rationale": "The passage describes a mediated written system for organizing flamenco guitar knowledge into lesson materials."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article preserves and lists a transcription library, but it lacks public heritage, safeguarding, or community-memory framing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The term 'traditional' appears in a legal/public-domain sense and does not authorize present flamenco value through tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Freeman's transcription library as flamenco guitar pedagogy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The 'not to copy' restriction marks limited circulation, but the strongest codes concern lesson-based written transmission."
+  },
+  {
+    "article_id": "JALEO_1980_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the important contribution Ed made in writing down for the first time many of the complicated rhythms and forms of Flamenco music",
+        "target": "Freeman's written documentation of flamenco rhythms and forms",
+        "rationale": "The passage identifies written documentation as a major contribution that mediates access to complex flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "I am especially grateful for the willingness of a professional to share his knowledge and experience with a student who was not dedicated to playing professionally.",
+        "target": "Freeman as professional teacher",
+        "rationale": "Freeman is legitimized as a professional who authoritatively shares flamenco knowledge with non-professional students."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "We applaude Ed Freeman for his knowledge and teaching of music",
+        "target": "Edward Freeman's musical knowledge and teaching",
+        "rationale": "The passage offers an explicit positive evaluation of Freeman's knowledge and teaching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named professional students suggest status, but the passage does not clearly construct a canon or rank artists beyond praising Freeman's contribution."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The passage describes friendship and generosity, but does not make community belonging or aficionado recognition the basis of flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Freeman's pedagogy and written mediation of flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly values Freeman's openness to amateur learners, making pedagogy the dominant discourse function."
+  }
+]

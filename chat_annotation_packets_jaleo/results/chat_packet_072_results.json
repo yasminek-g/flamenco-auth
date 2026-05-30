@@ -1,0 +1,203 @@
+[
+  {
+    "article_id": "JALEO_1980_04::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "the public must have it made available to it in the form of recitals, lecture demonstrations and most of all, in terms of continued appreciation, RECORDS",
+        "target": "public access to flamenco through recitals, lecture demonstrations, and recordings",
+        "rationale": "The passage frames recordings and lecture-demonstrations as media that enable public access, continued appreciation, and knowledge of flamenco trends."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Jaleo membership and New York organizing are mentioned, but the passage does not grant the community authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "expanded access to flamenco through records and public programs",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded conservatively as access/mediation rather than community authority."
+  },
+  {
+    "article_id": "JALEO_1980_04::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "On re-reading these lines, one discovers the reason why this type of Spanish dancing is outdated.",
+        "target": "stylized neo-Spanish dancing based on piano pieces and earlier recital conventions",
+        "rationale": "The excerpt explicitly evaluates a dance style as outdated and argues that its choreographic conventions have exhausted their usefulness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "From a pure dancing point of view, most of these tunes... offer too little variety or scope to the choreographer.",
+        "target": "dance music by Albéniz, Granados, Turina and similar stylized Spanish pieces",
+        "rationale": "The passage applies aesthetic criteria—danceability, variety, choreographic scope, and suitability of musical structure—to judge the repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Everyman's idea of what Spain is, is not as wrong as the \"purists\", quick at crying \"Espagnolade!\" would have us believe",
+        "target": "purist criticism of picturesque or popular Spanish dance imagery",
+        "rationale": "The excerpt stages a critical boundary dispute by challenging purist authority over what counts as a true or acceptable representation of Spain in dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses truth and purist language, but the stronger discourse function is critical evaluation of Spanish dance representation rather than a direct proper/improper flamenco boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase \"rank of a recital artist\" implies hierarchy, but the passage mainly evaluates style and criteria rather than constructing a broader canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "stylized neo-Spanish dance and purist judgments about Spanish representation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The evidence is critical and boundary-focused, but not coded as AUTH because the target is broader Spanish dancing as much as flamenco."
+  },
+  {
+    "article_id": "JALEO_1980_04::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "He founded the A.C.A.D.E.M.A. (Academia y Conservatorio de Arte de Marbella y Andalucía) in Marbella, Spain, where he offered courses in Spanish dance, guitar, language, literature and other arts.",
+        "target": "José Greco's academies, courses, lecture demonstrations, and classes",
+        "rationale": "The passage frames Greco's work through formal institutions, courses, lecture demonstrations, and cross-national access to Spanish dance and guitar instruction."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "In recognition of his contributions to the Spanish arts, José Greco was presented the \"Cruz de Caballero del Mérito Civil\"",
+        "target": "José Greco's contributions to Spanish arts",
+        "rationale": "An official civil honor is presented as institutional recognition that authorizes Greco's cultural contribution."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as \"enrich the flamenco world\" praise Greco's impact, but most of the passage is documentary biography and listing rather than sustained critical evaluation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Greco is associated with teaching, but the clearer evidence concerns institutional/transnational access rather than a teacher-master authority relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "heritage"],
+      "target": "José Greco's role in Spanish dance education and cultural recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Official recognition is coded cautiously because the passage names Spanish arts rather than explicitly patrimony."
+  },
+  {
+    "article_id": "JALEO_1980_04::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article mentions an informance and Community Artist Residency Training, but the visible text does not yet connect the program to flamenco knowledge or evaluate flamenco access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible excerpt is mostly contextual setup for a guitarist residency; no clear flamenco discourse function appears in this article segment."
+  },
+  {
+    "article_id": "JALEO_1980_04::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The object was to put people into close contact with an artist, letting them hear him talk about his career and what it means to him to perform. And they could ask him questions.",
+        "target": "Radford's informance and community artist residency format",
+        "rationale": "The passage describes an institutional format that gives local audiences access to an artist's performance knowledge through discussion, questions, and demonstration."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The rest have only made false imitations without stature of any kind.",
+        "target": "singers other than Tomás Torre, Antonio Mairena, and Curro Mairena who attempt Manuel Torre's cante",
+        "rationale": "The speaker draws a clear boundary between legitimate continuation of Manuel Torre's cante and devalued false imitation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "The only one to continue our father's cante was his son, Tomás Torre, although the only one who can sing his cante is Antonio Mairena and Curro Mairena who have a little of his 'eco'.",
+        "target": "continuation of Manuel Torre's cante through descendants and singers with his echo",
+        "rationale": "The passage frames proper continuation of a singer's cante through familial inheritance and embodied vocal trace or echo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as knowing Manuel Torre's life, but they are not granted authority to judge or sustain flamenco in the cited passage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Manuel Torre and Antonio Mairena are implicitly high-status figures, but the clearest discourse function is lineage and authenticity boundary-work, not explicit canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "pedagogy"],
+      "target": "legitimate continuation of Manuel Torre's cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines a public-access informance section with a translated interview that makes a strong lineage and false-imitation claim."
+  }
+]

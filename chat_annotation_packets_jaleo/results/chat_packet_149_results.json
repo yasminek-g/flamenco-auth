@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "JALEO_1982_08::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "One of Sánchez Pernía's greatest dreams is to do authentic flamenco... performers such as El Borriquito de Jerez, El Perrate, or La Fernanda de Utrera, who do \"authentic\" flamenco",
+        "target": "Sánchez Pernía's desired flamenco and named performers",
+        "rationale": "The passage explicitly attributes genuineness to a desired kind of flamenco and to particular performers."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "For this composer, folklore is significant and is that which identifies a people. For that reason it should be promoted.",
+        "target": "folklore and characteristic Andalusian cante",
+        "rationale": "The passage frames folklore/cante as collective cultural value tied to public identity and promotion."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "a people understand what is theirs, not what comes from outside",
+        "target": "foreign-influenced music versus music belonging to a people",
+        "rationale": "The passage uses collective identity to mark what music belongs to a people and what comes from outside."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text raises false/unauthentic flamenco and misgivings about foreign influence, but the boundary is less directly developed than the explicit authenticity and identity claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "There is criticism of funding opera like Carmen instead of characteristic cante, but the passage is more heritage/identity advocacy than expert critical boundary policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "community"
+      ],
+      "target": "authentic flamenco and Andalusian/people-linked folklore",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_08::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Sabicas... returned to Barcelona and took his place in the Palau de la Musica to give a truly triumphant return concert.",
+        "target": "Sabicas's Barcelona concert",
+        "rationale": "The review explicitly evaluates the concert as triumphant."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "pure, serious, profound...eternal and elemental. A prodigious fingering, perfect articulation, a deep and calm rhythm",
+        "target": "Sabicas's guitar performance",
+        "rationale": "The reviewer applies aesthetic criteria of purity, seriousness, depth, technique, articulation, and rhythm to judge quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Sabicas, the legendary maestro of the flamenco guitar",
+        "target": "Sabicas",
+        "rationale": "The passage canonizes Sabicas through legendary and maestro status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "covering the full range of flamenco with strict respect for tradition",
+        "target": "Sabicas's repertoire and concert structure",
+        "rationale": "The performance is legitimated through breadth of repertoire and faithful respect for tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The review uses genuine/pure language, but the stronger function is tradition-based authorization and critical evaluation rather than a separate explicit authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Although this is a review by a named critic, the visible text mainly performs evaluation and canonization rather than foregrounding critic/expert authority as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Sabicas and his flamenco guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_08::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'famed classical/flamenco dancer Antonio' is a caption-style descriptor and does not sufficiently construct canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is primarily photo-caption description."
+  },
+  {
+    "article_id": "JALEO_1982_08::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "There were some fifteen other friends and aficionados who contributed to a very full evening of music and dance that continued until 6am.",
+        "target": "the July juerga",
+        "rationale": "The juerga is framed as a participatory social setting sustained by friends and aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Friends and aficionados are present and contribute, but the passage does not clearly grant them authority to recognize, sustain, or judge flamenco beyond participation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'truly a memorable one' is positive but too general to function as substantive critical evaluation of flamenco artistry."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "participatory juerga practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The atmosphere created is more fun if not as intense as the typical restaurant-cabaret scene. More chances are taken when one feels the lack of critical pressures",
+        "target": "street flamenco performance compared with restaurant-cabaret performance",
+        "rationale": "The passage contrasts performance settings and links the street setting to different participation and evaluative pressure."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "As they move through the traditional flamenco repertoire, the discipline and devotion to the art of flamenco shows from start to finish",
+        "target": "the street performers' flamenco practice",
+        "rationale": "Traditional repertoire and devotion are used to authorize the performance as serious flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the things that survive are those we take the time for, and take our turn in passing on. The art of flamenco is no different and depends greatly on dedicated groups like this one",
+        "target": "flamenco as a practice passed on by dedicated groups",
+        "rationale": "The passage frames flamenco survival as living transmission sustained by community action and public outreach."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises the atmosphere and discipline, but the stronger discourse is about setting, continuity, and transmission rather than a focused critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "tradition",
+        "heritage"
+      ],
+      "target": "street flamenco performance and transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

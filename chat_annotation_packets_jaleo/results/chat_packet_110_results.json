@@ -1,0 +1,277 @@
+[
+  {
+    "article_id": "JALEO_1981_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "a real gypsy who dances with the fury and fierceness that make flamenco art exciting",
+        "target": "Carol/Carolina de los Reyes",
+        "rationale": "The quoted review explicitly evaluates her dance as exciting through fury and fierceness."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I learned the real essence of flamenco by dancing at gypsy 'juergas,' where everything is improvised, free and spontaneous. There is nothing like it anywhere in the world! To understand it, one has actually to live it entirely.",
+        "target": "Carolina de los Reyes's flamenco knowledge",
+        "rationale": "The passage frames flamenco understanding as acquired through embodied participation in juergas and lived experience."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "I learned the real essence of flamenco by dancing at gypsy 'juergas,' where everything is improvised, free and spontaneous.",
+        "target": "gypsy juergas as the source of flamenco essence",
+        "rationale": "The passage presents juergas as the place where the real essence of flamenco can be learned and understood."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Gypsy juergas and improvised participation suggest a valued participatory setting, but the stronger discourse function is embodied transmission and authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text repeatedly frames Carolina through gypsy identity and gendered appearance, but much of this is descriptive or exoticizing rather than clearly defining authority or belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as soul, deep chords, melancholy, passion, and vitality appear, but the passage's main work is evaluative praise and lived-transmission authenticity rather than a separate aesthetic-criteria argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Carolina de los Reyes and her flamenco formation through gypsy juergas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Over the years it had become a traditional event which aficionados of the guitar eagerly looked forward to attending.",
+        "target": "VIII Certamen de Guitarra Flamenco in Jerez",
+        "rationale": "The competition is valued as a recurring traditional event with continuity for guitar aficionados."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "as lovers of the guitar began filing into a pavilion... friends greeted friends, sherry bottles began making the rounds, and conversations sprang up about events at the competition during years past",
+        "target": "guitar aficionados at the Jerez competition",
+        "rationale": "The passage frames the event through aficionado sociability and shared memory, presenting the community as sustaining the competition's meaning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "so-and-so played so beautifully that no one took a breath for the entire set or when such-and-such jerezano so magnificently captured the essence of his land",
+        "target": "past guitar performances at the competition",
+        "rationale": "The passage reports explicit aesthetic praise of previous performances as beautiful and magnificent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The expected winner and memorable past players suggest ranking, but the visible excerpt does not yet firmly construct a hierarchy beyond ordinary competition speculation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "the Jerez flamenco guitar competition as a traditional aficionado event",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "To get your pegs to work smoothly, try this simple procedure: Take off the string and remove the peg.",
+        "target": "flamenco guitar maintenance knowledge",
+        "rationale": "The article directly teaches practical access to flamenco guitar care through step-by-step instruction."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I much prefer pegs; if maintained properly, tuning and string changing can be very easy and the guitar maintains its traditional balance and flavor.",
+        "target": "pegged flamenco guitars",
+        "rationale": "The preference for pegs is justified by their ability to preserve the guitar's traditional balance and flavor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The author prefers pegs and criticizes poor maintenance, but the main discourse function is instruction plus tradition-preservation rather than broad critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "traditional peg maintenance for flamenco guitars",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Some people believe that to play flamenco guitar, you must be Spanish... many such people who have been fortunate to hear Peter Holloway perform, have wasted no time in admitting how very wrong they were.",
+        "target": "Peter Holloway as a non-Spanish flamenco guitarist",
+        "rationale": "The passage explicitly challenges an insider/outsider boundary that reserves flamenco guitar competence for Spanish players."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "for the next five years, was his pupil, having guitar lessons both at home in Preston and at Pepe's flat in Seville.",
+        "target": "Peter Holloway's flamenco learning",
+        "rationale": "The passage grounds Holloway's legitimacy in a sustained pupil-teacher relationship with Pepe Martínez across England and Seville."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Peter decided to give up his job as a guitar teacher and go to Spain... started playing for dancers in the flamenco dance schools of Carmen Albéniz and Manolo Marín.",
+        "target": "Peter Holloway's transnational flamenco training in Spain",
+        "rationale": "The article frames institutional and transnational access to flamenco knowledge as central to Holloway's artistic development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Holloway's development and technical ability, but the clearest discourse work is boundary challenge and pedagogical transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and aire are used to explain improvement, but they are embedded in a learning narrative rather than a separate evaluative criteria passage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Rafael Riqueni is called a virtuoso and competition winner, but this is background authority for influence rather than central canon/ranking work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Peter Holloway's legitimacy as an English flamenco guitarist",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The tradition is being lost. We were particularly interested in finding someone who would at least try to reproduce the noble grandeur of these dazzling \"pregones.\"",
+        "target": "Puebla pregones/toná litúrgica tradition",
+        "rationale": "The passage frames the pregones as a disappearing tradition whose reproduction would preserve continuity with a valued past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The \"pregón\" -- we prefer to call it \"toná litúrgica\" -- is a cante of very special expressive force, solemn and sober like very few, and considerably difficult to execute.",
+        "target": "the Puebla pregón/toná litúrgica",
+        "rationale": "The passage defines the cante's value through aesthetic criteria including expressive force, solemnity, sobriety, and difficulty."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Montesino has only sung a few times in private get-togethers... Only his good wishes moved him to participate in the \"Archive,\" after our friendly, but stubborn explanations.",
+        "target": "Montesino's attempted reproduction of the pregón tradition",
+        "rationale": "The passage centers informal, private singing and an attempt to reproduce a nearly lost form as a mode of transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The Archive and concern over a disappearing tradition suggest safeguarding, but the passage lacks explicit public heritage framing or institutional heritage responsibility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The narrator exercises expert judgment in renaming the pregón as toná litúrgica, but the stronger evidence lies in tradition continuity and aesthetic criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Montesino's family of aficionados is mentioned, but their authority to recognize or judge flamenco is not developed."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Puebla de Cazalla's pregón/toná litúrgica tradition and its attempted transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

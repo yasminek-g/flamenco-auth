@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "JALEO_1978_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "The Spanish woman is placed on a pedestal to be worshipped by the men as a romantic object -- until she marries, when she becomes a workhorse and receives a different sort of reverence as a mother; this attitude is gradually changing in Spain, and the content of flamenco verse is also likely to change",
+        "target": "gendered representation of women in flamenco verse",
+        "rationale": "The passage explicitly frames flamenco verse through gender roles and changing representations of Spanish women."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "there has been a very strong, almost exaggerated, preoccupation with romantic expression that has often resulted in beautiful poetry",
+        "target": "romantic flamenco verse",
+        "rationale": "The passage evaluates the poetic quality and expressive character of flamenco verse rather than merely describing its themes."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The English translations lose a lot of the original feeling, but it is hoped that they will be better than nothing for those who do not read Spanish.",
+        "target": "non-Spanish-reading readers' access to flamenco verse",
+        "rationale": "The author mediates access to flamenco knowledge across a language boundary by translating and explaining verse for readers who do not know Spanish."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions traditional verses, but tradition is not clearly used as an authority claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["community", "criticism", "pedagogy"],
+      "target": "romantic flamenco verse and its gendered poetic representation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The hospitality-house notice at the end was treated as administrative/community logistics without sufficient discourse function for coding."
+  },
+  {
+    "article_id": "JALEO_1978_09::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "a North American, Rodney Lee Holman, who has been in Spain six years, is married to a girl from Ronda, and accompanies flamenco cantaores on the guitar; judging from the press clippings, he does it well, as well as any other from this country.",
+        "target": "North American flamenco guitarist Rodrigo de San Diego",
+        "rationale": "The passage makes his outsider origin salient and then evaluates him as equivalent to Spanish accompanists, negotiating an insider/outsider boundary around flamenco competence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "judging from the press clippings, he does it well, as well as any other from this country.",
+        "target": "Rodrigo de San Diego's flamenco guitar accompaniment",
+        "rationale": "The passage explicitly assesses the quality of his accompaniment and compares it favorably with local performers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "Rodrigo de San Diego as a North American flamenco guitarist",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is short but sufficient because the evaluative comparison is explicit."
+  },
+  {
+    "article_id": "JALEO_1978_09::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "he traveled to Spain in 1963, where he studied flamenco intensively with Luis Maravilla and later, Niño Ricardo and Justo de Badajoz.",
+        "target": "Michael Hauser's flamenco training",
+        "rationale": "The biography legitimates Hauser's flamenco knowledge through intensive study with named Spanish teachers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "One of their more interesting tours took them on a two month performing and teaching visit to Alaska. Part of the time they worked with Eskimo children, teaching them flamenco rhythms.",
+        "target": "institutional and transregional teaching of flamenco rhythms",
+        "rationale": "The passage foregrounds flamenco instruction crossing geographic and cultural boundaries through a touring teaching context."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "their talent and coordination are so flawless that They then commanded the undivided attention of their audience as during the trio's performance you could have heard a pin drop in the theater.",
+        "target": "Trio Flamenco performance",
+        "rationale": "The quoted review explicitly praises the performers' quality, coordination, and audience command."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review mentions talent and coordination, but it does not clearly develop these as broader flamenco aesthetic criteria beyond performance praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Michael and Suzanne Hauser / Trio Flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Neutral biographical facts were not coded unless they functioned as training credentials or teaching/transmission evidence."
+  },
+  {
+    "article_id": "JALEO_1978_09::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "CASTELLANA (la) - refers to a rhythmic section of the alegrías that is highly accented, beginning on the 12th beat instead of the usual 1, 2, 3, etc.; it is usually sung, although it need not be, and often occurs after the silencio, but may be done within the escovilla.",
+        "target": "reader access to flamenco dance terminology and structure",
+        "rationale": "The article functions as a glossary-style instructional guide that explains specialized flamenco dance terms for readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical terms such as compás, llamada, escovilla, and silencio are explained, but they are not used as evaluative criteria for judging flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The later juerga scene includes social performance and spectatorship, but in this article excerpt it remains mostly descriptive rather than making participatory setting a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "flamenco dance vocabulary and structural knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The long OCR-damaged filler was ignored; enough coherent glossary text remains for a reliable pedagogical code."
+  },
+  {
+    "article_id": "JALEO_1978_09::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "In the living room, Masami Hopper, Joe Kinney and Louis Hendricks were playing to a small crowd. Juana de Alva was energetically lending palmas.",
+        "target": "juerga as participatory flamenco setting",
+        "rationale": "The article presents flamenco as a shared social event with performers, palmas, spectators, and close co-presence rather than a detached stage performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "On Monday, August 14th, a group of Jaleistas gathered at the mutual painting and dance studio of Maus Palmer and Juana De Alva for a brief mini-juerga to welcome bailora Carmen Mora to San Diego.",
+        "target": "Jaleistas' local flamenco community",
+        "rationale": "The passage frames the local flamenco group as a socially recognized community that gathers to welcome a visiting flamenco teacher-performer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Paco Sevilla's inspired bulerías filled the night from that stage.",
+        "target": "Paco Sevilla's bulerías at the juerga",
+        "rationale": "The phrase offers explicit evaluative praise of a flamenco performance within the event report."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Carmen Mora is described as teaching flamenco, but the passage does not clearly elaborate pedagogical authority beyond a factual teaching arrangement."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "local juerga participation and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is event narration; codes were limited to spans where participation, community belonging, or evaluation are clearly doing discourse work."
+  }
+]

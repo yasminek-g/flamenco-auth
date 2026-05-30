@@ -1,0 +1,222 @@
+[
+  {
+    "article_id": "JALEO_1980_10::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Biographical self-description and personal enthusiasm for Spain/flamenco, without a clear discourse function assigning authority, belonging, authenticity, pedagogy, heritage, or critical value."
+  },
+  {
+    "article_id": "JALEO_1980_10::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Tradition also grows and moves. Tradition is the tap root with branches that grow and use tradition as a base",
+        "target": "flamenco dance and creative evolution",
+        "rationale": "The passage authorizes innovation by grounding it in a living, rooted tradition that continues to grow rather than remaining static."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "adding what they think is a \"sexy-sell-jazzy\" approach to it with \"cuchy-coo\" costumes and passing this off as the latest Vegas-rock-instyle flamenco; in reality, it is just a plain lazy approach and in bad taste",
+        "target": "commercialized or shortcut pseudo-flamenco approaches",
+        "rationale": "The passage draws a boundary between legitimate flamenco and a degraded, fake, lazy version being passed off as flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "For the professional flamenco artist, good technique is a form of freedom",
+        "target": "professional flamenco dance technique",
+        "rationale": "Technique is presented as an aesthetic criterion that enables artistic freedom and sustains performance quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The tourist-attraction and tablao critique suggests anti-commercial authenticity, but it overlaps heavily with the clearer purity-boundary claim emitted as AUTH_02."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad evaluative praise and blame, but the strongest critical function is captured more specifically through aesthetic criteria in CRIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco dance as a living art form and its commercialized imitations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "What does good mean? What are the criteria? ... Good can mean: (1) Technically good. (2) Soulfully good. (3) The critics of newspapers say it's good.",
+        "target": "standards for judging flamenco performance",
+        "rationale": "The passage explicitly asks what criteria define a good flamenco performance and lists competing evaluative bases."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The uninitiated public, who attends most performances in the U.S.A., basically is looking for good entertainment. It is not interested in seeing real flamenco in a private juerga.",
+        "target": "uninitiated U.S. audiences versus private juerga flamenco",
+        "rationale": "The passage contrasts public entertainment spectatorship with private juerga flamenco as a socially meaningful setting distinction."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "It is not interested in seeing real flamenco in a private juerga. It is interested in seeing costumes and choreographies, showmanship and finesse. The Hollywood approach to flamenco seems especially successful",
+        "target": "Hollywood-style staged flamenco entertainment",
+        "rationale": "The passage frames private juerga as real flamenco and contrasts it with staged, visually entertaining Hollywood-style presentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'uninitiated public' suggests an epistemic boundary, but the stronger function is the public/private participatory contrast emitted as COMM_03."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Critics are listed as one possible source of judgment, but the article does not grant them sustained expert authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "definitions of good flamenco for uninitiated public audiences",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_10::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Most Spaniards apply equally lenient standards to Americans who play the flamenco guitar, gaping in wonderment at the very ideal",
+        "target": "Americans playing flamenco guitar in Spain",
+        "rationale": "The passage marks Americans as outsiders whose flamenco performance is judged through a different social boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "such music can only be interpreted properly by one who carries it in the blood",
+        "target": "proper interpretation of flamenco guitar",
+        "rationale": "The passage frames authority to interpret flamenco as tied to inherited identity or blood."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'interpreted properly' has authenticity implications, but the operative claim is identity-based authority rather than a direct authenticity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The narrator mentions learning from his father, but the passage treats this humorously as identity evidence rather than as authoritative lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community"
+      ],
+      "target": "outsider authority to interpret flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The boundary claim is reported humorously, but it still visibly constructs identity as a condition for proper interpretation."
+  },
+  {
+    "article_id": "JALEO_1980_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "what the great cantaor, Antonio Mairena, has to say about Diego del Gastor in his book",
+        "target": "Antonio Mairena's assessment of Diego del Gastor",
+        "rationale": "The passage invokes Mairena's recognized authority as a great cantaor to authorize an evaluation of Diego del Gastor."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He calls Diego, \"...aquel gitanito singular de toque enigmático e inolvidable.\"",
+        "target": "Diego del Gastor's guitar playing",
+        "rationale": "The quoted assessment explicitly praises Diego's toque as singular, enigmatic, and unforgettable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The salary section lists top performers and pay levels, but it primarily reports income rather than constructing a flamenco canon or aesthetic ranking."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Mairena notes that Diego played mostly for friends and private fiestas, but the passage does not strongly contrast that setting with public performance as a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Diego del Gastor's flamenco guitar artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

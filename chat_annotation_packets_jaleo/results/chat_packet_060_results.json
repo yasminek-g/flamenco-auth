@@ -1,0 +1,202 @@
+[
+  {
+    "article_id": "JALEO_1979_12::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Before becoming the accomplished flamenco guitarist that he is, he was a classical guitarist.",
+        "target": "Chucho Vidal as flamenco guitarist",
+        "rationale": "The passage explicitly evaluates Vidal's status as an accomplished flamenco guitarist rather than merely listing his biography."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Chucho Vidal",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_12::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The purpose of the Flamenco Society of Minnesota is to promote and keep healthy the art of flamenco in Minnesota and surrounding states.",
+        "target": "flamenco in Minnesota and surrounding states",
+        "rationale": "The society frames flamenco as a cultural practice to be sustained and kept healthy through organized community activity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "monthly meetings which would involve mercifully short business sessions followed by any one of a variety of subjects of interest to flamenco aficionados, such as lecture-demonstrations on various aspects of the art, mini-concerts, etc.",
+        "target": "flamenco knowledge for society members and aficionados",
+        "rationale": "The passage describes organized lecture-demonstrations and meetings as a local institutional means of giving members access to flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "reach out and make contact with other such groups around the country, such as the Flamenco Society of Detroit, and Jaleo, of San Diego.",
+        "target": "network of flamenco societies and members",
+        "rationale": "The society constructs flamenco support through recognized groups and aficionados who sustain contact, meetings, concerts, newsletters, and juergas."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Flamenco Society of Minnesota and local flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_12::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The page lists dance and guitar instruction, courses, books, and sheet music, but these are administrative announcements or advertisements without a clear discourse move about pedagogical authority or access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'experienced teacher' and 'top artists' appear in promotional listings, but they do not provide enough critical judgment or criteria to emit an evaluation code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Primarily listings, contact information, advertisements, and administrative notices."
+  },
+  {
+    "article_id": "JALEO_1980_01::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "a tribute to the guitarist Edward Freeman, whose teaching and music transcriptions have a had a significant influence on the American flamenco scene.",
+        "target": "Edward Freeman's teaching and transcriptions",
+        "rationale": "Freeman's authority is grounded in his role as a teacher and transmitter whose lessons and transcriptions shaped American flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "whose teaching and music transcriptions have a had a significant influence on the American flamenco scene.",
+        "target": "Edward Freeman",
+        "rationale": "The editorial elevates Freeman as a historically significant figure in the American flamenco scene, giving him canon-like status within that local field."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "there was a warm \"family\" feeling, with all ages included -- dancers in their seventies and eighties and lots of children, many of whom could dance; the juergas were reunions of friends",
+        "target": "San Diego monthly juergas",
+        "rationale": "The passage values the earlier juergas as participatory, intimate, intergenerational gatherings rather than merely events."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Today, most of those qualities are gone or greatly reduced.",
+        "target": "current San Diego juergas",
+        "rationale": "The editorial explicitly evaluates the present juergas as diminished compared with their earlier participatory and artistic qualities."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The article contrasts juergas with 'cocktail parties,' but it does not clearly frame commercialization or intimacy as authenticity in the stronger sense required for AUTH_04."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Edward Freeman and San Diego juergas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_01::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the quality of your numerous feature articles, columns, comments and notes has drastically changed. In the beginning they were good, for sure, but now they are superb.",
+        "target": "Jaleo magazine's articles and columns",
+        "rationale": "The letter explicitly evaluates the quality of the publication's writing and content."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "At present their main value is as a record of what is happening around the country.",
+        "target": "Jaleo announcements",
+        "rationale": "The editor frames the announcements as a shared record of flamenco activity across local scenes, giving them community-sustaining value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The praise for Jaleo as useful reading suggests mediation of flamenco information, but the letter does not clearly frame this as learning or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Jaleo magazine and announcements",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "article_id": "JALEO_1978_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "The juergas were important to Jaleo in two respects: First, they gave it reason to come into being as a means of communication for people attending the juergas. Second, the juergas financially supported the newsletter",
+        "target": "Jaleistas/Jaleo community around the monthly juergas",
+        "rationale": "The passage presents the juerga community as the social and material authority that sustains the newsletter."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "many San Diegans who, in spite of feelings of inadequacy concerning knowledge of flamenco, educated themselves and wrote articles so that we could publish something besides announcements",
+        "target": "Jaleo as a flamenco knowledge-sharing publication",
+        "rationale": "The text frames the newsletter as a mediated learning venue where local participants educate themselves and circulate flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The goal of Jaleistas is to spread the art, the culture and the fun of flamenco. To this end we publish the JALEO newsletter, have monthly juergas and sponsor periodic special events.",
+        "target": "Jaleistas' participatory flamenco scene",
+        "rationale": "The association defines flamenco community through participatory settings—newsletter, juergas, and events—rather than detached spectatorship alone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The goal of spreading flamenco culture suggests public cultural transmission, but the visible passage lacks explicit heritage/safeguarding framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Jaleistas/Jaleo as a community-based flamenco institution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "In my years of teaching hundreds of people to play flamenco guitar, I have never come across a person who did not naturally accent the first note of each triplet",
+        "target": "Paco Sevilla's explanation of flamenco guitar learning",
+        "rationale": "The editor invokes extensive teaching experience as authority to correct or question a pedagogical claim about accenting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "it never sounded relaxed or had any 'aire.' You were commenting about flamenco compas.",
+        "target": "flamenco guitar falseta execution",
+        "rationale": "Aire and compás are used as criteria for evaluating whether the falseta sounds properly flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "In learning a falseta in triplets, one must accent the first note of each triplet, or the first note of each quadruplet",
+        "target": "students learning flamenco falsetas",
+        "rationale": "The letter explicitly gives procedural instruction for learners, mediating flamenco technique through formal explanation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The later juerga description evokes communal participation, but it is atmospheric rather than clearly about participatory authority or value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "proper learning and evaluation of flamenco guitar compás/falsetas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "I have a bone to pick with the holier-than-thou flamenco purists. The attitude that 'my flamenco is more pure than your flamenco,' sometimes really rubs against the grain.",
+        "target": "purist claims about flamenco purity",
+        "rationale": "The passage directly contests purity boundary-work that ranks one flamenco as more legitimate than another."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "If the non-Spaniards felt that they were being criticized by the Spaniards for their lack of authenticity, or students by professionals for their imperfect technique, or newcomers by the aficionados for their limited knowledge of flamenco",
+        "target": "Spaniards/non-Spaniards, professionals/students, aficionados/newcomers in the juerga community",
+        "rationale": "The text names social and epistemic boundaries that could exclude participants from flamenco belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "There is an attitude of sharing and tolerance at the juergas which allows people the freedom to participate.",
+        "target": "San Diego juergas",
+        "rationale": "The passage values the juerga as an inclusive participatory setting and opposes passive or fearful exclusion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Participants should be judged on their own unique merits and not by someone's imaginary or antiquated measuring stick!",
+        "target": "purist evaluative standards",
+        "rationale": "The article critiques the authority of purist standards used to police correct or incorrect flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article supports old/new and traditional/innovative coexistence, but it does not ground present value mainly in tradition or continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Teaching is mentioned, but the central discourse is inclusivity and anti-purist boundary critique rather than institutional/transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "inclusive and evolving flamenco practice against purist boundary policing",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "New York Post: dance and drama critic, Clive Barnes, observes, 'Now we are reduced to smaller, somewhat less distinguished groups...There was a lack of what the Spaniards call DUENDE'",
+        "target": "critical discourse on flamenco companies",
+        "rationale": "Named critics and publications are invoked as authoritative evaluators of flamenco performance quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Top-notch accompanists such as El Marote and Habichuela see a dancer for the first time and they can tell immediately from what teachers, if any, the dancer has studied.",
+        "target": "flamenco accompanists' knowledge of dance lineages and teachers",
+        "rationale": "The passage grants expert accompanists authority to read dancers' training and pedagogical lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "without compás, these distinctive forms dissolve into aimless, nameless, non-flamenco meanings. Sabicas has internalized these flamenco rhythms and he manipulates them brilliantly.",
+        "target": "Sabicas and flamenco performance quality",
+        "rationale": "Compás is explicitly defined as an indispensable aesthetic criterion that separates meaningful flamenco forms from non-flamenco results."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "It was compás that helped clinch the title of número uno for Sabicas.",
+        "target": "Sabicas",
+        "rationale": "The passage canonizes Sabicas through a ranking claim that names him number one on the basis of compás mastery."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'non-flamenco meanings' implies a boundary, but the main function is aesthetic evaluation through compás rather than purity rhetoric."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "knowledgeable flamenco performance, accompaniment, and Sabicas' canonical status",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "He made a point of supporting flamenco by attending concerts and frequenting the local flamenco 'hang-outs.' The 'house guitarists' would always invite him to play.",
+        "target": "Roberto Aguilar within the New York flamenco community",
+        "rationale": "The passage legitimates Roberto through recognized participation, support, and invitation within local flamenco social spaces."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "After admiring his music, I asked if he would give me guitar lessons. He graciously agreed. I started to study flamenco with him as a hobby, but Roberto inspired me to become a professional",
+        "target": "Roberto Aguilar as teacher and mentor",
+        "rationale": "Roberto is positioned as an authoritative teacher whose guidance transforms the narrator's flamenco trajectory."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "His knowledge of flamenco, his storehouse of falsetas, and his willingness to share these were paramount in establishing him as one of the most popular and knowledgeable flamencos in the area.",
+        "target": "Roberto Aguilar's shared flamenco knowledge and falsetas",
+        "rationale": "The passage frames flamenco knowledge and falsetas as transmitted through personal sharing within a community."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "a gifted entertainer who pursued the life of a flamenco by immersing himself in the art to an enviable degree",
+        "target": "Roberto Aguilar",
+        "rationale": "The obituary explicitly evaluates Roberto's artistic commitment and value as a flamenco personality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text says he created an ambiente everyone could share, but the stronger evidence concerns community recognition and mentorship rather than a public/private participatory contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Roberto Aguilar as a valued community flamenco, teacher, and performer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

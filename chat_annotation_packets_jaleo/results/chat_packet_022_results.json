@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "JALEO_1978_06::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Juan Martinez Vilches, \"Pericón de Cádiz,\" is a non-gypsy who was born about 1902 in Cádiz. He is famed as an interpreter of the cantes of Cádiz",
+        "target": "Pericón de Cádiz",
+        "rationale": "The passage elevates Pericón through recognized status as a famed interpreter of a regional flamenco repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"traditional style tangos falsetas\" uses tradition language, but it functions mainly as style description rather than authorizing present flamenco through continuity or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pericón de Cádiz as an interpreter of cantes of Cádiz",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_06::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "\"traditional style\" is present, but the short notice does not use tradition to authorize, preserve, or judge flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The reference to a falseta inspired by an old record suggests influence, but does not clearly frame lineage, oral/embodied transmission, or authorized learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_06::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "FLAMENCO GEOGRAPHY Spain is geographically and culturally divided into \"regiones.\"",
+        "target": "readers learning flamenco geography and terminology",
+        "rationale": "The article functions as a glossary/guide that mediates access to flamenco knowledge through regional definitions and place-based explanations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Andalusia, the birthplace of flamenco... ANDALUSÍA - the southernmost region of Spain; where flamenco originated and was developed",
+        "target": "Andalusia as flamenco's place of origin",
+        "rationale": "The passage grounds flamenco knowledge in origin and regional roots, treating Andalusia as the source from which flamenco developed."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "GRANADA - mountain city famed for its gypsies... not known for good quality commercial gypsy flamenco, but good artists have come from here",
+        "target": "Granada's commercial gypsy flamenco and artists",
+        "rationale": "The passage explicitly evaluates the quality of a local flamenco scene while distinguishing weaker commercial performance from good artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text mentions commercial flamenco and tourist flamenco shows, but does not clearly frame commerce or tourism as corrupting authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy quarters, regional inhabitants, and local identities are named, but most instances are descriptive rather than identity-based authority or belonging claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "regional flamenco geography and local flamenco reputations",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_06::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "a book of musical gibberish called Flamenco Puro... impossible fingerings, totally incorrect notes",
+        "target": "the earlier Flamenco Puro transcription book",
+        "rationale": "The reviewer directly condemns the earlier publication through explicit negative judgment of its musical accuracy and usability."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "one of the best transcriptions from record that this reviewer has seen... as accurate as one could hope for",
+        "target": "Joseph Trotter's Sabicas transcriptions",
+        "rationale": "The passage evaluates quality through criteria of transcription accuracy, clarity, rhythmic representation, and technical notation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "there are few, if any, flamenco guitarists playing today who are not using many of Sabicas' ideas",
+        "target": "Sabicas and his guitar music",
+        "rationale": "The article canonizes Sabicas by presenting his ideas as widely foundational for contemporary flamenco guitarists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Trotter is identified as a guitar instructor and qualified transcriber, but the passage primarily authorizes critical/transcription judgment rather than teaching authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The reviewer's authority is implicit in a review context, but the clearest evidence is direct evaluation and canon formation already captured by CRIT_01/02/03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Sabicas' music, Trotter's transcriptions, and the earlier Flamenco Puro book",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_06::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "there is some memorably crisp and vivacious dancing",
+        "target": "Los Flamencos de la Bodega and San Francisco flamenco performances",
+        "rationale": "The passage offers explicit praise of local flamenco dancing and performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "she reminds the aficionado that \"duende\" is not an impossible dream",
+        "target": "Carla Cruz's dancing",
+        "rationale": "The passage invokes duende as an aesthetic criterion for valuing the dancer's expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "\"Real music defies description\" is evaluative language, but it is too generic to function as a flamenco authenticity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The word \"aficionado\" appears, but it does not grant aficionados authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "San Francisco flamenco performers and venues",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

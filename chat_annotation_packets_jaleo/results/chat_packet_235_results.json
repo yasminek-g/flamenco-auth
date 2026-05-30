@@ -1,0 +1,228 @@
+[
+  {
+    "article_id": "JALEO_1985_SPRING::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "You have to go out on stage and give all you have, destroying your throat if necessary; that is what it means to be a professional. And the audience will understand and appreciate it",
+        "target": "Antonio Pérez \"El Perro\" and professional flamenco performance",
+        "rationale": "The passage evaluates professional flamenco artistry through total effort, dependability, and audience recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "to me he is undeniably the best flamenco representative in this country",
+        "target": "Pulpón as flamenco representative",
+        "rationale": "The speaker makes an explicit superlative ranking of a flamenco manager/representative."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "decided to travel the highways and byways, with his voice, carrying the banner of Paterna",
+        "target": "Antonio Pérez as representative of Paterna",
+        "rationale": "The artist is framed through local identity, representing Paterna through his flamenco voice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The predicted street dedication suggests civic recognition, but it is framed as a future wish rather than an actual institutional heritage action."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "Antonio Pérez \"El Perro\" and his professional/local flamenco standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Awards are mentioned, but mostly as the interviewee's personal reflections rather than a separate canon-building discourse."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This is Merenguito's first record and it is technically not very good. His cante is also erratic.",
+        "target": "Merenguito's record and cante",
+        "rationale": "The review explicitly evaluates the technical quality of the recording and the consistency of the singer's cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "one discovers qualities in it that must be taken into account, such as his ability in the 'quejlo'... and the ability to search for, and find, the 'duendes de lo jondo'",
+        "target": "Merenguito's vocal qualities",
+        "rationale": "The critic applies flamenco aesthetic criteria such as quejío and duende to judge the singer's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "he makes the mistake of doing some bulerfas... in a Latin American style with words by Alberto Cortez that are a real horror. Merenguito... should not fall into these concessions",
+        "target": "Merenguito's Latin American-style bulerías",
+        "rationale": "The critic polices a boundary around proper flamenco by condemning a hybrid or concessionary stylistic choice."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Merenguito's recording and stylistic choices",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review contains both praise and blame; the clearest boundary work concerns the Latin American-style bulerías."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Paco Sevilla has written several excellent articles for Jaleo which explore the structure of different cantes, their melodies, Letras, and how they are accompanied... It will help to illustrate a fandango which is little-known, even within Spain.",
+        "target": "Jaleo articles and the explanation of fandangos de Encinasola",
+        "rationale": "The passage frames the article as mediated instruction that gives readers access to specialized flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I didn't realize then that this the typical, the most traditional form of singing the fandangos in many pueblos of Huelva; the singer alone with the guitarist is another ramification... probably, chronologically speaking, represents a later manifestation.",
+        "target": "forms of singing fandangos de Huelva",
+        "rationale": "The author uses tradition and chronology to distinguish an older typical form from a later manifestation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Paco in his article divides the compás in the singing of various fandangos into two groups... These belong to the latter group. The melody of the singing requires an accompanying of the guitar which is unique as far as I know.",
+        "target": "Paco Sevilla's analytic framework for fandangos",
+        "rationale": "The passage relies on a named writer's analytical method to classify and explain flamenco musical knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The author describes himself as far-right in flamenco taste and preferring cante and guitar with jaleo, but this is self-positioning rather than a clear exclusionary purity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical vocabulary such as compás, melody, and accompaniment is used mainly for instruction and classification, not for aesthetic judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "tradition"],
+      "target": "the fandangos de Encinasola as a little-known but analyzable traditional form",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Promotional material later in the visible text was not used because the main article already supplies stronger discourse evidence."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Wouldn't it be nice to turn on the radio at any time of the day and find out what new recordings were coming out, and hear live performances by many different artists! Well, this is now possible in Spain!",
+        "target": "radio access to flamenco recordings and performances",
+        "rationale": "The passage frames radio as a medium giving listeners access to flamenco information, recordings, and live performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Apparently Miguel knows his flamenco well and has organized it all in the form of this station.",
+        "target": "Miguel's organization of the flamenco radio station",
+        "rationale": "The text grants a named organizer expert authority to curate flamenco programming."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial messages are mentioned as part of the radio program, but there is no anti-commercial authenticity judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Spanish flamenco radio as a medium for access and curated knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible passages are sufficient for the emitted access and expert-curation codes."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Molina has proven once again that he hss no talent for choreography, not the slightest feeling for fitting appropriate movement to music.",
+        "target": "José Molina's choreography and performance",
+        "rationale": "The review makes an explicit negative judgment about Molina's choreographic ability and musical fit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "There was no intensity in his partnering, no male supremacy, no play of tension, no drama.",
+        "target": "Molina's partnering and dance interpretation",
+        "rationale": "The reviewer applies aesthetic criteria such as intensity, tension, drama, and gendered partnering to judge the dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Mr. Molina's effort belonged not in Carnegie Hall, but in a cabaret. He is the only performer we have ever known to use canned music in a concert hall of such prestige",
+        "target": "Molina's concert presentation at Carnegie Hall",
+        "rationale": "The reviewer polices a boundary between prestigious concert-hall standards and cabaret or taped-music presentation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The final sentence describes Molina's career decline, but it overlaps with the broader negative critical evaluation rather than forming a separate canon/ranking claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["criticism"],
+      "target": "José Molina's Bailes Españoles presentation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review is highly evaluative; emitted codes focus on distinct functions rather than every insult."
+  }
+]

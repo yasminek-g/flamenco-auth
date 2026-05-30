@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "JALEO_1982_06::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Lole Montoya and Manuel Molina have changed substantially the traditional and perhaps fossilized concept of flamenco. The young people follow them fervently, while the older ones, who criticize them, listen to them on the sly. Their controversial ingredient is, surely, an indication of their value.",
+        "target": "Lole Montoya and Manuel Molina",
+        "rationale": "The passage explicitly evaluates the duo's controversial departure from a traditional flamenco concept as evidence of artistic value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Manuel calls himself an aficionado, but the passage does not grant aficionado community authority to recognize or judge flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The remarks about learning and being teachable do not position a teacher, method, or institution as authoritative."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions a traditional concept of flamenco, but mainly to describe the duo's change from it rather than to authorize value through continuity or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Lole Montoya and Manuel Molina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible evaluative framing."
+  },
+  {
+    "article_id": "JALEO_1982_06::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I would rather hear him just sing... Mairena's last bulerías were echoing around us. They had made all his powerful singing por siguiriyas and por martinetes seem flat by comparison, and had delighted every- one.",
+        "target": "Mairena's performance at the Gazpacho de Morón",
+        "rationale": "The passage makes explicit comparative judgments about which parts of the performance succeeded or fell flat."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "it should also be refreshing to the readers to see a point of view that is different from the ones we get from the Spanish newspaper critics",
+        "target": "Brook Zern's festival report versus Spanish newspaper critics",
+        "rationale": "The editor frames Zern's report as an alternative critical authority to established Spanish newspaper criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The editor mentions the festival before commercialization, but the visible text does not clearly argue that commercialization weakens authenticity."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The retrieval hint trigger does not correspond to institutional heritage authorization in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Gazpacho de Morón performance and its critical reception",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only the visible review and editorial framing."
+  },
+  {
+    "article_id": "JALEO_1982_06::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The loss to the flamenco world is, of course, incalculable... She was that rarest of rare-ties, a cantaor who sang everything and sang it not only well, but magnificently.",
+        "target": "Pastora Pavón",
+        "rationale": "The passage canonizes Pastora through exceptional status, superlative praise, and the claim that her loss is incalculable."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "She stood in the tradition of both the singers of Triana and those of the province of Cádis... Many old songs probably owe their preservation to her remarkable memory",
+        "target": "Pastora Pavón's cante",
+        "rationale": "The passage grounds Pastora's value in continuity with named traditions and in the preservation of old songs."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Her artistry was infallible and she alone seemed capable of transforming the otherwise insipid styles of the \"Latin American period\" into something flamenco.",
+        "target": "Pastora Pavón's artistry",
+        "rationale": "The passage explicitly evaluates Pastora's artistry and contrasts it with less valued styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions association with knowledgeable cantaores, but it does not clearly describe embodied, oral, or lineage transmission as a learning process."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'into something flamenco' implies a boundary, but the main function is evaluative praise rather than explicit purity boundary-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Pastora Pavón",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_06::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He was brilliant, as always, in all the styles that he touched... This can be taken as Praise or reproach.",
+        "target": "Fosforito's performance",
+        "rationale": "The critic explicitly evaluates Fosforito's performance while also presenting a mixed judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the voice always powerful and flamenca, with all the resources of a long and wise experience",
+        "target": "Fosforito's cante",
+        "rationale": "The passage applies aesthetic criteria such as flamenca voice, power, and experienced resources to define performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Chaquetón is, for me, the present young master of the styles of Cádiz. Each new performance of his reaffirms this belief.",
+        "target": "Chaquetón",
+        "rationale": "The passage ranks Chaquetón as a present master and exemplary representative of Cádiz styles."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados of the Peña Fosforito are mentioned as performers, but they are not positioned as authorities who judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Although this is a professional review, the visible text does not foreground the critic's authority beyond ordinary evaluative review discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito, Carmen Linares, Chaquetón, Salako de Córdoba, and Enrique del Melchor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_06::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The show at the Esparticus was great fun -- very upbeat. Talegón is a show in himself -- a veritable \"flamenco orchestra.\" The show at El Cid is beautiful -- a real \"meat and potatoes\" show. Marcos is playing beautifully.",
+        "target": "Morca Flamenco Theater members' Los Angeles performances",
+        "rationale": "The notice includes explicit praise of the shows and performers rather than only neutral scheduling information."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Morca Flamenco Theater members' Los Angeles performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

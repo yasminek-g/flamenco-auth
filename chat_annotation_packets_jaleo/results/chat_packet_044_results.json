@@ -1,0 +1,278 @@
+[
+  {
+    "article_id": "JALEO_1979_06::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Among Miami's steady teachers, we are lucky to have Luisita Sevilla. She is very active with her classes and has imparted her knowledge and spirit to an inestimable number of people.",
+        "target": "Luisita Sevilla as a flamenco teacher in Miami",
+        "rationale": "The passage legitimates Luisita Sevilla through sustained teaching and transmission of flamenco knowledge and spirit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The Flamenco Supper Club leaves much to be desired. The only thing flamenco about the place is its name.",
+        "target": "The Flamenco Supper Club",
+        "rationale": "The passage explicitly evaluates the venue negatively and judges its flamenco quality as inadequate."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The only thing flamenco about the place is its name... big gaudy reviews with flashy costumes and very little dancing.",
+        "target": "The Flamenco Supper Club's shows",
+        "rationale": "The passage excludes the venue's flashy revue format from legitimate flamenco, drawing a boundary between name-only flamenco and real flamenco practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Descriptions such as 'the only active professional Spanish dance company' and 'excellent bailarin' imply status, but do not construct a sustained canon or hierarchy beyond local description."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Miami flamenco teachers, performers, and venues",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "One of the world's great singers -- an acknowledged master of a staggeringly difficult and demanding tradition",
+        "target": "Agujetas",
+        "rationale": "The passage canonizes Agujetas through superlative status and recognized mastery of cante jondo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "cante jondo, or deep song -- music of such shattering intensity that those who really dominate it can be counted on the fingers of one hand.",
+        "target": "cante jondo",
+        "rationale": "The passage defines cante jondo quality through depth, intensity, and rare mastery as aesthetic criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The formal setting, the transient and unsophisticated audience, the absurd scheduling... and La Fernanda's innate tendency to freeze up when appearing off her own turf made the engagement forgettable at best.",
+        "target": "La Fernanda's World's Fair performance context",
+        "rationale": "The passage links setting, audience, and being off one's turf to the value and failure of flamenco performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "she also dances well with her arms and upper body, in accordance with the canons of female flamenco baile",
+        "target": "Tibulina's dance",
+        "rationale": "The passage frames flamenco dance through gendered canons of female baile, making identity category relevant to correct performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'authentic flamenco session' appears in the excerpt, but the visible surrounding text is truncated and the precise claim is not sufficiently complete to code with high confidence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Several evaluative phrases are present, but the stronger and more specific functions are captured by canonization, aesthetic criteria, and setting-based value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Agujetas, cante jondo, and flamenco performance settings",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes use only visible spans."
+  },
+  {
+    "article_id": "JALEO_1979_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I thought his article on Rafael el Aguila (*May 78*) was excellent--do it again, Gary!",
+        "target": "Gary Hayes's article on Rafael el Aguila",
+        "rationale": "The letter explicitly praises the quality of a flamenco-related article."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Allen and Penelope have become very special friends, I have some new aficionado friends, Ansonini will be taking messages to Spain for me, and my mind is full of his art and humanity--and that of the Morcas. I'm flamenco-friend-renewed.",
+        "target": "flamenco friendship and aficionado network around Ansonini's visit",
+        "rationale": "The passage frames flamenco belonging through aficionado friendship, social exchange, and renewed community ties."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The University of Washington lecture-demonstration and possible film/recordings suggest institutional access, but the passage is mainly an event notice without clear evaluation of learning access."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Morón and traditional music are mentioned, but the visible text does not use tradition or roots to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "aficionado networks and flamenco writing around Ansonini's Seattle visit",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes use only visible spans."
+  },
+  {
+    "article_id": "JALEO_1979_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "\"La Tertulia Flamenca de Radio Sevilla\" whose director is Manuel Palomino Vaca, was presenting an award, a trophy called \"El Puente de Triana\" to Antonio Mairena.",
+        "target": "Antonio Mairena",
+        "rationale": "A named flamenco institution publicly recognizes Mairena through an award, conferring authorized cultural value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The man didn't believe him and asked him to identify the songs that were being performed. Rafael did well on the test",
+        "target": "Rafael Santillana as a knowledgeable aficionado",
+        "rationale": "The passage uses song identification as a community test of insider flamenco knowledge and credibility."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "This article is very interesting in that it expresses a gypsy point of view -- which always brings cries of outrage from the non-gypsy flamencos.",
+        "target": "Curro Torres's article and gypsy/non-gypsy flamenco perspectives",
+        "rationale": "The passage frames flamenco interpretation through identity-group positions and conflict over representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Curro Torres is described as a frequent judge in contests, but the excerpt does not show him exercising critical judgment in this article."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "Antonio Mairena, Rafael Santillana, and gypsy/non-gypsy flamenco viewpoints",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "defending the purity and truth of the cante grande",
+        "target": "cante grande",
+        "rationale": "The passage explicitly claims truth and purity for cante grande, authorizing it as genuine flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "this art inherited from our ancestors",
+        "target": "flamenco art",
+        "rationale": "The passage grounds flamenco value in inheritance from ancestors and continuity with the past."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "my grandfather used to sing for me the tonå and romance that he, in turn, learned from his grandfather, and thus it was transported through families and generations",
+        "target": "toná, romance, and flamenco transmission",
+        "rationale": "The passage explicitly frames flamenco knowledge as family and intergenerational transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "the \"duende,\" plasticity, and \"el angel\" are always present when a gypsy dances, sings, or bullfights.",
+        "target": "gypsy flamenco artists",
+        "rationale": "The passage links flamenco qualities and authority to gypsy identity, making identity central to artistic representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text contests flamencologists' historical account, but the stronger visible discourse is authenticity, lineage transmission, and identity authority rather than critic/expert authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duende is named, but the passage uses it mainly as an identity-linked attribute rather than a developed evaluative criterion for a specific performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "community"
+      ],
+      "target": "gypsy lineage and cante grande as the basis of flamenco history",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; codes use only visible spans."
+  }
+]

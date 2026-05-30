@@ -1,0 +1,175 @@
+[
+  {
+    "article_id": "JALEO_1982_02::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions a Hispanic community and countries represented, but the visible text does not make identity a source of flamenco authority, belonging, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Neutral festival report; no clear flamenco-specific discourse function in the visible text."
+  },
+  {
+    "article_id": "JALEO_1982_02::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "It was listed as a fandango de Huelva, but is obviously malagueñas based on Ramón Montoya's ligado passages.",
+        "target": "the transcription/piece classification",
+        "rationale": "The passage exercises classificatory critical authority by correcting the listed palo and grounding the correction in a recognized musical model."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "this passage is interesting for the insight it gives into his playing and also could be used as a ligado exercise",
+        "target": "the Carlos Montoya transcription as learning material",
+        "rationale": "The transcription is framed as a mediated access point for learning and technical study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'even if you do not care for Carlos Montoya's approach' acknowledges possible taste judgments but does not itself make a clear evaluative claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "the transcription and its musical classification/use",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Classification correction and learning-use framing are visible, but no broader authenticity claim is made."
+  },
+  {
+    "article_id": "JALEO_1982_02::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text lists article titles including reviews and critical topics, but the summary itself does not perform those evaluations."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The back-issue list advertises access to past materials, but it does not clearly frame that access as flamenco learning or pedagogical mediation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is primarily an administrative contents and ordering list; listed titles are not treated as evidence for emitted codes."
+  },
+  {
+    "article_id": "JALEO_1982_02::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "How would you answer this: What is flamenco? Before I give my definition, let me list some of the answers I have heard to this vital question",
+        "target": "the definition of flamenco",
+        "rationale": "The passage explicitly frames flamenco as a category requiring definition and prepares to authorize one definition among competing answers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The speaker is about to define flamenco, but the visible passage does not yet establish critic/expert authority or apply evaluative criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "unclear",
+      "basis": [
+        "authenticity"
+      ],
+      "target": "flamenco as a definitional category",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt is short and preparatory, so the code is medium-confidence rather than high."
+  },
+  {
+    "article_id": "JALEO_1982_02::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "At the end, disillusion. The arguments between the organization and the artists, the eternal problem of money.",
+        "target": "the Ecija flamenco festival",
+        "rationale": "The passage explicitly evaluates the festival negatively through disillusion, organizational conflict, and financial failure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "we are here to tell the truth and not to give half-truths... we must not contribute to the concealment of those defects",
+        "target": "commentary on flamenco festivals",
+        "rationale": "The passage asserts the commentator's critical duty and authority to expose defects in the festival system."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ecija, Ginés, Utrera, and Triana, are four significant facts.",
+        "target": "flamenco festival crisis examples",
+        "rationale": "The text selects and elevates specific festivals as significant evidence in a broader hierarchy of crisis cases, though the ranking is implicit."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Money and costs are criticized, but the passage frames them as organizational/economic defects rather than threats to flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the flamenco festival system and its organizers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article strongly performs critical evaluation of festival organization and the critic's role; authenticity stakes are not explicit."
+  }
+]

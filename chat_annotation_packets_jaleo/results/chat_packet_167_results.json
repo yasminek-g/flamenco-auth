@@ -1,0 +1,199 @@
+[
+  {
+    "article_id": "JALEO_1983_04::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The flamenca guitar course will cover: 1. The Compás. 2. The Falseta... General technique and study method for the flamenco guitarist.",
+        "target": "Centro Flamenco Paco Peña seminar curriculum",
+        "rationale": "The course description frames flamenco guitar knowledge as structured, teachable curriculum with explicit access points for technique, compás, accompaniment, and study method."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Named instructors and course organization imply teaching authority, but the visible text mostly lists courses and fees rather than explicitly authorizing a teacher or method."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and technique are named as course topics, but they are not applied as aesthetic criteria for judging flamenco quality in this notice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "formal flamenco guitar instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Course listing is mostly administrative, so only the institutional learning-access function is emitted."
+  },
+  {
+    "article_id": "JALEO_1983_04::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "This first workshop will be on choosing and playing castanets. The workshop will be taught by a professional dancer well-versed in the use of castanets.",
+        "target": "castanet workshop at the May juerga",
+        "rationale": "The text authorizes instruction through a professional dancer presented as competent to teach castanet choice and technique."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Bring your instruments, castanets, dance shoes, wear your costumes and plan to participate and have a great time. Any-one with an interest in flamenco and performers at all levels are invited to participate.",
+        "target": "Los Angeles May juerga",
+        "rationale": "The juerga is framed as an open participatory setting rather than a detached spectator event, with belonging extended through active involvement."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The closing remarks praise the prior presentation's atmosphere and support, but the passage is mostly event reporting and lacks sustained critical assessment of artistry."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text invokes fellowship and local support, but it does not clearly present a community group as possessing authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "participatory Los Angeles flamenco juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_04::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Rayna is shown teaching a dance class and speaking on flamenco feeling, but the text is a brief scene report and does not frame her teaching as authorized transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'unique pictures' and 'active in flamenco dance for many years' are descriptive or lightly promotional rather than clear flamenco critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is local-news description with insufficient discourse function for positive coding."
+  },
+  {
+    "article_id": "JALEO_1983_06::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Paco, in his modest but uncompromising manner, then outlined the workshop as it would be -- \"Everyone must have a guitar and everyone must play.\"",
+        "target": "Paco Peña's workshop method",
+        "rationale": "Paco Peña is positioned as the authority who defines the workshop format and method for learning flamenco guitar."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "\"This is the only way one can learn -- one must hold the guitar and try.\"",
+        "target": "flamenco guitar learning",
+        "rationale": "The passage explicitly frames learning as embodied practice through holding the instrument and trying rather than passive observation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His criterion for good flamenco is good compás -- it doesn't matter how well developed the technique may be",
+        "target": "good flamenco guitar performance",
+        "rationale": "Compás is explicitly named as the aesthetic criterion that defines good flamenco, overriding technique alone."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "if it isn't in compás it isn't flamenco, plain and simple",
+        "target": "guitar playing outside compás",
+        "rationale": "The statement draws a clear boundary between legitimate flamenco and playing that lacks compás, excluding the latter from flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The workshop gives access to mostly non-flamenco guitarists in an institutional setting, but the stronger evidence concerns Paco Peña's authority and embodied method."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Paco evaluates individual guitarists bluntly, but those judgments mainly serve the pedagogical method and compás criterion already coded."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Paco Peña is treated as a significant artist, but the excerpt does not chiefly construct a canon or ranking of artists."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco guitar performance and learning",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest boundary claim is tied to compás as both an aesthetic criterion and a condition for counting as flamenco."
+  },
+  {
+    "article_id": "JALEO_1983_06::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Editorial fundraising and acknowledgments do not contain visible authenticity, pedagogy, community authority, heritage, or critical-evaluative discourse."
+  }
+]

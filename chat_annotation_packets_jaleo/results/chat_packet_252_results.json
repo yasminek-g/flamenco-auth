@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "JALEO_1987_SUMMER::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "With the death of two of the greatest exponents of the purest of \"El Cante\"",
+        "target": "Tía Anica la Piriñaca and Tía Juana la del Pipa as exponents of cante",
+        "rationale": "The passage explicitly frames these singers through purity language, elevating their cante as a legitimate/pure form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Tía Anica was a legend in the world of flamenco",
+        "target": "Tía Anica la Piriñaca",
+        "rationale": "Calling her a legend constructs canonical status within flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "she believed, as did Juan Talegas and many other geniuses of \"el jondo\", that good cante is the one that hurts, the one that comes from sorrow",
+        "target": "good cante",
+        "rationale": "The passage defines flamenco quality through pain, sorrow, and jondo expressive depth."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "She learned the cante as a little girl, in the fields, when everyone was together and there was always someone who sang, and from the great Jerez masters",
+        "target": "Tía Anica's learning of cante",
+        "rationale": "The passage presents cante knowledge as learned through situated communal singing and transmission from masters."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy identity and Spanish South exclusivity are salient, but the strongest visible discourse is purity/canon/evaluation rather than a clear belonging or representation argument."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The 'Golden Chapter' and no-successors language suggests decline of continuity, but it is more directly canonical/elegiac than a tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Tía Anica la Piriñaca and Jerez cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is an obituary/translation with strong canonizing and purity discourse; identity references were treated conservatively."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Slowly but surely he developed his artistic career based only on its legitimate merits.",
+        "target": "Orlando Romero's artistic career",
+        "rationale": "The passage evaluates Romero's career as artistically earned and legitimate."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "His first studies were with the legendary Enrique el Cojo in Spain; he returned to Argentina with the wealth he had received from the great maestro.",
+        "target": "Orlando Romero's flamenco training",
+        "rationale": "The passage legitimates Romero's flamenco knowledge through study with a named, legendary maestro."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Terms such as 'well-known' and associations with famous artists imply status, but the visible text does not build a strong ranking or canon beyond general reputation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Orlando Romero",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is memorial/reportage; only explicit evaluative and pedagogical-authorizing spans were coded."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Probably one of the USA's greatest male dancers died on October 13, 1987",
+        "target": "Roberto Lorca",
+        "rationale": "The passage ranks Lorca among the greatest male dancers in the United States."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The Spanish Dance Arts Company offered such theater on Thursday at the Symphony Space, in an evening of music and dance that was like sharing a glass of wine with old friends.",
+        "target": "Spanish Dance Arts Company performance",
+        "rationale": "The quoted review explicitly praises the performance's theatrical and social-aesthetic effect."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Their honed and passionate theatricality offered a perfect counterpoint to the purity and invention of the dancing",
+        "target": "the dancing in Lorca/Montero works",
+        "rationale": "The passage applies aesthetic criteria such as theatricality, purity, invention, and passion to judge dance quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The biography notes Lorca directed a school and taught, but this is mostly factual career chronology rather than a discourse move authorizing flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Roberto Lorca and the Spanish Dance Arts Company",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The New York Times review supplies the clearest critical discourse; biographical teaching references were not emitted."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The phrase 'an authority on Spanish and classical ballet' signals expertise, but it is not clearly exercised as flamenco critical authority in the visible text."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Advertisements mention record reviews and guitar ownership, but the article text does not itself evaluate flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is mainly biography plus advertisements; no reliable flamenco discourse code was emitted."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "After Madrid, Sevilla is the second biggest center for the study Spanish dance.",
+        "target": "Sevilla as a site for Spanish dance/flamenco study",
+        "rationale": "The article frames Sevilla as an access point for students seeking institutional and geographic routes into flamenco/Spanish dance learning."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "In Sevilla, you would be wise to choose your teacher carefully and plan on sticking with him or her.",
+        "target": "teacher-student relation in Sevilla dance study",
+        "rationale": "The passage makes teacher choice and loyalty central to legitimate dance study in Sevilla."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "some of the dance teachers offer special short courses in dance during the festival to accommodate visiting dancers",
+        "target": "visiting dancers' access to flamenco dance learning during La Bienal",
+        "rationale": "The passage describes organized short courses that expand access to flamenco dance instruction for visiting students."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Sevillanas are called 'the traditional set of dances of Sevilla,' but the article mainly gives practical learning advice rather than using tradition to authorize present flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text says everyone in Sevilla knows and dances sevillanas, but this does not clearly grant community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "flamenco/Spanish dance study in Sevilla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Two PED_03 spans are retained because one frames Sevilla as a study center and the other describes visiting-dancer access through short courses."
+  }
+]

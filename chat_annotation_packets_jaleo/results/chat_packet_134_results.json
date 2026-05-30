@@ -1,0 +1,225 @@
+[
+  {
+    "article_id": "JALEO_1982_03::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he won the Golden Guitar — the top prize in the world's most important guitar competition... These three prizes are the most important in the world for the flamenco guitarist.",
+        "target": "Enrique Melchor",
+        "rationale": "The passage canonizes Melchor through elite prizes, superlative ranking, and competition status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Now, Melchor is asked to judge these competitions — he does not take part in them.",
+        "target": "Enrique Melchor as competition judge",
+        "rationale": "His movement from competitor to judge positions him as an authoritative expert within flamenco guitar evaluation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pure flamenco music' appears, but the visible passage does not clearly draw a purity boundary against an excluded improper form."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Internationalizing flamenco's appeal is mentioned, but the passage does not clearly frame learning or access to knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Enrique Melchor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Program-note style profile with strong ranking and expert-authority language."
+  },
+  {
+    "article_id": "JALEO_1982_03::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "There is an incredible amount of food for thought in this issue... the many valuable interviews that we have seen this year.",
+        "target": "this issue of Jaleo and El Chileno's interviews",
+        "rationale": "The editorial explicitly evaluates the issue and interview work as intellectually valuable and unusually strong."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The editorial mentions interviews being arranged, transcribed, translated, and edited, but it does not clearly frame these acts as flamenco learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Jaleo issue and interview labor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Main function is editorial appraisal rather than code-worthy pedagogy."
+  },
+  {
+    "article_id": "JALEO_1982_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "please don't print any more articles that say no one is able to understand flamenco except 60+ year-old maestros like Sabicas! It is discouraging at least. Let's encourage flamenco to flourish!",
+        "target": "claims limiting flamenco understanding to elder maestros",
+        "rationale": "The letter contests an epistemic insider boundary that restricts who can understand flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the aficionados who are studying voice and guitar techniques would most likely appreciate having an idea as to whom they are listening... I have not been a student of flamenco long enough to distinguish the styles of various guitarists.",
+        "target": "recording documentation for flamenco learners",
+        "rationale": "The writer frames discographic information as necessary access for students and aficionados learning technique and style through recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "I would like to become familiar with the great players of the past. For all of Paco de Lucia's virtuesity (and he is a genius), I would much rather listen to these unsung but excellent guitarists of the past.",
+        "target": "past flamenco guitarists and Paco de Lucía",
+        "rationale": "The passage constructs a value hierarchy by canonizing past players and explicitly calling Paco de Lucía a genius."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The archive is said to capture folk art 'at its source,' but the passage mainly concerns documentation and learning access rather than tradition or roots as authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "access to flamenco understanding and recorded guitar knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Multiple letters are present; codes are based only on explicit evaluative or boundary-making passages."
+  },
+  {
+    "article_id": "JALEO_1982_03::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "it was generally believed that one could not perform flamenco unless one had been reared in the Andalucian flamenco culture, but the foreigners were, in fact, in Morón to learn to perform.",
+        "target": "foreigners learning flamenco in Morón",
+        "rationale": "The passage explicitly draws and then questions a boundary between culturally reared insiders and foreign learners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "his books lament the passing of the pure gypsy flamenco as lived and performed by the noncommercial local artists in Morón before the town was overrun by foreigners.",
+        "target": "pure gypsy flamenco in Morón versus foreign-altered flamenco",
+        "rationale": "Purity language constructs a boundary between legitimate local Gypsy flamenco and a later changed form associated with foreigners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "pure gypsy flamenco as lived and performed by the noncommercial local artists in Morón before the town was overrun by foreigners.",
+        "target": "noncommercial local Morón flamenco",
+        "rationale": "The passage links authenticity to noncommercial local practice and frames later outside transformation as loss."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the foreigners were, in fact, in Morón to learn to perform.",
+        "target": "foreign students learning flamenco performance",
+        "rationale": "The passage directly thematizes transnational access to flamenco performance knowledge by foreign learners."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "community", "pedagogy"],
+      "target": "foreign participation and the changing nature of Morón flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is fictional/framed as a time-warp tale, the visible interview passage performs clear authenticity, access, and insider-boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1982_03::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "only a few which have achieved that wide acclaim and recognition that places them solidly among the great artists of all time. Raquel Peña and Fernando Sirvent are such a team.",
+        "target": "Raquel Peña and Fernando Sirvent",
+        "rationale": "The profile canonizes the pair by placing them among the great artists of all time."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "frequent appearances around Washington, DC, ranging from schools and universities to the Kennedy Center for the Performing Arts, are in addition to teaching large numbers of students every week... I was also able to listen to them, watch them, and study with them",
+        "target": "Raquel Peña and Fernando Sirvent as teachers",
+        "rationale": "The artists are positioned as authoritative transmitters through regular teaching and the writer's study with them."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Fernando Sirvent, whose guitar playing was unusually fluent and articulate; flamenco singer Manolo Leiva, whose pitch and timbre were more on a par with his expertly stylish ornamentation; the five women dancers of the troupe, looking more polished than ever",
+        "target": "Raquel Peña's company performance",
+        "rationale": "The review applies specific aesthetic criteria such as fluency, articulation, pitch, timbre, ornamentation, and polish to judge quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad evaluative praise, but the emitted hierarchy and aesthetic-criteria codes capture the strongest distinct critical functions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The husband-and-wife framing is descriptive and does not clearly make identity itself the basis of authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "Raquel Peña, Fernando Sirvent, and their company",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article, but visible excerpts provide enough evidence for hierarchy, teaching authority, and aesthetic evaluation."
+  }
+]

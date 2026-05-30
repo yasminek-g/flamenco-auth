@@ -1,0 +1,253 @@
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "All the old cantaores and aficionados agreed: \"a child prodigy.\"",
+        "target": "Camarón de la Isla",
+        "rationale": "Recognized cantaores and aficionados are presented as a community authority validating Camarón's exceptional status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Mairena said of Camarón, \"Canta grecioso\" ... Caracol went further, \"Ese niño es un dulce\" ... All the old cantaores and aficionados agreed: \"a child prodigy.\"",
+        "target": "Camarón de la Isla",
+        "rationale": "Judgments by major named figures and the child-prodigy label construct Camarón's elevated place in a flamenco hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "with this cry, he makes the hair of the most demanding stand on end, drives his fans crazy, and is, today, tremendously famous for his art based on profundity",
+        "target": "Camarón's singing",
+        "rationale": "The passage evaluates Camarón through aesthetic criteria of emotional force, demanding listeners' response, and profundity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The ending mentions flamenco roots being investigated and flamenco being revived, but the truncated context makes the present-value tradition claim too incomplete to code confidently."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Camarón de la Isla",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible beginning/window/end excerpts."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "when there is someone to study with and who is valid, money becomes a factor",
+        "target": "flamenco study with valid teachers",
+        "rationale": "The passage frames access to a valid teacher as necessary for serious flamenco study, positioning the teacher as pedagogically authoritative."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I see more and more people come each year. Each year more people like flamenco, they come to learn it, and there are even some people who dance pretty well, which is important--that it take root well.",
+        "target": "American and Japanese learners of flamenco",
+        "rationale": "The passage explicitly discusses foreigners coming to learn flamenco and evaluates whether that learning takes root successfully."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "there are even some people who dance pretty well, which is important--that it take root well",
+        "target": "foreign flamenco dancers",
+        "rationale": "Manolete makes an explicit quality judgment about some foreign dancers' ability."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'take root well' suggests continuity, but it is framed mainly as learning/access rather than public heritage or safeguarding discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "transnational flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are based only on the visible interview excerpts."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "If you are a died-in-the-wool aficionado, it could prove overwhelming. Wanting to share some of my experiences with other Jaleistas",
+        "target": "Jaleo aficionados/Jaleistas",
+        "rationale": "The passage addresses a community of committed aficionados and frames shared experience as meaningful within that flamenco readership."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "seeing Juanito in person greatly increased my appreciation for his art",
+        "target": "Juanito Villar's performance",
+        "rationale": "The writer explicitly evaluates Juanito Villar's artistry after seeing him live."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Moraito de Jerez on the guitar. The latter is one of the most outstanding young guitarists of the province, who without doubt, will go very far.",
+        "target": "El Moraito de Jerez",
+        "rationale": "The passage ranks Moraito among the province's outstanding young guitarists and predicts his future status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text invokes experiences, pilgrimage, and tribute, but it does not clearly frame flamenco as heritage, safeguarding, or public cultural memory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Andalusian flamenco experience and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; the community code is medium confidence because the passage builds reader community more than formal authority."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "buying flamenco records; listening to the experts from Spain; copying note for note",
+        "target": "Ian Davies's flamenco guitar learning",
+        "rationale": "The passage describes flamenco knowledge being acquired through listening, imitation, and close reproduction of expert models."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "well-known visiting Spanish professional artists, who demanded a new standard of accompaniment from him",
+        "target": "Ian Davies's transnational professional training",
+        "rationale": "The article frames an English guitarist's access to flamenco knowledge through Spanish professionals, restaurants, tablaos, and work in Spain."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the prestigious 'Cafe de Chinitas' in Madrid, needed one more resident guitarist... the 16 year old Ian was installed as a full-time professional flamenco guitarist in Spain's top tablao",
+        "target": "Ian Davies and Cafe de Chinitas",
+        "rationale": "The passage uses the venue's prestige and 'Spain's top tablao' status to elevate the significance of Davies's professional appointment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The article implies foreign access to Spanish flamenco circles, but it does not clearly draw an insider/outsider boundary with evaluative consequences."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Ian Davies's flamenco guitar career",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It is said they originated in the barrio de Santisgo in Jerez de la Frontera... butefas have always been \"un cante de Jerez,\" and always will.",
+        "target": "bulerías as a Jerez flamenco form",
+        "rationale": "The passage grounds bulerías' value and identity in origin, locality, and continuity with Jerez."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "in Jerez, if you listen carefully, people talk \"por bulerías\"... And the little gypsy girls playing in the streets, hopscotch and skip rope por bularías as well.",
+        "target": "Jerez/Gypsy local identity and bulerías",
+        "rationale": "The passage frames bulerías as embodied in local speech and Gypsy street life, using identity and place to define the form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "this event held yearly in the Bulería Capital of the World",
+        "target": "Jerez as a bulerías center",
+        "rationale": "The phrase canonizes Jerez through a superlative place-ranking as the world capital of bulerías."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article includes translated material and mentions summer courses, but the visible excerpts do not clearly evaluate institutional/transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Jerez bulerías",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; the clearest evidence is the opening origin/local-identity argument."
+  }
+]

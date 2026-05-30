@@ -1,0 +1,176 @@
+[
+  {
+    "article_id": "JALEO_1983_08::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "There is hardly an ethnic dancer in the field today who does not know her reputation. Throughout her long and fascinating career, she has been responsible for the excellent training and development of many well known Spanish dancers in this country.",
+        "target": "La Meri as an authoritative teacher and expert in Spanish/ethnic dance",
+        "rationale": "The passage legitimates La Meri through reputation, expertise, and responsibility for training well-known dancers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "any art form stagnates if it doesn't evolve in some way, but we must always come from a respect for its tradition.",
+        "target": "Spanish dance/flamenco-related artistic evolution",
+        "rationale": "The statement authorizes artistic evolution only when grounded in respect for tradition, making continuity a criterion for valid development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Although the text mentions many dancers and the field of ethnic dance, it does not use identity categories to define flamenco belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "La Meri's expertise and tradition-respecting artistic evolution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible text contains sufficient evidence for pedagogical authority and tradition-based artistic legitimacy."
+  },
+  {
+    "article_id": "JALEO_1983_08::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "my first teacher was my father, and also Ramón Montoya; he was the patriarch of the (solo) flamenco guitar.",
+        "target": "Mario's flamenco guitar formation",
+        "rationale": "The speaker grounds his flamenco knowledge in family teaching and apprenticeship with a lineage-defining master."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ramón Montoya; he was the patriarch of the (solo) flamenco guitar.",
+        "target": "Ramón Montoya",
+        "rationale": "Calling Montoya the patriarch of solo flamenco guitar places him in a canonical, hierarchy-forming position."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "I was in ambience constantly, in ambience of the guitar, and I know many many good teachers.",
+        "target": "Mario's guitar education",
+        "rationale": "The passage presents repeated contact with recognized teachers and a guitar environment as sources of authoritative musical knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Mario's flamenco and guitar authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_08::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a notation fragment and is too short to support discourse coding."
+  },
+  {
+    "article_id": "JALEO_1983_08::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "The whole purpose of these articles is to suggest a way of developing strong, powerful technique, so the guitar will be easier to play.",
+        "target": "flamenco guitar technique instruction",
+        "rationale": "The article explicitly frames itself as a pedagogical method for developing correct and powerful flamenco guitar technique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Flamenco is not responsible for the demise of Spanish dance as a popular art form.",
+        "target": "claims blaming flamenco for Spanish dance's decline",
+        "rationale": "The passage directly rebuts a critical boundary claim that treats flamenco as damaging Spanish dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Flamenco is high art, a complete art form that can stand on its own two feet and can easily fill a concert on its own if it meets the \"basics\" of having, good talent, good programming, good interpretation, good professionalism, good staging, costumes, etc.",
+        "target": "flamenco as concert art",
+        "rationale": "The passage defines flamenco's concert legitimacy through explicit aesthetic and professional criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The mention of Sabicas, Paco de Lucía, and other virtuosos is reverential but secondary to the instructional and evaluative argument, so it is not emitted as a separate canon code."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The claim that flamenco is a complete art form legitimates flamenco, but it does not explicitly frame the issue as true, genuine, or proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco technique and flamenco as an independent concert art",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_08::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement text only; no flamenco discourse function is visible."
+  }
+]

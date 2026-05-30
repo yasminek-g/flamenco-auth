@@ -1,0 +1,191 @@
+[
+  {
+    "article_id": "JALEO_1982_11::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Ernest \"Ernesto\" Lenshaw, the patriarch of San Diego Jaleistas, celebrated his \"90th\" with an open house... he is an inspiration to be around.",
+        "target": "Ernest Lenshaw and the San Diego Jaleistas community",
+        "rationale": "The passage positions a named community member as a patriarchal figure whose standing and spirit sustain local flamenco sociability."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "they welcomed another whole family and isolated individuals into their warm and vibrant home... organizing gatherings in their home... all the time spurred on by cante and palms",
+        "target": "San Diego flamenco gatherings hosted by Charo and Raul Botello",
+        "rationale": "The text values home-based, participatory flamenco co-presence as the social setting that makes the experience meaningful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I was impressed with the quality of all these talented people... lovely Juana De Alva and Julia Rómero dancing the most sparkling and graciosa sevillanas I could ever hope to see",
+        "target": "San Diego flamenco artists",
+        "rationale": "The passage explicitly evaluates the artists and performances through praise of their quality, grace, voice, toque, and expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The Morca workshop advertisement names a master teacher, but it is advertising copy rather than a passage legitimating pedagogical authority through visible discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego flamenco community and artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertising material was not coded; codes are based on the visible community letter and local report."
+  },
+  {
+    "article_id": "JALEO_1982_11::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The request for juerga sites and an 'instant flamenco den' mentions participatory settings, but it is mainly logistical and does not clearly evaluate the setting as a source of flamenco authority or value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative notice; no strong discourse function beyond logistics."
+  },
+  {
+    "article_id": "JALEO_1982_12::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The campanilleros have become part of flamenco only because a few cantaores, particularly Manuel Torre and La Niña de la Puebla, adapted the \"campanilleros de la Aurora\" to their flamenco style of singing. Most modern cantaores base their interpretations of this cante on the style of Manuel Torre.",
+        "target": "campanilleros as flamenco cante",
+        "rationale": "The passage explains the form's present flamenco legitimacy through adaptation, continuity, and later interpretation rooted in named flamenco singers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "The gypsies often give the villancicos a humorous or clever theme in the verse and tend to think of Mary as gypsy and Joseph as payo.",
+        "target": "gypsy villancico interpretation",
+        "rationale": "The passage frames the songs through gitano/payo identity categories that shape representation inside the flamenco-related Christmas repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "those campanilleros that the flamencos lay down in broken cadences, solemnly, as in those of Manuel Torre, who was a giant in his greatness and genius.",
+        "target": "Manuel Torre's campanilleros",
+        "rationale": "The passage canonizes Manuel Torre through exemplary status and superlative language of greatness and genius."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article prepares readers with background, but it does not clearly position a teacher, method, or institution as pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "Andalusian villancicos/campanilleros within flamenco cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; coded only the visible background and evidence window."
+  },
+  {
+    "article_id": "JALEO_1982_12::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Jaleo is back on solid footing and with your continued support we look forward to another year of sharing and spreading the art of flamenco.",
+        "target": "Jaleo readers and contributors",
+        "rationale": "The editorial frames reader support as the community mechanism that sustains and circulates flamenco knowledge and culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'sharing and spreading the art of flamenco' suggests transmission, but it lacks a public heritage, safeguarding, or memory-work frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleo's reader-supported flamenco circulation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Contributor list itself was treated as administrative; the coded evidence is the explicit community-sustainment claim."
+  },
+  {
+    "article_id": "JALEO_1982_12::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "My interest in Spain is due to my interest in the art of flamenco. I have been a dance student... If time permits... I may decide to enroll in a dance class... We would also appreciate updates of teachers in Spain for our directory section.",
+        "target": "North American dance student seeking flamenco learning in Spain",
+        "rationale": "The letter and editor's note frame flamenco learning as transnational access to classes, teachers, and directory information across geographic boundaries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The writer's lack of knowledge about Spain suggests outsider status, but the passage asks for practical information rather than drawing an authority or belonging boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "access to flamenco instruction in Spain",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

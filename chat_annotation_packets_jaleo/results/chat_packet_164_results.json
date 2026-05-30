@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "JALEO_1983_03::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The chufla was danced with genius by Manolo Arias, \"El Afilaor\"",
+        "target": "Manolo Arias / El Afilaor's chufla dancing",
+        "rationale": "The passage explicitly praises the quality of Arias's dancing rather than merely describing the chufla form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The visible title contrasts modern bailadores with dancers of the past, but titles/metadata are not sufficient and the article body does not clearly develop a hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The phrase 'always within the compás' names a flamenco criterion, but here it mainly describes the chufla form rather than applying a quality judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo Arias / El Afilaor's chufla dancing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Annotated only the visible body text; the title's modern/past comparison was not used as evidence."
+  },
+  {
+    "article_id": "JALEO_1983_03::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ronald Radford... presented a superb concert.",
+        "target": "Ronald Radford's flamenco guitar concert",
+        "rationale": "The review explicitly evaluates Radford's concert as superb and later as informative, enjoyable, and memorable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Love is the key element in the art of Flamenco. He said that a listener is to listen with his or her heart, not to analyze how it is being played.",
+        "target": "flamenco listening and performance value",
+        "rationale": "The passage defines love and heart-based listening as an aesthetic criterion for appreciating flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "He told of an instructor in Spain who stressed the love both that a performer has for his music and that that a listener has for the music.",
+        "target": "the Spanish instructor's teaching about flamenco",
+        "rationale": "An instructor is invoked as a source of flamenco understanding, specifically to teach how performers and listeners should approach the art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The ending jokes about ethnic representation at a festival, but the passage does not clearly frame flamenco authority or belonging through identity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ronald Radford's concert and flamenco listening values",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible review contains enough evaluative and pedagogical discourse for coding."
+  },
+  {
+    "article_id": "JALEO_1983_03::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I intend to bring flamenco to a methodical level of teaching, giving it prestige and the musical tradition that it deserves.",
+        "target": "official flamenco guitar teaching",
+        "rationale": "Cano frames conservatory-based, methodical teaching as a way to legitimate and transmit flamenco guitar knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The evolution is good, but not the false affectations that destroy the purity of flamenco.",
+        "target": "false affectations and rumba-only perceptions of flamenco",
+        "rationale": "The passage draws a boundary between legitimate evolution and false affectations that are said to destroy flamenco purity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The Spanish guitar will continue its evolution, faithful to tradition.",
+        "target": "the evolution of the Spanish/flamenco guitar",
+        "rationale": "The passage authorizes future development by requiring continuity with tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The comparison of Japanese, German, French, and English learners uses identity categories, but the stronger function is transnational pedagogy/access rather than community belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Cano is described as the first official professor and an artist-ambassador, but the visible discourse is primarily institutional pedagogy rather than canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "official flamenco guitar pedagogy and proper flamenco evolution",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_03::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "the Society has grown rapidly and yet has maintained the warm and intimate ambiente which is so much a part of a good juerga setting.",
+        "target": "Flamenco Society of Northern California juerga setting",
+        "rationale": "The passage values the society because it preserves an intimate participatory juerga atmosphere."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "giving students the opportunity to gain experience in such a setting, and it delights me to watch the progress and development of young artists.",
+        "target": "students and young artists in the society juerga setting",
+        "rationale": "The society is framed as an organized access point where students gain experience and develop through participation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "a central point where guitarists, singers and dancers of all stages of development can meet each other, perform together, exchange ideas, relax and have fun",
+        "target": "the society as a flamenco community hub",
+        "rationale": "The passage presents the society as a community structure that sustains flamenco through shared participation and exchange."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The 'Bravo' praise for founders is evaluative, but it is secondary to the community and pedagogical function of the passage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Flamenco Society of Northern California",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_03::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The January '83 juerga in Philadelphia was so successful and the response was so great that it was necessary to have another the following week.",
+        "target": "Philadelphia's January 1983 juerga",
+        "rationale": "The article explicitly evaluates the juerga as successful and strongly received."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The turnout for Philadelphia's first \"double-juerga\" demonstrates once again that Philadelphia is a great flamenco town.",
+        "target": "Philadelphia flamenco community",
+        "rationale": "The passage treats local turnout and aficionado participation as evidence of Philadelphia's flamenco community strength."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The Spanish Dance Society was founded in 1965 to promote good teaching of this dance form outside Spain... has formed a method of teaching Spanish dance technique and has evolved a syllabus and an examination system.",
+        "target": "Spanish Dance Society teaching system",
+        "rationale": "The passage frames Spanish dance transmission outside Spain through institutional teaching, syllabus formation, and examinations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "La Meri, Carola Goya, and Mattox are presented as experienced authorities, but the stronger distinct evidence concerns the Society's institutional syllabus and examination system."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Phrases like 'energy, excitement and passion' and 'went right to the heart' are aesthetic praise, but they do not add a distinct criterion beyond the general critical evaluation already coded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Philadelphia juerga community and Spanish Dance Society pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

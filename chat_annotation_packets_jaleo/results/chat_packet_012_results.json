@@ -1,0 +1,240 @@
+[
+    {
+        "article_id": "JALEO_1978_03::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "high",
+                "evidence_quote": "For the first time in N.Y.C., she teaches steps and dance patterns like a guitarist learns falsetas.",
+                "target": "Tibu's dance classes",
+                "rationale": "The passage positions Tibu as an instructor with a distinctive method for teaching flamenco dance material and phrasing."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "as opposed to the routines that we are accustomed to learning, using the counting system and making it very difficult for non-Spaniards to understand and appreciate the subtle complexities of the music",
+                "target": "non-Spanish learners' access to flamenco complexity",
+                "rationale": "The passage explicitly frames the class method as a way to improve access to flamenco understanding across a cultural and pedagogical boundary."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The class is called unique, but the passage functions mainly as pedagogical description rather than sustained critical evaluation."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy"
+            ],
+            "target": "Tibu's dance classes as a method for learning responsive flamenco dance",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1978_03::A5",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "Every singer, dancer, and guitarist is familiar with some form of the alegr\u00edas. Alegr\u00edas and soleares are the most \"done\" rhythms in the flamenco repertoire and utilize basically the same 12 beat comp\u00e1s",
+                "target": "reader access to alegr\u00edas rhythm and structure",
+                "rationale": "The article mediates flamenco knowledge by explaining repertoire, comp\u00e1s, accentuation, and form for learners/readers."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "Experienced artists, however, are aware of subtler shades of accentuation",
+                "target": "experienced performance of alegr\u00edas and soleares comp\u00e1s",
+                "rationale": "The passage identifies subtle accentuation as a criterion distinguishing experienced flamenco practice from a basic count."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The visible text discusses origin in the jota and development in C\u00e1diz, but it is primarily historical instruction rather than a clear use of tradition to authorize present flamenco value."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Comp\u00e1s is central, but the passage explains rhythm analytically rather than framing knowledge as embodied, oral, familial, or lineage-based transmission."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "reason": "The phrase 'our authorities are in agreement' invokes authorities, but the truncated visible context does not clearly establish expert critical authority as the main discourse function."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "technical understanding of alegr\u00edas",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article is truncated; codes are based only on the visible beginning, evidence window, and ending context."
+    },
+    {
+        "article_id": "JALEO_1978_03::A6",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The article mentions lessons with Juana de Alva and earlier teachers, but these are biographical facts without a clear claim of pedagogical authority."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "The text mentions Spanish descent and a long line of dancers, but it does not use lineage as an authorizing transmission claim."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "Spanish descent and family background are incidental biography rather than identity framing that organizes flamenco authority or belonging."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Mostly biographical profile; no clear evaluative, authorizing, community, heritage, or pedagogical discourse beyond factual mentions."
+    },
+    {
+        "article_id": "JALEO_1978_03::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Yet, this year, as last, the Ballet Nacional Festivales tends to confuse diffuseness with an artistic profile. It is a company without a signature of its own.",
+                "target": "Ballet Nacional Festivales de Espana",
+                "rationale": "The review explicitly criticizes the company's artistic identity and evaluates its performance profile."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "A Spanish dance company without the emotional quality of duende is a Spanish dance company without soul.",
+                "target": "Spanish dance company performance quality",
+                "rationale": "Duende is used as an aesthetic criterion for judging whether the company has emotional depth or soul."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "It had no Escudero, no Argentina, no Carmen Amaya or any other great name to head it.",
+                "target": "canonical Spanish dance star model",
+                "rationale": "The passage invokes canonical great names as a hierarchy against which the company is compared and found lacking."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The review mentions traditional forms and historical schools, but these serve the critical comparison rather than a distinct tradition-continuity claim."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "reason": "The article is a named newspaper review, but the emitted critical codes already capture the exercised judgment without needing an additional expert-authority code."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "reason": "The Spanish Government organized the company, but the passage does not frame this as authorized heritage recognition or patrimonial authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Ballet Nacional Festivales de Espana",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The final cleaner advertisement is ignored as unrelated to the review discourse."
+    },
+    {
+        "article_id": "JALEO_1978_03::A8",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Enrique Melchor stands out with absolute brilliance.",
+                "target": "Enrique de Melchor's solo flamenco guitar record",
+                "rationale": "The record review makes an explicit positive evaluative judgment of Melchor's artistry."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "due to the exquisiteness and good taste of his playing, the perfection of his compositions, and his profound feeling for flamenco",
+                "target": "Melchor's playing and compositions",
+                "rationale": "The review applies aesthetic criteria of taste, compositional perfection, and flamenco feeling to define the record's quality."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "After a first stage of consolidation of the concert style of flamenco guitar playing, in which Paco de Luc\u00eda, Manolo Sanl\u00facar and Victor Monje (Serranito) played a major role... In this new generation of flamenco soloists, Enrique Melchor stands out",
+                "target": "Enrique de Melchor within the flamenco guitar soloist generation",
+                "rationale": "The passage locates Melchor within a generational hierarchy of flamenco guitar and elevates him among new soloists."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Melchor is identified as the son of a famous guitarist, but the text does not clearly frame father-son relation as lineage transmission."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "reason": "The text identifies the review source and author, but it does not foreground critic or expert authority beyond ordinary review attribution."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Enrique de Melchor's flamenco guitar record and status among new soloists",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    }
+]

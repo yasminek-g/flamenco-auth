@@ -1,0 +1,199 @@
+[
+    {
+        "article_id": "JALEO_1983_10::A13",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "high",
+                "evidence_quote": "I stress the basics very much. I find that I spend a lot of workshop time unteaching badly taught basics.",
+                "target": "Juan Talavera's Spanish and flamenco dance teaching",
+                "rationale": "Talavera asserts pedagogical authority by defining correct teaching priorities and correcting badly taught fundamentals."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "Each student should be encouraged to develop his own style. Students are not computers.",
+                "target": "workshop-based flamenco dance learning",
+                "rationale": "The passage evaluates workshop pedagogy as a mediated learning setting where students should develop individual style rather than mechanically copy steps."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The criticism of step-only teaching is evaluative, but its main discourse function is pedagogical rather than a review of artistic quality."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy"
+            ],
+            "target": "student-centered flamenco dance teaching grounded in basics and individual development",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Molina biography is mostly promotional and not coded; Talavera's quoted teaching philosophy contains the clear discourse work."
+    },
+    {
+        "article_id": "JALEO_1983_10::A14",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "This company's forte, however, is, in my opinion, the flamenco it saved for its finale.",
+                "target": "Jose Molina company performance",
+                "rationale": "The reviewer explicitly judges the company's strongest area and evaluates the flamenco finale positively."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "the armwork and upper body movement which, as much as zapateado, are part of the flamenco tradition",
+                "target": "armwork and upper body movement in flamenco dance",
+                "rationale": "The passage grounds these dance elements in flamenco tradition, using tradition to authorize them as integral rather than secondary."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "the group smoothly balanced the programming between the traditional flamenco maneuvers (notably in the concluding 30 minute \"tablao\") and elegant neo-classical hybrids",
+                "target": "Theater Flamenco programming",
+                "rationale": "The review applies aesthetic criteria of balance, traditional maneuvering, and elegant hybridity to assess the program's quality."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "Audience frenzy is mentioned, but the passage does not clearly contrast spectatorship with participatory flamenco or make participation a value marker."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "tradition"
+            ],
+            "target": "flamenco dance performances and their traditional/aesthetic components",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The excerpt is truncated but still contains clear review judgments and one explicit tradition claim."
+    },
+    {
+        "article_id": "JALEO_1983_10::A15",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Master classes and conservatory teaching are mentioned, but only as event/biographical information without a developed access, transmission, or legitimacy claim."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "Phrases like 'great success' and 'very well received' are generic promotional praise without specific critical criteria."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Mostly event notices and neutral listings; weak praise was not treated as critical discourse."
+    },
+    {
+        "article_id": "JALEO_1983_10::A16",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "we still had enough of the proper ingredients to make it work. On the guitar at various times were... There were several dancers... we were graced with more cante than normal",
+                "target": "the L.A. juerga at Casa de Espa\u00f1a",
+                "rationale": "The juerga's value is framed through participatory co-presence of guitar, dance, and cante rather than as a detached stage event."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The stolen scrapbook contains pictures of past juergas, but the passage treats it as a lost communal object rather than explicit heritage or safeguarding work."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "'Less desirable' and 'graced with more cante' evaluate the event lightly, but the main discourse function is participatory community description."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "participatory juerga practice in Los Angeles",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Coded conservatively because the article mainly reports participants, but 'proper ingredients' makes the participatory setting evaluative."
+    },
+    {
+        "article_id": "JALEO_1983_10::A17",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "high",
+                "evidence_quote": "Around 10:00 guitars started to come out of their cases and were accompanied by palmas and cante. By 11:00 the juerga was in full swing and lasted until about 3:00 a.m.",
+                "target": "the Encinitas juerga",
+                "rationale": "The passage defines the event through informal, participatory music-making and shared co-presence."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "Only by our support of establishments which promote flamenco will we continue to have them available.",
+                "target": "local flamenco-supporting establishments and community members",
+                "rationale": "The passage assigns the local community responsibility for sustaining flamenco venues and continued access to juerga activity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The call to support establishments that promote flamenco suggests continuity, but it lacks explicit heritage, safeguarding, or public-culture framing."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "local juerga participation and community support for flamenco venues",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The strongest discourse work is communal participation and responsibility for sustaining local flamenco spaces."
+    }
+]

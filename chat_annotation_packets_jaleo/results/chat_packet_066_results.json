@@ -1,0 +1,209 @@
+[
+  {
+    "article_id": "JALEO_1980_02::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Paco Peña, one of the most highly regarded practitioners of flamenco guitar",
+        "target": "Paco Peña as flamenco guitarist",
+        "rationale": "The phrase elevates Peña within a hierarchy of flamenco guitar practitioners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Jan Murray talked to him about doing right by the gypsy tradition. \"Flamenco isn't just a musical form, it's a whole culture...\"",
+        "target": "flamenco as Gypsy/Andalusian cultural tradition",
+        "rationale": "The passage grounds flamenco's value and meaning in tradition, culture, origin, and continuity rather than in music alone."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "it's a whole culture, an expression of the basic emotions of a deprived people... it was only in Andalucía that they created flamenco, because of their interaction with Jews and Arabs",
+        "target": "Gypsies in Andalucía as creators of flamenco",
+        "rationale": "Identity groups and place are used to define who created flamenco and whose experience it expresses."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text defines flamenco culturally, but it does not explicitly claim a genuine or proper form against alternatives."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community"],
+      "target": "flamenco as rooted Gypsy/Andalusian culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_02::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "She provides the full-blooded, raw, emotional element in Paco Peña's flamenco troupe",
+        "target": "Loli Flores's role in Paco Peña's flamenco troupe",
+        "rationale": "The passage evaluates her contribution to the troupe through expressive intensity and emotional force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "I had one cool, classic, refined dancer... I also needed someone different, someone earlier and not refined. So I picked Loli.",
+        "target": "contrasting flamenco dance styles within Paco Peña's troupe",
+        "rationale": "The passage applies aesthetic criteria such as cool, classic, refined, raw, earlier, and unrefined to explain dance value and casting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article includes gendered and ethnicized characterization, but it does not clearly use identity to authorize belonging or representation within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Loli Flores's expressive dance persona",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_02::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "there is a demand for works of this quality... his new arrangements for three guitars were very succussful",
+        "target": "Paco Peña flamenco company performance",
+        "rationale": "The review explicitly praises the quality of the show and the success of Peña's guitar arrangements."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "El Sordera the highly acclaimed singer from Jerez... The star dancers Margarita and Faiquillo de Córdoba",
+        "target": "artists in Paco Peña's company",
+        "rationale": "The passage constructs status distinctions by presenting performers as highly acclaimed or star artists."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "some of the London aficionados were so enamoured of the show that they saw it three or four times, proving that there is a demand for works of this quality",
+        "target": "London aficionados as validating audience",
+        "rationale": "Aficionado response is used as evidence that the performance has recognized flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review mentions music, arrangements, palmas, and singing, but the aesthetic criteria are mostly embedded in general praise rather than developed as standards of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "Paco Peña's company and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_02::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The more you understand about stage lighting and its effects, color and color perception, the better your chances of elevating an excellent performance into the realm of perfection.",
+        "target": "dancers' knowledge of stage lighting and color",
+        "rationale": "The article functions as an instructional guide giving dancers access to technical performance knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "dancers will exert great effort in perfecting the physical elements of their chosen medium while often ignoring... some of the vital staging elements necessary to convey their artistic message",
+        "target": "dancers who neglect staging elements",
+        "rationale": "The passage criticizes a common performance practice as artistically incomplete."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the prime objective of your artistic effort as a dancer is to create in the mind of your audience a visual image embodied in strong emotional overtones based on interpretation, characterization, and personification of the accompanying musical score",
+        "target": "dance performance quality",
+        "rationale": "The passage defines performance quality through aesthetic criteria including visual image, emotional force, interpretation, characterization, and musical personification."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Words such as purity and perfection appear in lighting/color explanations, but they do not draw a flamenco purity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "stagecraft knowledge as necessary for effective dance performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the final sentence is cut off, the visible excerpt is sufficient to judge the main instructional and evaluative discourse."
+  },
+  {
+    "article_id": "JALEO_1980_02::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The excerpt describes rural audience access to a flamenco performance, but it does not clearly frame flamenco learning or knowledge transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text describes a local audience and makeshift stage, but it does not contrast participatory versus spectatorial settings as a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

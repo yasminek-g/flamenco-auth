@@ -1,0 +1,215 @@
+[
+    {
+        "article_id": "JALEO_1981_11::A11",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "high",
+                "evidence_quote": "the members of the dance company, DANZANTE, have given flamenco aficionados in central Pennsylvania a unique opportunity to become involved in this Andalusian tradition of the juerga.",
+                "target": "central Pennsylvania aficionados participating in juerga",
+                "rationale": "The passage values juerga as a participatory setting and frames local aficionados as becoming involved in it, not merely attending a performance."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "this Andalusian tradition of the juerga",
+                "target": "juerga as an Andalusian tradition",
+                "rationale": "The passage grounds the value of the event in juerga as an Andalusian tradition that can be continued in Pennsylvania."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Virginia's class with Rosa Montoya is a learning detail, but it is incidental travel reporting rather than a discourse about access or pedagogy."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The concert advertisement names performers and promises a full performance, but it is promotional listing rather than critical evaluation."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community",
+                "tradition"
+            ],
+            "target": "Pennsylvania juerga participation",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The advertisement portion is not coded; the juerga report supplies the discourse function."
+    },
+    {
+        "article_id": "JALEO_1981_11::A12",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "high",
+                "evidence_quote": "He has been a friend and supporter of flamenco here ever since. His unfaltering enthusiasm and participation has been an inspiration to us all.",
+                "target": "Ernesto Lenshaw as local flamenco supporter",
+                "rationale": "The passage authorizes Ernesto through long-term participation, friendship, and support within the local flamenco community."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "Ernesto embodies the spirit of Jale\u00edstas -- that growing international community of flamenco aficionados.",
+                "target": "Jale\u00edstas as an international flamenco community",
+                "rationale": "The passage frames flamenco belonging through international aficionado identity and presents Ernesto as embodying that group identity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Ernesto's long involvement in dance and music is biographical and does not clearly describe authoritative transmission or lineage."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "Ernesto Lenshaw and the international Jale\u00edstas community",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article is a community tribute; coding centers on belonging and participant authority."
+    },
+    {
+        "article_id": "JALEO_1981_11::A13",
+        "no_relevant_discourse": true,
+        "insufficient_context": true,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The juerga venue is mentioned, but the text breaks off before making any clear participatory or evaluative claim about the setting."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "unclear",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The visible text is very short and ends mid-word, so there is insufficient context for reliable coding."
+    },
+    {
+        "article_id": "JALEO_1981_11::A14",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Curro Zamorano of C\u00e1diz, an accomplished dancer and a cantaor of encyclopedic knowledge of cante chico.",
+                "target": "Curro Zamorano",
+                "rationale": "The obituary makes an explicit evaluative judgment of Curro as accomplished and exceptionally knowledgeable in cante chico."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "Miami flamenco circles lament him, but the passage does not clearly grant those circles authority to judge or sustain flamenco."
+            },
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "His encyclopedic knowledge is praised, but no teaching, correction, or pedagogical authority is described."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Curro Zamorano",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Short obituary, but the evaluative claim is explicit enough for CRIT_01."
+    },
+    {
+        "article_id": "JALEO_1981_11::A15",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "the most typical local cante is tied to the ancient origins of the flamenco of Jerez and Triana.",
+                "target": "Puerto de Santa Mar\u00eda cante",
+                "rationale": "The passage authorizes local cante by tying it to ancient origins and the flamenco nuclei of Jerez and Triana."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "high",
+                "evidence_quote": "These gypsies mastered -- as is normally the case -- the songs they heard around them, modifying them according to their likes and conveniences and they offered them as a street spectacle.",
+                "target": "gypsy transmission and transformation of romances and corridas",
+                "rationale": "The passage frames flamenco-related repertoire as learned by hearing, modified, and transmitted through embodied/oral practice."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Francisco Ortega, \"El Fillo,\" one of the most important names among the interesting fundamental cantaores.",
+                "target": "Francisco Ortega, El Fillo, and fundamental cantaores",
+                "rationale": "The text constructs a hierarchy of importance by identifying El Fillo as one of the fundamental cantaores."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "medium",
+                "evidence_quote": "when in reality it is -- with a few insignificant variations -- a take-off on one of the most traditional versions of the \"romance\" of Rold\u00e1n",
+                "target": "attribution of Bernardo del Carpio romance",
+                "rationale": "The passage contests received attribution by asserting what the romance really is, making a truth claim about flamenco-related repertoire history."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The Archive and preservation of old examples are present, but the passage does not clearly frame this as public heritage safeguarding or community heritage responsibility."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "Gypsy identity is central to the narrative, but the clearest discourse work concerns origins, oral transformation, and historical attribution rather than identity-based belonging authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "authenticity",
+                "tradition",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Puerto de Santa Mar\u00eda cante, gypsy-transmitted romances, and historical cantaores",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article legitimates local cante through ancient origins while also correcting and complicating inherited attributions."
+    }
+]

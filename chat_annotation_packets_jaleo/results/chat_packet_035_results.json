@@ -1,0 +1,216 @@
+[
+  {
+    "article_id": "JALEO_1978_10::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Sometimes there was the feel of a three-ring circus with jaleo and dancing going on in the \"Pit,\" the \"Sala\" and on the lawn simultaneously. Traffic would flow from one area to another as people, anxious \"not to miss something\" hurried out of or back into the house.",
+        "target": "the September juerga as a participatory community setting",
+        "rationale": "The juerga is framed as an active participatory environment where communal movement, jaleo, and dancing define the event rather than detached spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Raquel Reyes (alias Masami) is, to quote Maria Solea, \"the heaviest female guitarist to hit San Diego since Carol Whitney.\"",
+        "target": "Raquel Reyes/Masami as guitarist",
+        "rationale": "The passage quotes an explicit evaluative judgment of a flamenco guitarist's local importance and quality."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego juerga participation and a local guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_10::A17",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The hosts are called long-time aficionados, but the passage mainly gives a neutral event notice and biography without granting community authority or evaluative recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_11::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I strongly feel that going to Spain, even on short money, should be a trip not only spent in the studios, but in absorbing the \"ambiente\", feeling, atmosphere, people, the weather, the land, the food, and much conversation. The absorbing of this totality, by some form of osmosis, gives that special inner ingredient to flamenco; the feeling, the feeling of \"living flamenco\".",
+        "target": "learning flamenco through immersion in Spain",
+        "rationale": "The passage frames flamenco knowledge as acquired through embodied social immersion and absorption beyond formal studio instruction."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "They said that I could not be American to dance the way I did, and since my parents were from Hungary, I became \"El Húngaro\"; it is so typical in the flamenco world to give you a nickname.",
+        "target": "Teodoro Morca's identity and recognition in the flamenco world",
+        "rationale": "Nationality and nickname practices are used to frame how a non-Spanish performer is socially interpreted and accepted within flamenco settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "When I was there, the artists were excellent and serious and my memories are of real joy... She is a serious artist and allows no unnecessary \"guasa\" that is so prevalent in tablaos. Everything was of high caliber.",
+        "target": "artists and performance standards at Café de Chinitas",
+        "rationale": "The text explicitly evaluates the artistic seriousness and high quality of the tablao environment and performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The passage values lived ambiente and social immersion, but it does not clearly oppose intimate/social settings to commercial or staged settings as an authenticity boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "immersive flamenco learning and Café de Chinitas artistic practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_11::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "She is a sincere and compassionate observer, and gives of herself, so that we can see through her eyes; this makes her work very useful source material.",
+        "target": "Suzanne Keyser's articles",
+        "rationale": "The letter evaluates Keyser's writing as sincere, compassionate, and useful as source material."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Their cante was much admired there, and their traditions were closely related to that of Morón, especially if you care to think as far back as El Fillo and Silverio",
+        "target": "Morón-related cante traditions",
+        "rationale": "The passage grounds the value and relationship of cante traditions in continuity with admired historical figures and places."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Without individual vitality which must include individuality, no art form can continue and prosper. Otherwise it is heartless repetition.",
+        "target": "flamenco and art forms generally",
+        "rationale": "The passage defines artistic quality and survival through individuality and vitality rather than mere repetition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The letter says Jaleo will increase the writer's knowledge, but this is a general reader benefit rather than a developed claim about access to flamenco pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "flamenco writing, Morón-related traditions, and artistic vitality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_11::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "The solo guitar in flamenco can be a very valid form of expression.",
+        "target": "solo flamenco guitar",
+        "rationale": "The passage explicitly legitimates solo flamenco guitar as a valid flamenco form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "The creative guitarist is a DOER, who doesn't need to check with self-appointed critics for approval.",
+        "target": "self-appointed critics of solo flamenco guitar",
+        "rationale": "The author contests the authority of critics who police the legitimacy of solo guitar."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Tone, creativity, projection, dynamics knowledge of what's been done, technique, are as important as compas. Also knowledge of the cante and baile as well as a good knowledge of the Spanish language will be main contributors to the complete solo guitarist in flamenco.",
+        "target": "criteria for complete solo flamenco guitar playing",
+        "rationale": "The passage names and weighs aesthetic and technical criteria for evaluating solo flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article quotes purity and 'true flamenco' boundary language, but primarily contests those boundaries rather than using them to exclude a target."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article says creative guitarists break rules while returning to tradition, but the stronger discourse function is aesthetic criteria and legitimacy of solo guitar."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "solo flamenco guitar and its critics",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

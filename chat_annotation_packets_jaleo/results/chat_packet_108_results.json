@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "JALEO_1981_06::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "With her passing went one of the best bailaoras in the Spanish arts.",
+        "target": "Pastora Imperio",
+        "rationale": "The passage explicitly evaluates Pastora Imperio's artistic status by calling her one of the best bailaoras."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the great bailaora and actress, Pastora Imperio",
+        "target": "Pastora Imperio",
+        "rationale": "The obituary elevates Pastora Imperio into a high-status artistic category through exemplary language and later superlative ranking."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pastora Imperio as a major Spanish arts/flamenco dance figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_06::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I fell in love with the music Mariano Córdoba played that night. It was something I never heard before and I was attracted to the rhythms and the feeling of the music.",
+        "target": "Mariano Córdoba's flamenco guitar concert/music",
+        "rationale": "The speaker makes an explicit positive assessment of the performance's impact, rhythms, and feeling."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Rhythms and feeling are mentioned as attractive qualities, but the passage does not clearly define them as aesthetic criteria for flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mariano Córdoba's flamenco guitar music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short excerpt, but sufficient for a narrow positive evaluation."
+  },
+  {
+    "article_id": "JALEO_1981_06::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It is an opportunity to experience flamenco in its native habitat",
+        "target": "Andalucía as the origin-grounded setting for flamenco experience",
+        "rationale": "The tour is legitimated by presenting Andalucía as flamenco's native habitat, grounding value in origin and roots."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "under the experienced guidance of author-guitarist Pohren",
+        "target": "Donn Pohren's guided flamenco tour",
+        "rationale": "The passage frames the tour as mediated access to flamenco knowledge across geographic boundaries through an experienced guide."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the flamenco contest and festival of Mairena del Alcor (among the most serious flamenco events of the season)",
+        "target": "Mairena del Alcor flamenco contest and festival",
+        "rationale": "The passage evaluates the festival's status by calling it one of the season's most serious flamenco events."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions contact with artists and aficionados, but it does not clearly grant those community actors authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "the Andalucía flamenco tour and its access to origin-grounded flamenco settings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_06::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Faithful preserver of the old styles of Alcalá and Triana, of Jerez and Utrera",
+        "target": "Juan Talega",
+        "rationale": "The passage legitimates Talega through faithful preservation of old regional styles and continuity with flamenco roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he is one of the two or three greatest present day exponents of the cante -- when considered according to its truest and most rigorous historical roots",
+        "target": "Juan Talega",
+        "rationale": "The passage explicitly ranks Talega among the greatest present-day exponents and ties that hierarchy to historical roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Each one of his cantes constitutes a supreme lesson in sobriety, in pathos, in the exact measuring of the compás, and in emotive tension.",
+        "target": "Juan Talega's cante",
+        "rationale": "The passage names specific aesthetic criteria—sobriety, pathos, compás, and emotive tension—as the basis of flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Mairena's local respect and the role of nuclei of aficionados suggest community recognition, but the strongest discourse work is ranking and tradition-rooted legitimation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'authentic cantaor' appears, but the fuller evidence is better captured by continuity, preservation, and roots under AUTH_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Juan Talega and, secondarily, Antonio Mairena as regionally rooted flamenco figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_06::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It is a long and drawn out rondeã, with much repetition and monotony.",
+        "target": "the reviewed record/piece 'Despertar'",
+        "rationale": "The review explicitly evaluates the musical track, judging it as drawn out, repetitive, and monotonous."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Of course, it all depends on what the word \"jondo\" means to the listener.",
+        "target": "the record's claim to or relation with jondo/duende qualities",
+        "rationale": "The review uses jondo and later duende as criteria for judging whether the record will satisfy trained flamenco listeners."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "most hard core flamencos will not appreciate this kind of record... Flamenco has no monopoly on true \"duende.\"",
+        "target": "boundary judgments around non-flamenco elements and true duende",
+        "rationale": "The critic explicitly discusses how hard-core flamencos may police this record while also contesting the boundary by denying flamenco an exclusive claim to true duende."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The review discusses acceptance of non-flamencos and true duende, but it is framed as critical boundary debate rather than a direct purity/impurity exclusion claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "the record's Morón style mixed with synthesizer/non-flamenco elements",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

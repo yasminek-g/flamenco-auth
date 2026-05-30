@@ -1,0 +1,275 @@
+[
+  {
+    "article_id": "JALEO_1989_03::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "That which we call \"compás\" and define as division in exact counts of a musical measure must be indestructible and indispensable if flamenco is to maintain its expressive capacity.",
+        "target": "compás as a criterion of flamenco dance and expressive capacity",
+        "rationale": "The passage defines compás as an indispensable aesthetic criterion for maintaining flamenco's expressive value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The baile becomes a mighty hurricane that overthrows conventions when this man executes it.",
+        "target": "El Farruco's baile",
+        "rationale": "The passage explicitly praises the dancer's performance as powerful, unconventional, and artistically distinctive."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Only geniuses can divide or multiply for themselves these musical phases without losing a note of their reality and with perfect subjugation to the pre-set structure.",
+        "target": "artists capable of manipulating compás without losing structure",
+        "rationale": "The passage constructs a hierarchy in which only exceptional artists can legitimately alter musical phases while preserving flamenco structure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions evolution while remaining faithful to constants, but the claim functions mainly as an aesthetic criterion rather than a tradition/continuity argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Farruco's baile and compás-based flamenco value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1989_03::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "leaving only, to the best of our knowledge, El Sardinia de Caí to carry on this delightful tradition.",
+        "target": "flamenco comedy tradition",
+        "rationale": "The passage values flamenco comedy as a tradition whose continuity is threatened by Emilio el Moro's death."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "behind his flippancy lay a deep and powerful command of the flamenco idiom, not to mention a fine voice “afilá”.",
+        "target": "Emilio el Moro as cantaor",
+        "rationale": "The passage evaluates El Moro's artistry by contrasting comic flippancy with serious command of the flamenco idiom and vocal quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the legendary Manuel Agujetas de Jerez performs on video cassette. The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance that will remain forever.",
+        "target": "Manuel Agujetas de Jerez video performance",
+        "rationale": "The advertisement canonizes Agujetas through legendary, maestro, dynasty, and historic-performance language."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The phrase 'An educational must for guitarists and singers' points toward mediated learning access, but it appears in promotional copy with limited pedagogical detail."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Emilio el Moro, flamenco comedy, and Manuel Agujetas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The final code comes from visible advertisement text included in the review field; it is retained because it performs clear canonizing discourse."
+  },
+  {
+    "article_id": "JALEO_1989_03::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "People always say \"ichi-ban\" which means number one, or that she is the best Japanese singer in Tokyo.",
+        "target": "Ayako Endo",
+        "rationale": "The passage ranks Ayako Endo as the leading Japanese flamenco singer in Tokyo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "These two were drawing from, and sharing the art of flamenco in a way seldom seen in Japan, or elsewhere.",
+        "target": "Ayako Endo and Pepe Shimada's performance",
+        "rationale": "The passage evaluates the performance as unusually strong and rare in its flamenco artistry."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Do you ever intend to teach the Japanese, because the singing is indispensable in the flamenco field. So Mrs. Endo, I hope that you will start pulling up the younger generation into the cante field.",
+        "target": "Japanese learners and younger-generation cante transmission",
+        "rationale": "The passage explicitly frames teaching cante in Japan as necessary transnational access to flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The discussion of palmas, aire, and compás suggests embodied knowledge, but the visible excerpt does not clearly show a lineage or embodied transmission claim beyond general learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ayako Endo, Pepe Shimada, and Japanese cante learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1989_03::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "As soon as the children could toddle, father Antonio started their dance training.",
+        "target": "Cansino family dance training",
+        "rationale": "The passage frames dance knowledge as transmitted within the family from father to children from early childhood."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Mother Cansino sent over the rest of the family, one by one, as they were old enough and considered by Padre good enough dancers to represent the Cansino name.",
+        "target": "Cansino family dancers",
+        "rationale": "The passage constructs a family-name standard that dancers must be good enough to represent, creating an internal hierarchy of artistic legitimacy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The Cansinos have always danced and taught and we shall continue to dance and teach as long as there is the fire and beauty of Spain in our souls and the freedom of America in our hearts.",
+        "target": "Cansino family dance tradition",
+        "rationale": "The passage grounds present and future artistic legitimacy in continued family practice and teaching across generations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family is central, but the clearest discourse function is transmission and continuity rather than community authority to judge or sustain flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The excerpt suggests living continuation, but it does not frame the practice as public heritage, safeguarding, or collective memory-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Cansino family dance lineage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1989_03::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Students come from all over the USA and Canada to learn flamenco dance. Some have no prior dance or flamenco experience. Others are dance teachers and advanced dance students.",
+        "target": "Teo Morca workshop students",
+        "rationale": "The passage frames the workshop as a transnational learning-access site for beginners and advanced students from the USA and Canada."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Teo defined flamenco terminology; desplante, llamada, escobilla, etc. He explained the development of a flamenco dancer",
+        "target": "Teo Morca as instructor",
+        "rationale": "Teo is positioned as an authoritative teacher who defines terminology and explains flamenco dancer development."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Palmas, with the guitar, provide the rhythm. For the student, palmas reinforce compás. Further, there is participation by the jaleadores, signaling feedback and appreciation of the dancer.",
+        "target": "palmas, compás, and jaleo in workshop learning",
+        "rationale": "The passage describes embodied and participatory learning of rhythm, compás, and performance feedback."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "He traced the evolution of the dance from around the campfire to the elaborate Las Vegas-type productions found in the modern big city tablaos. According to Teo, there is valid artistic expression to be found in both forms.",
+        "target": "campfire flamenco and modern big-city tablao productions",
+        "rationale": "The passage uses Teo's expert framing to contest a simple boundary that would delegitimate staged or commercial forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Jaleadores and participation are discussed, but the passage primarily treats them as pedagogical performance elements rather than a public/private participatory value contrast."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The question about whether one must be Gypsy raises identity-boundary discourse, but the excerpt says little time was spent on it and does not develop a clear identity framing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text discusses business and Las Vegas-type tablaos, but it explicitly avoids framing commercialization as an authenticity threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Teo Morca's workshop pedagogy and his validation of multiple flamenco forms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

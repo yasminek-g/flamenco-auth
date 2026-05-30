@@ -1,0 +1,205 @@
+[
+  {
+    "article_id": "JALEO_1979_09::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "In Andalucía we say that you have to have 'duende'. Everyone can dance, but to really dance well, you must feel and live it.",
+        "target": "criteria for becoming a great flamenco dancer",
+        "rationale": "The passage defines good flamenco dance through duende, lived feeling, technique, personality, and audience magnetism as aesthetic criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco is an expression of the people, and those who dance are of the lower classes; that is why it involves not only happiness, but also sadness.",
+        "target": "flamenco as expression of lower-class Andalusian experience",
+        "rationale": "The article frames flamenco through class identity, making lower-class oppression and suffering central to what flamenco represents."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "I learned with my eyes, watching those who knew more than I did and exerting myself every day.",
+        "target": "Cristina Hoyos's flamenco learning",
+        "rationale": "Learning is described as embodied visual imitation and sustained practice from more knowledgeable performers rather than formal instruction alone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text links flamenco to 'the people' and oppression, but it does not clearly use tradition, roots, or continuity with the past to authorize present practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There are comparative claims about dancing better than others and old great artists, but they are not developed into a broader canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "Cristina Hoyos's account of flamenco dance and flamenco's social grounding",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse functions are the definition of quality through duende, class/community framing, and embodied learning by watching."
+  },
+  {
+    "article_id": "JALEO_1979_09::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The old hand-rubbed finish is contrasted with newer varnishes, but the passage is descriptive and does not clearly authorize value through tradition or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named builders are presented as exceptions and Ramírez as a pioneer, but no clear canonizing or ranking claim is made."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt reports changes in guitar-finishing practice without clear evaluative, authorizing, or pedagogical discourse."
+  },
+  {
+    "article_id": "JALEO_1979_09::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Some small sections will be especially difficult and require practice all by themselves... It's very important to knock as shown.",
+        "target": "readers learning the soleá transcription",
+        "rationale": "The excerpt mediates flamenco learning through transcription and step-by-step written guidance, giving learners access to technique and practice strategy."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Diego del Gastor identified the melody illustrated in this month's transcription as that of a soleá de Cádiz; judging by Antonio Mairena's Gran Historia del cante gitano andaluz, it can also be called 'de los Puertos.'",
+        "target": "classification of the transcribed soleá melody",
+        "rationale": "Named expert sources are used to authorize how the melody should be identified and understood for pedagogical use."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to Pastora Pavón, Tomás Pavón, and older hearing contexts establish provenance, but the excerpt does not clearly make tradition or continuity an evaluative claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás is mentioned, but mainly as a technical learning issue rather than an aesthetic criterion for judging quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "the transcription and learning of a soleá melody",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The excerpt primarily functions as mediated instruction, with expert naming used to authorize classification."
+  },
+  {
+    "article_id": "JALEO_1979_09::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I've just seen a new one that is ambitious and well done... should be a useful approach for guitarists who are interested in learning flamenco.",
+        "target": "Juan Martin's El Arte Flamenco de la Guitarra",
+        "rationale": "The passage explicitly evaluates the method's quality and usefulness for flamenco guitar learners."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "It comes with a 60 minute cassette as well as the 168-page book which uses music and tablature, plus clear and intelligent explanatory material and photographs.",
+        "target": "flamenco guitar learning through books, tablature, cassette, explanations, and photographs",
+        "rationale": "The passage frames flamenco learning through instructional media and methods that give guitarists access to knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The reviewer exercises judgment, but the excerpt does not strongly foreground critic or expert authority beyond ordinary review evaluation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text mentions techniques and forms, but does not define quality through aesthetic criteria such as compás, duende, depth, or technique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "criticism"],
+      "target": "published flamenco guitar methods",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The passage both evaluates guitar methods and describes how instructional media mediate learning."
+  },
+  {
+    "article_id": "JALEO_1979_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "flamenco rhythm, accent and cycle length... abbreviation for a system of guitar notation... Andalusian pronun. of 'nobody'... Calo word for non-gypsy",
+        "target": "reader access to flamenco vocabulary and concepts through a puzzle format",
+        "rationale": "The crossword-style clues function as a glossary-like mediation of flamenco terminology, notation, pronunciation, and cultural vocabulary for readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Identity terms such as gypsy, Calo, and Andalusian pronunciation appear as puzzle clues, but they do not develop a claim about belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as rhythm, accent, cycle length, and cante jondo appear, but they are vocabulary clues rather than applied aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": ["pedagogy"],
+      "target": "flamenco vocabulary and cultural knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although presented as a puzzle rather than prose, the visible text teaches terminology and therefore supports a conservative pedagogical access code."
+  }
+]

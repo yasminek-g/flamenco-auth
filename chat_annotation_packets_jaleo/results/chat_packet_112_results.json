@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "JALEO_1981_07::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article advertises dance workshops and class information, but this is mainly administrative listing rather than evaluative discourse about access to flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Rosa Montoya is described as active as a teacher, but the passage does not clearly position her teaching as authoritative or explain a transmission method."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The biography names Ramón Montoya as a great guitarist and Ciro as renowned, but these references mainly support event promotion rather than constructing a sustained canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Workshop announcement and promotional biography; no emitted code because teaching and lineage signals remain mostly informational."
+  },
+  {
+    "article_id": "JALEO_1981_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "There were four juerga areas - the living room, a small sitting room, the garage and the patio. As usual activity migrated from one area to another.",
+        "target": "May juerga",
+        "rationale": "The article frames the juerga as a participatory home-based setting where activity, dancing, guitar, cante, and regular members circulate socially."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The May juerga was a great success, due in great part, to the enthusiasm and hospitality of our hostess Barbara Novak and house-mate Jessie.",
+        "target": "May juerga",
+        "rationale": "The article explicitly evaluates the juerga as successful and attributes that success to hospitality and community enthusiasm."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions regulars, performing members, and Cuadro C, but it does not clearly grant them authority to recognize, judge, or sustain flamenco beyond participation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The juerga is intimate and home-based, but the text does not explicitly frame intimacy as evidence of more authentic flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "May juerga as participatory community event",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Rosa will stay on for the juerga which will begin at 8:30... would appreciate the help of anyone from Cuadro A or any other cuadro who can come early",
+        "target": "July juerga",
+        "rationale": "The announcement presents the juerga as a participatory community setting organized through member labor, shared setup, performance, food, and attendance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Jan's study with Jim Owen and her joining Jaléistas indicate learning access, but they are biographical facts without a developed transmission or access claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Rosa Montoya is called an exciting artist, but this is brief promotional praise without substantive critical evaluation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Cuadros and members are asked to help organize the event, but the text does not clearly make them authorities over flamenco knowledge or recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "July juerga as member-organized participatory event",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is logistical; the emitted code rests on the member-organized, participatory juerga framing."
+  },
+  {
+    "article_id": "JALEO_1981_07::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "to sing por siguiriyas, to complete the cante -- what we would call knowing how to sing -- you had to put the cabal after the cantes that had been sung",
+        "target": "cabal in siguiriyas",
+        "rationale": "The passage defines the cabal as an aesthetic and technical criterion for complete and proper singing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "if not, no matter how well you had sung, it would not seem right to the aficionados.",
+        "target": "aficionados' judgment of siguiriyas singing",
+        "rationale": "Aficionados are positioned as the community able to recognize whether the cante seems correct or complete."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "So \"cabal\" was first used to mean the remate for siguiriyas... Thus, the cabal has become, in some instances, a cante independent of the siguiriya",
+        "target": "historical development of the cabal",
+        "rationale": "The article explains present usage by tracing origin and continuity from remate to an almost independent cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Pepe de la Matrona is used as a source of explanation, but the passage does not clearly frame him as a teacher or pedagogical authority rather than as a cited memoir source."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The passage cites Pepe de la Matrona as an authoritative voice, but the stronger function is aesthetic definition and aficionado judgment rather than critic/expert authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "cabal as a proper and historically grounded cante element",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "He was taken to meet great composers and teachers of Spanish canciones so that he could study with them and educate his voice.",
+        "target": "Pepe de Málaga's vocal/artistic training",
+        "rationale": "The passage legitimates Pepe's development through named teachers and formal study that shape his voice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "He began to hang around the famous places where the greats of the cante and flamenco guitar used to gather. In those places he began his apprenticeship in the cante flamenco.",
+        "target": "Pepe de Málaga's flamenco apprenticeship",
+        "rationale": "The passage frames flamenco knowledge as gained through apprenticeship in social spaces where established flamenco figures gathered."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "From that tablao, he went on to others of great renown and prestige... After working in these places, he came to the highest point of his career",
+        "target": "Pepe de Málaga's career status",
+        "rationale": "The biography constructs prestige and hierarchy through prizes, renowned tablaos, famous collaborators, and the career's highest point."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Pepe's good voice, talent, and promise, but these evaluative details are subsumed by the stronger career-hierarchy code."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición is mentioned as part of Pepe's artistic development, but it does not clearly position aficionados or a community as judging or authorizing him."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'like a good Andaluz' links flamenco effort to Andalusian identity, but it is brief and not enough to emit identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Pepe de Málaga's development and career legitimacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

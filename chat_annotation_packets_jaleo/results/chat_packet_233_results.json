@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "JALEO_1986_FALL::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "it is now possible to take the Dance degree course in Spanish dance, based on the syllabus of the Spanish Dance Society",
+        "target": "Spanish dance/flamenco degree and syllabus-based instruction",
+        "rationale": "The passage frames Spanish dance and flamenco learning through formal university curriculum, degrees, and an institutional syllabus."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Irina Montes was the first examiner trained entirely in this method in the United States",
+        "target": "Spanish Dance Society method and examiners",
+        "rationale": "The Society's method and trained examiners are positioned as authorized mechanisms for teaching and assessing Spanish dance knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "This is a great milestone for Spanish dance and the Spanish Dance Society",
+        "target": "Spanish Dance Society degree and examiner achievements",
+        "rationale": "The passage elevates the institutional achievements as a landmark in the status hierarchy of Spanish dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The Society is said to serve Hispanic communities, but the visible text does not frame this as safeguarding or public heritage work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Concert promotion includes praise of performers, but it reads as promotional copy rather than grounded critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "institutional Spanish dance and flamenco pedagogy in the USA",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A20",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "\"El Amor Brujo,\" based on the pulsating ballet of Manuel de Falla, is one of the best films I've ever seen",
+        "target": "the film El Amor Brujo",
+        "rationale": "The reviewer makes an explicit high-value critical judgment about the film's quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "\"Flamenco is not a physical exercise,\" he said, \"it's a sentiment, an expression of the self...\"",
+        "target": "flamenco performance and filmic representation",
+        "rationale": "The passage defines flamenco value through expressive sentiment rather than physical display alone."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The frequent cuts and shifting camera angles commonly used when filming dance for television can destroy the continuity of a developing drama",
+        "target": "televisual filming conventions for dance",
+        "rationale": "The passage uses critical expertise about film technique to police how flamenco dance should be represented on screen."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'interpret' appears in relation to film, but the passage is about artistic representation rather than learning access or pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Saura speaks of recovering the music of his country and Andalusia, but the visible text does not clearly use roots or continuity to authorize present flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Amor Brujo and expressive flamenco film technique",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible review window contains enough evidence for critical codes."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A21",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "there is little flamenco played at ferias, and as I am told, less every year. Thus, although there is much \"ambiente\" at ferias otherwise, the flamenco-seeking purist would do well looking elsewhere for inspiration",
+        "target": "ferias as sites for flamenco inspiration",
+        "rationale": "The passage draws a boundary between general feria ambience and what a flamenco purist would recognize as meaningful flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "casetas may be strictly private, with an uniformed ID-checking guard at the entrance, to completely open to the public",
+        "target": "access to feria casetas",
+        "rationale": "The passage describes socially meaningful insider/outsider access boundaries within the feria setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval hint points to imitation, but the visible text does not describe oral, embodied, or lineage-based flamenco transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The feria is praised as fun and successful, but the evaluation concerns the festival atmosphere more than flamenco artistry."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "ferias as flamenco spaces",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; the visible window is sufficient for the emitted boundary codes."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A22",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It certainly ranked among the best of the many excellent juergas I have been privileged to attend",
+        "target": "the November 24, 1986 juerga",
+        "rationale": "The author explicitly evaluates the juerga by ranking it among the best attended."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "ranked among the best of the many excellent juergas",
+        "target": "the November 24, 1986 juerga",
+        "rationale": "The passage creates a value hierarchy by ranking this juerga against other excellent juergas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga setting suggests communal participation, but the visible text mainly reports and evaluates the event rather than contrasting participatory settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the November 24, 1986 juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A23",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Te keep this momentum going in San Diego we need three things: communication, participation and mutual support",
+        "target": "San Diego flamenco community",
+        "rationale": "The passage presents community participation and mutual support as necessary to sustain local flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The more people exposed to this beautiful art form, the bigger our audience, the greater the demand for more shows, classes, workshops, juerges... Let's pay together instead of pulling apart!",
+        "target": "local flamenco audiences and participants",
+        "rationale": "The passage ties flamenco's local vitality to expanded participation rather than passive or divided spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The visits of \"Cumbre Flamenco\" and \"Flamenco Puro\" have exposed U.S. audiences to a caliber of flamenco not seen here since the days of Carmen Amays",
+        "target": "Cumbre Flamenco and Flamenco Puro performances",
+        "rationale": "The author evaluates these productions as unusually high-caliber flamenco for U.S. audiences."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article calls for local support and continuity, but it does not frame flamenco as public heritage or safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Classes and workshops are mentioned as part of community activity, but the passage does not focus on institutional or transnational learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego flamenco activity and community infrastructure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

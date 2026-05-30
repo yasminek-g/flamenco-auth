@@ -1,0 +1,216 @@
+[
+  {
+    "article_id": "JALEO_1992_01::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "To learn flamenco you have to listen to it! Access to the world of flamenco awaits you in four volumes that review most Spanish recordings released 1970-1990.",
+        "target": "recording catalogues and anthologies as access to flamenco knowledge",
+        "rationale": "The passage explicitly frames mediated recordings and catalogues as a route for learners to access flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The farewell performance of Jose Molina and company found the \"a gusto\" Molina delightful and generous on the closing afternoon performance. I found the program well balanced and choreographically charming.",
+        "target": "Jose Molina and company performance",
+        "rationale": "The reviewer directly evaluates the performance, program balance, choreography, and Molina's dancing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "To really learn you've got to put a cruple hours into it every day",
+        "target": "serious flamenco learning",
+        "rationale": "The interview frames flamenco learning as requiring sustained embodied daily practice rather than casual exposure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Los Angeles flamenco community is mentioned as fortunate to have Deborah Lawlor, but the passage does not clearly grant community-based authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "flamenco learning resources, daily practice, and Jose Molina's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible excerpt and evidence window."
+  },
+  {
+    "article_id": "JALEO_1992_01::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I find it needs to be more innovative. I think flamenco here is kind of normal -- it's thousands of miles away.",
+        "target": "flamenco in America",
+        "rationale": "The speaker evaluates American flamenco as insufficiently innovative and constrained by distance and limited access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The whole piece in the end is a whole montaje -- it's a whole musical piece and a dance piece, with each thing having meaning -- each step, the lighting -- it's a whole concept.",
+        "target": "modern theatrical flamenco dance structure",
+        "rationale": "The passage names aesthetic criteria for valuing contemporary flamenco: integrated guitar, dance, lighting, structure, and expressive meaning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cristina Hoycos' show... she's very flamenca, and at the same time she'll do things all of a sudden that are really modern, and still her show is very traditional... Joaquin Ruiz is also very innovative.",
+        "target": "Cristina Hoyos and Joaquin Ruiz as exemplary innovators",
+        "rationale": "The speaker elevates specific artists as notable examples of valued innovation within or alongside traditional flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text mentions limited access to videos, but the main visible discourse evaluates performance innovation rather than explaining learning access or pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional flamenco and flamenco puras are mentioned, but the excerpt does not clearly use tradition as an authorizing basis for proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "innovative, theatrical, musically integrated flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; visible evidence supports evaluation of innovation rather than a full authenticity debate."
+  },
+  {
+    "article_id": "JALEO_1992_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "It is a valuable resource for dancers, teachers, critics and aficionados. It embraces all aspects of Spanish dance with clearly defined dance terms, drawings and unusual photos.",
+        "target": "The Language of Spanish Dance as a pedagogical resource",
+        "rationale": "The book is authorized as a teaching and reference resource for dancers, teachers, critics, and aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Your book, The Language of Spanish Dance, is an extraordinary accomplishment--not only because of your profound and untiring investigation on the subject, but also because it is so easy to understand.",
+        "target": "The Language of Spanish Dance",
+        "rationale": "The quoted review explicitly praises the book's research depth and accessibility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "was a giant por solea and siguiriya. So, for me, it was a great honor to play for Mairena.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through exemplary status in solea and siguiriya and frames accompanying him as an honor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Paco de Lucia imitates Melchor's accompaniment style, but the visible text frames it more as artistic modeling than as explicit lineage transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "The Language of Spanish Dance and canonical flamenco models such as Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article combines book endorsements with an interview excerpt; codes are limited to visible claims."
+  },
+  {
+    "article_id": "JALEO_1992_01::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Flamenco has always been badly treated and continues to be without reason... this says that my music, the music I represent, does not have sufficient importance to be announced in the same manner as that of Julio Iglesias.",
+        "target": "public presentation and ranking of flamenco against popular music",
+        "rationale": "The speaker critiques institutional and publicity practices that marginalize flamenco and contests the boundary that makes it seem less important than popular music."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "We should be proud of flamenco because it is ours and because it is one of the most important musics in the world.",
+        "target": "flamenco as a world music of high status",
+        "rationale": "The passage explicitly ranks flamenco among the world's most important musics."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "We should be proud of flamenco because it is ours",
+        "target": "collective Andalusian/Spanish ownership of flamenco",
+        "rationale": "The speaker frames flamenco through collective identity and belonging, making group ownership a basis for pride and support."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text calls Sevilla the home of flamenco, but the visible passage primarily contests status and treatment rather than grounding present value in roots or continuity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The ending describes gypsies gathering in a venta to sing, dance, and play, but it is too brief and descriptive to show evaluative public/private participatory setting discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "community"],
+      "target": "flamenco's public status and collective value",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; the visible excerpt clearly contests unequal treatment of flamenco in public presentation."
+  },
+  {
+    "article_id": "JALEO_1992_04::A1",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative contents and subscription information only; no clear flamenco discourse function is present."
+  }
+]

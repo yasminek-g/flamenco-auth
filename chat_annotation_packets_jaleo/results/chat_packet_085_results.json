@@ -1,0 +1,270 @@
+[
+  {
+    "article_id": "JALEO_1980_09::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Gades is the reigning king of Spanish dance.",
+        "target": "Antonio Gades",
+        "rationale": "The review canonizes Gades through a superlative status claim, placing him at the top of Spanish dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Gades is a master, and his mastery is something to be savored.",
+        "target": "Antonio Gades and his performance",
+        "rationale": "The passage explicitly praises Gades's artistic quality and performance authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Pilar López, the sister of Argentina and inheritor of her tradition and company",
+        "target": "Pilar López's influence on Gades's company",
+        "rationale": "The review grounds Gades's style in continuity with an inherited Spanish dance tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review names qualities such as restraint, control, taste, and artistry, but these overlap with the broader critical evaluation already emitted."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Antonio Gades and his Spanish dance company",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "In order for flamenco to be authentic, it must have three ingredients: baile, guitar, and cante.",
+        "target": "authentic flamenco",
+        "rationale": "The interview explicitly defines the conditions under which flamenco is authentic."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I've never gone to school to learn to play it; my father Antonio and my brother, Ramón de Algeciras, taught me.",
+        "target": "Paco de Lucía's guitar knowledge",
+        "rationale": "The passage legitimates Paco's flamenco knowledge through familial, non-institutional transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Patrice de Nussac, one of the most demanding critics, said of him, \"His guitar is fresh, frank, a torrent of clean notes.\"",
+        "target": "Paco de Lucía's guitar playing",
+        "rationale": "A named critic is invoked as an authoritative evaluator of Paco's artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions roots of flamenco folklore, but the stronger discourse function is the explicit authenticity definition rather than a separate continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Paco's claim that he gave flamenco more prestige suggests status elevation, but it is not developed enough as a hierarchy or canon claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Paco de Lucía and flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Apart from the superficial side of the show which undoubtedly draws laughter in the auditorium, it has good \"arte\" due to the fact that the dancers have been professional for many years.",
+        "target": "the revue \"Españolísimas\"",
+        "rationale": "The passage evaluates the show positively by attributing artistic value to the performers' professionalism."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "It is also, in a sense, a special homage to the great stars of dance and song which Spain has given to the world.",
+        "target": "Spanish dance and song stars represented in the revue",
+        "rationale": "The passage invokes exemplary stars as a canon to which the revue pays homage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Today we can do this,\" the choreographer continues, \"because in Spain the \"machismo\" concept which existed has disappeared and men are more liberated. Of course there still exists certain prejudices against homosexuals and transvesites",
+        "target": "gender and sexuality in Spanish stage performance",
+        "rationale": "The passage frames the performance's social possibility through gender and sexuality categories, linking identity to representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The revue's tour of Spanish regions and periods suggests continuity, but the passage is mainly descriptive and evaluative rather than authorizing tradition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "\"Españolísimas\" and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Rayna lacked the raven hair and darkly dramatic look of a typical flamenco dancer, but her pure line, abrupt staccato movements and controlled passion were splendidly authentic.",
+        "target": "Rayna's flamenco dancing",
+        "rationale": "The review explicitly attributes authenticity to Rayna's dancing despite rejecting a surface stereotype of appearance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the usual electricity between dancer and musician that ignites the sparks in both was unfortunately missing.",
+        "target": "Rayna and Joseph Trotter's performance interaction",
+        "rationale": "The passage directly evaluates the performance by identifying a missing quality in the dancer-musician relationship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "\"Farruca\", a fiery, masculine dance, was traditionally forbidden to women. When she strutted on stage, she was dressed defiantly",
+        "target": "Rayna's performance of farruca",
+        "rationale": "The review frames the dance through gendered tradition and emphasizes the dancer's crossing of a gendered boundary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review uses aesthetic criteria such as line, staccato movement, controlled passion, and electricity, but these are already captured under the broader critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Rayna's flamenco performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "\"You are born with it; my family was all flamencos,\" he says, \"I am nothing but an extension of my culture.\"",
+        "target": "Rene Heredia's flamenco identity and guitar practice",
+        "rationale": "Heredia legitimates his flamenco knowledge through inherited family culture and embodied lineage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Heredia, a native of Granada, Spain and son of a \"gitano puro\" (pure gypsy)",
+        "target": "Rene Heredia",
+        "rationale": "The article frames Heredia's authority through ethnic and place-based identity categories that shape flamenco belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "In Heredia's guitar playing one gets the \"left hand\" of jazz and the \"right hand\" of flamenco (plucking style).",
+        "target": "Heredia's contemporary flamenco guitar style",
+        "rationale": "The passage defines musical value through technical and stylistic criteria comparing flamenco and jazz guitar technique."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text ranks Paco de Lucía as a highly respected proponent and compares Hendrix, but the central discourse here is Heredia's aesthetic criteria and lineage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article describes modern flamenco incorporating jazz and classical techniques, but it is not primarily about learning access or institutional/transnational pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional compositions and inherited culture are mentioned, but the stronger evidence is familial embodied transmission rather than a separate tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Rene Heredia and contemporary flamenco guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

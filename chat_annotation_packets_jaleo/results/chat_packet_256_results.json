@@ -1,0 +1,169 @@
+[
+  {
+    "article_id": "JALEO_1986_WINTER::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Named by Paco de Lucía \"maestro\", this title has new dimensions now, with his flamenco school in Sevilla.",
+        "target": "Mario Escudero",
+        "rationale": "The passage canonizes Escudero through a master title attributed to Paco de Lucía and links that title to institutional prestige through his school."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The annual Mario Escudero concert was a great success.",
+        "target": "Mario Escudero concert",
+        "rationale": "The passage explicitly evaluates the concert as successful and later reinforces that judgment through praise of individual performances."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "The authenticity, performance por excellence, can never have been in doubt, indeed they can even be compared to some of the recent visitors from Spain.",
+        "target": "Orlando Romero and his cuadro",
+        "rationale": "The passage directly asserts the authenticity of the performers and authorizes them by comparison with artists visiting from Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The closing passage praises dedicated aficionados who travel to concerts and juergas, but it does not clearly grant them authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Mario Escudero, Orlando Romero, and the Argentine cuadro",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only explicit evaluative and authenticity claims; travel by aficionados was treated as community description, not authority."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miss Alba is a superb performer who fills the stage with her earthy, teasing presence, the precise but heated quality of her heelbeats and even moments of utter stillness.",
+        "target": "Maria Alba",
+        "rationale": "The review gives explicit qualitative praise of Alba's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the precise but heated quality of her heelbeats and even moments of utter stillness",
+        "target": "Maria Alba's flamenco performance",
+        "rationale": "The passage applies aesthetic criteria such as heelwork precision, heat, presence, and stillness to define performance quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "TEODORO MORCA IS NOW OFFERING ON VIDEO TAPE, A COMPLETE APPROACH TO STUDYING FLAMENCO DANCE, IN TECHNIQUE, INTERPRETATION REPERTOIRE AND UNDERSTANDING",
+        "target": "Teodoro Morca's flamenco dance video tapes",
+        "rationale": "The notice frames video as a mediated means of accessing flamenco dance study across technique, interpretation, repertoire, and understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'memories' appears in a choreographic description of retrospection, but it is not public cultural memory or heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "reviewed Spanish/flamenco dance performances and Morca's instructional videos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review excerpt is truncated, but visible evaluative spans are sufficient for coding."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Neutral concert announcement with artist names and contact information; no clear evaluative, pedagogical, authenticity, heritage, or community-authority discourse."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was hard to believe that the explosive energy which radiated from the stage was produced by only three people.",
+        "target": "Paco Arroyo, Yolanda Arroyo, and Antonio Sánchez performance",
+        "rationale": "The passage evaluates the trio's performance through explicit praise of its stage energy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "After the performance, the stage was thrown open to other performers in the audience.",
+        "target": "post-performance audience participation",
+        "rationale": "The passage marks a participatory setting where the boundary between performers and audience is opened after the formal performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Some ideas to be tried in future juergas are: -teaching how to cook a typical Spanish dish -having a contest for the best \"Tapa\" (hors-d'oeuvre) -teaching, palmas, letras, falcetas or pasos",
+        "target": "Jaleistas juergas",
+        "rationale": "The community plans juergas as access points for learning flamenco-related skills such as palmas, letras, falsetas, and pasos."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article asks members to contribute and participate, but it does not clearly position members as authoritative judges or sustainers of flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "San Diego flamenco performances and Jaleistas community activities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded participatory and pedagogical functions where explicitly connected to performances or planned juergas."
+  }
+]

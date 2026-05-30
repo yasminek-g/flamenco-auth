@@ -1,0 +1,214 @@
+[
+  {
+    "article_id": "JALEO_1980_01::A19",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The neighborhood patio contest setting could become participatory community discourse, but the visible text is too short and ends mid-thought before any clear evaluative or belonging function appears."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text appears insufficient for reliable judgment despite metadata marking it untruncated."
+  },
+  {
+    "article_id": "JALEO_1980_01::A20",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "it is my homeland and there exists a long flamenco tradition. Aside from that, I am interested in convincing people with the flamenco that I do -- besides the traditional -- that which is outside of the usual rules, but preserves the spirit",
+        "target": "Manolo Sanlúcar's flamenco and innovations",
+        "rationale": "The passage authorizes Sanlúcar's nonstandard flamenco by grounding it in homeland tradition and continuity of flamenco spirit."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The proof lies in the existence of many flamenco dance schools. I attended a show where all of the dancers and guitarists were Japanese",
+        "target": "Japanese flamenco learning and performance",
+        "rationale": "The interview frames flamenco knowledge as crossing national boundaries through dance schools and Japanese performers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I used to go around with La Niña de los Peines who called me \"Gatito\" ... Over a period of two years she told me everything about flamenco and enriched me very much.",
+        "target": "Sanlúcar's flamenco knowledge",
+        "rationale": "The passage grounds Sanlúcar's flamenco knowledge in close, oral, mentor-like transmission from La Niña de los Peines."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Sanlúcar says he represented the love of Andalucía, but the visible passage does not develop identity-group authority beyond cultural affiliation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "Manolo Sanlúcar's flamenco practice and transnational reception",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_01::A22",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Approximately 30 people attended the event, with participants coming from various parts of Ohio as well as Atlanta and Pittsburgh. Baile, toque and palmas supplanted the more traditional post-Thanksgiving innertia",
+        "target": "Ohio gran juerga",
+        "rationale": "The passage presents flamenco as a participatory social gathering rather than a detached performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The numbers of participants and their enthusiasm for both this recent and additional, future extended weekend juerga amply demonstrated the fact that flamenco is alive and well in Ohio.",
+        "target": "Ohio flamenco participants",
+        "rationale": "Community participation and enthusiasm are used to validate and sustain flamenco in Ohio."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Ohio flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_01::A23",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "He, his lovely wife Linda, and daughter Jennifer, opened their home to area flamencos for a three-day affair. It's difficult to describe the ambiente and the marvelous time we all had -- you just had to be there.",
+        "target": "weekend juerga at Bob Clark's home",
+        "rationale": "The home juerga is valued as an intimate, participatory setting whose ambiente depends on shared presence."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "It has been her enthusiasm, her knowledge of the art (especially the dance), her talent and gifted teaching, but above all, her need to share it that found us together for the weekend.",
+        "target": "Martha Sid-Ahmed",
+        "rationale": "Martha is positioned as a knowledgeable teacher whose sharing and instruction created the flamenco group."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Years of dedicated searching and teaching have brought together, slowly but surely, those of us who are mad about flamenco. It has been through the efforts of Martha Sid-Ahmed that we have found each other.",
+        "target": "regional flamenco group",
+        "rationale": "The article legitimates flamenco activity through a socially formed group of enthusiasts, teachers, dancers, singers, guitarists, and aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The verb 'propagate' suggests cultural continuation, but the passage lacks explicit public heritage or safeguarding framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Martha Sid-Ahmed and the regional flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_01::A24",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Bob and I repaired to the living room which was to be the juerga room for the duration, with the furniture rearranged and the rugs removed to bare the beautiful hardwood floor",
+        "target": "Ohio Thanksgiving weekend juerga",
+        "rationale": "The passage constructs the domestic living room as an active participatory flamenco space rather than a formal spectator venue."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "All evening there was interesting discussion of techniques, comparison of styles, and sharing of falsetas and have-you-heard-this-ones.",
+        "target": "juerga participants' flamenco learning",
+        "rationale": "Flamenco knowledge is transmitted through informal co-presence, exchange, listening, and sharing of technique and falsetas."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Marta, an exchange student from Madrid who was astounded to find Spain alive and well and living in Ohio.",
+        "target": "Ohio flamenco participants",
+        "rationale": "The passage validates the Ohio group as a recognized flamenco community capable of sustaining Spanish flamenco sociability abroad."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Comments such as Pittsburgh flamenco 'sliding down hill' are evaluative, but they are brief asides and not developed into a clear critique of a specific performance, style, or artist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "References to studying in Spain and transregional participants suggest access across geography, but the clearer discourse function is informal embodied/community transmission during the juerga."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Ohio juerga and its participants",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

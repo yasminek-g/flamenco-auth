@@ -1,0 +1,177 @@
+[
+  {
+    "article_id": "JALEO_1980_04::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Her husband explained that true flamenco is improvisation within a certain chord and rhythm pattern.",
+        "target": "true flamenco",
+        "rationale": "The passage explicitly defines what counts as true flamenco through improvisation within musical structure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco cannot be performed in a routine framework, it calls for creation, he emphasized.",
+        "target": "flamenco performance quality",
+        "rationale": "Improvisation and creative non-routine performance are presented as criteria for proper flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Greater Clevelanders have an unparalleled opportunity to watch and study one of the most famous of all dances",
+        "target": "Greater Cleveland audiences' access to flamenco knowledge",
+        "rationale": "The article frames a local performance residency as an opportunity for outsiders to study and access flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Marina Torres is described as having studied at and taught at the Royal Conservatory, but the passage does not use that teaching role to authorize current flamenco knowledge strongly enough."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'outstanding guitarist' are evaluative, but they read as promotional description without developed critical judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Marina Torres and José Luis López's flamenco practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest evidence is José Luis López's explicit definition of true flamenco as improvised and creative rather than routine."
+  },
+  {
+    "article_id": "JALEO_1980_04::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article recognizes volunteer labor around Jaleo, but it does not present the volunteers as flamenco insiders with authority to judge or sustain flamenco practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The magazine's survival is discussed administratively, not as safeguarding flamenco as public cultural heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative account of magazine production; no clear flamenco authenticity, pedagogy, heritage, community authority, or critical discourse."
+  },
+  {
+    "article_id": "JALEO_1980_04::A10",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The group is described as active and frequently working, but there is no explicit judgment of artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "'Improvising por bulerías' uses a flamenco practice term, but it is only a caption-like description, not an aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief announcement/photo-caption style text with no clear evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "JALEO_1980_04::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Many listings mention dance or guitar instruction, books, and sheet music, but they are routine announcements without evaluative access, authority, or transmission claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga and guest limits describe a social event, but the passage does not contrast participatory/private flamenco with public spectatorship in an evaluative way."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "'top artists' appears in the cancelled concert plan, but it is too generic and promotional to establish a hierarchy or canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Listings and logistics are not enough for codes under the conservative rule."
+  },
+  {
+    "article_id": "JALEO_1980_05::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Joel continued to learn from records while working on his engineering degree at the University of Manitoba.",
+        "target": "Joel Blair's flamenco learning",
+        "rationale": "The phrase presents records as a medium through which flamenco knowledge is accessed and learned outside a traditional local setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The reference to meeting his first flamenco group could mark social entry into a flamenco network, but the visible text does not draw an insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Joel Blair's flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is short and ends abruptly, so only the clearly visible media-mediated learning claim is coded."
+  }
+]

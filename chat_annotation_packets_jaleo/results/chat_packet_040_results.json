@@ -1,0 +1,190 @@
+[
+  {
+    "article_id": "JALEO_1979_05::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger 'body' occurs in a bull-running anecdote rather than a flamenco learning or embodied transmission context."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The stray ending context mentions Gypsy identity, but it does not clearly frame flamenco authority, belonging, or representation within this article excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt is mostly about bullfighting/running-of-the-bulls and appears truncated or contaminated by unrelated Granada material, so no flamenco discourse code is safely supported."
+  },
+  {
+    "article_id": "JALEO_1979_05::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "In order to avoid clutter, we have eliminated the compás counts that were in the original copy. The siguiriya is written in alternating measures of 3/4 and 6/8 time",
+        "target": "written falseta transcription and compás explanation",
+        "rationale": "The editor mediates access to flamenco knowledge through written notation and explanatory rhythmic guidance for readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage names compás and rhythm, but the function is instructional/notation guidance rather than aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "falseta transcription as readable flamenco learning material",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The dance-class notice is an administrative listing and does not frame institutional or transnational access to flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The item reports on Jaleistas and performers, but does not grant community authority or define belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This is the book, possibly the finest book on dance that has been published.",
+        "target": "El Arte del Baile Flamenco",
+        "rationale": "The passage explicitly evaluates the quality and importance of a flamenco dance book."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "included is an extensive section dealing with technique: arm and hand movements, palmas with exercises, shawl movement, turns, etc.",
+        "target": "El Arte del Baile Flamenco as a learning/reference resource",
+        "rationale": "The article frames books and illustrated technique sections as media that give readers access to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Everyone is there! Have you ever wondered what Salud Rodríguez looked like?... El Estampio, La Macarrona, La Quica -- all the old timers are there.",
+        "target": "historic flamenco dance figures represented in the book",
+        "rationale": "The passage constructs the book's value through its comprehensive representation of canonical flamenco figures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The book preserves images and older performers, but the passage does not explicitly frame this as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco books, especially El Arte del Baile Flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "EL CANTE - PART II CANTINEARSE - to sing in a low voice or to oneself... REMATE (EL) - the closing of a cante by switching to a different, but related, cante",
+        "target": "cante terminology for readers",
+        "rationale": "The glossary teaches flamenco vocabulary and makes specialized cante knowledge accessible through definitions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "\"voz rajá\" is the very hoarse and rough voice common to gypsy cantaores and considered ideal for the cante jondo",
+        "target": "voice quality in cante jondo",
+        "rationale": "The passage defines flamenco quality through an aesthetic criterion, identifying a rough voice as ideal for cante jondo."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "\"voz bonita is a negative term among flamencos and refers to the very sweet, operative type voices more common among the popular pseudo-flamenco singers in Spain.",
+        "target": "sweet operatic voices associated with pseudo-flamenco singers",
+        "rationale": "The passage draws a boundary between valued flamenco voice qualities and a negatively marked pseudo-flamenco vocal style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy and non-gypsy cantes are mentioned, but the passage primarily defines vocal aesthetics rather than identity-based authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "authenticity"
+      ],
+      "target": "proper cante terminology and vocal aesthetics",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

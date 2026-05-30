@@ -1,0 +1,201 @@
+[
+  {
+    "article_id": "JALEO_1980_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The Art of Flamenco, which was eventually printed in a number of languages and became the important source of flamenco information for non-Spanish aficionados.",
+        "target": "Donn Pohren's The Art of Flamenco",
+        "rationale": "The passage presents a multilingual publication as a key mediator of flamenco knowledge for non-Spanish aficionados, foregrounding transnational access to flamenco learning."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Donn Pohren's flamenco publication and its role for non-Spanish aficionados",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "An irreplaceable interpreter of cante flamenco has left us; in Pepe\"el de la Matrona\" was combined interpretive art, exhaustive knowledge of the cante, and personal human quality.",
+        "target": "Pepe \"el de la Matrona\"",
+        "rationale": "The obituary explicitly evaluates Matrona as an irreplaceable flamenco interpreter with exceptional artistry and knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "When UNESCO sponsored the creation of the Centro de Estudios de Musica Andaluzay de Flamenco, with goals of investigation and conservation of purity in these arts",
+        "target": "Centro de Estudios de Musica Andaluza y de Flamenco",
+        "rationale": "UNESCO sponsorship and an advisory-board structure frame flamenco study and conservation through institutional cultural authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "when Pepe Matrona -- who didn't use to talk much in our gatherings -- spoke, he was listened to with great respect; he always had something important to say",
+        "target": "Pepe Matrona's opinions and judgments on cante",
+        "rationale": "The passage positions Matrona as an authoritative expert voice whose judgments on cante command respect among knowledgeable participants."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'conservation of purity' invokes purity, but the visible passage does not identify an excluded or devalued impure target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Pepe Matrona and institutional flamenco study/conservation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_10::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article names JALEO members and behind-the-scenes participation, but it does not clearly grant community authority or define belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_10::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "CANTAOR(a) - flamenco singer, the title implies the ability to sing \"cante jondo\" (a non-flamenco singer is a \"cantante\"). CANTE(el) - The song; specifically, flamenco song, as distinguished from \"canciones.\"",
+        "target": "flamenco terminology in the dictionary",
+        "rationale": "The dictionary mediates access to flamenco knowledge by defining specialized terms and distinctions for readers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "CABAL (el) -- the aficionado who has a deep knowledge of the cante.",
+        "target": "the cabal aficionado",
+        "rationale": "The entry defines a community figure by deep knowledge of cante, linking aficionado status to insider competence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "There are those who disagree with this classification and feel that almost any cante can be \"jondo\" if the singer feels it that way",
+        "target": "classification of cante jondo",
+        "rationale": "The passage presents jondo as an aesthetic classification and notes disagreement over the criterion for applying it."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco terminology, knowledgeable aficionados, and cante classifications",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_11::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Carmen Amaya was practically a mythical figure, so great was her fame and her effect on the flamenco world",
+        "target": "Carmen Amaya",
+        "rationale": "The passage canonizes Amaya by presenting her as a mythical figure with extraordinary fame and influence in flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Carmen Amaya y Amaya was born on November 2, 1913 in the poverty stricken gypsy barrio of Somorrostro on the outskirts of Barcelona.",
+        "target": "Carmen Amaya's flamenco identity and origins",
+        "rationale": "The biography frames Amaya through gypsy barrio origins and family background, using identity and place to shape her flamenco representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Her fire, passion and charm, the perfection of her dance had never been seen before.",
+        "target": "Carmen Amaya's dancing",
+        "rationale": "The quoted source makes an explicit evaluative judgment about the unprecedented quality of Amaya's dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'serious and authentic flamenco guitarist' authenticates Amaya's father, but the passage does not clearly use that claim to authorize Carmen Amaya herself."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Family artistry and Amaya being 'untaught' suggest informal background, but the visible text does not clearly describe embodied, oral, or lineage transmission as a mode of learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Carmen Amaya's canonical flamenco status and identity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text was truncated; annotations are based only on the visible beginning/end context and selected evidence window."
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "article_id": "JALEO_1983_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "Going around town, showing Manolo San Diego and learning about Sevilla and his flamenco experiences all over the world were very real flamenco experiences for me, no less than the classes",
+        "target": "informal social time with Manolo Marín",
+        "rationale": "The passage treats intimate co-presence and informal social learning around the artist as equally real flamenco experience, not merely as social biography."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "A great teacher probably has a more profound and personal influence on those who are fortunate enough to take the classes.",
+        "target": "Manolo Marín as teacher",
+        "rationale": "The text positions Manolo's teaching as personally influential and authoritative for students' flamenco experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Manolo's natural, earthy and genuinely masculine style. The naturalness and unpretentiousness of his dance style is a direct reflection of the man himself.",
+        "target": "Manolo Marín's dance style",
+        "rationale": "The passage explicitly evaluates the dancer's style through praise of naturalness, earthiness, and personal warmth."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'genuinely masculine style' is gendered, but it does not clearly organize flamenco belonging, authority, or representation beyond evaluative description."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The visible caption mentions a workshop, but the passage does not clearly frame institutional or transnational access to learning as a discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Manolo Marín's artistry, teaching, and informal social flamenco presence",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on visible context and evidence windows."
+  },
+  {
+    "article_id": "JALEO_1983_10::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The Spanish Dance Society examiner, Charo Linares, came from London in October to examine the students at George Washington University. Irina Montes... took her examinations for her teacher's certificate and as an examiner, and passed with Honours, becoming the Society's first examiner in the USA.",
+        "target": "Spanish Dance Society examinations and certification in the USA",
+        "rationale": "The passage frames Spanish dance learning through formal examination, certification, and transnational institutional access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The examiner and certificate imply pedagogical authority, but the passage primarily describes institutional certification rather than an authoritative teaching relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "formal Spanish Dance Society certification in the USA",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Every part of the body says something; there is no favoring of one part of the technique over the other.",
+        "target": "flamenco dance technique",
+        "rationale": "The text frames flamenco knowledge as embodied and distributed through the whole body, not reducible to isolated steps."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "I recently read an article that said, \"Flamenco dance is based on the footwork.\" I do not agree... Without frills, in its basic traditional approach, flamenco is a complete blend of the total body.",
+        "target": "criteria for proper flamenco dance technique",
+        "rationale": "The passage defines aesthetic and technical value by rejecting footwork-only criteria and asserting whole-body integration as the standard."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "I feel that we should approach flamenco technique from all angles, from the first moment of study.",
+        "target": "instructional approach to flamenco technique",
+        "rationale": "The author gives a prescriptive teaching approach for how flamenco technique should be studied from the beginning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'basic traditional approach' appears, but tradition is not independently used to authorize continuity beyond the technical argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "whole-body flamenco technique",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains a complete pedagogical and evaluative argument."
+  },
+  {
+    "article_id": "JALEO_1983_10::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a very short festival/photo-caption style listing with no clear evaluative, pedagogical, authorizing, or community-boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1983_10::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The advertisement mentions 'Instruction in Cante and Baile Flamenco,' but it is a routine class listing without authority or transmission stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

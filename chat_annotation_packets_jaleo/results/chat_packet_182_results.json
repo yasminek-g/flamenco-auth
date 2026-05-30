@@ -1,0 +1,201 @@
+[
+  {
+    "article_id": "JALEO_1983_12::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "This is not a stage show. We invite all to come, share, learn and take part.",
+        "target": "February juerga at Darwich Restaurant",
+        "rationale": "The notice explicitly contrasts the juerga with a stage show and values participatory co-presence over spectatorship."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Juerga will begin at 8:00 P.M. with a workshop on fandangos.",
+        "target": "fandangos workshop within the juerga",
+        "rationale": "The event frames access to flamenco knowledge through an open workshop attached to a community gathering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are invited, but the passage does not clearly grant them authority to recognize, sustain, or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "participatory Los Angeles juerga",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Participation is explicit; the surrounding advertisements are not coded."
+  },
+  {
+    "article_id": "JALEO_1983_12::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text describes a restaurant and flamenco show commercially, but does not frame commercial staging as authentic or inauthentic."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "A tablao/restaurant setting is mentioned, but there is no evaluative public/private or participatory contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Primarily a venue-opening notice."
+  },
+  {
+    "article_id": "JALEO_1983_12::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Also in preparation are plans for FLAMENCD GUITAR TEACHERS to come from the AMERICAN INSTITUTE DF GUITAR in New York.",
+        "target": "flamenco guitar teaching in Chicago",
+        "rationale": "The notice frames flamenco learning as mediated through institutional teachers traveling into a local scene."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The Fez listing mentions a juerga in which all can join, but it is too brief and event-list-like to establish a clear participatory setting argument."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'the Nureyev of flamenco' suggests ranking, but it is reported billing rather than a developed evaluative hierarchy in the article text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "institutional access to flamenco guitar instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The workshop reference is supporting context, but the clearest codeable span is the planned arrival of institutional teachers."
+  },
+  {
+    "article_id": "JALEO_1984_01::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Jane studied dance (Spanish classical, flamenco and ballet) with Elsa Brunelleschi, a much respected authority on Spanish dance.",
+        "target": "Jane Luscombe/Juanita Flores's dance training",
+        "rationale": "Jane's flamenco-related knowledge is legitimated through study with a named and respected pedagogical authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "they set up a Spanish restaurant and bought out a guitarist from Britain in order to present flamenco to the New Zealand public.",
+        "target": "flamenco access in New Zealand",
+        "rationale": "The article frames flamenco as being transmitted across geographic boundaries and made accessible to a distant public scene."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "New Zealand is described as isolated, but no insider/outsider boundary around flamenco knowledge is drawn."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions a small flamenco scene and visiting companies, but does not present a community actor as authorizing or judging flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "New Zealand flamenco scene and Jane Luscombe's authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is biographical, but the teacher-authority and transnational access claims are explicit enough to code."
+  },
+  {
+    "article_id": "JALEO_1984_01::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Herewith an introduction to Jaleo of an exceptional flamenco guitarist.",
+        "target": "Reynaldo Rincón",
+        "rationale": "The passage explicitly evaluates Rincón's artistry as exceptional."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he is Reynaldo Rincón, who in a short period of time has established himself as the near best of the tocaores here (New York).",
+        "target": "Reynaldo Rincón among New York tocaores",
+        "rationale": "The statement creates a value hierarchy by ranking Rincón near the top of local flamenco guitarists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The biography mentions beginning guitar at age twelve, but does not describe embodied, oral, familial, or lineage-based transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Spanish, folkloric, Madrid tablao, and touring credentials are biographical supports, but the text does not explicitly ground present value in tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Reynaldo Rincón",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The clearest discourse is evaluative and hierarchical rather than pedagogical."
+  }
+]

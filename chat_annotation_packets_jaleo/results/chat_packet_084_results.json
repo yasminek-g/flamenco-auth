@@ -1,0 +1,202 @@
+[
+  {
+    "article_id": "JALEO_1980_09::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The touring artists are keeping flamenco alive across the country and in many countries, even if on a small scale",
+        "target": "touring flamenco artists",
+        "rationale": "Touring artists are framed as sustaining flamenco as a living practice across regions where access would otherwise decline."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "giving over 160 concerts, lecture-concerts and residencies, with many of the audiences seeing and hearing flamenco for the first time",
+        "target": "touring flamenco concerts, lecture-concerts, and residencies",
+        "rationale": "The passage frames touring as a means of giving geographically dispersed audiences access to flamenco knowledge and experience."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco seems to be a natural art for touring -- born of many wandering cultures that came into Southern Spain.",
+        "target": "touring flamenco",
+        "rationale": "Touring is legitimated by linking it to flamenco's supposed historical roots in wandering cultures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'good flamenco' and 'fine flamenco' are evaluative, but the article's main discourse function is preservation/transmission through touring rather than a developed critical assessment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "touring flamenco as a sustaining and transmitting practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Both Isabel and I felt that this was one of the most exciting of our all-flamenco concerts",
+        "target": "Morca's all-flamenco concerts during Flamenco Week",
+        "rationale": "The passage explicitly evaluates the concerts as especially exciting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The master classes were well attended and we gave a lecture-concert finishing with a cuadro flamenco.",
+        "target": "Flamenco Week master classes and lecture-concert",
+        "rationale": "The article presents flamenco learning through institutional formats at a community college, including master classes and a lecture-concert."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article mentions a tight cuadro and successful playing, but does not define flamenco quality through a sustained aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Flamenco Week in Seattle and its concerts/classes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "All of the techniques are there -- strong and clean picado, thumbwork, arpeggios, tremelos, and rasgueados -- along with good composition, musicality, and flamenco aire.",
+        "target": "René Heredia's record Alborada Flamenca",
+        "rationale": "The review explicitly praises the record's technique, composition, musicality, and flamenco aire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "strong and clean picado, thumbwork, arpeggios, tremelos, and rasgueados -- along with good composition, musicality, and flamenco aire",
+        "target": "René Heredia's guitar playing",
+        "rationale": "The evaluation relies on named technical and aesthetic criteria for flamenco guitar quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The reference to the Sabicas style is comparative, but it does not clearly construct Heredia as canonical or ranked."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "René Heredia's Alborada Flamenca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He magnetizes and converts. His dance draws emotion to himself rather than simply simulating an aroma of it",
+        "target": "Antonio Gades's dancing",
+        "rationale": "The passage explicitly praises Gades's performance power and emotional force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the hottest Spanish name in international show business",
+        "target": "Antonio Gades",
+        "rationale": "The article elevates Gades through status-ranking language within international show business."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "For nine years he studied under the famed dancer, developing in skill, style and personality",
+        "target": "Antonio Gades's training under Pilar López",
+        "rationale": "His artistic authority is partly grounded in a recognized pedagogical apprenticeship under a famed dancer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text mentions theatricalism, drama, and emotional force, but these are not developed as clear flamenco-specific aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Antonio Gades as dancer and public figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only a source line and byline are visible, so the text is insufficient for judgment."
+  }
+]

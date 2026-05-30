@@ -1,0 +1,298 @@
+[
+  {
+    "article_id": "JALEO_1987_SUMMER::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The idea of a two, three or four week seminar-workshop in flamenco was very rare... workshops and seminars have blossomed throughout the world, especially in the United States, Spain, and a few other countries",
+        "target": "flamenco workshops and seminars",
+        "rationale": "The passage frames flamenco study as increasingly organized through seminar-workshops and international access structures."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "A very strong highlight of the concert was Eva Encinias choreography for six male dancers in martinete. This was arte puro and unique in its superb individuality.",
+        "target": "Eva Encinias's choreography for six male dancers in martinete",
+        "rationale": "The reviewer explicitly praises the choreography's strength, uniqueness, and artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Eva Encinias did a very special caña, with power and drama.",
+        "target": "Eva Encinias's caña",
+        "rationale": "Power and drama are used as aesthetic criteria to explain the performance's flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Private classes are mentioned only as instructional format, not as a value-bearing public/private participatory contrast."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'arte puro' is evaluative, but the visible excerpt does not clearly define the work as genuinely or properly flamenco rather than simply praising it."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco workshop pedagogy and selected concert performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible windows provide enough evidence for pedagogy and performance evaluation."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Lisa has duende -- duende like nobody else on stage.",
+        "target": "Lisa Bottalico's stage performance",
+        "rationale": "Duende is used as an aesthetic criterion to evaluate the dancer's stage presence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "A final encore to this great Flamenco Homenaje...",
+        "target": "the Flamenco Homenaje",
+        "rationale": "The passage explicitly praises the homage event as great and emotionally successful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "this homenaje should be classed as one of the greatest ever.",
+        "target": "the Flamenco Homenaje",
+        "rationale": "The event is ranked into an exceptional hierarchy as one of the greatest ever."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Artist names and group photos do not clearly frame identity categories as shaping flamenco authority or belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Audience enthusiasm is described, but not contrasted with participatory versus spectatorial flamenco settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Lisa Bottalico and the Flamenco Homenaje",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated report is mostly news items; emitted codes are limited to explicit evaluative/ranking language."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "she was told by José Greco that in order to be and authentic Spanish dancer she had to study in Spain",
+        "target": "Luisita Sevilla's training as a Spanish dancer",
+        "rationale": "José Greco is positioned as an authoritative figure whose instruction legitimates the proper route to Spanish dance training."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "in order to be and authentic Spanish dancer she had to study in Spain",
+        "target": "authentic Spanish dance identity",
+        "rationale": "The passage explicitly links authentic Spanish dancer status to training in Spain."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "she left the Denver Ballet Theatre School of Dance, travelled to Seville, Spain and enrolled in the Academy of Eloisa Albaniz, and following an intense year of study, continued with the great Enrique el Cojo",
+        "target": "Luisita Sevilla's transnational institutional training",
+        "rationale": "The biography frames access to Spanish dance knowledge through travel from the United States to Seville and enrollment in an academy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "He considers himself to be a follower of the school of Mario Escudero and, according to those who should know, a promising figure of the Spanish Guitar.",
+        "target": "José Luis Rodríguez",
+        "rationale": "The passage situates Rodríguez within Escudero's school and elevates him as a promising figure according to knowledgeable judges."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The academy founded to 'perpetuate' Spanish dance suggests continuity, but the wording is biographical and lacks stronger tradition-authorization stakes."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Teacher-student lineages are present, but the visible text emphasizes formal study and institutional training more than embodied/oral lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "José Luis Rodríguez and Luisita Sevilla as trained Spanish/flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse work is around pedagogical authority and authenticity-by-training in Spain."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Marina Keet, Spanish dance lecturer at George Washington University in Washington DC, spent the summer examining for the Spanish Dance Society in Great Britain, Malta and Italy.",
+        "target": "Spanish Dance Society examination and university-linked Spanish dance training",
+        "rationale": "The passage frames Spanish dance knowledge through institutional examination and transnational pedagogical networks."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Joana received her Masters in dance at George Washington University, where she was trained in Spanish dance by Marina Keet. She has her Instructor de Baile examination from the Spanish Dance Society.",
+        "target": "Joana del Rio's Spanish dance credentials",
+        "rationale": "Academic training and an instructor examination are used to legitimate her authority to teach or examine Spanish dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "With a dancer's sensitivity to the human form, the artist imbuies her subjects with a captivating dignity.",
+        "target": "Luisa Triana's visual art of dancers",
+        "rationale": "The passage evaluates Triana's artwork through explicit praise of its sensitivity and dignity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The merging of two cultures and international participants are mentioned, but identity does not clearly organize belonging or authority in the visible text."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The advertisement title 'Traditional Flamenco Guitar' is product labeling and does not itself authorize flamenco through tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The home-study guitar course advertises instruction, but it is routine sales copy with weak discourse stakes compared with the institutional Spanish Dance Society evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Spanish dance institutional training and Luisa Triana's dance-related art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Press-release material includes advertisements; routine ads were not coded unless institutional pedagogy was explicit."
+  },
+  {
+    "article_id": "JALEO_1987_SUMMER::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "One of the most stirring flamenco concerts I've ever attended",
+        "target": "the flamenco concert at Mission Ranch in Carmel",
+        "rationale": "The reviewer gives an explicit positive judgment of the concert's quality and impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Timo danced with great concentration and barely suppressed emotion. Each turn of his head suggested a certain grace of form, a majesty so evocative of the Spanish soul or alma.",
+        "target": "Timo Lozano's farruca",
+        "rationale": "Concentration, emotion, grace, majesty, and alma are applied as aesthetic criteria for flamenco performance value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Though Philadelphia cannot be said to be a flamenco center, the city's most discerning aficionados were treated this east winter to an extraordinarily creative and innovative interpretation",
+        "target": "Philadelphia aficionados as knowledgeable audience",
+        "rationale": "The passage positions discerning aficionados as a community capable of recognizing and valuing an innovative flamenco interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Though Philadelphia cannot be said to be a flamenco center",
+        "target": "Philadelphia as a flamenco location",
+        "rationale": "The statement ranks Philadelphia relative to recognized flamenco centers, creating a value-bearing geographic hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The rumba is said to keep 'gypsy roots,' but the claim is brief and not clearly used to authorize present practice through tradition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Audience response is described, but the excerpt does not clearly contrast participatory co-presence with passive spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Mission Ranch flamenco concert, Timo Lozano, and Philadelphia aficionados",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but visible review text contains direct aesthetic evaluation and community-recognition language."
+  }
+]

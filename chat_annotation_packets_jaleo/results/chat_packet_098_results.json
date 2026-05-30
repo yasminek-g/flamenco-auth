@@ -1,0 +1,179 @@
+[
+  {
+    "article_id": "JALEO_1981_02::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions a final juerga and lists participants, but it is mainly a photo caption/event notice and does not clearly evaluate private/social participation as a source of flamenco value or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short photo-caption style notice; gathering language alone was not treated as sufficient for a community-setting code."
+  },
+  {
+    "article_id": "JALEO_1981_02::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article describes a juerga with friends and flamenco enthusiasts, but it does not make the gathering itself an evaluative or authorizing flamenco setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "No strong discourse function beyond a brief social-event report."
+  },
+  {
+    "article_id": "JALEO_1981_02::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The meeting-juerga announcement seeks a house or other site and says garages can make flamenco caves, but this remains practical event logistics rather than a clear public/private or participatory value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Announcement/logistics language was not coded as community authority."
+  },
+  {
+    "article_id": "JALEO_1981_02::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "LLAMADA (la) -- a call; a signal used by dancers to communicate a forthcoming change in the dance",
+        "target": "flamenco terminology and practice for readers",
+        "rationale": "The glossary format translates and explains flamenco technical vocabulary, mediating access to practical knowledge for learners/readers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "its resident genius guitarist, Diego del Gastor, were exposed to the world by the writings of Donn Pohren. Many foreign guitarists made pilgrimages to the pueblo and the style of guitar playing has come to be known as \"Morón style.\"",
+        "target": "Diego del Gastor and Morón-style guitar",
+        "rationale": "The entry elevates Diego del Gastor and Morón into an exemplary, named guitar style with international pilgrimage and canonical status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The Madrid and mesón entries mention commercial flamenco, atmosphere, and more serious flamenco, but the text does not clearly frame commerciality as weakening authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Some entries contain evaluative phrases such as 'not much atmosphere' and 'resident genius guitarist,' but the stronger discourse function is glossary mediation and canonical elevation rather than a sustained review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco vocabulary and Morón-style guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The dictionary entries are treated as pedagogical mediation because they define terms and explain practice, not merely list vocabulary."
+  },
+  {
+    "article_id": "JALEO_1981_03::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "No one would teach him the fundamentals of the dance, such as the compás, palmas, etc. (He calls this not being 'enterao,' or 'clued in').",
+        "target": "Vicente Escudero's access to flamenco dance knowledge",
+        "rationale": "The passage draws an insider/outsider boundary around being 'enterao' and shows lack of insider access affecting professional legitimacy."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Vicente was fortunate to meet the great dancer, Antonio de Bilbao, who must have seen the potential in the boy and taught him the basic things he needed to know",
+        "target": "Antonio de Bilbao as teacher of Vicente Escudero",
+        "rationale": "The text positions a recognized dancer as the pedagogical authority who transmits the necessary fundamentals."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "No one would teach him the fundamentals of the dance, such as the compás, palmas, etc.",
+        "target": "flamenco dance fundamentals",
+        "rationale": "The passage frames flamenco competence as transmitted through practical fundamentals such as compás and palmas, knowledge that must be learned from others rather than simply invented."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Paris, where Vicente was to build such a reputation for himself that his name leapt the Pyrenees and became known throughout Spain.",
+        "target": "Vicente Escudero",
+        "rationale": "The narrative constructs Escudero's rising reputation and transnational recognition as a status-making, canonizing account."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article discusses gypsy identity, Castilian origin, and myths about Escudero, but identity is secondary to the clearer insider-learning boundary around being 'enterao.'"
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'majestic style' and 'delightfully creative period' are evaluative, but the stronger coded function is canon/status formation rather than a direct performance review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Vicente Escudero's flamenco legitimacy and artistic status",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is biographical, the visible text clearly links legitimacy to insider knowledge, teaching of fundamentals, and later reputation."
+  }
+]

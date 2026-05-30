@@ -1,0 +1,150 @@
+[
+  {
+    "article_id": "JALEO_1983_06::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The first concert, on October 14, spotlights the legendary genius whom all flamenco artists call el maestro. He is Sabicas, and far nearly half a century he has been at the pinnacle of the great flamenco guitar tradition.",
+        "target": "Sabicas and the flamenco guitar tradition",
+        "rationale": "The passage canonizes Sabicas through exemplary status, master language, and placement at the pinnacle of a tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "When they play tagethez trading off lead or supporting roles, the blend is exciting. The sciá numbers appear to be a friendly competition in which each stimulates the other to greater virtuosity.",
+        "target": "the guitar duo Rodrigo and Paco Sevilla",
+        "rationale": "The passage evaluates the duo's playing positively, judging their blend and mutual stimulation toward virtuosity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Sanlucar's National Prize is an official recognition, but the visible passage frames it mainly as career prestige rather than heritage or public-culture authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "featured flamenco guitarists, especially Sabicas and the Rodrigo/Paco Sevilla duo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Promotional pricing and venue details were not coded."
+  },
+  {
+    "article_id": "JALEO_1983_06::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The main topic of discussion was juergas, juerga sites and how to rebuild enthusiasm and participation... Let's all take responsibility for contributing to the success of the evening so that we may be invited back on a future occasion.",
+        "target": "San Diego Jaleistas and the June juerga",
+        "rationale": "The passage frames the juerga as a participatory community setting whose success depends on collective involvement."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Earl's self-teaching and planned Paco Pena workshop are mentioned biographically, but the passage does not evaluate or thematize flamenco learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "local juerga participation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Donation amounts, directions, and meeting logistics were treated as administrative details."
+  },
+  {
+    "article_id": "JALEO_1983_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Most recently Pedro has been invited to serve as artist-in-residence at the University of Washington School of Music during 1983-84. During this time he will be available for concerts and seminars.",
+        "target": "Pedro Bacan's artist-in-residence role",
+        "rationale": "The passage frames flamenco knowledge and performance as accessible through an institutional university residency and seminars."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Pedro Bacan's institutional residency and seminars",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The discography list is descriptive and was not coded."
+  },
+  {
+    "article_id": "JALEO_1983_07::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Workshops are listed among summer activities, but the passage is an administrative notice rather than a discourse about learning, authority, or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The editorial is mainly scheduling and publication logistics."
+  },
+  {
+    "article_id": "JALEO_1983_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "After reading Donn Pohren's \"A Way of Life\" and Carol Whitney's articles... and hearing 3 cuts by the shy genius who refused to record, I know why the oldtimers raved about this unique man.",
+        "target": "Diego del Gastor",
+        "rationale": "The passage elevates Diego del Gastor as a rare exemplary figure through genius language, uniqueness, and recognition by oldtimers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to oldtimers suggests community recognition, but the passage does not clearly grant them authority to judge flamenco beyond supporting Diego's reputation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Diego del Gastor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative corrections and sustaining-member acknowledgements were not coded."
+  }
+]

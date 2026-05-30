@@ -1,0 +1,280 @@
+[
+  {
+    "article_id": "JALEO_1980_07::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "the quintessence of flamenco which, like blues, reflects an intimate art that displays the primitive sounds of suffering and sentiment",
+        "target": "juerga flamenco as intimate art",
+        "rationale": "The passage links the essence of flamenco to intimacy and affective co-presence, making the intimate setting part of flamenco's value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Several of the 80 bystanders shout, \"Eso es, María!\"",
+        "target": "San Diego juerga",
+        "rationale": "The article represents the juerga as participatory rather than merely spectatorial, with bystanders actively joining the performance environment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Before we organized, no one sang flamenco here... But these juergas have triggered childhood memories of Spain and suddenly, the songs come back to them.",
+        "target": "Jaleístas juergas",
+        "rationale": "The local community gathering is credited with sustaining and reactivating flamenco singing, giving communal practice a sustaining authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "\"True to Spanish tradition\" is present, but the passage is mostly descriptive timing/context rather than a strong continuity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions songs becoming perfected, but does not clearly describe pedagogy, institutional learning, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "San Diego Jaleístas juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1980_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Torre has surpassed human personality and has evaported into flamenco mythology",
+        "target": "Manuel Torre",
+        "rationale": "The passage canonizes Torre by placing him beyond ordinary artistic status and into flamenco mythology."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "his great value lies, precisely, more in his creative capacity than in his interpretive possibilities",
+        "target": "Manuel Torre's cante",
+        "rationale": "The author explicitly evaluates Torre's artistic value and distinguishes creative capacity from interpretation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "today, it is the groundwork and even the root of an extensive gamut of cantes",
+        "target": "Manuel Torre's art",
+        "rationale": "The passage grounds the present value of many cantes in Torre's art as a root or foundational source."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "when the \"duendes\" converged at certain moments, they would be transformed into the most spectacular and astonishing triumphs",
+        "target": "Manuel Torre's performances",
+        "rationale": "Duende and spectacular triumph are used as criteria for explaining the value and unevenness of Torre's performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The fandangos section teaches compás patterns, but the code's institutional/transnational access conditions are not clearly met."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Manuel Torre",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article contains two distinct items; emitted codes are based on the Torre evaluation, where discourse function is strongest."
+  },
+  {
+    "article_id": "JALEO_1980_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "He has received keys to cities from Miami to New York to San Francisco. He is an honorary citizen of Winnipeg.",
+        "target": "Carlos Montoya",
+        "rationale": "Official civic honors are used to recognize and authorize Montoya's cultural value as a public flamenco figure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "\"Authentic Sour Dough\" is an honorary local title from Anchorage, not an authenticity claim about flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Montoya is called an international ambassador of goodwill, but the visible text does not clearly rank him within a flamenco canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "Carlos Montoya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is coplas/translation or anecdotal continuation; only the civic-recognition passage clearly supports a code."
+  },
+  {
+    "article_id": "JALEO_1980_07::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "has been imbued, not only in the art of flamenco, but in the life of flamenco since his birth. He grew up \"on tour\", in dressing rooms and on stage.",
+        "target": "José Miguel Herrero's flamenco formation",
+        "rationale": "The passage authorizes Herrero through lifelong embodied immersion rather than formal schooling."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His dances are filled with a duende \"of the moment\". His compás is impeccable. He achieves the very difficult merging of feeling and technique.",
+        "target": "José Miguel Herrero's dance",
+        "rationale": "Duende, compás, feeling, and technique are explicitly applied as aesthetic criteria for valuing his dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "His emotion does not get lost in his technique and his phenomenal technique does not overpower his emotion.",
+        "target": "José Miguel Herrero's dance",
+        "rationale": "The author gives a direct evaluative judgment of Herrero's balance of emotion and technique."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "His virile; masculine air contradicts the over-effeminate image of so many male flamenco dancers. José Miguel is a natural, \"un-made-up\", truly male Spaniard.",
+        "target": "José Miguel Herrero's performer identity",
+        "rationale": "The passage frames flamenco legitimacy through gendered and national identity, contrasting his masculinity with an allegedly effeminate image."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Naturalness and living flamenco imply authenticity, but the stronger evidence is embodied formation and critical evaluation rather than an explicit authenticity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The contrast with academic schooling is present, but the passage does not discuss institutional access or transnational learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "José Miguel Herrero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The gendered contrast is coded because identity framing is used to authorize the dancer, not merely describe him."
+  },
+  {
+    "article_id": "JALEO_1980_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "There were many participants, including professionals, semi-professionals, amatuers, and students. The juerga proved to be good for everyone.",
+        "target": "San Diego juerga",
+        "rationale": "The juerga is valued as a participatory setting where different levels of performers share the same flamenco space."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "If flamencos would accept each other and encourage each other once a month, we would approach a more perfect world.",
+        "target": "flamenco community around the juerga",
+        "rationale": "The passage presents mutual acceptance and encouragement among flamencos as a sustaining community value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "As far as I could tell the fingerings were correct and the harmonies were exact. Whenever he played a certain guitarist's material, it was a very accurate interpretation.",
+        "target": "David Cheney's guitar playing",
+        "rationale": "Accuracy of fingering, harmony, and interpretation are used as aesthetic criteria for evaluating Cheney's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I enjoyed Cheney both as a guitarist and as a person. This unusual guitarist is well worth seeing.",
+        "target": "David Cheney",
+        "rationale": "The passage makes an explicit positive critical evaluation of Cheney as a guitarist and performer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Non-professionals gaining experience suggests learning access, but the passage frames this more clearly as participatory community than pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Cheney is compared jokingly to the 'Rich Little of flamenco guitar,' but this does not clearly establish a canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego juerga and David Cheney",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article includes both community evaluation of the juerga and critical evaluation of a guitarist."
+  }
+]

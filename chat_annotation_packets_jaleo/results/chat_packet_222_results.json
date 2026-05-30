@@ -1,0 +1,261 @@
+[
+  {
+    "article_id": "JALEO_1990_04::A21",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The result was a heady brew that can be called nothing less that Heavy Flamenco.",
+        "target": "Gipsy Kings performance at the Ritz",
+        "rationale": "The review explicitly evaluates the group's sound and performance by naming it a powerful flamenco-rock/world-beat form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "These, blended with the strong footwork and lyrical voice of La Conja, the emotive cante of Fernando de Triana, and the excellent food and decor at Maximiliano made for an exceptional evening",
+        "target": "Maximiliano flamenco evening",
+        "rationale": "The passage applies aesthetic criteria such as footwork, voice, and emotive cante to explain the event's quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The audience echoes handclaps, but the passage does not clearly contrast participatory flamenco with spectatorship or make the setting a source of authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The references to gypsy clan, languages, and cosmopolitan lifestyle frame identity descriptively, but do not clearly make identity authorize belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Gipsy Kings performance and Maximiliano flamenco evening",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible review excerpts."
+  },
+  {
+    "article_id": "JALEO_1990_04::A22",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The extraordinary dancer performed the homenaje to the great Argentina... Jorge excelled in the performance of Romeras and a Farruca... Wila gave an exquisite performance \"por Solea\"",
+        "target": "New York Spanish/flamenco dance performances",
+        "rationale": "The report makes explicit quality judgments about dancers and performances through praise such as extraordinary, excelled, and exquisite."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the homenaje to the great Argentina on the 50th anniversary of her death",
+        "target": "Argentina / La Argentina as a canonical dance figure",
+        "rationale": "The homage and epithet 'great' place Argentina in a canon of exemplary Spanish dance figures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "The art of flamenco has evolved over the centuries from the fusion of music from ancient and different oriental and occidental cultures.",
+        "target": "flamenco fusion",
+        "rationale": "The program note authorizes fusion by rooting it in flamenco's long historical evolution and earlier intercultural sources."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duende appears in a program title, but the visible text does not use it as an aesthetic criterion to judge quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pure flamenco with jazz' contrasts categories, but it does not clearly exclude or devalue impure/improper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Spanish dance performers and flamenco fusion",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are limited to visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "JALEO_1990_04::A23",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "It was nice to see everyone helping each other to understand and improve on compás, coplas, dance steps, etc.",
+        "target": "Los Angeles juerga participants",
+        "rationale": "The passage frames flamenco knowledge as transmitted socially through embodied, oral, and practical mutual learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The chemistry was about as near to perfect as you can get with a crowd of 50 or so aficionados. The participation was near 100%.",
+        "target": "memorial juerga for Gene Foster",
+        "rationale": "The value of the event is tied to intimate, participatory co-presence rather than passive spectatorship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Gene, a dear friend and aficionado... I have never met anyone who loved flamenco more than Gene. He never tired of discussing it or experiencing it.",
+        "target": "Gene Foster and the Los Angeles flamenco community",
+        "rationale": "The memorial grounds flamenco value in aficionado belonging, friendship, discussion, and shared community experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Video/audio taping 'for posterity' suggests memory preservation, but it is personal event documentation without clear public heritage framing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are brief quality judgments such as 'Beautiful cante,' but they are secondary to the stronger community and transmission discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Los Angeles juerga community and memorial practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full visible text supports community participation and embodied transmission codes."
+  },
+  {
+    "article_id": "JALEO_1991_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "There are a few instructional videos out there. We have one source in this issue, and we hope to hear from other professionals who have developed instructional videos.",
+        "target": "flamenco instructional video access through Jaleo",
+        "rationale": "The passage frames the magazine as mediating access to instructional flamenco knowledge through videos and professional sources."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "You must be a fair to decent writer... you should have a good knowledge of the arts of Spain, especially flamenco; preferably you have visited Spain several times and perhaps speak the language.",
+        "target": "Jaleo correspondents",
+        "rationale": "The editor defines standards of expertise and independence for those authorized to report on flamenco events and news."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial videos are mentioned as distribution information, not as a critique of commercialized flamenco or authenticity loss."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'few good men and women' is generic recruitment language and does not frame flamenco authority through gender identity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Jaleo as mediator of flamenco knowledge and qualified reporting",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Administrative text, but the instructional-video and correspondent-qualification sections contain clear mediation/authority discourse."
+  },
+  {
+    "article_id": "JALEO_1991_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "we are dedicated to preserving and improving the magazine which brought flamenco to your doorstep for twelve years",
+        "target": "Jaleo Magazine",
+        "rationale": "The editor frames the magazine as an infrastructure for sustaining and transmitting flamenco culture over time."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "As small as the circulation is, it's international. At the date of this issue, we have \"family\" in three countries",
+        "target": "Jaleo readership and flamenco network",
+        "rationale": "The passage constructs Jaleo readers as a transnational flamenco community whose belonging sustains the magazine."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "You will enjoy the Jaleo \"Workshop\" on dance, guitar, and singing with information coming from the most authoritative sources I can solicit... I need questions from readers who want to learn.",
+        "target": "Jaleo Workshop",
+        "rationale": "The magazine is positioned as a mediated learning space giving readers access to authoritative flamenco knowledge across dance, guitar, and singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The workshop invokes authoritative sources, but the stronger function is institutional/transnational access to learning through the magazine rather than a specific teacher-student authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Later event notices use praise such as 'fine flamenco entertainment,' but these are routine listings and not central critical assessment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Jaleo Magazine as a flamenco community and knowledge mediator",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article includes both editorial discourse and routine event notices; codes are assigned only to the editorial sections with clear discourse function."
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "article_id": "JALEO_1984_01::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Adriano is a very good entertainer and had known Carmen Amaya. These artists presented a full and good show.",
+        "target": "Adriano de Alessandro and the Costa Brava tablao show",
+        "rationale": "The passage explicitly evaluates the performer and the show with qualitative praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "guitarist Pedro Cotres Jr., one of the best modern style players",
+        "target": "Pedro Cotres Jr.",
+        "rationale": "The phrase places the guitarist within a value hierarchy by ranking him among the best modern style players."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Tablao and restaurant settings are described, but the text does not contrast public/private or participant/spectator relations as a value claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Historical restaurant/family ownership details are present, but they do not authorize flamenco value through tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Miami/Florida/New York flamenco performers and venues, especially Pedro Cotres Jr. and Adriano de Alessandro",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Evaluative language is present, but most of the article is a descriptive venue and artist report."
+  },
+  {
+    "article_id": "JALEO_1984_01::A20",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The juerga got under way with a sevillanas workshop headed by Rudy Montoya. We passed out sheets containing the words and had a lot of participation.",
+        "target": "December juerga sevillanas workshop",
+        "rationale": "The passage frames access to flamenco-related knowledge through a workshop and distributed lyric sheets in a participatory learning setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "We passed out sheets containing the words and had a lot of participation... Guitarists participating were Benjamin Shearer, Roy Mendez Lopez, David De Alva, Dennis Hannon, Ron Spatz, and Yvetta Williams.",
+        "target": "Los Angeles juerga participants",
+        "rationale": "The notice emphasizes shared participation in the juerga rather than detached spectatorship, making the setting socially meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'added greatly to the ambient' and 'considerable talents' are mild praise, but they are too generic for a strong critical evaluation code."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Rudy Montoya heads the workshop, but the text does not present him as an authoritative teacher or knowledge-holder."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Los Angeles juerga as participatory learning and community practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The belly dance instructional advertisement is not coded because it is not flamenco discourse."
+  },
+  {
+    "article_id": "JALEO_1984_01::A21",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The opening of the Tablao represents the realization of a long time dream and much hard work on the part of the Ballardo family. Francisco Ballardo, who has been an active member of Jaleistas (including serving as vice president) designed and built the restaurant",
+        "target": "Ballardo family and Jaleistas community around the new tablao",
+        "rationale": "The article grounds the new tablao in family labor and Jaleistas community standing, presenting community actors as sustaining flamenco infrastructure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "From the performers point of view this is a very nice arrangement because it keeps traffic in front of the stage to a minimum during performances",
+        "target": "Tablao Flamenco stage and restaurant arrangement",
+        "rationale": "The passage evaluates the venue design from the performers' perspective as beneficial to performance conditions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text describes stage visibility and restaurant layout, but it does not make a clear public/private or participation/spectatorship value contrast."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "A class advertisement appears at the end, but it is a routine listing with no meaningful discussion of learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego Tablao Flamenco and the Ballardo family's role in it",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is largely descriptive; codes are limited to community grounding and one explicit venue evaluation."
+  },
+  {
+    "article_id": "JALEO_1984_01::A22",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "A seminar is mentioned, but only as a scheduled event listing with no discussion of learning access or transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article lists concerts and performers but does not evaluate their quality or significance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This is a neutral event notice column."
+  },
+  {
+    "article_id": "JALEO_1984_01::A23",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "The choreographers will be evaluated by a panel of five prestigious judges (critics/dancers) headed by La Meri.",
+        "target": "ethnic dance choreographers in the Ruth St. Denis Award competition",
+        "rationale": "The passage explicitly grants evaluative authority to a prestigious panel of critics and dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The emphasis of the scoring will be on originality of concepts and its realization.",
+        "target": "competition choreography scoring",
+        "rationale": "The passage names originality and realization as aesthetic criteria for judging the choreographic work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Cash prizes will be awarded at a reception in the Fall to the first, second and third place winners.",
+        "target": "competition entrants",
+        "rationale": "The competition produces an explicit hierarchy of first, second, and third place winners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The awards encourage departure from traditional presentations, but tradition is not used to authorize flamenco or proper performance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "Ethnic dance is discussed broadly, but the passage does not frame it as public heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Ruth St. Denis Award competition and its evaluation of ethnic dance choreography",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although not flamenco-specific, the visible text is a dance-competition notice in the periodical and contains explicit expert evaluation criteria."
+  }
+]

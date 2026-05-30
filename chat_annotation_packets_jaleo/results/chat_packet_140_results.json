@@ -1,0 +1,188 @@
+[
+  {
+    "article_id": "JALEO_1982_04::A18",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text announces a home-based juerga and names participating cuadro members, but it is logistical rather than evaluating private/social participation as a marker of authority or value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Routine bilingual juerga announcement and directions; no clear evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "JALEO_1982_05::A1",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only a very short caption/name listing is visible, insufficient for discourse coding."
+  },
+  {
+    "article_id": "JALEO_1982_05::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This album presents some of Mario's most inspired and energetic playing, and the guitar he uses on it has an unusually beautiful tone and responsiveness.",
+        "target": "Mario Escudero's album/playing",
+        "rationale": "The letter explicitly evaluates the artistic quality of Escudero's playing and guitar sound."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "There is a small group of \"aficionados\" here in Auckland and we would very much like to hear of U.S. flamenco happenings. Several of us have studied flamenco guitar or dance overseas and try to keep the spirit of flamenco alive here.",
+        "target": "Auckland flamenco aficionados",
+        "rationale": "The letter frames a local aficionado group as sustaining flamenco practice and connection across distance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text disputes earlier criticism of Paco de Lucía, but the visible passage mostly reports disagreement and does not clearly exercise expert critical authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The Auckland correspondents mention overseas study, but the passage does not develop learning access or pedagogy as its discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Mario Escudero's playing and the Auckland aficionado community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Several letters are mainly administrative or bibliographic; only the explicit record evaluation and local aficionado-sustaining claim are coded."
+  },
+  {
+    "article_id": "JALEO_1982_05::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Spain is one of the few countries in which the castanets have developed into a high art, a total musical instrument that has literally become part of the dancer's body in musical expression.",
+        "target": "Spanish castanet technique",
+        "rationale": "The article defines castanet value through aesthetic and technical criteria: high art, bodily integration, and musical expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "The castanet should be able to go into any position and maintain its position relative to the hand.",
+        "target": "proper castanet setup and technique",
+        "rationale": "The article gives corrective practical instruction about proper castanet use, positioning the authorial voice as a technical guide."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The passage compares Spanish and regional practices, but identity/geography does not clearly organize belonging or authority beyond technical description."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions historical development, but does not use tradition or continuity to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Spanish castanet playing and proper technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text is partly instructional and partly historical; codes are limited to explicit evaluative criteria and practical correction."
+  },
+  {
+    "article_id": "JALEO_1982_05::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The night of the teachers and academies of dance was anything but a night of maestros.",
+        "target": "the Day of the Dance Teachers performance",
+        "rationale": "The review explicitly judges the quality of the teachers-and-academies program negatively."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Juan Montoya -- what elegance -- El Morito and Carmelilla -- all strength and compás -- dance afterwards. They bring the house down.",
+        "target": "Juan Montoya, El Morito, and Carmelilla's dancing",
+        "rationale": "The review applies aesthetic criteria such as elegance, strength, and compás to evaluate dance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "There were exceptions -- even more worthy on this night -- but only exceptions: The honesty and suffering of Juanito Díaz... the discipline of the children of Gitanillos de Bronce... the quality of the school of Eugenia and José, and the good work of Manolo Marín.",
+        "target": "selected performers and schools within the teachers' night",
+        "rationale": "The reviewer creates a hierarchy by singling out a small set of worthy exceptions from a generally weak field."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers and academies are the subject of the event, but the passage evaluates performances rather than legitimating their pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy identity appears in description of a singer's appearance, but it does not clearly organize authority or belonging in the visible passage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "performers, schools, and dance/cante quality in the reviewed festival items",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible review excerpt is truncated, but enough evidence remains for conservative critical-evaluation coding."
+  }
+]

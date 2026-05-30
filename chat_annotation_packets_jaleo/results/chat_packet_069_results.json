@@ -1,0 +1,249 @@
+[
+  {
+    "article_id": "JALEO_1980_03::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the maestro from \"Los Alcores\", who has recently been named an adopted son of the city of Sevilla",
+        "target": "Antonio Mairena",
+        "rationale": "The passage invokes an official civic recognition that publicly authorizes Mairena's cultural status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Sevilla has been the mother of my art... I already was before, spiritually",
+        "target": "Mairena's flamenco identity and art",
+        "rationale": "Mairena grounds the authority of his art in spiritual rootedness and continuity with Sevilla."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "I used to come to many private gypsy fiestas in Triana. So I was absorbing the essence since I was quite small",
+        "target": "Mairena's flamenco formation",
+        "rationale": "The passage frames flamenco knowledge as absorbed through early embodied participation in private gypsy fiestas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy and Sevillian identity terms appear, but the visible excerpt mainly uses them for origin and formation rather than explicitly defining group authority or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "tradition", "pedagogy"],
+      "target": "Antonio Mairena's artistic authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotation is limited to the visible excerpt and selected window."
+  },
+  {
+    "article_id": "JALEO_1980_03::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Torre is the culmination of the cante in Jerez and that his voice is more important because he is also the epitome of cante flamenco in general",
+        "target": "Manuel Torre",
+        "rationale": "The passage canonizes Torre as the culmination of Jerez cante and the epitome of flamenco song more broadly."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "His voice had such echoes, such jondo properties, such terrifying sound",
+        "target": "Manuel Torre's voice",
+        "rationale": "The passage applies aesthetic criteria of jondo quality, resonance, and terrifying sound to define Torre's artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "This passionate assertion makes us believe that the good \"Jerezano\" and friend Manolo Ríos Ruíz must have excellent recordings in which one could appreciate those qualities, seeing that he himself never heard Manuel in person.",
+        "target": "Manuel Ríos Ruíz's critical claim about Torre",
+        "rationale": "The author evaluates the basis of another critic's authority by questioning how he can judge Torre without having heard him in person."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Manuel Torre and claims about his canonical status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_03::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manuel Torre was a genius of the cante... the best mainstay of the cante gitano",
+        "target": "Manuel Torre",
+        "rationale": "The passage elevates Torre through exemplary status and comparison with Chacón in a flamenco hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "I, for one, always heard Manuel sing masterfully and others did and could say the same with more authority, like the guitarist Manolo de Huelva who heard him so many times",
+        "target": "authoritative judgments of Manuel Torre's singing",
+        "rationale": "The passage explicitly grounds critical authority in first-hand listening and names Manolo de Huelva as a more authoritative witness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "In all these tales there was great exageration and inaccuracy.",
+        "target": "legends and critical narratives about Manuel Torre",
+        "rationale": "The passage directly contests prior characterizations of Torre as exaggerated and inaccurate."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitano identity is central to the comparison, but the passage does not clearly use it to define belonging, representation, or group authority beyond critical classification."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "Manuel Torre's artistic reputation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_03::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "One way of creating new interest in this country is for flamencos to record their own records.",
+        "target": "American flamencos recording their own records",
+        "rationale": "The article frames recording media as a way to broaden access, create interest, and mediate flamenco in the United States."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "If you are not considering making a record it's great fun to make tapes... This will furnish the goal of perfecting your art.",
+        "target": "self-recording as flamenco learning practice",
+        "rationale": "The passage explicitly presents recording and listening back as a tool for improving flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the aficionados, that the artist was out of compás",
+        "target": "recorded flamenco performance",
+        "rationale": "The passage identifies compás as an aesthetic criterion by which aficionados scrutinize recordings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The statement that records freeze flamenco contrasts recording with live spontaneity, but it does not clearly frame recording as an authenticity loss."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article mentions comments, criticisms, and readiness, but most of this is practical advice rather than a direct review of an identifiable flamenco target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "criticism"],
+      "target": "self-recording and recorded flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Repeated PED_03 reflects two distinct functions: public/media access and self-directed learning."
+  },
+  {
+    "article_id": "JALEO_1980_03::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "After learning from records for several years, he discovered that his idol, Mario Escudero, gave lessons in New York.",
+        "target": "Guillermo Salazar's flamenco learning path",
+        "rationale": "The passage frames records and lessons across U.S. locations as access points for flamenco learning."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Before studying with the legendary Escudero, he had his first few lessons with Ramón de Algeciras",
+        "target": "Mario Escudero and Ramón de Algeciras as teachers",
+        "rationale": "Recognized guitarists are positioned as authoritative teachers who legitimate Salazar's flamenco training."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "The two would spend hours each day exchanging falsetas and flamenco stories.",
+        "target": "Salazar and Manolo Vázquez's informal exchange",
+        "rationale": "The passage describes flamenco knowledge moving through informal embodied/social exchange rather than formal instruction."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "he went to Spain, where anyone serious about flamenco eventually ends up",
+        "target": "Spain as a necessary site of serious flamenco formation",
+        "rationale": "The passage grounds serious flamenco knowledge in geographic rootedness and travel to Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Escudero is called legendary, but the main function of the passage is pedagogical lineage rather than canon formation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga room and parties suggest participatory community, but the excerpt uses them mainly as biography and learning context rather than explicit public/private value contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "tradition"],
+      "target": "Guillermo Salazar's flamenco formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "article_id": "JALEO_1981_05::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The shows were flawlessly executed. Paco Sevilla's solo peteneras was particularly impressive, as was his accompaniment of Pilar's moving tientos.",
+        "target": "Mosaico Flamenco performance and individual artists",
+        "rationale": "The review explicitly evaluates the quality of the show and performers through praise of execution, impressiveness, and emotional effect."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Deanna is an artist who has evolved considerably. Her style combines solid technique with a lot of feeling",
+        "target": "Deanna's dancing",
+        "rationale": "Technique and feeling are applied as aesthetic criteria for judging flamenco dance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Paco Sevilla is a highly developed artist who has put together a show of superb professional quality. In a style somewhat reminiscent of Paco Peña's",
+        "target": "Paco Sevilla",
+        "rationale": "The passage elevates Sevilla's status and compares him to an established model, creating a value-bearing hierarchy of professional artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The desire for a small, intimate flamenco place and ambiente is suggestive, but the passage does not clearly link intimacy to authenticity or proper flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The restaurant settings and audience relation are described, but the text does not clearly contrast participatory/private flamenco with spectatorial/public flamenco as a value boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mosaico Flamenco, Paco Sevilla, Pilar Moreno, and Deanna",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "If there wasn't something happening upstairs, it was happening downstairs, but it was definitely happening all night and what a great night it was!",
+        "target": "March juerga",
+        "rationale": "The event is valued as an all-night participatory social setting rather than a detached performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "everyone collaborated. It was a treat for everyone.",
+        "target": "Jaleo juerga community",
+        "rationale": "The passage grounds the event's value in collective participation and community collaboration among recognized local and guest performers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I think that it was the best fiesta (it definitely was not a juerga) that we've had in a couple of years.",
+        "target": "March gathering at Tony and Alba Pickslay's home",
+        "rationale": "Paco Sevilla explicitly evaluates the gathering and distinguishes its quality and character."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "The ambiente was full of duende.",
+        "target": "The fiesta/juerga atmosphere",
+        "rationale": "Duende is used as an aesthetic criterion to assess the affective quality of the event."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "we had an incredible guitarist who was reduced to pounding out barely audible accompaniment and a cantaora capable of singing cante jondo who was limited to singing sevillanas, fandangos, tangos and alegrias.",
+        "target": "Noise and repertoire limits at the fiesta",
+        "rationale": "A knowledgeable participant criticizes the conditions for reducing serious artistic capacities and implicitly polices standards of proper listening and performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The home juerga and ambience suggest intimate authenticity, but the strongest visible function is community participation and critique rather than authenticity claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "There are implicit participant boundaries, but no clear insider/outsider contrast is drawn."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the March fiesta/juerga and its participating artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article includes both strong praise for participatory community energy and criticism that crowd noise limited serious artistic listening."
+  },
+  {
+    "article_id": "JALEO_1981_05::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "for those of you who have been reading the \"Archive series in Jaleo we will be playing tapes of the singers written up the last two months",
+        "target": "Jaleo readers and May juerga participants",
+        "rationale": "The juerga is framed as a mediated learning/access setting where archival writing and tapes introduce participants to named flamenco singers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Two week tour through the cradle of flamenco, September 5th to the 20th.",
+        "target": "Flamencada tour",
+        "rationale": "The phrase grounds flamenco value and access in travel to its origin or root region."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The juerga is a member/community event, but the visible text is mostly logistical and does not clearly authorize community knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Archive tapes and singer write-ups suggest preservation, but the passage lacks public heritage or safeguarding framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "May juerga listening program and Flamencada tour",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_05::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "TEMPLE(el) - the singer's salida or warm-up. TERCIO (EL) - a single line or phrase of song",
+        "target": "Directory of flamenco terminology",
+        "rationale": "The glossary mediates access to flamenco knowledge for readers by defining specialized terms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "\"voz bonita\" is a negative term among flamen-cos and refers to the very sweet, opera-tive type voices more common among the popular pseudo-flamenco singers in Spain.",
+        "target": "sweet operatic voices and popular pseudo-flamenco singers",
+        "rationale": "The definition draws a boundary between valued flamenco voice quality and devalued pseudo-flamenco vocal style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "\"voz rajá\" is the very hoarse and rough voice common to gypsy cantaores and considered ideal for the cante jondo",
+        "target": "voice quality in cante jondo",
+        "rationale": "Voice quality is presented as an aesthetic criterion for judging suitability to cante jondo."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "\"voz rajá\" is the very hoarse and rough voice common to gypsy cantaores and considered ideal for the cante jondo",
+        "target": "gypsy cantaores and cante jondo",
+        "rationale": "The passage links an ideal flamenco vocal quality to an identity group, making identity part of the evaluative framing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Several terms reference old quarters and past clothing, but these are mostly definitional rather than tradition being used to authorize present flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The directory teaches terminology, but no particular teacher, master, or school is positioned as pedagogically authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco terminology and vocal quality distinctions",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_06::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Miss Torea offered the expert explanation: \"There are two kinds of hand claps in flamenco dance.\"",
+        "target": "Lydia Torea",
+        "rationale": "Torea is explicitly positioned as an expert who teaches and explains flamenco technique."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The Lydia Torea Dance Conservatory has the traditional equipment of a ballet studio: wooden floors, barres and a mirrored wall.",
+        "target": "Lydia Torea Dance Conservatory",
+        "rationale": "The passage frames flamenco learning through a formal conservatory/studio setting and relates flamenco training to institutional dance pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "We studied in Spain at a time when that country was in its heydey of great teachers. We have maintained those standards.",
+        "target": "American-born Spanish/flamenco dance teachers including Lydia Torea",
+        "rationale": "The claim legitimates present teaching through continuity with Spanish training and standards inherited from great teachers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Maria Alba, Roberto Amaral, Maria Benítez, Felipe de la Rosa, Roberto Lorca, Teodoro Morca, Manolo Rivera, to mention a few. All of these are American-born.",
+        "target": "American-born Spanish dance artists and teachers",
+        "rationale": "The list invokes recognized exemplary figures to construct a status group and authorize American-born performers within a broader canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The evidence window was retrieved for closeness, but the visible passage does not frame intimacy or anti-commercial setting as authenticating flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "American-born identity is meaningful in the passage, but it mainly supports pedagogy and canon/status rather than identity-based belonging or community representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Lydia Torea and American-born Spanish dance teachers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning and ending provide enough evidence for these codes; annotations are limited to visible text."
+  }
+]

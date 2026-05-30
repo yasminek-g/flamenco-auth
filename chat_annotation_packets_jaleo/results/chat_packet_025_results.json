@@ -1,0 +1,222 @@
+[
+  {
+    "article_id": "JALEO_1978_07::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The artistry and genius of Carlos Montoya have established him as without a rival in the world today and as probably the greatest of all gypsy guitarists of all time.",
+        "target": "Carlos Montoya as flamenco guitarist",
+        "rationale": "The passage canonizes Montoya through superlative ranking and claims of unrivaled status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Montoya showed himself to be a first-rate instrumentalist with a fiery musical temperament and a repertory of rare selections.",
+        "target": "Montoya's concert performance and musicianship",
+        "rationale": "The quoted review explicitly praises Montoya's instrumental quality, temperament, and repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "San Diego Union's music critic, Donald Dierks -- known to be normally tough on guitarists",
+        "target": "Critical praise of Montoya",
+        "rationale": "The passage invokes named newspaper critics and their reviewing authority to authorize judgments of Montoya."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Carlos Montoya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Montoya's early recordings reveal an interesting component of Gypsy-style, non-virtuoso flamenco; this was gradually replaced by a bag of crowd-pleasing tricks",
+        "target": "Carlos Montoya's later playing",
+        "rationale": "The passage evaluates Montoya's playing negatively as displaced by crowd-pleasing tricks."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Here's something Brook Zern writes in Guitar Review... And from Lives and Legends of Flamenco by D.E.Pohren",
+        "target": "Critical perspective on Montoya",
+        "rationale": "The article authorizes its judgment by quoting recognized critical and flamencological sources."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "It's not to take anything away from those who wish Montoya would preserve a purer flamenco style.",
+        "target": "Montoya's flamenco style",
+        "rationale": "The passage acknowledges a purity-based boundary by referring to a desired purer flamenco style, even while complicating its authority."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Carlos Montoya's flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Montoya's playing is colorless, choppy, repetitious, boring, and sloppy. Everything sounds the same. There is nothing musical about it.",
+        "target": "Carlos Montoya's playing",
+        "rationale": "The passage gives an explicit negative assessment of Montoya's musical quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he is one of the worst; in fact, only Manitas de Plata is worse. The contrast between Montoya's playing and that of Sabicas, Carlos Ramos, Diego del Gastor, Niño Ricardo, Mario Escudero, or Paco de Lucía, is stark.",
+        "target": "Montoya in relation to other flamenco guitarists",
+        "rationale": "The passage ranks Montoya near the bottom and constructs a hierarchy against named exemplary guitarists."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Yet those who know flamenco have no interest in seeing or hearing Montoya.",
+        "target": "Knowledgeable flamenco insiders versus mass audiences",
+        "rationale": "The passage draws an epistemic boundary between those who know flamenco and audiences persuaded by popularity or promotion."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article uses insider critical authority, but this overlaps strongly with the emitted COMM_01 and CRIT_01 evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Carlos Montoya's flamenco reputation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Ramón Montoya, patriarch of the Montoya family and one of the important developers of the modern school of flamenco guitar playing",
+        "target": "Ramón Montoya and the modern school of flamenco guitar",
+        "rationale": "The passage canonizes Ramón Montoya as a patriarch and key developer of a major guitar school."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Ramón's playing was instrumental in the development of such guitarists as Luis Maravilla, Sabicas, and Mario Escudero",
+        "target": "Transmission from Ramón Montoya's playing to later guitarists",
+        "rationale": "The passage frames flamenco guitar knowledge as transmitted through influence across a lineage of players."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "one can still recognize that he singlehandedly made the flamenco guitar a household word around the world and created an audience for the rest of us.",
+        "target": "Carlos Montoya's public impact",
+        "rationale": "The passage evaluates Montoya's significance by crediting him with creating a broad audience for flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Pepe el Barbero is named as a formal teacher, but the visible passage treats this mainly as biography rather than pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Montoya family guitar lineage and Carlos Montoya's impact",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt provides sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1978_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Carmen Mora, flamenco star of the Ballet Nacional Festivales de España... studied with many of Spain's great teachers... was principal dancer... and was featured as an attraction at the famed tablao, Café de Chinitas.",
+        "target": "Carmen Mora's flamenco status",
+        "rationale": "The passage legitimates Mora through star status, elite teachers, principal-dancer rank, and association with a famed tablao."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions that Mora studied with great teachers and is teaching, but it does not clearly frame her as pedagogically authoritative beyond biographical credentials."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Carmen Mora",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

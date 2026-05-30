@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "JALEO_1979_05::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "TERE MAYA is deserving of the place you have given her in Jaleo",
+        "target": "Tere Maya's recognition in Jaleo",
+        "rationale": "The letter explicitly evaluates Tere Maya as worthy of recognition and publication space."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "EL NINO MARCHENA, JESUS PEROSAN, the guitarist ESTEBAN DE SANLUCAR, CARMEN AMAYA, and all of the great stars of the art of flamenco",
+        "target": "named flamenco artists and Tere Maya's professional milieu",
+        "rationale": "The passage invokes a hierarchy of 'great stars' to place Tere Maya within a recognized flamenco canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The letter mentions artists and aficionados, but it does not clearly grant them community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Tere Maya and her place among recognized flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Manolito's singing was, to me, truly incredible.",
+        "target": "Manolito el de la Maria's singing",
+        "rationale": "The author directly praises Manolito's singing as exceptional."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "I was entranced not only by the beauty of his song, MANOLITO EL DE LA MARIA PHOTO BY C. WHITNEY by his control, his total domination of it",
+        "target": "Manolito el de la Maria's cante",
+        "rationale": "The passage evaluates his cante through aesthetic criteria of beauty, control, and command."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "to have taken some (very) informal lessons with him--and chatted with him over many a glass of wine",
+        "target": "informal learning from Manolito el de la Maria",
+        "rationale": "The author frames flamenco knowledge as gained through informal, socially embedded lessons and conversation with a singer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga setting and refusal to interrupt with a tape recorder suggest participatory norms, but the excerpt does not explicitly contrast that setting with public or spectatorial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Manolito el de la Maria's singing and informal transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1979_05::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Coming up (*later*): the promised examples, with some analysis, a beat sheet with accompaniment patterns for guitarists, and more detail on how styles are distinguished.",
+        "target": "Jaleo readers learning soleares and accompaniment",
+        "rationale": "The column explicitly mediates flamenco knowledge through published examples, analysis, beat sheets, and style distinctions."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "If what I write here is to be of any real use, cross-reference is important.",
+        "target": "the author's instructional column",
+        "rationale": "The author positions the column as a structured pedagogical resource for learning flamenco material."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Manolito was employing something like a vibrato, to give his sound a color--and his control over his voice",
+        "target": "Manolito el de la Maria's vocal technique",
+        "rationale": "The passage identifies vibrato, tonal color, and vocal control as criteria for understanding the quality of the cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The mention of the great singer Joaquin el de la Paula is canonical language, but it is too brief and incidental in the visible excerpt to justify a separate hierarchy code."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The excerpt uses published sources and biographies, but it does not frame them as institutional heritage authority or official recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "soleares learning and Manolito's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1979_05::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Adon's Puertas, one of the greatest guitarists in the world, nearly stole the show with his gorgeous interpretations",
+        "target": "Adonis Puertas's guitar performance",
+        "rationale": "The review explicitly praises the guitarist's performance and impact on the show."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "one of the greatest guitarists in the world",
+        "target": "Adonis Puertas",
+        "rationale": "The passage ranks Puertas at a world-class level, constructing a clear hierarchy of status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "they proved the point emphatically by their fine ballet technique and their lovely interpretation of the classical Spanish dance",
+        "target": "the dancers' classical Spanish dance performance",
+        "rationale": "The review applies aesthetic criteria of technique and interpretation to judge the dance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Roberto Cartagena Dance Company and featured performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "the brilliant fountain of 'bad flamenco'",
+        "target": "theatrical flamenco associated with Chacon",
+        "rationale": "The phrase draws a boundary between valued flamenco and a degraded form labeled 'bad flamenco.'"
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "two well defined epochs of flamenco: the classical or Golden Age, and the theatrical",
+        "target": "flamenco historical periods and Chacon's position between them",
+        "rationale": "The passage constructs a historical hierarchy and canon by contrasting a Golden Age with a theatrical period."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "the illustrious French flamencologist, Hilaire, has called him the brilliant fountain of 'bad flamenco'",
+        "target": "Hilaire's judgment of Chacon's role in flamenco history",
+        "rationale": "A named flamencologist is invoked as an expert authority to police a boundary around bad or corrupted flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Then Marchena would close the cycle, taking flamenco to a total vulgarization with the opera flamenca.",
+        "target": "Marchena and opera flamenca",
+        "rationale": "The passage explicitly criticizes opera flamenca as a total vulgarization of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to three payos leading decisive operations is identity framing, but the visible excerpt leaves the authority/belonging implication as a question rather than a clear claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article contrasts historical epochs, but the visible excerpt does not clearly use roots or continuity to authorize present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Chacon, theatrical flamenco, and opera flamenca",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted boundary and critical authority codes."
+  }
+]

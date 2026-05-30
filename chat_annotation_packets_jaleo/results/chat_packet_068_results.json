@@ -1,0 +1,270 @@
+[
+  {
+    "article_id": "JALEO_1980_03::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "She is a beautiful artist, not only of flamenco, but of dance, period!",
+        "target": "Juana De Alva as a flamenco and dance artist",
+        "rationale": "The letter explicitly praises Juana De Alva's artistic quality and value to flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The best flamenco I have seen was in Sevilla.",
+        "target": "flamenco seen in Sevilla",
+        "rationale": "The writer makes a direct comparative judgment about the quality of flamenco encountered in Sevilla."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The mention that Juana's students will be inspired suggests pedagogical influence, but the passage does not clearly frame her as an authoritative flamenco teacher."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Living with gypsies is identity-related context, but it does not clearly define flamenco belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Juana De Alva and Sevilla flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The letters contain praise and comparison, but most biographical and travel details are descriptive rather than discourse-coded."
+  },
+  {
+    "article_id": "JALEO_1980_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he set himself up as the most complete and masterful cantaor of his time, dominator of all existing styles",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through superlative ranking and mastery over all styles."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "many of them saved from extinction by his brilliant and intelligent re-creations",
+        "target": "cantes and flamenco styles associated with Antonio Mairena",
+        "rationale": "The passage grounds Mairena's value in preservation, continuity, and recovery of styles from the past."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "the hope that a new era will arise, an era of authenticity, purity, absence of the artificial in the presense of only the purely essential",
+        "target": "Mairenismo and the future of cante",
+        "rationale": "The passage draws a purity boundary by opposing authenticity and essence to artificiality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "I consider myself to be the greatest transmitter of all the geniuses, past and present",
+        "target": "Antonio Mairena as transmitter of flamenco knowledge",
+        "rationale": "Mairena is framed as a transmitter linking past and present flamenco geniuses, giving his knowledge lineage authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to gypsy tradition and race shape the rhetoric, but the clearest discourse function is authenticity/tradition rather than identity-based belonging authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text refers to salvation, legacy, and recording for history, but it does not clearly shift into public heritage or safeguarding discourse beyond tradition-continuity claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition", "authenticity", "pedagogy"],
+      "target": "Antonio Mairena and Mairenismo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a dense homage mosaic; codes were limited to the strongest distinct discourse functions."
+  },
+  {
+    "article_id": "JALEO_1980_03::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the deserved homage that this year all the flamenco geography of the world dedicates to a man who has given fifty years of his life to the cante",
+        "target": "Antonio Mairena",
+        "rationale": "The passage evaluates Mairena as deserving global flamenco homage for his life dedicated to cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "he receives daily when he hears in other throats and with other \"ecos\" a great part of his splendid legacy",
+        "target": "Antonio Mairena's legacy in other singers",
+        "rationale": "Mairena's legacy is framed as embodied vocal transmission through other singers' throats and echoes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "returned me anew, in a music that was said to be of the Andalucian people... to the ancestral roots",
+        "target": "Mairena's cante and Andalusian musical roots",
+        "rationale": "The passage authorizes the music through ancestral roots and continuity with an Andalusian people."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'daily teaching' suggests pedagogy, but the passage emphasizes embodied legacy and homage more than a specific teaching authority or method."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text invokes the Andalucian people, but it does not clearly use identity to define belonging or authority within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy", "tradition"],
+      "target": "Antonio Mairena's cante and legacy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is strongly encomiastic, but only the clearest evaluative, transmission, and roots claims were emitted."
+  },
+  {
+    "article_id": "JALEO_1980_03::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "he represents flamenco's greatest living work of art",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena by placing him at the summit of living flamenco artistry."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "to appraise in just measure the so important legacy of our ancestors, selecting and assimilating its artistic richness in order to offer us the full magnitude of this inheritance",
+        "target": "ancestral flamenco legacy as transmitted through Mairena",
+        "rationale": "The passage legitimates Mairena through continuity with ancestral legacy and inherited artistic richness."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Mundo y Formas del Cante Flamenco, a fundamental classic for every student and aficionado of our art",
+        "target": "Mairena and Molina's Mundo y Formas del Cante Flamenco",
+        "rationale": "The work is positioned as an authoritative pedagogical resource for students and aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "with his own interpretation imposing a demanding standard of correctness on the important list of professional interpreters of the cante",
+        "target": "professional interpreters of cante",
+        "rationale": "The passage defines flamenco quality through correctness and Mairena's interpretive standard."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Recovery and restoration of ignored styles implies preservation, but the passage frames this mainly as artistic tradition and canon rather than public heritage safeguarding."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Mairena is strongly legitimated, but there is no explicit claim that his flamenco is genuine or true beyond the stronger tradition-continuity evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition", "pedagogy"],
+      "target": "Antonio Mairena, his works, and his interpretive model",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines canonization, tradition-continuity, pedagogy, and aesthetic standard-setting."
+  },
+  {
+    "article_id": "JALEO_1980_03::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena sets an example for us as a firm and immovable pillar.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage constructs Mairena as an exemplary foundational figure within flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Fixed in his ideas and tireless labor of research, he salvages and often re-creates cantes",
+        "target": "cantes salvaged and re-created by Antonio Mairena",
+        "rationale": "Mairena's authority is grounded in preserving and continuing cante through salvage and re-creation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "molding and enriching our cultural repertoire of flamenco",
+        "target": "the cultural repertoire of flamenco",
+        "rationale": "The passage frames Mairena's work as sustaining and enriching a shared cultural repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The phrase 'por derecho' suggests correctness, but the surrounding passage more clearly supports exemplary canon status and preservation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The piece describes Mairena as a maestro, but it does not clearly frame him as teaching, correcting, or mediating knowledge in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "tradition", "heritage"],
+      "target": "Antonio Mairena and the flamenco repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is a tribute from one master to another; the strongest evidence concerns exemplary status and preservation of repertoire."
+  }
+]

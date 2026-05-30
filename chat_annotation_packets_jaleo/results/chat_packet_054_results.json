@@ -1,0 +1,193 @@
+[
+  {
+    "article_id": "JALEO_1979_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "a crash course in flamenco dance taught by a Hungarian-American in Bellingham, Washington",
+        "target": "Teo Morca's flamenco dance workshop",
+        "rationale": "The passage frames flamenco learning through a workshop setting that gives access to students from varied backgrounds and places."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Teo Morca's workshop was a rich and rewarding experience -- well worth the time and money expended.",
+        "target": "Teo Morca's workshop",
+        "rationale": "The workshop is explicitly evaluated as valuable and rewarding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teo Morca is identified as teaching the workshop, but the visible text does not clearly position him as an authoritative transmitter beyond the workshop format."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Teo Morca's flamenco dance workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Teo Morca's duo is simply one of the most moving moments I have ever experienced in the arts.",
+        "target": "Isabel and Teodoro Morca's dance duo",
+        "rationale": "The reviewer gives explicit praise and assesses the performance as exceptionally moving."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The dance is a masterpiece.",
+        "target": "the Morca couple's dance",
+        "rationale": "Calling the dance a masterpiece elevates it to exemplary artistic status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'pure' appears, but it describes holy beauty in a dance review rather than drawing a purity boundary around proper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review praises style, grace, and spiritual emotion, but it does not clearly define these as flamenco-specific aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Isabel and Teodoro Morca's dance duo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "his own survival depends on survival of Gypsy tradition",
+        "target": "Mairena's dedication to cante and Gypsy tradition",
+        "rationale": "The passage grounds flamenco value and Mairena's artistic life in the continuity and survival of Gypsy tradition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "dedicated his life to the preservation, resurrection, and sometimes artistic elaboration of the cante",
+        "target": "the cante",
+        "rationale": "The passage frames cante as something to be preserved and revived through dedicated cultural work."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Mairena expresses his personal faith---his joy--in his awareness of and love for his Gypsy tradition in all its aspects.",
+        "target": "Mairena's relation to Gypsy tradition",
+        "rationale": "Gypsy identity and tradition organize the account of Mairena's authority, survival, and relation to flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Throughout his career, he has adhered closely to the authentic approach, preferring to draw upon the vast well of traditional flamenco and Spanish dance.",
+        "target": "Ángel's approach to flamenco and Spanish dance",
+        "rationale": "The visible text explicitly presents the artist's approach as authentic and rooted in traditional flamenco sources."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The reviewer says the book is interesting, jolting, beautiful, and deeply impressive, but the stronger discourse function in the visible excerpt is preservation/tradition rather than aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "heritage",
+        "community",
+        "authenticity"
+      ],
+      "target": "Mairena's dedication to cante and Gypsy tradition; Ángel's traditional approach",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is truncated and includes beginning/window/ending context; annotations are limited to the visible excerpts."
+  },
+  {
+    "article_id": "JALEO_1979_10::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "one of Spain's greatest flamenco dancers",
+        "target": "Pastora Imperio",
+        "rationale": "The obituary notice canonizes Pastora Imperio through a superlative ranking among Spanish flamenco dancers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Pastora Imperio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a neutral production and cast listing without clear evaluative, authorizing, pedagogical, heritage, or boundary discourse."
+  }
+]

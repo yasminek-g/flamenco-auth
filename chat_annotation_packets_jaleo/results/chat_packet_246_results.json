@@ -1,0 +1,258 @@
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The cantaor from Arcos de la Frontera interprets tangos very well, does a soleá which \"grabs\", sings the malagueña with feeling, pleases with hsi fandangos",
+        "target": "El Piconero de Arcos's recording and performance",
+        "rationale": "The passage directly evaluates the cantaor's execution across several palos with explicit praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "achieving a very \"jondo\" flamenco sound, while Balao puts music to the trilleras, mala- queñas, and the fandango with a delicate sensibility and exquisite artistic taste",
+        "target": "Carbonero and Balao's guitar accompaniment",
+        "rationale": "The review applies aesthetic criteria such as jondo sound, sensibility, and artistic taste to define the accompaniment's quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "these two great maestros from Jerez have been able to add the musical counterpoint, impeccably done. From their wealth of knowledge as great artists from Jerez",
+        "target": "Carbonero and Balao",
+        "rationale": "The passage elevates the guitarists as maestros and great artists, giving them hierarchical artistic status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The statement that multinational record companies have turned their backs on flamenco criticizes industry neglect, but it does not clearly link commerce to authenticity loss."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as an audience whose interest is redirected, but they are not positioned as authorities who judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Jerez artists and the reviewed recording",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertising copy at the end was not coded."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La Cumbre, meaning the best or \"summit\", is not a company but a group of individuals chosen by the Spanish government to represent the heights of flamenco artistry.",
+        "target": "La Cumbre artists",
+        "rationale": "The passage constructs a hierarchy by presenting the selected artists as the summit or heights of flamenco artistry."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "\"Al son de la bulería\" will be a fiesta flamenco to end all others. It will be genuine to the core",
+        "target": "Al son de la bulería program",
+        "rationale": "The visible text explicitly attributes genuineness to a flamenco program, authorizing it as properly flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "a group of individuals chosen by the Spanish government to represent the heights of flamenco artistry",
+        "target": "La Cumbre's representative status",
+        "rationale": "Official selection by the Spanish government confers authorized public cultural representation on the flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are several evaluative phrases such as exceptional and outstanding, but the stronger function of the excerpt is hierarchical canonization rather than a specific review judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The retrieval hint points to known participants, but the visible text does not grant afición, peñas, families, or local communities authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "heritage",
+        "criticism"
+      ],
+      "target": "The Cumbre Flamenca program and selected artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpts contain enough explicit evaluative and authorizing discourse to code conservatively."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Flamenco specialists consider Mario Maya to be an excellent bailaor, sometimes of great purity, and without a doubt with much power in his dance.",
+        "target": "Mario Maya as a bailaor",
+        "rationale": "The passage reports an explicit evaluative judgment of Maya's dance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "sometimes of great purity, and without a doubt with much power in his dance",
+        "target": "Mario Maya's dance style",
+        "rationale": "Purity and power are used as aesthetic criteria for assessing Maya's flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word purity appears, but it is used as praise for dance quality rather than to draw a boundary against impure or illegitimate flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text mentions creating a wider public and integrating traditional and contemporary dance forms, but it does not frame learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mario Maya's dance and dance-theatre work",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short article, but not insufficient: the opening sentence contains clear critical evaluation."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The dancer affirms that the most important aspect of dancing is feeling, and believes that the choreographer is wrong when he bases his work in the dancers' technique.",
+        "target": "Dance and choreography",
+        "rationale": "The passage defines dance quality through the criterion of feeling over technique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "if feeling is restrained with a magnificent technique, there can be no spontaneity or flexibility in dance",
+        "target": "Technique-dominated choreography",
+        "rationale": "Gades explicitly judges technique-dominated dance as limiting spontaneity and flexibility."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as true to herself and truly concern Carmen's character and personal sincerity, not authenticity of flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text discusses man, woman, wife, and protagonist, but these do not organize flamenco belonging or identity-based authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Feeling-centered dance aesthetics versus technique-centered choreography",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Political references were not coded because they do not function as flamenco discourse in the visible text."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "As a choreographic show [El Amore Brujo] suffers from Saure's lack of cinematic grasp of the dance.",
+        "target": "Saura and Gades's film El Amor Brujo",
+        "rationale": "The review directly criticizes the film's choreographic and cinematic handling of dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Saure does not have the proper sensitivity to approach the complex world of de Falla and flamenco. The weight of theatricality is excessive.",
+        "target": "The film's treatment of de Falla and flamenco",
+        "rationale": "The passage applies aesthetic criteria such as sensitivity, complexity, and restraint against excessive theatricality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The splendid music of de Falla is mixed with gypsy songs of various origins which creates a conflict between two irreconcilable musical worlds.",
+        "target": "The film's hybrid musical construction",
+        "rationale": "The review polices a boundary by criticizing the mixture of de Falla and gypsy songs as an irreconcilable conflict."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The review criticizes hybrid mixtures and cinematic treatment, but it does not clearly define proper flamenco through a genuine/fake or pure/impure boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The comparison with earlier filmed versions implies a broader evaluative hierarchy, but the primary function is criticism of the current film rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "The film El Amor Brujo and its treatment of flamenco/de Falla",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Plot summary and production details were not coded."
+  }
+]

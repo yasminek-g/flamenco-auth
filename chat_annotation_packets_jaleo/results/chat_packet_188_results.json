@@ -1,0 +1,290 @@
+[
+  {
+    "article_id": "JALEO_1984_03::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "During this period, she studied with Mariquita Flores, Carmen Lopez, and Maria Alba. Her first teachers recognized her unusual talent and encouraged her to further her studies in Spain.",
+        "target": "Liliana Lomas's flamenco training",
+        "rationale": "The passage legitimates Lomas through named teachers who recognize her talent and direct her further study in Spain."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "An extremely gifted dancer... Her repertoire is very rich, her dancing superb, and her knowledge of Spanish dance and song extraordinary.",
+        "target": "Liliana Lomas",
+        "rationale": "The text explicitly evaluates Lomas's dancing, repertoire, and knowledge in strongly positive terms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "requirements such as technique, compás, attitude, feeling, sentiment, knowledge of cante and guitar, interplay between artists, and even how to walk onto a stage",
+        "target": "proper flamenco performance",
+        "rationale": "The speaker defines flamenco quality through a set of aesthetic and performative criteria, including compás, technique, feeling, and artist interplay."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "That which cannot be taught must be learned by experience. But no one can ever teach you to feel and project.",
+        "target": "flamenco feeling and projection",
+        "rationale": "The passage frames essential flamenco knowledge as embodied and experiential rather than fully teachable through formal instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Mentions working with 'the best' and names great artists, but this functions mainly as biographical self-positioning rather than a clear canon or ranking claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Liliana Lomas and proper flamenco dance performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_03::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "they are watching the jondo rite being executed in all its original purity... 'Pure flamenco is being lost. It is very difficult now to hear pure flamenco.'",
+        "target": "Tía María La Borrico's family style of cante",
+        "rationale": "The article explicitly frames the performance through original purity and laments the loss of pure flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Tia Maria is perhaps, then, the last link, probably without a further continuation of a flamenco dynasty truly full of glory.",
+        "target": "La Borrico family cante dynasty",
+        "rationale": "The passage grounds value in continuity, lineage, and the possible disappearance of an inherited flamenco tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "you have to like it, to have it inside your body from a family with 'casta', where you parents and grandparents sang and you can bring it out. You inherit it",
+        "target": "flamenco cante knowledge",
+        "rationale": "Flamenco knowledge is framed as embodied, familial, and inherited across generations."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "she would sing with the rajo and duende proper to her race... a family with 'casta' (tradition, purity) in the singers words",
+        "target": "gypsy family identity and flamenco authority",
+        "rationale": "The passage uses ethnic and family identity to explain who embodies and authorizes this form of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The audience is described as knowledgeable gypsies and payos with an eye for quality, but the stronger discourse function is identity framing rather than community authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is evaluative praise of Juana's authentic singing and fresh art, but the main function is authenticity and lineage rather than a developed critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "pedagogy"
+      ],
+      "target": "La Borrico family cante and gypsy familial transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_03::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "flamenco is difficult to imagine without both the gypsies and the 'payos.'",
+        "target": "gypsy and payo participation in flamenco",
+        "rationale": "The text explicitly frames flamenco through identity groups and argues that both groups are constitutive of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Juan Peña 'Lebcijano' had a great night, singing in the styles which he dominates with brilliance",
+        "target": "Juan Peña Lebrijano's performance",
+        "rationale": "The passage offers direct critical praise of the singer's performance and command of styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "This 'cantaor largo' dominates practically all styles with authority and truly impeccable compás",
+        "target": "Fosforito's singing",
+        "rationale": "The review applies aesthetic criteria such as authority, stylistic breadth, and impeccable compás to judge quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the 'maestros' again demonstrated proof of their mastery (of flamenco) and the reason why they are where they are",
+        "target": "the featured flamenco maestros",
+        "rationale": "The text invokes maestro status and mastery to place certain performers in an elevated hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The benefit for social and cultural services suggests public cultural work, but the visible text does not clearly frame flamenco as heritage to be safeguarded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "gypsy/payo participation and major flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_03::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "a flamenco that is ageless, a flamenco that captures the initial language of the cultures that give it birth",
+        "target": "flamenco movement",
+        "rationale": "The passage grounds proper flamenco movement in origins, cultural birth, and continuity with an ageless essence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "flamenco anatomy can be best described, as 'capturing body movement that best reflects this flamenco essence.'",
+        "target": "flamenco dance anatomy",
+        "rationale": "The author defines dance quality through aesthetic bodily criteria that should reflect flamenco essence."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "A flamenco dancer can train in mind and body for that physiologically ideal anatomy that can best represent his or her feelings of the mind and body in its relation to flamenco.",
+        "target": "flamenco dancer training",
+        "rationale": "The passage gives instructional authority about how dancers should train body and mind to represent flamenco feeling."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text mentions male and female body ideals, but this is primarily anatomical/aesthetic instruction rather than identity-based belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco dance movement and dancer training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_03::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "RESERVE YOUR PLACE NOW FOR THIS EXCITING WEEK OF FLAMENCO DANCE INSTRUCTION... BEGINNING AND INTERMEDIATE/ADVANCED LEVELS",
+        "target": "Luisa Triana flamenco dance workshop",
+        "rationale": "The notice frames flamenco learning through a structured workshop with differentiated access levels."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Dedicated to conserving the pure artistry of flamenco, Mr. Peña established the seminar 'Encuentro Flamenco' offering the aficionado an intensive program of study as well as the opportunity to live in Andalucía, the heart of this musical culture.",
+        "target": "Paco Peña's Encuentro Flamenco seminar",
+        "rationale": "The advertisement links flamenco value to conserving pure artistry and studying in Andalucía as the cultural heart of the music."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Mr. Peña established the seminar 'Encuentro Flamenco' offering the aficionado an intensive program of study",
+        "target": "Paco Peña's pedagogical seminar",
+        "rationale": "Paco Peña is positioned as an authoritative organizer of intensive flamenco study for aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'one of the jewels' and 'world renowned' are promotional and do not provide enough independent critical hierarchy to code canon formation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pure artistry' appears, but it does not clearly draw an explicit boundary against impure or improper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "flamenco workshops and Paco Peña's study seminar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Large decorative/OCR-noise section ignored; only readable article and advertisement text was annotated."
+  }
+]

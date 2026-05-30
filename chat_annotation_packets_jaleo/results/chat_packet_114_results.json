@@ -1,0 +1,185 @@
+[
+  {
+    "article_id": "JALEO_1981_08::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "In all of the years that I have taught flamenco, I have tried to infuse this idea of total musicality and sensitivity to flamenco as a whole to all of my students.",
+        "target": "flamenco dance students",
+        "rationale": "The speaker presents herself as a teacher transmitting a specific understanding of flamenco musicality and sensitivity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "stop counting and get beyond counting every beat of the compás and really start to trust their feelings about the total music, letting that pulse become part of them",
+        "target": "embodied learning of compás and musicality",
+        "rationale": "The passage frames flamenco learning as embodied internalization of pulse, feeling, listening, walking, and movement rather than mechanical counting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Compás must not become a crutch, but must be trusted. Compás must be \"released\" and total musicality must be developed",
+        "target": "flamenco dance quality",
+        "rationale": "The article defines good flamenco dance through aesthetic criteria including compás, musicality, sensitivity, spontaneity, fluidity, and becoming one with the music."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage refers to a deeper understanding of what flamenco is about, but it does not explicitly make a genuineness or proper-flamenco authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article criticizes over-counting dancers, but the stronger and more specific discourse is aesthetic criteria for dance quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "embodied flamenco dance musicality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_08::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The visible article text evokes Santa Fe flamenco atmosphere, but it does not include a clear evaluative judgment beyond descriptive scene-setting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Pedro Cortés is said to come from a family of flamenco guitarists, but the passage does not describe lineage transmission or learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is brief scene-setting and personnel update; title was not used as evidence."
+  },
+  {
+    "article_id": "JALEO_1981_08::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The tientos were obviously derived from slow tangos... \"When Mochuelo recorded it, they put on the record the name \"tientos\" and that is the way it has remained.\"",
+        "target": "origin and continuity of tientos",
+        "rationale": "The article grounds the form's present name and identity in an origin account and continuity from slow tangos and early recordings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The most absurd is that the word means \"prelude\"... Pepe de la Matrona's version at least makes sense",
+        "target": "competing explanations of the word tientos",
+        "rationale": "The author rejects one explanation and privileges Pepe de la Matrona's account as the more credible interpretive authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article explains the origin of a term to readers, but it is not primarily about access to learning across institutions or boundaries."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'most absurd' is evaluative, but the evaluation concerns explanations of a term and is better captured by expert/critical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "the origin explanation of tientos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_08::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The questionnaire asks participants to report involvement and activities, but it does not clearly construct community authority, belonging, or recognition."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The request could support directory/archive building, but there is no explicit safeguarding, memory, or public heritage frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative questionnaire notice; no clear discourse code."
+  },
+  {
+    "article_id": "JALEO_1981_08::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Antonio Mairena and Melchor de Marchena are major names, but the visible text only reports deaths and does not rank, evaluate, or canonize them."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The notice could become memorial discourse in a fuller article, but this visible text is too short and only states that they died."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Text is only a one-sentence death notice, too short for reliable discourse coding."
+  }
+]

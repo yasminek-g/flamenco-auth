@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "JALEO_1979_08::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca de Huelva is mentioned only as an event sponsor, without community authority, recognition, or belonging discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short event notice with no clear evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1979_08::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Julian Pemartín (4) states that the bandalás are a true \"flamenco\" fandango with a more extensive melod",
+        "target": "bandolás as flamenco fandangos",
+        "rationale": "The quoted source attributes genuine flamenco status to the bandolás, making an authenticity/properness claim about the form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the fandangos de Málaga, like those of Huelva, are open to a more free interpretation. The Malagueñan fandangos are much less flamenco than those of Huelva, and resemble more the folk dances of northern Spain",
+        "target": "fandangos de Málaga",
+        "rationale": "The passage applies aesthetic and classificatory criteria such as structure, freedom of interpretation, and degree of flamenco character to evaluate the forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Molina and Mairena (3) do not even recognize the existence of the cante. F. de la Brecha (2) says that there is no cante called \"bandolá\"",
+        "target": "bandolás as a distinct cante",
+        "rationale": "Named expert sources are invoked to authorize a classificatory dispute over whether the form exists as a distinct cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"traditional steps\" describes sevillanas structure, but tradition is not used strongly enough to authorize a present flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article explains forms, but the visible excerpt does not clearly position the author or a teacher as pedagogically authoritative."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "classification and flamenco status of fandangos de Málaga and bandolás",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible window contains enough classificatory and evaluative discourse for annotation."
+  },
+  {
+    "article_id": "JALEO_1979_08::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The projects of a ballet are enormous, they teach us and give us classes in everything and, on top of that, they pay us... there is the possibility of progressing",
+        "target": "the National Ballet as an institutional learning setting",
+        "rationale": "The Ballet is framed as an institution that provides classes, discipline, security, and artistic progress."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "When I was 17 I received an international prize as the best dancer in the world, the \"Sarah Bernhardt\" prize from the Theatre of Nations.",
+        "target": "El Guito's status as a dancer",
+        "rationale": "The passage establishes a hierarchy and canonical status through an international superlative award."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Flamenco has been lost because of the tablaos... They have completely disfigured flamenco. But of course, the pure flamenco, the true flamenco will never be lost.",
+        "target": "tablao flamenco versus pure/true flamenco",
+        "rationale": "The passage draws a strong boundary between disfigured tablao flamenco and enduring pure/true flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "In the cuadro are those who are pretty, but not good dancers. In the tablaos there is nobody. They have completely disfigured flamenco.",
+        "target": "tablaos and their dancers",
+        "rationale": "The speaker uses criticism to police the boundary between proper flamenco and tablao practice judged as artistically degraded."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The tablao judgment is clearly evaluative, but it is better captured by boundary-policing critique under CRIT_04."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Tablaos are criticized, but the visible passage does not explicitly frame commercialization, tourism, or staged public distance as the authenticity threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "pedagogy", "criticism"],
+      "target": "El Guito, the National Ballet, and tablao flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The interview contains both institutional-pedagogical legitimation of the Ballet and delegitimating critique of tablaos."
+  },
+  {
+    "article_id": "JALEO_1979_08::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I had a problem: I didn't know Spanish. I bought a Spanish-English dictionary... I looked at the dictionary's pronunciation guide",
+        "target": "non-Spanish-speaking learner's access to cante",
+        "rationale": "The passage foregrounds mediated, transnational access to flamenco knowledge through dictionaries, pronunciation guides, and recordings."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Then I played the record over and over and over again, and wrote down what I thought the words sounded like, syllable by syllable.",
+        "target": "learning cante by ear from recordings",
+        "rationale": "Flamenco knowledge is described as acquired through repeated listening, imitation, and bodily/aural reproduction."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "They were recognizing that I understood the cante well enough to reproduce some of its surface musical aspects--and their compliment was genuine... because they too were aficionados.",
+        "target": "aficionados recognizing the narrator's cante understanding",
+        "rationale": "Aficionados are positioned as knowledgeable participants whose recognition validates the narrator's understanding of cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The raw sound of cante and surface musical aspects are described, but they are not used as explicit criteria for judging flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The narrator's outsider status is implied through language and learning barriers, but no clear insider/outsider boundary is drawn."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "self-directed cante learning and aficionado recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article, but the visible beginning and ending provide coherent evidence for mediated learning and community recognition."
+  },
+  {
+    "article_id": "JALEO_1979_08::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "there are many people who love flamenco, want to study... but for one or more reasons, cannot run off to Spain right away. I would like to give a few helpful hints",
+        "target": "students learning flamenco outside Spain",
+        "rationale": "The article explicitly frames access to flamenco knowledge across geographic boundaries and offers guidance for learners outside Spain."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "For the studying dancer, try to find a teacher or teachers that will stress good comprehension of the different compases and their interpretation.",
+        "target": "teachers for flamenco dancers",
+        "rationale": "Teachers are positioned as responsible for transmitting correct comprehension of compás and interpretation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "One of the best ways, of course, is to listen to records and tapes of good singers who sing in compás and have a feeling for singing for dance",
+        "target": "learning dance accompaniment and compás through listening",
+        "rationale": "The passage presents embodied/aural learning through repeated listening to singers and feeling letras and compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"cradles of flamenco in Andalucía\" suggests origins, but the passage mainly uses Spain/Andalucía as a learning environment rather than making a tradition-continuity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "Speaking Spanish is said to make learners taken more seriously, but the passage does not clearly construct an insider/outsider boundary around belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "preparation and study of flamenco outside Spain",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Pedagogical discourse is explicit and central throughout the visible text."
+  }
+]

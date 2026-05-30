@@ -1,0 +1,171 @@
+[
+  {
+    "article_id": "JALEO_1980_11::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "For those who are unfamiliar with this type of event, we include here a brief description.",
+        "target": "readers unfamiliar with Spanish flamenco festivals",
+        "rationale": "The article explicitly mediates access to flamenco knowledge by explaining the format and function of Spanish flamenco festivals for readers who may not know them."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The description of the fin de fiesta and festival setting mentions collective participation, but it is mainly neutral event description rather than an evaluative contrast between participatory and spectatorial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Spanish flamenco festival knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is a factual festival list; only the introductory explanatory framing supports a code."
+  },
+  {
+    "article_id": "JALEO_1980_11::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "our flamenco friends would develop into such a tight little family of ferocious aficionados who live from one juerga to the next",
+        "target": "Ohio flamenco friends and aficionados",
+        "rationale": "The passage frames flamenco belonging through a close-knit aficionado community whose social life is organized around juergas."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "we switch to \"juerga time\" which is really absence of time... rejoin the activity a couple of hours later",
+        "target": "juerga social setting",
+        "rationale": "The article presents the juerga as a participatory social environment with its own temporality and ongoing shared activity rather than as a formal spectator event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The intimate juerga atmosphere could suggest social authenticity, but the text does not explicitly frame intimacy as more authentic than staged or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "Ohio juerga-based flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is affective and communal rather than explicitly evaluative or authenticity-focused."
+  },
+  {
+    "article_id": "JALEO_1980_11::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "JALEO could be performing a much more comprehensive job of seeking out and publishing information on flamenco around the country",
+        "target": "JALEO's national flamenco information network",
+        "rationale": "The passage defines JALEO's role as a mediator of flamenco knowledge by collecting and publishing information across geographic boundaries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The staff, board, correspondents, and local contacts indicate community organization, but the passage emphasizes information-gathering infrastructure more than aficionado authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "JALEO as a flamenco information mediator",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest discourse function is informational mediation rather than community authority."
+  },
+  {
+    "article_id": "JALEO_1980_11::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He doesn't think much of guitarists who are great technicians and create only within traditional structures and patterns",
+        "target": "technically skilled guitarists limited to traditional structures",
+        "rationale": "The passage explicitly evaluates a class of guitarists negatively despite their technical skill."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "for him, the true artist must strike out into new regions and create with brand new concepts",
+        "target": "criteria for true artistry in flamenco guitar",
+        "rationale": "The passage defines artistic value through innovation and conceptual creation rather than technical execution within inherited patterns."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the true artist must strike out into new regions and create with brand new concepts",
+        "target": "true artist versus mere technician",
+        "rationale": "The wording creates a hierarchy that elevates innovative artists above technically strong but traditionally bounded players."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional structures are mentioned, but the passage critiques reliance on them rather than grounding value in tradition or continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Modern chord progressions and creative concepts suggest transformation, but the passage is framed as aesthetic judgment rather than learning or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism"],
+      "target": "innovative flamenco artistry",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The critical discourse comes from the reported view attributed to Mario Maya within the visible article text."
+  },
+  {
+    "article_id": "JALEO_1980_11::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is too short and fragmentary to support a reliable discourse code."
+  }
+]

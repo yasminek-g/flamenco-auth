@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "JALEO_1981_01::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "What we plan to do here is to translate the original, out of print story of how the recordings were made, so that a truly valuable piece of flamenco writing will be made available to a wide audience.",
+        "target": "JALEO's translation and publication of the Archivo text",
+        "rationale": "The passage frames translation and republication as mediation that gives wider audiences access to flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "the only visible possibility for fixing the purity of the older forms, conserving and allowing to become known with a precise historical guarantee, the totality of the greatest examples of cantes that have survived until our time",
+        "target": "recorded archive of cante flamenco",
+        "rationale": "The archive is framed as a safeguarding mechanism that preserves older surviving forms and makes them historically knowable."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "the concrete geographic band that goes from Sevilla to Cadiz and that constitutes, without a doubt, the territorial nucleus where flamenco was formed and developed",
+        "target": "Sevilla-Cádiz native zone of cante",
+        "rationale": "The passage grounds flamenco authority in geographic origin, formation, and rooted continuity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text links professionalism to transformations in the social foundation of cante, but the excerpt does not clearly develop commercialization or public staging as an authenticity threat beyond the broader preservation argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "tradition", "pedagogy"],
+      "target": "the Archivo and its project of preserving and mediating older rooted cante forms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible text supports archive, access, and origin/continuity codes."
+  },
+  {
+    "article_id": "JALEO_1981_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Our \"Archive\" is not intended to be more, nor less, than a basic panorama of the most genuine cantes that have survived to our time, authenticated by tradition and by the reliability of the artists we have chosen.",
+        "target": "the cantes selected for the Archive",
+        "rationale": "The passage explicitly presents the recorded cantes as genuine and authenticated by tradition and reliable artists."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "recordings made in the zone of flamenco's birth and surrounded by the natural climate in which it takes place",
+        "target": "recordings made in flamenco's native setting",
+        "rationale": "The passage authorizes the archive through origin, rooted location, and continuity with the natural setting of practice."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "We wanted to contribute a useful and necessary effort to benefit the popular culture, to create an archive with integrity that would preserve the most authentic expressions of flamenco.",
+        "target": "the Archive as preservation project",
+        "rationale": "The passage frames the archive as a public-cultural preservation effort safeguarding authentic flamenco expressions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Avoiding studio sound and valuing tavern/home/fiesta recordings suggests anti-staged authenticity, but the stronger function is origin-based authenticity and preservation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses authenticity and genuineness language, but it does not sharply exclude a named impure or fake flamenco target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "heritage"],
+      "target": "the Archivo's field recordings and selected traditional cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong authenticity and safeguarding discourse; limited to three codes to avoid redundant overlap."
+  },
+  {
+    "article_id": "JALEO_1981_01::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "It was lost one day some years ago when they wanted to mix, for the sake of an ill-advised commercialism, flamenco and politics.",
+        "target": "the prior handling of the Gazpacho festival",
+        "rationale": "The passage uses critique to police the boundary around the festival, blaming commercialized mixing of flamenco and politics for its disappearance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Like all festivals, there have been good nights and others not so good. Like all of them, there have been moments of Heaven and of Hell. But -- and if it were otherwise, they wouldn't exist -- there were more of the first than the second",
+        "target": "Gazpacho festival history",
+        "rationale": "The passage explicitly evaluates the festival's past quality, judging the good moments to outweigh the bad."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'everything became profoundly gypsy' invokes identity, but it is too brief and poetic to clearly establish identity-based authority or belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The critique of commercialism is clear, but it is framed as critical boundary critique rather than an explicit claim about intimate or anti-commercial authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "the Gazpacho festival's return and prior commercialized misdirection",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Evaluation is present, but the strongest discourse function is critique of commercialized festival politics."
+  },
+  {
+    "article_id": "JALEO_1981_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "WITH HIS USUAL SERIOUSNESS AND STRNGTH, HE HAD MORE QUALITY THAN OTHER TIMES, BUT DID NOT HAVE A TRULY GREAT NIGHT. DIEGO CLAVEL HAD STRENGTH AND DELIVERY; HE FULFILLED HIS OBLIGATIONS COMPLETELY AND HARVESTED DESERVED APPLAUSES.",
+        "target": "Miguel Vargas and Diego Clavel's performances",
+        "rationale": "The passage explicitly evaluates the performers' quality, strength, delivery, and degree of success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Diego gave symphonic lessons in purity, or Fernandillo threw -- my God, with such art! -- his handkerchief on the floor in order to pick it up again, or Mairena who made absolutely clear his quality",
+        "target": "remembered Gazpacho performances",
+        "rationale": "The passage applies aesthetic criteria such as purity, art, and quality to explain the value of past performances."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The word 'purity' appears, but it functions mainly as an aesthetic criterion in a remembered performance rather than as explicit purity boundary-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named figures are admired, but the excerpt does not clearly construct a broader canon or ranking beyond evaluative memory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Gazpacho performers and remembered festival quality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is partly OCR-damaged but still contains clear evaluative captions and criteria."
+  },
+  {
+    "article_id": "JALEO_1981_01::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "These are just a few suggestions to try. I cannot guarantee anything because everyone is different. Find what works for you.",
+        "target": "flamenco guitar right-hand technique learners",
+        "rationale": "The article mediates practical access to flamenco guitar technique through learner-oriented advice and experimentation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "The problem with many flamenco teachers is that they try to make others do it their way. There is no one way that is right!",
+        "target": "flamenco teachers and teaching methods",
+        "rationale": "The passage contests teacher authority by rejecting a single correct pedagogical method for technique."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article criticizes some teachers' rigidity, but the discourse function is pedagogical rather than a flamenco performance or artistic evaluation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technique terms are central, but they are used for instruction and troubleshooting rather than aesthetic evaluation of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["pedagogy"],
+      "target": "flamenco guitar technique pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Practical technical advice clearly supports pedagogy/access; teacher authority is contested rather than simply affirmed."
+  }
+]

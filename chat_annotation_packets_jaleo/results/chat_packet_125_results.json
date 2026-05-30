@@ -1,0 +1,211 @@
+[
+  {
+    "article_id": "JALEO_1981_12::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "I wanted to give it a classical dimension while I kept the feeling and the authenticity as well.",
+        "target": "Paco Peña's flamenco guitar practice",
+        "rationale": "Peña explicitly frames his organized, concert-oriented playing as retaining flamenco feeling and authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "As he himself would admit, with pride, the best place to hear it is in its homeland. Córdoba comes behind Seville and Cádiz as a flamenco centre and yet it is in the very heart of Andalucía.",
+        "target": "true, authentic flamenco in its Andalusian homeland",
+        "rationale": "The passage grounds flamenco value in homeland, origin, and regional centers, using place and rootedness to authorize proper listening."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "He is one of the world's leading flamenco guitarists, a man whose main ambition is to give his art a respectability it has not enjoyed before.",
+        "target": "Paco Peña as a leading flamenco guitarist",
+        "rationale": "The article elevates Peña within a hierarchy of flamenco guitarists and credits him with raising the status of the art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text links poverty and simplicity to flamenco, but does not clearly frame commercial spectacle or intimate co-presence as an authenticity boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The word Peña appears as the artist's surname, not as peña or aficionado community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Paco Peña and true, authentic flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article, but visible text clearly authorizes Peña through authenticity, homeland, and leading-artist status."
+  },
+  {
+    "article_id": "JALEO_1981_12::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "His clean and very flamenco style of playing made him a favorite among aficionados",
+        "target": "Paco Peña's guitar style",
+        "rationale": "The editorial directly evaluates Peña's playing as clean, very flamenco, and admired by aficionados."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "students of dance enjoy Paco Peña because of his crisp compás and sensitive accompaniment.",
+        "target": "Paco Peña's accompaniment and rhythmic style",
+        "rationale": "The passage applies aesthetic criteria such as compás, sensitivity, rhythmic sense, and musicality to explain the value of Peña's playing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "First, he changes and develops the melodies until they become something new; he takes different parts and recombines them to create new progressions that are often superior to the original.",
+        "target": "Paco Peña's transformation of inherited falsetas and models",
+        "rationale": "The passage frames Peña's art as creative transformation of learned material from other guitarists into new and sometimes superior progressions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'very flamenco style' suggests authenticity, but the passage primarily functions as aesthetic evaluation of Peña's playing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article compares Peña to Sabicas, Diego del Gastor, Morao de Jerez, Paco Cepero, and Paco de Lucía, but mainly to describe style rather than build a separate canon hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Paco Peña's guitar playing and creative development of flamenco material",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The editorial strongly legitimates Peña through critical evaluation and through a model of learning by recombination and transformation."
+  },
+  {
+    "article_id": "JALEO_1981_12::A3",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The writer mentions pupils and lessons at Amor de Dios, but does not frame flamenco learning or access as authoritative or contested."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Several famous artists are listed as past partners and friends, but the passage does not rank or canonize them."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Personal letter with biographical reminiscence and appreciation; no clear evaluative, authorizing, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1981_12::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "\"Last night the Queen Elizabeth Hall was full to the brim of young, stalwart, cheering fans of Paco Peña, a guitarist to win fans if ever there was one, and a great artist.\"",
+        "target": "Paco Peña as a great artist",
+        "rationale": "The quoted critic canonizes Peña through public acclaim and the explicit status phrase 'a great artist.'"
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "From my brother Antonio; he had a guitar when I was about seven or eight and I started picking little tunes on his guitar. Hearing him and the radio is what started me. My brother helped me when he saw that I had interest; he showed me lots of things.",
+        "target": "Paco Peña's early guitar learning",
+        "rationale": "Peña describes learning through family, hearing, imitation, and informal showing, making embodied and familial transmission central to his formation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "There are seventy people registered to take part and some of them are repeating courses; all that amounts to about 100 people which is about as much as I want for the moment, because I will be doing it on my own this year.",
+        "target": "Paco Peña's organized flamenco course",
+        "rationale": "The interview discusses a structured course with many applicants, positioning Peña as mediating flamenco learning through an organized educational format."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The family passage grounds Peña in domestic flamenco practice, but its clearest function is transmission and early learning rather than community authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The government folk-art group and Ministry of Culture are mentioned, but the visible passage does not clearly develop official heritage authorization around flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Paco Peña's artistry and role in transmitting flamenco guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although truncated, the visible interview provides clear evidence for canonizing evaluation and both informal and organized learning."
+  },
+  {
+    "article_id": "JALEO_1981_12::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a byline and is too short for judgment."
+  }
+]

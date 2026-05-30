@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "JALEO_1988_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Eight year old Ana Belén and twelve year old Susana Garcia stole the show with their tangos and their personalities... The students had only very minor parts so what they did, they did extremely well... Mari, really impressed.",
+        "target": "Los Flamencos Spanish Dance Group concert performers",
+        "rationale": "The passage explicitly evaluates the performers' success and impact in the concert."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The program notes list teachers and study history, but mostly as biography rather than positioning a teacher or method as authoritative."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The notes mention geographic origins and Arabic influence, but the visible text does not clearly use origins to authorize present flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Los Flamencos Spanish Dance Group concert performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full visible article; emitted only the clear performance-evaluation discourse."
+  },
+  {
+    "article_id": "JALEO_1988_09::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The ambient was not like a professional tablao, but there was a fine feeling of camaraderie and friendship—a condition rare upon meetings of gypsies and payos.",
+        "target": "the Stes Maries de la Mer gypsy festival atmosphere",
+        "rationale": "The passage values a participatory social atmosphere by contrasting it with a professional tablao setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "As payos, we found no antagonism nor attempts to be robbed or cheated... a fine feeling of camaraderie and friendship—a condition rare upon meetings of gypsies and payos.",
+        "target": "gypsy and payo relations at the festival",
+        "rationale": "Identity categories structure the account of belonging, encounter, and unusually positive social relations at the festival."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "In general, we found that the music was mostly amateur, but strong and interesting... The Stes Marie festival is a little known treasure and one that every flamenco lover should attempt to visit.",
+        "target": "music and festival at Stes Maries de la Mer",
+        "rationale": "The passage assesses the musical quality and overall value of the festival."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'less flamenco than the others' imply comparison, but the text does not clearly make a formal authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the Stes Maries de la Mer festival",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Identity framing is coded because gypsy/payo relation shapes the article's account of participation, not merely because the terms appear."
+  },
+  {
+    "article_id": "JALEO_1988_09::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Pilar Lopez's days of jumpy, classical boleros and jotas were over, but her repertoire of theatre and flamenco works fitted her age and feelings and whatever she danced... I felt that she provided a great lesson in great performing.",
+        "target": "Pilar López as an aging performer",
+        "rationale": "The passage explicitly judges Pilar López's artistic success and suitability of repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "She adapted her dancing to herself, her physical self, and expressed her spiritual and sensual artistry... Even if a very young dancer has not yet acquired genius of artistry, great compás, feeling emotion and maturity",
+        "target": "criteria for flamenco dance performance across age",
+        "rationale": "The article defines quality through criteria including adaptation, spiritual and sensual artistry, compás, feeling, emotion, and maturity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "she was \"eternal woman\"... It was because she always expressed the pure feelings and emotions of femininity on stage.",
+        "target": "gendered framing of Pilar López's performance authority",
+        "rationale": "The passage frames dance value through a gendered model of femininity and womanhood."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article contrasts performing art with closed informal juergas and fiestas, but the main discourse in the visible text concerns age and performance criteria rather than participatory setting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Pilar López is said to have trained major male dancers, but the stronger visible discourse is critical evaluation rather than pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "aging flamenco and Spanish dance performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Gendered framing is present as a performance-value model, not merely as demographic description."
+  },
+  {
+    "article_id": "JALEO_1988_09::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Jaleo could benefit by some new readers contributing their ideas in the form of articles or new columns... you could be adding \"your own grain of salt to the dish\" and ensuring the continuing life of Jaleo at the same time.",
+        "target": "Jaleo readers as contributors to the flamenco periodical community",
+        "rationale": "The passage positions reader participation as sustaining the magazine's communal life and discourse."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The column discusses reader-written articles, but it does not clearly frame this as access to flamenco knowledge or institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "reader contribution to Jaleo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The code is based on community participation in a flamenco periodical, not on the gazpacho metaphor itself."
+  },
+  {
+    "article_id": "JALEO_1988_09::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "His column is titled \"Flamenco Maestros\", which reviews the great guitarists who have recorded albums.",
+        "target": "recorded flamenco guitarists",
+        "rationale": "The passage constructs a canon-like category of 'maestros' and 'great guitarists' for review."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Marcos is a good aficionado of flamenco guitar... Marcos has joined another knowledgeable guitarist-writer named Tomás Jiménez... According to the Spanish magazine Sevilla Flamenea... the reviewer says that Mercé supercedes all his previous recordings",
+        "target": "flamenco recording reviewers and guitarist-writers",
+        "rationale": "The passage authorizes recording judgments through knowledgeable aficionados, guitarist-writers, magazines, and reviewers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the reviewer says that Mercé supercedes all his previous recordings... Tina's voice is very reminiscent of Pastora Pavón, La Nifia de los Peines.",
+        "target": "new flamenco recordings by José Mercé and Tina Pavón",
+        "rationale": "The passage reports explicit evaluative judgments and comparisons about recordings and vocal style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionado status is mentioned, but in this article it functions mainly as reviewer/critic authority rather than broader community authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms like 'duende' and 'modern, jazzy' appear in titles or descriptions, but they are not clearly applied as aesthetic criteria in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "flamenco guitarists, reviewers, and new recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The ending is OCR-damaged, but the visible beginning and evidence window provide enough context for the emitted review/canon codes."
+  }
+]

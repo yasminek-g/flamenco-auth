@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "JALEO_1983_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mairena, considered the greatest cantaor of all time",
+        "target": "Antonio Mairena",
+        "rationale": "The obituary canonizes Mairena through a superlative ranking within flamenco history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the creative genius of the most pure cante jondo",
+        "target": "Antonio Mairena's cante",
+        "rationale": "The plaque language explicitly evaluates Mairena's artistry as creative, pure, and exemplary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'most pure cante jondo' invokes purity, but the visible excerpt does not identify an excluded or devalued impure target."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The bust, plaque, and town hall setting suggest public commemoration, but the visible text does not clearly frame this as authorized heritage recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Antonio Mairena",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated excerpt; annotations use only visible obituary and closing text."
+  },
+  {
+    "article_id": "JALEO_1983_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "they continue the flamenco tradition of Mercedes' mother, La Quica",
+        "target": "Mercedes and Albano's studio practice",
+        "rationale": "The studio's value is grounded in continuity with La Quica's flamenco tradition."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "My father was also a great teacher... many well-known artists studies with my parents.",
+        "target": "Mercedes' parents as flamenco teachers",
+        "rationale": "The interview legitimates flamenco knowledge through recognized teachers whose students became famous artists."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "we always danced the same, authentically, wherever we were... We never changed our dances because the audience was foreign... make the dances more commercial or faster or crazier.",
+        "target": "Mercedes and Albano's choreography and performance practice",
+        "rationale": "Authenticity is tied to refusing commercial adaptation for foreign audiences."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "pedagogy", "authenticity"],
+      "target": "Mercedes and Albano's dance and teaching practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The anti-commercial authenticity passage is coded under AUTH_04 rather than duplicating with a separate AUTH_01."
+  },
+  {
+    "article_id": "JALEO_1983_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "Above all, I'll tell you, I am a purist. Now, if one of those who does this modern style has the quality of the old... there are only a few for the masses and their styles are not fresh",
+        "target": "modern flamenco styles using other instruments",
+        "rationale": "The speaker draws a purist boundary between old-quality flamenco and modern styles associated with the masses and lack of freshness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "What do you think of the integration of other instruments never before used in flamenco until now? ... I am a purist... their styles are not fresh",
+        "target": "integration of new instruments and modern flamenco style",
+        "rationale": "The response uses critical boundary-work to evaluate modern or hybrid flamenco practice as lacking freshness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the importance of flamenco is the freshness which comes with direct proximity",
+        "target": "flamenco quality",
+        "rationale": "Freshness and direct proximity are named as criteria for flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text names family and local influences such as Pedro Peña and Fernanda de Pinini, but it does not clearly describe embodied, oral, or intergenerational transmission as a learning process."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["authenticity", "criticism"],
+      "target": "modern flamenco styles and new instrumental integration",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The evidence is interview speech; the purist boundary is clear enough to emit but kept at medium confidence because the wording is somewhat compressed."
+  },
+  {
+    "article_id": "JALEO_1983_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Although they fall out of cnmpás, that is acceptable. However, there are other cantes where this is not permitted... For me, after depth comes compás.",
+        "target": "cante accompaniment and flamenco quality",
+        "rationale": "Depth and compás are explicitly ranked as criteria for judging acceptable flamenco performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I think that in artual flamenco, what is worst is dance... There was a style of dance here that has been lost. Wow it is very methodical.",
+        "target": "contemporary flamenco dance",
+        "rationale": "The speaker makes a direct negative evaluation of current flamenco dance and contrasts it with a lost style."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Do ynu like teaching foreigners? 'If and when I see a genuine interest and they show respect for flamenco.'",
+        "target": "foreign learners of flamenco",
+        "rationale": "The passage frames transnational access to flamenco teaching as conditional on genuine interest and respect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The 'pure gypsy' question and genealogy invoke identity, but the visible answer mainly lists relatives and does not explicitly make identity do authority or belonging work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The later news about centers, classes, and academies suggests formal pedagogy, but the visible wording is mostly announcement-style and weaker than the emitted foreign-learning access evidence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "pedagogy"],
+      "target": "flamenco performance standards and foreign learners",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "OCR damage is present but sufficient context remains for the emitted judgments."
+  },
+  {
+    "article_id": "JALEO_1983_10::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Chino has molded an exceptionally good cuadro... quality has excelled. With superb teamwork, they improve with each performance.",
+        "target": "Cellarchino cuadro",
+        "rationale": "The passage explicitly praises the quality, teamwork, and improvement of the cuadro."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Manolo Segura, from Jaen in Spain, leads the Andalucian pathos. He is 'la figura principal'--a good cantaor who lives his part. Exceptionally dynamic Maya does the ultimate siguiriγas. It could not have been created better (except, perhaps, in Andalucia).",
+        "target": "Cellarchino performers, especially Manolo Segura and Maya",
+        "rationale": "The review creates a hierarchy of exemplary performers and compares the siguiriya to an Andalusian ideal."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "a good cantaor who lives his part... Sergio Bahamondes... has very good body movements and gives a superbly polished performance.",
+        "target": "Cellarchino performers",
+        "rationale": "The review applies criteria such as lived expression, body movement, polish, and dynamic performance to define quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to Andalucia and Andalucian pathos suggest origin-based value, but the visible excerpt does not clearly use roots or continuity to authorize present flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'guards and treasures el arte' suggests preservation, but it lacks a public heritage, safeguarding, or community-responsibility frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Cellarchino cuadro and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Evaluation is strong; authenticity and heritage possibilities were not emitted because they depend on weaker inferential cues."
+  }
+]

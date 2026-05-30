@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "JALEO_1979_06::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The activities include classes in dance or guitar, the study of the cante, nightly recitals by top artists... tours to bodegas and penas, and a chance to meet and know some of the Jerez flamencos.",
+        "target": "17th International Summer Course in the Art of Flamenco",
+        "rationale": "The article frames flamenco learning through an institutional international course that offers classes, theory, recitals, tours, and access to Jerez flamenco practitioners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The chance to meet Jerez flamencos and visit peñas suggests community access, but the passage is primarily an informational course listing rather than a claim that community actors authorize flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Named instructors and top artists appear, but the excerpt does not sufficiently position them as pedagogical authorities beyond routine course information."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "international flamenco summer course in Jerez",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_06::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "There was, however, a person who was the essence, the living example of art at all times; this was recognized by anyone who ever saw Carmen Amaya",
+        "target": "Carmen Amaya",
+        "rationale": "The passage explicitly praises Carmen Amaya as an exceptional embodiment of art and evaluates her performances as transformative."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Carmen Amaya... experienced one of her performances -- duende to spare.",
+        "target": "Carmen Amaya's performances",
+        "rationale": "Duende is used as an aesthetic criterion to define the force and quality of Amaya's flamenco performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Carmen Amaya was the essence of art, a universal inspiration to all.",
+        "target": "Carmen Amaya",
+        "rationale": "The article canonizes Amaya by elevating her from admired performer to exemplary universal inspiration and living essence of flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'living flamenco' suggests authenticity, but the dominant discourse function is critical praise and canonization rather than an explicit claim about genuine or proper flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The author says watching Amaya gave important lessons, but this is memoiristic inspiration rather than a clear account of embodied or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Carmen Amaya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_06::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "It has finally happened; a dream come true! There is now a commercially produced flamenco magazine on the market in Spain.",
+        "target": "new commercially produced flamenco magazine in Spain",
+        "rationale": "The passage evaluates the appearance of the new flamenco magazine positively as a long-awaited and desirable development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Flamenca de Murcia is mentioned as an auspice, but the text does not make a community-authority claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Independence from peña bias or pressure hints at editorial authority, but the passage is too brief to show critical or expert boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "new flamenco magazine",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_06::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I've sketched in one of the many possible guitar accompaniments, added a knocking pattern to help those audacious people who are learning to sing, and put in shorthand notation for the song melody.",
+        "target": "readers learning to sing soleá",
+        "rationale": "The column mediates access to flamenco knowledge through written notation, explanatory diagrams, and practical learning aids for readers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "By \"squared-off,\" I mean that the illustrated phrasing coincides very closely with the guitar compás; it's arranged to imitate the kind of phrasing that might well accompany the dance.",
+        "target": "squared-off soleá instructional method",
+        "rationale": "The author defines and explains a method for understanding phrasing, compás, and accompaniment, exercising pedagogical authority over how the material should be read."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The word 'list' appears only as an instructional list of notation elements, not an official heritage listing or institutional authorization."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Compás and singing practice are central, but the visible excerpt emphasizes written mediation rather than oral, familial, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "notation-based learning of soleá phrasing and accompaniment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible instructional excerpt is sufficient for the emitted pedagogical codes."
+  },
+  {
+    "article_id": "JALEO_1979_06::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "succeeding later with his outpouring personality in taking the cantes of Levante to a maximum level of perfection, with a technique, a harmony, an admirable and impressive majesty",
+        "target": "Antonio Chacón's treatment of the cantes of Levante",
+        "rationale": "The passage explicitly evaluates Chacón's artistry through praise of perfection, technique, harmony, and majesty."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Don Antonio, who was already a national idol",
+        "target": "Antonio Chacón",
+        "rationale": "The text places Chacón in a canonical hierarchy by describing him as a national idol and exemplary figure."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "He exalted and spread throughout all of Spain the cante de la Cartagenera, learning it from some notable cantaores like el Niño de la Cabra and Manuel Centeno.",
+        "target": "Chacón's transmission of the cante de la Cartagenera",
+        "rationale": "The passage links Chacón's dissemination of a cante to learning from notable singers, framing knowledge as transmitted through recognized artistic lineage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'authentic compendium of artistic excellence' contains authenticity language, but the visible passage mainly evaluates Chacón's excellence rather than defining genuine flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The article contains many place-based memories and routes, but the visible text does not frame them as public heritage, safeguarding, or contested community memory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Antonio Chacón and his role in the cantes of Levante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible ending provides sufficient evidence for critical and transmission codes."
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "article_id": "JALEO_1983_04::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "their progressive deterioration has made people think that they are places only for tourists who are brought in by the busload as part of a \"package\" by the travel agencies. So the show is turned into a caricature; there is no art, no truth, no \"entrega\"",
+        "target": "tourist-package tablao shows",
+        "rationale": "The passage frames tourist-oriented commercialization as turning tablao flamenco into a caricature lacking art, truth, and entrega."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Alberto Heras and Manuel Verdasco, in their Café de Chinitas, have demonstrated that the authentic \"tablao\" exists",
+        "target": "Café de Chinitas and the authentic tablao",
+        "rationale": "The text explicitly presents Café de Chinitas as proof that a genuine tablao still exists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "So the show is turned into a caricature; there is no art, no truth, no \"entrega\" [delivery or giving] by the artists. But it is not that way!",
+        "target": "commercially degraded tablao performance",
+        "rationale": "The critical voice polices the boundary between degraded tourist spectacle and valuable tablao art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions folklore and continuity, but the strongest visible discourse is authenticity/commercial boundary-work rather than tradition as an independent authorizing basis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "tablaos, especially Café de Chinitas versus tourist-package tablaos",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is based only on the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_04::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the second \"Bienal de Arte Flamenco,\" surrounded by such a large number of events that it is hard to see the forest for the trees, has been elevated by the presence of men of the old school of cante",
+        "target": "the second Bienal de Arte Flamenco and old-school cante artists",
+        "rationale": "The passage evaluates the event and credits old-school singers with elevating it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "there were recollections of artists who were a glory for our art",
+        "target": "old-school cante artists and remembered models",
+        "rationale": "The text canonizes older artists as glorious reference points for flamenco art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "What gracia and compás.",
+        "target": "El Nano de Jerez's performance",
+        "rationale": "The passage applies flamenco aesthetic criteria, especially gracia and compás, to praise a performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The old-school framing suggests tradition, but the visible evidence mainly evaluates and canonizes performers rather than grounding present authority in continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "old-school cante and Bienal performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is based only on the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_04::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The great patriarch of the cante, Antonio Mairena ... is unanimously recognized as the undisputed maestro, is one of the truly significant personalities in all of the history of this art.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through patriarchal, maestro, and historically significant status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "the generic flamenco and the cante jondo have to be treated separately",
+        "target": "generic flamenco versus cante jondo",
+        "rationale": "Mairena draws a boundary between categories of flamenco that must not be conflated."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "adulterated flamenco is put at a price, is sold, is commercialized, and you have to know how to treat it",
+        "target": "adulterated, commercialized flamenco",
+        "rationale": "Commercialization is explicitly linked to adulteration and the need to handle improper flamenco differently."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "many senores, intellectuals or not, express their opinions without knowing what they say, nor what it is all about, and the public, the aficionados who listen, well, they are often bewildered",
+        "target": "uninformed commentators versus knowledgeable flamenco understanding",
+        "rationale": "The passage constructs an epistemic boundary between those who know flamenco and those whose uninformed opinions confuse listeners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mairena is called maestro, but the visible passage does not primarily frame him as teaching or correcting flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Mairena's authority and the separation of cante jondo from adulterated commercial flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is based only on the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_04::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the dance artists saw themselves caught in a whirlwind of decadence and artistic degradation",
+        "target": "frivolous songs and dances affecting Spanish dance",
+        "rationale": "The passage explicitly evaluates the new styles as decadent and artistically degrading."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Some dancers opened dance schools, while others formed trios, quartets and larger groups in order to continue the fight against the shameful innovations that, later on, would be called artistic.",
+        "target": "frivolous innovations versus serious Spanish/flamenco dance",
+        "rationale": "The text draws a boundary between legitimate serious dance and shameful innovations falsely treated as art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the great artists of the baile managed, finally, if not to wipe out the frivlpus, at least to once again place themselves above it, both in quality and in success",
+        "target": "great baile artists versus frivolous dance forms",
+        "rationale": "The passage creates a value hierarchy by placing serious baile artists above frivolous forms in quality and success."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "the old dance repertoire continued once again with its former power",
+        "target": "old Spanish dance repertoire",
+        "rationale": "The old repertoire is valued through continuity and restoration of former artistic power."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article criticizes improper/frivolous forms, but the visible evidence is adequately captured by critical evaluation, hierarchy, and authenticity boundary-work without a distinct expert-authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "serious Spanish/flamenco dance versus frivolous and foreign-influenced styles",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_04::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "This pamphlet has been widely quoted in flamenco literature and we feel it worthwhile to reproduce parts of it here.",
+        "target": "Manuel de Falla's El Cante Jondo pamphlet",
+        "rationale": "The periodical mediates access to an important flamenco text by reproducing selected parts for readers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Three factors in Spanish history have influenced to a different degree the general life of our culture, and have an obvious relevance to our music history; the adoption of the Church of Byzantine chant, the Arab invasion, and the settlement in Spain of numerous groups of gipsies.",
+        "target": "historical roots of cante jondo",
+        "rationale": "The passage grounds cante jondo's musical value in historical origins and cultural roots."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The modal wealth of the oldest scales has been replaced by the tonal poverty that the preponderant use of the only two modern scales causes",
+        "target": "older modal scales versus modern tonal scales",
+        "rationale": "The passage defines musical value through aesthetic criteria, contrasting modal wealth with tonal poverty."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text invokes Manuel de Falla and Felipe Pedrell as expert sources, but the visible passage does not rely primarily on their expert role to police a boundary beyond the coded historical and aesthetic claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante jondo and its historical-musical foundations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is based only on the visible review text."
+  }
+]

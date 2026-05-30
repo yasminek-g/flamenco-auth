@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "JALEO_1983_07::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Flamenco is af, by, for, and from Andalucía and its people, and they have exclusive rights on the subject.",
+        "target": "Andalusian-exclusive understanding of flamenco",
+        "rationale": "The passage explicitly presents and then contests an insider boundary that grants Andalusians exclusive authority over flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "This topographic fact is represented in all aspects of the culture: The basic life philosophy of the people of Cáceres represents that of north-central Spain, and Badajoz that of southern Spain.",
+        "target": "regional identity and flamenco belonging in Extremadura/Badajoz",
+        "rationale": "Regional identity categories are used to explain where flamenco belongs and why Badajoz can be understood as culturally close to southern flamenco worlds."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "In Badajoz, flamenco is much more a way of life. So it shouldn't be surprising that one finds himself surrounded by flamenco here in Badajoz.",
+        "target": "flamenco in Badajoz",
+        "rationale": "The article legitimates Badajoz flamenco by presenting it as lived culture rather than an external or merely touristic presence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned, but the visible text does not clearly grant them authority to judge or sustain flamenco beyond describing their presence."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "authenticity"],
+      "target": "Extremadura/Badajoz as a legitimate flamenco region beyond Andalusia",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Joaquín Rojas Pastor is an aficionado cabal, secretary of the pena here in Badajoz, an excellent guitarist and knowledgeable of all aspects of flamenco, especially the cante.",
+        "target": "Joaquín Rojas Pastor",
+        "rationale": "His aficionado status, peña role, and knowledge are used to authorize him as an insider source on flamenco in Extremadura."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Some say that the first was the Peña de la Platería in Granada -- and, if we go to the Congreso in Granada in September, you're going to see the most beautiful peña in Spain",
+        "target": "Peña de la Platería",
+        "rationale": "The passage constructs status for the peña through claims of primacy and superlative ranking within Spain."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "The cante comes from the people; the singer learns it from the people.",
+        "target": "cante transmission",
+        "rationale": "The passage frames cante knowledge as socially transmitted from the people rather than merely acquired through formal or professional channels."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Professionalization is contrasted with street/people's singing, but the visible wording does not clearly frame professionalization as corrupting or less authentic."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "insider peña knowledge and people-based cante transmission",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Others come for the first time, but there quality is widely recognized.",
+        "target": "festival performers",
+        "rationale": "The interview evaluates the selected performers by invoking recognized quality as a basis for the program."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "On guitar will be the great stylist, young Manolo Franco",
+        "target": "Manolo Franco",
+        "rationale": "The phrase elevates Manolo Franco through exemplary status language, presenting him as a notable stylist within the program."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "the organizers recognize that the traditions are being lost... the organizing commission is determined that this year will be the rebirth of the feria chica.",
+        "target": "feria chica traditions",
+        "rationale": "The passage grounds value in recovering a disappearing tradition and frames the event as continuity or rebirth of a valued past."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The afición is addressed as the audience for the festival program, but the visible text does not clearly position it as an authority that judges or sustains flamenco."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The passage mentions lost traditions and rebirth, but it does not explicitly shift into public heritage, safeguarding, or patrimonial framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "Festival de Fuente del Maestre and the feria chica",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to the visible review text."
+  },
+  {
+    "article_id": "JALEO_1983_07::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions that Carmen studies with José Molina and teaches in New York, but this is neutral biography without a clear claim of pedagogical authority or transmission stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short biographical notice with no clear evaluative, authorizing, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1983_07::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Not only did she teach him cante, but she passed on to him her philosophy of cante.",
+        "target": "Pepe Culata's cante formation",
+        "rationale": "The passage frames cante knowledge as familial and philosophical transmission from mother to son."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "She also taught him that flamenco must be lived, not performed as a profession.",
+        "target": "professionalized flamenco performance",
+        "rationale": "The text contrasts lived flamenco with professional performance, treating professionalization as a threat to artistic freedom and authentic practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Not only is there a lack of respect for cante, but this distorts and destroys the intimacy and spontaneity of flamenco.",
+        "target": "American dance-centered flamenco presentation",
+        "rationale": "The passage uses critique to police the boundary of proper flamenco by condemning dance-dominated programming for damaging cante, intimacy, and spontaneity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Antonio Mairena is described as a recognized patriarch who schooled Pepe, but the stronger visible discourse concerns lineage/familial transmission rather than formal pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains explicit evaluation of American flamenco, but CRIT_04 captures the more specific boundary-policing critique."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Intimacy and spontaneity are valued, but the passage emphasizes anti-professional authenticity and critical boundary work more than a developed public/private participatory setting contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "authenticity", "criticism"],
+      "target": "Pepe Culata's lived cante authority and critique of American dance-centered flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full article text was visible; annotation emphasizes the strongest discourse functions rather than all possible overlapping codes."
+  }
+]

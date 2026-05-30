@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "JALEO_1980_05::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Alfredo Arrebola... has defended his doctoral thesis, the first of this type to be done in our country with cante from the student.",
+        "target": "Alfredo Arrebola's doctoral thesis on cante flamenco",
+        "rationale": "The passage frames cante flamenco as entering an institutional academic setting through a doctoral thesis and sung defense, giving flamenco knowledge formal pedagogical legitimacy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The examining board and doctoral setting imply institutional recognition, but the text does not frame flamenco as heritage or public cultural patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "cante flamenco as an academic subject",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only the institutional learning/academic access function; the text is brief and not strongly evaluative beyond novelty."
+  },
+  {
+    "article_id": "JALEO_1980_05::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "young dancers were able to work alongside the greats in dance, music, and song and thereby develop as professionals",
+        "target": "young Spanish dance/flamenco dancers",
+        "rationale": "The passage presents professional formation as embodied apprenticeship through working alongside established performers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "under the apprenticeship and direction of experienced people",
+        "target": "experienced company directors and performers",
+        "rationale": "Experienced artists and directors are positioned as legitimate authorities for training dancers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Certainly the true flamenco aficionado is able to appreciate long stretches of flamenco, but the greater mass of people find this a little overwhelming",
+        "target": "true flamenco aficionado",
+        "rationale": "The text grants discerning capacity to true aficionados while contrasting them with the general public."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article names 'great companies' and 'top soloists,' but the main discourse function is pedagogical transmission rather than constructing a detailed canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "company-based apprenticeship and aficionado discernment",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt ends mid-sentence, but the core apprenticeship and aficionado contrast is clear enough to annotate."
+  },
+  {
+    "article_id": "JALEO_1980_05::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I will not make any statements about tone quality or intonation except to say that they were acceptable and I found no outstanding deficiencies.",
+        "target": "Flamenco Supreme guitar strings",
+        "rationale": "The writer explicitly evaluates a flamenco-related guitar product by judging its tone, intonation, deficiencies, and tension."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Tone quality, intonation, and tension are technical review criteria for strings, but the passage does not clearly define broader flamenco aesthetic value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Flamenco Supreme guitar strings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Product review is coded narrowly as evaluation, not as authenticity or aesthetic doctrine."
+  },
+  {
+    "article_id": "JALEO_1980_05::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Fernando de Triana, one of the most knowledgeable authorities on the flamencos of that time",
+        "target": "Fernando de Triana",
+        "rationale": "The passage explicitly authorizes Fernando de Triana as an expert voice on flamencos of his era."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the departure of the unequaled cante of Manuel Torre",
+        "target": "Manuel Torre's cante",
+        "rationale": "Calling Torre's cante unequaled elevates him into an exceptional canonical position."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Manuel used to sing that copla with expression and soul that made the fandango different from all other styles and song forms.",
+        "target": "Manuel Torre's singing",
+        "rationale": "Expression and soul are applied as aesthetic criteria explaining the distinctive quality of Torre's cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'defines us and marks us in the world as a people' suggests identity framing, but the excerpt centers more directly on expert authority and evaluation of Manuel Torre."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fernando de Triana's authority and Manuel Torre's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "OCR/ad intrusion around the string advertisement was ignored; codes use coherent visible article text only."
+  },
+  {
+    "article_id": "JALEO_1980_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "my favorite is Fosforito who I think is the most complete and the most accomplished",
+        "target": "Fosforito",
+        "rationale": "The passage ranks Fosforito above other cantaores by calling him the most complete and accomplished."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "this speed may be doing some damage to flamenco because in my opinion, the more flowing and musical flamenco is, the more pure it is",
+        "target": "contemporary flamenco guitar playing",
+        "rationale": "The speaker uses speed, flow, musicality, and purity as criteria for judging flamenco guitar quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "the more flowing and musical flamenco is, the more pure it is",
+        "target": "proper flamenco guitar style",
+        "rationale": "The statement defines purer flamenco against a speed-driven style that is said to damage flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The claim that today's guitarists draw inspiration from earlier guitarists suggests transmission, but it is not developed as embodied, oral, or lineage-based learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "flamenco guitar style and canonical performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The final juerga notice was treated as an unrelated listing and not coded."
+  }
+]

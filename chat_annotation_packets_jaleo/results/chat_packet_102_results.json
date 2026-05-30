@@ -1,0 +1,253 @@
+[
+  {
+    "article_id": "JALEO_1981_04::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "The saeta, as sung today, is an authentic form of the flamenco music known as cante jondo (or cante grande).",
+        "target": "the saeta as flamenco/cante jondo",
+        "rationale": "The passage explicitly authorizes the saeta as an authentic form of flamenco music."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It borrows its complex melodies from traditional gypsy cantes, the martinetes, tonás, and siguiriyas which date back at least to the beginning of the nineteenth century.",
+        "target": "the saeta's musical lineage",
+        "rationale": "The passage grounds the saeta's value and identity in traditional gypsy cantes and historical continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The original saeta, according to the testimony of 17th and 18th century documents, was sung or chanted by priests during certain religious processions",
+        "target": "reader understanding of the saeta's historical development",
+        "rationale": "The article mediates access to flamenco-related knowledge by explaining the saeta's documented historical and stylistic development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text mentions borrowing melodies and popular performance, but it does not clearly frame embodied, oral, familial, or lineage transmission as the source of authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text contrasts gypsy homes, taverns, cafes, and theater stages, but the main visible function is historical explanation rather than evaluating participatory versus public settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "the saeta as authentic flamenco/cante jondo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt provides sufficient evidence for authenticity, historical continuity, and pedagogical mediation."
+  },
+  {
+    "article_id": "JALEO_1981_04::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The change grows from an unchanging taproot that is deep in a very old tradition of many cultures with many feelings and emotions.",
+        "target": "changing flamenco",
+        "rationale": "The passage legitimates flamenco change by grounding it in an old, deep-rooted tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text uses evaluative language such as 'beautiful,' but it does not make a specific critical judgment of an identifiable artist, performance, or style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The metaphor of branches adding quality is too general to function as a specific flamenco aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition"
+      ],
+      "target": "flamenco change within continuity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The passage presents change as compatible with tradition rather than as a corruption of flamenco."
+  },
+  {
+    "article_id": "JALEO_1981_04::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Many flamencos believe that either new or old flamenco is superior. I used to think that new flamenco was better until I read Teo Morca's observation that flamenco is like a tree with roots, trunk, and branches.",
+        "target": "hierarchies between new and old flamenco",
+        "rationale": "The passage explicitly discusses and critiques ranking one type of flamenco as superior to another."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "The Webster's New Collegiate Dictionary defines the noun \"elite\" as: \"the choice or select part; esp., a group or body considered or treated as socially superior.\" So elite is defined in terms of others.",
+        "target": "elitist boundaries within flamenco",
+        "rationale": "The article frames flamenco conflict through social superiority and boundary-making between elites and others."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Origin, nationality, and social status are mentioned, but they are examples in a general anti-elitism argument rather than identity categories authorizing flamenco belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Rhythm, melody, and harmony are defined as musical components, but the text rejects natural superiority among them rather than applying them as flamenco aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "elitist hierarchies in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article contests elitist ranking rather than endorsing one superior flamenco group or style."
+  },
+  {
+    "article_id": "JALEO_1981_04::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The gypsy cante was brought out from back rooms and family gatherings into the commercial world.",
+        "target": "gypsy cante's shift from private/social settings to public commercial performance",
+        "rationale": "The passage contrasts private family-gathering contexts with public commercial venues as a socially meaningful change in flamenco setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "After the turn of the century, the cante-andaluz--all the forms of fandangos--began to dominate the performing scene and the cante gitano slowly disappeared from public view.",
+        "target": "cante gitano under public/commercial flamenco conditions",
+        "rationale": "The passage links public performance trends and commercial-era changes to the displacement of gypsy cante, suggesting a loss of valued flamenco visibility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "A prize went to María Amaya \"La Gazpacha,\" a relative of Carmen Amaya who Mairena calls,\"...a stupendous festera who danced very well the zambra of Granada,\" ... The prize for outstanding guitarist was split between Manolo de Huelva and José Cuéllar.",
+        "target": "contest prizewinners and recognized performers",
+        "rationale": "The passage constructs hierarchy and recognition through prizes and named outstanding performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text implies tension between gypsy cante and opera flamenca, but it does not clearly exclude opera flamenca as fake, impure, or illegitimate in the visible excerpt."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The contest awards recognition, but the visible text does not frame this as official heritage authorization or public cultural heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "historical flamenco settings, cante gitano, and contest recognition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt clearly treats public/commercial relocation and contest recognition as meaningful."
+  },
+  {
+    "article_id": "JALEO_1981_04::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "San Luis is talented and creative, has much potential, and deserves to be listened to.",
+        "target": "San Luis's record \"Los Vientos del Tiempo\"",
+        "rationale": "The reviewer makes an explicit evaluative judgment of San Luis and the record."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His rasgueos are strong and crisp, as are most of his other techniques; he uses technique to play music, not to dazzle the listener.",
+        "target": "San Luis's guitar technique and musicianship",
+        "rationale": "The passage applies technique, sound, restraint, and musicality as criteria for evaluating flamenco guitar quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "With just a little bit more solid foundation to work from, he could be an outstanding soloist... perhaps continue to listen to the established masters.",
+        "target": "San Luis in relation to established guitar standards",
+        "rationale": "The review evaluates San Luis against a hierarchy of established masters and potential outstanding soloist status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The recommendation to listen to established masters hints at learning through models, but the text does not clearly describe embodied, oral, or lineage transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The review discusses recordings and methods of making the record, but it does not frame these as access to flamenco knowledge or institutional/transnational learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "San Luis and his solo guitar record",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review is positive overall but includes a developmental critique about foundation and accompaniment experience."
+  }
+]

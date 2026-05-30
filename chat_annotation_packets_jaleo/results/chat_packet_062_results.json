@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "JALEO_1980_01::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Eddie Freeman is one of the most talented and possibly the most original man I have ever met... his genius for synthesis and originality are unsurpassed.",
+        "target": "Edward Freeman",
+        "rationale": "The passage ranks Freeman through superlative claims of originality and unsurpassed genius, constructing him as an exceptional figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The musical world owes him a vast and as yet unrecognized debt for his transcriptions",
+        "target": "Edward Freeman's transcriptions",
+        "rationale": "The passage explicitly evaluates Freeman's transcription work as a major contribution whose value has not been adequately recognized."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The author says he was Freeman's student, but the passage does not clearly describe Freeman's teaching authority or method beyond the relationship label."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Edward Freeman and his transcriptions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Tribute-style praise was coded only where it creates evaluative hierarchy or contribution-based judgment."
+  },
+  {
+    "article_id": "JALEO_1980_01::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "daring to venture to do what no others before him have done- to transcribe into written form the alive, intricate, fiery and haunting flamenco music of the gypsies",
+        "target": "Edward Freeman's written transcriptions of flamenco music",
+        "rationale": "The passage frames transcription into written form as a significant mediation of flamenco knowledge across a learning and access boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "to do what no others before him have done",
+        "target": "Edward Freeman",
+        "rationale": "The passage elevates Freeman by presenting his transcription work as unprecedented, giving him exemplary status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "he is a guitar maker extra-ordinaire, his guitars being owned and sought after by guitarists all over the world",
+        "target": "Edward Freeman as guitar maker",
+        "rationale": "The passage evaluates Freeman's guitar making as exceptional and internationally valued."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'set his roots down' is biographical metaphor and does not authorize flamenco through tradition or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Edward Freeman's transcription and guitar-making work",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The gypsy/caravan phrasing was not coded as identity authority because it functions as metaphor rather than a belonging claim."
+  },
+  {
+    "article_id": "JALEO_1980_01::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "I just had to know more about this music and had heard that Ed Freeman was the one \"That can do it!\"",
+        "target": "Ed Freeman as a flamenco guitar teacher",
+        "rationale": "The passage positions Freeman as the person authorized to teach or unlock knowledge of flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The emotional response to Sabicas and bulerías is appreciative, but it is not developed into a clear critical assessment with criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Ed Freeman",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short article; only the explicit pedagogical authorization of Freeman was emitted."
+  },
+  {
+    "article_id": "JALEO_1980_01::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Edward Freeman introduced me to high level guitar, classical and flamenco... observing how he made the musical transcriptions was very useful to me, and I applied some of the rules of his methodology",
+        "target": "Edward Freeman's teaching and methodology",
+        "rationale": "The passage legitimates Freeman as a teacher whose method transmits high-level guitar knowledge and transferable discipline."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "observing him work was like observing a great teacher of medicine. There was no difference, but Freeman was the greatest of them all.",
+        "target": "Edward Freeman as teacher",
+        "rationale": "The passage creates a hierarchy by placing Freeman above other great teachers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is broad praise of Freeman's character and work, but the strongest evaluative function is already captured by the hierarchy code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Edward Freeman as teacher and methodological model",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The medical analogies were coded only where they authorize Freeman's teaching/method, not as general biography."
+  },
+  {
+    "article_id": "JALEO_1980_01::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the local music store had nothing but steel stringed Gibson or Martin guitars, taught only plectrum style, and the clerk acted as if you were hallucinating when you described what you had seen or heard",
+        "target": "access to flamenco and classical guitar knowledge in Dallas in 1957",
+        "rationale": "The passage foregrounds a local access gap in instruments, teaching, and recognition of flamenco/classical guitar practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "It was at this table that Freeman's guitar students received their lessons. Free-man would sit at the head of the table with the student typically on his left",
+        "target": "Freeman's guitar teaching setting",
+        "rationale": "The passage presents Freeman's home studio as an organized setting where students receive flamenco guitar instruction from him."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Freeman would sit at the head of the table with the student typically on his left and pound out the compás like a third degree black belt Karate expert. Students usually learned compás quickly.",
+        "target": "Freeman's teaching of compás",
+        "rationale": "The passage describes compás being transmitted through embodied rhythmic demonstration and repeated student learning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'you'd know it was real' expresses recognition of a seen/heard guitar style, but it does not clearly authorize proper flamenco authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The home teaching studio is described vividly, but the text does not clearly contrast private participatory setting against public spectatorship as a value claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás is central, but it functions as learned rhythmic knowledge rather than an aesthetic criterion for evaluating quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Freeman's flamenco guitar teaching and transmission of compás",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest evidence concerns access to knowledge and embodied teaching rather than authenticity or community belonging."
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "article_id": "JALEO_1978_02::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Juergas can be approached from many different points of view; they are for the aficionado, for the performer, and for the spectator. They have something for everybody.",
+        "target": "juerga participation",
+        "rationale": "The passage explicitly frames the juerga as a participatory setting organized around different social roles: aficionado, performer, and spectator."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "People from all over the world, with all the possible accents and pronunciations, all of them with the common interest of flamenco.",
+        "target": "flamenco juerga community",
+        "rationale": "The passage presents shared afición as the basis of community belonging across diverse backgrounds."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "there are guitarists, dancers, and singers who can teach you the basic palmas for whatever rhythm is going on at the time, so don't be afraid to ask.",
+        "target": "access to learning palmas at juergas",
+        "rationale": "The passage encourages newcomers to access flamenco knowledge informally through participants who can teach basic palmas in the juerga setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises the force and pleasure of flamenco, but the evaluation is broad and atmospheric rather than a clear critical assessment of an identifiable artist, performance, recording, or event."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage describes guitars as serious, soft, vibrant, and powerful, but it does not clearly apply these as criteria for judging flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "juerga participation and informal flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "she teaches steps and dance patterns like a guitarist learns falsetas. It's up to the individual to use this material, placing the remates, pais-cos, and closings at the right moment when Agujetas sings.",
+        "target": "Tibu's flamenco dance teaching method",
+        "rationale": "The passage evaluates a pedagogical method that gives students material to interpret and apply responsively rather than follow fixed routines."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Tibu will show the entire class a bit of choreography suited for the letra, varied combinations of heelwork, and several llamadas and closings.",
+        "target": "Tibu as flamenco dance instructor",
+        "rationale": "The passage positions Tibu as an instructor who transmits choreography, heelwork, llamadas, and closings as flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "students will come out, one at a time, and use their interpretation to try to make a conversation between guitarist, singer, and dancer.",
+        "target": "flamenco dance phrasing and interaction",
+        "rationale": "The passage defines valued dance practice through musical interpretation and responsive conversation among guitarist, singer, and dancer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text mentions that counting-system routines make it difficult for non-Spaniards to understand the music, but it does not clearly draw a social boundary that authorizes insiders over outsiders."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The contrast with routine learning implies a preferred approach, but it does not ground value in tradition, continuity, roots, or inherited past."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Tibu's dance classes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Alegrías and soleares are the most \"done\" rhythms in the flamenco repertoire and utilize basically the same 12 beat compás, accenting the 3rd, 6th, 8th, 10th, and 12th beats.",
+        "target": "alegrías compás and rhythm structure",
+        "rationale": "The article explicitly teaches flamenco repertoire knowledge by explaining compás, accents, rhythm, and structural comparison with soleares."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Experienced artists, however, are aware of subtler shades of accentuation which could be felt as in the following comparison",
+        "target": "experienced artists' rhythmic understanding",
+        "rationale": "The passage identifies subtle accentuation and compás awareness as criteria of experienced flamenco performance knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "alegrías represents the Castillian-Aragonesan influence, having its origin in the jota... alegrías was first sung around 1808 in Cádiz as a type of light rhythmic jota which, in time, developed into alegrias as we know it.",
+        "target": "origins and development of alegrías",
+        "rationale": "The passage grounds the form's meaning in origin, development, and historical continuity from jota to alegrías."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The excerpt discusses compás and how accentuation is felt, but it does not clearly frame embodied/oral transmission, apprenticeship, family, or lineage-based learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Named authorities are invoked for historical claims, but the visible text does not clearly position a critic or expert voice as exercising evaluative authority or boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "alegrías",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient pedagogical and historical-origin evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1978_02::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "her mother, who is of Spanish descent and who comes from a long line of dancers, being herself a ballet dancer. Deanna's uncle was a flamenco dancer and so Deanna grew up in Australia among performers.",
+        "target": "Deanna Davis's dance background",
+        "rationale": "The passage frames Deanna's attraction to Spanish dancing through familial and intergenerational exposure to dancers and performers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "she took her first flamenco lessons from two male dancers... When she first arrived she started lessons with Juana de Alva... She has now been dancing again with Juana for about one and a half years",
+        "target": "Deanna Davis's flamenco training",
+        "rationale": "The passage describes flamenco learning through named teachers and lessons that authorize her current dance practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article gives mild descriptive praise and comments on her personality and favorite dances, but it does not provide a clear critical evaluation of a specific performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Spanish descent and family background are mentioned, but identity does not strongly organize authority or representation beyond biographical context."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Deanna Davis's flamenco dance formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "A Spanish dance company without the emotional quality of duende is a Spanish dance company without soul. It can, however, be a Spanish dance company made up of technicians that keeps an audience more or less happy",
+        "target": "Ballet Nacional Festivales de España",
+        "rationale": "The review explicitly evaluates the company as technically competent but lacking duende and soul."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "without the emotional quality of duende... made up of technicians... the improved quality of the dancing",
+        "target": "criteria for Spanish dance performance",
+        "rationale": "The passage uses duende, emotional quality, technique, artistic profile, and dancing quality as criteria for judging the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "It had no Escudero, no Argentina, no Carmen Amaya or any other great name to head it.",
+        "target": "Spanish dance company leadership and canon",
+        "rationale": "The passage invokes canonical great names as the standard against which the company is compared."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "This particular company was different. It was organized from the top by the Spanish Government.",
+        "target": "Ballet Nacional Festivales de España",
+        "rationale": "The passage identifies the company as government-organized, linking Spanish dance representation to official institutional cultural authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The review discusses traditional forms and Bolero-school history, but tradition functions mainly as review context rather than a direct authorization of present flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article is a New York Times review by a named critic, but the excerpt itself is better captured through direct evaluation, criteria, and hierarchy codes rather than a separate expert-authority code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Ballet Nacional Festivales de España",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "article_id": "JALEO_1984_08::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text calls Melinda Marquez a teacher and mentions training, but this is neutral biographical/press-release information without a clear claim of pedagogical authority or flamenco knowledge transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Very short press-release biography; no clear evaluative, authorizing, pedagogical, community, or heritage discourse beyond neutral credentials."
+  },
+  {
+    "article_id": "JALEO_1984_08::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "the great concert flamenco guitarist Pedro Bacan graciously took enough time from his busy schedule at Washington State University to give a one day workshop",
+        "target": "Pedro Bacan as workshop teacher",
+        "rationale": "The article legitimates Bacan as an authoritative teacher by foregrounding his stature and his role leading a workshop."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The morning session was devoted mostly to compas and technique, and the afternoon to cante interpretation.",
+        "target": "Long Beach workshop as structured flamenco learning access",
+        "rationale": "The workshop is framed as an organized setting for learning flamenco knowledge across compás, technique, and cante interpretation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Pedro is from Lebrija and is one of the world's foremost accompanists of the cante.",
+        "target": "Pedro Bacan",
+        "rationale": "The phrase places Bacan in a hierarchy of exemplary flamenco accompanists and canonizes his status."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Everyone with an interest in flamenco at every level is welcome to come and participate and meet others who share your interest in flamenco.",
+        "target": "Los Angeles juerga community",
+        "rationale": "The juerga is presented as a participatory social setting rather than a detached performance event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text lists Jaleistas and thanks hosts, but it does not clearly grant the community special authority to judge or sustain flamenco beyond participation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Pedro Bacan and the local juerga/workshop network",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_08::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Tercero displayed the most fluent vocal technique, a satiny contralto sonority underlined with smoldering suggestion.",
+        "target": "Isabel Tercero and the San Diego flamenco concert",
+        "rationale": "The passage explicitly evaluates the quality and style of a singer's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the flamenco singer does not prize purity of tone or brilliant projection. Rather, this folk art values passionate statement",
+        "target": "flamenco singing aesthetics",
+        "rationale": "The critic defines flamenco vocal quality through aesthetic criteria of passion and declamatory force rather than bel canto purity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "the performers invited other flamenco singers and dancers in the audience—this community is a small, close-knit enclave in San Diego—to the stage for a rousing finale.",
+        "target": "San Diego flamenco community and concert setting",
+        "rationale": "The article highlights participatory movement between audience and stage as socially meaningful to the flamenco event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'traditional music from Southern Spain' and 'gypsy origins' invokes origin language, but the excerpt mainly uses it descriptively/evaluatively rather than grounding present legitimacy in continuity or roots."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The mention of 'gypsy origins' marks identity, but it is too brief to show identity organizing belonging, representation, or authority beyond an aesthetic observation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "the San Diego flamenco performance and its participatory audience community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "All pieces were authentically flamenco in spirit but some had been influenced by Central and South American rhythms",
+        "target": "the pieces in Flamenco '84",
+        "rationale": "The review explicitly attributes authentic flamenco spirit to the works while acknowledging outside rhythmic influences."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "\"La Despedida,\" the story of a prisoner's last farewell to his betrothed was nicely choreographed by Patri Nader and magnificently danced by her and Cruz Luna",
+        "target": "Flamenco '84 performances",
+        "rationale": "The review gives explicit positive judgments of choreography and dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the seeming magic of his steps but also at the beauty that his pace and dynamics evoked",
+        "target": "Cruz Luna's solo dance",
+        "rationale": "The reviewer applies aesthetic criteria of steps, pace, dynamics, and beauty to explain performance value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The phrase 'we in the theatre were all one' suggests shared feeling, but it does not clearly contrast participatory flamenco with passive spectatorship or establish a participatory setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Flamenco '84 and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Under the proper traditional ambienta, the desire for evolution and fast change doesn't become a concern.",
+        "target": "flamenco evolution and traditional ambiente",
+        "rationale": "The letter grounds legitimate flamenco change in continuity with a proper traditional social atmosphere."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Our advice is that we all participate in groups, since flamenco is a social event of the same nature as any western celebration.",
+        "target": "flamenco as group participation",
+        "rationale": "The writer defines flamenco as a social, participatory event rather than merely an art object."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "To those that are involved in it daily it's a way of life.",
+        "target": "daily involvement in flamenco",
+        "rationale": "The letter presents lived daily involvement as a truer way of understanding flamenco than treating it only as art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The concern that Paco de Lucia might 'give up playing flamenco altogether' hints at a flamenco/jazz boundary, but it does not clearly exclude jazz or label it improper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The letter praises the interview for asking 'the right questions,' but this is ordinary reader evaluation rather than a clear exercise of critic or expert authority over flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community"
+      ],
+      "target": "flamenco as daily, social practice grounded in traditional ambiente",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

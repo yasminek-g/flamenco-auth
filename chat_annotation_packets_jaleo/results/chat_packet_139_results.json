@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "JALEO_1982_04::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "this \"Gypsy Gospel\" that presents all of the poetic wealth inherent in being Andalucian",
+        "target": "Gypsy Gospel / Andalucian opera",
+        "rationale": "The passage frames the work through Gypsy and Andalucian identity as the source of its poetic and cultural meaning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "One of the most ambitious recording productions to be attempted in Spain to date",
+        "target": "El Evangelio Gitano recording production",
+        "rationale": "The article explicitly evaluates the recording project by presenting it as unusually ambitious."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Andalucian framing gestures toward roots, but the excerpt does not clearly use tradition or continuity to authorize present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "El Evangelio Gitano recording production",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_04::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "It is now converted into a center for popular culture...The government of Córdoba has published a collection of the art works on exhibition.",
+        "target": "Flamenco in Present Day Art exhibition",
+        "rationale": "A municipal cultural center and government publication confer institutional public-culture value on flamenco-themed art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "express with their art, the emotion of that indefinable duende that hides and liberates our arte flamenco",
+        "target": "flamenco-themed artworks",
+        "rationale": "Duende is invoked as an aesthetic criterion explaining the value and expressive force of the artworks."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The article has public-culture framing, but it does not explicitly call flamenco heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Flamenco in Present Day Art exhibition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_04::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I am often asked to teach master classes in universities, festivals, private schools, and other situations where I would be teaching non-flamenco dancers",
+        "target": "non-flamenco dancers studying flamenco movement",
+        "rationale": "The passage explicitly frames flamenco learning through institutional settings and access for dancers outside flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "we will be working on the \"essence\" of flamenco movement",
+        "target": "flamenco movement",
+        "rationale": "The author claims there is a genuine underlying essence of flamenco movement beyond the stereotype of footwork and castanets."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the obvious basics that can be learned fran flamenco are an exciting posture... a use of the back, arms and torso that is unique to flamenco",
+        "target": "flamenco dance movement",
+        "rationale": "The article defines flamenco dance value through aesthetic and technical criteria such as posture, torso use, walking, and sustained energy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word experience appears, but the passage concerns dance pedagogy rather than safeguarding or living heritage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text distinguishes flamenco and non-flamenco dancers, but the contrast is pedagogical access rather than an insider/outsider authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco movement as a training resource for non-flamenco dancers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; codes are based only on the visible beginning/window/ending text."
+  },
+  {
+    "article_id": "JALEO_1982_04::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "the 'flamenco section' was most untraditional, indeed merely 'impressions of flamenco' -- the impressions being far removed from the real thing",
+        "target": "the reviewed flamenco section",
+        "rationale": "The passage draws a boundary between the reviewed material and real flamenco, devaluing it as merely impressions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "What the reviewer totally fails to mention -- perhaps she was quite unaware of it -- was that the 'flamenco section' was most untraditional",
+        "target": "newspaper review and reviewed flamenco section",
+        "rationale": "An expert commentator corrects the reviewer and uses criticism to police the boundary of proper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "his venture represented a last-minute victory of basic talent over monumental self-indulgence and bad taste",
+        "target": "the reviewed performance",
+        "rationale": "The quoted review makes an explicit negative critical judgment of the performance while acknowledging underlying talent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional and modern are contrasted, but the strongest discourse function is purity/properness boundary-work rather than continuity with the past."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Style and taste are invoked, but the visible evidence is better captured as direct critical evaluation and boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "modernized or impressionistic flamenco section in the reviewed performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; codes are based only on the visible beginning/window/ending text."
+  },
+  {
+    "article_id": "JALEO_1982_04::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Feelings seemed pretty evenly split between those who preferred our new site on Market to those who preferred private homes.",
+        "target": "juerga site preferences",
+        "rationale": "The article treats the public rented site versus private homes as a meaningful participatory setting issue for community juergas."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We missed many of our Spanish friends who add so much animation to our juergas.",
+        "target": "Spanish friends at the juerga",
+        "rationale": "Community participants are described as contributing essential animation and social value to the juerga."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Student and tutelage language appears, but it is incidental biography rather than a sustained claim about pedagogical authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Private homes are preferred by some, but the passage does not explicitly frame intimacy as more authentic flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community"
+      ],
+      "target": "juerga participation and setting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

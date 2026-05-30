@@ -1,0 +1,226 @@
+[
+  {
+    "article_id": "JALEO_1982_03::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "My primary teacher was Jeronimo Villarino. I studied with him for eight years and I consider him the one most responsible for my style of playing and my attitude toward flamenco as a whole.",
+        "target": "Jeronimo Villarino as Shearer's formative flamenco teacher",
+        "rationale": "The passage legitimates Shearer's flamenco knowledge through a named teacher whose instruction shaped both technique and attitude."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "I personally feel that Villarino was one of the greats of his day",
+        "target": "Jeronimo Villarino",
+        "rationale": "The phrase elevates Villarino into a hierarchy of exemplary artists."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "I don't believe that. While many gypsies may take issue with this, some of the really great artists in flamenco are not gypsy. Your attitude and the way you feel about the art form is far more important than where you were born or which parents you happened to be conceived by.",
+        "target": "ethnic and birthplace criteria for flamenco belonging",
+        "rationale": "The passage explicitly contests identity-based claims that Gypsy birth or Andalusian origin determine who can perform flamenco properly."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "It is difficult to sing flamenco properly without having been raised in Andalucía because you don't have the correct voice inflection or dialect.",
+        "target": "non-Andalusian cantaores",
+        "rationale": "The passage draws a social and epistemic boundary around proper cante based on Andalusian upbringing, inflection, and dialect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The interview discusses performing flamenco properly, but the clearest work is about community/identity boundaries rather than a direct authenticity claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Teacher influence is described, but the mode of transmission is not clearly oral, embodied, familial, or lineage-based."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "Shearer's flamenco authority and the boundaries of who may perform flamenco properly",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_03::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "We rehearsed the \"cuadro\" and it was a disaster; his \"nephews\" knew nothing at all about rhythm and compás",
+        "target": "Vicente Escudero's accompanying cuadro",
+        "rationale": "The narrator explicitly judges the rehearsal negatively and identifies rhythmic incompetence as the failure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "his \"nephews\" knew nothing at all about rhythm and compás",
+        "target": "the cuadro's flamenco competence",
+        "rationale": "Rhythm and compás are applied as aesthetic and technical criteria for evaluating flamenco performance capacity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "He asked me to teach him the compás for the siguiriyas, with palmas sordas.",
+        "target": "Vicente Escudero learning siguiriyas compás",
+        "rationale": "The passage frames flamenco knowledge as transmitted through embodied rhythmic instruction in compás and palmas."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "I appreciated Escudero for his genius and innovations, for all that he brought to the Spanish dance and flamenco.",
+        "target": "Vicente Escudero",
+        "rationale": "The narrator elevates Escudero as a significant innovative figure within Spanish dance and flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teaching occurs in the text, but the strongest evidence concerns embodied compás transmission rather than institutional or masterly pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy terms and claimed nephews are mentioned, but the passage does not clearly use identity categories to authorize belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Vicente Escudero, his cuadro, and compás-based flamenco competence",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_03::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Just find 16 to 20 students with $150.00 and a space for me to teach and I will come and give them a week full of great material.",
+        "target": "regional flamenco workshop access",
+        "rationale": "The letter frames flamenco learning as accessible through an organized regional workshop for students."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teo is presented as a workshop teacher, but the passage is mainly logistical and does not strongly authorize him as a pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The workshop is called great, but the language reads as promotional rather than substantive critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "workshop-based flamenco learning for regional students",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_03::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article describes a juerga site and member attendance, but it does not clearly contrast participatory/private settings with spectatorial/public ones as a value claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Members and juergas are mentioned, but the passage is logistical site information rather than community authority or recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is primarily administrative and logistical."
+  },
+  {
+    "article_id": "JALEO_1982_03::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Jaleistas, the Junta, Jaleo, and local flamenco talent are mentioned, but the passage mainly records organizational finances and meeting motions rather than community authority over flamenco value."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Incorporation and board decisions are institutional, but there is no heritage or public-culture authorization frame."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The Flamenco Directory and Jaleo circulation may mediate access to information, but the passage does not frame them as learning or knowledge transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is primarily administrative meeting minutes."
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "JALEO_1983_12::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "as a teacher, she has organized castanet mastery into a systematic course leading to a diploma; as a theorist, she has authored a system of musical notation for this instrument",
+        "target": "Emma Maleras's castanet pedagogy",
+        "rationale": "The passage legitimates Maleras as a teacher-theorist who systematizes and certifies castanet knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "There are six levels, each with an examination, as well as cumulative examinations. The course takes eight years to complete.",
+        "target": "Maleras's castanet course",
+        "rationale": "The course is framed as an institutionalized, examined path of formal learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "without flamenco you can't really be a good Spanish dancer, even if you never intend to dance to a guitar... Not for the steps, but for the style.",
+        "target": "Spanish dance training",
+        "rationale": "Maleras defines flamenco style as an aesthetic criterion for good Spanish dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage mentions castanet tradition continuing in Spain, but it functions mainly as historical explanation rather than a clear authorization of present flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Emma Maleras's pedagogy and Spanish dance technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_12::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Rubina is a fine performer and teacher and really knows her material. She sings, plays guitar and dances.",
+        "target": "Rubina Carimano",
+        "rationale": "Rubina is authorized as a knowledgeable teacher through performance competence and command of the material."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "She gave us printed Ietras and we recorded the songs so we are still busily learning this marvelous selection of material. We learned how they fit with the guitar and with the dances.",
+        "target": "the cante workshop",
+        "rationale": "The workshop mediates access to cante knowledge through printed materials, recordings, and explanation of relation to guitar and dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The Cante Flamenco workshop given by Rubina Carimano was an outstanding success... The workshop concept is excellent",
+        "target": "Rubina Carimano's cante workshop",
+        "rationale": "The letter explicitly evaluates the workshop as successful and worthwhile."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Rubina Carimano's cante workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_12::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "was given the prize for baile by the Cátedra de Flamencología de Jerez de la Frontera in 1975",
+        "target": "Manuela Carrasco",
+        "rationale": "A flamencology institution is presented as conferring formal recognition and value on Carrasco's baile."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Among her many other awards, she received the \"Premio Internacional de Baile\" in San Remo, Italy",
+        "target": "Manuela Carrasco's dance status",
+        "rationale": "The list of major prizes constructs Carrasco's comparative status within an award-based hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Manuela Carrasco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short notice, but the visible text is sufficient for institutional recognition and award-status coding."
+  },
+  {
+    "article_id": "JALEO_1983_12::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He sang magnificently and with desire, magnificently carried by Pedro Bacan, but nothing more.",
+        "target": "Juan el Lebrijano's performance",
+        "rationale": "The review directly evaluates the quality and limits of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "More attention should be paid to these men of second rank, who at any moment are capable with their knowledge of proving themselves to the starring artists.",
+        "target": "second-rank performers versus starring artists",
+        "rationale": "The passage explicitly invokes a hierarchy between second-rank and starring artists while arguing for reassessment."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "HOMENAJE DE LA CIUDAD DE SEVILLA A LA MEMORIA DE DON ANTONIO MAIRENA",
+        "target": "Antonio Mairena's public memory",
+        "rationale": "The city-sponsored homage frames Mairena through official civic commemoration."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Audience size and ovations are visible, but they function as attendance and reception rather than a public/private or participatory setting contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "festival performers and Antonio Mairena's public memory",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_12::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "One pioneer to whom we are much indebted is Carlos Mantoya... he was a trailblazer who opened the way for the rest of us. And, of course, he was followed by my friend Sabicas, and later, Juan Serrano.",
+        "target": "solo flamenco guitar pioneers",
+        "rationale": "Escudero constructs a lineage and hierarchy of exemplary solo flamenco guitar figures."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "many of us here -- Carlos Montoya, Sabicas, Juan Serrano, and \"un servidor\" -- have been preparing the soil for years so that others can harvest a good crop for themselves. I wish some of these youngsters would recognise that",
+        "target": "later solo flamenco guitarists",
+        "rationale": "The speaker authorizes the present solo-guitar field through continuity with earlier pioneers' groundwork."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "you have to be careful with the new creations in the cante and the baile. You are walking a fine line there and it is easy to go to the dogs.",
+        "target": "new creations in cante and baile",
+        "rationale": "The interviewee uses critical authority to police the boundary around innovation in flamenco forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions learning from records and playback devices, but the visible excerpt emphasizes historical/canonical development more than access to learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "solo flamenco guitar development and later flamenco innovations",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

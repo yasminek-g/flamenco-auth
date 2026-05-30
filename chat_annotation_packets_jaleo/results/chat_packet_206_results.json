@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "JALEO_1985_07::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "If New Mexico has a Hispanic soul, Spanish dancer María Benítez is surely custodian of some part of it. And if New Mexico's soul belongs to the Native American, this dark-eyed dancer probably inherited it anyway. Of Native American and Puerto Rican descent",
+        "target": "María Benítez as representative/custodian of New Mexico flamenco identity",
+        "rationale": "The passage uses Hispanic, Native American, and Puerto Rican identity framing to authorize Benítez as an embodied representative of the region's cultural soul."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco isn't an entertainment where you just sit there and are entertained,\" she warns warmly. \"You do have to put out som",
+        "target": "flamenco audience participation",
+        "rationale": "Benítez contrasts passive spectatorship with required audience participation, making the performer-audience relation socially meaningful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Since 1972, María Benítez's Estampa Flamenca has thrilled Santa Fe audiences and summer visitors with the intimate ensemble performance that is flamenco's hallmark.",
+        "target": "María Benítez's Estampa Flamenca",
+        "rationale": "The article explicitly praises the company's performance impact and frames its intimate ensemble format as valuable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Old World/New World and regional soul language suggests roots and continuity, but the visible text frames identity representation more clearly than tradition as an explicit authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "María Benítez and Estampa Flamenca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt provides enough evidence for conservative coding."
+  },
+  {
+    "article_id": "JALEO_1985_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Enrique Morente, in spite of the fact that his cante is not the type that would best connect with the type of audience that predominated that night, had a good performance, with feeling and profundity",
+        "target": "Enrique Morente's performance",
+        "rationale": "The review explicitly assesses Morente's performance quality and expressive success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "had a good performance, with feeling and profundity in the tonás, granaínas, and soleares, and with relief and festiveness in the aires de Huelva",
+        "target": "criteria for evaluating cante performance",
+        "rationale": "The passage applies aesthetic criteria such as feeling, profundity, relief, and festiveness to judge flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Since, in a certain sense, there remains some connection with serious flamenco--alegrias, bulerías, tangos--distorted, certainly, but at least there, the experience can be valuable because it brings the art to people who would otherwise not understand it.",
+        "target": "Lole y Manuel's popularized/hybrid flamenco",
+        "rationale": "The critic evaluates a popularized form by policing its distance from serious flamenco while granting it limited value as access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Camarón is called the number one draw, but the visible passage emphasizes popularity and audience response more than canon formation or artistic hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "festival performers, especially Morente, Lole y Manuel, Los Montoya, and Camarón",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review combines praise with boundary critique of popularized or distorted flamenco."
+  },
+  {
+    "article_id": "JALEO_1985_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "the great bailaor and teacher of bailaores, Enrique Jiménez Mendoza -- better known as Enrique el Cojo -- dies in Sevilla.",
+        "target": "Enrique el Cojo",
+        "rationale": "The obituary explicitly legitimates Enrique el Cojo through his recognized authority as a teacher of flamenco dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "He was what is called a natural phenomenon. Enrique was the teacher of an infinite number of dancers and many personalities",
+        "target": "Enrique el Cojo's artistic and pedagogical status",
+        "rationale": "The text canonizes him through exceptional status and large-scale influence over dancers and public figures."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "In recognition of his efforts, Enrique el Cojo received in recent years the \"Medalla del Trabajo\" (1980), \"El Puente de Plata\" (1981) and the \"Medalla de Plata de Bellas Artes\" (1984)",
+        "target": "Enrique el Cojo's public cultural value",
+        "rationale": "Official medals and recognitions confer institutional value on his contribution to flamenco art."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The obituary contains clear praise, but CRIT_03 better captures its canonizing and exemplary discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "heritage"
+      ],
+      "target": "Enrique el Cojo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although obituary form is commemorative, the visible text makes explicit pedagogical, canonical, and institutional recognition claims."
+  },
+  {
+    "article_id": "JALEO_1985_07::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "He was named one of the best flamenco guitarists on several occasions by the magazine, Guitar Player.",
+        "target": "Carlos Ramos",
+        "rationale": "The passage explicitly ranks Ramos among the best flamenco guitarists, constructing hierarchical status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Carlos Ramos created and developed a personal style of playing the guitar that was known for its high level of composition and technical development",
+        "target": "Carlos Ramos's guitar style",
+        "rationale": "The obituary defines the quality of Ramos's playing through aesthetic and technical criteria such as composition and technical development."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "he added to the ideals of the traditional musical forms of flamenco",
+        "target": "Carlos Ramos's contribution to traditional flamenco forms",
+        "rationale": "The text grounds Ramos's value in continuity with and contribution to traditional flamenco musical forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The obituary evaluates Ramos positively, but the more specific ranking and aesthetic-criteria codes capture the visible evaluative work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Carlos Ramos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible passage is a memorial profile with clear ranking, aesthetic, and tradition-continuity claims."
+  },
+  {
+    "article_id": "JALEO_1985_07::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "At the time, I was somewhat apprehensive as to how the Maestro would feel about this. However, my fears were totally unfounded. Paco is one of the politest and most gracious persons I have ever met. The workshop was warm, personal, and intensive.",
+        "target": "Paco Peña as workshop teacher",
+        "rationale": "The passage positions Paco Peña as a maestro whose personal workshop provides authoritative flamenco instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I immediately got in touch with Professor Ron Purcell, the head of their guitar department, to see if it was possible to arrange a workshop.",
+        "target": "Los Angeles flamenco guitar workshop access",
+        "rationale": "The article frames flamenco learning through an organized workshop linked to a university guitar department and Los Angeles students."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The underlying theme of all his advice was compás (not terribly surprising). \"Without precisely metered compás, you don't have Flamenco.\"",
+        "target": "compás as a criterion of flamenco",
+        "rationale": "The quote defines precisely metered compás as an essential aesthetic and technical condition for flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The concert is called superb, but that praise is brief and secondary to the article's stronger pedagogical and criteria-focused discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Paco Peña's workshop and compás-based teaching",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse is pedagogical: a named maestro defines compás as necessary to flamenco."
+  }
+]

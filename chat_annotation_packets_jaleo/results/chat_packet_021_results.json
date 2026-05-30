@@ -1,0 +1,268 @@
+[
+  {
+    "article_id": "JALEO_1978_06::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "The basis of flamenco, viewed as a system to communicate the tragedies of an outcast people, becomes a type of private ceremony or secret rite rarely found outside the gypsy family environment.",
+        "target": "early flamenco/cante",
+        "rationale": "The passage frames private, intimate, family-based performance as the authentic social ground of flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Those distant creators of flamenco, who were without exception members of a few Andalusian gypsy families, converted the cante into a comunal heartrending manner of expressing their dramatic intimacy.",
+        "target": "Andalusian gypsy families as flamenco creators",
+        "rationale": "Family/community belonging is presented as the source and sustaining authority of early cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "a type of private ceremony or secret rite rarely found outside the gypsy family environment",
+        "target": "flamenco performance setting",
+        "rationale": "The text contrasts private familial participation with what lies outside that environment, making setting socially meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy identity is central in the excerpt, but the selected COMM_02/COMM_03 codes more precisely capture the family/community authority and private-setting discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage discusses origins and historical development, but the visible evidence primarily values intimacy and community rather than continuity with a past tradition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "early flamenco/cante rooted in Andalusian gypsy family experience",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Annotated only the visible truncated excerpt; subscription and member-list material was ignored as administrative text."
+  },
+  {
+    "article_id": "JALEO_1978_06::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "such men occur once per century to ressurect the phenomena of a Paganini or a Liszt",
+        "target": "Paco de Lucía",
+        "rationale": "The comparison to once-per-century canonical figures elevates Paco de Lucía into an exceptional hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "I recall a critic who said about him, more or less, that such men occur once per century",
+        "target": "critical discourse about Paco de Lucía",
+        "rationale": "The article invokes a critic's judgment as an authorizing voice for Paco's stature."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "deep-rooted ... and forward looking, nourished in the depth of tradition and, at the same time, creator of new forms and freedom",
+        "target": "Paco de Lucía's guitar style",
+        "rationale": "The passage legitimates Paco's innovation by grounding it in roots, ancestors, and tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The excerpt contains strong praise, but CRIT_03 and CRIT_04 capture the more specific canonizing and critical-authority functions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The retrieval trigger is incidental; the visible evidence does not use identity groups to define belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Paco de Lucía as a canonical flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Discography details at the end were treated as reference information rather than discourse evidence."
+  },
+  {
+    "article_id": "JALEO_1978_06::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "a book that really transcribes each solo exactly, in notes and cifra",
+        "target": "flamenco guitar learning materials",
+        "rationale": "The passage values transcriptions, notation, cifra, and recordings as mediated access to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Lots of solid, traditional material, plus some interesting surprises ... A great buy",
+        "target": "Paco Peña record/book package",
+        "rationale": "The letter evaluates the quality and usefulness of the instructional/publication material."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'traditional material' is evaluative but brief; it does not clearly ground present legitimacy in continuity or roots."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The letter praises Paco's column and methods, but it does not clearly position a teacher or institution as pedagogical authority beyond access to materials."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "published flamenco notation, methods, and recordings as learning resources",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Publishing invitations and prices were coded only where tied to learning access or evaluation."
+  },
+  {
+    "article_id": "JALEO_1978_06::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "I am in the company of many eminent flamencologists in believing that the force ful, primitive tangos preceded the slow, sophisticated tientos",
+        "target": "origin and classification of tangos/tientos",
+        "rationale": "The writer invokes flamencologists and expert disagreement to authorize a classificatory judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The tango is sensual and exciting, yet with greater subtlety and depth than a rumba flamenca. Tientos can be a true \"jondo\" dance - dignified and sensual with a withdrawn and ritualistic quality.",
+        "target": "tangos and tientos as dance/rhythm forms",
+        "rationale": "The passage applies aesthetic criteria such as depth, subtlety, jondo quality, dignity, and sensuality to evaluate these forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the great pillars of cante gitano, namely, the soleá, siguiriya, and bulería",
+        "target": "soleá, siguiriya, and bulería",
+        "rationale": "Calling these forms the great pillars creates a hierarchy of exemplary cante gitano forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article is instructional, but the stronger visible discourse is expert classification and aesthetic evaluation rather than an explicit teaching authority or method."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Origin and tradition are discussed, but much of it is taxonomic and historical rather than a clear present-value continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "tangos/tientos origins, hierarchy, and aesthetic value",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Technical descriptions of chords, coplas, and compás were not separately coded unless they served evaluative or classificatory discourse."
+  },
+  {
+    "article_id": "JALEO_1978_06::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Molina and Mairena recognize four distinct traditional styles of tangos: Gaditanos (from Cádiz), Jerezanos, Sevillanos, and Malagueños.",
+        "target": "classification of tangos styles",
+        "rationale": "Named expert authorities are used to define and classify recognized styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Speed or tempo is not a good criterion for distinguishing between tangos and tientos.",
+        "target": "criteria for distinguishing tangos and tientos",
+        "rationale": "The passage explicitly defines and rejects an aesthetic/technical criterion for judging form boundaries."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Writers and singers search constantly for new gimmicks that will make their song a hit; they add more instruments ... All of this results in a headlong plunge into \"who-knows-where\" - hopefully, not into chaos and destruction of the song form!",
+        "target": "commercially oriented changes to tangos/song form",
+        "rationale": "The passage criticizes hit-seeking novelty and instrumental additions as a threat to the integrity of the song form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The ending criticizes hit-making and added instruments, but it does not explicitly frame commerce as loss of flamenco authenticity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional styles are named, but the passage mainly uses expert classification and criteria rather than continuity as authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "traditional tangos/tientos categories and contemporary changes to song form",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Because the article is truncated, conclusions are limited to the visible classification and ending critique."
+  }
+]

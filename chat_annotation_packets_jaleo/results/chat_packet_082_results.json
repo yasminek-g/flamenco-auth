@@ -1,0 +1,308 @@
+[
+  {
+    "article_id": "JALEO_1980_08::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "It's not an easy task for anyone to earn acceptance in the flamenco world and if you're an American aficionado you might as well forget it. One exception to this rule is Donn Pohren",
+        "target": "Donn Pohren as an American aficionado in the flamenco world",
+        "rationale": "The passage explicitly draws an insider/outsider boundary around acceptance in flamenco and frames Pohren as an exceptional outsider who crosses it."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "right in the heart of flamenco country where cante and baile are not just a business but still a way of life",
+        "target": "Finca Espartero and Morón flamenco setting",
+        "rationale": "The passage contrasts flamenco as business with flamenco as lived social practice, using anti-commercial/intimate authenticity to authorize the center's location."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "All phases of flamenco from cante and baile (Luisa Maravilla, Mr. Pohren's wife, instructs the dancing) to guitar accompaniment are taught for those who would like lessons.",
+        "target": "Finca Espartero's instruction for visitors",
+        "rationale": "The center is framed as a site where outsiders and international visitors can access flamenco knowledge through organized lessons."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "the juergas where all the oldtimers from around the region join with the guests at the center for allnight sessions of singing and dancing",
+        "target": "Finca Espartero juergas",
+        "rationale": "The passage values participatory co-presence between local oldtimers and guests as the highlight of flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text mentions 'pure' flamenco and 'flamenco puro', but the stronger supported discourse is anti-commercial way-of-life authenticity rather than an explicit fake/impure boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Pohren is called an authority, but the article does not clearly show him exercising critical judgment in the visible text beyond broader authenticity and access claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Donn Pohren and Finca Espartero as an authentic participatory learning site",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_08::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "He takes us away from the world of theaters, chorus line dances, unvarying choreographies and musical arrangements, and high-powered technical virtuosity",
+        "target": "Pohren's representation of flamenco in A Way of Life",
+        "rationale": "The review frames Pohren's book as moving away from staged, formalized spectacle toward flamenco as lived experience."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "will enjoy reading about a unique flamenco event and will learn a great deal about the \"flamenco\" life style",
+        "target": "A Way of Life as a source for readers",
+        "rationale": "The book is presented as a mediator giving readers access to knowledge about flamenco life and practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "One thing that I feel would have improved this book considerably would have been the ommision of many of Donn's philosophical asides that are quite irrelevant to flamenco or to the flow of the writing.",
+        "target": "Donn Pohren's A Way of Life",
+        "rationale": "The reviewer explicitly evaluates the book and identifies a weakness in its writing and relevance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The opening asks whether flamenco can survive with 'no roots in the daily lives of people', but the visible excerpt more clearly supports lived/intimate authenticity than a distinct tradition-continuity code."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions knowledgeable flamenco people and readers who know Morón, but it does not clearly assign community authority to them."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Pohren's book as a valuable but imperfect account of flamenco as a way of life",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible beginning, evidence window, and ending provide enough context for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1980_08::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Flamenco, no matter how it is modernized, altered, or jazzed-up, depends upon its tradition, its roots, for its unique character.",
+        "target": "flamenco's unique character",
+        "rationale": "The passage grounds flamenco value and identity in tradition and roots despite modernization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "\"Flamenco must keep up with the times\" they say, when in reality the phrase should go, \"Flamenco is being destroyed by the times.\"",
+        "target": "modernized flamenco and social change",
+        "rationale": "Modernization and changing social conditions are framed as destroying the flamenco way of life."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "You are no longer content to be just an observer but feel you must participate in some way",
+        "target": "beginning flamenco students or enthusiasts",
+        "rationale": "The passage contrasts passive observation with active participation as a meaningful entry into flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I would liked to have made some good comments about the cante, but since since there was none, I limit myself to what has been said.",
+        "target": "the XII Gazpacho Andaluz cante",
+        "rationale": "The reviewer explicitly criticizes the event by judging that there was effectively no cante worth praising."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The ending criticizes the lack of cante and repetitive performance, but it does not clearly develop a distinct aesthetic criterion beyond general negative evaluation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'Many who perform flamenco professionally (foreign or Spanish)' mentions identity categories, but they do not organize authority or belonging strongly enough for this code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco as rooted way of life versus modernized performance and weak festival cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible packet combines continuation of a book review, a costuming/instruction excerpt, and a festival review ending; codes are assigned only to visible evidence spans."
+  },
+  {
+    "article_id": "JALEO_1980_09::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "began the study of it soon after under the strict direction of his father (his only teacher ever)",
+        "target": "Juan Serrano's guitar formation",
+        "rationale": "Serrano's flamenco knowledge is grounded in familial master-student transmission through his father."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "many critics and aficionados dubbed him \"the young Sabicas\"",
+        "target": "Juan Serrano",
+        "rationale": "The comparison to Sabicas canonizes Serrano by placing him in a value-bearing hierarchy with an exemplary guitarist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "he remembers, he could never forget his father's admonition to never lose touch with the traditional flamenco rhythms",
+        "target": "Serrano's solo guitar innovation",
+        "rationale": "The passage authorizes innovation by insisting on continuity with traditional flamenco rhythms."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "Serrano was awarded a gold medallion by the Spanish Academy of Fine Arts for spreading the music of Spain throughout the world -- the only flamenco guitarist to date to receive this honor.",
+        "target": "Juan Serrano's contribution to Spanish music",
+        "rationale": "An official cultural institution confers public recognition and value on Serrano's flamenco work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The tribute contains several praise terms such as 'revolutionary' and 'enormous success', but the stronger coding focus is canonization and official recognition rather than a separate review-style evaluation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The father is described as Serrano's teacher, but the evidence more specifically supports familial lineage transmission than generalized pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Juan Serrano as an innovative but tradition-linked flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "You are no longer content to be just an observer but feel you must participate in some way",
+        "target": "Jaleo readers and flamenco enthusiasts",
+        "rationale": "The letters explicitly contrast passive observation with active participation in flamenco community discourse and practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "I can agree with Pohren's assessment that it is probably doomed as a lifestyle",
+        "target": "flamenco as a lifestyle",
+        "rationale": "The letter legitimates flamenco as a lived way of life and frames that lifestyle as endangered."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "what is most exciting about Serrano's music at present is that he has found a way to combine the empathetic interpretations, fiery rhythms",
+        "target": "Serrano's current music",
+        "rationale": "The authors explicitly evaluate Serrano's music and identify qualities that make it exciting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The juerga letter depicts a pleasant community gathering, but it does not clearly grant aficionados or the group authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The letter mentions Paco's evaluation and Pohren's stance on commercialism, but the visible text does not clearly exercise expert boundary critique beyond general agreement."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "reader participation, flamenco lifestyle, and Serrano's music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated and includes multiple letters plus the end of a Serrano piece; codes are based only on visible spans."
+  }
+]

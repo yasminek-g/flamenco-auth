@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "JALEO_1985_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Amaya's innovations were completely integrated into the traditional aesthetic from which she sprung. Amaya's essential heritage was the gypby tradition and aesthetic",
+        "target": "Carmen Amaya's flamenco style",
+        "rationale": "The passage legitimates Amaya's innovations by rooting them in, and showing their reintegration into, a traditional flamenco aesthetic."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The audience is a participant, albeit passive, identifying emotionally (racially) with the artists.",
+        "target": "flamenco audience-performer relation",
+        "rationale": "The text defines flamenco reception as participatory co-presence rather than detached spectatorship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Amaya freely appropriated elements of both male and female movement... By wearing pants... Carmen Amaya could play out her masculine aspects, and hence paradoxically arrive at an artistic maturity which was powerfully female.",
+        "target": "Carmen Amaya's gendered performance style",
+        "rationale": "The passage frames Amaya's authority and maturity through gendered movement categories and their transformation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The word 'heritage' appears, but the passage frames artistic inheritance and tradition rather than public cultural heritage or patrimony."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Amaya is praised as internationally influential, but the stronger visible discourse is tradition/identity framing rather than explicit canon ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community"],
+      "target": "Carmen Amaya's flamenco style",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible excerpt."
+  },
+  {
+    "article_id": "JALEO_1985_10::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Seville has its first school of guitar... there are four levels of teaching: beginners (basic), intermediate advanced and professional.",
+        "target": "Seville guitar school",
+        "rationale": "The passage frames flamenco guitar learning through an institutional school structure with sequenced levels of access."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Not only must one learn to play by ear, but also one must learn technique.",
+        "target": "flamenco guitar pedagogy",
+        "rationale": "The speaker defines proper flamenco guitar learning through embodied/oral learning by ear while adding technical training."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "many guitar teachers, very good of course, who give classes at their homes. But a school for guitar has not existed up to now.",
+        "target": "flamenco guitar teachers and school instruction",
+        "rationale": "The passage authorizes flamenco knowledge through teachers and the newly formalized school as a legitimate site of instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The mention of roots and Triana supplies location/origin atmosphere, but does not clearly use roots to authorize proper flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Quality and force are named, but the passage primarily discusses learning methods rather than applying aesthetic criteria in a review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "institutional flamenco guitar pedagogy in Seville",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Carmen meant that our dances and music were taken seriously at last",
+        "target": "Spanish dances and music in Carmen",
+        "rationale": "The statement evaluates Carmen as a turning point that secured serious recognition for the dance and music."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The memory language is personal biographical recollection and does not frame collective heritage, safeguarding, or public memory-work."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to artists and friendships suggests social milieu but does not clearly grant community authority over flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Carmen and the seriousness of Spanish dance/music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most visible material is biographical interview content; only the ending provides a clear evaluative discourse move."
+  },
+  {
+    "article_id": "JALEO_1985_10::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Its tablao is quite acceptable and probably impressive to the tourist trade. In addition to the standard flamenco numbers, well performed but not fabulous",
+        "target": "El Cordobés tablao performance",
+        "rationale": "The passage explicitly evaluates the tablao performance as acceptable and competent but limited."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Such an ambitious interpretation is almost doomed to mediocrity from its inception; the music requires a large corps of dancers or at least a very variegated choreography that pure flamenco would be hard pressed to provide.",
+        "target": "Las Bodas de Luis Alonzo in a tablao/pure flamenco frame",
+        "rationale": "The critic polices the boundary of what pure flamenco can support and rejects the staged interpretation as likely mediocre."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "flamenco never has been strong here and Catalans scarcely tolerate anything Spanish, flamenco included.",
+        "target": "Barcelona/Catalan relation to flamenco",
+        "rationale": "The text frames flamenco through local and national identity tensions that affect belonging and reception."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Flamencos congregating in taverns is mentioned, but the visible passage does not clearly make that community an authority for judging flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Tablao and tourist trade are mentioned, but the stronger evidence is critical boundary-policing rather than a developed public/private participatory contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "community"],
+      "target": "Barcelona flamenco venues and performances",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible review excerpt."
+  },
+  {
+    "article_id": "JALEO_1985_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "One of the greatest influences in today's style of flamenco dance was the dance, the art, the personality and intuitive creativity of the late Carmen Amaya.",
+        "target": "Carmen Amaya's place in flamenco dance",
+        "rationale": "The passage canonizes Amaya as an exemplary influence on contemporary flamenco dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "she pulsed that ONE, two, three... rhythm into the flamenco world--and it has not stopped since.",
+        "target": "Carmen Amaya's alegrías rhythm and its continuity",
+        "rationale": "The passage grounds present flamenco style in a continuing rhythmic inheritance from Amaya."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "within the dance there are movements that demand a variety, a maturity, an aire and a technique",
+        "target": "alegrías dance",
+        "rationale": "The text defines quality in alegrías through aesthetic criteria such as aire, maturity, technique, rhythm, and stylistic control."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "sometimes the arte is sacrificed for noise and speed and frenzy... but it takes greater srt and control to maintain the original aire of the dance.",
+        "target": "public-performance endings in alegrías",
+        "rationale": "The passage critiques showy public-performance effects as potentially sacrificing artistic value and original aire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Rhythm and influence are central, but the passage does not clearly describe embodied/oral transmission or learning practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Public performance is linked to rah-rah endings, but the critique is aesthetic rather than explicitly anti-commercial or intimate-authenticity discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism", "tradition"],
+      "target": "Carmen Amaya's influence and alegrías performance practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations are limited to the visible excerpt."
+  }
+]

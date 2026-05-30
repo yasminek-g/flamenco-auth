@@ -1,0 +1,221 @@
+[
+  {
+    "article_id": "JALEO_1982_04::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Suddenly, incredible sounds issuing out of one single guitar transport you to Spain, to the heart of the dance in Andalusia",
+        "target": "El Curro's restaurant guitar performance",
+        "rationale": "The passage explicitly praises the sounds produced by the guitarist and evaluates the performance as evocative and impressive."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The reference to Andalusia evokes geographic origin, but it does not use roots or tradition to authorize present flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'gypsy flamenco' marks identity descriptively/exotically, but it does not clearly organize authority, belonging, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "El Curro's restaurant guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly atmospheric travel-style description; only the performance praise is coded."
+  },
+  {
+    "article_id": "JALEO_1982_04::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "the aspiring flamenco artist who was not raised in a flamenco environment in Spain, has little chance of ever understanding even a fraction of what flamenco is about",
+        "target": "aspiring flamenco artists not raised in a flamenco environment in Spain",
+        "rationale": "The passage draws a strong insider/outsider boundary around who can understand flamenco, tying authority to upbringing and place."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "One certainly does not learn flamenco from reading about it --- although it may be possible to pick up some facts about it. Even studying from a teacher and practicing doesn't seem to result in an understanding of flamenco.",
+        "target": "book learning, teacher study, and practice as routes to flamenco knowledge",
+        "rationale": "The editorial explicitly contests mediated and formal learning routes, making access to flamenco knowledge the central issue."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "The only chance we have of acquiring that small understanding is to spend extended periods of time in Spain.",
+        "target": "immersive learning in Spain",
+        "rationale": "Understanding is framed as acquired through immersion in a flamenco environment rather than written or formal instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The editorial implies that some people may or may not be 'a flamenco,' but the stronger discourse function is an insider/access boundary rather than a direct authenticity claim about a practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text comments on Jaleo's value, but the main force is pedagogical and boundary-setting rather than review-style aesthetic evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "pedagogy"],
+      "target": "non-Spanish or displaced learners seeking flamenco understanding",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The piece openly limits flamenco understanding to immersion and upbringing, while still leaving a narrow path through extended time in Spain."
+  },
+  {
+    "article_id": "JALEO_1982_04::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was obvious to me, from the article \"Punto de Vista\" in the March, 1982, Jaleo, that Mr. Lobóill lacks any such grace.",
+        "target": "Mr. Lobóill's criticism of Paco de Lucía",
+        "rationale": "The letter directly evaluates another writer's article and condemns its tone and judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "When Mr. Lobóill can contribute one percent of what Pacca de Lucía has to flamenco and to music in general, then he might be worth listening to.",
+        "target": "Mr. Lobóill's authority to criticize Paco de Lucía",
+        "rationale": "The writer challenges the critic's authority by making contribution to flamenco a condition for being worth hearing."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "when someone goes outside the bounds of their pure ethnic forms they are going for the money",
+        "target": "claims that Paco de Lucía's movement beyond pure ethnic forms is commercially motivated",
+        "rationale": "The letter contests a purity boundary that treats moving beyond ethnic forms as suspect or commercially corrupted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned in the New Zealand letter, but they are not positioned as authorities who judge or sustain flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The magazine helps a reader keep in touch in a flamenco-poor area, but the visible passage does not clearly frame this as flamenco learning or knowledge transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["criticism", "authenticity"],
+      "target": "Paco de Lucía's artistic direction and criticism of it",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible letter clearly contests a prior critical boundary placed around Paco de Lucía."
+  },
+  {
+    "article_id": "JALEO_1982_04::A4",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article lists record and method sources across countries, but it mainly provides collector logistics rather than evaluating access to flamenco knowledge or pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Comments such as 'cheap,' 'expensive,' or 'good selection' evaluate record vendors, not flamenco artists, performances, styles, or events."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Resource list for record collecting; no clear flamenco discourse code is supported."
+  },
+  {
+    "article_id": "JALEO_1982_04::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Martha was a superb instructor, exuding the spirit and \"el alma de los gitanos.\"",
+        "target": "Martha Sid-Ahmed as flamenco instructor",
+        "rationale": "The passage legitimates Martha as an instructor by praising both her teaching and her capacity to transmit flamenco spirit."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Several periods during the week, Maria would teach different groups of students how to do palmas with her footwork and with her guitar accompaniment. She also taught three other students the dance patterns to bulerías.",
+        "target": "school students learning flamenco through Maria's instruction",
+        "rationale": "Flamenco knowledge is transmitted in a school/festival context to students who gain access through organized instruction."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "students took their seats around Maria... soon the entire area and stairway leading to the second floor was surrounded by students who wanted to join in with palmas",
+        "target": "the mock juerga and impromptu university performance",
+        "rationale": "The value of the event is built around participatory co-presence, with students and audience members joining palmas rather than remaining detached spectators."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'seemingly authentic' is framed as an audience impression and is too hedged to support a direct authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises the event and notes competition awards, but the stronger discourse functions are pedagogical transmission and participatory setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "student flamenco learning and participatory school performance in Akron",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article legitimates student flamenco through instruction, embodied participation, and juerga-like collective involvement."
+  }
+]

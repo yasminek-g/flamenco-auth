@@ -1,0 +1,246 @@
+[
+  {
+    "article_id": "JALEO_1988_09::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The María Benítez Spanish Dance Company presented a compelling program... there was much to admire in her long line and lyric articulation of hands and fingers",
+        "target": "María Benítez Spanish Dance Company program and performers",
+        "rationale": "The review explicitly praises the program, Montero's solo, and Benítez's performance qualities."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "steely, lacy fusillades of foot beats of such exquisitely precise timing and dynamic range",
+        "target": "Eduardo Montero's farruca solo",
+        "rationale": "The passage applies timing, dynamic range, virtuosity, and footwork texture as aesthetic criteria for judging Spanish dance artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the young winner of the Premio Nacional de Flamenco awarded in Sevilla in 1984, José Luis Rodríguez",
+        "target": "José Luis Rodríguez",
+        "rationale": "The national prize is invoked to establish Rodríguez's comparative status and recognized standing among flamenco guitarists."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "a kind of purity that connotes great seriousness about one's art",
+        "target": "María Benítez's performing style",
+        "rationale": "Purity is used to authorize the seriousness and proper artistic value of Benítez's performance rather than as a mere descriptive adjective."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval trigger 'gesture' appears, but the passage evaluates performance gesture and audience relation rather than oral, embodied, lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "María Benítez Spanish Dance Company, Eduardo Montero, and associated festival artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on the visible review windows."
+  },
+  {
+    "article_id": "JALEO_1989_03::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "the more than four thousand people who were congregated in the bullring of Puerto Banús received them by doing palmas por bulerías, the way the flamencos have of showing their affection for their idols",
+        "target": "Lole y Manuel's audience reception",
+        "rationale": "The passage frames audience palmas as a socially meaningful flamenco mode of participation and recognition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "especially when they are gypsy artists like Lole Y Manuel, unique in their art",
+        "target": "Lole y Manuel",
+        "rationale": "Gypsy identity is used to shape how the artists' authority and reception are represented within flamenco community discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Lole burst into song, to the compás of Manuel — as always, like the angels... Manuel makes the bulería into a delicate artwork when he sings by himself",
+        "target": "Lole and Manuel's singing/performance",
+        "rationale": "The passage offers explicit praise of the performers' artistry and musical effect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and bulería are mentioned, but the passage does not clearly apply them as developed aesthetic criteria beyond general praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Lole y Manuel",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1989_03::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The editor discusses publication errors and hopes to improve quality, but this is editorial self-correction rather than criticism of flamenco art, performance, or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text concerns magazine production errors, not flamenco discourse as defined by the codebook."
+  },
+  {
+    "article_id": "JALEO_1989_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The function of the Fundación is to promote research into, and awareness of, flamenco. They offer research awards.",
+        "target": "Fundación Andaluza de Flamenco",
+        "rationale": "The Fundación is framed as an institutional mediator of flamenco knowledge through research, awareness, workshops, lectures, archives, and awards."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "one with the money and government backing and the other with the knowledge and tradition... I was impressed by the facilities of the Fundación when I was there this September, but not by the organization",
+        "target": "Fundación Andaluza de Flamenco and its competition with the Cátedra",
+        "rationale": "The editor uses critical authority to judge the institution and to police the boundary between funded infrastructure and flamenco knowledge/tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "between the two organizations — one with the money and government backing and the other with the knowledge and tradition",
+        "target": "the Cátedra versus the Fundación",
+        "rationale": "Tradition is invoked as a source of authority in judging which institution is better grounded in flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Fundación is institutionally backed and public-facing, but the visible text does not explicitly frame flamenco as heritage or patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Fundación Andaluza de Flamenco and the Cátedra",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1989_03::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "whether the artist develops the kind of style that becomes tradition in the true sense of the work — that becomes part of our heritage",
+        "target": "flamenco guitarists' style-setting work",
+        "rationale": "The passage grounds artistic value in becoming tradition and heritage for posterity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "only three guitar players of Andalusian folk music can be credited with these qualities: Ramón Montoya... Niño Ricardo... and... Niño Sabicas... These three stand out from all other guitar players",
+        "target": "Ramón Montoya, Niño Ricardo, and Sabicas",
+        "rationale": "The passage constructs a canon and hierarchy of exemplary guitarists who stand above others."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "to illustrate his incredibly creative power and his influence on contemporary flamenco",
+        "target": "Paco de Lucía",
+        "rationale": "The author explicitly evaluates Paco de Lucía's creative power and influence on contemporary flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "having contributed to the musical evolution of flamenco and for their technical innovation",
+        "target": "Montoya, Niño Ricardo, and Sabicas",
+        "rationale": "Technical innovation and contribution to musical evolution are used as criteria for judging flamenco guitar importance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word creative appears, but the visible passage concerns artistic influence and canon formation rather than learning access or pedagogy."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The word heritage appears, but the main discourse is tradition/canon rather than public cultural heritage or patrimonial management."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Paco de Lucía and canonical flamenco guitarists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on the visible review windows."
+  }
+]

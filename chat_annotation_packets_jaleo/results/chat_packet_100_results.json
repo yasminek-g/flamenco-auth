@@ -1,0 +1,174 @@
+[
+  {
+    "article_id": "JALEO_1981_03::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "some of his flamenco arrangements have become classics in the flamenco repertoire and have been recorded by such top artists as Mario Escudero and Paco de Lucía",
+        "target": "Esteban Sanlúcar's flamenco arrangements",
+        "rationale": "The passage canonizes the arrangements by calling them classics in the repertoire and linking them to top artists."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Esteban Sanlúcar's flamenco arrangements",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_03::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Publicity-style company description and booking information without clear evaluative, pedagogical, authenticity, heritage, or community-authority discourse."
+  },
+  {
+    "article_id": "JALEO_1981_03::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The guitar society and informal social time suggest community activity, but the passage does not grant the group authority to recognize, sustain, or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_03::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The guitarist's role in accompanying malagueña is not a difficult one... the guitarist must discern whether the singer has stopped on Bb or a semi-tone lower, on A",
+        "target": "learning guitar accompaniment for malagueña",
+        "rationale": "The article explicitly teaches readers how to understand and perform malagueña accompaniment, mediating technical flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Alora, is generally considered to be the site of origin of the malagueña libre, the true malagueña that is sung without compás or rhythm",
+        "target": "malagueña libre",
+        "rationale": "The passage presents malagueña libre as the true malagueña, attributing properness to a specific form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Alora, is generally considered to be the site of origin of the malagueña libre",
+        "target": "malagueña libre",
+        "rationale": "The passage grounds the form's significance in an origin site, using roots/origin language to authorize its place in flamenco history."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The term 'fandango grande' could suggest status, but in the visible text it mainly functions as a technical category rather than a hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The discussion of compás, rhythm, and emotional expression has aesthetic relevance, but the dominant discourse function is instructional rather than critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "malagueña and malagueña libre accompaniment/practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible technical and origin claims are sufficient for conservative coding."
+  },
+  {
+    "article_id": "JALEO_1981_03::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "They will be attending the juerga, not to perform in a formal sense, but to share their abilities and encourage others... the rest of the evening they will be involved as guests and juergistas.",
+        "target": "March juerga format",
+        "rationale": "The passage explicitly values informal participatory co-presence over a formal performance frame."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Marcos studied guitar with Diego del Gastor and most of the other guitarists in Morón, as well as with Pedro Bacán, Rafael Mendiola and Miguel Domínguez... Two of her singing teachers have been Bernardo el de los Lobitos and Joselero.",
+        "target": "Marcos and Rubina Carmona",
+        "rationale": "The artists' authority is supported through named teachers and recognized pedagogical lineages."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "They are considered to be among the top artists currently working in this country.",
+        "target": "Marcos and Rubina Carmona",
+        "rationale": "The passage ranks the Carmonas among the top artists, constructing a hierarchy of contemporary flamenco performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The juerga community is present, but the stronger visible claim concerns participatory setting rather than community authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Marcos and Rubina Carmona at the March juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

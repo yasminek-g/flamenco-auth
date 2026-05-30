@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "JALEO_1985_SPRING::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "To approach flamenco as a profession, is a great responsibility, for you are a representative of this great art form that is so often misunderstood.",
+        "target": "professional flamenco dancers",
+        "rationale": "The passage defines the proper professional relation to flamenco as responsible representation of a misunderstood art form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Flamenco in many of the tablaos in Spain has been used primarily for tourist attraction and the cliches of flamenco are encouraged, often with mediocre talent.",
+        "target": "tourist-oriented tablao flamenco",
+        "rationale": "Tourist commercial presentation is framed as encouraging clichés and mediocrity, weakening proper flamenco representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Many beginners feel that, after a short period of study, they can put on the costume, dance their routines and cliches, and think that the public will not know the difference.",
+        "target": "underprepared beginners performing flamenco",
+        "rationale": "The author uses critique to police the boundary between serious professional flamenco and superficial costumed performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article contrasts proper flamenco with clichés and mediocrity, but the stronger discourse function is anti-commercial/boundary critique rather than explicit purity rhetoric."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Respect, knowledge, compás, and feeling appear as value criteria, but the clearest coding is the broader critique of professional responsibility and tourist cliché."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "professional flamenco practice versus tourist-oriented or underprepared performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly normative about who is ready to represent flamenco professionally."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This track in my opinion, spoils an otherwise excellent record. The music is corny and seems to be an unsuccessful attempt at the Paco de Lucia style of performance.",
+        "target": "Marcos's record track with John James",
+        "rationale": "The reviewer explicitly evaluates the track negatively and contrasts it with the otherwise excellent record."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "although not sticking to the traditional form of doing this style, achieves a dramatic \"jondura,\" a spine tingling lamentation.",
+        "target": "Camarón's \"Campanas del Alba\"",
+        "rationale": "Jondura and dramatic lamentation are applied as aesthetic criteria for valuing the recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Esteban Sanulcar. This is an attractive piece composed by a guitarist who, in the 1930s, was considered to be a phenomenon by other guitarists and was the Paco de Lucia of his time.",
+        "target": "Esteban Sanulcar",
+        "rationale": "The passage constructs a historical hierarchy by comparing Sanulcar to Paco de Lucía as an exemplary guitarist of his era."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional compositions and traditional form are mentioned, but they mainly function within record evaluation rather than independently authorizing continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Marcos is said to have learned with maestro Pepe Martinez, but this is biographical publicity rather than a developed claim of pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "reviewed flamenco recordings and artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text is a set of record reviews, so evaluative criticism is the dominant discourse function."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The syllabus of the Spanish Dance Society is taught for credit at George Washington University.",
+        "target": "Spanish Dance Society syllabus",
+        "rationale": "The passage frames Spanish dance learning through an institutional university-credit structure."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Adela Clara, founder of Theatre Flamenco of San Francisco, is a sought-after and inspirational teacher, choreographer and soloist. Her academic teaching credits include major residencies at the University of Utah; Master classes at Sonoma State College, San Jose State College and Dominican College in CA",
+        "target": "Adela Clara as teacher and choreographer",
+        "rationale": "Her teaching authority is legitimated through institutional residencies, master classes, and professional credentials."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "lecture-demonstrations with musicians and dancers under the direction of Marina Keet, will present a survey of Spanish dance under the title \"Exploring Spanish Dance.\"",
+        "target": "Spanish Dance Society lecture-demonstrations",
+        "rationale": "The lecture-demonstrations mediate Spanish dance knowledge for public and institutional audiences."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The New York Times praise and promotional adjectives evaluate dancers, but the passage is primarily a press release and the clearest discourse is pedagogical authorization."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Regional dances and influences are to be discussed and demonstrated, but the text lacks explicit safeguarding or public heritage framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "institutional Spanish dance instruction and workshops",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Two PED_03 entries are retained because one concerns formal university-credit instruction and the other public lecture-demonstration mediation."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "I've tried to recreate the authentic 'cafe cantantes' or 'tableau flamenco' such as in Spain.",
+        "target": "Rosa Montoya's staged dinner-club flamenco format",
+        "rationale": "Montoya explicitly claims authenticity for her recreation of Spanish café cantante/tablao flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Instead of a theatrical stage or concert setting, a feeling of intimacy between the audience and dancers will be established in a dinner-club atmosphere",
+        "target": "audience-dancer relation in Montoya's performances",
+        "rationale": "The passage contrasts formal spectator settings with intimate co-presence as meaningful for the flamenco experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "It's a feeling - an expression. It must have good cantes [singing], good palmas [clapping] and good guitar accompaniment to complement the 'tiempo' or rhythm of the dancer.",
+        "target": "proper flamenco performance",
+        "rationale": "The passage defines flamenco quality through feeling, expression, cante, palmas, guitar accompaniment, and rhythm."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "possibly the only \"gypsy\" flamenco dance artist teaching in the United States",
+        "target": "Rosa Montoya's teaching authority",
+        "rationale": "Gypsy identity is used to frame Montoya's distinctive authority and representation as a flamenco teacher in the United States."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Montoya is described as teaching students for 12 years, but the visible passage emphasizes identity and authenticity more than pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Critical praise from Dance Magazine appears, but it mainly supports biographical prestige rather than a developed review judgment in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "Rosa Montoya's flamenco performance and teaching practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1985_SPRING::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The juerga is described as a friendly community gathering, but no authority, recognition, or insider competence is attributed to the group."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text reports attendance and enjoyment at a social event, but does not contrast participatory versus spectatorial flamenco or attach value to the setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The short item is mainly an event/social notice and photo caption text."
+  }
+]

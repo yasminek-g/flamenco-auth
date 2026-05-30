@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "JALEO_1979_07::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Footwork should say something. As you learn, it should say something about yourself; it should be musically, visually, and dramatically a reflection of your feeling and love of flamenco.",
+        "target": "flamenco dance footwork pedagogy",
+        "rationale": "The passage teaches how footwork should be understood and practiced, positioning the article's method as a guide to proper expressive flamenco dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "These are basic ideas in approaching footwork as a musical instrument, as a part of the beautiful whole body expressing good and exciting flamenco, expressing that particular compás that you are dancing and \"saying something\"",
+        "target": "quality criteria for flamenco footwork",
+        "rationale": "The text defines good footwork through aesthetic criteria of musicality, whole-body expression, compás, clean sound, and meaningful expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The passage emphasizes embodied practice, posture, balance, and body control, but it does not clearly frame knowledge as oral, familial, lineage-based, or socially transmitted."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "expressive, musically integrated flamenco footwork",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "This is due in part to the use of castanets, and the mistaken idea that castanets are an exclusively flamenco accompaniment. In fact, castanets are not flamenco in origin at all, but rather distinctly Spanish.",
+        "target": "the classification of castanets as flamenco",
+        "rationale": "The passage corrects a mistaken public classification and draws a boundary between flamenco and broader Spanish dance practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "As Alan Kriegsman put it in the Washington Post this week, \"At the mention of Spanish dance most of us instantly think... There was plenty of that when the Ballet Nacional made its local debut, but there was also a lot more... For this superb troupe is unlike any Spanish dance group that has ever existed.\"",
+        "target": "Ballet Nacional and the interpretation of Spanish dance",
+        "rationale": "A named critic is invoked as an authoritative voice to evaluate the troupe and reframe public understanding of Spanish dance beyond flamenco stereotypes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "only later did it incorporate from existing Spanish dances the use of the castanets -- and then only in some forms of flamenco, not in all of them.",
+        "target": "historical relation between flamenco and castanets",
+        "rationale": "Historical origin and continuity are used to authorize a corrected understanding of which elements properly belong to flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The government creation of the Ballet Nacional gives institutional value to Spanish dance, but the visible text does not frame this as heritage, patrimony, or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Spanish dance and flamenco's place within it",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "Chacón took it the theater, thus laying the foundation for an artistic degradation that would culminate in the flamenco \"operas\".",
+        "target": "the theatricalization of flamenco cante",
+        "rationale": "The passage treats movement into the theater and later flamenco operas as a corrupting public/staged transformation of the art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "he opened the way to the most fateful epoch of this art. \"To those slight, slow modernizing changes that Don Antonio Chacón would introduce because of his fame, one may attribute cause of a later eruption -- this time dangerous and decisive -- of Pepe Marchena...\" writes Gonzales Climent.",
+        "target": "Chacón's modernizing influence and later flamenco opera tendencies",
+        "rationale": "A cited expert voice uses critique to police the boundary between valued flamenco art and dangerous modernizing/staged degradation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "besides possessing that personality of his, everything he heard he studied and improved, if it was possible. In his voice everything was enormous...of the ones I have met, he has been the man most honest and most respectful of his art.",
+        "target": "Don Antonio Chacón",
+        "rationale": "The passage elevates Chacón as an exemplary, almost unmatched artist through hierarchical praise and canonizing testimony."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga scene includes expectations of respectful listening, but the excerpt does not clearly contrast participatory/private settings with public spectatorship as the main evaluative frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Chacón as artist and the theatrical modernization of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning/window/end provide sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1979_07::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "My experience with juergas had been largely among people I knew at least casually--in San Diego, at the Finca Espartero, in Morón itself. Here, Ansonini became a spectacle, a show, no matter how great or how solid the attending aficionón.",
+        "target": "Ansonini's Seattle juerga/performance setting",
+        "rationale": "The passage contrasts familiar juerga participation with a living-room situation where the artist becomes a spectacle for onlookers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Ansonini was the foreigner, surrounded by small groups of onlookers, supported by his American accompanist, Ken Parker. Ansonini had to bring all the ambiente with him from Spain",
+        "target": "Ansonini's position in the American flamenco gathering",
+        "rationale": "The passage constructs an insider/outsider boundary around ambiente, foreignness, and the social conditions needed for flamenco recognition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "García Lorca called it the sonido negro, the black sound. He said it could make the quicksilver of mirrors open up. I can report objectively that men wept and tore their hair, and that women fell on their knees and crossed themselves.",
+        "target": "Ansonini's cante",
+        "rationale": "The passage uses sonido negro and overwhelming emotional force as aesthetic criteria for judging the depth of Ansonini's singing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The passage contrasts spectacle with juerga ambiente, but it does not explicitly frame commercial or staged distance as a loss of authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Ansonini's flamenco performance in an American juerga setting",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible evidence supports the emitted community and aesthetic codes."
+  },
+  {
+    "article_id": "JALEO_1979_07::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fue realmente un éxito y en todo momento reinó la alegría y el espíritu flamenco.",
+        "target": "the June juerga at the Thompsons' residence",
+        "rationale": "The passage explicitly evaluates the juerga as a success and praises its flamenco spirit."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Besides adding her energy and vitality to every juerga, she plays a major role, as distribution manager, assuring that Jaleo reaches its many destinations throughout the world.",
+        "target": "Emilia Thompson's role in the Jaleo/flamenco community",
+        "rationale": "The passage presents a community participant as sustaining juerga life and the circulation of flamenco periodical culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "La dueña de la casa... ofició de anfitriona cordial y amable, por lo tanto se logró elclima ideal; en ningún momento decayó el ambiente y se lucieron en el tablao de la planta baja nuestros valores locales.",
+        "target": "the house juerga as a participatory flamenco setting",
+        "rationale": "The home-hosted juerga is valued through its ideal ambiente and the display of local participants, making the social setting central to the event's value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"la meca del flamenco\" invokes Sevilla as a valued center, but the excerpt does not develop a tradition, continuity, or roots claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the local juerga community and its event",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

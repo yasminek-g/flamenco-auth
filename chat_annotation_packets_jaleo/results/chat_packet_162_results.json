@@ -1,0 +1,174 @@
+[
+  {
+    "article_id": "JALEO_1983_02::A10",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief juerga information notice; no visible evaluative, authorizing, pedagogical, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1983_02::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'Flamenco: For the Purist Its a Ritual, Not a Spectacle' appears only as a back-issue article title in a contents list, so the visible text does not itself perform purity boundary-work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Items such as 'flamenco dictionary' and 'A Masterful Lesson by Maestro Sabicas' suggest educational content, but they are listed as back-issue contents rather than visible discourse about learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is a sales/listing notice for back issues; lexical triggers are titles only."
+  },
+  {
+    "article_id": "JALEO_1983_03::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "This scholarship included personal training by world renowned artists José Greco, Nana Lorca and Paul Haakon and culminated in professional performance.",
+        "target": "Libby Komaiko Fleming's Spanish dance training",
+        "rationale": "Her authority is legitimated through direct training with recognized pedagogical and artistic figures."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Libby began her formal dance training... Director of the dance program at the Chicago Musical College of Roosevelt University... [and] majored in dance at the nationally acclaimed dance program of Butler University.",
+        "target": "Libby Komaiko Fleming's institutional dance formation",
+        "rationale": "The biography frames her dance knowledge through formal training, university programs, scholarship structures, and transnational study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'world renowned artists' and 'nationally acclaimed dance program' imply prestige, but the passage mainly credentials training rather than constructing a flamenco canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Libby Komaiko Fleming's dance authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Codes are limited to credentialing and pedagogical transmission visible in the biography."
+  },
+  {
+    "article_id": "JALEO_1983_03::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "we must depend on you, the readers, to help us gather and report this information.",
+        "target": "Jaleo readers and local correspondents",
+        "rationale": "The editorial positions the reader community as necessary participants in sustaining and circulating flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The mention of Ken Sanders offering 'tips on guitar technique' suggests knowledge mediation, but it is a brief staff announcement rather than a developed discourse about learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "reader-correspondent participation in the flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The main discourse function is community-based information gathering rather than aesthetic evaluation."
+  },
+  {
+    "article_id": "JALEO_1983_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "both played first at performance speed and then slowed down with close-ups... the teaching of various rumba strum patterns from elementary to complex",
+        "target": "Peter Baime's instructional video cassette",
+        "rationale": "The video is explicitly framed as a mediated learning tool that makes flamenco guitar technique accessible through slowed demonstrations and graded instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Peter Baime has produced a second video cassette even more spectacular than the first!... his playing was excellent throughout the tape.",
+        "target": "Peter Baime's video cassette and playing",
+        "rationale": "The letter explicitly evaluates the tape's production quality and performance success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "If variety and excitement in dance are what you're looking for look no further -- Ensemble Español offers it all.",
+        "target": "Ensemble Español performance",
+        "rationale": "The visible ending provides an explicit positive performance judgment of the ensemble."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The word 'public' appears in a sales/access context for video tapes, not as an evaluative public/private or participatory flamenco setting contrast."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Fleming's institutional credentials and named teachers are visible in a biography fragment, but the truncated composite text does not give enough focused pedagogical-authority discourse to emit a second pedagogy code confidently."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "instructional video and Ensemble Español performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated composite contains both a video-letter review and a performance review; codes are limited to clear visible evaluative and pedagogical spans."
+  }
+]

@@ -1,0 +1,213 @@
+[
+    {
+        "article_id": "JALEO_1980_09::A18",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "high",
+                "evidence_quote": "A juerga is such a communal effort that it usually is impossible to single out one participant",
+                "target": "the Ohio juerga as a participatory flamenco setting",
+                "rationale": "The passage explicitly values the juerga as a collective, participatory setting rather than an individual or detached performance event."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "all of which were achieved through the extremely sensitive and dynamic toque of Greg Wolfe",
+                "target": "Greg Wolfe's guitar playing",
+                "rationale": "The writer makes a direct evaluative judgment of a flamenco performer's contribution and quality."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "medium",
+                "evidence_quote": "Greg's accompanying was thoughtful and stimulating with quick stops and slow spaces",
+                "target": "Greg Wolfe's accompaniment",
+                "rationale": "The evaluation applies aesthetic criteria of sensitivity, dynamics, pacing, and accompaniment to explain the value of the performance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "reason": "The juerga is intimate and home-based, but the text does not explicitly frame that intimacy as more authentic or opposed to staged/commercial flamenco."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community",
+                "criticism"
+            ],
+            "target": "the Ohio juerga and Greg Wolfe's playing",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Community value and performance evaluation are explicit; authenticity was not inferred from the home/juerga setting alone."
+    },
+    {
+        "article_id": "JALEO_1980_09::A19",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "high",
+                "evidence_quote": "We appeal, again, to local members who attend juergas and enjoy them - who attend or participate in local performances - who have a few friends over for the evening and a mini-juerga develops - jot down your impressions and send them in to JALEO.",
+                "target": "local JALEO members and San Diego flamenco coverage",
+                "rationale": "The passage assigns local participants responsibility for sustaining and representing the flamenco community through reporting."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "The June juerga was our first experiment in an extended weekend campout. Jale\u00edstas trekked from as far away as central California and Nevada",
+                "target": "the June juerga campout",
+                "rationale": "The juerga is framed as a socially meaningful participatory gathering that draws committed members across distance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_01",
+                "reason": "The line 'This was not a juerga for everyone' suggests practical selectivity, but it does not clearly construct an insider/outsider authority boundary."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "local Jaleistas and participatory juerga culture",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The strongest discourse function is community self-representation and participation, not aesthetic judgment."
+    },
+    {
+        "article_id": "JALEO_1980_09::A20",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "'An excellent juerga site' is generic praise of a location and does not clearly evaluate flamenco artistry, practice, or discourse."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The notice thanks hosts and members, but it does not clearly assign community authority or define belonging beyond routine event administration."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Short administrative apology and event notice; no clear code-worthy discourse function."
+    },
+    {
+        "article_id": "JALEO_1980_09::A21",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "high",
+                "evidence_quote": "Francisco and Elizabeth are two of our most stalwart JALEISTAS. Besides opening their home for the third year in a row for a summer juerga, they sponsor and promote flamenco in San Diego in every way they can.",
+                "target": "Francisco and Elizabeth Ballardo as JALEISTAS community members",
+                "rationale": "The passage legitimates the hosts through sustained community service, support, promotion, and participation in local flamenco life."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "Members are encouraged to be selective in their guest invitations. The two guest limit per member and twenty guests per juerga mains in effect.",
+                "target": "access to the September juerga",
+                "rationale": "The notice frames the juerga as a controlled participatory setting where membership and guest selection shape access."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Elizabeth studying dance and Francisco becoming more proficient indicate learning, but the passage is biographical and does not thematize pedagogy or access to flamenco knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "the Ballardos and the September juerga as a member-governed community event",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The guest-limit language supports a participation/access boundary, but not a strong insider epistemic boundary."
+    },
+    {
+        "article_id": "JALEO_1980_09::A23",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "A PALO SECO -- singing without musical accompaniment; as in martinates, saetas, deblas. ABANICO (el) -- fan; often used in theatrical presentations of flamenco dance",
+                "target": "readers learning flamenco terminology",
+                "rationale": "The dictionary format explicitly mediates access to flamenco knowledge by defining specialized vocabulary for readers."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "the gypsy population of this city has produced a number of outstanding flamenco artists, including Carmen Amaya, La Chunga, and La Singla",
+                "target": "Barcelona's Gypsy flamenco artists",
+                "rationale": "The passage elevates named artists as outstanding examples, constructing a modest hierarchy or canon within the dictionary entry."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The Andaluc\u00eda entry states that flamenco originated and developed there, but in this dictionary context it functions mainly as neutral instruction rather than a tradition/roots claim authorizing present value."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The Carmen Amaya issue solicits articles, photos, clippings, and programs, but it does not clearly frame this as safeguarding, public heritage, or collective memory-work."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The reference to Barcelona's Gypsy population links identity and artistic production, but the short dictionary entry does not clearly make identity the basis of authority or belonging."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "flamenco terminology and named exemplary artists",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The dictionary mediates knowledge directly; origin and identity references were treated conservatively unless they did more than describe."
+    }
+]

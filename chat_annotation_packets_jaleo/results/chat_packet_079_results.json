@@ -1,0 +1,191 @@
+[
+  {
+    "article_id": "JALEO_1980_07::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative notice about juerga scheduling; no clear evaluative, authorizing, pedagogical, communal, heritage, or critical discourse."
+  },
+  {
+    "article_id": "JALEO_1980_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Diego was recognized as one of the masters of the pure style of flamenco... all exponents of the pure art form, which revolves around duende",
+        "target": "Diego del Gastor, associated Morón artists, and their flamenco style",
+        "rationale": "The passage explicitly defines a legitimate flamenco lineage through purity language and presents Diego and associated artists as exponents of the pure form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "He turned down jobs even though his family needs the money, because he would not sacrifice his art.",
+        "target": "Diego del Gastor's artistic practice",
+        "rationale": "Refusing paid work is framed as preserving artistic integrity, linking commercial opportunity to a possible sacrifice of authentic art."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "\"Throw fiestas instead,\" she told him, \"and just watch. You can learn more that way.\"",
+        "target": "American students learning flamenco from Morón/Gypsy social practice",
+        "rationale": "The passage presents flamenco knowledge as acquired through embodied observation and social immersion rather than formal lessons."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "For some American aficionados, there is something so pure about the gypsies, you don't have to study the craft at all. You merely have to live in Spain for awhile and absorb the gypsies as they live their lives",
+        "target": "Gypsy identity as source of flamenco authority",
+        "rationale": "The passage frames Gypsy life and identity as the source from which outsiders can absorb flamenco legitimacy and knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'masters' and 'best flamenco guitarist in the Bay Area' imply hierarchy, but the dominant discourse work is authenticity and transmission rather than canon-building."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Morón-associated flamenco practice and its transmission to American aficionados",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_08::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial asks readers to loan material for tribute issues, but it does not clearly frame this as safeguarding, collective memory, or public cultural heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Primarily an editorial note about issue contents and soliciting materials."
+  },
+  {
+    "article_id": "JALEO_1980_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the secret is to be influenced, but not dominated by others... New creative material has to be somewhat different, but it has to sound like flamenco.",
+        "target": "Flamenco guitarists creating new material from existing models",
+        "rationale": "The passage explicitly theorizes copying, influence, transformation, and creative autonomy within flamenco learning."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco creativity is very difficult since there are boundaries. New creative material has to be somewhat different, but it has to sound like flamenco.",
+        "target": "New flamenco guitar material",
+        "rationale": "The passage defines proper new flamenco by whether it remains recognizably flamenco despite innovation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage mentions rhythm, melody, and bass line, but these are used as compositional examples rather than applied aesthetic criteria for judging a specific performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Creative flamenco guitar practice by American guitarists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_08::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the dying duende triumphed as it had to, dragging the rusted blades of its wings along the ground.",
+        "target": "Flamenco dance and performance power",
+        "rationale": "Duende is used as the decisive aesthetic criterion explaining why the old dancer's performance triumphs over conventional beauty."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "a gypsy seeking to summon the duende can only contribute to the process by peeling away the strata of individuality... an aspect of the gypsy's Indian heritage.",
+        "target": "Gypsy identity and flamenco duende",
+        "rationale": "The passage frames Gypsy identity and heritage as shaping how duende is accessed and performed."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Antonio Ordonez was the greatest matador of recent times. He proved it regularly, displaying an inspired classical brilliance which no other torero could even dream of matching.",
+        "target": "Antonio Ordonez and the hierarchy of performance artistry used to frame flamenco's mysteries",
+        "rationale": "The passage constructs an explicit hierarchy of artistic greatness that is used within an argument about duende and flamenco aesthetics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The reference to Gypsy Indian heritage suggests roots, but it is speculative and secondary to identity framing and aesthetic analysis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Duende as a flamenco aesthetic and identity-based performance principle",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for the emitted codes."
+  }
+]

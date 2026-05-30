@@ -1,0 +1,273 @@
+[
+  {
+    "article_id": "JALEO_1980_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "his native country, Spain, honored him -- only four years ago -- with the Comendador del Merito Sevillano. \"The Spanish government, at this late date,\" Mrs. Montoya said sighing, \"finally realized Carlos was the best ambassador they ever had.\"",
+        "target": "Carlos Montoya",
+        "rationale": "Official Spanish recognition is presented as overdue public validation of Montoya's cultural value as a flamenco ambassador."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "It is the gypsy in Montoya that has an intuitive feel for rhythm and melody. The instinctive power which allows him to create what he feels.",
+        "target": "Montoya's flamenco musicianship",
+        "rationale": "The article uses Gypsy identity to explain and authorize Montoya's intuitive flamenco creativity and musical embodiment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "The instinctive power which allows him to create what he feels. Not what he knows.",
+        "target": "Montoya's guitar artistry",
+        "rationale": "The passage defines artistic value through intuition, feeling, and spontaneous creation rather than learned technique."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains praise such as 'brilliantly improvised,' but the stronger evaluative function is already captured through aesthetic criteria and identity-based authorization."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The contrast between natural ability and learned knowledge mentions learning, but it does not describe transmission, apprenticeship, or lineage-based pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Carlos Montoya's flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_07::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "René was being awarded for his contribution to the arts and culture of the city.",
+        "target": "René Heredia",
+        "rationale": "A civic award is presented as institutional recognition of René Heredia's contribution to local arts and culture."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "\"All these people come to listen, to really listen!\"",
+        "target": "the club audience for René Heredia's flamenco show",
+        "rationale": "The passage values attentive listening as a meaningful participant relation rather than mere entertainment spectatorship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The Morca workshop listing mentions technique, repertory classes, and discussions, but it is mainly administrative promotion without clear authority or access discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article emphasizes friendship and shared memories, but the visible text does not clearly make those social ties a source of flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "community"
+      ],
+      "target": "René Heredia's local flamenco/cultural role and audience culture",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1980_07::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "In Paris live professional artists who are dedicated to perpetuating the tradition of genuine flamenco.",
+        "target": "professional flamenco artists in Paris",
+        "rationale": "The passage legitimates these artists by presenting them as preserving and continuing a genuine flamenco tradition."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "From their midst sprang Manitas de Plata who symbolizes a flamenco that is far from pure, but which, at least, has the merit of realizing it.",
+        "target": "Manitas de Plata and Catalan Gypsy flamenco",
+        "rationale": "The passage explicitly draws a purity boundary by labeling this flamenco as far from pure while still granting limited value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "we see cantaores singing rumbas or boleros of the worst taste in tablaos where people ignore everything about cante flamenco -- they would confuse a pasodoble with a bulería.",
+        "target": "commercial tablao compromises in Paris",
+        "rationale": "The author polices flamenco boundaries by criticizing commercial compromise, ignorant audiences, and repertory judged incompatible with serious cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Here we are far from cante jondo, that cante of which the Andalucian gypsies are the exclusive trustees.",
+        "target": "Andalucian Gypsies and cante jondo",
+        "rationale": "The passage assigns custodial authority over cante jondo to an ethnic/regional identity group."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to great maestros and high-level groups imply hierarchy, but the stronger discourse function is boundary critique and authenticity/purity evaluation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial performance is criticized, but the visible passage frames it mainly as purity/boundary degradation rather than a general theory of anti-commercial authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco practice in France, especially Paris professionals and Catalan Gypsy flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Spain has the most richly diversified cultural heritage in the world.",
+        "target": "Spanish music and dance as the context for flamenco",
+        "rationale": "The author frames flamenco within a broader public-cultural heritage discourse about Spain's musical and dance diversity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "You should never let a costume dominate your dance. Your earliest consideration when designing a costume should be for the mood of the dance you will be performing",
+        "target": "flamenco costume design for dancers",
+        "rationale": "The passage gives prescriptive instructional guidance about how dancers should design costumes in relation to performance meaning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sometimes they can make too strong a statement and can distract from a dance",
+        "target": "flamenco costuming",
+        "rationale": "The article applies an aesthetic criterion: costume quality depends on whether it supports rather than dominates or distracts from the dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Several costume examples are implicitly negative, but they function mainly as criteria for proper costuming rather than a review of a specific performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article is instructional, but it does not specifically frame institutional, transnational, or outsider access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco costuming as performance practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_07::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "The juergas brought people together, created new performing groups, and encouraged aficionados to support these groups.",
+        "target": "Jaleístas juergas and San Diego flamenco community",
+        "rationale": "The passage presents community gatherings and aficionado support as sustaining and authorizing local flamenco activity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I believe Jaleístas had a lot to do with the present situation.",
+        "target": "Jaleístas",
+        "rationale": "The author evaluates Jaleístas positively by crediting the organization with improving San Diego's flamenco performance ecology."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Juergas imply participatory flamenco settings, but the visible passage emphasizes community support and organization-building rather than a public/private participatory contrast."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The opening mentions artists criticizing JALEO and Jaleístas, but it does not develop an expert boundary critique around proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Jaleístas and JALEO's role in San Diego flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "article_id": "JALEO_1977_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Whatever atmosphere there is to be here, we must create ourselves.",
+        "target": "San Diego flamenco association and juergas",
+        "rationale": "The passage frames local participatory settings as necessary for flamenco to flourish rather than as mere event logistics."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Having juergas on a regular basis will give us an opportunity to meet and share with some of these other contingents.",
+        "target": "local flamenco enthusiasts, Spaniards, and association members",
+        "rationale": "The association is legitimated as a way for dispersed community participants to recognize, sustain, and share flamenco locally."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The newsletter and directory are described as information and communication channels, but the passage does not clearly frame them as flamenco learning or pedagogical access."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The contrast with caves, streets, bars, and cafes evokes an atmosphere of co-presence, but it does not explicitly make an authenticity claim about intimate settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "creation of a San Diego flamenco association and its participatory infrastructure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative membership details were not coded."
+  },
+  {
+    "article_id": "JALEO_1977_08::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "by their presence and participation, made the evening what it was",
+        "target": "June juerga participants",
+        "rationale": "The report values the juerga through active co-presence and participation, not simply attendance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Those who grow up in the juergas will grow up with rhythm in their blood.",
+        "target": "children and future participants in juergas",
+        "rationale": "The passage frames flamenco rhythm as transmitted through growing up inside the participatory juerga environment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The music was great and flowed all evening.",
+        "target": "music at the June juerga",
+        "rationale": "The article makes an explicit positive evaluation of the juerga's musical quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase 'true aficionados' marks community identity, but the passage does not clearly grant aficionados authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms like cante and rhythm appear, but they are not used as aesthetic criteria for judging flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "local juergas as participatory and transmissive flamenco spaces",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR errors such as 'pople' and 'pintiful' do not prevent interpretation."
+  },
+  {
+    "article_id": "JALEO_1977_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Come prepared to share and to learn. Everyone (guitarists, singers, aficionados alike) can learn the steps to one Sevillanas",
+        "target": "juerga participants learning Sevillanas",
+        "rationale": "The event is framed as an accessible learning setting where different participant roles can acquire flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "One thing we're going to try in order to get more people involved is to carry the \"Rhythm of the Month\" idea ... over into the juergas.",
+        "target": "August juerga participation",
+        "rationale": "The passage explicitly links the juerga setting to participatory involvement rather than passive attendance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article names rhythm, steps, melodies, and castanets, but it frames them as organized instruction rather than oral, embodied lineage transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are included among learners, but they are not presented as possessing community authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "the juerga as an inclusive participatory learning space",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Membership form and directions were treated as administrative content."
+  },
+  {
+    "article_id": "JALEO_1977_08::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "My dance teacher, a beautiful gitana named Teresa, brought this fact home to me in several imaginative ways, when I took flamenco dance lessons in Spain.",
+        "target": "Teresa as dance teacher",
+        "rationale": "The passage grounds the narrator's understanding of sevillanas in an authoritative teacher-student relation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "we had no record player, far less a guitarist, and nothing to carry the rhythm but her \"tántarará, tatatatatatátarrará,\" and the Spanish lyrics",
+        "target": "learning sevillanas through vocal rhythm and lyrics",
+        "rationale": "Flamenco knowledge is shown as transmitted through embodied and oral rhythmic practice rather than through recordings or instruments."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text gives historical origins and folk-tradition context for Sevillanas, but this is mostly descriptive and does not clearly authorize a present practice through tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Smoothness, balance, rhythm, and design are described as features of the dance, but they are not clearly applied as evaluative criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The teacher is identified as gitana, but the visible passage does not make ethnic identity do explicit authority or belonging work beyond the pedagogical relation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "sevillanas knowledge learned through a teacher and oral rhythmic practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article includes descriptive dance history, but only the pedagogical passages were coded."
+  },
+  {
+    "article_id": "JALEO_1977_08::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Below are the Spanish terms accompanied by the castanet notation that I will be using",
+        "target": "castanet terminology and notation for learners",
+        "rationale": "The passage mediates access to flamenco knowledge by translating and systematizing Spanish castanet terms for readers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "In English, the actions of the hands are described, i.e. \"right\" castanet in right hand is struck, \"left\" castanet in left hand is struck, \"roll\"--rolling action with all fingers",
+        "target": "embodied castanet technique",
+        "rationale": "The visible instruction transmits flamenco technique through bodily hand actions and sound-producing gestures."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Rhythm and design are mentioned, but the visible excerpt uses them descriptively and pedagogically rather than as aesthetic criteria."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Origins and old Seguidillas are mentioned, but the visible excerpt does not clearly use tradition or roots to authorize present value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "sevillanas and castanet knowledge made accessible through notation and embodied instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Review text is truncated; coding is limited to the visible beginning, evidence window, and ending context."
+  }
+]

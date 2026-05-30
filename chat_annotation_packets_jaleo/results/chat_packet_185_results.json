@@ -1,0 +1,211 @@
+[
+  {
+    "article_id": "JALEO_1984_01::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "a trip to Spain designed specifically for flamenco enthusiasts... will include visits to tablaos, dance schools, flamenco bars, festivals, private juergas",
+        "target": "Jaleistas trip to Spain",
+        "rationale": "The travel package frames access to flamenco knowledge and spaces across geographic boundaries for enthusiasts, including schools and private juergas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Private juergas and tablaos are listed as itinerary items, but the passage does not explicitly evaluate public/private or participatory settings."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "the Spain flamenco trip as access to flamenco experience",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Commercial travel details are not coded except where they frame organized access to flamenco learning environments."
+  },
+  {
+    "article_id": "JALEO_1984_01::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "offers instruction to guitarists from over a dozen nations in his technique, as well as flamenca culture and his compositions. Translation into English is provided.",
+        "target": "International Sanlucar Flamenco Guitar Course",
+        "rationale": "The course explicitly organizes transnational access to flamenco technique and culture, including translation for foreign learners."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Paco Peña will teach flamenco... Manuel de Palma, who plays in the style of Diego del Gastor will teach beginners... Victor Monje \"Serranito\" will teach",
+        "target": "Centro Flamenco Paco Peña course teachers",
+        "rationale": "Named expert teachers and institutional courses are presented as authorized channels for flamenco instruction."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Spanish flamenco seminar and guitar-course instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "the recording is dedicated to the cantes of Córdoba -- with some liberties, certainly, since it includes styles not strictly cordovan -- cantes not well-known, but genuinely typical",
+        "target": "cantes of Córdoba on the recording",
+        "rationale": "The reviewer attributes genuineness and typicality to the regional cantes while noting boundaries around what is strictly Cordovan."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Fasfarita offers us in this record three cordoban variations of the fandango... Fasfarita embraiders them literally in this record",
+        "target": "Fasfarita's recording",
+        "rationale": "The passage explicitly reviews and praises the artist's rendering of the record's repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The fandangos of this area are always vigorous, with quick rhythm, and short tercios. They are dignified forms which arise above the usual vulgarity of this form.",
+        "target": "Cordoban fandangos and cantes",
+        "rationale": "The review applies aesthetic criteria such as vigor, rhythm, dignity, difficulty, and beauty to define flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The reviewer names a 'best cut' and compares forms, but hierarchy is secondary to the broader critical evaluation and aesthetic criteria already coded."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Fasfarita's Cordoban cante recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "On Friday, February 3rd, Mariano Córdoba appeared in concert... in a memorable performance.",
+        "target": "Mariano Córdoba's concert performance",
+        "rationale": "The review makes explicit evaluative judgments about the quality and memorability of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Mariano Córdoba has that pure, dignified, clean style... All of the elements of the classical flamenco guitar are there, in perfect balance and harmony",
+        "target": "Mariano Córdoba's flamenco guitar style",
+        "rationale": "The reviewer defines quality through aesthetic criteria including purity, dignity, cleanness, balance, harmony, and mastery."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "\"un maestro entre maestros\"... shared only by a handful of masters such as Sabicas, Carlos Ramos, Mario Escudero, Juan Serrano, and a few others",
+        "target": "Mariano Córdoba and flamenco guitar masters",
+        "rationale": "The passage canonizes Córdoba by placing him among a small hierarchy of master flamenco guitarists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The contrast with 'circus-like' modern flamenco suggests boundary-work, but in this review it functions mainly as critical aesthetic judgment already captured by CRIT_02 and CRIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mariano Córdoba and Mario Escudero as exemplary flamenco guitarists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "The Washington Performing Arts Society honored Raquel Peña and Fernando Sirvent... with an award for their \"outstanding performance in the arts in Washington\" and for their 12-year participation in the \"Concerts in Schools\" program.",
+        "target": "Raquel Peña and Fernando Sirvent",
+        "rationale": "Institutional recognition by an arts society publicly valorizes the performers' cultural and educational work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "This Student Company will be allowed to perform some of the professional company's repertoire. At the same time, Ms. Peña will choreograph special themes just for the students.",
+        "target": "Spanish Dance Center Student Company",
+        "rationale": "The passage frames institutional transmission and student access to repertoire through a dance center and student company."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'one of the jewels of the flamenco world' are promotional and not developed as critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "Raquel Peña's company and student training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

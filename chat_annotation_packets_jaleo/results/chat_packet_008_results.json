@@ -1,0 +1,207 @@
+[
+  {
+    "article_id": "JALEO_1978_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Ernest Lenshaw, a legend in San Diego and our most enthusiastic aficionado",
+        "target": "Ernest Lenshaw's place in the San Diego flamenco community",
+        "rationale": "The passage grants Lenshaw local community standing as a recognized aficionado and sustaining figure in San Diego flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "His home became the site of many juergas, some especially good ones occurring on his birthdays, and he kept active promoting flamenco any way he could.",
+        "target": "Lenshaw's home juergas and local flamenco participation",
+        "rationale": "The article values the private home as a participatory flamenco setting where community gatherings and juergas help sustain local practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article mentions several teachers and lessons, but mostly as biography rather than a clear claim that pedagogical authority legitimates flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Calling Lenshaw a 'legend' suggests local status, but the passage primarily emphasizes community belonging rather than constructing a flamenco canon or artistic hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Ernest Lenshaw as a San Diego flamenco community figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_01::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text reports company movements and a debut concert, but does not evaluate the quality, value, or legitimacy of the performers or event."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief scene report with no clear evaluative, authorizing, pedagogical, heritage, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1978_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "There was a great deal of \"room hopping,\" with a change of atmosphere in each room. A \"guitar room\" evolved into a \"practice room\" and finally into a mini-juerga.",
+        "target": "New Year's Eve juerga participation",
+        "rationale": "The passage emphasizes participatory, shifting social settings where informal practice becomes a mini-juerga, making participation central to the event's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "She is developing a nice flamenco style with razor sharp turns.",
+        "target": "Laura Crawford's dancing",
+        "rationale": "The passage makes a direct evaluative judgment about a dancer's developing flamenco style and technical sharpness."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We heard by the grapevine that most of our Spanish contingent was previously committed to an annual New Year's Eve party elsewhere. We missed the special spark they lend to the juergas.",
+        "target": "Spanish participants in the local juergas",
+        "rationale": "The article attributes distinctive value to a recognized community subgroup whose presence is said to enliven the local juerga."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The 'tradition of the grapes' is a New Year's custom rather than a flamenco tradition claim authorizing present flamenco practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Mercedes Molina is described as having studied with gypsies in the Sevilla-Jerez area, but the statement is too brief and biographical to confidently code embodied or lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "New Year's Eve juerga and local participants",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "María Clara y Álvaro, su acompañante, nos dieron un toque flamenco muy lucido Rosala estuvo energica y sensual con sus grandes ojazos, logrando hechizarnos con su fandango.",
+        "target": "performers at the February juerga",
+        "rationale": "The passage praises specific performers and judges the quality and effect of their flamenco contributions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "many more who, with their spontaneous participation, helped to make possible these moments",
+        "target": "participants at the February juerga",
+        "rationale": "The passage values the juerga as a participatory setting where spontaneous involvement by many people produces the flamenco event."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Juanita, who with her Sevillan blood and Andalusian soul, makes even the walls tremble!",
+        "target": "Juanita's performance presence",
+        "rationale": "The passage frames her flamenco impact through regional identity markers, using Sevillan and Andalusian identity to authorize her expressive force."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article uses terms such as magic sound, voice, vigor, and lucid flamenco, but these mostly function as general praise rather than sustained aesthetic criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text praises faithful Jaleistas and recurring friends, but the clearest discourse function is participatory setting rather than explicit community authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "February juerga participants and performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The letters praise the newsletter and offer to keep readers informed, but they do not clearly frame flamenco knowledge access or pedagogy as a discourse function."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The letters express support from dispersed readers, but they do not clearly grant community authority or define belonging beyond ordinary subscriber enthusiasm."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Supportive newsletter letters, but no clear code-worthy discourse under the conservative rules."
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "article_id": "JALEO_1979_07::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "The gypsy has not been and never will be a creator, but only an interpreter and perpetuator.",
+        "target": "Gypsies in relation to flamenco creation and transmission",
+        "rationale": "The passage frames a whole identity group through its supposed cultural role, denying authorship while assigning interpretive and perpetuating functions."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "The only thing he has done -- and it is not a small thing -- has been to perpetuate in Andalucía some musical styles that would have been lost",
+        "target": "Flamenco/cante flamenco as preserved through Andalusian transmission",
+        "rationale": "The passage grounds flamenco value in continuity and survival of older musical styles through preservation over time."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The passage draws boundaries around authorship, but it does not clearly define proper flamenco by excluding impure or fake forms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "Gypsy claims to flamenco creation and Andalusian sources of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the flamenco guitar never had a more illustrious master than Ramón the Madrileñian",
+        "target": "Ramón Montoya",
+        "rationale": "The passage canonizes Montoya through superlative hierarchy and master status."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "How great is the loss which flamenco art has suffered by his death!",
+        "target": "Ramón Montoya's contribution to flamenco art",
+        "rationale": "The passage explicitly evaluates Montoya's artistic importance and the magnitude of his loss."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "he realized that his art did not receive the merit it deserved. He suffered very much when they did not understand his playing.",
+        "target": "audiences' failure to appreciate Montoya's guitar art",
+        "rationale": "The passage uses critique to distinguish proper appreciation of Montoya's artistry from listeners who fail to understand its merit."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Montoya is said to have given lessons, but the visible passage does not make pedagogical authority the main discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Ramón Montoya as canonical flamenco guitarist",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The many cantes that are closely related to or derived from the verdiales present a confusing picture to the casual aficionado or the guitarist who is not familiar with the melody of each.",
+        "target": "learners' access to fandangos de Málaga classification and performance knowledge",
+        "rationale": "The article explicitly mediates technical knowledge for aficionados and guitarists who may lack familiarity with the forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Most of these cantes differ from each other only in their melodic lines and perhaps do not deserve classification as distinct cantes",
+        "target": "classification of malagueñan fandangos",
+        "rationale": "The passage exercises classificatory critical authority by judging whether closely related cantes merit distinct status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses origins and evolution, but mostly as technical history rather than using roots or continuity to authorize present flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical terms and performance treatment are present, but the excerpt does not clearly apply an aesthetic quality criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "fandangos de Málaga and related cantes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on the visible technical/classificatory excerpt."
+  },
+  {
+    "article_id": "JALEO_1979_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The dignity and wisdom of the quiet one, Santiago, and the elegance and good quality of public relations of Antonio, are an institution between Sevilla and Huelva.",
+        "target": "Los Rocieros",
+        "rationale": "The passage explicitly praises the performers' qualities and social-artistic standing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Their style, evident in their records, is a mixture of sweetness, balance of voices, delicacy and strength when it is needed",
+        "target": "Los Rocieros' sevillanas style",
+        "rationale": "The passage defines their musical value through named aesthetic criteria such as sweetness, balance, delicacy, and strength."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "They know how to say the sevillana in a manner matched by few others.",
+        "target": "Los Rocieros within sevillanas performance",
+        "rationale": "The passage creates a comparative hierarchy by placing their sevillanas interpretation above most others."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Los Rocieros",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "A two week workshop for beginning and intermediate-advanced dancers. Each day, the workshop will feature a morning technique class and an afternoon repertory class for each level.",
+        "target": "Morca Flamenco Workshop",
+        "rationale": "The passage frames flamenco learning through a structured workshop with levels, technique classes, repertory classes, and institutional access."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Morca's credentials are known to most of Jaleo's readers: He has worked with many of the top Spanish dance companies... and is widely acclaimed as a teacher.",
+        "target": "Mr. Morca as flamenco teacher",
+        "rationale": "The passage legitimates the workshop through Morca's recognized credentials and teaching authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga with participation by all suggests participatory setting, but appears as a workshop activity rather than an evaluative contrast with spectatorship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to top companies and acclaim support teaching authority, but do not independently construct a flamenco canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Morca Flamenco Workshop and Mr. Morca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

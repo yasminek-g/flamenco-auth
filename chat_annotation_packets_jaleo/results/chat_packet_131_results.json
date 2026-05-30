@@ -1,0 +1,220 @@
+[
+  {
+    "article_id": "JALEO_1982_02::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Probably the only way we can make flamenco music available is to create an international cassette tape exchange of some sort.",
+        "target": "international access to flamenco recordings",
+        "rationale": "The editor frames recordings and tape exchange as a mediated, transnational access mechanism for flamenco knowledge and listening."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "To the various flamencos around New York whom I have heard commiserating over the shortcomings of Gallardo and indeed to the entire American flamenco family, I gladly make known to you an alternative",
+        "target": "American flamenco community",
+        "rationale": "The letter addresses a socially recognized flamenco community as a shared network for advice, recognition, and practical support."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Menkes' style is clean and elegant. Gallardo boots by comparison look \"chatos.\"",
+        "target": "Menkes and Gallardo flamenco boots",
+        "rationale": "The passage explicitly evaluates flamenco dance equipment through comparative praise and criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The comments mention costs, mass copying, and distribution, but they do not frame commerce as corrupting flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco access networks, the American flamenco community, and flamenco dance equipment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only the visible letters and editor comments; distribution logistics were coded only where they mediate flamenco access or evaluation."
+  },
+  {
+    "article_id": "JALEO_1982_02::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "since I liked the guitar, I would listen, and when they'd leave I would pick up the guitar and play everything my father had taught my brother",
+        "target": "Carlos Ramos's early guitar learning",
+        "rationale": "The passage presents flamenco guitar knowledge as acquired through listening, imitation, and family-based informal transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "I always thought he was the very best and he was the influence that all of us (guitarists) have. Well, it is true that other newer things have been done after him, but he was 'la fuente' of all guitarists of today.",
+        "target": "Ramón Montoya",
+        "rationale": "Ramos canonizes Montoya through superlative ranking and by positioning him as the source for later guitarists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In the flamenco guitar you can fool the whole world. On the other hand, take someone like Sabicas, who never resorts to effect",
+        "target": "flamenco guitar performance styles",
+        "rationale": "The speaker critically contrasts showy effect with Sabicas's more valued artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'pure, uncompromising breed' suggests authenticity, but the visible excerpt does not develop a clear claim about proper flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Montoya is described as a source for guitarists, but the stronger discourse function is canonization rather than tradition-continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Carlos Ramos's learning, Ramón Montoya's canonical status, and contrasting guitar aesthetics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible excerpt contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1982_02::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ramos unveiled his magic. If everyone who heard him tells one of two friends of the revelation in this remarkable man's playing, it will be SRO from now on.",
+        "target": "Carlos Ramos's San Francisco recital",
+        "rationale": "The review explicitly praises Ramos's performance as remarkable and revelatory."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The tender, more subtle side of its tragedy is eclipsed by flaming passion, just as the lyrical possibilities of the music a generally sacrificed for flashy pyrotechnics.",
+        "target": "flamenco guitar aesthetics",
+        "rationale": "The passage applies aesthetic criteria such as subtlety, tragedy, lyricism, passion, and avoidance of flashy pyrotechnics to judge flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "It seldom happens, it is true, but that is only because a musician like Carlos Ramos comes along so rarely.",
+        "target": "Carlos Ramos",
+        "rationale": "The review elevates Ramos as a rare exemplary figure capable of reaching the highest level of poetic expression."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Carlos Ramos and his flamenco guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_02::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article mentions formal instruction and named teachers, but it is neutral biography rather than a claim about pedagogical authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The reference to Sephardic Jewish ancestry concerns personal appearance and background, not public cultural heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is biographical and does not clearly evaluate, authorize, exclude, preserve, teach, transmit, rank, criticize, or define belonging."
+  },
+  {
+    "article_id": "JALEO_1982_02::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "the management seems to be truly interested in \"el arte\" and does its best to promote it above and beyond the mere sound of the cash register",
+        "target": "El Bodegón as a flamenco venue",
+        "rationale": "The restaurant's flamenco value is legitimated by contrasting commitment to the art with mere commercial profit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "we come upon a restaurant that we feel is worthy of comment for its flamenco quality",
+        "target": "El Bodegón",
+        "rationale": "The article explicitly evaluates the venue according to its flamenco quality and worthiness of praise."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text addresses the Jaleista's evening at the venue, but it does not clearly contrast participatory/private flamenco with spectatorial/public flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "El Bodegón as a flamenco-supporting restaurant",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The photo captions were not coded because they are descriptive and fragmentary."
+  }
+]

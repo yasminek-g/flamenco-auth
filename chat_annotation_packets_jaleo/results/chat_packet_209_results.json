@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "JALEO_1985_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "My mother used to sing... And the cante, I think my mother started me in it. When I was born, I already had it in me.",
+        "target": "Camarón's cante",
+        "rationale": "The passage frames Camarón's singing as familial, embodied, and innate transmission rather than merely formal training."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'genuinely gypsy features' describes appearance and identity, but it does not clearly authorize his flamenco authority or define belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The tablao is mentioned as a workplace, but the passage does not evaluate public/private or participatory setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Camarón's cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation is limited to visible biography/interview excerpts."
+  },
+  {
+    "article_id": "JALEO_1985_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "when a person who does not even identify himself elevates himself to the stature of \"critic\" and uses a forum such as Jaleo from which to make personal attacks upon respected artists",
+        "target": "the anonymous Molina reviewer and Jaleo's review forum",
+        "rationale": "The letter contests the legitimacy of an anonymous critic and the publication's authority to circulate that judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Molina and his company gave the kind of exciting and dynamic performance we have come to expect",
+        "target": "Jose Molina and his company",
+        "rationale": "The writer offers an explicit positive evaluation of the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The discussion of taped music suggests a possible aesthetic criterion, but the visible passage mainly rebuts the critic rather than defining taped music as a quality criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Jose Molina's Bailes Españoles and the prior review",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "The art of flamenco is a great deal more than a flashy style of Spanish music and dance, as is commonly believed in this country. It is an expression of a way of life",
+        "target": "flamenco as an art form",
+        "rationale": "The passage corrects a superficial view and defines what flamenco truly is."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "To be a \"flamenco,\" one does not have to be a performer -- a flamenco is anyone who is emotionally and actively involved in this unique approach to the problems of living.",
+        "target": "the category of being a flamenco",
+        "rationale": "The text defines flamenco belonging through emotional and active involvement rather than performer status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "SUMMER COURSE FOR TEACHERS AND DANCERS presented by George Washington University to learn The SYLLABUS of the SPANISH DANCE SOCIETY This structured method includes... Theory covering classical, regional and flamenco Spanish dancing.",
+        "target": "Spanish Dance Society syllabus course",
+        "rationale": "The course frames flamenco knowledge as accessible through an institutional, structured syllabus and theory-based pedagogy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word 'traditional' appears, but the visible passage mostly defines identity and way of life rather than using tradition/continuity to authorize a present practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editor summarizes Pohren's complaints, but the passage is too condensed and secondhand to code expert critical authority separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "flamenco as way of life and teachable knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated and includes a visible course notice; the pedagogy code is based only on that visible notice."
+  },
+  {
+    "article_id": "JALEO_1985_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "the type prevalent in tablaos, night clubs, theatres, even in the flamenco festivals... a highly sophisticated version of the traditional flamenco of the pueblo",
+        "target": "staged and internationally sophisticated flamenco",
+        "rationale": "The passage contrasts staged public venues and sophistication with a more traditional pueblo-based flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "we decided to open a flamenco centre, in a farm outside of Morón, designed to show international aficionados the real thing",
+        "target": "the Morón flamenco centre and its juergas",
+        "rationale": "The text explicitly presents the centre's juergas as access to the real form of flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "We held some three juergas a week (starting around midnight and lasting until sunrise, if not considerably longer), offered flamenco lessons, and in general helped our guests experience the best Andalusia had to offer.",
+        "target": "juergas at the Morón flamenco centre",
+        "rationale": "The passage values an immersive social juerga setting over detached stage spectacle."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "\"so flamenco is changing with the times. That is necessary for its development.\" That argument does not hold water",
+        "target": "the claim that modernization/internationalization is necessary development",
+        "rationale": "The author uses critical discourse to reject a legitimating argument for modernized flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The passage draws a real/sophisticated contrast, but it does not explicitly use purity, fake, or illegitimacy rhetoric strong enough to code purity boundary-work separately."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Lessons are mentioned at the centre, but the visible passage emphasizes authenticity and immersive experience more than institutional access to learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "traditional juerga-based flamenco versus staged/internationalized flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated; codes rely on the visible opening and ending context."
+  },
+  {
+    "article_id": "JALEO_1985_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Rodarte was to begin studying under Angel Torres, a very well known flamencologist, for whom Mr. Rodarte, to this day, is totally indebted, for the knowledge and insight acquired under his direction.",
+        "target": "Angel Torres as Rodarte's flamenco teacher",
+        "rationale": "The passage legitimates Rodarte's flamenco knowledge through study under an authoritative flamencologist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "he assumed his pursuit for knowledge in the traditional academies of Spain, where he has lived, studied and danced for the past twenty years",
+        "target": "Rodarte's flamenco training in Spain",
+        "rationale": "The passage frames a transnational dancer's access to flamenco knowledge through Spanish academies and long-term study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The trigger word 'original' refers to Picasso costumes, not flamenco tradition or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Angel Torres is called a leading authority, but the visible function is pedagogical coaching rather than exercised critical judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Tablaos and Madrid are mentioned as work circuits, but the passage does not evaluate public/private or participatory setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Pablo Rodarte's flamenco knowledge and career",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR is imperfect but sufficient for the cited training and authority claims."
+  }
+]

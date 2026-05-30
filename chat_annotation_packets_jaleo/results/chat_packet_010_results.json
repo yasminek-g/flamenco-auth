@@ -1,0 +1,182 @@
+[
+  {
+    "article_id": "JALEO_1978_02::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Enrique Melchor stands out with absolute brilliance.",
+        "target": "Enrique de Melchor's flamenco guitar record",
+        "rationale": "The review explicitly praises Enrique de Melchor's performance and artistic value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "due to the exquisiteness and good taste of his playing, the perfection of his compositions, and his profound feeling for flamenco.",
+        "target": "Enrique de Melchor's guitar playing and compositions",
+        "rationale": "The passage applies aesthetic criteria—taste, compositional perfection, and deep flamenco feeling—to judge the record."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "After a first stage of consolidation of the concert style of flamenco guitar playing, in which Paco de Lucía, Manolo Sanlúcar and Victor Monje (Serranito) played a major role... In this new generation of flamenco soloists, Enrique Melchor stands out",
+        "target": "Enrique de Melchor within flamenco guitar generations",
+        "rationale": "The passage positions Enrique de Melchor hierarchically within a new generation after naming major figures in the concert guitar canon."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The mention of Enrique as son of Melchor de Marchena suggests lineage, but the visible text does not explicitly use that lineage to authorize tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Enrique de Melchor's flamenco guitar record",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The latter part of the article is heavily OCR-damaged, but the visible opening review contains sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1978_02::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Often it is the little known person, quietly doing a job behind the scenes, who is a most essential element in creating and maintaining an organization. Stan Schutze is such a person in Jaleistas.",
+        "target": "Stan Schutze's role in Jaleistas",
+        "rationale": "The article frames a community member's behind-the-scenes labor as essential to sustaining the flamenco organization."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Stan's work, but the target is organizational service rather than an identifiable flamenco artist, performance, recording, style, venue, publication, or event."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The reference library and newsletter work suggest preservation and support, but the passage does not clearly frame this as public cultural heritage, safeguarding, or living heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas community maintenance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Recipe text does not contain flamenco-related evaluative, authorizing, pedagogical, communal, critical, or heritage discourse."
+  },
+  {
+    "article_id": "JALEO_1978_02::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The item lists Jaleistas news and performances, but it does not grant community authority, define belonging, or frame participants as sustaining flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_02::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Parilla's style of playing, a style common to many players from the Jerez area, is characterized by long sequences of single notes which frequently emphasize rhythm rather than melody.",
+        "target": "Parilla de Jerez's guitar style",
+        "rationale": "The passage defines the style through aesthetic and technical criteria such as rhythm, melody, compás, accents, counteraccents, and improvisation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Parilla de Jerez, winner of the \"Premio National de Guitarra\" in 1973... Parilla is currently active on the festival circuit where he is the favored accompanist of many cantaores from Jerez",
+        "target": "Parilla de Jerez's standing as guitarist and accompanist",
+        "rationale": "The passage establishes status through a prize and through his favored position among Jerez cantaores."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The following falseta, por alegrías, is used by Parilla as an introduction and is a good example of the flowing Jerez style of guitar playing. It should be played fairly fast for the best effect and careful attention should be paid to the accent marks",
+        "target": "reader access to Parilla's alegrías falseta and Jerez guitar style",
+        "rationale": "The article mediates flamenco learning through a transcribed falseta and gives practical guidance on tempo and accents."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage links Parilla to Jerez and Los Morão, but it mainly describes style and status rather than using roots or continuity to authorize proper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative phrases such as 'good example' and 'unique flavor,' but CRIT_02 and CRIT_03 capture the main discourse functions more precisely."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Parilla de Jerez's guitar style and transcribed falseta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

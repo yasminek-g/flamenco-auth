@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "JALEO_1979_07::A17",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The notice says 'MEMBERS ONLY' and guests require permission, but this is primarily event administration rather than a discourse move defining flamenco belonging or authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The home juerga and shared tapas imply a private participatory setting, but the passage does not evaluate that setting or contrast it with public/spectatorial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event logistics and biographical host information only; membership restriction is not enough for a positive community-boundary code."
+  },
+  {
+    "article_id": "JALEO_1979_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Carlos is tall and has light brown hair, but does not look out of place playing flamenco guitar.",
+        "target": "Carlos Lomas as an American/non-Spanish flamenco guitarist",
+        "rationale": "The passage marks a potential outsider status and then explicitly negotiates his belonging in flamenco performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "He is considered by many to be one of the top American-born flamenco guitarists",
+        "target": "Carlos Lomas",
+        "rationale": "The statement ranks Lomas within a hierarchy of American-born flamenco guitarists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His technique is formidable, but it is never displayed for mere effect. It is subjugated to an innate musicality",
+        "target": "Carlos Lomas's guitar playing",
+        "rationale": "Technique, restraint, musicality, creativity, and interpretation are applied as criteria for flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article mentions lessons, records, teachers, and a 'maestro,' but these details are mainly biographical and less clearly framed as authoritative lineage than the emitted evaluation and outsider-boundary evidence."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The account of self-study, lessons, and transnational learning is relevant, but the article does not explicitly thematize access to flamenco knowledge across boundaries as a discourse problem."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Carlos Lomas as a legitimate flamenco guitarist despite foreign/American status",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The clearest discourse work legitimates Lomas by ranking him, applying aesthetic criteria, and negotiating his non-Spanish position."
+  },
+  {
+    "article_id": "JALEO_1979_08::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "This is a reader written and reader produced magazine",
+        "target": "Jaleo readership and contributors",
+        "rationale": "The editorial grounds the magazine's continuity and legitimacy in the active participation of its reader community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial stresses survival and collective labor, but it concerns magazine production rather than safeguarding flamenco as public cultural heritage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The passage describes collective participation, but it is about producing a magazine rather than contrasting participatory flamenco settings with spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleo magazine as a community-produced flamenco publication",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Financial details are not coded; the positive code rests on the magazine being framed as reader-made and sustained by community participation."
+  },
+  {
+    "article_id": "JALEO_1979_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The flamenco world, just like any other human world, is comprised of leaders and followers. Flamenco needs both kinds of people so that it can continue to exist.",
+        "target": "roles within the flamenco world",
+        "rationale": "The article constructs a hierarchy of roles by distinguishing leaders/creators from followers/imitators while assigning each a place in flamenco's continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "After years of imitation, an artist is then ready to start branching off. This varies for each individual and is mainly a question of readiness.",
+        "target": "the transition from flamenco imitation to creative autonomy",
+        "rationale": "The passage frames flamenco learning as a movement from imitation and influence toward transformation and independent creative agency."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Mentors, idols, and teachers are mentioned, but the main discourse is about imitation-to-creation rather than embodied, oral, or lineage-based transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The leader/follower distinction creates social categories, but it is not an insider/outsider boundary around flamenco belonging or knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "creative independence within flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly classificatory and prescriptive about flamenco roles and artistic development."
+  },
+  {
+    "article_id": "JALEO_1979_08::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "More and more each day, they are becoming a business for small entrepreneurs -- who make their money although not so much -- and for foreign tourists.",
+        "target": "Spanish tablaos as commercial/tourist flamenco workplaces",
+        "rationale": "The passage critiques tablaos through a commercial and tourist frame while also foregrounding the labor exploitation behind the spectacle."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "They are also the personal drama of singers and dancers, almost always underpaid, many times exploited and always unprotected.",
+        "target": "tablao labor conditions for flamenco artists",
+        "rationale": "The text makes an explicit critical assessment of tablaos as exploitative and socially damaging for performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text links tablaos to business and foreign tourists, but it does not clearly state that commercialization weakens flamenco authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The passage mentions audience and tourist spectacle, but the main function is labor/social critique rather than a public/private participatory contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "tablaos as both living flamenco spectacle and exploitative commercial/tourist business",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough evidence for labor and commercial-spectacle critique; the unrelated art-sale ending is not coded."
+  }
+]

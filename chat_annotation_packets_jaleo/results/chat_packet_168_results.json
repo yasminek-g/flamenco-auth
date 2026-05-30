@@ -1,0 +1,259 @@
+[
+  {
+    "article_id": "JALEO_1983_06::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "a flamenco syllabus be compiled... work through the Spanish Dance Society... standardize the method of teaching Spanish dancing",
+        "target": "a proposed flamenco syllabus through the Spanish Dance Society",
+        "rationale": "The passage explicitly frames flamenco knowledge as something to be organized into a syllabus and standardized through a formal society."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "To promote and maintain a high standard of teaching of Spanish dancing... to improve their knowledge of Spanish dancing and to enable them to disseminate the same to others",
+        "target": "Spanish Dance Society teaching authority",
+        "rationale": "The Society is positioned as an authority for improving teachers' knowledge and disseminating Spanish dance instruction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "He is a true, dedicated artist, an excellent teacher and generous with his time and talents -- it was a phenomenal experience",
+        "target": "Paco Peña workshop and teaching",
+        "rationale": "The letter explicitly praises Paco Peña's artistry, teaching, generosity, and the quality of the workshop experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The invitations and thanks show community participation, but they do not clearly grant aficionados or a community authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "formalized flamenco/Spanish dance teaching and Paco Peña's workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_06::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I met Diego at a fiesta and asked him if I could have some lessons",
+        "target": "David Serva's learning from Diego",
+        "rationale": "The passage frames flamenco knowledge as transmitted through personal apprenticeship and situated social contact at a fiesta."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "But then I met somebody who was doing it for real.",
+        "target": "Diego's guitar playing",
+        "rationale": "Serva presents Diego's playing as the real version of the flamenco approach he wanted, explicitly authorizing it as genuine."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "It's an attitude. An attitude toward rhythm. Diego had very, very straight, up and down, perfect rhythm",
+        "target": "Diego's guitar style",
+        "rationale": "Rhythm is used as an aesthetic criterion to explain the value and specificity of Diego's flamenco playing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The fiesta and tablao settings are visible, but the excerpt does not clearly contrast participatory/private settings with public spectatorship as a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Diego's guitar playing and Serva's flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible interview excerpt provides enough evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1983_06::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "has been awarded the \"Lazo de Dama\" de la Orden de Isabel la Catolica by His Majesty Don Juan Carlos I, King of Spain, in recognition of her achievements in promoting the cultural values of the Spanish tradition",
+        "target": "Libby Komaiko Fleming's promotion of Spanish tradition",
+        "rationale": "A royal state honor is presented as official recognition of work promoting Spanish cultural values."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "a glowing review from WOXR radio in which her program is described as \"dance artistry at its peak\" and Pilar as \"the (Maria) Callas of the dance.\"",
+        "target": "Pilar Rioja's program and dance artistry",
+        "rationale": "The quoted review explicitly evaluates the program and artist with strong praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Pilar as \"the (Maria) Callas of the dance.\"",
+        "target": "Pilar Rioja",
+        "rationale": "The comparison to Maria Callas canonizes Pilar by placing her within a hierarchy of exemplary performing artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The advertisement promises accelerated learning and mastery, but it is promotional copy rather than a clear discourse about institutional or transnational access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage",
+        "criticism"
+      ],
+      "target": "Spanish tradition promotion and Pilar Rioja's artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_06::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "can are really call the fandango flamenco or flamenco regional? In order to decide this, one must define the meanings of flamenco and regional",
+        "target": "the classification of fandango as flamenco or regional",
+        "rationale": "The passage explicitly draws a boundary around what can properly be called flamenco versus regional dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "If you go back to its origins, flamenco dancing is solo dancing... Flamenco originated with the gypsy tribes like the Maya and Amalla",
+        "target": "flamenco dancing",
+        "rationale": "Origins and roots are invoked to authorize a definition of flamenco and distinguish it from regional dance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "it is more aligned to a specific group of people and thus makes a category of its own, with nothing quite like it",
+        "target": "flamenco as a category tied to a specific people",
+        "rationale": "The passage uses identity-group framing to define flamenco's belonging and categorical distinctiveness."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article contests definitions, but the visible excerpt does not clearly position a critic or expert authority as the source of boundary-policing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community"
+      ],
+      "target": "the definition of flamenco versus regional/fandango dance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The editor's bracketed disagreement makes the definition of flamenco visibly contested within the excerpt."
+  },
+  {
+    "article_id": "JALEO_1983_06::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the impact of a man who has become truly a legend in his own time",
+        "target": "Sabicas",
+        "rationale": "The passage canonizes Sabicas by presenting him as a living legend with major historical impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "His stunning precision and his ambitious musical ideas... actually put the flamenco guitar on a new plane",
+        "target": "Sabicas' guitar artistry",
+        "rationale": "The passage explicitly praises Sabicas' precision, musical ideas, and transformative effect on flamenco guitar."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "he was awarded the Medal of the Week, a recognition that has been given only to two others, Pastora Iperla and Manolo Caracol",
+        "target": "Sabicas' public recognition at the Week of Flamenco studies",
+        "rationale": "The institutional award is used to confer public recognition and status within flamenco culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The references to family, Ramón Montoya, and growing up near artists suggest lineage proximity, but the visible text does not clearly state transmission or learning as the basis of authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family and flamenco social circles appear, but the excerpt mainly uses them as biography rather than community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Sabicas and his flamenco guitar artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient critical and recognition discourse."
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "article_id": "JALEO_1987_SUMMER::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "A big part of the syllabus is made up of notated dance steps... There are sections on jaleo, palmas, castanets... and a large and quite complete list of definitions of flamenco and dance terms.",
+        "target": "the revised Theater Spanish and Flamenco Dance Syllabus",
+        "rationale": "The syllabus is framed as a structured learning resource that gives students and aficionados mediated access to flamenco dance knowledge, notation, terminology, and technique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The revised edition is much larger, more complete, and makes a place for itself as a valuable reference work... I have only one critical suggestion to make... There are many typos and minor errors",
+        "target": "the revised syllabus",
+        "rationale": "The passage explicitly evaluates the syllabus positively as a reference work while also criticizing its proofreading errors."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "criticism"],
+      "target": "the revised Theater Spanish and Flamenco Dance Syllabus",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The advertisement after the review was not coded."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "For being a true \"flamenco\" means being first an Andaluz or Andaluza at heart.",
+        "target": "true flamenco identity",
+        "rationale": "The passage explicitly defines what counts as true flamenco and links that genuineness to Andalusian belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "in Andalucía, flamenco is everywhere. It is a way of life so deeply interwoven in the very fabric of Andalucian life, that it cannot be separated from it.",
+        "target": "Andalusian flamenco identity",
+        "rationale": "The text frames flamenco through Andalusian collective identity and treats that identity as central to belonging and representation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "The visitor who tries to pry away \"just\" the music, or the dance, may fool himself into thinking he/she learned \"flamenco\", but will miss out on the essence of things.",
+        "target": "visitors who reduce flamenco to music or dance alone",
+        "rationale": "The passage draws an epistemic boundary between superficial outside learning and insider understanding of flamenco's essence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Images of earth, mother's milk, and possible disappearance suggest rootedness and continuity, but the stronger visible function is defining authenticity and belonging rather than preserving a past tradition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "community"],
+      "target": "flamenco as an Andalusian way of life",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article uses a broad cultural definition of flamenco rather than reviewing a performance."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the legendary Manuel Agujetas de Jerez... The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance that will remain forever.",
+        "target": "Manuel Agujetas de Jerez and his video performance",
+        "rationale": "The passage canonizes Agujetas through legendary status, world fame, maestro language, dynastic placement, and historic value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "An educational \"must\" for guitarists and singers.",
+        "target": "the Manuel Agujetas video cassette",
+        "rationale": "The video is framed as a mediated learning resource for musicians seeking access to flamenco performance knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word maestro appears, but it functions mainly as an honorific/canonical title rather than authorizing Agujetas as a teacher."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The claim that the performance will remain forever implies preservation, but the passage remains primarily commercial/canonical without clear public heritage or safeguarding framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "Manuel Agujetas de Jerez and the video release",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The later ending-context prose about an unrelated Andalucian story was not coded."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "she grew up surrounded by great flamenco artists and learned the art of dance and life without losing rhythm, that is, with verve and authenticity.",
+        "target": "Manuela Vargas's flamenco formation",
+        "rationale": "The passage attributes authenticity to Vargas's way of learning and embodying flamenco, not merely to a generic personal quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Are you a bailarina or a bailora? \"I am a bailaora.\" What is the difference? \"A bailaora dances always to guitar palmas pitos and with the voice of the cante.\"",
+        "target": "the category of bailaora",
+        "rationale": "The interview uses the identity/category of bailaora to define a culturally specific performer role and its proper flamenco markers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "I have a spirit that makes me do flamenco from deep within... It's as though it takes over my body",
+        "target": "Manuela Vargas's dance",
+        "rationale": "The passage defines flamenco quality through depth, bodily possession, suffering, and expressive transmission as aesthetic criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article notes that Vargas learned while surrounded by artists, but the visible passage does not clearly describe embodied/oral lineage transmission as an authorizing process."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "There are distinctions between audience, stage, gypsy, paya, bailarina, and bailaora, but the clearest social function is identity framing rather than an insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "community", "criticism"],
+      "target": "Manuela Vargas and the bailaora role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Ethnic identity discussion was coded only where it organizes flamenco role, representation, or expressive authority."
+  },
+  {
+    "article_id": "JALEO_1986_WINTER::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "There's no one better qualified to give us a rundown on flamenco than Teodoro Morca... internationally-known flamenco dancer, choreographer and teacher.",
+        "target": "Teodoro Morca as an explainer of flamenco",
+        "rationale": "Morca is explicitly positioned as an authoritative teacher and expert able to explain flamenco to readers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Basically, flamenco is the art, the song, the way of life of the people of Southern Spain",
+        "target": "flamenco",
+        "rationale": "The passage defines flamenco as a genuine way of life rooted in the people of Southern Spain rather than merely a dance form."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "It's definitely an art form of an oppressed people, that's why it has a built-in drama and emotion.",
+        "target": "flamenco as the art of an oppressed people",
+        "rationale": "The text frames flamenco through a collective identity group and uses that identity to explain its emotional and cultural authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "If you see good flamenco, you see someone becoming themselves in dance, music, song. It's a real immediate thing... It's the immediacy of feeling that really attracts people",
+        "target": "good flamenco",
+        "rationale": "Morca names immediacy, feeling, drama, and self-revelation as criteria for recognizing good flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article compares flamenco to other forms of exercise and ballet, but that comparison concerns bodily fitness rather than canon or hierarchy within flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "authenticity", "community", "criticism"],
+      "target": "Teodoro Morca's definition of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Body/exercise claims were coded only where they help define flamenco value, not as health advice."
+  }
+]

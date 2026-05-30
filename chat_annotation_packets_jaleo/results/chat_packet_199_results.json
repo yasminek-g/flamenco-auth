@@ -1,0 +1,271 @@
+[
+  {
+    "article_id": "JALEO_1984_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I haven't forgotten them. So much so that in more than one performance, they have asked me for siguiriyas, soleares and other 'palos juertes'",
+        "target": "Chiquetete's flamenco identity despite singing canciones",
+        "rationale": "The passage defends the singer's continuity with flamenco origins by citing continued demand for traditional heavy forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The interview question about forgetting flamenco origins suggests boundary critique, but the visible passage does not develop an expert critical judgment strongly enough to emit."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The singer says he expresses himself as he is, but this is generic sincerity rather than a clear claim that his flamenco is authentic."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition"
+      ],
+      "target": "Chiquetete's continued connection to flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The interview contains celebrity and income material, but only the visible discussion of origins and traditional palos supports a code."
+  },
+  {
+    "article_id": "JALEO_1984_10::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "He has inherited a great tradition in guitar playing; his father, Isidro, a breadmaker and guitarist, took classes from Javier Molina, one of the greatest figures in the history of flamenco",
+        "target": "Manolo Sanlúcar's guitar lineage",
+        "rationale": "The passage grounds Sanlúcar's authority in inherited guitar tradition and connection to a historically exemplary teacher."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Some professionals try, as they have for some years now, to feel their authentic roots, to keep them free from adulterations and keep them clear of the profane.",
+        "target": "purist professionals' model of flamenco roots",
+        "rationale": "The text explicitly draws a purity boundary around authentic roots by opposing them to adulteration and the profane."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco finds itself at a crossroads... Others, moving away from those roots, try to enrich them and look for new means of expression. Manolo Sanlúcar finds himself among these latter.",
+        "target": "Sanlúcar's evolutionary position in flamenco guitar",
+        "rationale": "The passage frames a critical boundary debate between root-preserving and experimental flamenco, locating Sanlúcar in the latter camp."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article calls Javier Molina one of the greatest figures and notes Sanlúcar's popularity, but hierarchy is secondary to lineage and boundary debate already captured."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The father-teacher connection implies transmission, but the passage does not describe embodied, oral, familial, or apprenticeship transmission in enough detail."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "tradition and innovation in flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The passage is explicitly structured as a debate between preservation of roots and evolutionary experimentation."
+  },
+  {
+    "article_id": "JALEO_1984_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco, she said, isn't something you learn. 'It's something inside you. You either have it or you don't.'",
+        "target": "La Chunga's understanding of flamenco ability",
+        "rationale": "The passage defines real flamenco capacity as innate possession rather than learned technique, authorizing an embodied notion of flamenco authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "She is among a small elite of talented gypsy performers who gave up their nomadic ways to prosper in the Spanish mainstream",
+        "target": "Gypsy performers represented through La Chunga",
+        "rationale": "The article frames flamenco performance through ethnic/community identity and representation, linking Gypsy identity to artistic status and social mobility."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "They come in here, enjoy the entertainment and then they go home and leave us to our realities.",
+        "target": "tourist spectators versus Gypsy performers' lived realities",
+        "rationale": "La Chunga draws a social boundary between outside consumers of Gypsy flamenco entertainment and the performers' lived community reality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The statement that flamenco is not learned relates to pedagogy, but it denies learning rather than describing a mode of transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "La Chunga is described as famous and admired, but the article does not build a sustained canon or ranking claim from that praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "La Chunga and Gypsy flamenco identity",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article also contains problematic ethnic stereotyping; coding is limited to visible discourse functions around identity, spectatorship, and innate flamenco capacity."
+  },
+  {
+    "article_id": "JALEO_1984_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "I do not depend on a name to confer 'Spanish authenticity' upon me. Nor the 'traje cartic' nor my physical appearance and airs, nor media hype, nor boastful inventions",
+        "target": "the Shah persona's flamenco legitimacy",
+        "rationale": "The speaker explicitly contests external markers of Spanish authenticity as the basis for judging his art."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I am completely within Spanish tradition and flamenco spirit using this name, which is accepted with good humor in Spain.",
+        "target": "use of the artistic name 'The Shah of Iran'",
+        "rationale": "The passage authorizes the name by claiming continuity with Spanish tradition and flamenco spirit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The New York Times review... is complimentary and persuasive. It is powerful enough to fill many seats in great concert halls, to impress the names of artists on the public, to advance their careers, and to promote the art of Spanish music and dance.",
+        "target": "New York Times review of Spanish artists in New York",
+        "rationale": "The passage attributes substantial career-making and public-authorizing power to a named critical review."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The ending calls an opera-film pleasurable and worth viewing, but the visible excerpt is truncated and the evaluative target is under-specified."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The passage discusses Spanish names, Gypsy pharaoh references, and artistic identity, but the main discourse function is authenticity rather than identity-group authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "artistic naming, Spanish authenticity, and critic-mediated recognition",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible section contains clear authenticity and critic-authority claims."
+  },
+  {
+    "article_id": "JALEO_1984_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "One of the giant foundations of flamenco is soleares. This is true baile, toque, cante grande, the essence of arte grande, the essence of flamenco.",
+        "target": "soleares as a flamenco form",
+        "rationale": "The passage explicitly presents soleares as true flamenco and as the essence of major flamenco art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Studying soleares is a primary study in control... capture that slowness with control, energy, dynamics, higness and interpretation of yourself in honesty of mood.",
+        "target": "aesthetic value of soleares performance and study",
+        "rationale": "The passage applies explicit aesthetic criteria—control, slowness, energy, dynamics, interpretation, and honesty—to define flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "serious flamenco dance students, soleares should be one of the first steps in discovery of what flamenco is.",
+        "target": "soleares as pedagogical route into flamenco knowledge",
+        "rationale": "The passage gives authoritative pedagogical guidance by positioning soleares as a foundational study for serious students."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "if there is a degree of difficulty in artistic conquest among the many flamenco dance forms, soleares is way at the top in its total expression.",
+        "target": "hierarchical status of soleares among flamenco dance forms",
+        "rationale": "The passage explicitly ranks soleares near the top of flamenco forms by difficulty and expressive scope."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article calls soleares foundational and mother-like, but its central claim is essence/authenticity and hierarchy rather than continuity with a valued past."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The retrieval hint points to 'many', but the visible text does not use identity-group framing to define belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "soleares as foundational flamenco art and study",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although the article is truncated, the visible excerpts contain enough explicit evaluative and pedagogical claims to annotate confidently."
+  }
+]

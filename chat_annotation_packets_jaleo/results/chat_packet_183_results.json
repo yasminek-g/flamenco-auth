@@ -1,0 +1,195 @@
+[
+  {
+    "article_id": "JALEO_1984_01::A3",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative editorial about publication logistics and subscriber communication; no visible flamenco evaluative, authorizing, pedagogical, heritage, or community-boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1984_01::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The line is a 45 second message containing 6 items a week. What's happening, where to buy, whose teaching, whose working, etc. It's free. The other side of the coin is heavy promotion to the media as a source of information about Flamenco dance.",
+        "target": "L.A. Flamenco Dance Line",
+        "rationale": "The passage frames a telephone information line as a free mediator of flamenco dance knowledge and access, including information on teaching and public introduction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The record catalogue says each record has a brief critical review, but the visible text does not exercise critical authority or provide the review judgments themselves."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "L.A. Flamenco Dance Line as an access point for flamenco dance information",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the greatest bailaor of our age",
+        "target": "Vicente Escudero",
+        "rationale": "The text canonizes Escudero through an explicit superlative ranking within flamenco dance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "his emacisted corpse was deposited with great honor and cersmony in the Pantheon in Barcelona. This is the first time such an honor has been accorded a flamenco",
+        "target": "Vicente Escudero's public commemoration",
+        "rationale": "Official placement in the Pantheon is presented as an unprecedented institutional honor that publicly recognizes a flamenco figure among the illustrious."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The retrieval hint points to compás, but the visible evidence does not describe embodied, oral, familial, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Vicente Escudero as a canonical flamenco dancer and public cultural figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1984_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "He shuns the gloss of modern showmanship and deploras the growing adulteration of the Spanish dance and the use of mechanical devices for effects.",
+        "target": "modern showmanship, adulteration, mechanical effects, and impure mannerisms in Spanish dance",
+        "rationale": "The passage draws a purity boundary by opposing Escudero's proper Spanish/flamenco dance to adulterated modern showmanship and impurity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Escudero is said to come closer to the garminal sources of the Spanish dance than any other performer alive.",
+        "target": "Vicente Escudero",
+        "rationale": "The passage establishes a hierarchy by ranking Escudero above other living performers in proximity to the source of Spanish dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Bacán proved himself the master of his instrument and his music. He has a fluid technique, a vital sense of rhythm, a sure grasp of the music's varying temperaments.",
+        "target": "Pedro Bacán",
+        "rationale": "The review applies explicit aesthetic criteria—technique, rhythm, and musical temperament—to evaluate flamenco guitar quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase about germinal sources suggests roots/continuity, but the stronger visible discourse is purity boundary-work and canonical ranking, so a separate roots code would be overlapping."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text contains general praise of Escudero and Bacán, but the emitted CRIT_02 and CRIT_03 codes capture the more specific evaluative functions."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Escudero's pure Spanish/flamenco dance style and Bacán's guitar performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains clear evaluative and boundary-making claims."
+  },
+  {
+    "article_id": "JALEO_1984_01::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "she opened the door to the studio one day when she was maybe two years old, and began to do everything the students were doing. That's how she learned, by watching.",
+        "target": "Carmen's early dance learning",
+        "rationale": "The passage frames dance knowledge as acquired through watching and imitation in a studio/family environment, an embodied mode of transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "he gave only castanet classes. He taught sitting down facing the student.",
+        "target": "the grandfather's castanet instruction",
+        "rationale": "The grandfather is positioned as a teacher transmitting Spanish dance technique through a direct instructional relation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "A dancing school and Ballet auditions are mentioned, but the visible passage does not clearly evaluate institutional access or institutional pedagogy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Antonio Gala is called the most important playwright in Spain, but the judgment targets a literary figure rather than flamenco or Spanish dance authority in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Pericet family/studio transmission of Spanish dance knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the emitted pedagogy codes."
+  }
+]

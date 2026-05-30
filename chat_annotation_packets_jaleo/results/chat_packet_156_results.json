@@ -1,0 +1,240 @@
+[
+  {
+    "article_id": "JALEO_1982_12::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "When debate occurs, error is pointed out... there are people reading Jaleo who perhaps are new to flamenco and want to learn more about it.",
+        "target": "Mr. Clark's claims about flamenco history",
+        "rationale": "The passage frames correction of error as necessary critical mediation for readers learning about flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Shall we direct them to Mr. Clark, Ms. del Cid, or Mr. Lodbill instead of Paco de Lucía? Are they more knowledgeable about flamenco than he is?",
+        "target": "Paco de Lucía versus other discussants",
+        "rationale": "The rhetorical comparison constructs a hierarchy of flamenco knowledge and elevates Paco de Lucía as a more authoritative reference."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Who can say when flamenco was \"born\"?... there is little evidence to support Mr. Clark's idea that flamenco was initially non-performing and without some form of guitar accompaniment",
+        "target": "flamenco origins and early performance history",
+        "rationale": "The author contests an origin narrative and uses historical evidence about performance, gypsies, and guitar accompaniment to define flamenco's roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage defends a historical view of flamenco but does not clearly assert that one present practice is genuinely or properly flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "flamenco historical authority and origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible debate and evidence window provide enough context for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1982_12::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Not only is the company technically accomplished, but they also have a considerable amount of the right \"gitana pura\" style and spirit.",
+        "target": "Rosa Montoya's company",
+        "rationale": "The reviewer explicitly praises the company's technical accomplishment and style."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "they also have a considerable amount of the right \"gitana pura\" style and spirit... authentic style",
+        "target": "Rosa Montoya's company style",
+        "rationale": "The passage attributes authentic and properly flamenco value to the company through 'gitana pura' style and spirit."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "This is not to say they are perfect in respect to authentic style and could make one forget an Escudero, but this finely flavored little troupe gets one closer to the meat of gypsy song and dance than, say, Jose Greco used to do",
+        "target": "Rosa Montoya's troupe compared with Escudero and Jose Greco",
+        "rationale": "The reviewer ranks the troupe through comparison with canonical or better-known figures and companies."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'gitana pura' invokes identity, but the visible passage primarily uses it as an authenticity and aesthetic criterion rather than developing identity-group authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The family history is extensive, but it mostly functions as biography rather than community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Rosa Montoya's company",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated interview includes family biography, but the strongest codeable discourse is in the visible evaluative review ending."
+  },
+  {
+    "article_id": "JALEO_1982_12::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "In my 1982 all flamenco workshop, we worked on some very important facets of control that I feel develop the art of the dance to a higher degree.",
+        "target": "flamenco dance control instruction",
+        "rationale": "The author presents workshop instruction and selected concepts as authoritative methods for improving flamenco dance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "our long study periods start to develop \"muscle memory,\" that ability to know that when you execute a turn or a factwork pattern, it will be there.",
+        "target": "embodied flamenco dance learning",
+        "rationale": "The passage frames dance knowledge as developed through bodily practice, muscle memory, breathing, and physical control."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "sustaining energy and focus, proper breathing; dancing slowly with power; attacking speed with power... control of footwork with speed... developing a \"flow\" within each compás",
+        "target": "criteria for good flamenco dance",
+        "rationale": "The article defines flamenco dance quality through explicit aesthetic and technical criteria such as energy, focus, power, footwork control, flow, and compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The workshop and ballet recommendation indicate formal learning contexts, but the passage is more about technique and embodied control than institutional or transnational access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "controlled flamenco dance technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Full visible article; codes reflect instructional and aesthetic-definition functions rather than simple technical vocabulary."
+  },
+  {
+    "article_id": "JALEO_1982_12::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "In the early times, it was used only as an instrument of accompaniment... In Andalucía the guitar took another, more important, path of development",
+        "target": "the guitar's role in flamenco and Spanish dance",
+        "rationale": "The article grounds the guitar's value in a developmental history and continuity from accompaniment toward a central flamenco role."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "almost all came from the same origin -- the gypsies",
+        "target": "gypsies as originators of dance, cante, and guitar styles",
+        "rationale": "The passage uses an identity group to frame the origin and cultural grounding of flamenco-related forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "But the guitar couldn't stop there; it was made to reach a much higher position, and it was easy for it to achieve that position because of the role it played in the cante and baile.",
+        "target": "the guitar in relation to cante and baile",
+        "rationale": "The passage constructs a value hierarchy by describing the guitar as rising to a higher artistic position through flamenco song and dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The closing advertisement promises mastery and learning, but it is promotional copy rather than sustained discourse on flamenco knowledge access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text praises the guitar's importance, but the stronger function is historical hierarchy and origin framing rather than a review of a specific performance or artist."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "the guitar's historical role in flamenco and Spanish dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Full visible article; ad text at the end was treated conservatively."
+  },
+  {
+    "article_id": "JALEO_1982_12::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article discusses Spanish-language teaching authority, but the code requires flamenco knowledge or flamenco-related pedagogical mediation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique of university and literature teachers concerns language learning and dignity, not flamenco critical or expert authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible article is about learning Spanish rather than flamenco discourse."
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "article_id": "JALEO_1978_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mercedes Molina's singing, Paco Sevilla and Juan Molina's beautifully interwoven guitar work, and the energetic and lively dancing ... combined in a rich and colorful fusion of elements to delight the senses.",
+        "target": "Música y Danzas de España performance",
+        "rationale": "The review explicitly praises the quality and sensory effect of the singing, guitar work, and dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Paco played with a fluidity and ease that I found semi-astounding; the end result was an intense emotional experience not easily forgotten.",
+        "target": "Paco Sevilla's guitar solo",
+        "rationale": "The passage applies aesthetic criteria of fluidity, ease, and emotional intensity to judge the guitar performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reviewer mentions supporting fellow Jaleistas, but this does not clearly grant community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Música y Danzas de España performance and featured performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_05::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "The following reviews are by New York critics ... because they present different views ... and ... reveal what the critics are saying about Spanish dance",
+        "target": "New York critics' reviews of Jose Molina and Spanish dance",
+        "rationale": "The article foregrounds critics as authoritative voices whose reviews are used to assess the state of Spanish dance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Spanish dance has fallen on hard times, both here and in its home country, and so Mr. Molina's appearance ... was especially welcome.",
+        "target": "Spanish dance and Jose Molina's company",
+        "rationale": "The passage makes an explicit critical assessment of Spanish dance's decline and values Molina's appearance in that context."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "What is left of it in New York is on the concert stage, far removed from the open squares and cafes where Spanish regional and flamenco dance flourished for so long.",
+        "target": "Spanish regional and flamenco dance settings",
+        "rationale": "The passage contrasts concert-stage survival with earlier public/social spaces where the dance flourished, making setting relevant to cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The visible text mentions historical development from cafes and theatricalization, but the past is not clearly used to authorize a present proper form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Spanish dance, flamenco dance settings, and Jose Molina's company",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotations are based only on the visible beginning, evidence windows, and ending context."
+  },
+  {
+    "article_id": "JALEO_1978_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "ACTUACIÓN (la) - a performance by an individual or group.",
+        "target": "flamenco terminology for readers",
+        "rationale": "The glossary entry mediates access to flamenco vocabulary by defining a Spanish term for readers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "reader access to flamenco terminology",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_05::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article describes a large all-night juerga, but the visible excerpt mostly reports attendance, food, and logistics without clearly evaluating participatory flamenco setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'a true gypsy diet' uses identity language, but it is a casual food description rather than identity-based authority or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_05::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "85% wanted at least one thing taught at the juergas, the most requested being palmas dance, and singing (in that order).",
+        "target": "teaching flamenco skills at Jaleistas juergas",
+        "rationale": "The passage explicitly frames juergas as a potential setting for organized teaching of flamenco skills."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The most often mentioned positive aspect of the juergas was the atmosphere of spontaneity and friendship, along with the music, of course.",
+        "target": "Jaleistas juerga atmosphere",
+        "rationale": "The passage values the juerga as a participatory social setting grounded in spontaneity, friendship, and music."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "try to be sure that the guests you invite are people who will be interested in flamenco, not just partying.",
+        "target": "juerga guests and participation boundaries",
+        "rationale": "The passage draws a boundary between appropriate participants interested in flamenco and outsiders who treat the event merely as a party."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text discusses community organization and volunteer roles, but it does not clearly grant aficionados or members authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Jaleistas juergas as participatory and pedagogical flamenco spaces",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

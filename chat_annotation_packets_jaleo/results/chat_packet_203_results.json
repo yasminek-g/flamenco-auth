@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "JALEO_1985_01::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "we're going to start by forming different grades, from the \"principiante o primario\" through the \"intermedio\", \"avanzado\" and \"profesional\". Then, we are going to teach about the correct way",
+        "target": "Centro Triana de Guitarra Flamenca",
+        "rationale": "The interview frames the new school as an institutional pathway for graded flamenco guitar training and correct knowledge of solo and accompaniment practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Sami has been a professional flamenco guitarist for many many years. He has a perfect knowledge of what he interprets, and for me he is a professional to the fullest extent of the word.",
+        "target": "Sami Martin as assistant professor",
+        "rationale": "Sami Martin is legitimated as a teaching authority through professional status and complete knowledge of what he interprets."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The closing reference to aficionados in the United States and elsewhere addresses a community of interest, but it does not clearly grant them authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "Centro Triana de Guitarra Flamenca and its instructors",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "School and teacher language is coded only where it defines instructional authority or structured access to flamenco knowledge."
+  },
+  {
+    "article_id": "JALEO_1985_01::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "the rest of this article will deal with the most interesting record shops of Madrid, and a few in Sevilla. It may save you some shoe leather and time.",
+        "target": "Jaleo readers seeking flamenco records in Spain",
+        "rationale": "The article mediates access to flamenco recordings for readers outside Spain by guiding them to record shops and available cante series."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'flamenco comes from Spain, the south, Andalucía' asserts geographic origin, but the visible passage does not use roots or continuity to authorize a present practice strongly enough."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The contrast between Andalucía and places such as New York, California, Mexico, Burgos, or Bilbao is more geographic than a clear social insider/outsider boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "reader access to flamenco recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The record-shopping guide is treated as mediation/access rather than heritage or community authority."
+  },
+  {
+    "article_id": "JALEO_1985_01::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Rhythm is one of the main faundatians of all music and its variety of pulse challenge one to awaken these pulses with a variety of counter-play.",
+        "target": "rhythm and counter-rhythm in flamenco dance and music",
+        "rationale": "The article defines rhythm, counter-rhythm, pulse, and compás as core criteria for understanding and valuing flamenco expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco is very unique in its dance in that the dancers not only have many instruments within their own bodies but have a variety of rhythms ta work with.",
+        "target": "flamenco dancers' embodied rhythmic knowledge",
+        "rationale": "The passage frames flamenco knowledge as bodily and rhythmic, with dancers' bodies functioning as instruments for learning and expressing compás."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article is instructional, but it does not clearly concern institutional, transnational, media, outsider, or access structures of learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy"],
+      "target": "rhythm and compás as foundations of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is didactic, but emitted codes focus on the explicit aesthetic criterion and embodied rhythmic framing."
+  },
+  {
+    "article_id": "JALEO_1985_01::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The condition of flamenco in Mexico City can be described in one word - naribund.",
+        "target": "flamenco scene in Mexico City",
+        "rationale": "The review opens with an explicit negative judgment of the local flamenco scene and continues with evaluative assessments of venues and performances."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "In our judgment, she is the finest all-around female Spanish dancer performing today.",
+        "target": "Pilar Rioja",
+        "rationale": "The passage canonizes Rioja through a superlative ranking against contemporary female Spanish dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "We close this review by correcting two errors of fact. Miss Rioja is listed in the program as having had \"outstanding success in the greatest theaters of New York.\" Outstanding success, yes, but in the theater of the Repertorio Español",
+        "target": "program claims about Pilar Rioja and Mati Mistral",
+        "rationale": "The reviewer asserts critical authority by policing promotional claims and correcting the status implied by the program biography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review mentions technique, cante, and repertoire, but these are folded into broader performance evaluation rather than developed as distinct aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Mexico City flamenco scene, Pilar Rioja, Mati Mistral, and program claims",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains unusually dense review discourse; three critical codes are justified by distinct negative evaluation, canonization, and factual boundary correction."
+  },
+  {
+    "article_id": "JALEO_1985_01::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "He's preserving the folklore of every region and presenting it to audiences all over Europe and the United States.",
+        "target": "Jose Espadero's regional dance work",
+        "rationale": "Espadero's work is framed as preserving and circulating regional folklore as living public culture."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Espadero created a curriculum which adapted classical ballet techniques to the particular characteristics of Spanish dance - and to its three types of expression - flamenco, bolero and regional dance.",
+        "target": "institutional teaching of classical Spanish dance",
+        "rationale": "The passage explicitly describes curriculum creation and conservatory/national-school structures for formal Spanish dance training."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Today, in his early 40s, he is one of Spain's best known classical dancers.",
+        "target": "Jose Espadero",
+        "rationale": "The article positions Espadero within a status hierarchy by presenting him as one of Spain's best-known classical dancers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Older residents are said to know dances 'in a purer form,' but the phrase does not clearly draw a proper/improper flamenco boundary in the visible passage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy influences from Andalucía are mentioned descriptively in a definition of flamenco, but identity does not clearly organize belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage", "pedagogy", "criticism"],
+      "target": "Jose Espadero and institutional Spanish dance preservation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines heritage preservation, formal pedagogy, and status positioning; incidental identity and purity language is not emitted."
+  }
+]

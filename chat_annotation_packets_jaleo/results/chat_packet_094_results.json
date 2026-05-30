@@ -1,0 +1,273 @@
+[
+    {
+        "article_id": "JALEO_1981_01::A10",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "In Triana we had a clear demonstration of the cante as art. We listened to artists -- not just cantaores.",
+                "target": "III Festival de Cante de Triana performers",
+                "rationale": "The review explicitly evaluates the festival singing as art and elevates the performers beyond ordinary cantaores."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "those cantes require knowledge and flavor that few possess; ... he can do anything with comp\u00e1s; he developed his cantes",
+                "target": "Salmonete and Lebrijano's cante",
+                "rationale": "The passage applies aesthetic criteria such as knowledge, flavor, comp\u00e1s, and development to judge flamenco quality."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "although he is still a youngster, he reminded us of Tom\u00e1s Pav\u00f3n... Lebrijano was a real star",
+                "target": "Enrique Fern\u00e1ndez and Lebrijano",
+                "rationale": "The review creates status comparisons by measuring a young singer against Tom\u00e1s Pav\u00f3n and singling Lebrijano out as a star."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "The phrase 'lesson in good singing' is evaluative review language, not evidence of embodied or oral transmission."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "festival performers and cante quality",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated; annotations are limited to the visible review excerpt."
+    },
+    {
+        "article_id": "JALEO_1981_01::A11",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "put on a flawless technical display Wednesday at the Santa Monica Civic, but the impact of their flashy performance was considerably dampened by repetition and poor pacing",
+                "target": "McLaughlin, DiMeola, and Paco de Luc\u00eda concert",
+                "rationale": "The cited review gives explicit praise and criticism of the performance's quality and effect."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "repetition and poor pacing... rhythmic sameness and redundant medium tempos wore down even the jubilant sell-out audience",
+                "target": "the concert's musical structure and pacing",
+                "rationale": "The review uses aesthetic criteria such as pacing, repetition, rhythm, and tempo variety to assess the concert."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "Here is the review that appeared in the Los Angeles Times... by Zan Stewart",
+                "target": "Los Angeles Times review of the guitar concert",
+                "rationale": "The article imports a named newspaper review as an authoritative critical judgment on the performance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "reason": "The statement 'A flamenco concert? Definitely not!' marks a genre boundary, but the stronger discourse function in the excerpt is critical review rather than purity boundary work."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism"
+            ],
+            "target": "McLaughlin, DiMeola, and Paco de Luc\u00eda concert",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1981_01::A12",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "was disappointed in the rock-star type presentation of the number but well-pleased later with his interpretation of buler\u00edas and tientos",
+                "target": "Antonio S\u00e1nchez's flamenco numbers",
+                "rationale": "The reviewer directly evaluates different parts of the performance, criticizing the rumba presentation and praising later interpretation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "The fandangos was the most spectacular as a production number... beautifully arranged... expertly maneuvered by the dancers",
+                "target": "Angelita concert choreography and production",
+                "rationale": "The passage judges flamenco-stage quality through arrangement, spectacle, maneuvering, and interpretive execution."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "It was our first glimpse of Ambar and Daniel doing more serious flamenco.",
+                "target": "Ambar and Daniel's flamenco performance",
+                "rationale": "The reviewer uses a seriousness boundary to distinguish more valued flamenco performance from lighter or less serious presentation."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "reason": "The phrase 'authentically presented' refers to a jota/Spanish piece detail rather than a clear authenticity claim about flamenco practice."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "The word 'interpretation' appears as performance evaluation, not as a learning, access, or transmission issue."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Angelita concert flamenco section",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Article text is truncated; annotations are limited to the visible review excerpt."
+    },
+    {
+        "article_id": "JALEO_1981_01::A13",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "other various intruders such as jazz \"hum\" rock \"ugh\" groups, whose function clearly must have been to chase away the duende... no extraneous noise... to detract from the all flamenco presentation",
+                "target": "non-flamenco intrusions at El Cid",
+                "rationale": "The reviewer polices the boundary of the flamenco show by treating jazz and rock as intrusive forces that threaten duende."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "the group presented a flawlessly executed and inspiring performance",
+                "target": "El Cid flamenco performers",
+                "rationale": "The review gives explicit positive judgment of the performance's execution and effect."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Marco Carmona is a singularly talented guitarist... His technique is precise, fast and contains highly personal elements of style.",
+                "target": "Marco Carmona's guitar performance",
+                "rationale": "The passage applies aesthetic criteria including talent, precision, speed, and personal style to evaluate guitar artistry."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "Calling El Cid a long-time landmark suggests status, but the excerpt does not develop a canon or hierarchy around the venue."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The venue's ambiente is praised, but there is no clear public/private or participatory contrast."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "El Cid all-flamenco presentation and performers",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1981_01::A14",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "confidence": "high",
+                "evidence_quote": "The result has been the infusion of some styles that don't bear an awful lot of resemblance to the real thing -- including one product of this disco-oriented age known as la rumba flamenca. Sally Montoya calls it \"dilution\" -- probably because she is too polite to call it corruption.",
+                "target": "tourist-supplied rumba flamenca and diluted styles",
+                "rationale": "The passage draws a boundary between 'the real thing' and diluted or corrupt commercial-era styles."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "Improvisation is the very soul of flamenco tradition.",
+                "target": "improvisation in flamenco",
+                "rationale": "The statement grounds flamenco value in a traditional core, presenting improvisation as essential continuity."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "\"We gypsies live for the moment,\" he said. \"What is gone is gone.\"",
+                "target": "Gypsy identity and Montoya's improvisatory practice",
+                "rationale": "The passage frames a flamenco performance value through an identity-group claim about Gypsy temporality and artistic spontaneity."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "as N.Y. Times critic Harold Schonberg has pointed out: \"He does something much more important. He makes music.\"",
+                "target": "Carlos Montoya's musicianship",
+                "rationale": "A named critic is invoked to authorize the evaluation that Montoya's musicality exceeds formal notation literacy."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The Hall-of-Famers and star names suggest prestige, but the visible passage uses them mainly as biographical context rather than constructing a detailed ranking."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Montoya's inability to read music and improvisatory practice do not by themselves describe oral, embodied, or lineage transmission."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "authenticity",
+                "tradition",
+                "community",
+                "criticism"
+            ],
+            "target": "Carlos Montoya's flamenco practice and commercial dilution of flamenco",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    }
+]

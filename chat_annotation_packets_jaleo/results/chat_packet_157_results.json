@@ -1,0 +1,215 @@
+[
+  {
+    "article_id": "JALEO_1982_12::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "what is certainly the finest recording of an \"agrupación gitana\" be has ever had the great good fortune of having heard",
+        "target": "the recording of Gypsy music from the Stes. Maries de la Mer festival",
+        "rationale": "The reviewer explicitly praises the recording as exceptionally fine and worth repeated listening."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "that extra measure of \"penetración intensivo,\" which causes bystanders and/or fellow performers to exclaim \"¡Salero!\"",
+        "target": "recorded juerga/flamenco performance quality",
+        "rationale": "The passage names expressive penetration and salero as criteria for judging whether a recorded juerga succeeds."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text contrasts live juerga response with recordings, but it does not clearly develop a public/private or participatory-setting boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'momento de verdad' suggests truth, but the visible passage mainly supports aesthetic evaluation rather than a direct authenticity claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the festival recording",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated review; coded only the visible record-review material, not the appended poem-like ending."
+  },
+  {
+    "article_id": "JALEO_1982_12::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Joaquín el de la Paula is one of the legendary figures in flamenco history. He played an important role in developing the cantes de Alcalá",
+        "target": "Joaquín el de la Paula",
+        "rationale": "The editor's note canonizes Joaquín as a legendary historical figure and ranks his role as important in developing a style."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "His cante was carried on by his cousin Mançita el de la María and his nephew Juan Talegas.",
+        "target": "Joaquín el de la Paula's cante",
+        "rationale": "The passage frames flamenco knowledge as transmitted through family lineage across named relatives."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "the solea de Alcalá is the style of solea most often heard today. His cante was carried on by his cousin Mançita el de la María and his nephew Juan Talegas.",
+        "target": "cantes/soleá de Alcalá",
+        "rationale": "The passage links present practice to historical development and continuity through inherited cante."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Joaquín el de la Paula and the Alcalá cante lineage",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Primary evidence comes from the visible editor's note; the story body is largely narrative rather than evaluative discourse."
+  },
+  {
+    "article_id": "JALEO_1982_12::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'successful summer appearances' and 'top line of flamenco guitars' are brief promotional/news language without enough critical judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The ad phrase 'choice of many leading guitarists' implies status but is product advertising rather than canon or hierarchy construction around flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly member news, venue notices, and advertising; no clear code-worthy discourse function."
+  },
+  {
+    "article_id": "JALEO_1983_01::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Familiarity with the \"escuela bolera\" at the very least gives a dancer more cultural depth, a desirable attribute, since authenticity is a primary goal in Spanish dance.",
+        "target": "Spanish dance training for flamenco dancers",
+        "rationale": "The passage explicitly authorizes cultural depth and training through authenticity as a primary goal."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "the family is best known for the careful preservation of the Spanish classical dances, exactly as their grandfather and great aunts performed them",
+        "target": "Pericet family's escuela bolera tradition",
+        "rationale": "The passage grounds value in preservation, fidelity, and continuity with an inherited past."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "organized the steps and exercises of the \"escuela\" into a progressive course of study, consisting of a preparatory level followed by three \"cursos\"",
+        "target": "Escuela bolera instruction",
+        "rationale": "The text emphasizes formalized curriculum, syllabus, and institutional-style training as access to dance knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "So many well-known Spanish dancers have studied the Escuela #olera de Angel Pericet that it is almost easier to name those who have not.",
+        "target": "Escuela Bolera de Angel Pericet",
+        "rationale": "The school is positioned as a recognized pedagogical authority through its association with many well-known dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The potential for comparison can be reduced somewhat only by clever staging, meticulous performance, and emphasis on the Spanish characteristics of the dance, rather than on the classical.",
+        "target": "performance of escuela bolera dances",
+        "rationale": "The passage defines evaluative criteria—staging, meticulous execution, and Spanish character—for successful performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Although preservation and 'museum pieces' appear, the passage lacks a clear public heritage, safeguarding, or institutional heritage frame."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Bailarina/bailaora terminology appears, but it functions mainly as a dance-category distinction rather than identity-based authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "escuela bolera training and performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article legitimates escuela bolera through preservation and formal training while also noting aesthetic risks of static fidelity."
+  },
+  {
+    "article_id": "JALEO_1983_01::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The editorial values reader and writer participation in sustaining Jaleo, but it does not clearly grant community authority to recognize, judge, or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Editorial about subscription rates, correspondents, and publication support; relevant to magazine operations but not enough for a flamenco discourse code."
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "article_id": "JALEO_1982_11::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Aficionados of terpsichore and flamenco alike gathered at the Athenian Gardens Restaurant in Hollywood this summer to pay homage to a great lady of the Mediterranean arts.",
+        "target": "Katina Vrinos as a recognized figure within the dance/flamenco-adjacent community",
+        "rationale": "The passage presents aficionados gathering to recognize and honor Katina, making community recognition the source of value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "One particularly unbelievable feat was the demonstration of her ability to flip over every other coin from a row of quarters laid across her abdomen.",
+        "target": "Katina Vrinos's dance/performance ability",
+        "rationale": "The article explicitly praises a performer’s technical feat as remarkable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The quip about becoming 'like a true gypsy' uses identity language, but it is not developed enough to show a clear discourse function around belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Katina Vrinos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short article with captions; codes are limited to visible evaluative/community-recognition prose."
+  },
+  {
+    "article_id": "JALEO_1982_11::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "So it's a good idea to really think and learn these patterns with deliberation.",
+        "target": "triplet rasgueado fingering and rhythmic exit patterns",
+        "rationale": "The passage explicitly teaches guitar technique and frames deliberate learning of the pattern as the correct approach."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage mentions sound and beat placement, but the function is technical instruction rather than aesthetic evaluation of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "flamenco guitar technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_11::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I would describe his style as more modern with brass and percussion giving it mass appeal.",
+        "target": "Campuzano's Spanish/Andalucian music production",
+        "rationale": "The visible ending evaluates the musician's style by comparing it with earlier attempts and identifying its modern, mass-appeal character."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The language-learning Q&A is pedagogical, but it concerns learning Spanish in general rather than flamenco knowledge or flamenco transmission."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The retrieval window centers on memory and memorization, but it does not frame flamenco as living heritage or public cultural memory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Campuzano's Spanish/Andalucian music production",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the visible text concerns Spanish-language learning rather than flamenco; only the ending provides a modest flamenco-adjacent critical judgment."
+  },
+  {
+    "article_id": "JALEO_1982_11::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The name \"flamenco\" remained and, wherever gypsy dances were performed, they were called \"baile flamenco,\" when the fact is that they are pure baile gitano.",
+        "target": "the classification of gypsy dances as baile gitano rather than baile flamenco",
+        "rationale": "The passage draws a corrective purity boundary by rejecting the common flamenco label and asserting the dances are 'pure baile gitano.'"
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "the gypsies, who usually danced bare-foot and among their own people",
+        "target": "gypsies as the group grounding the dance tradition",
+        "rationale": "The passage frames the dance through an identity group whose social practice and setting define its origin and meaning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the baile gitano took awhile longer to make its appearance, in spite of containing the essence of the Andalucian dance, because it was considered inferior to the castanet dances",
+        "target": "baile gitano in relation to castanet dances",
+        "rationale": "The passage reports a hierarchy in which baile gitano was judged inferior even while claiming it contained the essence of Andalucian dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text contrasts dancing among one's own people with later stage exposure, but the stronger and clearer function is identity-group framing rather than a developed public/private participatory argument."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage gives an origin narrative involving gypsies, Andalucía, and Moorish influence, but the visible evidence functions more as classification and identity framing than as a present-value tradition claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The trigger window includes transformation over time, but it does not clearly describe oral, embodied, familial, or lineage-based transmission as a mode of learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "baile gitano / baile flamenco classification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; codes rely only on visible beginning/window/ending text."
+  },
+  {
+    "article_id": "JALEO_1982_11::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "It is Teo Morca who is teaching how to blend emotion into the sweep of a hand and the click of a heel that is flamenco dance.",
+        "target": "Teo Morca's flamenco teaching",
+        "rationale": "Morca is positioned as an authoritative teacher who transmits flamenco expression through technique and embodied interpretation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The method is special enough to have attracted dancers from Chicago, Atlanta, Washington, Los Angeles, Seattle and New Zealand and Canada.",
+        "target": "Morca's Bellingham flamenco seminar",
+        "rationale": "The seminar is framed as a transnational learning site that gives geographically dispersed students access to flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Although they might have sounded amorphous to some, they admirably fulfilled their virtuosic intent.",
+        "target": "Sabicas's Guitar Festival performance",
+        "rationale": "The review makes an explicit evaluative judgment of the performance's success despite possible reservations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the man known only as Sabicas, an acknowledged master of flamenco guitar for more than 40 years",
+        "target": "Sabicas",
+        "rationale": "The passage canonizes Sabicas through long-term master status and exemplary standing in flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review applies criteria such as formidable technique and contrapuntal line, but these are covered sufficiently by the emitted critical evaluation and canon/ranking codes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "Phrases such as 'real in-depth technical skills' praise Morca's expertise but do not clearly make an authenticity claim about proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Teo Morca's pedagogy and Sabicas's performance/master status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Four codes are used because the visible article contains distinct pedagogical and review sections with separate discourse functions."
+  }
+]

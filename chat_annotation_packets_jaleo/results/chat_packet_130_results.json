@@ -1,0 +1,195 @@
+[
+  {
+    "article_id": "JALEO_1982_01::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article gives practical repair instructions, but the visible text teaches instrument care rather than flamenco knowledge, transmission, access, or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Technical guitar-care advice without a clear flamenco discourse function under the collapsed codebook."
+  },
+  {
+    "article_id": "JALEO_1982_01::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "We were then provided with some very exciting dancing and singing, accompanied, of course, by the strains of Benito's Rodríguez guitar cleanly cutting the air. At one point, Benito played his excellent granadinas. My only criticism at this point is that I would have enjoyed a great deal more if it were played without the cejilla on the third fret.",
+        "target": "Centro Español performance, especially Benito Palacios and Chinín de Triana",
+        "rationale": "The reviewer explicitly praises the dancing, singing, and guitar playing while also offering a specific critical preference about the cejilla."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'authentic Spanish characteristic' is used jokingly about the show starting late, not as a genuineness claim about flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The cejilla comment is a technical preference, but the excerpt does not develop it into a broader criterion of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Centro Español performance, especially Benito Palacios and Chinín de Triana",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_01::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "outside of the geographic limits where flamenco was born and became defined... outside of its native confines... regional deviations of the primitive flamenco forms",
+        "target": "Córdoba and regional forms of cante in relation to flamenco origins",
+        "rationale": "The passage grounds flamenco value and classification in birth, native territory, original styles, and primitive forms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "extraterritorial affluences -- more or less legitimate -- of flamenco... some more artificially conditioned than others by the propagation of the cante outside of its territorial place of origin",
+        "target": "regional fandangos and extraterritorial flamenco forms",
+        "rationale": "The text draws a legitimacy boundary between forms closer to flamenco's territorial origin and forms marked as artificial or only partly legitimate."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "some more artificially conditioned than others by the propagation of the cante outside of its territorial place of origin",
+        "target": "regional deviations of primitive flamenco forms",
+        "rationale": "The critical voice polices boundary conditions for flamenco by judging some propagated regional forms as artificially conditioned."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "regional fandangos and extraterritorial flamenco forms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning and evidence window provide enough explicit boundary and origin discourse to annotate conservatively."
+  },
+  {
+    "article_id": "JALEO_1982_01::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Jaleistas has reached another crisis point in it's existence: juerga sites are becoming scarcer and scarcer, local member participation has reached a low ebb... If Jaleistas is to continue as an association the current situation must be remedies.",
+        "target": "Jaleistas local flamenco association",
+        "rationale": "The notice frames local member participation and juerga infrastructure as necessary for sustaining the flamenco association."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions juerga sites, but it does not contrast participatory/private settings with public or spectatorial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas local flamenco association",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative meeting notice, but it explicitly frames community participation as required for association survival."
+  },
+  {
+    "article_id": "JALEO_1982_02::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manolo Leiva, one of the all-time giants of the \"cante flamenco\"... established himself as an artist of truly international standing",
+        "target": "Manolo Leiva",
+        "rationale": "The passage canonizes Leiva through superlative status and international artistic standing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His cante has the dignified depth and intensity comparable to that of an Antonio Chacón or a Mairena",
+        "target": "Manolo Leiva's cante",
+        "rationale": "Depth, intensity, and dignified restraint are applied as aesthetic criteria for evaluating his cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "flamenco puro, no more, no less",
+        "target": "Manolo Leiva's cante",
+        "rationale": "The passage presents Leiva's cante as properly and genuinely flamenco through the phrase 'flamenco puro.'"
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Although 'puro' appears, the visible passage does not explicitly devalue or exclude an impure target."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article mentions geography and international standing, but identity categories do not organize authority or belonging in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Manolo Leiva and his cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt is sufficient despite truncation because the evaluative and authenticity claims are explicit."
+  }
+]

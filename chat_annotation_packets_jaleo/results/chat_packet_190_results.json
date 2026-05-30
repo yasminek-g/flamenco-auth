@@ -1,0 +1,180 @@
+[
+  {
+    "article_id": "JALEO_1984_03::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "you can teach yourself so much out of books and off of records, and then you need a teacher... I found a good teacher, A Spaniard... he said, \"Yeah, you have to go to Spain.\"",
+        "target": "David Cheney's flamenco guitar learning",
+        "rationale": "The passage positions a teacher as necessary once self-study reaches its limit, and the teacher authoritatively directs the learner toward Spain."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "buying records and just doing the normal trip that everybody does... you can teach yourself so much out of books and off of records, and then you need a teacher. So I went down to Mexico City",
+        "target": "access to flamenco guitar knowledge across books, records, Mexico, and Spain",
+        "rationale": "The learning path is framed through mediated self-study and transnational movement in search of instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to hanging out with gypsies may suggest community proximity, but the visible passage frames it mainly as circumstance rather than community authority or recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "David Cheney's flamenco guitar learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible learning narrative is sufficient for the emitted pedagogy codes."
+  },
+  {
+    "article_id": "JALEO_1984_03::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The new Board is already hard at work for the benefit of Jaleístas... Let's hear from all of you out there! YOU are Jaleíztas.",
+        "target": "Jaleistas community participation",
+        "rationale": "The passage constructs Jaleistas as an active collective whose members should sustain the organization through participation and suggestions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga at a home with shared food and drinks suggests participatory setting, but the wording is mainly logistical rather than evaluative about public/private flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas community participation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_05::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "she was soloist with the company \"Festival Flamenco Gitano\" which toured Germany and Holland, presenting the best artists in the world of Jazz and Flamenco",
+        "target": "La Tati's professional status",
+        "rationale": "The passage elevates La Tati by placing her among a ranked group of top international jazz and flamenco artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "In 1979 she received the Guicapuro, the maximum prize granted to a performer in Venezuela. Others who have received that prize are Lola Flores, Raphael, and Camilo Sexto.",
+        "target": "La Tati's recognition as a performer",
+        "rationale": "The award is described as the maximum performer prize and compared with major prize recipients, constructing a hierarchy of artistic prestige."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "La Tati's professional status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Both emitted codes use CRIT_03 because the visible discourse works through awards, ranking, and status rather than a detailed aesthetic review."
+  },
+  {
+    "article_id": "JALEO_1984_05::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The editorial mentions articles from Spain and East Coast updates, but this is administrative acknowledgement rather than a clear discourse about learning access or knowledge mediation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Subscriber generosity and staff contributions indicate community support, but the text does not clearly authorize flamenco value through community standing or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative editorial thanks; no strong codeable discourse function."
+  },
+  {
+    "article_id": "JALEO_1984_05::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "make this magazine a more complete source of concert information... one master calendar of all flamenco events, festivals, juergas and coacerts",
+        "target": "Jaleo as a mediator of flamenco event knowledge",
+        "rationale": "The letter frames the magazine as an access mechanism for flamenco information across events, festivals, juergas, and concerts."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "I suggest that each of us NEVER ASSUME THAT SOMEONE ELSE IS SENDING THE CONCERT INFORMATION, but that we all drop a note to JALEO as soon as we have information to share.",
+        "target": "readers and performers as a participatory flamenco information community",
+        "rationale": "The passage assigns responsibility to readers and performers as a collective that sustains shared flamenco knowledge through participation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The request for more concert reviews invokes review discourse, but it does not itself exercise critical authority or police artistic boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Jaleo's reader-performer information network",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

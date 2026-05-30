@@ -1,0 +1,288 @@
+[
+  {
+    "article_id": "JALEO_1991_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The sum of this performance was a spellbinding feast of energy and the audience devoured it.",
+        "target": "Paco Peña's flamenco dance company performance",
+        "rationale": "The passage explicitly praises the performance's quality and audience impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "flamenco is improvised... the way that it develops will be unique. Pena's authority is complete yet discreet and the dancers in particular are given free license",
+        "target": "Paco Peña's company performance style",
+        "rationale": "Improvisation, authority, and expressive freedom are presented as criteria for valuing the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Raul, the single male performer, was devastating. He is the definitive flamenco dancer",
+        "target": "Raul as flamenco dancer",
+        "rationale": "Calling Raul the definitive flamenco dancer constructs an exemplary status rather than simple praise."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It's a way of life in my country and especially in my family... the most important things is in stay true to the music's roots.",
+        "target": "Paco Peña's flamenco music",
+        "rationale": "Flamenco value is grounded in family, country, and fidelity to musical roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article uses gendered language about male and female performers, but it mainly functions as descriptive review rhetoric rather than a clear identity-based authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Paco Peña, his company, and his flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1991_10::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "es un tema espanio \"inspirado en raíces populares y flamencas\"... \"algo absolutamente enraizado en mi pueblo y en mi gente\"",
+        "target": "Paco de Lucía's interpretation of Concierto de Aranjuez",
+        "rationale": "The classical work is legitimized for a flamenco guitarist by rooting it in popular, flamenco, communal origins."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "A flamenco quartet followed the Argentinins and it was a very hot number thanks to the Gypsy styles of Maria Bermudez, Luana Moreno, and the versatile Lourdes Rodriguez.",
+        "target": "flamenco quartet and dancers in the festival performance",
+        "rationale": "The passage evaluates the performers positively through explicit praise."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Guitarists Antonin Duran and Antonio Triana played tremendously throughout, though it was the artistry and accompaniment of Mr. Duran which provided the depth required for such an extensive program.",
+        "target": "Antonin Duran's accompaniment and the festival program",
+        "rationale": "Depth, artistry, and accompaniment are applied as aesthetic criteria for judging the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Talavera is a great presence on stage, almost as hypnotic as someone like \"El Farruoo.\"",
+        "target": "Juan Talavera",
+        "rationale": "The comparison to an established figure creates a value-bearing hierarchy of stage presence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The advertisements mention a teacher and classes, but they are routine listings without a clear pedagogical authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "Paco de Lucía's classical experiment and the reviewed flamenco festival performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1991_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The taranto that Christina Hoyos danced was memorable... Christina Hoyos danced marvelously, with imagination, with a profusion of ideas and original solutions and beautiful.",
+        "target": "Christina Hoyos's taranto performance",
+        "rationale": "The reviewer gives explicit qualitative praise to the dance and its artistic execution."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "You cannot penetrate any deeper into a dance... Christina Hoyos is able to make the \"jondo\" shine",
+        "target": "Christina Hoyos's dance",
+        "rationale": "Depth and jondo expression are applied as criteria for flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "In Madrid we have a genius of the flameneo guitar and he is not a child prodigy... Today Maria Solea is noticed in her own right as perhaps the greatest \"eantaora\" that Jerez has ever produced.",
+        "target": "Jeronimo Maya and Maria Solea",
+        "rationale": "The passage canonizes performers through genius language and superlative ranking."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "if there is authentic genius of race in the singiog there is not better embodiment than she... she offers us a handful of authentic jewels.",
+        "target": "Maria Solea's singing",
+        "rationale": "The passage explicitly attributes authentic flamenco value to Maria Solea's singing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "the mystery of those expressive forms which at times have no possible explanation, are gifts reserved for the gypsies and in this, Maria Solea is privileged.",
+        "target": "Maria Solea and Gypsy expressive authority",
+        "rationale": "Identity is used to define privileged access to expressive forms and flamenco authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"true roots of the cante\" suggests rootedness, but the same span is already more directly covered by the stronger authenticity and identity-authority claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "community"
+      ],
+      "target": "Christina Hoyos, Jeronimo Maya, Pansequito, and Maria Solea",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1992_01::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "The art of flamenco, a family legacy for generations, was passed to Eva from her mother, Clarita.",
+        "target": "Eva Encinias's flamenco formation",
+        "rationale": "The passage frames flamenco knowledge as intergenerational family transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "They began their study of flamenco with grandmother Clarita, and continued studying with their mother... carrying on the family tradition.",
+        "target": "Marisol and Joaquin Encinias's flamenco practice",
+        "rationale": "Family tradition and continuity are used to authorize the younger performers' flamenco formation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "He teaches at the University of New Mexico... Eric Patterson... is the flamenco accompanist for the Theatre and Dance Department at the University of New Mexico, where he also teaches the History of Flamenco.",
+        "target": "University of New Mexico flamenco instruction",
+        "rationale": "The text presents flamenco learning through university-based teaching and institutional access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as \"high acclaim\" and \"remarkable performing ability\" praise Eva Encinias, but the surrounding passage is mainly biographical promotion rather than sustained critical judgment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Several teachers are named, but most mentions are neutral biographies; the clearer discourse function is institutional and familial transmission rather than a specific authority-to-teach claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Ritmo Flamenco, the Encinias family, and UNM flamenco instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1992_01::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Alma Flamenca is the University of New Mexico's pre-professional dance company. It provides dance students with the performing experience necessary for growth as dancers and artists.",
+        "target": "Alma Flamenca and University of New Mexico dance training",
+        "rationale": "The passage frames flamenco-related learning through an institutional pre-professional company that provides access to performance experience."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Her devotion to local flamenco artists (and to local flamenco) is already becoming legendary. Her contribution to flamenco in Los",
+        "target": "Ms. Lawlor's support for local flamenco artists",
+        "rationale": "The passage legitimates a local flamenco community by praising sustained support for its artists despite financial loss."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text lists new tablaos and restaurants, but it does not clearly contrast public/private or participatory/spectatorial settings as value-bearing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of Ms. Lawlor is evaluative, but it is better captured as community-support discourse than as criticism of a flamenco performance or work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Alma Flamenca and local flamenco support networks",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; annotations are limited to visible beginning, trigger window, and ending context."
+  }
+]

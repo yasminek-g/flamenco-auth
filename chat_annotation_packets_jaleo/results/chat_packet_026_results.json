@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "JALEO_1978_07::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "They're no good - those are white people; come with me and I'll show you some real Mexicans!",
+        "target": "flamenco dance performers as perceived by audience members",
+        "rationale": "The overheard audience comment frames performance legitimacy through racial/ethnic identity, contrasting 'white people' with 'real Mexicans' as a boundary of representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'real Mexicans' draws a real/fake boundary, but it concerns ethnic perception rather than a clear proper/improper flamenco boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "'They're no good' is evaluative, but it appears as an overheard audience stereotype rather than substantive flamenco criticism."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["community"],
+      "target": "performers marked as not belonging to the audience member's imagined ethnic category",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only the visible overheard comment as identity boundary work; the advertisement and thanks are not relevant."
+  },
+  {
+    "article_id": "JALEO_1978_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "two more examples of the excellent music being transcribed for flamenco guitar these days",
+        "target": "Juan Martin flamenco guitar music books",
+        "rationale": "The review explicitly praises the transcribed music as excellent and evaluates the publication's quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "accurately notated in music and tablature",
+        "target": "notation and transcription of the guitar pieces",
+        "rationale": "Accuracy of notation is applied as a concrete criterion for assessing the value of these flamenco guitar books."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The pieces in the other book, rumba and alegrías (E major-minor), are less effective solos, but have more originality and contain some good ideas.",
+        "target": "the two Juan Martin guitar books and their pieces",
+        "rationale": "The review creates a comparative hierarchy between pieces, ranking some as less effective while crediting them with greater originality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Music and tablature could support learning access, but the passage functions mainly as a critical review rather than a discussion of pedagogy or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Juan Martin's published flamenco guitar transcriptions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The emitted codes reflect explicit review judgments; routine price and publisher details were ignored."
+  },
+  {
+    "article_id": "JALEO_1978_07::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Roberto always tries to explain to the audience before the concert begins, a little bit about what flamenco is",
+        "target": "Roberto Reyes explaining flamenco to the concert audience",
+        "rationale": "The performer is positioned as someone who mediates and teaches basic flamenco understanding to the audience before performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "he invited all the flamencos in the audience to come up on stage an participate in our encore, 'fiesta por bulerías.'",
+        "target": "flamencos in the audience participating in the encore",
+        "rationale": "The passage turns the concert from spectatorial performance into participatory juerga-style co-presence, making participation socially meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and flamencos are mentioned, but the text does not clearly grant them authority to judge or sustain flamenco beyond participating."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "a concert structured as explanation plus participatory fiesta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Coded the explicit teaching and participation moves; the packed house and video recording are descriptive only."
+  },
+  {
+    "article_id": "JALEO_1978_07::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The breakfast juerga failed to jell. Dancing never really materialized",
+        "target": "the breakfast juerga",
+        "rationale": "The article explicitly evaluates the event as unsuccessful in forming a convincing flamenco occasion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "although it was guitaristically excellent with the steadfast and driving presence of Paco Sevilla, there was no singer of cante jondo",
+        "target": "the musical components of the juerga",
+        "rationale": "The passage judges the juerga through aesthetic criteria including guitar excellence and the absence of cante jondo."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "the song is the primary element, that it alone could truly stand alone as the complete embodiment of the soul of flamenco",
+        "target": "cante/song as the core of flamenco",
+        "rationale": "The passage defines song as the true and complete embodiment of flamenco's soul, authorizing cante as the primary element."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Lorca quotation invokes 'the people,' but the visible text does not clearly use tradition, roots, or continuity to authorize present flamenco practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga setting is central, but the excerpt does not clearly contrast participatory/private flamenco with public spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "the breakfast juerga and cante as flamenco's primary element",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains a strong definitional claim about cante plus explicit event evaluation."
+  },
+  {
+    "article_id": "JALEO_1978_07::A16",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The anniversary and return to the initial juerga site suggest continuity, but the passage is mainly event logistics and does not use continuity to authorize flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Palmers are described as longtime followers and admirers, but this does not clearly grant community authority or recognition over flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mary Palmer is said to have taught modern dance, but this is biographical and not a claim about flamenco pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event announcement and host biography do not provide clear flamenco discourse functions under the codebook."
+  }
+]

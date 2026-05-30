@@ -1,0 +1,281 @@
+[
+  {
+    "article_id": "JALEO_1987_SPRING::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "I think you will also become aware of how defensive the Malagueños are about their status in the flamenco world.",
+        "target": "Malagueño flamenco identity and status",
+        "rationale": "The passage frames Málaga identity as a group position within the flamenco world, making local belonging and status part of the discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "dreaming of seeing themselves in the company of the great figures of the cante",
+        "target": "artists of Málaga in relation to canonical cante figures",
+        "rationale": "The text invokes a hierarchy between emerging Málaga artists and recognized 'great figures' of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I believe so, and we have very good professionals here.",
+        "target": "baile professionals in Málaga",
+        "rationale": "The speaker explicitly evaluates the quality of Málaga dance professionals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The recording of Málaga artists' voices suggests preservation, but the visible text does not clearly frame it as public heritage safeguarding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The introduction mentions insight into becoming a professional flamenco in Spain, but the visible excerpt does not develop learning or access to knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Málaga flamenco artists and local status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are limited to visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the quintessential expression of flamenco ... is found in El Cante",
+        "target": "el cante",
+        "rationale": "The article defines cante as the central aesthetic expression of flamenco, using expressive depth as a criterion of value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "It is also the form most difficult to understand, particularly for a non-Spaniard (or non-Andalucian)",
+        "target": "non-Spaniard or non-Andalucian listeners",
+        "rationale": "The passage draws an epistemic insider/outsider boundary around who can understand cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "some strange genetic code passed down through the generations from times immemorial, carrying the call to prayers from the arab muezzin, the sephardic chant, or the quejio gitano",
+        "target": "capacity to perform or listen to el cante",
+        "rationale": "The passage grounds cante's force in inherited, deep historical roots and continuity across generations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "El Fillo ... Called \"the King of cantaores\"",
+        "target": "El Fillo",
+        "rationale": "The title 'King of cantaores' constructs a hierarchical, canonical status for the singer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The passage mentions generational inheritance, but it is framed as quasi-genetic capacity rather than embodied, oral, or apprenticeship-based transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Identity categories are present, but the stronger discourse function is the insider/outsider boundary around understanding cante."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "tradition"
+      ],
+      "target": "el cante as the privileged flamenco form",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; visible text still contains clear evaluative and boundary-making claims."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Nano de Jerez is first class, even if he is not among those who make the headlines.",
+        "target": "Nano de Jerez",
+        "rationale": "The passage explicitly evaluates Nano de Jerez as a high-quality artist despite lack of publicity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "the clique chosen by the powerful minorities who control the flamenco scene - a scene which, unfortunately, has become somewhat stale",
+        "target": "powerful minorities controlling the flamenco scene",
+        "rationale": "The passage uses critique to challenge the authority and condition of the flamenco scene."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Tio Juane is a blood relative of Adela la de Chaqueta, and those bonds express themselves through Nano's sounds.",
+        "target": "Nano de Jerez's flamenco sound",
+        "rationale": "Family bonds and ancestry are presented as audible sources of Nano's flamenco identity and knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "But Nana is quintessentially a \"Jerezano\"",
+        "target": "Nano de Jerez's local identity",
+        "rationale": "Local Jerez identity is used to frame the artist's flamenco belonging and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Ancestry and place are invoked, but the clearest function is lineage transmission and identity framing rather than tradition-continuity as such."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Nano de Jerez and the contemporary flamenco scene",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt ends abruptly, but enough visible evidence supports the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He was an artist of high quality",
+        "target": "Don José Cepero",
+        "rationale": "The passage gives an explicit positive aesthetic evaluation of Cepero as an artist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "his singing was always at the level of the best of his time and he was a great master of the copla",
+        "target": "Don José Cepero",
+        "rationale": "The passage ranks Cepero alongside the best of his era and constructs him as a master figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "I only like Mairena and Caracol, the rest of them are nothing special.",
+        "target": "cantaores of Cepero's time",
+        "rationale": "The interview gives Cepero an authoritative evaluative voice that polices hierarchy among cantaores."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Don José was designated cantaor to the Spanish Royal Family and he was the favorite cantaor of general Primo de Rivera.",
+        "target": "Don José Cepero's status",
+        "rationale": "Official and elite recognition are used to authorize Cepero's cultural status and public value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The word maestro appears, but it functions mainly as artistic honorific/canonization rather than explicit teaching authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'true gentleman' evaluates Cepero's character, not the authenticity of flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Don José Cepero",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Official recognition is coded narrowly because the visible text uses elite designation to authorize the artist's status."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "he made every attempt to maintain the authentic flamenco flavor",
+        "target": "the symphonic arrangement for Los Tarantos",
+        "rationale": "The passage attributes value to maintaining an authentic flamenco quality within an arranged ballet context."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The word 'maintain' appears, but the claim is about preserving authentic flavor in one arrangement, not broader tradition or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage is mostly descriptive news; 'enthusiastic' and 'increased notably' do not clearly evaluate flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity"
+      ],
+      "target": "Los Tarantos ballet music arrangement",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only one authenticity claim is clear enough to emit."
+  }
+]

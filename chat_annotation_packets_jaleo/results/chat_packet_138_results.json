@@ -1,0 +1,203 @@
+[
+  {
+    "article_id": "JALEO_1982_04::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "anyone born outside of that blessed region couldn't even begin to attempt it. This \"impossibility\" attitude has greatly stunted the growth of the art",
+        "target": "non-Andalusian and American attempts to sing flamenco cante",
+        "rationale": "The passage identifies and contests a purity boundary that excludes singers born outside Andalucía from legitimate cante."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "They present several different views on Americans and their ability to sing flamenco",
+        "target": "Americans and non-Spaniards as potential flamenco singers",
+        "rationale": "The article explicitly stages an insider/outsider debate over whether Americans can belong within cante practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Elaine Dames' students... together with their respective students, can be considered to represent an American school of cante flamenco",
+        "target": "an American school of cante flamenco",
+        "rationale": "The passage frames flamenco learning as transnationally accessible through teachers, students, methods, and a named American school."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The ending stresses learning from verses and gypsy experience, but the visible text does not clearly describe oral, embodied, familial, or lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Flamencologists and judges are mentioned, but the stronger function is boundary-work around national origin and pedagogical access rather than expert critical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Americans and non-Spaniards in flamenco cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Review text is truncated, so annotations are limited to the visible beginning, evidence window, and ending."
+  },
+  {
+    "article_id": "JALEO_1982_04::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "This you accept because you have heard it a thousand times from those who are recognized as'sacred giants' of the dance.",
+        "target": "recognized dance authorities and their teaching on continuous learning",
+        "rationale": "Recognized masters are invoked as authoritative sources for how a dancer should understand learning and artistic humility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Each cante or each music for dancing has its exact compás, but also calls for a feeling of rhythm... the result will be gray, feeble, lifeless",
+        "target": "flamenco dance quality",
+        "rationale": "The passage defines quality through aesthetic criteria such as compás, rhythmic feeling, rules, duende, and vitality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "I don't believe that there is a dance for gypsies and a dance for non-gypsies. Although the racial strength of the former makes itself felt notably in the interpretation of particular styles",
+        "target": "gypsy and non-gypsy identities in flamenco dance",
+        "rationale": "The speaker directly addresses ethnic identity as a category shaping interpretation while rejecting a strict separate-dance boundary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The degree and professorship suggest institutional training, but the visible passage emphasizes pedagogical authority and aesthetic rules more than access across institutional or geographic boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The gypsy/non-gypsy boundary is discussed, but the speaker rejects a purity split rather than excluding an improper form of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Ana María Bueno's understanding of flamenco dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Review text is truncated; codes are based only on the visible windows."
+  },
+  {
+    "article_id": "JALEO_1982_04::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a four-word credit line and is insufficient for judgment."
+  },
+  {
+    "article_id": "JALEO_1982_04::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Students and aficionados of the classical and flamenco guitar have a home at the American Institute of Guitar... there are about 150 private classes held every week",
+        "target": "American Institute of Guitar as a flamenco guitar learning site",
+        "rationale": "The passage frames an institution as a place where students and aficionados access flamenco guitar study through regular classes."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "teachers sometimes include guitar masters Sabicas and Mario Escudero... Sabicas will hold master classes",
+        "target": "Sabicas and Mario Escudero as master teachers",
+        "rationale": "Named masters are positioned as authoritative teachers within the institute's flamenco guitar pedagogy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The institute is called a home for students and aficionados, but the passage mainly advertises classes rather than granting community authority to aficionados."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'pure unamplified sound' concerns acoustic sound quality, not a claim that the flamenco is authentic or proper."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "institutional flamenco guitar instruction in New York",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short article with clear institutional pedagogy, but little evaluative discourse beyond access and master instruction."
+  },
+  {
+    "article_id": "JALEO_1982_04::A10",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Courses and lectures are listed, but the passage is a routine event announcement without clear evaluation of pedagogy, access, or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The guitar-sale adjectives 'excellent' and 'outstanding' are advertising copy, not critical evaluation of flamenco artistry."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly a course/festival listing followed by guitar sale copy; no clear discourse function beyond administration/advertising."
+  }
+]

@@ -1,0 +1,197 @@
+[
+  {
+    "article_id": "JALEO_1991_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The quality of this work is of the highest order. It is a landmark publication in the literature of Spanish dance... Matteo and the University of Oklahoma Press are to be congratulated on this groundbreaking accomplishment.",
+        "target": "The Language of Spanish Dance",
+        "rationale": "The passage explicitly evaluates the book's quality and importance for Spanish dance literature."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "It is a valuable resource for dancers, teachers, critics and aficionados. It embraces all aspects of Spanish dance with clearly defined dance terms, drawings and unusual photos.",
+        "target": "The Language of Spanish Dance as a learning resource",
+        "rationale": "The book is framed as a knowledge-access tool for dancers, teachers, critics, and aficionados through definitions and instructional visual material."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "This era, which lasted until roughly 1910, is often termed the \"Golden Age\" of flamenco. So intense was the competition between performers and amang eafes that extraordinary heights of artistry and creativity were reached. The artists of this period are considered, in retrospect, to have been among the finest in flamenco history.",
+        "target": "cafe cantante era artists",
+        "rationale": "The passage constructs a historical hierarchy by naming the cafe cantante period as a Golden Age and ranking its artists among flamenco's finest."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The historical account discusses flamenco epochs and early artists, but the clearer discourse function is canonizing historical hierarchy rather than using roots or continuity to authorize present practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Spanish dance scholarship and the cafe cantante-era flamenco canon",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The first part is promotional, but the quoted endorsements make clear evaluative and pedagogical claims; the later history section clearly canonizes the cafe cantante period."
+  },
+  {
+    "article_id": "JALEO_1991_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "many aficionados were convinced that the art had been compromised so badly that it would never recover its genuine form and voice",
+        "target": "mid-century flamenco under commercial and theatrical influence",
+        "rationale": "The passage draws a boundary between compromised flamenco and flamenco's genuine form and voice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "flamenco had attained broad popularity in its most commercial and theatrical form, but the castanets and polka dots bad obscured and largely negated its deeper, more profound impulse",
+        "target": "commercial and theatrical flamenco",
+        "rationale": "Commercial and theatrical popularity is framed as obscuring flamenco's deeper impulse, making authenticity loss central to the critique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Its support, however, was marked by a strong emphasis on the gaudy, the sentimental, and the lightweight, as personified in the enormously popular figures Pepe Marchena, Antonio Molina, and Conchita Piquer.",
+        "target": "recording-industry-supported popular flamenco singing",
+        "rationale": "The passage uses critical boundary language to devalue commercial popular forms as gaudy, sentimental, and lightweight."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Tablao Zambra is called a mecca for the best and most honest flamenco, but the visible excerpt cuts off before enough distinct canon-building evidence develops."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "commercial/theatrical flamenco versus recovered honest flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt strongly contrasts compromised commercial forms with genuine, deeper, honest flamenco."
+  },
+  {
+    "article_id": "JALEO_1991_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Her present company is not the ideal support vehicle of years past. Chief among the pluses is \"Chuscales,\" a flamenco guitarist of consummate artistry and sensitivity.",
+        "target": "Maria Benitez's current show and company",
+        "rationale": "The reviewer explicitly assesses strengths and weaknesses of the performance and its artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "It's her depth of feeling, rather than virtuosic brilliance alone, that has propelled the Taos-born dancer to international stardom",
+        "target": "Maria Benitez's flamenco artistry",
+        "rationale": "Depth of feeling is named as the decisive aesthetic criterion for flamenco value beyond mere virtuosity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the most celebrated prima ballerina assoluta of flamenco of her generation",
+        "target": "Maria Benitez",
+        "rationale": "The passage places Benitez in a generational hierarchy by presenting her as the most celebrated flamenco figure of her cohort."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The review says the intimate club makes the audience feel involved and unable to stay aloof, but the dominant discourse function is aesthetic evaluation rather than a sustained public/private participatory contrast."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text references traditional flamenco and centuries of sharpened emotion, but does not clearly use tradition or continuity as the main authorizing claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Maria Benitez, Chuscales, and the Maria Benitez company performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This is a conventional performance review with strong evaluative criteria and hierarchy claims; some community/intimacy language is secondary."
+  },
+  {
+    "article_id": "JALEO_1991_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase \"heartbeat of the show\" is evaluative, but the visible text is only a six-word caption and is too short to support a reliable article-level annotation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": "Chuscales",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Caption-length text; insufficient context for a confident code despite evaluative wording."
+  },
+  {
+    "article_id": "JALEO_1991_10::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "\"Authentic Flamenco Skirts\" is product marketing for clothing, not an authenticity claim about flamenco practice or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as \"quality costumes\" and \"the very best\" praise a product, but they do not evaluate flamenco artistry, performance, or discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement for skirts; trigger words are commercial product copy only."
+  }
+]

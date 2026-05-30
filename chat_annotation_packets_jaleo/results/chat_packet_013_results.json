@@ -1,0 +1,161 @@
+[
+  {
+    "article_id": "JALEO_1978_03::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Often it is the little known person, quietly doing a job behind the scenes, who is a most essential element in creating and maintaining an organization.",
+        "target": "Stan Schutze as a sustaining member of Jaleistas",
+        "rationale": "The passage legitimates an otherwise non-performing community participant as essential to sustaining the Jaleistas organization."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article praises Stan's contribution, but the evaluation is of volunteer organizational labor rather than a flamenco artist, performance, recording, style, venue, publication, or event."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Stan Schutze's role in maintaining Jaleistas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Community code is limited to the article's construction of behind-the-scenes labor as sustaining the flamenco organization."
+  },
+  {
+    "article_id": "JALEO_1978_03::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Bailaor(a) - flamenco dancer Bailar - to dance\\nBracéo (el) - the movement of the arms in flamenco dancing",
+        "target": "flamenco dance vocabulary for readers",
+        "rationale": "The glossary mediates access to flamenco knowledge by defining specialist dance terms for learners or readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article names body movements and footwork, but it does not frame knowledge as transmitted through embodied/oral lineage or apprenticeship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "reader access to flamenco dance terminology",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Definitions are pedagogical rather than evaluative."
+  },
+  {
+    "article_id": "JALEO_1978_03::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Recipe content does not make a flamenco-related evaluative, pedagogical, heritage, authenticity, community, or critical claim."
+  },
+  {
+    "article_id": "JALEO_1978_03::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The item reports Jaleistas' personal and performance news, but it does not clearly construct community authority, belonging, or insider recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief news listing lacks sufficient discourse function beyond announcement."
+  },
+  {
+    "article_id": "JALEO_1978_03::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "he has a light delicate touch which differs radically from the hard driving playing of \"Morão\"",
+        "target": "Parilla de Jerez's guitar style",
+        "rationale": "The article evaluates Parilla's playing through specific qualitative judgments about touch and style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the runs of notes work within the compás to create accents and counteraccents, surprize tones and sudden stops",
+        "target": "Jerez guitar style as exemplified by Parilla",
+        "rationale": "The passage defines flamenco guitar quality through aesthetic and technical criteria including compás, accents, counteraccents, and improvisational phrasing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The following falseta, por alegrías, is used by Parilla as an introduction and is a good example of the flowing Jerez style of guitar playing. It should be played fairly fast for the best effect and careful attention should be paid to the accent marks",
+        "target": "readers learning Parilla's alegrías falseta",
+        "rationale": "The article uses notation and performance instructions to mediate access to a flamenco guitar model for readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article mentions a prize and compares players, but it does not clearly construct a broader canon or ranking hierarchy beyond stylistic comparison."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Jerez is used as a local style label, but the passage primarily analyzes musical style rather than identity-based belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Parilla de Jerez's guitar style and the Jerez-style falseta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Codes focus on explicit evaluation, aesthetic criteria, and printed pedagogical mediation."
+  }
+]

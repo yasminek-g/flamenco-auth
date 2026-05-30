@@ -1,0 +1,235 @@
+[
+    {
+        "article_id": "JALEO_1981_10::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "SCORES: 1. Paco de Luc\u00eda 16.07 notes/sec. 14.81 notes/sec. 2. Miguel Vega 14.00 notes/sec. 3. Serranito 12.13 notes/sec.",
+                "target": "flamenco guitarists ranked by measured note speed",
+                "rationale": "The visible text constructs a numerical hierarchy of guitarists, placing Paco de Luc\u00eda first and others below him by notes-per-second score."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "The humidity advice teaches guitar care, but it concerns instrument maintenance rather than flamenco knowledge transmission or access."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Paco de Luc\u00eda and other ranked guitarists",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Humidity passage is practical care advice; only the score ranking clearly performs canon/hierarchy work."
+    },
+    {
+        "article_id": "JALEO_1981_10::A8",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "medium",
+                "evidence_quote": "\"Duende\" could be described as flamenco's ultimate moment, when true sound is transmitted.",
+                "target": "duende as a marker of true flamenco sound",
+                "rationale": "The passage defines duende as an ultimate flamenco moment tied to the transmission of true sound, giving it authenticity value."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "The following three questions shall be the point of this discussion: 1. Who is allowed to have \"duende\"? 2. Is the \"duende\" that is transmitted equal to the \"duende\" received?",
+                "target": "duende as an aesthetic criterion",
+                "rationale": "The article explicitly treats duende as a criterion to be defined, transmitted, received, and debated in flamenco performance."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_01",
+                "confidence": "medium",
+                "evidence_quote": "But to answer the question, it is the second type that is allowed to have \"duende\".",
+                "target": "people allowed to possess duende",
+                "rationale": "The passage draws an epistemic boundary around who may have duende, distinguishing one frame of mind from another."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "authenticity",
+                "criticism",
+                "community"
+            ],
+            "target": "duende and those authorized to have it",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The author frames the definition as provisional, but still answers who is allowed to have duende."
+    },
+    {
+        "article_id": "JALEO_1981_10::A9",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "The home of Bart and Joan Boyer had all the requisites for a perfect juerga setting -- a Spanish style home, a lighted patio, several indoor areas for the development of duende.",
+                "target": "home-based juerga as participatory flamenco setting",
+                "rationale": "The passage values the private home setting as especially suited to juerga participation and the development of duende."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "Many Jale\u00edstas had gathered by nine or ten... Soon all corners of the house were bursting with music and dance.",
+                "target": "Jale\u00edstas and juerga participants",
+                "rationale": "The juerga is represented as sustained by a local participant community whose gathering activates flamenco music and dance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "Duende is mentioned, but the passage does not use it to judge a specific performance or define a quality criterion in detail."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community"
+            ],
+            "target": "the juerga as a communal flamenco setting",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The article is mostly an event report, but the home juerga is explicitly valued as a setting for duende and collective participation."
+    },
+    {
+        "article_id": "JALEO_1981_10::A10",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "\"Lib\u00e9rate\" is the opening selection, a slow moving rumba with a modern vocal approach and nice guitar work.",
+                "target": "Manzanita recordings",
+                "rationale": "The passage reviews the recording by making explicit judgments about tracks, style, vocal approach, and guitar work."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Manzanita turns on with plenty of \"rajo\" and some hot guitar licks.",
+                "target": "Manzanita's buler\u00edas performance",
+                "rationale": "The review applies flamenco aesthetic criteria such as rajo, aire, rhythm, guitar work, and cantaor-like delivery to assess quality."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "How can he perform like this and then like a pop star on the same record? I guess the best way to put it is that he has a split personality.",
+                "target": "Manzanita's mixture of pop and flamenco styles",
+                "rationale": "The reviewer uses critical boundary language to question the coexistence of flamenco force and pop-star performance on the same record."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "reason": "Phrases such as 'very flamenco interpretation' suggest authenticity, but the passage functions primarily as record criticism rather than a sustained authenticity claim."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Manzanita's recordings and stylistic hybridity",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The review legitimates Manzanita's buler\u00edas while questioning the pop/flamenco split."
+    },
+    {
+        "article_id": "JALEO_1981_10::A11",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "high",
+                "evidence_quote": "we cannot bring about any type of direct investigation to gauge what is true and what is false in those examples.",
+                "target": "attributed flamenco styles of long-gone cantaores",
+                "rationale": "The passage explicitly questions the truth or falsity of inherited attributions and the authenticity of personal creations."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "high",
+                "evidence_quote": "Each cantaor interprets, in his way, the flamenco legacy; without expressive personality, everything would be converted into a mummified replica.",
+                "target": "flamenco legacy and continuity through interpretation",
+                "rationale": "The passage grounds present flamenco value in inherited legacy while insisting that continuity requires living reinterpretation rather than frozen replication."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "high",
+                "evidence_quote": "The styles which are attributed to cantaores long-gone had, necessarily, to reach us by way of those who reproduced in their own way the characteristics of those primitive cantaores.",
+                "target": "transmission of flamenco styles across singers",
+                "rationale": "The passage describes oral/lineage transmission through reproduction and adaptation by later cantaores as the route by which older styles survive."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "the great cantaores whose fame has reached us today... The first useful recordings -- the immediate proof -- is possible only in the era of Manuel Torre, Chac\u00f3n, Juan Breva, El Tenazas, El Gloria. Before them, everything is supposition.",
+                "target": "canonical cantaores and recorded evidence",
+                "rationale": "The article constructs a hierarchy of historical authority by distinguishing famous great cantaores and treating early recordings as the first reliable proof."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The text calls cante a forgotten, battered relic, but it does not clearly frame safeguarding as public heritage responsibility."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The gypsy/Andalusian people are invoked, but the passage centers authenticity, legacy, and transmission rather than identity-based authority as a separate discourse function."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "authenticity",
+                "tradition",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Arcos flamenco styles, historical cantaores, and transmitted cante legacy",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The passage both legitimates Arcos as historically significant and destabilizes claims about exact authentic origins before recorded evidence."
+    }
+]

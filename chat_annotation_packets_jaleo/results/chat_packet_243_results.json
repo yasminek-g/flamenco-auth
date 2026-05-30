@@ -1,0 +1,245 @@
+[
+  {
+    "article_id": "JALEO_1987_SPRING::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In general, David shows these strong points on his debut album: a) lots of knowledge and variety... On the other hand... David, a diamond in the rough, needs more seasoning before returning to the recording studio.",
+        "target": "David Hollowell's album Olé, Flamenco Guitar",
+        "rationale": "The reviewer explicitly assesses the album's strengths and shortcomings as a flamenco recording."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "good tone and flamenco sound, f) good flamenca thumb and rasgueado, and g) clean arpeggios... failure to play within his limitations of technique, b) reciting as opposed to interpreting, plus e) occasional rushing.",
+        "target": "David Hollowell's flamenco guitar technique and interpretation",
+        "rationale": "The passage applies aesthetic and technical criteria such as tone, flamenco sound, rasgueado, interpretation, and timing to judge quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "So, if the listener must use comparison in judging this or any album of a non-Spaniard, compare him to yourself instead of to Sabicas.",
+        "target": "non-Spanish flamenco guitarists",
+        "rationale": "The review frames evaluation through a social boundary between Spanish canonical authority and non-Spanish flamenco practitioners."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article mentions study with teachers and non-Spanish guitarists, but the dominant function is record criticism rather than sustained discussion of learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "David Hollowell's album and non-Spanish flamenco guitarists",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "What place do Americans have in flamenco, if any at all?... Most Americans seem to separate themselves from the gypsies or the so-called real flamenco, be it gypsy or andaluz.",
+        "target": "American flamencos in relation to Spanish, Gypsy, and Andalusian flamenco",
+        "rationale": "The passage explicitly constructs an insider/outsider boundary around who belongs in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "In their psyches there is a feeling that theirs is not the true or real item, and of course the gypsies seem to encourage this.",
+        "target": "American flamencos' perceived legitimacy",
+        "rationale": "The text describes a boundary between true/real flamenco and American participation, with Gypsy authority reinforcing the boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Some Spaniards even refer to us American flamencos as \"los flamenquillos\", a term that shows both contempt and affection; contempt since the \"flamenquillos\" may compete for contracts, and affection since the \"flamenquillos\" are the concert goers, record buyers, students, and friends of the Spanish flamencos.",
+        "target": "American flamencos as an identity group",
+        "rationale": "The passage frames American flamencos as a named identity group whose position affects belonging, labor, consumption, friendship, and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The passage critiques flamenco change and Americanization, but the visible evidence is primarily identity and belonging discourse rather than expert critical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "American flamencos' place in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; codes are based only on the visible beginning, evidence window, and ending."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "I feel that a dancer, a flamenco dancer owes it to himself or herself and the audience, if the dancer is a performing artist, to have an aesthetically expressive body.",
+        "target": "flamenco dancer's body and performance practice",
+        "rationale": "The passage defines dance quality through an aesthetic criterion: the disciplined, expressive, healthy body."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "dancing well and taking dance as a serious art is not compatible with drugs. Drugs are anti-dance, anti-life.",
+        "target": "drug use in relation to dance practice",
+        "rationale": "The author makes an explicit evaluative judgment about what is incompatible with serious dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text gives advice about diet and discipline, but it does not establish a flamenco teacher, method, or authority over flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga is described as a setting that may bring out flamenco, but the passage uses it mainly to discuss bodily consequences rather than participatory authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "healthy and aesthetically disciplined flamenco dance practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This was to prove that, after \"Cumbre Flamenco,\" after Farruco, El Chocolate, Femanda, the Amadores and Habichuelas, we were capable of yielding superb flamenco.",
+        "target": "New York flamenco performance scene",
+        "rationale": "The passage explicitly evaluates the performance scene as capable of producing superb flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Such a tremendous technician this Manolete... Manolete and Felipe did a farmica, modern, very gypsy... The public was shouting in approval of Felipe's falsetas.",
+        "target": "Manolete and Felipe Maya's performance",
+        "rationale": "The review applies technical and expressive criteria including technique, modernity, gypsy style, and falsetas to assess performance value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "These two guitarists combined as has seldom been heard in this city.",
+        "target": "Arturo Martínez and José Chucales",
+        "rationale": "The statement ranks the guitarists' combination as exceptional within the local performance context."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "New York flamenco performances and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This is no time to mince words. The José Molina Bailes Españoles at the Centre last night was superb.",
+        "target": "José Molina Bailes Españoles performance",
+        "rationale": "The review gives direct praise and evaluates the performance as superb."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "his impeccable and intricate footwork. His sharp heel-and-toe beats made a music of their own, and blended with the flamenco guitars and claps of La Conja until they were inseparable.",
+        "target": "José Molina's dancing",
+        "rationale": "The passage uses specific aesthetic criteria, especially footwork, rhythm, integration with music, and energy, to define performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "But, make no mistake about it, the evening was Molina's from beginning to end.",
+        "target": "José Molina within his company performance",
+        "rationale": "The review creates a hierarchy by positioning Molina as the dominant and exemplary performer of the evening."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The word 'memory' appears only in the phrase 'recent memory' as a review idiom, not as heritage memory-work."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The visible biography mentions formal studies and classes, but it functions as performer background rather than a claim about institutional learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "José Molina Bailes Españoles and José Molina",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated; the emitted codes rely on the visible review passages only."
+  }
+]

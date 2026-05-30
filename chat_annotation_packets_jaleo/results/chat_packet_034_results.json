@@ -1,0 +1,185 @@
+[
+  {
+    "article_id": "JALEO_1978_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Of course you should ask the Spaniards who knew him if you want the whole story. My own knowledge is that of an outsider, and is therefore limited.",
+        "target": "knowledge about Diego del Gastor",
+        "rationale": "The passage explicitly contrasts insider Spanish knowledge with the narrator's limited outsider position, making belonging/proximity relevant to authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "his parents didn't want him to be a professional, and didn't like his going out to juergas, which would have provided him with ideal learning conditions",
+        "target": "Diego del Gastor's guitar learning",
+        "rationale": "The passage frames juergas as the ideal social setting for learning flamenco guitar, emphasizing situated informal transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "This is perhaps why people called him enigmatic, eccentric, or a saint.",
+        "target": "Diego del Gastor",
+        "rationale": "The passage explains Diego's elevated reputation through exceptional artistic and personal integrity, contributing to his exemplary/canonical status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions preservation of artistic integrity, but does not clearly use tradition, continuity, roots, or inherited past as an authorizing basis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Diego del Gastor and knowledge about his flamenco practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for these codes."
+  },
+  {
+    "article_id": "JALEO_1978_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Donn E. Pohren's books have enticed many aficionados in search of the roots of the mysterious flamenco folklore, to witness for themselves in small towns of southern Spain, this ancient art.",
+        "target": "flamenco of Andalusian pueblos",
+        "rationale": "The passage grounds flamenco value in roots, ancientness, and small-town Andalusian origins."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This book is a must for every flamenco and collector of fine art.",
+        "target": "Charles Berger's book Flamenco Gitano",
+        "rationale": "The review explicitly evaluates the book as essential for flamenco people and art collectors."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Here are some suggestions to help better understand the art of working with a singer: The obvious is to listen to as much singing as possible",
+        "target": "dancers learning to work with singers",
+        "rationale": "The passage gives instructional guidance on how dancers should develop flamenco performance understanding with cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados and pueblos are mentioned, but the text does not clearly grant community actors authority to judge or authorize flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as compás, dynamics, and feeling appear in the instructional section, but they are not clearly applied as evaluative criteria for judging a specific performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Andalusian pueblo flamenco, Flamenco Gitano, and dancer-cante training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_10::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The passage describes Paco de Lucía's concern with ideas, expression, and feeling, but does not clearly use these as criteria to judge flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The record list may support access for collectors, but it is primarily bibliographic/discographic information rather than pedagogy or learning access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_10::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The word 'beloved' lightly praises Ernest Lenshaw, but the quiz format does not provide a substantive evaluative judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_10::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "AROS (los) - The sides of the guitar; usually made of cypress or rosewood.",
+        "target": "flamenco guitar terminology",
+        "rationale": "The glossary-style entry mediates access to flamenco guitar vocabulary for readers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "flamenco guitar terminology",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Very short, but sufficient as a glossary definition."
+  }
+]

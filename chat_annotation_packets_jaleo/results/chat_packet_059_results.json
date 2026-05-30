@@ -1,0 +1,241 @@
+[
+  {
+    "article_id": "JALEO_1979_12::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "My dance is genuinely Andalusian, for the simple reason that it has all of its roots in Andalucía.",
+        "target": "Antonio's dance",
+        "rationale": "The speaker explicitly presents his dance as genuinely Andalusian and therefore properly grounded in flamenco's regional identity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "All lovers of the art should worry about everything that endangers this tradition.",
+        "target": "flamenco tradition",
+        "rationale": "Tradition is treated as a valued inheritance that must be protected from danger."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "there are those who speak of me as if I were a myth. I don't believe that is so. In my case, I would be considered a living myth",
+        "target": "Antonio",
+        "rationale": "The passage invokes mythic status and celebrity to position Antonio within a hierarchy of exceptional artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Andalusian identity is important in the authenticity claim, but the visible passage mainly authorizes the dance through roots and authenticity rather than developing a broader identity-group representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The interview contains evaluative self-positioning, but the clearest evaluative function is hierarchical canon/status work captured by CRIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Antonio's dance and artistic status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Coded only the visible interview text; the authenticity and tradition claims are explicit."
+  },
+  {
+    "article_id": "JALEO_1979_12::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'a welcome opportunity' is mildly evaluative, but the passage is primarily a performance notice and program listing rather than a developed critical judgment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'Spanish gypsy guitarist' is an identity descriptor, but it does not visibly organize belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is mainly event/program information."
+  },
+  {
+    "article_id": "JALEO_1979_12::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Each of Marcelo's guitars is individually hand made in the tradition of the great masters such as Domingo Esteso, Ramírez and Santos Hernández",
+        "target": "Marcelo Barbero's guitar making",
+        "rationale": "The passage authorizes Barbero's craft through continuity with a named tradition of great masters."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "world renowned maker of flamenco guitars",
+        "target": "Marcelo Barbero",
+        "rationale": "Barbero is positioned in an elevated status hierarchy as a renowned maker within flamenco guitar craft."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Perhaps readers will be as interested as I was in the process of construction which in many respects was both surprising and fascinating.",
+        "target": "readers' access to flamenco guitar-making knowledge",
+        "rationale": "The article frames itself as mediating technical craft knowledge about flamenco guitar construction to readers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article names technical standards such as grain, dimensions, and precision, but these mostly function as craft description rather than explicit aesthetic criteria for judging flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Barbero's guitar-making practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is technical, the visible text also clearly invokes tradition and mediates specialized knowledge."
+  },
+  {
+    "article_id": "JALEO_1979_12::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Quality musicians and recording make this record a must for the record collector.",
+        "target": "Camarón de la Isla's 'La Leyenda del Tiempo'",
+        "rationale": "The passage explicitly evaluates the record positively and recommends it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The combination of cante with electric guitars, flamenco guitars, organ, sitar, drums, palmas, and baile, was tastefully done",
+        "target": "the musical arrangement on 'La Leyenda del Tiempo'",
+        "rationale": "The review applies aesthetic criteria of taste, instrumentation, and integration to judge the record's quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Camaron has not forgotten the roots, but doesn't want to get caught in the rut of cliche either.",
+        "target": "Camarón's creative innovation",
+        "rationale": "The review legitimates innovation by saying it remains connected to roots while avoiding cliché."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Excellent record! Incredible vocals by one of the best.",
+        "target": "Juan Peña 'El Lebrijano' and 'Persecusion'",
+        "rationale": "The passage ranks Lebrijano among the best while strongly praising the recording."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review discusses new versus old flamenco and hybrid instrumentation, but it does not strongly police a boundary around proper or improper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "new flamenco records by Camarón and Lebrijano",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review is openly evaluative and uses roots/innovation language to legitimate new creative directions."
+  },
+  {
+    "article_id": "JALEO_1979_12::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Heredia and Cambrelen put on an impressive demonstration of musical communication.",
+        "target": "Rene Heredia and Bataki Cambrelen's performance",
+        "rationale": "The passage explicitly praises the quality of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Wherever Heredia led, Cambrelen followed; the artistry of each complementing the other.",
+        "target": "the performers' musical interaction",
+        "rationale": "The review applies aesthetic criteria of communication, responsiveness, and complementary artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The passage notes links between flamenco and jazz, but it presents this descriptively and appreciatively rather than as boundary critique."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text repeatedly names flamenco, but it does not make a genuineness or properness claim about the performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Heredia and Cambrelen's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded as a concise performance review with clear praise and aesthetic criteria."
+  }
+]

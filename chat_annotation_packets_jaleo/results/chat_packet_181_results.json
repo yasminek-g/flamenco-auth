@@ -1,0 +1,190 @@
+[
+  {
+    "article_id": "JALEO_1983_12::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "As long as there is one soul on this earth with a true spirit of flamenco, of the art, the life farce, the love of the essence of flamenco then there will always be flamenco.",
+        "target": "the spirit/essence of flamenco",
+        "rationale": "The passage presents the 'true spirit' and 'essence' of flamenco as what makes flamenco genuinely exist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Spirit does not die for spirit is, and therefore flamenco is, for in finale, the flamenco spirit like the spirit of life itself has always been.",
+        "target": "flamenco spirit",
+        "rationale": "The passage grounds flamenco's value in continuity and survival across time, claiming that its spirit has always existed."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Although the article discusses creativity, it does not frame creativity as institutional, transnational, or access-oriented learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition"
+      ],
+      "target": "flamenco as spiritual essence",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text was truncated, but the visible excerpt contains sufficient direct claims about true flamenco spirit and continuity."
+  },
+  {
+    "article_id": "JALEO_1983_12::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a source/translation note and is too short to support discourse coding."
+  },
+  {
+    "article_id": "JALEO_1983_12::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He is not a good cantaor, I am sure of that, but neither is he so terrible that he should be thrown into the trash.",
+        "target": "El Cabrero as cantaor",
+        "rationale": "The reviewer explicitly evaluates El Cabrero's artistic quality, balancing negative and limited positive judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "To connect the \"tercios\" (sung phrases) as they should be, or to subject himself to the discipline of the compás when the compás calls for it, is something more complicated and not always within his reach.",
+        "target": "El Cabrero's cante technique",
+        "rationale": "The passage applies flamenco aesthetic criteria such as tercios and compás to judge the singer's limitations."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The bulerías are bulerías in name only; they have a pseudo-South American sound that can even be bothersome.",
+        "target": "the recording's bulerías",
+        "rationale": "The review uses critical authority to police the boundary between properly recognizable bulerías and an improper hybridized version."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'bulerías in name only' suggests improperness, but the article's dominant discourse is critical review rather than explicit purity rhetoric."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The passage mentions 'a few privileged' artists and memorable creations, but it does not name or construct a concrete canon or ranking beyond general evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Cabrero's recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_12::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'exciting new flamenco dance company' is promotional and too thin to support critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a short, incomplete press-release fragment ending mid-sentence."
+  },
+  {
+    "article_id": "JALEO_1983_12::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Sabicas is unquestionably a great artist.",
+        "target": "Sabicas",
+        "rationale": "The reviewer gives an explicit evaluative judgment of Sabicas's artistry."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "He can fire off bursts of notes in scale-passages that are sc rapid and crystal-clear as tc make you doubt your senses.",
+        "target": "Sabicas's guitar performance",
+        "rationale": "The passage judges flamenco quality through aesthetic and technical criteria such as speed, clarity, dexterity, and invention."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "I've heard flamenco guitarists in many different places and situations, and I'm quite ready to believe that Sabicas is the best of them all.",
+        "target": "Sabicas among flamenco guitarists",
+        "rationale": "The reviewer explicitly ranks Sabicas above other flamenco guitarists, constructing a hierarchy of excellence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The preference for hearing flamenco with dancers and a wine bota hints at participatory setting, but it is secondary to the review and not developed enough as a social value claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article describes traditional harmonic and melodic patterns, but mainly as musical description rather than tradition/continuity authorizing present value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Sabicas as flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible article contains two reviews; the emitted codes prioritize the strongest critical discourse in the Sabicas review."
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "article_id": "JALEO_1984_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "flamenco teachers are hard to come by in Denver... just wherever I can find an instructor. Las Vegas, and in New Mexico, Vicente Romero and Maria (Benitez) when she's there.",
+        "target": "Debra's access to flamenco instruction outside Denver",
+        "rationale": "The passage frames flamenco learning as dependent on geographically scattered instructors and cross-city access to teaching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text contrasts traditional and less traditional concert material, but it does not clearly use tradition as an authority or evaluative basis."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "flamenco learning through mobile instructor access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "One of the best ways to get your tremolo round and even is to hammer it out slowly, in time with the metronome.",
+        "target": "flamenco guitar tremolo technique",
+        "rationale": "The passage directly teaches a method for developing flamenco guitar technique through controlled practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Forget about all that and just play. Play with feeling, soul. Play all the time and it will come to you.",
+        "target": "flamenco guitar technique and expression",
+        "rationale": "Paco de Lucía's advice defines quality through feeling and soul rather than technique alone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article emphasizes practice and bodily technique, but it does not clearly frame knowledge as oral, familial, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "proper flamenco guitar learning and expressive technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Where can we study tradition and get past the steps and really get to the roots so we can understand the art form better in its natural form, its intended uniqueness?",
+        "target": "flamenco tradition and roots",
+        "rationale": "The passage grounds proper understanding of flamenco in roots, source, tradition, and continuity with an originating environment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "It is more osmosis than pure analysis. It is experiencing the why, what, where and how, by doing, not by asking or studying only.",
+        "target": "learning flamenco tradition",
+        "rationale": "The passage frames flamenco knowledge as transmitted through embodied experience and immersion rather than abstract study alone."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "This, along with the study from knowledgeable artists and a strong inquisitive nature, will help bare the roots of flamenco tradition.",
+        "target": "knowledgeable artists as teachers of flamenco tradition",
+        "rationale": "Knowledgeable artists are positioned as authoritative mediators for studying and accessing flamenco's roots."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text says 'true duende' and 'true marrow of flamenco,' but the stronger and more specific function is tradition/roots authorization."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Rock arrangements and electric instruments are contrasted with source/tradition, but the excerpt does not clearly exclude them as fake or illegitimate flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy"
+      ],
+      "target": "flamenco tradition learned through source immersion and knowledgeable artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible evidence is sufficient for these codes."
+  },
+  {
+    "article_id": "JALEO_1984_01::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Spruce may be more subdued in volume, but often produces a more colorful sound; whereas the cedar tops tend to be louder and have a juicier, more \"Spanish\" sound.",
+        "target": "guitar soundboard materials and flamenco guitar sound",
+        "rationale": "The passage applies aesthetic and technical criteria to judge guitar tone, sound color, and Spanish/flamenco sound quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The interview explains guitar construction through an expert luthier, but it does not clearly frame flamenco knowledge transmission or teaching authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text contains praise such as 'excellent reports' and 'master luthier,' but most evaluative work is technical/aesthetic criteria rather than a review judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "criteria for evaluating flamenco/classical guitar construction and sound",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_01::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The tapes of flamenco in Morón de la Frontera... are very worthwhile and make for fascinating listening.",
+        "target": "flamenco tapes from Morón de la Frontera",
+        "rationale": "The passage explicitly evaluates the tapes as worthwhile and fascinating."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "if you already play and want to learn all about the passionate world of flamenco, this method is one of the best currently available.",
+        "target": "Mariano Córdoba's Traditional Flamenco Guitar method",
+        "rationale": "The passage frames an instructional book and cassette as a valuable mediated access point for learning flamenco guitar, especially given scarce expert teachers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Over the next couple of months Sheet Music will critique some of the many self-published books currently available.",
+        "target": "self-published instructional guitar books",
+        "rationale": "The passage positions review discourse as an authority for judging instructional publications and their quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The tapes let listeners hear fine artists who are no longer alive, but the excerpt does not clearly frame this as safeguarding, memory-work, or public heritage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Mariano Córdoba is described as a respected teacher/author, but the clearer function is mediated access through the method book and cassette."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco recordings and instructional guitar materials",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

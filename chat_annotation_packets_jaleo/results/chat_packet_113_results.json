@@ -1,0 +1,272 @@
+[
+  {
+    "article_id": "JALEO_1981_08::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "it is the constant inquiry about sources of flamenco materials--records, books, guitar music, dance supplies, guitars, etc.",
+        "target": "Jaleo readers' access to flamenco learning materials",
+        "rationale": "The editorial directly addresses access to flamenco knowledge and materials through books, records, guitar music, and periodical mediation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco guitar is not best learned from books -- records are a much better source.",
+        "target": "methods for learning flamenco guitar",
+        "rationale": "The editor makes a pedagogical claim about the medium through which flamenco guitar knowledge is better transmitted."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "maybe some of you out there who have specialized knowledge could take the time to share it with the rest of us.",
+        "target": "Jaleo readership and knowledgeable contributors",
+        "rationale": "The editorial positions knowledgeable community members as responsible for sharing flamenco knowledge with the wider readership."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The editor defines what is and is not the magazine's proper function, but the main discourse concerns pedagogical mediation rather than expert critical judgment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The editor claims editorial authority over what Jaleo should supply, but this does not clearly authorize a teacher, school, or method in the PED_01 sense."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "flamenco knowledge circulation through Jaleo and its readership",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "in a future issue of Jaleo, we will attempt to bring you a complete listing of cantes, cantaores and guitarists.",
+        "target": "Jaleo's mediation of information about the History of Cante Flamenco album",
+        "rationale": "The exchange frames Jaleo as a mediator that will provide readers access to detailed flamenco recording knowledge otherwise missing from the album release."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The reader says he is happy with the album and enjoys Jaleo, but this is generic appreciation rather than developed critical evaluation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The Archivo translation and recording documentation might support preservation work, but the visible text frames it as information access rather than public heritage safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "reader access to cante recording documentation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Letter/reply is mostly informational; emitted code is limited to access/mediation."
+  },
+  {
+    "article_id": "JALEO_1981_08::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Estrella studied flamenco with Paco Reyes, jota with Pedro Azorín, and Spanish folk dance with Juanjo Linares.",
+        "target": "Estrella Morena's dance training",
+        "rationale": "The biographical section legitimates Estrella's formation through named teachers and recognized training."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "When you say someone has duende, that means the person has something special, has a soul. Not everybody has that, not even in Spain.",
+        "target": "duende as a criterion of flamenco dance quality",
+        "rationale": "The article explicitly defines duende as a quality distinct from technique and uses it as an aesthetic criterion for flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "The lacy arm work of flamenco, she said, comes from Middle Eastern belly dance, the steps from the folk dances of Andalucía in southern Spain, and the songs from gypsies and Arabs, and from Jewish synagogue chants.",
+        "target": "flamenco origins and group contributions",
+        "rationale": "The passage frames flamenco through ethnic, regional, and religious-cultural group origins that shape representation of the form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The biography lists famous tablaos, companies, and collaborators, but it mostly establishes career chronology rather than a clear canon or hierarchy."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Estrella is described as renowned as a teacher, but the passage does not develop institutional or transnational learning access beyond that brief statement."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The discussion of origins could support roots discourse, but the visible passage mainly explains components of flamenco rather than using origins to authorize present value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Estrella Morena's authority and flamenco dance qualities/origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines biography with quoted explanatory interview material; codes prioritize explicit training, origin framing, and duende criteria."
+  },
+  {
+    "article_id": "JALEO_1981_08::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "the classic style in the best history of the cante jondo... Their extraordinary disciples began the true history of the flamenco guitar",
+        "target": "flamenco guitar history and cante jondo style",
+        "rationale": "The excerpt grounds flamenco value in historical continuity, classic style, schools, disciples, and the beginning of the guitar's true history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The guitarist's job is to know them all, and to be able to \"carry\" the singer right through without faltering, or losing \"compás\" (time)",
+        "target": "flamenco guitarist accompaniment",
+        "rationale": "The passage defines quality through aesthetic and technical criteria: knowing variants, carrying the singer, and maintaining compás."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Their extraordinary disciples began the true history of the flamenco guitar: Francisco Sánchez, Paco el Barbero; from their school came later Javier Molina and Antonio Sol.",
+        "target": "flamenco guitar lineage",
+        "rationale": "The article frames flamenco guitar development through maestros, disciples, and school lineage, linking transmission to authority."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The evidence window mentions café de cante/tablaos, but the venue reference concerns professionalization history rather than a public/private participatory contrast."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named maestros and first soloist status imply hierarchy, but the stronger visible functions are historical continuity, lineage transmission, and aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco guitar history and proper accompaniment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated; annotation is based only on visible beginning/window/ending context."
+  },
+  {
+    "article_id": "JALEO_1981_08::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "\"I am a magician,\" he tells me, \"they have had less than twelve lessons and look how they dance already!\"",
+        "target": "Enrique El Cojo's teaching authority",
+        "rationale": "The passage presents Enrique's teaching as unusually effective and authorizes him through his ability to produce visible results quickly."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I am apart from the academies. I am the dean, and I have much experience. I don't belong to those academies, where one must have a degree in order to set one up.",
+        "target": "Enrique El Cojo's relation to academies and credentialed dance schools",
+        "rationale": "The interview explicitly contests institutional credentialing and defines an alternative pedagogy outside academies."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "Here money does not matter; I do it almost free... I do it all year round, but not as a business. This, for me, is a hobby. I couldn't live without doing it.",
+        "target": "Enrique El Cojo's teaching practice",
+        "rationale": "The passage legitimates his teaching by separating it from business motives and emphasizing non-commercial dedication."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Enrique calls himself the dean and is described as a personality/living book, but the stronger claims concern pedagogical authority and anti-institutional learning."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The lesson scene is embodied and repetitive, but the excerpt mainly emphasizes teacher authority and institutional contrast rather than oral/lineage transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "Enrique draws a boundary between himself and academies, but it is a pedagogical/institutional boundary rather than a broader insider/outsider flamenco belonging boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "authenticity"
+      ],
+      "target": "Enrique El Cojo's non-academic teaching authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

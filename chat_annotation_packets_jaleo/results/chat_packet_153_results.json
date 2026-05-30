@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "JALEO_1982_11::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "How many of these English speaking schools, say in the USA and Canada, are teaching flamenco dance as another subject?",
+        "target": "flamenco dance instruction in North American dance schools",
+        "rationale": "The passage explicitly frames access to flamenco knowledge through English-speaking schools and institutionalized teaching across geographic boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "the old classics are still retained and guarded, so to speak, under lock and key... Likewise traditional flamenco.",
+        "target": "traditional flamenco",
+        "rationale": "Traditional flamenco is valued through continuity with guarded classics and preservation of an inherited repertoire."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Many of us can still remember the \"purists\" shouting at the top of their lungs that ballet had gone to the gutter.",
+        "target": "purist opposition to free-style reconstruction",
+        "rationale": "The passage invokes purist boundary critique as a contested judgment over whether reconstructed dance forms remain legitimate."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Bravo to Marina Keet, George Washington University, and the Spanish Dance Society of South Africa for their efforts in writing a syllabus for Spanish dance.",
+        "target": "syllabus-writing authorities for Spanish dance",
+        "rationale": "Named pedagogical actors and institutions are praised for authoritatively codifying Spanish dance knowledge for teaching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The call to guard future existence through written syllabus resembles safeguarding, but the passage is primarily pedagogical rather than explicit public heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "traditional and free-style flamenco dance pedagogy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_11::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It is possible to dance better or worse, but not the way she does",
+        "target": "Tía Juana la del Pipa's dance",
+        "rationale": "The passage makes an explicit evaluative judgment that distinguishes her dancing as singular beyond ordinary comparison."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "a posture that is held, still, with only the eyes rebelling and, perhaps, a couple of fingers of each hand... to mark the compás... makes the \"BAILE\" appear in capital letters",
+        "target": "Tía Juana's quiet compás and baile",
+        "rationale": "Specific aesthetic criteria—stillness, eyes, fingers, and compás—are used to define the value of her dance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "She has to be from Jerez. Tía Juana la del Pipa dances, has danced, and will dance the way she does, because she is from Jerez.",
+        "target": "Tía Juana's Jerez-grounded flamenco identity",
+        "rationale": "Local identity is made explanatory and authorizing for her distinctive flamenco style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Fernanda de Utrera... showed that she is to the cante gitano what Aretha Franklin is to the Negro spiritual, our flamenco \"Lady Soul.\"",
+        "target": "Fernanda de Utrera",
+        "rationale": "The comparison canonizes Fernanda by ranking her through an exemplary cross-genre analogy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The homage and Jerez cuadro show community presence, but the visible text more clearly frames local/ethnic identity than community authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Tía Juana la del Pipa and Jerez/gitano flamenco artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations are limited to the visible beginning, evidence windows, and ending context."
+  },
+  {
+    "article_id": "JALEO_1982_11::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The Barrio de Santiago reference may become local identity framing, but the visible excerpt is too short and incomplete to establish discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text ends mid-sentence and is insufficient for a reliable annotation."
+  },
+  {
+    "article_id": "JALEO_1982_11::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "there were some 150 students in attendance, from as far away as Honolulu and Oslo and as near as Madrid and Granada. Aficionados represented a dozen countries",
+        "target": "José de Udaeta's International Spanish Dance Course",
+        "rationale": "The passage frames dance learning as transnational access through an international course attracting students from many countries."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "an ever more varied array of courses that are taught by a stellar faculty rarely found at the same time in the same place",
+        "target": "the faculty of the Curso Internacional",
+        "rationale": "The faculty is explicitly positioned as an unusually authoritative pedagogical body for Spanish and flamenco dance instruction."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "The Pericets are best known for their careful preservation of the classical dances of the \"escuela bolera\" and for their organization of the bolero steps into a progressive course of study.",
+        "target": "escuela bolera and Spanish dance tradition",
+        "rationale": "The passage legitimates present teaching through preservation and structured continuity of classical dance tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The course and Udaeta's archive-like castle suggest cultural preservation, but the visible text lacks a clear public heritage or safeguarding frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'revered figures of Spanish dance' implies hierarchy, but it is secondary to the article's stronger pedagogical framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "international Spanish/flamenco dance pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_11::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a photo/collage credit and is insufficient for discourse coding."
+  }
+]

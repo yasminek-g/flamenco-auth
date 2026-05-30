@@ -1,0 +1,245 @@
+[
+    {
+        "article_id": "JALEO_1977_12::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "The song provides a reference point for both the guitarist and the dancer--allowing them greater freedom of expression, without the danger of losing compas. When the singer has good compas, the dancer does not need the guitar and everything flows.",
+                "target": "the flamenco singer's role in ensemble performance",
+                "rationale": "The passage defines ensemble quality through comp\u00e1s, song, and the singer's rhythmic authority as aesthetic criteria for successful flamenco performance."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "He feels that a flamenco company must have a male dancer as a central figure if it is to be successful. He says that he has never had a flamenco show without a male star that worked out well.",
+                "target": "male dancer as central figure in flamenco companies",
+                "rationale": "The claim frames success and representation in flamenco performance through a gendered identity role, making the male dancer central to audience reception and company legitimacy."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The article criticizes audience idolization and notes that the art is not being recognized, but the evaluation is mostly of audience behavior rather than a sustained critical assessment of a flamenco performance or artist."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism",
+                "community"
+            ],
+            "target": "flamenco ensemble performance and gendered stage success",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1977_12::A5",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "For several decades he has been the leading innovative guitarist in flamenco. Sabicas has everything: uncanny technical precision, dazzling speed, perfect intonation and an absolute understanding of flamenco structure and tonality.",
+                "target": "Sabicas as flamenco guitarist",
+                "rationale": "The passage explicitly praises Sabicas's artistry and evaluates his musicianship as exceptional."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "uncanny technical precision, dazzling speed, perfect intonation and an absolute understanding of flamenco structure and tonality. In addition, he is highly inventive.",
+                "target": "Sabicas's guitar playing",
+                "rationale": "The passage names technique, speed, intonation, structural understanding, tonality, and inventiveness as criteria for flamenco guitar excellence."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "At twenty he was considered the genius of the flamenco guitar",
+                "target": "Sabicas's status in flamenco guitar",
+                "rationale": "The passage canonizes Sabicas by assigning exemplary genius status within flamenco guitar."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "medium",
+                "evidence_quote": "the Spanish government awarded him the Gold Medal of Honor for having contributed more to the cultural development of Spain than any other living man.",
+                "target": "Sabicas's contribution to Spanish cultural development",
+                "rationale": "An official state honor is used to authorize Sabicas's public cultural value and national cultural significance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The 'best teacher in Pamplona' appears in a childhood anecdote, but the passage does not clearly legitimate flamenco knowledge through that teacher or a sustained pedagogical authority."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "reason": "Sabicas learning amid gypsies and hearing flamenco suggests informal exposure, but the visible text does not clearly frame this as authoritative embodied or lineage transmission."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "heritage"
+            ],
+            "target": "Sabicas",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated, but the visible excerpt contains sufficient evaluative and official-recognition evidence for the emitted codes."
+    },
+    {
+        "article_id": "JALEO_1977_12::A6",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "He also said that members of the group give both guitar and dance lessons. Another club exists by the name of Corral de la Morer\u00eda... At Niza 44, 3rd floor, there is a Spanish dance school.",
+                "target": "access to flamenco lessons and schools in Mexico City",
+                "rationale": "The article mediates transnational access to flamenco learning by identifying lessons, a dance school, and places where readers can find instruction in Mexico City."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The phrase 'the best male dancer in Mexico performs there' is a ranking, but it is secondhand and too brief to support a confident canon or hierarchy code."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "reason": "The article comments that flamenco is not as popular as expected, but this is more scene-reporting than a clear evaluative judgment of an artist, performance, or event."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "neutral",
+            "basis": [
+                "pedagogy"
+            ],
+            "target": "flamenco access in Mexico City",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1977_12::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "The playing was clear, precise with the amazing picado runs, but there was no duende! It was too cerebral.",
+                "target": "Paco de Luc\u00eda's concert performance",
+                "rationale": "The passage makes an explicit critical assessment of the performance, balancing technical praise with a negative judgment about missing duende and excessive cerebral quality."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "The rhythm wasn't even getting to me... there was no duende! It was too cerebral... a driving, intense, technically superb series of long melody runs.",
+                "target": "criteria for judging Paco de Luc\u00eda's playing",
+                "rationale": "The review applies rhythm, duende, technique, intensity, and melodic drive as aesthetic criteria for evaluating flamenco guitar performance."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "medium",
+                "evidence_quote": "My principal reaction to the concert was: \"This guy has a fantastic future ahead of him as a jazz guitarist!\" ... what I must call jazz guitar playing",
+                "target": "Paco de Luc\u00eda's stylistic relation to flamenco and jazz",
+                "rationale": "The critic uses review authority to evaluate and police a stylistic boundary, framing the strongest part of the concert as jazz-like rather than straightforwardly flamenco."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The quoted reputation of Paco as the 'world's greatest flamenco guitarist' invokes hierarchy, but the author treats it skeptically rather than clearly canonizing him."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The program is described as traditional, but tradition is not used as an authority claim for proper flamenco in the visible text."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Paco de Luc\u00eda's concert performance",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1977_12::A8",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_01",
+                "confidence": "high",
+                "evidence_quote": "To understand a gypsy, One must be a gypsy; But to understand a gypsy as a friend, One only must be a friend.",
+                "target": "understanding Gypsy identity and belonging",
+                "rationale": "The passage explicitly draws an insider/outsider boundary around who can understand Gypsy experience, then modifies that boundary through friendship."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "high",
+                "evidence_quote": "For we are gypsy; gypsy living in Darkness. Living in the shadow of the Payo.",
+                "target": "Gypsy identity in relation to Payo society",
+                "rationale": "The poem frames cultural suffering, belonging, and representation through Gypsy/Payo identity categories."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The poem invokes collective memory, loss, and community suffering, but it does not clearly frame flamenco or Gypsy culture as public heritage, safeguarding, or living heritage."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "Bailaor, Cantor, and Guitarrista appear in evocative imagery, but the passage does not apply aesthetic criteria to evaluate flamenco quality."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "community"
+            ],
+            "target": "Gypsy identity and understanding",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    }
+]

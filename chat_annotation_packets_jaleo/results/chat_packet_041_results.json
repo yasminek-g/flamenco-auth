@@ -1,0 +1,174 @@
+[
+  {
+    "article_id": "JALEO_1979_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Charo Botello was really hot, singing everything from sevillanas to saetas at the end of the evening.",
+        "target": "Charo Botello's singing at the juerga",
+        "rationale": "The passage makes a clear positive evaluative judgment about a named performer's singing rather than merely listing participation."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Charo Botello's singing at the juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is descriptive social reporting; only the quoted performance praise is coded."
+  },
+  {
+    "article_id": "JALEO_1979_05::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The passage is an event and announcements notice without clear evaluative, authorizing, pedagogical, heritage, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1979_06::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Situated only two miles from that traditional stronghold of authentic flamenco, it intimately in its authentic form and natural habitat.",
+        "target": "Finca Espartero / Morón flamenco setting",
+        "rationale": "The passage explicitly attributes authentic flamenco value to the setting and presents it as a place where flamenco exists in authentic form."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "that traditional stronghold of authentic flamenco",
+        "target": "Morón de la Frontera as a flamenco location",
+        "rationale": "Tradition and place-based continuity are used to authorize the flamenco value of the locale."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Guitar, dance and singing lessons are available for those who wish to study; mainstay instructors include Diego del Gastor (guitar) and Luisa Maravilla (dance) both masters of the pure style.",
+        "target": "Diego del Gastor and Luisa Maravilla as instructors",
+        "rationale": "The instructors are positioned as authoritative teachers through their named roles and status as masters of a valued pure style."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "tradition", "pedagogy"],
+      "target": "Finca Espartero, Morón flamenco, and its instructors",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is truncated, but the visible excerpt contains sufficient explicit authenticity, tradition, and pedagogical-authority evidence."
+  },
+  {
+    "article_id": "JALEO_1979_06::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "There seems to be no healthy flamenco scene in London that I know of and the few occasions that do occur are of dubious quality and oftimes of an embarrassingly poor standard.",
+        "target": "London flamenco scene",
+        "rationale": "The writer explicitly evaluates the quality of the London flamenco scene and its events in negative terms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "If you were to read some of the contributions to London magazines by \"the experts\"... Most magazines which are devoted to the guitar have only a token article representing flamenco and these seem to be ill-versed in their art!",
+        "target": "London magazine experts and guitar-magazine flamenco coverage",
+        "rationale": "The passage contests the competence of supposed experts and magazine coverage, using criticism to challenge their authority to represent flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Although I don't think that the Morón de la Frontera school is the be-all and end-all of flamenco, I do like the playing of Diego del Gastor a lot. I think that he was a masterful interpreter of the toque grande.",
+        "target": "Morón de la Frontera school and Diego del Gastor",
+        "rationale": "The passage explicitly rejects making the Morón school the ultimate hierarchy while elevating Diego del Gastor as a masterful interpreter."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Jaleo, London flamenco commentary, the London scene, and Diego del Gastor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The letter combines praise for Jaleo and Diego del Gastor with criticism of London flamenco events and commentary."
+  },
+  {
+    "article_id": "JALEO_1979_06::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Mary Ellen Nolan (\"María Solea\") has been quietly supporting flamenco for a long time; if there were more aficionados like her, flamenco would be in much better shape in America.",
+        "target": "Mary Ellen Nolan as an aficionada and supporter",
+        "rationale": "The passage presents an aficionada's sustained participation and support as valuable for sustaining flamenco in America."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Just about every guitar teacher has something (material, technique, or approach) unique to offer, and by drawing on a variety of sources, one's own personality on the guitar (style) can emerge.",
+        "target": "San Diego flamenco guitar teachers and their teaching materials/methods",
+        "rationale": "Teachers are framed as sources of distinctive material, technique, and approach that shape a learner's flamenco style."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "There was, of course, not much flamenco guitar instruction available at that time anywhere in the U.S., let alone Laguna Beach.",
+        "target": "Access to flamenco guitar instruction in the U.S.",
+        "rationale": "The passage explicitly thematizes limited access to flamenco instruction across a geographic boundary and then narrates how lessons became accessible."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "All of this was back in the \"good old days\", the \"Golden Age\" of flamenco in San Diego (mid to late 1960's) when Carol Whitney was living here and there were parties in La Jolla, Mission Beach, and Pacific Beach.",
+        "target": "San Diego private flamenco party and juerga scene",
+        "rationale": "The passage values private social gatherings as a meaningful participatory flamenco scene, not merely as neutral events."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy"],
+      "target": "Mary Ellen Nolan, San Diego flamenco learning, and the local juerga scene",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is largely memoir, but several passages explicitly frame afición, learning access, teacher authority, and private juerga participation as meaningful for local flamenco culture."
+  }
+]

@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "JALEO_1981_09::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The granaina is called \"Poema a Granada\", and is masterfully done.",
+        "target": "Serranito's recording",
+        "rationale": "The passage explicitly evaluates the quality of a flamenco guitar piece."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Only one small section of Serranito's special three finger picado seems to detract from the mood. It's near the end of the piece and is rather flighty, barely managing to stay in control.",
+        "target": "Serranito's three-finger picado passage",
+        "rationale": "The reviewer applies aesthetic criteria of mood, control, and technical execution to judge the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The discussion of ducas asks whether suffering is necessary for good flamenco, but the writer explicitly says he is not sure rather than asserting an authenticity claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase \"easy listening flamenco\" and beach-listening joke suggest commercialization or lightness, but the boundary against authentic flamenco is not explicit enough."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Serranito's guitar recording",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Rosa Durán is of the race (gypsy) and province (Andalucía) which rightly or wrongly claim to be originator and cradle of flamenco.",
+        "target": "Rosa Durán's flamenco authority",
+        "rationale": "The passage grounds flamenco value and authority in origin and cradle language tied to gypsy and Andalusian roots."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Rosa Durán is of the race (gypsy) and province (Andalucía) which rightly or wrongly claim to be originator and cradle of flamenco.",
+        "target": "gypsy and Andalusian identity in Rosa Durán's profile",
+        "rationale": "Identity categories organize who is positioned as embodying flamenco origin and belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "at fifteen she was working with the \"greats\"... In 1962 she was awarded an honor never before accorded a nonclassical dancer",
+        "target": "Rosa Durán's artistic status",
+        "rationale": "The passage canonizes Durán through association with great artists and unprecedented high-status recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase \"pure baile y cante jondo\" points toward authenticity, but it is more atmospheric biography than a developed claim of proper flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Formal training and El Estampio as teacher are mentioned, but the passage does not clearly use pedagogy as the main source of authority."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Official honors and royal performance are listed, but the excerpt does not frame them as heritage authorization or public cultural patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Rosa Durán as a flamenco dancer",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text teaches a guitar-string tying method, but the visible passage does not clearly connect the instruction to flamenco knowledge, authority, or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible article is mainly practical guitar maintenance instruction, with no clear flamenco discourse function."
+  },
+  {
+    "article_id": "JALEO_1981_09::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Certainly, he is not the most exciting of singers, but he is a fine artist, one well worth watching.",
+        "target": "Fosforito as a singer",
+        "rationale": "The passage explicitly evaluates Fosforito's artistic quality while acknowledging limits."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "For those who wish to learn the cante, there is no better model to try to imitate than Fosforito",
+        "target": "Fosforito as a model for learning cante",
+        "rationale": "The passage frames Fosforito as an exemplary model for learners to imitate in acquiring cante."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "high",
+        "evidence_quote": "The government of Córdoba met in an extraordinary full session... giving the title of adopted son of city to Antonio Fernández Díaz, \"Fosforito.\"",
+        "target": "official civic recognition of Fosforito",
+        "rationale": "A public government institution formally confers honor and cultural value on Fosforito."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás, placement, and structuring are named as criteria, but they are used mainly to support Fosforito's pedagogical value as a model."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase about non-gypsies and flamenco reports a prejudice, but the article contests rather than endorses it and does not develop identity-based authority enough to code."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The anniversary of his triumph and festival honors imply canonization, but the clearest hierarchy is official recognition already coded as HERIT_02."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Fosforito's artistic and civic standing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Many of Vicky's school friends took part and there were also dancing lessons.",
+        "target": "mini-juerga participation",
+        "rationale": "The passage frames the juerga as participatory social flamenco rather than detached spectatorship."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "we'll be looking for you at the upcoming Jaleistas' juergas along with the rest of your flamenco family.",
+        "target": "Jaleistas' juerga community",
+        "rationale": "The text constructs flamenco belonging through a named social community and familial language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Rosa Montoya's performance accompanied by Yuris Zeltins on the guitar and Rosala's palmas was very exciting.",
+        "target": "Rosa Montoya's juerga performance",
+        "rationale": "The passage explicitly evaluates the performance as exciting and later praises specific aspects of the dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Gracia, gypsy pelliscos, intricate taconeo, and mantón handling are named, but they function mainly as support for the broader performance evaluation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Dancing lessons are mentioned, but the article does not frame them as meaningful institutional or transnational access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego juerga community and Rosa Montoya's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

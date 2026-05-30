@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "JALEO_1980_05::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "There are many records that are not flamenco, so the buyer must be careful. Many of these records are unknown to us so we can only give some general indications of content here.",
+        "target": "Hispavox record list and buyers' selection of flamenco records",
+        "rationale": "The passage evaluates the record list by warning buyers that not all items qualify as flamenco and positions the editors' indications as guidance for selection."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "It is precisely this voice, and that of many faithful aficionados, that have secured a higher position for the \"lamentos y alegrías\" of the artists",
+        "target": "poets and faithful aficionados as defenders of cante's dignity",
+        "rationale": "The passage credits aficionados, alongside poets, with recognizing and elevating flamenco artists, giving community devotion an authorizing role."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "six of today's most important flamenco artists ... each sang twelve different styles of cante in a rigorous search for the most complete cantaor, the one capable of interpreting the widest variety of flamenco forms",
+        "target": "Giraldillo del Cante contestants and the ideal of the complete cantaor",
+        "rationale": "The contest language explicitly creates a hierarchy around importance, completeness, and breadth of repertoire."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase \"traditional cante\" appears in a record recommendation heading, but it does not by itself ground present flamenco value in continuity or roots strongly enough to emit the code."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The record-distribution effort could aid access to flamenco knowledge, but the passage primarily concerns availability and consumer guidance rather than a meaningful learning or pedagogical frame."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Bienal has institutional/public-culture features, but the visible text does not clearly frame flamenco as heritage or patrimony under authorized heritage mechanisms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "criticism"],
+      "target": "flamenco records, cante, and the Bienal's competitive/artistic framing of flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article combines a practical record guide with a Bienal report; codes are limited to spans where selection, community authorization, or ranking is explicit."
+  },
+  {
+    "article_id": "JALEO_1980_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "El Mesón Español is a charming, quaint restaurant ... The singer of the show, Arturo de Ronda, keeps everybody in good spirits with his spontaneous sense of humor.",
+        "target": "El Mesón Español and its performers",
+        "rationale": "The passage makes positive judgments about the venue atmosphere and performer qualities rather than merely listing them."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text notes Andalusian accent, South American birth, Madrid origin, and Cuban rumba technique, but these identity/geographic details do not clearly organize belonging or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Calling Arturo de Ronda a \"master\" at reciting García Lorca praises a skill, but it does not clearly construct a flamenco canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "the Miami restaurant show and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt ends mid-sentence, but there is enough visible text for a limited evaluative code."
+  },
+  {
+    "article_id": "JALEO_1980_05::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "By the end of the evening it seemed everyone had participated in the juerga through dancing, singing, guitar playing and spirit.",
+        "target": "the March juerga as participatory flamenco gathering",
+        "rationale": "The juerga is valued as a shared participatory setting rather than a detached performance event."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I think everyone that attended the March juerga would agree that it was perhaps the smallest juerga Jaleistas has put on, but in many ways the most delightful.",
+        "target": "the March juerga",
+        "rationale": "The passage explicitly assesses the event's quality and success despite its small scale."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "the aficionados who are learning the baile were not shyed away by the ability of those who have studied the art longer. Those who danced sevillanas and rumbas the best they could, received the encouragement they deserved",
+        "target": "learning dancers within the April juerga",
+        "rationale": "The passage frames the juerga as a socially supportive access point for learners across ability levels."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Words such as \"intimate\" and \"small\" appear, but the passage does not explicitly make intimacy a marker of authentic flamenco rather than event atmosphere."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The Teo Morca workshop lists classes and levels, but it reads as an administrative announcement rather than a claim of pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Jaleistas and aficionados are named as participants, but the clearer discourse function is participatory setting rather than community authority to judge or authorize flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "juerga participation and learner inclusion",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The workshop notice is treated conservatively; the stronger evidence is the juerga's participatory and learner-supportive framing."
+  },
+  {
+    "article_id": "JALEO_1980_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I learned Lole's material from her records. I wrote the words out phonetically and sang along with the records line by line.",
+        "target": "Cândida Gilotti's access to flamenco cante through records and phonetic self-study",
+        "rationale": "The interview explicitly describes transnational/media-based access to flamenco learning outside a traditional local setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "I want to get more unto the nucleus of flamenco, since I still feel on the outside looking in.",
+        "target": "Cândida Gilotti's position relative to flamenco belonging and knowledge",
+        "rationale": "The speaker explicitly frames flamenco knowledge as having an inside/outside boundary and locates herself outside it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions help from flamencos and learning a sevillanas from Simón Serrano, but no teacher or method is strongly positioned as authoritative."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The learning is partly by listening and imitation, but the visible passage emphasizes records and access rather than embodied, oral, familial, or lineage transmission."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The desire to reach the \"nucleus of flamenco\" suggests depth, but it does not clearly ground legitimacy in tradition, continuity, roots, or origin."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["pedagogy", "community"],
+      "target": "a non-Spanish learner's path toward cante competence and insider knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is primarily an interview about learning cante; identity details such as Italian heritage are not coded because they do not authorize flamenco belonging."
+  },
+  {
+    "article_id": "JALEO_1980_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "It was my hero José Greco. As a novice student of classic Spanish dance I was a bit shy about approaching him, but he was most pleasant.",
+        "target": "José Greco",
+        "rationale": "The letter evaluates Greco through admiration and favorable personal judgment rather than merely identifying him."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase \"the great man\" and \"my hero\" imply admiration, but the letter does not develop a broader canon, hierarchy, or exemplary flamenco status."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The writer is a novice student and Greco invites her to his school, but the passage does not present his school or teaching as a source of flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "José Greco as admired Spanish dance figure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The evidence is anecdotal and personal, so only a limited evaluative code is emitted."
+  }
+]

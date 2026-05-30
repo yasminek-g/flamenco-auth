@@ -1,0 +1,216 @@
+[
+  {
+    "article_id": "JALEO_1984_10::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Alberto De Almar down from San Francisco showed up towards the end of things and blew us away with some great solo bulerias.",
+        "target": "Alberto De Almar's solo bulerias",
+        "rationale": "The passage explicitly evaluates a flamenco performance contribution as impressive and memorable."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article describes a juerga with participants playing and dancing, but it does not contrast participatory/private flamenco with public spectatorship or make that setting evaluatively meaningful."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Alberto De Almar's solo bulerias",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Routine attendance lists, directions, and names were not coded."
+  },
+  {
+    "article_id": "JALEO_1984_10::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Vera Ray did her usual outstanding job of costuming.",
+        "target": "Vera Ray's costuming for the performance",
+        "rationale": "The article makes a clear positive assessment of a performance element rather than merely listing it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The December juerga at a home and tapas-sharing instructions describe a participatory social event, but the text does not attach authority, authenticity, or value to that setting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Lynn Schroeder is called a flamenco dance student, but no teacher, method, or pedagogical authority is presented."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Vera Ray's costuming for the performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is event scheduling, photo captions, or administrative notice text."
+  },
+  {
+    "article_id": "JALEO_1985_01::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "almost all notable dancers in search of perfection or of a final artistic polish that only this man can give them, have studied at his academy",
+        "target": "Enrique el Cojo as teacher and his academy",
+        "rationale": "The passage explicitly legitimates Enrique el Cojo as an exceptional pedagogical authority whose academy supplies advanced artistic polish."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The fact that a Japanese maiden should win that competition amazed many: \"And how is that possible?\" \"She studied at the academy of Enrique el Cojo.\" \"Ah, well...\"",
+        "target": "Aichi Kasouwa's competition legitimacy through Enrique el Cojo's academy",
+        "rationale": "Institutional study at the academy is presented as the explanation that makes a transnational student's flamenco success intelligible and legitimate."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "The fact that a Japanese maiden should win that competition amazed many: \"And how is that possible?\"",
+        "target": "A Japanese student's place within flamenco competition authority",
+        "rationale": "The student's Japanese identity is made socially meaningful because it structures surprise about whether she can legitimately win a flamenco competition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article calls Enrique a celebrity and names notable students, but the stronger visible discourse function is pedagogical authority rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Enrique el Cojo's academy and its students",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review text is truncated, but the visible opening and evidence window provide enough context for these codes."
+  },
+  {
+    "article_id": "JALEO_1985_01::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Since 1978, Jsleo has aerved the valuable function of keeping a slow trickle of information coming from Spain and has kept us informed about the state of flameno in its native land.",
+        "target": "Jaleo as a mediator of flamenco knowledge from Spain",
+        "rationale": "The editorial frames the publication as a transnational access point that keeps readers informed about flamenco knowledge and developments in Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'native land' invokes origin, but it mainly explains why information from Spain is useful rather than grounding a present flamenco practice in tradition or roots."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to 'Flamenco people' describes readership economics, not a community's authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Jaleo's informational role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR errors are present but do not prevent interpreting the relevant sentence."
+  },
+  {
+    "article_id": "JALEO_1985_01::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "electrified American audiences in 1964 at the New York World's Fair, where he won the Gold Medal. Paris critics awarded him the Prix de la Critique, and he also gained the Madrid Fine Arts Circle's Gold Medal and the Escudero Prize.",
+        "target": "Antonio Gades' artistic status",
+        "rationale": "The passage constructs Gades' high status through audience impact and a sequence of prestigious awards."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I am going to establish an academy in Madrid to teach all facets of Spanish dance.",
+        "target": "Antonio Gades' planned Madrid academy",
+        "rationale": "The passage explicitly frames Spanish dance knowledge as something to be organized and transmitted through a formal academy."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Of course, I won't be teaching it myself, but I'll have the best teachers, and I will direct and choreograph for the school. It is something I think is really needed.",
+        "target": "The planned academy's teachers and Gades' direction",
+        "rationale": "The planned school's legitimacy is grounded in authoritative teachers and Gades' directorial control over the pedagogical project."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Gades says he could imitate everything others did, but the line is a brief autobiographical recollection rather than an explicit lineage or embodied transmission claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative phrases such as 'electrified American audiences,' but the same evidence is more precisely captured as canon/status construction under CRIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Antonio Gades and his planned academy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The interview includes biography and fan commentary, but only the award/canon and academy-transmission passages were coded."
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "article_id": "JALEO_1985_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Teo had given a two week residency at the Fairmount Spanish Dance Company... MORCA PUTTING INTENT STUDENTS THROUGH THEIR PACES IN OHIO WORKSHOP",
+        "target": "Teo Morca's Ohio residency/workshop",
+        "rationale": "The passage frames flamenco knowledge as transmitted through a residency and workshop setting with students, making institutional access to learning central."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "This performance occurred midway through the residency and was received enthusiastically by everyone in attendance... The residency itself... was tremendous.",
+        "target": "Teo Morca's performance and residency",
+        "rationale": "The article explicitly evaluates the performance and residency as enthusiastically received and tremendous."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Whatever the inspiration, the complicated steps became integrated into the flamenco tradition",
+        "target": "complicated flamenco footwork",
+        "rationale": "The passage authorizes a possibly external or modern footwork development by saying it became integrated into flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The participant range and references to students include demographic/community details, but they do not clearly make identity the basis of authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Teo Morca's workshops and flamenco footwork tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are based only on visible residency/workshop and historical-footwork passages."
+  },
+  {
+    "article_id": "JALEO_1985_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "After 36 years of performing, Morca still can elicit from dance critics adjectives that range from to \"magnificent\" to \"profound.\"",
+        "target": "Teo Morca's dancing",
+        "rationale": "The passage invokes critical praise to assess Morca's continued artistic quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "In flamenco perhaps more than any other form, a dancer's body is his instrument, the source of rhythm and percussion as well as lyrical, liquid movement.",
+        "target": "flamenco dance technique and expression",
+        "rationale": "The text defines flamenco dance value through embodied rhythm, percussion, and lyrical movement as aesthetic criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The visible biography names Morca's training with José Greco, José Cansino, and others, but the passage reports training rather than positioning those teachers as current pedagogical authorities."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The body is central to the description of flamenco dance, but the visible text does not frame bodily knowledge as learned through oral or embodied lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Teo Morca and flamenco dance aesthetics",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; visible text supports criticism/aesthetic criteria more clearly than pedagogy."
+  },
+  {
+    "article_id": "JALEO_1985_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Parral... is undoubtedly headquarters for flamencos...keep it that way...get there EAT, DRINK, and PARTICIPATE...Juergas till 6:00am Sunday morning",
+        "target": "Villa Del Parral",
+        "rationale": "The restaurant is valued as a participatory flamenco gathering place rather than a detached consumer venue."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Juergas till 6:00am Sunday morning (what with two or three aficionado-cantaores at the bar).",
+        "target": "aficionado-cantaores and Parral's flamenco community",
+        "rationale": "Aficionado-participants are presented as sustaining the venue's flamenco authority and social life."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The greatest of the bailaoras, La Tati... Pepe de Málaga... is probably the finest and most presentable stage cantaor of flamenco",
+        "target": "La Tati and Pepe de Málaga",
+        "rationale": "The passage creates explicit hierarchy through superlative ranking of performers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Terms such as gitanillos appear in lists of performers, but identity is not clearly used to define authority, belonging, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative adjectives for restaurants and performers, but the strongest evaluative function is already captured by canon/hierarchy ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Villa Del Parral and named flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded because the venue is framed as a participatory flamenco hub, not merely listed as a restaurant."
+  },
+  {
+    "article_id": "JALEO_1985_07::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "he continued his studies at the Conservatory of Music in Madrid... He studied music with the professor of music... took private instruction... studied four years with the great classical guitar professor",
+        "target": "Carlos Sanchez's guitar training",
+        "rationale": "The profile grounds Sanchez's musical formation in conservatory, professor-led, and private instructional contexts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Mr. Sanchez became the first guitarist of the company Rosario Ballet Español... became first guitarist with Antonio Ballet de Madrid... the first flamenco artist to be invited to perform at the New Orleans Jazz Festival",
+        "target": "Carlos Sanchez's professional status",
+        "rationale": "The passage constructs Sanchez's status through first-position appointments and first-invited distinction, creating a hierarchy of professional recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text names teachers and professors, but it mainly documents Sanchez's training history rather than making a claim about their authority to define flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases about natural aptitude and swift progress are evaluative, but they are brief profile praise and less distinct than the hierarchy/status claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Carlos Sanchez",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "No heritage code emitted because institutional prestige and royalty appearances are not framed as heritage recognition."
+  },
+  {
+    "article_id": "JALEO_1985_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "fiestas that included such pure flamenco artists as Diego del Gastor, Juan Talega, Manolito el de María, El Perrate... if you want to hear pure cante, go to California!",
+        "target": "recorded fiestas and cante associated with Diego del Gastor and other artists",
+        "rationale": "The passage explicitly attributes purity to the artists and cante, authorizing the recordings as access to genuine flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I find this tape to be very listenable, without containing much that is memorable. The recording quality is okay--perhaps a bit heavy on the bass.",
+        "target": "the reviewed tape",
+        "rationale": "The reviewer gives an explicit assessment of listenability, memorability, and recording quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the playing is quite good and authentic",
+        "target": "the guitar playing on the tape",
+        "rationale": "The review applies goodness and authenticity as criteria for evaluating the recording's flamenco value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The passage mentions official Andalusian government offices, but the visible text does not clearly frame the recordings as heritage through an authorized heritage mechanism."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Offering three hundred hours of cante for editing and release suggests preservation, but the passage does not explicitly frame it as safeguarding, living heritage, or collective memory work."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses 'pure' cante/artists, but it does not clearly draw an exclusionary pure/impure boundary against a devalued flamenco target."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "flamenco recordings and the reviewed tape",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are limited to visible authenticity claims and review language."
+  }
+]

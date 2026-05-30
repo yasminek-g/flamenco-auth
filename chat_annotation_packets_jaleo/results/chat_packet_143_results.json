@@ -1,0 +1,238 @@
+[
+  {
+    "article_id": "JALEO_1982_06::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Mario's capacity as a teacher. Great performer and fine teacher are not always the same person, but with Mario, it is so.",
+        "target": "Mario Escudero as flamenco guitar teacher",
+        "rationale": "The letter explicitly legitimates Mario as both a performer and an authoritative teacher of flamenco guitar."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Jaleo magazine provides an historical record of flamenco artists to be collected and treasured as are Don Pohren's books. Yes, writing about an art is not doing the art; however, writing is sharing an art.",
+        "target": "Jaleo magazine as mediator of flamenco knowledge",
+        "rationale": "The passage frames the periodical as a medium for preserving, sharing, and transmitting flamenco knowledge across a dispersed readership."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "teachers and periodical mediation of flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Other praise of hospitality and magazine quality was left uncoded unless tied to teaching or knowledge transmission."
+  },
+  {
+    "article_id": "JALEO_1982_06::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "But what is it that will play in Peoria? Reach everyone with what? Certainly not flamenco.",
+        "target": "internationalized or popularity-oriented flamenco",
+        "rationale": "The author draws a boundary between legitimate flamenco and altered forms meant to reach mass audiences."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "We have taken occupancy in a borrowed art form and have an obligation to guard and respect its origins and traditions.",
+        "target": "flamenco origins and traditions",
+        "rationale": "The passage grounds proper present practice in respect for origins, tradition, and continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "As soon as anything extraneous is added (percussion, choral back-up, bassoons, etc.), dilution sets in. More is less.",
+        "target": "hybrid or expanded flamenco arrangements",
+        "rationale": "The critique polices the boundary of proper flamenco by judging added elements as diluting the form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'their thing' suggests outsider obligation, but the stronger discourse function is tradition/purity boundary work rather than a developed insider/outsider authority claim."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The 'intimate back room pulse' versus amphitheater contrast gestures toward intimate authenticity, but it is used mainly as an analogy to reggae and is less central than the explicit purity/tradition boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": ["authenticity", "tradition", "criticism"],
+      "target": "hybrid, internationalized, or mass-appeal flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "This article contains explicit boundary policing; coding was limited to the clearest purity, tradition, and critical-boundary functions."
+  },
+  {
+    "article_id": "JALEO_1982_06::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Both came from families with considerable afición for flamenco. Paco's father, uncle and grandfather were competent amateur guitarists; Ana's father was Niño de Brenes, a well-known singer in his time, as well as a dancer, while her mother was a professional dancer and singer",
+        "target": "Ana Martínez and Paco de Málaga's flamenco formation",
+        "rationale": "The biographical framing links their flamenco authority to familial, intergenerational transmission and afición."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Paco began to study the guitar in Algeciras at the age of thirteen with Antonio Sánchez, Paco de Lucía's father. Ramón de Algeciras was a fellow student at the time.",
+        "target": "Paco de Málaga's guitar training",
+        "rationale": "The passage legitimates Paco's learning through a named teacher and recognized flamenco pedagogical environment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "With today's playing style, one dances better. It is more rhythmic and stronger.",
+        "target": "contemporary guitar playing style",
+        "rationale": "The speaker applies rhythm and strength as aesthetic criteria for evaluating current guitar accompaniment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Afición and family background are mentioned, but the passage primarily frames lineage and training rather than community authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The list of notable artists confers prestige, but it does not itself construct a clear canon or ranking in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Ana Martínez and Paco de Málaga's flamenco authority and contemporary guitar style",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpts provide enough evidence for limited pedagogy and aesthetic-criteria codes."
+  },
+  {
+    "article_id": "JALEO_1982_06::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "One of the great problems that flamenco has had is the lack of information about it. Jaleo seems to deal with that problem at least. The dissemination of information can never hurt flamenco.",
+        "target": "Jaleo's role in disseminating flamenco information",
+        "rationale": "The dialogue frames printed discussion as a useful mediator of access to flamenco knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Why do many of the American flamcoss go around masquerading as Spanish? Do they have some kind of identity problem? Don't they like themselves and their true identities?",
+        "target": "American flamencos adopting Spanish identity markers",
+        "rationale": "The passage explicitly frames flamenco participation through national identity, authenticity of self-presentation, and belonging."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "I think purity is a bad thing with a good name. The purist of today is completely different from the purist of 40 years ago.",
+        "target": "purist definitions of flamenco",
+        "rationale": "The exchange directly contests purity as a stable boundary for defining legitimate flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditions are discussed as historically accumulated identities, but the passage does not positively ground flamenco value in continuity or origins."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The critique of purism has boundary stakes, but the stronger primary function is an authenticity/purity debate rather than expert review authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["pedagogy", "community", "authenticity"],
+      "target": "information, identity performance, and purity discourse in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a conceptual dialogue; codes were assigned only where the exchange explicitly discusses mediation, identity, and purity."
+  },
+  {
+    "article_id": "JALEO_1982_06::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the playing had immediacy and a high level of technical sophistication, and generated a fair measure of enthusiasm among the listeners",
+        "target": "Rodrigo's flamenco guitar recital",
+        "rationale": "The review explicitly evaluates the quality and audience effect of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "His compás and coordination with the other members was absolutely impeccable. The cantes of Rubina were remarkably moving.",
+        "target": "Morca ensemble performance",
+        "rationale": "The reviewer applies flamenco aesthetic criteria such as compás, coordination, and emotional force to judge the performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "She is living proof that one does not have to be Andalucian to become a good cantaora if the desire and ability are present.",
+        "target": "Rubina Carmona as non-Andalucian cantaora",
+        "rationale": "The review explicitly addresses regional identity as a condition of flamenco belonging and counters an exclusionary identity boundary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The contrast between formal recital and juerga is noted, but it does not strongly evaluate one participatory setting over another."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "community"],
+      "target": "reviewed performers and non-Andalucian flamenco participation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The concert-review format clearly supports critical evaluation; identity framing is coded only for the explicit Andalucian/cantaora statement."
+  }
+]

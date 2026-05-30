@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "JALEO_1980_09::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "\"Always you learned by ear,\" he remembers, \"You didn't learn by reading or by written music. My father never taught me that way. He taught me solely by ear. This is how flamenco was passed from one to another...inherited.\"",
+        "target": "Juan Serrano's flamenco guitar learning and transmission",
+        "rationale": "The passage explicitly frames flamenco knowledge as transmitted by ear, from father to son, and as inherited."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "He understood well how to teach the complicated rhythms and scales that make up flamenco. He could convey not only the technical aspects of the music, but also the subtle feeling and mood of each compás.",
+        "target": "Juan Serrano as flamenco teacher",
+        "rationale": "Serrano is positioned as an authoritative teacher able to transmit both technical and expressive flamenco knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Together these things made him an enormous musical resource and a teacher from whom much could be learned.",
+        "target": "Juan Serrano's teaching",
+        "rationale": "The article explicitly evaluates Serrano's pedagogical and musical value, not merely noting that he taught."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Juan Serrano as a flamenco maestro and transmitter",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "a complete, beautifully written out tientos",
+        "target": "Juan Serrano's written-out tientos",
+        "rationale": "The note makes a modest but explicit evaluative judgment about the quality and completeness of the musical piece."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase about retaining value for future publication suggests preservation, but the passage is primarily a publication-space note and lacks public heritage or safeguarding stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Juan Serrano's tientos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Once a month members gather around sangria and snacks to enjoy, participate, and share their interest and talents in the dancing, singing, and guitar-playing of flamenco.",
+        "target": "Flamenco Society of Michigan meetings",
+        "rationale": "The Society is framed as a participatory social setting where members actively share and perform flamenco rather than only spectate."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "It was hoped that the Society would provide a productive learning environment for students and would foster the growth of the art in the area.",
+        "target": "Flamenco Society of Michigan",
+        "rationale": "The organization is explicitly presented as an institutional learning environment that expands access to flamenco knowledge in Detroit."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the Flamenco Society of Michigan has proudly represented Spain through her music, dances, literature, foods, and cultural artifacts at Detroit's annual Latin American Festival.",
+        "target": "Spanish/flamenco culture represented by the Society",
+        "rationale": "The Society frames flamenco and related cultural forms as public cultural representation in festival settings."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Society is made up of aficionados and sustains flamenco locally, but the strongest visible discourse emphasizes participation and learning rather than community authority to judge or authorize."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text mentions preserving the spirit of recitals and carrying on after Serrano's departure, but this is not strongly framed as safeguarding or contested living heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "Flamenco Society of Michigan as a local flamenco institution",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1980_09::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The cruise-ship audience is described as not flamenco-oriented and wanting flashy color, but the passage gives practical work advice rather than clearly linking commercial spectacle to authenticity loss."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author's dislike of flashy sequined costumes hints at critique of spectacle, but the boundary around proper or improper flamenco is not explicit enough to emit."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly practical advice about cruise-ship dance work; no high-confidence flamenco authority or evaluation discourse."
+  },
+  {
+    "article_id": "JALEO_1980_09::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "It is important to remember that criticism of any kind is simply opinion. Opinion is not to be confused with fact, especially if the critic isn't really knowledgeable. Even knowledgeable critics are operating from a biased position",
+        "target": "flamenco criticism and critics",
+        "rationale": "The article directly evaluates the authority and limits of critics, including knowledgeable critics, in flamenco discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "I frankly do not believe in pecking order in the flamenco world. Many people say, \"So and so is number one, followed by Fulano, and Mengano is a distant third\". It sounds like a horse race.",
+        "target": "ranking and hierarchy in the flamenco world",
+        "rationale": "The passage explicitly contests rankings and pecking-order hierarchy among flamenco artists."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "With a few exceptions, the Americans in Morón seemed determined to convince me that I had learned all wrong and was misguided. Some of them didn't talk to me until the first week was over. I was there to learn, but not to repent.",
+        "target": "learning flamenco across stylistic and transnational boundaries",
+        "rationale": "The passage frames flamenco learning as contested across American and Spanish/Morón contexts, with claims about correct and incorrect learning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The article contrasts Americans in Morón and Spanish Morón professionals, but the strongest evidence concerns learning and criticism rather than a stable insider/outsider boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article repeatedly discusses criticism, but broad critical evaluation is subsumed by the more specific codes for critic authority and hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco criticism, ranking, and learning norms",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

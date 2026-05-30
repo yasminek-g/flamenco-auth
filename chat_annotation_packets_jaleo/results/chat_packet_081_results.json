@@ -1,0 +1,169 @@
+[
+    {
+        "article_id": "JALEO_1980_08::A10",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "high",
+                "evidence_quote": "At the request of the pe\u00f1a flamenca \"El Gallo\", the government of Mor\u00f3n has conceded to Diego the insignia of \"La Orden del Gallo\"",
+                "target": "Diego Amaya Flores / El Ni\u00f1o del Gastor",
+                "rationale": "Municipal government confers an official public honor on the guitarist, authorizing his cultural value through civic recognition."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "At the request of the pe\u00f1a flamenca \"El Gallo\"",
+                "target": "pe\u00f1a flamenca El Gallo's recognition of Diego",
+                "rationale": "The pe\u00f1a acts as a flamenco community body whose request helps initiate public recognition of the artist."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "community"
+            ],
+            "target": "Diego Amaya Flores / El Ni\u00f1o del Gastor",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Coded only the public honor and pe\u00f1a-mediated recognition; the funeral attendance details alone were treated as descriptive."
+    },
+    {
+        "article_id": "JALEO_1980_08::A11",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "an artist who was very popular and highly esteemed in the flamenco scene of all Andaluc\u00eda",
+                "target": "Fernandillo de Mor\u00f3n",
+                "rationale": "The obituary explicitly evaluates the artist's standing and esteem within the Andalusian flamenco scene."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism"
+            ],
+            "target": "Fernandillo de Mor\u00f3n",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Community grief is present but not coded separately because it does not clearly authorize insider knowledge or belonging beyond mourning."
+    },
+    {
+        "article_id": "JALEO_1980_08::A12",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "high",
+                "evidence_quote": "Inventor of a score of true falsetas",
+                "target": "Diego del Gastor's falsetas",
+                "rationale": "The poem attributes genuineness to Diego's flamenco musical material, presenting it as truly flamenco."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Deepest well of all the cante jondo, Profoundly sounding too Garc\u00eda Lorca, Possessed by the genuine duende",
+                "target": "Diego del Gastor",
+                "rationale": "Depth, cante jondo, and duende are used as aesthetic criteria to define Diego's flamenco value."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Deepest well of all the cante jondo",
+                "target": "Diego del Gastor",
+                "rationale": "The superlative phrasing elevates Diego into an exemplary or canonical position within cante jondo."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "authenticity",
+                "criticism"
+            ],
+            "target": "Diego del Gastor",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The poem is short but contains clear evaluative and authenticity language; 'Mentor' was not separately coded as pedagogy because it is poetic and under-specified."
+    },
+    {
+        "article_id": "JALEO_1980_08::A13",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Part of the beauty of his playing was that sound -- recognizable from a few notes.",
+                "target": "Diego del Gastor's playing",
+                "rationale": "The passage explicitly evaluates the beauty and distinctiveness of Diego's guitar playing."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "The other impression I got from his music was a new sense of syntax in playing. It was developed with improvisation in mind.",
+                "target": "Diego del Gastor's guitar style",
+                "rationale": "Syntax, improvisation, rhythmic spacing, and sound are used as criteria to explain the style's flamenco value."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "medium",
+                "evidence_quote": "You heard those rhythms so much that they affected your daily pace; those accents and spaces were the motions of every day.",
+                "target": "learning Mor\u00f3n rhythms through repeated listening and daily embodied absorption",
+                "rationale": "The author frames understanding of Mor\u00f3n rhythms as developed through sustained listening and embodied absorption into daily movement."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "pedagogy"
+            ],
+            "target": "Diego del Gastor's Mor\u00f3n guitar style",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The endurance of the style is evaluative but was not separately coded as AUTH_03 because the stronger evidence concerns aesthetic evaluation and embodied learning."
+    },
+    {
+        "article_id": "JALEO_1980_08::A15",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The visible text identifies photographs and contributors but does not clearly evaluate, authorize, preserve as public heritage, teach, rank, or define belonging."
+    }
+]

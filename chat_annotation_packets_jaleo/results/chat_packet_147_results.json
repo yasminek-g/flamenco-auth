@@ -1,0 +1,253 @@
+[
+  {
+    "article_id": "JALEO_1982_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Held in the private audio home of Dr. and Mrs. Colbert (Manuela de Cádiz), there were about 60 attendees... the situation allowed persons who might otherwise hang back, to rise to the occasion.",
+        "target": "Los Angeles juerga as a private participatory flamenco setting",
+        "rationale": "The passage values the juerga as a private social setting where attendees participate rather than merely watch."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Juana Escobar was her usual excellent self... Pilar Mozeno and Rudy Montoya provided us with excellent cantes.",
+        "target": "performers at the June juerga",
+        "rationale": "The text explicitly evaluates the dancers and singers with praise such as excellent, elegant, exciting, and future-oriented approval."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The gathering shows community sociability, but the visible text does not clearly grant the community authority to judge or define flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase about the future of flamenco dance being in good hands is positive, but it does not construct a durable canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Los Angeles juerga performers and participatory setting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Routine event details and name lists were not coded."
+  },
+  {
+    "article_id": "JALEO_1982_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We are all members of Jaleistzas and should all share in the work as well as the fun!",
+        "target": "Jaleistzas members at the July juerga",
+        "rationale": "The notice frames the juerga as a collectively sustained member community with shared obligations and belonging."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text asks people to pitch in at a juerga, but the visible passage is mostly logistical and does not clearly contrast participatory flamenco against spectatorship."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The venue and ambiance are mentioned, but no authenticity claim is made about intimate or non-commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistzas juerga membership and collective labor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Prices, directions, and restaurant advertisement were treated as logistics rather than discourse evidence."
+  },
+  {
+    "article_id": "JALEO_1982_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I have my father to thank for my knowledge and love of this difficult art and being the great aficionado that he was, he taught me.",
+        "target": "Cacharrito de Málaga's flamenco formation",
+        "rationale": "The singer grounds his flamenco knowledge in familial transmission from an aficionado father who taught him."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Pascual Olivera and Angela del Moral, perhaps one of the best dancing couples with whom I have worked as cantaor.",
+        "target": "Pascual Olivera and Angela del Moral",
+        "rationale": "The passage creates a comparative hierarchy by calling the dance pair among the best with whom the singer has worked."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "a real jewel who with his bulerías, his beautiful voice and great charm will provide you, as did me, with a most delightful evening",
+        "target": "Cacharrito de Málaga",
+        "rationale": "The quoted review explicitly praises the singer's artistry, voice, charm, and entertainment value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The father teaches him, but the stronger function is familial/intergenerational transmission rather than formal pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The review calls him a gypsy from a Sacromonte cave, but the identity framing is too stereotyped and brief to confidently code authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Cacharrito de Málaga and his professional flamenco network",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Professional itinerary was not coded unless it carried evaluative or transmission force."
+  },
+  {
+    "article_id": "JALEO_1982_08::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Oscar explained the origins of flamenco and told about some of the different flamenco forms... Bill played flamenco records demonstrating cuadro flamenco, solo flamenco... flamenco in classical music",
+        "target": "radio and media-based access to flamenco knowledge",
+        "rationale": "The radio program is described as mediating flamenco knowledge through explanation, demonstration, and recorded examples for listeners."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "David De Alva played three pieces beautifully... David is a very accomplished 19-year-old guitarist.",
+        "target": "David De Alva's guitar performance",
+        "rationale": "The letter explicitly evaluates the guitarist's performance and skill."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "I would like to tell the Jaleo readers not to buy the Paco de Lucía written music printed in Spain... the musician who did the transcriptions doesn't know about flamenco guitar with capo.",
+        "target": "Paco de Lucía printed transcriptions",
+        "rationale": "The advice polices the authority and usefulness of a transcription by judging whether its maker knows flamenco guitar practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers and resources are mentioned, but no person or institution is clearly authorized as a flamenco teacher beyond mediated access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Virtuosity and fineness are evaluative terms, but they are not developed as criteria for defining flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "broadcast flamenco instruction, David De Alva's performance, and flamenco transcription resources",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The VCR request was treated as access-oriented context supporting PED_03, not separately coded as criticism."
+  },
+  {
+    "article_id": "JALEO_1982_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "when you leave the traditional framework of an art, it is no longer the initial art but something else... the \"new flamenco\" is not truly flamenco",
+        "target": "new flamenco that incorporates structures and instruments from other traditions",
+        "rationale": "The passage draws an explicit boundary between legitimate flamenco and music inspired by flamenco but not truly flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Many present day artists feel inspired to renovate flamenco music within the traditional context... 100% within the spirit of the traditional alegrías.",
+        "target": "renovation within flamenco's traditional framework",
+        "rationale": "Tradition is used as the authoritative framework that can legitimate innovation only when it remains within inherited forms."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "But don't call everything flamence that uses the Phrygian scale; as they say here in Badajoz, \"Hay que llamar al pan, pan y vino, vino.\"",
+        "target": "terminology around hybrid or flamenco-inspired music",
+        "rationale": "The critic uses evaluative boundary critique to police what may properly be named flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The article makes authenticity claims, but the stronger and more specific code is boundary work around what is not truly flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Traditionalist and evolutionist camps are contrasted, but the passage primarily defines boundaries rather than ranking artists or creating a canon."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "new flamenco and tradition-based terminology",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly polemical; coding focuses on the visible tradition/boundary argument, not the editor's metadata."
+  }
+]

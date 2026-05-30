@@ -1,0 +1,201 @@
+[
+  {
+    "article_id": "JALEO_1983_03::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "It is time to get back to the basics on which Jaleistas was founded: PARTICIPATIDN, MUTUAL SUPPORT, CONSIDERATIDN AND TOLERANCE.",
+        "target": "Jaleistas juergas and organization",
+        "rationale": "The passage defines the juerga/community setting through active participation and mutual support rather than passive attendance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We SUPPERT each other by frequenting the performances of local professionals and encouraging the efforts of apprentices at the juergas.",
+        "target": "local flamenco community in San Diego",
+        "rationale": "The text presents the local community as responsible for sustaining professionals, apprentices, and juerga culture."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Soon, Agujetas began to sing -- deep intense songs with beautiful haunting melodies. All eyes and ears on him, he sang for us \"a la gitano\" and electrified all within range of his voice.",
+        "target": "Manuel Agujetas' singing at the San Diego gathering",
+        "rationale": "The passage explicitly evaluates the performance through praise of intensity, beauty, and audience impact."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase \"a la gitano\" may suggest authenticity, but the visible text does not clearly define it as genuine or proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "San Diego juerga participation and Agujetas' performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Exclusion boundary is limited to the request to bring only guests with sincere flamenco interest and avoid cliques, not a formal authenticity boundary."
+  },
+  {
+    "article_id": "JALEO_1983_04::A1",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text mentions a guitar master and university workshops, but the visible excerpt is mainly classical-guitar biography and does not yet discuss flamenco knowledge transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "\"Most decorated guitarist of his generation\" is a ranking claim, but the evaluated target is framed as a classical guitarist rather than a flamenco actor or practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt stops at the question about flamenco study, so the visible text is insufficient for flamenco-specific coding but not generally OCR-insufficient."
+  },
+  {
+    "article_id": "JALEO_1983_04::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The editorial asks readers for understanding and help, but the discourse concerns magazine labor and finances rather than flamenco community authority or belonging."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text implies sustaining Jaleo as a publication, but it does not frame flamenco as public heritage, safeguarding, or living cultural preservation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative/editorial sustainability text only; no clear flamenco discourse code."
+  },
+  {
+    "article_id": "JALEO_1983_04::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "I have attended and delighted in learning from such masters of Spanish dance as Mercedes and Albano in flamenco, Eloy Pericet in the \"escuela bolera\"... and Jordi Sánchez in the regional dances.",
+        "target": "Jose de Udaeta's Sitges workshops and faculty",
+        "rationale": "The passage legitimates dance learning through named masters who transmit Spanish dance and flamenco knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Unquestionably the intensive program offered by Jose de Udaeta and his illustrious staff is unequaled anywhere, both in content and variety in Spanish dance. There is something for everyone, with beginning to professional dance classes.",
+        "target": "intensive Spanish dance workshop in Sitges",
+        "rationale": "The workshop is framed as an institutional learning setting that gives access across levels from beginners to professionals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "\"Unequaled anywhere\" is evaluative, but the judgment primarily supports the pedagogical-authority claim rather than a separate critical review function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Jose de Udaeta's Sitges workshop program",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The truncated ending is mostly OCR-damaged filler, but the pedagogical evidence window is sufficient for coding."
+  },
+  {
+    "article_id": "JALEO_1983_04::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Each year he receives more recognition as a teacher of flamenco dance... His teaching has been praised by the critics, after performances by his students in the Quincenas of 1981 and 1982.",
+        "target": "Manolo Marin as a flamenco dance teacher",
+        "rationale": "The passage positions Manolo Marin as an authoritative teacher whose pedagogy is publicly recognized and critically praised."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Manolo believes that the students should learn through a long process of absorption, rather than by memorizing choreographies.",
+        "target": "Manolo Marin's flamenco dance pedagogy",
+        "rationale": "Learning is explicitly framed as embodied absorption rather than fixed memorization."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Often the students are asked to improvise to rhythms like bulerías or fandangos de Huelva... they are not forced into a single mold, but are corrected individually according to their natural tendencies.",
+        "target": "Manolo Marin's student training method",
+        "rationale": "The passage values a transformative learning model based on improvisation and individualized correction rather than copying one fixed form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Critics are mentioned as praising his teaching, but the excerpt does not quote or develop a separate critic/expert discourse beyond supporting pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Triana and Japanese student references suggest identity/transnational context, but they do not clearly organize authority or belonging in the visible passage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Manolo Marin's flamenco dance pedagogy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible teaching-method passage is sufficient for confident pedagogy coding."
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "JALEO_1981_06::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "It is intended for all participants in flamenco, at all levels... We need to include as many people as possible",
+        "target": "North American flamenco participants and Jaleo readers",
+        "rationale": "The editorial defines the directory as an inclusive community instrument for identifying and connecting flamenco participants rather than only professionals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The directory is described as a source of information about teachers, but the passage is primarily about community networking rather than flamenco learning or pedagogical access."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The proposed survey may document a scene, but there is no explicit heritage, safeguarding, memory, or public-culture framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "a broad North American flamenco directory and the participants it includes",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest discourse function is inclusive community-building; professional status is explicitly rejected as a boundary."
+  },
+  {
+    "article_id": "JALEO_1981_06::A3",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The letter shows Jaleo circulating through a distant social network, but it does not make a claim about community authority, belonging, or recognition in flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The text is a personal anecdote about accidental circulation and reconnection, without clear evaluative, authorizing, pedagogical, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1981_06::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "As a guitarist accompanying the dance, I have had the opportunity to observe a number of common weaknesses in dancers.",
+        "target": "flamenco dancers",
+        "rationale": "The speaker claims authority from accompanist experience and uses that authority to guide dancers through corrective self-assessment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Do my dances suit the mood of the different cantes--do I attempt to interpret each baile in a unique manner, or do all of my dances look the same?",
+        "target": "dance interpretation and accompaniment practice",
+        "rationale": "The passage defines flamenco dance quality through criteria such as bodily integration, communication, cante adaptation, interpretation, palmas, and technique."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Workshop—Festival. An in-depth study of all facets of Flamenco, technique, repertoire, and history, personally taught by Master Dance Teacher, Teodoro Morca.",
+        "target": "formal flamenco workshop learning",
+        "rationale": "The advertisement frames flamenco knowledge as accessible through an institutional workshop taught by an authorized master teacher."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage evaluates generic dancer weaknesses, but the stronger function is the articulation of aesthetic criteria rather than review of a specific performance or artist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'passed from teacher to student to friend to student' mentions transmission, but it is used to criticize memorized moves rather than to authorize embodied or lineage-based learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "proper flamenco dance practice and formal workshop instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is explicitly corrective and pedagogical; the workshop advertisement is coded only because it frames structured access to technique, repertoire, and history through a master teacher."
+  },
+  {
+    "article_id": "JALEO_1981_06::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "One must listen to Rodrigo in order to fully appreciate his capabilities as an artist.",
+        "target": "Rodrigo's flamenco guitar artistry",
+        "rationale": "The passage explicitly praises Rodrigo's artistry, style, accompaniment, and emotional intensity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "His style is about as personal and creative as one can find in flamenco.",
+        "target": "Rodrigo's guitar style",
+        "rationale": "Rodrigo is elevated through comparative language and positioned as a distinctive, exemplary non-imitative artist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "his art thrived and matured as it probably can only on that side of the Atlantic.",
+        "target": "Rodrigo's flamenco formation in Spain",
+        "rationale": "The passage grounds the legitimacy and maturation of Rodrigo's flamenco in Spanish location and continuity with flamenco's place of origin."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text links Remedios's singing to Andalusian and gitana identity, but the main evaluative work in the visible excerpt centers on Rodrigo's artistry and Spanish formation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The passage challenges the idea that good flamenco guitarists must be Spanish-born, but it does not clearly develop a sustained insider/outsider boundary beyond that evaluative contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Rodrigo as a legitimate and highly valued flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible evidence is sufficient for evaluation, hierarchy, and Spanish-rooted legitimation."
+  },
+  {
+    "article_id": "JALEO_1981_06::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I am also very proud because I think he is a great artist too. \"Lo vale.\"",
+        "target": "Rodrigo's artistry",
+        "rationale": "Remedios explicitly evaluates Rodrigo as a great artist and affirms his artistic worth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Tarantas must be particularly difficult for both the singer and the guitarist, as it is a very free style.",
+        "target": "tarantas and free flamenco performance style",
+        "rationale": "The exchange frames difficulty and freedom as criteria for understanding and evaluating flamenco performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Some Americans think that flamenco has to be one-two-three, but there are many artists like",
+        "target": "American understandings of flamenco rhythm",
+        "rationale": "The visible passage draws an epistemic boundary between a simplified outsider understanding and more flexible artist knowledge of flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy/payo marriage is discussed as social identity history, but the passage does not clearly connect that identity boundary to flamenco authority or representation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Remedios describes singing as something felt while working, but the passage does not explicitly frame this as authorized oral, embodied, familial, or intergenerational transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Rodrigo's artistry and proper understanding of free flamenco style",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The final quoted sentence is cut off, so the insider/outsider code is kept at medium confidence and limited to the visible contrast."
+  }
+]

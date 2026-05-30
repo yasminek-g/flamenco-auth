@@ -1,0 +1,212 @@
+[
+    {
+        "article_id": "JALEO_1987_SUMMER::A3",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "he played the guitar, danced his sevillanas, made castanets, painted flamenco oils, encouraged flamenco aficionados",
+                "target": "Earnest Lenshaw as a local flamenco community participant",
+                "rationale": "The obituary values Lenshaw through his role in encouraging aficionados and sustaining local flamenco sociability."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "soon was organizing fiestaas in his home. Many of his birthdays were celebrated with memorable juergas",
+                "target": "home fiestas and juergas",
+                "rationale": "The passage frames private home gatherings and participatory juergas as meaningful flamenco community settings."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "An introduction to flamenco dance for beginners. A clear simple step-by-step instruction",
+                "target": "beginner flamenco dance video instruction",
+                "rationale": "The advertisement explicitly mediates access to flamenco dance knowledge for beginners through instructional video."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community",
+                "pedagogy"
+            ],
+            "target": "local flamenco community participation and beginner access to flamenco dance instruction",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Obituary and advertisement are coded only where they frame community sustaining or explicit instruction, not for generic biography or sales copy."
+    },
+    {
+        "article_id": "JALEO_1987_SUMMER::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "medium",
+                "evidence_quote": "began learning guitar from his father at the age of ten. Largely self-taught, but influenced by Sabicas, Mario Escudero, Ram\u00f3n Montoya and his good friend Paco de Luc\u00eda",
+                "target": "Ren\u00e9 Heredia's guitar formation",
+                "rationale": "The passage grounds Heredia's flamenco knowledge in family learning and influential guitarist models."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "Ren\u00e9's concerts throughout the United States and Europe have won him critical acclaim as one of the foremost flamenco guitarists of today",
+                "target": "Ren\u00e9 Heredia",
+                "rationale": "The statement explicitly ranks Heredia among leading contemporary flamenco guitarists."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "he's going to see me play and be able to see what are the things that are needed to become a professional",
+                "target": "Heredia's performance/instructional video",
+                "rationale": "The passage presents mediated video access as a route for an aficionado to learn professional flamenco guitar-accompanist skills."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Ren\u00e9 Heredia's status and mediated flamenco guitar pedagogy",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article is truncated, but the visible excerpt contains sufficient evidence for the emitted codes."
+    },
+    {
+        "article_id": "JALEO_1987_SUMMER::A5",
+        "no_relevant_discourse": true,
+        "insufficient_context": true,
+        "codes": [],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "unclear",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The visible text is a short caption/ad notice and does not provide enough discourse evidence for coding."
+    },
+    {
+        "article_id": "JALEO_1987_SUMMER::A6",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Joaqu\u00edn's sound was powerful, metallic and percussive",
+                "target": "Joaqu\u00edn Amador's guitar playing",
+                "rationale": "The article explicitly evaluates Joaqu\u00edn's playing through qualitative aesthetic description."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "high",
+                "evidence_quote": "Paco de Luc\u00eda is good, not different. He is the most pure. Everything he does is flamenco.",
+                "target": "Paco de Luc\u00eda's innovative guitar style",
+                "rationale": "Joaqu\u00edn authorizes Paco de Luc\u00eda's innovation as genuinely flamenco despite its nontraditional sound."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "Once I see these new ideas, I go home and adapt the ideas to my style",
+                "target": "learning and adapting flamenco guitar ideas",
+                "rationale": "The passage frames flamenco learning as observation followed by adaptation into one's own style."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Manuela Carrasco, who is currently one of Spain's finest dancers",
+                "target": "Manuela Carrasco",
+                "rationale": "The article positions Carrasco within a hierarchy of top Spanish dancers."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "authenticity",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Joaqu\u00edn Amador, Manuela Carrasco, Paco de Luc\u00eda, and modern flamenco guitar learning",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The Paco de Luc\u00eda passage is coded as authenticity authorization rather than purity boundary-work because it legitimates innovation more than it excludes a specific improper form."
+    },
+    {
+        "article_id": "JALEO_1987_SUMMER::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "confidence": "medium",
+                "evidence_quote": "The C\u00e1tedra de Flamencolog\u00eda in Jerez has made its latest awards for achievement in flamenco. The jury is made up of Juan de la Plata...",
+                "target": "C\u00e1tedra de Flamencolog\u00eda awards",
+                "rationale": "An expert flamencology institution and named jury are presented as conferring recognized flamenco value."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "high",
+                "evidence_quote": "The awards, given in 1987, are as follows: CANTE: Naranjito de Triana BAILE: Angelita Vargas of Sevilla GUITAR: Mario Escudero of Alicante MAESTRIA (Lifelong mastery)",
+                "target": "award recipients and flamenco achievement categories",
+                "rationale": "The awards create a formal hierarchy of exemplary achievement across flamenco categories."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "TEACHING: The School of Flamenco Guitar of the Conservatorio Elemental de M\u00fasica de Jerez de la Frontera",
+                "target": "School of Flamenco Guitar at the Conservatorio Elemental de M\u00fasica de Jerez de la Frontera",
+                "rationale": "The award recognizes institutional flamenco guitar pedagogy within a conservatory setting."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "the legendary Manuel Agujetas de Jerez performs on video cassette. The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance",
+                "target": "Manuel Agujetas de Jerez",
+                "rationale": "The advertisement canonizes Agujetas through legendary, world-famous, maestro, dynasty, and historic-performance language."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "institutionally recognized flamenco achievement and Manuel Agujetas's recorded performance",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Two CRIT_03 codes are retained because one concerns institutional awards and the other canonizing promotional language around Agujetas."
+    }
+]

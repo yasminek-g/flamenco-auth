@@ -1,0 +1,271 @@
+[
+  {
+    "article_id": "JALEO_1981_02::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The \"I Semana de Estudios Flamencos\"(the First Week of Flamenco Studies) has been celebrated in Málaga. This was a good thing. With your permission, let me say that all is worthwhile when it comes to studying that incredible thing",
+        "target": "I Semana de Estudios Flamencos in Málaga",
+        "rationale": "The passage explicitly evaluates the flamenco studies week as worthwhile and valuable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "all spoke with science, knowledge and depth: Francisco Bejarano, president of the Peña Juan Breva, José and Jesús de las Cuevas... Rafael León, Ricardo Molina who knows the most",
+        "target": "lecturers and flamenco commentators at the Semana",
+        "rationale": "Named scholars and cultural figures are positioned as authoritative voices whose knowledge legitimates flamenco discussion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Ricardo Molina who knows the most... Fernando Quinones... won top honors in the \"Semana de Estudios\" for his Manual de los Cantes de Cádiz",
+        "target": "Ricardo Molina and Fernando Quiñones",
+        "rationale": "The text creates a hierarchy of expertise by singling out Molina as knowing the most and Quiñones as prize-winning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text uses elevated language such as profound and jondo, but it does not clearly make a genuineness or proper-flamenco claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The Peña Juan Breva president is named, but the passage mainly authorizes expert discourse rather than community recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Semana de Estudios Flamencos and its expert discourse on flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_02::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "All these things add up to chauvinism, that \"in group/out group\" mentality that seems to collect around every art form, especially those imported from one culture to another.",
+        "target": "elitist flamenco discourse around Jaleo and imported art forms",
+        "rationale": "The letter explicitly contests an insider/outsider boundary around who belongs or counts in flamenco culture."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I don't agree that flamenco is a strictly traditional, almost provincial art form rooted among a certain society in a particular part of the Iberian peninsula. Flamenco thrives all over the world now",
+        "target": "tradition-rooted definition of flamenco",
+        "rationale": "The writer contests the use of tradition, rootedness, and place as restrictive grounds for defining flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The editorial states \"...the true 'cabal' in flamenco will have a knowledge that is much more extensive than that required here.\"... I don't agree that name dropping is equal to knowledge of flamenco.",
+        "target": "editorial standard of cabal knowledge",
+        "rationale": "The letter challenges a critical/editorial authority claim about what kind of knowledge qualifies someone as a true flamenco insider."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The letter discusses learning from reviews and global access to flamenco, but the main discourse function is boundary contestation rather than pedagogy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase authentic fake appears in a humorous self-description about a name change, not as purity boundary-work around proper flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "exclusive, tradition-rooted definitions of flamenco authority",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The first letter provides the clearest discourse evidence; later letters are mostly anecdotal or community news."
+  },
+  {
+    "article_id": "JALEO_1981_02::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Their tone is brilliant and powerful, and their tension is perfect, well balanced. But most outstanding are the trebles which had the most perfect intonation of any that I've ever used.",
+        "target": "FLAMENCO SUPREME guitar strings",
+        "rationale": "The passage explicitly evaluates the quality of the guitar strings through praise of tone, tension, and intonation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the most perfect intonation of any that I've ever used... retain their brilliance far longer than any I've ever played",
+        "target": "FLAMENCO SUPREME guitar strings compared with other strings",
+        "rationale": "The review ranks the strings above alternatives through superlative comparison."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "During my more than three decades of concert performance I've used and endorsed many guitar strings... I offer you my most enthusiastic and indeed unsolicited endorsement",
+        "target": "Sabicas's endorsement of FLAMENCO SUPREME strings",
+        "rationale": "The review grounds its judgment in the authority of an experienced concert performer and endorser."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Tone, tension, and intonation are evaluative criteria, but the target is a product rather than a flamenco performance or style, so CRIT_01 is more precise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "FLAMENCO SUPREME guitar strings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible endorsement is sufficient for evaluation codes."
+  },
+  {
+    "article_id": "JALEO_1981_02::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Since there is no written music in flamenco, you must train your ear to hear the \"frame\" of the compás... the more one listens and absorbs, the better it is and the more you understand without counting.",
+        "target": "learning flamenco rhythm and compás",
+        "rationale": "The passage frames flamenco knowledge as acquired through ear training, listening, feeling, and embodied absorption rather than notation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "when there is no live flamenco, then good tapes and records are the way to learn what flamenco sounds are like",
+        "target": "mediated access to flamenco learning through recordings",
+        "rationale": "The passage presents recordings as a means of accessing flamenco knowledge when live transmission is unavailable."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Counting can become a crutch and hinder movement and true expression... use them to spring from and create from.",
+        "target": "flamenco dance practice and expression",
+        "rationale": "The passage defines quality in flamenco dancing through rhythmic feel, freedom, and true expression rather than mechanical counting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The origin statement about flamenco being born among peoples close to nature is broad and mythic, but it does not clearly authorize present practice through tradition or continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article gives instruction, but no specific teacher, master, school, or recognized pedagogical authority is being legitimated."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "embodied rhythmic learning in flamenco dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_02::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "This mentality seems to want to use flamenco as a stepping stone to popularity... The true artist is not going to get involved in this type of situation",
+        "target": "using flamenco for popularity rather than artistic commitment",
+        "rationale": "The passage treats public attention and popularity-seeking as a threat to serious or proper flamenco artistic practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "My opinion is that he goes out of compás... \"Mi Farruca Gitana\" is a strict dance farruca, well done except for the ragged tremolo... Luis doesn't seem as sharp technically on this record as he does on some earlier ones.",
+        "target": "Luis's guitar recording",
+        "rationale": "The passage gives explicit positive and negative judgments of individual tracks and the performer’s technical quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "he goes out of compás... ragged tremolo... metronome like regularity, more reminiscent of baile than cante flamenco... the only piece that favors the cante",
+        "target": "criteria for evaluating the guitar recording",
+        "rationale": "The review applies flamenco aesthetic criteria such as compás, tremolo technique, regularity, baile, and cante orientation to judge quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The phrase initiated aficionados suggests insider taste, but it is brief and secondary to the anti-popularity and review discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase true artist implies proper artistic conduct, but the stronger function is anti-popularity authenticity rather than a direct claim of genuine flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "serious flamenco practice and the reviewed guitar recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article contains both an essay on artistic motives and a record review; codes reflect both visible discourse functions."
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "article_id": "JALEO_1977_08::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Teresa taught then, much more than the bas dance steps, so quickly forgotten. In her enthusiasm to communicate the beauties of her flame heritage, she made use of whatever came to hat to create a deep feeling for the sevillanas",
+        "target": "Teresa's teaching of sevillanas",
+        "rationale": "The passage positions Teresa as a teacher who communicates more than steps, mediating flamenco understanding and feeling through instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Because we had no guitar music, each of the other elements of the sevillanas was emphasized in such a way that later, when I became familiar with the music, they blended together to form the complex totality of the gitano spirit.",
+        "target": "embodied and oral learning of sevillanas without guitar",
+        "rationale": "The passage frames learning as the embodied integration of rhythm, castanets, lyrics, and movement rather than as formal written instruction alone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'flamenco heritage' appears, but it is personal/cultural description rather than a clear public or collective heritage-value claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gendered scenes in sevillanas verses are described, but they do not define flamenco belonging, authority, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Teresa's mediation of sevillanas knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are based only on the visible pedagogical discussion."
+  },
+  {
+    "article_id": "JALEO_1977_08::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Here is the castanet notation for the first Sevillana. \"Rria\" (Rrēā) rolling fingers across castanet beginning with little finger",
+        "target": "castanet notation for learners",
+        "rationale": "The visible passage provides technical notation and bodily instructions that mediate access to learning sevillanas castanets."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem mentions 'long rhythms,' but this is poetic imagery, not an applied aesthetic criterion for judging flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The passage includes finger movement, but it does not clearly frame embodied/oral lineage transmission or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "technical access to sevillanas castanet practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is partly OCR-damaged, but the instructional castanet notation is still clear enough to code."
+  },
+  {
+    "article_id": "JALEO_1977_08::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The first of the two Sevillanas presented below is one of the more familiar and is often taught to beginners. The second is at the intermediate level. Some guitar nomenclature follows:",
+        "target": "sevillanas guitar instruction for beginners and intermediate learners",
+        "rationale": "The passage explicitly structures flamenco guitar material by learner level and provides nomenclature for instructional access."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as compas and strum pattern are used technically, not as criteria for evaluating quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The passage describes coordinated guitar-dance timing, but not oral, embodied, familial, or lineage-based transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "accessible learning of sevillanas guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_09::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "For the sake of comparison, the following are verses from the fandangos grandes: FANDANGOS!-- All fandangos from different areas of Andalusia are derived from one basic, simple 3/4 rhythm",
+        "target": "reader learning about fandangos forms and comparison",
+        "rationale": "The article functions as an explanatory guide, using comparison, lyrics, rhythm, mode, and accompaniment to mediate flamenco knowledge for readers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "These \"little fandangos\" are not to be confused with fandangos grandes (or naturales), which are much more deeply and seriously emotional. Fandangos de Huelva are light-hearted and festive songs",
+        "target": "distinction between fandangos de Huelva and fandangos grandes",
+        "rationale": "The passage defines flamenco forms through aesthetic criteria of emotional depth, seriousness, lightness, and festivity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article describes origins and descent, but the origin narrative is mostly explanatory and does not clearly authorize present practice through tradition."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The fiesta/theatrical contrast describes different settings, but does not clearly evaluate one as more legitimate or participatory."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "understanding and classification of fandangos",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_09::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "There are some benefits to be derived from an awareness that there are different styles of fandangos.",
+        "target": "reader awareness of regional fandangos styles",
+        "rationale": "The passage explicitly presents stylistic differentiation as knowledge readers should acquire, mediating access to detailed flamenco classification."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "at least the informed singers can usually distinguish them if they wish",
+        "target": "informed singers' ability to distinguish fandangos styles",
+        "rationale": "The passage attributes recognized knowledge and discernment to informed singers, giving community expertise authority over stylistic distinctions."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pure set of fandangos' suggests stylistic coherence, but it does not clearly exclude impure, fake, or illegitimate flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'most unusual style' are descriptive-comparative rather than strong evaluative judgment of quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "knowledgeable differentiation of regional fandangos styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

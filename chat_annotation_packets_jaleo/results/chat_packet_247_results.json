@@ -1,0 +1,265 @@
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the evening in the \"Sala Pelas\" can be termed glorious in terms of art, and melodic in terms of organization",
+        "target": "the flamenco evening in Oloron/Dioron, France",
+        "rationale": "The passage explicitly praises the artistic and organizational quality of the event."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the flamenco evening in France",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "What good taste, beloved reader, por soleé, por cantinas and por fandangos del de la Carsá!",
+        "target": "José el de la Tomasa and the concert performances",
+        "rationale": "The reviewer makes direct positive judgments about the quality of the cante and the evening."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Meme Reina danced por soleá with the most authentic stamp of the old Sevillean school, reaching the sublime limits of her art",
+        "target": "Meme Reina's baile por soleá",
+        "rationale": "The review applies aesthetic criteria—authentic stamp, old school, and sublimity—to define the performance's value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "In Oloron the public is critical, appreciates and understands. It's not in vain that Santi Romates has his numerous flamenco audience trained to distinguish the wheat from the chaff and what's pure from what's not.",
+        "target": "the Oloron flamenco audience",
+        "rationale": "The audience is presented as a knowledgeable community able to judge and distinguish legitimate flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "trained to distinguish the wheat from the chaff and what's pure from what's not",
+        "target": "pure versus impure flamenco in audience judgment",
+        "rationale": "The passage draws an explicit purity boundary around flamenco understanding, though it appears within praise of audience discernment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The audience keeps compás and there is communion between artists and recipients, but the text does not clearly contrast participatory settings with passive spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "authenticity"
+      ],
+      "target": "the Oloron performance and its discerning audience",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "now investment is made backwards, with an attempt to conquer the forum not with art, but with finances",
+        "target": "Lebrijano and Cepero's Madrid nightclub venture",
+        "rationale": "The writer criticizes a commercial/financial approach as displacing artistic conquest, policing a boundary between art and finance."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "as a guest of the Spanish Ministry of Foreign Affairs, he will give a series of recitals",
+        "target": "Rafael Riqueni's foreign recitals",
+        "rationale": "An official state institution is positioned as sponsoring or authorizing the international presentation of flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The article contrasts art with finances, but it does not explicitly frame commerce as a loss of flamenco authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The opening continuation praises the preceding night, but this article fragment is a mixed notes column and the clearest new evaluative discourse is the commercial boundary critique."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "commercial flamenco enterprise and officially sponsored flamenco guitar recital",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "I am a traditionalist at heart, a lover of tradition... because I love the roots and origins (of flamenco)",
+        "target": "Enrique Morente's flamenco innovation",
+        "rationale": "Morente grounds his authority to innovate in explicit attachment to tradition, roots, and origins."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Purity must be preserved, but sometimes things must be stirred up in order not to stagnate",
+        "target": "purity and innovation in flamenco",
+        "rationale": "The passage defines proper flamenco through preserving purity while managing the boundary around innovation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "what has been done in recent years and continues to be done and accorded the hallmark flamenco \"renovation\" has had the possibility of commercial exploitation and many times has misled the public",
+        "target": "commercially exploited flamenco renovation",
+        "rationale": "Morente critiques commercialized renovation as misleading, using critical discourse to police improper innovation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "New and unpublished things can be injected into flamenco without betraying the essence of true flamenco. If it is done with art, and talent, with sincerity and without vanity",
+        "target": "new flamenco innovations",
+        "rationale": "The passage states aesthetic criteria—art, talent, sincerity, lack of vanity—for judging whether innovation remains true flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "something which to date has not been attempted so far as we know... for the first time in history, I believe, a cantaor has joined forces and helped compose music with a classical musician and concert pianist",
+        "target": "Morente's Fantasía de Cante Jondo collaboration",
+        "rationale": "The text frames the collaboration as historically unprecedented, elevating it as a landmark experiment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'true flamenco' appears, but the stronger function is boundary work around purity and innovation, already captured by AUTH_02."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses collaboration and creative process, but not learning/access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Morente's orchestral cante jondo experiment and flamenco renovation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "one of the most interesting, anarchic, open, unpredictable and flamenco of groups, \"Pala Negra,\"",
+        "target": "Pala Negra",
+        "rationale": "The article explicitly evaluates the group with strong critical praise and characterization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "gypsies who do not adhere strictly to the canons of orthodox flamenco, for which reason they are always surrounded by controversy",
+        "target": "Raimundo and Rafael Amador / Pala Negra",
+        "rationale": "The passage identifies orthodox canons as a boundary and frames the group's deviation from them as controversial."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Raimundo and Rafael Amador, gypsies of Sevilla... their gypsy roots have been influenced by this music",
+        "target": "Pala Negra's flamenco identity and musical authority",
+        "rationale": "Gypsy/Seville identity and roots are used to frame the group's belonging and authority within flamenco despite hybrid influences."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Their guitar improvisations have attained an unsurpassable level by mixing gypsy \"hondura\" with rock phrasing.",
+        "target": "Pala Negra's guitar improvisations",
+        "rationale": "The passage applies aesthetic criteria—improvisation, hondura, and rock phrasing—to judge the quality of the hybrid style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Gypsy roots are mentioned, but the stronger visible function is identity framing and critical evaluation rather than tradition/continuity authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Pala Negra's hybrid flamenco-rock practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

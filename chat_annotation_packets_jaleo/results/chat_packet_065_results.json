@@ -1,0 +1,211 @@
+[
+  {
+    "article_id": "JALEO_1980_01::A25",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The listings mention dance and guitar instruction, academies, books, and lessons, but these are routine notices without evaluative learning/access or authority stakes."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The title and meeting notice mention juergas and members, but the text is administrative/event-listing material rather than a value-bearing participatory setting claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Directory-style listings and notices only; no clear discourse function beyond practical information."
+  },
+  {
+    "article_id": "JALEO_1980_02::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In spite of all this ... it was a good concert. One eventually ignored the rudeness and noise going on, and enjoyed the man's music.",
+        "target": "Paco de Lucia's concert in Arles",
+        "rationale": "The passage explicitly evaluates the concert positively despite disruptive conditions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "He played, instead, much more deliberate and thought-out phrases, improvising a great deal, and his technique made it clear and spacious.",
+        "target": "Paco de Lucia's guitar performance",
+        "rationale": "The review applies aesthetic criteria such as deliberateness, improvisation, technique, clarity, and spaciousness to assess the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The reference to French gypsies and supposed relationship to Paco is descriptive and anecdotal, not a stable identity-based claim about flamenco authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "Paco de Lucia's concert and guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Audience disruption is described negatively, but the main flamenco discourse is the positive critical evaluation of the performance."
+  },
+  {
+    "article_id": "JALEO_1980_02::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the major exponent of a dance art that was ultra-Spanish. Pastora Imperio ... was the most illustrious institution in the history of Spanish folklore.",
+        "target": "Pastora Imperio",
+        "rationale": "The obituary canonizes Pastora Imperio through superlative status and positions her as a major historical exemplar."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "All that remains now of that brilliant bailaora is the memory, some old movies, and the personification of her dance in some paintings",
+        "target": "Pastora Imperio's dance artistry",
+        "rationale": "The passage offers explicit praise of her artistry and memorializes her dance as brilliant."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The obituary invokes memory and Spanish folklore, but it does not clearly frame flamenco as public heritage or patrimony."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'ultra-Spanish' marks national identity, but it functions mainly as evaluative canonization rather than an identity-based boundary of belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Pastora Imperio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Canon/hierarchy is stronger than heritage because the visible text chiefly elevates Pastora Imperio's status."
+  },
+  {
+    "article_id": "JALEO_1980_02::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Juana began commuting to Oceanside, California, to study with Eduardo Cansino ... Juana learned her first dance to guitar accompaniment (recorded), a tan-guillo, from Eduardo's brother Antonio, who taught some master classes at the Ellicott studio.",
+        "target": "Juana de Alva's Spanish dance training",
+        "rationale": "The passage frames her learning through formal classes, master classes, and travel for more intensive instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Eduardo ... was one of a large family of performers who migrated from Spain in the early part of this century and spread their extensive knowledge of Spanish dance throughout the Americas.",
+        "target": "Cansino family transmission of Spanish dance knowledge",
+        "rationale": "The passage links dance knowledge to a performing family that transmits and disseminates Spanish dance across generations and geographies."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "San Diegans can thank Juana de Alva for much of the flamenco activity we have experienced during the last 2½ years ... she has held all the pieces together and continues to do so.",
+        "target": "Juana de Alva's role in the San Diego flamenco community",
+        "rationale": "The passage grants Juana community-sustaining authority by crediting her with holding together local flamenco activity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Family appears in the training biography, but the identity category itself is not the main basis of belonging or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "Juana de Alva and her dance/community role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible windows contain sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1980_02::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I plan to share this information in a series of articles ... Why bother to distinguish the different types? I can think of several reasons: Naming the melodies provides a means of communication.",
+        "target": "knowledge of fandangos de Huelva styles",
+        "rationale": "The author explicitly frames the article series as a medium for teaching and improving access to specialized flamenco knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "These distinct melodies and characteristic letras have been lumped together and sung without regard for their differences until most aficionados have ceased to be aware of the styles and their origins ... many melodies can still be identified by the town of their origin or, in a few cases, by the name of their creator.",
+        "target": "fandangos de Huelva melodies and styles",
+        "rationale": "The passage treats origins, source towns, and creators as meaningful for recovering and distinguishing present flamenco styles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "There certainly are people who know much more about this than I and there may be books on the subject, so I hope readers will add their input.",
+        "target": "collective knowledge about fandangos de Huelva",
+        "rationale": "The author positions knowledgeable people, books, and reader input as sources of authority for correcting and expanding flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as having lost awareness, but they are not clearly presented as authorities who recognize or judge flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The author corrects confusion about styles, but the passage is more pedagogical than expert criticism policing a boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "tradition"],
+      "target": "distinguishing fandangos de Huelva styles by origin and melody",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt clearly supports teaching/mediation and origin-based distinction."
+  }
+]

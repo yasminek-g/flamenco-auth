@@ -1,0 +1,286 @@
+[
+  {
+    "article_id": "JALEO_1984_05::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Antonio Mirena Has Not Died, Flamenco Has Not Died. Flamenco will live in the soul of those",
+        "target": "Antonio Mairena and flamenco as a continuing living art",
+        "rationale": "The passage turns Mairena's memory into a claim of flamenco survival and continuity across living souls."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "I FEEL GITANO! I feel gitano in the broadest sense of the word; I feel united with an history which makes me (feel) responsible.",
+        "target": "gitano identity as a mode of belonging to flamenco history",
+        "rationale": "The speaker uses gitano identity to frame belonging, historical responsibility, and affective identification with flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "many thanks to all those, who in one way or another, feel united in spirit, to the philosophy of the flamenco art",
+        "target": "the community united around flamenco art",
+        "rationale": "The passage constructs a shared community of people spiritually united around flamenco and its continuation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The text is memorial and continuity-oriented, but it does not clearly frame flamenco as public heritage, safeguarding, or collective heritage management."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community"
+      ],
+      "target": "Antonio Mairena, flamenco survival, and a flamenco community of belonging",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only the visible memorial/manifesto language, not the title metadata."
+  },
+  {
+    "article_id": "JALEO_1984_05::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Marelu is rather a limited cantaora... She is a good singer of fandangos. But, in any case, we shouldn't expect too much interpretive wealth",
+        "target": "Marelu's recorded cante",
+        "rationale": "The review directly evaluates Marelu's strengths and limitations as a singer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "throwing in a lot of gracia, a good sense of compás and plenty of vivaciousness",
+        "target": "Marelu's performance of jaleos and tangos extremeños",
+        "rationale": "The reviewer applies flamenco aesthetic criteria such as gracia and compás to assess performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Manuel Cano and Serranito are the star figures in another interesting reissue... Sabicas gives us a demonstration of his inimitable art",
+        "target": "Manuel Cano, Serranito, and Sabicas within flamenco guitar recordings",
+        "rationale": "The passage elevates certain guitarists as star figures and marks Sabicas's art as exemplary."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The statement that Extremadura is outside Andalucía is geographically and stylistically relevant, but it does not clearly draw a social insider/outsider boundary around authority or belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'gypsy from Extremadura' identifies Marelu, but the visible text mainly uses it descriptively rather than making identity the basis of authority or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Marelu's cante and selected flamenco guitar recordings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible review window provides enough evaluative evidence for record-review coding."
+  },
+  {
+    "article_id": "JALEO_1984_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "flamencn, with its built-in emotional content coming from its long, deep roots of tradition and its personal nature",
+        "target": "flamenco choreography",
+        "rationale": "The passage grounds the value and demands of flamenco choreography in deep roots, tradition, and personal continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "sensitivity, good judgment, musicality, staging, movement construction are some qualities that should be taken into consideration",
+        "target": "good flamenco choreography",
+        "rationale": "The author defines criteria by which flamenco choreography should be judged and made."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "some dancers take the easy way nut and fall into the rut of trying to get away with mediocre choreographies",
+        "target": "dancers using mediocre choreographies",
+        "rationale": "The passage explicitly criticizes weak choreographic practice and contrasts it with good choreography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'believable, real and true' is authenticity-adjacent, but the clearer discourse function is tradition/roots rather than an explicit claim of genuine flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The warning against copying is relevant to transmission, but the passage primarily evaluates choreographic quality rather than thematizing learning access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco choreography and dancers' choreographic practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "OCR damage is present but not severe enough to prevent confident coding of the main argument."
+  },
+  {
+    "article_id": "JALEO_1984_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "a flamenco of continuity that will continue and inspire; that is a search worthwhile",
+        "target": "flamenco dance/choreography",
+        "rationale": "The passage values choreography through continuity and its capacity to keep flamenco inspiring."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Great choreography and great dance when blended with sensitivity, understanding and inspiration can make movement an art.",
+        "target": "great flamenco choreography and dance",
+        "rationale": "The passage names aesthetic criteria—sensitivity, understanding, inspiration—that make dance into art."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Practice alone does not make perfect. A person merely continues to practice mistakes unless corrective action is taken. The key lies in advance preparation for both left and right hands.",
+        "target": "guitar technique instruction",
+        "rationale": "The guitar technique section authorizes a corrective method for learning and improving flamenco-related guitar practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The author mentions knowledge acquired by word-of-mouth, but the visible passage does not make oral/embodied lineage the basis of authority strongly enough."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The course notice and contact details show access to instruction, but they are mostly administrative and promotional rather than evaluative institutional pedagogy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The retrieval hint points to 'understanding,' but the visible text does not grant authority to an afición, peña, or community actor."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco choreography and guitar technique knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article contains distinct choreography and guitar-technique sections; only visible instructional/evaluative claims were coded."
+  },
+  {
+    "article_id": "JALEO_1984_05::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Its emotional strength derives from its profound authenticity and from the constant infusion of inspiration and improvisation",
+        "target": "Mario Maya's Ay! Jondo",
+        "rationale": "The passage explicitly authorizes the work by attributing profound authenticity to its emotional force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The power, spontaneity, tenacious courage and sheer dramatic impact of this work has proved spellbinding to audiences worldwide.",
+        "target": "Mario Maya's Ay! Jondo",
+        "rationale": "The program note evaluates the work through explicit praise of its dramatic and emotional impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Paths of Flamenco, which will reveal the very best of this singular and fascinating art firm",
+        "target": "Ay! Jondo and the Paths of Flamenco series",
+        "rationale": "The passage ranks the work/series within a hierarchy of the very best flamenco art."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "It is a musical and choreographic setting of the persecution of the gypsy people, and by analogy it raises the question of all other ethnic minorities.",
+        "target": "Gypsy people and other ethnic minorities represented through flamenco theatre",
+        "rationale": "The text frames the performance through ethnic identity, persecution, and minority representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The historical decrees and persecution narrative suggest memory-work, but the visible text does not explicitly frame the performance as heritage, safeguarding, or community heritage practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The historical decrees provide historical depth, but they authorize the drama's political theme rather than grounding flamenco value in tradition or continuity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "community"
+      ],
+      "target": "Ay! Jondo as authentic, critically valued flamenco theatre representing Gypsy persecution",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible program text gives enough evidence for authenticity, evaluation, canonizing praise, and identity framing."
+  }
+]

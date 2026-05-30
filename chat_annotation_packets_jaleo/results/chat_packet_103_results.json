@@ -1,0 +1,293 @@
+[
+  {
+    "article_id": "JALEO_1981_04::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Conja began her study of flamenco dance at the age of ten; her first teachers were Teo Morca and Luisa Triana in Los Angeles. A few years later, she traveled to Spain where she studied with Tomás de Madrid, Manolo Marín, and Ciro.",
+        "target": "Conja Abdessalam's flamenco training",
+        "rationale": "The passage legitimates Conja's flamenco formation through named teachers and study in Los Angeles and Spain."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Each cantaor must have created a form based on a tradition common to the original nucleus of flamenco.",
+        "target": "personal styles of soleares and siguiriyas",
+        "rationale": "The passage grounds individual cante forms in a common original flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The word 'aficionados' appears only in a local notice about viewing a television performance, without granting aficionados authority to judge or sustain flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Self-teaching and working with artists are mentioned, but the visible excerpt does not clearly frame embodied/oral lineage transmission as an authorizing mode."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Conja's Egyptian father and birthplace are biographical details; they do not clearly shape flamenco belonging or authority in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Conja's training and the traditional basis of personal cante styles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated and includes unrelated notices; codes are limited to visible training and tradition claims."
+  },
+  {
+    "article_id": "JALEO_1981_04::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The juerga was definitely alegre and warm in the intimate surroundings. Many of the regulars were there plus some long time abs absentees.",
+        "target": "February juerga community setting",
+        "rationale": "The passage values the juerga as an intimate participatory gathering rather than a detached performance event."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Neither had had much exposure to flamenco until joining Jaleistas but had always enjoyed \"la musica alegre y la musica sentimental.\"",
+        "target": "Jaleistas as a flamenco community",
+        "rationale": "The passage positions membership in Jaleistas as the social context through which the hosts became involved in flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The hope that Charles Blankenship will share his flamenco experiences suggests informal knowledge exchange, but it is too weak and prospective to code."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The juerga is described as 'alegre and warm,' but this evaluates atmosphere rather than a flamenco artist, performance, recording, style, or event in critical terms."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas juerga participation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible article is primarily community reporting; intimate juerga participation is the clearest discourse function."
+  },
+  {
+    "article_id": "JALEO_1981_04::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "This month's juerga will be hosted by Cuadro B in the home of Larry and Ana Gilbert.",
+        "target": "April juerga hosted in a private home",
+        "rationale": "The juerga is framed as a home-based participatory flamenco setting organized by a community cuadro."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "This month the theme will be TANGOS. So listen to your records, brush up on your tangos letras, steps and falcetas and palmas and come prepared to share.",
+        "target": "juerga participants preparing tangos",
+        "rationale": "The passage frames the juerga as a participatory learning/access setting where members prepare repertoire and share knowledge."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Both are active in La Casa De España and Jaleistas. Larry is studying Spanish and flamenco also. We thank Ana and Larry for offering their home.",
+        "target": "Larry and Ana Gilbert within local flamenco/Spanish cultural associations",
+        "rationale": "The passage grounds the hosts' flamenco participation in community membership and contribution."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Ana and Larry are studying flamenco/Spanish, but no teacher, method, or pedagogical authority is identified."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "Guests are restricted by reservation and membership/donation categories, but this is administrative access control rather than a social/epistemic boundary around flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "local juerga participation and shared tangos preparation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative event details are not coded except where they support community or participatory learning discourse."
+  },
+  {
+    "article_id": "JALEO_1981_04::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "REMATE (EL) - the closing of a cante by switching to a different, but related, cante... ROMANCE(el) - a story sung in flamenco song form.",
+        "target": "flamenco terminology and practice vocabulary",
+        "rationale": "The dictionary format mediates access to flamenco knowledge by defining specialized terms and practice contexts."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "SEVILLA - the famous flamenco city in the heart of flamenco country; there is still a considerable amount of flamenco activity and flamenco is still a way of life in some of the surrounding pueblos",
+        "target": "Sevilla and surrounding pueblos as flamenco centers",
+        "rationale": "The passage grounds flamenco value in place-based continuity, describing Sevilla as the heart of flamenco country where flamenco remains a way of life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Sacromonte is described as mostly deserted except for tourist flamenco shows, but the passage does not explicitly frame tourism as weakening authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The old gypsy quarter of Granada is mentioned descriptively, but no identity group is clearly used to authorize belonging or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical terms such as remate, salida, son, and taconeo are defined, but not used as aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "reader access to flamenco vocabulary and place-based flamenco continuity",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Dictionary entries are coded only where they teach terminology or make a place-based continuity claim."
+  },
+  {
+    "article_id": "JALEO_1981_05::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "She has been acclaimed by critics and aficionados as the foremost female guitarist in the world.",
+        "target": "Sarita Heredia",
+        "rationale": "The passage canonizes Sarita through superlative ranking and recognition by critics and aficionados."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "when I was six years old, I used to watch my father day after day play the guitar... From that day on he worked with me day after day.",
+        "target": "Sarita Heredia's guitar learning from her father",
+        "rationale": "Sarita frames her flamenco knowledge as transmitted through close familial observation, imitation, and daily work with her father."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "The gypsies accepted me without prejudice. They were very proud of me, being that I was gypsy.",
+        "target": "Sarita Heredia's acceptance as a gypsy female guitarist",
+        "rationale": "The passage uses ethnic/community identity to explain belonging and acceptance within flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "Afterwards, he said it had been a long time since he heard anything so authentic and gypsy.",
+        "target": "Sarita Heredia's guitar playing",
+        "rationale": "Segovia's reported judgment explicitly attributes authenticity and gypsy quality to Sarita's flamenco playing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "A lot of flamenco guitarists here wouldn't accept me. They felt I had no business playing the guitar!",
+        "target": "gendered acceptance of Sarita as a flamenco guitarist in America",
+        "rationale": "The passage draws an insider/outsider boundary around who is accepted as a legitimate flamenco guitarist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Once after my performance in the Villa Rosa in Madrid, Estampio stood up and announced that I played more gypsy than any man or woman of that time!",
+        "target": "Sarita Heredia's performance authority",
+        "rationale": "The passage invokes Estampio's public evaluative authority to authorize Sarita's playing and its gypsy quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Sarita mentions some artists having a 'commercial sound,' but she explicitly says it is neither good nor bad, so there is no anti-commercial authenticity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is clear praise throughout, but the stronger and more specific emitted codes capture ranking, authority, authenticity, and boundary work within the six-code limit."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Her father encouraged and worked with her, but the stronger evidence concerns embodied/familial transmission rather than formal pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community",
+        "authenticity"
+      ],
+      "target": "Sarita Heredia's legitimacy as a gypsy female flamenco guitarist",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Six codes are justified because distinct spans support ranking, lineage transmission, identity belonging, authenticity, exclusion, and expert/insider authorization."
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "article_id": "JALEO_1990_04::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Rosa Montoya is one of the finest and most dedicated teachers... Drawing from an extensive life in flamenco... she instructs students in baile and cante.",
+        "target": "Rosa Montoya's flamenco teaching",
+        "rationale": "The passage legitimates Montoya as an authoritative teacher through dedication, experience, and instruction in baile and cante."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "The dancers whole body is being moved, shaped and accented by the interpretation of the cante and guitar... the dancer, are also singing within... the feeling and soul of the cante.",
+        "target": "embodied flamenco dance knowledge",
+        "rationale": "Flamenco knowledge is framed as bodily and internalized through sensitivity to cante and guitar rather than only through steps."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "Studying in Rosa's class in not merely the learning of technique. One also gains a deeper understanding of the feeling behind the art of flamenco.",
+        "target": "flamenco learning and performance quality",
+        "rationale": "The text defines flamenco value through depth of feeling beyond technique, making feeling an aesthetic criterion."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of Montoya as a fine teacher overlaps with PED_01 and does not need a separate general evaluation code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Rosa Montoya's pedagogy and embodied flamenco understanding",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible pedagogical and aesthetic claims are sufficient for coding."
+  },
+  {
+    "article_id": "JALEO_1990_04::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miss Rioja typically displays an admirable command and virtuosity of the feet and a mesmerizing control of the upper body",
+        "target": "Pilar Rioja's dancing",
+        "rationale": "The passage explicitly praises Rioja's technique, command, virtuosity, and expressiveness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "she elevated Spanish dance to a great art form... proved that Spanish dance had class and elegance. And she imbued it with a sense of history.",
+        "target": "La Argentina as a canonical model for Spanish dance",
+        "rationale": "La Argentina is positioned as an exemplary figure who elevated and historicized Spanish dance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "there is no academy for it, such as exists in classical ballet... no school that trains the Spanish dancer in its many techniques and disciplines — in its history. There is simply no cultural perspective.",
+        "target": "institutional training for Spanish dance",
+        "rationale": "The passage evaluates the lack of academies and schools as a structural problem for transmitting Spanish dance techniques and history."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Because of that, Spanish dancing has often been vulgarized, and the art has fallen into banalities. My hope is to correct this false impression.",
+        "target": "vulgarized or banal Spanish dance",
+        "rationale": "Rioja uses critical authority to police a boundary between serious Spanish dance and vulgarized or banal impressions of it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text criticizes vulgarization, but the boundary is framed as Spanish dance criticism rather than a clear proper/improper flamenco purity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Pilar Rioja, La Argentina, and serious Spanish dance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1990_04::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "To witness the phenomenon of a performance by the La Conja is to experience the soul of Spain itself.",
+        "target": "La Conja's performance",
+        "rationale": "The quoted endorsement authorizes La Conja's performance by presenting it as an encounter with Spain's cultural essence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "At sixteen, La Conja emerged as a flamenco artist of ability and fire.",
+        "target": "La Conja as flamenco artist",
+        "rationale": "The text evaluates La Conja's artistry through explicit praise of ability and fire."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "She commuted from America to Spain enhancing and refining her art with Mario Maya other teachers... returning to Spain to instruct at the renowned Amor de Dios studio in Madrid.",
+        "target": "La Conja's transnational flamenco learning and teaching",
+        "rationale": "The passage frames flamenco knowledge as acquired and transmitted through transnational study, recognized teachers, and instruction at a Madrid studio."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "La Conja was the only America chosen to join an all-Spanish troupe that performed throughout Japan.",
+        "target": "La Conja's acceptance into a Spanish troupe",
+        "rationale": "The text draws a national outsider/insider boundary and uses her selection into an all-Spanish troupe to legitimate her status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Nationality is important in the all-Spanish troupe claim, but COMM_01 more precisely captures the insider/outsider boundary at work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "La Conja's flamenco legitimacy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1990_04::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Some legends live on, however. While much on New York's theater history has vanished... Fazil's has survived, becoming, in the process, a part of the city's theater lore.",
+        "target": "Fazil's Dance Center",
+        "rationale": "The passage frames Fazil's as a surviving site of dance memory and local cultural lore."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "There is riffing of another kind on Fridays and Saturdays... accommodates Middle Eastern dancers and their families and protégés, and, occasionally, tap and flamenco get-togethers.",
+        "target": "Fazil's participatory dance community",
+        "rationale": "The studio is valued as a social and participatory setting for dance communities rather than merely a neutral venue."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "They're depressing... They're so clean... Everyone is there in their dancer designer togs. This is not serious, folks... So many rules and regulations... Their guts are lacking.",
+        "target": "sleek newer dance studios",
+        "rationale": "Expert participant voices critique modern studios and draw a boundary between serious embodied practice and sanitized, rule-bound studio culture."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The contrast with modern studios suggests intimacy and seriousness, but it is not explicitly tied to flamenco authenticity or anti-commercial authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "heritage",
+        "community",
+        "criticism"
+      ],
+      "target": "Fazil's Dance Center versus newer studios",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1990_04::A20",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This work, without doubt the most extensive of its type ever written... The Dictionario Enciclopédico represents the most modern, complete and objective compilation",
+        "target": "Diccionario Enciclopédico Ilustrado del Flamenco",
+        "rationale": "The reviewer explicitly evaluates the encyclopedia as unusually extensive, modern, complete, and objective."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "brief biographies of more than 5,000 individuals... their length proportional to the authors' opinion of the renown of each individual",
+        "target": "the encyclopedia's biographical organization of flamenco figures",
+        "rationale": "The review describes a hierarchy of renown built into the encyclopedia's proportional biographical treatment."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "In these pages the famous, the gitano, the foreigner, the experimenter, all are given their due",
+        "target": "identity and status groups represented in the encyclopedia",
+        "rationale": "The passage frames inclusion and representation through identity/status categories that organize who belongs in flamenco memory."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Most striking is the wealth of photographs, many never before published... compilation of the lives of those who made and nurtured flamenco.",
+        "target": "documentation of flamenco lives and images",
+        "rationale": "The passage values the book as preserving and transmitting memory of people who made and nurtured flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "References to flamencologists and commentary appear, but the visible text mainly evaluates the book rather than authorizing a specific expert judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "community",
+        "heritage"
+      ],
+      "target": "the reviewed flamenco reference work and its representation of flamenco figures",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible book-review section contains sufficient evaluative and preservation discourse."
+  }
+]

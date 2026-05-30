@@ -1,0 +1,243 @@
+[
+  {
+    "article_id": "JALEO_1981_08::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Morón is another of the undisputed cradles of the cante.",
+        "target": "Morón and its place in flamenco history",
+        "rationale": "The passage authorizes Morón through origin language, presenting the town as a rooted source of cante value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "The ancient traditional survivors through gypsy families, the subterranean transmission of styles, the deep ritual of some forms of expression that rarely left their racial borders",
+        "target": "gypsy family transmission of flamenco styles",
+        "rationale": "Flamenco knowledge is framed as surviving through family-based, subterranean, intergenerational transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Silverio was the first to try to put flamenco within reach of the public, liberating it, in part, from its legendary minority beginnings.",
+        "target": "Silverio Franconetti's public mediation of flamenco",
+        "rationale": "The text contrasts minority/private origins with public accessibility and treats that shift as historically meaningful."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Andorrano expressed his bulerías in an artificial and bothersome manner, as if adapted to some dull incitements of modern rhythms.",
+        "target": "Andorrano's bulerías and modern rhythmic adaptation",
+        "rationale": "The passage draws a boundary against an artificial, modernized style and later contrasts it with a true and intimate gypsy style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The passage clearly evaluates individual singers, but the main boundary work is already captured through AUTH_02 and the packet is kept conservative."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The reference to what can or cannot figure in the Archivo suggests critical authority, but the visible excerpt does not provide enough context to code this separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "community",
+        "pedagogy"
+      ],
+      "target": "Morón's flamenco lineage, Silverio's public contribution, and later Morón performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible text is sufficient for these codes."
+  },
+  {
+    "article_id": "JALEO_1981_09::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "She began to study with María Benítez, an inspiration as a first teacher--she calls it out of you",
+        "target": "María Benítez as Tamara Spagnola's teacher",
+        "rationale": "The passage legitimates flamenco learning through a named teacher who is credited with drawing out the dancer's ability."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "she suddenly bursts out with a driving compás that is at once inventive and unerring",
+        "target": "Tamara Spagnola's dancing",
+        "rationale": "Compás, inventiveness, and correctness are applied as criteria for evaluating the dancer's flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Támara's dance has an authority that comes from inside.",
+        "target": "Tamara Spagnola's dance",
+        "rationale": "The article explicitly praises and evaluates her dance as internally authoritative."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The word heritage refers to personal Mediterranean ancestry and appearance, not public cultural heritage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Family and listening are mentioned, but the strongest learning claim is teacher-based rather than lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Tamara Spagnola's flamenco dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the picture it gives of flamenco in North America is truly distorted",
+        "target": "the proposed North American flamenco directory",
+        "rationale": "The editorial explicitly evaluates the directory's representational quality as distorted."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "While the real flamenco centers -- New York, Texas and Los Angeles, are barely represented.",
+        "target": "North American flamenco centers",
+        "rationale": "The passage draws a boundary between apparent local hotbeds and real flamenco centers, shaping geographic belonging and recognition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Performers, serious students, companies, and subscribers are mentioned, but they are not clearly granted authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "representation of flamenco communities in North America",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I am glad you can see your way to write such an informative and enjoyable \"newsletter\".",
+        "target": "Jaleo as a mediator of flamenco knowledge",
+        "rationale": "The letter frames the periodical as providing access to flamenco knowledge for a geographically isolated reader."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Calling Jaleo 'my juerga' suggests affective community, but it does not clearly authorize a community's judgment or insider authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Jaleo's role in transmitting flamenco knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Her artistry was supreme and captivatingly gay, so that her audience enjoyed every portion of the varied dances.",
+        "target": "Gisela's concert performance",
+        "rationale": "The quoted review explicitly praises the quality and audience effect of Gisela's dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Here is what one reviewer said of a past \"Gisela\" concert",
+        "target": "review discourse around Gisela's flamenco concert",
+        "rationale": "The article uses a reviewer's judgment as an authorizing critical voice for the concert's value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article lists Gisela's teachers and institutions, but this is biographical training information without a clear pedagogical authority claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review mentions artistry, voice, expressive heels, and musical spirit, but these are folded into broad critical praise rather than a distinct criteria-setting discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Gisela and Her Flamenco Fiesta",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "JALEO_1981_09::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "These are important questions to ask when choreographing.",
+        "target": "flamenco dance choreography",
+        "rationale": "The article directly mediates choreographic knowledge for dancers by explaining how to think about technique, compás, line, and audience perception."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Does the dance \"say something\" in choreographic balance of technique, movement, feeling, emotion, etc., or is it a string of steps just bolted together because they fit the compás",
+        "target": "quality criteria for flamenco dance choreography",
+        "rationale": "The passage defines good flamenco dance through aesthetic criteria including compás, technique, movement, feeling, emotion, and choreographic coherence."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "not just a public looking from a detached distance, but performer and audience becoming as one in a beautiful art experience.",
+        "target": "performer-audience relation in flamenco dance",
+        "rationale": "The passage contrasts detached spectatorship with an integrated public-performance exchange and treats the relation as central to performance value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The article values performer-audience exchange, but it does not clearly frame intimacy or publicness as authenticity or loss of authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco dance choreography and audience exchange",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "One does not know if she carries off the dance or if the dance carries her off.",
+        "target": "Antonita Singla's dancing",
+        "rationale": "The passage evaluates the dancer's performance as possessing an overwhelming expressive force, though the judgment is literary rather than formal review language."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy identity and family hardship are foregrounded, but the excerpt does not clearly make identity the basis of flamenco authority or belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Taconeo, rasgueo, and staged stillness are described, but they are not explicitly developed as aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonita Singla's dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Unfortunately, I cannot recommend that you buy it.",
+        "target": "Paco de Lucía's album Solo Quiero Caminar",
+        "rationale": "The review makes an explicit negative judgment on the album's value for flamenco listeners."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "he has also debased flamenco by representing that this new evolution of his is flamenco or a reasonable extension thereof.",
+        "target": "Paco de Lucía's jazz-influenced new material",
+        "rationale": "The passage excludes the album's new evolution from legitimate flamenco by claiming it debases flamenco while falsely presenting itself as flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "This new material preserves the compás and rhythms of the toques while totally destroying all of their other traditional aspects.",
+        "target": "Paco de Lucía's hybridized flamenco guitar style",
+        "rationale": "The reviewer uses critical discourse to police the boundary between traditional flamenco and a jazz-influenced hybrid judged destructive."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás, rhythm, and traditional aspects are invoked as criteria, but they are already serving the stronger boundary critique coded as CRIT_04."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional aspects are valued, but the main discourse function is purity boundary work rather than continuity or roots."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "tradition"
+      ],
+      "target": "Paco de Lucía's Solo Quiero Caminar and its hybrid style",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Morca can do 20, a feat which will ultimately qualify him for the Guinness Book of World Records.",
+        "target": "Teo Morca's flamenco footwork speed",
+        "rationale": "The passage constructs a measurable hierarchy around flamenco footwork speed by comparing Morca to a prior world record."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Fast footwork is emphasized as technique, but the article mainly frames it as a record rather than a broader aesthetic criterion for flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The workshop and student jam session mention public access, but the visible text presents them as event information rather than meaningful pedagogy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga and informal social session are mentioned, but there is no clear contrast with spectatorship or claim about participatory value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Teo Morca's flamenco footwork speed",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_09::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was indeed one of the most soul-stirring performances I have ever heard.",
+        "target": "Ronald Radford's flamenco guitar performance",
+        "rationale": "The review explicitly praises the performance's quality and emotional effect."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "With flawless technique and a warm and spontaneous commentary, Radford led his audience on a magic carpet tour of Spain.",
+        "target": "Ronald Radford's performance qualities",
+        "rationale": "Technique, commentary, spontaneity, and emotional transport are used as criteria for the success of the flamenco performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "his commentary provided a necessary framework upon which the listener could listen, enjoy and understand what this haunting and compelling music has to say.",
+        "target": "Radford's explanatory concert commentary",
+        "rationale": "The passage frames the performer's commentary as a mediating tool that gives unfamiliar audiences access to flamenco understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The reviews describe intimacy between performer and audience, but the strongest functions are critical praise and pedagogical mediation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text notes acceptance of a non-Spaniard performer, but it does not strongly contrast insiders and outsiders as an authority boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Multiple reviews authorize Radford's value, but no single critic or expert authority is foregrounded strongly enough beyond ordinary review praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ronald Radford as a concert flamenco guitarist",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

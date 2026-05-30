@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "JALEO_1991_07::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'Authentic Flamenco Skirts' is product marketing for clothing, not a discourse claim about authentic flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Quality language such as 'the very best' and 'finest quality fabric' evaluates merchandise rather than flamenco artistry or practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement copy; no clear flamenco discourse function beyond selling skirts."
+  },
+  {
+    "article_id": "JALEO_1991_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "This talented artist is fast becoming known as one of the finest flamenco dancers in the United States.",
+        "target": "Christina Vargas",
+        "rationale": "The passage ranks Vargas within a national hierarchy of flamenco dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This was a great festival, demonstrating the growing universal appeal of the art of flamenco in this country, and especially in New Mexico.",
+        "target": "the festival and flamenco in New Mexico",
+        "rationale": "The passage explicitly evaluates the festival positively and links it to flamenco's broader appeal."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Yaelisa's excellent \"Solea\"... was a superb example of her creative footwork, impeccable timing, and distinctfully cultivated gorgeous postures.",
+        "target": "Yaelisa's Solea",
+        "rationale": "The review applies aesthetic criteria such as footwork, timing, and posture to judge flamenco performance quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The mention of a residency 'as instructors and performers' is scheduling information and does not clearly authorize a teaching method or pedagogical authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The reference to fusion and cross-over influences describes stylistic mixture, not learning access or institutional pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Carmona Flamenco, Christina Vargas, the New Mexico festival, Yaelisa, and Roberto Amaral's series",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article combines artist promotion and performance review; codes are limited to explicit evaluative/ranking discourse."
+  },
+  {
+    "article_id": "JALEO_1991_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "To learn flamenco you have to listen to it! Access to the world of flamenco awaits you in four volumes that review most Spanish recordings released 1970-1990.",
+        "target": "Modern Flamenco Records catalogues and recordings",
+        "rationale": "The passage frames recordings and catalogues as a medium of access to flamenco knowledge for learners and teachers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Listening is named as necessary for learning, but the ad does not clearly frame embodied/oral lineage transmission or situated apprenticeship."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The title 'Living Flamenco Anthology' is suggestive, but the visible copy does not develop a safeguarding or living-heritage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "recordings as learning access to flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although promotional, the copy makes an explicit pedagogical access claim."
+  },
+  {
+    "article_id": "JALEO_1991_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Podrán participar personas de cualquier nacionalidad, que posean un conocimiento medio de la guitarra flamenca.",
+        "target": "III Seminario Internacional de Guitarra Flamenca",
+        "rationale": "The seminar frames institutional flamenco guitar learning as internationally accessible while requiring prior knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Al finalizar el Seminario se entregarán certificados acreditativos a todos los alumnos que hayan participado en el mismo",
+        "target": "seminar participants and the Fundación Andaluza de Flamenco",
+        "rationale": "The certificate mechanism positions the seminar institution as authorized to accredit flamenco guitar study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Band leader and renowned guitarist, Diego Cortes, has played with Paco de Lucia, Santana and John McLaughlin and is considered a pioneer in the use of electric flamenco guitar.",
+        "target": "Diego Cortes",
+        "rationale": "The passage elevates Cortes through renowned status, association with major artists, and pioneer designation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'traditional flamenco roots with contemporary dance music' is promotional genre description and does not clearly use tradition to authorize proper flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The statement that Jaleo 'involves the audience' describes spectacle participation but does not contrast participatory flamenco with detached public spectatorship."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Junta and Fundación appear in administrative seminar information, but the visible text does not explicitly frame flamenco as heritage under institutional recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "the guitar seminar, its institutional accreditation, and Diego Cortes's flamenco status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse is institutional learning/access; later music-promotion copy is coded only where it clearly canonizes an artist."
+  },
+  {
+    "article_id": "JALEO_1991_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "public gypsy song and dance tended to reflect a compromise with requirements of the payo community",
+        "target": "public gypsy song and dance in relation to the payo community",
+        "rationale": "The passage draws an insider/outsider boundary between gypsy practice and the demands of the non-gypsy community."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "cante gitano was being developed in the privacy of the gitanerias",
+        "target": "cante gitano in the gitanerias",
+        "rationale": "The private gitaneria setting is presented as socially meaningful for the formation of cante gitano, contrasted with public compromise."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco of the gitanerias epoch was formative, secretive, gypsy and amateur.",
+        "target": "flamenco of the gitanerias epoch",
+        "rationale": "The description frames flamenco formation through gypsy identity and communal secrecy, making identity central to belonging and representation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The passage gives an origin account of cante gitano, but the visible excerpt does not clearly use that origin to authorize a present flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Words such as 'powerful' and 'passionate' describe cante gitano but are not applied as explicit aesthetic criteria for judging a specific performance or practice."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The public/private contrast suggests authenticity stakes, but the excerpt does not explicitly frame public or commercial staging as weakening authentic flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "cante gitano and flamenco of the gitanerias epoch",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The truncated article is still sufficient for coding the visible historical/community boundary claims in the ending context."
+  }
+]

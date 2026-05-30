@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "JALEO_1981_07::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article names Ohio flamencos, juergas, and home/community events, but mostly reports social activity without clearly granting community authority or defining belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Words like 'joyous' and 'fantastic' praise the year/events, but the passage lacks developed critical judgment of flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Local community montage and performer listing; no clear discourse function beyond event reporting."
+  },
+  {
+    "article_id": "JALEO_1981_07::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "I'm one of the few truly qualified interpreters of flamenco music.",
+        "target": "Senor Duende / the fictional flamenco guitarist's interpretive authority",
+        "rationale": "The fictional speaker explicitly presents himself as truly qualified to interpret flamenco, making an authenticity claim even though the passage is satirical."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "What do you think of North American guitarists? DUENDE: I don't respect them at all... there is hardly any tradition to draw from.",
+        "target": "North American guitarists",
+        "rationale": "The answer draws an epistemic and cultural boundary between flamenco insiders with tradition and North American outsiders whose work is devalued."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "\"A Don Ramón Montoya,\" a rondeña, is the only track in the album that didn't suit my taste. It seems long and drawn out to the point that I lost interest in listening.",
+        "target": "Sanlúcar recording, especially 'A Don Ramón Montoya'",
+        "rationale": "The album discussion makes explicit evaluative judgments about individual tracks and the record's quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The speaker contrasts written music with playing from the heart, but the passage does not clearly describe oral, embodied, or lineage-based transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The fictional interview invokes superlatives such as 'greatest living exponent' and 'genio,' but these are part of satire and overlap with the stronger authenticity and insider/outsider boundary codes."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Tradition is invoked in judging North American guitarists, but the passage mainly uses it to draw an insider/outsider boundary rather than to develop a continuity or roots claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco interpretive authority, North American guitarists, and Sanlúcar's recording",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The interview is fictional and satirical, but the visible discourse still stages recognizable authenticity and boundary claims."
+  },
+  {
+    "article_id": "JALEO_1981_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "This is Spanish dance at its most professional. The dashingly handsome Amaral knows how to provide variety and depth in a program.",
+        "target": "Roberto Amaral and company performance",
+        "rationale": "The review explicitly praises the company's professionalism, variety, depth, pacing, and staging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "his solo \"Zapateado\" brought this section to a tremendous close and showed off his quivering heel work and animalistic attack.",
+        "target": "Amaral's solo and the reviewed performances",
+        "rationale": "The passage applies aesthetic criteria such as heel work, attack, vocals, accompaniment, compás, and technical mastery to judge performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "the traditional flamenco clapping which continued throughout his songs, \"Para Ti,\" \"Please,\" and \"El Garrotin\" seemed out of place in this setting.",
+        "target": "traditional flamenco clapping in the contemporary nightclub section",
+        "rationale": "The review uses critical judgment to police the fit between traditional flamenco elements and a contemporary staged context."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The review describes a tavern scene and nightclub setting, but these are staged scenes rather than a socially meaningful public/private or participatory contrast."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'mastery' and 'great singing' elevate performers, but they do not construct a broader canon or hierarchy beyond review praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Roberto Amaral and company, Rodrigo, El Yuri, and the Cuadro Flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is review-heavy; codes focus on explicit evaluation and aesthetic criteria rather than event description."
+  },
+  {
+    "article_id": "JALEO_1981_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "While the music played, spirits ran high as dancers gathered at the stage to complete the juerga festivities.",
+        "target": "Philadelphia juerga",
+        "rationale": "The passage values the juerga as a participatory social setting where dancers, musicians, aficionados, food, palmas, and shared presence complete the event."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Julia López and guitarist Carlos Rubio have done it again -- another wonderful juerga at Meson Don Quixote. It is amazing how each juerga is better than the last.",
+        "target": "Julia López and Carlos Rubio's Philadelphia juerga",
+        "rationale": "The article explicitly praises the event and ranks it as improving over previous juergas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article names enthusiastic aficionados, but it does not clearly present them as authorities who recognize, judge, or sustain flamenco beyond attendance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The juerga setting is social and convivial, but the text does not explicitly frame intimacy or co-presence as more authentic flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Philadelphia juerga and local flamenco participation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "\"Fosforito\"... represents a cantaor who is one of the most highly esteemed in Spain today, seldom absent from the important festivals, and frequently mentioned when important recordings are being discussed.",
+        "target": "Fosforito",
+        "rationale": "The passage places Fosforito high within a contemporary flamenco hierarchy through esteem, festival presence, recordings, and later succession language."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Don Pohren says about Fosforito: \"His entrance into prominence was sensational; he swept all prizes in the 1956 Córdoba contest...\"",
+        "target": "Fosforito's reputation and cante authority",
+        "rationale": "The article relies on named flamencologists and critics such as Don Pohren and Ricardo Molina to authorize the evaluation of Fosforito."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Antonio Fernández has achieved in his youth, a maturity, mastery, and knowledge of the cante in all of its forms.",
+        "target": "Fosforito's cante",
+        "rationale": "The passage applies aesthetic and technical criteria such as maturity, mastery, knowledge, range, depth, voice, temperament, and seriousness to define Fosforito's quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "Pohren calls Fosforito a 'purist,' but the excerpt does not clearly draw a purity boundary against impure or illegitimate flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions schools, cantes, and regional repertoires, but the main discourse function is critical canonization rather than tradition/continuity as a separate claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article identifies Fosforito as non-gypsy and discusses gypsy and andaluz-inspired cante, but it does not use identity framing to define belonging or authority in a sufficiently explicit way."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Fosforito's status as a major cantaor",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Visible excerpt ends by introducing further flamencologist views; annotation uses only the quoted/evident material in the excerpt."
+  }
+]

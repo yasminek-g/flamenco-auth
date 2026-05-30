@@ -1,0 +1,179 @@
+[
+  {
+    "article_id": "JALEO_1977_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "By general consensus, the September juerga at National University was the best so far.",
+        "target": "the September juerga at National University",
+        "rationale": "The passage explicitly evaluates the juerga as the best to date."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "This is the way a juerga ought to be. I agree! The evening was many-faceted and ever-changing",
+        "target": "the participatory juerga setting",
+        "rationale": "The report treats the multi-room, participatory, evolving social setting as the proper model for a juerga."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "She is developing her own subtle \"gracia\" which is a pleasure to behold.",
+        "target": "Luana Morena's dancing",
+        "rationale": "The passage applies an aesthetic criterion, gracia, to positively assess a dancer's developing style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The article mentions Jaleistas and a Spanish contingent, but does not clearly grant them special authority to judge or define flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "the September juerga and its participatory flamenco sociality",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "We'll have an \"A-prendiz\" room roped off for participants only, so no one need feel self-conscious about trying something new in front of spectators.",
+        "target": "the juerga learning/participation space",
+        "rationale": "The passage explicitly contrasts participation with spectatorship and designs a private space to enable trying new flamenco material."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Soleares is the rhythm of the month. Bring your falsetas and steps to share.",
+        "target": "shared learning of soleares at the juerga",
+        "rationale": "The juerga is framed as an access point for participants to exchange steps and falsetas and learn a rhythm together."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The request for a guitarist or aficionado to write reports mentions viewpoints but does not clearly authorize those groups as judges of flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "participatory juerga learning",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_12::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "The \"back room\" was a guitar enclave most of the evening with guitarists exchanging melodies and practicing dance accompaniment.",
+        "target": "informal guitar and dance-accompaniment learning",
+        "rationale": "The passage describes embodied, informal transmission through musicians exchanging melodies and practicing accompaniment in a social setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "each guitarist in turn rose to participate in the terpsicorean art... because the room was clothed in darkness and no one could see the noviciates perform.",
+        "target": "novice participation at the juerga",
+        "rationale": "The passage values a setting that lets novices participate rather than remain visible spectators."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The word duende appears humorously in relation to Rosala's effect on the room, but it is not used as a clear aesthetic criterion for judging flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article frames the evening as Spanish Night, but identity is descriptive rather than clearly organizing authority, belonging, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "informal participatory learning at the November juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_12::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event logistics and invitations do not clearly evaluate, authorize, teach, transmit, preserve, or define flamenco belonging."
+  },
+  {
+    "article_id": "JALEO_1977_12::A3",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text describes a New Year's grape tradition, but the tradition concerns a general Spanish holiday custom rather than authorizing flamenco practice or value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The new-member list and holiday custom are not sufficient evidence for flamenco-related discourse coding."
+  }
+]

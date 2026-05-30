@@ -1,0 +1,323 @@
+[
+  {
+    "article_id": "JALEO_1981_05::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Paco De Lucia's guitar was faint during the jams... but his playing stood out — not only for technical brilliance, but for the rhythmic subtlety and melodic form he maintained even in the fastest phrases.",
+        "target": "Paco de Lucía's performance in the trio concert",
+        "rationale": "The passage explicitly evaluates Paco de Lucía's playing and identifies its artistic strengths."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "technical brilliance... rhythmic subtlety and melodic form... technical wizardry... varied and flexible rhythms",
+        "target": "Paco de Lucía's guitar technique and flamenco musicality",
+        "rationale": "The review applies technique, rhythm, melodic form, and flexibility as criteria for judging flamenco guitar quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "He is certainly — believe it or not — faster and cleaner than either McLaughlin or DiMeola. Flamenco, in which he is considered the ranking modern virtuoso",
+        "target": "Paco de Lucía compared with McLaughlin and DiMeola",
+        "rationale": "The passage creates a hierarchy by comparing Paco to the other guitarists and naming him the ranking modern virtuoso in flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "exhibiting all the technical wizardry that led Guitar Review to call him \"possibly the most advanced guitarist in any idiom.\"",
+        "target": "Guitar Review's authorization of Paco de Lucía",
+        "rationale": "The passage invokes an external review authority to legitimate Paco's exceptional status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The passage identifies Paco's playing as flamenco, but it does not explicitly make an authenticity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The crowd's reaction is described, but it is audience enthusiasm rather than participatory flamenco setting or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía's virtuosity and status in the trio concert",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The review strongly centers critical evaluation and hierarchy; non-flamenco fusion details are not coded separately."
+  },
+  {
+    "article_id": "JALEO_1981_05::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "With Los Farrucos, the high point was reached.",
+        "target": "Los Farrucos' performance",
+        "rationale": "The passage explicitly evaluates Los Farrucos as the high point of the program."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "It is a way of dancing that rises above time and space, technique and age.",
+        "target": "Antonio Montoya Flores's baile",
+        "rationale": "The passage uses transcendence beyond technique, time, and age as an aesthetic criterion for evaluating the dancing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Compared to Antonio, to his baile, almost all of the others are insignificant.",
+        "target": "Antonio Montoya Flores compared with other dancers",
+        "rationale": "The passage creates a clear hierarchy by elevating Antonio's baile above nearly all others."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "With them we find a conception of flamenco and gypsy music that is more elemental, simplistic, and direct; all is pure and immediate with this family",
+        "target": "La Familia Fernández's flamenco and gypsy music",
+        "rationale": "The passage attributes purity and immediacy to the family's flamenco conception, authorizing it as direct and elemental."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "there were many who left the theater fed up with cante and bad cante. It could have been a night of triumph and it turned into",
+        "target": "the evening cante performance",
+        "rationale": "The passage uses negative critical judgment to police artistic quality, distinguishing cante from bad cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy families and cuadros are listed, but the stronger visible discourse functions are critical evaluation and authenticity language rather than identity-based authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The Estudio de Danza de Caracolillo is listed in the program, but the excerpt does not discuss pedagogical authority or teaching."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Quincena performances, especially Los Farrucos, Antonio Montoya Flores, La Familia Fernández, and the criticized cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is truncated, but the visible review windows include strong critical and authenticity claims."
+  },
+  {
+    "article_id": "JALEO_1981_05::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Manolo Domínguez was nervous and he did not attain a solid flamenco presentation, but only isolated moments full of beauty.",
+        "target": "Manolo Domínguez's solo guitar performance",
+        "rationale": "The passage explicitly evaluates the quality and limitations of Domínguez's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Sanlúcar gave a whole course in virtuosity, in musical quality, and perfect performance.",
+        "target": "Manolo Sanlúcar's guitar performance",
+        "rationale": "The passage applies virtuosity, musical quality, and perfect performance as aesthetic criteria."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "it was necessary to compare, and their different situations, the great difference between one and the other, made the comparison even more hateful.",
+        "target": "Manolo Domínguez and Manolo Sanlúcar",
+        "rationale": "The article constructs a comparative hierarchy between the two guitarists."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Here are some cuts on a few recordings for the collector to compare for similarities and differences.",
+        "target": "record collectors learning to compare flamenco recordings",
+        "rationale": "The passage mediates access to flamenco knowledge by instructing readers how to compare recordings and notice similarities and differences."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review voice is authoritative, but no separate critic/expert authority is foregrounded beyond the act of reviewing itself."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Manolo Sanlúcar is called a student of guitar, but this describes his dedication rather than his authority to teach."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "flamenco guitar performances and comparative listening practices",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text combines a performance review with a reader-oriented comparison exercise for recordings."
+  },
+  {
+    "article_id": "JALEO_1981_05::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Jerez was -- along with Triana -- the most fertile and decisive founding nucleus of flamenco.",
+        "target": "Jerez as a flamenco origin center",
+        "rationale": "The passage grounds flamenco authority in Jerez as a founding nucleus and historic origin site."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "It suffices to simply enumerate the great local cantaores, in order to comprehend the categorical transcendence of this city in the historic development of the cante.",
+        "target": "Jerez cantaores and the city's flamenco status",
+        "rationale": "The passage canonizes a lineage of named Jerez artists to establish the city's hierarchical importance in flamenco history."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "She learned from her countrymen -- from Manuel Torre, from Antonio Frijones, from Tío José de Paula -- until she became a prodigious cantaora of almost forgotten flamenco knowledge.",
+        "target": "Tía Anica la Pirinaca's flamenco knowledge",
+        "rationale": "The passage frames her cante knowledge as transmitted through local artists and embodied lineage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "rarely has she considered herself to be what she really is -- an ignored and prodigious example of human truth and of the dramatic expressiveness of the cante.",
+        "target": "Tía Anica la Pirinaca",
+        "rationale": "The passage presents Tía Anica as an embodiment of truth and expressive flamenco value."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "the basic germ of truth in flamenco could not -- and never will be able to -- be dispersed while there exists only one person capable of preserving it. Manuel Torre is... an important link with the original integrity of the cante and its most uncontaminated historical development.",
+        "target": "Manuel Torre and the integrity of cante",
+        "rationale": "The passage draws purity boundary-work by valuing original integrity, truth, preservation, and uncontaminated historical development."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "On the wall of one decaying house... there appears a commemorative stone... Who would have been able to tell... that the city government... would dedicate to him this fervent remembrance.",
+        "target": "municipal commemoration of Manuel Torre",
+        "rationale": "The passage treats official city commemoration as public recognition of flamenco memory and value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy-Andalusian identity and gypsy barrios are central to the description, but the emitted codes more directly capture origin, lineage, authenticity, and official memory."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Juan de la Plata and the Cátedra de Flamencología are mentioned, but the visible passage does not clearly develop their pedagogical authority beyond identifying them."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The passage uses preservation language, but it is primarily authenticity/purity preservation rather than public safeguarding or living heritage policy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "pedagogy",
+        "authenticity",
+        "heritage"
+      ],
+      "target": "Jerez, Tía Anica la Pirinaca, Manuel Torre, and the historical integrity of cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Six codes are justified because distinct spans support origin continuity, canonization, lineage transmission, authenticity, purity boundary-work, and official commemoration."
+  },
+  {
+    "article_id": "JALEO_1981_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Philadelphia aficionados... attending juerga number four. Mesón Don Quixote was filled to capacity!",
+        "target": "Philadelphia juerga attendance",
+        "rationale": "The passage frames the juerga as a participatory gathering of flamenco aficionados."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados are mentioned as attendees, but the short excerpt does not clearly grant them authority to recognize, judge, or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The warm greeting and capacity crowd describe atmosphere and attendance, not aesthetic evaluation of a flamenco performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Philadelphia juerga as an aficionado gathering",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is short but sufficient for a conservative community-setting code."
+  }
+]

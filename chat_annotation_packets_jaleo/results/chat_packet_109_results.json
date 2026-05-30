@@ -1,0 +1,232 @@
+[
+  {
+    "article_id": "JALEO_1981_06::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Juanita gave one of the best and most memorable flamenco performances I have witnessed in a long time.",
+        "target": "Juanita Franco's El Moro performance",
+        "rationale": "The passage explicitly evaluates the performance with strong praise and a superlative personal judgment."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Her natural affinity for flamenco and technical mastery of many flamenco forms allowed Juanita to respond to the expectations of the enthusiastic audience",
+        "target": "Juanita Franco's dance",
+        "rationale": "The review uses natural affinity, technical mastery, emotional force, and audience responsiveness as criteria for judging flamenco quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "many of the aroused dancers in the audience joined Juanita on stage to dissipate their heightened emotions through participation in the dances",
+        "target": "the El Moro flamenco performance setting",
+        "rationale": "The passage values a shift from spectatorship into participatory co-presence, making the audience's involvement part of the flamenco experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'one of the best' has ranking force, but it is best captured as part of the broader critical evaluation rather than a separate canon-forming hierarchy."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The restaurant is described as cozy and intimate, but the passage does not clearly make intimacy a marker of authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Juanita Franco's flamenco debut and the participatory El Moro setting",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_06::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Caption-only material lists people and actions but does not clearly evaluate, authorize, exclude, teach, preserve, transmit, rank, criticize, or define belonging."
+  },
+  {
+    "article_id": "JALEO_1981_06::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "one of her dreams is that \"todo el mundo conozca nuestro baile y cultura\" - that everyone get to know our dance and culture",
+        "target": "Catalina's promotion of flamenco and Spanish culture at the Ocean Playhouse",
+        "rationale": "The passage frames the venue and hostess as providing public access to knowledge of dance and culture across a local community boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "watch a flamenco show and then continue the music and dance into the wee hours",
+        "target": "the planned Ocean Playhouse juerga",
+        "rationale": "The event is framed as moving from staged performance into a participatory social flamenco setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "I am doing my music and my art, but I am trying for a higher goal... I had to forget about being an artist and become a money-maker.",
+        "target": "Rodrigo's commercial performance work",
+        "rationale": "The passage explicitly contrasts art-making with commercial necessity, presenting money-making as a constraint on artistic freedom."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Catalina's enthusiasm and cultural promotion suggest community involvement, but the passage does not clearly grant her authority to judge or define flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text calls the food excellent and the hostess enthusiastic, but these are venue praises rather than sustained critical evaluation of flamenco performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community",
+        "authenticity"
+      ],
+      "target": "the Ocean Playhouse juerga and Rodrigo's art/commercial performance tension",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated; codes are limited to visible windows and context."
+  },
+  {
+    "article_id": "JALEO_1981_06::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "FLAMENCO (el) -- a form of music involving song, dance, and instrumental music that developed in Andalucía, Spain",
+        "target": "flamenco terminology and definitions",
+        "rationale": "The dictionary/glossary format teaches flamenco concepts and gives readers access to specialized terminology."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "it is composed of two major elements, the gypsy and the Andalucian",
+        "target": "the definition of flamenco",
+        "rationale": "The definition frames flamenco through identity-group components, making gypsy and Andalusian identity central to how the form is represented."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The entry notes development in Andalucía and musical influences, but the passage is primarily definitional rather than using roots to authorize present value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as accentuation and weeping quality appear, but they are presented as definitions rather than evaluative criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "flamenco terminology and identity-based definition of the form",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "to be born in Andalucía is to be born in the cradle of flamenco",
+        "target": "Andalucía as flamenco's origin-grounded cultural setting",
+        "rationale": "The passage grounds flamenco value and identity in origin, rootedness, and continuity from Andalusian childhood."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "because in Sevilla compás is learned as a basic from childhood",
+        "target": "Sevillian childhood flamenco learning",
+        "rationale": "The passage frames compás as transmitted through embodied childhood practice and local social learning."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "the ones who do best are encouraged by their friends to go on stage to compete in popular \"verbenas\"",
+        "target": "local Sevillian flamenco community and childhood performers",
+        "rationale": "The passage presents friends, barrio competitions, and popular local settings as community mechanisms that recognize and sustain flamenco ability."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The ending says some dances are now done well, but the strongest visible discourse concerns roots, childhood transmission, and community formation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The Morca Academy advertisement mentions an in-depth study and master teacher, but it is promotional copy appended to the article and less central than the memoir's embodied transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Andalusian/Sevillian flamenco formation through childhood, compás, and local community practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; annotation is based only on the visible beginning, evidence window, and ending context."
+  }
+]

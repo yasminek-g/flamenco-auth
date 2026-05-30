@@ -1,0 +1,224 @@
+[
+  {
+    "article_id": "JALEO_1982_05::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "It was a beautiful Spanish style modern dance complete with rolling on the floor and dressing and undressing an stage, but alas -- na flamenco.",
+        "target": "Antonio Gades' film version of Blood Wedding",
+        "rationale": "The passage draws a boundary between Spanish-style modern dance and what counts as flamenco by explicitly excluding the film from flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are brief evaluative phrases such as 'Don't miss her' and 'well-received,' but they are too promotional or generic to support a separate critical-evaluation code."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The 'no flamenco' phrase has boundary-critical force, but the passage does not clearly position an expert/reviewer authority beyond the brief member notice, so AUTH_02 captures the stronger function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "authenticity"
+      ],
+      "target": "Antonio Gades' film version of Blood Wedding",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_05::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Once shoes have been purchased from the maker or distributor, they must be fitted with braces and tacks for the heel, rubber for the sole, and a piece of leather and tacks for the toe.",
+        "target": "practical flamenco dance-shoe preparation for dancers",
+        "rationale": "The article mediates practical flamenco knowledge by giving instructional access to the materials and preparation needed for dance shoes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article gives a historical origin for heelwork, but this is mainly chronology and does not use the past to authorize present flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Donn Pohren is cited as a source, but the passage does not strongly position him or a teacher as pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Heelwork and shoe construction are technical matters, but the passage is instructional rather than judging quality through aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "practical flamenco dance-shoe preparation for dancers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_05::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "We are all members of jalaistas and should all shara in the work as well as the fun!",
+        "target": "Jaleistas members at the San Diego juerga",
+        "rationale": "The notice frames the juerga as a participatory community setting in which members share responsibility rather than simply attend as spectators."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Ayudantes will be admitted to the juerga free of charge. They must be current members of jalaistas and must notify the juerga coordinator one week prior to the juerga if they wish to help.",
+        "target": "Jaleistas member-volunteers",
+        "rationale": "Membership in the flamenco association structures who can help sustain the juerga, linking community belonging to the maintenance of the event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The mention of a youth group and cuadros is organizational rather than a clear discussion of learning or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas members and the San Diego juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_05::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The majority of Board Members present felt that this site is not suitable for Juergas because of its location; however, it was agreed that we would try once more and that the May Juerga could be held there.",
+        "target": "the Market Street site for Jaleistas juergas",
+        "rationale": "The board evaluates whether a location can support the juerga as a viable participatory flamenco setting, making venue suitability socially meaningful."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "EVERYONE'S HELP IS ASKEO IN THIS.",
+        "target": "Jaleistas members seeking a permanent juerga site",
+        "rationale": "The report calls on the member community to help sustain the flamenco association's juerga infrastructure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The site is evaluated as suitable or unsuitable, but the judgment is primarily logistical/community-oriented rather than critical evaluation of flamenco artistry."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The non-profit incorporation process is institutional, but it is not framed as heritage recognition or cultural patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas juerga organization and venue infrastructure",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_06::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "They suggested Manuela Carrasco to me and I was very satisfied, because, to me, she is an unusual genius.",
+        "target": "Manuela Carrasco",
+        "rationale": "The interview explicitly praises Carrasco's artistic quality and evaluates her as an exceptional performer."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "She is a giant in her field and, what I do, I don't do badly.",
+        "target": "Lola Flores",
+        "rationale": "The passage constructs a hierarchy of artistic stature by describing Lola Flores as a giant in her field."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "I like to work with artists who leave the people warmed up, not cold.",
+        "target": "artists performing with Lola Flores",
+        "rationale": "The passage applies audience impact and affective force as criteria for valuing performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'authentic seismic phenomenon' uses authenticity-like language, but it describes Lola's force metaphorically rather than making a claim about genuine flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Phrases such as 'performs for her people' and 'the jerezana' mark identity and audience, but identity does not clearly organize authority or belonging in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Lola Flores and Manuela Carrasco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; codes are based only on the visible beginning, evidence window, and ending context."
+  }
+]

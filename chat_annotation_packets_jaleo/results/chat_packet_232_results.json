@@ -1,0 +1,265 @@
+[
+  {
+    "article_id": "JALEO_1986_FALL::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Under the tutelage and direction of Raquel Lopez, flamenco dancer, choreographer and teacher, a student recital was given.",
+        "target": "Raquel Lopez as teacher and director of student flamenco training",
+        "rationale": "The passage frames Lopez's teaching authority as enabling students to test and present their flamenco study."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was joyful yet full of sharp moves, performed with the clarity and ease that was seen in all of the dances.",
+        "target": "the student recital choreography and performances",
+        "rationale": "The article explicitly evaluates the quality of the dances through praise of clarity, ease, agility, staging, and style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the alegrías searches further to display more depth of the lyrical \"antigua\" style",
+        "target": "Matilde Coral's choreographic style as performed in the recital",
+        "rationale": "The passage applies aesthetic criteria such as depth, lyricism, agility, and style to explain the value of the choreography."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The references to 'antigua' style and training in Spain suggest tradition, but the passage mainly uses them as aesthetic description rather than explicit continuity or roots-based authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Raquel Lopez's student recital and Matilde Coral-derived choreographies",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I started a class in flamenco for the Highland Senior Center in Albuquerque, New Mexico.",
+        "target": "senior learners' access to flamenco classes",
+        "rationale": "The article centers institutional access to flamenco learning for older adults through a senior center class."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Here is one myth exploded: that a senior dancer has no place to perform.",
+        "target": "senior flamenco and dance learners as legitimate performers",
+        "rationale": "The passage uses age-group identity to contest an exclusionary assumption about who belongs in performance."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "older adult flamenco learners and performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The company was so well-trained and fresh that I was shaken out of my stupor.",
+        "target": "Ballet Español de Madrid",
+        "rationale": "The author makes a direct evaluative judgment of the company's quality and impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "we wanted to innovate -- to give a new line to Spanish dance, not just in the theatre, but personality as individuals.",
+        "target": "the cooperative company's artistic direction",
+        "rationale": "The interview grants company members authority to explain and justify their break from prior direction through a critique of artistic stagnation and a claim to innovation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "A COMPLETE APPROACH TO STUDYING FLAMENCO DANCE, IN TECHNIQUE, INTERPRETATION REPERTOIRE AND UNDERSTANDING.",
+        "target": "flamenco dance study through instructional video and workshops",
+        "rationale": "The visible text frames flamenco learning as mediated through instructional video materials and organized workshops."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The interview mentions daily ballet discipline and having studied with different people, but no specific teacher or method is strongly authorized as flamenco pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Ballet Español de Madrid and mediated flamenco study",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The final instructional-video/workshop passage is included because it is part of the visible article_text_for_review."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "The starting point for giving good jaleo is to begin with a sure knowledge of all of the basic compás in relation to the guitar music, and the accompaniment for song and dance.",
+        "target": "proper instruction in jaleo",
+        "rationale": "The article explicitly teaches the knowledge required for competent jaleo and positions that knowledge as necessary for proper practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Like other facets of flamenco, it takes daing and listening and developing a sense of the music, the song forms, the song styles, and the individual singers and their singing styles.",
+        "target": "embodied and aural learning of jaleo",
+        "rationale": "The passage frames jaleo competence as developed through doing, listening, and sensitivity to singers, forms, and musical dynamics."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Jaleo can come from all directions in a flamenco happening. It can come from the performing artists, jaleadores, singers, dancers, guitarists, aficionados, the audience, spontaneous performers, etc.",
+        "target": "participatory relations in a flamenco happening",
+        "rationale": "The text defines jaleo as a participatory social relation involving performers, aficionados, audiences, and spontaneous participants."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "No one is overpowering the other. Yes, a blended orchestra of jaleo, music, song, dance that speaks the energy and rhythmical balance and instrument that is the beauty of flamenco, a true flamenco happening.",
+        "target": "good jaleo as flamenco aesthetic practice",
+        "rationale": "The article defines quality through aesthetic criteria including compás, balance, dynamics, accent, sensitivity, and non-overpowering accompaniment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'true flamenco happening' suggests properness, but the stronger discourse function is pedagogical and aesthetic rather than a separate authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "proper jaleo within flamenco performance and gathering contexts",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "if you are not invited to give jaleo or are not part of the immediate flamenco happening, do not play audible palmas.",
+        "target": "audience participation in jaleo",
+        "rationale": "The passage draws a participatory boundary between those inside the immediate flamenco happening and detached audience members."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "the sponsor in an opening speech, encouraged the audience to \"clap and yell\" during the concert and believe me, it turned a concert into a cheap shot",
+        "target": "improper audience jaleo encouraged by a sponsor",
+        "rationale": "The author uses critical authority to police improper audience behavior as damaging to the concert and the singer's spirit."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "Palmas, even in compás, take time to travel to the stage in a theatre and end up late and out of compás and break the intimacy of the flamenco happening",
+        "target": "theatre audience palmas versus intimate flamenco happening",
+        "rationale": "The passage treats large-stage separation and audience noise as threats to the intimacy required for the valued flamenco experience."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "all gypsies and guitars, but not flamenco!!",
+        "target": "Roman Gypsy theatre and Russian gypsy guitar performance",
+        "rationale": "The phrase explicitly excludes a gypsy-and-guitar performance from the category of flamenco, drawing a proper/improper boundary."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "He first learned flamenco from tape and records and became very interested in Paco de Lucfa's style after hearing him on Moscow television in 1976.",
+        "target": "Igor Skoromudov's transnational flamenco guitar learning",
+        "rationale": "The passage describes flamenco knowledge accessed across geographic boundaries through recordings, television, migration, and later formal study."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The advertisement's phrases such as 'legendary' and 'historic' canonize Manuel Agujetas, but the marketing context makes the claim less reliable than the stronger boundary and pedagogy evidence elsewhere in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "criticism",
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "proper jaleo, flamenco boundaries, and transnational flamenco learning",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

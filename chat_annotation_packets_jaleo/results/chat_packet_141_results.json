@@ -1,0 +1,212 @@
+[
+  {
+    "article_id": "JALEO_1982_05::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Text is only a brief heading/listing with no evaluative or authorizing discourse."
+  },
+  {
+    "article_id": "JALEO_1982_05::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The Philadelphia juerga of March 15, 1982... was a brilliant success",
+        "target": "Philadelphia juerga",
+        "rationale": "The passage explicitly evaluates the event as successful rather than merely reporting that it occurred."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Julia sang and did a rhumba that inspired even the shy newcomers to dance",
+        "target": "Philadelphia juerga participants",
+        "rationale": "The juerga is valued as a participatory setting where even newcomers move from spectatorship into dancing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Several hundred enthusiastic aficionados are mentioned, but the text does not clearly grant them authority to judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community"
+      ],
+      "target": "Philadelphia juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Community code is based on participation, not on mere use of aficionado."
+  },
+  {
+    "article_id": "JALEO_1982_05::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Yes, flamenco in Tucson is not only alive but it is sparkling, competent and growing.",
+        "target": "flamenco in Tucson",
+        "rationale": "The passage gives an explicit evaluative judgment of the local flamenco scene."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Nothing Spanish looking about her -- she wore beige culottes -- but pure in her compás.",
+        "target": "Barbara Ann Gurwitz's soleares",
+        "rationale": "Compás is applied as an aesthetic criterion that overrides outward Spanish appearance in judging the dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "With nights like this, el cante, el baile, and la guitarra... is saved.",
+        "target": "el cante, el baile, and la guitarra",
+        "rationale": "The passage frames high-quality performance as preserving or sustaining flamenco practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The home juerga and palmas show participation, but the passage mainly describes the event and does not strongly contrast participatory setting with spectatorship."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Patricia Majan is called a professional dancer and teacher, but the text does not position her teaching authority as a discourse function."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Named cantes and artists are invoked, but the stronger visible function is evaluation by criteria rather than canon construction."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Tucson/Arizona juergas and reviewed Quincena performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article appears OCR-combined with review material and advertisement; annotations use only visible evaluative spans."
+  },
+  {
+    "article_id": "JALEO_1982_05::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Angsl Alvarez Caballero has laid out, possibly, the most lucid and accurate History of Cante Flamenco",
+        "target": "Ángel Alvarez Caballero's History of Cante Flamenco",
+        "rationale": "The passage explicitly evaluates the book's quality and accuracy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "A new dance academy is announced, but the passage is a routine opening notice without clear learning/access or transmission stakes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The book is praised as lucid and accurate, but the text does not clearly create a canon or hierarchy beyond ordinary evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "History of Cante Flamenco book",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR damage in names does not prevent coding the clear evaluative sentence."
+  },
+  {
+    "article_id": "JALEO_1982_05::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "But, for all the fancy heelwork, a stand-up comic he's not.",
+        "target": "Pascual Olivera's performance patter",
+        "rationale": "The reviewer directly criticizes Olivera's talk-to-the-audience performance style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "She carves the space with precision and suppleness: both her sinuous arm movements and her pointillist heelwork emanate from a proud, strong back.",
+        "target": "Angela del Moral's dancing",
+        "rationale": "The passage applies aesthetic criteria of precision, suppleness, arm movement, heelwork, and bodily carriage to judge dance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "there's a fine line to tread between theatricality and carniness",
+        "target": "Olivera and del Moral's theatrical staging",
+        "rationale": "The reviewer uses critical authority to police the boundary between legitimate theatrical presentation and degraded showmanship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The critique of vaguely Spanish numbers suggests improperness, but the passage functions more clearly as review boundary critique than explicit purity/inauthenticity discourse."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions stage transposition and audience response, but it does not clearly value private participatory flamenco over public spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Olivera and del Moral performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a concert review; codes prioritize explicit criticism and aesthetic boundary work."
+  }
+]

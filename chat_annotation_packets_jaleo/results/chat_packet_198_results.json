@@ -1,0 +1,257 @@
+[
+  {
+    "article_id": "JALEO_1984_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Probably this was to accommodate more boring articles, writer second-hand, about someone I've never heard of who studied with so-and-so and got good enough to go on tour.",
+        "target": "Jaleo articles about flamenco performers",
+        "rationale": "The writer explicitly criticizes the publication's flamenco coverage as boring and second-hand rather than based on personal experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The dance workshop advertisement mentions beginner and intermediate students, but it is a routine listing without evaluative learning or access stakes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The poem uses aesthetic language about guitar, but it is too generic and poetic to establish a clear flamenco quality criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "second-hand Jaleo flamenco articles",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Satirical biography and advertisements were not coded because the visible discourse is comic or promotional rather than a serious authority claim."
+  },
+  {
+    "article_id": "JALEO_1984_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Mariano Córdoba, one of the best known exponents of the flamenco guitar in the United States",
+        "target": "Mariano Córdoba",
+        "rationale": "The passage elevates Córdoba's status by positioning him as a major exponent of flamenco guitar in the United States."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "I have chosen to emphasize his role as a teacher of flamenco, his first love, and one for which he is particularly suited.",
+        "target": "Mariano Córdoba as flamenco teacher",
+        "rationale": "The author explicitly legitimates Córdoba through his role and suitability as a teacher of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Mariano Córdoba is not only an outstanding performer and teacher, but an extraordinary human being as well.",
+        "target": "Mariano Córdoba",
+        "rationale": "The excerpt directly evaluates Córdoba's artistic and personal qualities with explicit praise."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The excerpt notes Córdoba's Castilian origin and residence in Silicon Valley, but identity or place does not clearly organize belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Mariano Córdoba",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible window is sufficient for teacher-authority and evaluative status claims."
+  },
+  {
+    "article_id": "JALEO_1984_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "he eletrified the audience in a number of moments with the greatest communicative tension that has been experienced in the Bienal up until that time",
+        "target": "Farruco's performance at the Bienal",
+        "rationale": "The review makes a strong evaluative judgment about the performance's communicative power."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "non-professional artists who have the authentic flamancn \"stuff.\"",
+        "target": "non-professional artists in the Alameda cycle",
+        "rationale": "The passage explicitly attributes authentic flamenco substance to these artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "The \"Vanguerdia\" cycle has created the greatest arguments up to this point; it is debatable whether there is any connection between the paths of some of the musicians who were included and flamenco.",
+        "target": "musicians in the Vanguardia cycle",
+        "rationale": "The review uses critical discourse to police the boundary of what can count as connected to flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The fin de fiesta is valued as resembling a flamenco gathering, but this overlaps with the emitted authenticity and critical-evaluation evidence and is not developed enough as a public/private participation contrast."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The forge scene is said to transport listeners to flamenco origins, but this is covered by broader authenticity and critical evaluation rather than a distinct continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Terms such as older, venerated artists and schedule labels like Maestros suggest hierarchy, but the strongest visible discourse is evaluative review rather than canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Bienal performances and debated vanguard programming",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The schedule portion was treated as listing rather than evidence; coding is based on the review prose."
+  },
+  {
+    "article_id": "JALEO_1984_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "boredom produced, no doubt, by lack of imagination on the part of the artists, who do not renew their repertoire, do not change, and continue with the same program for eight, ten, or twelve years",
+        "target": "summer flamenco festival artists and programming",
+        "rationale": "The passage explicitly criticizes festival performances for boredom, repetition, and lack of imagination."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "on some occasions boredom is produced by a poor combination of artists, or all the singers doing the same styles -- festeros, or from the Levante, for example -- when the ideal would by, if possible, to present a variety",
+        "target": "festival programming quality",
+        "rationale": "The author applies aesthetic/programming criteria such as variety, renewal, and repertoire balance to define better flamenco festivals."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text contrasts attentive aficionados with bored attendees, but it does not grant aficionados authority to judge or sustain flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article is critical, but it does not rely on named critic/expert authority or police a proper/improper flamenco boundary beyond festival quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "delegitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "repetitive summer flamenco festival practices",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "No authenticity code was emitted because the article criticizes boredom and programming quality rather than genuineness."
+  },
+  {
+    "article_id": "JALEO_1984_10::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Mairena is the genius of the Andalusian expression called cante.",
+        "target": "Antonio Mairena",
+        "rationale": "The passage canonizes Mairena through exceptional genius language and places him at the center of cante."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I don't think this will end; it will exist while there is a world.",
+        "target": "flamenco/cante continuity",
+        "rationale": "Mairena frames the art as enduring across time, grounding its value in continuity and survival."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "By trying to be as faithful as possible to the art.",
+        "target": "Mairena's continuation of his work",
+        "rationale": "Faithfulness to the art is presented as the proper basis for continuing the master's work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The blacksmith family history suggests origin context but does not clearly show flamenco knowledge being transmitted through family or embodied apprenticeship in the visible text."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase work of the master honors Mairena, but it does not clearly describe him teaching, correcting, or mediating flamenco knowledge in the visible excerpt."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Andalusian expression and blacksmith background mark identity/place, but they do not independently organize belonging or group authority beyond Mairena's canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Antonio Mairena and the continuity of cante",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The excerpt is truncated, but the visible introduction and interview ending support canonization and continuity claims."
+  }
+]

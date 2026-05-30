@@ -1,0 +1,171 @@
+[
+  {
+    "article_id": "JALEO_1979_11::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "Cuando uno no sabe que es el cante, quizá pueda decir que ya no hay cante. Cuando uno no haya oído nunca ese lamento en \"caía\", ese ritmo \"cortao\", ese llanto del bordón.... quizá pueda decir que no hay cante.",
+        "target": "claims that cante no longer exists",
+        "rationale": "The passage draws an epistemic boundary between those who know/hear cante and those whose lack of experience leads them to deny its existence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "ese lamento en \"caía\", ese ritmo \"cortao\", ese llanto del bordón",
+        "target": "cante",
+        "rationale": "The passage names expressive and rhythmic qualities as criteria through which cante is recognized and valued."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The opening question contests the idea that cante has died, but the visible excerpt is too fragmentary to establish a clear tradition/continuity claim beyond rhetorical survival language."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short but sufficient for a conservative epistemic-boundary and aesthetic-criteria annotation."
+  },
+  {
+    "article_id": "JALEO_1979_11::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The text says Anita Sheer studied flamenco guitar and cante jondo with gypsies in Andalucía and Madrid, but this remains biographical and does not clearly frame embodied, oral, familial, or lineage transmission as an authority claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The transnational tour and study history involve Americans and Spain, but the visible text does not thematize access to flamenco knowledge or institutional/transnational learning stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly descriptive biography and program description."
+  },
+  {
+    "article_id": "JALEO_1979_11::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Venue and performer listing without evaluative, pedagogical, community-authorizing, or authenticity discourse."
+  },
+  {
+    "article_id": "JALEO_1979_11::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "he began the serious study of Spanish dance, flamenco guitar, and castanet making; he achieved a remarkable degree of skill in all three areas",
+        "target": "Louis Ernest Lenshaw",
+        "rationale": "The passage explicitly evaluates Lenshaw's flamenco-related accomplishment by praising the seriousness of his study and his remarkable skill."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions serious study, but it does not discuss a pedagogical institution, access to knowledge, or a meaningful learning context beyond biography."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Louis Ernest Lenshaw",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Honorific framing is present, but the emitted code rests on explicit evaluative judgment."
+  },
+  {
+    "article_id": "JALEO_1979_11::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Jaleistas returned in September to one of their first gathering places - the Alumni cottage of the National University. This was the site of the first New Year's Eve juerga",
+        "target": "Jaleo juerga community gatherings",
+        "rationale": "The article frames flamenco practice through recurring social gatherings and a meaningful return to a shared participatory setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "a hand decorated birthday cake in honor of one of our most active and enthusiastic jaleistas - Ernest \"Ernesto\" Lenshaw",
+        "target": "Jaleistas community",
+        "rationale": "The passage recognizes an active community participant and constructs flamenco value through belonging and sustained participation in the juerga group."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The word duende appears in 'we have pursued the duende,' but it is not applied as a criterion for judging a specific performance or defining quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions returning to the past and reviving an old custom, but this mainly describes group nostalgia and logistics rather than authorizing flamenco through tradition or continuity."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The juerga setting is intimate and social, but the visible excerpt does not explicitly frame intimacy as more authentic than staged or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleo juerga community gatherings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotated only the visible beginning, selected evidence window, and ending context."
+  }
+]

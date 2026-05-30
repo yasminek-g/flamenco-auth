@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "JALEO_1978_11::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Dancers were cheered and applauded by spectators sitting on the floor surrounding the dancing area. Hands clapped sharply with the tempo.",
+        "target": "the home juerga as a participatory flamenco setting",
+        "rationale": "The passage values flamenco as a shared social event where spectators participate through proximity, applause, and palmas rather than detached viewing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "By feeling out the rhythms and tempos, it has not been difficult to develop hand clapping in unision with the music... learned some of the hand clapping methods.",
+        "target": "learning palmas and compás through bodily participation",
+        "rationale": "The narrator describes embodied learning through feeling rhythms, participating, and acquiring hand-clapping methods in social flamenco settings."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Her music was uncluttered, methodical, and refreshing... She was detatched, cool, and in total control of her own world.",
+        "target": "the guitarist's performance",
+        "rationale": "The passage explicitly evaluates the guitarist's musical style and stage presence through qualitative judgment."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The question about non-Spaniard/non-Hispanic participants suggests outsider status, but it does not clearly draw an authority boundary around who may know or belong."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "participatory juerga practice and embodied flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_11::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "we wonder if juergas of this scale (150 people) could be possible without the dedication, tenacity, and love for the flamenco art of a few jaleistas like Juana",
+        "target": "Jaleistas who organize and sustain local juergas",
+        "rationale": "The passage presents committed community members as the sustaining force that makes flamenco gatherings possible."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "other Jaleistas may become better informed and perhaps consider offering their homes for a juerga",
+        "target": "home-based juerga hosting",
+        "rationale": "The text frames the private home as an important participatory setting for continuing the monthly flamenco gathering."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The caption mentions Sevillanas being taught, but the article's main discourse is organizational rather than a clear claim about pedagogical authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "Proposals to exclude small children concern safety and event management, not insider/outsider authority in flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleistas' home-based juerga organization",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_11::A17",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The notice says the home has great juerga atmosphere, but this is mainly venue promotion and logistics without a clear evaluative public/private or participatory discourse."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The host's father studied flamenco in Spain, but the passage gives biographical background rather than authorizing embodied or lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event notice and host biography; no clear code emitted under conservative rules."
+  },
+  {
+    "article_id": "JALEO_1979_05::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Agustín, a gypsy whose guitar-playing is familiar to those who have spent time in Morón de la Frontera or listened to the many tapes of juergas there, is a nephew of the legendary Diego del Gastor and plays a mixture of his own and Diego's material.",
+        "target": "Agustín Ríos's guitar practice",
+        "rationale": "The passage authorizes Agustín's playing through familial relation, Morón juerga familiarity, and transmission of Diego del Gastor's material."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "a nephew of the legendary Diego del Gastor",
+        "target": "Diego del Gastor and Agustín Ríos's relation to him",
+        "rationale": "Calling Diego 'legendary' invokes canonical status and uses that hierarchy to frame Agustín's significance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "If any of these people gets sick of the hassle, we are in trouble... The burden of supplying material for us to publish has fallen on the shoulders of just a few people.",
+        "target": "the Jaleo volunteer community",
+        "rationale": "The editorial presents a small group of committed participants as sustaining the flamenco publication and its community infrastructure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'glowing, optimistic side' and financial warnings evaluate the publication situation, but not a flamenco artist, performance, style, or event strongly enough to emit."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "Agustín Ríos's flamenco legitimacy and Jaleo's community support network",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_05::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "In 1961, I went to Granada to study flamenco with the gypsies... Pepe was my first real live Gypsy, and I was evidently his first real live discípulo extranjero.",
+        "target": "foreign access to flamenco guitar learning",
+        "rationale": "The passage explicitly frames flamenco learning across social and geographic boundaries through a foreign student's study with a Gypsy guitarist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "I took lessons in a small room carved into the Sacromonte hillside... at times there would be one on each finger as I tried to mimic Pepe's music.",
+        "target": "apprenticeship with Pepe Tranca",
+        "rationale": "The narrator describes direct embodied imitation and lesson-based transmission from a flamenco guitarist."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "I also had a chance to evaluate Pepe's playing from a broader perspective: an interesting, hard-driving style... occasional imaginative falsetas... A modern-sounding falseta for its time",
+        "target": "Pepe Tranca's guitar style and falsetas",
+        "rationale": "The passage applies aesthetic and technical criteria such as style, drive, imagination, and modernity to evaluate flamenco guitar material."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The tourists are offered a 'real flamenco show,' but this appears as a commercial pitch rather than a developed authenticity claim."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The foreign-disciple language marks outsider status, but the clearer discourse function is access to learning rather than an insider/outsider authority boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains evaluative language about Pepe's playing, but CRIT_02 more precisely captures the named technical and aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Pepe Tranca's guitar teaching and material",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

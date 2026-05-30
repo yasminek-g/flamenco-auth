@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "JALEO_1979_09::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "eighty Jaleistas gathered once again to conjure up the duende of past flamenco spirits. In the early evening there was much gaiety and \"fiesta\" por bulerías, sevillanas and rumba.",
+        "target": "Jaleistas' juerga gathering",
+        "rationale": "The passage frames the juerga as a participatory flamenco social setting where collective gathering, fiesta forms, and evocation of duende give the event cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Oscar Nieto Mosaico Flamenco, excellent demo and show at the Olvera St. Kiosko August 12th",
+        "target": "Oscar Nieto Mosaico Flamenco demo and show",
+        "rationale": "The notice makes an explicit positive quality judgment by calling the flamenco demo and show excellent."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "Multiple instruction listings appear, but they are routine announcements without clear evaluative or access/legitimation stakes."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Duende and intricacy are mentioned, but the passage does not clearly define or apply an aesthetic criterion beyond light event description."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "local flamenco juerga and selected performance listings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Sometimes a new dimension is added, but often flamenco is diluted -- either to appease the unindoctrinated, or to intrigue the casual viewer. Occasionally, the outposts, cut off from diversifications of the hub, maintain a purity still valid.",
+        "target": "flamenco in distant or non-central outposts",
+        "rationale": "The passage draws a purity boundary between valid flamenco and diluted forms shaped for casual or uninitiated viewers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "the maintaining of its complexities has been a matter of memory. Artists who have danced with the great and near-great and possess the gift of total-recall dance-memory are rare.",
+        "target": "flamenco dance complexity and its transmission",
+        "rationale": "Flamenco knowledge is presented as preserved through embodied memory and direct association with earlier major artists."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "I was particularly impressed by the quality of the great maestro's teaching. He would find the weak points of a student very quickly and work on them for the whole seminar",
+        "target": "Teo Morca's flamenco teaching",
+        "rationale": "The passage legitimates flamenco knowledge through a maestro's diagnostic and corrective teaching authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The students really appreciated that. It was a good group and I met interesting dancers from all over the States, dancers with different points of view. It was a good exchange.",
+        "target": "Bellingham flamenco workshop/seminar",
+        "rationale": "The workshop is framed as a translocal learning setting where students from different places exchange flamenco knowledge and perspectives."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article invokes 'great and near-great' dancers and a 'who's who,' but this mainly supports the transmission claim rather than a separate ranking."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are scattered positive evaluations of teaching and events, but they are better captured by pedagogical authority and access codes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "flamenco purity and pedagogical transmission through Ángel Monzón and Teo Morca",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text combines a profile with letters/reports; codes are based only on visible discourse spans."
+  },
+  {
+    "article_id": "JALEO_1979_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "no one but a gypsy or an Andaluz should play, or sing, or dance. The statement is usually made with a great deal of conviction and even some hostility.",
+        "target": "non-Gypsy, non-Andalusian flamenco participants",
+        "rationale": "The passage explicitly describes an insider/outsider boundary over who should participate in flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The internationalization of flamenco destroys the essence and meaning of the art in the eyes of the Andaluz. It threatens to dilute and ultimately oblierate the culture of his ancestors",
+        "target": "internationalized flamenco",
+        "rationale": "Internationalization is framed as dilution and destruction of flamenco essence, drawing a boundary around legitimate cultural practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "it is tampering with traditional harmonies, melodies, and rhythms that poses the danger. It takes many, many years to internalize these aspects of flamenco.",
+        "target": "flamenco guitar/song/dance practice by students and outsiders",
+        "rationale": "The passage defines flamenco value through aesthetic and technical criteria: traditional harmony, melody, rhythm, and internalized basics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses non-Spanish students and foreign learning, but the clearest discourse function is boundary and aesthetic evaluation rather than institutional/transnational access."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional harmonies and ancestor culture are invoked, but the emitted purity-boundary and aesthetic-criteria codes capture the main discourse work more precisely."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The closing insult toward poor players polices boundaries, but no distinct critic/expert authority is foregrounded beyond the broader boundary argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "foreign or non-insider participation in flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "All this spontaneity of palmas, happy sounds, and money being thrown at my bare feet ... confirmed indeed the roots of el arte.",
+        "target": "Moorish/Middle Eastern roots of flamenco",
+        "rationale": "The passage uses an Egyptian performance experience to authorize flamenco value through roots and origin."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Toward the end of the dance, the music livened up and all in the tent accompanied with hand clapping to the rhythm.",
+        "target": "Arabian audience participation in a Moorish-flamenco performance",
+        "rationale": "The audience's palmas and shared responses turn the performance into a participatory setting rather than detached spectatorship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text links Egyptian and Middle Eastern culture to flamenco, but it does not clearly assign belonging or authority to an identity group."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The performer says the Moorish number became her forte and was well received, but this is brief self-report rather than developed critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community"
+      ],
+      "target": "Moorish-flamenco performance and claimed roots of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_10::A4",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers, studying, and a dance studio are mentioned, but the passage is a neutral biography without clear pedagogical authority discourse."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Founding the first tablao in Miami could imply historical status, but the visible text does not explicitly rank or canonize it."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

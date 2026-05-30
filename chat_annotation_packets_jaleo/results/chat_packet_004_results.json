@@ -1,0 +1,247 @@
+[
+  {
+    "article_id": "JALEO_1977_09::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Soleares is one of the most mellowed out rhythms. It is so beautiful that I am able to dance what I feel.",
+        "target": "soleares",
+        "rationale": "The passage explicitly evaluates soleares as beautiful and emotionally expressive for dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article mentions classes and teachers, but only as biography; it does not position a teacher or method as authoritative."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The praise of soleares gestures toward emotional expression, but it does not clearly define a general aesthetic criterion for flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "soleares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_09::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Teo is an original and creative dancer",
+        "target": "Teodoro Morca",
+        "rationale": "The text makes an explicit positive artistic judgment about Morca's dancing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "his teaching is very inspiring as some San Diegans who have studied with him can testify",
+        "target": "Teodoro Morca's teaching",
+        "rationale": "The passage legitimates Morca as a teacher through testimony from students who studied with him."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The list of companies, tablaos, and Jacob's Pillow establishes professional biography, but it does not clearly create a canon or rank Morca."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Teodoro Morca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "usually considered to be, if not the most important, certainly one of two or three forms which make up the core of flamenco",
+        "target": "soleares",
+        "rationale": "The passage ranks soleares as central to the flamenco canon by calling it part of the core of flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "As with most flamenco, the cante is the defining element of the form.",
+        "target": "soleares",
+        "rationale": "The text defines the form's value and identity through the aesthetic criterion of cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "solea por bulerías which combines the strength of the bulerías with the restraint of the solea",
+        "target": "solea por bulerías",
+        "rationale": "The passage uses strength and restraint as aesthetic criteria to explain the value of a related form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article mentions roots and development in Triana, but the origin account is mostly neutral history rather than using roots to authorize present practice."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article explains form and technique, but the codebook's PED_03 requires institutional/transnational learning access rather than general exposition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "soleares",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In general, the house cuadros displayed the indifference for which they are famous",
+        "target": "Spanish tablao house cuadros",
+        "rationale": "The passage explicitly criticizes the quality and attitude of the tablao house performers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "in some clubs, such as \"Los Canasteros,\" the situation degenerated to the point where there was very little show.",
+        "target": "Los Canasteros and similar tablao shows",
+        "rationale": "The passage makes a negative evaluative judgment about the deterioration of the show."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "this is the time to move up closer to see the real show about to begin",
+        "target": "tablao attractions after the tourist audience leaves",
+        "rationale": "The passage uses critical boundary language to distinguish the ordinary tourist-facing show from the 'real show' that follows."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text contrasts tourists and a 'real show,' but it does not explicitly frame commercial spectacle as weakening authenticity."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The passage notes tourists leaving and moving closer, but the public/private or participatory setting contrast is not developed enough to code."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The narrator says they learned from the shows, but this is incidental experience rather than a discourse about access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Spanish tablao performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1977_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "he is almost always seated in the midst of the action--encouraging others to participate",
+        "target": "San Diego juergas",
+        "rationale": "The passage values Hendrix as a participatory presence who draws others into the juerga setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "His favorite guitarist is Paco de Lucia. He says, \"The guy's incredible, he just blows me away!\"",
+        "target": "Paco de Lucia",
+        "rationale": "The quoted statement is an explicit positive evaluation of a flamenco guitarist."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article lists lessons and teachers, but it does not clearly position them as pedagogical authorities beyond biographical training."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The 'long and close association with Charlie Blankenship' suggests influence, but the text does not clearly describe embodied, oral, lineage-based transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Hendrix is called an avid aficionado, but the article does not grant aficionado authority to recognize or judge flamenco as a community role."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Louis Hendrix and admired flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

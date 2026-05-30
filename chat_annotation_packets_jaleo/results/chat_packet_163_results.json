@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "JALEO_1983_03::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the \"Peteneras Boleras,\" would normally be of little interest to flamencophiles, because it is piano music belonging to the escuela bolera",
+        "target": "Peteneras Boleras",
+        "rationale": "The passage evaluates this form as marginally interesting to flamenco audiences because it belongs to another dance/music school."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "The possibility that the music might be rooted in ancient, exotic sources, does lend an aura of glamour to the petenera.",
+        "target": "the petenera",
+        "rationale": "The passage uses possible ancient roots to give the petenera present aesthetic and cultural value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy and non-gypsy performers are mentioned in relation to recordings, but the visible text does not clearly use identity to define belonging, authority, or representation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Luisa Pericet is mentioned as teaching a choreography, but the passage does not clearly construct her as an authoritative pedagogical mediator."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "the petenera and related petenera forms",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains enough evaluative and roots-based discourse to annotate conservatively."
+  },
+  {
+    "article_id": "JALEO_1983_03::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The phrase 'MAESTROS DE ACADEMIAS SEVILLANAS DE BAÍLE' names academy teachers in a program listing, but it does not itself authorize pedagogy or evaluate transmission."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The excerpt mentions guitar and dance courses, but only as logistical event information without learning-access or institutional legitimacy discourse."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "'TRADICIDNAL' appears in a program item, but the listing does not use tradition to authorize or judge flamenco practice."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is primarily a festival/program listing plus logistics and advertising."
+  },
+  {
+    "article_id": "JALEO_1983_03::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "A few strokes of the pen covering two or three linear inches in a few seconds will capture and deliver this great man's work to anyone who understands this code.",
+        "target": "zapateo footwork notation",
+        "rationale": "The notation is framed as a mediated system that gives learners access to flamenco footwork across distance and without travel."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Nor need any footwork henceforth be lost to the dark recesses of memory.",
+        "target": "flamenco footwork",
+        "rationale": "The passage frames notation as preserving embodied dance knowledge from loss, a safeguarding function for living practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Frozen in these few scratches below is the basic bulería step of Don Enrique El Cojo, peace be upon him.",
+        "target": "Don Enrique El Cojo's bulería step",
+        "rationale": "The named artist's step is presented as exemplary work worthy of capture and transmission."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The article concerns footwork as embodied practice, but the main discourse is written notation and mediated access rather than oral, familial, or lineage transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "a notation system for flamenco zapateo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_03::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Playing in compás with a clean sound is what good tachnique is all about.",
+        "target": "flamenco guitar technique",
+        "rationale": "The passage explicitly defines good flamenco guitar technique through compás and clean sound as aesthetic criteria."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Andres Segovia mentions that, through the patient study of scales, guitarists will correct faulty hand positions, gradually increase the strength of the fingers, physical beauty of sound, etc.",
+        "target": "scale practice for flamenco guitar technique",
+        "rationale": "The article legitimates technical training through recognized pedagogical authority and method-based correction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "\"You must feel the comás like a drum beating inside you.\" -- Benito Falacios",
+        "target": "compás learning",
+        "rationale": "Compás is framed as an internalized bodily rhythm rather than only an abstract timing rule."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Paco de Lucía and Segovia are cited as authorities, but the excerpt does not build a canon or rank flamenco artists."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "proper flamenco guitar technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_03::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I feel that it is important to stress a person's individuality within the tradition and within a teacher's style and approach to all the facets of technique and movement.",
+        "target": "flamenco dance pedagogy",
+        "rationale": "The passage frames learning as transformative rather than merely reproductive, emphasizing individual interpretation within instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "A teacher of flamenco has a great responsibility to encourage the individuality of his students, right from the beginning and not to encourage and create clopes of himself.",
+        "target": "flamenco teachers",
+        "rationale": "The article defines the teacher's legitimate pedagogical role as cultivating student individuality rather than cloning the teacher's style."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Within the art and tradition of flamenco there is unlimited room for self-expression. All of the basics of the age-old traditional movements can be molded to individual personality",
+        "target": "individual expression in flamenco",
+        "rationale": "Tradition and age-old movement vocabulary are invoked to authorize individual expression rather than restrict it."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text criticizes copying and sameness, but the stronger discourse function is pedagogical guidance about how students should learn."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text uses 'true' repeatedly for self-expression, but it does not clearly make an authenticity claim about proper flamenco itself."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "individuality within flamenco dance training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

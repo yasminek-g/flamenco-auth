@@ -1,0 +1,204 @@
+[
+  {
+    "article_id": "JALEO_1986_FALL::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "The flamenco art, which Federico García Lorca said was \"inherited\" rather than \"learned\", has produced a number of dynasties in this century and some of the leading ones are represented in the Flamenco Puro cast.",
+        "target": "Flamenco Puro cast and flamenco art",
+        "rationale": "The passage explicitly frames flamenco authority through inheritance, dynasties, and lineage rather than formal learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "The production will bring to North America Andalusia's most famed flamenco artists",
+        "target": "Flamenco Puro performers",
+        "rationale": "The article elevates the cast through hierarchical language that presents them as famed representatives of Andalusian flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "a star among stars, exudes a totally feminine voluptuousness in the soleares",
+        "target": "a Flamenco Puro performer",
+        "rationale": "The visible review text makes an explicit evaluative judgment of the performer's stage quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The title and repeated phrase Flamenco Puro suggest authenticity, but the visible passage does not clearly assert a genuine/proper flamenco claim beyond the production name."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Lineage and inheritance are present, but the passage frames them more as embodied/familial transmission than as public heritage safeguarding or memory-work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Flamenco Puro performers and the production's flamenco authority",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible text contains sufficient evidence for lineage and critical ranking codes."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It is not a good thing for the flamenco afficionado not to look back to the past once in a while, for the past is the mother of purity in the cante, baile and toque.",
+        "target": "flamenco cante, baile, and toque",
+        "rationale": "The passage explicitly grounds flamenco value and purity in continuity with the past."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "high",
+        "evidence_quote": "\"Correo Flamenco\" wishes to commemorate, in its own fashion, the eightieth anniversary of the death of Enrique \"El Mellizo\"",
+        "target": "memory of Enrique \"El Mellizo\"",
+        "rationale": "The passage performs public memory-work by commemorating a historic flamenco figure and preserving his significance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Mellizo, nor Chacón was from Málaga, yet they remain the most prestigious and famous malagueñeros of all time.",
+        "target": "Enrique \"El Mellizo\" and Chacón",
+        "rationale": "The passage canonizes the artists through superlative status within the malagueña tradition."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "T.V.E.--as it demonstrated in that miserable program \"Un, dos, tres\"-still considers our art to be the peculiar language of Andalusians drunk on ethyl alcohol.",
+        "target": "Spanish National Television's treatment of flamenco",
+        "rationale": "The author uses critical discourse to condemn media misrecognition and defend flamenco's cultural seriousness."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Enrique \"El Mellizo\" and flamenco's historical-cultural value",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "we cannot understand the reason for the silence [on the part of the media] with respect to these great artists, when commentators talk and talk and won't quit talking about others",
+        "target": "media commentators' treatment of Canalejas de Puerto Real and other artists",
+        "rationale": "The passage criticizes media/commentator authority for neglecting one artist while over-discussing others."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "how a cantaor of the stature of this man, and with creations which were the furor of his epoch",
+        "target": "Canalejas de Puerto Real",
+        "rationale": "The text elevates Canalejas through status language and positions his creations as historically important."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "not even by oral transmission",
+        "target": "memory and knowledge of past flamenco artists",
+        "rationale": "The passage frames the loss of reliable oral memory as part of a broader concern over neglected flamenco cultural remembrance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The public making the song 'their own' suggests community uptake, but it does not clearly grant community authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "Canalejas de Puerto Real and neglected flamenco artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is a factual accident report and does not visibly evaluate, authorize, preserve, teach, rank, or define flamenco belonging."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Church permission and a Vatican performance indicate institutional access, but the visible text does not frame flamenco as heritage or public cultural value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Performing for the Pope may imply prestige, but the passage reports the event without ranking or explicit canonizing evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is a short news item plus advertisements; institutional permission is reported but not developed into heritage or evaluative discourse."
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "article_id": "JALEO_1981_03::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Escudero came to America on his own in early 1932, presenting his first concert on January 17, and was extremely successful",
+        "target": "Vicente Escudero's American concerts",
+        "rationale": "The passage explicitly evaluates Escudero's concert success and reception."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "In the farruca, the dancers begin to insert acrobatic steps and infect it with the tempos and other peculiarities of other dance forms",
+        "target": "altered farruca dance practice",
+        "rationale": "The verb 'infect' criticizes hybridized or improper additions to a flamenco dance form and polices stylistic boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "I successfully danced the farruca for many years, but I abandoned this dance after I discovered its origins and mystifications.",
+        "target": "farruca",
+        "rationale": "The passage uses discovered origins and later mystifications as grounds for judging and abandoning a flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The editorial describes volunteer labor sustaining Jaleo, but it is primarily administrative and does not clearly contrast participatory flamenco settings with spectatorship or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Escudero and the farruca",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated and combines editorial subscription matter with continuation of an Escudero article; annotations are limited to visible evaluative passages."
+  },
+  {
+    "article_id": "JALEO_1981_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Flamenco, for Manolito el de María, was like a way of being, like a commandment of his race.",
+        "target": "gypsy identity and flamenco belonging",
+        "rationale": "The passage frames flamenco authority and belonging through an identity group, making race/gypsy identity central to what flamenco is."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The cante of the non-gypsies is something else; the non-gypsy sings by ear. The gypsy creates for his own kind",
+        "target": "non-gypsy versus gypsy cante",
+        "rationale": "The passage draws an evaluative boundary between gypsy creation and non-gypsy singing, devaluing the latter as merely learned by ear."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "development of technical skills in the guitar, however important, cannot by itself make you a good (or even average) flamenco guitarist if the \"aire\" or feeling is not there",
+        "target": "flamenco guitar quality",
+        "rationale": "The passage defines quality in flamenco guitar through aesthetic criteria: aire, feeling, and more than technical skill."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Fatherly/local transmission and a 'gypsy lesson of Alcalá' are suggested, but the visible passage emphasizes identity and purity boundaries more clearly than the mechanics of embodied or lineage transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The Mario Escudero concert is positively reviewed, but the strongest critical function is the explicit aesthetic criterion of aire/feeling."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "gypsy cante of Alcalá and Mario Escudero's flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_03::A4",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a source note and is too short to support discourse coding."
+  },
+  {
+    "article_id": "JALEO_1981_03::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "\"I started very young -- my father taught me -- ... The only way to learn flamenco,\" he said firmly, \"is to play for dancers.\"",
+        "target": "flamenco guitar learning",
+        "rationale": "The passage authorizes flamenco knowledge through familial teaching and embodied practical accompaniment."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "The real flamenco guitarist is supposed to know how to accompany singers and dancers.",
+        "target": "proper flamenco guitarist",
+        "rationale": "The passage explicitly defines what makes a guitarist a real flamenco guitarist."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "At the beginning you must learn the traditional style, but when you are grown, you begin to impose your way and your feeling.",
+        "target": "flamenco style development",
+        "rationale": "The passage grounds later individual style in first learning traditional style, using tradition as the authorized foundation for development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The claim that young solo players have 'mediocre' knowledge is boundary-policing, but it substantially overlaps with the emitted AUTH_01 definition of the real flamenco guitarist."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The discussion of holding back material concerns access to knowledge, but the visible passage is more reflective and anecdotal than a clear institutional or transnational learning-access claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "tradition"
+      ],
+      "target": "proper flamenco guitar knowledge",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_03::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The first week will be dedicated to seminars and lectures by eminent specialists in flamenco; the second week will feature recitals and concerts",
+        "target": "Jerez festival and flamenco courses",
+        "rationale": "The passage frames flamenco learning through formal seminars, lectures, and an organized course structure."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Dance classes will be taught by Teresa Martínez and Tomás Torre, with the guitar accompaniment of Gerardo Núñez. Guitar will be taught by Parrilla de Jerez and Pepe Moreno.",
+        "target": "course instructors and students",
+        "rationale": "Named teachers and specialists are positioned as authorized transmitters of flamenco dance and guitar knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Cátedra de Flamencología is an institution, but the visible text is a course announcement without explicit heritage or patrimonial authorization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "formal flamenco courses in Jerez",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

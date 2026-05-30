@@ -1,0 +1,152 @@
+[
+  {
+    "article_id": "JALEO_1984_05::A20",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Directory fragment is too short and purely listing-oriented; no clear discourse function is visible."
+  },
+  {
+    "article_id": "JALEO_1984_08::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "He is proud of having done for the guitar what nobody else has done until now: He has taken it around the world, made it fashionable, and given it some classical touches.",
+        "target": "Sabicas and his role in flamenco guitar",
+        "rationale": "The passage constructs Sabicas as an exceptional, canon-forming figure whose contribution surpasses others and globalizes the flamenco guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions records spreading flamenco guitar fandom worldwide, but it does not clearly frame this as learning, pedagogy, or access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Sabicas as a major figure in flamenco guitar history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_08::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "it appears to be aimed at a general, layman, flamenco audience",
+        "target": "flamenco quiz and lay audience",
+        "rationale": "The quiz is explicitly framed as a knowledge-access device for non-specialist flamenco readers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Dedicated to conserving the pura artistry of flamenco, Mr. Peña established the seminar \"Encuentra Flamenco\" offering the aficionado an intensive program of study as well as the opportunity to live in Andalucía, the heart of this musical culture.",
+        "target": "Paco Peña's seminar and flamenco artistry",
+        "rationale": "The seminar is authorized through conservation of pure flamenco artistry and access to Andalucía as the cultural heart of the tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pura artistry' invokes purity, but the visible text does not draw a clear boundary against impure, fake, or improper flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Promotional phrases such as 'wide critical acclaim' and 'extensive praise' are present, but they function as advertising copy without specific evaluative criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "flamenco knowledge for lay aficionados and Paco Peña's pedagogical seminar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_08::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "Because I don't want to be a millionaire... If I sing, if I want money, it is to buy goats and a little ranch house... And to be able to be free of the flamenco festivals.",
+        "target": "El Cabrero's relation to flamenco festivals and money",
+        "rationale": "The passage frames the singer's desired freedom from festival payment and commercial success as part of a more intimate, independent way of life."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The excerpt foregrounds El Cabrero's goatherd identity and marginality, but does not clearly make identity the basis of flamenco belonging or authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The passage critiques social and institutional control around the singer, but it does not clearly use expert criticism to police flamenco boundaries."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity"
+      ],
+      "target": "El Cabrero's anti-commercial artistic stance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible ending provides enough evidence for the anti-commercial authenticity code."
+  },
+  {
+    "article_id": "JALEO_1984_08::A4",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a formula/photo caption fragment and a name; it is insufficient for annotation."
+  }
+]

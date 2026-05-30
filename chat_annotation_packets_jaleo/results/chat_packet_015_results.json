@@ -1,0 +1,255 @@
+[
+  {
+    "article_id": "JALEO_1978_04::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "The atmosphere is made all the more authentic by the sound of flamenco music coming from radios in shops, bars and homes",
+        "target": "Sevilla atmosphere experienced through everyday flamenco sounds",
+        "rationale": "The passage explicitly attributes authenticity to the local soundscape of flamenco in everyday Sevilla life."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "guitarist, Manolo Brenes, who was exceptional",
+        "target": "Manolo Brenes",
+        "rationale": "The text makes an explicit evaluative judgment of the guitarist's quality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Best wishes to you all, especially the driving force behind San Diego's flamenco organization, Juana de Alva.",
+        "target": "Juana de Alva and San Diego's flamenco organization",
+        "rationale": "The passage recognizes a community actor as sustaining and leading the local flamenco organization."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The introductory sentence frames the visit as useful for someone learning flamenco guitar and Spanish, but the article itself mostly narrates travel impressions rather than a distinct pedagogical or access argument."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Sevilla flamenco atmosphere, Manolo Brenes, and Juana de Alva's San Diego flamenco organization",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_04::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "The Feria de Sevilla began formally in 1847 as an agricultural market for the sale of produce and livestock... gradually the Feria took on its present form.",
+        "target": "Feria de Sevilla",
+        "rationale": "The passage grounds the Feria's present form in historical development from an earlier origin."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "the guitar is almost always used in very noisy situations - fiestas, ferias, bars, and tablaos - where the main sound that comes through is the percussive element. Therefore, strong rasgueo and thumbwork were of primary importance.",
+        "target": "flamenco guitar technique in noisy social settings",
+        "rationale": "The passage explains how embodied guitar techniques developed from practical performance conditions and transmits that situated understanding to readers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "strong rasgueo and thumbwork were of primary importance",
+        "target": "flamenco guitar technique",
+        "rationale": "The text names specific technical/aesthetic criteria as central to effective guitar playing in flamenco social contexts."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The article references fiestas, ferias, bars, and tablaos, but the visible excerpt does not clearly contrast participatory and spectatorial settings as a value boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Feria de Sevilla and flamenco guitar technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt provides enough context for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1978_04::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "She began to study dancing at the age of six with such teachers as the renowned Enrique \"El Cojo\" and his niece, Marisol, the Maestro Realito",
+        "target": "Juanita Franco's dance formation",
+        "rationale": "The passage legitimates Juanita Franco's training through named and renowned teachers."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "eventually was awarded a carnet de bailarina which entitled her to perform professionally... appeared before most of the dance instructors in Sevilla and was tested in dancing flamenco, Spanish classical and ballet",
+        "target": "Juanita Franco's professional dance authorization",
+        "rationale": "Professional legitimacy is conferred through an official credential and examination by dance instructors."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "All exhibited a high level skill to the near capacity audience.",
+        "target": "Spanish dance concert company",
+        "rationale": "The embedded review explicitly evaluates the performers' technical skill."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the clarity of rhythm and body design were superior to anything else seen that evening",
+        "target": "Luis Montero's choreographic interpretation",
+        "rationale": "The passage ranks one work above the rest of the evening's program."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to traditional dances and nostalgic Feria/Rocío memories suggest continuity, but the visible text is primarily biographical rather than using tradition to authorize present flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "heritage",
+        "criticism"
+      ],
+      "target": "Juanita Franco's professional formation and the Spanish dance concert",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This article includes both a Juanita Franco profile and the beginning of a separate review; codes reflect both visible discourse functions."
+  },
+  {
+    "article_id": "JALEO_1978_04::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I have come to believe that they all have one thing in common - they are all too long!",
+        "target": "Spanish dance concerts in Los Angeles and San Diego",
+        "rationale": "The article makes a clear negative critical judgment about the length of Spanish dance concerts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the clarity of rhythm and body design were superior to anything else seen that evening",
+        "target": "Luis Montero's choreographic interpretation of Albeniz's \"Iberian Suite\"",
+        "rationale": "The review explicitly ranks this performance above the rest of the evening."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "This is the fourth record of one of the young worthies of the cante who has stood out in recent years... he is an excellent specialist in the cantes of Granada, Málaga, and the Levante.",
+        "target": "Luis de Córdoba",
+        "rationale": "The record review praises the singer's status and specialization in specific cante repertoires."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms like rhythm, body design, tonal flexibility, and faculties appear as aesthetic criteria, but CRIT_01 and CRIT_03 capture the stronger review functions without overcoding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Spanish dance concert programming, Luis Montero's choreography, and Luis de Córdoba",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_04::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "he is an excellent specialist in the cantes of Granada, Málaga, and the Levante",
+        "target": "Luis de Córdoba",
+        "rationale": "The passage explicitly praises Luis de Córdoba's quality and specialization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "one of the young worthies of the cante who has stood out in recent years",
+        "target": "Luis de Córdoba among younger cante performers",
+        "rationale": "The phrase positions Luis de Córdoba within a valued group of notable young singers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "well assimilated and is carried by his well-developed faculties and tonal flexibility",
+        "target": "Luis de Córdoba's singing style",
+        "rationale": "The review applies aesthetic criteria of assimilation, vocal faculties, and tonal flexibility to evaluate his singing."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Luis de Córdoba",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

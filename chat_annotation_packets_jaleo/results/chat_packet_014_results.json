@@ -1,0 +1,186 @@
+[
+  {
+    "article_id": "JALEO_1978_03::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "some of it was useful, especially to material-starved beginning guitarists in this country",
+        "target": "printed flamenco music as a learning resource for beginning guitarists",
+        "rationale": "The passage evaluates printed materials as a means of access to flamenco knowledge for learners lacking other methods."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "it is being done more and more by non-Spaniards, who have had to really understand the structure of flamenco in order to learn it, rather than relying on intuition as does the Spaniard who learns the music by absorbing it from his surroundings (contrary to popular Spanish belief, the feeling for flamenco does not originate in the blood)",
+        "target": "Spanish and non-Spanish flamenco learners/transcribers",
+        "rationale": "The article explicitly contests blood-based ethnic authority and reframes flamenco understanding as learned structural knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Much of the music wasn't worth much, being either written down incorrectly or very inferior material to begin with",
+        "target": "printed flamenco music and transcriptions",
+        "rationale": "The author makes direct evaluative judgments about the quality and correctness of published flamenco music."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article compares older and modern styles and mentions artists such as Sabicas and Paco de Lucía, but the stronger evidence is critical evaluation and pedagogy rather than explicit canon formation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["pedagogy", "criticism", "community"],
+      "target": "printed flamenco music and access to flamenco learning",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Repeated content from a prior issue is annotated only from the visible text for this article_id."
+  },
+  {
+    "article_id": "JALEO_1978_03::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Logistical announcement for a juerga; no clear evaluative, authorizing, pedagogical, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1978_04::A1",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article frames Sevilla as a place of Spanish cultural identity and mentions flamenco figures, but the visible passage does not clearly use flamenco identity to define belonging, authority, or representation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Antonio and Mairena are mentioned as prestige-bearing figures, but the article does not rank or canonize them within flamenco discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the article is a broad cultural and touristic celebration of Sevilla rather than a flamenco-specific discourse claim."
+  },
+  {
+    "article_id": "JALEO_1978_04::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I especially liked your educational articles, \"Rhythm of the month\" and \"Flamenco Music in Print,\" These articles provide information that is hard to find these days",
+        "target": "JALEO educational articles",
+        "rationale": "The letter values the newsletter as a mediator of scarce flamenco knowledge for readers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Sometimes at these juergas we see performances of far better quality than those of the expensive places because the feeling is friendlier and there is more of a relaxed atmosphere which always adds to the \"magic\" of the evening",
+        "target": "monthly juergas compared with expensive dinner-clubs",
+        "rationale": "The passage values the friendly, relaxed juerga setting over commercial dinner-club spectatorship as a condition for better flamenco experience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "performances of far better quality than those of the expensive places",
+        "target": "juerga performances versus dinner-club performances",
+        "rationale": "The writer explicitly evaluates performance quality by comparing juergas favorably to expensive clubs."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The contrast with expensive dinner-clubs suggests anti-commercial intimacy, but the passage frames the distinction more directly as participatory/community setting and quality evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community", "criticism"],
+      "target": "JALEO educational articles and monthly juergas",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The letter is short but contains explicit pedagogical and evaluative claims."
+  },
+  {
+    "article_id": "JALEO_1978_04::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "But was it a Juerga? Was it a flamenco party or just a party?",
+        "target": "Jaleistas monthly gatherings",
+        "rationale": "The author contrasts a meaningful flamenco juerga with a generic party, making the participatory setting itself a criterion of value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Out of one hundred and sixty people forty-six were members and one hundred and fourteen were guests",
+        "target": "members, guests, and new arrivals at Jaleistas juergas",
+        "rationale": "The passage draws a social boundary between members and guests to question whether the group can absorb outsiders while maintaining a flamenco juerga."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "can Jaleistas absorb one hundred new arrivals in one evening (many of whom have never been exposed to flamenco) and still retain the essence of a Juerga?",
+        "target": "the essence of a Jaleistas juerga",
+        "rationale": "The concern that mass attendance by newcomers may erode the juerga's essence links intimate social scale to authentic flamenco experience."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Jaleistas community-building is central, but the clearest discourse is about insider/outsider boundaries and participatory setting rather than aficionado authority to judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["community", "authenticity"],
+      "target": "Jaleistas juergas and their guest policy",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article explicitly questions whether numerical success threatens the flamenco character of the gathering."
+  }
+]

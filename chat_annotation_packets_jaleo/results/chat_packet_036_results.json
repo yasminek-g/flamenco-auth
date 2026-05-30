@@ -1,0 +1,194 @@
+[
+    {
+        "article_id": "JALEO_1978_11::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "confidence": "medium",
+                "evidence_quote": "The Spanish dance technique took its true form at the end of the eighteenth century... With all these famous dancers and some others our technique spread all through central Europe",
+                "target": "Spanish dance technique",
+                "rationale": "The passage grounds the value and authority of Spanish dance technique in an origin narrative and historical continuity across Europe."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "confidence": "high",
+                "evidence_quote": "they would abandon their serious work and go out to the salas de fiesta, cabarets, etc., and in exchange for a greater economic renumeration, generally lose some part of their technique and, of course, prostitute their dance",
+                "target": "dancers who leave serious company work for commercial venues",
+                "rationale": "Commercial remuneration and cabaret work are framed as corrupting technique and debasing the dance."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "passion, elegance, and subtle voluptuosity (characteristics of the Spanish technique) stood out",
+                "target": "Spanish dance technique",
+                "rationale": "The passage names aesthetic qualities as defining criteria of Spanish technique and uses them to explain artistic value."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "tradition",
+                "authenticity",
+                "criticism"
+            ],
+            "target": "Spanish dance technique and serious Spanish dance practice",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Truncated article; coding is limited to visible historical and closing evaluative passages."
+    },
+    {
+        "article_id": "JALEO_1978_11::A6",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "medium",
+                "evidence_quote": "The famous teacher of zapateado, \"El Estampio\", used to teach his well known zapateado de las campanas with the accent on \"l\"",
+                "target": "El Estampio's zapateado teaching",
+                "rationale": "A named teacher is invoked as a pedagogical authority for understanding zapateado accentuation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "Of prime importance is \"matice\" or the subtle shading and dynamics of movement, footwork, palmas and other audible rhythms and methods.",
+                "target": "flamenco dance and zapateado practice",
+                "rationale": "The passage defines quality through aesthetic and technical criteria such as comp\u00e1s, accentuation, shading, dynamics, and rhythmic expression."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "expressive flamenco dance technique and accompaniment practice",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article is strongly instructional, but codes are limited to explicit pedagogical authority and aesthetic criteria."
+    },
+    {
+        "article_id": "JALEO_1978_11::A7",
+        "no_relevant_discourse": true,
+        "insufficient_context": true,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "The fragment mentions gypsy culture, but the sentence is incomplete and does not visibly show how identity shapes belonging, authority, or representation."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "unclear",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Visible text is too short and syntactically incomplete for reliable coding."
+    },
+    {
+        "article_id": "JALEO_1978_11::A8",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "high",
+                "evidence_quote": "We did not want to fall into common cliches or something conventional... putting on stage what we really are: gitanos canasteros.",
+                "target": "Lole and Manuel's staged flamenco identity",
+                "rationale": "The passage presents their performance as genuine self-representation rather than clich\u00e9 or convention."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "high",
+                "evidence_quote": "These are the Montoyas, Lole's family: A gypsy grandmother with gray hair and matriarchal hips, uncles and cousins of light feet and steel waists, Antonia La Negra, her mother, and the girls.",
+                "target": "the Montoya family and gitanos canasteros identity",
+                "rationale": "Family and Gypsy identity are used to frame who embodies and represents the flamenco performance."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Lole and Manuel are the most famous flamenco couple of today.",
+                "target": "Lole and Manuel",
+                "rationale": "The statement creates a status hierarchy by ranking them as the most famous contemporary flamenco couple."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "authenticity",
+                "community",
+                "criticism"
+            ],
+            "target": "Lole and Manuel's family-based flamenco performance",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Truncated article; codes rely only on visible identity, authenticity, and status claims."
+    },
+    {
+        "article_id": "JALEO_1978_11::A9",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "From now on I plan to write for guitarists with less experience... Therefore I'm going to concentrate on structural aspects of flamenco in this series.",
+                "target": "less experienced guitarists learning cante accompaniment",
+                "rationale": "The column explicitly mediates flamenco knowledge for learners through a written instructional series."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "high",
+                "evidence_quote": "If you know traditional palmas, you should play them while you listen; this way you will begin to achieve a singer's point of view",
+                "target": "learning flamenco accompaniment through listening and palmas",
+                "rationale": "The passage frames knowledge as acquired through embodied listening, rhythmic practice, and adopting the singer's perspective."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "structure is the key to understanding flamenco; it's the framework on which all improvisation is created",
+                "target": "flamenco cante and accompaniment",
+                "rationale": "The passage defines structure, mood support, and accompanist responsiveness as criteria for understanding and evaluating flamenco accompaniment."
+            }
+        ],
+        "possible_but_not_emitted": [],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "flamenco listening and cante accompaniment knowledge",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "Full article is pedagogical and evaluative; no heritage or community code emitted without stronger public-culture or belonging evidence."
+    }
+]

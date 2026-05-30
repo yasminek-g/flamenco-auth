@@ -1,0 +1,221 @@
+[
+  {
+    "article_id": "JALEO_1983_01::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "I wondered if there was any possibility of taking three or four dance lessons from Raquel... she was so helpful providing me with all kinds of information regarding Washington, D.C., places where flamenca was presented",
+        "target": "access to flamenco dance lessons and local flamenco knowledge through Raquel Peña",
+        "rationale": "The letter frames a visiting outsider's access to flamenco learning and scene knowledge through an established performer-teacher."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "El Cabrero is described as popular and unable to sing in one episode, but the passage primarily reports a legal incident rather than evaluating flamenco artistry."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The artistic community campaigns for El Cabrero, but this is solidarity around punishment rather than community authority to recognize or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Raquel Peña as mediator of flamenco dance learning and local access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The El Cabrero section is not coded because the discourse centers on legal punishment and satire, not flamenco authority or evaluation."
+  },
+  {
+    "article_id": "JALEO_1983_01::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Bohemians, the lost generation, beatniks, subterraneans, heaven's minstrels, wandering scholars, hippies, hcbcs, bums, flamencos, and of course, the perennial gypsies",
+        "target": "flamencos and gypsies as identity/lifestyle groups outside mainstream success values",
+        "rationale": "The article frames flamencos and gypsies through identity categories that organize belonging, lifestyle, and cultural value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "It seems to me that the payo (nan-gypsy) works all of his life for things that he does not really want or need... But we, in our simple existence, have everything we need to be happy.",
+        "target": "gypsy versus payo value systems",
+        "rationale": "The quoted contrast draws a social boundary between gypsy and non-gypsy ways of life, making belonging shape cultural authority and value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The passage values anti-bourgeois simplicity, but it does not clearly link commercial or intimate settings to flamenco authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates mainstream success values, but not a flamenco artist, performance, style, or event."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community"
+      ],
+      "target": "gypsy/flamenco bohemian lifestyle values",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded as community/identity discourse rather than authenticity because the visible text is about lifestyle values, not proper flamenco form."
+  },
+  {
+    "article_id": "JALEO_1983_01::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Contributor acknowledgments and advertising rates contain no relevant discourse function."
+  },
+  {
+    "article_id": "JALEO_1983_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "every night I was with him, and he taught me a lot of cante",
+        "target": "Enrique Morente's learning of cante through close work with a knowledgeable singer",
+        "rationale": "The passage frames flamenco knowledge as transmitted through sustained personal contact and embodied/social apprenticeship."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "When you are working and you find yourself with a person who knows more than you, you go to that person and learn from him.",
+        "target": "knowledgeable practitioners as authorities for learning cante",
+        "rationale": "The speaker explicitly legitimates learning through those who know more, positioning experienced practitioners as pedagogical authorities."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "you start creating your own form -- without realizing it; soon, you have your own way of singing... There's no reason for it to always be the same fandango, sung the same way.",
+        "target": "creative transformation within flamenco learning and performance",
+        "rationale": "The passage describes moving from learned material toward individual transformation rather than fixed reproduction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Compás and cante clásico appear, but the visible passage uses them mainly in demonstration and explanation, not as evaluative criteria."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to Aurelio and cante clásico suggest tradition, but the passage emphasizes learning and variation more than continuity as authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Morente's cante as learned through apprenticeship and developed through creative transformation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt contains enough evidence for pedagogical transmission codes."
+  },
+  {
+    "article_id": "JALEO_1983_01::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "it may have been one of the best all flamenco touring companies... the company contained the best Spain had to offer",
+        "target": "Carmen Amaya's touring company",
+        "rationale": "The passage ranks the company as exemplary and constructs a value hierarchy around its artistic status."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "true flamences are exhilarated but constrained by stage performances and frequently can't wait to get off stage and start performing \"free form.\"",
+        "target": "free-form juerga performance after the staged show",
+        "rationale": "The passage treats staged performance as constraining and off-stage free-form performance as closer to real flamenco vitality."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "while waiting for that train, I experienced my first juerga. Sabicas' guitar came out, the girls sang, and there was much knuckling of the tables.",
+        "target": "informal juerga in the train-station lunchroom",
+        "rationale": "The passage values an intimate, participatory setting over formal spectatorship by presenting the juerga as a transformative flamenco encounter."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco is one of the truly great folk musics and hopefully will be preserved forever by those who, like me, became intoxicated by it",
+        "target": "flamenco as a folk music to be preserved for future generations",
+        "rationale": "The passage frames flamenco as a cultural practice requiring preservation and transmission to children and grandchildren."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'true flamences' signals authenticity, but the stronger and more specific discourse function is anti-stage/intimate authenticity captured by AUTH_04."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The closing advertisement mentions mastery and learning, but it is promotional copy rather than a substantive access or pedagogy discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "community",
+        "heritage",
+        "criticism"
+      ],
+      "target": "informal juerga/free-form flamenco and Carmen Amaya's company",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Although the article is truncated, the visible passage clearly supports the coded evaluation, authenticity, participatory-setting, and preservation claims."
+  }
+]

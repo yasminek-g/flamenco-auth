@@ -1,0 +1,196 @@
+[
+  {
+    "article_id": "JALEO_1980_03::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The story is poignant, the work is extremely moving and has been received with great enthusiasm by the public.",
+        "target": "Patri Nader Spanish Dance Co.'s special ballet \"La Despedida\"",
+        "rationale": "The passage explicitly evaluates the emotional success and public reception of a flamenco-related dance work."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The article uses emotional and descriptive language, but it does not clearly define a broader aesthetic criterion beyond praising one work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "\"La Despedida\" and the Patri Nader Spanish Dance Co. program",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Program listings dominate the article; only the explicit evaluation of the ballet is coded."
+  },
+  {
+    "article_id": "JALEO_1980_03::A18",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The appeal to San Diegans and Jaleistas concerns attendance and ticket reservations, not community authority to recognize or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This is primarily an event and ticket notice with no clear evaluative, authorizing, heritage, pedagogical, or boundary-making discourse."
+  },
+  {
+    "article_id": "JALEO_1980_03::A19",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga is organized as a member gathering, but the text is administrative and does not evaluate private/social participation as more meaningful or authentic flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Cuadro membership and responsibilities are listed, but members are not framed as possessing flamenco authority or insider recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article describes internal logistics for juergas rather than making discourse claims about flamenco value or authority."
+  },
+  {
+    "article_id": "JALEO_1980_04::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "That Marina and José Luis, her husband and guitarist, are Spaniards and authentic representatives of their country's dance was only partially to blame.",
+        "target": "Marina Torres and José Luis López",
+        "rationale": "The article explicitly presents the performers as authentic representatives of Spanish dance, authorizing their flamenco-related practice through genuineness."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "I've seen the baile performed by gitanos, Españoles and those of foreign extraction like myself... All this obsession for flamenco has made me discriminating against imitation of any sort, be it inadequate technique and a lack of \"aire\"; or at the other extreme, excessive technique accompanied by cold delivery - again, no \"sentido\".",
+        "target": "imitation, inadequate technique, and cold excessive technique in flamenco dance",
+        "rationale": "The passage draws a boundary between legitimate flamenco expression and devalued imitation or technique lacking aire and sentido."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "she danced with footwork unbelievably intricate and at once filled with that elusive element, that creative energy that makes sound speak of other dimensions. Her alegrías was full of gracia.",
+        "target": "Marina Torres's alegrías and taconeo",
+        "rationale": "The article applies aesthetic criteria such as intricate footwork, creative energy, sound, and gracia to define the quality of Marina's performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "She has taught classes in flamenco with emphasis on a base of footwork, braceo and choreography for fandango de Huelva. Her classes have not been cut and dry technique; throughout, she has worked to give us the source of improvisation",
+        "target": "Marina Torres as flamenco teacher",
+        "rationale": "The passage presents Marina as transmitting flamenco knowledge through classes that go beyond technique toward improvisational understanding."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "at times having us do palmas in soleares tempo for beginners, alegrías and bulerías for the more enterprising... Along with the ritmo ever present in our minds, Marina hummed the paseíllos in the fandango and sang the coplas. She emphasized the role of the cante, showing its relation to the dance, where and how it fit the compás.",
+        "target": "Marina Torres's embodied teaching of rhythm, cante, and dance",
+        "rationale": "The article describes flamenco knowledge as transmitted through palmas, rhythm, singing, compás, and bodily dance structure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article says Marina's dance blends old and new and has a deep origin, but the passage does not clearly use tradition or continuity as an independent authorizing frame."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Aficionados in the audience are mentioned, but they are not explicitly positioned as authorities who recognize or judge flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains broad praise, but CRIT_02 captures the more specific evaluative criteria driving the judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["authenticity", "pedagogy", "criticism"],
+      "target": "Marina Torres's flamenco dance and teaching",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is unusually rich; five codes are warranted because authenticity, purity boundary-work, aesthetic criteria, and two distinct pedagogical modes are separately evidenced."
+  },
+  {
+    "article_id": "JALEO_1980_04::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "It gave us a big boost to hear from the Cátedra de Flamencología de Jerez de la Frontera and to learn that our magazine will now become part of their flamenco museum.",
+        "target": "Jaleo magazine",
+        "rationale": "The passage frames the magazine's value through recognition and incorporation by an institutional flamenco museum."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial mentions keeping Jaleo alive and a possible issue on Diego del Gastor, but it does not clearly frame this as safeguarding or living heritage work."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The appeal for readers, subscribers, and contributors builds community participation, but not community authority to judge or authorize flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The magazine circulates records and articles, but the passage emphasizes finances and operations rather than access to flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["heritage"],
+      "target": "Jaleo magazine",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the editorial concerns the magazine's finances and operations; the clearest discourse code is institutional heritage recognition."
+  }
+]

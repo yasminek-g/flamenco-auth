@@ -1,0 +1,252 @@
+[
+  {
+    "article_id": "JALEO_1982_10::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Over 700 years of Arabic influence on the culture of Spain is still strongly preserved in this dance form.",
+        "target": "Zambra Mora and its relation to flamenco",
+        "rationale": "The article grounds the value and identity of Zambra Mora in preserved historical roots and cultural continuity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "That's a question that dance students inevitably ask me. Some found out last June 20th at a successful and well-attended workshop on Zambra Mora which I gave in Los Angeles.",
+        "target": "Zambra Mora instruction for dance students",
+        "rationale": "The passage frames access to flamenco-related knowledge through a workshop and student questioning in a transnational instructional setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco, though, was born in Spain and came, in part, from the gypsies. By nature a mystical and passionate people, the gypsies evolved their own unique style of music.",
+        "target": "Gypsy contribution to flamenco origins",
+        "rationale": "The passage uses identity-group framing to explain who shaped flamenco and how their qualities are represented as culturally formative."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The author teaches and explains the form, but the visible text does not strongly position her personal authority as a teacher beyond the workshop context already captured by PED_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Zambra Mora as a flamenco-related dance form rooted in Arabic, Spanish, and Gypsy histories",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement-like class listing at the end was not coded."
+  },
+  {
+    "article_id": "JALEO_1982_10::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The incredible balance of rhythmic energy and pulse make for what I call an ongoing natural search for more -- not so much more variety... but of more depth, of more involvement within the form, of true self-expression finding itself.",
+        "target": "bulerías",
+        "rationale": "The passage defines the aesthetic value of bulerías through rhythmic balance, depth, involvement, and self-expression."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "True improvisation is letting all that you have learned trickle down into the soul... and then letting the roots push up and slossom into a beautiful bouquet.",
+        "target": "learning and improvising bulerías",
+        "rationale": "The passage frames flamenco learning as internalized, embodied knowledge that becomes improvisational expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The visible excerpt lists common learner questions, but the stronger pedagogical discourse concerns embodied internalization rather than institutional or transnational access."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Fiesta, rehearsal, and juerga are mentioned, but the excerpt does not clearly grant authority to a community of aficionados or participants."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "bulerías as a deep, rhythmically complex, embodied flamenco form",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1982_10::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "I would say to the Madrid public that they can be sure that, good or bad, my music is authentic.",
+        "target": "Manolo Sanlúcar's music",
+        "rationale": "Sanlúcar explicitly asserts the authenticity of his flamenco-related music."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "My music has two sides. One part is that of traditional flamenco, with its classical canons... Flamenco is a style, but it is not something boxed in or closed.",
+        "target": "Sanlúcar's flamenco style",
+        "rationale": "The passage authorizes innovation by anchoring it in traditional flamenco and classical canons while allowing continuity to remain open."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Twenty-eight years playing the guitar, fourteen LP's, and the general opinion that he is one of the best flamenco guitarists of all times, are sufficient proof of his popularity.",
+        "target": "Manolo Sanlúcar",
+        "rationale": "The article constructs Sanlúcar's canonical standing through superlative ranking and accumulated career evidence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The discussion of being Andaluz and the air and sea affecting flamenco is identity framing, but it is secondary to clearer authenticity, tradition, and canon claims."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article includes evaluative language about the opera being ambitious and beautiful, but those judgments overlap with the stronger canon/ranking discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Manolo Sanlúcar and his flamenco music",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Routine recording-contract details were not coded."
+  },
+  {
+    "article_id": "JALEO_1982_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "the flamenco show there thoroughly lived up to my expectations... a group of artists whose combined talents resulted in a most exciting performance.",
+        "target": "Espartacus Restaurant flamenco show",
+        "rationale": "The review explicitly evaluates the performance as exciting and successful."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Without exception, each performer projected his or her personality with strength and individuality.",
+        "target": "the performers in the reviewed show",
+        "rationale": "The passage applies aesthetic criteria of strength, individuality, passionate cante, style, and powerful contratiempos to assess flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to gypsy style, Cuban parentage, and Jerez are present, but they function mainly as performer description rather than clear identity-based authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Espartacus Restaurant flamenco performers and show",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The review is evaluative but does not draw an authenticity or insider boundary."
+  },
+  {
+    "article_id": "JALEO_1982_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "It was very beautiful to see all the flamenco artists gathered there to pay tribute to a great master of the guitar, to Mario Escudero.",
+        "target": "Mario Escudero and the flamenco artist community",
+        "rationale": "The passage legitimates Escudero through collective recognition by flamenco artists gathered in homage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "pay tribute to a great master of the guitar, to Mario Escudero",
+        "target": "Mario Escudero",
+        "rationale": "Calling Escudero a great master canonizes him within flamenco guitar hierarchy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "DOMINGO ALVARADO SANG AS NEVER BEFORE AND DEDICATED ONE OF HIS SONGS TO THE CHILDREN LISTENING ATTENTIVELY.",
+        "target": "Domingo Alvarado's performance",
+        "rationale": "The caption makes a direct evaluative judgment about the quality of Alvarado's singing at the homage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The homage has memory-work features, but the visible text does not clearly frame the event as heritage, safeguarding, or public cultural patrimony."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Paco Ortiz is identified as a former dance teacher, but that biographical note does not authorize flamenco knowledge or teaching in the article's discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Mario Escudero and the homage performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Institution and sponsor lists were treated as organizational context, not heritage authorization."
+  }
+]

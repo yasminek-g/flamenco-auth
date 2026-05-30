@@ -1,0 +1,236 @@
+[
+  {
+    "article_id": "JALEO_1984_03::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The raw power of the instrument, then just 10 days after completion, was overwhelming.",
+        "target": "Gran Maestro Mirabile flamenco guitar",
+        "rationale": "The passage explicitly evaluates the instrument's performance quality through strong praise of its sound."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "The tone is extremely clear, and the process gives it not additional volume, but rather incredible carrying power, along with a very rich tone.",
+        "target": "Gran Maestro Mirabile flamenco guitar",
+        "rationale": "The passage defines the guitar's value through aesthetic and acoustic criteria such as clarity, carrying power, and richness of tone."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The visible trigger word 'practice' refers to someone playing the guitar backstage, not embodied/oral transmission or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Gran Maestro Mirabile flamenco guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible review window is sufficient for the emitted evaluative codes."
+  },
+  {
+    "article_id": "JALEO_1984_03::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Rosa Montoya is the only Spanish Gypsy Flamenco dance artist residing in the United States.",
+        "target": "Rosa Montoya",
+        "rationale": "The passage uses ethnic and national identity framing to mark Montoya's distinctive representational authority in the United States."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "She was born the niece of Carlos Montoya, Maestro of Flamenco Guitar",
+        "target": "Carlos Montoya and Rosa Montoya's lineage/status",
+        "rationale": "The title 'Maestro of Flamenco Guitar' invokes canonical status and lends prestige to the artist profile."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "The Juan Talavera Spanish and Flamenco Dance Workshop For Beginner and Intermediate Dance Students",
+        "target": "Juan Talavera Spanish and Flamenco Dance Workshop",
+        "rationale": "The notice frames flamenco learning through an organized workshop accessible to beginner and intermediate students."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Promotional descriptions such as sold-out audiences and touring history are mostly press-release credentials rather than clear critical assessment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Rosa Montoya, Carlos Montoya, and flamenco dance workshops",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated press-release packet; codes are limited to visible identity, canonical-status, and workshop-access claims."
+  },
+  {
+    "article_id": "JALEO_1984_03::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was also an evening of beautifully produced and muanced theater.",
+        "target": "Pilar Rioja's program",
+        "rationale": "The review explicitly praises the production and theatrical quality of the performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "these were beats of impressive delicacy and dynamic variety",
+        "target": "Pilar Rioja's flamenco section",
+        "rationale": "The reviewer applies aesthetic criteria of delicacy and dynamic variety to evaluate the dancing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "the vibrant world of Spanish dance, she is teaching the art to students. The school has served as a training ground for company members.",
+        "target": "Peña's school and students",
+        "rationale": "The visible ending frames Spanish/flamenco dance transmission through a school that trains students and future company members."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "References to history and traditions contextualize the program but do not clearly use tradition to authorize present flamenco practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Historical references to Fanny Elssler and Petipa are comparative context, not a clear ranking or canon-building move in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Pilar Rioja's program and Spanish/flamenco dance training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated; emitted codes use only visible review and ending-context evidence."
+  },
+  {
+    "article_id": "JALEO_1984_03::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The phenomenal dancing of La Tati has already stunned audiences; her bodywork, hands and the footwork and her duende",
+        "target": "La Tati's dancing",
+        "rationale": "The report explicitly praises La Tati's performance quality and audience impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "her bodywork, hands and the footwork and her duende",
+        "target": "La Tati's dancing",
+        "rationale": "The passage evaluates flamenco quality through named aesthetic criteria including bodywork, footwork, and duende."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Scott Jackson Wiley... is probably the best interpreter of the Spanish classics for guitar.",
+        "target": "Scott Jackson Wiley",
+        "rationale": "The report creates a hierarchy by ranking Wiley as probably the best interpreter of Spanish classics for guitar."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga scenes describe participatory gatherings, but the passage mainly lists attendees and events without clearly contrasting participation with spectatorship as a value claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase 'pupil of Diego del Gastor' identifies a teacher relation, but the visible sentence does not develop lineage transmission as an authorizing discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "La Tati and other New York flamenco performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1984_03::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "Everyone with an interest in flamenco at all levels of ability is invited to participate in this flamenco music & fellowship party.",
+        "target": "Los Angeles juerga",
+        "rationale": "The notice frames the juerga as an inclusive participatory flamenco setting centered on fellowship rather than passive attendance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The phrase 'all levels of ability' concerns event participation, not a teaching or institutional learning-access claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Los Angeles juerga participation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

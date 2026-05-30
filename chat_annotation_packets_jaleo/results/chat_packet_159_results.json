@@ -1,0 +1,228 @@
+[
+  {
+    "article_id": "JALEO_1983_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "He was descended from a family with a great tradition in the cante; on one side was El Fillo... and on the other, El Planeta",
+        "target": "Manolo Caracol's cante and flamenco voice",
+        "rationale": "The passage authorizes Caracol's cante through familial and intergenerational artistic lineage."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "professionals had incorporated into their repertoire elements that distorted the pure cante",
+        "target": "professional performers in the Concurso de Cante Jondo context",
+        "rationale": "The passage draws a purity boundary by excluding professionals as carriers of distorted rather than pure cante."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Manolo Caracol would come to have the flamenco voice \"par excellence\"",
+        "target": "Manolo Caracol",
+        "rationale": "The phrase elevates Caracol as an exemplary canonical flamenco voice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The ending mentions origins and regypsification, but the visible evidence is more directly captured by lineage transmission and critical canonization."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "tradition", "pedagogy", "criticism"],
+      "target": "Manolo Caracol and pure cante",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; coded only visible lineage, purity-boundary, and canonizing claims."
+  },
+  {
+    "article_id": "JALEO_1983_01::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The basis of flamenco music is pure Indo-Moorish.",
+        "target": "flamenco music",
+        "rationale": "The passage grounds flamenco's value and identity in a specific origin and historical-cultural root."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "For those who reached southern Spain... their music and dance flourished, taking on new dimensions as they mingled with, influenced and amalgamated the indigenous culture and that of Spain's Islamic conquerors.",
+        "target": "gypsy, Indian, Moorish, and Spanish cultural groups in flamenco formation",
+        "rationale": "The passage frames flamenco through identity-group origins and cultural amalgamation, making group identity central to the account of flamenco development."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The word pure appears, but the discourse function is primarily an origin/roots claim rather than a direct claim that a present practice is genuine flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "community"],
+      "target": "flamenco music and dance origins",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Historical roots article; no stronger purity-boundary code emitted because the text mainly narrates origins."
+  },
+  {
+    "article_id": "JALEO_1983_01::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The power of flamenco is not in quantity... Much of the excitement of flamenco dance lies in the subtle movements and feelings, the unsaid, the hint and power of the understatement",
+        "target": "flamenco dance quality",
+        "rationale": "The passage defines flamenco aesthetic value through subtlety, understatement, inward power, and individual expression."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "The people who have tried to make rock and roll or jazz flamenco have usually failed... they just make it something that it is not; the real power and excitement is lost.",
+        "target": "rock-and-roll or jazz flamenco hybrids",
+        "rationale": "The passage polices a boundary around proper flamenco by claiming hybridized versions become something flamenco is not."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "big and more are better, and the philosophy of quantity over quality is stressed",
+        "target": "contemporary large-scale technique-driven dance trends",
+        "rationale": "The passage criticizes contemporary spectacle and quantity-driven technique as a decline from flamenco's real expressive power."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The Las Vegas/Moulin Rouge spectacle comparison suggests anti-spectacle authenticity, but commercialization itself is not the central stated threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "criticism"],
+      "target": "subtle flamenco dance versus spectacle and hybridized flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Strong evaluative/aesthetic discourse; hybrid boundary coded only where the text explicitly says it becomes something flamenco is not."
+  },
+  {
+    "article_id": "JALEO_1983_01::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "In Sevilla, the teachers organized competitions and contests among their students, and each student would try to outdo the others... it being an honor for the academy to which the winner belonged.",
+        "target": "classical Andalusian dance pedagogy",
+        "rationale": "The passage frames dance transmission through teachers, academies, contests, and institutional student training."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "it was the best resource that could have been hoped for... taken to Sevilla where the maestros [teachers] transformed it into one of the most difficult dances to execute",
+        "target": "maestros of the classical Andalusian school",
+        "rationale": "The teachers are credited with transforming and authoritatively developing the dance form."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text discusses origins and preservation of dance elements, but mostly as historical-pedagogical development rather than as an explicit authenticity or continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Competitions imply ranking, but the passage does not dwell on a canon or hierarchy beyond the pedagogical contest setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "classical Andalusian dance and its teachers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Although not exclusively flamenco, the article is within a flamenco/Spanish dance discourse and clearly concerns institutional dance transmission."
+  },
+  {
+    "article_id": "JALEO_1983_01::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "A Special Spanish Experience for Music and Spanish Language Students... cooperative effort by the Honolulu Symphony, the American Association of Teachers of Spanish and Portuguese, and the Department of Education of the State of Hawaii",
+        "target": "Spanish dance/flamenco educational concert in Hawaii",
+        "rationale": "The passage frames flamenco and Spanish dance as mediated through institutions for student learning and cultural access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The costuming, music, dance and programming were very professional, very enjoyable",
+        "target": "El Paseo Inn performers/programming",
+        "rationale": "The passage explicitly evaluates the quality and professionalism of the performance elements."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the dance and cante with precision and soul",
+        "target": "dance and cante performance",
+        "rationale": "Precision and soul are used as aesthetic criteria for valuing the performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "we hope that El Paseo Inn will include more true flamenco in the coming year's entertainment",
+        "target": "El Paseo Inn's flamenco programming",
+        "rationale": "The passage explicitly invokes true flamenco as a desired standard for future programming."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["authenticity", "pedagogy", "criticism"],
+      "target": "Spanish dance/flamenco educational programming and El Paseo Inn entertainment",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated review; coded educational mediation from the opening and performance evaluation/authenticity from the visible ending."
+  }
+]

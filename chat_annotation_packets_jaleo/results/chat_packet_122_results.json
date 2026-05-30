@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "JALEO_1981_11::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "they have a second rate floorshow which doesn't cost a lot of money and the audience seems to enjoy it, especially if it is commercial with pasedobles in it, they prefer to keep that on rather than look for better quality floorshows with better dancers in it.",
+        "target": "commercial Spanish-restaurant floorshows in Australia",
+        "rationale": "The passage criticizes commercial, second-rate floorshows and contrasts them with better-quality flamenco dancing, policing a quality boundary around proper performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "we find going to Sydney inspirational as far as learning and seeing good flamenco, because of the amount of talent there.",
+        "target": "Adelaide flamenco group's access to learning through Sydney and Spain",
+        "rationale": "The article frames flamenco knowledge as accessed across geographic distance through travel, observation, and exposure to stronger talent centers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "That particular restaurant was the closest to a tablao we have ever had. It was a place that had a resident flamenco guitarist/singer and people were always welcome to come in and dance a little, sing and do palmas.",
+        "target": "restaurant tablao-like participatory flamenco setting in Adelaide",
+        "rationale": "The passage values a venue not just as a performance site but as a participatory setting where people could dance, sing, and do palmas."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article repeatedly names national and ethnic backgrounds, but these mostly describe group composition rather than clearly defining identity-based flamenco authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There are evaluative comments on individual members' progress and ability, but the stronger critical discourse is the boundary critique of commercial floorshows."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "flamenco practice and performance access in Adelaide, Australia",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article legitimates the Adelaide group through learning, participation, and commitment while criticizing low-quality commercial floorshows."
+  },
+  {
+    "article_id": "JALEO_1981_11::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "MANOLO \"EL CHINO\" (ONE OF LONDON'S PREMIER DANCERS)",
+        "target": "Manolo \"El Chino\"",
+        "rationale": "The caption elevates Manolo by placing him among London's premier dancers, creating a status hierarchy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The birthday party and country home settings imply social flamenco contexts, but the visible text gives only captions without evaluative participation stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo \"El Chino\"",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Most of the text is thanks and photo captions; only the 'premier dancers' phrase clearly performs ranking."
+  },
+  {
+    "article_id": "JALEO_1981_11::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I can certainly recommend adding Paco de Lucía's new record, \"Sólo Quiero Caminar\" to your album collection. It's beautiful. The whole album is interesting; the more I listen to it, the more I hear.",
+        "target": "Paco de Lucía's album \"Sólo Quiero Caminar\"",
+        "rationale": "The passage explicitly reviews and praises Paco de Lucía's album, recommending it and judging it beautiful and interesting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "I find it amusing and somewhat disappointing that some people think they can tell Paco de Lucía how to play the guitar or try to \"classify\" him with all their little rules, regulations, traditions, etc.",
+        "target": "critics and traditionalist classification of Paco de Lucía",
+        "rationale": "The author contests the authority of critics and rule-bound traditionalists who police Paco's music through restrictive classifications."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The jazz influence is present, but it doesn't dominate the flamenco at all. It's very up-to-date music. The two bulerías (\"La Tumbona\" and \"Piñonate\") are exceptional and both are solo guitar works.",
+        "target": "Paco de Lucía's fusion of jazz influence and flamenco",
+        "rationale": "The review applies aesthetic criteria of influence, dominance, modernity, and exceptional bulerías to evaluate flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Tradition is discussed, but mainly as part of a critical argument against restrictive reviewing rather than as a standalone continuity claim."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Paco is elevated as a major artist, but the clearest functions are critical evaluation and critique of boundary-policing critics."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía's modern flamenco work and its critics",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The piece defends Paco's innovation against traditionalist criticism and strongly legitimates the new album."
+  },
+  {
+    "article_id": "JALEO_1981_11::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "todas las noches deambulaban por ellas casi todos los flamencos que en Madrid vivían, al igual que los aficionados al cante y al vino. Los primeros, para ganarse su vida con las juergas, y los segundos, para divertirse con aquellos, a los cuales pagaban por escucharles cantar y tocar en algún reserva de cualquier colmao.",
+        "target": "Madrid colmao juerga setting",
+        "rationale": "The passage presents flamenco as occurring in semi-private reservados where performers and aficionados interact through paid listening, singing, playing, and juerga sociability."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "En este cuarto se hallaban aquella noche, Don Tomas, famoso y popular médico, amigo de los flamencos, Don Gabriel -- buen aficio--nado al cante y padre de un joven tocaor, Gabrielito",
+        "target": "aficionados and flamencos gathered in El Cuarto de la Lidia",
+        "rationale": "The passage grounds the scene in recognized flamenco social relations, naming aficionados, friends of flamencos, performers, and patrons as the community sustaining the juerga."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "El Mellizo, with a broken and barely audible voice, said to the youth, \"Grabielito, hijo, I am going to sing for you the last malaguena of El Mellizo!\"",
+        "target": "transmission of El Mellizo's last malagueña to Gabrielito",
+        "rationale": "The scene frames an elder singer directing a final malagueña to a young guitarist, suggesting embodied oral transmission within a juerga setting."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The text names historically important flamenco figures, but the visible excerpt does not clearly rank or canonize them beyond narrative presence."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The reserved colmao setting suggests intimacy, but the text does not explicitly frame intimacy as more authentic than staged or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "Madrid juerga sociability and the last malagueña of El Mellizo",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible beginning/end supports community setting and a cautious transmission code."
+  },
+  {
+    "article_id": "JALEO_1981_11::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "one of the \"aristocrats\" of flamenco guitars, handed to me personally by the great luthier, Faustino Conde.",
+        "target": "Faustino Conde flamenco guitar",
+        "rationale": "The passage elevates the guitar and maker through aristocratic and great-luthier language, constructing a hierarchy of prestige."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "the three Conde brothers are nephews of the great Domingo Esteso and the exclusive builders of the",
+        "target": "Hermanos Conde / Sobrinos de Esteso guitar-making lineage",
+        "rationale": "The passage authorizes the Conde workshop through continuity with Domingo Esteso and family lineage in flamenco guitar making."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Family lineage is invoked, but the excerpt does not describe teaching, apprenticeship, or embodied transmission of craft knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Conde flamenco guitars and their makers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is mostly personal travel narrative, but it clearly legitimates the guitar and workshop through prestige and lineage."
+  }
+]

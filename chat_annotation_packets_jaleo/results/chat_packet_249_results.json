@@ -1,0 +1,217 @@
+[
+  {
+    "article_id": "JALEO_1986_SUMMER::A24",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "The musicologist Sabas de Hoces tried out [the instrument] and declared the discovery of Losada to be astonishing and of great potential.",
+        "target": "Antonio Losada's guitar-tuning technique",
+        "rationale": "A named musicologist is used as an expert authority to validate the technical discovery as significant."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "declared the discovery of Losada to be astonishing and of great potential",
+        "target": "Losada's guitar-tuning discovery",
+        "rationale": "The passage explicitly evaluates the invention as astonishing and potentially important."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The presentation includes explanation and demonstrations of a new technique, but the passage frames it more as technical exhibition than flamenco learning/access discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "Antonio Losada's guitar-tuning technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Expert validation is the clearest discourse function."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A25",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "The flamenco guitar as we know it today seemed to develop around the same time as the emergence of flamenco as a performing art in the era of the café cantante.",
+        "target": "the flamenco guitar",
+        "rationale": "The article grounds the present flamenco guitar in historical development and continuity from the café cantante era."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the flamenco guitar adds a pulse to mark the heart beat and rhythms of the soul... caressing the compás, the mood, the melody, the feeling of music, song, and dance",
+        "target": "flamenco guitar sound and technique",
+        "rationale": "The passage defines flamenco guitar value through aesthetic criteria such as pulse, compás, mood, melody, feeling, and rhythmic force."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "an instrument capable of expressing the total range of human joy and sorrow, depth of feeling and emotion, and even the reason for living",
+        "target": "the flamenco guitar",
+        "rationale": "The article offers explicit evaluative praise of the instrument's expressive power in flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "the flamenco guitar",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Historical evolution and aesthetic criteria are both central to the article."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A26",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The Ballet was under the leadership of Jose Antonio, a very fine male dancer; the performance of Juan Mata... and the ending bulierias by these men and especially Javier LaTorre (Valencia) stunned the audiences",
+        "target": "the National Spanish Ballet performance",
+        "rationale": "The passage explicitly praises the dancers and evaluates the performance as powerful enough to stun the audience."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Merche Esmeralda appeared as guest dancer and only danced her \"Solea\"; her flancnco hands are probably unequalled in the business.",
+        "target": "Merche Esmeralda's flamenco hands",
+        "rationale": "The superlative claim ranks Esmeralda's flamenco hands as probably unmatched."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'old and treasured' values older choreography, but the visible excerpt does not develop a clear tradition-continuity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "the National Spanish Ballet and named performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is mainly a performance report with strong evaluative praise."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A27",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Most students of flamenco guitar in Colorado are either my students or students of my students",
+        "target": "Rene Heredia's flamenco guitar teaching authority",
+        "rationale": "Heredia is positioned as a central pedagogical authority whose teaching lineage structures flamenco guitar study in Colorado."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco fusion isn't jazz or salsa... It is unique, and we are the only ones doing it in America.",
+        "target": "Rene Heredia's Flamenco-Jazz Fusion",
+        "rationale": "The passage constructs a comparative claim of uniqueness and exclusive status for Heredia's fusion group in America."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Heredia's gypsy identity and knowledge of gypsy history are described, but the excerpt does not clearly make that identity authorize flamenco belonging or performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The 'students of my students' phrasing suggests lineage, but it is not clearly embodied, oral, familial, or intergenerational transmission."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "Rene Heredia as teacher and fusion performer",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The clearest authority claim is pedagogical; the fusion boundary claim is included because it explicitly differentiates the genre."
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A28",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "La Zambra is Portland's flamenco venta (\"hang-out\"). For more than a couple of years now, La Zambra has been the scene of exciting juergas featuring accomplished flamenco artists.",
+        "target": "La Zambra Studio/Theatre",
+        "rationale": "The venue is framed as a social flamenco gathering place where juergas and co-present participation matter."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Diana teaches flamenco dancing at La Zambra Studio. Her dedication to this art has inspired a remarkable growth in the appreciation of flamenco dancing among her students as well as her audiences.",
+        "target": "Diana Solano's teaching at La Zambra",
+        "rationale": "The passage legitimates Diana's role as a teacher by linking her instruction and dedication to the growth of flamenco appreciation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Arte Flamenco Dance Company... performs at La Zambra, local clubs, schools, festivals and private functions.",
+        "target": "Arte Flamenco's public and school performances",
+        "rationale": "The company is presented as extending access to flamenco knowledge and appreciation through schools and public venues."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Words such as 'talented,' 'virtuoso,' and 'accomplished' are promotional and evaluative, but the press-release style gives little developed critical judgment."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Public arts funding is mentioned, but there is no explicit heritage or public-culture authorization frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy"],
+      "target": "La Zambra Studio/Theatre and Arte Flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Community setting and teaching/access are stronger than promotional praise."
+  }
+]

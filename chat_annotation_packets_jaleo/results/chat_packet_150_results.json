@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "JALEO_1982_10::A2",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The editorial thanks supporters and contributors, but this is publication support rather than a community claim authorizing flamenco knowledge or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Administrative editorial about the magazine's finances and survival; no clear flamenco discourse code."
+  },
+  {
+    "article_id": "JALEO_1982_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Those who feel as I do will preserve the traditions so that they will not be lost -- so that there will always be that \"core\" to build from.",
+        "target": "old flamenco traditions and the core of flamenco",
+        "rationale": "The letter explicitly values tradition as a preserved core that should not be lost and should ground future development."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "They exemplify the aura of sharing and amistad that flamenco is all about.",
+        "target": "Familia Champion and Los Flamencos de San Antonio",
+        "rationale": "The passage grounds flamenco value in warmth, friendship, sharing, family, and community belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "I was impressed not only by the excellence of their art and performances, but by their open warmth and hospitality as well.",
+        "target": "Familia Champion / Los Flamencos de San Antonio",
+        "rationale": "The writer explicitly evaluates the group's art and performances as excellent."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "flamenco tradition and Los Flamencos de San Antonio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Two letters are visible; codes reflect the tradition-preservation argument and the community/evaluative praise of the San Antonio group."
+  },
+  {
+    "article_id": "JALEO_1982_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "They pertain to the roots of flamenca, the people who give it birth and the reasons that they had to do flamenca.",
+        "target": "the roots and origins of flamenco",
+        "rationale": "The article grounds flamenco's meaning in its roots, birth, originating people, and historical reasons for existence."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "The noncompetitive, emotionally rich ambiente of a down-home juerga among friends may not be for everyone --we're all different, no? --but for many of us, the juergas and interpersonal sharing are all we want or need.",
+        "target": "down-home juergas and interpersonal sharing",
+        "rationale": "The passage values intimate, noncompetitive, social co-presence as central to flamenco beyond professional performance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "I hope that all entering into this vast art form will pause to try out its original, nonperforming aspects.",
+        "target": "nonperforming juerga-based flamenco practice",
+        "rationale": "The article contrasts performance-oriented flamenco with original, participatory, nonperforming social practice."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text names poor gitanos and Andaluces as flamenco's originators, but the stronger discourse function is roots/tradition and public/private practice rather than sustained identity-group framing."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "authenticity",
+        "community"
+      ],
+      "target": "roots-based, nonperforming, juerga-centered flamenco",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt gives enough evidence for roots and intimate/social flamenco claims."
+  },
+  {
+    "article_id": "JALEO_1982_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "There is no doubt God meant Laura Moya to be a dancer.",
+        "target": "Laura Moya as a dancer",
+        "rationale": "The profile explicitly praises Moya's natural suitability and vocation as a dancer."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "As far as I am concerned, there is only one way to become a performer. You perform.",
+        "target": "performer formation in Spanish/flamenco dance",
+        "rationale": "The passage frames performance experience itself as the necessary embodied route to becoming a performer."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The editor mentions educational programs for schools and the elderly, but the visible text does not thematize institutional/transnational access to flamenco knowledge strongly enough."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Laura Moya's dancer identity and performer training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is mostly biographical; only the praise and explicit learning-through-performance statement are coded."
+  },
+  {
+    "article_id": "JALEO_1982_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Juan Martínez is not only a top exponent of the Spanish dance, but he has shown himself to be steeped in the roots, history, tradition, styles and evolution, and is acquainted with artists of the past and present.",
+        "target": "Juan Martínez",
+        "rationale": "The passage positions Martínez as an expert authority whose knowledge of roots, history, styles, and artists authorizes his account."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "My father... made my studies go beyond the normal... Two hours a day was the average lesson... I was learning the Spanish classical school and all kinds of mixtures of other dances, including those of flamenco.",
+        "target": "Juan Martínez's dance formation",
+        "rationale": "The passage frames dance knowledge as transmitted through demanding familial training and embodied apprenticeship."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Andalucía is the birthplace of the Spanish dance as it is most commonly known throughout the world.",
+        "target": "Spanish dance / flamenco-related dance origins",
+        "rationale": "The column grounds the authority and value of Spanish dance in Andalusian origin, roots, and historical development."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Much is owed -- in fact, most -- to the gypsies who... brought with them rhythms and some footwork that later formed our great dance",
+        "target": "gypsies and Andalusians as originators/transmitters of dance",
+        "rationale": "The passage uses ethnic and regional identity groups to explain who embodies, preserves, and shapes the dance tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Phrases such as 'top exponent' and 'solid pillars' canonize Martínez, but CRIT_04 better captures the main function: establishing expert authority for the column."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text uses 'purely Spanish' and 'most pure,' but the argument rejects simple purity of origin rather than drawing a clear proper/improper flamenco boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Juan Martínez's authority and Andalusian/gypsy-rooted Spanish dance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The visible text contains explicit expert-authority, lineage training, origin, and identity-group framing claims."
+  }
+]

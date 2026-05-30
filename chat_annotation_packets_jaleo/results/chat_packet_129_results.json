@@ -1,0 +1,197 @@
+[
+  {
+    "article_id": "JALEO_1982_01::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "His guitar is pure gold. The powerful voice of Manuel Vargas emerges.",
+        "target": "Enrique de Melchor and Manuel Vargas at the Marchena festival",
+        "rationale": "The review explicitly praises performers' artistic quality and impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "It seems impossible: the capability, the strength, the feeling of compás, the brilliant flexibility of this man.",
+        "target": "Antonio Montoya's dancing",
+        "rationale": "The passage applies specific aesthetic criteria—capability, strength, compás, flexibility—to define the dancer's excellence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The best part of the evening arrives, artistically, with Diego Clavel.",
+        "target": "Diego Clavel within the festival lineup",
+        "rationale": "The review ranks one performance as the artistic peak of the evening, creating a value hierarchy among performers."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "festival performers and performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_01::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I decided to establish a center, a place where anyone interested in flamenco could go to get information or get involved in flamenco.",
+        "target": "Paco Peña's flamenco center",
+        "rationale": "The center is framed as an institutional access point for flamenco knowledge and participation."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "go to Andalucía and find a teacher who could also help to introduce them into the flamenco scene. But that is difficult and costly, especially for a foreigner.",
+        "target": "foreign flamenco students seeking entry into the flamenco scene",
+        "rationale": "The passage marks an access boundary between outsiders and the flamenco scene, especially for foreigners."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the quality is always better in the professionals who are always working, changing, improving their artistry.",
+        "target": "professional versus non-professional flamenco artists",
+        "rationale": "The statement ranks professional artists above non-professionals on the basis of sustained artistic development."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "institutional flamenco learning and professional artistry",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotation uses only visible excerpt."
+  },
+  {
+    "article_id": "JALEO_1982_01::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "It is Andaluz. It is not gypsy song, but rather flamenco song.",
+        "target": "the ethnic and regional identity framing of flamenco",
+        "rationale": "The passage uses identity categories—Gypsy and Andalusian—to define who represents and grounds flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "Flamenco was born only in Andalucía.",
+        "target": "flamenco origins and authority",
+        "rationale": "The passage grounds flamenco's legitimacy in regional origin and rootedness in Andalucía."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "many researchers insist that flamenco is a gypsy phenomenon. It's not true.",
+        "target": "researchers and gypsy-origin interpretations of flamenco",
+        "rationale": "The speaker contests expert/research discourse and polices the boundary of a proper interpretation of flamenco origins."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "a review cannot be a record. Many prefer to sit around the armchair and hear stories about flamenco rather than to experience it.",
+        "target": "review discourse and passive flamenco consumption",
+        "rationale": "The passage critically evaluates the limits of reviews and privileges direct experience over secondary commentary."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "tradition",
+        "community",
+        "criticism"
+      ],
+      "target": "claims about flamenco's Gypsy versus Andalusian origins and the authority of review discourse",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_01::A11",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The old/current comparison and 'contestants' language is mostly technical and explicitly cautioned not to imply value beyond clinical information."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Speed picado and compás are technical terms here, but the excerpt does not clearly apply them as aesthetic criteria for flamenco value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_01::A12",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article is instructional about guitar strings, but it does not clearly concern flamenco knowledge transmission, institutional access, or flamenco authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Sound, action, and tension are discussed technically rather than as evaluative flamenco aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

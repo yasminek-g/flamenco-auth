@@ -1,0 +1,210 @@
+[
+    {
+        "article_id": "JALEO_1982_07::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "the annual \"Festival Flamenco en Jerez\" -- including master classes, recitals, concerts and movies -- will take place from August 23rd to September 6th",
+                "target": "Festival Flamenco en Jerez course",
+                "rationale": "The notice frames flamenco learning through an institutional course structure with master classes, lectures, recitals, films, and diplomas, making access to flamenco knowledge the central function rather than merely announcing a performance."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "reason": "The Catedra and named instructors suggest pedagogical authority, but the visible text mainly lists course logistics rather than explicitly authorizing a teacher, method, or correctional authority."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The phrase \"The Cante Greats of Jerez\" appears as a lecture title, but the article itself does not construct a canon or ranking in the visible prose."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy"
+            ],
+            "target": "institutional flamenco instruction at the Festival Flamenco en Jerez",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Event notice is coded only for its sustained course/master-class learning frame, not for routine performance listings or advertising copy."
+    },
+    {
+        "article_id": "JALEO_1982_07::A5",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Whether performing cante jondo with just the properly timed silence, or cante chico with a fast shuffle across the stage at the perfect moment, Chinin dues it with class.",
+                "target": "Chinin de Triana's performance style",
+                "rationale": "The passage explicitly evaluates Chinin's artistic quality through praise of timing, class, vocal range, and stage personality."
+            },
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "high",
+                "evidence_quote": "As a boy, I would accompany him as often as possible. This gave me an opportunity not only to listen to my father, but to all of the local gitanos as well.",
+                "target": "Chinin de Triana's formation as a cantaor",
+                "rationale": "The interview frames his flamenco knowledge as acquired through family, listening, local gitano performers, influence, and serious study of styles."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "perform with many of the flamenco greats of this century -- Vicente Escudero, Mario Escudero, Esteb\u00e1n de Sanl\u00facar, Carlos Montoya, Jer\u00f3nimo Villarino, and many others",
+                "target": "Chinin's professional associations",
+                "rationale": "The text elevates Chinin's status by situating him among a named hierarchy of exemplary flamenco figures described as the century's greats."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "Identity terms such as \"gypsy\" and \"local gitanos\" appear, but the visible text uses them mostly as biography and influence rather than clearly defining group authority or representation."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "Timing, silence, and stage movement function as evaluative criteria, but CRIT_01 captures the review's main evaluative action without needing a separate criteria code."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "pedagogy"
+            ],
+            "target": "Chinin de Triana",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated, but the visible excerpt contains enough evidence for the emitted codes."
+    },
+    {
+        "article_id": "JALEO_1982_07::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "high",
+                "evidence_quote": "Audiences invariably greet their work with \"ol\u00e9s\" and rise in standing ovations",
+                "target": "Pascual Olivera and Angela del Moral's performances",
+                "rationale": "The review explicitly praises the dancers' popularity, audience reception, color, excitement, drama, humor, personality, and technical qualities."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "confidence": "medium",
+                "evidence_quote": "To the proud carriage of the national dance style and the authenticity of their dances, they add ease and nimbleness.",
+                "target": "Olivera and del Moral's dances",
+                "rationale": "The passage attributes authenticity to the dancers' Spanish/flamenco-related performance as a legitimating quality, rather than using the word incidentally."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "Each seminar consists in two weeks intensive work on the guitar. There will be two sessions each day",
+                "target": "flamenco guitar seminar",
+                "rationale": "The visible text frames flamenco knowledge through a structured seminar curriculum covering comp\u00e1s, falsetas, basic toques, related forms, and free forms."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "reason": "The review applies criteria such as authenticity, ease, nimbleness, footwork, turns, and elevation, but these are handled under the broader CRIT_01 evaluation and AUTH_01 authenticity claim."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The ending context mentions a juerga and friendship, but the text is an event invitation without a clear public/private or participatory-value contrast."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "authenticity",
+                "pedagogy"
+            ],
+            "target": "Olivera and del Moral's performances and the guitar seminar curriculum",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article text is truncated and contains mixed review, advertisement, seminar, and community-notice material; emitted codes are limited to visible spans with clear discourse function."
+    },
+    {
+        "article_id": "JALEO_1982_07::A8",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "reason": "The phrase \"preservation of Jaleo\" suggests maintenance, but it refers to keeping the publication going rather than public cultural heritage, safeguarding, or living heritage discourse."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The article praises volunteer contribution to Jaleo, but it does not grant community authority to recognize, judge, or sustain flamenco itself in the required sense."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "This is an appreciation note for administrative labor; preservation language is publication-specific and not sufficient for a heritage code."
+    },
+    {
+        "article_id": "JALEO_1982_07::A9",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The notice says a pe\u00f1a opened \"for flamencos and friends,\" but it functions as a location listing rather than an evaluative contrast between participatory and spectatorial settings."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "Classes, master classes, interviews, festivals, and magazine learning resources are mentioned, but the passage is a news/advertising listing without clear discourse about access, authority, or transmission."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The title \"News from our members\" and contributed notices imply a member network, but no community actor is explicitly positioned as authorizing, judging, or sustaining flamenco value."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Routine member news and magazine advertising are not coded without a clearer evaluative, pedagogical, communal, or authorizing discourse function."
+    }
+]

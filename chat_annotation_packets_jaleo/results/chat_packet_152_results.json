@@ -1,0 +1,220 @@
+[
+  {
+    "article_id": "JALEO_1982_10::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Flamenco guitar scene surpasses any previous concert expectations",
+        "target": "New York City flamenco guitar concert scene",
+        "rationale": "The passage explicitly evaluates the local flamenco guitar scene as exceeding prior expectations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Member and society references indicate organized community activity, but the passage mostly lists news and meetings without granting community authority or insider recognition."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism"],
+      "target": "New York City flamenco guitar scene",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Mostly member news and event listings; only the New York concert sentence contains clear evaluative discourse."
+  },
+  {
+    "article_id": "JALEO_1982_10::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "All were friendly and willing to share their talents to create an evening of good flamenco, good companionship, friendship and fun.",
+        "target": "Los Angeles August juerga",
+        "rationale": "The juerga is valued as a participatory social setting where shared performance and companionship define the flamenco event."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We hope that the spirit of Jaleistas will continue to grow and spread to other communities.",
+        "target": "Jaleistas community",
+        "rationale": "The editor frames the Jaleistas as a community whose supportive spirit should be sustained and extended."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'good flamenco' and 'great in dancing' are positive, but they function mainly as convivial event description rather than sustained critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community"],
+      "target": "Los Angeles Jaleistas juerga",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The directory advertisement at the end was not coded."
+  },
+  {
+    "article_id": "JALEO_1982_10::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Dancing, singing and playing of guitars, mixed with a bit of tinto, started early and went on into the wee hours.",
+        "target": "San Diego juerga/home gathering",
+        "rationale": "The passage values flamenco as an extended participatory gathering rather than a detached stage event."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "That wonderful family must come back soon. \"Señores, esto es flamenco!\"",
+        "target": "the family-centered juerga performance",
+        "rationale": "The exclamation explicitly authorizes the described social-musical experience as flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "\"El Cazador\" displayed a tremendous virtuosity with both the guitar and the oud, and even charmed us with gypsy baile and cante.",
+        "target": "El Cazador's performance",
+        "rationale": "The passage praises a performer through explicit evaluative language about virtuosity and charm."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Virtuosity is an aesthetic criterion, but the same evidence is already captured as general critical evaluation and is not developed as a criterion for flamenco quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The visible workshop and master-teacher notices are advertisements and do not provide enough discourse about learning access beyond routine promotion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "authenticity", "criticism"],
+      "target": "San Diego juerga and associated performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisements for magazines, workshops, books, and guitars were excluded from coding."
+  },
+  {
+    "article_id": "JALEO_1982_11::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Her teachers in New York were Ramón de los Reyes, Jesus Ramos and cantaor Luis Vargas, who taught her compás.",
+        "target": "Mara Sultani's flamenco training",
+        "rationale": "The passage describes transmission of flamenco knowledge through teachers and specifically embodied rhythmic knowledge, compás."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Mara Sultani not only has the \"gitana\" looks and temperament for flamenco",
+        "target": "Mara Sultani's flamenco persona",
+        "rationale": "The passage uses ethnicized identity framing to present her appearance and temperament as fitting flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Named teachers are present, but the passage is mainly biographical and does not explicitly position them as authoritative teachers beyond transmission of compás."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The praise of her radiant personality is positive but does not clearly evaluate flamenco artistry or performance quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "community"],
+      "target": "Mara Sultani as a flamenco dancer/persona",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The guitar magazine advertisement was not coded."
+  },
+  {
+    "article_id": "JALEO_1982_11::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "He put together a \"superb\" video recording which should satisfy the most demanding aficionado.",
+        "target": "Peter Baime's flamenco guitar video recording",
+        "rationale": "The letter explicitly evaluates the video recording as high quality and suitable for discerning flamenco listeners."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "each first at normal speed, and then slowed down with close-ups for demonstration of technique, with accompanying remarks.",
+        "target": "flamenco guitar video cassette as instructional medium",
+        "rationale": "The video is framed as a mediated learning tool that gives viewers access to technique through slow demonstration and commentary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "which should satisfy the most demanding aficionado",
+        "target": "aficionado audience for the video",
+        "rationale": "The passage invokes the aficionado as a discerning audience whose satisfaction validates the recording."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as stirring, spectacular, moving, and technique imply criteria, but the clearest function is overall evaluation and instructional access rather than a developed aesthetic standard."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The after-the-performance party is called intimate, but it is not framed as more authentic than public or commercial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["criticism", "pedagogy", "community"],
+      "target": "Peter Baime's flamenco guitar video and its audience",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The later request for record availability is informational rather than evaluative, except for the general compliment to Jaleo, which was not separately coded."
+  }
+]

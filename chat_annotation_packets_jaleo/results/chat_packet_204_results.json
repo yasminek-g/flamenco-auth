@@ -1,0 +1,208 @@
+[
+  {
+    "article_id": "JALEO_1985_01::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The dance course, taught by Teresa Martínez, will feature tangos and peteneras... Guitar--tango and bulerías--will be taught by Parila de Jerez and Pepe Moreno",
+        "target": "Cursos Internacionales de Verano: Flamenco in Jerez",
+        "rationale": "The passage frames flamenco learning through formal courses, structured instruction, and named institutional teachers."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "sponsored by the Cátedra de Flamencología de Jerez de la Frontera... There will be nightly performances and lectures by various artists and flamencologists.",
+        "target": "Cátedra de Flamencología and course instructors",
+        "rationale": "The Cátedra, artists, and flamencologists are positioned as authorized pedagogical mediators of flamenco knowledge."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The acceptance rule for intermediate or advanced students creates an access condition, but it functions administratively rather than as a broader insider/outsider boundary around flamenco authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "institutional flamenco courses in Jerez",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_01::A16",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Brief descriptive notice with no clear evaluative, pedagogical, heritage, authenticity, or community-authority discourse."
+  },
+  {
+    "article_id": "JALEO_1985_01::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La Tati considered by aome as the greatest boilora, an stage.",
+        "target": "La Tati",
+        "rationale": "The passage invokes a superlative status claim that places La Tati within a hierarchy of flamenco dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Just to show, how great an artist she is, she is paying a special tribute to José GRECO",
+        "target": "Maria Benitez",
+        "rationale": "The article explicitly evaluates Benitez as a great artist in the context of flamenco/Spanish dance presentation."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "GRECO, the man who has given so much ta the Spanish dance",
+        "target": "José Greco",
+        "rationale": "Greco is elevated as a significant contributor to Spanish dance, giving him exemplary or canonical status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Several other adjectives such as 'exceptional danter' are evaluative but appear in passing within a listings report and add little distinct discourse function."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "featured flamenco and Spanish dance artists in New York-area listings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_01::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "performed with a rare combination of polish and exuberance",
+        "target": "Fuego Español II concert",
+        "rationale": "The passage makes an explicit positive quality judgment about the concert performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "the choreographer miaed the appartunity to have their program demonstrate how flamenco may have been affected by Middle Eastern influences. Instead, they provided simply an assortment of dances in two styles.",
+        "target": "Fuego Español choreography/programming",
+        "rationale": "The review critiques the program for failing to substantively address a claimed flamenco influence, policing the adequacy of staged interpretation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Keet has spent 35 years collecting the regional and classical dance of Spain, and it is Washington's fortune that she is disseminating them here.",
+        "target": "Marina Keet's Spanish dance work",
+        "rationale": "The passage frames regional and classical Spanish dance as collected and disseminated cultural practice, giving her work a preservation/transmission function."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "A choreographer and teacher here since 1981, she has a passion for Spanish dance and a mission to make everyone else passionate about it too... That she is foremost an educator was evident",
+        "target": "Marina Keet",
+        "rationale": "Keet is positioned as a teacher whose authority lies in educating audiences about Spanish dance forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The university and production contexts suggest institutional access, but the visible evaluative discussion centers more on Keet's educator role and preservation work than on access structures."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "Spanish dance and flamenco-related stage productions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_01::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "conducted a Master Class for beginning and intermediate Spanish dancers... This was the first of several special classes and workshops planned through the coming year",
+        "target": "Spanish dance master class and workshops in Oregon",
+        "rationale": "The passage frames flamenco/Spanish dance learning through organized master classes and workshops for learners."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Adela Clara -- famed as soloist, inventive choreographer, teacher and lecturer -- returns far a 3-dsy Workshop",
+        "target": "Adela Clara",
+        "rationale": "Adela Clara's credentials as teacher, lecturer, choreographer, and founder authorize her role as instructor."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'famed as soloist' signals reputation, but it is mainly credentialing a workshop instructor rather than constructing a canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Adela Clara's Oregon master class/workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

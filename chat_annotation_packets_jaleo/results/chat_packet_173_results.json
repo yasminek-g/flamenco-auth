@@ -1,0 +1,179 @@
+[
+  {
+    "article_id": "JALEO_1983_07::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "We struggled with them during our private lessons while Luisa played the appropriate music on the guitar and did the steps with us if necessary.",
+        "target": "Luisa Pericet's dance instruction",
+        "rationale": "Luisa is positioned as the pedagogical authority who teaches, demonstrates, accompanies, and corrects flamenco dance material."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The main purpose of the notation system was, I think, to allow us to resuscitate dances.",
+        "target": "dance notation as a learning and memory system",
+        "rationale": "The passage frames notation as a mediated system that preserves access to choreographies and supports later study across distance and time."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Luisa Pericet's method and dance notation system",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "that lucrative, but immoral art ... they wanted to protect it from the catastrophic and hopeless end",
+        "target": "commercial agent/academy system for Spanish dance",
+        "rationale": "The passage uses critical boundary language to condemn a commercial system as immoral and harmful to the art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "it was her technique, presence and taste ... that made her the star",
+        "target": "Ana Martínez's flamenco performance",
+        "rationale": "The review explicitly evaluates Martínez's performance quality and identifies why she dominated the program."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "It is rhythmically subtle, has an incredibly wide range in volume, and is tonally pure.",
+        "target": "Ana Martínez's footwork and musicality",
+        "rationale": "The reviewer applies aesthetic criteria of rhythmic subtlety, volume range, tonal purity, clarity, and bodily control to define performance value."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The critique of lucrative commercial systems overlaps with anti-commercial authenticity, but the visible passage primarily functions as critical condemnation rather than an explicit authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "commercial dance systems and reviewed flamenco performances",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A17",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Photo-caption participant list only; no clear evaluative, pedagogical, heritage, authenticity, or authority discourse."
+  },
+  {
+    "article_id": "JALEO_1983_07::A18",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "I later learned to know as the genuine flamenco canto jondo.",
+        "target": "flamenco canto jondo heard in Granada",
+        "rationale": "The passage explicitly attributes genuineness to the flamenco canto jondo, presenting it as real flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "They delighted me by their strong rhythm and the fine sonority they produced.",
+        "target": "the guitarists' performance",
+        "rationale": "The passage evaluates the performance through aesthetic criteria of rhythm and sonority."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Granada gypsy cave flamenco canto jondo and guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A19",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Raúl, Charo and their daughters Susie and Michelle opened their home to me; it was a delight to be able to stay with them, and share in the continual compás and warmth that are integral to their existence.",
+        "target": "San Diego flamenco household/community",
+        "rationale": "The passage grounds flamenco authority and value in home-based community sociability, shared compás, warmth, and belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "her return was celebrated with more flamenco",
+        "target": "home-based participatory flamenco gatherings",
+        "rationale": "Flamenco is framed as a recurring participatory social practice tied to private/home celebration rather than only staged performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The UCSD beginning guitar and survey class suggests institutional access, but it appears as a routine course notice with limited discourse about learning authority or mediation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "San Diego flamenco community and home gatherings",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

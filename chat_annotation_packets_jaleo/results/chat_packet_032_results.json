@@ -1,0 +1,198 @@
+[
+  {
+    "article_id": "JALEO_1978_09::A14",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Short event notice and biographical anecdote; no clear evaluative, authorizing, pedagogical, or boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1978_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "America's premier academy of flamenco ballet was founded under the name of \"Lolita and José\". Since 1952 it has been at its present location... where the maestro continues to teach classes and private lessons.",
+        "target": "Lolita and José academy / José Ramón",
+        "rationale": "The passage legitimates flamenco knowledge through a ranked academy and a maestro who continues to teach."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Serious students of flamenco dance and music, or those who simply enjoy these Spanish arts will be welcome at \"La Bodega\"... or to visit José's conveniently located academy",
+        "target": "students and visitors accessing flamenco instruction in San Francisco",
+        "rationale": "The passage frames flamenco learning and access through institutional and local venues outside Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "\"America's premier academy\" is a ranking phrase, but the surrounding passage is largely promotional and pedagogical rather than canon-forming."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "San Francisco flamenco academy and learning venues",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Promotional wording is present, so confidence is kept medium."
+  },
+  {
+    "article_id": "JALEO_1978_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "When one approaches flamenco as a performing art which includes dancer, singer, and guitarist, one approaches the tradition of flamenco at its roots.",
+        "target": "flamenco as a performing art",
+        "rationale": "The passage grounds flamenco value and understanding in tradition and roots."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "I learned long ago that being Spanish or non-Spanish is a frame of mind when approaching flamenco. Flamenco in its totality is a creative and expressive art form and therefore, universal to all who want to absorb and feel and live it.",
+        "target": "Spanish and non-Spanish participants in flamenco",
+        "rationale": "The passage explicitly uses national identity categories to define who can belong to and embody flamenco, rejecting nationality as a limiting boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The base of flamenco is the compas... its interpretation, its feeling and emotion... Until one learns to lose himself, he cannot find himself... then the word \"duende\" will have meaning.",
+        "target": "flamenco performance quality",
+        "rationale": "The passage defines flamenco quality through criteria such as compás, total expressive involvement, feeling, emotion, and duende."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "the approach should be a total involvement... a technical approach to using the whole body starting with the upper body... It is very hard to learn the coordination of the upper part of the body, so vital in expressive flamenco, if you start with just the feet.",
+        "target": "flamenco dance learners",
+        "rationale": "The passage frames flamenco learning as embodied technique and whole-body transmission rather than isolated footwork."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The article responds to purity debates, but the visible argument rejects narrow purity boundaries rather than drawing a clear pure/impure exclusion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["tradition", "community", "pedagogy", "criticism"],
+      "target": "inclusive, embodied, tradition-based flamenco practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is strongly normative but inclusive: it authorizes tradition as a base while rejecting narrow national or purist boundaries."
+  },
+  {
+    "article_id": "JALEO_1978_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Understanding gives one freedom, and allows for the infinite variation of performance practice... Students learn about style so they don't have to go to the phonograph every time they want to learn a new piece.",
+        "target": "students and musicians learning flamenco guitar performance practice",
+        "rationale": "The passage frames notation, listening, style, and analysis as mediating access to flamenco performance knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "The alegrias offers many possibilities for irregular, melodic, and agogic accents... accents can be identified, labeled, and analyzed for their function.",
+        "target": "flamenco guitar performance practice",
+        "rationale": "The passage names accent function and performance practice as criteria for understanding and executing flamenco style."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The article teaches technical concepts, but no specific teacher, master, school, or method is positioned as an authority beyond the author's explanation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy", "criticism"],
+      "target": "analytic understanding of flamenco accents and performance practice",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The passage is primarily instructional/analytic rather than a review."
+  },
+  {
+    "article_id": "JALEO_1978_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "Outsiders also use the word in a much more limited sense... I say outsiders because I have never heard Spaniards use the term this way.",
+        "target": "outsiders versus Spaniards using the term cambio",
+        "rationale": "The passage draws an epistemic insider/outsider boundary around correct terminology and usage."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "For the purpose of this discussion, the reader should know the meaning of the word cambio... Hereafter in this article, I use the word in its limited sense.",
+        "target": "readers learning cante and accompaniment terminology",
+        "rationale": "The passage explicitly mediates specialized flamenco knowledge for readers by defining and narrowing a technical term."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Proper accompaniment for any improvised performance consists of staying with or behind the singer, and with the dancer as much as possible... it's the over-all effect that determines its quality.",
+        "target": "guitar accompaniment in improvised flamenco performance",
+        "rationale": "The passage defines quality criteria for accompaniment: proper timing, coordination with singer and dancer, unobtrusiveness, and overall effect."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains evaluative statements such as \"not correct\" and \"quality,\" but these function mainly as aesthetic criteria rather than a review of a specific artist or performance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["community", "pedagogy", "criticism"],
+      "target": "correct understanding and execution of cambio in accompaniment",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The terminology discussion makes the insider/outsider distinction unusually explicit."
+  }
+]

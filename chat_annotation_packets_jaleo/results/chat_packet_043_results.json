@@ -1,0 +1,236 @@
+[
+  {
+    "article_id": "JALEO_1979_06::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'members only' limits event access, but it is routine administrative information and does not clearly construct flamenco knowledge, belonging, or authority."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga is hosted in a home, but the notice does not evaluate private/social participation as more meaningful than public or spectatorial flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_06::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Mario Maya, the gypsy from Granada, is the top flamenco bailaor of the present day. Nobody can deny to us that he is the most complete.",
+        "target": "Mario Maya",
+        "rationale": "The passage explicitly ranks Mario Maya at the top of contemporary flamenco dance and constructs him as an exemplary figure."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Assistance, friends, professionalism, art, all of these Juan Peña has in abundance in order to continue with the responsibilities and difficulties of preparing the shows",
+        "target": "Juan Peña \"El Lebrijano\"",
+        "rationale": "The passage praises Peña's professionalism, art, and capacity to sustain ambitious flamenco shows."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "His training goes from the indispensable academy training to his hours of daily study and the study of other dances like negro-jazz in the United States.",
+        "target": "Mario Maya's training",
+        "rationale": "The passage frames Maya's authority through institutional, disciplined, and transnational training across dance forms."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The text identifies Maya and Peña as gypsy artists, but identity is mostly descriptive or punning and does not clearly organize flamenco authority or representation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Teatro Real and Ministerio de Cultura suggest institutional contexts, but the excerpt does not clearly frame them as heritage recognition or public patrimonial authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Juan Peña \"El Lebrijano\" and Mario Maya",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains sufficient evaluative and pedagogical evidence."
+  },
+  {
+    "article_id": "JALEO_1979_06::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "A two week workshop for beginning and intermediate-advanced dancers. Each day, the workshop will feature a morning technique class and an afternoon repertory class for each level.",
+        "target": "Morca Flamenco Workshop",
+        "rationale": "The passage frames flamenco learning through a formal workshop structure with levels, technique classes, repertory classes, and organized access."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Mr. Morca's credentials are known to most of Jaleo's readers: He has worked with many of the top Spanish dance companies, been featured as a soloist at the Café de Chinitas, toured widely with his own companies, and is widely acclaimed as a teacher.",
+        "target": "Teo Morca",
+        "rationale": "Morca's authority to teach is legitimated through professional credentials, elite company experience, and acclaim as a teacher."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The workshop culminates in a juerga with participation by all, but the passage does not evaluate participatory setting as a source of flamenco value or authenticity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'top Spanish dance companies' supports Morca's credentials, but the passage does not itself rank or canonize specific artists or companies."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Morca Flamenco Workshop and Teo Morca",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1979_06::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "It was agreed by all that the concert was a tremendous artistic success and greatly enjoyed by all of us.",
+        "target": "Flamenco Spectacular concert",
+        "rationale": "The passage makes an explicit evaluative judgment of the concert's artistic success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "La Caña, a solo number by Roberto Amaral... did not explore the jondo qualities of this cante or demonstrate Roberto's dancing ability as well as did some of his other numbers.",
+        "target": "Roberto Amaral's La Caña",
+        "rationale": "The review applies aesthetic criteria of jondo quality and demonstration of dance ability to judge the number."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In this dance, Roberto really showed his skill and sensitivity as a dancer and choreographer. He and Rosal worked well and very expressively together and this number was the favorite of most of our group.",
+        "target": "Rosal Ortega and Roberto Amaral's guajira",
+        "rationale": "The passage praises the performers' skill, sensitivity, expressiveness, and reception by the reviewing group."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The communal review by Jaleistas indicates group participation, but it does not clearly use identity or community status to authorize the judgments."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The text is a review, but no critic, editor, scholar, or expert authority is explicitly positioned as authorizing the evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Flamenco Spectacular concert and selected performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible excerpt contains ample review evidence."
+  },
+  {
+    "article_id": "JALEO_1979_06::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "CASTANUELAS (PALILLOS) - castanets; here is a list of their parts: Concha (la) - the shell or wooden half of the castanet... Other terms: Carretillas (las) - rolls with the castanet.",
+        "target": "flamenco dance vocabulary and technique",
+        "rationale": "The article functions as a glossary that mediates technical flamenco dance knowledge for readers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "After a successful four month performance, Chateau Sevilla Restaurant said goodby to \"Flamenco Fiesta\"",
+        "target": "\"Flamenco Fiesta\" performance run",
+        "rationale": "The passage evaluates the performance run as successful, though briefly and without detailed criteria."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as 'jondo' and 'heavy' appear in definitions, but they are not applied as aesthetic criteria to judge a performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The phrase 'the only active professional Spanish dance company here in Miami' marks status, but it is more descriptive than a clear canon, hierarchy, or ranking."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The list of new members and local scene report identifies community participants, but does not grant them authority to sustain, recognize, or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "flamenco dance vocabulary and Miami flamenco performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

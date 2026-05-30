@@ -1,0 +1,258 @@
+[
+  {
+    "article_id": "JALEO_1980_10::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "at others they saw a most cynical display of commercial night club acts, adverstised as \"flamenco puro\"",
+        "target": "commercial tablao/night-club acts advertised as pure flamenco",
+        "rationale": "The passage explicitly contrasts advertised purity with cynical commercial acts, delegitimating them as false or improper flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "To stay in business he has had to please the public to some degree always at the expense of the music.",
+        "target": "commercial flamenco clubs and tourism-oriented tablaos",
+        "rationale": "Commercial viability and tourist/public appeal are framed as forces that compromise flamenco music."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The best presentations, visually and musically, seem to be the simplest and most natural ones -- the singers and dancers who somehow give the illusion that they are performing for an intimate group of friends.",
+        "target": "intimate, friend-like performance setting",
+        "rationale": "The text values intimacy and apparent social co-presence over staged spectacle as the setting in which flamenco is best understood."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Excessive shouting and arm-waving, applause milking, elaborate choreography, and complicated footwork belong more to the theater than to spontaneous musical expression.",
+        "target": "theatricalized tablao presentation style",
+        "rationale": "The passage applies aesthetic criteria of naturalness, spontaneity, restraint, and musical expression to judge flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The article clearly critiques commercial/staged flamenco boundaries, but this is already captured through AUTH_04 and CRIT_02 without needing an additional overlapping critical-authority code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "community",
+        "criticism"
+      ],
+      "target": "Madrid tablaos and commercial/staged flamenco presentation",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Commercial tablaos are repeatedly contrasted with pure, natural, intimate, or serious flamenco."
+  },
+  {
+    "article_id": "JALEO_1980_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Teo's approach toward what was learnable in a short two week period was realistic. He did not try to throw every part of a complex art form at us at once.",
+        "target": "Teo Morca as workshop teacher",
+        "rationale": "The letter legitimates Teo's teaching authority by praising his pedagogical judgment about sequencing and what students could learn."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Last August I attended Teo Morca's flamenco workshop in Bellingham, Wa. It was a great experience!",
+        "target": "flamenco workshop as access to learning",
+        "rationale": "The workshop is framed as a meaningful setting for accessing flamenco dance knowledge outside Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The claim that Jaleo is a 'lifeline' suggests community connection, but it does not clearly authorize flamenco knowledge or belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise for the issue and workshop, but the more specific discourse function is pedagogical rather than critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Teo Morca's flamenco workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Praise is retained only where it supports a teaching/transmission claim."
+  },
+  {
+    "article_id": "JALEO_1980_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Students of former teachers of Spanish dance here would come to me requesting certain dances they wanted to learn, and I would have to keep explaining that if they wanted to study with me it would have to be on my terms -- that they start at the beginning like everyone else.",
+        "target": "Ramón de los Reyes's teaching authority",
+        "rationale": "Ramón is positioned as the authority who determines correct pedagogical sequence and terms of study."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Raffael De Gruttola... provided Ramón the opportunity to work with the Spanish speaking community and other ethnic groups as well as to make presentations within the schools.",
+        "target": "institutional and community access to Spanish dance/flamenco knowledge in Boston",
+        "rationale": "The passage frames schools, public arts programming, and ethnic communities as channels for spreading and institutionalizing the knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "the general caliber of Spanish dance instruction prior to Ramón's arrival was not very high, and that his insistence on this policy was in the best interests of his students.",
+        "target": "Spanish dance instruction in Boston before Ramón",
+        "rationale": "The narrator explicitly evaluates prior instruction negatively and legitimates Ramón's stricter teaching policy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Boston Hispanics and other ethnic groups are mentioned, but identity does not clearly define flamenco belonging or authority in the visible text."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Ramón de los Reyes as teacher and institution-builder in Boston",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest evidence concerns Ramón's authority to structure learning and improve local instruction."
+  },
+  {
+    "article_id": "JALEO_1980_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "students that Ramón has developed and coached and polished to a remarkably professional level in the short period of time the company has been in existence",
+        "target": "Ramón de los Reyes as developer of performers",
+        "rationale": "Ramón's pedagogical authority is used to explain how students are transformed into professional-level company members."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The flow and pacing of this piece was very moving and beautifully executed.",
+        "target": "Spanish Dance Theatre performance",
+        "rationale": "The review makes explicit qualitative judgments about execution and emotional effect."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Ramón demonstrated his superb domination of this technique, playing his feet in an ever-changing variety of patterns and shadings punctuated by brisk vueltas and sharp poses.",
+        "target": "Ramón's zapateado technique",
+        "rationale": "Technique, footwork, variation, and control are applied as aesthetic criteria for evaluating performance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the company has developed into a fine troupe, presenting as theatrical an evening of Spanish dance as is to be found north of Seville.",
+        "target": "Ramón de los Reyes Spanish Dance Theater",
+        "rationale": "The review elevates the company through a geographic comparison that implies exceptional status outside a canonical Spanish center."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The aside about Spanish names and ancestry notes identity, but it does not clearly make identity the basis of authority or belonging."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Fernando is taught cante by Ramón, but the passage describes direct instruction rather than oral, familial, or lineage transmission with authority stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Ramón de los Reyes Spanish Dance Theater and its performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "This is primarily a performance review with a secondary teaching-authority claim about Ramón's students."
+  },
+  {
+    "article_id": "JALEO_1980_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The concert was held in the open-air Teatro José María Pemán, a perfect setting.",
+        "target": "Paco de Lucía concert setting in Cádiz",
+        "rationale": "The passage evaluates the concert venue and presentation context as especially successful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'native habitat' links Paco to Andalucía, but it does not clearly use roots or origin to authorize flamenco value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Paco's rarity and regional importance are noted, but the excerpt does not construct a clear hierarchy or canon beyond event significance."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía concert setting and local presentation context",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible excerpt evaluates setting and publicity more than the musical performance itself."
+  }
+]

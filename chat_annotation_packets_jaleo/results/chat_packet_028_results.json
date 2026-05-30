@@ -1,0 +1,291 @@
+[
+  {
+    "article_id": "JALEO_1978_08::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "A powerful and constantly cheered performance. Our universal guitarist was growing by the moment. And the people asked for more.",
+        "target": "Paco de Lucía's performance",
+        "rationale": "The passage explicitly praises the power and public success of Paco de Lucía's performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Two styles, two forms, two guitars, each one great in his style.",
+        "target": "Paco de Lucía and Carlos Santana as guitar soloists",
+        "rationale": "The passage constructs a comparative hierarchy by presenting both performers as great representatives of distinct guitar styles."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Paco de Lucía dazzled the chicano in a terrain in which he dominated. It wasn't a real duel.",
+        "target": "the Paco de Lucía/Santana mano a mano",
+        "rationale": "The review uses critical judgment to define the limits of the supposed duel, asserting Paco's dominance in his own terrain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The term 'chicano' appears, but identity is not developed as a basis of flamenco belonging, authority, or representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text contrasts old and new repertoire, but does not ground flamenco value in tradition, roots, or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review praises intensity and power, but does not clearly define flamenco quality through a specific aesthetic criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía and Carlos Santana's guitar performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_08::A7",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The Golden Anniversary reference suggests career importance, but the visible text is mainly biographical chronology and does not clearly rank or canonize Antonio."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article gives dates and continuity of a dance career, but does not use the past to authorize present flamenco value."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Early performances with Rosario are mentioned, but there is no transmission, teaching, or lineage discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": "Antonio's retirement announcement",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_08::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "I propose establishing a network of residences where traveling flamencos could stay with flamencos of other cities.",
+        "target": "intercity flamenco hospitality network",
+        "rationale": "The passage constructs a flamenco community infrastructure based on mutual support among recognized participants across cities."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "This person would keep a list of homes/apartments offered and match up visitor and host.",
+        "target": "home-based hosting for traveling flamencos",
+        "rationale": "The proposed home hospitality system makes private/social settings meaningful for sustaining flamenco participation."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Or let's say that someone wants to go to New York to study; it would be such a help if someone would take them in and show them around.",
+        "target": "travel for flamenco study",
+        "rationale": "The passage frames community hosting as a means of enabling access to flamenco study across geographic boundaries."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The proposal supports community continuity, but it lacks explicit heritage, safeguarding, or public-culture framing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Study is mentioned, but no teacher, school, or method is positioned as pedagogically authoritative."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The text distinguishes traveling/local flamencos, but not as an insider/outsider authority boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "a hospitality network for traveling flamencos and students",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_08::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Ms. Montes' concert under the auspices of Santa Monica College was truly exciting.",
+        "target": "Lola Montes' concert",
+        "rationale": "The review explicitly evaluates the concert positively."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "It is always interesting to see how much individuality a company can bring to the specific traditions of Spanish Dance. Ms. Montes is quite successful in stamping the works with her personal style",
+        "target": "Lola Montes' choreographic and costuming style",
+        "rationale": "The passage applies individuality within tradition as an aesthetic criterion for judging the company's success."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "how much individuality a company can bring to the specific traditions of Spanish Dance",
+        "target": "Spanish Dance traditions in Lola Montes' program",
+        "rationale": "The passage treats specific dance traditions as a valued framework within which artistic individuality is judged."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gitanos, Basque provinces, and Indians of Michoacan are named as repertoire references, but identity does not clearly organize authority or belonging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The comeback claim gives the company importance, but does not clearly establish a canon or hierarchy beyond review praise."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "A class announcement is appended, but it is a routine listing without learning/access stakes."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition"
+      ],
+      "target": "Lola Montes and Her Spanish Dancers' concert",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1978_08::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "they will all have new songs, steps and falsetas to share with us",
+        "target": "Jaleistas returning from Spain",
+        "rationale": "The passage presents members of the Jaleistas community as sustaining the group by sharing newly acquired flamenco material."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "FLAMENCO TALK EL CANTE - PART I A PALO SECO - singing without musical accompaniment. CANCIÓN(la) - song; a popular or composed song with fixed verses",
+        "target": "Jaleo readers learning flamenco cante terminology",
+        "rationale": "The glossary mediates access to flamenco knowledge by defining specialist terms for readers."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "CANTAOR(a) - flamenco singer, the title implies the ability to sing \"cante jondo\" (a non-flamenco singer is a \"cantante\").",
+        "target": "distinction between cantaor and cantante",
+        "rationale": "The definition draws a boundary between a flamenco singer and a non-flamenco singer, tying the title cantaor to the ability to sing cante jondo."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "CANTE JONDO - deep song; usually used to refer to serious gypsy cante such as si-guiriya, soleares, toná and martinetes.",
+        "target": "cante jondo classification",
+        "rationale": "The passage defines cante jondo through aesthetic criteria of depth and seriousness."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "There are those who disagree with this classification and feel that almost any cante can be \"jondo\" if the singer feels it that way",
+        "target": "classification of cante jondo",
+        "rationale": "The text makes classification and hierarchy among cantes explicit by noting disagreement over which cante can count as jondo."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Members bring back songs, steps, and falsetas from Spain, but the text does not describe oral, embodied, or intergenerational transmission in enough detail."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsies and national/geographic origins appear in definitions, but the strongest function is classification rather than identity-based authority."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Cantes de ida y vuelta are described historically, but the passage is definitional rather than using roots or continuity to authorize present value."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "community",
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Jaleistas' knowledge-sharing and cante terminology/classification",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,237 @@
+[
+  {
+    "article_id": "JALEO_1985_07::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "flamenco speaks from the old and strangely tortured gut of Andulusia, the southeastern region of Spain",
+        "target": "flamenco",
+        "rationale": "The passage grounds flamenco's expressive value in an Andalusian origin/roots frame rather than treating geography as neutral background."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "this powerful and subtle art",
+        "target": "flamenco performance",
+        "rationale": "The passage explicitly evaluates flamenco as powerful and subtle, making a clear critical judgment of the art form."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "To achieve this captivating tension that is flamenco's core, all performers must work together",
+        "target": "flamenco performance quality",
+        "rationale": "The text defines flamenco value through aesthetic criteria of rhythm, ensemble tension, tone, and movement."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "Women and men accentuate their differences and attractions in the dance-play.",
+        "target": "gendered roles in flamenco dance",
+        "rationale": "The passage frames flamenco dance through gendered difference, using men and women as identity categories that organize performance meaning."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The phrase 'very living art form' suggests living culture, but the passage does not frame flamenco through safeguarding, public heritage, or community heritage responsibility."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "tradition",
+        "criticism",
+        "community"
+      ],
+      "target": "flamenco as an Andalusian, embodied performance art",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but visible evidence is sufficient for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1985_07::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Dedicated to conserving the pure artistry of flamenco",
+        "target": "Paco Peña's flamenco practice",
+        "rationale": "The passage uses purity language to authorize Peña's work as conserving proper flamenco artistry."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "established the seminar \"Encuentro Flamenco\" offering the aficionado an intensive program of study as well as the opportunity to live in Andalucía",
+        "target": "Encuentro Flamenco seminar",
+        "rationale": "The passage frames flamenco learning through a structured seminar that gives aficionados access to study and Andalusian immersion."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "another world renowned flamenco guitarist",
+        "target": "Paco de Lucía",
+        "rationale": "The text invokes international renown and elite status to place the guitarist within a hierarchy of exemplary flamenco artists."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'Andalucía, the heart of this musical culture' suggests roots, but the stronger visible discourse function is pedagogical access through the seminar."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'wide critical acclaim' and 'extensive praise' are evaluative, but they are promotional and less specific than the canon/status claim retained."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Paco Peña and his flamenco pedagogy/performance profile",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_07::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "we also encourage those who want to see a flamenco show to go to El Cid and enjoy their show and not to come to the juerga for we have no intention of putting on a show",
+        "target": "Los Angeles juerga",
+        "rationale": "The passage explicitly contrasts participatory juerga practice with spectator-oriented flamenco showgoing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Everyone who would like to participate is encouraged to come and share in an evening of flamenco music, dance, song and fellowship.",
+        "target": "local flamenco participants",
+        "rationale": "The text grounds flamenco value in community participation, fellowship, and shared practice among singers, dancers, and guitarists."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "a place where beginning as well as professional dancers and musicians can get together to share without feeling they are on center stage in a performance",
+        "target": "juerga as learning/workshop space",
+        "rationale": "The passage frames the juerga as an accessible learning environment where beginners and professionals can exchange knowledge outside formal performance pressure."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text rejects a show format and favors informal sharing, but it does not explicitly claim this intimacy is more authentic flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The line asking critics to go elsewhere polices the social setting, but it does not grant critical authority or develop a boundary critique of flamenco style."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "participatory Los Angeles juerga practice",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_07::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "An in-depth approach to technique, repertoire, and interpretation for a total understanding of the art of flamenco.",
+        "target": "winter flamenco dance workshop with Teo Morca",
+        "rationale": "The workshop is framed as structured access to flamenco knowledge through technique, repertoire, interpretation, and understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The workshop advertisement mentions fireside chats and communal lodging, but it does not clearly contrast participatory community practice with spectatorship or public staging."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The phrase 'in-depth' is positive, but it functions mainly as a pedagogical description rather than a distinct critical evaluation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Teo Morca winter flamenco dance workshop",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_07::A19",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The directory lists dance, guitar, and cante instruction contacts, but it is administrative listing data without discourse about learning access, authority, or transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The directory lists juergas and entertainment venues, but there is no visible evaluative contrast between participation and spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Directory-style listing only; no clear discourse function beyond contact information."
+  }
+]

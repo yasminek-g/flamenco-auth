@@ -1,0 +1,214 @@
+[
+  {
+    "article_id": "JALEO_1986_FALL::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "I hope to address, in this column, information valuable to dance students... For the benefit of those about to embark on their first flamenco study trip, then, I list below all the names and addresses I have discovered so far, along with my comments.",
+        "target": "dance students seeking access to flamenco study in Madrid",
+        "rationale": "The column explicitly mediates access to flamenco knowledge for students, especially across the U.S.-Spain study-trip boundary."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "medium",
+        "evidence_quote": "you will hear that there is very little good flamenco anymore; it's only for tourists, the pura stuff mostly died out years ago... If you believe them, you will become completely negative and depressed --so don't.",
+        "target": "purist and anti-tourist decline narratives about flamenco in Spain",
+        "rationale": "The passage explicitly invokes and contests a discourse that treats tourism and the loss of pura flamenco as signs of authentic flamenco's decline."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Named teachers and studios appear, but most mentions are practical listings rather than strong claims of pedagogical authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The phrase 'self-appointed ethnic police cum aficionados' criticizes gatekeeping, but the passage does not develop an expert-authority judgment enough to emit separately."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": ["pedagogy", "authenticity"],
+      "target": "student access to flamenco study in Madrid and narratives about authentic flamenco's decline",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The main discourse function is pedagogical mediation; authenticity language is present as a contested reported claim rather than the author's own purist position."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Baile Flamenco: Course #1 -- Caña and Bulería de Jerez; taught by Angelita Gómez... Guitarra Flamenca: One hour private lesson per day at any level with free selection of material.",
+        "target": "formal flamenco summer courses in dance and guitar",
+        "rationale": "The notice frames flamenco learning through organized courses and private lessons, giving concrete access to institutionalized instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers are named, but the article does not make a clear authority claim beyond course administration."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "organized flamenco instruction through summer courses",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded narrowly for learning access; the listing format does not support stronger pedagogical-authority coding."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I can enthusiastically recommend it to all as an excellent transcription.",
+        "target": "Michael Haas's transcription of Paco de Lucía's Guajiras de Lucia",
+        "rationale": "The reviewer makes an explicit evaluative judgment of the sheet-music transcription."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The notation is pretty accurate--including a picado run near the beginning which is taken by Paco at lightning speed and sounds terrific but is out of compás... Measures 21 through 24, although conveying the correct notes and time values, are unnecessarily written out of compás.",
+        "target": "the transcription's musical accuracy and flamenco notation quality",
+        "rationale": "The passage applies technical criteria such as accuracy, picado, time values, and compás to judge the quality of the transcription."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "I have been playing for some 28 years now... As a student of Edward Freeman I learned to read, write, and appreciate accurately transcribed flamenco sheet music.",
+        "target": "the reviewer's authority to judge flamenco sheet music",
+        "rationale": "The reviewer grounds the evaluation in long experience and training, positioning himself as an expert judge of transcription quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Edward Freeman is mentioned as a teacher, but the passage primarily uses that relationship to authorize criticism rather than to discuss pedagogy itself."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The article lists a small set of decent publications, but the canon/hierarchy function is secondary to the review and not developed enough for a separate code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": ["criticism"],
+      "target": "commercially available flamenco sheet music and the Guajiras de Lucia transcription",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is a technical review with explicit self-authorized critical expertise and concrete evaluative criteria."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "his own Aztec ancestors had a tradition of sacred dance, which was never allowed into the sanctuaries of the church. It was time to let sacred dance into the church again, he said.",
+        "target": "sacred dance within the church, including the Flamenco Mass",
+        "rationale": "The passage uses an inherited sacred-dance tradition to authorize the contemporary inclusion of dance in church ritual."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Lozano starred in a well-done and very intense dance to the 'Agnus Dei'... Each dance was appropriately brief, properly refined and dignified--wholly cognizant that this was not mere entertainment but part of the church's most holy act of worship.",
+        "target": "Timo Lozano's Flamenco Mass performance",
+        "rationale": "The article explicitly evaluates the performance's quality, intensity, restraint, dignity, and fit within worship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Church leaders and the bishop confer institutional acceptance, but the article lacks explicit heritage or patrimony framing."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The passage contrasts worship with entertainment, but it does not clearly contrast participatory/private flamenco with spectatorial/public flamenco."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "'Not mere entertainment' marks a boundary, but the claim is about liturgical propriety rather than commercial spectacle as an authenticity threat."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["tradition", "criticism"],
+      "target": "flamenco dance as part of Catholic liturgy",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest evidence combines critical evaluation with a tradition-based authorization of sacred dance in church."
+  },
+  {
+    "article_id": "JALEO_1986_FALL::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "An intensive four-week seminar is planned for this coming May and June. Last year, a sequiriyas with mantón was taught by Ramón, and a caracoles with fan was taught by Clara.",
+        "target": "Boston-area flamenco seminar instruction",
+        "rationale": "The passage describes organized seminar-based access to flamenco dance instruction outside Spain."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The production details are descriptive and promotional, without clear evaluative judgment."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Named teachers are mentioned, but the excerpt does not establish their pedagogical authority beyond saying they taught."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": ["pedagogy"],
+      "target": "organized flamenco learning in Boston",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded only for the seminar/teaching access; the rest is mainly event description."
+  }
+]

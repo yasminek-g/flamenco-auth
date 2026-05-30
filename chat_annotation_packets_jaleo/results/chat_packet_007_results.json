@@ -1,0 +1,222 @@
+[
+    {
+        "article_id": "JALEO_1978_01::A1",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "When flamenco is at its best... there is sometimes a special mood or spirit present that flamencos call \"duende.\" It is this moment when the artists and the audience become one with the spirit of the music",
+                "target": "duende as a criterion of successful flamenco performance",
+                "rationale": "The passage defines flamenco at its best through duende, unity of artists and audience, spirit, and musical mood as aesthetic criteria."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "high",
+                "evidence_quote": "Soon a real juerga was in progress, and for a couple of hours there was a great deal of spirit and good flamenco... we were indoors for essentially the first time all week... and crowded together",
+                "target": "the juerga as participatory flamenco setting",
+                "rationale": "The article links good flamenco to the intimate, crowded, participatory social conditions of the juerga rather than to detached or planned spectatorship."
+            },
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "confidence": "medium",
+                "evidence_quote": "In the tablaos, the true professionals always put on a decent show, but those magic moments when they are truly inspired to do their best occur only rarely.",
+                "target": "tablao performance versus juerga conditions",
+                "rationale": "The passage contrasts professional staged tablao shows with rarer inspired moments and favors intimate juerga conditions as more likely to produce authentic flamenco intensity."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "reason": "The article gives practical suggestions for organizing juergas, but the advice concerns event conditions rather than institutional or transnational access to flamenco knowledge."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "criticism",
+                "community",
+                "authenticity"
+            ],
+            "target": "duende and the juerga as conditions for good flamenco",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1978_01::A2",
+        "no_relevant_discourse": true,
+        "insufficient_context": false,
+        "codes": [],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The letter praises Jaleistas activities and Juana De Alva as a driving force, but it is mainly gratitude and club appreciation without clearly authorizing flamenco judgment or community authority."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": false,
+            "polarity": "neutral",
+            "basis": [],
+            "target": null,
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Short appreciation letter; no clear flamenco discourse function beyond general thanks."
+    },
+    {
+        "article_id": "JALEO_1978_01::A3",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_01",
+                "confidence": "high",
+                "evidence_quote": "proving what many die-hard flamenco aficionados refuse to accept: that a foreigner, armed with patience, a will to learn, and talent, can master the art of flamenco guitar",
+                "target": "foreigners' ability to master flamenco guitar",
+                "rationale": "The passage explicitly stages an insider/outsider boundary around foreignness, mastery, and acceptance by flamenco aficionados."
+            },
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "learned as much on his own as from lessons... began to imitate and learn from their playing. He feels that these guitarists taught him the \"Whys\" of flamenco.",
+                "target": "Rodrigo de San Diego's flamenco guitar learning",
+                "rationale": "The passage frames flamenco knowledge as acquired through lessons, self-study, imitation, and interpretive understanding of models across a transnational learning path."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "Sabicas and Mario Escudero were the reigning kings of the flamenco guitar, Rod was attracted to the styles of Melchor de Marchena and Los Mor\u00e1o de Jerez",
+                "target": "flamenco guitar models and stylistic hierarchy",
+                "rationale": "The passage invokes leading guitarists as hierarchical reference points and exemplary models within flamenco guitar."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "confidence": "medium",
+                "evidence_quote": "Curro, impressed by Rod's talent, invited him to accompany his singing at several flamenco festivals (normally off limits to foreign performers).",
+                "target": "foreign performers in Spanish flamenco festivals",
+                "rationale": "The passage shows national/foreigner identity shaping access, representation, and belonging within flamenco performance spaces."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_01",
+                "reason": "The text says a foreigner can master flamenco guitar, but it does not explicitly frame Rodrigo as genuine or properly flamenco beyond skill and acceptance."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "contested",
+            "basis": [
+                "community",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Rodrigo de San Diego as a foreign flamenco guitarist in Spain",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1978_01::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "high",
+                "evidence_quote": "he has transcribed a substantial amount of music by most of the top flamenco guitarists. This material, some of which is written in standard notation, and some in cifra or tablature, is offered for sale",
+                "target": "Peter Baime's flamenco guitar transcriptions",
+                "rationale": "The passage presents notation and tablature as media that make flamenco guitar repertoire accessible beyond direct performance or oral transmission."
+            },
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "medium",
+                "evidence_quote": "Drawing on his wide knowledge of the flamenco guitar, both old and new styles (his familiarity with the Moron style of playing comes from study with Diego del Gastor in Mor\u00f3n de la Frontera)",
+                "target": "Peter Baime's authority to transcribe flamenco guitar",
+                "rationale": "Baime's ability to mediate flamenco guitar knowledge is legitimated through wide stylistic knowledge and study with Diego del Gastor."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "medium",
+                "evidence_quote": "These records will be placed, along with other collections, in a location where they can be enjoyed by all interested parties.",
+                "target": "donated flamenco record collection",
+                "rationale": "The record collection is framed as a shared cultural resource to be preserved and made accessible to interested community members."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The phrase 'top flamenco guitarists' signals hierarchy, but it functions mainly to describe the scope of transcribed material rather than construct a canon."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "heritage"
+            ],
+            "target": "flamenco guitar transcription and record access",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    },
+    {
+        "article_id": "JALEO_1978_01::A5",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_03",
+                "confidence": "medium",
+                "evidence_quote": "These records will be placed, along with other collections, in a location where they can be enjoyed by all interested parties.",
+                "target": "donated flamenco record collection",
+                "rationale": "The passage frames the donated records as a preserved and publicly accessible community cultural resource rather than as private property."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "Names such as Sabicas, Carlos Montoya, Ram\u00f3n Montoya, and others may imply canonical value, but the text lists record contents without explicit ranking or canon formation."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "reason": "The San Diego Flamenco Association is a community institution, but the passage focuses on donation and access rather than community authority to judge or sustain flamenco."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "heritage"
+            ],
+            "target": "shared access to flamenco records",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": ""
+    }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "article_id": "JALEO_1985_01::A20",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "Phrases such as 'great chipbowl' and 'a lot of fun' praise the gathering lightly, but the passage is mainly a routine juerga report without sustained critical judgment or criteria."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga format implies participatory social flamenco, but the visible text only lists attendees and logistics without contrasting participation, spectatorship, or setting as a value claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Routine community event report and announcement; no clear authority, boundary, heritage, pedagogy, or critical discourse."
+  },
+  {
+    "article_id": "JALEO_1985_01::A21",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Directory ordering information and restaurant advertisement only."
+  },
+  {
+    "article_id": "JALEO_1985_07::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "The guitarist who accompanied my father said to me, \"¿Te gusta la guitarra?\"... \"¿Quieres que te enseñe?\"... Then I would go to the theater and he would teach me there in the \"camerino\"",
+        "target": "Luis Maravilla's early flamenco guitar formation",
+        "rationale": "The passage frames Maravilla's entry into flamenco guitar through informal apprenticeship beside his father's accompanist in a theatrical flamenco setting."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Luis Maravilla would take over the store and teach guitar there",
+        "target": "Luis Maravilla as guitar teacher",
+        "rationale": "The article positions Maravilla not only as a performer but as someone who transmits flamenco guitar knowledge through teaching."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "References to prominent performers and La Llave del Oro del Cante imply status, but the visible passage uses them mainly as biographical context rather than developing a canon or hierarchy."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "Family and theatrical-community context are present, but the passage does not clearly claim that family or afición authorizes Maravilla's flamenco knowledge."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "Luis Maravilla's flamenco guitar knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Pedagogical transmission is the clearest discourse function; status references are treated conservatively as context."
+  },
+  {
+    "article_id": "JALEO_1985_07::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "That's how Jaleístas started--people getting together to share. Write Jaleo if you are interested--especially if you are willing to be listed as a contact person in your area in the Directory.",
+        "target": "local flamenco activity and Jaleístas-style community formation",
+        "rationale": "The editor presents flamenco activity as sustained through local contacts, shared gatherings, and community organization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "the legendary Manuel Agujetas de Jerez performs on video cassette. The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance",
+        "target": "Manuel Agujetas de Jerez",
+        "rationale": "The advertisement canonizes Agujetas through labels such as legendary, world famous maestro, Jerez dynasty, and historic performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "An educational \"must\" for guitarists and singers.",
+        "target": "Manuel Agujetas video cassette",
+        "rationale": "The video is framed as mediated access to flamenco knowledge for learners across distance, specifically guitarists and singers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Letters mention juergas and networks, but do not clearly contrast participatory versus spectatorial flamenco as a value-bearing setting."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'Jerez dynasty' suggests lineage, but it is promotional shorthand rather than a developed continuity or roots claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "local flamenco networks and Manuel Agujetas video",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Includes letters, editor note, and advertisements; only passages with clear community, canonizing, or mediated-learning function are coded."
+  },
+  {
+    "article_id": "JALEO_1985_07::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Heralded by Jaleo... as a master guitar craftsman whose instruments \"are now among the most sought after\"",
+        "target": "Lester DeVoe and his flamenco guitars",
+        "rationale": "The passage elevates DeVoe to exemplary status by naming him a master craftsman and placing his instruments high in demand."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Three of the world's most renowned flamenco and classical performers use his guitars.",
+        "target": "DeVoe's guitars",
+        "rationale": "Use by renowned performers functions as evaluative evidence of the guitars' quality and prestige."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "The text says DeVoe studied under Mariano Córdoba, but the visible passage does not make Córdoba's teaching authority or transmission process the focus."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Jaleo is cited as heralding DeVoe, but the passage does not foreground the publication's critical authority enough to emit a separate expert-authority code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Lester DeVoe's guitar craftsmanship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible excerpt is sufficient for the emitted evaluative/canonical claims."
+  }
+]

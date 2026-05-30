@@ -1,0 +1,242 @@
+[
+  {
+    "article_id": "JALEO_1985_SPRING::A16",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The text mentions monthly juergas and member locations, but it reports activity neutrally rather than valuing a participatory setting or contrasting it with spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Local scene report and photo captions; no clear evaluative, authorizing, pedagogical, heritage, or boundary discourse."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "flamenco is at its purest when shared between musicians and a few onlookers in marathon, all-night sessions. These \"juergas\" usually occur in intimate settings",
+        "target": "intimate juerga-based flamenco",
+        "rationale": "The passage explicitly links flamenco purity to small-scale, intimate co-presence rather than staged performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Traditional flamenco, however, is becoming more scarce as Spain leaves 40 years of isolation behind and moves into the European mainstream.",
+        "target": "traditional flamenco",
+        "rationale": "Traditional flamenco is framed as a valued form under pressure from social change and modernization."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The more complicated the technique, the more difficult it is to maintain flamenco's emotional essence",
+        "target": "new flashier/fusion flamenco style",
+        "rationale": "The passage applies emotional essence and technique as criteria for judging flamenco quality."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The contrast between pure/intimate flamenco and flashier fusion suggests boundary work, but the text does not fully exclude fusion as fake or illegitimate."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "traditional intimate flamenco versus newer fusion styles",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Unfortunately Donn Pohren's writing sometimes tries to serve Donn Pohren as well as serving aficionados.",
+        "target": "Donn Pohren's writing and conduct around Morón artists",
+        "rationale": "The letter explicitly criticizes Pohren's writing and frames his relationship with artists as self-serving."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "confidence": "medium",
+        "evidence_quote": "We should be thankful that, hopefully, a few of these tapes will circulate and the memory of these artists will not die away completely. The material should, in fact, be put in some more permanent form",
+        "target": "recordings and memory of deceased flamenco artists",
+        "rationale": "The editor frames circulation and preservation of recordings as memory-work that keeps artists from disappearing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "Since there is no teacher in Douglas or anybody that has any knowledge or taste for this... I would appreciate any information or ideas that would further assist me in my playing.",
+        "target": "flamenco guitar instruction in Arizona",
+        "rationale": "The letter thematizes geographic lack of flamenco knowledge and seeks mediated access to instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The Pohren letter criticizes exploitation and pay, but it does not clearly use expert critical authority or police proper/improper flamenco form."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions aficionados, but they are not clearly positioned as authorities who judge or sustain flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage",
+        "pedagogy"
+      ],
+      "target": "Pohren's mediation of Morón artists, recordings, and access to guitar instruction",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "OCR damage is present but enough of the relevant passages is legible for conservative coding."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Yes, her technique was good; but still? Her performance did appear to be original and had a jondo feeling.",
+        "target": "Japanese flamenco dancer's performance",
+        "rationale": "The reviewer evaluates technique, originality, and jondo feeling while expressing reservations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "I found myself struggling with the idea that this is not the way that flamenco should be.",
+        "target": "non-typical staged Japanese flamenco performance",
+        "rationale": "The reviewer invokes a norm of how flamenco should be, making a properness claim even while uncertain."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "her technique was good... original and had a jondo feeling",
+        "target": "Japanese flamenco dancer's performance",
+        "rationale": "Technique and jondo feeling function as aesthetic criteria for judging the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The artists are identified as Japanese, but the visible text does not clearly make Japanese identity itself the basis of authority, belonging, or exclusion."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'not the way that flamenco should be' suggests possible boundary work, but the reviewer also grants technique, originality, and jondo feeling, so a strong purity exclusion is not supported."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Japanese flamenco performance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible evaluation window is sufficient for the coded judgments; no inference from missing portions was used."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the flamenco schools are proliferating in all of the major cities, especially Sevilla and Madrid... about half of the students in the expensive schools are foreigners and many of those, Japanese.",
+        "target": "flamenco schools in Spain and foreign students",
+        "rationale": "The passage frames flamenco learning through formal schools and transnational access by foreign students."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the legendary Manuel Agujetas de Jerez performs on video cassette. The world famous maestro of the Jerez dynasty of gypsy flamenco singing gives an historic performance",
+        "target": "Manuel Agujetas de Jerez video performance",
+        "rationale": "The advertisement canonizes Agujetas through legendary, maestro, dynasty, and historic status claims."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "the world famous maestro of the Jerez dynasty of gypsy flamenco singing",
+        "target": "Manuel Agujetas de Jerez",
+        "rationale": "Local and ethnic identity framing is used to authorize the performer as a representative of a flamenco singing lineage."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The text says flamenco is valued and declared an art, but it does not clearly make an authenticity or proper-flamenco claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Teachers and lessons are mentioned, but no specific teacher or method is clearly positioned as authoritative beyond the broader institutional access captured by PED_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism",
+        "community"
+      ],
+      "target": "formal flamenco schooling and Manuel Agujetas's video performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

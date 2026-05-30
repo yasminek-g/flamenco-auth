@@ -1,0 +1,231 @@
+[
+  {
+    "article_id": "JALEO_1983_02::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "it was enlightening to find what could be called the link between ancient Indian dance and flamenco in the form of the kathak",
+        "target": "flamenco origins and relation to kathak/Indian dance",
+        "rationale": "The passage uses an origin/link narrative to ground flamenco in a longer historical-cultural continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "He became a virtuoso, a true phenomenon, recognized by music authorities and critics",
+        "target": "Paco as an internationally recognized artist",
+        "rationale": "The passage elevates Paco through exemplary status, international recognition, and authority from critics."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The rhythm and verbal code are described as performance communication, not as learning or embodied/oral transmission."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise, but the strongest visible critical discourse is hierarchical canonization rather than a developed review judgment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco's origin narrative and internationally recognized artists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated and the ending context shifts to separate praise of major musicians; only visible claims were coded."
+  },
+  {
+    "article_id": "JALEO_1983_02::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "It was not easy for them to get the idea into their heads that it is possible to dance mathematically and with an organized preparation.",
+        "target": "organized/formal dance learning in relation to baile gitano",
+        "rationale": "The passage explicitly contrasts organized, study-based dance learning with gypsy dancers' independent style."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Those men, using only their musical ear, were able to reproduce on the guitar that which they heard around them.",
+        "target": "early flamenco guitarists' learning and accompaniment practice",
+        "rationale": "Flamenco knowledge is framed as acquired through hearing, reproduction, and practical coordination with dance and song."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "the gypsy separated himself from the classical Andalucian dance, remained completely isolated, and pursued, alone and step-by-step, his personal development",
+        "target": "gypsy identity and the formation of baile gitano/flamenco",
+        "rationale": "The passage makes gitano identity central to who develops, embodies, and differentiates flamenco dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The historical emergence of forms is narrated, but the visible text is mainly explanatory rather than using tradition or origin to authorize present practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Technical coordination and ability are praised, but the passage functions more as pedagogy/transmission history than as aesthetic criteria for judging quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "baile gitano/flamenco as developed through informal gitano practice and ear-based transmission",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_02::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "In his chosen field of creative ethnic dance, Morca is a complete master.",
+        "target": "Teodoro Morca's performance",
+        "rationale": "The review explicitly evaluates Morca's artistry and mastery."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "all of the essential aspects serious aficionados look for in a male dancer: virility, fbrce, expressive footwork, feeling and good taste",
+        "target": "criteria for quality in male flamenco dance",
+        "rationale": "The passage names concrete aesthetic criteria used to judge flamenco dance quality."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "preserving the original elements of flamenco by retaining the spontaneity and the purity of expression that sprang from the unique Moorish influenced Andalusian culture of Southern Spain",
+        "target": "Morca's flamenco dancing",
+        "rationale": "The performance is legitimated through preservation, original elements, and rooted Andalusian cultural origins."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The review uses gendered criteria for a male dancer, but these are already captured as aesthetic criteria and do not independently develop identity-based belonging or representation."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'purity of expression' appears, but no impure, fake, or excluded form is identified."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Teodoro Morca's flamenco dancing",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_02::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "They all helped to make a great juerga and we hope to see them all at the March 4th juerga.",
+        "target": "Los Angeles juerga participants",
+        "rationale": "The passage frames musicians, dancers, hosts, and attendees as the community actors who sustain the juerga."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "there was plenty of good food, good conversation, good music, song and dance making for an evening of great flamenco fun",
+        "target": "the juerga as a participatory flamenco setting",
+        "rationale": "The event is valued as a social, participatory gathering rather than a detached spectator performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Dignity, pride, passion, grief, the inevitability of fate -- it was all there in this dancer's brilliant performance. She is an exceptional artist.",
+        "target": "Rioja's performance",
+        "rationale": "The passage makes an explicit evaluative judgment of the dancer's performance and artistry."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The phrase 'traditional and contemporary flamenco styles' is descriptive and does not authorize value through tradition or continuity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The mention that purists might question the interpretation signals possible contestation, but no critic or expert authority is developed."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Los Angeles juerga community and Rioja's performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated; visible beginning context and ending review segment were coded separately where supported."
+  },
+  {
+    "article_id": "JALEO_1983_02::A9",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a short photo caption and does not provide enough discourse for coding."
+  }
+]

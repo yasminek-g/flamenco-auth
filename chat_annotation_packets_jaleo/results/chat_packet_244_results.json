@@ -1,0 +1,271 @@
+[
+  {
+    "article_id": "JALEO_1987_SPRING::A16",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "Libby Lubinger at the Fairmount Center for the Arts in Novelty, Ohio... has, in the last seventeen years, done a terrific job of developing a great core group of dancers who are doing Spanish and flamenco dance, music, and song.",
+        "target": "Fairmount Center for the Arts flamenco program in Ohio",
+        "rationale": "The passage legitimates institutional flamenco learning and access outside major centers through a long-running school/workshop setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The real facts are that flamenco is found throughout the U.S. in many smaller communities and it is taken quite seriously.",
+        "target": "smaller U.S. flamenco communities",
+        "rationale": "The article asserts that local communities outside major cities sustain serious flamenco activity, granting community-based legitimacy."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "it proved to be the most intense, in that they were all so much more accomplished than the year before and that pushed all of us to new levels of excitement and awareness.",
+        "target": "Ohio workshop students",
+        "rationale": "The passage explicitly evaluates the students' progress and the workshop's artistic/pedagogical intensity."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The juerga and patio gathering suggest participatory flamenco, but the visible text mainly describes an event and mixed festivities rather than making a clear value claim about participation versus spectatorship."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community",
+        "criticism"
+      ],
+      "target": "local and workshop-based flamenco practice in smaller U.S. communities",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A17",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The dances and songs of the production were woven into two typical scenes in Cádiz -- a tavern called La Pravidilla and a gypsy encampment at the outskirts of town.",
+        "target": "Las Noches de Cádiz production settings",
+        "rationale": "The production organizes flamenco meaning through socially distinct public/tavern and gypsy encampment settings."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "Part I, in the taverna, delto primarily with non-gypsy flamenco music that is public and festive. The second part dealt with the more gypsy flamenco, characterized by complex percussion and cante jondo.",
+        "target": "non-gypsy and gypsy flamenco in the production",
+        "rationale": "The text uses ethnic/community identity categories to organize flamenco styles, settings, and representative authority."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "Miguel Arnot lived for thirteen years near Puerto de Santa María (Cádiz). His mother played flamenco guitar and he was immersed in flamenco with radio, records, and home fiestas.",
+        "target": "Miguel Arnot's flamenco formation",
+        "rationale": "The passage frames flamenco knowledge as formed through family, place, recordings, and home fiesta immersion rather than only formal schooling."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Paco Sevilla... studied and performed with some of flamenco's best know artists... appearing in such prestigious halls as New York's Lincoln Center and Los Angeles' Dorothy Chandler Pavilion.",
+        "target": "Paco Sevilla",
+        "rationale": "The biographical note elevates Sevilla by associating him with recognized artists and prestigious venues, constructing artistic status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The Cádiz settings and typical personalities imply tradition, but the passage describes a staged concept more than explicitly using continuity or roots to authorize present flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Las Noches de Cádiz and its performers' flamenco credibility",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Blanca del Rey, one of today's best flamenco dancers, gives the best she has to give every night in the tablao \"El Corral de la Morerfa.\"",
+        "target": "Blanca del Rey",
+        "rationale": "The passage canonizes Blanca del Rey through superlative ranking among contemporary flamenco dancers."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Those virtues are \"el alma\" [soul], art, duende, and angel.",
+        "target": "qualities of a good flamenco dancer",
+        "rationale": "The interview defines flamenco dance quality through aesthetic criteria such as soul, art, duende, and angel."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "purity is feeling and living what you are doing. Secondly, it is dancing things that are worth the trouble and then not to corrupt them. For example, you can't dance a siguiriya and end it por bulerfas.",
+        "target": "purity in flamenco dance",
+        "rationale": "The speaker defines pure flamenco dance by excluding corrupt mixtures and improper treatment of forms."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "You can't subdue the cante and the guitar in order to be more entertaining to the gallery, to get an easy applause. You have to do things as they are. If not, the artist knows he is not giving authenticity.",
+        "target": "proper flamenco dance practice",
+        "rationale": "The passage explicitly links proper respect for cante and guitar to giving authenticity in flamenco."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "medium",
+        "evidence_quote": "There, she has been shaping herself into an artist since she was twelve years old. She always says she was born dancing and has never set foot in a dance school.",
+        "target": "Blanca del Rey's formation as a dancer",
+        "rationale": "The passage values non-institutional, embodied formation in the tablao over formal school training."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The text warns against entertaining the gallery for easy applause, but the stronger and clearer discourse function is purity/authenticity boundary work rather than a broad anti-commercial authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Blanca del Rey and proper flamenco dance",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "I would like to recommend Grag Stitt... He is an excellent guitar instructor and has studied with Mariana Córdoba",
+        "target": "Greg Stitt as guitar instructor",
+        "rationale": "The letter authorizes a flamenco guitar teacher by praising his instruction and linking him to a named pedagogical lineage."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Of course, I'm always in search of other flamencos. I have read in Jaleo about juergas in Akron, Ohio, a short drive from Pittsburgh",
+        "target": "regional flamenco social networks",
+        "rationale": "The passage frames flamenco belonging through the search for other local flamencos and juergas as community contact."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The mention of juergas suggests participatory settings, but the text mainly describes difficulty locating contacts rather than valuing the juerga as a participatory form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "flamenco instruction and regional community access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1986_SUMMER::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "When I hear a non-flamenco say \"I have A flamenco album,\" inevitably it will be one of three artists: Carlos Montoya, Sabicas, or Manitas de Plata.",
+        "target": "non-flamenco listeners' flamenco knowledge",
+        "rationale": "The passage contrasts non-flamenco listeners' familiar canon with flamenco-aware judgment, drawing an epistemic insider/outsider boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "I have heard so many bad things about this guitarist... if Manitas de Plata doesn't play with a tight compás, it's because he doesn't want to.",
+        "target": "Manitas de Plata",
+        "rationale": "The article engages existing critical boundary-policing around Manitas and contests it by reframing his compás as intentional showmanship."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "if Manitas de Plata doesn't play with a tight compás, it's because he doesn't want to.",
+        "target": "Manitas de Plata's guitar playing",
+        "rationale": "The passage uses tight compás as an aesthetic criterion for judging flamenco guitar and debates its relevance to Manitas's playing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The mention of Carlos Montoya, Sabicas, and Manitas de Plata as common reference points suggests a popular canon, but the article focuses more on insider/outsider perception and critical debate than ranking them."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Manitas de Plata and popular/non-flamenco reception",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

@@ -1,0 +1,236 @@
+[
+  {
+    "article_id": "JALEO_1984_05::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Mariquita Flores is an internationally-esteemed artist, performer, and teacher in the field of Spanish dance. An acclaimed child prodigy",
+        "target": "Mariquita Flores",
+        "rationale": "The passage explicitly praises Flores's artistic status and reputation rather than merely listing biographical facts."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "her studies of flamenco with the great Estampio, and her studies with Azunción Granados (an outstanding associate of the world-renowned Argentina",
+        "target": "Flores's artistic lineage and repertoire",
+        "rationale": "The text constructs a hierarchy of exemplary teachers and canonical repertoire through terms such as great, outstanding, and world-renowned."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "her formative years were spent in exhaustive study with some of the best teachers available in Spain and France",
+        "target": "Flores's dance training",
+        "rationale": "Her expertise is legitimated through recognized teachers and intensive study, positioning pedagogical lineage as an authority source."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "Command performances for heads of state confer prestige, but the passage does not frame flamenco or Spanish dance as public heritage."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Mariquita Flores as an authoritative Spanish dance artist and interpreter",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Promotional-biographical profile; codes retained only where praise, hierarchy, or pedagogical legitimation is explicit."
+  },
+  {
+    "article_id": "JALEO_1984_05::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "María Benítez' Estampa Flamenca, which has been extraordinarily successful throughout the U.S.",
+        "target": "María Benítez' Estampa Flamenca",
+        "rationale": "The passage directly evaluates the company's success and artistic visibility."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "She is not only widely recognized as one of the foremost Spanish dancers of her generation",
+        "target": "María Benítez",
+        "rationale": "The wording places Benítez in a generational hierarchy as one of the foremost dancers."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The text mentions teaching at institutions and master classes, but mostly as itinerary/biography rather than a discourse about access to flamenco knowledge."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The Governor's Award is official recognition, but there is no explicit heritage or public-culture framing in the visible excerpt."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "María Benítez and her company as leading Spanish dance performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible evidence is sufficient for conservative critical-evaluation and hierarchy codes."
+  },
+  {
+    "article_id": "JALEO_1984_05::A6",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The four weeks of classes and performance opportunity are biographical facts, not a discourse about institutional or transnational learning access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The recording advertisement uses promotional phrases such as rare and unique, but this is product advertising without clear critical judgment or criteria."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "Rare live recordings and letras/translations could suggest preservation, but the visible text frames them as sale items rather than safeguarding or heritage work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is chiefly biography and advertisement; no code meets the required discourse-function threshold."
+  },
+  {
+    "article_id": "JALEO_1984_05::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "You have to do it very subtly, in a very subtle way including new chords and new concepts but without losing the feeling of the roots.",
+        "target": "Paco de Lucía's approach to flamenco innovation",
+        "rationale": "The passage authorizes innovation only through continuity with flamenco roots and inherited feeling."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "The reason of my music is flamenco... I can never be a jazz musician because I am a flamenco guitarist.",
+        "target": "Paco de Lucía's musical identity",
+        "rationale": "Paco asserts flamenco as the defining truth of his music despite work in jazz contexts, presenting his practice as properly grounded in flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The interview discusses jazz and innovation, but it does not explicitly use critique to police a proper/improper flamenco boundary."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The phrase 'they don't let it' hints at gatekeeping, but the social group and authority boundary are too unspecified to code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "tradition"
+      ],
+      "target": "flamenco innovation that remains rooted in tradition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The clearest discourse concerns rooted continuity amid experimentation."
+  },
+  {
+    "article_id": "JALEO_1984_05::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Both classical and flamenco guitarists who have played it have told me that it is a great innovation in the field of music.",
+        "target": "Juan Gilabert Sarrión's Extremeñan guitar",
+        "rationale": "The passage explicitly evaluates the guitar as a major innovation, including recognition by flamenco guitarists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the sound enters round and clean and comes out the same way, because there are no obstacles inside the guitar",
+        "target": "the Extremeñan guitar's sound and design",
+        "rationale": "The text applies aesthetic and technical criteria, especially sound quality and playability, to define the instrument's value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "according to a report made by the professor of guitar in the Conservatory of Badajoz and music-critic for this newspaper, Enrique Molina",
+        "target": "expert validation of the Extremeñan guitar",
+        "rationale": "The article invokes a conservatory professor and newspaper music critic as an authoritative expert voice for evaluating the instrument."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Traditional guitars are mentioned only as a comparison for design features, not as a continuity or roots claim authorizing flamenco value."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Extremeñan identity and local support are present, but they do not clearly shape flamenco belonging, authority, or representation."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "reason": "The municipal festival listing names institutions and artists, but it is an event notice without heritage authorization discourse."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "the Extremeñan guitar as an innovative, expert-validated instrument relevant to flamenco and classical guitarists",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest codes come from expert and player evaluation of the guitar; the appended festival schedule was not treated as heritage discourse."
+  }
+]

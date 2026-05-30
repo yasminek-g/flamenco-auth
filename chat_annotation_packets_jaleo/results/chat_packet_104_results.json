@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "JALEO_1981_05::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "on the occasion of your March juerga... our hosts at the juerga... ensure a successful fiesta",
+        "target": "March juerga as a participatory community event",
+        "rationale": "The letter frames the juerga/fiesta as a shared social flamenco gathering sustained by hosts and participants."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "The most gratifying aspect of all was to meet so many friendly and enthusiastic people who sincerely love flamenco.",
+        "target": "Jaleists and juerga participants",
+        "rationale": "The passage values the local group through sincere flamenco afición and community spirit."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The visit and hospitality are praised, but the passage does not critically evaluate a flamenco artist, performance, style, publication, or event in aesthetic terms."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The writers mention answering questions for Jaleo, but the visible text does not frame this as substantive flamenco knowledge mediation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleists and the March juerga community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The evidence supports community participation and afición, but not stronger authority or pedagogy codes."
+  },
+  {
+    "article_id": "JALEO_1981_05::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "a national tour giving lecture-demonstration concerts to high school and college students",
+        "target": "high school and college audiences learning flamenco",
+        "rationale": "The passage frames performance as institutional educational outreach through lecture-demonstration concerts."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "We started the show with a dance from Mexico to show the difference between Mexican and flamenco dances... and explained the palillos, palmas and pitos.",
+        "target": "student audiences' access to flamenco dance knowledge",
+        "rationale": "The performers explicitly teach audiences distinctions between dance forms and explain flamenco techniques."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "Audience participation in rumba is mentioned, but it appears as part of a school show rather than a socially meaningful flamenco participatory setting."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article describes hardship and logistics of touring, but does not critically evaluate flamenco artistic quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy"
+      ],
+      "target": "lecture-demonstration flamenco education for students",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Both emitted codes are PED_03 because the article contains two distinct educational-access functions: institutional lecture-demonstrations and explanatory comparison/technique teaching."
+  },
+  {
+    "article_id": "JALEO_1981_05::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "Highest compliments to \"El Chileno\" for the excellent Sabicas interview. Other articles were well done",
+        "target": "Jaleo articles and the Sabicas interview",
+        "rationale": "The letter explicitly praises and evaluates the quality of specific Jaleo articles."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "This has been Jaleo's hope--to give us a look at what is happening in flamenco today, as well as yesterday, to give different points of view, that \"chance to be heard.\"",
+        "target": "Jaleo as a mediator of flamenco knowledge and viewpoints",
+        "rationale": "The passage legitimates Jaleo's role in giving readers access to contemporary and historical flamenco perspectives."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "Don't criticise what you don't understand--give it a chance to be heard.",
+        "target": "uninformed criticism of flamenco developments",
+        "rationale": "The passage critiques premature judgment and frames understanding as a condition for legitimate criticism."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The text mentions flamenco 'today, as well as yesterday,' but does not make a tradition/continuity claim that authorizes present practice."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The phrase 'chance to be heard' is about editorial openness to viewpoints, not participatory flamenco setting."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "Jaleo's editorial openness and criticism of misunderstood flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The text is short but clearly evaluates articles and defends informed, plural flamenco commentary."
+  },
+  {
+    "article_id": "JALEO_1981_05::A5",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The visible text is only a source note and is too short to support annotation."
+  },
+  {
+    "article_id": "JALEO_1981_05::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I understood that he had the ability to take flamenco to new and emotional heights. And I was not disappointed.",
+        "target": "Paco de Lucía's concert performance",
+        "rationale": "The passage explicitly evaluates Paco de Lucía's artistic ability and performance impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "the flamenco guitar has gained in complexity, harmony, richness of sound, and boldness in melody. It has an arrogance, an emotion, and a technical precision that it never had before.",
+        "target": "Paco de Lucía's flamenco guitar style",
+        "rationale": "The passage applies aesthetic criteria such as complexity, harmony, sound, melody, emotion, and technical precision to define quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Paco de Lucía did more than any other artist to gather respectability for flamenco. Until that time, only those guitarists who performed the classics had been considered worthy of that hall.",
+        "target": "Paco de Lucía's place in flamenco guitar history",
+        "rationale": "The passage constructs Paco de Lucía as a historically exceptional figure who elevated flamenco's status in prestigious concert spaces."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "medium",
+        "evidence_quote": "\"An excess of obsession with purity has sterilized flamenco, while other types",
+        "target": "purist flamenco ideology",
+        "rationale": "The passage contests purity boundary-work by framing excessive purity as sterilizing flamenco rather than preserving it."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "the great gypsy guitarist, Sabicas, who spoke to Paco alone and gave him words of praise, as well as some advice that created a profound impression. He said, \"A guitarist should create his own music.\"",
+        "target": "Sabicas's advice to Paco de Lucía",
+        "rationale": "Sabicas is positioned as an authoritative elder whose advice shapes Paco's artistic direction."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "\"With Paco de Lucía,\" says the poet, Felix Grande, author of the book, Memoria del Flamenco, \"the flamenco guitar has gained in complexity, harmony, richness of sound, and boldness in melody.\"",
+        "target": "Felix Grande's expert evaluation of Paco de Lucía",
+        "rationale": "The article invokes a named author/expert voice to authorize a critical judgment of Paco's impact."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "The article discusses traditional flamenco and modern rumba, but the stronger functions are critical evaluation, hierarchy, and contested purity rather than continuity claims."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Commercial success and concert halls are discussed, but the text does not frame commercialization as weakening authenticity."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The article discusses Paco's public concerts and cross-genre work, but not learning access or institutional pedagogy for readers or students."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "authenticity",
+        "pedagogy"
+      ],
+      "target": "Paco de Lucía's innovation, authority, and status in flamenco guitar",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Six codes are justified because the long article contains separate evidence for critical praise, aesthetic criteria, canonization, purity critique, pedagogical authority, and expert authorization."
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "article_id": "JALEO_1981_10::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "would like to thank you and your wonderful publication for putting me in contact with some very helpful",
+        "target": "Jaleo as a mediator for learning flamenco",
+        "rationale": "The letter frames the publication as enabling access to flamenco knowledge and helpful learning contacts for an outside learner."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Spain's desire to attract tourists has debased this ancient art into something best described as \"instant duende,\" automatically turned on and off as tourists arrive and depart.",
+        "target": "tourist-oriented flamenco",
+        "rationale": "The passage draws a boundary between ancient cante jondo and tourist-oriented spectacle framed as debased and inauthentic."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Maya himself is a brilliant technician -- every movement perfectly timed and slickly finished -- as is his partner, Carmen Cortez Perez, who has very expressive arms.",
+        "target": "Mario Maya and Carmen Cortez Perez in Ay! Jondo",
+        "rationale": "The review explicitly evaluates the dancers' technical and expressive qualities."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "reason": "The letter mentions secrecy around learning flamenco, but the passage reports a claim from reading and then rejects it rather than constructing a stable insider-outsider boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "The review critiques tourist flamenco and praises Maya's corrective attempt, but the clearest boundary work is already captured by AUTH_02."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "reason": "Cante jondo is described as ancient and rooted in gypsy suffering, but the strongest discourse function in the visible review is anti-tourist authenticity boundary work."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "authenticity",
+        "criticism"
+      ],
+      "target": "Jaleo as learning mediator, tourist flamenco, and Mario Maya's Ay! Jondo",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_10::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "\"Just because a female dancer wears a dress cut so low in the back that it displays what I call 'the parting of the ways,' doesn't make it true flamenco,\" says Carola Goya.",
+        "target": "low-grade contemporary flamenco display",
+        "rationale": "The passage explicitly denies that outwardly sexualized display qualifies as true flamenco, drawing a proper/improper boundary."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "\"Flamenco needs inner fire,\" she says, \"but what we see now is all outer stuff",
+        "target": "contemporary flamenco performance quality",
+        "rationale": "Inner fire versus outer display is used as an aesthetic criterion for judging flamenco quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "La Argentina, in her six United States tours before her untimely death in 1936, was the undisputed queen of Spanish dance.",
+        "target": "Spanish dance canon and hierarchy",
+        "rationale": "The passage constructs a hierarchy of exemplary Spanish dance figures, elevating La Argentina as an undisputed canonical model."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article contains extensive critical evaluation, but the selected codes capture the stronger boundary, criteria, and canon-forming functions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "Gypsy identity is discussed in relation to Spanish dance, but the main claim critiques reduction of Spanish dance to flamenco rather than authorizing an identity group."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "Carola Goya functions as an expert voice, but the coding is kept conservative because her authority is already embedded in the authenticity and criteria claims."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "contemporary flamenco and the broader Spanish dance canon",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_10::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "their Sunday night Guthrie debut was a stunning surprise for me.",
+        "target": "Zorongo Flamenco's Guthrie debut",
+        "rationale": "The review explicitly evaluates the performance as a striking success."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Precision was the dominant theme of the evening -- from the perfect unison of the castanets in the opening classical dances to the more loose but equally precise improvisation of the traditional dances that closed the show.",
+        "target": "Zorongo Flamenco's performance qualities",
+        "rationale": "Precision, improvisation, control, clarity, and balance are applied as criteria for judging the performance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "A barrier to any flamenco concert that must be overcome is the formal atmosphere of the concert hall. Traditional flamenco was born in the gypsy bars and nightclubs, not the staid atmosphere of a Gantner Hall.",
+        "target": "traditional flamenco setting",
+        "rationale": "The passage grounds flamenco value in origins and traditional social settings, using those roots to evaluate concert-hall performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The group is called authentic, but the article does not dwell on that as a separate claim beyond the broader roots/setting discussion."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The concert hall versus gypsy bars/nightclubs contrast suggests public/private setting value, but it is framed more as traditional origin than participatory community."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Study with masters and teaching credentials are mentioned, but they function as background credentials rather than a developed pedagogical authority claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "tradition",
+        "authenticity"
+      ],
+      "target": "Zorongo Flamenco's staged concert performances",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_10::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Naturally, the star figures will be kept busy. But now it will be much easier for those who have not yet broken into the top ranks of popularity to find work. Those in the second file...are almost assured of being able to find summer work.",
+        "target": "festival artist hierarchy",
+        "rationale": "The passage explicitly ranks flamenco artists into star figures, top ranks, and a second file within the festival circuit."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "This was a good idea by the pena flamenca \"La Trilla\" with the sponsorship of the local government.",
+        "target": "Trebujena festival organization",
+        "rationale": "The festival is legitimated through a flamenco peña and local government sponsorship, giving institutional support to a public flamenco event."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "it was a mixture that did not come out very well for him. Por bulerías -- magnificent",
+        "target": "festival singing performance",
+        "rationale": "The ending context gives explicit negative and positive judgments of specific cante performance outcomes."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The peña is involved in organization, but the passage does not clearly grant community authority beyond institutional sponsorship."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The festival promotes local mosto and public prestige, but it does not explicitly frame flamenco as heritage or collective cultural patrimony."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "heritage"
+      ],
+      "target": "flamenco festival circuit and Trebujena festival",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated, but the visible text supports the selected codes."
+  },
+  {
+    "article_id": "JALEO_1981_10::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "I looked at a bookcase full of unsuspecting victims to be the contestants and began the arduous task of not only selecting the players, but the album that would best represent them.",
+        "target": "flamenco guitarists compared in Guitar Olympics",
+        "rationale": "The article constructs a comparative contest among elite guitarists, selecting representative albums and ranking them by measured performance."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Although it is an easy passage, it did indeed surpass Serranito, but lacked his clarity. An admirable 14.81 notes/second.",
+        "target": "flamenco guitar picado performance",
+        "rationale": "Speed, clarity, difficulty, and cleanliness are used as criteria to evaluate and compare flamenco guitar playing."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article evaluates guitarists' passages, but the stronger function is comparative ranking through aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "elite flamenco guitarists' technical performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

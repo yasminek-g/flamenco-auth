@@ -1,0 +1,224 @@
+[
+  {
+    "article_id": "JALEO_1981_02::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "It was a triumph of the cante gitano -- although in spite of the many self-proclaimed aficionados who haven't the slightest idea what it is all about.",
+        "target": "self-proclaimed aficionados",
+        "rationale": "The review contrasts real understanding of cante gitano with self-proclaimed afición, drawing an epistemic insider/outsider boundary around who truly knows the art."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miguel Peña \"El Funi,\" hurt by the indifference of the public, took out his rage in an incredible rhythmic insanity por bulerías. What he did in this fifteenth edition of the Caracolá made all the previous fourteen editions worth the trouble.",
+        "target": "Miguel Peña \"El Funi\" at the Caracolá",
+        "rationale": "The passage explicitly praises a festival performance and judges its artistic impact."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "Compás, compás, compás! Because it is impossible to \"esparrabarse\" (lose compás) when Pedro is playing and the voice of Juan abandons itself to his gypsy people.",
+        "target": "Pedro Peña and Juan el Lebrijano's performance",
+        "rationale": "Compás is used as a decisive aesthetic criterion for judging the quality and authority of the performance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Compás appears repeatedly, but the visible passage uses it as performance evaluation rather than embodied learning or transmission."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The phrase 'gypsy people' links performance to identity, but the excerpt does not clearly make identity the basis of representation or authority beyond the performance moment."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "cante gitano and selected festival performers",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Truncated article; annotations rely only on the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "JALEO_1981_02::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "It was a real treat and well attended.",
+        "target": "Mario Escudero concert in Philadelphia",
+        "rationale": "The sentence gives a concise positive assessment of the concert event."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The informal get-together suggests social participation after the concert, but the excerpt does not make the setting evaluatively meaningful for flamenco belonging or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Mario Escudero concert",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Very short article, but the visible evaluation is sufficient for a conservative CRIT_01 code."
+  },
+  {
+    "article_id": "JALEO_1981_02::A8",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The text says the night was memorable, but the visible passage focuses on a comic anecdote and photo identification rather than a clear evaluation of flamenco artistry."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The cross-dressed waiter anecdote involves gender presentation, but it is not used to frame flamenco identity, belonging, or authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_02::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The music rushes in to swirl around the listener in a cascade of sound. It's a real delight!",
+        "target": "Manolo Sanlúcar's album track \"Oripando\"",
+        "rationale": "The reviewer explicitly praises the track's effect and quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "medium",
+        "evidence_quote": "From the sound of things it appears to be shaping up as quite a mixture. If we are lucky perhaps there will even be room for some flamenco.",
+        "target": "Manolo Sanlúcar's projected future album mixture",
+        "rationale": "The reviewer uses critical irony to question whether the projected hybrid mixture will still leave space for flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The final remark implies a boundary around what counts as flamenco, but it is indirect and phrased as ironic critical evaluation rather than explicit purity boundary-work."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The review describes rhythms, flute, drums, vitality, and mood, but these are not developed as stable criteria for flamenco quality."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Manolo Sanlúcar's album and projected musical direction",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1981_02::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "this generalized progress has turned its back on the historic and geographical nucleus from which the cante came",
+        "target": "modern popularized cante",
+        "rationale": "The passage grounds cante's value and meaning in its historical and geographical origins and treats distance from that nucleus as significant."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "confidence": "high",
+        "evidence_quote": "That miserable and painful expression of intimacy that was kept shut up within a few anonymous Andalusian gypsy families has overflowed into the most widespread arenas of fame.",
+        "target": "cante's movement from intimate family settings to public fame",
+        "rationale": "The passage contrasts intimate family-based flamenco with widespread fame, framing public diffusion as a change in authentic social grounding."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "\"In flamenco,\" Calzones tells us, \"the only thing worthwhile is the flood of emotion that hurts one from within; to sing better or worse, according to the abilities of each person, isn't so important\"",
+        "target": "flamenco singing",
+        "rationale": "The quoted singer defines flamenco value through an aesthetic criterion of painful inner emotion rather than technical comparison."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The public/private contrast is strong, but the selected AUTH_04 code captures the same visible discourse as authenticity-through-intimacy without adding a distinct participation claim."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The passage mentions interpreters mastering flamenco, but the excerpt does not focus on learning access, institutional pedagogy, or transmission across boundaries."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The text mentions presumed corruption and uprooting, but explicitly says it is not referring to corruption, so a purity boundary code would overstate the claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "tradition",
+        "criticism"
+      ],
+      "target": "cante in its present popularized form versus its intimate Andalusian gitano roots",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Truncated article; annotations rely only on the visible beginning, evidence window, and ending context."
+  }
+]

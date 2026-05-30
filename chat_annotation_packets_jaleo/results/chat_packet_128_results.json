@@ -1,0 +1,196 @@
+[
+  {
+    "article_id": "JALEO_1982_01::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "to strip away all the adjectives used to describe guitarists with advanced motor skills, and support those descriptions with the same type of statistics afforded Bruce Jenner",
+        "target": "flamenco guitarists' technical speed",
+        "rationale": "The passage proposes measurable speed and motor skill as criteria for assessing guitar technique, replacing subjective praise with objective technical evidence."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The article discusses technical measurement and disagreement, but it does not clearly praise or blame a specific performance or artist beyond applying a technical criterion."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "neutral",
+      "basis": [
+        "criticism"
+      ],
+      "target": "technical evaluation of flamenco guitar performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Coded narrowly for explicit aesthetic/technical criteria; most of the article is methodological rather than evaluative."
+  },
+  {
+    "article_id": "JALEO_1982_01::A4",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Practical tax advice for flamenco workers; no clear authenticity, pedagogy, community, heritage, or critical discourse."
+  },
+  {
+    "article_id": "JALEO_1982_01::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "writer, and musicologist... She was responsible for expert editing of Andres Segovia's autobiography (Vol. I) and The Segovia Technique by Vladimir Bobri.",
+        "target": "Martha Nelson",
+        "rationale": "The obituary authorizes Nelson through scholarly, editorial, and musicological expertise in guitar and flamenco-related writing."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "The guitar world will mourn the loss of this brilliant and gifted personality.",
+        "target": "Martha Nelson",
+        "rationale": "The passage explicitly evaluates Nelson in laudatory terms, presenting her as brilliant and gifted."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Nelson is described as an advisor to young guitarists, but the visible text does not make flamenco pedagogy or teaching authority central enough to code."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Martha Nelson's authority in guitar and flamenco-related scholarship",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1982_01::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "Mercedes and Albano helped me to contact Bernardo el de los Lobitos to learn the cante.",
+        "target": "Rubina Carmona's flamenco training",
+        "rationale": "The passage legitimates flamenco knowledge through named teachers who mediate access to cante instruction."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "Even more valuable than the singing lessons was when he would sit and tell me about old Andalucía, old customs, and about how to present oneself as a flamenca",
+        "target": "flamenco knowledge beyond formal technique",
+        "rationale": "The passage frames flamenco learning as oral, embodied, and cultural transmission from an elder/master figure."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "being a foreigner is not such a problem, but the market for your product is almost negligible, no matter how good you are. So you can't win as a foreigner in flamenco.",
+        "target": "foreigners in flamenco",
+        "rationale": "The passage draws an insider/outsider boundary around foreign status and its limits in flamenco recognition and viability."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The interview involves transnational learning in Spain and the U.S., but the strongest visible evidence concerns teacher authority, oral transmission, and foreigner boundary rather than institutional access."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "Bernardo is called a legend, but the passage mainly uses that to frame Rubina's lack of awareness, not to construct a broader canon or hierarchy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "community"
+      ],
+      "target": "Rubina and Marcos Carmona's flamenco learning and outsider positioning",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; codes are based only on the visible beginning/window/end text."
+  },
+  {
+    "article_id": "JALEO_1982_01::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "From a very young age, Terremoto de Jerez, showed indications of his excellent artistic qualities",
+        "target": "Terremoto de Jerez",
+        "rationale": "The passage explicitly praises Terremoto's artistic qualities and performance development."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "with the compás of the baile, with his particular way of doing it with the most exquisite aire of Jerez",
+        "target": "Terremoto de Jerez's baile and cante",
+        "rationale": "Compás, aire, voice, style, quality, and expression are applied as aesthetic criteria for flamenco excellence."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "formed one of the great figures of the cante of our time",
+        "target": "Terremoto de Jerez",
+        "rationale": "The passage canonizes Terremoto by elevating him as one of the major figures of contemporary cante."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'extremely flamenco voice' suggests flamenco quality, but the passage functions more clearly as critical praise than an authenticity claim."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Terremoto de Jerez's artistic status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  }
+]

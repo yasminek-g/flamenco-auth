@@ -1,0 +1,219 @@
+[
+  {
+    "article_id": "JALEO_1986_SPRING::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "English text; 60-minute soundsheet recordings • Literate, detailed explanations of each of the twelve essential Toques, with examples, analysis, and sample falsetas • Lucid instructions for characteristic techniques and gestures",
+        "target": "Juan Martín's El Arte Flamenco de la Guitarra",
+        "rationale": "The advertisement frames books, recordings, notation, analysis, and instruction as mediated access to flamenco guitar knowledge."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "\"A truly remarkable achievement... I recommend it enthusiastically.\"—Guitar & Lute",
+        "target": "Juan Martín's instructional guitar volumes",
+        "rationale": "A quoted review explicitly evaluates the publication's quality and recommends it, though within promotional copy."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Juan Martín's flamenco guitar instructional publication",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Promotional context noted, but the passage still makes explicit pedagogical and evaluative claims."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_02",
+        "confidence": "medium",
+        "evidence_quote": "His majesty, the king of Spain, has accepted the honorary presidency of the XI National Competition of Arte Flamenco that has been held in Córdoba for the past thirty years.",
+        "target": "XI National Competition of Arte Flamenco in Córdoba",
+        "rationale": "Royal honorary presidency and a long-running national competition confer official institutional recognition on flamenco."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The competition and previous winners imply hierarchy, but the visible text mainly announces event logistics rather than constructing a canon or ranking."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "heritage"
+      ],
+      "target": "National Competition of Arte Flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The evidence is institutional rather than strongly patrimonial, so confidence is medium."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Rodarte recently returned to his native Denver to bring \"pure flamenco to the American people.\"",
+        "target": "Pablo Rodarte's Denver flamenco teaching and performance project",
+        "rationale": "The phrase presents Rodarte's project as transmitting a proper or genuine form of flamenco to a U.S. audience."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "The flamenco dance class, one of a few in Denver, is taught by Pablo Rodarte. He has danced in Spain and other countries for the past 20 years",
+        "target": "Pablo Rodarte as flamenco teacher",
+        "rationale": "The article grounds Rodarte's pedagogical authority in extensive performance experience and his role teaching flamenco dance."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "The class enables flamenco artists to mingle with their kind... On a Sunday afternoon, they are likely to meet and drink red wine before a fiery flamenco jam session that might last for hours.",
+        "target": "Denver flamenco artists' class and jam-session scene",
+        "rationale": "The passage frames flamenco value through participatory social gathering rather than detached spectatorship."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "reason": "The phrase 'pure flamenco' suggests purity, but the visible text does not clearly identify an excluded or degraded opposing form."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Rodarte and the Denver flamenco community",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article combines authenticity language, teacher authority, and participatory community formation."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "my family came from the tradition: My father played, my grandfather played, my brothers played; I was the youngest of the family. And so I started",
+        "target": "Paco Fernández's flamenco guitar formation",
+        "rationale": "The interview frames his learning as rooted in family transmission across generations."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "although it always was kept up in the family and I did continue playing flamenco in that way",
+        "target": "Paco Fernández's family flamenco practice",
+        "rationale": "Continuity of family practice is used to ground the present musician's relation to flamenco tradition."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "Tourist performance is mentioned, but the visible text does not criticize tourism as corrupting authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Paco Fernández's flamenco background",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Tourism appears only as biography/work context, not as anti-commercial critique."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "high",
+        "evidence_quote": "It would be fair to say that there has never been any real break in continuity... The musical heritage that awaited the Arabs on their arrival in 711 therefore included the Byzantine and the Jewish rites and Romanized Cult-Iberien influences",
+        "target": "flamenco's Andalusian historical and musical roots",
+        "rationale": "The passage grounds flamenco's value and explanation in deep continuity, roots, and inherited musical traditions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The present situation seems to be one of unprecedented enthusiasm combined with a singular lack of creativity in the Golden Age sense of the word.",
+        "target": "the present flamenco situation",
+        "rationale": "The author explicitly evaluates contemporary flamenco as enthusiastic but deficient in creativity."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "There is a world of difference between the tragic sense of life inherent in all flamenco and the party line put foward nowadays.",
+        "target": "criteria for flamenco value",
+        "rationale": "The passage invokes tragic depth as an aesthetic criterion against which contemporary discourse is judged."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "reason": "The phrase 'musical heritage' appears, but the visible text mainly uses it for historical continuity rather than public heritage or patrimonial framing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The word 'school' refers to St. Isidore's historical school, not flamenco learning access or institutional flamenco pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco's historical continuity and contemporary condition",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated, but the visible beginning and ending contain enough evidence for continuity and critical-evaluative coding."
+  }
+]

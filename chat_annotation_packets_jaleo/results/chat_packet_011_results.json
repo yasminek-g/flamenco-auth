@@ -1,0 +1,227 @@
+[
+  {
+    "article_id": "JALEO_1978_02::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "some of it was useful, especially to material-starved beginning guitarists in this country... Supposing, however, that one has no alternative method of study, there are some positive aspects to learning this way.",
+        "target": "printed flamenco guitar music as a learning medium for beginning and geographically distant students",
+        "rationale": "The article evaluates printed transcriptions as a mediated form of access to flamenco knowledge for learners who lack other study options."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Much of the music wasn't worth much, being either written down incorrectly or very inferior material to begin with. However, some of it was useful",
+        "target": "published flamenco guitar music and transcriptions",
+        "rationale": "The passage explicitly judges the quality and usefulness of flamenco music publications."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "they recognize that the style is different, perhaps less complex than that of Paco de Lucía, but it is too beautiful to be overlooked",
+        "target": "older flamenco guitar repertoire by Sabicas and related figures in relation to modern styles",
+        "rationale": "The passage creates a value-bearing comparison between older and newer guitar styles, defending older repertoire as still aesthetically worthy."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The article contests blood-based Spanish essentialism, but the main discourse function is pedagogical comparison rather than sustained identity-group framing."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The phrase about Spaniards absorbing flamenco from surroundings suggests embodied transmission, but it is used mainly as a contrast with written/structural learning."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "printed flamenco guitar music and older guitar repertoire",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The strongest discourse is evaluative and pedagogical; authenticity/identity implications were kept out of emitted codes because they are secondary."
+  },
+  {
+    "article_id": "JALEO_1978_02::A15",
+    "no_relevant_discourse": true,
+    "insufficient_context": false,
+    "codes": [],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The notice concerns a juerga gathering, but it is logistical and does not evaluate participatory setting or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "neutral",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Event logistics and food assignments do not provide enough discourse function for coding."
+  },
+  {
+    "article_id": "JALEO_1978_03::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "Each time we are accompanied by new artists whom we sincerely applaud. The most faithful Jaleistas, guitarists, singers and dancers, always honor us with their presence and gaity.",
+        "target": "the Jaleo juerga community of artists, guitarists, singers, dancers, and recurring participants",
+        "rationale": "The report presents the community's participants as sustaining and validating the juerga through presence, applause, and recurring involvement."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Again we were honored by the presence and the marvel of the voice of the cantaora, Mercedes Molina",
+        "target": "performers at the February juerga, especially Mercedes Molina and named dancers/musicians",
+        "rationale": "The article praises specific performers and their artistic contributions."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "I also have to recall many more who, with their spontaneous participation, helped to make possible these moments",
+        "target": "spontaneous participation at the juerga",
+        "rationale": "The passage values participatory co-presence as what makes the juerga socially and artistically meaningful."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to Sevillan blood and Andalusian soul are identity language, but they appear as praise for one dancer rather than a broader authority or belonging frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "Terms such as voice, art, vigor, and lucid flamenco are evaluative, but the article does not clearly define quality through stable aesthetic criteria."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "February juerga participants and performers",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The report legitimates the juerga through communal participation and praise of performers."
+  },
+  {
+    "article_id": "JALEO_1978_03::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "We will do our best to keep you informed of what is happening in N.Y.C., flamenco-wise, and will try to help to get more subscribers",
+        "target": "Jaleo's dispersed flamenco readership and contributor network",
+        "rationale": "The letters frame readers and contributors as sustaining a wider flamenco communication network across locations."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "The letters praise Jaleo as a great idea, but this is generic support for the newsletter rather than critical evaluation of flamenco art or performance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The newsletter circulates information, but the excerpt does not clearly frame this as access to flamenco knowledge or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "Jaleo as a flamenco community network",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Only the community-network function is strong enough to emit; most of the article is reader correspondence and support."
+  },
+  {
+    "article_id": "JALEO_1978_03::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "Juergas can be approached from many different points of view; they are for the aficionado, for the performer, and for the spectator. They have something for everybody.",
+        "target": "juergas as participatory flamenco gatherings",
+        "rationale": "The article explicitly frames the juerga as a socially meaningful setting linking aficionados, performers, and spectators."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "People from all over the world, with all the possible accents and pronunciations, all of them with the common interest of flamenco.",
+        "target": "the transnational juerga community gathered around flamenco",
+        "rationale": "The passage constructs belonging through shared afición despite varied backgrounds."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "if you are interested in joining in during the dancing, there are guitarists, dancers, and singers who can teach you the basic palmas for whatever rhythm is going on at the time",
+        "target": "beginners learning palmas at juergas",
+        "rationale": "The passage frames the juerga as a site of practical access to flamenco knowledge through instruction by participants."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "reason": "The text uses expressive aesthetic language about flamenco's force and guitars, but it does not apply a clear evaluative criterion to judge quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "Guitarists, dancers, and singers are said to teach palmas, but the passage emphasizes access and participation more than formal pedagogical authority."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community",
+        "pedagogy"
+      ],
+      "target": "juergas as communal and instructional flamenco spaces",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The strongest signals are participatory community and informal learning/access."
+  }
+]

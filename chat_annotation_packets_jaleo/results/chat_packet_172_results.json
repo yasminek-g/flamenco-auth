@@ -1,0 +1,250 @@
+[
+  {
+    "article_id": "JALEO_1983_07::A9",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "A Santa Barbara critic had labeled Juan Talavera as, \"an indispensable Fiesta asset.\" The hard-boiled Los Angeles Times has stated that, \"Juan Talavera is a beautiful sight as a Spanish dancer.\"",
+        "target": "Juan Talavera as a Spanish/flamenco dance performer",
+        "rationale": "Named critics and newspapers are used as authoritative evaluators to legitimate Talavera's performance value."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Talavera, always brilliant, erupts into a fireworks explosion of flamenco dance.",
+        "target": "Talavera's flamenco dance",
+        "rationale": "The passage explicitly praises the quality and impact of Talavera's flamenco dance."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "medium",
+        "evidence_quote": "Talavera not only entertains. He lends authenticity and professionalism.",
+        "target": "Talavera's Fiesta performance",
+        "rationale": "The quoted review attributes authenticity to Talavera's flamenco/Spanish dance presentation, legitimating it as more than entertainment."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "authenticity"
+      ],
+      "target": "Juan Talavera's Spanish and flamenco dance performance",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A10",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "high",
+        "evidence_quote": "How do you feel about the dedication to the baile flamenco by people who lack roots in our land?",
+        "target": "foreign flamenco dancers such as Maribel",
+        "rationale": "The question explicitly draws an insider/outsider boundary around roots in the land as a possible condition for flamenco belonging."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "a bailaor who was not born in Triana, but seems to have gathered all of the \"sal y gracia\" of this land",
+        "target": "Maribel as a North American bailaora",
+        "rationale": "The passage frames flamenco authority through local identity and belonging, while arguing that Maribel can embody the qualities of the land despite foreign birth."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Maribel did not defraud the audience and received numerous ovations... she passed, with great success, the test of fire.",
+        "target": "Maribel's performance in Sangre de la Primavera",
+        "rationale": "The passage explicitly evaluates Maribel's performance as successful and audience-approved."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "The dance of Manolo Marín and Carmen Albéniz stood out, but without detracting for a moment from Maribel",
+        "target": "principal dancers in the performance",
+        "rationale": "The passage creates a comparative performance hierarchy by singling out dancers who stood out while maintaining Maribel's status."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The class listings at the end mention group classes and levels, but they are routine advertisements without meaningful discourse about access or pedagogy."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "contested",
+      "basis": [
+        "community",
+        "criticism"
+      ],
+      "target": "Maribel's legitimacy as a foreign flamenco ballet performer",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "Early photos of the famous male dancers, El Estampio, Antonio de Bilbao, Frasquillo, and others, showed them in the traditional three piece \"traje corto\"",
+        "target": "traditional flamenco dance costuming",
+        "rationale": "The article grounds current costume discussion in earlier traditional forms and continuity with past flamenco dance practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "The bata was in the category of total artistic expression, flowing with the dance, the use of the legs and hips at one with the compás, making the costume and artist appear as one",
+        "target": "use of the bata de cola in flamenco dance",
+        "rationale": "The passage defines quality through aesthetic criteria such as integration, compás, flow, and total artistic expression."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Pilar López was one of the last of the Spanish-Flamenco dancers who could do a 12 to 15 minute soleares... She made an art out of the movement of the bata de cola. The woman who changed the movement of the bata forever was Carmen Amaya.",
+        "target": "Pilar López and Carmen Amaya as exemplary dancers",
+        "rationale": "The passage canonizes specific dancers as exemplary historical figures who defined or transformed bata de cola technique."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Many tried to wear even longer batas, kicking and thrashing at them to get them out of the way of their feet and eventually having to \"carry\" the bata for most of the dance.",
+        "target": "imitative later uses of the bata de cola",
+        "rationale": "The passage negatively evaluates later imitators for failing to integrate the bata artistically into the dance."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The passage mentions male and female costumes, but the gender references mainly describe costume history and do not clearly organize authority, belonging, or representation."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "tradition",
+        "criticism"
+      ],
+      "target": "flamenco dance costuming and bata de cola technique",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1983_07::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "students from more than a dozen countries participated in the summer course, sharing in Sanlúcar's unique approach to flamenco guitar technique and music",
+        "target": "Second International Sanlúcar Flamenco Guitar Course",
+        "rationale": "The course is framed as an institutional and transnational site of access to flamenco guitar knowledge."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "Manolo Sanlucar, one of Spain's formeost flamenco guitarists, has announced the Second International Sanlucar Flamenco Guitar Course",
+        "target": "Manolo Sanlúcar as course leader",
+        "rationale": "Sanlúcar's recognized status as a foremost guitarist authorizes the course as a legitimate pedagogical setting."
+      },
+      {
+        "family": "HERIT",
+        "code": "HERIT_01",
+        "confidence": "medium",
+        "evidence_quote": "acquaint themselves with Andalucía and its rich flamenco heritage",
+        "target": "Andalucía's flamenco heritage",
+        "rationale": "The passage frames flamenco as regional cultural heritage that international students can encounter through the course."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "heritage"
+      ],
+      "target": "international flamenco guitar learning through Manolo Sanlúcar's course",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The article is truncated and the ending context is OCR/noise, but the visible beginning and evidence window provide sufficient evidence for the emitted codes."
+  },
+  {
+    "article_id": "JALEO_1983_07::A13",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "the system I was taught by Luisa Pericet. She is a great teacher. Her seven-year program amounted to a division of bolero and zapateado steps... into a truly progressive sequence.",
+        "target": "Luisa Pericet's dance notation and training system",
+        "rationale": "The passage explicitly legitimates Pericet as a teacher and describes her structured method as pedagogically authoritative."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The exercises and the first few choreographies were distributed to us in written form... I usually spent the last few minutes of each class learning to write down the new material correctly.",
+        "target": "written dance notation as access to flamenco dance knowledge",
+        "rationale": "The passage frames flamenco learning through a formalized notation system and classroom practice."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "She had isolated the most common patterns used in flamenco beginning with the remate... First, of course, we learned the components of footwork: planta, talon, punto, taco, golpe.",
+        "target": "flamenco dance notation and footwork patterns",
+        "rationale": "The passage identifies technical elements and patterns as criteria for organizing and understanding flamenco dance practice."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "criticism"
+      ],
+      "target": "Luisa Pericet's system for flamenco dance notation and training",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  }
+]

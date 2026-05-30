@@ -1,0 +1,284 @@
+[
+  {
+    "article_id": "JALEO_1986_SPRING::A20",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "El Morao, featuring the celebrated guitarist Manuel Morao and his group of seven singers, dancers and guitarists, is recognized internationally as the foremost gypsy-flamenco company",
+        "target": "El Morao / Manuel Morao's company",
+        "rationale": "The passage constructs a hierarchy by presenting the company as internationally recognized and foremost in gypsy-flamenco."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "the key elements of this art form -- the energy, vitality, grace, beauty, and intensity of feelings -- were expressed so well by this group",
+        "target": "El Morao's Dayton performance",
+        "rationale": "The review names aesthetic criteria and applies them to judge the performance's success."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "In a program designed to bring to high school students the language, history and culture of Spain",
+        "target": "the Dayton educational performance program",
+        "rationale": "The performance is framed as institutional access to Spanish cultural knowledge for students across a transnational setting."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "medium",
+        "evidence_quote": "The company used guitar, song and dance solos and group performances to share their gypsy expression of flamenco.",
+        "target": "El Morao's gypsy-flamenco performance identity",
+        "rationale": "Gypsy identity is not merely demographic here; it frames the company as embodying and representing a particular flamenco expression."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The audience interaction and clapping suggest participatory atmosphere, but the visible text does not clearly contrast participatory co-presence with spectatorship as a value boundary."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "El Morao, its performance, and the educational presentation of flamenco",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article text is truncated, but the visible excerpt provides enough evidence for these codes."
+  },
+  {
+    "article_id": "JALEO_1986_SPRING::A21",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "high",
+        "evidence_quote": "The reservation list read like a Who's Who in the flamenco world",
+        "target": "California flamenco attendees at El Cid",
+        "rationale": "The gathering is authorized through the recognized social standing of the flamenco participants present."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "high",
+        "evidence_quote": "This was followed with participation of dancers, singers and guitarists from the audience.",
+        "target": "the El Cid juerga format",
+        "rationale": "The article values the event as a participatory flamenco setting where audience members become performers."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "El Cid may once again become a genuine and much needed watering hole for local (Loco?) Southern California flamencos.",
+        "target": "El Cid as a local flamenco meeting place",
+        "rationale": "The venue is legitimized as a sustaining social center for the local flamenco community."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_04",
+        "reason": "The phrase 'genuine ... watering hole' suggests valued social co-presence, but it does not explicitly link intimacy or anti-commercial setting to flamenco authenticity."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "community"
+      ],
+      "target": "El Cid and the Southern California flamenco community gathering",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Two COMM_02 codes are retained because one concerns participant prestige and the other the venue's community-sustaining role."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A1",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_02",
+        "confidence": "high",
+        "evidence_quote": "Straight flamenco; no colored lights, no sevillanas, no catchy rumbas with the guitarist playing while following the dancer off stage.",
+        "target": "the Tokyo contest's flamenco format",
+        "rationale": "The passage defines the event's legitimacy by excluding staged, catchy, or non-straight elements from the desired flamenco frame."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "The first place winner was the one who I had felt sorry for, as, in my opinion, she was the worst dancer of the lot",
+        "target": "Tomoko Ishii and the contest judging outcome",
+        "rationale": "The writer explicitly evaluates the contest result and judges the winner's dancing negatively."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "With me flamenco is a verb; it's something that I do. With El Güito, flamenco is a noun; it is something that he is.",
+        "target": "El Güito",
+        "rationale": "The passage presents El Güito as genuinely embodying flamenco rather than merely performing it."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "medium",
+        "evidence_quote": "half way through he tore off his vest and improvised for the rest of the dance",
+        "target": "El Güito's performance",
+        "rationale": "Improvisation is used as an aesthetic criterion that distinguishes El Güito's compelling performance from the staged contest context."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "The contest rankings and comparisons imply hierarchy, but the clearer discourse work is direct evaluation and authenticity boundary-making."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "authenticity",
+        "criticism"
+      ],
+      "target": "El Güito, the contest format, and the contest winner",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The quoted 'Flamenco Puro' phrase is not used alone; the boundary code is based on the following exclusionary description."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A2",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "I just want to commend all of you on your splendid magazine. I find your writing to be uniformly excellent, with articles that are readable, informative and engrossing",
+        "target": "Jaleo magazine",
+        "rationale": "The letter explicitly evaluates the magazine's writing and quality."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "the reprint of the New York Times article, 'The Blues of Spain,' listing tablaos in Madrid and Sevilla will certainly prove to be invaluably helpful",
+        "target": "Jaleo's reprinted tablao information",
+        "rationale": "The magazine is framed as a mediator giving readers practical access to flamenco knowledge and sites across geographic boundaries."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "confidence": "medium",
+        "evidence_quote": "Now I feel like I have a real link to a nationwide...no, worldwide...understanding of this very special art form.",
+        "target": "Jaleo as a link to the wider flamenco community",
+        "rationale": "The passage frames the publication as connecting an isolated enthusiast to a broader community of flamenco understanding."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "HERIT",
+        "code": "HERIT_03",
+        "reason": "The editorial discusses Jaleo's survival as a publication, but it does not clearly frame flamenco as public cultural heritage or safeguarding."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Jaleo magazine and its mediating role",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The Macintosh production discussion is treated as administrative publication context rather than flamenco discourse."
+  },
+  {
+    "article_id": "JALEO_1987_SPRING::A3",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Never had there been such a dancer — of that I was certain.",
+        "target": "Carmen Amaya",
+        "rationale": "The memoir canonizes Carmen Amaya through superlative status and exemplary artistic uniqueness."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "She was an essence. She was flamenco!",
+        "target": "Carmen Amaya",
+        "rationale": "The passage presents Amaya as the genuine embodiment of flamenco itself."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "medium",
+        "evidence_quote": "I had the unique experience of working my apprenticeship with the late great Vicente Escudero, that \"macho\" charismatic master of them all. I remember he always called me muy maja and my heart would swell with pride when he said I had duende. My training with him was of great value.",
+        "target": "Vicente Escudero's training and judgment",
+        "rationale": "Escudero is positioned as an authoritative master whose training and recognition legitimate the narrator's flamenco development."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "confidence": "high",
+        "evidence_quote": "She was very pleased that I looked like one of the \"tribe\". The gypsies accepted me as one of their own and I loved to be with them.",
+        "target": "the narrator's belonging around Carmen Amaya's gypsy company",
+        "rationale": "Ethnic/community identity is used to define belonging and acceptance within the flamenco world described."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "The memoir names teachers and apprenticeship, but it does not clearly describe oral, embodied, familial, or intergenerational transmission as the mode of learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is extensive praise of Amaya, but CRIT_03 captures the stronger canonizing and hierarchical function of that praise."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "authenticity",
+        "criticism",
+        "pedagogy",
+        "community"
+      ],
+      "target": "Carmen Amaya, Vicente Escudero, and the narrator's flamenco belonging",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Advertisement text at the end is not annotated because it does not provide discourse evidence beyond product promotion."
+  }
+]

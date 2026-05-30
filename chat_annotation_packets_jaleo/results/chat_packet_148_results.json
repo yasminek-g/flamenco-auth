@@ -1,0 +1,255 @@
+[
+    {
+        "article_id": "JALEO_1982_08::A4",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "confidence": "medium",
+                "evidence_quote": "It is not easy to find a private home or inexpensive rental facility (with some ambience) that is willing to accommodate an unspecified number of people, until an unspecified hour of the night/morning, making an unpredictable amount of noise and leaving behind an unpredictable amount of chaos.",
+                "target": "juerga sites and flamenco gatherings",
+                "rationale": "The editorial evaluates the social conditions needed for juergas and contrasts private homes, garages, patios, and public halls as settings that shape participatory flamenco practice."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "The Jaleistas organization and Jaleo magazine seem to have given birth to flamenco gatherings across the nation.",
+                "target": "Jaleistas/Jaleo flamenco gathering network",
+                "rationale": "The passage frames the organization and magazine as community actors sustaining and spreading flamenco social gatherings."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_04",
+                "reason": "The article discusses private homes and ambience, but it does not explicitly link intimate setting to authenticity or purity."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "mixed",
+            "basis": [
+                "community"
+            ],
+            "target": "juerga practice and suitable flamenco gathering spaces",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Commercial advertising and magazine finance details were not coded because they lack flamenco discourse function."
+    },
+    {
+        "article_id": "JALEO_1982_08::A5",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_02",
+                "confidence": "medium",
+                "evidence_quote": "I was fortunate to be in the middle of it all, with nightly juergas and regular performances. I learned a lot.",
+                "target": "Teo Morca's flamenco learning in the Los Angeles scene",
+                "rationale": "Learning is presented as occurring through immersion in juergas, performances, and proximity to working flamenco artists rather than through formal instruction alone."
+            },
+            {
+                "family": "COMM",
+                "code": "COMM_02",
+                "confidence": "medium",
+                "evidence_quote": "Los Angeles ended up being a real melting pot of flamenco artists. People were migrating from Spain to Los Angeles and San Francisco... there were literally a few dozen of the top Spanish artists living in L.A.",
+                "target": "Los Angeles flamenco artist community",
+                "rationale": "The passage constructs an artist community whose density and social presence ground flamenco authority and opportunity."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "The concert in Bellingham was the best we've had in the past seven years. They gave us a standing ovation, just leaped up. It was great.",
+                "target": "Bellingham concert",
+                "rationale": "The speaker explicitly evaluates the concert's quality and reception."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_03",
+                "reason": "The text mentions clubs and juergas, but the visible excerpt does not clearly contrast participatory/private flamenco against spectatorship as a value hierarchy."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "Phrases such as 'top Spanish artists' suggest status, but the excerpt mainly describes the scene rather than constructing a canon or ranking."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "community",
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Teo Morca's learning context and flamenco community experience",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Article is truncated; codes are limited to the visible beginning/window/ending text."
+    },
+    {
+        "article_id": "JALEO_1982_08::A7",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "high",
+                "evidence_quote": "I would like to give an overview of what I think people want to know in regards to a total learning process of flamenco dance including all of the facets of flamenco music, song, tradition, history, etc.",
+                "target": "flamenco dance learning process",
+                "rationale": "The author explicitly assumes a pedagogical role, defining what a full flamenco dance education should include."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_02",
+                "confidence": "high",
+                "evidence_quote": "it is important to work on and develop an understanding of basics -- good basics of movement -- tqtal movement as it applies to flamenco dance, developing a good foundation",
+                "target": "criteria for becoming a flamenco dancer",
+                "rationale": "The passage defines flamenco dance quality through foundational technique, movement, music, and disciplined learning rather than emotion alone."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_01",
+                "confidence": "medium",
+                "evidence_quote": "Some of these people told me that they 'felt it' so much that they did not need or want technique or want to bother learning the music or steps.",
+                "target": "students who rely on feeling without technique",
+                "rationale": "The author criticizes an approach to flamenco dance that substitutes emotion for technical and musical preparation."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_03",
+                "reason": "The article mentions tradition and history as study areas, but the visible text does not use tradition itself to authorize present practice."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "serious flamenco dance training",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": true
+        },
+        "annotation_notes": "The article clearly functions as pedagogical guidance rather than a mere event notice."
+    },
+    {
+        "article_id": "JALEO_1982_08::A8",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "PED",
+                "code": "PED_03",
+                "confidence": "medium",
+                "evidence_quote": "Marina Lorca... is an examiner of the Spanish Dance Society and here to conduct their first examination session in Washington",
+                "target": "Spanish Dance Society examination session",
+                "rationale": "The passage frames Spanish dance/flamenco knowledge through an institutional examination system and transnational pedagogical access."
+            },
+            {
+                "family": "PED",
+                "code": "PED_01",
+                "confidence": "medium",
+                "evidence_quote": "Among publications are a book, Spanish Dance (lecture notes of the UCT Summer Schools), theory books, and the syllabus for the Spanish Dance Society",
+                "target": "Marina Keet/Lorca's pedagogical publications and syllabus work",
+                "rationale": "Books, lecture notes, theory texts, and a syllabus position the artist as an authorized mediator of Spanish dance knowledge."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "confidence": "medium",
+                "evidence_quote": "They will be performing with two famous exponents of flamenco, Manolo Leiva the singer and Paco de M\u00e1laga the guitarist.",
+                "target": "Manolo Leiva and Paco de M\u00e1laga",
+                "rationale": "The text elevates these performers by presenting them as famous exponents, giving them exemplary status within flamenco."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "COMM",
+                "code": "COMM_04",
+                "reason": "National and geographic identities are present, but they function mostly as biography and itinerary rather than authority or belonging claims."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "legitimating",
+            "basis": [
+                "pedagogy",
+                "criticism"
+            ],
+            "target": "Marina Keet/Lorca and associated flamenco performers",
+            "exclusion_boundary_present": false,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "Teacher lists were treated as biographical unless tied to institutional pedagogy or authority."
+    },
+    {
+        "article_id": "JALEO_1982_08::A9",
+        "no_relevant_discourse": false,
+        "insufficient_context": false,
+        "codes": [
+            {
+                "family": "AUTH",
+                "code": "AUTH_02",
+                "confidence": "high",
+                "evidence_quote": "the purpose of which was to try to stop the adulteration of flamenco",
+                "target": "adulterated flamenco",
+                "rationale": "The passage explicitly frames the 1922 contest as an effort to defend legitimate flamenco against adulteration."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_04",
+                "confidence": "high",
+                "evidence_quote": "Flamenco continued to corrupt itself in the tablaos and theaters, and the film industry came pillaging and plundering into the world of flamenco",
+                "target": "tablaos, theaters, and film-industry flamenco",
+                "rationale": "The article uses critical boundary language to condemn staged and mediated flamenco as corrupting and exploitative."
+            },
+            {
+                "family": "HERIT",
+                "code": "HERIT_01",
+                "confidence": "medium",
+                "evidence_quote": "those who should be responsible for elevating the culture storehouse of this part of the country, talk about it only during electoral periods",
+                "target": "Andaluc\u00eda's musical/cultural wealth",
+                "rationale": "The passage frames Andalusian music as a public cultural resource whose value should be elevated by responsible public actors."
+            }
+        ],
+        "possible_but_not_emitted": [
+            {
+                "family": "HERIT",
+                "code": "HERIT_02",
+                "reason": "The 1922 organizing committee suggests elite cultural authority, but the excerpt does not clearly frame the contest as official heritage recognition or institutional heritage authorization."
+            },
+            {
+                "family": "CRIT",
+                "code": "CRIT_03",
+                "reason": "The contest honored named artists, but the visible text does not build a sustained canon or ranking around them."
+            }
+        ],
+        "derived_analysis": {
+            "legitimation_effect_present": true,
+            "polarity": "delegitimating",
+            "basis": [
+                "authenticity",
+                "heritage",
+                "criticism"
+            ],
+            "target": "commercial/staged/mediated adulteration of flamenco",
+            "exclusion_boundary_present": true,
+            "right_to_define_present": false
+        },
+        "annotation_notes": "The excerpt ends mid-sentence, but the visible evidence is sufficient for the emitted boundary and heritage/public-culture codes."
+    }
+]

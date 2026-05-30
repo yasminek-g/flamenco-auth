@@ -1,0 +1,249 @@
+[
+  {
+    "article_id": "JALEO_1985_10::A11",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "All of them became his unconditional teachers as soon as they realized the excellent artistic qualities that the young man from Burriana had.",
+        "target": "Juan Varea's early flamenco formation",
+        "rationale": "Named senior artists are positioned as authoritative teachers who recognized and transmitted flamenco knowledge to Varea."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "confidence": "high",
+        "evidence_quote": "He was fortunate enough to know Fosforito, Chacón, La Rita, La Pastora, Mojama, El Torre and so many other great artists, and he learned something from almost all of them",
+        "target": "Juan Varea's repertoire and style",
+        "rationale": "The text legitimates Varea through personal, artist-to-artist transmission from an older flamenco lineage."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Fosforito, Chacón, La Rita, La Pastora, Mojama, El Torre and so many other great artists",
+        "target": "the artists from whom Varea learned",
+        "rationale": "The passage invokes a canon of exemplary past artists as the authoritative source of Varea's formation."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The reference to aficionados from Málaga believing he created a style shows community attribution, but the passage mainly corrects authorship rather than granting community authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "reason": "There is praise of Varea's qualities and humility, but the strongest discourse function is pedagogical lineage rather than a developed critical review."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Juan Varea's flamenco authority and artistic formation",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_10::A12",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Paco de Lucía's version of guajira is not, in my opinion, the definitive guajira; I think Manolo Sanlúcer, among others, went on to create solo compositions with much more aire of the guajira",
+        "target": "Paco de Lucía's guajira transcription/version",
+        "rationale": "The author explicitly evaluates Paco de Lucía's guajira against other solo compositions."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "much more aire of the guajira--light, sensuous, syncopated and Latin",
+        "target": "guajira performance/composition quality",
+        "rationale": "The passage names specific aesthetic criteria used to define a better guajira style."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "is not, in my opinion, the definitive guajira; I think Manolo Sanlúcer, among others, went on to create solo compositions with much more aire",
+        "target": "Paco de Lucía and Manolo Sanlúcar's guajira compositions",
+        "rationale": "The comparison constructs a hierarchy between a non-definitive version and later compositions judged to have more guajira character."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "reason": "The transcription and tablature could support access to learning, but the visible text mainly evaluates the music rather than thematizing pedagogy or access."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Paco de Lucía's guajira and related solo guajira compositions",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_10::A13",
+    "no_relevant_discourse": true,
+    "insufficient_context": true,
+    "codes": [],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": false,
+      "polarity": "unclear",
+      "basis": [],
+      "target": null,
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Visible text is only a source/byline note and is too short to support discourse coding."
+  },
+  {
+    "article_id": "JALEO_1985_10::A14",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "Miss Blanco held the attention for the way her arms moved in a serpentine manner while her feet beat crisp rhythmic patterns on the floor.",
+        "target": "Ana Maria Blanco's dancing",
+        "rationale": "The review praises Blanco's performance qualities and ability to command attention."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_02",
+        "confidence": "high",
+        "evidence_quote": "She was particularly remarkable for her ability to make her heelwork murmur through long passages of trills.",
+        "target": "Ana Maria Blanco's heelwork",
+        "rationale": "The critic applies technique and rhythmic control as criteria of flamenco dance quality."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "What made her striking was the way she would whip up excitement and threaten to dance herself out of control while, all the time, remaining in perfect charge of the situation.",
+        "target": "Manuela Carpio's dancing",
+        "rationale": "The review evaluates Carpio's performance positively through controlled intensity and dramatic command."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "reason": "The audience's demand for spectacle is mentioned, but the text does not clearly contrast participatory/private flamenco with spectatorial/public flamenco as a value system."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "reason": "There are internal comparisons between dancers, but no stable canon, ranking, or hierarchy beyond descriptive contrast."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "El Morao/Jerez por el Mundo performance, especially Blanco and Carpio",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": ""
+  },
+  {
+    "article_id": "JALEO_1985_10::A15",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "confidence": "high",
+        "evidence_quote": "Keep in mind that the Spanish newspaper article prints only what he says about himself. The articles from the British guitar magazines give the critics point of view.",
+        "target": "competing evaluations of Juan Martin",
+        "rationale": "The editor explicitly distinguishes self-presentation from critics' evaluative authority."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Juan Martín can be considered, along with Paco de Lucía, as one of the best known, internationally, of the Spanish guitarists.",
+        "target": "Juan Martín's status among Spanish guitarists",
+        "rationale": "The passage ranks Martín by international recognition and places him alongside Paco de Lucía."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "His flamenco guitar method is one of the most used in all of Europe and has also written two other books of musical compositions.",
+        "target": "Juan Martín's flamenco guitar method",
+        "rationale": "The text frames Martín's pedagogical materials as transnationally used tools for flamenco guitar learning."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "medium",
+        "evidence_quote": "now at last we have ever further opportunity to listen to the true guitar of this imaginative and virtuosic flamenco artist.",
+        "target": "Juan Martín's guitar artistry",
+        "rationale": "The review directly praises Martín's guitar as imaginative and virtuosic."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "works within the traditional flamenc forms and creates his own material, emerging from an indebtedness to the great Nino. Ricardo",
+        "target": "Juan Martín's compositional identity",
+        "rationale": "The passage legitimates Martín's creativity through continuity with traditional forms and indebtedness to an established past master."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "reason": "The phrase 'true guitar' suggests authenticity, but it is ambiguous and may function as general praise rather than a clear claim about genuine flamenco."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "The 'English woman' described as 'very flamence' and 'a bland gypsy' contains identity language, but it is incidental and OCR-damaged rather than a clear authority or belonging frame."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "mixed",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "tradition"
+      ],
+      "target": "Juan Martín's status, pedagogy, and flamenco guitar artistry",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article text is truncated, but the visible review windows contain enough evidence for the emitted codes."
+  }
+]

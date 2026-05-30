@@ -1,0 +1,254 @@
+[
+  {
+    "article_id": "JALEO_1988_09::A4",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the historical and artistic content of these tapes constitute indispensable elements of the education of any serious flamenco",
+        "target": "Paco Sevilla's tape series",
+        "rationale": "The passage frames recorded media as an indispensable educational resource for serious flamenco learners, making access to knowledge the central function."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_03",
+        "confidence": "medium",
+        "evidence_quote": "We would like to know something more primitive, more ancient, to enter into that storehouse that has enriched these new wines.",
+        "target": "the cante history of Lebrija",
+        "rationale": "The passage authorizes present flamenco by seeking older roots and a storehouse of inherited material behind newer artists."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "Some of the greatest names in flamenco's history are pronounced herein",
+        "target": "the artists named in the interview/tape",
+        "rationale": "The text invokes a canon of historically great flamenco names, giving the interview and tape status through canonical association."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_04",
+        "reason": "References to gypsy settlement and family relations are present, but the visible text mainly uses them as historical context rather than clearly defining identity-based authority or belonging."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "pedagogy",
+        "tradition",
+        "criticism"
+      ],
+      "target": "Paco Sevilla's tape/interview material and Lebrija cante history",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; annotations rely only on the visible beginning, evidence window, and ending context."
+  },
+  {
+    "article_id": "JALEO_1988_09::A5",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "this is recorded as one of the most prestigious flamenco festivals in Andalucía",
+        "target": "the Festival of Cante Flamenco in Ojen",
+        "rationale": "The festival is explicitly ranked among prestigious Andalusian flamenco festivals, constructing a hierarchy of event status."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_03",
+        "confidence": "medium",
+        "evidence_quote": "The personal touch of the director welcoming one and the offer of refreshments contrasts dramatically with, say, the Queen Elizabeth Hall at London's South Bank Arts Centre",
+        "target": "the Ojen festival setting",
+        "rationale": "The passage values a locally hospitable performance setting against impersonal institutional concert-hall treatment, making setting socially meaningful."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "medium",
+        "evidence_quote": "An introduction to flamenco dance for beginners. A clear simple step-by-step instruction of the following dances",
+        "target": "flamenco dance instructional video",
+        "rationale": "The visible text frames a video as beginner access to flamenco dance knowledge through structured instruction."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "COMM",
+        "code": "COMM_02",
+        "reason": "The text mentions expectant aficionados and families, but does not clearly grant them authority to recognize, sustain, or judge flamenco."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "community",
+        "pedagogy"
+      ],
+      "target": "the Ojen festival and beginner instructional access",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "Article is truncated; the ending includes advertisements, but the instructional video passage is visible and explicitly pedagogical."
+  },
+  {
+    "article_id": "JALEO_1988_09::A6",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_01",
+        "confidence": "high",
+        "evidence_quote": "At sixty-six he is still able to keep on delighting audiences with his arte.",
+        "target": "Antonio as Spanish dance performer",
+        "rationale": "The passage explicitly praises Antonio's continuing artistic power and audience appeal."
+      },
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "medium",
+        "evidence_quote": "written a platinum page in Spanish Dance and achieved numerous successes demonstrated by the numerous trophies",
+        "target": "Antonio's career in Spanish dance",
+        "rationale": "The text elevates Antonio's career into a high-status historical achievement, supported by trophies and lasting acclaim."
+      }
+    ],
+    "possible_but_not_emitted": [],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism"
+      ],
+      "target": "Antonio's return and career status",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": false
+    },
+    "annotation_notes": "The passage concerns Spanish dance rather than flamenco narrowly, but the visible evaluation is within the periodical's flamenco/Spanish dance discourse."
+  },
+  {
+    "article_id": "JALEO_1988_09::A7",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "the undisputed queen of ethnic dance",
+        "target": "La Meri",
+        "rationale": "The quotation canonizes La Meri through an unambiguous superlative title within ethnic dance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "confidence": "high",
+        "evidence_quote": "La Meri was considered the world's greatest authority on the ethnic dances of many cultures, particularly those of India and Spain",
+        "target": "La Meri as dance teacher and authority",
+        "rationale": "The passage legitimates La Meri as an authoritative mediator of dance knowledge, especially regarding Spain and India."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "the EDA was the only institution in the United States to offer a four-year course of intensive study in ethnic dance",
+        "target": "the Ethnologic Dance Center",
+        "rationale": "The passage highlights an institutional curriculum as a rare formal pathway for intensive dance training."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_04",
+        "reason": "A named critic is cited, but the main discourse function of the quote is canonizing hierarchy already captured by CRIT_03."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy"
+      ],
+      "target": "La Meri and her institutions of ethnic/Spanish dance knowledge",
+      "exclusion_boundary_present": false,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "The article is an obituary-style biography; emitted codes are limited to explicit authority, ranking, and institutional pedagogy claims."
+  },
+  {
+    "article_id": "JALEO_1988_09::A8",
+    "no_relevant_discourse": false,
+    "insufficient_context": false,
+    "codes": [
+      {
+        "family": "CRIT",
+        "code": "CRIT_03",
+        "confidence": "high",
+        "evidence_quote": "Her book \"Spanish Dancing,\" published in 1948, was considered by many to be the definitive text on Spanish dance.",
+        "target": "La Meri's book Spanish Dancing",
+        "rationale": "The passage canonizes the book as a definitive reference text in Spanish dance."
+      },
+      {
+        "family": "PED",
+        "code": "PED_03",
+        "confidence": "high",
+        "evidence_quote": "The school continued until 1956 and was an important source of training in ethnic dancing.",
+        "target": "La Meri's New York School of Natya/Ethnologic Dance Center",
+        "rationale": "The passage frames the school as an institutional source of training and access to ethnic dance knowledge."
+      },
+      {
+        "family": "AUTH",
+        "code": "AUTH_01",
+        "confidence": "high",
+        "evidence_quote": "learned the true meaning of flamenco in Southern Spain",
+        "target": "Adam del Monte's flamenco understanding",
+        "rationale": "The passage explicitly attributes true flamenco meaning to knowledge gained in Southern Spain."
+      },
+      {
+        "family": "COMM",
+        "code": "COMM_01",
+        "confidence": "medium",
+        "evidence_quote": "I lived in the caves with the gypsies. They received me openly, although I was strange and bland.",
+        "target": "Adam del Monte's access to flamenco community",
+        "rationale": "The passage draws an outsider/insider boundary around being received by gypsies as the condition for gaining real flamenco feeling."
+      }
+    ],
+    "possible_but_not_emitted": [
+      {
+        "family": "PED",
+        "code": "PED_01",
+        "reason": "La Meri is called a teacher and authority, but the stronger visible pedagogical claim concerns institutional training, captured by PED_03."
+      },
+      {
+        "family": "PED",
+        "code": "PED_02",
+        "reason": "Adam del Monte's learning in caves suggests situated transmission, but the visible text emphasizes authenticity and outsider reception more clearly than an oral or embodied lineage process."
+      }
+    ],
+    "derived_analysis": {
+      "legitimation_effect_present": true,
+      "polarity": "legitimating",
+      "basis": [
+        "criticism",
+        "pedagogy",
+        "authenticity",
+        "community"
+      ],
+      "target": "La Meri's dance authority and Adam del Monte's flamenco authenticity claim",
+      "exclusion_boundary_present": true,
+      "right_to_define_present": true
+    },
+    "annotation_notes": "Article is truncated and visibly combines La Meri material with a later Adam del Monte passage; both annotations use only visible text."
+  }
+]
